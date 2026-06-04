@@ -24,7 +24,7 @@ ErrorDocument 404 /404.html
 # Agent discovery (RFC 8288) — advertise the machine-readable site summary (llms.txt)
 # so AI agents/crawlers can find a curated description of the business.
 <IfModule mod_headers.c>
-Header set Link "</llms.txt>; rel=\"describedby\"; type=\"text/markdown\""
+Header set Link "</llms.txt>; rel=describedby"
 </IfModule>
 
 # Cache static assets
