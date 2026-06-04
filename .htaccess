@@ -1,0 +1,42 @@
+# ===========================================================
+# American English 埃森美語 — static site (Apache/LiteSpeed)
+# Directory-style clean URLs (/courses/ -> /courses/index.html)
+# NO rewrite/redirect rules needed — every page is a real folder,
+# served natively by DirectoryIndex. Same URLs as old WordPress,
+# so no migration 301s. Also works as-is on Netlify / Cloudflare
+# Pages / GitHub Pages (which ignore .htaccess but do the same thing).
+# ===========================================================
+
+Options -Indexes
+DirectoryIndex index.html
+
+# Force HTTPS (standard hardening — Hostinger may already do this at
+# the platform level; harmless if duplicated).
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Friendly 404
+ErrorDocument 404 /404.html
+
+# Agent discovery (RFC 8288) — advertise the machine-readable site summary (llms.txt)
+# so AI agents/crawlers can find a curated description of the business.
+<IfModule mod_headers.c>
+Header set Link "</llms.txt>; rel=\"describedby\"; type=\"text/markdown\""
+</IfModule>
+
+# Cache static assets
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+ExpiresByType image/x-icon "access plus 1 year"
+</IfModule>
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/css application/javascript text/xml
+</IfModule>
