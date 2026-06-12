@@ -10,7 +10,7 @@
   var PHONE = "+886928067772";
   var PHONE_TXT = "0928-067-772";
   var ADDRESS = "新北市板橋區中正路89巷4號1樓";
-  var LOGO = "/assets/img/ae-section1-logo.jpg";
+  var LOGO = "/assets/img/american-english-banqiao-logo.jpg";
 
   // Primary navigation (label, path)
   var NAV = [
