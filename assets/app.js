@@ -42,26 +42,34 @@
     if(!document.querySelector('link[rel="icon"]')){
       var fav=document.createElement('link'); fav.rel='icon'; fav.href=LOGO; document.head.appendChild(fav);
     }
-    // progress bar
-    var prog = document.createElement('div'); prog.className='progress'; prog.id='progress';
-    document.body.insertBefore(prog, document.body.firstChild);
+    // progress bar (skip if baked into static HTML)
+    var prog = document.getElementById('progress');
+    if(!prog){
+      prog = document.createElement('div'); prog.className='progress'; prog.id='progress';
+      document.body.insertBefore(prog, document.body.firstChild);
+    }
 
-    // header
-    var header = document.createElement('header');
-    header.className = 'site-header'; header.id = 'siteHeader';
-    header.innerHTML =
-      '<div class="wrap nav">'+
-        '<a href="/" class="brand"><img class="brand-logo" src="'+LOGO+'" alt="American English 埃森美語 logo" width="38" height="38">埃森<b>美語</b></a>'+
-        '<nav class="nav-links" aria-label="主選單">'+navLinks(false)+'</nav>'+
-        '<button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>'+
-      '</div>';
-    document.body.insertBefore(header, prog.nextSibling);
+    // header (skip if baked into static HTML — better for crawlers/AI)
+    var header = document.getElementById('siteHeader');
+    if(!header){
+      header = document.createElement('header');
+      header.className = 'site-header'; header.id = 'siteHeader';
+      header.innerHTML =
+        '<div class="wrap nav">'+
+          '<a href="/" class="brand"><img class="brand-logo" src="'+LOGO+'" alt="American English 埃森美語 logo" width="38" height="38">埃森<b>美語</b></a>'+
+          '<nav class="nav-links" aria-label="主選單">'+navLinks(false)+'</nav>'+
+          '<button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>'+
+        '</div>';
+      document.body.insertBefore(header, prog.nextSibling);
+    }
 
-    // drawer
-    var drawer = document.createElement('div');
-    drawer.className='drawer'; drawer.id='drawer';
-    drawer.innerHTML = navLinks(true);
-    document.body.insertBefore(drawer, header.nextSibling);
+    // drawer (skip if baked into static HTML)
+    if(!document.getElementById('drawer')){
+      var drawer = document.createElement('div');
+      drawer.className='drawer'; drawer.id='drawer';
+      drawer.innerHTML = navLinks(true);
+      document.body.insertBefore(drawer, header.nextSibling);
+    }
 
     // footer — skip if the page already has a static footer (static HTML is better for crawlers)
     if(!document.querySelector('footer.site-footer')){
@@ -207,31 +215,33 @@
   /* ---------- SEO: structured data (JSON-LD) ---------- */
   function injectSEO(){
     function addLD(obj){ var s=document.createElement('script'); s.type='application/ld+json'; s.textContent=JSON.stringify(obj); document.head.appendChild(s); }
+    // skip a JSON-LD type if it's already baked into the page statically (seo_build.py)
+    function hasLD(type){ return [].some.call(document.querySelectorAll('script[type="application/ld+json"]'), function(s){ return s.textContent.indexOf('"'+type+'"')!==-1; }); }
 
-    // Sitewide Organization/LocalBusiness + founder Person schema are now
-    // STATIC JSON-LD in each page <head> (so non-JS AI crawlers see them).
-    // Only dynamic per-page schema (breadcrumb + FAQ) is injected below.
+    // Sitewide Organization/LocalBusiness + founder Person schema are STATIC JSON-LD
+    // in each page <head>. breadcrumb + FAQ + hreflang are also baked in by seo_build.py;
+    // the guards below only inject them as a fallback for any unbuilt page.
 
     // hreflang — self-reference (zh-Hant-TW) + x-default. Add `en` entries here once English pages exist.
     var canon=document.querySelector('link[rel="canonical"]');
-    if(canon){
+    if(canon && !document.querySelector('link[rel="alternate"][hreflang]')){
       [["zh-Hant-TW",canon.href],["x-default",canon.href]].forEach(function(p){
         var a=document.createElement('link'); a.rel='alternate'; a.hreflang=p[0]; a.href=p[1]; document.head.appendChild(a);
       });
     }
 
-    // BreadcrumbList from the page breadcrumb (if present)
+    // BreadcrumbList from the page breadcrumb (if present and not already static)
     var crumb=document.querySelector('.breadcrumb');
-    if(crumb){
+    if(crumb && !hasLD('BreadcrumbList')){
       var parts=[], i=1;
       crumb.querySelectorAll('a').forEach(function(a){ parts.push({"@type":"ListItem","position":i++,"name":a.textContent.trim(),"item":new URL(a.getAttribute('href'),location.href).href}); });
       parts.push({"@type":"ListItem","position":i,"name":(document.querySelector('h1')||{}).textContent ? document.querySelector('h1').textContent.replace(/\s+/g,' ').trim() : document.title});
       addLD({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":parts});
     }
 
-    // FAQPage from any FAQ accordion on the page
+    // FAQPage from any FAQ accordion on the page (if not already static)
     var qs=document.querySelectorAll('.faq-item');
-    if(qs.length){
+    if(qs.length && !hasLD('FAQPage')){
       var faqs=[];
       qs.forEach(function(item){
         var q=item.querySelector('.faq-q'), a=item.querySelector('.faq-a');

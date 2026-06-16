@@ -18,6 +18,11 @@ RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
+# SEO consolidation 301 (cannibalization fix): /banqiao-junior-high-english/
+# merged into /junior-high-english-banqiao/. Trailing slash keeps the
+# -blind-spots article unaffected. Purge Cloudflare cache for the old URL after deploy.
+Redirect 301 /banqiao-junior-high-english/ https://americanenglish.com.tw/junior-high-english-banqiao/
+
 # Friendly 404
 ErrorDocument 404 /404.html
 
@@ -25,6 +30,12 @@ ErrorDocument 404 /404.html
 # so AI agents/crawlers can find a curated description of the business.
 <IfModule mod_headers.c>
 Header set Link "</llms.txt>; rel=describedby"
+# Security headers (HSTS without 'preload' to keep it reversible; add ; preload only if you commit to the HSTS preload list)
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+Header always set X-Content-Type-Options "nosniff"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 </IfModule>
 
 # Cache static assets
