@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!-- Bridge / paid-traffic page: keep out of organic index so it never competes with the main site. -->
+<meta name="robots" content="noindex,follow">
+
+<!-- ════════════════════════════════════════════════════════════════
+     META PIXEL — ID 1023907773471013 (American English ad account).
+     Fires PageView on load + a deduped "Lead" event on every LINE tap.
+     ════════════════════════════════════════════════════════════════ -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1023907773471013');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=1023907773471013&ev=PageView&noscript=1"/></noscript>
+
+<!-- Google Analytics (GA4) — same property as the main site, for a 2nd source of truth -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CH7TGR171G');</script>
+
+<title>板橋美籍外師英文 · 暑期前新生免註冊費｜埃森美語 預約試聽</title>
+<meta name="description" content="板橋中正路美籍外師英文補習班。每班 12 人小班制、100% 美國持證教師、美國本地教材，從第一堂課就開口說。暑期前報名新生免 NT$9,000 註冊費。加 LINE 預約 90 分鐘真實試聽課＋1 對 1 程度評估。">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="icon" href="/assets/img/american-english-banqiao-logo.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+
+<link rel="canonical" href="https://americanenglish.com.tw/line/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="American English 埃森美語">
+<meta property="og:title" content="板橋美籍外師英文 · 暑期前新生免註冊費｜埃森美語">
+<meta property="og:description" content="每班 12 人小班制、100% 美國持證教師。暑期前報名新生免 NT$9,000 註冊費。加 LINE 預約真實試聽課。">
+<meta property="og:image" content="https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Structured data: LocalBusiness + founder (NO review array — the only quotes on file were fabricated). -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"https://americanenglish.com.tw/#organization","name":"American English 埃森美語","alternateName":"埃森美語","description":"板橋中正路在地深耕的美籍外師英文補習班，提供 100% 美國持證教師、每班 12 人小班制的兒童美語與國中英文課程。","url":"https://americanenglish.com.tw","telephone":"+886-928-067-772","email":"teacherchris@americanenglish.com.tw","image":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","logo":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"中正路89巷4號1樓","addressLocality":"板橋區","addressRegion":"新北市","postalCode":"220","addressCountry":"TW"},"geo":{"@type":"GeoCoordinates","latitude":25.01441,"longitude":121.45654},"areaServed":[{"@type":"Place","name":"板橋區"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"14:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"17:00"}],"sameAs":["https://lin.ee/W9J8TuQ"],"hasMap":"https://maps.app.goo.gl/ppryBnc23joxkch87","founder":{"@type":"Person","name":"Chris Essenmacher","alumniOf":{"@type":"CollegeOrUniversity","name":"University of Michigan"},"hasCredential":"美國正式教師執照 (U.S. State Teaching Certificate)"},"knowsLanguage":["en-US","zh-TW"]}
+</script>
+
+<style>
+/* ===========================================================
+   埃森美語 — LINE bridge landing page
+   Design system lifted verbatim from the live site (assets/styles.css)
+   so this page matches the rest of americanenglish.com.tw pixel-for-pixel.
+   Self-contained (inline CSS/JS) for fast, reliable loading inside the
+   Facebook / Instagram in-app browser.
+   =========================================================== */
+:root{
+  --navy:#1A2752;--blue:#1CB0F6;--blue-dk:#1391cc;--green:#06C755;--green-dk:#04a046;
+  --yellow:#FFC828;--yellow-dk:#e0a800;--purple:#CE82FF;--purple-dk:#a94fe0;
+  --coral:#F0997B;--light-blue:#DDF4FF;--text-body:#4b5563;
+  --card-shadow:0 12px 40px rgba(26,39,82,.10);
+  --header-h:64px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px)}
+body{font-family:'DM Sans',-apple-system,'PingFang TC','Microsoft JhengHei',sans-serif;background:#fff;color:var(--navy);line-height:1.6;overflow-x:hidden}
+a{color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}
+
+/* ── Typography ── */
+h1,h2,h3{font-family:'DM Serif Display',serif;font-weight:400;color:var(--navy);letter-spacing:-.4px;line-height:1.08}
+h1{font-size:clamp(38px,6.4vw,64px)}
+h2{font-size:clamp(28px,4.6vw,46px)}
+h3{font-size:22px}
+em{font-style:italic;color:var(--blue)}
+.bg-navy h2,.bg-navy h3{color:#fff}
+p.body{font-size:clamp(15px,1.6vw,17px);line-height:1.8;color:var(--text-body)}
+.bg-navy p.body{color:rgba(255,255,255,.74)}
+.eyebrow{display:inline-block;font-family:'Baloo 2',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--blue);background:rgba(28,176,246,.12);padding:7px 16px;border-radius:100px}
+.eyebrow-green{color:var(--green);background:rgba(6,199,85,.12)}
+.eyebrow-yellow{color:#b8860b;background:rgba(255,200,40,.18)}
+.divider{width:48px;height:4px;background:linear-gradient(90deg,var(--blue),var(--purple));border-radius:4px}
+
+/* ── 3D Buttons ── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'Baloo 2',sans-serif;font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.5px;padding:14px 30px;border-radius:16px;cursor:pointer;border:none;text-transform:uppercase;transition:transform .08s ease,box-shadow .08s ease,filter .15s;min-height:50px;position:relative;top:0}
+.btn-primary{background:var(--green);color:#fff;box-shadow:0 5px 0 var(--green-dk),0 10px 18px rgba(6,199,85,.32)}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 5px 0 var(--blue-dk),0 10px 18px rgba(28,176,246,.32)}
+.btn-yellow{background:var(--yellow);color:var(--navy);box-shadow:0 5px 0 var(--yellow-dk),0 10px 18px rgba(255,200,40,.32)}
+.btn:hover{filter:brightness(1.04)}
+.btn:active{top:5px;box-shadow:0 0 0 var(--green-dk)}
+.btn-blue:active{box-shadow:0 0 0 var(--blue-dk)}
+.btn-yellow:active{box-shadow:0 0 0 var(--yellow-dk)}
+.btn-outline{background:#fff;color:var(--navy);border:2px solid #e2e8f0;box-shadow:0 4px 0 #e2e8f0}
+.btn-outline:active{top:4px;box-shadow:0 0 0 #e2e8f0}
+.btn svg{width:20px;height:20px}
+.btn-line svg{fill:currentColor}
+
+/* ── Layout ── */
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.section{padding:clamp(56px,8vw,100px) 0;position:relative}
+.section.tight{padding:clamp(40px,6vw,68px) 0}
+.bg-blue{background:var(--light-blue)}
+.bg-navy{background:var(--navy)}
+.bg-soft{background:#F4FAFF}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center}
+.split.reverse>.media{order:2}
+@media(max-width:860px){
+  .split{grid-template-columns:1fr}
+  .split.reverse>.media{order:0}
+  .split .stack{align-items:center;text-align:center}
+  .split .stack .divider{margin-left:auto;margin-right:auto}
+  .split .stack p.body{margin-left:auto;margin-right:auto}
+  .split .stack .hero-cta,.split .stack .hero-badges{justify-content:center}
+}
+.stack{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.center{text-align:center;align-items:center;margin:0 auto;max-width:720px}
+
+/* ── Scroll progress bar ── */
+.progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--green),var(--blue),var(--purple));z-index:200;transition:width .1s linear}
+
+/* ── Header (focused: brand + single CTA, no nav menu) ── */
+header.site-header{position:fixed;top:0;left:0;right:0;z-index:150;height:var(--header-h);background:rgba(255,255,255,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(26,39,82,.06);transition:box-shadow .25s}
+header.site-header.scrolled{box-shadow:0 4px 22px rgba(26,39,82,.09)}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:'Baloo 2',sans-serif;font-size:20px;font-weight:800;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:8px}
+.brand b{color:var(--blue);font-weight:800}
+.brand-logo{width:38px;height:38px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(26,39,82,.18)}
+.nav-cta{padding:9px 18px;font-size:13px;min-height:42px}
+@media(max-width:480px){.brand{font-size:17px}.brand-logo{width:32px;height:32px}.nav-cta{padding:8px 14px;font-size:12px;min-height:38px}}
+
+/* ── Animated background ── */
+.bg-deco{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.star{position:absolute;animation:twinkle 3s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:.9;transform:scale(1.15)}}
+
+/* ── Hero ── */
+.hero{padding-top:calc(var(--header-h) + 36px);padding-bottom:56px;background:linear-gradient(180deg,#fff 0%,var(--light-blue) 100%);position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:2}
+.hero-badges{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:7px;font-family:'Baloo 2',sans-serif;font-size:14px;font-weight:700;color:var(--navy);background:#fff;border:2px solid rgba(26,39,82,.08);padding:8px 15px;border-radius:100px;box-shadow:0 3px 0 rgba(26,39,82,.06)}
+.chip .dot{width:9px;height:9px;border-radius:50%;background:var(--green);animation:blink 1.6s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}
+/* offer flag in hero */
+.offer-flag{display:inline-flex;align-items:center;gap:10px;font-family:'Baloo 2';font-weight:800;font-size:clamp(14px,2vw,16px);color:#7a4d00;background:linear-gradient(135deg,#ffe9a8,#fff3cf);border:2px solid var(--yellow);border-radius:14px;padding:11px 18px;box-shadow:0 4px 0 var(--yellow-dk)}
+.offer-flag .tag{background:var(--coral);color:#fff;font-size:11px;padding:3px 9px;border-radius:100px;letter-spacing:.5px}
+
+/* hero animated scene (self-contained, no image dependency) */
+.scene{position:relative;width:100%;max-width:420px;margin:0 auto;aspect-ratio:1}
+.planet{position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 36% 30%,#bfe7ff,var(--blue));box-shadow:inset -18px -18px 40px rgba(26,39,82,.25),0 30px 70px rgba(28,176,246,.35);animation:spin 26s linear infinite}
+.planet::before{content:'';position:absolute;width:34%;height:18%;border-radius:50%;background:rgba(255,255,255,.35);top:22%;left:20%;filter:blur(2px)}
+.planet::after{content:'';position:absolute;width:24%;height:12%;border-radius:50%;background:rgba(26,39,82,.18);bottom:24%;right:22%}
+.ring{position:absolute;left:50%;top:54%;width:108%;height:46%;transform:translate(-50%,-50%) rotate(-18deg);border:6px solid rgba(255,200,40,.55);border-radius:50%;animation:spin 18s linear infinite reverse}
+.rocket{position:absolute;left:58%;top:14%;width:108px;animation:floaty 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center;z-index:3;filter:drop-shadow(0 12px 18px rgba(26,39,82,.25))}
+.flame{transform-box:fill-box;transform-origin:50% 0%;animation:flame .6s ease-in-out infinite alternate}
+.s-star{position:absolute;animation:floaty 5s ease-in-out infinite}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-18px) rotate(4deg)}}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes flame{0%{transform:scaleY(.8) scaleX(1)}100%{transform:scaleY(1.15) scaleX(.9)}}
+.count-orb{position:absolute;left:2%;top:6%;background:#fff;border-radius:20px;padding:10px 14px;box-shadow:var(--card-shadow);font-family:'Baloo 2';font-weight:800;display:flex;align-items:center;gap:9px;font-size:14px;z-index:4;animation:pop-bob 4s ease-in-out infinite}
+.count-orb.b2{left:auto;right:0;top:auto;bottom:12%;animation-delay:1.5s}
+.count-orb .big{font-family:'DM Serif Display';font-size:24px;color:var(--blue)}
+@keyframes pop-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* ── Marquee ── */
+.marquee{background:var(--navy);padding:15px 0;overflow:hidden;position:relative}
+.marquee-track{display:flex;gap:46px;white-space:nowrap;width:max-content;animation:scrollx 28s linear infinite}
+.marquee-track span{font-family:'Baloo 2';font-weight:700;font-size:15px;color:#fff;display:inline-flex;align-items:center;gap:12px}
+.marquee-track span::before{content:'★';color:var(--yellow)}
+@keyframes scrollx{to{transform:translateX(-50%)}}
+
+/* ── Offer block ── */
+.offer{background:linear-gradient(160deg,#fffaf0,#fffdf8);border:2px dashed var(--yellow-dk);border-radius:28px;padding:clamp(30px,5vw,52px);max-width:780px;margin:0 auto;text-align:center;position:relative;overflow:hidden}
+.offer .ribbon{display:inline-block;font-family:'Baloo 2';font-weight:800;font-size:13px;letter-spacing:1px;color:#b8860b;background:rgba(255,200,40,.22);padding:8px 18px;border-radius:100px;margin-bottom:18px}
+.offer .price{font-family:'DM Serif Display';font-size:clamp(38px,8vw,64px);color:var(--navy);line-height:1.05;margin-bottom:6px}
+.offer .price .from{text-decoration:line-through;text-decoration-thickness:3px;color:#c3b393;font-family:'Baloo 2';font-weight:700;font-size:.62em}
+.offer .price .free{color:var(--green);font-style:normal}
+.offer .price .arr{color:var(--yellow-dk);font-family:'Baloo 2';margin:0 .12em}
+.offer .btn{margin-top:8px}
+.offer .fine{font-size:12.5px;color:#94a3b8;margin-top:18px;line-height:1.7;max-width:560px;margin-left:auto;margin-right:auto}
+
+/* ── Feature cards ── */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:860px){.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.cards{grid-template-columns:1fr}}
+
+/* ── American-holiday festival grid ── */
+.fest-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:940px;margin:44px auto 0}
+@media(max-width:680px){.fest-grid{grid-template-columns:repeat(2,1fr)}}
+.fest{background:#fff;border:2px solid rgba(26,39,82,.06);border-radius:18px;padding:18px 10px;text-align:center;box-shadow:0 5px 0 rgba(26,39,82,.05);transition:transform .25s cubic-bezier(.34,1.56,.64,1),box-shadow .25s}
+.fest:hover{transform:translateY(-6px) rotate(-1.5deg);box-shadow:0 12px 0 rgba(26,39,82,.06),var(--card-shadow)}
+.fest .emo{font-size:34px;line-height:1;margin-bottom:8px}
+.fest .en{font-family:'Baloo 2';font-weight:800;font-size:14px;color:var(--navy);line-height:1.2}
+.fest .zh{font-family:'Baloo 2';font-weight:700;font-size:12px;color:var(--text-body);margin-top:3px}
+.card{background:#fff;border:2px solid rgba(26,39,82,.06);border-radius:24px;padding:28px 24px;box-shadow:0 6px 0 rgba(26,39,82,.05);transition:transform .25s cubic-bezier(.34,1.56,.64,1),box-shadow .25s}
+.card:hover{transform:translateY(-8px) rotate(-1deg);box-shadow:0 14px 0 rgba(26,39,82,.06),var(--card-shadow)}
+.card .ico{width:60px;height:60px;border-radius:20px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;transition:transform .3s}
+.card:hover .ico{transform:scale(1.1) rotate(-6deg)}
+.card .ico svg{width:30px;height:30px;stroke-width:2.2}
+.ico.b{background:rgba(28,176,246,.14);color:var(--blue)}
+.ico.g{background:rgba(6,199,85,.14);color:var(--green)}
+.ico.y{background:rgba(255,200,40,.2);color:#b8860b}
+.ico.p{background:rgba(206,130,255,.16);color:var(--purple-dk)}
+.ico.c{background:rgba(240,153,123,.2);color:#d97a5c}
+.card h3{margin-bottom:8px;font-family:'Baloo 2';font-weight:800;font-size:20px}
+.card p{font-size:14.5px;color:var(--text-body);line-height:1.7}
+
+/* ── Real brand illustration ── */
+.illus{position:relative;display:flex;align-items:center;justify-content:center;padding:12px;min-height:300px}
+.illus::before{content:'';position:absolute;width:280px;height:280px;border-radius:50%;background:var(--blob,rgba(28,176,246,.14));z-index:0}
+.illus img{position:relative;z-index:1;width:300px;max-width:80%;height:auto;filter:drop-shadow(0 18px 32px rgba(26,39,82,.16));animation:bobY 5s ease-in-out infinite}
+@keyframes bobY{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+/* ── Learning path ── */
+.path{position:relative;max-width:560px;margin:44px auto 0;padding:20px 0}
+.path::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:4px;transform:translateX(-50%);background:repeating-linear-gradient(var(--blue) 0 12px,transparent 12px 24px);opacity:.4}
+.node{position:relative;width:50%;display:flex;align-items:center;gap:16px;margin-bottom:34px;opacity:0}
+.node.in{animation:pop-in .7s cubic-bezier(.34,1.56,.64,1) forwards}
+.node:nth-child(odd){left:0;justify-content:flex-end;padding-right:40px;text-align:right;flex-direction:row}
+.node:nth-child(even){left:50%;padding-left:40px}
+.node .bubble{flex:0 0 60px;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Baloo 2';font-weight:800;font-size:23px;box-shadow:0 6px 0 rgba(0,0,0,.18);position:relative;z-index:2}
+.node:nth-child(odd) .bubble{order:2}
+.node .bubble.g{background:var(--green);box-shadow:0 6px 0 var(--green-dk)}
+.node .bubble.b{background:var(--blue);box-shadow:0 6px 0 var(--blue-dk)}
+.node .bubble.y{background:var(--yellow);color:var(--navy);box-shadow:0 6px 0 var(--yellow-dk)}
+.node .bubble.p{background:var(--purple);box-shadow:0 6px 0 var(--purple-dk)}
+.node .label{font-family:'Baloo 2';font-weight:700}
+.node .label small{display:block;font-family:'DM Sans';font-weight:400;color:var(--text-body);font-size:13px;margin-top:2px}
+@keyframes pop-in{0%{opacity:0;transform:scale(.5) translateY(20px)}100%{opacity:1;transform:none}}
+@media(max-width:560px){
+  .path{max-width:100%}
+  .node{margin-bottom:26px;gap:12px}
+  .node:nth-child(odd){padding-right:16px}
+  .node:nth-child(even){padding-left:16px}
+  .node .bubble{flex:0 0 48px;width:48px;height:48px;font-size:19px}
+  .node .label{font-size:13px}
+  .node .label small{font-size:11px;margin-top:1px}
+}
+
+/* ── Stats ── */
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:860px;margin:40px auto 0}
+@media(max-width:680px){.stats-grid{grid-template-columns:1fr 1fr}}
+.stat-card{background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.12);border-radius:24px;padding:28px 16px;text-align:center;transition:transform .3s}
+.stat-card:hover{transform:translateY(-6px) scale(1.03)}
+.stat-num{font-family:'Baloo 2';font-weight:800;font-size:clamp(40px,8vw,52px);color:var(--yellow);line-height:1;font-variant-numeric:tabular-nums}
+.stat-label{font-family:'Baloo 2';font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.6);margin-top:12px}
+
+/* ── Social proof strip ── */
+.proof{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:clamp(20px,5vw,52px);text-align:center}
+.proof .score-num{font-family:'DM Serif Display';font-size:clamp(56px,11vw,76px);color:var(--navy);line-height:1}
+.proof .stars{color:var(--yellow);font-size:22px;letter-spacing:3px;margin-top:6px}
+.proof .meta{font-family:'Baloo 2';font-weight:700;color:var(--text-body);font-size:14px;margin-top:6px}
+.proof .col{max-width:340px;text-align:left}
+@media(max-width:560px){.proof .col{text-align:center}}
+.gbadge{display:inline-flex;align-items:center;gap:8px;font-family:'Baloo 2';font-weight:700;font-size:13px;color:#475569;background:#fff;border:2px solid rgba(26,39,82,.1);border-radius:100px;padding:8px 16px;box-shadow:0 3px 0 rgba(26,39,82,.06);text-decoration:none;margin-top:14px}
+.gbadge:hover{border-color:var(--blue);color:var(--blue)}
+
+/* ── Map ── */
+.mapframe{background:#cfe6f5;border-radius:24px;padding:10px;box-shadow:var(--card-shadow)}
+#leafmap{width:100%;height:380px;border-radius:18px;overflow:hidden;background:#e6eef5}
+
+/* ── FAQ ── */
+.faq{max-width:760px;margin:40px auto 0;display:flex;flex-direction:column;gap:14px}
+.faq-item{background:#fff;border:2px solid rgba(26,39,82,.07);border-radius:18px;overflow:hidden;transition:border-color .2s}
+.faq-item.open{border-color:var(--blue)}
+.faq-q{width:100%;text-align:left;background:none;border:none;font-family:'Baloo 2';font-size:17px;font-weight:700;color:var(--navy);padding:20px 22px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:44px}
+.faq-q .pm{flex:0 0 26px;width:26px;height:26px;position:relative;transition:transform .3s}
+.faq-item.open .pm{transform:rotate(180deg)}
+.faq-q .pm::before,.faq-q .pm::after{content:'';position:absolute;background:var(--blue);border-radius:2px;top:50%;left:50%;transform:translate(-50%,-50%)}
+.faq-q .pm::before{width:14px;height:3px}
+.faq-q .pm::after{width:3px;height:14px;transition:transform .3s,opacity .3s}
+.faq-item.open .pm::after{opacity:0}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a p{padding:0 22px 20px;color:var(--text-body);font-size:15px;line-height:1.75}
+
+/* ── Final CTA ── */
+.cta-box{background:#fff;border-radius:32px;box-shadow:var(--card-shadow);padding:clamp(36px,6vw,60px) clamp(24px,5vw,54px);max-width:760px;margin:0 auto;text-align:center;position:relative;overflow:hidden}
+.cta-img{position:relative;z-index:1;width:240px;max-width:70%;height:auto;margin:0 auto 8px;filter:drop-shadow(0 18px 32px rgba(26,39,82,.16));animation:bobY 5s ease-in-out infinite}
+.cta-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:26px}
+.cta-note{font-size:13px;color:#94a3b8;margin-top:18px}
+
+/* ── How to start ── */
+/* uses .path / .node */
+
+/* ── Floating LINE button — bottom-right on ALL viewports, animated ── */
+.line-fab{position:fixed;bottom:24px;right:20px;z-index:140;width:64px;height:64px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 10px 26px rgba(6,199,85,.5);
+  /* pop-in entrance, then a gentle attention nudge every few seconds */
+  animation:fab-in .6s cubic-bezier(.34,1.7,.5,1) .5s both,fab-nudge 4.5s ease-in-out 2.6s infinite}
+.line-fab svg{width:34px;height:34px;fill:#fff;position:relative;z-index:2}
+/* pulsing halo */
+.line-fab::before{content:'';position:absolute;inset:0;border-radius:50%;background:var(--green);animation:pulse 2.2s infinite;z-index:1}
+@keyframes pulse{0%{transform:scale(1);opacity:.5}100%{transform:scale(1.9);opacity:0}}
+@keyframes fab-in{0%{opacity:0;transform:scale(0) translateY(22px)}100%{opacity:1;transform:none}}
+@keyframes fab-nudge{0%,86%,100%{transform:translateY(0) rotate(0)}90%{transform:translateY(-9px) rotate(-10deg)}93%{transform:translateY(-9px) rotate(10deg)}96%{transform:translateY(0) rotate(0)}}
+
+/* offer bubble that pops out beside the fab to draw the eye (tap = LINE too) */
+.line-fab-bubble{position:fixed;bottom:40px;right:96px;z-index:139;max-width:212px;background:#fff;color:var(--navy);font-family:'Baloo 2',sans-serif;font-weight:700;font-size:13.5px;line-height:1.4;padding:12px 16px;border-radius:16px 16px 4px 16px;box-shadow:0 12px 30px rgba(26,39,82,.22);text-decoration:none;opacity:0;transform:translateX(14px) scale(.88);transform-origin:bottom right;pointer-events:none;transition:opacity .3s ease,transform .35s cubic-bezier(.34,1.6,.5,1)}
+.line-fab-bubble::after{content:'';position:absolute;right:-7px;bottom:11px;width:0;height:0;border-top:8px solid transparent;border-bottom:8px solid transparent;border-left:8px solid #fff}
+.line-fab-bubble b{color:var(--green)}
+.line-fab-bubble.show{opacity:1;transform:none;pointer-events:auto;animation:bubble-bob 2.6s ease-in-out 1.2s infinite}
+@keyframes bubble-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@media(max-width:420px){.line-fab-bubble{max-width:158px;font-size:12.5px;right:90px;bottom:38px}}
+
+/* ── Footer ── */
+footer.site-footer{background:var(--navy);color:#fff;padding:48px 0 30px;text-align:center}
+.foot-logo{font-family:'Baloo 2';font-weight:800;font-size:19px;color:var(--yellow);margin-bottom:12px;display:inline-flex;align-items:center;gap:8px;justify-content:center}
+.foot-logo-img{width:32px;height:32px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.25)}
+.foot-nap{font-size:13.5px;color:rgba(255,255,255,.66);line-height:1.9}
+.foot-nap a{color:rgba(255,255,255,.85);text-decoration:none}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:24px;padding-top:20px;font-size:12px;color:rgba(255,255,255,.4)}
+
+/* ── Scroll reveal ── */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .6s ease,transform .6s cubic-bezier(.34,1.4,.64,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}
+
+/* ── Signature swing-in for the brand illustration (matches the live site) ── */
+.illus.swing{opacity:0;transform-origin:50% 0;will-change:transform,opacity}
+/* explicit keyframe (no var() inside — iOS Safari drops it). .reverse rows swing from the right. */
+@keyframes swingInR{from{opacity:0;transform:translate(46px,56px) rotate(9deg) scale(.92)}to{opacity:1;transform:none}}
+.illus.swing.in{animation:swingInR .9s cubic-bezier(.34,1.3,.5,1) both}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal,.node,.illus.swing{opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<!-- HEADER — brand + one CTA only (no nav links = no escape routes) -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap nav">
+    <a href="https://americanenglish.com.tw/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo.jpg" alt="American English 埃森美語 logo" width="38" height="38">埃森<b>美語</b></a>
+    <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" data-line class="btn btn-primary nav-cta"><span class="btn-line" data-line-icon></span>LINE 預約試聽</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="bg-deco" id="deco"></div>
+  <div class="wrap split">
+    <div class="stack">
+      <span class="eyebrow eyebrow-green reveal">板橋中正路 · 美籍外師</span>
+      <h1 class="reveal d1">美籍外師<br>讓孩子<em>真的</em><br>開口說英文</h1>
+      <div class="divider reveal d1"></div>
+      <p class="body reveal d2" style="max-width:440px">板橋在地美籍外師英文補習班 —— 每班 12 人小班制、100% 美國持證教師、國際學校課程。不死背、不填鴨，從第一堂課就開口說。</p>
+      <div class="offer-flag reveal d2"><span class="tag">暑期限定</span>新生免 NT$9,000 註冊費</div>
+      <div class="hero-cta reveal d2">
+        <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" data-line class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 預約試聽</a>
+      </div>
+      <div class="hero-badges reveal d3" style="margin-top:6px">
+        <span class="chip">⭐ 4.9 / 5 · 208 則 Google 評價</span>
+        <span class="chip"><span class="dot"></span>本月試聽名額有限</span>
+      </div>
+    </div>
+    <div class="media">
+      <div class="scene" id="scene">
+        <div class="ring"></div>
+        <div class="planet"></div>
+        <svg class="rocket" viewBox="0 0 100 150" fill="none">
+          <path class="flame" d="M38 110 q12 34 12 34 q0-0 12-34 q-12 10-24 0z" fill="#FFC828"/>
+          <path class="flame" d="M43 110 q7 22 7 22 q0 0 7-22 q-7 7-14 0z" fill="#F0997B" opacity=".9"/>
+          <path d="M50 6 C70 24 76 56 72 92 H28 C24 56 30 24 50 6Z" fill="#fff" stroke="#1A2752" stroke-width="3"/>
+          <circle cx="50" cy="46" r="13" fill="#DDF4FF" stroke="#1A2752" stroke-width="3"/>
+          <circle cx="50" cy="46" r="5" fill="#1CB0F6"/>
+          <path d="M28 78 L12 100 L30 94Z" fill="#1CB0F6" stroke="#1A2752" stroke-width="3"/>
+          <path d="M72 78 L88 100 L70 94Z" fill="#1CB0F6" stroke="#1A2752" stroke-width="3"/>
+          <path d="M40 92 h20 v6 h-20z" fill="#FFC828" stroke="#1A2752" stroke-width="3"/>
+        </svg>
+        <span class="s-star" style="top:8%;left:8%;color:var(--yellow);font-size:26px">✦</span>
+        <span class="s-star" style="bottom:18%;left:4%;color:var(--purple);font-size:18px;animation-delay:1s">✦</span>
+        <span class="s-star" style="top:24%;right:6%;color:var(--blue);font-size:22px;animation-delay:.5s">✦</span>
+        <div class="count-orb"><span class="big">12</span>每班上限</div>
+        <div class="count-orb b2"><span class="dot" style="width:9px;height:9px;border-radius:50%;background:var(--green);display:inline-block"></span>100% 美籍持證</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>美籍持證教師</span><span>每班 12 人小班制</span><span>國際學校課程</span><span>12 大美國節慶</span><span>月繳平價學費</span><span>個別關注每個孩子</span><span>從第一堂課就開口</span>
+    <span>美籍持證教師</span><span>每班 12 人小班制</span><span>國際學校課程</span><span>12 大美國節慶</span><span>月繳平價學費</span><span>個別關注每個孩子</span><span>從第一堂課就開口</span>
+  </div>
+</div>
+
+<!-- OFFER -->
+<section class="section tight bg-soft" id="offer">
+  <div class="wrap">
+    <div class="offer reveal">
+      <span class="ribbon">🎉 新生限定 · 暑期前報名</span>
+      <div class="price"><span class="from">註冊費 NT$9,000</span> <span class="arr">→</span> <span class="free">$0</span></div>
+      <p class="body" style="max-width:540px;margin:0 auto 22px">在暑假開始前替孩子報名正式課程，<b style="color:var(--navy)">免收 NT$9,000 註冊費</b>。每班僅 12 人，名額有限、額滿為止。</p>
+      <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" data-line class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 鎖定名額</a>
+      <!-- 建議：把「暑假開始前」改成明確截止日（例如「優惠至 2026/6/30 止」）轉換率更高 -->
+      <p class="fine">＊試聽為一堂完整 90 分鐘真實課程，並含課後 1 對 1 程度評估與學習建議（酌收費用）。此優惠為新生正式報名之「註冊費」減免，與試聽分開計算，無綁約。</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal" style="margin-bottom:44px">
+      <span class="eyebrow eyebrow-green">為什麼選埃森</span>
+      <h2>家長選我們的<em>六大理由</em></h2>
+    </div>
+    <div class="cards">
+      <div class="card reveal">
+        <div class="ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>每班 12 人小班制</h3><p>嚴格小班，外師認識每個孩子，每堂課都有開口的機會。</p>
+      </div>
+      <div class="card reveal d1">
+        <div class="ico p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h3>個別關注每個孩子</h3><p>依程度因材施教，記住每個孩子的名字與弱點，沒有人被忽略。</p>
+      </div>
+      <div class="card reveal d2">
+        <div class="ico y"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+        <h3>100% 美籍持證教師</h3><p>密西根大學畢業、持美國正式教師執照的創辦人親自授課，非短期打工。</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <h3>國際學校課程</h3><p>採用國際學校課程與教材，與世界同步、無縫銜接國際英檢。</p>
+      </div>
+      <div class="card reveal d1">
+        <div class="ico c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div>
+        <h3>一年 12 場美國節慶</h3><p>每月一場原汁原味的美國節慶活動，文化沉浸、玩中學英文。</p>
+      </div>
+      <div class="card reveal d2">
+        <div class="ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></div>
+        <h3>平價月繳學費</h3><p>學費月繳、平實透明，優質美籍外師教育不必高攀。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AMERICAN HOLIDAY PROGRAMS -->
+<section class="section bg-blue" id="holidays">
+  <div class="wrap">
+    <div class="center stack reveal">
+      <span class="eyebrow eyebrow-green">美國文化沉浸</span>
+      <h2>一年 <em>12 場</em>原汁原味的<br>美國節慶活動</h2>
+      <p class="body">學的不只是課本上的英文。每個月一場真正的美國節慶——孩子親身體驗美國文化，在玩樂中自然開口，這是課本給不了的「在美國長大」的感覺。</p>
+    </div>
+    <div class="fest-grid reveal">
+      <div class="fest"><div class="emo">🎆</div><div class="en">New Year</div><div class="zh">新年</div></div>
+      <div class="fest"><div class="emo">💝</div><div class="en">Valentine's</div><div class="zh">情人節</div></div>
+      <div class="fest"><div class="emo">☘️</div><div class="en">St. Patrick's</div><div class="zh">聖派翠克節</div></div>
+      <div class="fest"><div class="emo">🐰</div><div class="en">Easter</div><div class="zh">復活節</div></div>
+      <div class="fest"><div class="emo">🌎</div><div class="en">Earth Day</div><div class="zh">世界地球日</div></div>
+      <div class="fest"><div class="emo">💐</div><div class="en">Mother's Day</div><div class="zh">母親節</div></div>
+      <div class="fest"><div class="emo">👔</div><div class="en">Father's Day</div><div class="zh">父親節</div></div>
+      <div class="fest"><div class="emo">🇺🇸</div><div class="en">July 4th</div><div class="zh">美國國慶</div></div>
+      <div class="fest"><div class="emo">🎒</div><div class="en">Back to School</div><div class="zh">開學季</div></div>
+      <div class="fest"><div class="emo">🎃</div><div class="en">Halloween</div><div class="zh">萬聖節</div></div>
+      <div class="fest"><div class="emo">🦃</div><div class="en">Thanksgiving</div><div class="zh">感恩節</div></div>
+      <div class="fest"><div class="emo">🎄</div><div class="en">Christmas</div><div class="zh">聖誕節</div></div>
+    </div>
+    <div class="center" style="margin-top:36px"><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" data-line class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 看活動行事曆</a></div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="section bg-soft">
+  <div class="wrap split reverse">
+    <div class="media illus swing" style="--blob:rgba(255,200,40,.22)">
+      <img src="/assets/img/certified-american-teacher-banqiao.webp" alt="密西根大學畢業、持美國教師執照的創辦人 Chris" loading="lazy" decoding="async" width="668" height="540">
+    </div>
+    <div class="stack reveal d1">
+      <span class="eyebrow eyebrow-yellow">創辦人 · 親自授課</span>
+      <h2>不是背包客，<br>是<em>持證</em>美籍老師</h2>
+      <div class="divider"></div>
+      <p class="body">埃森美語由 <b style="color:var(--navy)">Chris 老師</b>創辦並親自授課——美國密西根大學畢業、持有美國正式教師執照（U.S. State Teaching Certificate）。他記得每個孩子的名字，每堂課全英文，用專業教學法帶 7–13 歲的孩子真正開口說。</p>
+      <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" data-line class="btn btn-yellow"><span class="btn-line" data-line-icon></span>加 LINE 認識老師</a>
+    </div>
+  </div>
+</section>
+
+<!-- LEARNING PATH -->
+<section class="section" id="path">
+  <div class="wrap">
+    <div class="center stack reveal">
+      <span class="eyebrow eyebrow-yellow">學習旅程</span>
+      <h2>孩子的英文<br><em>起飛</em>路線圖</h2>
+      <p class="body">從零基礎到國際英檢，一步一步，從不敢開口到自信會話。</p>
+    </div>
+    <div class="path">
+      <div class="node"><div class="bubble g">1</div><div class="label">自然發音 Phonics<small>看字讀音、聽音拼字</small></div></div>
+      <div class="node"><div class="bubble b">2</div><div class="label">閱讀理解 × 口說<small>生活情境、自然開口</small></div></div>
+      <div class="node"><div class="bubble y">3</div><div class="label">文法與寫作<small>打好讀寫基礎</small></div></div>
+      <div class="node"><div class="bubble p">4</div><div class="label">英檢 / 會考衝刺<small>YLE、KET、GEPT、會考</small></div></div>
+      <div class="node"><div class="bubble g">★</div><div class="label">自信開口說<small>敢說、愛說、說得好</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section bg-navy" data-stats>
+  <div class="wrap center stack reveal">
+    <span class="eyebrow" style="color:rgba(255,255,255,.7);background:rgba(255,255,255,.08)">真實的數字</span>
+    <h2 style="color:#fff">數字<em style="color:var(--yellow)">說明</em>一切</h2>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-card reveal"><div class="stat-num" data-to="208">0</div><div class="stat-label">服務家庭</div></div>
+    <div class="stat-card reveal d1"><div class="stat-num" data-to="94" data-suffix="%">0</div><div class="stat-label">續班率</div></div>
+    <div class="stat-card reveal d2"><div class="stat-num" data-to="98" data-suffix="%">0</div><div class="stat-label">英檢通過率</div></div>
+    <div class="stat-card reveal d3"><div class="stat-num" data-to="12">0</div><div class="stat-label">每班上限</div></div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF (aggregate only — real individual reviews to be pasted in) -->
+<section class="section bg-blue">
+  <div class="wrap">
+    <div class="center stack reveal" style="margin-bottom:36px">
+      <span class="eyebrow eyebrow-green">家長口碑</span>
+      <h2>板橋家長的<em>真實評價</em></h2>
+    </div>
+    <div class="proof reveal">
+      <div>
+        <div class="score-num">4.9</div>
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <div class="meta">208 則 Google 評價</div>
+      </div>
+      <div class="col">
+        <p class="body" style="color:var(--navy)">超過 200 個板橋家庭選擇我們，平均 4.9 顆星。別只聽我們說——點下方看家長在 Google 上的真實留言。</p>
+        <a href="https://maps.app.goo.gl/ppryBnc23joxkch87" target="_blank" rel="noopener" class="gbadge">在 Google 上讀真實評價 →</a>
+      </div>
+    </div>
+    <!-- ════════════════════════════════════════════════════════════
+         真實評論版位 — 等你貼上 2~3 則真實 Google 評論後，我再把這段
+         carousel 接上（樣式與動畫已備好）。請勿放入虛構內容。
+         <div class="carousel"> … 真實評論 … </div>
+         ════════════════════════════════════════════════════════════ -->
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="section" id="location">
+  <div class="wrap split">
+    <div class="media reveal">
+      <div class="mapframe"><div id="leafmap"></div></div>
+    </div>
+    <div class="stack reveal d1">
+      <span class="eyebrow eyebrow-yellow">地理位置</span>
+      <h2>步行可達<br><em>板橋三大學區</em></h2>
+      <div class="divider"></div>
+      <p class="body">板橋國小 5 分鐘、國光國小 8 分鐘、大觀國小 10 分鐘。家長接送方便，孩子安全無虞。</p>
+      <p class="body" style="font-family:'Baloo 2';font-weight:700;color:var(--navy)">📍 220 新北市板橋區中正路 89 巷 4 號 1 樓</p>
+      <a href="https://maps.app.goo.gl/ppryBnc23joxkch87" target="_blank" rel="noopener" class="btn btn-outline">開啟 Google 地圖</a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO START -->
+<section class="section bg-soft" id="start">
+  <div class="wrap">
+    <div class="center stack reveal">
+      <span class="eyebrow eyebrow-green">如何開始</span>
+      <h2>報名<em>超簡單</em>，<br>3 步驟就上課</h2>
+      <p class="body">沒有複雜流程、沒有綁約。加 LINE 就能開始。</p>
+    </div>
+    <div class="path">
+      <div class="node"><div class="bubble g">1</div><div class="label">加 LINE 預約<small>告訴我們孩子年齡，挑選試聽時段</small></div></div>
+      <div class="node"><div class="bubble b">2</div><div class="label">帶孩子來試聽<small>上一整堂真實課程＋美籍外師程度評估</small></div></div>
+      <div class="node"><div class="bubble y">3</div><div class="label">開始上課<small>適合就加入，暑期前報名免註冊費</small></div></div>
+    </div>
+    <div class="center" style="margin-top:40px"><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" data-line class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 開始第一步</a></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="center stack reveal">
+      <span class="eyebrow eyebrow-green">常見問題</span>
+      <h2>家長<em>最常</em>問的問題</h2>
+    </div>
+    <div class="faq">
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">試聽需要費用嗎？<span class="pm"></span></button><div class="faq-a"><p>我們的試聽是一堂完整 90 分鐘的真實課程，並包含課後 1 對 1 程度評估與個人化學習建議，因此會酌收費用——費用與細節歡迎加 LINE 詢問。沒有任何報名綁約，是否加入完全由您決定。</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">「免 9,000 元註冊費」優惠怎麼算？<span class="pm"></span></button><div class="faq-a"><p>新生於暑假開始前報名正式課程，即免收原本 NT$9,000 的註冊費。此優惠與試聽費用分開計算，名額有限、額滿為止。詳情與目前名額請加 LINE 詢問。</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">學費怎麼算？會很貴嗎？<span class="pm"></span></button><div class="faq-a"><p>學費採<b style="color:var(--navy)">月繳</b>制、平實透明，沒有高額預繳或長約壓力。我們相信優質的美籍外師教育不該遙不可及——實際金額依年級與課程而定，歡迎加 LINE 索取完整費用說明。</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">孩子完全沒有英文基礎可以上嗎？<span class="pm"></span></button><div class="faq-a"><p>可以。啟蒙階段從 Phonics 自然發音與基礎聽說開始，採全美語沉浸式環境讓孩子自然培養語感，零基礎也能跟上。</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">每班真的只有 12 人嗎？<span class="pm"></span></button><div class="faq-a"><p>是的，每班嚴格控制在 12 人以內。這是我們的核心原則，確保外師認識每一個孩子，讓每個孩子都有開口練習的機會。</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">補習班在哪裡？接送方便嗎？<span class="pm"></span></button><div class="faq-a"><p>位於板橋區中正路 89 巷 4 號 1 樓，步行可達板橋國小、國光國小、大觀國小三大學區，家長接送方便、孩子安全無虞。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section bg-blue">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <img class="cta-img" src="/assets/img/banqiao-kids-english-class.webp" alt="準備好讓孩子起飛" loading="lazy" decoding="async" width="668" height="540">
+      <span class="eyebrow eyebrow-green">預約試聽</span>
+      <h2 style="margin-top:14px">準備好讓孩子<em>起飛</em>了嗎？</h2>
+      <p class="body" style="max-width:520px;margin:16px auto 0">加 LINE 直接和我們聊聊，預約一整堂真實課程，讓孩子自己感受不一樣的英文課。暑期前報名新生<b style="color:var(--navy)">免 9,000 元註冊費</b>。</p>
+      <div class="cta-row">
+        <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" data-line class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 預約試聽</a>
+        <a href="tel:+886928067772" data-call class="btn btn-outline">☎ 0928-067-772</a>
+      </div>
+      <p class="cta-note">點擊 LINE 按鈕將開啟與「埃森美語」官方帳號的對話</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-logo"><img class="foot-logo-img" src="/assets/img/american-english-banqiao-logo.jpg" alt="American English 埃森美語 logo" width="32" height="32" loading="lazy">American English 埃森美語</div>
+    <p class="foot-nap">220 新北市板橋區中正路 89 巷 4 號 1 樓　｜　<a href="tel:+886928067772">☎ 0928-067-772</a>　｜　<a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" data-line>LINE 線上預約</a></p>
+    <div class="foot-bottom">© 2026 American English 埃森美語</div>
+  </div>
+</footer>
+
+<!-- Floating LINE button (all viewports) + auto-popping offer bubble -->
+<a class="line-fab-bubble" id="lineBubble" href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" data-line>暑期前報名新生<b>免 9,000 元註冊費</b>　點我加 LINE →</a>
+<a class="line-fab" href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" data-line aria-label="加 LINE 預約試聽" id="lineFab"></a>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasIO = ('IntersectionObserver' in window);
+
+  /* LINE icon SVG (same path as the live site) */
+  var LINE_SVG = '<svg viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>';
+  document.querySelectorAll('[data-line-icon]').forEach(function(el){ el.innerHTML = LINE_SVG; });
+  document.getElementById('lineFab').innerHTML = LINE_SVG;
+
+  /* ───── Conversion tracking: fire on every LINE tap ───── */
+  var _leadFired=false;
+  function fireLead(){
+    // count one Meta "Lead" per visit (a person tapping several CTAs = one conversion)
+    var done=_leadFired;
+    try{ if(sessionStorage.getItem('ae_lead')==='1') done=true; }catch(e){}
+    if(!done){
+      _leadFired=true;
+      try{ sessionStorage.setItem('ae_lead','1'); }catch(e){}
+      try{ if(window.fbq) fbq('track','Lead',{content_name:'LINE add-friend',content_category:'line_bridge'}); }catch(e){}
+    }
+    // GA4 fires on every tap (raw tap count, for cross-checking against Meta)
+    try{ if(window.gtag) gtag('event','line_click',{event_category:'engagement',event_label:'line_bridge'}); }catch(e){}
+  }
+  function fireCall(){
+    try{ if(window.fbq) fbq('track','Contact',{content_category:'phone'}); }catch(e){}
+    try{ if(window.gtag) gtag('event','phone_click',{event_category:'engagement'}); }catch(e){}
+  }
+  // capture phase so it runs before the new tab opens / navigation begins
+  document.addEventListener('click',function(e){
+    var t=e.target;
+    if(t.closest('[data-line]')) fireLead();
+    else if(t.closest('[data-call]')) fireCall();
+  },true);
+
+  /* ───── Header shadow + scroll progress ───── */
+  var header=document.getElementById('siteHeader'), progress=document.getElementById('progress');
+  function onScroll(){ header.classList.toggle('scrolled', window.scrollY>8); var h=document.documentElement; progress.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'; }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* ───── Twinkling stars + light hero parallax ───── */
+  var deco=document.getElementById('deco');
+  if(deco && !reduce){
+    var cols=['var(--yellow)','var(--blue)','var(--purple)','var(--green)'];
+    for(var i=0;i<16;i++){ var s=document.createElement('span'); s.className='star'; var size=6+(i%4)*4; s.style.cssText='width:'+size+'px;height:'+size+'px;border-radius:50%;background:'+cols[i%4]+';left:'+((i*53)%100)+'%;top:'+((i*37)%100)+'%;animation-delay:'+(i*0.2)+'s'; deco.appendChild(s); }
+    var scene=document.getElementById('scene'), heroEl=document.querySelector('.hero');
+    if(scene && heroEl){ heroEl.addEventListener('mousemove',function(e){ var x=(e.clientX/window.innerWidth-.5), y=(e.clientY/window.innerHeight-.5); scene.style.transform='translate('+(x*16)+'px,'+(y*16)+'px)'; deco.style.transform='translate('+(x*-10)+'px,'+(y*-10)+'px)'; }); }
+  }
+
+  /* ───── Scroll reveal ───── */
+  var revs=document.querySelectorAll('.reveal');
+  if(reduce || !hasIO){ revs.forEach(function(r){ r.classList.add('in'); }); }
+  else{
+    var ro=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target); } }); },{threshold:0,rootMargin:'0px 0px -5% 0px'});
+    revs.forEach(function(r){ ro.observe(r); });
+    // failsafe: never leave content hidden in flaky in-app browsers
+    setTimeout(function(){ revs.forEach(function(r){ r.classList.add('in'); }); }, 3500);
+  }
+
+  /* ───── Learning-path stagger ───── */
+  document.querySelectorAll('.path').forEach(function(path){
+    var nodes=path.querySelectorAll('.node');
+    if(reduce || !hasIO){ nodes.forEach(function(n){ n.classList.add('in'); }); return; }
+    var poFired=false;
+    var po=new IntersectionObserver(function(es){ poFired=true; es.forEach(function(e){ if(e.isIntersecting){ var idx=[].indexOf.call(nodes,e.target); e.target.style.animationDelay=(idx*0.14)+'s'; e.target.classList.add('in'); po.unobserve(e.target); } }); },{threshold:.35});
+    nodes.forEach(function(n){ po.observe(n); });
+    setTimeout(function(){ if(!poFired){ nodes.forEach(function(n){ n.style.animation='none'; n.style.opacity='1'; n.style.transform='none'; }); } }, 3500);
+  });
+
+  /* ───── Stat counters (tabular-nums prevents width jitter) ───── */
+  var statBlock=document.querySelector('[data-stats]');
+  if(statBlock){
+    var runCounts=function(){ statBlock.querySelectorAll('.stat-num').forEach(function(el){ var to=+el.dataset.to, suf=el.dataset.suffix||''; if(reduce){ el.textContent=to+suf; return; } var start=null; function step(ts){ if(!start)start=ts; var p=Math.min((ts-start)/1500,1); el.textContent=Math.round(to*(1-Math.pow(1-p,3)))+suf; if(p<1)requestAnimationFrame(step); } requestAnimationFrame(step); }); };
+    if(!hasIO){ runCounts(); }
+    else{ var counted=false; new IntersectionObserver(function(es){ if(es[0].isIntersecting&&!counted){ counted=true; runCounts(); } },{threshold:.3}).observe(statBlock); }
+  }
+
+  /* ───── FAQ accordion ───── */
+  document.querySelectorAll('.faq-q').forEach(function(q){ q.addEventListener('click',function(){ var item=q.parentElement, open=item.classList.toggle('open'); q.setAttribute('aria-expanded',open); var a=item.querySelector('.faq-a'); a.style.maxHeight=open?a.scrollHeight+'px':0; }); });
+
+  /* ───── Signature swing-in for the brand illustration ───── */
+  var swings=document.querySelectorAll('.illus.swing');
+  if(reduce || !hasIO){ swings.forEach(function(s){ s.classList.add('in'); }); }
+  else{
+    var swFired=false;
+    var sw=new IntersectionObserver(function(es){ swFired=true; es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); sw.unobserve(e.target); } }); },{threshold:.2});
+    swings.forEach(function(s){ sw.observe(s); });
+    // only force-show if the observer never fired at all (broken in-app browser) — otherwise let it swing in on scroll
+    setTimeout(function(){ if(!swFired){ swings.forEach(function(s){ s.classList.add('in'); }); } }, 3500);
+  }
+
+  /* ───── Floating-button offer bubble: pop out after load, then back off ───── */
+  var bubble=document.getElementById('lineBubble');
+  if(bubble){
+    var bShown=false, bHideT;
+    function showBubble(){ if(bShown)return; bShown=true; bubble.classList.add('show'); bHideT=setTimeout(function(){ bubble.classList.remove('show'); },9000); }
+    function hideBubble(){ bubble.classList.remove('show'); clearTimeout(bHideT); }
+    setTimeout(showBubble, reduce?600:1600);
+    window.addEventListener('scroll',function(){ if(bShown) hideBubble(); },{passive:true,once:true}); // don't nag once they engage
+    bubble.addEventListener('click',hideBubble);
+  }
+})();
+
+/* ───── Location map (Leaflet) — same config & guards as the live site ───── */
+(function(){
+  function pin(name,time,color){return L.divIcon({className:'',iconSize:[1,1],iconAnchor:[0,30],html:'<div style="display:flex;flex-direction:column;align-items:center;transform:translateX(-50%)"><div style="background:#fff;border:2px solid '+color+';border-radius:8px;padding:2px 8px;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.15);text-align:center;margin-bottom:3px"><div style="font-size:11px;font-weight:800;color:#1A2752">'+name+'</div><div style="font-size:9px;font-weight:700;color:'+color+'">'+time+'</div></div><div style="width:26px;height:26px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:'+color+';border:2.5px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.25)"></div></div>'});}
+  function schoolPin(){return L.divIcon({className:'',iconSize:[1,1],iconAnchor:[0,34],html:'<div style="display:flex;flex-direction:column;align-items:center;transform:translateX(-50%)"><div style="background:#1A2752;border-radius:8px;padding:3px 9px;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.2);text-align:center;margin-bottom:3px"><div style="font-size:11px;font-weight:800;color:#FFC828">埃森美語</div><div style="font-size:9px;font-weight:700;color:rgba(255,255,255,.8)">我們在這裡</div></div><div style="width:34px;height:34px;border-radius:50%;background:#1A2752;border:3px solid #FFC828;box-shadow:0 2px 8px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center"><span style="color:#FFC828;font-size:16px;line-height:1">★</span></div></div>'});}
+  function initMap(){
+    if(typeof L==='undefined'){setTimeout(initMap,150);return;}
+    var el=document.getElementById('leafmap');
+    if(!el||el._leaflet_id||el.offsetWidth===0){setTimeout(initMap,150);return;}
+    var map=L.map('leafmap',{zoomControl:false,scrollWheelZoom:false,dragging:true,attributionControl:false,fadeAnimation:false}).setView([25.01450,121.45650],15);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+    L.marker([25.01441,121.45654],{icon:schoolPin()}).addTo(map);
+    L.marker([25.01303,121.45954],{icon:pin('板橋國小','步行 5 分鐘','#FFC828')}).addTo(map);
+    L.marker([25.01715,121.45403],{icon:pin('國光國小','步行 8 分鐘','#1CB0F6')}).addTo(map);
+    L.marker([25.01150,121.45377],{icon:pin('大觀國小','步行 10 分鐘','#CE82FF')}).addTo(map);
+    L.circle([25.01441,121.45654],{radius:600,color:'#1A2752',fillColor:'#1A2752',fillOpacity:.04,weight:1.5,dashArray:'6,6'}).addTo(map);
+    // invalidate twice — in-app browsers settle layout late
+    setTimeout(function(){map.invalidateSize();},300);
+    setTimeout(function(){map.invalidateSize();},1200);
+  }
+  if(document.readyState==='complete'){setTimeout(initMap,300);}else{window.addEventListener('load',function(){setTimeout(initMap,300);});}
+})();
+</script>
+</body>
+</html>
