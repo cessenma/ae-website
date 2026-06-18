@@ -197,6 +197,33 @@ header.site-header.scrolled{box-shadow:0 4px 22px rgba(26,39,82,.09)}
 .fest .emo{font-size:34px;line-height:1;margin-bottom:8px}
 .fest .en{font-family:'Baloo 2';font-weight:800;font-size:14px;color:var(--navy);line-height:1.2}
 .fest .zh{font-family:'Baloo 2';font-weight:700;font-size:12px;color:var(--text-body);margin-top:3px}
+
+/* ── English-level stage selector ── */
+@keyframes fade-up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.stage-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.stage-tab{display:inline-flex;align-items:center;gap:8px;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:15px;color:#475569;background:#fff;border:2px solid #e6ebf2;border-radius:100px;padding:11px 20px;cursor:pointer;box-shadow:0 3px 0 #eef2f6;transition:color .2s,background .2s,border-color .2s;min-height:46px}
+.stage-tab[aria-selected="true"]{color:#fff;border-color:transparent}
+.stage-tab[aria-selected="true"][data-c="g"]{background:#16a34a;box-shadow:0 4px 0 #15803d}
+.stage-tab[aria-selected="true"][data-c="o"]{background:#ea8c2e;box-shadow:0 4px 0 #c2701c}
+.stage-tab[aria-selected="true"][data-c="p"]{background:#7c3aed;box-shadow:0 4px 0 #6d28d9}
+.stage-tab[aria-selected="true"][data-c="b"]{background:#2563eb;box-shadow:0 4px 0 #1d4ed8}
+.stage-tab:active{transform:translateY(2px)}
+.stage-panel{margin:30px auto 0;max-width:880px;border-radius:28px;padding:clamp(26px,4vw,42px);background:var(--tint);animation:fade-up .4s ease}
+.stage-panel[hidden]{display:none}
+.stage-panel .shead{text-align:center;margin-bottom:22px}
+.stage-panel .emoji{font-size:38px;line-height:1}
+.stage-panel h3{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:clamp(22px,3vw,28px);color:var(--c);margin:12px 0 4px}
+.stage-panel .age{color:var(--c);font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;opacity:.9}
+.stage-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.stage-grid{grid-template-columns:1fr}}
+.stage-info{background:#fff;border-radius:18px;padding:20px;box-shadow:0 4px 16px rgba(26,39,82,.05)}
+.stage-info .lbl{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:13px;color:var(--c);margin-bottom:7px;text-transform:uppercase;letter-spacing:.5px}
+.stage-info p{color:#374151;line-height:1.75;font-size:14.5px;margin:0}
+.stage-fit-lbl{font-family:'Baloo 2',sans-serif;font-weight:700;color:var(--c);font-size:14px;margin:18px 2px 10px}
+.stage-fit{display:flex;flex-direction:column;gap:10px}
+.stage-fit .row{background:#fff;border-radius:13px;padding:12px 16px;font-family:'Baloo 2',sans-serif;font-weight:700;color:var(--navy);display:flex;gap:10px;align-items:center;box-shadow:0 3px 12px rgba(26,39,82,.04);font-size:14.5px}
+.stage-fit .row b{color:var(--c);font-weight:900}
+.stage-cta{text-align:center;margin-top:26px}
 .card{background:#fff;border:2px solid rgba(26,39,82,.06);border-radius:24px;padding:28px 24px;box-shadow:0 6px 0 rgba(26,39,82,.05);transition:transform .25s cubic-bezier(.34,1.56,.64,1),box-shadow .25s}
 .card:hover{transform:translateY(-8px) rotate(-1deg);box-shadow:0 14px 0 rgba(26,39,82,.06),var(--card-shadow)}
 .card .ico{width:60px;height:60px;border-radius:20px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;transition:transform .3s}
@@ -505,6 +532,79 @@ footer.site-footer{background:var(--navy);color:#fff;padding:48px 0 30px;text-al
   </div>
 </section>
 
+<!-- ENGLISH LEVEL FINDER -->
+<section class="section bg-soft" id="levels">
+  <div class="wrap">
+    <div class="center stack reveal">
+      <span class="eyebrow eyebrow-green">英文程度</span>
+      <h2>孩子適合<em>哪個階段</em>？</h2>
+      <p class="body">點選孩子的年級，看看適合的英文程度、學習重點與目標英檢。不確定也沒關係——加 LINE 預約試聽，外師會當場做 1 對 1 程度評估。</p>
+    </div>
+    <div class="stage-tabs reveal" role="tablist" aria-label="英文程度階段" style="margin-top:28px">
+      <button class="stage-tab" data-c="g" role="tab" aria-selected="true" aria-controls="lv-1">🌱 啟蒙</button>
+      <button class="stage-tab" data-c="b" role="tab" aria-selected="false" aria-controls="lv-2">📖 核心</button>
+      <button class="stage-tab" data-c="p" role="tab" aria-selected="false" aria-controls="lv-3">🎯 升學</button>
+      <button class="stage-tab" data-c="o" role="tab" aria-selected="false" aria-controls="lv-4">🏆 國中</button>
+    </div>
+
+    <div class="stage-panel" id="lv-1" role="tabpanel" style="--tint:#eafaf2;--c:#16a34a">
+      <div class="shead"><div class="emoji">🌱</div><h3>啟蒙階段</h3><div class="age">幼大班～小一 · 約 5–7 歲</div></div>
+      <div class="stage-grid">
+        <div class="stage-info"><div class="lbl">學什麼</div><p>Phonics 自然發音、字母與基礎聽說，全美語沉浸式環境建立語感與膽量。</p></div>
+        <div class="stage-info"><div class="lbl">目標程度</div><p>看字讀音、聽音拼字，敢開口說出簡單的英文句子。</p></div>
+      </div>
+      <div class="stage-fit-lbl">這個階段適合：</div>
+      <div class="stage-fit">
+        <div class="row"><span>✅</span><span>第一次正式學英文、<b>零基礎</b>的孩子</span></div>
+        <div class="row"><span>✅</span><span>看到英文會緊張、<b>不敢開口</b>的孩子</span></div>
+      </div>
+      <div class="stage-cta"><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" data-line class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 預約啟蒙試聽</a></div>
+    </div>
+
+    <div class="stage-panel" id="lv-2" role="tabpanel" hidden style="--tint:#eaf2fe;--c:#2563eb">
+      <div class="shead"><div class="emoji">📖</div><h3>核心階段</h3><div class="age">小二～小四 · 約 8–10 歲</div></div>
+      <div class="stage-grid">
+        <div class="stage-info"><div class="lbl">學什麼</div><p>閱讀理解 × 口說會話，累積字彙與生活情境表達，從「會讀」進到「敢聊」。</p></div>
+        <div class="stage-info"><div class="lbl">目標英檢</div><p>劍橋兒童英檢 Cambridge YLE：Starters → Movers。</p></div>
+      </div>
+      <div class="stage-fit-lbl">這個階段適合：</div>
+      <div class="stage-fit">
+        <div class="row"><span>✅</span><span>已有發音基礎、想<b>加強閱讀與會話</b>的孩子</span></div>
+        <div class="row"><span>✅</span><span>想考<b>劍橋兒童英檢</b>的孩子</span></div>
+      </div>
+      <div class="stage-cta"><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" data-line class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 預約核心試聽</a></div>
+    </div>
+
+    <div class="stage-panel" id="lv-3" role="tabpanel" hidden style="--tint:#f3ecfe;--c:#7c3aed">
+      <div class="shead"><div class="emoji">🎯</div><h3>升學階段</h3><div class="age">小五～小六 · 約 11–12 歲</div></div>
+      <div class="stage-grid">
+        <div class="stage-info"><div class="lbl">學什麼</div><p>文法寫作打底、英檢衝刺與私校面試英文，為國中超前部署。</p></div>
+        <div class="stage-info"><div class="lbl">目標英檢</div><p>YLE Flyers、劍橋 KET，私立中學英文面試準備。</p></div>
+      </div>
+      <div class="stage-fit-lbl">這個階段適合：</div>
+      <div class="stage-fit">
+        <div class="row"><span>✅</span><span>準備<b>考私中</b>或私校面試的孩子</span></div>
+        <div class="row"><span>✅</span><span>想<b>超前銜接國中</b>英文的孩子</span></div>
+      </div>
+      <div class="stage-cta"><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" data-line class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 預約升學試聽</a></div>
+    </div>
+
+    <div class="stage-panel" id="lv-4" role="tabpanel" hidden style="--tint:#fdf2e3;--c:#ea8c2e">
+      <div class="shead"><div class="emoji">🏆</div><h3>國中階段</h3><div class="age">小六～國三 · 約 12–15 歲</div></div>
+      <div class="stage-grid">
+        <div class="stage-info"><div class="lbl">學什麼</div><p>會考英文與 GEPT 全民英檢，聽說讀寫全面強化，外師全英文授課練聽力。</p></div>
+        <div class="stage-info"><div class="lbl">目標英檢</div><p>會考英文「精熟級 A++」、GEPT 全民英檢初級～中級。</p></div>
+      </div>
+      <div class="stage-fit-lbl">這個階段適合：</div>
+      <div class="stage-fit">
+        <div class="row"><span>✅</span><span>衝刺<b>會考英文</b>、想拿精熟級的學生</span></div>
+        <div class="row"><span>✅</span><span>想考 <b>GEPT</b>、加強聽力的學生</span></div>
+      </div>
+      <div class="stage-cta"><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" data-line class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 預約國中試聽</a></div>
+    </div>
+  </div>
+</section>
+
 <!-- STATS -->
 <section class="section bg-navy" data-stats>
   <div class="wrap center stack reveal">
@@ -709,6 +809,12 @@ footer.site-footer{background:var(--navy);color:#fff;padding:48px 0 30px;text-al
 
   /* ───── FAQ accordion ───── */
   document.querySelectorAll('.faq-q').forEach(function(q){ q.addEventListener('click',function(){ var item=q.parentElement, open=item.classList.toggle('open'); q.setAttribute('aria-expanded',open); var a=item.querySelector('.faq-a'); a.style.maxHeight=open?a.scrollHeight+'px':0; }); });
+
+  /* ───── English-level stage selector ───── */
+  document.querySelectorAll('.stage-tab').forEach(function(tab){ tab.addEventListener('click',function(){
+    var group=tab.closest('[role="tablist"]');
+    group.querySelectorAll('.stage-tab').forEach(function(t){ var sel=t===tab; t.setAttribute('aria-selected',sel?'true':'false'); var p=document.getElementById(t.getAttribute('aria-controls')); if(p) p.hidden=!sel; });
+  }); });
 
   /* ───── Signature swing-in for the brand illustration ───── */
   var swings=document.querySelectorAll('.illus.swing');
