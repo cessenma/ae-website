@@ -277,8 +277,9 @@ body.menu-open .drawer{opacity:1;transform:none;pointer-events:auto}
 .car-btn:hover svg{stroke:#fff}
 .car-btn svg{width:18px;height:18px;stroke:var(--navy);stroke-width:3;fill:none}
 .dots{display:flex;gap:8px}
-.dots button{width:10px;height:10px;border-radius:50%;border:none;background:rgba(26,39,82,.2);cursor:pointer;padding:0;transition:background .2s,width .2s}
-.dots button[aria-current="true"]{background:var(--blue);width:28px;border-radius:6px}
+.dots button{width:24px;height:24px;border:none;background:transparent;cursor:pointer;padding:0;position:relative;border-radius:50%}
+.dots button::before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:10px;height:10px;border-radius:50%;background:rgba(26,39,82,.2);transition:background .2s,width .2s}
+.dots button[aria-current="true"]::before{background:var(--blue);width:28px;border-radius:6px}
 /* testimonial grid (full page) */
 .tcard{background:#fff;border:2px solid rgba(26,39,82,.06);border-radius:24px;padding:30px;box-shadow:0 6px 0 rgba(26,39,82,.05)}
 .tcard .stars{color:var(--yellow);letter-spacing:2px;margin-bottom:12px}
@@ -343,10 +344,10 @@ footer.site-footer{background:var(--navy);color:#fff;padding:60px 0 32px;positio
 .foot-logo-img{width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.25)}
 .foot-tag{font-size:13px;color:rgba(255,255,255,.5);max-width:280px;line-height:1.7}
 .foot-nap{font-size:13px;color:rgba(255,255,255,.6);max-width:300px;line-height:1.8;margin-top:12px}
-.foot-nap a{color:rgba(255,255,255,.75);text-decoration:none}
+.foot-nap a{color:rgba(255,255,255,.85);text-decoration:underline}
 .foot-nap a:hover{color:#fff}
 .foot-links{display:flex;gap:44px;flex-wrap:wrap}
-.foot-col h4{font-family:'Baloo 2';font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--yellow);margin-bottom:14px}
+.foot-col h4,.foot-col .foot-h{font-family:'Baloo 2';font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--yellow);margin:0 0 14px}
 .foot-col a{display:block;font-size:13.5px;color:rgba(255,255,255,.6);text-decoration:none;margin-bottom:10px;transition:color .15s}
 .foot-col a:hover{color:#fff}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12px;color:rgba(255,255,255,.4)}
