@@ -368,6 +368,10 @@ footer.site-footer{background:var(--navy);color:#fff;padding:60px 0 32px;positio
 .reveal{opacity:0;transform:translateY(32px);transition:opacity .6s ease,transform .6s cubic-bezier(.34,1.4,.64,1)}
 .reveal.in{opacity:1;transform:none}
 .reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}
+/* Above-the-fold hero: animate via CSS on load (not JS) so LCP isn't gated by app.js */
+.hero .reveal{animation:revealIn .6s cubic-bezier(.34,1.4,.64,1) both}
+.hero .reveal.d1{animation-delay:.1s}.hero .reveal.d2{animation-delay:.2s}.hero .reveal.d3{animation-delay:.3s}
+@keyframes revealIn{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
 /* staggered cascade for review cards */
 @keyframes cascadeSafety{to{opacity:1;transform:none}}
 .cascade{opacity:0;transform:translateY(30px) scale(.96);transition:opacity .5s ease,transform .6s cubic-bezier(.34,1.45,.5,1);animation:cascadeSafety .4s ease 1.8s forwards}
