@@ -14,14 +14,24 @@ DirectoryIndex index.html
 # the platform level; harmless if duplicated).
 <IfModule mod_rewrite.c>
 RewriteEngine On
+# Canonical host: force https + non-www in a single 301 hop.
+# (GSC showed http://www.americanenglish.com.tw/ indexed separately — ~2,509 imp at 0.4% CTR —
+#  splitting ranking signals from the real non-www site. Purge Cloudflare cache after deploy.)
+RewriteCond %{HTTP_HOST} ^www\. [NC,OR]
 RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule ^ https://americanenglish.com.tw%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 # SEO consolidation 301 (cannibalization fix): /banqiao-junior-high-english/
 # merged into /junior-high-english-banqiao/. Trailing slash keeps the
 # -blind-spots article unaffected. Purge Cloudflare cache for the old URL after deploy.
 Redirect 301 /banqiao-junior-high-english/ https://americanenglish.com.tw/junior-high-english-banqiao/
+
+# Legacy URLs that still 404 but remain indexed (per GSC: /en/ 201 imp, /en/courses 198 imp,
+# /american-english-file 155 imp). Anchored RedirectMatch so /english-* slugs are NOT affected.
+RedirectMatch 301 ^/en/courses/?$ https://americanenglish.com.tw/courses/
+RedirectMatch 301 ^/en/?$ https://americanenglish.com.tw/
+RedirectMatch 301 ^/american-english-file/?$ https://americanenglish.com.tw/courses/
 
 # Friendly 404
 ErrorDocument 404 /404.html
