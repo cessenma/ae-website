@@ -15,8 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="/assets/styles.css?v=11">
 <link rel="icon" href="/assets/img/american-english-banqiao-logo.jpg">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"></noscript>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+<!-- Leaflet CSS+JS are lazy-loaded only when the map scrolls into view (see script before </body>) — keeps ~170 KiB of map off the initial load -->
 <link rel="canonical" href="https://americanenglish.com.tw/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="zh_TW">
@@ -42,7 +41,7 @@
 <body data-page="index">
 <!-- AE:CHROME start -->
 <div class="progress" id="progress"></div>
-<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo.jpg" alt="American English 埃森美語 logo" width="38" height="38">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo.jpg" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
 <div class="drawer" id="drawer"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></div>
 <!-- AE:CHROME end -->
 
@@ -337,7 +336,11 @@
     L.circle([25.01441,121.45654],{radius:600,color:'#1A2752',fillColor:'#1A2752',fillOpacity:.04,weight:1.5,dashArray:'6,6'}).addTo(map);
     setTimeout(function(){map.invalidateSize();},300);
   }
-  if(document.readyState==='complete'){setTimeout(initMap,300);}else{window.addEventListener('load',function(){setTimeout(initMap,300);});}
+  var _mapEl=document.getElementById('leafmap'),_lfLoaded=false;
+  function loadLeaflet(){if(_lfLoaded)return;_lfLoaded=true;
+    var c=document.createElement('link');c.rel='stylesheet';c.href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css';document.head.appendChild(c);
+    var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js';s.onload=initMap;document.head.appendChild(s);}
+  if(_mapEl){if('IntersectionObserver' in window){var _io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){loadLeaflet();_io.disconnect();}});},{rootMargin:'400px 0px'});_io.observe(_mapEl);}else{window.addEventListener('load',function(){setTimeout(loadLeaflet,1500);});}}
 })();
 </script>
 <!-- STATIC FOOTER (crawlable NAP + internal links; app.js skips its own when this exists) -->
