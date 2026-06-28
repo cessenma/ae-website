@@ -33,6 +33,23 @@ RedirectMatch 301 ^/en/courses/?$ https://americanenglish.com.tw/courses/
 RedirectMatch 301 ^/en/?$ https://americanenglish.com.tw/
 RedirectMatch 301 ^/american-english-file/?$ https://americanenglish.com.tw/courses/
 
+# More legacy WordPress URLs surfaced in GSC (Jun 2026) — 301 to the closest
+# current page so their residual impressions are recovered instead of 404ing.
+# Anchored (^...$) so live slugs (e.g. /elementary-english-*) are never caught.
+RedirectMatch 301 ^/explore-our-world/?$ https://americanenglish.com.tw/courses/
+RedirectMatch 301 ^/project-explorer/?$ https://americanenglish.com.tw/courses/
+RedirectMatch 301 ^/aei-curriculum/?$ https://americanenglish.com.tw/courses/
+RedirectMatch 301 ^/elementary-school-students/?$ https://americanenglish.com.tw/banqiao-elementary-school-english/
+RedirectMatch 301 ^/about/?$ https://americanenglish.com.tw/certified-american-teacher-banqiao/
+RedirectMatch 301 ^/information/?$ https://americanenglish.com.tw/
+# Retired /en/ section: map the known pages, then send everything else under
+# /en/ (incl. /en/explore-our-world-info, which was returning 403) to home.
+RedirectMatch 301 ^/en/american-english-file-info/?$ https://americanenglish.com.tw/courses/
+RedirectMatch 301 ^/en/explore-our-world-info/?$ https://americanenglish.com.tw/courses/
+RedirectMatch 301 ^/en/elementary-school-students/?$ https://americanenglish.com.tw/banqiao-elementary-school-english/
+RedirectMatch 301 ^/en/about/?$ https://americanenglish.com.tw/certified-american-teacher-banqiao/
+RedirectMatch 301 ^/en/ https://americanenglish.com.tw/
+
 # Friendly 404
 ErrorDocument 404 /404.html
 
