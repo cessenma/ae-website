@@ -170,9 +170,11 @@ body.menu-open .drawer{opacity:1;transform:none;pointer-events:auto}
 .cards.four{grid-template-columns:repeat(4,1fr)}
 @media(max-width:860px){.cards,.cards.two,.cards.four{grid-template-columns:1fr}}
 .card{background:#fff;border:2px solid rgba(26,39,82,.06);border-radius:24px;padding:32px;box-shadow:0 6px 0 rgba(26,39,82,.05);transition:transform .25s cubic-bezier(.34,1.56,.64,1),box-shadow .25s}
-.card:hover{transform:translateY(-8px) rotate(-1deg);box-shadow:0 14px 0 rgba(26,39,82,.06),var(--card-shadow)}
+a.card{display:block;color:inherit;text-decoration:none;cursor:pointer}
+a.card:focus-visible{outline:3px solid #1CB0F6;outline-offset:3px}
+a.card:hover{transform:translateY(-8px) rotate(-1deg);box-shadow:0 14px 0 rgba(26,39,82,.06),var(--card-shadow)}
 .card .ico{width:64px;height:64px;border-radius:20px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;transition:transform .3s}
-.card:hover .ico{transform:scale(1.1) rotate(-6deg)}
+a.card:hover .ico{transform:scale(1.1) rotate(-6deg)}
 .card .ico svg{width:32px;height:32px;stroke-width:2.2}
 .ico.b{background:rgba(28,176,246,.14);color:var(--blue)}
 .ico.g{background:rgba(6,199,85,.14);color:var(--green)}
@@ -256,7 +258,7 @@ body.menu-open .drawer{opacity:1;transform:none;pointer-events:auto}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:860px;margin:40px auto 0}
 @media(max-width:680px){.stats-grid{grid-template-columns:1fr 1fr}}
 .stat-card{background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.12);border-radius:24px;padding:30px 16px;text-align:center;transition:transform .3s}
-.stat-card:hover{transform:translateY(-6px) scale(1.03)}
+
 .stat-num{font-family:'Baloo 2';font-weight:800;font-size:52px;color:var(--yellow);line-height:1;font-variant-numeric:tabular-nums}
 .stat-label{font-family:'Baloo 2';font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.6);margin-top:12px}
 
