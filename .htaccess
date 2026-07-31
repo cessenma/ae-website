@@ -42,6 +42,9 @@ RedirectMatch 301 ^/aei-curriculum/?$ https://americanenglish.com.tw/courses/
 RedirectMatch 301 ^/elementary-school-students/?$ https://americanenglish.com.tw/banqiao-elementary-school-english/
 RedirectMatch 301 ^/about/?$ https://americanenglish.com.tw/certified-american-teacher-banqiao/
 RedirectMatch 301 ^/information/?$ https://americanenglish.com.tw/
+# GA4 Jul 2026: visitors (and the month's only tracked key events) still hit the
+# old WordPress /contact-us — send them to the trial page instead of a 404.
+RedirectMatch 301 ^/contact-us/?$ https://americanenglish.com.tw/free-trial/
 # Retired /en/ section: map the known pages, then send everything else under
 # /en/ (incl. /en/explore-our-world-info, which was returning 403) to home.
 RedirectMatch 301 ^/en/american-english-file-info/?$ https://americanenglish.com.tw/courses/
@@ -63,6 +66,12 @@ Header always set X-Content-Type-Options "nosniff"
 Header always set Referrer-Policy "strict-origin-when-cross-origin"
 Header always set X-Frame-Options "SAMEORIGIN"
 Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+# HTML: let Cloudflare cache it briefly (5 min) but never serve stale pages for
+# days — the edge was caching blog HTML with no cache-control and picking its
+# own long TTL, so deploys took days to appear in some regions.
+<FilesMatch "\.html$">
+Header set Cache-Control "public, max-age=0, s-maxage=300, must-revalidate"
+</FilesMatch>
 </IfModule>
 
 # Cache static assets

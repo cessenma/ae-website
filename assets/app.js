@@ -252,6 +252,19 @@
     }
   }
 
+  /* ---------- GA4: count LINE taps (the site's only conversion action) ---------- */
+  // Delegated so it also catches the injected chrome/fab links. Mark "line_tap"
+  // as a key event in GA4 Admin, then import it into Google Ads as a conversion.
+  document.addEventListener('click', function(e){
+    var a = e.target.closest ? e.target.closest('a[href*="lin.ee"]') : null;
+    if(a && typeof window.gtag === 'function'){
+      window.gtag('event', 'line_tap', {
+        page_path: location.pathname,
+        link_text: (a.textContent || '').trim().slice(0, 40)
+      });
+    }
+  }, true);
+
   function init(){ injectChrome(); wire(); injectSEO(); }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', init);
   else init();
