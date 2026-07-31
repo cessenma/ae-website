@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://americanenglish.com.tw/sitemap.xml
+
+# Machine-readable site summary for AI assistants:
+# https://americanenglish.com.tw/llms.txt

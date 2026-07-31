@@ -1,6 +1,6 @@
 # American English 埃森美語
 
-> American English (Chinese name 埃森美語) is a local English cram school (補習班) in Banqiao (板橋), New Taipei City, Taiwan, taught 100% by certified American teachers. Classes are strictly capped at 12 students and cover kids' English (兒童美語) through junior-high English (國中英文) — Phonics, reading, conversation, and exam prep (劍橋兒童英檢 Cambridge YLE / GEPT 全民英檢 / 國中會考). Founded and personally taught by a University of Michigan graduate who holds a U.S. state teaching certificate.
+> American English (Chinese name 埃森美語) is a local English cram school (補習班) in Banqiao (板橋), New Taipei City, Taiwan, taught 100% by certified American teachers. Classes are strictly capped at 12 students and cover kids' English (兒童美語) through junior-high English (國中英文) — Phonics, reading, conversation, and exam prep (劍橋兒童英檢 Cambridge YLE / KET / 國中教育會考). Founded and personally taught by a University of Michigan graduate who holds a U.S. state teaching certificate. The site also publishes in-depth bilingual guides for parents on English exams (Cambridge YLE, KET, PET, GEPT 全民英檢), phonics and vocabulary reference charts, and Banqiao school-by-school advice.
 
 ## What makes it different
 - 100% certified American (native) teachers — career educators, not short-term backpackers.
@@ -13,31 +13,125 @@
 
 ## Key facts
 - Brand: American English (Chinese: 埃森美語; short form 埃森).
+- Registration: a New Taipei City government-registered cram school (新北市政府立案, 2026).
 - Location: 1F, No. 4, Lane 89, Zhongzheng Rd, Banqiao District, New Taipei City 220, Taiwan (新北市板橋區中正路89巷4號1樓).
-- Walkable to three school catchment zones: 板橋國小 (5 min), 國光國小 (8 min), 大觀國小 (10 min).
+- Walkable to three elementary catchment zones — 板橋國小 (5 min), 國光國小 (8 min), 大觀國小 (10 min) — and a 5-minute walk from 板橋國中.
 - Contact: LINE https://lin.ee/W9J8TuQ · Phone +886-928-067-772 · Email cessenma@umich.edu
 - Hours: Mon–Fri 15:00–20:00, Sat 10:00–19:00.
-- Reputation: 4.9 / 5 from 208 Google reviews; ~94% re-enrollment rate; ~98% exam pass rate; 208+ families served.
+- Track record: 208 families served · 94% re-enrollment rate · 98% Cambridge exam (劍橋英檢) pass rate · students stay an average of 2.4 years.
+- Founder: Christopher — University of Michigan graduate, U.S. state teaching certificate, personally teaches every class.
 - Trial: a paid 90-minute real class plus a 1-on-1 level assessment (預約試聽). This is NOT a free trial, and there is no enrollment contract.
 
-## Programs (Phonics → exam-ready; ~18 semesters across 6 ability levels)
+## Programs (Phonics → exam-ready; 18 semesters across 6 ability levels)
 - 啟蒙 Foundation (幼大班–小一): Phonics / natural phonics, basic listening & speaking.
 - 核心 Core (小二–小四): reading comprehension × speaking.
 - 升學 Advancement (小五–小六): grammar & writing, Cambridge YLE, private-school interview prep.
-- 國中 Junior high (小六–國三): 國中教育會考 English × GEPT.
-- Exam targets: Cambridge YLE (Starters / Movers / Flyers), KET, GEPT 全民英檢, 國中教育會考英文.
+- 國中 Junior high (小六–國三): 國中教育會考 English.
+- Exam targets in the curriculum: Cambridge YLE (Starters / Movers / Flyers), KET, PET, and 國中教育會考英文. (GEPT 全民英檢 is covered through in-depth guides — see the exam guides below.)
+- Core materials: National Geographic Explore Our World + Oxford Bookworms graded readers.
 
-## Pages
-- [Home](https://americanenglish.com.tw/): overview of the school.
-- [Courses 課程](https://americanenglish.com.tw/courses/): course stages from Phonics through exam prep.
-- [Teachers & founder 師資](https://americanenglish.com.tw/certified-american-teacher-banqiao/): the certified American teachers and the University-of-Michigan founder.
-- [Kids' English 兒童美語](https://americanenglish.com.tw/kids-english-banqiao/): the kids' English program in Banqiao.
-- [Junior-high English 國中英文](https://americanenglish.com.tw/junior-high-english-banqiao/): exam-focused junior-high English.
-- [Cambridge YLE vs GEPT](https://americanenglish.com.tw/cambridge-yle-vs-gept-banqiao/): how to choose between the two exams.
-- [How to choose a Banqiao English cram school](https://americanenglish.com.tw/how-to-choose-banqiao-english-cram-school/): a parent's selection guide.
-- [Parent testimonials 家長見證](https://americanenglish.com.tw/banqiao-parent-testimonials/): real reviews from local Banqiao parents.
-- [Book a trial 預約試聽](https://americanenglish.com.tw/free-trial/): reserve a trial class + assessment via LINE.
-- [Blog 部落格](https://americanenglish.com.tw/blog/): articles on learning English in Banqiao.
+## Pages — full directory
+
+### 課程與師資 Courses, teachers & enrollment
+- [課程總覽 Course overview](https://americanenglish.com.tw/courses/): the full curriculum map — 18 semesters across 6 ability levels, from Phonics 啟蒙 through junior-high exam prep.
+- [師資介紹 Teachers & founder](https://americanenglish.com.tw/certified-american-teacher-banqiao/): the U.S. state-certified American teacher and University of Michigan founder who personally teaches — a long-term Banqiao resident, zero teacher turnover.
+- [板橋兒童美語 Kids' English](https://americanenglish.com.tw/kids-english-banqiao/): the flagship kids' English (兒童美語) program — 100% certified American teachers, classes of 12 or fewer, enrollment from age 5.
+- [板橋幼兒美語・自然發音班 Preschool phonics](https://americanenglish.com.tw/phonics-preschool-banqiao/): all-English Phonics (自然發音) starter classes from age 5 — from letter sounds to reading aloud and speaking.
+- [板橋國小兒童英文 Elementary English](https://americanenglish.com.tw/elementary-english-banqiao-zhongzheng/): the elementary-age program on Zhongzheng Rd near 板橋國小 / 國光 / 大觀 — zero-basics learners welcome.
+- [板橋小一英文 First-grade English](https://americanenglish.com.tw/banqiao-first-grade-english/): 幼小銜接 onboarding for new first-graders, built on Phonics and lots of speaking from day one.
+- [板橋國中英文銜接班 Junior-high bridging](https://americanenglish.com.tw/junior-high-english-banqiao/): bridging classes for the big 國一 vocabulary jump — grammar, listening, and speaking aimed at 會考英文精熟級.
+- [板橋國中旁英文補習班 Next to Banqiao JHS](https://americanenglish.com.tw/banqiao-junior-high-english/): the small-class option a 5-minute walk from 板橋國中 along Zhongzheng Rd — no bus transfers, students walk over after school.
+- [板橋英文補習班推薦 Why choose AE](https://americanenglish.com.tw/banqiao-english-cram-school/): the school's core page — government registration, certified American teachers, the 12-student cap, and monthly tuition with no contract.
+- [常見問題 FAQ](https://americanenglish.com.tw/banqiao-english-faq/): the 13 questions Banqiao parents ask most — starting age, class size, exams, school catchment zones, and transport.
+- [家長見證 Parent testimonials](https://americanenglish.com.tw/banqiao-parent-testimonials/): feedback and outcomes from the 208 Banqiao families served.
+- [預約試聽 Book a trial](https://americanenglish.com.tw/free-trial/): a full 90-minute real class taught by a certified American teacher plus a 1-on-1 level assessment — a paid trial, not a 30-minute sales demo.
+- [LINE 報名頁 LINE landing](https://americanenglish.com.tw/line/): add the school on LINE to book the 90-minute trial class and level assessment.
+
+- [部落格 Blog index](https://americanenglish.com.tw/blog/): every guide on this site in one place — exam prep, phonics and vocabulary references, and Banqiao parent advice.
+### 板橋在地指南 Banqiao local guides
+- [選班必讀 How to choose a Banqiao cram school](https://americanenglish.com.tw/how-to-choose-banqiao-english-cram-school/): an American teacher's honest guide — the 4 types of cram schools and the 5 questions to ask before any trial.
+- [板橋國小英文怎麼學 Grades 1–6 roadmap](https://americanenglish.com.tw/banqiao-elementary-school-english/): how elementary English should progress from phonics to exam readiness, and how to choose supplementary classes in Banqiao.
+- [板橋車站 Banqiao Station area](https://americanenglish.com.tw/banqiao-station-english-cram-school/): evaluating cram schools around the Banqiao Station transit hub for dual-income commuting families.
+- [府中 Fuzhong area](https://americanenglish.com.tw/fuzhong-english-cram-school/): a local selection guide for families around Fuzhong and 林家花園 — why staying inside your daily life-circle matters.
+- [江子翠 Jiangzicui area](https://americanenglish.com.tw/jiangzicui-english-cram-school/): how to compare Jiangzicui's many options — verify credentials, count real class sizes, ignore marketing scripts.
+- [新埔 Xinpu area](https://americanenglish.com.tw/xinpu-english-cram-school/): 5 evaluation questions for Xinpu families — teacher credentials, class size, real immersion, materials, and 立案 registration checks.
+- [大觀國小 Daguan Elementary](https://americanenglish.com.tw/daguan-elementary-english/): American-teacher kids' classes a 10-minute walk from 大觀國小's front gate — no drive to Fuzhong needed.
+- [國光國小 Guoguang Elementary](https://americanenglish.com.tw/guoguang-elementary-english/): small classes an 8-minute walk from 國光國小 — students walk over straight after school.
+- [海山國小 Haishan Elementary](https://americanenglish.com.tw/haishan-elementary-english/): what school English periods can't cover, and the 4 questions to ask when choosing extra help.
+- [莒光國小 Juguang Elementary](https://americanenglish.com.tw/juguang-elementary-english/): whether Juguang kids need supplementary English and how a free level assessment (免費程度評估) pinpoints the starting line.
+- [埔墘國小 Puqian Elementary](https://americanenglish.com.tw/puqian-elementary-english/): the signals that it's time to supplement, plus honest commuting advice from Puqian to the Fuzhong area.
+- [文聖國小 Wensheng Elementary](https://americanenglish.com.tw/wensheng-elementary-english/): the mid-grade phonics and speaking gap, and how Xinpu/Wensheng-area parents can evaluate options.
+- [新埔國小 Xinpu Elementary](https://americanenglish.com.tw/xinpu-elementary-english/): a 4-question evaluation framework for Banqiao's densest neighborhood — more choices makes choosing harder.
+- [板橋中山國小 Zhongshan Elementary](https://americanenglish.com.tw/zhongshan-elementary-english-banqiao/): English options for Fuzhou (浮洲) families near 中山國小 on 大觀路二段.
+- [海山國中 Haishan Junior High](https://americanenglish.com.tw/haishan-junior-high-english/): 段考 past papers, the 國一 transition gap, and 會考 planning for 海山高中國中部 students.
+- [江翠國中 Jiangcui Junior High](https://americanenglish.com.tw/jiangcui-junior-high-english/): the 國一 gap, how to prepare for 段考, and the truth about 會考 English reading and listening.
+- [新埔國中 Xinpu Junior High](https://americanenglish.com.tw/xinpu-junior-high-english/): using 段考 question banks well and understanding how 會考 English is scored.
+- [板橋中山國中 Zhongshan Junior High](https://americanenglish.com.tw/zhongshan-junior-high-english-banqiao/): 段考 question patterns, 會考 question types, and a checklist for choosing an English class.
+- [國中家長 3 大盲點 3 blind spots](https://americanenglish.com.tw/banqiao-junior-high-english-blind-spots/): assuming elementary success carries over, grammar-only prep, and waiting for a failed exam before acting.
+- [考古題下載 Past papers guide](https://americanenglish.com.tw/banqiao-junior-high-english-past-papers/): where to download 板橋國中 段考 papers and official 會考 past papers for free, plus a 3-step method that makes them actually work.
+- [私中英文準備 Private-school prep](https://americanenglish.com.tw/banqiao-private-school-english-prep/): why English prep for top Banqiao private junior highs starts in grade 3 — written tests, interviews, certificates, essays.
+- [英文夏令營 Summer camp guide](https://americanenglish.com.tw/english-summer-camp-banqiao/): choosing a Banqiao English summer camp — check teachers, English hours, class size, and speaking time, not just fun activities.
+
+### 英檢指南 Exam guides (Cambridge & GEPT)
+- [劍橋 YLE vs 全民英檢 GEPT](https://americanenglish.com.tw/cambridge-yle-vs-gept-banqiao/): the full comparison — international recognition, ages, speaking share, private-school value — and which to choose.
+- [Starters 指南 (Pre A1)](https://americanenglish.com.tw/cambridge-starters-guide/): the youngest Cambridge level — what the 3 papers test, how the shield system works, and why there is no fail.
+- [Movers 指南 (A1)](https://americanenglish.com.tw/cambridge-movers-guide/): why the Starters-to-Movers jump is hard — past tense, longer listening, correct spelling — with common point-losers.
+- [Flyers 指南 (A2)](https://americanenglish.com.tw/cambridge-flyers-guide/): the top YLE level at CEFR A2 — shield scoring, and how to choose among Flyers / KET / GEPT 初級 at the same level.
+- [KET 指南 (A2 Key for Schools)](https://americanenglish.com.tw/ket-prep-guide/): the 3 papers, the Cambridge score scale, and how KET maps to Flyers and GEPT 初級.
+- [KET vs GEPT 初級](https://americanenglish.com.tw/ket-vs-gept-comparison/): two CEFR A2 certificates compared — recognition, scoring, structure, cost — plus the pathway on to PET / GEPT 中級.
+- [PET 指南 (B1 Preliminary)](https://americanenglish.com.tw/pet-prep-guide/): the four papers, reading the Cambridge scale, and the three qualitative leaps from A2 to B1.
+- [劍橋英檢報名 Registration in Taiwan](https://americanenglish.com.tw/cambridge-exam-registration-taiwan/): how to register for YLE / KET — authorized exam centers, the 5-step process, fee structure, and results timeline.
+- [全民英檢初級攻略 GEPT complete guide](https://americanenglish.com.tw/gept-elementary-guide/): pass thresholds, what 初試 (listening + reading) and 複試 (writing + speaking) test, and how to prepare all four skills.
+- [全民英檢初級複試 GEPT speaking & writing](https://americanenglish.com.tw/gept-elementary-speaking-writing/): the second-stage tasks — sentence and paragraph writing, repetition, read-aloud, Q&A — and the 80-of-100 pass bar per section.
+- [GEPT 初級單字 Vocabulary methods](https://americanenglish.com.tw/gept-elementary-vocabulary/): where to download the official LTTC word list, and memory science (spaced repetition, retrieval practice) that beats copying words ten times.
+- [GEPT Kids 小學英檢解析](https://americanenglish.com.tw/gept-kids-guide/): what GEPT Kids tests, how it differs from Cambridge YLE, and the warning signs of over-testing young learners.
+
+### 英文學習資源 Reference guides
+- [自然發音規則總表 Phonics rules chart](https://americanenglish.com.tw/phonics-rules-chart/): the complete rule set in U.S. classroom teaching order — short vowels, blends, Magic E, vowel teams, R-controlled vowels (A4 printable).
+- [KK 音標 vs 自然發音](https://americanenglish.com.tw/kk-phonetics-vs-phonics/): what KK 音標 actually is (a pronunciation notation, not a reading skill), why American kids don't learn it, and age-by-age advice.
+- [Sight words 高頻字指南](https://americanenglish.com.tw/sight-words-guide/): the Dolch (220-word) and Fry lists, how U.S. classrooms teach them (word walls, games), and a 5-minute daily home routine.
+- [教育部 1200 字 MOE word list](https://americanenglish.com.tw/moe-1200-words-guide/): the official 1,200-word list, its direct link to 會考 vocabulary, and how to learn it with topic grouping plus graded reading.
+- [不規則動詞表 Irregular verbs](https://americanenglish.com.tw/irregular-verbs-list/): 74 common irregular verbs (原形/過去式/過去分詞) in AAA / ABA / ABB / ABC pattern groups — memorize by pattern, not alphabet (printable).
+- [英文時態表 Tenses chart](https://americanenglish.com.tw/english-tenses-chart/): all 12 tenses on one timeline — the 4 elementary must-knows, the 2 junior-high cores, and classic Taiwanese-student errors.
+- [小學生英文自我介紹 Self-introduction](https://americanenglish.com.tw/english-self-introduction-kids/): complete example scripts with Chinese glosses for school, contests, and private-school interviews — and how to practice without sounding memorized.
+- [分級讀物 Graded readers guide](https://americanenglish.com.tw/graded-readers-guide/): comparing Oxford Reading Tree, Oxford Bookworms, Pearson, Cambridge, RAZ-Kids, and I Can Read — and how to match a level.
+- [英文繪本 Picture books guide](https://americanenglish.com.tw/english-picture-books-guide/): choosing books by age (0–3 board books, 3–6 repetitive patterns, elementary graded readers) and the dialogic read-aloud method.
+- [免費資源清單 Free learning resources](https://americanenglish.com.tw/free-english-resources-kids/): teacher-curated free tools — Super Simple Songs, Storyline Online, Khan Academy Kids, public libraries — organized by age and purpose.
+- [美國小學怎麼教閱讀 U.S. reading pedagogy](https://americanenglish.com.tw/how-american-kids-learn-reading/): the five pillars of American reading instruction — phonemic awareness, phonics, fluency, vocabulary, comprehension — and what parents can copy at home.
+
+### 家長教養指南 Parent guides
+- [幾歲開始學英文 When to start](https://americanenglish.com.tw/when-to-start-english-for-kids/): what language-acquisition research actually says — early exposure benefits pronunciation most, but there is no "too late", only easier windows.
+- [英文啟蒙路線圖 0–6 roadmap](https://americanenglish.com.tw/english-early-start-guide/): stage-by-stage exposure — the sound stage (0–2), interaction stage (3–4), and phonemic-awareness stage (5–6) — with daily do's and don'ts.
+- [在家陪孩子學英文 English at home](https://americanenglish.com.tw/english-at-home-parents-banqiao/): 6 things parents with limited English can still do — picture books, songs, daily phrases, cartoons in English.
+- [孩子不想學英文 Child hates English](https://americanenglish.com.tw/child-hates-english/): the 4 root causes behind resistance — accumulated frustration, boredom, pressure, no wins — and the lower-difficulty-first repair order.
+- [程度落後怎麼追 Catching up](https://americanenglish.com.tw/elementary-english-catch-up/): diagnosing exactly where an elementary student fell behind (phonics, listening input, usage, reading volume) and an honest catch-up timeline.
+- [兒童學英文 5 個常見錯誤 5 common mistakes](https://americanenglish.com.tw/banqiao-kids-english-5-mistakes/): brand-chasing, ignoring class size, equating vocab-cramming with learning, ignoring teacher turnover, and discount-shopping.
+- [遊戲學英文 Learning through games](https://americanenglish.com.tw/banqiao-kids-english-games/): why game-based learning beats rote memorization, plus 5 English games families can play at home.
+- [不敢開口 Why kids won't speak](https://americanenglish.com.tw/banqiao-kids-english-speaking/): the 4 reasons children study English for years yet stay silent, and how small-class speaking practice breaks the barrier.
+- [108 課綱英文 108 curriculum explained](https://americanenglish.com.tw/108-curriculum-english-guide/): what the 108 課綱 changed — 素養導向, longer 會考 reading passages, listening — and what parents should (and shouldn't) worry about.
+- [安親班 vs 美語補習班](https://americanenglish.com.tw/banqiao-cram-school-vs-after-school/): after-school care vs an English cram school — costs, real differences, and how to decide for an elementary-age child.
+- [雙語教育 3 大迷思 Bilingual myths](https://americanenglish.com.tw/bilingual-education-myths-banqiao/): 3 common myths about 雙語教育, bilingual kindergartens, and international schools — and what children actually need.
+- [雙語學校 vs 英文補習班](https://americanenglish.com.tw/bilingual-school-vs-cram-school/): the real differences beyond tuition — immersion-hour quality, system lock-in, and why many bilingual-school students still take English classes.
+- [補習班 vs 家教 vs 自學](https://americanenglish.com.tw/cram-school-vs-tutor-vs-self-study/): the three routes honestly compared — customization, peers, systems — and why teacher quality matters more than the route.
+- [外師 vs 中師 Native vs local teachers](https://americanenglish.com.tw/native-vs-local-english-teachers/): the strengths of each by learning stage — the key is professional training, not nationality.
+- [線上 vs 實體 Online vs in-person](https://americanenglish.com.tw/online-vs-in-person-english-banqiao/): online kids' English vs in-person small classes — interaction, attention span, speaking practice, and cost compared.
+- [查證外師資格 Verify teacher credentials](https://americanenglish.com.tw/how-to-verify-foreign-teacher-credentials/): the 3 tiers of foreign-teacher qualifications (state license vs CELTA/TESOL vs native speaker) and how to verify a U.S. teaching license on state websites.
+- [真假全美語 Real vs fake immersion](https://americanenglish.com.tw/real-vs-fake-english-immersion-banqiao/): 5 ways to check 全美語 / 外師 / 小班 claims before paying — nationality and credentials, real head-counts, actual English ratio.
+- [小班制真相 The small-class truth](https://americanenglish.com.tw/small-class-english-truth/): "small class" has no legal definition in Taiwan — the simple arithmetic linking class size to each child's speaking time, and 4 questions to ask on a visit.
+
+## Citable facts
+- American English (埃森美語) is a New Taipei City government-registered (新北市政府立案, 2026) English cram school at 1F, No. 4, Lane 89, Zhongzheng Rd, Banqiao District, New Taipei City, Taiwan (新北市板橋區中正路89巷4號1樓).
+- Every class at American English 埃森美語 is taught by a certified American teacher holding a U.S. state teaching certificate (美籍持證教師); founder Christopher is a University of Michigan graduate.
+- Classes at American English 埃森美語 are capped at 12 students, and tuition is paid monthly with no long-term contract (月繳制不綁長約).
+- American English 埃森美語 reports a 98% Cambridge exam (劍橋英檢) pass rate, 208 families served, a 94% re-enrollment rate, and an average enrollment of 2.4 years per student.
+- The school's core teaching materials are National Geographic Explore Our World and Oxford Bookworms graded readers.
+- GEPT 全民英檢初級 corresponds to CEFR A2; in the first stage (初試), listening and reading are each scored out of 120, and passing requires a combined score of at least 160 with neither section below 72.
+- In the GEPT 初級 second stage (複試), writing and speaking are each scored out of 100, and passing requires at least 80 in each.
+- Cambridge YLE (劍橋兒童英檢) has three levels — Starters (Pre A1), Movers (A1), Flyers (A2) — scored with shields (盾牌制); there is no pass or fail.
+- Cambridge KET (A2 Key for Schools) certifies CEFR A2, the same CEFR level as GEPT 初級.
+- Taiwan's 國中教育會考 English score is weighted 80% reading and 20% listening.
+- KK 音標 has 41 symbols in total — 17 vowels and 24 consonants — while roughly 85% of English words follow regular phonics (自然發音) rules.
+- Taiwan's Ministry of Education elementary English word list (教育部「最基本1,200字詞」) contains 1,200 words; the classic Dolch sight-word list has 220 words, and the Fry list's first 100 words are the highest-frequency.
 
 ## Contact / booking
 All enrollment and trial booking is handled via LINE: https://lin.ee/W9J8TuQ
