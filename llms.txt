@@ -41,7 +41,6 @@
 - [板橋國小兒童英文 Elementary English](https://americanenglish.com.tw/elementary-english-banqiao-zhongzheng/): the elementary-age program on Zhongzheng Rd near 板橋國小 / 國光 / 大觀 — zero-basics learners welcome.
 - [板橋小一英文 First-grade English](https://americanenglish.com.tw/banqiao-first-grade-english/): 幼小銜接 onboarding for new first-graders, built on Phonics and lots of speaking from day one.
 - [板橋國中英文銜接班 Junior-high bridging](https://americanenglish.com.tw/junior-high-english-banqiao/): bridging classes for the big 國一 vocabulary jump — grammar, listening, and speaking aimed at 會考英文精熟級.
-- [板橋國中旁英文補習班 Next to Banqiao JHS](https://americanenglish.com.tw/banqiao-junior-high-english/): the small-class option a 5-minute walk from 板橋國中 along Zhongzheng Rd — no bus transfers, students walk over after school.
 - [板橋英文補習班推薦 Why choose AE](https://americanenglish.com.tw/banqiao-english-cram-school/): the school's core page — government registration, certified American teachers, the 12-student cap, and monthly tuition with no contract.
 - [常見問題 FAQ](https://americanenglish.com.tw/banqiao-english-faq/): the 13 questions Banqiao parents ask most — starting age, class size, exams, school catchment zones, and transport.
 - [家長見證 Parent testimonials](https://americanenglish.com.tw/banqiao-parent-testimonials/): feedback and outcomes from the 208 Banqiao families served.
@@ -111,6 +110,17 @@
 - [英文繪本 Picture books guide](https://americanenglish.com.tw/english-picture-books-guide/): choosing books by age (0–3 board books, 3–6 repetitive patterns, elementary graded readers) and the dialogic read-aloud method.
 - [免費資源清單 Free learning resources](https://americanenglish.com.tw/free-english-resources-kids/): teacher-curated free tools — Super Simple Songs, Storyline Online, Khan Academy Kids, public libraries — organized by age and purpose.
 - [美國小學怎麼教閱讀 U.S. reading pedagogy](https://americanenglish.com.tw/how-american-kids-learn-reading/): the five pillars of American reading instruction — phonemic awareness, phonics, fluency, vocabulary, comprehension — and what parents can copy at home.
+- [英文縮寫 Abbreviations](https://americanenglish.com.tw/english-abbreviations-guide/): common English abbreviations explained — e.g. vs i.e., a.m./p.m., US state and title forms, and the ones Taiwanese students most often get wrong.
+- [英文大寫規則 Capitalization](https://americanenglish.com.tw/english-capitalization-guide/): when to capitalize in English — sentence starts, proper nouns, titles, headings and the rules that differ from Chinese conventions.
+- [比較級與最高級 Comparatives](https://americanenglish.com.tw/english-comparatives-guide/): forming comparatives and superlatives, the -er/-est vs more/most rule, and every irregular form students need.
+- [英文連接詞 Conjunctions](https://americanenglish.com.tw/english-conjunctions-guide/): FANBOYS coordinating conjunctions, subordinating conjunctions, and how to punctuate each correctly.
+- [英文日期寫法 Dates](https://americanenglish.com.tw/english-dates-guide/): writing dates in American English — month/day/year order, ordinal forms, abbreviations, and how it differs from British usage.
+- [英文日記寫法 Diary writing](https://americanenglish.com.tw/english-diary-guide/): how to write an English diary entry — tense choice, opening lines, useful sentence patterns and a worked example.
+- [英文書信格式 Letter writing](https://americanenglish.com.tw/english-letter-writing-guide/): formal and informal English letter format — greetings, body, sign-offs, envelopes, with two complete worked letters.
+- [英文數字 Numbers](https://americanenglish.com.tw/english-numbers-guide/): cardinal and ordinal numbers, the irregular forms, and the spellings students most commonly get wrong.
+- [英文標點符號 Punctuation](https://americanenglish.com.tw/english-punctuation-guide/): the 13 English punctuation marks with their American names, what each does, and the mistakes Chinese speakers make most.
+- [國中生英文自我介紹 Self-introduction (junior high)](https://americanenglish.com.tw/english-self-introduction-students/): a four-part structure for a junior-high English self-introduction, with phrasing that works for 英檢 speaking tests and private-school interviews.
+- [兒童英文名字 English names for kids](https://americanenglish.com.tw/kids-english-names-guide/): how to choose an English name for a child — what sounds natural to native speakers, what to avoid, and safe well-liked options.
 
 ### 家長教養指南 Parent guides
 - [幾歲開始學英文 When to start](https://americanenglish.com.tw/when-to-start-english-for-kids/): what language-acquisition research actually says — early exposure benefits pronunciation most, but there is no "too late", only easier windows.
@@ -132,6 +142,9 @@
 - [查證外師資格 Verify teacher credentials](https://americanenglish.com.tw/how-to-verify-foreign-teacher-credentials/): the 3 tiers of foreign-teacher qualifications (state license vs CELTA/TESOL vs native speaker) and how to verify a U.S. teaching license on state websites.
 - [真假全美語 Real vs fake immersion](https://americanenglish.com.tw/real-vs-fake-english-immersion-banqiao/): 5 ways to check 全美語 / 外師 / 小班 claims before paying — nationality and credentials, real head-counts, actual English ratio.
 - [小班制真相 The small-class truth](https://americanenglish.com.tw/small-class-english-truth/): "small class" has no legal definition in Taiwan — the simple arithmetic linking class size to each child's speaking time, and 4 questions to ask on a visit.
+- [英文補習班費用 Cram school fees](https://americanenglish.com.tw/english-cram-school-fees/): what English cram schools in Taiwan actually cost — fee structures, what's included, hidden charges, and how to compare quotes.
+- [兒童英文學習指南 Kids' English guide](https://americanenglish.com.tw/kids-english-guide/): a complete guide to how children learn English — stages, what to expect at each age, and what actually works.
+- [幼兒園英文 Preschool English](https://americanenglish.com.tw/preschool-english-guide/): English for 幼兒園-age children — when to start, what all-English really means, and how to judge a preschool English program.
 
 ## Citable facts
 - American English (埃森美語) is a New Taipei City government-registered (新北市政府立案, 2026) English cram school at 1F, No. 4, Lane 89, Zhongzheng Rd, Banqiao District, New Taipei City, Taiwan (新北市板橋區中正路89巷4號1樓).
