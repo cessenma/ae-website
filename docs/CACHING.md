@@ -43,24 +43,50 @@ Note this is **not** fixed by the response-header transform rule that was added 
 stop the JSD script injection. That rule rewrites the header sent downstream; it does
 not change how long Cloudflare stores the object.
 
-## Fix 1 — root cause (dashboard, one time)
+## Do NOT "fix" this by shortening the Edge TTL
 
-Cloudflare → **Caching → Cache Rules** → open the rule that makes HTML cacheable
-(the one whose filter matches directory paths, e.g. `*/`).
+An earlier draft of this document recommended setting the Cache Rule's Edge TTL to
+"use cache-control header if present" so the edge would expire itself every 300 s.
+**That recommendation was wrong and has been withdrawn.**
 
-Set **Edge TTL** to:
+This is a **static site**. The HTML changes *only* when a deploy happens. A long edge
+TTL is therefore the correct design, not a defect — it maximises hit rate and keeps
+load off an origin that 429s under modest sustained load. The right way to handle a
+static site behind a CDN is *long TTL + purge on deploy*, which is exactly what
+`.github/workflows/cloudflare-purge.yml` now does. `s-maxage=300` was only ever a
+workaround for not having that automation.
 
-> **Use cache-control header if present, bypass cache if not**
+Shortening the TTL would mean the edge revalidates every five minutes forever, to
+solve a problem that occurs a few times a week at deploy time.
 
-Do **not** leave it on a fixed "Edge TTL: 1 day"-style value. With the setting above,
-the origin's `s-maxage=300` becomes authoritative and the edge self-heals within 5
-minutes of any deploy.
+### The JS-Detections interaction (checked, not assumed)
 
-Leave the `Cache-Control` transform rule alone — `no-transform` is what keeps the
-`/cdn-cgi/challenge-platform/` script out of the HTML, and `s-maxage=300` is
-deliberate. Keep the full directive; never replace it with `no-transform` alone.
+The `Cache-Control` response-header transform rule exists to stop Cloudflare injecting
+`/cdn-cgi/challenge-platform/scripts/jsd/main.js` (~600 ms of mobile JS, plus
+`cf_clearance` / `cf.bot_management.js_detection.passed` tracking, and the deprecated-API
+warnings that held Best Practices at 82). JS Detections **cannot be disabled on this
+plan**, so `no-transform` is the only lever.
 
-## Fix 2 — belt and braces (automated)
+A reasonable worry is that more cache MISSes would mean more chances to inject. Tested
+directly on 2026-08-07 against a forced MISS:
+
+| | forced MISS | cached HIT |
+|---|---|---|
+| `challenge-platform` references | 0 | 0 |
+| `cf_clearance` / `js_detection` references | 0 | — |
+| injected `/cdn-cgi/*.js` | none | none |
+| `set-cookie` | none | none |
+
+`no-transform` suppresses the injection **at the point of injection**, not by hiding
+behind a cache hit. So MISS frequency is irrelevant to it — but since shortening the
+TTL buys nothing anyway, leave the Cache Rule alone.
+
+**Never** weaken the header. Keep the full directive
+`public, max-age=0, s-maxage=300, must-revalidate, no-transform`; never reduce it to
+`no-transform` alone (that would discard the deliberate `s-maxage`), and never drop
+`no-transform` (the JSD script returns immediately).
+
+## The actual fix — purge on deploy (automated)
 
 `.github/workflows/cloudflare-purge.yml` runs on every push to `main`:
 
