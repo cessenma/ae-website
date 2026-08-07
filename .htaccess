@@ -69,8 +69,23 @@ Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 # HTML: let Cloudflare cache it briefly (5 min) but never serve stale pages for
 # days — the edge was caching blog HTML with no cache-control and picking its
 # own long TTL, so deploys took days to appear in some regions.
+# 'no-transform' stops Cloudflare injecting its JS-Detections script
+# (/cdn-cgi/challenge-platform/scripts/jsd/main.js) into every HTML response.
+# That script was the #1 JS execution item on the site (~600ms mobile) and caused all
+# three deprecated-API warnings that held Best Practices at 82. JS Detections cannot be
+# switched off on the Free plan; no-transform is the supported way to opt out.
+# Safe here because NO other Cloudflare transformation is in use — verified live 2026-08-07:
+# 0 Email Obfuscation, 0 Rocket Loader, 0 Web Analytics beacon, no auto-minify.
+# Scoped to .html so CSS/JS/image handling is untouched.
+#
+# NOTE: a Cloudflare Response Header Transform Rule ("HTML no-transform (stop JSD
+# injection)", filter: http.request.uri.path wildcard r"*/") sets the SAME header at the
+# edge and is what actually takes effect today. This origin copy is a deliberate fallback
+# so the behaviour survives if that rule is deleted or the site moves off Cloudflare.
+# If you change one, change both — they must not drift apart.
+# Verified live after deploy: jsd script gone (0 refs), content-encoding still 'br'.
 <FilesMatch "\.html$">
-Header set Cache-Control "public, max-age=0, s-maxage=300, must-revalidate"
+Header set Cache-Control "public, max-age=0, s-maxage=300, must-revalidate, no-transform"
 </FilesMatch>
 </IfModule>
 

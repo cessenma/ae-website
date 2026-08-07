@@ -27,8 +27,10 @@ em{font-style:italic;color:var(--blue)}
 p.body{font-size:clamp(15px,1.6vw,17px);line-height:1.8;color:var(--text-body)}
 .bg-navy p.body{color:rgba(255,255,255,.74)}
 .eyebrow{display:inline-block;font-family:'Baloo 2',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--blue);background:rgba(28,176,246,.12);padding:7px 16px;border-radius:100px}
-.eyebrow-green{color:var(--green);background:rgba(6,199,85,.12)}
-.eyebrow-yellow{color:#b8860b;background:rgba(255,200,40,.18)}
+/* Eyebrow text is 12px on a tinted pill, so it needs a darkened ink to clear
+   WCAG AA 4.5:1. The pill background keeps the brand tint; only the text darkens. */
+.eyebrow-green{color:#067033;background:rgba(6,199,85,.12)}
+.eyebrow-yellow{color:#8a5f00;background:rgba(255,200,40,.18)}
 .divider{width:48px;height:4px;background:linear-gradient(90deg,var(--blue),var(--purple));border-radius:4px}
 
 /* ── 3D Buttons ── */
@@ -310,6 +312,9 @@ a.card:hover .ico{transform:scale(1.1) rotate(-6deg)}
 .faq{max-width:760px;margin:40px auto 0;display:flex;flex-direction:column;gap:14px}
 .faq-item{background:#fff;border:2px solid rgba(26,39,82,.07);border-radius:18px;overflow:hidden;transition:border-color .2s}
 .faq-item.open{border-color:var(--blue)}
+/* FAQ questions are wrapped in a heading (WAI-ARIA accordion pattern) so AI/search
+   extractors see real heading structure; the wrapper carries no visual styling. */
+.faq-h{margin:0;font:inherit;letter-spacing:inherit;color:inherit;line-height:inherit}
 .faq-q{width:100%;text-align:left;background:none;border:none;font-family:'Baloo 2';font-size:17px;font-weight:700;color:var(--navy);padding:20px 22px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:44px}
 .faq-q .pm{flex:0 0 26px;width:26px;height:26px;position:relative;transition:transform .3s}
 .faq-item.open .pm{transform:rotate(180deg)}

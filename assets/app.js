@@ -209,7 +209,7 @@
     }
 
     // faq accordion
-    document.querySelectorAll('.faq-q').forEach(function(q){ q.addEventListener('click',function(){ var item=q.parentElement, open=item.classList.toggle('open'); q.setAttribute('aria-expanded',open); var a=item.querySelector('.faq-a'); a.style.maxHeight=open?a.scrollHeight+'px':0; }); });
+    document.querySelectorAll('.faq-q').forEach(function(q){ q.addEventListener('click',function(){ var item=q.closest('.faq-item'), open=item.classList.toggle('open'); q.setAttribute('aria-expanded',open); var a=item.querySelector('.faq-a'); a.style.maxHeight=open?a.scrollHeight+'px':0; }); });
   }
 
   /* ---------- SEO: structured data (JSON-LD) ---------- */
