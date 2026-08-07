@@ -1,0 +1,85 @@
+name: Purge Cloudflare after deploy
+
+# Hostinger auto-deploys on push to main. Cloudflare then keeps serving the OLD
+# HTML from its edge, because the zone caches HTML with an Edge TTL that overrides
+# the origin's s-maxage=300. That stale hub is what stranded ~26 pages out of
+# Google's index in August 2026 — it has recurred twice.
+#
+# This job waits for Hostinger to finish deploying, purges Cloudflare, then proves
+# the edge is serving the new bytes. It fails loudly if any step does not hold.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:        # lets you re-run a purge by hand from the Actions tab
+
+concurrency:
+  group: cf-purge
+  cancel-in-progress: false
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fingerprint the committed homepage
+        id: fp
+        run: |
+          echo "md5=$(md5sum index.html | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+          echo "Committed index.html md5: $(md5sum index.html | cut -d' ' -f1)"
+
+      - name: Wait for Hostinger to finish deploying
+        id: wait
+        env:
+          WANT: ${{ steps.fp.outputs.md5 }}
+        run: |
+          # A ?cb= query is a distinct cache key, so it always MISSes the edge and
+          # pulls from origin. That lets us watch the ORIGIN without purging first.
+          for i in $(seq 1 60); do
+            got=$(curl -sS --max-time 30 "https://americanenglish.com.tw/?cb=gh${GITHUB_RUN_ID}-$i" | md5sum | cut -d' ' -f1)
+            if [ "$got" = "$WANT" ]; then
+              echo "Origin is serving the new build after ${i} attempt(s)."
+              exit 0
+            fi
+            echo "attempt $i: origin md5=$got want=$WANT — waiting 15s"
+            sleep 15
+          done
+          echo "::error::Origin never served the committed build within 15 minutes. Purge skipped — check the Hostinger Git deploy."
+          exit 1
+
+      - name: Purge Cloudflare cache
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ZONE: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+        run: |
+          if [ -z "$CF_TOKEN" ] || [ -z "$CF_ZONE" ]; then
+            echo "::error::CLOUDFLARE_API_TOKEN / CLOUDFLARE_ZONE_ID secrets are not set."
+            exit 1
+          fi
+          resp=$(curl -sS -X POST \
+            "https://api.cloudflare.com/client/v4/zones/${CF_ZONE}/purge_cache" \
+            -H "Authorization: Bearer ${CF_TOKEN}" \
+            -H "Content-Type: application/json" \
+            --data '{"purge_everything":true}')
+          echo "$resp"
+          echo "$resp" | grep -q '"success":true' || { echo "::error::Cloudflare purge failed"; exit 1; }
+          echo "Purge accepted."
+
+      - name: Verify the edge now serves the new build
+        env:
+          WANT: ${{ steps.fp.outputs.md5 }}
+        run: |
+          # No cache-buster here on purpose: this is the real user path through the edge.
+          for i in $(seq 1 12); do
+            sleep 10
+            got=$(curl -sS --max-time 30 "https://americanenglish.com.tw/" | md5sum | cut -d' ' -f1)
+            if [ "$got" = "$WANT" ]; then
+              echo "Edge is serving the new build. Done."
+              exit 0
+            fi
+            echo "attempt $i: edge md5=$got want=$WANT"
+          done
+          echo "::error::Edge still serving stale HTML after purge. The zone's Cache Rule Edge TTL is likely overriding origin TTL — see docs/CACHING.md"
+          exit 1
