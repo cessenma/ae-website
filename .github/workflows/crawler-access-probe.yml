@@ -1,0 +1,89 @@
+name: AI crawler access probe (non-Taiwan IP)
+
+# WHY THIS EXISTS
+# Every access test run so far egressed from Banqiao (150.117.56.33, AS131607).
+# Verified 2026-08-09: even the agent's own WebFetch resolves to that same IP.
+# A Cloudflare rule that blocks non-Taiwan traffic is therefore INVISIBLE from
+# the office. A GitHub-hosted runner egresses from Azure (US), so this job is
+# the only free vantage point outside TW that we control.
+#
+# WHAT IT PROVES AND WHAT IT DOES NOT
+#  - PROVES: no blanket geo-block, and no user-agent deny-list, for these UAs.
+#  - DOES NOT PROVE: that the REAL GPTBot gets through. A Cloudflare rule keyed
+#    on cf.client.bot (Verified Bots) will not match a spoofed UA from Azure, so
+#    a 403 here can be a false alarm and a 200 here can be a false pass.
+#    The authoritative check is the origin access log (Hostinger hPanel) and the
+#    Cloudflare Security Events log. This job is the cheap monthly tripwire.
+
+on:
+  schedule:
+    - cron: '17 2 1 * *'      # 1st of each month, 02:17 UTC (10:17 Taipei) - Chris is not teaching
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest     # Azure, non-TW egress. This is the whole point.
+    timeout-minutes: 10
+    steps:
+      - name: Show the runner's egress IP (must NOT be TW)
+        run: curl -s --max-time 15 https://ipinfo.io/json || true
+
+      - name: Probe each AI crawler UA against three real URLs
+        run: |
+          set -u
+          FAIL=0
+          URLS="/ /banqiao-english-cram-school/ /cambridge-english-levels/"
+          # Real fetching user agents. Google-Extended is a control token, not a
+          # fetcher, so it is deliberately absent.
+          probe () {
+            label="$1"; ua="$2"
+            for p in $URLS; do
+              code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 25 \
+                     -A "$ua" "https://americanenglish.com.tw${p}")
+              case "$code" in
+                200) echo "OK    $label $p -> 200" ;;
+                429) echo "::warning::RATE-LIMITED $label $p -> 429 (origin LiteSpeed throttle, inconclusive, not a block)" ;;
+                403|401) echo "::error::BLOCKED $label $p -> $code"; FAIL=1 ;;
+                *)   echo "::error::UNEXPECTED $label $p -> $code"; FAIL=1 ;;
+              esac
+              sleep 4      # origin 429s under sustained load - do not hammer it
+            done
+          }
+          probe GPTBot        "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; GPTBot/1.2; +https://openai.com/gptbot"
+          probe OAI-SearchBot "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot"
+          probe ChatGPT-User  "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot"
+          probe ClaudeBot     "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ClaudeBot/1.0; +claudebot@anthropic.com"
+          probe PerplexityBot "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot"
+          probe Bingbot       "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)"
+          probe Control-Human "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0 Safari/537.36"
+          exit $FAIL
+
+      - name: Dump edge headers for the homepage (diagnostic)
+        if: always()
+        run: |
+          curl -sSI --max-time 25 -A "GPTBot/1.2" https://americanenglish.com.tw/ \
+            | grep -iE 'HTTP/|cf-ray|cf-cache-status|server|cf-mitigated' || true
+
+      - name: Read Cloudflare's own record of bot requests (skipped until token exists)
+        if: always()
+        env:
+          CF_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
+          CF_ZONE: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+        run: |
+          if [ -z "${CF_ANALYTICS_TOKEN:-}" ]; then
+            echo "CLOUDFLARE_ANALYTICS_TOKEN not set - skipping."
+            echo "Create a token with Zone > Analytics > Read on americanenglish.com.tw,"
+            echo "add it as a repo secret, and this step becomes the authoritative check."
+            exit 0
+          fi
+          SINCE=$(date -u -d '30 days ago' +%Y-%m-%dT%H:%M:%SZ)
+          UNTIL=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          read -r -d '' Q <<EOF || true
+          { "query": "query { viewer { zones(filter: {zoneTag: \\"${CF_ZONE}\\"}) { httpRequestsAdaptiveGroups(limit: 200, filter: {datetime_geq: \\"${SINCE}\\", datetime_leq: \\"${UNTIL}\\"}, orderBy: [count_DESC]) { count dimensions { userAgent edgeResponseStatus } } } } }" }
+EOF
+          curl -sS -X POST https://api.cloudflare.com/client/v4/graphql \
+            -H "Authorization: Bearer ${CF_ANALYTICS_TOKEN}" \
+            -H "Content-Type: application/json" \
+            --data "$Q" \
+          | grep -iE 'GPTBot|ClaudeBot|PerplexityBot|OAI-SearchBot|bingbot|Googlebot|edgeResponseStatus' || \
+            echo "No AI-crawler user agents in the top 200 UAs over 30 days - that is itself a finding."
