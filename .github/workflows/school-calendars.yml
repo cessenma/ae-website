@@ -1,0 +1,68 @@
+name: Weekly school-calendar check
+
+# The four schools within walking distance of the classroom publish their 行事曆 in four
+# different places and formats, and school sites reorganise without warning. This checks
+# every Monday that each official calendar page still resolves, regenerates the page with
+# a fresh "last checked" stamp, and commits only if something actually changed.
+#
+# It deliberately does NOT transcribe 段考 dates. Two of the four publish the calendar as
+# an image, and a wrong exam date on a cram school's site is worse than no date at all.
+
+on:
+  schedule:
+    - cron: "0 22 * * 0"      # Mondays 06:00 Asia/Taipei
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install poppler (pdftotext)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+
+      - name: Fetch the generator scripts
+        run: |
+          # The generators live outside this repo on the author's machine, so keep a copy
+          # here for the scheduled run. If they diverge, the committed copy is the one
+          # that actually runs weekly.
+          test -f tools/school_calendars.py || { echo "::error::tools/school_calendars.py missing"; exit 1; }
+          test -f tools/build_calendar_page.py || { echo "::error::tools/build_calendar_page.py missing"; exit 1; }
+
+      - name: Check every school's official calendar page
+        id: check
+        run: |
+          cd tools
+          python3 school_calendars.py || echo "one_or_more_dead=1" >> "$GITHUB_OUTPUT"
+
+      - name: Regenerate the page
+        run: cd tools && python3 build_calendar_page.py
+
+      - name: Commit only if something changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- exams/banqiao-school-calendar/ tools/data/; then
+            echo "No change this week — nothing committed."
+            exit 0
+          fi
+          git add exams/banqiao-school-calendar/ tools/data/
+          git commit -m "chore: weekly school-calendar check $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Fail loudly if a school's calendar page has moved or died
+        if: steps.check.outputs.one_or_more_dead == '1'
+        run: |
+          echo "::error::At least one school's official 行事曆 page no longer resolves."
+          echo "The published page now links somewhere broken. Fix the URL in"
+          echo "tools/school_calendars.py SCHOOLS before next week."
+          exit 1

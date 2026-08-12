@@ -1,0 +1,67 @@
+{
+ "checked_at": "2026-08-12 10:38",
+ "schools": [
+  {
+   "key": "pcjh",
+   "name": "板橋國中",
+   "full": "新北市立板橋國民中學",
+   "walk": "步行 5 分鐘",
+   "home": "https://www.pcjh.ntpc.edu.tw/",
+   "page": "/junior-high-english-banqiao/",
+   "calendar_page": "https://www.pcjh.ntpc.edu.tw/p/406-1000-10824,r62.php",
+   "note": "行事曆以圖片公告，本頁不轉錄日期。",
+   "link_ok": true,
+   "http": 200,
+   "bytes": 29004,
+   "events": [],
+   "pdf_url": "https://www.pcjh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelUzTDNCMFlWOHhOVE0yTjE4eU16QTNPREEyWHpNMk9UazFMbkJrWmc9PQ==&fname=WW54RPOKIC44TXMP00VWTSXWDC302525WS34YSGCLPZTGCA5UWA4ST54GGKKTTRK44POHD15002454WSMOXSA0HCUSB0GCWS01RL31MLROTS01UWCC10CDFCKK4001YTA4NOUWLOVWTWDG00WXMOGG35JDGDVSA5WS30TSDGFGTSYSQKTWLK21ZX20B0IGXWIGB430XSWSMOB1NOZTA1NLTS",
+   "pdf_label": "115學年度上學期行事曆"
+  },
+  {
+   "key": "pcps",
+   "name": "板橋國小",
+   "full": "新北市板橋區板橋國民小學",
+   "walk": "步行 5 分鐘",
+   "home": "https://www.pcps.ntpc.edu.tw/",
+   "page": "/banqiao-elementary-school-english/",
+   "calendar_page": "https://www.pcps.ntpc.edu.tw/",
+   "note": "",
+   "link_ok": true,
+   "http": 200,
+   "bytes": 56854,
+   "events": [],
+   "parse_note": "ValueError: found 2 行事曆 link(s) but no PDF behind any of them"
+  },
+  {
+   "key": "kkes",
+   "name": "國光國小",
+   "full": "新北市板橋區國光國民小學",
+   "walk": "步行 8 分鐘",
+   "home": "https://www.kkes.ntpc.edu.tw/",
+   "page": "/guoguang-elementary-english/",
+   "calendar_page": "https://www.kkes.ntpc.edu.tw/p/403-1000-36.php",
+   "note": "",
+   "link_ok": true,
+   "http": 200,
+   "bytes": 30682,
+   "events": [],
+   "parse_note": "ValueError: found 2 行事曆 link(s) but no PDF behind any of them"
+  },
+  {
+   "key": "tgps",
+   "name": "大觀國小",
+   "full": "新北市板橋區大觀國民小學",
+   "walk": "步行 10 分鐘",
+   "home": "https://www.tgps.ntpc.edu.tw/",
+   "page": "/daguan-elementary-english/",
+   "calendar_page": "https://www.tgps.ntpc.edu.tw/",
+   "note": "",
+   "link_ok": true,
+   "http": 200,
+   "bytes": 107957,
+   "events": [],
+   "parse_note": "ValueError: found 1 行事曆 link(s) but no PDF behind any of them"
+  }
+ ],
+ "errors": []
+}
