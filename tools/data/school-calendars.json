@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-08-12 10:38",
+ "checked_at": "2026-08-17 06:21",
  "schools": [
   {
    "key": "pcjh",
@@ -28,7 +28,7 @@
    "note": "",
    "link_ok": true,
    "http": 200,
-   "bytes": 56854,
+   "bytes": 56845,
    "events": [],
    "parse_note": "ValueError: found 2 行事曆 link(s) but no PDF behind any of them"
   },
@@ -43,7 +43,7 @@
    "note": "",
    "link_ok": true,
    "http": 200,
-   "bytes": 30682,
+   "bytes": 44952,
    "events": [],
    "parse_note": "ValueError: found 2 行事曆 link(s) but no PDF behind any of them"
   },
@@ -58,7 +58,7 @@
    "note": "",
    "link_ok": true,
    "http": 200,
-   "bytes": 107957,
+   "bytes": 108161,
    "events": [],
    "parse_note": "ValueError: found 1 行事曆 link(s) but no PDF behind any of them"
   }
