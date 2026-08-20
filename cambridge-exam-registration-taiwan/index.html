@@ -76,6 +76,24 @@
     </div>
   </div>
 </section>
+<style>
+.signpost{background:linear-gradient(180deg,#fff,var(--light-blue));border:2px solid rgba(28,176,246,.28);border-radius:22px;padding:22px 24px;margin:26px 0;box-shadow:0 10px 28px rgba(26,39,82,.08)}
+.signpost .eyebrow{margin-bottom:10px}
+.signpost h3{font-family:'Baloo 2',sans-serif;font-size:20px;font-weight:800;color:var(--navy);margin:0 0 14px;letter-spacing:-.2px}
+.signpost .sp-links{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:760px){.signpost .sp-links{grid-template-columns:1fr}}
+.signpost a.sp{display:block;background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:14px;padding:13px 15px;text-decoration:none;transition:border-color .12s,transform .12s,box-shadow .12s}
+.signpost a.sp:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 10px 20px rgba(26,39,82,.10)}
+.signpost a.sp b{display:block;font-family:'Baloo 2',sans-serif;font-size:14.5px;font-weight:800;color:var(--navy);line-height:1.3}
+.signpost a.sp b::after{content:' →';color:var(--blue)}
+.signpost a.sp span{display:block;font-size:12.8px;color:#6b7280;line-height:1.55;margin-top:4px}
+</style>
+<div class="signpost reveal">
+<span class="eyebrow">劍橋英檢資料庫</span>
+<h3>報名之前，先確認考哪一級</h3>
+<div class="sp-links"><a class="sp" href="/exams/"><b>六級階梯與分數量表</b><span>用能力決定級數，不用年齡硬推</span></a><a class="sp" href="/ket-prep-guide/"><b>KET 完整指南</b><span>A2・第一張正式證書</span></a><a class="sp" href="/pet-prep-guide/"><b>PET 完整指南</b><span>B1・寫作獨立成卷</span></a></div>
+</div>
+
 
 <section class="section bg-soft">
   <div class="wrap">
@@ -102,14 +120,21 @@
   </div>
 </section>
 
-<section class="section bg-soft">
-  <div class="wrap">
-    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">費用須知</span><h2>報名費<em>怎麼算</em>？為什麼我不列金額</h2></div>
-    <div class="prose reveal" style="margin-top:18px">
-      <p>你可能注意到這篇沒有列出「YLE 報名費 NT$ 多少」的表格。這是刻意的：<strong>劍橋英檢的報名費由各授權考試中心自行訂定</strong>，不同中心、不同年度、甚至團報與個人報名之間都可能不同。網路上很多文章列的金額其實是某一家中心某一年的價格，早就過期了——照著那個數字準備預算，反而會被誤導。</p>
-      <p>你真正需要知道的是費用的<strong>結構</strong>：報名費按「級別」計價，一個級別一筆費用；<strong>YLE（Starters／Movers／Flyers）的費用低於 KET、PET 等主線級別</strong>，因為測驗長度與規模不同；團體報名有時比個人報名優惠。實際金額，請直接向你選定的考試中心索取當期簡章——這一通電話比任何網路文章都準。補習班學費的收費結構與比較方式，另見〈<a href="/english-cram-school-fees/">英文補習班費用怎麼算</a>〉。</p>
-      <p>另一個常見問題是紙筆考與電腦考：<strong>A2 Key for Schools 有紙筆與電腦化兩種形式</strong>，是否兩種都提供、費用是否相同，依各中心而定；<strong>YLE 則以紙筆測驗為主</strong>。兩種形式的證書效力完全相同，差別主要在作答方式與成績公布速度（下一段細講）。</p>
-    </div>
+<section class="section">
+  <div class="wrap prose reveal">
+    <h2>報名費怎麼算？</h2>
+    <p>先說清楚一件事：<strong>劍橋英檢的報名費由各授權考試中心自行訂定</strong>，不同中心、不同年度、團報與個人報名之間都可能不同。網路上很多文章列的金額是某一家中心某一年的價格，早就過期了。所以下面這張表我們標了查核日期與出處，也請你在報名前用一通電話跟考場確認——那才是最終版本。</p>
+    <table class="compare">
+      <thead><tr><th>考試</th><th>報名費</th><th>備註</th></tr></thead>
+      <tbody>
+        <tr><td><strong>A2 Key (KET) for Schools</strong></td><td>NT$2,400</td><td>第一張正式證書</td></tr>
+        <tr><td><strong>B1 Preliminary (PET) for Schools</strong></td><td>NT$2,600</td><td>比 KET 多 NT$200</td></tr>
+        <tr><td><strong>B2 First (FCE) for Schools</strong></td><td>NT$3,900</td><td>比 PET 多 NT$1,300，這一級價差明顯拉大</td></tr>
+        <tr><td>YLE Starters／Movers／Flyers<br><span style="color:#8a94a3;font-size:13px">（兒童英檢，非主線級別）</span></td><td>NT$2,100／2,200／2,300</td><td>測驗較短，費用低於主線</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:#8a94a3;line-height:1.75">資料來源：LTTC 官方考試頁、師德 yle.tw 場次表、瀀尼課（UneedQ）費用調整公告（2025-03-01 生效）——三家獨立考場數字一致。<strong>查閱日期 2026-08-18</strong>。團報與個人報名可能不同，實際金額以各考場當期簡章為準。</p>
+    <p>另一個常見問題是紙筆考與電腦考：<strong>A2 Key for Schools 有紙筆與電腦化兩種形式</strong>，是否兩種都提供、費用是否相同，依各中心而定；<strong>YLE 則以紙筆測驗為主</strong>。兩種形式的證書效力完全相同，差別主要在作答方式與成績公布速度（下一段細講）。</p>
   </div>
 </section>
 
