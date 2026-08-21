@@ -1,0 +1,5 @@
+# Listening audio. Some hosts guess audio/mp4a-latm for .m4a, which browsers
+# refuse to play — pin the container type and let the files cache hard.
+/assets/audio/*
+  Content-Type: audio/mp4
+  Cache-Control: public, max-age=31536000, immutable

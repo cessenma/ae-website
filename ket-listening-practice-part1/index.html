@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<style id="crit">:root{--navy:#1A2752;--blue:#1CB0F6;--blue-dk:#1391cc;--green:#06C755;--green-dk:#04a046;--yellow:#FFC828;--yellow-dk:#e0a800;--purple:#CE82FF;--purple-dk:#a94fe0;--coral:#F0997B;--light-blue:#DDF4FF;--text-body:#4b5563;--card-shadow:0 12px 40px rgba(26,39,82,.10);--header-h:64px;}*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px)}body{font-family:'DM Sans',-apple-system,'PingFang TC','Microsoft JhengHei',sans-serif;background:#fff;color:var(--navy);line-height:1.6;overflow-x:hidden}a{color:inherit}img{display:block;max-width:100%}:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}h1,h2,h3{font-family:'DM Serif Display',serif;font-weight:400;color:var(--navy);letter-spacing:-.4px;line-height:1.08}h1{font-size:clamp(40px,6.4vw,66px)}h2{font-size:clamp(30px,4.6vw,48px)}h3{font-size:22px}.rounded{font-family:'Baloo 2',sans-serif;font-weight:800}em{font-style:italic;color:var(--blue)}.bg-navy h2,.bg-navy h3{color:#fff}p.body{font-size:clamp(15px,1.6vw,17px);line-height:1.8;color:var(--text-body)}.bg-navy p.body{color:rgba(255,255,255,.74)}.eyebrow{display:inline-block;font-family:'Baloo 2',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--blue);background:rgba(28,176,246,.12);padding:7px 16px;border-radius:100px}.eyebrow-green{color:#067033;background:rgba(6,199,85,.12)}.eyebrow-yellow{color:#8a5f00;background:rgba(255,200,40,.18)}.divider{width:48px;height:4px;background:linear-gradient(90deg,var(--blue),var(--purple));border-radius:4px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'Baloo 2',sans-serif;font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.5px;padding:14px 30px;border-radius:16px;cursor:pointer;border:none;text-transform:uppercase;transition:transform .08s ease,box-shadow .08s ease,filter .15s;min-height:50px;position:relative;top:0}.btn-primary{background:var(--green);color:#fff;box-shadow:0 5px 0 var(--green-dk),0 10px 18px rgba(6,199,85,.32)}.btn-blue{background:var(--blue);color:#fff;box-shadow:0 5px 0 var(--blue-dk),0 10px 18px rgba(28,176,246,.32)}.btn-yellow{background:var(--yellow);color:var(--navy);box-shadow:0 5px 0 var(--yellow-dk),0 10px 18px rgba(255,200,40,.32)}.btn-coral{background:var(--coral);color:#fff;box-shadow:0 5px 0 #d97a5c,0 10px 18px rgba(240,153,123,.34)}.btn-pf-blue{background:#a8d8f0;color:var(--navy);box-shadow:0 5px 0 #80bfe0,0 10px 18px rgba(168,216,240,.45)}.btn-pf-cream{background:#fff8f3;color:var(--navy);border:1px solid #efe4d8;box-shadow:0 5px 0 #e6dbd0,0 10px 18px rgba(26,39,82,.08)}.btn-pf-pink{background:#ffdae6;color:var(--navy);box-shadow:0 5px 0 #f0b0c8,0 10px 18px rgba(255,218,230,.5)}.btn:hover{filter:brightness(1.04)}.btn:active{top:5px;box-shadow:0 0 0 var(--green-dk)}.btn-blue:active{box-shadow:0 0 0 var(--blue-dk)}.btn-yellow:active{box-shadow:0 0 0 var(--yellow-dk)}.btn-coral:active{box-shadow:0 0 0 #d97a5c}.btn-pf-blue:active{box-shadow:0 0 0 #80bfe0}.btn-pf-cream:active{box-shadow:0 0 0 #e6dbd0}.btn-pf-pink:active{box-shadow:0 0 0 #f0b0c8}.btn-outline{background:#fff;color:var(--navy);border:2px solid #e2e8f0;box-shadow:0 4px 0 #e2e8f0}.btn-outline:active{top:4px;box-shadow:0 0 0 #e2e8f0}.btn svg{width:20px;height:20px}.btn-line svg{fill:currentColor}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}.section{padding:clamp(60px,8vw,104px) 0;position:relative}.bg-blue{background:var(--light-blue)}.bg-navy{background:var(--navy)}.bg-soft{background:#F4FAFF}.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center}.split.reverse>.media{order:2}@media(max-width:860px){.split{grid-template-columns:1fr}.split.reverse>.media{order:0}.split .stack{align-items:flex-end;text-align:right}.split .stack .divider{margin-left:auto;margin-right:0}.split.reverse .stack{align-items:flex-start;text-align:left}.split.reverse .stack .divider{margin-left:0;margin-right:auto}.hero .stack,#location .stack{align-items:center;text-align:center}.hero .stack .divider,#location .stack .divider{margin-left:auto;margin-right:auto}.hero .stack .hero-cta,.hero .stack .hero-badges{justify-content:center}.hero .stack p.body{margin-left:auto;margin-right:auto}}@media(min-width:861px){.section:not(#location) .split:not(.reverse) .stack{align-items:flex-end;text-align:right}.section:not(#location) .split:not(.reverse) .stack .divider{margin-left:auto;margin-right:0}}.stack{display:flex;flex-direction:column;align-items:flex-start;gap:16px}.center{text-align:center;align-items:center;margin:0 auto;max-width:700px}.progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--green),var(--blue),var(--purple));z-index:200;transition:width .1s linear}.rk{display:inline-block;width:26px;height:26px;color:var(--blue);animation:wiggle 3.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.rk svg{width:100%;height:100%;display:block}header.site-header{position:fixed;top:0;left:0;right:0;z-index:150;height:var(--header-h);background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(26,39,82,.06);transition:box-shadow .25s}header.site-header.scrolled{box-shadow:0 4px 22px rgba(26,39,82,.09)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{font-family:'Baloo 2',sans-serif;font-size:21px;font-weight:800;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:8px}.brand b{color:var(--blue);font-weight:800}.brand-logo{width:38px;height:38px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(26,39,82,.18)}.nav-links{display:flex;align-items:center;gap:26px}.nav-links a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:15px;font-weight:700;color:#475569;text-decoration:none;transition:color .15s}.nav-links a:not(.btn):hover,.nav-links a.active{color:var(--blue)}.nav-links a.active{position:relative}.nav-links a.active::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:3px;border-radius:3px;background:var(--blue)}.nav-cta{padding:9px 20px;font-size:14px;min-height:42px}.hamburger{display:none;width:46px;height:46px;border:none;background:transparent;cursor:pointer;flex-direction:column;justify-content:center;gap:5px;align-items:center}.hamburger span{width:24px;height:3px;background:var(--navy);border-radius:3px;transition:transform .3s,opacity .2s}body.menu-open .hamburger span:nth-child(1){transform:translateY(8px) rotate(45deg)}body.menu-open .hamburger span:nth-child(2){opacity:0}body.menu-open .hamburger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.drawer{position:fixed;inset:var(--header-h) 0 0 0;z-index:140;background:rgba(255,255,255,.98);backdrop-filter:blur(8px);display:flex;flex-direction:column;gap:4px;padding:24px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}body.menu-open .drawer{opacity:1;transform:none;pointer-events:auto}.drawer a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:700;color:var(--navy);text-decoration:none;padding:15px 8px;border-bottom:1px solid rgba(26,39,82,.07)}.drawer .btn{margin-top:18px}@media(max-width:860px){.nav-links{display:none}.hamburger{display:flex}}.bg-deco{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}.star{position:absolute;animation:twinkle 3s ease-in-out infinite}@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:.9;transform:scale(1.15)}}.hero{padding-top:calc(var(--header-h) + 40px);padding-bottom:60px;background:linear-gradient(180deg,#fff 0%,var(--light-blue) 100%);position:relative;overflow:hidden}.hero .wrap{position:relative;z-index:2}.hero-badges{display:flex;flex-wrap:wrap;gap:10px}.chip{display:inline-flex;align-items:center;gap:7px;font-family:'Baloo 2',sans-serif;font-size:14px;font-weight:700;color:var(--navy);background:#fff;border:2px solid rgba(26,39,82,.08);padding:8px 15px;border-radius:100px;box-shadow:0 3px 0 rgba(26,39,82,.06)}.chip .dot{width:9px;height:9px;border-radius:50%;background:var(--green);animation:blink 1.6s infinite}@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}.scene{position:relative;width:100%;max-width:440px;margin:0 auto;aspect-ratio:1}.planet{position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 36% 30%,#bfe7ff,var(--blue));box-shadow:inset -18px -18px 40px rgba(26,39,82,.25),0 30px 70px rgba(28,176,246,.35);animation:spin 26s linear infinite}.planet::before{content:'';position:absolute;width:34%;height:18%;border-radius:50%;background:rgba(255,255,255,.35);top:22%;left:20%;filter:blur(2px)}.planet::after{content:'';position:absolute;width:24%;height:12%;border-radius:50%;background:rgba(26,39,82,.18);bottom:24%;right:22%}.ring{position:absolute;left:50%;top:54%;width:108%;height:46%;transform:translate(-50%,-50%) rotate(-18deg);border:6px solid rgba(255,200,40,.55);border-radius:50%;animation:spin 18s linear infinite reverse}.rocket{position:absolute;left:58%;top:14%;width:120px;animation:floaty 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center;z-index:3;filter:drop-shadow(0 12px 18px rgba(26,39,82,.25))}.flame{transform-box:fill-box;transform-origin:50% 0%;animation:flame .6s ease-in-out infinite alternate}.s-star{position:absolute;animation:floaty 5s ease-in-out infinite}@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-18px) rotate(4deg)}}@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes flame{0%{transform:scaleY(.8) scaleX(1)}100%{transform:scaleY(1.15) scaleX(.9)}}@keyframes wiggle{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}.count-orb{position:absolute;left:6%;top:6%;background:#fff;border-radius:20px;padding:10px 16px;box-shadow:var(--card-shadow);font-family:'Baloo 2';font-weight:800;display:flex;align-items:center;gap:9px;font-size:15px;z-index:4;animation:pop-bob 4s ease-in-out infinite}.count-orb.b2{left:auto;right:2%;top:auto;bottom:14%;animation-delay:1.5s}.count-orb .big{font-family:'DM Serif Display';font-size:26px;color:var(--blue)}@keyframes pop-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}.page-hero{padding-top:calc(var(--header-h) + 56px);padding-bottom:56px;background:linear-gradient(180deg,#fff,var(--light-blue));text-align:center;position:relative;overflow:hidden}.page-hero .wrap{position:relative;z-index:2;max-width:780px}.page-hero h1{font-size:clamp(34px,5.2vw,54px);margin:14px 0 16px}.page-hero .divider{margin:0 auto 20px}.pf-blue{--frame:#a8d9ef}.pf-pink{--frame:#fedae7}.pf-lav{--frame:#c9b4f0}.pf-cream{--frame:#fef8f3;--frame-edge:#efe4d8}.post-hero{margin:30px 0 0;padding:4.2%;border-radius:min(46px,calc(6.3vw - 3px));background:var(--frame,var(--light-blue));box-shadow:0 18px 40px rgba(26,39,82,.16)}.post-hero img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:min(26px,calc(3.6vw - 1.7px))}.post-hero.pf-cream{box-shadow:inset 0 0 0 1px var(--frame-edge),0 18px 40px rgba(26,39,82,.16)}@media(max-width:640px){.post-hero{margin-top:22px}}.magnet-box{display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;background:var(--light-blue);border:2px dashed var(--blue);border-radius:22px;padding:20px 26px;margin:28px 0 6px}.magnet-box p{flex:1 1 280px;margin:0;font-size:15px;line-height:1.75;color:var(--text-body)}.magnet-box strong{font-family:'Baloo 2';font-size:16px;color:var(--navy)}.magnet-box .btn{flex:0 0 auto}.breadcrumb{font-family:'Baloo 2';font-size:13px;font-weight:700;color:#94a3b8;margin-bottom:8px}.breadcrumb a{text-decoration:none;color:#94a3b8}.breadcrumb a:hover{color:var(--blue)}</style>
+<link rel="preload" as="style" href="/assets/styles.css?v=fb874fd3" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/styles.css?v=fb874fd3"></noscript>
+<!-- AE:CRIT end -->
+<meta name="theme-color" content="#1A2752">
+<title>KET 聽力 Part 1 練習：看圖三選一（5 題・附音檔與逐字稿）｜埃森美語</title>
+<meta name="description" content="KET（A2 Key for Schools）Listening Part 1「看圖三選一」免費線上練習：5 題原創題目，附錄音檔、逐字稿與中文解析，做完立刻對答案。埃森美語美籍持證教師編寫。">
+<link rel="canonical" href="https://americanenglish.com.tw/ket-listening-practice-part1/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="KET 聽力 Part 1 練習：看圖三選一">
+<meta property="og:description" content="5 題原創題目，附錄音檔、逐字稿與中文解析。">
+<meta property="og:url" content="https://americanenglish.com.tw/ket-listening-practice-part1/">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/ket-listening-practice-part1/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/ket-listening-practice-part1/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"劍橋英檢","item":"https://americanenglish.com.tw/exams/"},{"@type":"ListItem","position":3,"name":"KET","item":"https://americanenglish.com.tw/ket-prep-guide/"},{"@type":"ListItem","position":4,"name":"KET 聽力 Part 1看圖三選一"}]}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body>
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo.jpg" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<div class="drawer" id="drawer"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></div>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="bg-deco"></div>
+  <div class="wrap">
+    <div class="breadcrumb"><a href="/">首頁</a> ／ <a href="/exams/">劍橋英檢</a> ／ <a href="/ket-prep-guide/">KET</a> ／ 聽力 Part 1</div>
+    <span class="eyebrow eyebrow-green">KET 免費線上練習 · 附音檔</span>
+    <h1>KET 聽力 Part 1<br>看圖三選一</h1>
+    <div class="divider"></div>
+    <p class="body">依官方題型格式出題（5 題・5 分）。每段錄音都<strong>依官方規則播放兩次</strong>，音檔裡已經含重複，不用自己按第二次。</p>
+  </div>
+</section>
+
+<style>.exam-subnav{position:sticky;top:var(--header-h);z-index:90;background:#fff;border-bottom:2px solid rgba(26,39,82,.08);overflow-x:auto;-webkit-overflow-scrolling:touch}.exam-subnav .row{display:flex;align-items:stretch;max-width:1120px;margin:0 auto;padding:0 24px}.exam-subnav .tag{flex:none;display:flex;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;color:#fff;background:var(--blue);padding:10px 14px;border-radius:0 0 10px 10px;text-decoration:none}.exam-subnav a:not(.tag){flex:none;display:flex;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;color:#475569;text-decoration:none;padding:10px 13px;border-bottom:3px solid transparent;white-space:nowrap}.exam-subnav a:not(.tag):hover{color:var(--blue)}.exam-subnav a.on{color:var(--navy);border-bottom-color:var(--blue)}</style>
+<nav class="exam-subnav" aria-label="KET 專區導覽"><div class="row">
+<a class="tag" href="/exams/">劍橋英檢 KET</a>
+<a href="/ket-prep-guide/">總覽</a>
+<a href="/ket-prep-guide/#practice">線上練習</a>
+<a href="/a2-grammar-guide/">文法範圍</a>
+<a href="/ket-prep-guide/#vocab">單字表</a>
+<a href="/ket-speaking-practice/">口說練習</a>
+<a href="/cambridge-practice-tests/">官方題庫</a>
+<a href="/cambridge-exam-registration-taiwan/">報名資訊</a>
+</div></nav>
+
+<style>
+.prx-layout{display:grid;grid-template-columns:1fr 240px;gap:32px;align-items:start}
+@media(max-width:860px){.prx-layout{grid-template-columns:1fr}}
+.prx-nav{position:sticky;top:calc(var(--header-h) + 58px);background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:18px;padding:14px;box-shadow:0 6px 20px rgba(26,39,82,.06)}
+.prx-nav h3{font-size:15px;margin:2px 6px 10px}
+.prx-nav a,.prx-nav span.dis{display:block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;text-decoration:none;color:#475569;padding:8px 10px;border-radius:10px}
+.prx-nav a:hover{background:var(--light-blue);color:var(--navy)}
+.prx-nav a.on{background:var(--blue);color:#fff}
+.prx-nav span.dis{color:#b6bfcb;cursor:default}
+.prx-nav span.dis em{font-style:normal;font-size:11px;background:#eef2f7;border-radius:6px;padding:1px 6px;margin-left:6px}
+@media(max-width:860px){.prx-nav{position:static;display:flex;flex-wrap:wrap;gap:6px;padding:10px}.prx-nav h3{width:100%;margin:0 4px 4px}.prx-nav a,.prx-nav span.dis{padding:7px 10px}}
+.stimulus{background:#fff;border:2px solid rgba(26,39,82,.10);border-radius:18px;padding:22px 24px;margin:18px 0;box-shadow:0 8px 24px rgba(26,39,82,.06)}
+.stimulus h4{font-family:'Baloo 2',sans-serif;font-size:15px;color:var(--blue);margin:0 0 8px}
+.stimulus p{font-size:16px;line-height:1.85;color:#333c4d;margin:0 0 10px}
+.stimulus p:last-child{margin:0}
+.stimulus .gapnum{display:inline-block;min-width:34px;text-align:center;font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--blue);background:var(--light-blue);border-radius:8px;padding:0 6px}
+.prx-item{background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:16px;padding:16px 18px;margin:0 0 14px}
+.prx-item legend,.prx-item .qh{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:16px;color:var(--navy);padding:0 4px}
+.prx-item .qtext{font-size:16px;color:#333c4d;margin:6px 0 10px;line-height:1.7}
+.prx-opts{display:flex;flex-direction:column;gap:8px;border:0;margin:0;padding:0}
+.prx-opts.lettersonly{flex-direction:row;flex-wrap:wrap}
+.prx-opts.lettersonly .prx-opt{min-width:64px;justify-content:center}
+.prx-opt{display:flex;gap:10px;align-items:flex-start;border:2px solid #e6ebf2;border-radius:12px;padding:10px 12px;cursor:pointer;transition:border-color .12s,background .12s;font-size:15.5px;line-height:1.6}
+.prx-opt:hover{border-color:var(--blue)}
+.prx-opt input{margin-top:4px;accent-color:var(--blue);flex:none}
+.prx-opt.sel{border-color:var(--blue);background:var(--light-blue)}
+.prx-opt.right{border-color:var(--green);background:rgba(6,199,85,.08)}
+.prx-opt.wrong{border-color:#e5484d;background:rgba(229,72,77,.07)}
+.prx-gapin{font:inherit;font-size:16px;padding:8px 12px;border:2px solid #e6ebf2;border-radius:10px;width:180px;max-width:60vw}
+.prx-gapin.wide{width:340px}
+.prx-gapin.right{border-color:var(--green);background:rgba(6,199,85,.07)}
+.prx-gapin.wrong{border-color:#e5484d;background:rgba(229,72,77,.06)}
+.prx-src{font-size:15.5px;line-height:1.7;color:#5a6577;background:#F4FAFF;border-radius:10px;padding:9px 12px;margin:0 0 10px}
+.prx-key{display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px;letter-spacing:1.5px;color:#fff;background:var(--purple);border-radius:8px;padding:4px 11px;margin:0 0 8px}
+.prx-stem{font-size:16px;line-height:1.9;color:var(--navy);margin:0 0 8px}
+.prx-why{display:none;margin-top:10px;border-top:2px dashed #e6ebf2;padding-top:10px;font-size:14.5px;line-height:1.75;color:#4b5563}
+.prx-why b{color:var(--navy)}
+.show-why .prx-why{display:block}
+.prx-mark{font-family:'Baloo 2',sans-serif;font-weight:800;margin-left:8px}
+.prx-mark.ok{color:var(--green)} .prx-mark.no{color:#e5484d}
+.prx-bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:20px 0 8px}
+.prx-score{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:20px;color:var(--navy);background:var(--light-blue);border-radius:14px;padding:10px 18px;display:none}
+.prx-score.show{display:inline-block}
+.prx-note{font-size:13.5px;color:#8a94a3;margin-top:10px}
+.prx-set{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px;letter-spacing:1.6px;text-transform:uppercase;color:var(--blue);background:rgba(28,176,246,.12);border-radius:100px;padding:7px 16px;display:inline-block;margin:34px 0 0}
+@media print{
+  header.site-header,.drawer,.exam-subnav,.prx-nav,.prx-bar,.prx-score,.magnet-box,.prx-why,footer,.faq,.cta-box{display:none!important}
+  .page-hero{padding-top:10px;background:#fff}
+  .prx-item,.stimulus{border:1px solid #999;box-shadow:none;break-inside:avoid}
+  body{background:#fff}
+}
+</style>
+<style>
+.lrec{background:#fff;border:2px solid rgba(26,39,82,.10);border-radius:18px;padding:18px 20px;margin:18px 0;box-shadow:0 8px 24px rgba(26,39,82,.06)}
+.lrec-h{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin-bottom:11px}
+.lrec-h .ln{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:#fff;background:var(--green);border-radius:100px;padding:5px 14px}
+.lrec-h .lq{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:13.5px;color:var(--navy)}
+.lrec-h .ldur{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:12.5px;color:#8b9bb0;margin-left:auto}
+.lrec audio{width:100%;height:40px;display:block}
+.ltrans{margin-top:12px;border-top:2px dashed #eef2f7;padding-top:10px}
+.ltrans summary{list-style:none;cursor:pointer;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:13.5px;color:#8b9bb0;display:flex;align-items:center;gap:7px}
+.ltrans summary::-webkit-details-marker{display:none}
+.ltrans summary::before{content:'▸';transition:transform .18s;display:inline-block}
+.ltrans[open] summary{color:var(--blue)}
+.ltrans[open] summary::before{transform:rotate(90deg)}
+.ltbody{margin-top:10px;font-size:15px;line-height:1.85}
+.ltbody p{margin:0 0 7px;color:#333c4d}
+.ltbody b{font-family:'Baloo 2',sans-serif;font-size:12px;letter-spacing:.6px;color:var(--blue);margin-right:8px}
+.ltbody p.nar b{color:#8b9bb0}
+.lnote{font-size:13.8px;line-height:1.75;color:#8b9bb0;background:#F4FAFF;border:1px dashed rgba(28,176,246,.35);border-radius:14px;padding:13px 17px;margin:16px 0 0}
+.lnote b{color:var(--navy)}
+@media print{.lrec audio{display:none}.ltrans{display:block}.ltbody{display:block!important}}
+</style>
+
+<section class="section" id="practice">
+  <div class="wrap prx-layout">
+    <div>
+      <div class="stimulus" style="background:var(--light-blue);border-style:dashed">
+        <h4>官方題型說明 Task format</h4>
+        <p>五段互不相關的短對話，每段配三張圖，選出正確的一張。考的是時間、地點、數字、外觀這類具體資訊——常見陷阱是「說錯又更正」，第一個聽到的數字往往不是答案。官方考卷中為 <strong>第 1–5 題</strong>，整份聽力卷約 30 分鐘・25 題。</p>
+        <p style="font-size:13.5px;color:#5a6577">題目說明（rubric）依照官方題型格式以英文呈現；以下練習題為<strong>埃森美語原創編寫</strong>，用於熟悉題型，非劍橋官方試題。官方免費樣卷：<a href="https://www.cambridgeenglish.org/exams-and-tests/key-for-schools/preparation/" target="_blank" rel="noopener">cambridgeenglish.org → A2 Key for Schools preparation</a>。</p>
+      </div>
+
+      <p class="body" style="font-style:italic">For each question, choose the correct answer.</p>
+
+      <p class="lnote"><b>關於這些錄音</b>　音檔由電腦語音合成（macOS 內建語音），每個角色用不同的聲音、語速依等級調整，內容與停頓完全依照官方格式，包含官方規定的「播放兩次」。要誠實說明兩件事：合成語音不等於真人錄音的自然度，而且這台機器只有女聲版本的澳洲與愛爾蘭腔，所以男性角色的口音多樣性比正式考試窄——正式考試會出現英、美、澳、愛爾蘭等不同口音的真人錄音。<strong>先自己聽兩次再打開逐字稿</strong>，效果差很多。</p>
+
+      <div class="lrec"><div class="lrec-h"><span class="ln">錄音 1</span><span class="lq">第 1 題</span><span class="ldur">0:58　含重複播放</span></div><audio controls preload="none"><source src="/assets/audio/ket/listening-part1/r1.m4a" type="audio/mp4">你的瀏覽器不支援音訊播放，請直接下載 <a href="/assets/audio/ket/listening-part1/r1.m4a">音檔</a>。</audio><details class="ltrans"><summary>看逐字稿（先自己聽兩次再打開）</summary><div class="ltbody"><p class="nar"><b>Narrator</b>One. You will hear two friends talking about a swimming lesson. What time does Mia's swimming lesson start today?</p><p><b>Man</b>Mia, what time's your swimming lesson today?</p><p><b>Woman</b>It starts at half past four — oh wait, no, sorry, that's the old time. It's quarter to five now.</p><p><b>Man</b>Quarter to five? OK, I'll walk you there at half past four, then.</p><p><b>Woman</b>Great, thanks, Jack!</p><p class="nar"><b>Narrator</b>Now listen again.</p><p><b>Man</b>Mia, what time's your swimming lesson today?</p><p><b>Woman</b>It starts at half past four — oh wait, no, sorry, that's the old time. It's quarter to five now.</p><p><b>Man</b>Quarter to five? OK, I'll walk you there at half past four, then.</p><p><b>Woman</b>Great, thanks, Jack!</p></div></details></div>
+      <div class="lrec"><div class="lrec-h"><span class="ln">錄音 2</span><span class="lq">第 2 題</span><span class="ldur">0:58　含重複播放</span></div><audio controls preload="none"><source src="/assets/audio/ket/listening-part1/r2.m4a" type="audio/mp4">你的瀏覽器不支援音訊播放，請直接下載 <a href="/assets/audio/ket/listening-part1/r2.m4a">音檔</a>。</audio><details class="ltrans"><summary>看逐字稿（先自己聽兩次再打開）</summary><div class="ltbody"><p class="nar"><b>Narrator</b>Two. You will hear two friends talking about a pencil case. Which is Ben's new pencil case?</p><p><b>Woman</b>Is this your new pencil case, Ben? The one with the stars?</p><p><b>Man</b>No, that one's my sister's. Mine has stripes on it — the blue and white ones.</p><p><b>Woman</b>Oh, I thought you wanted the plain black one from the shop.</p><p><b>Man</b>I did at first, but I changed my mind. I liked the stripes better.</p><p class="nar"><b>Narrator</b>Now listen again.</p><p><b>Woman</b>Is this your new pencil case, Ben? The one with the stars?</p><p><b>Man</b>No, that one's my sister's. Mine has stripes on it — the blue and white ones.</p><p><b>Woman</b>Oh, I thought you wanted the plain black one from the shop.</p><p><b>Man</b>I did at first, but I changed my mind. I liked the stripes better.</p></div></details></div>
+      <div class="lrec"><div class="lrec-h"><span class="ln">錄音 3</span><span class="lq">第 3 題</span><span class="ldur">0:59　含重複播放</span></div><audio controls preload="none"><source src="/assets/audio/ket/listening-part1/r3.m4a" type="audio/mp4">你的瀏覽器不支援音訊播放，請直接下載 <a href="/assets/audio/ket/listening-part1/r3.m4a">音檔</a>。</audio><details class="ltrans"><summary>看逐字稿（先自己聽兩次再打開）</summary><div class="ltbody"><p class="nar"><b>Narrator</b>Three. You will hear a brother and sister talking about the weather. What will the weather be like when Leo and Zoe go to the night market?</p><p><b>Woman</b>Dad says it's going to be sunny tomorrow, so we can go to the night market.</p><p><b>Man</b>Really? The app on my phone says it's going to rain in the morning.</p><p><b>Woman</b>Oh no. Well, it says here it clears up by the afternoon — cloudy, but no rain.</p><p><b>Man</b>OK, so let's go after lunch, then.</p><p class="nar"><b>Narrator</b>Now listen again.</p><p><b>Woman</b>Dad says it's going to be sunny tomorrow, so we can go to the night market.</p><p><b>Man</b>Really? The app on my phone says it's going to rain in the morning.</p><p><b>Woman</b>Oh no. Well, it says here it clears up by the afternoon — cloudy, but no rain.</p><p><b>Man</b>OK, so let's go after lunch, then.</p></div></details></div>
+      <div class="lrec"><div class="lrec-h"><span class="ln">錄音 4</span><span class="lq">第 4 題</span><span class="ldur">1:10　含重複播放</span></div><audio controls preload="none"><source src="/assets/audio/ket/listening-part1/r4.m4a" type="audio/mp4">你的瀏覽器不支援音訊播放，請直接下載 <a href="/assets/audio/ket/listening-part1/r4.m4a">音檔</a>。</audio><details class="ltrans"><summary>看逐字稿（先自己聽兩次再打開）</summary><div class="ltbody"><p class="nar"><b>Narrator</b>Four. You will hear two classmates talking about a school trip. Where will Mr Wu's class meet for the school trip?</p><p><b>Man</b>Are we meeting at the school gate tomorrow for the trip?</p><p><b>Woman</b>I thought so too, but Miss Chen just messaged — she says the bus can't stop there anymore.</p><p><b>Man</b>So where do we go instead? The MRT station?</p><p><b>Woman</b>No, she said it's easier for everyone to walk to the bus stop on Zhongshan Road. Meet there at eight.</p><p><b>Man</b>Got it — the bus stop on Zhongshan Road at eight.</p><p class="nar"><b>Narrator</b>Now listen again.</p><p><b>Man</b>Are we meeting at the school gate tomorrow for the trip?</p><p><b>Woman</b>I thought so too, but Miss Chen just messaged — she says the bus can't stop there anymore.</p><p><b>Man</b>So where do we go instead? The MRT station?</p><p><b>Woman</b>No, she said it's easier for everyone to walk to the bus stop on Zhongshan Road. Meet there at eight.</p><p><b>Man</b>Got it — the bus stop on Zhongshan Road at eight.</p></div></details></div>
+      <div class="lrec"><div class="lrec-h"><span class="ln">錄音 5</span><span class="lq">第 5 題</span><span class="ldur">1:07　含重複播放</span></div><audio controls preload="none"><source src="/assets/audio/ket/listening-part1/r5.m4a" type="audio/mp4">你的瀏覽器不支援音訊播放，請直接下載 <a href="/assets/audio/ket/listening-part1/r5.m4a">音檔</a>。</audio><details class="ltrans"><summary>看逐字稿（先自己聽兩次再打開）</summary><div class="ltbody"><p class="nar"><b>Narrator</b>Five. You will hear two friends talking about someone's cousin. What does Ryan's cousin look like?</p><p><b>Woman</b>How will we know your cousin at the airport, Ryan? Does she have long hair?</p><p><b>Man</b>She used to, but she cut it short last month. She'll be wearing glasses, though — she always wears them.</p><p><b>Woman</b>OK, short hair and glasses. Anything else?</p><p><b>Man</b>Yes, she said she'll be wearing a red cap so we can find her easily.</p><p class="nar"><b>Narrator</b>Now listen again.</p><p><b>Woman</b>How will we know your cousin at the airport, Ryan? Does she have long hair?</p><p><b>Man</b>She used to, but she cut it short last month. She'll be wearing glasses, though — she always wears them.</p><p><b>Woman</b>OK, short hair and glasses. Anything else?</p><p><b>Man</b>Yes, she said she'll be wearing a red cap so we can find her easily.</p></div></details></div>
+      <form class="prx-form" id="prx-0" novalidate></form>
+
+      <div class="prx-bar">
+        <button type="button" class="btn btn-primary" id="btnCheck">對答案</button>
+        <button type="button" class="btn btn-outline" id="btnWhy">看解析</button>
+        <button type="button" class="btn btn-outline" id="btnReset">重做</button>
+        <button type="button" class="btn btn-outline" id="btnPrint">列印題目</button>
+        <span class="prx-score" id="score" role="status" aria-live="polite"></span>
+      </div>
+      <p class="prx-note">解析會說明每個選項為什麼對、為什麼錯，並指出答案在錄音的哪一句。分數只記在你自己的瀏覽器裡，不會上傳。</p>
+    </div>
+
+    <aside class="prx-nav" aria-label="各 Part 練習">
+      <h3>KET 聽力 練習</h3>
+      <a href="/ket-listening-practice-part1/" class="on" aria-current="page">Part 1 看圖三選一</a>
+      <a href="/ket-listening-practice-part2/">Part 2 筆記填空</a>
+      <a href="/ket-listening-practice-part3/">Part 3 長對話三選一</a>
+      <a href="/ket-listening-practice-part4/">Part 4 短文三選一</a>
+      <a href="/ket-listening-practice-part5/">Part 5 配對題</a>
+      <a href="/cambridge-practice-tests/" style="border-top:2px dashed #e6ebf2;margin-top:6px;padding-top:10px">官方樣卷下載 →</a>
+    </aside>
+  </div>
+</section>
+
+<script>
+const PRX = { part:1, sets:[{"setId": "A", "items": [{"n": 1, "type": "mc", "pictureOptions": true, "q": "What time does Mia's swimming lesson start today?", "opts": ["A clock showing 4:15", "A clock showing 4:30", "A clock showing 4:45"], "a": 2, "why": ["✗ 陷阱:4:15 全程沒有被提到,只是圖片選項中的干擾項,沒有任何線索支持。", "✗ 陷阱:4:30(half past four)出現了兩次——先是 Mia 一開始說錯的舊時間,後來又變成 Jack『幾點去接她』的時間,但兩次都不是游泳課真正開始的時間,是『數字反覆出現造成混淆』的陷阱。", "✓ 正確答案:Mia 立刻更正說 'oh wait, no... It's quarter to five now',4:45 才是游泳課真正開始的時間——聽到說話者自己更正時,永遠以更正後的資訊為準。"]}, {"n": 2, "type": "mc", "pictureOptions": true, "q": "Which is Ben's new pencil case?", "opts": ["A pencil case with a star pattern", "A plain black pencil case", "A pencil case with blue-and-white stripes"], "a": 2, "why": ["✗ 陷阱:有星星圖案的鉛筆盒是 Ben 姊姊(妹妹)的東西,'that one's my sister's' 說明物品的主人不對,是『干擾項屬於別人』的陷阱。", "✗ 陷阱:黑色素面鉛筆盒是 Ben 原本『想買』的東西('I did at first'),但他後來改變心意了,是『原本想要,後來換了』的陷阱。", "✓ 正確答案:Ben 明確說 'Mine has stripes on it — the blue and white ones',確定他最後選的是藍白條紋鉛筆盒。"]}, {"n": 3, "type": "mc", "pictureOptions": true, "q": "What will the weather be like when Leo and Zoe go to the night market?", "opts": ["Sunny weather", "Rainy weather", "Cloudy weather with no rain"], "a": 2, "why": ["✗ 陷阱:晴天是爸爸原本說的('Dad says it's going to be sunny'),但這個舊資訊馬上被手機 App 的新預報取代,是『舊資訊被新資訊取代』的陷阱。", "✗ 陷阱:下雨只發生在『早上』('rain in the morning'),但 Leo 和 Zoe 是吃完午飯後('after lunch')才出門,時間點對不上,是『部分正確但時間不符』的陷阱。", "✓ 正確答案:對話最後說下午『clears up... cloudy, but no rain』,兩人也約好 'after lunch' 才出發,時間點吻合,答案是多雲無雨。"]}, {"n": 4, "type": "mc", "pictureOptions": true, "q": "Where will Mr Wu's class meet for the school trip?", "opts": ["The school gate", "The MRT station", "The bus stop on Zhongshan Road"], "a": 2, "why": ["✗ 陷阱:校門口是原本的集合地點,但 Miss Chen 說巴士『can't stop there anymore』,計畫已經改變,是『地點被取消』的陷阱。", "✗ 陷阱:捷運站只是 Jason 隨口猜測的地點,馬上被 Tina 用 'No' 直接否定,是『被否定的干擾項』。", "✓ 正確答案:Tina 說明新地點是 'the bus stop on Zhongshan Road',Jason 最後也重複確認一次,首尾呼應,答案明確。"]}, {"n": 5, "type": "mc", "pictureOptions": true, "q": "What does Ryan's cousin look like?", "opts": ["A girl with long hair and no glasses", "A girl with short hair, glasses, and a red cap", "A girl with short hair but no glasses or cap"], "a": 1, "why": ["✗ 陷阱:長髮是表姊以前的樣子('She used to'),但她上個月已經剪短了,是『過去資訊被更正』的陷阱。", "✓ 正確答案:Ryan 說表姊現在是短髮、'always wears' 眼鏡,還會戴紅色帽子方便辨認,三個特徵要同時對上才是正確圖片。", "✗ 陷阱:這個選項只對了一半——有短髮,卻漏掉了眼鏡和紅色帽子兩個重要細節,是『部分符合但漏掉細節』的陷阱。"]}]}] };
+(function(){
+  const L=i=>String.fromCharCode(65+i);
+  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+  const whyHTML=it=>Array.isArray(it.why)
+      ? it.why.map((w,i)=>`<p><b>${L(i)}：</b>${w}</p>`).join('')
+      : `<p><b>解析：</b>${it.why}</p>`;
+
+  function render(it,key){
+    const mk='<span class="prx-mark" aria-hidden="true"></span>';
+    if(it.type==='gaptext'){
+      return `<div class="prx-item" data-k="${key}"><span class="qh">${it.n}.</span>
+        <span class="qtext">${it.q||'請填入一個單字'}</span>
+        <input class="prx-gapin" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 ${it.n} 格答案">${mk}
+        <div class="prx-why">${whyHTML(it)}</div></div>`;
+    }
+    if(it.type==='wordform'){
+      return `<div class="prx-item" data-k="${key}"><span class="qh">${it.n}.</span>
+        <span class="qtext">${it.q||''}　<span class="prx-key">${esc(it.stem)}</span></span>
+        <input class="prx-gapin" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 ${it.n} 格答案">${mk}
+        <div class="prx-why">${whyHTML(it)}</div></div>`;
+    }
+    if(it.type==='keyword'){
+      return `<div class="prx-item" data-k="${key}"><span class="qh">${it.n}.</span>
+        <p class="prx-src">${esc(it.q)}</p>
+        <span class="prx-key">${esc(it.keyword)}</span>
+        <p class="prx-stem">${esc(it.stem).replace(/_{3,}/,'<b style="color:var(--blue)">　______　</b>')}</p>
+        <input class="prx-gapin wide" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 ${it.n} 題答案" placeholder="${it.maxWords?('最多 '+it.maxWords+' 個字'):''}">${mk}
+        <div class="prx-why">${whyHTML(it)}</div></div>`;
+    }
+    const bare=it.opts.every(o=>/^[A-H]$/.test(String(o).trim()));
+    const opts=it.opts.map((o,i)=>{
+      const txt=bare?'':String(o).replace(/^[A-H][.)]?\s+/,'');
+      return `<label class="prx-opt"><input type="radio" name="${key}" value="${i}">`+
+             `<span><b>${L(i)}</b>${txt?'　'+txt:''}</span></label>`;
+    }).join('');
+    return `<fieldset class="prx-item" data-k="${key}"><legend>${it.n}. ${it.q||''}</legend>
+      <div class="prx-opts${bare?' lettersonly':''}">${opts}</div><span class="prx-mark" aria-hidden="true"></span>
+      <div class="prx-why">${whyHTML(it)}</div></fieldset>`;
+  }
+
+  const flat=[];
+  PRX.sets.forEach((s,si)=>{
+    const host=document.getElementById('prx-'+si);
+    if(!host) return;
+    host.innerHTML=s.items.map(it=>{const k='s'+si+'q'+it.n; flat.push([k,it]); return render(it,k);}).join('');
+    host.addEventListener('change',e=>{
+      const f=e.target.closest('fieldset'); if(!f) return;
+      f.querySelectorAll('.prx-opt').forEach(o=>o.classList.toggle('sel',o.querySelector('input').checked));
+    });
+  });
+
+  const forms=[...document.querySelectorAll('.prx-form')];
+  const box=k=>document.querySelector(`[data-k="${k}"]`);
+
+  document.getElementById('btnCheck').addEventListener('click',()=>{
+    let got=0,total=0;
+    flat.forEach(([k,it])=>{
+      const m=it.marks||1; total+=m;
+      const b=box(k), mark=b.querySelector('.prx-mark');
+      if(it.accept){
+        const inp=b.querySelector('input');
+        const ok=it.accept.map(norm).includes(norm(inp.value));
+        inp.classList.toggle('right',ok); inp.classList.toggle('wrong',!ok&&inp.value.trim()!=='');
+        mark.textContent=ok?'✓':`✗（正確：${it.accept[0]}）`;
+        mark.className='prx-mark '+(ok?'ok':'no');
+        if(ok)got+=m;
+      }else{
+        const sel=b.querySelector('input:checked');
+        b.querySelectorAll('.prx-opt').forEach((o,i)=>{
+          o.classList.remove('right','wrong');
+          if(i===it.a)o.classList.add('right');
+          else if(o.querySelector('input').checked)o.classList.add('wrong');
+        });
+        const ok=sel&&+sel.value===it.a;
+        mark.textContent=ok?'✓':(sel?'✗':'—'); mark.className='prx-mark '+(ok?'ok':'no');
+        if(ok)got+=m;
+      }
+    });
+    const sc=document.getElementById('score');
+    sc.textContent=`得分 ${got} / ${total}`; sc.classList.add('show');
+  });
+
+  document.getElementById('btnWhy').addEventListener('click',()=>forms.forEach(f=>f.classList.toggle('show-why')));
+  document.getElementById('btnReset').addEventListener('click',()=>{
+    forms.forEach(f=>{
+      f.classList.remove('show-why');
+      f.querySelectorAll('input[type=radio]').forEach(r=>r.checked=false);
+      f.querySelectorAll('input[type=text]').forEach(t=>{t.value='';t.className=t.className.replace(/\s*(right|wrong)/g,'');});
+      f.querySelectorAll('.prx-opt').forEach(o=>o.classList.remove('sel','right','wrong'));
+      f.querySelectorAll('.prx-mark').forEach(m=>{m.textContent='';m.className='prx-mark';});
+    });
+    const sc=document.getElementById('score'); sc.classList.remove('show'); sc.textContent='';
+  });
+  document.getElementById('btnPrint').addEventListener('click',()=>window.print());
+})();
+</script>
+
+<section class="section bg-soft">
+  <div class="wrap center stack">
+    <span class="eyebrow eyebrow-green">練習之後</span>
+    <h2>聽不懂，通常不是<em>耳朵的問題</em></h2>
+    <div class="divider"></div>
+    <p class="body" style="max-width:680px">打開逐字稿如果每個字都看得懂，那問題不在單字，在語速與連音——這要靠大量輸入，不是背更多字。如果逐字稿裡有看不懂的句型，那就是文法還沒站穩，可以直接對照 <a href="/a2-grammar-guide/">KET 文法範圍逐項教學</a>。分不清楚是哪一種，一次程度評估最快。</p>
+    <a class="btn btn-primary" href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 預約免費程度診斷</a>
+  </div>
+</section>
+
+</main>
+<script src="/assets/app.js?v=11"></script>
+</body>
+</html>

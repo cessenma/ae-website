@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<style id="crit">:root{--navy:#1A2752;--blue:#1CB0F6;--blue-dk:#1391cc;--green:#06C755;--green-dk:#04a046;--yellow:#FFC828;--yellow-dk:#e0a800;--purple:#CE82FF;--purple-dk:#a94fe0;--coral:#F0997B;--light-blue:#DDF4FF;--text-body:#4b5563;--card-shadow:0 12px 40px rgba(26,39,82,.10);--header-h:64px;}*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px)}body{font-family:'DM Sans',-apple-system,'PingFang TC','Microsoft JhengHei',sans-serif;background:#fff;color:var(--navy);line-height:1.6;overflow-x:hidden}a{color:inherit}img{display:block;max-width:100%}:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}h1,h2,h3{font-family:'DM Serif Display',serif;font-weight:400;color:var(--navy);letter-spacing:-.4px;line-height:1.08}h1{font-size:clamp(40px,6.4vw,66px)}h2{font-size:clamp(30px,4.6vw,48px)}h3{font-size:22px}.rounded{font-family:'Baloo 2',sans-serif;font-weight:800}em{font-style:italic;color:var(--blue)}.bg-navy h2,.bg-navy h3{color:#fff}p.body{font-size:clamp(15px,1.6vw,17px);line-height:1.8;color:var(--text-body)}.bg-navy p.body{color:rgba(255,255,255,.74)}.eyebrow{display:inline-block;font-family:'Baloo 2',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--blue);background:rgba(28,176,246,.12);padding:7px 16px;border-radius:100px}.eyebrow-green{color:#067033;background:rgba(6,199,85,.12)}.eyebrow-yellow{color:#8a5f00;background:rgba(255,200,40,.18)}.divider{width:48px;height:4px;background:linear-gradient(90deg,var(--blue),var(--purple));border-radius:4px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'Baloo 2',sans-serif;font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.5px;padding:14px 30px;border-radius:16px;cursor:pointer;border:none;text-transform:uppercase;transition:transform .08s ease,box-shadow .08s ease,filter .15s;min-height:50px;position:relative;top:0}.btn-primary{background:var(--green);color:#fff;box-shadow:0 5px 0 var(--green-dk),0 10px 18px rgba(6,199,85,.32)}.btn-blue{background:var(--blue);color:#fff;box-shadow:0 5px 0 var(--blue-dk),0 10px 18px rgba(28,176,246,.32)}.btn-yellow{background:var(--yellow);color:var(--navy);box-shadow:0 5px 0 var(--yellow-dk),0 10px 18px rgba(255,200,40,.32)}.btn-coral{background:var(--coral);color:#fff;box-shadow:0 5px 0 #d97a5c,0 10px 18px rgba(240,153,123,.34)}.btn-pf-blue{background:#a8d8f0;color:var(--navy);box-shadow:0 5px 0 #80bfe0,0 10px 18px rgba(168,216,240,.45)}.btn-pf-cream{background:#fff8f3;color:var(--navy);border:1px solid #efe4d8;box-shadow:0 5px 0 #e6dbd0,0 10px 18px rgba(26,39,82,.08)}.btn-pf-pink{background:#ffdae6;color:var(--navy);box-shadow:0 5px 0 #f0b0c8,0 10px 18px rgba(255,218,230,.5)}.btn:hover{filter:brightness(1.04)}.btn:active{top:5px;box-shadow:0 0 0 var(--green-dk)}.btn-blue:active{box-shadow:0 0 0 var(--blue-dk)}.btn-yellow:active{box-shadow:0 0 0 var(--yellow-dk)}.btn-coral:active{box-shadow:0 0 0 #d97a5c}.btn-pf-blue:active{box-shadow:0 0 0 #80bfe0}.btn-pf-cream:active{box-shadow:0 0 0 #e6dbd0}.btn-pf-pink:active{box-shadow:0 0 0 #f0b0c8}.btn-outline{background:#fff;color:var(--navy);border:2px solid #e2e8f0;box-shadow:0 4px 0 #e2e8f0}.btn-outline:active{top:4px;box-shadow:0 0 0 #e2e8f0}.btn svg{width:20px;height:20px}.btn-line svg{fill:currentColor}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}.section{padding:clamp(60px,8vw,104px) 0;position:relative}.bg-blue{background:var(--light-blue)}.bg-navy{background:var(--navy)}.bg-soft{background:#F4FAFF}.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center}.split.reverse>.media{order:2}@media(max-width:860px){.split{grid-template-columns:1fr}.split.reverse>.media{order:0}.split .stack{align-items:flex-end;text-align:right}.split .stack .divider{margin-left:auto;margin-right:0}.split.reverse .stack{align-items:flex-start;text-align:left}.split.reverse .stack .divider{margin-left:0;margin-right:auto}.hero .stack,#location .stack{align-items:center;text-align:center}.hero .stack .divider,#location .stack .divider{margin-left:auto;margin-right:auto}.hero .stack .hero-cta,.hero .stack .hero-badges{justify-content:center}.hero .stack p.body{margin-left:auto;margin-right:auto}}@media(min-width:861px){.section:not(#location) .split:not(.reverse) .stack{align-items:flex-end;text-align:right}.section:not(#location) .split:not(.reverse) .stack .divider{margin-left:auto;margin-right:0}}.stack{display:flex;flex-direction:column;align-items:flex-start;gap:16px}.center{text-align:center;align-items:center;margin:0 auto;max-width:700px}.progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--green),var(--blue),var(--purple));z-index:200;transition:width .1s linear}.rk{display:inline-block;width:26px;height:26px;color:var(--blue);animation:wiggle 3.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.rk svg{width:100%;height:100%;display:block}header.site-header{position:fixed;top:0;left:0;right:0;z-index:150;height:var(--header-h);background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(26,39,82,.06);transition:box-shadow .25s}header.site-header.scrolled{box-shadow:0 4px 22px rgba(26,39,82,.09)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{font-family:'Baloo 2',sans-serif;font-size:21px;font-weight:800;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:8px}.brand b{color:var(--blue);font-weight:800}.brand-logo{width:38px;height:38px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(26,39,82,.18)}.nav-links{display:flex;align-items:center;gap:26px}.nav-links a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:15px;font-weight:700;color:#475569;text-decoration:none;transition:color .15s}.nav-links a:not(.btn):hover,.nav-links a.active{color:var(--blue)}.nav-links a.active{position:relative}.nav-links a.active::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:3px;border-radius:3px;background:var(--blue)}.nav-cta{padding:9px 20px;font-size:14px;min-height:42px}.hamburger{display:none;width:46px;height:46px;border:none;background:transparent;cursor:pointer;flex-direction:column;justify-content:center;gap:5px;align-items:center}.hamburger span{width:24px;height:3px;background:var(--navy);border-radius:3px;transition:transform .3s,opacity .2s}body.menu-open .hamburger span:nth-child(1){transform:translateY(8px) rotate(45deg)}body.menu-open .hamburger span:nth-child(2){opacity:0}body.menu-open .hamburger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.drawer{position:fixed;inset:var(--header-h) 0 0 0;z-index:140;background:rgba(255,255,255,.98);backdrop-filter:blur(8px);display:flex;flex-direction:column;gap:4px;padding:24px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}body.menu-open .drawer{opacity:1;transform:none;pointer-events:auto}.drawer a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:700;color:var(--navy);text-decoration:none;padding:15px 8px;border-bottom:1px solid rgba(26,39,82,.07)}.drawer .btn{margin-top:18px}@media(max-width:860px){.nav-links{display:none}.hamburger{display:flex}}.bg-deco{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}.star{position:absolute;animation:twinkle 3s ease-in-out infinite}@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:.9;transform:scale(1.15)}}.hero{padding-top:calc(var(--header-h) + 40px);padding-bottom:60px;background:linear-gradient(180deg,#fff 0%,var(--light-blue) 100%);position:relative;overflow:hidden}.hero .wrap{position:relative;z-index:2}.hero-badges{display:flex;flex-wrap:wrap;gap:10px}.chip{display:inline-flex;align-items:center;gap:7px;font-family:'Baloo 2',sans-serif;font-size:14px;font-weight:700;color:var(--navy);background:#fff;border:2px solid rgba(26,39,82,.08);padding:8px 15px;border-radius:100px;box-shadow:0 3px 0 rgba(26,39,82,.06)}.chip .dot{width:9px;height:9px;border-radius:50%;background:var(--green);animation:blink 1.6s infinite}@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}.scene{position:relative;width:100%;max-width:440px;margin:0 auto;aspect-ratio:1}.planet{position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 36% 30%,#bfe7ff,var(--blue));box-shadow:inset -18px -18px 40px rgba(26,39,82,.25),0 30px 70px rgba(28,176,246,.35);animation:spin 26s linear infinite}.planet::before{content:'';position:absolute;width:34%;height:18%;border-radius:50%;background:rgba(255,255,255,.35);top:22%;left:20%;filter:blur(2px)}.planet::after{content:'';position:absolute;width:24%;height:12%;border-radius:50%;background:rgba(26,39,82,.18);bottom:24%;right:22%}.ring{position:absolute;left:50%;top:54%;width:108%;height:46%;transform:translate(-50%,-50%) rotate(-18deg);border:6px solid rgba(255,200,40,.55);border-radius:50%;animation:spin 18s linear infinite reverse}.rocket{position:absolute;left:58%;top:14%;width:120px;animation:floaty 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center;z-index:3;filter:drop-shadow(0 12px 18px rgba(26,39,82,.25))}.flame{transform-box:fill-box;transform-origin:50% 0%;animation:flame .6s ease-in-out infinite alternate}.s-star{position:absolute;animation:floaty 5s ease-in-out infinite}@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-18px) rotate(4deg)}}@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes flame{0%{transform:scaleY(.8) scaleX(1)}100%{transform:scaleY(1.15) scaleX(.9)}}@keyframes wiggle{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}.count-orb{position:absolute;left:6%;top:6%;background:#fff;border-radius:20px;padding:10px 16px;box-shadow:var(--card-shadow);font-family:'Baloo 2';font-weight:800;display:flex;align-items:center;gap:9px;font-size:15px;z-index:4;animation:pop-bob 4s ease-in-out infinite}.count-orb.b2{left:auto;right:2%;top:auto;bottom:14%;animation-delay:1.5s}.count-orb .big{font-family:'DM Serif Display';font-size:26px;color:var(--blue)}@keyframes pop-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}.page-hero{padding-top:calc(var(--header-h) + 56px);padding-bottom:56px;background:linear-gradient(180deg,#fff,var(--light-blue));text-align:center;position:relative;overflow:hidden}.page-hero .wrap{position:relative;z-index:2;max-width:780px}.page-hero h1{font-size:clamp(34px,5.2vw,54px);margin:14px 0 16px}.page-hero .divider{margin:0 auto 20px}.pf-blue{--frame:#a8d9ef}.pf-pink{--frame:#fedae7}.pf-lav{--frame:#c9b4f0}.pf-cream{--frame:#fef8f3;--frame-edge:#efe4d8}.post-hero{margin:30px 0 0;padding:4.2%;border-radius:min(46px,calc(6.3vw - 3px));background:var(--frame,var(--light-blue));box-shadow:0 18px 40px rgba(26,39,82,.16)}.post-hero img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:min(26px,calc(3.6vw - 1.7px))}.post-hero.pf-cream{box-shadow:inset 0 0 0 1px var(--frame-edge),0 18px 40px rgba(26,39,82,.16)}@media(max-width:640px){.post-hero{margin-top:22px}}.magnet-box{display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;background:var(--light-blue);border:2px dashed var(--blue);border-radius:22px;padding:20px 26px;margin:28px 0 6px}.magnet-box p{flex:1 1 280px;margin:0;font-size:15px;line-height:1.75;color:var(--text-body)}.magnet-box strong{font-family:'Baloo 2';font-size:16px;color:var(--navy)}.magnet-box .btn{flex:0 0 auto}.breadcrumb{font-family:'Baloo 2';font-size:13px;font-weight:700;color:#94a3b8;margin-bottom:8px}.breadcrumb a{text-decoration:none;color:#94a3b8}.breadcrumb a:hover{color:var(--blue)}</style>
+<link rel="preload" as="style" href="/assets/styles.css?v=fb874fd3" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/styles.css?v=fb874fd3"></noscript>
+<!-- AE:CRIT end -->
+<meta name="theme-color" content="#1A2752">
+<title>FCE 寫作 Part 1 練習：必考 essay（4 題＋範文逐句解析）｜埃森美語</title>
+<meta name="description" content="FCE（B2 First for Schools）Writing Part 1「必考 essay」免費線上練習：4 個原創題目，線上直接寫、自動算字數，附範文逐句解析與最常見的失分。埃森美語美籍持證教師編寫。">
+<link rel="canonical" href="https://americanenglish.com.tw/fce-writing-practice-part1/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FCE 寫作 Part 1 練習：必考 essay">
+<meta property="og:description" content="4 個原創題目，線上直接寫、自動算字數，附範文逐句解析。">
+<meta property="og:url" content="https://americanenglish.com.tw/fce-writing-practice-part1/">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/fce-writing-practice-part1/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/fce-writing-practice-part1/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"劍橋英檢","item":"https://americanenglish.com.tw/exams/"},{"@type":"ListItem","position":3,"name":"FCE","item":"https://americanenglish.com.tw/fce-prep-guide/"},{"@type":"ListItem","position":4,"name":"FCE 寫作 Part 1必考 essay"}]}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body>
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo.jpg" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<div class="drawer" id="drawer"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></div>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="bg-deco"></div>
+  <div class="wrap">
+    <div class="breadcrumb"><a href="/">首頁</a> ／ <a href="/exams/">劍橋英檢</a> ／ <a href="/fce-prep-guide/">FCE</a> ／ 寫作 Part 1</div>
+    <span class="eyebrow eyebrow-green">FCE 免費線上練習 · 原創題目</span>
+    <h1>FCE 寫作 Part 1<br>必考 essay</h1>
+    <div class="divider"></div>
+    <p class="body">4 個原創題目（20 分・140–190 字）。直接在頁面上寫，字數即時計算，寫完再打開範文對照——每一句都標出它在為哪一個評分面向服務。</p>
+  </div>
+</section>
+
+<style>.exam-subnav{position:sticky;top:var(--header-h);z-index:90;background:#fff;border-bottom:2px solid rgba(26,39,82,.08);overflow-x:auto;-webkit-overflow-scrolling:touch}.exam-subnav .row{display:flex;align-items:stretch;max-width:1120px;margin:0 auto;padding:0 24px}.exam-subnav .tag{flex:none;display:flex;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;color:#fff;background:var(--blue);padding:10px 14px;border-radius:0 0 10px 10px;text-decoration:none}.exam-subnav a:not(.tag){flex:none;display:flex;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;color:#475569;text-decoration:none;padding:10px 13px;border-bottom:3px solid transparent;white-space:nowrap}.exam-subnav a:not(.tag):hover{color:var(--blue)}.exam-subnav a.on{color:var(--navy);border-bottom-color:var(--blue)}</style>
+<nav class="exam-subnav" aria-label="FCE 專區導覽"><div class="row">
+<a class="tag" href="/exams/">劍橋英檢 FCE</a>
+<a href="/fce-prep-guide/">總覽</a>
+<a href="/fce-prep-guide/#practice">線上練習</a>
+<a href="/b2-grammar-guide/">文法範圍</a>
+<a href="/fce-prep-guide/#vocab">單字範圍</a>
+<a href="/fce-speaking-practice/">口說練習</a>
+<a href="/cambridge-practice-tests/">官方題庫</a>
+<a href="/cambridge-exam-registration-taiwan/">報名資訊</a>
+</div></nav>
+
+<style>.prx-layout{display:grid;grid-template-columns:1fr 240px;gap:32px;align-items:start}@media(max-width:860px){.prx-layout{grid-template-columns:1fr}}.prx-nav{position:sticky;top:calc(var(--header-h) + 58px);background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:18px;padding:14px;box-shadow:0 6px 20px rgba(26,39,82,.06)}.prx-nav h3{font-size:15px;margin:2px 6px 10px}.prx-nav a{display:block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;text-decoration:none;color:#475569;padding:8px 10px;border-radius:10px}.prx-nav a:hover{background:var(--light-blue);color:var(--navy)}.prx-nav a.on{background:var(--blue);color:#fff}@media(max-width:860px){.prx-nav{position:static;display:flex;flex-wrap:wrap;gap:6px;padding:10px}.prx-nav h3{width:100%;margin:0 4px 4px}}.stimulus{background:#fff;border:2px solid rgba(26,39,82,.10);border-radius:18px;padding:22px 24px;margin:18px 0;box-shadow:0 8px 24px rgba(26,39,82,.06)}.stimulus h4{font-family:'Baloo 2',sans-serif;font-size:15px;color:var(--blue);margin:0 0 8px}.stimulus p{font-size:16px;line-height:1.85;color:#333c4d;margin:0 0 10px}.stimulus p:last-child{margin:0}</style>
+<style>
+.wtask{background:#fff;border:2px solid rgba(26,39,82,.10);border-radius:22px;padding:clamp(18px,3vw,28px);margin:22px 0;box-shadow:0 8px 24px rgba(26,39,82,.06)}
+.wtask-h{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.wtask-h .wn{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:var(--purple);border-radius:100px;padding:6px 15px}
+.wtask-h h3{font-size:21px;margin:0}
+.wprompt{background:#FFFDF5;border:2px solid rgba(255,200,40,.45);border-radius:16px;padding:18px 22px;font-size:15.5px;line-height:1.8;color:#3d4657}
+.wprompt p{margin:0 0 9px}.wprompt p:last-child{margin:0}
+.wprompt .wtitle{font-family:'Baloo 2',sans-serif;font-size:12.5px;letter-spacing:1.3px;text-transform:uppercase;color:#8a5f00;margin-bottom:9px}
+.wprompt .winput{background:#fff;border-left:4px solid rgba(255,200,40,.7);border-radius:8px;padding:12px 15px;margin:11px 0;white-space:pre-line;font-size:15px}
+.wnotes{margin:11px 0 0;padding-left:20px}
+.wnotes li{margin:4px 0}
+.wimgs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+@media(max-width:560px){.wimgs{grid-template-columns:1fr}}
+.wpad{margin-top:16px}
+.wpad textarea{width:100%;min-height:190px;font:inherit;font-size:16px;line-height:1.8;color:var(--navy);padding:15px 17px;border:2px solid #e6ebf2;border-radius:14px;resize:vertical;background:#fff}
+.wpad textarea:focus{outline:none;border-color:var(--blue)}
+.wmeta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:9px;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:13.5px;color:#8b9bb0}
+.wmeta .wc{background:#F1F6FB;border-radius:100px;padding:5px 14px;color:var(--navy)}
+.wmeta .wc.ok{background:rgba(6,199,85,.14);color:#04893f}
+.wmeta .wc.under{background:rgba(255,200,40,.20);color:#8a5f00}
+.wmeta .wc.over{background:rgba(240,153,123,.22);color:#b4552f}
+.wmeta .wsaved{font-size:12.5px}
+.wcheck{margin-top:18px;background:#F4FAFF;border-radius:16px;padding:16px 20px}
+.wcheck .wtitle{font-family:'Baloo 2',sans-serif;font-size:12.5px;letter-spacing:1.3px;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.wcheck label{display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.7;color:#3d4657;padding:6px 0;cursor:pointer}
+.wcheck input{margin-top:5px;accent-color:var(--green);flex:none}
+.wcheck label.done{color:#8b9bb0;text-decoration:line-through}
+.wreveal{margin-top:18px}
+.wmodel{border:2px dashed rgba(28,176,246,.4);border-radius:16px;padding:0;overflow:hidden}
+.wmodel summary{list-style:none;cursor:pointer;padding:15px 20px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:15px;color:var(--blue);display:flex;align-items:center;gap:9px;background:#F4FAFF}
+.wmodel summary::-webkit-details-marker{display:none}
+.wmodel summary::before{content:'▸';transition:transform .18s}
+.wmodel[open] summary::before{transform:rotate(90deg)}
+.wmodel .wbody{padding:16px 20px 20px}
+.wsent{padding:11px 0;border-bottom:1px dashed #eef2f7}
+.wsent:last-child{border-bottom:0}
+.wsent .wt{font-size:16.5px;line-height:1.7;color:var(--navy)}
+.wsent .wsc{display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:#fff;border-radius:6px;padding:3px 9px;margin-right:9px;vertical-align:2px}
+.wsent .wnote{font-size:14px;line-height:1.75;color:#7b8794;margin-top:6px;padding-left:12px;border-left:3px solid rgba(28,176,246,.25)}
+.werr{margin-top:16px;background:#FFF8F5;border:1px solid rgba(240,153,123,.38);border-radius:16px;padding:15px 19px}
+.werr .wtitle{font-family:'Baloo 2',sans-serif;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:#c96a48;margin-bottom:8px}
+.werr ul{margin:0;padding-left:20px}
+.werr li{font-size:14.5px;line-height:1.75;color:var(--text-body);margin:5px 0}
+.wbar{display:flex;flex-wrap:wrap;gap:11px;margin-top:14px}
+@media print{.wpad textarea{min-height:320px}.wmodel,.wbar,.wcheck{display:none!important}}
+</style>
+
+<section class="section" id="practice">
+  <div class="wrap prx-layout">
+    <div>
+      <div class="stimulus" style="background:var(--light-blue);border-style:dashed">
+        <h4>官方題型說明 Task format</h4>
+        <p>議論文，沒得選。題目給兩個必須討論的面向，再加上一個你自己的想法——第三點是自己想的，這是最多人忘記的地方。要有立場、要給理由。這一題官方配分 <strong>20 分</strong>，字數要求 <strong>140–190 字</strong>。</p>
+        <p style="font-size:13.5px;color:#5a6577">題目說明依官方題型格式以英文呈現；以下題目與範文為<strong>埃森美語原創編寫</strong>，非劍橋官方試題或官方範文。</p>
+      </div>
+
+      <p class="body" style="font-size:14.5px;color:#8b9bb0">寫作沒辦法自動改分——所以這一頁的重點不是給你分數，是<strong>先自己寫一次</strong>再對照。草稿只存在你自己的瀏覽器裡，關掉頁面也還在，不會上傳。</p>
+
+      <article class="wtask" id="fce-writing-practice-part1-A">
+        <div class="wtask-h"><span class="wn">題目 1</span><h3>school policy — mobile phones during break times</h3></div>
+        <div class="wprompt"><div class="wtitle">Task 1</div><p>In your English class you have been talking about mobile phones in schools. Now your English teacher has asked you to write an essay.</p><p>Should schools allow students to use their mobile phones during break times?</p><div class="winput">In your English class you have been talking about mobile phones in schools. Now your English teacher has asked you to write an essay.
+Write an essay using all the notes below and giving reasons for your point of view.
+Should schools allow students to use their mobile phones during break times?
+Notes
+Write about:
+1. staying in contact with friends and family
+2. distraction from schoolwork
+3. ……………………… (your own idea)</div><ul class="wnotes"><li>staying in contact with friends and family</li><li>distraction from schoolwork</li></ul><p style="color:#8a5f00"><b>3　……………………… (your own idea)</b></p><p style="font-family:'Baloo 2',sans-serif;font-weight:700;color:#8a5f00">Write 140–190.</p></div>
+        <div class="wpad">
+          <textarea data-w="fce-writing-practice-part1-A" data-lo="140" data-hi="190" placeholder="在這裡寫你的答案——寫完再往下看範文。"></textarea>
+          <div class="wmeta"><span class="wc" data-c="fce-writing-practice-part1-A">0 字</span>
+            <span>目標 140–190 字</span><span class="wsaved" data-s="fce-writing-practice-part1-A"></span></div>
+        </div>
+        <div class="wcheck"><div class="wtitle">交卷前先自己檢查</div><label><input type="checkbox">staying in contact 和 distraction from schoolwork 這兩個給定重點是不是都寫到了？</label><label><input type="checkbox">有沒有加入自己的第三個重點，並清楚跟前兩點不一樣？</label><label><input type="checkbox">結尾有沒有明確的結論句，清楚表態？</label><label><input type="checkbox">每個論點後面有沒有加原因或例子，不是丟出主張就結束？</label><label><input type="checkbox">全篇語域是不是維持中性／正式，沒有隨便的口語縮寫？</label><label><input type="checkbox">字數有沒有落在 140–190 字之間？</label></div>
+        <details class="wmodel wreveal"><summary>看範文與逐句解析（190 字）</summary>
+          <div class="wbody"><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>Nowadays, almost every teenager owns a mobile phone, so schools are increasingly debating whether students should be allowed to use them during break times.</div><div class="wnote">開頭用改寫題目的方式帶出討論主題，沒有直接抄題目文字，讓讀者一開始就知道文章要談的方向，是「組織」看重的破題寫法。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>In my opinion, phones should be allowed, but only with clear limits.</div><div class="wnote">第一段就清楚表態、給出立場，讓身為讀者的老師馬上被充分告知作者的態度，是「溝通成效」要求的重點。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>Firstly, mobile phones make it easy for students to stay in contact with friends and family.</div><div class="wnote">對應題目給的第一個重點（staying in contact with friends and family），Firstly 同時展現「組織」要求的連接詞使用。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#F0997B">Language</span>If a student needs to tell a parent about a change of plan, a quick message solves the problem immediately, and this also gives parents peace of mind.</div><div class="wnote">用 if 條件句加上 and 子句組成複雜句，而不是只寫簡單句，展現「語言」要求的簡單句與複雜句並用。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>On the other hand, phones can be a serious distraction from schoolwork.</div><div class="wnote">對應題目給的第二個重點（distraction from schoolwork），On the other hand 標出這是相反方向的論點，呼應「組織」的轉折安排。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#F0997B">Language</span>Even during a short break, students can lose track of time online, and it can be difficult to concentrate on lessons afterwards.</div><div class="wnote">lose track of time、concentrate on 都是超過基礎字彙等級的搭配詞，展現「語言」要求的字彙廣度。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>There is another point that is often overlooked: constant phone use during breaks stops students from talking to each other face to face.</div><div class="wnote">這句是考生自己加的第三個重點（own idea）——在兩個給定重點之外，自己想出一個新論點，這是 Part 1 作文一定要做到、少了會被扣內容分的關鍵動作。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>Break time should give teenagers a chance to relax and build real friendships, not stare at a screen alone.</div><div class="wnote">延伸自己想出的論點並說明原因，而不是丟出主張就結束，讓讀者理解「為什麼」，是「溝通成效」看重的說服力。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>In conclusion, I believe schools should allow phones during breaks but set a reasonable time limit, such as fifteen minutes.</div><div class="wnote">用 In conclusion 明確收尾並重申立場，這是評分表要求「文章要有結論」的句子，少了明確結論會直接影響「組織」分數。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>This way, students can stay connected without losing the social side of school life.</div><div class="wnote">結尾再次呼應全文重點，留給讀者一個完整、正面的收尾印象，是「溝通成效」看重的整體效果。</div></div><div class="werr"><div class="wtitle">最常見的失分</div><ul><li>只寫了兩個給定重點，忘記加上自己的第三個想法（own idea）——內容分數會被封頂。</li><li>文章沒有清楚的結論段，寫到最後一段就停了，沒有明確表態。</li><li>論點只是條列主張，沒有加原因或例子支撐，變成「觀點堆疊」而不是有說服力的論述。</li><li>用了太多口語縮寫（isn't, don't, it's），跟這篇要求的中性／正式語域不符。</li><li>字數不足 140 字，或超過 190 字太多，兩種都會影響評分。</li></ul></div></div></details>
+        <div class="wbar"><button type="button" class="btn btn-outline" data-clear="fce-writing-practice-part1-A">清空重寫</button>
+          <button type="button" class="btn btn-outline" data-print="fce-writing-practice-part1-A">列印題目</button></div>
+      </article><article class="wtask" id="fce-writing-practice-part1-B">
+        <div class="wtask-h"><span class="wn">題目 2</span><h3>environment — how schools can encourage protecting it</h3></div>
+        <div class="wprompt"><div class="wtitle">Task 1</div><p>In your English class you have been talking about protecting the environment. Now your English teacher has asked you to write an essay.</p><p>What is the best way for a school to encourage students to protect the environment?</p><div class="winput">In your English class you have been talking about protecting the environment. Now your English teacher has asked you to write an essay.
+Write an essay using all the notes below and giving reasons for your point of view.
+What is the best way for a school to encourage students to protect the environment?
+Notes
+Write about:
+1. recycling and reducing waste
+2. lessons and school projects
+3. ……………………… (your own idea)</div><ul class="wnotes"><li>recycling and reducing waste</li><li>lessons and school projects</li></ul><p style="color:#8a5f00"><b>3　……………………… (your own idea)</b></p><p style="font-family:'Baloo 2',sans-serif;font-weight:700;color:#8a5f00">Write 140–190.</p></div>
+        <div class="wpad">
+          <textarea data-w="fce-writing-practice-part1-B" data-lo="140" data-hi="190" placeholder="在這裡寫你的答案——寫完再往下看範文。"></textarea>
+          <div class="wmeta"><span class="wc" data-c="fce-writing-practice-part1-B">0 字</span>
+            <span>目標 140–190 字</span><span class="wsaved" data-s="fce-writing-practice-part1-B"></span></div>
+        </div>
+        <div class="wcheck"><div class="wtitle">交卷前先自己檢查</div><label><input type="checkbox">recycling and reducing waste 和 lessons and school projects 這兩個給定重點是不是都寫到了？</label><label><input type="checkbox">有沒有加入自己的第三個重點，並清楚跟前兩點不一樣？</label><label><input type="checkbox">結尾有沒有明確的結論句，清楚表態？</label><label><input type="checkbox">每個論點後面有沒有加原因或例子，不是丟出主張就結束？</label><label><input type="checkbox">全篇語域是不是維持中性／正式，沒有隨便的口語縮寫？</label><label><input type="checkbox">字數有沒有落在 140–190 字之間？</label></div>
+        <details class="wmodel wreveal"><summary>看範文與逐句解析（180 字）</summary>
+          <div class="wbody"><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>Protecting the environment is one of the most important issues young people face today, and schools can play a major role in encouraging good habits.</div><div class="wnote">破題改寫了題目的方向（學校如何鼓勵學生愛護環境），沒有照抄題目文字，是「組織」看重的開場寫法。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>In my view, the most effective approach combines practical action with education.</div><div class="wnote">一開始就清楚表態、預告文章的立場，讓讀者馬上抓到全文方向，充分被告知。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>To begin with, schools should make recycling and reducing waste part of daily school life.</div><div class="wnote">對應題目給的第一個重點（recycling and reducing waste），To begin with 也是「組織」要求的連接詞。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#F0997B">Language</span>Simple steps, such as placing recycling bins in every classroom and banning plastic bottles in the canteen, show students that small actions really do add up.</div><div class="wnote">such as 帶出具體例子，加上兩個動名詞片語（placing、banning），句構比簡單句複雜，展現「語言」的句型變化。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>Equally, lessons and school projects can teach students why these habits matter.</div><div class="wnote">對應題目給的第二個重點（lessons and school projects），Equally 標出這是與前一段同等重要的另一個論點。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#F0997B">Language</span>When a science class studies climate change, the problem stops feeling abstract and becomes personal.</div><div class="wnote">用 When 開頭的時間子句帶出具體例子，句子結構完整，是「語言」評分看重的複雜句型。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>However, in my opinion, the strongest method is neither of these alone: it is giving students real responsibility through an environmental club that plans its own projects, such as a school garden.</div><div class="wnote">這是考生自己想出的第三個重點——跳脫兩個給定重點，提出社團自主行動的新論點，是 Part 1 必須做到的加分動作。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>Students work harder for ideas they create themselves than for rules imposed from above.</div><div class="wnote">用比較句型說明「為什麼」自己的論點成立，而不是只丟出主張，說服力是「溝通成效」的核心。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>To conclude, recycling systems and classroom lessons are essential, but a student-led club is what truly changes behaviour, because it turns environmental protection into something students choose to do.</div><div class="wnote">用 To conclude 明確收尾，並把三個重點收攏成一個結論，滿足評分表要求的「文章要有結論」。</div></div><div class="werr"><div class="wtitle">最常見的失分</div><ul><li>只寫 recycling 和 lessons 兩個給定重點，忘記加上自己的第三個想法——內容分數會被封頂。</li><li>文章沒有清楚的結論段，寫到最後一段就停了，沒有明確表態。</li><li>論點只是條列主張（例如只寫『學校應該回收』），沒有加原因或例子支撐。</li><li>用了太多口語縮寫，跟這篇要求的中性／正式語域不符。</li><li>字數不足 140 字，或超過 190 字太多，兩種都會影響評分。</li></ul></div></div></details>
+        <div class="wbar"><button type="button" class="btn btn-outline" data-clear="fce-writing-practice-part1-B">清空重寫</button>
+          <button type="button" class="btn btn-outline" data-print="fce-writing-practice-part1-B">列印題目</button></div>
+      </article><article class="wtask" id="fce-writing-practice-part1-C">
+        <div class="wtask-h"><span class="wn">題目 3</span><h3>technology's effect on friendship</h3></div>
+        <div class="wprompt"><div class="wtitle">Task 1</div><p>In your English class you have been talking about technology and friendship. Now your English teacher has asked you to write an essay.</p><p>Has technology made it easier or harder for teenagers to make real friends?</p><div class="winput">In your English class you have been talking about technology and friendship. Now your English teacher has asked you to write an essay.
+Write an essay using all the notes below and giving reasons for your point of view.
+Has technology made it easier or harder for teenagers to make real friends?
+Notes
+Write about:
+1. meeting new people online
+2. spending less time talking face to face
+3. ……………………… (your own idea)</div><ul class="wnotes"><li>meeting new people online</li><li>spending less time talking face to face</li></ul><p style="color:#8a5f00"><b>3　……………………… (your own idea)</b></p><p style="font-family:'Baloo 2',sans-serif;font-weight:700;color:#8a5f00">Write 140–190.</p></div>
+        <div class="wpad">
+          <textarea data-w="fce-writing-practice-part1-C" data-lo="140" data-hi="190" placeholder="在這裡寫你的答案——寫完再往下看範文。"></textarea>
+          <div class="wmeta"><span class="wc" data-c="fce-writing-practice-part1-C">0 字</span>
+            <span>目標 140–190 字</span><span class="wsaved" data-s="fce-writing-practice-part1-C"></span></div>
+        </div>
+        <div class="wcheck"><div class="wtitle">交卷前先自己檢查</div><label><input type="checkbox">meeting new people online 和 spending less time talking face to face 這兩個給定重點是不是都寫到了？</label><label><input type="checkbox">有沒有加入自己的第三個重點，並清楚跟前兩點不一樣？</label><label><input type="checkbox">結尾有沒有明確的結論句，清楚表態？</label><label><input type="checkbox">正反兩面的論點之間，有沒有用轉折詞（however, on the other hand）清楚銜接？</label><label><input type="checkbox">全篇語域是不是維持中性／正式，沒有隨便的口語縮寫？</label><label><input type="checkbox">字數有沒有落在 140–190 字之間？</label></div>
+        <details class="wmodel wreveal"><summary>看範文與逐句解析（190 字）</summary>
+          <div class="wbody"><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>Ten years ago, most friendships began at school or in the neighbourhood.</div><div class="wnote">用今昔對比開場，不直接複製題目文字，替全文的「改變」主題鋪路，是「組織」看重的破題手法。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>Today, technology has completely changed the way teenagers meet people, and opinions about whether this is a positive change are strongly divided.</div><div class="wnote">改寫題目問題（科技對交友是好是壞），並讓讀者知道文章會呈現正反兩面討論，充分告知讀者文章走向。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>On the positive side, meeting new people online allows teenagers to find others who share their exact interests, from gaming to art, even if nobody nearby feels the same way.</div><div class="wnote">對應題目給的第一個重點（meeting new people online），On the positive side 標出這是正面論點的段落。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#F0997B">Language</span>For a shy or isolated student, this can be the first step towards real confidence.</div><div class="wnote">isolated、real confidence 都是超過基礎字彙等級的用字，展現「語言」要求的字彙廣度。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>At the same time, there is a clear downside: teenagers now spend far less time talking face to face.</div><div class="wnote">對應題目給的第二個重點（spending less time talking face to face），At the same time 標出這是轉向反面論點的段落。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#F0997B">Language</span>Conversations over text or through emojis cannot fully replace the eye contact, tone of voice and body language that build deep trust between friends.</div><div class="wnote">that 引導的關係子句加上一連串名詞片語，句構複雜且用字精準，是「語言」的加分句。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>What worries me most, however, is something rarely discussed: constantly comparing your life to other people's carefully chosen photos online can quietly damage a teenager's confidence, making them feel lonelier even while they are constantly connected.</div><div class="wnote">這是考生自己想出的第三個重點——社群媒體的比較心理，是兩個給定重點之外的全新角度，是 Part 1 一定要做到的內容要求。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>In conclusion, technology has made it easier to find people with similar interests, but harder to build the deep, confident friendships that face-to-face time creates.</div><div class="wnote">用 In conclusion 收尾，並把全文三個重點濃縮成一句對比清楚的結論，滿足評分表要求的「文章要有結論」。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>The two need to be balanced carefully.</div><div class="wnote">最後一句留給讀者一個簡短有力的收尾印象，讓文章不是戛然而止，是「溝通成效」看重的整體效果。</div></div><div class="werr"><div class="wtitle">最常見的失分</div><ul><li>只寫「線上交友」和「少了面對面聊天」兩個給定重點，忘記加上自己的第三個想法。</li><li>文章沒有清楚的結論段，兩面討論完就結束，沒有收攏成一句明確立場。</li><li>正反兩面各講各的，沒有互相呼應，讀起來像兩篇獨立短文拼起來。</li><li>用了太多口語縮寫，跟這篇要求的中性／正式語域不符。</li><li>字數不足 140 字，或超過 190 字太多，兩種都會影響評分。</li></ul></div></div></details>
+        <div class="wbar"><button type="button" class="btn btn-outline" data-clear="fce-writing-practice-part1-C">清空重寫</button>
+          <button type="button" class="btn btn-outline" data-print="fce-writing-practice-part1-C">列印題目</button></div>
+      </article><article class="wtask" id="fce-writing-practice-part1-D">
+        <div class="wtask-h"><span class="wn">題目 4</span><h3>part-time work while at school</h3></div>
+        <div class="wprompt"><div class="wtitle">Task 1</div><p>In your English class you have been talking about teenagers and part-time jobs. Now your English teacher has asked you to write an essay.</p><p>Is it a good idea for teenagers to have a part-time job while they are still at school?</p><div class="winput">In your English class you have been talking about teenagers and part-time jobs. Now your English teacher has asked you to write an essay.
+Write an essay using all the notes below and giving reasons for your point of view.
+Is it a good idea for teenagers to have a part-time job while they are still at school?
+Notes
+Write about:
+1. earning and managing their own money
+2. less time for study and rest
+3. ……………………… (your own idea)</div><ul class="wnotes"><li>earning and managing their own money</li><li>less time for study and rest</li></ul><p style="color:#8a5f00"><b>3　……………………… (your own idea)</b></p><p style="font-family:'Baloo 2',sans-serif;font-weight:700;color:#8a5f00">Write 140–190.</p></div>
+        <div class="wpad">
+          <textarea data-w="fce-writing-practice-part1-D" data-lo="140" data-hi="190" placeholder="在這裡寫你的答案——寫完再往下看範文。"></textarea>
+          <div class="wmeta"><span class="wc" data-c="fce-writing-practice-part1-D">0 字</span>
+            <span>目標 140–190 字</span><span class="wsaved" data-s="fce-writing-practice-part1-D"></span></div>
+        </div>
+        <div class="wcheck"><div class="wtitle">交卷前先自己檢查</div><label><input type="checkbox">earning and managing their own money 和 less time for study and rest 這兩個給定重點是不是都寫到了？</label><label><input type="checkbox">有沒有加入自己的第三個重點，並清楚跟前兩點不一樣？</label><label><input type="checkbox">結尾有沒有明確的結論句，清楚表態？</label><label><input type="checkbox">每個論點後面有沒有加原因或例子，不是丟出主張就結束？</label><label><input type="checkbox">全篇語域是不是維持中性／正式，沒有隨便的口語縮寫？</label><label><input type="checkbox">字數有沒有落在 140–190 字之間？</label></div>
+        <details class="wmodel wreveal"><summary>看範文與逐句解析（183 字）</summary>
+          <div class="wbody"><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>More and more secondary school students are choosing to take on part-time jobs, whether in a café, a shop or as a tutor for younger children.</div><div class="wnote">開頭用現況描述加上具體例子破題，改寫了題目方向而非照抄，是「組織」看重的開場方式。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>Whether this is a good idea, in my opinion, depends on how it is managed.</div><div class="wnote">清楚表態立場（不是單純好或不好，而是要看怎麼安排），讓讀者馬上掌握全文的論述角度。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>One clear advantage is that a part-time job lets teenagers earn and manage their own money for the first time.</div><div class="wnote">對應題目給的第一個重點（earning and managing their own money），One clear advantage 也是「組織」要求的連接詞。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#F0997B">Language</span>Instead of simply asking parents for cash, students learn to budget, save and understand the real value of what things cost.</div><div class="wnote">用三個並列動詞（budget, save, understand）組成的複雜句，展現「語言」要求的句型變化與字彙廣度。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>Nevertheless, a job also means less time for study and rest, which can be a serious problem close to important exams.</div><div class="wnote">對應題目給的第二個重點（less time for study and rest），Nevertheless 標出這是轉向反面論點的轉折詞。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#F0997B">Language</span>Tired students who work late shifts often struggle to concentrate in class the next day.</div><div class="wnote">who 引導的關係子句修飾 students，是「語言」評分看重的複雜句型之一。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>What people forget to mention, though, is that a part-time job teaches responsibility in a way no textbook can.</div><div class="wnote">這是考生自己想出的第三個重點——打工教會的責任感，跳脫兩個給定重點之外，是 Part 1 一定要做到的內容要求。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#F0997B">Language</span>Turning up on time, following instructions from a manager and dealing with difficult customers all build skills that will matter long after school finishes.</div><div class="wnote">三個動名詞片語並列當主詞，句構進階，展現「語言」的句型掌握度。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>In conclusion, a part-time job can be genuinely valuable for teenagers, provided the hours stay limited and schoolwork remains the top priority.</div><div class="wnote">用 In conclusion 收尾並加上但書（時數要有限），把全文立場收攏成一句完整結論，滿足評分表要求的「文章要有結論」。</div></div><div class="werr"><div class="wtitle">最常見的失分</div><ul><li>只寫賺錢和沒時間讀書兩個給定重點，忘記加上自己的第三個想法。</li><li>文章沒有清楚的結論段，寫到最後一段就停了，沒有明確表態。</li><li>論點只是條列主張，沒有加原因或例子支撐，變成觀點堆疊。</li><li>用了太多口語縮寫，跟這篇要求的中性／正式語域不符。</li><li>字數不足 140 字，或超過 190 字太多，兩種都會影響評分。</li></ul></div></div></details>
+        <div class="wbar"><button type="button" class="btn btn-outline" data-clear="fce-writing-practice-part1-D">清空重寫</button>
+          <button type="button" class="btn btn-outline" data-print="fce-writing-practice-part1-D">列印題目</button></div>
+      </article>
+    </div>
+
+    <aside class="prx-nav" aria-label="各 Part 練習">
+      <h3>FCE 寫作 練習</h3>
+      <a href="/fce-writing-practice-part1/" class="on" aria-current="page">Part 1 必考 essay</a>
+      <a href="/fce-writing-practice-part2/">Part 2 三選一寫作</a>
+      <a href="/cambridge-practice-tests/" style="border-top:2px dashed #e6ebf2;margin-top:6px;padding-top:10px">官方樣卷下載 →</a>
+    </aside>
+  </div>
+</section>
+
+<script>
+(function(){
+  var K='aeW:';
+  function count(s){ return (s.trim().match(/[A-Za-z0-9'’\-]+/g)||[]).length; }
+  document.querySelectorAll('textarea[data-w]').forEach(function(ta){
+    var id=ta.dataset.w, lo=+ta.dataset.lo, hi=+ta.dataset.hi;
+    var chip=document.querySelector('[data-c="'+id+'"]'), saved=document.querySelector('[data-s="'+id+'"]');
+    try{ var v=localStorage.getItem(K+id); if(v){ ta.value=v; } }catch(e){}
+    function upd(){
+      var n=count(ta.value);
+      chip.textContent=n+' 字';
+      chip.className='wc '+(n===0?'':(n<lo?'under':(n>hi?'over':'ok')));
+    }
+    var t;
+    ta.addEventListener('input',function(){
+      upd(); clearTimeout(t);
+      t=setTimeout(function(){
+        try{ localStorage.setItem(K+id,ta.value); saved.textContent='草稿已存在這台裝置'; }catch(e){}
+      },600);
+    });
+    upd();
+  });
+  document.querySelectorAll('[data-clear]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var id=b.dataset.clear, ta=document.querySelector('textarea[data-w="'+id+'"]');
+      if(!ta.value || confirm('確定要清空這一題的草稿嗎？')){
+        ta.value=''; try{ localStorage.removeItem(K+id); }catch(e){}
+        ta.dispatchEvent(new Event('input'));
+        var s=document.querySelector('[data-s="'+id+'"]'); if(s)s.textContent='';
+      }
+    });
+  });
+  document.querySelectorAll('[data-print]').forEach(function(b){
+    b.addEventListener('click',function(){ window.print(); });
+  });
+  document.querySelectorAll('.wcheck label').forEach(function(l){
+    var cb=l.querySelector('input');
+    cb.addEventListener('change',function(){ l.classList.toggle('done',cb.checked); });
+  });
+})();
+</script>
+
+<section class="section bg-soft">
+  <div class="wrap center stack">
+    <span class="eyebrow eyebrow-green">練習之後</span>
+    <h2>寫作是唯一<em>需要有人改</em>的一卷</h2>
+    <div class="divider"></div>
+    <p class="body" style="max-width:680px">範文能告訴你「好的長什麼樣子」，但沒辦法告訴你「你自己寫的哪裡不對」——這兩件事差很遠。同一個錯誤重複二十次卻沒人指出來，是自學寫作最常見的結局。如果是文法拖累的，可以先對照 <a href="/b2-grammar-guide/">FCE 文法範圍逐項教學</a>；想要有人真的批改，我們的課每週都在做這件事。</p>
+    <a class="btn btn-primary" href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 預約免費寫作診斷</a>
+  </div>
+</section>
+
+</main>
+<script src="/assets/app.js?v=11"></script>
+</body>
+</html>

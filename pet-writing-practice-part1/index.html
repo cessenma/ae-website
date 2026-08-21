@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<style id="crit">:root{--navy:#1A2752;--blue:#1CB0F6;--blue-dk:#1391cc;--green:#06C755;--green-dk:#04a046;--yellow:#FFC828;--yellow-dk:#e0a800;--purple:#CE82FF;--purple-dk:#a94fe0;--coral:#F0997B;--light-blue:#DDF4FF;--text-body:#4b5563;--card-shadow:0 12px 40px rgba(26,39,82,.10);--header-h:64px;}*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px)}body{font-family:'DM Sans',-apple-system,'PingFang TC','Microsoft JhengHei',sans-serif;background:#fff;color:var(--navy);line-height:1.6;overflow-x:hidden}a{color:inherit}img{display:block;max-width:100%}:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}h1,h2,h3{font-family:'DM Serif Display',serif;font-weight:400;color:var(--navy);letter-spacing:-.4px;line-height:1.08}h1{font-size:clamp(40px,6.4vw,66px)}h2{font-size:clamp(30px,4.6vw,48px)}h3{font-size:22px}.rounded{font-family:'Baloo 2',sans-serif;font-weight:800}em{font-style:italic;color:var(--blue)}.bg-navy h2,.bg-navy h3{color:#fff}p.body{font-size:clamp(15px,1.6vw,17px);line-height:1.8;color:var(--text-body)}.bg-navy p.body{color:rgba(255,255,255,.74)}.eyebrow{display:inline-block;font-family:'Baloo 2',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--blue);background:rgba(28,176,246,.12);padding:7px 16px;border-radius:100px}.eyebrow-green{color:#067033;background:rgba(6,199,85,.12)}.eyebrow-yellow{color:#8a5f00;background:rgba(255,200,40,.18)}.divider{width:48px;height:4px;background:linear-gradient(90deg,var(--blue),var(--purple));border-radius:4px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'Baloo 2',sans-serif;font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.5px;padding:14px 30px;border-radius:16px;cursor:pointer;border:none;text-transform:uppercase;transition:transform .08s ease,box-shadow .08s ease,filter .15s;min-height:50px;position:relative;top:0}.btn-primary{background:var(--green);color:#fff;box-shadow:0 5px 0 var(--green-dk),0 10px 18px rgba(6,199,85,.32)}.btn-blue{background:var(--blue);color:#fff;box-shadow:0 5px 0 var(--blue-dk),0 10px 18px rgba(28,176,246,.32)}.btn-yellow{background:var(--yellow);color:var(--navy);box-shadow:0 5px 0 var(--yellow-dk),0 10px 18px rgba(255,200,40,.32)}.btn-coral{background:var(--coral);color:#fff;box-shadow:0 5px 0 #d97a5c,0 10px 18px rgba(240,153,123,.34)}.btn-pf-blue{background:#a8d8f0;color:var(--navy);box-shadow:0 5px 0 #80bfe0,0 10px 18px rgba(168,216,240,.45)}.btn-pf-cream{background:#fff8f3;color:var(--navy);border:1px solid #efe4d8;box-shadow:0 5px 0 #e6dbd0,0 10px 18px rgba(26,39,82,.08)}.btn-pf-pink{background:#ffdae6;color:var(--navy);box-shadow:0 5px 0 #f0b0c8,0 10px 18px rgba(255,218,230,.5)}.btn:hover{filter:brightness(1.04)}.btn:active{top:5px;box-shadow:0 0 0 var(--green-dk)}.btn-blue:active{box-shadow:0 0 0 var(--blue-dk)}.btn-yellow:active{box-shadow:0 0 0 var(--yellow-dk)}.btn-coral:active{box-shadow:0 0 0 #d97a5c}.btn-pf-blue:active{box-shadow:0 0 0 #80bfe0}.btn-pf-cream:active{box-shadow:0 0 0 #e6dbd0}.btn-pf-pink:active{box-shadow:0 0 0 #f0b0c8}.btn-outline{background:#fff;color:var(--navy);border:2px solid #e2e8f0;box-shadow:0 4px 0 #e2e8f0}.btn-outline:active{top:4px;box-shadow:0 0 0 #e2e8f0}.btn svg{width:20px;height:20px}.btn-line svg{fill:currentColor}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}.section{padding:clamp(60px,8vw,104px) 0;position:relative}.bg-blue{background:var(--light-blue)}.bg-navy{background:var(--navy)}.bg-soft{background:#F4FAFF}.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center}.split.reverse>.media{order:2}@media(max-width:860px){.split{grid-template-columns:1fr}.split.reverse>.media{order:0}.split .stack{align-items:flex-end;text-align:right}.split .stack .divider{margin-left:auto;margin-right:0}.split.reverse .stack{align-items:flex-start;text-align:left}.split.reverse .stack .divider{margin-left:0;margin-right:auto}.hero .stack,#location .stack{align-items:center;text-align:center}.hero .stack .divider,#location .stack .divider{margin-left:auto;margin-right:auto}.hero .stack .hero-cta,.hero .stack .hero-badges{justify-content:center}.hero .stack p.body{margin-left:auto;margin-right:auto}}@media(min-width:861px){.section:not(#location) .split:not(.reverse) .stack{align-items:flex-end;text-align:right}.section:not(#location) .split:not(.reverse) .stack .divider{margin-left:auto;margin-right:0}}.stack{display:flex;flex-direction:column;align-items:flex-start;gap:16px}.center{text-align:center;align-items:center;margin:0 auto;max-width:700px}.progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--green),var(--blue),var(--purple));z-index:200;transition:width .1s linear}.rk{display:inline-block;width:26px;height:26px;color:var(--blue);animation:wiggle 3.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.rk svg{width:100%;height:100%;display:block}header.site-header{position:fixed;top:0;left:0;right:0;z-index:150;height:var(--header-h);background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(26,39,82,.06);transition:box-shadow .25s}header.site-header.scrolled{box-shadow:0 4px 22px rgba(26,39,82,.09)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{font-family:'Baloo 2',sans-serif;font-size:21px;font-weight:800;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:8px}.brand b{color:var(--blue);font-weight:800}.brand-logo{width:38px;height:38px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(26,39,82,.18)}.nav-links{display:flex;align-items:center;gap:26px}.nav-links a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:15px;font-weight:700;color:#475569;text-decoration:none;transition:color .15s}.nav-links a:not(.btn):hover,.nav-links a.active{color:var(--blue)}.nav-links a.active{position:relative}.nav-links a.active::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:3px;border-radius:3px;background:var(--blue)}.nav-cta{padding:9px 20px;font-size:14px;min-height:42px}.hamburger{display:none;width:46px;height:46px;border:none;background:transparent;cursor:pointer;flex-direction:column;justify-content:center;gap:5px;align-items:center}.hamburger span{width:24px;height:3px;background:var(--navy);border-radius:3px;transition:transform .3s,opacity .2s}body.menu-open .hamburger span:nth-child(1){transform:translateY(8px) rotate(45deg)}body.menu-open .hamburger span:nth-child(2){opacity:0}body.menu-open .hamburger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.drawer{position:fixed;inset:var(--header-h) 0 0 0;z-index:140;background:rgba(255,255,255,.98);backdrop-filter:blur(8px);display:flex;flex-direction:column;gap:4px;padding:24px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}body.menu-open .drawer{opacity:1;transform:none;pointer-events:auto}.drawer a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:700;color:var(--navy);text-decoration:none;padding:15px 8px;border-bottom:1px solid rgba(26,39,82,.07)}.drawer .btn{margin-top:18px}@media(max-width:860px){.nav-links{display:none}.hamburger{display:flex}}.bg-deco{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}.star{position:absolute;animation:twinkle 3s ease-in-out infinite}@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:.9;transform:scale(1.15)}}.hero{padding-top:calc(var(--header-h) + 40px);padding-bottom:60px;background:linear-gradient(180deg,#fff 0%,var(--light-blue) 100%);position:relative;overflow:hidden}.hero .wrap{position:relative;z-index:2}.hero-badges{display:flex;flex-wrap:wrap;gap:10px}.chip{display:inline-flex;align-items:center;gap:7px;font-family:'Baloo 2',sans-serif;font-size:14px;font-weight:700;color:var(--navy);background:#fff;border:2px solid rgba(26,39,82,.08);padding:8px 15px;border-radius:100px;box-shadow:0 3px 0 rgba(26,39,82,.06)}.chip .dot{width:9px;height:9px;border-radius:50%;background:var(--green);animation:blink 1.6s infinite}@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}.scene{position:relative;width:100%;max-width:440px;margin:0 auto;aspect-ratio:1}.planet{position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 36% 30%,#bfe7ff,var(--blue));box-shadow:inset -18px -18px 40px rgba(26,39,82,.25),0 30px 70px rgba(28,176,246,.35);animation:spin 26s linear infinite}.planet::before{content:'';position:absolute;width:34%;height:18%;border-radius:50%;background:rgba(255,255,255,.35);top:22%;left:20%;filter:blur(2px)}.planet::after{content:'';position:absolute;width:24%;height:12%;border-radius:50%;background:rgba(26,39,82,.18);bottom:24%;right:22%}.ring{position:absolute;left:50%;top:54%;width:108%;height:46%;transform:translate(-50%,-50%) rotate(-18deg);border:6px solid rgba(255,200,40,.55);border-radius:50%;animation:spin 18s linear infinite reverse}.rocket{position:absolute;left:58%;top:14%;width:120px;animation:floaty 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center;z-index:3;filter:drop-shadow(0 12px 18px rgba(26,39,82,.25))}.flame{transform-box:fill-box;transform-origin:50% 0%;animation:flame .6s ease-in-out infinite alternate}.s-star{position:absolute;animation:floaty 5s ease-in-out infinite}@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-18px) rotate(4deg)}}@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes flame{0%{transform:scaleY(.8) scaleX(1)}100%{transform:scaleY(1.15) scaleX(.9)}}@keyframes wiggle{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}.count-orb{position:absolute;left:6%;top:6%;background:#fff;border-radius:20px;padding:10px 16px;box-shadow:var(--card-shadow);font-family:'Baloo 2';font-weight:800;display:flex;align-items:center;gap:9px;font-size:15px;z-index:4;animation:pop-bob 4s ease-in-out infinite}.count-orb.b2{left:auto;right:2%;top:auto;bottom:14%;animation-delay:1.5s}.count-orb .big{font-family:'DM Serif Display';font-size:26px;color:var(--blue)}@keyframes pop-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}.page-hero{padding-top:calc(var(--header-h) + 56px);padding-bottom:56px;background:linear-gradient(180deg,#fff,var(--light-blue));text-align:center;position:relative;overflow:hidden}.page-hero .wrap{position:relative;z-index:2;max-width:780px}.page-hero h1{font-size:clamp(34px,5.2vw,54px);margin:14px 0 16px}.page-hero .divider{margin:0 auto 20px}.pf-blue{--frame:#a8d9ef}.pf-pink{--frame:#fedae7}.pf-lav{--frame:#c9b4f0}.pf-cream{--frame:#fef8f3;--frame-edge:#efe4d8}.post-hero{margin:30px 0 0;padding:4.2%;border-radius:min(46px,calc(6.3vw - 3px));background:var(--frame,var(--light-blue));box-shadow:0 18px 40px rgba(26,39,82,.16)}.post-hero img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:min(26px,calc(3.6vw - 1.7px))}.post-hero.pf-cream{box-shadow:inset 0 0 0 1px var(--frame-edge),0 18px 40px rgba(26,39,82,.16)}@media(max-width:640px){.post-hero{margin-top:22px}}.magnet-box{display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;background:var(--light-blue);border:2px dashed var(--blue);border-radius:22px;padding:20px 26px;margin:28px 0 6px}.magnet-box p{flex:1 1 280px;margin:0;font-size:15px;line-height:1.75;color:var(--text-body)}.magnet-box strong{font-family:'Baloo 2';font-size:16px;color:var(--navy)}.magnet-box .btn{flex:0 0 auto}.breadcrumb{font-family:'Baloo 2';font-size:13px;font-weight:700;color:#94a3b8;margin-bottom:8px}.breadcrumb a{text-decoration:none;color:#94a3b8}.breadcrumb a:hover{color:var(--blue)}</style>
+<link rel="preload" as="style" href="/assets/styles.css?v=fb874fd3" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/styles.css?v=fb874fd3"></noscript>
+<!-- AE:CRIT end -->
+<meta name="theme-color" content="#1A2752">
+<title>PET 寫作 Part 1 練習：必考 email（4 題＋範文逐句解析）｜埃森美語</title>
+<meta name="description" content="PET（B1 Preliminary for Schools）Writing Part 1「必考 email」免費線上練習：4 個原創題目，線上直接寫、自動算字數，附範文逐句解析與最常見的失分。埃森美語美籍持證教師編寫。">
+<link rel="canonical" href="https://americanenglish.com.tw/pet-writing-practice-part1/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PET 寫作 Part 1 練習：必考 email">
+<meta property="og:description" content="4 個原創題目，線上直接寫、自動算字數，附範文逐句解析。">
+<meta property="og:url" content="https://americanenglish.com.tw/pet-writing-practice-part1/">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/pet-writing-practice-part1/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/pet-writing-practice-part1/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"劍橋英檢","item":"https://americanenglish.com.tw/exams/"},{"@type":"ListItem","position":3,"name":"PET","item":"https://americanenglish.com.tw/pet-prep-guide/"},{"@type":"ListItem","position":4,"name":"PET 寫作 Part 1必考 email"}]}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body>
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo.jpg" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<div class="drawer" id="drawer"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></div>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="bg-deco"></div>
+  <div class="wrap">
+    <div class="breadcrumb"><a href="/">首頁</a> ／ <a href="/exams/">劍橋英檢</a> ／ <a href="/pet-prep-guide/">PET</a> ／ 寫作 Part 1</div>
+    <span class="eyebrow eyebrow-green">PET 免費線上練習 · 原創題目</span>
+    <h1>PET 寫作 Part 1<br>必考 email</h1>
+    <div class="divider"></div>
+    <p class="body">4 個原創題目（20 分・約 100 字）。直接在頁面上寫，字數即時計算，寫完再打開範文對照——每一句都標出它在為哪一個評分面向服務。</p>
+  </div>
+</section>
+
+<style>.exam-subnav{position:sticky;top:var(--header-h);z-index:90;background:#fff;border-bottom:2px solid rgba(26,39,82,.08);overflow-x:auto;-webkit-overflow-scrolling:touch}.exam-subnav .row{display:flex;align-items:stretch;max-width:1120px;margin:0 auto;padding:0 24px}.exam-subnav .tag{flex:none;display:flex;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;color:#fff;background:var(--blue);padding:10px 14px;border-radius:0 0 10px 10px;text-decoration:none}.exam-subnav a:not(.tag){flex:none;display:flex;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;color:#475569;text-decoration:none;padding:10px 13px;border-bottom:3px solid transparent;white-space:nowrap}.exam-subnav a:not(.tag):hover{color:var(--blue)}.exam-subnav a.on{color:var(--navy);border-bottom-color:var(--blue)}</style>
+<nav class="exam-subnav" aria-label="PET 專區導覽"><div class="row">
+<a class="tag" href="/exams/">劍橋英檢 PET</a>
+<a href="/pet-prep-guide/">總覽</a>
+<a href="/pet-prep-guide/#practice">線上練習</a>
+<a href="/b1-grammar-guide/">文法範圍</a>
+<a href="/pet-prep-guide/#vocab">單字表</a>
+<a href="/pet-speaking-practice/">口說練習</a>
+<a href="/cambridge-practice-tests/">官方題庫</a>
+<a href="/cambridge-exam-registration-taiwan/">報名資訊</a>
+</div></nav>
+
+<style>.prx-layout{display:grid;grid-template-columns:1fr 240px;gap:32px;align-items:start}@media(max-width:860px){.prx-layout{grid-template-columns:1fr}}.prx-nav{position:sticky;top:calc(var(--header-h) + 58px);background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:18px;padding:14px;box-shadow:0 6px 20px rgba(26,39,82,.06)}.prx-nav h3{font-size:15px;margin:2px 6px 10px}.prx-nav a{display:block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;text-decoration:none;color:#475569;padding:8px 10px;border-radius:10px}.prx-nav a:hover{background:var(--light-blue);color:var(--navy)}.prx-nav a.on{background:var(--blue);color:#fff}@media(max-width:860px){.prx-nav{position:static;display:flex;flex-wrap:wrap;gap:6px;padding:10px}.prx-nav h3{width:100%;margin:0 4px 4px}}.stimulus{background:#fff;border:2px solid rgba(26,39,82,.10);border-radius:18px;padding:22px 24px;margin:18px 0;box-shadow:0 8px 24px rgba(26,39,82,.06)}.stimulus h4{font-family:'Baloo 2',sans-serif;font-size:15px;color:var(--blue);margin:0 0 8px}.stimulus p{font-size:16px;line-height:1.85;color:#333c4d;margin:0 0 10px}.stimulus p:last-child{margin:0}</style>
+<style>
+.wtask{background:#fff;border:2px solid rgba(26,39,82,.10);border-radius:22px;padding:clamp(18px,3vw,28px);margin:22px 0;box-shadow:0 8px 24px rgba(26,39,82,.06)}
+.wtask-h{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.wtask-h .wn{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:var(--purple);border-radius:100px;padding:6px 15px}
+.wtask-h h3{font-size:21px;margin:0}
+.wprompt{background:#FFFDF5;border:2px solid rgba(255,200,40,.45);border-radius:16px;padding:18px 22px;font-size:15.5px;line-height:1.8;color:#3d4657}
+.wprompt p{margin:0 0 9px}.wprompt p:last-child{margin:0}
+.wprompt .wtitle{font-family:'Baloo 2',sans-serif;font-size:12.5px;letter-spacing:1.3px;text-transform:uppercase;color:#8a5f00;margin-bottom:9px}
+.wprompt .winput{background:#fff;border-left:4px solid rgba(255,200,40,.7);border-radius:8px;padding:12px 15px;margin:11px 0;white-space:pre-line;font-size:15px}
+.wnotes{margin:11px 0 0;padding-left:20px}
+.wnotes li{margin:4px 0}
+.wimgs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+@media(max-width:560px){.wimgs{grid-template-columns:1fr}}
+.wpad{margin-top:16px}
+.wpad textarea{width:100%;min-height:190px;font:inherit;font-size:16px;line-height:1.8;color:var(--navy);padding:15px 17px;border:2px solid #e6ebf2;border-radius:14px;resize:vertical;background:#fff}
+.wpad textarea:focus{outline:none;border-color:var(--blue)}
+.wmeta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:9px;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:13.5px;color:#8b9bb0}
+.wmeta .wc{background:#F1F6FB;border-radius:100px;padding:5px 14px;color:var(--navy)}
+.wmeta .wc.ok{background:rgba(6,199,85,.14);color:#04893f}
+.wmeta .wc.under{background:rgba(255,200,40,.20);color:#8a5f00}
+.wmeta .wc.over{background:rgba(240,153,123,.22);color:#b4552f}
+.wmeta .wsaved{font-size:12.5px}
+.wcheck{margin-top:18px;background:#F4FAFF;border-radius:16px;padding:16px 20px}
+.wcheck .wtitle{font-family:'Baloo 2',sans-serif;font-size:12.5px;letter-spacing:1.3px;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.wcheck label{display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.7;color:#3d4657;padding:6px 0;cursor:pointer}
+.wcheck input{margin-top:5px;accent-color:var(--green);flex:none}
+.wcheck label.done{color:#8b9bb0;text-decoration:line-through}
+.wreveal{margin-top:18px}
+.wmodel{border:2px dashed rgba(28,176,246,.4);border-radius:16px;padding:0;overflow:hidden}
+.wmodel summary{list-style:none;cursor:pointer;padding:15px 20px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:15px;color:var(--blue);display:flex;align-items:center;gap:9px;background:#F4FAFF}
+.wmodel summary::-webkit-details-marker{display:none}
+.wmodel summary::before{content:'▸';transition:transform .18s}
+.wmodel[open] summary::before{transform:rotate(90deg)}
+.wmodel .wbody{padding:16px 20px 20px}
+.wsent{padding:11px 0;border-bottom:1px dashed #eef2f7}
+.wsent:last-child{border-bottom:0}
+.wsent .wt{font-size:16.5px;line-height:1.7;color:var(--navy)}
+.wsent .wsc{display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:#fff;border-radius:6px;padding:3px 9px;margin-right:9px;vertical-align:2px}
+.wsent .wnote{font-size:14px;line-height:1.75;color:#7b8794;margin-top:6px;padding-left:12px;border-left:3px solid rgba(28,176,246,.25)}
+.werr{margin-top:16px;background:#FFF8F5;border:1px solid rgba(240,153,123,.38);border-radius:16px;padding:15px 19px}
+.werr .wtitle{font-family:'Baloo 2',sans-serif;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:#c96a48;margin-bottom:8px}
+.werr ul{margin:0;padding-left:20px}
+.werr li{font-size:14.5px;line-height:1.75;color:var(--text-body);margin:5px 0}
+.wbar{display:flex;flex-wrap:wrap;gap:11px;margin-top:14px}
+@media print{.wpad textarea{min-height:320px}.wmodel,.wbar,.wcheck{display:none!important}}
+</style>
+
+<section class="section" id="practice">
+  <div class="wrap prx-layout">
+    <div>
+      <div class="stimulus" style="background:var(--light-blue);border-style:dashed">
+        <h4>官方題型說明 Task format</h4>
+        <p>回一封朋友的 email，四個內容重點全部要寫到，還要有稱呼、署名與合適的語氣。這一題沒得選，一定要寫。這一題官方配分 <strong>20 分</strong>，字數要求 <strong>約 100 字</strong>。</p>
+        <p style="font-size:13.5px;color:#5a6577">題目說明依官方題型格式以英文呈現；以下題目與範文為<strong>埃森美語原創編寫</strong>，非劍橋官方試題或官方範文。</p>
+      </div>
+
+      <p class="body" style="font-size:14.5px;color:#8b9bb0">寫作沒辦法自動改分——所以這一頁的重點不是給你分數，是<strong>先自己寫一次</strong>再對照。草稿只存在你自己的瀏覽器裡，關掉頁面也還在，不會上傳。</p>
+
+      <article class="wtask" id="pet-writing-practice-part1-A">
+        <div class="wtask-h"><span class="wn">題目 1</span><h3>Club fundraising</h3></div>
+        <div class="wprompt"><div class="wtitle">Task 1</div><p>This is an email from your English friend, Daniel.<br>Write an email to Daniel.<br>In your email, remember to:<br>- say what your class sold<br>- say if the fundraising day was successful<br>- give Daniel one tip for his own fundraiser<br>- ask Daniel when his fundraiser is<br>Write about 100 words.</p><div class="winput">Hi!
+My cousin goes to a school near yours, and she told me your class had a big fundraising day last Saturday! That sounds like so much fun. What did you sell? I really hope it went well!
+Also, I'm helping to organise a small fundraiser at my school next month, so any tips would be great.
+Write soon,
+Daniel</div><ul class="wnotes"><li>say what your class sold</li><li>say if the fundraising day was successful</li><li>give Daniel one tip for his own fundraiser</li><li>ask Daniel when his fundraiser is</li></ul><p style="font-family:'Baloo 2',sans-serif;font-weight:700;color:#8a5f00">Write about 100 words.</p></div>
+        <div class="wpad">
+          <textarea data-w="pet-writing-practice-part1-A" data-lo="90" data-hi="120" placeholder="在這裡寫你的答案——寫完再往下看範文。"></textarea>
+          <div class="wmeta"><span class="wc" data-c="pet-writing-practice-part1-A">0 字</span>
+            <span>目標 約 100 字</span><span class="wsaved" data-s="pet-writing-practice-part1-A"></span></div>
+        </div>
+        <div class="wcheck"><div class="wtitle">交卷前先自己檢查</div><label><input type="checkbox">有沒有寫到「賣了什麼」「活動成不成功」「給一個建議」「問一個問題」這四點？</label><label><input type="checkbox">開頭有稱呼（Hi Daniel,）、結尾有署名嗎？</label><label><input type="checkbox">字數是否落在 90–120 字之間？</label><label><input type="checkbox">過去式動詞是否正確（especially sold, raised 這類不規則動詞）？</label><label><input type="checkbox">有沒有至少一句用 because/so 等連接詞寫出的複雜句？</label></div>
+        <details class="wmodel wreveal"><summary>看範文與逐句解析（100 字）</summary>
+          <div class="wbody"><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>Hi Daniel,</div><div class="wnote">以朋友的名字開頭稱呼，是 email 該有的格式，屬於「組織」看的基本結構。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>Thanks for your email; it's great to hear from you!</div><div class="wnote">先回應對方來信、語氣自然親切，讓這封信像在「對話」而不是硬邦邦地報告，這是「溝通達成」要看的地方。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>Our class sold bubble tea and handmade bookmarks at the fundraising day.</div><div class="wnote">直接、具體地回答第一個重點——賣了什麼——沒有寫得含糊籠統，「內容」滿分的關鍵就是具體。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>It was really successful because we sold everything before lunchtime and raised over eight thousand dollars for the animal shelter.</div><div class="wnote">清楚回答第二個重點——活動是否成功——並用數字和具體結果（賣光、募到多少錢）證明，讓讀者被「完整告知」。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>My tip for your fundraiser is to choose something cheap to make, so you can earn more money.</div><div class="wnote">直接給 Daniel 一個具體、可執行的建議（成本低才能賺更多），回答第三個重點，不是空泛的加油打氣。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#F0997B">Language</span>You could also ask a teacher for a table near the school gate because more people will see it there.</div><div class="wnote">用 because 子句說明原因，句子結構比簡單句複雜，展現「語言」評分要看的句型廣度，而不只是一堆短句。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>When is your fundraiser going to be?</div><div class="wnote">用正確的問句形式回答第四個重點——反問 Daniel 的活動時間——這是官方评分表明確要求的「詢問」功能。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>I can't wait to hear all about it!</div><div class="wnote">用一句表達期待的話收尾，讓讀者感覺這封信有溫度、有互動，而不是寫完四點就結束。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>Best wishes, Mia</div><div class="wnote">有署名，讓整封信首尾完整——這也對應到官方檢查表裡「有沒有稱呼和署名」這一項。</div></div><div class="werr"><div class="wtitle">最常見的失分</div><ul><li>只提到賣了什麼，卻忘記說明活動是否成功（第 2 點），導致 Content 漏掉一個重點。</li><li>沒有給 Daniel 具體的建議（第 3 點只寫『it will be good』這種空泛的話），內容不夠具體。</li><li>忘記在信末提出問題（第 4 點 ask Daniel when...），整封信少了「詢問」這個功能，Content 和 Communicative Achievement 都會被扣分。</li><li>時態混亂——描述已經發生的園遊會卻用現在式（例如寫成 'We sell bubble tea'），Language 會被扣分。</li></ul></div></div></details>
+        <div class="wbar"><button type="button" class="btn btn-outline" data-clear="pet-writing-practice-part1-A">清空重寫</button>
+          <button type="button" class="btn btn-outline" data-print="pet-writing-practice-part1-A">列印題目</button></div>
+      </article><article class="wtask" id="pet-writing-practice-part1-B">
+        <div class="wtask-h"><span class="wn">題目 2</span><h3>School trip planning</h3></div>
+        <div class="wprompt"><div class="wtitle">Task 1</div><p>This is an email from your English friend, Olivia.<br>Write an email to Olivia.<br>In your email, remember to:<br>- say which place your class chose for the school trip<br>- explain why your class chose that place<br>- say one thing you plan to do there<br>- ask Olivia about her last school trip<br>Write about 100 words.</p><div class="winput">Hi!
+How are you? My pen friend in Taipei told me that your class is planning a school trip and you finally chose a place! She said you were choosing between an old street with lots of shops and a science museum.
+Which place did you pick in the end? I'm really curious!
+Talk soon,
+Olivia</div><ul class="wnotes"><li>say which place your class chose</li><li>explain why your class chose that place</li><li>say one thing you plan to do there</li><li>ask Olivia about her last school trip</li></ul><p style="font-family:'Baloo 2',sans-serif;font-weight:700;color:#8a5f00">Write about 100 words.</p></div>
+        <div class="wpad">
+          <textarea data-w="pet-writing-practice-part1-B" data-lo="90" data-hi="120" placeholder="在這裡寫你的答案——寫完再往下看範文。"></textarea>
+          <div class="wmeta"><span class="wc" data-c="pet-writing-practice-part1-B">0 字</span>
+            <span>目標 約 100 字</span><span class="wsaved" data-s="pet-writing-practice-part1-B"></span></div>
+        </div>
+        <div class="wcheck"><div class="wtitle">交卷前先自己檢查</div><label><input type="checkbox">四個重點（選了哪裡、為什麼選、要做什麼、問 Olivia 的問題）是否都寫到？</label><label><input type="checkbox">有沒有清楚的原因子句（because...）支持你的選擇？</label><label><input type="checkbox">結尾的問句是否用了正確的問句形式（如 Where did...? 而不是直述句）？</label><label><input type="checkbox">字數是否落在 90–120 字之間？</label><label><input type="checkbox">專有名詞（地名、人名）大小寫是否正確？</label></div>
+        <details class="wmodel wreveal"><summary>看範文與逐句解析（99 字）</summary>
+          <div class="wbody"><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>Hi Olivia,</div><div class="wnote">稱呼對應朋友的名字，信件格式正確。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>It's lovely to hear from you, and yes, we finally decided!</div><div class="wnote">先回應對方的好奇心（you finally chose a place!），語氣自然，像在跟朋友聊天而不是條列報告。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>Our class chose Jiufen Old Street instead of the science museum.</div><div class="wnote">明確回答第一個重點——選了哪裡——並用 instead of 順帶交代另一個選項沒被選中，資訊完整。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#F0997B">Language</span>We picked it because most of us had never been there, and everyone loves trying new street food.</div><div class="wnote">用 because 子句加上並列子句，句子結構有深度，同時也帶到了第二個重點（為什麼選它）的原因說明。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>When we go, I'm planning to try the famous taro balls and take photos of the mountain views.</div><div class="wnote">具體回答第三個重點——打算做什麼——用了兩個具體的計畫（吃芋圓、拍照），不是空泛的『have fun』。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>It should be a really relaxing day out for the whole class.</div><div class="wnote">多加一句個人感想，讓文章不只是機械式回答四點，更像是真心在跟朋友分享期待。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>By the way, where did your class go on your last school trip, and did you enjoy it?</div><div class="wnote">用 By the way 這個轉折語自然切換話題，同時完成第四個重點——反問 Olivia 的問題。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>Please write back and tell me everything!</div><div class="wnote">用邀請對方回信的句子收尾，讓這封信讀起來像真正的雙向對話。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>Love, Amy</div><div class="wnote">有署名，首尾呼應完整。</div></div><div class="werr"><div class="wtitle">最常見的失分</div><ul><li>只回答『去哪裡』卻沒說明『為什麼選那裡』（第 2 點），Content 不完整。</li><li>原因寫得含糊，例如只寫『because it's fun』，沒有具體理由，無法完全說服讀者，Communicative Achievement 受影響。</li><li>信末問句寫成直述句（例如寫成 'Olivia's last school trip was fun.' 而不是問句），沒有真正達成『詢問』這個語言功能。</li><li>地名等專有名詞大小寫錯誤（如 jiufen 沒有大寫開頭），看起來不夠自然，會被視為 Language 的小失分點。</li></ul></div></div></details>
+        <div class="wbar"><button type="button" class="btn btn-outline" data-clear="pet-writing-practice-part1-B">清空重寫</button>
+          <button type="button" class="btn btn-outline" data-print="pet-writing-practice-part1-B">列印題目</button></div>
+      </article><article class="wtask" id="pet-writing-practice-part1-C">
+        <div class="wtask-h"><span class="wn">題目 3</span><h3>Choosing a class gift</h3></div>
+        <div class="wprompt"><div class="wtitle">Task 1</div><p>This is an email from your English friend, Jack.<br>Write an email to Jack.<br>In your email, remember to:<br>- say what gift your class chose for your teacher<br>- explain why your class chose that gift<br>- say how your class collected the money for it<br>- give Jack an idea for his own class's gift<br>Write about 100 words.</p><div class="winput">Hi!
+Guess what -- I heard your homeroom teacher is moving to a different school, so your class is buying her a leaving gift! What did you choose in the end?
+My class needs to buy a gift for our teacher too, but nobody can agree on anything! Any ideas would really help.
+From,
+Jack</div><ul class="wnotes"><li>say what gift your class chose</li><li>explain why your class chose that gift</li><li>say how your class collected the money for it</li><li>give Jack an idea for his own class's gift</li></ul><p style="font-family:'Baloo 2',sans-serif;font-weight:700;color:#8a5f00">Write about 100 words.</p></div>
+        <div class="wpad">
+          <textarea data-w="pet-writing-practice-part1-C" data-lo="90" data-hi="120" placeholder="在這裡寫你的答案——寫完再往下看範文。"></textarea>
+          <div class="wmeta"><span class="wc" data-c="pet-writing-practice-part1-C">0 字</span>
+            <span>目標 約 100 字</span><span class="wsaved" data-s="pet-writing-practice-part1-C"></span></div>
+        </div>
+        <div class="wcheck"><div class="wtitle">交卷前先自己檢查</div><label><input type="checkbox">禮物名稱、原因、收錢方式、給 Jack 的建議這四點是否都寫到？</label><label><input type="checkbox">建議句是否用了 could/maybe/why don't you 這類句型？</label><label><input type="checkbox">字數是否落在 90–120 字之間？</label><label><input type="checkbox">動詞時態（過去式描述班上做的事）是否一致？</label><label><input type="checkbox">有沒有稱呼和署名？</label></div>
+        <details class="wmodel wreveal"><summary>看範文與逐句解析（102 字）</summary>
+          <div class="wbody"><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>Hi Jack,</div><div class="wnote">稱呼對應朋友名字，格式正確。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>Thanks for your email; it's true that Ms. Chen is leaving, so we bought her a beautiful photo album.</div><div class="wnote">先確認對方聽到的消息屬實，再具體回答第一個重點——選了什麼禮物，資訊明確不含糊。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>We chose it because we filled it with photos and messages from every student in the class.</div><div class="wnote">具體說明第二個重點——為什麼選這個禮物——用細節（每個學生的照片和留言）讓理由有說服力。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#F0997B">Language</span>To collect the money, each of us gave fifty dollars, and our class leader kept it safe in an envelope.</div><div class="wnote">句首用不定詞片語 To collect the money 加上並列子句，句型比單純的簡單句複雜，同時也交代了第三個重點的做法。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>For your class, maybe you could try something similar, like a scrapbook or a small potted plant.</div><div class="wnote">直接給 Jack 一個具體、現成可用的點子（剪貼簿或小盆栽），回答第四個重點，用 maybe you could 這種建議句型語氣得體。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>Plants are cheap, and they remind teachers of their students for a long time.</div><div class="wnote">多加一句理由說服 Jack 這個建議值得參考，讓建議更有說服力，不只是丟一個點子就結束。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>I really hope your class can agree on something soon!</div><div class="wnote">用關心對方處境的話收尾，呼應朋友信裡『nobody can agree』的抱怨，顯示有認真讀對方的信。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>Good luck, Tom</div><div class="wnote">署名收尾，信件結構完整。</div></div><div class="werr"><div class="wtitle">最常見的失分</div><ul><li>禮物寫得太籠統（只寫『a nice gift』而沒有具體說是什麼），Content 細節不足。</li><li>忘記說明『怎麼收錢』（第 3 點），這是很多學生會漏掉的細節重點。</li><li>給 Jack 的建議只是重複自己班上的做法，卻沒有用 could/maybe 這類建議句型，語氣不像在給建議，Communicative Achievement 受影響。</li><li>金額或數字寫成不自然的格式（如 50$ 而不是 fifty dollars），不符合英文書寫習慣。</li></ul></div></div></details>
+        <div class="wbar"><button type="button" class="btn btn-outline" data-clear="pet-writing-practice-part1-C">清空重寫</button>
+          <button type="button" class="btn btn-outline" data-print="pet-writing-practice-part1-C">列印題目</button></div>
+      </article><article class="wtask" id="pet-writing-practice-part1-D">
+        <div class="wtask-h"><span class="wn">題目 4</span><h3>Studying for an exam (international pen friend)</h3></div>
+        <div class="wprompt"><div class="wtitle">Task 1</div><p>This is an email from your international pen friend, Sofia.<br>Write an email to Sofia.<br>In your email, remember to:<br>- say what method or app you are using to study English<br>- say if it is helpful and explain why<br>- give Sofia one study tip<br>- ask Sofia when her next exam is<br>Write about 100 words.</p><div class="winput">Hi!
+I remember you said you were studying hard for an English exam. How is it going? Have you found a good way to study, like an app or something else?
+I'm also getting ready for some exams here in Spain, so a study tip from you would be amazing!
+Lots of love,
+Sofia</div><ul class="wnotes"><li>say what method or app you are using to study English</li><li>say if it is helpful and explain why</li><li>give Sofia one study tip</li><li>ask Sofia when her next exam is</li></ul><p style="font-family:'Baloo 2',sans-serif;font-weight:700;color:#8a5f00">Write about 100 words.</p></div>
+        <div class="wpad">
+          <textarea data-w="pet-writing-practice-part1-D" data-lo="90" data-hi="120" placeholder="在這裡寫你的答案——寫完再往下看範文。"></textarea>
+          <div class="wmeta"><span class="wc" data-c="pet-writing-practice-part1-D">0 字</span>
+            <span>目標 約 100 字</span><span class="wsaved" data-s="pet-writing-practice-part1-D"></span></div>
+        </div>
+        <div class="wcheck"><div class="wtitle">交卷前先自己檢查</div><label><input type="checkbox">方法/app、是否有幫助＋原因、一個讀書技巧、問 Sofia 考試時間，這四點是否都寫到？</label><label><input type="checkbox">『有沒有幫助』是否有清楚的 because 原因子句？</label><label><input type="checkbox">字數是否落在 90–120 字之間？</label><label><input type="checkbox">有沒有稱呼和署名？</label><label><input type="checkbox">動詞時態前後是否一致？</label></div>
+        <details class="wmodel wreveal"><summary>看範文與逐句解析（105 字）</summary>
+          <div class="wbody"><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>Hi Sofia,</div><div class="wnote">稱呼對應朋友名字，格式正確。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>It's great to hear from you, and thanks for asking about my studying!</div><div class="wnote">先感謝對方的關心再回答問題，語氣友善自然，符合寫給朋友的信該有的口吻。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>At the moment, I'm using a vocabulary app every evening and writing new words in a small notebook.</div><div class="wnote">具體回答第一個重點——用什麼方法讀書——講出實際做法（app+筆記本），不是只寫『I study a lot』。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#F0997B">Language</span>It's really helpful because the app tests me on the same words again a few days later, so I don't forget them.</div><div class="wnote">用 because 加上 so 兩層子句解釋原因和結果，句子結構有深度，同時完整回答第二個重點。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>My tip for you is to study a little every day instead of studying for hours all at once.</div><div class="wnote">給 Sofia 一個具體、可執行的讀書技巧（少量多餐 vs. 一次讀很久），回答第三個重點。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#F0997B">Language</span>Short, regular practice always works better than one long session before the exam.</div><div class="wnote">用比較句型（works better than）進一步支持前一句的建議，展現語言廣度，不只是丟一句建議就結束。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#1CB0F6">Content</span>When is your next exam in Spain?</div><div class="wnote">用正確的問句反問 Sofia，完成第四個重點——詢問對方考試時間。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#CE82FF">Communicative</span>I hope your studying is going well too!</div><div class="wnote">用關心對方的話收尾，讓信件有來有往，而不是單方面回答問題。</div></div><div class="wsent"><div class="wt"><span class="wsc" style="background:#06C755">Organisation</span>Take care, Wei-Chen</div><div class="wnote">署名收尾，信件結構完整。</div></div><div class="werr"><div class="wtitle">最常見的失分</div><ul><li>只寫『I use an app』卻沒有講清楚是什麼類型的 app 或方法，Content 細節薄弱。</li><li>說明『是否有幫助』時沒有給理由（第 2 點），變成只有結論沒有解釋。</li><li>給的讀書技巧太籠統（如只寫『study hard』），不是具體、可執行的建議。</li><li>現在進行式與現在簡單式混用不一致（例如 I'm using... 又寫成 I use it every evening 兩種時態交錯），Language 會被扣分。</li></ul></div></div></details>
+        <div class="wbar"><button type="button" class="btn btn-outline" data-clear="pet-writing-practice-part1-D">清空重寫</button>
+          <button type="button" class="btn btn-outline" data-print="pet-writing-practice-part1-D">列印題目</button></div>
+      </article>
+    </div>
+
+    <aside class="prx-nav" aria-label="各 Part 練習">
+      <h3>PET 寫作 練習</h3>
+      <a href="/pet-writing-practice-part1/" class="on" aria-current="page">Part 1 必考 email</a>
+      <a href="/pet-writing-practice-part2/">Part 2 文章或故事（二選一）</a>
+      <a href="/cambridge-practice-tests/" style="border-top:2px dashed #e6ebf2;margin-top:6px;padding-top:10px">官方樣卷下載 →</a>
+    </aside>
+  </div>
+</section>
+
+<script>
+(function(){
+  var K='aeW:';
+  function count(s){ return (s.trim().match(/[A-Za-z0-9'’\-]+/g)||[]).length; }
+  document.querySelectorAll('textarea[data-w]').forEach(function(ta){
+    var id=ta.dataset.w, lo=+ta.dataset.lo, hi=+ta.dataset.hi;
+    var chip=document.querySelector('[data-c="'+id+'"]'), saved=document.querySelector('[data-s="'+id+'"]');
+    try{ var v=localStorage.getItem(K+id); if(v){ ta.value=v; } }catch(e){}
+    function upd(){
+      var n=count(ta.value);
+      chip.textContent=n+' 字';
+      chip.className='wc '+(n===0?'':(n<lo?'under':(n>hi?'over':'ok')));
+    }
+    var t;
+    ta.addEventListener('input',function(){
+      upd(); clearTimeout(t);
+      t=setTimeout(function(){
+        try{ localStorage.setItem(K+id,ta.value); saved.textContent='草稿已存在這台裝置'; }catch(e){}
+      },600);
+    });
+    upd();
+  });
+  document.querySelectorAll('[data-clear]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var id=b.dataset.clear, ta=document.querySelector('textarea[data-w="'+id+'"]');
+      if(!ta.value || confirm('確定要清空這一題的草稿嗎？')){
+        ta.value=''; try{ localStorage.removeItem(K+id); }catch(e){}
+        ta.dispatchEvent(new Event('input'));
+        var s=document.querySelector('[data-s="'+id+'"]'); if(s)s.textContent='';
+      }
+    });
+  });
+  document.querySelectorAll('[data-print]').forEach(function(b){
+    b.addEventListener('click',function(){ window.print(); });
+  });
+  document.querySelectorAll('.wcheck label').forEach(function(l){
+    var cb=l.querySelector('input');
+    cb.addEventListener('change',function(){ l.classList.toggle('done',cb.checked); });
+  });
+})();
+</script>
+
+<section class="section bg-soft">
+  <div class="wrap center stack">
+    <span class="eyebrow eyebrow-green">練習之後</span>
+    <h2>寫作是唯一<em>需要有人改</em>的一卷</h2>
+    <div class="divider"></div>
+    <p class="body" style="max-width:680px">範文能告訴你「好的長什麼樣子」，但沒辦法告訴你「你自己寫的哪裡不對」——這兩件事差很遠。同一個錯誤重複二十次卻沒人指出來，是自學寫作最常見的結局。如果是文法拖累的，可以先對照 <a href="/b1-grammar-guide/">PET 文法範圍逐項教學</a>；想要有人真的批改，我們的課每週都在做這件事。</p>
+    <a class="btn btn-primary" href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 預約免費寫作診斷</a>
+  </div>
+</section>
+
+</main>
+<script src="/assets/app.js?v=11"></script>
+</body>
+</html>
