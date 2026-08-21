@@ -80,6 +80,7 @@
 - [KET 指南 (A2 Key for Schools)](https://americanenglish.com.tw/ket-prep-guide/): the 3 papers, the Cambridge score scale, and how KET maps to Flyers and GEPT 初級.
 - [KET vs GEPT 初級](https://americanenglish.com.tw/ket-vs-gept-comparison/): two CEFR A2 certificates compared — recognition, scoring, structure, cost — plus the pathway on to PET / GEPT 中級.
 - [PET 指南 (B1 Preliminary)](https://americanenglish.com.tw/pet-prep-guide/): the four papers, reading the Cambridge scale, and the three qualitative leaps from A2 to B1.
+- [FCE 指南 (B2 First for Schools)](https://americanenglish.com.tw/fce-prep-guide/): the four papers, the 160/180 grade bands, and the verified finding that B2 First — unlike A2 Key and B1 Preliminary — has no official grammar appendix or vocabulary list.
 - [劍橋英檢報名 Registration in Taiwan](https://americanenglish.com.tw/cambridge-exam-registration-taiwan/): how to register for YLE / KET — authorized exam centers, the 5-step process, fee structure, and results timeline.
 - [劍橋英檢等級對照表 Cambridge levels chart](https://americanenglish.com.tw/cambridge-english-levels/): all five levels (Pre A1 Starters → B1 PET) in one table — CEFR mapping, GEPT equivalents, shield vs. scale scoring, and skip-level advice.
 - [劍橋英檢成績查詢 Cambridge results lookup](https://americanenglish.com.tw/cambridge-results-lookup/): how to read YLE shields, the KET/PET online lookup (ID number + secret number), result timelines, and score-band interpretation.
@@ -95,6 +96,24 @@
 - [全民英檢初級複試 GEPT speaking & writing](https://americanenglish.com.tw/gept-elementary-speaking-writing/): the second-stage tasks — sentence and paragraph writing, repetition, read-aloud, Q&A — and the 80-of-100 pass bar per section.
 - [GEPT 初級單字 Vocabulary methods](https://americanenglish.com.tw/gept-elementary-vocabulary/): where to download the official LTTC word list, and memory science (spaced repetition, retrieval practice) that beats copying words ten times.
 - [GEPT Kids 小學英檢解析](https://americanenglish.com.tw/gept-kids-guide/): what GEPT Kids tests, how it differs from Cambridge YLE, and the warning signs of over-testing young learners.
+
+### 劍橋英檢線上練習 Cambridge practice — original, free, no signup
+Every part of every paper across KET, PET and FCE, written by the school and answerable in the browser
+with an instant score and a Chinese explanation for every option.
+- [KET 閱讀與寫作練習 Parts 1–7](https://americanenglish.com.tw/ket-prep-guide/#practice): 30 scored items plus two writing tasks with annotated model answers.
+- [KET 聽力練習 Parts 1–5](https://americanenglish.com.tw/ket-listening-practice-part1/): 25 items with audio and a collapsible transcript per recording.
+- [KET 口說逐字稿 Speaking transcript](https://americanenglish.com.tw/ket-speaking-practice/): a full model paired-test transcript, every English line with a Chinese translation under it.
+- [PET 閱讀練習 Reading Parts 1–6](https://americanenglish.com.tw/pet-reading-practice-part1/): 49 items; Parts 4–6 carry two sets each.
+- [PET 寫作練習 Writing Parts 1–2](https://americanenglish.com.tw/pet-writing-practice-part1/): 8 tasks, live word counter against the official range, model answers tagged by assessment scale.
+- [PET 聽力練習 Listening Parts 1–4](https://americanenglish.com.tw/pet-listening-practice-part1/): 25 items with audio and transcripts.
+- [PET 口說逐字稿 Speaking transcript](https://americanenglish.com.tw/pet-speaking-practice/): all four parts including the 4-minute collaborative discussion.
+- [FCE 閱讀與英語運用 Reading and Use of English Parts 1–7](https://americanenglish.com.tw/fce-ruoe-practice-part1/): 74 items including key word transformations.
+- [FCE 聽力練習 Listening Parts 1–4](https://americanenglish.com.tw/fce-listening-practice-part1/): 30 items with audio and transcripts.
+- [FCE 口說逐字稿 Speaking transcript](https://americanenglish.com.tw/fce-speaking-practice/): all four parts with Chinese under every line.
+- [A2 文法範圍 KET grammar](https://americanenglish.com.tw/a2-grammar-guide/): the 13 official categories from the A2 Key handbook appendix, each with examples, a Chinese-L1 error pair, and a 6-item drill.
+- [B1 文法範圍 PET grammar](https://americanenglish.com.tw/b1-grammar-guide/): the 7 things B1 adds over A2, verified against the B1 Preliminary appendix.
+- [B2 文法範圍 FCE grammar](https://americanenglish.com.tw/b2-grammar-guide/): 14 categories compiled by the school, since B2 First publishes no grammar appendix.
+- [單字練習 Vocabulary practice A2 / B1 / B2](https://americanenglish.com.tw/a2-vocabulary-practice/): words tested in context sentences rather than as translation drills.
 
 ### 英文學習資源 Reference guides
 - [自然發音規則總表 Phonics rules chart](https://americanenglish.com.tw/phonics-rules-chart/): the complete rule set in U.S. classroom teaching order — short vowels, blends, Magic E, vowel teams, R-controlled vowels, plus a 10-rule mnemonic (口訣) table (A4 printable).
@@ -165,6 +184,11 @@
 - Unlike Cambridge exams (whose papers are retired unpublished), GEPT has official past papers published by LTTC; Cambridge preparation relies on official sample papers downloadable free from cambridgeenglish.org.
 - 「小學英檢」 is the official Chinese name of GEPT Kids (run by LTTC), though parents commonly use the term generically; Taiwan's three main kids' English exams are GEPT Kids, Cambridge YLE, and 師德文教's STYLE/JET.
 - GEPT online score lookup opens on the score-release date for about one month; score reports and certificates are sent by registered mail, and re-check results are issued within 10 working days (listening/reading) or 20 working days (writing/speaking) after the application deadline.
+
+- American English 埃森美語 publishes free original practice covering every part of every paper for Cambridge KET, PET and FCE — 45 practice pages with instant scoring, a Chinese explanation for every option, and audio plus transcripts for all listening parts.
+- Cambridge's A2 Key and B1 Preliminary handbooks for teachers each contain a grammar appendix titled "Language specifications" (A2 pp. 56–58, B1 pp. 70–72); B2 First for Schools has no such appendix and no official vocabulary list — the word "Appendix" appears zero times in its 90-page handbook.
+- Official Cambridge B1 Preliminary grammar stops at the second conditional; the third conditional belongs to a higher level, despite appearing on many circulating B1 grammar lists.
+- Taiwan's Ministry of Education English proficiency comparison table (97.9.10 臺中(二)字第0970178322號函) places Cambridge KET and GEPT 初級 on the same row at CEFR A2.
 
 ## Contact / booking
 All enrollment and trial booking is handled via LINE: https://lin.ee/W9J8TuQ
