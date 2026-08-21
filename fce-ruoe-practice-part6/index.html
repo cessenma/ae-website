@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<style id="crit">:root{--navy:#1A2752;--blue:#1CB0F6;--blue-dk:#1391cc;--green:#06C755;--green-dk:#04a046;--yellow:#FFC828;--yellow-dk:#e0a800;--purple:#CE82FF;--purple-dk:#a94fe0;--coral:#F0997B;--light-blue:#DDF4FF;--text-body:#4b5563;--card-shadow:0 12px 40px rgba(26,39,82,.10);--header-h:64px;}*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px)}body{font-family:'DM Sans',-apple-system,'PingFang TC','Microsoft JhengHei',sans-serif;background:#fff;color:var(--navy);line-height:1.6;overflow-x:hidden}a{color:inherit}img{display:block;max-width:100%}:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}h1,h2,h3{font-family:'DM Serif Display',serif;font-weight:400;color:var(--navy);letter-spacing:-.4px;line-height:1.08}h1{font-size:clamp(40px,6.4vw,66px)}h2{font-size:clamp(30px,4.6vw,48px)}h3{font-size:22px}.rounded{font-family:'Baloo 2',sans-serif;font-weight:800}em{font-style:italic;color:var(--blue)}.bg-navy h2,.bg-navy h3{color:#fff}p.body{font-size:clamp(15px,1.6vw,17px);line-height:1.8;color:var(--text-body)}.bg-navy p.body{color:rgba(255,255,255,.74)}.eyebrow{display:inline-block;font-family:'Baloo 2',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--blue);background:rgba(28,176,246,.12);padding:7px 16px;border-radius:100px}.eyebrow-green{color:#067033;background:rgba(6,199,85,.12)}.eyebrow-yellow{color:#8a5f00;background:rgba(255,200,40,.18)}.divider{width:48px;height:4px;background:linear-gradient(90deg,var(--blue),var(--purple));border-radius:4px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'Baloo 2',sans-serif;font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.5px;padding:14px 30px;border-radius:16px;cursor:pointer;border:none;text-transform:uppercase;transition:transform .08s ease,box-shadow .08s ease,filter .15s;min-height:50px;position:relative;top:0}.btn-primary{background:var(--green);color:#fff;box-shadow:0 5px 0 var(--green-dk),0 10px 18px rgba(6,199,85,.32)}.btn-blue{background:var(--blue);color:#fff;box-shadow:0 5px 0 var(--blue-dk),0 10px 18px rgba(28,176,246,.32)}.btn-yellow{background:var(--yellow);color:var(--navy);box-shadow:0 5px 0 var(--yellow-dk),0 10px 18px rgba(255,200,40,.32)}.btn-coral{background:var(--coral);color:#fff;box-shadow:0 5px 0 #d97a5c,0 10px 18px rgba(240,153,123,.34)}.btn-pf-blue{background:#a8d8f0;color:var(--navy);box-shadow:0 5px 0 #80bfe0,0 10px 18px rgba(168,216,240,.45)}.btn-pf-cream{background:#fff8f3;color:var(--navy);border:1px solid #efe4d8;box-shadow:0 5px 0 #e6dbd0,0 10px 18px rgba(26,39,82,.08)}.btn-pf-pink{background:#ffdae6;color:var(--navy);box-shadow:0 5px 0 #f0b0c8,0 10px 18px rgba(255,218,230,.5)}.btn:hover{filter:brightness(1.04)}.btn:active{top:5px;box-shadow:0 0 0 var(--green-dk)}.btn-blue:active{box-shadow:0 0 0 var(--blue-dk)}.btn-yellow:active{box-shadow:0 0 0 var(--yellow-dk)}.btn-coral:active{box-shadow:0 0 0 #d97a5c}.btn-pf-blue:active{box-shadow:0 0 0 #80bfe0}.btn-pf-cream:active{box-shadow:0 0 0 #e6dbd0}.btn-pf-pink:active{box-shadow:0 0 0 #f0b0c8}.btn-outline{background:#fff;color:var(--navy);border:2px solid #e2e8f0;box-shadow:0 4px 0 #e2e8f0}.btn-outline:active{top:4px;box-shadow:0 0 0 #e2e8f0}.btn svg{width:20px;height:20px}.btn-line svg{fill:currentColor}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}.section{padding:clamp(60px,8vw,104px) 0;position:relative}.bg-blue{background:var(--light-blue)}.bg-navy{background:var(--navy)}.bg-soft{background:#F4FAFF}.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center}.split.reverse>.media{order:2}@media(max-width:860px){.split{grid-template-columns:1fr}.split.reverse>.media{order:0}.split .stack{align-items:flex-end;text-align:right}.split .stack .divider{margin-left:auto;margin-right:0}.split.reverse .stack{align-items:flex-start;text-align:left}.split.reverse .stack .divider{margin-left:0;margin-right:auto}.hero .stack,#location .stack{align-items:center;text-align:center}.hero .stack .divider,#location .stack .divider{margin-left:auto;margin-right:auto}.hero .stack .hero-cta,.hero .stack .hero-badges{justify-content:center}.hero .stack p.body{margin-left:auto;margin-right:auto}}@media(min-width:861px){.section:not(#location) .split:not(.reverse) .stack{align-items:flex-end;text-align:right}.section:not(#location) .split:not(.reverse) .stack .divider{margin-left:auto;margin-right:0}}.stack{display:flex;flex-direction:column;align-items:flex-start;gap:16px}.center{text-align:center;align-items:center;margin:0 auto;max-width:700px}.progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--green),var(--blue),var(--purple));z-index:200;transition:width .1s linear}.rk{display:inline-block;width:26px;height:26px;color:var(--blue);animation:wiggle 3.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.rk svg{width:100%;height:100%;display:block}header.site-header{position:fixed;top:0;left:0;right:0;z-index:150;height:var(--header-h);background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(26,39,82,.06);transition:box-shadow .25s}header.site-header.scrolled{box-shadow:0 4px 22px rgba(26,39,82,.09)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{font-family:'Baloo 2',sans-serif;font-size:21px;font-weight:800;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:8px}.brand b{color:var(--blue);font-weight:800}.brand-logo{width:38px;height:38px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(26,39,82,.18)}.nav-links{display:flex;align-items:center;gap:26px}.nav-links a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:15px;font-weight:700;color:#475569;text-decoration:none;transition:color .15s}.nav-links a:not(.btn):hover,.nav-links a.active{color:var(--blue)}.nav-links a.active{position:relative}.nav-links a.active::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:3px;border-radius:3px;background:var(--blue)}.nav-cta{padding:9px 20px;font-size:14px;min-height:42px}.hamburger{display:none;width:46px;height:46px;border:none;background:transparent;cursor:pointer;flex-direction:column;justify-content:center;gap:5px;align-items:center}.hamburger span{width:24px;height:3px;background:var(--navy);border-radius:3px;transition:transform .3s,opacity .2s}body.menu-open .hamburger span:nth-child(1){transform:translateY(8px) rotate(45deg)}body.menu-open .hamburger span:nth-child(2){opacity:0}body.menu-open .hamburger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.drawer{position:fixed;inset:var(--header-h) 0 0 0;z-index:140;background:rgba(255,255,255,.98);backdrop-filter:blur(8px);display:flex;flex-direction:column;gap:4px;padding:24px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}body.menu-open .drawer{opacity:1;transform:none;pointer-events:auto}.drawer a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:700;color:var(--navy);text-decoration:none;padding:15px 8px;border-bottom:1px solid rgba(26,39,82,.07)}.drawer .btn{margin-top:18px}@media(max-width:860px){.nav-links{display:none}.hamburger{display:flex}}.bg-deco{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}.star{position:absolute;animation:twinkle 3s ease-in-out infinite}@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:.9;transform:scale(1.15)}}.hero{padding-top:calc(var(--header-h) + 40px);padding-bottom:60px;background:linear-gradient(180deg,#fff 0%,var(--light-blue) 100%);position:relative;overflow:hidden}.hero .wrap{position:relative;z-index:2}.hero-badges{display:flex;flex-wrap:wrap;gap:10px}.chip{display:inline-flex;align-items:center;gap:7px;font-family:'Baloo 2',sans-serif;font-size:14px;font-weight:700;color:var(--navy);background:#fff;border:2px solid rgba(26,39,82,.08);padding:8px 15px;border-radius:100px;box-shadow:0 3px 0 rgba(26,39,82,.06)}.chip .dot{width:9px;height:9px;border-radius:50%;background:var(--green);animation:blink 1.6s infinite}@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}.scene{position:relative;width:100%;max-width:440px;margin:0 auto;aspect-ratio:1}.planet{position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 36% 30%,#bfe7ff,var(--blue));box-shadow:inset -18px -18px 40px rgba(26,39,82,.25),0 30px 70px rgba(28,176,246,.35);animation:spin 26s linear infinite}.planet::before{content:'';position:absolute;width:34%;height:18%;border-radius:50%;background:rgba(255,255,255,.35);top:22%;left:20%;filter:blur(2px)}.planet::after{content:'';position:absolute;width:24%;height:12%;border-radius:50%;background:rgba(26,39,82,.18);bottom:24%;right:22%}.ring{position:absolute;left:50%;top:54%;width:108%;height:46%;transform:translate(-50%,-50%) rotate(-18deg);border:6px solid rgba(255,200,40,.55);border-radius:50%;animation:spin 18s linear infinite reverse}.rocket{position:absolute;left:58%;top:14%;width:120px;animation:floaty 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center;z-index:3;filter:drop-shadow(0 12px 18px rgba(26,39,82,.25))}.flame{transform-box:fill-box;transform-origin:50% 0%;animation:flame .6s ease-in-out infinite alternate}.s-star{position:absolute;animation:floaty 5s ease-in-out infinite}@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-18px) rotate(4deg)}}@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes flame{0%{transform:scaleY(.8) scaleX(1)}100%{transform:scaleY(1.15) scaleX(.9)}}@keyframes wiggle{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}.count-orb{position:absolute;left:6%;top:6%;background:#fff;border-radius:20px;padding:10px 16px;box-shadow:var(--card-shadow);font-family:'Baloo 2';font-weight:800;display:flex;align-items:center;gap:9px;font-size:15px;z-index:4;animation:pop-bob 4s ease-in-out infinite}.count-orb.b2{left:auto;right:2%;top:auto;bottom:14%;animation-delay:1.5s}.count-orb .big{font-family:'DM Serif Display';font-size:26px;color:var(--blue)}@keyframes pop-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}.page-hero{padding-top:calc(var(--header-h) + 56px);padding-bottom:56px;background:linear-gradient(180deg,#fff,var(--light-blue));text-align:center;position:relative;overflow:hidden}.page-hero .wrap{position:relative;z-index:2;max-width:780px}.page-hero h1{font-size:clamp(34px,5.2vw,54px);margin:14px 0 16px}.page-hero .divider{margin:0 auto 20px}.pf-blue{--frame:#a8d9ef}.pf-pink{--frame:#fedae7}.pf-lav{--frame:#c9b4f0}.pf-cream{--frame:#fef8f3;--frame-edge:#efe4d8}.post-hero{margin:30px 0 0;padding:4.2%;border-radius:min(46px,calc(6.3vw - 3px));background:var(--frame,var(--light-blue));box-shadow:0 18px 40px rgba(26,39,82,.16)}.post-hero img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:min(26px,calc(3.6vw - 1.7px))}.post-hero.pf-cream{box-shadow:inset 0 0 0 1px var(--frame-edge),0 18px 40px rgba(26,39,82,.16)}@media(max-width:640px){.post-hero{margin-top:22px}}.magnet-box{display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;background:var(--light-blue);border:2px dashed var(--blue);border-radius:22px;padding:20px 26px;margin:28px 0 6px}.magnet-box p{flex:1 1 280px;margin:0;font-size:15px;line-height:1.75;color:var(--text-body)}.magnet-box strong{font-family:'Baloo 2';font-size:16px;color:var(--navy)}.magnet-box .btn{flex:0 0 auto}.breadcrumb{font-family:'Baloo 2';font-size:13px;font-weight:700;color:#94a3b8;margin-bottom:8px}.breadcrumb a{text-decoration:none;color:#94a3b8}.breadcrumb a:hover{color:var(--blue)}</style>
+<link rel="preload" as="style" href="/assets/styles.css?v=fb874fd3" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/styles.css?v=fb874fd3"></noscript>
+<!-- AE:CRIT end -->
+<meta name="theme-color" content="#1A2752">
+<title>FCE 閱讀與英語運用 Part 6 練習：文章填句（12 題＋中文解析）｜埃森美語</title>
+<meta name="description" content="FCE（B2 First for Schools）Reading and Use of English Part 6「文章填句」免費線上練習：12 題原創題目，依官方題型格式編寫，做完立刻對答案、每一題都有中文解析。埃森美語美籍持證教師編寫。">
+<link rel="canonical" href="https://americanenglish.com.tw/fce-ruoe-practice-part6/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FCE 閱讀與英語運用 Part 6 練習：文章填句">
+<meta property="og:description" content="12 題原創題目＋中文解析，依官方題型格式編寫。">
+<meta property="og:url" content="https://americanenglish.com.tw/fce-ruoe-practice-part6/">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/fce-ruoe-practice-part6/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/fce-ruoe-practice-part6/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"劍橋英檢","item":"https://americanenglish.com.tw/exams/"},{"@type":"ListItem","position":3,"name":"FCE","item":"https://americanenglish.com.tw/fce-prep-guide/"},{"@type":"ListItem","position":4,"name":"FCE 閱讀與英語運用 Part 6文章填句"}]}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body>
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo.jpg" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<div class="drawer" id="drawer"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></div>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="bg-deco"></div>
+  <div class="wrap">
+    <div class="breadcrumb"><a href="/">首頁</a> ／ <a href="/exams/">劍橋英檢</a> ／ <a href="/fce-prep-guide/">FCE</a> ／ Part 6 練習</div>
+    <span class="eyebrow">FCE 免費線上練習 · 原創題目</span>
+    <h1>FCE 閱讀與英語運用 Part 6<br>文章填句</h1>
+    <div class="divider"></div>
+    <p class="body">本頁共 2 組練習、12 題（滿分 24 分）。題目為埃森美語原創，非劍橋官方試題；做完可對答案、看每一題的中文解析。</p>
+  </div>
+</section>
+
+<style>.exam-subnav{position:sticky;top:var(--header-h);z-index:90;background:#fff;border-bottom:2px solid rgba(26,39,82,.08);overflow-x:auto;-webkit-overflow-scrolling:touch}.exam-subnav .row{display:flex;align-items:stretch;max-width:1120px;margin:0 auto;padding:0 24px}.exam-subnav .tag{flex:none;display:flex;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;color:#fff;background:var(--blue);padding:10px 14px;border-radius:0 0 10px 10px;text-decoration:none}.exam-subnav a:not(.tag){flex:none;display:flex;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;color:#475569;text-decoration:none;padding:10px 13px;border-bottom:3px solid transparent;white-space:nowrap}.exam-subnav a:not(.tag):hover{color:var(--blue)}.exam-subnav a.on{color:var(--navy);border-bottom-color:var(--blue)}</style>
+<nav class="exam-subnav" aria-label="FCE 專區導覽"><div class="row">
+<a class="tag" href="/exams/">劍橋英檢 FCE</a>
+<a href="/fce-prep-guide/">總覽</a>
+<a href="/fce-prep-guide/#papers">考什麼</a>
+<a href="/fce-prep-guide/#scores">分數與證書</a>
+<a href="/b2-grammar-guide/">文法範圍</a>
+<a href="/fce-prep-guide/#vocab">單字範圍</a>
+<a class="on" href="/fce-ruoe-practice-part6/" aria-current="page">線上練習</a>
+<a href="/cambridge-practice-tests/">官方題庫</a>
+<a href="/cambridge-exam-registration-taiwan/">報名資訊</a>
+</div></nav>
+
+<style>
+.prx-layout{display:grid;grid-template-columns:1fr 240px;gap:32px;align-items:start}
+@media(max-width:860px){.prx-layout{grid-template-columns:1fr}}
+.prx-nav{position:sticky;top:calc(var(--header-h) + 58px);background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:18px;padding:14px;box-shadow:0 6px 20px rgba(26,39,82,.06)}
+.prx-nav h3{font-size:15px;margin:2px 6px 10px}
+.prx-nav a,.prx-nav span.dis{display:block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;text-decoration:none;color:#475569;padding:8px 10px;border-radius:10px}
+.prx-nav a:hover{background:var(--light-blue);color:var(--navy)}
+.prx-nav a.on{background:var(--blue);color:#fff}
+.prx-nav span.dis{color:#b6bfcb;cursor:default}
+.prx-nav span.dis em{font-style:normal;font-size:11px;background:#eef2f7;border-radius:6px;padding:1px 6px;margin-left:6px}
+@media(max-width:860px){.prx-nav{position:static;display:flex;flex-wrap:wrap;gap:6px;padding:10px}.prx-nav h3{width:100%;margin:0 4px 4px}.prx-nav a,.prx-nav span.dis{padding:7px 10px}}
+.stimulus{background:#fff;border:2px solid rgba(26,39,82,.10);border-radius:18px;padding:22px 24px;margin:18px 0;box-shadow:0 8px 24px rgba(26,39,82,.06)}
+.stimulus h4{font-family:'Baloo 2',sans-serif;font-size:15px;color:var(--blue);margin:0 0 8px}
+.stimulus p{font-size:16px;line-height:1.85;color:#333c4d;margin:0 0 10px}
+.stimulus p:last-child{margin:0}
+.stimulus .gapnum{display:inline-block;min-width:34px;text-align:center;font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--blue);background:var(--light-blue);border-radius:8px;padding:0 6px}
+.prx-item{background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:16px;padding:16px 18px;margin:0 0 14px}
+.prx-item legend,.prx-item .qh{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:16px;color:var(--navy);padding:0 4px}
+.prx-item .qtext{font-size:16px;color:#333c4d;margin:6px 0 10px;line-height:1.7}
+.prx-opts{display:flex;flex-direction:column;gap:8px;border:0;margin:0;padding:0}
+.prx-opts.lettersonly{flex-direction:row;flex-wrap:wrap}
+.prx-opts.lettersonly .prx-opt{min-width:64px;justify-content:center}
+.prx-opt{display:flex;gap:10px;align-items:flex-start;border:2px solid #e6ebf2;border-radius:12px;padding:10px 12px;cursor:pointer;transition:border-color .12s,background .12s;font-size:15.5px;line-height:1.6}
+.prx-opt:hover{border-color:var(--blue)}
+.prx-opt input{margin-top:4px;accent-color:var(--blue);flex:none}
+.prx-opt.sel{border-color:var(--blue);background:var(--light-blue)}
+.prx-opt.right{border-color:var(--green);background:rgba(6,199,85,.08)}
+.prx-opt.wrong{border-color:#e5484d;background:rgba(229,72,77,.07)}
+.prx-gapin{font:inherit;font-size:16px;padding:8px 12px;border:2px solid #e6ebf2;border-radius:10px;width:180px;max-width:60vw}
+.prx-gapin.wide{width:340px}
+.prx-gapin.right{border-color:var(--green);background:rgba(6,199,85,.07)}
+.prx-gapin.wrong{border-color:#e5484d;background:rgba(229,72,77,.06)}
+.prx-src{font-size:15.5px;line-height:1.7;color:#5a6577;background:#F4FAFF;border-radius:10px;padding:9px 12px;margin:0 0 10px}
+.prx-key{display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px;letter-spacing:1.5px;color:#fff;background:var(--purple);border-radius:8px;padding:4px 11px;margin:0 0 8px}
+.prx-stem{font-size:16px;line-height:1.9;color:var(--navy);margin:0 0 8px}
+.prx-why{display:none;margin-top:10px;border-top:2px dashed #e6ebf2;padding-top:10px;font-size:14.5px;line-height:1.75;color:#4b5563}
+.prx-why b{color:var(--navy)}
+.show-why .prx-why{display:block}
+.prx-mark{font-family:'Baloo 2',sans-serif;font-weight:800;margin-left:8px}
+.prx-mark.ok{color:var(--green)} .prx-mark.no{color:#e5484d}
+.prx-bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:20px 0 8px}
+.prx-score{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:20px;color:var(--navy);background:var(--light-blue);border-radius:14px;padding:10px 18px;display:none}
+.prx-score.show{display:inline-block}
+.prx-note{font-size:13.5px;color:#8a94a3;margin-top:10px}
+.prx-set{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px;letter-spacing:1.6px;text-transform:uppercase;color:var(--blue);background:rgba(28,176,246,.12);border-radius:100px;padding:7px 16px;display:inline-block;margin:34px 0 0}
+@media print{
+  header.site-header,.drawer,.exam-subnav,.prx-nav,.prx-bar,.prx-score,.magnet-box,.prx-why,footer,.faq,.cta-box{display:none!important}
+  .page-hero{padding-top:10px;background:#fff}
+  .prx-item,.stimulus{border:1px solid #999;box-shadow:none;break-inside:avoid}
+  body{background:#fff}
+}
+</style>
+
+<section class="section" id="practice">
+  <div class="wrap prx-layout">
+    <div>
+      <div class="stimulus" style="background:var(--light-blue);border-style:dashed">
+        <h4>官方題型說明 Task format</h4>
+        <p>文章被抽掉六個句子，從七個選項裡選回去，一個是干擾。靠代名詞、指示詞與邏輯連接判斷，不能只看主題像不像。官方考卷中為 <strong>第 37–42 題</strong>，每題 2 分。</p>
+        <p style="font-size:13.5px;color:#5a6577">題目說明（rubric）依照官方題型格式以英文呈現；以下練習題為<strong>埃森美語原創編寫</strong>，用於熟悉題型，非劍橋官方試題。官方免費樣卷：<a href="https://www.cambridgeenglish.org/exams-and-tests/first-for-schools/preparation/" target="_blank" rel="noopener">cambridgeenglish.org → B2 First for Schools preparation</a>。</p>
+      </div>
+
+      <p class="body" style="font-style:italic">Six sentences have been removed from the article. Choose from the sentences A–G the one which fits each gap. There is one extra sentence you do not need to use.</p>
+
+      <div class="prx-set">練習 A　（第 1 組，共 2 組）</div>
+      <div class="stimulus"><h4>Flying Blind, Seeing Everything</h4><p>Most people who watch Aiden Cole's races assume, understandably, that he is looking up at the small aircraft buzzing between the trees. He is not. He is looking down at a screen strapped to his face, seeing exactly what his drone sees, banking hard around a tree trunk at nearly 120 kilometres an hour while the rest of us would still be finding the tree. <span class="gap">[1]</span> This is FPV &mdash; first-person-view &mdash; drone racing, and Aiden, at fourteen, is ranked second in his age category nationally.</p><p>He did not start out wanting to race anything. Two years ago, a birthday gift from his uncle &mdash; a small, cheap drone meant for taking photographs of the back garden &mdash; spent most of its short life crashing into fences. <span class="gap">[2]</span> Within a month, the photography drone had been quietly retired, and a much smaller, much faster machine, built rather than bought, had taken its place.</p><p>Building the drones, it turns out, is at least half the sport. <span class="gap">[3]</span> Aiden now keeps a small workshop in the garage, shared uneasily with his father's tools, where broken frames and stripped propellers accumulate in a box he calls, without irony, &lsquo;the graveyard.&rsquo;</p><p>Racing itself happens on courses marked out through woodland, warehouses, or purpose-built tracks strung with fabric gates barely wider than the drones themselves. <span class="gap">[4]</span> Aiden has, by his own count, destroyed eleven drones this year. He shrugs when asked about the cost, which is considerable, and mentions that he has learned to rebuild a damaged frame in under twenty minutes.</p><p>What is less obvious, watching a race, is how physically still the pilots are. <span class="gap">[5]</span> Aiden describes the sensation as being closer to dreaming than to flying &mdash; a kind of total absorption in which the actual garage, the actual trees, the actual watching parents disappear entirely.</p><p>His parents, for their part, have stopped asking when he will grow out of it. <span class="gap">[6]</span> Whatever this hobby costs in propellers and patience, it appears to be worth it, at least to the boy behind the goggles, who is already building his next machine before the current one has finished crashing.</p></div>
+      <div class="stimulus"><h4>Sentences A-G</h4><p><strong>A</strong> His mother, once sure the hobby was a passing phase, now drives him to competitions most weekends and can tell a healthy motor from a dying one just by its sound. <strong>B</strong> Crashing, far from being embarrassing, is treated by most young pilots as simply part of the learning process. <strong>C</strong> National competitions increasingly offer prize money, although most young pilots insist they would race for nothing. <strong>D</strong> A tiny camera mounted on the drone sends a live video signal to a pair of goggles, so the pilot sees exactly what the aircraft sees, in real time, from the inside of the flight itself. <strong>E</strong> He taught himself to solder from late-night tutorials, ruining three motors before he finally wired one correctly. <strong>F</strong> Their thumbs move constantly, in small, precise adjustments, even though their bodies stay almost completely still. <strong>G</strong> It was only after Aiden found online videos of racing pilots weaving through gaps barely wider than their machines that ordinary photography stopped holding his attention.</p></div>
+      <form class="prx-form" id="prx-0" novalidate></form>
+      <div class="prx-set">練習 B　（第 2 組，共 2 組）</div>
+      <div class="stimulus"><h4>Learning Taipei by Heart</h4><p>When Priya Shah's father announced, over dinner on a Tuesday in June, that his company was transferring him to Taipei, Priya's first thought was entirely practical: she wondered whether her phone would still work. <span class="gap">[1]</span> It was only much later that night, lying awake doing the maths on the eleven-hour time difference to her best friend's bedroom, that the size of what was happening actually reached her.</p><p>The family arrived in August, a month before the start of term, which her mother insisted was &lsquo;enough time to settle in&rsquo; and which Priya now describes, drily, as &lsquo;enough time to get spectacularly lost twice.&rsquo; <span class="gap">[2]</span> By the end of the first week she could find her way to the night market and back without checking her phone once, which felt, at the time, like a genuine achievement.</p><p>School was harder than the MRT map. <span class="gap">[3]</span> For the first month, Priya ate lunch alone in a corner of the classroom, not because anyone was unkind to her, but because she hadn't yet worked out how a person was supposed to join a conversation that was already moving at full speed in a language she was still catching up to.</p><p>That changed, unglamorously, over a maths problem. <span class="gap">[4]</span> Within a fortnight the two of them were sharing lunch every day, and Priya's classmate had appointed herself, entirely without being asked, as an unofficial translator for anything the teachers said too quickly.</p><p>It would be tidy to say that Taipei started to feel like home from that point onward, but Priya is careful to correct this version of events. <span class="gap">[5]</span> There were still Tuesday evenings, months later, when she would sit with her phone and the time difference and feel the whole eleven hours of it.</p><p>What did change, gradually and without her quite noticing, was the balance. <span class="gap">[6]</span> A year after that dinner-table announcement, Priya can tell you the fastest route from her school to four different night markets, and she no longer thinks of Taipei as the place her father was transferred to. She thinks of it, most days, simply as where she lives.</p></div>
+      <div class="stimulus"><h4>Sentences A-G</h4><p><strong>A</strong> A girl called Zoe, sitting one desk across, leaned over during a test to point out, quietly and without being asked twice, exactly where Priya's equation had gone wrong. <strong>B</strong> Taipei's night markets, she soon discovered, stay busy well past midnight even on a school night. <strong>C</strong> Homesickness, she has learned, does not leave on any predictable schedule, and it has a way of arriving on ordinary afternoons for no particular reason at all. <strong>D</strong> Twice in the first three days she took the MRT in completely the wrong direction, once ending up so far from home that she had to phone her father, mortified, to ask for the fare back. <strong>E</strong> The hard days did not disappear exactly, but they became noticeably outnumbered by the ordinary, easy ones &mdash; a good class, a favourite food stall, a joke she finally understood without needing it translated. <strong>F</strong> She was, as far as she could tell, the only student in her year who had not grown up speaking Mandarin at home, and for the first few weeks that fact seemed to sit between her and everyone else like a pane of glass. <strong>G</strong> The practical question was easily answered &mdash; her phone worked fine &mdash; but the bigger ones, about leaving her school, her friends, and the only bedroom she had ever slept in, took rather longer to arrive.</p></div>
+      <form class="prx-form" id="prx-1" novalidate></form>
+
+      <div class="prx-bar">
+        <button type="button" class="btn btn-primary" id="btnCheck">對答案</button>
+        <button type="button" class="btn btn-outline" id="btnWhy">看解析</button>
+        <button type="button" class="btn btn-outline" id="btnReset">重做</button>
+        <button type="button" class="btn btn-outline" id="btnPrint">列印題目</button>
+        <span class="prx-score" id="score" role="status" aria-live="polite"></span>
+      </div>
+      <p class="prx-note">解析會說明每個選項為什麼對、為什麼錯——這是課堂上老師做的事，我們把它放上來。分數只記在你自己的瀏覽器裡，不會上傳。</p>
+    </div>
+
+    <aside class="prx-nav" aria-label="各 Part 練習">
+      <h3>FCE 閱讀與英語運用 練習</h3>
+      <a href="/fce-ruoe-practice-part1/">Part 1 四選一克漏字</a>
+      <a href="/fce-ruoe-practice-part2/">Part 2 開放式克漏字</a>
+      <a href="/fce-ruoe-practice-part3/">Part 3 構詞</a>
+      <a href="/fce-ruoe-practice-part4/">Part 4 關鍵字轉換</a>
+      <a href="/fce-ruoe-practice-part5/">Part 5 長文四選一</a>
+      <a href="/fce-ruoe-practice-part6/" class="on" aria-current="page">Part 6 文章填句</a>
+      <a href="/fce-ruoe-practice-part7/">Part 7 多重配對</a>
+      <a href="/cambridge-practice-tests/" style="border-top:2px dashed #e6ebf2;margin-top:6px;padding-top:10px">官方樣卷下載 →</a>
+    </aside>
+  </div>
+</section>
+
+<script>
+const PRX = { part:6, sets:[{"setId": "A", "items": [{"n": 1, "type": "gapped", "marks": 2, "q": "Which sentence best fits gap 1?", "opts": ["A", "B", "C", "D", "E", "F", "G"], "a": 3, "why": ["本句主詞『His mother』與家長態度轉變有關，屬於文末段落內容，與第 1 格前後描述 FPV 技術的內容無關，是第 6 格的答案。", "本句談論『摔機不丟臉』，屬於摔機／耐用度主題，與第 1 格說明第一人稱視角技術的內容不符，是第 4 格的答案。", "本句提到獎金與比賽誘因，與第 1 格說明鏡頭與眼罩如何運作的技術內容無關，為本組未使用的干擾句。", "『a live video signal to a pair of goggles』直接呼應前句『a screen strapped to his face』，並解釋後句『This is FPV』中 this 所指的技術概念，前後銜接完整，正確。", "本句描述『自學焊接』，屬於組裝技術主題，對應第 3 格，與第 1 格的視角技術說明無關。", "本句描述『拇指持續微調、身體靜止』，屬於比賽時的身體狀態，對應第 5 格，與第 1 格無關。", "本句描述『從線上影片發現競速吸引力』，是興趣轉變的關鍵句，對應第 2 格，與第 1 格技術說明的位置不符。"]}, {"n": 2, "type": "gapped", "marks": 2, "q": "Which sentence best fits gap 2?", "opts": ["A", "B", "C", "D", "E", "F", "G"], "a": 6, "why": ["本句主詞是母親態度的轉變，屬於文末段落內容，與第 2 格描述興趣轉變的位置不符。", "本句主題是摔機心態，與第 2 格『從攝影轉向競速』的興趣轉折無關，為第 4 格答案。", "本句提到獎金，與本段『從攝影機轉為競速機』的敘述脈絡無關，為未使用的干擾句。", "本句解釋眼罩技術原理，對應第 1 格，與第 2 格的興趣轉變無關。", "本句描述自學焊接，屬於組裝主題，對應第 3 格，與第 2 格無關。", "本句描述比賽時身體靜止、拇指微調，對應第 5 格，與第 2 格的興趣轉折無關。", "『online videos of racing pilots... ordinary photography stopped holding his attention』直接承接前句『crashing into fences』的攝影機挫折，並解釋後句『Within a month, the photography drone had been quietly retired』的原因，前後銜接完整，正確。"]}, {"n": 3, "type": "gapped", "marks": 2, "q": "Which sentence best fits gap 3?", "opts": ["A", "B", "C", "D", "E", "F", "G"], "a": 4, "why": ["本句描述母親接送比賽，屬文末段落，與第 3 格『組裝』主題無關。", "本句描述摔機心態，對應第 4 格，與第 3 格談論組裝技術的位置不符。", "本句與獎金相關，與『組裝是比賽一半樂趣』的第 3 格主題無關，為干擾句。", "本句說明眼罩原理，對應第 1 格，與第 3 格描述動手組裝的內容無關。", "『taught himself to solder... ruining three motors』緊接前句『Building the drones... is at least half the sport』，並與後句『workshop in the garage』的組裝場景自然銜接，主題一致，正確。", "本句描述比賽時的身體狀態，對應第 5 格，與第 3 格的組裝主題無關。", "本句描述興趣從攝影轉向競速，對應第 2 格，與第 3 格描述組裝技巧的位置不符。"]}, {"n": 4, "type": "gapped", "marks": 2, "q": "Which sentence best fits gap 4?", "opts": ["A", "B", "C", "D", "E", "F", "G"], "a": 1, "why": ["本句描述母親接送比賽的轉變，屬文末內容，與第 4 格描述『摔機文化』的位置不符。", "『far from being embarrassing... simply part of the learning process』承接前句『gates barely wider than the drones themselves』暗示的高風險，並解釋後句『Aiden has... destroyed eleven drones』為何被平常心看待，語意銜接自然，正確。", "本句談獎金誘因，與第 4 格描述『摔機是常態』的主題無關，為干擾句。", "本句解釋眼罩技術，對應第 1 格，與第 4 格『摔機文化』無關。", "本句描述自學焊接，對應第 3 格，與第 4 格談論摔機心態的位置不符。", "本句描述身體靜止、拇指微調，對應第 5 格，與第 4 格無關。", "本句描述興趣從攝影轉向競速，對應第 2 格，與第 4 格無關。"]}, {"n": 5, "type": "gapped", "marks": 2, "q": "Which sentence best fits gap 5?", "opts": ["A", "B", "C", "D", "E", "F", "G"], "a": 5, "why": ["本句描述母親接送比賽的轉變，屬文末內容，與第 5 格描述比賽當下身體狀態的位置不符。", "本句描述摔機心態，對應第 4 格，與第 5 格描述『身體靜止』的主題無關。", "本句與獎金相關，與第 5 格描述選手比賽姿態的內容無關，為干擾句。", "本句解釋眼罩技術原理，對應第 1 格，與第 5 格無關。", "本句描述自學焊接，對應第 3 格，與第 5 格無關。", "『Their thumbs move constantly... even though their bodies stay almost completely still』直接呼應前句『how physically still the pilots are』，並鋪陳後句『Aiden describes the sensation』所指的『真正動作在眼罩裡』，前後銜接完整，正確。", "本句描述興趣從攝影轉向競速，對應第 2 格，與第 5 格描述比賽姿態無關。"]}, {"n": 6, "type": "gapped", "marks": 2, "q": "Which sentence best fits gap 6?", "opts": ["A", "B", "C", "D", "E", "F", "G"], "a": 0, "why": ["『His mother, once sure the hobby was a passing phase, now drives him to competitions』承接前句『His parents... have stopped asking when he will grow out of it』，並以『His mother』具體化父母的態度轉變，銜接後句『Whatever this hobby costs』的總結語氣完整，正確。", "本句描述摔機心態，對應第 4 格，與第 6 格描述父母態度轉變的位置不符。", "本句提到獎金，與第 6 格描述家長支持轉變的內容無關，為未使用的干擾句。", "本句解釋眼罩技術，對應第 1 格，與第 6 格無關。", "本句描述自學焊接，對應第 3 格，與第 6 格無關。", "本句描述比賽時身體靜止，對應第 5 格，與第 6 格描述家長轉變的位置不符。", "本句描述興趣從攝影轉向競速，對應第 2 格，與第 6 格無關。"]}]}, {"setId": "B", "items": [{"n": 1, "type": "gapped", "marks": 2, "q": "Which sentence best fits gap 1?", "opts": ["A", "B", "C", "D", "E", "F", "G"], "a": 6, "why": ["本句是 Zoe 出手相助的具體情節，對應第 4 格，與第 1 格描述『搬家消息剛公布』的時序不符。", "本句提到夜市營業到深夜，與第 1 格『消息剛公布時的反應』無關，為干擾句。", "本句描述『鄉愁沒有固定時間表』，對應第 5 格，與第 1 格談論消息剛公布時的即時反應不符。", "本句描述搭捷運坐錯方向，對應第 2 格，與第 1 格的位置不符。", "本句描述『難過的日子逐漸被平凡的好日子超越』，對應第 6 格，與第 1 格無關。", "本句描述『班上唯一非母語人士』，對應第 3 格，與第 1 格無關。", "『The practical question was easily answered... but the bigger ones... took rather longer to arrive』承接前句『she wondered whether her phone would still work』的實際問題，並鋪陳後句『It was only much later that night... the size of what was happening actually reached her』，銜接完整，正確。"]}, {"n": 2, "type": "gapped", "marks": 2, "q": "Which sentence best fits gap 2?", "opts": ["A", "B", "C", "D", "E", "F", "G"], "a": 3, "why": ["本句是 Zoe 幫忙解題的情節，對應第 4 格，與第 2 格描述『搭捷運迷路』的位置不符。", "本句提到夜市營業時間，表面上與『迷路』段落都提到地點，但內容不是『迷路』的具體情節，屬於文字表面相關但答非所問的干擾句。", "本句描述鄉愁沒有固定時間表，對應第 5 格，與第 2 格無關。", "『Twice in the first three days she took the MRT in completely the wrong direction』直接呼應前句『enough time to get spectacularly lost twice』中的『twice』，並與後句『By the end of the first week she could find her way... without checking her phone』形成『從迷路到熟悉』的對比，銜接完整，正確。", "本句描述難過的日子被平凡的日子取代，對應第 6 格，與第 2 格無關。", "本句描述班上唯一非母語人士，對應第 3 格，與第 2 格談論交通迷路的位置不符。", "本句描述消息公布當下的反應，對應第 1 格，與第 2 格無關。"]}, {"n": 3, "type": "gapped", "marks": 2, "q": "Which sentence best fits gap 3?", "opts": ["A", "B", "C", "D", "E", "F", "G"], "a": 5, "why": ["本句是 Zoe 幫忙解題的情節，對應第 4 格，與第 3 格描述『學校比捷運地圖更難』的位置不符，須留意時序區別。", "本句與夜市有關，與第 3 格描述『語言隔閡』的學校主題無關，為干擾句。", "本句描述鄉愁沒有固定時間表，對應第 5 格，與第 3 格無關。", "本句描述搭捷運迷路，對應第 2 格，與第 3 格談論學校適應的位置不符。", "本句描述難過日子被平凡日子取代，對應第 6 格，與第 3 格無關。", "『the only student in her year who had not grown up speaking Mandarin... like a pane of glass』承接前句『School was harder than the MRT map』，並解釋後句『Priya ate lunch alone... a language she was still catching up to』孤立感的原因，銜接完整，正確。", "本句描述消息公布當下的反應，對應第 1 格，與第 3 格無關。"]}, {"n": 4, "type": "gapped", "marks": 2, "q": "Which sentence best fits gap 4?", "opts": ["A", "B", "C", "D", "E", "F", "G"], "a": 0, "why": ["『A girl called Zoe... pointed out... exactly where Priya's equation had gone wrong』承接前句『That changed, unglamorously, over a maths problem』中的數學題事件，並讓後句『the two of them were sharing lunch every day』中的『the two of them』有明確指涉對象（Priya 和 Zoe），代名詞呼應完整，正確。", "本句與夜市有關，與第 4 格描述『數學題契機』的內容無關，為干擾句。", "本句描述鄉愁沒有固定時間表，對應第 5 格，與第 4 格無關。", "本句描述捷運迷路，對應第 2 格，與第 4 格談論交友契機的位置不符。", "本句描述難過日子被平凡日子取代，對應第 6 格，與第 4 格無關。", "本句描述班上唯一非母語人士的孤立感，對應第 3 格，與第 4 格描述『轉變契機』的位置不符，主題相關但須小心判斷。", "本句描述消息公布當下的反應，對應第 1 格，與第 4 格無關。"]}, {"n": 5, "type": "gapped", "marks": 2, "q": "Which sentence best fits gap 5?", "opts": ["A", "B", "C", "D", "E", "F", "G"], "a": 2, "why": ["本句是 Zoe 幫忙解題的情節，對應第 4 格，與第 5 格描述『鄉愁沒有規律』的位置不符。", "本句與夜市營業時間有關，與第 5 格描述鄉愁反覆出現的主題無關，為干擾句。", "『Homesickness... does not leave on any predictable schedule... arriving on ordinary afternoons for no particular reason at all』承接前句『careful to correct this version of events』（暗示事情並非從此就順利），並鋪陳後句『There were still Tuesday evenings... feel the whole eleven hours of it』的具體例子，銜接完整，正確。", "本句描述捷運迷路，對應第 2 格，與第 5 格無關。", "本句描述難過日子被平凡日子取代，對應第 6 格，與第 5 格語氣方向不同（第 5 格是說明情況『尚未』從此變好），須注意區分。", "本句描述班上唯一非母語人士，對應第 3 格，與第 5 格無關。", "本句描述消息公布當下的反應，對應第 1 格，與第 5 格無關。"]}, {"n": 6, "type": "gapped", "marks": 2, "q": "Which sentence best fits gap 6?", "opts": ["A", "B", "C", "D", "E", "F", "G"], "a": 4, "why": ["本句是 Zoe 幫忙解題的情節，對應第 4 格，與第 6 格描述『整體平衡改變』的位置不符。", "本句提到夜市，與第 6 格描述『難過與平凡日子的比例改變』無關，為未使用的干擾句。", "本句描述鄉愁沒有固定時間表，對應第 5 格，與第 6 格語氣方向不同（第 6 格是正向轉變的總結）。", "本句描述捷運迷路，對應第 2 格，與第 6 格無關。", "『The hard days did not disappear exactly, but they became noticeably outnumbered by the ordinary, easy ones』承接前句『What did change... was the balance』，並鋪陳後句『A year after that dinner-table announcement, Priya can tell you the fastest route...』作為具體證據，銜接完整，正確。", "本句描述班上唯一非母語人士，對應第 3 格，與第 6 格無關。", "本句描述消息公布當下的反應，對應第 1 格，與第 6 格無關。"]}]}] };
+(function(){
+  const L=i=>String.fromCharCode(65+i);
+  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+  const whyHTML=it=>Array.isArray(it.why)
+      ? it.why.map((w,i)=>`<p><b>${L(i)}：</b>${w}</p>`).join('')
+      : `<p><b>解析：</b>${it.why}</p>`;
+
+  function render(it,key){
+    const mk='<span class="prx-mark" aria-hidden="true"></span>';
+    if(it.type==='gaptext'){
+      return `<div class="prx-item" data-k="${key}"><span class="qh">${it.n}.</span>
+        <span class="qtext">${it.q||'請填入一個單字'}</span>
+        <input class="prx-gapin" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 ${it.n} 格答案">${mk}
+        <div class="prx-why">${whyHTML(it)}</div></div>`;
+    }
+    if(it.type==='wordform'){
+      return `<div class="prx-item" data-k="${key}"><span class="qh">${it.n}.</span>
+        <span class="qtext">${it.q||''}　<span class="prx-key">${esc(it.stem)}</span></span>
+        <input class="prx-gapin" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 ${it.n} 格答案">${mk}
+        <div class="prx-why">${whyHTML(it)}</div></div>`;
+    }
+    if(it.type==='keyword'){
+      return `<div class="prx-item" data-k="${key}"><span class="qh">${it.n}.</span>
+        <p class="prx-src">${esc(it.q)}</p>
+        <span class="prx-key">${esc(it.keyword)}</span>
+        <p class="prx-stem">${esc(it.stem).replace(/_{3,}/,'<b style="color:var(--blue)">　______　</b>')}</p>
+        <input class="prx-gapin wide" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 ${it.n} 題答案" placeholder="${it.maxWords?('最多 '+it.maxWords+' 個字'):''}">${mk}
+        <div class="prx-why">${whyHTML(it)}</div></div>`;
+    }
+    const bare=it.opts.every(o=>/^[A-H]$/.test(String(o).trim()));
+    const opts=it.opts.map((o,i)=>{
+      const txt=bare?'':String(o).replace(/^[A-H][.)]?\s+/,'');
+      return `<label class="prx-opt"><input type="radio" name="${key}" value="${i}">`+
+             `<span><b>${L(i)}</b>${txt?'　'+txt:''}</span></label>`;
+    }).join('');
+    return `<fieldset class="prx-item" data-k="${key}"><legend>${it.n}. ${it.q||''}</legend>
+      <div class="prx-opts${bare?' lettersonly':''}">${opts}</div><span class="prx-mark" aria-hidden="true"></span>
+      <div class="prx-why">${whyHTML(it)}</div></fieldset>`;
+  }
+
+  const flat=[];
+  PRX.sets.forEach((s,si)=>{
+    const host=document.getElementById('prx-'+si);
+    if(!host) return;
+    host.innerHTML=s.items.map(it=>{const k='s'+si+'q'+it.n; flat.push([k,it]); return render(it,k);}).join('');
+    host.addEventListener('change',e=>{
+      const f=e.target.closest('fieldset'); if(!f) return;
+      f.querySelectorAll('.prx-opt').forEach(o=>o.classList.toggle('sel',o.querySelector('input').checked));
+    });
+  });
+
+  const forms=[...document.querySelectorAll('.prx-form')];
+  const box=k=>document.querySelector(`[data-k="${k}"]`);
+
+  document.getElementById('btnCheck').addEventListener('click',()=>{
+    let got=0,total=0;
+    flat.forEach(([k,it])=>{
+      const m=it.marks||1; total+=m;
+      const b=box(k), mark=b.querySelector('.prx-mark');
+      if(it.accept){
+        const inp=b.querySelector('input');
+        const ok=it.accept.map(norm).includes(norm(inp.value));
+        inp.classList.toggle('right',ok); inp.classList.toggle('wrong',!ok&&inp.value.trim()!=='');
+        mark.textContent=ok?'✓':`✗（正確：${it.accept[0]}）`;
+        mark.className='prx-mark '+(ok?'ok':'no');
+        if(ok)got+=m;
+      }else{
+        const sel=b.querySelector('input:checked');
+        b.querySelectorAll('.prx-opt').forEach((o,i)=>{
+          o.classList.remove('right','wrong');
+          if(i===it.a)o.classList.add('right');
+          else if(o.querySelector('input').checked)o.classList.add('wrong');
+        });
+        const ok=sel&&+sel.value===it.a;
+        mark.textContent=ok?'✓':(sel?'✗':'—'); mark.className='prx-mark '+(ok?'ok':'no');
+        if(ok)got+=m;
+      }
+    });
+    const sc=document.getElementById('score');
+    sc.textContent=`得分 ${got} / ${total}`; sc.classList.add('show');
+  });
+
+  document.getElementById('btnWhy').addEventListener('click',()=>forms.forEach(f=>f.classList.toggle('show-why')));
+  document.getElementById('btnReset').addEventListener('click',()=>{
+    forms.forEach(f=>{
+      f.classList.remove('show-why');
+      f.querySelectorAll('input[type=radio]').forEach(r=>r.checked=false);
+      f.querySelectorAll('input[type=text]').forEach(t=>{t.value='';t.className=t.className.replace(/\s*(right|wrong)/g,'');});
+      f.querySelectorAll('.prx-opt').forEach(o=>o.classList.remove('sel','right','wrong'));
+      f.querySelectorAll('.prx-mark').forEach(m=>{m.textContent='';m.className='prx-mark';});
+    });
+    const sc=document.getElementById('score'); sc.classList.remove('show'); sc.textContent='';
+  });
+  document.getElementById('btnPrint').addEventListener('click',()=>window.print());
+})();
+</script>
+
+<section class="section bg-soft">
+  <div class="wrap center stack">
+    <span class="eyebrow eyebrow-green">練習之後</span>
+    <h2>錯的那幾題，<em>就是下一堂課的內容</em></h2>
+    <div class="divider"></div>
+    <p class="body" style="max-width:660px">做完對答案只是第一步。真正有用的是看懂「為什麼錯」——是文章填句的題型還沒抓到訣竅，還是FCE 這一級的文法底盤本來就還沒站穩？<a href="/b2-grammar-guide/">FCE 文法範圍逐項教學</a>可以直接對照，想更快找到破口，也可以約一次程度評估。</p>
+    <a class="btn btn-primary" href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 預約免費程度診斷</a>
+  </div>
+</section>
+
+</main>
+<script src="/assets/app.js?v=11"></script>
+</body>
+</html>
