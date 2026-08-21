@@ -128,6 +128,77 @@
 </div>
 </section>
 
+<style id="postercss">
+.poster{background:#fff;border:1px solid rgba(26,39,82,.10);border-radius:28px;box-shadow:var(--card-shadow);overflow:hidden;margin-top:26px}
+.po-head{padding:clamp(22px,3vw,32px);background:linear-gradient(135deg,#F4FAFF,#fff)}
+.po-head h3{font-size:clamp(24px,3.4vw,34px);margin:0;line-height:1.15}
+.po-head .sub{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;color:var(--blue);margin-top:7px}
+.po-head p{font-size:15.5px;line-height:1.85;color:var(--text-body);margin:13px 0 0;max-width:640px}
+.po-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(126px,1fr));gap:1px;background:rgba(26,39,82,.09);border-top:1px solid rgba(26,39,82,.09)}
+.po-stats div{background:#fff;padding:16px 18px}
+.po-stats .k{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.3px;color:#8b9bb0}
+.po-stats .v{font-family:'DM Serif Display',serif;font-size:23px;color:var(--navy);line-height:1.15;margin-top:4px}
+.po-stats .v small{display:block;font-family:'Baloo 2',sans-serif;font-size:12px;font-weight:700;color:#8b9bb0;margin-top:3px}
+.po-band{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:12px;letter-spacing:1.6px;color:#fff;background:var(--navy);padding:9px 22px}
+.po-papers{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:rgba(26,39,82,.09)}
+.po-paper{background:#fff;padding:20px 22px}
+.po-paper .n{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:11.5px;letter-spacing:1.4px;color:var(--c)}
+.po-paper h4{font-family:'DM Serif Display',serif;font-size:19px;color:var(--navy);margin:5px 0 2px;line-height:1.2}
+.po-paper .zh{font-size:13px;color:#8b9bb0}
+.po-paper .meta{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:13px;color:var(--c);margin:10px 0 0}
+.po-paper .tip{font-size:14px;line-height:1.75;color:var(--text-body);margin:9px 0 0;padding-top:9px;border-top:1px dashed rgba(26,39,82,.12)}
+.po-tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:1px;background:rgba(26,39,82,.09)}
+.po-tip{background:#fff;padding:18px 20px}
+.po-tip b{display:block;font-family:'Baloo 2',sans-serif;font-size:14.5px;color:var(--navy);margin-bottom:5px}
+.po-tip b i{font-style:normal;color:var(--blue);margin-right:7px}
+.po-tip span{font-size:14px;line-height:1.75;color:var(--text-body)}
+.po-cols{display:grid;grid-template-columns:1fr 1.15fr;gap:1px;background:rgba(26,39,82,.09)}
+@media(max-width:720px){.po-cols{grid-template-columns:1fr}}
+.po-col{background:#fff;padding:20px 22px}
+.po-col h5{font-family:'Baloo 2',sans-serif;font-size:13px;letter-spacing:1.2px;color:var(--blue);margin:0 0 12px}
+.po-col ul{list-style:none;margin:0;padding:0}
+.po-col li{position:relative;padding:6px 0 6px 25px;font-size:14.5px;line-height:1.7;color:var(--text-body)}
+.po-col li::before{content:'✓';position:absolute;left:0;top:6px;color:var(--green);font-weight:800}
+.po-plan{width:100%;border-collapse:collapse;font-size:14.5px}
+.po-plan td{padding:8px 6px;border-bottom:1px solid rgba(26,39,82,.07);color:var(--text-body)}
+.po-plan tr:last-child td{border-bottom:0}
+.po-plan td:first-child{font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--blue);white-space:nowrap;width:74px}
+.po-res{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:10px;padding:20px 22px;background:#F4FAFF;border-top:1px solid rgba(28,176,246,.2)}
+.po-res a{display:block;background:#fff;border:1px solid rgba(26,39,82,.10);border-radius:14px;padding:12px 15px;text-decoration:none;transition:border-color .12s}
+.po-res a:hover{border-color:var(--blue)}
+.po-res b{display:block;font-family:'Baloo 2',sans-serif;font-size:14px;color:var(--navy)}
+.po-res span{font-size:12.5px;color:#8b9bb0}
+.po-foot{padding:15px 22px;font-size:12.5px;line-height:1.75;color:#8b9bb0;border-top:1px solid rgba(26,39,82,.08)}
+@media print{.poster{box-shadow:none;border:1px solid #999;break-inside:avoid}.po-res{background:#fff}}
+</style>
+<section class="section bg-soft" id="glance">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">一張圖看懂</span>
+      <h2>FCE <em>備考總覽</em></h2></div>
+    <div class="poster reveal" style="max-width:1000px;margin-left:auto;margin-right:auto">
+      <div class="po-head">
+        <h3>劍橋 FCE，<em>怎麼準備才會過</em></h3>
+        <div class="sub">First Certificate in English（B2 First for Schools）· CEFR B2</div>
+        <p>FCE 證明孩子能自信、獨立地用英文處理學術與真實生活的情境。它是大學門檻常見的等級，也是劍橋主系列裡第一張真正有國際重量的證書。</p>
+      </div>
+      <div class="po-stats"><div><div class="k">等級</div><div class="v">B2<small>CEFR</small></div></div><div><div class="k">考卷</div><div class="v">4 份<small>四技全考</small></div></div><div><div class="k">總長</div><div class="v">約 3 小時 30 分<small></small></div></div><div><div class="k">劍橋量表</div><div class="v">140–190<small>分數帶</small></div></div><div><div class="k">及格</div><div class="v">160<small>Grade C</small></div></div></div>
+      <div class="po-band">4 份考卷</div>
+      <div class="po-papers"><div class="po-paper" style="--c:#1CB0F6"><div class="n">Paper 1</div><h4>Reading and Use of English</h4><div class="zh">閱讀與英語運用</div><div class="meta">75 分鐘 · 7 大題 52 題</div><p class="tip">全名不是只有 Reading。Part 1–4 的 Use of English 才是整份考卷文法密度最高的地方，Part 4 每題兩分。</p></div><div class="po-paper" style="--c:#CE82FF"><div class="n">Paper 2</div><h4>Writing</h4><div class="zh">寫作</div><div class="meta">80 分鐘 · 2 大題</div><p class="tip">Part 1 是必考議論文，題目給兩點、你要自己再想第三點。Part 2 在 for Schools 版是article、email、review、story 四選三。</p></div><div class="po-paper" style="--c:#06C755"><div class="n">Paper 3</div><h4>Listening</h4><div class="zh">聽力</div><div class="meta">約 40 分鐘 · 4 大題 30 題</div><p class="tip">Part 2 的句子填空要填錄音裡出現過的字，不要自己改寫成同義詞——這是最多人失分的地方。</p></div><div class="po-paper" style="--c:#F0997B"><div class="n">Paper 4</div><h4>Speaking</h4><div class="zh">口說</div><div class="meta">14 分鐘 · 4 大題</div><p class="tip">Part 2 的關鍵字是 compare，不是 describe。只把兩張照片分別描述一遍，分數就上不去。</p></div></div>
+      <div class="po-band">六個備考重點</div>
+      <div class="po-tips"><div class="po-tip"><b><i>01</i>先搞懂題型</b><span>七大題各有各的打法，尤其 Part 4 關鍵字轉換值得單獨練。</span></div><div class="po-tip"><b><i>02</i>計時做整套</b><span>3 小時 30 分是體力活。沒有整套練過，最後一份考卷會崩。</span></div><div class="po-tip"><b><i>03</i>字彙要精準不是量大</b><span>B2 考的是四個近義詞裡哪一個搭得起來，背中文意思已經不夠用。</span></div><div class="po-tip"><b><i>04</i>文法要用得快</b><span>B2 不是學新清單，是把 B1 的文法在時間壓力下穩定用對。</span></div><div class="po-tip"><b><i>05</i>大量讀真實文本</b><span>新聞、小說、評論。B2 之後的進步主要靠輸入，不是靠背。</span></div><div class="po-tip"><b><i>06</i>寫作一定要有人改</b><span>範文告訴你「好的長什麼樣」，但不會告訴你「你錯在哪」。</span></div></div>
+      <div class="po-cols">
+        <div class="po-col"><h5>你需要準備的</h5><ul><li>穩定出席，不缺課</li><li>每週的寫作有人訂正</li><li>每天讀一點真實英文</li><li>撐得住 3.5 小時的專注</li><li>以及——不要放棄</li></ul></div>
+        <div class="po-col"><h5>6 週讀書計畫（範例）</h5>
+          <table class="po-plan"><tbody><tr><td>第 1 週</td><td>閱讀策略與搭配詞</td></tr><tr><td>第 2 週</td><td>Use of English Part 1–4</td></tr><tr><td>第 3 週</td><td>寫作 Part 1：essay</td></tr><tr><td>第 4 週</td><td>寫作 Part 2：三選一</td></tr><tr><td>第 5 週</td><td>聽力與口說</td></tr><tr><td>第 6 週</td><td>完整模擬考＋逐題訂正</td></tr></tbody></table></div>
+      </div>
+      <div class="po-res"><a href="/fce-prep-guide/#practice"><b>FCE 線上練習</b><span>七大題都有原創題目</span></a><a href="/b2-grammar-guide/"><b>B2 文法範圍</b><span>官方沒有清單，我們整理的 14 項</span></a><a href="/b2-vocabulary-practice/"><b>B2 單字練習</b><span>搭配詞、語域、易混淆字組</span></a><a href="/fce-speaking-practice/"><b>FCE 口說逐字稿</b><span>整場對話中英對照</span></a></div>
+      <div class="po-foot">本表由埃森美語依劍橋官方教師手冊與 Cambridge English Scale 整理，
+        <strong>非劍橋官方文件</strong>，也不代表劍橋大學英語考評部。
+        考試格式、時間、題數與分數帶請以劍橋官方當期公告為準。資料日期 2026-08-21。</div>
+    </div>
+  </div>
+</section>
+
 <section class="section bg-soft" id="practice">
   <div class="wrap">
     <div class="center stack reveal"><span class="eyebrow eyebrow-green">原創練習題</span><h2>FCE 閱讀與英語運用，<em>每一大題都有原創練習題</em></h2></div>
