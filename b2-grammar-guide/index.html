@@ -54,6 +54,37 @@
 .gtop:hover{color:var(--blue)}
 .g-src{max-width:760px;margin:30px auto 0;background:#F4FAFF;border:1px solid rgba(28,176,246,.22);border-radius:18px;padding:18px 22px;font-size:14.5px;line-height:1.8;color:var(--text-body)}
 .g-src b{color:var(--navy)}
+.gdrill{margin-top:16px;border:2px dashed rgba(28,176,246,.42);border-radius:16px;overflow:hidden}
+.gdrill summary{list-style:none;cursor:pointer;padding:13px 18px;background:#F4FAFF;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14.5px;color:var(--blue);display:flex;align-items:center;gap:9px}
+.gdrill summary::-webkit-details-marker{display:none}
+.gdrill summary::before{content:'b8';transition:transform .18s}
+.gdrill[open] summary::before{transform:rotate(90deg)}
+.gdrill .gd-body{padding:16px 18px 18px}
+.gd-item{padding:13px 0;border-bottom:1px dashed #eef2f7}
+.gd-item:last-of-type{border-bottom:0}
+.gd-q{font-size:16px;line-height:1.75;color:var(--navy);margin:0 0 9px}
+.gd-q .gd-n{font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--c);margin-right:8px}
+.gd-opts{display:flex;flex-direction:column;gap:7px}
+.gd-opt{display:flex;gap:9px;align-items:flex-start;border:2px solid #e6ebf2;border-radius:11px;padding:8px 12px;cursor:pointer;font-size:15.5px;line-height:1.6;transition:border-color .12s,background .12s}
+.gd-opt:hover{border-color:var(--c)}
+.gd-opt input{margin-top:4px;accent-color:var(--c);flex:none}
+.gd-opt.sel{border-color:var(--c);background:rgba(28,176,246,.07)}
+.gd-opt.right{border-color:var(--green);background:rgba(6,199,85,.09)}
+.gd-opt.wrong{border-color:#e5484d;background:rgba(229,72,77,.07)}
+.gd-in{font:inherit;font-size:15.5px;padding:7px 12px;border:2px solid #e6ebf2;border-radius:10px;width:190px;max-width:70vw}
+.gd-in.wide{width:320px}
+.gd-in.right{border-color:var(--green);background:rgba(6,199,85,.07)}
+.gd-in.wrong{border-color:#e5484d;background:rgba(229,72,77,.06)}
+.gd-key{display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:11.5px;letter-spacing:1.3px;color:#fff;background:var(--purple);border-radius:7px;padding:3px 10px;margin:0 0 7px}
+.gd-mark{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;margin-left:9px}
+.gd-mark.ok{color:var(--green)} .gd-mark.no{color:#e5484d}
+.gd-why{display:none;margin-top:9px;font-size:14px;line-height:1.75;color:#7b8794;padding-left:12px;border-left:3px solid rgba(28,176,246,.25)}
+.gd-why p{margin:0 0 4px}
+.show-why .gd-why{display:block}
+.gd-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:16px}
+.gd-bar .btn{padding:9px 18px;min-height:40px;font-size:14px}
+.gd-score{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:16px;color:var(--navy);background:var(--light-blue);border-radius:11px;padding:7px 15px;display:none}
+.gd-score.show{display:inline-block}
 @media(max-width:640px){.gtag{margin-left:0;order:3;width:100%;justify-content:center}.gex td.nt{width:auto;white-space:normal}}
 </style>
 <!-- AE:SEO-LD start -->
@@ -127,6 +158,7 @@
     <div class="ln"><span class="v">✓</span><span>He <u>must have forgotten</u> his password.</span></div>
     <p class="why">情態動詞後面永遠接原形，過去要靠 have ＋ 過去分詞來扛。中文「他一定忘了」的「了」在英文裡沒有對應的位置，只能改動詞的形狀。</p></div>
   <div class="gnext"><b>再上一級</b>再往上，同一組形式會加上 needn't have done 與 didn't need to do 的差別，以及 may well have 這種先加程度修飾再推測的寫法。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="modal-perfect" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="third-mixed-conditionals" style="--c:#CE82FF;--cd:#a94fe0;--cs:rgba(206,130,255,.32)">
@@ -143,6 +175,7 @@
     <div class="ln"><span class="v">✓</span><span>If I <u>had known</u>, I would have called.</span></div>
     <p class="why">would 不能出現在 if 子句裡。記法很簡單：if 那半邊只放 had ＋ 過去分詞，would 一律留給另外半邊。</p></div>
   <div class="gnext"><b>再上一級</b>再往上會加上 but for、if it hadn't been for 這類把整個條件壓縮成介系詞片語的寫法。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="third-mixed-conditionals" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="concession-linkers" style="--c:#06C755;--cd:#04a046;--cs:rgba(6,199,85,.28)">
@@ -159,6 +192,7 @@
     <div class="ln"><span class="v">✓</span><span><u>Although</u> it was expensive, we bought it.</span></div>
     <p class="why">中文的「雖然」一定要配「但是」，英文只能留一個。看到 although、though、even though，後面那個 but 就該刪掉。</p></div>
   <div class="gnext"><b>再上一級</b>再往上會要求 while 與 whereas 用在對比而不是讓步，以及 albeit 這種正式書面語的分寸。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="concession-linkers" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="verb-patterns" style="--c:#F0997B;--cd:#d97a5c;--cs:rgba(240,153,123,.38)">
@@ -175,6 +209,7 @@
     <div class="ln"><span class="v">✓</span><span>I <u>suggest going</u> earlier.</span></div>
     <p class="why">suggest、recommend、avoid、practise 一律接動名詞。中文「建議去」的「去」看起來就是原形動詞，所以 to go 特別順手，但英文不收。</p></div>
   <div class="gnext"><b>再上一級</b>再往上會加上 verb ＋ 受詞 ＋ Ving 與 verb ＋ 受詞 ＋ 過去分詞的差別，以及被動的不定詞 to be done。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="verb-patterns" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="reporting-verbs" style="--c:#4C6FE7;--cd:#3652bd;--cs:rgba(76,111,231,.26)">
@@ -191,6 +226,7 @@
     <div class="ln"><span class="v">✓</span><span>He <u>denied breaking</u> the window.</span></div>
     <p class="why">deny、admit 接動名詞，refuse、promise 才接不定詞。這些沒有邏輯可循，背的時候要把介系詞一起背進去，才不會臨場猜。</p></div>
   <div class="gnext"><b>再上一級</b>再往上會加上 insist that he be told 這種報導動詞後的假設語氣，以及更細的語氣強弱區分。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="reporting-verbs" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="nominalisation-word-formation" style="--c:#EC6F9E;--cd:#c9527d;--cs:rgba(236,111,158,.30)">
@@ -207,6 +243,7 @@
     <div class="ln"><span class="v">✓</span><span>The <u>development</u> of the app took two years.</span></div>
     <p class="why">中文的「發展」當名詞和動詞是同一個詞，英文不是。看到 the 或所有格在前面，後面就必須是名詞形——這個檢查一秒就能做。</p></div>
   <div class="gnext"><b>再上一級</b>再往上會要求同一個字根的整組家族都用得準（economy／economic／economical／economically）。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="nominalisation-word-formation" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="cleft-emphatic" style="--c:#1CB0F6;--cd:#1391cc;--cs:rgba(28,176,246,.30)">
@@ -223,6 +260,7 @@
     <div class="ln"><span class="v">✓</span><span><u>It was</u> in 2019 <u>that</u> we moved to Banqiao.</span></div>
     <p class="why">強調句的第二格固定是 that，不管強調的是人、時間還是地點。中文「是在 2019 年的時候」讓 when 聽起來很順，但這個框架不收 when。</p></div>
   <div class="gnext"><b>再上一級</b>再往上會加上 The reason why … is that … 與被動的強調句，以及用強調句控制整段論述的節奏。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="cleft-emphatic" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="relative-clauses" style="--c:#CE82FF;--cd:#a94fe0;--cs:rgba(206,130,255,.32)">
@@ -239,6 +277,7 @@
     <div class="ln"><span class="v">✓</span><span>My cousin, <u>who</u> lives in Tainan, is visiting us.</span></div>
     <p class="why">逗號後面不能用 that。非限定子句只能用 who、which、whose——這是改作文時一眼就看得到的一條線。</p></div>
   <div class="gnext"><b>再上一級</b>再往上會要求簡化關係子句（the boy standing there）與 of which 這類更緊縮的寫法。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="relative-clauses" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="correlative-linkers" style="--c:#06C755;--cd:#04a046;--cs:rgba(6,199,85,.28)">
@@ -255,6 +294,7 @@
     <div class="ln"><span class="v">✓</span><span><u>Not only did he</u> come late, but he also forgot the tickets.</span></div>
     <p class="why">Not only 放句首時，後面要像問句一樣倒裝，而且 but 後面要有自己的主詞。兩個步驟少一個都不算對。</p></div>
   <div class="gnext"><b>再上一級</b>再往上會加上 no sooner … than、hardly … when 這些同樣需要倒裝的成對結構。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="correlative-linkers" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="modified-comparatives" style="--c:#F0997B;--cd:#d97a5c;--cs:rgba(240,153,123,.38)">
@@ -271,6 +311,7 @@
     <div class="ln"><span class="v">✓</span><span>This route is <u>much faster</u> than the other one.</span></div>
     <p class="why">very 不能修飾比較級，要用 much、far、a lot。中文「快很多」把「很」放在前面，直翻就變成 very faster。</p></div>
   <div class="gnext"><b>再上一級</b>再往上會加上 by far the most、all the more 這類更細的程度修飾，以及用比較級鋪陳論說文的立場。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="modified-comparatives" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="perfect-infinitive" style="--c:#4C6FE7;--cd:#3652bd;--cs:rgba(76,111,231,.26)">
@@ -287,6 +328,7 @@
     <div class="ln"><span class="v">✓</span><span>He <u>seems to have met</u> the author last year.</span></div>
     <p class="why">seem 是現在式，事情卻在去年——把過去塞進不定詞裡，用 to have ＋ 過去分詞，不要去改 seem 的時態。</p></div>
   <div class="gnext"><b>再上一級</b>再往上會加上完成不定詞的被動 to have been done，以及 was said to have been 這種多層時間堆疊。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="perfect-infinitive" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="phrasal-verbs-paraphrase" style="--c:#EC6F9E;--cd:#c9527d;--cs:rgba(236,111,158,.30)">
@@ -303,6 +345,7 @@
     <div class="ln"><span class="v">✓</span><span>Please <u>turn it off</u> before you leave.</span></div>
     <p class="why">可分離的片語動詞，受詞是代名詞時一定要夾在中間。名詞可以放後面（turn off the light），代名詞不行。</p></div>
   <div class="gnext"><b>再上一級</b>再往上會加上三字片語動詞（put up with、get away with）以及同一個片語動詞的多重意思。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="phrasal-verbs-paraphrase" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="noun-clauses" style="--c:#1CB0F6;--cd:#1391cc;--cs:rgba(28,176,246,.30)">
@@ -319,6 +362,7 @@
     <div class="ln"><span class="v">✓</span><span>I don't know <u>where the station is</u>.</span></div>
     <p class="why">名詞子句裡用肯定句語序，不倒裝。中文的「車站在哪裡」放到句尾不用變形，英文卻要把 is 移回主詞後面。</p></div>
   <div class="gnext"><b>再上一級</b>再往上會要求名詞子句與同位語的分辨，以及 whether 與 if 在正式書寫裡的使用差別。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="noun-clauses" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="advanced-passives" style="--c:#CE82FF;--cd:#a94fe0;--cs:rgba(206,130,255,.32)">
@@ -335,6 +379,7 @@
     <div class="ln"><span class="v">✓</span><span><u>It is said that</u> the old building is haunted.</span></div>
     <p class="why">中文的「據說」沒有主詞，直翻成 someone says 會變得又口語又不精確。英文有 It is said that 和 be said to 兩個現成框架，改作文時差別看得很清楚。</p></div>
   <div class="gnext"><b>再上一級</b>再往上會加上 It is widely believed／has been shown to 這類學術語域的被動，以及用被動刻意隱藏施事者的策略。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="advanced-passives" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
     </div>
@@ -364,6 +409,93 @@
 </section>
 
 </main>
+<script>const GDRILLS = {"modal-perfect":[{"n":1,"type":"mc","q":"The lights are off and the door is locked — everyone ______ home already.","opts":["must go","must have gone","must be going","must had gone"],"a":1,"why":["✗ must ＋ 原形講的是現在的義務，但燈關了、門鎖了都是已經發生的證據。","✓ 依據眼前的證據推測過去，用 must have ＋ 過去分詞。","✗ must be going 指現在正要離開，與 already 這個線索不合。","✗ 情態動詞後面永遠接原形，不能寫成 must had。"]},{"n":2,"type":"mc","q":"I only got 40 in the quiz. I ______ the vocabulary list the night before.","opts":["should revise","should have revised","should had revised","should be revising"],"a":1,"why":["✗ should ＋ 原形是對現在或未來的建議，但考試已經考完了。","✓ 對過去的後悔用 should have ＋ 過去分詞，線索是 the night before。","✗ should 後面接原形，had 不能出現在情態動詞後面。","✗ should be revising 指現在應該正在複習，時間點不對。"]},{"n":3,"type":"gaptext","q":"填入一個字：Her bike is still in the rack, so she can't ______ left for home yet.","accept":["have"],"why":"對過去的否定推測用 can't have ＋ 過去分詞，被挖掉的就是中間那個 have。線索是 still in the rack：說話者是從現在的證據往回推。"},{"n":4,"type":"mc","q":"She never ignores anyone, so she ______ my message.","opts":["can't have seen","mustn't have seen","can't have saw","couldn't see"],"a":0,"why":["✓ 對過去的否定推測用 can't have ＋ 過去分詞，這是 must have 的反面。","✗ mustn't 表示禁止，英文不用它做否定推測，這是中文「一定沒有」直翻過來最常見的錯。","✗ have 後面要接過去分詞 seen，不是過去式 saw。","✗ couldn't see 指當時沒有能力看到，不是在推測她有沒有看。"]},{"n":5,"type":"keyword","q":"It was a mistake to leave my raincoat at home.","keyword":"SHOULD","stem":"I ______ my raincoat at home.","accept":["shouldn't have left","should not have left"],"maxWords":5,"marks":2,"why":"原句在講後悔做過的事，對應的形狀是 shouldn't have ＋ 過去分詞。注意否定放在 should 上，不能寫成 should have not left。"},{"n":6,"type":"keyword","q":"It's possible that the parcel was delivered to the wrong flat.","keyword":"MIGHT","stem":"The parcel ______ to the wrong flat.","accept":["might have been delivered"],"maxWords":5,"marks":2,"why":"這題把兩件事疊在一起：對過去的可能性用 might have ＋ 過去分詞，而包裹是被送的一方，所以再加一層被動，變成 might have been delivered。少了 been 就只剩推測，沒有被動。"}],"third-mixed-conditionals":[{"n":1,"type":"mc","q":"If I ______ harder, I would have passed the listening paper.","opts":["studied","had studied","would study","have studied"],"a":1,"why":["✗ 過去簡單式是第二條件句的形狀，和後半句的 would have passed 對不上。","✓ 與過去事實相反的第三條件句：if ＋ had ＋ 過去分詞，主要子句用 would have ＋ 過去分詞。","✗ would 一律留給逗號後面那半句，不能出現在 if 子句。","✗ have studied 是現在完成式，不能用在與過去相反的假設。"]},{"n":2,"type":"mc","q":"If Mia ______ about the deadline, she would have handed the form in on time.","opts":["would have known","had known","knew","would know"],"a":1,"why":["✗ if 子句裡不放 would，這是台灣考生最整齊的一個錯。","✓ if 那半邊只放 had ＋ 過去分詞，would 全部留給另外半邊。","✗ knew 是第二條件句的形狀，講的是與現在相反，不是與過去相反。","✗ would know 同樣把 would 放進了 if 子句。"]},{"n":3,"type":"gaptext","q":"填入一個字：If we hadn't missed the last train, we ______ be in Taichung by now.","accept":["would","'d","could"],"why":"混合條件句：if 子句是過去（hadn't missed），結果卻落在現在（by now），所以後半句用 would ＋ 原形動詞，不是 would have been。時間線索就是 by now。"},{"n":4,"type":"mc","q":"She's exhausted today. If she ______ to bed earlier last night, she wouldn't be so tired now.","opts":["went","had gone","would go","has gone"],"a":1,"why":["✗ 過去簡單式配不上 last night 這個與過去事實相反的假設。","✓ 混合條件句：原因在過去用 had gone，結果在現在用 wouldn't be，兩邊的時間軸本來就不一樣。","✗ would 不能出現在 if 子句。","✗ 現在完成式不能用在假設語氣裡，而且與 last night 衝突。"]},{"n":5,"type":"keyword","q":"Ben didn't revise at all, so he failed the test.","keyword":"HAD","stem":"Ben would have passed the test ______ .","accept":["if he had revised"],"maxWords":5,"marks":2,"why":"原句兩件事都發生在過去而且都是事實，改寫成假設就要整組反過來：沒複習變成 had revised，沒通過變成 would have passed。關鍵字 HAD 已經告訴你 if 那半邊要用什麼形狀。"},{"n":6,"type":"keyword","q":"I missed the sign-up deadline last week, so I'm not in the team now.","keyword":"WOULD","stem":"If I hadn't missed the deadline last week, I ______ the team now.","accept":["would be in","would be on"],"maxWords":5,"marks":2,"why":"這是混合條件句：if 子句停在過去，主要子句卻落在 now，所以答案是 would be，不是 would have been。看到 now 就知道結果講的是現在。"}],"concession-linkers":[{"n":1,"type":"mc","q":"______ the heavy rain, the night market stayed open until midnight.","opts":["Although","Despite","Even though","However"],"a":1,"why":["✗ although 後面要接完整子句，the heavy rain 只是名詞片語。","✓ despite 後面接名詞或動名詞，剛好配 the heavy rain。","✗ even though 同樣要接主詞加動詞的完整子句。","✗ however 是副詞，要放在句號或分號之後，不能直接帶出名詞片語。"]},{"n":2,"type":"mc","q":"______ she had trained for six months, she didn't finish the race.","opts":["Despite","In spite of","Even though","Despite of"],"a":2,"why":["✗ despite 接名詞或動名詞，接不了 she had trained 這個子句。","✗ in spite of 後面同樣只能接名詞或動名詞。","✓ 後面是完整子句，就要用 although、though 或 even though 這一組。","✗ 英文沒有 despite of 這個寫法，要嘛 despite，要嘛 in spite of。"]},{"n":3,"type":"gaptext","q":"填入一個字：In ______ of the traffic on the bridge, we got to the stadium before kick-off.","accept":["spite"],"why":"in spite of 是三個字一組的固定片語，中間那個 spite 不能換也不能省。它和 despite 意思一樣，差別只在 despite 沒有 of。"},{"n":4,"type":"mc","q":"Despite ______ he was injured, he played the whole second half.","opts":["that","the fact that","of the fact","although"],"a":1,"why":["✗ despite 不能直接接子句，中間少了名詞。","✓ 要讓 despite 後面接子句，唯一的寫法是 despite the fact that，因為 the fact 是它需要的那個名詞。","✗ despite 後面不加 of，加 of 的是 in spite of。","✗ despite 和 although 是同一份工作做兩次，就像中文「雖然……但是……」成對出現，英文只能留一個。"]},{"n":5,"type":"keyword","q":"Although she was very nervous, she gave a brilliant presentation.","keyword":"SPITE","stem":"She gave a brilliant presentation ______ very nervous.","accept":["in spite of being"],"maxWords":5,"marks":2,"why":"子句換片語的標準動作：主詞 she 消失，was 變成動名詞 being，因為 in spite of 是介系詞片語，後面只收名詞或 Ving。"},{"n":6,"type":"keyword","q":"Even though the weather was terrible, the concert went ahead.","keyword":"DESPITE","stem":"The concert went ahead ______ weather.","accept":["despite the terrible"],"maxWords":5,"marks":2,"why":"這一題要把整個子句壓成名詞片語：the weather was terrible 裡的形容詞 terrible 搬到名詞前面，變成 the terrible weather。despite 後面不放 of，也不放主詞加動詞。"}],"verb-patterns":[{"n":1,"type":"mc","q":"In the end they all agreed ______ the cost of the taxi.","opts":["sharing","to share","share","to sharing"],"a":1,"why":["✗ agree 後面不接動名詞。","✓ agree 屬於接不定詞的那一組，寫成 agree to V。","✗ 情態動詞後面才直接接原形，一般動詞不行。","✗ to share 的 to 是不定詞記號，後面要接原形，不是 Ving。"]},{"n":2,"type":"mc","q":"Would you mind ______ the window? The whole room is freezing.","opts":["to close","close","closing","closed"],"a":2,"why":["✗ mind 後面不接不定詞。","✗ 一般動詞後面不能直接接另一個原形動詞。","✓ mind 屬於接動名詞的那一組，Would you mind ＋ Ving 是固定的客氣說法。","✗ 過去分詞在這裡會變成被動的意思，語意不通。"]},{"n":3,"type":"gaptext","q":"填入一個字，把 leave 改成正確的形式：I suggest ______ before the traffic gets bad.","accept":["leaving"],"why":"suggest、recommend、avoid、practise 一律接動名詞。中文「建議走」的「走」看起來就是原形動詞，所以 to leave 特別順手，但英文不收這個形狀。"},{"n":4,"type":"mc","q":"On the way home I stopped ______ a drink, then carried on walking.","opts":["buying","to buy","buy","for buying"],"a":1,"why":["✗ stop ＋ Ving 是「不再做這件事」，意思會變成他從此不買飲料了，與 then carried on walking 對不上。","✓ stop ＋ to V 是停下腳步去做另一件事，線索是後半句他又繼續走。","✗ stop 後面不能直接接原形動詞。","✗ for ＋ Ving 用來說明用途，不用在這個句型。"]},{"n":5,"type":"keyword","q":"She was quite happy to wait outside.","keyword":"MIND","stem":"She ______ outside.","accept":["didn't mind waiting","did not mind waiting"],"maxWords":5,"marks":2,"why":"「不介意」等於「還算樂意」，所以肯定的 was happy 改寫後要變成否定的 didn't mind。改寫時形狀也跟著換：mind 後面接動名詞 waiting，不是 to wait。"},{"n":6,"type":"keyword","q":"I locked the back door, and I'm completely certain about it.","keyword":"REMEMBER","stem":"I ______ the back door.","accept":["remember locking"],"maxWords":5,"marks":2,"why":"remember ＋ Ving 是「記得做過」，remember ＋ to V 是「記得要去做」。原句的動作已經完成，所以只能用 remember locking，寫成 remember to lock 就變成還沒鎖。"}],"reporting-verbs":[{"n":1,"type":"mc","q":"He finally admitted ______ the window during the lunch break.","opts":["to break","breaking","break","broken"],"a":1,"why":["✗ admit 後面不接不定詞。","✓ admit 和 deny 都接動名詞，寫成 admit ＋ Ving。","✗ 一般動詞後面不能直接接原形動詞。","✗ 過去分詞在這裡會讀成被動，語意不通。"]},{"n":2,"type":"mc","q":"The club ______ to answer any questions about the cancelled trip.","opts":["refused","denied","admitted","apologised"],"a":0,"why":["✓ 空格後面是 to answer，只有 refuse 屬於接不定詞的那一組。","✗ deny 接動名詞，不接不定詞。","✗ admit 同樣接動名詞。","✗ apologise 後面要先加 for，再接動名詞。"]},{"n":3,"type":"gaptext","q":"填入一個字：She accused him ______ taking her charger without asking.","accept":["of"],"why":"accuse 的完整形狀是 accuse sb of ＋ 動名詞，那個 of 就是 Part 4 最常被挖掉的一格。背報導動詞時要把介系詞一起背進去，才不會臨場猜。"},{"n":4,"type":"mc","q":"He ______ having anything to do with the missing money.","opts":["denied","refused","apologised","insisted"],"a":0,"why":["✓ 空格後面直接接動名詞 having，符合這個形狀的只有 deny，意思也對得上「否認做過」。","✗ refuse 接不定詞，而且意思是拒絕去做某事，不是否認。","✗ apologise 後面必須加 for 才能接動名詞。","✗ insist 後面必須加 on 才能接動名詞。"]},{"n":5,"type":"keyword","q":"\"You copied my homework,\" Ryan said to Lily.","keyword":"ACCUSED","stem":"Ryan ______ his homework.","accept":["accused Lily of copying"],"maxWords":5,"marks":2,"why":"直接引語改成報導動詞時，聽話的人要變成受詞：accuse ＋ 人 ＋ of ＋ 動名詞。漏掉 of 或把 copying 寫成 to copy，這一格就整個不給分。"},{"n":6,"type":"keyword","q":"\"You really must let me pay for the tickets,\" said Hana.","keyword":"INSISTED","stem":"Hana ______ for the tickets.","accept":["insisted on paying"],"maxWords":5,"marks":2,"why":"insist 的形狀是 insist on ＋ 動名詞。這裡還要注意主詞換人：原句是 Hana 堅持要自己付，所以動名詞的動作者就是 Hana，不需要再寫出來。"}],"nominalisation-word-formation":[{"n":1,"type":"mc","q":"Her ______ to change schools surprised the whole class.","opts":["decide","decided","decision","deciding"],"a":2,"why":["✗ decide 是動詞原形，所有格 Her 後面放不了動詞。","✗ decided 是過去式或過去分詞，同樣不能接在所有格後面。","✓ 前面有所有格 Her，後面就必須是名詞形 decision，這個檢查一秒就能做。","✗ deciding 是動名詞，這個字的標準名詞形是 decision。"]},{"n":2,"type":"mc","q":"The teacher gave us a very clear ______ of the new marking system.","opts":["explanation","explaining","explain","explanatory"],"a":0,"why":["✓ 前面有冠詞 a 和形容詞 clear，這個位置只能放名詞。","✗ 動名詞前面不加冠詞，也不用形容詞修飾。","✗ explain 是動詞原形。","✗ explanatory 是形容詞，兩個形容詞疊在一起後面卻沒有名詞。"]},{"n":3,"type":"gaptext","q":"填入一個字，用 DISAPPOINT 造出正確的詞：You could see the ______ on their faces after the final whistle.","accept":["disappointment"],"why":"冠詞 the 後面要放名詞，動詞 disappoint 的名詞形是 disappointment。Part 3 就是整整一大題在做這件事：先看空格前後的位置決定詞性，再去變字尾。"},{"n":4,"type":"mc","q":"The school's old booking app was completely ______ , so nobody used it.","opts":["unreliable","unreliably","disreliable","unreliability"],"a":0,"why":["✓ be 動詞加副詞 completely 之後要放形容詞，反義前綴是 un-。","✗ 副詞不能當 be 動詞的補語。","✗ 這個字的反義前綴是 un-，不是 dis-。","✗ 名詞形前面缺了冠詞，而且 completely 也修飾不了名詞。"]},{"n":5,"type":"keyword","q":"He refused to apologise, and that made everything worse.","keyword":"REFUSAL","stem":"His ______ made everything worse.","accept":["refusal to apologise","refusal to apologize"],"maxWords":5,"marks":2,"why":"把一整個子句壓成名詞片語：動詞 refused 變成名詞 refusal，後面接的不定詞 to apologise 保持不變。這就是讓 B2 寫作看起來成熟的那一步。"},{"n":6,"type":"keyword","q":"Everyone could see that the team was disappointed about losing the final.","keyword":"DISAPPOINTMENT","stem":"The team's ______ the final was obvious to everyone.","accept":["disappointment at losing","disappointment about losing"],"maxWords":5,"marks":2,"why":"形容詞 disappointed 轉成名詞 disappointment 之後，後面那個介系詞要跟著調整，接 at 或 about ＋ 動名詞。名詞化最常掉分的地方不是字尾，是後面的介系詞。"}],"cleft-emphatic":[{"n":1,"type":"mc","q":"______ my little brother that broke the controller, not me.","opts":["It was","There was","That was","It is"],"a":0,"why":["✓ 強調句的框架是 It was … that，把重點搬到句首。","✗ There was 用來表示某處存在某物，帶不出這個框架。","✗ That was 後面接不了這個 that 子句。","✗ broke 是過去式，框架的 be 動詞要一起用過去式。"]},{"n":2,"type":"mc","q":"______ this team needs most is a decent goalkeeper.","opts":["That","What","Which","It"],"a":1,"why":["✗ that 引導的子句本身要完整，但這裡的 needs 後面缺了受詞。","✓ wh- 強調句的框架是 What … is，what 同時當引導詞和子句裡的受詞。","✗ which 用在有先行詞的關係子句，這裡句首沒有先行詞。","✗ it 開頭的強調句要配 that，不能直接接 needs。"]},{"n":3,"type":"gaptext","q":"填入一個字：It was not until I got home ______ I realised my phone was missing.","accept":["that"],"why":"It was not until … that 是一個完整的框架，第二格永遠是 that。認得框架就是一秒填完，不認得就會卡到最後一格。"},{"n":4,"type":"mc","q":"Not until the second half ______ how strong the other team was.","opts":["we realised","did we realise","we did realise","did we realised"],"a":1,"why":["✗ 否定副詞放句首時不能維持正常語序。","✓ Not until 開頭要像問句一樣倒裝：助動詞 did 提到主詞前面，動詞回到原形 realise。","✗ 語序不對，did 必須放在主詞 we 的前面。","✗ 倒裝對了，但 did 後面要接原形，不能再用過去式。"]},{"n":5,"type":"keyword","q":"We first met in that café on Wenhua Road.","keyword":"IT","stem":"______ that café on Wenhua Road that we first met.","accept":["It was in"],"maxWords":5,"marks":2,"why":"強調地點時，介系詞要跟著被強調的部分一起搬到前面，所以是 It was in that café … that。第二格不管強調人、時間還是地點，都固定用 that，不能寫 where。"},{"n":6,"type":"keyword","q":"She only wanted an apology, nothing else.","keyword":"ALL","stem":"______ an apology.","accept":["All she wanted was"],"maxWords":5,"marks":2,"why":"All (that) she wanted 這個主詞是一個名詞子句，整團算單數，所以後面的動詞用 was。原句的 only 改寫成 all 之後就不再出現，這是 Part 4 常見的等值互換。"}],"relative-clauses":[{"n":1,"type":"mc","q":"The girl ______ won the speech contest is in my art class.","opts":["which","who","whose","where"],"a":1,"why":["✗ which 指事物，先行詞 the girl 是人。","✓ 先行詞是人而且在子句裡當主詞，用 who，沒有逗號表示這是限定用法。","✗ whose 表所有，後面要接名詞。","✗ where 指地點，先行詞不是地方。"]},{"n":2,"type":"mc","q":"That's the boy ______ bike was stolen outside the library.","opts":["who","who's","whose","which"],"a":2,"why":["✗ who 當主詞，後面要接動詞，不能接名詞 bike。","✗ who's 是 who is 的縮寫，讀起來一樣但意思完全不同。","✓ 空格後面是名詞 bike，表示「那個男生的腳踏車」，所有格用 whose。","✗ which 指事物，而且不表示所有。"]},{"n":3,"type":"gaptext","q":"填入一個字：She won the science prize, ______ surprised absolutely nobody.","accept":["which"],"why":"逗號後面指的是「她得獎」這整件事，只有 which 能代表一整個子句。這裡不能用 that（非限定子句不收 that），也不能用 what。"},{"n":4,"type":"mc","q":"My cousin, ______ lives in Tainan, is coming to stay with us next week.","opts":["that","who","which","he"],"a":1,"why":["✗ 逗號後面不能用 that，這是改作文時一眼就看得到的一條線。","✓ 非限定子句只收 who、which、whose，先行詞是人就用 who。","✗ which 指事物，不指人。","✗ 兩個子句不能只靠逗號和代名詞連起來，需要關係代名詞。"]},{"n":5,"type":"keyword","q":"That's the classroom. Our film club meets in it every Friday.","keyword":"WHICH","stem":"That's the classroom ______ our film club meets every Friday.","accept":["in which"],"maxWords":5,"marks":2,"why":"把兩句併成一句時，代名詞 it 變成 which，原本的介系詞 in 提到 which 前面，寫成 in which，語域比較正式。口語會說 which our film club meets in，但關鍵字題要的是前置的那一種。"},{"n":6,"type":"keyword","q":"I sat next to a boy at the match. His father coaches our team.","keyword":"WHOSE","stem":"I sat next to a boy ______ our team.","accept":["whose father coaches"],"maxWords":5,"marks":2,"why":"his 這個所有格代名詞併句之後就是 whose，而且 whose 後面直接接名詞，中間不加冠詞。動詞維持第三人稱單數的 coaches，因為主詞是 father。"}],"correlative-linkers":[{"n":1,"type":"mc","q":"______ my sister and I signed up for the film club.","opts":["Either","Both","Neither","Not only"],"a":1,"why":["✗ either 要配 or，不配 and。","✓ 線索是後面的 and，成對出現的是 both … and。","✗ neither 要配 nor，而且意思會變成兩個都沒報名。","✗ not only 要配 but also，放在句首還要倒裝。"]},{"n":2,"type":"mc","q":"Neither the bus ______ the MRT was running after the earthquake.","opts":["or","nor","and","but"],"a":1,"why":["✗ or 配的是 either，不配 neither。","✓ neither 一定配 nor，兩個字要成對出現。","✗ and 用在 both … and 這一組。","✗ but 是對等連接詞，不是 neither 的搭檔。"]},{"n":3,"type":"gaptext","q":"填入一個字：She plays not only the piano ______ also the violin.","accept":["but"],"why":"not only 的搭檔是 but also，被挖掉的通常就是中間那個 but。另外注意兩邊要平行：the piano 和 the violin 都是名詞片語，詞性一致才算對。"},{"n":4,"type":"mc","q":"Not only ______ late, but he also forgot to bring the tickets.","opts":["he arrived","did he arrive","he did arrive","did he arrived"],"a":1,"why":["✗ Not only 放在句首時不能維持正常語序，中文的「不但……而且……」不用換語序，這一步最常被整個跳過。","✓ Not only 開頭要倒裝：助動詞 did 提到主詞前面，動詞用原形 arrive。","✗ did 的位置不對，倒裝時助動詞要在主詞前面。","✗ 倒裝對了，但 did 後面接原形，不能再用過去式。"]},{"n":5,"type":"keyword","q":"He was late and he also forgot his kit.","keyword":"ONLY","stem":"______ late but he also forgot his kit.","accept":["Not only was he"],"maxWords":5,"marks":2,"why":"Not only 一放到句首就要倒裝，這裡的動詞是 be 動詞，所以直接把 was 提到主詞前面，不需要另外加 did。後半句的 but he also 要有自己的主詞。"},{"n":6,"type":"keyword","q":"Jenny didn't call and she didn't send a message either.","keyword":"NEITHER","stem":"Jenny ______ sent a message.","accept":["neither called nor"],"maxWords":5,"marks":2,"why":"兩個否定合併成一組 neither … nor，動詞本身就不再加 didn't，否則等於否定兩次。兩邊也要平行：called 和 sent 都是過去式動詞。"}],"modified-comparatives":[{"n":1,"type":"mc","q":"This route is ______ than the one along the main road.","opts":["very faster","much faster","more fast","very fast"],"a":1,"why":["✗ very 不能修飾比較級，中文「快很多」的「很」直翻過來就是這個錯。","✓ 比較級要用 much、far、a lot 這一組來修飾。","✗ fast 是單音節，比較級直接加 -er，不用 more。","✗ very fast 不是比較級，後面接不了 than。"]},{"n":2,"type":"mc","q":"The blue jacket is ______ more expensive, but the material is far better.","opts":["very","slightly","too","so"],"a":1,"why":["✗ very 修飾不了比較級。","✓ slightly 表示差距很小，和後半句 far better 的大差距剛好形成對照。","✗ too 表示過頭，不能拿來修飾比較級。","✗ so 修飾原級形容詞，不修飾比較級。"]},{"n":3,"type":"gaptext","q":"填入一個字：______ more you practise, the easier it gets.","accept":["The","the"],"why":"the more … the more 這個框架的兩個 the 都不能省，前面那一格常常就是被挖掉的地方。兩邊都是「愈……愈……」，順序固定，前半句是條件，後半句是結果。"},{"n":4,"type":"mc","q":"Teaching is much more ______ art than a science.","opts":["of an","than an","as an","an"],"a":0,"why":["✓ 比較級後面要接名詞時，中間得插進 of a(n)，官方樣卷考過 much more of an art 這個形狀。","✗ than 已經出現在後半句，不能重複。","✗ as 用在 as … as 的對等比較，不能和 more 混用。","✗ 少了 of，比較級不能直接接名詞。"]},{"n":5,"type":"keyword","q":"The second film was a lot better than the first one.","keyword":"FAR","stem":"The second film was ______ the first one.","accept":["far better than"],"maxWords":5,"marks":2,"why":"a lot、much、far 是同一組比較級修飾語，可以互換。換字之後 than 要留著，因為後面還有比較的對象。"},{"n":6,"type":"keyword","q":"Ken is much less confident than he looks.","keyword":"NOWHERE","stem":"Ken is ______ confident as he looks.","accept":["nowhere near as"],"maxWords":5,"marks":2,"why":"stem 句尾的 as 是最大的線索：句子已經從比較級換成對等比較的框架，所以要填 nowhere near as，意思是差得遠。這裡不能再用 than。"}],"perfect-infinitive":[{"n":1,"type":"mc","q":"The organisers seem ______ the timetable at some point last week.","opts":["to change","to have changed","to changing","to have change"],"a":1,"why":["✗ 這樣寫沒有標出時間差，但事情發生在上星期。","✓ 主要動詞 seem 是現在式，事情卻更早，用 to have ＋ 過去分詞把時間差裝進不定詞裡。","✗ to 後面接原形，不接 Ving。","✗ have 後面要接過去分詞 changed，不是原形。"]},{"n":2,"type":"mc","q":"He claims ______ the author at a book signing last year.","opts":["to meet","meeting","to have met","to have meet"],"a":2,"why":["✗ 少了時間差，to meet 會讀成他現在或未來要見作者。","✗ claim 接不定詞，不接動名詞。","✓ claims 是現在式，見面卻在去年，所以用 to have met。","✗ have 後面要接過去分詞 met。"]},{"n":3,"type":"gaptext","q":"填入一個字：The rock seems to ______ formed millions of years ago.","accept":["have"],"why":"完成不定詞的形狀是 to have ＋ 過去分詞，被挖掉的就是中間的 have。不要改 seem 的時態：現在看起來如何是現在的判斷，事情發生在幾百萬年前才需要 have formed。"},{"n":4,"type":"mc","q":"She's lucky ______ such a patient coach when she was ten.","opts":["to find","to found","to have found","having found"],"a":2,"why":["✗ to find 沒有標出更早的時間，但句尾的 when she was ten 已經把時間往回推了。","✗ 不定詞的 to 後面只能接原形或 have ＋ 過去分詞，不能接過去式。","✓ 主要動詞 is 是現在式，事情發生在她十歲，用 to have found 表示時間差。","✗ 形容詞 lucky 後面接的是不定詞，不是分詞。"]},{"n":5,"type":"keyword","q":"It appears that somebody has changed the password.","keyword":"HAVE","stem":"Somebody appears ______ the password.","accept":["to have changed"],"maxWords":5,"marks":2,"why":"It appears that ＋ 子句可以改寫成主詞 ＋ appear ＋ 不定詞。子句裡的完成式 has changed 搬進不定詞之後就變成 to have changed，時間差由 have 扛。"},{"n":6,"type":"keyword","q":"People say that the singer wrote the whole song in one night.","keyword":"SAID","stem":"The singer ______ the whole song in one night.","accept":["is said to have written"],"maxWords":5,"marks":2,"why":"這一題要疊三層：People say 變成被動的 is said，wrote 比 say 更早所以用完成不定詞 to have written。剛好用滿五個字，寫成 was said 就和原句的現在式對不上。"}],"phrasal-verbs-paraphrase":[{"n":1,"type":"mc","q":"Only six people ______ for practice because of the rain.","opts":["turned up","turned on","turned into","turned down"],"a":0,"why":["✓ turn up 等於 arrive 或 appear，用在人出現在某個場合。","✗ turn on 是打開電器或開關。","✗ turn into 是變成另一種東西。","✗ turn down 是拒絕，或把音量調小。"]},{"n":2,"type":"mc","q":"The school ______ the sports day because of the typhoon warning.","opts":["put on","called off","looked into","gave away"],"a":1,"why":["✗ put on 是穿上，或舉辦一場表演，與颱風警報的語意相反。","✓ call off 等於 cancel，活動整個取消。","✗ look into 等於 investigate，是調查，不是取消。","✗ give away 是免費送出東西。"]},{"n":3,"type":"gaptext","q":"填入一個字：Don't put ______ your homework until Sunday night.","accept":["off"],"why":"put off 等於 postpone，把事情往後延。背片語動詞時記得把單字同義詞一起背：Part 1 的四選一常常就是靠這個對應在設陷阱。"},{"n":4,"type":"mc","q":"The meeting clashes with the concert, so we'll have to ______ until next week.","opts":["put off it","put it off","put off","put them off"],"a":1,"why":["✗ 中文「把它延後」的受詞跟在動詞後面，照著語序搬過來就錯了。","✓ 可分離片語動詞遇到代名詞受詞，一定要把它夾在動詞和小字中間。","✗ 缺了受詞，前面既然點名了 the meeting，就要用 it 代替。","✗ them 是複數，但前面只有 the meeting 一件事。"]},{"n":5,"type":"keyword","q":"The school is investigating the complaint about the bus service.","keyword":"LOOKING","stem":"The school is ______ the complaint about the bus service.","accept":["looking into"],"maxWords":5,"marks":2,"why":"正式的 investigate 換成口語的 look into，兩個字合起來才等於一個動詞，into 不能省。這種語域互換就是 Part 4 考片語動詞的標準做法。"},{"n":6,"type":"keyword","q":"Hardly anybody arrived at the charity run on Sunday.","keyword":"TURNED","stem":"Hardly anybody ______ the charity run on Sunday.","accept":["turned up for","turned up at"],"maxWords":5,"marks":2,"why":"arrive 換成 turn up 之後，後面的介系詞要重新選：接活動用 for 或 at。片語動詞換過去了，介系詞往往也要跟著換，這一格最常掉分。"}],"noun-clauses":[{"n":1,"type":"mc","q":"The fact ______ he apologised in front of everyone changed the whole mood.","opts":["what","that","which","of"],"a":1,"why":["✗ what 本身帶著「所……的東西」的意思，不能拿來說明前面的 the fact。","✓ the fact that ＋ 子句是固定搭配，that 在這裡只是把整個子句掛到 the fact 後面。","✗ which 用在關係子句，後面的子句會缺一個成分，但這裡的子句是完整的。","✗ of 是介系詞，後面接名詞或動名詞，接不了完整子句。"]},{"n":2,"type":"mc","q":"I'm not sure ______ the pool is open on Sundays.","opts":["that","whether","what","which"],"a":1,"why":["✗ that 引導的是肯定的事實，但這句話還沒確定。","✓ 語意是「開不開還不確定」，用 whether 引導的名詞子句，if 在口語裡也可以。","✗ what 在子句裡要當主詞或受詞，這裡的子句已經完整。","✗ which 需要有選項範圍，句子裡沒有。"]},{"n":3,"type":"gaptext","q":"填入一個字：______ nobody mentioned was the cost of the whole trip.","accept":["What","what"],"why":"整個句子的主詞是一個名詞子句，what 同時當引導詞和 mentioned 的受詞，所以子句裡不需要再出現受詞。後面的動詞 was 用單數，因為名詞子句整團算一個。"},{"n":4,"type":"mc","q":"I still don't know ______ so early.","opts":["why did she leave","why she left","why she leave","why was she left"],"a":1,"why":["✗ did 是直接問句的助動詞，被 know 包起來之後就不出現了，這是中文「她為什麼那麼早走」直接搬過來的結果。","✓ 名詞子句用肯定句語序：wh- ＋ 主詞 ＋ 動詞，時態直接由 left 表示。","✗ 動詞沒有變成過去式，也沒有和主詞一致。","✗ was left 是被動，意思變成她被留下來，語意不合。"]},{"n":5,"type":"keyword","q":"He apologised, and that changed everything.","keyword":"FACT","stem":"______ he apologised changed everything.","accept":["The fact that"],"maxWords":5,"marks":2,"why":"原句的 that changed everything 指的是「他道歉」這整件事，改寫時把它包成名詞子句當主詞：The fact that ＋ 子句。後面的動詞 changed 直接跟在子句後面，中間不加逗號。"},{"n":6,"type":"keyword","q":"Sam hasn't decided if he will join the trip or not.","keyword":"WHETHER","stem":"Sam hasn't decided ______ the trip.","accept":["whether to join","whether or not to join"],"maxWords":5,"marks":2,"why":"主要子句和子句的主詞都是 Sam，這時可以把子句壓成 whether ＋ 不定詞。注意 if 不能這樣用：if to join 不成立，只有 whether 可以直接接不定詞。"}],"advanced-passives":[{"n":1,"type":"mc","q":"The riverside path ______ since the flood in June.","opts":["has closed","has been closed","is closing","has being closed"],"a":1,"why":["✗ 步道不會自己關閉，主詞是被關的一方。","✓ 完成式被動的形狀是 have/has ＋ been ＋ 過去分詞，線索是 since ＋ 時間點。","✗ 現在進行式沒有被動的意思，也配不上 since。","✗ 完成式後面接的是 been，不是 being。"]},{"n":2,"type":"mc","q":"______ that the old theatre on that corner is haunted.","opts":["Someone says","It is said","It says","There is said"],"a":1,"why":["✗ 中文的「據說」沒有主詞，直翻成 someone says 又口語又不精確。","✓ 非人稱被動的固定框架 It is said that ＋ 子句，消息來源刻意留白。","✗ It says 用在文件、標示或訊息上寫著什麼。","✗ There is said 要接 to be 才完整，接不了 that 子句。"]},{"n":3,"type":"gaptext","q":"填入一個字：The old theatre is said ______ be the oldest building in the district.","accept":["to"],"why":"同一個意思有兩個現成框架：It is said that ＋ 子句，或主詞 ＋ be said ＋ to V。這一題用的是第二種，被挖掉的就是那個 to。"},{"n":4,"type":"mc","q":"The lift ______ at the moment, so we're all using the stairs.","opts":["is repairing","is being repaired","is been repaired","has being repaired"],"a":1,"why":["✗ 電梯不會自己修理東西，它是被修的一方。","✓ 進行式被動的形狀是 be ＋ being ＋ 過去分詞，線索是 at the moment。","✗ is 後面要接 being，been 用在完成式。","✗ has 後面要接 been，順序剛好相反。"]},{"n":5,"type":"keyword","q":"Somebody has already cleaned the whiteboard.","keyword":"BEEN","stem":"The whiteboard ______ already.","accept":["has been cleaned"],"maxWords":5,"marks":2,"why":"主動改被動時，受詞 the whiteboard 升上來當主詞，完成式跟著保留：has been ＋ 過去分詞。原句的 somebody 沒有實際訊息，改寫後直接消失，不必寫 by somebody。"},{"n":6,"type":"keyword","q":"People believe that the new bridge is the longest in the country.","keyword":"BELIEVED","stem":"The new bridge ______ the longest in the country.","accept":["is believed to be"],"maxWords":5,"marks":2,"why":"People believe that ＋ 子句有兩種被動寫法，這題要的是第二種：把子句的主詞提上來，寫成 is believed to be。子句和主要動詞的時間一樣，所以用 to be，不用 to have been。"}]};</script>
+<script>
+(function(){
+  if(typeof GDRILLS==='undefined') return;
+  var L=function(i){return String.fromCharCode(65+i)};
+  var norm=function(s){return (s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'')};
+  var esc=function(s){return String(s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})};
+
+  Object.keys(GDRILLS).forEach(function(slug){
+    var host=document.querySelector('.gd-form[data-slug="'+slug+'"]');
+    if(!host) return;
+    var items=GDRILLS[slug];
+    host.innerHTML=items.map(function(it){
+      var mark='<span class="gd-mark" aria-hidden="true"></span>';
+      var why=Array.isArray(it.why)
+        ? it.why.map(function(w,i){return '<p><b>'+L(i)+'：</b>'+esc(w)+'</p>'}).join('')
+        : '<p>'+esc(it.why)+'</p>';
+      var head='<p class="gd-q"><span class="gd-n">'+it.n+'.</span>'+esc(it.q)+'</p>';
+      if(it.type==='mc'){
+        var o=it.opts.map(function(t,i){
+          return '<label class="gd-opt"><input type="radio" name="'+slug+'_'+it.n+'" value="'+i+'">'+
+                 '<span><b>'+L(i)+'</b>　'+esc(t)+'</span></label>'}).join('');
+        return '<div class="gd-item" data-k="'+slug+'_'+it.n+'">'+head+
+               '<div class="gd-opts">'+o+'</div>'+mark+'<div class="gd-why">'+why+'</div></div>';
+      }
+      if(it.type==='keyword'){
+        return '<div class="gd-item" data-k="'+slug+'_'+it.n+'">'+head+
+          '<span class="gd-key">'+esc(it.keyword)+'</span>'+
+          '<p class="gd-q" style="margin:0 0 8px">'+esc(it.stem)+'</p>'+
+          '<input class="gd-in wide" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 '+it.n+' 題答案">'+
+          mark+'<div class="gd-why">'+why+'</div></div>';
+      }
+      return '<div class="gd-item" data-k="'+slug+'_'+it.n+'">'+head+
+        '<input class="gd-in" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 '+it.n+' 題答案">'+
+        mark+'<div class="gd-why">'+why+'</div></div>';
+    }).join('');
+
+    host.addEventListener('change',function(e){
+      var box=e.target.closest('.gd-item'); if(!box) return;
+      box.querySelectorAll('.gd-opt').forEach(function(o){
+        o.classList.toggle('sel',o.querySelector('input').checked)});
+    });
+
+    var wrap=host.closest('.gd-body');
+    wrap.querySelector('[data-act="check"]').addEventListener('click',function(){
+      var got=0,total=0;
+      items.forEach(function(it){
+        var m=it.marks||1; total+=m;
+        var box=host.querySelector('[data-k="'+slug+'_'+it.n+'"]');
+        var mark=box.querySelector('.gd-mark');
+        if(it.accept){
+          var inp=box.querySelector('input');
+          var ok=it.accept.map(norm).indexOf(norm(inp.value))>-1;
+          inp.classList.toggle('right',ok);
+          inp.classList.toggle('wrong',!ok&&inp.value.trim()!=='');
+          mark.textContent=ok?'✓':'✗（正確：'+it.accept[0]+'）';
+          mark.className='gd-mark '+(ok?'ok':'no');
+          if(ok)got+=m;
+        }else{
+          var sel=box.querySelector('input:checked');
+          box.querySelectorAll('.gd-opt').forEach(function(o,i){
+            o.classList.remove('right','wrong');
+            if(i===it.a)o.classList.add('right');
+            else if(o.querySelector('input').checked)o.classList.add('wrong')});
+          var ok2=sel&&+sel.value===it.a;
+          mark.textContent=ok2?'✓':(sel?'✗':'—');
+          mark.className='gd-mark '+(ok2?'ok':'no');
+          if(ok2)got+=m;
+        }
+      });
+      var sc=wrap.querySelector('.gd-score');
+      sc.textContent='得分 '+got+' / '+total; sc.classList.add('show');
+      host.classList.add('show-why');
+    });
+    wrap.querySelector('[data-act="why"]').addEventListener('click',function(){
+      host.classList.toggle('show-why')});
+    wrap.querySelector('[data-act="reset"]').addEventListener('click',function(){
+      host.classList.remove('show-why');
+      host.querySelectorAll('input[type=radio]').forEach(function(r){r.checked=false});
+      host.querySelectorAll('input[type=text]').forEach(function(t){t.value='';t.className=t.className.replace(/\s*(right|wrong)/g,'')});
+      host.querySelectorAll('.gd-opt').forEach(function(o){o.classList.remove('sel','right','wrong')});
+      host.querySelectorAll('.gd-mark').forEach(function(m){m.textContent='';m.className='gd-mark'});
+      var sc=wrap.querySelector('.gd-score'); sc.classList.remove('show'); sc.textContent='';
+    });
+  });
+})();
+</script>
 <script src="/assets/app.js?v=11"></script>
 </body>
 </html>

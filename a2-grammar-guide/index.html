@@ -54,6 +54,37 @@
 .gtop:hover{color:var(--blue)}
 .g-src{max-width:760px;margin:30px auto 0;background:#F4FAFF;border:1px solid rgba(28,176,246,.22);border-radius:18px;padding:18px 22px;font-size:14.5px;line-height:1.8;color:var(--text-body)}
 .g-src b{color:var(--navy)}
+.gdrill{margin-top:16px;border:2px dashed rgba(28,176,246,.42);border-radius:16px;overflow:hidden}
+.gdrill summary{list-style:none;cursor:pointer;padding:13px 18px;background:#F4FAFF;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14.5px;color:var(--blue);display:flex;align-items:center;gap:9px}
+.gdrill summary::-webkit-details-marker{display:none}
+.gdrill summary::before{content:'b8';transition:transform .18s}
+.gdrill[open] summary::before{transform:rotate(90deg)}
+.gdrill .gd-body{padding:16px 18px 18px}
+.gd-item{padding:13px 0;border-bottom:1px dashed #eef2f7}
+.gd-item:last-of-type{border-bottom:0}
+.gd-q{font-size:16px;line-height:1.75;color:var(--navy);margin:0 0 9px}
+.gd-q .gd-n{font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--c);margin-right:8px}
+.gd-opts{display:flex;flex-direction:column;gap:7px}
+.gd-opt{display:flex;gap:9px;align-items:flex-start;border:2px solid #e6ebf2;border-radius:11px;padding:8px 12px;cursor:pointer;font-size:15.5px;line-height:1.6;transition:border-color .12s,background .12s}
+.gd-opt:hover{border-color:var(--c)}
+.gd-opt input{margin-top:4px;accent-color:var(--c);flex:none}
+.gd-opt.sel{border-color:var(--c);background:rgba(28,176,246,.07)}
+.gd-opt.right{border-color:var(--green);background:rgba(6,199,85,.09)}
+.gd-opt.wrong{border-color:#e5484d;background:rgba(229,72,77,.07)}
+.gd-in{font:inherit;font-size:15.5px;padding:7px 12px;border:2px solid #e6ebf2;border-radius:10px;width:190px;max-width:70vw}
+.gd-in.wide{width:320px}
+.gd-in.right{border-color:var(--green);background:rgba(6,199,85,.07)}
+.gd-in.wrong{border-color:#e5484d;background:rgba(229,72,77,.06)}
+.gd-key{display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:11.5px;letter-spacing:1.3px;color:#fff;background:var(--purple);border-radius:7px;padding:3px 10px;margin:0 0 7px}
+.gd-mark{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;margin-left:9px}
+.gd-mark.ok{color:var(--green)} .gd-mark.no{color:#e5484d}
+.gd-why{display:none;margin-top:9px;font-size:14px;line-height:1.75;color:#7b8794;padding-left:12px;border-left:3px solid rgba(28,176,246,.25)}
+.gd-why p{margin:0 0 4px}
+.show-why .gd-why{display:block}
+.gd-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:16px}
+.gd-bar .btn{padding:9px 18px;min-height:40px;font-size:14px}
+.gd-score{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:16px;color:var(--navy);background:var(--light-blue);border-radius:11px;padding:7px 15px;display:none}
+.gd-score.show{display:inline-block}
 @media(max-width:640px){.gtag{margin-left:0;order:3;width:100%;justify-content:center}.gex td.nt{width:auto;white-space:normal}}
 </style>
 <!-- AE:SEO-LD start -->
@@ -126,6 +157,7 @@
     <div class="ln"><span class="v">✓</span><span>She <u>bought</u> a new bag yesterday.</span></div>
     <p class="why">buy 是不規則動詞，過去式不加 -ed；把 buy–bought、go–went、see–saw 當成「一組兩個字」一起背，比背規則更不容易在緊張的時候套錯。</p></div>
   <div class="gnext"><b>再上一級</b>B1（PET）不會要求更多動詞變化，但同一批不規則動詞得能用在報導別人說過的話（reported speech）裡，時態整組往後推一格，等於同一份動詞表要背得更熟。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="verbs" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="modals" style="--c:#CE82FF;--cd:#a94fe0;--cs:rgba(206,130,255,.32)">
@@ -142,6 +174,7 @@
     <div class="ln"><span class="v">✓</span><span>You <u>should</u> drink more water.</span></div>
     <p class="why">中文的「應該要」裡帶著一個「要」，孩子照著翻就多冒出一個 to；記住只有 have to、need to 自帶 to，其他情態動詞後面直接接原形動詞。</p></div>
   <div class="gnext"><b>再上一級</b>B1（PET）會再加上 might、ought to、used to，以及情態動詞的被動說法和使役的 have／get something done，要分辨的語氣強弱變得更細。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="modals" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="tenses" style="--c:#06C755;--cd:#04a046;--cs:rgba(6,199,85,.28)">
@@ -158,6 +191,7 @@
     <div class="ln"><span class="v">✓</span><span>I <u>will come</u> to your house by bus tomorrow.</span></div>
     <p class="why">中文說「我明天坐公車去你家」，用現在式就能表示未來，英文不行——句子裡出現 tomorrow、next week 這類字，動詞就得跟著改成 will 或 be going to。</p></div>
   <div class="gnext"><b>再上一級</b>B1（PET）在同一批時態上加了報導別人說過的話（reported speech），原本的時態要整組往後推一格，判斷「這句話原來是什麼時候說的」變成常考點。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="tenses" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="verb-forms" style="--c:#F0997B;--cd:#d97a5c;--cs:rgba(240,153,123,.38)">
@@ -174,6 +208,7 @@
     <div class="ln"><span class="v">✓</span><span>He <u>doesn't</u> like sports.</span></div>
     <p class="why">中文的「不喜歡」直接把「不」放在動詞前面，英文得先放 do／does／did，而且助動詞出現後，後面的動詞要退回原形（是 doesn't like，不是 doesn't likes）。</p></div>
   <div class="gnext"><b>再上一級</b>B1（PET）把被動式擴大到更多時態，並加入使役的 have／get something done，還要分辨更多「哪些動詞後面接 to、哪些接 -ing」。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="verb-forms" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="clause-types" style="--c:#4C6FE7;--cd:#3652bd;--cs:rgba(76,111,231,.26)">
@@ -190,6 +225,7 @@
     <div class="ln"><span class="v">✓</span><span><u>Because</u> I was tired, I went to bed early.</span></div>
     <p class="why">中文的「因為……所以……」是成雙出現的，英文只能留一個——用了 because 就不再放 so，反過來也一樣。</p></div>
   <div class="gnext"><b>再上一級</b>B1（PET）才正式把條件句分成 type 0／1／2 來考，也加入 although、while、unless、so that、in order to 這類更精細的連接方式；type 3 條件句官方並沒有列進 B1 的範圍。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="clause-types" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="interrogatives" style="--c:#EC6F9E;--cd:#c9527d;--cs:rgba(236,111,158,.30)">
@@ -206,6 +242,7 @@
     <div class="ln"><span class="v">✓</span><span><u>Where did you go</u> yesterday?</span></div>
     <p class="why">中文的問句和肯定句順序一樣（你昨天去哪裡），只換一個疑問詞；英文得多放一個 did 到主詞前面，而且動詞要退回原形 go。</p></div>
   <div class="gnext"><b>再上一級</b>B1（PET）會加上間接問句與報導問句（She asked me where I lived），語序反而要變回肯定句的排法，是另一個要重新適應的規則。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="interrogatives" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="nouns" style="--c:#1CB0F6;--cd:#1391cc;--cs:rgba(28,176,246,.30)">
@@ -222,6 +259,7 @@
     <div class="ln"><span class="v">✓</span><span>I have three <u>books</u> in my bag.</span></div>
     <p class="why">中文說「三本書」時「書」不變形，數字已經把話講完了；英文要求數字和名詞兩邊都顯示複數，寫完一句先找 two、three、many、a lot of，看到就檢查 -s。</p></div>
   <div class="gnext"><b>再上一級</b>B1（PET）的名詞規則和 A2 相同，但可數／不可數的判斷延伸到 advice、information、news 這類抽象名詞，得一個一個記，不能靠直覺。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="nouns" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="pronouns" style="--c:#CE82FF;--cd:#a94fe0;--cs:rgba(206,130,255,.32)">
@@ -238,6 +276,7 @@
     <div class="ln"><span class="v">✓</span><span><u>It is</u> very hot today.</span></div>
     <p class="why">中文說「今天很熱」不需要主詞，英文的句子一定要有主詞，天氣、時間、距離這種沒有實際主角的句子就用 It 補上。</p></div>
   <div class="gnext"><b>再上一級</b>B1（PET）的關係子句用得更長也更頻繁，句子一長，代名詞到底指前面哪一個人事物，就變成閱讀時要主動確認的事。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="pronouns" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="determiners" style="--c:#06C755;--cd:#04a046;--cs:rgba(6,199,85,.28)">
@@ -254,6 +293,7 @@
     <div class="ln"><span class="v">✓</span><span>My sister is <u>a</u> teacher.</span></div>
     <p class="why">中文說「我姊姊是老師」沒有放冠詞的位置，英文的單數可數名詞前面幾乎一定要有 a／an／the，講職業時固定用 a。</p></div>
   <div class="gnext"><b>再上一級</b>同一組 a／the 規則到了 B1（PET）不會改變，但文章更長、名詞更抽象，判斷「這個名詞讀者是不是已經知道了」就更需要看上下文。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="determiners" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="adjectives" style="--c:#F0997B;--cd:#d97a5c;--cs:rgba(240,153,123,.38)">
@@ -270,6 +310,7 @@
     <div class="ln"><span class="v">✓</span><span>My brother is <u>taller</u> than me.</span></div>
     <p class="why">中文的「比較高」是在形容詞前面加一個「比較」，孩子就直覺翻成 more；英文的短形容詞要改字尾 -er，more 只留給 interesting、expensive 這種長字。</p></div>
   <div class="gnext"><b>再上一級</b>B1（PET）的官方附錄在這一類明列了 (not) as … as、not … enough to、too … to 這組對等與程度比較，另外還加上分詞當形容詞與複合形容詞。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="adjectives" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="adverbs" style="--c:#4C6FE7;--cd:#3652bd;--cs:rgba(76,111,231,.26)">
@@ -286,6 +327,7 @@
     <div class="ln"><span class="v">✓</span><span>I <u>really</u> like swimming.</span></div>
     <p class="why">中文的「很喜歡」把「很」擺在動詞前面，英文的 very 不能修飾動詞——要嘛換成 really like，要嘛改寫成 like swimming very much。</p></div>
   <div class="gnext"><b>再上一級</b>B1（PET）的副詞範圍擴大到更多用來連接與評論的副詞，一個句子裡同時出現兩三個副詞時，擺放位置的判斷也更講究。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="adverbs" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="prepositions" style="--c:#EC6F9E;--cd:#c9527d;--cs:rgba(236,111,158,.30)">
@@ -302,6 +344,7 @@
     <div class="ln"><span class="v">✓</span><span>I go to school <u>on</u> Monday morning.</span></div>
     <p class="why">中文的「在」一個字包辦時間和地點，英文分工很細：星期和日期用 on、月份和年份用 in、鐘點用 at，三個字各配一組例句一起背最有效。</p></div>
   <div class="gnext"><b>再上一級</b>B1（PET）的介系詞開始和動詞綁在一起考——片語動詞（look after、get on with）要到 B1 才正式成為官方清單裡的一個類別，數量也明顯變多。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="prepositions" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="connectives" style="--c:#1CB0F6;--cd:#1391cc;--cs:rgba(28,176,246,.30)">
@@ -318,6 +361,7 @@
     <div class="ln"><span class="v">✓</span><span>I missed the bus <u>because</u> I got up late.</span></div>
     <p class="why">中文可以用逗號一路把句子串下去（我起晚了，公車沒趕上，上學遲到），英文的兩個完整句子中間不能只放一個逗號，必須有連接詞或改成句號——Part 7 寫故事時最容易犯。</p></div>
   <div class="gnext"><b>再上一級</b>B1（PET）的連接詞清單明顯變長，加入 although、while、whereas、so that、in order to、unless 等，能表達的邏輯關係比 A2 的七個字細得多。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="connectives" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
     </div>
@@ -347,6 +391,93 @@
 </section>
 
 </main>
+<script>const GDRILLS = {"verbs":[{"n":1,"type":"mc","q":"My father ______ coffee every morning.","opts":["drink","drinks","drinking"],"a":1,"why":["✗ drink 是原形，主詞 My father 是第三人稱單數，現在簡單式要加 -s。","✓ 句尾的 every morning 表示每天的習慣，用現在簡單式；主詞是第三人稱單數，所以 drink 要變成 drinks。","✗ drinking 不能單獨當動詞，前面要有 be 動詞（is drinking），而且進行式講的是此刻正在做，和 every morning 的習慣衝突。"]},{"n":2,"type":"mc","q":"We ______ football in the park last Saturday.","opts":["play","played","plays"],"a":1,"why":["✗ play 是原形，句尾的 last Saturday 已經表示過去，動詞要改成過去式。","✓ play 是規則動詞，過去式加 -ed，配合句尾的 last Saturday 正確。","✗ plays 是第三人稱單數的現在式，主詞 We 是複數不能用，時間也對不上。"]},{"n":3,"type":"gaptext","q":"填入一個字：We ______ (see) a big elephant at the zoo last Sunday.","accept":["saw"],"why":"句尾的 last Sunday 表示過去，see 是不規則動詞，過去式是 saw，沒有 seed 這個字；seen 要和 have 一起用（have seen），這句沒有 have。"},{"n":4,"type":"mc","q":"Our teacher ______ us a funny story yesterday.","opts":["telled","told","tells"],"a":1,"why":["✗ 不規則動詞不能套 -ed 的規則，英文沒有 telled 這個字。","✓ tell 的過去式是不規則的 told，配合句尾的 yesterday 正確。","✗ tells 是現在簡單式，用在習慣或現在的事，和 yesterday 衝突。"]},{"n":5,"type":"mc","q":"I usually walk to school, but yesterday my dad ______ me.","opts":["drives","drove","driving"],"a":1,"why":["✗ drives 是現在式，前半句的 usually 確實是習慣，但逗號後面有 yesterday，這個動詞要跟著改成過去式。","✓ 逗號後面的 yesterday 是關鍵字，drive 的過去式是不規則的 drove。","✗ driving 不能單獨當動詞，前面要有 be 動詞，而且這裡要的是過去簡單式。"]},{"n":6,"type":"gaptext","q":"填入一個字：The rain ______ (stop) at about five o'clock yesterday.","accept":["stopped"],"why":"句尾的 yesterday 表示過去，stop 是規則動詞加 -ed，但它是短母音加單一子音結尾，加 -ed 之前要重複最後那個 p，寫成 stopped；只寫 stoped 是很常見的拼字失分。"}],"modals":[{"n":1,"type":"mc","q":"My sister ______ speak Japanese very well.","opts":["can","cans","can to"],"a":0,"why":["✓ can 表示能力，後面直接接原形動詞 speak。","✗ 情態動詞不隨主詞變化，第三人稱單數也不加 -s，沒有 cans 這種用法。","✗ can 後面不加 to，只有 have to、need to 自己帶著 to。"]},{"n":2,"type":"mc","q":"______ you help me with my bag, please?","opts":["Could","Must","Should"],"a":0,"why":["✓ 句尾的 please 表示這是客氣的請求，用 Could 最自然。","✗ Must 講的是規定或非做不可的事，用來拜託別人會變成命令。","✗ Should 是給對方建議（你應該幫我拿包包），不是請求。"]},{"n":3,"type":"gaptext","q":"填入一個字（縮寫算一個字）：My brother is afraid of water, so he ______ swim.","accept":["can't","can’t","cannot"],"why":"前半句的 is afraid of water 是線索，這裡要說的是「不會、沒有能力」，用 can 的否定 can't（也可以寫成 cannot）；不能用 doesn't swim，那是說他不游泳，不是不會游。"},{"n":4,"type":"mc","q":"We ______ wear a uniform at our school.","opts":["have to","have","must to"],"a":0,"why":["✓ 校規是外面來的規定，用 have to，而且 have to 本來就帶著 to。","✗ 只寫 have 會變成「我們有制服」，少了 to 就沒有「必須」的意思。","✗ must 後面直接接原形動詞，不加 to，中文的「必須要」裡那個「要」不要翻出來。"]},{"n":5,"type":"mc","q":"You look tired. You ______ go to bed early tonight.","opts":["should to","should","should going"],"a":1,"why":["✗ 中文的「應該要」帶著一個「要」，照著翻就多冒出一個 to；should 後面不加 to。","✓ 前一句 You look tired 是給建議的線索，should 後面直接接原形動詞 go。","✗ 情態動詞後面一律接原形動詞，不能接 -ing。"]},{"n":6,"type":"gaptext","q":"填入一個字：Sam has to ______ (leave) home at seven every morning.","accept":["leave"],"why":"has to 已經把第三人稱單數的 -s 放在 has 上面了，後面接原形 leave；寫成 leaves 等於同一句話加了兩次 -s，這是 have to／has to 後面最常見的錯誤。"}],"tenses":[{"n":1,"type":"mc","q":"Be quiet. My baby brother ______ in the next room.","opts":["sleeps","is sleeping","slept"],"a":1,"why":["✗ sleeps 是現在簡單式，講的是每天的習慣，這句說的是此刻正在發生的事。","✓ 前一句 Be quiet 指的就是現在這一刻，用現在進行式 is sleeping。","✗ slept 是過去式，但弟弟現在還在睡，時間點不對。"]},{"n":2,"type":"mc","q":"We ______ dinner at seven o'clock every evening.","opts":["have","are having","had"],"a":0,"why":["✓ 句尾的 every evening 表示習慣，用現在簡單式；主詞 We 是複數，動詞用原形 have。","✗ are having 是現在進行式，講的是此刻正在吃，和 every evening 的習慣衝突。","✗ had 是過去式，這句講的是每天的習慣，不是昨天那一餐。"]},{"n":3,"type":"mc","q":"It ______ when I left the house this morning, so I took an umbrella.","opts":["rains","was raining","is raining"],"a":1,"why":["✗ rains 是現在簡單式，整句在講今天早上已經發生的事。","✓ 出門的那一刻雨正在下，是過去某個時間點正在進行的動作，用過去進行式 was raining。","✗ is raining 是現在進行式，但句子裡的 left、took 都是過去式，同一句的時態要一致。"]},{"n":4,"type":"gaptext","q":"填入一個字：My cousin has ______ (be) to Japan three times.","accept":["been"],"why":"has 後面要接過去分詞，be 的過去分詞是 been；was 是過去式，不能接在 has 後面。另外 has gone to Japan 的意思是人現在還在日本，和 three times 講經驗次數不合。"},{"n":5,"type":"mc","q":"I ______ my grandparents in Tainan next weekend.","opts":["visit","will visit","visited"],"a":1,"why":["✗ 中文說「我下週末去台南看爺爺奶奶」用現在式就通，英文不行；句尾出現 next weekend，動詞就得改成未來式。","✓ next weekend 表示未來，用 will visit，也可以說 am going to visit。","✗ visited 是過去式，和 next weekend 的方向剛好相反。"]},{"n":6,"type":"gaptext","q":"填入一個字：A: Do you want some lunch? B: No, thanks. I ______ already eaten.","accept":["have","'ve","’ve"],"why":"空格後面的 eaten 是過去分詞，前面一定要有 have 才組得成現在完成式；already 也是現在完成式的常見搭配字，表示「已經吃過了，現在不餓」。只寫 I already eaten 就是漏掉助動詞。"}],"verb-forms":[{"n":1,"type":"mc","q":"______ forget your lunch box.","opts":["Don't","Not","No"],"a":0,"why":["✓ 祈使句的否定固定用 Don't 加原形動詞，告示和短訊上最常看到。","✗ Not 不能單獨放在句首指揮別人，英文的否定命令一定要 Don't。","✗ No 後面接名詞或動名詞（No smoking、No dogs），不能直接接原形動詞 forget。"]},{"n":2,"type":"mc","q":"______ your brother like basketball?","opts":["Do","Does","Is"],"a":1,"why":["✗ 主詞 your brother 是第三人稱單數，助動詞要用 Does。","✓ 一般動詞 like 造疑問句要請助動詞幫忙，第三人稱單數用 Does，後面的動詞保持原形 like。","✗ Is 是 be 動詞，這句的動詞已經是 like，一個句子不能同時放 is 和 like。"]},{"n":3,"type":"gaptext","q":"填入一個字（縮寫算一個字）：My father ______ like coffee. He only drinks tea.","accept":["doesn't","doesn’t"],"why":"中文的「不喜歡」是把「不」放在動詞前面，英文不能直接寫 not like，要先叫出助動詞 do／does；主詞 My father 是第三人稱單數，所以用 doesn't，而且助動詞一出現，後面的動詞就退回原形 like，不是 likes。"},{"n":4,"type":"mc","q":"My sister enjoys ______ story books on the sofa.","opts":["read","to read","reading"],"a":2,"why":["✗ enjoy 後面不能直接接原形動詞。","✗ enjoy 後面不接 to 加原形，want、would like 才是接 to（want to read）。","✓ enjoy、finish、like 這一類動詞後面接動名詞 -ing，所以是 enjoys reading。"]},{"n":5,"type":"mc","q":"My cousin doesn't ______ vegetables.","opts":["likes","like","liking"],"a":1,"why":["✗ 助動詞 doesn't 已經帶著第三人稱單數的 -s，後面的動詞不能再加一次。","✓ 只要句子裡出現 do／does／did，後面的動詞一律退回原形 like。","✗ -ing 要和 be 動詞一起用（is liking），這句的助動詞是 doesn't。"]},{"n":6,"type":"gaptext","q":"填入一個字：The library is ______ (close) on Sundays, so we went there on Saturday.","accept":["closed"],"why":"圖書館是被人關上的，這種被動的說法是 be 動詞加過去分詞，所以是 is closed；寫成 is close 會變成形容詞「很近」，寫成 is closing 是現在正要關門，都不是星期天固定不開的意思。"}],"clause-types":[{"n":1,"type":"mc","q":"I like maths, ______ I don't like history.","opts":["but","because","or"],"a":0,"why":["✓ 前後兩件事相反，用 but 接成一個對等的句子。","✗ because 帶出原因，喜歡數學並不是不喜歡歷史的原因。","✗ or 用在二選一，這裡兩句都是事實，不是選擇。"]},{"n":2,"type":"gaptext","q":"填入一個字：We stayed at home ______ it was very cold outside.","accept":["because"],"why":"後半句的 it was very cold 是前半句的原因，用 because 帶出從屬子句。注意中文的「因為……所以……」是成雙出現的，英文只能留一個，用了 because 後面就不再放 so。"},{"n":3,"type":"mc","q":"______ you finish your homework, you can watch TV.","opts":["If","Because","But"],"a":0,"why":["✓ 寫完功課是看電視的條件，用 If 帶出從屬子句；A2 的 if 就是一個普通的連接詞，不必背條件句公式。","✗ Because 帶出的是原因，但寫功課不是可以看電視的原因，而是先決條件。","✗ But 是對等連接詞，不能放句首帶出一個子句再接主句。"]},{"n":4,"type":"gaptext","q":"填入一個字：This is the classroom ______ we have our English lessons.","accept":["where"],"why":"空格後面是一個完整的句子，用來說明前面的 classroom 是什麼地方，地點用 where。不能用 which，因為 which 後面的句子要少一個主詞或受詞；也不能用 there，there 不是連接詞。"},{"n":5,"type":"mc","q":"Because the weather was bad, ______ stayed at home all day.","opts":["so we","we","and we"],"a":1,"why":["✗ 中文的「因為……所以……」成雙出現，英文只留一個；句首已經有 Because，後面就不能再放 so。","✓ Because 帶出的是從屬子句，逗號後面直接接主句的主詞 we 加動詞。","✗ and 是用來連接兩個對等的句子，前面已經有 Because 這個從屬連接詞了，不需要再加一個。"]},{"n":6,"type":"mc","q":"We will go to the beach when the rain ______.","opts":["will stop","stops","stopped"],"a":1,"why":["✗ when 帶出的子句裡不放 will，未來的意思已經由主句的 will go 表達過了。","✓ when、if 帶出的子句用現在簡單式代替未來式；主詞 the rain 是第三人稱單數，所以是 stops。","✗ stopped 是過去式，但整句講的是還沒發生的事。"]}],"interrogatives":[{"n":1,"type":"mc","q":"______ do you live?","opts":["Where","When","Who"],"a":0,"why":["✓ 問住在哪裡用 Where，回答會是 In Banqiao 這種地點。","✗ When 問的是時間，回答會是時間，和 live 搭不起來。","✗ Who 問人，而且 Who 當主詞時後面不需要 do（Who lives here）。"]},{"n":2,"type":"mc","q":"______ is that girl in the red hat?","opts":["Who","What","Where"],"a":0,"why":["✓ 問一個人的身分用 Who，回答會是 She is my cousin 這一類。","✗ What 問東西或事情，拿來問人不但沒禮貌，也問不出是誰。","✗ Where 問地點，回答會是一個地方，和這句要問的「她是誰」對不上。"]},{"n":3,"type":"gaptext","q":"填入一個字：A: ______ do you go to school every day? B: I go by bus.","accept":["How","how"],"why":"回答是 by bus，講的是交通方式，方式用 How 來問；問地點才用 Where，問時間才用 When。"},{"n":4,"type":"mc","q":"What time ______ the film start?","opts":["do","does","is"],"a":1,"why":["✗ 主詞 the film 是第三人稱單數，助動詞要用 does。","✓ 一般動詞 start 的疑問句要用助動詞，第三人稱單數用 does，後面的動詞保持原形 start。","✗ is 是 be 動詞，這句的動詞是 start，兩個動詞不能疊在一起。"]},{"n":5,"type":"mc","q":"Where ______ last summer?","opts":["you went","did you go","did you went"],"a":1,"why":["✗ 中文的問句和肯定句順序一樣（你去年夏天去哪裡），英文的疑問詞後面要有助動詞，不能直接接主詞加動詞。","✓ 過去式的問句把 did 放到主詞前面，後面的動詞退回原形 go。","✗ 已經用 did 表示過去了，後面的動詞就不能再變一次過去式。"]},{"n":6,"type":"gaptext","q":"填入一個字：______ your parents at home last night?","accept":["Were","were"],"why":"這句沒有一般動詞，只有 be 動詞，這時候造問句是把 be 動詞搬到主詞前面，不用 do／did。主詞 your parents 是複數，時間是 last night，所以用 Were，不是 Was，也不是 Did。"}],"nouns":[{"n":1,"type":"mc","q":"I have two ______ and one sister.","opts":["brother","brothers","brother's"],"a":1,"why":["✗ 中文說「兩個哥哥」時「哥哥」不變形，英文看到 two 就一定要加 -s。","✓ two 表示不只一個，可數名詞要用複數 brothers。","✗ brother's 是所有格（哥哥的），用來表示東西是誰的，不是複數。"]},{"n":2,"type":"mc","q":"There are twenty-five ______ in my class this year.","opts":["child","children","childrens"],"a":1,"why":["✗ 前面有 twenty-five，名詞一定要用複數。","✓ child 是不規則變化，複數是 children。","✗ children 本身已經是複數了，不能再加一個 -s。"]},{"n":3,"type":"gaptext","q":"填入一個字：I have a lot of ______ (homework) tonight, so I can't go out.","accept":["homework"],"why":"homework 是不可數名詞，沒有複數形，功課再多也不加 -s。同一類的還有 water、money、bread。注意 a lot of 後面可數不可數都能接，不能靠它判斷要不要加 -s。"},{"n":4,"type":"mc","q":"This is my ______ bike. She rides it to school every day.","opts":["sisters","sister's","sister"],"a":1,"why":["✗ sisters 是複數（好幾個姊妹），沒有表達出腳踏車是誰的。","✓ 要說「姊姊的」用所有格，撇號加 s 寫成 sister's。","✗ 只寫 sister 是把名詞直接當形容詞用，英文表示所有權要加 's。"]},{"n":5,"type":"mc","q":"We bought some ______ at the supermarket.","opts":["breads","bread","a bread"],"a":1,"why":["✗ bread 是不可數名詞，不加 -s。","✓ 不可數名詞前面用 some，要講數量會說 two pieces of bread。","✗ 不可數名詞前面不能放 a／an，因為它不能一個一個數。"]},{"n":6,"type":"gaptext","q":"填入一個字：These shoes are too small. My ______ (foot) hurt.","accept":["feet"],"why":"動詞用的是 hurt 不是 hurts，表示主詞是複數；foot 的複數是不規則的 feet，不是 foots。同一類的還有 tooth–teeth、man–men。"}],"pronouns":[{"n":1,"type":"mc","q":"That's my bag. The blue one is ______.","opts":["her","hers","she"],"a":1,"why":["✗ her 後面一定要接名詞（her bag），不能單獨放在句尾。","✓ hers 是所有格代名詞，本身就等於 her bag，後面不再接名詞。","✗ she 是當主詞用的代名詞，不能用來表示「她的東西」。"]},{"n":2,"type":"mc","q":"Are ______ your new shoes?","opts":["this","these","that"],"a":1,"why":["✗ this 是單數，後面要接單數名詞；shoes 是複數，句子的動詞也已經是 Are。","✓ shoes 是複數，而且就在說話的人附近，用 these。","✗ that 也是單數，指的是離自己比較遠的那一個。"]},{"n":3,"type":"mc","q":"The girl ______ sits next to me is from Tainan.","opts":["who","which","where"],"a":0,"why":["✓ 前面是人（The girl），用關係代名詞 who 帶出說明。","✗ which 用來說明東西或動物，不能用在人身上。","✗ where 用來說明地點，而且 where 後面要接完整的句子，這裡空格後面少了主詞。"]},{"n":4,"type":"gaptext","q":"填入一個字：______ is very hot today, so we are staying at home.","accept":["It","it"],"why":"中文說「今天很熱」不需要主詞，英文的句子一定要有主詞；講天氣、時間、距離這種沒有實際主角的句子，固定用 It 頂在前面。直接寫 Is very hot today 是台灣學生很常見的漏字。"},{"n":5,"type":"mc","q":"We didn't buy ______ at the supermarket yesterday.","opts":["something","anything","nothing"],"a":1,"why":["✗ something 用在肯定句，句子裡有 didn't 就要換成 anything。","✓ 否定句配 anything，這是固定的搭配。","✗ 英文一句話只能否定一次，didn't 和 nothing 一起用等於否定兩次；要用 nothing 就得說 We bought nothing。"]},{"n":6,"type":"gaptext","q":"填入一個字：My grandmother made a birthday cake for my brother and ______.","accept":["me"],"why":"介系詞 for 後面要用受格，所以是 for my brother and me。很多學生因為前面接了 and 就寫成 I，但 I 只能當主詞。把 my brother and 遮起來念一次（for me），就聽得出來哪個對。"}],"determiners":[{"n":1,"type":"mc","q":"I saw ______ cat in the garden this morning.","opts":["a","the","an"],"a":0,"why":["✓ 第一次提到這隻貓，聽的人還不知道是哪一隻，用 a。","✗ the 用在雙方都知道是哪一個的時候，這裡是第一次提到。","✗ an 只用在母音發音開頭的字前面，cat 是子音開頭。"]},{"n":2,"type":"mc","q":"We had ______ egg and some bread for breakfast.","opts":["a","an","the"],"a":1,"why":["✗ egg 是母音發音開頭，a 要改成 an 才好發音。","✓ 母音（a、e、i、o、u）發音開頭的單數名詞前面用 an。","✗ the 表示雙方都知道是哪一顆蛋，但這顆蛋是第一次提到。"]},{"n":3,"type":"gaptext","q":"填入一個字：My uncle is ______ doctor. He works at a big hospital.","accept":["a"],"why":"中文說「我叔叔是醫生」沒有放冠詞的位置，英文講職業時，單數名詞前面固定要有 a／an。這裡不用 the，因為不是在指某一位大家都知道的醫生。"},{"n":4,"type":"mc","q":"Can you close ______ window, please? It's cold in here.","opts":["a","an","the"],"a":2,"why":["✗ a 用在第一次提到、對方還不知道是哪一個的時候。","✗ an 用在母音發音開頭的字前面，window 是子音開頭，而且這裡也不該用不定冠詞。","✓ 兩個人在同一個房間裡，都知道說的是哪一扇窗，用 the。"]},{"n":5,"type":"mc","q":"I bought a hat and a T-shirt. ______ hat was cheap, but the T-shirt was expensive.","opts":["A","The","An"],"a":1,"why":["✗ 帽子在前一句已經提過了，第二次提到不能再用 A。","✓ 第一次提到用 a，再次提到同一頂帽子就換成 the。","✗ An 用在母音發音開頭的字前面，而且這一題的重點是第幾次提到，不是發音。"]},{"n":6,"type":"gaptext","q":"填入一個字：My sister plays ______ piano every day after school.","accept":["the"],"why":"樂器前面固定加 the（play the piano、play the guitar），這是要背起來的固定用法。球類運動剛好相反，play football、play basketball 前面什麼都不加。"}],"adjectives":[{"n":1,"type":"gaptext","q":"填入一個字：My school bag is ______ (big) than my sister's.","accept":["bigger"],"why":"句子裡的 than 是比較級的訊號。big 是短形容詞，字尾加 -er；因為是短母音加單一子音結尾，要重複 g 寫成 bigger，不是 biger，也不是 more big。"},{"n":2,"type":"mc","q":"She is ______ girl in our class.","opts":["taller","the tallest","most tall"],"a":1,"why":["✗ taller 是比較級，用來比兩個人；in our class 表示在一群人裡面最高，要用最高級。","✓ 短形容詞的最高級加 -est，而且最高級前面幾乎一定要有 the。","✗ tall 是短字，最高級是 tallest，不用 most，而且這個選項也漏了 the。"]},{"n":3,"type":"mc","q":"This film is ______ than the one we saw last week.","opts":["interestinger","more interesting","most interesting"],"a":1,"why":["✗ interesting 是長形容詞，不能在字尾加 -er，英文沒有 interestinger 這個字。","✓ 音節多的長形容詞用 more 造比較級，句子裡的 than 就是訊號。","✗ most 是最高級，但句子裡有 than，要的是比較級。"]},{"n":4,"type":"mc","q":"My cousin has a ______ cat.","opts":["white small","small white","small and white"],"a":1,"why":["✗ 英文形容詞的排列有固定順序，大小要放在顏色前面，這個選項顛倒了。","✓ 順序是大小在前、顏色在後，所以是 a small white cat。","✗ 兩個不同類的形容詞（大小和顏色）中間不加 and；同一類才會用 and，例如 a black and white cat。"]},{"n":5,"type":"mc","q":"My brother is ______ than me.","opts":["more tall","taller","tallest"],"a":1,"why":["✗ 中文的「比較高」是在形容詞前面加「比較」，直覺翻成 more 就錯了；more 只留給 interesting、expensive 這種長字。","✓ tall 是短形容詞，比較級直接加 -er，配合 than 正確。","✗ tallest 是最高級（最高的那一個），但句子裡的 than 表示只在比兩個人。"]},{"n":6,"type":"gaptext","q":"填入一個字：Your English is ______ (good) than mine.","accept":["better"],"why":"than 告訴我們要用比較級。good 的比較級是不規則的 better，沒有 gooder，也不能寫 more good；good–better–best 和 bad–worse–worst 這兩組要整組背起來。"}],"adverbs":[{"n":1,"type":"mc","q":"Please drive ______. The road is wet today.","opts":["slow","slowly","slower"],"a":1,"why":["✗ slow 是形容詞，用來形容名詞（a slow bus），這裡要修飾的是動詞 drive。","✓ 修飾動詞要用副詞，多數形容詞加 -ly 就變成副詞。","✗ slower 是比較級（比較慢），但句子裡沒有在跟誰比。"]},{"n":2,"type":"mc","q":"My best friend ______ late for school.","opts":["is never","never is","never"],"a":0,"why":["✓ 頻率副詞放在 be 動詞後面，所以是 is never。","✗ 順序顛倒了，never 要跟在 be 動詞後面，不是前面。","✗ 只寫 never 會少掉 be 動詞，late 是形容詞，這句需要 is 才完整。"]},{"n":3,"type":"gaptext","q":"填入一個字：My grandfather is a careful driver. He always drives ______ (careful).","accept":["carefully"],"why":"前一句的 careful 是形容詞，修飾名詞 driver；空格要修飾的是動詞 drives，所以要改成副詞 carefully。多數形容詞加 -ly 就是副詞，但 good 是例外，它的副詞是 well。"},{"n":4,"type":"mc","q":"My mother ______ drinks coffee in the evening.","opts":["never","is never","drinks never"],"a":0,"why":["✓ 一般動詞的頻率副詞放在動詞前面，所以是 never drinks。","✗ 這句的動詞是 drinks，不需要再多一個 be 動詞。","✗ 頻率副詞不能放在一般動詞後面；中文的「都不喝」位置很自由，英文的位置是固定的。"]},{"n":5,"type":"mc","q":"I ______ like swimming in the sea.","opts":["very","really","very much"],"a":1,"why":["✗ very 只能修飾形容詞和副詞，不能修飾動詞；中文的「很喜歡」把「很」放在動詞前面，照翻就錯。","✓ really 可以修飾動詞，位置就在一般動詞前面。","✗ very much 本身沒錯，但位置不對，要放在句尾（I like swimming in the sea very much）。"]},{"n":6,"type":"gaptext","q":"填入一個字：My brother speaks English very ______ (good).","accept":["well"],"why":"空格修飾的是動詞 speaks，要用副詞；good 是形容詞，它的副詞是不規則的 well，沒有 goodly 這個字。speaks English well 是說他說得好，speaks good English 則是在形容 English 這個名詞，兩種寫法的重點不一樣。"}],"prepositions":[{"n":1,"type":"mc","q":"My birthday is ______ July.","opts":["in","on","at"],"a":0,"why":["✓ 月份和年份前面用 in。","✗ on 用在星期和日期（on Monday、on 5th July）。","✗ at 用在幾點幾分（at six o'clock）。"]},{"n":2,"type":"mc","q":"My mother is ______ home today. She isn't at work.","opts":["in","at","on"],"a":1,"why":["✗ in 後面接的是有範圍的空間（in the kitchen），home 不用 in。","✓ at home 是固定用法，和後面的 at work 是同一組講法。","✗ on 用在表面上（on the table）或星期，不用來說在家。"]},{"n":3,"type":"gaptext","q":"填入一個字：My family travels ______ Taichung by train every summer.","accept":["to"],"why":"travel、go、come 這類表示移動的動詞後面接 to，表示方向和終點。注意 go home 是固定用法，home 前面不加 to。"},{"n":4,"type":"mc","q":"Our English class starts ______ eight o'clock.","opts":["in","on","at"],"a":2,"why":["✗ in 用在月份、年份和一段時間（in the morning）。","✗ on 用在星期和日期。","✓ 幾點幾分這種明確的鐘點用 at。"]},{"n":5,"type":"mc","q":"I go to school ______ Monday morning.","opts":["at","on","in"],"a":1,"why":["✗ 中文的「在星期一早上」和「在六點」都用同一個「在」，照翻成 at 是最常見的錯誤。","✓ 只要句子裡出現星期幾就用 on，即使後面接了 morning 也一樣（on Monday morning）。","✗ in the morning 是沒有指定星期時才用 in，一旦加上 Monday 就要改用 on。"]},{"n":6,"type":"gaptext","q":"填入一個字：In this photo I am standing ______ my mother and my father.","accept":["between"],"why":"在兩個人或兩樣東西的中間用 between，後面常常接 A and B 的形式；三個以上才用 among。next to 是「在旁邊」，只講到一邊，但這句兩邊都有人。"}],"connectives":[{"n":1,"type":"gaptext","q":"填入一個字：I have two cats ______ one dog at home.","accept":["and"],"why":"兩件同方向的事並列，用 and 連起來。這裡不是前後相反（那才用 but），也不是二選一（那才用 or）。"},{"n":2,"type":"mc","q":"Would you like tea ______ juice?","opts":["and","or","but"],"a":1,"why":["✗ and 是兩樣都要，但這句是請對方二選一。","✓ 提供選擇用 or。","✗ but 表示前後相反，兩種飲料之間沒有轉折的關係。"]},{"n":3,"type":"gaptext","q":"填入一個字：I wanted to buy the blue jacket, ______ it was too expensive.","accept":["but"],"why":"前面想買、後面買不成，前後相反用 but。不能用 and，那沒有轉折的意思；也不能只放一個逗號就把兩個完整的句子接在一起，英文的兩句中間一定要有連接詞或句號。"},{"n":4,"type":"mc","q":"We didn't go to the park ______ the weather was bad.","opts":["but","because","or"],"a":1,"why":["✗ but 表示相反，但天氣不好和沒去公園方向一致，不是轉折。","✓ 後半句是前半句的原因，用 because。","✗ or 用在選擇，這裡兩件事都是事實。"]},{"n":5,"type":"mc","q":"______ it rains tomorrow, we can watch a film at home.","opts":["If","And","Because"],"a":0,"why":["✓ 明天會不會下雨還不確定，用 If 帶出條件。","✗ And 不能放在句首把兩個句子接起來，也表達不出條件。","✗ Because 帶出的是已經知道的原因，但下雨這件事還沒發生。"]},{"n":6,"type":"mc","q":"Sunday is the day ______ my father cooks dinner for us.","opts":["when","where","because"],"a":0,"why":["✓ 前面的 the day 是時間，時間用 when 帶出後面的說明。","✗ where 用來說明地點（the park where we play），前面必須是地方，the day 不是地方。","✗ because 帶出原因，但爸爸煮晚餐不是星期天的原因。"]}]};</script>
+<script>
+(function(){
+  if(typeof GDRILLS==='undefined') return;
+  var L=function(i){return String.fromCharCode(65+i)};
+  var norm=function(s){return (s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'')};
+  var esc=function(s){return String(s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})};
+
+  Object.keys(GDRILLS).forEach(function(slug){
+    var host=document.querySelector('.gd-form[data-slug="'+slug+'"]');
+    if(!host) return;
+    var items=GDRILLS[slug];
+    host.innerHTML=items.map(function(it){
+      var mark='<span class="gd-mark" aria-hidden="true"></span>';
+      var why=Array.isArray(it.why)
+        ? it.why.map(function(w,i){return '<p><b>'+L(i)+'：</b>'+esc(w)+'</p>'}).join('')
+        : '<p>'+esc(it.why)+'</p>';
+      var head='<p class="gd-q"><span class="gd-n">'+it.n+'.</span>'+esc(it.q)+'</p>';
+      if(it.type==='mc'){
+        var o=it.opts.map(function(t,i){
+          return '<label class="gd-opt"><input type="radio" name="'+slug+'_'+it.n+'" value="'+i+'">'+
+                 '<span><b>'+L(i)+'</b>　'+esc(t)+'</span></label>'}).join('');
+        return '<div class="gd-item" data-k="'+slug+'_'+it.n+'">'+head+
+               '<div class="gd-opts">'+o+'</div>'+mark+'<div class="gd-why">'+why+'</div></div>';
+      }
+      if(it.type==='keyword'){
+        return '<div class="gd-item" data-k="'+slug+'_'+it.n+'">'+head+
+          '<span class="gd-key">'+esc(it.keyword)+'</span>'+
+          '<p class="gd-q" style="margin:0 0 8px">'+esc(it.stem)+'</p>'+
+          '<input class="gd-in wide" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 '+it.n+' 題答案">'+
+          mark+'<div class="gd-why">'+why+'</div></div>';
+      }
+      return '<div class="gd-item" data-k="'+slug+'_'+it.n+'">'+head+
+        '<input class="gd-in" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 '+it.n+' 題答案">'+
+        mark+'<div class="gd-why">'+why+'</div></div>';
+    }).join('');
+
+    host.addEventListener('change',function(e){
+      var box=e.target.closest('.gd-item'); if(!box) return;
+      box.querySelectorAll('.gd-opt').forEach(function(o){
+        o.classList.toggle('sel',o.querySelector('input').checked)});
+    });
+
+    var wrap=host.closest('.gd-body');
+    wrap.querySelector('[data-act="check"]').addEventListener('click',function(){
+      var got=0,total=0;
+      items.forEach(function(it){
+        var m=it.marks||1; total+=m;
+        var box=host.querySelector('[data-k="'+slug+'_'+it.n+'"]');
+        var mark=box.querySelector('.gd-mark');
+        if(it.accept){
+          var inp=box.querySelector('input');
+          var ok=it.accept.map(norm).indexOf(norm(inp.value))>-1;
+          inp.classList.toggle('right',ok);
+          inp.classList.toggle('wrong',!ok&&inp.value.trim()!=='');
+          mark.textContent=ok?'✓':'✗（正確：'+it.accept[0]+'）';
+          mark.className='gd-mark '+(ok?'ok':'no');
+          if(ok)got+=m;
+        }else{
+          var sel=box.querySelector('input:checked');
+          box.querySelectorAll('.gd-opt').forEach(function(o,i){
+            o.classList.remove('right','wrong');
+            if(i===it.a)o.classList.add('right');
+            else if(o.querySelector('input').checked)o.classList.add('wrong')});
+          var ok2=sel&&+sel.value===it.a;
+          mark.textContent=ok2?'✓':(sel?'✗':'—');
+          mark.className='gd-mark '+(ok2?'ok':'no');
+          if(ok2)got+=m;
+        }
+      });
+      var sc=wrap.querySelector('.gd-score');
+      sc.textContent='得分 '+got+' / '+total; sc.classList.add('show');
+      host.classList.add('show-why');
+    });
+    wrap.querySelector('[data-act="why"]').addEventListener('click',function(){
+      host.classList.toggle('show-why')});
+    wrap.querySelector('[data-act="reset"]').addEventListener('click',function(){
+      host.classList.remove('show-why');
+      host.querySelectorAll('input[type=radio]').forEach(function(r){r.checked=false});
+      host.querySelectorAll('input[type=text]').forEach(function(t){t.value='';t.className=t.className.replace(/\s*(right|wrong)/g,'')});
+      host.querySelectorAll('.gd-opt').forEach(function(o){o.classList.remove('sel','right','wrong')});
+      host.querySelectorAll('.gd-mark').forEach(function(m){m.textContent='';m.className='gd-mark'});
+      var sc=wrap.querySelector('.gd-score'); sc.classList.remove('show'); sc.textContent='';
+    });
+  });
+})();
+</script>
 <script src="/assets/app.js?v=11"></script>
 </body>
 </html>

@@ -54,6 +54,37 @@
 .gtop:hover{color:var(--blue)}
 .g-src{max-width:760px;margin:30px auto 0;background:#F4FAFF;border:1px solid rgba(28,176,246,.22);border-radius:18px;padding:18px 22px;font-size:14.5px;line-height:1.8;color:var(--text-body)}
 .g-src b{color:var(--navy)}
+.gdrill{margin-top:16px;border:2px dashed rgba(28,176,246,.42);border-radius:16px;overflow:hidden}
+.gdrill summary{list-style:none;cursor:pointer;padding:13px 18px;background:#F4FAFF;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14.5px;color:var(--blue);display:flex;align-items:center;gap:9px}
+.gdrill summary::-webkit-details-marker{display:none}
+.gdrill summary::before{content:'b8';transition:transform .18s}
+.gdrill[open] summary::before{transform:rotate(90deg)}
+.gdrill .gd-body{padding:16px 18px 18px}
+.gd-item{padding:13px 0;border-bottom:1px dashed #eef2f7}
+.gd-item:last-of-type{border-bottom:0}
+.gd-q{font-size:16px;line-height:1.75;color:var(--navy);margin:0 0 9px}
+.gd-q .gd-n{font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--c);margin-right:8px}
+.gd-opts{display:flex;flex-direction:column;gap:7px}
+.gd-opt{display:flex;gap:9px;align-items:flex-start;border:2px solid #e6ebf2;border-radius:11px;padding:8px 12px;cursor:pointer;font-size:15.5px;line-height:1.6;transition:border-color .12s,background .12s}
+.gd-opt:hover{border-color:var(--c)}
+.gd-opt input{margin-top:4px;accent-color:var(--c);flex:none}
+.gd-opt.sel{border-color:var(--c);background:rgba(28,176,246,.07)}
+.gd-opt.right{border-color:var(--green);background:rgba(6,199,85,.09)}
+.gd-opt.wrong{border-color:#e5484d;background:rgba(229,72,77,.07)}
+.gd-in{font:inherit;font-size:15.5px;padding:7px 12px;border:2px solid #e6ebf2;border-radius:10px;width:190px;max-width:70vw}
+.gd-in.wide{width:320px}
+.gd-in.right{border-color:var(--green);background:rgba(6,199,85,.07)}
+.gd-in.wrong{border-color:#e5484d;background:rgba(229,72,77,.06)}
+.gd-key{display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:11.5px;letter-spacing:1.3px;color:#fff;background:var(--purple);border-radius:7px;padding:3px 10px;margin:0 0 7px}
+.gd-mark{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;margin-left:9px}
+.gd-mark.ok{color:var(--green)} .gd-mark.no{color:#e5484d}
+.gd-why{display:none;margin-top:9px;font-size:14px;line-height:1.75;color:#7b8794;padding-left:12px;border-left:3px solid rgba(28,176,246,.25)}
+.gd-why p{margin:0 0 4px}
+.show-why .gd-why{display:block}
+.gd-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:16px}
+.gd-bar .btn{padding:9px 18px;min-height:40px;font-size:14px}
+.gd-score{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:16px;color:var(--navy);background:var(--light-blue);border-radius:11px;padding:7px 15px;display:none}
+.gd-score.show{display:inline-block}
 @media(max-width:640px){.gtag{margin-left:0;order:3;width:100%;justify-content:center}.gex td.nt{width:auto;white-space:normal}}
 </style>
 <!-- AE:SEO-LD start -->
@@ -126,6 +157,7 @@
     <div class="ln"><span class="v">✓</span><span>If it <u>rains</u> tomorrow, we'll stay home.</span></div>
     <p class="why">中文說「如果明天會下雨」裡有一個「會」，孩子順手就把它翻成 will 塞進 if 子句。記法：一個句子裡的 will 只需要出現一次，而且是在逗號後面那一半。</p></div>
   <div class="gnext"><b>再上一級</b>B2 才正式加入第三條件句與混合條件句（If I had known, I would have called），而且要求在限時的寫作與口說裡自然說出來，不只是看得懂。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="conditionals" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="reported-speech" style="--c:#CE82FF;--cd:#a94fe0;--cs:rgba(206,130,255,.32)">
@@ -142,6 +174,7 @@
     <div class="ln"><span class="v">✓</span><span>She said that she <u>would</u> call me after the exam.</span></div>
     <p class="why">中文的「她說她會打給我」不管什麼時候講都是同一句，動詞不必跟著主要動詞走。考場上的順序是：先看主要動詞 said 已經是過去，後面的 will 就得跟著退成 would。</p></div>
   <div class="gnext"><b>再上一級</b>B2 不再只是把時態退一格，而是要用 admit、suggest、warn、deny 這類轉述動詞把說話者的語氣一起帶出來，並在長篇文章裡連續轉述好幾個人的話而不亂。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="reported-speech" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="modals-b1" style="--c:#06C755;--cd:#04a046;--cs:rgba(6,199,85,.28)">
@@ -158,6 +191,7 @@
     <div class="ln"><span class="v">✓</span><span>I <u>used to</u> play badminton every Sunday.</span></div>
     <p class="why">中文把 used to 和 be used to 都翻成「習慣」，孩子自然混成一團。判斷法：句子在講「以前這樣，現在不做了」，就不可以有 be 動詞，後面直接接原形動詞。</p></div>
   <div class="gnext"><b>再上一級</b>B2 會把推測往回推到過去（might have been、should have told me），也要求用 must 和 can't 做出強度不同的推論，而不只是表達義務。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="modals-b1" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="modal-passive" style="--c:#F0997B;--cd:#d97a5c;--cs:rgba(240,153,123,.38)">
@@ -174,6 +208,7 @@
     <div class="ln"><span class="v">✓</span><span>The library books <u>must be returned</u> before Sunday.</span></div>
     <p class="why">中文說「書必須在星期日前還」沒有「被」字，但主詞其實是被還的那一方。檢查法：主詞自己做不到這個動作，就補上 be 加過去分詞。</p></div>
   <div class="gnext"><b>再上一級</b>B2 進一步要求完成式與進行式的被動（should have been told、is being repaired），以及用 It is said that… 這類結構把消息來源模糊掉。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="modal-passive" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="causative" style="--c:#4C6FE7;--cd:#3652bd;--cs:rgba(76,111,231,.26)">
@@ -190,6 +225,7 @@
     <div class="ln"><span class="v">✓</span><span>I <u>had my hair cut</u> at the salon yesterday.</span></div>
     <p class="why">中文的「我昨天剪了頭髮」沒有標示誰動的手，英文的 I cut my hair 卻是自己剪。只要動作是花錢請別人做的，就用 have 或 get 加受詞加過去分詞。</p></div>
   <div class="gnext"><b>再上一級</b>B2 會加入指名對象的使役（have someone do something、get someone to do something），還有帶著倒楣語氣的 I had my bike stolen。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="causative" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="phrasal-verbs" style="--c:#EC6F9E;--cd:#c9527d;--cs:rgba(236,111,158,.30)">
@@ -206,6 +242,7 @@
     <div class="ln"><span class="v">✓</span><span>Please <u>turn it off</u> before you go to bed.</span></div>
     <p class="why">中文的「把它關掉」受詞永遠跟在動詞後面，孩子照著語序搬過來就錯了。規則很硬：受詞是 it、them、him 這類代名詞時，一定要夾在動詞和後面那個小字中間。</p></div>
   <div class="gnext"><b>再上一級</b>B2 要的不只是看懂，而是主動用出比單字動詞更道地的片語動詞（put up with、come across），並在 Reading and Use of English Part 4 的關鍵字改寫題裡精準重組整句。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="phrasal-verbs" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
 <article class="gcard reveal" id="connectives-b1" style="--c:#1CB0F6;--cd:#1391cc;--cs:rgba(28,176,246,.30)">
@@ -222,6 +259,7 @@
     <div class="ln"><span class="v">✓</span><span><u>Although</u> he was tired, he finished his homework.</span></div>
     <p class="why">中文的「雖然…但是…」是一組，英文的 although 和 but 卻是同一份工作做兩次。寫完回頭數一次：同一個句子裡不能同時出現 although 和 but。</p></div>
   <div class="gnext"><b>再上一級</b>B2 會把範圍推向 despite、in spite of、nevertheless、even though 這類更書面的連接詞，並要求它們在長文裡撐起段落與段落之間的邏輯，而不只是句子內部的連接。</div>
+  <details class="gdrill"><summary>做 6 題練習，看看這一類站穩了沒</summary><div class="gd-body"><form class="gd-form" data-slug="connectives-b1" novalidate></form><div class="gd-bar"><button type="button" class="btn btn-primary" data-act="check">對答案</button><button type="button" class="btn btn-outline" data-act="why">看解析</button><button type="button" class="btn btn-outline" data-act="reset">重做</button><span class="gd-score" role="status" aria-live="polite"></span></div></div></details>
   <a class="gtop" href="#toc">↑ 回到目錄</a>
 </article>
     </div>
@@ -251,6 +289,93 @@
 </section>
 
 </main>
+<script>const GDRILLS = {"conditionals":[{"n":1,"type":"mc","q":"If the weather ______ good on Sunday, we'll cycle along the riverside.","opts":["will be","is","would be","was"],"a":1,"why":["✗ if 子句裡不放 will，就算講的是星期天還沒發生的事也一樣，未來的意思交給後半句的 we'll 去扛。","✓ 第一條件句：if 子句用現在簡單式，主要子句用 will，符合「星期天天氣有可能好」的語意。","✗ would be 是第二條件句的形狀，和後半句的 we'll 時態不搭。","✗ was 是過去式，會把句子變成與現實相反的假設，但天氣好不好還沒發生。"]},{"n":2,"type":"mc","q":"If you ______ ice in a warm room, it melts in a few minutes.","opts":["leave","will leave","left","would leave"],"a":0,"why":["✓ 零條件句：講的是每次都成立的事實，前後兩半都用現在簡單式，線索是後半句的 melts。","✗ if 子句不放 will，而且這句講的是恆常現象，不是未來某一次。","✗ left 是過去式，會把句子拉成假設語氣，與後半句的 melts 對不上。","✗ would 一律留給逗號後面那半句，不能出現在 if 子句裡。"]},{"n":3,"type":"gaptext","q":"填入一個字：If I ______ you, I'd take the earlier train.","accept":["were","was"],"why":"給建議的固定說法，屬於第二條件句的假設語氣。正式用法是 If I were you，口語裡 was 也聽得到，兩個都算對。判斷線索是後半句的 I'd，也就是 I would。"},{"n":4,"type":"mc","q":"If our school ______ a swimming pool, we would swim in it every week.","opts":["has","had","will have","have"],"a":1,"why":["✗ has 是現在簡單式，那是第一條件句的形狀，但後半句用了 would，而且學校事實上沒有游泳池。","✓ 第二條件句：與現在事實相反的假設，if 子句用過去式，主要子句用 would。","✗ will 不能放進 if 子句，這是條件句最硬的一條規則。","✗ have 與單數主詞 our school 不一致，時態也不對。"]},{"n":5,"type":"mc","q":"My cousin lives in Vancouver. If she ______ in Taipei, we would meet every weekend.","opts":["lives","will live","lived","would live"],"a":2,"why":["✗ lives 是第一條件句的形狀，但前一句已經點明她人在溫哥華，這是與事實相反的假設。","✗ will 不能放進 if 子句，未來的意思由主要子句負責。","✓ 前一句是判斷關鍵：她住溫哥華，所以這是與現在事實相反的第二條件句，if 子句用過去式配 would。","✗ would 只能出現在逗號後面那半句，不能跟 if 擠在一起。"]},{"n":6,"type":"gaptext","q":"填入一個字：If you ______ take a jacket, you'll be cold on the boat.","accept":["don't"],"why":"第一條件句的否定：if 子句用現在簡單式的否定 don't take，未來的意思由後半句的 you'll 表示。這裡不能寫 won't take，因為 if 子句裡永遠不放 will，就算中文說「如果你不會帶外套」也一樣。"}],"reported-speech":[{"n":1,"type":"mc","q":"\"I'm really tired,\" said Amy. → Amy said that she ______ really tired.","opts":["is","was","will be","has been"],"a":1,"why":["✗ 主要動詞 said 已經是過去式，後面的現在式要跟著退一格。","✓ 轉述時時態退一格：am 退成 was，這是 said 這個過去式動詞帶出來的。","✗ will be 把時間推到未來，原句講的是說話當下的狀態。","✗ has been 是現在完成式，轉述句裡不需要，也沒有跟著 said 退格。"]},{"n":2,"type":"gaptext","q":"填入一個字：She ______ me that the film club meets on Thursdays.","accept":["told"],"why":"tell 後面可以直接接聽話的人，say 不行。判斷線索是空格後面緊跟著 me：有人就用 told me，沒有人就用 said that。要用 say 的話得寫成 said to me。"},{"n":3,"type":"mc","q":"\"I'll bring my laptop,\" he told me. → He told me that he ______ bring his laptop.","opts":["will","would","will be","is going to"],"a":1,"why":["✗ 主要動詞 told 是過去式，will 必須跟著退成 would，中文的「他說他會帶」不會變形，但英文會。","✓ will 退一格就是 would，後面接原形動詞 bring。","✗ will be 後面要接 Ving 或形容詞，接不了原形的 bring，時態也沒退格。","✗ is going to 同樣停在現在式，沒有跟著 told 退格。"]},{"n":4,"type":"mc","q":"I wondered ______ after the concert finished.","opts":["what would he do","what he would do","what did he do","what he will do"],"a":1,"why":["✗ 問句被 wondered 包起來之後就不倒裝了，would 要放到主詞 he 後面。","✓ 間接問句用正常語序（wh- ＋ 主詞 ＋ 動詞），而且 wondered 是過去式，will 跟著退成 would。","✗ did 是直接問句的助動詞，間接問句裡不出現。","✗ 語序對了，但 wondered 已經是過去式，will 必須退成 would。"]},{"n":5,"type":"mc","q":"The coach asked us ______ enough water for the training camp.","opts":["did we bring","if we had brought","if had we brought","that we brought"],"a":1,"why":["✗ 間接問句不倒裝，助動詞 did 要拿掉，語序回到正常句。","✓ Yes/No 問句被 ask 包起來時用 if 引導，而且 asked 是過去式，bring 要退到 had brought。","✗ if 後面一樣不能倒裝，had 要放在主詞 we 的後面。","✗ that 用來引導轉述的陳述句，不能拿來轉述 Yes/No 問句。"]},{"n":6,"type":"gaptext","q":"填入一個字：\"Don't use your phones in the exam,\" the teacher said. → The teacher told us ______ to use our phones in the exam.","accept":["not"],"why":"轉述命令句的公式是 tell ＋ 人 ＋ to V，否定就把 not 放在 to 前面，寫成 told us not to use。不能寫成 didn't tell us to use，那個意思變成老師沒有叫我們用。"}],"modals-b1":[{"n":1,"type":"mc","q":"I'm not sure where Ben is — he ______ be in the computer room.","opts":["must","might","should","used to"],"a":1,"why":["✗ must 是很有把握的推測，但句子開頭的 I'm not sure 已經說了沒把握，語氣衝突。","✓ 破折號前的 I'm not sure 就是線索：沒把握的推測用 might。","✗ should 在這裡會變成「他應該在電腦教室（照理該去）」，那是義務不是推測。","✗ used to 講的是過去的習慣，跟現在人在哪裡無關。"]},{"n":2,"type":"gaptext","q":"填入一個字：We ______ to live near the river when I was six, but we moved to Banqiao.","accept":["used"],"why":"used to ＋ 原形動詞，講的是以前這樣、現在不做了的過去習慣或狀態。線索是後半句的 but we moved：事情已經結束。這裡不能加 be 動詞。"},{"n":3,"type":"mc","q":"You ______ to check the timetable before you leave the house.","opts":["should","ought","must","might"],"a":1,"why":["✗ should 後面直接接原形動詞，不接 to。","✓ 空格後面有 to，只有 ought 能跟 to 搭在一起，ought to 的意思是照道理該做。","✗ must 後面也是直接接原形動詞，不接 to。","✗ might 後面同樣接原形動詞，而且這句在給建議，不是在推測。"]},{"n":4,"type":"mc","q":"I ______ walk to school every day, but now I cycle.","opts":["am used to","used to","use to","was used to"],"a":1,"why":["✗ be used to 的意思是「已經習慣了」，後面要接 Ving，不能接原形的 walk。","✓ 講「以前這樣、現在不做了」，用 used to ＋ 原形動詞，線索是後半句的 but now。","✗ 少了字尾的 d，只有在 did 或 didn't 後面才寫成 use to。","✗ 同樣是 be used to 的形式，後面接不了原形動詞。"]},{"n":5,"type":"mc","q":"Hurry up — we ______ get another chance to see them live.","opts":["might not","mustn't","don't use to","ought"],"a":0,"why":["✓ 這是沒把握的否定推測「可能不會再有機會」，用 might not。","✗ mustn't 是禁止，意思會變成「我們不准再有機會」，語意不通。","✗ don't use to 不是正確的形式，而且過去習慣跟這句的推測無關。","✗ ought 後面一定要有 to，而且這句不是在講該不該做。"]},{"n":6,"type":"gaptext","q":"填入一個字：He didn't ______ to enjoy reading, but this series changed his mind.","accept":["use"],"why":"否定式是 didn't use to，字尾不加 d：過去的訊息已經由 didn't 表示了，動詞就要回到原形。肯定句才寫 used to。"}],"modal-passive":[{"n":1,"type":"mc","q":"All entry forms ______ before the end of the month.","opts":["must send","must be sent","must be send","must sending"],"a":1,"why":["✗ 表格自己不會送出去，主詞是被送的一方，需要被動。","✓ 公式是情態動詞 ＋ be ＋ 過去分詞，中間的 be 永遠不變形。","✗ be 後面要接過去分詞 sent，不是原形的 send。","✗ 被動用過去分詞，不用 Ving。"]},{"n":2,"type":"mc","q":"Helmets ______ from the desk at the skate park.","opts":["can borrow","can be borrow","can be borrowed","can to be borrowed"],"a":2,"why":["✗ 安全帽不會自己借東西，主詞是被借的一方，要用被動。","✗ be 後面必須是過去分詞 borrowed，不能留著原形。","✓ can ＋ be ＋ borrowed，介系詞 from 也提示了東西是從櫃檯被借出去的。","✗ 情態動詞後面直接接原形，中間不放 to。"]},{"n":3,"type":"gaptext","q":"填入一個字：This permission form should ______ signed by a parent.","accept":["be"],"why":"情態動詞 ＋ be ＋ 過去分詞，被挖掉的就是中間那個 be。線索是後面的 signed 與 by a parent：表格是被家長簽的，不是自己簽的。"},{"n":4,"type":"mc","q":"The outdoor concert ______ if the typhoon comes closer.","opts":["might cancel","might be cancelled","might cancelled","might be cancel"],"a":1,"why":["✗ 演唱會不會取消別的東西，它是被取消的那一方。","✓ might ＋ be ＋ cancelled，情態動詞後面的 be 不變形，動詞用過去分詞。","✗ 少了 be，情態動詞後面不能直接放過去分詞。","✗ be 後面要接過去分詞 cancelled，不是原形。"]},{"n":5,"type":"mc","q":"Bikes ______ inside the MRT station, so leave yours at the rack outside.","opts":["mustn't park","mustn't be parked","mustn't be park","mustn't parking"],"a":1,"why":["✗ 中文說「腳踏車不能停在捷運站裡」沒有「被」字，但停車的是人，腳踏車是被停的那一方。","✓ 主詞自己做不到這個動作，就要補上 be ＋ 過去分詞，寫成 mustn't be parked。","✗ be 後面要接過去分詞 parked。","✗ 被動用過去分詞，不用 Ving。"]},{"n":6,"type":"gaptext","q":"填入一個字，把 write 改成正確的形式：All answers must be ______ in pen, not in pencil.","accept":["written"],"why":"被動的第三格一定是過去分詞，write 的過去分詞是 written，不是 wrote。前面的 must be 已經把情態與被動都交代完了，這一格只負責動詞的形狀。"}],"causative":[{"n":1,"type":"mc","q":"My mum is having the kitchen ______ this week.","opts":["paint","painted","painting","to paint"],"a":1,"why":["✗ have ＋ 受詞後面要接過去分詞，接原形會變成「叫廚房去油漆別的東西」。","✓ 使役的公式是 have ＋ 受詞 ＋ 過去分詞，廚房是被漆的一方。","✗ Ving 表示受詞自己在做這個動作，廚房不會自己油漆。","✗ have 的使役用法後面不接 to V。"]},{"n":2,"type":"mc","q":"You should get your eyes ______ if the board looks blurry.","opts":["test","to test","tested","testing"],"a":2,"why":["✗ get ＋ 受詞後面要接過去分詞，不接原形。","✗ get your eyes to test 會變成眼睛自己去檢查別的東西。","✓ get ＋ 受詞 ＋ 過去分詞，眼睛是被檢查的一方，動作花錢請驗光師做。","✗ Ving 表示受詞主動在做，眼睛不會自己做檢查。"]},{"n":3,"type":"gaptext","q":"填入一個字：They ______ the photos printed for the school magazine last week.","accept":["had","got"],"why":"使役句缺的就是前面那個動詞，have 或 get 都可以，過去式寫成 had 或 got。後面的 the photos printed 已經是受詞加過去分詞，形狀完整。"},{"n":4,"type":"mc","q":"Ellie ______ at a salon in Banqiao before the school photo.","opts":["cut her hair","had her hair cut","had cut her hair","was cutting her hair"],"a":1,"why":["✗ 這樣寫是她自己拿剪刀剪，中文的「她剪了頭髮」沒標示誰動的手，英文有。","✓ 花錢請設計師做的動作，用 have ＋ 受詞 ＋ 過去分詞，寫成 had her hair cut。","✗ had cut 是過去完成式，講的還是她自己剪，只是時間更早。","✗ 過去進行式同樣是她本人在剪。"]},{"n":5,"type":"mc","q":"We need to ______ at the shop before the cycling trip.","opts":["have checked the brakes","have the brakes checked","have the brakes check","have checking the brakes"],"a":1,"why":["✗ 語序錯了：受詞要放在動詞和過去分詞中間，而不是全部擠在後面。","✓ have ＋ 受詞 ＋ 過去分詞，順序固定，中間那個 the brakes 不能移位。","✗ 接原形會變成煞車自己去檢查別的東西。","✗ 使役結構的第三格是過去分詞，不是 Ving。"]},{"n":6,"type":"gaptext","q":"填入一個字，把 deliver 改成正確的形式：We had the new desks ______ to our classroom on Friday.","accept":["delivered"],"why":"使役結構的最後一格永遠是過去分詞：桌子是被送來的。前面的 had 只表示時間，動作是誰做的由這個過去分詞決定。"}],"phrasal-verbs":[{"n":1,"type":"mc","q":"Could you ______ my little brother on Saturday afternoon?","opts":["look after","look for","look up","look out"],"a":0,"why":["✓ look after 是照顧，後面接人，符合「幫我看著弟弟」的語意。","✗ look for 是尋找，弟弟並沒有不見。","✗ look up 是查資料，查的是單字或時刻表，不是人。","✗ look out 是小心、當心，通常單獨當警告用。"]},{"n":2,"type":"mc","q":"I need to ______ what time the museum opens on public holidays.","opts":["take out","get out","find out","go out"],"a":2,"why":["✗ take out 是把東西拿出來或帶某人出去吃飯。","✗ get out 是離開、出去，跟查資訊無關。","✓ find out 是查明原本不知道的資訊，後面接 what time 這種子句最自然。","✗ go out 是外出，接不了 what time 這個子句。"]},{"n":3,"type":"gaptext","q":"填入一個字：Don't forget to turn ______ the lights when you leave the classroom.","accept":["off","out"],"why":"Part 6 常常把動詞留給你，只挖掉後面那個小字。關燈用 turn off，turn out the lights 也是自然的說法。turn on 剛好相反，是打開。"},{"n":4,"type":"mc","q":"The TV was still on, so Dad told me to ______ before bed.","opts":["turn off it","turn it off","turn off","turn them off"],"a":1,"why":["✗ 中文「把它關掉」的受詞跟在動詞後面，照著搬過來就錯了。","✓ 受詞是 it、them、him 這類代名詞時，一定要夾在動詞和後面那個小字中間。","✗ 少了受詞，前面既然點名了 the TV，就要用 it 代替。","✗ them 是複數，但這裡只有一台電視。"]},{"n":5,"type":"mc","q":"She ______ tennis when she started senior high, but she still watches every match.","opts":["gave away","gave up","gave in","gave back"],"a":1,"why":["✗ give away 是把東西送人，網球是活動不是物品。","✓ give up 是放棄原本在做的事，線索是 but she still watches：人沒離開這項運動，只是不打了。","✗ give in 是讓步、屈服，通常用在爭執或壓力的情境。","✗ give back 是歸還借來的東西。"]},{"n":6,"type":"gaptext","q":"填入一個字：We ran ______ of battery halfway through the film.","accept":["out"],"why":"三字片語 run out of 表示某樣東西用完了，中間那個 out 不能省。後面接的是用完的東西，所以是 run out of battery，不是 run out the battery。"}],"connectives-b1":[{"n":1,"type":"mc","q":"______ it was raining hard, we played the whole match.","opts":["Although","Because","So","Unless"],"a":0,"why":["✓ 前後兩件事互相衝突，用讓步連接詞 although 領頭最合理。","✗ because 表示原因，但下大雨不是他們打完全場的原因。","✗ so 表示結果，而且不能放在句首帶出第一個子句。","✗ unless 是條件的反面，句子不是在談條件。"]},{"n":2,"type":"mc","q":"I set two alarms ______ I wouldn't miss the early train.","opts":["because of","so that","in order to","whereas"],"a":1,"why":["✗ because of 後面接名詞，接不了 I wouldn't miss 這個完整子句。","✓ 目的用 so that，後面接完整子句，這裡的子句主詞是 I，動詞是 wouldn't miss。","✗ in order to 後面接原形動詞，不能接有主詞的子句。","✗ whereas 用來對比兩件相反的事，這句在講目的。"]},{"n":3,"type":"gaptext","q":"填入一個字：______ you book online, the tickets cost NT$100 more.","accept":["Unless","unless"],"why":"unless 等於 if not：不先在網路上訂，票就比較貴。注意 unless 後面用肯定的動詞 book，不要再寫成 don't book，否則等於否定兩次。"},{"n":4,"type":"mc","q":"The north of the island is wet all winter, ______ the south stays dry.","opts":["whereas","unless","so that","in order to"],"a":0,"why":["✓ 兩邊在互相對照，一濕一乾，這種兩相對比用 whereas。","✗ unless 是條件的反面，南部乾不乾不是北部下雨的條件。","✗ so that 表示目的，兩個子句之間沒有目的關係。","✗ in order to 後面接原形動詞，而且同樣是目的，不是對比。"]},{"n":5,"type":"mc","q":"______ the tickets were expensive, we decided to go anyway.","opts":["Although","But","However","Because"],"a":0,"why":["✓ although 一個字就把「雖然……但是……」兩邊的工作做完，後半句不可以再放 but。","✗ but 是對等連接詞，要放在兩個子句中間，不能像 although 一樣領頭。","✗ however 是副詞，通常放在句號或分號之後，加逗號隔開，不能直接連接兩個子句。","✗ because 表示原因，但票貴反而是他們差點不去的理由，邏輯相反。"]},{"n":6,"type":"gaptext","q":"填入一個字：We took the earlier bus in ______ to get seats near the front.","accept":["order"],"why":"目的有兩種寫法：in order to ＋ 原形動詞，或 so that ＋ 完整子句。這一格後面是 to get，所以要選片語的那一種，補上 order。"}]};</script>
+<script>
+(function(){
+  if(typeof GDRILLS==='undefined') return;
+  var L=function(i){return String.fromCharCode(65+i)};
+  var norm=function(s){return (s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'')};
+  var esc=function(s){return String(s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})};
+
+  Object.keys(GDRILLS).forEach(function(slug){
+    var host=document.querySelector('.gd-form[data-slug="'+slug+'"]');
+    if(!host) return;
+    var items=GDRILLS[slug];
+    host.innerHTML=items.map(function(it){
+      var mark='<span class="gd-mark" aria-hidden="true"></span>';
+      var why=Array.isArray(it.why)
+        ? it.why.map(function(w,i){return '<p><b>'+L(i)+'：</b>'+esc(w)+'</p>'}).join('')
+        : '<p>'+esc(it.why)+'</p>';
+      var head='<p class="gd-q"><span class="gd-n">'+it.n+'.</span>'+esc(it.q)+'</p>';
+      if(it.type==='mc'){
+        var o=it.opts.map(function(t,i){
+          return '<label class="gd-opt"><input type="radio" name="'+slug+'_'+it.n+'" value="'+i+'">'+
+                 '<span><b>'+L(i)+'</b>　'+esc(t)+'</span></label>'}).join('');
+        return '<div class="gd-item" data-k="'+slug+'_'+it.n+'">'+head+
+               '<div class="gd-opts">'+o+'</div>'+mark+'<div class="gd-why">'+why+'</div></div>';
+      }
+      if(it.type==='keyword'){
+        return '<div class="gd-item" data-k="'+slug+'_'+it.n+'">'+head+
+          '<span class="gd-key">'+esc(it.keyword)+'</span>'+
+          '<p class="gd-q" style="margin:0 0 8px">'+esc(it.stem)+'</p>'+
+          '<input class="gd-in wide" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 '+it.n+' 題答案">'+
+          mark+'<div class="gd-why">'+why+'</div></div>';
+      }
+      return '<div class="gd-item" data-k="'+slug+'_'+it.n+'">'+head+
+        '<input class="gd-in" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 '+it.n+' 題答案">'+
+        mark+'<div class="gd-why">'+why+'</div></div>';
+    }).join('');
+
+    host.addEventListener('change',function(e){
+      var box=e.target.closest('.gd-item'); if(!box) return;
+      box.querySelectorAll('.gd-opt').forEach(function(o){
+        o.classList.toggle('sel',o.querySelector('input').checked)});
+    });
+
+    var wrap=host.closest('.gd-body');
+    wrap.querySelector('[data-act="check"]').addEventListener('click',function(){
+      var got=0,total=0;
+      items.forEach(function(it){
+        var m=it.marks||1; total+=m;
+        var box=host.querySelector('[data-k="'+slug+'_'+it.n+'"]');
+        var mark=box.querySelector('.gd-mark');
+        if(it.accept){
+          var inp=box.querySelector('input');
+          var ok=it.accept.map(norm).indexOf(norm(inp.value))>-1;
+          inp.classList.toggle('right',ok);
+          inp.classList.toggle('wrong',!ok&&inp.value.trim()!=='');
+          mark.textContent=ok?'✓':'✗（正確：'+it.accept[0]+'）';
+          mark.className='gd-mark '+(ok?'ok':'no');
+          if(ok)got+=m;
+        }else{
+          var sel=box.querySelector('input:checked');
+          box.querySelectorAll('.gd-opt').forEach(function(o,i){
+            o.classList.remove('right','wrong');
+            if(i===it.a)o.classList.add('right');
+            else if(o.querySelector('input').checked)o.classList.add('wrong')});
+          var ok2=sel&&+sel.value===it.a;
+          mark.textContent=ok2?'✓':(sel?'✗':'—');
+          mark.className='gd-mark '+(ok2?'ok':'no');
+          if(ok2)got+=m;
+        }
+      });
+      var sc=wrap.querySelector('.gd-score');
+      sc.textContent='得分 '+got+' / '+total; sc.classList.add('show');
+      host.classList.add('show-why');
+    });
+    wrap.querySelector('[data-act="why"]').addEventListener('click',function(){
+      host.classList.toggle('show-why')});
+    wrap.querySelector('[data-act="reset"]').addEventListener('click',function(){
+      host.classList.remove('show-why');
+      host.querySelectorAll('input[type=radio]').forEach(function(r){r.checked=false});
+      host.querySelectorAll('input[type=text]').forEach(function(t){t.value='';t.className=t.className.replace(/\s*(right|wrong)/g,'')});
+      host.querySelectorAll('.gd-opt').forEach(function(o){o.classList.remove('sel','right','wrong')});
+      host.querySelectorAll('.gd-mark').forEach(function(m){m.textContent='';m.className='gd-mark'});
+      var sc=wrap.querySelector('.gd-score'); sc.classList.remove('show'); sc.textContent='';
+    });
+  });
+})();
+</script>
 <script src="/assets/app.js?v=11"></script>
 </body>
 </html>
