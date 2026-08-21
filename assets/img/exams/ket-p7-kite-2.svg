@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="The wind blows hard. The kite is stuck in a tall tree and the boy looks worried.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 200h284"/>
+<path d="M40 60c14-6 26 2 30 10M36 84c16-7 30 1 35 10" opacity=".5"/>
+<path d="M214 200V116"/>
+<path d="M214 116c-30 0-52-18-52-38s24-34 52-34 52 14 52 34-22 38-52 38Z" fill="#DDF4FF"/>
+<g transform="translate(196,58)"><path d="M18 0 36 20 18 40 0 20Z" fill="#fff"/><path d="M18 0v40M0 20h36"/></g>
+<circle cx="96" cy="122" r="15"/>
+<path d="M89 118l6 3M103 118l-6 3" stroke-width="2.8"/>
+<path d="M90 131c3-3.5 9-3.5 12 0"/>
+<path d="M96 137v34"/>
+<path d="M96 144l16-14M96 144l-16-14"/>
+<path d="M96 171l-11 29M96 171l12 29"/>
+</g>
+<text x="150" y="228" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">2</text>
+</svg>

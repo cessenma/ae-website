@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="A girl helps the boy get the kite out of the tree. They are both smiling.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 200h284"/>
+<path d="M252 200v-56"/>
+<path d="M252 144c-22 0-38-13-38-27s17-24 38-24 38 10 38 24-16 27-38 27Z" fill="#DDF4FF" opacity=".6"/>
+<g transform="translate(118,86)"><path d="M20 0 40 22 20 44 0 22Z" fill="#DDF4FF"/><path d="M20 0v44M0 22h40"/><path d="M20 44c5 7-5 10 0 17"/></g>
+<circle cx="78" cy="116" r="15"/>
+<path d="M72 113.5a1 1 0 0 1 4 0M80 113.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M73 122c3 3.5 7.5 3.5 10.5 0"/>
+<path d="M78 131v34"/>
+<path d="M78 138l24 -8M78 138l-16 12"/>
+<path d="M78 165l-11 35M78 165l12 35"/>
+<circle cx="176" cy="112" r="15"/>
+<path d="M170 109.5a1 1 0 0 1 4 0M178 109.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M171 118c3 3.5 7.5 3.5 10.5 0"/>
+<path d="M166 100c4-8 16-8 20 0" />
+<path d="M176 127v38"/>
+<path d="M176 134l-24 -6M176 134l16 12"/>
+<path d="M176 165l-11 35M176 165l12 35"/>
+</g>
+<text x="150" y="228" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">3</text>
+</svg>

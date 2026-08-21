@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<style id="crit">:root{--navy:#1A2752;--blue:#1CB0F6;--blue-dk:#1391cc;--green:#06C755;--green-dk:#04a046;--yellow:#FFC828;--yellow-dk:#e0a800;--purple:#CE82FF;--purple-dk:#a94fe0;--coral:#F0997B;--light-blue:#DDF4FF;--text-body:#4b5563;--card-shadow:0 12px 40px rgba(26,39,82,.10);--header-h:64px;}*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px)}body{font-family:'DM Sans',-apple-system,'PingFang TC','Microsoft JhengHei',sans-serif;background:#fff;color:var(--navy);line-height:1.6;overflow-x:hidden}a{color:inherit}img{display:block;max-width:100%}:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}h1,h2,h3{font-family:'DM Serif Display',serif;font-weight:400;color:var(--navy);letter-spacing:-.4px;line-height:1.08}h1{font-size:clamp(40px,6.4vw,66px)}h2{font-size:clamp(30px,4.6vw,48px)}h3{font-size:22px}.rounded{font-family:'Baloo 2',sans-serif;font-weight:800}em{font-style:italic;color:var(--blue)}.bg-navy h2,.bg-navy h3{color:#fff}p.body{font-size:clamp(15px,1.6vw,17px);line-height:1.8;color:var(--text-body)}.bg-navy p.body{color:rgba(255,255,255,.74)}.eyebrow{display:inline-block;font-family:'Baloo 2',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--blue);background:rgba(28,176,246,.12);padding:7px 16px;border-radius:100px}.eyebrow-green{color:#067033;background:rgba(6,199,85,.12)}.eyebrow-yellow{color:#8a5f00;background:rgba(255,200,40,.18)}.divider{width:48px;height:4px;background:linear-gradient(90deg,var(--blue),var(--purple));border-radius:4px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'Baloo 2',sans-serif;font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.5px;padding:14px 30px;border-radius:16px;cursor:pointer;border:none;text-transform:uppercase;transition:transform .08s ease,box-shadow .08s ease,filter .15s;min-height:50px;position:relative;top:0}.btn-primary{background:var(--green);color:#fff;box-shadow:0 5px 0 var(--green-dk),0 10px 18px rgba(6,199,85,.32)}.btn-blue{background:var(--blue);color:#fff;box-shadow:0 5px 0 var(--blue-dk),0 10px 18px rgba(28,176,246,.32)}.btn-yellow{background:var(--yellow);color:var(--navy);box-shadow:0 5px 0 var(--yellow-dk),0 10px 18px rgba(255,200,40,.32)}.btn-coral{background:var(--coral);color:#fff;box-shadow:0 5px 0 #d97a5c,0 10px 18px rgba(240,153,123,.34)}.btn-pf-blue{background:#a8d8f0;color:var(--navy);box-shadow:0 5px 0 #80bfe0,0 10px 18px rgba(168,216,240,.45)}.btn-pf-cream{background:#fff8f3;color:var(--navy);border:1px solid #efe4d8;box-shadow:0 5px 0 #e6dbd0,0 10px 18px rgba(26,39,82,.08)}.btn-pf-pink{background:#ffdae6;color:var(--navy);box-shadow:0 5px 0 #f0b0c8,0 10px 18px rgba(255,218,230,.5)}.btn:hover{filter:brightness(1.04)}.btn:active{top:5px;box-shadow:0 0 0 var(--green-dk)}.btn-blue:active{box-shadow:0 0 0 var(--blue-dk)}.btn-yellow:active{box-shadow:0 0 0 var(--yellow-dk)}.btn-coral:active{box-shadow:0 0 0 #d97a5c}.btn-pf-blue:active{box-shadow:0 0 0 #80bfe0}.btn-pf-cream:active{box-shadow:0 0 0 #e6dbd0}.btn-pf-pink:active{box-shadow:0 0 0 #f0b0c8}.btn-outline{background:#fff;color:var(--navy);border:2px solid #e2e8f0;box-shadow:0 4px 0 #e2e8f0}.btn-outline:active{top:4px;box-shadow:0 0 0 #e2e8f0}.btn svg{width:20px;height:20px}.btn-line svg{fill:currentColor}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}.section{padding:clamp(60px,8vw,104px) 0;position:relative}.bg-blue{background:var(--light-blue)}.bg-navy{background:var(--navy)}.bg-soft{background:#F4FAFF}.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center}.split.reverse>.media{order:2}@media(max-width:860px){.split{grid-template-columns:1fr}.split.reverse>.media{order:0}.split .stack{align-items:flex-end;text-align:right}.split .stack .divider{margin-left:auto;margin-right:0}.split.reverse .stack{align-items:flex-start;text-align:left}.split.reverse .stack .divider{margin-left:0;margin-right:auto}.hero .stack,#location .stack{align-items:center;text-align:center}.hero .stack .divider,#location .stack .divider{margin-left:auto;margin-right:auto}.hero .stack .hero-cta,.hero .stack .hero-badges{justify-content:center}.hero .stack p.body{margin-left:auto;margin-right:auto}}@media(min-width:861px){.section:not(#location) .split:not(.reverse) .stack{align-items:flex-end;text-align:right}.section:not(#location) .split:not(.reverse) .stack .divider{margin-left:auto;margin-right:0}}.stack{display:flex;flex-direction:column;align-items:flex-start;gap:16px}.center{text-align:center;align-items:center;margin:0 auto;max-width:700px}.progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--green),var(--blue),var(--purple));z-index:200;transition:width .1s linear}.rk{display:inline-block;width:26px;height:26px;color:var(--blue);animation:wiggle 3.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.rk svg{width:100%;height:100%;display:block}header.site-header{position:fixed;top:0;left:0;right:0;z-index:150;height:var(--header-h);background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(26,39,82,.06);transition:box-shadow .25s}header.site-header.scrolled{box-shadow:0 4px 22px rgba(26,39,82,.09)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{font-family:'Baloo 2',sans-serif;font-size:21px;font-weight:800;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:8px}.brand b{color:var(--blue);font-weight:800}.brand-logo{width:38px;height:38px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(26,39,82,.18)}.nav-links{display:flex;align-items:center;gap:26px}.nav-links a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:15px;font-weight:700;color:#475569;text-decoration:none;transition:color .15s}.nav-links a:not(.btn):hover,.nav-links a.active{color:var(--blue)}.nav-links a.active{position:relative}.nav-links a.active::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:3px;border-radius:3px;background:var(--blue)}.nav-cta{padding:9px 20px;font-size:14px;min-height:42px}.hamburger{display:none;width:46px;height:46px;border:none;background:transparent;cursor:pointer;flex-direction:column;justify-content:center;gap:5px;align-items:center}.hamburger span{width:24px;height:3px;background:var(--navy);border-radius:3px;transition:transform .3s,opacity .2s}body.menu-open .hamburger span:nth-child(1){transform:translateY(8px) rotate(45deg)}body.menu-open .hamburger span:nth-child(2){opacity:0}body.menu-open .hamburger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.drawer{position:fixed;inset:var(--header-h) 0 0 0;z-index:140;background:rgba(255,255,255,.98);backdrop-filter:blur(8px);display:flex;flex-direction:column;gap:4px;padding:24px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}body.menu-open .drawer{opacity:1;transform:none;pointer-events:auto}.drawer a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:700;color:var(--navy);text-decoration:none;padding:15px 8px;border-bottom:1px solid rgba(26,39,82,.07)}.drawer .btn{margin-top:18px}@media(max-width:860px){.nav-links{display:none}.hamburger{display:flex}}.bg-deco{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}.star{position:absolute;animation:twinkle 3s ease-in-out infinite}@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:.9;transform:scale(1.15)}}.hero{padding-top:calc(var(--header-h) + 40px);padding-bottom:60px;background:linear-gradient(180deg,#fff 0%,var(--light-blue) 100%);position:relative;overflow:hidden}.hero .wrap{position:relative;z-index:2}.hero-badges{display:flex;flex-wrap:wrap;gap:10px}.chip{display:inline-flex;align-items:center;gap:7px;font-family:'Baloo 2',sans-serif;font-size:14px;font-weight:700;color:var(--navy);background:#fff;border:2px solid rgba(26,39,82,.08);padding:8px 15px;border-radius:100px;box-shadow:0 3px 0 rgba(26,39,82,.06)}.chip .dot{width:9px;height:9px;border-radius:50%;background:var(--green);animation:blink 1.6s infinite}@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}.scene{position:relative;width:100%;max-width:440px;margin:0 auto;aspect-ratio:1}.planet{position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 36% 30%,#bfe7ff,var(--blue));box-shadow:inset -18px -18px 40px rgba(26,39,82,.25),0 30px 70px rgba(28,176,246,.35);animation:spin 26s linear infinite}.planet::before{content:'';position:absolute;width:34%;height:18%;border-radius:50%;background:rgba(255,255,255,.35);top:22%;left:20%;filter:blur(2px)}.planet::after{content:'';position:absolute;width:24%;height:12%;border-radius:50%;background:rgba(26,39,82,.18);bottom:24%;right:22%}.ring{position:absolute;left:50%;top:54%;width:108%;height:46%;transform:translate(-50%,-50%) rotate(-18deg);border:6px solid rgba(255,200,40,.55);border-radius:50%;animation:spin 18s linear infinite reverse}.rocket{position:absolute;left:58%;top:14%;width:120px;animation:floaty 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center;z-index:3;filter:drop-shadow(0 12px 18px rgba(26,39,82,.25))}.flame{transform-box:fill-box;transform-origin:50% 0%;animation:flame .6s ease-in-out infinite alternate}.s-star{position:absolute;animation:floaty 5s ease-in-out infinite}@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-18px) rotate(4deg)}}@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes flame{0%{transform:scaleY(.8) scaleX(1)}100%{transform:scaleY(1.15) scaleX(.9)}}@keyframes wiggle{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}.count-orb{position:absolute;left:6%;top:6%;background:#fff;border-radius:20px;padding:10px 16px;box-shadow:var(--card-shadow);font-family:'Baloo 2';font-weight:800;display:flex;align-items:center;gap:9px;font-size:15px;z-index:4;animation:pop-bob 4s ease-in-out infinite}.count-orb.b2{left:auto;right:2%;top:auto;bottom:14%;animation-delay:1.5s}.count-orb .big{font-family:'DM Serif Display';font-size:26px;color:var(--blue)}@keyframes pop-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}.page-hero{padding-top:calc(var(--header-h) + 56px);padding-bottom:56px;background:linear-gradient(180deg,#fff,var(--light-blue));text-align:center;position:relative;overflow:hidden}.page-hero .wrap{position:relative;z-index:2;max-width:780px}.page-hero h1{font-size:clamp(34px,5.2vw,54px);margin:14px 0 16px}.page-hero .divider{margin:0 auto 20px}.pf-blue{--frame:#a8d9ef}.pf-pink{--frame:#fedae7}.pf-lav{--frame:#c9b4f0}.pf-cream{--frame:#fef8f3;--frame-edge:#efe4d8}.post-hero{margin:30px 0 0;padding:4.2%;border-radius:min(46px,calc(6.3vw - 3px));background:var(--frame,var(--light-blue));box-shadow:0 18px 40px rgba(26,39,82,.16)}.post-hero img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:min(26px,calc(3.6vw - 1.7px))}.post-hero.pf-cream{box-shadow:inset 0 0 0 1px var(--frame-edge),0 18px 40px rgba(26,39,82,.16)}@media(max-width:640px){.post-hero{margin-top:22px}}.magnet-box{display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;background:var(--light-blue);border:2px dashed var(--blue);border-radius:22px;padding:20px 26px;margin:28px 0 6px}.magnet-box p{flex:1 1 280px;margin:0;font-size:15px;line-height:1.75;color:var(--text-body)}.magnet-box strong{font-family:'Baloo 2';font-size:16px;color:var(--navy)}.magnet-box .btn{flex:0 0 auto}.breadcrumb{font-family:'Baloo 2';font-size:13px;font-weight:700;color:#94a3b8;margin-bottom:8px}.breadcrumb a{text-decoration:none;color:#94a3b8}.breadcrumb a:hover{color:var(--blue)}</style>
+<link rel="preload" as="style" href="/assets/styles.css?v=fb874fd3" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/styles.css?v=fb874fd3"></noscript>
+<!-- AE:CRIT end -->
+<meta name="theme-color" content="#1A2752">
+<title>KET（A2）官方文法範圍：13 個類別逐項教學＋例句與常見錯誤｜埃森美語</title>
+<meta name="description" content="劍橋 A2 Key 官方教師手冊「Language specifications」附錄的 13 個文法類別，一項一項拆開教：例句、台灣孩子最常錯的一題、以及到了 PET（B1）會怎麼加深。美籍持證教師整理，2026 年 8 月更新。">
+<link rel="canonical" href="https://americanenglish.com.tw/a2-grammar-guide/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="KET（A2）官方文法範圍：13 個類別逐項教學">
+<meta property="og:description" content="官方手冊附錄的 13 個文法類別，附例句、常見錯誤與 B1 銜接說明——美籍持證教師整理。">
+<meta property="og:url" content="https://americanenglish.com.tw/a2-grammar-guide/">
+<meta property="og:image" content="https://americanenglish.com.tw/assets/img/blog/ket-exam-preparation-study-checklist.webp">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<style>.exam-subnav{position:sticky;top:var(--header-h);z-index:90;background:#fff;border-bottom:2px solid rgba(26,39,82,.08);overflow-x:auto;-webkit-overflow-scrolling:touch}.exam-subnav .row{display:flex;align-items:stretch;max-width:1120px;margin:0 auto;padding:0 24px}.exam-subnav .tag{flex:none;display:flex;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;color:#fff;background:var(--blue);padding:10px 14px;border-radius:0 0 10px 10px;text-decoration:none}.exam-subnav a:not(.tag){flex:none;display:flex;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;color:#475569;text-decoration:none;padding:10px 13px;border-bottom:3px solid transparent;white-space:nowrap}.exam-subnav a:not(.tag):hover{color:var(--blue)}.exam-subnav a.on{color:var(--navy);border-bottom-color:var(--blue)}</style>
+<style>
+.g-lead{max-width:760px;margin:0 auto}
+.g-toc{display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:10px;margin:28px 0 0}
+.g-toc a{display:flex;align-items:center;gap:10px;background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:15px;padding:11px 13px;text-decoration:none;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);box-shadow:0 3px 0 rgba(26,39,82,.06);transition:transform .12s,border-color .12s,box-shadow .12s}
+.g-toc a:hover{transform:translateY(-2px);border-color:var(--c);box-shadow:0 6px 0 var(--cs)}
+.g-toc .n{flex:none;width:27px;height:27px;border-radius:9px;display:grid;place-items:center;font-size:12px;font-family:'Baloo 2',sans-serif;font-weight:800;color:#fff;background:var(--c)}
+.gcard{position:relative;background:#fff;border:1px solid rgba(26,39,82,.10);border-radius:24px;padding:clamp(20px,3vw,30px);box-shadow:var(--card-shadow);margin-top:20px;scroll-margin-top:calc(var(--header-h) + 70px)}
+.gcard-h{display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+.gnum{flex:none;width:46px;height:46px;border-radius:15px;background:var(--c);color:#fff;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:17px;display:grid;place-items:center;box-shadow:0 4px 0 var(--cd)}
+.gcard-h h3{font-size:clamp(20px,2.6vw,25px);line-height:1.15;margin:0}
+.gcard-h h3 .en{display:block;font-family:'Baloo 2',sans-serif;font-size:13.5px;font-weight:700;letter-spacing:.6px;color:var(--c);text-transform:none;margin-top:3px}
+.gtag{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:12.5px;color:#475569;background:#F1F6FB;border-radius:100px;padding:7px 14px;white-space:nowrap}
+.gtag svg{width:13px;height:13px;fill:none;stroke:#8b9bb0;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.gscope{font-family:'Baloo 2',sans-serif;font-size:13.5px;font-weight:700;color:#8b9bb0;margin:13px 0 0}
+.gdesc{font-size:15.5px;line-height:1.85;color:var(--text-body);margin:8px 0 0}
+.gex{width:100%;border-collapse:collapse;margin:16px 0 0;font-size:15px}
+.gex td{padding:10px 8px;border-bottom:1px solid rgba(26,39,82,.07);vertical-align:baseline}
+.gex tr:last-child td{border-bottom:0}
+.gex td.en{color:var(--navy);line-height:1.6}
+.gex td.nt{width:33%;color:#8b9bb0;font-size:13px;font-family:'Baloo 2',sans-serif;font-weight:700;text-align:right;white-space:nowrap}
+.gex u,.gmiss u{text-decoration:none;background:linear-gradient(180deg,transparent 60%,var(--cs) 60%);padding:0 2px;font-weight:700}
+.gmiss{margin-top:16px;background:#FFF8F5;border:1px solid rgba(240,153,123,.38);border-radius:16px;padding:15px 18px;font-size:14.8px;line-height:1.75}
+.gmiss .lbl{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:12.5px;letter-spacing:1.2px;text-transform:uppercase;color:#c96a48;display:block;margin-bottom:8px}
+.gmiss .ln{display:flex;gap:9px;align-items:baseline;color:var(--navy)}
+.gmiss .ln+.ln{margin-top:4px}
+.gmiss .x{color:#d9534f;font-weight:800;flex:none}
+.gmiss .v{color:#049b48;font-weight:800;flex:none}
+.gmiss .why{margin-top:9px;color:var(--text-body);font-size:14px}
+.gmiss u{--cs:rgba(240,153,123,.42)}
+.gnext{margin-top:14px;padding-top:13px;border-top:1px dashed rgba(26,39,82,.12);font-size:13.8px;line-height:1.7;color:#7b8794}
+.gnext b{font-family:'Baloo 2',sans-serif;color:var(--navy);font-size:12.5px;letter-spacing:.8px;text-transform:uppercase;margin-right:7px}
+.gtop{display:inline-flex;align-items:center;gap:5px;margin-top:14px;font-family:'Baloo 2',sans-serif;font-size:12.5px;font-weight:700;color:#a3b0c2;text-decoration:none}
+.gtop:hover{color:var(--blue)}
+.g-src{max-width:760px;margin:30px auto 0;background:#F4FAFF;border:1px solid rgba(28,176,246,.22);border-radius:18px;padding:18px 22px;font-size:14.5px;line-height:1.8;color:var(--text-body)}
+.g-src b{color:var(--navy)}
+@media(max-width:640px){.gtag{margin-left:0;order:3;width:100%;justify-content:center}.gex td.nt{width:auto;white-space:normal}}
+</style>
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/a2-grammar-guide/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/a2-grammar-guide/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"劍橋英檢","item":"https://americanenglish.com.tw/exams/"},{"@type":"ListItem","position":3,"name":"KET 準備指南","item":"https://americanenglish.com.tw/ket-prep-guide/"},{"@type":"ListItem","position":4,"name":"KET（A2 Key）官方文法範圍13 個類別，逐項拆解"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"KET 的文法範圍是劍橋官方公布的嗎？","acceptedAnswer":{"@type":"Answer","text":"是。劍橋《A2 Key Handbook for Teachers》有一段名為「Language specifications」的附錄（手冊 56–58 頁），明列這一級的文法類別，共 13 類。本頁的類別名稱與範圍完全依這份官方附錄；例句與中文說明則是我們自己寫的教學內容，不是官方題目。"}},{"@type":"Question","name":"KET 要考條件句（if 子句）嗎？","acceptedAnswer":{"@type":"Answer","text":"官方的 13 個類別裡沒有「條件句」這一項。if 在 A2 只以最基礎的從屬子句形式出現，和 when、where、because 並列在「子句 Clause types」這一類裡。系統性的條件句 type 0、1、2 要到 B1（PET）才正式進入官方範圍，第三條件句則更高階。"}},{"@type":"Question","name":"片語動詞（phrasal verbs）要背嗎？","acceptedAnswer":{"@type":"Answer","text":"A2 只會遇到最基礎的幾個，官方附錄沒有把片語動詞獨立成一類。它要到 B1（PET）才成為附錄裡明列的類別，數量也明顯變多。與其在 A2 階段狂背片語動詞清單，不如先把這 13 類的基本功練穩。"}},{"@type":"Question","name":"這 13 類，考試哪一大題最會考？","acceptedAnswer":{"@type":"Answer","text":"最集中在 Reading and Writing 的 Part 5（開放式克漏字）——6 個空格、一格填一個字，幾乎全是文法功能字；Part 4（三選一克漏字）也會考文法搭配。另外 Part 6、Part 7 的寫作和整場 Speaking 是「用出來」的部分，看得懂還不夠，要能主動產出。"}}]}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body>
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo.jpg" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<div class="drawer" id="drawer"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></div>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/exams/">劍橋英檢</a> ／ <a href="/ket-prep-guide/">KET 準備指南</a> ／ A2 文法範圍</div>
+    <span class="eyebrow eyebrow-green reveal">官方依據 · 逐項教學</span>
+    <h1 class="reveal d1"><em>KET</em>（A2 Key）官方文法範圍<br>13 個類別，逐項拆解</h1>
+    <div class="divider reveal d1"></div>
+    <p class="body reveal d2">作者：Christopher｜埃森美語創辦人｜美國密西根大學畢業、美國正式教師執照</p>
+  </div>
+</section>
+
+<nav class="exam-subnav" aria-label="KET 專區導覽"><div class="row">
+<a class="tag" href="/exams/">劍橋英檢 KET</a>
+<a href="/ket-prep-guide/">總覽</a>
+<a href="/ket-prep-guide/#papers">考什麼</a>
+<a href="/ket-prep-guide/#scores">分數與證書</a>
+<a href="/a2-grammar-guide/" class="on" aria-current="page">文法範圍</a>
+<a href="/ket-prep-guide/#vocab">單字表</a>
+<a href="/ket-rw-practice-part1/">線上練習</a>
+<a href="/cambridge-practice-tests/">官方題庫</a>
+<a href="/cambridge-exam-registration-taiwan/">報名資訊</a>
+</div></nav>
+
+<section class="section">
+  <div class="wrap">
+    <div class="prose g-lead reveal">
+      <p>KET 的文法範圍不是誰猜的——劍橋《A2 Key Handbook for Teachers》裡有一段明確命名為<strong>「Language specifications」</strong>的附錄（手冊 56–58 頁），把這一級會考的文法拆成 <strong>13 個類別</strong>。這是許多坊間教材沒有引用過的第一手來源。這一頁把 13 類全部攤開，每一類都附例句、台灣孩子最常錯的一題，以及這一項到了 <a href="/b1-grammar-guide/">PET（B1）</a>會怎麼加深。</p>
+      <p>兩個誠實的提醒先放在最前面。第一，官方的 13 個類別裡<strong>沒有「條件句」也沒有「片語動詞」這兩個獨立項目</strong>——if 子句在 A2 只以最基礎的從屬子句形式出現，片語動詞要到 B1 才成為附錄裡明列的一類、數量也才明顯變多。網路上流傳的 KET 文法清單常把這兩項當成 A2 重點在教，力氣用錯了地方。第二，手冊本身也加註：考生在文章裡<strong>可能遇到</strong>清單以外的文法形式，但不會被直接考——這份清單是「考什麼」的範圍，不是文章的天花板。</p>
+    </div>
+    <div id="toc" class="center stack reveal" style="margin-top:44px"><span class="eyebrow">目錄</span><h2>13 個官方類別，<em>點進去直接看</em></h2></div>
+    <div class="g-toc reveal"><a href="#verbs" style="--c:#1CB0F6;--cs:rgba(28,176,246,.30)"><span class="n">01</span>動詞</a><a href="#modals" style="--c:#CE82FF;--cs:rgba(206,130,255,.32)"><span class="n">02</span>情態動詞</a><a href="#tenses" style="--c:#06C755;--cs:rgba(6,199,85,.28)"><span class="n">03</span>時態</a><a href="#verb-forms" style="--c:#F0997B;--cs:rgba(240,153,123,.38)"><span class="n">04</span>動詞形式</a><a href="#clause-types" style="--c:#4C6FE7;--cs:rgba(76,111,231,.26)"><span class="n">05</span>子句</a><a href="#interrogatives" style="--c:#EC6F9E;--cs:rgba(236,111,158,.30)"><span class="n">06</span>疑問詞</a><a href="#nouns" style="--c:#1CB0F6;--cs:rgba(28,176,246,.30)"><span class="n">07</span>名詞</a><a href="#pronouns" style="--c:#CE82FF;--cs:rgba(206,130,255,.32)"><span class="n">08</span>代名詞</a><a href="#determiners" style="--c:#06C755;--cs:rgba(6,199,85,.28)"><span class="n">09</span>限定詞</a><a href="#adjectives" style="--c:#F0997B;--cs:rgba(240,153,123,.38)"><span class="n">10</span>形容詞</a><a href="#adverbs" style="--c:#4C6FE7;--cs:rgba(76,111,231,.26)"><span class="n">11</span>副詞</a><a href="#prepositions" style="--c:#EC6F9E;--cs:rgba(236,111,158,.30)"><span class="n">12</span>介系詞</a><a href="#connectives" style="--c:#1CB0F6;--cs:rgba(28,176,246,.30)"><span class="n">13</span>連接詞</a></div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow">逐項拆解</span><h2>一類一類，<em>把範圍讀成能力</em></h2></div>
+    <div style="margin-top:6px">
+<article class="gcard reveal" id="verbs" style="--c:#1CB0F6;--cd:#1391cc;--cs:rgba(28,176,246,.30)">
+  <div class="gcard-h">
+    <span class="gnum">01</span>
+    <h3>動詞<span class="en">Verbs</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>R&amp;W Part 7 看圖故事、Part 5 克漏字</span>
+  </div>
+  <p class="gscope">規則與不規則變化</p>
+  <p class="gdesc">A2 要求的不是背完一整本動詞三態，而是把日常真的會用到的那幾十個動詞變化寫對：規則動詞加 -s、加 -ed，以及 go、see、buy、take 這類高頻不規則動詞的過去式。台灣孩子失分的地方通常不是不知道 bought 這個字，而是寫的時候手一滑套用了最熟的那條規則——中文的動詞不會隨時間改變形狀，句子裡沒有那個「非改不可」的訊號。Part 7 看圖故事整篇都在講已經發生的事，一個動詞背錯，往往整段一路錯下去。</p>
+  <table class="gex"><tbody><tr><td class="en">My brother <u>plays</u> basketball every Saturday.</td><td class="nt">第三人稱單數 -s</td></tr><tr><td class="en">We <u>walked</u> to school in the rain.</td><td class="nt">規則變化 -ed</td></tr><tr><td class="en">She <u>bought</u> a new bag yesterday.</td><td class="nt">不規則 bought</td></tr><tr><td class="en">I <u>ate</u> a sandwich for lunch.</td><td class="nt">不規則 ate</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span>She <u>buyed</u> a new bag yesterday.</span></div>
+    <div class="ln"><span class="v">✓</span><span>She <u>bought</u> a new bag yesterday.</span></div>
+    <p class="why">buy 是不規則動詞，過去式不加 -ed；把 buy–bought、go–went、see–saw 當成「一組兩個字」一起背，比背規則更不容易在緊張的時候套錯。</p></div>
+  <div class="gnext"><b>再上一級</b>B1（PET）不會要求更多動詞變化，但同一批不規則動詞得能用在報導別人說過的話（reported speech）裡，時態整組往後推一格，等於同一份動詞表要背得更熟。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="modals" style="--c:#CE82FF;--cd:#a94fe0;--cs:rgba(206,130,255,.32)">
+  <div class="gcard-h">
+    <span class="gnum">02</span>
+    <h3>情態動詞<span class="en">Modals</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>R&amp;W Part 5 克漏字、Speaking Part 2 討論</span>
+  </div>
+  <p class="gscope">can、could、will、shall、should、may、have to、must、need 等</p>
+  <p class="gdesc">A2 的情態動詞考的是「用對場合」，不是用得多難：能力用 can、客氣的請求用 could、建議用 should、規定用 must 或 have to。台灣孩子最常卡住的其實是後面接什麼——can、could、will、shall、should、may、must 後面一律接原形動詞，不加 to 也不加 -s，只有 have to 和 need to 自己帶著 to，這一組例外是錯最多的地方。Speaking Part 2 兩位考生要一起討論喜不喜歡某個地方，could 和 should 會很自然地用上。</p>
+  <table class="gex"><tbody><tr><td class="en">I <u>can</u> swim, but I can't ride a bike.</td><td class="nt">can 表能力</td></tr><tr><td class="en"><u>Could</u> you help me with my homework?</td><td class="nt">could 客氣請求</td></tr><tr><td class="en">You <u>should</u> take a jacket. It's cold today.</td><td class="nt">should 建議</td></tr><tr><td class="en">We <u>have to</u> wear a uniform at school.</td><td class="nt">have to 規定</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span>You <u>should to</u> drink more water.</span></div>
+    <div class="ln"><span class="v">✓</span><span>You <u>should</u> drink more water.</span></div>
+    <p class="why">中文的「應該要」裡帶著一個「要」，孩子照著翻就多冒出一個 to；記住只有 have to、need to 自帶 to，其他情態動詞後面直接接原形動詞。</p></div>
+  <div class="gnext"><b>再上一級</b>B1（PET）會再加上 might、ought to、used to，以及情態動詞的被動說法和使役的 have／get something done，要分辨的語氣強弱變得更細。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="tenses" style="--c:#06C755;--cd:#04a046;--cs:rgba(6,199,85,.28)">
+  <div class="gcard-h">
+    <span class="gnum">03</span>
+    <h3>時態<span class="en">Tenses</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>R&amp;W Part 5 克漏字、Part 6／Part 7 寫作</span>
+  </div>
+  <p class="gscope">現在簡單式／進行式、現在完成式、過去簡單式／進行式、未來式 going to／will</p>
+  <p class="gdesc">A2 要求的時態就是這幾種，範圍不算大，難的是在同一篇短文裡不混用。中文的動詞不會因為時間改變形狀，靠的是「昨天」「已經」這些字，所以孩子寫英文時常常前一句用過去式、下一句又滑回現在式，自己讀起來還很順。Part 7 看圖故事要用同一個時態從頭寫到尾，這是台灣孩子在寫作最常被扣分的一項。</p>
+  <table class="gex"><tbody><tr><td class="en">I <u>go</u> to school by bus every day.</td><td class="nt">現在簡單式：習慣</td></tr><tr><td class="en">Be quiet — Mum <u>is sleeping</u>.</td><td class="nt">現在進行式：此刻</td></tr><tr><td class="en">We <u>visited</u> my grandmother last weekend.</td><td class="nt">過去簡單式</td></tr><tr><td class="en">I <u>have never been</u> to Japan.</td><td class="nt">現在完成式：經驗</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span>I <u>come</u> to your house by bus tomorrow.</span></div>
+    <div class="ln"><span class="v">✓</span><span>I <u>will come</u> to your house by bus tomorrow.</span></div>
+    <p class="why">中文說「我明天坐公車去你家」，用現在式就能表示未來，英文不行——句子裡出現 tomorrow、next week 這類字，動詞就得跟著改成 will 或 be going to。</p></div>
+  <div class="gnext"><b>再上一級</b>B1（PET）在同一批時態上加了報導別人說過的話（reported speech），原本的時態要整組往後推一格，判斷「這句話原來是什麼時候說的」變成常考點。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="verb-forms" style="--c:#F0997B;--cd:#d97a5c;--cs:rgba(240,153,123,.38)">
+  <div class="gcard-h">
+    <span class="gnum">04</span>
+    <h3>動詞形式<span class="en">Verb forms</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>R&amp;W Part 1 告示題、Part 5 克漏字</span>
+  </div>
+  <p class="gscope">肯定／疑問／否定、祈使句、不定詞、動名詞、簡單被動式</p>
+  <p class="gdesc">這一類管的是動詞「長什麼樣子」：要不要請 do／does／did 來幫忙造疑問句和否定句、什麼時候用 to + 原形、什麼時候用 -ing，還有最基本的被動式。台灣孩子最常漏掉的就是助動詞——中文的否定只要在動詞前面放一個「不」，英文卻得先叫出 do／does／did，再把後面的動詞退回原形。Part 1 的告示與短訊題幾乎都是祈使句，看懂 Don't touch、Please wait here 就是直接的分數。</p>
+  <table class="gex"><tbody><tr><td class="en"><u>Do</u> you like Japanese food?</td><td class="nt">疑問句要 do</td></tr><tr><td class="en"><u>Don't forget</u> your homework.</td><td class="nt">祈使句：告示常見</td></tr><tr><td class="en">I enjoy <u>playing</u> the guitar.</td><td class="nt">動名詞 -ing</td></tr><tr><td class="en">The library <u>is closed</u> on Sundays.</td><td class="nt">簡單被動式</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span>He <u>not</u> like sports.</span></div>
+    <div class="ln"><span class="v">✓</span><span>He <u>doesn't</u> like sports.</span></div>
+    <p class="why">中文的「不喜歡」直接把「不」放在動詞前面，英文得先放 do／does／did，而且助動詞出現後，後面的動詞要退回原形（是 doesn't like，不是 doesn't likes）。</p></div>
+  <div class="gnext"><b>再上一級</b>B1（PET）把被動式擴大到更多時態，並加入使役的 have／get something done，還要分辨更多「哪些動詞後面接 to、哪些接 -ing」。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="clause-types" style="--c:#4C6FE7;--cd:#3652bd;--cs:rgba(76,111,231,.26)">
+  <div class="gcard-h">
+    <span class="gnum">05</span>
+    <h3>子句<span class="en">Clause types</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>R&amp;W Part 6 短訊寫作、Part 5 克漏字</span>
+  </div>
+  <p class="gscope">主句、對等子句，以及 if／when／where／because 引導的從屬子句</p>
+  <p class="gdesc">A2 只要求兩件事：能用 and、but、or 把兩個句子接成一句，以及能用 if、when、where、because 帶出一個附屬的子句。這裡要特別講清楚——官方 13 個類別裡沒有「條件句」這一項，if 在 A2 只是一個普通的從屬連接詞，不需要背什麼第一類、第二類條件句的公式。Part 6 的短訊寫作有一項評分看的是組織，用 because 把兩句接起來，會比三個各自獨立的短句讀起來完整。</p>
+  <table class="gex"><tbody><tr><td class="en">I like maths, <u>but</u> I don't like history.</td><td class="nt">對等子句 but</td></tr><tr><td class="en">I was late <u>because</u> I missed the bus.</td><td class="nt">從屬：because</td></tr><tr><td class="en"><u>If</u> it rains, we can watch a film at home.</td><td class="nt">從屬：if</td></tr><tr><td class="en">Call me <u>when</u> you get home.</td><td class="nt">從屬：when</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span><u>Because</u> I was tired, <u>so</u> I went to bed early.</span></div>
+    <div class="ln"><span class="v">✓</span><span><u>Because</u> I was tired, I went to bed early.</span></div>
+    <p class="why">中文的「因為……所以……」是成雙出現的，英文只能留一個——用了 because 就不再放 so，反過來也一樣。</p></div>
+  <div class="gnext"><b>再上一級</b>B1（PET）才正式把條件句分成 type 0／1／2 來考，也加入 although、while、unless、so that、in order to 這類更精細的連接方式；type 3 條件句官方並沒有列進 B1 的範圍。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="interrogatives" style="--c:#EC6F9E;--cd:#c9527d;--cs:rgba(236,111,158,.30)">
+  <div class="gcard-h">
+    <span class="gnum">06</span>
+    <h3>疑問詞<span class="en">Interrogatives</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>R&amp;W Part 5 克漏字、Speaking Part 1 面談</span>
+  </div>
+  <p class="gscope">what、where、when、who、how 等，含各時態與情態動詞的疑問形式</p>
+  <p class="gdesc">疑問詞本身不難（what、where、when、who、why、how），難的是後面的語序：英文的問句要把 do／does／did、be 動詞或情態動詞搬到主詞前面，中文只要在句尾加一個「嗎」就好。官方特別註明要會各時態、各情態動詞的疑問形式，也就是同一個 What 後面接的是 do、did 還是 can，孩子要分得出來。Speaking Part 1 全程由考官提問、孩子回答，聽懂問句的形式決定了他答不答得到點上。</p>
+  <table class="gex"><tbody><tr><td class="en">What time <u>do</u> you get up?</td><td class="nt">現在式疑問</td></tr><tr><td class="en">Where <u>did</u> you go last summer?</td><td class="nt">過去式疑問</td></tr><tr><td class="en"><u>How much</u> is this T-shirt?</td><td class="nt">問價錢</td></tr><tr><td class="en"><u>Can</u> you play the piano?</td><td class="nt">情態動詞疑問</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span><u>Where you went</u> yesterday?</span></div>
+    <div class="ln"><span class="v">✓</span><span><u>Where did you go</u> yesterday?</span></div>
+    <p class="why">中文的問句和肯定句順序一樣（你昨天去哪裡），只換一個疑問詞；英文得多放一個 did 到主詞前面，而且動詞要退回原形 go。</p></div>
+  <div class="gnext"><b>再上一級</b>B1（PET）會加上間接問句與報導問句（She asked me where I lived），語序反而要變回肯定句的排法，是另一個要重新適應的規則。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="nouns" style="--c:#1CB0F6;--cd:#1391cc;--cs:rgba(28,176,246,.30)">
+  <div class="gcard-h">
+    <span class="gnum">07</span>
+    <h3>名詞<span class="en">Nouns</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>R&amp;W Part 5 克漏字、Part 6／Part 7 寫作</span>
+  </div>
+  <p class="gscope">單複數、可數／不可數、所有格</p>
+  <p class="gdesc">A2 的名詞考三件事：複數要不要加 -s（含 children、feet 這類不規則）、可數還是不可數（water、money、homework 沒有複數形），以及所有格的 's。中文的名詞沒有單複數變化，「三本書」的「書」不會變形，所以孩子看到 three 就覺得訊息已經給足了，-s 很自然地漏掉。這是寫作裡最常見的失分，也是最容易靠寫完後檢查一遍補回來的一項。</p>
+  <table class="gex"><tbody><tr><td class="en">I have two <u>brothers</u> and one sister.</td><td class="nt">規則複數 -s</td></tr><tr><td class="en">There are twenty <u>children</u> in my class.</td><td class="nt">不規則複數</td></tr><tr><td class="en">I have a lot of <u>homework</u> tonight.</td><td class="nt">不可數：無複數</td></tr><tr><td class="en">This is my <u>sister's</u> bike.</td><td class="nt">所有格 's</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span>I have three <u>book</u> in my bag.</span></div>
+    <div class="ln"><span class="v">✓</span><span>I have three <u>books</u> in my bag.</span></div>
+    <p class="why">中文說「三本書」時「書」不變形，數字已經把話講完了；英文要求數字和名詞兩邊都顯示複數，寫完一句先找 two、three、many、a lot of，看到就檢查 -s。</p></div>
+  <div class="gnext"><b>再上一級</b>B1（PET）的名詞規則和 A2 相同，但可數／不可數的判斷延伸到 advice、information、news 這類抽象名詞，得一個一個記，不能靠直覺。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="pronouns" style="--c:#CE82FF;--cd:#a94fe0;--cs:rgba(206,130,255,.32)">
+  <div class="gcard-h">
+    <span class="gnum">08</span>
+    <h3>代名詞<span class="en">Pronouns</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>R&amp;W Part 5 克漏字</span>
+  </div>
+  <p class="gscope">人稱、非人稱、指示、不定、關係代名詞</p>
+  <p class="gdesc">人稱（I／me／my／mine）、指示（this／that／these／those）、不定（something／anyone／nothing）到最基礎的關係代名詞（who／which／that），A2 都在範圍內。中文最大的落差有兩個：「他／她／它」讀起來一模一樣，孩子講英文時 he 和 she 常常脫口而出就換錯人；另一個是英文的句子不能沒有主詞，中文可以直接說「很熱」，英文一定要有 It 頂在前面。Part 5 每格只填一個字，代名詞正是這種空格最典型的答案。</p>
+  <table class="gex"><tbody><tr><td class="en">That's my bag. The blue one is <u>hers</u>.</td><td class="nt">所有格代名詞</td></tr><tr><td class="en">Are <u>these</u> your shoes?</td><td class="nt">指示：these</td></tr><tr><td class="en">I didn't buy <u>anything</u> at the shop.</td><td class="nt">不定代名詞</td></tr><tr><td class="en">The boy <u>who</u> sits next to me is from Japan.</td><td class="nt">關係代名詞 who</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span><u>Is</u> very hot today.</span></div>
+    <div class="ln"><span class="v">✓</span><span><u>It is</u> very hot today.</span></div>
+    <p class="why">中文說「今天很熱」不需要主詞，英文的句子一定要有主詞，天氣、時間、距離這種沒有實際主角的句子就用 It 補上。</p></div>
+  <div class="gnext"><b>再上一級</b>B1（PET）的關係子句用得更長也更頻繁，句子一長，代名詞到底指前面哪一個人事物，就變成閱讀時要主動確認的事。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="determiners" style="--c:#06C755;--cd:#04a046;--cs:rgba(6,199,85,.28)">
+  <div class="gcard-h">
+    <span class="gnum">09</span>
+    <h3>限定詞<span class="en">Determiners</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>R&amp;W Part 5 克漏字</span>
+  </div>
+  <p class="gscope">a／the 的基本用法</p>
+  <p class="gdesc">官方在這一項寫得很克制——A2 只要求 a 和 the 的基本用法：第一次提到用 a，再次提到、或雙方都知道是哪一個時用 the。中文沒有冠詞這個東西，這是台灣孩子從小到大最穩定的失分項目，不是觀念難，是沒有這個習慣。Part 5 每格只填一個字，a、an、the 剛好是最常被挖掉的那種字。</p>
+  <table class="gex"><tbody><tr><td class="en">I saw <u>a</u> cat in the garden. <u>The</u> cat was black.</td><td class="nt">先 a 後 the</td></tr><tr><td class="en">Can you close <u>the</u> window, please?</td><td class="nt">雙方都知道</td></tr><tr><td class="en">She wants to be <u>a</u> doctor.</td><td class="nt">職業前用 a</td></tr><tr><td class="en">We had <u>an</u> egg for breakfast.</td><td class="nt">母音前用 an</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span>My sister is <u>teacher</u>.</span></div>
+    <div class="ln"><span class="v">✓</span><span>My sister is <u>a</u> teacher.</span></div>
+    <p class="why">中文說「我姊姊是老師」沒有放冠詞的位置，英文的單數可數名詞前面幾乎一定要有 a／an／the，講職業時固定用 a。</p></div>
+  <div class="gnext"><b>再上一級</b>同一組 a／the 規則到了 B1（PET）不會改變，但文章更長、名詞更抽象，判斷「這個名詞讀者是不是已經知道了」就更需要看上下文。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="adjectives" style="--c:#F0997B;--cd:#d97a5c;--cs:rgba(240,153,123,.38)">
+  <div class="gcard-h">
+    <span class="gnum">10</span>
+    <h3>形容詞<span class="en">Adjectives</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>R&amp;W Part 4 選擇式克漏字、Speaking Part 2 討論</span>
+  </div>
+  <p class="gscope">顏色、大小、比較級最高級、順序</p>
+  <p class="gdesc">A2 的形容詞除了顏色、大小這些基本字，真正的考點是比較級與最高級：短的字加 -er／-est，長的字用 more／most，再加上 good–better–best 這幾個不規則。另一個容易被忽略的是順序——英文的形容詞排列有固定次序（a big red bag，不是 a red big bag），中文沒有這條規則，孩子多半憑感覺排。Speaking Part 2 要兩個孩子討論比較喜歡哪個地方、為什麼，比較級幾乎一定會用上。</p>
+  <table class="gex"><tbody><tr><td class="en">My bag is <u>bigger</u> than yours.</td><td class="nt">短字加 -er</td></tr><tr><td class="en">This film is <u>more interesting</u> than that one.</td><td class="nt">長字用 more</td></tr><tr><td class="en">She is <u>the best</u> singer in our class.</td><td class="nt">不規則最高級</td></tr><tr><td class="en">He has a <u>big black</u> dog.</td><td class="nt">形容詞順序</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span>My brother is <u>more tall</u> than me.</span></div>
+    <div class="ln"><span class="v">✓</span><span>My brother is <u>taller</u> than me.</span></div>
+    <p class="why">中文的「比較高」是在形容詞前面加一個「比較」，孩子就直覺翻成 more；英文的短形容詞要改字尾 -er，more 只留給 interesting、expensive 這種長字。</p></div>
+  <div class="gnext"><b>再上一級</b>B1（PET）的官方附錄在這一類明列了 (not) as … as、not … enough to、too … to 這組對等與程度比較，另外還加上分詞當形容詞與複合形容詞。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="adverbs" style="--c:#4C6FE7;--cd:#3652bd;--cs:rgba(76,111,231,.26)">
+  <div class="gcard-h">
+    <span class="gnum">11</span>
+    <h3>副詞<span class="en">Adverbs</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>R&amp;W Part 4 選擇式克漏字、Part 6 短訊寫作</span>
+  </div>
+  <p class="gscope">方式、頻率、時間、程度</p>
+  <p class="gdesc">A2 的副詞分四種：方式（slowly、carefully）、頻率（always、usually、never）、時間（yesterday、soon）、程度（very、really、quite）。台灣孩子最常錯的是位置——中文的「常常」「總是」放哪裡都通，英文的頻率副詞位置很固定：be 動詞後面、一般動詞前面。程度副詞是另一個坑，very 只能修飾形容詞和副詞，不能拿去修飾動詞。</p>
+  <table class="gex"><tbody><tr><td class="en">She <u>always</u> gets up at seven.</td><td class="nt">頻率：動詞前</td></tr><tr><td class="en">He is <u>never</u> late for school.</td><td class="nt">頻率：be 動詞後</td></tr><tr><td class="en">Please drive <u>slowly</u>.</td><td class="nt">方式副詞</td></tr><tr><td class="en">The film was <u>really</u> good.</td><td class="nt">程度副詞</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span>I <u>very</u> like swimming.</span></div>
+    <div class="ln"><span class="v">✓</span><span>I <u>really</u> like swimming.</span></div>
+    <p class="why">中文的「很喜歡」把「很」擺在動詞前面，英文的 very 不能修飾動詞——要嘛換成 really like，要嘛改寫成 like swimming very much。</p></div>
+  <div class="gnext"><b>再上一級</b>B1（PET）的副詞範圍擴大到更多用來連接與評論的副詞，一個句子裡同時出現兩三個副詞時，擺放位置的判斷也更講究。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="prepositions" style="--c:#EC6F9E;--cd:#c9527d;--cs:rgba(236,111,158,.30)">
+  <div class="gcard-h">
+    <span class="gnum">12</span>
+    <h3>介系詞<span class="en">Prepositions</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>R&amp;W Part 5 克漏字</span>
+  </div>
+  <p class="gscope">地點、時間、方向</p>
+  <p class="gdesc">地點（in／on／at／under／between）、時間（in July／on Monday／at six o'clock）、方向（to／from／into）——A2 的介系詞數量不多，但每一個都得記死，因為中英文對不起來。中文說「在星期一」「在七月」「在六點」用的都是同一個「在」，英文卻分成 on、in、at 三個字。Part 5 每格只填一個字，介系詞正是這種空格最典型的答案。</p>
+  <table class="gex"><tbody><tr><td class="en">My birthday is <u>in</u> July.</td><td class="nt">月份用 in</td></tr><tr><td class="en">We have English <u>on</u> Monday.</td><td class="nt">星期用 on</td></tr><tr><td class="en">The film starts <u>at</u> half past seven.</td><td class="nt">鐘點用 at</td></tr><tr><td class="en">The cat is <u>under</u> the table.</td><td class="nt">地點：under</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span>I go to school <u>at</u> Monday morning.</span></div>
+    <div class="ln"><span class="v">✓</span><span>I go to school <u>on</u> Monday morning.</span></div>
+    <p class="why">中文的「在」一個字包辦時間和地點，英文分工很細：星期和日期用 on、月份和年份用 in、鐘點用 at，三個字各配一組例句一起背最有效。</p></div>
+  <div class="gnext"><b>再上一級</b>B1（PET）的介系詞開始和動詞綁在一起考——片語動詞（look after、get on with）要到 B1 才正式成為官方清單裡的一個類別，數量也明顯變多。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="connectives" style="--c:#1CB0F6;--cd:#1391cc;--cs:rgba(28,176,246,.30)">
+  <div class="gcard-h">
+    <span class="gnum">13</span>
+    <h3>連接詞<span class="en">Connectives</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>R&amp;W Part 6／Part 7 寫作、Part 5 克漏字</span>
+  </div>
+  <p class="gscope">and、but、or、when、where、because、if</p>
+  <p class="gdesc">官方在這一項列得非常具體，就這七個字：and、but、or、when、where、because、if。看起來簡單，但寫作分數的差別常常就在這裡——三個各自獨立的短句，和用 because、but 串起來的三句話，讀起來完全不是同一回事。Part 7 看圖故事雖然官方只列這七個，實際寫的時候還會用到 then、after that 這類時間銜接語，才能把三張圖串成一個故事，而不是三段各自的描述。</p>
+  <table class="gex"><tbody><tr><td class="en">I like pizza <u>and</u> ice cream.</td><td class="nt">and 並列</td></tr><tr><td class="en">I wanted to go out, <u>but</u> it was raining.</td><td class="nt">but 轉折</td></tr><tr><td class="en">We stayed at home <u>because</u> it was cold.</td><td class="nt">because 原因</td></tr><tr><td class="en">This is the park <u>where</u> we play basketball.</td><td class="nt">where 地點</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span>I got up late, I missed the bus.</span></div>
+    <div class="ln"><span class="v">✓</span><span>I missed the bus <u>because</u> I got up late.</span></div>
+    <p class="why">中文可以用逗號一路把句子串下去（我起晚了，公車沒趕上，上學遲到），英文的兩個完整句子中間不能只放一個逗號，必須有連接詞或改成句號——Part 7 寫故事時最容易犯。</p></div>
+  <div class="gnext"><b>再上一級</b>B1（PET）的連接詞清單明顯變長，加入 although、while、whereas、so that、in order to、unless 等，能表達的邏輯關係比 A2 的七個字細得多。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+    </div>
+    <div class="g-src reveal"><b>資料出處</b>：劍橋 <a href="https://www.cambridgeenglish.org/Images/168174-cambridge-english-key-for-schools-handbook-for-teachers.pdf" target="_blank" rel="noopener">A2 Key for Schools Handbook for Teachers</a>「Language specifications」附錄（手冊 56–58 頁）。類別名稱與涵蓋範圍依官方原文；例句、錯誤示範與所有中文說明為埃森美語教師原創，非官方內容，也未轉載官方題目。考試格式與內容請以劍橋官方當期公告為準。資料日期 2026-08-20。</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">常見問題</span><h2>關於 KET <em>文法</em>，家長最常問</h2></div>
+    <div class="faq reveal" style="margin-top:22px"><div class="faq-item"><h3 class="faq-h"><button class="faq-q" aria-expanded="false">KET 的文法範圍是劍橋官方公布的嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>是。劍橋《A2 Key Handbook for Teachers》有一段名為「Language specifications」的附錄（手冊 56–58 頁），明列這一級的文法類別，共 13 類。本頁的類別名稱與範圍完全依這份官方附錄；例句與中文說明則是我們自己寫的教學內容，不是官方題目。</p></div></div><div class="faq-item"><h3 class="faq-h"><button class="faq-q" aria-expanded="false">KET 要考條件句（if 子句）嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>官方的 13 個類別裡沒有「條件句」這一項。if 在 A2 只以最基礎的從屬子句形式出現，和 when、where、because 並列在「子句 Clause types」這一類裡。系統性的條件句 type 0、1、2 要到 B1（PET）才正式進入官方範圍，第三條件句則更高階。</p></div></div><div class="faq-item"><h3 class="faq-h"><button class="faq-q" aria-expanded="false">片語動詞（phrasal verbs）要背嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>A2 只會遇到最基礎的幾個，官方附錄沒有把片語動詞獨立成一類。它要到 B1（PET）才成為附錄裡明列的類別，數量也明顯變多。與其在 A2 階段狂背片語動詞清單，不如先把這 13 類的基本功練穩。</p></div></div><div class="faq-item"><h3 class="faq-h"><button class="faq-q" aria-expanded="false">這 13 類，考試哪一大題最會考？<span class="pm"></span></button></h3><div class="faq-a"><p>最集中在 Reading and Writing 的 Part 5（開放式克漏字）——6 個空格、一格填一個字，幾乎全是文法功能字；Part 4（三選一克漏字）也會考文法搭配。另外 Part 6、Part 7 的寫作和整場 Speaking 是「用出來」的部分，看得懂還不夠，要能主動產出。</p></div></div></div>
+  </div>
+</section>
+
+<section class="section bg-blue">
+  <div class="wrap">
+    <div class="center stack reveal">
+      <span class="eyebrow">下一步</span>
+      <h2 style="margin-top:14px">文法讀懂了，<em>下一步是練到手</em></h2>
+      <p class="body">KET 的文法幾乎都壓在 Reading and Writing Part 5——6 個空格、一格一個字，考的就是上面這 13 類。我們寫了一整份原創練習題放在線上，做完立刻對答案、看逐題解析。想知道孩子現在卡在哪一類，也可以直接約一次程度評估。</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a class="btn btn-blue" href="/ket-rw-practice-part5/">做一份 KET 線上練習</a>
+        <a class="btn btn-primary btn-line" href="https://line.me/R/ti/p/@americanenglish" target="_blank" rel="noopener">LINE 預約免費程度評估</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<script src="/assets/app.js?v=11"></script>
+</body>
+</html>

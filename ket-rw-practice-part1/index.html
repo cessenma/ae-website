@@ -117,6 +117,14 @@
 .prx-score{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:20px;color:var(--navy);background:var(--light-blue);border-radius:14px;padding:10px 18px;display:none}
 .prx-score.show{display:inline-block}
 .prx-note{font-size:13.5px;color:#8a94a3;margin-top:10px}
+
+.prx-item.paired{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start;background:#fff;border:2px solid rgba(26,39,82,.10);border-radius:18px;padding:18px 20px;margin:0 0 16px;box-shadow:0 6px 18px rgba(26,39,82,.06)}
+.prx-item.paired .pane-stim{background:#f7fbff;border:1px solid rgba(26,39,82,.10);border-radius:14px;padding:14px 16px}
+.prx-item.paired .pane-stim h4{font-family:'Baloo 2',sans-serif;font-size:12.5px;color:var(--blue);margin:0 0 8px;letter-spacing:.4px}
+.prx-item.paired .pane-stim p{font-size:15px;line-height:1.8;color:#333c4d;margin:0 0 8px}
+.prx-item.paired .pane-stim p:last-child{margin:0}
+.prx-item.paired .pane-q legend,.prx-item.paired .pane-q .qh{padding:0 0 8px}
+@media(max-width:760px){.prx-item.paired{grid-template-columns:1fr;gap:12px}}
 @media print{
   header.site-header,.drawer,.exam-subnav,.prx-nav,.prx-bar,.prx-score,.magnet-box,.prx-why,footer,.faq,.cta-box{display:none!important}
   .page-hero{padding-top:10px;background:#fff}
@@ -139,31 +147,31 @@
       <p class="body" style="font-style:italic">For each question, choose the correct answer.</p>
 
       <!-- STIMULUS block(s): six short real-world texts -->
-      <div class="stimulus">
+      <div class="stimulus paired" data-for="1">
         <h4>(1) Notice</h4>
         <p style="text-align:center;font-weight:700;letter-spacing:.5px">SCHOOL NOTICE</p>
         <p>There is no PE class this Wednesday. Please bring your art things instead. It may rain, so bring an umbrella too.<br><span style="font-size:13.5px;color:#8a94a3">— Miss Wang</span></p>
       </div>
-      <div class="stimulus">
+      <div class="stimulus paired" data-for="2">
         <h4>(2) Sign</h4>
         <p style="text-align:center;font-weight:700;letter-spacing:.5px">NEW CITY POOL</p>
         <p>Children under 10 years old must swim with an adult. No food or drinks beside the pool. Please shower before you get in the water.</p>
       </div>
-      <div class="stimulus">
+      <div class="stimulus paired" data-for="3">
         <h4>(3) Message</h4>
         <p><b>Amy:</b> Hi Tina! Sorry, I can't meet at 4 today. My mom needs me at home. Can we meet at 5 instead? See you at the MRT station, not the bookstore this time.</p>
       </div>
-      <div class="stimulus">
+      <div class="stimulus paired" data-for="4">
         <h4>(4) Email</h4>
         <p style="font-weight:700">Subject: Field Trip Money</p>
         <p>Hi parents,<br>Please send NT$150 for the museum trip by this Friday. Send the money in an envelope with your child's name on it. Thank you!<br><span style="font-size:13.5px;color:#8a94a3">— Mr. Lee</span></p>
       </div>
-      <div class="stimulus">
+      <div class="stimulus paired" data-for="5">
         <h4>(5) Label</h4>
         <p style="text-align:center;font-weight:700;letter-spacing:.5px">ISLAND APPLE JUICE</p>
         <p style="text-align:center">100% real fruit juice — no sugar added.<br>Keep in the fridge after opening.<br>Drink within 3 days.</p>
       </div>
-      <div class="stimulus">
+      <div class="stimulus paired" data-for="6">
         <h4>(6) Announcement</h4>
         <p style="text-align:center;font-weight:700;letter-spacing:.5px">SUNSHINE SWIM CLUB</p>
         <p>Our club is moving to a new pool on Zhongshan Road. Classes stop this Saturday and start again on Monday at the new place. Same teachers, same times — just a new address!</p>
@@ -226,6 +234,15 @@ const PRX = {
         <div class="prx-why"><b>解析：</b>${it.why}</div></div>`;
     }
     const opts=it.opts.map((o,i)=>`<label class="prx-opt"><input type="radio" name="q${it.n}" value="${i}"><span><b>${L(i)}</b>　${o}</span></label>`).join('');
+    const stimEl=document.querySelector(`.stimulus.paired[data-for="${it.n}"]`);
+    if(stimEl){
+      const inner=stimEl.innerHTML; stimEl.remove();
+      return `<fieldset class="prx-item paired" data-n="${it.n}">
+        <div class="pane-stim">${inner}</div>
+        <div class="pane-q"><legend>${it.n}. ${it.q}</legend>
+        <div class="prx-opts">${opts}</div><span class="prx-mark" aria-hidden="true"></span>
+        <div class="prx-why">${it.why.map((w,i)=>`<p><b>${L(i)}：</b>${w}</p>`).join('')}</div></div></fieldset>`;
+    }
     return `<fieldset class="prx-item" data-n="${it.n}"><legend>${it.n}. ${it.q}</legend>
       <div class="prx-opts">${opts}</div><span class="prx-mark" aria-hidden="true"></span>
       <div class="prx-why">${it.why.map((w,i)=>`<p><b>${L(i)}：</b>${w}</p>`).join('')}</div></fieldset>`;

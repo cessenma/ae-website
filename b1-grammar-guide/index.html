@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<style id="crit">:root{--navy:#1A2752;--blue:#1CB0F6;--blue-dk:#1391cc;--green:#06C755;--green-dk:#04a046;--yellow:#FFC828;--yellow-dk:#e0a800;--purple:#CE82FF;--purple-dk:#a94fe0;--coral:#F0997B;--light-blue:#DDF4FF;--text-body:#4b5563;--card-shadow:0 12px 40px rgba(26,39,82,.10);--header-h:64px;}*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px)}body{font-family:'DM Sans',-apple-system,'PingFang TC','Microsoft JhengHei',sans-serif;background:#fff;color:var(--navy);line-height:1.6;overflow-x:hidden}a{color:inherit}img{display:block;max-width:100%}:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}h1,h2,h3{font-family:'DM Serif Display',serif;font-weight:400;color:var(--navy);letter-spacing:-.4px;line-height:1.08}h1{font-size:clamp(40px,6.4vw,66px)}h2{font-size:clamp(30px,4.6vw,48px)}h3{font-size:22px}.rounded{font-family:'Baloo 2',sans-serif;font-weight:800}em{font-style:italic;color:var(--blue)}.bg-navy h2,.bg-navy h3{color:#fff}p.body{font-size:clamp(15px,1.6vw,17px);line-height:1.8;color:var(--text-body)}.bg-navy p.body{color:rgba(255,255,255,.74)}.eyebrow{display:inline-block;font-family:'Baloo 2',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--blue);background:rgba(28,176,246,.12);padding:7px 16px;border-radius:100px}.eyebrow-green{color:#067033;background:rgba(6,199,85,.12)}.eyebrow-yellow{color:#8a5f00;background:rgba(255,200,40,.18)}.divider{width:48px;height:4px;background:linear-gradient(90deg,var(--blue),var(--purple));border-radius:4px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'Baloo 2',sans-serif;font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.5px;padding:14px 30px;border-radius:16px;cursor:pointer;border:none;text-transform:uppercase;transition:transform .08s ease,box-shadow .08s ease,filter .15s;min-height:50px;position:relative;top:0}.btn-primary{background:var(--green);color:#fff;box-shadow:0 5px 0 var(--green-dk),0 10px 18px rgba(6,199,85,.32)}.btn-blue{background:var(--blue);color:#fff;box-shadow:0 5px 0 var(--blue-dk),0 10px 18px rgba(28,176,246,.32)}.btn-yellow{background:var(--yellow);color:var(--navy);box-shadow:0 5px 0 var(--yellow-dk),0 10px 18px rgba(255,200,40,.32)}.btn-coral{background:var(--coral);color:#fff;box-shadow:0 5px 0 #d97a5c,0 10px 18px rgba(240,153,123,.34)}.btn-pf-blue{background:#a8d8f0;color:var(--navy);box-shadow:0 5px 0 #80bfe0,0 10px 18px rgba(168,216,240,.45)}.btn-pf-cream{background:#fff8f3;color:var(--navy);border:1px solid #efe4d8;box-shadow:0 5px 0 #e6dbd0,0 10px 18px rgba(26,39,82,.08)}.btn-pf-pink{background:#ffdae6;color:var(--navy);box-shadow:0 5px 0 #f0b0c8,0 10px 18px rgba(255,218,230,.5)}.btn:hover{filter:brightness(1.04)}.btn:active{top:5px;box-shadow:0 0 0 var(--green-dk)}.btn-blue:active{box-shadow:0 0 0 var(--blue-dk)}.btn-yellow:active{box-shadow:0 0 0 var(--yellow-dk)}.btn-coral:active{box-shadow:0 0 0 #d97a5c}.btn-pf-blue:active{box-shadow:0 0 0 #80bfe0}.btn-pf-cream:active{box-shadow:0 0 0 #e6dbd0}.btn-pf-pink:active{box-shadow:0 0 0 #f0b0c8}.btn-outline{background:#fff;color:var(--navy);border:2px solid #e2e8f0;box-shadow:0 4px 0 #e2e8f0}.btn-outline:active{top:4px;box-shadow:0 0 0 #e2e8f0}.btn svg{width:20px;height:20px}.btn-line svg{fill:currentColor}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}.section{padding:clamp(60px,8vw,104px) 0;position:relative}.bg-blue{background:var(--light-blue)}.bg-navy{background:var(--navy)}.bg-soft{background:#F4FAFF}.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center}.split.reverse>.media{order:2}@media(max-width:860px){.split{grid-template-columns:1fr}.split.reverse>.media{order:0}.split .stack{align-items:flex-end;text-align:right}.split .stack .divider{margin-left:auto;margin-right:0}.split.reverse .stack{align-items:flex-start;text-align:left}.split.reverse .stack .divider{margin-left:0;margin-right:auto}.hero .stack,#location .stack{align-items:center;text-align:center}.hero .stack .divider,#location .stack .divider{margin-left:auto;margin-right:auto}.hero .stack .hero-cta,.hero .stack .hero-badges{justify-content:center}.hero .stack p.body{margin-left:auto;margin-right:auto}}@media(min-width:861px){.section:not(#location) .split:not(.reverse) .stack{align-items:flex-end;text-align:right}.section:not(#location) .split:not(.reverse) .stack .divider{margin-left:auto;margin-right:0}}.stack{display:flex;flex-direction:column;align-items:flex-start;gap:16px}.center{text-align:center;align-items:center;margin:0 auto;max-width:700px}.progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--green),var(--blue),var(--purple));z-index:200;transition:width .1s linear}.rk{display:inline-block;width:26px;height:26px;color:var(--blue);animation:wiggle 3.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.rk svg{width:100%;height:100%;display:block}header.site-header{position:fixed;top:0;left:0;right:0;z-index:150;height:var(--header-h);background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(26,39,82,.06);transition:box-shadow .25s}header.site-header.scrolled{box-shadow:0 4px 22px rgba(26,39,82,.09)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{font-family:'Baloo 2',sans-serif;font-size:21px;font-weight:800;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:8px}.brand b{color:var(--blue);font-weight:800}.brand-logo{width:38px;height:38px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(26,39,82,.18)}.nav-links{display:flex;align-items:center;gap:26px}.nav-links a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:15px;font-weight:700;color:#475569;text-decoration:none;transition:color .15s}.nav-links a:not(.btn):hover,.nav-links a.active{color:var(--blue)}.nav-links a.active{position:relative}.nav-links a.active::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:3px;border-radius:3px;background:var(--blue)}.nav-cta{padding:9px 20px;font-size:14px;min-height:42px}.hamburger{display:none;width:46px;height:46px;border:none;background:transparent;cursor:pointer;flex-direction:column;justify-content:center;gap:5px;align-items:center}.hamburger span{width:24px;height:3px;background:var(--navy);border-radius:3px;transition:transform .3s,opacity .2s}body.menu-open .hamburger span:nth-child(1){transform:translateY(8px) rotate(45deg)}body.menu-open .hamburger span:nth-child(2){opacity:0}body.menu-open .hamburger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.drawer{position:fixed;inset:var(--header-h) 0 0 0;z-index:140;background:rgba(255,255,255,.98);backdrop-filter:blur(8px);display:flex;flex-direction:column;gap:4px;padding:24px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}body.menu-open .drawer{opacity:1;transform:none;pointer-events:auto}.drawer a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:700;color:var(--navy);text-decoration:none;padding:15px 8px;border-bottom:1px solid rgba(26,39,82,.07)}.drawer .btn{margin-top:18px}@media(max-width:860px){.nav-links{display:none}.hamburger{display:flex}}.bg-deco{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}.star{position:absolute;animation:twinkle 3s ease-in-out infinite}@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:.9;transform:scale(1.15)}}.hero{padding-top:calc(var(--header-h) + 40px);padding-bottom:60px;background:linear-gradient(180deg,#fff 0%,var(--light-blue) 100%);position:relative;overflow:hidden}.hero .wrap{position:relative;z-index:2}.hero-badges{display:flex;flex-wrap:wrap;gap:10px}.chip{display:inline-flex;align-items:center;gap:7px;font-family:'Baloo 2',sans-serif;font-size:14px;font-weight:700;color:var(--navy);background:#fff;border:2px solid rgba(26,39,82,.08);padding:8px 15px;border-radius:100px;box-shadow:0 3px 0 rgba(26,39,82,.06)}.chip .dot{width:9px;height:9px;border-radius:50%;background:var(--green);animation:blink 1.6s infinite}@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}.scene{position:relative;width:100%;max-width:440px;margin:0 auto;aspect-ratio:1}.planet{position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 36% 30%,#bfe7ff,var(--blue));box-shadow:inset -18px -18px 40px rgba(26,39,82,.25),0 30px 70px rgba(28,176,246,.35);animation:spin 26s linear infinite}.planet::before{content:'';position:absolute;width:34%;height:18%;border-radius:50%;background:rgba(255,255,255,.35);top:22%;left:20%;filter:blur(2px)}.planet::after{content:'';position:absolute;width:24%;height:12%;border-radius:50%;background:rgba(26,39,82,.18);bottom:24%;right:22%}.ring{position:absolute;left:50%;top:54%;width:108%;height:46%;transform:translate(-50%,-50%) rotate(-18deg);border:6px solid rgba(255,200,40,.55);border-radius:50%;animation:spin 18s linear infinite reverse}.rocket{position:absolute;left:58%;top:14%;width:120px;animation:floaty 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center;z-index:3;filter:drop-shadow(0 12px 18px rgba(26,39,82,.25))}.flame{transform-box:fill-box;transform-origin:50% 0%;animation:flame .6s ease-in-out infinite alternate}.s-star{position:absolute;animation:floaty 5s ease-in-out infinite}@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-18px) rotate(4deg)}}@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes flame{0%{transform:scaleY(.8) scaleX(1)}100%{transform:scaleY(1.15) scaleX(.9)}}@keyframes wiggle{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}.count-orb{position:absolute;left:6%;top:6%;background:#fff;border-radius:20px;padding:10px 16px;box-shadow:var(--card-shadow);font-family:'Baloo 2';font-weight:800;display:flex;align-items:center;gap:9px;font-size:15px;z-index:4;animation:pop-bob 4s ease-in-out infinite}.count-orb.b2{left:auto;right:2%;top:auto;bottom:14%;animation-delay:1.5s}.count-orb .big{font-family:'DM Serif Display';font-size:26px;color:var(--blue)}@keyframes pop-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}.page-hero{padding-top:calc(var(--header-h) + 56px);padding-bottom:56px;background:linear-gradient(180deg,#fff,var(--light-blue));text-align:center;position:relative;overflow:hidden}.page-hero .wrap{position:relative;z-index:2;max-width:780px}.page-hero h1{font-size:clamp(34px,5.2vw,54px);margin:14px 0 16px}.page-hero .divider{margin:0 auto 20px}.pf-blue{--frame:#a8d9ef}.pf-pink{--frame:#fedae7}.pf-lav{--frame:#c9b4f0}.pf-cream{--frame:#fef8f3;--frame-edge:#efe4d8}.post-hero{margin:30px 0 0;padding:4.2%;border-radius:min(46px,calc(6.3vw - 3px));background:var(--frame,var(--light-blue));box-shadow:0 18px 40px rgba(26,39,82,.16)}.post-hero img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:min(26px,calc(3.6vw - 1.7px))}.post-hero.pf-cream{box-shadow:inset 0 0 0 1px var(--frame-edge),0 18px 40px rgba(26,39,82,.16)}@media(max-width:640px){.post-hero{margin-top:22px}}.magnet-box{display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;background:var(--light-blue);border:2px dashed var(--blue);border-radius:22px;padding:20px 26px;margin:28px 0 6px}.magnet-box p{flex:1 1 280px;margin:0;font-size:15px;line-height:1.75;color:var(--text-body)}.magnet-box strong{font-family:'Baloo 2';font-size:16px;color:var(--navy)}.magnet-box .btn{flex:0 0 auto}.breadcrumb{font-family:'Baloo 2';font-size:13px;font-weight:700;color:#94a3b8;margin-bottom:8px}.breadcrumb a{text-decoration:none;color:#94a3b8}.breadcrumb a:hover{color:var(--blue)}</style>
+<link rel="preload" as="style" href="/assets/styles.css?v=fb874fd3" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/styles.css?v=fb874fd3"></noscript>
+<!-- AE:CRIT end -->
+<meta name="theme-color" content="#1A2752">
+<title>PET（B1）官方文法範圍：比 KET 多考什麼？7 大重點逐項教學｜埃森美語</title>
+<meta name="description" content="劍橋 B1 Preliminary 官方教師手冊「Language specifications」附錄，B1 比 A2 多考的 7 大文法重點逐項拆解：例句、台灣孩子最常錯的一題、以及到了 FCE（B2）會怎麼加深。美籍持證教師整理，2026 年 8 月更新。">
+<link rel="canonical" href="https://americanenglish.com.tw/b1-grammar-guide/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PET（B1）官方文法範圍：比 KET 多考什麼？">
+<meta property="og:description" content="官方手冊附錄的 7 大新增文法重點，附例句、常見錯誤與 B2 銜接說明——美籍持證教師整理。">
+<meta property="og:url" content="https://americanenglish.com.tw/b1-grammar-guide/">
+<meta property="og:image" content="https://americanenglish.com.tw/assets/img/blog/pet-b1-preliminary-exam-documents-review.webp">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<style>.exam-subnav{position:sticky;top:var(--header-h);z-index:90;background:#fff;border-bottom:2px solid rgba(26,39,82,.08);overflow-x:auto;-webkit-overflow-scrolling:touch}.exam-subnav .row{display:flex;align-items:stretch;max-width:1120px;margin:0 auto;padding:0 24px}.exam-subnav .tag{flex:none;display:flex;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;color:#fff;background:var(--blue);padding:10px 14px;border-radius:0 0 10px 10px;text-decoration:none}.exam-subnav a:not(.tag){flex:none;display:flex;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;color:#475569;text-decoration:none;padding:10px 13px;border-bottom:3px solid transparent;white-space:nowrap}.exam-subnav a:not(.tag):hover{color:var(--blue)}.exam-subnav a.on{color:var(--navy);border-bottom-color:var(--blue)}</style>
+<style>
+.g-lead{max-width:760px;margin:0 auto}
+.g-toc{display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:10px;margin:28px 0 0}
+.g-toc a{display:flex;align-items:center;gap:10px;background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:15px;padding:11px 13px;text-decoration:none;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);box-shadow:0 3px 0 rgba(26,39,82,.06);transition:transform .12s,border-color .12s,box-shadow .12s}
+.g-toc a:hover{transform:translateY(-2px);border-color:var(--c);box-shadow:0 6px 0 var(--cs)}
+.g-toc .n{flex:none;width:27px;height:27px;border-radius:9px;display:grid;place-items:center;font-size:12px;font-family:'Baloo 2',sans-serif;font-weight:800;color:#fff;background:var(--c)}
+.gcard{position:relative;background:#fff;border:1px solid rgba(26,39,82,.10);border-radius:24px;padding:clamp(20px,3vw,30px);box-shadow:var(--card-shadow);margin-top:20px;scroll-margin-top:calc(var(--header-h) + 70px)}
+.gcard-h{display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+.gnum{flex:none;width:46px;height:46px;border-radius:15px;background:var(--c);color:#fff;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:17px;display:grid;place-items:center;box-shadow:0 4px 0 var(--cd)}
+.gcard-h h3{font-size:clamp(20px,2.6vw,25px);line-height:1.15;margin:0}
+.gcard-h h3 .en{display:block;font-family:'Baloo 2',sans-serif;font-size:13.5px;font-weight:700;letter-spacing:.6px;color:var(--c);text-transform:none;margin-top:3px}
+.gtag{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:12.5px;color:#475569;background:#F1F6FB;border-radius:100px;padding:7px 14px;white-space:nowrap}
+.gtag svg{width:13px;height:13px;fill:none;stroke:#8b9bb0;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.gscope{font-family:'Baloo 2',sans-serif;font-size:13.5px;font-weight:700;color:#8b9bb0;margin:13px 0 0}
+.gdesc{font-size:15.5px;line-height:1.85;color:var(--text-body);margin:8px 0 0}
+.gex{width:100%;border-collapse:collapse;margin:16px 0 0;font-size:15px}
+.gex td{padding:10px 8px;border-bottom:1px solid rgba(26,39,82,.07);vertical-align:baseline}
+.gex tr:last-child td{border-bottom:0}
+.gex td.en{color:var(--navy);line-height:1.6}
+.gex td.nt{width:33%;color:#8b9bb0;font-size:13px;font-family:'Baloo 2',sans-serif;font-weight:700;text-align:right;white-space:nowrap}
+.gex u,.gmiss u{text-decoration:none;background:linear-gradient(180deg,transparent 60%,var(--cs) 60%);padding:0 2px;font-weight:700}
+.gmiss{margin-top:16px;background:#FFF8F5;border:1px solid rgba(240,153,123,.38);border-radius:16px;padding:15px 18px;font-size:14.8px;line-height:1.75}
+.gmiss .lbl{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:12.5px;letter-spacing:1.2px;text-transform:uppercase;color:#c96a48;display:block;margin-bottom:8px}
+.gmiss .ln{display:flex;gap:9px;align-items:baseline;color:var(--navy)}
+.gmiss .ln+.ln{margin-top:4px}
+.gmiss .x{color:#d9534f;font-weight:800;flex:none}
+.gmiss .v{color:#049b48;font-weight:800;flex:none}
+.gmiss .why{margin-top:9px;color:var(--text-body);font-size:14px}
+.gmiss u{--cs:rgba(240,153,123,.42)}
+.gnext{margin-top:14px;padding-top:13px;border-top:1px dashed rgba(26,39,82,.12);font-size:13.8px;line-height:1.7;color:#7b8794}
+.gnext b{font-family:'Baloo 2',sans-serif;color:var(--navy);font-size:12.5px;letter-spacing:.8px;text-transform:uppercase;margin-right:7px}
+.gtop{display:inline-flex;align-items:center;gap:5px;margin-top:14px;font-family:'Baloo 2',sans-serif;font-size:12.5px;font-weight:700;color:#a3b0c2;text-decoration:none}
+.gtop:hover{color:var(--blue)}
+.g-src{max-width:760px;margin:30px auto 0;background:#F4FAFF;border:1px solid rgba(28,176,246,.22);border-radius:18px;padding:18px 22px;font-size:14.5px;line-height:1.8;color:var(--text-body)}
+.g-src b{color:var(--navy)}
+@media(max-width:640px){.gtag{margin-left:0;order:3;width:100%;justify-content:center}.gex td.nt{width:auto;white-space:normal}}
+</style>
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/b1-grammar-guide/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/b1-grammar-guide/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"劍橋英檢","item":"https://americanenglish.com.tw/exams/"},{"@type":"ListItem","position":3,"name":"PET 準備指南","item":"https://americanenglish.com.tw/pet-prep-guide/"},{"@type":"ListItem","position":4,"name":"PET（B1 Preliminary）官方文法範圍比 KET 多考的 7 件事"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"PET 的文法範圍是劍橋官方公布的嗎？","acceptedAnswer":{"@type":"Answer","text":"是。劍橋《B1 Preliminary Handbook for Teachers》有一段名為「Language specifications」的附錄（手冊 70–72 頁），明列 B1 的文法項目。本頁把它整理成「比 A2 多考什麼」的 7 大重點，範圍依官方原文；例句與中文說明是我們自己寫的教學內容。"}},{"@type":"Question","name":"PET 要考第三條件句嗎？","acceptedAnswer":{"@type":"Answer","text":"官方 B1 只到第二條件句（type 2），包含 if I were you 這種假設語氣。網路上流傳的 B1 清單常把第三條件句（If I had known, I would have called）也算進來，那放錯了級——B1 階段把 type 0、1、2 用穩，比提早碰 type 3 有價值得多。"}},{"@type":"Question","name":"這 7 項，考試哪一大題最會考？","acceptedAnswer":{"@type":"Answer","text":"最集中在 Reading 的 Part 6（開放式克漏字）——6 個空格、一格填一個字，考文法、片語動詞與固定搭配；Part 5（四選一克漏字）也常考文法搭配。Writing 的兩篇短文和 Speaking 四個部分則要求主動用出來，尤其 Speaking Part 3 的雙人討論長達 4 分鐘，沒有考官引導。"}},{"@type":"Question","name":"孩子剛考完 KET，直接準備 PET 會不會跳太快？","acceptedAnswer":{"@type":"Answer","text":"從文法角度看，B1 不是換一套新東西，而是把 A2 的 13 類加深，再加上這 7 項新的。真正的落差通常不在文法清單，而在長度與速度——PET 的閱讀文章更長、寫作要求約 100 字、Speaking 要和另一位考生協商出結論。先確認這幾件事扛得住，再排考程比較實際。"}}]}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body>
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo.jpg" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<div class="drawer" id="drawer"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></div>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/exams/">劍橋英檢</a> ／ <a href="/pet-prep-guide/">PET 準備指南</a> ／ B1 文法範圍</div>
+    <span class="eyebrow  reveal">官方依據 · 逐項教學</span>
+    <h1 class="reveal d1"><em>PET</em>（B1 Preliminary）官方文法範圍<br>比 KET 多考的 7 件事</h1>
+    <div class="divider reveal d1"></div>
+    <p class="body reveal d2">作者：Christopher｜埃森美語創辦人｜美國密西根大學畢業、美國正式教師執照</p>
+  </div>
+</section>
+
+<nav class="exam-subnav" aria-label="PET 專區導覽"><div class="row">
+<a class="tag" href="/exams/">劍橋英檢 PET</a>
+<a href="/pet-prep-guide/">總覽</a>
+<a href="/pet-prep-guide/#papers">考什麼</a>
+<a href="/pet-prep-guide/#scores">分數與證書</a>
+<a href="/b1-grammar-guide/" class="on" aria-current="page">文法範圍</a>
+<a href="/pet-prep-guide/#vocab">單字表</a>
+<a href="/a2-grammar-guide/">A2 文法</a>
+<a href="/cambridge-practice-tests/">官方題庫</a>
+<a href="/cambridge-exam-registration-taiwan/">報名資訊</a>
+</div></nav>
+
+<section class="section">
+  <div class="wrap">
+    <div class="prose g-lead reveal">
+      <p>PET 的文法範圍同樣有官方依據——劍橋 <em>B1 Preliminary Handbook for Teachers</em> 有一段命名為<strong>「Language specifications」</strong>的附錄（手冊 70–72 頁）。與其把整份搬過來，更有用的問法是：<strong>比 A2（KET）多考什麼？</strong>因為 B1 是把 <a href="/a2-grammar-guide/">A2 那 13 個類別</a>整組往上加深，真正「新出現」的東西，集中在下面這 7 項。</p>
+      <p>一個要先講清楚的誤區：<strong>官方 B1 只考到第二條件句（type 2）</strong>。網路上流傳的 B1 文法清單，常把「與過去事實相反」的第三條件句（type 3，例如 "If I had known, I would have called"）也放進 B1 範圍——那其實放錯了級。手冊本身也誠實加註：考生在文章裡可能遇到清單以外的文法形式，但不會被直接考。</p>
+    </div>
+    <div id="toc" class="center stack reveal" style="margin-top:44px"><span class="eyebrow">目錄</span><h2>7 大新增重點，<em>點進去直接看</em></h2></div>
+    <div class="g-toc reveal"><a href="#conditionals" style="--c:#1CB0F6;--cs:rgba(28,176,246,.30)"><span class="n">01</span>條件句 type 0、1、2</a><a href="#reported-speech" style="--c:#CE82FF;--cs:rgba(206,130,255,.32)"><span class="n">02</span>間接引述 reported speech</a><a href="#modals-b1" style="--c:#06C755;--cs:rgba(6,199,85,.28)"><span class="n">03</span>更多情態動詞：might、ought to、used to</a><a href="#modal-passive" style="--c:#F0997B;--cs:rgba(240,153,123,.38)"><span class="n">04</span>被動式的情態用法 modal passive</a><a href="#causative" style="--c:#4C6FE7;--cs:rgba(76,111,231,.26)"><span class="n">05</span>使役動詞 causative have/get</a><a href="#phrasal-verbs" style="--c:#EC6F9E;--cs:rgba(236,111,158,.30)"><span class="n">06</span>片語動詞大量增加</a><a href="#connectives-b1" style="--c:#1CB0F6;--cs:rgba(28,176,246,.30)"><span class="n">07</span>連接詞大幅擴充</a></div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow">逐項拆解</span><h2>一項一項，<em>看懂還要用得出來</em></h2></div>
+    <div style="margin-top:6px">
+<article class="gcard reveal" id="conditionals" style="--c:#1CB0F6;--cd:#1391cc;--cs:rgba(28,176,246,.30)">
+  <div class="gcard-h">
+    <span class="gnum">01</span>
+    <h3>條件句 type 0、1、2<span class="en">Conditionals type 0, 1, 2</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Reading Part 6 開放式克漏字</span>
+  </div>
+  <p class="gscope">含 if I were you 的假設語氣</p>
+  <p class="gdesc">A2 的官方清單裡根本沒有「條件句」這一類，到了 B1 它才正式成為考點，而且只到 type 2 為止。網路上流傳的 B1 文法表常常把 type 3（If I had known, I would have called）也塞進來，那是更上一層的東西，孩子背了不會考。真正要練到反射的只有一件事：if 子句裡永遠不放 will，未來的意思交給主句去扛。</p>
+  <table class="gex"><tbody><tr><td class="en">If you <u>press</u> this button, the screen <u>turns</u> off.</td><td class="nt">type 0 恆常事實</td></tr><tr><td class="en">If we <u>win</u> on Saturday, we <u>will be</u> top of the league.</td><td class="nt">type 1 未來可能</td></tr><tr><td class="en">If you <u>don't charge</u> your phone tonight, it <u>won't last</u> the whole trip.</td><td class="nt">type 1 否定</td></tr><tr><td class="en">If I <u>had</u> more free time, I <u>would learn</u> the guitar.</td><td class="nt">type 2 與現實相反</td></tr><tr><td class="en"><u>If I were you</u>, I would talk to your teacher about it.</td><td class="nt">假設語氣・給建議</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span>If it <u>will rain</u> tomorrow, we'll stay home.</span></div>
+    <div class="ln"><span class="v">✓</span><span>If it <u>rains</u> tomorrow, we'll stay home.</span></div>
+    <p class="why">中文說「如果明天會下雨」裡有一個「會」，孩子順手就把它翻成 will 塞進 if 子句。記法：一個句子裡的 will 只需要出現一次，而且是在逗號後面那一半。</p></div>
+  <div class="gnext"><b>再上一級</b>B2 才正式加入第三條件句與混合條件句（If I had known, I would have called），而且要求在限時的寫作與口說裡自然說出來，不只是看得懂。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="reported-speech" style="--c:#CE82FF;--cd:#a94fe0;--cs:rgba(206,130,255,.32)">
+  <div class="gcard-h">
+    <span class="gnum">02</span>
+    <h3>間接引述 reported speech<span class="en">Reported speech</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Writing Part 2 文章或故事</span>
+  </div>
+  <p class="gscope">含 say、ask、tell 與 know、wonder 的間接問句</p>
+  <p class="gdesc">B1 第一次要求孩子把別人說過的話整句「退一格」：現在式退成過去式、will 退成 would、today 退成 that day。中文沒有這套機制——「他說他很累」不管什麼時候講都長一樣，所以孩子在作文裡轉述對話時，時態幾乎都停在原地。另一半的失分在間接問句：問句一旦被 ask、know、wonder 包起來，語序就要恢復成正常句，不能再倒裝。</p>
+  <table class="gex"><tbody><tr><td class="en">She <u>said she was</u> tired after the match.</td><td class="nt">陳述句・時態退一格</td></tr><tr><td class="en">He <u>told me he would</u> bring his laptop.</td><td class="nt">will → would</td></tr><tr><td class="en">The coach asked us <u>if we had trained</u> that week.</td><td class="nt">Yes/No 問句用 if</td></tr><tr><td class="en">I <u>wondered what he would do</u> next.</td><td class="nt">間接問句不倒裝</td></tr><tr><td class="en">Our teacher <u>told us not to use</u> our phones in class.</td><td class="nt">命令句用 tell + to V</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span>She said that she <u>will</u> call me after the exam.</span></div>
+    <div class="ln"><span class="v">✓</span><span>She said that she <u>would</u> call me after the exam.</span></div>
+    <p class="why">中文的「她說她會打給我」不管什麼時候講都是同一句，動詞不必跟著主要動詞走。考場上的順序是：先看主要動詞 said 已經是過去，後面的 will 就得跟著退成 would。</p></div>
+  <div class="gnext"><b>再上一級</b>B2 不再只是把時態退一格，而是要用 admit、suggest、warn、deny 這類轉述動詞把說話者的語氣一起帶出來，並在長篇文章裡連續轉述好幾個人的話而不亂。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="modals-b1" style="--c:#06C755;--cd:#04a046;--cs:rgba(6,199,85,.28)">
+  <div class="gcard-h">
+    <span class="gnum">03</span>
+    <h3>更多情態動詞：might、ought to、used to<span class="en">More modals: might, ought to, used to</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Reading Part 5 四選一克漏字</span>
+  </div>
+  <p class="gscope">表達推測、義務、過去的習慣</p>
+  <p class="gdesc">A2 的孩子手上只有 can、must、should 這幾張牌，講什麼都是「可以、必須、應該」。B1 要求他們分辨強弱與時間：might 是沒把握的推測，ought to 和 should 意思接近但更像「照道理該做」，used to 專門講已經不做了的過去習慣。Part 5 的四個選項常常全是情態動詞，差別只在語氣濃淡，用中文翻譯去對是選不出來的。</p>
+  <table class="gex"><tbody><tr><td class="en">I'm not sure — she <u>might</u> be at basketball practice.</td><td class="nt">might 不確定推測</td></tr><tr><td class="en">It <u>might not</u> rain later, so let's take the bikes.</td><td class="nt">might not 否定推測</td></tr><tr><td class="en">You <u>ought to</u> apologise to him before class.</td><td class="nt">ought to 照理該做</td></tr><tr><td class="en">We <u>used to</u> live near the river when I was six.</td><td class="nt">used to 過去狀態</td></tr><tr><td class="en">My brother <u>didn't use to</u> like vegetables.</td><td class="nt">否定寫成 use to</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span>I <u>am used to</u> play badminton every Sunday.</span></div>
+    <div class="ln"><span class="v">✓</span><span>I <u>used to</u> play badminton every Sunday.</span></div>
+    <p class="why">中文把 used to 和 be used to 都翻成「習慣」，孩子自然混成一團。判斷法：句子在講「以前這樣，現在不做了」，就不可以有 be 動詞，後面直接接原形動詞。</p></div>
+  <div class="gnext"><b>再上一級</b>B2 會把推測往回推到過去（might have been、should have told me），也要求用 must 和 can't 做出強度不同的推論，而不只是表達義務。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="modal-passive" style="--c:#F0997B;--cd:#d97a5c;--cs:rgba(240,153,123,.38)">
+  <div class="gcard-h">
+    <span class="gnum">04</span>
+    <h3>被動式的情態用法 modal passive<span class="en">Modal passive</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Reading Part 6 開放式克漏字</span>
+  </div>
+  <p class="gscope">例如 it should be done</p>
+  <p class="gdesc">這一項的公式短得驚人：情態動詞 + be + 過去分詞，中間那個 be 永遠不變形。真正難的是孩子得先看出這句話該用被動——中文常常省略主詞，「這個要在星期五之前交」聽起來沒有「被」字，孩子就寫成 must hand in。Part 6 特別愛把那個 be 挖成空格，一格一分，會就是會。</p>
+  <table class="gex"><tbody><tr><td class="en">Your project <u>must be handed in</u> before Friday.</td><td class="nt">must + be + p.p.</td></tr><tr><td class="en">Bikes <u>can be borrowed</u> from the sports centre.</td><td class="nt">can 的被動</td></tr><tr><td class="en">This form <u>should be signed</u> by a parent.</td><td class="nt">should 的被動</td></tr><tr><td class="en">The concert <u>might be cancelled</u> if it rains.</td><td class="nt">might 的被動</td></tr><tr><td class="en">Phones <u>mustn't be used</u> during the test.</td><td class="nt">禁止・被動</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span>The library books <u>must return</u> before Sunday.</span></div>
+    <div class="ln"><span class="v">✓</span><span>The library books <u>must be returned</u> before Sunday.</span></div>
+    <p class="why">中文說「書必須在星期日前還」沒有「被」字，但主詞其實是被還的那一方。檢查法：主詞自己做不到這個動作，就補上 be 加過去分詞。</p></div>
+  <div class="gnext"><b>再上一級</b>B2 進一步要求完成式與進行式的被動（should have been told、is being repaired），以及用 It is said that… 這類結構把消息來源模糊掉。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="causative" style="--c:#4C6FE7;--cd:#3652bd;--cs:rgba(76,111,231,.26)">
+  <div class="gcard-h">
+    <span class="gnum">05</span>
+    <h3>使役動詞 causative have/get<span class="en">Causative have / get</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Reading Part 5 四選一克漏字</span>
+  </div>
+  <p class="gscope">例如 get my hair cut</p>
+  <p class="gdesc">have 或 get 加受詞加過去分詞，說的是「請別人做」，不是自己動手。中文的「我剪頭髮了」和「我去剪頭髮了」幾乎長得一樣，所以孩子直接寫成 I cut my hair，字面意思變成自己拿剪刀剪。這一項出現的頻率不算最高，但結構固定，練十分鐘就能鎖住，出現就是送分。</p>
+  <table class="gex"><tbody><tr><td class="en">I <u>got my hair cut</u> before the school photo.</td><td class="nt">get + 受詞 + p.p.</td></tr><tr><td class="en">We <u>had our bikes repaired</u> at the shop near school.</td><td class="nt">have 請人修</td></tr><tr><td class="en">My mum <u>is having the kitchen painted</u> this week.</td><td class="nt">進行式的使役</td></tr><tr><td class="en">You should <u>get your eyes tested</u> if the board looks blurry.</td><td class="nt">接在情態動詞後</td></tr><tr><td class="en">They <u>had the photos printed</u> for the school magazine.</td><td class="nt">過去式的使役</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span>I <u>cut my hair</u> at the salon yesterday.</span></div>
+    <div class="ln"><span class="v">✓</span><span>I <u>had my hair cut</u> at the salon yesterday.</span></div>
+    <p class="why">中文的「我昨天剪了頭髮」沒有標示誰動的手，英文的 I cut my hair 卻是自己剪。只要動作是花錢請別人做的，就用 have 或 get 加受詞加過去分詞。</p></div>
+  <div class="gnext"><b>再上一級</b>B2 會加入指名對象的使役（have someone do something、get someone to do something），還有帶著倒楣語氣的 I had my bike stolen。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="phrasal-verbs" style="--c:#EC6F9E;--cd:#c9527d;--cs:rgba(236,111,158,.30)">
+  <div class="gcard-h">
+    <span class="gnum">06</span>
+    <h3>片語動詞大量增加<span class="en">Phrasal verbs</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Reading Part 6 開放式克漏字</span>
+  </div>
+  <p class="gscope">A2 只涉及基礎款，B1 的量明顯變多</p>
+  <p class="gdesc">A2 的官方清單裡片語動詞根本不成一類，B1 直接把它列進文法範圍，而且 Part 6 的官方說明白紙黑字寫著會考。麻煩在於 look after、look for、look up 三個字面上都是「看」，意思卻天差地遠，靠上下文猜的命中率很低。最該練的其實是後面那一格：Part 6 常常把動詞留給你，只挖掉 after 或 up 這一個字。</p>
+  <table class="gex"><tbody><tr><td class="en">Could you <u>look after</u> my little brother on Saturday?</td><td class="nt">照顧</td></tr><tr><td class="en">I need to <u>find out</u> when the museum opens.</td><td class="nt">查明</td></tr><tr><td class="en">Don't forget to <u>turn off</u> the lights when you leave.</td><td class="nt">可分離片語</td></tr><tr><td class="en">She <u>gave up</u> tennis when she started senior high.</td><td class="nt">放棄</td></tr><tr><td class="en">We <u>ran out of</u> water halfway up the mountain.</td><td class="nt">三字片語</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span>Please <u>turn off it</u> before you go to bed.</span></div>
+    <div class="ln"><span class="v">✓</span><span>Please <u>turn it off</u> before you go to bed.</span></div>
+    <p class="why">中文的「把它關掉」受詞永遠跟在動詞後面，孩子照著語序搬過來就錯了。規則很硬：受詞是 it、them、him 這類代名詞時，一定要夾在動詞和後面那個小字中間。</p></div>
+  <div class="gnext"><b>再上一級</b>B2 要的不只是看懂，而是主動用出比單字動詞更道地的片語動詞（put up with、come across），並在 Reading and Use of English Part 4 的關鍵字改寫題裡精準重組整句。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+<article class="gcard reveal" id="connectives-b1" style="--c:#1CB0F6;--cd:#1391cc;--cs:rgba(28,176,246,.30)">
+  <div class="gcard-h">
+    <span class="gnum">07</span>
+    <h3>連接詞大幅擴充<span class="en">Connectives</span></h3>
+    <span class="gtag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Reading Part 4 文章填句</span>
+  </div>
+  <p class="gscope">although、while、whereas、so that、in order to、unless</p>
+  <p class="gdesc">A2 的孩子把句子用 and、but、because、so 串起來就夠用了；B1 開始要求讓步（although）、對比（whereas）、目的（so that）、以及條件的反面（unless）。這幾個字是 Reading Part 4 把抽掉的句子放回去時最重要的線索，也是 Writing 語言分數能不能往上跳一階的關鍵。最需要當面糾正的是「雖然…但是…」——中文兩個詞成對出現，英文只能留一個。</p>
+  <table class="gex"><tbody><tr><td class="en"><u>Although</u> it was raining, we still played the whole match.</td><td class="nt">although 讓步</td></tr><tr><td class="en">My sister likes maths, <u>whereas</u> I prefer history.</td><td class="nt">whereas 兩相對比</td></tr><tr><td class="en">I set two alarms <u>so that</u> I wouldn't miss the train.</td><td class="nt">so that 目的</td></tr><tr><td class="en">She left early <u>in order to</u> catch the last bus.</td><td class="nt">in order to 接原形</td></tr><tr><td class="en"><u>Unless</u> you book online, the tickets cost more.</td><td class="nt">unless 等於 if not</td></tr></tbody></table>
+  <div class="gmiss"><span class="lbl">台灣孩子最常錯的一題</span>
+    <div class="ln"><span class="x">✗</span><span><u>Although</u> he was tired, <u>but</u> he finished his homework.</span></div>
+    <div class="ln"><span class="v">✓</span><span><u>Although</u> he was tired, he finished his homework.</span></div>
+    <p class="why">中文的「雖然…但是…」是一組，英文的 although 和 but 卻是同一份工作做兩次。寫完回頭數一次：同一個句子裡不能同時出現 although 和 but。</p></div>
+  <div class="gnext"><b>再上一級</b>B2 會把範圍推向 despite、in spite of、nevertheless、even though 這類更書面的連接詞，並要求它們在長文裡撐起段落與段落之間的邏輯，而不只是句子內部的連接。</div>
+  <a class="gtop" href="#toc">↑ 回到目錄</a>
+</article>
+    </div>
+    <div class="g-src reveal"><b>資料出處</b>：劍橋 <a href="https://www.cambridgeenglish.org/Images/168143-cambridge-english-preliminary-for-schools-teachers-handbook.pdf" target="_blank" rel="noopener">B1 Preliminary for Schools Handbook for Teachers</a>「Language specifications」附錄（手冊 70–72 頁）。「比 A2 多考什麼」的歸納、例句、錯誤示範與所有中文說明為埃森美語教師原創，非官方內容，也未轉載官方題目。考試格式與內容請以劍橋官方當期公告為準。資料日期 2026-08-20。</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">常見問題</span><h2>關於 PET <em>文法</em>，家長最常問</h2></div>
+    <div class="faq reveal" style="margin-top:22px"><div class="faq-item"><h3 class="faq-h"><button class="faq-q" aria-expanded="false">PET 的文法範圍是劍橋官方公布的嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>是。劍橋《B1 Preliminary Handbook for Teachers》有一段名為「Language specifications」的附錄（手冊 70–72 頁），明列 B1 的文法項目。本頁把它整理成「比 A2 多考什麼」的 7 大重點，範圍依官方原文；例句與中文說明是我們自己寫的教學內容。</p></div></div><div class="faq-item"><h3 class="faq-h"><button class="faq-q" aria-expanded="false">PET 要考第三條件句嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>官方 B1 只到第二條件句（type 2），包含 if I were you 這種假設語氣。網路上流傳的 B1 清單常把第三條件句（If I had known, I would have called）也算進來，那放錯了級——B1 階段把 type 0、1、2 用穩，比提早碰 type 3 有價值得多。</p></div></div><div class="faq-item"><h3 class="faq-h"><button class="faq-q" aria-expanded="false">這 7 項，考試哪一大題最會考？<span class="pm"></span></button></h3><div class="faq-a"><p>最集中在 Reading 的 Part 6（開放式克漏字）——6 個空格、一格填一個字，考文法、片語動詞與固定搭配；Part 5（四選一克漏字）也常考文法搭配。Writing 的兩篇短文和 Speaking 四個部分則要求主動用出來，尤其 Speaking Part 3 的雙人討論長達 4 分鐘，沒有考官引導。</p></div></div><div class="faq-item"><h3 class="faq-h"><button class="faq-q" aria-expanded="false">孩子剛考完 KET，直接準備 PET 會不會跳太快？<span class="pm"></span></button></h3><div class="faq-a"><p>從文法角度看，B1 不是換一套新東西，而是把 A2 的 13 類加深，再加上這 7 項新的。真正的落差通常不在文法清單，而在長度與速度——PET 的閱讀文章更長、寫作要求約 100 字、Speaking 要和另一位考生協商出結論。先確認這幾件事扛得住，再排考程比較實際。</p></div></div></div>
+  </div>
+</section>
+
+<section class="section bg-blue">
+  <div class="wrap">
+    <div class="center stack reveal">
+      <span class="eyebrow">下一步</span>
+      <h2 style="margin-top:14px">B1 的文法，<em>要用得出來才算會</em></h2>
+      <p class="body">PET 的 Reading Part 6 直接考上面這 7 項，Writing 的兩篇短文則要求你主動用出來——認得出來和寫得出來，是兩件事。想知道孩子現在離 B1 還差哪一塊，一次程度評估最快；我們的課程由美籍持證教師在全美語小班裡把能力一路帶到 B1。</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a class="btn btn-blue" href="/cambridge-practice-tests/">做一份 PET 線上練習</a>
+        <a class="btn btn-primary btn-line" href="https://line.me/R/ti/p/@americanenglish" target="_blank" rel="noopener">LINE 預約免費程度評估</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<script src="/assets/app.js?v=11"></script>
+</body>
+</html>
