@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<style id="crit">:root{--navy:#1A2752;--blue:#1CB0F6;--blue-dk:#1391cc;--green:#06C755;--green-dk:#04a046;--yellow:#FFC828;--yellow-dk:#e0a800;--purple:#CE82FF;--purple-dk:#a94fe0;--coral:#F0997B;--light-blue:#DDF4FF;--text-body:#4b5563;--card-shadow:0 12px 40px rgba(26,39,82,.10);--header-h:64px;}*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px)}body{font-family:'DM Sans',-apple-system,'PingFang TC','Microsoft JhengHei',sans-serif;background:#fff;color:var(--navy);line-height:1.6;overflow-x:hidden}a{color:inherit}img{display:block;max-width:100%}:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}h1,h2,h3{font-family:'DM Serif Display',serif;font-weight:400;color:var(--navy);letter-spacing:-.4px;line-height:1.08}h1{font-size:clamp(40px,6.4vw,66px)}h2{font-size:clamp(30px,4.6vw,48px)}h3{font-size:22px}.rounded{font-family:'Baloo 2',sans-serif;font-weight:800}em{font-style:italic;color:var(--blue)}.bg-navy h2,.bg-navy h3{color:#fff}p.body{font-size:clamp(15px,1.6vw,17px);line-height:1.8;color:var(--text-body)}.bg-navy p.body{color:rgba(255,255,255,.74)}.eyebrow{display:inline-block;font-family:'Baloo 2',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--blue);background:rgba(28,176,246,.12);padding:7px 16px;border-radius:100px}.eyebrow-green{color:#067033;background:rgba(6,199,85,.12)}.eyebrow-yellow{color:#8a5f00;background:rgba(255,200,40,.18)}.divider{width:48px;height:4px;background:linear-gradient(90deg,var(--blue),var(--purple));border-radius:4px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'Baloo 2',sans-serif;font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.5px;padding:14px 30px;border-radius:16px;cursor:pointer;border:none;text-transform:uppercase;transition:transform .08s ease,box-shadow .08s ease,filter .15s;min-height:50px;position:relative;top:0}.btn-primary{background:var(--green);color:#fff;box-shadow:0 5px 0 var(--green-dk),0 10px 18px rgba(6,199,85,.32)}.btn-blue{background:var(--blue);color:#fff;box-shadow:0 5px 0 var(--blue-dk),0 10px 18px rgba(28,176,246,.32)}.btn-yellow{background:var(--yellow);color:var(--navy);box-shadow:0 5px 0 var(--yellow-dk),0 10px 18px rgba(255,200,40,.32)}.btn-coral{background:var(--coral);color:#fff;box-shadow:0 5px 0 #d97a5c,0 10px 18px rgba(240,153,123,.34)}.btn-pf-blue{background:#a8d8f0;color:var(--navy);box-shadow:0 5px 0 #80bfe0,0 10px 18px rgba(168,216,240,.45)}.btn-pf-cream{background:#fff8f3;color:var(--navy);border:1px solid #efe4d8;box-shadow:0 5px 0 #e6dbd0,0 10px 18px rgba(26,39,82,.08)}.btn-pf-pink{background:#ffdae6;color:var(--navy);box-shadow:0 5px 0 #f0b0c8,0 10px 18px rgba(255,218,230,.5)}.btn:hover{filter:brightness(1.04)}.btn:active{top:5px;box-shadow:0 0 0 var(--green-dk)}.btn-blue:active{box-shadow:0 0 0 var(--blue-dk)}.btn-yellow:active{box-shadow:0 0 0 var(--yellow-dk)}.btn-coral:active{box-shadow:0 0 0 #d97a5c}.btn-pf-blue:active{box-shadow:0 0 0 #80bfe0}.btn-pf-cream:active{box-shadow:0 0 0 #e6dbd0}.btn-pf-pink:active{box-shadow:0 0 0 #f0b0c8}.btn-outline{background:#fff;color:var(--navy);border:2px solid #e2e8f0;box-shadow:0 4px 0 #e2e8f0}.btn-outline:active{top:4px;box-shadow:0 0 0 #e2e8f0}.btn svg{width:20px;height:20px}.btn-line svg{fill:currentColor}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}.section{padding:clamp(60px,8vw,104px) 0;position:relative}.bg-blue{background:var(--light-blue)}.bg-navy{background:var(--navy)}.bg-soft{background:#F4FAFF}.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center}.split.reverse>.media{order:2}@media(max-width:860px){.split{grid-template-columns:1fr}.split.reverse>.media{order:0}.split .stack{align-items:flex-end;text-align:right}.split .stack .divider{margin-left:auto;margin-right:0}.split.reverse .stack{align-items:flex-start;text-align:left}.split.reverse .stack .divider{margin-left:0;margin-right:auto}.hero .stack,#location .stack{align-items:center;text-align:center}.hero .stack .divider,#location .stack .divider{margin-left:auto;margin-right:auto}.hero .stack .hero-cta,.hero .stack .hero-badges{justify-content:center}.hero .stack p.body{margin-left:auto;margin-right:auto}}@media(min-width:861px){.section:not(#location) .split:not(.reverse) .stack{align-items:flex-end;text-align:right}.section:not(#location) .split:not(.reverse) .stack .divider{margin-left:auto;margin-right:0}}.stack{display:flex;flex-direction:column;align-items:flex-start;gap:16px}.center{text-align:center;align-items:center;margin:0 auto;max-width:700px}.progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--green),var(--blue),var(--purple));z-index:200;transition:width .1s linear}.rk{display:inline-block;width:26px;height:26px;color:var(--blue);animation:wiggle 3.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.rk svg{width:100%;height:100%;display:block}header.site-header{position:fixed;top:0;left:0;right:0;z-index:150;height:var(--header-h);background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(26,39,82,.06);transition:box-shadow .25s}header.site-header.scrolled{box-shadow:0 4px 22px rgba(26,39,82,.09)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{font-family:'Baloo 2',sans-serif;font-size:21px;font-weight:800;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:8px}.brand b{color:var(--blue);font-weight:800}.brand-logo{width:38px;height:38px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(26,39,82,.18)}.nav-links{display:flex;align-items:center;gap:26px}.nav-links a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:15px;font-weight:700;color:#475569;text-decoration:none;transition:color .15s}.nav-links a:not(.btn):hover,.nav-links a.active{color:var(--blue)}.nav-links a.active{position:relative}.nav-links a.active::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:3px;border-radius:3px;background:var(--blue)}.nav-cta{padding:9px 20px;font-size:14px;min-height:42px}.hamburger{display:none;width:46px;height:46px;border:none;background:transparent;cursor:pointer;flex-direction:column;justify-content:center;gap:5px;align-items:center}.hamburger span{width:24px;height:3px;background:var(--navy);border-radius:3px;transition:transform .3s,opacity .2s}body.menu-open .hamburger span:nth-child(1){transform:translateY(8px) rotate(45deg)}body.menu-open .hamburger span:nth-child(2){opacity:0}body.menu-open .hamburger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.drawer{position:fixed;inset:var(--header-h) 0 0 0;z-index:140;background:rgba(255,255,255,.98);backdrop-filter:blur(8px);display:flex;flex-direction:column;gap:4px;padding:24px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}body.menu-open .drawer{opacity:1;transform:none;pointer-events:auto}.drawer a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:700;color:var(--navy);text-decoration:none;padding:15px 8px;border-bottom:1px solid rgba(26,39,82,.07)}.drawer .btn{margin-top:18px}@media(max-width:860px){.nav-links{display:none}.hamburger{display:flex}}.bg-deco{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}.star{position:absolute;animation:twinkle 3s ease-in-out infinite}@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:.9;transform:scale(1.15)}}.hero{padding-top:calc(var(--header-h) + 40px);padding-bottom:60px;background:linear-gradient(180deg,#fff 0%,var(--light-blue) 100%);position:relative;overflow:hidden}.hero .wrap{position:relative;z-index:2}.hero-badges{display:flex;flex-wrap:wrap;gap:10px}.chip{display:inline-flex;align-items:center;gap:7px;font-family:'Baloo 2',sans-serif;font-size:14px;font-weight:700;color:var(--navy);background:#fff;border:2px solid rgba(26,39,82,.08);padding:8px 15px;border-radius:100px;box-shadow:0 3px 0 rgba(26,39,82,.06)}.chip .dot{width:9px;height:9px;border-radius:50%;background:var(--green);animation:blink 1.6s infinite}@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}.scene{position:relative;width:100%;max-width:440px;margin:0 auto;aspect-ratio:1}.planet{position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 36% 30%,#bfe7ff,var(--blue));box-shadow:inset -18px -18px 40px rgba(26,39,82,.25),0 30px 70px rgba(28,176,246,.35);animation:spin 26s linear infinite}.planet::before{content:'';position:absolute;width:34%;height:18%;border-radius:50%;background:rgba(255,255,255,.35);top:22%;left:20%;filter:blur(2px)}.planet::after{content:'';position:absolute;width:24%;height:12%;border-radius:50%;background:rgba(26,39,82,.18);bottom:24%;right:22%}.ring{position:absolute;left:50%;top:54%;width:108%;height:46%;transform:translate(-50%,-50%) rotate(-18deg);border:6px solid rgba(255,200,40,.55);border-radius:50%;animation:spin 18s linear infinite reverse}.rocket{position:absolute;left:58%;top:14%;width:120px;animation:floaty 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center;z-index:3;filter:drop-shadow(0 12px 18px rgba(26,39,82,.25))}.flame{transform-box:fill-box;transform-origin:50% 0%;animation:flame .6s ease-in-out infinite alternate}.s-star{position:absolute;animation:floaty 5s ease-in-out infinite}@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-18px) rotate(4deg)}}@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes flame{0%{transform:scaleY(.8) scaleX(1)}100%{transform:scaleY(1.15) scaleX(.9)}}@keyframes wiggle{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}.count-orb{position:absolute;left:6%;top:6%;background:#fff;border-radius:20px;padding:10px 16px;box-shadow:var(--card-shadow);font-family:'Baloo 2';font-weight:800;display:flex;align-items:center;gap:9px;font-size:15px;z-index:4;animation:pop-bob 4s ease-in-out infinite}.count-orb.b2{left:auto;right:2%;top:auto;bottom:14%;animation-delay:1.5s}.count-orb .big{font-family:'DM Serif Display';font-size:26px;color:var(--blue)}@keyframes pop-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}.page-hero{padding-top:calc(var(--header-h) + 56px);padding-bottom:56px;background:linear-gradient(180deg,#fff,var(--light-blue));text-align:center;position:relative;overflow:hidden}.page-hero .wrap{position:relative;z-index:2;max-width:780px}.page-hero h1{font-size:clamp(34px,5.2vw,54px);margin:14px 0 16px}.page-hero .divider{margin:0 auto 20px}.pf-blue{--frame:#a8d9ef}.pf-pink{--frame:#fedae7}.pf-lav{--frame:#c9b4f0}.pf-cream{--frame:#fef8f3;--frame-edge:#efe4d8}.post-hero{margin:30px 0 0;padding:4.2%;border-radius:min(46px,calc(6.3vw - 3px));background:var(--frame,var(--light-blue));box-shadow:0 18px 40px rgba(26,39,82,.16)}.post-hero img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:min(26px,calc(3.6vw - 1.7px))}.post-hero.pf-cream{box-shadow:inset 0 0 0 1px var(--frame-edge),0 18px 40px rgba(26,39,82,.16)}@media(max-width:640px){.post-hero{margin-top:22px}}.magnet-box{display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;background:var(--light-blue);border:2px dashed var(--blue);border-radius:22px;padding:20px 26px;margin:28px 0 6px}.magnet-box p{flex:1 1 280px;margin:0;font-size:15px;line-height:1.75;color:var(--text-body)}.magnet-box strong{font-family:'Baloo 2';font-size:16px;color:var(--navy)}.magnet-box .btn{flex:0 0 auto}.breadcrumb{font-family:'Baloo 2';font-size:13px;font-weight:700;color:#94a3b8;margin-bottom:8px}.breadcrumb a{text-decoration:none;color:#94a3b8}.breadcrumb a:hover{color:var(--blue)}</style>
+<link rel="preload" as="style" href="/assets/styles.css?v=fb874fd3" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/styles.css?v=fb874fd3"></noscript>
+<!-- AE:CRIT end -->
+<meta name="theme-color" content="#1A2752">
+<title>PET（B1）單字練習：8 個主題・64 題情境選字｜埃森美語</title>
+<meta name="description" content="PET（B1）單字怎麼練？8 個主題、64 題原創練習，全部把單字放回句子裡考——因為考試不會問你中文意思，而是看你在句子裡認不認得出來。附中文解析，免費不用註冊。">
+<link rel="canonical" href="https://americanenglish.com.tw/b1-vocabulary-practice/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PET（B1）單字練習：64 題情境選字">
+<meta property="og:description" content="8 個主題、64 題原創練習，全部在句子裡考單字。">
+<meta property="og:url" content="https://americanenglish.com.tw/b1-vocabulary-practice/">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/b1-vocabulary-practice/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/b1-vocabulary-practice/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"劍橋英檢","item":"https://americanenglish.com.tw/exams/"},{"@type":"ListItem","position":3,"name":"PET","item":"https://americanenglish.com.tw/pet-prep-guide/"},{"@type":"ListItem","position":4,"name":"PET（B1）單字練習8 個主題・64 題"}]}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body>
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo.jpg" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<div class="drawer" id="drawer"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></div>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/exams/">劍橋英檢</a> ／ <a href="/pet-prep-guide/">PET</a> ／ 單字練習</div>
+    <span class="eyebrow  reveal">原創練習 · 情境選字</span>
+    <h1 class="reveal d1">PET（B1）<em>單字練習</em><br>8 個主題・64 題</h1>
+    <div class="divider reveal d1"></div>
+    <p class="body reveal d2">作者：Christopher｜埃森美語創辦人｜美國密西根大學畢業、美國正式教師執照</p>
+  </div>
+</section>
+
+<style>.exam-subnav{position:sticky;top:var(--header-h);z-index:90;background:#fff;border-bottom:2px solid rgba(26,39,82,.08);overflow-x:auto;-webkit-overflow-scrolling:touch}.exam-subnav .row{display:flex;align-items:stretch;max-width:1120px;margin:0 auto;padding:0 24px}.exam-subnav .tag{flex:none;display:flex;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;color:#fff;background:var(--blue);padding:10px 14px;border-radius:0 0 10px 10px;text-decoration:none}.exam-subnav a:not(.tag){flex:none;display:flex;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;color:#475569;text-decoration:none;padding:10px 13px;border-bottom:3px solid transparent;white-space:nowrap}.exam-subnav a:not(.tag):hover{color:var(--blue)}.exam-subnav a.on{color:var(--navy);border-bottom-color:var(--blue)}</style>
+<nav class="exam-subnav" aria-label="PET 專區導覽"><div class="row">
+<a class="tag" href="/exams/">劍橋英檢 PET</a>
+<a href="/pet-prep-guide/">總覽</a>
+<a href="/pet-prep-guide/#practice">線上練習</a>
+<a href="/b1-grammar-guide/">文法範圍</a>
+<a href="/b1-vocabulary-practice/" class="on" aria-current="page">單字練習</a>
+<a href="/pet-speaking-practice/">口說練習</a>
+<a href="/cambridge-practice-tests/">官方題庫</a>
+<a href="/cambridge-exam-registration-taiwan/">報名資訊</a>
+</div></nav>
+
+<style>
+.vchips{display:flex;flex-wrap:wrap;gap:8px;margin:20px auto 0;max-width:820px}
+.vchips span{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:13.5px;color:#475569;background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:100px;padding:7px 15px}
+.vtopic{background:#fff;border:1px solid rgba(26,39,82,.10);border-radius:24px;padding:clamp(20px,3vw,30px);box-shadow:var(--card-shadow);margin-top:20px;scroll-margin-top:calc(var(--header-h) + 70px)}
+.vtopic-h{display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+.vnum{flex:none;width:46px;height:46px;border-radius:15px;background:var(--c);color:#fff;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:17px;display:grid;place-items:center;box-shadow:0 4px 0 var(--cd)}
+.vtopic-h h3{font-size:clamp(20px,2.6vw,25px);line-height:1.15;margin:0}
+.vtopic-h h3 .en{display:block;font-family:'Baloo 2',sans-serif;font-size:13.5px;font-weight:700;letter-spacing:.6px;color:var(--c);margin-top:3px}
+.vnote{font-size:15px;line-height:1.8;color:var(--text-body);margin:12px 0 0}
+.v-src{max-width:800px;margin:30px auto 0;background:#F4FAFF;border:1px solid rgba(28,176,246,.22);border-radius:18px;padding:18px 22px;font-size:14.5px;line-height:1.8;color:var(--text-body)}
+.v-src b{color:var(--navy)}
+.gd-body{padding:0}
+.vtopic .gdrill{margin-top:16px}
+</style>
+
+<section class="section">
+  <div class="wrap">
+    <div class="prose reveal" style="max-width:800px;margin:0 auto">
+      <p>官方的 B1 Preliminary 字表同樣是劍橋出版的 PDF，我們只提供連結、不轉貼內容。B1 的字表約 3,000–3,200 個詞條，比 A2 多出將近一倍，難的不是字變長，而是抽象詞、片語動詞與固定介系詞明顯變多——這三類沒辦法靠中文翻譯記住，只能在句子裡練。下面每一題四個選項意思都相近，只有一個放進去讀得通，這正是 Reading Part 5 考字彙的方式。</p>
+      <p><b>官方字表</b>：<a href="https://www.cambridgeenglish.org/Images/506887-b1-preliminary-vocabulary-list.pdf" target="_blank" rel="noopener">B1 Preliminary and B1 Preliminary for Schools Vocabulary List（2025 年 8 月版）</a>（劍橋官方 PDF，版權屬 Cambridge University Press &amp; Assessment，本頁只提供連結、不轉存內容）。官方字表約 3,000–3,200 個詞條，比 A2 多出將近一倍，抽象詞與片語動詞明顯變多。</p>
+      <p style="font-size:14.5px;color:#8b9bb0">B1 官方字表同樣按主題分組，主題family 與 A2 相近但範圍更廣、更抽象。</p>
+    </div>
+    
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow">主題練習</span><h2>把單字<em>放回句子裡</em>練</h2></div>
+    <p class="body center reveal" style="max-width:700px;margin-top:12px">每一題都是一個句子，四個（或三個）選項意思相近，只有一個放進去讀得通。這正是考試考字彙的方式——不會問你中文意思，而是看你在句子裡認不認得出來。</p>
+    <div style="margin-top:6px">
+<article class="vtopic reveal" id="health" style="--c:#1CB0F6;--cd:#1391cc;--cs:rgba(28,176,246,.30)">
+  <div class="vtopic-h"><span class="vnum">01</span>
+    <h3>健康與身體<span class="en">Health</span></h3></div>
+  <p class="vnote">健康這個主題最愛考的不是病名，而是搭配詞與形容詞的形式——have a cold、feel ill、harmful to，錯的通常是介系詞或詞性，不是字義。</p>
+  <details class="gdrill"><summary>做 8 題練習</summary>
+    <div class="gd-body" style="padding:16px 0 0">
+      <form class="gd-form" data-slug="health" novalidate></form>
+      <div class="gd-bar">
+        <button type="button" class="btn btn-primary" data-act="check">對答案</button>
+        <button type="button" class="btn btn-outline" data-act="why">看解析</button>
+        <button type="button" class="btn btn-outline" data-act="reset">重做</button>
+        <span class="gd-score" role="status" aria-live="polite"></span>
+      </div>
+    </div></details>
+</article>
+<article class="vtopic reveal" id="feelings" style="--c:#CE82FF;--cd:#a94fe0;--cs:rgba(206,130,255,.32)">
+  <div class="vtopic-h"><span class="vnum">02</span>
+    <h3>感受與個性<span class="en">Feelings and personality</span></h3></div>
+  <p class="vnote">這一組最常考的是 -ed 與 -ing 形容詞的差別（bored 對 boring），還有每個形容詞後面固定接哪個介系詞。中文沒有這兩種區別，所以要靠句子裡的主詞來判斷。</p>
+  <details class="gdrill"><summary>做 8 題練習</summary>
+    <div class="gd-body" style="padding:16px 0 0">
+      <form class="gd-form" data-slug="feelings" novalidate></form>
+      <div class="gd-bar">
+        <button type="button" class="btn btn-primary" data-act="check">對答案</button>
+        <button type="button" class="btn btn-outline" data-act="why">看解析</button>
+        <button type="button" class="btn btn-outline" data-act="reset">重做</button>
+        <span class="gd-score" role="status" aria-live="polite"></span>
+      </div>
+    </div></details>
+</article>
+<article class="vtopic reveal" id="money-and-shopping" style="--c:#06C755;--cd:#04a046;--cs:rgba(6,199,85,.28)">
+  <div class="vtopic-h"><span class="vnum">03</span>
+    <h3>金錢與消費<span class="en">Money and shopping</span></h3></div>
+  <p class="vnote">錢的動詞是一整組陷阱：cost 的主詞是東西，spend 的主詞是人，afford 直接接東西，pay 要看有沒有 for。搞清楚誰當主詞，這一組就不會錯。</p>
+  <details class="gdrill"><summary>做 8 題練習</summary>
+    <div class="gd-body" style="padding:16px 0 0">
+      <form class="gd-form" data-slug="money-and-shopping" novalidate></form>
+      <div class="gd-bar">
+        <button type="button" class="btn btn-primary" data-act="check">對答案</button>
+        <button type="button" class="btn btn-outline" data-act="why">看解析</button>
+        <button type="button" class="btn btn-outline" data-act="reset">重做</button>
+        <span class="gd-score" role="status" aria-live="polite"></span>
+      </div>
+    </div></details>
+</article>
+<article class="vtopic reveal" id="environment" style="--c:#F0997B;--cd:#d97a5c;--cs:rgba(240,153,123,.38)">
+  <div class="vtopic-h"><span class="vnum">04</span>
+    <h3>環境與自然<span class="en">The environment</span></h3></div>
+  <p class="vnote">環境是 B1 閱讀與寫作最常出現的題材之一。這一組的難點在片語動詞（cut down on、break down）和固定術語（climate change），字面猜通常會猜錯。</p>
+  <details class="gdrill"><summary>做 8 題練習</summary>
+    <div class="gd-body" style="padding:16px 0 0">
+      <form class="gd-form" data-slug="environment" novalidate></form>
+      <div class="gd-bar">
+        <button type="button" class="btn btn-primary" data-act="check">對答案</button>
+        <button type="button" class="btn btn-outline" data-act="why">看解析</button>
+        <button type="button" class="btn btn-outline" data-act="reset">重做</button>
+        <span class="gd-score" role="status" aria-live="polite"></span>
+      </div>
+    </div></details>
+</article>
+<article class="vtopic reveal" id="media-and-technology" style="--c:#4C6FE7;--cd:#3652bd;--cs:rgba(76,111,231,.26)">
+  <div class="vtopic-h"><span class="vnum">05</span>
+    <h3>媒體與科技<span class="en">Media and technology</span></h3></div>
+  <p class="vnote">科技詞看起來簡單，但方向詞（upload／download）和片語動詞（log in、turn off）錯了就整題不對，而且這些字在聽力裡出現的頻率非常高。</p>
+  <details class="gdrill"><summary>做 8 題練習</summary>
+    <div class="gd-body" style="padding:16px 0 0">
+      <form class="gd-form" data-slug="media-and-technology" novalidate></form>
+      <div class="gd-bar">
+        <button type="button" class="btn btn-primary" data-act="check">對答案</button>
+        <button type="button" class="btn btn-outline" data-act="why">看解析</button>
+        <button type="button" class="btn btn-outline" data-act="reset">重做</button>
+        <span class="gd-score" role="status" aria-live="polite"></span>
+      </div>
+    </div></details>
+</article>
+<article class="vtopic reveal" id="travel" style="--c:#EC6F9E;--cd:#c9527d;--cs:rgba(236,111,158,.30)">
+  <div class="vtopic-h"><span class="vnum">06</span>
+    <h3>旅行與交通<span class="en">Travel and transport</span></h3></div>
+  <p class="vnote">旅行的字彙在 B1 幾乎每一份考卷都出現。難的不是單字，是搭配：miss a flight、check in、fully booked、hand luggage，這些都是整組固定的說法。</p>
+  <details class="gdrill"><summary>做 8 題練習</summary>
+    <div class="gd-body" style="padding:16px 0 0">
+      <form class="gd-form" data-slug="travel" novalidate></form>
+      <div class="gd-bar">
+        <button type="button" class="btn btn-primary" data-act="check">對答案</button>
+        <button type="button" class="btn btn-outline" data-act="why">看解析</button>
+        <button type="button" class="btn btn-outline" data-act="reset">重做</button>
+        <span class="gd-score" role="status" aria-live="polite"></span>
+      </div>
+    </div></details>
+</article>
+<article class="vtopic reveal" id="work-and-study" style="--c:#1CB0F6;--cd:#1391cc;--cs:rgba(28,176,246,.30)">
+  <div class="vtopic-h"><span class="vnum">07</span>
+    <h3>工作與學業<span class="en">Work and study</span></h3></div>
+  <p class="vnote">這一組是寫作 Part 1 的常客。experience 可數不可數、apply for 的介系詞、attend 不是「協助」——三個都是台灣學生高頻失分點。</p>
+  <details class="gdrill"><summary>做 8 題練習</summary>
+    <div class="gd-body" style="padding:16px 0 0">
+      <form class="gd-form" data-slug="work-and-study" novalidate></form>
+      <div class="gd-bar">
+        <button type="button" class="btn btn-primary" data-act="check">對答案</button>
+        <button type="button" class="btn btn-outline" data-act="why">看解析</button>
+        <button type="button" class="btn btn-outline" data-act="reset">重做</button>
+        <span class="gd-score" role="status" aria-live="polite"></span>
+      </div>
+    </div></details>
+</article>
+<article class="vtopic reveal" id="free-time" style="--c:#CE82FF;--cd:#a94fe0;--cs:rgba(206,130,255,.32)">
+  <div class="vtopic-h"><span class="vnum">08</span>
+    <h3>休閒與運動<span class="en">Free time and sport</span></h3></div>
+  <p class="vnote">休閒主題最愛考固定介系詞：keen on、interested in、fond of、good at。這四個沒有規律可循，只能一組一組連介系詞背下來。</p>
+  <details class="gdrill"><summary>做 8 題練習</summary>
+    <div class="gd-body" style="padding:16px 0 0">
+      <form class="gd-form" data-slug="free-time" novalidate></form>
+      <div class="gd-bar">
+        <button type="button" class="btn btn-primary" data-act="check">對答案</button>
+        <button type="button" class="btn btn-outline" data-act="why">看解析</button>
+        <button type="button" class="btn btn-outline" data-act="reset">重做</button>
+        <span class="gd-score" role="status" aria-live="polite"></span>
+      </div>
+    </div></details>
+</article>
+    </div>
+    <div class="v-src reveal"><b>資料出處與版權</b>：主題分類名稱出自劍橋官方字表的分類方式；所有練習題目、選項與中文解析為<strong>埃森美語教師原創</strong>，非劍橋官方試題，也未轉載官方字表內容。考試格式與內容請以劍橋官方當期公告為準。資料日期 2026-08-21。</div>
+  </div>
+</section>
+
+<section class="section bg-blue">
+  <div class="wrap center stack reveal">
+    <span class="eyebrow">下一步</span>
+    <h2 style="margin-top:12px">背得起來，<em>用不出來</em>？</h2>
+    <div class="divider"></div>
+    <p class="body" style="max-width:680px">認得出來和寫得出來、講得出來，是三件不同的事。字表能給你範圍，但沒辦法讓字變成你自己的——那要靠在句子裡反覆遇到它、用錯被糾正、再用對。文法底盤也會影響字用得準不準，可以順便對照 <a href="/b1-grammar-guide/">PET 文法範圍逐項教學</a>。</p>
+    <a class="btn btn-primary" href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 預約免費程度評估</a>
+  </div>
+</section>
+
+</main>
+<script>const GDRILLS = {"health":[{"n":1,"type":"mc","q":"I've had a bad ______ since yesterday and I keep sneezing.","opts":["cold","ill","sick","fever"],"a":0,"why":["✓ cold 當「感冒」時是可數名詞，a bad cold 是固定搭配，而且打噴嚏正是感冒的症狀。","✗ ill 是形容詞，不能接在 a bad 後面當名詞用。","✗ sick 同樣是形容詞，也不能放在 a bad 之後。","✗ fever 是「發燒」，是名詞沒錯，但發燒不會讓人一直打噴嚏，和後半句對不上。"]},{"n":2,"type":"mc","q":"You look pale. Are you feeling ______ ?","opts":["ill","illness","pain","hurt"],"a":0,"why":["✓ feel 後面接形容詞，ill 正是形容詞，feel ill 是問身體不舒服的標準說法。","✗ illness 是名詞（疾病），不能直接接在 feel 後面。","✗ pain 是名詞，要說 feel a pain in my leg，不能單獨用來問整體狀況。","✗ feel hurt 在英文裡指的是「心裡受傷」，不是身體不舒服——這是中文母語者最容易誤用的一個。"]},{"n":3,"type":"mc","q":"The doctor gave me a ______ for some antibiotics.","opts":["prescription","recipe","receipt","note"],"a":0,"why":["✓ prescription 是醫生開的處方箋，拿去藥局領藥用的。","✗ recipe 是「食譜」，做菜用的——這兩個字長得像，是最經典的混淆組。","✗ receipt 是「收據」，付完錢才拿到。","✗ note 是「便條」，太籠統，開藥不會用這個字。"]},{"n":4,"type":"mc","q":"I've got a sore ______ , so it hurts when I swallow.","opts":["throat","neck","mouth","stomach"],"a":0,"why":["✓ throat 是「喉嚨」，吞東西會痛就是喉嚨痛，a sore throat 是固定說法。","✗ neck 指的是脖子的外部，脖子痛不會影響吞嚥。","✗ mouth 是「嘴巴」，嘴巴破通常說 a mouth ulcer，和吞嚥痛不同。","✗ stomach 是「胃」，胃痛和吞東西痛是兩種不同的症狀。"]},{"n":5,"type":"mc","q":"Smoking is extremely ______ to your health.","opts":["harmful","hurtful","painful","damaged"],"a":0,"why":["✓ harmful to something 是固定搭配，「對……有害」。","✗ hurtful 指的是「傷人的話或行為」，用在情感上，不用在健康。","✗ painful 是「疼痛的」，形容感覺本身，不能說某件事對健康 painful。","✗ damaged 是過去分詞當形容詞，指「已經受損的東西」，主詞不能是抽菸這件事。"]},{"n":6,"type":"mc","q":"He's been ______ a diet since January and has lost five kilos.","opts":["on","in","at","with"],"a":0,"why":["✓ be on a diet 是固定搭配，「在節食中」的介系詞只能用 on。","✗ in a diet 不是英文的說法。","✗ at a diet 同樣不存在。","✗ with a healthy diet 可以表示「憑藉健康飲食」，但「正在節食」固定用 on。"]},{"n":7,"type":"gaptext","q":"填入一個字：I couldn't sleep last night because I had a terrible ______ in my back.","accept":["pain","ache"],"why":"身體某個部位持續的疼痛用 a pain in my back，說 an ache 也通。空格前的 a terrible 表示這裡需要一個可數名詞，所以形容詞 sore 或 painful 都不能填。"},{"n":8,"type":"gaptext","q":"填入一個字：You should ______ a doctor if the cough doesn't go away.","accept":["see","visit","consult"],"why":"「去看醫生」英文說 see a doctor，visit a doctor 也可以。中文的「看」直翻成 look at 或 watch 都是錯的，那兩個是「注視」的意思。"}],"feelings":[{"n":1,"type":"mc","q":"I was really ______ when I heard I'd passed the exam.","opts":["relieved","relieving","relief","relaxed"],"a":0,"why":["✓ relieved 是 -ed 形容詞，形容人「鬆一口氣」，主詞是 I 所以用這個。","✗ relieving 是 -ing 形，形容「令人鬆一口氣的事物」，不能形容人的感受。","✗ relief 是名詞，要說 It was a relief 才對，不能直接當形容詞。","✗ relaxed 是「放鬆的」，收到及格消息的當下是鬆一口氣，不是放鬆。"]},{"n":2,"type":"mc","q":"She's very ______ — she'll help anyone who asks.","opts":["generous","greedy","jealous","selfish"],"a":0,"why":["✓ generous 是「慷慨、樂於付出的」，和「誰開口都幫」完全一致。","✗ greedy 是「貪心的」，意思相反。","✗ jealous 是「嫉妒的」，和願不願意幫忙無關。","✗ selfish 是「自私的」，也和後半句矛盾。"]},{"n":3,"type":"mc","q":"The film was so ______ that I fell asleep halfway through.","opts":["boring","bored","boredom","bore"],"a":0,"why":["✓ boring 是 -ing 形容詞，形容事物讓人覺得無聊，主詞 The film 是事物。","✗ bored 是 -ed 形，形容人的感受，要說 I was bored，主詞不能是電影。","✗ boredom 是名詞「無聊」，不能接在 so 後面。","✗ bore 當動詞是「使人厭煩」，形式不對。"]},{"n":4,"type":"mc","q":"He gets ______ very easily — even a tiny mistake upsets him.","opts":["annoyed","annoying","annoyance","annoy"],"a":0,"why":["✓ get + -ed 形容詞表示情緒的變化，annoyed 是「感到惱怒的」，主詞是 He。","✗ annoying 形容「令人惱怒的人事物」，說 He is annoying 意思會變成他很煩人。","✗ annoyance 是名詞。","✗ annoy 是原形動詞，不能接在 gets 後面。"]},{"n":5,"type":"mc","q":"I'm looking ______ to seeing you next month.","opts":["forward","forwards","ahead","front"],"a":0,"why":["✓ look forward to 是固定片語，to 後面接動名詞（seeing）。","✗ forwards 是方向副詞，這個片語固定用 forward，不加 s。","✗ look ahead 意思是「展望未來」，後面不接 to + Ving。","✗ front 不和 look 組成這個片語。"]},{"n":6,"type":"mc","q":"She's always been ______ of speaking in front of a large group.","opts":["afraid","afraid to","scared about","frightening"],"a":0,"why":["✓ be afraid of + 動名詞是固定搭配，介系詞是 of。","✗ afraid to 後面要接原形動詞（afraid to speak），這裡後面是 speaking，形式不合。","✗ scared 的介系詞是 of 不是 about。","✗ frightening 形容「令人害怕的事物」，主詞是 She 時語意會變成她很嚇人。"]},{"n":7,"type":"gaptext","q":"填入一個字：I was very ______ with my exam result — I had expected a much higher mark.","accept":["disappointed","upset"],"why":"成績比預期低，人的感受用 -ed 形容詞 disappointed（失望的），後面固定接介系詞 with。填 disappointing 是錯的，那是形容「令人失望的事情」。"},{"n":8,"type":"gaptext","q":"填入一個字：Don't worry ______ the test — you've studied really hard.","accept":["about"],"why":"worry 後面固定接介系詞 about。中文說「擔心考試」中間沒有任何字，所以最常見的錯是直接寫成 worry the test。"}],"money-and-shopping":[{"n":1,"type":"mc","q":"These jeans were a real ______ — only three hundred dollars.","opts":["bargain","cheap","discount","sale"],"a":0,"why":["✓ bargain 是名詞，指「買到的便宜好貨」，a real bargain 是固定說法。","✗ cheap 是形容詞，不能接在 a real 後面。","✗ discount 是「折扣」這件事，不是指買到的東西本身。","✗ sale 是「特價活動」，要說 on sale，不能說 a real sale 指這件商品。"]},{"n":2,"type":"mc","q":"I can't ______ a new phone this year.","opts":["afford","cost","spend","pay"],"a":0,"why":["✓ afford 是「負擔得起」，後面直接接東西，主詞是人。","✗ cost 的主詞必須是東西：The phone costs a lot。","✗ spend 後面要接金額或時間：spend 20,000 dollars on a phone。","✗ pay 要說 pay for a new phone，少了 for 就不成句。"]},{"n":3,"type":"mc","q":"How much did you ______ for those trainers?","opts":["pay","cost","spend","buy"],"a":0,"why":["✓ pay for something 是「為某物付錢」，句子裡的 for 就是它的搭配。","✗ cost 的主詞是東西，不能問 you cost。","✗ spend 的介系詞是 on 不是 for：How much did you spend on those trainers。","✗ buy 後面直接接東西，不接 for 表示金額。"]},{"n":4,"type":"mc","q":"The shop will give you a ______ if the shirt doesn't fit.","opts":["refund","return","change","receipt"],"a":0,"why":["✓ refund 是「退款」，give someone a refund 是固定搭配。","✗ return 當名詞是「退貨」這個動作，商店不會 give you a return。","✗ change 是「找零」，指付現金後找回來的錢，和退貨無關。","✗ receipt 是「收據」，是退貨時要出示的東西，不是店家給的補償。"]},{"n":5,"type":"mc","q":"I paid ______ card because I'd left my cash at home.","opts":["by","in","with","on"],"a":0,"why":["✓ pay by card 是固定搭配，付款方式用 by。","✗ in 用在 pay in cash，指的是現金這個形式。","✗ with 後面接具體的錢（pay with a thousand-dollar note），不接付款方式。","✗ on 不和 pay 組成這個意思。"]},{"n":6,"type":"mc","q":"That jacket is ______ expensive — I'm not paying that much.","opts":["far too","too much","very much","so much"],"a":0,"why":["✓ far too + 形容詞表示「太過……了」，far 是用來加強 too 的。","✗ too much 後面接名詞或動詞，不能直接修飾形容詞 expensive。","✗ very much 不能修飾形容詞。","✗ so much 同樣不能直接放在形容詞前面。"]},{"n":7,"type":"gaptext","q":"填入一個字：I'm saving ______ for a new laptop, so I'm not going out much this month.","accept":["up"],"why":"save up for something 是「為了買某樣東西存錢」的片語動詞，副詞固定是 up。B1 開始片語動詞的數量明顯變多，這一類要連副詞一起背。"},{"n":8,"type":"gaptext","q":"填入一個字：The concert tickets are quite ______ — about two thousand dollars each.","accept":["expensive","pricey"],"why":"價格高，形容票本身用 expensive。中文的「很貴」常被直翻成 high，但 high 只能形容 price（The price is high），不能拿來形容票。"}],"environment":[{"n":1,"type":"mc","q":"Plastic bottles take hundreds of years to ______ in the ground.","opts":["break down","break up","break in","break out"],"a":0,"why":["✓ break down 講材料時是「分解」，正是塑膠在土裡發生的事。","✗ break up 是「分手」或「把東西打散成幾塊」。","✗ break in 是「闖空門」。","✗ break out 是「（戰爭、火災）爆發」。"]},{"n":2,"type":"mc","q":"Air ______ in big cities is getting worse every year.","opts":["pollution","polluted","pollute","polluting"],"a":0,"why":["✓ pollution 是名詞「污染」，air pollution 是複合名詞，當整句的主詞。","✗ polluted 是形容詞「受污染的」，不能當主詞。","✗ pollute 是動詞原形。","✗ polluting 是動名詞或現在分詞，air polluting 不是英文的組合。"]},{"n":3,"type":"mc","q":"Turning off the lights is a simple way to ______ energy.","opts":["save","spare","keep","hold"],"a":0,"why":["✓ save energy 是固定搭配，「節省能源」。","✗ spare 是「勻出、抽出」（spare a moment），不與 energy 搭配成這個意思。","✗ keep 是「保留」，keep energy 不是英文的說法。","✗ hold 是「握住、容納」，同樣不搭配。"]},{"n":4,"type":"mc","q":"Many wild animals are now in ______ of disappearing forever.","opts":["danger","risk","threat","dangerous"],"a":0,"why":["✓ in danger of + 動名詞是固定搭配。","✗ risk 的搭配是 at risk of，介系詞不同。","✗ threat 的搭配是 under threat，介系詞也不同。","✗ dangerous 是形容詞，不能接在 in 後面。"]},{"n":5,"type":"mc","q":"The government has ______ a new law about plastic bags.","opts":["introduced","invented","produced","discovered"],"a":0,"why":["✓ introduce a law 是「頒布、開始實施法律」的標準搭配。","✗ invent 是「發明」，用在原本不存在的東西或機器。","✗ produce 是「生產」，用在製造商品。","✗ discover 是「發現」原本就存在的事物，法律是人訂的，不是被發現的。"]},{"n":6,"type":"mc","q":"Solar power is a ______ source of energy — the sun isn't going to run out.","opts":["renewable","returnable","repeatable","refillable"],"a":0,"why":["✓ renewable 是「可再生的」，renewable energy 是這個領域的固定用語。","✗ returnable 是「可退還的」，用在商品或容器。","✗ repeatable 是「可重複進行的」，用在實驗或動作。","✗ refillable 是「可再裝填的」，用在瓶子或墨水匣。"]},{"n":7,"type":"gaptext","q":"填入一個字：We all need to cut ______ on the amount of plastic we use.","accept":["down","back"],"why":"cut down on 是「減少用量」的片語動詞，cut back on 意思相同，兩個都算對。只有這兩個副詞能搭配後面的 on 表達這個意思。"},{"n":8,"type":"gaptext","q":"填入一個字：Climate ______ is one of the biggest problems our generation faces.","accept":["change"],"why":"「氣候變遷」的固定術語是 climate change，是一個複合名詞。寫成 changing 或 changes 都不是這個術語的形式——專有術語要整組記。"}],"media-and-technology":[{"n":1,"type":"mc","q":"I couldn't ______ the file onto the school website because the internet was too slow.","opts":["upload","download","load","unload"],"a":0,"why":["✓ upload 是把檔案「上傳」到網站，句中的 onto the website 指的就是這個方向。","✗ download 是從網路下載到自己的裝置，方向剛好相反。","✗ load 是「裝載」，不用在網路檔案傳輸。","✗ unload 是「卸貨」，用在車子或船。"]},{"n":2,"type":"mc","q":"She ______ a photo of her dinner on Instagram last night.","opts":["posted","sent","wrote","printed"],"a":0,"why":["✓ post 在社群媒體上是「發文、上傳」，是這個情境的專用動詞。","✗ send 是「傳送給某個人」，貼在公開平台上不用這個字。","✗ write 用在文字，照片不能 write。","✗ print 是「列印」，和上傳到網路無關。"]},{"n":3,"type":"mc","q":"Please ______ your phone before the film starts.","opts":["turn off","turn down","turn up","turn over"],"a":0,"why":["✓ turn off 是「關掉電源」。","✗ turn down 是「調小聲」，手機還是開著的。","✗ turn up 是「調大聲」，或「（人）出現」。","✗ turn over 是「翻面」，用在紙張或食物。"]},{"n":4,"type":"mc","q":"I get most of my news ______ my phone rather than from newspapers.","opts":["on","in","at","to"],"a":0,"why":["✓ 在裝置上看到內容用 on：on my phone、on TV、on the internet。","✗ in 用在實體出版品：in the newspaper、in a magazine。","✗ at 用在地點，不用在裝置。","✗ to 表示方向，和「在哪裡看」無關。"]},{"n":5,"type":"mc","q":"There's a lot of ______ information online, so you have to check where it came from.","opts":["misleading","missing","mistaken","misunderstood"],"a":0,"why":["✓ misleading 是「會誤導人的」，形容資訊本身，是這個主題的關鍵字。","✗ missing 是「遺失的、缺少的」，不是「不正確的」。","✗ mistaken 通常形容人（You are mistaken），不太用來形容 information。","✗ misunderstood 是「被誤解的」，重點在讀的人，不在資訊本身。"]},{"n":6,"type":"mc","q":"The programme was so popular that they made a second ______ .","opts":["series","serial","sequence","session"],"a":0,"why":["✓ series 是電視「一季／一整套節目」，a second series 就是第二季。","✗ serial 是「連載劇」，指節目的類型，不是季數。","✗ sequence 是「順序、一連串」，不用在節目季數。","✗ session 是「一場、一節」，用在課程或會議。"]},{"n":7,"type":"gaptext","q":"填入一個字：Can you log ______ to the school system and check tomorrow's timetable?","accept":["in","on"],"why":"登入系統是 log in（也可以說 log on）；log out 或 log off 是登出，方向相反。片語動詞要連著副詞一起記，只記 log 沒有用。"},{"n":8,"type":"gaptext","q":"填入一個字：The app is free to ______ , but you have to pay for the extra features.","accept":["download","use","try"],"why":"從商店把 app 取得到手機上是 download。空格前的 free to 後面接原形動詞，所以 downloading 是錯的形式。"}],"travel":[{"n":1,"type":"mc","q":"We ______ our flight because we got stuck in traffic on the way to the airport.","opts":["missed","lost","failed","dropped"],"a":0,"why":["✓ miss a flight 是「趕不上班機」的固定搭配。","✗ lose 用在「弄丟東西」，班機不是被弄丟的。","✗ fail 是「失敗、不及格」，不和班機搭配。","✗ drop 是「掉落」，語意完全不合。"]},{"n":2,"type":"mc","q":"You need to ______ in at least two hours before an international flight.","opts":["check","sign","log","book"],"a":0,"why":["✓ check in 是機場或飯店的「報到」，是旅行情境的固定片語動詞。","✗ sign in 用在訪客登記簿，不用在機場。","✗ log in 用在電腦系統。","✗ book 是「預訂」，是出發前很久就做的事，不會用 book in 表示報到。"]},{"n":3,"type":"mc","q":"The hotel was fully ______ , so we had to find somewhere else to stay.","opts":["booked","filled","taken","closed"],"a":0,"why":["✓ fully booked 是「訂滿了」的固定說法。","✗ filled 用在容器裝滿東西，不用在住房。","✗ taken 可以說單一房間 is taken，但整間飯店客滿固定用 fully booked。","✗ closed 是「（店家）關門」，和有沒有空房是兩回事。"]},{"n":4,"type":"mc","q":"Our train was ______ , so we waited on the platform for almost an hour.","opts":["delayed","waited","stayed","remained"],"a":0,"why":["✓ delayed 是「被延誤」，被動形式，主詞是列車。","✗ waited 的主詞必須是人，列車不會 wait 乘客一小時。","✗ stayed 是「停留」，語意不對。","✗ remained 是「維持某個狀態」，後面要接補語。"]},{"n":5,"type":"mc","q":"Do you have any ______ luggage, or just this suitcase to check in?","opts":["hand","arm","small","light"],"a":0,"why":["✓ hand luggage 是「隨身行李」的固定說法（美式也說 carry-on）。","✗ arm luggage 不存在。","✗ small luggage 文法沒錯但不是這個情境的專有說法，機場只用 hand luggage。","✗ light luggage 指「輕的行李」，和能不能帶上飛機是兩回事。"]},{"n":6,"type":"mc","q":"We stayed in a small ______ house in the countryside for three nights.","opts":["guest","visitor","tourist","traveller"],"a":0,"why":["✓ guest house 是「民宿、小旅館」的固定複合名詞。","✗ visitor house 不是英文的組合。","✗ tourist 可以組成 tourist information，但沒有 tourist house 這個說法。","✗ traveller 是「旅人」這個人，不能組成住宿的名稱。"]},{"n":7,"type":"gaptext","q":"填入一個字：I'd like a return ______ to Taichung, please.","accept":["ticket"],"why":"return ticket 是「來回票」，single ticket 是單程票。買票時 return 是形容詞，後面必須有名詞 ticket，不能單獨說 a return to Taichung。"},{"n":8,"type":"gaptext","q":"填入一個字：The journey ______ about three hours by high-speed rail.","accept":["takes","took"],"why":"講「花多少時間」時，主詞是行程或事情就用 take。中文的「要三小時」常被直翻成 needs 或 spends——spend 的主詞一定要是人，這裡主詞是 journey，所以不行。"}],"work-and-study":[{"n":1,"type":"mc","q":"She's ______ for a job at a design company in Taipei.","opts":["applying","asking","requesting","wanting"],"a":0,"why":["✓ apply for a job 是「應徵工作」的固定搭配，介系詞是 for。","✗ ask 要說 ask for a job，語氣像直接開口要，不是正式應徵。","✗ request 是正式的「請求」，不用在應徵工作。","✗ want 是狀態動詞，一般不用進行式，也不接 for。"]},{"n":2,"type":"mc","q":"I have to ______ my essay by Friday afternoon.","opts":["hand in","hand out","hand over","hand back"],"a":0,"why":["✓ hand in 是「繳交（作業）」給老師。","✗ hand out 是「分發」給很多人，方向相反。","✗ hand over 是「移交（權力或東西）」，語氣正式且不用在作業。","✗ hand back 是「發還」，是老師改完之後做的事。"]},{"n":3,"type":"mc","q":"He got the job because he had a lot of ______ in customer service.","opts":["experience","experiences","experiment","expert"],"a":0,"why":["✓ experience 當「工作經驗」時是不可數名詞，所以 a lot of 後面不加 s。","✗ experiences 加了 s 變成「一件件的經歷」，指的是難忘的事件，不是工作資歷。","✗ experiment 是「實驗」。","✗ expert 是「專家」，是人，不能接在 a lot of 後面。"]},{"n":4,"type":"mc","q":"She's very ______ — she's never late and always finishes what she starts.","opts":["reliable","reliant","relying","reliance"],"a":0,"why":["✓ reliable 是「可靠的」，形容人值得信賴。","✗ reliant 是「依賴的」（reliant on someone），意思幾乎相反。","✗ relying 是動名詞或現在分詞，形式不對。","✗ reliance 是名詞「依賴」。"]},{"n":5,"type":"mc","q":"The company offered him a ______ of sixty thousand dollars a month.","opts":["salary","wage","fee","price"],"a":0,"why":["✓ salary 是按月或按年計的固定薪水，句中的 a month 正好指向它。","✗ wage 通常按小時或按週計算，說 an hourly wage。","✗ fee 是專業服務的收費，例如律師費、學費。","✗ price 是商品的價格，不用在薪水。"]},{"n":6,"type":"mc","q":"You'll need to ______ an interview before they decide.","opts":["attend","assist","join","participate"],"a":0,"why":["✓ attend 是「出席」，attend an interview／a meeting 是標準搭配。","✗ assist 在英文裡是「協助」，不是「出席」——這個字和法文、中文的直覺不同，是常見的誤用。","✗ join 是「加入（團體）」，不用在單一場合。","✗ participate 後面要接 in，而且指「參與活動」，語感不合面試。"]},{"n":7,"type":"gaptext","q":"填入一個字：I'm studying ______ my final exams at the moment, so I can't come out.","accept":["for"],"why":"study for an exam 是「為了考試而讀書」的固定搭配，介系詞是 for。中文說「準備考試」沒有介系詞，所以最常見的錯是直接寫 studying my final exams。"},{"n":8,"type":"gaptext","q":"填入一個字：He was ______ from his job last month because the company was losing money.","accept":["fired","sacked","dismissed"],"why":"被公司解僱用被動：was fired（美式常用）、was sacked（英式口語）或 was dismissed（正式）。空格前有 was、後面有 from，所以必須是過去分詞。"}],"free-time":[{"n":1,"type":"mc","q":"He's really ______ on football — he watches every single match.","opts":["keen","fond","interested","excited"],"a":0,"why":["✓ be keen on 是固定搭配，「對……很熱衷」，介系詞正好是句中的 on。","✗ fond 的介系詞是 of：be fond of football。","✗ interested 的介系詞是 in：be interested in football。","✗ excited 的介系詞是 about：be excited about the match。"]},{"n":2,"type":"mc","q":"She ______ up tennis when she was eight and still plays every week.","opts":["took","made","got","went"],"a":0,"why":["✓ take up a sport／hobby 是「開始學一項運動或興趣」的固定片語動詞。","✗ make up 是「編造」或「和好」。","✗ get up 是「起床」。","✗ go up 是「上升」。"]},{"n":3,"type":"mc","q":"We go ______ in Japan every winter.","opts":["skiing","ski","to ski","skis"],"a":0,"why":["✓ go + Ving 是講運動或休閒活動的固定句型：go skiing、go swimming、go shopping。","✗ ski 是原形動詞，go 後面不接原形。","✗ to ski 是不定詞，go 不接不定詞表達這個意思。","✗ skis 是名詞複數（滑雪板）或第三人稱動詞，形式不合。"]},{"n":4,"type":"mc","q":"I'd rather ______ at home tonight than go to a noisy restaurant.","opts":["stay","to stay","staying","stayed"],"a":0,"why":["✓ would rather 後面接原形動詞，而且後半句的 than go 也是原形，前後要一致。","✗ to stay 是不定詞，would rather 不接 to。","✗ staying 是動名詞，形式不合。","✗ stayed 是過去式，would rather 後面不用過去式（除非是 would rather + 主詞 + 過去式的另一種句型）。"]},{"n":5,"type":"mc","q":"The concert was completely ______ out, so we couldn't get tickets.","opts":["sold","sell","selling","sale"],"a":0,"why":["✓ be sold out 是「票賣光了」的固定被動說法，需要過去分詞 sold。","✗ sell 是原形動詞，be 動詞後面不能直接接原形。","✗ selling 是現在分詞，was selling out 語意變成「正在賣光的過程」，不自然。","✗ sale 是名詞，不能組成 be sale out。"]},{"n":6,"type":"mc","q":"Reading is a good way to ______ the time on a long journey.","opts":["pass","spend","take","use"],"a":0,"why":["✓ pass the time 是固定說法，指「打發時間」，帶著「等待中」的語感，正好符合長途旅程。","✗ spend the time 文法通，但 spend 強調「把時間用在某件事上」，搭配 a good way to 時 pass 才是道地的選擇。","✗ take the time 是「花時間仔細做某事」，語意不同。","✗ use the time 太籠統，不是這個情境的慣用搭配。"]},{"n":7,"type":"gaptext","q":"填入一個字：I've been ______ in photography ever since I got my first camera.","accept":["interested"],"why":"be interested in 是固定搭配，介系詞就是句中的 in。填 interesting 是錯的——那是形容「這件事很有趣」，主詞應該是事物不是人。"},{"n":8,"type":"gaptext","q":"填入一個字：Do you ______ any musical instruments?","accept":["play"],"why":"「會樂器」英文說 play an instrument，動詞固定是 play。中文說「會彈鋼琴」的「會」直翻成 can 或 know 都不對，這裡需要的是動詞本身。"}]};</script>
+<script>
+(function(){
+  if(typeof GDRILLS==='undefined') return;
+  var L=function(i){return String.fromCharCode(65+i)};
+  var norm=function(s){return (s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'')};
+  var esc=function(s){return String(s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})};
+
+  Object.keys(GDRILLS).forEach(function(slug){
+    var host=document.querySelector('.gd-form[data-slug="'+slug+'"]');
+    if(!host) return;
+    var items=GDRILLS[slug];
+    host.innerHTML=items.map(function(it){
+      var mark='<span class="gd-mark" aria-hidden="true"></span>';
+      var why=Array.isArray(it.why)
+        ? it.why.map(function(w,i){return '<p><b>'+L(i)+'：</b>'+esc(w)+'</p>'}).join('')
+        : '<p>'+esc(it.why)+'</p>';
+      var head='<p class="gd-q"><span class="gd-n">'+it.n+'.</span>'+esc(it.q)+'</p>';
+      if(it.type==='mc'){
+        var o=it.opts.map(function(t,i){
+          return '<label class="gd-opt"><input type="radio" name="'+slug+'_'+it.n+'" value="'+i+'">'+
+                 '<span><b>'+L(i)+'</b>　'+esc(t)+'</span></label>'}).join('');
+        return '<div class="gd-item" data-k="'+slug+'_'+it.n+'">'+head+
+               '<div class="gd-opts">'+o+'</div>'+mark+'<div class="gd-why">'+why+'</div></div>';
+      }
+      if(it.type==='keyword'){
+        return '<div class="gd-item" data-k="'+slug+'_'+it.n+'">'+head+
+          '<span class="gd-key">'+esc(it.keyword)+'</span>'+
+          '<p class="gd-q" style="margin:0 0 8px">'+esc(it.stem)+'</p>'+
+          '<input class="gd-in wide" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 '+it.n+' 題答案">'+
+          mark+'<div class="gd-why">'+why+'</div></div>';
+      }
+      return '<div class="gd-item" data-k="'+slug+'_'+it.n+'">'+head+
+        '<input class="gd-in" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 '+it.n+' 題答案">'+
+        mark+'<div class="gd-why">'+why+'</div></div>';
+    }).join('');
+
+    host.addEventListener('change',function(e){
+      var box=e.target.closest('.gd-item'); if(!box) return;
+      box.querySelectorAll('.gd-opt').forEach(function(o){
+        o.classList.toggle('sel',o.querySelector('input').checked)});
+    });
+
+    var wrap=host.closest('.gd-body');
+    wrap.querySelector('[data-act="check"]').addEventListener('click',function(){
+      var got=0,total=0;
+      items.forEach(function(it){
+        var m=it.marks||1; total+=m;
+        var box=host.querySelector('[data-k="'+slug+'_'+it.n+'"]');
+        var mark=box.querySelector('.gd-mark');
+        if(it.accept){
+          var inp=box.querySelector('input');
+          var ok=it.accept.map(norm).indexOf(norm(inp.value))>-1;
+          inp.classList.toggle('right',ok);
+          inp.classList.toggle('wrong',!ok&&inp.value.trim()!=='');
+          mark.textContent=ok?'✓':'✗（正確：'+it.accept[0]+'）';
+          mark.className='gd-mark '+(ok?'ok':'no');
+          if(ok)got+=m;
+        }else{
+          var sel=box.querySelector('input:checked');
+          box.querySelectorAll('.gd-opt').forEach(function(o,i){
+            o.classList.remove('right','wrong');
+            if(i===it.a)o.classList.add('right');
+            else if(o.querySelector('input').checked)o.classList.add('wrong')});
+          var ok2=sel&&+sel.value===it.a;
+          mark.textContent=ok2?'✓':(sel?'✗':'—');
+          mark.className='gd-mark '+(ok2?'ok':'no');
+          if(ok2)got+=m;
+        }
+      });
+      var sc=wrap.querySelector('.gd-score');
+      sc.textContent='得分 '+got+' / '+total; sc.classList.add('show');
+      host.classList.add('show-why');
+    });
+    wrap.querySelector('[data-act="why"]').addEventListener('click',function(){
+      host.classList.toggle('show-why')});
+    wrap.querySelector('[data-act="reset"]').addEventListener('click',function(){
+      host.classList.remove('show-why');
+      host.querySelectorAll('input[type=radio]').forEach(function(r){r.checked=false});
+      host.querySelectorAll('input[type=text]').forEach(function(t){t.value='';t.className=t.className.replace(/\s*(right|wrong)/g,'')});
+      host.querySelectorAll('.gd-opt').forEach(function(o){o.classList.remove('sel','right','wrong')});
+      host.querySelectorAll('.gd-mark').forEach(function(m){m.textContent='';m.className='gd-mark'});
+      var sc=wrap.querySelector('.gd-score'); sc.classList.remove('show'); sc.textContent='';
+    });
+  });
+})();
+</script>
+<script src="/assets/app.js?v=11"></script>
+</body>
+</html>
