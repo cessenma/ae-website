@@ -86,6 +86,14 @@
 .prx-opt.sel{border-color:var(--blue);background:var(--light-blue)}
 .prx-opt.right{border-color:var(--green);background:rgba(6,199,85,.08)}
 .prx-opt.wrong{border-color:#e5484d;background:rgba(229,72,77,.07)}
+.prx-item .pic-note{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:12.5px;color:#8b9bb0;margin:8px 0 10px}
+.prx-opts.pics{flex-direction:row;flex-wrap:wrap;gap:10px}
+.prx-opts.pics .prx-opt{flex:1 1 190px;align-items:stretch;padding:0;border-style:dashed}
+.prx-opts.pics .prx-opt input{margin:12px 0 0 12px}
+.pic-b{display:flex;flex-direction:column;gap:7px;padding:12px 14px 14px;width:100%}
+.pic-b>b{font-family:'Baloo 2',sans-serif;font-size:13px;color:var(--blue)}
+.pic-d{font-size:14.5px;line-height:1.6;color:#4b5563}
+@media(max-width:560px){.prx-opts.pics{flex-direction:column}.prx-opts.pics .prx-opt{flex:1 1 auto}}
 .prx-gapin{font:inherit;font-size:16px;padding:8px 12px;border:2px solid #e6ebf2;border-radius:10px;width:180px;max-width:60vw}
 .prx-gapin.wide{width:340px}
 .prx-gapin.right{border-color:var(--green);background:rgba(6,199,85,.07)}
@@ -145,7 +153,7 @@
 
       <p class="lnote"><b>關於這些錄音</b>　音檔由電腦語音合成（macOS 內建語音），每個角色用不同的聲音、語速依等級調整，內容與停頓完全依照官方格式，包含官方規定的「播放兩次」。要誠實說明兩件事：合成語音不等於真人錄音的自然度，而且這台機器只有女聲版本的澳洲與愛爾蘭腔，所以男性角色的口音多樣性比正式考試窄——正式考試會出現英、美、澳、愛爾蘭等不同口音的真人錄音。<strong>先自己聽兩次再打開逐字稿</strong>，效果差很多。</p>
 
-      <div class="lrec"><div class="lrec-h"><span class="ln">錄音 1</span><span class="lq">第 1–6 題</span><span class="ldur">1:39　含重複播放</span></div><audio controls preload="none"><source src="/assets/audio/pet/listening-part3/r1.m4a" type="audio/mp4">你的瀏覽器不支援音訊播放，請直接下載 <a href="/assets/audio/pet/listening-part3/r1.m4a">音檔</a>。</audio><details class="ltrans"><summary>看逐字稿（先自己聽兩次再打開）</summary><div class="ltbody"><p class="nar"><b>Narrator</b>You will hear a recorded telephone message about a summer camp. Look at the notes below. For questions 1 to 6, complete the notes with a word or a number. You will hear the recording twice.</p><p><b>Woman</b>Hello, and thanks for calling Mountain Explorers Summer Camp! Here's all the information you need to book a place this year. This summer, our adventure camp is being held up at Lion's Head Mountain — that's L, I, O, N, apostrophe S, Head Mountain — instead of the riverside site we used last year, since the new site has much better hiking trails. Your group leader for the week will be Mr Weaver — that's spelled W, E, A, V, E, R. He's been running our hiking trips for six years now, so you're in safe hands. The camp usually runs for four days, but this summer we've extended it, so it'll now run for five days, from Monday to Friday. Now, about the price — it's three thousand two hundred NT dollars per camper, and that includes every meal during the trip. We also used to give out a free water bottle, but this year, every camper gets a free cap instead, with the camp logo on it. You won't need to bring a tent, since we provide those, but please do bring your own sleeping bag, as we don't have enough spares for everyone. Finally, spaces are limited, so please make sure you book online before the third of July — after that date, we can't guarantee a place. Thanks again for calling, and we hope to see you on the mountain!</p></div></details></div>
+      <div class="lrec"><div class="lrec-h"><span class="ln">錄音 1</span><span class="lq">第 1–6 題</span><span class="ldur">1:39　含重複播放</span></div><audio controls preload="metadata"><source src="/assets/audio/pet/listening-part3/r1.m4a" type="audio/mp4">你的瀏覽器不支援音訊播放，請直接下載 <a href="/assets/audio/pet/listening-part3/r1.m4a">音檔</a>。</audio><details class="ltrans"><summary>看逐字稿（先自己聽兩次再打開）</summary><div class="ltbody"><p class="nar"><b>Narrator</b>You will hear a recorded telephone message about a summer camp. Look at the notes below. For questions 1 to 6, complete the notes with a word or a number. You will hear the recording twice.</p><p><b>Woman</b>Hello, and thanks for calling Mountain Explorers Summer Camp! Here's all the information you need to book a place this year. This summer, our adventure camp is being held up at Lion's Head Mountain — that's L, I, O, N, apostrophe S, Head Mountain — instead of the riverside site we used last year, since the new site has much better hiking trails. Your group leader for the week will be Mr Weaver — that's spelled W, E, A, V, E, R. He's been running our hiking trips for six years now, so you're in safe hands. The camp usually runs for four days, but this summer we've extended it, so it'll now run for five days, from Monday to Friday. Now, about the price — it's three thousand two hundred NT dollars per camper, and that includes every meal during the trip. We also used to give out a free water bottle, but this year, every camper gets a free cap instead, with the camp logo on it. You won't need to bring a tent, since we provide those, but please do bring your own sleeping bag, as we don't have enough spares for everyone. Finally, spaces are limited, so please make sure you book online before the third of July — after that date, we can't guarantee a place. Thanks again for calling, and we hope to see you on the mountain!</p></div></details></div>
       <form class="prx-form" id="prx-0" novalidate></form>
 
       <div class="prx-bar">
@@ -170,7 +178,7 @@
 </section>
 
 <script>
-const PRX = { part:3, sets:[{"setId": "A", "items": [{"n": 1, "type": "gaptext", "q": "第 (1) 格", "accept": ["Lion's Head Mountain", "Lion's Head"], "why": "地點是 Lion's Head Mountain,錄音清楚拼出 L-I-O-N 加上撇號 S,這是聽力最容易扣分的拼字陷阱;去年用過的河邊營地只是提到但已被取代的干擾資訊,不是今年的答案。"}, {"n": 2, "type": "gaptext", "q": "第 (2) 格", "accept": ["Weaver"], "why": "隊輔的姓氏 Weaver 在錄音中有逐字母拼出 W-E-A-V-E-R,必須完全拼對才給分,這是 Part 3 最常見的拼字陷阱;筆記上已印出 'Mr',答案只需填姓氏。"}, {"n": 3, "type": "gaptext", "q": "第 (3) 格", "accept": ["5", "five"], "why": "營隊天數原本是 four days,但錄音接著說『this summer we've extended it, so it'll now run for five days』,是典型的說話者改口陷阱,答案要聽到最後更新的數字,不能只聽到前半句就作答。"}, {"n": 4, "type": "gaptext", "q": "第 (4) 格", "accept": ["cap"], "why": "贈品原本是 water bottle,但錄音後面說『this year, every camper gets a free cap instead』,同樣是說話者改口的陷阱,答案是最新提到的 cap,不是先講的 water bottle。"}, {"n": 5, "type": "gaptext", "q": "第 (5) 格", "accept": ["sleeping bag"], "why": "錄音明確說不用帶帳篷(tent 由主辦單位提供),但要求自備 sleeping bag,tent 是反向陷阱,真正要帶的是睡袋。"}, {"n": 6, "type": "gaptext", "q": "第 (6) 格", "accept": ["3rd July", "third of July", "July 3rd", "3 July", "the 3rd of July"], "why": "報名截止日是 the third of July,日期類答案要注意數字與月份的正確順序,可接受 3rd July / July 3rd 等常見書寫方式,但月份與日期不可顛倒或寫錯。"}]}] };
+const PRX = { part:3, sets:[{"setId": "r1", "items": [{"n": 1, "type": "gaptext", "q": "第 (1) 格", "accept": ["Lion's Head Mountain", "Lion's Head"], "why": "地點是 Lion's Head Mountain,錄音清楚拼出 L-I-O-N 加上撇號 S,這是聽力最容易扣分的拼字陷阱;去年用過的河邊營地只是提到但已被取代的干擾資訊,不是今年的答案。"}, {"n": 2, "type": "gaptext", "q": "第 (2) 格", "accept": ["Weaver"], "why": "隊輔的姓氏 Weaver 在錄音中有逐字母拼出 W-E-A-V-E-R,必須完全拼對才給分,這是 Part 3 最常見的拼字陷阱;筆記上已印出 'Mr',答案只需填姓氏。"}, {"n": 3, "type": "gaptext", "q": "第 (3) 格", "accept": ["5", "five"], "why": "營隊天數原本是 four days,但錄音接著說『this summer we've extended it, so it'll now run for five days』,是典型的說話者改口陷阱,答案要聽到最後更新的數字,不能只聽到前半句就作答。"}, {"n": 4, "type": "gaptext", "q": "第 (4) 格", "accept": ["cap"], "why": "贈品原本是 water bottle,但錄音後面說『this year, every camper gets a free cap instead』,同樣是說話者改口的陷阱,答案是最新提到的 cap,不是先講的 water bottle。"}, {"n": 5, "type": "gaptext", "q": "第 (5) 格", "accept": ["sleeping bag"], "why": "錄音明確說不用帶帳篷(tent 由主辦單位提供),但要求自備 sleeping bag,tent 是反向陷阱,真正要帶的是睡袋。"}, {"n": 6, "type": "gaptext", "q": "第 (6) 格", "accept": ["3rd July", "third of July", "July 3rd", "3 July", "the 3rd of July"], "why": "報名截止日是 the third of July,日期類答案要注意數字與月份的正確順序,可接受 3rd July / July 3rd 等常見書寫方式,但月份與日期不可顛倒或寫錯。"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
   const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
@@ -200,6 +208,15 @@ const PRX = { part:3, sets:[{"setId": "A", "items": [{"n": 1, "type": "gaptext",
         <p class="prx-stem">${esc(it.stem).replace(/_{3,}/,'<b style="color:var(--blue)">　______　</b>')}</p>
         <input class="prx-gapin wide" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 ${it.n} 題答案" placeholder="${it.maxWords?('最多 '+it.maxWords+' 個字'):''}">${mk}
         <div class="prx-why">${whyHTML(it)}</div></div>`;
+    }
+    if(it.pictureOptions){
+      const po=it.opts.map((o,i)=>
+        `<label class="prx-opt pic"><input type="radio" name="${key}" value="${i}">`+
+        `<span class="pic-b"><b>${L(i)}</b><span class="pic-d">${esc(String(o))}</span></span></label>`).join('');
+      return `<fieldset class="prx-item" data-k="${key}"><legend>${it.n}. ${it.q||''}</legend>
+        <p class="pic-note">正式考試這裡是三張圖，選出符合的一張。我們用文字描述代替圖片。</p>
+        <div class="prx-opts pics">${po}</div><span class="prx-mark" aria-hidden="true"></span>
+        <div class="prx-why">${whyHTML(it)}</div></fieldset>`;
     }
     const bare=it.opts.every(o=>/^[A-H]$/.test(String(o).trim()));
     const opts=it.opts.map((o,i)=>{
