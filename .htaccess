@@ -107,3 +107,26 @@ AddOutputFilterByType DEFLATE text/html text/css application/javascript text/xml
 
 # Serve WebP with the correct MIME type
 AddType image/webp .webp
+
+# Listening audio. LiteSpeed has no .m4a entry in its MIME table, so it served
+# these as text/plain — and because the platform also sends
+# x-content-type-options: nosniff, every browser refused to play them. Declaring
+# the type here is what actually fixes playback; a Cloudflare Pages _headers
+# file does nothing on this host.
+AddType audio/mp4 .m4a
+AddType audio/mpeg .mp3
+AddType audio/ogg .ogg
+AddType audio/webm .weba
+
+<IfModule mod_expires.c>
+ExpiresByType audio/mp4 "access plus 1 year"
+ExpiresByType audio/mpeg "access plus 1 year"
+</IfModule>
+
+# Private practice-exam delivery: keep it out of every index, and never cache.
+# robots.txt can be ignored by a crawler; this header cannot.
+SetEnvIf Request_URI "^/pack-9rvvw6p3nnmls4/" AE_PRIVATE=1
+<IfModule mod_headers.c>
+Header set X-Robots-Tag "noindex, nofollow, noarchive" env=AE_PRIVATE
+Header set Cache-Control "no-store" env=AE_PRIVATE
+</IfModule>

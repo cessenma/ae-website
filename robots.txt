@@ -3,7 +3,7 @@ Allow: /
 
 # Private delivery page for the practice-exam packs.
 # Handed out by hand over LINE; never linked from the site.
-Disallow: /pack-x5jhfyn0oooljh/
+Disallow: /pack-9rvvw6p3nnmls4/
 
 Sitemap: https://americanenglish.com.tw/sitemap.xml
 
