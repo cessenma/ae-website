@@ -137,6 +137,9 @@
 .ltbody p.nar b{color:#8b9bb0}
 .lnote{font-size:13.8px;line-height:1.75;color:#8b9bb0;background:#F4FAFF;border:1px dashed rgba(28,176,246,.35);border-radius:14px;padding:13px 17px;margin:16px 0 0}
 .lnote b{color:var(--navy)}
+.stimulus.tasksheet{border-color:rgba(255,200,40,.55);background:#FFFDF5}
+.stimulus.tasksheet h4{color:#8a5f00}
+.stimulus.tasksheet .ts-note{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:12.5px;color:#8a5f00;margin-top:12px;padding-top:10px;border-top:1px dashed rgba(255,200,40,.6)}
 @media print{.lrec audio{display:none}.ltrans{display:block}.ltbody{display:block!important}}
 </style>
 
@@ -153,6 +156,7 @@
 
       <p class="lnote"><b>關於這些錄音</b>　音檔為本地生成的神經網路合成語音，每個角色用不同的聲音、涵蓋多種英語口音，語速依等級調整，內容與停頓完全依照官方格式，包含官方規定的「播放兩次」。要誠實說一件事：合成語音再自然，也不等於真人錄音——正式考試放的是真人錄的。<strong>先自己聽兩次再打開逐字稿</strong>，效果差很多。</p>
 
+      <div class="stimulus tasksheet"><h4>Party Food List</h4><p>PARTY FOOD LIST<br>A Fruit salad<br>B Sandwiches<br>C Chocolate cake<br>D Fried noodles<br>E Cookies<br>F Pizza<br>G Dumplings<br>H Ice cream</p><p class="ts-note">先看過這張表再按播放——正式考試也會給你時間讀題。</p></div>
       <div class="lrec"><div class="lrec-h"><span class="ln">錄音 1</span><span class="lq">第 1–5 題</span><span class="ldur">1:40　含重複播放</span></div><audio controls preload="metadata"><source src="/assets/audio/ket/listening-part5/r1.m4a" type="audio/mp4">你的瀏覽器不支援音訊播放，請直接下載 <a href="/assets/audio/ket/listening-part5/r1.m4a">音檔</a>。</audio><details class="ltrans"><summary>看逐字稿（先自己聽兩次再打開）</summary><div class="ltbody"><p class="nar"><b>Narrator</b>You will hear two friends, Oliver and Zoe, talking about food for a party. For questions 1 to 5, match each person to the food they are bringing. You will not need all the letters.</p><p><b>Man</b>Hey Zoe, do you know what everyone's bringing to Chloe's party on Saturday?</p><p><b>Woman</b>I think so. Daniel said he's bringing pizza — his dad owns a pizza restaurant, so that makes sense.</p><p><b>Man</b>Nice! What about Ellie? Is she still doing the chocolate cake?</p><p><b>Woman</b>Actually, she changed her mind — her mum's making dumplings instead, because Ellie's not very good at baking!</p><p><b>Man</b>Ha, fair enough. And Tom? I heard he wanted to bring pizza too, but Daniel already said he would.</p><p><b>Woman</b>Right, so Tom's bringing sandwiches instead — he says he makes really good ones.</p><p><b>Man</b>What about Yuki? She loves sweet things.</p><p><b>Woman</b>She's bringing cookies — she baked them last night.</p><p><b>Man</b>And you? What are you bringing?</p><p><b>Woman</b>Me? I'm bringing fruit salad. It's the healthiest thing on the table, probably!</p><p class="nar"><b>Narrator</b>Now listen again.</p><p><b>Man</b>Hey Zoe, do you know what everyone's bringing to Chloe's party on Saturday?</p><p><b>Woman</b>I think so. Daniel said he's bringing pizza — his dad owns a pizza restaurant, so that makes sense.</p><p><b>Man</b>Nice! What about Ellie? Is she still doing the chocolate cake?</p><p><b>Woman</b>Actually, she changed her mind — her mum's making dumplings instead, because Ellie's not very good at baking!</p><p><b>Man</b>Ha, fair enough. And Tom? I heard he wanted to bring pizza too, but Daniel already said he would.</p><p><b>Woman</b>Right, so Tom's bringing sandwiches instead — he says he makes really good ones.</p><p><b>Man</b>What about Yuki? She loves sweet things.</p><p><b>Woman</b>She's bringing cookies — she baked them last night.</p><p><b>Man</b>And you? What are you bringing?</p><p><b>Woman</b>Me? I'm bringing fruit salad. It's the healthiest thing on the table, probably!</p></div></details></div>
       <form class="prx-form" id="prx-0" novalidate></form>
 
@@ -185,7 +189,7 @@ const PRX = { part:5, sets:[{"setId": "r1", "items": [{"n": 1, "type": "match", 
   const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
-      ? it.why.map((w,i)=>`<p><b>${L(i)}：</b>${w}</p>`).join('')
+      ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')
       : `<p><b>解析：</b>${it.why}</p>`;
 
   function render(it,key){
@@ -213,7 +217,7 @@ const PRX = { part:5, sets:[{"setId": "r1", "items": [{"n": 1, "type": "match", 
     if(it.pictureOptions){
       const po=it.opts.map((o,i)=>
         `<label class="prx-opt pic"><input type="radio" name="${key}" value="${i}">`+
-        `<span class="pic-b"><b>${L(i)}</b><span class="pic-d">${esc(String(o))}</span></span></label>`).join('');
+        `<span class="pic-b"><b class="notranslate" translate="no">${L(i)}</b><span class="pic-d">${esc(String(o))}</span></span></label>`).join('');
       return `<fieldset class="prx-item" data-k="${key}"><legend>${it.n}. ${it.q||''}</legend>
         <p class="pic-note">正式考試這裡是三張圖，選出符合的一張。我們用文字描述代替圖片。</p>
         <div class="prx-opts pics">${po}</div><span class="prx-mark" aria-hidden="true"></span>
@@ -223,7 +227,7 @@ const PRX = { part:5, sets:[{"setId": "r1", "items": [{"n": 1, "type": "match", 
     const opts=it.opts.map((o,i)=>{
       const txt=bare?'':String(o).replace(/^[A-H][.)]?\s+/,'');
       return `<label class="prx-opt"><input type="radio" name="${key}" value="${i}">`+
-             `<span><b>${L(i)}</b>${txt?'　'+txt:''}</span></label>`;
+             `<span><b class="notranslate" translate="no">${L(i)}</b>${txt?'　'+txt:''}</span></label>`;
     }).join('');
     return `<fieldset class="prx-item" data-k="${key}"><legend>${it.n}. ${it.q||''}</legend>
       <div class="prx-opts${bare?' lettersonly':''}">${opts}</div><span class="prx-mark" aria-hidden="true"></span>

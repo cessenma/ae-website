@@ -137,6 +137,9 @@
 .ltbody p.nar b{color:#8b9bb0}
 .lnote{font-size:13.8px;line-height:1.75;color:#8b9bb0;background:#F4FAFF;border:1px dashed rgba(28,176,246,.35);border-radius:14px;padding:13px 17px;margin:16px 0 0}
 .lnote b{color:var(--navy)}
+.stimulus.tasksheet{border-color:rgba(255,200,40,.55);background:#FFFDF5}
+.stimulus.tasksheet h4{color:#8a5f00}
+.stimulus.tasksheet .ts-note{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:12.5px;color:#8a5f00;margin-top:12px;padding-top:10px;border-top:1px dashed rgba(255,200,40,.6)}
 @media print{.lrec audio{display:none}.ltrans{display:block}.ltbody{display:block!important}}
 </style>
 
@@ -198,7 +201,7 @@ const PRX = { part:1, sets:[{"setId": "r1", "items": [{"n": 1, "type": "mc", "q"
   const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
-      ? it.why.map((w,i)=>`<p><b>${L(i)}：</b>${w}</p>`).join('')
+      ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')
       : `<p><b>解析：</b>${it.why}</p>`;
 
   function render(it,key){
@@ -226,7 +229,7 @@ const PRX = { part:1, sets:[{"setId": "r1", "items": [{"n": 1, "type": "mc", "q"
     if(it.pictureOptions){
       const po=it.opts.map((o,i)=>
         `<label class="prx-opt pic"><input type="radio" name="${key}" value="${i}">`+
-        `<span class="pic-b"><b>${L(i)}</b><span class="pic-d">${esc(String(o))}</span></span></label>`).join('');
+        `<span class="pic-b"><b class="notranslate" translate="no">${L(i)}</b><span class="pic-d">${esc(String(o))}</span></span></label>`).join('');
       return `<fieldset class="prx-item" data-k="${key}"><legend>${it.n}. ${it.q||''}</legend>
         <p class="pic-note">正式考試這裡是三張圖，選出符合的一張。我們用文字描述代替圖片。</p>
         <div class="prx-opts pics">${po}</div><span class="prx-mark" aria-hidden="true"></span>
@@ -236,7 +239,7 @@ const PRX = { part:1, sets:[{"setId": "r1", "items": [{"n": 1, "type": "mc", "q"
     const opts=it.opts.map((o,i)=>{
       const txt=bare?'':String(o).replace(/^[A-H][.)]?\s+/,'');
       return `<label class="prx-opt"><input type="radio" name="${key}" value="${i}">`+
-             `<span><b>${L(i)}</b>${txt?'　'+txt:''}</span></label>`;
+             `<span><b class="notranslate" translate="no">${L(i)}</b>${txt?'　'+txt:''}</span></label>`;
     }).join('');
     return `<fieldset class="prx-item" data-k="${key}"><legend>${it.n}. ${it.q||''}</legend>
       <div class="prx-opts${bare?' lettersonly':''}">${opts}</div><span class="prx-mark" aria-hidden="true"></span>

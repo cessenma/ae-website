@@ -164,7 +164,7 @@ const PRX = { part:3, sets:[{"setId": "A", "items": [{"n": 1, "ref": "article1",
   const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
-      ? it.why.map((w,i)=>`<p><b>${L(i)}：</b>${w}</p>`).join('')
+      ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')
       : `<p><b>解析：</b>${it.why}</p>`;
 
   function render(it,key){
@@ -192,7 +192,7 @@ const PRX = { part:3, sets:[{"setId": "A", "items": [{"n": 1, "ref": "article1",
     if(it.pictureOptions){
       const po=it.opts.map((o,i)=>
         `<label class="prx-opt pic"><input type="radio" name="${key}" value="${i}">`+
-        `<span class="pic-b"><b>${L(i)}</b><span class="pic-d">${esc(String(o))}</span></span></label>`).join('');
+        `<span class="pic-b"><b class="notranslate" translate="no">${L(i)}</b><span class="pic-d">${esc(String(o))}</span></span></label>`).join('');
       return `<fieldset class="prx-item" data-k="${key}"><legend>${it.n}. ${it.q||''}</legend>
         <p class="pic-note">正式考試這裡是三張圖，選出符合的一張。我們用文字描述代替圖片。</p>
         <div class="prx-opts pics">${po}</div><span class="prx-mark" aria-hidden="true"></span>
@@ -202,7 +202,7 @@ const PRX = { part:3, sets:[{"setId": "A", "items": [{"n": 1, "ref": "article1",
     const opts=it.opts.map((o,i)=>{
       const txt=bare?'':String(o).replace(/^[A-H][.)]?\s+/,'');
       return `<label class="prx-opt"><input type="radio" name="${key}" value="${i}">`+
-             `<span><b>${L(i)}</b>${txt?'　'+txt:''}</span></label>`;
+             `<span><b class="notranslate" translate="no">${L(i)}</b>${txt?'　'+txt:''}</span></label>`;
     }).join('');
     return `<fieldset class="prx-item" data-k="${key}"><legend>${it.n}. ${it.q||''}</legend>
       <div class="prx-opts${bare?' lettersonly':''}">${opts}</div><span class="prx-mark" aria-hidden="true"></span>
