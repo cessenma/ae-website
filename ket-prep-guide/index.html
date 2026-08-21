@@ -84,10 +84,15 @@
 </div></nav>
 
 <style id="hubcss">
-.pgroup{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:34px 0 0}
+.pgroup{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:26px 0 0}
+.pgroup h3{position:relative;padding-left:16px}
+.pgroup h3::before{content:'';position:absolute;left:0;top:.42em;width:9px;height:9px;border-radius:50%;background:var(--c)}
 .pgroup h3{font-size:21px;margin:0}
 .pgroup .pmeta{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:13px;color:#8b9bb0}
-.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(214px,1fr));gap:14px;margin-top:16px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(206px,1fr));gap:12px;margin-top:13px}
+.pcard.soon{opacity:.6;border-style:dashed;box-shadow:none;cursor:default}
+.pcard.soon:hover{transform:none;border-color:rgba(26,39,82,.14);box-shadow:none}
+.pcard.soon .pgo{color:#9aa7b6}
 .pcard{display:flex;flex-direction:column;gap:3px;background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:20px;padding:17px 18px 15px;text-decoration:none;box-shadow:0 4px 0 rgba(26,39,82,.06);transition:transform .12s,border-color .12s,box-shadow .12s}
 .pcard:hover{transform:translateY(-3px);border-color:var(--c);box-shadow:0 8px 0 var(--cs)}
 .pcard .pn{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:11.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--c)}
@@ -128,17 +133,30 @@
   <div class="wrap">
     <div class="center stack reveal"><span class="eyebrow eyebrow-green">原創練習題</span><h2>KET 每一大題，<em>都有原創練習題</em></h2></div>
     <p class="body center reveal" style="max-width:720px;margin-top:14px">依官方題型格式編寫，做完立刻對答案、每一題都有中文解析——解析會說明每個選項為什麼對、為什麼錯，這是課堂上老師做的事。全部免費，不用註冊。</p>
-    <div class="pgroup reveal"><h3>Reading and Writing 閱讀與寫作</h3><span class="pmeta">7 大題・30 題選擇填空＋2 篇寫作</span></div>
+    <div class="pgroup reveal" style="--c:#1CB0F6"><h3>Reading and Writing 閱讀與寫作</h3><span class="pmeta">7 大題・30 題選擇填空＋2 篇寫作</span></div>
     <div class="pgrid reveal">
       <a class="pcard" href="/ket-rw-practice-part1/" style="--c:#1CB0F6;--cs:rgba(28,176,246,.28)"><span class="pn">Part 1</span><span class="pt">三選一短文理解</span><span class="pm">6 題 · 6 分</span><span class="pgo">開始練習 →</span></a>
-      <a class="pcard" href="/ket-rw-practice-part2/" style="--c:#CE82FF;--cs:rgba(206,130,255,.30)"><span class="pn">Part 2</span><span class="pt">配對題</span><span class="pm">7 題 · 7 分</span><span class="pgo">開始練習 →</span></a>
-      <a class="pcard" href="/ket-rw-practice-part3/" style="--c:#06C755;--cs:rgba(6,199,85,.26)"><span class="pn">Part 3</span><span class="pt">長文閱讀</span><span class="pm">5 題 · 5 分</span><span class="pgo">開始練習 →</span></a>
-      <a class="pcard" href="/ket-rw-practice-part4/" style="--c:#F0997B;--cs:rgba(240,153,123,.36)"><span class="pn">Part 4</span><span class="pt">選字填空</span><span class="pm">6 題 · 6 分　字彙</span><span class="pgo">開始練習 →</span></a>
-      <a class="pcard" href="/ket-rw-practice-part5/" style="--c:#4C6FE7;--cs:rgba(76,111,231,.24)"><span class="pn">Part 5</span><span class="pt">開放填空</span><span class="pm">6 題 · 6 分　文法</span><span class="pgo">開始練習 →</span></a>
-      <a class="pcard" href="/ket-rw-practice-part6/" style="--c:#EC6F9E;--cs:rgba(236,111,158,.28)"><span class="pn">Part 6</span><span class="pt">寫作：短訊息</span><span class="pm">25 字以上 · 15 分</span><span class="pgo">開始練習 →</span></a>
+      <a class="pcard" href="/ket-rw-practice-part2/" style="--c:#1CB0F6;--cs:rgba(28,176,246,.28)"><span class="pn">Part 2</span><span class="pt">配對題</span><span class="pm">7 題 · 7 分</span><span class="pgo">開始練習 →</span></a>
+      <a class="pcard" href="/ket-rw-practice-part3/" style="--c:#1CB0F6;--cs:rgba(28,176,246,.28)"><span class="pn">Part 3</span><span class="pt">長文閱讀</span><span class="pm">5 題 · 5 分</span><span class="pgo">開始練習 →</span></a>
+      <a class="pcard" href="/ket-rw-practice-part4/" style="--c:#1CB0F6;--cs:rgba(28,176,246,.28)"><span class="pn">Part 4</span><span class="pt">選字填空</span><span class="pm">6 題 · 6 分　字彙</span><span class="pgo">開始練習 →</span></a>
+      <a class="pcard" href="/ket-rw-practice-part5/" style="--c:#1CB0F6;--cs:rgba(28,176,246,.28)"><span class="pn">Part 5</span><span class="pt">開放填空</span><span class="pm">6 題 · 6 分　文法</span><span class="pgo">開始練習 →</span></a>
+      <a class="pcard" href="/ket-rw-practice-part6/" style="--c:#1CB0F6;--cs:rgba(28,176,246,.28)"><span class="pn">Part 6</span><span class="pt">寫作：短訊息</span><span class="pm">25 字以上 · 15 分</span><span class="pgo">開始練習 →</span></a>
       <a class="pcard" href="/ket-rw-practice-part7/" style="--c:#1CB0F6;--cs:rgba(28,176,246,.28)"><span class="pn">Part 7</span><span class="pt">寫作：看圖說故事</span><span class="pm">35 字以上 · 15 分</span><span class="pgo">開始練習 →</span></a>
     </div>
-    <p class="psoon reveal"><b>Listening（5 大題）與 Speaking（2 大題）</b>的原創題目與逐字稿都已經編寫完成，錄音與上線作業進行中。想先練聽力和口說的，可以先用官方免費樣卷——用法整理在〈<a href='/cambridge-practice-tests/'>官方樣卷怎麼下載、怎麼用</a>〉。</p>
+    <div class="pgroup reveal" style="--c:#06C755"><h3>Listening 聽力</h3><span class="pmeta">5 大題・25 題原創題目，錄音製作中</span></div>
+    <div class="pgrid reveal">
+      <span class="pcard soon" style="--c:#06C755;--cs:rgba(6,199,85,.26)"><span class="pn">Part 1</span><span class="pt">看圖三選一</span><span class="pm">5 題 · 5 分</span><span class="pgo">錄音與上線製作中</span></span>
+      <span class="pcard soon" style="--c:#06C755;--cs:rgba(6,199,85,.26)"><span class="pn">Part 2</span><span class="pt">筆記填空</span><span class="pm">5 題 · 5 分</span><span class="pgo">錄音與上線製作中</span></span>
+      <span class="pcard soon" style="--c:#06C755;--cs:rgba(6,199,85,.26)"><span class="pn">Part 3</span><span class="pt">長對話三選一</span><span class="pm">5 題 · 5 分</span><span class="pgo">錄音與上線製作中</span></span>
+      <span class="pcard soon" style="--c:#06C755;--cs:rgba(6,199,85,.26)"><span class="pn">Part 4</span><span class="pt">短文三選一</span><span class="pm">5 題 · 5 分</span><span class="pgo">錄音與上線製作中</span></span>
+      <span class="pcard soon" style="--c:#06C755;--cs:rgba(6,199,85,.26)"><span class="pn">Part 5</span><span class="pt">配對題</span><span class="pm">5 題 · 5 分</span><span class="pgo">錄音與上線製作中</span></span>
+    </div>
+    <div class="pgroup reveal" style="--c:#F0997B"><h3>Speaking 口說</h3><span class="pmeta">2 大題・完整模擬對話逐字稿，中英對照</span></div>
+    <div class="pgrid reveal">
+      <a class="pcard" href="/ket-speaking-practice/#part1" style="--c:#F0997B;--cs:rgba(240,153,123,.36)"><span class="pn">Part 1</span><span class="pt">考官問答</span><span class="pm">3–4 分鐘</span><span class="pgo">開始練習 →</span></a>
+      <a class="pcard" href="/ket-speaking-practice/#part2" style="--c:#F0997B;--cs:rgba(240,153,123,.36)"><span class="pn">Part 2</span><span class="pt">兩人看圖討論</span><span class="pm">5–6 分鐘</span><span class="pgo">開始練習 →</span></a>
+    </div>
+    <p class="psoon reveal">灰底虛線的部分，題目、範文與逐字稿都已經寫好了，正在製作錄音與上線。想先練這幾卷，可以用官方免費樣卷——用法整理在〈<a href='/cambridge-practice-tests/'>官方樣卷怎麼下載、怎麼用</a>〉。</p>
   </div>
 </section>
 
