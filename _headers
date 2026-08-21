@@ -3,3 +3,8 @@
 /assets/audio/*
   Content-Type: audio/mp4
   Cache-Control: public, max-age=31536000, immutable
+
+# Private pack delivery. robots.txt can be ignored; this header cannot.
+/pack-x5jhfyn0oooljh/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-store

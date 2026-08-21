@@ -1,0 +1,137 @@
+/* ============================================================
+   AE pronunciation cluster — "sound made visible"
+   Namespace: .pr-*  (loads after styles.css; only additive)
+   Design rule: DURATION IS WIDTH. Stressed = long bar, unstressed
+   = short bar, everywhere on every page in this cluster.
+   ============================================================ */
+
+/* ---- shared tokens (inherit site palette) ---- */
+.pr-ipa{font-family:'DM Serif Display','Doulos SIL','Charis SIL',Georgia,serif;font-style:italic;letter-spacing:0}
+
+/* ---- hero glyph wall (topic A + shared hero art) ---- */
+.pr-hero-art{position:relative;margin:34px auto 0;max-width:760px;border-radius:28px;background:var(--navy);padding:40px 20px 34px;overflow:hidden;box-shadow:var(--card-shadow)}
+.pr-hero-art .pr-wave{position:absolute;inset:auto 0 0 0;height:74px;opacity:.5}
+.pr-glyph-row{display:flex;justify-content:center;align-items:baseline;gap:4vw;flex-wrap:wrap;position:relative}
+.pr-glyph{font-family:'DM Serif Display',Georgia,serif;font-style:italic;color:#fff;line-height:1;font-size:clamp(44px,9vw,92px);text-shadow:0 6px 30px rgba(28,176,246,.45)}
+.pr-glyph.g2{color:var(--yellow)}.pr-glyph.g3{color:var(--blue)}.pr-glyph.g4{color:var(--coral)}.pr-glyph.g5{color:var(--purple)}
+.pr-hero-cap{color:rgba(255,255,255,.65);font-size:14px;text-align:center;margin-top:18px;position:relative}
+
+/* ---- duration bars: the cluster signature ---- */
+.pr-syls{display:flex;gap:10px;align-items:center}
+.pr-syl{position:relative;font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--navy);background:var(--light-blue);border-radius:14px;padding:10px 0;text-align:center;transition:flex-grow .45s cubic-bezier(.5,1.5,.4,1),background .3s,color .3s;flex:1 1 0;min-width:56px}
+.pr-syl.long{flex-grow:2.6;background:var(--blue);color:#fff;box-shadow:0 5px 0 var(--blue-dk)}
+.pr-syl.long::after{content:"長・重";position:absolute;top:-22px;left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:2px;color:var(--blue-dk);font-weight:700;white-space:nowrap}
+.pr-syl.short{opacity:.8}
+
+/* ---- tap-to-hear chips ---- */
+.pr-say{display:inline-flex;align-items:center;gap:8px;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:16px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:8px 18px;cursor:pointer;transition:transform .08s,border-color .2s,background .2s;line-height:1.2}
+.pr-say:hover{border-color:var(--blue);background:var(--light-blue)}
+.pr-say:active{transform:scale(.96)}
+.pr-say .pr-ico{width:20px;height:20px;border-radius:50%;background:var(--blue);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11px;flex:none}
+.pr-say.playing .pr-ico{animation:pr-pulse .9s infinite}
+.pr-say small{font-weight:500;color:var(--text-body)}
+@keyframes pr-pulse{0%,100%{box-shadow:0 0 0 0 rgba(28,176,246,.5)}55%{box-shadow:0 0 0 9px rgba(28,176,246,0)}}
+.pr-say-note{font-size:13px;color:var(--text-body);margin-top:10px}
+
+/* ---- sound wall (topic A) ---- */
+.pr-wall{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:34px}
+.pr-card{background:#fff;border-radius:22px;box-shadow:var(--card-shadow);overflow:hidden;border-top:6px solid var(--blue)}
+.pr-card.tier1{border-top-color:var(--coral)}
+.pr-card.tier2{border-top-color:var(--yellow)}
+.pr-card.tier3{border-top-color:var(--purple)}
+.pr-card-head{width:100%;display:flex;align-items:center;gap:16px;padding:18px 20px;background:none;border:none;cursor:pointer;text-align:left}
+.pr-card-glyph{font-family:'DM Serif Display',Georgia,serif;font-style:italic;font-size:44px;line-height:1;color:var(--navy);min-width:70px}
+.pr-card-head h3{font-size:19px;margin:0}
+.pr-card-head .pr-sub{font-size:13.5px;color:var(--text-body);font-family:'DM Sans',sans-serif;margin-top:2px}
+.pr-card-head .pm{margin-left:auto}
+.pr-rank{font-family:'Baloo 2',sans-serif;font-size:12px;font-weight:800;letter-spacing:1px;color:#8a5f00;background:rgba(255,200,40,.18);border-radius:100px;padding:4px 12px;white-space:nowrap}
+.pr-card.tier1 .pr-rank{color:#a8422a;background:rgba(240,153,123,.2)}
+.pr-card-body{max-height:0;overflow:hidden;transition:max-height .5s ease}
+.pr-card.open .pr-card-body{max-height:900px}
+.pr-card-inner{padding:0 20px 22px;font-size:15px;line-height:1.75;color:var(--text-body)}
+.pr-card-inner b{color:var(--navy)}
+.pr-chiprow{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
+
+/* ---- quiz engine ---- */
+.pr-quiz{background:#fff;border-radius:24px;box-shadow:var(--card-shadow);padding:30px 26px;max-width:640px;margin:30px auto 0;text-align:center}
+.pr-quiz-word{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(34px,6vw,52px);color:var(--navy);margin:8px 0 4px;min-height:1.2em}
+.pr-quiz-tr{color:var(--text-body);font-size:15px;min-height:1.4em}
+.pr-opts{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:22px}
+.pr-opt{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:17px;color:var(--navy);background:var(--light-blue);border:none;border-radius:16px;padding:14px 26px;cursor:pointer;box-shadow:0 4px 0 #b9e2f8;transition:transform .08s,background .2s}
+.pr-opt:hover{filter:brightness(1.03)}
+.pr-opt:active{transform:translateY(2px)}
+.pr-opt.correct{background:var(--green);color:#fff;box-shadow:0 4px 0 var(--green-dk)}
+.pr-opt.wrong{background:var(--coral);color:#fff;box-shadow:0 4px 0 #d97a5c;animation:pr-shake .35s}
+@keyframes pr-shake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.pr-feedback{min-height:52px;margin-top:16px;font-size:15px;line-height:1.6;color:var(--text-body)}
+.pr-feedback b{color:var(--navy)}
+.pr-score{font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--blue);margin-top:6px;font-size:15px}
+.pr-quiz .pr-syls{max-width:420px;margin:18px auto 0}
+.pr-quiz .pr-syl{cursor:pointer;border:none;font-size:20px;padding:16px 0}
+.pr-quiz .pr-syl:hover{filter:brightness(.96)}
+
+/* ---- gesture stage (topic B) ---- */
+.pr-stage{background:var(--navy);border-radius:26px;padding:46px 24px 40px;max-width:640px;margin:32px auto 0;position:relative;overflow:hidden;box-shadow:var(--card-shadow)}
+.pr-stage .pr-syls{max-width:420px;margin:0 auto}
+.pr-stage .pr-syl{background:rgba(255,255,255,.14);color:#fff}
+.pr-stage .pr-syl.long{background:var(--yellow);color:var(--navy);box-shadow:0 5px 0 var(--yellow-dk)}
+.pr-stage .pr-syl.long::after{color:var(--yellow)}
+.pr-hand{font-size:40px;position:relative;height:64px;margin-top:20px}
+.pr-hand span{position:absolute;left:0;top:6px;will-change:transform}
+.pr-stage.play .pr-hand span{animation:pr-sweep 1.7s ease-in-out infinite}
+.pr-stage.iambic.play .pr-hand span{animation-name:pr-sweep-i}
+/* trochaic: long slow sweep then short hop */
+@keyframes pr-sweep{0%{transform:translateX(0)}55%{transform:translateX(230px)}70%{transform:translateX(260px)}88%{transform:translateX(340px)}100%{transform:translateX(340px)}}
+/* iambic: short hop then long slow sweep */
+@keyframes pr-sweep-i{0%{transform:translateX(0)}16%{transform:translateX(90px)}30%{transform:translateX(110px)}88%{transform:translateX(340px)}100%{transform:translateX(340px)}}
+.pr-stage-cap{color:rgba(255,255,255,.7);text-align:center;font-size:14px;margin-top:14px}
+.pr-toggle{display:flex;gap:10px;justify-content:center;margin:0 0 26px}
+.pr-toggle .pr-opt{padding:10px 20px;font-size:15px}
+.pr-toggle .pr-opt[aria-pressed="true"]{background:var(--yellow);box-shadow:0 4px 0 var(--yellow-dk)}
+
+/* ---- vowel duel (topic C) ---- */
+.pr-duel{display:grid;grid-template-columns:1fr 1fr;border-radius:26px;overflow:hidden;max-width:680px;margin:34px auto 0;box-shadow:var(--card-shadow)}
+.pr-duel>div{padding:34px 18px;text-align:center}
+.pr-duel .a{background:var(--light-blue)}
+.pr-duel .b{background:#FFF3D6}
+.pr-duel .pr-glyph2{font-family:'DM Serif Display',Georgia,serif;font-style:italic;font-size:clamp(50px,9vw,84px);line-height:1;color:var(--navy)}
+.pr-duel h3{font-size:24px;margin-top:8px}
+.pr-duel p{font-size:14px;color:var(--text-body);margin-top:6px}
+@media(max-width:560px){.pr-duel{grid-template-columns:1fr}}
+
+/* ---- endings machine (topic D) ---- */
+.pr-bins{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.pr-bin{flex:1 1 150px;max-width:190px;background:var(--light-blue);border:3px dashed transparent;border-radius:18px;padding:16px 10px;text-align:center;font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--navy);cursor:pointer;transition:background .2s,border-color .2s,transform .08s}
+.pr-bin:hover{border-color:var(--blue)}
+.pr-bin:active{transform:scale(.97)}
+.pr-bin .pr-bin-ipa{font-family:'DM Serif Display',Georgia,serif;font-style:italic;font-size:34px;display:block}
+.pr-bin small{display:block;font-family:'DM Sans',sans-serif;font-weight:500;color:var(--text-body);font-size:12.5px;margin-top:4px}
+.pr-bin.correct{background:var(--green);color:#fff}.pr-bin.correct small{color:rgba(255,255,255,.85)}
+.pr-bin.wrong{background:var(--coral);color:#fff;animation:pr-shake .35s}.pr-bin.wrong small{color:rgba(255,255,255,.85)}
+
+/* ---- Cambridge band ladder (topic E) ---- */
+.pr-ladder{max-width:660px;margin:34px auto 0}
+.pr-band{display:flex;gap:16px;align-items:flex-start;background:#fff;border-radius:18px;box-shadow:var(--card-shadow);padding:18px 20px;margin-bottom:12px;border-left:6px solid var(--light-blue);transition:border-color .25s}
+.pr-band.hot{border-left-color:var(--green)}
+.pr-band-n{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:22px;color:var(--blue);min-width:44px;text-align:center;background:var(--light-blue);border-radius:12px;padding:6px 0}
+.pr-band p{font-size:14.5px;line-height:1.7;color:var(--text-body);margin:2px 0 0}
+.pr-band b{color:var(--navy)}
+.pr-quoteband{border-left:5px solid var(--yellow);background:#FFFBEF;border-radius:0 18px 18px 0;padding:18px 22px;margin:18px 0;font-size:15.5px;line-height:1.8;color:var(--navy)}
+.pr-quoteband small{display:block;margin-top:8px;color:var(--text-body)}
+
+/* ---- evidence footer strip ---- */
+.pr-evidence{border-top:2px dashed #e5e9f2;margin-top:34px;padding-top:18px;font-size:13.5px;line-height:1.8;color:var(--text-body)}
+.pr-evidence a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}
+.pr-evidence b{color:var(--navy)}
+
+/* ---- misc ---- */
+.pr-note{background:var(--light-blue);border-radius:18px;padding:18px 22px;font-size:14.5px;line-height:1.75;color:var(--navy);margin-top:22px}
+.pr-cluster-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.pr-cluster-links a{font-family:'Baloo 2',sans-serif;font-size:14px;font-weight:700;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:8px 18px;text-decoration:none;transition:border-color .2s}
+.pr-cluster-links a:hover{border-color:var(--blue)}
+
+@media (prefers-reduced-motion:reduce){
+  .pr-stage.play .pr-hand span{animation:none}
+  .pr-syl{transition:none}
+  .pr-say.playing .pr-ico{animation:none}
+}

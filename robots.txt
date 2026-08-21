@@ -1,6 +1,10 @@
 User-agent: *
 Allow: /
 
+# Private delivery page for the practice-exam packs.
+# Handed out by hand over LINE; never linked from the site.
+Disallow: /pack-x5jhfyn0oooljh/
+
 Sitemap: https://americanenglish.com.tw/sitemap.xml
 
 # Machine-readable site summary for AI assistants:
