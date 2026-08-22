@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Mimi is back at the shop. The shop assistant passes her a smaller box across the counter. The big box Mimi brought back is on the floor and Mimi is smiling.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M124 152h168v52H124Z"/>
+<path d="M16 178h48v26H16Z"/>
+<path d="M26 178l-7-12h42l-7 12"/>
+<circle cx="88" cy="92" r="15"/>
+<path d="M82 89.5a1 1 0 0 1 4 0M90 89.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M82.5 98c3 4 8.5 4 11.5 0"/>
+<path d="M88 107v45"/>
+<path d="M88 118l56 16M88 118l-20 14"/>
+<path d="M88 152l-11 52M88 152l12 52"/>
+<path d="M146 124h40v24h-40Z" fill="#DDF4FF"/>
+<path d="M154 124l-6-10h32l-6 10"/>
+<circle cx="252" cy="88" r="16"/>
+<path d="M246 85.5a1 1 0 0 1 4 0M254 85.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M246.5 94c3 3.5 8.5 3.5 11.5 0"/>
+<path d="M252 104v48"/>
+<path d="M252 116l-62 18M252 116l16 14"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">3</text>
+</svg>

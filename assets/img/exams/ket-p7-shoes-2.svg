@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="At home Mimi stands wearing the new shoes and looks down at them. The shoes are much too big for her feet. The empty shoe box is on the floor beside her and she looks unhappy.">
+<rect width="300" height="240" fill="#fff"/>
+<defs><path id="sh" d="M0 0v-9q0-4 4-4h7q4 0 8-3l5-3q5-3 8 2l4 8q2 5-3 5Z"/></defs>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<circle cx="112" cy="74" r="15"/>
+<path d="M106 71.5a1 1 0 0 1 4 0M114 71.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M106.5 84c3-4 8.5-4 11.5 0"/>
+<path d="M112 89v52"/>
+<path d="M112 100l-24 20M112 100l22 16"/>
+<path d="M112 141l-22 44M112 141l24 44"/>
+<g fill="#DDF4FF">
+<use href="#sh" transform="translate(62,204) scale(1.5)"/>
+<use href="#sh" transform="translate(112,204) scale(1.5)"/>
+</g>
+<path d="M212 176h60v28h-60Z"/>
+<path d="M224 176l-9-16h50l-9 16"/>
+<path d="M186 150c10-8 22-8 32 0" opacity=".4"/>
+<path d="M176 136c13-10 29-10 42 0" opacity=".25"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">2</text>
+</svg>

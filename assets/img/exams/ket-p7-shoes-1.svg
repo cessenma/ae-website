@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Mimi is in a shoe shop with her mother. Mimi is holding a new shoe and smiling. The price under the shelf says 400 dollars.">
+<rect width="300" height="240" fill="#fff"/>
+<defs><path id="sh" d="M0 0v-9q0-4 4-4h7q4 0 8-3l5-3q5-3 8 2l4 8q2 5-3 5Z"/></defs>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M16 56h96v112H16Z"/><path d="M16 94h96M16 132h96"/>
+<g fill="#DDF4FF">
+<use href="#sh" x="26" y="92"/><use href="#sh" x="70" y="92"/>
+<use href="#sh" x="26" y="130"/><use href="#sh" x="70" y="130"/>
+<use href="#sh" x="26" y="166"/>
+</g>
+<circle cx="182" cy="118" r="15"/>
+<path d="M176 115.5a1 1 0 0 1 4 0M184 115.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M176.5 124c3 4 8.5 4 11.5 0"/>
+<path d="M182 133v36"/>
+<path d="M182 142l-30 12M182 142l18 10"/>
+<path d="M182 169l-11 35M182 169l12 35"/>
+<g fill="#DDF4FF"><use href="#sh" x="116" y="160"/></g>
+<circle cx="240" cy="106" r="16"/>
+<path d="M234 103.5a1 1 0 0 1 4 0M242 103.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M234.5 112c3 3.5 8.5 3.5 11.5 0"/>
+<path d="M240 122v46"/>
+<path d="M240 132l-16 12M240 132l17 14"/>
+<path d="M257 146v16h16v-16Z" fill="#DDF4FF"/>
+<path d="M240 168l-11 36M240 168l12 36"/>
+</g>
+<text x="64" y="188" font-family="'Baloo 2',sans-serif" font-size="15" font-weight="700" fill="#1A2752" text-anchor="middle">$400</text>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">1</text>
+</svg>
