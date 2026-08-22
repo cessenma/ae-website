@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="The girl sits on the step outside the closed door and phones her mother while she waits.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M186 56h84v148h-84Z"/>
+<circle cx="200" cy="134" r="4"/>
+<path d="M200 146v10" stroke-width="3"/>
+<path d="M214 70h34v18h-34Z"/>
+<path d="M30 170h116v34H30Z" fill="#DDF4FF" fill-opacity=".55"/>
+<circle cx="96" cy="106" r="15"/>
+<path d="M90 103.5a1 1 0 0 1 4 0M98 103.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M90.5 114c3 2 8.5 2 11.5 0"/>
+<path d="M96 121v49"/>
+<path d="M96 170h34M130 170v34"/>
+<path d="M96 176h42M138 176v28"/>
+<path d="M96 132l-14-12"/>
+<path d="M74 100h12v22H74Z" fill="#DDF4FF"/>
+<path d="M96 132l24 8"/>
+<path d="M58 92c7-6 15-6 22 0" opacity=".45"/>
+<path d="M50 78c11-9 24-9 35 0" opacity=".25"/>
+</g>
+<text x="231" y="83" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#1A2752" text-anchor="middle">5B</text>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">2</text>
+</svg>

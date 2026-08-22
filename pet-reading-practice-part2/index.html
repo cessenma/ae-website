@@ -206,8 +206,17 @@ const PRX = { part:2, sets:[{"setId": "A", "items": [{"n": 1, "type": "match", "
         <div class="prx-why">${whyHTML(it)}</div></fieldset>`;
     }
     const bare=it.opts.every(o=>/^[A-H]$/.test(String(o).trim()));
+    // Only strip a leading letter when the WHOLE list is letter-labelled: every
+    // option opens with an A-H and no two share one. Stripping on a per-option
+    // regex ate the indefinite article — "A clock showing 4:15" rendered as
+    // "clock showing 4:15" — across 197 options, live. Testing the list is what
+    // separates a label from an English word, and it survives the option
+    // reordering that rebalance_keys.py does, since it does not require the
+    // letters to still be in sequence.
+    const heads=it.opts.map(o=>(String(o).match(/^([A-H])[.)]?\s/)||[])[1]);
+    const labelled=heads.every(Boolean)&&new Set(heads).size===it.opts.length;
     const opts=it.opts.map((o,i)=>{
-      const txt=bare?'':String(o).replace(/^[A-H][.)]?\s+/,'');
+      const txt=bare?'':(labelled?String(o).replace(/^[A-H][.)]?\s+/,''):String(o));
       return `<label class="prx-opt"><input type="radio" name="${key}" value="${i}">`+
              `<span><b class="notranslate" translate="no">${L(i)}</b>${txt?'　'+txt:''}</span></label>`;
     }).join('');

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="A girl stands outside the door of flat 5B. She is looking into her open school bag and cannot find her key. She looks worried.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M186 56h84v148h-84Z"/>
+<circle cx="200" cy="134" r="4"/>
+<path d="M200 146v10" stroke-width="3"/>
+<path d="M214 70h34v18h-34Z"/>
+<circle cx="70" cy="78" r="15"/>
+<path d="M63 74l6-3M71 71l6 3" stroke-width="2.8"/>
+<circle cx="66" cy="81" r="1.4" fill="#1A2752"/><circle cx="74" cy="81" r="1.4" fill="#1A2752"/>
+<path d="M65.5 90c3-4 8.5-4 11.5 0"/>
+<path d="M70 93v48"/>
+<path d="M70 104l34 40M70 104l24 44"/>
+<path d="M70 141l-11 63M70 141l12 63"/>
+<path d="M96 148h50v40H96Z" fill="#DDF4FF"/>
+<path d="M96 148l9-14h32l9 14"/>
+<path d="M112 134v-9h18v9"/>
+</g>
+<text x="231" y="83" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#1A2752" text-anchor="middle">5B</text>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">1</text>
+</svg>
