@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="The girl's mother arrives and holds up her key. The door of flat 5B stands open behind them and the girl smiles.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M186 56h84v148h-84Z"/>
+<path d="M195 60h68v140h-68Z" fill="#3A4666" fill-opacity=".16"/>
+<circle cx="70" cy="90" r="15"/>
+<path d="M64 87.5a1 1 0 0 1 4 0M72 87.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M64.5 98c3 3.5 8.5 3.5 11.5 0"/>
+<path d="M70 105v43"/>
+<path d="M70 114l30 4"/>
+<path d="M70 114l-18 20"/>
+<path d="M70 148l-11 56M70 148l12 56"/>
+<circle cx="150" cy="80" r="16"/>
+<path d="M144 77.5a1 1 0 0 1 4 0M152 77.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M144.5 88c3 3 8 3 11 0"/>
+<path d="M150 96v46"/>
+<path d="M150 106l-20 12"/>
+<path d="M150 106l24-24"/>
+<circle cx="176" cy="80" r="6" fill="#DDF4FF"/>
+<path d="M182 80h11M187 80v6M191 80v4"/>
+<path d="M150 142l-11 60M150 142l12 60"/>
+</g>
+<text x="228" y="83" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#1A2752" text-anchor="middle">5B</text>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">3</text>
+</svg>
