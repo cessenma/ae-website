@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<style id="crit">:root{--navy:#1A2752;--blue:#1CB0F6;--blue-dk:#1391cc;--green:#06C755;--green-dk:#04a046;--yellow:#FFC828;--yellow-dk:#e0a800;--purple:#CE82FF;--purple-dk:#a94fe0;--coral:#F0997B;--light-blue:#DDF4FF;--text-body:#4b5563;--card-shadow:0 12px 40px rgba(26,39,82,.10);--header-h:64px;}*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px)}body{font-family:'DM Sans',-apple-system,'PingFang TC','Microsoft JhengHei',sans-serif;background:#fff;color:var(--navy);line-height:1.6;overflow-x:hidden}a{color:inherit}img{display:block;max-width:100%}:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}h1,h2,h3{font-family:'DM Serif Display',serif;font-weight:400;color:var(--navy);letter-spacing:-.4px;line-height:1.08}h1{font-size:clamp(40px,6.4vw,66px)}h2{font-size:clamp(30px,4.6vw,48px)}h3{font-size:22px}.rounded{font-family:'Baloo 2',sans-serif;font-weight:800}em{font-style:italic;color:var(--blue)}.bg-navy h2,.bg-navy h3{color:#fff}p.body{font-size:clamp(15px,1.6vw,17px);line-height:1.8;color:var(--text-body)}.bg-navy p.body{color:rgba(255,255,255,.74)}.eyebrow{display:inline-block;font-family:'Baloo 2',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--blue);background:rgba(28,176,246,.12);padding:7px 16px;border-radius:100px}.eyebrow-green{color:#067033;background:rgba(6,199,85,.12)}.eyebrow-yellow{color:#8a5f00;background:rgba(255,200,40,.18)}.divider{width:48px;height:4px;background:linear-gradient(90deg,var(--blue),var(--purple));border-radius:4px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'Baloo 2',sans-serif;font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.5px;padding:14px 30px;border-radius:16px;cursor:pointer;border:none;text-transform:uppercase;transition:transform .08s ease,box-shadow .08s ease,filter .15s;min-height:50px;position:relative;top:0}.btn-primary{background:var(--green);color:#fff;box-shadow:0 5px 0 var(--green-dk),0 10px 18px rgba(6,199,85,.32)}.btn-blue{background:var(--blue);color:#fff;box-shadow:0 5px 0 var(--blue-dk),0 10px 18px rgba(28,176,246,.32)}.btn-yellow{background:var(--yellow);color:var(--navy);box-shadow:0 5px 0 var(--yellow-dk),0 10px 18px rgba(255,200,40,.32)}.btn-coral{background:var(--coral);color:#fff;box-shadow:0 5px 0 #d97a5c,0 10px 18px rgba(240,153,123,.34)}.btn-pf-blue{background:#a8d8f0;color:var(--navy);box-shadow:0 5px 0 #80bfe0,0 10px 18px rgba(168,216,240,.45)}.btn-pf-cream{background:#fff8f3;color:var(--navy);border:1px solid #efe4d8;box-shadow:0 5px 0 #e6dbd0,0 10px 18px rgba(26,39,82,.08)}.btn-pf-pink{background:#ffdae6;color:var(--navy);box-shadow:0 5px 0 #f0b0c8,0 10px 18px rgba(255,218,230,.5)}.btn:hover{filter:brightness(1.04)}.btn:active{top:5px;box-shadow:0 0 0 var(--green-dk)}.btn-blue:active{box-shadow:0 0 0 var(--blue-dk)}.btn-yellow:active{box-shadow:0 0 0 var(--yellow-dk)}.btn-coral:active{box-shadow:0 0 0 #d97a5c}.btn-pf-blue:active{box-shadow:0 0 0 #80bfe0}.btn-pf-cream:active{box-shadow:0 0 0 #e6dbd0}.btn-pf-pink:active{box-shadow:0 0 0 #f0b0c8}.btn-outline{background:#fff;color:var(--navy);border:2px solid #e2e8f0;box-shadow:0 4px 0 #e2e8f0}.btn-outline:active{top:4px;box-shadow:0 0 0 #e2e8f0}.btn svg{width:20px;height:20px}.btn-line svg{fill:currentColor}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}.section{padding:clamp(60px,8vw,104px) 0;position:relative}.bg-blue{background:var(--light-blue)}.bg-navy{background:var(--navy)}.bg-soft{background:#F4FAFF}.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center}.split.reverse>.media{order:2}@media(max-width:860px){.split{grid-template-columns:1fr}.split.reverse>.media{order:0}.split .stack{align-items:flex-end;text-align:right}.split .stack .divider{margin-left:auto;margin-right:0}.split.reverse .stack{align-items:flex-start;text-align:left}.split.reverse .stack .divider{margin-left:0;margin-right:auto}.hero .stack,#location .stack{align-items:center;text-align:center}.hero .stack .divider,#location .stack .divider{margin-left:auto;margin-right:auto}.hero .stack .hero-cta,.hero .stack .hero-badges{justify-content:center}.hero .stack p.body{margin-left:auto;margin-right:auto}}@media(min-width:861px){.section:not(#location) .split:not(.reverse) .stack{align-items:flex-end;text-align:right}.section:not(#location) .split:not(.reverse) .stack .divider{margin-left:auto;margin-right:0}}.stack{display:flex;flex-direction:column;align-items:flex-start;gap:16px}.center{text-align:center;align-items:center;margin:0 auto;max-width:700px}.progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--green),var(--blue),var(--purple));z-index:200;transition:width .1s linear}.rk{display:inline-block;width:26px;height:26px;color:var(--blue);animation:wiggle 3.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.rk svg{width:100%;height:100%;display:block}header.site-header{position:fixed;top:0;left:0;right:0;z-index:150;height:var(--header-h);background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(26,39,82,.06);transition:box-shadow .25s}header.site-header.scrolled{box-shadow:0 4px 22px rgba(26,39,82,.09)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{font-family:'Baloo 2',sans-serif;font-size:21px;font-weight:800;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:8px}.brand b{color:var(--blue);font-weight:800}.brand-logo{width:38px;height:38px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(26,39,82,.18)}.nav-links{display:flex;align-items:center;gap:26px}.nav-links a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:15px;font-weight:700;color:#475569;text-decoration:none;transition:color .15s}.nav-links a:not(.btn):hover,.nav-links a.active{color:var(--blue)}.nav-links a.active{position:relative}.nav-links a.active::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:3px;border-radius:3px;background:var(--blue)}.nav-cta{padding:9px 20px;font-size:14px;min-height:42px}.hamburger{display:none;width:46px;height:46px;border:none;background:transparent;cursor:pointer;flex-direction:column;justify-content:center;gap:5px;align-items:center}.hamburger span{width:24px;height:3px;background:var(--navy);border-radius:3px;transition:transform .3s,opacity .2s}body.menu-open .hamburger span:nth-child(1){transform:translateY(8px) rotate(45deg)}body.menu-open .hamburger span:nth-child(2){opacity:0}body.menu-open .hamburger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.drawer{position:fixed;inset:var(--header-h) 0 0 0;z-index:140;background:rgba(255,255,255,.98);backdrop-filter:blur(8px);display:flex;flex-direction:column;gap:4px;padding:24px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}body.menu-open .drawer{opacity:1;transform:none;pointer-events:auto}.drawer a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:700;color:var(--navy);text-decoration:none;padding:15px 8px;border-bottom:1px solid rgba(26,39,82,.07)}.drawer .btn{margin-top:18px}@media(max-width:860px){.nav-links{display:none}.hamburger{display:flex}}.bg-deco{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}.star{position:absolute;animation:twinkle 3s ease-in-out infinite}@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:.9;transform:scale(1.15)}}.hero{padding-top:calc(var(--header-h) + 40px);padding-bottom:60px;background:linear-gradient(180deg,#fff 0%,var(--light-blue) 100%);position:relative;overflow:hidden}.hero .wrap{position:relative;z-index:2}.hero-badges{display:flex;flex-wrap:wrap;gap:10px}.chip{display:inline-flex;align-items:center;gap:7px;font-family:'Baloo 2',sans-serif;font-size:14px;font-weight:700;color:var(--navy);background:#fff;border:2px solid rgba(26,39,82,.08);padding:8px 15px;border-radius:100px;box-shadow:0 3px 0 rgba(26,39,82,.06)}.chip .dot{width:9px;height:9px;border-radius:50%;background:var(--green);animation:blink 1.6s infinite}@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}.scene{position:relative;width:100%;max-width:440px;margin:0 auto;aspect-ratio:1}.planet{position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 36% 30%,#bfe7ff,var(--blue));box-shadow:inset -18px -18px 40px rgba(26,39,82,.25),0 30px 70px rgba(28,176,246,.35);animation:spin 26s linear infinite}.planet::before{content:'';position:absolute;width:34%;height:18%;border-radius:50%;background:rgba(255,255,255,.35);top:22%;left:20%;filter:blur(2px)}.planet::after{content:'';position:absolute;width:24%;height:12%;border-radius:50%;background:rgba(26,39,82,.18);bottom:24%;right:22%}.ring{position:absolute;left:50%;top:54%;width:108%;height:46%;transform:translate(-50%,-50%) rotate(-18deg);border:6px solid rgba(255,200,40,.55);border-radius:50%;animation:spin 18s linear infinite reverse}.rocket{position:absolute;left:58%;top:14%;width:120px;animation:floaty 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center;z-index:3;filter:drop-shadow(0 12px 18px rgba(26,39,82,.25))}.flame{transform-box:fill-box;transform-origin:50% 0%;animation:flame .6s ease-in-out infinite alternate}.s-star{position:absolute;animation:floaty 5s ease-in-out infinite}@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-18px) rotate(4deg)}}@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes flame{0%{transform:scaleY(.8) scaleX(1)}100%{transform:scaleY(1.15) scaleX(.9)}}@keyframes wiggle{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}.count-orb{position:absolute;left:6%;top:6%;background:#fff;border-radius:20px;padding:10px 16px;box-shadow:var(--card-shadow);font-family:'Baloo 2';font-weight:800;display:flex;align-items:center;gap:9px;font-size:15px;z-index:4;animation:pop-bob 4s ease-in-out infinite}.count-orb.b2{left:auto;right:2%;top:auto;bottom:14%;animation-delay:1.5s}.count-orb .big{font-family:'DM Serif Display';font-size:26px;color:var(--blue)}@keyframes pop-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}.page-hero{padding-top:calc(var(--header-h) + 56px);padding-bottom:56px;background:linear-gradient(180deg,#fff,var(--light-blue));text-align:center;position:relative;overflow:hidden}.page-hero .wrap{position:relative;z-index:2;max-width:780px}.page-hero h1{font-size:clamp(34px,5.2vw,54px);margin:14px 0 16px}.page-hero .divider{margin:0 auto 20px}.pf-blue{--frame:#a8d9ef}.pf-pink{--frame:#fedae7}.pf-lav{--frame:#c9b4f0}.pf-cream{--frame:#fef8f3;--frame-edge:#efe4d8}.post-hero{margin:30px 0 0;padding:4.2%;border-radius:min(46px,calc(6.3vw - 3px));background:var(--frame,var(--light-blue));box-shadow:0 18px 40px rgba(26,39,82,.16)}.post-hero img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:min(26px,calc(3.6vw - 1.7px))}.post-hero.pf-cream{box-shadow:inset 0 0 0 1px var(--frame-edge),0 18px 40px rgba(26,39,82,.16)}@media(max-width:640px){.post-hero{margin-top:22px}}.magnet-box{display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;background:var(--light-blue);border:2px dashed var(--blue);border-radius:22px;padding:20px 26px;margin:28px 0 6px}.magnet-box p{flex:1 1 280px;margin:0;font-size:15px;line-height:1.75;color:var(--text-body)}.magnet-box strong{font-family:'Baloo 2';font-size:16px;color:var(--navy)}.magnet-box .btn{flex:0 0 auto}.breadcrumb{font-family:'Baloo 2';font-size:13px;font-weight:700;color:#94a3b8;margin-bottom:8px}.breadcrumb a{text-decoration:none;color:#94a3b8}.breadcrumb a:hover{color:var(--blue)}</style>
+<link rel="preload" as="style" href="/assets/styles.css?v=fb874fd3" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/styles.css?v=fb874fd3"></noscript>
+<!-- AE:CRIT end -->
+<meta name="theme-color" content="#1A2752">
+<title>Flyers（A2）單字練習：6 個主題・36 題情境選字｜埃森美語</title>
+<meta name="description" content="Flyers（A2）單字怎麼練？6 個主題、36 題原創練習，全部把單字放回句子裡考——因為考試不會問你中文意思，而是看你在句子裡認不認得出來。附中文解析，免費不用註冊。">
+<link rel="canonical" href="https://americanenglish.com.tw/flyers-vocabulary-practice/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Flyers（A2）單字練習：36 題情境選字">
+<meta property="og:description" content="6 個主題、36 題原創練習，全部在句子裡考單字。">
+<meta property="og:url" content="https://americanenglish.com.tw/flyers-vocabulary-practice/">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/flyers-vocabulary-practice/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/flyers-vocabulary-practice/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"劍橋英檢","item":"https://americanenglish.com.tw/exams/"},{"@type":"ListItem","position":3,"name":"Flyers","item":"https://americanenglish.com.tw/cambridge-flyers-guide/"},{"@type":"ListItem","position":4,"name":"Flyers（A2）單字練習6 個主題・36 題"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"https://americanenglish.com.tw/#organization","name":"American English 埃森美語","alternateName":"埃森美語","url":"https://americanenglish.com.tw","logo":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","telephone":"+886-928-067-772","address":{"@type":"PostalAddress","streetAddress":"中正路89巷4號1樓","addressLocality":"板橋區","addressRegion":"新北市","postalCode":"220","addressCountry":"TW"}}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body>
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo.jpg" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<div class="drawer" id="drawer"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></div>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/exams/">劍橋英檢</a> ／ <a href="/cambridge-flyers-guide/">Flyers</a> ／ 單字練習</div>
+    <span class="eyebrow  reveal">原創練習 · 情境選字</span>
+    <h1 class="reveal d1">Flyers（A2）<em>單字練習</em><br>6 個主題・36 題</h1>
+    <div class="divider reveal d1"></div>
+    <p class="body reveal d2">作者：Christopher｜埃森美語創辦人｜美國密西根大學畢業、美國正式教師執照</p>
+  </div>
+</section>
+
+<style>.exam-subnav{position:sticky;top:var(--header-h);z-index:90;background:#fff;border-bottom:2px solid rgba(26,39,82,.08);overflow-x:auto;-webkit-overflow-scrolling:touch}.exam-subnav .row{display:flex;align-items:stretch;max-width:1120px;margin:0 auto;padding:0 24px}.exam-subnav .tag{flex:none;display:flex;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;color:#fff;background:var(--blue);padding:10px 14px;border-radius:0 0 10px 10px;text-decoration:none}.exam-subnav a:not(.tag){flex:none;display:flex;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;color:#475569;text-decoration:none;padding:10px 13px;border-bottom:3px solid transparent;white-space:nowrap}.exam-subnav a:not(.tag):hover{color:var(--blue)}.exam-subnav a.on{color:var(--navy);border-bottom-color:var(--blue)}</style>
+<nav class="exam-subnav" aria-label="Flyers 專區導覽"><div class="row">
+<a class="tag" href="/exams/">劍橋英檢 Flyers</a>
+<a href="/cambridge-flyers-guide/">總覽</a>
+<a href="/flyers-vocabulary-practice/" class="on" aria-current="page">單字練習</a>
+<a href="/cambridge-english-levels/">等級對照</a>
+<a href="/cambridge-practice-tests/">官方題庫</a>
+<a href="/cambridge-exam-registration-taiwan/">報名資訊</a>
+</div></nav>
+
+<style>
+.vchips{display:flex;flex-wrap:wrap;gap:8px;margin:20px auto 0;max-width:820px}
+.vchips span{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:13.5px;color:#475569;background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:100px;padding:7px 15px}
+.vtopic{background:#fff;border:1px solid rgba(26,39,82,.10);border-radius:24px;padding:clamp(20px,3vw,30px);box-shadow:var(--card-shadow);margin-top:20px;scroll-margin-top:calc(var(--header-h) + 70px)}
+.vtopic-h{display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+.vnum{flex:none;width:46px;height:46px;border-radius:15px;background:var(--c);color:#fff;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:17px;display:grid;place-items:center;box-shadow:0 4px 0 var(--cd)}
+.vtopic-h h3{font-size:clamp(20px,2.6vw,25px);line-height:1.15;margin:0}
+.vtopic-h h3 .en{display:block;font-family:'Baloo 2',sans-serif;font-size:13.5px;font-weight:700;letter-spacing:.6px;color:var(--c);margin-top:3px}
+.vnote{font-size:15px;line-height:1.8;color:var(--text-body);margin:12px 0 0}
+.v-src{max-width:800px;margin:30px auto 0;background:#F4FAFF;border:1px solid rgba(28,176,246,.22);border-radius:18px;padding:18px 22px;font-size:14.5px;line-height:1.8;color:var(--text-body)}
+.v-src b{color:var(--navy)}
+.gd-body{padding:0}
+.vtopic .gdrill{margin-top:16px}
+</style>
+
+<section class="section">
+  <div class="wrap">
+    <div class="prose reveal" style="max-width:800px;margin:0 auto">
+      <p>Flyers 是 YLE 的最高級，等級帶已經到 A2——和 KET 相同。字彙從生活走向世界：學校科目、職業、材質、旅行、時間的說法都是這一級的新字。這一頁把 Flyers 的新字放回句子裡考，因為 Flyers 的閱讀已經是完整段落，靠背中文意思是讀不動的。題目由我們老師原創，字彙範圍全部對照官方 2025 年版字表逐字核對過。</p>
+      <p><b>官方字表</b>：<a href="https://www.cambridgeenglish.org/Images/739104-starters-movers-flyers-word-list-2025.pdf" target="_blank" rel="noopener">Pre A1 Starters, A1 Movers and A2 Flyers Wordlists（2025 年版）</a>（劍橋官方 PDF，版權屬 Cambridge University Press &amp; Assessment，本頁只提供連結、不轉存內容）。官方 2025 年版字表再新增約 490 個字，三級累計約 1,380 個——已經和 KET 同在 A2 等級帶。</p>
+      <p style="font-size:14.5px;color:#8b9bb0">官方字表把三級的單字用同一套 20 個主題分類，孩子在哪一級、就學那一級欄位裡的字。</p>
+    </div>
+    <div class="vchips reveal"><span>Animals</span><span>The body and the face</span><span>Clothes</span><span>Colours</span><span>Family and friends</span><span>Food &amp; drink</span><span>Health</span><span>The home</span><span>Materials</span><span>Names</span><span>Numbers</span><span>Places &amp; directions</span><span>School</span><span>Sports &amp; leisure</span><span>Time</span><span>Toys</span><span>Transport</span><span>Weather</span><span>Work</span><span>The world around us</span></div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow">主題練習</span><h2>把單字<em>放回句子裡</em>練</h2></div>
+    <p class="body center reveal" style="max-width:700px;margin-top:12px">每一題都是一個句子，四個（或三個）選項意思相近，只有一個放進去讀得通。這正是考試考字彙的方式——不會問你中文意思，而是看你在句子裡認不認得出來。</p>
+    <div style="margin-top:6px">
+<article class="vtopic reveal" id="school" style="--c:#1CB0F6;--cd:#1391cc;--cs:rgba(28,176,246,.30)">
+  <div class="vtopic-h"><span class="vnum">01</span>
+    <h3>學校與科目<span class="en">School</span></h3></div>
+  <p class="vnote">Flyers 開始有「科目」的概念：history、geography、maths──也開始問「你最喜歡哪一科、為什麼」。</p>
+  <details class="gdrill"><summary>做 6 題練習</summary>
+    <div class="gd-body" style="padding:16px 0 0">
+      <form class="gd-form" data-slug="school" novalidate></form>
+      <div class="gd-bar">
+        <button type="button" class="btn btn-primary" data-act="check">對答案</button>
+        <button type="button" class="btn btn-outline" data-act="why">看解析</button>
+        <button type="button" class="btn btn-outline" data-act="reset">重做</button>
+        <span class="gd-score" role="status" aria-live="polite"></span>
+      </div>
+    </div></details>
+</article>
+<article class="vtopic reveal" id="work" style="--c:#CE82FF;--cd:#a94fe0;--cs:rgba(206,130,255,.32)">
+  <div class="vtopic-h"><span class="vnum">02</span>
+    <h3>職業<span class="en">Work</span></h3></div>
+  <p class="vnote">「他的工作是什麼？」——Flyers 的職業字在聽力與閱讀配對題都是常客，考的是「工作內容→職業名」的連結。</p>
+  <details class="gdrill"><summary>做 6 題練習</summary>
+    <div class="gd-body" style="padding:16px 0 0">
+      <form class="gd-form" data-slug="work" novalidate></form>
+      <div class="gd-bar">
+        <button type="button" class="btn btn-primary" data-act="check">對答案</button>
+        <button type="button" class="btn btn-outline" data-act="why">看解析</button>
+        <button type="button" class="btn btn-outline" data-act="reset">重做</button>
+        <span class="gd-score" role="status" aria-live="polite"></span>
+      </div>
+    </div></details>
+</article>
+<article class="vtopic reveal" id="materials" style="--c:#06C755;--cd:#04a046;--cs:rgba(6,199,85,.28)">
+  <div class="vtopic-h"><span class="vnum">03</span>
+    <h3>材質<span class="en">Materials</span></h3></div>
+  <p class="vnote">wood、metal、gold──「這是什麼做的？」是 Flyers 新增的問法，made of 是關鍵句型。</p>
+  <details class="gdrill"><summary>做 6 題練習</summary>
+    <div class="gd-body" style="padding:16px 0 0">
+      <form class="gd-form" data-slug="materials" novalidate></form>
+      <div class="gd-bar">
+        <button type="button" class="btn btn-primary" data-act="check">對答案</button>
+        <button type="button" class="btn btn-outline" data-act="why">看解析</button>
+        <button type="button" class="btn btn-outline" data-act="reset">重做</button>
+        <span class="gd-score" role="status" aria-live="polite"></span>
+      </div>
+    </div></details>
+</article>
+<article class="vtopic reveal" id="travel" style="--c:#F0997B;--cd:#d97a5c;--cs:rgba(240,153,123,.38)">
+  <div class="vtopic-h"><span class="vnum">04</span>
+    <h3>交通與旅行<span class="en">Transport &amp; travel</span></h3></div>
+  <p class="vnote">airport、passenger、platform──Flyers 的旅行字是一整組場景：去機場、上月台、拉行李。</p>
+  <details class="gdrill"><summary>做 6 題練習</summary>
+    <div class="gd-body" style="padding:16px 0 0">
+      <form class="gd-form" data-slug="travel" novalidate></form>
+      <div class="gd-bar">
+        <button type="button" class="btn btn-primary" data-act="check">對答案</button>
+        <button type="button" class="btn btn-outline" data-act="why">看解析</button>
+        <button type="button" class="btn btn-outline" data-act="reset">重做</button>
+        <span class="gd-score" role="status" aria-live="polite"></span>
+      </div>
+    </div></details>
+</article>
+<article class="vtopic reveal" id="time" style="--c:#4C6FE7;--cd:#3652bd;--cs:rgba(76,111,231,.26)">
+  <div class="vtopic-h"><span class="vnum">05</span>
+    <h3>時間<span class="en">Time</span></h3></div>
+  <p class="vnote">half past、midnight、century──Flyers 把時間講到「幾點幾分」和更長的時間單位，聽力寫時間是固定題型。</p>
+  <details class="gdrill"><summary>做 6 題練習</summary>
+    <div class="gd-body" style="padding:16px 0 0">
+      <form class="gd-form" data-slug="time" novalidate></form>
+      <div class="gd-bar">
+        <button type="button" class="btn btn-primary" data-act="check">對答案</button>
+        <button type="button" class="btn btn-outline" data-act="why">看解析</button>
+        <button type="button" class="btn btn-outline" data-act="reset">重做</button>
+        <span class="gd-score" role="status" aria-live="polite"></span>
+      </div>
+    </div></details>
+</article>
+<article class="vtopic reveal" id="animals" style="--c:#EC6F9E;--cd:#c9527d;--cs:rgba(236,111,158,.30)">
+  <div class="vtopic-h"><span class="vnum">06</span>
+    <h3>動物與大自然<span class="en">Animals</span></h3></div>
+  <p class="vnote">Flyers 的動物走進更大的世界：insect、extinct、wild──開始用「類別」談動物，不只認名字。</p>
+  <details class="gdrill"><summary>做 6 題練習</summary>
+    <div class="gd-body" style="padding:16px 0 0">
+      <form class="gd-form" data-slug="animals" novalidate></form>
+      <div class="gd-bar">
+        <button type="button" class="btn btn-primary" data-act="check">對答案</button>
+        <button type="button" class="btn btn-outline" data-act="why">看解析</button>
+        <button type="button" class="btn btn-outline" data-act="reset">重做</button>
+        <span class="gd-score" role="status" aria-live="polite"></span>
+      </div>
+    </div></details>
+</article>
+    </div>
+    <div class="v-src reveal"><b>資料出處與版權</b>：主題分類名稱出自劍橋官方字表的分類方式；所有練習題目、選項與中文解析為<strong>埃森美語教師原創</strong>，非劍橋官方試題，也未轉載官方字表內容。考試格式與內容請以劍橋官方當期公告為準。資料日期 2026-08-21。</div>
+  </div>
+</section>
+
+<section class="section bg-blue">
+  <div class="wrap center stack reveal">
+    <span class="eyebrow">下一步</span>
+    <h2 style="margin-top:12px">背得起來，<em>用不出來</em>？</h2>
+    <div class="divider"></div>
+    <p class="body" style="max-width:680px">認得出來和寫得出來、講得出來，是三件不同的事。字表能給你範圍，但沒辦法讓字變成你自己的——那要靠在句子裡反覆遇到它、用錯被糾正、再用對。孩子的程度落在哪一級、下一步該練什麼，<a href="/cambridge-flyers-guide/">Flyers 完整指南</a>有逐項說明。</p>
+    <a class="btn btn-primary" href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 預約免費程度評估</a>
+  </div>
+</section>
+
+</main>
+<script>const GDRILLS = {"school":[{"n":1,"type":"mc","q":"My favourite subject is ______. I like learning about kings and queens of the past.","opts":["history","geography","maths"],"a":0,"why":["✓ history（歷史）學的就是過去的國王、女王和以前的事。","✗ geography（地理）學的是地圖、國家和山川。","✗ maths（數學）是數字和計算。"]},{"n":2,"type":"mc","q":"In ______ we learn about mountains, rivers and different countries.","opts":["geography","music","sport"],"a":0,"why":["✓ geography（地理）學山、河流和世界各國。","✗ music（音樂）是唱歌和樂器。","✗ sport（體育）是運動。"]},{"n":3,"type":"mc","q":"I don't know this word. Let's look in the ______.","opts":["dictionary","suitcase","envelope"],"a":0,"why":["✓ dictionary（字典）是查單字用的。","✗ suitcase（行李箱）是裝衣服去旅行的。","✗ envelope（信封）是裝信的。"]},{"n":4,"type":"mc","q":"My big sister is a ______ at university.","opts":["student","teacher","child"],"a":0,"why":["✓ 在大學讀書的人是 student（學生）。","✗ teacher（老師）是教書的人，句子講的是姊姊在念書。","✗ child（小孩）不會在大學。"]},{"n":5,"type":"mc","q":"People in different countries speak a different ______.","opts":["language","century","dictionary"],"a":0,"why":["✓ 不同國家說不同的語言（language）。","✗ century（世紀）是一百年，跟說話無關。","✗ dictionary（字典）是查單字的書，不是「說」的東西。"]},{"n":6,"type":"mc","q":"After high school, my brother wants to study English at ______.","opts":["university","supermarket","hospital"],"a":0,"why":["✓ 高中之後繼續唸書的地方是 university（大學）。","✗ supermarket（超市）是買東西的地方。","✗ hospital（醫院）是看病的地方。"]}],"work":[{"n":1,"type":"mc","q":"A ______ flies planes.","opts":["pilot","waiter","farmer"],"a":0,"why":["✓ pilot（機師）開飛機。","✗ waiter（服務生）在餐廳端盤子。","✗ farmer（農夫）在農場工作。"]},{"n":2,"type":"mc","q":"A ______ brings your food in a restaurant.","opts":["waiter","pilot","dentist"],"a":0,"why":["✓ waiter（服務生）在餐廳送餐。","✗ pilot（機師）在飛機上。","✗ dentist（牙醫）看牙齒。"]},{"n":3,"type":"mc","q":"A ______ helps people who are ill in a hospital.","opts":["nurse","singer","artist"],"a":0,"why":["✓ nurse（護理師）在醫院照顧病人。","✗ singer（歌手）唱歌。","✗ artist（藝術家）畫畫。"]},{"n":4,"type":"mc","q":"A ______ works with cars and can fix them.","opts":["mechanic","journalist","queen"],"a":0,"why":["✓ mechanic（技師）修車。","✗ journalist（記者）寫新聞。","✗ queen（女王）不修車！"]},{"n":5,"type":"mc","q":"A ______ writes for a newspaper.","opts":["journalist","mechanic","waiter"],"a":0,"why":["✓ journalist（記者）幫報紙寫文章。","✗ mechanic（技師）修車。","✗ waiter（服務生）在餐廳工作。"]},{"n":6,"type":"mc","q":"My uncle is a ______. He cooks food in a big restaurant.","opts":["cook","doctor","pilot"],"a":0,"why":["✓ cook（廚師）在餐廳做菜。","✗ doctor（醫生）看病人。","✗ pilot（機師）開飛機。"]}],"materials":[{"n":1,"type":"mc","q":"The ring is made of ______. It is yellow and very expensive.","opts":["gold","paper","wool"],"a":0,"why":["✓ gold（金）是黃色、很貴的金屬，戒指常用金做。","✗ paper（紙）做的戒指一下就壞了。","✗ wool（羊毛）是織毛衣用的。"]},{"n":2,"type":"mc","q":"This table is made of ______ from a tree.","opts":["wood","glass","silver"],"a":0,"why":["✓ wood（木頭）來自樹，桌子常是木頭做的。","✗ glass（玻璃）不是從樹來的。","✗ silver（銀）是金屬。"]},{"n":3,"type":"mc","q":"My sweater is made of ______. It comes from sheep.","opts":["wool","metal","plastic"],"a":0,"why":["✓ wool（羊毛）來自綿羊，毛衣就是羊毛做的。","✗ metal（金屬）做的毛衣太重了！","✗ plastic（塑膠）不是從羊來的。"]},{"n":4,"type":"mc","q":"Be careful with that cup! It is made of ______ and it can break.","opts":["glass","wood","wool"],"a":0,"why":["✓ glass（玻璃）做的杯子會破，要小心。","✗ wood（木頭）杯不容易破。","✗ wool（羊毛）杯子……沒有這種東西！"]},{"n":5,"type":"mc","q":"Bottles and toys are often made of ______.","opts":["plastic","gold","fur"],"a":0,"why":["✓ plastic（塑膠）是瓶子和玩具最常見的材質。","✗ gold（金）太貴，不會拿來做瓶子。","✗ fur（毛皮）是動物身上的毛。"]},{"n":6,"type":"mc","q":"The knife is made of ______. It is hard and grey.","opts":["metal","paper","card"],"a":0,"why":["✓ metal（金屬）又硬又是灰色，刀子就是金屬做的。","✗ paper（紙）做的刀切不了東西。","✗ card（卡紙）也太軟了。"]}],"travel":[{"n":1,"type":"mc","q":"We must go to the ______ two hours before the plane leaves.","opts":["airport","bus station","platform"],"a":0,"why":["✓ 搭飛機要提早到機場（airport）。","✗ bus station（公車站）是搭公車的。","✗ platform（月台）是等火車的地方。"]},{"n":2,"type":"mc","q":"Put your clothes in the ______. We are going on holiday!","opts":["suitcase","fridge","envelope"],"a":0,"why":["✓ 出門旅行把衣服裝進行李箱（suitcase）。","✗ fridge（冰箱）是放食物的。","✗ envelope（信封）裝不下衣服！"]},{"n":3,"type":"mc","q":"The train to London leaves from ______ 4.","opts":["platform","bridge","corner"],"a":0,"why":["✓ 火車從第 4 月台（platform）開出。","✗ bridge（橋）不是火車出發的地方。","✗ corner（角落）也不是。"]},{"n":4,"type":"mc","q":"A ______ is a person who travels in a bus, train or plane.","opts":["passenger","pilot","police officer"],"a":0,"why":["✓ passenger（乘客）就是搭車、搭飛機的人。","✗ pilot（機師）是開飛機的人，不是搭的人。","✗ police officer（警察）是工作，不是「搭車的人」的意思。"]},{"n":5,"type":"mc","q":"There was a lot of ______ on the road, so we were late.","opts":["traffic","fog","sugar"],"a":0,"why":["✓ traffic（車流）太多會塞車遲到。","✗ fog（霧）會讓你看不清楚，但塞車的原因是車太多。","✗ sugar（糖）不會出現在路上！"]},{"n":6,"type":"mc","q":"A ______ can fly straight up into the sky. It has no wings like a plane.","opts":["helicopter","taxi","railway"],"a":0,"why":["✓ helicopter（直升機）直直往上飛，沒有飛機那種大機翼。","✗ taxi（計程車）在路上跑。","✗ railway（鐵路）是火車走的軌道。"]}],"time":[{"n":1,"type":"mc","q":"School starts at half ______ eight.","opts":["past","to","after"],"a":0,"why":["✓ half past eight（八點半）是固定說法。","✗ half to 不是英文的講法。","✗ half after 也不是標準說法。"]},{"n":2,"type":"mc","q":"At ______ it is twelve o'clock at night and very dark.","opts":["midnight","midday","morning"],"a":0,"why":["✓ midnight（半夜十二點）天很黑。","✗ midday（中午十二點）是白天最亮的時候。","✗ morning（早上）也不是晚上。"]},{"n":3,"type":"mc","q":"A ______ is one hundred years.","opts":["century","calendar","minute"],"a":0,"why":["✓ century（世紀）是一百年。","✗ calendar（月曆）是看日期的東西。","✗ minute（分鐘）只有六十秒。"]},{"n":4,"type":"mc","q":"Look at the ______ to see what date it is today.","opts":["calendar","clock","watch"],"a":0,"why":["✓ calendar（月曆）看「日期」。","✗ clock（時鐘）看的是「時間」，不是日期。","✗ watch（手錶）也是看時間的。"]},{"n":5,"type":"mc","q":"Don't be ______! The film starts at seven o'clock.","opts":["late","early","past"],"a":0,"why":["✓ Don't be late!（別遲到）——電影七點開始。","✗ Don't be early（別太早到）通常不會這樣提醒人。","✗ past 放在這裡意思不通。"]},{"n":6,"type":"mc","q":"We waited a ______ of an hour — fifteen minutes!","opts":["quarter","half","century"],"a":0,"why":["✓ a quarter of an hour（一刻鐘）＝15 分鐘。","✗ half an hour（半小時）是 30 分鐘。","✗ century（世紀）是一百年，等太久了！"]}],"animals":[{"n":1,"type":"mc","q":"A butterfly is an ______. It has six legs and beautiful wings.","opts":["insect","animal doctor","octopus"],"a":0,"why":["✓ 蝴蝶是昆蟲（insect）：六隻腳、有翅膀。","✗ animal doctor 是獸醫，不是動物的類別。","✗ octopus（章魚）住在海裡，有八隻腳。"]},{"n":2,"type":"mc","q":"Dinosaurs are ______. There are no dinosaurs in the world now.","opts":["extinct","dangerous","exciting"],"a":0,"why":["✓ extinct（絕種）——恐龍已經不存在了。","✗ dangerous（危險）的動物現在還活著。","✗ exciting（刺激）跟「現在沒有了」對不上。"]},{"n":3,"type":"mc","q":"An ______ lives in the sea and has eight legs.","opts":["octopus","eagle","camel"],"a":0,"why":["✓ octopus（章魚）住在海裡、八隻腳。","✗ eagle（老鷹）在天上飛。","✗ camel（駱駝）住在沙漠。"]},{"n":4,"type":"mc","q":"A ______ can live in the desert for a long time without water.","opts":["camel","swan","beetle"],"a":0,"why":["✓ camel（駱駝）在沙漠可以很久不喝水。","✗ swan（天鵝）住在湖邊，需要水。","✗ beetle（甲蟲）不是沙漠代表動物。"]},{"n":5,"type":"mc","q":"Birds make a ______ in a tree and put their eggs in it.","opts":["nest","cave","hole"],"a":0,"why":["✓ 鳥在樹上築巢（nest）下蛋。","✗ cave（洞穴）是山裡的大洞，熊和蝙蝠才住那裡。","✗ hole（洞）太籠統，鳥蛋放的是巢。"]},{"n":6,"type":"mc","q":"Lions and tigers are ______ animals. They don't live with people.","opts":["wild","soft","married"],"a":0,"why":["✓ wild（野生的）動物不跟人住。","✗ soft（軟的）是形容摸起來的感覺。","✗ married（結婚的）是形容人的！"]}]};</script>
+<script>
+(function(){
+  if(typeof GDRILLS==='undefined') return;
+  var L=function(i){return String.fromCharCode(65+i)};
+  var norm=function(s){return (s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'')};
+  var esc=function(s){return String(s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})};
+
+  Object.keys(GDRILLS).forEach(function(slug){
+    var host=document.querySelector('.gd-form[data-slug="'+slug+'"]');
+    if(!host) return;
+    var items=GDRILLS[slug];
+    host.innerHTML=items.map(function(it){
+      var mark='<span class="gd-mark" aria-hidden="true"></span>';
+      var why=Array.isArray(it.why)
+        ? it.why.map(function(w,i){return '<p><b>'+L(i)+'：</b>'+esc(w)+'</p>'}).join('')
+        : '<p>'+esc(it.why)+'</p>';
+      var head='<p class="gd-q"><span class="gd-n">'+it.n+'.</span>'+esc(it.q)+'</p>';
+      if(it.type==='mc'){
+        var o=it.opts.map(function(t,i){
+          return '<label class="gd-opt"><input type="radio" name="'+slug+'_'+it.n+'" value="'+i+'">'+
+                 '<span><b>'+L(i)+'</b>　'+esc(t)+'</span></label>'}).join('');
+        return '<div class="gd-item" data-k="'+slug+'_'+it.n+'">'+head+
+               '<div class="gd-opts">'+o+'</div>'+mark+'<div class="gd-why">'+why+'</div></div>';
+      }
+      if(it.type==='keyword'){
+        return '<div class="gd-item" data-k="'+slug+'_'+it.n+'">'+head+
+          '<span class="gd-key">'+esc(it.keyword)+'</span>'+
+          '<p class="gd-q" style="margin:0 0 8px">'+esc(it.stem)+'</p>'+
+          '<input class="gd-in wide" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 '+it.n+' 題答案">'+
+          mark+'<div class="gd-why">'+why+'</div></div>';
+      }
+      return '<div class="gd-item" data-k="'+slug+'_'+it.n+'">'+head+
+        '<input class="gd-in" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 '+it.n+' 題答案">'+
+        mark+'<div class="gd-why">'+why+'</div></div>';
+    }).join('');
+
+    host.addEventListener('change',function(e){
+      var box=e.target.closest('.gd-item'); if(!box) return;
+      box.querySelectorAll('.gd-opt').forEach(function(o){
+        o.classList.toggle('sel',o.querySelector('input').checked)});
+    });
+
+    var wrap=host.closest('.gd-body');
+    wrap.querySelector('[data-act="check"]').addEventListener('click',function(){
+      var got=0,total=0;
+      items.forEach(function(it){
+        var m=it.marks||1; total+=m;
+        var box=host.querySelector('[data-k="'+slug+'_'+it.n+'"]');
+        var mark=box.querySelector('.gd-mark');
+        if(it.accept){
+          var inp=box.querySelector('input');
+          var ok=it.accept.map(norm).indexOf(norm(inp.value))>-1;
+          inp.classList.toggle('right',ok);
+          inp.classList.toggle('wrong',!ok&&inp.value.trim()!=='');
+          mark.textContent=ok?'✓':'✗（正確：'+it.accept[0]+'）';
+          mark.className='gd-mark '+(ok?'ok':'no');
+          if(ok)got+=m;
+        }else{
+          var sel=box.querySelector('input:checked');
+          box.querySelectorAll('.gd-opt').forEach(function(o,i){
+            o.classList.remove('right','wrong');
+            if(i===it.a)o.classList.add('right');
+            else if(o.querySelector('input').checked)o.classList.add('wrong')});
+          var ok2=sel&&+sel.value===it.a;
+          mark.textContent=ok2?'✓':(sel?'✗':'—');
+          mark.className='gd-mark '+(ok2?'ok':'no');
+          if(ok2)got+=m;
+        }
+      });
+      var sc=wrap.querySelector('.gd-score');
+      sc.textContent='得分 '+got+' / '+total; sc.classList.add('show');
+      host.classList.add('show-why');
+    });
+    wrap.querySelector('[data-act="why"]').addEventListener('click',function(){
+      host.classList.toggle('show-why')});
+    wrap.querySelector('[data-act="reset"]').addEventListener('click',function(){
+      host.classList.remove('show-why');
+      host.querySelectorAll('input[type=radio]').forEach(function(r){r.checked=false});
+      host.querySelectorAll('input[type=text]').forEach(function(t){t.value='';t.className=t.className.replace(/\s*(right|wrong)/g,'')});
+      host.querySelectorAll('.gd-opt').forEach(function(o){o.classList.remove('sel','right','wrong')});
+      host.querySelectorAll('.gd-mark').forEach(function(m){m.textContent='';m.className='gd-mark'});
+      var sc=wrap.querySelector('.gd-score'); sc.classList.remove('show'); sc.textContent='';
+    });
+  });
+})();
+</script>
+<script src="/assets/app.js?v=11"></script>
+</body>
+</html>
