@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Otto catches the last train home.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M118 96h150v82H118Z" fill="#DDF4FF"/>
+<path d="M136 112h36v30h-36ZM196 112h36v30h-36Z" fill="#fff"/>
+<circle cx="150" cy="188" r="9"/><circle cx="238" cy="188" r="9"/>
+<path d="M118 178h150"/>
+<circle cx="66" cy="106" r="15"/>
+<path d="M60 103.5a1 1 0 0 1 4 0M68 103.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M60.5 114c3 3.5 8.5 3.5 11.5 0"/>
+<path d="M66 121v42"/>
+<path d="M66 134 L110 128M66 134 L46 148"/>
+<path d="M66 163l-11 41M66 163l12 41"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">3</text>
+</svg>

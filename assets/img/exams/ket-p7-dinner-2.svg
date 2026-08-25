@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Mei puts too much salt in the rice. It tastes terrible and she looks sad.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M104 158h170M118 158v46M258 158v46"/>
+<circle cx="90" cy="100" r="15"/>
+<path d="M83 96l6-3M91 93l6 3" stroke-width="2.8"/>
+<circle cx="86" cy="103" r="1.4" fill="#1A2752"/><circle cx="94" cy="103" r="1.4" fill="#1A2752"/>
+<path d="M84.5 113c3-4 8.5-4 11.5 0"/>
+<path d="M90 115v44"/>
+<path d="M90 128 L136 116M90 128 L68 144"/>
+<path d="M90 159l-11 45M90 159l12 45"/>
+<path d="M140 100h22v22h-22Z" fill="#DDF4FF"/>
+<path d="M144 122l2 12M152 122l0 14M160 122l-2 12" opacity=".6"/>
+<path d="M172 146c0-10 10-16 22-16h14c12 0 22 6 22 16Z" fill="#DDF4FF"/>
+<path d="M166 146h96"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">2</text>
+</svg>

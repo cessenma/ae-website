@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="The homework is still at home on the kitchen table.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M74 146h152M92 146v58M208 146v58"/>
+<path d="M120 104h58v42h-58Z" fill="#DDF4FF"/>
+<path d="M130 116h38M130 126h38M130 136h24"/>
+<path d="M42 76h36v34H42Z"/><path d="M42 88h36"/>
+<circle cx="70" cy="99" r="3"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">2</text>
+</svg>

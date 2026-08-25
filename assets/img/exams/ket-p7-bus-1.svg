@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Otto waits alone at the bus stop. No bus comes and he looks worried.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M210 74v130"/><path d="M186 60h48v30h-48Z" fill="#DDF4FF"/>
+<circle cx="210" cy="75" r="7"/>
+<circle cx="120" cy="100" r="15"/>
+<path d="M113 96l6-3M121 93l6 3" stroke-width="2.8"/>
+<circle cx="116" cy="103" r="1.4" fill="#1A2752"/><circle cx="124" cy="103" r="1.4" fill="#1A2752"/>
+<path d="M114.5 113c3-4 8.5-4 11.5 0"/>
+<path d="M120 115v46"/>
+<path d="M120 128l-22 18M120 128l24 14"/>
+<path d="M120 161l-11 43M120 161l12 43"/>
+<path d="M62 126h20M56 144h26" opacity=".35"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">1</text>
+</svg>

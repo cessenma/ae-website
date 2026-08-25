@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Otto looks at a big map on the wall next to the ticket office.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M150 56h124v96H150Z" fill="#DDF4FF"/>
+<path d="M166 130 L196 96 L228 116 L258 78" />
+<circle cx="196" cy="96" r="4"/><circle cx="258" cy="78" r="4"/>
+<circle cx="96" cy="104" r="15"/>
+<path d="M90 101.5a1 1 0 0 1 4 0M98 101.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M90.5 112c3 3.5 8.5 3.5 11.5 0"/>
+<path d="M96 119v44"/>
+<path d="M96 132 L146 118M96 132 L74 148"/>
+<path d="M96 163l-11 41M96 163l12 41"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">2</text>
+</svg>

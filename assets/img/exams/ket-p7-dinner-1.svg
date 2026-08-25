@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Mei cuts vegetables in the kitchen to cook dinner for her family.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M110 154h164M124 154v50M258 154v50"/>
+<circle cx="96" cy="98" r="15"/>
+<path d="M90 95.5a1 1 0 0 1 4 0M98 95.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M90.5 106c3 4 8.5 4 11.5 0"/>
+<path d="M96 113v42"/>
+<path d="M96 126 L140 144M96 126 L74 142"/>
+<path d="M96 155l-11 49M96 155l12 49"/>
+<path d="M146 140h44v10h-44Z" fill="#DDF4FF"/>
+<path d="M156 140v-6M168 140v-6M180 140v-6"/>
+<path d="M204 128h34v20h-34Z" fill="#DDF4FF"/>
+<path d="M238 134h10v8h-10"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">1</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Mei's mother laughs and helps her cook the rice again. Both are smiling.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M96 162h150"/>
+<path d="M112 162v42M232 162v42"/>
+<circle cx="66" cy="104" r="14"/>
+<path d="M60 101.5a1 1 0 0 1 4 0M68 101.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M60.5 112c3 3.5 8 3.5 11 0"/>
+<path d="M66 118v42"/>
+<path d="M66 130 L118 148M66 130 L48 146"/>
+<path d="M66 160l-11 44M66 160l12 44"/>
+<circle cx="264" cy="96" r="16"/>
+<path d="M258 93.5a1 1 0 0 1 4 0M266 93.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M257.5 104c3.5 4.5 9.5 4.5 13 0"/>
+<path d="M264 112v48"/>
+<path d="M264 126 L212 150M264 126 L286 110"/>
+<path d="M264 160l-11 44M264 160l12 44"/>
+<path d="M140 154c0-10 10-16 22-16h12c12 0 22 6 22 16Z" fill="#DDF4FF"/>
+<path d="M134 154h96"/>
+<path d="M150 128c4-6 10-6 14 0M172 124c4-6 10-6 14 0" opacity=".45"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">3</text>
+</svg>

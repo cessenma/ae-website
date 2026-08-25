@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="The bird is in a box with an old towel. Her neighbour Mrs Vega shows her how to feed it.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M110 150h84v54h-84Z" fill="#DDF4FF"/>
+<path d="M110 150l-10-16h104l-10 16"/>
+<path d="M118 168c14-8 30-8 44 0" opacity=".6"/>
+<ellipse cx="152" cy="180" rx="14" ry="9" fill="#fff"/>
+<circle cx="164" cy="172" r="5"/><path d="M169 170l5-2"/>
+<circle cx="62" cy="106" r="14"/>
+<path d="M56 103.5a1 1 0 0 1 4 0M64 103.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M56.5 114c3 3 8 3 11 0"/>
+<path d="M62 120v42"/>
+<path d="M62 132 L104 150M62 132 L42 148"/>
+<path d="M62 162l-11 42M62 162l12 42"/>
+<circle cx="244" cy="96" r="16"/>
+<path d="M238 93.5a1 1 0 0 1 4 0M246 93.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M237.5 104c3.5 4 9.5 4 13 0"/>
+<path d="M244 112v50"/>
+<path d="M244 126 L200 148M244 126 L268 112"/>
+<path d="M244 162l-11 42M244 162l12 42"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">2</text>
+</svg>

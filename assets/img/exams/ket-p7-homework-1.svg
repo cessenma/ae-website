@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Oscar looks inside his open school bag at school. It is empty and he looks worried.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M212 148h72M220 148v56M276 148v56"/>
+<circle cx="112" cy="86" r="15"/>
+<path d="M105 82l6-3M113 79l6 3" stroke-width="2.8"/>
+<circle cx="108" cy="89" r="1.4" fill="#1A2752"/><circle cx="116" cy="89" r="1.4" fill="#1A2752"/>
+<path d="M106.5 99c3-4 8.5-4 11.5 0"/>
+<path d="M112 101v46"/>
+<path d="M112 114 L150 136M112 114 L88 132"/>
+<path d="M112 147l-11 57M112 147l12 57"/>
+<path d="M140 140h60v50h-60Z" fill="#DDF4FF"/>
+<path d="M140 140 L128 116 L176 112 L200 140" opacity=".75"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">1</text>
+</svg>

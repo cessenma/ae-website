@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Oscar tells his teacher about the problem. The teacher is not angry and gives him one more day.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M44 66h74v30H44Z" fill="#DDF4FF"/>
+<path d="M62 96l-4 14 16-14"/>
+<path d="M54 76h52M54 86h34"/>
+<circle cx="86" cy="124" r="14"/>
+<path d="M80 121.5a1 1 0 0 1 4 0M88 121.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M80.5 132c3 3 8 3 11 0"/>
+<path d="M86 138v34"/>
+<path d="M86 148l26 8M86 148l-20 12"/>
+<path d="M86 172l-11 32M86 172l12 32"/>
+<circle cx="212" cy="102" r="16"/>
+<path d="M206 99.5a1 1 0 0 1 4 0M214 99.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M205.5 110c3.5 4 9.5 4 13 0"/>
+<path d="M212 118v50"/>
+<path d="M212 130 L178 142"/>
+<path d="M212 130 L238 108"/>
+<path d="M212 168l-11 36M212 168l12 36"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">3</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Zack wakes up late. The clock says twenty past seven and he looks shocked.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<circle cx="216" cy="96" r="34" fill="#DDF4FF"/>
+<path d="M216 96V70M216 96l18 10"/>
+<circle cx="216" cy="96" r="3" fill="#1A2752"/>
+<circle cx="106" cy="102" r="15"/>
+<path d="M99 98l6-3M107 95l6 3" stroke-width="2.8"/>
+<circle cx="102" cy="105" r="1.6" fill="#1A2752"/><circle cx="110" cy="105" r="1.6" fill="#1A2752"/>
+<ellipse cx="106" cy="115" rx="4" ry="5"/>
+<path d="M106 119v42"/>
+<path d="M106 130 L166 108M106 130 L82 112"/>
+<path d="M106 161l-13 43M106 161l14 43"/>
+<path d="M56 74c6-7 15-7 21 0M50 92c8-9 20-9 28 0" opacity=".35"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">1</text>
+</svg>

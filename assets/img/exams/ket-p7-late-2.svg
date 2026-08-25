@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Outside, his neighbour Mrs Tang is washing her car. She offers to drive him to school.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M150 186h124v-30l-20-28h-72l-20 28Z" fill="#DDF4FF"/>
+<path d="M172 156h34v-22h-26ZM214 156h34l-14-22h-20Z" fill="#fff"/>
+<circle cx="180" cy="186" r="11"/><circle cx="248" cy="186" r="11"/>
+<circle cx="92" cy="104" r="15"/>
+<path d="M86 101.5a1 1 0 0 1 4 0M94 101.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M86.5 112c3 3.5 8.5 3.5 11.5 0"/>
+<path d="M92 119v44"/>
+<path d="M92 132 L142 142M92 132 L70 148"/>
+<path d="M92 163l-11 41M92 163l12 41"/>
+<path d="M118 118c5-6 12-6 17 0M126 104c5-6 12-6 17 0" opacity=".35"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">2</text>
+</svg>

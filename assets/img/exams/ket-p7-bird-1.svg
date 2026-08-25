@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Orla finds a small bird in her garden. It cannot fly and one wing looks hurt.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M36 204c0-16 8-26 20-26M60 178v26" opacity=".45"/>
+<path d="M256 204c0-20 10-32 24-32" opacity=".45"/>
+<circle cx="104" cy="102" r="15"/>
+<path d="M97 98l6-3M105 95l6 3" stroke-width="2.8"/>
+<circle cx="100" cy="105" r="1.4" fill="#1A2752"/><circle cx="108" cy="105" r="1.4" fill="#1A2752"/>
+<path d="M98.5 115c3-4 8.5-4 11.5 0"/>
+<path d="M104 117v40"/>
+<path d="M104 128 L152 168M104 128 L80 146"/>
+<path d="M104 157l-11 47M104 157l12 47"/>
+<ellipse cx="182" cy="186" rx="20" ry="13" fill="#DDF4FF"/>
+<circle cx="200" cy="176" r="7"/>
+<path d="M206 173l7-3" />
+<path d="M170 180c8-8 20-8 26 2" />
+<path d="M164 196l-8 6M176 198l-4 6" opacity=".6"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">1</text>
+</svg>

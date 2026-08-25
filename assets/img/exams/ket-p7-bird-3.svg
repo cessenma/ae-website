@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Two weeks later the bird is much stronger and Orla lets it fly away.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M30 204c0-16 8-26 20-26M54 178v26" opacity=".45"/>
+<circle cx="96" cy="112" r="15"/>
+<path d="M90 109.5a1 1 0 0 1 4 0M98 109.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M90.5 120c3 4 8.5 4 11.5 0"/>
+<path d="M96 127v38"/>
+<path d="M96 138 L134 108M96 138 L74 152"/>
+<path d="M96 165l-11 39M96 165l12 39"/>
+<path d="M186 74c10-14 26-14 34 0" />
+<path d="M220 74c10-14 26-14 34 0" />
+<circle cx="220" cy="78" r="7" fill="#DDF4FF"/>
+<path d="M226 75l7-3"/>
+<path d="M150 118c8-8 18-10 26-6" opacity=".4"/>
+<path d="M160 138c8-8 18-10 26-6" opacity=".28"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">3</text>
+</svg>
