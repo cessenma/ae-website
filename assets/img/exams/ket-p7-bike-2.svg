@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Her neighbour Callum brings a pump and puts air in the flat back tyre.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<circle cx="112" cy="182" r="18"/>
+<circle cx="180" cy="182" r="18" fill="#DDF4FF"/>
+<path d="M180 182 L160 146 L124 146 L112 182"/>
+<path d="M160 146 L148 182 L180 182"/>
+<path d="M154 143h13M118 141h13"/>
+<circle cx="242" cy="104" r="15"/>
+<path d="M236 101.5a1 1 0 0 1 4 0M244 101.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M236.5 112c3 3.5 8.5 3.5 11.5 0"/>
+<path d="M242 119v46"/>
+<path d="M242 132l-30 20"/>
+<path d="M242 132l18 10"/>
+<path d="M242 165l-11 39M242 165l12 39"/>
+<path d="M210 150v46" stroke-width="3"/>
+<path d="M203 150h14"/>
+<path d="M210 194 L194 186"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">2</text>
+</svg>

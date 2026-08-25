@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Dilan stands on a skateboard for the first time. His friend Piper holds his hand. Dilan looks afraid.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<circle cx="104" cy="104" r="15"/>
+<path d="M98 101.5a1 1 0 0 1 4 0M106 101.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M98.5 112c3 3.5 8.5 3.5 11.5 0"/>
+<path d="M104 119v46"/>
+<path d="M104 130l34 6"/>
+<path d="M104 130l-18 18"/>
+<path d="M104 165l-11 39M104 165l12 39"/>
+<circle cx="184" cy="112" r="14"/>
+<path d="M177 108l6-3M185 105l6 3" stroke-width="2.8"/>
+<circle cx="180" cy="115" r="1.4" fill="#1A2752"/><circle cx="188" cy="115" r="1.4" fill="#1A2752"/>
+<path d="M179 124c3-3.5 7.5-3.5 10.5 0"/>
+<path d="M184 126v40"/>
+<path d="M184 136l-46 0"/>
+<path d="M184 136l22-12"/>
+<path d="M184 166l-13 24M184 166l14 24"/>
+<rect x="152" y="190" width="64" height="7" rx="3.5" fill="#DDF4FF"/>
+<circle cx="164" cy="200" r="4"/><circle cx="204" cy="200" r="4"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">1</text>
+</svg>

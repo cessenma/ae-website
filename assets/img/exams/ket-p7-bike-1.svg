@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Niamh stands outside her house holding her bike. The back tyre is flat and she looks worried.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<path d="M18 96h68v108H18Z"/><path d="M18 96l34-24 34 24" opacity=".55"/>
+<path d="M40 150h24v54H40Z"/><circle cx="58" cy="178" r="3"/>
+<ellipse cx="168" cy="190" rx="19" ry="11" fill="#DDF4FF"/>
+<path d="M151 198c6 4 28 4 34 0" opacity=".6"/>
+<circle cx="236" cy="182" r="18"/>
+<path d="M168 190 L190 146 L226 146 L236 182"/>
+<path d="M190 146 L202 190 L168 190"/>
+<path d="M184 143h13M220 141h13"/>
+<circle cx="122" cy="106" r="15"/>
+<path d="M115 102l6-3M123 99l6 3" stroke-width="2.8"/>
+<circle cx="118" cy="109" r="1.4" fill="#1A2752"/><circle cx="126" cy="109" r="1.4" fill="#1A2752"/>
+<path d="M116.5 119c3-4 8.5-4 11.5 0"/>
+<path d="M122 121v44"/>
+<path d="M122 132l64 14"/>
+<path d="M122 132l-20 16"/>
+<path d="M122 165l-11 39M122 165l12 39"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">1</text>
+</svg>

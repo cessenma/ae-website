@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Dilan rides the skateboard alone and smiles. He is moving quickly.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<circle cx="168" cy="106" r="15"/>
+<path d="M162 103.5a1 1 0 0 1 4 0M170 103.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M162.5 114c3 4 8.5 4 11.5 0"/>
+<path d="M168 121v42"/>
+<path d="M168 132l-30-10"/>
+<path d="M168 132l28 8"/>
+<path d="M168 163l-16 25M168 163l15 25"/>
+<rect x="136" y="188" width="66" height="7" rx="3.5" fill="#DDF4FF"/>
+<circle cx="148" cy="198" r="4"/><circle cx="190" cy="198" r="4"/>
+<path d="M96 150h26M88 168h30M100 186h22" opacity=".4"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">2</text>
+</svg>

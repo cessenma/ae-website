@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" role="img" aria-label="Niamh rides away to school on the mended bike. Callum waves goodbye.">
+<rect width="300" height="240" fill="#fff"/>
+<g fill="none" stroke="#1A2752" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 204h284"/>
+<circle cx="60" cy="118" r="15"/>
+<path d="M54 115.5a1 1 0 0 1 4 0M62 115.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M54.5 126c3 3.5 8.5 3.5 11.5 0"/>
+<path d="M60 133v38"/>
+<path d="M60 144l24-26"/>
+<path d="M60 144l-18 14"/>
+<path d="M60 171l-11 33M60 171l12 33"/>
+<path d="M80 96c7-7 16-7 23 0" opacity=".45"/>
+<circle cx="178" cy="180" r="17" fill="#DDF4FF"/>
+<circle cx="244" cy="180" r="17"/>
+<path d="M178 180 L198 148 L232 148 L244 180"/>
+<path d="M198 148 L211 180 L178 180"/>
+<path d="M228 143h14"/>
+<circle cx="207" cy="112" r="14"/>
+<path d="M201 109.5a1 1 0 0 1 4 0M209 109.5a1 1 0 0 1 4 0" stroke-width="2.8"/>
+<path d="M201.5 120c3 3.5 8 3.5 11 0"/>
+<path d="M207 126 L200 148"/>
+<path d="M209 130 L235 145"/>
+<path d="M200 148 L211 168 L206 180"/>
+<path d="M200 148 L216 166 L222 180"/>
+<path d="M126 152h26M120 170h30" opacity=".4"/>
+</g>
+<text x="150" y="230" font-family="'Baloo 2',sans-serif" font-size="13" font-weight="700" fill="#5A6577" text-anchor="middle">3</text>
+</svg>
