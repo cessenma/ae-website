@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-08-24 06:22",
+ "checked_at": "2026-08-31 08:14",
  "schools": [
   {
    "key": "pcjh",
@@ -12,7 +12,7 @@
    "note": "行事曆以圖片公告，本頁不轉錄日期。",
    "link_ok": true,
    "http": 200,
-   "bytes": 29004,
+   "bytes": 29059,
    "events": [],
    "pdf_url": "https://www.pcjh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelUzTDNCMFlWOHhOVE0yTjE4eU16QTNPREEyWHpNMk9UazFMbkJrWmc9PQ==&fname=WW54RPOKIC44TXMP00VWTSXWDC302525WS34YSGCLPZTGCA5UWA4ST54GGKKTTRK44POHD15002454WSMOXSA0HCUSB0GCWS01RL31MLROTS01UWCC10CDFCKK4001YTA4NOUWLOVWTWDG00WXMOGG35JDGDVSA5WS30TSDGFGTSYSQKTWLK21ZX20B0IGXWIGB430XSWSMOB1NOZTA1NLTS",
    "pdf_label": "115學年度上學期行事曆"
@@ -28,7 +28,7 @@
    "note": "",
    "link_ok": true,
    "http": 200,
-   "bytes": 57151,
+   "bytes": 60284,
    "events": [],
    "parse_note": "ValueError: found 2 行事曆 link(s) but no PDF behind any of them"
   },
@@ -43,7 +43,7 @@
    "note": "",
    "link_ok": true,
    "http": 200,
-   "bytes": 44952,
+   "bytes": 45578,
    "events": [],
    "parse_note": "ValueError: found 2 行事曆 link(s) but no PDF behind any of them"
   },
@@ -58,7 +58,7 @@
    "note": "",
    "link_ok": true,
    "http": 200,
-   "bytes": 108179,
+   "bytes": 114029,
    "events": [],
    "parse_note": "ValueError: found 1 行事曆 link(s) but no PDF behind any of them"
   }
