@@ -1,0 +1,54 @@
+/* AE Cambridge score calculator — namespace .calc-* ; loads after styles.css */
+.calc-wrap{background:#fff;border-radius:26px;box-shadow:var(--card-shadow);padding:clamp(20px,4vw,34px);max-width:720px;margin:30px auto 0}
+.calc-rows{display:flex;flex-direction:column;gap:12px}
+.calc-row{display:grid;grid-template-columns:1fr auto auto;gap:14px;align-items:center;background:var(--light-blue);border-radius:16px;padding:14px 16px;transition:background .2s}
+.calc-row.filled{background:#eaf7ff}
+.calc-row label{display:flex;flex-direction:column;gap:2px;font-size:15px;color:var(--navy);cursor:pointer}
+.calc-row label b{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:16px}
+.calc-note{font-size:12.5px;color:var(--text-body);line-height:1.4}
+.calc-in{display:flex;align-items:center;gap:6px}
+.calc-in input{width:72px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:20px;color:var(--navy);text-align:center;border:2px solid #cfe9f8;border-radius:12px;padding:8px 4px;background:#fff;-moz-appearance:textfield}
+.calc-in input::-webkit-outer-spin-button,.calc-in input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.calc-in input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(28,176,246,.18)}
+.calc-max{font-size:13px;color:var(--text-body);white-space:nowrap}
+.calc-out{text-align:center;min-width:70px}
+.calc-scale{display:block;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:22px;color:var(--blue)}
+.calc-scale-lab{display:block;font-size:11px;color:var(--text-body);letter-spacing:.5px}
+@media(max-width:560px){
+  .calc-row{grid-template-columns:1fr auto;row-gap:10px}
+  .calc-out{grid-column:1/-1;display:flex;align-items:baseline;gap:8px;justify-content:flex-end;text-align:right}
+  .calc-scale-lab{display:inline}
+}
+.calc-result{margin-top:24px;padding-top:22px;border-top:2px dashed #e5e9f2}
+.calc-empty{color:var(--text-body);font-size:15px;text-align:center;margin:0}
+.calc-big{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap}
+.calc-score{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:clamp(52px,11vw,80px);line-height:1;color:var(--navy)}
+.calc-big.tone-gold .calc-score{color:#c8901a}
+.calc-big.tone-green .calc-score{color:var(--green-dk)}
+.calc-big.tone-amber .calc-score{color:#c26a1d}
+.calc-big.tone-grey .calc-score{color:#8a93a8}
+.calc-meta{text-align:left}
+.calc-grade{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:24px;color:var(--navy)}
+.calc-cefr{font-size:14px;color:var(--text-body);letter-spacing:1px}
+.calc-bar{position:relative;height:14px;border-radius:100px;background:#eef2f7;margin:20px 0 26px}
+.calc-bar-fill{height:100%;border-radius:100px;transition:width .45s cubic-bezier(.4,1.3,.5,1);background:var(--blue)}
+.calc-bar-fill.tone-gold{background:linear-gradient(90deg,var(--yellow),#e0a800)}
+.calc-bar-fill.tone-green{background:linear-gradient(90deg,#4fd07f,var(--green))}
+.calc-bar-fill.tone-amber{background:linear-gradient(90deg,#ffc46b,var(--coral))}
+.calc-bar-fill.tone-grey{background:#c3cad8}
+.calc-bar-min,.calc-bar-max{position:absolute;top:20px;font-size:12px;color:var(--text-body)}
+.calc-bar-min{left:0}.calc-bar-max{right:0}
+.calc-say{text-align:center;font-size:16px;color:var(--navy);margin:0}
+.calc-warn{margin:14px 0 0;background:#FFFBEF;border-left:4px solid var(--yellow);border-radius:0 12px 12px 0;padding:12px 16px;font-size:14px;line-height:1.7;color:var(--navy)}
+.calc-warn b{font-weight:700}
+.calc-src{font-size:13px;line-height:1.75;color:var(--text-body);margin-top:20px;padding-top:16px;border-top:1px solid #eef2f7}
+.calc-src a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}
+.calc-next{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;justify-content:center}
+.calc-next a{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;transition:border-color .2s,transform .08s}
+.calc-next a:hover{border-color:var(--blue)}
+.calc-next a:active{transform:scale(.97)}
+.calc-band-table{width:100%;border-collapse:collapse;margin-top:18px;font-size:14.5px}
+.calc-band-table th,.calc-band-table td{padding:10px 12px;text-align:left;border-bottom:1px solid #eef2f7}
+.calc-band-table th{font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--navy);background:var(--light-blue)}
+.calc-band-table tr:last-child td{border-bottom:none}
+.calc-band-table .hl{background:#f2fbf5;font-weight:600}
