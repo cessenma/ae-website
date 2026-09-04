@@ -8,11 +8,11 @@
 <link rel="preload" as="style" href="/assets/styles.css?v=ca8e2000" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/styles.css?v=ca8e2000"></noscript>
 <!-- AE:CRIT end -->
 <meta name="theme-color" content="#1A2752">
-<title>FCE 聽力 Part 2 免費線上練習：句子填空（10 題・附音檔與逐字稿）｜埃森美語</title>
+<title>FCE 聽力 Part 2 練習：句子填空（10 題・附音檔與逐字稿）｜埃森美語</title>
 <meta name="description" content="FCE（B2 First for Schools）Listening Part 2「句子填空」免費線上練習：10 題原創題目，附錄音檔、逐字稿與中文解析，做完立刻對答案。埃森美語美籍持證教師編寫。">
 <link rel="canonical" href="https://americanenglish.com.tw/fce-listening-practice-part2/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="FCE 聽力 Part 2 免費線上練習：句子填空（10 題・附音檔與逐字稿）｜埃森美語">
+<meta property="og:title" content="FCE 聽力 Part 2 練習：句子填空">
 <meta property="og:description" content="10 題原創題目，附錄音檔、逐字稿與中文解析。">
 <meta property="og:url" content="https://americanenglish.com.tw/fce-listening-practice-part2/">
 <meta property="og:locale" content="zh_TW">
@@ -75,6 +75,20 @@
 .stimulus p{font-size:16px;line-height:1.85;color:#333c4d;margin:0 0 10px}
 .stimulus p:last-child{margin:0}
 .stimulus .gapnum{display:inline-block;min-width:34px;text-align:center;font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--blue);background:var(--light-blue);border-radius:8px;padding:0 6px}
+/* Part-1 texts are real-world artefacts: frame each as what it is, the way the
+   real paper does. The label stays a caption; the frame is the text itself. */
+.stimulus h4{text-transform:none}
+.stimulus.k-notice,.stimulus.k-sign,.stimulus.k-advert,.stimulus.k-label{border:2.5px solid var(--navy);background:#fffef7;text-align:center;box-shadow:0 5px 0 rgba(26,39,82,.10)}
+/* the headline is the first line of the body (a <br> ends it), not a separate node —
+   ::first-line is the only selector that reaches it without touching the rest */
+.stimulus.k-notice p:first-of-type::first-line,.stimulus.k-sign p:first-of-type::first-line,.stimulus.k-advert p:first-of-type::first-line,.stimulus.k-label p:first-of-type::first-line{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:18px;letter-spacing:.4px;color:var(--navy)}
+.stimulus.k-sign,.stimulus.k-label{max-width:460px;margin-left:auto;margin-right:auto}
+.stimulus.k-email,.stimulus.k-message{border-left:6px solid var(--blue);background:#f7fbff;text-align:left}
+.stimulus.k-notes,.stimulus.k-list{background:linear-gradient(#fff,#fff) padding-box,repeating-linear-gradient(#fbfdff,#fbfdff 33px,#e6eef7 34px);border-style:dashed}
+/* the question that belongs to a text, tucked under it */
+.prx-paired .prx-slot{margin:-6px 0 26px;padding-left:14px;border-left:3px solid var(--light-blue)}
+.prx-paired .prx-slot .prx-item{margin-top:0}
+@media print{.stimulus.k-notice,.stimulus.k-sign,.stimulus.k-advert,.stimulus.k-label{box-shadow:none}}
 .prx-item{background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:16px;padding:16px 18px;margin:0 0 14px}
 .prx-item legend,.prx-item .qh{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:16px;color:var(--navy);padding:0 4px}
 .prx-item .qtext{font-size:16px;color:#333c4d;margin:6px 0 10px;line-height:1.7}
@@ -182,7 +196,7 @@
 </section>
 
 <script>
-const PRX = { part:2, sets:[{"setId": "r1", "items": [{"n": 1, "type": "gaptext", "q": "Chloe's conservation placement lasted ________.", "accept": ["three weeks"], "why": "原文明確說『I spent three weeks doing a conservation placement』，聽到的正是 three weeks，屬於原句直接聽寫，不可寫成其他時間長度。"}, {"n": 2, "type": "gaptext", "q": "The placement took place on an island called ________.", "accept": ["Magnetic Island"], "why": "地名在句首即出現（『on Magnetic Island, off the coast of Queensland』），注意 Queensland 只是所在的州，不是空格答案。"}, {"n": 3, "type": "gaptext", "q": "Chloe first heard about the placement through a ________ her teacher recommended.", "accept": ["website", "a website"], "why": "原文『I found the placement through a website my geography teacher recommended』，空格填 website 這個字本身，『geography teacher』是誰推薦的資訊，不是空格要填的內容。"}, {"n": 4, "type": "gaptext", "q": "The main project involved monitoring a population of ________.", "accept": ["rock wallabies", "the rock wallabies"], "why": "原文『monitoring a local population of rock wallabies』，rock wallabies 是監測對象，需完整寫出這個詞組，不能只寫 wallabies。"}, {"n": 5, "type": "gaptext", "q": "Each morning, the team checked a set of ________ hidden along the trails.", "accept": ["motion-sensor cameras", "motion sensor cameras"], "why": "原文『check a set of motion-sensor cameras hidden along the hillside trails』，空格填 motion-sensor cameras，注意後面的 hillside trails 是放置地點，不是設備名稱。"}, {"n": 6, "type": "gaptext", "q": "Much of the volunteers' time was spent removing a plant called ________.", "accept": ["lantana"], "why": "原文明確指出植物名稱『an invasive plant called lantana』，lantana 是專有名詞，需照聽到的拼字填寫。"}, {"n": 7, "type": "gaptext", "q": "After getting cuts from thorns, Chloe began wearing ________ every day.", "accept": ["gardening gloves", "thick gardening gloves"], "why": "原文『I started wearing thick gardening gloves every single day』，聽到的核心答案是 gardening gloves，thick 是形容詞，寫不寫都可接受。"}, {"n": 8, "type": "gaptext", "q": "The volunteers in Chloe's cabin came from about ________ different countries.", "accept": ["a dozen", "twelve", "12"], "why": "原文『the volunteers came from about a dozen different countries』，a dozen 意思是『十二個』，需寫下實際聽到的字詞（a dozen 或其同義數字寫法），不能改成其他數字。"}, {"n": 9, "type": "gaptext", "q": "A tropical storm cut off the electricity for almost ________.", "accept": ["two days", "almost two days"], "why": "原文『a tropical storm knocked out the electricity for almost two days』，空格填 two days，almost 是修飾語，核心答案是這段時間長度。"}, {"n": 10, "type": "gaptext", "q": "Chloe says the most useful skill she gained from the placement was ________.", "accept": ["patience"], "why": "原文『I wouldn't say camera-trap data or plant identification — I'd say patience』，說話者用否定句型先排除兩個干擾答案，才點出真正的答案 patience，需特別注意這種『先說反話、再說正解』的句型。"}]}] };
+const PRX = { part:2, sets:[{"setId": "r1", "items": [{"n": 1, "type": "gaptext", "q": "Chloe's conservation placement lasted ________.", "accept": ["three weeks"], "why": "原文明確說『I spent three weeks doing a conservation placement』，聽到的正是 three weeks，屬於原句直接聽寫，不可寫成其他時間長度。"}, {"n": 2, "type": "gaptext", "q": "The placement took place on an island called ________.", "accept": ["Magnetic Island"], "why": "地名在句首即出現（『on Magnetic Island, off the coast of Queensland』），注意 Queensland 只是所在的州，不是空格答案。"}, {"n": 3, "type": "gaptext", "q": "Chloe first heard about the placement through a ________ her teacher recommended.", "accept": ["website"], "why": "原文『I found the placement through a website my geography teacher recommended』，空格填 website 這個字本身，『geography teacher』是誰推薦的資訊，不是空格要填的內容。"}, {"n": 4, "type": "gaptext", "q": "The main project involved monitoring a population of ________.", "accept": ["rock wallabies", "the rock wallabies"], "why": "原文『monitoring a local population of rock wallabies』，rock wallabies 是監測對象，需完整寫出這個詞組，不能只寫 wallabies。"}, {"n": 5, "type": "gaptext", "q": "Each morning, the team checked a set of ________ hidden along the trails.", "accept": ["motion-sensor cameras", "motion sensor cameras"], "why": "原文『check a set of motion-sensor cameras hidden along the hillside trails』，空格填 motion-sensor cameras，注意後面的 hillside trails 是放置地點，不是設備名稱。"}, {"n": 6, "type": "gaptext", "q": "Much of the volunteers' time was spent removing a plant called ________.", "accept": ["lantana"], "why": "原文明確指出植物名稱『an invasive plant called lantana』，lantana 是專有名詞，需照聽到的拼字填寫。"}, {"n": 7, "type": "gaptext", "q": "After getting cuts from thorns, Chloe began wearing ________ every day.", "accept": ["gardening gloves", "thick gardening gloves"], "why": "原文『I started wearing thick gardening gloves every single day』，聽到的核心答案是 gardening gloves，thick 是形容詞，寫不寫都可接受。"}, {"n": 8, "type": "gaptext", "q": "The volunteers in Chloe's cabin came from about ________ different countries.", "accept": ["a dozen", "twelve", "12"], "why": "原文『the volunteers came from about a dozen different countries』，a dozen 意思是『十二個』，需寫下實際聽到的字詞（a dozen 或其同義數字寫法），不能改成其他數字。"}, {"n": 9, "type": "gaptext", "q": "A tropical storm cut off the electricity for almost ________.", "accept": ["two days", "almost two days"], "why": "原文『a tropical storm knocked out the electricity for almost two days』，空格填 two days，almost 是修飾語，核心答案是這段時間長度。"}, {"n": 10, "type": "gaptext", "q": "Chloe says the most useful skill she gained from the placement was ________.", "accept": ["patience"], "why": "原文『I wouldn't say camera-trap data or plant identification — I'd say patience』，說話者用否定句型先排除兩個干擾答案，才點出真正的答案 patience，需特別注意這種『先說反話、再說正解』的句型。"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
   const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
@@ -246,7 +260,18 @@ const PRX = { part:2, sets:[{"setId": "r1", "items": [{"n": 1, "type": "gaptext"
   PRX.sets.forEach((s,si)=>{
     const host=document.getElementById('prx-'+si);
     if(!host) return;
-    host.innerHTML=s.items.map(it=>{const k='s'+si+'q'+it.n; flat.push([k,it]); return render(it,k);}).join('');
+    const key=it=>'s'+si+'q'+it.n;
+    s.items.forEach(it=>flat.push([key(it),it]));
+    const slots=host.querySelectorAll('.prx-slot');
+    if(slots.length){
+      // paired layout: each question renders directly under the text it asks about
+      slots.forEach(sl=>{
+        const ns=(sl.dataset.items||'').split(',').filter(Boolean).map(Number);
+        sl.innerHTML=s.items.filter(it=>ns.includes(it.n)).map(it=>render(it,key(it))).join('');
+      });
+    }else{
+      host.innerHTML=s.items.map(it=>render(it,key(it))).join('');
+    }
     host.addEventListener('change',e=>{
       const f=e.target.closest('fieldset'); if(!f) return;
       f.querySelectorAll('.prx-opt').forEach(o=>o.classList.toggle('sel',o.querySelector('input').checked));
@@ -298,6 +323,32 @@ const PRX = { part:2, sets:[{"setId": "r1", "items": [{"n": 1, "type": "gaptext"
   document.getElementById('btnPrint').addEventListener('click',()=>window.print());
 })();
 </script>
+
+
+<!-- AE:PACKOFFER -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div style="background:linear-gradient(135deg,#FFFBEF,#FFF4D6);border:2px solid var(--yellow);border-radius:24px;padding:clamp(22px,4vw,32px);box-shadow:0 10px 30px rgba(255,200,40,.18)">
+      <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between">
+        <div style="flex:1 1 320px;min-width:280px">
+          <span class="eyebrow eyebrow-yellow">完整模擬試卷</span>
+          <h2 style="font-size:clamp(24px,3.4vw,32px);margin:12px 0 10px">想<em>整份計時做完</em>嗎？</h2>
+          <p class="body" style="margin:0;font-size:15px">這一頁的線上練習<b>永遠免費</b>。若想要整份計時做完的完整試卷——含可列印題目卷、聽力音檔與中文逐題解析——我們自己出了 27 份，可在 LINE 購買。</p>
+        </div>
+        <div style="flex:0 1 280px">
+          <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px">
+            <div style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy);border-bottom:1px dashed #e3d4a8;padding-bottom:6px"><span>任選 4 份</span><b>NT$390</b></div>
+            <div style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy);border-bottom:1px dashed #e3d4a8;padding-bottom:6px"><span>單一級別 9 份</span><b>NT$590</b></div>
+            <div style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy)"><span>三級全套 27 份</span><b>NT$1,499</b></div>
+          </div>
+          <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-yellow" style="width:100%">加 LINE 購買</a>
+          <p style="text-align:center;font-size:12.5px;color:var(--text-body);margin:8px 0 0"><a href="/cambridge-practice-exam-pack/" style="color:var(--text-body)">先看試卷裡有什麼 →</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /AE:PACKOFFER -->
 
 <section class="section bg-soft">
   <div class="wrap center stack">

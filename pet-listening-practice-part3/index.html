@@ -8,11 +8,11 @@
 <link rel="preload" as="style" href="/assets/styles.css?v=ca8e2000" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/styles.css?v=ca8e2000"></noscript>
 <!-- AE:CRIT end -->
 <meta name="theme-color" content="#1A2752">
-<title>PET 聽力 Part 3 免費線上練習：筆記填空（6 題・附音檔與逐字稿）｜埃森美語</title>
+<title>PET 聽力 Part 3 練習：筆記填空（6 題・附音檔與逐字稿）｜埃森美語</title>
 <meta name="description" content="PET（B1 Preliminary for Schools）Listening Part 3「筆記填空」免費線上練習：6 題原創題目，附錄音檔、逐字稿與中文解析，做完立刻對答案。埃森美語美籍持證教師編寫。">
 <link rel="canonical" href="https://americanenglish.com.tw/pet-listening-practice-part3/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PET 聽力 Part 3 免費線上練習：筆記填空（6 題・附音檔與逐字稿）｜埃森美語">
+<meta property="og:title" content="PET 聽力 Part 3 練習：筆記填空">
 <meta property="og:description" content="6 題原創題目，附錄音檔、逐字稿與中文解析。">
 <meta property="og:url" content="https://americanenglish.com.tw/pet-listening-practice-part3/">
 <meta property="og:locale" content="zh_TW">
@@ -75,6 +75,20 @@
 .stimulus p{font-size:16px;line-height:1.85;color:#333c4d;margin:0 0 10px}
 .stimulus p:last-child{margin:0}
 .stimulus .gapnum{display:inline-block;min-width:34px;text-align:center;font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--blue);background:var(--light-blue);border-radius:8px;padding:0 6px}
+/* Part-1 texts are real-world artefacts: frame each as what it is, the way the
+   real paper does. The label stays a caption; the frame is the text itself. */
+.stimulus h4{text-transform:none}
+.stimulus.k-notice,.stimulus.k-sign,.stimulus.k-advert,.stimulus.k-label{border:2.5px solid var(--navy);background:#fffef7;text-align:center;box-shadow:0 5px 0 rgba(26,39,82,.10)}
+/* the headline is the first line of the body (a <br> ends it), not a separate node —
+   ::first-line is the only selector that reaches it without touching the rest */
+.stimulus.k-notice p:first-of-type::first-line,.stimulus.k-sign p:first-of-type::first-line,.stimulus.k-advert p:first-of-type::first-line,.stimulus.k-label p:first-of-type::first-line{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:18px;letter-spacing:.4px;color:var(--navy)}
+.stimulus.k-sign,.stimulus.k-label{max-width:460px;margin-left:auto;margin-right:auto}
+.stimulus.k-email,.stimulus.k-message{border-left:6px solid var(--blue);background:#f7fbff;text-align:left}
+.stimulus.k-notes,.stimulus.k-list{background:linear-gradient(#fff,#fff) padding-box,repeating-linear-gradient(#fbfdff,#fbfdff 33px,#e6eef7 34px);border-style:dashed}
+/* the question that belongs to a text, tucked under it */
+.prx-paired .prx-slot{margin:-6px 0 26px;padding-left:14px;border-left:3px solid var(--light-blue)}
+.prx-paired .prx-slot .prx-item{margin-top:0}
+@media print{.stimulus.k-notice,.stimulus.k-sign,.stimulus.k-advert,.stimulus.k-label{box-shadow:none}}
 .prx-item{background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:16px;padding:16px 18px;margin:0 0 14px}
 .prx-item legend,.prx-item .qh{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:16px;color:var(--navy);padding:0 4px}
 .prx-item .qtext{font-size:16px;color:#333c4d;margin:6px 0 10px;line-height:1.7}
@@ -158,7 +172,7 @@
       <p class="lnote"><b>關於這些錄音</b>　音檔為本地生成的神經網路合成語音，每個角色用不同的聲音、涵蓋多種英語口音，語速依等級調整，內容與停頓完全依照官方格式，包含官方規定的「播放兩次」。要誠實說一件事：合成語音再自然，也不等於真人錄音——正式考試放的是真人錄的。<strong>先自己聽兩次再打開逐字稿</strong>，效果差很多。</p>
 
       <div class="stimulus tasksheet"><h4>Mountain Explorers Summer Camp — Booking Notes</h4><p><strong>MOUNTAIN EXPLORERS SUMMER CAMP</strong><br>Location: <span class="gapnum">(1)</span><br>Activity leader: Mr <span class="gapnum">(2)</span><br>Number of days: <span class="gapnum">(3)</span><br>Price includes all meals and a free <span class="gapnum">(4)</span><br>Remember to bring your own <span class="gapnum">(5)</span><br>Book online before: <span class="gapnum">(6)</span></p><p class="ts-note">先看過這張表再按播放——正式考試也會給你時間讀題。</p></div>
-      <div class="lrec"><div class="lrec-h"><span class="ln">錄音 1</span><span class="lq">第 1–6 題</span><span class="ldur">2:21　含重複播放</span></div><audio controls preload="metadata"><source src="/assets/audio/pet/listening-part3/r1.m4a" type="audio/mp4">你的瀏覽器不支援音訊播放，請直接下載 <a href="/assets/audio/pet/listening-part3/r1.m4a">音檔</a>。</audio><details class="ltrans"><summary>看逐字稿（先自己聽兩次再打開）</summary><div class="ltbody"><p class="nar"><b>Narrator</b>You will hear a recorded telephone message about a summer camp. Look at the notes below. For questions 1 to 6, complete the notes with a word or a number. You will hear the recording twice.</p><p><b>Woman</b>Hello, and thanks for calling Mountain Explorers Summer Camp! Here's all the information you need to book a place this year. This summer, our adventure camp is being held up at Lion's Head Mountain — that's L, I, O, N, apostrophe S, Head Mountain — instead of the riverside site we used last year, since the new site has much better hiking trails. Your group leader for the week will be Mr Weaver — that's spelled W, E, A, V, E, R. He's been running our hiking trips for six years now, so you're in safe hands. The camp usually runs for four days, but this summer we've extended it, so it'll now run for five days, from Monday to Friday. Now, about the price — it's three thousand two hundred NT dollars per camper, and that includes every meal during the trip. We also used to give out a free water bottle, but this year, every camper gets a free cap instead, with the camp logo on it. You won't need to bring a tent, since we provide those, but please do bring your own sleeping bag, as we don't have enough spares for everyone. Finally, spaces are limited, so please make sure you book online before the third of July — after that date, we can't guarantee a place. Thanks again for calling, and we hope to see you on the mountain!</p><p class="nar"><b>Narrator</b>Now listen again.</p><p><b>Woman</b>Hello, and thanks for calling Mountain Explorers Summer Camp! Here's all the information you need to book a place this year. This summer, our adventure camp is being held up at Lion's Head Mountain — that's L, I, O, N, apostrophe S, Head Mountain — instead of the riverside site we used last year, since the new site has much better hiking trails. Your group leader for the week will be Mr Weaver — that's spelled W, E, A, V, E, R. He's been running our hiking trips for six years now, so you're in safe hands. The camp usually runs for four days, but this summer we've extended it, so it'll now run for five days, from Monday to Friday. Now, about the price — it's three thousand two hundred NT dollars per camper, and that includes every meal during the trip. We also used to give out a free water bottle, but this year, every camper gets a free cap instead, with the camp logo on it. You won't need to bring a tent, since we provide those, but please do bring your own sleeping bag, as we don't have enough spares for everyone. Finally, spaces are limited, so please make sure you book online before the third of July — after that date, we can't guarantee a place. Thanks again for calling, and we hope to see you on the mountain!</p></div></details></div>
+      <div class="lrec"><div class="lrec-h"><span class="ln">錄音 1</span><span class="lq">第 1–6 題</span><span class="ldur">2:21　含重複播放</span></div><audio controls preload="metadata"><source src="/assets/audio/pet/listening-part3/r1.m4a" type="audio/mp4">你的瀏覽器不支援音訊播放，請直接下載 <a href="/assets/audio/pet/listening-part3/r1.m4a">音檔</a>。</audio><details class="ltrans"><summary>看逐字稿（先自己聽兩次再打開）</summary><div class="ltbody"><p class="nar"><b>Narrator</b>You will hear a recorded telephone message about a summer camp. Look at the notes below. For each question, write the correct answer in the gap. Write one or two words or a number or a date or a time. You will hear the recording twice.</p><p><b>Woman</b>Hello, and thanks for calling Mountain Explorers Summer Camp! Here's all the information you need to book a place this year. This summer, our adventure camp is being held up at Lion's Head Mountain — that's L, I, O, N, apostrophe S, Head Mountain — instead of the riverside site we used last year, since the new site has much better hiking trails. Your group leader for the week will be Mr Weaver — that's spelled W, E, A, V, E, R. He's been running our hiking trips for six years now, so you're in safe hands. The camp usually runs for four days, but this summer we've extended it, so it'll now run for five days, from Monday to Friday. Now, about the price — it's three thousand two hundred NT dollars per camper, and that includes every meal during the trip. We also used to give out a free water bottle, but this year, every camper gets a free cap instead, with the camp logo on it. You won't need to bring a tent, since we provide those, but please do bring your own sleeping bag, as we don't have enough spares for everyone. Finally, spaces are limited, so please make sure you book online before the third of July — after that date, we can't guarantee a place. Thanks again for calling, and we hope to see you on the mountain!</p><p class="nar"><b>Narrator</b>Now listen again.</p><p><b>Woman</b>Hello, and thanks for calling Mountain Explorers Summer Camp! Here's all the information you need to book a place this year. This summer, our adventure camp is being held up at Lion's Head Mountain — that's L, I, O, N, apostrophe S, Head Mountain — instead of the riverside site we used last year, since the new site has much better hiking trails. Your group leader for the week will be Mr Weaver — that's spelled W, E, A, V, E, R. He's been running our hiking trips for six years now, so you're in safe hands. The camp usually runs for four days, but this summer we've extended it, so it'll now run for five days, from Monday to Friday. Now, about the price — it's three thousand two hundred NT dollars per camper, and that includes every meal during the trip. We also used to give out a free water bottle, but this year, every camper gets a free cap instead, with the camp logo on it. You won't need to bring a tent, since we provide those, but please do bring your own sleeping bag, as we don't have enough spares for everyone. Finally, spaces are limited, so please make sure you book online before the third of July — after that date, we can't guarantee a place. Thanks again for calling, and we hope to see you on the mountain!</p></div></details></div>
       <form class="prx-form" id="prx-0" novalidate></form>
 
       <div class="prx-bar">
@@ -183,7 +197,7 @@
 </section>
 
 <script>
-const PRX = { part:3, sets:[{"setId": "r1", "items": [{"n": 1, "type": "gaptext", "q": "第 (1) 格", "accept": ["Lion's Head Mountain", "Lion's Head"], "why": "地點是 Lion's Head Mountain,錄音清楚拼出 L-I-O-N 加上撇號 S,這是聽力最容易扣分的拼字陷阱;去年用過的河邊營地只是提到但已被取代的干擾資訊,不是今年的答案。"}, {"n": 2, "type": "gaptext", "q": "第 (2) 格", "accept": ["Weaver"], "why": "隊輔的姓氏 Weaver 在錄音中有逐字母拼出 W-E-A-V-E-R,必須完全拼對才給分,這是 Part 3 最常見的拼字陷阱;筆記上已印出 'Mr',答案只需填姓氏。"}, {"n": 3, "type": "gaptext", "q": "第 (3) 格", "accept": ["5", "five"], "why": "營隊天數原本是 four days,但錄音接著說『this summer we've extended it, so it'll now run for five days』,是典型的說話者改口陷阱,答案要聽到最後更新的數字,不能只聽到前半句就作答。"}, {"n": 4, "type": "gaptext", "q": "第 (4) 格", "accept": ["cap"], "why": "贈品原本是 water bottle,但錄音後面說『this year, every camper gets a free cap instead』,同樣是說話者改口的陷阱,答案是最新提到的 cap,不是先講的 water bottle。"}, {"n": 5, "type": "gaptext", "q": "第 (5) 格", "accept": ["sleeping bag"], "why": "錄音明確說不用帶帳篷(tent 由主辦單位提供),但要求自備 sleeping bag,tent 是反向陷阱,真正要帶的是睡袋。"}, {"n": 6, "type": "gaptext", "q": "第 (6) 格", "accept": ["3rd July", "third of July", "July 3rd", "3 July", "the 3rd of July"], "why": "報名截止日是 the third of July,日期類答案要注意數字與月份的正確順序,可接受 3rd July / July 3rd 等常見書寫方式,但月份與日期不可顛倒或寫錯。"}]}] };
+const PRX = { part:3, sets:[{"setId": "r1", "items": [{"n": 1, "type": "gaptext", "q": "第 (1) 格", "accept": ["Lion's Head Mountain", "Lion's Head"], "why": "地點是 Lion's Head Mountain,錄音清楚拼出 L-I-O-N 加上撇號 S,這是聽力最容易扣分的拼字陷阱;去年用過的河邊營地只是提到但已被取代的干擾資訊，不是今年的答案。"}, {"n": 2, "type": "gaptext", "q": "第 (2) 格", "accept": ["Weaver"], "why": "隊輔的姓氏 Weaver 在錄音中有逐字母拼出 W-E-A-V-E-R,必須完全拼對才給分，這是 Part 3 最常見的拼字陷阱;筆記上已印出 'Mr',答案只需填姓氏。"}, {"n": 3, "type": "gaptext", "q": "第 (3) 格", "accept": ["5", "five"], "why": "營隊天數原本是 four days,但錄音接著說『this summer we've extended it, so it'll now run for five days』,是典型的說話者改口陷阱，答案要聽到最後更新的數字，不能只聽到前半句就作答。"}, {"n": 4, "type": "gaptext", "q": "第 (4) 格", "accept": ["cap"], "why": "贈品原本是 water bottle,但錄音後面說『this year, every camper gets a free cap instead』,同樣是說話者改口的陷阱，答案是最新提到的 cap,不是先講的 water bottle。"}, {"n": 5, "type": "gaptext", "q": "第 (5) 格", "accept": ["sleeping bag"], "why": "錄音明確說不用帶帳篷(tent 由主辦單位提供),但要求自備 sleeping bag,tent 是反向陷阱，真正要帶的是睡袋。"}, {"n": 6, "type": "gaptext", "q": "第 (6) 格", "accept": ["3rd July", "third of July", "July 3rd", "3 July", "the 3rd of July"], "why": "報名截止日是 the third of July,日期類答案要注意數字與月份的正確順序，可接受 3rd July / July 3rd 等常見書寫方式，但月份與日期不可顛倒或寫錯。"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
   const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
@@ -247,7 +261,18 @@ const PRX = { part:3, sets:[{"setId": "r1", "items": [{"n": 1, "type": "gaptext"
   PRX.sets.forEach((s,si)=>{
     const host=document.getElementById('prx-'+si);
     if(!host) return;
-    host.innerHTML=s.items.map(it=>{const k='s'+si+'q'+it.n; flat.push([k,it]); return render(it,k);}).join('');
+    const key=it=>'s'+si+'q'+it.n;
+    s.items.forEach(it=>flat.push([key(it),it]));
+    const slots=host.querySelectorAll('.prx-slot');
+    if(slots.length){
+      // paired layout: each question renders directly under the text it asks about
+      slots.forEach(sl=>{
+        const ns=(sl.dataset.items||'').split(',').filter(Boolean).map(Number);
+        sl.innerHTML=s.items.filter(it=>ns.includes(it.n)).map(it=>render(it,key(it))).join('');
+      });
+    }else{
+      host.innerHTML=s.items.map(it=>render(it,key(it))).join('');
+    }
     host.addEventListener('change',e=>{
       const f=e.target.closest('fieldset'); if(!f) return;
       f.querySelectorAll('.prx-opt').forEach(o=>o.classList.toggle('sel',o.querySelector('input').checked));
@@ -299,6 +324,32 @@ const PRX = { part:3, sets:[{"setId": "r1", "items": [{"n": 1, "type": "gaptext"
   document.getElementById('btnPrint').addEventListener('click',()=>window.print());
 })();
 </script>
+
+
+<!-- AE:PACKOFFER -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div style="background:linear-gradient(135deg,#FFFBEF,#FFF4D6);border:2px solid var(--yellow);border-radius:24px;padding:clamp(22px,4vw,32px);box-shadow:0 10px 30px rgba(255,200,40,.18)">
+      <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between">
+        <div style="flex:1 1 320px;min-width:280px">
+          <span class="eyebrow eyebrow-yellow">完整模擬試卷</span>
+          <h2 style="font-size:clamp(24px,3.4vw,32px);margin:12px 0 10px">想<em>整份計時做完</em>嗎？</h2>
+          <p class="body" style="margin:0;font-size:15px">這一頁的線上練習<b>永遠免費</b>。若想要整份計時做完的完整試卷——含可列印題目卷、聽力音檔與中文逐題解析——我們自己出了 27 份，可在 LINE 購買。</p>
+        </div>
+        <div style="flex:0 1 280px">
+          <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px">
+            <div style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy);border-bottom:1px dashed #e3d4a8;padding-bottom:6px"><span>任選 4 份</span><b>NT$390</b></div>
+            <div style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy);border-bottom:1px dashed #e3d4a8;padding-bottom:6px"><span>單一級別 9 份</span><b>NT$590</b></div>
+            <div style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy)"><span>三級全套 27 份</span><b>NT$1,499</b></div>
+          </div>
+          <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-yellow" style="width:100%">加 LINE 購買</a>
+          <p style="text-align:center;font-size:12.5px;color:var(--text-body);margin:8px 0 0"><a href="/cambridge-practice-exam-pack/" style="color:var(--text-body)">先看試卷裡有什麼 →</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /AE:PACKOFFER -->
 
 <section class="section bg-soft">
   <div class="wrap center stack">

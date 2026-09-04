@@ -8,11 +8,11 @@
 <link rel="preload" as="style" href="/assets/styles.css?v=ca8e2000" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/styles.css?v=ca8e2000"></noscript>
 <!-- AE:CRIT end -->
 <meta name="theme-color" content="#1A2752">
-<title>PET 聽力 Part 1 免費線上練習：看圖三選一（7 題・附音檔與逐字稿）｜埃森美語</title>
+<title>PET 聽力 Part 1 練習：看圖三選一（7 題・附音檔與逐字稿）｜埃森美語</title>
 <meta name="description" content="PET（B1 Preliminary for Schools）Listening Part 1「看圖三選一」免費線上練習：7 題原創題目，附錄音檔、逐字稿與中文解析，做完立刻對答案。埃森美語美籍持證教師編寫。">
 <link rel="canonical" href="https://americanenglish.com.tw/pet-listening-practice-part1/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PET 聽力 Part 1 免費線上練習：看圖三選一（7 題・附音檔與逐字稿）｜埃森美語">
+<meta property="og:title" content="PET 聽力 Part 1 練習：看圖三選一">
 <meta property="og:description" content="7 題原創題目，附錄音檔、逐字稿與中文解析。">
 <meta property="og:url" content="https://americanenglish.com.tw/pet-listening-practice-part1/">
 <meta property="og:locale" content="zh_TW">
@@ -75,6 +75,20 @@
 .stimulus p{font-size:16px;line-height:1.85;color:#333c4d;margin:0 0 10px}
 .stimulus p:last-child{margin:0}
 .stimulus .gapnum{display:inline-block;min-width:34px;text-align:center;font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--blue);background:var(--light-blue);border-radius:8px;padding:0 6px}
+/* Part-1 texts are real-world artefacts: frame each as what it is, the way the
+   real paper does. The label stays a caption; the frame is the text itself. */
+.stimulus h4{text-transform:none}
+.stimulus.k-notice,.stimulus.k-sign,.stimulus.k-advert,.stimulus.k-label{border:2.5px solid var(--navy);background:#fffef7;text-align:center;box-shadow:0 5px 0 rgba(26,39,82,.10)}
+/* the headline is the first line of the body (a <br> ends it), not a separate node —
+   ::first-line is the only selector that reaches it without touching the rest */
+.stimulus.k-notice p:first-of-type::first-line,.stimulus.k-sign p:first-of-type::first-line,.stimulus.k-advert p:first-of-type::first-line,.stimulus.k-label p:first-of-type::first-line{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:18px;letter-spacing:.4px;color:var(--navy)}
+.stimulus.k-sign,.stimulus.k-label{max-width:460px;margin-left:auto;margin-right:auto}
+.stimulus.k-email,.stimulus.k-message{border-left:6px solid var(--blue);background:#f7fbff;text-align:left}
+.stimulus.k-notes,.stimulus.k-list{background:linear-gradient(#fff,#fff) padding-box,repeating-linear-gradient(#fbfdff,#fbfdff 33px,#e6eef7 34px);border-style:dashed}
+/* the question that belongs to a text, tucked under it */
+.prx-paired .prx-slot{margin:-6px 0 26px;padding-left:14px;border-left:3px solid var(--light-blue)}
+.prx-paired .prx-slot .prx-item{margin-top:0}
+@media print{.stimulus.k-notice,.stimulus.k-sign,.stimulus.k-advert,.stimulus.k-label{box-shadow:none}}
 .prx-item{background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:16px;padding:16px 18px;margin:0 0 14px}
 .prx-item legend,.prx-item .qh{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:16px;color:var(--navy);padding:0 4px}
 .prx-item .qtext{font-size:16px;color:#333c4d;margin:6px 0 10px;line-height:1.7}
@@ -194,7 +208,7 @@
 </section>
 
 <script>
-const PRX = { part:1, sets:[{"setId": "r1", "items": [{"n": 1, "type": "mc", "q": "What did Mia buy at the night market?", "pictureOptions": true, "opts": ["A pair of small silver hoop earrings displayed on a card", "A phone case printed with a cartoon cat's face", "A tall plastic bubble-tea cup with a dome lid and a wide straw"], "a": 1, "why": ["✗ 陷阱:'almost bought' 加上 'too expensive' 表示她考慮過但沒有買,這是最先提到的干擾項,目的是吸引沒聽完整句的考生。", "✓ 正確答案:'In the end I got a phone case instead' 才是她真正買的東西。", "✗ 陷阱:她說 'already have three at home',所以沒有買,是提到但被明確排除的干擾項。"]}]}, {"setId": "r2", "items": [{"n": 2, "type": "mc", "q": "What time will the coach leave for the school trip tomorrow?", "pictureOptions": true, "opts": ["A round clock face showing the time 7:30", "A round clock face showing the time 8:00", "A round clock face showing the time 8:15"], "a": 0, "why": ["✓ 正確答案:'there's no change after all — half past seven' 說明中間雖然考慮過延後,但最後維持原訂時間,這是典型的『繞一圈回到原答案』陷阱設計。", "✗ 陷阱:這只是老師『考慮過』但沒有採用的時間之一,是猶豫時提到的干擾選項。", "✗ 陷阱:同樣只是『以防萬一』考慮過的備案時間,因為道路工程提前完工而不需要延後。"]}]}, {"setId": "r3", "items": [{"n": 3, "type": "mc", "q": "Which sport does Ben do now?", "pictureOptions": true, "opts": ["A boy in shorts shooting a basketball toward a hoop", "A boy swimming front crawl in a swimming pool", "A boy holding a table tennis bat at a table tennis table"], "a": 2, "why": ["✗ 陷阱:'I stopped that back in June' 表示他已經不打籃球了,是過去的活動,不是現在,先提到容易誤導。", "✗ 陷阱:他說 'I went twice' 但 'couldn't get into it',只是嘗試過就放棄,是干擾項。", "✓ 正確答案:'started going with him a few weeks ago, and now I go almost every day' 明確指出這是他現在持續在做的運動。"]}]}, {"setId": "r4", "items": [{"n": 4, "type": "mc", "q": "What will the weather be like on Saturday, when they go camping?", "pictureOptions": true, "opts": ["A grey cloud with a little rain and the sun peeking out beside it", "A dark grey cloud with heavy rain falling from it", "A bright yellow sun with no clouds in a blue sky"], "a": 0, "why": ["✓ 正確答案:氣象更新後 'cloudy with just a bit of rain in the afternoon' 才是星期六最新、正確的天氣。", "✗ 陷阱:'heavy rain all day' 是『舊的』預報,後面已經更新為新的預報,是被取代的干擾資訊,屬於說話者改口的陷阱。", "✗ 陷阱:晴天 'sunny' 是對話中提到的星期天天氣,不是題目問的星期六,是張冠李戴的陷阱。"]}]}, {"setId": "r5", "items": [{"n": 5, "type": "mc", "q": "Where did Lucy leave her umbrella?", "pictureOptions": true, "opts": ["A yellow umbrella lying on a seat inside an MRT train carriage", "A yellow umbrella standing beside the front door of a house", "A yellow umbrella propped against a wall inside a classroom"], "a": 1, "why": ["✗ 陷阱:Lucy 說 'I definitely didn't leave it on the MRT this time',明確否定,是被排除的選項。", "✓ 正確答案:'I think I left it by her front door when I ran inside' 才是雨傘實際留下的地方。", "✗ 陷阱:她說 'I checked there... it wasn't behind my chair',代表教室裡沒有,是提到但被排除的干擾項。"]}]}, {"setId": "r6", "items": [{"n": 6, "type": "mc", "q": "What will Tom bring to Chloe's birthday party?", "pictureOptions": true, "opts": ["A bottle of orange juice with cups beside it", "A round chocolate cake with icing on top", "A cardboard board-game box with a picture on the lid"], "a": 2, "why": ["✗ 陷阱:Tom 說 'I was going to bring drinks',但 Priya 已經負責了,是被取消的原計畫。", "✗ 陷阱:蛋糕是 Mei 要做的,不是 Tom,題目問的是 Tom 要帶什麼,此選項張冠李戴。", "✓ 正確答案:'I thought I'd bring a game instead... I found a board game at home' 才是 Tom 真正決定要帶的東西。"]}]}, {"setId": "r7", "items": [{"n": 7, "type": "mc", "q": "How will Anna get to the concert on Saturday?", "pictureOptions": true, "opts": ["A city bus waiting at a bus stop", "A young man driving a car with a passenger beside him", "An MRT train arriving at a platform"], "a": 1, "why": ["✗ 陷阱:Anna 一開始問公車時間,但這只是她原本的想法,後來被推翻,並非最終方式。", "✓ 正確答案:'why don't I just drive you?'...'That would be great' 兩人最後說定由哥哥開車載她去。", "✗ 陷阱:Kevin 建議搭捷運,Anna 也同意 'That's true',但她接著說車廂太擠不想搭,是被否決的建議。"]}]}] };
+const PRX = { part:1, sets:[{"setId": "r1", "items": [{"n": 1, "type": "mc", "q": "What did Mia buy at the night market?", "pictureOptions": true, "opts": ["A pair of small silver hoop earrings displayed on a card", "A phone case printed with a cartoon cat's face", "A tall plastic bubble-tea cup with a dome lid and a wide straw"], "a": 1, "why": ["✗ 陷阱：'almost bought' 加上 'too expensive' 表示她考慮過但沒有買，這是最先提到的干擾項，目的是吸引沒聽完整句的考生。", "✓ 正確答案：'In the end I got a phone case instead' 才是她真正買的東西。", "✗ 陷阱：她說 'already have three at home',所以沒有買，是提到但被明確排除的干擾項。"]}]}, {"setId": "r2", "items": [{"n": 2, "type": "mc", "q": "What time will the coach leave for the school trip tomorrow?", "pictureOptions": true, "opts": ["A round clock face showing the time 7:30", "A round clock face showing the time 8:00", "A round clock face showing the time 8:15"], "a": 0, "why": ["✓ 正確答案：'there's no change after all — half past seven' 說明中間雖然考慮過延後，但最後維持原訂時間，這是典型的『繞一圈回到原答案』陷阱設計。", "✗ 陷阱：這只是老師『考慮過』但沒有採用的時間之一，是猶豫時提到的干擾選項。", "✗ 陷阱：同樣只是『以防萬一』考慮過的備案時間，因為道路工程提前完工而不需要延後。"]}]}, {"setId": "r3", "items": [{"n": 3, "type": "mc", "q": "Which sport does Ben do now?", "pictureOptions": true, "opts": ["A boy in shorts shooting a basketball toward a hoop", "A boy swimming front crawl in a swimming pool", "A boy holding a table tennis bat at a table tennis table"], "a": 2, "why": ["✗ 陷阱：'I stopped that back in June' 表示他已經不打籃球了，是過去的活動，不是現在，先提到容易誤導。", "✗ 陷阱：他說 'I went twice' 但 'couldn't get into it',只是嘗試過就放棄，是干擾項。", "✓ 正確答案：'started going with him a few weeks ago, and now I go almost every day' 明確指出這是他現在持續在做的運動。"]}]}, {"setId": "r4", "items": [{"n": 4, "type": "mc", "q": "What will the weather be like on Saturday, when they go camping?", "pictureOptions": true, "opts": ["A grey cloud with a little rain and the sun peeking out beside it", "A dark grey cloud with heavy rain falling onto a tent", "A bright yellow sun high in a clear blue sky, with no cloud"], "a": 0, "why": ["✓ 正確答案：氣象更新後 'cloudy with just a bit of rain in the afternoon' 才是星期六最新、正確的天氣。", "✗ 陷阱：'heavy rain all day' 是『舊的』預報，後面已經更新為新的預報，是被取代的干擾資訊，屬於說話者改口的陷阱。", "✗ 陷阱：晴天 'sunny' 是對話中提到的星期天天氣，不是題目問的星期六，是張冠李戴的陷阱。"]}]}, {"setId": "r5", "items": [{"n": 5, "type": "mc", "q": "Where did Lucy leave her umbrella?", "pictureOptions": true, "opts": ["A yellow umbrella lying on a seat inside an MRT train carriage", "A yellow umbrella standing beside the front door of a house", "A yellow umbrella propped against a wall inside a classroom"], "a": 1, "why": ["✗ 陷阱：Lucy 說 'I definitely didn't leave it on the MRT this time',明確否定，是被排除的選項。", "✓ 正確答案：'I think I left it by her front door when I ran inside' 才是雨傘實際留下的地方。", "✗ 陷阱：她說 'I checked there... it wasn't behind my chair',代表教室裡沒有，是提到但被排除的干擾項。"]}]}, {"setId": "r6", "items": [{"n": 6, "type": "mc", "q": "What will Tom bring to Chloe's birthday party?", "pictureOptions": true, "opts": ["A large bottle of orange juice with paper cups beside it", "A round chocolate cake with icing and candles on top", "A cardboard board-game box with a picture on the lid"], "a": 2, "why": ["✗ 陷阱：Tom 說 'I was going to bring drinks',但 Priya 已經負責了，是被取消的原計畫。", "✗ 陷阱：蛋糕是 Mei 要做的，不是 Tom,題目問的是 Tom 要帶什麼，此選項張冠李戴。", "✓ 正確答案：'I thought I'd bring a game instead... I found a board game at home' 才是 Tom 真正決定要帶的東西。"]}]}, {"setId": "r7", "items": [{"n": 7, "type": "mc", "q": "How will Anna get to the concert on Saturday?", "pictureOptions": true, "opts": ["A city bus waiting at a bus stop with people queuing", "A young man driving a car with a passenger beside him", "A crowded MRT train arriving at a busy platform"], "a": 1, "why": ["✗ 陷阱：Anna 一開始問公車時間，但這只是她原本的想法，後來被推翻，並非最終方式。", "✓ 正確答案：'why don't I just drive you?'...'That would be great' 兩人最後說定由哥哥開車載她去。", "✗ 陷阱：Kevin 建議搭捷運，Anna 也同意 'That's true',但她接著說週六晚上車廂太擠不想搭，是被否決的建議。"]}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
   const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
@@ -258,7 +272,18 @@ const PRX = { part:1, sets:[{"setId": "r1", "items": [{"n": 1, "type": "mc", "q"
   PRX.sets.forEach((s,si)=>{
     const host=document.getElementById('prx-'+si);
     if(!host) return;
-    host.innerHTML=s.items.map(it=>{const k='s'+si+'q'+it.n; flat.push([k,it]); return render(it,k);}).join('');
+    const key=it=>'s'+si+'q'+it.n;
+    s.items.forEach(it=>flat.push([key(it),it]));
+    const slots=host.querySelectorAll('.prx-slot');
+    if(slots.length){
+      // paired layout: each question renders directly under the text it asks about
+      slots.forEach(sl=>{
+        const ns=(sl.dataset.items||'').split(',').filter(Boolean).map(Number);
+        sl.innerHTML=s.items.filter(it=>ns.includes(it.n)).map(it=>render(it,key(it))).join('');
+      });
+    }else{
+      host.innerHTML=s.items.map(it=>render(it,key(it))).join('');
+    }
     host.addEventListener('change',e=>{
       const f=e.target.closest('fieldset'); if(!f) return;
       f.querySelectorAll('.prx-opt').forEach(o=>o.classList.toggle('sel',o.querySelector('input').checked));
@@ -310,6 +335,32 @@ const PRX = { part:1, sets:[{"setId": "r1", "items": [{"n": 1, "type": "mc", "q"
   document.getElementById('btnPrint').addEventListener('click',()=>window.print());
 })();
 </script>
+
+
+<!-- AE:PACKOFFER -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div style="background:linear-gradient(135deg,#FFFBEF,#FFF4D6);border:2px solid var(--yellow);border-radius:24px;padding:clamp(22px,4vw,32px);box-shadow:0 10px 30px rgba(255,200,40,.18)">
+      <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between">
+        <div style="flex:1 1 320px;min-width:280px">
+          <span class="eyebrow eyebrow-yellow">完整模擬試卷</span>
+          <h2 style="font-size:clamp(24px,3.4vw,32px);margin:12px 0 10px">想<em>整份計時做完</em>嗎？</h2>
+          <p class="body" style="margin:0;font-size:15px">這一頁的線上練習<b>永遠免費</b>。若想要整份計時做完的完整試卷——含可列印題目卷、聽力音檔與中文逐題解析——我們自己出了 27 份，可在 LINE 購買。</p>
+        </div>
+        <div style="flex:0 1 280px">
+          <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px">
+            <div style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy);border-bottom:1px dashed #e3d4a8;padding-bottom:6px"><span>任選 4 份</span><b>NT$390</b></div>
+            <div style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy);border-bottom:1px dashed #e3d4a8;padding-bottom:6px"><span>單一級別 9 份</span><b>NT$590</b></div>
+            <div style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy)"><span>三級全套 27 份</span><b>NT$1,499</b></div>
+          </div>
+          <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-yellow" style="width:100%">加 LINE 購買</a>
+          <p style="text-align:center;font-size:12.5px;color:var(--text-body);margin:8px 0 0"><a href="/cambridge-practice-exam-pack/" style="color:var(--text-body)">先看試卷裡有什麼 →</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /AE:PACKOFFER -->
 
 <section class="section bg-soft">
   <div class="wrap center stack">

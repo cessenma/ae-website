@@ -8,11 +8,11 @@
 <link rel="preload" as="style" href="/assets/styles.css?v=ca8e2000" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/styles.css?v=ca8e2000"></noscript>
 <!-- AE:CRIT end -->
 <meta name="theme-color" content="#1A2752">
-<title>KET 聽力 Part 4 免費線上練習：短文三選一（5 題・附音檔與逐字稿）｜埃森美語</title>
+<title>KET 聽力 Part 4 練習：短文三選一（5 題・附音檔與逐字稿）｜埃森美語</title>
 <meta name="description" content="KET（A2 Key for Schools）Listening Part 4「短文三選一」免費線上練習：5 題原創題目，附錄音檔、逐字稿與中文解析，做完立刻對答案。埃森美語美籍持證教師編寫。">
 <link rel="canonical" href="https://americanenglish.com.tw/ket-listening-practice-part4/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="KET 聽力 Part 4 免費線上練習：短文三選一（5 題・附音檔與逐字稿）｜埃森美語">
+<meta property="og:title" content="KET 聽力 Part 4 練習：短文三選一">
 <meta property="og:description" content="5 題原創題目，附錄音檔、逐字稿與中文解析。">
 <meta property="og:url" content="https://americanenglish.com.tw/ket-listening-practice-part4/">
 <meta property="og:locale" content="zh_TW">
@@ -75,6 +75,20 @@
 .stimulus p{font-size:16px;line-height:1.85;color:#333c4d;margin:0 0 10px}
 .stimulus p:last-child{margin:0}
 .stimulus .gapnum{display:inline-block;min-width:34px;text-align:center;font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--blue);background:var(--light-blue);border-radius:8px;padding:0 6px}
+/* Part-1 texts are real-world artefacts: frame each as what it is, the way the
+   real paper does. The label stays a caption; the frame is the text itself. */
+.stimulus h4{text-transform:none}
+.stimulus.k-notice,.stimulus.k-sign,.stimulus.k-advert,.stimulus.k-label{border:2.5px solid var(--navy);background:#fffef7;text-align:center;box-shadow:0 5px 0 rgba(26,39,82,.10)}
+/* the headline is the first line of the body (a <br> ends it), not a separate node —
+   ::first-line is the only selector that reaches it without touching the rest */
+.stimulus.k-notice p:first-of-type::first-line,.stimulus.k-sign p:first-of-type::first-line,.stimulus.k-advert p:first-of-type::first-line,.stimulus.k-label p:first-of-type::first-line{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:18px;letter-spacing:.4px;color:var(--navy)}
+.stimulus.k-sign,.stimulus.k-label{max-width:460px;margin-left:auto;margin-right:auto}
+.stimulus.k-email,.stimulus.k-message{border-left:6px solid var(--blue);background:#f7fbff;text-align:left}
+.stimulus.k-notes,.stimulus.k-list{background:linear-gradient(#fff,#fff) padding-box,repeating-linear-gradient(#fbfdff,#fbfdff 33px,#e6eef7 34px);border-style:dashed}
+/* the question that belongs to a text, tucked under it */
+.prx-paired .prx-slot{margin:-6px 0 26px;padding-left:14px;border-left:3px solid var(--light-blue)}
+.prx-paired .prx-slot .prx-item{margin-top:0}
+@media print{.stimulus.k-notice,.stimulus.k-sign,.stimulus.k-advert,.stimulus.k-label{box-shadow:none}}
 .prx-item{background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:16px;padding:16px 18px;margin:0 0 14px}
 .prx-item legend,.prx-item .qh{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:16px;color:var(--navy);padding:0 4px}
 .prx-item .qtext{font-size:16px;color:#333c4d;margin:6px 0 10px;line-height:1.7}
@@ -191,7 +205,7 @@
 </section>
 
 <script>
-const PRX = { part:4, sets:[{"setId": "r1", "items": [{"n": 1, "type": "mc", "q": "Why is Mark calling?", "opts": ["To ask for help with homework", "To cancel their study plans for today", "To invite his friend to visit his brother"], "a": 1, "why": ["✗ 陷阱:Mark 完全沒有提到功課上需要幫忙,是憑空捏造的選項。", "✓ 正確答案:Mark 說『I can't come to study with you this afternoon』,他打電話的主要目的是取消今天的讀書計畫。", "✗ 陷阱:Mark 只是說要『照顧生病的弟弟』,並沒有邀請朋友來看弟弟,此選項扭曲了原意。"]}]}, {"setId": "r2", "items": [{"n": 2, "type": "mc", "q": "What does the boy think about the film?", "opts": ["He enjoyed the story more than the music", "He liked the music more than the story", "He didn't enjoy the film at all"], "a": 1, "why": ["✗ 陷阱:男生說故事『a bit boring』(有點無聊),並不是喜歡故事勝過音樂,此選項與原意相反。", "✓ 正確答案:男生說『the music was amazing — I might buy the CD』,明顯是音樂比故事更吸引他。", "✗ 陷阱:男生只是覺得故事普通,並不是完全不喜歡這部電影,此選項誇大了原意。"]}]}, {"setId": "r3", "items": [{"n": 3, "type": "mc", "q": "What does the announcement ask shoppers to do right now?", "opts": ["Bring their shopping to the front desk", "Look around the shop for a while longer", "Wait for Saturday's sale"], "a": 0, "why": ["✓ 正確答案:廣播說『please bring anything you'd like to buy to the front desk right now』,現在要做的事是把東西拿去櫃檯結帳。", "✗ 陷阱:廣播說商店『closing in fifteen minutes』(即將打烊),並不是要顧客『繼續逛』,此選項與原意相反。", "✗ 陷阱:週六特賣是『之後』才會發生的事,不是現在要做的事,此選項時間點不對。"]}]}, {"setId": "r4", "items": [{"n": 4, "type": "mc", "q": "What will they probably do this weekend?", "opts": ["Go to the beach", "Go to the mountains", "Stay home because of the heat"], "a": 0, "why": ["✓ 正確答案:因為天氣很熱,女生說『I'd rather be near the water』,男生也同意『the beach it is, then』,最後決定去海邊。", "✗ 陷阱:山上是一開始被提到、後來被放棄的選項('The mountains sound nice, but...'),是『先出現的干擾項』。", "✗ 陷阱:對話中沒有提到要待在家,兩人其實決定出門去海邊,此選項與原意相反。"]}]}, {"setId": "r5", "items": [{"n": 5, "type": "mc", "q": "How does the speaker feel about the art class now?", "opts": ["She doesn't enjoy it", "She wants to stop going", "She's enjoying it more than she expected"], "a": 2, "why": ["✗ 陷阱:女生說『I wasn't sure about it at first』只是剛開始的心情,並非現在的感受,是『舊資訊被取代』的陷阱。", "✗ 陷阱:女生說已經交到兩個新朋友、覺得老師很棒,完全沒有想放棄的意思,此選項與原意相反。", "✓ 正確答案:女生說『after just two lessons, I'm actually really enjoying it』,現在的感受比原本預期的更喜歡。"]}]}] };
+const PRX = { part:4, sets:[{"setId": "r1", "items": [{"n": 1, "type": "mc", "q": "Why is Mark calling?", "opts": ["To cancel their study plans for today", "To ask for help with homework", "To invite his friend to visit his brother"], "a": 0, "why": ["✓ 正確答案：Mark 說『I can't come to study with you this afternoon』,他打電話的主要目的是取消今天的讀書計畫。", "✗ 陷阱：Mark 完全沒有提到功課上需要幫忙，是憑空捏造的選項。", "✗ 陷阱：Mark 只是說要『照顧生病的弟弟』,並沒有邀請朋友來看弟弟，此選項扭曲了原意。"]}]}, {"setId": "r2", "items": [{"n": 2, "type": "mc", "q": "What does the boy think about the film?", "opts": ["He liked the music more than the story", "He enjoyed the story more than the music", "He didn't enjoy the film at all"], "a": 0, "why": ["✓ 正確答案：男生說『the music was amazing — I might buy the CD』,明顯是音樂比故事更吸引他。", "✗ 陷阱：男生說故事『a bit boring』(有點無聊),並不是喜歡故事勝過音樂，此選項與原意相反。", "✗ 陷阱：男生只是覺得故事普通，並不是完全不喜歡這部電影，此選項誇大了原意。"]}]}, {"setId": "r3", "items": [{"n": 3, "type": "mc", "q": "What does the announcement ask shoppers to do right now?", "opts": ["Wait for Saturday's sale", "Look around the shop for a while longer", "Bring their shopping to the front desk"], "a": 2, "why": ["✗ 陷阱：週六特賣是『之後』才會發生的事，不是現在要做的事，此選項時間點不對。", "✗ 陷阱：廣播說商店『closing in fifteen minutes』(即將打烊),並不是要顧客『繼續逛』,此選項與原意相反。", "✓ 正確答案：廣播說『please bring anything you'd like to buy to the front desk right now』,現在要做的事是把東西拿去櫃檯結帳。"]}]}, {"setId": "r4", "items": [{"n": 4, "type": "mc", "q": "What will they probably do this weekend?", "opts": ["Go to the mountains", "Go to the beach", "Stay home because of the heat"], "a": 1, "why": ["✗ 陷阱：山上是一開始被提到、後來被放棄的選項('The mountains sound nice, but...'),是『先出現的干擾項』。", "✓ 正確答案：因為天氣很熱，女生說『I'd rather be near the water』,男生也同意『the beach it is, then』,最後決定去海邊。", "✗ 陷阱：對話中沒有提到要待在家，兩人其實決定出門去海邊，此選項與原意相反。"]}]}, {"setId": "r5", "items": [{"n": 5, "type": "mc", "q": "How does the speaker feel about the art class now?", "opts": ["She still doesn't enjoy the drawing", "She's enjoying it more than she expected", "She wants to stop going on Saturdays"], "a": 1, "why": ["✗ 陷阱：『drawing has never really been my thing』和『I wasn't sure about it at first』都是剛開始的心情，後面已經改口說很喜歡，是『舊資訊被取代』的陷阱。", "✓ 正確答案：女生說『after just two lessons, I'm actually really enjoying it』,現在的感受比原本預期的更喜歡。", "✗ 陷阱：女生說週六的課讓她交到兩個新朋友、老師也很棒，完全沒有想停掉的意思，此選項與原意相反。"]}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
   const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
@@ -255,7 +269,18 @@ const PRX = { part:4, sets:[{"setId": "r1", "items": [{"n": 1, "type": "mc", "q"
   PRX.sets.forEach((s,si)=>{
     const host=document.getElementById('prx-'+si);
     if(!host) return;
-    host.innerHTML=s.items.map(it=>{const k='s'+si+'q'+it.n; flat.push([k,it]); return render(it,k);}).join('');
+    const key=it=>'s'+si+'q'+it.n;
+    s.items.forEach(it=>flat.push([key(it),it]));
+    const slots=host.querySelectorAll('.prx-slot');
+    if(slots.length){
+      // paired layout: each question renders directly under the text it asks about
+      slots.forEach(sl=>{
+        const ns=(sl.dataset.items||'').split(',').filter(Boolean).map(Number);
+        sl.innerHTML=s.items.filter(it=>ns.includes(it.n)).map(it=>render(it,key(it))).join('');
+      });
+    }else{
+      host.innerHTML=s.items.map(it=>render(it,key(it))).join('');
+    }
     host.addEventListener('change',e=>{
       const f=e.target.closest('fieldset'); if(!f) return;
       f.querySelectorAll('.prx-opt').forEach(o=>o.classList.toggle('sel',o.querySelector('input').checked));
@@ -307,6 +332,32 @@ const PRX = { part:4, sets:[{"setId": "r1", "items": [{"n": 1, "type": "mc", "q"
   document.getElementById('btnPrint').addEventListener('click',()=>window.print());
 })();
 </script>
+
+
+<!-- AE:PACKOFFER -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div style="background:linear-gradient(135deg,#FFFBEF,#FFF4D6);border:2px solid var(--yellow);border-radius:24px;padding:clamp(22px,4vw,32px);box-shadow:0 10px 30px rgba(255,200,40,.18)">
+      <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between">
+        <div style="flex:1 1 320px;min-width:280px">
+          <span class="eyebrow eyebrow-yellow">完整模擬試卷</span>
+          <h2 style="font-size:clamp(24px,3.4vw,32px);margin:12px 0 10px">想<em>整份計時做完</em>嗎？</h2>
+          <p class="body" style="margin:0;font-size:15px">這一頁的線上練習<b>永遠免費</b>。若想要整份計時做完的完整試卷——含可列印題目卷、聽力音檔與中文逐題解析——我們自己出了 27 份，可在 LINE 購買。</p>
+        </div>
+        <div style="flex:0 1 280px">
+          <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px">
+            <div style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy);border-bottom:1px dashed #e3d4a8;padding-bottom:6px"><span>任選 4 份</span><b>NT$390</b></div>
+            <div style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy);border-bottom:1px dashed #e3d4a8;padding-bottom:6px"><span>單一級別 9 份</span><b>NT$590</b></div>
+            <div style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy)"><span>三級全套 27 份</span><b>NT$1,499</b></div>
+          </div>
+          <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-yellow" style="width:100%">加 LINE 購買</a>
+          <p style="text-align:center;font-size:12.5px;color:var(--text-body);margin:8px 0 0"><a href="/cambridge-practice-exam-pack/" style="color:var(--text-body)">先看試卷裡有什麼 →</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /AE:PACKOFFER -->
 
 <section class="section bg-soft">
   <div class="wrap center stack">
