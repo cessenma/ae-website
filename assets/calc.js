@@ -150,3 +150,96 @@
     update();
   });
 })();
+
+/* ---- YLE shields interpreter (Starters / Movers / Flyers) ----
+   Official: max 5 shields per paper (Listening, Reading & Writing, Speaking),
+   15 total; everyone receives a certificate; Cambridge states a total of
+   10+ shields shows the child is ready to prepare for the next level. */
+(function () {
+  "use strict";
+  var LEVELS = {
+    starters: { name: "Pre A1 Starters", cefr: "Pre A1", next: "A1 Movers", nextHref: "/cambridge-movers-guide/" },
+    movers:   { name: "A1 Movers",       cefr: "A1",     next: "A2 Flyers", nextHref: "/cambridge-flyers-guide/" },
+    flyers:   { name: "A2 Flyers",       cefr: "A2",     next: "A2 Key for Schools (KET)", nextHref: "/ket-prep-guide/" }
+  };
+  var PAPERS = [
+    { key: "l", label: "聽力 Listening" },
+    { key: "r", label: "讀寫 Reading & Writing" },
+    { key: "s", label: "口說 Speaking" }
+  ];
+
+  document.querySelectorAll("[data-shields]").forEach(function (root) {
+    var sel = root.querySelector(".sh-level");
+    var rowsEl = root.querySelector(".sh-rows");
+    var out = root.querySelector(".sh-result");
+    var state = { l: null, r: null, s: null };
+
+    PAPERS.forEach(function (p) {
+      var row = document.createElement("div");
+      row.className = "sh-row";
+      var btns = "";
+      for (var i = 1; i <= 5; i++) {
+        btns += '<button type="button" class="sh-btn" data-p="' + p.key + '" data-n="' + i +
+                '" aria-label="' + p.label + ' ' + i + ' 個盾牌">' + i + "</button>";
+      }
+      row.innerHTML = '<span class="sh-lab">' + p.label + "</span>" +
+                      '<span class="sh-btns">' + btns + "</span>" +
+                      '<span class="sh-icons" data-icons="' + p.key + '"></span>';
+      rowsEl.appendChild(row);
+    });
+
+    rowsEl.addEventListener("click", function (e) {
+      var b = e.target.closest(".sh-btn");
+      if (!b) return;
+      var p = b.getAttribute("data-p"), n = parseInt(b.getAttribute("data-n"), 10);
+      state[p] = (state[p] === n) ? null : n;
+      rowsEl.querySelectorAll('.sh-btn[data-p="' + p + '"]').forEach(function (x) {
+        x.classList.toggle("on", state[p] !== null && parseInt(x.getAttribute("data-n"), 10) <= state[p]);
+      });
+      var icons = rowsEl.querySelector('[data-icons="' + p + '"]');
+      icons.innerHTML = state[p] === null ? "" :
+        Array.from({ length: 5 }, function (_, i) {
+          return '<span class="sh-i' + (i < state[p] ? " f" : "") + '">&#9679;</span>';
+        }).join("");
+      update();
+    });
+
+    if (sel) sel.addEventListener("change", update);
+
+    function update() {
+      var lv = LEVELS[(sel && sel.value) || "starters"];
+      var vals = PAPERS.map(function (p) { return state[p.key]; });
+      var got = vals.filter(function (v) { return v !== null; });
+      if (!got.length) {
+        out.innerHTML = '<p class="calc-empty">點選每一項拿到的盾牌數，看看孩子的成績代表什麼。</p>';
+        return;
+      }
+      var total = got.reduce(function (a, b) { return a + b; }, 0);
+      var all = got.length === 3;
+      var ready = all && total >= 10;
+      var weakest = null, min = 6;
+      PAPERS.forEach(function (p) {
+        if (state[p.key] !== null && state[p.key] < min) { min = state[p.key]; weakest = p.label; }
+      });
+      var tone = !all ? "grey" : (total >= 13 ? "gold" : (total >= 10 ? "green" : "amber"));
+      var msg = !all
+        ? "先把三項都點完，才看得出整體結果。"
+        : (ready
+            ? "劍橋官方的說法是：<b>總共 10 個以上的盾牌，代表孩子已經準備好往下一級前進</b>——也就是 " + lv.next + "。"
+            : "總盾牌數還沒到 10。官方以 10 個盾牌作為「可以準備下一級」的參考，先把最弱的一項補起來，比急著報下一級有效。");
+      var fives = PAPERS.filter(function (p) { return state[p.key] === 5; }).map(function (p) { return p.label; });
+
+      out.innerHTML =
+        '<div class="calc-big tone-' + tone + '"><div class="calc-score">' + total + '</div>' +
+        '<div class="calc-meta"><div class="calc-grade">／ 15 個盾牌</div>' +
+        '<div class="calc-cefr">' + lv.name + "（" + lv.cefr + "）</div></div></div>" +
+        '<div class="calc-bar"><div class="calc-bar-fill tone-' + tone + '" style="width:' +
+          (total / 15 * 100).toFixed(1) + '%"></div><span class="calc-bar-min">0</span><span class="calc-bar-max">15</span></div>' +
+        '<p class="calc-say">' + msg + "</p>" +
+        (fives.length ? '<p class="calc-warn">🌟 <b>' + fives.join("、") + "</b> 拿到滿分 5 個盾牌——官方的說法是「這部分表現非常好」。</p>" : "") +
+        (all && weakest && min <= 2 ? '<p class="calc-warn">最需要加強的是 <b>' + weakest + "</b>（" + min + " 個盾牌）。這一項先練，總數上升最快。</p>" : "") +
+        (ready ? '<p class="calc-warn">下一步：<a href="' + lv.nextHref + '">' + lv.next + " 完整介紹 →</a></p>" : "");
+    }
+    update();
+  });
+})();

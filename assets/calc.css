@@ -52,3 +52,24 @@
 .calc-band-table th{font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--navy);background:var(--light-blue)}
 .calc-band-table tr:last-child td{border-bottom:none}
 .calc-band-table .hl{background:#f2fbf5;font-weight:600}
+
+/* ---- YLE shields interpreter ---- */
+.sh-level-wrap{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.sh-level-wrap label{font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--navy);font-size:15px}
+.sh-level{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:15px;color:var(--navy);border:2px solid #cfe9f8;border-radius:12px;padding:9px 14px;background:#fff;cursor:pointer}
+.sh-level:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(28,176,246,.18)}
+.sh-rows{display:flex;flex-direction:column;gap:12px}
+.sh-row{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;background:var(--light-blue);border-radius:16px;padding:14px 16px}
+.sh-lab{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:15.5px;color:var(--navy)}
+.sh-btns{display:flex;gap:6px}
+.sh-btn{width:38px;height:38px;border-radius:10px;border:2px solid #cfe9f8;background:#fff;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:15px;color:var(--navy);cursor:pointer;transition:background .15s,border-color .15s,transform .08s}
+.sh-btn:hover{border-color:var(--blue)}
+.sh-btn:active{transform:scale(.94)}
+.sh-btn.on{background:var(--yellow);border-color:var(--yellow-dk);color:var(--navy)}
+.sh-icons{min-width:78px;text-align:right;letter-spacing:2px}
+.sh-i{color:#d7e3ee;font-size:15px}
+.sh-i.f{color:var(--yellow-dk)}
+@media(max-width:560px){
+  .sh-row{grid-template-columns:1fr;row-gap:10px}
+  .sh-icons{text-align:left}
+}
