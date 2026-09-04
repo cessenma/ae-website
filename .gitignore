@@ -1,2 +1,8 @@
 .DS_Store
 .claude/
+
+# Paid exam packs: 27 zips, ~351 MB, rebuilt wholesale by
+# ae-question-bank/tools/build_exam_pack.py. Binary, so git cannot delta them —
+# committing would add the full ~351 MB to history again on every rebuild.
+# The zips are uploaded to Hostinger by hand; the delivery page itself IS tracked.
+pack-*/files/
