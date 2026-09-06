@@ -45,6 +45,44 @@
 <!-- AE:GTM start -->
 <script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
 <!-- AE:GTM end -->
+
+<style>
+.cx{position:relative;margin-top:22px}
+/* Native horizontal scrolling rather than a transformed track: it swipes on touch,
+   keeps working if the JS never runs, and does not depend on transform applying. */
+.cx-win{overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;
+  scrollbar-width:none;-ms-overflow-style:none;scroll-behavior:smooth}
+.cx-win::-webkit-scrollbar{display:none}
+.cx-track{display:flex;list-style:none;margin:0;padding:0;gap:18px}
+.cx-slide{flex:0 0 calc((100% - 36px)/3);min-width:0;scroll-snap-align:start}
+.cx-slide img{width:100%;height:auto;display:block;border:1px solid #e3e9f2;
+  border-radius:12px;box-shadow:0 8px 22px rgba(26,39,82,.12);background:#fff}
+.cx-cap{margin:10px 2px 0}
+.cx-cap b{display:block;font-size:14.5px;color:var(--navy)}
+.cx-cap span{font-size:12.5px;color:var(--text-body);line-height:1.5}
+.cx-nav{position:absolute;top:34%;width:38px;height:38px;border-radius:50%;
+  border:1px solid #dfe7f1;background:#fff;color:var(--navy);cursor:pointer;
+  box-shadow:0 3px 10px rgba(26,39,82,.14);font-size:17px;line-height:1;display:grid;
+  place-items:center;z-index:3}
+.cx-nav:hover{background:#DDF4FF}
+.cx-prev{left:-13px}.cx-next{right:-13px}
+.cx-dots{display:flex;justify-content:center;gap:7px;margin-top:16px}
+.cx-dot{width:8px;height:8px;padding:0;border:0;border-radius:50%;background:#cdd9e8;cursor:pointer}
+.cx-dot[aria-current="true"]{background:#1CB0F6;width:22px;border-radius:5px}
+@media (max-width:900px){.cx-slide{flex:0 0 calc((100% - 18px)/2)}}
+@media (max-width:600px){.cx-slide{flex:0 0 100%}.cx-track{gap:0}.cx-prev{left:-6px}.cx-next{right:-6px}}
+@media (prefers-reduced-motion:reduce){.cx-win{scroll-behavior:auto}}
+
+/* pricing: smaller, and always the three side by side */
+.pk-tiers{grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.pk-tier{padding:15px 16px;border-radius:16px;border-width:1.5px;gap:5px}
+.pk-tier-n{font-size:13.5px}
+.pk-tier-p{font-size:25px}
+.pk-tier-d{font-size:12.8px;line-height:1.55}
+.pk-tier-u{font-size:11.5px}
+.pk-tier .btn{margin-top:4px!important;padding:9px 12px;font-size:13.5px}
+@media (max-width:720px){.pk-tiers{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <!-- AE:CHROME start -->
@@ -65,6 +103,52 @@
   </div>
 </section>
 
+
+  
+  <section class="section" id="preview" style="padding-top:8px">
+    <div class="wrap">
+      <span class="eyebrow">內頁預覽</span>
+      <h2>試卷長 <em>什麼樣子</em></h2>
+      <p class="body" style="max-width:60ch;margin:0 0 4px">
+        下面是實際的內頁，直接從我們寄給家長的檔案裡截下來的——沒有另外美化。點圖可以放大看清楚。</p>
+      <div class="cx" aria-roledescription="carousel" aria-label="試卷內頁預覽">
+        <button type="button" class="cx-nav cx-prev" aria-label="上一張">‹</button>
+        <div class="cx-win"><ul class="cx-track"><li class="cx-slide" role="group" aria-roledescription="slide"
+        aria-label="1 / 5：封面">
+      <a href="/assets/img/exams/preview-cover.png" target="_blank" rel="noopener">
+        <img src="/assets/img/exams/preview-cover.png" alt="封面：模擬試卷內頁範例"
+             width="1063" height="1500" loading="lazy" decoding="async"></a>
+      <p class="cx-cap"><b>封面</b><span>級別、時間、題號範圍、考生須知</span></p>
+    </li><li class="cx-slide" role="group" aria-roledescription="slide"
+        aria-label="2 / 5：聽力第一部分">
+      <a href="/assets/img/exams/preview-listening.png" target="_blank" rel="noopener">
+        <img src="/assets/img/exams/preview-listening.png" alt="聽力第一部分：模擬試卷內頁範例"
+             width="1063" height="1500" loading="lazy" decoding="async"></a>
+      <p class="cx-cap"><b>聽力第一部分</b><span>看圖選答案，時鐘和價格都是真的圖</span></p>
+    </li><li class="cx-slide" role="group" aria-roledescription="slide"
+        aria-label="3 / 5：寫作看圖說故事">
+      <a href="/assets/img/exams/preview-story.png" target="_blank" rel="noopener">
+        <img src="/assets/img/exams/preview-story.png" alt="寫作看圖說故事：模擬試卷內頁範例"
+             width="1063" height="1500" loading="lazy" decoding="async"></a>
+      <p class="cx-cap"><b>寫作看圖說故事</b><span>三格圖說一個故事，和正式考試一樣</span></p>
+    </li><li class="cx-slide" role="group" aria-roledescription="slide"
+        aria-label="4 / 5：口說第三部分">
+      <a href="/assets/img/exams/preview-speaking.png" target="_blank" rel="noopener">
+        <img src="/assets/img/exams/preview-speaking.png" alt="口說第三部分：模擬試卷內頁範例"
+             width="1063" height="1500" loading="lazy" decoding="async"></a>
+      <p class="cx-cap"><b>口說第三部分</b><span>討論用的圖卡，六個選項一次看完</span></p>
+    </li><li class="cx-slide" role="group" aria-roledescription="slide"
+        aria-label="5 / 5：解答與解析">
+      <a href="/assets/img/exams/preview-answers.png" target="_blank" rel="noopener">
+        <img src="/assets/img/exams/preview-answers.png" alt="解答與解析：模擬試卷內頁範例"
+             width="1063" height="1500" loading="lazy" decoding="async"></a>
+      <p class="cx-cap"><b>解答與解析</b><span>每題寫為什麼對、為什麼錯，中文解析</span></p>
+    </li></ul></div>
+        <button type="button" class="cx-nav cx-next" aria-label="下一張">›</button>
+        <div class="cx-dots"><button type="button" class="cx-dot" data-go="0" aria-label="第 1 張：封面"></button><button type="button" class="cx-dot" data-go="1" aria-label="第 2 張：聽力第一部分"></button><button type="button" class="cx-dot" data-go="2" aria-label="第 3 張：寫作看圖說故事"></button><button type="button" class="cx-dot" data-go="3" aria-label="第 4 張：口說第三部分"></button><button type="button" class="cx-dot" data-go="4" aria-label="第 5 張：解答與解析"></button></div>
+      </div>
+    </div>
+  </section>
 <section class="section">
   <div class="wrap">
     <div class="prose reveal" style="max-width:760px;margin:0 auto">
@@ -109,5 +193,36 @@
 
 </main>
 <script src="/assets/app.js?v=11"></script>
+
+<script>
+(function(){
+  var cx=document.querySelector('.cx'); if(!cx) return;
+  var win=cx.querySelector('.cx-win'),
+      slides=[].slice.call(cx.querySelectorAll('.cx-slide')),
+      dots=[].slice.call(cx.querySelectorAll('.cx-dot')),
+      timer=null,
+      calm=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function step(){ var r=slides[0].getBoundingClientRect().width,
+                       g=parseFloat(getComputedStyle(cx.querySelector('.cx-track')).gap)||0;
+                   return r+g; }
+  function index(){ return Math.round(win.scrollLeft/step()); }
+  function last(){ return Math.max(0, slides.length - Math.round(win.clientWidth/step())); }
+  function go(n){ n = n>last() ? 0 : (n<0 ? last() : n);
+                  win.scrollTo({left:n*step(), behavior: calm?'auto':'smooth'}); }
+  function paint(){ var i=index();
+    dots.forEach(function(d,k){ d.setAttribute('aria-current', k===i?'true':'false'); }); }
+  function start(){ if(calm||timer) return; timer=setInterval(function(){go(index()+1);},4200); }
+  function stop(){ clearInterval(timer); timer=null; }
+  cx.querySelector('.cx-next').addEventListener('click',function(){stop();go(index()+1);});
+  cx.querySelector('.cx-prev').addEventListener('click',function(){stop();go(index()-1);});
+  dots.forEach(function(d){ d.addEventListener('click',function(){stop();go(+d.dataset.go);}); });
+  win.addEventListener('scroll',paint,{passive:true});
+  cx.addEventListener('mouseenter',stop); cx.addEventListener('mouseleave',start);
+  cx.addEventListener('focusin',stop);    cx.addEventListener('focusout',start);
+  cx.addEventListener('touchstart',stop,{passive:true});
+  document.addEventListener('visibilitychange',function(){document.hidden?stop():start();});
+  paint(); start();
+})();
+</script>
 </body>
 </html>
