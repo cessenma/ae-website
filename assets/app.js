@@ -256,12 +256,19 @@
   // Delegated so it also catches the injected chrome/fab links. Mark "line_tap"
   // as a key event in GA4 Admin, then import it into Google Ads as a conversion.
   document.addEventListener('click', function(e){
-    var a = e.target.closest ? e.target.closest('a[href*="lin.ee"]') : null;
+    // Two link families: lin.ee (free trial / questions) and line.me/R/oaMessage with a
+    // pre-filled 購買 message (the exam-pack tiers). The pack links were invisible to this
+    // handler until 2026-09-06 — 231 purchase placements fired nothing. They now emit
+    // exam_pack_tap with the tier, so sales intent is a separate key event in GA4.
+    var a = e.target.closest ? e.target.closest('a[href*="lin.ee"],a[href*="line.me"]') : null;
     if(a && typeof window.gtag === 'function'){
-      window.gtag('event', 'line_tap', {
-        page_path: location.pathname,
-        link_text: (a.textContent || '').trim().slice(0, 40)
-      });
+      var href = a.getAttribute('href') || '', txt = (a.textContent || '').trim();
+      if(href.indexOf('%E8%B3%BC%E8%B2%B7') !== -1){            // 購買, URL-encoded
+        var tier = /27/.test(txt) ? '27' : /9 份/.test(txt) ? '9' : /4 份/.test(txt) ? '4' : 'cta';
+        window.gtag('event', 'exam_pack_tap', { tier: tier, page_path: location.pathname, link_text: txt.slice(0, 40) });
+      } else {
+        window.gtag('event', 'line_tap', { page_path: location.pathname, link_text: txt.slice(0, 40) });
+      }
     }
   }, true);
 
