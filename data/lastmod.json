@@ -8,8 +8,8 @@
 "hash": "4dbc731ca44613525c26dc666234a1ab"
 },
 "a2-vocabulary-practice": {
-"date": "2026-09-05",
-"hash": "a84b4f61ddbf86db9662840dda467798"
+"date": "2026-09-08",
+"hash": "6a1d74fbf5564347037888c781567f51"
 },
 "animals-english-vocabulary": {
 "date": "2026-09-06",
@@ -20,16 +20,16 @@
 "hash": "3e0c212b1ceb0030d243f2e31fe76e00"
 },
 "b1-vocabulary-practice": {
-"date": "2026-09-05",
-"hash": "1bea098c9703905cf61d8934933fbbd2"
+"date": "2026-09-08",
+"hash": "c316842559e12b2ee3a8e1a41bbc9ef1"
 },
 "b2-grammar-guide": {
 "date": "2026-08-21",
 "hash": "a13cdd4da5fdeca60349401ccd251b9b"
 },
 "b2-vocabulary-practice": {
-"date": "2026-09-05",
-"hash": "23c1bf8899eca1ce04db714bdda8ccb7"
+"date": "2026-09-08",
+"hash": "0dfcd08fecdab2b2c3f9bf5edc4fbdd3"
 },
 "banqiao-cram-school-vs-after-school": {
 "date": "2026-08-13",
@@ -104,8 +104,8 @@
 "hash": "b9935feaaa332579a759d957626fdff3"
 },
 "cambridge-english-levels": {
-"date": "2026-09-05",
-"hash": "562353a7ce2d5fbf4d499edbfe221b6c"
+"date": "2026-09-08",
+"hash": "be81e075c6d4032a80ca5bef3ff4899c"
 },
 "cambridge-exam-registration-taiwan": {
 "date": "2026-09-06",
@@ -116,28 +116,28 @@
 "hash": "ef86e518f76077bcdde13db1cbe4345f"
 },
 "cambridge-flyers-guide": {
-"date": "2026-09-04",
-"hash": "1d2c2c922d6daffa025ee427fd94117d"
+"date": "2026-09-08",
+"hash": "a232b2337e9a9dbd2d7e14239e41ed2d"
 },
 "cambridge-movers-guide": {
-"date": "2026-09-04",
-"hash": "07ae431ad9e1f63f8250929c13224dae"
+"date": "2026-09-08",
+"hash": "c402dcce8be2e3674f06021937d45f92"
 },
 "cambridge-practice-exam-pack": {
 "date": "2026-09-08",
-"hash": "bb346af15d6568a15dda96910dfe1bc1"
+"hash": "4de8dcda1d5244ca92013187e7bf4072"
 },
 "cambridge-practice-tests": {
 "date": "2026-09-08",
-"hash": "95a4201e2ac884c556873a2b0441e552"
+"hash": "4bf47c4b841dc83fee23f833b18fa1e0"
 },
 "cambridge-results-lookup": {
-"date": "2026-09-05",
-"hash": "56778156be4d0ec4820fc4c19a25c418"
+"date": "2026-09-08",
+"hash": "b96f41676d6f1b4f69c4711883e8fe6f"
 },
 "cambridge-starters-guide": {
-"date": "2026-09-04",
-"hash": "7fc948e1298f0b4ff456da2b9840a775"
+"date": "2026-09-08",
+"hash": "d3abe2aa8ae99a7b78467a995a7ebd8a"
 },
 "cambridge-yle-shields": {
 "date": "2026-09-04",
@@ -297,7 +297,7 @@
 },
 "exams": {
 "date": "2026-09-08",
-"hash": "099b42f256c8740626b5c80c14473d60"
+"hash": "00e88b687d25b689c70df7207754de46"
 },
 "exams/banqiao-school-calendar": {
 "date": "2026-09-08",
@@ -312,72 +312,120 @@
 "hash": "7e669ecbdf6ca542f3641fb175a3ee6d"
 },
 "fce-listening-practice-part1": {
-"date": "2026-09-05",
-"hash": "b677350ca556eb17d6b7355bd5633f66"
+"date": "2026-09-08",
+"hash": "fd454f404ae728cffb194a06acb67450"
 },
 "fce-listening-practice-part2": {
-"date": "2026-09-05",
-"hash": "844375258f2f9b80c509f5f1a48d571a"
+"date": "2026-09-08",
+"hash": "df69f71cd3de98b42410f366ced76074"
 },
 "fce-listening-practice-part3": {
-"date": "2026-09-05",
-"hash": "928973ba67d5ed226b721381352769c9"
+"date": "2026-09-08",
+"hash": "76d8ebcd996f5ecf03275410ddfdbc23"
 },
 "fce-listening-practice-part4": {
-"date": "2026-09-05",
-"hash": "386272d72ef5e9fb787cdd5f1a96fa26"
+"date": "2026-09-08",
+"hash": "eb12f75e25759200eab797e96bbcf752"
 },
 "fce-prep-guide": {
-"date": "2026-09-06",
-"hash": "aeeed09ef9f9d651aad8830f9182001c"
+"date": "2026-09-08",
+"hash": "40eba097f6b07f1bf8341e7b4c3755d4"
 },
 "fce-ruoe-practice-part1": {
-"date": "2026-09-05",
-"hash": "37d90cab5821abd4efb4617b45c68f46"
+"date": "2026-09-08",
+"hash": "dd808e0be2f848c3aee086c5494118cb"
 },
 "fce-ruoe-practice-part2": {
-"date": "2026-09-05",
-"hash": "26904cd1425f428c2dacbf95d1fbeadf"
+"date": "2026-09-08",
+"hash": "dd361195e68aa4bc8cd1dc9d784d22db"
 },
 "fce-ruoe-practice-part3": {
-"date": "2026-09-05",
-"hash": "3c30b9d2939d612dc32b869e26af3ceb"
+"date": "2026-09-08",
+"hash": "4ac792ea328b0099ae6f9b5fad86d760"
 },
 "fce-ruoe-practice-part4": {
-"date": "2026-09-05",
-"hash": "52704d4442b9da8b3ec17a0d301859c9"
+"date": "2026-09-08",
+"hash": "6709e3ac7151e86a8fbd71d7076e2faa"
 },
 "fce-ruoe-practice-part5": {
-"date": "2026-09-05",
-"hash": "5e90a677e48d69e89250ffdb33e76c38"
+"date": "2026-09-08",
+"hash": "1a2d9a7ef92fa085a910c5b415db6ebd"
 },
 "fce-ruoe-practice-part6": {
-"date": "2026-09-05",
-"hash": "d6fc383580ac52a3dba694fd785a4653"
+"date": "2026-09-08",
+"hash": "71b9e2f63b3ba259a18ee3f8606f8a08"
 },
 "fce-ruoe-practice-part7": {
-"date": "2026-09-05",
-"hash": "f9b32608f876d0bb84779a595d1a3575"
+"date": "2026-09-08",
+"hash": "2f96c8499cc9cb259aaff8b62e67be8d"
 },
 "fce-score-calculator": {
-"date": "2026-09-05",
-"hash": "f211e0de528c5af275f7513b6f70453a"
+"date": "2026-09-08",
+"hash": "7f5b7a69cbfadf118575220fde5e7f29"
 },
 "fce-speaking-practice": {
-"date": "2026-09-05",
-"hash": "1515b820b75870889045a11fe206cac9"
+"date": "2026-09-08",
+"hash": "b2081bfe18415c09464658dda9f99fb1"
 },
 "fce-writing-practice-part1": {
-"date": "2026-09-05",
-"hash": "d9cca065f5361dc59c81d726f7c16c1c"
+"date": "2026-09-08",
+"hash": "d8257b7347d1f17552ee184e3d44d52a"
 },
 "fce-writing-practice-part2": {
-"date": "2026-09-05",
-"hash": "b9ffd028a776e3b5933f9e64c886a4e8"
+"date": "2026-09-08",
+"hash": "f935b1339844e7bf00ba1e49cdcd97a6"
+},
+"flyers-listening-practice-part1": {
+"date": "2026-09-08",
+"hash": "f99d72adffe851cb16bf809f725c0727"
+},
+"flyers-listening-practice-part2": {
+"date": "2026-09-08",
+"hash": "fc10395e23de0ecd26f6fad0a4419057"
+},
+"flyers-listening-practice-part3": {
+"date": "2026-09-08",
+"hash": "c954d2dcefa0167552dbfe96b7c51c17"
+},
+"flyers-listening-practice-part4": {
+"date": "2026-09-08",
+"hash": "657c4c11d0524604d3e934d53e749fba"
+},
+"flyers-listening-practice-part5": {
+"date": "2026-09-08",
+"hash": "0c7b399e150133472dbc8c005d968f3d"
+},
+"flyers-rw-practice-part1": {
+"date": "2026-09-08",
+"hash": "1e5a8d0ec4053dbdf1a1fcac7713d5e0"
+},
+"flyers-rw-practice-part2": {
+"date": "2026-09-08",
+"hash": "c4a72539a5161f1019d9e7cda3b9e12d"
+},
+"flyers-rw-practice-part3": {
+"date": "2026-09-08",
+"hash": "3a08af9c6888a1c877f625ac82465aab"
+},
+"flyers-rw-practice-part4": {
+"date": "2026-09-08",
+"hash": "85eda9405b71905dac1e7c1d1f12cb32"
+},
+"flyers-rw-practice-part5": {
+"date": "2026-09-08",
+"hash": "5b248f8e0df7f568d3858fa844347e4a"
+},
+"flyers-rw-practice-part6": {
+"date": "2026-09-08",
+"hash": "482260e44652063523804dba0a1f6d65"
+},
+"flyers-speaking-practice": {
+"date": "2026-09-08",
+"hash": "43b30cae36711d7dea3973653a9315fc"
 },
 "flyers-vocabulary-practice": {
-"date": "2026-09-05",
-"hash": "184a3a0d51c6c04111117244891c146a"
+"date": "2026-09-08",
+"hash": "75f03eab88d0d9cabc21d75fa82323cd"
 },
 "free-english-resources-kids": {
 "date": "2026-08-26",
@@ -416,8 +464,8 @@
 "hash": "22b88f4befe4583d8897414ed6197745"
 },
 "gept-practice-tests": {
-"date": "2026-09-05",
-"hash": "dd9c992d4f2dd47bb52475628f51c338"
+"date": "2026-09-08",
+"hash": "63e8610d2e1381424d30393214ccdeea"
 },
 "gept-results-lookup": {
 "date": "2026-08-21",
@@ -484,64 +532,64 @@
 "hash": "552dfa06b764168744e512e50b8b55f4"
 },
 "ket-listening-practice-part1": {
-"date": "2026-09-05",
-"hash": "ec14251d0f1de4bd5747518eeb86a749"
+"date": "2026-09-08",
+"hash": "cdc20199244dee40c39b54bb8190a7f9"
 },
 "ket-listening-practice-part2": {
-"date": "2026-09-05",
-"hash": "e8479bbe0edf26170d2b3cd2e873755b"
+"date": "2026-09-08",
+"hash": "0b678a3f36dabaeb94b1c6fbd579c689"
 },
 "ket-listening-practice-part3": {
-"date": "2026-09-05",
-"hash": "230456b7c33c4b37b3284988d842239f"
+"date": "2026-09-08",
+"hash": "bfec700bfcaf2b6df53eba74d9abeb6e"
 },
 "ket-listening-practice-part4": {
-"date": "2026-09-05",
-"hash": "b29b5abdc6bb58bade18628a2b3e011e"
+"date": "2026-09-08",
+"hash": "bdd42209127136cc40c463503e929ee9"
 },
 "ket-listening-practice-part5": {
-"date": "2026-09-05",
-"hash": "bee617ffd718fc4a3fbc5c5e4b34785c"
+"date": "2026-09-08",
+"hash": "11a71ec620d5df1c54e67fff5415ef2e"
 },
 "ket-prep-guide": {
-"date": "2026-09-06",
-"hash": "595fe3701da156455c96f1c7fcfcf162"
+"date": "2026-09-08",
+"hash": "ea223caac15897e25948070d88309002"
 },
 "ket-rw-practice-part1": {
-"date": "2026-09-06",
-"hash": "6dc014682b00f4a2815064be066169f0"
+"date": "2026-09-08",
+"hash": "adea9273b500297237ff47bb0853dd1a"
 },
 "ket-rw-practice-part2": {
-"date": "2026-09-06",
-"hash": "870f61b9b5fa1e9a4b59e0bca8c4d0b2"
+"date": "2026-09-08",
+"hash": "f17c68479bf357aa2c3ece9c07f0735a"
 },
 "ket-rw-practice-part3": {
-"date": "2026-09-06",
-"hash": "a6af71c2393e9de36b545794e4507849"
+"date": "2026-09-08",
+"hash": "e2d2326d206a4888d5d9ec5bf3f1f11c"
 },
 "ket-rw-practice-part4": {
-"date": "2026-09-06",
-"hash": "96259b220b3a52ce660c8f98e0820842"
+"date": "2026-09-08",
+"hash": "257d3cac6b4d43191b3274af78fa3123"
 },
 "ket-rw-practice-part5": {
-"date": "2026-09-06",
-"hash": "43db3f960b6e0c24138b73fab767d991"
+"date": "2026-09-08",
+"hash": "c501d096affcf4800c87d679fc20c94d"
 },
 "ket-rw-practice-part6": {
-"date": "2026-09-05",
-"hash": "0919f178a2bbdc8619cd20cb895f294b"
+"date": "2026-09-08",
+"hash": "a1b1429ca73da6195619517aa7245c87"
 },
 "ket-rw-practice-part7": {
-"date": "2026-09-05",
-"hash": "4127194aa54e28103d5461fc10634773"
+"date": "2026-09-08",
+"hash": "b84862fc4e07d31a61b87c6c99178aad"
 },
 "ket-score-calculator": {
-"date": "2026-09-05",
-"hash": "f7aa436e589a28477e2785655ab6054d"
+"date": "2026-09-08",
+"hash": "7937f6356ae0f309d0bee9fceec38e7a"
 },
 "ket-speaking-practice": {
-"date": "2026-09-05",
-"hash": "dedb6d1e2b6b07c2947341a10cb43243"
+"date": "2026-09-08",
+"hash": "814b018f31e4953abef81c7a582cd01d"
 },
 "ket-vs-gept-comparison": {
 "date": "2026-08-25",
@@ -599,9 +647,57 @@
 "date": "2026-08-13",
 "hash": "5339491ed0b707ef277853981fd0c4c4"
 },
+"movers-listening-practice-part1": {
+"date": "2026-09-08",
+"hash": "6419f260b7dd09e380363f3d99c0c9a1"
+},
+"movers-listening-practice-part2": {
+"date": "2026-09-08",
+"hash": "d3f7bebf2d1f7251559338f7500545e6"
+},
+"movers-listening-practice-part3": {
+"date": "2026-09-08",
+"hash": "08f5e5e46243ef1dd9069748ea92c1c3"
+},
+"movers-listening-practice-part4": {
+"date": "2026-09-08",
+"hash": "9c2f59d18889dd968f40af86e49c2c10"
+},
+"movers-listening-practice-part5": {
+"date": "2026-09-08",
+"hash": "25d4d1204c58ef48843404048cc2a3a9"
+},
+"movers-rw-practice-part1": {
+"date": "2026-09-08",
+"hash": "d7f1050e835e9eec190a2cc2cd3a5399"
+},
+"movers-rw-practice-part2": {
+"date": "2026-09-08",
+"hash": "206400c577fd0fef4bb0c2d73bb4eae9"
+},
+"movers-rw-practice-part3": {
+"date": "2026-09-08",
+"hash": "3fb5003f6473936a74e630004b439e7d"
+},
+"movers-rw-practice-part4": {
+"date": "2026-09-08",
+"hash": "646f7e316d246be72e1e17952f1f8232"
+},
+"movers-rw-practice-part5": {
+"date": "2026-09-08",
+"hash": "fb2fb646bcfa49f4155c86fb1136072f"
+},
+"movers-rw-practice-part6": {
+"date": "2026-09-08",
+"hash": "4db99a152b6b01c40b600ccbc7b9d3ad"
+},
+"movers-speaking-practice": {
+"date": "2026-09-08",
+"hash": "7b6882c6dc4824d12b43e766e82f7dc9"
+},
 "movers-vocabulary-practice": {
-"date": "2026-09-05",
-"hash": "817b854b105e1167e9db9f16f6d53593"
+"date": "2026-09-08",
+"hash": "accd4819106dfc687ef3446e1e6bb7c2"
 },
 "native-vs-local-english-teachers": {
 "date": "2026-08-07",
@@ -620,64 +716,64 @@
 "hash": "e5af79e025ec2eaef66ab32352dfa11c"
 },
 "pet-listening-practice-part1": {
-"date": "2026-09-05",
-"hash": "6c7bf6f6216a5e4e5060e5f9b8ae15e2"
+"date": "2026-09-08",
+"hash": "29ec98490406ac1320d08ec8d55a20bf"
 },
 "pet-listening-practice-part2": {
-"date": "2026-09-05",
-"hash": "359d16c530e068a54bd91692b5919723"
+"date": "2026-09-08",
+"hash": "5f0bb4bfb457d2ab3d977ce1c750e50d"
 },
 "pet-listening-practice-part3": {
-"date": "2026-09-05",
-"hash": "01d0af41ee2d972b938d6667ff40e16e"
+"date": "2026-09-08",
+"hash": "b414004618081f736906fb2610058035"
 },
 "pet-listening-practice-part4": {
-"date": "2026-09-05",
-"hash": "ef90b9db7c7f99270332ac75cf3e3f96"
+"date": "2026-09-08",
+"hash": "e00d4aceca21a6ae7f1a091f58d367b0"
 },
 "pet-prep-guide": {
-"date": "2026-09-06",
-"hash": "a6d061e0008308a29f6f64abf346e827"
+"date": "2026-09-08",
+"hash": "2f0883b5eb08a5d7dacdc8acf0af5c5b"
 },
 "pet-reading-practice-part1": {
-"date": "2026-09-05",
-"hash": "640ee6af64ad1dd0270aab07b658f9e3"
+"date": "2026-09-08",
+"hash": "b08f94fe65c600f193c1e4cdc7462fde"
 },
 "pet-reading-practice-part2": {
-"date": "2026-09-05",
-"hash": "ac56ecd858ba064df914c7c4a4bf5449"
+"date": "2026-09-08",
+"hash": "be7dc6d5ae024f9b4c75ca05b2ad1db4"
 },
 "pet-reading-practice-part3": {
-"date": "2026-09-05",
-"hash": "8008517285429111d5cd0987752a9819"
+"date": "2026-09-08",
+"hash": "8d0701ba8ee53ee4d9ff6b098189cde2"
 },
 "pet-reading-practice-part4": {
-"date": "2026-09-05",
-"hash": "a9adc9648386e9cf46d55e33b55fe76c"
+"date": "2026-09-08",
+"hash": "6563fc9ab3fa6e72e416fc9eb4aca7ba"
 },
 "pet-reading-practice-part5": {
-"date": "2026-09-05",
-"hash": "53badc7affb00ada19f2b2f88b1e8b3c"
+"date": "2026-09-08",
+"hash": "e44d8be61fdcb477db93ff131b6bca5c"
 },
 "pet-reading-practice-part6": {
-"date": "2026-09-05",
-"hash": "5130b68860d20b29cc79293225562cad"
+"date": "2026-09-08",
+"hash": "1d0c7788a746972d5afabcc092fbb6d6"
 },
 "pet-score-calculator": {
-"date": "2026-09-05",
-"hash": "3a21e974ae1510bdf40474dc335b488f"
+"date": "2026-09-08",
+"hash": "32e55274c4f5a9ed97beb12145db328e"
 },
 "pet-speaking-practice": {
-"date": "2026-09-05",
-"hash": "1a820a1540e5da9ab21cc6b5c995dbda"
+"date": "2026-09-08",
+"hash": "dbf290a03d4c69791e9fe61bf9deba36"
 },
 "pet-writing-practice-part1": {
-"date": "2026-09-05",
-"hash": "8a49e0b933ced9227a26649d979ea1e4"
+"date": "2026-09-08",
+"hash": "2d5141de2aa5c8e05a733bfd9b144e08"
 },
 "pet-writing-practice-part2": {
-"date": "2026-09-05",
-"hash": "9841e5fd76b6ef8d96033ecbe8080107"
+"date": "2026-09-08",
+"hash": "cb255bbefdfc985bcb25de7f964ca90b"
 },
 "phonics-preschool-banqiao": {
 "date": "2026-08-07",
@@ -723,9 +819,49 @@
 "date": "2026-08-07",
 "hash": "6c5d37bcffac8b5945e58ce1ded56c4c"
 },
+"starters-listening-practice-part1": {
+"date": "2026-09-08",
+"hash": "2879040321cf72f1ee71adc12cdc53c4"
+},
+"starters-listening-practice-part2": {
+"date": "2026-09-08",
+"hash": "49ca838b6d636537ffca40b037041ff5"
+},
+"starters-listening-practice-part3": {
+"date": "2026-09-08",
+"hash": "31bc3498f707d664095fa67b270c5c4b"
+},
+"starters-listening-practice-part4": {
+"date": "2026-09-08",
+"hash": "39a2c15d8555b7d901f533e835ad7d7d"
+},
+"starters-rw-practice-part1": {
+"date": "2026-09-08",
+"hash": "1d932492c1e89c0c9fd9a7f49037611b"
+},
+"starters-rw-practice-part2": {
+"date": "2026-09-08",
+"hash": "3e549e7bae1db3697ba3fd9e4f09b924"
+},
+"starters-rw-practice-part3": {
+"date": "2026-09-08",
+"hash": "12962e846d42fcb8dee244cd7496bdbf"
+},
+"starters-rw-practice-part4": {
+"date": "2026-09-08",
+"hash": "a6f63f94228c3270842ee429bf67a9f7"
+},
+"starters-rw-practice-part5": {
+"date": "2026-09-08",
+"hash": "91b7b3f3de0e5e21265ca75897333b9e"
+},
+"starters-speaking-practice": {
+"date": "2026-09-08",
+"hash": "a1226fbb0d26cf8e8083762ffc096022"
+},
 "starters-vocabulary-practice": {
-"date": "2026-09-05",
-"hash": "ba0eb81b66999290a96c9f53f68b24ee"
+"date": "2026-09-08",
+"hash": "548b2f6a35f73bff86e247997d75ac96"
 },
 "taiwan-kids-hardest-english-sounds": {
 "date": "2026-09-06",
