@@ -104,6 +104,8 @@
 .prx-opts.pics{flex-direction:row;flex-wrap:wrap;gap:10px}
 .prx-opts.pics .prx-opt{flex:1 1 190px;align-items:stretch;padding:0;border-style:dashed}
 .prx-opts.pics .prx-opt input{margin:12px 0 0 12px}
+.prx-opts.pics .pic-b img{max-width:100%;max-height:158px;object-fit:contain;background:#fff;border-radius:8px}
+@media print{.prx-opts.pics .pic-b img{max-height:96px}}
 .pic-b{display:flex;flex-direction:column;gap:7px;padding:12px 14px 14px;width:100%}
 .pic-b>b{font-family:'Baloo 2',sans-serif;font-size:13px;color:var(--blue)}
 .pic-d{font-size:14.5px;line-height:1.6;color:#4b5563}
@@ -280,14 +282,6 @@ const PRX = { part:2, sets:[{"setId": "r1", "items": [{"type": "gaptext", "n": 1
         <textarea class="prx-gapin wide" rows="2" aria-label="第 ${it.n} 題" placeholder="自己寫一句"></textarea>
         <div class="prx-why"><p><b>參考答案：</b>${esc(it.a||'')}</p>${it.why?`<p>${it.why}</p>`:''}</div></div>`;
     }
-    if(it.optImgs){
-      const po=it.opts.map((o,i)=>
-        `<label class="prx-opt pic"><input type="radio" name="${key}" value="${i}">`+
-        `<span class="pic-b"><img src="${it.optImgs[i]}" alt="" loading="lazy"><b class="notranslate" translate="no">${L(i)}</b></span></label>`).join('');
-      return `<fieldset class="prx-item" data-k="${key}"><legend>${it.n}. ${it.q||''}</legend>${img}
-        <div class="prx-opts pics">${po}</div><span class="prx-mark" aria-hidden="true"></span>
-        <div class="prx-why">${whyHTML(it)}</div></fieldset>`;
-    }
     if(it.type==='gaptext'){
       return `<div class="prx-item" data-k="${key}">${img}<span class="qh">${it.n}.</span>
         <span class="qtext">${it.q||'請填入一個單字'}</span>
@@ -308,13 +302,22 @@ const PRX = { part:2, sets:[{"setId": "r1", "items": [{"type": "gaptext", "n": 1
         <input class="prx-gapin wide" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 ${it.n} 題答案" placeholder="${it.maxWords?('最多 '+it.maxWords+' 個字'):''}">${mk}
         <div class="prx-why">${whyHTML(it)}</div></div>`;
     }
-    if(it.pictureOptions){
-      const po=it.opts.map((o,i)=>
-        `<label class="prx-opt pic"><input type="radio" name="${key}" value="${i}">`+
-        `<span class="pic-b"><b class="notranslate" translate="no">${L(i)}</b><span class="pic-d">${esc(String(o))}</span></span></label>`).join('');
+    if(it.optImgs || it.pictureOptions){
+      // The real paper shows three pictures. Where we have the artwork (KET/PET
+      // Listening 1 and the YLE picture parts) show it; the description stays as the
+      // alt text. Only fall back to reading the description when a picture is absent.
+      const drawn = it.optImgs && it.optImgs.some(Boolean);
+      const po=it.opts.map((o,i)=>{
+        const u = it.optImgs && it.optImgs[i];
+        const inner = u ? `<img src="${u}" alt="${esc(String(o))}" loading="lazy">`
+                        : `<span class="pic-d">${esc(String(o))}</span>`;
+        return `<label class="prx-opt pic"><input type="radio" name="${key}" value="${i}">`+
+          `<span class="pic-b"><b class="notranslate" translate="no">${L(i)}</b>${inner}</span></label>`;
+      }).join('');
+      const note = drawn ? '' :
+        `<p class="pic-note">正式考試這裡是三張圖，選出符合的一張。我們用文字描述代替圖片。</p>`;
       return `<fieldset class="prx-item" data-k="${key}"><legend>${it.n}. ${it.q||''}</legend>
-        <p class="pic-note">正式考試這裡是三張圖，選出符合的一張。我們用文字描述代替圖片。</p>
-        <div class="prx-opts pics">${po}</div><span class="prx-mark" aria-hidden="true"></span>
+        ${note}<div class="prx-opts pics">${po}</div><span class="prx-mark" aria-hidden="true"></span>
         <div class="prx-why">${whyHTML(it)}</div></fieldset>`;
     }
     const bare=it.opts.every(o=>/^[A-H]$/.test(String(o).trim()));
