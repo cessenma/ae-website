@@ -20,6 +20,10 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\. [NC,OR]
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://americanenglish.com.tw%{REQUEST_URI} [L,R=301]
+
+# tools/ holds the site's build scripts (seo_build.py). They ride along in the
+# repo so they deploy with it, but they are not pages: answer 404, not the source.
+RewriteRule ^tools(/|$) - [R=404,L]
 </IfModule>
 
 # SEO consolidation 301 (cannibalization fix): /banqiao-junior-high-english/
