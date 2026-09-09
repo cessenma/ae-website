@@ -261,12 +261,17 @@
     // handler until 2026-09-06 — 231 purchase placements fired nothing. They now emit
     // exam_pack_tap with the tier, so sales intent is a separate key event in GA4.
     var a = e.target.closest ? e.target.closest('a[href*="lin.ee"],a[href*="line.me"]') : null;
-    if(a && typeof window.gtag === 'function'){
+    if(a){
       var href = a.getAttribute('href') || '', txt = (a.textContent || '').trim();
+      var hasGtag = typeof window.gtag === 'function';
       if(href.indexOf('%E8%B3%BC%E8%B2%B7') !== -1){            // 購買, URL-encoded
         var tier = /27/.test(txt) ? '27' : /9 份/.test(txt) ? '9' : /4 份/.test(txt) ? '4' : 'cta';
-        window.gtag('event', 'exam_pack_tap', { tier: tier, page_path: location.pathname, link_text: txt.slice(0, 40) });
-      } else {
+        if(hasGtag) window.gtag('event', 'exam_pack_tap', { tier: tier, page_path: location.pathname, link_text: txt.slice(0, 40) });
+        // Meta Pixel (only the pack sales page loads it): the Lead event the ad
+        // campaign optimises on. value = tier price so Ads Manager can show ROAS-ish numbers.
+        var val = tier === '27' ? 1499 : tier === '9' ? 590 : tier === '4' ? 390 : 0;
+        try{ if(window.fbq) fbq('track', 'Lead', { content_name: 'exam_pack_' + tier, content_category: 'exam_pack', value: val, currency: 'TWD' }); }catch(err){}
+      } else if(hasGtag){
         window.gtag('event', 'line_tap', { page_path: location.pathname, link_text: txt.slice(0, 40) });
       }
     }
