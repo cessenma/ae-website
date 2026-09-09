@@ -1,0 +1,5 @@
+# Cloudflare Pages redirects — evaluated before static assets are served.
+# tools/ holds the site's build scripts (seo_build.py); they live in the repo
+# so they deploy with it, but they are not pages. .assetsignore does not apply
+# to Pages (Workers-only), so this rule is what keeps them off the public site.
+/tools/*  /  301
