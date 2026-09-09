@@ -267,7 +267,7 @@
       if(href.indexOf('%E8%B3%BC%E8%B2%B7') !== -1){            // 購買, URL-encoded
         var tier = /27/.test(txt) ? '27' : /9 份/.test(txt) ? '9' : /4 份/.test(txt) ? '4' : 'cta';
         if(hasGtag) window.gtag('event', 'exam_pack_tap', { tier: tier, page_path: location.pathname, link_text: txt.slice(0, 40) });
-        // Meta Pixel (only the pack sales page loads it): the Lead event the ad
+        // Meta Pixel is loaded site-wide (seo_build GTM block); this is the Lead event the ad
         // campaign optimises on. value = tier price so Ads Manager can show ROAS-ish numbers.
         var val = tier === '27' ? 1499 : tier === '9' ? 590 : tier === '4' ? 390 : 0;
         try{ if(window.fbq) fbq('track', 'Lead', { content_name: 'exam_pack_' + tier, content_category: 'exam_pack', value: val, currency: 'TWD' }); }catch(err){}
