@@ -265,7 +265,10 @@
       var href = a.getAttribute('href') || '', txt = (a.textContent || '').trim();
       var hasGtag = typeof window.gtag === 'function';
       if(href.indexOf('%E8%B3%BC%E8%B2%B7') !== -1){            // 購買, URL-encoded
-        var tier = /27/.test(txt) ? '27' : /9 份/.test(txt) ? '9' : /4 份/.test(txt) ? '4' : 'cta';
+        // The tier is only in the pre-filled LINE message (every button reads 選這個・加 LINE),
+        // so detect it on the decoded href; the visible text is kept as a fallback.
+        var msg = txt; try{ msg += ' ' + decodeURIComponent(href); }catch(err){}
+        var tier = /27 ?份/.test(msg) ? '27' : /9 ?份/.test(msg) ? '9' : /4 ?份/.test(msg) ? '4' : 'cta';
         if(hasGtag) window.gtag('event', 'exam_pack_tap', { tier: tier, page_path: location.pathname, link_text: txt.slice(0, 40) });
         // Meta Pixel is loaded site-wide (seo_build GTM block); this is the Lead event the ad
         // campaign optimises on. value = tier price so Ads Manager can show ROAS-ish numbers.

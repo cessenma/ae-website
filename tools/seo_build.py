@@ -23,7 +23,7 @@ from bs4 import BeautifulSoup
 
 SITE   = os.path.expanduser("~/Documents/GitHub/ae-website")
 ORIGIN = "https://americanenglish.com.tw"
-APPJS_VER = 13
+APPJS_VER = 14
 LINE = "https://lin.ee/W9J8TuQ"
 LOGO = "/assets/img/american-english-banqiao-logo.jpg"
 NAV  = [("首頁","/"),("課程","/courses/"),("劍橋英檢","/exams/"),("師資","/certified-american-teacher-banqiao/"),
