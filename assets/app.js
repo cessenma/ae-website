@@ -87,8 +87,14 @@
           '</div>'+
         '</div>'+
         '<div class="foot-bottom"><span>© 2026 American English 埃森美語</span><span>'+ADDRESS+'</span></div>'+
+        '<div class="foot-pref"><div google-add-preferred-source-btn data-theme="dark" data-lang="zh-TW"></div></div>'+
       '</div>';
     document.body.appendChild(footer);
+    }
+    // Google "Preferred Sources" button: publisher.js scans for [google-add-preferred-source-btn]
+    // when it loads, so it is appended AFTER the footer exists (static index.html footer included).
+    if(document.querySelector('[google-add-preferred-source-btn]') && !document.querySelector('script[src*="swg/js/v1/publisher.js"]')){
+      var ps=document.createElement('script'); ps.async=true; ps.src='https://news.google.com/swg/js/v1/publisher.js'; document.head.appendChild(ps);
     }
 
     // floating LINE button
