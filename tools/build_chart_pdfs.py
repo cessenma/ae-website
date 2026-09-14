@@ -29,7 +29,7 @@ PDFS = {
  "countries-english":      ("countries-english-chart","ae-countries-english-a4.pdf","80 國國名與國籍形容詞"),
  "jobs-english":           ("jobs-english-chart",   "ae-jobs-english-a4.pdf",   "83 種職業英文對照"),
  "body-parts-english":     ("body-parts-english-chart","ae-body-parts-a4.pdf",   "43 個身體部位英文對照"),
- "english-abbreviations":  ("english-abbreviations-chart","ae-english-abbreviations-a4.pdf","74 個常用英文縮寫與全名"),
+ "english-abbreviations-guide":  ("english-abbreviations-chart","ae-english-abbreviations-a4.pdf","74 個常用英文縮寫與全名"),
  "english-pronunciation":  ("english-vowels-chart", "ae-english-vowels-a4.pdf", "17 個母音・例字與嘴型提示"),
 }
 
@@ -117,7 +117,7 @@ def offer(page, title, sub, fname):
 
 # Topics that already have a printable from the earlier workbook set — link, don't rebuild.
 EXISTING = {
- "colors-english": ("顏色英文閃卡", "62 個顏色的中英對照與閃卡", "ae-colors-flashcards-a4.pdf"),
+ "colors-english-vocabulary": ("顏色英文閃卡", "62 個顏色的中英對照與閃卡", "ae-colors-flashcards-a4.pdf"),
  "fruits-english": ("水果英文閃卡", "常見水果的中英對照與閃卡", "ae-fruits-flashcards-a4.pdf"),
  "animals-english-vocabulary": ("動物英文閃卡", "常見動物的中英對照與閃卡", "ae-animals-flashcards-a4.pdf"),
 }

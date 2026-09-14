@@ -1,191 +1,85 @@
 <!DOCTYPE html>
+
 <html lang="zh-Hant-TW">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
 <!-- AE:CRIT start -->
 <style id="crit">:root{--navy:#1A2752;--blue:#1CB0F6;--blue-dk:#1391cc;--green:#06C755;--green-dk:#04a046;--yellow:#FFC828;--yellow-dk:#e0a800;--purple:#CE82FF;--purple-dk:#a94fe0;--coral:#F0997B;--light-blue:#DDF4FF;--text-body:#4b5563;--card-shadow:0 12px 40px rgba(26,39,82,.10);--header-h:64px;}*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px)}body{font-family:'DM Sans',-apple-system,'PingFang TC','Microsoft JhengHei',sans-serif;background:#fff;color:var(--navy);line-height:1.6;overflow-x:hidden}a{color:inherit}img{display:block;max-width:100%}:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}h1,h2,h3{font-family:'DM Serif Display',serif;font-weight:400;color:var(--navy);letter-spacing:-.4px;line-height:1.08}h1{font-size:clamp(40px,6.4vw,66px)}h2{font-size:clamp(30px,4.6vw,48px)}h3{font-size:22px}.rounded{font-family:'Baloo 2',sans-serif;font-weight:800}em{font-style:italic;color:var(--blue)}.bg-navy h2,.bg-navy h3{color:#fff}p.body{font-size:clamp(15px,1.6vw,17px);line-height:1.8;color:var(--text-body)}.bg-navy p.body{color:rgba(255,255,255,.74)}.eyebrow{display:inline-block;font-family:'Baloo 2',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--blue);background:rgba(28,176,246,.12);padding:7px 16px;border-radius:100px}.eyebrow-green{color:#067033;background:rgba(6,199,85,.12)}.eyebrow-yellow{color:#8a5f00;background:rgba(255,200,40,.18)}.divider{width:48px;height:4px;background:linear-gradient(90deg,var(--blue),var(--purple));border-radius:4px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'Baloo 2',sans-serif;font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.5px;padding:14px 30px;border-radius:16px;cursor:pointer;border:none;text-transform:uppercase;transition:transform .08s ease,box-shadow .08s ease,filter .15s;min-height:50px;position:relative;top:0}.btn-primary{background:var(--green);color:#fff;box-shadow:0 5px 0 var(--green-dk),0 10px 18px rgba(6,199,85,.32)}.btn-blue{background:var(--blue);color:#fff;box-shadow:0 5px 0 var(--blue-dk),0 10px 18px rgba(28,176,246,.32)}.btn-yellow{background:var(--yellow);color:var(--navy);box-shadow:0 5px 0 var(--yellow-dk),0 10px 18px rgba(255,200,40,.32)}.btn-coral{background:var(--coral);color:#fff;box-shadow:0 5px 0 #d97a5c,0 10px 18px rgba(240,153,123,.34)}.btn-pf-blue{background:#a8d8f0;color:var(--navy);box-shadow:0 5px 0 #80bfe0,0 10px 18px rgba(168,216,240,.45)}.btn-pf-cream{background:#fff8f3;color:var(--navy);border:1px solid #efe4d8;box-shadow:0 5px 0 #e6dbd0,0 10px 18px rgba(26,39,82,.08)}.btn-pf-pink{background:#ffdae6;color:var(--navy);box-shadow:0 5px 0 #f0b0c8,0 10px 18px rgba(255,218,230,.5)}.btn:hover{filter:brightness(1.04)}.btn:active{top:5px;box-shadow:0 0 0 var(--green-dk)}.btn-blue:active{box-shadow:0 0 0 var(--blue-dk)}.btn-yellow:active{box-shadow:0 0 0 var(--yellow-dk)}.btn-coral:active{box-shadow:0 0 0 #d97a5c}.btn-pf-blue:active{box-shadow:0 0 0 #80bfe0}.btn-pf-cream:active{box-shadow:0 0 0 #e6dbd0}.btn-pf-pink:active{box-shadow:0 0 0 #f0b0c8}.btn-outline{background:#fff;color:var(--navy);border:2px solid #e2e8f0;box-shadow:0 4px 0 #e2e8f0}.btn-outline:active{top:4px;box-shadow:0 0 0 #e2e8f0}.btn svg{width:20px;height:20px}.btn-line svg{fill:currentColor}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}.section{padding:clamp(60px,8vw,104px) 0;position:relative}.bg-blue{background:var(--light-blue)}.bg-navy{background:var(--navy)}.bg-soft{background:#F4FAFF}.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center}.split.reverse>.media{order:2}@media(max-width:860px){.split{grid-template-columns:1fr}.split.reverse>.media{order:0}.split .stack{align-items:flex-end;text-align:right}.split .stack .divider{margin-left:auto;margin-right:0}.split.reverse .stack{align-items:flex-start;text-align:left}.split.reverse .stack .divider{margin-left:0;margin-right:auto}.hero .stack,#location .stack{align-items:center;text-align:center}.hero .stack .divider,#location .stack .divider{margin-left:auto;margin-right:auto}.hero .stack .hero-cta,.hero .stack .hero-badges{justify-content:center}.hero .stack p.body{margin-left:auto;margin-right:auto}}@media(min-width:861px){.section:not(#location) .split:not(.reverse) .stack{align-items:flex-end;text-align:right}.section:not(#location) .split:not(.reverse) .stack .divider{margin-left:auto;margin-right:0}}.stack{display:flex;flex-direction:column;align-items:flex-start;gap:16px}.center{text-align:center;align-items:center;margin:0 auto;max-width:700px}.progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--green),var(--blue),var(--purple));z-index:200;transition:width .1s linear}.rk{display:inline-block;width:26px;height:26px;color:var(--blue);animation:wiggle 3.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.rk svg{width:100%;height:100%;display:block}header.site-header{position:fixed;top:0;left:0;right:0;z-index:150;height:var(--header-h);background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(26,39,82,.06);transition:box-shadow .25s}header.site-header.scrolled{box-shadow:0 4px 22px rgba(26,39,82,.09)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{font-family:'Baloo 2',sans-serif;font-size:21px;font-weight:800;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:8px}.brand b{color:var(--blue);font-weight:800}.brand-logo{width:38px;height:38px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(26,39,82,.18)}.nav-links{display:flex;align-items:center;gap:26px}.nav-links a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:15px;font-weight:700;color:#475569;text-decoration:none;transition:color .15s}.nav-links a:not(.btn):hover,.nav-links a.active{color:var(--blue)}.nav-links a.active{position:relative}.nav-links a.active::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:3px;border-radius:3px;background:var(--blue)}.nav-cta{padding:9px 20px;font-size:14px;min-height:42px}.hamburger{display:none;width:46px;height:46px;border:none;background:transparent;cursor:pointer;flex-direction:column;justify-content:center;gap:5px;align-items:center}.hamburger span{width:24px;height:3px;background:var(--navy);border-radius:3px;transition:transform .3s,opacity .2s}body.menu-open .hamburger span:nth-child(1){transform:translateY(8px) rotate(45deg)}body.menu-open .hamburger span:nth-child(2){opacity:0}body.menu-open .hamburger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.drawer{position:fixed;inset:var(--header-h) 0 0 0;z-index:140;background:rgba(255,255,255,.98);backdrop-filter:blur(8px);display:flex;flex-direction:column;gap:4px;padding:24px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}body.menu-open .drawer{opacity:1;transform:none;pointer-events:auto}.drawer a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:700;color:var(--navy);text-decoration:none;padding:15px 8px;border-bottom:1px solid rgba(26,39,82,.07)}.drawer .btn{margin-top:18px}@media(max-width:860px){.nav-links{display:none}.hamburger{display:flex}}.bg-deco{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}.star{position:absolute;animation:twinkle 3s ease-in-out infinite}@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:.9;transform:scale(1.15)}}.hero{padding-top:calc(var(--header-h) + 40px);padding-bottom:60px;background:linear-gradient(180deg,#fff 0%,var(--light-blue) 100%);position:relative;overflow:hidden}.hero .wrap{position:relative;z-index:2}.hero-badges{display:flex;flex-wrap:wrap;gap:10px}.chip{display:inline-flex;align-items:center;gap:7px;font-family:'Baloo 2',sans-serif;font-size:14px;font-weight:700;color:var(--navy);background:#fff;border:2px solid rgba(26,39,82,.08);padding:8px 15px;border-radius:100px;box-shadow:0 3px 0 rgba(26,39,82,.06)}.chip .dot{width:9px;height:9px;border-radius:50%;background:var(--green);animation:blink 1.6s infinite}@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}.scene{position:relative;width:100%;max-width:440px;margin:0 auto;aspect-ratio:1}.planet{position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 36% 30%,#bfe7ff,var(--blue));box-shadow:inset -18px -18px 40px rgba(26,39,82,.25),0 30px 70px rgba(28,176,246,.35);animation:spin 26s linear infinite}.planet::before{content:'';position:absolute;width:34%;height:18%;border-radius:50%;background:rgba(255,255,255,.35);top:22%;left:20%;filter:blur(2px)}.planet::after{content:'';position:absolute;width:24%;height:12%;border-radius:50%;background:rgba(26,39,82,.18);bottom:24%;right:22%}.ring{position:absolute;left:50%;top:54%;width:108%;height:46%;transform:translate(-50%,-50%) rotate(-18deg);border:6px solid rgba(255,200,40,.55);border-radius:50%;animation:spin 18s linear infinite reverse}.rocket{position:absolute;left:58%;top:14%;width:120px;animation:floaty 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center;z-index:3;filter:drop-shadow(0 12px 18px rgba(26,39,82,.25))}.flame{transform-box:fill-box;transform-origin:50% 0%;animation:flame .6s ease-in-out infinite alternate}.s-star{position:absolute;animation:floaty 5s ease-in-out infinite}@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-18px) rotate(4deg)}}@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes flame{0%{transform:scaleY(.8) scaleX(1)}100%{transform:scaleY(1.15) scaleX(.9)}}@keyframes wiggle{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}.count-orb{position:absolute;left:6%;top:6%;background:#fff;border-radius:20px;padding:10px 16px;box-shadow:var(--card-shadow);font-family:'Baloo 2';font-weight:800;display:flex;align-items:center;gap:9px;font-size:15px;z-index:4;animation:pop-bob 4s ease-in-out infinite}.count-orb.b2{left:auto;right:2%;top:auto;bottom:14%;animation-delay:1.5s}.count-orb .big{font-family:'DM Serif Display';font-size:26px;color:var(--blue)}@keyframes pop-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}.page-hero{padding-top:calc(var(--header-h) + 56px);padding-bottom:56px;background:linear-gradient(180deg,#fff,var(--light-blue));text-align:center;position:relative;overflow:hidden}.page-hero .wrap{position:relative;z-index:2;max-width:780px}.page-hero h1{font-size:clamp(34px,5.2vw,54px);margin:14px 0 16px}.page-hero .divider{margin:0 auto 20px}.pf-blue{--frame:#a8d9ef}.pf-pink{--frame:#fedae7}.pf-lav{--frame:#c9b4f0}.pf-cream{--frame:#fef8f3;--frame-edge:#efe4d8}.post-hero{margin:30px 0 0;padding:4.2%;border-radius:min(46px,calc(6.3vw - 3px));background:var(--frame,var(--light-blue));box-shadow:0 18px 40px rgba(26,39,82,.16)}.post-hero img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:min(26px,calc(3.6vw - 1.7px))}.post-hero.pf-cream{box-shadow:inset 0 0 0 1px var(--frame-edge),0 18px 40px rgba(26,39,82,.16)}@media(max-width:640px){.post-hero{margin-top:22px}}.magnet-box{display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;background:var(--light-blue);border:2px dashed var(--blue);border-radius:22px;padding:20px 26px;margin:28px 0 6px}.magnet-box p{flex:1 1 280px;margin:0;font-size:15px;line-height:1.75;color:var(--text-body)}.magnet-box strong{font-family:'Baloo 2';font-size:16px;color:var(--navy)}.magnet-box .btn{flex:0 0 auto}.breadcrumb{font-family:'Baloo 2';font-size:13px;font-weight:700;color:#94a3b8;margin-bottom:8px}.breadcrumb a{text-decoration:none;color:#94a3b8}.breadcrumb a:hover{color:var(--blue)}</style>
 <link rel="preload" as="style" href="/assets/styles.css?v=ba1f30ad" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/styles.css?v=ba1f30ad"></noscript>
 <!-- AE:CRIT end -->
-<meta name="theme-color" content="#1A2752">
+<meta content="#1A2752" name="theme-color"/>
 <!-- Google Analytics (GA4) -->
-<title>e.g.、i.e.、etc. 意思與用法：唸法、差異、逗號規則｜英文縮寫總整理 — 埃森美語</title>
-<meta name="description" content="e.g.＝for example（例如）、i.e.＝that is（也就是說）、etc.＝and so on（等等）。三個拉丁縮寫的意思、唸法、差異與逗號規則一次搞懂，加上 Mr./Dr.、a.m./p.m.、ASAP 等常用縮寫速查表與台灣學生最常犯的錯。">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"></noscript>
-<link rel="icon" href="/assets/img/american-english-banqiao-logo.jpg">
-<link rel="canonical" href="https://americanenglish.com.tw/english-abbreviations-guide/">
-<meta property="og:type" content="article">
-<meta property="og:locale" content="zh_TW">
-<meta property="og:site_name" content="American English 埃森美語">
-<meta property="og:title" content="e.g.、i.e.、etc. 意思與用法：唸法、差異、逗號規則">
-<meta property="og:description" content="e.g. 和 i.e. 差在哪、稱謂縮寫、常用縮寫表，與 NASA 唸單字、FBI 唸字母的規則。">
-<meta property="og:url" content="https://americanenglish.com.tw/english-abbreviations-guide/">
-<meta property="og:image" content="https://americanenglish.com.tw/assets/img/blog/english-abbreviations-phone-chat-screen.webp">
-<meta property="og:image:width" content="1600">
-<meta property="og:image:height" content="900">
-<meta property="og:image:alt" content="手機聊天畫面上的英文訊息，學習常見英文縮寫">
-<meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"https://americanenglish.com.tw/#organization","name":"American English 埃森美語","alternateName":"埃森美語","legalName":"私立埃森美語文理短期補習班","taxID":"61476523","description":"板橋中正路在地深耕的美籍外師英文補習班，提供 100% 美籍持證教師、每班 12 人以內小班制的兒童美語與國中英文課程。","url":"https://americanenglish.com.tw","telephone":"+886-928-067-772","email":"cessenma@umich.edu","image":["https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","https://americanenglish.com.tw/assets/img/banqiao-small-class-english-classroom.webp","https://americanenglish.com.tw/assets/img/banqiao-kids-english-class.webp","https://americanenglish.com.tw/assets/img/certified-american-teacher-banqiao.webp","https://americanenglish.com.tw/assets/img/kids-confident-english-speaking.webp"],"logo":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"中正路89巷4號1樓","addressLocality":"板橋區","addressRegion":"新北市","postalCode":"220","addressCountry":"TW"},"geo":{"@type":"GeoCoordinates","latitude":25.0145617,"longitude":121.4560468},"areaServed":[{"@type":"Place","name":"板橋區"},{"@type":"Place","name":"新北市板橋"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"19:00"}],"sameAs":["https://lin.ee/W9J8TuQ","https://maps.app.goo.gl/hLChkEqAMKCsMWpm6","https://www.facebook.com/profile.php?id=61576014571186"],"hasMap":"https://maps.app.goo.gl/hLChkEqAMKCsMWpm6","founder":{"@type":"Person","name":"Christopher","alumniOf":{"@type":"CollegeOrUniversity","name":"University of Michigan"},"hasCredential":"美國正式教師執照 (State Teaching Certificate)"},"knowsLanguage":["en-US","zh-TW"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"208","bestRating":"5"}}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Christopher","jobTitle":"創辦人暨美籍持證英文教師 (Founder & Licensed American English Teacher)","worksFor":{"@id":"https://americanenglish.com.tw/#organization"},"alumniOf":{"@type":"CollegeOrUniversity","name":"University of Michigan"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"美國正式教師執照 (U.S. State Teaching Certificate)"},"knowsLanguage":["en-US","zh-TW"]}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"e.g.、i.e.、etc. 意思與用法：唸法、差異、逗號規則","description":"英文縮寫的完整整理：e.g.（舉例）與 i.e.（也就是說）的差別、etc. 的正確用法與三大錯誤、Mr./Mrs./Ms./Dr. 稱謂縮寫、a.m./p.m. 時間縮寫、ASAP／FYI／DIY／RSVP 等常用縮寫，以及 NASA 唸成單字、FBI 逐字母唸的判斷規則。","image":"https://americanenglish.com.tw/assets/img/blog/english-abbreviations-phone-chat-screen.webp","datePublished":"2026-08-06","dateModified":"2026-08-06","inLanguage":"zh-Hant-TW","author":{"@type":"Person","name":"Christopher","worksFor":{"@id":"https://americanenglish.com.tw/#organization"}},"publisher":{"@id":"https://americanenglish.com.tw/#organization"},"mainEntityOfPage":"https://americanenglish.com.tw/english-abbreviations-guide/"}
-</script>
+<title>英文縮寫大全：74個常用縮寫意思查詢、全名與用法｜埃森美語</title>
+<meta content="KK 音標共 41 個符號：母音 17 個、子音 24 個。完整音標表附例字、有聲無聲子音配對、用 KK 查單字發音的方法、KK 與 IPA 的關係，以及孩子到底需不需要背 KK——美籍持證教師整理，附 A4 列印版免費下載。" name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,400&amp;family=DM+Serif+Display:ital@0;1&amp;display=swap" media="print" onload="this.media='all'" rel="stylesheet"/><noscript><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,400&amp;family=DM+Serif+Display:ital@0;1&amp;display=swap" rel="stylesheet"/></noscript>
+<link href="/assets/img/american-english-banqiao-logo.jpg" rel="icon"/>
+<link href="https://americanenglish.com.tw/kk-phonetic-chart/" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="zh_TW" property="og:locale"/>
+<meta content="American English 埃森美語" property="og:site_name"/>
+<meta content="KK音標表總整理：41 個符號發音對照、例字與查詢方法" property="og:title"/>
+<meta content="母音 17＋子音 24 的完整 KK 音標表，附例字與有聲無聲配對、查發音的方法、KK 與 IPA 的關係。" property="og:description"/>
+<meta content="https://americanenglish.com.tw/kk-phonetic-chart/" property="og:url"/>
+<meta content="https://americanenglish.com.tw/assets/img/blog/kk-chart-dictionary-closeup.webp" property="og:image"/>
+<meta content="1600" property="og:image:width"/>
+<meta content="900" property="og:image:height"/>
+<meta content="英文字典內頁的特寫，對照 KK 音標表查發音" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
 <!-- AE:SEO-LD start -->
-<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/english-abbreviations-guide/">
-<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/english-abbreviations-guide/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://americanenglish.com.tw/blog/"},{"@type":"ListItem","position":3,"name":"e.g.、i.e.、etc.意思與用法常用英文縮寫總整理"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"e.g. 和 i.e. 到底差在哪？","acceptedAnswer":{"@type":"Answer","text":"e.g.＝for example「例如」，後面接不完整的舉例；i.e.＝that is「也就是說」，後面接唯一的解釋。代換測試最準：能說「例如」的用 e.g.，能說「也就是」的用 i.e.。兩者後面通常都加逗號。"}},{"@type":"Question","name":"etc. 前面要加 and 嗎？","acceptedAnswer":{"@type":"Answer","text":"不要。etc.＝et cetera，拉丁文的 et 就是 and，寫 and etc. 等於說「和和其他」。正確：pencils, erasers, rulers, etc. 另外注意 etc. 不用在人身上——列舉人未完用 et al.。"}},{"@type":"Question","name":"a.m. 和 p.m. 怎麼用才對？","acceptedAnswer":{"@type":"Answer","text":"a.m.＝午夜到中午，p.m.＝中午到午夜，寫在時間後面：3:30 p.m.。注意 12:00 的講法：中午 12 點是 12 p.m.（noon）、午夜是 12 a.m.（midnight）——容易搞反，正式場合直接寫 noon／midnight 最保險。"}},{"@type":"Question","name":"LOL、BTW 可以寫進作文嗎？","acceptedAnswer":{"@type":"Answer","text":"不行。網路縮寫屬於朋友間的非正式訊息，作文、書信、考試中使用會被視為語域（register）錯誤而扣分。正式寫作請用完整字：by the way、I don't know。"}},{"@type":"Question","name":"縮寫的點（.）什麼時候要加？","acceptedAnswer":{"@type":"Answer","text":"美式習慣：稱謂與拉丁縮寫加點（Mr.、e.g.、etc.），全大寫的字母縮寫不加點（FBI、USA、ASAP）。英式常省略稱謂的點（Mr Chen）。同一篇文章裡保持一致最重要。"}},{"@type":"Question","name":"孩子需要背縮寫表嗎？","acceptedAnswer":{"@type":"Answer","text":"不需要整表背——高頻的十幾個（e.g.、i.e.、etc.、Mr./Ms.、a.m./p.m.、ASAP、DIY）在閱讀和使用中自然會熟。重點是遇到時查得到、用的時候分得清正式與非正式。歡迎加 LINE 預約試聽，看孩子的閱讀量夠不夠。"}}]}</script>
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/kk-phonetic-chart/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/kk-phonetic-chart/">
 <!-- AE:SEO-LD end -->
 <!-- AE:GTM start -->
 <script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');if(!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};window._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}fbq('init','1023907773471013');fbq('track','PageView');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);var f=document.createElement('script');f.async=1;f.src='https://connect.facebook.net/en_US/fbevents.js';document.head.appendChild(f);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
 <!-- AE:GTM end -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"英文縮寫大全：74 個常用縮寫的意思、全名與正確用法","description":"英文縮寫完整對照表，收錄 74 個常用縮寫的中文意思與英文全名，分日常書寫、網路訊息、學校考試、商業職場與單位五組；並說明 e.g. 與 i.e. 的差別、縮寫要不要加句點，以及月份與星期縮寫的完整規則。","inLanguage":"zh-Hant-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https://americanenglish.com.tw/english-abbreviations-guide/"},"author":{"@type":"Organization","name":"American English 埃森美語"},"publisher":{"@type":"Organization","name":"American English 埃森美語","logo":{"@type":"ImageObject","url":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg"}},"datePublished":"2026-09-14","dateModified":"2026-09-14"}</script>
 </head>
-<body data-page="english-abbreviations-guide">
+<body data-page="kk-phonetic-chart">
 <!-- AE:CHROME start -->
 <div class="progress" id="progress"></div>
 <header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo.jpg" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
 <div class="drawer" id="drawer"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></div>
 <!-- AE:CHROME end -->
 
-<main id="top">
-
-<section class="page-hero">
-  <div class="bg-deco"></div>
-  <div class="wrap">
-    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/blog/">部落格</a> ／ 英文縮寫</div>
-    <span class="eyebrow eyebrow-green reveal">學習資源 · 用法表</span>
-    <h1 class="reveal d1">e.g.、i.e.、etc. <em>意思與用法</em><br>常用英文縮寫總整理</h1>
-    <div class="divider reveal d1"></div>
-    <p class="body reveal d2">本文由埃森美語創辦人 Christopher 撰寫（University of Michigan 畢業、持美國正式教師執照）</p>
-    <figure class="post-hero pf-cream reveal d2">
-      <img src="/assets/img/blog/english-abbreviations-phone-chat-screen.webp" srcset="/assets/img/blog/english-abbreviations-phone-chat-screen-800.webp 800w, /assets/img/blog/english-abbreviations-phone-chat-screen.webp 1600w" sizes="(max-width:828px) 100vw, 732px" width="1600" height="900" alt="手機聊天畫面上的英文訊息，學習常見英文縮寫" fetchpriority="high" decoding="async">
-    </figure>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="prose reveal">
-      <p>最常被搞混的三個英文縮寫，一句話分清楚：<strong>e.g.</strong> 是 for example（例如，後面接不完整的舉例）、<strong>i.e.</strong> 是 that is（也就是說，後面接唯一的解釋）、<strong>etc.</strong> 是 et cetera（等等，本身已含 and，前面不再加 and）。英文縮寫最大的坑不是「不認識」，而是<strong>用錯場合</strong>與<strong>唸錯方式</strong>：e.g. 和 i.e. 意思完全不同、etc. 有三個經典誤用、NASA 唸成一個單字但 FBI 要逐字母唸。這一頁分四類整理：<strong>拉丁縮寫（考試會考）、稱謂與時間（正式書寫必備）、生活常用縮寫、唸法規則</strong>——每一類附台灣學生最常犯的錯。</p>
-    </div>
-  </div>
-</section>
-
+<main id="top"><section class="page-hero"><div class="bg-deco"></div><div class="wrap"><div class="breadcrumb reveal"><a href="/">首頁</a> › <a href="/blog/">學習資源</a> › 英文縮寫</div><h1 class="reveal d1">英文縮寫大全：74 個常用縮寫的意思、全名與正確用法</h1><div class="divider reveal d1"></div><p class="body reveal d2">英文縮寫最惱人的地方是：看得到卻查不到。e.g. 和 i.e. 差在哪、etc. 前面要不要加 and、LOL 到底能不能對長輩用——下面這份表把 74 個常見縮寫的意思和<strong>英文全名</strong>都列出來，知道全名就不會再用錯。</p></div></section><section class="section"><div class="wrap"><div class="center stack reveal"><h2>英文縮寫對照表（74 個）</h2></div><div class="prose reveal"><p>第三欄是<strong>英文全名</strong>——這一欄才是關鍵。知道 e.g. 來自 exempli gratia（for example）、i.e. 來自 id est（that is），就不會再混用。</p></div><h3>日常與書寫常用 Everyday abbreviations</h3>
+<div class="compare reveal"><!-- AE:CHART english-abbreviations-chart start -->
+<div class="magnet-box reveal">
+  <p><strong>📄 免費下載：英文縮寫對照表（A4 列印版）</strong><br>74 個常用英文縮寫與全名——直接下載，印出來貼在書桌前，每天看一眼比坐下來背一次有用。</p>
+  <a class="btn btn-primary" download href="/assets/downloads/ae-english-abbreviations-a4.pdf">免費下載 PDF</a>
+</div>
+<figure class="chart-fig">
+  <img src="/assets/img/charts/english-abbreviations-chart.png" width="1680" height="2435"
+       alt="英文縮寫對照表：74個常用英文縮寫的中文意思與英文全名，含e.g.、i.e.、ASAP、FYI" loading="lazy" decoding="async">
+  <figcaption>英文縮寫對照表——可儲存或列印｜埃森美語 americanenglish.com.tw</figcaption>
+</figure>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageObject","contentUrl":"https://americanenglish.com.tw/assets/img/charts/english-abbreviations-chart.png","url":"https://americanenglish.com.tw/assets/img/charts/english-abbreviations-chart.png","width":1680,"height":2435,"caption":"英文縮寫對照表：74個常用英文縮寫的中文意思與英文全名，含e.g.、i.e.、ASAP、FYI","name":"英文縮寫對照表","creditText":"American English 埃森美語","creator":{"@type":"Organization","name":"American English 埃森美語"},"license":"https://americanenglish.com.tw/","acquireLicensePage":"https://americanenglish.com.tw/english-abbreviations-guide/"}</script>
+<!-- AE:CHART english-abbreviations-chart end -->
+<table><thead><tr><th>縮寫</th><th>中文意思</th><th>英文全名／說明</th></tr></thead><tbody><tr><td>a.m.</td><td>上午</td><td>ante meridiem（拉丁文「中午之前」）</td></tr><tr><td>p.m.</td><td>下午</td><td>post meridiem（中午之後）</td></tr><tr><td>e.g.</td><td>舉例來說</td><td>exempli gratia＝for example</td></tr><tr><td>i.e.</td><td>也就是說</td><td>id est＝that is（和 e.g. 完全不同）</td></tr><tr><td>etc.</td><td>等等</td><td>et cetera（前面不加 and）</td></tr><tr><td>vs.</td><td>對上、相對於</td><td>versus</td></tr><tr><td>approx.</td><td>大約</td><td>approximately</td></tr><tr><td>min. / max.</td><td>最小／最大</td><td>minimum／maximum</td></tr><tr><td>No.</td><td>編號</td><td>numero（拉丁文，不是 number 的縮寫）</td></tr><tr><td>Mr. / Mrs. / Ms.</td><td>先生／太太／女士</td><td>Ms. 不標示婚姻狀態，正式場合首選</td></tr><tr><td>Dr. / Prof.</td><td>博士、醫生／教授</td><td>Doctor／Professor</td></tr><tr><td>St. / Rd. / Ave.</td><td>街／路／大道</td><td>Street／Road／Avenue</td></tr><tr><td>Dept.</td><td>部門、系所</td><td>Department</td></tr><tr><td>Est.</td><td>創立於</td><td>Established</td></tr><tr><td>RSVP</td><td>敬請回覆</td><td>法文 répondez s&#x27;il vous plaît</td></tr><tr><td>P.S.</td><td>附註</td><td>postscript，寫在信末</td></tr><tr><td>N/A</td><td>不適用</td><td>not applicable／not available</td></tr><tr><td>TBA / TBD</td><td>待公布／待決定</td><td>to be announced／to be determined</td></tr><tr><td>DIY</td><td>自己動手做</td><td>do it yourself</td></tr><tr><td>FAQ</td><td>常見問題</td><td>frequently asked questions</td></tr></tbody></table></div>
+<h3>網路與訊息用語 Internet and texting</h3>
+<div class="compare reveal"><table><thead><tr><th>縮寫</th><th>中文意思</th><th>英文全名／說明</th></tr></thead><tbody><tr><td>LOL</td><td>大笑</td><td>laughing out loud</td></tr><tr><td>BTW</td><td>順帶一提</td><td>by the way</td></tr><tr><td>IMO / IMHO</td><td>我認為</td><td>in my opinion／in my humble opinion</td></tr><tr><td>TBH</td><td>老實說</td><td>to be honest</td></tr><tr><td>OMG</td><td>我的天</td><td>oh my god</td></tr><tr><td>ASAP</td><td>盡快</td><td>as soon as possible</td></tr><tr><td>FYI</td><td>供你參考</td><td>for your information</td></tr><tr><td>IDK</td><td>我不知道</td><td>I don&#x27;t know</td></tr><tr><td>BRB</td><td>馬上回來</td><td>be right back</td></tr><tr><td>TTYL</td><td>晚點聊</td><td>talk to you later</td></tr><tr><td>THX / TY</td><td>謝謝</td><td>thanks／thank you</td></tr><tr><td>NP</td><td>不客氣</td><td>no problem</td></tr><tr><td>JK</td><td>開玩笑的</td><td>just kidding</td></tr><tr><td>TMI</td><td>講太多了</td><td>too much information</td></tr><tr><td>AKA</td><td>又名、也就是</td><td>also known as</td></tr><tr><td>DM</td><td>私訊</td><td>direct message</td></tr><tr><td>ETA</td><td>預計抵達時間</td><td>estimated time of arrival</td></tr><tr><td>WFH</td><td>在家工作</td><td>work from home</td></tr><tr><td>OOTD</td><td>今日穿搭</td><td>outfit of the day</td></tr><tr><td>GOAT</td><td>史上最強</td><td>greatest of all time</td></tr></tbody></table></div>
+<h3>學校與考試 School and exams</h3>
+<div class="compare reveal"><table><thead><tr><th>縮寫</th><th>中文意思</th><th>英文全名／說明</th></tr></thead><tbody><tr><td>GPA</td><td>成績平均</td><td>grade point average</td></tr><tr><td>Q&amp;A</td><td>問答</td><td>question and answer</td></tr><tr><td>HW</td><td>作業</td><td>homework</td></tr><tr><td>PE</td><td>體育課</td><td>physical education</td></tr><tr><td>PPT</td><td>簡報</td><td>PowerPoint presentation</td></tr><tr><td>GEPT</td><td>全民英檢</td><td>General English Proficiency Test</td></tr><tr><td>TOEIC</td><td>多益</td><td>Test of English for International Communication</td></tr><tr><td>TOEFL</td><td>托福</td><td>Test of English as a Foreign Language</td></tr><tr><td>IELTS</td><td>雅思</td><td>International English Language Testing System</td></tr><tr><td>KET / PET / FCE</td><td>劍橋英檢各級</td><td>Key／Preliminary／First Certificate in English</td></tr><tr><td>CEFR</td><td>歐洲共同語言參考標準</td><td>Common European Framework of Reference</td></tr><tr><td>ESL / EFL</td><td>第二語言英語／外語英語</td><td>English as a Second／Foreign Language</td></tr></tbody></table></div>
+<h3>商業與職場 Business and workplace</h3>
+<div class="compare reveal"><table><thead><tr><th>縮寫</th><th>中文意思</th><th>英文全名／說明</th></tr></thead><tbody><tr><td>CEO</td><td>執行長</td><td>chief executive officer</td></tr><tr><td>CFO / CTO</td><td>財務長／技術長</td><td>chief financial／technology officer</td></tr><tr><td>HR</td><td>人資</td><td>human resources</td></tr><tr><td>PM</td><td>專案經理／產品經理</td><td>project／product manager</td></tr><tr><td>B2B / B2C</td><td>企業對企業／企業對消費者</td><td>business to business／consumer</td></tr><tr><td>ROI</td><td>投資報酬率</td><td>return on investment</td></tr><tr><td>KPI</td><td>關鍵績效指標</td><td>key performance indicator</td></tr><tr><td>CV / résumé</td><td>履歷</td><td>curriculum vitae</td></tr><tr><td>Inc. / Ltd. / Co.</td><td>股份有限公司／有限公司／公司</td><td>Incorporated／Limited／Company</td></tr><tr><td>Q1–Q4</td><td>第一到第四季</td><td>quarter</td></tr><tr><td>EOD</td><td>下班前</td><td>end of day</td></tr><tr><td>MTG</td><td>會議</td><td>meeting</td></tr></tbody></table></div>
+<h3>單位與其他 Units and others</h3>
+<div class="compare reveal"><table><thead><tr><th>縮寫</th><th>中文意思</th><th>英文全名／說明</th></tr></thead><tbody><tr><td>kg / g</td><td>公斤／公克</td><td>kilogram／gram</td></tr><tr><td>cm / mm / km</td><td>公分／公釐／公里</td><td>centimetre／millimetre／kilometre</td></tr><tr><td>ml / L</td><td>毫升／公升</td><td>millilitre／litre</td></tr><tr><td>ft / in</td><td>英尺／英吋</td><td>foot／inch</td></tr><tr><td>°C / °F</td><td>攝氏／華氏</td><td>Celsius／Fahrenheit</td></tr><tr><td>USD / TWD</td><td>美元／新台幣</td><td>貨幣代碼 ISO 4217</td></tr><tr><td>ID</td><td>身分證明</td><td>identification</td></tr><tr><td>VIP</td><td>貴賓</td><td>very important person</td></tr><tr><td>UFO</td><td>幽浮</td><td>unidentified flying object</td></tr><tr><td>SOS</td><td>求救</td><td>國際求救訊號，不是字首縮寫</td></tr></tbody></table></div></div></section><section class="section bg-soft"><div class="wrap"><div class="center stack reveal"><h2>e.g. 和 i.e. 到底差在哪</h2></div><div class="prose reveal"><p>這是英文縮寫裡最常用錯的一組，連母語者都會錯。</p><p><strong>e.g. = for example（舉例）</strong>，後面接的是<u>其中幾個例子</u>，不是全部。<br><em>I like citrus fruits, e.g. oranges and lemons.</em>（還有其他柑橘類，只是舉兩個）</p><p><strong>i.e. = that is（也就是說）</strong>，後面接的是<u>把前面說完整</u>，等於重講一次。<br><em>I like citrus fruits, i.e. oranges and lemons.</em>（我喜歡的柑橘類就只有這兩種）</p><p>記法：<strong>e</strong>.g. 的 e 想成 <strong>e</strong>xample，<strong>i</strong>.e. 的 i 想成 <strong>i</strong>n other words。兩者在正式英文中後面都要加逗號，而且都保留句點。</p></div></div></section><section class="section"><div class="wrap"><div class="center stack reveal"><h2>縮寫要不要加句點？</h2></div><div class="prose reveal"><p>規則不複雜，但美式與英式不同：</p><p><strong>截去字尾的縮寫要加句點</strong>：Prof.（Professor）、etc.（et cetera）、approx.（approximately）、Jan.（January）。因為後面還有字母被省略。<br><strong>頭尾都保留的縮寫，英式不加、美式加</strong>：Mr／Mr.、Dr／Dr.、St／St.。台灣教科書多從英式，多益等美系考試用美式。<br><strong>首字母縮寫（每個字母唸出來或當成字唸）不加句點</strong>：NASA、UNESCO、ASAP、FYI、CEO。</p><p>一個常見錯誤：<strong>etc. 前面不加 and</strong>。et cetera 的 et 本身就是 and，寫 and etc. 等於講了兩次。</p></div></div></section><section class="section bg-soft"><div class="wrap"><div class="center stack reveal"><h2>月份、星期與單位的縮寫</h2></div><div class="prose reveal"><p>這三組有自己的固定規則，也是查詢量最高的幾個：</p><p><strong>月份</strong>取前三個字母加句點，只有 May 不縮寫；September 兩種都通行（Sep./Sept.）。完整表在 <a href="/months-english/">月份英文</a>。<br><strong>星期</strong>同樣取前三字母：Mon.、Tue.（或 Tues.）、Wed.、Thu.（或 Thurs.）、Fri.、Sat.、Sun.。完整表在 <a href="/days-of-week-english/">星期英文</a>。<br><strong>單位</strong>一律不加句點也不加複數 s：5 kg（不是 5 kgs.）、10 cm、3 L。這是國際單位制的規定。</p><p>名字縮寫（initials）則是取每個名字的第一個字母大寫加句點：John Ronald Reuel Tolkien → <strong>J. R. R. Tolkien</strong>。</p></div></div></section><section class="section bg-soft"><div class="wrap"><div class="center stack reveal"><h2>NASA 唸成單字、FBI 唸字母——怎麼判斷</h2></div><div class="prose reveal"><p>首字母縮寫有兩種唸法，分界不是規則而是<strong>能不能唸得出來</strong>：</p><p><strong>拼得出音節的唸成一個字</strong>（acronym）：NASA /ˈnæsə/、NATO /ˈneɪtoʊ/、UNESCO、ASAP（也有人逐字母唸）、SCUBA、laser——這些字母組合剛好構成可發音的音節。<br><strong>拼不出音節的逐字母唸</strong>（initialism）：FBI /ˌɛf biː ˈaɪ/、CEO、DIY、ATM、USB、FAQ——連續子音沒辦法成音節，只能一個一個唸。</p><p>判斷法很簡單：<strong>試著把它當成一個字唸唸看</strong>。唸得順就是 acronym，卡住就逐字母唸。少數兩種都可以：ASAP、FAQ 在不同地區習慣不同，都不算錯。</p></div></div></section><section class="section"><div class="wrap"><div class="center stack reveal"><h2>網路縮寫什麼場合能用</h2></div><div class="prose reveal"><p>這是家長最常問的一題。簡單的分界線：<strong>看對象，不看場合的正式程度</strong>。</p><p><strong>朋友之間的訊息</strong>：LOL、BTW、TBH、JK 都沒問題。<br><strong>寫給老師、主管或客戶</strong>：FYI、ASAP、ETA 可以（這些在職場是標準用語）；LOL、OMG、JK 不要。<br><strong>作文與正式書信</strong>：網路縮寫一律不要，連 e.g. 和 etc. 在很正式的文章裡也建議寫全。</p><p>考試更嚴格：<strong>英檢與學測作文用網路縮寫會被視為錯誤</strong>。教孩子時把這條線講清楚比禁止有效——他知道什麼時候能用，才不會在該正式的時候用錯。</p></div></div></section><section class="section bg-soft"><div class="wrap"><div class="center stack reveal"><h2>英文縮寫常見問題</h2></div><div class="faq"><div class="faq-item"><h3 class="faq-h">e.g. 和 i.e. 差在哪？</h3><div class="faq-a">e.g. 是 for example，後面接其中幾個例子；i.e. 是 that is，後面把前面那句說完整。記法：e 想成 example，i 想成 in other words。兩個後面在正式英文裡都加逗號。</div></div><div class="faq-item"><h3 class="faq-h">etc. 前面要加 and 嗎？</h3><div class="faq-a">不要。etc. 是 et cetera，et 本身就是 and，寫 and etc. 等於說了兩次 and。另外 etc. 只用在列舉事物，列舉「人」時用 et al.。</div></div><div class="faq-item"><h3 class="faq-h">縮寫要不要加句點？</h3><div class="faq-a">截掉字尾的要加（Prof.、approx.、Jan.）；首字母縮寫不加（ASAP、CEO、NASA）；Mr、Dr 這類頭尾都在的，英式不加、美式加。台灣教科書多從英式。</div></div><div class="faq-item"><h3 class="faq-h">ASAP 可以對主管用嗎？</h3><div class="faq-a">可以，ASAP、FYI、ETA 在職場是標準用語，不算不禮貌。要避開的是 LOL、OMG、JK 這類純社交用語。真正的分界是對象，不是縮寫本身。</div></div><div class="faq-item"><h3 class="faq-h">名字縮寫怎麼寫？</h3><div class="faq-a">取每個名字的第一個字母大寫加句點，中間空一格：J. R. R. Tolkien。台灣的護照英文姓名若要縮寫，一般保留姓氏全名、名字縮寫，例如 Wang, C. H.</div></div><div class="faq-item"><h3 class="faq-h">作文可以用縮寫嗎？</h3><div class="faq-a">英檢與學測作文建議不要。e.g.、etc. 在一般文章可以，但在正式作文裡寫成 for example、and so on 更安全；網路縮寫一律會被視為錯誤。</div></div></div></div></section><!-- AE:ROUTE -->
 <section class="section bg-soft">
   <div class="wrap">
-    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">第一類</span><h2>拉丁縮寫：<em>e.g.、i.e.、etc.</em></h2></div>
-    <div class="compare reveal" style="margin-top:18px">
-      <table>
-        <thead><tr><th>縮寫</th><th>意思</th><th>例句</th></tr></thead>
-        <tbody>
-          <tr><th>e.g.</th><td>例如（舉例，不完整列舉）</td><td>I like ball sports, e.g., basketball and tennis.</td></tr>
-          <tr><th>i.e.</th><td>也就是說（換句話說，唯一解釋）</td><td>The test is on the last day of May, i.e., May 31.</td></tr>
-          <tr><th>etc.</th><td>等等（列舉未完）</td><td>Bring pencils, erasers, rulers, etc.</td></tr>
-          <tr><th>a.m. / p.m.</th><td>上午／下午</td><td>The class starts at 3:30 p.m.</td></tr>
-          <tr><th>vs.</th><td>對抗、相對於</td><td>Cambridge vs. GEPT</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="prose reveal" style="margin-top:18px">
-      <p><strong>e.g. 和 i.e. 的分辨法：</strong>e.g. = for example（隨便舉幾個）；i.e. = that is（精確地說，只有一個意思）。代換測試：能換成「例如」的用 e.g.，能換成「也就是」的用 i.e.。<strong>etc. 的三大錯誤：</strong>❶ and etc.（×——etc. 已含 and）❷ e.g. 開頭的列舉結尾再加 etc.（×——重複了「舉例」）❸ 用在人身上（×——人用 et al.）。</p>
-    </div>
+    <span class="eyebrow eyebrow-yellow">縮寫查完，下一步</span>
+    <h2 style="margin-top:14px">看得懂縮寫，<em>寫得出全文嗎？</em></h2>
+    <div class="divider" style="margin:18px 0 22px"></div>
+    <p class="body" style="max-width:720px">縮寫是讀的技能，考試考的是寫。劍橋 KET 寫作 Part 6 的短訊息、書信格式的正式用語，都是「該不該縮寫」最常出現的地方。免費練習附範文逐句解析。</p>
+    <div style="margin-top:20px"><a href="/ket-rw-practice-part6/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">KET 寫作 Part 6 短訊息</a><a href="/english-letter-writing-guide/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">英文書信怎麼寫</a><a href="/months-english/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">月份英文對照表</a><a href="/english-vocabulary-by-topic/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">主題字表總整理</a></div>
   </div>
 </section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="center stack reveal"><span class="eyebrow eyebrow-green">第二類</span><h2>稱謂縮寫：<em>Mr.／Mrs.／Ms.／Dr.</em></h2></div>
-    <div class="compare reveal" style="margin-top:18px">
-      <table>
-        <thead><tr><th>縮寫</th><th>全稱</th><th>用於</th><th>注意</th></tr></thead>
-        <tbody>
-          <tr><th>Mr.</th><td>Mister</td><td>男性</td><td>不分婚姻狀態</td></tr>
-          <tr><th>Mrs.</th><td>源自 Mistress</td><td>已婚女性</td><td>唸作 MISS-iz；現代英文不拼寫全稱</td></tr>
-          <tr><th>Ms.</th><td>—</td><td>女性通用</td><td>不透露婚姻狀態，最安全的選擇</td></tr>
-          <tr><th>Miss</th><td>—</td><td>未婚女性</td><td>不是縮寫，不加點</td></tr>
-          <tr><th>Dr.</th><td>Doctor</td><td>博士／醫師</td><td>男女通用</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="prose reveal" style="margin-top:18px">
-      <p>兩條規則：<strong>稱謂後面接姓，不接名</strong>——Mr. Chen（✓）、Mr. David（×，那是在叫管家）；<strong>不確定女性婚姻狀態時一律用 Ms.</strong>——這也是現代書信的預設選擇。寫信給老師的正確稱呼與完整格式，見<a href="/english-letter-writing-guide/">英文書信指南</a>。</p>
-    </div>
-  </div>
-</section>
-
-<section class="section bg-soft">
-  <div class="wrap">
-    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">第三類</span><h2>生活常用縮寫<em>速查表</em></h2></div>
-    <div class="compare reveal" style="margin-top:18px">
-      <table>
-        <thead><tr><th>縮寫</th><th>全稱</th><th>意思</th></tr></thead>
-        <tbody>
-          <tr><th>ASAP</th><td>as soon as possible</td><td>越快越好</td></tr>
-          <tr><th>FYI</th><td>for your information</td><td>供你參考</td></tr>
-          <tr><th>DIY</th><td>do it yourself</td><td>自己動手做</td></tr>
-          <tr><th>VIP</th><td>very important person</td><td>貴賓</td></tr>
-          <tr><th>RSVP</th><td>répondez s'il vous plaît（法文）</td><td>請回覆（邀請函用）</td></tr>
-          <tr><th>BTW</th><td>by the way</td><td>順帶一提（非正式）</td></tr>
-          <tr><th>TBA / TBD</th><td>to be announced / decided</td><td>待公布／待定</td></tr>
-          <tr><th>P.S.</th><td>postscript</td><td>附註（信末補充）</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="prose reveal" style="margin-top:18px">
-      <p><strong>正式與非正式要分清楚</strong>：BTW、LOL、IDK 這類網路縮寫只屬於朋友間的訊息——作文、書信、考試裡出現會被扣分。判斷方式很簡單：這個縮寫你會不會唸給校長聽？不會的話，就別寫進正式文章。</p>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="center stack reveal"><span class="eyebrow eyebrow-green">唸法</span><h2>NASA 唸單字、FBI 唸字母——<em>怎麼判斷</em>？</h2></div>
-    <div class="prose reveal" style="margin-top:18px">
-      <p>縮寫的唸法分兩種：<strong>唸成一個單字的（acronym）</strong>——NASA（NA-sa）、ASAP（AY-sap，也可逐字母）、PIN、scuba；<strong>逐字母唸的（initialism）</strong>——FBI（F-B-I）、ATM、CEO、DIY、USA。判斷的經驗法則：<strong>字母排列組得成音節就唸單字，組不成就逐字母</strong>——NASA 剛好拼得出 na-sa 兩個音節，FBI 的 f-b-i 湊不出音節，只能一個字母一個字母唸。不確定時逐字母唸永遠安全。字母本身的正確發音，見 <a href="/kk-phonetic-chart/">KK 音標表</a>。</p>
-      <p><strong>台灣學生兩個經典錯：</strong>❶ 把 etc. 唸成「E-T-C」——正確唸全稱 et cetera（et-SET-er-a）；❷ 把 Mr. 唸成「M-R」——正確唸 Mister。<strong>縮寫是「寫」的省略，唸的時候多半要還原</strong>，這條觀念記住就不會鬧笑話。</p>
-    </div>
-  </div>
-</section>
-
-<section class="section bg-soft">
-  <div class="wrap">
-    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">常見問題</span><h2>英文縮寫<em>常見問題</em></h2></div>
-    <div class="faq">
-      <div class="faq-item"><h3 class="faq-h"><button class="faq-q" aria-expanded="false">e.g. 和 i.e. 到底差在哪？<span class="pm"></span></button></h3><div class="faq-a"><p>e.g.＝for example「例如」，後面接不完整的舉例；i.e.＝that is「也就是說」，後面接唯一的解釋。代換測試最準：能說「例如」的用 e.g.，能說「也就是」的用 i.e.。兩者後面通常都加逗號。</p></div></div>
-      <div class="faq-item"><h3 class="faq-h"><button class="faq-q" aria-expanded="false">etc. 前面要加 and 嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>不要。etc.＝et cetera，拉丁文的 et 就是 and，寫 and etc. 等於說「和和其他」。正確：pencils, erasers, rulers, etc. 另外注意 etc. 不用在人身上——列舉人未完用 et al.。</p></div></div>
-      <div class="faq-item"><h3 class="faq-h"><button class="faq-q" aria-expanded="false">a.m. 和 p.m. 怎麼用才對？<span class="pm"></span></button></h3><div class="faq-a"><p>a.m.＝午夜到中午，p.m.＝中午到午夜，寫在時間後面：3:30 p.m.。注意 12:00 的講法：中午 12 點是 12 p.m.（noon）、午夜是 12 a.m.（midnight）——容易搞反，正式場合直接寫 noon／midnight 最保險。</p></div></div>
-      <div class="faq-item"><h3 class="faq-h"><button class="faq-q" aria-expanded="false">LOL、BTW 可以寫進作文嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>不行。網路縮寫屬於朋友間的非正式訊息，作文、書信、考試中使用會被視為語域（register）錯誤而扣分。正式寫作請用完整字：by the way、I don't know。</p></div></div>
-      <div class="faq-item"><h3 class="faq-h"><button class="faq-q" aria-expanded="false">縮寫的點（.）什麼時候要加？<span class="pm"></span></button></h3><div class="faq-a"><p>美式習慣：稱謂與拉丁縮寫加點（Mr.、e.g.、etc.），全大寫的字母縮寫不加點（FBI、USA、ASAP）。英式常省略稱謂的點（Mr Chen）。同一篇文章裡保持一致最重要。</p></div></div>
-      <div class="faq-item"><h3 class="faq-h"><button class="faq-q" aria-expanded="false">孩子需要背縮寫表嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>不需要整表背——高頻的十幾個（e.g.、i.e.、etc.、Mr./Ms.、a.m./p.m.、ASAP、DIY）在閱讀和使用中自然會熟。重點是遇到時查得到、用的時候分得清正式與非正式。歡迎加 LINE 預約試聽，看孩子的閱讀量夠不夠。</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="section bg-blue">
-  <div class="wrap">
-    <div class="cta-box reveal">
-      <img class="cta-img" src="/assets/img/banqiao-kids-english-class.webp" alt="板橋美籍外師小班英文課堂" loading="lazy" decoding="async" width="668" height="540">
-      <span class="eyebrow eyebrow-green">免費資源</span>
-      <h2 style="margin-top:14px">縮寫查得到，<br><em>寫作規則</em>要一起顧</h2>
-      <p class="body" style="max-width:520px;margin:16px auto 0">這頁的縮寫整理免費、不必留資料，寫作業時開著對照就好。標點、大寫、日期與數字的寫法我們也各整理了一頁——同一篇英文作業最常一起被扣分的就是這幾項。有想確認的用法，歡迎加 LINE 直接問。</p>
-      <div class="cta-row">
-        <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 直接問</a>
-        <a href="/english-capitalization-guide/" class="btn btn-outline">看大寫規則指南</a>
-      </div>
-      <p class="body" style="max-width:560px;margin:26px auto 0">接著讀：<a href="/english-symbol-names/">@、#、& 等符號的英文唸法</a>、<a href="/english-punctuation-guide/">英文標點符號總整理</a>、<a href="/english-dates-guide/">月份、星期與日期寫法</a>、<a href="/english-numbers-guide/">英文數字與年份唸法</a>。</p>
-      <p class="body" style="max-width:560px;margin:12px auto 0;font-size:15px">住板橋的家長：我們的教室在<a href="/banqiao-english-cram-school/">板橋中正路</a>，可以加 LINE 預約免費程度評估。</p>
-    </div>
-  </div>
-</section>
-
-</main>
-
+<!-- /AE:ROUTE -->
+<section class="section bg-blue"><div class="wrap"><div class="center stack reveal"><h2>單字背起來了，用得出來嗎？</h2><p class="body">縮寫這種東西，查得到意思不代表用得對——用錯場合比不會用更尷尬。我們的課堂會教孩子分辨什麼時候能用、什麼時候不行。</p><a class="btn btn-primary" href="/line/">預約免費試上一堂</a></div></div></section></main>
+<!-- AE:AUDIO start -->
+<script>(function(){var a=null;document.addEventListener("click",function(e){var b=e.target.closest(".say");if(!b)return;e.preventDefault();if(a){a.pause();}a=new Audio(b.dataset.w);a.play().catch(function(){});b.classList.add("playing");a.onended=function(){b.classList.remove("playing")};});})();</script>
+<!-- AE:AUDIO end -->
 <script src="/assets/app.js?v=15"></script>
 </body>
 </html>

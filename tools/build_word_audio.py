@@ -24,8 +24,9 @@ VOICE  = "en-US-AvaMultilingualNeural"      # the site teaches American English
 REGION = os.environ.get("AZURE_SPEECH_REGION", "eastasia")
 PAGES  = ["english-pronunciation", "kk-phonetic-chart", "phonics-rules-chart",
           "numbers-1-100-english", "months-english", "days-of-week-english",
-          "colors-english", "fruits-english", "body-parts-english",
-          "countries-english", "jobs-english", "animals-english-vocabulary"]
+          "colors-english-vocabulary", "fruits-english", "body-parts-english",
+          "countries-english", "jobs-english", "animals-english-vocabulary",
+          "english-abbreviations-guide"]
 EXAMPLE_HEADS = ("例字", "例詞", "單字", "字例", "英文", "English", "Country", "國家")
 
 def key():
@@ -100,6 +101,9 @@ SAY = ('<button type="button" class="say" data-w="{src}" aria-label="播放 {w} 
 def mark_up(page, have):
     """Put a play button after each example word, inside an AE:AUDIO-marked page."""
     fp = os.path.join(SITE, page, "index.html")
+    if not os.path.exists(fp):
+        print(f"  /{page}/  skipped (no such page)")
+        return 0
     src = open(fp, encoding="utf-8").read()
     src = re.sub(r'<button type="button" class="say".*?</button>', "", src, flags=re.S)
     soup = BeautifulSoup(src, "html.parser")

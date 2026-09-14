@@ -179,7 +179,7 @@ PAGES = {
 }
 
 PAGES.update({
-"colors-english": dict(
+"colors-english-vocabulary": dict(
   target="顏色英文", index=1.28,
   h1="顏色英文對照表：62 個常用顏色、深淺說法與 colour／color 的差別",
   title="顏色英文62個對照表：深淺說法、拼法差異與形容詞順序｜埃森美語",
@@ -370,7 +370,7 @@ HUB_CARDS = [
  ("/numbers-1-100-english/", "英文數字 1-100", "0 到 100 完整拼法，附 13／30 的分辨方法", "101"),
  ("/months-english/", "月份英文 1-12", "月份、縮寫與天數，in／on 用法一次說清", "12"),
  ("/days-of-week-english/", "星期英文", "七天的縮寫、口語說法與 on Monday 的差別", "7"),
- ("/colors-english/", "顏色英文", "62 個顏色分五組，含深淺說法與拼法差異", "62"),
+ ("/colors-english-vocabulary/", "顏色英文", "62 個顏色分五組，含深淺說法與拼法差異", "62"),
  ("/fruits-english/", "水果英文", "47 種水果，含芭樂、蓮霧、釋迦等台灣水果", "47"),
  ("/body-parts-english/", "身體部位英文", "43 個部位，含 teeth／feet 不規則複數", "43"),
  ("/countries-english/", "國家英文", "80 國名稱與國籍形容詞，the 什麼時候加", "80"),
@@ -430,7 +430,7 @@ PAGES["english-vocabulary-by-topic"] = dict(
   body=hub_page,
   faq_n=6)
 
-PAGES["english-abbreviations"] = dict(
+PAGES["english-abbreviations-guide"] = dict(
   target="英文縮寫", index=11.99,
   h1="英文縮寫大全：74 個常用縮寫的意思、全名與正確用法",
   title="英文縮寫大全：74個常用縮寫意思查詢、全名與用法｜埃森美語",
@@ -465,6 +465,14 @@ PAGES["english-abbreviations"] = dict(
         "完整表在 <a href=\"/days-of-week-english/\">星期英文</a>。<br>"
         "<strong>單位</strong>一律不加句點也不加複數 s：5 kg（不是 5 kgs.）、10 cm、3 L。這是國際單位制的規定。",
         "名字縮寫（initials）則是取每個名字的第一個字母大寫加句點：John Ronald Reuel Tolkien → <strong>J. R. R. Tolkien</strong>。"), soft=True)
+    + sec("NASA 唸成單字、FBI 唸字母——怎麼判斷",
+      prose("首字母縮寫有兩種唸法，分界不是規則而是<strong>能不能唸得出來</strong>：",
+        "<strong>拼得出音節的唸成一個字</strong>（acronym）：NASA /ˈnæsə/、NATO /ˈneɪtoʊ/、"
+        "UNESCO、ASAP（也有人逐字母唸）、SCUBA、laser——這些字母組合剛好構成可發音的音節。<br>"
+        "<strong>拼不出音節的逐字母唸</strong>（initialism）：FBI /ˌɛf biː ˈaɪ/、CEO、DIY、ATM、USB、"
+        "FAQ——連續子音沒辦法成音節，只能一個一個唸。",
+        "判斷法很簡單：<strong>試著把它當成一個字唸唸看</strong>。唸得順就是 acronym，卡住就逐字母唸。"
+        "少數兩種都可以：ASAP、FAQ 在不同地區習慣不同，都不算錯。"), soft=True)
     + sec("網路縮寫什麼場合能用",
       prose("這是家長最常問的一題。簡單的分界線：<strong>看對象，不看場合的正式程度</strong>。",
         "<strong>朋友之間的訊息</strong>：LOL、BTW、TBH、JK 都沒問題。<br>"

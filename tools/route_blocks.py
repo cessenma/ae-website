@@ -23,7 +23,7 @@ BTN = ('<a href="{href}" style="display:inline-block;font-family:\'Baloo 2\',san
 
 # page → (eyebrow, h2 with <em>, body, [(label, href)])
 ROUTES = {
- "english-abbreviations": ("縮寫查完，下一步", "看得懂縮寫，<em>寫得出全文嗎？</em>",
+ "english-abbreviations-guide": ("縮寫查完，下一步", "看得懂縮寫，<em>寫得出全文嗎？</em>",
    "縮寫是讀的技能，考試考的是寫。劍橋 KET 寫作 Part 6 的短訊息、書信格式的正式用語，都是「該不該縮寫」最常出現的地方。免費練習附範文逐句解析。",
    [("KET 寫作 Part 6 短訊息", "/ket-rw-practice-part6/"), ("英文書信怎麼寫", "/english-letter-writing-guide/"),
     ("月份英文對照表", "/months-english/"), ("主題字表總整理", "/english-vocabulary-by-topic/")]),
@@ -36,12 +36,12 @@ ROUTES = {
  "months-english": ("月份記熟之後", "日期和時間，<em>寫得對嗎？</em>",
    "月份、星期、日期格式是短訊息寫作的固定考點——劍橋 KET 寫作 Part 6 就常出現約時間的情境。免費練習附範文逐句解析。",
    [("KET 寫作 Part 6 短訊息", "/ket-rw-practice-part6/"), ("星期英文對照表", "/days-of-week-english/"), ("主題字表總整理", "/english-vocabulary-by-topic/"), ("英文書信怎麼寫", "/english-letter-writing-guide/")]),
- "colors-english": ("顏色學完，下一步", "形容詞，<em>順序放對了嗎？</em>",
+ "colors-english-vocabulary": ("顏色學完，下一步", "形容詞，<em>順序放對了嗎？</em>",
    "顏色是形容詞的一種，真正的考點是「好幾個形容詞排在一起時誰在前」。下面的文法頁把順序整理成一張表，練習題可以直接驗收。",
    [("A2 文法指南", "/a2-grammar-guide/"), ("主題字表總整理", "/english-vocabulary-by-topic/"), ("A2 單字情境練習", "/a2-vocabulary-practice/"), ("水果英文對照表", "/fruits-english/")]),
  "fruits-english": ("水果會說之後", "點餐和購物，<em>講得出來嗎？</em>",
    "水果、食物這類字最常用在點餐和買東西的情境。劍橋 KET 口說 Part 2 就是看圖描述日常情境，免費練習附整段逐字稿與中文對照。",
-   [("KET 口說練習（逐字稿）", "/ket-speaking-practice/"), ("主題字表總整理", "/english-vocabulary-by-topic/"), ("顏色英文對照表", "/colors-english/"), ("動物英文對照表", "/animals-english-vocabulary/")]),
+   [("KET 口說練習（逐字稿）", "/ket-speaking-practice/"), ("主題字表總整理", "/english-vocabulary-by-topic/"), ("顏色英文對照表", "/colors-english-vocabulary/"), ("動物英文對照表", "/animals-english-vocabulary/")]),
  "body-parts-english": ("身體部位學完", "生病不舒服，<em>說得清楚嗎？</em>",
    "身體部位最常用在「哪裡不舒服」。這類情境對話是劍橋 KET 口說與聽力的常見題材，免費練習有完整音檔與逐字稿。",
    [("KET 聽力 Part 1 免費練習", "/ket-listening-practice-part1/"), ("主題字表總整理", "/english-vocabulary-by-topic/"), ("KET 口說練習", "/ket-speaking-practice/"), ("英文發音完整指南", "/english-pronunciation/")]),

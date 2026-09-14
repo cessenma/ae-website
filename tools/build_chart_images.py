@@ -80,7 +80,7 @@ SPECS.update({
    title="星期英文對照表", sub="星期一到星期日 ・ 英文、縮寫與口語說法",
    alt="星期英文對照表：星期一到星期日的英文、中文、縮寫與口語說法",
    foot="可儲存列印｜americanenglish.com.tw"),
- "colors-english-chart": dict(page="colors-english", cols=3, width=1500,
+ "colors-english-chart": dict(page="colors-english-vocabulary", cols=3, width=1500,
    title="顏色英文對照表", sub="62 個常用顏色 ・ 依色系分組",
    alt="顏色英文對照表：62個常用顏色的英文與中文對照，依色系分組",
    foot="可儲存列印｜americanenglish.com.tw"),
@@ -102,7 +102,7 @@ SPECS.update({
    alt="職業英文對照表：83種常見工作的英文與中文對照，依領域分組",
    foot="可儲存列印｜americanenglish.com.tw"),
 
- "english-abbreviations-chart": dict(page="english-abbreviations", cols=3, width=1680,
+ "english-abbreviations-chart": dict(page="english-abbreviations-guide", cols=3, width=1680,
    title="英文縮寫對照表", sub="74 個常用縮寫 ・ 中文意思與英文全名",
    alt="英文縮寫對照表：74個常用英文縮寫的中文意思與英文全名，含e.g.、i.e.、ASAP、FYI",
    foot="可儲存列印｜americanenglish.com.tw"),
