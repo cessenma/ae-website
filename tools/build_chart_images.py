@@ -127,7 +127,7 @@ SPECS.update({
    title="英文母音與子音對照表", sub="母音、子音的音標、例字與發音方式",
    alt="英文母音與子音對照表：音標符號、例字與發音方式，含字母與音標對照",
    foot="可儲存列印｜americanenglish.com.tw"),
- "english-symbol-names-chart": dict(page="english-symbol-names", cols=2, width=1560, max_rows=44,
+ "english-symbol-names-chart": dict(page="english-symbol-names", cols=3, width=1680, max_rows=48,
    title="英文符號名稱對照表", sub="鍵盤與標點符號的英文怎麼唸",
    alt="英文符號名稱對照表：鍵盤與標點符號的英文名稱與唸法，含@、#、&等",
    foot="可儲存列印｜americanenglish.com.tw"),

@@ -16,6 +16,8 @@ Usage:  python3 tools/build_word_audio.py [page ...]
 """
 import os, re, sys, json, time, html, urllib.request, urllib.error
 from bs4 import BeautifulSoup
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from normalize_head import normalize   # BeautifulSoup reorders head attributes; see that file
 
 SITE   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AUDIO  = os.path.join(SITE, "assets/audio/words")
@@ -129,7 +131,7 @@ def mark_up(page, have):
                                                w=html.escape(first, quote=True)), "html.parser")
                 cell.append(btn)
                 n += 1
-    out = str(soup)
+    out = normalize(str(soup))
     if "AE:AUDIO" not in out:
         out = out.replace("</main>", "</main>\n<!-- AE:AUDIO start -->\n"
             '<script>(function(){var a=null;document.addEventListener("click",function(e){'

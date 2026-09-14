@@ -208,7 +208,10 @@ def process_page(path, css_ver="", crit=""):
     original = html          # kept so we can skip writing files this build did not change
     soup = BeautifulSoup(html, "lxml")
 
-    m = re.search(r'<link rel="canonical" href="([^"]+)"', html)
+    # Attribute order is not guaranteed: anything round-tripped through BeautifulSoup
+    # comes back as <link href="..." rel="canonical"/>. Match either order.
+    m = (re.search(r'<link[^>]*\brel="canonical"[^>]*\bhref="([^"]+)"', html) or
+         re.search(r'<link[^>]*\bhref="([^"]+)"[^>]*\brel="canonical"', html))
     canon = m.group(1) if m else urljoin(ORIGIN, "/" + os.path.dirname(rel) + "/" if os.path.dirname(rel) else ORIGIN + "/")
     key = page_key(canon)
 
