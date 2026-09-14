@@ -159,6 +159,11 @@ SPECS.update({
    title="be 動詞用法表", sub="am／is／are／was／were ・ 人稱與時態對照",
    alt="be動詞用法對照表：am is are was were 的人稱與時態對照，附例句",
    foot="可儲存列印｜americanenglish.com.tw"),
+
+ "irregular-verbs-chart": dict(page="irregular-verbs-list", cols=3, width=1700, max_rows=76,
+   title="不規則動詞三態表", sub="70 個常用動詞 ・ 原形、過去式、過去分詞",
+   alt="不規則動詞三態表：70個常用動詞的原形、過去式與過去分詞對照，附中文",
+   foot="免費 A4 列印版下載"),
 })
 
 CSS = """

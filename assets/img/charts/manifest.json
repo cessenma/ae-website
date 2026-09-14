@@ -250,5 +250,14 @@
   "alt": "be動詞用法對照表：am is are was were 的人稱與時態對照，附例句",
   "title": "be 動詞用法表",
   "page": "be-verbs-guide"
+ },
+ "irregular-verbs-chart": {
+  "slug": "irregular-verbs-chart",
+  "png": "/assets/img/charts/irregular-verbs-chart.png",
+  "w": 1700,
+  "h": 3051,
+  "alt": "不規則動詞三態表：70個常用動詞的原形、過去式與過去分詞對照，附中文",
+  "title": "不規則動詞三態表",
+  "page": "irregular-verbs-list"
  }
 }
