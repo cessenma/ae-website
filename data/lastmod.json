@@ -101,7 +101,7 @@
 },
 "body-parts-english": {
 "date": "2026-09-15",
-"hash": "bf952abad68e44dceffc684002f3478f"
+"hash": "8d050537932b9e819792fda0bb08fbcf"
 },
 "cae-c1-advanced-guide": {
 "date": "2026-08-26",
@@ -177,7 +177,7 @@
 },
 "colors-english-vocabulary": {
 "date": "2026-09-15",
-"hash": "8950217923c45a603b925ab1c7df72a9"
+"hash": "f375427764c6b600855b9e26f39b098f"
 },
 "cool-english-guide": {
 "date": "2026-09-13",
@@ -185,7 +185,7 @@
 },
 "countries-english": {
 "date": "2026-09-15",
-"hash": "fba19d78c57c6ba055f607bed31caf72"
+"hash": "7a6fb1a94daf74647da7b61bebb50913"
 },
 "courses": {
 "date": "2026-08-25",
@@ -201,7 +201,7 @@
 },
 "days-of-week-english": {
 "date": "2026-09-15",
-"hash": "86373c4c56549adc6ea5b3d15bab5000"
+"hash": "da35886711c5bbc0f146c023c2ad6d14"
 },
 "download": {
 "date": "2026-08-26",
@@ -221,7 +221,7 @@
 },
 "english-abbreviations-guide": {
 "date": "2026-09-15",
-"hash": "0c867ea98605445f0a7ec368dae5c3f9"
+"hash": "b99762ff892e361c0c8a1251a17a091b"
 },
 "english-alphabet-guide": {
 "date": "2026-09-14",
@@ -285,7 +285,7 @@
 },
 "english-pronunciation": {
 "date": "2026-09-15",
-"hash": "c09ca5a5616da3816dc5a7f042c25c13"
+"hash": "031a7aba5a7e7c6083ce0b7e12d66054"
 },
 "english-pronunciation-standards": {
 "date": "2026-08-21",
@@ -317,7 +317,7 @@
 },
 "english-vocabulary-by-topic": {
 "date": "2026-09-15",
-"hash": "5765082dace0568a3a785064d096854a"
+"hash": "7f5b517d481e91386d81d4c9a45e2252"
 },
 "english-vowels-consonants": {
 "date": "2026-09-14",
@@ -477,7 +477,7 @@
 },
 "fruits-english": {
 "date": "2026-09-15",
-"hash": "8e7cb45b6daa9a830b4b91e299f253cb"
+"hash": "d30996b53230ab48fd24496ab1848682"
 },
 "fruits-english-vocabulary": {
 "date": "2026-09-06",
@@ -569,7 +569,7 @@
 },
 "jobs-english": {
 "date": "2026-09-15",
-"hash": "345c34eecb6250f1f9524bed156d16d4"
+"hash": "767548e34078a82e965ae0849f1613c0"
 },
 "juguang-elementary-english": {
 "date": "2026-08-07",
@@ -673,11 +673,15 @@
 },
 "kk-phonetic-chart": {
 "date": "2026-09-15",
-"hash": "b778c07e7a6e22080be9481a930a8e3a"
+"hash": "f104fd60c09a72dcc05421d4f97f0e00"
 },
 "kk-phonetics-vs-phonics": {
 "date": "2026-09-13",
 "hash": "b2ee6826775d5373419242a7fb4c9c51"
+},
+"learning-support-guide": {
+"date": "2026-09-15",
+"hash": "8fa5810351190b27ddef9b47136518e9"
 },
 "line": {
 "date": "2026-08-07",
@@ -701,7 +705,7 @@
 },
 "months-english": {
 "date": "2026-09-15",
-"hash": "491b26ec5e4aa2f94e530ebbb5f55d5f"
+"hash": "37ccaf83ec145501edc78d23033efa49"
 },
 "movers-listening-practice-part1": {
 "date": "2026-09-08",
@@ -765,7 +769,7 @@
 },
 "numbers-1-100-english": {
 "date": "2026-09-15",
-"hash": "6d15bdae4e48da7afd4609db199241a7"
+"hash": "6b9254df54704c37581536bda784599b"
 },
 "online-vs-in-person-english-banqiao": {
 "date": "2026-08-07",
@@ -849,7 +853,7 @@
 },
 "phonics-rules-chart": {
 "date": "2026-09-15",
-"hash": "30ef0d727d35f36bf94f658e9a9ac7a8"
+"hash": "124549f30c508a28d93eee437e9a1bfa"
 },
 "plural-s-past-ed-pronunciation": {
 "date": "2026-08-21",

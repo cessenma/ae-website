@@ -89,7 +89,7 @@ def words_on(page):
             for i in cols:
                 if i < len(cells):
                     txt = cells[i].get_text(" ", strip=True)
-                    for w in re.split(r"[,、，/／]", txt):
+                    for w in re.split(r"[,、，/／・·･;；]", txt):
                         w = w.strip()
                         if re.fullmatch(r"[A-Za-z][A-Za-z' \-]{0,24}", w):
                             out.append(w)
@@ -107,7 +107,11 @@ def mark_up(page, have):
         print(f"  /{page}/  skipped (no such page)")
         return 0
     src = open(fp, encoding="utf-8").read()
-    src = re.sub(r'<button type="button" class="say".*?</button>', "", src, flags=re.S)
+    # Strip any existing buttons before re-adding. Attribute order is NOT stable —
+    # BeautifulSoup re-emits this as <button aria-label=... class="say" ... type="button">,
+    # so a pattern that assumes the original order silently appends a second copy on
+    # every run. Match on the class alone.
+    src = re.sub(r'<button[^>]*class="say"[^>]*>.*?</button>', "", src, flags=re.S)
     soup = BeautifulSoup(src, "html.parser")
     n = 0
     for tb in soup.find_all("table"):
@@ -123,7 +127,7 @@ def mark_up(page, have):
                 if i >= len(cells):
                     continue
                 cell = cells[i]
-                first = next((w.strip() for w in re.split(r"[,、，/]", cell.get_text(" ", strip=True))
+                first = next((w.strip() for w in re.split(r"[,、，/／・·･;；]", cell.get_text(" ", strip=True))
                               if slug(w.strip()) in have), None)
                 if not first:
                     continue

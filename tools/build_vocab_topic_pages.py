@@ -43,8 +43,13 @@ def prose(*ps):
     return '<div class="prose reveal">' + "".join(f"<p>{p}</p>" for p in ps) + "</div>"
 
 def faq(items):
-    inner = "".join(f'<div class="faq-item"><h3 class="faq-h">{q}</h3>'
-                    f'<div class="faq-a">{a}</div></div>' for q, a in items)
+    # The site's FAQ shape is h3.faq-h > button.faq-q, and .faq-a wraps its text in <p>.
+    # seo_build.py's faq_ld() selects .faq-q, so a bare <h3> yields no FAQPage schema and
+    # no accordion — this markup is not cosmetic.
+    inner = "".join(
+        f'<div class="faq-item"><h3 class="faq-h">'
+        f'<button class="faq-q" aria-expanded="false">{q}<span class="pm"></span></button>'
+        f'</h3><div class="faq-a"><p>{a}</p></div></div>' for q, a in items)
     return f'<div class="faq">{inner}</div>'
 
 def cta(line):

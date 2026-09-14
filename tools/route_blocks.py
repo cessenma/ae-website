@@ -23,6 +23,10 @@ BTN = ('<a href="{href}" style="display:inline-block;font-family:\'Baloo 2\',san
 
 # page → (eyebrow, h2 with <em>, body, [(label, href)])
 ROUTES = {
+ "learning-support-guide": ("先找出卡住的那一關", "英語落後，<em>通常從發音開始補</em>",
+   "通知單只會寫「英語需要扶助」，不會寫是哪一段。最常見的斷點是字母與聲音的對應——這一關沒過，背單字就只能死記。下面兩份是課堂在用的對照表，都有 A4 列印版；第三份是免費的線上聽力練習，可以看孩子的耳朵跟不跟得上。",
+   [("自然發音規則總表", "/phonics-rules-chart/"), ("英文發音完整指南", "/english-pronunciation/"),
+    ("國小 1200 單字表", "/moe-1200-words-guide/"), ("KET 聽力 Part 1 免費練習", "/ket-listening-practice-part1/")]),
  "english-abbreviations-guide": ("縮寫查完，下一步", "看得懂縮寫，<em>寫得出全文嗎？</em>",
    "縮寫是讀的技能，考試考的是寫。劍橋 KET 寫作 Part 6 的短訊息、書信格式的正式用語，都是「該不該縮寫」最常出現的地方。免費練習附範文逐句解析。",
    [("KET 寫作 Part 6 短訊息", "/ket-rw-practice-part6/"), ("英文書信怎麼寫", "/english-letter-writing-guide/"),
