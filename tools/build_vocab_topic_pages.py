@@ -503,6 +503,95 @@ PAGES["english-abbreviations-guide"] = dict(
     + cta("縮寫這種東西，查得到意思不代表用得對——用錯場合比不會用更尷尬。我們的課堂會教孩子分辨什麼時候能用、什麼時候不行。")),
   faq_n=6)
 
+PAGES["thank-you-english"] = dict(
+  target="謝謝英文", index=2.16,
+  h1="謝謝的英文怎麼說？30 種說法、回應方式與 Thank you for 的用法",
+  title="謝謝英文30種說法：從Thanks到I appreciate it，含回應方式｜埃森美語",
+  desc="謝謝英文完整對照表：日常口語、正式書面、回應別人道謝的說法，共 30 種，每一句都標明適用場合；"
+       "並說明 Thank you for 後面要接 -ing 還是名詞、You're welcome 之外還能怎麼回，以及 Thanks in advance 什麼時候別用。",
+  hero="Thank you 大家都會，問題是<strong>只會這一句</strong>。英文裡道謝的輕重差別很細：對同學說 Thank you very much 會顯得客套，寫 email 只寫 Thanks 又太隨便。下面 30 種說法都標了適用場合，挑對比說多更重要。",
+  body=lambda: (
+    sec("謝謝英文對照表（30 種）",
+      prose("第三欄是<strong>什麼時候用</strong>——這才是真正決定該說哪一句的依據。")
+      + grouped([(g[0], [[a, b, c] for a, b, c in g[1]]) for g in DATA["thanks"]],
+                ["英文", "中文", "什麼時候用"]))
+    + sec("Thank you for 後面要接什麼",
+      prose("這是最常錯的文法點。<strong>for 是介系詞，後面只能接名詞或動名詞（-ing）</strong>，不能接原形動詞：",
+        "✅ Thank you for <strong>your help</strong>.（名詞）<br>"
+        "✅ Thank you for <strong>helping</strong> me.（動名詞）<br>"
+        "❌ Thank you for <s>help</s> me.（原形動詞——錯）",
+        "另一個常見錯誤是把 thank 當名詞用：<strong>Thanks 一定有 s</strong>（它是 thanks 的縮略，本來就是複數），"
+        "沒有 <s>Thank</s> 這種單獨用法。"), soft=True)
+    + sec("別人謝你，除了 You're welcome 還能說什麼",
+      prose("台灣學生幾乎只會 You're welcome，但母語者日常更常用短一點的：<strong>No problem</strong>、"
+        "<strong>No worries</strong>、<strong>Sure</strong>、<strong>Anytime</strong>。",
+        "服務場合（店員、櫃檯、服務生）最常用 <strong>My pleasure</strong>——它比 You're welcome 更禮貌，"
+        "在飯店和餐廳幾乎是標準答案。",
+        "⚠️ 一個小陷阱：<strong>Thanks in advance</strong>（先謝謝你）在英文裡有時會被讀成「我已經當你會答應了」，"
+        "帶點壓力。寫信給不熟的人時，用 <em>Thank you for considering this</em> 或 <em>I'd really appreciate your help</em> 更安全。"))
+    + sec("謝謝英文常見問題", faq([
+      ("Thanks 和 Thank you 差在哪？", "Thanks 較輕鬆、口語，用於朋友同學；Thank you 通用，任何場合都不會出錯；"
+        "Thank you very much 最正式。寫 email 給老師或主管，用 Thank you 起跳。"),
+      ("Thank you for 後面可以接原形動詞嗎？", "不行。for 是介系詞，後面接名詞或動名詞：Thank you for your help／"
+        "Thank you for helping me。接原形動詞是台灣學生最常見的錯誤之一。"),
+      ("回「不客氣」只能說 You're welcome 嗎？", "不是，母語者日常更常用 No problem、No worries、Sure、Anytime。"
+        "服務場合用 My pleasure 最得體。You're welcome 不算錯，只是聽起來比較正式。"),
+      ("Cheers 是謝謝的意思嗎？", "在英式英語裡是。Cheers 同時能表示「謝了」「再見」和舉杯敬酒，看場合判斷。"
+        "美式英語裡主要只有敬酒的意思，拿來道謝會讓人愣一下。"),
+      ("寫 email 道謝該用哪一句？", "開頭用 Thank you for your email／Thanks for getting back to me；"
+        "結尾用 Thank you for your help／Thank you for your time。想簡短一點，Many thanks 也很常見。"),
+      ("孩子怎麼練這些說法？", "不要一次背三十句。先挑三句——一句對同學（Thanks）、一句對老師（Thank you）、"
+        "一句回應（No problem）——用到變成反射動作，再加下一組。"),
+    ]), soft=True)
+    + cta("道謝、道歉、請求這種每天都會用到的句子，最怕只認得字、開口卡住。我們的課堂每堂都有真實情境的對話練習。")),
+  faq_n=6)
+
+PAGES["cheer-up-english"] = dict(
+  target="加油英文", index=1.16,
+  h1="「加油」的英文怎麼說？21 種說法，看場合挑對那一句",
+  title="加油英文怎麼說？21種說法：考試前、比賽中、撐下去的差別｜埃森美語",
+  desc="「加油」的英文沒有單一對應說法，要看場合：考試前用 Good luck、比賽場邊喊 Come on、"
+       "過程中撐住用 Hang in there、對方已經很努力時用 Take your time。21 種說法分四組對照，"
+       "並說明 Break a leg 為什麼不能用在考試前——美籍持證教師整理。",
+  hero="這是中翻英最難的一個詞，因為<strong>英文裡沒有一個字等於「加油」</strong>。中文的加油可以是祝好運、可以是催快一點、也可以是叫人撐住——英文會依情境用完全不同的句子。挑錯了會很奇怪，下面按場合分好。",
+  body=lambda: (
+    sec("加油英文對照表（21 種）",
+      prose("先看<strong>場合</strong>再挑句子。同一句「加油」，考試前和比賽中用的英文完全不同。")
+      + grouped([(g[0], [[a, b, c] for a, b, c in g[1]]) for g in DATA["cheer"]],
+                ["英文", "中文", "備註"]))
+    + sec("為什麼沒有一個字等於「加油」",
+      prose("中文的「加油」字面是往引擎裡加燃料，用來泛指一切鼓勵。英文把這件事拆成<strong>四種不同的意思</strong>，"
+        "各有各的說法：",
+        "<strong>事情還沒開始</strong> → 祝好運：Good luck!<br>"
+        "<strong>正在進行、在場邊</strong> → 催促與助威：Come on! / Go!<br>"
+        "<strong>進行中、很辛苦</strong> → 叫對方撐住：Hang in there! / Keep going!<br>"
+        "<strong>對方已經很努力</strong> → 肯定而非催促：You're doing great. / Take your time.",
+        "最後一種台灣學生最少用，卻最常是中文「加油」真正的意思。對一個已經很累的人喊 Come on，"
+        "在英文裡聽起來像在嫌他慢。"), soft=True)
+    + sec("Break a leg 千萬別用錯",
+      prose("<strong>Break a leg</strong> 是「祝演出順利」，只用在<strong>上台表演之前</strong>——戲劇、音樂會、舞蹈。"
+        "它來自劇場迷信：直接說 good luck 會帶來厄運，所以反著講。",
+        "⚠️ <strong>不要用在考試、比賽或面試前</strong>。對要去考試的人說 Break a leg，"
+        "母語者會覺得你用錯了場合，甚至像在開玩笑。考試前就用最單純的 <strong>Good luck!</strong>",
+        "另一個容易誤用的是 <strong>Fight!</strong>——那是韓劇裡的用法（화이팅），不是英文。"
+        "英語母語者聽到 Fight 只會想到打架。"))
+    + sec("加油英文常見問題", faq([
+      ("「加油」的英文到底是什麼？", "沒有單一答案，看場合。考試前 Good luck；比賽場邊 Come on／Go；"
+        "過程中撐住 Hang in there／Keep going；對方已經很努力時 You're doing great。挑錯場合會很奇怪。"),
+      ("可以說 Add oil 嗎？", "Add oil 已被牛津英語詞典收錄為源自香港的用法，英語圈也有人看得懂，"
+        "但在台灣以外的日常對話裡仍然少見。想被聽懂，還是用 You've got this 或 Good luck 最安全。"),
+      ("Fighting 是英文嗎？", "不是英文的用法。화이팅／Fighting 來自韓語，英語母語者聽到 Fight 只會想到打架。"
+        "要表達同樣的意思，用 You can do it 或 Let's go。"),
+      ("Break a leg 可以用在考試前嗎？", "不行。它專指上台表演之前——戲劇、音樂會、舞蹈。用在考試或面試前會顯得用錯場合。"
+        "考試前說 Good luck 就好。"),
+      ("Good luck 和 You've got this 差在哪？", "Good luck 把結果交給運氣；You've got this 是說「你有這個能力」，"
+        "肯定的是對方本身。鼓勵準備充分的人，後者更有力量。"),
+      ("怎麼教孩子挑對句子？", "給他三個場景就夠：考試前、比賽中、很累的時候。每個場景配一句，"
+        "先會用再擴充。一次背二十一句，結果是每一句都不敢用。"),
+    ]), soft=True)
+    + cta("鼓勵、安慰、道賀這種話，說不出口不是因為單字不夠，是因為沒在真實對話裡練過。我們的小班課每堂都要開口。")),
+  faq_n=6)
+
 def render(slug, cfg):
     shell = open(SHELL, encoding="utf-8").read()
     url = f"{ORIGIN}/{slug}/"

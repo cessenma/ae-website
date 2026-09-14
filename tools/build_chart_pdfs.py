@@ -30,6 +30,8 @@ PDFS = {
  "jobs-english":           ("jobs-english-chart",   "ae-jobs-english-a4.pdf",   "83 種職業英文對照"),
  "body-parts-english":     ("body-parts-english-chart","ae-body-parts-a4.pdf",   "43 個身體部位英文對照"),
  "english-abbreviations-guide":  ("english-abbreviations-chart","ae-english-abbreviations-a4.pdf","74 個常用英文縮寫與全名"),
+ "thank-you-english":      ("thank-you-english-chart","ae-thank-you-english-a4.pdf","30 種道謝說法與適用場合"),
+ "cheer-up-english":       ("cheer-up-english-chart","ae-cheer-up-english-a4.pdf","21 種鼓勵說法依場合分組"),
  "english-pronunciation":  ("english-vowels-chart", "ae-english-vowels-a4.pdf", "17 個母音・例字與嘴型提示"),
 }
 

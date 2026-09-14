@@ -28,7 +28,7 @@ PAGES  = ["english-pronunciation", "kk-phonetic-chart", "phonics-rules-chart",
           "numbers-1-100-english", "months-english", "days-of-week-english",
           "colors-english-vocabulary", "fruits-english", "body-parts-english",
           "countries-english", "jobs-english", "animals-english-vocabulary",
-          "english-abbreviations-guide"]
+          "english-abbreviations-guide", "thank-you-english", "cheer-up-english"]
 EXAMPLE_HEADS = ("例字", "例詞", "單字", "字例", "英文", "English", "Country", "國家")
 
 def key():
@@ -41,7 +41,8 @@ def key():
         raise SystemExit(f"No Azure key: export AZURE_SPEECH_KEY or write {KEYFILE}")
 
 def slug(w):
-    return re.sub(r"[^a-z0-9]+", "-", w.lower()).strip("-")
+    """Words and whole phrases both become safe filenames."""
+    return re.sub(r"[^a-z0-9]+", "-", w.lower()).strip("-")[:60]
 
 def synth(word, path, k):
     ssml = (f'<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" '
@@ -93,6 +94,9 @@ def words_on(page):
                         w = w.strip()
                         if re.fullmatch(r"[A-Za-z][A-Za-z' \-]{0,24}", w):
                             out.append(w)
+                        elif (len(w) <= 44 and w[:1].isupper() and w[-1:] in ".!?"
+                              and re.fullmatch(r"[A-Za-z][A-Za-z ',!.?\-]+", w)):
+                            out.append(w)
     return out
 
 SAY = ('<button type="button" class="say" data-w="{src}" aria-label="播放 {w} 的發音">'
@@ -127,8 +131,9 @@ def mark_up(page, have):
                 if i >= len(cells):
                     continue
                 cell = cells[i]
-                first = next((w.strip() for w in re.split(r"[,、，/／・·･;；]", cell.get_text(" ", strip=True))
-                              if slug(w.strip()) in have), None)
+                whole = cell.get_text(" ", strip=True)
+                cands = [whole] + re.split(r"[,、，/／・·･;；]", whole)
+                first = next((w.strip() for w in cands if slug(w.strip()) in have), None)
                 if not first:
                     continue
                 btn = BeautifulSoup(SAY.format(src=f"/assets/audio/words/{slug(first)}.mp3",

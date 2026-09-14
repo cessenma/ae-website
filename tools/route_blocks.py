@@ -23,6 +23,14 @@ BTN = ('<a href="{href}" style="display:inline-block;font-family:\'Baloo 2\',san
 
 # page → (eyebrow, h2 with <em>, body, [(label, href)])
 ROUTES = {
+ "thank-you-english": ("會道謝之後", "寫一張卡片，<em>其實是考題</em>",
+   "感謝卡、生日卡、邀請訊息——這種 25 到 35 字的短訊息正是劍橋 KET 寫作 Part 6 的題型：讀完情境、回三件事。免費練習附範文逐句解析。",
+   [("KET 寫作 Part 6 短訊息", "/ket-rw-practice-part6/"), ("生日快樂英文說法", "/happy-birthday-english/"),
+    ("加油英文怎麼說", "/cheer-up-english/"), ("英文書信怎麼寫", "/english-letter-writing-guide/")]),
+ "cheer-up-english": ("會鼓勵之後", "講得出口，<em>還要聽得懂</em>",
+   "鼓勵和安慰這類話，真正的難關是聽到當下反應得過來。下面的免費聽力練習有整段音檔與逐字稿，可以看孩子的耳朵跟不跟得上。",
+   [("KET 聽力 Part 1 免費練習", "/ket-listening-practice-part1/"), ("謝謝英文 30 種說法", "/thank-you-english/"),
+    ("KET 口說練習（逐字稿）", "/ket-speaking-practice/"), ("主題字表總整理", "/english-vocabulary-by-topic/")]),
  "learning-support-guide": ("先找出卡住的那一關", "英語落後，<em>通常從發音開始補</em>",
    "通知單只會寫「英語需要扶助」，不會寫是哪一段。最常見的斷點是字母與聲音的對應——這一關沒過，背單字就只能死記。下面兩份是課堂在用的對照表，都有 A4 列印版；第三份是免費的線上聽力練習，可以看孩子的耳朵跟不跟得上。",
    [("自然發音規則總表", "/phonics-rules-chart/"), ("英文發音完整指南", "/english-pronunciation/"),

@@ -259,5 +259,23 @@
   "alt": "不規則動詞三態表：70個常用動詞的原形、過去式與過去分詞對照，附中文",
   "title": "不規則動詞三態表",
   "page": "irregular-verbs-list"
+ },
+ "thank-you-english-chart": {
+  "slug": "thank-you-english-chart",
+  "png": "/assets/img/charts/thank-you-english-chart.png",
+  "w": 1400,
+  "h": 2289,
+  "alt": "謝謝英文對照表：30種道謝說法與回應方式，標明每一句的適用場合",
+  "title": "謝謝英文 30 種說法",
+  "page": "thank-you-english"
+ },
+ "cheer-up-english-chart": {
+  "slug": "cheer-up-english-chart",
+  "png": "/assets/img/charts/cheer-up-english-chart.png",
+  "w": 1400,
+  "h": 1841,
+  "alt": "加油英文對照表：21種鼓勵說法依場合分組，含Good luck與Hang in there的差別",
+  "title": "加油英文 21 種說法",
+  "page": "cheer-up-english"
  }
 }

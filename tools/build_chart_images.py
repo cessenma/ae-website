@@ -164,6 +164,15 @@ SPECS.update({
    title="不規則動詞三態表", sub="70 個常用動詞 ・ 原形、過去式、過去分詞",
    alt="不規則動詞三態表：70個常用動詞的原形、過去式與過去分詞對照，附中文",
    foot="免費 A4 列印版下載"),
+
+ "thank-you-english-chart": dict(page="thank-you-english", width=1400,
+   title="謝謝英文 30 種說法", sub="日常、正式、回應 ・ 附適用場合",
+   alt="謝謝英文對照表：30種道謝說法與回應方式，標明每一句的適用場合",
+   foot="可儲存列印｜americanenglish.com.tw"),
+ "cheer-up-english-chart": dict(page="cheer-up-english", width=1400,
+   title="加油英文 21 種說法", sub="比賽、考試前、撐下去、安慰 ・ 依場合分組",
+   alt="加油英文對照表：21種鼓勵說法依場合分組，含Good luck與Hang in there的差別",
+   foot="可儲存列印｜americanenglish.com.tw"),
 })
 
 CSS = """
