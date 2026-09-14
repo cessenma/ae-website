@@ -23,14 +23,18 @@ BTN = ('<a href="{href}" style="display:inline-block;font-family:\'Baloo 2\',san
 
 # page → (eyebrow, h2 with <em>, body, [(label, href)])
 ROUTES = {
+ "english-pronunciation": ("看完發音規則，下一步", "規則懂了，<em>耳朵跟得上嗎？</em>",
+   "發音表回答「這個音怎麼發」；真正的驗收是聽到聲音能認出是哪個字。下面兩份免費練習一份考聽音辨圖、一份考長短母音辨識，做完就知道孩子卡在哪一段。音標表與自然發音規則表都有 A4 列印版。",
+   [("ship 還是 sheep？母音辨識", "/ship-or-sheep-english-vowels/"), ("KET 聽力 Part 1 免費練習", "/ket-listening-practice-part1/"),
+    ("KK 音標表（A4 可印）", "/kk-phonetic-chart/"), ("自然發音規則總表", "/phonics-rules-chart/")]),
  "kk-phonetic-chart": ("查完音標，下一步", "會看音標了，<em>聽得出來嗎？</em>",
    "音標表回答「這個字怎麼唸」；聽力考的是反過來——聽到聲音，認出是哪個字。KET 聽力 Part 1 是看圖三選一，五題、附音檔與逐字稿，做完就知道孩子的耳朵跟不跟得上。全部免費，不用註冊。",
    [("KET 聽力 Part 1 免費練習", "/ket-listening-practice-part1/"), ("Starters 聽力 看圖三選一", "/starters-listening-practice-part3/"),
-    ("KET 題庫總覽（14 頁）", "/ket-practice-tests/"), ("KET 分數計算機", "/ket-score-calculator/")]),
+    ("KET 題庫總覽（14 頁）", "/ket-practice-tests/"), ("英文發音完整指南", "/english-pronunciation/")]),
  "phonics-rules-chart": ("規則會了，下一步", "自然發音學完，<em>拼得出來嗎？</em>",
    "自然發音的驗收方式不是背規則，是拼字：聽到 c-a-t 能寫出 cat。Starters 閱讀與寫作 Part 3 就是「排字母拼單字」，五題、每題有圖；KET 聽力 Part 1 則考聽音辨圖。兩份都免費，做完立刻對答案。",
    [("Starters 排字母拼單字", "/starters-rw-practice-part3/"), ("Starters 題庫總覽", "/starters-practice-tests/"),
-    ("KET 聽力 Part 1", "/ket-listening-practice-part1/"), ("母音與子音怎麼分", "/english-vowels-consonants/")]),
+    ("KET 聽力 Part 1", "/ket-listening-practice-part1/"), ("英文發音完整指南", "/english-pronunciation/")]),
  "moe-1200-words-guide": ("背完 1200 字之後", "這些字，<em>會用了嗎？</em>",
    "課綱 1200 字的難度大致落在 CEFR A2——也就是劍橋 KET 的範圍。背完不等於會用：KET 閱讀 Part 4「選字填空」考的正是把對的字放進句子裡。做一份免費練習題，再用計算機看換算成劍橋分數是幾分。",
    [("KET 閱讀 Part 4 選字填空", "/ket-rw-practice-part4/"), ("A2 單字情境練習（64 題）", "/a2-vocabulary-practice/"),

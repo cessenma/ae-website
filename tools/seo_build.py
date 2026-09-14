@@ -48,6 +48,10 @@ SELF_CONTAINED = {"line/index.html",
                   # and it must stay out of the crawl surface entirely
                   "pack-9rvvw6p3nnmls4/index.html"}
 
+def html_escape(t):
+    return (t.replace("&", "&amp;").replace("<", "&lt;")
+             .replace(">", "&gt;").replace('"', "&quot;"))
+
 def css_fingerprint():
     """Content hash of styles.css — cache-busts automatically whenever the CSS changes,
     which also guarantees the inlined critical block below can never go stale."""
@@ -315,9 +319,29 @@ def ledger_lastmod(ledger, rel, fpath, today):
         ledger[rel] = {"hash": h, "date": today}
     return ledger[rel]["date"]
 
+def chart_manifest():
+    """slug -> chart record, written by tools/build_chart_images.py."""
+    mf = os.path.join(SITE, "assets/img/charts/manifest.json")
+    if not os.path.exists(mf):
+        return {}
+    try:
+        return json.load(open(mf, encoding="utf-8"))
+    except Exception:
+        return {}
+
 def rebuild_sitemap():
     sm = os.path.join(SITE, "sitemap.xml")
     xml = open(sm, encoding="utf-8").read()
+    # Image entries: Google will not reliably discover a chart that is only an <img>
+    # on the page. Keyed by page so a page can carry more than one chart.
+    charts = {}
+    for rec in chart_manifest().values():
+        charts.setdefault(rec["page"], []).append(rec)
+    if charts and "xmlns:image" not in xml:
+        xml = xml.replace(
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+            '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">')
     def add_lastmod(mobj):
         block = mobj.group(0)
         loc = re.search(r"<loc>([^<]+)</loc>", block).group(1)
@@ -331,6 +355,14 @@ def rebuild_sitemap():
             fpath = os.path.join(SITE, relpath)
         else:
             fpath = os.path.join(SITE, relpath + "/index.html")
+        block = re.sub(r"<image:image>.*?</image:image>", "", block, flags=re.S)
+        for rec in charts.get(relpath.strip("/"), []):
+            block = block.replace("</url>",
+                "<image:image><image:loc>%s%s</image:loc>"
+                "<image:title>%s</image:title>"
+                "<image:caption>%s</image:caption></image:image></url>" % (
+                    ORIGIN, rec["png"],
+                    html_escape(rec["title"]), html_escape(rec["alt"])), 1)
         block = re.sub(r"<lastmod>[^<]*</lastmod>", "", block)  # drop any existing
         if os.path.exists(fpath):
             d = ledger_lastmod(ledger, relpath or "index", fpath, today)

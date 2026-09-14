@@ -1,0 +1,65 @@
+{
+ "kk-phonetic-chart-full": {
+  "slug": "kk-phonetic-chart-full",
+  "png": "/assets/img/charts/kk-phonetic-chart-full.png",
+  "w": 1200,
+  "h": 1240,
+  "alt": "KK音標表完整對照：母音17個與子音24個共41個符號，附例字與有聲無聲配對",
+  "title": "KK 音標表 完整對照",
+  "page": "kk-phonetic-chart"
+ },
+ "phonics-rules-chart-full": {
+  "slug": "phonics-rules-chart-full",
+  "png": "/assets/img/charts/phonics-rules-chart-full.png",
+  "w": 1200,
+  "h": 1014,
+  "alt": "自然發音規則總表：字母音、短母音、長母音與母音組合的完整對照表",
+  "title": "自然發音規則總表",
+  "page": "phonics-rules-chart"
+ },
+ "moe-1200-words-categories": {
+  "slug": "moe-1200-words-categories",
+  "png": "/assets/img/charts/moe-1200-words-categories.png",
+  "w": 1200,
+  "h": 2112,
+  "alt": "教育部國小英文1200單字分類表，依主題整理的必備單字對照",
+  "title": "教育部國小 1200 單字 分類表",
+  "page": "moe-1200-words-guide"
+ },
+ "animals-english-table": {
+  "slug": "animals-english-table",
+  "png": "/assets/img/charts/animals-english-table.png",
+  "w": 1200,
+  "h": 1991,
+  "alt": "動物英文對照表：常見動物的英文名稱與中文對照，附KK音標",
+  "title": "動物英文 對照表",
+  "page": "animals-english-vocabulary"
+ },
+ "english-vowels-chart": {
+  "slug": "english-vowels-chart",
+  "png": "/assets/img/charts/english-vowels-chart.png",
+  "w": 1200,
+  "h": 1508,
+  "alt": "英文母音發音表：17個母音的音標、例字與嘴型提示，含短母音長母音與雙母音",
+  "title": "英文母音發音表",
+  "page": "english-pronunciation"
+ },
+ "english-consonants-chart": {
+  "slug": "english-consonants-chart",
+  "png": "/assets/img/charts/english-consonants-chart.png",
+  "w": 1200,
+  "h": 855,
+  "alt": "英文子音發音表：24個子音的有聲無聲配對、例字與發音位置對照",
+  "title": "英文子音發音表",
+  "page": "english-pronunciation"
+ },
+ "english-ending-sounds-chart": {
+  "slug": "english-ending-sounds-chart",
+  "png": "/assets/img/charts/english-ending-sounds-chart.png",
+  "w": 1200,
+  "h": 784,
+  "alt": "英文字尾-s與-ed發音規則表：三種唸法與判斷方式，附例字",
+  "title": "字尾 -s 與 -ed 發音規則",
+  "page": "english-pronunciation"
+ }
+}

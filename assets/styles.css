@@ -437,3 +437,13 @@ footer.site-footer{background:var(--navy);color:#fff;padding:60px 0 32px;positio
   .reveal,.node,.cascade,.illus.swing{opacity:1!important;transform:none!important}
   .hero-illus .hero-img{animation:none!important}
 }
+
+/* Reference charts rendered by tools/build_chart_images.py — the saveable/printable
+   version of a page's table, and what Google Images actually ranks for 「…表」 queries. */
+.chart-fig{margin:30px 0 8px;padding:14px;background:var(--light-blue,#DDF4FF);
+  border-radius:22px;box-shadow:0 12px 34px rgba(26,39,82,.13)}
+.chart-fig img{width:100%;height:auto;border-radius:14px;background:#fff;
+  box-shadow:0 2px 10px rgba(26,39,82,.10)}
+.chart-fig figcaption{font-family:'Baloo 2',sans-serif;font-size:13px;font-weight:700;
+  color:#5a6b8c;text-align:center;padding:11px 8px 4px;line-height:1.5}
+@media(max-width:640px){.chart-fig{padding:9px;border-radius:16px;margin-top:22px}}
