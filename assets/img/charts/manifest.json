@@ -133,5 +133,122 @@
   "alt": "職業英文對照表：83種常見工作的英文與中文對照，依領域分組",
   "title": "職業英文對照表",
   "page": "jobs-english"
+ },
+ "english-abbreviations-chart": {
+  "slug": "english-abbreviations-chart",
+  "png": "/assets/img/charts/english-abbreviations-chart.png",
+  "w": 1680,
+  "h": 2435,
+  "alt": "英文縮寫對照表：74個常用英文縮寫的中文意思與英文全名，含e.g.、i.e.、ASAP、FYI",
+  "title": "英文縮寫對照表",
+  "page": "english-abbreviations"
+ },
+ "english-names-boys-chart": {
+  "slug": "english-names-boys-chart",
+  "png": "/assets/img/charts/english-names-boys-chart.png",
+  "w": 1680,
+  "h": 3025,
+  "alt": "男生英文名字對照表：常用英文名的唸法提示與名字來源，附中文說明",
+  "title": "男生英文名字對照表",
+  "page": "english-names-boys"
+ },
+ "english-names-girls-chart": {
+  "slug": "english-names-girls-chart",
+  "png": "/assets/img/charts/english-names-girls-chart.png",
+  "w": 1680,
+  "h": 2738,
+  "alt": "女生英文名字對照表：常用英文名的唸法提示與名字來源，附中文說明",
+  "title": "女生英文名字對照表",
+  "page": "english-names-girls"
+ },
+ "english-dates-chart": {
+  "slug": "english-dates-chart",
+  "png": "/assets/img/charts/english-dates-chart.png",
+  "w": 1400,
+  "h": 2007,
+  "alt": "英文日期對照表：1到31日的英文序數寫法、縮寫與唸法，含月份縮寫",
+  "title": "英文日期對照表",
+  "page": "english-dates-guide"
+ },
+ "english-vowels-consonants-chart": {
+  "slug": "english-vowels-consonants-chart",
+  "png": "/assets/img/charts/english-vowels-consonants-chart.png",
+  "w": 1400,
+  "h": 2028,
+  "alt": "英文母音與子音對照表：音標符號、例字與發音方式，含字母與音標對照",
+  "title": "英文母音與子音對照表",
+  "page": "english-vowels-consonants"
+ },
+ "english-symbol-names-chart": {
+  "slug": "english-symbol-names-chart",
+  "png": "/assets/img/charts/english-symbol-names-chart.png",
+  "w": 1560,
+  "h": 3611,
+  "alt": "英文符號名稱對照表：鍵盤與標點符號的英文名稱與唸法，含@、#、&等",
+  "title": "英文符號名稱對照表",
+  "page": "english-symbol-names"
+ },
+ "english-alphabet-chart": {
+  "slug": "english-alphabet-chart",
+  "png": "/assets/img/charts/english-alphabet-chart.png",
+  "w": 1300,
+  "h": 2045,
+  "alt": "英文字母表：26個字母的大小寫、名稱唸法與字母音對照",
+  "title": "英文字母表",
+  "page": "english-alphabet-guide"
+ },
+ "ordinal-numbers-chart": {
+  "slug": "ordinal-numbers-chart",
+  "png": "/assets/img/charts/ordinal-numbers-chart.png",
+  "w": 1400,
+  "h": 2551,
+  "alt": "英文序數對照表：first second third 等序數的拼法、縮寫與基數對照",
+  "title": "英文序數對照表",
+  "page": "ordinal-numbers-english"
+ },
+ "english-numbers-guide-chart": {
+  "slug": "english-numbers-guide-chart",
+  "png": "/assets/img/charts/english-numbers-guide-chart.png",
+  "w": 1400,
+  "h": 1998,
+  "alt": "英文數字用法對照表：大數字、小數、金額與電話號碼的英文唸法",
+  "title": "英文數字用法表",
+  "page": "english-numbers-guide"
+ },
+ "happy-birthday-chart": {
+  "slug": "happy-birthday-chart",
+  "png": "/assets/img/charts/happy-birthday-chart.png",
+  "w": 1500,
+  "h": 2313,
+  "alt": "生日快樂英文祝福語對照表：生日卡片與訊息常用的英文說法與中文對照",
+  "title": "生日快樂英文祝福語",
+  "page": "happy-birthday-english"
+ },
+ "mid-autumn-chart": {
+  "slug": "mid-autumn-chart",
+  "png": "/assets/img/charts/mid-autumn-chart.png",
+  "w": 1500,
+  "h": 2380,
+  "alt": "中秋節英文對照表：月餅、賞月、烤肉、文旦等中秋節相關英文單字與句子",
+  "title": "中秋節英文說法",
+  "page": "mid-autumn-festival-english"
+ },
+ "english-capitalization-chart": {
+  "slug": "english-capitalization-chart",
+  "png": "/assets/img/charts/english-capitalization-chart.png",
+  "w": 1400,
+  "h": 2572,
+  "alt": "英文大寫規則對照表：專有名詞、月份星期、標題等何時要大寫的規則與例句",
+  "title": "英文大寫規則表",
+  "page": "english-capitalization-guide"
+ },
+ "be-verbs-chart": {
+  "slug": "be-verbs-chart",
+  "png": "/assets/img/charts/be-verbs-chart.png",
+  "w": 1440,
+  "h": 2745,
+  "alt": "be動詞用法對照表：am is are was were 的人稱與時態對照，附例句",
+  "title": "be 動詞用法表",
+  "page": "be-verbs-guide"
  }
 }

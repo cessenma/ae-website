@@ -430,6 +430,66 @@ PAGES["english-vocabulary-by-topic"] = dict(
   body=hub_page,
   faq_n=6)
 
+PAGES["english-abbreviations"] = dict(
+  target="英文縮寫", index=11.99,
+  h1="英文縮寫大全：74 個常用縮寫的意思、全名與正確用法",
+  title="英文縮寫大全：74個常用縮寫意思查詢、全名與用法｜埃森美語",
+  desc="英文縮寫完整對照表，收錄 74 個常用縮寫的中文意思與英文全名，分日常書寫、網路訊息、學校考試、商業職場與單位五組；並說明 e.g. 與 i.e. 的差別、縮寫要不要加句點，以及月份與星期縮寫的完整規則。",
+  hero="英文縮寫最惱人的地方是：看得到卻查不到。e.g. 和 i.e. 差在哪、etc. 前面要不要加 and、LOL 到底能不能對長輩用——下面這份表把 74 個常見縮寫的意思和<strong>英文全名</strong>都列出來，知道全名就不會再用錯。",
+  body=lambda: (
+    sec("英文縮寫對照表（74 個）",
+      prose("第三欄是<strong>英文全名</strong>——這一欄才是關鍵。知道 e.g. 來自 exempli gratia（for example）、"
+            "i.e. 來自 id est（that is），就不會再混用。")
+      + grouped([(g[0], [[a, b, c] for a, b, c in g[1]]) for g in DATA["abbrev"]],
+                ["縮寫", "中文意思", "英文全名／說明"]))
+    + sec("e.g. 和 i.e. 到底差在哪",
+      prose("這是英文縮寫裡最常用錯的一組，連母語者都會錯。",
+        "<strong>e.g. = for example（舉例）</strong>，後面接的是<u>其中幾個例子</u>，不是全部。<br>"
+        "<em>I like citrus fruits, e.g. oranges and lemons.</em>（還有其他柑橘類，只是舉兩個）",
+        "<strong>i.e. = that is（也就是說）</strong>，後面接的是<u>把前面說完整</u>，等於重講一次。<br>"
+        "<em>I like citrus fruits, i.e. oranges and lemons.</em>（我喜歡的柑橘類就只有這兩種）",
+        "記法：<strong>e</strong>.g. 的 e 想成 <strong>e</strong>xample，<strong>i</strong>.e. 的 i 想成 <strong>i</strong>n other words。"
+        "兩者在正式英文中後面都要加逗號，而且都保留句點。"), soft=True)
+    + sec("縮寫要不要加句點？",
+      prose("規則不複雜，但美式與英式不同：",
+        "<strong>截去字尾的縮寫要加句點</strong>：Prof.（Professor）、etc.（et cetera）、approx.（approximately）、Jan.（January）。"
+        "因為後面還有字母被省略。<br>"
+        "<strong>頭尾都保留的縮寫，英式不加、美式加</strong>：Mr／Mr.、Dr／Dr.、St／St.。台灣教科書多從英式，多益等美系考試用美式。<br>"
+        "<strong>首字母縮寫（每個字母唸出來或當成字唸）不加句點</strong>：NASA、UNESCO、ASAP、FYI、CEO。",
+        "一個常見錯誤：<strong>etc. 前面不加 and</strong>。et cetera 的 et 本身就是 and，寫 and etc. 等於講了兩次。"))
+    + sec("月份、星期與單位的縮寫",
+      prose("這三組有自己的固定規則，也是查詢量最高的幾個：",
+        "<strong>月份</strong>取前三個字母加句點，只有 May 不縮寫；September 兩種都通行（Sep./Sept.）。完整表在 "
+        "<a href=\"/months-english/\">月份英文</a>。<br>"
+        "<strong>星期</strong>同樣取前三字母：Mon.、Tue.（或 Tues.）、Wed.、Thu.（或 Thurs.）、Fri.、Sat.、Sun.。"
+        "完整表在 <a href=\"/days-of-week-english/\">星期英文</a>。<br>"
+        "<strong>單位</strong>一律不加句點也不加複數 s：5 kg（不是 5 kgs.）、10 cm、3 L。這是國際單位制的規定。",
+        "名字縮寫（initials）則是取每個名字的第一個字母大寫加句點：John Ronald Reuel Tolkien → <strong>J. R. R. Tolkien</strong>。"), soft=True)
+    + sec("網路縮寫什麼場合能用",
+      prose("這是家長最常問的一題。簡單的分界線：<strong>看對象，不看場合的正式程度</strong>。",
+        "<strong>朋友之間的訊息</strong>：LOL、BTW、TBH、JK 都沒問題。<br>"
+        "<strong>寫給老師、主管或客戶</strong>：FYI、ASAP、ETA 可以（這些在職場是標準用語）；"
+        "LOL、OMG、JK 不要。<br>"
+        "<strong>作文與正式書信</strong>：網路縮寫一律不要，連 e.g. 和 etc. 在很正式的文章裡也建議寫全。",
+        "考試更嚴格：<strong>英檢與學測作文用網路縮寫會被視為錯誤</strong>。教孩子時把這條線講清楚比禁止有效——"
+        "他知道什麼時候能用，才不會在該正式的時候用錯。"))
+    + sec("英文縮寫常見問題", faq([
+      ("e.g. 和 i.e. 差在哪？", "e.g. 是 for example，後面接其中幾個例子；i.e. 是 that is，後面把前面那句說完整。"
+        "記法：e 想成 example，i 想成 in other words。兩個後面在正式英文裡都加逗號。"),
+      ("etc. 前面要加 and 嗎？", "不要。etc. 是 et cetera，et 本身就是 and，寫 and etc. 等於說了兩次 and。"
+        "另外 etc. 只用在列舉事物，列舉「人」時用 et al.。"),
+      ("縮寫要不要加句點？", "截掉字尾的要加（Prof.、approx.、Jan.）；首字母縮寫不加（ASAP、CEO、NASA）；"
+        "Mr、Dr 這類頭尾都在的，英式不加、美式加。台灣教科書多從英式。"),
+      ("ASAP 可以對主管用嗎？", "可以，ASAP、FYI、ETA 在職場是標準用語，不算不禮貌。要避開的是 LOL、OMG、JK 這類"
+        "純社交用語。真正的分界是對象，不是縮寫本身。"),
+      ("名字縮寫怎麼寫？", "取每個名字的第一個字母大寫加句點，中間空一格：J. R. R. Tolkien。"
+        "台灣的護照英文姓名若要縮寫，一般保留姓氏全名、名字縮寫，例如 Wang, C. H."),
+      ("作文可以用縮寫嗎？", "英檢與學測作文建議不要。e.g.、etc. 在一般文章可以，但在正式作文裡寫成 for example、and so on 更安全；"
+        "網路縮寫一律會被視為錯誤。"),
+    ]), soft=True)
+    + cta("縮寫這種東西，查得到意思不代表用得對——用錯場合比不會用更尷尬。我們的課堂會教孩子分辨什麼時候能用、什麼時候不行。")),
+  faq_n=6)
+
 def render(slug, cfg):
     shell = open(SHELL, encoding="utf-8").read()
     url = f"{ORIGIN}/{slug}/"

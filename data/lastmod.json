@@ -13,7 +13,7 @@
 },
 "animals-english-vocabulary": {
 "date": "2026-09-14",
-"hash": "c2e59a060b65e50931f079f62a2f2468"
+"hash": "be3ab4972d81f8e9cc3959408f8bf7f0"
 },
 "b1-grammar-guide": {
 "date": "2026-08-21",
@@ -84,8 +84,8 @@
 "hash": "6b264b9877b4c9cf5aa2f204f53a391a"
 },
 "be-verbs-guide": {
-"date": "2026-08-26",
-"hash": "3aa9b4cabbf420035ebe2af48f09b9d5"
+"date": "2026-09-14",
+"hash": "47304f053e357bb131e7eaf012e22fd7"
 },
 "bilingual-education-myths-banqiao": {
 "date": "2026-08-07",
@@ -101,7 +101,7 @@
 },
 "body-parts-english": {
 "date": "2026-09-14",
-"hash": "7e9a5daa603bec4f47b28f44f6154267"
+"hash": "f5e83d12b5c60efb8728b209f790e96b"
 },
 "cae-c1-advanced-guide": {
 "date": "2026-08-26",
@@ -159,6 +159,10 @@
 "date": "2026-08-07",
 "hash": "3a3a07d709197ded82877adf634f6906"
 },
+"chart-license": {
+"date": "2026-09-14",
+"hash": "32051c2a705b4a48099b78c3811f5427"
+},
 "child-hates-english": {
 "date": "2026-08-07",
 "hash": "a09e6b34009a8c25b8322ddd455d4338"
@@ -169,7 +173,7 @@
 },
 "colors-english": {
 "date": "2026-09-14",
-"hash": "9caa24586e8196a8011400e5c66b5a80"
+"hash": "6947ca07bfdb5b49a7e914c4ed421e46"
 },
 "colors-english-vocabulary": {
 "date": "2026-09-06",
@@ -181,7 +185,7 @@
 },
 "countries-english": {
 "date": "2026-09-14",
-"hash": "f2fdedabf4e153fd5a0bbc9197c1d379"
+"hash": "4e31807a5dbd1c961b05f93668beaff4"
 },
 "courses": {
 "date": "2026-08-25",
@@ -197,7 +201,7 @@
 },
 "days-of-week-english": {
 "date": "2026-09-14",
-"hash": "cdb33a11d454daaa5b5b5ae9d14743b3"
+"hash": "bf0e992b2e065d6116cb5f6b06c79925"
 },
 "download": {
 "date": "2026-08-26",
@@ -211,21 +215,25 @@
 "date": "2026-08-07",
 "hash": "502153ba16a7adceb1a7e2895f38dabb"
 },
+"english-abbreviations": {
+"date": "2026-09-14",
+"hash": "37d49bd8ada80acdef65adae0e3b5267"
+},
 "english-abbreviations-guide": {
 "date": "2026-09-06",
 "hash": "30e5047cae06a3cd2123eed9c341926d"
 },
 "english-alphabet-guide": {
-"date": "2026-09-13",
-"hash": "13186bdc92639e54b29f801da96f87e4"
+"date": "2026-09-14",
+"hash": "9565fb89693991a1ce3f1d395c2080d5"
 },
 "english-at-home-parents-banqiao": {
 "date": "2026-08-07",
 "hash": "5f96bf58c6129843e3c360f7fd9915ef"
 },
 "english-capitalization-guide": {
-"date": "2026-08-27",
-"hash": "d92269626870010b8453fa50856173aa"
+"date": "2026-09-14",
+"hash": "19d485dce260416f038360e98ec9721d"
 },
 "english-comparatives-guide": {
 "date": "2026-08-21",
@@ -240,8 +248,8 @@
 "hash": "28f77e01df907fa068394a8a57aacc91"
 },
 "english-dates-guide": {
-"date": "2026-09-13",
-"hash": "1843f6279eaf3a5938515d066044342f"
+"date": "2026-09-14",
+"hash": "122a77ec0f03f84cb3233e825480e24e"
 },
 "english-diary-guide": {
 "date": "2026-08-13",
@@ -260,16 +268,16 @@
 "hash": "ece2f65636e977636a9121800a904b86"
 },
 "english-names-boys": {
-"date": "2026-09-13",
-"hash": "59b3a84ad7b0f1bb6fe3b163b0166c84"
+"date": "2026-09-14",
+"hash": "464954dd8d3fd5b0296593bf882387a8"
 },
 "english-names-girls": {
-"date": "2026-09-13",
-"hash": "bd58c9f6745e3caceef82a4476367bac"
+"date": "2026-09-14",
+"hash": "8378a1f1e579781d82629cbe9f857bc9"
 },
 "english-numbers-guide": {
-"date": "2026-08-26",
-"hash": "b7c74fb11e2ceef6cbf013d1ff517974"
+"date": "2026-09-14",
+"hash": "4ac124538f89eb873d5455e005b987da"
 },
 "english-picture-books-guide": {
 "date": "2026-08-07",
@@ -277,7 +285,7 @@
 },
 "english-pronunciation": {
 "date": "2026-09-14",
-"hash": "9ab48d49abc2b9b31d03d06919e2ef29"
+"hash": "59b244baa3d0bf99a1ff3ddf839cfc1f"
 },
 "english-pronunciation-standards": {
 "date": "2026-08-21",
@@ -300,8 +308,8 @@
 "hash": "040f15701f006567d3aa108b97ef2a5f"
 },
 "english-symbol-names": {
-"date": "2026-08-26",
-"hash": "d9b5d463e64bbd7190d587f375d12c8e"
+"date": "2026-09-14",
+"hash": "10e035b56858665e0f8e5b4390092788"
 },
 "english-tenses-chart": {
 "date": "2026-09-13",
@@ -312,8 +320,8 @@
 "hash": "0a6c6deceb1e1583458a249cff98e377"
 },
 "english-vowels-consonants": {
-"date": "2026-08-26",
-"hash": "cbcf1164423f1eb000772a3a8e432913"
+"date": "2026-09-14",
+"hash": "3879dc9d8bce0c7a2cdbec289da0e459"
 },
 "english-word-stress-gesture": {
 "date": "2026-08-25",
@@ -461,7 +469,7 @@
 },
 "fruits-english": {
 "date": "2026-09-14",
-"hash": "3006203daeba9c4559c4b38a55786709"
+"hash": "e0bd977d3799fae544b40a57667b98c2"
 },
 "fruits-english-vocabulary": {
 "date": "2026-09-06",
@@ -516,8 +524,8 @@
 "hash": "74ed2e68d1c80c7cd8cab4e9da315a98"
 },
 "happy-birthday-english": {
-"date": "2026-09-13",
-"hash": "5dc6adea89adc3c6f261cb3b3f0540ad"
+"date": "2026-09-14",
+"hash": "c9042073371ba8f99304c275423d29d8"
 },
 "how-american-kids-learn-reading": {
 "date": "2026-08-07",
@@ -553,7 +561,7 @@
 },
 "jobs-english": {
 "date": "2026-09-14",
-"hash": "a2402b78e4f0e503627068698bc27729"
+"hash": "8a1404586e085daab6d76b69edca1579"
 },
 "juguang-elementary-english": {
 "date": "2026-08-07",
@@ -653,7 +661,7 @@
 },
 "kk-phonetic-chart": {
 "date": "2026-09-14",
-"hash": "f821d5e2da5033bbdf07c4a68f928c59"
+"hash": "395eec634a9c3d09876bbd1d3df43e48"
 },
 "kk-phonetics-vs-phonics": {
 "date": "2026-09-13",
@@ -668,12 +676,12 @@
 "hash": "e4ea5192ecc79252fb32b4f2cebb8edd"
 },
 "mid-autumn-festival-english": {
-"date": "2026-09-06",
-"hash": "ebcac226ab7b8f9b88b50863e729af4f"
+"date": "2026-09-14",
+"hash": "3005d487720fa61150579582d139c4d2"
 },
 "moe-1200-words-guide": {
 "date": "2026-09-14",
-"hash": "a9eda40fe292e7cb54fa8cccaae93544"
+"hash": "9a5a2ba5b3a9fc01064492234be33fcf"
 },
 "moe-2000-words-guide": {
 "date": "2026-09-13",
@@ -681,7 +689,7 @@
 },
 "months-english": {
 "date": "2026-09-14",
-"hash": "f69411f2c1488cc23ab9a6fea78542c1"
+"hash": "65bcdd47d2b8e549c4eeb26488076869"
 },
 "movers-listening-practice-part1": {
 "date": "2026-09-08",
@@ -741,15 +749,15 @@
 },
 "numbers-1-100-english": {
 "date": "2026-09-14",
-"hash": "b65997748cfd0a288ce4173f88354c89"
+"hash": "1044121919f963ef0a577ab2d1baa524"
 },
 "online-vs-in-person-english-banqiao": {
 "date": "2026-08-07",
 "hash": "d68d2907f3e5133d2b0fc096e429919f"
 },
 "ordinal-numbers-english": {
-"date": "2026-08-26",
-"hash": "b658d963f6acebd1e796e54d1eedbd57"
+"date": "2026-09-14",
+"hash": "3580e3850d3371b3f146770f687c434a"
 },
 "pack-9rvvw6p3nnmls4": {
 "date": "2026-09-08",
@@ -821,7 +829,7 @@
 },
 "phonics-rules-chart": {
 "date": "2026-09-14",
-"hash": "760f3541664c6e69fbcfe210abb09cd7"
+"hash": "c6b9536590c5eaf3d2091da4e66ccea4"
 },
 "plural-s-past-ed-pronunciation": {
 "date": "2026-08-21",

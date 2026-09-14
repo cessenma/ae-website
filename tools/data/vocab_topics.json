@@ -2093,5 +2093,402 @@
     ]
    ]
   ]
+ ],
+ "abbrev": [
+  [
+   "日常與書寫常用 Everyday abbreviations",
+   [
+    [
+     "a.m.",
+     "上午",
+     "ante meridiem（拉丁文「中午之前」）"
+    ],
+    [
+     "p.m.",
+     "下午",
+     "post meridiem（中午之後）"
+    ],
+    [
+     "e.g.",
+     "舉例來說",
+     "exempli gratia＝for example"
+    ],
+    [
+     "i.e.",
+     "也就是說",
+     "id est＝that is（和 e.g. 完全不同）"
+    ],
+    [
+     "etc.",
+     "等等",
+     "et cetera（前面不加 and）"
+    ],
+    [
+     "vs.",
+     "對上、相對於",
+     "versus"
+    ],
+    [
+     "approx.",
+     "大約",
+     "approximately"
+    ],
+    [
+     "min. / max.",
+     "最小／最大",
+     "minimum／maximum"
+    ],
+    [
+     "No.",
+     "編號",
+     "numero（拉丁文，不是 number 的縮寫）"
+    ],
+    [
+     "Mr. / Mrs. / Ms.",
+     "先生／太太／女士",
+     "Ms. 不標示婚姻狀態，正式場合首選"
+    ],
+    [
+     "Dr. / Prof.",
+     "博士、醫生／教授",
+     "Doctor／Professor"
+    ],
+    [
+     "St. / Rd. / Ave.",
+     "街／路／大道",
+     "Street／Road／Avenue"
+    ],
+    [
+     "Dept.",
+     "部門、系所",
+     "Department"
+    ],
+    [
+     "Est.",
+     "創立於",
+     "Established"
+    ],
+    [
+     "RSVP",
+     "敬請回覆",
+     "法文 répondez s'il vous plaît"
+    ],
+    [
+     "P.S.",
+     "附註",
+     "postscript，寫在信末"
+    ],
+    [
+     "N/A",
+     "不適用",
+     "not applicable／not available"
+    ],
+    [
+     "TBA / TBD",
+     "待公布／待決定",
+     "to be announced／to be determined"
+    ],
+    [
+     "DIY",
+     "自己動手做",
+     "do it yourself"
+    ],
+    [
+     "FAQ",
+     "常見問題",
+     "frequently asked questions"
+    ]
+   ]
+  ],
+  [
+   "網路與訊息用語 Internet and texting",
+   [
+    [
+     "LOL",
+     "大笑",
+     "laughing out loud"
+    ],
+    [
+     "BTW",
+     "順帶一提",
+     "by the way"
+    ],
+    [
+     "IMO / IMHO",
+     "我認為",
+     "in my opinion／in my humble opinion"
+    ],
+    [
+     "TBH",
+     "老實說",
+     "to be honest"
+    ],
+    [
+     "OMG",
+     "我的天",
+     "oh my god"
+    ],
+    [
+     "ASAP",
+     "盡快",
+     "as soon as possible"
+    ],
+    [
+     "FYI",
+     "供你參考",
+     "for your information"
+    ],
+    [
+     "IDK",
+     "我不知道",
+     "I don't know"
+    ],
+    [
+     "BRB",
+     "馬上回來",
+     "be right back"
+    ],
+    [
+     "TTYL",
+     "晚點聊",
+     "talk to you later"
+    ],
+    [
+     "THX / TY",
+     "謝謝",
+     "thanks／thank you"
+    ],
+    [
+     "NP",
+     "不客氣",
+     "no problem"
+    ],
+    [
+     "JK",
+     "開玩笑的",
+     "just kidding"
+    ],
+    [
+     "TMI",
+     "講太多了",
+     "too much information"
+    ],
+    [
+     "AKA",
+     "又名、也就是",
+     "also known as"
+    ],
+    [
+     "DM",
+     "私訊",
+     "direct message"
+    ],
+    [
+     "ETA",
+     "預計抵達時間",
+     "estimated time of arrival"
+    ],
+    [
+     "WFH",
+     "在家工作",
+     "work from home"
+    ],
+    [
+     "OOTD",
+     "今日穿搭",
+     "outfit of the day"
+    ],
+    [
+     "GOAT",
+     "史上最強",
+     "greatest of all time"
+    ]
+   ]
+  ],
+  [
+   "學校與考試 School and exams",
+   [
+    [
+     "GPA",
+     "成績平均",
+     "grade point average"
+    ],
+    [
+     "Q&A",
+     "問答",
+     "question and answer"
+    ],
+    [
+     "HW",
+     "作業",
+     "homework"
+    ],
+    [
+     "PE",
+     "體育課",
+     "physical education"
+    ],
+    [
+     "PPT",
+     "簡報",
+     "PowerPoint presentation"
+    ],
+    [
+     "GEPT",
+     "全民英檢",
+     "General English Proficiency Test"
+    ],
+    [
+     "TOEIC",
+     "多益",
+     "Test of English for International Communication"
+    ],
+    [
+     "TOEFL",
+     "托福",
+     "Test of English as a Foreign Language"
+    ],
+    [
+     "IELTS",
+     "雅思",
+     "International English Language Testing System"
+    ],
+    [
+     "KET / PET / FCE",
+     "劍橋英檢各級",
+     "Key／Preliminary／First Certificate in English"
+    ],
+    [
+     "CEFR",
+     "歐洲共同語言參考標準",
+     "Common European Framework of Reference"
+    ],
+    [
+     "ESL / EFL",
+     "第二語言英語／外語英語",
+     "English as a Second／Foreign Language"
+    ]
+   ]
+  ],
+  [
+   "商業與職場 Business and workplace",
+   [
+    [
+     "CEO",
+     "執行長",
+     "chief executive officer"
+    ],
+    [
+     "CFO / CTO",
+     "財務長／技術長",
+     "chief financial／technology officer"
+    ],
+    [
+     "HR",
+     "人資",
+     "human resources"
+    ],
+    [
+     "PM",
+     "專案經理／產品經理",
+     "project／product manager"
+    ],
+    [
+     "B2B / B2C",
+     "企業對企業／企業對消費者",
+     "business to business／consumer"
+    ],
+    [
+     "ROI",
+     "投資報酬率",
+     "return on investment"
+    ],
+    [
+     "KPI",
+     "關鍵績效指標",
+     "key performance indicator"
+    ],
+    [
+     "CV / résumé",
+     "履歷",
+     "curriculum vitae"
+    ],
+    [
+     "Inc. / Ltd. / Co.",
+     "股份有限公司／有限公司／公司",
+     "Incorporated／Limited／Company"
+    ],
+    [
+     "Q1–Q4",
+     "第一到第四季",
+     "quarter"
+    ],
+    [
+     "EOD",
+     "下班前",
+     "end of day"
+    ],
+    [
+     "MTG",
+     "會議",
+     "meeting"
+    ]
+   ]
+  ],
+  [
+   "單位與其他 Units and others",
+   [
+    [
+     "kg / g",
+     "公斤／公克",
+     "kilogram／gram"
+    ],
+    [
+     "cm / mm / km",
+     "公分／公釐／公里",
+     "centimetre／millimetre／kilometre"
+    ],
+    [
+     "ml / L",
+     "毫升／公升",
+     "millilitre／litre"
+    ],
+    [
+     "ft / in",
+     "英尺／英吋",
+     "foot／inch"
+    ],
+    [
+     "°C / °F",
+     "攝氏／華氏",
+     "Celsius／Fahrenheit"
+    ],
+    [
+     "USD / TWD",
+     "美元／新台幣",
+     "貨幣代碼 ISO 4217"
+    ],
+    [
+     "ID",
+     "身分證明",
+     "identification"
+    ],
+    [
+     "VIP",
+     "貴賓",
+     "very important person"
+    ],
+    [
+     "UFO",
+     "幽浮",
+     "unidentified flying object"
+    ],
+    [
+     "SOS",
+     "求救",
+     "國際求救訊號，不是字首縮寫"
+    ]
+   ]
+  ]
  ]
 }

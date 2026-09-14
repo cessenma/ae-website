@@ -23,6 +23,10 @@ BTN = ('<a href="{href}" style="display:inline-block;font-family:\'Baloo 2\',san
 
 # page → (eyebrow, h2 with <em>, body, [(label, href)])
 ROUTES = {
+ "english-abbreviations": ("縮寫查完，下一步", "看得懂縮寫，<em>寫得出全文嗎？</em>",
+   "縮寫是讀的技能，考試考的是寫。劍橋 KET 寫作 Part 6 的短訊息、書信格式的正式用語，都是「該不該縮寫」最常出現的地方。免費練習附範文逐句解析。",
+   [("KET 寫作 Part 6 短訊息", "/ket-rw-practice-part6/"), ("英文書信怎麼寫", "/english-letter-writing-guide/"),
+    ("月份英文對照表", "/months-english/"), ("主題字表總整理", "/english-vocabulary-by-topic/")]),
  "english-vocabulary-by-topic": ("挑好主題之後", "字表看完了，<em>考出來認得嗎？</em>",
    "主題字表建立的是語感，考試考的是在句子裡認出這個字。下面兩份免費練習分別考「選字填空」和「情境用字」，做完就知道哪一組主題還要補。",
    [("KET 閱讀 Part 4 選字填空", "/ket-rw-practice-part4/"), ("A2 單字情境練習（64 題）", "/a2-vocabulary-practice/"), ("教育部 1200 單字表", "/moe-1200-words-guide/"), ("KK 音標表（可點聽）", "/kk-phonetic-chart/")]),
