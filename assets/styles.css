@@ -447,3 +447,20 @@ footer.site-footer{background:var(--navy);color:#fff;padding:60px 0 32px;positio
 .chart-fig figcaption{font-family:'Baloo 2',sans-serif;font-size:13px;font-weight:700;
   color:#5a6b8c;text-align:center;padding:11px 8px 4px;line-height:1.5}
 @media(max-width:640px){.chart-fig{padding:9px;border-radius:16px;margin-top:22px}}
+
+/* Topic-vocabulary hub cards */
+.hubgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:14px;margin-top:26px}
+.hubcard{display:flex;flex-direction:column;gap:5px;padding:18px 19px;background:#fff;border:2px solid #e8eef7;
+  border-radius:18px;text-decoration:none;box-shadow:0 5px 0 #eef3fa;transition:transform .12s,border-color .12s;position:relative;top:0}
+.hubcard:hover{border-color:var(--blue,#1CB0F6);top:-2px}
+.hubcard .hc-n{font-family:'DM Serif Display',serif;font-size:27px;color:var(--blue,#1CB0F6);line-height:1}
+.hubcard strong{font-family:'Baloo 2',sans-serif;font-size:16.5px;color:var(--navy,#1A2752)}
+.hubcard .hc-d{font-size:13px;color:#64748b;line-height:1.5}
+
+/* Chart reuse licence */
+.lic-code{background:#0f172a;color:#e2e8f0;border-radius:14px;padding:18px 20px;overflow-x:auto;
+  font-size:13px;line-height:1.65;margin:18px 0}
+.lic-code code{font-family:ui-monospace,'SF Mono',Menlo,monospace;white-space:pre}
+.lic-dim{font-family:ui-monospace,monospace;font-size:13px;color:#64748b;white-space:nowrap}
+.chart-fig .lic{display:block;text-align:center;font-size:12px;padding:0 8px 9px;color:#7b8aa6}
+.chart-fig .lic a{color:var(--blue,#1CB0F6);font-weight:700}

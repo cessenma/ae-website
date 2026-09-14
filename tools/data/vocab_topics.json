@@ -1,0 +1,2097 @@
+{
+ "numbers": [
+  {
+   "en": "zero",
+   "zh": "零",
+   "extra": "0"
+  },
+  {
+   "en": "one",
+   "zh": "一",
+   "extra": "1"
+  },
+  {
+   "en": "two",
+   "zh": "二",
+   "extra": "2"
+  },
+  {
+   "en": "three",
+   "zh": "三",
+   "extra": "3"
+  },
+  {
+   "en": "four",
+   "zh": "四",
+   "extra": "4"
+  },
+  {
+   "en": "five",
+   "zh": "五",
+   "extra": "5"
+  },
+  {
+   "en": "six",
+   "zh": "六",
+   "extra": "6"
+  },
+  {
+   "en": "seven",
+   "zh": "七",
+   "extra": "7"
+  },
+  {
+   "en": "eight",
+   "zh": "八",
+   "extra": "8"
+  },
+  {
+   "en": "nine",
+   "zh": "九",
+   "extra": "9"
+  },
+  {
+   "en": "ten",
+   "zh": "十",
+   "extra": "10"
+  },
+  {
+   "en": "eleven",
+   "zh": "十一",
+   "extra": "11"
+  },
+  {
+   "en": "twelve",
+   "zh": "十二",
+   "extra": "12"
+  },
+  {
+   "en": "thirteen",
+   "zh": "十三",
+   "extra": "13"
+  },
+  {
+   "en": "fourteen",
+   "zh": "十四",
+   "extra": "14"
+  },
+  {
+   "en": "fifteen",
+   "zh": "十五",
+   "extra": "15"
+  },
+  {
+   "en": "sixteen",
+   "zh": "十六",
+   "extra": "16"
+  },
+  {
+   "en": "seventeen",
+   "zh": "十七",
+   "extra": "17"
+  },
+  {
+   "en": "eighteen",
+   "zh": "十八",
+   "extra": "18"
+  },
+  {
+   "en": "nineteen",
+   "zh": "十九",
+   "extra": "19"
+  },
+  {
+   "en": "twenty",
+   "zh": "二十",
+   "extra": "20"
+  },
+  {
+   "en": "twenty-one",
+   "zh": "二十一",
+   "extra": "21"
+  },
+  {
+   "en": "twenty-two",
+   "zh": "二十二",
+   "extra": "22"
+  },
+  {
+   "en": "twenty-three",
+   "zh": "二十三",
+   "extra": "23"
+  },
+  {
+   "en": "twenty-four",
+   "zh": "二十四",
+   "extra": "24"
+  },
+  {
+   "en": "twenty-five",
+   "zh": "二十五",
+   "extra": "25"
+  },
+  {
+   "en": "twenty-six",
+   "zh": "二十六",
+   "extra": "26"
+  },
+  {
+   "en": "twenty-seven",
+   "zh": "二十七",
+   "extra": "27"
+  },
+  {
+   "en": "twenty-eight",
+   "zh": "二十八",
+   "extra": "28"
+  },
+  {
+   "en": "twenty-nine",
+   "zh": "二十九",
+   "extra": "29"
+  },
+  {
+   "en": "thirty",
+   "zh": "三十",
+   "extra": "30"
+  },
+  {
+   "en": "thirty-one",
+   "zh": "三十一",
+   "extra": "31"
+  },
+  {
+   "en": "thirty-two",
+   "zh": "三十二",
+   "extra": "32"
+  },
+  {
+   "en": "thirty-three",
+   "zh": "三十三",
+   "extra": "33"
+  },
+  {
+   "en": "thirty-four",
+   "zh": "三十四",
+   "extra": "34"
+  },
+  {
+   "en": "thirty-five",
+   "zh": "三十五",
+   "extra": "35"
+  },
+  {
+   "en": "thirty-six",
+   "zh": "三十六",
+   "extra": "36"
+  },
+  {
+   "en": "thirty-seven",
+   "zh": "三十七",
+   "extra": "37"
+  },
+  {
+   "en": "thirty-eight",
+   "zh": "三十八",
+   "extra": "38"
+  },
+  {
+   "en": "thirty-nine",
+   "zh": "三十九",
+   "extra": "39"
+  },
+  {
+   "en": "forty",
+   "zh": "四十",
+   "extra": "40"
+  },
+  {
+   "en": "forty-one",
+   "zh": "四十一",
+   "extra": "41"
+  },
+  {
+   "en": "forty-two",
+   "zh": "四十二",
+   "extra": "42"
+  },
+  {
+   "en": "forty-three",
+   "zh": "四十三",
+   "extra": "43"
+  },
+  {
+   "en": "forty-four",
+   "zh": "四十四",
+   "extra": "44"
+  },
+  {
+   "en": "forty-five",
+   "zh": "四十五",
+   "extra": "45"
+  },
+  {
+   "en": "forty-six",
+   "zh": "四十六",
+   "extra": "46"
+  },
+  {
+   "en": "forty-seven",
+   "zh": "四十七",
+   "extra": "47"
+  },
+  {
+   "en": "forty-eight",
+   "zh": "四十八",
+   "extra": "48"
+  },
+  {
+   "en": "forty-nine",
+   "zh": "四十九",
+   "extra": "49"
+  },
+  {
+   "en": "fifty",
+   "zh": "五十",
+   "extra": "50"
+  },
+  {
+   "en": "fifty-one",
+   "zh": "五十一",
+   "extra": "51"
+  },
+  {
+   "en": "fifty-two",
+   "zh": "五十二",
+   "extra": "52"
+  },
+  {
+   "en": "fifty-three",
+   "zh": "五十三",
+   "extra": "53"
+  },
+  {
+   "en": "fifty-four",
+   "zh": "五十四",
+   "extra": "54"
+  },
+  {
+   "en": "fifty-five",
+   "zh": "五十五",
+   "extra": "55"
+  },
+  {
+   "en": "fifty-six",
+   "zh": "五十六",
+   "extra": "56"
+  },
+  {
+   "en": "fifty-seven",
+   "zh": "五十七",
+   "extra": "57"
+  },
+  {
+   "en": "fifty-eight",
+   "zh": "五十八",
+   "extra": "58"
+  },
+  {
+   "en": "fifty-nine",
+   "zh": "五十九",
+   "extra": "59"
+  },
+  {
+   "en": "sixty",
+   "zh": "六十",
+   "extra": "60"
+  },
+  {
+   "en": "sixty-one",
+   "zh": "六十一",
+   "extra": "61"
+  },
+  {
+   "en": "sixty-two",
+   "zh": "六十二",
+   "extra": "62"
+  },
+  {
+   "en": "sixty-three",
+   "zh": "六十三",
+   "extra": "63"
+  },
+  {
+   "en": "sixty-four",
+   "zh": "六十四",
+   "extra": "64"
+  },
+  {
+   "en": "sixty-five",
+   "zh": "六十五",
+   "extra": "65"
+  },
+  {
+   "en": "sixty-six",
+   "zh": "六十六",
+   "extra": "66"
+  },
+  {
+   "en": "sixty-seven",
+   "zh": "六十七",
+   "extra": "67"
+  },
+  {
+   "en": "sixty-eight",
+   "zh": "六十八",
+   "extra": "68"
+  },
+  {
+   "en": "sixty-nine",
+   "zh": "六十九",
+   "extra": "69"
+  },
+  {
+   "en": "seventy",
+   "zh": "七十",
+   "extra": "70"
+  },
+  {
+   "en": "seventy-one",
+   "zh": "七十一",
+   "extra": "71"
+  },
+  {
+   "en": "seventy-two",
+   "zh": "七十二",
+   "extra": "72"
+  },
+  {
+   "en": "seventy-three",
+   "zh": "七十三",
+   "extra": "73"
+  },
+  {
+   "en": "seventy-four",
+   "zh": "七十四",
+   "extra": "74"
+  },
+  {
+   "en": "seventy-five",
+   "zh": "七十五",
+   "extra": "75"
+  },
+  {
+   "en": "seventy-six",
+   "zh": "七十六",
+   "extra": "76"
+  },
+  {
+   "en": "seventy-seven",
+   "zh": "七十七",
+   "extra": "77"
+  },
+  {
+   "en": "seventy-eight",
+   "zh": "七十八",
+   "extra": "78"
+  },
+  {
+   "en": "seventy-nine",
+   "zh": "七十九",
+   "extra": "79"
+  },
+  {
+   "en": "eighty",
+   "zh": "八十",
+   "extra": "80"
+  },
+  {
+   "en": "eighty-one",
+   "zh": "八十一",
+   "extra": "81"
+  },
+  {
+   "en": "eighty-two",
+   "zh": "八十二",
+   "extra": "82"
+  },
+  {
+   "en": "eighty-three",
+   "zh": "八十三",
+   "extra": "83"
+  },
+  {
+   "en": "eighty-four",
+   "zh": "八十四",
+   "extra": "84"
+  },
+  {
+   "en": "eighty-five",
+   "zh": "八十五",
+   "extra": "85"
+  },
+  {
+   "en": "eighty-six",
+   "zh": "八十六",
+   "extra": "86"
+  },
+  {
+   "en": "eighty-seven",
+   "zh": "八十七",
+   "extra": "87"
+  },
+  {
+   "en": "eighty-eight",
+   "zh": "八十八",
+   "extra": "88"
+  },
+  {
+   "en": "eighty-nine",
+   "zh": "八十九",
+   "extra": "89"
+  },
+  {
+   "en": "ninety",
+   "zh": "九十",
+   "extra": "90"
+  },
+  {
+   "en": "ninety-one",
+   "zh": "九十一",
+   "extra": "91"
+  },
+  {
+   "en": "ninety-two",
+   "zh": "九十二",
+   "extra": "92"
+  },
+  {
+   "en": "ninety-three",
+   "zh": "九十三",
+   "extra": "93"
+  },
+  {
+   "en": "ninety-four",
+   "zh": "九十四",
+   "extra": "94"
+  },
+  {
+   "en": "ninety-five",
+   "zh": "九十五",
+   "extra": "95"
+  },
+  {
+   "en": "ninety-six",
+   "zh": "九十六",
+   "extra": "96"
+  },
+  {
+   "en": "ninety-seven",
+   "zh": "九十七",
+   "extra": "97"
+  },
+  {
+   "en": "ninety-eight",
+   "zh": "九十八",
+   "extra": "98"
+  },
+  {
+   "en": "ninety-nine",
+   "zh": "九十九",
+   "extra": "99"
+  },
+  {
+   "en": "one hundred",
+   "zh": "一百",
+   "extra": "100"
+  }
+ ],
+ "months": [
+  [
+   "January",
+   "一月",
+   "Jan.",
+   "31"
+  ],
+  [
+   "February",
+   "二月",
+   "Feb.",
+   "28／29"
+  ],
+  [
+   "March",
+   "三月",
+   "Mar.",
+   "31"
+  ],
+  [
+   "April",
+   "四月",
+   "Apr.",
+   "30"
+  ],
+  [
+   "May",
+   "五月",
+   "May",
+   "31"
+  ],
+  [
+   "June",
+   "六月",
+   "Jun.",
+   "30"
+  ],
+  [
+   "July",
+   "七月",
+   "Jul.",
+   "31"
+  ],
+  [
+   "August",
+   "八月",
+   "Aug.",
+   "31"
+  ],
+  [
+   "September",
+   "九月",
+   "Sep.／Sept.",
+   "30"
+  ],
+  [
+   "October",
+   "十月",
+   "Oct.",
+   "31"
+  ],
+  [
+   "November",
+   "十一月",
+   "Nov.",
+   "30"
+  ],
+  [
+   "December",
+   "十二月",
+   "Dec.",
+   "31"
+  ]
+ ],
+ "days": [
+  [
+   "Monday",
+   "星期一",
+   "Mon.",
+   "週一"
+  ],
+  [
+   "Tuesday",
+   "星期二",
+   "Tue.／Tues.",
+   "週二"
+  ],
+  [
+   "Wednesday",
+   "星期三",
+   "Wed.",
+   "週三"
+  ],
+  [
+   "Thursday",
+   "星期四",
+   "Thu.／Thurs.",
+   "週四"
+  ],
+  [
+   "Friday",
+   "星期五",
+   "Fri.",
+   "週五"
+  ],
+  [
+   "Saturday",
+   "星期六",
+   "Sat.",
+   "週六"
+  ],
+  [
+   "Sunday",
+   "星期日",
+   "Sun.",
+   "週日"
+  ]
+ ],
+ "colors": [
+  [
+   "基本顏色 Basic colours",
+   [
+    [
+     "red",
+     "紅色"
+    ],
+    [
+     "orange",
+     "橙色／橘色"
+    ],
+    [
+     "yellow",
+     "黃色"
+    ],
+    [
+     "green",
+     "綠色"
+    ],
+    [
+     "blue",
+     "藍色"
+    ],
+    [
+     "purple",
+     "紫色"
+    ],
+    [
+     "pink",
+     "粉紅色"
+    ],
+    [
+     "brown",
+     "棕色／咖啡色"
+    ],
+    [
+     "black",
+     "黑色"
+    ],
+    [
+     "white",
+     "白色"
+    ],
+    [
+     "grey／gray",
+     "灰色"
+    ],
+    [
+     "gold",
+     "金色"
+    ],
+    [
+     "silver",
+     "銀色"
+    ]
+   ]
+  ],
+  [
+   "深淺與明暗 Shades",
+   [
+    [
+     "light blue",
+     "淺藍色"
+    ],
+    [
+     "dark blue",
+     "深藍色"
+    ],
+    [
+     "navy",
+     "海軍藍"
+    ],
+    [
+     "sky blue",
+     "天藍色"
+    ],
+    [
+     "baby blue",
+     "嬰兒藍"
+    ],
+    [
+     "light green",
+     "淺綠色"
+    ],
+    [
+     "dark green",
+     "深綠色"
+    ],
+    [
+     "olive",
+     "橄欖綠"
+    ],
+    [
+     "lime",
+     "萊姆綠"
+    ],
+    [
+     "mint",
+     "薄荷綠"
+    ],
+    [
+     "beige",
+     "米色"
+    ],
+    [
+     "cream",
+     "奶油色"
+    ],
+    [
+     "ivory",
+     "象牙白"
+    ],
+    [
+     "charcoal",
+     "炭灰色"
+    ]
+   ]
+  ],
+  [
+   "紅粉紫系 Reds, pinks and purples",
+   [
+    [
+     "scarlet",
+     "猩紅色"
+    ],
+    [
+     "crimson",
+     "深紅色"
+    ],
+    [
+     "maroon",
+     "栗色"
+    ],
+    [
+     "burgundy",
+     "酒紅色"
+    ],
+    [
+     "coral",
+     "珊瑚色"
+    ],
+    [
+     "salmon",
+     "鮭魚粉"
+    ],
+    [
+     "rose",
+     "玫瑰色"
+    ],
+    [
+     "magenta",
+     "洋紅色"
+    ],
+    [
+     "lavender",
+     "薰衣草紫"
+    ],
+    [
+     "violet",
+     "紫羅蘭色"
+    ],
+    [
+     "lilac",
+     "丁香紫"
+    ],
+    [
+     "plum",
+     "李子紫"
+    ],
+    [
+     "indigo",
+     "靛色"
+    ]
+   ]
+  ],
+  [
+   "黃橙棕系 Yellows, oranges and browns",
+   [
+    [
+     "amber",
+     "琥珀色"
+    ],
+    [
+     "mustard",
+     "芥末黃"
+    ],
+    [
+     "lemon",
+     "檸檬黃"
+    ],
+    [
+     "peach",
+     "蜜桃色"
+    ],
+    [
+     "apricot",
+     "杏色"
+    ],
+    [
+     "tan",
+     "褐色"
+    ],
+    [
+     "chocolate",
+     "巧克力色"
+    ],
+    [
+     "coffee",
+     "咖啡色"
+    ],
+    [
+     "chestnut",
+     "栗棕色"
+    ],
+    [
+     "copper",
+     "銅色"
+    ],
+    [
+     "bronze",
+     "青銅色"
+    ]
+   ]
+  ],
+  [
+   "藍綠與其他 Blues, greens and others",
+   [
+    [
+     "turquoise",
+     "綠松色"
+    ],
+    [
+     "teal",
+     "藍綠色"
+    ],
+    [
+     "cyan",
+     "青色"
+    ],
+    [
+     "aqua",
+     "水藍色"
+    ],
+    [
+     "emerald",
+     "翡翠綠"
+    ],
+    [
+     "jade",
+     "玉綠色"
+    ],
+    [
+     "forest green",
+     "森林綠"
+    ],
+    [
+     "khaki",
+     "卡其色"
+    ],
+    [
+     "pearl",
+     "珍珠白"
+    ],
+    [
+     "transparent",
+     "透明的"
+    ],
+    [
+     "colourful",
+     "色彩繽紛的"
+    ]
+   ]
+  ]
+ ],
+ "fruits": [
+  [
+   "台灣常見水果 Fruits you see in Taiwan",
+   [
+    [
+     "guava",
+     "芭樂"
+    ],
+    [
+     "wax apple",
+     "蓮霧"
+    ],
+    [
+     "sugar apple",
+     "釋迦"
+    ],
+    [
+     "longan",
+     "龍眼"
+    ],
+    [
+     "lychee",
+     "荔枝"
+    ],
+    [
+     "pomelo",
+     "柚子"
+    ],
+    [
+     "dragon fruit",
+     "火龍果"
+    ],
+    [
+     "passion fruit",
+     "百香果"
+    ],
+    [
+     "star fruit",
+     "楊桃"
+    ],
+    [
+     "loquat",
+     "枇杷"
+    ],
+    [
+     "bitter melon",
+     "苦瓜"
+    ],
+    [
+     "papaya",
+     "木瓜"
+    ],
+    [
+     "pineapple",
+     "鳳梨"
+    ],
+    [
+     "mango",
+     "芒果"
+    ],
+    [
+     "banana",
+     "香蕉"
+    ]
+   ]
+  ],
+  [
+   "常見水果 Everyday fruits",
+   [
+    [
+     "apple",
+     "蘋果"
+    ],
+    [
+     "orange",
+     "柳橙"
+    ],
+    [
+     "grape",
+     "葡萄"
+    ],
+    [
+     "pear",
+     "梨子"
+    ],
+    [
+     "peach",
+     "桃子"
+    ],
+    [
+     "plum",
+     "李子"
+    ],
+    [
+     "cherry",
+     "櫻桃"
+    ],
+    [
+     "strawberry",
+     "草莓"
+    ],
+    [
+     "watermelon",
+     "西瓜"
+    ],
+    [
+     "lemon",
+     "檸檬"
+    ],
+    [
+     "lime",
+     "萊姆"
+    ],
+    [
+     "kiwi fruit",
+     "奇異果"
+    ],
+    [
+     "melon",
+     "香瓜"
+    ],
+    [
+     "coconut",
+     "椰子"
+    ],
+    [
+     "apricot",
+     "杏桃"
+    ],
+    [
+     "fig",
+     "無花果"
+    ],
+    [
+     "date",
+     "椰棗"
+    ]
+   ]
+  ],
+  [
+   "莓果與堅果類 Berries and nuts",
+   [
+    [
+     "blueberry",
+     "藍莓"
+    ],
+    [
+     "raspberry",
+     "覆盆子"
+    ],
+    [
+     "blackberry",
+     "黑莓"
+    ],
+    [
+     "cranberry",
+     "蔓越莓"
+    ],
+    [
+     "mulberry",
+     "桑葚"
+    ],
+    [
+     "grapefruit",
+     "葡萄柚"
+    ],
+    [
+     "tangerine",
+     "橘子"
+    ],
+    [
+     "mandarin",
+     "椪柑"
+    ],
+    [
+     "persimmon",
+     "柿子"
+    ],
+    [
+     "pomegranate",
+     "石榴"
+    ],
+    [
+     "avocado",
+     "酪梨"
+    ],
+    [
+     "chestnut",
+     "栗子"
+    ],
+    [
+     "walnut",
+     "核桃"
+    ],
+    [
+     "almond",
+     "杏仁"
+    ],
+    [
+     "peanut",
+     "花生"
+    ]
+   ]
+  ]
+ ],
+ "body": [
+  [
+   "頭與臉 Head and face",
+   [
+    [
+     "head",
+     "頭"
+    ],
+    [
+     "hair",
+     "頭髮"
+    ],
+    [
+     "face",
+     "臉"
+    ],
+    [
+     "forehead",
+     "額頭"
+    ],
+    [
+     "eye",
+     "眼睛"
+    ],
+    [
+     "eyebrow",
+     "眉毛"
+    ],
+    [
+     "eyelash",
+     "睫毛"
+    ],
+    [
+     "nose",
+     "鼻子"
+    ],
+    [
+     "mouth",
+     "嘴巴"
+    ],
+    [
+     "lip",
+     "嘴唇"
+    ],
+    [
+     "tooth／teeth",
+     "牙齒"
+    ],
+    [
+     "tongue",
+     "舌頭"
+    ],
+    [
+     "ear",
+     "耳朵"
+    ],
+    [
+     "cheek",
+     "臉頰"
+    ],
+    [
+     "chin",
+     "下巴"
+    ],
+    [
+     "neck",
+     "脖子"
+    ]
+   ]
+  ],
+  [
+   "上半身 Upper body",
+   [
+    [
+     "shoulder",
+     "肩膀"
+    ],
+    [
+     "arm",
+     "手臂"
+    ],
+    [
+     "elbow",
+     "手肘"
+    ],
+    [
+     "wrist",
+     "手腕"
+    ],
+    [
+     "hand",
+     "手"
+    ],
+    [
+     "finger",
+     "手指"
+    ],
+    [
+     "thumb",
+     "大拇指"
+    ],
+    [
+     "nail",
+     "指甲"
+    ],
+    [
+     "chest",
+     "胸部"
+    ],
+    [
+     "back",
+     "背"
+    ],
+    [
+     "stomach",
+     "肚子"
+    ],
+    [
+     "waist",
+     "腰"
+    ]
+   ]
+  ],
+  [
+   "下半身 Lower body",
+   [
+    [
+     "hip",
+     "臀部"
+    ],
+    [
+     "leg",
+     "腿"
+    ],
+    [
+     "thigh",
+     "大腿"
+    ],
+    [
+     "knee",
+     "膝蓋"
+    ],
+    [
+     "ankle",
+     "腳踝"
+    ],
+    [
+     "foot／feet",
+     "腳"
+    ],
+    [
+     "toe",
+     "腳趾"
+    ],
+    [
+     "heel",
+     "腳跟"
+    ]
+   ]
+  ],
+  [
+   "身體內部 Inside the body",
+   [
+    [
+     "brain",
+     "大腦"
+    ],
+    [
+     "heart",
+     "心臟"
+    ],
+    [
+     "lung",
+     "肺"
+    ],
+    [
+     "bone",
+     "骨頭"
+    ],
+    [
+     "muscle",
+     "肌肉"
+    ],
+    [
+     "skin",
+     "皮膚"
+    ],
+    [
+     "blood",
+     "血液"
+    ]
+   ]
+  ]
+ ],
+ "jobs": [
+  [
+   "學校與醫療 School and healthcare",
+   [
+    [
+     "teacher",
+     "老師"
+    ],
+    [
+     "principal",
+     "校長"
+    ],
+    [
+     "professor",
+     "教授"
+    ],
+    [
+     "student",
+     "學生"
+    ],
+    [
+     "doctor",
+     "醫生"
+    ],
+    [
+     "nurse",
+     "護理師"
+    ],
+    [
+     "dentist",
+     "牙醫"
+    ],
+    [
+     "vet",
+     "獸醫"
+    ],
+    [
+     "pharmacist",
+     "藥劑師"
+    ],
+    [
+     "surgeon",
+     "外科醫師"
+    ],
+    [
+     "therapist",
+     "治療師"
+    ],
+    [
+     "counsellor",
+     "諮商師"
+    ]
+   ]
+  ],
+  [
+   "公共服務 Public service",
+   [
+    [
+     "police officer",
+     "警察"
+    ],
+    [
+     "firefighter",
+     "消防員"
+    ],
+    [
+     "soldier",
+     "軍人"
+    ],
+    [
+     "mail carrier",
+     "郵差"
+    ],
+    [
+     "librarian",
+     "圖書館員"
+    ],
+    [
+     "social worker",
+     "社工"
+    ],
+    [
+     "judge",
+     "法官"
+    ],
+    [
+     "lawyer",
+     "律師"
+    ],
+    [
+     "politician",
+     "政治人物"
+    ],
+    [
+     "diplomat",
+     "外交官"
+    ]
+   ]
+  ],
+  [
+   "商業與辦公 Business and office",
+   [
+    [
+     "manager",
+     "經理"
+    ],
+    [
+     "accountant",
+     "會計師"
+    ],
+    [
+     "banker",
+     "銀行員"
+    ],
+    [
+     "secretary",
+     "祕書"
+    ],
+    [
+     "salesperson",
+     "業務員"
+    ],
+    [
+     "cashier",
+     "收銀員"
+    ],
+    [
+     "clerk",
+     "職員"
+    ],
+    [
+     "receptionist",
+     "櫃檯人員"
+    ],
+    [
+     "consultant",
+     "顧問"
+    ],
+    [
+     "entrepreneur",
+     "創業者"
+    ],
+    [
+     "translator",
+     "翻譯"
+    ],
+    [
+     "interpreter",
+     "口譯員"
+    ]
+   ]
+  ],
+  [
+   "科技與工程 Tech and engineering",
+   [
+    [
+     "engineer",
+     "工程師"
+    ],
+    [
+     "programmer",
+     "程式設計師"
+    ],
+    [
+     "scientist",
+     "科學家"
+    ],
+    [
+     "researcher",
+     "研究員"
+    ],
+    [
+     "architect",
+     "建築師"
+    ],
+    [
+     "designer",
+     "設計師"
+    ],
+    [
+     "technician",
+     "技師"
+    ],
+    [
+     "electrician",
+     "電工"
+    ],
+    [
+     "plumber",
+     "水電工"
+    ],
+    [
+     "mechanic",
+     "技工"
+    ],
+    [
+     "carpenter",
+     "木工"
+    ],
+    [
+     "construction worker",
+     "建築工人"
+    ]
+   ]
+  ],
+  [
+   "餐飲與服務 Food and service",
+   [
+    [
+     "chef",
+     "主廚"
+    ],
+    [
+     "cook",
+     "廚師"
+    ],
+    [
+     "baker",
+     "麵包師"
+    ],
+    [
+     "waiter",
+     "服務生"
+    ],
+    [
+     "waitress",
+     "女服務生"
+    ],
+    [
+     "barista",
+     "咖啡師"
+    ],
+    [
+     "hairdresser",
+     "美髮師"
+    ],
+    [
+     "barber",
+     "理髮師"
+    ],
+    [
+     "tailor",
+     "裁縫師"
+    ],
+    [
+     "cleaner",
+     "清潔人員"
+    ],
+    [
+     "gardener",
+     "園丁"
+    ],
+    [
+     "shopkeeper",
+     "店主"
+    ]
+   ]
+  ],
+  [
+   "運輸與農漁 Transport, farming and fishing",
+   [
+    [
+     "driver",
+     "司機"
+    ],
+    [
+     "pilot",
+     "機師"
+    ],
+    [
+     "flight attendant",
+     "空服員"
+    ],
+    [
+     "sailor",
+     "水手"
+    ],
+    [
+     "captain",
+     "船長"
+    ],
+    [
+     "farmer",
+     "農夫"
+    ],
+    [
+     "fisherman",
+     "漁夫"
+    ],
+    [
+     "miner",
+     "礦工"
+    ],
+    [
+     "delivery driver",
+     "外送員"
+    ],
+    [
+     "train driver",
+     "列車駕駛"
+    ]
+   ]
+  ],
+  [
+   "藝術與媒體 Arts and media",
+   [
+    [
+     "artist",
+     "藝術家"
+    ],
+    [
+     "singer",
+     "歌手"
+    ],
+    [
+     "musician",
+     "音樂家"
+    ],
+    [
+     "dancer",
+     "舞者"
+    ],
+    [
+     "actor",
+     "演員"
+    ],
+    [
+     "actress",
+     "女演員"
+    ],
+    [
+     "writer",
+     "作家"
+    ],
+    [
+     "journalist",
+     "記者"
+    ],
+    [
+     "reporter",
+     "記者"
+    ],
+    [
+     "photographer",
+     "攝影師"
+    ],
+    [
+     "director",
+     "導演"
+    ],
+    [
+     "editor",
+     "編輯"
+    ],
+    [
+     "model",
+     "模特兒"
+    ],
+    [
+     "athlete",
+     "運動員"
+    ],
+    [
+     "coach",
+     "教練"
+    ]
+   ]
+  ]
+ ],
+ "countries": [
+  [
+   "亞洲 Asia",
+   [
+    [
+     "Taiwan",
+     "台灣",
+     "Taiwanese"
+    ],
+    [
+     "Japan",
+     "日本",
+     "Japanese"
+    ],
+    [
+     "Korea",
+     "韓國",
+     "Korean"
+    ],
+    [
+     "China",
+     "中國",
+     "Chinese"
+    ],
+    [
+     "Singapore",
+     "新加坡",
+     "Singaporean"
+    ],
+    [
+     "Malaysia",
+     "馬來西亞",
+     "Malaysian"
+    ],
+    [
+     "Thailand",
+     "泰國",
+     "Thai"
+    ],
+    [
+     "Vietnam",
+     "越南",
+     "Vietnamese"
+    ],
+    [
+     "the Philippines",
+     "菲律賓",
+     "Filipino"
+    ],
+    [
+     "Indonesia",
+     "印尼",
+     "Indonesian"
+    ],
+    [
+     "India",
+     "印度",
+     "Indian"
+    ],
+    [
+     "Cambodia",
+     "柬埔寨",
+     "Cambodian"
+    ],
+    [
+     "Myanmar",
+     "緬甸",
+     "Burmese"
+    ],
+    [
+     "Mongolia",
+     "蒙古",
+     "Mongolian"
+    ],
+    [
+     "Nepal",
+     "尼泊爾",
+     "Nepalese"
+    ],
+    [
+     "Pakistan",
+     "巴基斯坦",
+     "Pakistani"
+    ],
+    [
+     "Bangladesh",
+     "孟加拉",
+     "Bangladeshi"
+    ],
+    [
+     "Sri Lanka",
+     "斯里蘭卡",
+     "Sri Lankan"
+    ]
+   ]
+  ],
+  [
+   "歐洲 Europe",
+   [
+    [
+     "the United Kingdom",
+     "英國",
+     "British"
+    ],
+    [
+     "France",
+     "法國",
+     "French"
+    ],
+    [
+     "Germany",
+     "德國",
+     "German"
+    ],
+    [
+     "Italy",
+     "義大利",
+     "Italian"
+    ],
+    [
+     "Spain",
+     "西班牙",
+     "Spanish"
+    ],
+    [
+     "Portugal",
+     "葡萄牙",
+     "Portuguese"
+    ],
+    [
+     "Greece",
+     "希臘",
+     "Greek"
+    ],
+    [
+     "Switzerland",
+     "瑞士",
+     "Swiss"
+    ],
+    [
+     "Austria",
+     "奧地利",
+     "Austrian"
+    ],
+    [
+     "Belgium",
+     "比利時",
+     "Belgian"
+    ],
+    [
+     "the Netherlands",
+     "荷蘭",
+     "Dutch"
+    ],
+    [
+     "Sweden",
+     "瑞典",
+     "Swedish"
+    ],
+    [
+     "Norway",
+     "挪威",
+     "Norwegian"
+    ],
+    [
+     "Denmark",
+     "丹麥",
+     "Danish"
+    ],
+    [
+     "Finland",
+     "芬蘭",
+     "Finnish"
+    ],
+    [
+     "Poland",
+     "波蘭",
+     "Polish"
+    ],
+    [
+     "Russia",
+     "俄羅斯",
+     "Russian"
+    ],
+    [
+     "Ireland",
+     "愛爾蘭",
+     "Irish"
+    ],
+    [
+     "Iceland",
+     "冰島",
+     "Icelandic"
+    ],
+    [
+     "Czechia",
+     "捷克",
+     "Czech"
+    ],
+    [
+     "Hungary",
+     "匈牙利",
+     "Hungarian"
+    ],
+    [
+     "Ukraine",
+     "烏克蘭",
+     "Ukrainian"
+    ],
+    [
+     "Turkey",
+     "土耳其",
+     "Turkish"
+    ]
+   ]
+  ],
+  [
+   "美洲 The Americas",
+   [
+    [
+     "the United States",
+     "美國",
+     "American"
+    ],
+    [
+     "Canada",
+     "加拿大",
+     "Canadian"
+    ],
+    [
+     "Mexico",
+     "墨西哥",
+     "Mexican"
+    ],
+    [
+     "Brazil",
+     "巴西",
+     "Brazilian"
+    ],
+    [
+     "Argentina",
+     "阿根廷",
+     "Argentinian"
+    ],
+    [
+     "Chile",
+     "智利",
+     "Chilean"
+    ],
+    [
+     "Peru",
+     "秘魯",
+     "Peruvian"
+    ],
+    [
+     "Colombia",
+     "哥倫比亞",
+     "Colombian"
+    ],
+    [
+     "Cuba",
+     "古巴",
+     "Cuban"
+    ],
+    [
+     "Venezuela",
+     "委內瑞拉",
+     "Venezuelan"
+    ],
+    [
+     "Ecuador",
+     "厄瓜多",
+     "Ecuadorian"
+    ],
+    [
+     "Bolivia",
+     "玻利維亞",
+     "Bolivian"
+    ],
+    [
+     "Uruguay",
+     "烏拉圭",
+     "Uruguayan"
+    ],
+    [
+     "Panama",
+     "巴拿馬",
+     "Panamanian"
+    ],
+    [
+     "Guatemala",
+     "瓜地馬拉",
+     "Guatemalan"
+    ]
+   ]
+  ],
+  [
+   "非洲與中東 Africa and the Middle East",
+   [
+    [
+     "Egypt",
+     "埃及",
+     "Egyptian"
+    ],
+    [
+     "South Africa",
+     "南非",
+     "South African"
+    ],
+    [
+     "Kenya",
+     "肯亞",
+     "Kenyan"
+    ],
+    [
+     "Nigeria",
+     "奈及利亞",
+     "Nigerian"
+    ],
+    [
+     "Morocco",
+     "摩洛哥",
+     "Moroccan"
+    ],
+    [
+     "Ethiopia",
+     "衣索比亞",
+     "Ethiopian"
+    ],
+    [
+     "Ghana",
+     "迦納",
+     "Ghanaian"
+    ],
+    [
+     "Tanzania",
+     "坦尚尼亞",
+     "Tanzanian"
+    ],
+    [
+     "Israel",
+     "以色列",
+     "Israeli"
+    ],
+    [
+     "Saudi Arabia",
+     "沙烏地阿拉伯",
+     "Saudi"
+    ],
+    [
+     "the United Arab Emirates",
+     "阿聯",
+     "Emirati"
+    ],
+    [
+     "Iran",
+     "伊朗",
+     "Iranian"
+    ],
+    [
+     "Iraq",
+     "伊拉克",
+     "Iraqi"
+    ],
+    [
+     "Jordan",
+     "約旦",
+     "Jordanian"
+    ],
+    [
+     "Lebanon",
+     "黎巴嫩",
+     "Lebanese"
+    ]
+   ]
+  ],
+  [
+   "大洋洲 Oceania",
+   [
+    [
+     "Australia",
+     "澳洲",
+     "Australian"
+    ],
+    [
+     "New Zealand",
+     "紐西蘭",
+     "New Zealander"
+    ],
+    [
+     "Fiji",
+     "斐濟",
+     "Fijian"
+    ],
+    [
+     "Papua New Guinea",
+     "巴布亞紐幾內亞",
+     "Papua New Guinean"
+    ],
+    [
+     "Samoa",
+     "薩摩亞",
+     "Samoan"
+    ],
+    [
+     "Tonga",
+     "東加",
+     "Tongan"
+    ],
+    [
+     "Palau",
+     "帛琉",
+     "Palauan"
+    ],
+    [
+     "the Marshall Islands",
+     "馬紹爾群島",
+     "Marshallese"
+    ],
+    [
+     "Tuvalu",
+     "吐瓦魯",
+     "Tuvaluan"
+    ]
+   ]
+  ]
+ ]
+}

@@ -67,10 +67,46 @@ SPECS = {
     foot="americanenglish.com.tw"),
 }
 
+SPECS.update({
+ "numbers-1-100-chart": dict(page="numbers-1-100-english", cols=4, max_rows=101,
+   title="英文數字 1-100 對照表", sub="0 到 100 ・ 英文拼法與中文對照",
+   alt="英文數字1到100完整對照表，每個數字的英文拼法與中文對照",
+   foot="可儲存列印｜americanenglish.com.tw"),
+ "months-english-chart": dict(page="months-english",
+   title="1-12 月份英文對照表", sub="英文 ・ 中文 ・ 縮寫 ・ 天數",
+   alt="1到12月份英文對照表，含月份英文、中文、縮寫與每月天數",
+   foot="可儲存列印｜americanenglish.com.tw"),
+ "days-week-english-chart": dict(page="days-of-week-english",
+   title="星期英文對照表", sub="星期一到星期日 ・ 英文、縮寫與口語說法",
+   alt="星期英文對照表：星期一到星期日的英文、中文、縮寫與口語說法",
+   foot="可儲存列印｜americanenglish.com.tw"),
+ "colors-english-chart": dict(page="colors-english", cols=3, width=1500,
+   title="顏色英文對照表", sub="62 個常用顏色 ・ 依色系分組",
+   alt="顏色英文對照表：62個常用顏色的英文與中文對照，依色系分組",
+   foot="可儲存列印｜americanenglish.com.tw"),
+ "fruits-english-chart": dict(page="fruits-english", cols=2,
+   title="水果英文對照表", sub="47 種水果 ・ 含芭樂、蓮霧、釋迦等台灣水果",
+   alt="水果英文對照表：47種水果的英文與中文，含芭樂蓮霧釋迦等台灣水果說法",
+   foot="可儲存列印｜americanenglish.com.tw"),
+ "body-parts-english-chart": dict(page="body-parts-english", cols=2,
+   title="身體部位英文對照表", sub="43 個部位 ・ 頭臉、上半身、下半身與體內",
+   alt="身體部位英文對照表：43個身體部位的英文與中文，分頭臉上半身下半身與體內",
+   foot="可儲存列印｜americanenglish.com.tw"),
+
+ "countries-english-chart": dict(page="countries-english", cols=2, width=1560,
+   title="國家英文對照表", sub="80 國 ・ 國名、中文與國籍形容詞",
+   alt="國家英文對照表：80個國家的英文名稱、中文與國籍形容詞對照",
+   foot="可儲存列印｜americanenglish.com.tw"),
+ "jobs-english-chart": dict(page="jobs-english", cols=3, width=1560,
+   title="職業英文對照表", sub="83 種工作 ・ 依領域分組",
+   alt="職業英文對照表：83種常見工作的英文與中文對照，依領域分組",
+   foot="可儲存列印｜americanenglish.com.tw"),
+})
+
 CSS = """
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'DM Sans','PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif;
-  background:#fff;width:1200px}
+  background:#fff;width:__W__px}
 .card{background:#fff}
 .head{background:linear-gradient(135deg,#1A2752 0%,#26407e 100%);color:#fff;padding:38px 46px 34px;position:relative;overflow:hidden}
 .head::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;
@@ -187,6 +223,7 @@ def build(slug, spec):
         print(f"  !! {slug}: no tables found on /{spec['page']}/")
         return None
     cols = spec.get("cols", 1)
+    W = spec.get("width", 1200)
     body = "\n".join(
         f'<div class="grp">{f"<h2>{html.escape(c)}</h2>" if c else ""}{reflow(t, cols)}</div>'
         for c, t in groups)
@@ -195,7 +232,7 @@ def build(slug, spec):
     logo = "data:image/jpeg;base64," + base64.b64encode(open(lp, "rb").read()).decode()
     doc = f"""<!doctype html><html lang="zh-Hant-TW"><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
-<style>{CSS}</style></head><body><div class="card">
+<style>{CSS.replace("__W__", str(W))}</style></head><body><div class="card">
 <div class="head"><h1>{html.escape(spec['title'])}</h1><p>{html.escape(spec['sub'])}</p></div>
 <div class="bar"></div>
 <div class="body {'c3' if cols>=3 else ''}">{body}</div>
@@ -210,7 +247,7 @@ def build(slug, spec):
     from playwright.sync_api import sync_playwright
     with sync_playwright() as pw:
         b = pw.chromium.launch()
-        pg = b.new_page(viewport={"width": 1200, "height": 1000}, device_scale_factor=1)
+        pg = b.new_page(viewport={"width": W, "height": 1000}, device_scale_factor=1)
         pg.set_content(doc, wait_until="networkidle")
         pg.wait_for_timeout(700)          # webfonts
         pg.locator(".card").screenshot(path=png)
@@ -219,7 +256,7 @@ def build(slug, spec):
     try:
         from PIL import Image
         with Image.open(png) as im: w, h = im.size
-    except Exception: w = 1200
+    except Exception: w = W
     print(f"  {slug}.png  {w}x{h}  ({len(groups)} tables)")
     return dict(slug=slug, png=f"/assets/img/charts/{slug}.png", w=w, h=h,
                 alt=spec["alt"], title=spec["title"], page=spec["page"])
