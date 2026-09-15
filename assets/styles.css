@@ -464,3 +464,18 @@ footer.site-footer{background:var(--navy);color:#fff;padding:60px 0 32px;positio
 .lic-dim{font-family:ui-monospace,monospace;font-size:13px;color:#64748b;white-space:nowrap}
 .chart-fig .lic{display:block;text-align:center;font-size:12px;padding:0 8px 9px;color:#7b8aa6}
 .chart-fig .lic a{color:var(--blue,#1CB0F6);font-weight:700}
+
+/* Per-word pronunciation buttons in the reference tables (tools/build_word_audio.py) */
+.say{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;
+  width:26px;height:26px;margin-left:7px;padding:0;border:none;border-radius:50%;
+  background:var(--light-blue,#DDF4FF);color:var(--blue,#1CB0F6);cursor:pointer;
+  flex:0 0 auto;transition:background .15s,transform .08s}
+.say svg{width:15px;height:15px;display:block;fill:currentColor;stroke:currentColor;
+  stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.say svg path:last-child{fill:none}
+.say:hover{background:var(--blue,#1CB0F6);color:#fff}
+.say:active{transform:scale(.9)}
+.say.playing{background:var(--green,#06C755);color:#fff}
+.say:focus-visible{outline:3px solid var(--blue,#1CB0F6);outline-offset:2px}
+td .say{margin-left:8px}
+@media(max-width:640px){.say{width:24px;height:24px;margin-left:5px}}
