@@ -271,6 +271,10 @@
 "date": "2026-08-27",
 "hash": "ece2f65636e977636a9121800a904b86"
 },
+"english-listening-practice": {
+"date": "2026-09-15",
+"hash": "8dd28cee022ab1d2bbf572cb039914c2"
+},
 "english-names-boys": {
 "date": "2026-09-14",
 "hash": "464954dd8d3fd5b0296593bf882387a8"
@@ -299,6 +303,10 @@
 "date": "2026-09-15",
 "hash": "7ea455b07f259976e6fd00f2989f0def"
 },
+"english-reading-practice": {
+"date": "2026-09-15",
+"hash": "4fb56a77ad06caa54f5068c763af8b94"
+},
 "english-self-introduction-kids": {
 "date": "2026-09-13",
 "hash": "3d5c23c65612edcf531d14f959abcf3f"
@@ -306,6 +314,10 @@
 "english-self-introduction-students": {
 "date": "2026-08-13",
 "hash": "94f98a856015ebeb36aa1a9d5511b3c5"
+},
+"english-speaking-practice": {
+"date": "2026-09-15",
+"hash": "b6029dde421df8ad63883c5969ee95ea"
 },
 "english-summer-camp-banqiao": {
 "date": "2026-08-07",
@@ -330,6 +342,10 @@
 "english-word-stress-gesture": {
 "date": "2026-08-25",
 "hash": "438a6a139c176c5376133375e54beb2c"
+},
+"english-writing-practice": {
+"date": "2026-09-15",
+"hash": "411ede742392b11c0dd3804cce294b89"
 },
 "exams": {
 "date": "2026-09-15",

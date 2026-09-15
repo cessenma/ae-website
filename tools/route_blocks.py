@@ -23,6 +23,22 @@ BTN = ('<a href="{href}" style="display:inline-block;font-family:\'Baloo 2\',san
 
 # page → (eyebrow, h2 with <em>, body, [(label, href)])
 ROUTES = {
+ "english-listening-practice": ("聽力之外", "聽得懂了，<em>說得出來嗎？</em>",
+   "聽力和口說是同一塊肌肉的兩面——聽得出連音的人，講起來也比較順。下面三頁分別是口說、發音與閱讀的練法，都附免費練習。",
+   [("英文口說怎麼練", "/english-speaking-practice/"), ("英文發音完整指南", "/english-pronunciation/"),
+    ("英文閱讀怎麼練", "/english-reading-practice/"), ("KET 聽力 Part 1", "/ket-listening-practice-part1/")]),
+ "english-reading-practice": ("讀得順之後", "讀得懂，<em>寫得出來嗎？</em>",
+   "閱讀輸入、寫作輸出，兩者用的是同一批句型。讀到好句子就抄下來當模板——下面的寫作頁有四個能立刻用的骨架與免費範文。",
+   [("英文寫作怎麼練", "/english-writing-practice/"), ("主題字表總整理", "/english-vocabulary-by-topic/"),
+    ("KET 閱讀與寫作練習", "/ket-rw-practice-part1/"), ("英文聽力怎麼練", "/english-listening-practice/")]),
+ "english-speaking-practice": ("開口之後", "講得出來，<em>音準不準？</em>",
+   "口說的下一關是發音——不是要像母語者，是要讓人聽得懂。下面兩頁處理最影響理解的幾個音，都可以點著聽。",
+   [("英文發音完整指南", "/english-pronunciation/"), ("KK 音標表（可點聽）", "/kk-phonetic-chart/"),
+    ("英文聽力怎麼練", "/english-listening-practice/"), ("KET 口說練習（逐字稿）", "/ket-speaking-practice/")]),
+ "english-writing-practice": ("寫得完整之後", "句子對了，<em>字夠用嗎？</em>",
+   "寫作卡住常常不是文法，是想不到字。主題字表按情境分好，寫之前掃一眼就有材料；文法頁則處理時態與句型。",
+   [("主題字表總整理", "/english-vocabulary-by-topic/"), ("A2 文法指南", "/a2-grammar-guide/"),
+    ("英文書信怎麼寫", "/english-letter-writing-guide/"), ("英文閱讀怎麼練", "/english-reading-practice/")]),
  "thank-you-english": ("會道謝之後", "寫一張卡片，<em>其實是考題</em>",
    "感謝卡、生日卡、邀請訊息——這種 25 到 35 字的短訊息正是劍橋 KET 寫作 Part 6 的題型：讀完情境、回三件事。免費練習附範文逐句解析。",
    [("KET 寫作 Part 6 短訊息", "/ket-rw-practice-part6/"), ("生日快樂英文說法", "/happy-birthday-english/"),
