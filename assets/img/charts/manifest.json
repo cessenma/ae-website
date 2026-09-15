@@ -62,15 +62,6 @@
   "title": "字尾 -s 與 -ed 發音規則",
   "page": "english-pronunciation"
  },
- "numbers-1-100-chart": {
-  "slug": "numbers-1-100-chart",
-  "png": "/assets/img/charts/numbers-1-100-chart.png",
-  "w": 1200,
-  "h": 1853,
-  "alt": "英文數字1到100完整對照表，每個數字的英文拼法與中文對照",
-  "title": "英文數字 1-100 對照表",
-  "page": "numbers-1-100-english"
- },
  "months-english-chart": {
   "slug": "months-english-chart",
   "png": "/assets/img/charts/months-english-chart.png",
@@ -105,7 +96,7 @@
   "h": 1918,
   "alt": "水果英文對照表：47種水果的英文與中文，含芭樂蓮霧釋迦等台灣水果說法",
   "title": "水果英文對照表",
-  "page": "fruits-english"
+  "page": "fruits-english-vocabulary"
  },
  "body-parts-english-chart": {
   "slug": "body-parts-english-chart",
@@ -206,15 +197,6 @@
   "title": "英文序數對照表",
   "page": "ordinal-numbers-english"
  },
- "english-numbers-guide-chart": {
-  "slug": "english-numbers-guide-chart",
-  "png": "/assets/img/charts/english-numbers-guide-chart.png",
-  "w": 1400,
-  "h": 1998,
-  "alt": "英文數字用法對照表：大數字、小數、金額與電話號碼的英文唸法",
-  "title": "英文數字用法表",
-  "page": "english-numbers-guide"
- },
  "happy-birthday-chart": {
   "slug": "happy-birthday-chart",
   "png": "/assets/img/charts/happy-birthday-chart.png",
@@ -277,5 +259,14 @@
   "alt": "加油英文對照表：21種鼓勵說法依場合分組，含Good luck與Hang in there的差別",
   "title": "加油英文 21 種說法",
   "page": "cheer-up-english"
+ },
+ "english-numbers-chart": {
+  "slug": "english-numbers-chart",
+  "png": "/assets/img/charts/english-numbers-chart.png",
+  "w": 1200,
+  "h": 1853,
+  "alt": "英文數字1到100完整對照表，每個數字的英文拼法與中文對照",
+  "title": "英文數字 1-100 對照表",
+  "page": "english-numbers-guide"
  }
 }

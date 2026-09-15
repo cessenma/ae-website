@@ -23,7 +23,7 @@ bci = importlib.util.module_from_spec(spec); spec.loader.exec_module(bci)
 
 # slug -> (chart spec key, output filename, printed subtitle)
 PDFS = {
- "numbers-1-100-english":  ("numbers-1-100-chart",  "ae-numbers-1-100-a4.pdf",  "0 到 100 完整拼法對照"),
+ "english-numbers-guide":  ("numbers-1-100-chart",  "ae-numbers-1-100-a4.pdf",  "0 到 100 完整拼法對照"),
  "months-english":         ("months-english-chart", "ae-months-english-a4.pdf", "1-12 月英文、縮寫與天數"),
  "days-of-week-english":   ("days-week-english-chart","ae-days-of-week-a4.pdf", "星期英文、縮寫與口語說法"),
  "countries-english":      ("countries-english-chart","ae-countries-english-a4.pdf","80 國國名與國籍形容詞"),
@@ -120,7 +120,7 @@ def offer(page, title, sub, fname):
 # Topics that already have a printable from the earlier workbook set — link, don't rebuild.
 EXISTING = {
  "colors-english-vocabulary": ("顏色英文閃卡", "62 個顏色的中英對照與閃卡", "ae-colors-flashcards-a4.pdf"),
- "fruits-english": ("水果英文閃卡", "常見水果的中英對照與閃卡", "ae-fruits-flashcards-a4.pdf"),
+ "fruits-english-vocabulary": ("水果英文閃卡", "常見水果的中英對照與閃卡", "ae-fruits-flashcards-a4.pdf"),
  "animals-english-vocabulary": ("動物英文閃卡", "常見動物的中英對照與閃卡", "ae-animals-flashcards-a4.pdf"),
 }
 

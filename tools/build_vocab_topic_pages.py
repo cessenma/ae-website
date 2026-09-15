@@ -62,7 +62,7 @@ def cta(line):
 N  = DATA["numbers"]; M = DATA["months"]; D = DATA["days"]
 
 PAGES = {
-"numbers-1-100-english": dict(
+"english-numbers-guide": dict(
   target="英文數字", index=5.04,
   h1="英文數字 1-100 完整對照表：唸法、拼法與 13／30 的分辨方法",
   title="英文數字1-100對照表：唸法、拼法與13／30怎麼分｜埃森美語",
@@ -216,7 +216,7 @@ PAGES.update({
     + cta("顏色、水果、動物這些字，孩子背得起來卻用不出來，原因通常是從沒在句子裡講過。我們的課堂用實物和遊戲練，說出口的頻率比看字卡高得多。")),
   faq_n=6),
 
-"fruits-english": dict(
+"fruits-english-vocabulary": dict(
   target="水果英文", index=1.19,
   h1="水果英文對照表：47 種水果，含芭樂、蓮霧、釋迦等台灣水果說法",
   title="水果英文47種對照表：台灣水果的英文怎麼說｜埃森美語",
@@ -372,11 +372,11 @@ PAGES.update({
 })
 
 HUB_CARDS = [
- ("/numbers-1-100-english/", "英文數字 1-100", "0 到 100 完整拼法，附 13／30 的分辨方法", "101"),
+ ("/english-numbers-guide/", "英文數字 1-100", "0 到 100 完整拼法，附 13／30 的分辨方法", "101"),
  ("/months-english/", "月份英文 1-12", "月份、縮寫與天數，in／on 用法一次說清", "12"),
  ("/days-of-week-english/", "星期英文", "七天的縮寫、口語說法與 on Monday 的差別", "7"),
  ("/colors-english-vocabulary/", "顏色英文", "62 個顏色分五組，含深淺說法與拼法差異", "62"),
- ("/fruits-english/", "水果英文", "47 種水果，含芭樂、蓮霧、釋迦等台灣水果", "47"),
+ ("/fruits-english-vocabulary/", "水果英文", "47 種水果，含芭樂、蓮霧、釋迦等台灣水果", "47"),
  ("/body-parts-english/", "身體部位英文", "43 個部位，含 teeth／feet 不規則複數", "43"),
  ("/countries-english/", "國家英文", "80 國名稱與國籍形容詞，the 什麼時候加", "80"),
  ("/jobs-english/", "職業英文", "83 種工作，a／an 的選擇與問職業的說法", "83"),
@@ -592,6 +592,28 @@ PAGES["cheer-up-english"] = dict(
     + cta("鼓勵、安慰、道賀這種話，說不出口不是因為單字不夠，是因為沒在真實對話裡練過。我們的小班課每堂都要開口。")),
   faq_n=6)
 
+def collides(slug, target):
+    """Refuse to create a second page for a keyword the site already targets.
+
+    Twice in one session I built a page that duplicated an existing one that was
+    already ranking (/english-abbreviations/ vs /english-abbreviations-guide/ at
+    pos 8.2, /numbers-1-100-english/ vs /english-numbers-guide/ at 9,416 impressions).
+    Two pages on one term compete with each other, and the new URL has no history —
+    so the richer content belongs on the URL that already ranks.
+    """
+    import glob as _g
+    hits = []
+    for f in _g.glob(os.path.join(SITE, "*/index.html")):
+        other = os.path.basename(os.path.dirname(f))
+        if other == slug:
+            continue
+        head = open(f, encoding="utf-8").read()[:6000]
+        m = re.search(r"<title>(.*?)</title>", head, re.S)
+        if m and target and target in m.group(1):
+            hits.append(other)
+    return hits
+
+
 def render(slug, cfg):
     shell = open(SHELL, encoding="utf-8").read()
     url = f"{ORIGIN}/{slug}/"
@@ -658,6 +680,13 @@ if __name__ == "__main__":
     for s in want:
         if s not in PAGES:
             print(f"  ?? unknown {s}"); continue
+        clash = collides(s, PAGES[s].get("target", ""))
+        if clash:
+            print(f"  !! /{s}/ targets 「{PAGES[s]['target']}」 which these pages already "
+                  f"target: {', '.join('/'+c+'/' for c in clash)}")
+            print(f"     Check GSC impressions before proceeding — put the richer content on "
+                  f"whichever URL already ranks, do not create a competitor.")
+            continue
         r, w = render(s, PAGES[s])
         total_rows += r
         print(f"  /{s}/  {r:4d} rows  {w:5d} words   (pool index {PAGES[s]['index']})")

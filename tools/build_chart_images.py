@@ -68,7 +68,7 @@ SPECS = {
 }
 
 SPECS.update({
- "numbers-1-100-chart": dict(page="numbers-1-100-english", cols=4, max_rows=101,
+ "english-numbers-chart": dict(page="english-numbers-guide", cols=4, max_rows=101,
    title="英文數字 1-100 對照表", sub="0 到 100 ・ 英文拼法與中文對照",
    alt="英文數字1到100完整對照表，每個數字的英文拼法與中文對照",
    foot="可儲存列印｜americanenglish.com.tw"),
@@ -84,7 +84,7 @@ SPECS.update({
    title="顏色英文對照表", sub="62 個常用顏色 ・ 依色系分組",
    alt="顏色英文對照表：62個常用顏色的英文與中文對照，依色系分組",
    foot="可儲存列印｜americanenglish.com.tw"),
- "fruits-english-chart": dict(page="fruits-english", cols=2,
+ "fruits-english-chart": dict(page="fruits-english-vocabulary", cols=2,
    title="水果英文對照表", sub="47 種水果 ・ 含芭樂、蓮霧、釋迦等台灣水果",
    alt="水果英文對照表：47種水果的英文與中文，含芭樂蓮霧釋迦等台灣水果說法",
    foot="可儲存列印｜americanenglish.com.tw"),
@@ -138,10 +138,6 @@ SPECS.update({
  "ordinal-numbers-chart": dict(page="ordinal-numbers-english", width=1400,
    title="英文序數對照表", sub="first、second、third ・ 拼法與縮寫",
    alt="英文序數對照表：first second third 等序數的拼法、縮寫與基數對照",
-   foot="可儲存列印｜americanenglish.com.tw"),
- "english-numbers-guide-chart": dict(page="english-numbers-guide", width=1400,
-   title="英文數字用法表", sub="大數字、小數與金額的唸法",
-   alt="英文數字用法對照表：大數字、小數、金額與電話號碼的英文唸法",
    foot="可儲存列印｜americanenglish.com.tw"),
  "happy-birthday-chart": dict(page="happy-birthday-english", cols=2, width=1500,
    title="生日快樂英文祝福語", sub="生日卡片與訊息的英文說法",
