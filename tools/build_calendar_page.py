@@ -11,6 +11,7 @@ than no calendar at all.
   · a school that has not yet published next semester shows "尚未公布", not stale dates
 """
 import json, os, sys
+import sys
 from datetime import datetime, timezone, timedelta
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -128,6 +129,18 @@ def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     open(OUT, "w", encoding="utf-8").write(html)
     print(f"  wrote {OUT}")
+    # Apply the site chrome (critical CSS, GTM, header/nav, breadcrumb JSON-LD) right here.
+    # This template deliberately emits a bare <head>; seo_build.py owns those blocks. Before
+    # this call the weekly Action pushed the page WITHOUT them, so every Monday the live page
+    # lost its analytics and navigation until someone ran seo_build locally — and the two
+    # copies then collided on merge.
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import seo_build
+        rel, msg = seo_build.process_page(OUT, seo_build.css_fingerprint(), seo_build.critical_css())
+        print(f"  chrome: {msg}")
+    except Exception as e:   # never let a missing dependency stop the weekly check itself
+        print(f"  ::warning::chrome not applied ({type(e).__name__}: {e}); run tools/seo_build.py")
     print(f"  {len(d['schools'])} schools · {n_exam} 段考 entries · checked {checked}")
     return 0
 

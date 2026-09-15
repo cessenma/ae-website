@@ -30,6 +30,10 @@ jobs:
       - name: Install poppler (pdftotext)
         run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
 
+      - name: Install the page-chrome dependencies
+        # build_calendar_page.py now applies the site chrome via seo_build.py, which parses with bs4/lxml.
+        run: pip install -q beautifulsoup4 lxml
+
       - name: Fetch the generator scripts
         run: |
           # The generators live outside this repo on the author's machine, so keep a copy
