@@ -268,5 +268,77 @@
   "alt": "英文數字1到100完整對照表，每個數字的英文拼法與中文對照",
   "title": "英文數字 1-100 對照表",
   "page": "english-numbers-guide"
+ },
+ "a2-grammar-chart": {
+  "slug": "a2-grammar-chart",
+  "png": "/assets/img/charts/a2-grammar-chart.png",
+  "w": 1560,
+  "h": 2943,
+  "alt": "A2英文文法重點對照表：劍橋A2與KET程度的時態、句型與用法整理",
+  "title": "A2 文法重點表",
+  "page": "a2-grammar-guide"
+ },
+ "b1-grammar-chart": {
+  "slug": "b1-grammar-chart",
+  "png": "/assets/img/charts/b1-grammar-chart.png",
+  "w": 1560,
+  "h": 2453,
+  "alt": "B1英文文法重點對照表：劍橋B1與PET程度的時態、被動語態與關係子句整理",
+  "title": "B1 文法重點表",
+  "page": "b1-grammar-guide"
+ },
+ "b2-grammar-chart": {
+  "slug": "b2-grammar-chart",
+  "png": "/assets/img/charts/b2-grammar-chart.png",
+  "w": 1700,
+  "h": 3650,
+  "alt": "B2英文文法重點對照表：劍橋B2與FCE程度的進階時態、句型與用法整理",
+  "title": "B2 文法重點表",
+  "page": "b2-grammar-guide"
+ },
+ "prepositions-chart": {
+  "slug": "prepositions-chart",
+  "png": "/assets/img/charts/prepositions-chart.png",
+  "w": 1500,
+  "h": 1831,
+  "alt": "in on at 介系詞用法對照表：時間與地點的使用時機與例句整理",
+  "title": "in、on、at 用法對照表",
+  "page": "in-on-at-prepositions"
+ },
+ "conjunctions-chart": {
+  "slug": "conjunctions-chart",
+  "png": "/assets/img/charts/conjunctions-chart.png",
+  "w": 1440,
+  "h": 1569,
+  "alt": "英文連接詞對照表：and but because although 等連接詞的用法與例句",
+  "title": "英文連接詞對照表",
+  "page": "english-conjunctions-guide"
+ },
+ "comparatives-chart": {
+  "slug": "comparatives-chart",
+  "png": "/assets/img/charts/comparatives-chart.png",
+  "w": 1440,
+  "h": 1564,
+  "alt": "英文比較級與最高級對照表：-er -est 與 more most 規則及不規則變化",
+  "title": "英文比較級最高級表",
+  "page": "english-comparatives-guide"
+ },
+ "punctuation-chart": {
+  "slug": "punctuation-chart",
+  "png": "/assets/img/charts/punctuation-chart.png",
+  "w": 1440,
+  "h": 1077,
+  "alt": "英文標點符號對照表：逗號句號引號等符號的英文名稱與正確用法",
+  "title": "英文標點符號表",
+  "page": "english-punctuation-guide"
+ },
+ "kk-vs-phonics-chart": {
+  "slug": "kk-vs-phonics-chart",
+  "png": "/assets/img/charts/kk-vs-phonics-chart.png",
+  "w": 1440,
+  "h": 1240,
+  "alt": "KK音標與自然發音比較對照表：兩套系統的差別、適合年齡與使用時機",
+  "title": "KK 音標與自然發音比較表",
+  "page": "kk-phonetics-vs-phonics"
  }
 }
