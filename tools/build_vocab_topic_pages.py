@@ -79,7 +79,7 @@ PAGES = {
         "還有一個輔助線索：-teen 的尾音是清楚的 /n/，-ty 的尾音在美式英語裡常被唸成輕彈音，聽起來接近 /d/——thirty 聽起來像「thir-dee」。兩個線索一起用，幾乎不會錯。"), soft=True)
     + sec("拼字規則：連字號、不規則拼法與 hundred",
       prose("<strong>連字號只用在 21–99 之間的兩位數</strong>：twenty-one、fifty-six、ninety-nine。整十（twenty、thirty）和一百（one hundred）都不加。",
-        "<strong>四個不規則拼法要單獨記</strong>：four 有 u，但 forty <u>沒有</u> u（不是 fourty）；five 變 fifteen 和 fifty；nine 變 ninety（去掉 e）；eight 加 h 變 eighteen、eighty。",
+        "<strong>四個不規則拼法要單獨記</strong>：four 有 u，但 forty <em>沒有</em> u（不是 fourty）；five 變 fifteen 和 fifty；nine 變 ninety（去掉 e）；eight 加 h 變 eighteen、eighty。",
         "<strong>hundred 不加 s</strong>：two hundred 不是 two hundreds。只有在表示「數百個」這種模糊數量時才用複數：hundreds of people（好幾百人）。"))
     + sec("序數：first、second、third 怎麼用",
       prose("基數（cardinal）回答「幾個」，序數（ordinal）回答「第幾」。日期、樓層、名次、生日都用序數：<strong>May 5th</strong>、the <strong>3rd</strong> floor、he came <strong>2nd</strong>。",
@@ -186,17 +186,18 @@ PAGES = {
 PAGES.update({
 "colors-english-vocabulary": dict(
   target="顏色英文", index=1.28,
-  h1="顏色英文對照表：62 個常用顏色、深淺說法與 colour／color 的差別",
+  h1="顏色英文對照表：62 個常用顏色、深淺說法與 color／colour 的差別",
   title="顏色英文62個對照表：深淺說法、拼法差異與形容詞順序｜埃森美語",
-  desc="顏色英文完整對照表，收錄 62 個常用顏色與中文對照，分基本色、深淺、紅粉紫、黃橙棕與藍綠五組；並說明 colour 與 color 的拼法差別、light／dark 的用法，以及顏色在形容詞裡的正確位置。",
+  desc="顏色英文完整對照表，收錄 62 個常用顏色與中文對照，分基本色、深淺、紅粉紫、黃橙棕與藍綠五組；並說明 color 與 colour 的拼法差別、light／dark 的用法，以及顏色在形容詞裡的正確位置。",
   hero="顏色是孩子最早學會的一批英文單字，但大多數人停在十個基本色就沒再往下走。下面這份表收了 62 個，分成五組——先給表，再講三個真正會用到的規則。",
   body=lambda: (
     sec("顏色英文對照表（62 個）",
       prose("按色系分組，找起來比按字母快。深淺的說法在第二組，實際寫作最常用到。")
       + grouped([(g[0], [[w, z] for w, z in g[1]]) for g in DATA["colors"]], ["英文", "中文"]))
-    + sec("colour 還是 color？",
-      prose("<strong>color 是美式，colour 是英式</strong>，兩個都正確。同一組差異還有 grey（英）／gray（美）。",
-        "台灣的教科書與劍橋、全民英檢多採<strong>英式</strong>拼法，多益與美系教材則用美式。考試不會因為你用另一套而扣分，但<strong>同一篇文章裡必須一致</strong>——這才是真正會被扣分的地方。"), soft=True)
+    + sec("color 還是 colour？",
+      prose("<strong>color 是美式，colour 是英式</strong>，兩個都正確。同一組差異還有 gray（美）／grey（英）。",
+        "台灣的審定教科書（康軒、翰林、南一）採<strong>美式</strong>拼法，多益也是美式；劍橋與全民英檢兩種都接受。"
+        "我們教的是美式英語，所以本頁一律以美式拼法為主。考試不會因為你用另一套而扣分，但<strong>同一篇文章裡必須一致</strong>——這才是真正會被扣分的地方。"), soft=True)
     + sec("深淺怎麼說：light、dark 與 -ish",
       prose("<strong>light + 顏色</strong> = 淺（light blue 淺藍）；<strong>dark + 顏色</strong> = 深（dark green 深綠）。",
         "<strong>pale</strong> 比 light 更淡、偏無血色；<strong>bright</strong> 是鮮豔；<strong>deep</strong> 比 dark 更濃郁。",
@@ -206,9 +207,9 @@ PAGES.update({
         "所以是 <strong>a big old red wooden box</strong>，不是 a red old big wooden box。母語者不會背這個順序，但講錯會立刻聽出來。",
         "實務上很少同時用到五個形容詞，記住「<strong>顏色永遠緊貼在材質前面</strong>」就夠應付大部分句子。"), soft=True)
     + sec("顏色英文常見問題", faq([
-      ("colour 和 color 哪個對？", "都對。colour 是英式、color 是美式，grey／gray 同理。台灣教科書和劍橋考試偏英式，多益偏美式。重點是同一篇文章從頭到尾一致。"),
+      ("color 和 colour 哪個對？", "都對。color 是美式、colour 是英式，gray／grey 同理。台灣審定教科書與多益用美式，劍橋和全民英檢兩種都收。我們教美式，重點是同一篇文章從頭到尾一致。"),
       ("淺藍色的英文是什麼？", "light blue。更淡可以說 pale blue，天空那種藍是 sky blue，很淺的嬰兒藍是 baby blue。深藍則是 dark blue 或 navy。"),
-      ("顏色可以當名詞用嗎？", "可以。Red is my favourite colour（紅色是我最喜歡的顏色）裡 red 就是名詞。當形容詞時放在名詞前：a red car。"),
+      ("顏色可以當名詞用嗎？", "可以。Red is my favorite color（紅色是我最喜歡的顏色）裡 red 就是名詞。當形容詞時放在名詞前：a red car。"),
       ("金色銀色算顏色嗎？", "算，gold 和 silver 既是金屬也是顏色。它們同時可以當名詞和形容詞：a gold medal、painted silver。"),
       ("孩子幾歲學顏色最好？", "學齡前就可以，顏色是最容易「指著實物說」的一類字。建議直接在生活裡教——穿衣服、吃水果、玩積木時順口問一句，比看字卡有效得多。"),
       ("為什麼有些顏色要加 -ish？", "-ish 表示「大約、有點」，用在不確定或介於兩色之間時：reddish 偏紅、yellowish 偏黃。這個字尾也能用在其他形容詞上，像 tallish（有點高）。"),
@@ -392,7 +393,7 @@ def hub_page():
       f'<strong>{t}</strong><span class="hc-d">{d}</span></a>' for h, t, d, n in HUB_CARDS)
     return (
       sec("依主題挑一份字表",
-        prose("每一頁都是完整對照表，不是節錄；每個英文字旁邊的喇叭可以點開聽發音，"
+        prose("每一頁都是完整對照表，不是節錄；主題字表的每個英文字旁邊都有喇叭可以點開聽發音，"
               "表格也都有可以直接存下來或列印的圖片版。")
         + f'<div class="hubgrid reveal">{cards}</div>')
       + sec("背單字為什麼常常沒用",
@@ -449,9 +450,9 @@ PAGES["english-abbreviations-guide"] = dict(
                 ["縮寫", "中文意思", "英文全名／說明"]))
     + sec("e.g. 和 i.e. 到底差在哪",
       prose("這是英文縮寫裡最常用錯的一組，連母語者都會錯。",
-        "<strong>e.g. = for example（舉例）</strong>，後面接的是<u>其中幾個例子</u>，不是全部。<br>"
+        "<strong>e.g. = for example（舉例）</strong>，後面接的是<em>其中幾個例子</em>，不是全部。<br>"
         "<em>I like citrus fruits, e.g. oranges and lemons.</em>（還有其他柑橘類，只是舉兩個）",
-        "<strong>i.e. = that is（也就是說）</strong>，後面接的是<u>把前面說完整</u>，等於重講一次。<br>"
+        "<strong>i.e. = that is（也就是說）</strong>，後面接的是<em>把前面說完整</em>，等於重講一次。<br>"
         "<em>I like citrus fruits, i.e. oranges and lemons.</em>（我喜歡的柑橘類就只有這兩種）",
         "記法：<strong>e</strong>.g. 的 e 想成 <strong>e</strong>xample，<strong>i</strong>.e. 的 i 想成 <strong>i</strong>n other words。"
         "兩者在正式英文中後面都要加逗號，而且都保留句點。"), soft=True)
@@ -506,7 +507,7 @@ PAGES["english-abbreviations-guide"] = dict(
 PAGES["thank-you-english"] = dict(
   target="謝謝英文", index=2.16,
   h1="謝謝的英文怎麼說？30 種說法、回應方式與 Thank you for 的用法",
-  title="謝謝英文30種說法：從Thanks到I appreciate it，含回應方式｜埃森美語",
+  title="謝謝英文30種說法與回應方式｜埃森美語",
   desc="謝謝英文完整對照表：日常口語、正式書面、回應別人道謝的說法，共 30 種，每一句都標明適用場合；"
        "並說明 Thank you for 後面要接 -ing 還是名詞、You're welcome 之外還能怎麼回，以及 Thanks in advance 什麼時候別用。",
   hero="Thank you 大家都會，問題是<strong>只會這一句</strong>。英文裡道謝的輕重差別很細：對同學說 Thank you very much 會顯得客套，寫 email 只寫 Thanks 又太隨便。下面 30 種說法都標了適用場合，挑對比說多更重要。",
@@ -619,12 +620,21 @@ PAGES["english-listening-practice"] = dict(
             "<a href=\"/plural-s-past-ed-pronunciation/\">字尾 -s 與 -ed 練習</a>。",
             "<strong>三、字被黏在一起。</strong>母語者說 pick it up 聽起來像 pi-ki-tup。這不是說得快，是<strong>連音</strong>——"
             "規則整理在 <a href=\"/english-pronunciation/\">英文發音完整指南</a>。"))
+    + sec("聽起來像什麼、其實是什麼：12 個最常聽錯的地方",
+      prose("這些不是說話快，是母語者<strong>固定的省略與連音</strong>。認得它們之後，很多「聽不懂」會直接消失。")
+      + tbl([["wanna","want to","想要","I wanna go."],["gonna","going to","將要","It's gonna rain."],
+             ["gotta","got to / have got to","必須","I gotta go."],["lemme","let me","讓我","Lemme see."],
+             ["dunno","don't know","不知道","I dunno."],["kinda","kind of","有點","It's kinda cold."],
+             ["cuz / 'cause","because","因為","'Cause I'm tired."],["watcha","what are you / what do you","你在…","Watcha doing?"],
+             ["thir-TEEN","thirteen（重音在後）","13","She's thirteen."],["THIR-ty","thirty（重音在前）","30","She's thirty."],
+             ["can（弱讀 /kən/）","can","可以","I can /kən/ swim."],["CAN'T（重讀）","can't","不可以","I CAN'T swim."]],
+            ["聽起來像", "其實是", "意思", "例句"]))
     + sec("跟讀：唯一真正有效的練法",
       prose("<strong>跟讀（shadowing）</strong>是聽力訓練裡少數有明確證據的方法，做法簡單但細節決定成敗：",
             "<strong>1. 挑對材料。</strong>選你能聽懂七、八成的音檔。全聽不懂等於在聽噪音，全聽得懂則沒有訓練效果。",
             "<strong>2. 先不看逐字稿聽一遍。</strong>記下聽不出來的地方。",
             "<strong>3. 看著逐字稿再聽一遍。</strong>這一步會出現最多「啊原來它是這樣唸」的瞬間——那正是連音在哪裡發生。",
-            "<strong>4. 原速跟著唸。</strong>重點是模仿<u>節奏和語調</u>，不是把每個字咬清楚。唸不完整沒關係，跟上拍子最重要。",
+            "<strong>4. 原速跟著唸。</strong>重點是模仿<em>節奏和語調</em>，不是把每個字咬清楚。唸不完整沒關係，跟上拍子最重要。",
             "<strong>5. 最後再裸聽一次。</strong>檢查剛才聽不出來的地方現在聽不聽得到。",
             "每天一段五分鐘，勝過週末一次半小時。聽力是靠接觸頻率長出來的。"), soft=True)
     + sec("依程度分級的免費聽力練習（27 頁）",
@@ -677,6 +687,16 @@ PAGES["english-reading-practice"] = dict(
             "<em>-ful</em>（充滿）。認得幾十個字根，生字量會直接減半。",
             "<strong>三、詞性。</strong>就算不知道意思，從位置也能判斷它是名詞、動詞還是形容詞——"
             "光是這個就常常足以答對題目。"), soft=True)
+    + sec("認得這 14 個字首字尾，生字量直接減半",
+      prose("英文單字有一大半是「字首＋字根＋字尾」拼出來的。不用背字根，先認得最常見的字首字尾就夠用。")
+      + tbl([["un-","不、相反","unhappy, unable, unlock"],["re-","再、回","redo, return, rewrite"],
+             ["pre-","之前","preview, prepay, preschool"],["dis-","不、相反","dislike, disagree, disappear"],
+             ["mis-","錯誤地","mistake, misread, misunderstand"],["im- / in-","不","impossible, incorrect, informal"],
+             ["over-","過度","overeat, oversleep, overweight"],["-ful","充滿…的","helpful, careful, beautiful"],
+             ["-less","沒有…的","careless, useless, homeless"],["-er / -or","做…的人","teacher, worker, actor"],
+             ["-tion / -sion","（動詞變名詞）","action, decision, education"],["-ly","（形容詞變副詞）","quickly, slowly, carefully"],
+             ["-able","能夠…的","readable, comfortable, washable"],["-ment","（動詞變名詞）","movement, agreement, payment"]],
+            ["字首／字尾", "意思", "例字"]))
     + sec("略讀與尋讀：考試時真正在用的兩種讀法",
       prose("<strong>略讀（skimming）</strong>是快速看過抓大意——先看標題、每段第一句和最後一句。"
             "用在「這篇在講什麼」這類題目。",
@@ -733,6 +753,19 @@ PAGES["english-speaking-practice"] = dict(
             "速度太快、字尾吞掉、同一個連接詞用了五次。孩子聽自己的錄音，比大人糾正十次更有用。",
             "<strong>三、跟讀逐字稿。</strong>拿一段有逐字稿的對話，原速跟著唸，模仿節奏和語調。"
             "這同時練到發音、連音與流暢度——做法和聽力的跟讀相同，只是重點放在產出。"), soft=True)
+    + sec("十個馬上能開口的句型",
+      prose("母語者講話靠的是成組的固定說法。這十個句型能撐起大部分日常對話與劍橋口說 Part 1 的題目，先練到不用想。")
+      + tbl([["My name is … and I'm … years old.","自我介紹","My name is Amy and I'm ten years old."],
+             ["I like … because …","說喜好＋理由","I like dogs because they're friendly."],
+             ["I don't really like …","說不喜歡（委婉）","I don't really like math."],
+             ["My favorite … is …","最喜歡的","My favorite subject is art."],
+             ["I usually … on …","說習慣","I usually play basketball on Saturdays."],
+             ["Yesterday I … / Last weekend I …","說過去的事","Yesterday I went to the park."],
+             ["I'm going to … / I want to …","說計畫","I'm going to visit my grandma."],
+             ["There is / There are …","描述場景（口說看圖題）","There are three children in the picture."],
+             ["I think … is better because …","比較與意見","I think summer is better because we can swim."],
+             ["Can you say that again, please?","沒聽懂時（比沉默好一百倍）","Sorry, can you say that again, please?"]],
+            ["句型", "用途", "例句"]))
     + sec("劍橋各級口說考什麼（附完整逐字稿）",
       prose("六場練習都附<strong>整場對話的逐字稿與中文對照</strong>，可以直接當跟讀材料用，也能看出各級的難度差在哪。")
       + practice_cards([
@@ -783,6 +816,15 @@ PAGES["english-writing-practice"] = dict(
             "四個骨架就能撐起一段完整的短文。先練到不用想就寫得出來，再往上加。",
             "寫完之後<strong>逐句檢查三件事</strong>：每句有沒有主詞和動詞、時態對不對、單複數對不對。"
             "這三樣佔了台灣學生作文扣分的絕大多數。"), soft=True)
+    + sec("連接詞對照表：讓句子接起來的 16 個字",
+      prose("短文和短訊息的差別在句子之間有沒有「接頭」。這 16 個連接詞依功能分好，寫的時候照功能挑。")
+      + tbl([["並列","and / also / as well","I like tea and coffee."],["對比","but / however / although","It was cold, but we went out."],
+             ["原因","because / since / as","I stayed home because it rained."],["結果","so / therefore / as a result","It rained, so we stayed home."],
+             ["舉例","for example / such as","I like fruit, such as apples."],["順序","first / then / after that / finally","First, mix the eggs. Then add milk."],
+             ["補充","in addition / besides","In addition, the food was great."],["條件","if / unless","If it rains, we'll stay in."],
+             ["目的","so that / in order to","I study hard so that I can pass."],["時間","when / while / before / after","Call me when you arrive."],
+             ["讓步","even though / despite","Even though it was late, we stayed."],["總結","in short / all in all / to sum up","All in all, it was a great trip."]],
+            ["功能", "連接詞", "例句"]))
     + sec("短訊息和短文：兩種不同的題型",
       prose("<strong>短訊息（25–35 字）</strong>是劍橋 KET 寫作 Part 6 的題型：讀完一個情境，回覆三件指定的事。"
             "評分看的是<strong>三件事有沒有都回到</strong>，不是文采。寫之前先把三點列出來，一點一句，寫完數一遍。",

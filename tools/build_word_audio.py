@@ -141,11 +141,12 @@ def mark_up(page, have):
                 cell.append(btn)
                 n += 1
     out = normalize(str(soup))
-    if "AE:AUDIO" not in out:
+    out = re.sub(r"\n?<!-- AE:AUDIO start -->.*?<!-- AE:AUDIO end -->", "", out, flags=re.S)
+    if True:
         out = out.replace("</main>", "</main>\n<!-- AE:AUDIO start -->\n"
             '<script>(function(){var a=null;document.addEventListener("click",function(e){'
             'var b=e.target.closest(".say");if(!b)return;e.preventDefault();'
-            'if(a){a.pause();}a=new Audio(b.dataset.w);a.play().catch(function(){});'
+            'if(a){a.pause();}a=new Audio(b.dataset.w);a.play().catch(function(){});if(window.gtag){gtag("event","word_audio_play",{word:(b.dataset.w||"").split("/").pop().replace(".mp3",""),page_path:location.pathname});}'
             'b.classList.add("playing");a.onended=function(){b.classList.remove("playing")};'
             '});})();</script>\n<!-- AE:AUDIO end -->', 1)
     open(fp, "w", encoding="utf-8").write(out)

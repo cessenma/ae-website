@@ -669,7 +669,7 @@
      "白色"
     ],
     [
-     "grey／gray",
+     "gray／grey",
      "灰色"
     ],
     [
@@ -1347,7 +1347,7 @@
      "治療師"
     ],
     [
-     "counsellor",
+     "counselor",
      "諮商師"
     ]
    ]
@@ -1682,8 +1682,8 @@
      "Japanese"
     ],
     [
-     "Korea",
-     "韓國",
+     "South Korea",
+     "韓國（南韓）",
      "Korean"
     ],
     [
@@ -2446,12 +2446,12 @@
     [
      "cm / mm / km",
      "公分／公釐／公里",
-     "centimetre／millimetre／kilometre"
+     "centimeter／millimeter／kilometer"
     ],
     [
      "ml / L",
      "毫升／公升",
-     "millilitre／litre"
+     "milliliter／liter"
     ],
     [
      "ft / in",

@@ -97,11 +97,10 @@ def build(page, chart_key, fname, sub):
     print(f"  {fname}  {kb:.0f}KB")
     return fname
 
-MAGNET = ('<div class="magnet-box reveal">\n'
- '  <p><strong>📄 免費下載：{title}（A4 列印版）</strong><br>{sub}'
- '——直接下載，印出來貼在書桌前，每天看一眼比坐下來背一次有用。</p>\n'
- '  <a class="btn btn-primary" download href="/assets/downloads/{fname}">免費下載 PDF</a>\n'
- '</div>')
+MAGNET = """<div class="magnet-box reveal">
+  <p><strong>📄 免費下載：{title}（A4 列印版）</strong><br>{sub}——直接下載，印出來貼在書桌前，每天看一眼比坐下來背一次有用。</p>
+  <a class="btn btn-primary" download href="/assets/downloads/{fname}" onclick="window.gtag&amp;&amp;gtag('event','pdf_download',{{file:'{fname}',page_path:location.pathname}})">免費下載 PDF</a>
+</div>"""
 
 def offer(page, title, sub, fname):
     fp = os.path.join(SITE, page, "index.html")

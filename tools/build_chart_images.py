@@ -202,6 +202,23 @@ SPECS.update({
    title="KK 音標與自然發音比較表", sub="兩套系統差在哪 ・ 什麼時候學哪一個",
    alt="KK音標與自然發音比較對照表：兩套系統的差別、適合年齡與使用時機",
    foot="可儲存列印｜americanenglish.com.tw"),
+
+ "listening-traps-chart": dict(page="english-listening-practice", width=1440,
+   title="英文聽力：聽起來像什麼、其實是什麼", sub="12 個最常聽錯的連音與弱讀",
+   alt="英文聽力常見連音弱讀對照表：wanna gonna gotta 等12個聽起來像什麼其實是什麼",
+   foot="可儲存列印｜americanenglish.com.tw"),
+ "prefix-suffix-chart": dict(page="english-reading-practice", width=1440,
+   title="英文字首字尾對照表", sub="14 個最常見的字首與字尾 ・ 意思與例字",
+   alt="英文字首字尾對照表：un- re- pre- -ful -less -tion 等14個常見字首字尾的意思與例字",
+   foot="可儲存列印｜americanenglish.com.tw"),
+ "speaking-frames-chart": dict(page="english-speaking-practice", width=1440,
+   title="英文口說十個開口句型", sub="自我介紹、喜好、習慣、計畫 ・ 附例句",
+   alt="英文口說十個基本句型對照表：自我介紹喜好習慣計畫的固定說法與例句",
+   foot="可儲存列印｜americanenglish.com.tw"),
+ "connectors-chart": dict(page="english-writing-practice", width=1440,
+   title="英文連接詞功能對照表", sub="並列、對比、原因、結果、舉例 ・ 16 個連接詞",
+   alt="英文寫作連接詞對照表：依並列對比原因結果舉例等功能分類的16個連接詞與例句",
+   foot="可儲存列印｜americanenglish.com.tw"),
 })
 
 CSS = """
@@ -345,6 +362,7 @@ def build(slug, spec):
 </div></div></body></html>"""
     os.makedirs(OUT, exist_ok=True)
     png = os.path.join(OUT, slug + ".png")
+    webp = os.path.join(OUT, slug + ".webp")
     from playwright.sync_api import sync_playwright
     with sync_playwright() as pw:
         b = pw.chromium.launch()
@@ -354,12 +372,13 @@ def build(slug, spec):
         pg.locator(".card").screenshot(path=png)
         b.close()
     h = 0
-    try:
-        from PIL import Image
-        with Image.open(png) as im: w, h = im.size
-    except Exception: w = W
-    print(f"  {slug}.png  {w}x{h}  ({len(groups)} tables)")
-    return dict(slug=slug, png=f"/assets/img/charts/{slug}.png", w=w, h=h,
+    from PIL import Image
+    with Image.open(png) as im:
+        w, h = im.size
+        im.save(webp, "WEBP", lossless=True, quality=100, method=6)
+    os.remove(png)                       # the PNG was only the render step
+    print(f"  {slug}.webp  {w}x{h}  {os.path.getsize(webp)//1024}KB  ({len(groups)} tables)")
+    return dict(slug=slug, png=f"/assets/img/charts/{slug}.webp", w=w, h=h,
                 alt=spec["alt"], title=spec["title"], page=spec["page"])
 
 FIG_CSS_HOOK = "chart-fig"
@@ -378,7 +397,7 @@ def inject(rec):
           "caption": rec["alt"], "name": rec["title"],
           "creditText": "American English 埃森美語",
           "creator": {"@type": "Organization", "name": "American English 埃森美語"},
-          "license": ORIGIN + "/", "acquireLicensePage": ORIGIN + f'/{rec["page"]}/'}
+          "license": ORIGIN + "/chart-license/", "acquireLicensePage": ORIGIN + "/chart-license/"}
     block = (f'{startm}\n'
              f'<figure class="{FIG_CSS_HOOK}">\n'
              f'  <img src="{rec["png"]}" width="{rec["w"]}" height="{rec["h"]}"\n'

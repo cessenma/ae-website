@@ -1,7 +1,7 @@
 {
  "kk-phonetic-chart-full": {
   "slug": "kk-phonetic-chart-full",
-  "png": "/assets/img/charts/kk-phonetic-chart-full.png",
+  "png": "/assets/img/charts/kk-phonetic-chart-full.webp",
   "w": 1200,
   "h": 1240,
   "alt": "KK音標表完整對照：母音17個與子音24個共41個符號，附例字與有聲無聲配對",
@@ -10,7 +10,7 @@
  },
  "phonics-rules-chart-full": {
   "slug": "phonics-rules-chart-full",
-  "png": "/assets/img/charts/phonics-rules-chart-full.png",
+  "png": "/assets/img/charts/phonics-rules-chart-full.webp",
   "w": 1200,
   "h": 1014,
   "alt": "自然發音規則總表：字母音、短母音、長母音與母音組合的完整對照表",
@@ -19,7 +19,7 @@
  },
  "moe-1200-words-categories": {
   "slug": "moe-1200-words-categories",
-  "png": "/assets/img/charts/moe-1200-words-categories.png",
+  "png": "/assets/img/charts/moe-1200-words-categories.webp",
   "w": 1200,
   "h": 2112,
   "alt": "教育部國小英文1200單字分類表，依主題整理的必備單字對照",
@@ -28,7 +28,7 @@
  },
  "animals-english-table": {
   "slug": "animals-english-table",
-  "png": "/assets/img/charts/animals-english-table.png",
+  "png": "/assets/img/charts/animals-english-table.webp",
   "w": 1200,
   "h": 1991,
   "alt": "動物英文對照表：常見動物的英文名稱與中文對照，附KK音標",
@@ -37,7 +37,7 @@
  },
  "english-vowels-chart": {
   "slug": "english-vowels-chart",
-  "png": "/assets/img/charts/english-vowels-chart.png",
+  "png": "/assets/img/charts/english-vowels-chart.webp",
   "w": 1200,
   "h": 1508,
   "alt": "英文母音發音表：17個母音的音標、例字與嘴型提示，含短母音長母音與雙母音",
@@ -46,7 +46,7 @@
  },
  "english-consonants-chart": {
   "slug": "english-consonants-chart",
-  "png": "/assets/img/charts/english-consonants-chart.png",
+  "png": "/assets/img/charts/english-consonants-chart.webp",
   "w": 1200,
   "h": 855,
   "alt": "英文子音發音表：24個子音的有聲無聲配對、例字與發音位置對照",
@@ -55,7 +55,7 @@
  },
  "english-ending-sounds-chart": {
   "slug": "english-ending-sounds-chart",
-  "png": "/assets/img/charts/english-ending-sounds-chart.png",
+  "png": "/assets/img/charts/english-ending-sounds-chart.webp",
   "w": 1200,
   "h": 784,
   "alt": "英文字尾-s與-ed發音規則表：三種唸法與判斷方式，附例字",
@@ -64,7 +64,7 @@
  },
  "months-english-chart": {
   "slug": "months-english-chart",
-  "png": "/assets/img/charts/months-english-chart.png",
+  "png": "/assets/img/charts/months-english-chart.webp",
   "w": 1200,
   "h": 1026,
   "alt": "1到12月份英文對照表，含月份英文、中文、縮寫與每月天數",
@@ -73,7 +73,7 @@
  },
  "days-week-english-chart": {
   "slug": "days-week-english-chart",
-  "png": "/assets/img/charts/days-week-english-chart.png",
+  "png": "/assets/img/charts/days-week-english-chart.webp",
   "w": 1200,
   "h": 776,
   "alt": "星期英文對照表：星期一到星期日的英文、中文、縮寫與口語說法",
@@ -82,7 +82,7 @@
  },
  "colors-english-chart": {
   "slug": "colors-english-chart",
-  "png": "/assets/img/charts/colors-english-chart.png",
+  "png": "/assets/img/charts/colors-english-chart.webp",
   "w": 1500,
   "h": 1766,
   "alt": "顏色英文對照表：62個常用顏色的英文與中文對照，依色系分組",
@@ -91,7 +91,7 @@
  },
  "fruits-english-chart": {
   "slug": "fruits-english-chart",
-  "png": "/assets/img/charts/fruits-english-chart.png",
+  "png": "/assets/img/charts/fruits-english-chart.webp",
   "w": 1200,
   "h": 1918,
   "alt": "水果英文對照表：47種水果的英文與中文，含芭樂蓮霧釋迦等台灣水果說法",
@@ -100,7 +100,7 @@
  },
  "body-parts-english-chart": {
   "slug": "body-parts-english-chart",
-  "png": "/assets/img/charts/body-parts-english-chart.png",
+  "png": "/assets/img/charts/body-parts-english-chart.webp",
   "w": 1200,
   "h": 1889,
   "alt": "身體部位英文對照表：43個身體部位的英文與中文，分頭臉上半身下半身與體內",
@@ -109,7 +109,7 @@
  },
  "countries-english-chart": {
   "slug": "countries-english-chart",
-  "png": "/assets/img/charts/countries-english-chart.png",
+  "png": "/assets/img/charts/countries-english-chart.webp",
   "w": 1560,
   "h": 3036,
   "alt": "國家英文對照表：80個國家的英文名稱、中文與國籍形容詞對照",
@@ -118,7 +118,7 @@
  },
  "jobs-english-chart": {
   "slug": "jobs-english-chart",
-  "png": "/assets/img/charts/jobs-english-chart.png",
+  "png": "/assets/img/charts/jobs-english-chart.webp",
   "w": 1560,
   "h": 2226,
   "alt": "職業英文對照表：83種常見工作的英文與中文對照，依領域分組",
@@ -127,7 +127,7 @@
  },
  "english-abbreviations-chart": {
   "slug": "english-abbreviations-chart",
-  "png": "/assets/img/charts/english-abbreviations-chart.png",
+  "png": "/assets/img/charts/english-abbreviations-chart.webp",
   "w": 1680,
   "h": 2435,
   "alt": "英文縮寫對照表：74個常用英文縮寫的中文意思與英文全名，含e.g.、i.e.、ASAP、FYI",
@@ -136,7 +136,7 @@
  },
  "english-names-boys-chart": {
   "slug": "english-names-boys-chart",
-  "png": "/assets/img/charts/english-names-boys-chart.png",
+  "png": "/assets/img/charts/english-names-boys-chart.webp",
   "w": 1680,
   "h": 3025,
   "alt": "男生英文名字對照表：常用英文名的唸法提示與名字來源，附中文說明",
@@ -145,7 +145,7 @@
  },
  "english-names-girls-chart": {
   "slug": "english-names-girls-chart",
-  "png": "/assets/img/charts/english-names-girls-chart.png",
+  "png": "/assets/img/charts/english-names-girls-chart.webp",
   "w": 1680,
   "h": 2738,
   "alt": "女生英文名字對照表：常用英文名的唸法提示與名字來源，附中文說明",
@@ -154,7 +154,7 @@
  },
  "english-dates-chart": {
   "slug": "english-dates-chart",
-  "png": "/assets/img/charts/english-dates-chart.png",
+  "png": "/assets/img/charts/english-dates-chart.webp",
   "w": 1400,
   "h": 2007,
   "alt": "英文日期對照表：1到31日的英文序數寫法、縮寫與唸法，含月份縮寫",
@@ -163,7 +163,7 @@
  },
  "english-vowels-consonants-chart": {
   "slug": "english-vowels-consonants-chart",
-  "png": "/assets/img/charts/english-vowels-consonants-chart.png",
+  "png": "/assets/img/charts/english-vowels-consonants-chart.webp",
   "w": 1400,
   "h": 2028,
   "alt": "英文母音與子音對照表：音標符號、例字與發音方式，含字母與音標對照",
@@ -172,7 +172,7 @@
  },
  "english-symbol-names-chart": {
   "slug": "english-symbol-names-chart",
-  "png": "/assets/img/charts/english-symbol-names-chart.png",
+  "png": "/assets/img/charts/english-symbol-names-chart.webp",
   "w": 1680,
   "h": 2515,
   "alt": "英文符號名稱對照表：鍵盤與標點符號的英文名稱與唸法，含@、#、&等",
@@ -181,7 +181,7 @@
  },
  "english-alphabet-chart": {
   "slug": "english-alphabet-chart",
-  "png": "/assets/img/charts/english-alphabet-chart.png",
+  "png": "/assets/img/charts/english-alphabet-chart.webp",
   "w": 1300,
   "h": 2045,
   "alt": "英文字母表：26個字母的大小寫、名稱唸法與字母音對照",
@@ -190,7 +190,7 @@
  },
  "ordinal-numbers-chart": {
   "slug": "ordinal-numbers-chart",
-  "png": "/assets/img/charts/ordinal-numbers-chart.png",
+  "png": "/assets/img/charts/ordinal-numbers-chart.webp",
   "w": 1400,
   "h": 2551,
   "alt": "英文序數對照表：first second third 等序數的拼法、縮寫與基數對照",
@@ -199,7 +199,7 @@
  },
  "happy-birthday-chart": {
   "slug": "happy-birthday-chart",
-  "png": "/assets/img/charts/happy-birthday-chart.png",
+  "png": "/assets/img/charts/happy-birthday-chart.webp",
   "w": 1500,
   "h": 2313,
   "alt": "生日快樂英文祝福語對照表：生日卡片與訊息常用的英文說法與中文對照",
@@ -208,7 +208,7 @@
  },
  "mid-autumn-chart": {
   "slug": "mid-autumn-chart",
-  "png": "/assets/img/charts/mid-autumn-chart.png",
+  "png": "/assets/img/charts/mid-autumn-chart.webp",
   "w": 1500,
   "h": 2380,
   "alt": "中秋節英文對照表：月餅、賞月、烤肉、文旦等中秋節相關英文單字與句子",
@@ -217,7 +217,7 @@
  },
  "english-capitalization-chart": {
   "slug": "english-capitalization-chart",
-  "png": "/assets/img/charts/english-capitalization-chart.png",
+  "png": "/assets/img/charts/english-capitalization-chart.webp",
   "w": 1400,
   "h": 2572,
   "alt": "英文大寫規則對照表：專有名詞、月份星期、標題等何時要大寫的規則與例句",
@@ -226,7 +226,7 @@
  },
  "be-verbs-chart": {
   "slug": "be-verbs-chart",
-  "png": "/assets/img/charts/be-verbs-chart.png",
+  "png": "/assets/img/charts/be-verbs-chart.webp",
   "w": 1440,
   "h": 2745,
   "alt": "be動詞用法對照表：am is are was were 的人稱與時態對照，附例句",
@@ -235,7 +235,7 @@
  },
  "irregular-verbs-chart": {
   "slug": "irregular-verbs-chart",
-  "png": "/assets/img/charts/irregular-verbs-chart.png",
+  "png": "/assets/img/charts/irregular-verbs-chart.webp",
   "w": 1700,
   "h": 3051,
   "alt": "不規則動詞三態表：70個常用動詞的原形、過去式與過去分詞對照，附中文",
@@ -244,7 +244,7 @@
  },
  "thank-you-english-chart": {
   "slug": "thank-you-english-chart",
-  "png": "/assets/img/charts/thank-you-english-chart.png",
+  "png": "/assets/img/charts/thank-you-english-chart.webp",
   "w": 1400,
   "h": 2289,
   "alt": "謝謝英文對照表：30種道謝說法與回應方式，標明每一句的適用場合",
@@ -253,7 +253,7 @@
  },
  "cheer-up-english-chart": {
   "slug": "cheer-up-english-chart",
-  "png": "/assets/img/charts/cheer-up-english-chart.png",
+  "png": "/assets/img/charts/cheer-up-english-chart.webp",
   "w": 1400,
   "h": 1841,
   "alt": "加油英文對照表：21種鼓勵說法依場合分組，含Good luck與Hang in there的差別",
@@ -262,7 +262,7 @@
  },
  "english-numbers-chart": {
   "slug": "english-numbers-chart",
-  "png": "/assets/img/charts/english-numbers-chart.png",
+  "png": "/assets/img/charts/english-numbers-chart.webp",
   "w": 1200,
   "h": 1853,
   "alt": "英文數字1到100完整對照表，每個數字的英文拼法與中文對照",
@@ -271,7 +271,7 @@
  },
  "a2-grammar-chart": {
   "slug": "a2-grammar-chart",
-  "png": "/assets/img/charts/a2-grammar-chart.png",
+  "png": "/assets/img/charts/a2-grammar-chart.webp",
   "w": 1560,
   "h": 2943,
   "alt": "A2英文文法重點對照表：劍橋A2與KET程度的時態、句型與用法整理",
@@ -280,7 +280,7 @@
  },
  "b1-grammar-chart": {
   "slug": "b1-grammar-chart",
-  "png": "/assets/img/charts/b1-grammar-chart.png",
+  "png": "/assets/img/charts/b1-grammar-chart.webp",
   "w": 1560,
   "h": 2453,
   "alt": "B1英文文法重點對照表：劍橋B1與PET程度的時態、被動語態與關係子句整理",
@@ -289,7 +289,7 @@
  },
  "b2-grammar-chart": {
   "slug": "b2-grammar-chart",
-  "png": "/assets/img/charts/b2-grammar-chart.png",
+  "png": "/assets/img/charts/b2-grammar-chart.webp",
   "w": 1700,
   "h": 3650,
   "alt": "B2英文文法重點對照表：劍橋B2與FCE程度的進階時態、句型與用法整理",
@@ -298,7 +298,7 @@
  },
  "prepositions-chart": {
   "slug": "prepositions-chart",
-  "png": "/assets/img/charts/prepositions-chart.png",
+  "png": "/assets/img/charts/prepositions-chart.webp",
   "w": 1500,
   "h": 1831,
   "alt": "in on at 介系詞用法對照表：時間與地點的使用時機與例句整理",
@@ -307,7 +307,7 @@
  },
  "conjunctions-chart": {
   "slug": "conjunctions-chart",
-  "png": "/assets/img/charts/conjunctions-chart.png",
+  "png": "/assets/img/charts/conjunctions-chart.webp",
   "w": 1440,
   "h": 1569,
   "alt": "英文連接詞對照表：and but because although 等連接詞的用法與例句",
@@ -316,7 +316,7 @@
  },
  "comparatives-chart": {
   "slug": "comparatives-chart",
-  "png": "/assets/img/charts/comparatives-chart.png",
+  "png": "/assets/img/charts/comparatives-chart.webp",
   "w": 1440,
   "h": 1564,
   "alt": "英文比較級與最高級對照表：-er -est 與 more most 規則及不規則變化",
@@ -325,7 +325,7 @@
  },
  "punctuation-chart": {
   "slug": "punctuation-chart",
-  "png": "/assets/img/charts/punctuation-chart.png",
+  "png": "/assets/img/charts/punctuation-chart.webp",
   "w": 1440,
   "h": 1077,
   "alt": "英文標點符號對照表：逗號句號引號等符號的英文名稱與正確用法",
@@ -334,11 +334,47 @@
  },
  "kk-vs-phonics-chart": {
   "slug": "kk-vs-phonics-chart",
-  "png": "/assets/img/charts/kk-vs-phonics-chart.png",
+  "png": "/assets/img/charts/kk-vs-phonics-chart.webp",
   "w": 1440,
   "h": 1240,
   "alt": "KK音標與自然發音比較對照表：兩套系統的差別、適合年齡與使用時機",
   "title": "KK 音標與自然發音比較表",
   "page": "kk-phonetics-vs-phonics"
+ },
+ "listening-traps-chart": {
+  "slug": "listening-traps-chart",
+  "png": "/assets/img/charts/listening-traps-chart.webp",
+  "w": 1440,
+  "h": 1026,
+  "alt": "英文聽力常見連音弱讀對照表：wanna gonna gotta 等12個聽起來像什麼其實是什麼",
+  "title": "英文聽力：聽起來像什麼、其實是什麼",
+  "page": "english-listening-practice"
+ },
+ "prefix-suffix-chart": {
+  "slug": "prefix-suffix-chart",
+  "png": "/assets/img/charts/prefix-suffix-chart.webp",
+  "w": 1440,
+  "h": 1126,
+  "alt": "英文字首字尾對照表：un- re- pre- -ful -less -tion 等14個常見字首字尾的意思與例字",
+  "title": "英文字首字尾對照表",
+  "page": "english-reading-practice"
+ },
+ "speaking-frames-chart": {
+  "slug": "speaking-frames-chart",
+  "png": "/assets/img/charts/speaking-frames-chart.webp",
+  "w": 1440,
+  "h": 953,
+  "alt": "英文口說十個基本句型對照表：自我介紹喜好習慣計畫的固定說法與例句",
+  "title": "英文口說十個開口句型",
+  "page": "english-speaking-practice"
+ },
+ "connectors-chart": {
+  "slug": "connectors-chart",
+  "png": "/assets/img/charts/connectors-chart.webp",
+  "w": 1440,
+  "h": 1026,
+  "alt": "英文寫作連接詞對照表：依並列對比原因結果舉例等功能分類的16個連接詞與例句",
+  "title": "英文連接詞功能對照表",
+  "page": "english-writing-practice"
  }
 }
