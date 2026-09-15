@@ -471,8 +471,13 @@ PAGES["english-abbreviations-guide"] = dict(
         "完整表在 <a href=\"/days-of-week-english/\">星期英文</a>。<br>"
         "<strong>單位</strong>一律不加句點也不加複數 s：5 kg（不是 5 kgs.）、10 cm、3 L。這是國際單位制的規定。",
         "名字縮寫（initials）則是取每個名字的第一個字母大寫加句點：John Ronald Reuel Tolkien → <strong>J. R. R. Tolkien</strong>。"), soft=True)
-    + sec("NASA 唸成單字、FBI 唸字母——怎麼判斷",
-      prose("首字母縮寫有兩種唸法，分界不是規則而是<strong>能不能唸得出來</strong>：",
+    + sec("英文縮寫有三種：Abbreviation、Acronym、Initialism",
+      prose("英文把「縮寫」分成三類，差別在<strong>怎麼組成、怎麼唸</strong>。分得清楚，就知道該不該加句點、該唸成字還是逐字母唸。")
+      + tbl([["Abbreviation（截短縮寫）","把一個字截短，字尾通常加句點","照原字唸","Dr.（Doctor）、Jan.（January）、etc.（et cetera）"],
+             ["Acronym（首字母組合詞）","取每個字的首字母，組成能發音的新字","當成一個字唸","NASA、UNESCO、laser、scuba"],
+             ["Initialism（首字母縮略詞）","取每個字的首字母，但拼不出音節","一個字母一個字母唸","FBI、CEO、DIY、ATM、FYI"]],
+            ["類型", "怎麼組成", "怎麼唸", "例子"])
+      + prose("後兩類都是「首字母縮寫」，分界不是規則而是<strong>能不能唸得出來</strong>：",
         "<strong>拼得出音節的唸成一個字</strong>（acronym）：NASA /ˈnæsə/、NATO /ˈneɪtoʊ/、"
         "UNESCO、ASAP（也有人逐字母唸）、SCUBA、laser——這些字母組合剛好構成可發音的音節。<br>"
         "<strong>拼不出音節的逐字母唸</strong>（initialism）：FBI /ˌɛf biː ˈaɪ/、CEO、DIY、ATM、USB、"
@@ -498,6 +503,12 @@ PAGES["english-abbreviations-guide"] = dict(
         "純社交用語。真正的分界是對象，不是縮寫本身。"),
       ("名字縮寫怎麼寫？", "取每個名字的第一個字母大寫加句點，中間空一格：J. R. R. Tolkien。"
         "台灣的護照英文姓名若要縮寫，一般保留姓氏全名、名字縮寫，例如 Wang, C. H."),
+      ("英文縮寫怎麼打？大寫、句點、空格的規則", "分三種：首字母縮寫<strong>全大寫、不加句點</strong>（ASAP、FYI、CEO）；"
+        "截短的縮寫<strong>保留原字的大小寫、字尾加句點</strong>（Dr.、Jan.、etc.）；名字縮寫<strong>每個字母大寫加句點、中間空一格</strong>"
+        "（J. K. Rowling）。訊息裡的網路縮寫可以全小寫（lol、btw），但寫給老師或主管時仍用大寫。"),
+      ("「無所謂」的英文縮寫是什麼？", "最接近的是 <strong>IDC</strong>（I don't care，我不在乎）和 <strong>IDM</strong>（I don't mind，我不介意）；"
+        "「隨便」則是 <strong>w/e</strong>（whatever）。注意語氣：IDC 聽起來冷淡甚至不耐煩，對朋友以外的人用 IDM 或直接說 "
+        "<em>Either is fine.</em> 比較安全。"),
       ("作文可以用縮寫嗎？", "英檢與學測作文建議不要。e.g.、etc. 在一般文章可以，但在正式作文裡寫成 for example、and so on 更安全；"
         "網路縮寫一律會被視為錯誤。"),
     ]), soft=True)
