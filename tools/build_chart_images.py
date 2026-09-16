@@ -396,6 +396,7 @@ def inject(rec):
           "width": rec["w"], "height": rec["h"],
           "caption": rec["alt"], "name": rec["title"],
           "creditText": "American English 埃森美語",
+          "copyrightNotice": "© 2026 American English 埃森美語 — 免費使用，請註明出處並連回 americanenglish.com.tw/chart-license/",
           "creator": {"@type": "Organization", "name": "American English 埃森美語"},
           "license": ORIGIN + "/chart-license/", "acquireLicensePage": ORIGIN + "/chart-license/"}
     block = (f'{startm}\n'
