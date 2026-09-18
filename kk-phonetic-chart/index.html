@@ -208,6 +208,6 @@
 <!-- AE:AUDIO start -->
 <script>(function(){var a=null;document.addEventListener("click",function(e){var b=e.target.closest(".say");if(!b)return;e.preventDefault();if(a){a.pause();}a=new Audio(b.dataset.w);a.play().catch(function(){});if(window.gtag){gtag("event","word_audio_play",{word:(b.dataset.w||"").split("/").pop().replace(".mp3",""),page_path:location.pathname});}b.classList.add("playing");a.onended=function(){b.classList.remove("playing")};});})();</script>
 <!-- AE:AUDIO end -->
-<script src="/assets/app.js?v=15"></script>
+<script src="/assets/app.js?v=16"></script>
 </body>
 </html>

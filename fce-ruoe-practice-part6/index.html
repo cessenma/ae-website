@@ -106,6 +106,8 @@
 .prx-opts.pics{flex-direction:row;flex-wrap:wrap;gap:10px}
 .prx-opts.pics .prx-opt{flex:1 1 190px;align-items:stretch;padding:0;border-style:dashed}
 .prx-opts.pics .prx-opt input{margin:12px 0 0 12px}
+.prx-opts.pics .pic-b img{max-width:100%;max-height:158px;object-fit:contain;background:#fff;border-radius:8px}
+@media print{.prx-opts.pics .pic-b img{max-height:96px}}
 .pic-b{display:flex;flex-direction:column;gap:7px;padding:12px 14px 14px;width:100%}
 .pic-b>b{font-family:'Baloo 2',sans-serif;font-size:13px;color:var(--blue)}
 .pic-d{font-size:14.5px;line-height:1.6;color:#4b5563}
@@ -211,13 +213,22 @@ const PRX = { part:6, sets:[{"setId": "A", "items": [{"n": 1, "type": "gapped", 
         <input class="prx-gapin wide" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 ${it.n} 題答案" placeholder="${it.maxWords?('最多 '+it.maxWords+' 個字'):''}">${mk}
         <div class="prx-why">${whyHTML(it)}</div></div>`;
     }
-    if(it.pictureOptions){
-      const po=it.opts.map((o,i)=>
-        `<label class="prx-opt pic"><input type="radio" name="${key}" value="${i}">`+
-        `<span class="pic-b"><b class="notranslate" translate="no">${L(i)}</b><span class="pic-d">${esc(String(o))}</span></span></label>`).join('');
+    if(it.optImgs || it.pictureOptions){
+      // The real paper shows three pictures. Where we have the artwork (KET/PET
+      // Listening 1 and the YLE picture parts) show it; the description stays as the
+      // alt text. Only fall back to reading the description when a picture is absent.
+      const drawn = it.optImgs && it.optImgs.some(Boolean);
+      const po=it.opts.map((o,i)=>{
+        const u = it.optImgs && it.optImgs[i];
+        const inner = u ? `<img src="${u}" alt="${esc(String(o))}" loading="lazy">`
+                        : `<span class="pic-d">${esc(String(o))}</span>`;
+        return `<label class="prx-opt pic"><input type="radio" name="${key}" value="${i}">`+
+          `<span class="pic-b"><b class="notranslate" translate="no">${L(i)}</b>${inner}</span></label>`;
+      }).join('');
+      const note = drawn ? '' :
+        `<p class="pic-note">正式考試這裡是三張圖，選出符合的一張。我們用文字描述代替圖片。</p>`;
       return `<fieldset class="prx-item" data-k="${key}"><legend>${it.n}. ${it.q||''}</legend>
-        <p class="pic-note">正式考試這裡是三張圖，選出符合的一張。我們用文字描述代替圖片。</p>
-        <div class="prx-opts pics">${po}</div><span class="prx-mark" aria-hidden="true"></span>
+        ${note}<div class="prx-opts pics">${po}</div><span class="prx-mark" aria-hidden="true"></span>
         <div class="prx-why">${whyHTML(it)}</div></fieldset>`;
     }
     const bare=it.opts.every(o=>/^[A-H]$/.test(String(o).trim()));
@@ -317,16 +328,17 @@ const PRX = { part:6, sets:[{"setId": "A", "items": [{"n": 1, "type": "gapped", 
         <div style="flex:1 1 320px;min-width:280px">
           <span class="eyebrow eyebrow-yellow">完整模擬試卷</span>
           <h2 style="font-size:clamp(24px,3.4vw,32px);margin:12px 0 10px">想<em>整份計時做完</em>嗎？</h2>
+          <p style="margin:0 0 10px"><b style="background:var(--navy);color:#fff;border-radius:999px;padding:3px 11px;font-family:'Baloo 2',sans-serif;font-size:12.5px">限時 2 折</b> <span style="font-size:13px;color:var(--text-body)">2026/10/31 前，原價的 20%</span></p>
           <p class="body" style="margin:0 0 14px;font-size:15px">這一頁的線上練習<b>永遠免費</b>。想整份計時做完，我們自己出了完整模擬試卷——題目卷、中文逐題解析、聽力音檔，在 LINE 購買。</p>
         </div>
         <div style="flex:0 1 280px">
           <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px">
-            <a href="https://line.me/R/oaMessage/%40americanenglish/?%E6%88%91%E6%83%B3%E8%B3%BC%E8%B2%B7%E5%8A%8D%E6%A9%8B%E8%8B%B1%E6%AA%A2%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A1%8C%EF%BC%9A%E4%BB%BB%E9%81%B8%204%20%E4%BB%BD%EF%BC%88NT%24390%EF%BC%89%E3%80%82%E5%AD%A9%E5%AD%90%E8%A6%81%E8%80%83%E7%9A%84%E7%B4%9A%E5%88%A5%E6%98%AF%EF%BC%9A" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy);border-bottom:1px dashed #e3d4a8;padding-bottom:6px;text-decoration:none"><span>任選 4 份</span><b>NT$390 →</b></a>
-            <a href="https://line.me/R/oaMessage/%40americanenglish/?%E6%88%91%E6%83%B3%E8%B3%BC%E8%B2%B7%E5%8A%8D%E6%A9%8B%E8%8B%B1%E6%AA%A2%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A1%8C%EF%BC%9A%E5%96%AE%E4%B8%80%E7%B4%9A%E5%88%A5%E5%85%A8%E5%A5%97%209%20%E4%BB%BD%EF%BC%88NT%24590%EF%BC%89%E3%80%82%E5%AD%A9%E5%AD%90%E8%A6%81%E8%80%83%E7%9A%84%E7%B4%9A%E5%88%A5%E6%98%AF%EF%BC%9A" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy);border-bottom:1px dashed #e3d4a8;padding-bottom:6px;text-decoration:none"><span>單一級別 9 份</span><b>NT$590 →</b></a>
-            <a href="https://line.me/R/oaMessage/%40americanenglish/?%E6%88%91%E6%83%B3%E8%B3%BC%E8%B2%B7%E5%8A%8D%E6%A9%8B%E8%8B%B1%E6%AA%A2%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A1%8C%EF%BC%9A%E4%B8%89%E7%B4%9A%E5%85%A8%E5%A5%97%2027%20%E4%BB%BD%EF%BC%88NT%241%2C499%EF%BC%89%E3%80%82" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy);text-decoration:none"><span>三級全套 27 份</span><b>NT$1,499 →</b></a>
+            <a href="https://line.me/R/oaMessage/%40americanenglish/?%E6%88%91%E6%83%B3%E8%B3%BC%E8%B2%B7%E5%8A%8D%E6%A9%8B%E8%8B%B1%E6%AA%A2%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A1%8C%EF%BC%9A%E4%BB%BB%E9%81%B8%204%20%E4%BB%BD%EF%BC%88%E5%84%AA%E6%83%A0%E5%83%B9%20NT%24400%EF%BC%89%E3%80%82%E5%AD%A9%E5%AD%90%E8%A6%81%E8%80%83%E7%9A%84%E7%B4%9A%E5%88%A5%E6%98%AF%EF%BC%9A" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy);border-bottom:1px dashed #e3d4a8;padding-bottom:6px;text-decoration:none"><span>任選 4 份</span><b><s style="opacity:.55;font-weight:600">NT$2,000</s> NT$400 →</b></a>
+            <a href="https://line.me/R/oaMessage/%40americanenglish/?%E6%88%91%E6%83%B3%E8%B3%BC%E8%B2%B7%E5%8A%8D%E6%A9%8B%E8%8B%B1%E6%AA%A2%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A1%8C%EF%BC%9A%E5%96%AE%E4%B8%80%E7%B4%9A%E5%88%A5%E5%85%A8%E5%A5%97%209%20%E4%BB%BD%EF%BC%88%E5%84%AA%E6%83%A0%E5%83%B9%20NT%24600%EF%BC%89%E3%80%82%E5%AD%A9%E5%AD%90%E8%A6%81%E8%80%83%E7%9A%84%E7%B4%9A%E5%88%A5%E6%98%AF%EF%BC%9A" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy);border-bottom:1px dashed #e3d4a8;padding-bottom:6px;text-decoration:none"><span>單一級別 9 份</span><b><s style="opacity:.55;font-weight:600">NT$3,000</s> NT$600 →</b></a>
+            <a href="https://line.me/R/oaMessage/%40americanenglish/?%E6%88%91%E6%83%B3%E8%B3%BC%E8%B2%B7%E5%8A%8D%E6%A9%8B%E8%8B%B1%E6%AA%A2%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A1%8C%EF%BC%9A%E4%B8%89%E7%B4%9A%E5%85%A8%E5%A5%97%2027%20%E4%BB%BD%EF%BC%88%E5%84%AA%E6%83%A0%E5%83%B9%20NT%241%2C500%EF%BC%89%E3%80%82" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;font-size:14.5px;color:var(--navy);text-decoration:none"><span>三級全套 27 份</span><b><s style="opacity:.55;font-weight:600">NT$7,500</s> NT$1,500 →</b></a>
           </div>
-          <a href="https://line.me/R/oaMessage/%40americanenglish/?%E6%88%91%E6%83%B3%E8%B3%BC%E8%B2%B7%E5%8A%8D%E6%A9%8B%E8%8B%B1%E6%AA%A2%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A1%8C%EF%BC%9A%E5%96%AE%E4%B8%80%E7%B4%9A%E5%88%A5%E5%85%A8%E5%A5%97%209%20%E4%BB%BD%EF%BC%88NT%24590%EF%BC%89%E3%80%82%E5%AD%A9%E5%AD%90%E8%A6%81%E8%80%83%E7%9A%84%E7%B4%9A%E5%88%A5%E6%98%AF%EF%BC%9A" target="_blank" rel="noopener" class="btn btn-yellow" style="width:100%">加 LINE 購買</a>
-          <p style="text-align:center;font-size:12px;color:var(--text-body);margin:8px 0 0">點價格會自動帶入訊息，直接送出就好</p>
+          <a href="https://line.me/R/oaMessage/%40americanenglish/?%E6%88%91%E6%83%B3%E8%B3%BC%E8%B2%B7%E5%8A%8D%E6%A9%8B%E8%8B%B1%E6%AA%A2%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A1%8C%EF%BC%9A%E5%96%AE%E4%B8%80%E7%B4%9A%E5%88%A5%E5%85%A8%E5%A5%97%209%20%E4%BB%BD%EF%BC%88%E5%84%AA%E6%83%A0%E5%83%B9%20NT%24600%EF%BC%89%E3%80%82%E5%AD%A9%E5%AD%90%E8%A6%81%E8%80%83%E7%9A%84%E7%B4%9A%E5%88%A5%E6%98%AF%EF%BC%9A" target="_blank" rel="noopener" class="btn btn-yellow" style="width:100%">加 LINE 購買</a>
+          <p style="text-align:center;font-size:12px;color:var(--text-body);margin:8px 0 0">點價格會自動帶入訊息，直接送出就好・優惠後恢復原價</p>
           <p style="text-align:center;font-size:12.5px;color:var(--text-body);margin:8px 0 0"><a href="/cambridge-practice-exam-pack/" style="color:var(--text-body)">先看試卷裡有什麼 →</a></p>
         </div>
       </div>
@@ -346,6 +358,6 @@ const PRX = { part:6, sets:[{"setId": "A", "items": [{"n": 1, "type": "gapped", 
 </section>
 
 </main>
-<script src="/assets/app.js?v=15"></script>
+<script src="/assets/app.js?v=16"></script>
 </body>
 </html>

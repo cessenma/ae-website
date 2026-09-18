@@ -278,7 +278,7 @@
         if(hasGtag) window.gtag('event', 'exam_pack_tap', { tier: tier, page_path: location.pathname, link_text: txt.slice(0, 40) });
         // Meta Pixel is loaded site-wide (seo_build GTM block); this is the Lead event the ad
         // campaign optimises on. value = tier price so Ads Manager can show ROAS-ish numbers.
-        var val = tier === '27' ? 1499 : tier === '9' ? 590 : tier === '4' ? 390 : 0;
+        var val = tier === '27' ? 1500 : tier === '9' ? 600 : tier === '4' ? 400 : 0;
         try{ if(window.fbq) fbq('track', 'Lead', { content_name: 'exam_pack_' + tier, content_category: 'exam_pack', value: val, currency: 'TWD' }); }catch(err){}
       } else if(hasGtag){
         window.gtag('event', 'line_tap', { page_path: location.pathname, link_text: txt.slice(0, 40) });
