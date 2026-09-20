@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-09-14 07:54",
+ "checked_at": "2026-09-21 07:53",
  "schools": [
   {
    "key": "pcjh",
@@ -58,7 +58,7 @@
    "note": "",
    "link_ok": true,
    "http": 200,
-   "bytes": 114067,
+   "bytes": 114338,
    "events": [],
    "parse_note": "ValueError: found 1 行事曆 link(s) but no PDF behind any of them"
   }
