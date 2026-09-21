@@ -286,22 +286,8 @@
     }
   }, true);
 
-  /* ---------- rolling promo deadline ---------- */
-  // The exam-pack promotion renews instead of lapsing, so the page must never show a
-  // date that has already passed. The HTML ships the fallback 「本月底」 — true in every
-  // month, so a crawler or a no-JS visitor still reads something correct — and this
-  // fills in the exact day. It rolls to the end of next month once fewer than 7 days
-  // remain, so the offer always has at least a week of runway showing on it.
-  function promoDeadline(){
-    var els = document.querySelectorAll('[data-promo-deadline]');
-    if(!els.length) return;
-    var now = new Date(), end = new Date(now.getFullYear(), now.getMonth() + 1, 0);
-    if((end - now) / 86400000 < 7) end = new Date(now.getFullYear(), now.getMonth() + 2, 0);
-    var txt = end.getFullYear() + '/' + (end.getMonth() + 1) + '/' + end.getDate();
-    for(var i = 0; i < els.length; i++){ els[i].textContent = txt; }
-  }
 
-  function init(){ injectChrome(); wire(); injectSEO(); promoDeadline(); }
+  function init(){ injectChrome(); wire(); injectSEO(); }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
