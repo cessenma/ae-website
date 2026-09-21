@@ -33,6 +33,17 @@ PDFS = {
  "thank-you-english":      ("thank-you-english-chart","ae-thank-you-english-a4.pdf","30 種道謝說法與適用場合"),
  "cheer-up-english":       ("cheer-up-english-chart","ae-cheer-up-english-a4.pdf","21 種鼓勵說法依場合分組"),
  "english-pronunciation":  ("english-vowels-chart", "ae-english-vowels-a4.pdf", "17 個母音・例字與嘴型提示"),
+ # 2026-09-21: the pages carrying the most impressions at the worst CTR on the site —
+ # each already ranked 6–7, each with a chart and no download. GSC says the shapes that
+ # convert here are "get a file" (8.99% CTR) and "look up" (7.45%), against 0.77% for
+ # anything Google answers inside the SERP. Names got both genders: 女生英文名 sits at 9.1
+ # while the boys page holds 4.5, and the girls table is all but the same size.
+ "english-alphabet-guide":  ("english-alphabet-chart",    "ae-english-alphabet-a4.pdf",    "26 個字母大小寫與發音對照"),
+ "ordinal-numbers-english": ("ordinal-numbers-chart",     "ae-ordinal-numbers-a4.pdf",     "序數拼法、縮寫與唸法"),
+ "happy-birthday-english":  ("happy-birthday-chart",      "ae-happy-birthday-a4.pdf",      "生日祝福說法與適用對象"),
+ "mid-autumn-festival-english": ("mid-autumn-chart",      "ae-mid-autumn-english-a4.pdf",  "中秋節英文說法與節慶單字"),
+ "english-names-boys":      ("english-names-boys-chart",  "ae-english-names-boys-a4.pdf",  "男生英文名字、唸法與含意"),
+ "english-names-girls":     ("english-names-girls-chart", "ae-english-names-girls-a4.pdf", "女生英文名字、唸法與含意"),
 }
 
 CSS = """
