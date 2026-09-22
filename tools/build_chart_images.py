@@ -72,11 +72,11 @@ SPECS.update({
    title="英文數字 1-100 對照表", sub="0 到 100 ・ 英文拼法與中文對照",
    alt="英文數字1到100完整對照表，每個數字的英文拼法與中文對照",
    foot="可儲存列印｜americanenglish.com.tw"),
- "months-english-chart": dict(page="months-english",
+ "months-english-chart": dict(page="months-english", only=[0],   # the page also carries zodiac/holiday/season tables; the chart is the month table
    title="1-12 月份英文對照表", sub="英文 ・ 中文 ・ 縮寫 ・ 天數",
    alt="1到12月份英文對照表，含月份英文、中文、縮寫與每月天數",
    foot="可儲存列印｜americanenglish.com.tw"),
- "days-week-english-chart": dict(page="days-of-week-english",
+ "days-week-english-chart": dict(page="days-of-week-english", only=[0],   # likewise: origins/phrases/weekend tables stay on the page
    title="星期英文對照表", sub="星期一到星期日 ・ 英文、縮寫與口語說法",
    alt="星期英文對照表：星期一到星期日的英文、中文、縮寫與口語說法",
    foot="可儲存列印｜americanenglish.com.tw"),

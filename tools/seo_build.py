@@ -304,6 +304,11 @@ def authored_hash(html):
     html = re.sub(r'<script src="/assets/app\.js\?v=\d+"></script>\s*', "", html)
     html = re.sub(r'/assets/styles\.css\?v=[0-9a-f]+', "/assets/styles.css", html)
     html = re.sub(r'<html lang="[^"]*">', "<html>", html)
+    # Tools that round-trip a page through BeautifulSoup (build_word_audio) re-emit every tag
+    # with its attributes sorted onto one line. The reader sees nothing new, so hash the
+    # parsed form: the hand-formatted and the round-tripped page then agree, and <lastmod>
+    # stops moving on serialiser noise (it moved on 15 untouched pages on 2026-09-22).
+    html = str(BeautifulSoup(html, "html.parser"))
     return hashlib.md5(re.sub(r"\s+", " ", html).strip().encode("utf-8")).hexdigest()
 
 def load_ledger():

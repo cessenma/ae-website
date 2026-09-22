@@ -132,6 +132,31 @@ PAGES = {
       prose("英文月份幾乎都來自拉丁文與羅馬神話，知道由來會好記很多：<strong>January</strong> 來自雙面神 Janus（門與開始）、<strong>March</strong> 來自戰神 Mars、<strong>July</strong> 紀念凱撒 Julius Caesar、<strong>August</strong> 紀念奧古斯都 Augustus。",
         "最有趣的是 9 到 12 月：<strong>Sept-</strong>（七）、<strong>Oct-</strong>（八）、<strong>Nov-</strong>（九）、<strong>Dec-</strong>（十）。這些字根和月份數字差了兩位，因為古羅馬曆一年只有十個月、從三月開始算。"
         "同樣的字根今天還在用：octopus（八爪章魚）、decade（十年），記住字根就同時記住兩組字。"))
+    + sec("每個月的星座英文",
+      prose("星座是孩子最愛問、也最容易把月份記住的一條線——自己的星座跨哪兩個月，講一次就記得。英文星座名幾乎都來自拉丁文；起訖日期依年份可能差一天，以當年星曆為準。")
+      + tbl([["摩羯座", "Capricorn", "12/22–1/19"], ["水瓶座", "Aquarius", "1/20–2/18"], ["雙魚座", "Pisces", "2/19–3/20"],
+             ["牡羊座", "Aries", "3/21–4/19"], ["金牛座", "Taurus", "4/20–5/20"], ["雙子座", "Gemini", "5/21–6/20"],
+             ["巨蟹座", "Cancer", "6/21–7/22"], ["獅子座", "Leo", "7/23–8/22"], ["處女座", "Virgo", "8/23–9/22"],
+             ["天秤座", "Libra", "9/23–10/22"], ["天蠍座", "Scorpio", "10/23–11/21"], ["射手座", "Sagittarius", "11/22–12/21"]],
+            ["星座", "英文", "日期"]))
+    + sec("每個月有哪些節日：英文怎麼說",
+      prose("節日是月份最自然的用法：I was born in <em>December</em>, so my birthday is near <em>Christmas</em>. 農曆節日每年落在不同月份，表裡標的是最常見的那一個。")
+      + tbl([["1 月", "New Year's Day", "元旦（1/1）"], ["1–2 月", "Lunar New Year / Chinese New Year", "農曆新年（依農曆）"],
+             ["2 月", "Valentine's Day", "情人節（2/14）"], ["2 月", "Peace Memorial Day", "和平紀念日（2/28）"],
+             ["4 月", "Children's Day", "兒童節（4/4）"], ["4 月", "Tomb Sweeping Day", "清明節（4/4 或 4/5）"],
+             ["5 月", "Labor Day", "勞動節（5/1）"], ["5 月", "Mother's Day", "母親節（五月第二個星期日）"],
+             ["5–6 月", "Dragon Boat Festival", "端午節（依農曆）"], ["7–8 月", "summer vacation", "暑假"],
+             ["8 月", "Father's Day", "父親節（台灣 8/8）"], ["9 月", "Teachers' Day", "教師節（9/28）"],
+             ["9–10 月", "Mid-Autumn Festival / Moon Festival", "中秋節（依農曆）"], ["10 月", "Double Tenth Day", "國慶日（10/10）"],
+             ["10 月", "Halloween", "萬聖節（10/31）"], ["11 月", "Thanksgiving", "感恩節（美國，十一月第四個星期四）"],
+             ["12 月", "Christmas", "聖誕節（12/25）"], ["12 月", "New Year's Eve", "跨年夜（12/31）"]],
+            ["月份", "英文", "節日"]))
+    + sec("季節與學期：各是哪幾個月",
+      prose("季節前面用 <strong>in</strong>（in summer），而且<strong>不大寫</strong>——這是和月份最容易搞混的一點。autumn 是英式、fall 是美式，兩個都對。")
+      + tbl([["spring 春天", "3–5 月", "in spring"], ["summer 夏天", "6–8 月", "in summer"], ["autumn / fall 秋天", "9–11 月", "in autumn（英）／in fall（美）"], ["winter 冬天", "12–2 月", "in winter"],
+             ["first semester 上學期", "9 月–1 月", "in the first semester"], ["winter vacation 寒假", "1–2 月", "during winter vacation"],
+             ["second semester 下學期", "2 月–6 月", "in the second semester"], ["summer vacation 暑假", "7–8 月", "during summer vacation"]],
+            ["季節／學期", "月份", "怎麼說"]), soft=True)
     + sec("月份英文常見問題", faq([
       ("月份的英文開頭要大寫嗎？", "要。英文的月份和星期都是專有名詞，句中也一定大寫：I was born in <em>May</em>。這是作文最常被扣分的小細節之一，季節（spring、summer）則<strong>不</strong>大寫。"),
       ("May 為什麼沒有縮寫？", "因為它本身只有三個字母，縮寫不會比較短。同樣道理，短的月份不縮寫；縮寫要加句點，代表後面還有字母被省略——May 沒有省略任何字母，所以也不加點。"),
@@ -171,6 +196,27 @@ PAGES = {
         "<strong>Wednesday</strong> 主神 Odin（Woden's day，所以中間那個不發音的 d 一定要寫）、"
         "<strong>Thursday</strong> 雷神 Thor、<strong>Friday</strong> 愛神 Frigg、<strong>Saturday</strong> 土星 Saturn。",
         "Wednesday 是全班拼字考的頭號殺手。教孩子拆成 <strong>Wed-nes-day</strong> 三段唸出來（明明唸 /ˈwɛnzdeɪ/，但拼的時候刻意唸出中間的 d），一次就記住。"))
+    + sec("七天名稱的由來對照表",
+      prose("上一段的整理版。拼字卡住時想一下那個字的來源，特別是 Wednesday 中間的 d 和 Thursday 的 h。")
+      + tbl([["Sunday", "Sun 太陽", "太陽日"], ["Monday", "Moon 月亮", "月亮日"], ["Tuesday", "Tiw／Tyr 戰神", "提爾之日"],
+             ["Wednesday", "Woden／Odin 主神", "奧丁之日（中間的 d 不發音）"], ["Thursday", "Thor 雷神", "索爾之日"],
+             ["Friday", "Frigg 愛與婚姻女神", "芙麗格之日"], ["Saturday", "Saturn 土星／農神", "薩圖恩之日"]],
+            ["英文", "來源", "意思"]))
+    + sec("星期的常用片語：什麼時候加 on",
+      prose("規則只有一條：<strong>單獨一個星期名詞前面加 on</strong>；前面已經有 this／next／last／every 時<strong>不加</strong>。下面十二個片語涵蓋日常九成的用法。")
+      + tbl([["on Monday", "（這個）星期一", "I have a test on Monday."], ["on Mondays", "每個星期一", "We have PE on Mondays."],
+             ["every Monday", "每個星期一（強調）", "She calls every Monday."], ["this Monday", "本週一", "See you this Monday."],
+             ["next Monday", "下週一", "The exam is next Monday."], ["last Monday", "上週一", "It rained last Monday."],
+             ["Monday morning", "星期一早上", "I'm busy Monday morning."], ["by Monday", "星期一之前（截止）", "Hand it in by Monday."],
+             ["until Monday", "到星期一為止", "The shop is closed until Monday."], ["from Monday to Friday", "週一到週五", "We work from Monday to Friday."],
+             ["a week from Monday", "下下週一", "Let's meet a week from Monday."], ["Monday through Friday", "週一至週五（美式）", "Open Monday through Friday."]],
+            ["片語", "中文", "例句"]))
+    + sec("平日、週末、連假：相關單字",
+      prose("這一組字在課表、行事曆和請假單裡天天出現，和七天一起記最省力。")
+      + tbl([["weekday", "平日（週一到週五）"], ["weekend", "週末"], ["long weekend", "連假"], ["public holiday", "國定假日"],
+             ["day off", "休假日"], ["workday / school day", "上班日／上課日"], ["midweek", "週中（週三前後）"],
+             ["weekly", "每週的"], ["fortnight", "兩週（英式）"], ["TGIF", "Thank God It's Friday，終於星期五了"]],
+            ["英文", "中文"]), soft=True)
     + sec("星期英文常見問題", faq([
       ("星期的英文需要大寫嗎？", "需要，任何位置都要。星期和月份都是專有名詞。季節和早中晚則不用大寫，這組對比常出現在考題裡。"),
       ("Wednesday 為什麼有不發音的 d？", "它來自北歐主神 Odin 的古英文名 Woden——Woden's day。發音隨著時間簡化成 /ˈwɛnzdeɪ/，拼字卻保留了原本的 d。拼的時候刻意唸成「Wed-nes-day」就不會漏。"),
@@ -251,8 +297,8 @@ PAGES.update({
 
 "body-parts-english": dict(
   target="身體部位英文", index=0.49,
-  h1="身體部位英文對照表：43 個部位，含 tooth／teeth 等不規則複數",
-  title="身體部位英文對照表：43個部位、不規則複數與看醫生用語｜埃森美語",
+  h1="身體英文對照表：43 個身體部位，含 tooth／teeth 等不規則複數",
+  title="身體英文對照表：43 個身體部位、不規則複數與看醫生用語｜埃森美語",
   desc="身體部位英文完整對照表，收錄 43 個部位分頭臉、上半身、下半身與體內四組；說明 tooth／teeth、foot／feet 等不規則複數，以及身體部位前面用 my 還是 the——美籍持證教師整理，可點聽發音。",
   hero="身體部位是國小英文的必考單元，也是少數「背了馬上用得到」的字——孩子不舒服、受傷、看醫生時都要講。難點只有兩個：不規則複數，和前面該放 my 還是 the。",
   body=lambda: (
@@ -438,8 +484,8 @@ PAGES["english-vocabulary-by-topic"] = dict(
 
 PAGES["english-abbreviations-guide"] = dict(
   target="英文縮寫", index=11.99,
-  h1="英文縮寫大全：74 個常用縮寫的意思、全名與正確用法",
-  title="英文縮寫大全：74個常用縮寫意思查詢、全名與用法｜埃森美語",
+  h1="英文縮寫大全：etc.、e.g.、i.e. 怎麼用＋74 個常用縮寫的意思與全名",
+  title="英文縮寫大全：etc.、e.g.、i.e. 用法＋74 個常用縮寫意思查詢｜埃森美語",
   desc="英文縮寫完整對照表，收錄 74 個常用縮寫的中文意思與英文全名，分日常書寫、網路訊息、學校考試、商業職場與單位五組；並說明 e.g. 與 i.e. 的差別、縮寫要不要加句點，以及月份與星期縮寫的完整規則。",
   hero="英文縮寫最惱人的地方是：看得到卻查不到。e.g. 和 i.e. 差在哪、etc. 前面要不要加 and、LOL 到底能不能對長輩用——下面這份表把 74 個常見縮寫的意思和<strong>英文全名</strong>都列出來，知道全名就不會再用錯。",
   body=lambda: (
