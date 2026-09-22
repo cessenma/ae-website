@@ -23,7 +23,7 @@ from bs4 import BeautifulSoup
 
 SITE   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # repo root, wherever the checkout lives
 ORIGIN = "https://americanenglish.com.tw"
-APPJS_VER = 16
+APPJS_VER = 17
 LINE = "https://lin.ee/W9J8TuQ"
 LOGO = "/assets/img/american-english-banqiao-logo.jpg"
 NAV  = [("首頁","/"),("課程","/courses/"),("劍橋英檢","/exams/"),("師資","/certified-american-teacher-banqiao/"),

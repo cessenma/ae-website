@@ -266,6 +266,16 @@
     // pre-filled 購買 message (the exam-pack tiers). The pack links were invisible to this
     // handler until 2026-09-06 — 231 purchase placements fired nothing. They now emit
     // exam_pack_tap with the tier, so sales intent is a separate key event in GA4.
+    // Checkout buttons (hosted card payment) carry the tier on a data attribute; they are
+    // the same purchase intent as a 購買 LINE tap and must count in the same funnel.
+    var ck = e.target.closest ? e.target.closest('a[data-pack-tier]') : null;
+    if(ck){
+      var t = ck.getAttribute('data-pack-tier'), lv = ck.getAttribute('data-pack-level') || '';
+      if(typeof window.gtag === 'function') window.gtag('event', 'exam_pack_tap', { tier: t, level: lv, page_path: location.pathname, link_text: 'checkout' });
+      var v = t === '27' ? 1499 : t === '9' ? 590 : 390;
+      try{ if(window.fbq) fbq('track', 'InitiateCheckout', { content_name: 'exam_pack_' + t + '_' + lv, content_category: 'exam_pack', value: v, currency: 'TWD' }); }catch(err){}
+      return;
+    }
     var a = e.target.closest ? e.target.closest('a[href*="lin.ee"],a[href*="line.me"]') : null;
     if(a){
       var href = a.getAttribute('href') || '', txt = (a.textContent || '').trim();
