@@ -272,7 +272,7 @@
     if(ck){
       var t = ck.getAttribute('data-pack-tier'), lv = ck.getAttribute('data-pack-level') || '';
       if(typeof window.gtag === 'function') window.gtag('event', 'exam_pack_tap', { tier: t, level: lv, page_path: location.pathname, link_text: 'checkout' });
-      var v = t === '27' ? 1499 : t === '9' ? 590 : 390;
+      var v = t === '54' ? 1770 : 590;
       try{ if(window.fbq) fbq('track', 'InitiateCheckout', { content_name: 'exam_pack_' + t + '_' + lv, content_category: 'exam_pack', value: v, currency: 'TWD' }); }catch(err){}
       return;
     }
@@ -284,11 +284,11 @@
         // The tier is only in the pre-filled LINE message (every button reads 選這個・加 LINE),
         // so detect it on the decoded href; the visible text is kept as a fallback.
         var msg = txt; try{ msg += ' ' + decodeURIComponent(href); }catch(err){}
-        var tier = /27 ?份/.test(msg) ? '27' : /9 ?份/.test(msg) ? '9' : /4 ?份/.test(msg) ? '4' : 'cta';
+        var tier = /54 ?份/.test(msg) ? '54' : /9 ?份/.test(msg) ? '9' : 'cta';
         if(hasGtag) window.gtag('event', 'exam_pack_tap', { tier: tier, page_path: location.pathname, link_text: txt.slice(0, 40) });
         // Meta Pixel is loaded site-wide (seo_build GTM block); this is the Lead event the ad
         // campaign optimises on. value = tier price so Ads Manager can show ROAS-ish numbers.
-        var val = tier === '27' ? 1499 : tier === '9' ? 590 : tier === '4' ? 390 : 0;
+        var val = tier === '54' ? 1770 : tier === '9' ? 590 : 0;
         try{ if(window.fbq) fbq('track', 'Lead', { content_name: 'exam_pack_' + tier, content_category: 'exam_pack', value: val, currency: 'TWD' }); }catch(err){}
       } else if(hasGtag){
         window.gtag('event', 'line_tap', { page_path: location.pathname, link_text: txt.slice(0, 40) });
