@@ -159,6 +159,8 @@
 .gx-story{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
 .gx-story figure{margin:0;background:#fff;border:2px solid #e6ebf2;border-radius:12px;padding:6px;text-align:center}
 .gx-story img{width:100%}
+.gx-panel{grid-template-columns:repeat(4,1fr)}
+@media(max-width:560px){.gx-panel{grid-template-columns:repeat(2,1fr)}}
 .gx-story figcaption{font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--blue)}
 @media(max-width:560px){.gx-story{grid-template-columns:1fr}}
 .gx-ta{width:100%;min-height:170px;font:inherit;font-size:16px;padding:12px;border:2px solid #e6ebf2;border-radius:12px}
@@ -199,7 +201,7 @@
       <div class="prx-bar"><button type="button" class="btn btn-primary" id="btnCheck">對答案</button><button type="button" class="btn btn-outline" id="btnWhy">看解析</button><button type="button" class="btn btn-outline" id="btnReset">重做</button><button type="button" class="btn btn-outline" id="btnPrint">列印題目</button><span class="prx-score" id="score" role="status" aria-live="polite"></span></div>
       <p class="prx-note">題目由埃森美語美籍持證教師原創編寫，依公開的測驗格式製作，非LTTC官方試題；「全民英檢」為LTTC註冊商標，本班與LTTC無任何關連。分數只記在你自己的瀏覽器裡，不會上傳。</p>
     </div>
-    <aside class="prx-nav" aria-label="全民英檢初級 各部分練習"><h3>初級 線上練習</h3><a href="/gept-elementary-listening-practice-part1/">聽力｜看圖辨義</a><a href="/gept-elementary-listening-practice-part2/" class="on" aria-current="page">聽力｜問答</a><a href="/gept-elementary-listening-practice-part3/">聽力｜簡短對話</a><a href="/gept-elementary-listening-practice-part4/">聽力｜短文聽解</a><a href="/gept-elementary-reading-practice-part1/">閱讀｜詞彙</a><a href="/gept-elementary-reading-practice-part2/">閱讀｜段落填空</a><a href="/gept-elementary-reading-practice-part3/">閱讀｜閱讀理解</a><a href="/gept-elementary-writing-practice-part1/">寫作｜單句寫作</a><a href="/gept-elementary-writing-practice-part2/">寫作｜看圖寫作</a><a href="/gept-elementary-speaking-practice/">口說｜全部三部分</a><a href="/gept-elementary-practice/" style="border-top:2px dashed #e6ebf2;margin-top:6px;padding-top:10px">初級練習總覽 →</a></aside>
+    <aside class="prx-nav" aria-label="全民英檢初級 各部分練習"><h3>初級 線上練習</h3><a href="/gept-elementary-listening-practice-part1/">聽力｜看圖辨義</a><a href="/gept-elementary-listening-practice-part2/" class="on" aria-current="page">聽力｜問答</a><a href="/gept-elementary-listening-practice-part3/">聽力｜簡短對話</a><a href="/gept-elementary-listening-practice-part4/">聽力｜短文聽解</a><a href="/gept-elementary-reading-practice-part1/">閱讀｜詞彙</a><a href="/gept-elementary-reading-practice-part2/">閱讀｜段落填空</a><a href="/gept-elementary-reading-practice-part3/">閱讀｜閱讀理解</a><a href="/gept-elementary-writing-practice-part1/">寫作｜單句寫作</a><a href="/gept-elementary-writing-practice-part2/">寫作｜看圖寫作</a><a href="/gept-elementary-speaking-practice/">口說｜全部3部分</a><a href="/gept-elementary-practice/" style="border-top:2px dashed #e6ebf2;margin-top:6px;padding-top:10px">初級練習總覽 →</a></aside>
   </div>
 </section>
 <script>
@@ -215,7 +217,7 @@ const PRX = { sets:[{"items": [{"n": 1, "type": "mc", "q": "Where did you go las
     if(it.type==='write'){
       const head=it.kind==='reorder'
         ?`<div class="gx-pool">${it.pool.map(w=>`<span>${esc(w)}</span>`).join('')}</div>`
-        :`<p class="gx-given">${it.given}</p><span class="gx-cue">${esc(it.cue||'')}</span>`;
+        :`${pic}<p class="gx-given">${it.given}</p>${it.cue?`<span class="gx-cue">${esc(it.cue)}</span>`:''}`;
       return `<div class="prx-item" data-k="${key}"><span class="qh">${it.n}.</span>${head}
         <div class="gx-line"><input class="prx-gapin wide" type="text" value="${esc(it.start||'')} " autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 ${it.n} 題">${it.end?`<span class="gx-end">${esc(it.end)}</span>`:''}${mk}</div>
         <div class="prx-why"><p><b>參考答案：</b>${esc(it.accept[0])}</p><p>${it.why||''}</p></div></div>`;
