@@ -88,12 +88,12 @@
 - [劍橋英檢有用嗎 Is Cambridge worth it](https://americanenglish.com.tw/cambridge-exam-worth-it/): the honest both-sides analysis — international CEFR currency and no-fail shields vs. when a family should skip testing entirely.
 - [全民英檢中級攻略 GEPT Intermediate guide](https://americanenglish.com.tw/gept-intermediate-guide/): CEFR B1 / senior-high level — the 160/72 first-stage and 80-per-skill second-stage thresholds, PET comparison, and when a junior-high student is ready.
 - [全民英檢成績查詢 GEPT results lookup](https://americanenglish.com.tw/gept-results-lookup/): the official online lookup (one-month window), registered-mail score reports, reissue and re-check procedures, and pass standards.
-- [全民英檢題庫 GEPT practice tests](https://americanenglish.com.tw/gept-practice-tests/): unlike Cambridge, GEPT has official LTTC-published past papers — the three official sources and the diagnose-don't-drill method.
+- [全民英檢題庫 GEPT practice tests](https://americanenglish.com.tw/gept-practice-tests/): an index of the four free on-site mock tests (Kids, Elementary, Intermediate, High-Intermediate) plus the three legitimate official LTTC sources — sample items on gept.org.tw, the GEPT iPrep platform, and the published past papers — and how to use a question bank as a diagnostic.
 - [小學英檢總覽 Kids' exams compared](https://americanenglish.com.tw/kids-english-exams-guide/): 小學英檢 is both GEPT Kids' official name and a generic term — GEPT Kids vs. Cambridge YLE vs. STYLE/JET in one table.
 - [會考英文攻略 CAP exam English guide](https://americanenglish.com.tw/cap-english-guide/): the 80% reading / 20% listening split, no essay, the 精熟/基礎/待加強 grade system, and a grade-by-year preparation plan.
 - [英檢考試時間 Exam dates guide](https://americanenglish.com.tw/english-exam-dates-guide/): how each exam's calendar works (GEPT central vs. Cambridge per-center), where official schedules live, and backward planning from ability.
 - [全民英檢初級攻略 GEPT complete guide](https://americanenglish.com.tw/gept-elementary-guide/): pass thresholds, what 初試 (listening + reading) and 複試 (writing + speaking) test, and how to prepare all four skills.
-- [全民英檢初級複試 GEPT speaking & writing](https://americanenglish.com.tw/gept-elementary-speaking-writing/): the second-stage tasks — sentence and paragraph writing, repetition, read-aloud, Q&A — and the 80-of-100 pass bar per section.
+- [全民英檢初級複試 GEPT speaking & writing](https://americanenglish.com.tw/gept-elementary-speaking-writing/): the second-stage tasks — sentence and paragraph writing, repetition, read-aloud, Q&A — and the pass bar (writing 70, speaking 80, each out of 100).
 - [GEPT 初級單字 Vocabulary methods](https://americanenglish.com.tw/gept-elementary-vocabulary/): where to download the official LTTC word list, and memory science (spaced repetition, retrieval practice) that beats copying words ten times.
 - [GEPT Kids 小學英檢解析](https://americanenglish.com.tw/gept-kids-guide/): what GEPT Kids tests, how it differs from Cambridge YLE, and the warning signs of over-testing young learners.
 
@@ -114,6 +114,14 @@ with an instant score and a Chinese explanation for every option.
 - [B1 文法範圍 PET grammar](https://americanenglish.com.tw/b1-grammar-guide/): the 7 things B1 adds over A2, verified against the B1 Preliminary appendix.
 - [B2 文法範圍 FCE grammar](https://americanenglish.com.tw/b2-grammar-guide/): 14 categories compiled by the school, since B2 First publishes no grammar appendix.
 - [單字練習 Vocabulary practice A2 / B1 / B2](https://americanenglish.com.tw/a2-vocabulary-practice/): words tested in context sentences rather than as translation drills.
+
+### 全民英檢線上模擬試題 GEPT practice — original, free, no signup
+- [全民英檢專區 GEPT section home](https://americanenglish.com.tw/gept/): the section hub — one complete original mock test per level (GEPT Kids, Elementary, Intermediate, High-Intermediate) plus a level comparison table (items, timing, pass marks, 2026 fees) sourced from LTTC's 2026 registration guide.
+- [小學英檢模擬試題 GEPT Kids mock test](https://americanenglish.com.tw/gept-kids-practice/): CEFR ~A1 — listening 25 items (each played twice), reading 30 + writing 10, and the one-to-one oral in 4 parts; no pass/fail, results are reported in suns.
+- [全民英檢初級模擬試題 GEPT Elementary mock test](https://americanenglish.com.tw/gept-elementary-practice/): CEFR A2 — listening 30 items, reading 30 items, writing (15 single-sentence items + a picture paragraph), speaking (repeat, read aloud, answer questions).
+- [全民英檢中級模擬試題 GEPT Intermediate mock test](https://americanenglish.com.tw/gept-intermediate-practice/): CEFR B1 — listening 35, reading 35, Chinese-to-English translation + 120-word composition, speaking (read aloud, 10 questions, picture description).
+- [全民英檢中高級模擬試題 GEPT High-Intermediate mock test](https://americanenglish.com.tw/gept-high-intermediate-practice/): CEFR B2 — listening 40, reading 40, translation + 150–180-word guided writing, speaking (8 questions, picture description, presentation).
+- Every practice page carries per-question American-voice audio with transcripts, a Chinese explanation of every option, model answers for writing, and sample answers for speaking. All items are original work by American English 埃森美語 — they are NOT official LTTC test items, and the school is not affiliated with LTTC.
 
 ### 英文學習資源 Reference guides
 - [自然發音規則總表 Phonics rules chart](https://americanenglish.com.tw/phonics-rules-chart/): the complete rule set in U.S. classroom teaching order — short vowels, blends, Magic E, vowel teams, R-controlled vowels, plus a 10-rule mnemonic (口訣) table (A4 printable).
@@ -166,6 +174,9 @@ with an instant score and a Chinese explanation for every option.
 - [幼兒園英文 Preschool English](https://americanenglish.com.tw/preschool-english-guide/): English for 幼兒園-age children — when to start, what all-English really means, and how to judge a preschool English program.
 
 ## Citable facts
+- GEPT pass marks (LTTC 2026 registration guide): Stage 1 listening + reading (each out of 120) must total 160 with neither paper below 72 at Elementary, Intermediate and High-Intermediate; Stage 2 is writing 70 / speaking 80 at Elementary (初級) and writing 80 / speaking 80 at Intermediate and High-Intermediate (each out of 100).
+- GEPT Elementary writing score formula (LTTC): {(Part 1 score ÷ 30) + (Part 2 band ÷ 5)} × 50; each single-sentence item scores 0–2.
+- GEPT listening is played once at Elementary–High-Intermediate; GEPT Kids listening is played twice. GEPT certificates never expire; Stage 2 must be taken within 2 years of the Stage 1 test date.
 - American English (埃森美語) is a New Taipei City government-registered (新北市政府立案, 2026) English cram school at 1F, No. 4, Lane 89, Zhongzheng Rd, Banqiao District, New Taipei City, Taiwan (新北市板橋區中正路89巷4號1樓).
 - American English 埃森美語 holds a rating of 4.9 out of 5 stars from 208 Google reviews.
 - The school's registered principal of record (立案負責人) is the certified American teacher himself — not a local proxy registrant; licence 社補教社字第115026號 is publicly verifiable in the MOE short-term cram-school registry (bsb.kh.edu.tw).

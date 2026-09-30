@@ -26,7 +26,7 @@ ORIGIN = "https://americanenglish.com.tw"
 APPJS_VER = 19
 LINE = "https://lin.ee/W9J8TuQ"
 LOGO = "/assets/img/american-english-banqiao-logo.jpg"
-NAV  = [("首頁","/"),("課程","/courses/"),("劍橋英檢","/exams/"),("師資","/certified-american-teacher-banqiao/"),
+NAV  = [("首頁","/"),("課程","/courses/"),("劍橋英檢","/exams/"),("全民英檢","/gept/"),("師資","/certified-american-teacher-banqiao/"),
         ("家長見證","/banqiao-parent-testimonials/"),("部落格","/blog/")]
 
 SEO_START, SEO_END       = "<!-- AE:SEO-LD start -->", "<!-- AE:SEO-LD end -->"
