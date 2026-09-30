@@ -132,8 +132,8 @@
 "hash": "097ea1d56a7f9bcb76f01db7dee44726"
 },
 "cambridge-practice-tests": {
-"date": "2026-09-25",
-"hash": "b1e54bc2313042c7f2f6349ccb2d9aed"
+"date": "2026-10-01",
+"hash": "adbe67d74a64c5187208ced5a311727d"
 },
 "cambridge-results-lookup": {
 "date": "2026-09-25",
@@ -348,8 +348,8 @@
 "hash": "345fdee4924f1c14d620e122df4470d6"
 },
 "exams": {
-"date": "2026-09-25",
-"hash": "02af1acbd7ed9234fd1284e592bf57c5"
+"date": "2026-10-01",
+"hash": "bc2793b58125517e959f816906bbf0d0"
 },
 "exams/banqiao-school-calendar": {
 "date": "2026-09-30",
@@ -509,7 +509,7 @@
 },
 "gept": {
 "date": "2026-10-01",
-"hash": "e6da6d6a82d0c3fb840d296266538279"
+"hash": "f7617be1b3dbc82476049ff62404f0da"
 },
 "gept-elementary-guide": {
 "date": "2026-10-01",
@@ -533,7 +533,7 @@
 },
 "gept-elementary-practice": {
 "date": "2026-10-01",
-"hash": "d6dea32256d9bfe75855fe523af32247"
+"hash": "d160d824885804e8ba7c25c9d6c111d1"
 },
 "gept-elementary-reading-practice-part1": {
 "date": "2026-10-01",
@@ -581,7 +581,7 @@
 },
 "gept-high-intermediate-practice": {
 "date": "2026-10-01",
-"hash": "0b8f21014123922e4bdc35a39d788747"
+"hash": "d24d99ce10fb3c288d3de024d9c249d8"
 },
 "gept-high-intermediate-reading-practice-part1": {
 "date": "2026-10-01",
@@ -629,7 +629,7 @@
 },
 "gept-intermediate-practice": {
 "date": "2026-10-01",
-"hash": "251c53cfa94e63811d519d4813ccdd11"
+"hash": "61ae19ac9f4965291120aa68566382d2"
 },
 "gept-intermediate-reading-practice-part1": {
 "date": "2026-10-01",
@@ -677,7 +677,7 @@
 },
 "gept-kids-practice": {
 "date": "2026-10-01",
-"hash": "f95ddb5f04a7796ba25de2217804d913"
+"hash": "77f287d4a18a9f68fe292d8d77a0dd65"
 },
 "gept-kids-rw-practice-part1": {
 "date": "2026-10-01",
