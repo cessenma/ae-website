@@ -352,8 +352,8 @@
 "hash": "02af1acbd7ed9234fd1284e592bf57c5"
 },
 "exams/banqiao-school-calendar": {
-"date": "2026-09-21",
-"hash": "d0bb919028e864107590e9c3230c7bd2"
+"date": "2026-09-30",
+"hash": "ff5c57cd346291996c172b4f99dcc723"
 },
 "exams/hours-to-level-up": {
 "date": "2026-08-11",
@@ -508,16 +508,60 @@
 "hash": "568d8fc78afdf684a03c4a2c3270ca2b"
 },
 "gept-elementary-guide": {
-"date": "2026-09-13",
-"hash": "bcfb47652f9bcfca8db000aa5c2e1498"
+"date": "2026-09-30",
+"hash": "e6d757cdc4dcd11fac2b2b938178aa35"
+},
+"gept-elementary-listening-practice-part1": {
+"date": "2026-09-30",
+"hash": "bd805ab9b0ea8ed667ace83bab5ae0ef"
+},
+"gept-elementary-listening-practice-part2": {
+"date": "2026-09-30",
+"hash": "037b4c26d90c5bfb15f39eb838a1aae7"
+},
+"gept-elementary-listening-practice-part3": {
+"date": "2026-09-30",
+"hash": "5c53d98b67e6d6836fa418a69e98aee1"
+},
+"gept-elementary-listening-practice-part4": {
+"date": "2026-09-30",
+"hash": "26dc2ce7f6682b6f6a6ef61e1555786c"
+},
+"gept-elementary-practice": {
+"date": "2026-09-30",
+"hash": "c0eb17441a782ccf67aac89d513a949e"
+},
+"gept-elementary-reading-practice-part1": {
+"date": "2026-09-30",
+"hash": "984a2fb7a814410921b7520a2616ea35"
+},
+"gept-elementary-reading-practice-part2": {
+"date": "2026-09-30",
+"hash": "c835c2a44e5c629154cd8d76b453daae"
+},
+"gept-elementary-reading-practice-part3": {
+"date": "2026-09-30",
+"hash": "450e336017ad43559426dbdafd158a06"
+},
+"gept-elementary-speaking-practice": {
+"date": "2026-09-30",
+"hash": "bda8d0549700860020f613fcbfcc3446"
 },
 "gept-elementary-speaking-writing": {
-"date": "2026-09-13",
-"hash": "178c049b81add52ebce18aa7272f3a6e"
+"date": "2026-09-30",
+"hash": "10ebc10f5aac40fe843bc14fb8e4162b"
 },
 "gept-elementary-vocabulary": {
 "date": "2026-08-07",
 "hash": "be9373ce1530a09d3accbb6fa8e1f31a"
+},
+"gept-elementary-writing-practice-part1": {
+"date": "2026-09-30",
+"hash": "776f34925320b0741164aac99ccc7a53"
+},
+"gept-elementary-writing-practice-part2": {
+"date": "2026-09-30",
+"hash": "a593e46b248cc220d1f1a1f4a27e8498"
 },
 "gept-intermediate-guide": {
 "date": "2026-08-27",
@@ -532,8 +576,8 @@
 "hash": "f86f9972a8ded42ee3c1b55b18f6c45f"
 },
 "gept-results-lookup": {
-"date": "2026-09-13",
-"hash": "c464b13f68a95a927cc76b01c483ad0f"
+"date": "2026-09-30",
+"hash": "242f59c8ad93466f0fd97ed5980fd874"
 },
 "graded-readers-guide": {
 "date": "2026-08-12",
@@ -664,8 +708,8 @@
 "hash": "da3ef173bcd75727d37d5e147e172b94"
 },
 "ket-vs-gept-comparison": {
-"date": "2026-09-22",
-"hash": "020ebf909e5ebb5082a43adf6e7e3121"
+"date": "2026-09-30",
+"hash": "29299218a342b1de1f49ddc01c72a69b"
 },
 "kids-english-banqiao": {
 "date": "2026-08-13",
