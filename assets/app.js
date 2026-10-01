@@ -93,16 +93,46 @@
     }
     // Google "Preferred Sources" button: publisher.js scans for [google-add-preferred-source-btn]
     // when it loads, so it is appended AFTER the footer exists (static index.html footer included).
-    if(document.querySelector('[google-add-preferred-source-btn]') && !document.querySelector('script[src*="swg/js/v1/publisher.js"]')){
-      var ps=document.createElement('script'); ps.async=true; ps.src='https://news.google.com/swg/js/v1/publisher.js'; document.head.appendChild(ps);
+    // It is a ~190 KB bundle for one footer button, so it waits until the footer is near the screen.
+    var pref=document.querySelector('[google-add-preferred-source-btn]');
+    if(pref){
+      var loadPref=function(){
+        if(document.querySelector('script[src*="swg/js/v1/publisher.js"]')) return;
+        var ps=document.createElement('script'); ps.async=true; ps.src='https://news.google.com/swg/js/v1/publisher.js'; document.head.appendChild(ps);
+      };
+      if('IntersectionObserver' in window){
+        var pio=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ pio.disconnect(); loadPref(); } },{rootMargin:'400px 0px'});
+        pio.observe(pref);
+      } else { loadPref(); }
     }
 
     // floating LINE button
     var fab = document.createElement('a');
     fab.className='line-fab'; fab.href=LINE; fab.target='_blank'; fab.rel='noopener';
     fab.setAttribute('aria-label','加 LINE 預約試聽');
-    fab.innerHTML = LINE_SVG;
+    fab.innerHTML = LINE_SVG + '<span class="fab-t">預約試聽</span>';
     document.body.appendChild(fab);
+    (function(){
+      var covered=0, quiz=!!document.querySelector('.prx-form,#prx,.gd-form'), lastY=window.scrollY, down=false, tick=false;
+      function paint(){
+        tick=false;
+        var y=window.scrollY;
+        if(Math.abs(y-lastY)>6){ down = y>lastY; lastY=y; }
+        fab.classList.toggle('fab-open', y<500);
+        // on a practice page the button stays out of the way while the reader scrolls down through the questions
+        fab.classList.toggle('fab-hide', covered>0 || (quiz && down && y>500));
+      }
+      window.addEventListener('scroll',function(){ if(!tick){ tick=true; requestAnimationFrame(paint); } },{passive:true});
+      if('IntersectionObserver' in window){
+        var seen=new Set();
+        var fio=new IntersectionObserver(function(es){
+          es.forEach(function(e){ if(e.isIntersecting) seen.add(e.target); else seen.delete(e.target); });
+          covered=seen.size; if(!tick){ tick=true; requestAnimationFrame(paint); }
+        },{threshold:0.05});
+        document.querySelectorAll('footer.site-footer,.cta-box,.hero-cta').forEach(function(el){ fio.observe(el); });
+      }
+      requestAnimationFrame(paint);
+    })();
 
     // fill rocket icons
     document.querySelectorAll('[data-rocket]').forEach(function(el){ el.innerHTML = ROCKET; });
@@ -114,8 +144,10 @@
   function wire(){
     var header = document.getElementById('siteHeader');
     var progress = document.getElementById('progress');
-    function onScroll(){ header.classList.toggle('scrolled', window.scrollY>8); var h=document.documentElement; progress.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'; }
-    window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+    var busy=false;
+    function onScroll(){ busy=false; header.classList.toggle('scrolled', window.scrollY>8); var h=document.documentElement; progress.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'; }
+    function queue(){ if(!busy){ busy=true; requestAnimationFrame(onScroll); } }
+    window.addEventListener('scroll', queue, {passive:true}); queue();
 
     var burger=document.getElementById('hamburger'), drawer=document.getElementById('drawer');
     function setMenu(open){ document.body.classList.toggle('menu-open',open); burger.setAttribute('aria-expanded',open); burger.setAttribute('aria-label',open?'關閉選單':'開啟選單'); }
@@ -291,7 +323,10 @@
         var val = tier === '54' ? 1770 : tier === '27' ? 890 : tier === '9' ? 590 : 0;
         try{ if(window.fbq) fbq('track', 'Lead', { content_name: 'exam_pack_' + tier, content_category: 'exam_pack', value: val, currency: 'TWD' }); }catch(err){}
       } else if(hasGtag){
-        window.gtag('event', 'line_tap', { page_path: location.pathname, link_text: txt.slice(0, 40) });
+        var pos = a.classList.contains('line-fab') ? 'fab' : a.closest('.site-header') ? 'header' : a.closest('.drawer') ? 'menu'
+                : a.closest('footer') ? 'footer' : a.closest('.cta-box') ? 'cta_box' : a.closest('.page-hero,.hero') ? 'hero'
+                : a.closest('.ae-cta') ? 'mid_page' : 'body';
+        window.gtag('event', 'line_tap', { page_path: location.pathname, link_text: txt.slice(0, 40), cta_position: pos });
       }
     }
   }, true);
