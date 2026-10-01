@@ -26,7 +26,7 @@ em{font-style:italic;color:var(--blue)}
 .bg-navy h2,.bg-navy h3{color:#fff}
 p.body{font-size:clamp(15px,1.6vw,17px);line-height:1.8;color:var(--text-body)}
 .bg-navy p.body{color:rgba(255,255,255,.74)}
-.eyebrow{display:inline-block;font-family:'Baloo 2',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--blue);background:rgba(28,176,246,.12);padding:7px 16px;border-radius:100px}
+.eyebrow{display:inline-block;font-family:'Baloo 2',sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--blue);background:rgba(28,176,246,.12);padding:7px 16px;border-radius:100px}
 /* Eyebrow text is 12px on a tinted pill, so it needs a darkened ink to clear
    WCAG AA 4.5:1. The pill background keeps the brand tint; only the text darkens. */
 .eyebrow-green{color:#067033;background:rgba(6,199,85,.12)}
@@ -99,7 +99,7 @@ p.body{font-size:clamp(15px,1.6vw,17px);line-height:1.8;color:var(--text-body)}
 header.site-header{position:fixed;top:0;left:0;right:0;z-index:150;height:var(--header-h);background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(26,39,82,.06);transition:box-shadow .25s}
 header.site-header.scrolled{box-shadow:0 4px 22px rgba(26,39,82,.09)}
 .nav{height:100%;display:flex;align-items:center;justify-content:space-between}
-.brand{font-family:'Baloo 2',sans-serif;font-size:21px;font-weight:800;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:8px}
+.brand{font-family:'Baloo 2',sans-serif;font-size:21px;font-weight:800;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:8px;min-height:44px}
 .brand b{color:var(--blue);font-weight:800}
 .brand-logo{width:38px;height:38px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(26,39,82,.18)}
 .nav-links{display:flex;align-items:center;gap:26px}
@@ -156,13 +156,31 @@ body.menu-open .drawer{opacity:1;transform:none;pointer-events:auto}
 .page-hero h1{font-size:clamp(34px,5.2vw,54px);margin:14px 0 16px}
 .page-hero .divider{margin:0 auto 20px}
 h1,h2{text-wrap:balance}
+/* an <h1> split by <br> is not balanced by the browser, so the build wraps each part in
+   .h1s: an inline-block is balanced on its own and no line ends up one character long */
+.h1s{display:inline-block;text-wrap:balance;max-width:100%}
+.h1s.kp{word-break:keep-all;overflow-wrap:anywhere}
+.byl-d{white-space:nowrap}
+.byl-more{font-size:13px;margin:6px 0 0}
+.byl-more a{color:#5b6880;text-underline-offset:2px;display:inline-block;padding:4px 0}
+/* desktop: the photo sits beside the title instead of under it, so the page's answer
+   starts on the first screen (the stacked hero was 920-980px tall on a 768px screen) */
+@media(min-width:1024px){
+  .page-hero .wrap:has(> .post-hero){display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);column-gap:52px;align-items:center;text-align:left;max-width:1140px}
+  .page-hero .wrap:has(> .post-hero) > *{grid-column:1;justify-self:start}
+  .page-hero .wrap:has(> .post-hero) > .post-hero{grid-column:2;grid-row:1 / span 12;margin:0;justify-self:stretch;align-self:center}
+  .page-hero .wrap:has(> .post-hero) .divider{margin-left:0;margin-right:0}
+  .page-hero .wrap:has(> .post-hero) h1{font-size:clamp(34px,3.6vw,48px)}
+}
 /* phones: the answer should start on the first screen. The hero lost 36px of padding, the
    eyebrow badge, the decorative photo and the drifting dots; the byline shrinks to a caption. */
 @media(max-width:600px){
   .page-hero{padding-top:calc(var(--header-h) + 20px);padding-bottom:30px}
   .page-hero h1{margin:8px 0 12px}
   .page-hero .eyebrow,.page-hero .post-hero,.page-hero .divider{display:none}
-  .page-hero p:has(> a.byl){font-size:12.5px;line-height:1.5;color:#7c8797;margin:0 0 6px}
+  .page-hero p:has(time){font-size:13px;line-height:1.55;color:#56627a;margin:0 0 4px}
+  .breadcrumb{margin-bottom:0}
+  .breadcrumb a{padding:11px 4px}
   .bg-deco .star{display:none}
 }
 /* Blog photos wear the same pastel frame as the brand illustrations:
@@ -181,8 +199,8 @@ h1,h2{text-wrap:balance}
 .magnet-box p{flex:1 1 280px;margin:0;font-size:15px;line-height:1.75;color:var(--text-body)}
 .magnet-box strong{font-family:'Baloo 2';font-size:16px;color:var(--navy)}
 .magnet-box .btn{flex:0 0 auto}
-.breadcrumb{font-family:'Baloo 2';font-size:13px;font-weight:700;color:#94a3b8;margin-bottom:8px}
-.breadcrumb a{text-decoration:none;color:#94a3b8;display:inline-block;padding:6px 2px}
+.breadcrumb{font-family:'Baloo 2';font-size:13px;font-weight:700;color:#64748b;margin-bottom:8px}
+.breadcrumb a{text-decoration:none;color:#64748b;display:inline-block;padding:6px 2px}
 .breadcrumb a:hover{color:var(--blue)}
 
 /* ── Marquee ── */
@@ -235,7 +253,7 @@ a.card:hover .ico{transform:scale(1.1) rotate(-6deg)}
   .node:nth-child(even){padding-left:18px}
   .node .bubble{flex:0 0 50px;width:50px;height:50px;font-size:20px}
   .node .label{font-size:13px}
-  .node .label small{font-size:11px;margin-top:1px}
+  .node .label small{font-size:12px;margin-top:1px}
 }
 
 /* ── Tabs ── */
@@ -317,7 +335,7 @@ a.card:hover .ico{transform:scale(1.1) rotate(-6deg)}
 .tcard p{color:#374151;line-height:1.85;margin-bottom:18px;font-size:15px}
 .tcard .who{font-family:'Baloo 2';font-weight:700;display:flex;align-items:center;gap:10px}
 .tcard .who small{font-family:'DM Sans';font-weight:400;color:#94a3b8;font-size:12.5px}
-.tcard .tag{margin-left:auto;font-family:'Baloo 2';font-size:11px;font-weight:700;padding:4px 11px;border-radius:100px}
+.tcard .tag{margin-left:auto;font-family:'Baloo 2';font-size:12px;font-weight:700;padding:4px 11px;border-radius:100px}
 
 /* ── FAQ ── */
 .faq{max-width:760px;margin:40px auto 0;display:flex;flex-direction:column;gap:14px}
@@ -353,7 +371,7 @@ a.card:hover .ico{transform:scale(1.1) rotate(-6deg)}
 .post .thumb img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:12px}
 .post .thumb.pf-cream{box-shadow:inset 0 0 0 1px var(--frame-edge)}
 .post .body{padding:24px;flex:1;display:flex;flex-direction:column;gap:10px}
-.post .cat{font-family:'Baloo 2';font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--green)}
+.post .cat{font-family:'Baloo 2';font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--green)}
 .post h3{font-family:'Baloo 2';font-weight:800;font-size:18px;line-height:1.35}
 .post p{font-size:14px;color:var(--text-body);line-height:1.7}
 .post .more{margin-top:auto;font-family:'Baloo 2';font-weight:700;font-size:14px;color:var(--blue)}
@@ -390,16 +408,34 @@ footer.site-footer{background:var(--navy);color:#fff;padding:60px 0 32px;positio
 .foot-logo{font-family:'Baloo 2';font-weight:800;font-size:20px;color:var(--yellow);margin-bottom:10px;display:flex;align-items:center;gap:8px}
 .foot-logo .rk{color:var(--yellow);animation:none}
 .foot-logo-img{width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.25)}
-.foot-tag{font-size:13px;color:rgba(255,255,255,.5);max-width:280px;line-height:1.7}
-.foot-nap{font-size:13px;color:rgba(255,255,255,.6);max-width:300px;line-height:1.8;margin-top:12px}
-.foot-nap a{color:rgba(255,255,255,.85);text-decoration:underline}
+.foot-tag{font-size:14px;color:rgba(255,255,255,.62);max-width:300px;line-height:1.7}
+.foot-nap{font-size:14px;color:rgba(255,255,255,.7);max-width:320px;line-height:1.8;margin-top:12px}
+.foot-nap a{color:rgba(255,255,255,.9);text-decoration:underline;white-space:nowrap}
 .foot-nap a:hover{color:#fff}
 .foot-links{display:flex;gap:44px;flex-wrap:wrap}
-.foot-col h4,.foot-col .foot-h{font-family:'Baloo 2';font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--yellow);margin:0 0 14px}
-.foot-col a{display:block;font-size:13.5px;color:rgba(255,255,255,.6);text-decoration:none;margin-bottom:10px;transition:color .15s}
+.foot-col h4,.foot-col .foot-h{font-family:'Baloo 2';font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--yellow);margin:0 0 14px}
+.foot-col a{display:block;font-size:14px;color:rgba(255,255,255,.7);text-decoration:none;margin-bottom:10px;transition:color .15s}
 .foot-col a:hover{color:#fff}
-.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12px;color:rgba(255,255,255,.4)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:rgba(255,255,255,.62)}
 .foot-pref{margin-top:18px;min-height:40px}
+/* phones: two even columns of links, each link a full-height touch target, and the phone
+   number on a line of its own (the ☎ sign used to be left behind on the address line) */
+@media(max-width:600px){
+  .foot-links{display:grid;grid-template-columns:1fr 1fr;gap:20px 18px;width:100%}
+  .foot-col h4,.foot-col .foot-h{margin-bottom:4px}
+  .foot-col a{margin-bottom:0;min-height:44px;display:flex;align-items:center}
+  .foot-sep{display:none}
+  .foot-nap a{display:block;padding:9px 0}
+}
+/* small touch targets and faint captions on generated pages (their own <style> comes later
+   in the page, so these carry a body prefix to win) */
+@media(max-width:640px){
+  body .prx-nav a,body .prx-nav span.dis{padding:12px 12px}
+  body .ltrans summary{min-height:44px;font-size:14px}
+  a.lemonsqueezy-button[data-pack-tier]{min-height:44px;align-items:center}
+}
+body .prx-note{font-size:14px;color:#5b6880}
+body .ltrans summary{color:#64748b}
 
 /* ── Comparison table ── */
 .compare{max-width:860px;margin:0 auto;border-radius:24px;overflow:hidden;box-shadow:var(--card-shadow);border:2px solid rgba(26,39,82,.06);background:#fff}
@@ -411,7 +447,9 @@ footer.site-footer{background:var(--navy);color:#fff;padding:60px 0 32px;positio
 .compare td{color:#94a3b8}
 .compare td:last-child{background:rgba(6,199,85,.06);color:var(--navy);font-weight:600}
 .compare tr:last-child th,.compare tr:last-child td{border-bottom:none}
-@media(max-width:640px){.compare th,.compare td{padding:11px 10px;font-size:14px}}
+/* phones: row labels may wrap, and a table that is still too wide scrolls inside its card
+   (it used to be cut off at the card edge with no way to reach the last column) */
+@media(max-width:640px){.compare th,.compare td{padding:11px 10px;font-size:14px}.compare tbody th{white-space:normal}.compare{overflow-x:auto;-webkit-overflow-scrolling:touch}.compare td code{overflow-wrap:anywhere;word-break:break-all}}
 
 /* ── Scroll reveal ── */
 .reveal{opacity:0;transform:translateY(32px);transition:opacity .6s ease,transform .6s cubic-bezier(.34,1.4,.64,1)}
@@ -514,13 +552,24 @@ td .say{margin-left:8px}
 .prx-item legend{float:left;width:100%;box-sizing:border-box;margin:0 0 10px;line-height:1.55}
 .prx-item legend+*{clear:both}
 
-/* plain data table for guide pages (pass marks, fees, comparisons) */
-.wtable{width:100%;border-collapse:collapse;margin-top:14px;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(26,39,82,.06)}
-.wtable th,.wtable td{padding:10px 14px;border-bottom:1px solid rgba(26,39,82,.07);text-align:left;font-size:15px;vertical-align:top}
-.wtable thead th{font-family:'Baloo 2',sans-serif;color:var(--navy);background:#F4FAFF}
-.wtable td b,.wtable tbody th{color:var(--navy)}
-.wtable tbody th{font-family:'Baloo 2',sans-serif;font-weight:700;white-space:nowrap}
-.src-note{font-size:13.5px;color:#7c8797;margin-top:10px}
+/* plain data table for guide pages (pass marks, fees, comparisons). Its own class on
+   purpose: 17 pages style a .wtable of their own, and a shared rule under that name leaked
+   into them (it forced 8 of their tables to scroll sideways on a phone). */
+.ftable{width:100%;border-collapse:collapse;margin-top:14px;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(26,39,82,.06)}
+.ftable th,.ftable td{padding:10px 14px;border-bottom:1px solid rgba(26,39,82,.07);text-align:left;font-size:15px;vertical-align:top}
+.ftable thead th{font-family:'Baloo 2',sans-serif;color:var(--navy);background:#F4FAFF}
+.ftable td b,.ftable tbody th{color:var(--navy)}
+.ftable tbody th{font-family:'Baloo 2',sans-serif;font-weight:700}
+.nb{white-space:nowrap}
+.ftable th.grp{background:#F4FAFF;font-size:13.5px;letter-spacing:.5px;color:#4b5873}
+@media(max-width:600px){.ftable th,.ftable td{padding:9px 8px;font-size:14px}}
+.src-note{font-size:13.5px;color:#5b6880;margin-top:10px}
+/* "swipe sideways" cue above a table that is wider than a phone (added by app.js) */
+.tbl-hint{display:none}
+@media(max-width:860px){
+  .tbl-hint{display:block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:12.5px;color:#64748b;text-align:right;margin:10px 2px 4px;transition:opacity .3s}
+  .tbl-hint.gone{opacity:0}
+}
 
 /* "popular guides" link list on the home page, blog index and 404 (tools/seo_build.py) */
 .pop-links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:26px}
@@ -528,5 +577,7 @@ td .say{margin-left:8px}
 .pop-links a:hover{border-color:var(--blue);color:var(--blue-dk)}
 
 /* one-line next step under a free-PDF box (tools/seo_build.py) */
-.ae-cta{font-size:14px;line-height:1.7;color:#5b6880;margin:10px 0 0;padding-left:4px}
-.ae-cta a{color:var(--blue-dk);font-weight:700}
+body p.ae-cta{font-size:14.5px;line-height:1.7;color:#4b5873;margin:10px 0 0;padding-left:4px;text-align:left}
+body p.ae-cta a{color:var(--blue-dk);font-weight:700;display:inline-block;padding:3px 0}
+/* the same line where there is no PDF box: a quiet tinted strip at the end of a section */
+body p.ae-cta.ae-cta-mid{max-width:800px;margin:26px auto 0;padding:12px 16px;background:#F4FAFF;border-radius:12px}

@@ -237,7 +237,7 @@ def patch_page(rows, themes):
     s = sub1(r'(<meta property="og:description" content=")[^"]*(")', lambda m: m.group(1) + e(OG_DESC, quote=True) + m.group(2), s, 0, "og:description")
     s = sub1(r'<h1 class="reveal d1">.*?</h1>', lambda m: f'<h1 class="reveal d1">{H1}</h1>', s, re.S, "h1")
     # visible update line under the author line (idempotent)
-    upd = f'<p class="body reveal d2" id="wl-updated" style="font-size:14px;color:#8a94a3">最後更新：{TODAY}｜字表逐條對照 108 課綱附錄五・表一核對，共 {len(rows):,} 條</p>'
+    upd = f'<p class="body reveal d2" id="wl-updated" style="font-size:14px;color:#8a94a3">字表核對：{TODAY}｜逐條對照 108 課綱附錄五・表一，共 {len(rows):,} 條</p>'
     if 'id="wl-updated"' in s:
         s = sub1(r'<p class="body reveal d2" id="wl-updated"[^>]*>.*?</p>', lambda m: upd, s, re.S, "updated line")
     else:

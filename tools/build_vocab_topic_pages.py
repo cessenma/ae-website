@@ -57,7 +57,7 @@ def cta(line):
     # inserts its "what next" section before — without it the page gets no route block.
     return ('<section class="section bg-blue"><div class="wrap"><div class="center stack reveal">'
             f'<h2>單字背起來了，用得出來嗎？</h2><p class="body">{line}</p>'
-            '<a class="btn btn-primary" href="/line/">預約免費試上一堂</a></div></div></section>')
+            '<a class="btn btn-primary" href="/line/">加 LINE 預約試聽</a></div></div></section>')
 
 N  = DATA["numbers"]; M = DATA["months"]; D = DATA["days"]
 

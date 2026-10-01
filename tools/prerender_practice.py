@@ -68,7 +68,13 @@ def _dims(url):
     if url not in _SIZE:
         f = os.path.join(SITE, url.lstrip("/"))
         try:
-            _SIZE[url] = Image.open(f).size if os.path.exists(f) and not f.endswith(".svg") else None
+            if f.endswith(".svg"):          # PIL cannot open SVG: its own width/height (or viewBox) says the size
+                head = open(f, encoding="utf-8").read(600) if os.path.exists(f) else ""
+                m = re.search(r'<svg[^>]*\bwidth="([\d.]+)"[^>]*\bheight="([\d.]+)"', head) or \
+                    re.search(r'<svg[^>]*\bviewBox="[\d.]+ [\d.]+ ([\d.]+) ([\d.]+)"', head)
+                _SIZE[url] = (int(float(m.group(1))), int(float(m.group(2)))) if m else None
+            else:
+                _SIZE[url] = Image.open(f).size if os.path.exists(f) else None
         except Exception:
             _SIZE[url] = None
     return _SIZE[url]

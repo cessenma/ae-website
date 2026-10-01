@@ -2,11 +2,25 @@
  "108-curriculum-english-guide": {
   "description": "108 課綱把英文從「背多分」變成「素養導向」：核心素養、國小三年級起跑、會考長文素養題與聽力。用美國教育的視角解析改了什麼、家長該做什麼、不必恐慌什麼。"
  },
+ "_wide_titles_ok": [
+  "cambridge-exam-registration-taiwan",
+  "cambridge-flyers-guide",
+  "cambridge-movers-guide",
+  "cambridge-practice-exam-pack",
+  "cambridge-practice-tests",
+  "cambridge-yle-shields",
+  "fce-practice-tests",
+  "gept-practice-tests",
+  "ket-practice-tests",
+  "moe-1200-words-guide",
+  "pet-practice-tests",
+  "pet-prep-guide"
+ ],
  "a2-grammar-guide": {
   "description": "劍橋 A2 Key 官方教師手冊「Language specifications」附錄的 13 個文法類別，一項一項拆開教：例句、台灣孩子最常錯的一題，以及到了 PET（B1）會怎麼加深。"
  },
  "animals-english-vocabulary": {
-  "description": "動物的英文怎麼說？67 個動物英文單字分寵物、農場、野生、海洋、昆蟲與鳥類對照，26 個附原創圖解與單複數提醒。免費 A4 動物單字卡 PDF 下載。"
+  "description": "動物英文對照表（附 A4 單字卡 PDF）：67 個動物單字分寵物、農場、野生、海洋、昆蟲與鳥類，可點聽發音，26 個附原創圖解，並提醒 mouse／mice 等不規則複數。"
  },
  "b1-grammar-guide": {
   "description": "劍橋 B1 Preliminary 官方教師手冊「Language specifications」附錄，B1 比 A2 多考的 7 大文法重點逐項拆解：例句、台灣孩子最常錯的一題。"
@@ -39,7 +53,7 @@
   "description": "雙語小學值得嗎？雙語學校和英文補習班該怎麼選？美籍持證教師誠實比較：沉浸時數的品質真相、體制選擇的代價，以及為什麼很多雙語學校學生還在補英文。"
  },
  "body-parts-english": {
-  "description": "身體部位英文完整對照表，收錄 43 個部位分頭臉、上半身、下半身與體內四組；說明 tooth／teeth、foot／feet 等不規則複數，以及身體部位前面用 my 還是 the。"
+  "description": "身體部位英文對照表（附 A4 列印版 PDF）：43 個部位分頭臉、上半身、下半身與體內四組；說明 tooth／teeth、foot／feet 等不規則複數，以及身體部位前面用 my 還是 the。"
  },
  "cae-c1-advanced-guide": {
   "description": "CAE（C1 Advanced）是劍橋英檢在 FCE 之上的 C1 級考試。整理四份考卷時間與配分、分數怎麼看（180 及格、200 以上 Grade A）、2026 考試日期，以及在台灣誰真正需要 C1。"
@@ -49,24 +63,24 @@
  },
  "cambridge-exam-registration-taiwan": {
   "description": "劍橋英檢（YLE、KET、PET、FCE）在台灣怎麼報名？全台官方授權考場地點、KET／PET for Schools 全年皆可考沒有固定場次、線上報名五個步驟、2026 各級費用表。",
-  "title": "劍橋英檢報名 2026：考試時間、考場地點、報名流程與費用｜埃森美語"
+  "title": "劍橋英檢報名 2026：考試日期與考試時間、考場地點、線上報名流程與費用｜埃森美語"
  },
  "cambridge-exam-worth-it": {
   "description": "劍橋英檢有用嗎？升學到底加不加分？誠實的答案：基北區（台北、新北、基隆）的高中超額比序不採計英語檢定，會考也不加分——但證書終身有效、私中申請與學習歷程用得到。"
  },
  "cambridge-flyers-guide": {
-  "title": "Flyers 程度到哪裡？＝CEFR A2 起點，下一步考 KET｜劍橋英檢"
+  "title": "Flyers 程度到哪裡？＝CEFR A2 起點，下一步考 KET｜劍橋英檢 Flyers 指南"
  },
  "cambridge-movers-guide": {
-  "title": "Movers 程度到哪裡？＝CEFR A1，盾牌怎麼看｜劍橋英檢指南"
+  "title": "Movers 程度到哪裡？＝CEFR A1，盾牌怎麼看｜劍橋英檢 Movers 指南"
  },
  "cambridge-practice-exam-pack": {
   "description": "埃森美語自編的劍橋英檢完整模擬試題，共 54 份：兒童英檢 Starters／Movers／Flyers 與 KET／PET／FCE 各 9 份，每份含題目卷、中文逐題解析、聽力音檔與逐字稿。",
-  "title": "劍橋英檢模擬試題 54 份：兒童英檢＋KET／PET／FCE，附音檔解析｜埃森美語"
+  "title": "劍橋英檢模擬試題 54 份：兒童英檢＋KET／PET／FCE，含聽力音檔與中文解析｜埃森美語"
  },
  "cambridge-practice-tests": {
   "description": "劍橋英檢題庫總表：Starters、Movers、Flyers、KET、PET、FCE 六個級別共 80 頁免費線上模擬試題，依官方題型出題、每題中文解析、聽力附音檔，不用註冊。",
-  "title": "劍橋英檢題庫｜免費線上模擬試題 80 頁＋官方考古題／樣卷下載｜埃森美語"
+  "title": "劍橋英檢題庫｜免費線上模擬試題 80 頁（Starters～FCE）＋官方考古題／樣卷下載與用法｜埃森美語"
  },
  "cambridge-results-lookup": {
   "description": "劍橋英檢成績怎麼查？KET／PET 線上查分四個步驟、成績多久出來、成績單與證書差在哪、YLE 盾牌怎麼看，另附互動盾牌工具與分數計算機。"
@@ -76,7 +90,7 @@
  },
  "cambridge-yle-shields": {
   "description": "劍橋兒童英檢（YLE）成績單上的盾牌是什麼意思？每項最多 5 個、總共 15 個，官方以「10 個以上」作為可以準備下一級的標準。附互動工具，點選盾牌數立刻看懂成績。",
-  "title": "劍橋英檢盾牌怎麼看？Starters／Movers／Flyers 計算與升級標準｜埃森美語"
+  "title": "劍橋英檢盾牌怎麼看？Starters／Movers／Flyers 盾牌計算與升級標準｜埃森美語"
  },
  "cap-english-guide": {
   "description": "會考英文級距怎麼算？閱讀占 80%、聽力占 20%，加權分數對照心測中心當年公布的級距表決定 A++ 到 C；精熟／基礎／待加強怎麼看、國一到國三的分年段準備法。"
@@ -85,7 +99,7 @@
   "description": "埃森美語的英文對照表與 A4 圖表可以免費使用：教師、部落格與補習班都能下載、列印、轉載，只要註明出處並連回原頁。這一頁說明授權範圍與標示方式。"
  },
  "cheer-up-english": {
-  "description": "「加油」的英文沒有單一對應說法，要看場合：考試前用 Good luck、比賽場邊喊 Come on、過程中撐住用 Hang in there、對方已經很努力時用 Take your time。"
+  "description": "「加油」英文 21 種說法對照表（附 A4 PDF）：考試前用 Good luck、比賽場邊喊 Come on、過程中撐住用 Hang in there、對方已經很努力時用 Take your time。"
  },
  "child-hates-english": {
   "description": "孩子不想學英文、一聽到英文就抗拒？美籍持證教師解析「討厭英文」背後的四個真正原因——挫折累積、無聊、高壓比較、沒有成功經驗——以及先降難度、再養興趣的修復順序。"
@@ -94,13 +108,13 @@
   "description": "美語補習班推薦文章看了一堆，還是不知道怎麼選？這一頁不評比品牌，教你比較連鎖兒童美語的方法：直營與加盟的差異、參觀時的五個必問、學費換算單位成本，附比較表模板。"
  },
  "colors-english-vocabulary": {
-  "description": "顏色英文完整對照表，收錄 62 個常用顏色與中文對照，分基本色、深淺、紅粉紫、黃橙棕與藍綠五組；並說明 color 與 colour 的拼法差別、light／dark 的用法。"
+  "description": "顏色英文對照表（附 A4 閃卡 PDF）：62 個常用顏色與中文對照，分基本色、深淺、紅粉紫、黃橙棕與藍綠五組；並說明 color 與 colour 的拼法差別、light／dark 的用法。"
  },
  "cool-english-guide": {
   "description": "Cool English（酷英）是教育部支持、師大團隊建置的免費英語學習平台。國小區／國中區有什麼、帳號與訪客登入、字彙王・英聽王比賽怎麼參加、和因材網差在哪，一次看懂。"
  },
  "countries-english": {
-  "description": "國家英文完整對照表，收錄 80 個國家的英文名稱、中文與國籍形容詞，依亞洲、歐洲、美洲、非洲中東與大洋洲分組；並說明哪些國名前面要加 the、國家與國籍與語言的差別。"
+  "description": "國家英文對照表（附 A4 列印版 PDF）：80 個國家的英文名稱、中文與國籍形容詞，依亞洲、歐洲、美洲、非洲中東與大洋洲分組；並說明哪些國名前面要加 the。"
  },
  "cram-school-vs-tutor-vs-self-study": {
   "description": "兒童英文該上補習班、請英文家教，還是在家自學？美籍持證教師的誠實比較：家教的客製化與同儕缺口、自學路線何時夠用何時不夠、補習班的系統優勢與大班少開口的真相。"
@@ -116,7 +130,7 @@
   "description": "小學英文跟不上怎麼辦？美籍持證教師解析：先診斷落後在哪裡——自然發音斷掉、聽力輸入太少、單字背了不會用、閱讀量是零——再照對的順序補。"
  },
  "english-abbreviations-guide": {
-  "description": "英文縮寫完整對照表，收錄 74 個常用縮寫的中文意思與英文全名，分日常書寫、網路訊息、學校考試、商業職場與單位五組；並說明 e.g. 與 i.e. 的差別、縮寫要不要加句點。"
+  "description": "英文縮寫對照表（附 A4 列印版 PDF）：74 個常用縮寫的中文意思與英文全名，分日常、網路訊息、學校考試、商業職場與單位五組；並說明 e.g. 與 i.e. 的差別與句點用法。"
  },
  "english-alphabet-guide": {
   "description": "A–Z 共 26 個英文字母的大寫小寫對照表，附字母名稱唸法、字母順序，以及 W 為什麼最常唸錯；可免費下載 A4 列印版 PDF，貼在孩子書桌前。",
@@ -151,6 +165,10 @@
  "english-listening-practice": {
   "description": "英文聽力練習完整方法：為什麼單字都會卻聽不懂、跟讀（shadowing）怎麼做才有效、連音與弱化如何拆解，以及依程度分級的 27 頁免費線上聽力練習。"
  },
+ "english-names": {
+  "description": "英文名字怎麼取？老師精選 88 個英文名字（男 43、女 45）附中文唸法與意思；另有男生 307 個、女生 298 個完整清單、取名前的三個判斷與常見地雷，A4 PDF 免費下載。",
+  "title": "英文名字怎麼取？老師精選 88 個＋男生 307、女生 298 個清單｜埃森美語"
+ },
  "english-names-boys": {
   "description": "男生英文名字怎麼取？307 個常用名字完整清單，每個附中文唸法、意思與來源，可依字母、音節、風格篩選並點聽美式發音。另有美國持照教師精選 43 個與三個常見地雷。",
   "title": "男生英文名字 2026：307 個完整清單（附中文唸法、意思與 PDF）｜埃森美語"
@@ -160,13 +178,13 @@
   "title": "女生英文名字 2026：298 個完整清單（附中文唸法、意思與 PDF）｜埃森美語"
  },
  "english-numbers-guide": {
-  "description": "英文數字 0 到 100 完整對照表，每個數字附英文拼法與中文。另有 -teen 與 -ty 的重音分辨法（13 還是 30）、序數與基數的差別、連字號規則與唸電話號碼的方式。"
+  "description": "英文數字 0 到 100 完整對照表（附 A4 列印版 PDF），每個數字附英文拼法與中文，可點聽發音。另有 13 與 30 的重音分辨法、序數與基數的差別、連字號規則與電話號碼唸法。"
  },
  "english-picture-books-guide": {
   "description": "英文繪本推薦怎麼挑？美籍持證教師依年齡分級解析選書原則（0–3 歲硬頁書、3–6 歲重複句型、小學分級讀本），附經典入門書單與對話式親子共讀方法：怎麼問、怎麼回應。"
  },
  "english-pronunciation": {
-  "description": "英文發音完整攻略：母音 17 個、子音 24 個共 41 個音，附例字與嘴型提示；字尾 -s／-ed 的三種唸法、重音規則與連音，並點出台灣學生最常唸錯的三類音。"
+  "description": "英文發音完整攻略（附 A4 發音總表 PDF）：母音 17 個、子音 24 個共 41 個音，附例字與嘴型提示；字尾 -s／-ed 的三種唸法、重音規則與連音，以及台灣學生最常錯的音。"
  },
  "english-punctuation-guide": {
   "description": "英文有頓號嗎？「…」這個符號英文怎麼說？答案：英文沒有頓號（列舉用逗號），… 叫 ellipsis（刪節號）。13 個英文標點符號的名稱、用法與中英差異完整對照。"
@@ -204,7 +222,7 @@
  },
  "fce-practice-tests": {
   "description": "劍橋英檢 FCE（B2 First for Schools） 題庫：15 頁免費線上模擬試題（閱讀與英語運用・寫作・聽力・口說・單字），共 176 題原創題目，依官方題型格式出題。",
-  "title": "FCE 題庫｜免費線上模擬試題 15 頁＋官方樣卷下載（附中文解析）｜埃森美語"
+  "title": "FCE 題庫｜免費線上模擬試題 15 頁（閱讀與英語運用・寫作・聽力・口說・單字）附中文解析＋官方樣卷下載｜埃森美語"
  },
  "fce-prep-guide": {
   "description": "FCE（B2 First for Schools）完整指南：四份考卷的題型與時間配分、Cambridge Scale 分數怎麼看（160 通過、180 以上 Grade A 達 C1）、和 PET 差多少要補多久。"
@@ -281,7 +299,7 @@
   "description": "兒童英文歌推薦哪些？免費英文學習資源怎麼用才有效？美籍持證教師嚴選 Super Simple Songs、Storyline Online、Khan Academy Kids、公共圖書館等免費資源。"
  },
  "fruits-english-vocabulary": {
-  "description": "水果英文完整對照表，收錄 47 種水果與中文對照，特別整理芭樂、蓮霧、釋迦、龍眼、楊桃等台灣常見水果的正確英文說法；並說明水果的可數與不可數、a 與 an 的選擇。"
+  "description": "水果英文對照表（附 A4 閃卡 PDF）：47 種水果與中文對照，特別整理芭樂、蓮霧、釋迦、龍眼、楊桃等台灣水果的正確英文說法；並說明水果的可數與不可數、a 與 an 的選擇。"
  },
  "fuzhong-english-cram-school": {
   "description": "府中是捷運府中站、林家花園一帶的老城區。語言學習拚的是頻率，而頻率常輸給距離——但近不等於好。文中給出誠實的評估框架，以及步行可達府中商圈的全美語小班。"
@@ -291,7 +309,7 @@
   "title": "全民英檢 GEPT｜免費線上模擬試題、通過標準與等級對照｜埃森美語"
  },
  "gept-elementary-guide": {
-  "description": "初試聽力＋閱讀總和 160 分、且單科不低於 72 分；複試寫作 70 分、口說 80 分。最多人敗在「總分夠、單科不夠」。含題型、備考時程、CEFR A2 對照與免費線上模擬試題。",
+  "description": "全民英檢初級幾分通過？初試聽力＋閱讀總和要 160 分，且單科不低於 72 分；複試寫作 70 分、口說 80 分。附通過標準與報名費對照表、備考時程與免費線上模擬試題。",
   "title": "全民英檢初級幾分過？總分 160 還不夠，單科低於 72 一樣不過｜埃森美語"
  },
  "gept-elementary-listening-practice-part1": {
@@ -465,7 +483,7 @@
  },
  "gept-practice-tests": {
   "description": "全民英檢題庫免費線上做：小學英檢、初級、中級、中高級各一整份原創模擬試題，聽力附音檔與逐字稿、每題中文解析、寫作範文、口說可錄音。",
-  "title": "全民英檢題庫｜免費線上模擬試題＋官方歷屆試題整理｜埃森美語"
+  "title": "全民英檢題庫｜免費線上模擬試題（小學英檢・初級・中級・中高級）＋官方歷屆試題整理｜埃森美語"
  },
  "gept-results-lookup": {
   "description": "全民英檢（GEPT）成績查詢完整教學：成績公布日怎麼查、公布當天幾點可以查、三個步驟線上查到分數、網路查詢開放多久、成績單與合格證書多久寄到。",
@@ -494,10 +512,10 @@
   "description": "in on at 怎麼分？at 是「點」、on 是「面或線」、in 是「空間或範圍」，時間和地點都適用。附時間與地點介係詞對照表、最容易錯的陷阱與 10 題自測。"
  },
  "index": {
-  "description": "板橋英文補習班推薦──埃森美語，Google 4.9★（208 則好評）。100% 美籍持證外師、12 人精緻小班、全美語環境，孩子第一堂課就開口說。"
+  "description": "板橋英文補習班推薦──埃森美語，Google 4.9★（208 則評價）。100% 美籍持證外師、12 人精緻小班、全美語環境，孩子第一堂課就開口說。"
  },
  "irregular-verbs-list": {
-  "description": "74 個國中常用不規則動詞的三態總表，按變化型分 6 組記（AAA、ABA、ABB、ABC…），每個動詞可直接跳查，附中文與記憶法。A4 列印版 PDF 免費下載。"
+  "description": "come 的三態是 come→came→come。74 個國中常用不規則動詞三態總表，按變化型分 6 組記（AAA、ABA、ABB、ABC），每個動詞可跳查，附中文、記憶法與 A4 列印版 PDF 下載。"
  },
  "jiangcui-junior-high-english": {
   "description": "江翠國中在松江街 63 號，捷運板南線江子翠站出口 2 一帶。文中談國一銜接落差從哪裡來、段考是誰出題該怎麼準備、會考英語閱讀與聽力的題數與時間。"
@@ -506,14 +524,14 @@
   "description": "江子翠是板橋成熟的生活圈，板南線江子翠站周邊的美語班、安親班密度在板橋數一數二，但多不等於好。四個現場十分鐘就問得出成色的問題、兩種常見行銷話術。"
  },
  "jobs-english": {
-  "description": "職業英文完整對照表，收錄 83 種常見工作的英文與中文，依學校醫療、公共服務、商業辦公、科技工程、餐飲服務、運輸農漁與藝術媒體七組分類。"
+  "description": "職業英文對照表（附 A4 列印版 PDF）：83 種常見工作的英文與中文，依學校醫療、公共服務、商業辦公、科技工程、餐飲服務、運輸農漁與藝術媒體七組分類。"
  },
  "juguang-elementary-english": {
   "description": "莒光國小在莒光路 163 號。學校英語課一節四十分鐘、全班二三十人，孩子輪到開口的次數有限。文中說明中年級差距為何拉開、挑補習班該問的四個問題。"
  },
  "ket-practice-tests": {
   "description": "劍橋英檢 KET（A2 Key for Schools） 題庫：14 頁免費線上模擬試題（閱讀與寫作・聽力・口說・單字），共 91 題原創題目，依官方題型格式出題、每題中文解析。",
-  "title": "KET 題庫｜免費線上模擬試題 14 頁＋官方樣卷下載（附中文解析）｜埃森美語"
+  "title": "KET 題庫｜免費線上模擬試題 14 頁（閱讀與寫作・聽力・口說・單字）附中文解析＋官方樣卷下載｜埃森美語"
  },
  "ket-prep-guide": {
   "description": "KET（A2 Key for Schools）程度多高？教育部公告的英語能力對照表，把它和全民英檢初級並列在 CEFR A2。三份考卷考什麼、幾分通過、官方文法與單字範圍。"
@@ -543,7 +561,7 @@
   "description": "KET（A2 Key for Schools）口說測驗完整模擬對話：2 大題逐字稿，每一句英文下面都附中文翻譯，看得到考官問什麼、好的回答長什麼樣子。"
  },
  "ket-vs-gept-comparison": {
-  "description": "劍橋 KET 和全民英檢初級都對應 CEFR A2，孩子該考哪個？比較兩者的認可度、計分方式、考試結構與 2026 報名費，附 Flyers→KET、初級→PET／中級的等級對照與選擇建議。"
+  "description": "劍橋 KET 和全民英檢初級都對應 CEFR A2，孩子該考哪個？比較兩者的認可度、計分方式、考試結構與報名費，附 Flyers→KET、初級→PET／中級的等級對照與選擇建議。"
  },
  "kids-english-banqiao": {
   "description": "在板橋找兒童英文補習班、兒童美語？中正路靠口碑經營的美籍外師小班：100% 美籍持證教師、每班 12 人以下、5 歲起可入學、劍橋英檢 98% 通過。"
@@ -577,17 +595,18 @@
  },
  "mid-autumn-festival-english": {
   "description": "中秋節快樂英文＝Happy Mid-Autumn Festival！8 句可直接複製的祝福語、20 個單字（月餅 mooncake、柚子 pomelo）、6 句教孩子介紹中秋，另附 A4 列印版 PDF 免費下載。",
-  "title": "中秋節英文怎麼說？8 句祝福語＋20 單字（附免費 PDF）｜埃森美語"
+  "title": "中秋節英文怎麼說？中秋節快樂英文祝福 8 句＋20 單字（附 PDF）｜埃森美語"
  },
  "moe-1200-words-guide": {
   "description": "教育部國中小基本 1200 字詞（108 課綱，共 1,211 條）完整字表線上查：可搜尋、依字母或主題篩選、點單字聽發音；PDF、Excel、CSV 免費下載，逐條對照官方課綱核對。",
-  "title": "教育部 1200 單字表（2026 官方核對）：線上查＋PDF／Excel 下載｜埃森美語"
+  "title": "教育部 1200 單字表（2026 官方核對版）：完整字表線上查＋PDF／Excel 免費下載｜埃森美語"
  },
  "moe-2000-words-guide": {
   "description": "「2000 單字」是 108 課綱英語文參考字彙表的規模：其中約 1,200 字是國中小最基本字詞（會考命題字彙依據），其餘約 800 字主要在國中階段累積。"
  },
  "months-english": {
-  "description": "1 到 12 月的英文與縮寫完整對照，附天數與唸法；Feb.、Apr.、Jul.、Dec. 是幾月一次查清楚，並說明月份前面用 in 還是 on。可點聽發音，附 A4 列印版 PDF。"
+  "description": "1 到 12 月的英文與縮寫完整對照，附天數與唸法；Feb.、Apr.、Jul.、Dec. 是幾月一次查清楚，並說明月份前面用 in 還是 on。可點聽發音，附 A4 列印版 PDF。",
+  "title": "Jul、Feb、Apr、Dec 是幾月？月份英文縮寫 1-12 月對照表＋PDF｜埃森美語"
  },
  "movers-listening-practice-part3": {
   "title": "Movers 聽力 Part 3 練習：名字配對圖片（5 題・附音檔）｜埃森美語"
@@ -638,11 +657,11 @@
  },
  "pet-practice-tests": {
   "description": "劍橋英檢 PET（B1 Preliminary for Schools） 題庫：14 頁免費線上模擬試題（閱讀・寫作・聽力・口說・單字），共 146 題原創題目，依官方題型格式出題、每題中文解析。",
-  "title": "PET 題庫｜免費線上模擬試題 14 頁＋官方樣卷下載（附中文解析）｜埃森美語"
+  "title": "PET 題庫｜免費線上模擬試題 14 頁（閱讀・寫作・聽力・口說・單字）附中文解析＋官方樣卷下載｜埃森美語"
  },
  "pet-prep-guide": {
   "description": "PET（B1 Preliminary for Schools）程度多高？四份試卷各考什麼、幾分通過、官方文法與單字範圍，以及和全民英檢中級怎麼選。每一大題都有免費線上練習題與中文解析。",
-  "title": "PET 程度到哪裡？＝CEFR B1，對照全民英檢中級｜劍橋 PET 指南"
+  "title": "PET 程度到哪裡？＝CEFR B1，對照全民英檢中級｜B1 Preliminary 指南"
  },
  "pet-reading-practice-part1": {
   "description": "PET（B1 Preliminary for Schools）Reading Part 1「三選一短文理解」免費線上練習：5 題原創題目，依官方題型格式編寫，做完立刻對答案、每一題都有中文解析。"
@@ -737,7 +756,7 @@
   "description": "Starters（Pre A1）單字怎麼練？6 個主題、36 題原創練習，全部把單字放回句子裡考——因為考試不會問你中文意思，而是看你在句子裡認不認得出來。"
  },
  "thank-you-english": {
-  "description": "謝謝英文完整對照表：日常口語、正式書面、回應別人道謝的說法，共 30 種，每一句都標明適用場合；並說明 Thank you for 後面要接 -ing 還是名詞。"
+  "description": "謝謝英文 30 種說法對照表（附 A4 PDF）：日常口語、正式書面、回應別人道謝的說法，每一句都標明適用場合；並說明 Thank you for 後面要接 -ing 還是名詞。"
  },
  "wensheng-elementary-english": {
   "description": "文聖國小在文聖街 86 號，屬新埔、文聖一帶的生活圈。這篇談學校英語課的節數限制、中年級最常出現的自然發音與口說落差，以及用四個問題篩選補習班的方法。"

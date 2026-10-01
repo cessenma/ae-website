@@ -11,8 +11,25 @@ Bakes into each static page (so non-JS / AI crawlers see them):
   - a "last updated" line, a share image where the page declares none, and one
     consistent Organization / author / Article graph
 Also regenerates sitemap.xml — <lastmod> comes from data/lastmod.json, a ledger keyed on a
-hash of each page's AUTHORED html (injected blocks stripped), never from mtime or git date —
+content signature of each page (see content_signature), never from mtime or git date —
 and bumps app.js?v=.
+
+lastmod policy (also drives the visible "最後更新" date and JSON-LD dateModified):
+  a page's date moves only when what the reader gets changes: its words, where its links go,
+  which pictures and audio it uses, the data its scripts carry. Ignored on purpose: markup
+  (classes, attributes, tag order), a picture's file format, alt text, the <head> (titles,
+  descriptions), JSON-LD, the author line, button labels, every block this script injects,
+  the tool-owned link blocks (AE:ROUTE, AE:GEPTPRX), the pack offer and the pre-rendered
+  copy of practice questions (AE:PRE — the page's own data script is what counts).
+  - A wording edit that is not a content update (a relabelled line, one more "read next"
+    link): run  tools/backfill_lastmod.py --cosmetic page-a,page-b  — it dates those pages
+    from their history instead of today.
+  - tools/backfill_lastmod.py with no arguments recomputes every date from git history (the
+    day the present content first appeared). Run it after changing content_signature itself.
+  - tools/rebaseline_lastmod.py re-hashes and keeps every date as it is.
+
+--strict (used by tools/build_all.sh): exit non-zero when a title or description will be cut
+off in a search result, or when a page points at a local file that is not on disk.
 
 Idempotent: re-running replaces the marked blocks instead of duplicating.
 app.js is guarded to skip anything already present (see assets/app.js).
@@ -20,8 +37,9 @@ app.js is guarded to skip anything already present (see assets/app.js).
 Run:  ~/.claude/skills/seo/.venv/bin/python3 seo_build.py
 (Lives OUTSIDE site/ so it is never deployed.)
 """
-import os, re, json, datetime, hashlib, subprocess, unicodedata
+import os, re, sys, json, datetime, hashlib, subprocess, unicodedata
 from urllib.parse import urljoin
+from html import unescape as _unescape
 from bs4 import BeautifulSoup
 
 SITE   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # repo root, wherever the checkout lives
@@ -48,9 +66,50 @@ POP_START, POP_END       = "<!-- AE:POPULAR start -->", "<!-- AE:POPULAR end -->
 NEXT_START, NEXT_END     = "<!-- AE:NEXT start -->", "<!-- AE:NEXT end -->"
 # One quiet line under a page's free-PDF box: the reader has just taken something useful, which
 # is the moment to say what the school can do next. Tagged cta_position=mid_page in GA4.
-NEXT_LINE = (f'{NEXT_START}<p class="ae-cta">下載之後：想知道孩子現在的英文程度？'
-             f'<a href="{LINE}" target="_blank" rel="noopener">加 LINE 預約程度評估</a>'
-             f'　·　<a href="/free-trial/">試聽怎麼進行</a></p>{NEXT_END}')
+_NEXT_TAIL = (f'<a href="{LINE}" target="_blank" rel="noopener">加 LINE 預約程度評估</a>'
+              f'　·　<a href="/free-trial/">試聽怎麼進行</a></p>{NEXT_END}')
+NEXT_LINE = f'{NEXT_START}<p class="ae-cta">下載之後：想知道孩子現在的英文程度？' + _NEXT_TAIL
+# The same line for pages with no PDF box, placed at the end of the page's first real section
+# (the pass-mark table, the comparison table, the first how-to). The question is worded for
+# what the reader came for: a pass mark, a choice of exam, or simply where the child stands.
+NEXT_ASK = {"pass": "想知道孩子離通過標準還差多少？", "which": "想知道孩子適合考哪一級？", "level": "想知道孩子現在的英文程度？"}
+NEXT_MID = {
+    "gept-elementary-guide": "pass", "gept-intermediate-guide": "pass", "gept-elementary-speaking-writing": "pass",
+    "ket-prep-guide": "pass", "pet-prep-guide": "pass", "fce-prep-guide": "pass",
+    "cambridge-english-levels": "which", "cambridge-starters-guide": "which", "cambridge-movers-guide": "which",
+    "cambridge-flyers-guide": "which", "ket-vs-gept-comparison": "which", "cambridge-exam-worth-it": "which",
+    "kids-english-exams-guide": "which", "gept-kids-guide": "which",
+    "cap-english-guide": "level", "english-dates-guide": "level", "english-letter-writing-guide": "level",
+    "english-capitalization-guide": "level", "english-self-introduction-kids": "level", "graded-readers-guide": "level",
+    "when-to-start-english-for-kids": "level", "kids-english-guide": "level",
+}
+# No booking line here: the readers are pupils looking for the ministry's login page.
+NEXT_SKIP = {"cool-english-guide"}
+
+def next_mid(html, kind):
+    """Insert the booking line at the end of the first real section after the hero: the first
+    of the two opening sections that holds a table, else the second section."""
+    hero = html.find('<section class="page-hero')
+    if hero == -1:
+        return html
+    pos, secs = html.find("</section>", hero), []
+    end_main = html.rfind("</main>")
+    while len(secs) < 2:
+        a = html.find("<section", pos)
+        if a == -1 or (end_main != -1 and a > end_main):
+            break
+        b = html.find("</section>", a)
+        if b == -1:
+            break
+        secs.append((a, b)); pos = b
+    if len(secs) < 2:
+        return html          # a single long section: the line would land at the very end
+    a, b = next(((a, b) for a, b in secs if "<table" in html[a:b]), secs[1])
+    at = html.rfind("</div>", a, b)
+    if at == -1:
+        return html
+    line = f'{NEXT_START}<p class="ae-cta ae-cta-mid">{NEXT_ASK[kind]}' + _NEXT_TAIL
+    return html[:at] + line + html[at:]
 
 # The pages people actually arrive on, one click from the homepage, the blog index and the
 # 404 page. The top search page sat four clicks deep and six pages could not be reached from
@@ -74,11 +133,22 @@ TEACHER   = "/certified-american-teacher-banqiao/"
 ORG_ID    = ORIGIN + "/#organization"
 PERSON_ID = ORIGIN + "/#christopher"
 OG_DEFAULT = "/assets/img/og-default.jpg"
-BYLINE_LINK = f'<a class="byl" href="{TEACHER}">Christopher</a>'
+BYLINE_LINK = f'<a class="byl" href="{TEACHER}">Christopher</a>'      # earlier form, still undone on read
+BYL_START, BYL_END = "<!-- AE:BYL start -->", "<!-- AE:BYL end -->"
+BYLINE_RE = re.compile(r'(<p[^>]*>(?:作者：Christopher|本文由埃森美語創辦人 Christopher 撰寫)[^<]*)(</p>)')
+# Pictures that were copied onto other pages as their share image along with the template they
+# were built from: file name -> the one page that may keep it ("" = none: the second was a
+# close-up of a RUSSIAN dictionary, the share image of twenty English-vocabulary pages).
+COPIED_IMG = {"kk-phonetics-dictionary-pronunciation-symbols.webp": "kk-phonetics-vs-phonics/",
+              "kk-chart-dictionary-closeup.webp": ""}
 ARIA_H2 = ' role="heading" aria-level="2"'
-ICON_OLD = '<link rel="icon" href="/assets/img/american-english-banqiao-logo.jpg">'
-ICON_NEW = ('<link rel="icon" href="/favicon.ico" sizes="48x48">'
-            '<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">')
+# Icons: the same three tags on every page. Hand-written pages carried a 340px JPEG logo,
+# generated pages carried nothing, so any icon tag found in the page is dropped and the set
+# below goes into the SEO block (Google wants a square icon of 48px or a multiple of it).
+ICON_ANY_RE = re.compile(r'<link\b(?=[^>]*\brel="(?:shortcut )?icon")[^>]*>\n?')
+ICON_NEW = ('<link rel="icon" href="/favicon.ico" sizes="48x48">\n'
+            '<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">\n'
+            '<link rel="apple-touch-icon" href="/apple-touch-icon.png">')
 # The Google rating is on screen on these pages only. Google ignores a rating a business
 # marks up about itself, and marking it up where the reader cannot see it is against the
 # review-snippet guidelines — so the markup stays where the number is visible.
@@ -214,7 +284,7 @@ def footer_block():
         f'<div class="foot-logo"><img class="foot-logo-img" src="{LOGO_SMALL}" alt="American English 埃森美語 logo" '
         'width="34" height="34" loading="lazy" decoding="async">American English 埃森美語</div>'
         '<p class="foot-tag">板橋中正路在地深耕的美籍外師英文補習班。100% 美籍持證教師、每班 12 人小班制。</p>'
-        f'<p class="foot-nap">220 新北市板橋區中正路89巷4號1樓　｜　<a href="tel:{tel}">☎ 0928-067-772</a></p></div>'
+        f'<p class="foot-nap">220 新北市板橋區中正路89巷4號1樓<span class="foot-sep">　｜　</span><a href="tel:{tel}">☎ 0928-067-772</a></p></div>'
         '<nav class="foot-links" aria-label="頁尾導覽">'
         '<div class="foot-col"><p class="foot-h">課程</p><a href="/banqiao-english-cram-school/">板橋英文補習班</a>'
         '<a href="/courses/">課程總覽</a><a href="/kids-english-banqiao/">兒童美語</a>'
@@ -246,11 +316,21 @@ def popular_block():
             f"</div></section>\n{POP_END}\n")
 
 def pmeta_block(date):
+    """'Last updated' strip for pages with no byline; sits at the end of <main>."""
     y, m, d = date.split("-")
     return (f"{PMETA_START}\n"
             f'<div class="page-meta"><div class="wrap"><span>最後更新：<time datetime="{date}">{y} 年 {int(m)} 月 {int(d)} 日</time></span>'
             f'<span>內容製作：<a href="{TEACHER}">埃森美語 American English</a></span></div></div>\n'
             f"{PMETA_END}\n")
+
+def byline_date(date):
+    """The same date, appended to the byline. Plain text on purpose: a link inside this short
+    paragraph makes text extractors (trafilatura) drop the whole author line."""
+    y, m, d = date.split("-")
+    return (f'{PMETA_START}｜<span class="byl-d">最後更新 <time datetime="{date}">{y} 年 {int(m)} 月 {int(d)} 日</time></span>'
+            f'{PMETA_END}')
+
+BYL_MORE = f'{BYL_START}<p class="byl-more"><a href="{TEACHER}">關於作者</a></p>{BYL_END}'
 
 def snippet_width(t):
     """Display width the way a search result measures it: a CJK or full-width character
@@ -275,7 +355,7 @@ def apply_snippet(html, rel):
         except FileNotFoundError:
             _SNIPPETS = {}
     e = _SNIPPETS.get(os.path.dirname(rel) or os.path.splitext(rel)[0])
-    if not e:
+    if not isinstance(e, dict):
         return html
     def meta(html, attr, name, value):
         v = html_escape(value)
@@ -360,11 +440,11 @@ def org_node(rel, own=None):
     d["url"] = ORIGIN + "/"
     if isinstance(d.get("founder"), dict):
         d["founder"] = dict(PERSON_REF)
+    d.pop("review", None)           # the marked-up review texts were not the quotes shown on the page
     if rel not in RATING_PAGES:
-        d.pop("aggregateRating", None); d.pop("review", None)
-    elif own:                                   # a rating page keeps the reviews it shows
-        for k in ("aggregateRating", "review"):
-            if k in own: d[k] = own[k]
+        d.pop("aggregateRating", None)
+    elif own and "aggregateRating" in own:
+        d["aggregateRating"] = own["aggregateRating"]
     return d
 
 ARTICLE_TYPES = {"Article", "BlogPosting", "NewsArticle"}
@@ -374,12 +454,15 @@ def _types(node):
     t = node.get("@type")
     return set(t) if isinstance(t, list) else {t}
 
-def normalize_ld(html, rel, canon, headline, desc, image, published, modified):
+DATED_TYPES = {"Quiz", "CollectionPage", "WebApplication", "WebPage", "LearningResource"}
+
+def normalize_ld(html, rel, canon, headline, desc, image, published, modified, has_byline):
     """One consistent graph out of the hand-written JSON-LD: the same Organization node on
-    every page, one author entity with an @id, Article dates that follow the page, and no
-    Article block describing a different URL (nine pages were shipping the BlogPosting of
-    the article they had been copied from). Returns (html, types found)."""
+    every page, one author that matches the visible credit, dates that follow the page, and
+    no Article block describing a different URL (nine pages were shipping the BlogPosting
+    of the article they had been copied from). Returns (html, types found)."""
     found = set()
+    author = dict(PERSON_REF) if has_byline else {"@id": ORG_ID}
     def refs(v):
         """Swap an inline copy of the school ({"@type":"Organization","name":…}) for a reference."""
         ch = False
@@ -394,10 +477,40 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified):
             for x in v:
                 ch = refs(x) or ch
         return ch
+    def article_for_other_page(node):
+        if not (isinstance(node, dict) and _types(node) & ARTICLE_TYPES):
+            return False
+        me = node.get("mainEntityOfPage")
+        me = me.get("@id") if isinstance(me, dict) else me
+        return me != canon
+
+    docs = []
+    for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>\n?', html, flags=re.S):
+        try:
+            docs.append((m, json.loads(m.group(1))))
+        except ValueError:
+            docs.append((m, None))
+    def nodes_of(d):
+        if isinstance(d, dict):
+            return d["@graph"] if isinstance(d.get("@graph"), list) else [d]
+        return d if isinstance(d, list) else []
+    # a page-level node of its own (a calculator's WebApplication, a generated Article …)
+    # means a copied Article block is a leftover: drop it rather than rewrite it
+    own = any(isinstance(n, dict) and (_types(n) & OWN_TYPES) and not article_for_other_page(n)
+              for _, d in docs if d is not None for n in nodes_of(d))
+    # Two article nodes about this same URL (five pronunciation pages kept the BlogPosting of
+    # the article they were copied from next to their own Article): keep the page's own one —
+    # the block under the AE:ARTICLE-LD marker — else the first, and drop the rest.
+    mine = [(m, n) for m, d in docs if d is not None for n in nodes_of(d)
+            if isinstance(n, dict) and (_types(n) & ARTICLE_TYPES) and not article_for_other_page(n)]
+    extra = set()
+    if len(mine) > 1:
+        marked = [n for m, n in mine if html[:m.start()].rstrip().endswith("<!-- AE:ARTICLE-LD -->")]
+        keep_node = marked[0] if marked else mine[0][1]
+        extra = {id(n) for _, n in mine if n is not keep_node}
+
     def fix(node):
         changed = False
-        if not isinstance(node, dict):
-            return changed
         ts = _types(node)
         found.update(t for t in ts if t)
         if node.get("@id") == ORG_ID and ts & {"EducationalOrganization", "LocalBusiness", "Organization"}:
@@ -413,9 +526,7 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified):
                                          "credentialCategory": node["hasCredential"]}
                 changed = True
         elif ts & ARTICLE_TYPES:
-            me = node.get("mainEntityOfPage")
-            me = me.get("@id") if isinstance(me, dict) else me
-            if me != canon:                    # block copied from another page: rewrite it for this one
+            if article_for_other_page(node):          # the page's only page-level block: rewrite it
                 node["headline"], node["description"], node["mainEntityOfPage"] = headline[:110], desc, canon
                 node["datePublished"] = published
                 if image: node["image"] = image
@@ -424,12 +535,22 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified):
             mod = max(modified, pub[:10])
             if node.get("dateModified") != mod:
                 node["dateModified"] = mod; changed = True
+            if "@id" not in node:
+                node["@id"] = canon + "#article"; changed = True
+            if image and not node.get("image"):
+                node["image"] = image; changed = True
+        elif ts & DATED_TYPES:
+            pub = node.get("datePublished") or published
+            mod = max(modified, pub[:10])
+            if node.get("datePublished") != pub or node.get("dateModified") != mod:
+                node["datePublished"], node["dateModified"] = pub, mod; changed = True
         if node.get("@id") != ORG_ID:
             changed = refs(node) or changed
-        # any page-level node written by this school's founder points at the one author entity
+        # the author in the markup is whoever the page credits on screen: the founder where
+        # there is a byline, the school where the page says "內容製作：埃森美語"
         au = node.get("author")
-        if isinstance(au, dict) and au.get("name") == "Christopher" and au != PERSON_REF:
-            node["author"] = dict(PERSON_REF); changed = True
+        if isinstance(au, dict) and (au.get("name") == "Christopher" or au.get("@id") in (PERSON_ID, ORG_ID)) and au != author:
+            node["author"] = dict(author); changed = True
         # the exam pack is a download: tiers told apart by sku, no shipping block
         if "Product" in ts:
             offers = node.get("offers")
@@ -439,16 +560,106 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified):
                 if "sku" not in of and of.get("price"):
                     of["sku"] = "ae-exam-pack-" + str(of["price"]); changed = True
         return changed
-    def sub(m):
-        try:
-            d = json.loads(m.group(1))
-        except ValueError:
-            return m.group(0)
-        nodes = d.get("@graph", [d]) if isinstance(d, dict) else d
-        ch = [fix(n) for n in (nodes if isinstance(nodes, list) else [nodes])]
-        return f'<script type="application/ld+json">{jd(d)}</script>' if any(ch) else m.group(0)
-    html = re.sub(r'<script type="application/ld\+json">(.*?)</script>', sub, html, flags=re.S)
+
+    for m, d in reversed(docs):
+        if d is None:
+            continue
+        changed = False
+        if id(d) in extra or (own and article_for_other_page(d)):
+            html = html[:m.start()] + html[m.end():]
+            continue
+        for holder in ([d["@graph"]] if isinstance(d, dict) and isinstance(d.get("@graph"), list) else [d] if isinstance(d, list) else []):
+            keep = [n for n in holder if not (id(n) in extra or (own and article_for_other_page(n)))]
+            if len(keep) != len(holder):
+                holder[:] = keep; changed = True
+        for n in nodes_of(d):
+            if isinstance(n, dict):
+                changed = fix(n) or changed
+        if changed:
+            tail = "\n" if m.group(0).endswith("\n") else ""
+            html = html[:m.start()] + f'<script type="application/ld+json">{jd(d)}</script>{tail}' + html[m.end():]
     return html, found
+
+H1_RE = re.compile(r"(<h1\b[^>]*>)(.*?)(</h1>)", re.S)
+def h1_unwrap(html):
+    """Undo h1_segments (each wrapper closes right before a <br> or the </h1>)."""
+    m = H1_RE.search(html)
+    if not m or '<span class="h1s' not in m.group(2):
+        return html
+    inner = re.sub(r'<span class="h1s(?: kp)?">', "", m.group(2))
+    inner = re.sub(r"</span>(<br\s*/?>)", r"\1", inner)
+    inner = re.sub(r"</span>$", "", inner)
+    inner = re.sub(r"<wbr\s*/?>", "", inner)
+    return html[:m.start(2)] + inner + html[m.end(2):]
+
+H1_LINE = 18          # display units that fit one headline line on a 360px phone (9 Chinese characters)
+# Phrase boundaries marked by hand for the busiest pages whose title has no punctuation to
+# break at: (text as written, same text with <wbr> where a line may break). Applied at build,
+# so a regenerated page keeps its hint.
+H1_WBR = {
+    "gept-elementary-guide": [("</em>準備完整指南", "</em><wbr>準備完整指南")],
+    "english-alphabet-guide": [("26 個字母大小寫一次學會", "26 個字母大小寫<wbr>一次學會")],
+    "cool-english-guide": [("教育部免費英語平台怎麼用", "教育部免費<wbr>英語平台<wbr>怎麼用")],
+    "phonics-rules-chart": [("</em>規則總表＋口訣表", "</em>規則<wbr>總表＋口訣表"), ("從字母音到長母音的完整整理", "從字母音到長母音的<wbr>完整整理")],
+    "irregular-verbs-list": [("</em>完整列表", "</em><wbr>完整列表"), ("分類記憶法與常錯排行", "分類記憶法與<wbr>常錯排行")],
+    "moe-2000-words-guide": [("課綱字表用法與擴充策略", "課綱字表用法<wbr>與擴充策略")],
+    "english-tenses-chart": [("12 時態用法與最常錯的地方", "12 時態用法與<wbr>最常錯的地方")],
+    "graded-readers-guide": [("主要系列比較與使用方法", "主要系列比較<wbr>與使用方法")],
+    "cambridge-exam-registration-taiwan": [("考場、流程與費用須知（2026）", "考場、流程與費用<wbr>須知（2026）")],
+    "ket-prep-guide": [("（A2 Key for Schools）準備完整指南", "（A2 Key for Schools）<wbr>準備完整指南")],
+    "english-dates-guide": [("11 號、13 日、", "11&nbsp;號、13&nbsp;日、")],      # keep the number with its counter
+}
+for _lv in ("starters", "movers", "flyers", "ket", "pet", "fce"):          # 「X 題庫：免費線上模擬試題 N 頁」
+    H1_WBR[_lv + "-practice-tests"] = [("免費線上模擬試題", "免費線上<wbr>模擬試題")]
+def _phrase_safe(part):
+    """True when the part can be told to break only at punctuation and spaces (.kp) without
+    leaving a line of under four characters or a phrase too long for one line. Chinese has
+    no spaces, so a browser otherwise balances by cutting through a word (通｜過標準)."""
+    if "<wbr" in part:
+        return True                      # the author marked the phrase boundaries by hand
+    text = re.sub(r"[ \t\r\n]+", " ", _unescape(re.sub(r"<[^>]+>", "", part))).strip()   # a no-break space stays inside its piece
+    pieces = [x for x in re.findall(r"[^ 、，：？！・]+[、，：？！・]*|[、，：？！・]+", text) if x]
+    gaps = [m.group(0) for m in re.finditer(r" +", text)]
+    if len(pieces) < 2 or any(snippet_width(x) > H1_LINE for x in pieces):
+        return False
+    if snippet_width(text) <= H1_LINE:
+        return False                     # one line anyway
+    lines, cur = [], 0
+    for i, x in enumerate(pieces):
+        wx = snippet_width(x)
+        sp = 1 if (i and text[text.find(x) - 1:text.find(x)] == " ") else 0
+        if cur and cur + sp + wx > H1_LINE:
+            lines.append(cur); cur = wx
+        else:
+            cur += sp + wx
+    lines.append(cur)
+    return min(lines) >= 8
+
+def h1_segments(html, page=""):
+    """A title written as two lines (<br>) is not balanced by the browser, so a phone left
+    one or two characters alone on a line on 48 pages. Each part gets its own inline-block
+    (.h1s), which the browser does balance; parts that divide cleanly at punctuation also get
+    .kp (break at phrase boundaries only)."""
+    m = H1_RE.search(html)
+    if not m:
+        return html
+    body = m.group(2)
+    for old, new in H1_WBR.get(page, []):
+        body = body.replace(old, new)
+    parts = re.split(r"<br\s*/?>", body)
+    if any(len(re.findall(r"<(?!/|br\b|wbr\b)[a-zA-Z][^>]*>", p)) != len(re.findall(r"</[a-zA-Z0-9]+>", p)) for p in parts):
+        return html          # a tag runs across the break: leave it alone
+    if len(parts) < 2 and not _phrase_safe(parts[0]):
+        return html[:m.start(2)] + body + html[m.end(2):]     # one part: the browser balances it natively
+    inner = "<br>".join(f'<span class="h1s{" kp" if _phrase_safe(p) else ""}">{p}</span>' for p in parts)
+    return html[:m.start(2)] + inner + html[m.end(2):]
+
+def h1_text(h1):
+    """Text of an <h1>: a <br> is a space, an inline <em> is not (get_text(" ") turned
+    「<em>真正的</em>」 into 「 真正的 」)."""
+    for br in h1.find_all("br"):
+        br.replace_with(" ")
+    return re.sub(r"\s+", " ", h1.get_text()).strip()
 
 def faq_ld(soup):
     faqs = []
@@ -478,7 +689,7 @@ def breadcrumb_ld(soup, page_url):
                       "item": urljoin(page_url, a.get("href", ""))})
         i += 1
     h1 = soup.select_one("h1")
-    name = re.sub(r"\s+", " ", h1.get_text(" ", strip=True)) if h1 else (soup.title.get_text(strip=True) if soup.title else "")
+    name = h1_text(h1) if h1 else (soup.title.get_text(strip=True) if soup.title else "")
     parts.append({"@type": "ListItem", "position": i, "name": name})
     return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": parts}
 
@@ -507,6 +718,8 @@ def process_page(path, css_ver="", crit=""):
     html = open(path, encoding="utf-8").read()
     original = html          # kept so we can skip writing files this build did not change
     html = apply_snippet(html, rel)
+    if rel == "chart-license/index.html":
+        html = license_rows(html)
     soup = BeautifulSoup(html, "lxml")
 
     # Attribute order is not guaranteed: anything round-tripped through BeautifulSoup
@@ -532,7 +745,11 @@ def process_page(path, css_ver="", crit=""):
     html = strip_block(html, FOOT_START, FOOT_END)
     html = strip_block(html, PMETA_START, PMETA_END)
     html = strip_block(html, POP_START, POP_END)
+    html = re.sub(re.escape(BYL_START) + r".*?" + re.escape(BYL_END), "", html, flags=re.S)
+    html = html.replace(BYLINE_LINK, "Christopher")
     html = re.sub(re.escape(NEXT_START) + r".*?" + re.escape(NEXT_END), "", html, flags=re.S)
+    html = ICON_ANY_RE.sub("", html)
+    html = h1_unwrap(html)
     if "</head>" not in html or not re.search(r"<body[^>]*>", html):
         return rel, "SKIP (no head/body)"
 
@@ -542,25 +759,35 @@ def process_page(path, css_ver="", crit=""):
     published = min(published_date(rel, today), modified)
     title = soup.title.get_text(strip=True) if soup.title else ""
     h1 = soup.select_one("h1")
-    headline = re.sub(r"\s+", " ", h1.get_text(" ", strip=True)) if h1 else title.replace(BRAND_SUFFIX, "")
+    headline = h1_text(h1) if h1 else BRAND_RE.sub("", title)
     md = soup.find("meta", attrs={"name": "description"})
     desc = (md.get("content") or "").strip() if md else ""
     own_og = re.search(r'<meta[^>]*property="og:image"[^>]*>', html)
     if own_og:
         mm = re.search(r'content="([^"]+)"', own_og.group(0))
         image = mm.group(1) if mm else ORIGIN + OG_DEFAULT
+        local = image.replace(ORIGIN, "") if image.startswith(ORIGIN) else None
+        # a share image that is not there, or one copied from the article the page was built from
+        if mm and ((local and not os.path.exists(os.path.join(SITE, local.lstrip("/"))))
+                   or any(k in image and not (own and rel.startswith(own)) for k, own in COPIED_IMG.items())):
+            better = urljoin(ORIGIN, share_image(rel, soup))
+            html = html.replace(image, better)
+            html = re.sub(r'<meta property="og:image:(?:width|height|alt)"[^>]*>\n?', "", html)
+            image = better
     else:
         image = urljoin(ORIGIN, share_image(rel, soup))
     article_page = bool(bc) and rel not in NOT_ARTICLE and rel not in SELF_CONTAINED
+    byline = BYLINE_RE.search(html) if rel not in SELF_CONTAINED else None
+    has_byline = bool(byline)
 
-    html, found = normalize_ld(html, rel, canon, headline, desc, image, published, modified)
+    html, found = normalize_ld(html, rel, canon, headline, desc, image, published, modified, has_byline)
 
     # --- build SEO-LD head block ---
     seo = [SEO_START]
     if rel != "404.html":                      # an error page has no language alternates
         seo += [f'<link rel="alternate" hreflang="zh-Hant-TW" href="{canon}">',
                 f'<link rel="alternate" hreflang="x-default" href="{canon}">']
-    seo.append('<link rel="apple-touch-icon" href="/apple-touch-icon.png">')
+    seo.append(ICON_NEW)
     if not own_og:
         seo.append(f'<meta property="og:image" content="{image}">')
     if 'name="twitter:card"' not in html:
@@ -572,13 +799,20 @@ def process_page(path, css_ver="", crit=""):
     # org node for pages that define none of their own
     if '"@id":"' + ORG_ID + '"' not in html.replace('{"@id":"' + ORG_ID + '"}', ""):
         seo.append(f'<script type="application/ld+json">{jd(dict({"@context": "https://schema.org"}, **org_node(rel)))}</script>')
-    # an Article node for content pages that carry no page-level type of their own
+    # a page-level node for content pages that carry none of their own: an Article where the
+    # page has a byline, a plain WebPage (dated, published by the school) where it does not
     if article_page and not (found & OWN_TYPES):
-        seo.append('<script type="application/ld+json">' + jd({
-            "@context": "https://schema.org", "@type": "Article", "headline": headline[:110],
-            "description": desc, "inLanguage": "zh-Hant-TW", "mainEntityOfPage": canon, "image": image,
-            "datePublished": published, "dateModified": modified,
-            "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}}) + "</script>")
+        if has_byline:
+            node = {"@context": "https://schema.org", "@type": "Article", "@id": canon + "#article",
+                    "headline": headline[:110], "description": desc, "inLanguage": "zh-Hant-TW",
+                    "mainEntityOfPage": canon, "image": image, "datePublished": published, "dateModified": modified,
+                    "author": dict(PERSON_REF), "publisher": {"@id": ORG_ID}}
+        else:
+            node = {"@context": "https://schema.org", "@type": "WebPage", "@id": canon + "#webpage", "url": canon,
+                    "name": headline[:110], "description": desc, "inLanguage": "zh-Hant-TW",
+                    "primaryImageOfPage": image, "datePublished": published, "dateModified": modified,
+                    "publisher": {"@id": ORG_ID}}
+        seo.append('<script type="application/ld+json">' + jd(node) + "</script>")
     if rel == TEACHER.strip("/") + "/index.html":
         seo.append('<script type="application/ld+json">' + jd({
             "@context": "https://schema.org", "@type": "ProfilePage", "url": canon,
@@ -623,20 +857,27 @@ def process_page(path, css_ver="", crit=""):
                     f'\n<script src="/assets/app.js?v={_APPJS}"></script>\n' + html[cut:])
 
     mb = html.find('<div class="magnet-box')
-    if mb != -1 and rel not in SELF_CONTAINED:
+    pdir = os.path.dirname(rel)
+    if mb != -1 and rel not in SELF_CONTAINED and pdir not in NEXT_SKIP:
         end = html.find("</div>", mb)
         if end != -1:
             end += len("</div>")
             html = html[:end] + NEXT_LINE + html[end:]
+    elif mb == -1 and pdir in NEXT_MID:
+        html = next_mid(html, NEXT_MID[pdir])
     if rel in POPULAR_ON:
         at = html.rfind('<section class="section bg-blue">') if rel != "404.html" else html.rfind("</main>")
         if at != -1:
             html = html[:at] + popular_block() + html[at:]
-    html = html.replace(ICON_OLD, ICON_NEW)
-    # byline: the author's name links to the teacher page (it was plain text on ~150 pages)
-    if rel != TEACHER.strip("/") + "/index.html":
-        html = html.replace("作者：Christopher｜", "作者：" + BYLINE_LINK + "｜")
-        html = html.replace("本文由埃森美語創辦人 Christopher 撰寫", "本文由埃森美語創辦人 " + BYLINE_LINK + " 撰寫")
+    if rel not in SELF_CONTAINED:
+        html = h1_segments(html, os.path.dirname(rel))
+    # byline: the date goes on the author line, and a separate small link leads to the teacher page
+    own_date = "最後更新" in html
+    if has_byline:
+        mb2 = BYLINE_RE.search(html)
+        if mb2:
+            html = (html[:mb2.end(1)] + ("" if own_date else byline_date(modified)) + mb2.group(2)
+                    + BYL_MORE + html[mb2.end():])
     # heading order: when the first heading after the H1 is an h3/h4 (a signpost card, the
     # task-format box), tell assistive tech it sits at level 2 — the tag and its styling stay
     m1 = re.search(r"</h1>", html)
@@ -648,8 +889,11 @@ def process_page(path, css_ver="", crit=""):
 
     # footer and "last updated" line: after </main>, else ahead of the closing scripts
     if rel not in SELF_CONTAINED:
-        tail = (pmeta_block(modified) if article_page else "") + \
-               ("" if '<footer class="site-footer"' in html else footer_block())
+        if article_page and not has_byline and not own_date:      # the strip closes <main>
+            at = html.rfind("</main>")
+            if at != -1:
+                html = html[:at] + pmeta_block(modified) + html[at:]
+        tail = "" if '<footer class="site-footer"' in html else footer_block()
         if tail:
             at = html.find('<footer class="site-footer"')
             if at == -1:
@@ -690,31 +934,68 @@ def process_page(path, css_ver="", crit=""):
 LASTMOD_LEDGER = os.path.join(SITE, "data", "lastmod.json")
 _INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM_END), (SEO_START, SEO_END),
              (FOOT_START, FOOT_END), (PMETA_START, PMETA_END), (POP_START, POP_END), (NEXT_START, NEXT_END),
+             (BYL_START, BYL_END),
              # the pack offer is a sales block repeated on ~100 pages: a price or button
              # change is not a change to the page (it stamped 95 URLs with one date on 09-25)
              ("<!-- AE:PACKOFFER -->", "<!-- /AE:PACKOFFER -->"),
              # "what next" link blocks are navigation the tools add (route_blocks.py, gept_links.py)
-             ("<!-- AE:ROUTE -->", "<!-- /AE:ROUTE -->"), ("<!-- AE:GEPTPRX -->", "<!-- /AE:GEPTPRX -->")]
+             ("<!-- AE:ROUTE -->", "<!-- /AE:ROUTE -->"), ("<!-- AE:GEPTPRX -->", "<!-- /AE:GEPTPRX -->"),
+             # practice questions baked into the HTML by prerender_practice.py are a copy of the
+             # page's own data script, which the signature already reads
+             ("<!--AE:PRE-->", "<!--/AE:PRE-->"), ("<!-- AE:QUIZ-LD start -->", "<!-- AE:QUIZ-LD end -->"),
+             # the audio player snippet build_word_audio.py appends (the buttons' data-w is what counts)
+             ("<!-- AE:AUDIO start -->", "<!-- AE:AUDIO end -->")]
 
-def authored_hash(html):
-    """Hash of what the reader gets: the <body>, minus every injected block and minus
-    JSON-LD. Head-only edits (a title or description trim) and schema clean-ups no longer
-    move <lastmod> or the visible "last updated" date."""
+SIG_ATTRS = ("href", "src", "poster", "data-w", "data-src", "value")
+def content_signature(html):
+    """What the reader gets from a page, as text: its words, where its links go, which
+    pictures and audio it uses and the data its scripts carry — and nothing about how that
+    is marked up. Head, site chrome, footer, JSON-LD, <style>, every injected block, the
+    author line, button labels, alt text and a picture's file format are left out."""
     for a, b in _INJECTED:
         html = re.sub(re.escape(a) + r".*?" + re.escape(b), "", html, flags=re.S)
     m = re.search(r"<body[^>]*>(.*)</body>", html, flags=re.S)
     if m:
         html = m.group(1)
-    html = re.sub(r'<script type="application/ld\+json">.*?</script>\s*', "", html, flags=re.S)
-    html = re.sub(r'<script src="/assets/app\.js\?v=[0-9a-f]+"></script>\s*', "", html)
-    # the byline link and the heading-level hint are added by this build, not by the author
-    html = html.replace(BYLINE_LINK, "Christopher").replace(ARIA_H2, "")
-    # Tools that round-trip a page through BeautifulSoup (build_word_audio) re-emit every tag
-    # with its attributes sorted onto one line. The reader sees nothing new, so hash the
-    # parsed form: the hand-formatted and the round-tripped page then agree, and <lastmod>
-    # stops moving on serialiser noise (it moved on 15 untouched pages on 2026-09-22).
-    html = str(BeautifulSoup(html, "html.parser"))
-    return hashlib.md5(re.sub(r"\s+", " ", html).strip().encode("utf-8")).hexdigest()
+    html = re.sub(r'<script type="application/ld\+json">.*?</script>', "", html, flags=re.S)
+    html = re.sub(r'<script src="/assets/app\.js\?v=[0-9a-f]+"></script>', "", html)
+    html = re.sub(r"<!--.*?-->", "", html, flags=re.S)
+    html = re.sub(r"<wbr\s*/?>", "", html)              # line-break hints are not content
+    soup = BeautifulSoup(html, "html.parser")
+    for el in soup.select("header.site-header, nav.drawer, footer, style, noscript, .breadcrumb, p.byl-more"):
+        el.decompose()
+    for el in soup.find_all("p"):          # the author credit is a label, not content
+        t = el.get_text(strip=True)
+        if t.startswith(("作者：Christopher", "本文由埃森美語創辦人")):
+            el.decompose()
+    out = []
+    for el in soup.descendants:
+        name = getattr(el, "name", None)
+        if name is None:                   # a text node (script text included: practice data lives there)
+            par = el.parent
+            if par is not None and par.name in ("a", "button") and "btn" in " ".join(par.get("class") or []):
+                continue                   # a button label can be reworded without the page changing
+            t = re.sub(r"\s+", " ", str(el)).strip()
+            if par is not None and par.name == "script":      # picture paths inside page data: same rule as src
+                t = re.sub(r"\.(png|jpe?g|webp|avif|gif)(?=[\"'\\])", "", t, flags=re.I)
+            if t:
+                out.append(t)
+        else:
+            for k in SIG_ATTRS:
+                v = el.get(k)
+                if not v:
+                    continue
+                if k in ("src", "poster", "data-src"):       # the picture, not its file format
+                    v = re.sub(r"\?.*$", "", v)
+                    v = re.sub(r"\.(png|jpe?g|webp|avif|gif)$", "", v, flags=re.I)
+                out.append(f"[{k}={v}]")
+    return re.sub(r"\s+", " ", " ".join(out)).strip()
+
+def authored_hash(html):
+    """Hash of content_signature(): <lastmod> and the visible "last updated" date move only
+    when the words, pictures, links or practice data of a page change. A new class name, an
+    attribute order, PNG to WebP, a reworded button or a title trim do not move them."""
+    return hashlib.md5(content_signature(html).encode("utf-8")).hexdigest()
 
 def load_ledger():
     try:
@@ -780,6 +1061,28 @@ def chart_manifest():
     except Exception:
         return {}
 
+def license_rows(html):
+    """/chart-license/ lists every chart with its address. The list was typed by hand and
+    went stale: 29 rows ending in .png after the charts became .webp (every address was a
+    404), and 15 newer charts missing. The rows now come from the chart manifest."""
+    recs = sorted(chart_manifest().values(), key=lambda r: (r.get("page", ""), r.get("slug", "")))
+    recs = [r for r in recs if os.path.exists(os.path.join(SITE, r["png"].lstrip("/")))
+            and os.path.exists(os.path.join(SITE, r.get("page", ""), "index.html"))]
+    if not recs:
+        return html
+    rows = "\n".join(
+        f'<tr><td><a href="/{r["page"]}/">{html_escape(r.get("title") or r["slug"])}</a></td>'
+        f'<td class="lic-dim">{r["w"]}×{r["h"]}</td><td><code>{r["png"]}</code></td></tr>' for r in recs)
+    html = re.sub(r'(<thead><tr><th>對照表</th><th>尺寸</th><th>圖片網址</th></tr></thead>\s*<tbody>\n).*?(\n\s*</tbody>)',
+                  lambda m: m.group(1) + rows + m.group(2), html, count=1, flags=re.S)
+    kk = next((r for r in recs if r["slug"] == "kk-phonetic-chart-full"), None)
+    if kk:      # the copy-and-paste sample uses the same file the table lists
+        html = re.sub(r'(&lt;img src="https://americanenglish\.com\.tw)/assets/img/charts/kk-phonetic-chart-full\.\w+(")',
+                      lambda m: m.group(1) + kk["png"] + m.group(2), html)
+        html = re.sub(r'(alt="KK音標表完整對照" width=")\d+(" height=")\d+(")',
+                      lambda m: f'{m.group(1)}{kk["w"]}{m.group(2)}{kk["h"]}{m.group(3)}', html)
+    return html
+
 def rebuild_sitemap():
     sm = os.path.join(SITE, "sitemap.xml")
     xml = open(sm, encoding="utf-8").read()
@@ -824,19 +1127,56 @@ def rebuild_sitemap():
     # every A4 download a page links to belongs in the sitemap (10 of 23 were missing)
     linked = set()
     for d, _, fs in os.walk(SITE):
-        if "index.html" in fs and ".git" not in d:
+        if "index.html" in fs and ".git" not in d and os.path.relpath(os.path.join(d, "index.html"), SITE) not in SELF_CONTAINED:
             linked.update(re.findall(r'href="(/assets/downloads/[^"#?]+\.pdf)"', open(os.path.join(d, "index.html"), encoding="utf-8").read()))
     for href in sorted(linked):
         if os.path.exists(os.path.join(SITE, href.lstrip("/"))) and f"<loc>{ORIGIN}{href}</loc>" not in xml:
             xml = xml.replace("</urlset>", f"  <url><loc>{ORIGIN}{href}</loc></url>\n</urlset>")
     xml = re.sub(r"<url>.*?</url>", add_lastmod, xml, flags=re.S)
+    xml = re.sub(r"\n[ \t]*<url>", "\n  <url>", xml)
+    # lint: every listed page must exist, be indexable and be its own canonical
+    for loc in re.findall(r"<loc>([^<]+)</loc>", xml):
+        relp = loc.replace(ORIGIN, "").strip("/")
+        if os.path.splitext(relp)[1]:
+            if not os.path.exists(os.path.join(SITE, relp)): print(f"  ::warning:: sitemap lists a missing file: {loc}")
+            continue
+        f = os.path.join(SITE, relp, "index.html") if relp else os.path.join(SITE, "index.html")
+        if not os.path.exists(f):
+            print(f"  ::warning:: sitemap lists a missing page: {loc}"); continue
+        t = open(f, encoding="utf-8").read()
+        if re.search(r'<meta[^>]+name="robots"[^>]+noindex', t): print(f"  ::warning:: sitemap lists a noindex page: {loc}")
+        c = re.search(r'rel="canonical"[^>]*href="([^"]+)"|href="([^"]+)"[^>]*rel="canonical"', t)
+        if c and (c.group(1) or c.group(2)) != loc: print(f"  ::warning:: sitemap URL is not its own canonical: {loc}")
     open(sm, "w", encoding="utf-8").write(xml)
     save_ledger(ledger); _LEDGER = ledger
     return sum(1 for _ in re.finditer(r"<lastmod>", xml))
 
+LOCAL_REF_RE = re.compile(r'(?:src|href|content|poster|data-w|data-src)="((?:https://americanenglish\.com\.tw)?/[^"#?\s]+\.[A-Za-z0-9]{2,5})(?:[?#][^"]*)?"')
+def lint_files(pages):
+    """Every local file a page points at (pictures, share images, PDFs, audio, scripts) must
+    exist. Two share images and 29 chart addresses were dead for weeks before a scan caught them."""
+    missing = {}
+    for p in pages:
+        rel = os.path.relpath(p, SITE)
+        t = open(p, encoding="utf-8").read()
+        for ref in set(LOCAL_REF_RE.findall(t)) | set(re.findall(r'"(https://americanenglish\.com\.tw/assets/[^"#?\s]+)"', t)):
+            path = ref.replace(ORIGIN, "")
+            if path.startswith("//") or os.path.splitext(path)[1].lower() in (".html", ".htm", ".tw", ".com"):
+                continue
+            if not os.path.exists(os.path.join(SITE, path.lstrip("/"))):
+                missing.setdefault(path, []).append(rel)
+    print(f"file lint: {len(missing)} local files referenced but not on disk")
+    for path, rels in sorted(missing.items())[:40]:
+        print(f"  missing {path}   <- {rels[0]}" + (f" (+{len(rels) - 1} more)" if len(rels) > 1 else ""))
+    return len(missing)
+
 def lint_snippets(pages):
     """Titles and descriptions that a search result will cut off, measured by width."""
     long_t, long_d, short_d = [], [], []
+    try:        # titles that already earn their clicks are left as written, even where they run wide
+        proven = set(json.load(open(SNIPPETS_FILE, encoding="utf-8")).get("_wide_titles_ok", []))
+    except FileNotFoundError:
+        proven = set()
     for p in pages:
         rel = os.path.relpath(p, SITE)
         if rel in SELF_CONTAINED or rel == "404.html":
@@ -846,14 +1186,15 @@ def lint_snippets(pages):
         md = sp.find("meta", attrs={"name": "description"})
         d = (md.get("content") or "").strip() if md else ""
         tw, dw = snippet_width(BRAND_RE.sub("", t)), snippet_width(d)
-        if tw > TITLE_MAX: long_t.append((tw, rel))
+        if tw > TITLE_MAX and (os.path.dirname(rel) or "index") not in proven: long_t.append((tw, rel))
         if dw > DESC_MAX: long_d.append((dw, rel))
         elif dw < DESC_MIN: short_d.append((dw, rel))
-    print(f"snippet lint: {len(long_t)} titles > {TITLE_MAX} units · {len(long_d)} descriptions > {DESC_MAX} · "
-          f"{len(short_d)} descriptions < {DESC_MIN}")
+    print(f"snippet lint: {len(long_t)} titles > {TITLE_MAX} units ({len(proven)} proven titles left wide on purpose) · "
+          f"{len(long_d)} descriptions > {DESC_MAX} · {len(short_d)} descriptions < {DESC_MIN}")
     for label, rows in (("title too wide", long_t), ("description too wide", long_d), ("description too short", short_d)):
         for w, rel in sorted(rows, reverse=True)[:12]:
             print(f"  {label:<22} {w:>4}  {rel}")
+    return len(long_t) + len(long_d) + len(short_d)
 
 if __name__ == "__main__":
     pages = sorted([os.path.join(d, f) for d, _, fs in os.walk(SITE) for f in fs if f.endswith(".html")])
@@ -865,6 +1206,10 @@ if __name__ == "__main__":
         print(f"  {rel:<52} {msg}")
     n = rebuild_sitemap()
     print(f"sitemap.xml: {n} <lastmod> dates written")
-    lint_snippets(pages)
+    problems = lint_snippets(pages) + lint_files(pages)
     print("Done. (app.js cache key = %s)" % _APPJS)
     print(f"      critical CSS + deferred GA4 re-baked; styles.css cache key = {css_ver}")
+    # build_all.sh runs with --strict: a snippet that will be cut off or a file that is not
+    # there stops the build instead of scrolling past in the log
+    if problems and "--strict" in sys.argv:
+        sys.exit(f"{problems} lint problem(s) above: fix them, or run without --strict")

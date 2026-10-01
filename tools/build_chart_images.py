@@ -60,15 +60,15 @@ SPECS = {
     alt="教育部國小英文1200單字分類表，依主題整理的必備單字對照",
     foot="完整字表與 Excel／PDF 下載"),
  "animals-english-table": dict(
-    page="animals-english-vocabulary", tables="all", cols=2,
+    page="animals-english-vocabulary", tables="all", cols=2, cards="figure.pb",
     title="動物英文 對照表",
-    sub="哺乳類 ・ 鳥類 ・ 水生 ・ 昆蟲 ・ 爬蟲兩棲",
-    alt="動物英文對照表：常見動物的英文名稱與中文對照，附KK音標",
+    sub="67 個動物單字 ・ 寵物 ・ 農場 ・ 野生 ・ 海洋 ・ 昆蟲與鳥類",
+    alt="動物英文對照表：67個常見動物的英文名稱與中文對照，分寵物、農場、野生、海洋、昆蟲與鳥類",
     foot="americanenglish.com.tw"),
 }
 
 SPECS.update({
- "english-numbers-chart": dict(page="english-numbers-guide", cols=4, max_rows=101,
+ "english-numbers-chart": dict(page="english-numbers-guide", cols=4, max_rows=102,   # header + 0..100
    title="英文數字 1-100 對照表", sub="0 到 100 ・ 英文拼法與中文對照",
    alt="英文數字1到100完整對照表，每個數字的英文拼法與中文對照",
    foot="可儲存列印｜americanenglish.com.tw"),
@@ -285,7 +285,7 @@ def reflow(table_html, cols):
     out.append("</table>")
     return "".join(out)
 
-def extract(page, which="all", max_rows=None, only=None):
+def extract(page, which="all", max_rows=None, only=None, cards=None):
     p = os.path.join(SITE, page, "index.html")
     soup = BeautifulSoup(open(p, encoding="utf-8").read(), "html.parser")
     out, used = [], 0
@@ -308,6 +308,27 @@ def extract(page, which="all", max_rows=None, only=None):
         allr = tb2.find_all("tr")
         for extra in allr[len(keep):]:
             extra.decompose()
+        # Picture cards above a table are words of the same group (the animals page shows
+        # 26 of its 67 words as cards): put them at the top of the table so the chart
+        # carries the whole group, not only the words that happen to sit in the table.
+        if cards and h is not None:
+            extra_rows = []
+            for el in h.find_all_next():
+                if el is tb:
+                    break
+                if el in soup.select(cards):
+                    en, zh = el.find("b"), el.find("span")
+                    if en and zh:
+                        extra_rows.append(f"<tr><th>{html.escape(en.get_text(strip=True))}</th><td>{html.escape(zh.get_text(strip=True))}</td></tr>")
+            body = tb2.find("tbody") or tb2
+            first = body.find("tr")
+            for r in reversed(extra_rows):
+                node = BeautifulSoup(r, "html.parser").find("tr")
+                if first is not None:
+                    first.insert_before(node)
+                else:
+                    body.append(node)
+                first = node
         for a in tb2.find_all("a"):
             a.replace_with(a.get_text())
         for bad in tb2.find_all(["button", "audio", "svg", "script"]):
@@ -336,7 +357,7 @@ def extract(page, which="all", max_rows=None, only=None):
 
 def build(slug, spec):
     groups = extract(spec["page"], spec.get("tables", "all"),
-                     spec.get("max_rows"), spec.get("only"))
+                     spec.get("max_rows"), spec.get("only"), spec.get("cards"))
     if not groups:
         print(f"  !! {slug}: no tables found on /{spec['page']}/")
         return None

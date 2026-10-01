@@ -11,4 +11,4 @@ python3 tools/build_chart_pdfs.py
 python3 tools/build_word_audio.py
 python3 tools/prerender_practice.py   # bake practice questions into the HTML (needs Playwright)
 python3 tools/normalize_head.py
-python3 tools/seo_build.py
+python3 tools/seo_build.py --strict   # stops on a cut-off snippet or a missing file

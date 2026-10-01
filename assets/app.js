@@ -118,7 +118,7 @@
         tick=false;
         var y=window.scrollY;
         if(Math.abs(y-lastY)>6){ down = y>lastY; lastY=y; }
-        fab.classList.toggle('fab-open', y<500);
+        fab.classList.toggle('fab-open', y<80);        // labelled at the top of the page, a plain circle once reading starts
         // on a practice page the button stays out of the way while the reader scrolls down through the questions
         fab.classList.toggle('fab-hide', covered>0 || (quiz && down && y>500));
       }
@@ -129,9 +129,29 @@
           es.forEach(function(e){ if(e.isIntersecting) seen.add(e.target); else seen.delete(e.target); });
           covered=seen.size; if(!tick){ tick=true; requestAnimationFrame(paint); }
         },{threshold:0.05});
-        document.querySelectorAll('footer.site-footer,.cta-box,.hero-cta').forEach(function(el){ fio.observe(el); });
+        document.querySelectorAll('footer.site-footer,.cta-box,.hero-cta,.ae-cta').forEach(function(el){ fio.observe(el); });
       }
       requestAnimationFrame(paint);
+    })();
+
+    // a table wider than the phone screen scrolls sideways inside its box: say so above it
+    (function(){
+      if(!window.matchMedia || !window.matchMedia('(max-width:860px)').matches) return;
+      var done=[];
+      function mark(){
+        document.querySelectorAll('main table').forEach(function(tb){
+          var w=tb.parentElement;
+          while(w && w!==document.body){ var ox=getComputedStyle(w).overflowX; if(ox==='auto'||ox==='scroll') break; w=w.parentElement; }
+          if(!w || w===document.body || done.indexOf(w)>-1 || w.scrollWidth-w.clientWidth<12) return;
+          done.push(w);
+          var prev=w.previousElementSibling;                     // the page already says so itself
+          if(prev && /左右滑動/.test(prev.textContent||'')) return;
+          var hint=document.createElement('p'); hint.className='tbl-hint'; hint.setAttribute('aria-hidden','true'); hint.textContent='← 表格可左右滑動 →';
+          w.parentNode.insertBefore(hint,w);
+          w.addEventListener('scroll',function(){ hint.classList.add('gone'); },{once:true,passive:true});
+        });
+      }
+      mark(); window.addEventListener('load',mark);
     })();
 
     // fill rocket icons
@@ -158,7 +178,15 @@
     var deco=document.querySelector('.bg-deco');
     if(deco && !reduce){
       var cols=['var(--yellow)','var(--blue)','var(--purple)','var(--green)'];
-      for(var i=0;i<18;i++){ var s=document.createElement('span'); s.className='star'; var size=6+(i%4)*4; s.style.cssText='width:'+size+'px;height:'+size+'px;border-radius:50%;background:'+cols[i%4]+';left:'+((i*53)%100)+'%;top:'+((i*37)%100)+'%;animation-delay:'+(i*0.2)+'s'; deco.appendChild(s); }
+      // On a wide screen the dots keep to the margins beside the text column (they used to
+      // land on headings); where the margins are too thin there are no dots at all.
+      var dw=deco.getBoundingClientRect().width||window.innerWidth, col=deco.parentElement?deco.parentElement.querySelector('.wrap'):null;
+      var inner=deco.parentElement && deco.parentElement.classList.contains('page-hero') && window.innerWidth>860;   // the home hero keeps its scatter
+      var gut=(inner&&col)?Math.max(0,(col.getBoundingClientRect().left-deco.getBoundingClientRect().left-24)/dw*100):100;
+      for(var i=0;i<18;i++){
+        var x=(i*53)%100;
+        if(gut<100){ if(gut<3) break; x = x<50 ? x/50*gut : 100-gut+(x-50)/50*gut; }
+        var s=document.createElement('span'); s.className='star'; var size=6+(i%4)*4; s.style.cssText='width:'+size+'px;height:'+size+'px;border-radius:50%;background:'+cols[i%4]+';left:'+x.toFixed(1)+'%;top:'+((i*37)%100)+'%;animation-delay:'+(i*0.2)+'s'; deco.appendChild(s); }
       var scene=document.getElementById('scene'), heroEl=document.querySelector('.hero');
       if(scene && heroEl){ heroEl.addEventListener('mousemove',function(e){ var x=(e.clientX/window.innerWidth-.5), y=(e.clientY/window.innerHeight-.5); scene.style.transform='translate('+(x*18)+'px,'+(y*18)+'px)'; deco.style.transform='translate('+(x*-12)+'px,'+(y*-12)+'px)'; }); }
     }
@@ -307,6 +335,14 @@
       var v = t === '54' ? 1770 : t === '27' ? 890 : 590;
       try{ if(window.fbq) fbq('track', 'InitiateCheckout', { content_name: 'exam_pack_' + t + '_' + lv, content_category: 'exam_pack', value: v, currency: 'TWD' }); }catch(err){}
       return;
+    }
+    // the "how the trial works" link in a mid-page line is a step toward booking: count it too
+    var tr = e.target.closest ? e.target.closest('.ae-cta a[href="/free-trial/"]') : null;
+    if(tr && typeof window.gtag === 'function') window.gtag('event', 'trial_info_click', { page_path: location.pathname, cta_position: 'mid_page' });
+    var ct = e.target.closest ? e.target.closest('a[href^="tel:"],a[href*="maps.app.goo.gl"],a[href*="google.com/maps"]') : null;
+    if(ct && typeof window.gtag === 'function'){
+      window.gtag('event', (ct.getAttribute('href')||'').indexOf('tel:')===0 ? 'phone_click' : 'map_click',
+        { page_path: location.pathname, cta_position: ct.closest('footer') ? 'footer' : 'body' });
     }
     var a = e.target.closest ? e.target.closest('a[href*="lin.ee"],a[href*="line.me"]') : null;
     if(a){

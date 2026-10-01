@@ -12,6 +12,7 @@ Data: data/english-names-boys.json / -girls.json (n, p=唸法, m=意思, o=來�
 The "老師精選" star is read from the page's own curated tables, so the two never drift.
 
 Re-runnable: replaces the <!-- AE:NAMES-TABLE --> block and rewrites title/desc/H1.
+`--hub` only refreshes the teachers' picks list on /english-names/ (leaves the two pages alone).
 Run tools/seo_build.py afterwards.
 """
 import datetime, html, json, os, re, sys
@@ -130,7 +131,7 @@ def block(kind, cfg, names, picked):
       <tbody id="nm-body">{"".join(trs)}</tbody></table>
       <div class="nm-empty" id="nm-empty" hidden>沒有符合的名字——放寬一個條件試試。</div>
     </div>
-    <p class="nm-note">「中文唸法」是幫家長抓重音和音節的提示，不是標準音標；真正的發音請點名字聽。「意思」與「來源」取常見的語源說法，同一個名字常有不止一種解釋。清單更新：{TODAY}。另一頁：<a href="{cfg['other'][0]}">{cfg['other'][1]}完整清單</a>；取名原則見<a href="/kids-english-names-guide/">小孩的英文名字怎麼取</a>。</p>
+    <p class="nm-note">「中文唸法」是幫家長抓重音和音節的提示，不是標準音標；真正的發音請點名字聽。「意思」與「來源」取常見的語源說法，同一個名字常有不止一種解釋。另一頁：<a href="{cfg['other'][0]}">{cfg['other'][1]}完整清單</a>；取名原則見<a href="/kids-english-names-guide/">小孩的英文名字怎麼取</a>。</p>
     {JS}
   </div>
 </section>
@@ -186,6 +187,68 @@ def patch(kind, cfg):
     print(f"  /{cfg['page']}/  {total} names · {npick} starred · {len(s):,} chars")
 
 
-if __name__ == "__main__":
+def picks(page_html):
+    """[(group label, [names])] from the curated tables above the full list."""
+    head = page_html.split("<!-- AE:NAMES-TABLE start -->")[0]
+    out = []
+    for m in re.finditer(r'<table class="wtable">.*?</table>', head, flags=re.S):
+        h3 = re.findall(r"<h3[^>]*>(.*?)</h3>", head[:m.start()], flags=re.S)
+        label = re.sub(r"<[^>]+>", "", h3[-1]) if h3 else ""
+        label = re.sub(r"^\s*\d+\s*", "", label)
+        label = re.sub(r"（\d+ 個）", "", label).strip()
+        out.append((label, re.findall(r"<tr><th>([A-Za-z]+)</th>", m.group(0))))
+    return out
+
+
+def hub():
+    """/english-names/ carries the teachers' picks as a real list (43 boys + 45 girls) so the
+    page that answers 「英文名字」 holds names, not only links to the two full lists."""
+    p = os.path.join(SITE, "english-names", "index.html")
+    if not os.path.exists(p):
+        return
+    e = html.escape
+    parts, total = [], 0
     for kind, cfg in PAGES.items():
-        patch(kind, cfg)
+        page = open(os.path.join(SITE, cfg["page"], "index.html"), encoding="utf-8").read()
+        data = {n["n"]: n for n in json.load(open(os.path.join(SITE, "data", f"english-names-{kind}.json"), encoding="utf-8"))["names"]}
+        rows, n = [], 0
+        for label, names in picks(page):
+            short = "老師常推" if "老師" in label else label
+            got = [data[x] for x in names if x in data]
+            if not got:
+                continue
+            n += len(got)
+            # the style is a heading row, not a fourth column: four columns do not fit a phone
+            rows.append(f'<tr><th colspan="3" class="grp">{e(short)}（{len(got)} 個）</th></tr>')
+            for d in got:
+                rows.append(f'<tr><th class="nb">{e(d["n"])}</th><td class="nb">{e(d["p"])}</td><td>{e(d["m"])}</td></tr>')
+        total += n
+        full = len(data)
+        parts.append(
+            f'    <h3 class="reveal" style="margin-top:34px">{cfg["zh"]}英文名字：老師精選 {n} 個</h3>\n'
+            f'    <div class="reveal" style="overflow-x:auto"><table class="ftable"><thead><tr><th>名字</th><th>中文唸法</th><th>意思</th></tr></thead><tbody>\n'
+            + "\n".join(rows) +
+            f'\n</tbody></table></div>\n'
+            f'    <p class="body reveal" style="margin-top:12px"><a href="/{cfg["page"]}/">看完整 {full} 個{cfg["zh"]}英文名字（可篩選、點聽發音）→</a></p>')
+    blk = ('<!-- AE:NAMES-PICKS start -->\n<section class="section" id="picks">\n  <div class="wrap">\n'
+           f'    <div class="center stack reveal"><span class="eyebrow eyebrow-green">老師精選</span><h2>老師精選 <em>{total} 個英文名字</em></h2></div>\n'
+           '    <div class="prose reveal" style="margin-top:14px"><p>下面是我們在教室裡實際推薦、用得久的名字：孩子唸得出來、家人叫得順、長大以後也合身。'
+           '「中文唸法」是幫家長抓重音和音節的提示，不是音標；想聽發音，或要找更多名字，到男生、女生的完整清單。</p></div>\n'
+           + "\n".join(parts) + '\n  </div>\n</section>\n<!-- AE:NAMES-PICKS end -->\n')
+    s = open(p, encoding="utf-8").read()
+    if "<!-- AE:NAMES-PICKS start -->" in s:
+        s = sub1(r"<!-- AE:NAMES-PICKS start -->.*?<!-- AE:NAMES-PICKS end -->\n?", lambda m: blk, s, re.S, "NAMES-PICKS block")
+    else:   # first run: right under the three entry cards, ahead of 取名前的三個判斷
+        at = s.find('<section class="section bg-soft">', s.find("</section>", s.find('<section class="page-hero">')) )
+        if at < 0:
+            sys.exit("hub: insertion point not found")
+        s = s[:at] + blk + "\n" + s[at:]
+    open(p, "w", encoding="utf-8").write(s)
+    print(f"  /english-names/  {total} picks listed")
+
+
+if __name__ == "__main__":
+    if "--hub" not in sys.argv:
+        for kind, cfg in PAGES.items():
+            patch(kind, cfg)
+    hub()

@@ -1,78 +1,94 @@
 {
 "108-curriculum-english-guide": {
 "date": "2026-08-13",
-"hash": "57e56ead8b5044416aafe74505e0b83f"
+"hash": "a8ce4f9092b0df32c0d19af25c530237"
 },
 "404": {
 "date": "2026-10-01",
-"hash": "da8c55dc7ac339d3e1a14de2dc8f8e77"
+"hash": "c40c79cb35c21569812ee6fb2e858ae4"
 },
 "a2-grammar-guide": {
-"date": "2026-10-01",
-"hash": "18c0533f7531688ac15cdca056373538"
+"date": "2026-09-15",
+"hash": "f3cda2fdba193481612b5e12f8698686"
 },
 "a2-vocabulary-practice": {
-"date": "2026-10-01",
-"hash": "028a39396714c3a4ebf7297202fd6379"
+"date": "2026-08-21",
+"hash": "11b15bae60f0c98701b33e7c742fbd56"
 },
 "animals-english-vocabulary": {
-"date": "2026-09-16",
-"hash": "ef54f0b5ac61cdaf24c546f05522f748"
+"date": "2026-10-01",
+"hash": "d55d88c3a4a0b5507e2a8d9f8f861c35"
 },
 "assets/downloads/ae-animals-flashcards-a4.pdf": {
 "date": "2026-09-06",
 "hash": "865e274c27369dd6fde4de3d60827668"
 },
 "assets/downloads/ae-body-parts-a4.pdf": {
-"date": "2026-09-22",
+"date": "2026-09-15",
 "hash": "09ad0fdb7b8775748a95a584247b7f02"
+},
+"assets/downloads/ae-cheer-up-english-a4.pdf": {
+"date": "2026-09-22",
+"hash": "f62abdc977d4659649efe71083cc33de"
 },
 "assets/downloads/ae-colors-flashcards-a4.pdf": {
 "date": "2026-09-06",
 "hash": "942b153aa54b764088a8ba26e5afb6ac"
 },
-"assets/downloads/ae-days-of-week-a4.pdf": {
+"assets/downloads/ae-countries-english-a4.pdf": {
 "date": "2026-09-22",
+"hash": "845ef80c35c00c9aada16d47e8ec7a09"
+},
+"assets/downloads/ae-days-of-week-a4.pdf": {
+"date": "2026-09-15",
 "hash": "68902d26a14a8c11872c7cb12f30746d"
 },
 "assets/downloads/ae-english-abbreviations-a4.pdf": {
-"date": "2026-09-22",
+"date": "2026-09-16",
 "hash": "720083115e3a220e00b1fc199008aa10"
 },
 "assets/downloads/ae-english-alphabet-a4.pdf": {
-"date": "2026-09-22",
+"date": "2026-09-21",
 "hash": "7a576683b1cb34e747ba41c574c90af1"
 },
 "assets/downloads/ae-english-names-boys-a4.pdf": {
-"date": "2026-09-22",
+"date": "2026-09-21",
 "hash": "e26ac3196b63f66171ec24d7fbc6cce1"
 },
 "assets/downloads/ae-english-names-girls-a4.pdf": {
-"date": "2026-09-22",
+"date": "2026-09-21",
 "hash": "f60d722656dfe0313274d0f5d5b0c8ab"
 },
 "assets/downloads/ae-english-tenses-chart-a4.pdf": {
-"date": "2026-08-13",
+"date": "2026-08-12",
 "hash": "0e109b357ac714d5d135b8224ddd6770"
+},
+"assets/downloads/ae-english-vowels-a4.pdf": {
+"date": "2026-09-22",
+"hash": "93081b0ca5c3d42fea36ad1f37aed8c3"
 },
 "assets/downloads/ae-fruits-flashcards-a4.pdf": {
 "date": "2026-09-06",
 "hash": "4363e4e348353f0814bbfc22150acc6c"
 },
 "assets/downloads/ae-happy-birthday-a4.pdf": {
-"date": "2026-09-22",
+"date": "2026-09-21",
 "hash": "68bb35e53e768a506077181c42eb40cc"
 },
 "assets/downloads/ae-irregular-verbs-a4.pdf": {
-"date": "2026-08-14",
+"date": "2026-08-13",
 "hash": "364d1e8256e78a15634478f98602269a"
+},
+"assets/downloads/ae-jobs-english-a4.pdf": {
+"date": "2026-09-22",
+"hash": "97a9e3730858cced5a72bb18b0280677"
 },
 "assets/downloads/ae-kk-phonetic-chart-a4.pdf": {
 "date": "2026-08-13",
 "hash": "49d34d6db5ccf6a2323f71e6a1eab420"
 },
 "assets/downloads/ae-mid-autumn-english-a4.pdf": {
-"date": "2026-09-22",
+"date": "2026-09-21",
 "hash": "8c523fcb710ed9de4045bf093d43abec"
 },
 "assets/downloads/ae-moe-1200-complete-a4.pdf": {
@@ -80,24 +96,32 @@
 "hash": "b65ea7b9f935ef204ae2688afebd8c11"
 },
 "assets/downloads/ae-moe-1200-themed-200-a4.pdf": {
-"date": "2026-08-14",
+"date": "2026-08-12",
 "hash": "62d37990b4dd92c78d95bcf5a5dff00f"
 },
 "assets/downloads/ae-months-english-a4.pdf": {
-"date": "2026-09-22",
+"date": "2026-09-15",
 "hash": "84bc3debab718447ded4582f743ee790"
 },
+"assets/downloads/ae-numbers-1-100-a4.pdf": {
+"date": "2026-10-01",
+"hash": "f075b601475a07f7da74bfe11f25e9ef"
+},
 "assets/downloads/ae-ordinal-numbers-a4.pdf": {
-"date": "2026-09-22",
+"date": "2026-09-21",
 "hash": "30a713a7baa25f3b3eb0f1484896a377"
 },
 "assets/downloads/ae-phonics-rules-chart-a4.pdf": {
-"date": "2026-08-13",
+"date": "2026-08-12",
 "hash": "8dda9c5eeb82328165c244b6c02be3c7"
 },
 "assets/downloads/ae-sight-words-dolch-fry-a4.pdf": {
-"date": "2026-08-13",
+"date": "2026-08-12",
 "hash": "5af6b709cad899eb83dd69d6abf2bedd"
+},
+"assets/downloads/ae-thank-you-english-a4.pdf": {
+"date": "2026-09-22",
+"hash": "be978b53109d69b82a0c687979b7817f"
 },
 "assets/downloads/ae-yle-flyers-flashcards-a4.pdf": {
 "date": "2026-09-06",
@@ -112,164 +136,164 @@
 "hash": "a8a2aeb7abf981004c07a39b5a6bd180"
 },
 "b1-grammar-guide": {
-"date": "2026-10-01",
-"hash": "d1be7f78537f70c750a5ca6b3198b9e5"
+"date": "2026-09-15",
+"hash": "012a7e2ef8ed4584e3f969cd1b050751"
 },
 "b1-vocabulary-practice": {
-"date": "2026-10-01",
-"hash": "248840ab26919b3f5e50786cb3c6d37f"
+"date": "2026-08-21",
+"hash": "05544de80b07ea6ba944ca959a3ab06b"
 },
 "b2-grammar-guide": {
-"date": "2026-10-01",
-"hash": "01935ff79d148262d9d686bc92cd4368"
+"date": "2026-09-15",
+"hash": "0b8f95dfffe683b579ee59fde6daf472"
 },
 "b2-vocabulary-practice": {
-"date": "2026-10-01",
-"hash": "f1a100d6fc9a84b2cfa2fbc109a6df5e"
+"date": "2026-08-21",
+"hash": "060db52a0fc59039f6b4d57621e6686c"
 },
 "banqiao-cram-school-vs-after-school": {
 "date": "2026-08-13",
-"hash": "777338a7cbdc283a0fa59d86aac1146a"
+"hash": "7b9b2e2571cfdc5e0d34cd4faba4edf6"
 },
 "banqiao-elementary-school-english": {
-"date": "2026-08-07",
-"hash": "614f3e97ef07876868fb920ef18ddd8b"
+"date": "2026-07-31",
+"hash": "34eacae05754f02953539dec354504d3"
 },
 "banqiao-english-cram-school": {
-"date": "2026-08-25",
-"hash": "c81db75df554a4e44ed8bdc651acc40e"
+"date": "2026-10-01",
+"hash": "871950400c36c90485c00974933819fa"
 },
 "banqiao-english-faq": {
 "date": "2026-08-07",
-"hash": "0a9a0d238c38d12ba3cc069c4fed857a"
+"hash": "6feac95366044ecd54fcb58189ea858e"
 },
 "banqiao-first-grade-english": {
-"date": "2026-08-07",
-"hash": "76ff0225f5e632269eb9eedd3337915c"
+"date": "2026-07-07",
+"hash": "d4654dce9f1ba5d54a679abf90165fb5"
 },
 "banqiao-junior-high-english-blind-spots": {
 "date": "2026-08-07",
-"hash": "1b84f34edac59e6f327c3084834bbbfc"
+"hash": "f21be3e9546d111fbbe256911ce9d584"
 },
 "banqiao-junior-high-english-past-papers": {
 "date": "2026-08-25",
-"hash": "87b090d6fe239b822bb40d47d065d3fc"
+"hash": "7abee4c7145ddcbc5cd1f7a5653cfc18"
 },
 "banqiao-kids-english-5-mistakes": {
 "date": "2026-08-07",
-"hash": "e8c30302c11bd765cffc1bc768fee073"
+"hash": "85b3e14f19f8ac253a2d1a32e07095b8"
 },
 "banqiao-kids-english-games": {
-"date": "2026-08-07",
-"hash": "5f9cc1b71cc6786479a0c69675c0d6d6"
+"date": "2026-07-31",
+"hash": "89054fe9df25aa4ffda9b1b5a8229b0b"
 },
 "banqiao-kids-english-speaking": {
-"date": "2026-08-07",
-"hash": "8a959c807c2c6d373e970b634cc6665d"
+"date": "2026-07-31",
+"hash": "e8ff9700fc1b9b0ce0f89ddc63f3df70"
 },
 "banqiao-parent-testimonials": {
 "date": "2026-10-01",
-"hash": "05d590e5a4eee52f1c315dc69c03cb3f"
+"hash": "dfea505c8c6d7f4193df8c6c764fd622"
 },
 "banqiao-private-school-english-prep": {
 "date": "2026-08-07",
-"hash": "57a8cd0b57e2e8a13459b436acc590b2"
+"hash": "634dde2f763b7d4193d749ffc7bc9569"
 },
 "banqiao-station-english-cram-school": {
 "date": "2026-08-07",
-"hash": "bbf90f3ff1fcf7526e50729b5cb7bde3"
+"hash": "df4a781ba25064194aede343df1c921d"
 },
 "be-verbs-guide": {
-"date": "2026-09-16",
-"hash": "64c9062987f2f201a6391d6b990cefb7"
+"date": "2026-09-14",
+"hash": "83e75943cdbb79b32d6431a52a1272cb"
 },
 "bilingual-education-myths-banqiao": {
-"date": "2026-08-07",
-"hash": "aba5854731094feede4d666d8c614945"
+"date": "2026-07-31",
+"hash": "cc074cbbf0a71a6a938bf9ed56aba248"
 },
 "bilingual-school-vs-cram-school": {
 "date": "2026-08-07",
-"hash": "9e4c140db7dc0109a8ba30e66f11129a"
+"hash": "8a465248755b2f26e0acfa72ee03137b"
 },
 "blog": {
-"date": "2026-08-20",
-"hash": "183be49a82ac229a6d2e394ab450ce05"
+"date": "2026-10-01",
+"hash": "e8243606a1423e7c305ab328f016f3a6"
 },
 "body-parts-english": {
 "date": "2026-09-22",
-"hash": "f0f0f30e8862c88a7bb49cec12556303"
+"hash": "8da765a78e6cd3ce00f9b58feea2c0c4"
 },
 "cae-c1-advanced-guide": {
 "date": "2026-08-26",
-"hash": "e6efaf888176ad753a86546e6d171602"
+"hash": "4509264283e71530f7aba50b85a08024"
 },
 "cambridge-english-levels": {
-"date": "2026-09-25",
-"hash": "d14a17471654d21d9259ff5457635e7a"
+"date": "2026-09-04",
+"hash": "aadb823553957355c5d374e5efe3537a"
 },
 "cambridge-exam-registration-taiwan": {
-"date": "2026-09-22",
-"hash": "30e4e38682e47fba153f26262be4561f"
+"date": "2026-09-06",
+"hash": "b8de9e597ec9ca6d6653a5e5096e6c6d"
 },
 "cambridge-exam-worth-it": {
-"date": "2026-09-22",
-"hash": "88a7309300eaf0e200355b2ae2a19110"
+"date": "2026-10-01",
+"hash": "a1cedcf93be580c8b880470468375782"
 },
 "cambridge-flyers-guide": {
-"date": "2026-09-22",
-"hash": "2ffeaac72610c5f4d99597cb4946c814"
+"date": "2026-09-08",
+"hash": "ef56c39028fd46fc75bd806c2523a6bf"
 },
 "cambridge-movers-guide": {
-"date": "2026-09-22",
-"hash": "8c3661d5547e6b4a6db55d522d72722d"
+"date": "2026-09-08",
+"hash": "d991dccfa0f21fe842573057db2acb51"
 },
 "cambridge-practice-exam-pack": {
 "date": "2026-09-25",
-"hash": "11b633e15d871f0f9f2a3f08fc60fd03"
+"hash": "d9bf135acb8cf3a7d71d974793da3c31"
 },
 "cambridge-practice-tests": {
-"date": "2026-10-01",
-"hash": "9f90748c0941d7c3dea318385b7e7492"
+"date": "2026-09-13",
+"hash": "24b13bb2087175b7ea29395cba7f47db"
 },
 "cambridge-results-lookup": {
-"date": "2026-09-25",
-"hash": "e75ee55351abd22e561c0f61467b6c74"
+"date": "2026-09-04",
+"hash": "8fc1c094c97af63a6e4979dc3768081e"
 },
 "cambridge-starters-guide": {
-"date": "2026-09-22",
-"hash": "7c81c1e1ce0676b9c482e207023bbf99"
+"date": "2026-09-08",
+"hash": "ed78e9564246653ee9f1cdb19b8feb4e"
 },
 "cambridge-yle-shields": {
 "date": "2026-09-04",
-"hash": "be9eb53a4d46996bf138b33d5f1f0321"
+"hash": "39ccc8bb95ca80ab23da267a256fa794"
 },
 "cambridge-yle-vs-gept-banqiao": {
 "date": "2026-08-20",
-"hash": "83893f40034beb6b73d5c8d5de56b8ed"
+"hash": "65c5184cff3277a267fc1d7cf4ea7ca6"
 },
 "cap-english-guide": {
 "date": "2026-09-23",
-"hash": "f3cfabd36a0a536a83ff304256328750"
+"hash": "13db46170084e1c5d7e0dbd3adb3dfa3"
 },
 "certified-american-teacher-banqiao": {
-"date": "2026-08-07",
-"hash": "978f370a26a63ff85f7b84a73279b1d7"
+"date": "2026-08-02",
+"hash": "5e038eb468851b8ae340b3b7794b7135"
 },
 "chart-license": {
-"date": "2026-09-23",
-"hash": "d1523b4239750fde4f1dd06ba65ee18b"
+"date": "2026-10-01",
+"hash": "dcaba605613a192f51d1ed760bf47411"
 },
 "cheer-up-english": {
-"date": "2026-09-16",
-"hash": "d55c0a8020ebbd398c8f39bb56bc25dc"
+"date": "2026-10-01",
+"hash": "8cf3140cb9d50bd42bd6107eca3fd3b1"
 },
 "child-hates-english": {
 "date": "2026-08-07",
-"hash": "d04f1a933f842776e47aee1869bb819a"
+"hash": "332eb5c447c857450a9e313891e02813"
 },
 "choose-english-chain-school": {
 "date": "2026-08-27",
-"hash": "627999c88ceb627127839c7cf90245d2"
+"hash": "abb5414008e71dc5ce2fc978c6e6a0cd"
 },
 "colors-english": {
 "date": "2026-09-14",
@@ -277,47 +301,47 @@
 },
 "colors-english-vocabulary": {
 "date": "2026-09-21",
-"hash": "063679b359f20dede126d87bde8d185e"
+"hash": "41b6e7f9d67fe5993df8d360936bdb16"
 },
 "contact": {
 "date": "2026-10-01",
-"hash": "659ba06b2c09cbfc3131f1d095cead99"
+"hash": "df2ee060edc8a683602654067b7079bd"
 },
 "cool-english-guide": {
-"date": "2026-09-13",
-"hash": "a3a0c3d60f4f8ed8a17b7cf5ee436f7d"
+"date": "2026-08-13",
+"hash": "935feb112a22042b3c67c30554a15249"
 },
 "countries-english": {
-"date": "2026-09-16",
-"hash": "d2e5287d159bcee467c479ed40842630"
+"date": "2026-10-01",
+"hash": "19873b49e03ff3863b25d3ca5d1c5f7f"
 },
 "courses": {
 "date": "2026-08-25",
-"hash": "ca25b9d6bb786ddb2ed72c4b66c45ce7"
+"hash": "e1b221b7113668f19f4ca6c7e7a81229"
 },
 "cram-school-vs-tutor-vs-self-study": {
 "date": "2026-08-07",
-"hash": "56e286483e72d5d0f07f1d37b614ef6f"
+"hash": "5ce3dc26d96947ff0fe3d99bee88077d"
 },
 "daguan-elementary-english": {
 "date": "2026-08-07",
-"hash": "b69b07a922ff719c94b95f920680cf2e"
+"hash": "427e4af09a7cfa4ec414dab68313167d"
 },
 "days-of-week-english": {
 "date": "2026-09-22",
-"hash": "e1b31c4384e6e2f31705a6471f1deedf"
+"hash": "22fda2a887d4e22ca49b318119bf6d5d"
 },
 "download": {
 "date": "2026-08-26",
-"hash": "0feca713c0522178c29912ed57792a65"
+"hash": "57ed2c08e71f52b89acc0dc991abb742"
 },
 "elementary-english-banqiao-zhongzheng": {
 "date": "2026-08-07",
-"hash": "7465881e38dcf0492d2a3875d9307815"
+"hash": "098b806f7d58e54251d105a4a76393b1"
 },
 "elementary-english-catch-up": {
 "date": "2026-08-07",
-"hash": "0f1e53a28d6146040714d3586bc3f2ce"
+"hash": "73c28e990d14f530459240ae1af00b43"
 },
 "english-abbreviations": {
 "date": "2026-09-14",
@@ -325,279 +349,279 @@
 },
 "english-abbreviations-guide": {
 "date": "2026-09-22",
-"hash": "d661d8ff10bb1a8e62826dde51f916f1"
+"hash": "1ade817a48f7416a9069d2e121f53dd0"
 },
 "english-alphabet-guide": {
-"date": "2026-09-22",
-"hash": "8b2587b0442ef18a294f72d6a9761459"
+"date": "2026-09-21",
+"hash": "a661f4c3faa7822d3a18eaa85fd6ed18"
 },
 "english-at-home-parents-banqiao": {
-"date": "2026-08-07",
-"hash": "8a3a5eb745a43de2efcbb1b8742c680d"
+"date": "2026-07-31",
+"hash": "6abf37ed2908d38c163ace282b5e18ab"
 },
 "english-capitalization-guide": {
-"date": "2026-09-23",
-"hash": "a4cf205c6dd6a6c838bdf19c4b401f5e"
+"date": "2026-09-14",
+"hash": "f9b47295cf4e2fc189a83f95fc69ec59"
 },
 "english-comparatives-guide": {
-"date": "2026-09-16",
-"hash": "96968a332ba6040ad4f3062ace15fd52"
+"date": "2026-09-15",
+"hash": "3989f46e41824e630ceef7e8786cdd3f"
 },
 "english-conjunctions-guide": {
 "date": "2026-09-23",
-"hash": "368f5cc6ed67fe079ef932552fbb3742"
+"hash": "e5b6fad38116660b8834322f6b09364d"
 },
 "english-cram-school-fees": {
 "date": "2026-08-13",
-"hash": "3c6051691b7efb43f2d1c425c82a0e17"
+"hash": "58b7b2c258cee5dc545aedd059fe9f68"
 },
 "english-dates-guide": {
-"date": "2026-09-23",
-"hash": "5a09b760a4c06c097e43f29afa754e5e"
+"date": "2026-09-22",
+"hash": "720ae313f30c3ddd4f4e60ebe0d79a03"
 },
 "english-diary-guide": {
 "date": "2026-08-13",
-"hash": "7507837de446da485e5b50d51d4e6b1b"
+"hash": "fc07c3624292f29f63111ed134e42a26"
 },
 "english-early-start-guide": {
 "date": "2026-08-07",
-"hash": "b43b489953c9cc71a2a6efdc5c870942"
+"hash": "625590ef210fca265f8c62f0b8417edf"
 },
 "english-exam-dates-guide": {
 "date": "2026-08-13",
-"hash": "d42c0036efb61ec04cd2f5a57c1405ec"
+"hash": "d06c707b7354fc7d9e1f92812eac2c20"
 },
 "english-letter-writing-guide": {
 "date": "2026-09-22",
-"hash": "1c47706e61897f4b3f70487623d08dcf"
+"hash": "60b03d41a127984291cffad49bde5486"
 },
 "english-listening-practice": {
-"date": "2026-09-16",
-"hash": "eac9d25a0b937c2e32d5f37405c5bf0f"
+"date": "2026-09-15",
+"hash": "08fdf4c29e6be8582f4d53765f0e7d7c"
 },
 "english-names": {
 "date": "2026-10-01",
-"hash": "4a89f2a0ca2e24453c7e3febbec9b3d5"
+"hash": "76713a60d4dcb49ceb70fc76cc7bc405"
 },
 "english-names-boys": {
 "date": "2026-09-22",
-"hash": "3ea6c97e13bf073ca2bc968313adc174"
+"hash": "ee4c55ff7accf59cdb41d8db65d3a467"
 },
 "english-names-girls": {
 "date": "2026-09-21",
-"hash": "162db88ba3a514e549b50144f254bca1"
+"hash": "a0392a18fadd2e232276dc1337a43f41"
 },
 "english-numbers-guide": {
-"date": "2026-09-16",
-"hash": "709ac46d9d16f00eb1e6aeaced7dc1a6"
+"date": "2026-10-01",
+"hash": "935eb6aff5dd33ce0faf51349fbf3cde"
 },
 "english-picture-books-guide": {
 "date": "2026-08-07",
-"hash": "969d9c2a6e3cce9c8ba6b47925de902d"
+"hash": "19ce78fb557f29603591b0b7215a4282"
 },
 "english-pronunciation": {
-"date": "2026-09-16",
-"hash": "98cc1595e1997b154f3ac0259a8292ef"
+"date": "2026-10-01",
+"hash": "7140afa7a4d4ad4377c6d6733278cc1b"
 },
 "english-pronunciation-standards": {
 "date": "2026-08-21",
-"hash": "e38c1dff7ae3707f292385866a02a2d3"
+"hash": "315eec72a7cb9c0170640fe14b95ae11"
 },
 "english-punctuation-guide": {
-"date": "2026-09-16",
-"hash": "fc20c88628589728abbed8213072746c"
+"date": "2026-09-15",
+"hash": "a4ba7e88022b2494d20353ad2df6db85"
 },
 "english-reading-practice": {
-"date": "2026-09-16",
-"hash": "a01ed29d962478ad27a2717accccc5b9"
+"date": "2026-09-15",
+"hash": "ab3452441e60f5d28917d43ed35caf3b"
 },
 "english-self-introduction-kids": {
-"date": "2026-09-13",
-"hash": "78e6177c3ac351c17e1e8f43efd6b13d"
+"date": "2026-09-06",
+"hash": "aa43502a67b5d9178098338b44da45c4"
 },
 "english-self-introduction-students": {
 "date": "2026-08-13",
-"hash": "a2a2933ef6bfc36a02bc10928e4c0840"
+"hash": "a11c7e609e7dcec5049cd49814ab67a5"
 },
 "english-speaking-practice": {
-"date": "2026-09-16",
-"hash": "18a56d72d2d647eb05e0ee71977e53f2"
+"date": "2026-09-15",
+"hash": "3d4712fc83428e26fb0d5201a8d7ada1"
 },
 "english-summer-camp-banqiao": {
-"date": "2026-08-07",
-"hash": "f2641568e57d511273d216a5485fdb74"
+"date": "2026-07-31",
+"hash": "ea2cdaa59c5e802f0ac79c7459544ae9"
 },
 "english-symbol-names": {
-"date": "2026-09-16",
-"hash": "dd5115404b962ba4919ebcf9e6e5a174"
+"date": "2026-09-14",
+"hash": "182520b6a10b10bd91a62a03e98208fa"
 },
 "english-tenses-chart": {
-"date": "2026-09-13",
-"hash": "86d17f9799edec50f6dd04b96316632d"
+"date": "2026-08-26",
+"hash": "eaefabe7379e611b5199be7201947982"
 },
 "english-vocabulary-by-topic": {
 "date": "2026-09-15",
-"hash": "1d51cb068a44651b13f0d2fc8e1293fa"
+"hash": "9bee96b1c69cf6c275dfe166af688b1d"
 },
 "english-vowels-consonants": {
-"date": "2026-09-16",
-"hash": "90c7e0efbeb7d4b6e0ff28c6faa28ffc"
+"date": "2026-09-14",
+"hash": "56c74d59238b513e5aaeaf76863da748"
 },
 "english-word-stress-gesture": {
-"date": "2026-08-25",
-"hash": "f54c5856fea75f302dda7574e452866c"
+"date": "2026-08-21",
+"hash": "d6c51ef45448e18154a64ebc1803015a"
 },
 "english-writing-practice": {
-"date": "2026-09-16",
-"hash": "10b202c91e51c7ed8872a00f9b85872e"
+"date": "2026-09-15",
+"hash": "067734971503ea2701da8cfacad4591a"
 },
 "exams": {
-"date": "2026-10-01",
-"hash": "07e1d880a162e779294321e79f7fc4dd"
+"date": "2026-09-13",
+"hash": "e749239199976106d415e7b86f28c18f"
 },
 "exams/banqiao-school-calendar": {
-"date": "2026-09-30",
-"hash": "2778c8c7c92394ebc64523dcbe70ff8a"
+"date": "2026-09-28",
+"hash": "2cbd45a6aabb26d03e3eff1fd9830f8b"
 },
 "exams/hours-to-level-up": {
 "date": "2026-08-11",
-"hash": "d19cebf3a3fa13af892e83a335601b0f"
+"hash": "13a652ba8d91326d17be3b8266ed2bda"
 },
 "exams/intonation": {
 "date": "2026-08-12",
-"hash": "cbd58fca8640b7add46c0dbf76c4f156"
+"hash": "edf4b7c45e8f9f7a047431ada1863c10"
 },
 "fce-listening-practice-part1": {
-"date": "2026-10-01",
-"hash": "2222e9799820132da32cf1a974bb2fbc"
+"date": "2026-09-08",
+"hash": "90d6fe76fae2d79d3b865f76e99af4d8"
 },
 "fce-listening-practice-part2": {
-"date": "2026-10-01",
-"hash": "9fe8feaaba4d07c0c88ce4be9b6252eb"
+"date": "2026-09-08",
+"hash": "b63419f4c491d978f7528459c74afa66"
 },
 "fce-listening-practice-part3": {
-"date": "2026-10-01",
-"hash": "c89eddea78f911b89f1df2a320c3ae83"
+"date": "2026-09-08",
+"hash": "0c2fce455b6893ae5e488612e59a8f27"
 },
 "fce-listening-practice-part4": {
-"date": "2026-10-01",
-"hash": "7eaf9105b3f4fdf9df226887340b99eb"
+"date": "2026-09-08",
+"hash": "7f35adf0a96df460222983caca0d0d3d"
 },
 "fce-practice-tests": {
-"date": "2026-09-25",
-"hash": "56e75c6ff4dcda8642fdf2781e12dab9"
+"date": "2026-09-13",
+"hash": "300f26595a563bb514d108b777df02c0"
 },
 "fce-prep-guide": {
-"date": "2026-09-25",
-"hash": "0e5de8502bb73d9a8b59f9e04711a01c"
+"date": "2026-09-06",
+"hash": "4cf94c48e40824b59a848074651a0909"
 },
 "fce-ruoe-practice-part1": {
-"date": "2026-10-01",
-"hash": "3fecd0b3c1c2e7136ce3f989955184ee"
+"date": "2026-09-18",
+"hash": "8f26be127a01cb1da7d6d22e8a357497"
 },
 "fce-ruoe-practice-part2": {
-"date": "2026-10-01",
-"hash": "4b00f5ff40094e090ee793fab5bad755"
+"date": "2026-09-18",
+"hash": "261b9316781c1ed0d41e630239940d77"
 },
 "fce-ruoe-practice-part3": {
-"date": "2026-10-01",
-"hash": "34f8a1c6281f64d5190fbe1f604887e9"
+"date": "2026-09-18",
+"hash": "3467ea5a2a214cc549cbd43029c7f235"
 },
 "fce-ruoe-practice-part4": {
-"date": "2026-10-01",
-"hash": "0431cde9bebe20fa75e900cbb78013f8"
+"date": "2026-09-18",
+"hash": "2af1a29a54f0a94f65ce77feb46702ac"
 },
 "fce-ruoe-practice-part5": {
-"date": "2026-10-01",
-"hash": "89967b12c3ccb483531440127ec112c5"
+"date": "2026-09-18",
+"hash": "a80e5ffa84a8b139d0be1835f881fe23"
 },
 "fce-ruoe-practice-part6": {
-"date": "2026-10-01",
-"hash": "af0fa947571169bae3003b7cc1288edf"
+"date": "2026-09-18",
+"hash": "07e41524d7e7598c954381040f320844"
 },
 "fce-ruoe-practice-part7": {
-"date": "2026-10-01",
-"hash": "a69ad81a640bba97f7bd1b2b70dcbf51"
+"date": "2026-09-18",
+"hash": "4888fec0c653d7395ffd0b0f424fa1fb"
 },
 "fce-score-calculator": {
-"date": "2026-09-25",
-"hash": "2ae7571852fb4289372dc5513b723bbb"
+"date": "2026-09-02",
+"hash": "b776132029decacabe12bd13b8e4f0ae"
 },
 "fce-speaking-practice": {
-"date": "2026-09-25",
-"hash": "1ef1f018f6831c0eb2ce78860b38361e"
+"date": "2026-08-21",
+"hash": "b4ccc009b2e35a2192e2c0663e226f0b"
 },
 "fce-writing-practice-part1": {
-"date": "2026-09-25",
-"hash": "785d895d91bb499a1b94246e14d32650"
+"date": "2026-08-21",
+"hash": "73158c7e43dbd5efab5674a3ae358e78"
 },
 "fce-writing-practice-part2": {
-"date": "2026-09-25",
-"hash": "7081587a9f1fc17139f964cff1a819ee"
+"date": "2026-08-21",
+"hash": "47589a610471b2bd1cee5478b801453f"
 },
 "flyers-listening-practice-part1": {
-"date": "2026-10-01",
-"hash": "e012f4c78752b87de22609860608c9c7"
+"date": "2026-09-08",
+"hash": "5ca7bb294afd34f0170ed9cd98a50eac"
 },
 "flyers-listening-practice-part2": {
-"date": "2026-10-01",
-"hash": "dc9d9f797dfd4f0d72f2a5e217796239"
+"date": "2026-09-08",
+"hash": "2fd80cb6300d8f06dd2d8742fccf42da"
 },
 "flyers-listening-practice-part3": {
-"date": "2026-10-01",
-"hash": "98f3b872c33a0ff74f76973ef6679537"
+"date": "2026-09-08",
+"hash": "ff0621ca10917def5db8525380321c81"
 },
 "flyers-listening-practice-part4": {
-"date": "2026-10-01",
-"hash": "b887d7f636539cc3b8ab1829d7f704de"
+"date": "2026-09-08",
+"hash": "20ab7e6357fcef149ff54026178e35f5"
 },
 "flyers-listening-practice-part5": {
-"date": "2026-10-01",
-"hash": "d27750b79d5133b1ffb129c2d03f29de"
+"date": "2026-09-08",
+"hash": "26f3baba86e6c8a5c49da3045202eec0"
 },
 "flyers-practice-tests": {
-"date": "2026-09-25",
-"hash": "fd4b33226142d661e2cfab425b17334c"
+"date": "2026-09-13",
+"hash": "9557ab20d5046af9566f5db3a80d9197"
 },
 "flyers-rw-practice-part1": {
-"date": "2026-10-01",
-"hash": "478ac7ef340e57f69cdca39a29d4f1a5"
+"date": "2026-09-08",
+"hash": "dd992d21adb27e583165cfc5c2188cf4"
 },
 "flyers-rw-practice-part2": {
-"date": "2026-10-01",
-"hash": "6368887aab7d6f19814c5edbc4926486"
+"date": "2026-09-08",
+"hash": "d729eb78e18b276639ba367ea6ddb56c"
 },
 "flyers-rw-practice-part3": {
-"date": "2026-10-01",
-"hash": "a1d0dba7e5e89d78e0a792ea42c4b407"
+"date": "2026-09-08",
+"hash": "7205a7eff978fb616fa06ca19471475a"
 },
 "flyers-rw-practice-part4": {
-"date": "2026-10-01",
-"hash": "b3c9fa40c962760cc154193d38d7f131"
+"date": "2026-09-08",
+"hash": "fdde3dc233d6765f8bc52f299cbd25a3"
 },
 "flyers-rw-practice-part5": {
-"date": "2026-10-01",
-"hash": "52d84fa5e70f7ca9883034275255de31"
+"date": "2026-09-08",
+"hash": "5ef99d5cb2b311a345e857bcc53d74d5"
 },
 "flyers-rw-practice-part6": {
-"date": "2026-10-01",
-"hash": "492b67b4015724b94555a22d516cfdb1"
+"date": "2026-09-08",
+"hash": "a87126c80904b671703af9b571d9fd4a"
 },
 "flyers-speaking-practice": {
-"date": "2026-10-01",
-"hash": "f1ce06ae3c5b56752cf855bc2ed2c94a"
+"date": "2026-09-08",
+"hash": "2d9078fe672331f5684fb7b4dcf8b6ea"
 },
 "flyers-vocabulary-practice": {
-"date": "2026-10-01",
-"hash": "054aaabc6bcadd1a38ae0dfd6c41c1e3"
+"date": "2026-08-26",
+"hash": "d6ce6ac371e1a641f147c762feec796c"
 },
 "free-english-resources-kids": {
 "date": "2026-08-26",
-"hash": "f3d70663886f395ffd325a477ae6ed51"
+"hash": "fbb9e1151689f479462a100b9c354155"
 },
 "free-trial": {
-"date": "2026-08-07",
-"hash": "2152cbe90fe7dbebaab1e07d54eb85ef"
+"date": "2026-06-12",
+"hash": "2d9175cd17cbd28ae1439d4037d9663c"
 },
 "fruits-english": {
 "date": "2026-09-15",
@@ -605,674 +629,674 @@
 },
 "fruits-english-vocabulary": {
 "date": "2026-09-21",
-"hash": "0b142ebb845dcac0226fefb77ada6348"
+"hash": "71f2e8aacae7de40461c5860c91f3d56"
 },
 "fuzhong-english-cram-school": {
 "date": "2026-08-07",
-"hash": "74988e4951974241ed7e1089fc425548"
+"hash": "59b92baa1c8c153ca66cf8906fae96bf"
 },
 "gept": {
 "date": "2026-10-01",
-"hash": "9693403565314c7ebc79c06387f5e4c8"
+"hash": "fbf67040647e5e730bdeb33981f2d655"
 },
 "gept-elementary-guide": {
 "date": "2026-10-01",
-"hash": "b0c8f4ae687c3ffc630124a2c6feba96"
+"hash": "68c18c265faa0b2d4b35e3a0a0785824"
 },
 "gept-elementary-listening-practice-part1": {
 "date": "2026-10-01",
-"hash": "45ad1ed926934e8d0c795d9b477e16d9"
+"hash": "098b9cbd6b0047cdea43874fb63c4b56"
 },
 "gept-elementary-listening-practice-part2": {
 "date": "2026-10-01",
-"hash": "7dbbad2fec329d499a96529310f4951a"
+"hash": "2d1a953c3390ef1e3290ccafef12d893"
 },
 "gept-elementary-listening-practice-part3": {
 "date": "2026-10-01",
-"hash": "7bd74c3357c73f7724d426ebfd9b3536"
+"hash": "ef28defdbdbb0a0837e6e848463a0003"
 },
 "gept-elementary-listening-practice-part4": {
 "date": "2026-10-01",
-"hash": "51065324a22026ba8928bec751652987"
+"hash": "78b708e7c5ada32c60d95bac2d5364bb"
 },
 "gept-elementary-practice": {
 "date": "2026-10-01",
-"hash": "e5ff5f604aedd289d9cad3c52fdb7833"
+"hash": "58b7db89b857600e50d02461dc0d0f10"
 },
 "gept-elementary-reading-practice-part1": {
 "date": "2026-10-01",
-"hash": "d83a0f75ca410b3969b8106dfa96e67b"
+"hash": "8ebd4fce2a44d353cb4224c87001c9ff"
 },
 "gept-elementary-reading-practice-part2": {
 "date": "2026-10-01",
-"hash": "195ee1cf502b65bd144704510a9228d1"
+"hash": "dcab00adea7528263c4f9b1a9cce97eb"
 },
 "gept-elementary-reading-practice-part3": {
 "date": "2026-10-01",
-"hash": "9ba1cff8d36018e82daa51f8bac750bd"
+"hash": "6f8bab2aefc2003996ab55b80d655f67"
 },
 "gept-elementary-speaking-practice": {
 "date": "2026-10-01",
-"hash": "97dba9a6085f7f240c054f59b6b33b92"
+"hash": "a536f58fcd6d5e9f962c25ff614a96f2"
 },
 "gept-elementary-speaking-writing": {
 "date": "2026-10-01",
-"hash": "71aa8fa154a73b1cf6a7fa3667b1ac71"
+"hash": "0d360e93fb54d39f4ce5c47e5c1934b1"
 },
 "gept-elementary-vocabulary": {
-"date": "2026-08-07",
-"hash": "4ee8e9888eaf4eeb6ff9e99fb7b30a01"
+"date": "2026-07-31",
+"hash": "8f58508514bb24a8944d4c228b73269b"
 },
 "gept-elementary-writing-practice-part1": {
 "date": "2026-10-01",
-"hash": "971e0404470875e3c96ae52e9416fb87"
+"hash": "e1928afd4336be2983718cf825253998"
 },
 "gept-elementary-writing-practice-part2": {
 "date": "2026-10-01",
-"hash": "9d8f9c192d1a17f9e8f45169cbe75621"
+"hash": "cdbd4eda77cc3d8be94173e6125324cf"
 },
 "gept-high-intermediate-listening-practice-part1": {
 "date": "2026-10-01",
-"hash": "62a4aa4d6bcc6f65bf19f3d5eb201e4e"
+"hash": "c1647e346261982d4f58859d886f1824"
 },
 "gept-high-intermediate-listening-practice-part2": {
 "date": "2026-10-01",
-"hash": "80cd4020c02f88e308f4d23b7ff2352d"
+"hash": "1df2442e203e3e140d66229abe5f5deb"
 },
 "gept-high-intermediate-listening-practice-part3": {
 "date": "2026-10-01",
-"hash": "2cc8756f5528451c9618767e3df4d31d"
+"hash": "ee56b370abdb381bd2a916b2d685b46e"
 },
 "gept-high-intermediate-practice": {
 "date": "2026-10-01",
-"hash": "63ad150cf824bc4f03b8af26c7eaf08e"
+"hash": "051a93b198c7574d32d0edd0526d1746"
 },
 "gept-high-intermediate-reading-practice-part1": {
 "date": "2026-10-01",
-"hash": "869258eb5074c3cf5a29beb390db5c23"
+"hash": "7957b43041a5dd7da145da5156d1b7b4"
 },
 "gept-high-intermediate-reading-practice-part2": {
 "date": "2026-10-01",
-"hash": "9a1dc091e636bb49518b17f195c3f24b"
+"hash": "070065c4201b969ec89310d57a5e0d13"
 },
 "gept-high-intermediate-reading-practice-part3": {
 "date": "2026-10-01",
-"hash": "7db5e10093064aec3f36d951a21eb051"
+"hash": "f775f5687300ac766bba9859b932c9f3"
 },
 "gept-high-intermediate-speaking-practice": {
 "date": "2026-10-01",
-"hash": "91e6045ec1bdc1a2ba701603176511b1"
+"hash": "fb1285fdd1ac8395a4ec53e438fa6715"
 },
 "gept-high-intermediate-writing-practice-part1": {
 "date": "2026-10-01",
-"hash": "bd2b8145e1d26bbd25e4e2edcbb0995e"
+"hash": "1182c2811a35d63f2e1e606d2b39dba2"
 },
 "gept-high-intermediate-writing-practice-part2": {
 "date": "2026-10-01",
-"hash": "e9db09001afba73a1ec14576ca27e2f8"
+"hash": "83fc5bf6ab2514e8b7f209b344ab792a"
 },
 "gept-intermediate-guide": {
-"date": "2026-10-01",
-"hash": "94bdca46dd1f75eeb6d11c3f293ebbd2"
+"date": "2026-08-27",
+"hash": "f8d44f029e266a467ad5cd4226978b74"
 },
 "gept-intermediate-listening-practice-part1": {
 "date": "2026-10-01",
-"hash": "d079f81cfd6fae120b5dcd7ec97573c9"
+"hash": "33cd87e4da964bc2e1a77095f9ac305c"
 },
 "gept-intermediate-listening-practice-part2": {
 "date": "2026-10-01",
-"hash": "6b484594055c319458a54fadd8641d03"
+"hash": "986971f10d7b6ca35ec45c1e62feeddd"
 },
 "gept-intermediate-listening-practice-part3": {
 "date": "2026-10-01",
-"hash": "5c7946798fb47e16ef2d3b1673024a0c"
+"hash": "45e8f20ffa3972ce89552057fb20ac46"
 },
 "gept-intermediate-listening-practice-part4": {
 "date": "2026-10-01",
-"hash": "1755d88a389d6e844e2734c27887522b"
+"hash": "8df9c7fe40ff1c18763f0f2b1cbf43a5"
 },
 "gept-intermediate-practice": {
 "date": "2026-10-01",
-"hash": "6faf257b1142d6a2398ff46a0f4a8b1e"
+"hash": "5da65564eb130657903e7bc32a6c0d1c"
 },
 "gept-intermediate-reading-practice-part1": {
 "date": "2026-10-01",
-"hash": "7e0623d825e02008fa4504f3a062e40b"
+"hash": "c6a3171e83bb4a050a080e3dfe69eada"
 },
 "gept-intermediate-reading-practice-part2": {
 "date": "2026-10-01",
-"hash": "241a08bd02d795f12c56dc2a39b46045"
+"hash": "299e1b20d7ffe159c700090b24b4016f"
 },
 "gept-intermediate-reading-practice-part3": {
 "date": "2026-10-01",
-"hash": "0c2aeee5cbf073ce89de1ea1a9caa596"
+"hash": "4db4c6ad7fbed39e7d756896eed250da"
 },
 "gept-intermediate-speaking-practice": {
 "date": "2026-10-01",
-"hash": "73e46cdab99e61b3ea0826bd7f5e341f"
+"hash": "a0082adc9e3335ea909ba3d819ea362a"
 },
 "gept-intermediate-writing-practice-part1": {
 "date": "2026-10-01",
-"hash": "3961688a4cb7479d9a35e964b834dcdd"
+"hash": "119dd91798aa078d3e1bb9d12ee5534c"
 },
 "gept-intermediate-writing-practice-part2": {
 "date": "2026-10-01",
-"hash": "952df0aa0b4559302afca3fcafd64d0b"
+"hash": "90972dd93d32938348fc648cdcc49e94"
 },
 "gept-kids-guide": {
-"date": "2026-10-01",
-"hash": "95bdd8328cf8f917fd5fd7a3d193b859"
+"date": "2026-08-20",
+"hash": "4ee4ea3cb25491232c2fd0f790d82a33"
 },
 "gept-kids-listening-practice-part1": {
 "date": "2026-10-01",
-"hash": "343bc6a0a2a8d5a240e76ab4377959ff"
+"hash": "e21fb8749821ddfc822606449c383372"
 },
 "gept-kids-listening-practice-part2": {
 "date": "2026-10-01",
-"hash": "282dcc474b9d2f2c00d387a563e5d62d"
+"hash": "486bd5896770580853fb2a9d3060544f"
 },
 "gept-kids-listening-practice-part3": {
 "date": "2026-10-01",
-"hash": "76da0b47635d825107776ef031d32c61"
+"hash": "8278b60c18d17d83978c56d7008e05c6"
 },
 "gept-kids-listening-practice-part4": {
 "date": "2026-10-01",
-"hash": "7096a827d13c780f8da6065d9f7e10b8"
+"hash": "db4ddaedecbd4910f97fc78a9ebb83d3"
 },
 "gept-kids-practice": {
 "date": "2026-10-01",
-"hash": "7be4b0349d2cef320a372de79ab90d40"
+"hash": "5dfe91bc806407e109e814843334ebb2"
 },
 "gept-kids-rw-practice-part1": {
 "date": "2026-10-01",
-"hash": "a87c2445e326076ba7ca80b48e01f38a"
+"hash": "54913bbaf3eb3705a68ce918c20ecb18"
 },
 "gept-kids-rw-practice-part2": {
 "date": "2026-10-01",
-"hash": "5dc26bb67e57ff8b37dc33b8096a853f"
+"hash": "f403d93119523629395664662c79fa5f"
 },
 "gept-kids-rw-practice-part3": {
 "date": "2026-10-01",
-"hash": "58e8ca2f9748a8aedf3c883c7bc6fc89"
+"hash": "740d3071e5ed05efea770925fb30ae03"
 },
 "gept-kids-rw-practice-part4": {
 "date": "2026-10-01",
-"hash": "9e409f838bcdd6dbfd64b99202e11631"
+"hash": "aeb0bd6465f29e118620245cea3712a5"
 },
 "gept-kids-rw-practice-part5": {
 "date": "2026-10-01",
-"hash": "b161bd77a6bad76df5edbcafa7c21549"
+"hash": "0bc71f2aa0d4388fd2fc8ab236f6efb4"
 },
 "gept-kids-speaking-practice": {
 "date": "2026-10-01",
-"hash": "70b0a0c15872e49a72b9a9d9bd00e13e"
+"hash": "d89603dbcb0bde808192cd68955b8801"
 },
 "gept-practice-tests": {
 "date": "2026-10-01",
-"hash": "f24e836ff318f3b31ca0aac198a3efae"
+"hash": "e07da371bae8cdabb00a48031d70a065"
 },
 "gept-results-lookup": {
 "date": "2026-10-01",
-"hash": "ce55dedd3a181a2d32cfe207b0ec7022"
+"hash": "177db856c96734d425637bf4e5eca8d4"
 },
 "graded-readers-guide": {
 "date": "2026-08-12",
-"hash": "56754d32a823b416695747a533d99567"
+"hash": "9d972dc2ebf8b6e1b17ab221dbc62f99"
 },
 "guoguang-elementary-english": {
 "date": "2026-08-07",
-"hash": "b931c4b14df858a9bba5fbac9138e0c1"
+"hash": "0c4fb7f85c9ea6d86eb108b904046117"
 },
 "haishan-elementary-english": {
 "date": "2026-08-07",
-"hash": "5361925e16560c0460ca2613a59825b0"
+"hash": "f950a905f3b5517ab1f2e7a941dee654"
 },
 "haishan-junior-high-english": {
-"date": "2026-08-25",
-"hash": "eaa4a7fafd67892dde5dab26a5e2cdb7"
+"date": "2026-08-07",
+"hash": "028606d2be00d8032b5fe1a3b6c0bf52"
 },
 "happy-birthday-english": {
-"date": "2026-09-22",
-"hash": "6e725c964437d0c836e7f90eef1a43f5"
+"date": "2026-09-21",
+"hash": "5a3b926d7356942519f10c1d412ff654"
 },
 "how-american-kids-learn-reading": {
 "date": "2026-08-07",
-"hash": "9a241a842e66005d6aa8ab19611ba240"
+"hash": "233ef82472525e2599c1ce1912bfa17a"
 },
 "how-to-choose-banqiao-english-cram-school": {
 "date": "2026-08-26",
-"hash": "a263b591c114176e74284c3e70a217aa"
+"hash": "5f7e4054dc0f067907c7bf39641eee85"
 },
 "how-to-verify-foreign-teacher-credentials": {
 "date": "2026-08-07",
-"hash": "4bb6e042d69c93aa85accdb0fa899bea"
+"hash": "240358c6ca926ee308ccdba909a2dfc7"
 },
 "in-on-at-prepositions": {
-"date": "2026-09-16",
-"hash": "0846581b00cb8f9c4f91d891a5a60507"
+"date": "2026-09-15",
+"hash": "e9977826375507528638b2409a33760a"
 },
 "index": {
-"date": "2026-09-12",
-"hash": "b852f497e8d5d40d9b2f10d6ece937d0"
+"date": "2026-10-01",
+"hash": "77dc0fd70c9c6d7bdc1faf66413f52cf"
 },
 "irregular-verbs-list": {
-"date": "2026-09-22",
-"hash": "0c8f3a4f53c8131065513b81b22c77bf"
+"date": "2026-09-14",
+"hash": "7649bdb0554bfb4bcf8d172f50b66422"
 },
 "jiangcui-junior-high-english": {
 "date": "2026-08-07",
-"hash": "ccae2cc947722cd578b8bd6b0d97e6cf"
+"hash": "1c724a05e057a3ec9e4d6cc5b7ba2ddb"
 },
 "jiangzicui-english-cram-school": {
 "date": "2026-08-07",
-"hash": "86514d56548262ee7a474dc2fa324fe8"
+"hash": "56a0f2b86a2d385e8a17df79e69890c2"
 },
 "jobs-english": {
-"date": "2026-09-16",
-"hash": "2c3af5e5e2a1b6373bf4dab9ed233e68"
+"date": "2026-10-01",
+"hash": "1159188fa32d8b137951b668a4c3762c"
 },
 "juguang-elementary-english": {
 "date": "2026-08-07",
-"hash": "5f724fd31aaeb6ad5b7102336eff3bc5"
+"hash": "4366ffef22ecdbde403ae5cc0e72d220"
 },
 "junior-high-english-banqiao": {
 "date": "2026-08-07",
-"hash": "48574859ddeaacee85b2920073bf6582"
+"hash": "2f618d008f3f18e8a12ad063295ab6ce"
 },
 "ket-listening-practice-part1": {
-"date": "2026-10-01",
-"hash": "c458293e3f3474b675597c51002c300a"
+"date": "2026-09-08",
+"hash": "e49d02aacc802ea2713a4bbbc727f0dc"
 },
 "ket-listening-practice-part2": {
-"date": "2026-10-01",
-"hash": "bff2311f4f9e8af3bf717ae15475f307"
+"date": "2026-09-08",
+"hash": "060acefc8b2da3732de4200134046834"
 },
 "ket-listening-practice-part3": {
-"date": "2026-10-01",
-"hash": "44b4867e9e56281d15d83844be072f87"
+"date": "2026-09-08",
+"hash": "fa00737aede14cdf7c1bd6af0c5daa54"
 },
 "ket-listening-practice-part4": {
-"date": "2026-10-01",
-"hash": "9ff135054b1b785e31b4699f42e5ad19"
+"date": "2026-09-08",
+"hash": "252e38679bc71211c4fead44db99eeaf"
 },
 "ket-listening-practice-part5": {
-"date": "2026-10-01",
-"hash": "6866ec9c341d99014e082f3abe643a30"
+"date": "2026-09-08",
+"hash": "a8217ca3531cb00c622e4bf578baef9e"
 },
 "ket-practice-tests": {
-"date": "2026-09-25",
-"hash": "4127bb0094f50f1f45405b40cb30f960"
+"date": "2026-09-13",
+"hash": "e558c4ca363fa72411cf02d369ce255a"
 },
 "ket-prep-guide": {
-"date": "2026-09-25",
-"hash": "ab17683fe5d9d8be5b15b22939724795"
+"date": "2026-09-06",
+"hash": "aa1bd05df249340a664efff6ed5fc9c8"
 },
 "ket-rw-practice-part1": {
-"date": "2026-10-01",
-"hash": "7d835aacb502039ad4d80ad2023a2357"
+"date": "2026-08-21",
+"hash": "44e836bfab88eb76664c1f3b3964107b"
 },
 "ket-rw-practice-part2": {
-"date": "2026-10-01",
-"hash": "6b03bdb78ff6ab0c98eebdfc900e6027"
+"date": "2026-08-20",
+"hash": "06e67af902f356ff38e6c3d477b29130"
 },
 "ket-rw-practice-part3": {
-"date": "2026-10-01",
-"hash": "806f977408fea86a4673a39dad720a43"
+"date": "2026-08-20",
+"hash": "69d29b5d14d5b52dd401ce8b75111664"
 },
 "ket-rw-practice-part4": {
-"date": "2026-10-01",
-"hash": "28e5db5445d9f6ac7731ec527f41225a"
+"date": "2026-08-20",
+"hash": "8eb6f1529c9148e9ff5f5160a3822caa"
 },
 "ket-rw-practice-part5": {
-"date": "2026-10-01",
-"hash": "da0afd6621d71bb8bea235aebea761fa"
+"date": "2026-08-20",
+"hash": "b3395966bf1a3a7f420df2f4dbc5b85d"
 },
 "ket-rw-practice-part6": {
-"date": "2026-09-25",
-"hash": "f4e401b872e48e935e08a67e979c73ab"
+"date": "2026-08-22",
+"hash": "e3d8a5c2b0d7e074e70df786f27bdfee"
 },
 "ket-rw-practice-part7": {
-"date": "2026-09-25",
-"hash": "35728746858616c9139ba645beab38f3"
+"date": "2026-08-21",
+"hash": "f4f613454b1d33168917dff4f8cd11a3"
 },
 "ket-score-calculator": {
-"date": "2026-09-25",
-"hash": "763aba11e3b593b0bbc0e0e99c84afb8"
+"date": "2026-09-02",
+"hash": "fe1ec3ae2091c844aea0b35e4844398c"
 },
 "ket-speaking-practice": {
-"date": "2026-09-25",
-"hash": "36819f4a3c86951965b54e419199f396"
+"date": "2026-08-21",
+"hash": "f10e1db750f5e3976c66f4192d8a4157"
 },
 "ket-vs-gept-comparison": {
 "date": "2026-10-01",
-"hash": "44201c1c334416605bcf08277f799d09"
+"hash": "801d91244087a375717cf260aef5118a"
 },
 "kids-english-banqiao": {
 "date": "2026-08-13",
-"hash": "7d8ba62ab81bd3d1b5ad9425fe15a105"
+"hash": "dc7f617d720480343564f393dd1db1aa"
 },
 "kids-english-cram-school-guide": {
 "date": "2026-08-13",
-"hash": "551ffcd5eae0c04aeebef8885d3cf635"
+"hash": "e1af432200b47ec3131d4465bcc303e2"
 },
 "kids-english-exams-guide": {
 "date": "2026-08-26",
-"hash": "ff669de0abeb1414a6ba972981d09d19"
+"hash": "e4ec1ab38cf0add89dd8a9f59ec33dc3"
 },
 "kids-english-guide": {
 "date": "2026-09-06",
-"hash": "9b35ec83a72744eaed6a2ee222d2f840"
+"hash": "3b80f20fa0589313ea58ceec0efb62ad"
 },
 "kids-english-levels": {
 "date": "2026-08-20",
-"hash": "011043248054a985dd754e7e414aa886"
+"hash": "c4740c228f13cf0ffe812c6985ec2972"
 },
 "kids-english-names-guide": {
-"date": "2026-09-13",
-"hash": "10dc8cb2284a717fa15a1d043a4374b2"
+"date": "2026-08-26",
+"hash": "a07e19e8a354d77eded2dda6905ea8b9"
 },
 "kk-phonetic-chart": {
-"date": "2026-09-22",
-"hash": "44da9e13f7c46d9fb0c632e709c72fd6"
+"date": "2026-10-01",
+"hash": "ccf4d3dff03b866977b1948486fbce2b"
 },
 "kk-phonetics-vs-phonics": {
-"date": "2026-09-16",
-"hash": "febf21a59a0589b25f8c0c47f85b7ef9"
+"date": "2026-09-15",
+"hash": "e00bddb8036b97fa893045d66ddecccb"
 },
 "learning-support-guide": {
 "date": "2026-09-15",
-"hash": "865a2752f05295dd471cbad5acc199fc"
+"hash": "5e6d56f922bbf833f706a77fa2fcab29"
 },
 "line": {
 "date": "2026-08-07",
-"hash": "c83589ff46785ff542d4af40106ffc02"
+"hash": "0f7e1ebade6473b59a9f915de79c859c"
 },
 "linguaskill-guide": {
 "date": "2026-08-26",
-"hash": "6ae3b420fed50f94a80e4c599fd8ff5f"
+"hash": "0231a8c9c7b75bae53df19c02e482664"
 },
 "mid-autumn-festival-english": {
 "date": "2026-10-01",
-"hash": "f898b33d76bd00541a65165aa0c9f812"
+"hash": "acb9551dd7476e544f4702bdbfbb80f5"
 },
 "moe-1200-words-guide": {
-"date": "2026-09-22",
-"hash": "85ac61fb1de88d7e5d70e5fd109e11d7"
+"date": "2026-09-15",
+"hash": "93a7fbd6b2276ecf0d894820c20476af"
 },
 "moe-2000-words-guide": {
-"date": "2026-09-13",
-"hash": "732252fa1cf1436cab73783ba0e0924d"
+"date": "2026-08-13",
+"hash": "0b4d90dc8adac6cec2d40cd475281acb"
 },
 "months-english": {
 "date": "2026-09-22",
-"hash": "2da458c3e161050dd10edf12670b3c73"
+"hash": "ef99ed1099839725548a7dc696b6959c"
 },
 "movers-listening-practice-part1": {
-"date": "2026-10-01",
-"hash": "4948f847709fb590f828258a3a298bbe"
+"date": "2026-09-08",
+"hash": "8ac90752b92135f6e649ebec8408bc19"
 },
 "movers-listening-practice-part2": {
-"date": "2026-10-01",
-"hash": "c560b315650b79df92cfe1c3a0806781"
+"date": "2026-09-08",
+"hash": "1b059a93f6dbca24207cf67c2da4adb4"
 },
 "movers-listening-practice-part3": {
-"date": "2026-10-01",
-"hash": "4d32700c8c7dc77cc5d2d1e980e30945"
+"date": "2026-09-08",
+"hash": "f17d92958d256418795838673430411b"
 },
 "movers-listening-practice-part4": {
-"date": "2026-10-01",
-"hash": "9c1db899abfe24603d5ae8e58697b976"
+"date": "2026-09-08",
+"hash": "0bffb08d2b204acb2ca9ee8e53fd1fa2"
 },
 "movers-listening-practice-part5": {
-"date": "2026-10-01",
-"hash": "922d8532f271171cb20dcabf0d678b70"
+"date": "2026-09-08",
+"hash": "21b00d1676be11706c9700f5a8554b40"
 },
 "movers-practice-tests": {
-"date": "2026-09-25",
-"hash": "137972bb2c4fb75dad199ece086a4d43"
+"date": "2026-09-13",
+"hash": "aeff7a601d4f275982b6d99a2f193986"
 },
 "movers-rw-practice-part1": {
-"date": "2026-10-01",
-"hash": "cd28a52eece39d73d0bcf907c9d6283c"
+"date": "2026-09-08",
+"hash": "fc6e10b80b3362986e6474c420d028ab"
 },
 "movers-rw-practice-part2": {
-"date": "2026-10-01",
-"hash": "1dc9d7e6d354dc6e6f586f4ae84ebf42"
+"date": "2026-09-08",
+"hash": "34ff0668bc034b9830f13585ec46b869"
 },
 "movers-rw-practice-part3": {
-"date": "2026-10-01",
-"hash": "080227056f8a40817b50d4cf2147386d"
+"date": "2026-09-08",
+"hash": "5daf0fe814a0f0d8a82f43b0f9d08c14"
 },
 "movers-rw-practice-part4": {
-"date": "2026-10-01",
-"hash": "209c812271b3c886eef621c277e439ee"
+"date": "2026-09-08",
+"hash": "3eebc537168e70de5a069030cb3020cf"
 },
 "movers-rw-practice-part5": {
-"date": "2026-10-01",
-"hash": "b016b501bab87ce12d4d494d8685e183"
+"date": "2026-09-08",
+"hash": "fca892904d24614ea116bba21bca1569"
 },
 "movers-rw-practice-part6": {
-"date": "2026-10-01",
-"hash": "dfaca607c72b7370f67c6e59ca5cb6dd"
+"date": "2026-09-08",
+"hash": "023bf4303a07fe8cd12aa0b6cdde7251"
 },
 "movers-speaking-practice": {
-"date": "2026-10-01",
-"hash": "6398c147792372e6218eb64976e0a7d4"
+"date": "2026-09-08",
+"hash": "c740ab98d42c40da388a72191a3b6308"
 },
 "movers-vocabulary-practice": {
-"date": "2026-10-01",
-"hash": "aaba5b1f80d2b2d563539298b062ae5f"
+"date": "2026-08-26",
+"hash": "96b550b585762a14b5750bbbe5fc1022"
 },
 "native-vs-local-english-teachers": {
 "date": "2026-08-07",
-"hash": "ac0435757b4d3b04fdf3a5b72b0b7a2d"
+"hash": "9609319b27cf9b7d766c4de5dada57e9"
 },
 "numbers-1-100-english": {
 "date": "2026-09-15",
 "hash": "6b9254df54704c37581536bda784599b"
 },
 "online-vs-in-person-english-banqiao": {
-"date": "2026-08-07",
-"hash": "33b4e61b787db1c5e53c3984e58519c0"
+"date": "2026-07-31",
+"hash": "6696d170742c41acc8fd87cc1e03352e"
 },
 "ordinal-numbers-english": {
 "date": "2026-09-21",
-"hash": "8518e4c0102e1ab2a519f48196f25bcd"
+"hash": "afb56c540bbcf15f4b6bded71fc0c138"
 },
 "pack-9rvvw6p3nnmls4": {
-"date": "2026-09-08",
-"hash": "2b4b8a95e228a4c4d603ade6cd2d669c"
+"date": "2026-09-10",
+"hash": "e01ae61a3ccad7c087f7e133f2a4dab3"
 },
 "pet-listening-practice-part1": {
-"date": "2026-10-01",
-"hash": "e752c5bf78b1c64f531435ad6962601a"
+"date": "2026-09-08",
+"hash": "e4ae545077611ef8908cac952306e6c1"
 },
 "pet-listening-practice-part2": {
-"date": "2026-10-01",
-"hash": "5e5a1e999589759deac8d5cb00a40ea0"
+"date": "2026-09-08",
+"hash": "dedeb75e00775d453f38890461035a65"
 },
 "pet-listening-practice-part3": {
-"date": "2026-10-01",
-"hash": "a07961c544b3565a83a0756a7ef30bcf"
+"date": "2026-09-08",
+"hash": "111f6e0b0dc0848b635b8cb177ee31b7"
 },
 "pet-listening-practice-part4": {
-"date": "2026-10-01",
-"hash": "75ee4e805ab21d86fd642e734106e97c"
+"date": "2026-09-08",
+"hash": "935c61028eab87221302d60c9e895b8e"
 },
 "pet-practice-tests": {
-"date": "2026-09-25",
-"hash": "9f3f36122cbf8b9f201f2e759fa278db"
+"date": "2026-09-13",
+"hash": "eaf6a37a2e32ec222317b735fcd37265"
 },
 "pet-prep-guide": {
-"date": "2026-09-25",
-"hash": "86899f3d494f3143e8ae333006ce1d6d"
+"date": "2026-09-06",
+"hash": "34147f066ce717081b7988c24f9f036b"
 },
 "pet-reading-practice-part1": {
-"date": "2026-10-01",
-"hash": "5a4c376313a334af0e6a34d8f9c70d68"
+"date": "2026-09-18",
+"hash": "7cfb39dde45486ba9de7cc61a2649685"
 },
 "pet-reading-practice-part2": {
-"date": "2026-10-01",
-"hash": "a47779a86b518441b5f534af9228558f"
+"date": "2026-09-18",
+"hash": "1cdeda91e23fbeeabf890532784464ef"
 },
 "pet-reading-practice-part3": {
-"date": "2026-10-01",
-"hash": "21287ea84a9a72b5d93a11580eed475d"
+"date": "2026-09-18",
+"hash": "d67ef4ae9a382f4c6080744d008f4b69"
 },
 "pet-reading-practice-part4": {
-"date": "2026-10-01",
-"hash": "27e672cdede818a4f644db2b53419610"
+"date": "2026-09-18",
+"hash": "4f96234447a0eadd7a7d8e39525c8d7d"
 },
 "pet-reading-practice-part5": {
-"date": "2026-10-01",
-"hash": "a5a7f2f943acae25defbdf4679586d25"
+"date": "2026-09-18",
+"hash": "485c6d9ef31ee58ac0698cf4f1d75837"
 },
 "pet-reading-practice-part6": {
-"date": "2026-10-01",
-"hash": "8675d31e3b12f3e335d6d5edc9dcf931"
+"date": "2026-09-18",
+"hash": "fcab9e596b79d98f33a5497f70f226a8"
 },
 "pet-score-calculator": {
-"date": "2026-09-25",
-"hash": "5e7fb073aa0d09683b6d438db5d650ca"
+"date": "2026-09-02",
+"hash": "1be68bdfbbbb7f7e147951c87717d60a"
 },
 "pet-speaking-practice": {
-"date": "2026-09-25",
-"hash": "2aac2a3ebc5ef6b118697e1d2e083a78"
+"date": "2026-08-21",
+"hash": "4f22b6a848caefc6246bea4f3c690645"
 },
 "pet-writing-practice-part1": {
-"date": "2026-09-25",
-"hash": "7c7420452799d4417253e6d89db06960"
+"date": "2026-09-22",
+"hash": "d7f950a0afb6fc41305c7fca4228dfb7"
 },
 "pet-writing-practice-part2": {
-"date": "2026-09-25",
-"hash": "bc95352b381d16e1acae3a75de7b38c9"
+"date": "2026-09-05",
+"hash": "ace8d67a2d1f3b0c7887de24f113b0d4"
 },
 "phonics-preschool-banqiao": {
-"date": "2026-08-07",
-"hash": "d67b7d82e0b877bb7d6ffe739b370930"
+"date": "2026-07-07",
+"hash": "69465898badff79bd0e9d91bf4dad3d3"
 },
 "phonics-rules-chart": {
-"date": "2026-09-22",
-"hash": "6b7f5493ae4a82577d0dfc0167e61cc2"
+"date": "2026-09-15",
+"hash": "6d3ea9e0267ecc603843fcf2e22d2498"
 },
 "plural-s-past-ed-pronunciation": {
 "date": "2026-08-21",
-"hash": "623ee4eed0e660f7ddf244532b244624"
+"hash": "72da8d171ccd3dc0854b061ad63de38e"
 },
 "preschool-english-guide": {
 "date": "2026-08-13",
-"hash": "9279e167c40e5c9dafeb8ed22dbb93a9"
+"hash": "5780229deb7cde647da34cdc54ee95f7"
 },
 "puqian-elementary-english": {
 "date": "2026-08-07",
-"hash": "569e016343a5130192fc71109dd88d9c"
+"hash": "c477c41ecb451fac83fb211576582ac4"
 },
 "real-vs-fake-english-immersion-banqiao": {
 "date": "2026-08-27",
-"hash": "b6a636cd172853e7cd807b59f949b3c6"
+"hash": "ce64db56e2d78b0b091adbd6cf3502fb"
 },
 "shide-style-exam-guide": {
 "date": "2026-08-26",
-"hash": "51c24419a5f6fb82691ec96d23f32a16"
+"hash": "4ecebb7fd05613162ab50cbca79cdd0c"
 },
 "ship-or-sheep-english-vowels": {
 "date": "2026-08-21",
-"hash": "d0e1935d52ccf732f0e05c2dfe004b94"
+"hash": "1e9bb4b616446be71101ad628ae7e6e5"
 },
 "sight-words-guide": {
 "date": "2026-09-06",
-"hash": "489341c4f6936cadf930d9e9ef5060ea"
+"hash": "829a2c34d9436629ca7bb2da30a87246"
 },
 "sight-words-heart-words-guide": {
 "date": "2026-09-06",
-"hash": "24b0a35cce9298c44209990f1e61f3f3"
+"hash": "14203c1e87a5a7fd12ee03f30d231d5a"
 },
 "small-class-english-truth": {
 "date": "2026-08-07",
-"hash": "a34e8f2a5d866c51c3c2dea22c24123d"
+"hash": "04b79818739c9aa4682aec3a14bb4201"
 },
 "starters-listening-practice-part1": {
-"date": "2026-10-01",
-"hash": "ab6821f88383b1da35046fdfcf791dac"
+"date": "2026-09-08",
+"hash": "71979b4362c1b49393aa3385c383693d"
 },
 "starters-listening-practice-part2": {
-"date": "2026-10-01",
-"hash": "d3275565c34c1ef248d9901dcdda2677"
+"date": "2026-09-08",
+"hash": "aa760f0b67e6ab1795970f44f7217211"
 },
 "starters-listening-practice-part3": {
-"date": "2026-10-01",
-"hash": "081daab838120be6f0ce0f98c9194069"
+"date": "2026-09-08",
+"hash": "5ad1ab91a9d339c13146e0de39326ae7"
 },
 "starters-listening-practice-part4": {
-"date": "2026-10-01",
-"hash": "524d6e011b0c8ce272484216870eb94c"
+"date": "2026-09-08",
+"hash": "e11356a4db51189a17e7decec44dcdd6"
 },
 "starters-practice-tests": {
-"date": "2026-09-25",
-"hash": "4d0ba8cbd466a89bcfa38317b5d47647"
+"date": "2026-09-13",
+"hash": "142b8afcf050b1f4216353f1ff48d1cb"
 },
 "starters-rw-practice-part1": {
-"date": "2026-10-01",
-"hash": "50d388a6c3d0eb227d530c4ed9a35743"
+"date": "2026-09-08",
+"hash": "83604ced2f9a52aa9faa9a183b723007"
 },
 "starters-rw-practice-part2": {
-"date": "2026-10-01",
-"hash": "a3543d023787ac4341dfc042e4651c9f"
+"date": "2026-09-08",
+"hash": "8c6e48bc20ea4264fdd57a7c69cf758a"
 },
 "starters-rw-practice-part3": {
-"date": "2026-10-01",
-"hash": "a525c31cabe64d9a7af7975a7effabfc"
+"date": "2026-09-08",
+"hash": "70ce68420f37a924c0baed29b0a3788b"
 },
 "starters-rw-practice-part4": {
-"date": "2026-10-01",
-"hash": "60fc01e8d5c4c3ef336ec05e120c9638"
+"date": "2026-09-08",
+"hash": "b1bcb7c98f6dc9258b4bcf483ebe53ff"
 },
 "starters-rw-practice-part5": {
-"date": "2026-10-01",
-"hash": "5aa77b049042459f39240a91296ceb36"
+"date": "2026-09-08",
+"hash": "853f479000fe4987449259f162f40b5e"
 },
 "starters-speaking-practice": {
-"date": "2026-10-01",
-"hash": "a71de747b254e9990ca589eff1f26feb"
+"date": "2026-09-08",
+"hash": "7a5915f543217be6f956c95df12bc279"
 },
 "starters-vocabulary-practice": {
-"date": "2026-10-01",
-"hash": "2f108ddc85f4cb0497d75e25b7cccbbe"
+"date": "2026-08-26",
+"hash": "f2b8a1645804a6a101fec7a8fa4df4ca"
 },
 "taiwan-kids-hardest-english-sounds": {
 "date": "2026-09-06",
-"hash": "fef719d1399316347de4aa309926a041"
+"hash": "56c6c4369ee8b54232c04982de11acdf"
 },
 "thank-you-english": {
-"date": "2026-09-16",
-"hash": "2a3dc04ec481ca580f451e6c9ca0dc36"
+"date": "2026-10-01",
+"hash": "2ff3c660785223bddab2e68e2422d014"
 },
 "wensheng-elementary-english": {
 "date": "2026-08-07",
-"hash": "dded52b487c7e8a60f29a63be98ecb54"
+"hash": "d837470b0e4dc0fdc091bc999d0d53b8"
 },
 "when-to-start-english-for-kids": {
 "date": "2026-08-12",
-"hash": "464b0cdbf139b882c40eeb81e4e1eec6"
+"hash": "3c48b6ba95c925c6f88ebe0481bf800c"
 },
 "xinpu-elementary-english": {
 "date": "2026-08-07",
-"hash": "381ec90fe07d60a80f9eb92230ae0315"
+"hash": "cd211c41de5b135268178a5a3997ee80"
 },
 "xinpu-english-cram-school": {
 "date": "2026-08-07",
-"hash": "aa99c794efc029a1e2053fbb2b8d6c80"
+"hash": "a81a9e4247b33ec6030a1240319d5020"
 },
 "xinpu-junior-high-english": {
 "date": "2026-08-07",
-"hash": "4c38dd80b540a4a6fb32400d7e44d0ca"
+"hash": "a8e5e50d4ce5aa95a40a16fe2fd64ebd"
 },
 "zhongshan-elementary-english-banqiao": {
 "date": "2026-08-07",
-"hash": "76cab96553007f5f49e93ab2aa3d93a7"
+"hash": "f28166cc874f6f8a123c53649f8f2ac9"
 },
 "zhongshan-junior-high-english-banqiao": {
 "date": "2026-08-07",
-"hash": "7a7324c06910404ebe1daa7912472245"
+"hash": "cf197430fcc23404b8b15eb580060800"
 }
 }

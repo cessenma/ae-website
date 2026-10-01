@@ -1,9 +1,9 @@
 # ===========================================================
 # American English 埃森美語 — static site (Apache/LiteSpeed)
 # Directory-style clean URLs (/courses/ -> /courses/index.html)
-# NO rewrite/redirect rules needed — every page is a real folder,
-# served natively by DirectoryIndex. Same URLs as old WordPress,
-# so no migration 301s. Also works as-is on Netlify / Cloudflare
+# Every page is a real folder served natively by DirectoryIndex. The rewrite rules
+# below only force https + the apex host, hide tools/ and data/, and fold duplicate
+# URLs; the Redirect lines further down catch old and mistyped addresses. Also works as-is on Netlify / Cloudflare
 # Pages / GitHub Pages (which ignore .htaccess but do the same thing).
 # ===========================================================
 
@@ -21,9 +21,9 @@ RewriteCond %{HTTP_HOST} ^www\. [NC,OR]
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://americanenglish.com.tw%{REQUEST_URI} [L,R=301]
 
-# tools/ holds the site's build scripts (seo_build.py). They ride along in the
+# tools/ and data/ hold the build scripts and their ledgers. They ride along in the
 # repo so they deploy with it, but they are not pages: answer 404, not the source.
-RewriteRule ^tools(/|$) - [R=404,L]
+RewriteRule ^(tools|data)(/|$) - [R=404,L]
 
 # /index.html and /<page>/index.html answered 200 as duplicates of the folder URL.
 # THE_REQUEST is the browser's own request line, so the internal DirectoryIndex lookup
@@ -34,6 +34,11 @@ RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]
 # Malformed inbound links that repeat the domain as a path segment
 # (/americanenglish.com.tw/happy-birthday-english/ had impressions in GSC, Sept 2026).
 RewriteRule ^americanenglish\.com\.tw/?(.*)$ /$1 [R=301,L]
+
+# The charts became .webp, but /chart-license/ kept handing out .png addresses for two weeks
+# (Sept 2026). Anyone who pasted that embed code gets the picture instead of a 404.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^assets/img/charts/([^/]+)\.png$ /assets/img/charts/$1.webp [R=301,L]
 </IfModule>
 
 # SEO consolidation 301 (cannibalization fix): /banqiao-junior-high-english/
@@ -67,12 +72,11 @@ RedirectMatch 301 ^/en/elementary-school-students/?$ https://americanenglish.com
 RedirectMatch 301 ^/en/about/?$ https://americanenglish.com.tw/certified-american-teacher-banqiao/
 RedirectMatch 301 ^/en/ https://americanenglish.com.tw/
 
-# Friendly 404
 # URLs that never existed here but collect impressions in GSC (Sept 2026 audit): typos,
 # old guesses and addresses quoted by other sites. Each goes to the page it was reaching for.
 RedirectMatch 301 ^/old-numbers-english/?$ https://americanenglish.com.tw/ordinal-numbers-english/
 RedirectMatch 301 ^/english-ordinal-numbers/?$ https://americanenglish.com.tw/ordinal-numbers-english/
-RedirectMatch 301 ^/cambridge-practice-titles/?$ https://americanenglish.com.tw/cambridge-practice-tests/
+RedirectMatch 301 ^/cambridge-practice-titles/?$ https://americanenglish.com.tw/pet-practice-tests/
 RedirectMatch 301 ^/cambridge-c1-advanced-guide/?$ https://americanenglish.com.tw/cae-c1-advanced-guide/
 RedirectMatch 301 ^/flyers-guide/?$ https://americanenglish.com.tw/cambridge-flyers-guide/
 RedirectMatch 301 ^/phonetic-chart/?$ https://americanenglish.com.tw/kk-phonetic-chart/
@@ -82,6 +86,7 @@ RedirectMatch 301 ^/days-if-week-english/?$ https://americanenglish.com.tw/days-
 RedirectMatch 301 ^/(in-regular-verbs-list|irregular_verbs_list|irregular_verbs-list)/?$ https://americanenglish.com.tw/irregular-verbs-list/
 RedirectMatch 301 ^/(american-english-birthday-wishes|apple-birthday-english|half-birthday-english|happy-english-birthday|happy-english|english-learning/birthday-wishes-english)/?$ https://americanenglish.com.tw/happy-birthday-english/
 
+# Friendly 404
 ErrorDocument 404 /404.html
 
 # Agent discovery (RFC 8288) — advertise the machine-readable site summary (llms.txt)
