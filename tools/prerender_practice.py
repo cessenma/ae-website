@@ -67,7 +67,10 @@ def _dims(url):
     from PIL import Image
     if url not in _SIZE:
         f = os.path.join(SITE, url.lstrip("/"))
-        _SIZE[url] = Image.open(f).size if os.path.exists(f) else None
+        try:
+            _SIZE[url] = Image.open(f).size if os.path.exists(f) and not f.endswith(".svg") else None
+        except Exception:
+            _SIZE[url] = None
     return _SIZE[url]
 
 _LV = {"starters": "Starters", "movers": "Movers", "flyers": "Flyers"}
@@ -75,7 +78,7 @@ _PART = {"l": "聽力", "rw": "閱讀與寫作", "sp": "口說"}
 
 def fix_yle_imgs(html):
     """WebP paths, an alt where the tag has none, and the pixel size, on every YLE <img>."""
-    html = re.sub(r'(/assets/img/yle/[^"\'\s)]+?)\.png', lambda m: m.group(1) + ".webp"
+    html = re.sub(r'(/assets/img/(?:yle|pics)/[^"\'\s)]+?)\.png', lambda m: m.group(1) + ".webp"
                   if os.path.exists(os.path.join(SITE, m.group(1).lstrip("/") + ".webp")) else m.group(0), html)
     n = [0]
     def tag(m):
@@ -91,14 +94,15 @@ def fix_yle_imgs(html):
         if d and "width=" not in t:
             t = t[:-1].rstrip("/").rstrip() + f' width="{d[0]}" height="{d[1]}">'
         return t
-    return re.sub(r'<img\b[^>]*src="/assets/img/yle/[^"]+"[^>]*>', tag, html)
+    return re.sub(r'<img\b[^>]*src="/assets/img/(?:yle|pics)/[^"]+"[^>]*>', tag, html)
 
 
 def yle_pictures(pages):
     """PNG -> WebP, references rewritten, alt + dimensions on the static tags."""
     from PIL import Image
     made = 0
-    for png in glob.glob(os.path.join(SITE, "assets/img/yle/*/*.png")):
+    pngs = glob.glob(os.path.join(SITE, "assets/img/yle/*/*.png")) + glob.glob(os.path.join(SITE, "assets/img/pics/*.png"))
+    for png in pngs:
         webp = png[:-4] + ".webp"
         if not os.path.exists(webp) or os.path.getmtime(webp) < os.path.getmtime(png):
             Image.open(png).convert("RGB").save(webp, "WEBP", quality=82, method=6)
@@ -116,13 +120,13 @@ def yle_pictures(pages):
     refs = set()
     for f in glob.glob(os.path.join(SITE, "**/*.html"), recursive=True) + [os.path.join(SITE, "sitemap.xml"), os.path.join(SITE, "llms.txt")]:
         if os.path.exists(f):
-            refs.update(re.findall(r'/assets/img/yle/[^"\'\s)<]+?\.png', open(f, encoding="utf-8").read()))
+            refs.update(re.findall(r'/assets/img/(?:yle|pics)/[^"\'\s)<]+?\.png', open(f, encoding="utf-8").read()))
     gone = 0
-    for png in glob.glob(os.path.join(SITE, "assets/img/yle/*/*.png")):
+    for png in pngs:
         if "/" + os.path.relpath(png, SITE) not in refs and os.path.exists(png[:-4] + ".webp"):
             os.remove(png)
             gone += 1
-    print(f"YLE pictures: {made} converted to WebP, {changed} pages updated, {gone} unreferenced PNGs removed")
+    print(f"practice pictures: {made} converted to WebP, {changed} pages updated, {gone} unreferenced PNGs removed")
 
 
 # ---------------------------------------------------------------- Quiz JSON-LD
@@ -216,7 +220,7 @@ def main():
     if only:
         pages = [p for p in pages if os.path.basename(os.path.dirname(p)) in only]
     yle_pages = sorted(glob.glob(os.path.join(SITE, "*/index.html")))
-    yle_pictures([p for p in yle_pages if "/assets/img/yle/" in open(p, encoding="utf-8").read()])
+    yle_pictures([p for p in yle_pages if re.search(r"/assets/img/(?:yle|pics)/", open(p, encoding="utf-8").read())])
 
     class Quiet(http.server.SimpleHTTPRequestHandler):
         def log_message(self, *a, **k):
