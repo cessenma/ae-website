@@ -26,7 +26,11 @@ from bs4 import BeautifulSoup
 
 SITE   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # repo root, wherever the checkout lives
 ORIGIN = "https://americanenglish.com.tw"
-APPJS_VER = 19
+def _appjs_ver():
+    """Content hash of app.js, like styles.css: the cache key changes exactly when the file does."""
+    return hashlib.md5(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                                         "assets", "app.js"), "rb").read()).hexdigest()[:8]
+_APPJS = _appjs_ver()
 LINE = "https://lin.ee/W9J8TuQ"
 LOGO = "/assets/img/american-english-banqiao-logo.jpg"
 NAV  = [("首頁","/"),("課程","/courses/"),("劍橋英檢","/exams/"),("全民英檢","/gept/"),("師資","/certified-american-teacher-banqiao/"),
@@ -44,6 +48,11 @@ TEACHER   = "/certified-american-teacher-banqiao/"
 ORG_ID    = ORIGIN + "/#organization"
 PERSON_ID = ORIGIN + "/#christopher"
 OG_DEFAULT = "/assets/img/og-default.jpg"
+BYLINE_LINK = f'<a class="byl" href="{TEACHER}">Christopher</a>'
+ARIA_H2 = ' role="heading" aria-level="2"'
+ICON_OLD = '<link rel="icon" href="/assets/img/american-english-banqiao-logo.jpg">'
+ICON_NEW = ('<link rel="icon" href="/favicon.ico" sizes="48x48">'
+            '<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">')
 # The Google rating is on screen on these pages only. Google ignores a rating a business
 # marks up about itself, and marking it up where the reader cannot see it is against the
 # review-snippet guidelines — so the markup stays where the number is visible.
@@ -235,6 +244,8 @@ def published_date(rel, today):
             pass
     return _PUBLISHED.get(rel, today)
 
+PERSON_REF = {"@type": "Person", "@id": PERSON_ID, "name": "Christopher", "url": ORIGIN + TEACHER}
+
 _FULL_ORG = None
 def full_org():
     """The homepage's Organization node is the single source; every other page gets a copy
@@ -257,6 +268,8 @@ def full_org():
 def org_node(rel, own=None):
     d = json.loads(json.dumps(full_org()))
     d["url"] = ORIGIN + "/"
+    if isinstance(d.get("founder"), dict):
+        d["founder"] = dict(PERSON_REF)
     if rel not in RATING_PAGES:
         d.pop("aggregateRating", None); d.pop("review", None)
     elif own:                                   # a rating page keeps the reviews it shows
@@ -264,7 +277,6 @@ def org_node(rel, own=None):
             if k in own: d[k] = own[k]
     return d
 
-PERSON_REF = {"@type": "Person", "@id": PERSON_ID, "name": "Christopher", "url": ORIGIN + TEACHER}
 ARTICLE_TYPES = {"Article", "BlogPosting", "NewsArticle"}
 OWN_TYPES = ARTICLE_TYPES | {"CollectionPage", "Quiz", "WebApplication", "Product", "ItemList", "WebPage", "Course", "LearningResource"}
 
@@ -278,6 +290,20 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified):
     Article block describing a different URL (nine pages were shipping the BlogPosting of
     the article they had been copied from). Returns (html, types found)."""
     found = set()
+    def refs(v):
+        """Swap an inline copy of the school ({"@type":"Organization","name":…}) for a reference."""
+        ch = False
+        if isinstance(v, dict):
+            for k, x in list(v.items()):
+                if isinstance(x, dict) and "@id" not in x and (_types(x) & {"Organization", "EducationalOrganization"}) \
+                   and re.search("埃森|American English", str(x.get("name", ""))):
+                    v[k] = {"@id": ORG_ID}; ch = True
+                else:
+                    ch = refs(x) or ch
+        elif isinstance(v, list):
+            for x in v:
+                ch = refs(x) or ch
+        return ch
     def fix(node):
         changed = False
         if not isinstance(node, dict):
@@ -292,6 +318,10 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified):
             for k, v in (("@id", PERSON_ID), ("url", ORIGIN + TEACHER)):
                 if node.get(k) != v:
                     node[k] = v; changed = True
+            if isinstance(node.get("hasCredential"), str):
+                node["hasCredential"] = {"@type": "EducationalOccupationalCredential",
+                                         "credentialCategory": node["hasCredential"]}
+                changed = True
         elif ts & ARTICLE_TYPES:
             me = node.get("mainEntityOfPage")
             me = me.get("@id") if isinstance(me, dict) else me
@@ -307,6 +337,8 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified):
             mod = max(modified, pub[:10])
             if node.get("dateModified") != mod:
                 node["dateModified"] = mod; changed = True
+        if node.get("@id") != ORG_ID:
+            changed = refs(node) or changed
         return changed
     def sub(m):
         try:
@@ -347,7 +379,7 @@ def breadcrumb_ld(soup, page_url):
                       "item": urljoin(page_url, a.get("href", ""))})
         i += 1
     h1 = soup.select_one("h1")
-    name = re.sub(r"\s+", " ", h1.get_text(strip=True)) if h1 else (soup.title.get_text(strip=True) if soup.title else "")
+    name = re.sub(r"\s+", " ", h1.get_text(" ", strip=True)) if h1 else (soup.title.get_text(strip=True) if soup.title else "")
     parts.append({"@type": "ListItem", "position": i, "name": name})
     return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": parts}
 
@@ -422,10 +454,11 @@ def process_page(path, css_ver="", crit=""):
     html, found = normalize_ld(html, rel, canon, headline, desc, image, published, modified)
 
     # --- build SEO-LD head block ---
-    seo = [SEO_START,
-           f'<link rel="alternate" hreflang="zh-Hant-TW" href="{canon}">',
-           f'<link rel="alternate" hreflang="x-default" href="{canon}">',
-           '<link rel="apple-touch-icon" href="/apple-touch-icon.png">']
+    seo = [SEO_START]
+    if rel != "404.html":                      # an error page has no language alternates
+        seo += [f'<link rel="alternate" hreflang="zh-Hant-TW" href="{canon}">',
+                f'<link rel="alternate" hreflang="x-default" href="{canon}">']
+    seo.append('<link rel="apple-touch-icon" href="/apple-touch-icon.png">')
     if not own_og:
         seo.append(f'<meta property="og:image" content="{image}">')
     if 'name="twitter:card"' not in html:
@@ -444,6 +477,14 @@ def process_page(path, css_ver="", crit=""):
             "description": desc, "inLanguage": "zh-Hant-TW", "mainEntityOfPage": canon, "image": image,
             "datePublished": published, "dateModified": modified,
             "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}}) + "</script>")
+    if rel == TEACHER.strip("/") + "/index.html":
+        seo.append('<script type="application/ld+json">' + jd({
+            "@context": "https://schema.org", "@type": "ProfilePage", "url": canon,
+            "dateModified": modified, "mainEntity": {"@id": PERSON_ID}}) + "</script>")
+    if rel == "contact/index.html":
+        seo.append('<script type="application/ld+json">' + jd({
+            "@context": "https://schema.org", "@type": "ContactPage", "url": canon,
+            "name": "聯絡與交通", "mainEntity": {"@id": ORG_ID}}) + "</script>")
     seo.append(SEO_END)
     seo_block = "\n".join(seo) + "\n"
 
@@ -465,7 +506,7 @@ def process_page(path, css_ver="", crit=""):
     # insert chrome right after the <body> tag; consume following whitespace so re-runs stay idempotent
     if rel not in SELF_CONTAINED:
         html = re.sub(r"(<body[^>]*>)\s*", lambda m: m.group(1) + "\n" + chrome_block(key) + "\n", html, count=1)
-    html = re.sub(r"app\.js\?v=\d+", f"app.js?v={APPJS_VER}", html)
+    html = re.sub(r"app\.js\?v=[0-9a-f]+", f"app.js?v={_APPJS}", html)
 
     # app.js is not optional: styles.css ships .reveal{opacity:0} and app.js is what adds
     # .in to make it visible. A page authored without the tag renders BLANK — that is
@@ -477,7 +518,21 @@ def process_page(path, css_ver="", crit=""):
         cut = html.rfind("</body>")
         if cut != -1:
             html = (html[:cut].rstrip() +
-                    f'\n<script src="/assets/app.js?v={APPJS_VER}"></script>\n' + html[cut:])
+                    f'\n<script src="/assets/app.js?v={_APPJS}"></script>\n' + html[cut:])
+
+    html = html.replace(ICON_OLD, ICON_NEW)
+    # byline: the author's name links to the teacher page (it was plain text on ~150 pages)
+    if rel != TEACHER.strip("/") + "/index.html":
+        html = html.replace("作者：Christopher｜", "作者：" + BYLINE_LINK + "｜")
+        html = html.replace("本文由埃森美語創辦人 Christopher 撰寫", "本文由埃森美語創辦人 " + BYLINE_LINK + " 撰寫")
+    # heading order: when the first heading after the H1 is an h3/h4 (a signpost card, the
+    # task-format box), tell assistive tech it sits at level 2 — the tag and its styling stay
+    m1 = re.search(r"</h1>", html)
+    if m1:
+        mh = re.search(r"<h([2-4])(\s[^>]*)?>", html[m1.end():])
+        if mh and mh.group(1) != "2" and "aria-level" not in (mh.group(2) or ""):
+            at = m1.end() + mh.start() + len("<h" + mh.group(1))
+            html = html[:at] + ARIA_H2 + html[at:]
 
     # footer and "last updated" line: after </main>, else ahead of the closing scripts
     if rel not in SELF_CONTAINED:
@@ -534,7 +589,9 @@ def authored_hash(html):
     if m:
         html = m.group(1)
     html = re.sub(r'<script type="application/ld\+json">.*?</script>\s*', "", html, flags=re.S)
-    html = re.sub(r'<script src="/assets/app\.js\?v=\d+"></script>\s*', "", html)
+    html = re.sub(r'<script src="/assets/app\.js\?v=[0-9a-f]+"></script>\s*', "", html)
+    # the byline link and the heading-level hint are added by this build, not by the author
+    html = html.replace(BYLINE_LINK, "Christopher").replace(ARIA_H2, "")
     # Tools that round-trip a page through BeautifulSoup (build_word_audio) re-emit every tag
     # with its attributes sorted onto one line. The reader sees nothing new, so hash the
     # parsed form: the hand-formatted and the round-tripped page then agree, and <lastmod>
@@ -580,10 +637,16 @@ def share_image(rel, soup):
             return src
     return OG_DEFAULT
 
-def ledger_lastmod(ledger, rel, fpath, today):
+def ledger_lastmod(ledger, rel, fpath, today, prior=None):
     """lastmod for rel; the ledger entry moves only when the authored content hash changes."""
-    if fpath.endswith(".pdf"):   # binary asset: mtime is the only signal, and it is honest there
-        return datetime.date.fromtimestamp(os.path.getmtime(fpath)).isoformat()
+    if fpath.endswith(".pdf"):   # binary asset: dated by its bytes, so a re-deploy does not move it
+        h = hashlib.md5(open(fpath, "rb").read()).hexdigest()
+        ent = ledger.get(rel)
+        if not ent:
+            ledger[rel] = {"hash": h, "date": prior or datetime.date.fromtimestamp(os.path.getmtime(fpath)).isoformat()}
+        elif ent.get("hash") != h:
+            ledger[rel] = {"hash": h, "date": today}
+        return ledger[rel]["date"]
     h = authored_hash(open(fpath, encoding="utf-8").read())
     ent = ledger.get(rel)
     if not ent or ent.get("hash") != h:
@@ -627,20 +690,28 @@ def rebuild_sitemap():
         else:
             fpath = os.path.join(SITE, relpath + "/index.html")
         block = re.sub(r"<image:image>.*?</image:image>", "", block, flags=re.S)
+        # Google reads only <image:loc> (title/caption were dropped in 2022) and ignores
+        # <priority>/<changefreq> altogether
+        block = re.sub(r"<(priority|changefreq)>[^<]*</\1>", "", block)
         for rec in charts.get(relpath.strip("/"), []):
             block = block.replace("</url>",
-                "<image:image><image:loc>%s%s</image:loc>"
-                "<image:title>%s</image:title>"
-                "<image:caption>%s</image:caption></image:image></url>" % (
-                    ORIGIN, rec["png"],
-                    html_escape(rec["title"]), html_escape(rec["alt"])), 1)
+                "<image:image><image:loc>%s%s</image:loc></image:image></url>" % (ORIGIN, rec["png"]), 1)
+        pm = re.search(r"<lastmod>([^<]*)</lastmod>", block)
         block = re.sub(r"<lastmod>[^<]*</lastmod>", "", block)  # drop any existing
         if os.path.exists(fpath):
-            d = ledger_lastmod(ledger, relpath or "index", fpath, today)
+            d = ledger_lastmod(ledger, relpath or "index", fpath, today, pm.group(1) if pm else None)
             block = block.replace("</loc>", f"</loc><lastmod>{d}</lastmod>", 1)
         return block
     global _LEDGER
     ledger = _LEDGER if _LEDGER is not None else load_ledger(); today = datetime.date.today().isoformat()
+    # every A4 download a page links to belongs in the sitemap (10 of 23 were missing)
+    linked = set()
+    for d, _, fs in os.walk(SITE):
+        if "index.html" in fs and ".git" not in d:
+            linked.update(re.findall(r'href="(/assets/downloads/[^"#?]+\.pdf)"', open(os.path.join(d, "index.html"), encoding="utf-8").read()))
+    for href in sorted(linked):
+        if os.path.exists(os.path.join(SITE, href.lstrip("/"))) and f"<loc>{ORIGIN}{href}</loc>" not in xml:
+            xml = xml.replace("</urlset>", f"  <url><loc>{ORIGIN}{href}</loc></url>\n</urlset>")
     xml = re.sub(r"<url>.*?</url>", add_lastmod, xml, flags=re.S)
     open(sm, "w", encoding="utf-8").write(xml)
     save_ledger(ledger); _LEDGER = ledger
@@ -678,5 +749,5 @@ if __name__ == "__main__":
     n = rebuild_sitemap()
     print(f"sitemap.xml: {n} <lastmod> dates written")
     lint_snippets(pages)
-    print("Done. (app.js bumped to v=%d — make sure app.js guards are in place.)" % APPJS_VER)
+    print("Done. (app.js cache key = %s)" % _APPJS)
     print(f"      critical CSS + deferred GA4 re-baked; styles.css cache key = {css_ver}")

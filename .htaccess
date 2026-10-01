@@ -24,6 +24,16 @@ RewriteRule ^ https://americanenglish.com.tw%{REQUEST_URI} [L,R=301]
 # tools/ holds the site's build scripts (seo_build.py). They ride along in the
 # repo so they deploy with it, but they are not pages: answer 404, not the source.
 RewriteRule ^tools(/|$) - [R=404,L]
+
+# /index.html and /<page>/index.html answered 200 as duplicates of the folder URL.
+# THE_REQUEST is the browser's own request line, so the internal DirectoryIndex lookup
+# (which also ends in index.html) never matches this and cannot loop.
+RewriteCond %{THE_REQUEST} \s/+(?:[^?\s]*/)?index\.html[\s?] [NC]
+RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]
+
+# Malformed inbound links that repeat the domain as a path segment
+# (/americanenglish.com.tw/happy-birthday-english/ had impressions in GSC, Sept 2026).
+RewriteRule ^americanenglish\.com\.tw/?(.*)$ /$1 [R=301,L]
 </IfModule>
 
 # SEO consolidation 301 (cannibalization fix): /banqiao-junior-high-english/
@@ -58,6 +68,20 @@ RedirectMatch 301 ^/en/about/?$ https://americanenglish.com.tw/certified-america
 RedirectMatch 301 ^/en/ https://americanenglish.com.tw/
 
 # Friendly 404
+# URLs that never existed here but collect impressions in GSC (Sept 2026 audit): typos,
+# old guesses and addresses quoted by other sites. Each goes to the page it was reaching for.
+RedirectMatch 301 ^/old-numbers-english/?$ https://americanenglish.com.tw/ordinal-numbers-english/
+RedirectMatch 301 ^/english-ordinal-numbers/?$ https://americanenglish.com.tw/ordinal-numbers-english/
+RedirectMatch 301 ^/cambridge-practice-titles/?$ https://americanenglish.com.tw/cambridge-practice-tests/
+RedirectMatch 301 ^/cambridge-c1-advanced-guide/?$ https://americanenglish.com.tw/cae-c1-advanced-guide/
+RedirectMatch 301 ^/flyers-guide/?$ https://americanenglish.com.tw/cambridge-flyers-guide/
+RedirectMatch 301 ^/phonetic-chart/?$ https://americanenglish.com.tw/kk-phonetic-chart/
+RedirectMatch 301 ^/kk-phonetic-symbols-senior-high/?$ https://americanenglish.com.tw/kk-phonetic-chart/
+RedirectMatch 301 ^/gept-vs-toeic-vs-cambridge-english/?$ https://americanenglish.com.tw/gept/
+RedirectMatch 301 ^/days-if-week-english/?$ https://americanenglish.com.tw/days-of-week-english/
+RedirectMatch 301 ^/(in-regular-verbs-list|irregular_verbs_list|irregular_verbs-list)/?$ https://americanenglish.com.tw/irregular-verbs-list/
+RedirectMatch 301 ^/(american-english-birthday-wishes|apple-birthday-english|half-birthday-english|happy-english-birthday|happy-english|english-learning/birthday-wishes-english)/?$ https://americanenglish.com.tw/happy-birthday-english/
+
 ErrorDocument 404 /404.html
 
 # Agent discovery (RFC 8288) — advertise the machine-readable site summary (llms.txt)
@@ -104,6 +128,9 @@ ExpiresByType image/svg+xml "access plus 1 year"
 ExpiresByType image/x-icon "access plus 1 year"
 ExpiresByType image/webp "access plus 1 year"
 ExpiresByType image/avif "access plus 1 year"
+# the A4 downloads are rebuilt in place under the same name: a day, not a year
+ExpiresByType application/pdf "access plus 1 day"
+ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
 </IfModule>
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/html text/css application/javascript text/xml

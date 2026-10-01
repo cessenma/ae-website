@@ -1,7 +1,7 @@
 {
 "108-curriculum-english-guide": {
 "date": "2026-08-13",
-"hash": "a122428f7b85d608288159494f2f2e4b"
+"hash": "57e56ead8b5044416aafe74505e0b83f"
 },
 "404": {
 "date": "2026-10-01",
@@ -18,6 +18,98 @@
 "animals-english-vocabulary": {
 "date": "2026-09-16",
 "hash": "ef54f0b5ac61cdaf24c546f05522f748"
+},
+"assets/downloads/ae-animals-flashcards-a4.pdf": {
+"date": "2026-09-06",
+"hash": "865e274c27369dd6fde4de3d60827668"
+},
+"assets/downloads/ae-body-parts-a4.pdf": {
+"date": "2026-09-22",
+"hash": "09ad0fdb7b8775748a95a584247b7f02"
+},
+"assets/downloads/ae-colors-flashcards-a4.pdf": {
+"date": "2026-09-06",
+"hash": "942b153aa54b764088a8ba26e5afb6ac"
+},
+"assets/downloads/ae-days-of-week-a4.pdf": {
+"date": "2026-09-22",
+"hash": "68902d26a14a8c11872c7cb12f30746d"
+},
+"assets/downloads/ae-english-abbreviations-a4.pdf": {
+"date": "2026-09-22",
+"hash": "720083115e3a220e00b1fc199008aa10"
+},
+"assets/downloads/ae-english-alphabet-a4.pdf": {
+"date": "2026-09-22",
+"hash": "7a576683b1cb34e747ba41c574c90af1"
+},
+"assets/downloads/ae-english-names-boys-a4.pdf": {
+"date": "2026-09-22",
+"hash": "e26ac3196b63f66171ec24d7fbc6cce1"
+},
+"assets/downloads/ae-english-names-girls-a4.pdf": {
+"date": "2026-09-22",
+"hash": "f60d722656dfe0313274d0f5d5b0c8ab"
+},
+"assets/downloads/ae-english-tenses-chart-a4.pdf": {
+"date": "2026-08-13",
+"hash": "0e109b357ac714d5d135b8224ddd6770"
+},
+"assets/downloads/ae-fruits-flashcards-a4.pdf": {
+"date": "2026-09-06",
+"hash": "4363e4e348353f0814bbfc22150acc6c"
+},
+"assets/downloads/ae-happy-birthday-a4.pdf": {
+"date": "2026-09-22",
+"hash": "68bb35e53e768a506077181c42eb40cc"
+},
+"assets/downloads/ae-irregular-verbs-a4.pdf": {
+"date": "2026-08-14",
+"hash": "364d1e8256e78a15634478f98602269a"
+},
+"assets/downloads/ae-kk-phonetic-chart-a4.pdf": {
+"date": "2026-08-13",
+"hash": "49d34d6db5ccf6a2323f71e6a1eab420"
+},
+"assets/downloads/ae-mid-autumn-english-a4.pdf": {
+"date": "2026-09-22",
+"hash": "8c523fcb710ed9de4045bf093d43abec"
+},
+"assets/downloads/ae-moe-1200-complete-a4.pdf": {
+"date": "2026-08-13",
+"hash": "b65ea7b9f935ef204ae2688afebd8c11"
+},
+"assets/downloads/ae-moe-1200-themed-200-a4.pdf": {
+"date": "2026-08-14",
+"hash": "62d37990b4dd92c78d95bcf5a5dff00f"
+},
+"assets/downloads/ae-months-english-a4.pdf": {
+"date": "2026-09-22",
+"hash": "84bc3debab718447ded4582f743ee790"
+},
+"assets/downloads/ae-ordinal-numbers-a4.pdf": {
+"date": "2026-09-22",
+"hash": "30a713a7baa25f3b3eb0f1484896a377"
+},
+"assets/downloads/ae-phonics-rules-chart-a4.pdf": {
+"date": "2026-08-13",
+"hash": "8dda9c5eeb82328165c244b6c02be3c7"
+},
+"assets/downloads/ae-sight-words-dolch-fry-a4.pdf": {
+"date": "2026-08-13",
+"hash": "5af6b709cad899eb83dd69d6abf2bedd"
+},
+"assets/downloads/ae-yle-flyers-flashcards-a4.pdf": {
+"date": "2026-09-06",
+"hash": "f1596cd10ed7376767d913f68616f3b9"
+},
+"assets/downloads/ae-yle-movers-flashcards-a4.pdf": {
+"date": "2026-09-06",
+"hash": "186d8606685f6c9e18eda7b32396b68a"
+},
+"assets/downloads/ae-yle-starters-flashcards-a4.pdf": {
+"date": "2026-09-06",
+"hash": "a8a2aeb7abf981004c07a39b5a6bd180"
 },
 "b1-grammar-guide": {
 "date": "2026-09-16",
@@ -113,7 +205,7 @@
 },
 "cambridge-english-levels": {
 "date": "2026-09-25",
-"hash": "12ae2c16c9ff14485e0581b670f12328"
+"hash": "114a8bd901887531064be22eef3ce970"
 },
 "cambridge-exam-registration-taiwan": {
 "date": "2026-09-22",
@@ -121,7 +213,7 @@
 },
 "cambridge-exam-worth-it": {
 "date": "2026-09-22",
-"hash": "c716ac3e51db9994b56c82afd908798a"
+"hash": "5adc85d8e583e41884d3f6fe7387571c"
 },
 "cambridge-flyers-guide": {
 "date": "2026-09-22",
@@ -129,7 +221,7 @@
 },
 "cambridge-movers-guide": {
 "date": "2026-09-22",
-"hash": "a29692d51dc1abf14a5586b9f54f252b"
+"hash": "f0f0dedafba6afed4f3aa840639710c4"
 },
 "cambridge-practice-exam-pack": {
 "date": "2026-09-25",
@@ -141,7 +233,7 @@
 },
 "cambridge-results-lookup": {
 "date": "2026-09-25",
-"hash": "66db03b770a05648899acf4e3e626caa"
+"hash": "e75ee55351abd22e561c0f61467b6c74"
 },
 "cambridge-starters-guide": {
 "date": "2026-09-22",
@@ -157,7 +249,7 @@
 },
 "cap-english-guide": {
 "date": "2026-09-23",
-"hash": "edca012f931f05ff2025c42385ed9597"
+"hash": "f3cfabd36a0a536a83ff304256328750"
 },
 "certified-american-teacher-banqiao": {
 "date": "2026-08-07",
@@ -193,7 +285,7 @@
 },
 "cool-english-guide": {
 "date": "2026-09-13",
-"hash": "1af57acfe486a4acfd022958ad255b99"
+"hash": "a39a5de3a16b426c5fd9a16eae443a32"
 },
 "countries-english": {
 "date": "2026-09-16",
@@ -205,7 +297,7 @@
 },
 "cram-school-vs-tutor-vs-self-study": {
 "date": "2026-08-07",
-"hash": "2c3f05bb87a76879ecf8e0151e83cee8"
+"hash": "56e286483e72d5d0f07f1d37b614ef6f"
 },
 "daguan-elementary-english": {
 "date": "2026-08-07",
@@ -245,7 +337,7 @@
 },
 "english-capitalization-guide": {
 "date": "2026-09-23",
-"hash": "85969c8a951f0182e72a10d19737c1cc"
+"hash": "a4cf205c6dd6a6c838bdf19c4b401f5e"
 },
 "english-comparatives-guide": {
 "date": "2026-09-16",
@@ -253,7 +345,7 @@
 },
 "english-conjunctions-guide": {
 "date": "2026-09-23",
-"hash": "761a498b88ef6c5552a054ee0ef1d4ad"
+"hash": "368f5cc6ed67fe079ef932552fbb3742"
 },
 "english-cram-school-fees": {
 "date": "2026-08-13",
@@ -261,7 +353,7 @@
 },
 "english-dates-guide": {
 "date": "2026-09-23",
-"hash": "4efc7198bbc51b9caffc53bba64de2ed"
+"hash": "627f36ec7c10f677bda8315f8b1313fd"
 },
 "english-diary-guide": {
 "date": "2026-08-13",
@@ -269,7 +361,7 @@
 },
 "english-early-start-guide": {
 "date": "2026-08-07",
-"hash": "dc3aeefc1a7cc9a2b4c1fea67f7f525f"
+"hash": "b43b489953c9cc71a2a6efdc5c870942"
 },
 "english-exam-dates-guide": {
 "date": "2026-08-13",
@@ -277,7 +369,7 @@
 },
 "english-letter-writing-guide": {
 "date": "2026-09-22",
-"hash": "81658932e4e8cfe52190ea27fd877bcb"
+"hash": "1c47706e61897f4b3f70487623d08dcf"
 },
 "english-listening-practice": {
 "date": "2026-09-16",
@@ -297,7 +389,7 @@
 },
 "english-picture-books-guide": {
 "date": "2026-08-07",
-"hash": "d2a5ecbb74073748dae1f5d5200e0a4f"
+"hash": "969d9c2a6e3cce9c8ba6b47925de902d"
 },
 "english-pronunciation": {
 "date": "2026-09-16",
@@ -317,7 +409,7 @@
 },
 "english-self-introduction-kids": {
 "date": "2026-09-13",
-"hash": "0db548e0e631f3db8e5f61c5a50f55e3"
+"hash": "5d9be949af09608a7314584d5f5bb9e9"
 },
 "english-self-introduction-students": {
 "date": "2026-08-13",
@@ -337,7 +429,7 @@
 },
 "english-tenses-chart": {
 "date": "2026-09-13",
-"hash": "23c10a20bfb5f9a26d4d8366e2f435a8"
+"hash": "b58374797123c850f11d7043f40f03c7"
 },
 "english-vocabulary-by-topic": {
 "date": "2026-09-15",
@@ -617,7 +709,7 @@
 },
 "gept-intermediate-guide": {
 "date": "2026-10-01",
-"hash": "90155c0f27a378f4d008ebe1692a0a1d"
+"hash": "e3efff7c246c7012a1a6010671fb3b86"
 },
 "gept-intermediate-listening-practice-part1": {
 "date": "2026-10-01",
@@ -713,7 +805,7 @@
 },
 "gept-practice-tests": {
 "date": "2026-10-01",
-"hash": "ebe604e2e794be23185309ef4724ca79"
+"hash": "1f7d82ea2ae3d6853b7557d14666642f"
 },
 "gept-results-lookup": {
 "date": "2026-10-01",
@@ -721,7 +813,7 @@
 },
 "graded-readers-guide": {
 "date": "2026-08-12",
-"hash": "0b828b6434d39cb42ad545f67283d091"
+"hash": "56754d32a823b416695747a533d99567"
 },
 "guoguang-elementary-english": {
 "date": "2026-08-07",
@@ -749,7 +841,7 @@
 },
 "how-to-verify-foreign-teacher-credentials": {
 "date": "2026-08-07",
-"hash": "8b8a8775e6c9a93390f92dba5a70f71a"
+"hash": "4bb6e042d69c93aa85accdb0fa899bea"
 },
 "in-on-at-prepositions": {
 "date": "2026-09-16",
@@ -857,7 +949,7 @@
 },
 "kids-english-cram-school-guide": {
 "date": "2026-08-13",
-"hash": "7ff172931854cc1fee886a226a297265"
+"hash": "551ffcd5eae0c04aeebef8885d3cf635"
 },
 "kids-english-exams-guide": {
 "date": "2026-08-26",
@@ -865,11 +957,11 @@
 },
 "kids-english-guide": {
 "date": "2026-09-06",
-"hash": "e879220c356150a118ff21db5d2cbaaf"
+"hash": "9b35ec83a72744eaed6a2ee222d2f840"
 },
 "kids-english-levels": {
 "date": "2026-08-20",
-"hash": "d75ee63b080ecd6681df57a97a18e6da"
+"hash": "011043248054a985dd754e7e414aa886"
 },
 "kids-english-names-guide": {
 "date": "2026-09-13",
@@ -877,7 +969,7 @@
 },
 "kk-phonetic-chart": {
 "date": "2026-09-22",
-"hash": "a82f34f527dd39c60ac330b4e098e884"
+"hash": "9757923858cc454308dfe378d6ea0236"
 },
 "kk-phonetics-vs-phonics": {
 "date": "2026-09-16",
@@ -901,7 +993,7 @@
 },
 "moe-1200-words-guide": {
 "date": "2026-09-22",
-"hash": "a501290a5624cdd62a9c86788b7d6794"
+"hash": "803295cec70f0007b6ac55764d4223d2"
 },
 "moe-2000-words-guide": {
 "date": "2026-09-13",
@@ -969,7 +1061,7 @@
 },
 "native-vs-local-english-teachers": {
 "date": "2026-08-07",
-"hash": "ceec0df0eb1131b3fd7cc047112e5938"
+"hash": "ac0435757b4d3b04fdf3a5b72b0b7a2d"
 },
 "numbers-1-100-english": {
 "date": "2026-09-15",
@@ -1057,7 +1149,7 @@
 },
 "phonics-rules-chart": {
 "date": "2026-09-22",
-"hash": "91144be179f9946b4fd46029ea921710"
+"hash": "2f9b798467df2a08368a9e14f57c5390"
 },
 "plural-s-past-ed-pronunciation": {
 "date": "2026-08-21",
@@ -1085,11 +1177,11 @@
 },
 "sight-words-guide": {
 "date": "2026-09-06",
-"hash": "5b859727ac21d6d2837156508cdab643"
+"hash": "489341c4f6936cadf930d9e9ef5060ea"
 },
 "sight-words-heart-words-guide": {
 "date": "2026-09-06",
-"hash": "52c22de925c60f778bca5c3fbe6a06d8"
+"hash": "24b0a35cce9298c44209990f1e61f3f3"
 },
 "small-class-english-truth": {
 "date": "2026-08-07",
@@ -1157,7 +1249,7 @@
 },
 "when-to-start-english-for-kids": {
 "date": "2026-08-12",
-"hash": "2f7240cc1fd4e5bcc9490b9ee9dc7f56"
+"hash": "464b0cdbf139b882c40eeb81e4e1eec6"
 },
 "xinpu-elementary-english": {
 "date": "2026-08-07",
