@@ -207,7 +207,7 @@ h1,h2{text-wrap:balance}
 .breadcrumb a:hover{color:var(--blue)}
 /* phones: taller breadcrumb links (after the base rule on purpose, or it loses the cascade);
    between phone and tablet-portrait widths the stacked hero photo is dropped as on phones */
-@media(max-width:600px){.breadcrumb{margin-bottom:0}.breadcrumb a{padding:11px 4px}}
+@media(max-width:600px){.breadcrumb{margin-bottom:0}.breadcrumb a{padding:12px 4px}}
 @media(max-width:767px){.page-hero .post-hero{display:none}}
 
 /* Indigo is the one theme hue too dark for navy text: its number chips stay white, on a
@@ -601,3 +601,29 @@ body p.ae-cta{font-size:14.5px;line-height:1.7;color:#4b5873;margin:10px 0 0;pad
 body p.ae-cta a{color:var(--blue-ink);font-weight:700;display:inline-block;padding:3px 0}
 /* the same line where there is no PDF box: a quiet tinted strip at the end of a section */
 body p.ae-cta.ae-cta-mid{max-width:800px;margin:26px auto 0;padding:12px 16px;background:#F4FAFF;border-radius:12px}
+
+/* ── Touch targets ──
+   On a touch screen every control that stands on its own is at least 44 px tall. The page
+   generators' own styles drew filter chips at 34 px, drill buttons at 25 px and fill-in boxes
+   at 19 px; these rules are one step more specific, so they win without editing each generator.
+   Fill-in boxes also get 16 px type: iPhone Safari zooms the whole page on a smaller field. */
+@media (pointer:coarse){
+  p.foot-nap a{display:inline-flex;align-items:center;min-height:44px}
+  body .pidx-chips a,body .gx-levels a,body .nm-chips button,body .nm-bar button,body .wl-az button,
+  body .gd-bar .btn,body .gx-rec button,body .pr-chiprow .pr-say,body .gseg button,body .exam-subnav a,
+  body a.gtop,body .lemonsqueezy-button{min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+  body p.ae-cta a{display:inline-block;padding:11px 2px}
+  body main details>summary{min-height:44px;align-content:center}
+  body .gd-in{min-height:40px;font-size:16px}
+  body td.c input{width:24px;height:24px}
+  .cx-dot,.dots button{position:relative}
+  .cx-dot::after,.dots button::after{content:'';position:absolute;inset:-14px}
+  .cx-dot::after{inset:-18px}
+  body .cx-nav{width:44px;height:44px}
+  .sh-btn{position:relative}
+  .sh-btn::after{content:'';position:absolute;inset:-3px}
+  body .hrs-tog button,body .wl-bar button,body .hero-badges a.chip,body .gd-in{min-height:44px}
+  body main dl dd>a{display:inline-flex;align-items:center;min-height:44px}
+}
+/* a selected style chip on the names pages is blue: navy label, like every other bright fill */
+body .nm-chips.styles button.on{color:var(--navy)}

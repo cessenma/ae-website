@@ -119,7 +119,7 @@ with an instant score and a Chinese explanation for every option.
 - [單字練習 Vocabulary practice A2 / B1 / B2](https://americanenglish.com.tw/a2-vocabulary-practice/): words tested in context sentences rather than as translation drills.
 
 ### 全民英檢線上模擬試題 GEPT practice — original, free, no signup
-- [全民英檢專區 GEPT section home](https://americanenglish.com.tw/gept/): the section hub — one complete original mock test per level (GEPT Kids, Elementary, Intermediate, High-Intermediate) plus a level comparison table (items, timing, pass marks, 2026 fees) sourced from LTTC's 2026 registration guide.
+- [全民英檢專區 GEPT section home](https://americanenglish.com.tw/gept/): the section hub — one complete original mock test per level (GEPT Kids, Elementary, Intermediate, High-Intermediate) plus a level comparison table (items, timing, pass marks, fees) sourced from LTTC's registration guide, checked 2026-10-01: Elementary to Advanced show the 2027 fees, GEPT Kids the 2026 fee.
 - [小學英檢模擬試題 GEPT Kids mock test](https://americanenglish.com.tw/gept-kids-practice/): CEFR ~A1 — listening 25 items (each played twice), reading 30 + writing 10, and the one-to-one oral in 4 parts; no pass/fail, results are reported in suns.
 - [全民英檢初級模擬試題 GEPT Elementary mock test](https://americanenglish.com.tw/gept-elementary-practice/): CEFR A2 — listening 30 items, reading 30 items, writing (15 single-sentence items + a picture paragraph), speaking (repeat, read aloud, answer questions).
 - [全民英檢中級模擬試題 GEPT Intermediate mock test](https://americanenglish.com.tw/gept-intermediate-practice/): CEFR B1 — listening 35, reading 35, Chinese-to-English translation + 120-word composition, speaking (read aloud, 10 questions, picture description).

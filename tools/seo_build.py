@@ -517,6 +517,7 @@ PERSON_REF = {"@type": "Person", "@id": PERSON_ID, "name": "Christopher", "url":
 WEBSITE_ID = ORIGIN + "/#website"
 # list pages: a set of links to other pages, not an article of their own
 HUB_PAGES = {"english-names/index.html", "english-vocabulary-by-topic/index.html"}
+PAGE_KIND = {"index.html": "WebPage", "blog/index.html": "CollectionPage", "download/index.html": "CollectionPage"}
 
 _FULL_ORG = None
 def full_org():
@@ -819,7 +820,10 @@ H1_WBR = {
     "cambridge-exam-registration-taiwan": [("考場、流程與費用須知（2026）", "考場、流程與費用<wbr>須知（2026）")],
     "ket-prep-guide": [("（A2 Key for Schools）準備完整指南", "（A2 Key for Schools）<wbr>準備完整指南")],
     "english-dates-guide": [("11 號、13 日、", "11&nbsp;號、13&nbsp;日、")],      # keep the number with its counter
-    "gept": [(" 頁練習全部免費", "&nbsp;頁練習全部免費")],                           # 「39｜頁」 split across two lines
+    "gept": [(" 頁練習全部免費", "&nbsp;頁練習<wbr>全部免費"),                       # 「39｜頁」 and 「免｜費」 split
+             ("&nbsp;頁練習全部免費", "&nbsp;頁練習<wbr>全部免費")],                 # (the page keeps the &nbsp; once written)
+    "jobs-english": [("83 種工作的英文說法與", "83&nbsp;種工作的<wbr>英文說法<wbr>與")],
+    "linguaskill-guide": [("成績對照與報名指南", "成績對照與<wbr>報名指南")],
 }
 for _n in range(1, 8):                                                     # 「閱讀與英｜語運用」 split a word
     H1_WBR[f"fce-ruoe-practice-part{_n}"] = [("FCE 閱讀與英語運用 Part", "FCE 閱讀與<wbr>英語運用 Part")]
@@ -1058,6 +1062,16 @@ def process_page(path, css_ver="", crit=""):
                     "datePublished": published, "dateModified": modified,
                     "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}, "isPartOf": {"@id": WEBSITE_ID}}
         node.update(part)
+        seo.append('<script type="application/ld+json">' + jd(node) + "</script>")
+    # the home page and the two listings are neither an article nor a FAQ-only page: they had an
+    # Organization and a WebSite node but nothing that says what the page itself is
+    if rel in PAGE_KIND and not (found & OWN_TYPES):
+        node = {"@context": "https://schema.org", "@type": PAGE_KIND[rel], "@id": canon + "#webpage", "url": canon,
+                "name": headline[:110], "description": desc, "inLanguage": "zh-Hant-TW",
+                "primaryImageOfPage": {"@type": "ImageObject", "url": image},
+                "about": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}, "isPartOf": {"@id": WEBSITE_ID}}
+        if fq:
+            node["hasPart"] = {"@id": canon + "#faq"}
         seo.append('<script type="application/ld+json">' + jd(node) + "</script>")
     if rel == TEACHER.strip("/") + "/index.html":
         seo.append('<script type="application/ld+json">' + jd({

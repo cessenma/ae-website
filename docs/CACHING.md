@@ -102,6 +102,8 @@ What changed:
 - The workflow now purges **whatever** the wait step sees, after at most five minutes. A
   runner that is not allowed to read the site is no reason to skip the purge.
 - Each run leaves a public notice or warning saying which case it was.
+- After the purge the same job sends the changed page addresses to IndexNow (Bing, which also
+  feeds Yahoo Taiwan, Copilot and ChatGPT search). Google is told through the sitemap instead.
 - `crawler-access-probe.yml` was invalid YAML (a here-document ended its `run:` block), so
   the monthly probe had never run either. It is fixed and also runs when the file changes.
 
