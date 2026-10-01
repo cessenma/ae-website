@@ -516,8 +516,10 @@ def published_date(rel, today):
 PERSON_REF = {"@type": "Person", "@id": PERSON_ID, "name": "Christopher", "url": ORIGIN + TEACHER}
 WEBSITE_ID = ORIGIN + "/#website"
 # list pages: a set of links to other pages, not an article of their own
-HUB_PAGES = {"english-names/index.html", "english-vocabulary-by-topic/index.html"}
-PAGE_KIND = {"index.html": "WebPage", "blog/index.html": "CollectionPage", "download/index.html": "CollectionPage"}
+HUB_PAGES = {"english-names/index.html", "english-vocabulary-by-topic/index.html", "english-pronunciation/index.html"}
+PAGE_KIND = {"index.html": "WebPage", "blog/index.html": "CollectionPage", "download/index.html": "CollectionPage",
+             "courses/index.html": "WebPage", "free-trial/index.html": "WebPage",
+             "banqiao-parent-testimonials/index.html": "WebPage"}
 
 _FULL_ORG = None
 def full_org():
@@ -544,10 +546,11 @@ def org_node(rel, own=None):
     if isinstance(d.get("founder"), dict):
         d["founder"] = dict(PERSON_REF)
     d.pop("review", None)           # the marked-up review texts were not the quotes shown on the page
+    # one source for the rating: the home page's node. A page's own copy used to win here, so
+    # the testimonials page kept publishing 4.9 / 208 after the home node was corrected to what
+    # the Google listing shows.
     if rel not in RATING_PAGES:
         d.pop("aggregateRating", None)
-    elif own and "aggregateRating" in own:
-        d["aggregateRating"] = own["aggregateRating"]
     return d
 
 ARTICLE_TYPES = {"Article", "BlogPosting", "NewsArticle"}
@@ -679,9 +682,18 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified, h
             if ts & {"WebPage", "CollectionPage"}:
                 if "@id" not in node:
                     node["@id"] = canon + "#webpage"; changed = True
+                if "url" not in node:
+                    node["url"] = canon; changed = True
                 pi = node.get("primaryImageOfPage")
-                if isinstance(pi, str) or (pi is None and image):
+                if isinstance(pi, str) or (pi is None and image and "image" not in node):
                     node["primaryImageOfPage"] = {"@type": "ImageObject", "url": pi or image}; changed = True
+                # the page's own share picture, not the brand card it had before it got one
+                # (a hub converted from Article leaves the Article branch, which did this swap)
+                pi = node.get("primaryImageOfPage")
+                if image and isinstance(pi, dict) and str(pi.get("url", "")).endswith((OG_DEFAULT, LOGO)) and pi["url"] != image:
+                    pi["url"] = image; changed = True
+                if image and isinstance(node.get("image"), str) and node["image"].endswith((OG_DEFAULT, LOGO)) and node["image"] != image:
+                    node["image"] = image; changed = True
             if has_faq and ts & (ARTICLE_TYPES | {"WebPage", "CollectionPage"}) and "hasPart" not in node:
                 node["hasPart"] = {"@id": canon + "#faq"}; changed = True
             elif not has_faq and node.get("hasPart") == {"@id": canon + "#faq"}:
@@ -1049,7 +1061,8 @@ def process_page(path, css_ver="", crit=""):
     if article_page and ((has_byline and not (found & ARTICLE_TYPES)) or not (found & OWN_TYPES)):
         part = {"hasPart": {"@id": canon + "#faq"}} if fq else {}
         if has_byline:
-            node = {"@context": "https://schema.org", "@type": "Article", "@id": canon + "#article",
+            node = {"@context": "https://schema.org", "@type": "CollectionPage" if rel in HUB_PAGES else "Article",
+                    "@id": canon + "#article", "url": canon,
                     "headline": headline[:110], "description": desc, "inLanguage": "zh-Hant-TW",
                     "mainEntityOfPage": canon, "image": image, "datePublished": published, "dateModified": modified,
                     "author": dict(PERSON_REF), "publisher": {"@id": ORG_ID}, "isPartOf": {"@id": WEBSITE_ID}}
@@ -1065,11 +1078,12 @@ def process_page(path, css_ver="", crit=""):
         seo.append('<script type="application/ld+json">' + jd(node) + "</script>")
     # the home page and the two listings are neither an article nor a FAQ-only page: they had an
     # Organization and a WebSite node but nothing that says what the page itself is
-    if rel in PAGE_KIND and not (found & OWN_TYPES):
+    if rel in PAGE_KIND and not (found & (ARTICLE_TYPES | {"WebPage", "CollectionPage"})):
         node = {"@context": "https://schema.org", "@type": PAGE_KIND[rel], "@id": canon + "#webpage", "url": canon,
                 "name": headline[:110], "description": desc, "inLanguage": "zh-Hant-TW",
                 "primaryImageOfPage": {"@type": "ImageObject", "url": image},
-                "about": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}, "isPartOf": {"@id": WEBSITE_ID}}
+                "about": {"@id": ORG_ID}, "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID},
+                "isPartOf": {"@id": WEBSITE_ID}}
         if fq:
             node["hasPart"] = {"@id": canon + "#faq"}
         seo.append('<script type="application/ld+json">' + jd(node) + "</script>")
