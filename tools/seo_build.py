@@ -33,6 +33,8 @@ def _appjs_ver():
 _APPJS = _appjs_ver()
 LINE = "https://lin.ee/W9J8TuQ"
 LOGO = "/assets/img/american-english-banqiao-logo.jpg"
+# the header/footer show the logo at 38px: a 3 KB WebP there, the 24 KB JPEG stays for schema and sharing
+LOGO_SMALL = "/assets/img/american-english-banqiao-logo-96.webp"
 NAV  = [("首頁","/"),("課程","/courses/"),("劍橋英檢","/exams/"),("全民英檢","/gept/"),("師資","/certified-american-teacher-banqiao/"),
         ("家長見證","/banqiao-parent-testimonials/"),("部落格","/blog/")]
 
@@ -42,6 +44,30 @@ CRIT_START, CRIT_END     = "<!-- AE:CRIT start -->", "<!-- AE:CRIT end -->"
 GTM_START, GTM_END       = "<!-- AE:GTM start -->", "<!-- AE:GTM end -->"
 FOOT_START, FOOT_END     = "<!-- AE:FOOT start -->", "<!-- AE:FOOT end -->"
 PMETA_START, PMETA_END   = "<!-- AE:PAGEMETA start -->", "<!-- AE:PAGEMETA end -->"
+POP_START, POP_END       = "<!-- AE:POPULAR start -->", "<!-- AE:POPULAR end -->"
+NEXT_START, NEXT_END     = "<!-- AE:NEXT start -->", "<!-- AE:NEXT end -->"
+# One quiet line under a page's free-PDF box: the reader has just taken something useful, which
+# is the moment to say what the school can do next. Tagged cta_position=mid_page in GA4.
+NEXT_LINE = (f'{NEXT_START}<p class="ae-cta">下載之後：想知道孩子現在的英文程度？'
+             f'<a href="{LINE}" target="_blank" rel="noopener">加 LINE 預約程度評估</a>'
+             f'　·　<a href="/free-trial/">試聽怎麼進行</a></p>{NEXT_END}')
+
+# The pages people actually arrive on, one click from the homepage, the blog index and the
+# 404 page. The top search page sat four clicks deep and six pages could not be reached from
+# the homepage at all (2026-10 audit). Order: reference charts, phrases, exams, practice.
+POPULAR = [("KK 音標表", "/kk-phonetic-chart/"), ("自然發音規則總表", "/phonics-rules-chart/"),
+           ("教育部 1200 單字表", "/moe-1200-words-guide/"), ("不規則動詞三態表", "/irregular-verbs-list/"),
+           ("英文 12 時態總表", "/english-tenses-chart/"), ("英文字母表", "/english-alphabet-guide/"),
+           ("月份英文", "/months-english/"), ("星期英文", "/days-of-week-english/"), ("序數英文", "/ordinal-numbers-english/"),
+           ("英文名字怎麼取", "/english-names/"), ("生日快樂英文", "/happy-birthday-english/"),
+           ("中秋節英文", "/mid-autumn-festival-english/"), ("謝謝英文", "/thank-you-english/"), ("加油英文", "/cheer-up-english/"),
+           ("劍橋英檢等級對照", "/cambridge-english-levels/"), ("全民英檢初級攻略", "/gept-elementary-guide/"),
+           ("會考英文級距", "/cap-english-guide/"), ("Cool English 怎麼用", "/cool-english-guide/"),
+           ("學習扶助是什麼", "/learning-support-guide/"), ("領思 Linguaskill", "/linguaskill-guide/"),
+           ("英文聽力怎麼練", "/english-listening-practice/"), ("英文口說怎麼練", "/english-speaking-practice/"),
+           ("英文閱讀怎麼練", "/english-reading-practice/"), ("英文寫作怎麼練", "/english-writing-practice/"),
+           ("免費 A4 學習單下載", "/download/")]
+POPULAR_ON = {"index.html", "blog/index.html", "404.html"}
 
 MAPS      = "https://maps.app.goo.gl/hLChkEqAMKCsMWpm6"
 TEACHER   = "/certified-american-teacher-banqiao/"
@@ -168,7 +194,7 @@ def chrome_block(active_key):
         f"{CHROME_START}\n"
         '<div class="progress" id="progress"></div>\n'
         '<header class="site-header" id="siteHeader"><div class="wrap nav">'
-        f'<a href="/" class="brand"><img class="brand-logo" src="{LOGO}" '
+        f'<a href="/" class="brand"><img class="brand-logo" src="{LOGO_SMALL}" '
         'alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a>'
         f'<nav class="nav-links" aria-label="主選單">{nav_links(active_key, False)}</nav>'
         '<button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" '
@@ -185,7 +211,7 @@ def footer_block():
     return (
         f"{FOOT_START}\n"
         '<footer class="site-footer"><div class="wrap"><div class="foot-grid"><div>'
-        f'<div class="foot-logo"><img class="foot-logo-img" src="{LOGO}" alt="American English 埃森美語 logo" '
+        f'<div class="foot-logo"><img class="foot-logo-img" src="{LOGO_SMALL}" alt="American English 埃森美語 logo" '
         'width="34" height="34" loading="lazy" decoding="async">American English 埃森美語</div>'
         '<p class="foot-tag">板橋中正路在地深耕的美籍外師英文補習班。100% 美籍持證教師、每班 12 人小班制。</p>'
         f'<p class="foot-nap">220 新北市板橋區中正路89巷4號1樓　｜　<a href="tel:{tel}">☎ 0928-067-772</a></p></div>'
@@ -204,10 +230,20 @@ def footer_block():
         f'<a href="{MAPS}" target="_blank" rel="noopener">Google 地圖位置</a></div>'
         '</nav></div>'
         '<div class="foot-bottom"><span>© 2026 American English 埃森美語</span>'
-        '<span>新北市政府立案　社補教社字第115026號　｜　統一編號 61476523</span>'
+        '<span>私立埃森美語文理短期補習班　｜　新北市政府立案 社補教社字第115026號　｜　統一編號 61476523</span>'
         '<span>220 新北市板橋區中正路89巷4號1樓</span></div>'
         '<div class="foot-pref"><div google-add-preferred-source-btn data-theme="dark" data-lang="zh-TW"></div></div>'
         f"</div></footer>\n{FOOT_END}\n")
+
+def popular_block():
+    links = "".join(f'<a href="{h}">{t}</a>' for t, h in POPULAR
+                    if os.path.exists(os.path.join(SITE, h.strip("/"), "index.html")))
+    return (f"{POP_START}\n"
+            '<section class="section bg-soft pop-sec"><div class="wrap">'
+            '<div class="center stack"><span class="eyebrow eyebrow-yellow">熱門學習資源</span>'
+            '<h2>家長最常查的<em>英文對照表與指南</em></h2></div>'
+            f'<nav class="pop-links" aria-label="熱門學習資源">{links}</nav>'
+            f"</div></section>\n{POP_END}\n")
 
 def pmeta_block(date):
     y, m, d = date.split("-")
@@ -486,6 +522,8 @@ def process_page(path, css_ver="", crit=""):
     html = strip_block(html, GTM_START, GTM_END)
     html = strip_block(html, FOOT_START, FOOT_END)
     html = strip_block(html, PMETA_START, PMETA_END)
+    html = strip_block(html, POP_START, POP_END)
+    html = re.sub(re.escape(NEXT_START) + r".*?" + re.escape(NEXT_END), "", html, flags=re.S)
     if "</head>" not in html or not re.search(r"<body[^>]*>", html):
         return rel, "SKIP (no head/body)"
 
@@ -575,6 +613,16 @@ def process_page(path, css_ver="", crit=""):
             html = (html[:cut].rstrip() +
                     f'\n<script src="/assets/app.js?v={_APPJS}"></script>\n' + html[cut:])
 
+    mb = html.find('<div class="magnet-box')
+    if mb != -1 and rel not in SELF_CONTAINED:
+        end = html.find("</div>", mb)
+        if end != -1:
+            end += len("</div>")
+            html = html[:end] + NEXT_LINE + html[end:]
+    if rel in POPULAR_ON:
+        at = html.rfind('<section class="section bg-blue">') if rel != "404.html" else html.rfind("</main>")
+        if at != -1:
+            html = html[:at] + popular_block() + html[at:]
     html = html.replace(ICON_OLD, ICON_NEW)
     # byline: the author's name links to the teacher page (it was plain text on ~150 pages)
     if rel != TEACHER.strip("/") + "/index.html":
@@ -632,10 +680,12 @@ def process_page(path, css_ver="", crit=""):
 # shares one history; CI never runs this script, so it cannot re-stamp.
 LASTMOD_LEDGER = os.path.join(SITE, "data", "lastmod.json")
 _INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM_END), (SEO_START, SEO_END),
-             (FOOT_START, FOOT_END), (PMETA_START, PMETA_END),
+             (FOOT_START, FOOT_END), (PMETA_START, PMETA_END), (POP_START, POP_END), (NEXT_START, NEXT_END),
              # the pack offer is a sales block repeated on ~100 pages: a price or button
              # change is not a change to the page (it stamped 95 URLs with one date on 09-25)
-             ("<!-- AE:PACKOFFER -->", "<!-- /AE:PACKOFFER -->")]
+             ("<!-- AE:PACKOFFER -->", "<!-- /AE:PACKOFFER -->"),
+             # "what next" link blocks are navigation the tools add (route_blocks.py, gept_links.py)
+             ("<!-- AE:ROUTE -->", "<!-- /AE:ROUTE -->"), ("<!-- AE:GEPTPRX -->", "<!-- /AE:GEPTPRX -->")]
 
 def authored_hash(html):
     """Hash of what the reader gets: the <body>, minus every injected block and minus
