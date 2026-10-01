@@ -480,3 +480,9 @@ footer.site-footer{background:var(--navy);color:#fff;padding:60px 0 32px;positio
 .say:focus-visible{outline:3px solid var(--blue,#1CB0F6);outline-offset:2px}
 td .say{margin-left:8px}
 @media(max-width:640px){.say{width:24px;height:24px;margin-left:5px}}
+
+/* "last updated" strip above the footer (injected by tools/seo_build.py) */
+.page-meta{background:#f4f7fb;border-top:1px solid rgba(26,39,82,.08);padding:14px 0;font-size:13px;color:#5b6880}
+.page-meta .wrap{display:flex;gap:8px 22px;flex-wrap:wrap;justify-content:center}
+.page-meta a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+@media print{.page-meta{display:none}}

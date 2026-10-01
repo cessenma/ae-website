@@ -7,6 +7,9 @@ Bakes into each static page (so non-JS / AI crawlers see them):
   - BreadcrumbList JSON-LD  (from .breadcrumb)
   - hreflang alternates (zh-Hant-TW + x-default)
   - the header nav + drawer + progress bar (the chrome app.js used to inject)
+  - the site footer (address, phone, map link) on every page that has none of its own
+  - a "last updated" line, a share image where the page declares none, and one
+    consistent Organization / author / Article graph
 Also regenerates sitemap.xml — <lastmod> comes from data/lastmod.json, a ledger keyed on a
 hash of each page's AUTHORED html (injected blocks stripped), never from mtime or git date —
 and bumps app.js?v=.
@@ -17,7 +20,7 @@ app.js is guarded to skip anything already present (see assets/app.js).
 Run:  ~/.claude/skills/seo/.venv/bin/python3 seo_build.py
 (Lives OUTSIDE site/ so it is never deployed.)
 """
-import os, re, json, datetime, hashlib
+import os, re, json, datetime, hashlib, subprocess, unicodedata
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 
@@ -33,6 +36,22 @@ SEO_START, SEO_END       = "<!-- AE:SEO-LD start -->", "<!-- AE:SEO-LD end -->"
 CHROME_START, CHROME_END = "<!-- AE:CHROME start -->", "<!-- AE:CHROME end -->"
 CRIT_START, CRIT_END     = "<!-- AE:CRIT start -->", "<!-- AE:CRIT end -->"
 GTM_START, GTM_END       = "<!-- AE:GTM start -->", "<!-- AE:GTM end -->"
+FOOT_START, FOOT_END     = "<!-- AE:FOOT start -->", "<!-- AE:FOOT end -->"
+PMETA_START, PMETA_END   = "<!-- AE:PAGEMETA start -->", "<!-- AE:PAGEMETA end -->"
+
+MAPS      = "https://maps.app.goo.gl/hLChkEqAMKCsMWpm6"
+TEACHER   = "/certified-american-teacher-banqiao/"
+ORG_ID    = ORIGIN + "/#organization"
+PERSON_ID = ORIGIN + "/#christopher"
+OG_DEFAULT = "/assets/img/og-default.jpg"
+# The Google rating is on screen on these pages only. Google ignores a rating a business
+# marks up about itself, and marking it up where the reader cannot see it is against the
+# review-snippet guidelines — so the markup stays where the number is visible.
+RATING_PAGES = {"index.html", "banqiao-parent-testimonials/index.html"}
+# Pages that are not articles: no "last updated" line and no injected Article node.
+NOT_ARTICLE = {"index.html", "404.html", "courses/index.html", "free-trial/index.html", "blog/index.html",
+               "download/index.html", "chart-license/index.html", "contact/index.html",
+               "banqiao-parent-testimonials/index.html", "cambridge-practice-exam-pack/index.html"}
 
 GA_ID = "G-CH7TGR171G"
 # Everything above this stylesheet section is above-the-fold and gets inlined.
@@ -150,6 +169,156 @@ def chrome_block(active_key):
         f"{CHROME_END}\n"
     )
 
+def footer_block():
+    """The same footer the homepage carries, baked into the page so a crawler that does
+    not run scripts still finds the address, phone and map on every URL."""
+    tel = "+886928067772"
+    return (
+        f"{FOOT_START}\n"
+        '<footer class="site-footer"><div class="wrap"><div class="foot-grid"><div>'
+        f'<div class="foot-logo"><img class="foot-logo-img" src="{LOGO}" alt="American English 埃森美語 logo" '
+        'width="34" height="34" loading="lazy" decoding="async">American English 埃森美語</div>'
+        '<p class="foot-tag">板橋中正路在地深耕的美籍外師英文補習班。100% 美籍持證教師、每班 12 人小班制。</p>'
+        f'<p class="foot-nap">220 新北市板橋區中正路89巷4號1樓　｜　<a href="tel:{tel}">☎ 0928-067-772</a></p></div>'
+        '<nav class="foot-links" aria-label="頁尾導覽">'
+        '<div class="foot-col"><p class="foot-h">課程</p><a href="/banqiao-english-cram-school/">板橋英文補習班</a>'
+        '<a href="/courses/">課程總覽</a><a href="/kids-english-banqiao/">兒童美語</a>'
+        '<a href="/junior-high-english-banqiao/">國中英文</a><a href="/free-trial/">預約試聽</a></div>'
+        '<div class="foot-col"><p class="foot-h">學習資源</p><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a>'
+        '<a href="/english-pronunciation/">英文發音</a><a href="/download/">免費下載</a>'
+        '<a href="/chart-license/">圖表授權</a></div>'
+        f'<div class="foot-col"><p class="foot-h">關於</p><a href="{TEACHER}">師資介紹</a>'
+        '<a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a>'
+        '<a href="/contact/">聯絡與交通</a></div>'
+        f'<div class="foot-col"><p class="foot-h">聯絡</p><a href="tel:{tel}">電話 0928-067-772</a>'
+        f'<a href="{LINE}" target="_blank" rel="noopener">LINE 線上預約</a>'
+        f'<a href="{MAPS}" target="_blank" rel="noopener">Google 地圖位置</a></div>'
+        '</nav></div>'
+        '<div class="foot-bottom"><span>© 2026 American English 埃森美語</span>'
+        '<span>新北市政府立案　社補教社字第115026號　｜　統一編號 61476523</span>'
+        '<span>220 新北市板橋區中正路89巷4號1樓</span></div>'
+        '<div class="foot-pref"><div google-add-preferred-source-btn data-theme="dark" data-lang="zh-TW"></div></div>'
+        f"</div></footer>\n{FOOT_END}\n")
+
+def pmeta_block(date):
+    y, m, d = date.split("-")
+    return (f"{PMETA_START}\n"
+            f'<div class="page-meta"><div class="wrap"><span>最後更新：<time datetime="{date}">{y} 年 {int(m)} 月 {int(d)} 日</time></span>'
+            f'<span>內容製作：<a href="{TEACHER}">埃森美語 American English</a></span></div></div>\n'
+            f"{PMETA_END}\n")
+
+def snippet_width(t):
+    """Display width the way a search result measures it: a CJK or full-width character
+    takes two units, a Latin one takes one. Counting characters hid every overflow on
+    this site — 37 Chinese characters "fit" a 60-character limit and still get cut."""
+    return sum(2 if unicodedata.east_asian_width(c) in "WF" else 1 for c in t)
+
+TITLE_MAX, DESC_MIN, DESC_MAX = 60, 110, 160     # width units; title is measured without the brand suffix
+BRAND_SUFFIX = "｜埃森美語"
+
+_PUBLISHED = None
+def published_date(rel, today):
+    """Day the page first entered the repo (the nearest thing to a publication date)."""
+    global _PUBLISHED
+    if _PUBLISHED is None:
+        _PUBLISHED = {}
+        try:
+            out = subprocess.run(["git", "-C", SITE, "log", "--diff-filter=A", "--name-only", "--format=@%as"],
+                                 capture_output=True, text=True).stdout
+            day = None
+            for line in out.splitlines():
+                if line.startswith("@"):
+                    day = line[1:]
+                elif line.strip():
+                    _PUBLISHED[line.strip()] = day        # log runs newest first: the last write wins = first add
+        except Exception:
+            pass
+    return _PUBLISHED.get(rel, today)
+
+_FULL_ORG = None
+def full_org():
+    """The homepage's Organization node is the single source; every other page gets a copy
+    without the rating. Before this, four different Organization blocks were in circulation."""
+    global _FULL_ORG
+    if _FULL_ORG is None:
+        src = open(os.path.join(SITE, "index.html"), encoding="utf-8").read()
+        for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>', strip_block(src, SEO_START, SEO_END), re.S):
+            try:
+                d = json.loads(m.group(1))
+            except ValueError:
+                continue
+            if isinstance(d, dict) and d.get("@id") == ORG_ID and "geo" in d:
+                _FULL_ORG = d
+                break
+        if _FULL_ORG is None:
+            _FULL_ORG = dict(ORG_LD)
+    return _FULL_ORG
+
+def org_node(rel, own=None):
+    d = json.loads(json.dumps(full_org()))
+    d["url"] = ORIGIN + "/"
+    if rel not in RATING_PAGES:
+        d.pop("aggregateRating", None); d.pop("review", None)
+    elif own:                                   # a rating page keeps the reviews it shows
+        for k in ("aggregateRating", "review"):
+            if k in own: d[k] = own[k]
+    return d
+
+PERSON_REF = {"@type": "Person", "@id": PERSON_ID, "name": "Christopher", "url": ORIGIN + TEACHER}
+ARTICLE_TYPES = {"Article", "BlogPosting", "NewsArticle"}
+OWN_TYPES = ARTICLE_TYPES | {"CollectionPage", "Quiz", "WebApplication", "Product", "ItemList", "WebPage", "Course", "LearningResource"}
+
+def _types(node):
+    t = node.get("@type")
+    return set(t) if isinstance(t, list) else {t}
+
+def normalize_ld(html, rel, canon, headline, desc, image, published, modified):
+    """One consistent graph out of the hand-written JSON-LD: the same Organization node on
+    every page, one author entity with an @id, Article dates that follow the page, and no
+    Article block describing a different URL (nine pages were shipping the BlogPosting of
+    the article they had been copied from). Returns (html, types found)."""
+    found = set()
+    def fix(node):
+        changed = False
+        if not isinstance(node, dict):
+            return changed
+        ts = _types(node)
+        found.update(t for t in ts if t)
+        if node.get("@id") == ORG_ID and ts & {"EducationalOrganization", "LocalBusiness", "Organization"}:
+            new = org_node(rel, node)
+            if new != node:
+                node.clear(); node.update(new); changed = True
+        elif "Person" in ts and node.get("name") == "Christopher" and "jobTitle" in node:
+            for k, v in (("@id", PERSON_ID), ("url", ORIGIN + TEACHER)):
+                if node.get(k) != v:
+                    node[k] = v; changed = True
+        elif ts & ARTICLE_TYPES:
+            me = node.get("mainEntityOfPage")
+            me = me.get("@id") if isinstance(me, dict) else me
+            if me != canon:                    # block copied from another page: rewrite it for this one
+                node["headline"], node["description"], node["mainEntityOfPage"] = headline[:110], desc, canon
+                node["datePublished"] = published
+                if image: node["image"] = image
+                changed = True
+            a = node.get("author")
+            if isinstance(a, dict) and a.get("name") == "Christopher" and a != PERSON_REF:
+                node["author"] = dict(PERSON_REF); changed = True
+            pub = node.get("datePublished") or published
+            mod = max(modified, pub[:10])
+            if node.get("dateModified") != mod:
+                node["dateModified"] = mod; changed = True
+        return changed
+    def sub(m):
+        try:
+            d = json.loads(m.group(1))
+        except ValueError:
+            return m.group(0)
+        nodes = d.get("@graph", [d]) if isinstance(d, dict) else d
+        ch = [fix(n) for n in (nodes if isinstance(nodes, list) else [nodes])]
+        return f'<script type="application/ld+json">{jd(d)}</script>' if any(ch) else m.group(0)
+    html = re.sub(r'<script type="application/ld\+json">(.*?)</script>', sub, html, flags=re.S)
+    return html, found
+
 def faq_ld(soup):
     faqs = []
     for item in soup.select(".faq-item"):
@@ -215,20 +384,8 @@ def process_page(path, css_ver="", crit=""):
     canon = m.group(1) if m else urljoin(ORIGIN, "/" + os.path.dirname(rel) + "/" if os.path.dirname(rel) else ORIGIN + "/")
     key = page_key(canon)
 
-    # --- build SEO-LD head block ---
-    seo = [SEO_START,
-           f'<link rel="alternate" hreflang="zh-Hant-TW" href="{canon}">',
-           f'<link rel="alternate" hreflang="x-default" href="{canon}">']
     bc = breadcrumb_ld(soup, canon)
     fq = faq_ld(BeautifulSoup(html, "lxml"))  # fresh soup (faq_ld mutates)
-    if bc: seo.append(f'<script type="application/ld+json">{jd(bc)}</script>')
-    if fq: seo.append(f'<script type="application/ld+json">{jd(fq)}</script>')
-    # org node for pages that define none of their own (checked against the page with the
-    # old SEO block stripped, so a previous injection never suppresses the re-injection)
-    if '"@id":"' + ORIGIN + '/#organization"' not in strip_block(html, SEO_START, SEO_END):
-        seo.append(f'<script type="application/ld+json">{jd(ORG_LD)}</script>')
-    seo.append(SEO_END)
-    seo_block = "\n".join(seo) + "\n"
 
     # The page's declared language must match the hreflang code we emit below. The site
     # shipped lang="zh-Hant" against hreflang="zh-Hant-TW" — valid separately, inconsistent
@@ -240,8 +397,55 @@ def process_page(path, css_ver="", crit=""):
     html = strip_block(html, CHROME_START, CHROME_END)
     html = strip_block(html, CRIT_START, CRIT_END)
     html = strip_block(html, GTM_START, GTM_END)
+    html = strip_block(html, FOOT_START, FOOT_END)
+    html = strip_block(html, PMETA_START, PMETA_END)
     if "</head>" not in html or not re.search(r"<body[^>]*>", html):
         return rel, "SKIP (no head/body)"
+
+    # --- page facts, taken from the authored page (every injected block is stripped now) ---
+    today = datetime.date.today().isoformat()
+    modified = page_date(rel, html, today)
+    published = min(published_date(rel, today), modified)
+    title = soup.title.get_text(strip=True) if soup.title else ""
+    h1 = soup.select_one("h1")
+    headline = re.sub(r"\s+", " ", h1.get_text(" ", strip=True)) if h1 else title.replace(BRAND_SUFFIX, "")
+    md = soup.find("meta", attrs={"name": "description"})
+    desc = (md.get("content") or "").strip() if md else ""
+    own_og = re.search(r'<meta[^>]*property="og:image"[^>]*>', html)
+    if own_og:
+        mm = re.search(r'content="([^"]+)"', own_og.group(0))
+        image = mm.group(1) if mm else ORIGIN + OG_DEFAULT
+    else:
+        image = urljoin(ORIGIN, share_image(rel, soup))
+    article_page = bool(bc) and rel not in NOT_ARTICLE and rel not in SELF_CONTAINED
+
+    html, found = normalize_ld(html, rel, canon, headline, desc, image, published, modified)
+
+    # --- build SEO-LD head block ---
+    seo = [SEO_START,
+           f'<link rel="alternate" hreflang="zh-Hant-TW" href="{canon}">',
+           f'<link rel="alternate" hreflang="x-default" href="{canon}">',
+           '<link rel="apple-touch-icon" href="/apple-touch-icon.png">']
+    if not own_og:
+        seo.append(f'<meta property="og:image" content="{image}">')
+    if 'name="twitter:card"' not in html:
+        seo.append('<meta name="twitter:card" content="summary_large_image">')
+    if 'name="twitter:image"' not in html:
+        seo.append(f'<meta name="twitter:image" content="{image}">')
+    if bc: seo.append(f'<script type="application/ld+json">{jd(bc)}</script>')
+    if fq: seo.append(f'<script type="application/ld+json">{jd(fq)}</script>')
+    # org node for pages that define none of their own
+    if '"@id":"' + ORG_ID + '"' not in html.replace('{"@id":"' + ORG_ID + '"}', ""):
+        seo.append(f'<script type="application/ld+json">{jd(dict({"@context": "https://schema.org"}, **org_node(rel)))}</script>')
+    # an Article node for content pages that carry no page-level type of their own
+    if article_page and not (found & OWN_TYPES):
+        seo.append('<script type="application/ld+json">' + jd({
+            "@context": "https://schema.org", "@type": "Article", "headline": headline[:110],
+            "description": desc, "inLanguage": "zh-Hant-TW", "mainEntityOfPage": canon, "image": image,
+            "datePublished": published, "dateModified": modified,
+            "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}}) + "</script>")
+    seo.append(SEO_END)
+    seo_block = "\n".join(seo) + "\n"
 
     # perf: inline critical CSS + async-load the rest; defer GA4 off the critical path
     html = OLD_GTM_RE.sub("", html)
@@ -275,6 +479,24 @@ def process_page(path, css_ver="", crit=""):
             html = (html[:cut].rstrip() +
                     f'\n<script src="/assets/app.js?v={APPJS_VER}"></script>\n' + html[cut:])
 
+    # footer and "last updated" line: after </main>, else ahead of the closing scripts
+    if rel not in SELF_CONTAINED:
+        tail = (pmeta_block(modified) if article_page else "") + \
+               ("" if '<footer class="site-footer"' in html else footer_block())
+        if tail:
+            at = html.find('<footer class="site-footer"')
+            if at == -1:
+                at = html.rfind("</main>")
+                if at != -1:                       # exactly one newline between </main> and the block
+                    at += len("</main>")
+                    html = html[:at] + "\n" + html[at:].lstrip("\n")
+                    at += 1
+            if at == -1:
+                m2 = re.search(r'<script src="/assets/app\.js', html)
+                at = m2.start() if m2 else html.rfind("</body>")
+            if at != -1:
+                html = html[:at] + tail + html[at:]
+
     # Only write when this build actually changed the file. Writing unconditionally
     # touched every page's mtime, so rebuild_sitemap() stamped the SAME <lastmod> on
     # all 103 URLs — and Google discounts lastmod that is uniformly the build date.
@@ -296,14 +518,23 @@ def process_page(path, css_ver="", crit=""):
 # moves only when the AUTHORED html changes. The ledger lives in the repo so every session
 # shares one history; CI never runs this script, so it cannot re-stamp.
 LASTMOD_LEDGER = os.path.join(SITE, "data", "lastmod.json")
-_INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM_END), (SEO_START, SEO_END)]
+_INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM_END), (SEO_START, SEO_END),
+             (FOOT_START, FOOT_END), (PMETA_START, PMETA_END),
+             # the pack offer is a sales block repeated on ~100 pages: a price or button
+             # change is not a change to the page (it stamped 95 URLs with one date on 09-25)
+             ("<!-- AE:PACKOFFER -->", "<!-- /AE:PACKOFFER -->")]
 
 def authored_hash(html):
+    """Hash of what the reader gets: the <body>, minus every injected block and minus
+    JSON-LD. Head-only edits (a title or description trim) and schema clean-ups no longer
+    move <lastmod> or the visible "last updated" date."""
     for a, b in _INJECTED:
         html = re.sub(re.escape(a) + r".*?" + re.escape(b), "", html, flags=re.S)
+    m = re.search(r"<body[^>]*>(.*)</body>", html, flags=re.S)
+    if m:
+        html = m.group(1)
+    html = re.sub(r'<script type="application/ld\+json">.*?</script>\s*', "", html, flags=re.S)
     html = re.sub(r'<script src="/assets/app\.js\?v=\d+"></script>\s*', "", html)
-    html = re.sub(r'/assets/styles\.css\?v=[0-9a-f]+', "/assets/styles.css", html)
-    html = re.sub(r'<html lang="[^"]*">', "<html>", html)
     # Tools that round-trip a page through BeautifulSoup (build_word_audio) re-emit every tag
     # with its attributes sorted onto one line. The reader sees nothing new, so hash the
     # parsed form: the hand-formatted and the round-tripped page then agree, and <lastmod>
@@ -316,6 +547,38 @@ def load_ledger():
         return json.load(open(LASTMOD_LEDGER, encoding="utf-8"))
     except FileNotFoundError:
         return {}
+
+def save_ledger(ledger):
+    os.makedirs(os.path.dirname(LASTMOD_LEDGER), exist_ok=True)
+    json.dump(ledger, open(LASTMOD_LEDGER, "w", encoding="utf-8"), ensure_ascii=False, indent=0, sort_keys=True)
+
+_LEDGER = None
+def page_date(rel, html, today):
+    """Ledger date for a page given its html (used while the page is being built)."""
+    global _LEDGER
+    if _LEDGER is None:
+        _LEDGER = load_ledger()
+    key = os.path.dirname(rel) or os.path.splitext(rel)[0]
+    h = authored_hash(html)
+    ent = _LEDGER.get(key)
+    if not ent or ent.get("hash") != h:
+        _LEDGER[key] = {"hash": h, "date": today}
+        save_ledger(_LEDGER)
+    return _LEDGER[key]["date"]
+
+def share_image(rel, soup):
+    """Share image for a page that declares none: its chart, else its first content
+    picture, else the brand card."""
+    rec = [r for r in chart_manifest().values() if r.get("page") == os.path.dirname(rel)]
+    if rec:
+        return rec[0]["png"]
+    main = soup.find("main") or soup
+    for im in main.find_all("img"):
+        src = im.get("src") or ""
+        if src.startswith(("/assets/img/blog/", "/assets/img/charts/")) or \
+           (src.startswith("/assets/img/") and str(im.get("width") or "0").isdigit() and int(im.get("width") or 0) >= 600):
+            return src
+    return OG_DEFAULT
 
 def ledger_lastmod(ledger, rel, fpath, today):
     """lastmod for rel; the ledger entry moves only when the authored content hash changes."""
@@ -376,12 +639,33 @@ def rebuild_sitemap():
             d = ledger_lastmod(ledger, relpath or "index", fpath, today)
             block = block.replace("</loc>", f"</loc><lastmod>{d}</lastmod>", 1)
         return block
-    ledger = load_ledger(); today = datetime.date.today().isoformat()
+    global _LEDGER
+    ledger = _LEDGER if _LEDGER is not None else load_ledger(); today = datetime.date.today().isoformat()
     xml = re.sub(r"<url>.*?</url>", add_lastmod, xml, flags=re.S)
     open(sm, "w", encoding="utf-8").write(xml)
-    os.makedirs(os.path.dirname(LASTMOD_LEDGER), exist_ok=True)
-    json.dump(ledger, open(LASTMOD_LEDGER, "w", encoding="utf-8"), ensure_ascii=False, indent=0, sort_keys=True)
+    save_ledger(ledger); _LEDGER = ledger
     return sum(1 for _ in re.finditer(r"<lastmod>", xml))
+
+def lint_snippets(pages):
+    """Titles and descriptions that a search result will cut off, measured by width."""
+    long_t, long_d, short_d = [], [], []
+    for p in pages:
+        rel = os.path.relpath(p, SITE)
+        if rel in SELF_CONTAINED or rel == "404.html":
+            continue
+        sp = BeautifulSoup(open(p, encoding="utf-8").read(), "html.parser")
+        t = sp.title.get_text(strip=True) if sp.title else ""
+        md = sp.find("meta", attrs={"name": "description"})
+        d = (md.get("content") or "").strip() if md else ""
+        tw, dw = snippet_width(t.replace(BRAND_SUFFIX, "")), snippet_width(d)
+        if tw > TITLE_MAX: long_t.append((tw, rel))
+        if dw > DESC_MAX: long_d.append((dw, rel))
+        elif dw < DESC_MIN: short_d.append((dw, rel))
+    print(f"snippet lint: {len(long_t)} titles > {TITLE_MAX} units · {len(long_d)} descriptions > {DESC_MAX} · "
+          f"{len(short_d)} descriptions < {DESC_MIN}")
+    for label, rows in (("title too wide", long_t), ("description too wide", long_d), ("description too short", short_d)):
+        for w, rel in sorted(rows, reverse=True)[:12]:
+            print(f"  {label:<22} {w:>4}  {rel}")
 
 if __name__ == "__main__":
     pages = sorted([os.path.join(d, f) for d, _, fs in os.walk(SITE) for f in fs if f.endswith(".html")])
@@ -393,5 +677,6 @@ if __name__ == "__main__":
         print(f"  {rel:<52} {msg}")
     n = rebuild_sitemap()
     print(f"sitemap.xml: {n} <lastmod> dates written")
+    lint_snippets(pages)
     print("Done. (app.js bumped to v=%d — make sure app.js guards are in place.)" % APPJS_VER)
     print(f"      critical CSS + deferred GA4 re-baked; styles.css cache key = {css_ver}")
