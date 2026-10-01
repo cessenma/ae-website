@@ -24,6 +24,8 @@ RewriteRule ^ https://americanenglish.com.tw%{REQUEST_URI} [L,R=301]
 # tools/ and data/ hold the build scripts and their ledgers. They ride along in the
 # repo so they deploy with it, but they are not pages: answer 404, not the source.
 RewriteRule ^(tools|data)(/|$) - [R=404,L]
+# Notes kept in the repo (DEPLOY.md and the like) are not pages either.
+RewriteRule \.md$ - [R=404,L]
 
 # /index.html and /<page>/index.html answered 200 as duplicates of the folder URL.
 # THE_REQUEST is the browser's own request line, so the internal DirectoryIndex lookup
@@ -37,6 +39,8 @@ RewriteRule ^americanenglish\.com\.tw/?(.*)$ /$1 [R=301,L]
 
 # The charts became .webp, but /chart-license/ kept handing out .png addresses for two weeks
 # (Sept 2026). Anyone who pasted that embed code gets the picture instead of a 404.
+# (two charts were also renamed: both old names are the 1-100 numbers chart)
+RewriteRule ^assets/img/charts/(english-numbers-guide-chart|numbers-1-100-chart)\.(png|webp)$ /assets/img/charts/english-numbers-chart.webp [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^assets/img/charts/([^/]+)\.png$ /assets/img/charts/$1.webp [R=301,L]
 </IfModule>

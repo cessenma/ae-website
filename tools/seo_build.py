@@ -16,20 +16,22 @@ and bumps app.js?v=.
 
 lastmod policy (also drives the visible "最後更新" date and JSON-LD dateModified):
   a page's date moves only when what the reader gets changes: its words, where its links go,
-  which pictures and audio it uses, the data its scripts carry. Ignored on purpose: markup
+  which pictures and audio it uses, the scripts it carries inline (practice data and the
+  renderer written into the page). Ignored on purpose: markup
   (classes, attributes, tag order), a picture's file format, alt text, the <head> (titles,
   descriptions), JSON-LD, the author line, button labels, every block this script injects,
   the tool-owned link blocks (AE:ROUTE, AE:GEPTPRX), the pack offer and the pre-rendered
   copy of practice questions (AE:PRE — the page's own data script is what counts).
   - A wording edit that is not a content update (a relabelled line, one more "read next"
-    link): run  tools/backfill_lastmod.py --cosmetic page-a,page-b  — it dates those pages
-    from their history instead of today.
+    link): run  tools/backfill_lastmod.py --cosmetic page-a,page-b  — it records the pages
+    in data/lastmod_cosmetic.json under today's date and dates them from their history.
   - tools/backfill_lastmod.py with no arguments recomputes every date from git history (the
     day the present content first appeared). Run it after changing content_signature itself.
   - tools/rebaseline_lastmod.py re-hashes and keeps every date as it is.
 
 --strict (used by tools/build_all.sh): exit non-zero when a title or description will be cut
-off in a search result, or when a page points at a local file that is not on disk.
+off in a search result, when a page points at a local file that is not on disk, or when a
+downloadable PDF carries the fonts Apple's viewer draws wrongly (tools/check_pdfs.py).
 
 Idempotent: re-running replaces the marked blocks instead of duplicating.
 app.js is guarded to skip anything already present (see assets/app.js).
@@ -195,6 +197,27 @@ def critical_css():
     crit = re.sub(r"\s*\n\s*", "", crit)
     return re.sub(r"\s{2,}", " ", crit)
 
+# Web fonts, the same on every page. 141 generated pages (the GEPT section, grammar guides,
+# vocabulary practice) carried no font link at all, so their Latin headings fell back to
+# Times and their labels to the system font. Two requests on purpose:
+#   display faces (headings, labels) swap in when they arrive;
+#   DM Sans (body text) is "optional": on a slow first visit the text stays in the system
+#   font instead of re-wrapping when the font lands (that re-wrap was a 0.09-0.11 layout
+#   shift on the KK page once the answer moved onto the first screen), and it is used from
+#   the first paint on every later page view.
+FONTS_START, FONTS_END = "<!-- AE:FONTS start -->", "<!-- AE:FONTS end -->"
+_GF = "https://fonts.googleapis.com/css2?"
+FONTS_DISPLAY = _GF + "family=Baloo+2:wght@500;600;700;800&amp;family=DM+Serif+Display:ital@0;1&amp;display=swap"
+FONTS_BODY = _GF + "family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,400&amp;display=optional"
+FONTS_BLOCK = (f"{FONTS_START}\n"
+               '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
+               '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
+               f'<link href="{FONTS_DISPLAY}" rel="stylesheet" media="print" onload="this.media=\'all\'">\n'
+               f'<link href="{FONTS_BODY}" rel="stylesheet" media="print" onload="this.media=\'all\'">\n'
+               f'<noscript><link href="{FONTS_DISPLAY}" rel="stylesheet"><link href="{FONTS_BODY}" rel="stylesheet"></noscript>\n'
+               f"{FONTS_END}\n")
+OLD_FONTS_RE = re.compile(r'(?:<noscript>\s*)?<link\b[^>]*\bhref="https://fonts\.(?:googleapis|gstatic)\.com[^"]*"[^>]*>(?:\s*</noscript>)?\n?')
+
 def crit_block(ver, crit):
     href = f"/assets/styles.css?v={ver}"
     return (f"{CRIT_START}\n<style id=\"crit\">{crit}</style>\n"
@@ -330,7 +353,11 @@ def byline_date(date):
     return (f'{PMETA_START}｜<span class="byl-d">最後更新 <time datetime="{date}">{y} 年 {int(m)} 月 {int(d)} 日</time></span>'
             f'{PMETA_END}')
 
-BYL_MORE = f'{BYL_START}<p class="byl-more"><a href="{TEACHER}">關於作者</a></p>{BYL_END}'
+# The link to the author's page sits in a strip at the END of <main>, not under the byline:
+# a link-only paragraph next to the byline made text extractors (trafilatura) drop the author
+# line, the date and often the <h1> with it (6 of 90 pages kept the author; 38 of 40 without).
+BYL_MORE = (f'{BYL_START}<div class="page-meta"><div class="wrap"><span>作者：<a href="{TEACHER}">Christopher｜埃森美語創辦人</a>'
+            f'（<a href="{TEACHER}">關於作者</a>）</span></div></div>\n{BYL_END}')
 
 def snippet_width(t):
     """Display width the way a search result measures it: a CJK or full-width character
@@ -608,6 +635,7 @@ H1_WBR = {
     "cambridge-exam-registration-taiwan": [("考場、流程與費用須知（2026）", "考場、流程與費用<wbr>須知（2026）")],
     "ket-prep-guide": [("（A2 Key for Schools）準備完整指南", "（A2 Key for Schools）<wbr>準備完整指南")],
     "english-dates-guide": [("11 號、13 日、", "11&nbsp;號、13&nbsp;日、")],      # keep the number with its counter
+    "gept": [(" 頁練習全部免費", "&nbsp;頁練習全部免費")],                           # 「39｜頁」 split across two lines
 }
 for _lv in ("starters", "movers", "flyers", "ket", "pet", "fce"):          # 「X 題庫：免費線上模擬試題 N 頁」
     H1_WBR[_lv + "-practice-tests"] = [("免費線上模擬試題", "免費線上<wbr>模擬試題")]
@@ -656,10 +684,12 @@ def h1_segments(html, page=""):
 
 def h1_text(h1):
     """Text of an <h1>: a <br> is a space, an inline <em> is not (get_text(" ") turned
-    「<em>真正的</em>」 into 「 真正的 」)."""
+    「<em>真正的</em>」 into 「 真正的 」). No space after full-width punctuation: a line that
+    ends in ？ or ： needs none (「怎麼說？ 祝福語」 read as a typo in 11 headlines)."""
     for br in h1.find_all("br"):
         br.replace_with(" ")
-    return re.sub(r"\s+", " ", h1.get_text()).strip()
+    t = re.sub(r"\s+", " ", h1.get_text()).strip()
+    return re.sub(r"([？！：，、。；）」])\s+", r"\1", t)
 
 def faq_ld(soup):
     faqs = []
@@ -742,6 +772,7 @@ def process_page(path, css_ver="", crit=""):
     html = strip_block(html, CHROME_START, CHROME_END)
     html = strip_block(html, CRIT_START, CRIT_END)
     html = strip_block(html, GTM_START, GTM_END)
+    html = strip_block(html, FONTS_START, FONTS_END)
     html = strip_block(html, FOOT_START, FOOT_END)
     html = strip_block(html, PMETA_START, PMETA_END)
     html = strip_block(html, POP_START, POP_END)
@@ -833,7 +864,8 @@ def process_page(path, css_ver="", crit=""):
     # tunes .compare there). Anchor it after the viewport meta, else right after <head>.
     if crit and rel not in SELF_CONTAINED:
         html = PLAIN_CSS_RE.sub("", html)
-        block = crit_block(css_ver, crit)
+        html = OLD_FONTS_RE.sub("", html)             # the page's own font tags, if it had any
+        block = crit_block(css_ver, crit) + FONTS_BLOCK
         m = re.search(r'<meta[^>]+name=["\']viewport["\'][^>]*>\s*', html)
         if m:
             html = html[:m.end()] + block + html[m.end():]
@@ -872,12 +904,16 @@ def process_page(path, css_ver="", crit=""):
     if rel not in SELF_CONTAINED:
         html = h1_segments(html, os.path.dirname(rel))
     # byline: the date goes on the author line, and a separate small link leads to the teacher page
-    own_date = "最後更新" in html
+    # a date line the page wrote itself ("最後更新：2026…"), not the two words in passing
+    # (a PET listening explanation says 「最後更新的數字」 and lost its date strip to that)
+    own_date = bool(re.search(r"最後更新\s*[：:]\s*(?:<time|\d{4})", html))
     if has_byline:
         mb2 = BYLINE_RE.search(html)
         if mb2:
-            html = (html[:mb2.end(1)] + ("" if own_date else byline_date(modified)) + mb2.group(2)
-                    + BYL_MORE + html[mb2.end():])
+            html = html[:mb2.end(1)] + ("" if own_date else byline_date(modified)) + mb2.group(2) + html[mb2.end():]
+            at = html.rfind("</main>")
+            if at != -1:
+                html = html[:at] + BYL_MORE + html[at:]
     # heading order: when the first heading after the H1 is an h3/h4 (a signpost card, the
     # task-format box), tell assistive tech it sits at level 2 — the tag and its styling stay
     m1 = re.search(r"</h1>", html)
@@ -1083,6 +1119,7 @@ def license_rows(html):
                       lambda m: f'{m.group(1)}{kk["w"]}{m.group(2)}{kk["h"]}{m.group(3)}', html)
     return html
 
+SITEMAP_PROBLEMS = 0
 def rebuild_sitemap():
     sm = os.path.join(SITE, "sitemap.xml")
     xml = open(sm, encoding="utf-8").read()
@@ -1135,18 +1172,23 @@ def rebuild_sitemap():
     xml = re.sub(r"<url>.*?</url>", add_lastmod, xml, flags=re.S)
     xml = re.sub(r"\n[ \t]*<url>", "\n  <url>", xml)
     # lint: every listed page must exist, be indexable and be its own canonical
+    global SITEMAP_PROBLEMS
+    SITEMAP_PROBLEMS = 0
+    def warn(msg):                     # count what the lint reports, for --strict
+        global SITEMAP_PROBLEMS
+        SITEMAP_PROBLEMS += 1; print(msg)
     for loc in re.findall(r"<loc>([^<]+)</loc>", xml):
         relp = loc.replace(ORIGIN, "").strip("/")
         if os.path.splitext(relp)[1]:
-            if not os.path.exists(os.path.join(SITE, relp)): print(f"  ::warning:: sitemap lists a missing file: {loc}")
+            if not os.path.exists(os.path.join(SITE, relp)): warn(f"  ::warning:: sitemap lists a missing file: {loc}")
             continue
         f = os.path.join(SITE, relp, "index.html") if relp else os.path.join(SITE, "index.html")
         if not os.path.exists(f):
-            print(f"  ::warning:: sitemap lists a missing page: {loc}"); continue
+            warn(f"  ::warning:: sitemap lists a missing page: {loc}"); continue
         t = open(f, encoding="utf-8").read()
-        if re.search(r'<meta[^>]+name="robots"[^>]+noindex', t): print(f"  ::warning:: sitemap lists a noindex page: {loc}")
+        if re.search(r'<meta[^>]+name="robots"[^>]+noindex', t): warn(f"  ::warning:: sitemap lists a noindex page: {loc}")
         c = re.search(r'rel="canonical"[^>]*href="([^"]+)"|href="([^"]+)"[^>]*rel="canonical"', t)
-        if c and (c.group(1) or c.group(2)) != loc: print(f"  ::warning:: sitemap URL is not its own canonical: {loc}")
+        if c and (c.group(1) or c.group(2)) != loc: warn(f"  ::warning:: sitemap URL is not its own canonical: {loc}")
     open(sm, "w", encoding="utf-8").write(xml)
     save_ledger(ledger); _LEDGER = ledger
     return sum(1 for _ in re.finditer(r"<lastmod>", xml))
@@ -1159,7 +1201,8 @@ def lint_files(pages):
     for p in pages:
         rel = os.path.relpath(p, SITE)
         t = open(p, encoding="utf-8").read()
-        for ref in set(LOCAL_REF_RE.findall(t)) | set(re.findall(r'"(https://americanenglish\.com\.tw/assets/[^"#?\s]+)"', t)):
+        loose = set(re.findall(r"""(/assets/[^"'\s,)<>?#\\]+\.[A-Za-z0-9]{2,5})(?=["'\s,)?#\\<]|$)""", t))   # srcset, data-*, inline data
+        for ref in set(LOCAL_REF_RE.findall(t)) | loose | set(re.findall(r'"(https://americanenglish\.com\.tw/assets/[^"#?\s]+)"', t)):
             path = ref.replace(ORIGIN, "")
             if path.startswith("//") or os.path.splitext(path)[1].lower() in (".html", ".htm", ".tw", ".com"):
                 continue
@@ -1206,7 +1249,12 @@ if __name__ == "__main__":
         print(f"  {rel:<52} {msg}")
     n = rebuild_sitemap()
     print(f"sitemap.xml: {n} <lastmod> dates written")
-    problems = lint_snippets(pages) + lint_files(pages)
+    problems = lint_snippets(pages) + lint_files(pages) + SITEMAP_PROBLEMS
+    try:                               # downloadable PDFs that Apple's viewer draws wrongly
+        import check_pdfs
+        problems += check_pdfs.check(quiet=True)
+    except Exception as e:             # the lint must never stop the page build itself
+        print(f"pdf check skipped: {e}")
     print("Done. (app.js cache key = %s)" % _APPJS)
     print(f"      critical CSS + deferred GA4 re-baked; styles.css cache key = {css_ver}")
     # build_all.sh runs with --strict: a snippet that will be cut off or a file that is not

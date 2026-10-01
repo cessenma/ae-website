@@ -161,11 +161,9 @@ h1,h2{text-wrap:balance}
 .h1s{display:inline-block;text-wrap:balance;max-width:100%}
 .h1s.kp{word-break:keep-all;overflow-wrap:anywhere}
 .byl-d{white-space:nowrap}
-.byl-more{font-size:13px;margin:6px 0 0}
-.byl-more a{color:#5b6880;text-underline-offset:2px;display:inline-block;padding:4px 0}
 /* desktop: the photo sits beside the title instead of under it, so the page's answer
    starts on the first screen (the stacked hero was 920-980px tall on a 768px screen) */
-@media(min-width:1024px){
+@media(min-width:768px){
   .page-hero .wrap:has(> .post-hero){display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);column-gap:52px;align-items:center;text-align:left;max-width:1140px}
   .page-hero .wrap:has(> .post-hero) > *{grid-column:1;justify-self:start}
   .page-hero .wrap:has(> .post-hero) > .post-hero{grid-column:2;grid-row:1 / span 12;margin:0;justify-self:stretch;align-self:center}
@@ -179,8 +177,6 @@ h1,h2{text-wrap:balance}
   .page-hero h1{margin:8px 0 12px}
   .page-hero .eyebrow,.page-hero .post-hero,.page-hero .divider{display:none}
   .page-hero p:has(time){font-size:13px;line-height:1.55;color:#56627a;margin:0 0 4px}
-  .breadcrumb{margin-bottom:0}
-  .breadcrumb a{padding:11px 4px}
   .bg-deco .star{display:none}
 }
 /* Blog photos wear the same pastel frame as the brand illustrations:
@@ -202,6 +198,10 @@ h1,h2{text-wrap:balance}
 .breadcrumb{font-family:'Baloo 2';font-size:13px;font-weight:700;color:#64748b;margin-bottom:8px}
 .breadcrumb a{text-decoration:none;color:#64748b;display:inline-block;padding:6px 2px}
 .breadcrumb a:hover{color:var(--blue)}
+/* phones: taller breadcrumb links (after the base rule on purpose, or it loses the cascade);
+   between phone and tablet-portrait widths the stacked hero photo is dropped as on phones */
+@media(max-width:600px){.breadcrumb{margin-bottom:0}.breadcrumb a{padding:11px 4px}}
+@media(max-width:767px){.page-hero .post-hero{display:none}}
 
 /* ── Marquee ── */
 .marquee{background:var(--navy);padding:16px 0;overflow:hidden;position:relative}
@@ -382,8 +382,10 @@ a.card:hover .ico{transform:scale(1.1) rotate(-6deg)}
 .prose h3{font-family:'Baloo 2';font-weight:800;font-size:21px;margin:28px 0 10px}
 .prose p{font-size:16px;line-height:1.9;color:#374151;margin-bottom:16px}
 .prose ul{margin:0 0 16px 0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:12px}
-.prose ul li{display:flex;gap:12px;align-items:flex-start;color:#374151;line-height:1.7}
-.prose ul li::before{content:'';flex:0 0 22px;width:22px;height:22px;margin-top:2px;border-radius:50%;background:rgba(6,199,85,.14) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2306C755' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E") center/14px no-repeat}
+/* block, not flex: as a flex row every <strong>/<em> inside an item became its own narrow
+   column (160 items on 23 pages), and on a phone the row ran off the screen */
+.prose ul li{display:block;position:relative;padding-left:34px;color:#374151;line-height:1.7}
+.prose ul li::before{content:'';position:absolute;left:0;top:3px;width:22px;height:22px;border-radius:50%;background:rgba(6,199,85,.14) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2306C755' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E") center/14px no-repeat}
 
 /* ── Floating LINE ── */
 .line-fab{position:fixed;bottom:24px;right:20px;z-index:130;width:62px;height:62px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 8px 24px rgba(6,199,85,.45)}
