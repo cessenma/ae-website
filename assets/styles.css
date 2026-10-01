@@ -486,3 +486,7 @@ td .say{margin-left:8px}
 .page-meta .wrap{display:flex;gap:8px 22px;flex-wrap:wrap;justify-content:center}
 .page-meta a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 @media print{.page-meta{display:none}}
+
+/* practice pages: the question number/stem sits inside its card, not on the card's border */
+.prx-item legend{float:left;width:100%;box-sizing:border-box;margin:0 0 10px;line-height:1.55}
+.prx-item legend+*{clear:both}
