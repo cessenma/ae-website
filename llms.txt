@@ -185,7 +185,7 @@ with an instant score and a Chinese explanation for every option.
 - American English 埃森美語 reports a 98% Cambridge exam (劍橋英檢) pass rate, 208 families served, a 94% re-enrollment rate, and an average enrollment of 2.4 years per student.
 - The school's core teaching materials are National Geographic Explore Our World and Oxford Bookworms graded readers.
 - GEPT 全民英檢初級 corresponds to CEFR A2; in the first stage (初試), listening and reading are each scored out of 120, and passing requires a combined score of at least 160 with neither section below 72.
-- In the GEPT 初級 second stage (複試), writing and speaking are each scored out of 100, and passing requires at least 80 in each.
+- In the GEPT 初級 second stage (複試), writing and speaking are each scored out of 100; passing requires 70 in writing and 80 in speaking (LTTC 2026 registration guide).
 - Cambridge YLE (劍橋兒童英檢) has three levels — Starters (Pre A1), Movers (A1), Flyers (A2) — scored with shields (盾牌制); there is no pass or fail.
 - Cambridge KET (A2 Key for Schools) certifies CEFR A2, the same CEFR level as GEPT 初級.
 - Taiwan's 國中教育會考 English score is weighted 80% reading and 20% listening.
