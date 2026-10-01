@@ -222,27 +222,81 @@ def snippet_width(t):
     this site — 37 Chinese characters "fit" a 60-character limit and still get cut."""
     return sum(2 if unicodedata.east_asian_width(c) in "WF" else 1 for c in t)
 
-TITLE_MAX, DESC_MIN, DESC_MAX = 60, 110, 160     # width units; title is measured without the brand suffix
+TITLE_MAX, DESC_MIN, DESC_MAX = 60, 100, 160     # width units; title is measured without the brand suffix
 BRAND_SUFFIX = "｜埃森美語"
+BRAND_RE = re.compile(r"(｜| — )埃森美語$")
 
-_PUBLISHED = None
-def published_date(rel, today):
-    """Day the page first entered the repo (the nearest thing to a publication date)."""
-    global _PUBLISHED
-    if _PUBLISHED is None:
-        _PUBLISHED = {}
+# Search-result titles and descriptions live in ONE file, data/snippets.json, keyed by the
+# page's folder. Whatever a page or its generator wrote, the build puts these in the head —
+# so a snippet is edited in one place and a regenerated page cannot bring the old one back.
+SNIPPETS_FILE = os.path.join(SITE, "data", "snippets.json")
+_SNIPPETS = None
+def apply_snippet(html, rel):
+    global _SNIPPETS
+    if _SNIPPETS is None:
         try:
-            out = subprocess.run(["git", "-C", SITE, "log", "--diff-filter=A", "--name-only", "--format=@%as"],
-                                 capture_output=True, text=True).stdout
-            day = None
-            for line in out.splitlines():
-                if line.startswith("@"):
-                    day = line[1:]
-                elif line.strip():
-                    _PUBLISHED[line.strip()] = day        # log runs newest first: the last write wins = first add
+            _SNIPPETS = json.load(open(SNIPPETS_FILE, encoding="utf-8"))
+        except FileNotFoundError:
+            _SNIPPETS = {}
+    e = _SNIPPETS.get(os.path.dirname(rel) or os.path.splitext(rel)[0])
+    if not e:
+        return html
+    def meta(html, attr, name, value):
+        v = html_escape(value)
+        pat = re.compile(r'<meta\s+(?:%s="%s"\s+content="[^"]*"|content="[^"]*"\s+%s="%s")\s*/?>' % (attr, re.escape(name), attr, re.escape(name)))
+        return pat.sub(lambda m: f'<meta {attr}="{name}" content="{v}">', html, count=1)
+    if e.get("title"):
+        t = e["title"]
+        html = re.sub(r"<title>.*?</title>", lambda m: "<title>" + t.replace("&", "&amp;").replace("<", "&lt;") + "</title>", html, count=1, flags=re.S)
+        short = BRAND_RE.sub("", t)
+        html = meta(html, "property", "og:title", short)
+        html = meta(html, "name", "twitter:title", short)
+    if e.get("description"):
+        d = e["description"]
+        html = meta(html, "name", "description", d)
+        html = meta(html, "property", "og:description", d)
+        html = meta(html, "name", "twitter:description", d)
+    return html
+
+PUBLISHED_LEDGER = os.path.join(SITE, "data", "published.json")
+_PUBLISHED = None
+_GIT_ADDS = None
+def _git_first_add(rel):
+    """Day the file first entered the repo, or None when git cannot say (a shallow CI clone
+    reports every file as added in its single commit, so it is not trusted)."""
+    global _GIT_ADDS
+    if _GIT_ADDS is None:
+        _GIT_ADDS = {}
+        try:
+            shallow = subprocess.run(["git", "-C", SITE, "rev-parse", "--is-shallow-repository"],
+                                     capture_output=True, text=True).stdout.strip()
+            if shallow == "false":
+                out = subprocess.run(["git", "-C", SITE, "log", "--diff-filter=A", "--name-only", "--format=@%as"],
+                                     capture_output=True, text=True).stdout
+                day = None
+                for line in out.splitlines():
+                    if line.startswith("@"):
+                        day = line[1:]
+                    elif line.strip():
+                        _GIT_ADDS[line.strip()] = day     # log runs newest first: the last write wins = first add
         except Exception:
             pass
-    return _PUBLISHED.get(rel, today)
+    return _GIT_ADDS.get(rel)
+
+def published_date(rel, today):
+    """Publication date of a page. Kept in data/published.json so the weekly CI job and a
+    local build always agree; a page seen for the first time is dated from git, else today."""
+    global _PUBLISHED
+    if _PUBLISHED is None:
+        try:
+            _PUBLISHED = json.load(open(PUBLISHED_LEDGER, encoding="utf-8"))
+        except FileNotFoundError:
+            _PUBLISHED = {}
+    if rel not in _PUBLISHED:
+        _PUBLISHED[rel] = _git_first_add(rel) or today
+        os.makedirs(os.path.dirname(PUBLISHED_LEDGER), exist_ok=True)
+        json.dump(_PUBLISHED, open(PUBLISHED_LEDGER, "w", encoding="utf-8"), ensure_ascii=False, indent=0, sort_keys=True)
+    return _PUBLISHED[rel]
 
 PERSON_REF = {"@type": "Person", "@id": PERSON_ID, "name": "Christopher", "url": ORIGIN + TEACHER}
 
@@ -407,6 +461,7 @@ def process_page(path, css_ver="", crit=""):
     rel = os.path.relpath(path, SITE)
     html = open(path, encoding="utf-8").read()
     original = html          # kept so we can skip writing files this build did not change
+    html = apply_snippet(html, rel)
     soup = BeautifulSoup(html, "lxml")
 
     # Attribute order is not guaranteed: anything round-tripped through BeautifulSoup
@@ -549,6 +604,9 @@ def process_page(path, css_ver="", crit=""):
             if at == -1:
                 m2 = re.search(r'<script src="/assets/app\.js', html)
                 at = m2.start() if m2 else html.rfind("</body>")
+                if at != -1 and "<main" in html:        # <main> opened and never closed
+                    html = html[:at] + "</main>\n" + html[at:]
+                    at += len("</main>\n")
             if at != -1:
                 html = html[:at] + tail + html[at:]
 
@@ -728,7 +786,7 @@ def lint_snippets(pages):
         t = sp.title.get_text(strip=True) if sp.title else ""
         md = sp.find("meta", attrs={"name": "description"})
         d = (md.get("content") or "").strip() if md else ""
-        tw, dw = snippet_width(t.replace(BRAND_SUFFIX, "")), snippet_width(d)
+        tw, dw = snippet_width(BRAND_RE.sub("", t)), snippet_width(d)
         if tw > TITLE_MAX: long_t.append((tw, rel))
         if dw > DESC_MAX: long_d.append((dw, rel))
         elif dw < DESC_MIN: short_d.append((dw, rel))
