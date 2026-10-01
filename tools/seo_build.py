@@ -52,6 +52,7 @@ def _appjs_ver():
                                          "assets", "app.js"), "rb").read()).hexdigest()[:8]
 _APPJS = _appjs_ver()
 LINE = "https://lin.ee/W9J8TuQ"
+FACEBOOK = "https://www.facebook.com/profile.php?id=61576014571186"   # 埃森美語 - American English Institute
 LOGO = "/assets/img/american-english-banqiao-logo.jpg"
 # the header/footer show the logo at 38px: a 3 KB WebP there, the 24 KB JPEG stays for schema and sharing
 LOGO_SMALL = "/assets/img/american-english-banqiao-logo-96.webp"
@@ -68,13 +69,53 @@ POP_START, POP_END       = "<!-- AE:POPULAR start -->", "<!-- AE:POPULAR end -->
 NEXT_START, NEXT_END     = "<!-- AE:NEXT start -->", "<!-- AE:NEXT end -->"
 # One quiet line under a page's free-PDF box: the reader has just taken something useful, which
 # is the moment to say what the school can do next. Tagged cta_position=mid_page in GA4.
+# (the third link says where the school is: most readers of the reference pages are not in
+#  Banqiao, and it gives the local page a link from inside the text of the busiest pages)
 _NEXT_TAIL = (f'<a href="{LINE}" target="_blank" rel="noopener">加 LINE 預約程度評估</a>'
-              f'　·　<a href="/free-trial/">試聽怎麼進行</a></p>{NEXT_END}')
+              f'　·　<a href="/free-trial/">試聽怎麼進行</a>'
+              f'　·　<a href="/banqiao-english-cram-school/">教室在板橋中正路</a></p>{NEXT_END}')
+# the local pages (school and area guides) had no link in their text to the school's own page,
+# its address or how a trial works: 37 of 43 did not link the main local page at all
+_LOCAL_TAIL = ('<a href="/banqiao-english-cram-school/">板橋英文補習班完整介紹</a>'
+               '　·　<a href="/contact/">地址與交通</a>'
+               f'　·　<a href="/free-trial/">試聽怎麼進行</a></p>{NEXT_END}')
+LOCAL_SKIP = {"banqiao-english-cram-school", "banqiao-parent-testimonials"}
+_LOCAL = None
+def local_pages():
+    global _LOCAL
+    if _LOCAL is None:
+        try:
+            cls = json.load(open(os.path.join(SITE, "data", "page_classes.json"), encoding="utf-8"))["classes"]
+            _LOCAL = {k for k, v in cls.items() if v == "local / cram school"} - LOCAL_SKIP
+        except (OSError, ValueError, KeyError):
+            _LOCAL = set()
+    return _LOCAL
 NEXT_LINE = f'{NEXT_START}<p class="ae-cta">下載之後：想知道孩子現在的英文程度？' + _NEXT_TAIL
+# ...and worded for what was just downloaded, where the page has a clear subject (the one
+# sentence above sat under all 32 PDF boxes).
+NEXT_PDF_ASK = {"sound": "下載之後：想知道孩子哪幾個音還發不準？", "words": "下載之後：想知道孩子的單字量到哪裡？",
+                "grammar": "下載之後：想知道孩子的文法卡在哪裡？", "exam": "下載之後：想知道孩子適合考哪一級？",
+                "speak": "下載之後：想聽孩子把這些句子說出口？"}
+NEXT_PDF = {
+    "kk-phonetic-chart": "sound", "phonics-rules-chart": "sound", "english-pronunciation": "sound", "english-alphabet-guide": "sound",
+    "moe-1200-words-guide": "words", "sight-words-guide": "words", "sight-words-heart-words-guide": "words",
+    "animals-english-vocabulary": "words", "body-parts-english": "words", "colors-english-vocabulary": "words",
+    "fruits-english-vocabulary": "words", "countries-english": "words", "jobs-english": "words",
+    "english-numbers-guide": "words", "ordinal-numbers-english": "words", "months-english": "words",
+    "days-of-week-english": "words", "english-abbreviations-guide": "words",
+    "english-tenses-chart": "grammar", "irregular-verbs-list": "grammar",
+    "starters-vocabulary-practice": "exam", "movers-vocabulary-practice": "exam", "flyers-vocabulary-practice": "exam",
+    "kids-english-levels": "exam",
+    "happy-birthday-english": "speak", "mid-autumn-festival-english": "speak", "thank-you-english": "speak", "cheer-up-english": "speak",
+}
+def next_line(pdir):
+    q = NEXT_PDF_ASK.get(NEXT_PDF.get(pdir, ""))
+    return f'{NEXT_START}<p class="ae-cta">{q}' + _NEXT_TAIL if q else NEXT_LINE
 # The same line for pages with no PDF box, placed at the end of the page's first real section
 # (the pass-mark table, the comparison table, the first how-to). The question is worded for
 # what the reader came for: a pass mark, a choice of exam, or simply where the child stands.
-NEXT_ASK = {"pass": "想知道孩子離通過標準還差多少？", "which": "想知道孩子適合考哪一級？", "level": "想知道孩子現在的英文程度？"}
+NEXT_ASK = {"pass": "想知道孩子離通過標準還差多少？", "which": "想知道孩子適合考哪一級？", "level": "想知道孩子現在的英文程度？",
+            "local": "想先看看埃森美語怎麼上課？"}
 NEXT_MID = {
     "gept-elementary-guide": "pass", "gept-intermediate-guide": "pass", "gept-elementary-speaking-writing": "pass",
     "ket-prep-guide": "pass", "pet-prep-guide": "pass", "fce-prep-guide": "pass",
@@ -110,7 +151,7 @@ def next_mid(html, kind):
     at = html.rfind("</div>", a, b)
     if at == -1:
         return html
-    line = f'{NEXT_START}<p class="ae-cta ae-cta-mid">{NEXT_ASK[kind]}' + _NEXT_TAIL
+    line = f'{NEXT_START}<p class="ae-cta ae-cta-mid">{NEXT_ASK[kind]}' + (_LOCAL_TAIL if kind == "local" else _NEXT_TAIL)
     return html[:at] + line + html[at:]
 
 # The pages people actually arrive on, one click from the homepage, the blog index and the
@@ -137,7 +178,7 @@ PERSON_ID = ORIGIN + "/#christopher"
 OG_DEFAULT = "/assets/img/og-default.jpg"
 BYLINE_LINK = f'<a class="byl" href="{TEACHER}">Christopher</a>'      # earlier form, still undone on read
 BYL_START, BYL_END = "<!-- AE:BYL start -->", "<!-- AE:BYL end -->"
-BYLINE_RE = re.compile(r'(<p[^>]*>(?:作者：Christopher|本文由埃森美語創辦人 Christopher 撰寫)[^<]*)(</p>)')
+BYLINE_RE = re.compile(r'(<p[^>]*>(?:作者：Christopher|(?:本文)?由埃森美語創辦人 Christopher (?:撰寫|整理))[^<]*)(</p>)')
 # Pictures that were copied onto other pages as their share image along with the template they
 # were built from: file name -> the one page that may keep it ("" = none: the second was a
 # close-up of a RUSSIAN dictionary, the share image of twenty English-vocabulary pages).
@@ -185,45 +226,75 @@ def css_fingerprint():
     return hashlib.md5(raw).hexdigest()[:8]
 
 def critical_css():
-    """The above-the-fold slice of styles.css, comment-stripped and whitespace-collapsed.
-    Inlining this removes the render-blocking stylesheet request: measured on the homepage
-    (Lighthouse 12, simulated mobile) this took LCP 5.14s -> 1.90s and TBT 226ms -> 44ms."""
-    css = open(os.path.join(SITE, "assets", "styles.css"), encoding="utf-8").read()
-    lines = css.split("\n")
-    cut = next((i for i, l in enumerate(lines)
-                if CRIT_CUT_MARKER in l and l.strip().startswith("/*")), len(lines))
-    crit = "\n".join(lines[:cut]).strip()
-    crit = re.sub(r"/\*.*?\*/", "", crit, flags=re.S)
-    crit = re.sub(r"\s*\n\s*", "", crit)
-    return re.sub(r"\s{2,}", " ", crit)
+    """Kept for callers (tools/build_calendar_page.py passes its result to process_page).
+    The site no longer inlines a critical slice of styles.css; see crit_block()."""
+    return ""
 
-# Web fonts, the same on every page. 141 generated pages (the GEPT section, grammar guides,
-# vocabulary practice) carried no font link at all, so their Latin headings fell back to
-# Times and their labels to the system font. Two requests on purpose:
-#   display faces (headings, labels) swap in when they arrive;
-#   DM Sans (body text) is "optional": on a slow first visit the text stays in the system
-#   font instead of re-wrapping when the font lands (that re-wrap was a 0.09-0.11 layout
-#   shift on the KK page once the answer moved onto the first screen), and it is used from
-#   the first paint on every later page view.
+# Web fonts, the same on every page, declared right in the page instead of through Google's
+# stylesheet, and loaded so that they can never move the page:
+#   - @font-face rules inline (latin + latin-ext of the five files), so the browser knows the
+#     font files as soon as it reads <head>. The old route was page -> Google stylesheet ->
+#     font file, two extra hops, and the font landed after the first paint.
+#   - the two heading faces and the label face are preloaded.
+#   - font-display: optional. A font that is there when the page is first drawn is used; one
+#     that arrives later is kept for the next page view and never swapped in. A swap re-wraps
+#     headings and the text in the download boxes: 0.04-0.15 layout shift in Lighthouse.
+#     Checked on a first visit with an instant local server (the hardest case): the heading
+#     and body fonts were in use on 4 loads of 5.
+# The file addresses are Google's versioned, immutable ones (v23 / v17). If a face is ever
+# retired the text falls back to the system font; nothing breaks. tools/fetch_fonts.py copies
+# the ten files into assets/fonts/, and from then on the pages use those (see fonts_block).
 FONTS_START, FONTS_END = "<!-- AE:FONTS start -->", "<!-- AE:FONTS end -->"
-_GF = "https://fonts.googleapis.com/css2?"
-FONTS_DISPLAY = _GF + "family=Baloo+2:wght@500;600;700;800&amp;family=DM+Serif+Display:ital@0;1&amp;display=swap"
-FONTS_BODY = _GF + "family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,400&amp;display=optional"
-FONTS_BLOCK = (f"{FONTS_START}\n"
-               '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
-               '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-               f'<link href="{FONTS_DISPLAY}" rel="stylesheet" media="print" onload="this.media=\'all\'">\n'
-               f'<link href="{FONTS_BODY}" rel="stylesheet" media="print" onload="this.media=\'all\'">\n'
-               f'<noscript><link href="{FONTS_DISPLAY}" rel="stylesheet"><link href="{FONTS_BODY}" rel="stylesheet"></noscript>\n'
-               f"{FONTS_END}\n")
+GSTATIC = "https://fonts.gstatic.com/s/"
+FONT_DIR = os.path.join(SITE, "assets", "fonts")
+_U_LATIN = ("U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,"
+            "U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD")
+_U_LATIN_EXT = ("U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,"
+                "U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF")
+# (family, style, weight range, latin file, latin-ext file, preload)
+FONT_FACES = [
+    ("DM Serif Display", "normal", "400", "dmserifdisplay/v17/-nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2",
+     "dmserifdisplay/v17/-nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0vrx52jJ3Q.woff2", True),
+    ("DM Serif Display", "italic", "400", "dmserifdisplay/v17/-nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2",
+     "dmserifdisplay/v17/-nFhOHM81r4j6k0gjAW3mujVU2B2G_VB3vD2xWr53BJl.woff2", True),
+    ("Baloo 2", "normal", "500 800", "baloo2/v23/wXKrE3kTposypRyd51jcAM4olXc.woff2",
+     "baloo2/v23/wXKrE3kTposypRyd51bcAM4olXcLtA.woff2", True),
+    ("DM Sans", "normal", "400 900", "dmsans/v17/rP2Hp2ywxg089UriCZOIHTWEBlw.woff2",
+     "dmsans/v17/rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2", False),
+    ("DM Sans", "italic", "400", "dmsans/v17/rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58UfivUw.woff2",
+     "dmsans/v17/rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKK58UfivUw4aw.woff2", False),
+]
+def font_local_name(remote):
+    """dmsans/v17/rP2H….woff2 -> dmsans-v17-rP2H….woff2 (one flat folder under assets/fonts/)."""
+    return remote.replace("/", "-")
+
+def fonts_block():
+    """Google's copies by default; the site's own copies once tools/fetch_fonts.py has put all
+    ten files in assets/fonts/ (same connection as the page, so no second handshake)."""
+    local = all(os.path.exists(os.path.join(FONT_DIR, font_local_name(f)))
+                for fam, st, w, a, b, pre in FONT_FACES for f in (a, b))
+    url = (lambda f: "/assets/fonts/" + font_local_name(f)) if local else (lambda f: GSTATIC + f)
+    face = lambda fam, style, weight, f, rng: (
+        f"@font-face{{font-family:'{fam}';font-style:{style};font-weight:{weight};font-display:optional;"
+        f"src:url({url(f)}) format('woff2');unicode-range:{rng}}}")
+    return (f"{FONTS_START}\n"
+            + ("" if local else '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n')
+            + "".join(f'<link rel="preload" as="font" type="font/woff2" crossorigin href="{url(f)}">\n'
+                      for fam, st, w, f, fx, pre in FONT_FACES if pre)
+            + "<style>" + "".join(face(fam, st, w, f, _U_LATIN) + face(fam, st, w, fx, _U_LATIN_EXT)
+                                  for fam, st, w, f, fx, pre in FONT_FACES) + "</style>\n"
+            + f"{FONTS_END}\n")
+FONTS_BLOCK = fonts_block()
 OLD_FONTS_RE = re.compile(r'(?:<noscript>\s*)?<link\b[^>]*\bhref="https://fonts\.(?:googleapis|gstatic)\.com[^"]*"[^>]*>(?:\s*</noscript>)?\n?')
 
-def crit_block(ver, crit):
-    href = f"/assets/styles.css?v={ver}"
-    return (f"{CRIT_START}\n<style id=\"crit\">{crit}</style>\n"
-            f'<link rel="preload" as="style" href="{href}" '
-            "onload=\"this.onload=null;this.rel='stylesheet'\">"
-            f'<noscript><link rel="stylesheet" href="{href}"></noscript>\n{CRIT_END}\n')
+def crit_block(ver, crit=""):
+    """The stylesheet, loaded the plain way. Until 2026-10 the top of styles.css was inlined
+    in every page and the file itself loaded late; that painted a moment sooner, but the
+    inlined part did not cover article text, tables or download boxes, so those were re-laid
+    when the full file arrived (0.03-0.05 layout shift on a slow phone, hidden only because the
+    page content used to start invisible). One 13 KB request on the connection that is already
+    open, and the page is drawn once."""
+    return f'{CRIT_START}\n<link rel="stylesheet" href="/assets/styles.css?v={ver}">\n{CRIT_END}\n'
 
 META_PIXEL_ID = "1023907773471013"
 
@@ -293,7 +364,7 @@ def chrome_block(active_key):
         '<button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" '
         'aria-controls="drawer"><span></span><span></span><span></span></button>'
         "</div></header>\n"
-        f'<div class="drawer" id="drawer">{nav_links(active_key, True)}</div>\n'
+        f'<nav class="drawer" id="drawer" aria-label="行動版選單">{nav_links(active_key, True)}</nav>\n'
         f"{CHROME_END}\n"
     )
 
@@ -320,7 +391,8 @@ def footer_block():
         '<a href="/contact/">聯絡與交通</a></div>'
         f'<div class="foot-col"><p class="foot-h">聯絡</p><a href="tel:{tel}">電話 0928-067-772</a>'
         f'<a href="{LINE}" target="_blank" rel="noopener">LINE 線上預約</a>'
-        f'<a href="{MAPS}" target="_blank" rel="noopener">Google 地圖位置</a></div>'
+        f'<a href="{MAPS}" target="_blank" rel="noopener">Google 地圖位置</a>'
+        f'<a href="{FACEBOOK}" target="_blank" rel="noopener">Facebook 粉絲專頁</a></div>'
         '</nav></div>'
         '<div class="foot-bottom"><span>© 2026 American English 埃森美語</span>'
         '<span>私立埃森美語文理短期補習班　｜　新北市政府立案 社補教社字第115026號　｜　統一編號 61476523</span>'
@@ -442,6 +514,9 @@ def published_date(rel, today):
     return _PUBLISHED[rel]
 
 PERSON_REF = {"@type": "Person", "@id": PERSON_ID, "name": "Christopher", "url": ORIGIN + TEACHER}
+WEBSITE_ID = ORIGIN + "/#website"
+# list pages: a set of links to other pages, not an article of their own
+HUB_PAGES = {"english-names/index.html", "english-vocabulary-by-topic/index.html"}
 
 _FULL_ORG = None
 def full_org():
@@ -483,7 +558,7 @@ def _types(node):
 
 DATED_TYPES = {"Quiz", "CollectionPage", "WebApplication", "WebPage", "LearningResource"}
 
-def normalize_ld(html, rel, canon, headline, desc, image, published, modified, has_byline):
+def normalize_ld(html, rel, canon, headline, desc, image, published, modified, has_byline, seo_title="", has_faq=False):
     """One consistent graph out of the hand-written JSON-LD: the same Organization node on
     every page, one author that matches the visible credit, dates that follow the page, and
     no Article block describing a different URL (nine pages were shipping the BlogPosting
@@ -498,6 +573,8 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified, h
                 if isinstance(x, dict) and "@id" not in x and (_types(x) & {"Organization", "EducationalOrganization"}) \
                    and re.search("埃森|American English", str(x.get("name", ""))):
                     v[k] = {"@id": ORG_ID}; ch = True
+                elif isinstance(x, dict) and "@id" not in x and "WebSite" in _types(x):
+                    v[k] = {"@id": WEBSITE_ID}; ch = True        # an inline copy of the site node
                 else:
                     ch = refs(x) or ch
         elif isinstance(v, list):
@@ -564,8 +641,21 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified, h
                 node["dateModified"] = mod; changed = True
             if "@id" not in node:
                 node["@id"] = canon + "#article"; changed = True
-            if image and not node.get("image"):
+            if image and (not node.get("image") or (isinstance(node.get("image"), str)
+                          and node["image"].endswith((OG_DEFAULT, LOGO)) and node["image"] != image)):
                 node["image"] = image; changed = True
+            # the headline is the title a reader sees (the <h1>); the search title, when it is
+            # worded differently, is kept as alternativeHeadline. 46 of 139 article nodes carried
+            # the search title as headline and so disagreed with the page.
+            if headline and node.get("headline") != headline[:110]:
+                node["headline"] = headline[:110]; changed = True
+            alt = seo_title if seo_title and seo_title != headline[:110] else None
+            if node.get("alternativeHeadline") != alt:
+                if alt: node["alternativeHeadline"] = alt
+                else: node.pop("alternativeHeadline", None)
+                changed = True
+            if rel in HUB_PAGES and node.get("@type") == "Article":
+                node["@type"] = "CollectionPage"; node.setdefault("name", headline[:110]); changed = True
         elif ts & DATED_TYPES:
             pub = node.get("datePublished") or published
             mod = max(modified, pub[:10])
@@ -578,6 +668,23 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified, h
         au = node.get("author")
         if isinstance(au, dict) and (au.get("name") == "Christopher" or au.get("@id") in (PERSON_ID, ORG_ID)) and au != author:
             node["author"] = dict(author); changed = True
+        # every page-level node says who made it, who publishes it and which site it belongs to
+        # (the practice hubs, the calculators and all WebPage nodes had no author)
+        if ts & (ARTICLE_TYPES | DATED_TYPES) and not article_for_other_page(node):
+            for k, v in (("author", dict(author)), ("publisher", {"@id": ORG_ID}), ("isPartOf", {"@id": WEBSITE_ID}),
+                         ("inLanguage", "zh-Hant-TW")):
+                if k not in node:
+                    node[k] = v; changed = True
+            if ts & {"WebPage", "CollectionPage"}:
+                if "@id" not in node:
+                    node["@id"] = canon + "#webpage"; changed = True
+                pi = node.get("primaryImageOfPage")
+                if isinstance(pi, str) or (pi is None and image):
+                    node["primaryImageOfPage"] = {"@type": "ImageObject", "url": pi or image}; changed = True
+            if has_faq and ts & (ARTICLE_TYPES | {"WebPage", "CollectionPage"}) and "hasPart" not in node:
+                node["hasPart"] = {"@id": canon + "#faq"}; changed = True
+            elif not has_faq and node.get("hasPart") == {"@id": canon + "#faq"}:
+                del node["hasPart"]; changed = True
         # the exam pack is a download: tiers told apart by sku, no shipping block
         if "Product" in ts:
             offers = node.get("offers")
@@ -606,6 +713,83 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified, h
             tail = "\n" if m.group(0).endswith("\n") else ""
             html = html[:m.start()] + f'<script type="application/ld+json">{jd(d)}</script>{tail}' + html[m.end():]
     return html, found
+
+# ---- heading outline ---------------------------------------------------------------------
+# A heading that skips a level (an <h4> card title straight under an <h2>, the task box under
+# the <h1>) reads as a broken outline to a screen reader and fails the heading-order check on
+# 42 pages. The tag and its styling stay; the level announced is corrected to "one deeper than
+# the heading before it". Recomputed on every build from the tags alone, so it is idempotent.
+HEAD_TAG_RE = re.compile(r"<h([1-6])\b([^>]*)>")
+ARIA_LVL_RE = re.compile(r'\s*role="heading" aria-level="\d"')
+def heading_levels(html):
+    parts = re.split(r"(<script\b.*?</script>|<template\b.*?</template>|<!--.*?-->)", html, flags=re.S)
+    path = {}                                  # tag level -> level announced, for the open branch
+    def fix(m):
+        lvl, attrs = int(m.group(1)), ARIA_LVL_RE.sub("", m.group(2))
+        for k in [k for k in path if k >= lvl]:      # a heading closes every deeper or equal one
+            del path[k]
+        above = max(path) if path else 0
+        eff = path[above] + 1 if above else lvl      # one deeper than its parent; same tag = same level
+        path[lvl] = eff
+        return f'<h{lvl} role="heading" aria-level="{eff}"{attrs}>' if eff != lvl else f"<h{lvl}{attrs}>"
+    for i in range(0, len(parts), 2):
+        parts[i] = HEAD_TAG_RE.sub(fix, parts[i])
+    return "".join(parts)
+
+# ---- readable text colours (WCAG AA) -------------------------------------------------------
+# The page generators write their own <style> blocks, and they colour small labels with the
+# bright brand hues (white on LINE green is 2.3:1, sky blue on white 2.4:1) and with light
+# greys (2.6-3.7:1). AA asks 4.5:1. Editing twenty generators (four of which no longer run)
+# would drift; this pass runs on every page after whatever generator wrote it, and changes
+# TEXT colour only: fills, borders and pictures keep the brand colours.
+#   blue / green text          -> the darker inks defined in styles.css (:root)
+#   text in a card's own hue   -> color-mix(): the same hue, 45% darker
+#   light grey text            -> var(--muted), except in rules for dark panels
+#   white text on a bright fill-> navy (the yellow and pastel buttons already did this)
+# Idempotent: nothing it writes matches again. <style id="crit"> is styles.css itself and is
+# left alone; so are JSON-LD and scripts.
+INK_GREYS = r"#94a3b8|#8a94a3|#8b9bb0|#7c8797|#7b8794|#a3b0c2|#6b7a8d|#9aa5b4|#9ca3af|#a0aec0|#8a93a8"
+INK_FILLS = r"var\(--(?:blue|green|coral|purple|yellow|c|gc|pc)\)|#1cb0f6|#06c755|#ce82ff|#f0997b|#ffc828|#ec6f9e"
+# literal colours used as text, and the darker shade of the same hue that reaches 4.5:1 on
+# white and on the pale tint it usually sits on
+INK_HEX = {"#1cb0f6": "var(--blue-ink)", "#1391cc": "var(--blue-ink)", "#06c755": "var(--green-ink)",
+           "#04a046": "var(--green-ink)", "#049b48": "var(--green-ink)", "#16a34a": "#12873d", "#2bac5b": "#207f43",
+           "#c96a48": "#a8502f", "#d9704c": "#a8502f", "#d9534f": "#c9302c", "#e5484d": "#d3262c",
+           "#e65100": "#b13e00", "#827717": "#6f6612", "#2e7d32": "#286e2c", "#c62828": "#b42424",
+           "#1565c0": "#135db1", "#418944": "#3a7a3d", "#b8860b": "#8e6708", "#a94fe0": "#9238cf",
+           "#ce82ff": "#8a3fc9", "#f0997b": "#a8502f", "#ec6f9e": "#b83a6f", "#4c6fe7": "#4868e0",
+           "#ffc828": "#8e6900", "#ffb000": "#8e6900", "#f5a000": "#8e6900", "#e0a800": "#8e6900"}
+_COLOR = r"(?<![-\w])color:\s*"
+def _ink_decls(body, dark=False, inline=False):
+    b = re.sub(_COLOR + r"var\(--blue(?:-dk)?(?:,\s*#1cb0f6)?\)", "color:var(--blue-ink)", body, flags=re.I)
+    b = re.sub(_COLOR + r"var\(--green(?:-dk)?(?:,\s*#06c755)?\)", "color:var(--green-ink)", b, flags=re.I)
+    b = re.sub(_COLOR + r"var\(--pd,\s*var\(--pc\)\)", "color:color-mix(in srgb,var(--pc) 50%,#000)", b)
+    filled = re.search(r"background(?:-color)?:\s*(?:" + INK_FILLS + ")", b, re.I)
+    if not dark:
+        # (yellow is left alone: it is used for stars and for figures on the navy panels; and an
+        #  inline style gives no selector to tell a dark panel by, so theme hues stay as written there)
+        if not inline:
+            b = re.sub(_COLOR + r"var\(--(c|gc|pc|w|purple|coral)\)", r"color:color-mix(in srgb,var(--\1) 50%,#000)", b)
+        b = re.sub(_COLOR + "(?:" + INK_GREYS + r")\b", "color:var(--muted)", b, flags=re.I)
+        b = re.sub(_COLOR + r"(#[0-9a-f]{6})\b", lambda m: "color:" + INK_HEX.get(m.group(1).lower(), m.group(1)), b, flags=re.I)
+    if filled:
+        b = re.sub(_COLOR + r"(?:#fff(?:fff)?|white)\b", "color:var(--navy)", b, flags=re.I)
+    return b
+
+def ink_pass(html):
+    def css(m):
+        if 'id="crit"' in m.group(1):
+            return m.group(0)
+        def rule(r):
+            dark = bool(re.search(r"navy|dark|footer|\.bg-n|\.site-f|stage|glyph|night", r.group(1)))
+            return r.group(1) + "{" + _ink_decls(r.group(2), dark) + "}"
+        return m.group(1) + re.sub(r"([^{}]+)\{([^{}]*)\}", rule, m.group(2)) + m.group(3)
+    html = re.sub(r"(<style\b[^>]*>)(.*?)(</style>)", css, html, flags=re.S)
+    # inline style="" attributes, outside <script> (quiz data and JSON-LD carry no CSS)
+    parts = re.split(r"(<script\b.*?</script>)", html, flags=re.S)
+    for i in range(0, len(parts), 2):
+        parts[i] = re.sub(r'(\sstyle=")([^"]*)(")', lambda a: a.group(1) + _ink_decls(a.group(2), inline=True) + a.group(3), parts[i])
+    return "".join(parts)
 
 H1_RE = re.compile(r"(<h1\b[^>]*>)(.*?)(</h1>)", re.S)
 def h1_unwrap(html):
@@ -637,6 +821,8 @@ H1_WBR = {
     "english-dates-guide": [("11 號、13 日、", "11&nbsp;號、13&nbsp;日、")],      # keep the number with its counter
     "gept": [(" 頁練習全部免費", "&nbsp;頁練習全部免費")],                           # 「39｜頁」 split across two lines
 }
+for _n in range(1, 8):                                                     # 「閱讀與英｜語運用」 split a word
+    H1_WBR[f"fce-ruoe-practice-part{_n}"] = [("FCE 閱讀與英語運用 Part", "FCE 閱讀與<wbr>英語運用 Part")]
 for _lv in ("starters", "movers", "flyers", "ket", "pet", "fce"):          # 「X 題庫：免費線上模擬試題 N 頁」
     H1_WBR[_lv + "-practice-tests"] = [("免費線上模擬試題", "免費線上<wbr>模擬試題")]
 def _phrase_safe(part):
@@ -734,8 +920,8 @@ def strip_block(html, start, end):
 ORG_LD = {"@context": "https://schema.org",
           "@type": ["EducationalOrganization", "LocalBusiness"],
           "@id": ORIGIN + "/#organization",
-          "name": "American English 埃森美語",
-          "alternateName": "埃森美語",
+          "name": "埃森美語 American English",
+          "alternateName": ["埃森美語", "American English 埃森美語", "American English"],
           "url": ORIGIN,
           "logo": ORIGIN + LOGO,
           "telephone": "+886-928-067-772",
@@ -799,10 +985,19 @@ def process_page(path, css_ver="", crit=""):
         image = mm.group(1) if mm else ORIGIN + OG_DEFAULT
         local = image.replace(ORIGIN, "") if image.startswith(ORIGIN) else None
         # a share image that is not there, or one copied from the article the page was built from
-        if mm and ((local and not os.path.exists(os.path.join(SITE, local.lstrip("/"))))
+        # ...or anything else, when the page has a headline card of its own: build_share_cards.py
+        # only makes one for a page whose share picture was the brand card or the bare logo
+        # (to give such a page a real photo instead, delete its card from assets/img/share/)
+        card = share_card(rel)
+        generic = bool(card) and image != urljoin(ORIGIN, card)
+        if mm and (generic or (local and not os.path.exists(os.path.join(SITE, local.lstrip("/"))))
                    or any(k in image and not (own and rel.startswith(own)) for k, own in COPIED_IMG.items())):
-            better = urljoin(ORIGIN, share_image(rel, soup))
-            html = html.replace(image, better)
+            better = urljoin(ORIGIN, card if generic else share_image(rel, soup))
+            if generic:        # only the share tags: the logo address also sits in the footer and the markup
+                html = re.sub(r'(<meta[^>]*(?:og:image|twitter:image)"[^>]*content=")' + re.escape(image) + '"',
+                              lambda m: m.group(1) + better + '"', html)
+            else:
+                html = html.replace(image, better)
             html = re.sub(r'<meta property="og:image:(?:width|height|alt)"[^>]*>\n?', "", html)
             image = better
     else:
@@ -811,7 +1006,9 @@ def process_page(path, css_ver="", crit=""):
     byline = BYLINE_RE.search(html) if rel not in SELF_CONTAINED else None
     has_byline = bool(byline)
 
-    html, found = normalize_ld(html, rel, canon, headline, desc, image, published, modified, has_byline)
+    seo_title = BRAND_RE.sub("", title).strip()
+    html, found = normalize_ld(html, rel, canon, headline, desc, image, published, modified, has_byline,
+                               seo_title=seo_title, has_faq=bool(fq))
 
     # --- build SEO-LD head block ---
     seo = [SEO_START]
@@ -826,32 +1023,52 @@ def process_page(path, css_ver="", crit=""):
     if 'name="twitter:image"' not in html:
         seo.append(f'<meta name="twitter:image" content="{image}">')
     if bc: seo.append(f'<script type="application/ld+json">{jd(bc)}</script>')
-    if fq: seo.append(f'<script type="application/ld+json">{jd(fq)}</script>')
+    if fq:
+        fq = dict({"@context": fq.get("@context"), "@type": "FAQPage", "@id": canon + "#faq", "url": canon,
+                   "inLanguage": "zh-Hant-TW", "isPartOf": {"@id": WEBSITE_ID}},
+                  **{k: v for k, v in fq.items() if k not in ("@context", "@type")})
+        seo.append(f'<script type="application/ld+json">{jd(fq)}</script>')
+    # every page-level node says isPartOf the site; the WebSite node lived on the homepage only,
+    # so that reference pointed at nothing on 289 pages
+    if not re.search(r'"@type":\s*"WebSite",\s*"@id":\s*"' + re.escape(WEBSITE_ID), html):
+        seo.append('<script type="application/ld+json">' + jd({
+            "@context": "https://schema.org", "@type": "WebSite", "@id": WEBSITE_ID, "url": ORIGIN + "/",
+            "name": "American English 埃森美語", "alternateName": ["埃森美語", "埃森美語 American English"],
+            "inLanguage": "zh-Hant-TW", "publisher": {"@id": ORG_ID}}) + "</script>")
     # org node for pages that define none of their own
     if '"@id":"' + ORG_ID + '"' not in html.replace('{"@id":"' + ORG_ID + '"}', ""):
         seo.append(f'<script type="application/ld+json">{jd(dict({"@context": "https://schema.org"}, **org_node(rel)))}</script>')
     # a page-level node for content pages that carry none of their own: an Article where the
     # page has a byline, a plain WebPage (dated, published by the school) where it does not
-    if article_page and not (found & OWN_TYPES):
+    # (a page with a byline but only a Quiz or WebPage node of its own gets the Article too:
+    #  the nine grammar and vocabulary guides showed an author and had no article node)
+    if article_page and ((has_byline and not (found & ARTICLE_TYPES)) or not (found & OWN_TYPES)):
+        part = {"hasPart": {"@id": canon + "#faq"}} if fq else {}
         if has_byline:
             node = {"@context": "https://schema.org", "@type": "Article", "@id": canon + "#article",
                     "headline": headline[:110], "description": desc, "inLanguage": "zh-Hant-TW",
                     "mainEntityOfPage": canon, "image": image, "datePublished": published, "dateModified": modified,
-                    "author": dict(PERSON_REF), "publisher": {"@id": ORG_ID}}
+                    "author": dict(PERSON_REF), "publisher": {"@id": ORG_ID}, "isPartOf": {"@id": WEBSITE_ID}}
+            if seo_title and seo_title != headline[:110]:
+                node["alternativeHeadline"] = seo_title
         else:
             node = {"@context": "https://schema.org", "@type": "WebPage", "@id": canon + "#webpage", "url": canon,
                     "name": headline[:110], "description": desc, "inLanguage": "zh-Hant-TW",
-                    "primaryImageOfPage": image, "datePublished": published, "dateModified": modified,
-                    "publisher": {"@id": ORG_ID}}
+                    "primaryImageOfPage": {"@type": "ImageObject", "url": image},
+                    "datePublished": published, "dateModified": modified,
+                    "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}, "isPartOf": {"@id": WEBSITE_ID}}
+        node.update(part)
         seo.append('<script type="application/ld+json">' + jd(node) + "</script>")
     if rel == TEACHER.strip("/") + "/index.html":
         seo.append('<script type="application/ld+json">' + jd({
-            "@context": "https://schema.org", "@type": "ProfilePage", "url": canon,
+            "@context": "https://schema.org", "@type": "ProfilePage", "@id": canon + "#profile", "url": canon,
+            "inLanguage": "zh-Hant-TW", "isPartOf": {"@id": WEBSITE_ID},
             "dateModified": modified, "mainEntity": {"@id": PERSON_ID}}) + "</script>")
     if rel == "contact/index.html":
         seo.append('<script type="application/ld+json">' + jd({
-            "@context": "https://schema.org", "@type": "ContactPage", "url": canon,
-            "name": "聯絡與交通", "mainEntity": {"@id": ORG_ID}}) + "</script>")
+            "@context": "https://schema.org", "@type": "ContactPage", "@id": canon + "#contact", "url": canon,
+            "name": "聯絡與交通", "inLanguage": "zh-Hant-TW", "isPartOf": {"@id": WEBSITE_ID},
+            "mainEntity": {"@id": ORG_ID}}) + "</script>")
     seo.append(SEO_END)
     seo_block = "\n".join(seo) + "\n"
 
@@ -862,7 +1079,7 @@ def process_page(path, css_ver="", crit=""):
     # The critical block must land EARLY in <head> — ahead of any page-specific <style> —
     # so per-page overrides keep winning the cascade (certified-american-teacher-banqiao
     # tunes .compare there). Anchor it after the viewport meta, else right after <head>.
-    if crit and rel not in SELF_CONTAINED:
+    if css_ver and rel not in SELF_CONTAINED:
         html = PLAIN_CSS_RE.sub("", html)
         html = OLD_FONTS_RE.sub("", html)             # the page's own font tags, if it had any
         block = crit_block(css_ver, crit) + FONTS_BLOCK
@@ -894,11 +1111,18 @@ def process_page(path, css_ver="", crit=""):
         end = html.find("</div>", mb)
         if end != -1:
             end += len("</div>")
-            html = html[:end] + NEXT_LINE + html[end:]
+            html = html[:end] + next_line(pdir) + html[end:]
     elif mb == -1 and pdir in NEXT_MID:
         html = next_mid(html, NEXT_MID[pdir])
+    elif mb == -1 and pdir in local_pages():
+        html = next_mid(html, "local")
     if rel in POPULAR_ON:
         at = html.rfind('<section class="section bg-blue">') if rel != "404.html" else html.rfind("</main>")
+        if rel == "blog/index.html":           # right under the page header, not below 140 article cards
+            hero = html.find('<section class="page-hero')
+            end = html.find("</section>", hero) if hero != -1 else -1
+            if end != -1:
+                at = end + len("</section>")
         if at != -1:
             html = html[:at] + popular_block() + html[at:]
     if rel not in SELF_CONTAINED:
@@ -914,17 +1138,14 @@ def process_page(path, css_ver="", crit=""):
             at = html.rfind("</main>")
             if at != -1:
                 html = html[:at] + BYL_MORE + html[at:]
-    # heading order: when the first heading after the H1 is an h3/h4 (a signpost card, the
-    # task-format box), tell assistive tech it sits at level 2 — the tag and its styling stay
-    m1 = re.search(r"</h1>", html)
-    if m1:
-        mh = re.search(r"<h([2-4])(\s[^>]*)?>", html[m1.end():])
-        if mh and mh.group(1) != "2" and "aria-level" not in (mh.group(2) or ""):
-            at = m1.end() + mh.start() + len("<h" + mh.group(1))
-            html = html[:at] + ARIA_H2 + html[at:]
+    html = heading_levels(html)
 
     # footer and "last updated" line: after </main>, else ahead of the closing scripts
     if rel not in SELF_CONTAINED:
+        if f'<a href="{FACEBOOK}"' not in html:   # the 27 hand-written footers get the same Facebook link
+            html = re.sub(r'(<footer class="site-footer".*?<a href="' + re.escape(MAPS) + r'"[^>]*>Google 地圖位置</a>)',
+                          lambda m: m.group(1) + f'<a href="{FACEBOOK}" target="_blank" rel="noopener">Facebook 粉絲專頁</a>',
+                          html, count=1, flags=re.S)
         if article_page and not has_byline and not own_date:      # the strip closes <main>
             at = html.rfind("</main>")
             if at != -1:
@@ -946,6 +1167,9 @@ def process_page(path, css_ver="", crit=""):
                     at += len("</main>\n")
             if at != -1:
                 html = html[:at] + tail + html[at:]
+
+    if rel not in SELF_CONTAINED:
+        html = ink_pass(html)
 
     # Only write when this build actually changed the file. Writing unconditionally
     # touched every page's mtime, so rebuild_sitemap() stamped the SAME <lastmod> on
@@ -1057,9 +1281,14 @@ def page_date(rel, html, today):
         save_ledger(_LEDGER)
     return _LEDGER[key]["date"]
 
-def share_image(rel, soup):
+def share_card(rel):
+    """The page's own headline card (tools/build_share_cards.py), if one was made."""
+    name = (os.path.dirname(rel) or "home").replace("/", "--") + ".jpg"
+    return "/assets/img/share/" + name if os.path.exists(os.path.join(SITE, "assets", "img", "share", name)) else None
+
+def share_image(rel, soup, cards=True):
     """Share image for a page that declares none: its chart, else its first content
-    picture, else the brand card."""
+    picture, else its headline card, else the brand card."""
     rec = [r for r in chart_manifest().values() if r.get("page") == os.path.dirname(rel)]
     if rec:
         return rec[0]["png"]
@@ -1069,7 +1298,7 @@ def share_image(rel, soup):
         if src.startswith(("/assets/img/blog/", "/assets/img/charts/")) or \
            (src.startswith("/assets/img/") and str(im.get("width") or "0").isdigit() and int(im.get("width") or 0) >= 600):
             return src
-    return OG_DEFAULT
+    return (cards and share_card(rel)) or OG_DEFAULT
 
 def ledger_lastmod(ledger, rel, fpath, today, prior=None):
     """lastmod for rel; the ledger entry moves only when the authored content hash changes."""
@@ -1243,7 +1472,7 @@ if __name__ == "__main__":
     pages = sorted([os.path.join(d, f) for d, _, fs in os.walk(SITE) for f in fs if f.endswith(".html")])
     css_ver = css_fingerprint()
     crit = critical_css()
-    print(f"Processing {len(pages)} pages...  (styles.css v={css_ver}, critical inline {len(crit)}B)")
+    print(f"Processing {len(pages)} pages...  (styles.css v={css_ver})")
     for p in pages:
         rel, msg = process_page(p, css_ver, crit)
         print(f"  {rel:<52} {msg}")
@@ -1256,7 +1485,7 @@ if __name__ == "__main__":
     except Exception as e:             # the lint must never stop the page build itself
         print(f"pdf check skipped: {e}")
     print("Done. (app.js cache key = %s)" % _APPJS)
-    print(f"      critical CSS + deferred GA4 re-baked; styles.css cache key = {css_ver}")
+    print(f"      stylesheet link + deferred GA4 re-baked; styles.css cache key = {css_ver}")
     # build_all.sh runs with --strict: a snippet that will be cut off or a file that is not
     # there stops the build instead of scrolling past in the log
     if problems and "--strict" in sys.argv:

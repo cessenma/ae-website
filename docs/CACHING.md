@@ -86,6 +86,30 @@ TTL buys nothing anyway, leave the Cache Rule alone.
 `no-transform` alone (that would discard the deliberate `s-maxage`), and never drop
 `no-transform` (the JSD script returns immediately).
 
+## 2026-10-01: the automation had never run
+
+Every run of `cloudflare-purge.yml` from its first day (2026-08-07) to 2026-10-01 failed
+at "Wait for Hostinger to finish deploying" — 56 runs, 0 purges. The public record is the
+annotation on each run: *Origin never served the committed build within 15 minutes. Purge
+skipped*. Hostinger was not the problem (on 2026-10-01 the origin had the new build 16
+seconds after the push). The runner simply never saw the site: Cloudflare answers requests
+from datacentre addresses with **403**. The W3C validator, fetching from its own servers,
+gets the same 403. Meanwhile the edge kept the old home page for 18.5 hours
+(`age: 66708`, `cf-cache-status: HIT`).
+
+What changed:
+
+- The workflow now purges **whatever** the wait step sees, after at most five minutes. A
+  runner that is not allowed to read the site is no reason to skip the purge.
+- Each run leaves a public notice or warning saying which case it was.
+- `crawler-access-probe.yml` was invalid YAML (a here-document ended its `run:` block), so
+  the monthly probe had never run either. It is fixed and also runs when the file changes.
+
+Still open, in the Cloudflare dashboard (owner): find out **what** returns the 403
+(Security → Events, filter on action Block / Managed Challenge) and decide whether it is
+wanted. Verified search and AI crawlers are normally exempt from Bot Fight Mode, but link
+previews, validators and SEO tools are not.
+
 ## The actual fix — purge on deploy (automated)
 
 `.github/workflows/cloudflare-purge.yml` runs on every push to `main`:

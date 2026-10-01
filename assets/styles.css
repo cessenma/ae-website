@@ -6,6 +6,10 @@
   --navy:#1A2752;--blue:#1CB0F6;--blue-dk:#1391cc;--green:#06C755;--green-dk:#04a046;
   --yellow:#FFC828;--yellow-dk:#e0a800;--purple:#CE82FF;--purple-dk:#a94fe0;
   --coral:#F0997B;--light-blue:#DDF4FF;--text-body:#4b5563;
+  /* The brand blue and green are too light to READ as text, or to carry white text
+     (2.4:1 and 2.3:1; WCAG AA asks 4.5:1, or 3:1 for large type). The fills stay as they
+     are; text on them is navy, and blue or green TEXT uses these darker inks. */
+  --blue-ink:#066d9e;--blue-lg:#0889c6;--green-ink:#047733;--muted:#5b6b8a;
   --card-shadow:0 12px 40px rgba(26,39,82,.10);
   --header-h:64px;
 }
@@ -13,7 +17,7 @@
 html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px)}
 body{font-family:'DM Sans',-apple-system,'PingFang TC','Microsoft JhengHei',sans-serif;background:#fff;color:var(--navy);line-height:1.6;overflow-x:hidden}
 a{color:inherit}
-img{display:block;max-width:100%}
+img{display:block;max-width:100%;height:auto}   /* height:auto: an image narrowed by max-width must not keep the height written in its tag (the 1200-word list scan was stretched to 360x1170 on phones) */
 :focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}
 
 /* ── Typography ── */
@@ -22,11 +26,13 @@ h1{font-size:clamp(40px,6.4vw,66px)}
 h2{font-size:clamp(30px,4.6vw,48px)}
 h3{font-size:22px}
 .rounded{font-family:'Baloo 2',sans-serif;font-weight:800}
-em{font-style:italic;color:var(--blue)}
+em{font-style:italic;color:var(--blue-ink)}
+h1 em,h2 em{color:var(--blue-lg)}
+.bg-navy em,.bg-navy h1 em,.bg-navy h2 em{color:var(--blue)}
 .bg-navy h2,.bg-navy h3{color:#fff}
-p.body{font-size:clamp(15px,1.6vw,17px);line-height:1.8;color:var(--text-body)}
+p.body{font-size:clamp(16px,1.6vw,17px);line-height:1.8;color:var(--text-body)}
 .bg-navy p.body{color:rgba(255,255,255,.74)}
-.eyebrow{display:inline-block;font-family:'Baloo 2',sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--blue);background:rgba(28,176,246,.12);padding:7px 16px;border-radius:100px}
+.eyebrow{display:inline-block;font-family:'Baloo 2',sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--blue-ink);background:rgba(28,176,246,.12);padding:7px 16px;border-radius:100px}
 /* Eyebrow text is 12px on a tinted pill, so it needs a darkened ink to clear
    WCAG AA 4.5:1. The pill background keeps the brand tint; only the text darkens. */
 .eyebrow-green{color:#067033;background:rgba(6,199,85,.12)}
@@ -35,10 +41,10 @@ p.body{font-size:clamp(15px,1.6vw,17px);line-height:1.8;color:var(--text-body)}
 
 /* ── 3D Buttons ── */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'Baloo 2',sans-serif;font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.5px;padding:14px 30px;border-radius:16px;cursor:pointer;border:none;text-transform:uppercase;transition:transform .08s ease,box-shadow .08s ease,filter .15s;min-height:50px;position:relative;top:0}
-.btn-primary{background:var(--green);color:#fff;box-shadow:0 5px 0 var(--green-dk),0 10px 18px rgba(6,199,85,.32)}
-.btn-blue{background:var(--blue);color:#fff;box-shadow:0 5px 0 var(--blue-dk),0 10px 18px rgba(28,176,246,.32)}
+.btn-primary{background:var(--green);color:var(--navy);box-shadow:0 5px 0 var(--green-dk),0 10px 18px rgba(6,199,85,.32)}
+.btn-blue{background:var(--blue);color:var(--navy);box-shadow:0 5px 0 var(--blue-dk),0 10px 18px rgba(28,176,246,.32)}
 .btn-yellow{background:var(--yellow);color:var(--navy);box-shadow:0 5px 0 var(--yellow-dk),0 10px 18px rgba(255,200,40,.32)}
-.btn-coral{background:var(--coral);color:#fff;box-shadow:0 5px 0 #d97a5c,0 10px 18px rgba(240,153,123,.34)}
+.btn-coral{background:var(--coral);color:var(--navy);box-shadow:0 5px 0 #d97a5c,0 10px 18px rgba(240,153,123,.34)}
 /* buttons that match each picture's exact baked-in frame colour (navy text for contrast) */
 .btn-pf-blue{background:#a8d8f0;color:var(--navy);box-shadow:0 5px 0 #80bfe0,0 10px 18px rgba(168,216,240,.45)}
 .btn-pf-cream{background:#fff8f3;color:var(--navy);border:1px solid #efe4d8;box-shadow:0 5px 0 #e6dbd0,0 10px 18px rgba(26,39,82,.08)}
@@ -113,8 +119,9 @@ header.site-header.scrolled{box-shadow:0 4px 22px rgba(26,39,82,.09)}
 body.menu-open .hamburger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
 body.menu-open .hamburger span:nth-child(2){opacity:0}
 body.menu-open .hamburger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-.drawer{position:fixed;inset:var(--header-h) 0 0 0;z-index:140;background:rgba(255,255,255,.98);backdrop-filter:blur(8px);display:flex;flex-direction:column;gap:4px;padding:24px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
-body.menu-open .drawer{opacity:1;transform:none;pointer-events:auto}
+.drawer{position:fixed;inset:var(--header-h) 0 0 0;z-index:140;background:rgba(255,255,255,.98);backdrop-filter:blur(8px);display:flex;flex-direction:column;gap:4px;padding:24px;transform:translateY(-12px);opacity:0;pointer-events:none;visibility:hidden;transition:opacity .25s,transform .25s,visibility 0s .25s}
+/* closed = out of the tab order too (visibility), not just transparent */
+body.menu-open .drawer{opacity:1;transform:none;pointer-events:auto;visibility:visible;transition:opacity .25s,transform .25s}
 .drawer a:not(.btn){font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:700;color:var(--navy);text-decoration:none;padding:15px 8px;border-bottom:1px solid rgba(26,39,82,.07)}
 .drawer .btn{margin-top:18px}
 @media(max-width:1120px){.nav-links{gap:18px}}
@@ -147,7 +154,7 @@ body.menu-open .drawer{opacity:1;transform:none;pointer-events:auto}
 @keyframes wiggle{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
 .count-orb{position:absolute;left:6%;top:6%;background:#fff;border-radius:20px;padding:10px 16px;box-shadow:var(--card-shadow);font-family:'Baloo 2';font-weight:800;display:flex;align-items:center;gap:9px;font-size:15px;z-index:4;animation:pop-bob 4s ease-in-out infinite}
 .count-orb.b2{left:auto;right:2%;top:auto;bottom:14%;animation-delay:1.5s}
-.count-orb .big{font-family:'DM Serif Display';font-size:26px;color:var(--blue)}
+.count-orb .big{font-family:'DM Serif Display';font-size:26px;color:var(--blue-lg)}
 @keyframes pop-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 
 /* ── Interior page hero ── */
@@ -202,6 +209,15 @@ h1,h2{text-wrap:balance}
    between phone and tablet-portrait widths the stacked hero photo is dropped as on phones */
 @media(max-width:600px){.breadcrumb{margin-bottom:0}.breadcrumb a{padding:11px 4px}}
 @media(max-width:767px){.page-hero .post-hero{display:none}}
+
+/* Indigo is the one theme hue too dark for navy text: its number chips stay white, on a
+   fill one shade deeper (white on #4C6FE7 is 4.43:1, on #4868e0 it is 4.8:1). */
+[style*="--c:#4C6FE7" i]{--c:#4868e0!important}
+body [style*="--c:#4C6FE7" i] .vnum,body [style*="--c:#4C6FE7" i] .gnum,body [style*="--c:#4C6FE7" i] .n,body .n[style*="--c:#4C6FE7" i]{color:#fff}
+
+/* practice pictures: keep the shape when both the width and the height are capped
+   (two header pictures were squeezed to 290x230 from 360x360) */
+.yimg img{width:auto;height:auto;object-fit:contain}
 
 /* ── Marquee ── */
 .marquee{background:var(--navy);padding:16px 0;overflow:hidden;position:relative}
@@ -267,7 +283,7 @@ a.card:hover .ico{transform:scale(1.1) rotate(-6deg)}
 @media(max-width:860px){.course-grid{grid-template-columns:1fr}}
 .course-list{list-style:none;display:flex;flex-direction:column;gap:14px}
 .course-list li{display:flex;gap:13px;align-items:flex-start;font-size:16px;color:var(--text-body)}
-.course-list .ck{flex:0 0 26px;width:26px;height:26px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;margin-top:1px;box-shadow:0 3px 0 var(--green-dk)}
+.course-list .ck{flex:0 0 26px;width:26px;height:26px;border-radius:50%;background:var(--green);color:var(--navy);display:flex;align-items:center;justify-content:center;margin-top:1px;box-shadow:0 3px 0 var(--green-dk)}
 .course-list .ck svg{width:14px;height:14px;stroke-width:3.5}
 .goal-card{background:linear-gradient(160deg,var(--navy),#243465);color:#fff;border-radius:28px;padding:34px;box-shadow:0 22px 50px rgba(26,39,82,.3);transition:transform .3s}
 .goal-card:hover{transform:translateY(-6px)}
@@ -282,8 +298,8 @@ a.card:hover .ico{transform:scale(1.1) rotate(-6deg)}
 .stage-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
 .stage-tab{display:inline-flex;align-items:center;gap:8px;font-family:'Baloo 2';font-weight:700;font-size:15px;color:#475569;background:#fff;border:2px solid #e6ebf2;border-radius:100px;padding:11px 20px;cursor:pointer;box-shadow:0 3px 0 #eef2f6;transition:color .2s,background .2s,border-color .2s;min-height:46px}
 .stage-tab[aria-selected="true"]{color:#fff;border-color:transparent}
-.stage-tab[aria-selected="true"][data-c="g"]{background:#16a34a;box-shadow:0 4px 0 #15803d}
-.stage-tab[aria-selected="true"][data-c="o"]{background:#ea8c2e;box-shadow:0 4px 0 #c2701c}
+.stage-tab[aria-selected="true"][data-c="g"]{background:#15803d;box-shadow:0 4px 0 #116530}
+.stage-tab[aria-selected="true"][data-c="o"]{background:#b45309;box-shadow:0 4px 0 #8f4207}
 .stage-tab[aria-selected="true"][data-c="p"]{background:#7c3aed;box-shadow:0 4px 0 #6d28d9}
 .stage-tab[aria-selected="true"][data-c="b"]{background:#2563eb;box-shadow:0 4px 0 #1d4ed8}
 .stage-tab:active{transform:translateY(2px)}
@@ -291,7 +307,7 @@ a.card:hover .ico{transform:scale(1.1) rotate(-6deg)}
 .stage-panel[hidden]{display:none}
 .stage-panel .emoji{font-size:38px;line-height:1}
 .stage-panel h3{font-family:'Baloo 2';font-weight:800;font-size:clamp(22px,3vw,28px);color:var(--c);margin:16px 0 4px}
-.stage-panel .age{color:var(--c);font-family:'Baloo 2';font-weight:700;font-size:14px;margin-bottom:22px;opacity:.9}
+.stage-panel .age{color:var(--c);font-family:'Baloo 2';font-weight:700;font-size:14px;margin-bottom:22px}
 .stage-info{background:#fff;border-radius:18px;padding:22px;margin-bottom:14px;box-shadow:0 4px 16px rgba(26,39,82,.05)}
 .stage-info .lbl{font-family:'Baloo 2';font-weight:700;font-size:14px;color:var(--c);margin-bottom:7px}
 .stage-info p{color:#374151;line-height:1.8;font-size:15px;margin:0}
@@ -317,7 +333,7 @@ a.card:hover .ico{transform:scale(1.1) rotate(-6deg)}
 .slide .stars{color:var(--yellow);font-size:22px;letter-spacing:3px;margin-bottom:16px}
 .slide blockquote{font-family:'DM Serif Display';font-size:clamp(17px,2.1vw,21px);line-height:1.7;color:var(--navy);margin-bottom:22px}
 .slide .who{font-family:'Baloo 2';font-weight:700;color:var(--navy)}
-.slide .who small{display:block;font-family:'DM Sans';font-weight:400;color:#94a3b8;margin-top:3px;font-size:13px}
+.slide .who small{display:block;font-family:'DM Sans';font-weight:400;color:var(--muted);margin-top:3px;font-size:13px}
 .slide .tag{display:inline-block;font-family:'Baloo 2';font-size:12px;font-weight:700;padding:5px 13px;border-radius:100px;margin-bottom:16px}
 .car-nav{display:flex;justify-content:center;align-items:center;gap:18px;margin-top:26px}
 .car-btn{width:50px;height:50px;border-radius:50%;border:2px solid rgba(26,39,82,.12);background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 0 rgba(26,39,82,.08);transition:transform .12s,background .2s}
@@ -334,7 +350,7 @@ a.card:hover .ico{transform:scale(1.1) rotate(-6deg)}
 .tcard .stars{color:var(--yellow);letter-spacing:2px;margin-bottom:12px}
 .tcard p{color:#374151;line-height:1.85;margin-bottom:18px;font-size:15px}
 .tcard .who{font-family:'Baloo 2';font-weight:700;display:flex;align-items:center;gap:10px}
-.tcard .who small{font-family:'DM Sans';font-weight:400;color:#94a3b8;font-size:12.5px}
+.tcard .who small{font-family:'DM Sans';font-weight:400;color:var(--muted);font-size:12.5px}
 .tcard .tag{margin-left:auto;font-family:'Baloo 2';font-size:12px;font-weight:700;padding:4px 11px;border-radius:100px}
 
 /* ── FAQ ── */
@@ -352,13 +368,13 @@ a.card:hover .ico{transform:scale(1.1) rotate(-6deg)}
 .faq-q .pm::after{width:3px;height:14px;transition:transform .3s,opacity .3s}
 .faq-item.open .pm::after{opacity:0}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
-.faq-a p{padding:0 22px 20px;color:var(--text-body);font-size:15px;line-height:1.75}
+.faq-a p{padding:0 22px 20px;color:var(--text-body);font-size:16px;line-height:1.75}
 
 /* ── Final CTA ── */
 .cta-box{background:#fff;border-radius:32px;box-shadow:var(--card-shadow);padding:clamp(36px,6vw,64px) clamp(24px,5vw,56px);max-width:760px;margin:0 auto;text-align:center;position:relative;overflow:hidden}
 .cta-box .rk-big{width:56px;height:56px;color:var(--blue);margin:0 auto 18px;animation:floaty 4s ease-in-out infinite}
 .cta-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:26px}
-.cta-note{font-size:13px;color:#94a3b8;margin-top:18px}
+.cta-note{font-size:13px;color:var(--muted);margin-top:18px}
 
 /* ── Blog cards ── */
 .posts{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
@@ -371,10 +387,10 @@ a.card:hover .ico{transform:scale(1.1) rotate(-6deg)}
 .post .thumb img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:12px}
 .post .thumb.pf-cream{box-shadow:inset 0 0 0 1px var(--frame-edge)}
 .post .body{padding:24px;flex:1;display:flex;flex-direction:column;gap:10px}
-.post .cat{font-family:'Baloo 2';font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--green)}
+.post .cat{font-family:'Baloo 2';font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--green-ink)}
 .post h3{font-family:'Baloo 2';font-weight:800;font-size:18px;line-height:1.35}
 .post p{font-size:14px;color:var(--text-body);line-height:1.7}
-.post .more{margin-top:auto;font-family:'Baloo 2';font-weight:700;font-size:14px;color:var(--blue)}
+.post .more{margin-top:auto;font-family:'Baloo 2';font-weight:700;font-size:14px;color:var(--blue-ink)}
 
 /* ── Prose (articles) ── */
 .prose{max-width:720px;margin:0 auto}
@@ -392,7 +408,7 @@ a.card:hover .ico{transform:scale(1.1) rotate(-6deg)}
 @media(max-width:480px){.line-fab{width:50px;height:50px;bottom:16px;right:14px}.line-fab svg{width:27px;height:27px}}
 .line-fab svg{width:33px;height:33px;fill:#fff;position:relative;z-index:2;flex:0 0 auto}
 .line-fab{transition:opacity .25s,transform .25s}
-.line-fab .fab-t{display:none;position:relative;z-index:2;color:#fff;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;margin-left:6px;white-space:nowrap}
+.line-fab .fab-t{display:none;position:relative;z-index:2;color:var(--navy);font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;margin-left:6px;white-space:nowrap}
 /* out of the way while the footer or an in-page booking block is on screen */
 .line-fab.fab-hide{opacity:0;pointer-events:none;transform:translateY(14px)}
 /* phones: a labelled pill at the top of the page (the header button is inside the menu there) */
@@ -446,21 +462,23 @@ body .ltrans summary{color:#64748b}
 .compare thead th{font-family:'Baloo 2';font-weight:800;font-size:15px;background:#fff}
 .compare thead th:last-child{background:var(--navy);color:#fff}
 .compare tbody th{font-family:'Baloo 2';font-weight:700;color:var(--navy);background:#F4FAFF;white-space:nowrap}
-.compare td{color:#94a3b8}
+.compare td{color:var(--muted)}
 .compare td:last-child{background:rgba(6,199,85,.06);color:var(--navy);font-weight:600}
 .compare tr:last-child th,.compare tr:last-child td{border-bottom:none}
 /* phones: row labels may wrap, and a table that is still too wide scrolls inside its card
    (it used to be cut off at the card edge with no way to reach the last column) */
 @media(max-width:640px){.compare th,.compare td{padding:11px 10px;font-size:14px}.compare tbody th{white-space:normal}.compare{overflow-x:auto;-webkit-overflow-scrolling:touch}.compare td code{overflow-wrap:anywhere;word-break:break-all}}
 
-/* ── Scroll reveal ── */
-.reveal{opacity:0;transform:translateY(32px);transition:opacity .6s ease,transform .6s cubic-bezier(.34,1.4,.64,1)}
-.reveal.in{opacity:1;transform:none}
-.reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}
-/* Above-the-fold hero: animate via CSS on load (not JS) so LCP isn't gated by app.js */
-.hero .reveal{animation:revealIn .6s cubic-bezier(.34,1.4,.64,1) both}
-.hero .reveal.d1{animation-delay:.1s}.hero .reveal.d2{animation-delay:.2s}.hero .reveal.d3{animation-delay:.3s}
-@keyframes revealIn{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+/* ── Scroll reveal ──
+   Everything is visible by default. app.js gives .rv to the blocks that start BELOW the first
+   screen and .in when they scroll into view, so they slide up into place. Nothing on the first
+   screen is hidden or animated any more: the old rule (.reveal{opacity:0} until app.js added
+   .in) held the largest paint back by 1.2 s in Lighthouse, left a page blank when the script
+   tag was missing (/exams/ shipped that way), and half-faded text failed contrast checks,
+   which is also why the slide has no fade. */
+.reveal.rv{transform:translateY(28px)}
+.reveal.rv.in{transform:none;transition:transform .6s cubic-bezier(.34,1.4,.64,1)}
+.reveal.rv.in.d1{transition-delay:.1s}.reveal.rv.in.d2{transition-delay:.2s}.reveal.rv.in.d3{transition-delay:.3s}
 /* staggered cascade for review cards */
 @keyframes cascadeSafety{to{opacity:1;transform:none}}
 .cascade{opacity:0;transform:translateY(30px) scale(.96);transition:opacity .5s ease,transform .6s cubic-bezier(.34,1.45,.5,1);animation:cascadeSafety .4s ease 1.8s forwards}
@@ -514,7 +532,7 @@ body .ltrans summary{color:#64748b}
 .hubcard{display:flex;flex-direction:column;gap:5px;padding:18px 19px;background:#fff;border:2px solid #e8eef7;
   border-radius:18px;text-decoration:none;box-shadow:0 5px 0 #eef3fa;transition:transform .12s,border-color .12s;position:relative;top:0}
 .hubcard:hover{border-color:var(--blue,#1CB0F6);top:-2px}
-.hubcard .hc-n{font-family:'DM Serif Display',serif;font-size:27px;color:var(--blue,#1CB0F6);line-height:1}
+.hubcard .hc-n{font-family:'DM Serif Display',serif;font-size:27px;color:var(--blue-lg);line-height:1}
 .hubcard strong{font-family:'Baloo 2',sans-serif;font-size:16.5px;color:var(--navy,#1A2752)}
 .hubcard .hc-d{font-size:13px;color:#64748b;line-height:1.5}
 
@@ -580,6 +598,6 @@ td .say{margin-left:8px}
 
 /* one-line next step under a free-PDF box (tools/seo_build.py) */
 body p.ae-cta{font-size:14.5px;line-height:1.7;color:#4b5873;margin:10px 0 0;padding-left:4px;text-align:left}
-body p.ae-cta a{color:var(--blue-dk);font-weight:700;display:inline-block;padding:3px 0}
+body p.ae-cta a{color:var(--blue-ink);font-weight:700;display:inline-block;padding:3px 0}
 /* the same line where there is no PDF box: a quiet tinted strip at the end of a section */
 body p.ae-cta.ae-cta-mid{max-width:800px;margin:26px auto 0;padding:12px 16px;background:#F4FAFF;border-radius:12px}

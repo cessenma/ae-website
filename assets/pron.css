@@ -19,15 +19,15 @@
 /* ---- duration bars: the cluster signature ---- */
 .pr-syls{display:flex;gap:10px;align-items:center}
 .pr-syl{position:relative;font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--navy);background:var(--light-blue);border-radius:14px;padding:10px 0;text-align:center;transition:flex-grow .45s cubic-bezier(.5,1.5,.4,1),background .3s,color .3s;flex:1 1 0;min-width:56px}
-.pr-syl.long{flex-grow:2.6;background:var(--blue);color:#fff;box-shadow:0 5px 0 var(--blue-dk)}
-.pr-syl.long::after{content:"長・重";position:absolute;top:-22px;left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:2px;color:var(--blue-dk);font-weight:700;white-space:nowrap}
+.pr-syl.long{flex-grow:2.6;background:var(--blue);color:var(--navy);box-shadow:0 5px 0 var(--blue-dk)}
+.pr-syl.long::after{content:"長・重";position:absolute;top:-22px;left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:2px;color:var(--blue-ink);font-weight:700;white-space:nowrap}
 .pr-syl.short{opacity:.8}
 
 /* ---- tap-to-hear chips ---- */
 .pr-say{display:inline-flex;align-items:center;gap:8px;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:16px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:8px 18px;cursor:pointer;transition:transform .08s,border-color .2s,background .2s;line-height:1.2}
 .pr-say:hover{border-color:var(--blue);background:var(--light-blue)}
 .pr-say:active{transform:scale(.96)}
-.pr-say .pr-ico{width:20px;height:20px;border-radius:50%;background:var(--blue);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11px;flex:none}
+.pr-say .pr-ico{width:20px;height:20px;border-radius:50%;background:var(--blue);color:var(--navy);display:inline-flex;align-items:center;justify-content:center;font-size:11px;flex:none}
 .pr-say.playing .pr-ico{animation:pr-pulse .9s infinite}
 .pr-say small{font-weight:500;color:var(--text-body)}
 @keyframes pr-pulse{0%,100%{box-shadow:0 0 0 0 rgba(28,176,246,.5)}55%{box-shadow:0 0 0 9px rgba(28,176,246,0)}}
@@ -60,12 +60,12 @@
 .pr-opt{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:17px;color:var(--navy);background:var(--light-blue);border:none;border-radius:16px;padding:14px 26px;cursor:pointer;box-shadow:0 4px 0 #b9e2f8;transition:transform .08s,background .2s}
 .pr-opt:hover{filter:brightness(1.03)}
 .pr-opt:active{transform:translateY(2px)}
-.pr-opt.correct{background:var(--green);color:#fff;box-shadow:0 4px 0 var(--green-dk)}
-.pr-opt.wrong{background:var(--coral);color:#fff;box-shadow:0 4px 0 #d97a5c;animation:pr-shake .35s}
+.pr-opt.correct{background:var(--green);color:var(--navy);box-shadow:0 4px 0 var(--green-dk)}
+.pr-opt.wrong{background:var(--coral);color:var(--navy);box-shadow:0 4px 0 #d97a5c;animation:pr-shake .35s}
 @keyframes pr-shake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
 .pr-feedback{min-height:52px;margin-top:16px;font-size:15px;line-height:1.6;color:var(--text-body)}
 .pr-feedback b{color:var(--navy)}
-.pr-score{font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--blue);margin-top:6px;font-size:15px}
+.pr-score{font-family:'Baloo 2',sans-serif;font-weight:800;color:var(--blue-ink);margin-top:6px;font-size:15px}
 .pr-quiz .pr-syls{max-width:420px;margin:18px auto 0}
 .pr-quiz .pr-syl{cursor:pointer;border:none;font-size:20px;padding:16px 0}
 .pr-quiz .pr-syl:hover{filter:brightness(.96)}
@@ -106,14 +106,14 @@
 .pr-bin:active{transform:scale(.97)}
 .pr-bin .pr-bin-ipa{font-family:'DM Serif Display',Georgia,serif;font-style:italic;font-size:34px;display:block}
 .pr-bin small{display:block;font-family:'DM Sans',sans-serif;font-weight:500;color:var(--text-body);font-size:12.5px;margin-top:4px}
-.pr-bin.correct{background:var(--green);color:#fff}.pr-bin.correct small{color:rgba(255,255,255,.85)}
-.pr-bin.wrong{background:var(--coral);color:#fff;animation:pr-shake .35s}.pr-bin.wrong small{color:rgba(255,255,255,.85)}
+.pr-bin.correct{background:var(--green);color:var(--navy)}.pr-bin.correct small{color:var(--navy)}
+.pr-bin.wrong{background:var(--coral);color:var(--navy);animation:pr-shake .35s}.pr-bin.wrong small{color:var(--navy)}
 
 /* ---- Cambridge band ladder (topic E) ---- */
 .pr-ladder{max-width:660px;margin:34px auto 0}
 .pr-band{display:flex;gap:16px;align-items:flex-start;background:#fff;border-radius:18px;box-shadow:var(--card-shadow);padding:18px 20px;margin-bottom:12px;border-left:6px solid var(--light-blue);transition:border-color .25s}
 .pr-band.hot{border-left-color:var(--green)}
-.pr-band-n{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:22px;color:var(--blue);min-width:44px;text-align:center;background:var(--light-blue);border-radius:12px;padding:6px 0}
+.pr-band-n{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:22px;color:var(--blue-ink);min-width:44px;text-align:center;background:var(--light-blue);border-radius:12px;padding:6px 0}
 .pr-band p{font-size:14.5px;line-height:1.7;color:var(--text-body);margin:2px 0 0}
 .pr-band b{color:var(--navy)}
 .pr-quoteband{border-left:5px solid var(--yellow);background:#FFFBEF;border-radius:0 18px 18px 0;padding:18px 22px;margin:18px 0;font-size:15.5px;line-height:1.8;color:var(--navy)}
@@ -121,7 +121,7 @@
 
 /* ---- evidence footer strip ---- */
 .pr-evidence{border-top:2px dashed #e5e9f2;margin-top:34px;padding-top:18px;font-size:13.5px;line-height:1.8;color:var(--text-body)}
-.pr-evidence a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}
+.pr-evidence a{color:var(--blue-ink);text-decoration:underline;text-underline-offset:2px}
 .pr-evidence b{color:var(--navy)}
 
 /* ---- misc ---- */

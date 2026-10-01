@@ -6,7 +6,8 @@ name: Purge Cloudflare after deploy
 # Google's index in August 2026 — it has recurred twice.
 #
 # This job waits for Hostinger to finish deploying, purges Cloudflare, then proves
-# the edge is serving the new bytes. It fails loudly if any step does not hold.
+# the edge is serving the new bytes. The purge always runs: a runner that cannot read the
+# site (Cloudflare answers datacentre addresses with 403) must not be a reason to skip it.
 
 on:
   push:
@@ -20,9 +21,9 @@ concurrency:
 jobs:
   purge:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Fingerprint the committed homepage
         id: fp
@@ -37,17 +38,28 @@ jobs:
         run: |
           # A ?cb= query is a distinct cache key, so it always MISSes the edge and
           # pulls from origin. That lets us watch the ORIGIN without purging first.
-          for i in $(seq 1 60); do
-            got=$(curl -sS --max-time 30 "https://americanenglish.com.tw/?cb=gh${GITHUB_RUN_ID}-$i" | md5sum | cut -d' ' -f1)
+          #
+          # This step used to FAIL the job when the build never showed up, and the purge
+          # was skipped. It failed on every push from 2026-08-07 to 2026-10-01 (56 runs):
+          # Cloudflare answers requests from datacentre addresses like this runner with a
+          # 403, so the runner never saw the site at all, while Hostinger had deployed
+          # within 20 seconds each time. The edge then served the old HTML for 18+ hours.
+          # So: watch for five minutes, and purge whatever the outcome.
+          code=000; got=none
+          for i in $(seq 1 20); do
+            : > /tmp/home.html; : > /tmp/home.hdr      # so md5sum and grep always have a file
+            code=$(curl -sS -o /tmp/home.html -D /tmp/home.hdr -w '%{http_code}' --max-time 30 "https://americanenglish.com.tw/?cb=gh${GITHUB_RUN_ID}-$i" || echo 000)
+            got=$(md5sum /tmp/home.html | cut -d' ' -f1)
             if [ "$got" = "$WANT" ]; then
-              echo "Origin is serving the new build after ${i} attempt(s)."
+              echo "seen=1" >> "$GITHUB_OUTPUT"
+              echo "::notice::Origin is serving the new build after ${i} attempt(s)."
               exit 0
             fi
-            echo "attempt $i: origin md5=$got want=$WANT — waiting 15s"
+            echo "attempt $i: http=$code md5=$got want=$WANT $(grep -i '^cf-mitigated' /tmp/home.hdr | tr -d '\r')"
             sleep 15
           done
-          echo "::error::Origin never served the committed build within 15 minutes. Purge skipped — check the Hostinger Git deploy."
-          exit 1
+          echo "seen=0" >> "$GITHUB_OUTPUT"
+          echo "::warning::This runner could not confirm the deploy (last answer HTTP $code, cf-mitigated: $(grep -i '^cf-mitigated' /tmp/home.hdr | cut -d' ' -f2 | tr -d '\r')). Hostinger normally deploys within a minute, so the cache is purged anyway."
 
       - name: Purge Cloudflare cache
         env:
@@ -70,16 +82,27 @@ jobs:
       - name: Verify the edge now serves the new build
         env:
           WANT: ${{ steps.fp.outputs.md5 }}
+          SEEN: ${{ steps.wait.outputs.seen }}
         run: |
           # No cache-buster here on purpose: this is the real user path through the edge.
+          code=000; got=none
           for i in $(seq 1 12); do
             sleep 10
-            got=$(curl -sS --max-time 30 "https://americanenglish.com.tw/" | md5sum | cut -d' ' -f1)
+            : > /tmp/edge.html
+            code=$(curl -sS -o /tmp/edge.html -w '%{http_code}' --max-time 30 "https://americanenglish.com.tw/" || echo 000)
+            got=$(md5sum /tmp/edge.html | cut -d' ' -f1)
             if [ "$got" = "$WANT" ]; then
-              echo "Edge is serving the new build. Done."
+              echo "::notice::Purged, and the edge is serving the new build."
               exit 0
             fi
-            echo "attempt $i: edge md5=$got want=$WANT"
+            echo "attempt $i: http=$code edge md5=$got want=$WANT"
           done
+          if [ "$SEEN" != "1" ]; then
+            # The runner is not allowed to read the site (HTTP $code), so it cannot judge the
+            # edge either. The purge itself was accepted; check by hand with
+            # ./scripts/cf-cache-check.sh from a normal connection.
+            echo "::warning::Purge accepted, but this runner cannot read the site (HTTP $code) to confirm it. Run ./scripts/cf-cache-check.sh to check."
+            exit 0
+          fi
           echo "::error::Edge still serving stale HTML after purge. The zone's Cache Rule Edge TTL is likely overriding origin TTL — see docs/CACHING.md"
           exit 1

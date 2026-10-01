@@ -65,8 +65,8 @@
 
     // drawer (skip if baked into static HTML)
     if(!document.getElementById('drawer')){
-      var drawer = document.createElement('div');
-      drawer.className='drawer'; drawer.id='drawer';
+      var drawer = document.createElement('nav');
+      drawer.className='drawer'; drawer.id='drawer'; drawer.setAttribute('aria-label','行動版選單');
       drawer.innerHTML = navLinks(true);
       document.body.insertBefore(drawer, header.nextSibling);
     }
@@ -111,7 +111,9 @@
     fab.className='line-fab'; fab.href=LINE; fab.target='_blank'; fab.rel='noopener';
     fab.setAttribute('aria-label','加 LINE 預約試聽');
     fab.innerHTML = LINE_SVG + '<span class="fab-t">預約試聽</span>';
-    document.body.appendChild(fab);
+    // inside a labelled landmark, so a screen reader does not meet a stray link outside every region
+    var fabWrap=document.createElement('aside'); fabWrap.setAttribute('aria-label','LINE 預約'); fabWrap.appendChild(fab);
+    document.body.appendChild(fabWrap);
     (function(){
       var covered=0, quiz=!!document.querySelector('.prx-form,#prx,.gd-form'), lastY=window.scrollY, down=false, tick=false;
       function paint(){
@@ -154,6 +156,23 @@
       mark(); window.addEventListener('load',mark);
     })();
 
+    // anything that scrolls sideways (a wide table, the embed code) has to be reachable by keyboard
+    (function(){
+      var n=0;
+      function fix(){
+        document.querySelectorAll('main table, main pre').forEach(function(el){
+          var w = el.tagName==='PRE' ? el : el.parentElement;
+          while(w && w!==document.body){ var ox=getComputedStyle(w).overflowX; if(ox==='auto'||ox==='scroll') break; w=w.parentElement; }
+          if(!w || w===document.body || w.hasAttribute('tabindex') || w.scrollWidth-w.clientWidth<3) return;
+          w.setAttribute('tabindex','0');
+          if(!w.getAttribute('role')){ w.setAttribute('role','region'); n++; w.setAttribute('aria-label', (el.tagName==='PRE' ? '可左右捲動的程式碼 ' : '可左右捲動的表格 ')+n); }
+        });
+      }
+      // a table can start to overflow only once the web font has replaced the fallback
+      fix(); window.addEventListener('load',fix); setTimeout(fix,1500);
+      if(document.fonts && document.fonts.ready){ document.fonts.ready.then(fix); }
+    })();
+
     // fill rocket icons
     document.querySelectorAll('[data-rocket]').forEach(function(el){ el.innerHTML = ROCKET; });
     // fill any LINE icon placeholders in page content
@@ -194,14 +213,14 @@
     // IntersectionObserver support? (covers very old browsers — show everything if not)
     var hasIO = ('IntersectionObserver' in window);
 
-    // reveal
-    var revs=document.querySelectorAll('.reveal');
-    if(reduce || !hasIO){ revs.forEach(function(r){ r.classList.add('in'); }); }
-    else{
+    // reveal: blocks that start below the first screen slide up when they scroll into view.
+    // Nothing on the first screen is touched, so the first paint never waits for this script.
+    if(!reduce && hasIO){
+      var vh=window.innerHeight||800, below=[];
+      document.querySelectorAll('.reveal').forEach(function(r){ if(r.getBoundingClientRect().top>vh) below.push(r); });   // all reads first
+      below.forEach(function(r){ r.classList.add('rv'); });                                                               // then all writes
       var ro=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target); } }); },{threshold:0,rootMargin:'0px 0px -5% 0px'});
-      revs.forEach(function(r){ ro.observe(r); });
-      // failsafe: never leave content hidden if the observer never fires (some in-app/embedded browsers)
-      setTimeout(function(){ revs.forEach(function(r){ r.classList.add('in'); }); }, 3500);
+      below.forEach(function(r){ ro.observe(r); });
     }
 
     // reversible swing-in for feature illustrations: the observer adds .in on enter (plays
@@ -336,9 +355,13 @@
       try{ if(window.fbq) fbq('track', 'InitiateCheckout', { content_name: 'exam_pack_' + t + '_' + lv, content_category: 'exam_pack', value: v, currency: 'TWD' }); }catch(err){}
       return;
     }
-    // the "how the trial works" link in a mid-page line is a step toward booking: count it too
-    var tr = e.target.closest ? e.target.closest('.ae-cta a[href="/free-trial/"]') : null;
-    if(tr && typeof window.gtag === 'function') window.gtag('event', 'trial_info_click', { page_path: location.pathname, cta_position: 'mid_page' });
+    // any link to "how the trial works" is a step toward booking: count it, and say where it sat
+    // (it used to count only the mid-page line, so the footer and body links were invisible)
+    var tr = e.target.closest ? e.target.closest('a[href="/free-trial/"]') : null;
+    if(tr && location.pathname !== '/free-trial/' && typeof window.gtag === 'function'){
+      window.gtag('event', 'trial_info_click', { page_path: location.pathname,
+        cta_position: tr.closest('.ae-cta') ? 'mid_page' : tr.closest('footer') ? 'footer' : tr.closest('header,.drawer') ? 'header' : 'body' });
+    }
     var ct = e.target.closest ? e.target.closest('a[href^="tel:"],a[href*="maps.app.goo.gl"],a[href*="google.com/maps"]') : null;
     if(ct && typeof window.gtag === 'function'){
       window.gtag('event', (ct.getAttribute('href')||'').indexOf('tel:')===0 ? 'phone_click' : 'map_click',
@@ -368,7 +391,17 @@
   }, true);
 
 
-  function init(){ injectChrome(); wire(); injectSEO(); }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', init);
-  else init();
+  var booted=false;
+  function init(){ if(booted) return; booted=true; injectChrome(); wire(); injectSEO(); }
+  // The build bakes the header, the footer and all content into the HTML, so nothing here is
+  // needed for the first paint. Everything below (menus, scroll effects, the LINE button) waits
+  // until the browser has painted once; this script's layout reads used to run first and held
+  // the first paint back. A page without baked chrome (none today) still starts at once.
+  function boot(){
+    if(!document.getElementById('siteHeader') || !window.requestAnimationFrame){ init(); return; }
+    requestAnimationFrame(function(){ setTimeout(init,0); });
+    setTimeout(init,1500);                       // a background tab gets no animation frame
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', boot);
+  else boot();
 })();

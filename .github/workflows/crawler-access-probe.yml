@@ -19,6 +19,9 @@ on:
   schedule:
     - cron: '17 2 1 * *'      # 1st of each month, 02:17 UTC (10:17 Taipei) - Chris is not teaching
   workflow_dispatch:
+  push:                       # and once whenever this file itself changes
+    branches: [main]
+    paths: ['.github/workflows/crawler-access-probe.yml']
 
 jobs:
   probe:
@@ -78,9 +81,9 @@ jobs:
           fi
           SINCE=$(date -u -d '30 days ago' +%Y-%m-%dT%H:%M:%SZ)
           UNTIL=$(date -u +%Y-%m-%dT%H:%M:%SZ)
-          read -r -d '' Q <<EOF || true
-          { "query": "query { viewer { zones(filter: {zoneTag: \\"${CF_ZONE}\\"}) { httpRequestsAdaptiveGroups(limit: 200, filter: {datetime_geq: \\"${SINCE}\\", datetime_leq: \\"${UNTIL}\\"}, orderBy: [count_DESC]) { count dimensions { userAgent edgeResponseStatus } } } } }" }
-EOF
+          # (a here-document ended this block at column 1 and made the whole file invalid
+          #  YAML: the workflow never ran once between August and October 2026)
+          Q=$(printf '{ "query": "query { viewer { zones(filter: {zoneTag: \\"%s\\"}) { httpRequestsAdaptiveGroups(limit: 200, filter: {datetime_geq: \\"%s\\", datetime_leq: \\"%s\\"}, orderBy: [count_DESC]) { count dimensions { userAgent edgeResponseStatus } } } } }" }' "$CF_ZONE" "$SINCE" "$UNTIL")
           curl -sS -X POST https://api.cloudflare.com/client/v4/graphql \
             -H "Authorization: Bearer ${CF_ANALYTICS_TOKEN}" \
             -H "Content-Type: application/json" \
