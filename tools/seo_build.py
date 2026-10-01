@@ -420,15 +420,24 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified):
                 node["datePublished"] = published
                 if image: node["image"] = image
                 changed = True
-            a = node.get("author")
-            if isinstance(a, dict) and a.get("name") == "Christopher" and a != PERSON_REF:
-                node["author"] = dict(PERSON_REF); changed = True
             pub = node.get("datePublished") or published
             mod = max(modified, pub[:10])
             if node.get("dateModified") != mod:
                 node["dateModified"] = mod; changed = True
         if node.get("@id") != ORG_ID:
             changed = refs(node) or changed
+        # any page-level node written by this school's founder points at the one author entity
+        au = node.get("author")
+        if isinstance(au, dict) and au.get("name") == "Christopher" and au != PERSON_REF:
+            node["author"] = dict(PERSON_REF); changed = True
+        # the exam pack is a download: tiers told apart by sku, no shipping block
+        if "Product" in ts:
+            offers = node.get("offers")
+            for of in (offers if isinstance(offers, list) else [offers] if isinstance(offers, dict) else []):
+                if "shippingDetails" in of:
+                    del of["shippingDetails"]; changed = True
+                if "sku" not in of and of.get("price"):
+                    of["sku"] = "ae-exam-pack-" + str(of["price"]); changed = True
         return changed
     def sub(m):
         try:
