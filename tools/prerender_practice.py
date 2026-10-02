@@ -23,6 +23,9 @@ Idempotent. Run after any generator that rewrites these pages and before seo_bui
 """
 import functools, glob, http.server, json, os, re, sys, threading
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from quiz_ld import google_ready  # noqa: E402  Google practice-problem rules
+
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ORIGIN = "https://americanenglish.com.tw"
 ORG_ID, PERSON_ID = ORIGIN + "/#organization", ORIGIN + "/#christopher"
@@ -146,8 +149,8 @@ def question(it):
     elif isinstance(it.get("opts"), list) and isinstance(it.get("a"), int) and it["a"] < len(it["opts"]):
         opts = [plain(o) for o in it["opts"]]
         node = {"@type": "Question", "name": q, "eduQuestionType": "Multiple choice",
-                "acceptedAnswer": {"@type": "Answer", "text": opts[it["a"]]},
-                "suggestedAnswer": [{"@type": "Answer", "text": o} for k, o in enumerate(opts) if k != it["a"]]}
+                "acceptedAnswer": {"@type": "Answer", "text": opts[it["a"]], "position": it["a"]},
+                "suggestedAnswer": [{"@type": "Answer", "text": o, "position": k} for k, o in enumerate(opts) if k != it["a"]]}
         exp = plain(why[it["a"]] if isinstance(why, list) and len(why) > it["a"] else (why if isinstance(why, str) else ""))
     else:
         return None
@@ -182,7 +185,7 @@ def quiz_ld(slug, html, data):
         ld["about"] = {"@type": "Thing", "name": lv[1]}
     if paper:
         ld["assesses"] = paper
-    return ld
+    return google_ready(ld)
 
 
 # ---------------------------------------------------------------- injection

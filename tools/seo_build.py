@@ -177,6 +177,7 @@ POPULAR_ON = {"index.html", "blog/index.html", "404.html"}
 MAPS      = "https://maps.app.goo.gl/hLChkEqAMKCsMWpm6"
 TEACHER   = "/certified-american-teacher-banqiao/"
 ORG_ID    = ORIGIN + "/#organization"
+CREATOR   = {"@type": "Organization", "name": "埃森美語 American English", "url": ORIGIN + "/"}   # ImageObject.creator, inline
 PERSON_ID = ORIGIN + "/#christopher"
 OG_DEFAULT = "/assets/img/og-default.jpg"
 BYLINE_LINK = f'<a class="byl" href="{TEACHER}">Christopher</a>'      # earlier form, still undone on read
@@ -592,7 +593,15 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified, h
         ch = False
         if isinstance(v, dict):
             for k, x in list(v.items()):
-                if isinstance(x, dict) and "@id" not in x and (_types(x) & {"Organization", "EducationalOrganization"}) \
+                if k == "creator" and isinstance(x, dict) and (x.get("@id") == ORG_ID or (
+                        _types(x) & {"Organization", "EducationalOrganization"} and re.search("埃森|American English", str(x.get("name", ""))))):
+                    # Google's image-metadata check reads `creator` in place and does not follow an
+                    # @id: a bare reference is "Invalid object type for field creator" (GSC 10-02).
+                    # No @id here either: a page whose html contains the org @id is taken to define
+                    # the org node, and the build would then drop the real one (tried 10-02).
+                    if x != CREATOR:
+                        v[k] = dict(CREATOR); ch = True
+                elif isinstance(x, dict) and "@id" not in x and (_types(x) & {"Organization", "EducationalOrganization"}) \
                    and re.search("埃森|American English", str(x.get("name", ""))):
                     v[k] = {"@id": ORG_ID}; ch = True
                 elif isinstance(x, dict) and "@id" not in x and "WebSite" in _types(x):
