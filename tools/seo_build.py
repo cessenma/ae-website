@@ -603,6 +603,11 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified, h
                     # the org node, and the build would then drop the real one (tried 10-02).
                     if x != CREATOR:
                         v[k] = dict(CREATOR); ch = True
+                elif k == "provider" and isinstance(x, dict) and (x.get("@id") == ORG_ID or (
+                        _types(x) & {"Organization", "EducationalOrganization"} and re.search("埃森|American English", str(x.get("name", ""))))):
+                    # a Course's provider is read in place too: name it, as ORG_REF does for authors
+                    if x != ORG_REF:
+                        v[k] = dict(ORG_REF); ch = True
                 elif isinstance(x, dict) and "@id" not in x and (_types(x) & {"Organization", "EducationalOrganization"}) \
                    and re.search("埃森|American English", str(x.get("name", ""))):
                     v[k] = {"@id": ORG_ID}; ch = True

@@ -47,8 +47,9 @@ for p in sorted(glob.glob('*/index.html'))+['index.html']:
             if 'Course' in t:
                 for f in ('name','description','provider'):
                     if not o.get(f): bad(p,f'Course: missing {f}')
-                if not o.get('hasCourseInstance'): bad(p,'Course info: no hasCourseInstance')
-                if not o.get('offers'): bad(p,'Course info: no offers')
+                # Course info (price + schedule in search) only applies with hasCourseInstance; /courses/
+                # leaves both out on purpose (Chris 2026-10-03: contact us first, no prices/times in Google)
+                if o.get('hasCourseInstance') and not o.get('offers'): bad(p,'Course info: no offers')
                 for ci in (o.get('hasCourseInstance') or []) if isinstance(o.get('hasCourseInstance'),list) else [o.get('hasCourseInstance') or {}]:
                     if ci and not ci.get('courseMode'): bad(p,'CourseInstance: no courseMode')
                     if ci and not (ci.get('courseSchedule') or ci.get('courseWorkload')): bad(p,'CourseInstance: no courseSchedule/courseWorkload')
