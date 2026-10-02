@@ -1268,6 +1268,8 @@ _INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM
              ("<!-- AE:PACKOFFER -->", "<!-- /AE:PACKOFFER -->"),
              # "what next" link blocks are navigation the tools add (route_blocks.py, gept_links.py)
              ("<!-- AE:ROUTE -->", "<!-- /AE:ROUTE -->"), ("<!-- AE:GEPTPRX -->", "<!-- /AE:GEPTPRX -->"),
+             # the closing box split by where the reader lives (region_cta.py): a sales block too
+             ("<!-- AE:REGION -->", "<!-- /AE:REGION -->"),
              # practice questions baked into the HTML by prerender_practice.py are a copy of the
              # page's own data script, which the signature already reads
              ("<!--AE:PRE-->", "<!--/AE:PRE-->"), ("<!-- AE:QUIZ-LD start -->", "<!-- AE:QUIZ-LD end -->"),

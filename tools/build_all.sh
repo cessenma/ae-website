@@ -6,6 +6,7 @@ set -e
 cd "$(dirname "$0")/.."
 python3 tools/build_vocab_topic_pages.py "$@"
 python3 tools/route_blocks.py
+python3 tools/region_cta.py       # closing box split by where the reader lives (5 busiest reference pages)
 python3 tools/build_chart_images.py
 python3 tools/build_chart_pdfs.py
 python3 tools/build_word_audio.py
