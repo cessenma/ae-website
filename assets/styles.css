@@ -631,7 +631,7 @@ body .nm-chips.styles button.on{color:var(--navy)}
 /* Text the automated contrast scan cannot judge (tinted tiles, gradients, coloured bubbles):
    measured by hand 2026-10-02, each was under 4.5:1. */
 .breadcrumb,.breadcrumb a{color:#55647f}
-.nav-links a:not(.btn):hover,.nav-links a.active{color:var(--blue-ink)}
+.nav-links a:not(.btn):hover,.nav-links a.active{color:#055a84}
 .node .bubble.g,.node .bubble.b,.node .bubble.p{color:var(--navy)}
 body .blk .rg{color:#3d4a61}
 body .blk .go{color:var(--navy)}
