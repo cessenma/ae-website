@@ -362,10 +362,15 @@
       window.gtag('event', 'trial_info_click', { page_path: location.pathname,
         cta_position: tr.closest('.ae-cta') ? 'mid_page' : tr.closest('footer') ? 'footer' : tr.closest('header,.drawer') ? 'header' : 'body' });
     }
+    // the line under PDF boxes and on local pages ends with a link to the school's own page
+    var sp = e.target.closest ? e.target.closest('.ae-cta a[href="/banqiao-english-cram-school/"]') : null;
+    if(sp && typeof window.gtag === 'function'){
+      window.gtag('event', 'school_page_click', { page_path: location.pathname, cta_position: 'mid_page' });
+    }
     var ct = e.target.closest ? e.target.closest('a[href^="tel:"],a[href*="maps.app.goo.gl"],a[href*="google.com/maps"]') : null;
     if(ct && typeof window.gtag === 'function'){
       window.gtag('event', (ct.getAttribute('href')||'').indexOf('tel:')===0 ? 'phone_click' : 'map_click',
-        { page_path: location.pathname, cta_position: ct.closest('footer') ? 'footer' : 'body' });
+        { page_path: location.pathname, cta_position: ct.closest('footer') ? 'footer' : ct.closest('.page-hero,.hero') ? 'hero' : 'body' });
     }
     var a = e.target.closest ? e.target.closest('a[href*="lin.ee"],a[href*="line.me"]') : null;
     if(a){

@@ -52,7 +52,9 @@ def school_block(s):
             f'<p style="margin:0 0 6px"><strong>{walk}</strong>　·　'
             f'<a href="{src}" target="_blank" rel="noopener nofollow">前往學校官方行事曆 →</a></p>'
             f'{note}{body}'
-            f'<p style="font-size:12px;color:#94a3b8;margin:0 0 18px">本週檢查：{status}</p>')
+            # the weekly check result is a heartbeat, not content: the markers keep it out of
+            # the page's content signature, so "last updated" moves only when a calendar does
+            f'<!-- AE:CHECK start --><p style="font-size:12px;color:#94a3b8;margin:0 0 18px">本週檢查：{status}</p><!-- AE:CHECK end -->')
 
 
 def main():
@@ -95,7 +97,7 @@ def main():
   <div class="wrap">
     <div class="prose reveal">
       <p style="font-size:13px;line-height:1.7;color:#94a3b8;margin-bottom:14px">
-        由埃森美語整理自各校官方行事曆　·　最後檢查：<strong>{checked}</strong>　·　每週自動檢查更新</p>
+        由埃森美語整理自各校官方行事曆　·　最後檢查：<!-- AE:CHECK start --><strong>{checked}</strong><!-- AE:CHECK end -->　·　每週自動檢查更新</p>
 
       <div style="background:#FFF9E6;border:1px solid #FFC828;border-radius:10px;padding:14px 18px;margin:0 0 22px">
         <p style="margin:0;font-size:14px"><strong>請以學校公告為準。</strong>

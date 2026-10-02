@@ -81,16 +81,24 @@ def main():
             continue
         now = S.authored_hash(open(path, encoding="utf-8").read())
         skip = skip_days.get(key, set())
-        # versions newest first: the file on disk (today), then each commit that touched it
-        versions = [(None, today)] + [tuple(c) for c in commits(rel)]
-        versions = [v for v in versions if v[1] not in skip] or versions[-1:]
-        sig = lambda v: now if v[0] is None else S.authored_hash(git("show", f"{v[0]}:{rel}"))
-        ref, date, walked = sig(versions[0]), versions[0][1], 1
-        for v in versions[1:]:
+        # Newest first: the file on disk (today), then each commit that touched it. Walk back
+        # while the content stays the same; `date` is the day of the oldest version in that run,
+        # i.e. the day this content first appeared. When an older version differs, the content
+        # changed on `date`: a real change ends the walk, a change made on one of the page's
+        # wording-only days is stepped over and the walk goes on from the older content.
+        # (The first version of this loop dropped the wording-only days from the list instead.
+        #  That worked on the day itself, but from the next day on the file on disk was "today's
+        #  version" and every such page was stamped with the day the tool was run.)
+        sig = lambda c: S.authored_hash(git("show", f"{c}:{rel}"))
+        ref, date, walked = now, today, 1
+        for c, day in (tuple(x) for x in commits(rel)):
             walked += 1
-            if sig(v) != ref:
-                break
-            date = v[1]
+            s = sig(c)
+            if s != ref:
+                if date not in skip:
+                    break
+                ref = s
+            date = day
         was = ledger[key].get("date")
         if was != date or ledger[key].get("hash") != now:
             moved += was != date

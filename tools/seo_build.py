@@ -80,13 +80,16 @@ _LOCAL_TAIL = ('<a href="/banqiao-english-cram-school/">板橋英文補習班完
                '　·　<a href="/contact/">地址與交通</a>'
                f'　·　<a href="/free-trial/">試聽怎麼進行</a></p>{NEXT_END}')
 LOCAL_SKIP = {"banqiao-english-cram-school", "banqiao-parent-testimonials"}
+# not classed as local pages, but their readers are local parents and they had no link in
+# the text to the school's own page (the PDF hub and the "falling behind" guide)
+LOCAL_EXTRA = {"download", "elementary-english-catch-up"}
 _LOCAL = None
 def local_pages():
     global _LOCAL
     if _LOCAL is None:
         try:
             cls = json.load(open(os.path.join(SITE, "data", "page_classes.json"), encoding="utf-8"))["classes"]
-            _LOCAL = {k for k, v in cls.items() if v == "local / cram school"} - LOCAL_SKIP
+            _LOCAL = ({k for k, v in cls.items() if v == "local / cram school"} | LOCAL_EXTRA) - LOCAL_SKIP
         except (OSError, ValueError, KeyError):
             _LOCAL = set()
     return _LOCAL
@@ -218,6 +221,21 @@ SELF_CONTAINED = {"line/index.html",
 def html_escape(t):
     return (t.replace("&", "&amp;").replace("<", "&lt;")
              .replace(">", "&gt;").replace('"', "&quot;"))
+
+# Every other stylesheet and script under /assets/ (calc.css, calc.js, pron.css, pron.js) carried
+# a hand-typed ?v=1. They are cached for a year, so an edit without a bump never reached a
+# returning visitor: the contrast fixes of 2026-10-01 in calc.css and pron.css did not.
+# The key is now the file's content hash, like styles.css and app.js.
+_ASSET_HASH = {}
+ASSET_VER_RE = re.compile(r'(/assets/(?!styles\.css|app\.js)[A-Za-z0-9_-]+\.(?:css|js))\?v=[0-9A-Za-z]+')
+def _asset_ver(m):
+    rel = m.group(1)
+    if rel not in _ASSET_HASH:
+        try:
+            _ASSET_HASH[rel] = hashlib.md5(open(os.path.join(SITE, rel.lstrip("/")), "rb").read()).hexdigest()[:8]
+        except OSError:
+            _ASSET_HASH[rel] = None
+    return f"{rel}?v={_ASSET_HASH[rel]}" if _ASSET_HASH[rel] else m.group(0)
 
 def css_fingerprint():
     """Content hash of styles.css — cache-busts automatically whenever the CSS changes,
@@ -602,6 +620,11 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified, h
         if isinstance(d, dict):
             return d["@graph"] if isinstance(d.get("@graph"), list) else [d]
         return d if isinstance(d, list) else []
+    # a FAQPage the page wrote itself (the practice hubs) counts as "has a FAQ" too: their page
+    # node was never linked to it because only the FAQ built from the visible list was counted
+    if not has_faq:
+        has_faq = any(isinstance(n, dict) and "FAQPage" in _types(n) and n.get("@id") == canon + "#faq"
+                      for _, d in docs if d is not None for n in nodes_of(d))
     # a page-level node of its own (a calculator's WebApplication, a generated Article …)
     # means a copied Article block is a leftover: drop it rather than rewrite it
     own = any(isinstance(n, dict) and (_types(n) & OWN_TYPES) and not article_for_other_page(n)
@@ -694,9 +717,14 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified, h
                     pi["url"] = image; changed = True
                 if image and isinstance(node.get("image"), str) and node["image"].endswith((OG_DEFAULT, LOGO)) and node["image"] != image:
                     node["image"] = image; changed = True
-            if has_faq and ts & (ARTICLE_TYPES | {"WebPage", "CollectionPage"}) and "hasPart" not in node:
-                node["hasPart"] = {"@id": canon + "#faq"}; changed = True
-            elif not has_faq and node.get("hasPart") == {"@id": canon + "#faq"}:
+            faq_ref = {"@id": canon + "#faq"}
+            if has_faq and ts & (ARTICLE_TYPES | {"WebPage", "CollectionPage"}):
+                hp = node.get("hasPart")
+                if hp is None:
+                    node["hasPart"] = faq_ref; changed = True
+                elif isinstance(hp, list) and faq_ref not in hp:      # a hub that lists its pages
+                    hp.append(faq_ref); changed = True
+            elif not has_faq and node.get("hasPart") == faq_ref:
                 del node["hasPart"]; changed = True
         # the exam pack is a download: tiers told apart by sku, no shipping block
         if "Product" in ts:
@@ -975,6 +1003,11 @@ def process_page(path, css_ver="", crit=""):
     html = strip_block(html, CRIT_START, CRIT_END)
     html = strip_block(html, GTM_START, GTM_END)
     html = strip_block(html, FONTS_START, FONTS_END)
+    if rel == "line/index.html":
+        # the ad landing page kept the render-blocking Google Fonts stylesheet (display=swap):
+        # same inline faces and preloads as every other page
+        html = OLD_FONTS_RE.sub("", html)
+        html = re.sub(r"(<meta charset=[^>]*>)\s*", lambda mm: mm.group(1) + "\n" + FONTS_BLOCK, html, count=1)
     html = strip_block(html, FOOT_START, FOOT_END)
     html = strip_block(html, PMETA_START, PMETA_END)
     html = strip_block(html, POP_START, POP_END)
@@ -1034,6 +1067,10 @@ def process_page(path, css_ver="", crit=""):
     seo.append(ICON_NEW)
     if not own_og:
         seo.append(f'<meta property="og:image" content="{image}">')
+    for prop, val in (("og:url", canon), ("og:locale", "zh_TW"), ("og:site_name", "American English 埃森美語"),
+                      ("og:image:alt", headline[:110])):
+        if rel != "404.html" and not rel.startswith("pack-") and val and f'property="{prop}"' not in html:
+            seo.append(f'<meta property="{prop}" content="{html_escape(val)}">')
     if 'name="twitter:card"' not in html:
         seo.append('<meta name="twitter:card" content="summary_large_image">')
     if 'name="twitter:image"' not in html:
@@ -1091,12 +1128,14 @@ def process_page(path, css_ver="", crit=""):
         seo.append('<script type="application/ld+json">' + jd({
             "@context": "https://schema.org", "@type": "ProfilePage", "@id": canon + "#profile", "url": canon,
             "inLanguage": "zh-Hant-TW", "isPartOf": {"@id": WEBSITE_ID},
-            "dateModified": modified, "mainEntity": {"@id": PERSON_ID}}) + "</script>")
+            "dateModified": modified, "mainEntity": {"@id": PERSON_ID},
+            "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}}) + "</script>")
     if rel == "contact/index.html":
         seo.append('<script type="application/ld+json">' + jd({
             "@context": "https://schema.org", "@type": "ContactPage", "@id": canon + "#contact", "url": canon,
             "name": "聯絡與交通", "inLanguage": "zh-Hant-TW", "isPartOf": {"@id": WEBSITE_ID},
-            "mainEntity": {"@id": ORG_ID}}) + "</script>")
+            "mainEntity": {"@id": ORG_ID}, "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID},
+            **({"hasPart": {"@id": canon + "#faq"}} if fq else {})}) + "</script>")
     seo.append(SEO_END)
     seo_block = "\n".join(seo) + "\n"
 
@@ -1120,6 +1159,7 @@ def process_page(path, css_ver="", crit=""):
     if rel not in SELF_CONTAINED:
         html = re.sub(r"(<body[^>]*>)\s*", lambda m: m.group(1) + "\n" + chrome_block(key) + "\n", html, count=1)
     html = re.sub(r"app\.js\?v=[0-9a-f]+", f"app.js?v={_APPJS}", html)
+    html = ASSET_VER_RE.sub(_asset_ver, html)
 
     # app.js is not optional: styles.css ships .reveal{opacity:0} and app.js is what adds
     # .in to make it visible. A page authored without the tag renders BLANK — that is
@@ -1232,7 +1272,9 @@ _INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM
              # page's own data script, which the signature already reads
              ("<!--AE:PRE-->", "<!--/AE:PRE-->"), ("<!-- AE:QUIZ-LD start -->", "<!-- AE:QUIZ-LD end -->"),
              # the audio player snippet build_word_audio.py appends (the buttons' data-w is what counts)
-             ("<!-- AE:AUDIO start -->", "<!-- AE:AUDIO end -->")]
+             ("<!-- AE:AUDIO start -->", "<!-- AE:AUDIO end -->"),
+             # the school-calendar page's weekly link check (result and time): a heartbeat
+             ("<!-- AE:CHECK start -->", "<!-- AE:CHECK end -->")]
 
 SIG_ATTRS = ("href", "src", "poster", "data-w", "data-src", "value")
 def content_signature(html):

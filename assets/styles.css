@@ -4,7 +4,7 @@
    =========================================================== */
 :root{
   --navy:#1A2752;--blue:#1CB0F6;--blue-dk:#1391cc;--green:#06C755;--green-dk:#04a046;
-  --yellow:#FFC828;--yellow-dk:#e0a800;--purple:#CE82FF;--purple-dk:#a94fe0;
+  --yellow:#FFC828;--yellow-dk:#e0a800;--purple:#CE82FF;--purple-dk:#a94fe0;--purple-ink:#7a3db8;
   --coral:#F0997B;--light-blue:#DDF4FF;--text-body:#4b5563;
   /* The brand blue and green are too light to READ as text, or to carry white text
      (2.4:1 and 2.3:1; WCAG AA asks 4.5:1, or 3:1 for large type). The fills stay as they
@@ -627,3 +627,18 @@ body p.ae-cta.ae-cta-mid{max-width:800px;margin:26px auto 0;padding:12px 16px;ba
 }
 /* a selected style chip on the names pages is blue: navy label, like every other bright fill */
 body .nm-chips.styles button.on{color:var(--navy)}
+
+/* Text the automated contrast scan cannot judge (tinted tiles, gradients, coloured bubbles):
+   measured by hand 2026-10-02, each was under 4.5:1. */
+.breadcrumb,.breadcrumb a{color:#55647f}
+.nav-links a:not(.btn):hover,.nav-links a.active{color:var(--blue-ink)}
+.node .bubble.g,.node .bubble.b,.node .bubble.p{color:var(--navy)}
+body .blk .rg{color:#3d4a61}
+body .blk .go{color:var(--navy)}
+body .blk.ghost,body .blk.ghost .rg{color:#5b6b8a}
+body .ladder .cell.na{color:#5b6b8a}
+/* phone and map under the hero button of the main local page */
+.hero-quick{margin:14px 0 0;display:flex;flex-wrap:wrap;gap:2px 14px;justify-content:center;align-items:center;font-size:15px;color:var(--muted)}
+.hero-quick a{color:var(--blue-ink);font-weight:700;text-decoration:underline;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px}
+address{font-style:normal}
+@media (pointer:coarse){ .page-meta a{display:inline-block;padding:13px 2px} }

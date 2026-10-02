@@ -56,6 +56,9 @@ jobs:
               exit 0
             fi
             echo "attempt $i: http=$code md5=$got want=$WANT $(grep -i '^cf-mitigated' /tmp/home.hdr | tr -d '\r')"
+            # Cloudflare is challenging this runner: it will never see the site, so four
+            # tries (a minute, enough for Hostinger to deploy) are as good as twenty
+            if [ "$code" = "403" ] && [ "$i" -ge 4 ]; then break; fi
             sleep 15
           done
           echo "seen=0" >> "$GITHUB_OUTPUT"
@@ -90,22 +93,28 @@ jobs:
           import json, os, re, urllib.request
           KEY = "20041bc52f1607fd8a2a33ca6a4389bc"; HOST = "americanenglish.com.tw"; ORIGIN = "https://" + HOST
           sitemap = set(re.findall(r"<loc>([^<]+)</loc>", open("sitemap.xml", encoding="utf-8").read()))
-          urls = []
+          urls, everything = [], False
           try:    # the files this push changed (the API lists at most 300)
               req = urllib.request.Request(
                   f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/compare/{os.environ['BEFORE']}...{os.environ['GITHUB_SHA']}",
                   headers={"Authorization": "Bearer " + os.environ["GH_TOKEN"], "Accept": "application/vnd.github+json"})
-              files = [f["filename"] for f in json.load(urllib.request.urlopen(req, timeout=30)).get("files", [])]
+              files = json.load(urllib.request.urlopen(req, timeout=30)).get("files", [])
               for f in files:
-                  u = ORIGIN + "/" + (f[:-len("index.html")] if f.endswith("index.html") else f)
-                  if u in sitemap:
+                  name = f["filename"]
+                  u = ORIGIN + "/" + (name[:-len("index.html")] if name.endswith("index.html") else name)
+                  # a changed page or PDF that is in the sitemap, or a page that was deleted
+                  # (a deleted address is announced too, so it is dropped from the index)
+                  if u in sitemap or (f.get("status") == "removed" and name.endswith("index.html")):
                       urls.append(u)
-              if len(files) >= 300:
-                  urls = []          # a site-wide rebuild: the list was cut off, send everything
+              everything = len(files) >= 300      # a site-wide rebuild: the list was cut off
           except Exception as e:
               print("could not list the changed files:", e)
-          if not urls:
+              everything = True
+          if everything:
               urls = sorted(sitemap)
+          if not urls:
+              print("::notice::IndexNow: this push changed no listed page, nothing sent.")
+              raise SystemExit(0)
           body = json.dumps({"host": HOST, "key": KEY, "keyLocation": f"{ORIGIN}/{KEY}.txt", "urlList": urls}).encode()
           try:
               r = urllib.request.urlopen(urllib.request.Request("https://api.indexnow.org/indexnow", data=body,

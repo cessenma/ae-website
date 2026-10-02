@@ -93,6 +93,7 @@
     if (!cfg) return;
 
     var rowsEl = root.querySelector(".calc-rows");
+    rowsEl.innerHTML = "";      // the rows baked into the page (tools/prerender_widgets.py) are redrawn live
     var inputs = [];
 
     cfg.papers.forEach(function (p) {
@@ -171,6 +172,7 @@
   document.querySelectorAll("[data-shields]").forEach(function (root) {
     var sel = root.querySelector(".sh-level");
     var rowsEl = root.querySelector(".sh-rows");
+    rowsEl.innerHTML = "";
     var out = root.querySelector(".sh-result");
     var state = { l: null, r: null, s: null };
 

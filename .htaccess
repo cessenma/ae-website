@@ -21,9 +21,9 @@ RewriteCond %{HTTP_HOST} ^www\. [NC,OR]
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://americanenglish.com.tw%{REQUEST_URI} [L,R=301]
 
-# tools/ and data/ hold the build scripts and their ledgers. They ride along in the
+# tools/, data/, scripts/ and docs/ hold the build scripts, their ledgers and notes. They ride along in the
 # repo so they deploy with it, but they are not pages: answer 404, not the source.
-RewriteRule ^(tools|data)(/|$) - [R=404,L]
+RewriteRule ^(tools|data|scripts|docs)(/|$) - [R=404,L]
 # Notes kept in the repo (DEPLOY.md and the like) are not pages either.
 RewriteRule \.md$ - [R=404,L]
 
@@ -173,3 +173,7 @@ SetEnvIf Request_URI "^/pack-9rvvw6p3nnmls4/" AE_PRIVATE=1
 Header set X-Robots-Tag "noindex, nofollow, noarchive" env=AE_PRIVATE
 Header set Cache-Control "no-store" env=AE_PRIVATE
 </IfModule>
+
+# Text files (llms.txt, robots.txt) were sent as text/plain with no charset; llms.txt has
+# Chinese titles, and a reader that guesses the encoding gets them wrong.
+AddDefaultCharset UTF-8
