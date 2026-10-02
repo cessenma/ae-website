@@ -350,10 +350,20 @@
     var ck = e.target.closest ? e.target.closest('a[data-pack-tier]') : null;
     if(ck){
       var t = ck.getAttribute('data-pack-tier'), lv = ck.getAttribute('data-pack-level') || '';
-      if(typeof window.gtag === 'function') window.gtag('event', 'exam_pack_tap', { tier: t, level: lv, page_path: location.pathname, link_text: 'checkout' });
-      var v = t === '54' ? 1770 : t === '27' ? 890 : 590;
-      try{ if(window.fbq) fbq('track', 'InitiateCheckout', { content_name: 'exam_pack_' + t + '_' + lv, content_category: 'exam_pack', value: v, currency: 'TWD' }); }catch(err){}
+      // the GEPT pack uses the same card; data-pack-product keeps its taps apart from Cambridge's,
+      // and a card that still takes orders on LINE is a lead, not a checkout
+      var prod = ck.getAttribute('data-pack-product') || 'cambridge';
+      var viaLine = /line\.me|lin\.ee/.test(ck.getAttribute('href') || '');
+      if(typeof window.gtag === 'function') window.gtag('event', 'exam_pack_tap', { tier: t, level: lv, product: prod, page_path: location.pathname, link_text: viaLine ? 'line' : 'checkout' });
+      var v = t === '54' ? 1770 : t === '36' ? 1190 : t === '27' ? 890 : 590;
+      try{ if(window.fbq) fbq('track', viaLine ? 'Lead' : 'InitiateCheckout', { content_name: (prod === 'gept' ? 'gept_pack_' : 'exam_pack_') + t + '_' + lv, content_category: prod === 'gept' ? 'gept_pack' : 'exam_pack', value: v, currency: 'TWD' }); }catch(err){}
       return;
+    }
+    // the closing box split by where the reader lives (tools/region_cta.py): which of its
+    // other links was taken (its LINE button is a line_tap with cta_position region_local)
+    var rg = e.target.closest ? e.target.closest('a[data-region-choice]') : null;
+    if(rg && typeof window.gtag === 'function'){
+      window.gtag('event', 'region_cta_click', { page_path: location.pathname, choice: rg.getAttribute('data-region-choice') });
     }
     // any link to "how the trial works" is a step toward booking: count it, and say where it sat
     // (it used to count only the mid-page line, so the footer and body links were invisible)
@@ -388,7 +398,7 @@
         try{ if(window.fbq) fbq('track', 'Lead', { content_name: 'exam_pack_' + tier, content_category: 'exam_pack', value: val, currency: 'TWD' }); }catch(err){}
       } else if(hasGtag){
         var pos = a.classList.contains('line-fab') ? 'fab' : a.closest('.site-header') ? 'header' : a.closest('.drawer') ? 'menu'
-                : a.closest('footer') ? 'footer' : a.closest('.cta-box') ? 'cta_box' : a.closest('.page-hero,.hero') ? 'hero'
+                : a.closest('footer') ? 'footer' : a.closest('.region-cta') ? 'region_local' : a.closest('.cta-box') ? 'cta_box' : a.closest('.page-hero,.hero') ? 'hero'
                 : a.closest('.ae-cta') ? 'mid_page' : 'body';
         window.gtag('event', 'line_tap', { page_path: location.pathname, link_text: txt.slice(0, 40), cta_position: pos });
       }
