@@ -533,6 +533,8 @@ def published_date(rel, today):
     return _PUBLISHED[rel]
 
 PERSON_REF = {"@type": "Person", "@id": PERSON_ID, "name": "Christopher", "url": ORIGIN + TEACHER}
+# an author that names itself in place (Google's Article check wants author.name, not just an @id)
+ORG_REF = {"@type": "EducationalOrganization", "@id": ORG_ID, "name": "埃森美語 American English", "url": ORIGIN + "/"}
 WEBSITE_ID = ORIGIN + "/#website"
 # list pages: a set of links to other pages, not an article of their own
 HUB_PAGES = {"english-names/index.html", "english-vocabulary-by-topic/index.html", "english-pronunciation/index.html"}
@@ -587,7 +589,7 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified, h
     no Article block describing a different URL (nine pages were shipping the BlogPosting
     of the article they had been copied from). Returns (html, types found)."""
     found = set()
-    author = dict(PERSON_REF) if has_byline else {"@id": ORG_ID}
+    author = dict(PERSON_REF) if has_byline else dict(ORG_REF)
     def refs(v):
         """Swap an inline copy of the school ({"@type":"Organization","name":…}) for a reference."""
         ch = False
@@ -1098,7 +1100,9 @@ def process_page(path, css_ver="", crit=""):
             "name": "American English 埃森美語", "alternateName": ["埃森美語", "埃森美語 American English"],
             "inLanguage": "zh-Hant-TW", "publisher": {"@id": ORG_ID}}) + "</script>")
     # org node for pages that define none of their own
-    if '"@id":"' + ORG_ID + '"' not in html.replace('{"@id":"' + ORG_ID + '"}', ""):
+    # (a real definition carries the address; a typed reference such as an author or creator
+    #  {"@type":…,"@id":org,"name":…} must not count, or the page loses its org node)
+    if not re.search(r'"@id":"' + re.escape(ORG_ID) + r'"[^<]{0,4000}?"address"', html):
         seo.append(f'<script type="application/ld+json">{jd(dict({"@context": "https://schema.org"}, **org_node(rel)))}</script>')
     # a page-level node for content pages that carry none of their own: an Article where the
     # page has a byline, a plain WebPage (dated, published by the school) where it does not

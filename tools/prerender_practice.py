@@ -148,9 +148,10 @@ def question(it):
         exp = plain(why if isinstance(why, str) else " ".join(why or []))
     elif isinstance(it.get("opts"), list) and isinstance(it.get("a"), int) and it["a"] < len(it["opts"]):
         opts = [plain(o) for o in it["opts"]]
+        W = lambda k: plain(why[k]) if isinstance(why, list) and len(why) > k else (plain(why) if isinstance(why, str) else "")
         node = {"@type": "Question", "name": q, "eduQuestionType": "Multiple choice",
-                "acceptedAnswer": {"@type": "Answer", "text": opts[it["a"]], "position": it["a"]},
-                "suggestedAnswer": [{"@type": "Answer", "text": o, "position": k} for k, o in enumerate(opts) if k != it["a"]]}
+                "acceptedAnswer": {"@type": "Answer", "text": opts[it["a"]], "position": it["a"], "_why": W(it["a"])},
+                "suggestedAnswer": [{"@type": "Answer", "text": o, "position": k, "_why": W(k)} for k, o in enumerate(opts) if k != it["a"]]}
         exp = plain(why[it["a"]] if isinstance(why, list) and len(why) > it["a"] else (why if isinstance(why, str) else ""))
     else:
         return None
