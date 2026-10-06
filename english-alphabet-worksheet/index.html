@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<link rel="stylesheet" href="/assets/styles.css?v=0e2e6e17">
+<!-- AE:CRIT end -->
+<!-- AE:FONTS start -->
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2">
+<style>@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0vrx52jJ3Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB3vD2xWr53BJl.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZOIHTWEBlw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58UfivUw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKK58UfivUw4aw.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+<!-- AE:FONTS end -->
+<meta name="theme-color" content="#1A2752">
+<title>英文字母練習表 A–Z 大小寫描寫：四線三格免費 PDF 下載｜埃森美語</title>
+<meta name="description" content="免費下載英文字母練習表 PDF：A 到 Z 大小寫 52 個字形，四線三格描寫格線，每個字母先描再寫；附 26 個字母的格線位置表、b/d、p/q 常錯筆順提醒與 4–7 歲在家練習法。">
+<link rel="canonical" href="https://americanenglish.com.tw/english-alphabet-worksheet/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="英文字母練習表 A–Z 大小寫描寫：四線三格免費 PDF 下載">
+<meta property="og:description" content="免費下載英文字母練習表 PDF：A 到 Z 大小寫 52 個字形，四線三格描寫格線，每個字母先描再寫；附 26 個字母的格線位置表、b/d、p/q 常錯筆順提醒與 4–7 歲在家練習法。">
+<meta property="og:url" content="https://americanenglish.com.tw/english-alphabet-worksheet/">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/english-alphabet-worksheet/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/english-alphabet-worksheet/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:image" content="https://americanenglish.com.tw/assets/img/og-default.jpg">
+<meta property="og:site_name" content="American English 埃森美語">
+<meta property="og:image:alt" content="英文字母練習表：A–Z 大小寫描寫＋四線三格，免費 PDF 下載">
+<meta name="twitter:image" content="https://americanenglish.com.tw/assets/img/og-default.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://americanenglish.com.tw/blog/"},{"@type":"ListItem","position":3,"name":"英文字母練習表：A–Z 大小寫描寫＋四線三格，免費 PDF 下載"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://americanenglish.com.tw/english-alphabet-worksheet/#faq","url":"https://americanenglish.com.tw/english-alphabet-worksheet/","inLanguage":"zh-Hant-TW","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"mainEntity":[{"@type":"Question","name":"幾歲可以開始寫英文字母？","acceptedAnswer":{"@type":"Answer","text":"一般是 4 到 7 歲，也就是幼兒園中大班到小一這段。判斷標準不是年齡，是手：孩子能握筆畫出直線和圓圈，就可以開始「描」；描得穩了再「寫」。這份練習表的字母格一格 8 公釐，刻意放大，用粗一點的鉛筆或蠟筆都好寫。每天 10 分鐘、一次 2 到 3 個字母就夠，不要一口氣寫完一本。"}},{"@type":"Question","name":"要先練大寫還是先練小寫？","acceptedAnswer":{"@type":"Answer","text":"一起認，但順序上先描大寫。大寫直線多、筆畫分開，4、5 歲的手比較控制得住；小寫有圓、有尾巴，需要更細的手腕動作。不過小寫才是孩子之後讀書、寫作業最常用到的字形，所以不能停在大寫。這份練習表每個字母都是大寫一行、小寫一行緊接著，描完 A 馬上描 a，兩種字形自然配對。"}},{"@type":"Question","name":"孩子 b 和 d 一直寫反，正常嗎？","acceptedAnswer":{"@type":"Answer","text":"正常。b／d、p／q 這種鏡像字母，在 4 到 7 歲寫反非常普遍，多數孩子隨著讀寫經驗累積會自己分開，不需要為此責備。有效的做法是給他一個固定的筆順：b 先寫直線再在右邊繞圓，d 先寫 c 再在右邊加直線；再配一個口訣，例如兩手握拳、豎起大拇指比出 bed（床），左手是 b、右手是 d。如果到小二之後還經常寫反，而且閱讀也明顯吃力，再和學校老師討論。"}},{"@type":"Question","name":"這份練習表可以影印給全班或分享嗎？","acceptedAnswer":{"@type":"Answer","text":"可以。這份 PDF 免費提供家庭和教室使用，影印幾份都可以，請保留頁尾的出處 americanenglish.com.tw；放到自己的網站或社團分享時，請註明出處並連回本頁。唯一不行的是去掉出處之後拿去販售。完整授權說明請見本站的圖表授權頁。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://americanenglish.com.tw/#website","url":"https://americanenglish.com.tw/","name":"American English 埃森美語","alternateName":["埃森美語","埃森美語 American English"],"inLanguage":"zh-Hant-TW","publisher":{"@id":"https://americanenglish.com.tw/#organization"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"https://americanenglish.com.tw/#organization","name":"埃森美語 American English","alternateName":["埃森美語","American English 埃森美語","American English","埃森美語 - American English Institute"],"legalName":"私立埃森美語文理短期補習班","taxID":"61476523","description":"板橋中正路在地深耕的美籍外師英文補習班，提供 100% 美籍持證教師、每班 12 人小班制的兒童美語與國中英文課程。","url":"https://americanenglish.com.tw/","telephone":"+886-928-067-772","image":["https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","https://americanenglish.com.tw/assets/img/banqiao-small-class-english-classroom.webp","https://americanenglish.com.tw/assets/img/banqiao-kids-english-class.webp","https://americanenglish.com.tw/assets/img/certified-american-teacher-banqiao.webp","https://americanenglish.com.tw/assets/img/kids-confident-english-speaking.webp"],"logo":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"中正路89巷4號1樓","addressLocality":"板橋區","addressRegion":"新北市","postalCode":"220","addressCountry":"TW"},"geo":{"@type":"GeoCoordinates","latitude":25.0145617,"longitude":121.4560468},"areaServed":{"@type":"AdministrativeArea","name":"板橋區","containedInPlace":{"@type":"AdministrativeArea","name":"新北市"}},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"19:00"}],"sameAs":["https://www.google.com/maps?cid=11837760024257631170","https://lin.ee/W9J8TuQ","https://www.facebook.com/profile.php?id=61576014571186"],"hasMap":"https://www.google.com/maps?cid=11837760024257631170","founder":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"knowsLanguage":["en-US","zh-TW"],"knowsAbout":["兒童美語","國中英文","美籍外師英語教學","Phonics 自然發音","劍橋兒童英檢 (Cambridge YLE)","GEPT 全民英檢","國中教育會考英文","英語會話與口說","板橋英文補習班"],"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+886-928-067-772","url":"https://lin.ee/W9J8TuQ","availableLanguage":["zh-TW","en"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","@id":"https://americanenglish.com.tw/english-alphabet-worksheet/#article","url":"https://americanenglish.com.tw/english-alphabet-worksheet/","headline":"英文字母練習表：A–Z 大小寫描寫＋四線三格，免費 PDF 下載","description":"免費下載英文字母練習表 PDF：A 到 Z 大小寫 52 個字形，四線三格描寫格線，每個字母先描再寫；附 26 個字母的格線位置表、b/d、p/q 常錯筆順提醒與 4–7 歲在家練習法。","inLanguage":"zh-Hant-TW","mainEntityOfPage":"https://americanenglish.com.tw/english-alphabet-worksheet/","image":"https://americanenglish.com.tw/assets/img/og-default.jpg","datePublished":"2026-10-07","dateModified":"2026-10-07","author":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"publisher":{"@id":"https://americanenglish.com.tw/#organization"},"isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"alternativeHeadline":"英文字母練習表 A–Z 大小寫描寫：四線三格免費 PDF 下載","hasPart":{"@id":"https://americanenglish.com.tw/english-alphabet-worksheet/#faq"}}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');if(!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};window._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}fbq('init','1023907773471013');fbq('track','PageView');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);var f=document.createElement('script');f.async=1;f.src='https://connect.facebook.net/en_US/fbevents.js';document.head.appendChild(f);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body>
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<nav class="drawer" id="drawer" aria-label="行動版選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></nav>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/blog/">部落格</a> ／ 英文字母練習表</div>
+    <span class="eyebrow reveal">免費列印 · 四線三格描寫</span>
+    <h1 class="reveal d1"><span class="h1s">英文字母練習表：</span><br><span class="h1s"><em>A–Z 大小寫描寫＋四線三格，免費 PDF 下載</em></span></h1>
+    <div class="divider reveal d1"></div>
+    <p class="body reveal d2">作者：Christopher｜埃森美語創辦人｜美國密西根大學畢業、美國正式教師執照<!-- AE:PAGEMETA start -->｜<span class="byl-d">最後更新 <time datetime="2026-10-07">2026 年 10 月 7 日</time></span><!-- AE:PAGEMETA end --></p>
+  </div>
+</section>
+
+<style>
+.wtable{width:100%;border-collapse:collapse;margin-top:14px;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(26,39,82,.06)}
+.wtable th,.wtable td{padding:9px 14px;border-bottom:1px solid rgba(26,39,82,.07);text-align:left;font-size:15px;vertical-align:top}
+.wtable th{font-family:'Baloo 2',sans-serif;color:var(--navy);white-space:nowrap}
+.ws-table .wtable td:first-child{font-family:'Baloo 2',sans-serif;font-size:19px;color:var(--navy);white-space:nowrap;text-align:center}
+.ws-err .wtable td:first-child{font-family:'Baloo 2',sans-serif;font-weight:700;color:var(--navy);white-space:nowrap}
+.ws-prev{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;max-width:900px;margin:18px auto 0}
+.ws-prev figure{margin:0;background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:18px;padding:10px;box-shadow:0 2px 10px rgba(26,39,82,.06)}
+.ws-prev img{width:100%;height:auto;display:block;border-radius:10px}
+.ws-prev figcaption{font-size:13.5px;line-height:1.6;color:var(--muted);margin-top:8px;text-align:center}
+</style>
+
+<section class="section">
+  <div class="wrap">
+<!-- AE:TOC --><nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span><a href="#練習表裡面有什麼">練習表裡面有什麼</a><a href="#練習表怎麼用47-歲每天-10-分鐘">練習表怎麼用：4–7 歲、每天 10 分鐘</a><a href="#四線三格是什麼26-個字母各寫在哪一格">四線三格是什麼？26 個字母各寫在哪一格</a><a href="#台灣孩子最常寫錯的字母bdpqSZ-與-gy-的尾巴">台灣孩子最常寫錯的字母：b/d、p/q、S/Z 與 g/y 的尾巴</a><a href="#英文字母練習常見問題">英文字母練習常見問題</a></nav><!-- /AE:TOC -->
+
+    <div class="prose reveal" style="max-width:800px;margin:0 auto">
+      <p>這一頁只做一件事：給你一份可以直接列印的<strong>英文字母練習表</strong>。A 到 Z 共 26 個字母、大小寫一起 52 個字形，全部排在台灣作業簿用的<strong>四線三格</strong>上——每個字母先印一個實心的範字，接著四個淺灰色的字讓孩子描，後面留四格讓他自己寫。10 頁 A4、免費、不用註冊，PDF 直接下載。</p>
+      <p>為什麼不乾脆用電腦字型印一張字母表？因為教孩子寫字和教孩子認字是兩件事。認字看螢幕就夠；寫字要有<strong>格線</strong>（讓他知道字母該多高、尾巴該多長）、要有<strong>描寫</strong>（手先記住路徑，再放手自己寫），還要用<strong>手寫體的字形</strong>——電腦字型的 a 和 g 是雙層的，孩子照著描會寫出奇怪的字。這份練習表三件事都處理好了。下面依序說明表裡有什麼、怎麼用、四線三格怎麼看、台灣孩子最常寫錯的幾組字母怎麼教。如果你搜尋的是「英文字母練習產生器」：這份不需要任何設定，下載就能印；要自訂內容（例如孩子的英文名字），最後一頁留了空白格線。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow">內容預覽</span><h2 id="練習表裡面有什麼">練習表裡面<em>有什麼</em></h2></div>
+    <div class="ws-prev reveal">
+      <figure><img src="/english-alphabet-worksheet/preview-1.webp" width="1199" height="1696" alt="英文字母練習表第 1 頁：A、B、C 大小寫四線三格描寫格，每個字母先描四次再寫四次" decoding="async"><figcaption>第 1 頁：A a、B b、C c——每個字母一行大寫、一行小寫，上方有例字與筆順提示</figcaption></figure>
+      <figure><img src="/english-alphabet-worksheet/preview-2.webp" width="1199" height="1696" alt="英文字母練習表第 10 頁：A 到 Z 大寫與 a 到 z 小寫整排描寫，加上空白四線三格自由練習" loading="lazy" decoding="async"><figcaption>第 10 頁：A–Z、a–z 整排描一次，再用空白格線自己寫</figcaption></figure>
+    </div>
+    <div class="prose reveal" style="max-width:800px;margin:22px auto 0">
+      <p><strong>26 個字母區塊，一頁三個。</strong>每個區塊最上面是放大的大小寫配對（A a）、一個以這個字母開頭的例字（apple 蘋果）和一行筆順提示；下面兩行四線三格，第一行練大寫、第二行練小寫。每一行的第一格是實心範字，接著四格淺灰色的字給孩子描，最後四格空白讓他自己寫——描四次、寫四次，一個字母一天就夠。</p>
+      <p><strong>格線照台灣作業簿的規格。</strong>四條線、三個格子，中間那一格有淺色底、上緣是虛線，基線（第三線）加粗——和學校英文作業簿一樣，孩子在這裡練熟了，到學校不用重新適應。字母的字形是手寫印刷體：單層的 a、帶勾的 g、q 的尾巴向右勾——都是老師在黑板上寫的樣子，不是電腦字型。</p>
+      <p><strong>最後一頁是 A–Z 整排。</strong>26 個大寫、26 個小寫各排成兩行淺灰字，描完一遍之後有兩行空白格線自己寫；頁尾再留兩行自由練習，可以寫孩子的英文名字、當天學到的單字。第 1 頁上方附四個步驟的使用說明，印出來交給阿公阿嬤或安親班也能照著帶。</p>
+      <div class="magnet-box reveal">
+  <p><strong>📄 免費下載：英文字母練習表（A4 列印版，10 頁）</strong><br>A–Z 大小寫四線三格描寫——直接下載、印出來，每天 10 分鐘、一次 2 到 3 個字母，比一口氣寫完一本有用。</p>
+  <a class="btn btn-primary" download href="/assets/downloads/ae-english-alphabet-worksheet-a4.pdf" onclick="window.gtag&amp;&amp;gtag('event','pdf_download',{file:'ae-english-alphabet-worksheet-a4.pdf',page_path:location.pathname})">免費下載 PDF</a>
+</div><!-- AE:NEXT start --><p class="ae-cta">下載之後：想知道孩子現在的英文程度？<a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">加 LINE 預約程度評估</a>　·　<a href="/free-trial/">試聽怎麼進行</a>　·　<a href="/banqiao-english-cram-school/">教室在板橋中正路</a></p><!-- AE:NEXT end -->
+      <p>列印時請選 A4、「實際大小」或 100%，不要「縮放至頁面」——格線的高度是算好的，縮放之後字母和格子就對不上了。喜歡的頁可以多印幾份；另外的免費字母表、發音表都在<a href="/download/">免費下載頁</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">使用方法</span><h2 id="練習表怎麼用47-歲每天-10-分鐘">練習表怎麼用：<em>4–7 歲、每天 10 分鐘</em></h2></div>
+    <div class="prose reveal" style="max-width:800px;margin:18px auto 0">
+      <p>這份練習表設計給 4 到 7 歲、剛開始握筆寫英文的孩子——幼兒園中大班到小一。年紀小的先只描、不寫；小一的可以描寫並進。不管幾歲，一次 2 到 3 個字母、每天 10 分鐘，比週末一口氣寫 10 頁有效得多：寫字是肌肉記憶，靠的是天天重複，不是一次寫很多。每一個字母請照下面四個動作走，順序不要變。</p>
+      <p><strong>第一步，描（trace，照著描）。</strong>沿著淺灰色的字母描，一筆一筆照上方的筆順提示走：A 是左斜、右斜、中間一橫；a 是先寫一個 c 再加直線。描的時候家長只盯一件事——起筆的位置對不對。起筆對了，方向就不會錯；b 和 d 寫反，十之八九是起筆位置錯了。</p>
+      <p><strong>第二步，寫（write，自己寫）。</strong>描完四個，在後面四個空格自己寫。這時候不要求一模一樣，只檢查兩件事：字母有沒有踩在基線上？該下樓的尾巴（g、j、p、q、y）有沒有下到第四線？寫得歪沒關係，位置對了就算過關。</p>
+      <p><strong>第三步，唸字母名稱（letter name，字母的名字）。</strong>每寫一個就唸一次名字：「A（ㄟ）、A、A……」。手在寫、嘴在唸、眼睛在看，三個管道同時進來，字母才會從「一個圖案」變成「一個有名字的東西」。W 的名字有三個音節（double-u，唸起來像「ㄉㄚ－ㄅㄛ－ㄧㄨ」），是最常被含糊帶過的字母，值得多唸幾次。</p>
+      <p><strong>第四步，唸一個單字（word，單字）。</strong>寫完這個字母，唸一次區塊上方的例字：apple（蘋果）、ball（球）、cat（貓）。這一步在偷偷做一件重要的事：讓孩子聽見字母在單字裡的「發音」——b 在 ball 裡只發短短的 /b/，不是它的名字「ㄅㄧ」。字母名稱和字母發音是兩回事，先在這裡混個耳熟，之後學<a href="/phonics-rules-chart/">自然發音</a>會順很多。</p>
+      <p>兩個小提醒。一、用粗一點的筆：三角鉛筆、2B 鉛筆或蠟筆，格線一格 8 公釐，細的自動鉛筆反而難控制。二、同一張紙不要同一天重複寫；寫滿了再印一張，隔幾天回頭寫同一個字母，才看得出有沒有真的記住。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap ws-table">
+    <div class="center stack reveal"><span class="eyebrow">四線三格</span><h2 id="四線三格是什麼26-個字母各寫在哪一格">四線三格是什麼？<em>26 個字母各寫在哪一格</em></h2></div>
+    <div class="prose reveal" style="max-width:800px;margin:14px auto 0">
+      <p>四線三格就是四條橫線隔出來的三個格子：第一線（最上面）、第二線（中間的虛線）、第三線（基線，字母站的地方）、第四線（最下面）。上面那格叫<strong>上格</strong>，中間叫<strong>中格</strong>，下面叫<strong>下格</strong>。規則只有三條：<strong>所有大寫字母住上面兩格</strong>，從第一線寫到基線；<strong>小寫字母的「身體」住中格</strong>；小寫裡有「頭」的（b、d、f、h、k、l、t）往上伸到第一線，有「尾巴」的（g、j、p、q、y）往下伸到第四線。孩子寫錯高度，幾乎都是這張表可以解決的事。下表把 26 個字母逐一列出來，右邊是這個字母最容易寫錯的地方，和練習表上用的例字。</p>
+    </div>
+    <div style="overflow-x:auto;max-width:900px;margin:0 auto">
+      <table class="wtable reveal">
+        <thead><tr><th>字母</th><th>大寫寫在哪</th><th>小寫寫在哪</th><th>寫法提醒</th><th>練習表例字</th></tr></thead>
+        <tbody>
+          <tr><td>A a</td><td>上面兩格</td><td>中格</td><td>大寫兩斜一橫；小寫 a 先寫 c 再加直線，不要寫成雙層的印刷體 a</td><td>apple 蘋果</td></tr>
+          <tr><td>B b</td><td>上面兩格</td><td>上面兩格</td><td>大寫先直線再兩個半圓；小寫 b 先直線再圓，圓在右邊——和 d 相反</td><td>ball 球</td></tr>
+          <tr><td>C c</td><td>上面兩格</td><td>中格</td><td>大小寫同形，小寫只住中格；從右上往左繞，一筆</td><td>cat 貓</td></tr>
+          <tr><td>D d</td><td>上面兩格</td><td>上面兩格</td><td>大寫直線加大半圓；小寫 d 先寫 c 再寫長直線，圓在左邊</td><td>dog 狗</td></tr>
+          <tr><td>E e</td><td>上面兩格</td><td>中格</td><td>大寫三橫一樣長；小寫 e 先橫再繞，開口在右下</td><td>egg 蛋</td></tr>
+          <tr><td>F f</td><td>上面兩格</td><td>上面兩格</td><td>大寫只有兩橫；小寫 f 從上面勾下來，橫線畫在第二線上</td><td>fish 魚</td></tr>
+          <tr><td>G g</td><td>上面兩格</td><td>中格＋下格</td><td>大寫像 C 加一橫；小寫 g 的尾巴要穿過第三線到第四線，向左勾</td><td>girl 女孩</td></tr>
+          <tr><td>H h</td><td>上面兩格</td><td>上面兩格</td><td>大寫中橫畫在第二線；小寫 h 長直線加一個拱門</td><td>hat 帽子</td></tr>
+          <tr><td>I i</td><td>上面兩格</td><td>中格（點在上格）</td><td>大寫一條直線，可加上下兩橫和小寫 l 分開；小寫 i 的點放在上格，不要碰到字</td><td>ice cream 冰淇淋</td></tr>
+          <tr><td>J j</td><td>上面兩格</td><td>中格＋下格（點在上格）</td><td>大寫直線往左勾，不穿過基線；小寫 j 尾巴到第四線、點在上格</td><td>juice 果汁</td></tr>
+          <tr><td>K k</td><td>上面兩格</td><td>上面兩格</td><td>兩條斜線在直線的中間相接；大小寫同形，小寫整個縮小</td><td>kite 風箏</td></tr>
+          <tr><td>L l</td><td>上面兩格</td><td>上面兩格</td><td>大寫直線加底橫；小寫 l 只是一條長直線，比 i 高一格</td><td>lion 獅子</td></tr>
+          <tr><td>M m</td><td>上面兩格</td><td>中格</td><td>大寫四筆，中間的尖點碰到基線；小寫 m 兩個拱門一樣高</td><td>monkey 猴子</td></tr>
+          <tr><td>N n</td><td>上面兩格</td><td>中格</td><td>大寫三筆，斜線從左上到右下；小寫 n 一個拱門</td><td>nose 鼻子</td></tr>
+          <tr><td>O o</td><td>上面兩格</td><td>中格</td><td>大小寫同形，從上面往左繞一圈；小寫只住中格</td><td>orange 柳橙</td></tr>
+          <tr><td>P p</td><td>上面兩格</td><td>中格＋下格</td><td>大寫半圓在上面；小寫 p 直線先下到第四線，圓在右邊——和 q 相反</td><td>pig 豬</td></tr>
+          <tr><td>Q q</td><td>上面兩格</td><td>中格＋下格</td><td>大寫是 O 加一條小尾巴；小寫 q 先圓再直線下到第四線，尾巴向右勾</td><td>queen 皇后</td></tr>
+          <tr><td>R r</td><td>上面兩格</td><td>中格</td><td>大寫是 P 加一條斜線；小寫 r 短直線加一個小彎</td><td>rabbit 兔子</td></tr>
+          <tr><td>S s</td><td>上面兩格</td><td>中格</td><td>從右上開始，先往左彎、再往右彎；方向寫反就變成鏡像</td><td>sun 太陽</td></tr>
+          <tr><td>T t</td><td>上面兩格</td><td>上面兩格（比 l 矮一點）</td><td>大寫上橫置中；小寫 t 比 l 矮，橫線畫在第二線上</td><td>tiger 老虎</td></tr>
+          <tr><td>U u</td><td>上面兩格</td><td>中格</td><td>大寫下來彎上去，一筆；小寫 u 右邊多一條短直線，和 n 上下相反</td><td>umbrella 雨傘</td></tr>
+          <tr><td>V v</td><td>上面兩格</td><td>中格</td><td>兩條斜線在基線尖尖相接；小寫同形縮小</td><td>violin 小提琴</td></tr>
+          <tr><td>W w</td><td>上面兩格</td><td>中格</td><td>兩個 V 相連，四筆；小寫同形縮小，和 m 上下相反</td><td>watermelon 西瓜</td></tr>
+          <tr><td>X x</td><td>上面兩格</td><td>中格</td><td>兩條斜線在中間交叉；小寫同形縮小</td><td>box 盒子（x 多在字尾）</td></tr>
+          <tr><td>Y y</td><td>上面兩格</td><td>中格＋下格</td><td>大寫兩短斜線在第二線相接、直線到基線；小寫 y 第二筆長斜線要到第四線</td><td>yellow 黃色</td></tr>
+          <tr><td>Z z</td><td>上面兩格</td><td>中格</td><td>上橫、斜線、下橫，三筆；小寫同形縮到中格；斜線方向和 S 一樣容易寫反</td><td>zebra 斑馬</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prose reveal" style="max-width:800px;margin:18px auto 0">
+      <p>整理一下：小寫只住中格的有 13 個（a、c、e、m、n、o、r、s、u、v、w、x、z），有頭的 7 個（b、d、f、h、k、l、t），有尾巴的 5 個（g、j、p、q、y），再加上一個 i——身體在中格、點在上格。這 26 個字母的唸法、順序和「字母名稱 vs 字母發音」的差別，在<a href="/english-alphabet-guide/">英文字母表</a>那一頁有完整對照。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap ws-err">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">常錯字母</span><h2 id="台灣孩子最常寫錯的字母bdpqSZ-與-gy-的尾巴">台灣孩子最常寫錯的字母：<em>b/d、p/q、S/Z 與 g/y 的尾巴</em></h2></div>
+    <div class="prose reveal" style="max-width:800px;margin:14px auto 0">
+      <p>教了這麼多年的小一小二，寫錯的字母就是固定那幾組：鏡像字母（b／d、p／q、S／Z）、尾巴沒下樓（g、y、j、p、q）、還有高度（t 寫得跟 l 一樣高）。先說結論：這些錯在 4 到 7 歲都很正常，是手和眼還在學「方向」的階段，不需要急，也不要用橡皮擦把孩子擦到不想寫。有用的是三樣東西——固定的筆順、一句口訣、和一個「寫完自己檢查」的動作。下表每一組都給你這三樣。</p>
+    </div>
+    <div style="overflow-x:auto;max-width:900px;margin:0 auto">
+      <table class="wtable reveal">
+        <thead><tr><th>常錯組合</th><th>常見錯法</th><th>正確寫法（筆順）</th><th>口訣與檢查法</th></tr></thead>
+        <tbody>
+          <tr><td>b ／ d</td><td>兩個互換，或整個寫成鏡像</td><td>b：先寫直線（第一線到第三線），再在右邊繞圓。d：先寫 c，再在右邊加一條長直線。</td><td>b 的肚子在右、d 的肚子在左。兩手握拳、豎起大拇指比出 bed（床）：左手是 b、右手是 d。</td></tr>
+          <tr><td>p ／ q</td><td>兩個互換</td><td>p：直線從第二線直下到第四線，圓在右邊。q：先寫圓，直線下到第四線，尾巴向右勾一下。</td><td>p 的肚子朝右、q 的肚子朝左；兩個的尾巴都要下到第四線。</td></tr>
+          <tr><td>S ／ Z（也常見 N）</td><td>左右顛倒的鏡像</td><td>S 從右上出發，先往左彎、再往右彎，結束在左下。Z 的上橫從左到右，斜線由右上到左下，下橫再從左到右。</td><td>S 像一條從右上出發的小蛇；Z 的斜線「右上到左下」。先描灰字一次再自己寫，描的時候手會記住方向。</td></tr>
+          <tr><td>g ／ y ／ j ／ p ／ q 的尾巴</td><td>尾巴停在基線上，看起來像 a、u、i</td><td>尾巴要穿過第三線（基線），到第四線附近才結束：g、j 向左勾，y 向左彎，p、q 直直下去。</td><td>口訣「有尾巴的字母要下樓」。寫完檢查一件事：下格有沒有東西？</td></tr>
+          <tr><td>i ／ j 的點</td><td>點黏在字母上、或畫成一個小圈</td><td>點放在上格，和字母之間留一點空隙；是小點，不是圈。</td><td>口訣「i 的帽子不要壓到頭」。</td></tr>
+          <tr><td>t ／ l</td><td>t 寫得和 l 一樣高，橫線畫得太高</td><td>t 比 l 矮一點，頂端不碰到第一線；橫線畫在第二線（虛線）上。</td><td>檢查：t 的橫線是不是剛好在虛線上？</td></tr>
+          <tr><td>大寫 I ／ 小寫 l</td><td>兩個都寫成一條直線，分不出來</td><td>手寫時大寫 I 可以加上下兩橫；小寫 l 永遠只是一條長直線。</td><td>「我」永遠寫大寫 I；一條光禿禿的直線，在單字裡幾乎都是 l。</td></tr>
+          <tr><td>u ／ n、m ／ w</td><td>上下顛倒</td><td>u 開口向上、右邊多一條短直線；n 是一個拱門；m 是兩個拱門；w 是兩個 v 相連。</td><td>u 像杯子裝水、n 像隧道；m 是兩座山、w 是兩個山谷。</td></tr>
+          <tr><td>句子裡混進大寫</td><td>句子中間突然出現大寫 B、D、K，因為大寫比較好寫</td><td>英文句子以小寫為主，大寫只用在句首、人名地名和「我」I。</td><td>檢查：一句話裡有幾個大寫？多半只有第一個。</td></tr>
+          <tr><td>字母飄離格線</td><td>字母浮在中格上方，或壓到第四線</td><td>每個字母的「腳」都要踩在第三線（基線）上；只有有尾巴的字母才下到下格。</td><td>口訣「所有字母都要站在地板上」。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prose reveal" style="max-width:800px;margin:18px auto 0">
+      <p>最後一個家長常問的：要不要在孩子寫錯時立刻糾正？描的階段要——起筆錯了馬上指出來，因為描的目的就是把正確路徑練進手裡。自己寫的階段先不要——讓他寫完一行，再請他自己對照第一格的範字找出「哪一個最像」，圈起來。孩子自己找到的差異，比大人指出來的記得牢。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">常見問題</span><h2 id="英文字母練習常見問題">英文字母練習<em>常見問題</em></h2></div>
+    <div class="faq" style="max-width:800px;margin:18px auto 0">
+      <div class="faq-item"><h3 id="幾歲可以開始寫英文字母" class="faq-h"><button class="faq-q" aria-expanded="false">幾歲可以開始寫英文字母？<span class="pm"></span></button></h3><div class="faq-a"><p>一般是 4 到 7 歲，也就是幼兒園中大班到小一這段。判斷標準不是年齡，是手：孩子能握筆畫出直線和圓圈，就可以開始「描」；描得穩了再「寫」。這份練習表的字母格一格 8 公釐，刻意放大，用粗一點的鉛筆或蠟筆都好寫。每天 10 分鐘、一次 2 到 3 個字母就夠，不要一口氣寫完一本。</p></div></div>
+      <div class="faq-item"><h3 id="要先練大寫還是先練小寫" class="faq-h"><button class="faq-q" aria-expanded="false">要先練大寫還是先練小寫？<span class="pm"></span></button></h3><div class="faq-a"><p>一起認，但順序上先描大寫。大寫直線多、筆畫分開，4、5 歲的手比較控制得住；小寫有圓、有尾巴，需要更細的手腕動作。不過小寫才是孩子之後讀書、寫作業最常用到的字形，所以不能停在大寫。這份練習表每個字母都是大寫一行、小寫一行緊接著，描完 A 馬上描 a，兩種字形自然配對。</p></div></div>
+      <div class="faq-item"><h3 id="孩子-b-和-d-一直寫反正常嗎" class="faq-h"><button class="faq-q" aria-expanded="false">孩子 b 和 d 一直寫反，正常嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>正常。b／d、p／q 這種鏡像字母，在 4 到 7 歲寫反非常普遍，多數孩子隨著讀寫經驗累積會自己分開，不需要為此責備。有效的做法是給他一個固定的筆順：b 先寫直線再在右邊繞圓，d 先寫 c 再在右邊加直線；再配一個口訣，例如兩手握拳、豎起大拇指比出 bed（床），左手是 b、右手是 d。如果到小二之後還經常寫反，而且閱讀也明顯吃力，再和學校老師討論。</p></div></div>
+      <div class="faq-item"><h3 id="這份練習表可以影印給全班或分享嗎" class="faq-h"><button class="faq-q" aria-expanded="false">這份練習表可以影印給全班或分享嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>可以。這份 PDF 免費提供家庭和教室使用，影印幾份都可以，請保留頁尾的出處 americanenglish.com.tw；放到自己的網站或社團分享時，請註明出處並連回本頁。唯一不行的是去掉出處之後拿去販售。完整授權說明請見本站的圖表授權頁。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AE:ROUTE -->
+<section class="section bg-soft">
+  <div class="wrap">
+    <span class="eyebrow eyebrow-yellow">字母會寫了，下一步</span>
+    <h2 id="會描會寫之後開始認字" style="margin-top:14px">會描會寫之後，<em>開始認字</em></h2>
+    <div class="divider" style="margin:18px 0 22px"></div>
+    <p class="body" style="max-width:720px">字母寫得穩，下一步是把字母變成聲音、再變成字。先回頭把 26 個字母的唸法對清楚，接著學字母在單字裡的發音（自然發音），再認那些拼不出來、只能用看的常見字。Starters（劍橋兒童英檢第一級）的「排字母拼單字」練習是很好的第一份作業。都免費、不用註冊。</p>
+    <div style="margin-top:20px"><a href="/english-alphabet-guide/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">26 個字母表（唸法對照）</a><a href="/phonics-rules-chart/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">自然發音規則總表</a><a href="/sight-words-guide/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">Sight Words 常見字指南</a><a href="/starters-rw-practice-part3/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">Starters 排字母拼單字</a><a href="/download/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">所有免費 A4 下載</a></div>
+  </div>
+</section>
+<!-- /AE:ROUTE -->
+<section class="section bg-blue">
+  <div class="wrap center stack reveal">
+    <span class="eyebrow">下一步</span>
+    <h2 id="字母寫得穩了接下來讀什麼" style="margin-top:12px">字母寫得穩了，<em>接下來讀什麼</em>？</h2>
+    <div class="divider"></div>
+    <p class="body" style="max-width:680px">描寫是入場券，讓孩子真正開始「讀」英文的是下一步。接著讀：<a href="/english-alphabet-guide/">26 個英文字母表（唸法對照）</a>、<a href="/phonics-rules-chart/">自然發音規則表</a>、<a href="/sight-words-guide/">Sight Words 常見字指南</a>、<a href="/download/">所有免費 A4 列印版</a>。不確定孩子現在該從哪一步開始？帶來給我們看看。</p>
+    <a class="btn btn-primary" href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 預約免費程度評估</a>
+  </div>
+</section>
+
+<!-- AE:BYL start --><div class="page-meta"><div class="wrap"><span>作者：<a href="/certified-american-teacher-banqiao/">Christopher｜埃森美語創辦人</a>（<a href="/certified-american-teacher-banqiao/">關於作者</a>）</span></div></div>
+<!-- AE:BYL end --></main>
+<!-- AE:FOOT start -->
+<footer class="site-footer"><div class="wrap"><div class="foot-grid"><div><div class="foot-logo"><img class="foot-logo-img" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="34" height="34" loading="lazy" decoding="async">American English 埃森美語</div><p class="foot-tag">板橋中正路在地深耕的美籍外師英文補習班。100% 美籍持證教師、每班 12 人小班制。</p><p class="foot-nap">220 新北市板橋區中正路89巷4號1樓<span class="foot-sep">　｜　</span><a href="tel:+886928067772">☎ 0928-067-772</a></p></div><nav class="foot-links" aria-label="頁尾導覽"><div class="foot-col"><p class="foot-h">課程</p><a href="/banqiao-english-cram-school/">板橋英文補習班</a><a href="/courses/">課程總覽</a><a href="/kids-english-banqiao/">兒童美語</a><a href="/junior-high-english-banqiao/">國中英文</a><a href="/free-trial/">預約試聽</a></div><div class="foot-col"><p class="foot-h">學習資源</p><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/english-pronunciation/">英文發音</a><a href="/download/">免費下載</a><a href="/chart-license/">圖表授權</a></div><div class="foot-col"><p class="foot-h">關於</p><a href="/certified-american-teacher-banqiao/">師資介紹</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="/contact/">聯絡與交通</a></div><div class="foot-col"><p class="foot-h">聯絡</p><a href="tel:+886928067772">電話 0928-067-772</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 線上預約</a><a href="https://maps.app.goo.gl/hLChkEqAMKCsMWpm6" target="_blank" rel="noopener">Google 地圖位置</a><a href="https://www.facebook.com/profile.php?id=61576014571186" target="_blank" rel="noopener">Facebook 粉絲專頁</a></div></nav></div><div class="foot-bottom"><span>© 2026 American English 埃森美語</span><span>私立埃森美語文理短期補習班　｜　新北市政府立案 社補教社字第115026號　｜　統一編號 61476523</span><span>220 新北市板橋區中正路89巷4號1樓</span></div><div class="foot-pref"><div google-add-preferred-source-btn data-theme="dark" data-lang="zh-TW"></div></div></div></footer>
+<!-- AE:FOOT end -->
+<script src="/assets/app.js?v=069e8d41"></script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<link rel="stylesheet" href="/assets/styles.css?v=0e2e6e17">
+<!-- AE:CRIT end -->
+<!-- AE:FONTS start -->
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2">
+<style>@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0vrx52jJ3Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB3vD2xWr53BJl.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZOIHTWEBlw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58UfivUw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKK58UfivUw4aw.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+<!-- AE:FONTS end -->
+<meta name="theme-color" content="#1A2752">
+<title>新年快樂英文怎麼說？2027 農曆年祝福 20 句＋50 單字（附 PDF）｜埃森美語</title>
+<meta name="description" content="新年快樂英文＝Happy New Year（沒有 s）！農曆新年 2027 年 2 月 6 日、羊年。20 句祝福語、50 個過年單字、email 範本、6 句介紹過年，附 A4 列印版 PDF。">
+<link rel="canonical" href="https://americanenglish.com.tw/new-year-english/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="新年快樂英文怎麼說？2027 農曆年祝福 20 句＋50 單字（附 PDF）">
+<meta property="og:description" content="新年快樂英文＝Happy New Year（沒有 s）！農曆新年 2027 年 2 月 6 日、羊年。20 句祝福語、50 個過年單字、email 範本、6 句介紹過年，附 A4 列印版 PDF。">
+<meta property="og:url" content="https://americanenglish.com.tw/new-year-english/">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/new-year-english/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/new-year-english/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:image" content="https://americanenglish.com.tw/assets/img/charts/new-year-chart.webp">
+<meta property="og:site_name" content="American English 埃森美語">
+<meta property="og:image:alt" content="新年快樂英文怎麼說？元旦、農曆新年祝福語、單字一次學會">
+<meta name="twitter:image" content="https://americanenglish.com.tw/assets/img/charts/new-year-chart.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://americanenglish.com.tw/blog/"},{"@type":"ListItem","position":3,"name":"新年快樂英文怎麼說？元旦、農曆新年祝福語、單字一次學會"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://americanenglish.com.tw/new-year-english/#faq","url":"https://americanenglish.com.tw/new-year-english/","inLanguage":"zh-Hant-TW","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"mainEntity":[{"@type":"Question","name":"新年快樂英文是 Happy New Year 還是 Happy New Years？","acceptedAnswer":{"@type":"Answer","text":"正確是 Happy New Year，New Year 後面沒有 s。Happy New Years 是常見的錯誤，連美國人口語都會說溜嘴，但寫在卡片、作文、email 上就是錯的。帶一撇的 New Year's 是所有格，只用在 New Year's Eve（跨年夜）、New Year's Day（元旦）、New Year's resolution（新年新希望）這類「新年的某樣東西」上。"}},{"@type":"Question","name":"農曆新年英文是 Chinese New Year 還是 Lunar New Year？Spring Festival 呢？","acceptedAnswer":{"@type":"Answer","text":"三個都對。Chinese New Year 是美國最多人聽得懂的說法；Lunar New Year 是近年英語媒體和學校越來越常用的說法，因為韓國、越南也過同一天的新年，用 Lunar 比較包容；Spring Festival 是「春節」的直譯，中國官方和中國課本常用，英美人士日常幾乎不講。孩子寫作文、考試用 Chinese New Year 或 Lunar New Year 都可以，記得每個字開頭大寫。農曆新年快樂就是 Happy Lunar New Year! 或 Happy Chinese New Year!。"}},{"@type":"Question","name":"「聖誕快樂、新年快樂」英文怎麼說？","acceptedAnswer":{"@type":"Answer","text":"最完整的說法是 Merry Christmas and a Happy New Year!（中間有 a），口語和卡片上省略 a 也很常見。寫在卡片或 email 結尾時把驚嘆號改成逗號：Merry Christmas and a Happy New Year, 再換行署名。不確定對方過不過聖誕節就說 Happy Holidays!（佳節愉快），一句話涵蓋聖誕節到元旦。注意這句祝的是 1 月 1 日的新年；農曆年要另外說 Happy Lunar New Year!。"}},{"@type":"Question","name":"2027 年是什麼生肖年？羊年英文是 Goat、Sheep 還是 Ram？","acceptedAnswer":{"@type":"Answer","text":"2027 年是羊年，從 2027 年 2 月 6 日農曆大年初一開始算，在那之前出生的還是馬年。羊年的英文三種都有人用：Year of the Goat（山羊）、Year of the Sheep（綿羊）、Year of the Ram（公羊），美國媒體最常見的是 Year of the Goat，三個都算對。祝福句可以說 Wishing you a prosperous Year of the Goat!（祝你羊年興旺！）。2028 年 1 月 26 日起就是猴年 the Year of the Monkey。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://americanenglish.com.tw/#website","url":"https://americanenglish.com.tw/","name":"American English 埃森美語","alternateName":["埃森美語","埃森美語 American English"],"inLanguage":"zh-Hant-TW","publisher":{"@id":"https://americanenglish.com.tw/#organization"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"https://americanenglish.com.tw/#organization","name":"埃森美語 American English","alternateName":["埃森美語","American English 埃森美語","American English","埃森美語 - American English Institute"],"legalName":"私立埃森美語文理短期補習班","taxID":"61476523","description":"板橋中正路在地深耕的美籍外師英文補習班，提供 100% 美籍持證教師、每班 12 人小班制的兒童美語與國中英文課程。","url":"https://americanenglish.com.tw/","telephone":"+886-928-067-772","image":["https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","https://americanenglish.com.tw/assets/img/banqiao-small-class-english-classroom.webp","https://americanenglish.com.tw/assets/img/banqiao-kids-english-class.webp","https://americanenglish.com.tw/assets/img/certified-american-teacher-banqiao.webp","https://americanenglish.com.tw/assets/img/kids-confident-english-speaking.webp"],"logo":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"中正路89巷4號1樓","addressLocality":"板橋區","addressRegion":"新北市","postalCode":"220","addressCountry":"TW"},"geo":{"@type":"GeoCoordinates","latitude":25.0145617,"longitude":121.4560468},"areaServed":{"@type":"AdministrativeArea","name":"板橋區","containedInPlace":{"@type":"AdministrativeArea","name":"新北市"}},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"19:00"}],"sameAs":["https://www.google.com/maps?cid=11837760024257631170","https://lin.ee/W9J8TuQ","https://www.facebook.com/profile.php?id=61576014571186"],"hasMap":"https://www.google.com/maps?cid=11837760024257631170","founder":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"knowsLanguage":["en-US","zh-TW"],"knowsAbout":["兒童美語","國中英文","美籍外師英語教學","Phonics 自然發音","劍橋兒童英檢 (Cambridge YLE)","GEPT 全民英檢","國中教育會考英文","英語會話與口說","板橋英文補習班"],"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+886-928-067-772","url":"https://lin.ee/W9J8TuQ","availableLanguage":["zh-TW","en"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","@id":"https://americanenglish.com.tw/new-year-english/#article","url":"https://americanenglish.com.tw/new-year-english/","headline":"新年快樂英文怎麼說？元旦、農曆新年祝福語、單字一次學會","description":"新年快樂英文＝Happy New Year（沒有 s）！農曆新年 2027 年 2 月 6 日、羊年。20 句祝福語、50 個過年單字、email 範本、6 句介紹過年，附 A4 列印版 PDF。","inLanguage":"zh-Hant-TW","mainEntityOfPage":"https://americanenglish.com.tw/new-year-english/","image":"https://americanenglish.com.tw/assets/img/charts/new-year-chart.webp","datePublished":"2026-10-07","dateModified":"2026-10-07","author":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"publisher":{"@id":"https://americanenglish.com.tw/#organization"},"isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"alternativeHeadline":"新年快樂英文怎麼說？2027 農曆年祝福 20 句＋50 單字（附 PDF）","hasPart":{"@id":"https://americanenglish.com.tw/new-year-english/#faq"}}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');if(!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};window._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}fbq('init','1023907773471013');fbq('track','PageView');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);var f=document.createElement('script');f.async=1;f.src='https://connect.facebook.net/en_US/fbevents.js';document.head.appendChild(f);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body>
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<nav class="drawer" id="drawer" aria-label="行動版選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></nav>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/blog/">部落格</a> ／ 新年快樂英文</div>
+    <span class="eyebrow reveal">節慶英文 · 祝福語＋單字</span>
+    <h1 class="reveal d1"><span class="h1s">新年快樂英文怎麼說？</span><br><span class="h1s"><em>元旦、農曆新年祝福語、單字一次學會</em></span></h1>
+    <div class="divider reveal d1"></div>
+    <p class="body reveal d2">作者：Christopher｜埃森美語創辦人｜美國密西根大學畢業、美國正式教師執照<!-- AE:PAGEMETA start -->｜<span class="byl-d">最後更新 <time datetime="2026-10-07">2026 年 10 月 7 日</time></span><!-- AE:PAGEMETA end --></p>
+  </div>
+</section>
+
+<style>
+.pboard{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:10px;margin-top:16px}
+.pboard .pb{background:#fff;border:1.5px solid rgba(26,39,82,.10);border-radius:16px;padding:10px 6px;text-align:center}
+.pboard .pb svg{width:100%;max-width:92px;display:block;margin:0 auto}
+.pboard .pb b{display:block;font-family:'Baloo 2',sans-serif;font-size:15px;color:var(--navy);margin-top:3px}
+.pboard .pb span{display:block;font-size:12.5px;color:#64748b}
+.wtable{width:100%;border-collapse:collapse;margin-top:14px;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(26,39,82,.06)}
+.wtable th,.wtable td{padding:9px 14px;border-bottom:1px solid rgba(26,39,82,.07);text-align:left;font-size:15px}
+.wtable th{font-family:'Baloo 2',sans-serif;color:var(--navy);width:42%}
+.tgroup{margin-top:26px}
+.tgroup h3{font-size:clamp(19px,2.4vw,23px)}
+.tgroup h3 .gnum{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:11px;background:var(--gc);color:var(--navy);font-family:'Baloo 2',sans-serif;font-size:15px;margin-right:10px;box-shadow:0 3px 0 var(--gcd)}
+.card-demo{background:#fff8f3;border:1px solid #efe4d8;border-radius:18px;padding:24px 28px;margin-top:18px;font-size:16px;line-height:2;color:var(--navy);box-shadow:0 2px 10px rgba(26,39,82,.06)}
+.card-demo .en{font-style:italic}
+.card-note{background:#F4FAFF;border:1px solid rgba(28,176,246,.22);border-radius:18px;padding:18px 22px;margin-top:14px;font-size:14.5px;line-height:1.9;color:var(--text-body)}
+</style>
+
+<section class="section">
+  <div class="wrap">
+<!-- AE:TOC --><nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span><a href="#新年快樂英文怎麼說Happy-New-Year-沒有-s">新年快樂英文怎麼說？Happy New Year 沒有 s</a><a href="#新年快樂英文祝福20-句分對象用">新年快樂英文祝福 20 句分對象用</a><a href="#農曆新年英文單字50-個分組學">農曆新年英文單字 50 個分組學</a><a href="#新年英文-email-怎麼寫">新年英文 email 怎麼寫</a><a href="#教孩子用英文介紹農曆新年">教孩子用英文介紹農曆新年</a><a href="#新年快樂英文常見問題">新年快樂英文常見問題</a></nav><!-- /AE:TOC -->
+
+    <div class="prose reveal" style="max-width:800px;margin:0 auto">
+      <p style="background:var(--light-blue);border-radius:16px;padding:14px 18px"><strong>新年快樂的英文：</strong>Happy New Year!（元旦、農曆年都用這句，New Year 後面沒有 s）　<strong>農曆新年快樂：</strong>Happy Lunar New Year! 或 Happy Chinese New Year!</p>
+      <p>台灣一年過兩次新年，英文也分兩套：1 月 1 日的元旦是 <strong>New Year's Day</strong>，前一晚跨年是 <strong>New Year's Eve</strong>；農曆新年是 <strong>Lunar New Year</strong> 或 <strong>Chinese New Year</strong>。2027 年的日期先記好：元旦 1 月 1 日是星期五，可以連休到 1 月 3 日；農曆新年（大年初一）是 <strong>2027 年 2 月 6 日（六）</strong>，除夕是 2 月 5 日（五），春節連假從 2 月 4 日（四）小年夜一路放到 2 月 10 日（三），共 7 天（初一、初二遇到週末，2 月 9、10 日補假；以行政院人事行政總處公布的行事曆為準）。2027 年是<strong>羊年</strong>，英文說 <strong>the Year of the Goat</strong>；元宵節則是 2 月 20 日（六）。</p>
+      <p>這一頁把兩個新年會用到的英文一次整理好：Happy New Year 為什麼沒有 s、Lunar New Year／Chinese New Year／Spring Festival 三個名稱怎麼選、20 句依對象分組的祝福語、50 個過年單字（含十二生肖對照表）、一封寫給老師的新年 email 範本，最後是 6 句教孩子用英文介紹農曆新年。</p>
+      <p>每年寒假結束回到教室，外師第一句常常是「How was your Chinese New Year?」（你的農曆新年過得怎麼樣？）。孩子明明領了紅包、吃了年夜飯、放了鞭炮、看了舞獅，卻只擠得出一句 Happy New Year。節慶英文的好處是自帶真實情境：紅包就在口袋裡、春聯就貼在門上，孩子說的每一句都是「剛剛發生的事」，比抄課本記得牢。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow">怎麼說、怎麼分</span><h2 id="新年快樂英文怎麼說Happy-New-Year-沒有-s">新年快樂英文怎麼說？<em>Happy New Year 沒有 s</em></h2></div>
+    <div class="prose reveal" style="max-width:800px;margin:18px auto 0">
+      <p>先把最常見的錯誤講掉：「新年快樂」是 <strong>Happy New Year!</strong>，三個字，<strong>New Year 後面沒有 s</strong>。很多人（連美國人口語都會）說成 Happy New Years，但那是不標準的，寫在卡片、作文、email 上會被當成拼錯。混淆的來源是 <strong>New Year's</strong>——帶一撇的所有格：New Year's Eve（跨年夜、12 月 31 日）、New Year's Day（元旦、1 月 1 日）、New Year's resolution（新年新希望）。規則很簡單：祝福語 Happy New Year 沒有 s；指「新年的某一天、某樣東西」才用 New Year's＋名詞。</p>
+      <p>兩個新年最常用的 18 個說法先放在這一張表，從跨年夜到元宵節、從紅包到春聯，傳給外師或貼在書桌前都夠用：</p>
+      <div style="overflow-x:auto">
+<div class="magnet-box reveal">
+  <p><strong>📄 免費下載：新年快樂英文祝福與過年單字表（A4 列印版）</strong><br>新年英文說法、祝福語與過年單字——直接下載，印出來貼在書桌前，每天看一眼比坐下來背一次有用。</p>
+  <a class="btn btn-primary" download href="/assets/downloads/ae-new-year-english-a4.pdf" onclick="window.gtag&amp;&amp;gtag('event','pdf_download',{file:'ae-new-year-english-a4.pdf',page_path:location.pathname})">免費下載 PDF</a>
+</div><!-- AE:NEXT start --><p class="ae-cta">下載之後：想知道孩子現在的英文程度？<a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">加 LINE 預約程度評估</a>　·　<a href="/free-trial/">試聽怎麼進行</a>　·　<a href="/banqiao-english-cram-school/">教室在板橋中正路</a></p><!-- AE:NEXT end -->
+<!-- AE:CHART new-year-chart start -->
+<figure class="chart-fig">
+  <img src="/assets/img/charts/new-year-chart.webp" width="1500" height="1109"
+       alt="新年快樂英文對照表：Happy New Year、Lunar New Year 的說法，除夕、初一、紅包、春聯、年夜飯等過年單字" loading="lazy" decoding="async">
+  <figcaption>新年快樂英文說法與過年單字——可儲存或列印｜埃森美語 americanenglish.com.tw</figcaption>
+</figure>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageObject","contentUrl":"https://americanenglish.com.tw/assets/img/charts/new-year-chart.webp","url":"https://americanenglish.com.tw/assets/img/charts/new-year-chart.webp","width":1500,"height":1109,"caption":"新年快樂英文對照表：Happy New Year、Lunar New Year 的說法，除夕、初一、紅包、春聯、年夜飯等過年單字","name":"新年快樂英文說法與過年單字","creditText":"American English 埃森美語","copyrightNotice":"© 2026 American English 埃森美語 — 免費使用，請註明出處並連回 americanenglish.com.tw/chart-license/","creator":{"@type":"Organization","name":"埃森美語 American English","url":"https://americanenglish.com.tw/"},"license":"https://americanenglish.com.tw/chart-license/","acquireLicensePage":"https://americanenglish.com.tw/chart-license/"}</script>
+<!-- AE:CHART new-year-chart end -->
+<table class="wtable"><thead><tr><th>英文</th><th>中文意思</th></tr></thead><tbody>
+        <tr><th>Happy New Year!</th><td>新年快樂！（元旦、農曆年都能用；New Year 後面沒有 s）</td></tr>
+        <tr><th>Happy Lunar New Year!</th><td>農曆新年快樂！（近年最常見的說法）</td></tr>
+        <tr><th>Happy Chinese New Year!</th><td>農曆新年快樂！（美國最多人聽得懂）</td></tr>
+        <tr><th>New Year's Day</th><td>元旦，1 月 1 日（2027 年是星期五）</td></tr>
+        <tr><th>New Year's Eve</th><td>跨年夜，12 月 31 日（跨年倒數 the countdown）</td></tr>
+        <tr><th>Lunar New Year / Chinese New Year</th><td>農曆新年、過年（2027 年 2 月 6 日）</td></tr>
+        <tr><th>Spring Festival</th><td>春節（中國官方與中國課本的譯法，英美人士日常少用）</td></tr>
+        <tr><th>Lunar New Year's Eve</th><td>除夕（2027 年 2 月 5 日）</td></tr>
+        <tr><th>the first day of the Lunar New Year</th><td>大年初一</td></tr>
+        <tr><th>the Lunar New Year holiday</th><td>春節連假、過年假期（2027 年 2 月 4 日到 10 日，共 7 天）</td></tr>
+        <tr><th>red envelope</th><td>紅包（裡面的壓歲錢是 lucky money）</td></tr>
+        <tr><th>spring couplets</th><td>春聯（貼春聯 put up spring couplets）</td></tr>
+        <tr><th>reunion dinner</th><td>年夜飯、團圓飯</td></tr>
+        <tr><th>firecrackers</th><td>鞭炮（放鞭炮 set off firecrackers）</td></tr>
+        <tr><th>the Year of the Goat</th><td>羊年（2027 年；也可說 Year of the Sheep）</td></tr>
+        <tr><th>the Chinese zodiac</th><td>十二生肖（你屬什麼？What's your Chinese zodiac sign?）</td></tr>
+        <tr><th>the Lantern Festival</th><td>元宵節，農曆正月十五（2027 年 2 月 20 日）</td></tr>
+        <tr><th>the lunar calendar</th><td>農曆（大年初一 the first day of the lunar calendar）</td></tr>
+      </tbody></table></div>
+      <p style="margin-top:16px">再來是「農曆新年」的三個英文名稱，爸媽最常問哪個才對——其實三個都對，差別在誰在用：</p>
+      <div style="overflow-x:auto"><table class="wtable"><thead><tr><th>說法</th><th>什麼時候用</th></tr></thead><tbody>
+        <tr><th>Chinese New Year</th><td>美國最多人聽得懂的說法（常縮寫 CNY）；跟外師、外國朋友講這個最保險</td></tr>
+        <tr><th>Lunar New Year</th><td>近年英語媒體、學校、企業越來越常用；對方是韓國、越南朋友，或不想強調「中國」時用這個</td></tr>
+        <tr><th>Spring Festival</th><td>「春節」的直譯，中國官方與中國課本常用；英美人士日常幾乎不講，看得懂即可</td></tr>
+      </tbody></table></div>
+      <p style="margin-top:16px"><strong>Chinese New Year</strong>（直譯就是「中國新年」）是美國最多人聽得懂的說法，紐約、舊金山的 Chinatown 每年都辦 Chinese New Year parade（農曆新年遊行），跟外師或外國朋友講這個，對方馬上有畫面。<strong>Lunar New Year</strong>（農曆新年）是近年英語媒體、學校和企業越來越常用的說法，因為韓國（Seollal）、越南（Tết）也過同一天的新年，用 Lunar 不會把節日限定在「中國」；對方是韓國、越南朋友，或你不想特別強調「中國」兩個字時，Lunar New Year 最合適。<strong>Spring Festival</strong> 是「春節」的直譯，是中國官方和中國課本常用的英文，英美人士日常幾乎不講，聽得懂、看得懂就好，自己開口不必用它。給爸媽一個簡單的判斷原則：孩子寫作文、考試，Chinese New Year 和 Lunar New Year 都是正確答案，記得每個字開頭大寫；跟外師聊天，兩個都通；想說「過年」這件事本身，口語說 the Lunar New Year holiday 或直接說 the holiday 就好。</p>
+      <p><strong>大小寫：</strong>Happy New Year 當祝福語獨立出現時三個字都大寫；放在句子裡講「新的一年」則小寫：<em>I hope you have a happy new year.</em>（希望你有個快樂的新年。）。Chinese New Year、Lunar New Year、New Year's Eve 是專有名詞，每個字開頭都大寫。<strong>介系詞：</strong>「在元旦那天」用 on（<em>on New Year's Day</em>），「在跨年夜」也用 on（<em>on New Year's Eve</em>），「過年期間」用 during（<em>during the Lunar New Year</em>）；美國人口語也說 <em>at New Year's</em>，跟 at Christmas 同一個用法。分不清的話見<a href="/in-on-at-prepositions/">in／on／at 介係詞怎麼分</a>。至於「農曆」，英文是 the lunar calendar，大年初一就是 <em>the first day of the lunar calendar</em>——對外國人解釋「為什麼過年每年日期都不一樣」時這句最好用；想把 February sixth 這種日期唸對，見<a href="/english-dates-guide/">英文日期怎麼說</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">祝福語</span><h2 id="新年快樂英文祝福20-句分對象用">新年快樂英文祝福 <em>20 句分對象用</em></h2></div>
+    <div class="prose reveal" style="max-width:800px;margin:18px auto 0">
+      <p>「新年快樂」最直接的英文就是 <strong>Happy New Year!</strong>——元旦可以說，農曆年也可以說，跨年倒數歸零那一秒全場喊的也是這三個字。想說得更完整，下面 20 句依對象分成四組：朋友、長輩與老師、同事與 email、農曆年專用。每句都可以直接複製，傳 LINE 給外師、寫在卡片或 email 結尾都用得上。2027 年是羊年，農曆年那一組已經把 the Year of the Goat 放進句子裡，明年把 Goat 換成 Monkey 就能繼續用。</p>
+    </div>
+
+    <div class="tgroup reveal" style="--gc:#1CB0F6;--gcd:#1391cc;max-width:800px;margin-left:auto;margin-right:auto"><h3 id="01朋友同學短短一句最自然5-句"><span class="gnum">01</span>朋友、同學：短短一句最自然（5 句）</h3>
+      <div style="overflow-x:auto"><table class="wtable"><thead><tr><th>英文祝福語</th><th>中文意思</th></tr></thead><tbody>
+        <tr><th>Happy New Year!</th><td>新年快樂！（最標準，元旦、農曆年都能用）</td></tr>
+        <tr><th>Happy New Year, everyone!</th><td>大家新年快樂！（對一群人、班級群組）</td></tr>
+        <tr><th>Wishing you a happy and healthy 2027!</th><td>祝你 2027 年快樂又健康！</td></tr>
+        <tr><th>Have a great year ahead!</th><td>祝你接下來這一年很棒！（口語，朋友之間）</td></tr>
+        <tr><th>Hope this year is your best one yet!</th><td>希望今年是你目前為止最棒的一年！</td></tr>
+      </tbody></table></div>
+    </div>
+
+    <div class="tgroup reveal" style="--gc:#06C755;--gcd:#04a046;max-width:800px;margin-left:auto;margin-right:auto"><h3 id="02長輩老師外師完整一點客氣一點5-句"><span class="gnum">02</span>長輩、老師、外師：完整一點、客氣一點（5 句）</h3>
+      <div style="overflow-x:auto"><table class="wtable"><thead><tr><th>英文祝福語</th><th>中文意思</th></tr></thead><tbody>
+        <tr><th>Happy New Year to you and your family.</th><td>祝您和家人新年快樂。</td></tr>
+        <tr><th>Wishing you good health and happiness in the new year.</th><td>祝您新的一年健康、幸福。</td></tr>
+        <tr><th>Thank you for everything this past year. Happy New Year!</th><td>謝謝您過去這一年的照顧。新年快樂！（寫給老師最好用）</td></tr>
+        <tr><th>May the new year bring you peace and joy.</th><td>願新的一年為您帶來平安與喜樂。（May 開頭＝正式祝願句）</td></tr>
+        <tr><th>Wishing you all the best in 2027.</th><td>祝您 2027 年一切順利。</td></tr>
+      </tbody></table></div>
+    </div>
+
+    <div class="tgroup reveal" style="--gc:#CE82FF;--gcd:#a94fe0;max-width:800px;margin-left:auto;margin-right:auto"><h3 id="03同事客戶email-結尾商務場合這樣寫5-句"><span class="gnum">03</span>同事、客戶、email 結尾：商務場合這樣寫（5 句）</h3>
+      <div style="overflow-x:auto"><table class="wtable"><thead><tr><th>英文祝福語</th><th>中文意思</th></tr></thead><tbody>
+        <tr><th>Happy New Year! I look forward to working with you in 2027.</th><td>新年快樂！期待 2027 年繼續與您合作。</td></tr>
+        <tr><th>Wishing you a successful and prosperous new year.</th><td>祝您新的一年成功、興旺。（商務場合最常見）</td></tr>
+        <tr><th>Thank you for your support this past year.</th><td>感謝您過去一年的支持。（放在祝福句前面，先謝再祝）</td></tr>
+        <tr><th>Best wishes for the new year,</th><td>祝新年一切順心（email 結尾語，後面是逗號，名字另起一行）</td></tr>
+        <tr><th>Merry Christmas and a Happy New Year!</th><td>聖誕快樂、新年快樂！（12 月寄的 email 和卡片，一句話把兩個節日一起祝）</td></tr>
+      </tbody></table></div>
+    </div>
+
+    <div class="tgroup reveal" style="--gc:#FFC800;--gcd:#d9a800;max-width:800px;margin-left:auto;margin-right:auto"><h3 id="04農曆年專用羊年恭喜發財闔家團圓5-句"><span class="gnum">04</span>農曆年專用：羊年、恭喜發財、闔家團圓（5 句）</h3>
+      <div style="overflow-x:auto"><table class="wtable"><thead><tr><th>英文祝福語</th><th>中文意思</th></tr></thead><tbody>
+        <tr><th>Happy Lunar New Year!</th><td>農曆新年快樂！（過年期間用這句，也可說 Happy Chinese New Year!）</td></tr>
+        <tr><th>Wishing you a prosperous Year of the Goat!</th><td>祝你羊年興旺！（2027 年專用；羊年也可說 Year of the Sheep）</td></tr>
+        <tr><th>May the Year of the Goat bring you good luck and good health.</th><td>願羊年帶給你好運與健康。</td></tr>
+        <tr><th>Wishing you wealth and prosperity!</th><td>恭喜發財！（英文沒有一模一樣的句子，這句最接近）</td></tr>
+        <tr><th>Wishing you and your family a happy reunion this Lunar New Year.</th><td>祝你和家人過年闔家團圓。</td></tr>
+      </tbody></table></div>
+    </div>
+
+    <div class="prose reveal" style="max-width:800px;margin:18px auto 0">
+      <p>小提醒：英文祝福不必逐字翻譯中文吉祥話。「恭喜發財」「萬事如意」「年年有餘」硬翻出來外國人聽不懂，抓住 health（健康）、luck（好運）、prosperity（興旺）、family（家人）這幾個關鍵字，怎麼組合都是道地的祝福。倒是有一句中文可以直接教外國人：<strong>Gong Xi Fa Cai</strong>（恭喜發財的拼音），美國很多人在 Chinatown 聽過，你教他們唸，比翻譯更有話題；「新年快樂」的拼音 Xin Nian Kuai Le 也一樣。</p>
+      <p>那別人先跟你說 Happy New Year! 該怎麼回？最自然的回法跟中文一樣簡單：<em>Happy New Year to you too!</em>（也祝你新年快樂！）、<em>Same to you!</em>（你也是！）或口語一點的 <em>You too! Enjoy the holiday!</em>（你也是，假期愉快！）。孩子只要會這一組一來一往，跟外師的節日對話就不會冷場。想把「謝謝」也說得更漂亮，見<a href="/thank-you-english/">謝謝的 30 種英文說法</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow">單字對照</span><h2 id="農曆新年英文單字50-個分組學">農曆新年英文單字 <em>50 個分組學</em></h2></div>
+    <div class="prose reveal" style="max-width:800px;margin:18px auto 0">
+      <p>50 個單字分成四組：習俗、食物、時間與活動、十二生肖。第一組「習俗」是孩子最快用上的——紅包、春聯、鞭炮、舞獅，過年那幾天每一樣都看得到、摸得到，邊指邊唸最快記住。中翻英最常出錯的幾個先提醒：紅包是 <strong>red envelope</strong>（不是 red bag）、年糕是 <strong>nian gao</strong> 或 <strong>sticky rice cake</strong>（不是 year cake）、拜年是 <strong>pay a New Year visit</strong>（不是 worship year）、舞獅是 <strong>lion dance</strong>（不是 dance lion）。</p>
+    </div>
+
+    <div class="tgroup reveal" style="--gc:#1CB0F6;--gcd:#1391cc"><h3 id="01習俗紅包春聯鞭炮舞獅16-個"><span class="gnum">01</span>習俗：紅包、春聯、鞭炮、舞獅（16 個）</h3>
+      <div style="overflow-x:auto"><table class="wtable"><thead><tr><th>英文</th><th>中文</th></tr></thead><tbody>
+        <tr><th>red envelope</th><td>紅包（複數 red envelopes；美國華人也說 lucky money envelope）</td></tr>
+        <tr><th>lucky money</th><td>壓歲錢（紅包裡的錢；也可說 New Year's money）</td></tr>
+        <tr><th>spring couplets</th><td>春聯（貼春聯 put up spring couplets）</td></tr>
+        <tr><th>the character "Fu"</th><td>福字（倒著貼 hang it upside down，代表「福到」）</td></tr>
+        <tr><th>firecrackers</th><td>鞭炮（放鞭炮 set off firecrackers；一串鞭炮 a string of firecrackers）</td></tr>
+        <tr><th>fireworks</th><td>煙火（跨年的 101 煙火就是 fireworks）</td></tr>
+        <tr><th>lion dance</th><td>舞獅</td></tr>
+        <tr><th>dragon dance</th><td>舞龍</td></tr>
+        <tr><th>reunion dinner</th><td>年夜飯、團圓飯（除夕晚上那一餐）</td></tr>
+        <tr><th>family reunion</th><td>家人團聚、團圓</td></tr>
+        <tr><th>pay a New Year visit</th><td>拜年（去親戚家拜年 visit relatives）</td></tr>
+        <tr><th>stay up late on New Year's Eve</th><td>守歲（除夕晚上熬夜）</td></tr>
+        <tr><th>spring cleaning</th><td>大掃除（過年前把家裡打掃乾淨）</td></tr>
+        <tr><th>new clothes</th><td>新衣（過年穿新衣 wear new clothes）</td></tr>
+        <tr><th>go to the temple</th><td>去廟裡拜拜（上香 burn incense）</td></tr>
+        <tr><th>lantern</th><td>燈籠（元宵節提燈籠 carry lanterns at the Lantern Festival）</td></tr>
+      </tbody></table></div>
+      <p class="body" style="margin-top:14px;max-width:800px">文化重點：美國人對農曆新年的印象多半來自各大城市的 Chinatown——舞龍舞獅、紅燈籠、鞭炮，所以 lion dance、red envelope 這幾個字外師通常都知道。他們比較不知道的是台灣過年「在家裡」的部分：除夕圍爐、守歲、初一早上去廟裡拜拜、初二回娘家。跟外師解釋時可以說：<em>In Taiwan, we have a big reunion dinner on New Year's Eve, and kids get red envelopes from their parents and grandparents.</em>（在台灣，除夕我們吃年夜飯，小孩會收到爸媽和祖父母給的紅包。）紅包還有一個好用的句子：<em>I got three red envelopes this year!</em>（我今年拿到三個紅包！）——外師一定會接著問 How much?（多少錢？），對話就這樣開始了。</p>
+    </div>
+
+    <div class="tgroup reveal" style="--gc:#06C755;--gcd:#04a046"><h3 id="02食物水餃年糕蘿蔔糕鳳梨12-個"><span class="gnum">02</span>食物：水餃、年糕、蘿蔔糕、鳳梨（12 個）</h3>
+      <div style="overflow-x:auto"><table class="wtable"><thead><tr><th>英文</th><th>中文</th></tr></thead><tbody>
+        <tr><th>dumplings</th><td>水餃（中國北方過年必吃；台灣年夜飯不一定有，但外師一定認得這個字）</td></tr>
+        <tr><th>nian gao / sticky rice cake</th><td>年糕（直接音譯 nian gao，再解釋 a sweet sticky rice cake）</td></tr>
+        <tr><th>turnip cake / radish cake</th><td>蘿蔔糕（台灣過年、港式飲茶都有）</td></tr>
+        <tr><th>fa gao / prosperity cake</th><td>發糕（「發」諧音發財，所以英文常叫 prosperity cake）</td></tr>
+        <tr><th>a whole fish</th><td>全魚（年年有餘：魚和「餘」同音，所以年夜飯一定有魚）</td></tr>
+        <tr><th>a whole chicken</th><td>全雞（拜拜和年夜飯都會出現）</td></tr>
+        <tr><th>hot pot</th><td>火鍋（圍爐就是全家圍著吃火鍋 have hot pot together）</td></tr>
+        <tr><th>pineapple</th><td>鳳梨（台語「旺來」，過年擺鳳梨求好運；鳳梨酥是 pineapple cake）</td></tr>
+        <tr><th>tangerines / mandarin oranges</th><td>橘子（大吉大利，過年送禮、擺桌上的那種）</td></tr>
+        <tr><th>spring rolls</th><td>春捲（美國中餐廳的招牌菜，外師一定吃過）</td></tr>
+        <tr><th>candy box / tray of togetherness</th><td>糖果盒（過年擺在客廳裝糖果、瓜子的那一盒）</td></tr>
+        <tr><th>sweet rice balls (tangyuan)</th><td>湯圓（元宵節吃的；也可直接音譯 tangyuan）</td></tr>
+      </tbody></table></div>
+    </div>
+
+    <div class="tgroup reveal" style="--gc:#CE82FF;--gcd:#a94fe0"><h3 id="03時間與活動除夕初一寒假倒數10-個"><span class="gnum">03</span>時間與活動：除夕、初一、寒假、倒數（10 個）</h3>
+      <div style="overflow-x:auto"><table class="wtable"><thead><tr><th>英文</th><th>中文</th></tr></thead><tbody>
+        <tr><th>the day before Lunar New Year's Eve</th><td>小年夜（2027 年 2 月 4 日）</td></tr>
+        <tr><th>Lunar New Year's Eve</th><td>除夕（2027 年 2 月 5 日；也可說 Chinese New Year's Eve）</td></tr>
+        <tr><th>the first day of the Lunar New Year</th><td>大年初一（2027 年 2 月 6 日）</td></tr>
+        <tr><th>the second day</th><td>初二（回娘家 married daughters visit their parents' home）</td></tr>
+        <tr><th>the Lantern Festival</th><td>元宵節（農曆正月十五；2027 年 2 月 20 日）</td></tr>
+        <tr><th>winter vacation / winter break</th><td>寒假（美式口語說 winter break）</td></tr>
+        <tr><th>the Lunar New Year holiday</th><td>春節連假、過年假期（2027 年共 7 天）</td></tr>
+        <tr><th>countdown</th><td>倒數（跨年倒數 the New Year's Eve countdown）</td></tr>
+        <tr><th>New Year's resolution</th><td>新年新希望（My New Year's resolution is to read more.）</td></tr>
+        <tr><th>the Chinese zodiac</th><td>十二生肖（生肖是 zodiac sign 或 zodiac animal）</td></tr>
+      </tbody></table></div>
+      <p class="body" style="margin-top:14px;max-width:800px">「初一、初二」這種說法英文沒有對應的單字，直接用序數：the first day、the second day、the third day of the Lunar New Year；「初五開工」就是 <em>People go back to work on the fifth day.</em>。跟外國人解釋台灣過年的行程，最簡單的講法是按天數：<em>On New Year's Eve we have a reunion dinner. On the first day we go to the temple. On the second day we visit my mom's family.</em>（除夕吃年夜飯，初一去廟裡，初二回外婆家。）三句就講完了，而且每一句都是小學程度的文法。</p>
+    </div>
+
+    <div class="tgroup reveal" style="--gc:#FFC800;--gcd:#d9a800"><h3 id="04十二生肖鼠牛虎兔龍蛇馬羊猴雞狗豬12-個"><span class="gnum">04</span>十二生肖：鼠牛虎兔龍蛇馬羊猴雞狗豬（12 個）</h3>
+      <div style="overflow-x:auto"><table class="wtable"><thead><tr><th>英文</th><th>生肖</th><th>最近的年份</th></tr></thead><tbody>
+        <tr><th>Rat</th><td>鼠（不是 mouse）</td><td>2020、2032</td></tr>
+        <tr><th>Ox</th><td>牛（不是 cow）</td><td>2021、2033</td></tr>
+        <tr><th>Tiger</th><td>虎</td><td>2022、2034</td></tr>
+        <tr><th>Rabbit</th><td>兔</td><td>2023、2035</td></tr>
+        <tr><th>Dragon</th><td>龍</td><td>2024、2036</td></tr>
+        <tr><th>Snake</th><td>蛇</td><td>2025、2037</td></tr>
+        <tr><th>Horse</th><td>馬</td><td>2026、2038</td></tr>
+        <tr><th>Goat</th><td>羊（也叫 Sheep、Ram）</td><td>2027、2039</td></tr>
+        <tr><th>Monkey</th><td>猴</td><td>2028、2040</td></tr>
+        <tr><th>Rooster</th><td>雞（公雞，不是 chicken）</td><td>2029、2041</td></tr>
+        <tr><th>Dog</th><td>狗</td><td>2030、2042</td></tr>
+        <tr><th>Pig</th><td>豬</td><td>2031、2043</td></tr>
+      </tbody></table></div>
+      <p class="body" style="margin-top:14px;max-width:800px">注意兩件事。第一，生肖年從<strong>農曆新年那天</strong>才換，不是 1 月 1 日：2027 年 1 月出生的寶寶還是馬年，2 月 6 日之後出生的才是羊年。第二，「羊」的英文有三個：Goat（山羊）、Sheep（綿羊）、Ram（公羊），美國媒體最常用 Year of the Goat，三個都看得到、都算對。另外牛是 Ox（不是 cow）、雞是 Rooster（不是 chicken）、鼠是 Rat（不是 mouse）——這三個是台灣學生最常寫錯的。問別人生肖的句子：<em>What's your Chinese zodiac sign?</em>（你屬什麼？）回答：<em>I was born in the Year of the Dragon.</em>（我屬龍。）這 12 種動物的發音和更多動物單字，見<a href="/animals-english-vocabulary/">動物英文單字大全</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow">實作示範</span><h2 id="新年英文-email-怎麼寫">新年英文 email <em>怎麼寫</em></h2></div>
+    <div class="prose reveal" style="max-width:800px;margin:18px auto 0">
+      <p>一封英文新年 email 只需要五個部分：<strong>稱呼 → 祝福句 → 一兩句自己的話 → 收尾句 → 結尾語＋署名</strong>。下面是一封寫給英文老師的 A2 程度範例（國小中高年級寫得出來）——每個字都是課本內的簡單字，重點在結構完整：</p>
+    </div>
+    <div class="card-demo reveal" style="max-width:640px;margin-left:auto;margin-right:auto">
+      <p class="en">Dear Teacher Chris,</p>
+      <p class="en" style="margin-top:10px">Happy New Year! Thank you for teaching us last year. I learned a lot of new words in your class. My family is going to my grandma's house for Lunar New Year. I will eat a lot and get red envelopes! See you after the holiday.</p>
+      <p class="en" style="margin-top:10px">Best wishes for the new year,<br>Amy</p>
+    </div>
+    <div class="card-note reveal" style="max-width:640px;margin-left:auto;margin-right:auto">
+      <b>逐句解說：</b><br>
+      ① <b>Dear Teacher Chris,</b>——稱呼用 Dear＋對方，後面是逗號不是冒號；外師通常接受 Dear Teacher＋名字，學校老師用 Ms.／Mr.＋姓（Dear Ms. Lin,）。（親愛的 Chris 老師）<br>
+      ② <b>Happy New Year!</b>——祝福句放第一句，開門見山。（新年快樂！）<br>
+      ③ <b>Thank you for teaching us last year. I learned a lot of new words in your class.</b>——整封信最有價值的部分：寫一件「只有你們之間才有」的具體小事。（謝謝您去年教我們。我在您的課上學到很多新單字。）<br>
+      ④ <b>My family is going to my grandma's house for Lunar New Year. I will eat a lot and get red envelopes!</b>——講自己的過年計畫，用 be going to 和 will 兩種未來式。（我們全家過年要去外婆家。我會吃很多、拿紅包！）<br>
+      ⑤ <b>See you after the holiday.</b>——收尾句指向下次見面。（假期後見。）<br>
+      ⑥ <b>Best wishes for the new year, / Amy</b>——結尾語加逗號，名字獨立一行。（祝新年一切順心，Amy）
+    </div>
+    <div class="prose reveal" style="max-width:800px;margin:22px auto 0">
+      <p>教孩子寫的時候，卡住的幾乎都是第三部分。訣竅是問孩子一個問題：「這個人這一年為你做過什麼？」答案寫下來就是那兩句。文法簡單沒關係，具體永遠贏過華麗。</p>
+      <p><strong>寫給客戶、同事的商務版：</strong>大人寫新年 email 只有三個重點——謝去年、期待今年、告知放假時間。結尾語用 Best regards, 或 Kind regards,（都是「敬祝 安好」的意思；Love 和 Warm wishes 留給家人朋友）。下面是一封五句話的範例：</p>
+    </div>
+    <div class="card-demo reveal" style="max-width:640px;margin-left:auto;margin-right:auto">
+      <p class="en">Dear Mr. Wang,</p>
+      <p class="en" style="margin-top:10px">Happy New Year! Thank you for your support in 2026. We look forward to working with you again in the Year of the Goat. Please note that our office will be closed from February 4 to February 10 for the Lunar New Year holiday.</p>
+      <p class="en" style="margin-top:10px">Best regards,<br>Christopher</p>
+    </div>
+    <div class="card-note reveal" style="max-width:640px;margin-left:auto;margin-right:auto">
+      <b>中文意思：</b>王先生您好，新年快樂！感謝您 2026 年的支持。期待在羊年再次與您合作。本公司春節連假 2 月 4 日至 2 月 10 日休息，敬請留意。順頌商祺，Christopher。<br>
+      <b>可以替換的地方：</b>Mr. Wang 換成對方的姓；2026 換成去年；the Year of the Goat 明年換成 the Year of the Monkey；放假日期照人事行政總處的行事曆改。
+    </div>
+    <div class="prose reveal" style="max-width:800px;margin:22px auto 0">
+      <p><strong>LINE 訊息版：</strong>傳訊息不用寫成一封信，兩三句加一個表情符號就很完整。給老師：<em>Happy New Year, Teacher Chris! 🧧 Thank you for a great year. See you in February!</em>（Chris 老師新年快樂！謝謝您這美好的一年。二月見！）給同學、朋友：<em>Happy Lunar New Year! 🐐 Hope you get lots of red envelopes!</em>（農曆新年快樂！希望你拿到很多紅包！）兩個版本都不用稱呼 Dear，也不用結尾語——那是信和 email 才有的格式。想把稱呼、結尾語的規則一次弄清楚，見<a href="/english-letter-writing-guide/">英文書信格式與 Email 寫法</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">開口說</span><h2 id="教孩子用英文介紹農曆新年">教孩子用英文<em>介紹農曆新年</em></h2></div>
+    <div class="prose reveal" style="max-width:800px;margin:18px auto 0">
+      <p>單字認得沒有用，說得出口才算數。下面 6 句是我們給初學孩子（大約劍橋英檢 Starters 到 Movers 程度）的介紹範本——句子刻意寫得短，每句都只用最基本的文法，孩子背起來就能對外師做一段完整的 show and tell：</p>
+      <div style="overflow-x:auto"><table class="wtable"><thead><tr><th>英文句子</th><th>中文意思</th></tr></thead><tbody>
+        <tr><th>Lunar New Year is the biggest holiday in Taiwan.</th><td>農曆新年是台灣最大的節日。</td></tr>
+        <tr><th>It starts on the first day of the lunar calendar, usually in January or February.</th><td>它從農曆的第一天開始，通常在一月或二月。</td></tr>
+        <tr><th>On New Year's Eve, my family has a big reunion dinner.</th><td>除夕夜，我們全家吃年夜飯。</td></tr>
+        <tr><th>We put up spring couplets and set off firecrackers.</th><td>我們貼春聯、放鞭炮。</td></tr>
+        <tr><th>Kids get red envelopes with lucky money inside.</th><td>小朋友會拿到裝著壓歲錢的紅包。</td></tr>
+        <tr><th>2027 is the Year of the Goat. I love this holiday because my whole family is together!</th><td>2027 年是羊年。我最愛這個節日，因為全家人都在一起！</td></tr>
+      </tbody></table></div>
+      <p style="margin-top:16px">練習的方法比句子本身重要：不要讓孩子「背整段」，一句一句來——家長用中文問（過年我們吃什麼？小朋友會拿到什麼？），孩子用英文答（We have a reunion dinner. 我們吃年夜飯。／We get red envelopes. 我們拿到紅包。）。六句都答得出來之後，再讓孩子自己從頭講一遍。程度好一點的孩子，可以把第三句加長：<em>On New Year's Eve, my family has a big reunion dinner. We eat fish, dumplings, and hot pot.</em>（除夕夜我們全家吃年夜飯。我們吃魚、水餃和火鍋。）——往句子裡塞細節，正是從 A1 走向 A2 的路。</p>
+      <p>順帶提醒家長一件事：這種「介紹自己的節日」正是英檢口說和學校英文課最常出的題目，但多數孩子的問題不是單字量，而是從來沒有把這些句子<strong>大聲說出來過</strong>。春節連假就是現成的練習場——年夜飯的時候讓孩子當「小老師」，用英文跟家人介紹桌上的食物：This is a fish. These are dumplings. We are having hot pot.（這是魚。這些是水餃。我們在吃火鍋。）；拿到紅包時說一句 Thank you, Grandma! Happy New Year!（謝謝奶奶！新年快樂！）。講錯了不用急著糾正，先讓孩子敢講、講完整句，發音和文法之後再修。七天假期練下來，比開學後坐在書桌前抄十遍單字有用得多。</p>
+      <p>相關：同一個季節的另一個節日，見<a href="/christmas-english/">聖誕節英文怎麼說</a>（Merry Christmas and a Happy New Year 的用法就在裡面）；秋天那一篇是<a href="/mid-autumn-festival-english/">中秋節英文怎麼說</a>；想把月份和日期一起複習，見<a href="/months-english/">1–12 月份英文對照表</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">常見問題</span><h2 id="新年快樂英文常見問題">新年快樂英文<em>常見問題</em></h2></div>
+    <div class="faq" style="max-width:800px;margin:18px auto 0">
+      <div class="faq-item"><h3 id="新年快樂英文是-Happy-New-Year-還是-Happy-New-Year" class="faq-h"><button class="faq-q" aria-expanded="false">新年快樂英文是 Happy New Year 還是 Happy New Years？<span class="pm"></span></button></h3><div class="faq-a"><p>正確是 Happy New Year，New Year 後面沒有 s。Happy New Years 是常見的錯誤，連美國人口語都會說溜嘴，但寫在卡片、作文、email 上就是錯的。帶一撇的 New Year's 是所有格，只用在 New Year's Eve（跨年夜）、New Year's Day（元旦）、New Year's resolution（新年新希望）這類「新年的某樣東西」上。</p></div></div>
+      <div class="faq-item"><h3 id="農曆新年英文是-Chinese-New-Year-還是-Lunar-New-Ye" class="faq-h"><button class="faq-q" aria-expanded="false">農曆新年英文是 Chinese New Year 還是 Lunar New Year？Spring Festival 呢？<span class="pm"></span></button></h3><div class="faq-a"><p>三個都對。Chinese New Year 是美國最多人聽得懂的說法；Lunar New Year 是近年英語媒體和學校越來越常用的說法，因為韓國、越南也過同一天的新年，用 Lunar 比較包容；Spring Festival 是「春節」的直譯，中國官方和中國課本常用，英美人士日常幾乎不講。孩子寫作文、考試用 Chinese New Year 或 Lunar New Year 都可以，記得每個字開頭大寫。農曆新年快樂就是 Happy Lunar New Year! 或 Happy Chinese New Year!。</p></div></div>
+      <div class="faq-item"><h3 id="聖誕快樂新年快樂英文怎麼說" class="faq-h"><button class="faq-q" aria-expanded="false">「聖誕快樂、新年快樂」英文怎麼說？<span class="pm"></span></button></h3><div class="faq-a"><p>最完整的說法是 Merry Christmas and a Happy New Year!（中間有 a），口語和卡片上省略 a 也很常見。寫在卡片或 email 結尾時把驚嘆號改成逗號：Merry Christmas and a Happy New Year, 再換行署名。不確定對方過不過聖誕節就說 Happy Holidays!（佳節愉快），一句話涵蓋聖誕節到元旦。注意這句祝的是 1 月 1 日的新年；農曆年要另外說 Happy Lunar New Year!。</p></div></div>
+      <div class="faq-item"><h3 id="2027-年是什麼生肖年羊年英文是-GoatSheep-還是-Ram" class="faq-h"><button class="faq-q" aria-expanded="false">2027 年是什麼生肖年？羊年英文是 Goat、Sheep 還是 Ram？<span class="pm"></span></button></h3><div class="faq-a"><p>2027 年是羊年，從 2027 年 2 月 6 日農曆大年初一開始算，在那之前出生的還是馬年。羊年的英文三種都有人用：Year of the Goat（山羊）、Year of the Sheep（綿羊）、Year of the Ram（公羊），美國媒體最常見的是 Year of the Goat，三個都算對。祝福句可以說 Wishing you a prosperous Year of the Goat!（祝你羊年興旺！）。2028 年 1 月 26 日起就是猴年 the Year of the Monkey。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AE:ROUTE -->
+<section class="section bg-soft">
+  <div class="wrap">
+    <span class="eyebrow eyebrow-yellow">新年之外</span>
+    <h2 id="節慶祝福會說了其他場合呢" style="margin-top:14px">節慶祝福會說了，<em>其他場合呢？</em></h2>
+    <div class="divider" style="margin:18px 0 22px"></div>
+    <p class="body" style="max-width:720px">新年的句子學會了，聖誕節、中秋節、生日和道謝是接下來最常用到的四塊——都有整理好的對照表，可以點著聽發音。</p>
+    <div style="margin-top:20px"><a href="/christmas-english/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">聖誕節英文</a><a href="/mid-autumn-festival-english/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">中秋節英文</a><a href="/happy-birthday-english/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">生日快樂英文</a><a href="/thank-you-english/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">謝謝的 30 種說法</a><a href="/english-letter-writing-guide/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">英文書信格式</a></div>
+  </div>
+</section>
+<!-- /AE:ROUTE -->
+<section class="section bg-blue">
+  <div class="wrap center stack reveal">
+    <span class="eyebrow">下一步</span>
+    <h2 id="節日單字會了孩子敢開口嗎" style="margin-top:12px">節日單字會了，<em>孩子敢開口嗎</em>？</h2>
+    <div class="divider"></div>
+    <p class="body" style="max-width:680px">農曆新年是孩子練英文口說最好的真實場景——有紅包、有年夜飯、有全家人當聽眾。接著讀：<a href="/animals-english-vocabulary/">動物英文單字大全（十二生肖的動物都在裡面）</a>、<a href="/english-dates-guide/">英文日期怎麼說</a>、<a href="/kids-english-guide/">兒童美語完整指南</a>。</p>
+    <a class="btn btn-primary" href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 預約免費程度評估</a>
+  </div>
+</section>
+
+<!-- AE:BYL start --><div class="page-meta"><div class="wrap"><span>作者：<a href="/certified-american-teacher-banqiao/">Christopher｜埃森美語創辦人</a>（<a href="/certified-american-teacher-banqiao/">關於作者</a>）</span></div></div>
+<!-- AE:BYL end --></main>
+<!-- AE:FOOT start -->
+<footer class="site-footer"><div class="wrap"><div class="foot-grid"><div><div class="foot-logo"><img class="foot-logo-img" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="34" height="34" loading="lazy" decoding="async">American English 埃森美語</div><p class="foot-tag">板橋中正路在地深耕的美籍外師英文補習班。100% 美籍持證教師、每班 12 人小班制。</p><p class="foot-nap">220 新北市板橋區中正路89巷4號1樓<span class="foot-sep">　｜　</span><a href="tel:+886928067772">☎ 0928-067-772</a></p></div><nav class="foot-links" aria-label="頁尾導覽"><div class="foot-col"><p class="foot-h">課程</p><a href="/banqiao-english-cram-school/">板橋英文補習班</a><a href="/courses/">課程總覽</a><a href="/kids-english-banqiao/">兒童美語</a><a href="/junior-high-english-banqiao/">國中英文</a><a href="/free-trial/">預約試聽</a></div><div class="foot-col"><p class="foot-h">學習資源</p><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/english-pronunciation/">英文發音</a><a href="/download/">免費下載</a><a href="/chart-license/">圖表授權</a></div><div class="foot-col"><p class="foot-h">關於</p><a href="/certified-american-teacher-banqiao/">師資介紹</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="/contact/">聯絡與交通</a></div><div class="foot-col"><p class="foot-h">聯絡</p><a href="tel:+886928067772">電話 0928-067-772</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 線上預約</a><a href="https://maps.app.goo.gl/hLChkEqAMKCsMWpm6" target="_blank" rel="noopener">Google 地圖位置</a><a href="https://www.facebook.com/profile.php?id=61576014571186" target="_blank" rel="noopener">Facebook 粉絲專頁</a></div></nav></div><div class="foot-bottom"><span>© 2026 American English 埃森美語</span><span>私立埃森美語文理短期補習班　｜　新北市政府立案 社補教社字第115026號　｜　統一編號 61476523</span><span>220 新北市板橋區中正路89巷4號1樓</span></div><div class="foot-pref"><div google-add-preferred-source-btn data-theme="dark" data-lang="zh-TW"></div></div></div></footer>
+<!-- AE:FOOT end -->
+<script src="/assets/app.js?v=069e8d41"></script>
+</body>
+</html>

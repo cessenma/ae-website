@@ -1028,15 +1028,26 @@ def toc_entries(html):
     m = re.search(r"<main\b.*?</main>", html, re.S)
     if not m:
         return []
+    main = m.group(0)
+    for a, b in _INJECTED:               # a sales / route block's heading is not a section of the page
+        main = re.sub(re.escape(a) + r".*?" + re.escape(b), "", main, flags=re.S)
     out = []
-    for mm in re.finditer(r"<h2\b([^>]*)>(.*?)</h2>", m.group(0), re.S):
+    for mm in re.finditer(r"<h2\b([^>]*)>(.*?)</h2>", main, re.S):
         attrs, inner = mm.group(1), mm.group(2)
         idm = re.search(r'\bid="([^"]+)"', attrs)
-        # <wbr>/<span> inside a heading must not become a space in the middle of Chinese text
-        text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", re.sub(r"<br\s*/?>", " ", inner))).strip()
-        before = m.group(0)[:mm.start()]
+        # a tag boundary (<em>, <wbr>, <span>) becomes a space only between a Latin/digit run
+        # and a Chinese character ("祝福<em>10 句" → "祝福 10 句"), never inside Chinese text
+        t = re.sub(r"<br\s*/?>", " ", inner)
+        t = re.sub(r"<[^>]+>", "\0", t)
+        def _edge(mm):
+            a, b = mm.group(1), mm.group(2)
+            cjk = lambda c: "一" <= c <= "鿿"
+            return a + (" " if (cjk(a) != cjk(b) and (a.isalnum() and b.isalnum())) else "") + b
+        t = re.sub(r"(.)\0+(.)", _edge, t).replace("\0", "")
+        text = re.sub(r"\s+", " ", t).strip()
+        before = main[:mm.start()]
         sec = before.rfind("<section")
-        sec_tag = m.group(0)[sec:sec + 160] if sec >= 0 else ""
+        sec_tag = main[sec:sec + 160] if sec >= 0 else ""
         if "region-cta" in sec_tag or "bg-blue" in sec_tag or "cta-box" in before[-400:]:
             break
         if idm:

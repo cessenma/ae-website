@@ -42,6 +42,10 @@ PDFS = {
  "ordinal-numbers-english": ("ordinal-numbers-chart",     "ae-ordinal-numbers-a4.pdf",     "序數拼法、縮寫與唸法"),
  "happy-birthday-english":  ("happy-birthday-chart",      "ae-happy-birthday-a4.pdf",      "生日祝福說法與適用對象"),
  "mid-autumn-festival-english": ("mid-autumn-chart",      "ae-mid-autumn-english-a4.pdf",  "中秋節英文說法與節慶單字"),
+ "halloween-english":       ("halloween-chart",           "ae-halloween-english-a4.pdf",   "萬聖節英文祝福與單字表"),
+ "christmas-english":       ("christmas-chart",           "ae-christmas-english-a4.pdf",   "聖誕節英文祝福與單字表"),
+ "valentines-day-english":  ("valentines-day-chart",      "ae-valentines-day-english-a4.pdf", "情人節英文祝福與單字表"),
+ "new-year-english":        ("new-year-chart",            "ae-new-year-english-a4.pdf",    "新年快樂英文祝福與過年單字表"),
  "english-names-boys":      ("english-names-boys-chart",  "ae-english-names-boys-a4.pdf",  "男生英文名字、唸法與含意"),
  "english-names-girls":     ("english-names-girls-chart", "ae-english-names-girls-a4.pdf", "女生英文名字、唸法與含意"),
 }

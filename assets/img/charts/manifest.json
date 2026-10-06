@@ -376,5 +376,41 @@
   "alt": "英文寫作連接詞對照表：依並列對比原因結果舉例等功能分類的16個連接詞與例句",
   "title": "英文連接詞功能對照表",
   "page": "english-writing-practice"
+ },
+ "halloween-chart": {
+  "slug": "halloween-chart",
+  "png": "/assets/img/charts/halloween-chart.webp",
+  "w": 1500,
+  "h": 1291,
+  "alt": "萬聖節英文對照表：Halloween 的說法與唸法、萬聖節快樂英文祝福、南瓜燈、女巫、不給糖就搗蛋等核心單字",
+  "title": "萬聖節英文說法與祝福",
+  "page": "halloween-english"
+ },
+ "christmas-chart": {
+  "slug": "christmas-chart",
+  "png": "/assets/img/charts/christmas-chart.webp",
+  "w": 1500,
+  "h": 1067,
+  "alt": "聖誕節英文對照表：Christmas 的說法與唸法、Xmas 縮寫、聖誕快樂英文祝福，以及聖誕老人、聖誕樹等核心單字",
+  "title": "聖誕節英文說法與祝福",
+  "page": "christmas-english"
+ },
+ "new-year-chart": {
+  "slug": "new-year-chart",
+  "png": "/assets/img/charts/new-year-chart.webp",
+  "w": 1500,
+  "h": 1109,
+  "alt": "新年快樂英文對照表：Happy New Year、Lunar New Year 的說法，除夕、初一、紅包、春聯、年夜飯等過年單字",
+  "title": "新年快樂英文說法與過年單字",
+  "page": "new-year-english"
+ },
+ "valentines-day-chart": {
+  "slug": "valentines-day-chart",
+  "png": "/assets/img/charts/valentines-day-chart.webp",
+  "w": 1500,
+  "h": 1265,
+  "alt": "情人節英文對照表：Valentine's Day 的說法與唸法、情人節快樂英文祝福，以及 valentine、White Day、七夕等核心單字",
+  "title": "情人節英文說法與祝福",
+  "page": "valentines-day-english"
  }
 }

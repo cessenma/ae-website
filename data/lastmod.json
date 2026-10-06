@@ -31,6 +31,10 @@
 "date": "2026-09-15",
 "hash": "f62abdc977d4659649efe71083cc33de"
 },
+"assets/downloads/ae-christmas-english-a4.pdf": {
+"date": "2026-10-07",
+"hash": "11c534b548f0bbd85de97f576549eb57"
+},
 "assets/downloads/ae-colors-flashcards-a4.pdf": {
 "date": "2026-10-01",
 "hash": "05a0fe266269f664079b8593e3dc9cb7"
@@ -51,6 +55,10 @@
 "date": "2026-09-21",
 "hash": "7a576683b1cb34e747ba41c574c90af1"
 },
+"assets/downloads/ae-english-alphabet-worksheet-a4.pdf": {
+"date": "2026-10-07",
+"hash": "057a210a2c3453ff99311d805e4e4f5c"
+},
 "assets/downloads/ae-english-names-boys-a4.pdf": {
 "date": "2026-09-21",
 "hash": "e26ac3196b63f66171ec24d7fbc6cce1"
@@ -70,6 +78,10 @@
 "assets/downloads/ae-fruits-flashcards-a4.pdf": {
 "date": "2026-10-01",
 "hash": "cf6dc9c0c4842eb955b3eda928ccf3e9"
+},
+"assets/downloads/ae-halloween-english-a4.pdf": {
+"date": "2026-10-07",
+"hash": "22040166a75241ce5efbdf4b588387b0"
 },
 "assets/downloads/ae-happy-birthday-a4.pdf": {
 "date": "2026-09-21",
@@ -103,6 +115,10 @@
 "date": "2026-09-15",
 "hash": "84bc3debab718447ded4582f743ee790"
 },
+"assets/downloads/ae-new-year-english-a4.pdf": {
+"date": "2026-10-07",
+"hash": "fe53718690d5a07c0b82d84eea81c6b1"
+},
 "assets/downloads/ae-numbers-1-100-a4.pdf": {
 "date": "2026-10-01",
 "hash": "f075b601475a07f7da74bfe11f25e9ef"
@@ -122,6 +138,10 @@
 "assets/downloads/ae-thank-you-english-a4.pdf": {
 "date": "2026-09-15",
 "hash": "be978b53109d69b82a0c687979b7817f"
+},
+"assets/downloads/ae-valentines-day-english-a4.pdf": {
+"date": "2026-10-07",
+"hash": "5f1b987b5a2252910b5ea6df2013442c"
 },
 "assets/downloads/ae-yle-flyers-flashcards-a4.pdf": {
 "date": "2026-10-01",
@@ -280,8 +300,8 @@
 "hash": "b736ec33111be19ac98aaf8e2fee5e8d"
 },
 "chart-license": {
-"date": "2026-10-01",
-"hash": "dcaba605613a192f51d1ed760bf47411"
+"date": "2026-10-07",
+"hash": "b915f7033c9132066985b791b5be3b95"
 },
 "cheer-up-english": {
 "date": "2026-10-01",
@@ -294,6 +314,10 @@
 "choose-english-chain-school": {
 "date": "2026-08-27",
 "hash": "abb5414008e71dc5ce2fc978c6e6a0cd"
+},
+"christmas-english": {
+"date": "2026-10-07",
+"hash": "a527d155aad8a48049b7eede4b4fbdf6"
 },
 "colors-english": {
 "date": "2026-09-14",
@@ -354,6 +378,10 @@
 "english-alphabet-guide": {
 "date": "2026-09-21",
 "hash": "a661f4c3faa7822d3a18eaa85fd6ed18"
+},
+"english-alphabet-worksheet": {
+"date": "2026-10-07",
+"hash": "16272baa3a52e48087d07b151aafe494"
 },
 "english-at-home-parents-banqiao": {
 "date": "2026-07-31",
@@ -855,6 +883,10 @@
 "date": "2026-08-07",
 "hash": "bc0fc25accd1fa0955c93771a54d73b7"
 },
+"halloween-english": {
+"date": "2026-10-07",
+"hash": "d07d7fd8da5b822a6fa3a5729cc77635"
+},
 "happy-birthday-english": {
 "date": "2026-09-21",
 "hash": "5a3b926d7356942519f10c1d412ff654"
@@ -1091,6 +1123,10 @@
 "date": "2026-08-07",
 "hash": "9609319b27cf9b7d766c4de5dada57e9"
 },
+"new-year-english": {
+"date": "2026-10-07",
+"hash": "12b816365c76c010fdcb15898e9ee97c"
+},
 "numbers-1-100-english": {
 "date": "2026-09-15",
 "hash": "6b9254df54704c37581536bda784599b"
@@ -1270,6 +1306,10 @@
 "thank-you-english": {
 "date": "2026-10-01",
 "hash": "2ff3c660785223bddab2e68e2422d014"
+},
+"valentines-day-english": {
+"date": "2026-10-07",
+"hash": "da373f8d4311f8bb9e96a6b2f2810a85"
 },
 "wensheng-elementary-english": {
 "date": "2026-08-07",
