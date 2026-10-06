@@ -642,3 +642,10 @@ body .ladder .cell.na{color:#5b6b8a}
 .hero-quick a{color:var(--blue-ink);font-weight:700;text-decoration:underline;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px}
 address{font-style:normal}
 @media (pointer:coarse){ .page-meta a{display:inline-block;padding:13px 2px} }
+
+/* In-page table of contents (built by seo_build.add_toc from the page's own H2s) */
+.pg-toc{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 26px;padding:14px 16px;border:2px solid rgba(26,39,82,.08);border-radius:16px;background:#fff}
+.pg-toc .lbl{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px;color:var(--muted);letter-spacing:.3px;margin-right:4px}
+.pg-toc a{display:inline-block;font-size:13.5px;font-weight:700;color:var(--navy);text-decoration:none;background:var(--light-blue);border-radius:999px;padding:6px 12px;line-height:1.3}
+.pg-toc a:hover{background:var(--blue);color:#fff}
+@media (max-width:600px){.pg-toc{gap:6px;padding:12px}.pg-toc a{font-size:13px;padding:5px 10px}}

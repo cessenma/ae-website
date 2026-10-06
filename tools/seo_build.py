@@ -41,7 +41,7 @@ Run:  ~/.claude/skills/seo/.venv/bin/python3 seo_build.py
 """
 import os, re, sys, json, datetime, hashlib, subprocess, unicodedata
 from urllib.parse import urljoin
-from html import unescape as _unescape
+from html import unescape as _unescape, escape as _escape
 from bs4 import BeautifulSoup
 
 SITE   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # repo root, wherever the checkout lives
@@ -989,6 +989,81 @@ ORG_LD = {"@context": "https://schema.org",
                       "addressLocality": "板橋區", "addressRegion": "新北市",
                       "postalCode": "220", "addressCountry": "TW"}}
 
+# ---------------------------------------------------------------------------
+# Heading anchors + an in-page table of contents (2026-10-07). The competitors that beat
+# AE's reference pages on CTR at the same position all show "jump to" links under their
+# result: Google builds those from headings that carry an id. None of AE's 1,476 H2s had
+# one. anchor_headings() gives every H2/H3 inside <main> a stable id made from its own
+# words; add_toc() lists the page's H2s as pill links above the first content block. Both
+# are rebuilt on every run; the TOC is an injected block (see _INJECTED) and ids are not in
+# SIG_ATTRS, so neither moves a page's lastmod.
+TOC_START, TOC_END = "<!-- AE:TOC -->", "<!-- /AE:TOC -->"
+
+def _heading_slug(text, used):
+    t = re.sub(r"[\s　]+", "-", re.sub(r"[^\w一-鿿\s]", "", _unescape(text)).strip())[:40].strip("-") or "sec"
+    s, n = t, 2
+    while s in used:
+        s, n = f"{t}-{n}", n + 1
+    used.add(s)
+    return s
+
+def anchor_headings(html):
+    """Give every <h2>/<h3> inside <main> an id from its own words; existing ids are kept."""
+    m = re.search(r"<main\b.*?</main>", html, re.S)
+    if not m:
+        return html
+    used = set(re.findall(r'\bid="([^"]+)"', html))
+    def fix(mm):
+        tag, attrs, inner = mm.group(1), mm.group(2), mm.group(3)
+        if re.search(r"\bid=", attrs):
+            return mm.group(0)
+        text = re.sub(r"<[^>]+>", "", inner)
+        return f'<{tag} id="{_heading_slug(text, used)}"{attrs}>{inner}</{tag}>'
+    body = re.sub(r"<(h[23])\b([^>]*)>(.*?)</\1>", fix, m.group(0), flags=re.S)
+    return html[:m.start()] + body + html[m.end():]
+
+def toc_entries(html):
+    """The H2s a reader would jump to: everything up to and including the FAQ heading, never
+    the closing sales / route sections. Fewer than five is not worth the space."""
+    m = re.search(r"<main\b.*?</main>", html, re.S)
+    if not m:
+        return []
+    out = []
+    for mm in re.finditer(r"<h2\b([^>]*)>(.*?)</h2>", m.group(0), re.S):
+        attrs, inner = mm.group(1), mm.group(2)
+        idm = re.search(r'\bid="([^"]+)"', attrs)
+        # <wbr>/<span> inside a heading must not become a space in the middle of Chinese text
+        text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", re.sub(r"<br\s*/?>", " ", inner))).strip()
+        before = m.group(0)[:mm.start()]
+        sec = before.rfind("<section")
+        sec_tag = m.group(0)[sec:sec + 160] if sec >= 0 else ""
+        if "region-cta" in sec_tag or "bg-blue" in sec_tag or "cta-box" in before[-400:]:
+            break
+        if idm:
+            out.append((idm.group(1), text))
+        if "常見問題" in text:
+            break
+    return out if len(out) >= 5 else []
+
+def add_toc(html):
+    """Insert (or refresh) the TOC as the first child of the first .wrap after the page hero."""
+    html = re.sub(r"\n?" + re.escape(TOC_START) + r".*?" + re.escape(TOC_END) + r"\n?", "", html, flags=re.S)
+    ents = toc_entries(html)
+    if not ents:
+        return html
+    hero = re.search(r'<section class="page-hero.*?</section>', html, re.S)
+    if not hero:
+        return html
+    wrap = re.search(r'<div class="wrap">', html[hero.end():])
+    if not wrap:
+        return html
+    at = hero.end() + wrap.end()
+    links = "".join(f'<a href="#{i}">{_escape(t)}</a>' for i, t in ents)
+    block = (f'\n{TOC_START}<nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span>'
+             f'{links}</nav>{TOC_END}\n')
+    return html[:at] + block + html[at:]
+
+
 def process_page(path, css_ver="", crit=""):
     rel = os.path.relpath(path, SITE)
     html = open(path, encoding="utf-8").read()
@@ -1032,6 +1107,7 @@ def process_page(path, css_ver="", crit=""):
     html = re.sub(re.escape(NEXT_START) + r".*?" + re.escape(NEXT_END), "", html, flags=re.S)
     html = ICON_ANY_RE.sub("", html)
     html = h1_unwrap(html)
+    html = add_toc(anchor_headings(html))
     if "</head>" not in html or not re.search(r"<body[^>]*>", html):
         return rel, "SKIP (no head/body)"
 
@@ -1294,7 +1370,9 @@ _INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM
              # the audio player snippet build_word_audio.py appends (the buttons' data-w is what counts)
              ("<!-- AE:AUDIO start -->", "<!-- AE:AUDIO end -->"),
              # the school-calendar page's weekly link check (result and time): a heartbeat
-             ("<!-- AE:CHECK start -->", "<!-- AE:CHECK end -->")]
+             ("<!-- AE:CHECK start -->", "<!-- AE:CHECK end -->"),
+             # the in-page table of contents is built from the page's own H2s (add_toc): navigation
+             (TOC_START, TOC_END)]
 
 SIG_ATTRS = ("href", "src", "poster", "data-w", "data-src", "value")
 def content_signature(html):
