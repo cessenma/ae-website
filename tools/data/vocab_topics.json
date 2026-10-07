@@ -2789,5 +2789,3588 @@
     ]
    ]
   ]
+ ],
+ "weather": [
+  [
+   "天氣狀況 Weather conditions",
+   [
+    [
+     "sunny",
+     "晴朗的、出太陽的",
+     "/ˈsʌnɪ/　It's sunny today.（今天出太陽。）"
+    ],
+    [
+     "cloudy",
+     "多雲的",
+     "/ˈklaʊdɪ/　ou 唸 /aʊ/：It's cloudy.（今天多雲。）"
+    ],
+    [
+     "rainy",
+     "下雨的、多雨的",
+     "/ˈrenɪ/　形容整天或整季：a rainy day（雨天）"
+    ],
+    [
+     "windy",
+     "風大的",
+     "/ˈwɪndɪ/　It's windy.（風很大。）不說 big wind"
+    ],
+    [
+     "snowy",
+     "下雪的",
+     "/ˈsnoɪ/　a snowy day（下雪天）；台灣平地少用"
+    ],
+    [
+     "stormy",
+     "暴風雨的",
+     "/ˈstɔrmɪ/　stormy weather（暴風雨天氣）"
+    ],
+    [
+     "foggy",
+     "有霧的",
+     "/ˈfɑgɪ/　It's foggy this morning.（今天早上有霧。）"
+    ],
+    [
+     "hazy",
+     "有霾的、灰濛濛的",
+     "/ˈhezɪ/　空氣髒、看不遠：It's hazy today.（今天有霾。）"
+    ],
+    [
+     "clear",
+     "晴朗無雲的",
+     "/klɪr/　a clear sky（晴空）；比 sunny 更強調沒有雲"
+    ],
+    [
+     "overcast",
+     "陰天的",
+     "/ˈovɚˌkæst/　整片烏雲：It's overcast.（天色陰沉。）"
+    ],
+    [
+     "rain",
+     "雨；下雨",
+     "/ren/　名詞也是動詞：heavy rain（大雨）、It rains a lot.（常下雨。）"
+    ],
+    [
+     "drizzle",
+     "毛毛雨；下毛毛雨",
+     "/ˈdrɪzḷ/　It's drizzling.（在下毛毛雨。）"
+    ],
+    [
+     "shower",
+     "陣雨",
+     "/ˈʃaʊɚ/　和「淋浴」是同一個字：scattered showers（局部陣雨）"
+    ],
+    [
+     "downpour",
+     "傾盆大雨",
+     "/ˈdaʊnˌpɔr/　We got caught in a downpour.（我們被大雨淋到。）"
+    ],
+    [
+     "thunderstorm",
+     "雷雨",
+     "/ˈθʌndɚˌstɔrm/　th 舌尖伸出：afternoon thunderstorm（午後雷陣雨）"
+    ],
+    [
+     "thunder",
+     "雷；打雷",
+     "/ˈθʌndɚ/　聽到的是 thunder，看到的是 lightning"
+    ],
+    [
+     "lightning",
+     "閃電",
+     "/ˈlaɪtnɪŋ/　兩個音節；lightening 是另一個字"
+    ],
+    [
+     "rainbow",
+     "彩虹",
+     "/ˈrenˌbo/　Look, a rainbow!（你看，彩虹！）"
+    ],
+    [
+     "cloud",
+     "雲",
+     "/klaʊd/　dark clouds（烏雲）"
+    ],
+    [
+     "wind",
+     "風",
+     "/wɪnd/　strong wind（強風）；a light wind（微風）"
+    ],
+    [
+     "breeze",
+     "微風",
+     "/briz/　a cool breeze（涼風）——舒服的風才叫 breeze"
+    ],
+    [
+     "gust",
+     "一陣強風、陣風",
+     "/gʌst/　預報用語：gusts up to 100 km/h（陣風達每小時 100 公里）"
+    ],
+    [
+     "storm",
+     "暴風雨",
+     "/stɔrm/　A storm is coming.（暴風雨要來了。）"
+    ],
+    [
+     "snow",
+     "雪；下雪",
+     "/sno/　It snowed on Hehuanshan.（合歡山下雪了。）"
+    ],
+    [
+     "hail",
+     "冰雹",
+     "/hel/　母音是 /e/，不是 hell 的 /ɛ/"
+    ],
+    [
+     "frost",
+     "霜",
+     "/frɔst/　frost on the grass（草上的霜）"
+    ],
+    [
+     "fog",
+     "霧",
+     "/fɑg/　thick fog（濃霧）；fog 是名詞，foggy 是形容詞"
+    ],
+    [
+     "mist",
+     "薄霧、水氣",
+     "/mɪst/　比 fog 淡：the mist on Yangmingshan（陽明山的薄霧）"
+    ],
+    [
+     "dew",
+     "露水",
+     "/du/　morning dew（晨露）"
+    ],
+    [
+     "flood",
+     "淹水、洪水",
+     "/flʌd/　oo 唸 /ʌ/，跟 blood 一樣，不是 food 的音"
+    ],
+    [
+     "drought",
+     "乾旱",
+     "/draʊt/　ough 唸「凹」，跟 out 押韻"
+    ],
+    [
+     "tornado",
+     "龍捲風",
+     "/tɔrˈnedo/　美國中部常見，台灣極少"
+    ],
+    [
+     "blizzard",
+     "暴風雪",
+     "/ˈblɪzɚd/　下雪又颳大風"
+    ],
+    [
+     "hurricane",
+     "颶風",
+     "/ˈhɝɪˌken/　同一種風暴：在美國叫 hurricane，在台灣叫 typhoon"
+    ]
+   ]
+  ],
+  [
+   "溫度與體感 Temperature and how it feels",
+   [
+    [
+     "hot",
+     "熱的",
+     "/hɑt/　It's so hot!（好熱！）"
+    ],
+    [
+     "warm",
+     "溫暖的",
+     "/wɔrm/　舒服的熱：a warm day（溫暖的一天）"
+    ],
+    [
+     "cool",
+     "涼爽的",
+     "/kul/　舒服的冷：It's nice and cool.（涼涼的很舒服。）"
+    ],
+    [
+     "cold",
+     "冷的",
+     "/kold/　It's cold out.（外面很冷。）"
+    ],
+    [
+     "chilly",
+     "有點冷的、涼颼颼的",
+     "/ˈtʃɪlɪ/　比 cold 輕，要穿外套的程度"
+    ],
+    [
+     "freezing",
+     "冷死了的（口語）",
+     "/ˈfrizɪŋ/　I'm freezing!（我快凍僵了！）"
+    ],
+    [
+     "humid",
+     "潮濕的（又熱又濕）",
+     "/ˈhjumɪd/　h 要發音：hot and humid（又熱又濕）"
+    ],
+    [
+     "muggy",
+     "悶熱的",
+     "/ˈmʌgɪ/　台灣夏天最準的字：It's muggy today.（今天好悶。）"
+    ],
+    [
+     "sticky",
+     "黏膩悶熱的",
+     "/ˈstɪkɪ/　口語：It's hot and sticky.（熱得黏黏的。）"
+    ],
+    [
+     "dry",
+     "乾燥的",
+     "/draɪ/　dry air（乾燥的空氣）；the dry season（乾季）"
+    ],
+    [
+     "damp",
+     "濕冷的、潮濕的",
+     "/dæmp/　冷又濕用 damp，不用 humid：cold and damp（濕冷）"
+    ],
+    [
+     "mild",
+     "溫和的、不冷不熱的",
+     "/maɪld/　a mild winter（暖冬）"
+    ],
+    [
+     "scorching",
+     "酷熱的",
+     "/ˈskɔrtʃɪŋ/　a scorching afternoon（熱到發燙的下午）"
+    ],
+    [
+     "temperature",
+     "溫度、氣溫",
+     "/ˈtɛmprətʃɚ/　美式唸三個音節：What's the temperature?（現在幾度？）"
+    ],
+    [
+     "degrees Celsius",
+     "攝氏……度",
+     "/ˈsɛlsɪəs/　28 degrees Celsius（攝氏 28 度）；台灣用這個"
+    ],
+    [
+     "degrees Fahrenheit",
+     "華氏……度",
+     "/ˈfærənˌhaɪt/　美國用華氏：82°F 約等於 28°C"
+    ],
+    [
+     "humidity",
+     "濕度",
+     "/hjuˈmɪdətɪ/　The humidity is 90%.（濕度百分之九十。）"
+    ],
+    [
+     "heat",
+     "高溫、熱氣",
+     "/hit/　I can't stand the heat.（我受不了這種熱。）"
+    ]
+   ]
+  ],
+  [
+   "季節 Seasons",
+   [
+    [
+     "season",
+     "季節",
+     "/ˈsizṇ/　the four seasons（四季）"
+    ],
+    [
+     "spring",
+     "春天",
+     "/sprɪŋ/　in spring（在春天）——季節前面用 in"
+    ],
+    [
+     "summer",
+     "夏天",
+     "/ˈsʌmɚ/　summer vacation（暑假）"
+    ],
+    [
+     "fall",
+     "秋天（美式）",
+     "/fɔl/　美國人日常說 fall"
+    ],
+    [
+     "autumn",
+     "秋天（英式、正式）",
+     "/ˈɔtəm/　字尾的 n 不發音"
+    ],
+    [
+     "winter",
+     "冬天",
+     "/ˈwɪntɚ/　winter vacation（寒假）"
+    ]
+   ]
+  ],
+  [
+   "台灣天氣 Taiwan weather",
+   [
+    [
+     "typhoon",
+     "颱風",
+     "/taɪˈfun/　重音在後 tai-FOON：A typhoon is coming.（颱風要來了。）"
+    ],
+    [
+     "typhoon warning",
+     "颱風警報",
+     "海上警報 sea warning、陸上警報 land warning"
+    ],
+    [
+     "typhoon day off",
+     "颱風假",
+     "台灣特有的說法；對外國人說 School is closed because of the typhoon.（因為颱風停課。）"
+    ],
+    [
+     "the eye of the typhoon",
+     "颱風眼",
+     "We're in the eye of the typhoon.（我們正在颱風眼裡。）"
+    ],
+    [
+     "afternoon thunderstorm",
+     "午後雷陣雨",
+     "夏天天天出現的預報：afternoon thunderstorms in the mountains（山區午後雷陣雨）"
+    ],
+    [
+     "plum rain season",
+     "梅雨季",
+     "五、六月；也可以說 the rainy season（雨季）"
+    ],
+    [
+     "cold front",
+     "冷鋒",
+     "氣象用語：A cold front is moving in.（冷鋒要來了。）"
+    ],
+    [
+     "cold wave",
+     "寒流",
+     "也說 cold snap（突然變冷）；氣象署的定義是台北低溫 10°C 以下"
+    ],
+    [
+     "cold air mass",
+     "冷氣團",
+     "/mæs/　預報用語，比 cold wave 弱一級"
+    ],
+    [
+     "northeast monsoon",
+     "東北季風",
+     "/mɑnˈsun/　秋冬北部濕冷的原因"
+    ],
+    [
+     "heat wave",
+     "熱浪",
+     "a heat wave（一波熱浪）；連續好幾天高溫"
+    ],
+    [
+     "UV index",
+     "紫外線指數",
+     "UV 唸字母 U、V：The UV index is very high.（紫外線指數很高。）"
+    ],
+    [
+     "air quality",
+     "空氣品質",
+     "AQI = Air Quality Index（空氣品質指數）"
+    ],
+    [
+     "haze",
+     "霾",
+     "/hez/　名詞；形容詞是 hazy"
+    ],
+    [
+     "heavy rain",
+     "大雨",
+     "中文的「大雨」是 heavy，不是 big：heavy rain advisory（大雨特報）"
+    ],
+    [
+     "torrential rain",
+     "豪雨",
+     "/tɔˈrɛnʃəl/　比 heavy rain 更強"
+    ],
+    [
+     "landslide",
+     "山崩、土石流",
+     "/ˈlændˌslaɪd/　多半由豪雨引起；mudslide 也通用"
+    ],
+    [
+     "earthquake",
+     "地震",
+     "/ˈɝθˌkwek/　不是天氣！地震是地質現象，不會出現在天氣預報裡"
+    ]
+   ]
+  ],
+  [
+   "預報用語 Forecast words",
+   [
+    [
+     "forecast",
+     "預報",
+     "/ˈfɔrˌkæst/　the weather forecast（天氣預報）"
+    ],
+    [
+     "high",
+     "最高溫",
+     "/haɪ/　a high of 32（最高溫 32 度）"
+    ],
+    [
+     "low",
+     "最低溫",
+     "/lo/　a low of 18（最低溫 18 度）"
+    ],
+    [
+     "chance of rain",
+     "降雨機率",
+     "a 30% chance of rain（降雨機率 30%）"
+    ],
+    [
+     "feels like",
+     "體感溫度",
+     "It's 32 but feels like 38.（32 度，體感 38 度。）"
+    ],
+    [
+     "partly cloudy",
+     "多雲時晴",
+     "預報最常見的說法之一"
+    ],
+    [
+     "mostly sunny",
+     "晴時多雲",
+     "以晴為主"
+    ],
+    [
+     "mostly cloudy",
+     "陰時多雲",
+     "以陰為主"
+    ],
+    [
+     "scattered showers",
+     "局部陣雨",
+     "/ˈskætɚd/　短暫、分布不均的雨"
+    ],
+    [
+     "clearing up",
+     "放晴、轉晴",
+     "It's clearing up.（天氣轉晴了。）"
+    ],
+    [
+     "precipitation",
+     "降水（量）",
+     "/prɪˌsɪpəˈteʃən/　預報的正式用語，口語說 rain"
+    ],
+    [
+     "visibility",
+     "能見度",
+     "/ˌvɪzəˈbɪlətɪ/　low visibility（能見度低）"
+    ],
+    [
+     "wind speed",
+     "風速",
+     "常搭配 km/h（每小時公里）"
+    ],
+    [
+     "advisory",
+     "特報",
+     "/ədˈvaɪzərɪ/　heavy rain advisory（大雨特報）"
+    ],
+    [
+     "warning",
+     "警報",
+     "/ˈwɔrnɪŋ/　typhoon warning（颱風警報）——比 advisory 嚴重"
+    ],
+    [
+     "climate",
+     "氣候",
+     "/ˈklaɪmɪt/　長期的平均狀態；weather 是今天、明天的天氣"
+    ],
+    [
+     "weather app",
+     "天氣 App",
+     "Check the weather app before you go.（出門前先看天氣 App。）"
+    ]
+   ]
+  ],
+  [
+   "天氣用品 What to bring",
+   [
+    [
+     "umbrella",
+     "雨傘",
+     "/ʌmˈbrɛlə/　重音在中間：Take an umbrella.（帶把傘。）"
+    ],
+    [
+     "raincoat",
+     "雨衣",
+     "/ˈrenˌkot/　騎機車必備"
+    ],
+    [
+     "rain boots",
+     "雨鞋",
+     "美式說 rain boots，英式說 wellies"
+    ],
+    [
+     "sunscreen",
+     "防曬乳",
+     "/ˈsʌnˌskrin/　put on sunscreen（擦防曬）"
+    ],
+    [
+     "sunglasses",
+     "太陽眼鏡",
+     "永遠是複數：a pair of sunglasses（一副太陽眼鏡）"
+    ],
+    [
+     "hat",
+     "帽子",
+     "/hæt/　a sun hat（遮陽帽）"
+    ],
+    [
+     "jacket",
+     "外套",
+     "/ˈdʒækɪt/　Bring a jacket. It's chilly.（帶件外套，有點冷。）"
+    ],
+    [
+     "scarf",
+     "圍巾",
+     "/skɑrf/　複數是 scarves"
+    ],
+    [
+     "gloves",
+     "手套",
+     "/glʌvz/　o 唸 /ʌ/"
+    ],
+    [
+     "air conditioner",
+     "冷氣",
+     "口語縮寫 AC：Turn on the AC.（開冷氣。）"
+    ],
+    [
+     "heater",
+     "暖氣、電暖器",
+     "/ˈhitɚ/　寒流來的時候：turn on the heater（開暖氣）"
+    ],
+    [
+     "thermometer",
+     "溫度計",
+     "/θɚˈmɑmətɚ/　重音在第二音節 mom"
+    ]
+   ]
+  ]
+ ],
+ "time": {
+  "clock": [
+   [
+    "整點 On the hour",
+    [
+     [
+      "one o'clock",
+      "1:00 一點整",
+      "整點才加 o'clock；口語也可只說 It's one."
+     ],
+     [
+      "two o'clock",
+      "2:00 兩點整",
+      "o'clock 唸 /əˈklɑk/，重音在後，來自 of the clock"
+     ],
+     [
+      "five o'clock",
+      "5:00 五點整",
+      "整點後面也可以接時段：five o'clock in the afternoon"
+     ],
+     [
+      "eight o'clock sharp",
+      "8:00 八點整（一分不差）",
+      "sharp 強調準時：Be here at eight sharp."
+     ],
+     [
+      "ten o'clock",
+      "10:00 十點整",
+      "10、11、12 點後面一樣接 o'clock"
+     ],
+     [
+      "twelve o'clock",
+      "12:00 十二點整",
+      "中午說 noon、半夜說 midnight，比 twelve o'clock 清楚"
+     ],
+     [
+      "It's three o'clock.",
+      "三點了。",
+      "報時間的主詞永遠是 It，不是 Time 或 Now"
+     ]
+    ]
+   ],
+   [
+    "幾分 Minutes past the hour",
+    [
+     [
+      "one oh five",
+      "1:05 一點五分",
+      "分鐘 1–9 時，0 唸成 oh；不唸 one five"
+     ],
+     [
+      "five past one",
+      "1:05 一點五分",
+      "past＝過了；美式口語也說 five after one"
+     ],
+     [
+      "one ten",
+      "1:10 一點十分",
+      "先唸「點」再唸「分」：最簡單、任何時間都通用"
+     ],
+     [
+      "ten past one",
+      "1:10 一點十分",
+      "整五分的分鐘數最常用 past"
+     ],
+     [
+      "two twenty",
+      "2:20 兩點二十分",
+      "也可說 twenty past two"
+     ],
+     [
+      "three twenty-five",
+      "3:25 三點二十五分",
+      "也可說 twenty-five past three"
+     ],
+     [
+      "four oh seven",
+      "4:07 四點七分",
+      "不是整五分的分鐘數，直接唸數字就好"
+     ],
+     [
+      "six eighteen",
+      "6:18 六點十八分",
+      "eighteen past six 也通，但比較少聽到"
+     ],
+     [
+      "seven forty",
+      "7:40 七點四十分",
+      "超過 30 分也可以倒著說：twenty to eight"
+     ],
+     [
+      "eight fifty-five",
+      "8:55 八點五十五分",
+      "或 five to nine（差五分九點）"
+     ],
+     [
+      "ten thirty-two",
+      "10:32 十點三十二分",
+      "任何分鐘數都能這樣唸，考試時最安全"
+     ]
+    ]
+   ],
+   [
+    "一刻與半 Quarter and half",
+    [
+     [
+      "a quarter past one",
+      "1:15 一點十五分",
+      "quarter＝一刻鐘（15 分）；a 可以省略"
+     ],
+     [
+      "a quarter after one",
+      "1:15 一點十五分",
+      "美式口語更常用 after"
+     ],
+     [
+      "one fifteen",
+      "1:15 一點十五分",
+      "直接唸數字，美式最常見"
+     ],
+     [
+      "half past one",
+      "1:30 一點半",
+      "half 的 l 不發音 /hæf/；英式口語會省成 half one"
+     ],
+     [
+      "one thirty",
+      "1:30 一點半",
+      "美式最常用；照中文語序說 one half 是錯的"
+     ],
+     [
+      "a quarter to two",
+      "1:45 一點四十五分",
+      "差一刻就兩點；to＝差、還差"
+     ],
+     [
+      "a quarter till two",
+      "1:45 一點四十五分",
+      "美式口語 till＝to"
+     ],
+     [
+      "one forty-five",
+      "1:45 一點四十五分",
+      "直接唸數字，不用換算"
+     ]
+    ]
+   ],
+   [
+    "差幾分 Minutes to the hour",
+    [
+     [
+      "ten to two",
+      "1:50 一點五十分",
+      "差十分兩點；to 後面接「下一個」整點"
+     ],
+     [
+      "five to three",
+      "2:55 兩點五十五分",
+      "也可唸 two fifty-five"
+     ],
+     [
+      "twenty to five",
+      "4:40 四點四十分",
+      "美式也說 twenty till five"
+     ],
+     [
+      "twenty-five to seven",
+      "6:35 六點三十五分",
+      "分鐘超過 30 才用 to；6:25 要說 twenty-five past six"
+     ],
+     [
+      "It's almost ten.",
+      "快十點了。",
+      "almost＝nearly；不確定幾分時最好用"
+     ],
+     [
+      "It's just after nine.",
+      "九點剛過。",
+      "just after＝剛過"
+     ],
+     [
+      "It's about half past two.",
+      "大概兩點半。",
+      "about＝大約"
+     ]
+    ]
+   ],
+   [
+    "上午、下午與中午 a.m., p.m., noon and midnight",
+    [
+     [
+      "seven a.m.",
+      "7:00 a.m. 早上七點",
+      "a.m.＝中午之前（0:00–11:59），唸 /ˌeˈɛm/"
+     ],
+     [
+      "seven in the morning",
+      "早上七點",
+      "口語比 a.m. 更常用；不說 7 a.m. in the morning"
+     ],
+     [
+      "six thirty in the morning",
+      "6:30 a.m. 早上六點半",
+      "分鐘放在 in the morning 前面"
+     ],
+     [
+      "twelve noon",
+      "12:00 p.m. 中午十二點",
+      "noon 就是中午；寫 12 p.m. 容易誤會，直接寫 noon"
+     ],
+     [
+      "three in the afternoon",
+      "3:00 p.m. 下午三點",
+      "afternoon＝中午到傍晚"
+     ],
+     [
+      "six in the evening",
+      "6:00 p.m. 傍晚六點",
+      "evening＝傍晚到睡前"
+     ],
+     [
+      "nine thirty p.m.",
+      "9:30 p.m. 晚上九點半",
+      "p.m.＝中午之後（12:00–23:59），唸 /ˌpiˈɛm/"
+     ],
+     [
+      "nine thirty at night",
+      "晚上九點半",
+      "night 用 at，不是 in the night"
+     ],
+     [
+      "ten fifteen at night",
+      "10:15 p.m. 晚上十點十五分",
+      "也可說 ten fifteen p.m."
+     ],
+     [
+      "twelve midnight",
+      "12:00 a.m. 午夜十二點",
+      "midnight 是一天的開始；寫 12 a.m. 容易誤會，直接寫 midnight"
+     ]
+    ]
+   ]
+  ],
+  "abbr": [
+   [
+    "a.m.",
+    "ante meridiem",
+    "上午（午夜 12:00 到 11:59）；拉丁文「中午之前」"
+   ],
+   [
+    "p.m.",
+    "post meridiem",
+    "下午、晚上（中午 12:00 到 23:59）；拉丁文「中午之後」"
+   ],
+   [
+    "AM／PM、am／pm",
+    "a.m.／p.m. 的其他寫法",
+    "大寫、小寫、有無句點都看得到；美式新聞多寫 a.m.／p.m.，同一篇要一致"
+   ],
+   [
+    "o'clock",
+    "of the clock",
+    "…點整；只接整點，不和 a.m.／p.m. 連用"
+   ],
+   [
+    "hr／hrs",
+    "hour／hours",
+    "小時；2 hrs 兩小時"
+   ],
+   [
+    "min／mins",
+    "minute／minutes",
+    "分鐘；15 min 十五分鐘"
+   ],
+   [
+    "sec／secs",
+    "second／seconds",
+    "秒；30 sec 三十秒"
+   ],
+   [
+    "h、m、s",
+    "hours、minutes、seconds",
+    "計時器與運動紀錄的寫法：2h 30m 15s"
+   ],
+   [
+    "wk／wks",
+    "week／weeks",
+    "週；2 wks 兩週"
+   ],
+   [
+    "mo／mos",
+    "month／months",
+    "月（美式）；6 mos 六個月"
+   ],
+   [
+    "yr／yrs",
+    "year／years",
+    "年；5 yrs old 五歲"
+   ],
+   [
+    "24/7",
+    "twenty-four seven",
+    "全天候、全年無休：open 24/7"
+   ],
+   [
+    "9-to-5",
+    "nine to five",
+    "朝九晚五的上班時間：a 9-to-5 job"
+   ],
+   [
+    "GMT",
+    "Greenwich Mean Time",
+    "格林威治標準時間"
+   ],
+   [
+    "UTC",
+    "Coordinated Universal Time",
+    "世界協調時間；台灣是 UTC+8"
+   ],
+   [
+    "EST／PST",
+    "Eastern／Pacific Standard Time",
+    "美東／美西標準時間"
+   ],
+   [
+    "ETA",
+    "estimated time of arrival",
+    "預計到達時間"
+   ],
+   [
+    "ASAP",
+    "as soon as possible",
+    "盡快"
+   ],
+   [
+    "TBD／TBA",
+    "to be determined／to be announced",
+    "時間待定／待公布"
+   ]
+  ],
+  "words": [
+   [
+    "時間單位 Units of time",
+    [
+     [
+      "second",
+      "秒",
+      "複數 seconds；Wait a second. 等一下"
+     ],
+     [
+      "minute",
+      "分鐘",
+      "唸 /ˈmɪnɪt/；Just a minute. 等一分鐘"
+     ],
+     [
+      "hour",
+      "小時",
+      "h 不發音 /aʊr/，所以是 an hour"
+     ],
+     [
+      "half an hour",
+      "半小時",
+      "美式也說 a half hour"
+     ],
+     [
+      "day",
+      "天、日",
+      "all day 一整天"
+     ],
+     [
+      "week",
+      "週、星期",
+      "weekday 平日、weekend 週末"
+     ],
+     [
+      "month",
+      "月",
+      "th 唸 /θ/；複數 months"
+     ],
+     [
+      "year",
+      "年",
+      "a year ago 一年前"
+     ],
+     [
+      "decade",
+      "十年",
+      "重音在第一音節 /ˈdɛked/"
+     ],
+     [
+      "century",
+      "世紀、一百年",
+      "the 21st century 二十一世紀"
+     ],
+     [
+      "millennium",
+      "千年",
+      "複數 millennia"
+     ],
+     [
+      "fortnight",
+      "兩週",
+      "英式用法；美式直接說 two weeks"
+     ],
+     [
+      "moment",
+      "片刻",
+      "Just a moment. 稍等一下"
+     ]
+    ]
+   ],
+   [
+    "一天的時段 Times of day",
+    [
+     [
+      "dawn",
+      "黎明、破曉",
+      "at dawn 在黎明"
+     ],
+     [
+      "sunrise",
+      "日出",
+      "at sunrise；相對是 sunset"
+     ],
+     [
+      "morning",
+      "早上",
+      "in the morning；Good morning. 早安"
+     ],
+     [
+      "noon",
+      "中午",
+      "at noon；等於 12:00 p.m."
+     ],
+     [
+      "midday",
+      "正午",
+      "等於 noon，英式較常用"
+     ],
+     [
+      "afternoon",
+      "下午",
+      "in the afternoon；Good afternoon. 午安"
+     ],
+     [
+      "evening",
+      "傍晚、晚上",
+      "in the evening；Good evening. 晚上好"
+     ],
+     [
+      "dusk",
+      "黃昏",
+      "at dusk；天快黑的時候"
+     ],
+     [
+      "sunset",
+      "日落",
+      "at sunset 在日落時"
+     ],
+     [
+      "night",
+      "夜晚",
+      "at night（不是 in the night）；Good night. 晚安（道別用）"
+     ],
+     [
+      "midnight",
+      "午夜",
+      "at midnight；等於 12:00 a.m."
+     ],
+     [
+      "today",
+      "今天",
+      "前面不加介系詞：I'm busy today."
+     ],
+     [
+      "tonight",
+      "今晚",
+      "不說 this night"
+     ],
+     [
+      "yesterday",
+      "昨天",
+      "yesterday morning 昨天早上"
+     ],
+     [
+      "tomorrow",
+      "明天",
+      "tomorrow night 明天晚上"
+     ],
+     [
+      "the day after tomorrow",
+      "後天",
+      "前天是 the day before yesterday"
+     ]
+    ]
+   ],
+   [
+    "頻率 Frequency",
+    [
+     [
+      "always",
+      "總是",
+      "放在一般動詞前、be 動詞後：I always get up at six."
+     ],
+     [
+      "usually",
+      "通常",
+      "I usually walk to school."
+     ],
+     [
+      "often",
+      "經常",
+      "t 可以不發音 /ˈɔfən/"
+     ],
+     [
+      "sometimes",
+      "有時候",
+      "可放句首：Sometimes I'm late."
+     ],
+     [
+      "occasionally",
+      "偶爾",
+      "比 sometimes 少"
+     ],
+     [
+      "rarely",
+      "很少",
+      "seldom 同義，較正式"
+     ],
+     [
+      "hardly ever",
+      "幾乎不",
+      "比 rarely 更少"
+     ],
+     [
+      "never",
+      "從不",
+      "本身就是否定，不再加 not"
+     ],
+     [
+      "every day",
+      "每天",
+      "兩個字；everyday 連寫是形容詞（日常的）"
+     ],
+     [
+      "once a week",
+      "一週一次",
+      "once＝一次"
+     ],
+     [
+      "twice a month",
+      "一個月兩次",
+      "twice＝兩次"
+     ],
+     [
+      "three times a year",
+      "一年三次",
+      "三次以上用 times"
+     ],
+     [
+      "daily",
+      "每日的、每天",
+      "a daily routine 日常作息"
+     ],
+     [
+      "weekly",
+      "每週的",
+      "a weekly test 週考"
+     ],
+     [
+      "monthly",
+      "每月的",
+      "a monthly fee 月費"
+     ],
+     [
+      "yearly",
+      "每年的",
+      "也說 annual／annually"
+     ]
+    ]
+   ],
+   [
+    "前後與早晚 Before, after, early and late",
+    [
+     [
+      "before",
+      "在…之前",
+      "before class 上課前"
+     ],
+     [
+      "after",
+      "在…之後",
+      "after school 放學後"
+     ],
+     [
+      "early",
+      "早的、提早",
+      "I'm early. 我早到了；early morning 清晨"
+     ],
+     [
+      "late",
+      "晚的、遲到",
+      "I'm late. 我遲到了；late at night 深夜"
+     ],
+     [
+      "on time",
+      "準時",
+      "The train was on time. 火車準時"
+     ],
+     [
+      "in time",
+      "及時、來得及",
+      "just in time 剛好趕上"
+     ],
+     [
+      "ago",
+      "…以前",
+      "放在時間後面：two hours ago 兩小時前"
+     ],
+     [
+      "later",
+      "稍後、之後",
+      "See you later. 待會見"
+     ],
+     [
+      "soon",
+      "很快、不久",
+      "See you soon. 很快再見"
+     ],
+     [
+      "now",
+      "現在",
+      "right now 馬上、現在就"
+     ],
+     [
+      "then",
+      "那時、然後",
+      "See you then. 到時候見"
+     ],
+     [
+      "until",
+      "直到",
+      "也寫 till；until five 到五點為止"
+     ],
+     [
+      "during",
+      "在…期間",
+      "during the class 上課期間"
+     ],
+     [
+      "while",
+      "當…的時候",
+      "while I was sleeping 我睡覺的時候"
+     ],
+     [
+      "already",
+      "已經",
+      "It's already ten. 已經十點了"
+     ],
+     [
+      "yet",
+      "還（沒）",
+      "用在否定與疑問：not yet 還沒"
+     ],
+     [
+      "still",
+      "仍然",
+      "It's still early. 還早"
+     ],
+     [
+      "at the moment",
+      "目前、此刻",
+      "等於 right now"
+     ],
+     [
+      "in a hurry",
+      "匆忙",
+      "I'm in a hurry. 我在趕時間"
+     ],
+     [
+      "last",
+      "上一個",
+      "last week 上週、last night 昨晚"
+     ],
+     [
+      "next",
+      "下一個",
+      "next week 下週、next time 下次"
+     ],
+     [
+      "this",
+      "這個",
+      "this morning 今天早上、this week 本週"
+     ]
+    ]
+   ],
+   [
+    "時鐘與看時間 Clocks and telling time",
+    [
+     [
+      "clock",
+      "時鐘",
+      "掛在牆上或放桌上的；o'clock 就是從 of the clock 來的"
+     ],
+     [
+      "watch",
+      "手錶",
+      "戴在手上的；wear a watch 戴錶"
+     ],
+     [
+      "alarm clock",
+      "鬧鐘",
+      "set the alarm 設鬧鐘；The alarm went off. 鬧鐘響了"
+     ],
+     [
+      "hour hand",
+      "時針",
+      "hand 在這裡是「指針」，短的那根"
+     ],
+     [
+      "minute hand",
+      "分針",
+      "長的那根"
+     ],
+     [
+      "second hand",
+      "秒針",
+      "連寫 second-hand 是「二手的」"
+     ],
+     [
+      "clock face",
+      "鐘面",
+      "數字所在的圓盤"
+     ],
+     [
+      "digital clock",
+      "電子鐘",
+      "相對是 analog clock 指針鐘"
+     ],
+     [
+      "timer",
+      "計時器",
+      "set a timer for ten minutes 設十分鐘計時"
+     ],
+     [
+      "stopwatch",
+      "碼錶",
+      "跑步、游泳計時用"
+     ],
+     [
+      "calendar",
+      "月曆、行事曆",
+      "mark the calendar 在月曆上做記號"
+     ],
+     [
+      "schedule",
+      "時間表、行程",
+      "美式唸 /ˈskɛdʒʊl/；on schedule 照進度"
+     ],
+     [
+      "timetable",
+      "課表、時刻表",
+      "英式常用；美式多說 schedule"
+     ],
+     [
+      "time zone",
+      "時區",
+      "台灣是 UTC+8"
+     ],
+     [
+      "daylight saving time",
+      "日光節約時間",
+      "美國夏天把時鐘撥快一小時；台灣沒有"
+     ],
+     [
+      "tell time",
+      "看時鐘、報時",
+      "Can you tell time? 你會看時鐘嗎"
+     ]
+    ]
+   ]
+  ],
+  "preps": [
+   [
+    "at seven o'clock",
+    "在七點",
+    "at + 時刻"
+   ],
+   [
+    "at seven thirty",
+    "在七點半",
+    "at + 任何幾點幾分"
+   ],
+   [
+    "at noon",
+    "在中午",
+    "at + noon／midnight"
+   ],
+   [
+    "at midnight",
+    "在午夜",
+    "一天的開始"
+   ],
+   [
+    "at night",
+    "在晚上",
+    "固定用法，不是 in the night"
+   ],
+   [
+    "at lunchtime",
+    "在午餐時間",
+    "at + …time：at bedtime 睡覺時間"
+   ],
+   [
+    "in the morning",
+    "在早上",
+    "in + 一天的時段，記得加 the"
+   ],
+   [
+    "in the afternoon",
+    "在下午",
+    "同上"
+   ],
+   [
+    "in the evening",
+    "在傍晚",
+    "evening 用 in，night 用 at"
+   ],
+   [
+    "in May",
+    "在五月",
+    "in + 月份"
+   ],
+   [
+    "in 2026",
+    "在 2026 年",
+    "in + 年份"
+   ],
+   [
+    "in summer",
+    "在夏天",
+    "in + 季節；美式也說 in the summer"
+   ],
+   [
+    "in ten minutes",
+    "十分鐘後",
+    "in + 一段時間＝多久之後：I'll be back in ten minutes."
+   ],
+   [
+    "on Monday",
+    "在星期一",
+    "on + 星期"
+   ],
+   [
+    "on Monday morning",
+    "在星期一早上",
+    "有星期就用 on，不用 in"
+   ],
+   [
+    "on May 5",
+    "在五月五日",
+    "on + 日期"
+   ],
+   [
+    "on the weekend",
+    "在週末",
+    "美式 on；英式 at the weekend"
+   ],
+   [
+    "on my birthday",
+    "在我生日那天",
+    "on + 特定的一天"
+   ],
+   [
+    "for two hours",
+    "持續兩小時",
+    "for + 一段時間"
+   ],
+   [
+    "from nine to five",
+    "從九點到五點",
+    "from…to…"
+   ],
+   [
+    "by five o'clock",
+    "五點前（最晚五點）",
+    "by＝不晚於，截止"
+   ],
+   [
+    "until five o'clock",
+    "直到五點",
+    "until＝持續到…為止"
+   ],
+   [
+    "every day",
+    "每天",
+    "every／this／last／next 前面不加介系詞"
+   ]
+  ],
+  "sentences": [
+   [
+    "問時間 Asking the time",
+    [
+     [
+      "What time is it?",
+      "現在幾點？",
+      "最常用、最直接"
+     ],
+     [
+      "What time is it now?",
+      "現在幾點了？",
+      "加 now 也可以，不加更自然"
+     ],
+     [
+      "Do you have the time?",
+      "請問現在幾點？",
+      "一定要有 the；Do you have time? 是「你有空嗎」"
+     ],
+     [
+      "Could you tell me the time?",
+      "可以告訴我現在幾點嗎？",
+      "最客氣，問陌生人用"
+     ],
+     [
+      "Excuse me. What time is it?",
+      "不好意思，請問幾點？",
+      "問陌生人先說 Excuse me"
+     ],
+     [
+      "What's the time?",
+      "幾點了？",
+      "英式常用"
+     ]
+    ]
+   ],
+   [
+    "回答時間 Telling the time",
+    [
+     [
+      "It's seven o'clock.",
+      "七點整。",
+      "主詞永遠是 It"
+     ],
+     [
+      "It's seven thirty.",
+      "七點半。",
+      "美式最常用"
+     ],
+     [
+      "It's half past seven.",
+      "七點半。",
+      "英式最常用，美國人也聽得懂"
+     ],
+     [
+      "It's a quarter to eight.",
+      "七點四十五分。",
+      "差一刻八點"
+     ],
+     [
+      "It's almost eight.",
+      "快八點了。",
+      "不確定幾分時用"
+     ],
+     [
+      "It's exactly eight.",
+      "剛好八點。",
+      "exactly＝剛好"
+     ],
+     [
+      "It's eight sharp.",
+      "八點整。",
+      "sharp＝一分不差"
+     ],
+     [
+      "Sorry. I don't have a watch.",
+      "抱歉，我沒戴錶。",
+      "被問時間但不知道時"
+     ]
+    ]
+   ],
+   [
+    "問幾點開始、幾點結束 Asking about schedules",
+    [
+     [
+      "What time does the class start?",
+      "課幾點開始？",
+      "does + 原形動詞"
+     ],
+     [
+      "It starts at nine.",
+      "九點開始。",
+      "at + 時刻；第三人稱單數加 s"
+     ],
+     [
+      "What time does the store close?",
+      "店幾點關？",
+      "close＝打烊"
+     ],
+     [
+      "It closes at ten.",
+      "十點關。",
+      "回答一樣用 at"
+     ],
+     [
+      "When is the test?",
+      "考試是什麼時候？",
+      "when 可以問日期，也可以問時間"
+     ],
+     [
+      "It's on Friday at two.",
+      "星期五兩點。",
+      "on 星期、at 時刻"
+     ],
+     [
+      "What time do you get up?",
+      "你幾點起床？",
+      "do + 原形動詞"
+     ],
+     [
+      "I get up at six thirty.",
+      "我六點半起床。",
+      "get up＝起床"
+     ],
+     [
+      "What time is it in New York?",
+      "紐約現在幾點？",
+      "問時差"
+     ],
+     [
+      "Let's meet at three.",
+      "我們三點見。",
+      "約時間用 at"
+     ],
+     [
+      "See you at ten!",
+      "十點見！",
+      "口語道別"
+     ],
+     [
+      "Is it too early?",
+      "會太早嗎？",
+      "early 早、late 晚"
+     ]
+    ]
+   ],
+   [
+    "要多久、花時間 How long, take, spend and last",
+    [
+     [
+      "How long does it take?",
+      "要花多久？",
+      "問時間長度用 How long，不是 How long time"
+     ],
+     [
+      "It takes twenty minutes.",
+      "要二十分鐘。",
+      "take＝需要（時間），主詞是 it"
+     ],
+     [
+      "It takes me an hour to get to school.",
+      "我到學校要一小時。",
+      "take + 人 + 時間 + to V"
+     ],
+     [
+      "How long is the movie?",
+      "電影多長？",
+      "問長度"
+     ],
+     [
+      "The movie lasts two hours.",
+      "電影長兩小時。",
+      "last 當動詞＝持續"
+     ],
+     [
+      "I spend an hour on homework every day.",
+      "我每天花一小時寫功課。",
+      "spend + 時間 + on N／V-ing，主詞是人"
+     ],
+     [
+      "The class is fifty minutes long.",
+      "一堂課五十分鐘。",
+      "長度用 long"
+     ],
+     [
+      "How often do you have English class?",
+      "你多久上一次英文課？",
+      "How often 問頻率"
+     ],
+     [
+      "Twice a week.",
+      "一週兩次。",
+      "回答頻率"
+     ],
+     [
+      "Time's up!",
+      "時間到！",
+      "考試、遊戲結束時"
+     ],
+     [
+      "Hurry up! We're late!",
+      "快點！我們遲到了！",
+      "催促"
+     ],
+     [
+      "Take your time.",
+      "慢慢來。",
+      "叫人不用急"
+     ],
+     [
+      "I'm running late.",
+      "我要遲到了。",
+      "口語，快遲到時"
+     ],
+     [
+      "What's the date today?",
+      "今天幾號？",
+      "問日期用 date，不是 time"
+     ]
+    ]
+   ]
+  ],
+  "mistakes": [
+   [
+    "seven half（七點半）",
+    "seven thirty／half past seven",
+    "英文沒有「點＋半」的語序：half 放在 past 前面，或直接唸 thirty"
+   ],
+   [
+    "seven thirty o'clock",
+    "seven thirty",
+    "o'clock 只用在整點，後面有分鐘就不加"
+   ],
+   [
+    "12 p.m. 當成半夜",
+    "12 p.m.＝中午、12 a.m.＝午夜；最保險寫 noon／midnight",
+    "p.m. 是「中午之後」，中午 12:00 正是下午的起點"
+   ],
+   [
+    "in seven o'clock／at the morning",
+    "at seven o'clock／in the morning／on Monday",
+    "時刻用 at、時段用 in、星期和日期用 on；night 例外用 at"
+   ],
+   [
+    "a quarter to two 以為是 2:15",
+    "a quarter to two＝1:45；2:15 是 a quarter past two",
+    "to＝還差、past＝過了；不確定就直接唸 one forty-five"
+   ]
+  ]
+ },
+ "food": [
+  [
+   "台灣小吃與常見食物 Taiwanese food",
+   [
+    [
+     "bubble tea (boba)",
+     "珍珠奶茶",
+     "美國多說 boba，英國多說 bubble tea；珍珠是 tapioca pearls"
+    ],
+    [
+     "stinky tofu",
+     "臭豆腐",
+     "stinky ＝ 臭的；tofu 唸 /ˈtofu/，重音在前"
+    ],
+    [
+     "beef noodle soup",
+     "牛肉麵",
+     "口語也說 beef noodles；台灣招牌，外國人一聽就懂"
+    ],
+    [
+     "braised pork rice (lu rou fan)",
+     "滷肉飯",
+     "braised 唸 /brezd/ ＝ 滷的；也有人說 minced pork rice"
+    ],
+    [
+     "oyster omelet",
+     "蚵仔煎",
+     "oyster 唸 /ˈɔɪstɚ/；omelet 是美式拼法（英式 omelette）"
+    ],
+    [
+     "scallion pancake",
+     "蔥油餅",
+     "scallion 唸 /ˈskæljən/ ＝ 青蔥；也說 green onion pancake"
+    ],
+    [
+     "soup dumplings (xiaolongbao)",
+     "小籠包",
+     "國外菜單常直接寫 xiaolongbao，縮寫 XLB"
+    ],
+    [
+     "pineapple cake",
+     "鳳梨酥",
+     "台灣伴手禮代表；a box of pineapple cakes ＝ 一盒鳳梨酥"
+    ],
+    [
+     "shaved ice",
+     "剉冰",
+     "shaved 唸 /ʃevd/；夏威夷的叫法是 shave ice"
+    ],
+    [
+     "mango shaved ice",
+     "芒果冰",
+     "mango 唸 /ˈmæŋɡo/；夏天最好介紹的一道"
+    ],
+    [
+     "fried chicken cutlet",
+     "雞排",
+     "cutlet 唸 /ˈkʌtlɪt/；也說 Taiwanese fried chicken"
+    ],
+    [
+     "popcorn chicken",
+     "鹽酥雞",
+     "字面「爆米花雞」，因為一口一塊；也叫 salt and pepper chicken"
+    ],
+    [
+     "night market",
+     "夜市",
+     "逛夜市 ＝ go to the night market；不說 night fair"
+    ],
+    [
+     "hot pot",
+     "火鍋",
+     "兩個字分開寫；麻辣鍋 ＝ spicy hot pot"
+    ],
+    [
+     "sweet potato balls",
+     "地瓜球",
+     "sweet potato ＝ 地瓜；夜市一袋 a bag of sweet potato balls"
+    ],
+    [
+     "turnip cake",
+     "蘿蔔糕",
+     "其實是白蘿蔔（daikon），但菜單慣用 turnip cake，也說 radish cake"
+    ],
+    [
+     "rice ball (fan tuan)",
+     "飯糰",
+     "台式飯糰常直接說 fan tuan，和日式 onigiri 不同"
+    ],
+    [
+     "egg pancake (dan bing)",
+     "蛋餅",
+     "早餐店代表；也說 Taiwanese egg crepe"
+    ],
+    [
+     "soy milk",
+     "豆漿",
+     "soy 唸 /sɔɪ/；鹹豆漿 ＝ savory soy milk"
+    ],
+    [
+     "pepper bun (hu jiao bing)",
+     "胡椒餅",
+     "pepper 唸 /ˈpɛpɚ/；饒河夜市那種叫 Fuzhou pepper bun"
+    ],
+    [
+     "Taiwanese sausage",
+     "香腸",
+     "sausage 唸 /ˈsɔsɪdʒ/；大腸包小腸 ＝ sausage in a sticky rice bun"
+    ],
+    [
+     "tea egg",
+     "茶葉蛋",
+     "便利商店一定有；a tea egg ＝ 一顆茶葉蛋"
+    ],
+    [
+     "mochi",
+     "麻糬",
+     "日文借字，唸 /ˈmotʃi/；花生麻糬 ＝ peanut mochi"
+    ],
+    [
+     "sun cake",
+     "太陽餅",
+     "台中名產；a sun cake ＝ 一個太陽餅"
+    ],
+    [
+     "oyster vermicelli",
+     "蚵仔麵線",
+     "vermicelli 唸 /ˌvɝməˈtʃɛli/ ＝ 細麵線；大腸麵線 ＝ pork intestine vermicelli"
+    ],
+    [
+     "Taiwanese meatball (ba wan)",
+     "肉圓",
+     "外皮是地瓜粉，和西式 meatball 不同，所以常直接說 ba wan"
+    ],
+    [
+     "gua bao",
+     "刈包",
+     "美國街頭小吃也這樣叫；也說 Taiwanese pork belly bun"
+    ],
+    [
+     "steamed bun",
+     "饅頭",
+     "有餡的包子 ＝ steamed stuffed bun，或直接說 bao"
+    ],
+    [
+     "dumplings",
+     "水餃",
+     "dumpling 唸 /ˈdʌmplɪŋ/；一盤水餃 ＝ a plate of dumplings"
+    ],
+    [
+     "potstickers",
+     "鍋貼",
+     "也說 pan-fried dumplings；美國中餐館的常見寫法"
+    ],
+    [
+     "wonton soup",
+     "餛飩湯",
+     "wonton 唸 /ˈwɑntɑn/；餛飩麵 ＝ wonton noodles"
+    ],
+    [
+     "fried rice",
+     "炒飯",
+     "蝦仁炒飯 ＝ shrimp fried rice；蛋炒飯 ＝ egg fried rice"
+    ],
+    [
+     "stir-fried noodles",
+     "炒麵",
+     "stir-fry ＝ 大火快炒；炒米粉 ＝ stir-fried rice vermicelli"
+    ],
+    [
+     "three-cup chicken",
+     "三杯雞",
+     "字面直譯，外國人也這樣叫；三杯 ＝ 麻油、醬油、米酒"
+    ],
+    [
+     "braised pork belly rice",
+     "焢肉飯",
+     "pork belly ＝ 五花肉；也寫 kong rou fan"
+    ],
+    [
+     "pork thick soup",
+     "肉羹",
+     "羹 ＝ thick soup；魷魚羹 ＝ squid thick soup"
+    ],
+    [
+     "pig's blood cake",
+     "豬血糕",
+     "外國美食節目最愛介紹；也說 pig blood rice cake"
+    ],
+    [
+     "coffin bread",
+     "棺材板",
+     "台南小吃；字面「棺材麵包」，外國人聽了都會問"
+    ],
+    [
+     "danzai noodles",
+     "擔仔麵",
+     "台南名產；菜單上常寫 Tainan danzai noodles"
+    ],
+    [
+     "grilled squid",
+     "烤魷魚",
+     "squid 唸 /skwɪd/；夜市一整隻 ＝ a whole grilled squid"
+    ],
+    [
+     "candied fruit skewers (tanghulu)",
+     "糖葫蘆",
+     "candied ＝ 裹糖的；skewer 唸 /ˈskjuɚ/ ＝ 串"
+    ],
+    [
+     "wheel cake",
+     "車輪餅／紅豆餅",
+     "也說 red bean cake；日文借字 imagawayaki 也看得到"
+    ],
+    [
+     "egg tart",
+     "蛋塔",
+     "tart 唸 /tɑrt/；葡式蛋塔 ＝ Portuguese egg tart"
+    ],
+    [
+     "tofu pudding (douhua)",
+     "豆花",
+     "外國人多直接說 douhua；pudding 這裡指滑嫩口感"
+    ],
+    [
+     "grass jelly",
+     "仙草",
+     "仙草凍 ＝ grass jelly；燒仙草 ＝ hot grass jelly"
+    ],
+    [
+     "aiyu jelly",
+     "愛玉",
+     "直接說 aiyu；檸檬愛玉 ＝ lemon aiyu jelly"
+    ],
+    [
+     "taro balls",
+     "芋圓",
+     "taro 唸 /ˈtɑro/；九份芋圓 ＝ Jiufen taro balls"
+    ],
+    [
+     "tapioca pearls",
+     "粉圓／珍珠",
+     "tapioca 唸 /ˌtæpiˈokə/；口語也叫 boba 或 pearls"
+    ],
+    [
+     "pork floss",
+     "肉鬆",
+     "floss 原意是「絲」；也有人說 meat floss"
+    ],
+    [
+     "century egg",
+     "皮蛋",
+     "也有人說 thousand-year egg；皮蛋豆腐 ＝ century egg with tofu"
+    ],
+    [
+     "salted egg",
+     "鹹蛋",
+     "鹹蛋黃 ＝ salted egg yolk；yolk 的 l 不發音 /jok/"
+    ],
+    [
+     "stir-fried water spinach",
+     "炒空心菜",
+     "空心菜 ＝ water spinach，也叫 morning glory"
+    ],
+    [
+     "sesame cold noodles",
+     "涼麵",
+     "sesame 唸 /ˈsɛsəmi/；台式涼麵的醬是 sesame sauce"
+    ],
+    [
+     "red bean soup",
+     "紅豆湯",
+     "red bean ＝ 紅豆；綠豆湯 ＝ mung bean soup"
+    ],
+    [
+     "braised snacks (lu wei)",
+     "滷味",
+     "braised ＝ 滷的；夜市攤位常直接寫 lu wei"
+    ],
+    [
+     "rice dumpling (zongzi)",
+     "粽子",
+     "端午節吃的；也說 sticky rice dumpling"
+    ],
+    [
+     "moon cake",
+     "月餅",
+     "中秋節吃的；a box of moon cakes ＝ 一盒月餅"
+    ],
+    [
+     "sweet potato congee",
+     "地瓜稀飯",
+     "congee 唸 /ˈkɑndʒi/ ＝ 稀飯，也說 porridge"
+    ]
+   ]
+  ],
+  [
+   "早餐 Breakfast",
+   [
+    [
+     "toast",
+     "吐司",
+     "不可數：a slice of toast（一片吐司）；整條是 a loaf of bread"
+    ],
+    [
+     "egg",
+     "蛋",
+     "可數：two eggs；荷包蛋 ＝ fried egg"
+    ],
+    [
+     "fried egg",
+     "荷包蛋",
+     "太陽蛋 ＝ sunny-side up；兩面煎 ＝ over easy"
+    ],
+    [
+     "scrambled eggs",
+     "炒蛋",
+     "通常用複數；scrambled 唸 /ˈskræmbəld/"
+    ],
+    [
+     "boiled egg",
+     "水煮蛋",
+     "半熟 ＝ soft-boiled；全熟 ＝ hard-boiled"
+    ],
+    [
+     "omelet",
+     "歐姆蛋",
+     "唸 /ˈɑmlɪt/，兩個音節"
+    ],
+    [
+     "bacon",
+     "培根",
+     "唸 /ˈbekən/；不可數：two strips of bacon（兩片培根）"
+    ],
+    [
+     "ham",
+     "火腿",
+     "不可數；火腿蛋三明治 ＝ ham and egg sandwich"
+    ],
+    [
+     "sausage",
+     "香腸",
+     "可數：a sausage；早餐腸 ＝ breakfast sausage"
+    ],
+    [
+     "cereal",
+     "麥片",
+     "唸 /ˈsɪrɪəl/；不可數：a bowl of cereal"
+    ],
+    [
+     "oatmeal",
+     "燕麥粥",
+     "美式說法；英式叫 porridge"
+    ],
+    [
+     "pancake",
+     "鬆餅（薄）",
+     "可數：a stack of pancakes ＝ 一疊鬆餅"
+    ],
+    [
+     "waffle",
+     "鬆餅（格子）",
+     "唸 /ˈwɑfəl/；格子狀的才叫 waffle"
+    ],
+    [
+     "sandwich",
+     "三明治",
+     "唸 /ˈsænwɪtʃ/，d 常不發音"
+    ],
+    [
+     "hash browns",
+     "薯餅",
+     "美式常用複數；hash ＝ 切碎"
+    ],
+    [
+     "bagel",
+     "貝果",
+     "唸 /ˈbeɡəl/"
+    ],
+    [
+     "muffin",
+     "瑪芬",
+     "English muffin（英式瑪芬）是另一種，像小圓麵包"
+    ],
+    [
+     "French toast",
+     "法式吐司",
+     "French 大寫；不可數"
+    ],
+    [
+     "jam",
+     "果醬",
+     "不可數；美式也說 jelly"
+    ],
+    [
+     "butter",
+     "奶油",
+     "不可數；tt 在美式唸輕彈音，像「巴德」"
+    ],
+    [
+     "peanut butter",
+     "花生醬",
+     "不可數；PB&J ＝ 花生醬果醬三明治"
+    ],
+    [
+     "yogurt",
+     "優格",
+     "唸 /ˈjoɡɚt/；美式拼法（英式 yoghurt）"
+    ],
+    [
+     "milk",
+     "牛奶",
+     "不可數：a glass of milk"
+    ],
+    [
+     "orange juice",
+     "柳橙汁",
+     "縮寫 OJ；不可數"
+    ],
+    [
+     "fried dough stick (youtiao)",
+     "油條",
+     "外國人多直接說 youtiao；燒餅油條 ＝ shaobing with youtiao"
+    ],
+    [
+     "clay oven roll (shaobing)",
+     "燒餅",
+     "也直接說 shaobing"
+    ],
+    [
+     "rice milk",
+     "米漿",
+     "台灣早餐店特有；可補一句 it's made from rice and peanuts（用米和花生做的）"
+    ]
+   ]
+  ],
+  [
+   "主食 Staples",
+   [
+    [
+     "rice",
+     "飯／米",
+     "不可數：a bowl of rice（一碗飯）"
+    ],
+    [
+     "steamed rice",
+     "白飯",
+     "也說 white rice；菜單上的 rice 多指白飯"
+    ],
+    [
+     "porridge (congee)",
+     "粥／稀飯",
+     "porridge 唸 /ˈpɔrɪdʒ/；台灣的稀飯菜單多寫 congee"
+    ],
+    [
+     "noodles",
+     "麵",
+     "通常用複數；一碗麵 ＝ a bowl of noodles"
+    ],
+    [
+     "instant noodles",
+     "泡麵",
+     "杯麵 ＝ cup noodles；美式口語也直接說 ramen"
+    ],
+    [
+     "ramen",
+     "拉麵",
+     "唸 /ˈrɑmən/；日文借字"
+    ],
+    [
+     "rice noodles",
+     "米粉／河粉",
+     "細的米粉 ＝ rice vermicelli；寬的 ＝ flat rice noodles"
+    ],
+    [
+     "udon",
+     "烏龍麵",
+     "唸 /ˈudɑn/；日文借字"
+    ],
+    [
+     "pasta",
+     "義大利麵（統稱）",
+     "唸 /ˈpɑstə/；不可數"
+    ],
+    [
+     "spaghetti",
+     "義大利細麵",
+     "唸 /spəˈɡɛtɪ/；不可數"
+    ],
+    [
+     "lasagna",
+     "千層麵",
+     "唸 /ləˈzɑnjə/；g 不發音"
+    ],
+    [
+     "mac and cheese",
+     "起司通心粉",
+     "美國小孩最愛；mac ＝ macaroni"
+    ],
+    [
+     "bread",
+     "麵包",
+     "不可數：a loaf of bread（一條）、a slice of bread（一片）"
+    ],
+    [
+     "pizza",
+     "披薩",
+     "唸 /ˈpitsə/；一片 ＝ a slice of pizza"
+    ],
+    [
+     "hamburger",
+     "漢堡",
+     "口語常說 burger；cheeseburger ＝ 起司漢堡"
+    ],
+    [
+     "hot dog",
+     "熱狗",
+     "兩個字分開；指整份麵包夾香腸"
+    ],
+    [
+     "taco",
+     "墨西哥夾餅",
+     "唸 /ˈtɑko/"
+    ],
+    [
+     "sushi",
+     "壽司",
+     "唸 /ˈsuʃi/；不可數"
+    ],
+    [
+     "curry",
+     "咖哩",
+     "唸 /ˈkɝi/；咖哩飯 ＝ curry rice"
+    ],
+    [
+     "soup",
+     "湯",
+     "不可數：a bowl of soup"
+    ],
+    [
+     "salad",
+     "沙拉",
+     "唸 /ˈsæləd/"
+    ],
+    [
+     "French fries",
+     "薯條",
+     "美式；英式叫 chips；常只說 fries"
+    ],
+    [
+     "tofu",
+     "豆腐",
+     "不可數；唸 /ˈtofu/"
+    ],
+    [
+     "sticky rice",
+     "糯米",
+     "油飯 ＝ Taiwanese sticky rice"
+    ]
+   ]
+  ],
+  [
+   "肉類與海鮮 Meat and seafood",
+   [
+    [
+     "meat",
+     "肉",
+     "不可數：I don't eat meat.（我不吃肉。）"
+    ],
+    [
+     "beef",
+     "牛肉",
+     "不可數；牛是 cow，牛肉是 beef"
+    ],
+    [
+     "pork",
+     "豬肉",
+     "不可數；豬是 pig，豬肉是 pork"
+    ],
+    [
+     "chicken",
+     "雞肉",
+     "當肉不可數：some chicken；當動物可數：a chicken"
+    ],
+    [
+     "lamb",
+     "羊肉",
+     "b 不發音 /læm/；也指小羊"
+    ],
+    [
+     "duck",
+     "鴨肉",
+     "烤鴨 ＝ roast duck"
+    ],
+    [
+     "turkey",
+     "火雞",
+     "唸 /ˈtɝki/；感恩節主菜"
+    ],
+    [
+     "steak",
+     "牛排",
+     "唸 /stek/，ea 唸 /e/ 不是 /i/"
+    ],
+    [
+     "ribs",
+     "肋排",
+     "通常複數；豬肋排 ＝ pork ribs"
+    ],
+    [
+     "meatball",
+     "肉丸",
+     "可數：meatballs；義大利肉丸 ＝ Italian meatballs"
+    ],
+    [
+     "chicken wings",
+     "雞翅",
+     "通常複數；美式辣雞翅 ＝ buffalo wings"
+    ],
+    [
+     "drumstick",
+     "雞腿（棒棒腿）",
+     "大雞腿也說 chicken leg"
+    ],
+    [
+     "ground pork",
+     "豬絞肉",
+     "美式說 ground；英式說 minced"
+    ],
+    [
+     "fish",
+     "魚",
+     "單複數同形；當肉不可數"
+    ],
+    [
+     "shrimp",
+     "蝦",
+     "美式單複數同形；英式說 prawn"
+    ],
+    [
+     "crab",
+     "螃蟹",
+     "可數；蟹肉 ＝ crab meat"
+    ],
+    [
+     "lobster",
+     "龍蝦",
+     "唸 /ˈlɑbstɚ/"
+    ],
+    [
+     "squid",
+     "魷魚",
+     "唸 /skwɪd/；花枝 ＝ cuttlefish"
+    ],
+    [
+     "oyster",
+     "蚵仔／生蠔",
+     "唸 /ˈɔɪstɚ/"
+    ],
+    [
+     "clam",
+     "蛤蜊",
+     "唸 /klæm/；蛤蜊湯 ＝ clam soup"
+    ],
+    [
+     "salmon",
+     "鮭魚",
+     "l 不發音 /ˈsæmən/"
+    ],
+    [
+     "tuna",
+     "鮪魚",
+     "唸 /ˈtunə/；鮪魚罐頭 ＝ canned tuna"
+    ],
+    [
+     "eel",
+     "鰻魚",
+     "唸 /il/；鰻魚飯 ＝ eel rice"
+    ],
+    [
+     "octopus",
+     "章魚",
+     "唸 /ˈɑktəpəs/；章魚燒 ＝ takoyaki"
+    ],
+    [
+     "sashimi",
+     "生魚片",
+     "日文借字，唸 /sɑˈʃimi/"
+    ],
+    [
+     "seafood",
+     "海鮮",
+     "不可數；一個字"
+    ]
+   ]
+  ],
+  [
+   "蔬菜 Vegetables",
+   [
+    [
+     "vegetable",
+     "蔬菜",
+     "唸 /ˈvɛdʒtəbəl/，三個音節；口語 veggies"
+    ],
+    [
+     "cabbage",
+     "高麗菜",
+     "唸 /ˈkæbɪdʒ/；一顆 ＝ a head of cabbage"
+    ],
+    [
+     "carrot",
+     "紅蘿蔔",
+     "可數；白蘿蔔是 daikon 或 white radish"
+    ],
+    [
+     "corn",
+     "玉米",
+     "不可數；一根 ＝ an ear of corn"
+    ],
+    [
+     "cucumber",
+     "小黃瓜",
+     "唸 /ˈkjukʌmbɚ/"
+    ],
+    [
+     "tomato",
+     "番茄",
+     "美式唸 /təˈmeto/，英式 /təˈmɑto/；複數 tomatoes"
+    ],
+    [
+     "potato",
+     "馬鈴薯",
+     "複數 potatoes 要加 es"
+    ],
+    [
+     "sweet potato",
+     "地瓜",
+     "烤地瓜 ＝ baked sweet potato"
+    ],
+    [
+     "onion",
+     "洋蔥",
+     "唸 /ˈʌnjən/，不是「歐尼恩」"
+    ],
+    [
+     "garlic",
+     "大蒜",
+     "不可數；一瓣 ＝ a clove of garlic"
+    ],
+    [
+     "ginger",
+     "薑",
+     "唸 /ˈdʒɪndʒɚ/；不可數"
+    ],
+    [
+     "green onion",
+     "青蔥",
+     "也說 scallion；英式 spring onion"
+    ],
+    [
+     "mushroom",
+     "香菇／蘑菇",
+     "唸 /ˈmʌʃrum/；可數"
+    ],
+    [
+     "broccoli",
+     "青花菜",
+     "唸 /ˈbrɑkəli/；不可數"
+    ],
+    [
+     "cauliflower",
+     "白花椰菜",
+     "唸 /ˈkɔlɪˌflaʊɚ/"
+    ],
+    [
+     "spinach",
+     "菠菜",
+     "唸 /ˈspɪnɪtʃ/，ch 唸 /tʃ/；不可數"
+    ],
+    [
+     "lettuce",
+     "萵苣／生菜",
+     "唸 /ˈlɛtɪs/；不可數"
+    ],
+    [
+     "pumpkin",
+     "南瓜",
+     "唸 /ˈpʌmpkɪn/"
+    ],
+    [
+     "eggplant",
+     "茄子",
+     "美式；英式 aubergine"
+    ],
+    [
+     "bell pepper",
+     "甜椒",
+     "美式；辣椒是 chili pepper"
+    ],
+    [
+     "peas",
+     "豌豆",
+     "通常複數"
+    ],
+    [
+     "green beans",
+     "四季豆",
+     "通常複數"
+    ],
+    [
+     "bean sprouts",
+     "豆芽菜",
+     "通常複數；sprout 唸 /spraʊt/"
+    ],
+    [
+     "bok choy",
+     "青江菜",
+     "從粵語來的借字；美國超市常見"
+    ],
+    [
+     "bamboo shoots",
+     "竹筍",
+     "通常複數"
+    ],
+    [
+     "taro",
+     "芋頭",
+     "唸 /ˈtɑro/；芋頭酥 ＝ taro pastry"
+    ],
+    [
+     "radish",
+     "蘿蔔",
+     "白蘿蔔 ＝ daikon；小顆紅色的才叫 radish"
+    ],
+    [
+     "seaweed",
+     "海帶／海苔",
+     "不可數；海苔片也說 nori"
+    ],
+    [
+     "lotus root",
+     "蓮藕",
+     "lotus 唸 /ˈlotəs/"
+    ],
+    [
+     "celery",
+     "芹菜",
+     "唸 /ˈsɛləri/"
+    ]
+   ]
+  ],
+  [
+   "水果 Fruits（先列 10 個，完整 47 種請看水果英文）",
+   [
+    [
+     "apple",
+     "蘋果",
+     "an apple（母音開頭用 an）"
+    ],
+    [
+     "banana",
+     "香蕉",
+     "唸 /bəˈnænə/；一串 ＝ a bunch of bananas"
+    ],
+    [
+     "orange",
+     "柳橙",
+     "an orange；也是顏色「橘色」"
+    ],
+    [
+     "grapes",
+     "葡萄",
+     "通常複數；一串 ＝ a bunch of grapes"
+    ],
+    [
+     "strawberry",
+     "草莓",
+     "複數 strawberries"
+    ],
+    [
+     "watermelon",
+     "西瓜",
+     "一片 ＝ a slice of watermelon"
+    ],
+    [
+     "mango",
+     "芒果",
+     "複數 mangoes"
+    ],
+    [
+     "guava",
+     "芭樂",
+     "唸 /ˈɡwɑvə/，重音在前"
+    ],
+    [
+     "pineapple",
+     "鳳梨",
+     "唸 /ˈpaɪnˌæpəl/"
+    ],
+    [
+     "papaya",
+     "木瓜",
+     "唸 /pəˈpaɪə/；木瓜牛奶 ＝ papaya milk"
+    ]
+   ]
+  ],
+  [
+   "點心與甜點 Snacks and desserts",
+   [
+    [
+     "dessert",
+     "甜點",
+     "唸 /dɪˈzɝt/，重音在後；desert（沙漠）重音在前"
+    ],
+    [
+     "snack",
+     "點心／零食",
+     "可數：a snack；吃點心 ＝ have a snack"
+    ],
+    [
+     "cake",
+     "蛋糕",
+     "一整個可數：a cake；一塊不可數：a piece of cake"
+    ],
+    [
+     "cookie",
+     "餅乾",
+     "美式；英式叫 biscuit"
+    ],
+    [
+     "crackers",
+     "蘇打餅",
+     "鹹的脆餅；通常複數"
+    ],
+    [
+     "chocolate",
+     "巧克力",
+     "唸 /ˈtʃɔklɪt/，兩個音節；不可數"
+    ],
+    [
+     "candy",
+     "糖果",
+     "美式；英式 sweets；不可數"
+    ],
+    [
+     "gummies",
+     "軟糖",
+     "小熊軟糖 ＝ gummy bears"
+    ],
+    [
+     "ice cream",
+     "冰淇淋",
+     "不可數；一球 ＝ a scoop of ice cream"
+    ],
+    [
+     "popsicle",
+     "冰棒",
+     "美式說法；英式 ice lolly"
+    ],
+    [
+     "pudding",
+     "布丁",
+     "唸 /ˈpʊdɪŋ/；不可數"
+    ],
+    [
+     "jelly",
+     "果凍",
+     "美式口語把果凍叫 Jell-O（品牌名）；英式才叫 jelly"
+    ],
+    [
+     "pie",
+     "派",
+     "蘋果派 ＝ apple pie；一片 ＝ a slice of pie"
+    ],
+    [
+     "tart",
+     "塔",
+     "蛋塔 ＝ egg tart；水果塔 ＝ fruit tart"
+    ],
+    [
+     "donut",
+     "甜甜圈",
+     "也拼 doughnut，兩種都對"
+    ],
+    [
+     "cupcake",
+     "杯子蛋糕",
+     "一個字"
+    ],
+    [
+     "brownie",
+     "布朗尼",
+     "唸 /ˈbraʊni/"
+    ],
+    [
+     "cheesecake",
+     "起司蛋糕",
+     "一個字"
+    ],
+    [
+     "cream puff",
+     "泡芙",
+     "puff 唸 /pʌf/"
+    ],
+    [
+     "macaron",
+     "馬卡龍",
+     "唸 /ˌmækəˈrɑn/；macaroon 是另一種椰子餅"
+    ],
+    [
+     "mousse",
+     "慕斯",
+     "唸 /mus/，和 moose（麋鹿）同音"
+    ],
+    [
+     "marshmallow",
+     "棉花糖（烤的）",
+     "唸 /ˈmɑrʃˌmɛlo/；夜市那種叫 cotton candy"
+    ],
+    [
+     "cotton candy",
+     "棉花糖（夜市）",
+     "美式；英式 candy floss"
+    ],
+    [
+     "popcorn",
+     "爆米花",
+     "不可數；a bag of popcorn"
+    ],
+    [
+     "potato chips",
+     "洋芋片",
+     "美式；英式叫 crisps"
+    ]
+   ]
+  ],
+  [
+   "飲料 Drinks",
+   [
+    [
+     "drink",
+     "飲料",
+     "可數：a drink；也當動詞「喝」"
+    ],
+    [
+     "water",
+     "水",
+     "不可數：a glass of water；開水 ＝ boiled water"
+    ],
+    [
+     "tea",
+     "茶",
+     "不可數；一杯 ＝ a cup of tea"
+    ],
+    [
+     "black tea",
+     "紅茶",
+     "英文說「黑」茶，不是 red tea"
+    ],
+    [
+     "green tea",
+     "綠茶",
+     "抹茶 ＝ matcha"
+    ],
+    [
+     "milk tea",
+     "奶茶",
+     "加珍珠 ＝ bubble milk tea"
+    ],
+    [
+     "iced tea",
+     "冰紅茶",
+     "是 iced 不是 ice：冰的 ＝ iced"
+    ],
+    [
+     "coffee",
+     "咖啡",
+     "不可數；點餐時可說 two coffees（兩杯）"
+    ],
+    [
+     "latte",
+     "拿鐵",
+     "唸 /ˈlɑte/"
+    ],
+    [
+     "juice",
+     "果汁",
+     "唸 /dʒus/；不可數"
+    ],
+    [
+     "soda",
+     "汽水",
+     "美式；也說 soft drink 或 pop；可樂 ＝ Coke"
+    ],
+    [
+     "lemonade",
+     "檸檬水",
+     "唸 /ˌlɛməˈned/；美式是甜的檸檬汁"
+    ],
+    [
+     "smoothie",
+     "果昔",
+     "唸 /ˈsmuði/"
+    ],
+    [
+     "milkshake",
+     "奶昔",
+     "一個字"
+    ],
+    [
+     "papaya milk",
+     "木瓜牛奶",
+     "台灣特色；也說 papaya milkshake"
+    ],
+    [
+     "hot chocolate",
+     "熱可可",
+     "也說 hot cocoa，兩種都通"
+    ],
+    [
+     "sparkling water",
+     "氣泡水",
+     "sparkling ＝ 冒泡的"
+    ],
+    [
+     "winter melon tea",
+     "冬瓜茶",
+     "winter melon ＝ 冬瓜"
+    ],
+    [
+     "plum juice",
+     "酸梅湯",
+     "也說 sour plum drink"
+    ],
+    [
+     "yogurt drink",
+     "優酪乳",
+     "可以喝的優格；養樂多那類叫 probiotic drink"
+    ],
+    [
+     "sports drink",
+     "運動飲料",
+     "sports 有 s"
+    ],
+    [
+     "energy drink",
+     "能量飲料",
+     "energy 唸 /ˈɛnɚdʒi/"
+    ]
+   ]
+  ],
+  [
+   "調味料與味道 Seasonings and tastes",
+   [
+    [
+     "salt",
+     "鹽",
+     "不可數；salty ＝ 鹹的"
+    ],
+    [
+     "sugar",
+     "糖",
+     "不可數；sweet ＝ 甜的"
+    ],
+    [
+     "pepper",
+     "胡椒",
+     "黑胡椒 ＝ black pepper；白胡椒 ＝ white pepper"
+    ],
+    [
+     "soy sauce",
+     "醬油",
+     "兩個字；sauce 唸 /sɔs/"
+    ],
+    [
+     "vinegar",
+     "醋",
+     "唸 /ˈvɪnɪɡɚ/"
+    ],
+    [
+     "ketchup",
+     "番茄醬",
+     "唸 /ˈkɛtʃəp/"
+    ],
+    [
+     "mayonnaise",
+     "美乃滋",
+     "唸 /ˈmeəˌnez/；口語 mayo"
+    ],
+    [
+     "mustard",
+     "黃芥末醬",
+     "日式芥末是 wasabi"
+    ],
+    [
+     "chili sauce",
+     "辣椒醬",
+     "也說 hot sauce；chili 唸 /ˈtʃɪli/"
+    ],
+    [
+     "sesame oil",
+     "麻油",
+     "sesame 唸 /ˈsɛsəmi/"
+    ],
+    [
+     "olive oil",
+     "橄欖油",
+     "olive 唸 /ˈɑlɪv/"
+    ],
+    [
+     "honey",
+     "蜂蜜",
+     "不可數；也是「親愛的」"
+    ],
+    [
+     "cheese",
+     "起司",
+     "唸 /tʃiz/；不可數"
+    ],
+    [
+     "seasoning",
+     "調味料（統稱）",
+     "調味（動詞）＝ season"
+    ],
+    [
+     "sweet",
+     "甜的",
+     "too sweet ＝ 太甜"
+    ],
+    [
+     "sour",
+     "酸的",
+     "唸 /saʊr/；酸辣湯 ＝ hot and sour soup"
+    ],
+    [
+     "salty",
+     "鹹的",
+     "too salty ＝ 太鹹"
+    ],
+    [
+     "spicy",
+     "辣的",
+     "也說 hot；唸 /ˈspaɪsi/"
+    ],
+    [
+     "bitter",
+     "苦的",
+     "苦瓜 ＝ bitter melon"
+    ],
+    [
+     "crispy",
+     "酥脆的",
+     "唸 /ˈkrɪspi/"
+    ],
+    [
+     "chewy",
+     "有嚼勁的（Q）",
+     "台灣人說的「Q」最接近 chewy"
+    ],
+    [
+     "juicy",
+     "多汁的",
+     "唸 /ˈdʒusi/"
+    ],
+    [
+     "tender",
+     "軟嫩的",
+     "形容肉"
+    ],
+    [
+     "greasy",
+     "油膩的",
+     "唸 /ˈɡrisi/"
+    ],
+    [
+     "bland",
+     "沒味道的",
+     "和 plain 類似"
+    ],
+    [
+     "fresh",
+     "新鮮的",
+     "fresh fruit ＝ 新鮮水果"
+    ],
+    [
+     "delicious",
+     "好吃的",
+     "唸 /dɪˈlɪʃəs/；口語 yummy"
+    ]
+   ]
+  ],
+  [
+   "餐具與用餐 Tableware and dining",
+   [
+    [
+     "fork",
+     "叉子",
+     "可數"
+    ],
+    [
+     "knife",
+     "刀子",
+     "k 不發音 /naɪf/；複數 knives"
+    ],
+    [
+     "spoon",
+     "湯匙",
+     "可數"
+    ],
+    [
+     "chopsticks",
+     "筷子",
+     "通常複數；一雙 ＝ a pair of chopsticks"
+    ],
+    [
+     "bowl",
+     "碗",
+     "唸 /bol/；一碗飯 ＝ a bowl of rice"
+    ],
+    [
+     "plate",
+     "盤子",
+     "一盤 ＝ a plate of"
+    ],
+    [
+     "cup",
+     "杯子（有把手）",
+     "一杯茶 ＝ a cup of tea"
+    ],
+    [
+     "glass",
+     "玻璃杯",
+     "冷飲用 glass：a glass of water"
+    ],
+    [
+     "napkin",
+     "餐巾紙",
+     "美式；英式說 serviette"
+    ],
+    [
+     "straw",
+     "吸管",
+     "也指稻草"
+    ],
+    [
+     "tray",
+     "托盤",
+     "速食店用"
+    ],
+    [
+     "menu",
+     "菜單",
+     "唸 /ˈmɛnju/"
+    ],
+    [
+     "order",
+     "點餐",
+     "動詞兼名詞：Are you ready to order?（可以點餐了嗎？）"
+    ],
+    [
+     "set meal",
+     "套餐",
+     "美式速食店也說 combo"
+    ],
+    [
+     "takeout",
+     "外帶",
+     "美式；英式 takeaway；口語說 to go"
+    ],
+    [
+     "for here",
+     "內用",
+     "店員會問 For here or to go?（內用還是外帶？）"
+    ],
+    [
+     "to go",
+     "外帶",
+     "回答 To go, please.（外帶，謝謝。）"
+    ],
+    [
+     "the check",
+     "帳單",
+     "美式；英式 the bill：Check, please.（買單。）"
+    ],
+    [
+     "receipt",
+     "收據",
+     "p 不發音 /rɪˈsit/"
+    ],
+    [
+     "tip",
+     "小費",
+     "美國餐廳習慣給 15–20%"
+    ],
+    [
+     "server",
+     "服務生",
+     "waiter／waitress 現在多改用中性的 server"
+    ],
+    [
+     "restaurant",
+     "餐廳",
+     "唸 /ˈrɛstərənt/"
+    ],
+    [
+     "buffet",
+     "吃到飽",
+     "唸 /bəˈfe/，t 不發音；也說 all-you-can-eat"
+    ],
+    [
+     "delivery",
+     "外送",
+     "叫外送 ＝ order delivery"
+    ],
+    [
+     "reservation",
+     "訂位",
+     "動詞 ＝ reserve／book a table"
+    ],
+    [
+     "picky eater",
+     "挑食的人",
+     "挑食 ＝ be picky about food"
+    ],
+    [
+     "hungry",
+     "餓的",
+     "I'm hungry.（我餓了。）"
+    ],
+    [
+     "thirsty",
+     "渴的",
+     "唸 /ˈθɝsti/；I'm thirsty.（我渴了。）"
+    ],
+    [
+     "full",
+     "飽的",
+     "I'm full.（我飽了。）"
+    ]
+   ]
+  ],
+  [
+   "味道與口感 Taste and texture",
+   [
+    [
+     "sweet",
+     "甜的",
+     "The pineapple cake is sweet but not too sweet.（鳳梨酥甜而不膩。）"
+    ],
+    [
+     "sour",
+     "酸的",
+     "Plum juice is a little sour.（酸梅湯有點酸。）"
+    ],
+    [
+     "salty",
+     "鹹的",
+     "The popcorn chicken is a bit salty.（鹽酥雞有點鹹。）"
+    ],
+    [
+     "bitter",
+     "苦的",
+     "Bitter melon is bitter, but I like it.（苦瓜很苦，但我喜歡。）"
+    ],
+    [
+     "spicy",
+     "辣的",
+     "Is it spicy?（這會辣嗎？）"
+    ],
+    [
+     "crispy",
+     "酥脆的",
+     "The chicken skin is crispy.（雞皮很酥脆。）"
+    ],
+    [
+     "crunchy",
+     "脆脆的（有聲音）",
+     "Fresh carrots are crunchy.（新鮮紅蘿蔔脆脆的。）"
+    ],
+    [
+     "chewy",
+     "Q 的、有嚼勁的",
+     "The tapioca pearls are chewy.（珍珠很 Q。）"
+    ],
+    [
+     "tender",
+     "軟嫩的",
+     "The beef is so tender.（牛肉好嫩。）"
+    ],
+    [
+     "juicy",
+     "多汁的",
+     "This mango is really juicy.（這顆芒果很多汁。）"
+    ],
+    [
+     "creamy",
+     "滑順濃郁的",
+     "The soup is thick and creamy.（湯又濃又滑順。）"
+    ],
+    [
+     "rich",
+     "濃郁的",
+     "The chocolate cake is very rich.（巧克力蛋糕很濃郁。）"
+    ],
+    [
+     "greasy",
+     "油膩的",
+     "The fries are a little greasy.（薯條有點油。）"
+    ],
+    [
+     "bland",
+     "沒味道的",
+     "The porridge is a bit bland.（稀飯有點沒味道。）"
+    ],
+    [
+     "savory",
+     "鹹香的",
+     "I like savory snacks more than sweet ones.（比起甜的，我更喜歡鹹的點心。）"
+    ],
+    [
+     "fragrant",
+     "很香的",
+     "The rice is warm and fragrant.（飯熱熱的、香香的。）"
+    ],
+    [
+     "mild",
+     "不辣的、清淡的",
+     "Can I have the mild one?（我可以點不辣的嗎？）"
+    ],
+    [
+     "hot",
+     "辣的／燙的",
+     "Careful, it's hot!（小心，很燙！）"
+    ],
+    [
+     "tangy",
+     "酸香的",
+     "The sauce is sweet and tangy.（醬汁酸酸甜甜的。）"
+    ],
+    [
+     "refreshing",
+     "清爽的",
+     "Shaved ice is so refreshing in summer.（夏天吃剉冰好清爽。）"
+    ],
+    [
+     "fluffy",
+     "鬆軟的",
+     "These pancakes are light and fluffy.（這些鬆餅又輕又鬆軟。）"
+    ],
+    [
+     "sticky",
+     "黏的",
+     "Mochi is soft and sticky.（麻糬又軟又黏。）"
+    ],
+    [
+     "smoky",
+     "有煙燻味的",
+     "The grilled squid tastes smoky.（烤魷魚有煙燻味。）"
+    ],
+    [
+     "mouthwatering",
+     "令人流口水的",
+     "The night market is full of mouthwatering snacks.（夜市到處是讓人流口水的小吃。）"
+    ],
+    [
+     "filling",
+     "很有飽足感的",
+     "Beef noodle soup is really filling.（牛肉麵很有飽足感。）"
+    ]
+   ]
+  ],
+  [
+   "量詞與容器 Units and containers",
+   [
+    [
+     "a bowl of rice",
+     "一碗飯",
+     "rice 不可數，用「碗」來數"
+    ],
+    [
+     "a bowl of noodles",
+     "一碗麵",
+     "noodles 用複數"
+    ],
+    [
+     "a piece of cake",
+     "一塊蛋糕",
+     "也是片語「小事一樁」"
+    ],
+    [
+     "a slice of pizza",
+     "一片披薩",
+     "slice ＝ 切下來的薄片"
+    ],
+    [
+     "a slice of bread",
+     "一片麵包",
+     "一整條是 a loaf of bread"
+    ],
+    [
+     "a loaf of bread",
+     "一條麵包",
+     "loaf 唸 /lof/；複數 loaves"
+    ],
+    [
+     "a cup of tea",
+     "一杯茶",
+     "熱飲用 cup"
+    ],
+    [
+     "a glass of water",
+     "一杯水",
+     "冷飲、玻璃杯用 glass"
+    ],
+    [
+     "a bottle of juice",
+     "一瓶果汁",
+     "bottle 唸 /ˈbɑtəl/"
+    ],
+    [
+     "a can of soda",
+     "一罐汽水",
+     "can ＝ 鋁罐"
+    ],
+    [
+     "a carton of milk",
+     "一盒牛奶",
+     "carton 唸 /ˈkɑrtən/"
+    ],
+    [
+     "a bag of chips",
+     "一包洋芋片",
+     "bag ＝ 袋裝"
+    ],
+    [
+     "a bar of chocolate",
+     "一條巧克力",
+     "bar ＝ 長條狀"
+    ],
+    [
+     "a scoop of ice cream",
+     "一球冰淇淋",
+     "scoop 唸 /skup/ ＝ 一勺"
+    ],
+    [
+     "a plate of dumplings",
+     "一盤水餃",
+     "外帶盒則說 a box of dumplings"
+    ],
+    [
+     "a pair of chopsticks",
+     "一雙筷子",
+     "chopsticks 永遠是複數"
+    ],
+    [
+     "a bunch of bananas",
+     "一串香蕉",
+     "一串葡萄也用 bunch"
+    ]
+   ]
+  ],
+  [
+   "A–Z 索引 Food A to Z",
+   [
+    [
+     "A",
+     "apple",
+     "蘋果"
+    ],
+    [
+     "B",
+     "bread",
+     "麵包"
+    ],
+    [
+     "C",
+     "cheese",
+     "起司"
+    ],
+    [
+     "D",
+     "dumpling",
+     "水餃"
+    ],
+    [
+     "E",
+     "egg",
+     "蛋"
+    ],
+    [
+     "F",
+     "fish",
+     "魚"
+    ],
+    [
+     "G",
+     "grapes",
+     "葡萄"
+    ],
+    [
+     "H",
+     "hamburger",
+     "漢堡"
+    ],
+    [
+     "I",
+     "ice cream",
+     "冰淇淋"
+    ],
+    [
+     "J",
+     "juice",
+     "果汁"
+    ],
+    [
+     "K",
+     "ketchup",
+     "番茄醬"
+    ],
+    [
+     "L",
+     "lemon",
+     "檸檬"
+    ],
+    [
+     "M",
+     "mango",
+     "芒果"
+    ],
+    [
+     "N",
+     "noodles",
+     "麵"
+    ],
+    [
+     "O",
+     "orange",
+     "柳橙"
+    ],
+    [
+     "P",
+     "pizza",
+     "披薩"
+    ],
+    [
+     "Q",
+     "quail egg",
+     "鵪鶉蛋"
+    ],
+    [
+     "R",
+     "rice",
+     "飯"
+    ],
+    [
+     "S",
+     "sandwich",
+     "三明治"
+    ],
+    [
+     "T",
+     "tofu",
+     "豆腐"
+    ],
+    [
+     "U",
+     "udon",
+     "烏龍麵"
+    ],
+    [
+     "V",
+     "vegetables",
+     "蔬菜"
+    ],
+    [
+     "W",
+     "watermelon",
+     "西瓜"
+    ],
+    [
+     "X",
+     "xiaolongbao",
+     "小籠包"
+    ],
+    [
+     "Y",
+     "yogurt",
+     "優格"
+    ],
+    [
+     "Z",
+     "zucchini",
+     "櫛瓜"
+    ]
+   ]
+  ],
+  [
+   "菜單縮寫 Menu abbreviations",
+   [
+    [
+     "w/",
+     "with",
+     "加（w/ cheese ＝ 加起司）"
+    ],
+    [
+     "w/o",
+     "without",
+     "不加（w/o onions ＝ 不加洋蔥）"
+    ],
+    [
+     "OJ",
+     "orange juice",
+     "柳橙汁"
+    ],
+    [
+     "BLT",
+     "bacon, lettuce, tomato",
+     "培根生菜番茄三明治"
+    ],
+    [
+     "PB&J",
+     "peanut butter and jelly",
+     "花生醬果醬三明治"
+    ],
+    [
+     "L／M／S",
+     "large／medium／small",
+     "大／中／小（也寫 Lg／Med／Sm）"
+    ],
+    [
+     "combo",
+     "combination meal",
+     "套餐（美式速食店用法）"
+    ],
+    [
+     "veg",
+     "vegetarian／vegetable",
+     "素食／蔬菜"
+    ]
+   ]
+  ],
+  [
+   "食物繪本 Picture books",
+   [
+    [
+     "The Very Hungry Caterpillar",
+     "Eric Carle",
+     "毛毛蟲一週吃過的東西：星期、數字與水果一次學到，0–5 歲的第一本食物書"
+    ],
+    [
+     "Green Eggs and Ham",
+     "Dr. Seuss",
+     "用押韻說服你試試沒吃過的食物；句型不斷重複，最適合跟讀"
+    ],
+    [
+     "Dragons Love Tacos",
+     "Adam Rubin",
+     "龍愛吃塔可卻怕辣醬，把 spicy 這個字教得最好笑的一本"
+    ],
+    [
+     "Eating the Alphabet",
+     "Lois Ehlert",
+     "A 到 Z 的蔬菜水果圖鑑，剛好配本頁的 A–Z 索引"
+    ],
+    [
+     "If You Give a Mouse a Cookie",
+     "Laura Numeroff",
+     "給老鼠一塊餅乾之後會發生什麼事：因果句型加 cookie、milk"
+    ],
+    [
+     "Cloudy with a Chance of Meatballs",
+     "Judi Barrett",
+     "食物從天上掉下來的小鎮，天氣和食物單字一起練"
+    ]
+   ]
+  ]
  ]
 }

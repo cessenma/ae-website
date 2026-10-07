@@ -28,7 +28,8 @@ PAGES  = ["english-pronunciation", "kk-phonetic-chart", "phonics-rules-chart",
           "english-numbers-guide", "months-english", "days-of-week-english",
           "colors-english-vocabulary", "fruits-english-vocabulary", "body-parts-english",
           "countries-english", "jobs-english", "animals-english-vocabulary",
-          "english-abbreviations-guide", "thank-you-english", "cheer-up-english"]
+          "english-abbreviations-guide", "thank-you-english", "cheer-up-english",
+          "time-english", "weather-english", "food-english"]
 EXAMPLE_HEADS = ("例字", "例詞", "單字", "字例", "英文", "English", "Country", "國家")
 
 def key():

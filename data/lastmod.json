@@ -75,6 +75,10 @@
 "date": "2026-09-15",
 "hash": "93081b0ca5c3d42fea36ad1f37aed8c3"
 },
+"assets/downloads/ae-food-english-a4.pdf": {
+"date": "2026-10-07",
+"hash": "9a29476911658e54d442cd5d404038d9"
+},
 "assets/downloads/ae-fruits-flashcards-a4.pdf": {
 "date": "2026-10-01",
 "hash": "cf6dc9c0c4842eb955b3eda928ccf3e9"
@@ -139,9 +143,17 @@
 "date": "2026-09-15",
 "hash": "be978b53109d69b82a0c687979b7817f"
 },
+"assets/downloads/ae-time-english-a4.pdf": {
+"date": "2026-10-07",
+"hash": "5c0be8672d6edb1fcaa14bd81fcb2b98"
+},
 "assets/downloads/ae-valentines-day-english-a4.pdf": {
 "date": "2026-10-07",
 "hash": "5f1b987b5a2252910b5ea6df2013442c"
+},
+"assets/downloads/ae-weather-english-a4.pdf": {
+"date": "2026-10-07",
+"hash": "d08ff96bbb6bd2a8b3a4156eec67d218"
 },
 "assets/downloads/ae-yle-flyers-flashcards-a4.pdf": {
 "date": "2026-10-01",
@@ -301,7 +313,7 @@
 },
 "chart-license": {
 "date": "2026-10-07",
-"hash": "b915f7033c9132066985b791b5be3b95"
+"hash": "fedb76665bc17f28f3235e9446e6d09f"
 },
 "cheer-up-english": {
 "date": "2026-10-01",
@@ -488,8 +500,8 @@
 "hash": "eaefabe7379e611b5199be7201947982"
 },
 "english-vocabulary-by-topic": {
-"date": "2026-09-15",
-"hash": "9bee96b1c69cf6c275dfe166af688b1d"
+"date": "2026-10-07",
+"hash": "58380609c02c6cd816e6006e6af98c14"
 },
 "english-vowels-consonants": {
 "date": "2026-09-14",
@@ -642,6 +654,10 @@
 "flyers-vocabulary-practice": {
 "date": "2026-08-26",
 "hash": "d6ce6ac371e1a641f147c762feec796c"
+},
+"food-english": {
+"date": "2026-10-07",
+"hash": "a2ec03748c4b31965e9a85583b4be2b4"
 },
 "free-english-resources-kids": {
 "date": "2026-08-26",
@@ -1307,9 +1323,17 @@
 "date": "2026-10-01",
 "hash": "2ff3c660785223bddab2e68e2422d014"
 },
+"time-english": {
+"date": "2026-10-07",
+"hash": "29aa49b32094e379a53b3e91b9d32161"
+},
 "valentines-day-english": {
 "date": "2026-10-07",
 "hash": "da373f8d4311f8bb9e96a6b2f2810a85"
+},
+"weather-english": {
+"date": "2026-10-07",
+"hash": "769004b2c3d61d22c4d392c2ebfcc728"
 },
 "wensheng-elementary-english": {
 "date": "2026-08-07",

@@ -156,6 +156,19 @@ SPECS.update({
    title="聖誕節英文說法與祝福", sub="Christmas ・ 聖誕快樂祝福與核心單字",
    alt="聖誕節英文對照表：Christmas 的說法與唸法、Xmas 縮寫、聖誕快樂英文祝福，以及聖誕老人、聖誕樹等核心單字",
    foot="可儲存列印｜americanenglish.com.tw"),
+ # the 2026-10-07 vocabulary pages: the chart is the word table only (first N tables = the groups)
+ "food-english-chart": dict(page="food-english", only=[0], cols=2, width=1700,   # the Taiwanese-food table; the page carries 15 tables
+   title="台灣小吃英文對照表", sub="58 道台灣常見食物 ・ 外國人真正在用的說法 ・ 附唸法",
+   alt="台灣小吃英文對照表：珍珠奶茶、滷肉飯、蛋餅、臭豆腐等 58 道台灣常見食物的英文說法與中文對照，附唸法",
+   foot="可儲存列印｜americanenglish.com.tw"),
+ "time-english-chart": dict(page="time-english", only=[0, 1, 2, 3, 4], cols=2, width=1700,
+   title="時間英文說法對照表", sub="幾點幾分 43 種說法 ・ 整點、幾分、一刻與半、差幾分、a.m.／p.m.",
+   alt="時間英文說法對照表：幾點幾分的 43 種英文說法與中文對照，含 o'clock、past、to、a quarter、half 與 a.m.／p.m. 的用法",
+   foot="可儲存列印｜americanenglish.com.tw"),
+ "weather-english-chart": dict(page="weather-english", only=[0, 1, 2, 3, 4, 5], cols=3, width=2100,   # 105 three-column rows: 2 columns ran 6,300px tall
+   title="天氣英文單字對照表", sub="105 個天氣單字 ・ 附唸法與用法 ・ 含颱風、寒流、梅雨",
+   alt="天氣英文單字對照表：105 個天氣英文單字與中文對照，附 KK 音標與用法，含颱風、寒流、梅雨等台灣天氣說法",
+   foot="可儲存列印｜americanenglish.com.tw"),
  "valentines-day-chart": dict(page="valentines-day-english", only=[0], cols=1, width=1500,   # 3-column table: one column of rows
    title="情人節英文說法與祝福", sub="Valentine's Day ・ 祝福語與核心單字",
    alt="情人節英文對照表：Valentine's Day 的說法與唸法、情人節快樂英文祝福，以及 valentine、White Day、七夕等核心單字",

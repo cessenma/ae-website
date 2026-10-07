@@ -412,5 +412,32 @@
   "alt": "情人節英文對照表：Valentine's Day 的說法與唸法、情人節快樂英文祝福，以及 valentine、White Day、七夕等核心單字",
   "title": "情人節英文說法與祝福",
   "page": "valentines-day-english"
+ },
+ "time-english-chart": {
+  "slug": "time-english-chart",
+  "png": "/assets/img/charts/time-english-chart.webp",
+  "w": 1700,
+  "h": 2778,
+  "alt": "時間英文說法對照表：幾點幾分的 43 種英文說法與中文對照，含 o'clock、past、to、a quarter、half 與 a.m.／p.m. 的用法",
+  "title": "時間英文說法對照表",
+  "page": "time-english"
+ },
+ "weather-english-chart": {
+  "slug": "weather-english-chart",
+  "png": "/assets/img/charts/weather-english-chart.webp",
+  "w": 2100,
+  "h": 3982,
+  "alt": "天氣英文單字對照表：105 個天氣英文單字與中文對照，附 KK 音標與用法，含颱風、寒流、梅雨等台灣天氣說法",
+  "title": "天氣英文單字對照表",
+  "page": "weather-english"
+ },
+ "food-english-chart": {
+  "slug": "food-english-chart",
+  "png": "/assets/img/charts/food-english-chart.webp",
+  "w": 1700,
+  "h": 3370,
+  "alt": "台灣小吃英文對照表：珍珠奶茶、滷肉飯、蛋餅、臭豆腐等 58 道台灣常見食物的英文說法與中文對照，附唸法",
+  "title": "台灣小吃英文對照表",
+  "page": "food-english"
  }
 }

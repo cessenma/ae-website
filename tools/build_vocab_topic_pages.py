@@ -428,6 +428,9 @@ HUB_CARDS = [
  ("/countries-english/", "國家英文", "80 國名稱與國籍形容詞，the 什麼時候加", "80"),
  ("/jobs-english/", "職業英文", "83 種工作，a／an 的選擇與問職業的說法", "83"),
  ("/animals-english-vocabulary/", "動物英文", "常見動物中英對照，依類別分組", "41"),
+ ("/time-english/", "時間英文", "幾點幾分 43 種說法、a.m.／p.m. 寫法與 83 個時間單字", "43"),
+ ("/weather-english/", "天氣英文", "105 個天氣單字，颱風、寒流、梅雨怎麼說，附句型與文法", "105"),
+ ("/food-english/", "食物英文", "315 個食物單字，台灣小吃 58 道、早餐店點餐與介紹一道菜", "315"),
  ("/moe-1200-words-guide/", "教育部 1200 單字", "108 課綱附錄五完整字表，可線上核對", "1211"),
  ("/moe-2000-words-guide/", "國中 2000 單字", "國中必備字表，程度約 CEFR B1", "2000"),
  ("/kk-phonetic-chart/", "KK 音標表", "41 個音標符號，每個字可點聽發音", "41"),
@@ -475,10 +478,10 @@ def hub_page():
 
 PAGES["english-vocabulary-by-topic"] = dict(
   target="英文單字", index=8.09,
-  h1="英文單字主題字表總整理：12 份完整對照表，每個字都能點聽發音",
-  title="英文單字主題總整理：12份完整字表，可聽發音與列印｜埃森美語",
-  desc="英文單字主題字表總整理：數字、月份、星期、顏色、水果、身體部位、國家、職業、動物，加上教育部 1200／2000 字表與 KK 音標表，共 12 份完整對照表。每個英文字可點聽發音，每份都有可列印的圖片版——美籍持證教師整理。",
-  hero="市面上的單字表大多是節錄，而且沒有發音。這裡的 12 份都是完整表，每個英文字旁邊都能點開聽，也都能直接存成圖片印出來。下面先挑主題，後面講怎麼用才不會背了就忘。",
+  h1="英文單字主題字表總整理：15 份完整對照表，每個字都能點聽發音",
+  title="英文單字主題總整理：15份完整字表，可聽發音與列印｜埃森美語",
+  desc="英文單字主題字表總整理：數字、時間、月份、星期、天氣、顏色、水果、食物、身體部位、國家、職業、動物，加上教育部 1200／2000 字表與 KK 音標表，共 15 份完整對照表。每個英文字可點聽發音，每份都有可列印的圖片版。",
+  hero="市面上的單字表大多是節錄，而且沒有發音。這裡的 15 份都是完整表，每個英文字旁邊都能點開聽，也都能直接存成圖片印出來。下面先挑主題，後面講怎麼用才不會背了就忘。",
   body=hub_page,
   faq_n=6)
 
@@ -915,6 +918,295 @@ PAGES["english-writing-practice"] = dict(
     + cta("寫作最需要的是有人真的讀完並告訴你哪裡不通。" + SKILL_FAQ_TAIL)),
   faq_n=6)
 
+# ---- /weather-english/ (2026-10-07; words in vocab_topics.json["weather"]) ----
+PAGES["weather-english"] = dict(
+  target="天氣英文", index=1.0,
+  h1="天氣英文單字 105 個對照表：怎麼說、句型、文法、溫度與發音一次學會",
+  title="天氣英文單字105個對照表：怎麼說、句型、文法與發音（附 PDF）｜埃森美語",
+  desc="天氣英文單字 105 個對照表，附 KK 音標與用法：晴天、下雨、颱風、寒流怎麼說，20 句常用句型、rain／rainy 的文法、溫度唸法、最常唸錯的 13 個字，附 A4 列印版 PDF。",
+  hero="天氣是英文課本第一冊就出現、卻一輩子都在用的主題：跟外國人打招呼先聊天氣，寫英文日記第一行也是天氣。下面先給 105 個單字的完整對照表（附 KK 音標和用法），再講句型、文法、溫度的唸法，以及台灣學生最常唸錯的字。",
+  body=lambda: (
+    sec("天氣英文單字表（105 個，附唸法與用法）",
+      prose("按情境分成六組：天氣狀況、溫度與體感、季節、台灣天氣、預報用語、天氣用品。第三欄是<strong>唸法和用法</strong>——KK 音標之外，也標出從中文直譯最容易錯的地方（大雨是 heavy rain，不是 big rain；地震不是天氣）。",
+        "季節常和月份一起出現，月份的說法與縮寫在 <a href=\"/months-english/\">月份英文對照表</a>，星期在 <a href=\"/days-of-week-english/\">星期英文</a>；更多主題單字在 <a href=\"/english-vocabulary-by-topic/\">主題單字總表</a>。")
+      + grouped([(g[0], [list(r) for r in g[1]]) for g in DATA["weather"]], ["英文", "中文", "唸法／用法"]))
+    + sec("天氣英文怎麼說：20 個常用句型",
+      prose("問天氣只有兩種問法要記：<strong>How's the weather?</strong>（天氣怎麼樣？）和 <strong>What's the weather like?</strong>（天氣像什麼樣子？）——第二句的 like 是「像」，不是「喜歡」，不能省掉。回答一律是 <strong>It's + 形容詞</strong>：It's sunny.、It's cold.。",
+        "這也是<a href=\"/english-diary-guide/\">英文日記</a>第一行的寫法：Friday, August 7 · Sunny——日期後面接一個天氣形容詞就好。")
+      + tbl([
+        ["How's the weather?", "天氣怎麼樣？", "最口語的問法，問今天或某個地方"],
+        ["What's the weather like today?", "今天天氣如何？", "課本的標準問句；like 不能省"],
+        ["What's the weather like in Taipei in May?", "五月的台北天氣怎麼樣？", "問某地、某個時候的典型天氣"],
+        ["What's the forecast for tomorrow?", "明天的預報怎麼說？", "問預報"],
+        ["Is it going to rain?", "會下雨嗎？", "出門前問一句"],
+        ["What's the temperature?", "現在幾度？", "問溫度；回答 It's 28 degrees."],
+        ["It's sunny.", "出太陽。", "It's + 形容詞，最基本的句型"],
+        ["It's cloudy and cool.", "多雲又涼。", "兩個形容詞用 and 連接"],
+        ["It's raining.", "正在下雨。", "此刻正在下：be + V-ing"],
+        ["It's pouring.", "雨下得超大。", "口語的「傾盆大雨」"],
+        ["It looks like rain.", "看起來要下雨了。", "看天色判斷；這裡的 rain 是名詞"],
+        ["It's going to rain this afternoon.", "下午會下雨。", "預測未來"],
+        ["There's a typhoon coming.", "有颱風要來了。", "颱風季必用"],
+        ["The high will be 32 degrees.", "最高溫會到 32 度。", "預報句型；最低溫說 The low will be…"],
+        ["It's hot and humid.", "又熱又濕。", "台灣夏天的標準答案"],
+        ["It's getting cold.", "天氣變冷了。", "get + 形容詞 = 變得……"],
+        ["What a nice day!", "天氣真好！", "感嘆句；也可以說 It's a beautiful day."],
+        ["The weather is terrible.", "天氣糟透了。", "weather 不可數，前面不加 a"],
+        ["Take an umbrella. It might rain.", "帶把傘，可能會下雨。", "提醒別人"],
+        ["Is school cancelled tomorrow because of the typhoon?", "明天因為颱風停課嗎？", "問颱風假最自然的說法"],
+      ], ["英文", "中文", "什麼時候用"]), soft=True)
+    + sec("天氣英文文法：名詞、形容詞、動詞怎麼分",
+      prose("天氣單字最常錯的不是拼字，是<strong>詞性</strong>。rain 是名詞也是動詞，rainy 是形容詞；sun 是名詞，sunny 才是形容詞——「今天出太陽」是 It's sunny.，不是 It's sun.。下表把常用的天氣字三種詞性排在一起：")
+      + tbl([
+        ["rain", "rainy", "to rain", "雨／下雨的／下雨"],
+        ["sun", "sunny", "—", "太陽／晴朗的"],
+        ["wind", "windy", "—", "風／風大的"],
+        ["snow", "snowy", "to snow", "雪／下雪的／下雪"],
+        ["cloud", "cloudy", "—", "雲／多雲的"],
+        ["fog", "foggy", "—", "霧／有霧的"],
+        ["storm", "stormy", "—", "暴風雨／暴風雨的"],
+        ["mist", "misty", "—", "薄霧／有薄霧的"],
+        ["haze", "hazy", "—", "霾／有霾的"],
+        ["frost", "frosty", "—", "霜／結霜的、冷冽的"],
+        ["ice", "icy", "—", "冰／結冰的、冰冷的"],
+        ["breeze", "breezy", "—", "微風／有微風的"],
+        ["thunder", "—", "to thunder", "雷／打雷"],
+        ["drizzle", "—", "to drizzle", "毛毛雨／下毛毛雨"],
+        ["humidity", "humid", "—", "濕度／潮濕的"],
+        ["heat", "hot", "to heat up", "高溫／熱的／變熱"],
+      ], ["名詞", "形容詞", "動詞", "中文"])
+      + prose("<strong>It's raining 和 It's rainy 差在哪？</strong> It's raining 是現在進行式——<em>此刻</em>正在下；It's rainy 是形容詞——描述整體狀態，「今天是雨天」。看著窗外在下雨說 It's raining.；形容基隆的冬天說 It's rainy.。習慣性的下雨用簡單現在式：It rains a lot in Keelung.（基隆很常下雨。）",
+        "<strong>天氣句一律用 It 開頭。</strong>天氣沒有真正的主詞，英文用 it 補位（虛主詞）：It's hot.、It's windy.、It's going to rain.。台灣學生常寫 Today is rain. 或 The weather is rain.——rain 不是形容詞，正確是 It's raining today. 或 It's rainy today.。",
+        "<strong>rain、snow、weather 都是不可數名詞。</strong>「很多雨」是 a lot of rain，不是 many rains；「一場雨」不說 a rain；「天氣很好」是 nice weather，前面不加 a。<strong>大小不能直譯</strong>：大雨是 heavy rain、大風是 strong wind、大太陽是 bright sun（或直接說 It's really sunny.）——big 只用在尺寸。",
+        "季節和月份前面的介系詞用 in（in summer、in July），日期用 on——完整規則見 <a href=\"/in-on-at-prepositions/\">in／on／at 用法</a>。"))
+    + sec("溫度怎麼說：28 度、零下、華氏",
+      prose("<strong>28 度 = twenty-eight degrees</strong>。口語通常不加 Celsius（攝氏），要講清楚單位時說 twenty-eight degrees Celsius；一度是單數 one degree，其餘都加 s。常用句：It's 28 degrees.（現在 28 度。）、The high will be 32.（最高溫 32 度。）、It's in the 30s.（三十幾度。）",
+        "<strong>零下</strong>有三種說法：minus five（負五度）、five below zero（零下五度）、口語直接說 five below。<strong>美國用華氏（Fahrenheit）</strong>，台灣用攝氏：換算公式是 °F = °C × 9 ÷ 5 + 32，°C = (°F − 32) × 5 ÷ 9。心算法：攝氏乘以 2 再加 30，就是華氏的大概值。")
+      + tbl([
+        ["−5°C", "minus five degrees／five below zero", "23°F"],
+        ["0°C", "zero degrees", "32°F"],
+        ["10°C", "ten degrees", "50°F"],
+        ["15°C", "fifteen degrees", "59°F"],
+        ["20°C", "twenty degrees", "68°F"],
+        ["25°C", "twenty-five degrees", "77°F"],
+        ["28°C", "twenty-eight degrees", "82.4°F"],
+        ["30°C", "thirty degrees", "86°F"],
+        ["32°C", "thirty-two degrees", "89.6°F"],
+        ["35°C", "thirty-five degrees", "95°F"],
+        ["37°C", "thirty-seven degrees（人的體溫）", "98.6°F"],
+        ["38°C", "thirty-eight degrees", "100.4°F"],
+      ], ["攝氏", "英文怎麼說", "華氏（美國）"])
+      + prose("數字本身唸不順的話，先看 <a href=\"/english-numbers-guide/\">英文數字 1-100 對照表</a>。"), soft=True)
+    + sec("天氣英文發音：台灣學生最常唸錯的 13 個字",
+      prose("天氣單字有幾個固定的發音陷阱：th 的舌位、ou 和 oo 的母音、重音的位置。下表每個字都標 KK 音標，並用中文說明哪裡容易錯；KK 符號看不懂的話，先看 <a href=\"/kk-phonetic-chart/\">KK 音標表</a>。")
+      + tbl([
+        ["weather", "天氣", "/ˈwɛðɚ/　和 whether（是否）完全同音；th 有聲，舌尖輕咬"],
+        ["whether", "是否", "/ˈwɛðɚ/　I don't know whether it will rain.（我不知道會不會下雨。）"],
+        ["cloudy", "多雲的", "/ˈklaʊdɪ/　ou 唸「凹」/aʊ/，不是「ㄡ」"],
+        ["thunder", "雷", "/ˈθʌndɚ/　th 無聲 /θ/，舌尖伸出，不是 s 也不是 t"],
+        ["humid", "潮濕的", "/ˈhjumɪd/　開頭是 h + /ju/，唸 hyoo-mid，h 不能掉"],
+        ["typhoon", "颱風", "/taɪˈfun/　重音在後：tai-FOON，第一個音節要輕"],
+        ["temperature", "溫度", "/ˈtɛmprətʃɚ/　美式唸三個音節 TEM-pra-cher，重音在第一"],
+        ["drought", "乾旱", "/draʊt/　ough 唸 /aʊ/，和 out 押韻；結尾是 t"],
+        ["flood", "洪水", "/flʌd/　oo 唸 /ʌ/（和 blood 一樣），不是 food 的 /u/"],
+        ["autumn", "秋天", "/ˈɔtəm/　字尾的 n 不發音"],
+        ["Celsius", "攝氏", "/ˈsɛlsɪəs/　SEL-see-us，三個音節，重音在第一"],
+        ["lightning", "閃電", "/ˈlaɪtnɪŋ/　兩個音節 LITE-ning；lightening（變亮）是另一個字"],
+        ["climate", "氣候", "/ˈklaɪmɪt/　KLY-mit，第二音節弱化，不唸 mate"],
+      ], ["英文", "中文", "KK 音標與提示"])
+      + prose("最值得記的一組是 <strong>weather 和 whether</strong>：兩個字<strong>完全同音</strong>（/ˈwɛðɚ/），聽力裡只能靠句意分辨——I don't know whether it will rain.（我不知道會不會下雨。）裡的是「是否」，不是天氣。"))
+    + sec("天氣英文練習與學習單",
+      prose("先不看表，把下面十題填完再對答案。每格填一個字（第 7 題填兩個字）。",
+        "1. It's ______ today. Bring your sunglasses.（今天出太陽，帶太陽眼鏡。）",
+        "2. Look at the dark clouds. It looks like ______.（看那些烏雲，看起來要下雨了。）",
+        "3. It's 35 degrees. It's so ______!（35 度，好熱！）",
+        "4. I can't see the road. It's too ______.（看不到路，霧太濃了。）",
+        "5. There's a ______ coming this weekend. School might be closed.（週末有颱風要來，可能會停課。）",
+        "6. ______ the weather like in Taipei in May?（五月的台北天氣怎麼樣？）",
+        "7. It ______ ______ right now. Take an umbrella.（現在正在下雨，帶把傘。）",
+        "8. The ______ will be 32 degrees tomorrow.（明天最高溫 32 度。）",
+        "9. Minus three degrees? That's three ______ zero!（零下三度？那是零度以下三度！）",
+        "10. I don't know ______ it will rain tomorrow.（我不知道明天會不會下雨。）",
+        "<strong>答案：</strong>1. sunny　2. rain　3. hot　4. foggy　5. typhoon　6. What's　7. is raining　8. high　9. below　10. whether",
+        "想印出來當學習單：本頁最上面那張 105 個單字的對照表有免費的 A4 列印版 PDF（在第一張表上方的下載區），貼在書桌前，或讓孩子遮住中文那一欄自我測驗。"), soft=True)
+    + sec("天氣英文常見問題", faq([
+      ("「天氣」的英文怎麼說、怎麼唸？", "weather，KK 音標 /ˈwɛðɚ/，和 whether（是否）同音。注意 weather 是「天氣」——今天、明天的狀況；climate 才是「氣候」——一個地方長期的平均狀態：Taiwan has a humid climate.（台灣的氣候潮濕。）"),
+      ("「今天天氣如何」英文怎麼說？", "How's the weather today? 或 What's the weather like today? 兩句都對；第二句的 like 不能省。回答用 It's + 形容詞：It's sunny and hot.（出太陽又熱。）"),
+      ("下雨是 rain、rainy 還是 raining？", "三個都對，看詞性。rain 是名詞（heavy rain）或動詞（It rains a lot.）；raining 是正在下（It's raining.）；rainy 是形容詞（a rainy day、It's rainy today.）。最常見的錯誤是 Today is rain.——rain 不能直接當形容詞用。"),
+      ("颱風的英文是 typhoon 還是 hurricane？", "同一種熱帶風暴，依發生的海域叫不同名字：西北太平洋（台灣、日本、菲律賓）叫 typhoon，大西洋和東北太平洋（美國）叫 hurricane，印度洋和南太平洋叫 cyclone。颱風假沒有對應的英文單字，台灣人說 typhoon day off，對外國人最清楚的說法是 School and work are cancelled because of the typhoon.（因為颱風停班停課。）"),
+      ("「悶熱」和「濕冷」英文怎麼說？", "悶熱是 muggy 或 humid：It's so muggy today.（今天好悶。）熱得黏黏的口語說 sticky。濕冷不用 humid，用 damp：It's cold and damp.（又冷又濕。）台北冬天那種冷，美國人會說 a damp cold（濕冷）。"),
+      ("孩子怎麼學天氣英文最有效？", "不用背表。每天早餐問一句 How's the weather?，孩子看窗外回答 It's cloudy.，一週就記住七、八個字；再把天氣寫進英文日記的第一行，單字每天都在用。表留著查就好。"),
+    ]), soft=False)
+    + cta("天氣是每天都能練的話題——早餐問一句 How's the weather?，孩子答得出來，單字才算真的學會。我們的課堂每天都從天氣開場，孩子開口的次數比背表多得多。")),
+  faq_n=6)
+
+# ---- /time-english/ (2026-10-07; words in vocab_topics.json["time"]) ----
+DATA_TIME = DATA["time"]
+PAGES["time-english"] = dict(
+  target="時間英文", index=1.0,
+  h1="時間英文怎麼說？幾點幾分說法、a.m.／p.m. 寫法、縮寫與單字表一次搞懂",
+  title="時間英文怎麼說？幾點幾分說法 43 句、am／pm 寫法與縮寫對照表｜埃森美語",
+  desc="時間英文對照表：幾點幾分 43 種說法、a.m.／p.m. 寫法與 12 p.m. 的意思、19 個縮寫、83 個時間單字、at／in／on 用法與問答句型——美籍持證教師整理，附 A4 PDF。",
+  hero="時間英文最常被問的不是單字，而是「7:05 怎麼唸」「12 p.m. 是中午還是半夜」「at 還是 in」。下面先給 43 種幾點幾分的說法對照表，再把 a.m.／p.m. 寫法、縮寫、83 個時間單字、介系詞和問答句型一次講清楚。",
+  body=lambda: (
+    sec("幾點幾分英文怎麼說",
+      prose("唸時間有兩套系統，<strong>兩套都對</strong>：一套是<strong>直接唸數字</strong>（7:45 → seven forty-five），任何時間都能用，美式最常見；另一套是 <strong>past／to</strong>（a quarter to eight），英式較常用，但聽力考試和母語者口語都會出現，所以兩套都要認得。",
+        "下表第二欄是數字時間與中文，第三欄是唸法與用法提醒。整點、幾分、一刻與半、差幾分、上午下午各一組。")
+      + grouped([(g[0], [[a, b, c] for a, b, c in g[1]]) for g in DATA_TIME["clock"]], ["英文", "中文", "唸法／用法"]))
+    + sec("時間英文寫法與縮寫：a.m.、p.m. 與 12／24 小時制",
+      prose("<strong>a.m. 是拉丁文 ante meridiem（中午之前），p.m. 是 post meridiem（中午之後）</strong>。a.m. 管午夜 12:00 到上午 11:59，p.m. 管中午 12:00 到晚上 11:59。所以 <strong>12 p.m. 是中午、12 a.m. 是午夜</strong>——這是最多人搞反的一點，連母語者也常弄錯，寫作時最保險的做法是直接寫 noon 和 midnight。",
+        "<strong>寫法</strong>：美式新聞與教科書多寫小寫加句點的 <strong>a.m.／p.m.</strong>，數字和縮寫之間空一格（7 a.m.、9:30 p.m.）；大寫 AM／PM、不加句點的 am／pm 也都看得到、都被接受，<strong>同一份文件裡保持一致</strong>就好。a.m.／p.m. 本身已經說明了上午下午，所以不要再疊上 in the morning（7 a.m. in the morning 是贅字），也不和 o'clock 連用（要說 7 p.m. 或 seven in the evening，不說 7 o'clock p.m.）。",
+        "<strong>12 小時制與 24 小時制</strong>：台灣的課表、車票習慣寫 19:00，但英語國家口語幾乎只用 12 小時制——19:00 要說 seven p.m. 或 seven in the evening，不會說 nineteen o'clock。24 小時制在英文裡主要出現在軍隊、航空與英國的交通時刻表，唸法是 nineteen hundred（19:00）、fourteen thirty（14:30）。",
+        "<strong>冒號與 o'clock</strong>：時和分之間美式用冒號（7:05），英式有時用句點（7.05）。o'clock 來自 of the clock，<strong>只用在整點</strong>：seven o'clock 對，seven thirty o'clock 錯。<strong>7 點 5 分</strong>這種分鐘數小於 10 的時間，0 要唸成 oh：seven oh five；不唸 seven five，也不唸 seven zero five。",
+        "下表是時間相關的常用縮寫；e.g.、i.e.、etc. 這些一般縮寫在 <a href=\"/english-abbreviations-guide/\">英文縮寫大全</a>。")
+      + tbl([[a, b, c] for a, b, c in DATA_TIME["abbr"]], ["縮寫", "全文", "中文／用法"]), soft=True)
+    + sec("時間英文單字表（83 個）",
+      prose("幾點幾分會說了，接下來是讓句子完整的字：時間單位、一天的時段、頻率、前後早晚，以及時鐘本身的部件。第三欄是常用搭配或例句，<strong>背的時候連搭配一起背</strong>，單字才用得出來。數字的唸法在 <a href=\"/english-numbers-guide/\">英文數字 1-100</a>，星期和月份在 <a href=\"/days-of-week-english/\">星期英文</a>與 <a href=\"/months-english/\">月份英文</a>。")
+      + grouped([(g[0], [[a, b, c] for a, b, c in g[1]]) for g in DATA_TIME["words"]], ["英文", "中文", "用法／例子"]))
+    + sec("時間的介系詞：at、in、on 怎麼選",
+      prose("時間介系詞的規則只有一條：<strong>時刻用 at、時段用 in、日子用 on</strong>。at seven、at noon；in the morning、in May、in 2026；on Monday、on May 5。唯一要硬記的例外是 <strong>at night</strong>——night 雖然是時段，卻用 at。",
+        "另外三個常混的字：<strong>in ten minutes</strong> 是「十分鐘後」，不是「在十分鐘內」；<strong>by five</strong> 是「最晚五點」（截止），<strong>until five</strong> 是「一直到五點」（持續）。完整規則與練習題在 <a href=\"/in-on-at-prepositions/\">in on at 用法全攻略</a>，日期的寫法與唸法在 <a href=\"/english-dates-guide/\">英文日期怎麼寫</a>，5 日、13 日這種序數在 <a href=\"/ordinal-numbers-english/\">英文序數</a>。")
+      + tbl([[a, b, c] for a, b, c in DATA_TIME["preps"]], ["英文", "中文", "規則"]), soft=True)
+    + sec("問時間、回答時間的句型與用法",
+      prose("問時間最常用的就是 <strong>What time is it?</strong>，客氣一點說 <strong>Do you have the time?</strong>（一定要有 the，少了 the 變成「你有空嗎」）。回答一律用 <strong>It's…</strong> 開頭。問某件事幾點開始，用 <strong>What time does… start?</strong>，回答 <strong>It starts at…</strong>。",
+        "<strong>時間英文用法</strong>最常錯的是「花時間」：事情花時間用 <strong>take</strong>（It takes twenty minutes.），人花時間用 <strong>spend</strong>（I spend an hour on homework.），持續多久用 <strong>last</strong>（The movie lasts two hours.）。問「多久」是 <strong>How long</strong>，不是 How long time；問「幾次」是 <strong>How many times</strong>；問「多常」是 <strong>How often</strong>。")
+      + grouped([(g[0], [[a, b, c] for a, b, c in g[1]]) for g in DATA_TIME["sentences"]], ["英文", "中文", "用法"]))
+    + sec("台灣學生最常錯的 5 個時間說法",
+      prose("這五個錯誤幾乎每個班都會出現，多半是把中文語序直接搬到英文裡。看一次就記得住。")
+      + tbl([[a, b, c] for a, b, c in DATA_TIME["mistakes"]], ["常見錯誤", "正確說法", "為什麼"]), soft=True)
+    + sec("時間英文常見問題", faq([
+      ("「現在幾點」英文怎麼說？", "What time is it? 最常用；對陌生人或長輩可以說 Do you have the time? 或 Could you tell me the time?（Do you have the time 一定要有 the，少了 the 是在問「你有空嗎」）。回答用 It's 開頭：It's seven thirty."),
+      ("a.m. 和 p.m. 是什麼意思？怎麼寫？", "來自拉丁文：a.m.＝ante meridiem（中午之前），p.m.＝post meridiem（中午之後）。美式寫法是小寫加句點、前面空一格：7 a.m.、9:30 p.m.；AM／PM、am／pm 也都被接受，同一篇文章保持一致就好。"),
+      ("12 p.m. 是中午還是半夜？", "12 p.m. 是中午，12 a.m. 是午夜。p.m. 是「中午之後」，中午 12:00 正好是下午的起點，所以歸 p.m.；午夜是一天的開始，歸 a.m.。因為太多人搞混，正式文件和母語者都建議直接寫 noon（中午）和 midnight（午夜）。"),
+      ("7:05 英文怎麼唸？", "seven oh five——分鐘數小於 10 時，0 要唸成 oh。也可以說 five past seven（英式）或 five after seven（美式）。七點整才是 seven o'clock，後面有分鐘就不加 o'clock。"),
+      ("時間前面用 at 還是 in？", "時刻用 at（at seven、at seven thirty、at noon），時段用 in（in the morning、in the afternoon），星期和日期用 on（on Monday、on May 5）。唯一的例外是 at night。"),
+      ("英文會用 24 小時制嗎？19:00 怎麼說？", "口語幾乎不用。英語國家日常都說 12 小時制，19:00 要說 seven p.m. 或 seven in the evening。24 小時制只出現在軍隊、航空和英國的交通時刻表，唸成 nineteen hundred，不是 nineteen o'clock。"),
+    ]), soft=True)
+    + cta("幾點幾分、多久、多常——這些句子考的是「開口不用想」。我們的小班課每天用英文約時間、排行程，孩子從想半天到脫口而出，差的只是練習次數。")),
+  faq_n=6)
+
+# ---- /food-english/ (2026-10-07; words in vocab_topics.json["food"]) ----
+
+PAGES["food-english"] = dict(
+  target="食物英文", index=1.0,
+  h1="食物英文對照表：315 個單字，台灣小吃 58 道、早餐英文與介紹一道菜的說法",
+  title="食物英文單字大全 315 個：台灣小吃、早餐英文對照表（附 PDF）｜埃森美語",
+  desc="食物英文對照表：台灣小吃 58 道（珍珠奶茶、滷肉飯、蛋餅）與分類單字 220 個；"
+       "附 breakfast 唸法、早餐店點餐會話、用英文介紹一道菜——美籍持證教師整理，附 A4 PDF。",
+  hero="市面上的食物英文表多半是從國外教材翻過來的，所以查得到 bacon（培根）、cereal（麥片），"
+       "卻查不到滷肉飯、蚵仔煎和蛋餅——偏偏那才是台灣孩子天天在吃、最想跟外國朋友介紹的。"
+       "這份表把台灣小吃放在第一組，接著是分類單字、早餐店點餐會話，和用英文介紹一道菜的六句模板。",
+  body=lambda: (
+    sec("台灣常見食物英文對照表（58 道）",
+      prose("第三欄是<strong>唸法與用法</strong>：哪些字外國人其實不這樣叫（珍珠奶茶在美國多說 boba）、"
+            "哪些可以直接用拼音（xiaolongbao、gua bao）、以及台灣學生最容易唸錯的音。"
+            "這一組的說法在英語系國家也通用，點餐或跟外師介紹時直接說就懂。")
+      + tbl(DATA["food"][0][1], ["英文", "中文", "唸法／用法"]))
+    + sec("食物英文單字大全（分類 220 個）",
+      prose("按情境分九組，從早餐桌一路到餐廳點餐。第三欄標了<strong>可數／不可數</strong>與容易唸錯的音——"
+            "這兩件事正是食物英文最常被扣分的地方。",
+            "水果只放 10 個最常用的，完整 47 種（含芭樂、蓮霧、釋迦）請看"
+            "<a href=\"/fruits-english-vocabulary/\">水果英文對照表</a>；"
+            "動物與身體部位另有<a href=\"/animals-english-vocabulary/\">動物英文</a>與"
+            "<a href=\"/body-parts-english/\">身體部位英文</a>，其他主題都整理在"
+            "<a href=\"/english-vocabulary-by-topic/\">英文單字主題總覽</a>。")
+      + grouped(DATA["food"][1:10], ["英文", "中文", "唸法／用法"]), soft=True)
+    + sec("早餐英文怎麼說、怎麼唸：breakfast 的發音與早餐店點餐會話",
+      prose("早餐的英文是 <strong>breakfast</strong>，唸 <strong>/ˈbrɛkfəst/</strong>——重音在前，像 <em>brek</em>-fist，"
+            "第二個音節很輕，<strong>不是「break-fast」</strong>（布瑞克—發斯特）。"
+            "它原本的意思是「打破（break）一夜的禁食（fast）」，但兩個字黏在一起之後，母音都縮短了。"
+            "拼字最常見的錯是漏掉 k 或 a：breakfast 一共 9 個字母。",
+            "<strong>早午餐是 brunch</strong>（breakfast ＋ lunch），唸 /brʌntʃ/。"
+            "吃早餐說 <strong>have breakfast</strong>（eat breakfast 也可以），前面<strong>不加 a</strong>："
+            "I have breakfast at seven.（我七點吃早餐。）只有加了形容詞才會出現 a：a big breakfast（豐盛的早餐）。"
+            "沒吃早餐是 skip breakfast。",
+            "<strong>What do you want for breakfast?</strong>（早餐想吃什麼？）<br>"
+            "<strong>What did you have for breakfast?</strong>（你早餐吃了什麼？）<br>"
+            "<strong>I had an egg pancake and soy milk.</strong>（我吃了蛋餅和豆漿。）<br>"
+            "<strong>Breakfast is ready!</strong>（早餐好了！）<br>"
+            "<strong>Did you eat breakfast?</strong>（你吃早餐了嗎？）")
+      + "<h3>早餐店點餐會話（10 句）</h3>"
+      + prose("台灣早餐店的點法——外師來台灣最常問的就是這一段。<strong>店員</strong>是 clerk，<strong>客人</strong>是 customer：",
+            "<strong>Clerk:</strong> Good morning! What can I get for you?<br>（店員：早安！要點什麼？）<br>"
+            "<strong>Customer:</strong> Hi, I'd like an egg pancake and a soy milk, please.<br>（客人：你好，我要一份蛋餅和一杯豆漿。）<br>"
+            "<strong>Clerk:</strong> Would you like the soy milk hot or iced?<br>（店員：豆漿要熱的還是冰的？）<br>"
+            "<strong>Customer:</strong> Iced, please. Can I get it with less sugar?<br>（客人：冰的，謝謝。可以少糖嗎？）<br>"
+            "<strong>Clerk:</strong> Sure. Anything else?<br>（店員：好的。還要別的嗎？）<br>"
+            "<strong>Customer:</strong> Can I add cheese to the egg pancake?<br>（客人：蛋餅可以加起司嗎？）<br>"
+            "<strong>Clerk:</strong> Of course. For here or to go?<br>（店員：當然可以。內用還是外帶？）<br>"
+            "<strong>Customer:</strong> To go, please. How much is that?<br>（客人：外帶，謝謝。總共多少錢？）<br>"
+            "<strong>Clerk:</strong> That'll be sixty-five dollars.<br>（店員：總共 65 元。）<br>"
+            "<strong>Customer:</strong> Here you go. Thank you!<br>（客人：給你。謝謝！）",
+            "三個最實用的句型：<strong>I'd like …</strong>（我要…）比 I want 有禮貌；"
+            "<strong>Can I get it with …／without …?</strong>（可以加…／不加…嗎？）；"
+            "<strong>For here or to go?</strong>（內用還是外帶？）——回答只要說 For here 或 To go 就好。"
+            "道謝與回應的更多說法在<a href=\"/thank-you-english/\">謝謝英文</a>。")
+      + "<h3>菜單上真的看得到的縮寫</h3>"
+      + prose("台灣早餐店的菜單幾乎都是中文，但國外的早餐店、速食店菜單真的會出現這幾個縮寫，看懂就不會點錯：")
+      + tbl(DATA["food"][13][1], ["縮寫", "全稱", "中文"]))
+    + sec("食物英文介紹：怎麼用英文介紹一道菜",
+      prose("介紹一道菜不需要高級單字，需要的是<strong>固定順序</strong>：叫什麼、是什麼做的、什麼味道、哪裡吃得到、怎麼吃、你的推薦。"
+            "下面六句照著套，換掉斜體的部分就能介紹任何一道菜：",
+            "1. <strong>It's called</strong> <em>lu rou fan</em>, or <em>braised pork rice</em>.（它叫滷肉飯，英文是 braised pork rice。）<br>"
+            "2. <strong>It's made of</strong> <em>rice, minced pork, and soy sauce</em>.（它是用飯、豬絞肉和醬油做的。）<br>"
+            "3. <strong>It tastes</strong> <em>savory and a little sweet</em>.（吃起來鹹香，帶一點甜。）<br>"
+            "4. <strong>You can find it at</strong> <em>night markets and small restaurants all over Taiwan</em>.（在台灣的夜市和小吃店都吃得到。）<br>"
+            "5. <strong>People usually eat it with</strong> <em>a tea egg or pickled vegetables</em>.（大家通常配茶葉蛋或醬菜一起吃。）<br>"
+            "6. <strong>My favorite is</strong> <em>the one near my school</em>—you should try it!（我最喜歡學校附近那家——你一定要試試！）",
+            "套到珍珠奶茶上：It's called bubble tea. It's made of black tea, milk, and tapioca pearls. "
+            "It tastes sweet and milky, and the pearls are chewy.（它叫珍珠奶茶。用紅茶、牛奶和粉圓做的。喝起來甜甜的、有奶味，珍珠很 Q。）",
+            "沒有英文名字的菜，母語者的做法是<strong>描述它</strong>：<strong>It's a kind of</strong> savory pancake.（它是一種鹹的煎餅。）／"
+            "<strong>It's a bit like</strong> a dumpling, but bigger.（有點像水餃，但比較大。）這兩句比硬記一個沒人用的譯名實用得多。")
+      + "<h3>味道與口感單字表（25 個）</h3>"
+      + prose("第三句 It tastes… 最需要這些字。每個都附一句可以直接用的例句——台灣人說的「Q」，英文最接近的就是 chewy。")
+      + tbl(DATA["food"][10][1], ["英文", "中文", "例句"]), soft=True)
+    + sec("可數還是不可數？食物英文的文法",
+      prose("食物英文最常被扣分的不是單字，是<strong>可數與不可數</strong>。規則：<strong>一個一個算得出來的可數</strong>"
+            "（an apple、two eggs、three dumplings）；<strong>一團、一堆、算不出「一個」的不可數</strong>"
+            "（rice、bread、water、meat、cheese、soup）。不可數名詞<strong>沒有複數、前面不加 a</strong>："
+            "✅ some rice　❌ <s>a rice</s>　❌ <s>two breads</s>。",
+            "要說「一碗、一片、一杯」，就把<strong>容器或單位</strong>放前面——這才是數不可數名詞的方法：")
+      + tbl(DATA["food"][11][1], ["英文", "中文", "唸法／用法"])
+      + prose("<strong>同一個字兩種身分</strong>：chicken 當動物可數（a chicken 一隻雞）、當肉不可數（some chicken 一些雞肉）；"
+            "cake 整個可數（a cake）、切下來一塊不可數（a piece of cake）；"
+            "coffee 不可數，但點餐時說 two coffees（兩杯咖啡）是通用的口語。",
+            "<strong>food 什麼時候加 s？</strong>food 通常不可數：I like Taiwanese food.（我喜歡台灣菜。）"
+            "只有在講「各種不同種類的食物」時才用 foods：Taiwan has many kinds of street foods.（台灣有很多種街頭小吃。）"
+            "寫作文時，不確定就用 food。"))
+    + sec("食物英文 A–Z 索引（26 個）",
+      prose("一個字母一個食物，拿來做字母書、單字卡或教室海報剛好。X 真的很難——xiaolongbao（小籠包）是國外菜單上真的看得到的字，"
+            "台灣孩子用自己的食物補上這一格再合理不過。字母本身的寫法與練習在"
+            "<a href=\"/english-alphabet-guide/\">英文字母教學</a>，顏色單字在"
+            "<a href=\"/colors-english-vocabulary/\">顏色英文對照表</a>。")
+      + tbl(DATA["food"][12][1], ["字母", "英文", "中文"]), soft=True)
+    + sec("食物英文繪本：6 本用「吃」學單字的經典",
+      prose("食物是繪本最常見的主題之一——因為孩子對「吃」有感覺，單字不用背就記得。"
+            "下面六本在台灣的書店和圖書館都找得到，這裡只列書名與作者；怎麼依年齡挑、怎麼唸給孩子聽，請看"
+            "<a href=\"/english-picture-books-guide/\">英文繪本怎麼選</a>。")
+      + tbl(DATA["food"][14][1], ["書名", "作者", "一句話介紹"]))
+    + sec("食物英文常見問題", faq([
+      ("食物的英文是 food 還是 foods？", "大多數時候用 food，它是不可數名詞：I like Taiwanese food（我喜歡台灣菜）、"
+        "Do you like spicy food?（你喜歡吃辣嗎？）。只有在強調「各種不同種類」時才用 foods，例如 street foods（各種街頭小吃）。"
+        "不確定就用 food，不會錯。"),
+      ("早餐的英文 breakfast 怎麼唸？", "/ˈbrɛkfəst/，重音在第一個音節，唸起來像 brek-fist，第二個音節很輕。"
+        "不要唸成 break（布瑞克）加 fast（發斯特）——兩個字黏在一起之後母音都縮短了。早午餐是 brunch /brʌntʃ/。"),
+      ("珍珠奶茶的英文是 bubble tea 還是 boba？", "兩個都對，看地區。美國（尤其西岸）多說 boba，英國和澳洲多說 bubble tea，"
+        "pearl milk tea 也聽得懂。珍珠本身是 tapioca pearls，口語也直接叫 boba 或 pearls。"
+        "少糖是 less sugar，半糖是 half sugar，去冰是 no ice。"),
+      ("滷肉飯的英文怎麼說？", "最通行的是 braised pork rice，也有人寫 minced pork rice（強調是絞肉），或直接用拼音 lu rou fan。"
+        "braised 是「用醬汁慢燉、滷」的意思，唸 /brezd/。向外國朋友介紹可以說："
+        "It's rice with braised minced pork on top.（飯上面放滷過的豬絞肉。）"),
+      ("蛋餅、豆漿、飯糰的英文是什麼？", "蛋餅是 egg pancake，也說 Taiwanese egg crepe，很多外國人直接說 dan bing；"
+        "豆漿是 soy milk（鹹豆漿 savory soy milk）；飯糰是 rice ball，台式的常直接說 fan tuan，和日式的 onigiri 不同。"
+        "早餐店點餐可以說：I'd like an egg pancake and an iced soy milk, to go.（我要一份蛋餅和一杯冰豆漿，外帶。）"),
+      ("怎麼讓孩子記住食物英文？", "在餐桌上用，不要在書桌上背。每餐挑一樣食物問一句 What's this?（這是什麼？）、"
+        "吃完問 How does it taste?（吃起來怎麼樣？），一週下來自然記住二十個字。"
+        "進階一點，讓孩子用本頁的六句模板向家人「介紹」今天的晚餐——講得出來，才算真的會。"),
+    ]), soft=True)
+    + cta("食物英文最好的教室是餐桌和夜市。我們的小班課用點餐、介紹家鄉菜這些真實情境練，"
+          "孩子講出來的不是背過的單字表，是能帶外國朋友去吃一碗牛肉麵的句子。")),
+  faq_n=6)
+
 def collides(slug, target):
     """Refuse to create a second page for a keyword the site already targets.
 
@@ -1004,7 +1296,9 @@ if __name__ == "__main__":
         if s not in PAGES:
             print(f"  ?? unknown {s}"); continue
         clash = collides(s, PAGES[s].get("target", ""))
-        if clash:
+        # the guard is for NEW pages: rebuilding a page that already exists (the hub, whose
+        # target 英文單字 is a substring of every "X英文單字" title) is not creating a competitor
+        if clash and not os.path.isdir(os.path.join(SITE, s)):
             print(f"  !! /{s}/ targets 「{PAGES[s]['target']}」 which these pages already "
                   f"target: {', '.join('/'+c+'/' for c in clash)}")
             print(f"     Check GSC impressions before proceeding — put the richer content on "
