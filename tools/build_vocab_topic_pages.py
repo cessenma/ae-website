@@ -111,8 +111,8 @@ PAGES = {
       prose("縮寫規則很一致：<strong>取前三個字母加句點</strong>。唯一的例外是 May——它只有三個字母，所以不縮寫、也不加點。September 兩種縮寫都通行（Sep. 與 Sept.）。")
       + tbl([[f"{i+1} 月", m[0], m[1], m[2], m[3]] for i, m in enumerate(M)],
             ["月份", "英文", "中文", "縮寫", "天數"]))
-    + sec("Feb.、Apr.、May、Jun. 各是幾月？",
-      prose("這四個是查詢量最高的，因為它們彼此看起來很像：<br>"
+    + sec("Jun.、Jul.、Apr.、Jan. 各是幾月？",
+      prose("這四個是最常被搜尋的縮寫（Jun. 和 Jul. 尤其容易看錯）。十二個月一次列出：<br>"
         "<strong>Jan.</strong> 一月　<strong>Feb.</strong> 二月　<strong>Mar.</strong> 三月　<strong>Apr.</strong> 四月<br>"
         "<strong>May</strong> 五月（不縮寫）　<strong>Jun.</strong> 六月　<strong>Jul.</strong> 七月　<strong>Aug.</strong> 八月<br>"
         "<strong>Sep./Sept.</strong> 九月　<strong>Oct.</strong> 十月　<strong>Nov.</strong> 十一月　<strong>Dec.</strong> 十二月",

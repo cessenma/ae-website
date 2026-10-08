@@ -657,3 +657,16 @@ address{font-style:normal}
 .pk-thumbs img{display:block;width:100%;height:auto;aspect-ratio:3/4;border-radius:10px;background:#fff;border:1px solid rgba(26,39,82,.12);box-shadow:0 4px 12px rgba(26,39,82,.10)}
 .pk-thumbs figcaption{margin-top:6px;font-size:12.5px;font-weight:700;color:var(--navy);line-height:1.2;white-space:nowrap}
 @media (max-width:420px){.pk-thumbs{gap:8px}.pk-thumbs figcaption{font-size:11.5px}}
+
+/* In-page TOC, 2026-10-08 audit fixes:
+   - a jump to a heading inside a block that has not slid in yet (.reveal.rv, translateY 28px) landed
+     the heading 28px under the fixed header; give such targets 28px more room;
+   - on phones the wrapped pills took 154–285px of the first screen — one swipeable row instead. */
+.reveal.rv:not(.in) [id],.reveal.rv:not(.in)[id]{scroll-margin-top:28px}
+@media (max-width:600px){
+  .pg-toc{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;
+    -webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
+  .pg-toc::-webkit-scrollbar{display:none}
+  .pg-toc .lbl,.pg-toc a{flex:none;white-space:nowrap}
+  .pg-toc a{min-height:40px;display:inline-flex;align-items:center;padding:8px 13px}   /* a finger-sized target */
+}
