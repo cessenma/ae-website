@@ -187,7 +187,10 @@ BYLINE_RE = re.compile(r'(<p[^>]*>(?:作者：Christopher|(?:本文)?由埃森�
 # were built from: file name -> the one page that may keep it ("" = none: the second was a
 # close-up of a RUSSIAN dictionary, the share image of twenty English-vocabulary pages).
 COPIED_IMG = {"kk-phonetics-dictionary-pronunciation-symbols.webp": "kk-phonetics-vs-phonics/",
-              "kk-chart-dictionary-closeup.webp": ""}
+              "kk-chart-dictionary-closeup.webp": "",
+              # build_vocab_topic_pages.py copies its head from the KK page, so a new vocabulary page
+              # arrived sharing the KK chart (time/weather/food-english, found by the 2026-10-08 audit)
+              "kk-phonetic-chart-full.webp": "kk-phonetic-chart/"}
 ARIA_H2 = ' role="heading" aria-level="2"'
 # Icons: the same three tags on every page. Hand-written pages carried a 340px JPEG logo,
 # generated pages carried nothing, so any icon tag found in the page is dropped and the set
