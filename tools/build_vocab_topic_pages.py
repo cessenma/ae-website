@@ -430,7 +430,7 @@ HUB_CARDS = [
  ("/animals-english-vocabulary/", "動物英文", "常見動物中英對照，依類別分組", "41"),
  ("/time-english/", "時間英文", "幾點幾分 43 種說法、a.m.／p.m. 寫法與 83 個時間單字", "43"),
  ("/weather-english/", "天氣英文", "105 個天氣單字，颱風、寒流、梅雨怎麼說，附句型與文法", "105"),
- ("/food-english/", "食物英文", "315 個食物單字，台灣小吃 58 道、早餐店點餐與介紹一道菜", "315"),
+ ("/food-english/", "食物英文", "335 個食物單字，台灣小吃 58 道、早餐店點餐與介紹一道菜", "335"),
  ("/moe-1200-words-guide/", "教育部 1200 單字", "108 課綱附錄五完整字表，可線上核對", "1211"),
  ("/moe-2000-words-guide/", "國中 2000 單字", "國中必備字表，程度約 CEFR B1", "2000"),
  ("/kk-phonetic-chart/", "KK 音標表", "41 個音標符號，每個字可點聽發音", "41"),
@@ -920,6 +920,7 @@ PAGES["english-writing-practice"] = dict(
 
 # ---- /weather-english/ (2026-10-07; words in vocab_topics.json["weather"]) ----
 PAGES["weather-english"] = dict(
+  published="2026-10-07",
   target="天氣英文", index=1.0,
   h1="天氣英文單字 105 個對照表：怎麼說、句型、文法、溫度與發音一次學會",
   title="天氣英文單字105個對照表：怎麼說、句型、文法與發音（附 PDF）｜埃森美語",
@@ -1043,6 +1044,7 @@ PAGES["weather-english"] = dict(
 # ---- /time-english/ (2026-10-07; words in vocab_topics.json["time"]) ----
 DATA_TIME = DATA["time"]
 PAGES["time-english"] = dict(
+  published="2026-10-07",
   target="時間英文", index=1.0,
   h1="時間英文怎麼說？幾點幾分說法、a.m.／p.m. 寫法、縮寫與單字表一次搞懂",
   title="時間英文怎麼說？幾點幾分說法 43 句、am／pm 寫法與縮寫對照表｜埃森美語",
@@ -1088,9 +1090,10 @@ PAGES["time-english"] = dict(
 # ---- /food-english/ (2026-10-07; words in vocab_topics.json["food"]) ----
 
 PAGES["food-english"] = dict(
+  published="2026-10-07",
   target="食物英文", index=1.0,
-  h1="食物英文對照表：315 個單字，台灣小吃 58 道、早餐英文與介紹一道菜的說法",
-  title="食物英文單字大全 315 個：台灣小吃、早餐英文對照表（附 PDF）｜埃森美語",
+  h1="食物英文對照表：335 個單字，台灣小吃 58 道、早餐英文與介紹一道菜的說法",
+  title="食物英文單字大全 335 個：台灣小吃、早餐英文對照表（附 PDF）｜埃森美語",
   desc="食物英文對照表：台灣小吃 58 道（珍珠奶茶、滷肉飯、蛋餅）與分類單字 220 個；"
        "附 breakfast 唸法、早餐店點餐會話、用英文介紹一道菜——美籍持證教師整理，附 A4 PDF。",
   hero="市面上的食物英文表多半是從國外教材翻過來的，所以查得到 bacon（培根）、cereal（麥片），"
@@ -1252,7 +1255,7 @@ def render(slug, cfg):
            "publisher": {"@type": "Organization", "name": "American English 埃森美語",
              "logo": {"@type": "ImageObject",
                       "url": ORIGIN + "/assets/img/american-english-banqiao-logo.jpg"}},
-           "datePublished": "2026-09-14", "dateModified": "2026-09-14"}
+           "datePublished": cfg.get("published", "2026-09-14"), "dateModified": cfg.get("published", "2026-09-14")}
     head = head.rstrip() + '\n<script type="application/ld+json">' + \
         json.dumps(art, ensure_ascii=False, separators=(",", ":")) + "</script>\n"
 

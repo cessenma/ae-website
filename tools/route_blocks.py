@@ -155,7 +155,7 @@ ROUTES = {
     ("中級線上模擬試題", "/gept-intermediate-practice/"), ("中高級線上模擬試題", "/gept-high-intermediate-practice/")]),
  "english-alphabet-guide": ("字母會了，下一步", "26 個字母之後，<em>開始拼字</em>",
    "字母認得、唸得出來之後，下一步是把字母拼成字。Starters（劍橋兒童英檢第一級）閱讀與寫作 Part 3 就是「排字母拼單字」，每題有圖、五題一組；單字練習則按主題分組。都免費、不用註冊。",
-   [("Starters 排字母拼單字", "/starters-rw-practice-part3/"), ("Starters 單字練習（36 題）", "/starters-vocabulary-practice/"),
+   [("英文字母練習表（四線三格 PDF）", "/english-alphabet-worksheet/"), ("Starters 排字母拼單字", "/starters-rw-practice-part3/"), ("Starters 單字練習（36 題）", "/starters-vocabulary-practice/"),
     ("Starters 題庫總覽（11 頁）", "/starters-practice-tests/"), ("自然發音規則總表", "/phonics-rules-chart/"),
     ("母音子音完整表", "/english-vowels-consonants/"), ("KK 音標表（可點聽）", "/kk-phonetic-chart/"), ("符號英文：@、# 怎麼唸", "/english-symbol-names/")]),
  "cool-english-guide": ("酷英之外", "還有<em>80 頁免費模擬試題</em>",
