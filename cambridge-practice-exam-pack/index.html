@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- AE:CRIT start -->
-<link rel="stylesheet" href="/assets/styles.css?v=0e2e6e17">
+<link rel="stylesheet" href="/assets/styles.css?v=f49c639a">
 <!-- AE:CRIT end -->
 <!-- AE:FONTS start -->
 <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2">
@@ -37,10 +37,11 @@ function show(){hide();L=document.createElement("div");L.setAttribute("role","st
   L.innerHTML='<div style="background:#fff;border-radius:999px;padding:14px 22px;font-weight:700;color:#1A2752;box-shadow:0 8px 30px rgba(0,0,0,.18);display:flex;align-items:center;gap:10px"><span style="width:18px;height:18px;border:3px solid #DDF4FF;border-top-color:#1CB0F6;border-radius:50%;display:inline-block;animation:aeSpin .8s linear infinite"></span>付款視窗開啟中，請稍候…</div><style>@keyframes aeSpin{to{transform:rotate(360deg)}}</style>';
   document.body.appendChild(L);T=setTimeout(hide,20000);}
 document.addEventListener("click",function(e){var a=e.target&&e.target.closest&&e.target.closest("a.lemonsqueezy-button");if(a)show();},true);
-new MutationObserver(function(ms){ms.forEach(function(m){
+function watch(){new MutationObserver(function(ms){ms.forEach(function(m){
   m.addedNodes.forEach(function(nd){if(nd.tagName==="IFRAME"&&/lemonsqueezy/.test(nd.src||"")){nd.addEventListener("load",function(){setTimeout(hide,600);});}});
   m.removedNodes.forEach(function(nd){if(nd.tagName==="IFRAME"&&/lemonsqueezy/.test(nd.src||""))hide();});
-});}).observe(document.body,{childList:true});
+});}).observe(document.body,{childList:true});}
+if(document.body)watch();else document.addEventListener("DOMContentLoaded",watch);   // the pack page loads this in <head>
 })();</script>
 <script>(function(){var n=0,t=setInterval(function(){
   if(window.LemonSqueezy&&window.LemonSqueezy.Setup){clearInterval(t);window.LemonSqueezy.Setup({eventHandler:h});}
@@ -61,7 +62,8 @@ function h(ev){
 .pk-table td{padding:13px 10px;border-bottom:1px solid rgba(26,39,82,.08)}
 .pk-table td:first-child{width:70px;color:var(--blue-ink);font-family:'Baloo 2',sans-serif;font-weight:800}
 .pk-what{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:24px}
-.pk-card{background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:20px;padding:20px 22px;box-shadow:0 4px 0 rgba(26,39,82,.05)}
+.pk-card{background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:20px;padding:20px 22px;box-shadow:0 4px 0 rgba(26,39,82,.05);display:flex;gap:14px;align-items:flex-start}
+.pk-ci{flex:0 0 64px;width:64px;height:85px;border-radius:8px;background:#fff;border:1px solid rgba(26,39,82,.12);box-shadow:0 3px 10px rgba(26,39,82,.10)}
 .pk-card b{display:block;font-family:'Baloo 2',sans-serif;font-size:16px;margin-bottom:6px}
 .pk-card span{font-size:14.5px;line-height:1.75;color:var(--text-body)}
 .pk-steps{counter-reset:s;list-style:none;padding:0;margin:24px 0 0;max-width:640px}
@@ -151,9 +153,9 @@ function h(ev){
 
     <div class="center stack reveal" style="margin-top:52px"><span class="eyebrow">每一份裡面有什麼</span><h2 id="三個檔案一次給齊">三個檔案，<em>一次給齊</em></h2></div>
     <div class="pk-what reveal">
-      <div class="pk-card"><b>題目卷</b><span>可以直接列印，版面照官方格式排。想模擬考場，就印出來計時寫。</span></div>
-      <div class="pk-card"><b>解答與解析</b><span>每一題都有中文解析，說明為什麼對、為什麼錯——不是只給一個答案字母。</span></div>
-      <div class="pk-card"><b>聽力音檔＋逐字稿</b><span>音檔已經含官方規定的重複播放，不用自己按第二次。聽不懂再打開逐字稿對照。</span></div>
+      <div class="pk-card"><img class="pk-ci" src="/assets/img/pack/cambridge-booklet.webp" width="64" height="85" alt="題目卷內頁" loading="lazy" decoding="async"><div><b>題目卷</b><span>可以直接列印，版面照官方格式排。想模擬考場，就印出來計時寫。</span></div></div>
+      <div class="pk-card"><img class="pk-ci" src="/assets/img/pack/cambridge-answers.webp" width="64" height="85" alt="逐題中文解析內頁" loading="lazy" decoding="async"><div><b>解答與解析</b><span>每一題都有中文解析，說明為什麼對、為什麼錯——不是只給一個答案字母。</span></div></div>
+      <div class="pk-card"><img class="pk-ci" src="/assets/img/pack/cambridge-audio.webp" width="64" height="85" alt="聽力音檔波形" loading="lazy" decoding="async"><div><b>聽力音檔＋逐字稿</b><span>音檔已經含官方規定的重複播放，不用自己按第二次。聽不懂再打開逐字稿對照。</span></div></div>
     </div>
 
     <div class="center stack reveal" style="margin-top:52px"><span class="eyebrow">內頁預覽</span><h2 id="試卷長-什麼樣子">試卷長 <em>什麼樣子</em></h2></div><p class="body center" style="max-width:60ch;margin:0 auto 6px">下面是實際的內頁，直接從我們寄給家長的檔案裡截下來的——沒有另外美化。點圖可以放大看清楚。</p><div class="cx" aria-roledescription="carousel" aria-label="試卷內頁預覽"><button type="button" class="cx-nav cx-prev" aria-label="上一張">&lsaquo;</button><div class="cx-win"><div class="cx-track"><div class="cx-slide" role="group" aria-roledescription="slide" aria-label="1 / 5：封面"><a href="/assets/img/exams/preview-cover.png" target="_blank" rel="noopener"><img src="/assets/img/exams/preview-cover.png" alt="封面：模擬試卷內頁範例" width="1063" height="1500" loading="lazy" decoding="async"></a><p class="cx-cap"><b>封面</b><span>級別、時間、題號範圍、考生須知</span></p></div><div class="cx-slide" role="group" aria-roledescription="slide" aria-label="2 / 5：聽力第一部分"><a href="/assets/img/exams/preview-listening.png" target="_blank" rel="noopener"><img src="/assets/img/exams/preview-listening.png" alt="聽力第一部分：模擬試卷內頁範例" width="1063" height="1500" loading="lazy" decoding="async"></a><p class="cx-cap"><b>聽力第一部分</b><span>看圖選答案，時鐘和價格都是真的圖</span></p></div><div class="cx-slide" role="group" aria-roledescription="slide" aria-label="3 / 5：寫作看圖說故事"><a href="/assets/img/exams/preview-story.png" target="_blank" rel="noopener"><img src="/assets/img/exams/preview-story.png" alt="寫作看圖說故事：模擬試卷內頁範例" width="1063" height="1500" loading="lazy" decoding="async"></a><p class="cx-cap"><b>寫作看圖說故事</b><span>三格圖說一個故事，和正式考試一樣</span></p></div><div class="cx-slide" role="group" aria-roledescription="slide" aria-label="4 / 5：口說第三部分"><a href="/assets/img/exams/preview-speaking.png" target="_blank" rel="noopener"><img src="/assets/img/exams/preview-speaking.png" alt="口說第三部分：模擬試卷內頁範例" width="1063" height="1500" loading="lazy" decoding="async"></a><p class="cx-cap"><b>口說第三部分</b><span>討論用的圖卡，六個選項一次看完</span></p></div><div class="cx-slide" role="group" aria-roledescription="slide" aria-label="5 / 5：解答與解析"><a href="/assets/img/exams/preview-answers.png" target="_blank" rel="noopener"><img src="/assets/img/exams/preview-answers.png" alt="解答與解析：模擬試卷內頁範例" width="1063" height="1500" loading="lazy" decoding="async"></a><p class="cx-cap"><b>解答與解析</b><span>每題寫為什麼對、為什麼錯，中文解析</span></p></div></div></div><button type="button" class="cx-nav cx-next" aria-label="下一張">&rsaquo;</button><div class="cx-dots"><button type="button" class="cx-dot" data-go="0" aria-label="第 1 張：封面"></button><button type="button" class="cx-dot" data-go="1" aria-label="第 2 張：聽力第一部分"></button><button type="button" class="cx-dot" data-go="2" aria-label="第 3 張：寫作看圖說故事"></button><button type="button" class="cx-dot" data-go="3" aria-label="第 4 張：口說第三部分"></button><button type="button" class="cx-dot" data-go="4" aria-label="第 5 張：解答與解析"></button></div></div>

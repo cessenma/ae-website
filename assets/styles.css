@@ -649,3 +649,11 @@ address{font-style:normal}
 .pg-toc a{display:inline-block;font-size:13.5px;font-weight:700;color:var(--navy);text-decoration:none;background:var(--light-blue);border-radius:999px;padding:6px 12px;line-height:1.3}
 .pg-toc a:hover{background:var(--blue);color:#fff}
 @media (max-width:600px){.pg-toc{gap:6px;padding:12px}.pg-toc a{font-size:13px;padding:5px 10px}}
+
+/* Pack card: tiny pictures of each piece of the test (ae-question-bank tools/build_pack_thumbs.py).
+   A 4-column grid that shrinks: on a 375px phone the card is ~287px wide, one pixel short of four fixed tiles. */
+.pk-thumbs{display:grid;grid-template-columns:repeat(4,minmax(0,84px));gap:12px;margin:2px 0 4px}
+.pk-thumbs figure{margin:0;min-width:0;text-align:center}
+.pk-thumbs img{display:block;width:100%;height:auto;aspect-ratio:3/4;border-radius:10px;background:#fff;border:1px solid rgba(26,39,82,.12);box-shadow:0 4px 12px rgba(26,39,82,.10)}
+.pk-thumbs figcaption{margin-top:6px;font-size:12.5px;font-weight:700;color:var(--navy);line-height:1.2;white-space:nowrap}
+@media (max-width:420px){.pk-thumbs{gap:8px}.pk-thumbs figcaption{font-size:11.5px}}
