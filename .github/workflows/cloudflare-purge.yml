@@ -85,6 +85,9 @@ jobs:
       - name: Tell Bing and Yahoo which pages changed (IndexNow)
         # Bing's index also feeds Yahoo Taiwan, Copilot and ChatGPT search. Google does not use
         # IndexNow; it reads the sitemap. The key is the public file already in the site root.
+        # Runs even when the purge step failed: the Cloudflare secrets are not set yet, so the purge
+        # exits 1 on every push and this step was being skipped (audit 2026-10-08).
+        if: ${{ !cancelled() }}
         env:
           BEFORE: ${{ github.event.before }}
           GH_TOKEN: ${{ github.token }}
