@@ -706,3 +706,18 @@ address{font-style:normal}
 .assess-card .ac-btn:hover{background:#05B04B;border-color:#05B04B}
 p.ae-cta:has(+ .assess-card){display:none}   /* the card replaces the text line under the PDF box */
 @media (max-width:600px){.assess-card{padding:16px}.assess-card .ac-btn{width:100%;justify-content:center}}
+
+/* Lookup pages on phones (2026-10-11): the table first, then the PDF box and the chart picture.
+   Their table started 1,400-2,400 px down, under the download box and a picture of the same table.
+   CSS only, so the page text and its order stay as they are for search engines and lastmod.
+   Short tables only: where the table is long (numbers, 1200 words) the PDF box has to stay first. */
+@media (max-width:600px){
+  div:has(> figure.chart-fig img[src*="/charts/months-english-chart."]),
+  div:has(> figure.chart-fig img[src*="/charts/days-week-english-chart."]),
+  div:has(> figure.chart-fig img[src*="/charts/ordinal-numbers-chart."]),
+  div:has(> figure.chart-fig img[src*="/charts/english-alphabet-chart."]){display:flex;flex-direction:column}
+  :is(div:has(> figure.chart-fig img[src*="/charts/months-english-chart."]),
+      div:has(> figure.chart-fig img[src*="/charts/days-week-english-chart."]),
+      div:has(> figure.chart-fig img[src*="/charts/ordinal-numbers-chart."]),
+      div:has(> figure.chart-fig img[src*="/charts/english-alphabet-chart."])) > table{order:-1;margin-bottom:18px}
+}
