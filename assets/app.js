@@ -398,7 +398,7 @@
         try{ if(window.fbq) fbq('track', 'Lead', { content_name: 'exam_pack_' + tier, content_category: 'exam_pack', value: val, currency: 'TWD' }); }catch(err){}
       } else if(hasGtag){
         var pos = a.classList.contains('line-fab') ? 'fab' : a.closest('.site-header') ? 'header' : a.closest('.drawer') ? 'menu'
-                : a.closest('footer') ? 'footer' : a.closest('.region-cta') ? 'region_local' : a.closest('.cta-box') ? 'cta_box' : a.closest('.page-hero,.hero') ? 'hero'
+                : a.closest('footer') ? 'footer' : a.closest('.region-cta') ? 'region_local' : a.closest('.cta-box') ? 'cta_box' : a.closest('.assess-card') ? 'assess_card' : a.closest('.page-hero,.hero') ? 'hero'
                 : a.closest('.ae-cta') ? 'mid_page' : 'body';
         window.gtag('event', 'line_tap', { page_path: location.pathname, link_text: txt.slice(0, 40), cta_position: pos });
       }

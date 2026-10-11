@@ -1188,6 +1188,48 @@ def gept_dates(html, rel, today=None):
     return html[:at] + block + html[at:]
 
 
+# ---------------------------------------------------------------------------
+# Free level-assessment card (2026-10-11) on the 5 biggest Google landing pages. They bring a
+# third of the site's visits but convert 0.2-0.6% to a LINE tap (the home page: 18.6%); on them the
+# floating button took nearly every positioned tap and the text line under the PDF box got 1 in 28
+# days, so this is a real button where the reader has just got what they came for: after the main
+# table, or after the PDF box where the first table is the whole page (1200 words: a 63,000 px list)
+# or starts 7,600 px down (phonics). Wording rule: the trial CLASS is paid and 免費試聽 is never
+# written; the standalone level assessment IS free (Chris, 2026-06-29). Measured in GA4 as line_tap
+# with cta_position assess_card (app.js). Injected block: never moves lastmod.
+ASSESS_START, ASSESS_END = "<!-- AE:ASSESS -->", "<!-- /AE:ASSESS -->"
+ASSESS_PAGES = {   # slug: (anchor, hook)
+    "mid-autumn-festival-english": ("table", "祝福語學會了，孩子敢開口說嗎？"),
+    "kk-phonetic-chart": ("table", "看得懂 KK 音標，不代表唸得準。"),
+    "english-names-boys": ("table", "取好英文名字，下一步是讓孩子敢用英文介紹自己。"),
+    "phonics-rules-chart": ("pdf", "孩子看到沒學過的字，能自己拼讀出來嗎？"),
+    "moe-1200-words-guide": ("pdf", "1200 字，孩子真的會用的有幾個？"),
+}
+
+
+def assess_card(html, rel):
+    """A free level-assessment card with a LINE button, after the main table or the PDF box."""
+    html = re.sub(r"\n?" + re.escape(ASSESS_START) + r".*?" + re.escape(ASSESS_END) + r"\n?", "", html, flags=re.S)
+    spec = ASSESS_PAGES.get(os.path.dirname(rel))
+    if not spec:
+        return html
+    anchor, hook = spec
+    hero = re.search(r'<section class="page-hero.*?</section>', html, re.S)
+    start = hero.end() if hero else 0
+    if anchor == "table":     # after the first table and the scroll wrapper around it
+        m = re.compile(r"</table>(\s*</div>)?").search(html, start)
+    else:                     # after the PDF box (the AE:NEXT line, added later, goes between the two)
+        m = re.compile(r'<div class="magnet-box[^>]*>.*?</div>', re.S).search(html, start)
+    if not m:
+        return html
+    block = (f'\n{ASSESS_START}<aside class="assess-card" aria-label="免費程度評估"><div class="ac-txt">'
+             f'<span class="ac-tag">住板橋・雙北？</span><b>{hook}</b>'
+             '<span>教室在板橋中正路。加 LINE 約個時間，我會親自聽孩子說和讀，告訴你程度落在哪個階段、下一步先練什麼。免費，不推銷。</span></div>'
+             f'<a class="btn btn-primary ac-btn" href="{LINE}" target="_blank" rel="noopener"><span class="btn-line" data-line-icon></span>加 LINE 預約免費程度評估</a>'
+             f'</aside>{ASSESS_END}\n')
+    return html[:m.end()] + block + html[m.end():]
+
+
 def season_strip(html, rel, today=None):
     """Insert (or refresh, or remove) the seasonal strip after the page's main table."""
     html = re.sub(r"\n?" + re.escape(SEASON_START) + r".*?" + re.escape(SEASON_END) + r"\n?", "", html, flags=re.S)
@@ -1254,6 +1296,7 @@ def process_page(path, css_ver="", crit=""):
     html = ICON_ANY_RE.sub("", html)
     html = h1_unwrap(html)
     html = add_toc(anchor_headings(html))
+    html = assess_card(html, rel)
     html = season_strip(html, rel)
     html = gept_dates(html, rel)
     if "</head>" not in html or not re.search(r"<body[^>]*>", html):
@@ -1524,7 +1567,9 @@ _INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM
              # the date-driven seasonal strip (season_strip): navigation, changes with the calendar
              (SEASON_START, SEASON_END),
              # the GEPT dates box (gept_dates): a calendar that drops rows as they pass
-             (GEPTD_START, GEPTD_END)]
+             (GEPTD_START, GEPTD_END),
+             # the free level-assessment card (assess_card)
+             (ASSESS_START, ASSESS_END)]
 
 SIG_ATTRS = ("href", "src", "poster", "data-w", "data-src", "value")
 def content_signature(html):
