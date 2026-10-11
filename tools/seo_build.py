@@ -1078,6 +1078,53 @@ def add_toc(html):
     return html[:at] + block + html[at:]
 
 
+# ---------------------------------------------------------------------------
+# Seasonal strip (2026-10-11). The festival pages earn their traffic in the weeks before the
+# day (Mid-Autumn: 110k impressions in one month), but the busiest reference pages did not link
+# to them. In each window below, the pages in SEASON_PAGES carry one strip pointing at the
+# coming festival, placed after their main table. It is chosen by the BUILD date: rebuild at
+# least once inside each window (the windows are listed here, so the next switch is visible).
+# Outside every window the strip is removed. An injected block: it never moves lastmod.
+SEASON_START, SEASON_END = "<!-- AE:SEASON -->", "<!-- /AE:SEASON -->"
+SEASONS = [   # (first day, last day, page, icon, headline, line) — Taiwan dates, festival dates checked
+    ("2026-10-01", "2026-10-31", "halloween-english", "🎃", "萬聖節（10/31）快到了", "萬聖節英文怎麼說？祝福語、單字、課堂遊戲一次學會"),
+    ("2026-11-01", "2026-12-25", "christmas-english", "🎄", "聖誕節（12/25）快到了", "聖誕快樂英文祝福 20 句、50 個單字、卡片範例"),
+    ("2026-12-26", "2027-01-01", "new-year-english", "🎆", "新年（1/1）快到了", "新年快樂英文祝福語、單字與 email 範本"),
+    ("2027-01-02", "2027-02-06", "new-year-english", "🧧", "農曆新年（2/6）快到了", "新年快樂英文、紅包與年夜飯的英文說法"),
+    ("2027-02-07", "2027-02-14", "valentines-day-english", "💌", "情人節（2/14）快到了", "給朋友、家人的英文祝福與卡片寫法"),
+    ("2027-08-20", "2027-09-15", "mid-autumn-festival-english", "🥮", "中秋節（9/15）快到了", "中秋節快樂英文怎麼說？祝福語與單字"),
+    ("2027-10-01", "2027-10-31", "halloween-english", "🎃", "萬聖節（10/31）快到了", "萬聖節英文怎麼說？祝福語、單字、課堂遊戲一次學會"),
+]
+# The reference pages that land the most visitors (GA4 + GSC, 28 days to 2026-10-10)
+SEASON_PAGES = {"mid-autumn-festival-english", "kk-phonetic-chart", "phonics-rules-chart", "english-names-boys",
+                "english-names-girls", "moe-1200-words-guide", "months-english", "days-of-week-english",
+                "happy-birthday-english", "irregular-verbs-list", "english-tenses-chart", "cool-english-guide",
+                "english-alphabet-guide", "ordinal-numbers-english", "english-dates-guide", "english-numbers-guide",
+                "kk-phonetics-vs-phonics", "animals-english-vocabulary", "english-symbol-names", "thank-you-english"}
+
+
+def season_strip(html, rel, today=None):
+    """Insert (or refresh, or remove) the seasonal strip after the page's main table."""
+    html = re.sub(r"\n?" + re.escape(SEASON_START) + r".*?" + re.escape(SEASON_END) + r"\n?", "", html, flags=re.S)
+    slug = os.path.dirname(rel)
+    if slug not in SEASON_PAGES:
+        return html
+    day = (today or datetime.date.today()).isoformat()
+    cur = next((s for s in SEASONS if s[0] <= day <= s[1] and s[2] != slug), None)
+    if not cur:
+        return html
+    _, _, page, icon, head, line = cur
+    hero = re.search(r'<section class="page-hero.*?</section>', html, re.S)
+    start = hero.end() if hero else 0
+    tbl = html.find("<table", start)
+    end = html.find("</section>", tbl if tbl > 0 else html.find("<section", start) + 8)
+    if end < 0:
+        return html
+    block = (f'\n{SEASON_START}<div class="wrap"><a class="season-strip" href="/{page}/" data-season="{page}">'
+             f'<span class="ss-ico" aria-hidden="true">{icon}</span><span><b>{head}</b>{line} →</span></a></div>{SEASON_END}\n')
+    return html[:end] + block + html[end:]
+
+
 def process_page(path, css_ver="", crit=""):
     rel = os.path.relpath(path, SITE)
     html = open(path, encoding="utf-8").read()
@@ -1122,6 +1169,7 @@ def process_page(path, css_ver="", crit=""):
     html = ICON_ANY_RE.sub("", html)
     html = h1_unwrap(html)
     html = add_toc(anchor_headings(html))
+    html = season_strip(html, rel)
     if "</head>" not in html or not re.search(r"<body[^>]*>", html):
         return rel, "SKIP (no head/body)"
 
@@ -1386,7 +1434,9 @@ _INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM
              # the school-calendar page's weekly link check (result and time): a heartbeat
              ("<!-- AE:CHECK start -->", "<!-- AE:CHECK end -->"),
              # the in-page table of contents is built from the page's own H2s (add_toc): navigation
-             (TOC_START, TOC_END)]
+             (TOC_START, TOC_END),
+             # the date-driven seasonal strip (season_strip): navigation, changes with the calendar
+             (SEASON_START, SEASON_END)]
 
 SIG_ATTRS = ("href", "src", "poster", "data-w", "data-src", "value")
 def content_signature(html):
