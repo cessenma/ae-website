@@ -1198,6 +1198,17 @@ def gept_dates(html, rel, today=None):
 # written; the standalone level assessment IS free (Chris, 2026-06-29). Measured in GA4 as line_tap
 # with cta_position assess_card (app.js). Injected block: never moves lastmod.
 ASSESS_START, ASSESS_END = "<!-- AE:ASSESS -->", "<!-- /AE:ASSESS -->"
+# the founder's AI guide, mentioned quietly at the bottom of every footer: learning English
+# also makes AI tools easier to use (typing needs no character picking; most AI is trained on English)
+AINOTE_START, AINOTE_END = "<!-- AE:AINOTE -->", "<!-- /AE:AINOTE -->"
+AINOTE_URL = "https://essenindustries.com/tw/"
+def ainote(html):
+    html = re.sub(re.escape(AINOTE_START) + r".*?" + re.escape(AINOTE_END) + r"\n*", "", html, flags=re.S)
+    i = html.find('<div class="foot-bottom">')
+    if i == -1:
+        return html
+    block = (f'{AINOTE_START}<p class="foot-ai">英文好，用 AI 也更順手 · <a href="{AINOTE_URL}">essenindustries.com</a></p>{AINOTE_END}\n')
+    return html[:i] + block + html[i:]
 ASSESS_PAGES = {   # slug: (anchor, hook)
     "mid-autumn-festival-english": ("table", "祝福語學會了，孩子敢開口說嗎？"),
     "kk-phonetic-chart": ("table", "看得懂 KK 音標，不代表唸得準。"),
@@ -1522,6 +1533,7 @@ def process_page(path, css_ver="", crit=""):
                 html = html[:at] + tail + html[at:]
 
     if rel not in SELF_CONTAINED:
+        html = ainote(html)
         html = ink_pass(html)
 
     # Only write when this build actually changed the file. Writing unconditionally
@@ -1569,7 +1581,9 @@ _INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM
              # the GEPT dates box (gept_dates): a calendar that drops rows as they pass
              (GEPTD_START, GEPTD_END),
              # the free level-assessment card (assess_card)
-             (ASSESS_START, ASSESS_END)]
+             (ASSESS_START, ASSESS_END),
+             # the founder's AI-guide line in the footer (ainote): the same on every page
+             (AINOTE_START, AINOTE_END)]
 
 SIG_ATTRS = ("href", "src", "poster", "data-w", "data-src", "value")
 def content_signature(html):

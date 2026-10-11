@@ -436,6 +436,9 @@ footer.site-footer{background:var(--navy);color:#fff;padding:60px 0 32px;positio
 .foot-col a:hover{color:#fff}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:rgba(255,255,255,.62)}
 .foot-pref{margin-top:18px;min-height:40px}
+.foot-ai{font-size:12.5px;line-height:1.6;color:rgba(255,255,255,.62);margin:0 0 14px}
+.foot-ai a{color:rgba(255,255,255,.85);text-decoration:underline;text-underline-offset:2px}
+.foot-ai a:hover{color:#fff}
 /* phones: two even columns of links, each link a full-height touch target, and the phone
    number on a line of its own (the ☎ sign used to be left behind on the address line) */
 @media(max-width:600px){
