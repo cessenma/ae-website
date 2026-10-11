@@ -1103,6 +1103,91 @@ SEASON_PAGES = {"mid-autumn-festival-english", "kk-phonetic-chart", "phonics-rul
                 "kk-phonetics-vs-phonics", "animals-english-vocabulary", "english-symbol-names", "thank-you-english"}
 
 
+# ---------------------------------------------------------------------------
+# GEPT dates box (2026-10-11). GEPT is the site's biggest topic and its searches spike around
+# results days and registration windows, but no page said when they are. Sources: 2026 dates from
+# LTTC's 2026 網路報名須知 (verified item by item 2026-09-30, ~/Downloads/AE-gept-research/
+# 01-official-truth-set.md §5.2 and 08-gept-kids.md); 2027 first sittings from LTTC's
+# GEPTschedule.pdf (2027 sheet, modified 2026-09-10). Rows past their last day are dropped at
+# build time and hidden by the inline script between builds. Injected block: never moves lastmod.
+GEPTD_START, GEPTD_END = "<!-- AE:GEPTDATES -->", "<!-- /AE:GEPTDATES -->"
+GEPT_DATES = [   # (last day shown, levels, kind, date label, text) — kind reg = a registration window
+    ("2026-10-21", "i hi", "notice", "10/21（三）", "中級、中高級 10/31 場考試通知寄出"),
+    ("2026-10-28", "e", "results", "10/28（三）", "初級說寫（9/12–13 場）成績公布"),
+    ("2026-10-31", "i hi", "test", "10/31（六）", "中級聽讀、中高級聽讀＋一日考"),
+    ("2026-11-07", "e", "test", "11/7（六）", "初級聽讀測驗（考試通知 10/28 寄出）"),
+    ("2026-11-15", "i", "test", "11/14–15（六、日）", "中級說寫測驗"),
+    ("2026-11-16", "hi", "results", "11/16（一）", "中高級聽讀（10/31 場）成績公布"),
+    ("2026-11-18", "e i", "results", "11/18（三）", "初級聽讀（11/7 場）、中級聽讀（10/31 場）成績公布"),
+    ("2026-11-22", "kids", "test", "11/22（日）", "小學英檢（臺北、桃園、臺中、臺南、高雄；報名已截止）"),
+    ("2026-12-18", "hi", "results", "12/18（五）", "中高級一日考（10/31 場）成績公布"),
+    ("2026-12-19", "hi", "test", "12/19（六）", "中高級說寫測驗"),
+    ("2026-12-19", "kids", "test", "12/19（六）", "小學英檢花蓮場"),
+    ("2026-12-24", "i", "results", "12/24（四）", "中級說寫（11/14–15 場）成績公布"),
+    ("2026-12-31", "kids", "results", "12/31（四）", "小學英檢（11/22 場）成績公布"),
+    ("2027-01-09", "e", "test", "2027/1/9（六）", "初級聽讀測驗"),
+    ("2027-01-15", "kids", "results", "2027/1/15（五）", "小學英檢花蓮場（12/19）成績公布"),
+    ("2027-01-30", "i", "test", "2027/1/30（六）", "中級聽讀＋一日考"),
+    ("2027-02-03", "hi", "results", "2027/2/3（三）", "中高級說寫（12/19 場）成績公布"),
+    ("2026-10-27", "kids", "reg", "報名至 10/27（二）", "小學英檢 12/19 花蓮場"),
+    ("2026-11-16", "hi", "reg", "10/19–11/16", "中高級說寫（12/19 考）"),
+    ("2026-11-20", "e", "reg", "報名至 11/20（五）", "2027/1/9 初級聽讀"),
+    ("2026-11-23", "i", "reg", "10/20–11/23", "2027/1/30 中級聽讀＋一日考"),
+]
+GEPT_LEVEL = [("gept-kids", "kids"), ("gept-elementary", "e"), ("gept-intermediate", "i"), ("gept-high-intermediate", "hi")]
+GEPT_HUBS = {"gept", "gept-practice-tests"}
+GEPT_DATE_PAGES = GEPT_HUBS | {"gept-results-lookup", "gept-kids-guide", "gept-kids-practice", "gept-elementary-guide",
+    "gept-elementary-practice", "gept-elementary-speaking-writing", "gept-elementary-vocabulary",
+    "gept-intermediate-guide", "gept-intermediate-practice", "gept-high-intermediate-practice"}
+GEPT_SRC = "https://www.gept.org.tw/GEPT1/gepttestdate.aspx"
+# removes rows (and then an emptied column) whose last day has passed in Taiwan time
+GEPT_JS = ('<script>(function(){var n=new Date();document.querySelectorAll(".gept-dates [data-gd-end]").forEach(function(r){'
+           'if(new Date(r.getAttribute("data-gd-end")+"T23:59:59+08:00")<n)r.remove();});'
+           'document.querySelectorAll(".gept-dates ul").forEach(function(u){if(!u.children.length)u.parentNode.remove();});})();</script>')
+
+
+def gept_dates(html, rel, today=None):
+    """The next GEPT tests, results days and registration windows, under the contents strip of the GEPT hubs."""
+    html = re.sub(r"\n?" + re.escape(GEPTD_START) + r".*?" + re.escape(GEPTD_END) + r"\n?", "", html, flags=re.S)
+    slug = os.path.dirname(rel)
+    if slug not in GEPT_DATE_PAGES:
+        return html
+    lv = next((v for p, v in GEPT_LEVEL if slug.startswith(p)), None)
+    day = (today or datetime.date.today()).isoformat()
+    rows = [r for r in GEPT_DATES if r[0] >= day and (lv is None or lv in r[1].split())]
+    if slug == "gept-results-lookup":
+        cols = [("", [r for r in rows if r[2] == "results"])]
+    else:
+        reg = sorted((r for r in rows if r[2] == "reg"), key=lambda r: r[0])
+        ev = [r for r in rows if r[2] != "reg" and (lv or r[2] != "notice")]
+        cols = [("考試・成績", sorted(ev, key=lambda r: r[0])), ("報名時間", reg)]
+    cols = [(h, rs) for h, rs in cols if rs]
+    if not cols:
+        return html
+    body = "".join(
+        "<div>" + (f'<div class="gd-sub">{h}</div>' if h else "") + "<ul>"
+        + "".join(f'<li data-gd-end="{r[0]}"><b>{r[3]}</b>{r[4]}</li>' for r in rs) + "</ul></div>"
+        for h, rs in cols)
+    more = "" if slug == "gept-results-lookup" else ' · <a href="/gept-results-lookup/">成績怎麼查</a>'
+    title = ("全民英檢成績公布日" if slug == "gept-results-lookup" else
+             "小學英檢近期日程" if lv == "kids" else "全民英檢近期日程")
+    # every upcoming row is rendered; the stylesheet shows the first 4 (6 on the results page), so
+    # when the script drops a passed row the next one slides up, even weeks after the last build
+    block = (f'\n{GEPTD_START}<aside class="gept-dates{" gd-res" if slug == "gept-results-lookup" else ""}" aria-label="{title}"><div class="gd-h">📅 {title}</div>'
+             f'<div class="gd-cols">{body}</div><p class="gd-src">日期以 <a href="{GEPT_SRC}" target="_blank" rel="noopener">LTTC 官方測驗日程</a>為準{more}</p>'
+             f'{GEPT_JS}</aside>{GEPTD_END}\n')
+    at = html.find(TOC_END)
+    if at >= 0:
+        at += len(TOC_END)
+    else:
+        hero = re.search(r'<section class="page-hero.*?</section>', html, re.S)
+        wrap = re.search(r'<div class="wrap">', html[hero.end():]) if hero else None
+        if not wrap:
+            return html
+        at = hero.end() + wrap.end()
+    return html[:at] + block + html[at:]
+
+
 def season_strip(html, rel, today=None):
     """Insert (or refresh, or remove) the seasonal strip after the page's main table."""
     html = re.sub(r"\n?" + re.escape(SEASON_START) + r".*?" + re.escape(SEASON_END) + r"\n?", "", html, flags=re.S)
@@ -1170,6 +1255,7 @@ def process_page(path, css_ver="", crit=""):
     html = h1_unwrap(html)
     html = add_toc(anchor_headings(html))
     html = season_strip(html, rel)
+    html = gept_dates(html, rel)
     if "</head>" not in html or not re.search(r"<body[^>]*>", html):
         return rel, "SKIP (no head/body)"
 
@@ -1436,7 +1522,9 @@ _INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM
              # the in-page table of contents is built from the page's own H2s (add_toc): navigation
              (TOC_START, TOC_END),
              # the date-driven seasonal strip (season_strip): navigation, changes with the calendar
-             (SEASON_START, SEASON_END)]
+             (SEASON_START, SEASON_END),
+             # the GEPT dates box (gept_dates): a calendar that drops rows as they pass
+             (GEPTD_START, GEPTD_END)]
 
 SIG_ATTRS = ("href", "src", "poster", "data-w", "data-src", "value")
 def content_signature(html):

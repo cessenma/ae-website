@@ -676,3 +676,23 @@ address{font-style:normal}
 .season-strip b{display:block;font-size:13px;font-weight:800;color:#B4400B;letter-spacing:.3px;margin-bottom:2px}
 .season-strip .ss-ico{font-size:30px;line-height:1;flex:none}
 .season-strip:hover{border-color:#FFB45E;background:#FFF0DB}
+
+/* GEPT dates box under the contents strip of the GEPT hubs (seo_build.gept_dates) */
+.gept-dates{max-width:860px;margin:0 auto 22px;padding:14px 18px 10px;border-radius:16px;background:#EEF5FF;border:2px solid #C9DDF7;color:var(--navy);font-size:14.5px;line-height:1.5}
+.gept-dates .gd-h{font-weight:800;font-size:15.5px;margin-bottom:6px}
+.gept-dates .gd-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:4px 22px}
+.gept-dates .gd-sub{font-size:12.5px;font-weight:800;color:#2F5FA8;letter-spacing:.3px;margin:4px 0 2px}
+.gept-dates ul{list-style:none;margin:0;padding:0}
+.gept-dates li{display:grid;grid-template-columns:minmax(92px,auto) 1fr;gap:10px;padding:5px 0;border-top:1px dashed #C9DDF7}
+.gept-dates li:first-child{border-top:0}
+.gept-dates li b{color:#2F5FA8;white-space:nowrap;font-weight:800}
+.gept-dates .gd-src{margin:6px 0 0;font-size:12.5px;color:#5a6577}
+.gept-dates .gd-src a{color:#2F5FA8}
+@media (max-width:600px){
+  .gept-dates{padding:12px 14px 8px;font-size:14px}
+  .gept-dates li{display:block;padding:4px 0}
+  .gept-dates li b{margin-right:8px}
+}
+.gept-dates li:nth-child(n+5),.gept-dates.gd-res li:nth-child(n+7){display:none}
+.gept-dates.gd-res li:nth-child(n+5):nth-child(-n+6){display:grid}
+@media (max-width:600px){.gept-dates.gd-res li:nth-child(n+5):nth-child(-n+6){display:block}}
