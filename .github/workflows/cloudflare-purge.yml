@@ -12,7 +12,15 @@ name: Purge Cloudflare after deploy
 on:
   push:
     branches: [main]
+  # A push made by another workflow with GITHUB_TOKEN never triggers `on: push`, so the weekly
+  # school-calendar commit was deployed by Hostinger but never purged: the edge kept the old page.
+  workflow_run:
+    workflows: ["Weekly school-calendar check"]
+    types: [completed]
   workflow_dispatch:        # lets you re-run a purge by hand from the Actions tab
+
+permissions:
+  contents: read            # it only reads the repo; the Cloudflare token is a secret, not GITHUB_TOKEN
 
 concurrency:
   group: cf-purge
@@ -20,6 +28,8 @@ concurrency:
 
 jobs:
   purge:
+    # after the calendar job only when it succeeded (it commits nothing when it fails)
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

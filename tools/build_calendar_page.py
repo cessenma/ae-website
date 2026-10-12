@@ -10,8 +10,7 @@ than no calendar at all.
   · a school that publishes its calendar as an image is LINKED, never OCR'd
   · a school that has not yet published next semester shows "尚未公布", not stale dates
 """
-import json, os, sys
-import sys
+import html, json, os, sys
 from datetime import datetime, timezone, timedelta
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -24,27 +23,37 @@ KIND_COLOR = {"段考": "#d97a5c", "定期評量": "#d97a5c", "開學": "#06C755
               "休業式": "#1CB0F6", "寒暑假": "#1CB0F6", "校慶": "#FFC828", "親師": "#1391cc"}
 
 
+# Text taken from a school's website or PDF is untrusted: escape it before it goes into the page,
+# which the weekly Action commits and pushes without review.
+E = lambda v: html.escape(str(v), quote=True)
+
+# The page promises it does not transcribe 段考 dates (a wrong date is worse than none). The PDF
+# parse in school_calendars.py may still find events; they are shown only when Chris turns this on
+# by hand for a run he has checked: AE_CALENDAR_SHOW_DATES=1 python3 build_calendar_page.py
+SHOW_DATES = os.environ.get("AE_CALENDAR_SHOW_DATES") == "1"
+
+
 def rows(events):
     out = []
     for e in events:
         c = KIND_COLOR.get(e["kind"], "#94a3b8")
-        d = f"{e['month']}/{e['day']}"
+        d = f"{E(e['month'])}/{E(e['day'])}"
         out.append(
             f'<tr><td style="white-space:nowrap"><strong>{d}</strong></td>'
             f'<td><span style="display:inline-block;padding:1px 9px;border-radius:99px;'
-            f'background:{c};color:#fff;font-size:12px">{e["kind"]}</span></td>'
-            f'<td>{e["label"]}</td></tr>')
+            f'background:{c};color:#fff;font-size:12px">{E(e["kind"])}</span></td>'
+            f'<td>{E(e["label"])}</td></tr>')
     return "".join(out)
 
 
 def school_block(s):
-    name, full = s["name"], s.get("full", s["name"])
-    walk = s.get("walk", "")
-    src = s.get("calendar_page") or s["home"]
-    status = "✅ 連線正常" if s.get("link_ok") else f"⚠️ 連線異常（HTTP {s.get('http')}）"
-    note = f'<p style="font-size:13px;color:#94a3b8">{s["note"]}</p>' if s.get("note") else ""
+    name, full = E(s["name"]), E(s.get("full", s["name"]))
+    walk = E(s.get("walk", ""))
+    src = E(s.get("calendar_page") or s["home"])
+    status = "✅ 連線正常" if s.get("link_ok") else f"⚠️ 連線異常（HTTP {E(s.get('http'))}）"
+    note = f'<p style="font-size:13px;color:#94a3b8">{E(s["note"])}</p>' if s.get("note") else ""
     body = ""
-    if s.get("events"):
+    if s.get("events") and SHOW_DATES:
         body = ('<table class="compare"><thead><tr><th style="width:16%">日期</th>'
                 '<th style="width:18%">類別</th><th>項目</th></tr></thead>'
                 f'<tbody>{rows(s["events"])}</tbody></table>')
@@ -65,7 +74,8 @@ def main():
     checked = d.get("checked_at", "")
     blocks = "\n".join(school_block(s) for s in d["schools"])
     n_exam = sum(1 for s in d["schools"] for e in s.get("events", []) if e["kind"] == "段考")
-    names = "、".join(s["name"] for s in d["schools"])
+    names = "、".join(E(s["name"]) for s in d["schools"])
+    checked = E(checked)
 
     html = f"""<!doctype html>
 <html lang="zh-Hant">
@@ -142,8 +152,11 @@ def main():
         import seo_build
         rel, msg = seo_build.process_page(OUT, seo_build.css_fingerprint(), seo_build.critical_css())
         print(f"  chrome: {msg}")
-    except Exception as e:   # never let a missing dependency stop the weekly check itself
-        print(f"  ::warning::chrome not applied ({type(e).__name__}: {e}); run tools/seo_build.py")
+    except Exception as e:
+        # Fail the job: the bare template is already on disk, and the next workflow step would commit
+        # and push a page with no analytics, header or navigation.
+        print(f"  ::error::chrome not applied ({type(e).__name__}: {e}); the page was NOT committed — run tools/seo_build.py")
+        return 1
     print(f"  {len(d['schools'])} schools · {n_exam} 段考 entries · checked {checked}")
     return 0
 

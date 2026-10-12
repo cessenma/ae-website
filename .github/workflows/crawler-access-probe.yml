@@ -15,6 +15,8 @@ name: AI crawler access probe (non-Taiwan IP)
 #    The authoritative check is the origin access log (Hostinger hPanel) and the
 #    Cloudflare Security Events log. This job is the cheap monthly tripwire.
 
+permissions: {}             # makes outside requests only; needs nothing from the repo token
+
 on:
   schedule:
     - cron: '17 2 1 * *'      # 1st of each month, 02:17 UTC (10:17 Taipei) - Chris is not teaching
