@@ -24,6 +24,10 @@ RewriteRule ^ https://americanenglish.com.tw%{REQUEST_URI} [L,R=301]
 # tools/, data/, scripts/ and docs/ hold the build scripts, their ledgers and notes. They ride along in the
 # repo so they deploy with it, but they are not pages: answer 404, not the source.
 RewriteRule ^(tools|data|scripts|docs)(/|$) - [R=404,L]
+# The old pack delivery page (/pack-9rvvw6p3nnmls4/) is unused since 2026-09-10: card buyers get their files
+# from Lemon Squeezy and LINE buyers from Chris directly. Its address is visible in the public GitHub repo, so
+# nothing under it is served — if pack zips were ever uploaded there, they still could not be downloaded.
+RewriteRule ^pack-9rvvw6p3nnmls4(/|$) - [R=404,L]
 # Notes kept in the repo (DEPLOY.md and the like) are not pages either.
 RewriteRule \.md$ - [R=404,L]
 
