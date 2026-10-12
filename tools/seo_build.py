@@ -883,6 +883,7 @@ H1_WBR = {
              ("&nbsp;頁練習全部免費", "&nbsp;頁練習<wbr>全部免費")],                 # (the page keeps the &nbsp; once written)
     "jobs-english": [("83 種工作的英文說法與", "83&nbsp;種工作的<wbr>英文說法<wbr>與")],
     "linguaskill-guide": [("成績對照與報名指南", "成績對照與<wbr>報名指南")],
+    "how-to-choose-banqiao-english-cram-school": [("美籍教師直說<em>", "美籍教師直說<wbr><em>")],   # 「直說你｜不敢問」 split
 }
 for _n in range(1, 8):                                                     # 「閱讀與英｜語運用」 split a word
     H1_WBR[f"fce-ruoe-practice-part{_n}"] = [("FCE 閱讀與英語運用 Part", "FCE 閱讀與<wbr>英語運用 Part")]
