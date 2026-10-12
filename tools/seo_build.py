@@ -886,7 +886,7 @@ H1_WBR = {
     "cool-english-guide": [("教育部免費英語平台怎麼用", "教育部免費<wbr>英語平台<wbr>怎麼用")],
     "phonics-rules-chart": [("</em>規則總表＋口訣表", "</em>規則<wbr>總表＋口訣表"), ("從字母音到長母音的完整整理", "從字母音到長母音的<wbr>完整整理")],
     "irregular-verbs-list": [("</em>完整列表", "</em><wbr>完整列表"), ("分類記憶法與常錯排行", "分類記憶法與<wbr>常錯排行")],
-    "moe-2000-words-guide": [("課綱字表用法與擴充策略", "課綱字表用法<wbr>與擴充策略")],
+    "moe-2000-words-guide": [("完整字表線上查・下載", "完整字表<wbr>線上查・下載")],   # 「完整字表線｜上查」 split
     "english-tenses-chart": [("12 時態用法與最常錯的地方", "12 時態用法與<wbr>最常錯的地方")],
     "graded-readers-guide": [("主要系列比較與使用方法", "主要系列比較<wbr>與使用方法")],
     "cambridge-exam-registration-taiwan": [("考場、流程與費用須知（2026）", "考場、流程與費用<wbr>須知（2026）")],

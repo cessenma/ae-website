@@ -127,6 +127,10 @@
 "date": "2026-10-02",
 "hash": "b690ae20eedd6bdd9779a75e9c878f96"
 },
+"assets/downloads/ae-moe-2000-complete-a4.pdf": {
+"date": "2026-10-13",
+"hash": "d47749a28f818ee6e09ac2de4a491915"
+},
 "assets/downloads/ae-months-english-a4.pdf": {
 "date": "2026-09-15",
 "hash": "84bc3debab718447ded4582f743ee790"
@@ -1088,8 +1092,8 @@
 "hash": "2acdb343db8a3844c92958fc2548500a"
 },
 "moe-2000-words-guide": {
-"date": "2026-08-13",
-"hash": "0b4d90dc8adac6cec2d40cd475281acb"
+"date": "2026-10-13",
+"hash": "780df638bdef4c867e25fc78fa9bb6e4"
 },
 "months-english": {
 "date": "2026-10-08",
