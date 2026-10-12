@@ -305,7 +305,7 @@
 const PRX = { part:2, sets:[{"setId": "r1", "items": [{"type": "gaptext", "n": 1, "q": "第 (1) 格", "accept": ["Thursday", "thursday"], "why": "✓ 男生說 'It's on Thursday this week, not Wednesday.'——Wednesday 是被否定掉的陷阱字，答案是 Thursday。"}, {"type": "gaptext", "n": 2, "q": "第 (2) 格", "accept": ["Park", "park"], "why": "✓ 老師的名字有拼出來：'It's Mr Park. P-A-R-K.' 官方題目一定會把人名拼出來，聽到拼字就是答案。"}, {"type": "gaptext", "n": 3, "q": "第 (3) 格", "accept": ["4 o'clock", "four o'clock", "4.00", "4:00", "4", "four"], "why": "✓ 'At four o'clock.' 寫 4 或 four o'clock 都算對。"}, {"type": "gaptext", "n": 4, "q": "第 (4) 格", "accept": ["basketball", "Basketball"], "why": "✓ 'Last week we played football, but this week it's basketball.'——football 是上週的，是時間陷阱，答案是 basketball。"}, {"type": "gaptext", "n": 5, "q": "第 (5) 格", "accept": ["towel", "Towel"], "why": "✓ 'bring a towel'。後面雖然也提到 water，但題目卷上寫的是 'Bring: a ___'，a towel 才符合。"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

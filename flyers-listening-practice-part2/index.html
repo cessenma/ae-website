@@ -305,7 +305,7 @@
 const PRX = { part:2, sets:[{"setId": "r1", "items": [{"type": "gaptext", "n": 1, "q": "第 (1) 格", "accept": ["Tuesday", "Tuesdays", "tuesday", "tuesdays"], "why": "✓ Tuesday(s)。'We used to meet on Fridays, but this year it's Tuesdays.'——Fridays 是被否定掉的時間陷阱。"}, {"type": "gaptext", "n": 2, "q": "第 (2) 格", "accept": ["Bridge", "bridge"], "why": "✓ Bridge。錄音有拼出來：'B-R-I-D-G-E'。"}, {"type": "gaptext", "n": 3, "q": "第 (3) 格", "accept": ["19", "nineteen", "Nineteen"], "why": "✓ 19。'Nineteen at the moment. We had fifteen last year.'——fifteen 是去年的，是時間陷阱。"}, {"type": "gaptext", "n": 4, "q": "第 (4) 格", "accept": ["Blackwood", "blackwood", "Blackwood Forest"], "why": "✓ Blackwood (Forest)。有拼出來：'B-L-A-C-K-W-O-O-D'。"}, {"type": "gaptext", "n": 5, "q": "第 (5) 格", "accept": ["torch", "Torch"], "why": "✓ torch。'Bring a torch.' 後面雖然也說 a warm coat，但題目卷寫的是 'Must bring: a ___'，而 torch 是先講的、被強調有原因的那一個。"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

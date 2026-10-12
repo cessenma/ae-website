@@ -282,7 +282,7 @@
 const PRX = { part:6, sets:[{"setId": "A", "items": [{"type": "gaptext", "n": 1, "q": "第 (1) 格", "accept": ["to"], "why": "✓ to。go/went TO a place 是固定用法。"}, {"type": "gaptext", "n": 2, "q": "第 (2) 格", "accept": ["this"], "why": "✓ this。'for the first time this year'——今年第一次。"}, {"type": "gaptext", "n": 3, "q": "第 (3) 格", "accept": ["than"], "why": "✓ than。前面有比較級 colder，一定接 than。"}, {"type": "gaptext", "n": 4, "q": "第 (4) 格", "accept": ["since"], "why": "✓ since。現在完成式 + 一個起點（he was a boy）用 since，不用 for。"}, {"type": "gaptext", "n": 5, "q": "第 (5) 格", "accept": ["if"], "why": "✓ if。'we are going to the island ___ the weather is good'——條件。"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

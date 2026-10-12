@@ -236,7 +236,7 @@ const PRX = {
     f.querySelectorAll('.prx-opt').forEach(o=>o.classList.toggle('sel',o.querySelector('input').checked));
   });
 
-  const norm=s=>s.toLowerCase().trim().replace(/\s+/g,' ');
+  const norm=s=>s.toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ');
   document.getElementById('btnCheck').addEventListener('click',()=>{
     let got=0,total=0;
     PRX.items.forEach(it=>{

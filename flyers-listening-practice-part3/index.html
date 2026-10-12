@@ -302,7 +302,7 @@
 const PRX = { part:3, sets:[{"setId": "r1", "items": [{"n": 1, "q": "the camera → 哪一張圖？", "opts": ["A", "B", "C", "D", "E", "F", "G", "H"], "a": 5, "why": "✓ F 商店。'he bought it in a shop'。陷阱是機場——他先說 airport，馬上自己更正 'no, sorry'。"}, {"n": 2, "q": "the books → 哪一張圖？", "opts": ["A", "B", "C", "D", "E", "F", "G", "H"], "a": 0, "why": "✓ A 圖書館。'Those came from the library.'"}, {"n": 3, "q": "the plant → 哪一張圖？", "opts": ["A", "B", "C", "D", "E", "F", "G", "H"], "a": 3, "why": "✓ D 花園。'Dad grew it in our garden.'"}, {"n": 4, "q": "the ring → 哪一張圖？", "opts": ["A", "B", "C", "D", "E", "F", "G", "H"], "a": 6, "why": "✓ G 海灘。'I found that on the beach.'"}, {"n": 5, "q": "the football → 哪一張圖？", "opts": ["A", "B", "C", "D", "E", "F", "G", "H"], "a": 1, "why": "✓ B 網路。'She bought it on the internet in the end.' 陷阱是市場——'Mum wanted to get it at the market, but they'd sold out.'"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

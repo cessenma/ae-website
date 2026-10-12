@@ -279,7 +279,7 @@
 const PRX = { part:2, sets:[{"setId": "A", "items": [{"n": 1, "q": "Ben: What do you do there?　→　Aunt Jane 會回答哪一句？", "opts": ["A", "B", "C", "D", "E", "F", "G", "H"], "a": 2, "why": "✓ C。問的是「做什麼工作」，回答是工作內容。"}, {"n": 2, "q": "Ben: Do you have to work at weekends?　→　Aunt Jane 會回答哪一句？", "opts": ["A", "B", "C", "D", "E", "F", "G", "H"], "a": 0, "why": "✓ A。問週末，回答給的是週末的頻率。"}, {"n": 3, "q": "Ben: How long have you worked at the museum?　→　Aunt Jane 會回答哪一句？", "opts": ["A", "B", "C", "D", "E", "F", "G", "H"], "a": 6, "why": "✓ G。'How long...?' 要一段時間，Since... 是時間的起點。"}, {"n": 4, "q": "Ben: What's the best thing about your job?　→　Aunt Jane 會回答哪一句？", "opts": ["A", "B", "C", "D", "E", "F", "G", "H"], "a": 1, "why": "✓ B。問最喜歡的部分，回答是一件事。"}, {"n": 5, "q": "Ben: Can I come and see you at work one day?　→　Aunt Jane 會回答哪一句？", "opts": ["A", "B", "C", "D", "E", "F", "G", "H"], "a": 5, "why": "✓ F。這是請求，回答要答應或拒絕。"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

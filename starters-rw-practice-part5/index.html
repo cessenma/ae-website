@@ -281,7 +281,7 @@
 const PRX = { part:5, sets:[{"setId": "A", "items": [{"type": "gaptext", "n": 1, "q": "What is the boy eating?　an ___", "accept": ["apple"], "why": "✓ apple。男孩手上拿著蘋果在吃。"}, {"type": "gaptext", "n": 2, "q": "What is on the table?　a big ___", "accept": ["cake"], "why": "✓ cake。桌上有一個大蛋糕。"}, {"type": "gaptext", "n": 3, "q": "Where is the cat?　under the ___", "accept": ["table"], "why": "✓ table。貓在桌子下面。"}, {"type": "gaptext", "n": 4, "q": "What colour is the door?　___", "accept": ["blue"], "why": "✓ blue。門是藍色的。（這題要看顏色，所以這一份請印彩色。）"}, {"type": "gaptext", "n": 5, "q": "How many balls are there?　___", "accept": ["three", "3"], "why": "✓ three（或 3）。地上有三顆球。"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

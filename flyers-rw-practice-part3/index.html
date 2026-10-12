@@ -286,7 +286,7 @@
 const PRX = { part:3, sets:[{"setId": "A", "items": [{"type": "gaptext", "n": 1, "q": "第 (1) 格", "accept": ["excited"], "why": "✓ excited。'was very ___, because she had never seen one before'——was very 後面要形容詞，而且原因是第一次看到。"}, {"type": "gaptext", "n": 2, "q": "第 (2) 格", "accept": ["museum"], "why": "✓ museum。'a small ___ full of very old and beautiful things'——放舊東西展示的地方。"}, {"type": "gaptext", "n": 3, "q": "第 (3) 格", "accept": ["quietly"], "why": "✓ quietly。'said ___, so that no one else would hear'——修飾 said 要副詞，而且不想被聽到。陷阱是 shouted，那是動詞而且意思相反。"}, {"type": "gaptext", "n": 4, "q": "第 (4) 格", "accept": ["chair"], "why": "✓ chair。'climbed on a ___ to see inside a glass box'——可以站上去的東西。"}, {"type": "gaptext", "n": 5, "q": "第 (5) 格", "accept": ["fell"], "why": "✓ fell。'It moved, and Holly ___ on the floor'——需要過去式動詞，而且椅子動了會跌倒。"}, {"type": "mc", "n": 6, "q": "Now choose the best name for the story. Tick one box.", "opts": ["The man's map", "Holly's day at the castle", "Michael's old castle"], "a": 1, "why": ["✗ 地圖只出現在最後一句，對故事沒有影響——這是最常見的陷阱。", "✓ 整個故事都在講 Holly 在城堡裡發生的事。", "✗ 城堡不是 Michael 的，故事也不是在講城堡本身。"]}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

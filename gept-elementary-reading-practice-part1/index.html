@@ -260,8 +260,13 @@ const PRX = {"items":{"s0q1":{"a":3},"s0q2":{"a":0},"s0q3":{"a":1},"s0q4":{"a":3
         const inp=b.querySelector('input'); let v=inp.value;
         if(it.end && !norm(v).endsWith(norm(it.end))) v=v+' '+it.end;
         const ok=it.accept.map(norm).includes(norm(v));
-        inp.classList.toggle('right',ok); inp.classList.toggle('wrong',!ok);
-        mark.textContent=ok?'✓':'✗'; mark.className='prx-mark '+(ok?'ok':'no'); if(ok)got+=m;
+        // GEPT scores capitals and end punctuation: right words without them = 1 of 2 marks.
+        let pts=ok?m:0, half=false;
+        if(ok&&m>=2){const t=v.trim(),ref=it.accept[0].trim();
+          const capOk=!/^[A-Z]/.test(ref)||/^[A-Z]/.test(t), punOk=!/[.?!]$/.test(ref)||/[.?!]["”’]?$/.test(t);
+          if(!(capOk&&punOk)){pts=m-1;half=true;}}
+        inp.classList.toggle('right',ok&&!half); inp.classList.toggle('wrong',!ok||half);
+        mark.textContent=ok?(half?'△ 句首大寫／句尾標點':'✓'):'✗'; mark.className='prx-mark '+(ok&&!half?'ok':'no'); got+=pts;
       }else{
         const sel=b.querySelector('input:checked');
         b.querySelectorAll('.prx-opt').forEach((o,i)=>{o.classList.remove('right','wrong');
@@ -279,7 +284,7 @@ const PRX = {"items":{"s0q1":{"a":3},"s0q2":{"a":0},"s0q3":{"a":1},"s0q4":{"a":3
       est.innerHTML='<b>換算成寫作成績：</b>第一部分拿到 '+got+' / 30 分，等於寫作總分 100 分裡的 <b>'+p1.toFixed(0)+' 分</b>（這部分佔 50 分）。'+
         (need>5?'即使第二部分段落寫作拿到滿級分，也還到不了 70 分的通過標準——先把單句寫作練熟。'
                :'要達到 70 分的通過標準，第二部分「段落寫作」至少要拿到 <b>'+need+' 級分</b>（滿分 5 級分）。')+
-        '<br><small>公式出自 LTTC 初級寫作分數說明：｛(第一部分得分 ÷ 30) ＋ (第二部分級分 ÷ 5)｝× 50。正式閱卷每題是 0–2 分，有小錯但重點結構正確可以拿 1 分；這裡的自動批改只分全對（2 分）與不對（0 分），所以實際分數通常會再高一點。</small>';
+        '<br><small>公式出自 LTTC 初級寫作分數說明：｛(第一部分得分 ÷ 30) ＋ (第二部分級分 ÷ 5)｝× 50。正式閱卷每題是 0–2 分。這裡的自動批改：句子全對 2 分；字都對但句首沒大寫或句尾沒標點 1 分；其他 0 分。正式閱卷時，其他小錯但重點句構正確也可能拿到 1 分，所以實際分數可能和這裡略有不同。</small>';
       est.classList.add('show');
     }
     if(window.gtag) gtag('event','practice_check',{practice_page:location.pathname,score:got,total:total});

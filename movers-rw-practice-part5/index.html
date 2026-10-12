@@ -288,7 +288,7 @@
 const PRX = { part:5, sets:[{"setId": "A", "items": [{"type": "gaptext", "n": 1, "q": "Anna stopped near the", "accept": ["park", "the park"], "why": "✓ park。'Near the park, she stopped.'"}, {"type": "gaptext", "n": 2, "q": "She could not see any", "accept": ["animals", "animal"], "why": "✓ animals。'she could not see any animals'。"}, {"type": "gaptext", "n": 3, "q": "Anna found the little cat under a", "accept": ["red car", "car"], "why": "✓ (red) car。'Anna looked under a red car'。顏色可寫可不寫。"}, {"type": "gaptext", "n": 4, "q": "The cat was black and it was", "accept": ["wet", "wet and cold", "cold"], "why": "✓ wet（and cold）。'It was wet and cold.'"}, {"type": "gaptext", "n": 5, "q": "Anna carried the cat home inside her", "accept": ["coat", "her coat"], "why": "✓ coat。'put it inside her coat'。"}, {"type": "gaptext", "n": 6, "q": "Anna's mother gave the cat some", "accept": ["milk"], "why": "✓ milk。'gave the cat some milk in a bowl'。"}, {"type": "gaptext", "n": 7, "q": "Anna gave the cat the name", "accept": ["Happy", "happy"], "why": "✓ Happy。故事最後一句 'She called the cat Happy.'"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

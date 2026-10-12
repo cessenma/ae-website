@@ -285,7 +285,7 @@
 const PRX = { part:6, sets:[{"setId": "A", "items": [{"type": "gaptext", "n": 1, "q": "Complete the sentences.　The girl playing in the sand is wearing a red", "accept": ["hat", "sun hat"], "why": "✓ hat。題目給了顏色（red），要填的是「什麼東西」。"}, {"type": "gaptext", "n": 2, "q": "Complete the sentences.　The ball is red and", "accept": ["blue"], "why": "✓ blue。這題反過來：東西給了，要填顏色。球是紅色和藍色的。"}, {"type": "gaptext", "n": 3, "q": "Answer the questions.　What is the boy with the book doing?", "accept": ["reading", "he is reading", "reading a book", "he's reading a book"], "why": "✓ reading (a book)。圖中有兩個男孩，所以題目用「拿著書的那個」來指定。"}, {"type": "gaptext", "n": 4, "q": "Answer the questions.　Where is the ball?", "accept": ["next to the girl", "near the girl", "on the sand", "next to the sand"], "why": "✓ next to the girl。位置題只要說得清楚就給分。"}, {"type": "free", "n": 5, "q": "Now write two sentences about the picture.", "a": "自由作答", "why": "評分標準：句子要在講「這張圖」，看得懂，大致正確。例：'The sun is shining.' / 'Two children are playing on the beach.' 拼字或文法小錯不扣分，只要意思清楚。這題 2 分。"}, {"type": "free", "n": 6, "q": "Now write two sentences about the picture.", "a": "自由作答", "why": "同上，第二句要和第 5 題不同。例：'The dog is running fast.' / 'A man is sitting under a big umbrella.' 這題 2 分。"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

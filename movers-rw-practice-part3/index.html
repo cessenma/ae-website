@@ -286,7 +286,7 @@
 const PRX = { part:3, sets:[{"setId": "A", "items": [{"type": "gaptext", "n": 1, "q": "第 (1) 格", "accept": ["parrot"], "why": "✓ parrot。'big green ... sat in a tree' 而且後面會說話——是鸚鵡。"}, {"type": "gaptext", "n": 2, "q": "第 (2) 格", "accept": ["quietly"], "why": "✓ quietly。空格前是動詞 said，需要副詞；而且他不想吵醒別的鳥。"}, {"type": "gaptext", "n": 3, "q": "第 (3) 格", "accept": ["beautiful"], "why": "✓ beautiful。'The bird was red, blue and yellow. It was very ___'——was very 後面要形容詞。"}, {"type": "gaptext", "n": 4, "q": "第 (4) 格", "accept": ["shouted"], "why": "✓ shouted。後面是引號裡的 'Hello! Hello!'，需要一個「說」的過去式動詞。"}, {"type": "gaptext", "n": 5, "q": "第 (5) 格", "accept": ["happy"], "why": "✓ happy。'He was so ___ that he did not take a photo'——太開心以致於忘了拍照。"}, {"type": "mc", "n": 6, "q": "Now choose the best name for the story. Tick one box.", "opts": ["Tom's new camera", "A bird that talked", "Uncle's favourite animal"], "a": 1, "why": ["✗ 相機只出現在第一句，之後就沒再提——這是最常見的陷阱。", "✓ 整個故事都在講那隻會說話的鳥。", "✗ 故事沒有說叔叔最喜歡什麼動物。"]}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

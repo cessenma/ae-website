@@ -282,7 +282,7 @@
 const PRX = { part:1, sets:[{"setId": "A", "items": [{"type": "gaptext", "n": 1, "q": "This person works outside with animals and plants, and grows our food.", "accept": ["a farmer", "farmer"], "why": "✓ a farmer。關鍵是 'works outside with animals and plants' 和 'grows our food'。"}, {"type": "gaptext", "n": 2, "q": "This is a white drink and it comes from cows.", "accept": ["milk"], "why": "✓ milk。這個字前面不加 a——官方答案卷上就是 milk。"}, {"type": "gaptext", "n": 3, "q": "People go to this place when they are ill, and doctors work here.", "accept": ["a hospital", "hospital"], "why": "✓ a hospital。'doctors work here' 是決定性的線索。"}, {"type": "gaptext", "n": 4, "q": "This animal has long ears and likes eating carrots.", "accept": ["a rabbit", "rabbit"], "why": "✓ a rabbit。長耳朵、愛吃紅蘿蔔。陷阱是 a helicopter——直升機也在天上飛，但它不是 animal。"}, {"type": "gaptext", "n": 5, "q": "You wait in this place when you want to catch a train.", "accept": ["a station", "station"], "why": "✓ a station。陷阱是 a village——村莊也是個 place，但不是等火車的地方。"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

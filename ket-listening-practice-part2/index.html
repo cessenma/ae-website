@@ -240,7 +240,7 @@
 const PRX = { part:2, sets:[{"setId": "r1", "items": [{"n": 1, "type": "gaptext", "q": "第 (1) 格 — Day", "accept": ["Thursday"], "why": "Mr Parker 一開始說 'I said Tuesday last week',但立刻更正『we've had to change it... now meet every Thursday』,聽到說話者自己更正時要以更正後的資訊為準，答案是 Thursday,不是 Tuesday。"}, {"n": 2, "type": "gaptext", "q": "第 (2) 格 — Time", "accept": ["4 o'clock", "four o'clock", "4:00", "4.00", "4pm", "4 pm"], "why": "Mr Parker 先說 'half past three',馬上又更正『sorry, actually, we'll start at four o'clock』,是典型的『數字先說錯再更正』陷阱，答案應填四點(4 o'clock),不是三點半。"}, {"n": 3, "type": "gaptext", "q": "第 (3) 格 — Room number", "accept": ["12", "Room 12", "room 12"], "why": "教室是『Room 12 this term』,文中特別提到『不是』去年用的 Room 9——Room 9 只是干擾用的舊資訊，正確答案是 12。"}, {"n": 4, "type": "gaptext", "q": "第 (4) 格 — Teacher's name", "accept": ["Parker", "PARKER", "Mr Parker"], "why": "老師親自拼出名字『P, A, R, K, E, R』,拼字題要逐字聽清楚並正確拼寫，答案是 Parker。"}, {"n": 5, "type": "gaptext", "q": "第 (5) 格 — Price to bring", "accept": ["$300", "300", "three hundred dollars"], "why": "Mr Parker 說要帶『three hundred dollars to buy food for the class』,並特別強調這筆錢整個學期只需要繳一次('That's enough for the whole term'),不要被『需要多次付款』的錯誤推論誤導，答案是 300。"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

@@ -279,7 +279,7 @@
 const PRX = { part:4, sets:[{"setId": "A", "items": [{"type": "mc", "n": 1, "q": "第 (1) 格", "opts": ["quick", "quicker", "quickest"], "a": 1, "why": ["✗ quick 沒有比較的意思。", "✓ 後面有 than，一定要用比較級 quicker。", "✗ 最高級不能和 than 連用。"]}, {"type": "mc", "n": 2, "q": "第 (2) 格", "opts": ["slow", "slowly", "slowest"], "a": 1, "why": ["✗ slow 是形容詞，這裡要修飾動詞 walk。", "✓ walk 是動詞，要用副詞 slowly。", "✗ 最高級在這裡沒有比較對象。"]}, {"type": "mc", "n": 3, "q": "第 (3) 格", "opts": ["out", "from", "up"], "a": 0, "why": ["✓ come out of the sea 是固定用法。", "✗ from 不和 come ... of 搭配。", "✗ up of 不是英文的說法。"]}, {"type": "mc", "n": 4, "q": "第 (4) 格", "opts": ["which", "what", "who"], "a": 2, "why": ["✗ which 用來指東西，不指人。", "✗ what 不能當關係代名詞接在 People 後面。", "✓ 先行詞是 People（人），要用 who。"]}, {"type": "mc", "n": 5, "q": "第 (5) 格", "opts": ["live", "lived", "living"], "a": 1, "why": ["✗ 句首是 Last year，不能用現在式。", "✓ Last year 是過去，要用過去式 lived。", "✗ living 不能單獨當主要動詞。"]}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

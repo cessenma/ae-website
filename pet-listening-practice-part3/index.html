@@ -242,7 +242,7 @@
 const PRX = { part:3, sets:[{"setId": "r1", "items": [{"n": 1, "type": "gaptext", "q": "第 (1) 格", "accept": ["Lion's Head Mountain", "Lion's Head"], "why": "地點是 Lion's Head Mountain,錄音清楚拼出 L-I-O-N 加上撇號 S,這是聽力最容易扣分的拼字陷阱;去年用過的河邊營地只是提到但已被取代的干擾資訊，不是今年的答案。"}, {"n": 2, "type": "gaptext", "q": "第 (2) 格", "accept": ["Weaver"], "why": "隊輔的姓氏 Weaver 在錄音中有逐字母拼出 W-E-A-V-E-R,必須完全拼對才給分，這是 Part 3 最常見的拼字陷阱;筆記上已印出 'Mr',答案只需填姓氏。"}, {"n": 3, "type": "gaptext", "q": "第 (3) 格", "accept": ["5", "five"], "why": "營隊天數原本是 four days,但錄音接著說『this summer we've extended it, so it'll now run for five days』,是典型的說話者改口陷阱，答案要聽到最後更新的數字，不能只聽到前半句就作答。"}, {"n": 4, "type": "gaptext", "q": "第 (4) 格", "accept": ["cap"], "why": "贈品原本是 water bottle,但錄音後面說『this year, every camper gets a free cap instead』,同樣是說話者改口的陷阱，答案是最新提到的 cap,不是先講的 water bottle。"}, {"n": 5, "type": "gaptext", "q": "第 (5) 格", "accept": ["sleeping bag"], "why": "錄音明確說不用帶帳篷(tent 由主辦單位提供),但要求自備 sleeping bag,tent 是反向陷阱，真正要帶的是睡袋。"}, {"n": 6, "type": "gaptext", "q": "第 (6) 格", "accept": ["3rd July", "third of July", "July 3rd", "3 July", "the 3rd of July"], "why": "報名截止日是 the third of July,日期類答案要注意數字與月份的正確順序，可接受 3rd July / July 3rd 等常見書寫方式，但月份與日期不可顛倒或寫錯。"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

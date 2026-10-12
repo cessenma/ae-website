@@ -281,7 +281,7 @@
 const PRX = { part:4, sets:[{"setId": "A", "items": [{"type": "gaptext", "n": 1, "q": "第 (1) 格", "accept": ["milk"], "why": "✓ milk。'like drinking ___'——貓喝的是牛奶。陷阱是 water，貓也喝水，但方框裡 milk 才是課本上的答案，而且 water 沒有在課文任何一句被指到。"}, {"type": "gaptext", "n": 2, "q": "第 (2) 格", "accept": ["fish"], "why": "✓ fish。'like eating ___'——要一個可以吃的東西。"}, {"type": "gaptext", "n": 3, "q": "第 (3) 格", "accept": ["box"], "why": "✓ box。'sleeps on a bed or in a ___'——in a 後面要一個容器。"}, {"type": "gaptext", "n": 4, "q": "第 (4) 格", "accept": ["eyes"], "why": "✓ eyes。'can see very well. They have big ___'——看東西用眼睛。"}, {"type": "gaptext", "n": 5, "q": "第 (5) 格", "accept": ["jump"], "why": "✓ jump。'They can ___'——can 後面要動詞。陷阱是 sing，也是動詞，但貓不會唱歌，而且圖片畫的就是跳。"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

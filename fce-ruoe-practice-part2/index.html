@@ -225,7 +225,7 @@
 const PRX = { part:2, sets:[{"setId": "A", "items": [{"n": 1, "type": "gaptext", "q": "第 (1) 格", "accept": ["for"], "why": "for the first time 是固定片語，意思是『第一次』，只能填介系詞 for。"}, {"n": 2, "type": "gaptext", "q": "第 (2) 格", "accept": ["own"], "why": "on my own 是固定片語，意思是『獨自一人』；own 是這個片語中固定的字，不可替換。"}, {"n": 3, "type": "gaptext", "q": "第 (3) 格", "accept": ["who"], "why": "who 指前面的先行詞 my host family（指這一家人）；因為前後有逗號、屬於非限定用法（non-defining relative clause），只能用 who 或 which，不可用 that。"}, {"n": 4, "type": "gaptext", "q": "第 (4) 格", "accept": ["do"], "why": "do 在此作代動詞，代替前面出現過的動詞 start，避免重複：earlier than they do (= start) in Taiwan。"}, {"n": 5, "type": "gaptext", "q": "第 (5) 格", "accept": ["but", "yet"], "why": "but／yet 是轉折連接詞，用來連接『一開始聽不懂』和『後來漸漸聽懂』這兩個對比的子句。"}, {"n": 6, "type": "gaptext", "q": "第 (6) 格", "accept": ["which"], "why": "which 指前面的事物 the hiking club；因為前面有逗號、屬於非限定用法，只能用 which，不可用 that。"}, {"n": 7, "type": "gaptext", "q": "第 (7) 格", "accept": ["some", "several"], "why": "some／several 是修飾複數可數名詞 days 的數量詞，表示『有一些』，語意上與句尾的 too 呼應，表示『除了美好的部分之外，也有一些困難的日子』。"}, {"n": 8, "type": "gaptext", "q": "第 (8) 格", "accept": ["the", "a"], "why": "have the chance to V 與 have a chance to V 都是常見固定用法：the 強調『這一次特定的機會』，a 則表示『一次機會』，兩者在此語境下皆可接受。"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

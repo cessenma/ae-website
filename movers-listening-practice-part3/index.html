@@ -302,7 +302,7 @@
 const PRX = { part:3, sets:[{"setId": "r1", "items": [{"n": 1, "q": "Sam → 哪一張圖？", "opts": ["A", "B", "C", "D", "E", "F", "G", "H"], "a": 0, "why": "✓ A：'He was in the water all morning' → 'So Sam went swimming.'"}, {"n": 2, "q": "Vicky → 哪一張圖？", "opts": ["A", "B", "C", "D", "E", "F", "G", "H"], "a": 2, "why": "✓ C：'She made a picture of a flower' → 'Vicky was painting.' 陷阱是 G——她有吉他，但 'she didn't play it on Saturday'。"}, {"n": 3, "q": "Uncle Paul → 哪一張圖？", "opts": ["A", "B", "C", "D", "E", "F", "G", "H"], "a": 7, "why": "✓ H：'He washed the car' → 'He washed the car.' 陷阱是 E——'Did Uncle Paul go fishing?' 答案是 'He wanted to, but...'。"}, {"n": 4, "q": "Kim → 哪一張圖？", "opts": ["A", "B", "C", "D", "E", "F", "G", "H"], "a": 1, "why": "✓ B：'She wore a helmet and rode a big brown horse.'"}, {"n": 5, "q": "Aunt May → 哪一張圖？", "opts": ["A", "B", "C", "D", "E", "F", "G", "H"], "a": 3, "why": "✓ D：'She was in the kitchen all afternoon' → 'Aunt May was cooking.'"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

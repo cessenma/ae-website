@@ -278,7 +278,7 @@
 const PRX = { part:2, sets:[{"setId": "A", "items": [{"n": 1, "q": "The girl is eating an apple.", "opts": ["yes", "no"], "a": 0, "why": "✓ yes。圖中女孩正在吃蘋果。"}, {"n": 2, "q": "There are four cats in the kitchen.", "opts": ["yes", "no"], "a": 1, "why": "✗ no。圖裡只有一隻貓。"}, {"n": 3, "q": "The cat is under the table.", "opts": ["yes", "no"], "a": 0, "why": "✓ yes。貓在桌子下面。"}, {"n": 4, "q": "The man is reading a book.", "opts": ["yes", "no"], "a": 1, "why": "✗ no。他在煮東西，不是看書。"}, {"n": 5, "q": "There is a cake on the table.", "opts": ["yes", "no"], "a": 0, "why": "✓ yes。桌上有一個蛋糕。"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')

@@ -304,7 +304,7 @@
 const PRX = { part:2, sets:[{"setId": "r1", "items": [{"type": "gaptext", "n": 1, "q": "What is the name of Sam's sister?", "accept": ["Anna", "anna"], "why": "✓ Anna。錄音有拼出來：'A-N-N-A'。聽到拼字就是答案。"}, {"type": "gaptext", "n": 2, "q": "How many cats has Sam got?", "accept": ["3", "three", "Three"], "why": "✓ 3（或 three）。'He's got three cats.'"}, {"type": "gaptext", "n": 3, "q": "What is the name of Sam's school?", "accept": ["Park", "park", "Park School"], "why": "✓ Park。'It's Park School. P-A-R-K.'"}, {"type": "gaptext", "n": 4, "q": "What number is Sam's house?", "accept": ["12", "twelve", "Twelve"], "why": "✓ 12（或 twelve）。'It's number twelve.'"}, {"type": "gaptext", "n": 5, "q": "What is the name of Sam's dog?", "accept": ["Nick", "nick"], "why": "✓ Nick。'The dog is Nick. N-I-C-K.'"}]}] };
 (function(){
   const L=i=>String.fromCharCode(65+i);
-  const norm=s=>(s||'').toLowerCase().trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
+  const norm=s=>(s||'').toLowerCase().replace(/[’‘]/g,"'").trim().replace(/\s+/g,' ').replace(/[.,!?;:]+$/,'');
   const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const whyHTML=it=>Array.isArray(it.why)
       ? it.why.map((w,i)=>`<p><b class="notranslate" translate="no">${L(i)}</b>：${w}</p>`).join('')
