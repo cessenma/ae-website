@@ -40,7 +40,14 @@ Run:  ~/.claude/skills/seo/.venv/bin/python3 seo_build.py
 (Lives OUTSIDE site/ so it is never deployed.)
 """
 import os, re, sys, json, datetime, hashlib, subprocess, unicodedata
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
+from zoneinfo import ZoneInfo
+
+
+def tw_today():
+    """Today's date in Taiwan. The weekly GitHub Action (school-calendars.yml) runs this module on
+    a UTC server at 22:00 UTC, which is already the next morning in Taipei."""
+    return datetime.datetime.now(ZoneInfo("Asia/Taipei")).date()
 from html import unescape as _unescape, escape as _escape
 from bs4 import BeautifulSoup
 
@@ -151,7 +158,10 @@ def next_mid(html, kind):
     if len(secs) < 2:
         return html          # a single long section: the line would land at the very end
     a, b = next(((a, b) for a, b in secs if "<table" in html[a:b]), secs[1])
-    at = html.rfind("</div>", a, b)
+    # stop before any block another pass put at the end of the section (the seasonal strips are
+    # wrappers of their own, some hidden): the line belongs to the section's own content
+    cut = min([i for i in (html.find(SEASON_START, a, b), html.find(ASSESS_START, a, b)) if i != -1] or [b])
+    at = html.rfind("</div>", a, cut)
     if at == -1:
         return html
     line = f'{NEXT_START}<p class="ae-cta ae-cta-mid">{NEXT_ASK[kind]}' + (_LOCAL_TAIL if kind == "local" else _NEXT_TAIL)
@@ -191,7 +201,6 @@ COPIED_IMG = {"kk-phonetics-dictionary-pronunciation-symbols.webp": "kk-phonetic
               # build_vocab_topic_pages.py copies its head from the KK page, so a new vocabulary page
               # arrived sharing the KK chart (time/weather/food-english, found by the 2026-10-08 audit)
               "kk-phonetic-chart-full.webp": "kk-phonetic-chart/"}
-ARIA_H2 = ' role="heading" aria-level="2"'
 # Icons: the same three tags on every page. Hand-written pages carried a 340px JPEG logo,
 # generated pages carried nothing, so any icon tag found in the page is dropped and the set
 # below goes into the SEO block (Google wants a square icon of 48px or a multiple of it).
@@ -210,7 +219,6 @@ NOT_ARTICLE = {"index.html", "404.html", "courses/index.html", "free-trial/index
 
 GA_ID = "G-CH7TGR171G"
 # Everything above this stylesheet section is above-the-fold and gets inlined.
-CRIT_CUT_MARKER = "Marquee"
 # Self-contained landing pages: they ship their own complete <style> AND their own
 # header/progress bar, and never link styles.css. Injecting the site CSS overrides their
 # design (the site's `.split .stack` rule right-aligns /line/'s mobile hero copy), and
@@ -358,8 +366,9 @@ OLD_GTM_RE = re.compile(
 # any bare stylesheet link (superseded by the inlined critical block + preload)
 PLAIN_CSS_RE = re.compile(r'<link rel="stylesheet" href="/assets/styles\.css(?:\?v=[^"]*)?">\s*')
 
-def jd(obj):  # compact, unicode-preserving (matches existing static JSON-LD)
-    return json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
+def jd(obj):  # compact, unicode-preserving (matches existing static JSON-LD); "<" escaped so
+    # a FAQ answer or headline containing "</script>" cannot end the JSON-LD element early
+    return json.dumps(obj, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
 
 def page_key(path):  # mirror app.js pageKey()
     p = path.split("?")[0].split("#")[0].rstrip("/")
@@ -678,6 +687,10 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified, h
         elif ts & ARTICLE_TYPES:
             if article_for_other_page(node):          # the page's only page-level block: rewrite it
                 node["headline"], node["description"], node["mainEntityOfPage"] = headline[:110], desc, canon
+                # the copied page's identity goes too: another page's @id on this page made two nodes
+                # with one id describing different content
+                if "@id" in node: node["@id"] = canon + "#article"
+                if "url" in node: node["url"] = canon
                 node["datePublished"] = published
                 if image: node["image"] = image
                 changed = True
@@ -881,7 +894,8 @@ H1_WBR = {
     "english-dates-guide": [("11 號、13 日、", "11&nbsp;號、13&nbsp;日、")],      # keep the number with its counter
     "gept": [(" 頁練習全部免費", "&nbsp;頁練習<wbr>全部免費"),                       # 「39｜頁」 and 「免｜費」 split
              ("&nbsp;頁練習全部免費", "&nbsp;頁練習<wbr>全部免費")],                 # (the page keeps the &nbsp; once written)
-    "jobs-english": [("83 種工作的英文說法與", "83&nbsp;種工作的<wbr>英文說法<wbr>與")],
+    "jobs-english": [("83 種工作的英文說法與", "83&nbsp;種工作的<wbr>英文說法<wbr>與"),       # as generated
+                     ("83&nbsp;種工作的英文說法與", "83&nbsp;種工作的<wbr>英文說法<wbr>與")],  # after a build
     "linguaskill-guide": [("成績對照與報名指南", "成績對照與<wbr>報名指南")],
     "how-to-choose-banqiao-english-cram-school": [("美籍教師直說<em>", "美籍教師直說<wbr><em>")],   # 「直說你｜不敢問」 split
 }
@@ -1060,20 +1074,32 @@ def toc_entries(html):
             break
     return out if len(out) >= 5 else []
 
+def _first_wrap_after_hero(html):
+    """Index just inside the first <div class="wrap"> after the page hero, or -1. A pack-offer card
+    placed directly under the hero (exams/, gept/, the GEPT hubs) is a sales block owned by another
+    tool: the contents list and the GEPT box go after it, never inside it."""
+    hero = re.search(r'<section class="page-hero.*?</section>', html, re.S)
+    if not hero:
+        return -1
+    start = hero.end()
+    po = html.find("<!-- AE:PACKOFFER -->", start)
+    if po != -1 and not html[start:po].strip():
+        end = html.find("<!-- /AE:PACKOFFER -->", po)
+        if end != -1:
+            start = end + len("<!-- /AE:PACKOFFER -->")
+    wrap = re.search(r'<div class="wrap">', html[start:])
+    return start + wrap.end() if wrap else -1
+
 def add_toc(html):
     """Insert (or refresh) the TOC as the first child of the first .wrap after the page hero."""
     html = re.sub(r"\n?" + re.escape(TOC_START) + r".*?" + re.escape(TOC_END) + r"\n?", "", html, flags=re.S)
     ents = toc_entries(html)
     if not ents:
         return html
-    hero = re.search(r'<section class="page-hero.*?</section>', html, re.S)
-    if not hero:
+    at = _first_wrap_after_hero(html)
+    if at == -1:
         return html
-    wrap = re.search(r'<div class="wrap">', html[hero.end():])
-    if not wrap:
-        return html
-    at = hero.end() + wrap.end()
-    links = "".join(f'<a href="#{i}">{_escape(t)}</a>' for i, t in ents)
+    links = "".join(f'<a href="#{i}">{_escape(_unescape(t))}</a>' for i, t in ents)
     block = (f'\n{TOC_START}<nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span>'
              f'{links}</nav>{TOC_END}\n')
     return html[:at] + block + html[at:]
@@ -1085,8 +1111,8 @@ def add_toc(html):
 # to them. In each window below, the pages in SEASON_PAGES carry one strip pointing at the
 # coming festival, placed after their main table. The build writes the current window's strip AND
 # the next five (about a year ahead), each tagged with its dates; a tiny script shows only the one whose window contains
-# today in Taiwan time. So the strip changes on the right day even when nobody builds (CI never runs
-# this script) and never announces a festival that has passed. Without JavaScript the strip that was
+# today in Taiwan time. So the strip changes on the right day even when nobody builds (CI only runs
+# this script for the school-calendar page) and never announces a festival that has passed. Without JavaScript the strip that was
 # current at build time shows. An injected block: it never moves lastmod.
 SEASON_START, SEASON_END = "<!-- AE:SEASON -->", "<!-- /AE:SEASON -->"
 # shows only the strip whose window contains today's Taiwan date (UTC+8)
@@ -1161,7 +1187,7 @@ def gept_dates(html, rel, today=None):
     if slug not in GEPT_DATE_PAGES:
         return html
     lv = next((v for p, v in GEPT_LEVEL if slug.startswith(p)), None)
-    day = (today or datetime.date.today()).isoformat()
+    day = (today or tw_today()).isoformat()
     rows = [r for r in GEPT_DATES if r[0] >= day and (lv is None or lv in r[1].split())]
     if slug == "gept-results-lookup":
         cols = [("", [r for r in rows if r[2] == "results"])]
@@ -1188,11 +1214,9 @@ def gept_dates(html, rel, today=None):
     if at >= 0:
         at += len(TOC_END)
     else:
-        hero = re.search(r'<section class="page-hero.*?</section>', html, re.S)
-        wrap = re.search(r'<div class="wrap">', html[hero.end():]) if hero else None
-        if not wrap:
+        at = _first_wrap_after_hero(html)
+        if at == -1:
             return html
-        at = hero.end() + wrap.end()
     return html[:at] + block + html[at:]
 
 
@@ -1255,7 +1279,7 @@ def season_strip(html, rel, today=None):
     slug = os.path.dirname(rel)
     if slug not in SEASON_PAGES:
         return html
-    day = (today or datetime.date.today()).isoformat()
+    day = (today or tw_today()).isoformat()
     # the window open today (if any) and the next windows, never the page's own festival
     upcoming = [s for s in SEASONS if s[1] >= day and s[2] != slug][:6]   # ~a year ahead
     if not upcoming:
@@ -1289,7 +1313,8 @@ def process_page(path, css_ver="", crit=""):
     m = (re.search(r'<link[^>]*\brel="canonical"[^>]*\bhref="([^"]+)"', html) or
          re.search(r'<link[^>]*\bhref="([^"]+)"[^>]*\brel="canonical"', html))
     canon = m.group(1) if m else urljoin(ORIGIN, "/" + os.path.dirname(rel) + "/" if os.path.dirname(rel) else ORIGIN + "/")
-    key = page_key(canon)
+    # the nav marks the page you are on; the 404 page's canonical is the homepage, but it is not 首頁
+    key = "404" if rel == "404.html" else page_key(urlparse(canon).path)
 
     bc = breadcrumb_ld(soup, canon)
     fq = faq_ld(BeautifulSoup(html, "lxml"))  # fresh soup (faq_ld mutates)
@@ -1326,7 +1351,7 @@ def process_page(path, css_ver="", crit=""):
         return rel, "SKIP (no head/body)"
 
     # --- page facts, taken from the authored page (every injected block is stripped now) ---
-    today = datetime.date.today().isoformat()
+    today = tw_today().isoformat()
     modified = page_date(rel, html, today)
     published = min(published_date(rel, today), modified)
     title = soup.title.get_text(strip=True) if soup.title else ""
@@ -1567,7 +1592,8 @@ def process_page(path, css_ver="", crit=""):
 # blanket lastmod. So lastmod is now driven by a hash of the page with every injected block
 # removed (CRIT, CHROME, GTM, SEO-LD, the app.js tag, the styles.css cache key): the date
 # moves only when the AUTHORED html changes. The ledger lives in the repo so every session
-# shares one history; CI never runs this script, so it cannot re-stamp.
+# shares one history. CI runs process_page only for the school-calendar page (school-calendars.yml),
+# and that job commits data/lastmod.json with the page, so its date is kept, not re-stamped.
 LASTMOD_LEDGER = os.path.join(SITE, "data", "lastmod.json")
 _INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM_END), (SEO_START, SEO_END),
              (FOOT_START, FOOT_END), (PMETA_START, PMETA_END), (POP_START, POP_END), (NEXT_START, NEXT_END),
@@ -1780,7 +1806,7 @@ def rebuild_sitemap():
             block = block.replace("</loc>", f"</loc><lastmod>{d}</lastmod>", 1)
         return block
     global _LEDGER
-    ledger = _LEDGER if _LEDGER is not None else load_ledger(); today = datetime.date.today().isoformat()
+    ledger = _LEDGER if _LEDGER is not None else load_ledger(); today = tw_today().isoformat()
     # every A4 download a page links to belongs in the sitemap (10 of 23 were missing)
     linked = set()
     for d, _, fs in os.walk(SITE):

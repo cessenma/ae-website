@@ -55,11 +55,12 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- exams/banqiao-school-calendar/ tools/data/; then
+          if git diff --quiet -- exams/banqiao-school-calendar/ tools/data/ data/lastmod.json; then
             echo "No change this week — nothing committed."
             exit 0
           fi
-          git add exams/banqiao-school-calendar/ tools/data/
+          # data/lastmod.json: the page's new date (seo_build ledger), so the next local build agrees
+          git add exams/banqiao-school-calendar/ tools/data/ data/lastmod.json
           git commit -m "chore: weekly school-calendar check $(date -u +%Y-%m-%d)"
           git push
 
