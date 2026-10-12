@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<link rel="stylesheet" href="/assets/styles.css?v=52538af7">
+<!-- AE:CRIT end -->
+<!-- AE:FONTS start -->
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2">
+<style>@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0vrx52jJ3Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB3vD2xWr53BJl.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZOIHTWEBlw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58UfivUw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKK58UfivUw4aw.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+<!-- AE:FONTS end -->
+<meta name="theme-color" content="#1A2752">
+<!-- Google Analytics (GA4) -->
+<title>OiKID 價格、費用怎麼算？方案結構、每堂換算與簽約前必問｜埃森美語</title>
+<meta name="description" content="OiKID 價格官網沒有公開，需留資料由顧問報價。整理網路公開的四種方案與每堂換算、24 期分期、雙寶共用、退費門檻，以及簽約前該問清楚的 8 件事。">
+<link rel="canonical" href="https://americanenglish.com.tw/oikid-price/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="American English 埃森美語">
+<meta property="og:title" content="OiKID 價格、費用怎麼算？方案結構、每堂換算與簽約前必問">
+<meta property="og:description" content="OiKID 價格官網沒有公開，需留資料由顧問報價。整理網路公開的四種方案與每堂換算、24 期分期、雙寶共用、退費門檻，以及簽約前該問清楚的 8 件事。">
+<meta property="og:url" content="https://americanenglish.com.tw/oikid-price/">
+<meta property="og:image" content="https://americanenglish.com.tw/assets/img/blog/pink-calculator-receipts-expenses.webp">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="用粉紅色計算機核對收據與帳單">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"https://americanenglish.com.tw/#organization","name":"埃森美語 American English","alternateName":["埃森美語","American English 埃森美語","American English","埃森美語 - American English Institute"],"legalName":"私立埃森美語文理短期補習班","taxID":"61476523","description":"板橋中正路在地深耕的美籍外師英文補習班，提供 100% 美籍持證教師、每班 12 人小班制的兒童美語與國中英文課程。","url":"https://americanenglish.com.tw/","telephone":"+886-928-067-772","image":["https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","https://americanenglish.com.tw/assets/img/banqiao-small-class-english-classroom.webp","https://americanenglish.com.tw/assets/img/banqiao-kids-english-class.webp","https://americanenglish.com.tw/assets/img/certified-american-teacher-banqiao.webp","https://americanenglish.com.tw/assets/img/kids-confident-english-speaking.webp"],"logo":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"中正路89巷4號1樓","addressLocality":"板橋區","addressRegion":"新北市","postalCode":"220","addressCountry":"TW"},"geo":{"@type":"GeoCoordinates","latitude":25.0145617,"longitude":121.4560468},"areaServed":{"@type":"AdministrativeArea","name":"板橋區","containedInPlace":{"@type":"AdministrativeArea","name":"新北市"}},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"19:00"}],"sameAs":["https://www.google.com/maps?cid=11837760024257631170","https://lin.ee/W9J8TuQ","https://www.facebook.com/profile.php?id=61576014571186"],"hasMap":"https://www.google.com/maps?cid=11837760024257631170","founder":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"knowsLanguage":["en-US","zh-TW"],"knowsAbout":["兒童美語","國中英文","美籍外師英語教學","Phonics 自然發音","劍橋兒童英檢 (Cambridge YLE)","GEPT 全民英檢","國中教育會考英文","英語會話與口說","板橋英文補習班"],"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+886-928-067-772","url":"https://lin.ee/W9J8TuQ","availableLanguage":["zh-TW","en"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Christopher","jobTitle":"創辦人暨美籍持證英文教師 (Founder & Licensed American English Teacher)","worksFor":{"@id":"https://americanenglish.com.tw/#organization"},"alumniOf":{"@type":"CollegeOrUniversity","name":"University of Michigan"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"美國正式教師執照 (U.S. State Teaching Certificate)"},"knowsLanguage":["en-US","zh-TW"],"@id":"https://americanenglish.com.tw/#christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"OiKID 價格與費用：方案怎麼算、簽約前問什麼","description":"OiKID 價格官網沒有公開，需留資料由顧問報價。整理網路公開的四種方案與每堂換算、24 期分期、雙寶共用、退費門檻，以及簽約前該問清楚的 8 件事。","image":"https://americanenglish.com.tw/assets/img/blog/pink-calculator-receipts-expenses.webp","datePublished":"2026-10-13","dateModified":"2026-10-13","inLanguage":"zh-Hant-TW","author":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"publisher":{"@id":"https://americanenglish.com.tw/#organization"},"mainEntityOfPage":"https://americanenglish.com.tw/oikid-price/","@id":"https://americanenglish.com.tw/oikid-price/#article","alternativeHeadline":"OiKID 價格、費用怎麼算？方案結構、每堂換算與簽約前必問","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"hasPart":{"@id":"https://americanenglish.com.tw/oikid-price/#faq"}}</script>
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/oikid-price/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/oikid-price/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="twitter:image" content="https://americanenglish.com.tw/assets/img/blog/pink-calculator-receipts-expenses.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://americanenglish.com.tw/blog/"},{"@type":"ListItem","position":3,"name":"OiKID 價格與費用：方案怎麼算、簽約前問什麼"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://americanenglish.com.tw/oikid-price/#faq","url":"https://americanenglish.com.tw/oikid-price/","inLanguage":"zh-Hant-TW","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"mainEntity":[{"@type":"Question","name":"OiKID 官網有公布價格嗎？","acceptedAnswer":{"@type":"Answer","text":"沒有。OiKID 官網（www.oikid.com）沒有價目表，要留下聯絡資料，由顧問聯繫、安排體驗與程度分析之後再報價。網路上的數字來自家長文章，不是官方公告；實際金額以顧問的書面報價和合約為準。"}},{"@type":"Question","name":"OiKID 一堂課大約多少錢？","acceptedAnswer":{"@type":"Answer","text":"依 2024 年刊在 OiKID 官方部落格的家長文章，四種方案總價從 62,400 元到 156,000 元。只用一對一精品課的堂數去除，每堂約 545 到 600 元；把摩天輪主題課也算進去平均，約 396 到 433 元。比較一對一的價格時，建議用前者。"}},{"@type":"Question","name":"OiKID 可以分期付款嗎？","acceptedAnswer":{"@type":"Answer","text":"官網條款提到，可以透過第三方支付、金融機構或融資公司辦理分期；網路文章列出的方案是 24 期月付。簽約前要問清楚分期由誰辦理，以及中途解約時，分期契約與手續費怎麼處理。"}},{"@type":"Question","name":"兄弟姊妹可以共用一個 OiKID 方案嗎？","acceptedAnswer":{"@type":"Answer","text":"網路上的家長文章說可以，稱為雙寶方案，由顧問替同一個家庭的孩子拆分帳號、共用堂數。官網條款禁止把帳號密碼私下借給他人，所以共用要透過顧問正式辦理，條件也請寫進合約。"}},{"@type":"Question","name":"OiKID 沒上完的課可以退費或延長嗎？","acceptedAnswer":{"@type":"Answer","text":"這要分兩件事看。延長：官網條款寫，服務期間屆滿時，不論上了幾堂，公司的服務義務就結束，所以剩下的堂數不會自動保留；能不能申請展延，要看合約怎麼寫。退費：條款限制以個人因素退費，網路文章描述的扣款方式是 30 天內每堂扣 900 元，之後先扣總額的 30% 再扣已上堂數，過了期限或堂數的三分之一就不退。兩件事都以書面合約為準。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://americanenglish.com.tw/#website","url":"https://americanenglish.com.tw/","name":"American English 埃森美語","alternateName":["埃森美語","埃森美語 American English"],"inLanguage":"zh-Hant-TW","publisher":{"@id":"https://americanenglish.com.tw/#organization"}}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');if(!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};window._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}fbq('init','1023907773471013');fbq('track','PageView');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);var f=document.createElement('script');f.async=1;f.src='https://connect.facebook.net/en_US/fbevents.js';document.head.appendChild(f);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body data-page="oikid-price">
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<nav class="drawer" id="drawer" aria-label="行動版選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></nav>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="bg-deco"></div>
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/blog/">部落格</a> ／ OiKID 價格</div>
+    <span class="eyebrow eyebrow-green reveal">線上英文平台 · 費用整理</span>
+    <h1 class="reveal d1"><span class="h1s">OiKID <em>價格</em>與費用：</span><br><span class="h1s kp">方案怎麼算、簽約前問什麼</span></h1>
+    <div class="divider reveal d1"></div>
+    <p class="body reveal d2">作者：Christopher｜埃森美語創辦人｜美國密西根大學畢業、美國正式教師執照<!-- AE:PAGEMETA start -->｜<span class="byl-d">最後更新 <time datetime="2026-10-13">2026 年 10 月 13 日</time></span><!-- AE:PAGEMETA end --></p>
+    <div class="hero-cta reveal d2" style="margin-top:16px">
+      <a class="btn btn-primary" href="#price-table">看方案與每堂換算 →</a>
+      <a class="btn btn-outline" href="#ask-before-signing">簽約前必問 8 件事</a>
+    </div>
+    <p class="body reveal d2" style="font-size:13px;margin-top:10px">提醒：這裡不是 OiKID 官網，頁面上的數字也不是官方報價單；官方網站請見 <a href="https://www.oikid.com/" target="_blank" rel="noopener">www.oikid.com</a>。</p>
+    <div class="reveal d2" style="margin-top:14px;max-width:560px;padding:12px 16px;border-radius:14px;background:#fff;border:2px solid rgba(26,39,82,.10);font-size:13.5px;line-height:1.75;color:var(--muted)"><strong style="color:var(--navy)">利益揭露</strong>：寫這篇的是板橋一間實體英文補習班的創辦人。我們和 OiKID 沒有任何合作或金錢往來，頁面上沒有推薦碼或聯盟連結，也沒有買過 OiKID 的課。價格資料查核於 2026 年 10 月；OiKID 官網沒有公開價目，實際金額以顧問報價和你簽的合約為準。</div>
+    <figure class="post-hero pf-blue reveal d2">
+      <img src="/assets/img/blog/pink-calculator-receipts-expenses.webp" srcset="/assets/img/blog/pink-calculator-receipts-expenses-800.webp 800w, /assets/img/blog/pink-calculator-receipts-expenses.webp 1600w" sizes="(max-width:828px) 100vw, 732px" width="1600" height="900" alt="用粉紅色計算機核對收據與帳單" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+<!-- AE:TOC --><nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span><a href="#官網為什麼查不到-OiKID-價格">官網為什麼查不到 OiKID 價格？</a><a href="#price-table">網路上查得到的 OiKID 方案</a><a href="#一堂多少錢兩種算法差很多">一堂多少錢？兩種算法差很多</a><a href="#要買多大的方案用每週堂數倒推">要買多大的方案？用每週堂數倒推</a><a href="#哪些因素會改變你拿到的價格">哪些因素會改變你拿到的價格？</a><a href="#退費與到期也算在總成本裡">退費與到期：也算在總成本裡</a><a href="#ask-before-signing">簽約前要問清楚的 8 件事</a><a href="#什麼情況下實體小班比預購方案合適">什麼情況下，實體小班比預購方案合適？</a><a href="#OiKID-價格常見問題">OiKID 價格常見問題</a></nav><!-- /AE:TOC -->
+
+    <div class="prose reveal">
+      <p>家長搜「OiKID 價格」「OiKID 費用」，最常遇到的狀況是官網翻遍了也找不到價目表。這是事實：<strong>OiKID 官網沒有公開價格，需要留下聯絡資料，由顧問聯絡說明</strong>。網路上流傳的數字，來自家長的文章，不是官方價目表。這一頁把能查證的部分分清楚——哪些是官網寫的、哪些是第三方分享（標明出處與日期），再用老師的角度把「總價」換算成「一堂真人一對一多少錢」，最後列出簽約前該問清楚的 8 件事。想先了解 OiKID 的師資、教材與 App，請看<a href="/oikid-review/">OiKID 評價整理</a>。</p>
+    </div>
+    <table class="compare reveal">
+      <caption>OiKID 費用資訊，哪些查得到？（2026 年 10 月查核）</caption>
+      <thead><tr><th scope="col" style="min-width:5em">項目</th><th scope="col">查得到的資訊與出處</th></tr></thead>
+      <tbody>
+        <tr><td>官網價目表</td><td>沒有：官網各頁與網站地圖都沒有價格頁，需留資料由顧問說明</td></tr>
+        <tr><td>付款方式</td><td>官網：簽「會員入會契約書」後，以現金、轉帳、匯款或信用卡付款，付清後開通</td></tr>
+        <tr><td>分期</td><td>官網條款：可經第三方支付、金融機構或融資公司辦理；網路文章：24 期</td></tr>
+        <tr><td>方案與金額</td><td>第三方：四種方案，總價 62,400–156,000 元（2024 年文章，2026 年仍有部落格列出相同金額）</td></tr>
+        <tr><td>使用期限</td><td>第三方：一期合約需在兩年內上完；官網條款：期滿未上完的堂數不再提供</td></tr>
+        <tr><td>退費</td><td>官網條款限制以個人因素退費；第三方描述的計算方式見下文</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：OiKID 官網聯絡我們、會員權益與服務條款、網站地圖（oikid.com/sitemap.xml），2026 年 10 月 12 日查核；第三方資料的出處見下一節。</p>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">為什麼查不到</span><h2 id="官網為什麼查不到-OiKID-價格">官網為什麼查不到 <em>OiKID 價格</em>？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>OiKID 用的是「顧問諮詢」的銷售方式。官網首頁、品牌頁、課程頁放的都是預約體驗課程的表單：家長留下姓名、電話與 Email，顧問聯絡後安排體驗與程度分析，再依孩子的程度和上課頻率建議方案。官網的服務條款也寫明，要使用語言課程，必須依指引另外簽一份「會員入會契約書」。</p>
+      <p>這種做法在賣套裝課程的線上平台很常見。好處是顧問能依孩子狀況給建議，代價是家長很難事先比價。我的建議很簡單：<strong>請顧問用文字（Email 或 LINE）給你方案名稱、總價、堂數、使用期限和退費計算</strong>，口頭報價不算數；拿到文字版再回家慢慢比。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">方案整理（第三方）</span><h2 id="price-table">網路上查得到的 <em>OiKID 方案</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>目前能查到最完整、來源也最接近官方的方案資料，是 <strong>2024 年 9 月 30 日刊在 OiKID 官方部落格 Learning Fun 的家長文章</strong>（作者署名「蘇珊媽咪」，授權轉載）；另一篇長期使用者的部落格（Darcy 拼學趣，2026 年 1 月 1 日更新）列出的金額相同。兩者都不是官網價目表，數字可能已經調整：</p>
+    </div>
+    <table class="compare reveal">
+      <caption>OiKID 方案（第三方資料，2024 年；非官網公告）</caption>
+      <thead><tr><th scope="col" style="min-width:5em">方案</th><th scope="col">一對一精品課</th><th scope="col">摩天輪課</th><th scope="col">總價（24 期月付）</th></tr></thead>
+      <tbody>
+        <tr><td>升級包</td><td>104 堂</td><td>40 堂</td><td>62,400 元（每期 2,600 元）</td></tr>
+        <tr><td>勤學包</td><td>160 堂</td><td>60 堂</td><td>91,200 元（每期 3,800 元）</td></tr>
+        <tr><td>小拍檔</td><td>224 堂</td><td>84 堂</td><td>124,800 元（每期 5,200 元）</td></tr>
+        <tr><td>大拍檔</td><td>286 堂</td><td>108 堂</td><td>156,000 元（每期 6,500 元）</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">第三方資料來源：OiKID 官方部落格〈OiKID 兒童線上英文詳細介紹、評價、費用、優缺點及使用心得〉（learningfunoikid.com，2024-09-30）；Darcy 拼學趣〈OiKID 六年課程紀錄與費用價格、心得分享〉（talkingdarcy.com，2026-01-01）。2026 年 10 月 12 日查閱。實際價格以 OiKID 顧問報價與合約為準。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>這兩篇文章還提到幾個會影響實際堂數的條件，同樣屬於第三方說法：</p>
+      <p><strong>一次付清加贈：</strong>升級包加贈 14 堂、勤學包加贈 20 堂一對一精品課。<br><strong>使用期限：</strong>一期合約需在兩年內上完。<br><strong>舊生續購：</strong>95 折，並加贈堂數。<br><strong>雙寶方案：</strong>同一個家庭的兄弟姊妹，可由顧問拆分帳號、共用堂數。</p>
+      <p>另有部落格提到，續約的學員可以把摩天輪課以 4 比 1 換成一對一精品課。這類細節變動快，請一律以合約寫的為準。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">每堂換算</span><h2 id="一堂多少錢兩種算法差很多">一堂多少錢？<em>兩種算法差很多</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>網路文章常寫「一堂 400 多元」，那是把一對一精品課和摩天輪課加在一起平均。但摩天輪是主題課，依家長文章的描述，形式可能是一對四或單向直播，和一對一不是同一種東西。要比較「真人一對一」的價格，<strong>應該只用一對一精品課的堂數來除</strong>：</p>
+    </div>
+    <table class="compare reveal">
+      <caption>依上表試算（未含一次付清加贈）</caption>
+      <thead><tr><th scope="col" style="min-width:5em">方案</th><th scope="col">精品＋摩天輪平均</th><th scope="col">兩年內每週需上幾堂一對一</th><th scope="col">只算一對一精品課</th></tr></thead>
+      <tbody>
+        <tr><td>升級包</td><td>約 433 元</td><td>1 堂</td><td>600 元</td></tr>
+        <tr><td>勤學包</td><td>約 415 元</td><td>約 1.5 堂</td><td>570 元</td></tr>
+        <tr><td>小拍檔</td><td>約 405 元</td><td>約 2.2 堂</td><td>約 557 元</td></tr>
+        <tr><td>大拍檔</td><td>約 396 元</td><td>約 2.8 堂</td><td>約 545 元</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">試算方式：總價 ÷ 堂數，四捨五入到元；兩年以 104 週計。若一次付清，升級包（118 堂精品課）約每堂 529 元，勤學包（180 堂精品課）約每堂 507 元。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>再給你兩個換算。<strong>換成每小時：</strong>600 元的 25 分鐘一對一，等於每小時約 1,440 元的真人一對一時間。<strong>對照官網建議的頻率：</strong>OiKID 官網對每個年齡層都建議每週上 3 次；照這個頻率，升級包的 104 堂一對一大約 35 週就會上完，兩年的期限其實用不到。反過來，如果你家實際只排得出每週 1 堂，買大方案就有上不完、到期作廢的風險。</p>
+      <p><strong>摩天輪課怎麼估價值？</strong>如果孩子不會去上摩天輪課，就把它當成不計價的贈品，只用一對一的單價（約 545–600 元）判斷值不值得；如果孩子喜歡團體主題課，再把它當成加分。不要因為「平均每堂 400 多元」就選大方案。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">方案大小</span><h2 id="要買多大的方案用每週堂數倒推">要買多大的方案？<em>用每週堂數倒推</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>選方案最常見的順序錯誤，是先看哪個方案每堂最便宜，再想孩子上不上得完。順序應該反過來：先估孩子每週真的能上幾堂，再乘上週數，看兩年內大概需要多少堂一對一課。下表以每年實際上課 45 週估算（扣掉出遊、考試週、生病等空檔；這是我們的假設，請換成你家的情況），再對照網路資料裡的方案堂數：</p>
+    </div>
+    <table class="compare reveal">
+      <caption>用每週堂數估算兩年需要的一對一堂數（以每年 45 週估）</caption>
+      <thead><tr><th scope="col" style="min-width:5em">每週一對一堂數</th><th scope="col">兩年約需幾堂</th><th scope="col">對照第三方資料的方案</th></tr></thead>
+      <tbody>
+        <tr><td>1 堂</td><td>約 90 堂</td><td>升級包（104 堂）已足夠</td></tr>
+        <tr><td>2 堂</td><td>約 180 堂</td><td>勤學包（160 堂）不夠，小拍檔（224 堂）有餘</td></tr>
+        <tr><td>3 堂（官網建議的頻率）</td><td>約 270 堂</td><td>大拍檔（286 堂）</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">試算：每週堂數 × 45 週 × 2 年。方案的一對一堂數取自前述 2024 年第三方資料，未含一次付清加贈。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>表格算出來的是「最多需要多少」，不是「應該買多少」。孩子能不能長期接受線上課，通常要上過十幾堂才看得準；第一次購買寧可選小一號的方案，把差額留給之後續約。另外，體驗課是你判斷要不要花這筆錢最重要的機會，請把握三件事：請顧問提供分級結果和該等級的單元課表、看孩子在 25 分鐘裡實際開口的時間，以及問清楚正式上課後老師要怎麼約。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">價格變數</span><h2 id="哪些因素會改變你拿到的價格">哪些因素<em>會改變</em>你拿到的價格？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p><strong>一、方案大小。</strong>從網路資料看，堂數越多每堂越便宜，但差距不大（只算一對一，從 600 元到約 545 元），風險卻跟著變大：預付越多，上不完或想中途停下來的損失也越大。</p>
+      <p><strong>二、一次付清或分期。</strong>第三方資料顯示一次付清有加贈堂數；分期則可能透過第三方機構辦理。官網條款寫到，如果公司曾替你負擔分期的手續費或利息，日後解約退費時，這部分會從退費金額中扣回。</p>
+      <p><strong>三、續約與推薦。</strong>舊生續購有折扣與加贈。有些部落格附有「學員推薦」的試上表單，文章寫明透過推薦購課可獲贈課程；推薦優惠可以問，但條件最好請顧問一併寫進方案說明。</p>
+      <p><strong>四、兄弟姊妹共用。</strong>雙寶方案讓兩個孩子分用堂數，平均下來最划算；但官網條款禁止私下把帳號借給別人，共用請透過顧問正式拆帳號。</p>
+      <p><strong>五、雙語老師或外師。</strong>官網與第三方資料都沒有提到兩種老師的價格不同；簽約前直接問清楚，並請對方寫進方案說明。</p>
+      <p><strong>六、使用期限與上課頻率。</strong>期限內沒上完的堂數不會延長，所以真正的單價，要用「你實際上得完的堂數」來算。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">退費條件</span><h2 id="退費與到期也算在總成本裡">退費與到期：<em>也算在總成本裡</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>官網會員條款裡有兩句話，直接影響總成本：一是購買後不得以個人因素任意解約或要求退費；二是服務期間屆滿時，不論上了幾堂，公司的服務義務就結束。官網沒有公開退費公式，下表是前述兩篇第三方文章描述的計算方式：</p>
+    </div>
+    <table class="compare reveal">
+      <caption>網路文章描述的 OiKID 退費計算（第三方，非官網公告）</caption>
+      <thead><tr><th scope="col" style="min-width:5em">申請退費的時間點</th><th scope="col">會被扣除的金額</th></tr></thead>
+      <tbody>
+        <tr><td>簽約後 30 天內</td><td>已上堂數 × 900 元</td></tr>
+        <tr><td>超過 30 天，但未超過有效期或總堂數的三分之一</td><td>總金額 × 30%，再加上已上堂數（未滿 30 堂以每堂 900 元計，30 堂以上以方案優惠價計）</td></tr>
+        <tr><td>超過有效期或總堂數的三分之一</td><td>不退費</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">第三方資料來源同上（OiKID 官方部落格 2024-09-30 家長文章；Darcy 拼學趣 2026-01-01）。兩篇的細節略有差異，實際以書面合約為準。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>用升級包（62,400 元）試算，幫你感受這些數字。以下依上表計算，僅供理解：</p>
+      <p><strong>情境 A：</strong>簽約第 20 天、上了 8 堂想停——扣 8 × 900 = 7,200 元，約可退 55,200 元。<br><strong>情境 B：</strong>簽約第 60 天、上了 20 堂想停——扣 62,400 × 30% = 18,720 元，再扣 20 × 900 = 18,000 元，約可退 25,680 元。<br><strong>情境 C：</strong>兩年的期限已過 8 個月以上（超過三分之一）——不退費。</p>
+      <p>這就是為什麼我建議<strong>第一次先買最小的方案</strong>：孩子適不適應，通常一兩個月就看得出來；用小方案確認之後，再決定要不要續約（網路資料說續約也有折扣）。另外，台灣對線上教學服務有政府公告的《網際網路教學服務定型化契約應記載及不得記載事項》（2020 年 5 月 15 日生效，現由數位發展部主管），付款前可以把書面合約和它對照著看。其中寫到：消費者可以隨時通知終止契約；預付期間超過一年、且預付金額超過新臺幣 5 萬元時，業者應就超過的部分提供履約保證，例如信託或金融機構擔保。網路資料裡的方案都超過 5 萬元，簽約時可以順便問：這份合約的履約保證是哪一種？</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">簽約檢查表</span><h2 id="ask-before-signing">簽約前要問清楚的 <em>8 件事</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>把下面 8 個問題直接傳給顧問，請對方用文字回覆，並把回覆存下來：</p>
+      <p><strong>1. 方案名稱、總價，一對一精品課幾堂、摩天輪課幾堂？</strong>兩種課分開寫，才算得出一對一的真實單價。</p>
+      <p><strong>2. 使用期限從哪一天起算？到期沒上完怎麼辦？</strong>能不能申請延長、需要什麼條件。</p>
+      <p><strong>3. 退費怎麼算？</strong>請對方給完整公式：30 天、30 堂、三分之一這幾個門檻各怎麼扣，扣除時每堂以多少錢計。</p>
+      <p><strong>4. 分期是誰辦的？</strong>是 OiKID 自己分期，還是第三方支付或融資公司？中途解約時，分期契約怎麼處理、手續費由誰負擔。</p>
+      <p><strong>5. 雙語老師和外師同價嗎？</strong>有沒有哪些老師或課程要另外加價。</p>
+      <p><strong>6. 取消、請假與老師缺課怎麼算？</strong>多久以前取消不扣堂；老師臨時缺課，堂數怎麼補回來。</p>
+      <p><strong>7. 兄弟姊妹能不能共用？</strong>條件是什麼，能不能之後再拆帳號。</p>
+      <p><strong>8. 可以先買最小的方案嗎？</strong>之後續約的折扣條件是什麼，能不能先寫進這一次的合約。</p>
+      <p>拿到回覆後，再和書面合約對照一次。沒有寫進合約的口頭承諾，日後很難主張。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">實體小班</span><h2 id="什麼情況下實體小班比預購方案合適">什麼情況下，<em>實體小班</em>比預購方案合適？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>OiKID 的計價方式是先付一筆、在兩年內上完。如果你還不確定孩子能不能長期對著螢幕上課、每週排不出時間替他約老師，或根本不想一次預付兩年份的課，可以先看看每週固定時間、固定老師與同學的實體小班是否更適合你家。兩種上課形式的完整比較，見<a href="/online-vs-in-person-english-banqiao/">兒童線上英文 vs 實體小班</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">常見問題</span><h2 id="OiKID-價格常見問題">OiKID 價格<em>常見問題</em></h2></div>
+    <div class="faq">
+      <div class="faq-item"><h3 id="OiKID-官網有公布價格嗎" class="faq-h"><button class="faq-q" aria-expanded="false">OiKID 官網有公布價格嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>沒有。OiKID 官網（www.oikid.com）沒有價目表，要留下聯絡資料，由顧問聯繫、安排體驗與程度分析之後再報價。網路上的數字來自家長文章，不是官方公告；實際金額以顧問的書面報價和合約為準。</p></div></div>
+      <div class="faq-item"><h3 id="OiKID-一堂課大約多少錢" class="faq-h"><button class="faq-q" aria-expanded="false">OiKID 一堂課大約多少錢？<span class="pm"></span></button></h3><div class="faq-a"><p>依 2024 年刊在 OiKID 官方部落格的家長文章，四種方案總價從 62,400 元到 156,000 元。只用一對一精品課的堂數去除，每堂約 545 到 600 元；把摩天輪主題課也算進去平均，約 396 到 433 元。比較一對一的價格時，建議用前者。</p></div></div>
+      <div class="faq-item"><h3 id="OiKID-可以分期付款嗎" class="faq-h"><button class="faq-q" aria-expanded="false">OiKID 可以分期付款嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>官網條款提到，可以透過第三方支付、金融機構或融資公司辦理分期；網路文章列出的方案是 24 期月付。簽約前要問清楚分期由誰辦理，以及中途解約時，分期契約與手續費怎麼處理。</p></div></div>
+      <div class="faq-item"><h3 id="兄弟姊妹可以共用一個-OiKID-方案嗎" class="faq-h"><button class="faq-q" aria-expanded="false">兄弟姊妹可以共用一個 OiKID 方案嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>網路上的家長文章說可以，稱為雙寶方案，由顧問替同一個家庭的孩子拆分帳號、共用堂數。官網條款禁止把帳號密碼私下借給他人，所以共用要透過顧問正式辦理，條件也請寫進合約。</p></div></div>
+      <div class="faq-item"><h3 id="OiKID-沒上完的課可以退費或延長嗎" class="faq-h"><button class="faq-q" aria-expanded="false">OiKID 沒上完的課可以退費或延長嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>這要分兩件事看。延長：官網條款寫，服務期間屆滿時，不論上了幾堂，公司的服務義務就結束，所以剩下的堂數不會自動保留；能不能申請展延，要看合約怎麼寫。退費：條款限制以個人因素退費，網路文章描述的扣款方式是 30 天內每堂扣 900 元，之後先扣總額的 30% 再扣已上堂數，過了期限或堂數的三分之一就不退。兩件事都以書面合約為準。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AE:ROUTE -->
+<section class="section bg-soft">
+  <div class="wrap">
+    <span class="eyebrow eyebrow-yellow">繼續比較</span>
+    <h2 id="價格之外還要比什麼" style="margin-top:14px">價格之外，<em>還要比什麼</em>？</h2>
+    <div class="divider" style="margin:18px 0 22px"></div>
+    <p class="body" style="max-width:720px">價格只是其中一塊。老師怎麼選、App 能不能用、和其他平台差在哪裡，我們分成幾篇寫；補習班的收費怎麼比，也有一篇完整的整理。</p>
+    <div style="margin-top:20px"><a href="/oikid-review/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">OiKID 評價：師資、App、合約</a><a href="/oikid-vs-51talk/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">51Talk、OiKID 比較</a><a href="/tutorjr-vs-oikid/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">tutorJr、OiKID 比較</a><a href="/kids-online-english-comparison/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">兒童線上英文平台比較</a></div>
+  </div>
+</section>
+<!-- /AE:ROUTE -->
+<section class="section bg-blue">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <span class="eyebrow eyebrow-green">免費程度評估</span>
+      <h2 id="先知道程度再決定買多少堂" style="margin-top:14px">先知道程度，<br><em>再決定買多少堂</em></h2>
+      <p class="body" style="max-width:560px;margin:16px auto 0">方案要買多大，取決於孩子從哪一級開始、每週真的上得了幾堂。如果你住板橋或雙北，傳個 LINE 約時間，我當面聽孩子說幾句英文、讀一小段，再告訴你他的程度落點和接下來該加強什麼。這個評估不收費，也不會推銷任何方案。</p>
+      <div class="cta-row">
+        <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 預約免費程度評估</a>
+        <a href="/oikid-review/" class="btn btn-outline">看 OiKID 評價整理</a>
+      </div>
+      <p class="body" style="max-width:560px;margin:22px auto 0;font-size:14px">接著讀：<a href="/online-vs-in-person-english-banqiao/">兒童線上英文 vs 實體小班</a>、<a href="/kids-online-english-comparison/">兒童線上英文平台比較</a>、<a href="/cram-school-vs-tutor-vs-self-study/">補習班、家教、自學怎麼選</a>。</p>
+      <p class="body" style="max-width:560px;margin:10px auto 0;font-size:14px">如果你剛好住板橋：我們的教室在<a href="/banqiao-english-cram-school/">板橋中正路</a>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- AE:BYL start --><div class="page-meta"><div class="wrap"><span>作者：<a href="/certified-american-teacher-banqiao/">Christopher｜埃森美語創辦人</a>（<a href="/certified-american-teacher-banqiao/">關於作者</a>）</span></div></div>
+<!-- AE:BYL end --></main>
+<!-- AE:FOOT start -->
+<footer class="site-footer"><div class="wrap"><div class="foot-grid"><div><div class="foot-logo"><img class="foot-logo-img" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="34" height="34" loading="lazy" decoding="async">American English 埃森美語</div><p class="foot-tag">板橋中正路在地深耕的美籍外師英文補習班。100% 美籍持證教師、每班 12 人小班制。</p><p class="foot-nap">220 新北市板橋區中正路89巷4號1樓<span class="foot-sep">　｜　</span><a href="tel:+886928067772">☎ 0928-067-772</a></p></div><nav class="foot-links" aria-label="頁尾導覽"><div class="foot-col"><p class="foot-h">課程</p><a href="/banqiao-english-cram-school/">板橋英文補習班</a><a href="/courses/">課程總覽</a><a href="/kids-english-banqiao/">兒童美語</a><a href="/junior-high-english-banqiao/">國中英文</a><a href="/free-trial/">預約試聽</a></div><div class="foot-col"><p class="foot-h">學習資源</p><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/english-pronunciation/">英文發音</a><a href="/download/">免費下載</a><a href="/chart-license/">圖表授權</a></div><div class="foot-col"><p class="foot-h">關於</p><a href="/certified-american-teacher-banqiao/">師資介紹</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="/contact/">聯絡與交通</a></div><div class="foot-col"><p class="foot-h">聯絡</p><a href="tel:+886928067772">電話 0928-067-772</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 線上預約</a><a href="https://maps.app.goo.gl/hLChkEqAMKCsMWpm6" target="_blank" rel="noopener">Google 地圖位置</a><a href="https://www.facebook.com/profile.php?id=61576014571186" target="_blank" rel="noopener">Facebook 粉絲專頁</a></div></nav></div><!-- AE:AINOTE --><p class="foot-ai">英文好，用 AI 也更順手 · <a href="https://essenindustries.com/tw/">essenindustries.com</a></p><!-- /AE:AINOTE -->
+<div class="foot-bottom"><span>© 2026 American English 埃森美語</span><span>私立埃森美語文理短期補習班　｜　新北市政府立案 社補教社字第115026號　｜　統一編號 61476523</span><span>220 新北市板橋區中正路89巷4號1樓</span></div><div class="foot-pref"><div google-add-preferred-source-btn data-theme="dark" data-lang="zh-TW"></div></div></div></footer>
+<!-- AE:FOOT end -->
+<script src="/assets/app.js?v=b537277d"></script>
+</body>
+</html>

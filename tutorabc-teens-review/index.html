@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<link rel="stylesheet" href="/assets/styles.css?v=52538af7">
+<!-- AE:CRIT end -->
+<!-- AE:FONTS start -->
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2">
+<style>@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0vrx52jJ3Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB3vD2xWr53BJl.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZOIHTWEBlw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58UfivUw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKK58UfivUw4aw.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+<!-- AE:FONTS end -->
+<meta name="theme-color" content="#1A2752">
+<!-- Google Analytics (GA4) -->
+<title>TutorABC Teens 評價與費用：國中高中英文課怎麼上、適合誰｜埃森美語</title>
+<meta name="description" content="TutorABC Teens 國中高中英文課評價：108 課綱與劍橋 Prepare 教材、1 對 1 上課與訂課規則、費用怎麼問，加上家長討論與美籍持證教師對會考、學測準備的建議。">
+<link rel="canonical" href="https://americanenglish.com.tw/tutorabc-teens-review/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="American English 埃森美語">
+<meta property="og:title" content="TutorABC Teens 評價與費用：國中高中英文課怎麼上、適合誰">
+<meta property="og:description" content="TutorABC Teens 國中高中英文課評價：108 課綱與劍橋 Prepare 教材、1 對 1 上課與訂課規則、費用怎麼問，加上家長討論與美籍持證教師對會考、學測準備的建議。">
+<meta property="og:url" content="https://americanenglish.com.tw/tutorabc-teens-review/">
+<meta property="og:image" content="https://americanenglish.com.tw/assets/img/blog/teen-headphones-laptop-green-hoodie.webp">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="戴耳機的青少年在筆電前專心上課">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"https://americanenglish.com.tw/#organization","name":"埃森美語 American English","alternateName":["埃森美語","American English 埃森美語","American English","埃森美語 - American English Institute"],"legalName":"私立埃森美語文理短期補習班","taxID":"61476523","description":"板橋中正路在地深耕的美籍外師英文補習班，提供 100% 美籍持證教師、每班 12 人小班制的兒童美語與國中英文課程。","url":"https://americanenglish.com.tw/","telephone":"+886-928-067-772","image":["https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","https://americanenglish.com.tw/assets/img/banqiao-small-class-english-classroom.webp","https://americanenglish.com.tw/assets/img/banqiao-kids-english-class.webp","https://americanenglish.com.tw/assets/img/certified-american-teacher-banqiao.webp","https://americanenglish.com.tw/assets/img/kids-confident-english-speaking.webp"],"logo":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"中正路89巷4號1樓","addressLocality":"板橋區","addressRegion":"新北市","postalCode":"220","addressCountry":"TW"},"geo":{"@type":"GeoCoordinates","latitude":25.0145617,"longitude":121.4560468},"areaServed":{"@type":"AdministrativeArea","name":"板橋區","containedInPlace":{"@type":"AdministrativeArea","name":"新北市"}},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"19:00"}],"sameAs":["https://www.google.com/maps?cid=11837760024257631170","https://lin.ee/W9J8TuQ","https://www.facebook.com/profile.php?id=61576014571186"],"hasMap":"https://www.google.com/maps?cid=11837760024257631170","founder":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"knowsLanguage":["en-US","zh-TW"],"knowsAbout":["兒童美語","國中英文","美籍外師英語教學","Phonics 自然發音","劍橋兒童英檢 (Cambridge YLE)","GEPT 全民英檢","國中教育會考英文","英語會話與口說","板橋英文補習班"],"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+886-928-067-772","url":"https://lin.ee/W9J8TuQ","availableLanguage":["zh-TW","en"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Christopher","jobTitle":"創辦人暨美籍持證英文教師 (Founder & Licensed American English Teacher)","worksFor":{"@id":"https://americanenglish.com.tw/#organization"},"alumniOf":{"@type":"CollegeOrUniversity","name":"University of Michigan"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"美國正式教師執照 (U.S. State Teaching Certificate)"},"knowsLanguage":["en-US","zh-TW"],"@id":"https://americanenglish.com.tw/#christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"TutorABC Teens 評價：國中高中英文課、上課方式與費用","description":"TutorABC Teens 國中高中英文課的官方名稱、適用學段、課程內容（HLM 教學法、劍橋 Prepare 教材與 108 課綱）、1 對 1 上課與 12 小時預約規則、費用公開程度與報價時要多問的問題，以及家長討論與美籍持證教師對會考、學測準備的建議。","image":"https://americanenglish.com.tw/assets/img/blog/teen-headphones-laptop-green-hoodie.webp","datePublished":"2026-10-13","dateModified":"2026-10-13","inLanguage":"zh-Hant-TW","author":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"publisher":{"@id":"https://americanenglish.com.tw/#organization"},"mainEntityOfPage":"https://americanenglish.com.tw/tutorabc-teens-review/","@id":"https://americanenglish.com.tw/tutorabc-teens-review/#article","alternativeHeadline":"TutorABC Teens 評價與費用：國中高中英文課怎麼上、適合誰","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"hasPart":{"@id":"https://americanenglish.com.tw/tutorabc-teens-review/#faq"}}</script>
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/tutorabc-teens-review/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/tutorabc-teens-review/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="twitter:image" content="https://americanenglish.com.tw/assets/img/blog/teen-headphones-laptop-green-hoodie.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://americanenglish.com.tw/blog/"},{"@type":"ListItem","position":3,"name":"TutorABC Teens 評價：國中高中英文課、上課方式與費用"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://americanenglish.com.tw/tutorabc-teens-review/#faq","url":"https://americanenglish.com.tw/tutorabc-teens-review/","inLanguage":"zh-Hant-TW","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"mainEntity":[{"@type":"Question","name":"TutorABC Teens 是什麼？幾年級可以上？","acceptedAnswer":{"@type":"Answer","text":"TutorABC Teens 是 TutorABC 給國中、高中生的英文課，官方全名為「TutorABC Teens 國中高中英文課」，對標 108 課綱，準備會考、學測、統測與英檢。官網用學段而不是年齡區分，課程內容分國中（會考）與高中（學測、統測）兩段；16 歲以上的高中生，報名時請確認適用 Teens 還是成人方案。"}},{"@type":"Question","name":"TutorABC Teens 一堂多少錢？","acceptedAnswer":{"@type":"Answer","text":"官網沒有單獨公開 Teens 的價格，只在常見問題列出兒少課程約 NT$300 起／堂，實際費用依學習顧問報價。報價時記得問每堂是 25 還是 45 分鐘、外師與雙語老師的課怎麼分配，以及合約期限能不能涵蓋到考試日期。"}},{"@type":"Question","name":"TutorABC Teens 是 1 對 1 嗎？老師是外師嗎？","acceptedAnswer":{"@type":"Answer","text":"TutorABC 官網的 Teens 頁面寫的是 1 對 1 真人課，tutorJr 官網的同名頁面另列 1 對 4 小班。官方的 HLM 教學法由外師負責語感與聽說，雙語老師負責拆解題型；1 對 1 可以自選老師，但條款寫明不能確保排到特定老師。"}},{"@type":"Question","name":"TutorABC Teens 對會考有幫助嗎？","acceptedAnswer":{"@type":"Answer","text":"官網表示課程對標 108 課綱、含會考題型與模擬考。實際幫助取決於方案內容：會考英語科考閱讀與聽力，建議確認每週有會考題型的閱讀練習、單字對照課綱字表，以及模擬考結果會回饋到後續課程。和外師對話能培養語感，但不能取代閱讀與單字的練習。"}},{"@type":"Question","name":"TutorABC Teens 和 tutorJr 有什麼關係？","acceptedAnswer":{"@type":"Answer","text":"tutorJr（TutorABC Junior）是 TutorABC 的兒童品牌，官網寫明為 5–15 歲的孩子設計。國中高中英文課同時出現在 TutorABC 與 tutorJr 兩個官網，內容大致相同。國小以下的課程請看本站的 tutorJr 評價。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://americanenglish.com.tw/#website","url":"https://americanenglish.com.tw/","name":"American English 埃森美語","alternateName":["埃森美語","埃森美語 American English"],"inLanguage":"zh-Hant-TW","publisher":{"@id":"https://americanenglish.com.tw/#organization"}}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');if(!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};window._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}fbq('init','1023907773471013');fbq('track','PageView');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);var f=document.createElement('script');f.async=1;f.src='https://connect.facebook.net/en_US/fbevents.js';document.head.appendChild(f);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body data-page="tutorabc-teens-review">
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<nav class="drawer" id="drawer" aria-label="行動版選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></nav>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="bg-deco"></div>
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/blog/">部落格</a> ／ TutorABC Teens 評價</div>
+    <span class="eyebrow eyebrow-green reveal">線上英文平台 · 國高中</span>
+    <h1 class="reveal d1"><span class="h1s">TutorABC Teens <em>評價</em>：</span><br><span class="h1s kp">國中高中英文課、上課方式與費用</span></h1>
+    <div class="divider reveal d1"></div>
+    <p class="body reveal d2">作者：Christopher｜埃森美語創辦人｜美國密西根大學畢業、美國正式教師執照<!-- AE:PAGEMETA start -->｜<span class="byl-d">最後更新 <time datetime="2026-10-13">2026 年 10 月 13 日</time></span><!-- AE:PAGEMETA end --></p>
+    <div class="hero-cta reveal d2" style="margin-top:16px">
+      <a class="btn btn-primary" href="#teens-fee">先看費用怎麼問 →</a>
+      <a class="btn btn-outline" href="#teacher-view">會考、學測準備看什麼</a>
+    </div>
+    <p class="body reveal d2" style="font-size:13px;margin-top:10px">這一頁是埃森美語整理的課程評價，不是 TutorABC 官方網站；課程的官方頁面在 www.tutorabc.com 的「國中高中英文課」。</p>
+    <figure class="post-hero pf-blue reveal d2">
+      <img src="/assets/img/blog/teen-headphones-laptop-green-hoodie.webp" srcset="/assets/img/blog/teen-headphones-laptop-green-hoodie-800.webp 800w, /assets/img/blog/teen-headphones-laptop-green-hoodie.webp 1600w" sizes="(max-width:828px) 100vw, 732px" width="1600" height="900" alt="戴耳機的青少年在筆電前專心上課" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+<!-- AE:TOC --><nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span><a href="#TutorABC-Teens-是什麼名稱與適用年級">TutorABC Teens 是什麼？名稱與適用年級</a><a href="#課程內容HLM劍橋-Prepare-與-108-課綱">課程內容：HLM、劍橋 Prepare 與 108 課綱</a><a href="#上課方式與訂課規則">上課方式與訂課規則</a><a href="#teens-fee">TutorABC Teens 費用：官網公開到哪裡</a><a href="#家長怎麼說TutorABC-Teens-的網路討論">家長怎麼說？TutorABC Teens 的網路討論</a><a href="#teacher-view">從老師的角度：國中生、高中生各看什麼</a><a href="#TutorABC-Teens-適合哪些孩子">TutorABC Teens 適合哪些孩子？</a><a href="#國中生什麼情況下實體小班比較合適">國中生什麼情況下，實體小班比較合適？</a><a href="#TutorABC-Teens-常見問題">TutorABC Teens 常見問題</a></nav><!-- /AE:TOC -->
+
+    <aside class="reveal" aria-label="利益揭露" style="background:var(--light-blue);border-radius:18px;padding:16px 20px;margin:0 0 24px;font-size:14px;line-height:1.75;color:var(--navy)"><strong>利益揭露：</strong>作者在板橋經營實體英文補習班埃森美語，學生包含國中生，和 TutorABC Teens 的對象有部分重疊，所以這篇只寫查得到出處的資料。本頁沒有聯盟連結、未收受任何平台的費用，我們也沒有購買過 TutorABC 的課程。內容於 2026 年 10 月查核，請以官網與合約為準。</aside>
+    <div class="prose reveal">
+      <p>家長搜尋「tutorabc teens」，找的是 TutorABC 給國中生、高中生的英文課。它的官方名稱是<strong>「TutorABC Teens 國中高中英文課」</strong>（官網課程頁標題是「國中高中英文課」，首頁常見問題則稱「Teens 國高中英語課」），主打對標 108 課綱、準備會考與學測，以 1 對 1 線上真人課為主。這篇先整理官網寫了什麼、沒寫什麼，再從美籍持證教師的角度，說明國中生和高中生各該看哪些重點。</p>
+    </div>
+    <table class="compare reveal">
+      <caption>TutorABC Teens 國中高中英文課基本資料（2026 年 10 月查核）</caption>
+      <thead><tr><th scope="col">項目</th><th scope="col">官方資料</th></tr></thead>
+      <tbody>
+        <tr><td>對象</td><td>國中、高中生（官網用學段區分，未寫明年齡）；準備會考、學測、統測與英檢</td></tr>
+        <tr><td>上課形式</td><td>1 對 1 線上真人課；tutorJr 官網的同一課程頁另列 1 對 4 小班</td></tr>
+        <tr><td>每堂長度</td><td>Teens 頁面未單獨列出；兒少課程依方案為 25 或 45 分鐘</td></tr>
+        <tr><td>教材</td><td>劍橋出版社授權的「劍橋 Prepare」教材，結合 108 課綱</td></tr>
+        <tr><td>教學方式</td><td>官方自創的 HLM（Hybrid Learning Method）：外師練語感，雙語老師拆解題型</td></tr>
+        <tr><td>輔助資源</td><td>AI 口說回饋、App 單字銀行、全真模擬考、課後影片回放</td></tr>
+        <tr><td>學習管理</td><td>1 對 1 學習顧問討論學習狀況</td></tr>
+        <tr><td>預約與取消</td><td>國高中英文課程須在課前 12 小時預約；最晚課前 4 小時取消</td></tr>
+        <tr><td>費用</td><td>未單獨公開；官網兒少課程參考價約 NT$300 起／堂，依顧問報價</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：<a href="https://www.tutorabc.com/site/zh-tw/english-course/teens" target="_blank" rel="noopener">TutorABC 國中高中英文課頁面</a>、<a href="https://www.tutorjr.com/aspx/mvc/zh-tw/Home/Teens" target="_blank" rel="noopener">tutorJr 國中高中英文課頁面</a>、<a href="https://www.tutorabc.com/faq" target="_blank" rel="noopener">TutorABC 常見問題</a>、<a href="https://www.tutorabc.com/site/zh-tw/terms?tab=2" target="_blank" rel="noopener">會員服務使用條款</a>第八條，2026 年 10 月查核。</p>
+  </div></section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">官方名稱</span><h2 id="TutorABC-Teens-是什麼名稱與適用年級">TutorABC Teens 是什麼？<em>名稱與適用年級</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>「TutorABC Teens」不是另一家公司，而是 TutorABC 兒少課程裡專給國中、高中生的課程線。同一門課在兩個官網都看得到：TutorABC 官網的「國中高中英文課」，以及兒童品牌 tutorJr（TutorABC Junior）官網上的同名頁面。兩個頁面內容大致相同，但上課形式寫法略有差異——TutorABC 官網寫 1 對 1，tutorJr 官網寫 1 對 1／1 對 4 小班——實際能選哪一種，以你拿到的方案為準。</p>
+      <p>年紀的部分，官網沒有寫死幾歲到幾歲，而是用學段說明：國中對應會考、高中對應學測與統測。要注意的是，TutorABC 常見問題頁把兒童與青少年課程寫為 4–16 歲，首頁常見問題則寫兒少 4–18 歲，成人課程也有「16 歲以上」與「18 歲以上」兩種寫法。<strong>家裡是 16 歲以上的高中生，報名時直接問：適用的是 Teens 方案還是成人方案</strong>，價格與每堂長度可能不同。</p>
+      <p>國小以下的孩子不在 Teens 的範圍，TutorABC 的兒童課程另見 <a href="/tutorjr-review/">tutorJr 評價</a>；TutorABC 整個品牌的上課方式、師資與合約，整理在 <a href="/tutorabc-review/">TutorABC 評價</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">課程內容</span><h2 id="課程內容HLM劍橋-Prepare-與-108-課綱">課程內容：<em>HLM、劍橋 Prepare 與 108 課綱</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>官網把 Teens 的設計分成兩條線：「考好」——教材對標 108 課綱、解析會考與學測的應考技巧、1 對 1 針對弱項加強；「學好」——用學母語的方式建立英文思維、螺旋式教學、和外師雙向互動培養語感。教材是劍橋出版社授權的「劍橋 Prepare」：依<a href="https://www.cambridge.org/sites/default/files/media/documents/Prepare_brochure_update_Dec_2021_web.pdf" target="_blank" rel="noopener">劍橋大學出版社的 Prepare 介紹手冊</a>，這是為青少年設計的系列教材，共 9 級、涵蓋 CEFR A1 到 C1，循序準備 A2 Key、B1 Preliminary、B2 First 與 C1 Advanced 等劍橋英檢。依學段，TutorABC 官網寫的重點如下：</p>
+    </div>
+    <table class="compare reveal">
+      <caption>TutorABC Teens 各學段重點（依官網說明整理）</caption>
+      <thead><tr><th scope="col">學段</th><th scope="col">官網寫的重點</th><th scope="col">對應考試</th></tr></thead>
+      <tbody>
+        <tr><td>國中</td><td>核心單字與文法、系統化練習閱讀與聽力、模擬試題；依程度與目標分數排課表</td><td>國中教育會考英語科</td></tr>
+        <tr><td>國中（基礎較弱）</td><td>先打聽說讀寫基礎，搭配模擬考題、單字 App 與課後影片回放</td><td>會考前的基礎建立</td></tr>
+        <tr><td>高中</td><td>長篇閱讀、素養文化、文法與寫作訓練</td><td>學測、統測英文</td></tr>
+        <tr><td>寫作</td><td>依「閱讀範例、詞彙運用、文章架構、實際寫作」的順序練</td><td>學測英文作文</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：<a href="https://www.tutorabc.com/site/zh-tw/english-course/teens" target="_blank" rel="noopener">TutorABC 國中高中英文課頁面</a>課程介紹與常見問題，2026 年 10 月查核。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>以老師的角度，這套組合有一個值得問清楚的地方：<strong>「劍橋 Prepare」是對應國際劍橋英檢的教材，會考和學測則依台灣課綱命題</strong>，兩者的單字表、題型和寫作要求不一樣。官網稱之為「雙軌」設計；家長可以請顧問說明，一個月的課裡有幾堂是劍橋教材、幾堂是會考或學測題型，以及孩子的級別怎麼對照（劍橋各級的程度可參考<a href="/cambridge-english-levels/">劍橋英檢等級對照表</a>）。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">上課方式</span><h2 id="上課方式與訂課規則">上課方式與<em>訂課規則</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>Teens 和 TutorABC 其他課程一樣，是一堂一堂自己預約的線上課，但規則更嚴一點：依〈會員服務使用條款〉，<strong>國高中英文課程要在課前 12 小時完成預約</strong>（一般課程是 4 小時），取消則要在課前 4 小時；逾時沒取消或遲到進不了教室，該堂視為已使用，只能事後看錄影。也就是說，孩子的課最好每週固定時段、前一天就排好，不適合放學後臨時決定要不要上。</p>
+      <p>師資的安排是官網說的 HLM 分工：<strong>外師</strong>負責語感與聽說反應，<strong>雙語老師</strong>負責拆解題型與解題策略。1 對 1 的課可以自選老師，也可以收藏合拍的老師；條款同時寫明不能確保排到特定老師。課後有錄影回放（條款寫出席後兩年內可看）、AI 口說回饋與單字 App，學習狀況則由學習顧問 1 對 1 討論。</p>
+      <p>設備也要先備好：使用條款列出的建議規格包括耳機麥克風（必備）、電腦 Windows 10 或 macOS 12 以上並使用 Chrome 120 以上瀏覽器，手機或平板則要安裝官方 App。孩子用自己的筆電上課，第一堂前先測一次連線和麥克風。</p>
+      <p>還有一點國高中家長特別要知道：條款列的<strong>暫停服務事由</strong>是生病住院、懷孕安胎、因公前往無網路國家等不可歸責於學員的因素。段考週或會考、學測衝刺期想暫停，未必符合條件——簽約前先問清楚，再決定合約長度。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">費用</span><h2 id="teens-fee">TutorABC Teens 費用：<em>官網公開到哪裡</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>TutorABC Teens 沒有單獨公開價格。官網常見問題只列出兒少課程的參考區間「約 NT$300 起／堂」，實際費用要留資料、經學習顧問報價；台灣的課程方案頁同樣是一張諮詢表單。報價前，除了總價、堂數和退費方式這些基本題（完整清單見 <a href="/tutorabc-price/">TutorABC 價格與方案</a>），國高中生還有幾題要另外問：</p>
+    </div>
+    <table class="compare reveal">
+      <caption>TutorABC Teens 報價時，國高中家長要多問的 5 題</caption>
+      <thead><tr><th scope="col">要問的問題</th><th scope="col">為什麼</th></tr></thead>
+      <tbody>
+        <tr><td>每堂是 25 還是 45 分鐘？</td><td>兒少課程有兩種長度；長篇閱讀和寫作講解，時間長短差很多</td></tr>
+        <tr><td>外師和雙語老師的課怎麼分配？價格一樣嗎？</td><td>HLM 由兩種老師分工，方案裡各占多少要清楚</td></tr>
+        <tr><td>方案期限涵蓋到會考或學測嗎？考完剩下的堂數怎麼處理？</td><td>考試日期固定，合約期限要對得上</td></tr>
+        <tr><td>段考週或考前衝刺，可以暫停嗎？</td><td>條款列舉的暫停事由沒有提到課業忙碌</td></tr>
+        <tr><td>16 歲以上報名，適用 Teens 方案還是成人方案？</td><td>官網不同頁面的年齡寫法不一致</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：<a href="https://www.tutorabc.com/faq" target="_blank" rel="noopener">TutorABC 常見問題</a>、<a href="https://www.tutorabc.com/site/zh-tw/pricing" target="_blank" rel="noopener">課程方案頁</a>、<a href="https://www.tutorabc.com/site/zh-tw/terms?tab=2" target="_blank" rel="noopener">會員服務使用條款</a>第八條，2026 年 10 月查核。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>孩子未成年，合約依條款須經家長（法定代理人）同意，所以合約也請由家長保管。依《<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=J0170001&amp;flno=11-1" target="_blank" rel="noopener">消費者保護法</a>》第 11-1 條，簽約前可以要求把定型化契約帶回家審閱（30 日以內的合理期間），和孩子一起看過課表、考試日期再決定。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">家長討論</span><h2 id="家長怎麼說TutorABC-Teens-的網路討論">家長怎麼說？<em>TutorABC Teens 的網路討論</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>專談 Teens 課程的公開心得不多，我們看到的 TutorABC 討論多半來自成人學員。比較貼近的一篇，是 2024 年 12 月 PTT 國中板（juniorhigh）一位家長的分享（<a href="https://www.ptt.cc/bbs/juniorhigh/M.1733213525.A.277.html" target="_blank" rel="noopener nofollow">原文</a>）：孩子英文跟不上、平日由祖父母照顧，家長先替孩子報名體驗課。家長的感想有兩面——一方面，業務聯絡很頻繁，一天會打好幾通電話，讓人有點困擾；另一方面，孩子覺得上課內容符合需要、老師不兇，陪在旁邊的長輩也覺得老師很會鼓勵。底下的回覆有人提到家長群組裡不少人在討論，也有人說孩子和老師合得來就繼續上了。</p>
+      <p>這只是一個家庭、一堂體驗課的經驗，作者自己也說還不知道長期效果。官網上的學員見證（例如標題「實測 7 週有效提升成績」）屬於官方行銷內容，沒有公開統計方法，參考時要知道這一點。</p>
+      <p>如果不想再接到推銷電話，可以直接表示拒絕接受行銷；《<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=I0050021&amp;flno=20" target="_blank" rel="noopener">個人資料保護法</a>》第 20 條規定，當事人表示拒絕時，業者應即停止利用其個人資料行銷。TutorABC 整體在 Dcard、PTT 的評價主題，整理在 <a href="/tutorabc-review/">TutorABC 評價</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">老師觀點</span><h2 id="teacher-view">從老師的角度：<em>國中生、高中生各看什麼</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p><strong>國中生（會考）：</strong>會考英語科考的是閱讀與聽力（計分方式見<a href="/cap-english-guide/">會考英文怎麼準備</a>），不考口說。和外師 1 對 1 對話，對聽力反應和語感很有幫助，但分數最終取決於閱讀理解和單字量。所以看 Teens 的課，我會請家長確認三件事：每週有沒有會考題型的閱讀練習、單字有沒有對照課綱字表、模擬考的結果有沒有回饋到下一堂課。三件都有，1 對 1 的彈性才會變成分數。</p>
+      <p><strong>高中生（學測）：</strong>學測英文除了選擇題，還有混合題、中譯英和英文作文等非選擇題（見<a href="https://www.ceec.edu.tw/files/file_pool/1/0P042387242332344267/114%E5%AD%B8%E5%B9%B4%E5%BA%A6%E5%AD%B8%E7%A7%91%E8%83%BD%E5%8A%9B%E6%B8%AC%E9%A9%97%E8%8B%B1%E6%96%87%E8%80%83%E7%A7%91%E9%9D%9E%E9%81%B8%E6%93%87%E9%A1%8C%E9%96%B1%E5%8D%B7%E8%A9%95%E5%88%86%E5%8E%9F%E5%89%87%E8%AA%AA%E6%98%8E.pdf" target="_blank" rel="noopener">大考中心評分原則說明</a>）。寫作要進步，需要有人改孩子「寫出來的東西」，不只是聊天。報名前問清楚：作文是課堂上當場改，還是課後有書面批改？多久寫一篇？</p>
+      <p><strong>體驗課當天，家長可以在旁邊看四件事：</strong>孩子開口的時間有沒有占一半以上；老師聽到錯誤時，會不會當場示範正確說法、再讓孩子說一次；這堂課有沒有清楚的目標（上完能做到什麼）；下課後拿到的回饋是不是具體到哪些字、哪個句型。四件都看得到，代表這位老師的課有結構，不只是聊天。</p>
+      <p><strong>兩個學段都一樣：</strong>考試準備最怕每堂換老師、每次重新認識。選 1 對 1 時，盡量固定一兩位合拍的老師，並請顧問把孩子的弱點清單交接給老師。高中生課業與社團時間零碎，24 小時排課是 TutorABC Teens 實在的優點；國中生則多半需要家長幫忙固定時段、提前 12 小時排好課。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">適合誰</span><h2 id="TutorABC-Teens-適合哪些孩子">TutorABC Teens <em>適合哪些孩子</em>？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p><strong>比較適合：</strong></p>
+      <ul>
+        <li>時間零碎的高中生：補習、社團之外，需要晚上或週末彈性排課。</li>
+        <li>有明確弱點要補的學生：例如聽力跟不上、閱讀太慢，適合 1 對 1 針對性練習。</li>
+        <li>敢開口、能自己準備的孩子：1 對 1 線上課需要學生主動回應，才不會變成老師一個人講。</li>
+        <li>家長能協助固定課表與追蹤學習報告的家庭。</li>
+      </ul>
+      <p><strong>比較不適合：</strong></p>
+      <ul>
+        <li>需要同學一起練、靠同儕帶動才有動力的孩子。</li>
+        <li>家裡沒有人能幫忙提前 12 小時排課、確認孩子準時上線的家庭。</li>
+        <li>主要需求是作文批改，但方案沒有寫明書面批改的學生。</li>
+        <li>考試前很可能需要長時間停課、又不確定合約能否暫停的家庭。</li>
+      </ul>
+      <p>如果還在比較其他線上選擇，<a href="/tutorabc-vs-amazingtalker/">AmazingTalker 與 TutorABC 比較</a>把自選家教和課程公司兩種模式並排列出。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">另一個選項</span><h2 id="國中生什麼情況下實體小班比較合適">國中生什麼情況下，<em>實體小班</em>比較合適？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>TutorABC Teens 以線上 1 對 1 為主，每堂要提前 12 小時預約。如果孩子需要同學一起練、老師每週當面盯進度，或家裡沒有人能幫忙排課，實體小班會比較合適。埃森美語的國中班每班 12 人以內、月繳不綁長約；線上與實體的整體比較，見<a href="/online-vs-in-person-english-banqiao/">兒童線上英文 vs 實體小班</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">常見問題</span><h2 id="TutorABC-Teens-常見問題">TutorABC Teens <em>常見問題</em></h2></div>
+    <div class="faq">
+      <div class="faq-item"><h3 id="TutorABC-Teens-是什麼幾年級可以上" class="faq-h"><button class="faq-q" aria-expanded="false">TutorABC Teens 是什麼？幾年級可以上？<span class="pm"></span></button></h3><div class="faq-a"><p>TutorABC Teens 是 TutorABC 給國中、高中生的英文課，官方全名為「TutorABC Teens 國中高中英文課」，對標 108 課綱，準備會考、學測、統測與英檢。官網用學段而不是年齡區分，課程內容分國中（會考）與高中（學測、統測）兩段；16 歲以上的高中生，報名時請確認適用 Teens 還是成人方案。</p></div></div>
+      <div class="faq-item"><h3 id="TutorABC-Teens-一堂多少錢" class="faq-h"><button class="faq-q" aria-expanded="false">TutorABC Teens 一堂多少錢？<span class="pm"></span></button></h3><div class="faq-a"><p>官網沒有單獨公開 Teens 的價格，只在常見問題列出兒少課程約 NT$300 起／堂，實際費用依學習顧問報價。報價時記得問每堂是 25 還是 45 分鐘、外師與雙語老師的課怎麼分配，以及合約期限能不能涵蓋到考試日期。</p></div></div>
+      <div class="faq-item"><h3 id="TutorABC-Teens-是-1-對-1-嗎老師是外師嗎" class="faq-h"><button class="faq-q" aria-expanded="false">TutorABC Teens 是 1 對 1 嗎？老師是外師嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>TutorABC 官網的 Teens 頁面寫的是 1 對 1 真人課，tutorJr 官網的同名頁面另列 1 對 4 小班。官方的 HLM 教學法由外師負責語感與聽說，雙語老師負責拆解題型；1 對 1 可以自選老師，但條款寫明不能確保排到特定老師。</p></div></div>
+      <div class="faq-item"><h3 id="TutorABC-Teens-對會考有幫助嗎" class="faq-h"><button class="faq-q" aria-expanded="false">TutorABC Teens 對會考有幫助嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>官網表示課程對標 108 課綱、含會考題型與模擬考。實際幫助取決於方案內容：會考英語科考閱讀與聽力，建議確認每週有會考題型的閱讀練習、單字對照課綱字表，以及模擬考結果會回饋到後續課程。和外師對話能培養語感，但不能取代閱讀與單字的練習。</p></div></div>
+      <div class="faq-item"><h3 id="TutorABC-Teens-和-tutorJr-有什麼關係" class="faq-h"><button class="faq-q" aria-expanded="false">TutorABC Teens 和 tutorJr 有什麼關係？<span class="pm"></span></button></h3><div class="faq-a"><p>tutorJr（TutorABC Junior）是 TutorABC 的兒童品牌，官網寫明為 5–15 歲的孩子設計。國中高中英文課同時出現在 TutorABC 與 tutorJr 兩個官網，內容大致相同。國小以下的課程請看本站的 tutorJr 評價。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AE:ROUTE -->
+<section class="section bg-soft">
+  <div class="wrap">
+    <span class="eyebrow eyebrow-yellow">國高中英文</span>
+    <h2 id="選課之外考試本身也要看懂" style="margin-top:14px">選課之外，<em>考試本身也要看懂</em></h2>
+    <div class="divider" style="margin:18px 0 22px"></div>
+    <p class="body" style="max-width:720px">會考怎麼計分、國一英文為什麼突然變難，國中家長可以先讀這兩篇；TutorABC 的整體評價、報價清單和平台比較，也都整理好了。</p>
+    <div style="margin-top:20px"><a href="/kids-online-english-comparison/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">5 大平台一表比較</a><a href="/cap-english-guide/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">會考英文怎麼準備</a><a href="/junior-high-english-banqiao/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">國一英文為什麼變難</a><a href="/tutorabc-review/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">TutorABC 評價</a><a href="/tutorabc-price/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">TutorABC 價格與方案</a><a href="/tutorabc-vs-amazingtalker/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">AmazingTalker vs TutorABC</a></div>
+  </div>
+</section>
+<!-- /AE:ROUTE -->
+<section class="section bg-blue">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <span class="eyebrow eyebrow-green">國中英文</span>
+      <h2 id="國中英文先知道卡在哪" style="margin-top:14px">國中英文，<br><em>先知道卡在哪</em></h2>
+      <p class="body" style="max-width:560px;margin:16px auto 0">孩子英文成績下滑，原因常常在更前面——單字量、句型，或聽力跟不上速度。我們會聽孩子讀、聽孩子說，告訴你現在的程度和先補哪一塊；要不要報名，由你決定。</p>
+      <div class="cta-row">
+        <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 預約免費程度評估</a>
+        <a href="/junior-high-english-banqiao/" class="btn btn-outline">看國中英文課</a>
+      </div>
+      <p class="body" style="max-width:560px;margin:22px auto 0;font-size:14px">接著讀：<a href="/cap-english-guide/">會考英文怎麼準備</a>、<a href="/tutorabc-price/">TutorABC 價格與方案</a>、<a href="/cambridge-english-levels/">劍橋英檢等級對照表</a>。</p>
+      <p class="body" style="max-width:560px;margin:10px auto 0;font-size:14px">如果你剛好住板橋：我們的教室在<a href="/banqiao-english-cram-school/">板橋中正路</a>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- AE:BYL start --><div class="page-meta"><div class="wrap"><span>作者：<a href="/certified-american-teacher-banqiao/">Christopher｜埃森美語創辦人</a>（<a href="/certified-american-teacher-banqiao/">關於作者</a>）</span></div></div>
+<!-- AE:BYL end --></main>
+<!-- AE:FOOT start -->
+<footer class="site-footer"><div class="wrap"><div class="foot-grid"><div><div class="foot-logo"><img class="foot-logo-img" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="34" height="34" loading="lazy" decoding="async">American English 埃森美語</div><p class="foot-tag">板橋中正路在地深耕的美籍外師英文補習班。100% 美籍持證教師、每班 12 人小班制。</p><p class="foot-nap">220 新北市板橋區中正路89巷4號1樓<span class="foot-sep">　｜　</span><a href="tel:+886928067772">☎ 0928-067-772</a></p></div><nav class="foot-links" aria-label="頁尾導覽"><div class="foot-col"><p class="foot-h">課程</p><a href="/banqiao-english-cram-school/">板橋英文補習班</a><a href="/courses/">課程總覽</a><a href="/kids-english-banqiao/">兒童美語</a><a href="/junior-high-english-banqiao/">國中英文</a><a href="/free-trial/">預約試聽</a></div><div class="foot-col"><p class="foot-h">學習資源</p><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/english-pronunciation/">英文發音</a><a href="/download/">免費下載</a><a href="/chart-license/">圖表授權</a></div><div class="foot-col"><p class="foot-h">關於</p><a href="/certified-american-teacher-banqiao/">師資介紹</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="/contact/">聯絡與交通</a></div><div class="foot-col"><p class="foot-h">聯絡</p><a href="tel:+886928067772">電話 0928-067-772</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 線上預約</a><a href="https://maps.app.goo.gl/hLChkEqAMKCsMWpm6" target="_blank" rel="noopener">Google 地圖位置</a><a href="https://www.facebook.com/profile.php?id=61576014571186" target="_blank" rel="noopener">Facebook 粉絲專頁</a></div></nav></div><!-- AE:AINOTE --><p class="foot-ai">英文好，用 AI 也更順手 · <a href="https://essenindustries.com/tw/">essenindustries.com</a></p><!-- /AE:AINOTE -->
+<div class="foot-bottom"><span>© 2026 American English 埃森美語</span><span>私立埃森美語文理短期補習班　｜　新北市政府立案 社補教社字第115026號　｜　統一編號 61476523</span><span>220 新北市板橋區中正路89巷4號1樓</span></div><div class="foot-pref"><div google-add-preferred-source-btn data-theme="dark" data-lang="zh-TW"></div></div></div></footer>
+<!-- AE:FOOT end -->
+<script src="/assets/app.js?v=b537277d"></script>
+</body>
+</html>

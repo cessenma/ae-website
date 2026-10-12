@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<link rel="stylesheet" href="/assets/styles.css?v=52538af7">
+<!-- AE:CRIT end -->
+<!-- AE:FONTS start -->
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2">
+<style>@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0vrx52jJ3Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB3vD2xWr53BJl.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZOIHTWEBlw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58UfivUw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKK58UfivUw4aw.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+<!-- AE:FONTS end -->
+<meta name="theme-color" content="#1A2752">
+<!-- Google Analytics (GA4) -->
+<title>51Talk、OiKID 比較：年齡、師資、約課、合約一張表看懂｜埃森美語</title>
+<meta name="description" content="51Talk 和 OiKID 怎麼選？依兩家官網整理年齡、25 分鐘一對一、師資來源、教材分級、約課與取消、合約與爭議處理，附家長該怎麼判斷適合哪一家。">
+<link rel="canonical" href="https://americanenglish.com.tw/oikid-vs-51talk/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="American English 埃森美語">
+<meta property="og:title" content="51Talk、OiKID 比較：年齡、師資、約課、合約一張表看懂">
+<meta property="og:description" content="51Talk 和 OiKID 怎麼選？依兩家官網整理年齡、25 分鐘一對一、師資來源、教材分級、約課與取消、合約與爭議處理，附家長該怎麼判斷適合哪一家。">
+<meta property="og:url" content="https://americanenglish.com.tw/oikid-vs-51talk/">
+<meta property="og:image" content="https://americanenglish.com.tw/assets/img/blog/girl-headset-computer-lab.webp">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="戴耳機麥克風的女孩在電腦前上課">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"https://americanenglish.com.tw/#organization","name":"埃森美語 American English","alternateName":["埃森美語","American English 埃森美語","American English","埃森美語 - American English Institute"],"legalName":"私立埃森美語文理短期補習班","taxID":"61476523","description":"板橋中正路在地深耕的美籍外師英文補習班，提供 100% 美籍持證教師、每班 12 人小班制的兒童美語與國中英文課程。","url":"https://americanenglish.com.tw/","telephone":"+886-928-067-772","image":["https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","https://americanenglish.com.tw/assets/img/banqiao-small-class-english-classroom.webp","https://americanenglish.com.tw/assets/img/banqiao-kids-english-class.webp","https://americanenglish.com.tw/assets/img/certified-american-teacher-banqiao.webp","https://americanenglish.com.tw/assets/img/kids-confident-english-speaking.webp"],"logo":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"中正路89巷4號1樓","addressLocality":"板橋區","addressRegion":"新北市","postalCode":"220","addressCountry":"TW"},"geo":{"@type":"GeoCoordinates","latitude":25.0145617,"longitude":121.4560468},"areaServed":{"@type":"AdministrativeArea","name":"板橋區","containedInPlace":{"@type":"AdministrativeArea","name":"新北市"}},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"19:00"}],"sameAs":["https://www.google.com/maps?cid=11837760024257631170","https://lin.ee/W9J8TuQ","https://www.facebook.com/profile.php?id=61576014571186"],"hasMap":"https://www.google.com/maps?cid=11837760024257631170","founder":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"knowsLanguage":["en-US","zh-TW"],"knowsAbout":["兒童美語","國中英文","美籍外師英語教學","Phonics 自然發音","劍橋兒童英檢 (Cambridge YLE)","GEPT 全民英檢","國中教育會考英文","英語會話與口說","板橋英文補習班"],"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+886-928-067-772","url":"https://lin.ee/W9J8TuQ","availableLanguage":["zh-TW","en"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Christopher","jobTitle":"創辦人暨美籍持證英文教師 (Founder & Licensed American English Teacher)","worksFor":{"@id":"https://americanenglish.com.tw/#organization"},"alumniOf":{"@type":"CollegeOrUniversity","name":"University of Michigan"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"美國正式教師執照 (U.S. State Teaching Certificate)"},"knowsLanguage":["en-US","zh-TW"],"@id":"https://americanenglish.com.tw/#christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"51Talk、OiKID 比較：師資、約課、合約與適合誰","description":"51Talk 和 OiKID 怎麼選？依兩家官網整理年齡、25 分鐘一對一、師資來源、教材分級、約課與取消、合約與爭議處理，附家長該怎麼判斷適合哪一家。","image":"https://americanenglish.com.tw/assets/img/blog/girl-headset-computer-lab.webp","datePublished":"2026-10-13","dateModified":"2026-10-13","inLanguage":"zh-Hant-TW","author":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"publisher":{"@id":"https://americanenglish.com.tw/#organization"},"mainEntityOfPage":"https://americanenglish.com.tw/oikid-vs-51talk/","@id":"https://americanenglish.com.tw/oikid-vs-51talk/#article","alternativeHeadline":"51Talk、OiKID 比較：年齡、師資、約課、合約一張表看懂","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"hasPart":{"@id":"https://americanenglish.com.tw/oikid-vs-51talk/#faq"}}</script>
+<style>.compare.even td:last-child{background:transparent;color:var(--muted);font-weight:400}.compare.even thead th:last-child{background:#fff;color:inherit}</style>
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/oikid-vs-51talk/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/oikid-vs-51talk/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="twitter:image" content="https://americanenglish.com.tw/assets/img/blog/girl-headset-computer-lab.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://americanenglish.com.tw/blog/"},{"@type":"ListItem","position":3,"name":"51Talk、OiKID 比較：師資、約課、合約與適合誰"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://americanenglish.com.tw/oikid-vs-51talk/#faq","url":"https://americanenglish.com.tw/oikid-vs-51talk/","inLanguage":"zh-Hant-TW","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"mainEntity":[{"@type":"Question","name":"51Talk 和 OiKID 哪一家比較便宜？","acceptedAnswer":{"@type":"Answer","text":"兩家官網都沒有公開價格。目前查得到的數字：OiKID 依 2024 年刊在其官方部落格的家長文章，只算一對一課約每堂 545 到 600 元；51Talk 官方部落格 2024 年的一篇文章提到平均一堂約 250 元。兩個數字的來源與算法不同，只能當參考，請各自要求書面報價，並把合約條件一起比較。"}},{"@type":"Question","name":"哪一家的老師會說中文？","acceptedAnswer":{"@type":"Answer","text":"OiKID 有會說中文的雙語老師可以選，也有外師。51Talk 以外師為主，官方部落格寫明課堂上不會有中文翻譯。剛起步或怕生的孩子，可以先從 OiKID 的雙語老師開始；已經聽得懂簡單英文的孩子，51Talk 的全英文環境開口量比較大。"}},{"@type":"Question","name":"哪一家約課比較彈性？","acceptedAnswer":{"@type":"Answer","text":"51Talk 官方部落格說台灣區 24 小時都能排課、最晚開課前 30 分鐘預約，也能用手機上課。OiKID 依家長文章描述，每週固定時間開放下一週的課表，取消要在 24 小時前，熱門老師需要提早約；官網建議用電腦或 iPad 上課。"}},{"@type":"Question","name":"兩家的老師從哪裡來？","acceptedAnswer":{"@type":"Answer","text":"OiKID 有台灣籍的雙語老師，官網活動頁寫外師來自歐美澳，師資頁的國籍篩選有台灣、歐美、紐澳、非洲、亞洲。51Talk 官方部落格寫老師來自菲律賓、美國、加拿大等地，其中許多來自菲律賓。口音好不好與國籍沒有必然關係，建議體驗時直接聽。"}},{"@type":"Question","name":"簽約前，兩家的合約要注意什麼？","acceptedAnswer":{"@type":"Answer","text":"OiKID 官網條款寫明，購買後不得以個人因素任意解約或要求退費，服務期滿未上完的堂數不再提供，適用台灣法律。51Talk 使用者協定寫明可隨時書面終止，但已付費用原則上不退，連續 180 天未使用可能被取消，適用新加坡法律並在新加坡仲裁。實際購課合約可能另有約定，付款前請拿到完整的書面合約。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://americanenglish.com.tw/#website","url":"https://americanenglish.com.tw/","name":"American English 埃森美語","alternateName":["埃森美語","埃森美語 American English"],"inLanguage":"zh-Hant-TW","publisher":{"@id":"https://americanenglish.com.tw/#organization"}}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');if(!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};window._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}fbq('init','1023907773471013');fbq('track','PageView');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);var f=document.createElement('script');f.async=1;f.src='https://connect.facebook.net/en_US/fbevents.js';document.head.appendChild(f);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body data-page="oikid-vs-51talk">
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<nav class="drawer" id="drawer" aria-label="行動版選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></nav>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="bg-deco"></div>
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/blog/">部落格</a> ／ 51Talk、OiKID 比較</div>
+    <span class="eyebrow eyebrow-green reveal">線上英文平台 · 比較</span>
+    <h1 class="reveal d1"><span class="h1s">51Talk、OiKID <em>比較</em>：</span><br><span class="h1s kp">師資、約課、合約與適合誰</span></h1>
+    <div class="divider reveal d1"></div>
+    <p class="body reveal d2">作者：Christopher｜埃森美語創辦人｜美國密西根大學畢業、美國正式教師執照<!-- AE:PAGEMETA start -->｜<span class="byl-d">最後更新 <time datetime="2026-10-13">2026 年 10 月 13 日</time></span><!-- AE:PAGEMETA end --></p>
+    <div class="hero-cta reveal d2" style="margin-top:16px">
+      <a class="btn btn-primary" href="#compare-table">看比較總表 →</a>
+      <a class="btn btn-outline" href="#who-fits">哪一家適合我的孩子？</a>
+    </div>
+    <p class="body reveal d2" style="font-size:13px;margin-top:10px">本頁是埃森美語依兩家官方資料整理的比較，不是任何一家的官方網站；OiKID 官網為 <a href="https://www.oikid.com/" target="_blank" rel="noopener">www.oikid.com</a>，51Talk 台灣官網為 <a href="https://tw.51talk.com/" target="_blank" rel="noopener">tw.51talk.com</a>。</p>
+    <div class="reveal d2" style="margin-top:14px;max-width:560px;padding:12px 16px;border-radius:14px;background:#fff;border:2px solid rgba(26,39,82,.10);font-size:13.5px;line-height:1.75;color:var(--muted)"><strong style="color:var(--navy)">利益揭露</strong>：作者經營板橋的實體英文補習班，和 OiKID、51Talk 都沒有合作關係，沒有拿任何平台的錢，頁面上也沒有推薦或聯盟連結；我們沒有購買過這兩家的課程。資料查核於 2026 年 10 月，兩家的方案與規則都可能變動，請以官網與書面合約為準。</div>
+    <figure class="post-hero pf-blue reveal d2">
+      <img src="/assets/img/blog/girl-headset-computer-lab.webp" srcset="/assets/img/blog/girl-headset-computer-lab-800.webp 800w, /assets/img/blog/girl-headset-computer-lab.webp 1600w" sizes="(max-width:828px) 100vw, 732px" width="1600" height="900" alt="戴耳機麥克風的女孩在電腦前上課" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+<!-- AE:TOC --><nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span><a href="#兩家是誰公司與簽約對象">兩家是誰？公司與簽約對象</a><a href="#年齡課長與上課人數">年齡、課長與上課人數</a><a href="#師資雙語老師-vs-全外師">師資：雙語老師 vs 全外師</a><a href="#教材與分級CCSS-對上-CEFR">教材與分級：CCSS 對上 CEFR</a><a href="#約課取消與上課裝置">約課、取消與上課裝置</a><a href="#價格與合約先看書面條款">價格與合約：先看書面條款</a><a href="#who-fits">哪一家適合誰？</a><a href="#什麼時候實體小班比這兩家都合適">什麼時候，實體小班比這兩家都合適？</a><a href="#51TalkOiKID-比較常見問題">51Talk、OiKID 比較常見問題</a></nav><!-- /AE:TOC -->
+
+    <div class="prose reveal">
+      <p>OiKID 和 51Talk 是台灣家長常拿來互相比較的兩個兒童線上英文平台：兩家都主打 3–15 歲、每堂 25 分鐘的真人一對一，Dcard 上也有家長同時預約兩家的體驗課。把兩家的官網、條款與官方部落格攤開來看，差別其實很清楚——<strong>OiKID 是台灣公司，可以選會說中文的雙語老師，家長每週自己約課；51Talk 是在美國上市的跨國品牌，以外師為主，官方說台灣區 24 小時都能排課、最晚開課前 30 分鐘預約</strong>。下表全部取自兩家的官方資料，不是我們的試上心得（我們沒有上過任何一家的課）；表格後面再逐項說明怎麼依孩子的狀況判斷。</p>
+    </div>
+    <table class="compare reveal even" id="compare-table">
+      <caption>OiKID 與 51Talk 官方資料對照（2026 年 10 月查核）</caption>
+      <thead><tr><th scope="col" style="min-width:5em">項目</th><th scope="col">OiKID</th><th scope="col">51Talk</th></tr></thead>
+      <tbody>
+        <tr><td>官網</td><td>www.oikid.com</td><td>tw.51talk.com</td></tr>
+        <tr><td>經營／簽約對象</td><td>感動智慧科技股份有限公司（台灣）</td><td>美國上市（NYSE American: COE）；使用者協定的簽約方為新加坡 HELLOWORLD ONLINE EDUCATION PTE. LTD. 及關聯公司</td></tr>
+        <tr><td>適合年齡</td><td>官網：3–15 歲</td><td>官方部落格：3–15 歲；課程表從幼稚園排到高中</td></tr>
+        <tr><td>每堂長度</td><td>25 分鐘</td><td>25 分鐘</td></tr>
+        <tr><td>上課人數</td><td>一對一精品課；另有主題式摩天輪課</td><td>一對一；課程頁另列有公開課等學習資源</td></tr>
+        <tr><td>老師類型</td><td>雙語老師（會說中文）與外師，家長自選</td><td>外師，家長自選；官方部落格寫課堂上不會有中文翻譯</td></tr>
+        <tr><td>師資來源</td><td>活動頁：外師來自歐美澳；師資頁國籍篩選有台灣、歐美、紐澳、非洲、亞洲</td><td>官方部落格：老師來自菲律賓、美國、加拿大等，其中許多來自菲律賓</td></tr>
+        <tr><td>教材</td><td>自主研發，依美國 CCSS，Level 1–8</td><td>自主研發，依 CEFR，Level S、L0–L9，對照小學英檢與全民英檢</td></tr>
+        <tr><td>約課</td><td>家長文章：每週固定時間開放下一週課表，每天 9:00–22:00</td><td>官方部落格：台灣區 24 小時可排課，最晚開課前 30 分鐘預約</td></tr>
+        <tr><td>取消</td><td>家長文章：上課 24 小時前</td><td>官方部落格用戶專訪：開課前 1 小時仍可取消</td></tr>
+        <tr><td>上課裝置</td><td>電腦或 iPad；官網標示手機與 Android 平板不支援</td><td>手機、平板、電腦皆可（App 說明）</td></tr>
+        <tr><td>價格</td><td>官網未公開，需留資料洽詢</td><td>官網未公開，需留資料洽詢</td></tr>
+        <tr><td>中途解約</td><td>官網條款：購買後不得以個人因素任意解約或要求退費</td><td>使用者協定：可隨時書面終止，但除另有書面約定，已付費用不退</td></tr>
+        <tr><td>爭議處理</td><td>中華民國法律；臺灣臺北地方法院</td><td>新加坡法律；新加坡國際仲裁中心，以英文仲裁</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：OiKID 官網首頁、品牌價值、全球師資、精品課程、建議設備、會員權益與服務條款（oikid.com）；51Talk 台灣官網首頁、課程分類、常見問題、尋找老師、頁尾連結的使用者協定（2023-01-03 版）、官方部落格與 App Store 說明（tw.51talk.com）。2026 年 10 月 12–13 日查核。「家長文章」指刊在 OiKID 官方部落格的家長分享，不是官網公告。</p>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">公司背景</span><h2 id="兩家是誰公司與簽約對象">兩家是誰？<em>公司與簽約對象</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p><strong>OiKID</strong> 是台灣的兒童線上英文品牌。官網頁尾與會員條款寫的經營公司是感動智慧科技股份有限公司；條款適用中華民國法律，爭議以臺灣臺北地方法院為第一審法院。客服電話 02-7730-3959，每天 9:00–21:00。</p>
+      <p><strong>51Talk</strong> 是跨國的線上英語品牌，台灣官網標示母公司在美國 NYSE American 上市（代號 COE）。台灣官網頁尾連到的使用者協定（2023 年 1 月 3 日版）寫明，服務由新加坡的 HELLOWORLD ONLINE EDUCATION PTE. LTD. 及其關聯公司以 51Talk 品牌提供，適用新加坡法律，爭議交由新加坡國際仲裁中心以英文仲裁；App Store 上 51Talk App 的發行商也是這家公司。</p>
+      <p>這一段看起來很法律，對家長卻很實際：<strong>萬一有爭議，你面對的是哪一家公司、在哪裡、用什麼語言處理</strong>。簽約時看清楚合約上的公司名稱，並把報價、合約與往來訊息都留下書面紀錄。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">上課形式</span><h2 id="年齡課長與上課人數">年齡、課長與<em>上課人數</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>兩家的基本形式幾乎相同：<strong>3–15 歲、每堂 25 分鐘、真人一對一</strong>。OiKID 官網把孩子分成 3–5、6–7、8–10、11–15 歲四組，每組都建議每週上 3 次；51Talk 官網的常見問題建議一週 3–4 次，強調「短時高頻」。</p>
+      <p>差別在一對一以外的部分。OiKID 的方案除了一對一精品課，還搭配數十到上百堂的「摩天輪」主題課；依刊在 OiKID 官方部落格的家長文章，摩天輪有一對四的互動課，也有學生只能打字互動的直播課。51Talk 台灣官網以一對一為主，課程頁另列有公開課、繪本館、AI 學習樂園等資源。比較方案時，<strong>請把一對一的堂數單獨拿出來比</strong>，不要被總堂數混淆。</p>
+      <p>老師的角度：一對一的好處是孩子開口量大，老師能隨時配合他調整；限制是少了同儕。25 分鐘對國小低年級剛好，但對 3–4 歲的孩子，不論哪一家，通常都需要大人在旁邊協助。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">師資來源</span><h2 id="師資雙語老師-vs-全外師">師資：<em>雙語老師 vs 全外師</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>這是兩家最大的差別。<strong>OiKID 有會說中文的雙語老師可選</strong>，也有外師。官網活動頁寫外籍老師來自歐美澳、具 TESOL／TEFL 證照與幼教經驗；師資頁可以依台灣、歐美、紐澳、非洲、亞洲篩選國籍。官網公開展示的老師檔案（2021 年建立）中，雙語老師多為台灣籍，可教 Level 1–4。</p>
+      <p><strong>51Talk 以外師為主</strong>。台灣官方部落格寫，老師來自菲律賓、美國、加拿大等地，另一篇說「許多來自菲律賓的老師」熱情親切；也寫明因為是外師，課堂上不會有中文翻譯。師資規模的數字，官方各處寫法不一（App 說明寫超過 10,000 名，首頁寫 3 萬多名）；首頁說外師要經過六層選拔、通過率 3%，「尋找老師」頁則說每堂課後學生可以替老師評分，平均低於 90 分（滿分 100）的老師會被系統淘汰。</p>
+      <p>怎麼判斷？剛起步、會怕的孩子，OiKID 的雙語老師是比較溫和的起點；已經聽得懂簡單英文、需要大量開口的孩子，51Talk 的全英文環境和充足的時段是優勢。至於口音，國籍不等於好壞，<strong>重點是老師的發音清不清楚、會不會給孩子正確的示範</strong>。兩家都能自選老師，體驗時多聽、上課後看評價，比看國籍準確。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">教材分級</span><h2 id="教材與分級CCSS-對上-CEFR">教材與分級：<em>CCSS 對上 CEFR</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>兩家都是自己編教材，參考的框架不同。OiKID 依美國 CCSS 各州共同核心標準，分 Level 1–8，主題課很多（自然科學、歷史人文、旅遊生活、辯論），官網把各級對照到劍橋兒童英檢的 Starters、Movers、Flyers。51Talk 依歐洲共同語言參考標準 CEFR，分 Level S、L0–L9，官網把各級對照到台灣學段與小學英檢、全民英檢初級和中級；首頁也寫教材結合了 CCSS、劍橋英文、108 課綱與全民英檢。</p>
+    </div>
+    <table class="compare reveal even">
+      <caption>兩家官網的等級對照（各自的說法，彼此不能直接換算）</caption>
+      <thead><tr><th scope="col" style="min-width:5em">台灣學段</th><th scope="col">OiKID</th><th scope="col">51Talk</th></tr></thead>
+      <tbody>
+        <tr><td>幼稚園</td><td>官網未對照幼稚園；Level 1–2 為入門級（美國一年級前程度）</td><td>Level S</td></tr>
+        <tr><td>國小</td><td>Level 1–4（官網對照國小二～六年級程度；Starters、Movers）</td><td>L0–L3（L1–L3 對照小學英檢）</td></tr>
+        <tr><td>國中</td><td>Level 5–6（A2+～B1+；對照 Flyers）</td><td>L4–L6（對照全民英檢初級）</td></tr>
+        <tr><td>高中</td><td>Level 7–8（B1+）</td><td>L7–L9（對照全民英檢中級）</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：OiKID 官網精品課程頁「關於程度分級」；51Talk 台灣官網課程分類頁（tw.51talk.com/course），2026 年 10 月 12–13 日查核。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>怎麼選？孩子的目標如果是劍橋兒童英檢（YLE），OiKID 的對照比較直接；目標是小學英檢或全民英檢，51Talk 的分級說明對得比較清楚。兩家的對照都是自己的說法，實際程度還是要靠分級測驗和你自己的觀察。CEFR、劍橋與全民英檢之間怎麼對應，可以看<a href="/kids-english-levels/">兒童英文程度分級指南</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">時間彈性</span><h2 id="約課取消與上課裝置">約課、取消與<em>上課裝置</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>如果家裡的時間很難排，這一段最關鍵。<strong>51Talk 的時間彈性明顯比較大</strong>：官方部落格寫台灣區 24 小時都能排課、最晚開課前 30 分鐘預約，App 說明寫全天有 36 個時段；一篇用戶專訪提到，開課前 1 小時仍可以取消。上課可以用手機、平板或電腦，透過 51Talk 的 Air Class 教室；官網上課指引說，上課前 1 小時就能進入教室等老師。</p>
+      <p><strong>OiKID 則是「每週約一次」的節奏</strong>：刊在其官方部落格的家長文章描述，每週固定時間開放下一週的課表，上課時段為每天 9:00–22:00，取消要在 24 小時前，熱門老師開放後很快額滿。設備上，官網建議用電腦或 iPad，手機與 Android 平板標示不支援。</p>
+      <p>老師的角度：彈性和穩定是一體兩面。51Talk 臨時排課很方便，但如果每次都排到不同的老師，孩子得一直重新適應；OiKID 要家長每週費心約課，但只要約得到，固定一位老師對低年級孩子的安全感很有幫助。不管選哪一家，都可以先準備 3–5 位喜歡的老師名單。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">價格 · 合約</span><h2 id="價格與合約先看書面條款">價格與合約：<em>先看書面條款</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p><strong>兩家官網都沒有公開價格</strong>，都要留資料由顧問聯絡。目前查得到的數字都不是官網價目表：OiKID 方面，2024 年刊在 OiKID 官方部落格的家長文章列出四種方案，總價 62,400–156,000 元，只算一對一精品課約每堂 545–600 元（算法見<a href="/oikid-price/">OiKID 價格與費用整理</a>）；51Talk 方面，51Talk 官方部落格 2024 年 10 月的一篇文章提到「平均一堂課 250 元」。兩個數字的來源和計算方式不同，只能當作量級參考，實際請各自要求書面報價。</p>
+    </div>
+    <table class="compare reveal even">
+      <caption>兩家公開條款的重點對照</caption>
+      <thead><tr><th scope="col" style="min-width:5em">條款</th><th scope="col">OiKID（官網會員條款）</th><th scope="col">51Talk（使用者協定，2023-01-03 版）</th></tr></thead>
+      <tbody>
+        <tr><td>中途終止</td><td>購買後不得以個人因素任意解約、終止或要求退費</td><td>可隨時以書面通知終止；除另有書面約定，已付費用不退</td></tr>
+        <tr><td>沒用完的課</td><td>服務期間屆滿，不論上了幾堂，服務義務即終止</td><td>購買後連續 180 天未使用，可能在通知後被取消，且不退款</td></tr>
+        <tr><td>帳號與轉讓</td><td>會籍與堂數不得轉賣、出借</td><td>帳戶僅限本人使用，不得轉讓或出借</td></tr>
+        <tr><td>準據法與爭議</td><td>中華民國法律；臺灣臺北地方法院</td><td>新加坡法律；新加坡國際仲裁中心，以英文仲裁</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：OiKID 官網〈會員權益與服務條款〉；51Talk 台灣官網頁尾「Terms」連結的使用者協定（最後更新 2023-01-03），2026 年 10 月 12 日查核。實際購課時簽署的合約可能另有約定。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>兩家的一般條款，對中途解約的退費都寫得保守。實際購課的合約可能另有退費約定（例如網路上描述的 OiKID 退費計算），所以<strong>付款前務必拿到完整的書面合約</strong>。台灣另有政府公告的《網際網路教學服務定型化契約應記載及不得記載事項》（現由數位發展部主管），可以拿來對照。第一次購買，不論哪一家，我都建議先從最小的方案或堂數開始。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">怎麼選</span><h2 id="who-fits">哪一家<em>適合誰</em>？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p><strong>比較適合 OiKID 的情況：</strong></p>
+      <ul>
+        <li>孩子 5–9 歲、剛起步或怕生，需要會說中文的老師先陪他開口。</li>
+        <li>家長希望有系統的分級教材，也喜歡自然科學、歷史這類知識型主題。</li>
+        <li>目標是劍橋兒童英檢（Starters、Movers、Flyers）。</li>
+        <li>家長每週能固定花時間約課，想讓孩子跟固定幾位老師上。</li>
+        <li>希望合約適用台灣法律、在台灣處理爭議。</li>
+      </ul>
+      <p><strong>比較適合 51Talk 的情況：</strong></p>
+      <ul>
+        <li>孩子聽得懂簡單英文，需要的是大量、全英文的開口練習。</li>
+        <li>全家作息不固定，需要臨時排課、在清晨或深夜上課，或用手機上課。</li>
+        <li>目標是小學英檢或全民英檢，想對照 51Talk 的 L1–L9 分級。</li>
+        <li>預算是主要考量：就目前查得到的數字，51Talk 每堂的量級較低，但兩個數字來源不同，仍請以書面報價比較。</li>
+      </ul>
+      <p><strong>兩家都可能不適合的情況：</strong>3–4 歲、還坐不住 25 分鐘螢幕課的孩子；需要同儕一起練、在團體裡才肯開口的孩子；以及沒辦法每週陪孩子處理設備與約課的家庭。</p>
+      <p>Dcard 上同時比較過兩家的家長，常提到的取捨是：OiKID 介面可愛、雙語老師讓孩子比較不緊張，但要每週約課；51Talk 價格較親民、全英文上課，但有家長在意口音（這點因人而異，體驗時直接聽最準），熱門老師也不好約（例如<a href="https://www.dcard.tw/f/parentchild/p/255685197" target="_blank" rel="noopener">這篇 2024 年的體驗比較</a>與<a href="https://www.dcard.tw/f/parentchild/p/260471481" target="_blank" rel="noopener">這篇高年級選平台的討論</a>）。如果你也在考慮 tutorJr，另見<a href="/tutorjr-vs-oikid/">tutorJr、OiKID 比較</a>；只想深入了解 OiKID，見<a href="/oikid-review/">OiKID 評價整理</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">實體小班</span><h2 id="什麼時候實體小班比這兩家都合適">什麼時候，<em>實體小班</em>比這兩家都合適？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>這兩家的共同點，是每堂課只有孩子和一位老師分處螢幕兩端，而且每週約到的老師未必相同。若你的孩子需要一位長期熟悉他的老師、容易被螢幕外的事物吸走注意力，或是要先看到同學開口才敢跟著說，固定老師與固定同學的實體小班會是比較穩的選擇。線上與實體怎麼取捨，完整的比較在<a href="/online-vs-in-person-english-banqiao/">兒童線上英文 vs 實體小班</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">常見問題</span><h2 id="51TalkOiKID-比較常見問題">51Talk、OiKID 比較<em>常見問題</em></h2></div>
+    <div class="faq">
+      <div class="faq-item"><h3 id="51Talk-和-OiKID-哪一家比較便宜" class="faq-h"><button class="faq-q" aria-expanded="false">51Talk 和 OiKID 哪一家比較便宜？<span class="pm"></span></button></h3><div class="faq-a"><p>兩家官網都沒有公開價格。目前查得到的數字：OiKID 依 2024 年刊在其官方部落格的家長文章，只算一對一課約每堂 545 到 600 元；51Talk 官方部落格 2024 年的一篇文章提到平均一堂約 250 元。兩個數字的來源與算法不同，只能當參考，請各自要求書面報價，並把合約條件一起比較。</p></div></div>
+      <div class="faq-item"><h3 id="哪一家的老師會說中文" class="faq-h"><button class="faq-q" aria-expanded="false">哪一家的老師會說中文？<span class="pm"></span></button></h3><div class="faq-a"><p>OiKID 有會說中文的雙語老師可以選，也有外師。51Talk 以外師為主，官方部落格寫明課堂上不會有中文翻譯。剛起步或怕生的孩子，可以先從 OiKID 的雙語老師開始；已經聽得懂簡單英文的孩子，51Talk 的全英文環境開口量比較大。</p></div></div>
+      <div class="faq-item"><h3 id="哪一家約課比較彈性" class="faq-h"><button class="faq-q" aria-expanded="false">哪一家約課比較彈性？<span class="pm"></span></button></h3><div class="faq-a"><p>51Talk 官方部落格說台灣區 24 小時都能排課、最晚開課前 30 分鐘預約，也能用手機上課。OiKID 依家長文章描述，每週固定時間開放下一週的課表，取消要在 24 小時前，熱門老師需要提早約；官網建議用電腦或 iPad 上課。</p></div></div>
+      <div class="faq-item"><h3 id="兩家的老師從哪裡來" class="faq-h"><button class="faq-q" aria-expanded="false">兩家的老師從哪裡來？<span class="pm"></span></button></h3><div class="faq-a"><p>OiKID 有台灣籍的雙語老師，官網活動頁寫外師來自歐美澳，師資頁的國籍篩選有台灣、歐美、紐澳、非洲、亞洲。51Talk 官方部落格寫老師來自菲律賓、美國、加拿大等地，其中許多來自菲律賓。口音好不好與國籍沒有必然關係，建議體驗時直接聽。</p></div></div>
+      <div class="faq-item"><h3 id="簽約前兩家的合約要注意什麼" class="faq-h"><button class="faq-q" aria-expanded="false">簽約前，兩家的合約要注意什麼？<span class="pm"></span></button></h3><div class="faq-a"><p>OiKID 官網條款寫明，購買後不得以個人因素任意解約或要求退費，服務期滿未上完的堂數不再提供，適用台灣法律。51Talk 使用者協定寫明可隨時書面終止，但已付費用原則上不退，連續 180 天未使用可能被取消，適用新加坡法律並在新加坡仲裁。實際購課合約可能另有約定，付款前請拿到完整的書面合約。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AE:ROUTE -->
+<section class="section bg-soft">
+  <div class="wrap">
+    <span class="eyebrow eyebrow-yellow">繼續比較</span>
+    <h2 id="還在猶豫這幾篇接著看" style="margin-top:14px">還在猶豫？<em>這幾篇接著看</em></h2>
+    <div class="divider" style="margin:18px 0 22px"></div>
+    <p class="body" style="max-width:720px">如果你也在看 tutorJr，或想知道 OiKID 方案換算成每堂多少錢、App 和師資的細節，下面幾篇分開整理；選課之前想先比較補習班、家教與自學，也有一篇完整的比較。</p>
+    <div style="margin-top:20px"><a href="/kids-online-english-comparison/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">5 大平台一表比較</a><a href="/tutorjr-vs-oikid/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">tutorJr、OiKID 比較</a><a href="/oikid-review/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">OiKID 評價：師資、App、合約</a><a href="/oikid-price/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">OiKID 價格與費用整理</a><a href="/cram-school-vs-tutor-vs-self-study/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">補習班、家教、自學怎麼選</a></div>
+  </div>
+</section>
+<!-- /AE:ROUTE -->
+<section class="section bg-blue">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <span class="eyebrow eyebrow-green">免費程度評估</span>
+      <h2 id="兩家都還沒決定先確認孩子的程度" style="margin-top:14px">兩家都還沒決定？<br><em>先確認孩子的程度</em></h2>
+      <p class="body" style="max-width:560px;margin:16px auto 0">要選雙語老師還是外師、從哪個等級開始，都取決於孩子現在聽得懂多少、說得出多少。板橋、雙北的家長可以用 LINE 跟我約時間：我會請孩子用英文聊幾句、唸一小段，當場告訴你他在哪個階段、比較適合怎麼起步——免費，不推銷。</p>
+      <div class="cta-row">
+        <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 預約免費程度評估</a>
+        <a href="/oikid-review/" class="btn btn-outline">看 OiKID 評價整理</a>
+      </div>
+      <p class="body" style="max-width:560px;margin:22px auto 0;font-size:14px">接著讀：<a href="/online-vs-in-person-english-banqiao/">兒童線上英文 vs 實體小班</a>、<a href="/kids-english-cram-school-guide/">兒童美語怎麼挑：7 個評估重點</a>、<a href="/kids-english-levels/">兒童英文程度分級指南</a>。</p>
+      <p class="body" style="max-width:560px;margin:10px auto 0;font-size:14px">如果你剛好住板橋：我們的教室在<a href="/banqiao-english-cram-school/">板橋中正路</a>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- AE:BYL start --><div class="page-meta"><div class="wrap"><span>作者：<a href="/certified-american-teacher-banqiao/">Christopher｜埃森美語創辦人</a>（<a href="/certified-american-teacher-banqiao/">關於作者</a>）</span></div></div>
+<!-- AE:BYL end --></main>
+<!-- AE:FOOT start -->
+<footer class="site-footer"><div class="wrap"><div class="foot-grid"><div><div class="foot-logo"><img class="foot-logo-img" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="34" height="34" loading="lazy" decoding="async">American English 埃森美語</div><p class="foot-tag">板橋中正路在地深耕的美籍外師英文補習班。100% 美籍持證教師、每班 12 人小班制。</p><p class="foot-nap">220 新北市板橋區中正路89巷4號1樓<span class="foot-sep">　｜　</span><a href="tel:+886928067772">☎ 0928-067-772</a></p></div><nav class="foot-links" aria-label="頁尾導覽"><div class="foot-col"><p class="foot-h">課程</p><a href="/banqiao-english-cram-school/">板橋英文補習班</a><a href="/courses/">課程總覽</a><a href="/kids-english-banqiao/">兒童美語</a><a href="/junior-high-english-banqiao/">國中英文</a><a href="/free-trial/">預約試聽</a></div><div class="foot-col"><p class="foot-h">學習資源</p><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/english-pronunciation/">英文發音</a><a href="/download/">免費下載</a><a href="/chart-license/">圖表授權</a></div><div class="foot-col"><p class="foot-h">關於</p><a href="/certified-american-teacher-banqiao/">師資介紹</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="/contact/">聯絡與交通</a></div><div class="foot-col"><p class="foot-h">聯絡</p><a href="tel:+886928067772">電話 0928-067-772</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 線上預約</a><a href="https://maps.app.goo.gl/hLChkEqAMKCsMWpm6" target="_blank" rel="noopener">Google 地圖位置</a><a href="https://www.facebook.com/profile.php?id=61576014571186" target="_blank" rel="noopener">Facebook 粉絲專頁</a></div></nav></div><!-- AE:AINOTE --><p class="foot-ai">英文好，用 AI 也更順手 · <a href="https://essenindustries.com/tw/">essenindustries.com</a></p><!-- /AE:AINOTE -->
+<div class="foot-bottom"><span>© 2026 American English 埃森美語</span><span>私立埃森美語文理短期補習班　｜　新北市政府立案 社補教社字第115026號　｜　統一編號 61476523</span><span>220 新北市板橋區中正路89巷4號1樓</span></div><div class="foot-pref"><div google-add-preferred-source-btn data-theme="dark" data-lang="zh-TW"></div></div></div></footer>
+<!-- AE:FOOT end -->
+<script src="/assets/app.js?v=b537277d"></script>
+</body>
+</html>

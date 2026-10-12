@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<link rel="stylesheet" href="/assets/styles.css?v=52538af7">
+<!-- AE:CRIT end -->
+<!-- AE:FONTS start -->
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2">
+<style>@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0vrx52jJ3Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB3vD2xWr53BJl.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZOIHTWEBlw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58UfivUw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKK58UfivUw4aw.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+<!-- AE:FONTS end -->
+<meta name="theme-color" content="#1A2752">
+<!-- Google Analytics (GA4) -->
+<title>tutorJr 評價（TutorABC Junior）：PTT、Dcard 心得與負評整理｜埃森美語</title>
+<meta name="description" content="tutorJr（TutorABC Junior）評價完整版：官網寫的適合年齡、25／45 分鐘一對一、牛津授權教材、師資與選老師規則、訂課取消條款，加上 PTT、Dcard 與部落格正負評整理。">
+<link rel="canonical" href="https://americanenglish.com.tw/tutorjr-review/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="American English 埃森美語">
+<meta property="og:title" content="tutorJr 評價（TutorABC Junior）：PTT、Dcard 心得與負評整理">
+<meta property="og:description" content="tutorJr（TutorABC Junior）評價完整版：官網寫的適合年齡、25／45 分鐘一對一、牛津授權教材、師資與選老師規則、訂課取消條款，加上 PTT、Dcard 與部落格正負評整理。">
+<meta property="og:url" content="https://americanenglish.com.tw/tutorjr-review/">
+<meta property="og:image" content="https://americanenglish.com.tw/assets/img/blog/girl-tablet-lesson-kitchen-table.webp">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="小女孩在餐桌前用平板上課">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"https://americanenglish.com.tw/#organization","name":"埃森美語 American English","alternateName":["埃森美語","American English 埃森美語","American English","埃森美語 - American English Institute"],"legalName":"私立埃森美語文理短期補習班","taxID":"61476523","description":"板橋中正路在地深耕的美籍外師英文補習班，提供 100% 美籍持證教師、每班 12 人小班制的兒童美語與國中英文課程。","url":"https://americanenglish.com.tw/","telephone":"+886-928-067-772","image":["https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","https://americanenglish.com.tw/assets/img/banqiao-small-class-english-classroom.webp","https://americanenglish.com.tw/assets/img/banqiao-kids-english-class.webp","https://americanenglish.com.tw/assets/img/certified-american-teacher-banqiao.webp","https://americanenglish.com.tw/assets/img/kids-confident-english-speaking.webp"],"logo":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"中正路89巷4號1樓","addressLocality":"板橋區","addressRegion":"新北市","postalCode":"220","addressCountry":"TW"},"geo":{"@type":"GeoCoordinates","latitude":25.0145617,"longitude":121.4560468},"areaServed":{"@type":"AdministrativeArea","name":"板橋區","containedInPlace":{"@type":"AdministrativeArea","name":"新北市"}},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"19:00"}],"sameAs":["https://www.google.com/maps?cid=11837760024257631170","https://lin.ee/W9J8TuQ","https://www.facebook.com/profile.php?id=61576014571186"],"hasMap":"https://www.google.com/maps?cid=11837760024257631170","founder":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"knowsLanguage":["en-US","zh-TW"],"knowsAbout":["兒童美語","國中英文","美籍外師英語教學","Phonics 自然發音","劍橋兒童英檢 (Cambridge YLE)","GEPT 全民英檢","國中教育會考英文","英語會話與口說","板橋英文補習班"],"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+886-928-067-772","url":"https://lin.ee/W9J8TuQ","availableLanguage":["zh-TW","en"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Christopher","jobTitle":"創辦人暨美籍持證英文教師 (Founder & Licensed American English Teacher)","worksFor":{"@id":"https://americanenglish.com.tw/#organization"},"alumniOf":{"@type":"CollegeOrUniversity","name":"University of Michigan"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"美國正式教師執照 (U.S. State Teaching Certificate)"},"knowsLanguage":["en-US","zh-TW"],"@id":"https://americanenglish.com.tw/#christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"tutorJr 評價：TutorABC Junior 家長完整版","description":"tutorJr（TutorABC Junior）評價完整版：官網寫的適合年齡、25／45 分鐘一對一、牛津授權教材、師資與選老師規則、訂課取消條款，加上 PTT、Dcard 與部落格正負評整理。","image":"https://americanenglish.com.tw/assets/img/blog/girl-tablet-lesson-kitchen-table.webp","datePublished":"2026-10-13","dateModified":"2026-10-13","inLanguage":"zh-Hant-TW","author":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"publisher":{"@id":"https://americanenglish.com.tw/#organization"},"mainEntityOfPage":"https://americanenglish.com.tw/tutorjr-review/","@id":"https://americanenglish.com.tw/tutorjr-review/#article","alternativeHeadline":"tutorJr 評價（TutorABC Junior）：PTT、Dcard 心得與負評整理","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"hasPart":{"@id":"https://americanenglish.com.tw/tutorjr-review/#faq"}}</script>
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/tutorjr-review/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/tutorjr-review/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="twitter:image" content="https://americanenglish.com.tw/assets/img/blog/girl-tablet-lesson-kitchen-table.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://americanenglish.com.tw/blog/"},{"@type":"ListItem","position":3,"name":"tutorJr 評價：TutorABC Junior 家長完整版"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://americanenglish.com.tw/tutorjr-review/#faq","url":"https://americanenglish.com.tw/tutorjr-review/","inLanguage":"zh-Hant-TW","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"mainEntity":[{"@type":"Question","name":"tutorJr 和 TutorABC 是同一家公司嗎？","acceptedAnswer":{"@type":"Answer","text":"是。tutorJr 的會員服務使用條款寫明網站由麥奇數位股份有限公司維運，與 TutorABC 是同一家公司；tutorJr（網頁標題寫作 TutorABC Junior）是給孩子的品牌，成人課程是 TutorABC。成人課的評價可以看〈 TutorABC 評價 〉。"}},{"@type":"Question","name":"tutorJr 一堂課多久？是一對一嗎？","acceptedAnswer":{"@type":"Answer","text":"依方案為 25 或 45 分鐘。上課形式有外師一對一、小班課和多人的大師講堂；少兒牛津英文另有預習影片「精華講座」。母品牌 TutorABC 的官方 FAQ 寫小班為一對四。"}},{"@type":"Question","name":"tutorJr 可以指定老師嗎？","acceptedAnswer":{"@type":"Answer","text":"可以設定喜愛的老師，讓系統優先配對或選課，但會員條款寫明無法確保能指定特定老師。上完課可以替老師評分，也可以請學習顧問協助調整。怎麼判斷老師適不適合，見〈 tutorJr 適合幾歲？選老師檢查表 〉。"}},{"@type":"Question","name":"tutorJr 臨時不能上課，可以取消嗎？","acceptedAnswer":{"@type":"Answer","text":"一對一與小班課要在上課 4 小時前取消，大師講堂 5 分鐘前；超過時限沒取消會扣堂數，但可以看錄影。生病住院、因公前往無網路國家等情況，服務開始滿 7 天後可以附證明申請暫停，次數與天數依契約長度而定。"}},{"@type":"Question","name":"沒有英文基礎的孩子適合上 tutorJr 嗎？","acceptedAnswer":{"@type":"Answer","text":"看年齡。4–6 歲有專門的 Kids 幼兒英文（National Geographic 授權 Look and See 教材）；少兒牛津英文的適用對象寫的是「具基礎英語能力」。母品牌 FAQ 說零基礎學員可以申請雙語老師。零基礎的孩子，前幾週最好有大人坐在旁邊。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://americanenglish.com.tw/#website","url":"https://americanenglish.com.tw/","name":"American English 埃森美語","alternateName":["埃森美語","埃森美語 American English"],"inLanguage":"zh-Hant-TW","publisher":{"@id":"https://americanenglish.com.tw/#organization"}}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');if(!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};window._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}fbq('init','1023907773471013');fbq('track','PageView');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);var f=document.createElement('script');f.async=1;f.src='https://connect.facebook.net/en_US/fbevents.js';document.head.appendChild(f);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body data-page="tutorjr-review">
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<nav class="drawer" id="drawer" aria-label="行動版選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></nav>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="bg-deco"></div>
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/blog/">部落格</a> ／ tutorJr 評價</div>
+    <span class="eyebrow eyebrow-green reveal">線上英文評價 · 家長版</span>
+    <h1 class="reveal d1"><span class="h1s">tutorJr <em>評價</em>：</span><br><span class="h1s kp">TutorABC Junior 家長完整版</span></h1>
+    <div class="divider reveal d1"></div>
+    <p class="body reveal d2">作者：Christopher｜埃森美語創辦人｜美國密西根大學畢業、美國正式教師執照<!-- AE:PAGEMETA start -->｜<span class="byl-d">最後更新 <time datetime="2026-10-13">2026 年 10 月 13 日</time></span><!-- AE:PAGEMETA end --></p>
+    <div class="hero-cta reveal d2" style="margin-top:16px">
+      <a class="btn btn-primary" href="#rules">訂課、取消、退費規則 →</a>
+      <a class="btn btn-outline" href="https://www.tutorjr.com/aspx/mvc/zh-tw" target="_blank" rel="noopener">tutorJr 官網</a>
+    </div>
+    <p class="body reveal d2" style="font-size:13px;margin-top:10px">這一頁是埃森美語整理的家長評價，不是官方網站；tutorJr 官方網站是 www.tutorjr.com。</p>
+    <aside class="reveal d2" aria-label="利益揭露" style="margin-top:14px;padding:12px 16px;border:2px solid rgba(26,39,82,.10);border-radius:14px;background:#fff;text-align:left;font-size:13.5px;line-height:1.75;color:#374151;max-width:640px"><strong style="color:var(--navy)">利益揭露：</strong>作者在板橋經營實體英文補習班。本文沒有聯盟連結或推薦碼，也沒有收任何平台的費用；我們沒有購買或試上過 tutorJr 的課程，內容來自官網、會員條款與公開討論。價格與規定於 2026 年 10 月查核，以官網和你拿到的合約為準。</aside>
+    <figure class="post-hero pf-blue reveal d2">
+      <img src="/assets/img/blog/girl-tablet-lesson-kitchen-table.webp" srcset="/assets/img/blog/girl-tablet-lesson-kitchen-table-800.webp 800w, /assets/img/blog/girl-tablet-lesson-kitchen-table.webp 1600w" sizes="(max-width:828px) 100vw, 732px" width="1600" height="900" alt="小女孩在餐桌前用平板上課" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+<!-- AE:TOC --><nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span><a href="#tutorJr-是什麼和-TutorABC-是什麼關係">tutorJr 是什麼？和 TutorABC 是什麼關係？</a><a href="#課程怎麼分牛津國家地理訂製英文">課程怎麼分？牛津、國家地理、訂製英文</a><a href="#一堂課怎麼上25-分鐘前後的流程">一堂課怎麼上？25 分鐘前後的流程</a><a href="#老師從哪裡來師資條件與選老師規則">老師從哪裡來？師資條件與選老師規則</a><a href="#rules">訂課、取消、暫停與退費：條款怎麼寫</a><a href="#App-與家長旁聽做得到什麼">App 與家長旁聽：做得到什麼？</a><a href="#優點與限制持證教師怎麼看">優點與限制：持證教師怎麼看</a><a href="#PTTDcard-與部落格怎麼說正負評整理">PTT、Dcard 與部落格怎麼說？正負評整理</a><a href="#tutorJr-適合誰不適合誰">tutorJr 適合誰、不適合誰？</a><a href="#什麼情況小班實體課比較合適">什麼情況，小班實體課比較合適？</a><a href="#tutorJr-常見問題">tutorJr 常見問題</a></nav><!-- /AE:TOC -->
+
+    <div class="prose reveal">
+      <p>搜尋「tutorJr 評價」，前幾頁幾乎都是 PTT、Dcard 和部落格心得，資訊零散、年份也不一樣。tutorJr 是 TutorABC 旗下專做孩子的品牌（網頁標題寫作 TutorABC Junior），主打外師一對一、牛津大學出版社授權教材和家長旁聽 App。這篇用美國持證教師的角度，把官網與會員條款寫清楚的事、沒寫清楚的事，以及網路上反覆出現的評價分開整理。先說結論：<strong>課程架構完整、教材扎實，適合已有一點英文基礎、家裡能固定排課的孩子</strong>；簽約前要想清楚的是價格不公開、合約通常不短，以及無法確保每堂都是同一位老師。下表是重點資料，後面逐項展開。</p>
+    </div>
+    <table class="compare reveal">
+      <caption>tutorJr 重點資料（2026 年 10 月查核官網與條款）</caption>
+      <thead><tr><th scope="col">項目</th><th scope="col">內容</th></tr></thead>
+      <tbody>
+        <tr><td style="min-width:4.5em">官方名稱</td><td>tutorJr（網頁標題寫作 TutorABC Junior），TutorABC 旗下少兒品牌</td></tr>
+        <tr><td style="min-width:4.5em">營運公司</td><td>麥奇數位股份有限公司（會員服務使用條款第一條）</td></tr>
+        <tr><td style="min-width:4.5em">官網寫的年齡</td><td>首頁：專為 5–15 歲打造；Kids 幼兒英文為 4–6 歲；母品牌 FAQ：兒童與青少年課程 4–16 歲</td></tr>
+        <tr><td style="min-width:4.5em">一堂多久</td><td>依方案 25 或 45 分鐘</td></tr>
+        <tr><td style="min-width:4.5em">上課形式</td><td>外師一對一、小班課、多人的「大師講堂」；牛津課另有預習影片「精華講座」</td></tr>
+        <tr><td style="min-width:4.5em">教材</td><td>牛津大學出版社授權（Let's Go、Oxford Discover、Show and Tell）；幼兒課用 National Geographic 授權的 Look and See</td></tr>
+        <tr><td style="min-width:4.5em">師資</td><td>官網：TESOL／TEFL 認證、平均 5 年以上教學經驗；母品牌 FAQ：95% 為歐美外師，零基礎可申請雙語老師</td></tr>
+        <tr><td style="min-width:4.5em">選老師</td><td>可設定喜愛老師優先配對；條款寫明無法確保能指定特定老師</td></tr>
+        <tr><td style="min-width:4.5em">取消</td><td>一對一與小班課須在上課 4 小時前取消（條款第八條）</td></tr>
+        <tr><td style="min-width:4.5em">上課裝置</td><td>孩子用平板 App 或電腦 Chrome；家長端 App 可旁聽</td></tr>
+        <tr><td style="min-width:4.5em">價格</td><td>官網未公開價格，需留資料由學習顧問報價</td></tr>
+        <tr><td style="min-width:4.5em">客服</td><td>(02)3365-9998，09:00–22:00；services@tutorabc.com</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：tutorJr 官網首頁、牛津英文、Kids 幼兒英文、全球師資、學習 App、聯絡我們頁與會員服務使用條款（2023 年 3 月 8 日版）；TutorABC 官方常見問題（2026 年 1 月）。2026 年 10 月 12 日查核。</p>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">品牌關係</span><h2 id="tutorJr-是什麼和-TutorABC-是什麼關係">tutorJr 是什麼？和 <em>TutorABC</em> 是什麼關係？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>tutorJr 的<a href="https://www.tutorjr.com/aspx/mvc/zh-tw/Terms" target="_blank" rel="noopener">會員服務使用條款</a>寫得很清楚：網站由「麥奇數位股份有限公司」維運，也就是經營 TutorABC 的同一家公司。官網的「關於我們」把品牌分成幾條線：成人的 TutorABC、給孩子的 tutorJr、華語的 TutorABC Chinese 和遊留學服務。網頁標題用「TutorABC Junior」，內文和版權宣告用「tutorJr」——搜尋時這兩個名字指的是同一個少兒平台。</p>
+      <p>對家長最實際的影響有兩個。第一，tutorJr 和成人 TutorABC 共用會員條款、客服與學習顧問制度，所以網路上很多「TutorABC 評價」講的是成人課，未必適用孩子的課（成人課的評價我們另外整理在〈<a href="/tutorabc-review/">TutorABC 評價</a>〉）。第二，它不是新創的小平台：官網寫品牌始於 2004 年，客服專線、學習顧問、技術支援都是現成的體系。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">課程與教材</span><h2 id="課程怎麼分牛津國家地理訂製英文">課程怎麼分？<em>牛津、國家地理、訂製英文</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>2026 年 10 月，tutorJr 的體驗課預約頁列出四條英文課程線。官網寫的年齡和教材如下——注意「少兒牛津英文」的適用對象寫的是「具基礎英語能力」；完全沒接觸過英文的幼兒，官網安排的是另一條 Kids 幼兒英文。</p>
+    </div>
+    <table class="compare reveal">
+      <caption>tutorJr 四條英文課程線（官網資料）</caption>
+      <thead><tr><th scope="col">課程</th><th scope="col">官網寫的對象</th><th scope="col">教材</th><th scope="col">上課形式</th></tr></thead>
+      <tbody>
+        <tr><td style="min-width:4.5em">Kids 幼兒英文</td><td>4–6 歲，英語啟蒙</td><td>National Geographic 授權 Look and See</td><td>母語外師或雙語老師帶領，遊戲、歌曲、肢體動作（TPR）</td></tr>
+        <tr><td style="min-width:4.5em">少兒牛津英文</td><td>5–15 歲，具基礎英語能力（Level 1–9）</td><td>牛津大學出版社授權：Show and Tell（3 冊）、Let's Go（7 冊）、Oxford Discover（6 冊）</td><td>預習影片「精華講座」＋外師一對一＋大師講堂</td></tr>
+        <tr><td style="min-width:4.5em">少兒訂製英文</td><td>7–15 歲（或以上），已具良好英語觀念（Level 1–12）</td><td>系統依年齡、興趣、程度配對的主題教材</td><td>一對一＋小班互動課＋大師講堂</td></tr>
+        <tr><td style="min-width:4.5em">國高中英文課</td><td>國中、高中</td><td>對標 108 課綱，融合會考、學測題型</td><td>一對一或一對四小班</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：tutorJr 體驗課預約頁、牛津英文頁、Kids 幼兒英文頁、國中高中英文課頁；TutorABC 少兒牛津英文頁「我的孩子適合什麼樣的課程」表。2026 年 10 月查核。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>從老師的角度看，這張表最有價值的是「教材是成套的出版教材」。Let's Go 和 Oxford Discover 都是牛津大學出版社的系列，每冊單元數固定（官網寫 Let's Go 每冊 9 單元、Oxford Discover 每冊 18 單元），進度和難度由出版社設計，不靠每位老師臨場編——對一對一、老師又會輪替的上課方式，這是穩住品質的關鍵。官網介紹 Oxford Discover 每個單元用一個「大問題」帶出閱讀和討論，很適合已經會基本句型、要開始「用英文想」的國小中高年級孩子。</p>
+      <p>「訂製英文」走的是另一種邏輯：官網說用專利的 AI Matching Technology，依孩子的年齡、興趣、程度配對老師、同學和教材。好處是主題多元；代價是教材依主題配對、不是一整套從頭到尾的課本，連貫性要靠學習顧問和家長留意。如果孩子需要「系統地把基礎打完」，牛津線比較容易追蹤；如果基礎已經不錯、需要大量對話練口說，訂製英文的彈性比較大。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">上課流程</span><h2 id="一堂課怎麼上25-分鐘前後的流程">一堂課怎麼上？<em>25 分鐘</em>前後的流程</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p><a href="https://www.tutorjr.com/aspx/mvc/zh-tw" target="_blank" rel="noopener">官網首頁</a>把一堂課拆成五段：安排課程（學習計畫寫每週三堂）、課前預習約 10 分鐘、上課 25 或 45 分鐘、課後練習約 10 分鐘，最後老師和孩子「雙向評鑑」約 5 分鐘。換句話說，<strong>一堂 25 分鐘的課，平台設計的完整流程加起來約 50 分鐘</strong>——預習和複習是安排好的，不是可有可無。</p>
+      <p>上課在 tutorJr 自己的線上教室進行，官網稱為「為孩子專利研發的互動教室」；家長部落格描述畫面上有師生視訊、教材和互動白板。TutorABC 的<a href="https://www.tutorabc.com/faq" target="_blank" rel="noopener">官方 FAQ</a> 寫明所有課程都可以課後回放；條款也寫到，沒能準時進教室的那一堂可以事後看錄影。家長端 App 則可以在上課時旁聽。</p>
+      <p>25 分鐘對 5–8 歲是合理的長度——夠完成一段暖身、一個新句型、一輪練習和收尾；45 分鐘比較適合年紀較大、能長時間對著螢幕專注的孩子。體驗課則別看得太重：PTT 上有家長提到，設備測試和暖場會吃掉幾分鐘，真正和老師上課的時間比 25 分鐘短（<a href="https://www.ptt.cc/bbs/Language/M.1589028457.A.9FB.html" target="_blank" rel="nofollow noopener">2020 年 Language 板</a>）。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">師資</span><h2 id="老師從哪裡來師資條件與選老師規則">老師從哪裡來？<em>師資條件</em>與選老師規則</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>官網「全球師資」頁列出的條件包括：持 TESOL 或 TEFL 英語教學證書、「母語或官方英語外師」、平均 5 年以上教學經驗、通過教研面試與線上試教、考評 9 分以上才能正式授課、上課全程錄影審核。官網也寫 3% 錄取率、全球 3 萬名以上外師——這些是平台自己公布的數字，我們無法另外查證。母品牌 TutorABC 的官方 FAQ 則寫「95% 為歐美外師，零基礎學員可申請雙語老師」。</p>
+      <p>「母語或官方英語」這個寫法值得看懂：老師可能來自英語是母語的國家，也可能來自英語是官方語言之一的國家。口音本身不是問題——孩子以後本來就要聽懂各種英語——但在剛學發音的階段，示範清不清楚、說話速度能不能配合孩子，比國籍重要。至於 TESOL／TEFL，它們是很多機構都在發的英語教學證書，時數和實習要求差很多；體驗課後可以直接問顧問：孩子的老師是哪一種證書、教兒童幾年。</p>
+      <h3 id="可以指定老師嗎">可以指定老師嗎？</h3>
+      <p>條款第八條寫得很直接：可以選擇喜愛的老師「優先配對或選課」，但<strong>無法確保能指定特定老師</strong>；老師多為外國籍，遇到聖誕節、新年等節日，時段可能比較緊。官方 FAQ 另外說明，課後可以替老師評分，系統會依回饋調整推薦，也可以請學習顧問協助換老師。實際上這代表老師會有某種程度的輪替：對適應力好的孩子是好事（習慣不同口音與風格），對慢熟的孩子，前幾週要多花心思建立「喜愛老師」名單。怎麼看出適合的老師，我們整理在〈<a href="/tutorjr-age-and-teachers/">tutorJr 適合幾歲？選老師檢查表</a>〉。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">條款重點</span><h2 id="rules">訂課、取消、暫停與退費：<em>條款</em>怎麼寫</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>以下整理自 tutorJr 官網的<a href="https://www.tutorjr.com/aspx/mvc/zh-tw/Terms" target="_blank" rel="noopener">〈會員服務使用條款〉</a>（最新更新日期 2023 年 3 月 8 日）與 TutorABC 官方 FAQ。條款會改版，簽約前請以你拿到的版本為準。</p>
+    </div>
+    <table class="compare reveal">
+      <caption>tutorJr 訂課、取消、暫停與退費規則重點</caption>
+      <thead><tr><th scope="col">項目</th><th scope="col">規則</th><th scope="col">出處</th></tr></thead>
+      <tbody>
+        <tr><td style="min-width:4.5em">預約：牛津、國高中課程</td><td>一對一等指定人數課與小班課須在 12 小時前預約；大師講堂 5 分鐘前</td><td>條款第八條</td></tr>
+        <tr><td style="min-width:4.5em">預約：其他英語課程</td><td>指定人數課與小班課 4 小時前預約；大師講堂 5 分鐘前</td><td>條款第八條</td></tr>
+        <tr><td style="min-width:4.5em">取消</td><td>指定人數課與小班課 4 小時前取消；大師講堂 5 分鐘前</td><td>條款第八條</td></tr>
+        <tr><td style="min-width:4.5em">遲到或來不及取消</td><td>遲到無法進教室；未在期限內取消，視為已使用並扣堂數，可事後看錄影</td><td>條款第八條</td></tr>
+        <tr><td style="min-width:4.5em">老師缺席</td><td>確認為老師缺席，系統自動返還堂數</td><td>TutorABC 官方 FAQ</td></tr>
+        <tr><td style="min-width:4.5em">暫停</td><td>服務開始滿 7 天後，因生病住院、因公前往無網路國家等原因可附證明申請；免費次數依契約長度而定，超過每 4 週收 2,500 元，暫停期間分期款照繳</td><td>條款第八條</td></tr>
+        <tr><td style="min-width:4.5em">轉讓</td><td>未經公司事先同意的契約移轉、轉賣或出借堂數，屬違約且無效</td><td>條款第五、七條</td></tr>
+        <tr><td style="min-width:4.5em">退費</td><td>依合約啟用時間與已使用堂數計算；首頁標示「鑑賞期間 無憂退費」，未寫天數</td><td>TutorABC 官方 FAQ、tutorJr 首頁</td></tr>
+        <tr><td style="min-width:4.5em">系統問題</td><td>可歸責於公司的嚴重異常，書面通知後一年內未改善達三次，可提前終止並退還未使用部分</td><td>條款第六條</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">條款原文寫「指定人數與小班課程」，一對一屬於前者；本表簡稱為指定人數課。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>兩個最常被忽略的細節：第一，「4 小時前取消」是硬規定——孩子臨時發燒、放學晚了，超過時限就會扣堂，固定課表最好排在全家最不會變動的時段。第二，暫停期間合約效期會順延，但條款寫明「不影響定期定額付款義務」，也就是分期款照樣要繳。</p>
+      <p>退費的計算公式、鑑賞期的天數，官網公開頁面沒有寫出具體數字。兩篇 2026 年的家長部落格（<a href="https://www.aiteacher.tw/tutorjr_oxford_experience/" target="_blank" rel="nofollow noopener">aiteacher</a>、<a href="https://talkingdarcy.com/tutorjr/" target="_blank" rel="nofollow noopener">Darcy 拼學趣</a>）寫到「購買 93 天內終止，依定價扣已上堂數；第 94 天起另收 5%」，但這是第三方分享，不是官方公告。價格、單堂成本、退費和轉讓的完整整理，見〈<a href="/tutorjr-price/">tutorJr 費用怎麼算</a>〉。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">App 與家長端</span><h2 id="App-與家長旁聽做得到什麼">App 與<em>家長旁聽</em>：做得到什麼？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>tutorJr 有兩個 App：孩子用的學習 App（官網寫「學童平板上課」）和家長端 App（「家長行動旁聽」）。家長端的旁聽功能讓你在通勤、做家事時同步聽孩子上課；官網也列出家長端限定的「聽聽學英文」功能。不用 App 的話，也可以用電腦的 Chrome 瀏覽器進教室——官網的設備需求建議有線網路和頭戴式耳機麥克風。</p>
+      <p>家長端旁聽是我認為 tutorJr 對家長最友善的設計之一。線上課最大的盲點是「你不知道那 25 分鐘到底發生了什麼」，能即時聽、事後看錄影，等於把課堂打開給家長檢查。與其每堂都聽，不如每週固定挑一堂從頭聽到尾，注意孩子開口了幾次、是不是說出完整句——這比任何報告都準。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">老師的評估</span><h2 id="優點與限制持證教師怎麼看">優點與限制：<em>持證教師</em>怎麼看</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <h3 id="優點">優點</h3>
+      <ul>
+        <li>成套的出版教材：牛津與 National Geographic 的系列教材，進度、難度、複習都有設計，換老師也不容易亂掉。</li>
+        <li>一對一的開口量：25 分鐘裡只有一個學生，每一輪都得孩子自己回答，這是大班課給不了的。</li>
+        <li>看得到課堂：錄影回放、家長端即時旁聽、課後雙向評鑑，家長能檢查上課內容。</li>
+        <li>時間彈性：官網寫 24 小時彈性排課；一對一與小班課在 4 小時前都能取消。</li>
+        <li>有幼兒專屬路線：4–6 歲有 Kids 幼兒英文，官網寫由具幼教訓練的老師用 TPR（肢體動作）帶。</li>
+      </ul>
+      <h3 id="限制">限制</h3>
+      <ul>
+        <li>價格不公開：官網沒有價格表，要留資料由顧問報價，比價和事前估算都比較費工。</li>
+        <li>合約不短：條款依 3 個月內、3–12 個月、超過 12 個月區分契約；家長分享的方案多為 18 或 24 個月（第三方資料）。</li>
+        <li>老師會輪替：可設定喜愛老師，但無法確保每堂都是同一位。</li>
+        <li>少了同儕：一對一沒有同學一起動、一起說；一對多的大師講堂，每個孩子能開口的時間自然比一對一少（部落格描述多以打字、舉手參與）。</li>
+        <li>螢幕課的門檻：年紀小的孩子需要大人在旁邊協助操作和專注。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">網路評價</span><h2 id="PTTDcard-與部落格怎麼說正負評整理">PTT、Dcard 與部落格怎麼說？<em>正負評</em>整理</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>我們讀了 PTT 2019–2022 年的討論串，以及 2022–2026 年幾篇長期使用的家長部落格。先提醒兩件事：一、年份不同，方案和規則也不同——例如 2019–2022 年 PTT 上常見「每週規定上三到四堂」的抱怨，現在官網首頁寫的是每週三堂的學習計畫，條款與官方 FAQ 沒有寫最低堂數；二、搜尋結果前幾名的心得文，不少附有學員推薦連結或指定顧問（推薦可獲贈課），也有標明「邀請體驗」的文章。這不代表內容不實，但閱讀時值得知道。</p>
+      <h3 id="常見的正評">常見的正評</h3>
+      <ul>
+        <li>教材：牛津教材幾乎是每篇長期心得都提到的優點（<a href="https://www.aiteacher.tw/tutorjr_oxford_experience/" target="_blank" rel="nofollow noopener">aiteacher 2026</a>、<a href="https://talkingdarcy.com/tutorjr/" target="_blank" rel="nofollow noopener">Darcy 拼學趣 2026</a>、<a href="https://iceoffice.com.tw/tutorabc-junior/" target="_blank" rel="nofollow noopener">食攝人生 2025</a>）。</li>
+        <li>家長看得到：家長端 App 和錄影回放常被提到，尤其是爸媽英文沒把握、想跟著複習的家庭。</li>
+        <li>課後評鑑有回應：有家長分享，因連線或教學問題給低分後，客服評估後退回堂數（Darcy 拼學趣 2026）。</li>
+        <li>業務未必緊迫盯人：<a href="https://www.ptt.cc/bbs/Language/M.1589028457.A.9FB.html" target="_blank" rel="nofollow noopener">2020 年 PTT</a> 與 <a href="https://kangaroomamma.pixnet.net/blog/posts/16064970227" target="_blank" rel="nofollow noopener">2022 年袋鼠媽媽部落格</a>都提到，試上後說不買，業務沒有追著推銷。</li>
+      </ul>
+      <h3 id="常見的負評">常見的負評</h3>
+      <ul>
+        <li>價格不透明：<a href="https://www.ptt.cc/bbs/Preschooler/M.1567321707.A.5B1.html" target="_blank" rel="nofollow noopener">2019 年 PTT</a>、<a href="https://www.ptt.cc/bbs/Language/M.1589028457.A.9FB.html" target="_blank" rel="nofollow noopener">2020 年 PTT</a> 都有家長抱怨試上前業務不肯講價格與方案。</li>
+        <li>方案彈性：早期討論提到業務只推一種方案、每週堂數要求高，雙薪家庭排不出時間（<a href="https://www.ptt.cc/bbs/Language/M.1581343281.A.ED7.html" target="_blank" rel="nofollow noopener">2020 年 PTT</a>、<a href="https://www.ptt.cc/bbs/Preschooler/M.1649639230.A.1E9.html" target="_blank" rel="nofollow noopener">2022 年 PTT</a>）。</li>
+        <li>老師輪替：有家長覺得每堂換老師、孩子要重新熟悉很花時間；也有使用者回覆，把老師設為最愛後重複率很高。</li>
+        <li>價格偏高、要一次買多：部落格比較文普遍認為單價較高，且要買大方案才划算（aiteacher 2026）。</li>
+        <li>轉讓限制：有部落格寫到課程只能以折價券形式轉讓（第三方說法，見〈<a href="/tutorjr-price/">tutorJr 費用</a>〉）。</li>
+      </ul>
+      <p>Dcard 親子板、課程板也有平台比較文與退費詢問，但從標題看，不少談的是成人的 TutorABC；本頁的整理以能完整閱讀、可以標出年份的 PTT 討論串與部落格為主。</p>
+      <p>綜合來看，正評集中在「教材和透明度」，負評集中在「價格、方案與業務溝通」，而且負評多半發生在簽約前。這也是我們給家長的實際建議：<strong>請顧問把方案、總價和退費試算用文字傳給你，帶回家比較後再決定</strong>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">適合誰</span><h2 id="tutorJr-適合誰不適合誰">tutorJr <em>適合誰</em>、不適合誰？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <h3 id="比較適合的孩子與家庭">比較適合的孩子與家庭</h3>
+      <ul>
+        <li>5–12 歲、已有一點英文基礎，需要有人陪著「開口用」的孩子——這正是牛津線寫的適用對象。</li>
+        <li>想要成套教材、看得到進度的家長：Level 分級對照 CEFR，教材冊數清楚。</li>
+        <li>時間不固定，或住處附近沒有合適實體班的家庭：可以晚上、週末在家上。</li>
+        <li>家長每週撥得出時間看錄影或旁聽、陪孩子預習的家庭。</li>
+      </ul>
+      <h3 id="可能要先想想的情況">可能要先想想的情況</h3>
+      <ul>
+        <li>完全零基礎、坐不住的 4–5 歲：需要大人全程陪，否則 25 分鐘很難上滿。</li>
+        <li>想要按月付、隨時停的家庭：官網沒有公開月繳方案，合約效期與退費規則要先問清楚。</li>
+        <li>孩子只肯跟固定一位老師開口：條款無法確保每堂都是同一位老師。</li>
+        <li>孩子需要同學一起帶動才會說話：一對一少了同儕。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">實體小班</span><h2 id="什麼情況小班實體課比較合適">什麼情況，<em>小班實體課</em>比較合適？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>tutorJr 的強項是一對一開口量和成套教材；它比較難給的是「同一位老師長期帶」和「一群同學一起說」——條款寫明無法確保能指定老師。如果孩子是慢熟、要靠熟悉的老師和同伴帶動才開口的類型，或你不想一次預付很長的合約，實體小班會比較合適。埃森美語每班 12 人以內、美籍持證教師帶班、師資穩定，月繳不綁長約。線上與實體的完整比較，見〈<a href="/online-vs-in-person-english-banqiao/">線上英文 vs 實體小班的 6 個差別</a>〉。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">常見問題</span><h2 id="tutorJr-常見問題">tutorJr <em>常見問題</em></h2></div>
+    <div class="faq">
+      <div class="faq-item"><h3 id="tutorJr-和-TutorABC-是同一家公司嗎" class="faq-h"><button class="faq-q" aria-expanded="false">tutorJr 和 TutorABC 是同一家公司嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>是。tutorJr 的會員服務使用條款寫明網站由麥奇數位股份有限公司維運，與 TutorABC 是同一家公司；tutorJr（網頁標題寫作 TutorABC Junior）是給孩子的品牌，成人課程是 TutorABC。成人課的評價可以看〈<a href="/tutorabc-review/">TutorABC 評價</a>〉。</p></div></div>
+      <div class="faq-item"><h3 id="tutorJr-一堂課多久是一對一嗎" class="faq-h"><button class="faq-q" aria-expanded="false">tutorJr 一堂課多久？是一對一嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>依方案為 25 或 45 分鐘。上課形式有外師一對一、小班課和多人的大師講堂；少兒牛津英文另有預習影片「精華講座」。母品牌 TutorABC 的官方 FAQ 寫小班為一對四。</p></div></div>
+      <div class="faq-item"><h3 id="tutorJr-可以指定老師嗎" class="faq-h"><button class="faq-q" aria-expanded="false">tutorJr 可以指定老師嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>可以設定喜愛的老師，讓系統優先配對或選課，但會員條款寫明無法確保能指定特定老師。上完課可以替老師評分，也可以請學習顧問協助調整。怎麼判斷老師適不適合，見〈<a href="/tutorjr-age-and-teachers/">tutorJr 適合幾歲？選老師檢查表</a>〉。</p></div></div>
+      <div class="faq-item"><h3 id="tutorJr-臨時不能上課可以取消嗎" class="faq-h"><button class="faq-q" aria-expanded="false">tutorJr 臨時不能上課，可以取消嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>一對一與小班課要在上課 4 小時前取消，大師講堂 5 分鐘前；超過時限沒取消會扣堂數，但可以看錄影。生病住院、因公前往無網路國家等情況，服務開始滿 7 天後可以附證明申請暫停，次數與天數依契約長度而定。</p></div></div>
+      <div class="faq-item"><h3 id="沒有英文基礎的孩子適合上-tutorJr-嗎" class="faq-h"><button class="faq-q" aria-expanded="false">沒有英文基礎的孩子適合上 tutorJr 嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>看年齡。4–6 歲有專門的 Kids 幼兒英文（National Geographic 授權 Look and See 教材）；少兒牛津英文的適用對象寫的是「具基礎英語能力」。母品牌 FAQ 說零基礎學員可以申請雙語老師。零基礎的孩子，前幾週最好有大人坐在旁邊。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AE:ROUTE -->
+<section class="section bg-soft">
+  <div class="wrap">
+    <span class="eyebrow eyebrow-yellow">比較之前</span>
+    <h2 id="先知道孩子在哪個程度" style="margin-top:14px">先知道孩子<em>在哪個程度</em></h2>
+    <div class="divider" style="margin:18px 0 22px"></div>
+    <p class="body" style="max-width:720px">不管最後選線上還是實體，先弄清楚孩子現在的程度最省錢。程度表對照 CEFR 與劍橋英檢；免費模擬題可以在家先做一份，再去聽顧問的建議。</p>
+    <div style="margin-top:20px"><a href="/kids-online-english-comparison/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">5 大平台一表比較</a><a href="/kids-english-levels/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">兒童英文程度分級指南</a><a href="/starters-practice-tests/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">Starters 題庫（第一級）</a><a href="/cambridge-practice-tests/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">劍橋英檢題庫總表</a><a href="/cram-school-vs-tutor-vs-self-study/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">補習班 vs 家教 vs 自學</a></div>
+  </div>
+</section>
+<!-- /AE:ROUTE -->
+<section class="section bg-blue">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <span class="eyebrow eyebrow-green">程度評估</span>
+      <h2 id="選平台之前-先看清楚孩子的程度" style="margin-top:14px">選平台之前，<br><em>先看清楚</em>孩子的程度</h2>
+      <p class="body" style="max-width:560px;margin:16px auto 0">線上或實體都一樣：知道孩子聽得懂多少、說得出多少，才知道該上哪一級、買多少堂。埃森美語可以幫孩子做一次程度評估，由美籍持證教師親自聽孩子說和讀，告訴你下一步先練什麼。</p>
+      <div class="cta-row">
+        <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 預約免費程度評估</a>
+        <a href="/free-trial/" class="btn btn-outline">評估怎麼進行</a>
+      </div>
+      <p class="body" style="max-width:560px;margin:22px auto 0;font-size:14px">接著讀：<a href="/tutorjr-price/">tutorJr 費用怎麼算</a>、<a href="/tutorjr-vs-oikid/">OiKID tutorJr 比較</a>、<a href="/tutorjr-age-and-teachers/">tutorJr 適合幾歲</a>。</p>
+      <p class="body" style="max-width:560px;margin:10px auto 0;font-size:14px">如果你剛好住板橋：我們的教室在<a href="/banqiao-english-cram-school/">板橋中正路</a>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- AE:BYL start --><div class="page-meta"><div class="wrap"><span>作者：<a href="/certified-american-teacher-banqiao/">Christopher｜埃森美語創辦人</a>（<a href="/certified-american-teacher-banqiao/">關於作者</a>）</span></div></div>
+<!-- AE:BYL end --></main>
+<!-- AE:FOOT start -->
+<footer class="site-footer"><div class="wrap"><div class="foot-grid"><div><div class="foot-logo"><img class="foot-logo-img" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="34" height="34" loading="lazy" decoding="async">American English 埃森美語</div><p class="foot-tag">板橋中正路在地深耕的美籍外師英文補習班。100% 美籍持證教師、每班 12 人小班制。</p><p class="foot-nap">220 新北市板橋區中正路89巷4號1樓<span class="foot-sep">　｜　</span><a href="tel:+886928067772">☎ 0928-067-772</a></p></div><nav class="foot-links" aria-label="頁尾導覽"><div class="foot-col"><p class="foot-h">課程</p><a href="/banqiao-english-cram-school/">板橋英文補習班</a><a href="/courses/">課程總覽</a><a href="/kids-english-banqiao/">兒童美語</a><a href="/junior-high-english-banqiao/">國中英文</a><a href="/free-trial/">預約試聽</a></div><div class="foot-col"><p class="foot-h">學習資源</p><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/english-pronunciation/">英文發音</a><a href="/download/">免費下載</a><a href="/chart-license/">圖表授權</a></div><div class="foot-col"><p class="foot-h">關於</p><a href="/certified-american-teacher-banqiao/">師資介紹</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="/contact/">聯絡與交通</a></div><div class="foot-col"><p class="foot-h">聯絡</p><a href="tel:+886928067772">電話 0928-067-772</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 線上預約</a><a href="https://maps.app.goo.gl/hLChkEqAMKCsMWpm6" target="_blank" rel="noopener">Google 地圖位置</a><a href="https://www.facebook.com/profile.php?id=61576014571186" target="_blank" rel="noopener">Facebook 粉絲專頁</a></div></nav></div><!-- AE:AINOTE --><p class="foot-ai">英文好，用 AI 也更順手 · <a href="https://essenindustries.com/tw/">essenindustries.com</a></p><!-- /AE:AINOTE -->
+<div class="foot-bottom"><span>© 2026 American English 埃森美語</span><span>私立埃森美語文理短期補習班　｜　新北市政府立案 社補教社字第115026號　｜　統一編號 61476523</span><span>220 新北市板橋區中正路89巷4號1樓</span></div><div class="foot-pref"><div google-add-preferred-source-btn data-theme="dark" data-lang="zh-TW"></div></div></div></footer>
+<!-- AE:FOOT end -->
+<script src="/assets/app.js?v=b537277d"></script>
+</body>
+</html>

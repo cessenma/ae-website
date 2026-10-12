@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<link rel="stylesheet" href="/assets/styles.css?v=52538af7">
+<!-- AE:CRIT end -->
+<!-- AE:FONTS start -->
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2">
+<style>@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0vrx52jJ3Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB3vD2xWr53BJl.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZOIHTWEBlw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58UfivUw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKK58UfivUw4aw.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+<!-- AE:FONTS end -->
+<meta name="theme-color" content="#1A2752">
+<!-- Google Analytics (GA4) -->
+<title>AmazingTalker vs TutorABC 比較：哪個好？師資、價格、合約｜埃森美語</title>
+<meta name="description" content="AmazingTalker vs TutorABC：一個是自選老師的家教媒合平台，一個是自排教材分級的課程公司。師資、排課、價格與退費規則一張表看懂，再依年齡與目標建議怎麼選。">
+<link rel="canonical" href="https://americanenglish.com.tw/tutorabc-vs-amazingtalker/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="American English 埃森美語">
+<meta property="og:title" content="AmazingTalker vs TutorABC 比較：哪個好？師資、價格、合約">
+<meta property="og:description" content="AmazingTalker vs TutorABC：一個是自選老師的家教媒合平台，一個是自排教材分級的課程公司。師資、排課、價格與退費規則一張表看懂，再依年齡與目標建議怎麼選。">
+<meta property="og:url" content="https://americanenglish.com.tw/tutorabc-vs-amazingtalker/">
+<meta property="og:image" content="https://americanenglish.com.tw/assets/img/blog/two-people-side-by-side-laptops.webp">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="兩個人並肩在各自的筆電上打字">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"https://americanenglish.com.tw/#organization","name":"埃森美語 American English","alternateName":["埃森美語","American English 埃森美語","American English","埃森美語 - American English Institute"],"legalName":"私立埃森美語文理短期補習班","taxID":"61476523","description":"板橋中正路在地深耕的美籍外師英文補習班，提供 100% 美籍持證教師、每班 12 人小班制的兒童美語與國中英文課程。","url":"https://americanenglish.com.tw/","telephone":"+886-928-067-772","image":["https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","https://americanenglish.com.tw/assets/img/banqiao-small-class-english-classroom.webp","https://americanenglish.com.tw/assets/img/banqiao-kids-english-class.webp","https://americanenglish.com.tw/assets/img/certified-american-teacher-banqiao.webp","https://americanenglish.com.tw/assets/img/kids-confident-english-speaking.webp"],"logo":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"中正路89巷4號1樓","addressLocality":"板橋區","addressRegion":"新北市","postalCode":"220","addressCountry":"TW"},"geo":{"@type":"GeoCoordinates","latitude":25.0145617,"longitude":121.4560468},"areaServed":{"@type":"AdministrativeArea","name":"板橋區","containedInPlace":{"@type":"AdministrativeArea","name":"新北市"}},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"19:00"}],"sameAs":["https://www.google.com/maps?cid=11837760024257631170","https://lin.ee/W9J8TuQ","https://www.facebook.com/profile.php?id=61576014571186"],"hasMap":"https://www.google.com/maps?cid=11837760024257631170","founder":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"knowsLanguage":["en-US","zh-TW"],"knowsAbout":["兒童美語","國中英文","美籍外師英語教學","Phonics 自然發音","劍橋兒童英檢 (Cambridge YLE)","GEPT 全民英檢","國中教育會考英文","英語會話與口說","板橋英文補習班"],"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+886-928-067-772","url":"https://lin.ee/W9J8TuQ","availableLanguage":["zh-TW","en"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Christopher","jobTitle":"創辦人暨美籍持證英文教師 (Founder & Licensed American English Teacher)","worksFor":{"@id":"https://americanenglish.com.tw/#organization"},"alumniOf":{"@type":"CollegeOrUniversity","name":"University of Michigan"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"美國正式教師執照 (U.S. State Teaching Certificate)"},"knowsLanguage":["en-US","zh-TW"],"@id":"https://americanenglish.com.tw/#christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"AmazingTalker vs TutorABC 比較：家教媒合平台、課程公司，哪個適合你？","description":"AmazingTalker（家教媒合平台、老師自訂價格、可單堂購買）與 TutorABC（課程公司、授權教材與分級、顧問報價的堂數合約）的商業模式、師資篩選、排課取消、教材進度、價格與退費規則逐項比較，並依成人、國高中與國小孩子三種情境建議怎麼選。","image":"https://americanenglish.com.tw/assets/img/blog/two-people-side-by-side-laptops.webp","datePublished":"2026-10-13","dateModified":"2026-10-13","inLanguage":"zh-Hant-TW","author":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"publisher":{"@id":"https://americanenglish.com.tw/#organization"},"mainEntityOfPage":"https://americanenglish.com.tw/tutorabc-vs-amazingtalker/","@id":"https://americanenglish.com.tw/tutorabc-vs-amazingtalker/#article","alternativeHeadline":"AmazingTalker vs TutorABC 比較：哪個好？師資、價格、合約","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"hasPart":{"@id":"https://americanenglish.com.tw/tutorabc-vs-amazingtalker/#faq"}}</script>
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/tutorabc-vs-amazingtalker/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/tutorabc-vs-amazingtalker/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="twitter:image" content="https://americanenglish.com.tw/assets/img/blog/two-people-side-by-side-laptops.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://americanenglish.com.tw/blog/"},{"@type":"ListItem","position":3,"name":"AmazingTalker vs TutorABC 比較：家教媒合平台、課程公司，哪個適合你？"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://americanenglish.com.tw/tutorabc-vs-amazingtalker/#faq","url":"https://americanenglish.com.tw/tutorabc-vs-amazingtalker/","inLanguage":"zh-Hant-TW","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"mainEntity":[{"@type":"Question","name":"AmazingTalker 和 TutorABC 哪個比較便宜？","acceptedAnswer":{"@type":"Answer","text":"不能直接比，因為計價方式不同。AmazingTalker 由老師自訂價格，2026 年 10 月 12 日官網英文老師列表第一頁的 50 分鐘課標價從 NT$149 到 NT$895；TutorABC 不公開價目，官網參考區間是成人約 NT$550–2,200／堂（45 分鐘）、兒少約 NT$300 起／堂。比較時請換算成每分鐘成本，並把預計會上的總堂數算進去。"}},{"@type":"Question","name":"小孩適合 AmazingTalker 還是 TutorABC？","acceptedAnswer":{"@type":"Answer","text":"看家長能投入多少。AmazingTalker 有兒童美語、幼兒英文等分類，但平台條款限 18 歲以上使用、未成年須經家長同意，挑老師與追進度都要家長自己來；TutorABC 的兒童課程在 tutorJr 官網，有分級教材與學習報告。孩子越小，越需要固定老師、固定時段和家長陪課。"}},{"@type":"Question","name":"AmazingTalker 退費和 TutorABC 有什麼不同？","acceptedAnswer":{"@type":"Answer","text":"AmazingTalker 的服務條款寫明，退費原則上退到平台帳戶（AT 幣）而不是現金，已上的堂數以原價計算；非可歸責於平台的原因需要退現金時，收訂單總金額 20% 的違約金，課程爭議要在課後 3 天內提出。TutorABC 依合約啟用時間與已使用堂數計算，細節寫在個別服務契約裡，簽約前要索取書面算法。"}},{"@type":"Question","name":"兩個平台都可以先試上嗎？","acceptedAnswer":{"@type":"Answer","text":"可以，但方式不同。AmazingTalker 是向個別老師購買 25 分鐘體驗課，價格由老師自訂；TutorABC 官網提供體驗課，流程包含註冊、程度測驗、顧問聯絡、真人外師體驗課與學習規劃建議。兩邊都建議試課後不要當天決定，先比較總價與規則。"}},{"@type":"Question","name":"可以兩個平台一起用嗎？","acceptedAnswer":{"@type":"Answer","text":"可以，例如用 TutorABC 的分級課程打底，再在 AmazingTalker 找專長老師加強特定需求。但要注意兩件事：總花費與時間是否負擔得起，以及孩子同時面對太多位老師、太多套教材，反而不容易累積。成人自學者比較適合這樣搭配，年紀小的孩子先專注一個主線。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://americanenglish.com.tw/#website","url":"https://americanenglish.com.tw/","name":"American English 埃森美語","alternateName":["埃森美語","埃森美語 American English"],"inLanguage":"zh-Hant-TW","publisher":{"@id":"https://americanenglish.com.tw/#organization"}}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');if(!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};window._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}fbq('init','1023907773471013');fbq('track','PageView');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);var f=document.createElement('script');f.async=1;f.src='https://connect.facebook.net/en_US/fbevents.js';document.head.appendChild(f);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body data-page="tutorabc-vs-amazingtalker">
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<nav class="drawer" id="drawer" aria-label="行動版選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></nav>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="bg-deco"></div>
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/blog/">部落格</a> ／ AmazingTalker vs TutorABC</div>
+    <span class="eyebrow eyebrow-green reveal">線上英文平台 · 比較</span>
+    <h1 class="reveal d1"><span class="h1s kp">AmazingTalker vs TutorABC <em>比較</em>：</span><br><span class="h1s kp">家教媒合平台、課程公司，哪個適合你？</span></h1>
+    <div class="divider reveal d1"></div>
+    <p class="body reveal d2">作者：Christopher｜埃森美語創辦人｜美國密西根大學畢業、美國正式教師執照<!-- AE:PAGEMETA start -->｜<span class="byl-d">最後更新 <time datetime="2026-10-13">2026 年 10 月 13 日</time></span><!-- AE:PAGEMETA end --></p>
+    <div class="hero-cta reveal d2" style="margin-top:16px">
+      <a class="btn btn-primary" href="#compare-table">直接看比較表 →</a>
+      <a class="btn btn-outline" href="#which-one">三種情境怎麼選</a>
+    </div>
+    <p class="body reveal d2" style="font-size:13px;margin-top:10px">這一頁是埃森美語整理的比較，不是任何一個平台的官方網站；AmazingTalker 官網是 tw.amazingtalker.com，TutorABC 官網是 www.tutorabc.com。</p>
+    <figure class="post-hero pf-blue reveal d2">
+      <img src="/assets/img/blog/two-people-side-by-side-laptops.webp" srcset="/assets/img/blog/two-people-side-by-side-laptops-800.webp 800w, /assets/img/blog/two-people-side-by-side-laptops.webp 1600w" sizes="(max-width:828px) 100vw, 732px" width="1600" height="900" alt="兩個人並肩在各自的筆電上打字" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+<!-- AE:TOC --><nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span><a href="#商業模式課程公司-vs-家教媒合平台">商業模式：課程公司 vs 家教媒合平台</a><a href="#老師怎麼篩怎麼選">老師怎麼篩、怎麼選？</a><a href="#排課取消與老師請假">排課、取消與老師請假</a><a href="#教材與進度誰來決定">教材與進度：誰來決定？</a><a href="#價格與合約顧問報價-vs-老師自訂價">價格與合約：顧問報價 vs 老師自訂價</a><a href="#which-one">AmazingTalker 和 TutorABC 哪個好？三種情境</a><a href="#什麼情況下實體小班比這兩個平台合適">什麼情況下，實體小班比這兩個平台合適？</a><a href="#AmazingTalker-和-TutorABC-比較常見問題">AmazingTalker 和 TutorABC 比較常見問題</a></nav><!-- /AE:TOC -->
+
+    <aside class="reveal" aria-label="利益揭露" style="background:var(--light-blue);border-radius:18px;padding:16px 20px;margin:0 0 24px;font-size:14px;line-height:1.75;color:var(--navy)"><strong>利益揭露：</strong>作者經營板橋的實體英文補習班埃森美語，和兩個平台都沒有合作關係；本頁沒有聯盟連結或推薦碼，也沒有收受任何平台的費用。我們沒有在兩個平台購課，內容依兩者官網公開資料整理，2026 年 10 月查核，請以官網最新說明為準。</aside>
+    <div class="prose reveal">
+      <p>AmazingTalker 和 TutorABC 常被放在一起比，但它們做的是兩種不同的生意。<strong>AmazingTalker 是家教媒合平台</strong>：你自己挑老師，上課內容和價格由每位老師決定；<strong>TutorABC 是課程公司</strong>：教材、分級和上課形式由平台規劃，老師由系統配對。所以「AmazingTalker 和 TutorABC 哪個好」沒有標準答案——要看你需要的是挑選的自由，還是現成的體系。下表先把兩者並排：</p>
+    </div>
+    <table id="compare-table" class="compare reveal">
+      <caption>AmazingTalker 與 TutorABC 比較總表（2026 年 10 月查核）</caption>
+      <thead><tr><th scope="col">項目</th><th scope="col">TutorABC</th><th scope="col">AmazingTalker</th><th scope="col">家長重點</th></tr></thead>
+      <tbody>
+        <tr><td>模式</td><td>課程公司：平台規劃教材、分級與上課形式</td><td>媒合平台：學生與老師之間成立教學協議，平台不是協議的一方</td><td>要體系，還是要自由</td></tr>
+        <tr><td>老師</td><td>平台招聘培訓；1 對 1 可自選，小班由系統配對</td><td>依影片、履歷、評價自己挑，也可留需求請平台推薦</td><td>誰負責替你篩老師</td></tr>
+        <tr><td>上課形式</td><td>1 對 1、1 對 4 小班、大師講堂</td><td>一對一線上家教，使用 Zoom 線上教室</td><td>需不需要同儕</td></tr>
+        <tr><td>每堂長度</td><td>成人 45 分鐘；兒少依方案 25 或 45 分鐘</td><td>25 分鐘體驗課、50 分鐘正式課</td><td>比價時換算每分鐘</td></tr>
+        <tr><td>教材</td><td>授權教材（牛津、劍橋、Barron's、國家地理）與 12 級分級</td><td>由各老師準備，可在課前私訊老師溝通內容</td><td>進度由誰追蹤</td></tr>
+        <tr><td>價格</td><td>不公開價目表，由顧問報價</td><td>每位老師自訂，標價公開在老師頁面</td><td>先算總價再比較</td></tr>
+        <tr><td>購買方式</td><td>簽堂數合約（服務契約）</td><td>可買 1 堂，也可買課程包，官網強調沒有業務綁約</td><td>能接受多長的承諾</td></tr>
+        <tr><td>取消</td><td>大師講堂以外，課前 4 小時取消不扣堂</td><td>課前 12 小時可取消；12 小時內由老師決定是否算完課</td><td>孩子行程穩不穩定</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：<a href="https://tw.amazingtalker.com/" target="_blank" rel="noopener">AmazingTalker 官網首頁</a>、<a href="https://tw.amazingtalker.com/apply-to-teach" target="_blank" rel="noopener">教師招募頁</a>、<a href="https://tw.amazingtalker.com/privacy-and-terms" target="_blank" rel="noopener">服務條款</a>；TutorABC 官網首頁常見問題、<a href="https://www.tutorabc.com/faq" target="_blank" rel="noopener">常見問題 FAQ</a>、<a href="https://www.tutorabc.com/site/zh-tw/terms?tab=2" target="_blank" rel="noopener">會員服務使用條款</a>；2026 年 10 月查核。</p>
+  </div></section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">商業模式</span><h2 id="商業模式課程公司-vs-家教媒合平台">商業模式：<em>課程公司 vs 家教媒合平台</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>兩個平台最根本的差別，在於「你跟誰買課」。</p>
+      <p><strong>TutorABC：你跟公司買課。</strong>在台灣由麥奇數位股份有限公司經營，學員簽的是和公司之間的服務契約；教材、分級、上課形式、老師配對都由平台負責，另有學習顧問追蹤學習狀況。好處是一切都規劃好了，課程品質的責任主體很清楚；代價是價格要經顧問報價，課程以堂數合約計算。</p>
+      <p><strong>AmazingTalker：你跟老師買課，平台負責媒合與金流。</strong>它的服務條款開宗明義寫明自己是真人線上教學的媒合平台，並不是學生與老師之間教學協議的一方；每筆訂單付款完成，學生和老師的教學協議就成立。官網說明，學生確認課程完成後，平台才會撥款給老師；老師則依自己設定的價格授課，平台向老師收取浮動的服務費。好處是選擇多、可以一堂一堂買；代價是挑老師、追進度、處理爭議，都比較需要學員自己來。</p>
+      <p>對家長來說，這個差別決定了「出了問題找誰」。條款寫明，AmazingTalker 原則上不介入學生與老師因教學協議產生的爭議，有課程爭議要在每堂課結束後 3 天內透過平台提出；TutorABC 則是向公司申訴，條款寫的是接獲申訴後 15 日內處理回覆。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">師資</span><h2 id="老師怎麼篩怎麼選">老師<em>怎麼篩、怎麼選</em>？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>兩邊都強調嚴格篩選，但篩選之後「誰來挑老師」完全不同：</p>
+    </div>
+    <table class="compare reveal">
+      <caption>師資篩選與選老師方式（依兩平台官網說法）</caption>
+      <thead><tr><th scope="col">項目</th><th scope="col">TutorABC</th><th scope="col">AmazingTalker</th><th scope="col">家長重點</th></tr></thead>
+      <tbody>
+        <tr><td>官方篩選說法</td><td>錄取率 3–5%；英文老師皆具 TESOL 或 TEFL 證照，並完成劍橋英語教學架構培訓</td><td>教師合格率 3%；申請者需有家教、教學經驗或語言相關證照，經面試、上線後受培訓</td><td>官方數字都無法從外部查證</td></tr>
+        <tr><td>老師背景</td><td>英文師資來自超過 100 個國家，95% 為歐美母語老師；零基礎可申請雙語老師</td><td>可用「教師國籍」「母語人士」篩選老師</td><td>國籍不等於教學資格</td></tr>
+        <tr><td>誰挑老師</td><td>1 對 1 可自選；小班與部分方案由系統配對；可收藏老師優先安排，但不能確保指定</td><td>學生依自介影片、履歷、學生評價自己挑；沒時間挑可留需求，請平台推薦</td><td>孩子需要固定老師嗎</td></tr>
+        <tr><td>不滿意怎麼辦</td><td>課後評分，系統減少安排；顧問協助調整；老師缺席自動返還堂數</td><td>官網標示「100% 每堂課保障」，說明是不滿意可直接改選其他老師</td><td>換老師要多花多少時間和錢</td></tr>
+      </tbody>
+    </table>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>以老師的角度，我會提醒家長：<strong>平台的錄取率說的是平均，孩子遇到的是某一位老師</strong>。不論在哪個平台，都值得看到這位老師的實際資格——證書是哪一種、有沒有實習時數、教過幾歲的學生（TESOL／TEFL 落差很大，判讀方法見<a href="/how-to-verify-foreign-teacher-credentials/">外師資格怎麼查證</a>）。外師和中師各自擅長什麼，也可以參考<a href="/native-vs-local-english-teachers/">外師 vs 中師怎麼選</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">排課規則</span><h2 id="排課取消與老師請假">排課、取消與<em>老師請假</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p><strong>TutorABC</strong> 24 小時都能訂課，但要在時限前完成：多數課程 4 小時前，牛津、劍橋商務、多益、雅思、國高中英文等課程要 12 小時前，大師講堂 5 分鐘前。大師講堂以外的課，取消要在課前 4 小時；遲到或逾時沒取消，該堂算已使用。若確認是老師缺席，系統會自動返還堂數。條款也提醒，老師多為外國籍，遇到聖誕節、新年等重大節日，可預約的時段可能較少。</p>
+      <p><strong>AmazingTalker</strong> 是買課後和老師約時間，官網寫明臨時有事可以在課前 12 小時取消；12 小時內才取消，依服務條款由老師決定這堂是否算完成。對某一堂課有任何爭議，要在課程結束後 3 天內（含上課當天）透過平台提出，逾時就不能退款、退成 AT 幣或補課。</p>
+      <p>對照起來：TutorABC 可以更晚取消（課前 4 小時），但每一堂都要在預約時限前排好；AmazingTalker 要提早到課前 12 小時取消，好處是可以直接和同一位老師約固定時段（視老師的空檔）。行程常臨時變動的家庭，要把「錯過一堂的成本」算進去。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">教材進度</span><h2 id="教材與進度誰來決定">教材與進度：<em>誰來決定</em>？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>這一點對孩子特別重要。<strong>TutorABC</strong> 的教材由平台提供：官網列出牛津、劍橋、Barron's、國家地理等授權來源，訂製英文對照 CEFR 分成 12 級；方案包含課後學習報告、教材與作業，每堂都有錄影可回放。進度是「系統化」的，但每堂自選時段與主題，小班的老師與同學由系統配對，連貫性要靠固定上課時段來維持。</p>
+      <p><strong>AmazingTalker</strong> 的上課內容由每位老師自己準備：官網把「教材製作力」列在教師培訓項目，並建議學生課前私訊老師溝通上課內容，平台沒有公告統一的分級教材。遇到會規劃的老師，可以得到量身打造的課；但進度怎麼排、多久檢核一次，取決於那一位老師。</p>
+      <p>如果選 AmazingTalker 給孩子上課，我建議在第二堂之前，請老師用文字回答三件事：<strong>這個月的目標是什麼、用哪一套教材、怎麼知道孩子進步了</strong>。答得出來的老師，通常也比較會安排課程。想先知道孩子大約在哪一級，可以對照<a href="/kids-english-levels/">兒童英文程度分級表</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">價格合約</span><h2 id="價格與合約顧問報價-vs-老師自訂價">價格與合約：<em>顧問報價 vs 老師自訂價</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p><strong>TutorABC</strong> 不公開價目表，留資料後由學習顧問報價；官網常見問題列出的參考區間是成人約 NT$550–2,200／堂、兒少約 NT$300 起／堂。<strong>AmazingTalker</strong> 的價格由每位老師自訂、公開標在老師頁面：2026 年 10 月 12 日我們查看官網英文老師列表第一頁，20 位老師的 50 分鐘正式課標價從 NT$149 到 NT$895，25 分鐘體驗課從 NT$35 到 NT$456。標價由老師設定、可能變動，以上只是當天的快照。兩邊的退費與合約規則差異更大：</p>
+    </div>
+    <table class="compare reveal">
+      <caption>合約與退費規則對照（依兩平台官方條款）</caption>
+      <thead><tr><th scope="col">規則</th><th scope="col">TutorABC</th><th scope="col">AmazingTalker</th><th scope="col">家長重點</th></tr></thead>
+      <tbody>
+        <tr><td>買什麼</td><td>一份服務契約，內含堂數與服務期間</td><td>一筆一筆訂單；每筆訂單有自己的使用期限，依購買方案而定</td><td>堂數要在期限內上完</td></tr>
+        <tr><td>退費計算</td><td>依合約啟用時間與已使用堂數計算，細節在個別服務契約</td><td>已上的堂數以原價計算後，退回剩餘部分</td><td>折扣價買的課，退費可能用原價扣</td></tr>
+        <tr><td>退到哪裡</td><td>依服務契約約定</td><td>原則上退到平台帳戶（AT 幣）供下次使用，不退現金</td><td>需要現金就先問清楚</td></tr>
+        <tr><td>退現金</td><td>依服務契約約定</td><td>非可歸責於平台的原因而需要退現金時，收訂單總金額 20% 的違約金</td><td>20% 是以訂單總額計算</td></tr>
+        <tr><td>處理時間</td><td>契約約定</td><td>同意退款後 30 個工作天內完成</td><td>保留對話與付款紀錄</td></tr>
+        <tr><td>暫停與期限</td><td>合約開始 7 天後，可因生病住院等原因申請暫停，次數與天數有上限</td><td>條款沒有暫停上課的申請機制；訂單使用期限與延長政策依平台公告</td><td>長假或住院時怎麼辦</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：<a href="https://tw.amazingtalker.com/privacy-and-terms" target="_blank" rel="noopener">AmazingTalker 服務條款</a>第 1、5、7、9、11、15 條（頁面標示更新日期 2022 年 1 月 14 日）、<a href="https://tw.amazingtalker.com/tutors/english" target="_blank" rel="noopener">英文老師列表</a>；<a href="https://www.tutorabc.com/site/zh-tw/terms?tab=2" target="_blank" rel="noopener">TutorABC 會員服務使用條款</a>（2026 年 9 月 22 日版）與官網常見問題；2026 年 10 月查核。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>簡單說：<strong>TutorABC 的風險在「合約長」</strong>，簽之前要把總價、堂數和退費算式拿到手（我們整理了一份<a href="/tutorabc-price/">TutorABC 報價必問清單</a>）；<strong>AmazingTalker 的風險在「買太多」</strong>，課程包折扣再誘人，也先用體驗課和少量堂數確認老師合適，因為已上的課退費時以原價計算。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">怎麼選</span><h2 id="which-one">AmazingTalker 和 TutorABC <em>哪個好</em>？三種情境</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p><strong>情境一：成人或高中生，目標很具體。</strong>例如準備面試口說、出國前的生活會話，或想找特定口音、特定專長的老師，而且希望一堂一堂控制預算——AmazingTalker 的自選老師與單堂購買比較合適。建議先用 25 分鐘體驗課試兩三位老師，再買少量堂數。</p>
+      <p><strong>情境二：想要有分級、有教材、有報告的系統學習。</strong>時間不固定、需要深夜或清晨上課，也能接受簽一份堂數合約——TutorABC 比較合適，1 對 1 和小班可以搭配。簽約前把報價與退費規則問清楚，整體評價見<a href="/tutorabc-review/">TutorABC 評價</a>。</p>
+      <p><strong>情境三：國小或更小的孩子。</strong>兩個平台都需要家長深度參與。AmazingTalker 有「兒童美語（4–11）」「幼兒英文（3–5）」等學習需求分類，但服務條款寫明平台供 18 歲以上使用、未滿 18 歲須經法定代理人同意，也就是帳號、挑老師、追進度都落在家長身上；TutorABC 的兒童課程在 tutorJr 官網，有分級教材，可參考 <a href="/tutorjr-review/">tutorJr 評價</a>。國中、高中生想準備會考或學測，TutorABC 有專門的 <a href="/tutorabc-teens-review/">TutorABC Teens 國中高中英文課</a>。</p>
+      <p>不論選哪一個，<strong>年紀越小，越需要固定的老師和固定的時段</strong>——教小孩，這是最基本的原則之一。</p>
+    </div>
+    <div class="center stack reveal" style="margin-top:48px"><h2 id="什麼情況下實體小班比這兩個平台合適">什麼情況下，<em>實體小班</em>比這兩個平台合適？</h2></div>
+    <div class="prose reveal">
+      <p>兩個平台都是線上課：AmazingTalker 要家長自己篩老師、追進度，TutorABC 的小班每次重新配對同學。對需要固定同學、固定老師和每週固定節奏的國小孩子，實體小班會比較合適。埃森美語每班 12 人以內、月繳不綁長約；線上與實體的整體比較，見<a href="/online-vs-in-person-english-banqiao/">兒童線上英文 vs 實體小班</a>。</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">常見問題</span><h2 id="AmazingTalker-和-TutorABC-比較常見問題">AmazingTalker 和 TutorABC 比較<em>常見問題</em></h2></div>
+    <div class="faq">
+      <div class="faq-item"><h3 id="AmazingTalker-和-TutorABC-哪個比較便宜" class="faq-h"><button class="faq-q" aria-expanded="false">AmazingTalker 和 TutorABC 哪個比較便宜？<span class="pm"></span></button></h3><div class="faq-a"><p>不能直接比，因為計價方式不同。AmazingTalker 由老師自訂價格，2026 年 10 月 12 日官網英文老師列表第一頁的 50 分鐘課標價從 NT$149 到 NT$895；TutorABC 不公開價目，官網參考區間是成人約 NT$550–2,200／堂（45 分鐘）、兒少約 NT$300 起／堂。比較時請換算成每分鐘成本，並把預計會上的總堂數算進去。</p></div></div>
+      <div class="faq-item"><h3 id="小孩適合-AmazingTalker-還是-TutorABC" class="faq-h"><button class="faq-q" aria-expanded="false">小孩適合 AmazingTalker 還是 TutorABC？<span class="pm"></span></button></h3><div class="faq-a"><p>看家長能投入多少。AmazingTalker 有兒童美語、幼兒英文等分類，但平台條款限 18 歲以上使用、未成年須經家長同意，挑老師與追進度都要家長自己來；TutorABC 的兒童課程在 tutorJr 官網，有分級教材與學習報告。孩子越小，越需要固定老師、固定時段和家長陪課。</p></div></div>
+      <div class="faq-item"><h3 id="AmazingTalker-退費和-TutorABC-有什麼不同" class="faq-h"><button class="faq-q" aria-expanded="false">AmazingTalker 退費和 TutorABC 有什麼不同？<span class="pm"></span></button></h3><div class="faq-a"><p>AmazingTalker 的服務條款寫明，退費原則上退到平台帳戶（AT 幣）而不是現金，已上的堂數以原價計算；非可歸責於平台的原因需要退現金時，收訂單總金額 20% 的違約金，課程爭議要在課後 3 天內提出。TutorABC 依合約啟用時間與已使用堂數計算，細節寫在個別服務契約裡，簽約前要索取書面算法。</p></div></div>
+      <div class="faq-item"><h3 id="兩個平台都可以先試上嗎" class="faq-h"><button class="faq-q" aria-expanded="false">兩個平台都可以先試上嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>可以，但方式不同。AmazingTalker 是向個別老師購買 25 分鐘體驗課，價格由老師自訂；TutorABC 官網提供體驗課，流程包含註冊、程度測驗、顧問聯絡、真人外師體驗課與學習規劃建議。兩邊都建議試課後不要當天決定，先比較總價與規則。</p></div></div>
+      <div class="faq-item"><h3 id="可以兩個平台一起用嗎" class="faq-h"><button class="faq-q" aria-expanded="false">可以兩個平台一起用嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>可以，例如用 TutorABC 的分級課程打底，再在 AmazingTalker 找專長老師加強特定需求。但要注意兩件事：總花費與時間是否負擔得起，以及孩子同時面對太多位老師、太多套教材，反而不容易累積。成人自學者比較適合這樣搭配，年紀小的孩子先專注一個主線。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AE:ROUTE -->
+<section class="section bg-soft">
+  <div class="wrap">
+    <span class="eyebrow eyebrow-yellow">比較之後</span>
+    <h2 id="選定方向再看細節" style="margin-top:14px">選定方向，<em>再看細節</em></h2>
+    <div class="divider" style="margin:18px 0 22px"></div>
+    <p class="body" style="max-width:720px">如果你偏向 TutorABC，下面有評價、報價清單和國高中課程的完整整理；如果你偏向自己挑家教，先看家教和補習班各自的長處，再去挑老師會更有方向。</p>
+    <div style="margin-top:20px"><a href="/kids-online-english-comparison/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">5 大平台一表比較</a><a href="/tutorabc-review/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">TutorABC 評價</a><a href="/tutorabc-price/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">TutorABC 價格與方案</a><a href="/tutorabc-teens-review/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">TutorABC Teens 評價</a><a href="/cram-school-vs-tutor-vs-self-study/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">補習班、家教、自學怎麼選</a><a href="/how-to-verify-foreign-teacher-credentials/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">外師資格怎麼查證</a></div>
+  </div>
+</section>
+<!-- /AE:ROUTE -->
+<section class="section bg-blue">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <span class="eyebrow eyebrow-green">從程度開始</span>
+      <h2 id="選平台之前先知道孩子在哪一級" style="margin-top:14px">選平台之前，<br><em>先知道孩子在哪一級</em></h2>
+      <p class="body" style="max-width:560px;margin:16px auto 0">不論是自己挑家教，還是交給課程公司排課，起點都是孩子現在的程度。我們會告訴你孩子的程度和適合的下一步；要選哪一種上課方式，由你決定。</p>
+      <div class="cta-row">
+        <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 預約免費程度評估</a>
+        <a href="/kids-english-levels/" class="btn btn-outline">看兒童英文程度分級</a>
+      </div>
+      <p class="body" style="max-width:560px;margin:22px auto 0;font-size:14px">接著讀：<a href="/tutorabc-review/">TutorABC 評價</a>、<a href="/native-vs-local-english-teachers/">外師 vs 中師怎麼選</a>、<a href="/cram-school-vs-tutor-vs-self-study/">補習班 vs 家教 vs 自學</a>。</p>
+      <p class="body" style="max-width:560px;margin:10px auto 0;font-size:14px">如果你剛好住板橋：我們的教室在<a href="/banqiao-english-cram-school/">板橋中正路</a>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- AE:BYL start --><div class="page-meta"><div class="wrap"><span>作者：<a href="/certified-american-teacher-banqiao/">Christopher｜埃森美語創辦人</a>（<a href="/certified-american-teacher-banqiao/">關於作者</a>）</span></div></div>
+<!-- AE:BYL end --></main>
+<!-- AE:FOOT start -->
+<footer class="site-footer"><div class="wrap"><div class="foot-grid"><div><div class="foot-logo"><img class="foot-logo-img" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="34" height="34" loading="lazy" decoding="async">American English 埃森美語</div><p class="foot-tag">板橋中正路在地深耕的美籍外師英文補習班。100% 美籍持證教師、每班 12 人小班制。</p><p class="foot-nap">220 新北市板橋區中正路89巷4號1樓<span class="foot-sep">　｜　</span><a href="tel:+886928067772">☎ 0928-067-772</a></p></div><nav class="foot-links" aria-label="頁尾導覽"><div class="foot-col"><p class="foot-h">課程</p><a href="/banqiao-english-cram-school/">板橋英文補習班</a><a href="/courses/">課程總覽</a><a href="/kids-english-banqiao/">兒童美語</a><a href="/junior-high-english-banqiao/">國中英文</a><a href="/free-trial/">預約試聽</a></div><div class="foot-col"><p class="foot-h">學習資源</p><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/english-pronunciation/">英文發音</a><a href="/download/">免費下載</a><a href="/chart-license/">圖表授權</a></div><div class="foot-col"><p class="foot-h">關於</p><a href="/certified-american-teacher-banqiao/">師資介紹</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="/contact/">聯絡與交通</a></div><div class="foot-col"><p class="foot-h">聯絡</p><a href="tel:+886928067772">電話 0928-067-772</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 線上預約</a><a href="https://maps.app.goo.gl/hLChkEqAMKCsMWpm6" target="_blank" rel="noopener">Google 地圖位置</a><a href="https://www.facebook.com/profile.php?id=61576014571186" target="_blank" rel="noopener">Facebook 粉絲專頁</a></div></nav></div><!-- AE:AINOTE --><p class="foot-ai">英文好，用 AI 也更順手 · <a href="https://essenindustries.com/tw/">essenindustries.com</a></p><!-- /AE:AINOTE -->
+<div class="foot-bottom"><span>© 2026 American English 埃森美語</span><span>私立埃森美語文理短期補習班　｜　新北市政府立案 社補教社字第115026號　｜　統一編號 61476523</span><span>220 新北市板橋區中正路89巷4號1樓</span></div><div class="foot-pref"><div google-add-preferred-source-btn data-theme="dark" data-lang="zh-TW"></div></div></div></footer>
+<!-- AE:FOOT end -->
+<script src="/assets/app.js?v=b537277d"></script>
+</body>
+</html>

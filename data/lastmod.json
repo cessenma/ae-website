@@ -15,6 +15,18 @@
 "date": "2026-08-21",
 "hash": "11b15bae60f0c98701b33e7c742fbd56"
 },
+"amazingtalker-kids-tutor-guide": {
+"date": "2026-10-13",
+"hash": "271cf1c2dc20e8824ebc85941389ac85"
+},
+"amazingtalker-price": {
+"date": "2026-10-13",
+"hash": "25017809baa8cd91944c3737ac639bc5"
+},
+"amazingtalker-review": {
+"date": "2026-10-13",
+"hash": "3794ba9bc0ef18fcbfcc499a2cba0611"
+},
 "animals-english-vocabulary": {
 "date": "2026-10-01",
 "hash": "d55d88c3a4a0b5507e2a8d9f8f861c35"
@@ -248,8 +260,8 @@
 "hash": "8a465248755b2f26e0acfa72ee03137b"
 },
 "blog": {
-"date": "2026-10-12",
-"hash": "0f81b5dc7fbba0c64b2b889b895d6fcf"
+"date": "2026-10-13",
+"hash": "f8b4a75ba4f17a43829551f7ba9300ae"
 },
 "body-parts-english": {
 "date": "2026-09-22",
@@ -344,8 +356,8 @@
 "hash": "9be1070439a02c6d39961fe2c52ac344"
 },
 "cool-english-guide": {
-"date": "2026-10-08",
-"hash": "3a4f3a9ed0ec21dd0132cd5f71cb691e"
+"date": "2026-10-13",
+"hash": "1d08f4ad90c17e0b5c19101d4b056869"
 },
 "countries-english": {
 "date": "2026-10-01",
@@ -356,8 +368,8 @@
 "hash": "e1b221b7113668f19f4ca6c7e7a81229"
 },
 "cram-school-vs-tutor-vs-self-study": {
-"date": "2026-08-07",
-"hash": "5ce3dc26d96947ff0fe3d99bee88077d"
+"date": "2026-10-13",
+"hash": "290faa8997558734e41c16dd812d5bda"
 },
 "daguan-elementary-english": {
 "date": "2026-08-07",
@@ -1032,8 +1044,8 @@
 "hash": "e4ec1ab38cf0add89dd8a9f59ec33dc3"
 },
 "kids-english-guide": {
-"date": "2026-09-06",
-"hash": "3b80f20fa0589313ea58ceec0efb62ad"
+"date": "2026-10-13",
+"hash": "b2753e56b1a2b31ad4c8ac93a5b99c08"
 },
 "kids-english-levels": {
 "date": "2026-08-20",
@@ -1042,6 +1054,10 @@
 "kids-english-names-guide": {
 "date": "2026-08-26",
 "hash": "a07e19e8a354d77eded2dda6905ea8b9"
+},
+"kids-online-english-comparison": {
+"date": "2026-10-13",
+"hash": "00a09122b16ef4bd3c959fad6164ba4d"
 },
 "kk-phonetic-chart": {
 "date": "2026-10-02",
@@ -1147,9 +1163,21 @@
 "date": "2026-09-15",
 "hash": "6b9254df54704c37581536bda784599b"
 },
+"oikid-price": {
+"date": "2026-10-13",
+"hash": "a4fbc855441ee4317ea37364756adc56"
+},
+"oikid-review": {
+"date": "2026-10-13",
+"hash": "a34e803a45b7caa656caf94b0e8ad193"
+},
+"oikid-vs-51talk": {
+"date": "2026-10-13",
+"hash": "930d9e9f56b1b50ef22b6d06b1f29d47"
+},
 "online-vs-in-person-english-banqiao": {
-"date": "2026-07-31",
-"hash": "c20f95219261169f219465ac89f0284a"
+"date": "2026-10-13",
+"hash": "e47c11a0f0ea3976f285509502c027ca"
 },
 "ordinal-numbers-english": {
 "date": "2026-09-21",
@@ -1234,6 +1262,18 @@
 "plural-s-past-ed-pronunciation": {
 "date": "2026-08-21",
 "hash": "72da8d171ccd3dc0854b061ad63de38e"
+},
+"preply-price": {
+"date": "2026-10-13",
+"hash": "1a9a342e587a3dd16c467e48e6a6d699"
+},
+"preply-review": {
+"date": "2026-10-13",
+"hash": "e92a7d1171dba5946a1353a9206d367e"
+},
+"preply-vs-italki-amazingtalker": {
+"date": "2026-10-13",
+"hash": "eaea1a54070d8ce688eedc9b767a0934"
 },
 "preschool-english-guide": {
 "date": "2026-08-13",
@@ -1326,6 +1366,38 @@
 "time-english": {
 "date": "2026-10-07",
 "hash": "29aa49b32094e379a53b3e91b9d32161"
+},
+"tutorabc-price": {
+"date": "2026-10-13",
+"hash": "dae7c0a467bb2f17088abb8d43b83c24"
+},
+"tutorabc-review": {
+"date": "2026-10-13",
+"hash": "20330477d88953853be2f865b0736cb4"
+},
+"tutorabc-teens-review": {
+"date": "2026-10-13",
+"hash": "b5ff0d569304b02c1c783bba23e2d018"
+},
+"tutorabc-vs-amazingtalker": {
+"date": "2026-10-13",
+"hash": "96eaf878e28f2ba28ee8699dbe9d5a03"
+},
+"tutorjr-age-and-teachers": {
+"date": "2026-10-13",
+"hash": "67eeb47bc24ae1ba3f0141a40fd88f8f"
+},
+"tutorjr-price": {
+"date": "2026-10-13",
+"hash": "35a2ad7a2fe2aa0f05cebd8974aea5fe"
+},
+"tutorjr-review": {
+"date": "2026-10-13",
+"hash": "ef81e4a560232328f8e28f3a116393e3"
+},
+"tutorjr-vs-oikid": {
+"date": "2026-10-13",
+"hash": "6988bfb9750f8093355dd5f88cc010ec"
 },
 "valentines-day-english": {
 "date": "2026-10-11",

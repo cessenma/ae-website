@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<link rel="stylesheet" href="/assets/styles.css?v=52538af7">
+<!-- AE:CRIT end -->
+<!-- AE:FONTS start -->
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2">
+<style>@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0vrx52jJ3Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB3vD2xWr53BJl.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZOIHTWEBlw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58UfivUw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKK58UfivUw4aw.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+<!-- AE:FONTS end -->
+<meta name="theme-color" content="#1A2752">
+<!-- Google Analytics (GA4) -->
+<title>兒童線上英文推薦：5 大平台比較（價格、師資、試上）｜埃森美語</title>
+<meta name="description" content="兒童線上英文推薦哪一家？AmazingTalker、TutorABC、tutorJr、Preply、OiKID 一張表比較：適合年齡、每堂長度、老師、價格與購買方式，附報名前必問的 5 件事。">
+<link rel="canonical" href="https://americanenglish.com.tw/kids-online-english-comparison/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="American English 埃森美語">
+<meta property="og:title" content="兒童線上英文推薦：5 大平台比較（價格、師資、試上）">
+<meta property="og:description" content="兒童線上英文推薦哪一家？AmazingTalker、TutorABC、tutorJr、Preply、OiKID 一張表比較：適合年齡、每堂長度、老師、價格與購買方式，附報名前必問的 5 件事。">
+<meta property="og:url" content="https://americanenglish.com.tw/kids-online-english-comparison/">
+<meta property="og:image" content="https://americanenglish.com.tw/assets/img/blog/two-boys-laptop-tablet-study-table.webp">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="兩個男孩在桌前用筆電和平板一起學習">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"https://americanenglish.com.tw/#organization","name":"埃森美語 American English","alternateName":["埃森美語","American English 埃森美語","American English","埃森美語 - American English Institute"],"legalName":"私立埃森美語文理短期補習班","taxID":"61476523","description":"板橋中正路在地深耕的美籍外師英文補習班，提供 100% 美籍持證教師、每班 12 人小班制的兒童美語與國中英文課程。","url":"https://americanenglish.com.tw/","telephone":"+886-928-067-772","image":["https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","https://americanenglish.com.tw/assets/img/banqiao-small-class-english-classroom.webp","https://americanenglish.com.tw/assets/img/banqiao-kids-english-class.webp","https://americanenglish.com.tw/assets/img/certified-american-teacher-banqiao.webp","https://americanenglish.com.tw/assets/img/kids-confident-english-speaking.webp"],"logo":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"中正路89巷4號1樓","addressLocality":"板橋區","addressRegion":"新北市","postalCode":"220","addressCountry":"TW"},"geo":{"@type":"GeoCoordinates","latitude":25.0145617,"longitude":121.4560468},"areaServed":{"@type":"AdministrativeArea","name":"板橋區","containedInPlace":{"@type":"AdministrativeArea","name":"新北市"}},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"19:00"}],"sameAs":["https://www.google.com/maps?cid=11837760024257631170","https://lin.ee/W9J8TuQ","https://www.facebook.com/profile.php?id=61576014571186"],"hasMap":"https://www.google.com/maps?cid=11837760024257631170","founder":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"knowsLanguage":["en-US","zh-TW"],"knowsAbout":["兒童美語","國中英文","美籍外師英語教學","Phonics 自然發音","劍橋兒童英檢 (Cambridge YLE)","GEPT 全民英檢","國中教育會考英文","英語會話與口說","板橋英文補習班"],"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+886-928-067-772","url":"https://lin.ee/W9J8TuQ","availableLanguage":["zh-TW","en"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Christopher","jobTitle":"創辦人暨美籍持證英文教師 (Founder & Licensed American English Teacher)","worksFor":{"@id":"https://americanenglish.com.tw/#organization"},"alumniOf":{"@type":"CollegeOrUniversity","name":"University of Michigan"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"美國正式教師執照 (U.S. State Teaching Certificate)"},"knowsLanguage":["en-US","zh-TW"],"@id":"https://americanenglish.com.tw/#christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"兒童線上英文推薦：5 大平台一張表比較","description":"兒童線上英文推薦哪一家？AmazingTalker、TutorABC、tutorJr、Preply、OiKID 一張表比較：適合年齡、每堂長度、老師、價格與購買方式，附報名前必問的 5 件事。","image":"https://americanenglish.com.tw/assets/img/blog/two-boys-laptop-tablet-study-table.webp","datePublished":"2026-10-13","dateModified":"2026-10-13","inLanguage":"zh-Hant-TW","author":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"publisher":{"@id":"https://americanenglish.com.tw/#organization"},"mainEntityOfPage":"https://americanenglish.com.tw/kids-online-english-comparison/","@id":"https://americanenglish.com.tw/kids-online-english-comparison/#article","alternativeHeadline":"兒童線上英文推薦：5 大平台比較（價格、師資、試上）","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"hasPart":{"@id":"https://americanenglish.com.tw/kids-online-english-comparison/#faq"}}</script>
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/kids-online-english-comparison/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/kids-online-english-comparison/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="twitter:image" content="https://americanenglish.com.tw/assets/img/blog/two-boys-laptop-tablet-study-table.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://americanenglish.com.tw/blog/"},{"@type":"ListItem","position":3,"name":"兒童線上英文推薦：5 大平台一張表比較"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://americanenglish.com.tw/kids-online-english-comparison/#faq","url":"https://americanenglish.com.tw/kids-online-english-comparison/","inLanguage":"zh-Hant-TW","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"mainEntity":[{"@type":"Question","name":"兒童線上英文推薦哪一家？","acceptedAnswer":{"@type":"Answer","text":"沒有一家適合所有孩子，先看你要的是哪一種模式。想自己挑老師、一堂一堂買，看 AmazingTalker；想要有教材進度、由平台安排老師，看 TutorABC 或 tutorJr；孩子小又怕生、需要中文緩衝，可以看 OiKID 的雙語老師。Preply 的服務條款限 13 歲以上並須家長監督，比較適合青少年。"}},{"@type":"Question","name":"兒童線上英文一堂多少錢？","acceptedAnswer":{"@type":"Answer","text":"依各平台公開的資訊：AmazingTalker 官方說兒童美語行情約每小時 NT$329–548，價格由老師自訂；TutorABC 官方常見問題寫兒少課程約 NT$300 起／堂；tutorJr 與 OiKID 官網沒有公開價格，要由顧問報價。預付方案的單價，要用總價除以實際上得完的一對一堂數來算。"}},{"@type":"Question","name":"幾歲適合上兒童線上英文？","acceptedAnswer":{"@type":"Answer","text":"各平台官網寫的年齡不同：OiKID 寫 3–15 歲、tutorJr 首頁寫 5–15 歲，Preply 的條款則不讓未滿 13 歲者使用。以老師的經驗，一對一的螢幕課在國小高年級以後比較容易用滿；更小的孩子可以上，但通常需要大人在旁邊陪。"}},{"@type":"Question","name":"兒童線上英文可以固定老師嗎？","acceptedAnswer":{"@type":"Answer","text":"看平台。AmazingTalker、Preply 由家長自己挑老師，可以持續預約同一位；OiKID 自選老師，但熱門老師要每週搶；tutorJr 可以設定喜愛老師優先配對，條款寫明無法確保指定特定老師。報名前問清楚老師請假或離開時怎麼處理。"}},{"@type":"Question","name":"網路上的兒童線上英文推薦文可以信嗎？","acceptedAnswer":{"@type":"Answer","text":"可以參考，但要知道很多分享文附有推薦碼或推薦試上表單，有的刊在品牌自己的部落格。比較可靠的做法，是把文章裡的價格、年齡和退費說法拿去對照官網與服務條款，再讓孩子試上一堂完整的課。本頁沒有任何推薦連結。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://americanenglish.com.tw/#website","url":"https://americanenglish.com.tw/","name":"American English 埃森美語","alternateName":["埃森美語","埃森美語 American English"],"inLanguage":"zh-Hant-TW","publisher":{"@id":"https://americanenglish.com.tw/#organization"}}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');if(!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};window._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}fbq('init','1023907773471013');fbq('track','PageView');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);var f=document.createElement('script');f.async=1;f.src='https://connect.facebook.net/en_US/fbevents.js';document.head.appendChild(f);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body data-page="kids-online-english-comparison">
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<nav class="drawer" id="drawer" aria-label="行動版選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></nav>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="bg-deco"></div>
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/blog/">部落格</a> ／ 兒童線上英文平台比較</div>
+    <span class="eyebrow eyebrow-green reveal">線上英文平台 · 比較總整理</span>
+    <h1 class="reveal d1"><span class="h1s">兒童線上英文<em>推薦</em>：</span><br><span class="h1s">5 大平台一張表比較</span></h1>
+    <div class="divider reveal d1"></div>
+    <p class="body reveal d2">作者：Christopher｜埃森美語創辦人｜美國密西根大學畢業、美國正式教師執照<!-- AE:PAGEMETA start -->｜<span class="byl-d">最後更新 <time datetime="2026-10-13">2026 年 10 月 13 日</time></span><!-- AE:PAGEMETA end --></p>
+    <div class="hero-cta reveal d2" style="margin-top:16px">
+      <a class="btn btn-primary" href="#比較表上課方式">直接看比較表 →</a>
+      <a class="btn btn-outline" href="#報名任何平台前先問這-5-件事">報名前必問 5 件事</a>
+    </div>
+    <div class="reveal d2" style="margin-top:14px;max-width:560px;padding:12px 16px;border-radius:14px;background:#fff;border:2px solid rgba(26,39,82,.10);font-size:13.5px;line-height:1.75;color:var(--muted)"><strong style="color:var(--navy)">利益揭露</strong>：作者在板橋經營實體英文補習班（埃森美語）。我們沒有收過任何線上平台的錢，本頁沒有聯盟或推薦連結，也沒有購買過這些平台的課程；內容來自各平台官網、服務條款與網路公開討論。資料與價格查核於 2026 年 10 月，報名前請以各平台官網與你簽的書面合約為準。</div>
+    <figure class="post-hero pf-blue reveal d2">
+      <img src="/assets/img/blog/two-boys-laptop-tablet-study-table.webp" srcset="/assets/img/blog/two-boys-laptop-tablet-study-table-800.webp 800w, /assets/img/blog/two-boys-laptop-tablet-study-table.webp 1600w" sizes="(max-width:828px) 100vw, 732px" width="1600" height="900" alt="兩個男孩在桌前用筆電和平板一起學習" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+<!-- AE:TOC --><nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span><a href="#比較表上課方式">比較表：上課方式</a><a href="#比較表費用與合約">比較表：費用與合約</a><a href="#五個平台各適合誰">五個平台，各適合誰？</a><a href="#報名任何平台前先問這-5-件事">報名任何平台前，先問這 5 件事</a><a href="#DcardPTT-上家長最常討論的-4-件事">Dcard、PTT 上，家長最常討論的 4 件事</a><a href="#什麼時候實體小班比線上平台合適">什麼時候，實體小班比線上平台合適？</a><a href="#兒童線上英文推薦常見問題">兒童線上英文推薦常見問題</a></nav><!-- /AE:TOC -->
+
+    <div class="prose reveal">
+      <p>「兒童線上英文推薦哪一家？」是家長最常搜尋的問題之一，但五個最常被拿來比較的平台——AmazingTalker、Preply、TutorABC、tutorJr、OiKID——其實是三種不同的東西：有的是讓你自己挑老師的家教市集，有的是由公司安排老師和教材的課程，有的是專做兒童的平台。先分清楚模式，再比價格，才不會拿蘋果比橘子。我們把五個平台的官網資料、服務條款，以及 Dcard、PTT 上家長反覆提到的重點逐一查過，每個平台都另外寫了評價、價格與比較頁，這一頁是總整理。</p>
+      <p><strong>先給結論：</strong></p>
+      <ul>
+        <li><strong>想自己挑老師、一堂一堂買：</strong>看家教媒合平台。AmazingTalker 可以 1 堂起購；Preply 是向一位老師按 28 天訂閱，而且服務條款限 13 歲以上、未成年須家長監督。</li>
+        <li><strong>想要有教材進度、由平台安排老師：</strong>看 TutorABC（國高中有 TutorABC Teens）或它旗下的兒童品牌 tutorJr。兩家都不公開價目表，要由顧問報價。</li>
+        <li><strong>孩子年紀小、怕生，需要中文緩衝：</strong>OiKID 可以讓家長選會說中文的雙語老師；TutorABC 與 tutorJr 的官方說明則是零基礎可以申請雙語老師。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">比較表</span><h2 id="比較表上課方式">比較表：<em>上課方式</em></h2></div>
+    <table class="compare reveal" style="margin-top:18px">
+      <caption>五個平台的上課方式（2026 年 10 月查核官網與條款）</caption>
+      <thead><tr><th scope="col" style="min-width:5.5em">平台</th><th scope="col">類型與年齡</th><th scope="col">每堂長度與形式</th><th scope="col">老師怎麼來</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><a href="/amazingtalker-review/">AmazingTalker</a></th><td>家教媒合平台；條款以 18 歲以上為使用者，未滿 18 歲須法定代理人同意</td><td>體驗課約 25 分鐘；正式課 25 或 50 分鐘，依老師開課；Zoom 上課</td><td>個別老師自訂價格與時段，家長自己挑</td></tr>
+        <tr><th scope="row"><a href="/preply-review/">Preply</a></th><td>家教媒合平台（美國公司）；條款限 18 歲以上，13–17 歲須家長監督，不得讓未滿 13 歲者使用</td><td>正式課一堂 50 分鐘；試上可選 25 或 50 分鐘</td><td>個別老師，家長自己挑；英文老師列表約 4.6 萬名</td></tr>
+        <tr><th scope="row"><a href="/tutorabc-review/">TutorABC</a></th><td>品牌課程平台（麥奇數位）；成人與兒少，國高中另有 TutorABC Teens</td><td>成人 45 分鐘；兒少依方案 25 或 45 分鐘；1 對 1、1 對 4 小班、大師講堂</td><td>官方說錄取率 3–5%、皆具 TESOL／TEFL；1 對 1 可選喜愛的老師</td></tr>
+        <tr><th scope="row"><a href="/tutorjr-review/">tutorJr</a></th><td>TutorABC 旗下少兒品牌；首頁寫 5–15 歲，各頁年齡寫法不一</td><td>依方案 25 或 45 分鐘；一對一、小班、大師講堂</td><td>可設定喜愛老師優先配對；條款寫明無法確保指定特定老師</td></tr>
+        <tr><th scope="row"><a href="/oikid-review/">OiKID</a></th><td>兒童線上英文品牌（感動智慧科技）；官網寫 3–15 歲</td><td>一對一 25 分鐘；另有主題式「摩天輪」課</td><td>雙語老師或外師，家長自己選</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：各平台官網、服務條款與官方幫助中心，2026 年 10 月 12–13 日查核；逐項出處見各平台的評價頁。</p>
+
+    <div class="center stack reveal" style="margin-top:48px"><h2 id="比較表費用與合約">比較表：<em>費用與合約</em></h2></div>
+    <table class="compare reveal" style="margin-top:18px">
+      <caption>五個平台的價格與購買方式（2026 年 10 月查核）</caption>
+      <thead><tr><th scope="col" style="min-width:5.5em">平台</th><th scope="col">價格（官方或標明出處）</th><th scope="col">怎麼買</th><th scope="col">取消規則</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><a href="/amazingtalker-price/">AmazingTalker</a></th><td>老師自訂；官方說英文家教時薪多在 NT$250–1,000，兒童美語（4–11 歲）行情 NT$329–548／小時</td><td>1 堂起購，也可買 5／10／20 堂課程包（95／9／85 折）</td><td>開課 12 小時前可自行取消</td></tr>
+        <tr><th scope="row"><a href="/preply-price/">Preply</a></th><td>老師自訂每堂價格；以美元、歐元或英鎊扣款，另加手續費與稅</td><td>向一位老師訂閱，每 28 天自動扣款，每期至少 4 堂</td><td>開課 12 小時前取消，堂數退回</td></tr>
+        <tr><th scope="row"><a href="/tutorabc-price/">TutorABC</a></th><td>官網不公開價目表；官方常見問題：成人約 NT$550–2,200／堂、兒少約 NT$300 起／堂</td><td>顧問報價，簽堂數合約</td><td>課前 4 小時取消不扣堂（大師講堂 5 分鐘）</td></tr>
+        <tr><th scope="row"><a href="/tutorjr-price/">tutorJr</a></th><td>官網未公開價格，需留資料由顧問報價（母品牌常見問題：兒少約 NT$300 起／堂）</td><td>顧問報價，簽堂數合約</td><td>上課 4 小時前取消</td></tr>
+        <tr><th scope="row"><a href="/oikid-price/">OiKID</a></th><td>官網未公開價格；2024 年家長文章列出四種方案，總價 62,400–156,000 元（第三方資料）</td><td>顧問報價；家長文章寫方案為 24 期月付、兩年內上完</td><td>官網未公開；家長文章寫 24 小時前取消</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">「第三方資料」是家長或部落客公開分享的數字，不是官網價目，實際以顧問報價和書面合約為準。每個平台的算法與試算，見表中連結的價格頁。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">逐一看</span><h2 id="五個平台各適合誰">五個平台，<em>各適合誰</em>？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <h3 id="AmazingTalker想自己挑老師一堂一堂買">AmazingTalker：想自己挑老師、一堂一堂買</h3>
+      <p>老師多、時段多、可以 1 堂起購，適合想先試幾位老師再決定的家庭。要注意的是品質靠家長自己篩：平台審核的是老師能不能上好線上課，「適不適合教你家孩子」要自己看。延伸閱讀：<a href="/amazingtalker-review/">AmazingTalker 評價</a>、<a href="/amazingtalker-price/">AmazingTalker 價格試算</a>、<a href="/amazingtalker-kids-tutor-guide/">兒童美語老師怎麼挑</a>。</p>
+      <h3 id="Preply大人和青少年的老師市集">Preply：大人和青少年的老師市集</h3>
+      <p>全球老師數量大，適合有明確目標的青少年或家長自己。替孩子報名前一定要知道：服務條款限 18 歲以上，13–17 歲須家長監督，不得讓未滿 13 歲者使用；購買方式是向一位老師按 28 天自動扣款訂閱。延伸閱讀：<a href="/preply-review/">Preply 評價</a>、<a href="/preply-price/">Preply 價格與取消訂閱</a>、<a href="/preply-vs-italki-amazingtalker/">italki、Preply、AmazingTalker 比較</a>。</p>
+      <h3 id="TutorABC有課程體系由平台安排">TutorABC：有課程體系、由平台安排</h3>
+      <p>有分級課程線、1 對 1 與小班可以搭配，國高中生有 TutorABC Teens。價格要顧問報價、簽堂數合約，簽約前把總價、堂數、期限與退費寫成文字。延伸閱讀：<a href="/tutorabc-review/">TutorABC 評價</a>、<a href="/tutorabc-price/">TutorABC 價格與報價前必問</a>、<a href="/tutorabc-teens-review/">TutorABC Teens 評價</a>、<a href="/tutorabc-vs-amazingtalker/">TutorABC、AmazingTalker 比較</a>。</p>
+      <h3 id="tutorJrTutorABC-的兒童版">tutorJr：TutorABC 的兒童版</h3>
+      <p>官網寫用牛津大學出版社授權的教材，課程分齡清楚，家長端 App 可以旁聽。老師採優先配對，條款寫明無法確保指定特定老師；想要固定老師的家庭，簽約前要問清楚。延伸閱讀：<a href="/tutorjr-review/">tutorJr 評價</a>、<a href="/tutorjr-price/">tutorJr 費用怎麼算</a>、<a href="/tutorjr-age-and-teachers/">tutorJr 適合幾歲、怎麼選老師</a>、<a href="/tutorjr-vs-oikid/">OiKID、tutorJr 比較</a>。</p>
+      <h3 id="OiKID可選雙語老師的兒童平台">OiKID：可選雙語老師的兒童平台</h3>
+      <p>專做 3–15 歲，可以選會說中文的雙語老師，對怕生的孩子是實際的緩衝。家長要每週自己約課，方案是預付型，官網不公開價格。延伸閱讀：<a href="/oikid-review/">OiKID 評價</a>、<a href="/oikid-price/">OiKID 價格與費用</a>、<a href="/oikid-vs-51talk/">51Talk、OiKID 比較</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">報名前</span><h2 id="報名任何平台前先問這-5-件事">報名任何平台前，<em>先問這 5 件事</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <ol>
+        <li><strong>試上時看孩子，不是看老師。</strong>孩子開口了幾次？老師有沒有等他把話說完、說錯時自然地示範正確說法？</li>
+        <li><strong>能不能固定同一位老師？</strong>老師請假或離開平台時怎麼處理？每次重新認識老師，前十分鐘都在暖身。</li>
+        <li><strong>總價、堂數、使用期限、退費方式、會不會自動續訂——全部用文字寫下來。</strong>口頭承諾日後很難主張。</li>
+        <li><strong>課後回饋長什麼樣子？</strong>有沒有錄影或報告，內容是否具體到「哪個音、哪個句型要再練」。</li>
+        <li><strong>一週幾堂、一堂幾分鐘，孩子真的排得出來嗎？</strong>單價要用「實際上得完的堂數」來算，不是用方案上的總堂數。</li>
+      </ol>
+      <p>買預付方案的家長還可以多知道一件事：政府對線上教學契約有一份<a href="https://www.ey.gov.tw/Page/DFB720D019CCCB0A/397a2ff8-748a-4df1-a52e-860278d0c275" target="_blank" rel="noopener">《網際網路教學服務定型化契約應記載及不得記載事項》</a>（2020 年 5 月 15 日生效，現由數位發展部主管），其中寫到消費者可以隨時通知終止契約，以及預付期間超過一年、且預付金額超過新臺幣 5 萬元時，業者應就超過的部分提供履約保證。簽約前可以問一句：這份合約的履約保證是哪一種？</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">網路討論</span><h2 id="DcardPTT-上家長最常討論的-4-件事">Dcard、PTT 上，<em>家長最常討論的 4 件事</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>我們讀了各平台在 PTT 上公開的心得串，也看過 Dcard 的討論標題。單篇心得只代表一個家庭的經驗，但有四個主題在不同平台反覆出現：</p>
+      <p><strong>一、好老師要用搶的。</strong>能自選老師的平台，熱門老師一開放就額滿；不少家長的做法是準備三到五位口袋名單（見<a href="/oikid-review/">OiKID 評價</a>）。</p>
+      <p><strong>二、體驗課後的顧問電話。</strong>品牌平台的心得裡，常有人提到體驗課後顧問聯絡很密集。不想再接行銷電話，可以直接請對方停止使用你的資料做行銷，《個人資料保護法》第 20 條有這項規定（見<a href="/tutorabc-review/">TutorABC 評價</a>）。</p>
+      <p><strong>三、合約、到期與退費。</strong>預付方案最常讓家長卡住的，是上不完的堂數和中途想停的時候怎麼算（見<a href="/tutorjr-price/">tutorJr 費用</a>與<a href="/oikid-price/">OiKID 價格</a>）。</p>
+      <p><strong>四、推薦文附推薦連結。</strong>不少心得文附有推薦碼或推薦試上表單，有的刊在品牌自己的官方部落格。有推薦獎勵不代表內容不實，閱讀時把文章性質一起考慮進去就好（見<a href="/preply-review/">Preply 評價</a>）。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">實體小班</span><h2 id="什麼時候實體小班比線上平台合適">什麼時候，<em>實體小班</em>比線上平台合適？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>五個平台都是對著螢幕上課，大多是一對一。如果孩子還小、要看到同學一起說才敢開口，或家長沒有時間每週挑老師、排課、陪課，同一位老師、同一群同學、每週固定時段的實體小班通常更省心。線上和實體的完整比較，見<a href="/online-vs-in-person-english-banqiao/">線上英文 vs 實體小班的 6 個差別</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">常見問題</span><h2 id="兒童線上英文推薦常見問題">兒童線上英文推薦<em>常見問題</em></h2></div>
+    <div class="faq">
+      <div class="faq-item"><h3 id="兒童線上英文推薦哪一家" class="faq-h"><button class="faq-q" aria-expanded="false">兒童線上英文推薦哪一家？<span class="pm"></span></button></h3><div class="faq-a"><p>沒有一家適合所有孩子，先看你要的是哪一種模式。想自己挑老師、一堂一堂買，看 AmazingTalker；想要有教材進度、由平台安排老師，看 TutorABC 或 tutorJr；孩子小又怕生、需要中文緩衝，可以看 OiKID 的雙語老師。Preply 的服務條款限 13 歲以上並須家長監督，比較適合青少年。</p></div></div>
+      <div class="faq-item"><h3 id="兒童線上英文一堂多少錢" class="faq-h"><button class="faq-q" aria-expanded="false">兒童線上英文一堂多少錢？<span class="pm"></span></button></h3><div class="faq-a"><p>依各平台公開的資訊：AmazingTalker 官方說兒童美語行情約每小時 NT$329–548，價格由老師自訂；TutorABC 官方常見問題寫兒少課程約 NT$300 起／堂；tutorJr 與 OiKID 官網沒有公開價格，要由顧問報價。預付方案的單價，要用總價除以實際上得完的一對一堂數來算。</p></div></div>
+      <div class="faq-item"><h3 id="幾歲適合上兒童線上英文" class="faq-h"><button class="faq-q" aria-expanded="false">幾歲適合上兒童線上英文？<span class="pm"></span></button></h3><div class="faq-a"><p>各平台官網寫的年齡不同：OiKID 寫 3–15 歲、tutorJr 首頁寫 5–15 歲，Preply 的條款則不讓未滿 13 歲者使用。以老師的經驗，一對一的螢幕課在國小高年級以後比較容易用滿；更小的孩子可以上，但通常需要大人在旁邊陪。</p></div></div>
+      <div class="faq-item"><h3 id="兒童線上英文可以固定老師嗎" class="faq-h"><button class="faq-q" aria-expanded="false">兒童線上英文可以固定老師嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>看平台。AmazingTalker、Preply 由家長自己挑老師，可以持續預約同一位；OiKID 自選老師，但熱門老師要每週搶；tutorJr 可以設定喜愛老師優先配對，條款寫明無法確保指定特定老師。報名前問清楚老師請假或離開時怎麼處理。</p></div></div>
+      <div class="faq-item"><h3 id="網路上的兒童線上英文推薦文可以信嗎" class="faq-h"><button class="faq-q" aria-expanded="false">網路上的兒童線上英文推薦文可以信嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>可以參考，但要知道很多分享文附有推薦碼或推薦試上表單，有的刊在品牌自己的部落格。比較可靠的做法，是把文章裡的價格、年齡和退費說法拿去對照官網與服務條款，再讓孩子試上一堂完整的課。本頁沒有任何推薦連結。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-blue">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <span class="eyebrow eyebrow-green">免費程度評估</span>
+      <h2 id="選平台之前先知道孩子在哪一級" style="margin-top:14px">選平台之前，<br><em>先知道孩子在哪一級</em></h2>
+      <p class="body" style="max-width:560px;margin:16px auto 0">不管最後選哪個平台還是實體課，先弄清楚孩子現在的聽說程度，才知道該從哪個等級開始。住板橋或雙北的家長，可以加 LINE 約時間，我會親自聽孩子說、讀，告訴你他落在哪個階段、下一步先練什麼——免費，不推銷。</p>
+      <div class="cta-row">
+        <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 預約免費程度評估</a>
+        <a href="/online-vs-in-person-english-banqiao/" class="btn btn-outline">線上 vs 實體小班</a>
+      </div>
+      <p class="body" style="max-width:560px;margin:22px auto 0;font-size:14px">接著讀：<a href="/kids-english-levels/">兒童英文程度分級</a>、<a href="/cram-school-vs-tutor-vs-self-study/">補習班、家教、自學怎麼選</a>、<a href="/cool-english-guide/">Cool English 酷英怎麼用</a>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- AE:BYL start --><div class="page-meta"><div class="wrap"><span>作者：<a href="/certified-american-teacher-banqiao/">Christopher｜埃森美語創辦人</a>（<a href="/certified-american-teacher-banqiao/">關於作者</a>）</span></div></div>
+<!-- AE:BYL end --></main>
+<!-- AE:FOOT start -->
+<footer class="site-footer"><div class="wrap"><div class="foot-grid"><div><div class="foot-logo"><img class="foot-logo-img" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="34" height="34" loading="lazy" decoding="async">American English 埃森美語</div><p class="foot-tag">板橋中正路在地深耕的美籍外師英文補習班。100% 美籍持證教師、每班 12 人小班制。</p><p class="foot-nap">220 新北市板橋區中正路89巷4號1樓<span class="foot-sep">　｜　</span><a href="tel:+886928067772">☎ 0928-067-772</a></p></div><nav class="foot-links" aria-label="頁尾導覽"><div class="foot-col"><p class="foot-h">課程</p><a href="/banqiao-english-cram-school/">板橋英文補習班</a><a href="/courses/">課程總覽</a><a href="/kids-english-banqiao/">兒童美語</a><a href="/junior-high-english-banqiao/">國中英文</a><a href="/free-trial/">預約試聽</a></div><div class="foot-col"><p class="foot-h">學習資源</p><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/english-pronunciation/">英文發音</a><a href="/download/">免費下載</a><a href="/chart-license/">圖表授權</a></div><div class="foot-col"><p class="foot-h">關於</p><a href="/certified-american-teacher-banqiao/">師資介紹</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="/contact/">聯絡與交通</a></div><div class="foot-col"><p class="foot-h">聯絡</p><a href="tel:+886928067772">電話 0928-067-772</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 線上預約</a><a href="https://maps.app.goo.gl/hLChkEqAMKCsMWpm6" target="_blank" rel="noopener">Google 地圖位置</a><a href="https://www.facebook.com/profile.php?id=61576014571186" target="_blank" rel="noopener">Facebook 粉絲專頁</a></div></nav></div><!-- AE:AINOTE --><p class="foot-ai">英文好，用 AI 也更順手 · <a href="https://essenindustries.com/tw/">essenindustries.com</a></p><!-- /AE:AINOTE -->
+<div class="foot-bottom"><span>© 2026 American English 埃森美語</span><span>私立埃森美語文理短期補習班　｜　新北市政府立案 社補教社字第115026號　｜　統一編號 61476523</span><span>220 新北市板橋區中正路89巷4號1樓</span></div><div class="foot-pref"><div google-add-preferred-source-btn data-theme="dark" data-lang="zh-TW"></div></div></div></footer>
+<!-- AE:FOOT end -->
+<script src="/assets/app.js?v=b537277d"></script>
+</body>
+</html>

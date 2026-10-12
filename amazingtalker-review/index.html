@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<link rel="stylesheet" href="/assets/styles.css?v=52538af7">
+<!-- AE:CRIT end -->
+<!-- AE:FONTS start -->
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2">
+<style>@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0vrx52jJ3Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB3vD2xWr53BJl.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZOIHTWEBlw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58UfivUw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKK58UfivUw4aw.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+<!-- AE:FONTS end -->
+<meta name="theme-color" content="#1A2752">
+<!-- Google Analytics (GA4) -->
+<title>AmazingTalker 評價推薦嗎？Dcard、PTT 爭議與退課規則一次看懂｜埃森美語</title>
+<meta name="description" content="AmazingTalker 評價整理：媒合平台怎麼運作、12 小時取消、老師缺席、退課只退 AT 幣等官方規則，Dcard、PTT 常見爭議，以及適合誰、不適合誰。美國持證教師寫給家長。">
+<link rel="canonical" href="https://americanenglish.com.tw/amazingtalker-review/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="American English 埃森美語">
+<meta property="og:title" content="AmazingTalker 評價推薦嗎？Dcard、PTT 爭議與退課規則一次看懂">
+<meta property="og:description" content="AmazingTalker 評價整理：媒合平台怎麼運作、12 小時取消、老師缺席、退課只退 AT 幣等官方規則，Dcard、PTT 常見爭議，以及適合誰、不適合誰。美國持證教師寫給家長。">
+<meta property="og:url" content="https://americanenglish.com.tw/amazingtalker-review/">
+<meta property="og:image" content="https://americanenglish.com.tw/assets/img/blog/boy-video-lesson-tutor-on-laptop.webp">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="男孩在筆電前上視訊課，螢幕上是線上老師">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"https://americanenglish.com.tw/#organization","name":"埃森美語 American English","alternateName":["埃森美語","American English 埃森美語","American English","埃森美語 - American English Institute"],"legalName":"私立埃森美語文理短期補習班","taxID":"61476523","description":"板橋中正路在地深耕的美籍外師英文補習班，提供 100% 美籍持證教師、每班 12 人小班制的兒童美語與國中英文課程。","url":"https://americanenglish.com.tw/","telephone":"+886-928-067-772","image":["https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","https://americanenglish.com.tw/assets/img/banqiao-small-class-english-classroom.webp","https://americanenglish.com.tw/assets/img/banqiao-kids-english-class.webp","https://americanenglish.com.tw/assets/img/certified-american-teacher-banqiao.webp","https://americanenglish.com.tw/assets/img/kids-confident-english-speaking.webp"],"logo":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"中正路89巷4號1樓","addressLocality":"板橋區","addressRegion":"新北市","postalCode":"220","addressCountry":"TW"},"geo":{"@type":"GeoCoordinates","latitude":25.0145617,"longitude":121.4560468},"areaServed":{"@type":"AdministrativeArea","name":"板橋區","containedInPlace":{"@type":"AdministrativeArea","name":"新北市"}},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"19:00"}],"sameAs":["https://www.google.com/maps?cid=11837760024257631170","https://lin.ee/W9J8TuQ","https://www.facebook.com/profile.php?id=61576014571186"],"hasMap":"https://www.google.com/maps?cid=11837760024257631170","founder":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"knowsLanguage":["en-US","zh-TW"],"knowsAbout":["兒童美語","國中英文","美籍外師英語教學","Phonics 自然發音","劍橋兒童英檢 (Cambridge YLE)","GEPT 全民英檢","國中教育會考英文","英語會話與口說","板橋英文補習班"],"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+886-928-067-772","url":"https://lin.ee/W9J8TuQ","availableLanguage":["zh-TW","en"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Christopher","jobTitle":"創辦人暨美籍持證英文教師 (Founder & Licensed American English Teacher)","worksFor":{"@id":"https://americanenglish.com.tw/#organization"},"alumniOf":{"@type":"CollegeOrUniversity","name":"University of Michigan"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"美國正式教師執照 (U.S. State Teaching Certificate)"},"knowsLanguage":["en-US","zh-TW"],"@id":"https://americanenglish.com.tw/#christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"AmazingTalker 評價：推薦嗎？Dcard、PTT 爭議與官方規則整理","description":"AmazingTalker 是一對一線上家教的媒合平台。本文依官網、官方幫助中心與服務條款，整理平台運作方式、體驗課與課程包期限、取消與老師缺席的處理、退課只退 AT 幣與優惠扣回，歸納 Dcard、PTT 上的常見爭議，並說明適合與不適合的家庭。","image":"https://americanenglish.com.tw/assets/img/blog/boy-video-lesson-tutor-on-laptop.webp","datePublished":"2026-10-13","dateModified":"2026-10-13","inLanguage":"zh-Hant-TW","author":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"publisher":{"@id":"https://americanenglish.com.tw/#organization"},"mainEntityOfPage":"https://americanenglish.com.tw/amazingtalker-review/","@id":"https://americanenglish.com.tw/amazingtalker-review/#article","alternativeHeadline":"AmazingTalker 評價推薦嗎？Dcard、PTT 爭議與退課規則一次看懂","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"hasPart":{"@id":"https://americanenglish.com.tw/amazingtalker-review/#faq"}}</script>
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/amazingtalker-review/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/amazingtalker-review/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="twitter:image" content="https://americanenglish.com.tw/assets/img/blog/boy-video-lesson-tutor-on-laptop.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://americanenglish.com.tw/blog/"},{"@type":"ListItem","position":3,"name":"AmazingTalker 評價：推薦嗎？Dcard、PTT 爭議與官方規則整理"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://americanenglish.com.tw/amazingtalker-review/#faq","url":"https://americanenglish.com.tw/amazingtalker-review/","inLanguage":"zh-Hant-TW","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"mainEntity":[{"@type":"Question","name":"AmazingTalker 安全嗎？付了錢會不會上不到課？","acceptedAnswer":{"@type":"Answer","text":"學費由平台保管，學生確認完課後才撥給老師；老師缺席或連線出問題，可以在該堂課按「回報問題」，由老師選擇退回課程或退 AT 幣，談不攏再找客服。要注意兩件事：爭議要在課程結束後 3 天內提出；交易和溝通都要留在平台上，才在這套流程的保護範圍內。"}},{"@type":"Question","name":"AmazingTalker 可以退現金嗎？","acceptedAnswer":{"@type":"Answer","text":"原則上不行。服務條款規定退款只退到平台的 AT 幣帳戶（1 AT 幣＝1 美元、不會過期），可以拿來買其他老師的課；如果不是平台的過失而要求退現金，須負擔訂單總額 20% 的違約金。退課時，已上的堂數會用單堂原價重算，用過的優惠券也不會退回。"}},{"@type":"Question","name":"AmazingTalker 老師沒出現怎麼辦？","acceptedAnswer":{"@type":"Answer","text":"在課表上點該堂課的「回報問題」，勾選老師無故缺席並寫下經過；老師會選擇退回課程或退 AT 幣等處理方式，你可以同意，或請老師換一種方式，談不攏再聯繫客服。依教師頁的說明，老師 12 小時內沒有回覆，系統會自動退 AT 幣。官方也提醒：不要同意先標記完成、之後再補課的做法。"}},{"@type":"Question","name":"老師說可以私下上課、加 LINE 轉帳比較便宜，可以嗎？","acceptedAnswer":{"@type":"Answer","text":"不建議。服務條款禁止把會員導出平台，也不得要求老師私下交易；官方防詐公告同樣提醒只在平台內購課、不要在其他管道付款。私下交易之後，完課才撥款、回報問題、退課這些保護都用不上了。"}},{"@type":"Question","name":"AmazingTalker 推薦嗎？","acceptedAnswer":{"@type":"Answer","text":"要看學習者的年齡和家長能投入多少時間。目標明確的國高中生與成人，願意先試幾位老師，通常能找到合適的一對一練習；年紀小、需要固定課程架構的孩子，家長要能陪課並持續檢查。我們的建議是：先上兩、三位老師的體驗課，先買小包，確定合拍再加購。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://americanenglish.com.tw/#website","url":"https://americanenglish.com.tw/","name":"American English 埃森美語","alternateName":["埃森美語","埃森美語 American English"],"inLanguage":"zh-Hant-TW","publisher":{"@id":"https://americanenglish.com.tw/#organization"}}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');if(!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};window._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}fbq('init','1023907773471013');fbq('track','PageView');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);var f=document.createElement('script');f.async=1;f.src='https://connect.facebook.net/en_US/fbevents.js';document.head.appendChild(f);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body data-page="amazingtalker-review">
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<nav class="drawer" id="drawer" aria-label="行動版選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></nav>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="bg-deco"></div>
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/blog/">部落格</a> ／ AmazingTalker 評價</div>
+    <span class="eyebrow eyebrow-green reveal">平台評價 · 線上家教</span>
+    <h1 class="reveal d1"><span class="h1s kp">AmazingTalker <em>評價</em>：推薦嗎？</span><br><span class="h1s kp">Dcard、PTT 爭議與官方規則整理</span></h1>
+    <div class="divider reveal d1"></div>
+    <p class="body reveal d2">作者：Christopher｜埃森美語創辦人｜美國密西根大學畢業、美國正式教師執照<!-- AE:PAGEMETA start -->｜<span class="byl-d">最後更新 <time datetime="2026-10-13">2026 年 10 月 13 日</time></span><!-- AE:PAGEMETA end --></p>
+    <div class="hero-cta reveal d2" style="margin-top:16px">
+      <a class="btn btn-primary" href="#rules">取消、缺席、退課規則 →</a>
+      <a class="btn btn-outline" href="#discussion">Dcard、PTT 在討論什麼？</a>
+    </div>
+    <p class="body reveal d2" style="font-size:13px;margin-top:10px">這一頁是埃森美語整理的家長評價指南，不是 AmazingTalker 官方網站；官方網站是 tw.amazingtalker.com。</p>
+    <figure class="post-hero pf-blue reveal d2">
+      <img src="/assets/img/blog/boy-video-lesson-tutor-on-laptop.webp" srcset="/assets/img/blog/boy-video-lesson-tutor-on-laptop-800.webp 800w, /assets/img/blog/boy-video-lesson-tutor-on-laptop.webp 1600w" sizes="(max-width:828px) 100vw, 732px" width="1600" height="900" alt="男孩在筆電前上視訊課，螢幕上是線上老師" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+<!-- AE:TOC --><nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span><a href="#AmazingTalker-怎麼運作媒合平台的三個關鍵">AmazingTalker 怎麼運作？媒合平台的三個關鍵</a><a href="#體驗課課程包與期限付款前要懂的規則">體驗課、課程包與期限：付款前要懂的規則</a><a href="#rules">取消、老師缺席與退課：官方規則整理</a><a href="#AmazingTalker-的優點哪些地方做得好">AmazingTalker 的優點：哪些地方做得好</a><a href="#限制與風險付款前想清楚的五件事">限制與風險：付款前想清楚的五件事</a><a href="#discussion">Dcard、PTT 在討論什麼？五個常見主題</a><a href="#誰適合-AmazingTalker誰要多想一下">誰適合 AmazingTalker？誰要多想一下</a><a href="#什麼時候小班實體課比較合適">什麼時候小班實體課比較合適？</a><a href="#AmazingTalker-評價常見問題">AmazingTalker 評價常見問題</a></nav><!-- /AE:TOC -->
+
+    <div class="prose reveal">
+      <p>AmazingTalker 是台灣家長很常拿來比較的線上一對一家教平台。搜尋「AmazingTalker 評價」，會看到兩極的心得：有人找到合拍的老師、一上就是好幾年，也有人遇過老師臨時取消、退款只拿到 AT 幣。兩種說法都可能是真的，因為它的本質是<strong>媒合平台</strong>——平台提供找老師、收費、上課與申訴的系統，教學品質則取決於你挑到哪一位老師。這篇不替任何老師打分數，而是把官方規則、平台機制和公開討論整理清楚，讓你在付款前知道會遇到什麼。</p>
+      <p>先給結論：<strong>對目標明確、願意花時間挑老師的國高中生與成人，它是彈性很大的工具；對需要固定課程架構、家長又沒空陪課的國小家庭，要先想清楚誰來把關。</strong>下表是平台的基本資料，後面逐項說明。</p>
+    </div>
+    <div class="stage-info reveal" style="--c:var(--navy);max-width:860px;margin:22px auto">
+      <div class="lbl">📌 寫在前面</div>
+      <p>作者經營板橋的實體英文補習班（埃森美語），和 AmazingTalker 沒有合作關係：本頁沒有推薦連結，也沒有收任何平台的費用。我們沒有在該平台購課，內容取自官網、官方幫助中心、服務條款與公開討論；價格與規則於 2026 年 10 月查核，日後若有變動，以官網為準。</p>
+    </div>
+    <table class="compare reveal">
+      <caption>AmazingTalker 基本資料（2026 年 10 月查核）</caption>
+      <thead><tr><th scope="col">項目</th><th scope="col">內容</th></tr></thead>
+      <tbody>
+        <tr><td>平台性質</td><td>主打真人線上教學的媒合平台；服務條款寫明，平台不是學生與老師之間教學協議的一方</td></tr>
+        <tr><td>誰定價</td><td>每位老師自己定價，官方說明價格不是由平台制定</td></tr>
+        <tr><td>課程長度</td><td>體驗課約 25 分鐘；正式課有 25 分鐘、50 分鐘兩種，依老師開課而定</td></tr>
+        <tr><td>購買方式</td><td>1 堂起購，也可以一次買多堂的課程包；官網標示「沒有業務綁約」</td></tr>
+        <tr><td>上課方式</td><td>從平台進入 Zoom 教室，電腦、平板、手機都能上</td></tr>
+        <tr><td>取消規則</td><td>課程開始 12 小時前可自行取消；12 小時內要和老師協調</td></tr>
+        <tr><td>退課方式</td><td>未上的堂數退成 AT 幣（1 AT 幣＝1 美元、不會過期），原則上不退現金</td></tr>
+        <tr><td>客服</td><td>網站右下角的線上文字客服，先由 AI 客服回覆；沒有客服電話</td></tr>
+        <tr><td>使用年齡</td><td>服務條款以 18 歲以上為使用者；未滿 18 歲須經法定代理人同意</td></tr>
+        <tr><td>官網</td><td><a href="https://tw.amazingtalker.com/" target="_blank" rel="noopener">tw.amazingtalker.com</a>（<a href="https://amazingtalker.elevio.help/zh-hant" target="_blank" rel="noopener">官方幫助中心</a>）</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：AmazingTalker 官網首頁、英文家教費用資訊頁、教師頁、官方幫助中心與<a href="https://tw.amazingtalker.com/privacy-and-terms" target="_blank" rel="noopener">服務條款</a>（條款頁標示更新日期 2022 年 1 月 14 日），2026 年 10 月 12–13 日查核。</p>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">平台機制</span><h2 id="AmazingTalker-怎麼運作媒合平台的三個關鍵">AmazingTalker 怎麼運作？<em>媒合平台</em>的三個關鍵</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>把 AmazingTalker 想成「老師的市集」最容易懂。平台負責三件事：讓你找到老師、替你保管學費、出問題時提供回報與申訴的流程；老師則各自決定價格、開課時段、教材和上課方式。這個分工決定了家長的體驗，關鍵有三個。</p>
+      <p><strong>一、老師是獨立開課的。</strong>服務條款寫明，平台不是教學協議的一方，也無法確保老師會一直留在平台授課；條款同時要求老師對自己寫下的教學經驗、經歷與教學成效描述負責。換句話說，教師頁上的介紹是老師的自我說明，不是平台替你查證過的報告。</p>
+      <p><strong>二、學費由平台保管，完課後才撥給老師。</strong>官網把這一點稱為「100% 每堂課保障」：學生確認課程完成，平台才把學費撥給老師；對老師不滿意，可以轉選其他老師。這是平台比私下找家教多出來的一層保護，前提是交易和溝通都留在平台上。</p>
+      <p><strong>三、老師的曝光和「賣出正式課」有關。</strong>官方給老師的說明文件提到：學生使用「智能推薦」時，需求會同時派給 20 位老師，最快回覆的 3 位可以繼續聯絡；教師牆的排名會隨賣出的課程上升；學生在體驗課後 25 小時內有沒有買正式課，會計入老師的「賣正式課率」，並影響老師之後收到的派單量。這是平台的經營設計，不是個別老師的問題——知道這一點，就比較能理解為什麼體驗課的最後常會談到課程方案。</p>
+    </div>
+    <table class="compare reveal">
+      <caption>從註冊到上完第一堂：AmazingTalker 的流程</caption>
+      <thead><tr><th scope="col">步驟</th><th scope="col">你會做什麼</th><th scope="col">要注意</th></tr></thead>
+      <tbody>
+        <tr><td>1. 註冊</td><td>用 Google、Facebook 或電子信箱註冊，選擇時區，再驗證手機與信箱</td><td>帳號由家長申請；同一組手機號碼只能驗證一個帳號</td></tr>
+        <tr><td>2. 找老師</td><td>在教師牆用「學習需求、預算區間、教師國籍、母語人士、上課時間」篩選，或填智能推薦問卷</td><td>送出智能推薦後，會有老師主動傳訊息來</td></tr>
+        <tr><td>3. 上體驗課</td><td>購買想試的老師的體驗課，約 25 分鐘</td><td>體驗課要付費，價格由老師自訂</td></tr>
+        <tr><td>4. 買正式課</td><td>買 1 堂或課程包，付款後再預約時段</td><td>課程包有預約期限，見<a href="/amazingtalker-price/">價格篇</a></td></tr>
+        <tr><td>5. 預約上課</td><td>在老師開放的時段預約，老師確認後生效；上課時從平台進入 Zoom 教室</td><td>老師不在線上時，最快可預約 24 小時後的課</td></tr>
+        <tr><td>6. 完課與評價</td><td>課後確認完課；完課後 7 天內可留下評價，並可修改一次</td><td>課程沒上成就按「回報問題」，不要先同意標記完成</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：AmazingTalker 官方幫助中心〈如何開始使用AmazingTalker？〉〈如何使用智能教師推薦？〉〈如何預約課程？〉〈如何為已完成的課程留下／更改評價？〉〈什麼是智能推薦系統？〉〈如何理解與善用「賣正式課率」〉、教師頁常見問題，2026 年 10 月查核。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">購課規則</span><h2 id="體驗課課程包與期限付款前要懂的規則">體驗課、課程包與期限：<em>付款前</em>要懂的規則</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>每位老師的頁面都會分開標示「體驗課」和正式課的價格。體驗課約 25 分鐘，用來互相認識、了解程度和試教；它和正式課一樣是付費的，價格由老師自訂，從幾十元到幾百元台幣都有。各種價格怎麼看、一個月大概花多少，我們整理在<a href="/amazingtalker-price/">AmazingTalker 價格怎麼算</a>。</p>
+      <p>正式課可以只買 1 堂，也可以一次買多堂的課程包。最容易被忽略的是<strong>課程包有預約期限</strong>：依官方說明，一次購買 1–10 堂要在 3 個月內排完，11–20 堂 6 個月，21–30 堂 12 個月，31 堂以上 24 個月。「排完」指的是在期限內完成預約，上課日期可以落在到期日之後。</p>
+      <p>真的來不及排完，課程包要等過期之後，才能在平台上向老師「請求延長」，延長多久由老師決定；老師 7 天內沒有回應，系統會開放以原本的付款價格，把剩餘堂數退成 AT 幣。所以我們給家長的實際建議是：<strong>第一次先買小包。</strong>孩子的作息、老師的時段、彼此合不合拍，都要上過幾堂才知道；小包期限短，萬一要換老師，被扣回的折扣也比較少。</p>
+      <p>確定合拍之後，平台的「每週預約」功能可以把固定時段留給同一位老師，系統會在每次完課後自動預約兩週後的同一時段，適合需要固定作息的孩子；它只適用於正式課，而且剩餘可預約的堂數至少要有 2 堂。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">最常被問</span><h2 id="rules">取消、老師缺席與退課：<em>官方規則</em>整理</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>這一段是 Dcard、PTT 上很多人卡關的地方。以下依官方幫助中心與服務條款整理，遇到狀況時照著做：</p>
+    </div>
+    <table class="compare reveal">
+      <caption>AmazingTalker 取消、缺席與退課規則（2026 年 10 月查核）</caption>
+      <thead><tr><th scope="col">狀況</th><th scope="col">官方規則</th><th scope="col">家長怎麼做</th></tr></thead>
+      <tbody>
+        <tr><td>課程開始 12 小時前要取消</td><td>在課表上自行取消，不需要老師同意，堂數回到未預約的課堂數</td><td>能提早就提早，取消時順便傳訊息約新時間</td></tr>
+        <tr><td>12 小時內才要取消</td><td>用「12小時內協調預約」通知老師，由老師選擇處理方式；服務條款寫明，是否算完課由老師決定</td><td>買課前先問清楚這位老師的請假規則</td></tr>
+        <tr><td>老師沒出現或臨時請假</td><td>在該堂課按「回報問題」，老師可選擇退回課程、退全額或一半的 AT 幣等方式；你可以同意或不同意，談不攏再找客服。教師頁另註明：老師 12 小時內沒有回覆，系統會自動退 AT 幣</td><td>官方提醒：不要同意先標記完成、之後再免費補課的條件</td></tr>
+        <tr><td>連線或設備出問題</td><td>可以自行開 Zoom 會議、把連結用站內訊息傳給老師；仍上不了就回報問題</td><td>第一次上課前，先用 Zoom 官方測試連結檢查麥克風與鏡頭</td></tr>
+        <tr><td>對課程有爭議</td><td>服務條款：每堂課結束後 3 天內（含上課當天）透過平台提出</td><td>當天就處理，保留對話截圖</td></tr>
+        <tr><td>不想再上這位老師</td><td>先取消已預約的課，再申請把剩餘堂數退成 AT 幣，可以改買其他老師的課</td><td>退之前先算「優惠扣回」，見下段</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：AmazingTalker 官方幫助中心〈如何更改／延期／取消已預約好的課程？〉〈臨時需要取消課程怎麼辦？〉〈如果老師錯過課堂，我該如何操作？〉〈課堂發生問題，該如何回報？〉〈如果因為技術問題導致無法上課，我該怎辦？〉〈如何辦理退款(AT幣)？〉、教師頁常見問題與服務條款第 9、11 條，2026 年 10 月查核。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p><strong>退課拿到的是 AT 幣，不是現金。</strong>AT 幣是平台內的點數，1 AT 幣等於 1 美元、不會過期，只能用來買平台上的課。退課金額有兩個細節：已經上過的堂數，會改用<strong>單堂原價</strong>重新計算（官方稱為「優惠扣回」，用意是避免有人用多堂折扣價買、只上一堂就退）；結帳時用掉的優惠券也不會退回。至於退現金，服務條款規定退款只退到 AT 幣帳戶；如果不是平台的過失而要求退現金，使用者須負擔訂單總額 20% 的違約金，退款作業在使用者同意退款後 30 個工作天內完成。</p>
+      <p>如果是因為老師的因素要退（例如一再缺課），官方指引是聯繫客服、說明原因並附上對話截圖。客服只有線上文字管道：點網站右下角的紅色問號，先由 AI 客服回覆，解決不了再轉給真人處理。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">優點</span><h2 id="AmazingTalker-的優點哪些地方做得好">AmazingTalker 的<em>優點</em>：哪些地方做得好</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>公平地說，AmazingTalker 把「找家教」這件麻煩事做得很順。以官方公開的功能來看，有五個實在的優點：</p>
+      <p><strong>一、選擇多，找得到特殊需求的老師。</strong>從兒童美語、國中英文、會話到雅思和商用英文，教師牆可以依學習需求、預算、國籍、母語人士與上課時間篩選。想找特定口音，或清晨、深夜這類冷門時段，選擇比單一補習班多得多。</p>
+      <p><strong>二、門檻低、不綁約。</strong>可以只買 1 堂，先上體驗課再決定；在台灣能用超商、ATM、LINE Pay、信用卡或分期付款，付款後會開立電子發票。</p>
+      <p><strong>三、付款有人保管，出事有固定流程。</strong>學費在完課後才撥給老師；老師缺席、連線出問題都有「回報問題」的流程可走；學生也可以在帳號設定開啟課程錄影，發生爭議時當作佐證。</p>
+      <p><strong>四、老師大幅漲價時，舊生有緩衝。</strong>老師可以調價，但如果 30 天內調漲幅度超過兩成，或 90 天內超過三成，符合條件的舊生可以用原價續購一次（條件見<a href="/amazingtalker-price/">價格篇的漲價段落</a>）。</p>
+      <p><strong>五、排課有彈性。</strong>12 小時前可以自行取消，不需要老師同意；固定時段可以用「每週預約」留住，適合要配合段考、社團作息的國高中生。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">限制</span><h2 id="限制與風險付款前想清楚的五件事"><em>限制與風險</em>：付款前想清楚的五件事</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p><strong>一、老師品質落差大，篩選的責任在家長。</strong>依官方的老師申請說明，老師要先提交工作經驗與學歷，有教學證照的人優先；接著上一堂約 25 分鐘的演示課，由平台的 VIP 學生或資深老師扮演學生並評分，拿到 4 星以上就算通過，共有三次機會。官網另標示「3%的教師合格率」。但這套流程裡沒有專門檢核「教兒童」的步驟，而且證照文件不會公開給學生看——教師頁只顯示「已上傳證書」。</p>
+      <p><strong>二、體驗課帶有銷售目的。</strong>前面提過，老師的派單量和「體驗課後 25 小時內賣出正式課」的比例有關；平台也訓練老師在體驗課最後說明學習規劃，並引導購課或使用優惠券。一份具體的學習規劃可能很有參考價值，但你不需要在 25 小時內做決定。</p>
+      <p><strong>三、退款以 AT 幣為主。</strong>想退現金有 20% 違約金的規定，已上的堂數又會用原價重算。如果你預期可能中途停課，小包比大包划算。</p>
+      <p><strong>四、老師可能離開平台。</strong>服務條款寫明平台無法確保老師持續授課。老師離開或停課時，剩餘堂數一樣是退成 AT 幣再找別的老師；新老師比較貴的話，差額要自己補。</p>
+      <p><strong>五、平台規則是為成人設計的。</strong>服務條款以 18 歲以上為使用者，未成年須經法定代理人同意。實務上，孩子上課時，帳號、付款和與老師的溝通都應該由家長掌握。幫孩子挑老師要看哪些地方，我們另外整理成<a href="/amazingtalker-kids-tutor-guide/">兒童美語老師怎麼挑的 10 項檢查</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">公開討論</span><h2 id="discussion">Dcard、PTT 在討論什麼？<em>五個常見主題</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>我們整理了 Dcard、PTT 上和 AmazingTalker 有關的心得與抱怨文，歸納出反覆出現的主題。個人經驗不能代表全部，原文連結附在各段，請自行判斷：</p>
+      <p><strong>一、老師品質像開盲盒。</strong>正面心得裡常見的情況是：試了幾位老師，才找到合拍的那一位，之後一上就很久；負面心得裡則有不少是第一位就不合，卻已經買了多堂。PTT 日文板一篇使用超過三年、上過 200 多堂的心得提到，平台上的日文老師多數不是語言教學背景出身，建議先上 3–5 堂正式課再決定要不要買大包（<a href="https://www.ptt.cc/bbs/NIHONGO/M.1667022390.A.D03.html" target="_blank" rel="noopener nofollow">PTT NIHONGO 板</a>）。也有家長在 PTT 分享讓孩子試上四位老師的過程，提醒買之前要先看清楚老師的介紹與可上課時段（<a href="https://www.ptt.cc/bbs/Language/M.1610974673.A.6D7.html" target="_blank" rel="noopener nofollow">PTT Language 板</a>）。</p>
+      <p><strong>二、臨時取消與缺席。</strong>有使用者在 Dcard 問大家是否也遇過老師在上課前不久取消（<a href="https://www.dcard.tw/f/exam/p/257064882" target="_blank" rel="noopener nofollow">Dcard 考試板</a>），也有人分享和老師之間的出缺席糾紛（<a href="https://www.dcard.tw/f/mood/p/234296173" target="_blank" rel="noopener nofollow">Dcard 心情板</a>）。官方的處理流程見上方規則表；重點是每一次都用「回報問題」留下紀錄。</p>
+      <p><strong>三、退款只退 AT 幣。</strong>這是抱怨文裡常見的一點（例如這篇 <a href="https://www.dcard.tw/f/course/p/254826479" target="_blank" rel="noopener nofollow">Dcard 課程板心得</a>），論壇上也看得到轉讓 AT 幣的貼文。要提醒的是，官方防詐公告請用戶不要把帳號資訊交給他人；買賣帳號或點數屬於平台外的私下交易，萬一出問題，平台的處理流程未必適用。</p>
+      <p><strong>四、推銷聯繫太頻繁。</strong>有人在 Dcard 抱怨註冊後接到頻繁的聯繫、催促預約（<a href="https://www.dcard.tw/f/mood/p/256727923" target="_blank" rel="noopener nofollow">Dcard 心情板</a>）；也有人覺得老師主動來訊是好事，可以先溝通需求。這和前面提到的派單機制有關：送出智能推薦後，會有多位老師同時收到你的需求。</p>
+      <p><strong>五、價格慢慢往上調。</strong>PTT 上有人提到長期上同一位老師，價格一路調高，這和平台建議新老師先用低價累積學生、再逐步調價的做法一致。舊生能怎麼應對，見<a href="/amazingtalker-price/">價格篇</a>。</p>
+      <p><strong>讀推薦文時，順便看有沒有邀請碼。</strong>平台有「學伴」「邀請好友」等推薦活動，邀請人可以得到課程金；官方幫助中心也公告過學伴 VIP 在 Facebook、Dcard、PTT 等社群發表學習分享可領 20 美元獎勵的活動（限額 500 名，<a href="https://amazingtalker.elevio.help/zh-hant/articles/1146" target="_blank" rel="noopener">官方說明</a>）。我們在 2026 年 10 月 12 日用「amazingtalker」搜尋 PTT 語言板的文章標題，159 篇裡有 149 篇是徵學伴的邀請文（<a href="https://www.ptt.cc/bbs/Language/search?q=amazingtalker" target="_blank" rel="noopener nofollow">搜尋結果</a>）。附邀請碼不代表內容不真實，只是讀的時候要知道，作者可能因此得到獎勵。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">適合對象</span><h2 id="誰適合-AmazingTalker誰要多想一下">誰適合 AmazingTalker？<em>誰要多想一下</em></h2></div>
+    <table class="compare reveal">
+      <caption>AmazingTalker 適合度速查</caption>
+      <thead><tr><th scope="col">面向</th><th scope="col">要多想一下</th><th scope="col">比較適合</th></tr></thead>
+      <tbody>
+        <tr><td>學習者年齡</td><td>學齡前、低年級，需要大人全程在旁</td><td>國高中生、成人，能自己說出需求</td></tr>
+        <tr><td>學習目標</td><td>想要完整的分級課程與固定進度</td><td>目標具體：面試、雅思、口說、特定考試題型</td></tr>
+        <tr><td>家長時間</td><td>沒空比較老師，也無法陪課</td><td>願意先花兩、三週試老師，並陪看體驗課</td></tr>
+        <tr><td>購課習慣</td><td>希望中途停課能退現金</td><td>習慣少量購買、隨時調整</td></tr>
+        <tr><td>時段需求</td><td>想要每週和固定的同學一起上課</td><td>需要清晨、深夜或不固定的時段</td></tr>
+      </tbody>
+    </table>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>整體來說，依官方規則與公開討論來看，我們的評價是：<strong>平台的工具做得完整，結果取決於挑老師的功夫。</strong>家長如果願意把前兩、三週當成「選老師期」，它能提供很有彈性的一對一練習；如果期待平台替你決定老師和進度，落差就會比較大。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">另一種選擇</span><h2 id="什麼時候小班實體課比較合適">什麼時候<em>小班實體課</em>比較合適？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>AmazingTalker 是一位老師對一個學生，品質靠家長自己篩。如果孩子還小、需要同儕一起開口，或家長沒有時間每週檢查老師與進度，固定師資、固定教材的小班課會比較省心；目標明確的國高中生，用一對一補強特定能力則很合適。兩種方式的完整比較，見<a href="/online-vs-in-person-english-banqiao/">兒童線上英文 vs 實體小班</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">常見問題</span><h2 id="AmazingTalker-評價常見問題">AmazingTalker 評價<em>常見問題</em></h2></div>
+    <div class="faq">
+      <div class="faq-item"><h3 id="AmazingTalker-安全嗎付了錢會不會上不到課" class="faq-h"><button class="faq-q" aria-expanded="false">AmazingTalker 安全嗎？付了錢會不會上不到課？<span class="pm"></span></button></h3><div class="faq-a"><p>學費由平台保管，學生確認完課後才撥給老師；老師缺席或連線出問題，可以在該堂課按「回報問題」，由老師選擇退回課程或退 AT 幣，談不攏再找客服。要注意兩件事：爭議要在課程結束後 3 天內提出；交易和溝通都要留在平台上，才在這套流程的保護範圍內。</p></div></div>
+      <div class="faq-item"><h3 id="AmazingTalker-可以退現金嗎" class="faq-h"><button class="faq-q" aria-expanded="false">AmazingTalker 可以退現金嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>原則上不行。服務條款規定退款只退到平台的 AT 幣帳戶（1 AT 幣＝1 美元、不會過期），可以拿來買其他老師的課；如果不是平台的過失而要求退現金，須負擔訂單總額 20% 的違約金。退課時，已上的堂數會用單堂原價重算，用過的優惠券也不會退回。</p></div></div>
+      <div class="faq-item"><h3 id="AmazingTalker-老師沒出現怎麼辦" class="faq-h"><button class="faq-q" aria-expanded="false">AmazingTalker 老師沒出現怎麼辦？<span class="pm"></span></button></h3><div class="faq-a"><p>在課表上點該堂課的「回報問題」，勾選老師無故缺席並寫下經過；老師會選擇退回課程或退 AT 幣等處理方式，你可以同意，或請老師換一種方式，談不攏再聯繫客服。依教師頁的說明，老師 12 小時內沒有回覆，系統會自動退 AT 幣。官方也提醒：不要同意先標記完成、之後再補課的做法。</p></div></div>
+      <div class="faq-item"><h3 id="老師說可以私下上課加-LINE-轉帳比較便宜可以嗎" class="faq-h"><button class="faq-q" aria-expanded="false">老師說可以私下上課、加 LINE 轉帳比較便宜，可以嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>不建議。服務條款禁止把會員導出平台，也不得要求老師私下交易；官方防詐公告同樣提醒只在平台內購課、不要在其他管道付款。私下交易之後，完課才撥款、回報問題、退課這些保護都用不上了。</p></div></div>
+      <div class="faq-item"><h3 id="AmazingTalker-推薦嗎" class="faq-h"><button class="faq-q" aria-expanded="false">AmazingTalker 推薦嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>要看學習者的年齡和家長能投入多少時間。目標明確的國高中生與成人，願意先試幾位老師，通常能找到合適的一對一練習；年紀小、需要固定課程架構的孩子，家長要能陪課並持續檢查。我們的建議是：先上兩、三位老師的體驗課，先買小包，確定合拍再加購。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AE:ROUTE -->
+<section class="section bg-soft">
+  <div class="wrap">
+    <span class="eyebrow eyebrow-yellow">AmazingTalker 系列</span>
+    <h2 id="看完評價接著算算看" style="margin-top:14px">看完評價，<em>接著算算看</em></h2>
+    <div class="divider" style="margin:18px 0 22px"></div>
+    <p class="body" style="max-width:720px">評價看的是規則和風險；真正要下決定，還需要知道一個月大概花多少，以及孩子的老師該怎麼挑。前兩篇是同一系列，後兩篇是我們寫給家長的選擇指南。</p>
+    <div style="margin-top:20px"><a href="/kids-online-english-comparison/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">5 大平台一表比較</a><a href="/amazingtalker-price/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">AmazingTalker 價格與月費試算</a><a href="/amazingtalker-kids-tutor-guide/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">AmazingTalker 兒童美語老師怎麼挑</a><a href="/how-to-verify-foreign-teacher-credentials/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">外師資格怎麼查證</a><a href="/cram-school-vs-tutor-vs-self-study/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">補習班 vs 家教 vs 自學</a></div>
+  </div>
+</section>
+<!-- /AE:ROUTE -->
+<section class="section bg-blue">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <span class="eyebrow eyebrow-green">下一步</span>
+      <h2 id="先知道孩子的程度再決定怎麼學" style="margin-top:14px">先知道孩子的程度，<br><em>再決定</em>怎麼學</h2>
+      <p class="body" style="max-width:560px;margin:16px auto 0">不論最後選線上一對一還是實體小班，先弄清楚孩子現在的程度，挑老師、排課都會準很多。歡迎帶孩子來做一次程度評估，我們會說明孩子目前的程度與適合的學習方式。</p>
+      <div class="cta-row">
+        <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 預約免費程度評估</a>
+        <a href="/online-vs-in-person-english-banqiao/" class="btn btn-outline">看線上 vs 實體比較</a>
+      </div>
+      <p class="body" style="max-width:560px;margin:22px auto 0;font-size:14px">接著讀：<a href="/amazingtalker-price/">AmazingTalker 價格怎麼算</a>、<a href="/amazingtalker-kids-tutor-guide/">兒童美語老師怎麼挑</a>、<a href="/free-trial/">試聽與程度評估怎麼進行</a>。</p>
+      <p class="body" style="max-width:560px;margin:10px auto 0;font-size:14px">如果你剛好住板橋：我們的教室在<a href="/banqiao-english-cram-school/">板橋中正路</a>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- AE:BYL start --><div class="page-meta"><div class="wrap"><span>作者：<a href="/certified-american-teacher-banqiao/">Christopher｜埃森美語創辦人</a>（<a href="/certified-american-teacher-banqiao/">關於作者</a>）</span></div></div>
+<!-- AE:BYL end --></main>
+<!-- AE:FOOT start -->
+<footer class="site-footer"><div class="wrap"><div class="foot-grid"><div><div class="foot-logo"><img class="foot-logo-img" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="34" height="34" loading="lazy" decoding="async">American English 埃森美語</div><p class="foot-tag">板橋中正路在地深耕的美籍外師英文補習班。100% 美籍持證教師、每班 12 人小班制。</p><p class="foot-nap">220 新北市板橋區中正路89巷4號1樓<span class="foot-sep">　｜　</span><a href="tel:+886928067772">☎ 0928-067-772</a></p></div><nav class="foot-links" aria-label="頁尾導覽"><div class="foot-col"><p class="foot-h">課程</p><a href="/banqiao-english-cram-school/">板橋英文補習班</a><a href="/courses/">課程總覽</a><a href="/kids-english-banqiao/">兒童美語</a><a href="/junior-high-english-banqiao/">國中英文</a><a href="/free-trial/">預約試聽</a></div><div class="foot-col"><p class="foot-h">學習資源</p><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/english-pronunciation/">英文發音</a><a href="/download/">免費下載</a><a href="/chart-license/">圖表授權</a></div><div class="foot-col"><p class="foot-h">關於</p><a href="/certified-american-teacher-banqiao/">師資介紹</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="/contact/">聯絡與交通</a></div><div class="foot-col"><p class="foot-h">聯絡</p><a href="tel:+886928067772">電話 0928-067-772</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 線上預約</a><a href="https://maps.app.goo.gl/hLChkEqAMKCsMWpm6" target="_blank" rel="noopener">Google 地圖位置</a><a href="https://www.facebook.com/profile.php?id=61576014571186" target="_blank" rel="noopener">Facebook 粉絲專頁</a></div></nav></div><!-- AE:AINOTE --><p class="foot-ai">英文好，用 AI 也更順手 · <a href="https://essenindustries.com/tw/">essenindustries.com</a></p><!-- /AE:AINOTE -->
+<div class="foot-bottom"><span>© 2026 American English 埃森美語</span><span>私立埃森美語文理短期補習班　｜　新北市政府立案 社補教社字第115026號　｜　統一編號 61476523</span><span>220 新北市板橋區中正路89巷4號1樓</span></div><div class="foot-pref"><div google-add-preferred-source-btn data-theme="dark" data-lang="zh-TW"></div></div></div></footer>
+<!-- AE:FOOT end -->
+<script src="/assets/app.js?v=b537277d"></script>
+</body>
+</html>

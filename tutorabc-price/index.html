@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<link rel="stylesheet" href="/assets/styles.css?v=52538af7">
+<!-- AE:CRIT end -->
+<!-- AE:FONTS start -->
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2">
+<style>@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0vrx52jJ3Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB3vD2xWr53BJl.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZOIHTWEBlw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58UfivUw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKK58UfivUw4aw.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+<!-- AE:FONTS end -->
+<meta name="theme-color" content="#1A2752">
+<!-- Google Analytics (GA4) -->
+<title>TutorABC 價格與費用：官網公開方案整理＋報價前必問 8 題｜埃森美語</title>
+<meta name="description" content="TutorABC 價格官網怎麼寫？成人約 NT$550–2,200／堂、兒少約 NT$300 起，方案要留資料由顧問報價。整理價格由什麼決定、每堂實際成本怎麼算，和簽約前要問的 8 個問題。">
+<link rel="canonical" href="https://americanenglish.com.tw/tutorabc-price/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="American English 埃森美語">
+<meta property="og:title" content="TutorABC 價格與費用：官網公開方案整理＋報價前必問 8 題">
+<meta property="og:description" content="TutorABC 價格官網怎麼寫？成人約 NT$550–2,200／堂、兒少約 NT$300 起，方案要留資料由顧問報價。整理價格由什麼決定、每堂實際成本怎麼算，和簽約前要問的 8 個問題。">
+<meta property="og:url" content="https://americanenglish.com.tw/tutorabc-price/">
+<meta property="og:image" content="https://americanenglish.com.tw/assets/img/blog/piggy-bank-coin-stack.webp">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="粉紅色小豬撲滿與一疊硬幣">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"https://americanenglish.com.tw/#organization","name":"埃森美語 American English","alternateName":["埃森美語","American English 埃森美語","American English","埃森美語 - American English Institute"],"legalName":"私立埃森美語文理短期補習班","taxID":"61476523","description":"板橋中正路在地深耕的美籍外師英文補習班，提供 100% 美籍持證教師、每班 12 人小班制的兒童美語與國中英文課程。","url":"https://americanenglish.com.tw/","telephone":"+886-928-067-772","image":["https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","https://americanenglish.com.tw/assets/img/banqiao-small-class-english-classroom.webp","https://americanenglish.com.tw/assets/img/banqiao-kids-english-class.webp","https://americanenglish.com.tw/assets/img/certified-american-teacher-banqiao.webp","https://americanenglish.com.tw/assets/img/kids-confident-english-speaking.webp"],"logo":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"中正路89巷4號1樓","addressLocality":"板橋區","addressRegion":"新北市","postalCode":"220","addressCountry":"TW"},"geo":{"@type":"GeoCoordinates","latitude":25.0145617,"longitude":121.4560468},"areaServed":{"@type":"AdministrativeArea","name":"板橋區","containedInPlace":{"@type":"AdministrativeArea","name":"新北市"}},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"19:00"}],"sameAs":["https://www.google.com/maps?cid=11837760024257631170","https://lin.ee/W9J8TuQ","https://www.facebook.com/profile.php?id=61576014571186"],"hasMap":"https://www.google.com/maps?cid=11837760024257631170","founder":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"knowsLanguage":["en-US","zh-TW"],"knowsAbout":["兒童美語","國中英文","美籍外師英語教學","Phonics 自然發音","劍橋兒童英檢 (Cambridge YLE)","GEPT 全民英檢","國中教育會考英文","英語會話與口說","板橋英文補習班"],"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+886-928-067-772","url":"https://lin.ee/W9J8TuQ","availableLanguage":["zh-TW","en"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Christopher","jobTitle":"創辦人暨美籍持證英文教師 (Founder & Licensed American English Teacher)","worksFor":{"@id":"https://americanenglish.com.tw/#organization"},"alumniOf":{"@type":"CollegeOrUniversity","name":"University of Michigan"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"美國正式教師執照 (U.S. State Teaching Certificate)"},"knowsLanguage":["en-US","zh-TW"],"@id":"https://americanenglish.com.tw/#christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"TutorABC 價格與方案：官網公開了什麼、報價前要問什麼","description":"TutorABC 官網公開的費用資訊（成人約 NT$550–2,200／堂、兒少約 NT$300 起／堂）、台灣方案頁為何只有諮詢表單、影響報價的六個因素、每堂與每分鐘成本的換算方式，以及報價前要問的 8 個問題，由美籍持證教師依官方資料整理。","image":"https://americanenglish.com.tw/assets/img/blog/piggy-bank-coin-stack.webp","datePublished":"2026-10-13","dateModified":"2026-10-13","inLanguage":"zh-Hant-TW","author":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"publisher":{"@id":"https://americanenglish.com.tw/#organization"},"mainEntityOfPage":"https://americanenglish.com.tw/tutorabc-price/","@id":"https://americanenglish.com.tw/tutorabc-price/#article","alternativeHeadline":"TutorABC 價格與費用：官網公開方案整理＋報價前必問 8 題","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"hasPart":{"@id":"https://americanenglish.com.tw/tutorabc-price/#faq"}}</script>
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/tutorabc-price/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/tutorabc-price/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="twitter:image" content="https://americanenglish.com.tw/assets/img/blog/piggy-bank-coin-stack.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://americanenglish.com.tw/blog/"},{"@type":"ListItem","position":3,"name":"TutorABC 價格與方案：官網公開了什麼、報價前要問什麼"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://americanenglish.com.tw/tutorabc-price/#faq","url":"https://americanenglish.com.tw/tutorabc-price/","inLanguage":"zh-Hant-TW","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"mainEntity":[{"@type":"Question","name":"TutorABC 一個月費用大概多少？","acceptedAnswer":{"@type":"Answer","text":"官網沒有月費價目，只公開每堂的參考區間：成人約 NT$550–2,200／堂、兒少約 NT$300 起／堂。每月花費取決於每週上幾堂與合約總價，例如一週兩堂、一個月約八堂，就是單價乘以八；實際金額以顧問報價為準。"}},{"@type":"Question","name":"TutorABC 有優惠或比較便宜的方案嗎？","acceptedAnswer":{"@type":"Answer","text":"官網寫明每月不定期推出限時優惠，內容以當期公告為準。遇到限時優惠也不必當天簽約：請顧問把方案與截止日寫下來，依消費者保護法第 11-1 條，你有權在簽約前審閱定型化契約。"}},{"@type":"Question","name":"TutorABC 可以分期嗎？有哪些付款方式？","acceptedAnswer":{"@type":"Answer","text":"官網列出的付款方式是信用卡、LINE Pay 與線上匯款。官網沒有說明分期方式，報價時請問清楚：是信用卡分期還是另外和金融機構簽約、一次付清與分期的總額差多少，以及提前解約時分期款怎麼處理。"}},{"@type":"Question","name":"TutorABC 兒童和國高中課程的費用一樣嗎？","acceptedAnswer":{"@type":"Answer","text":"官網把兒少課程合併列出「約 NT$300 起／堂」，沒有分開公開兒童課程與國高中 TutorABC Teens 的價格，也沒有說明這個價位對應 25 或 45 分鐘。國高中課程的內容與要問的重點，見本站的 TutorABC Teens 評價。"}},{"@type":"Question","name":"TutorABC 的價格算貴嗎？","acceptedAnswer":{"@type":"Answer","text":"要看和什麼比、用什麼單位比。建議把每個選項都換算成每分鐘成本，例如一堂 45 分鐘 NT$550，每分鐘約 NT$12；再看你預計真的上得完的總價。單價之外，固定老師、上課形式與取消規則，也會影響一堂課的實際價值。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://americanenglish.com.tw/#website","url":"https://americanenglish.com.tw/","name":"American English 埃森美語","alternateName":["埃森美語","埃森美語 American English"],"inLanguage":"zh-Hant-TW","publisher":{"@id":"https://americanenglish.com.tw/#organization"}}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');if(!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};window._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}fbq('init','1023907773471013');fbq('track','PageView');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);var f=document.createElement('script');f.async=1;f.src='https://connect.facebook.net/en_US/fbevents.js';document.head.appendChild(f);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body data-page="tutorabc-price">
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<nav class="drawer" id="drawer" aria-label="行動版選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></nav>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="bg-deco"></div>
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/blog/">部落格</a> ／ TutorABC 價格</div>
+    <span class="eyebrow eyebrow-green reveal">線上英文平台 · 費用整理</span>
+    <h1 class="reveal d1"><span class="h1s kp">TutorABC <em>價格與方案</em>：</span><br><span class="h1s kp">官網公開了什麼、報價前要問什麼</span></h1>
+    <div class="divider reveal d1"></div>
+    <p class="body reveal d2">作者：Christopher｜埃森美語創辦人｜美國密西根大學畢業、美國正式教師執照<!-- AE:PAGEMETA start -->｜<span class="byl-d">最後更新 <time datetime="2026-10-13">2026 年 10 月 13 日</time></span><!-- AE:PAGEMETA end --></p>
+    <div class="hero-cta reveal d2" style="margin-top:16px">
+      <a class="btn btn-primary" href="#ask-list">直接看報價必問清單 →</a>
+      <a class="btn btn-outline" href="#cost-math">每堂成本怎麼算？</a>
+    </div>
+    <p class="body reveal d2" style="font-size:13px;margin-top:10px">這一頁是埃森美語整理的費用說明，不是 TutorABC 官方網站；方案與價格以 TutorABC 官網（www.tutorabc.com）和顧問報價為準。</p>
+    <figure class="post-hero pf-blue reveal d2">
+      <img src="/assets/img/blog/piggy-bank-coin-stack.webp" srcset="/assets/img/blog/piggy-bank-coin-stack-800.webp 800w, /assets/img/blog/piggy-bank-coin-stack.webp 1600w" sizes="(max-width:828px) 100vw, 732px" width="1600" height="900" alt="粉紅色小豬撲滿與一疊硬幣" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+<!-- AE:TOC --><nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span><a href="#TutorABC-方案頁長什麼樣子為什麼看不到價目表">TutorABC 方案頁長什麼樣子？為什麼看不到價目表</a><a href="#TutorABC-報價流程體驗課之後才拿到價格">TutorABC 報價流程：體驗課之後才拿到價格</a><a href="#TutorABC-價格由什麼決定">TutorABC 價格由什麼決定？</a><a href="#cost-math">每堂真正花多少？用總價回推</a><a href="#ask-list">報價前要問的 8 個問題</a><a href="#DcardPTT-上怎麼談-TutorABC-價格">Dcard、PTT 上怎麼談 TutorABC 價格？</a><a href="#什麼情況下實體小班反而比較好算">什麼情況下，實體小班反而比較好算？</a><a href="#TutorABC-價格常見問題">TutorABC 價格常見問題</a></nav><!-- /AE:TOC -->
+
+    <aside class="reveal" aria-label="利益揭露" style="background:var(--light-blue);border-radius:18px;padding:16px 20px;margin:0 0 24px;font-size:14px;line-height:1.75;color:var(--navy)"><strong>利益揭露：</strong>作者經營板橋的實體英文補習班埃森美語，和線上平台是不同類型的服務。本頁不含聯盟連結、未收受任何平台的費用；我們沒有買過 TutorABC 的課程，價格資訊來自官網公開頁面，2026 年 10 月查核。官方可能隨時調整，請以官網與你拿到的報價單為準。</aside>
+    <div class="prose reveal">
+      <p>搜尋「TutorABC 價格」，常會看到「官網沒有價目表」這個答案。這句話只對一半：TutorABC 在台灣的課程方案頁，確實是一張留資料的表單——填姓名、Email 和手機，由學習顧問一對一報價；但官網的常見問題其實寫了<strong>每堂的參考區間</strong>。把這些公開資訊整理好，再準備幾個關鍵問題，顧問來電時你就不會只聽到「每個月多少」。下表是官網目前公開的費用資訊：</p>
+    </div>
+    <table class="compare reveal">
+      <caption>TutorABC 官網公開的費用資訊（2026 年 10 月查核）</caption>
+      <thead><tr><th scope="col">項目</th><th scope="col">官網寫法</th><th scope="col">說明</th></tr></thead>
+      <tbody>
+        <tr><td>成人英文課</td><td>約 NT$550–2,200／堂</td><td>每堂 45 分鐘；實際費用依報價</td></tr>
+        <tr><td>兒少英文課</td><td>約 NT$300 起／堂</td><td>兒少課程依方案為 25 或 45 分鐘；官網沒有說明這個價位對應哪一種長度</td></tr>
+        <tr><td>中文課</td><td>約 USD 32–45／堂</td><td>給學中文的學員，和英文課分開計價</td></tr>
+        <tr><td>海外用戶</td><td>依各國官網方案</td><td>在台灣購買的課程，在海外也能上</td></tr>
+        <tr><td>優惠</td><td>每月不定期推出限時優惠</td><td>內容以當期公告與報價為準</td></tr>
+        <tr><td>付款方式</td><td>信用卡、LINE Pay、線上匯款</td><td>分期細節官網未說明，需向顧問確認</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：TutorABC 官網首頁常見問題、<a href="https://www.tutorabc.com/faq" target="_blank" rel="noopener">常見問題 FAQ</a>、<a href="https://www.tutorabc.com/site/zh-tw/teaching-team" target="_blank" rel="noopener">教學師資頁</a>常見問題，2026 年 10 月查核。</p>
+  </div></section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">方案頁</span><h2 id="TutorABC-方案頁長什麼樣子為什麼看不到價目表">TutorABC 方案頁長什麼樣子？<em>為什麼看不到價目表</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>從台灣連到 TutorABC 的<a href="https://www.tutorabc.com/site/zh-tw/pricing" target="_blank" rel="noopener">課程方案頁</a>，看到的不是方案卡片，而是「學習顧問一對一諮詢」的表單，以及一份「加入課程你會獲得」的清單。官網的說法是，課程「依照個人化需求規畫專屬方案價格」：年齡、目標、課程線和上課形式組合不同，報價就不同，所以沒有一張適用所有人的價目表。方案頁列出的內容如下：</p>
+    </div>
+    <table class="compare reveal">
+      <caption>TutorABC 方案頁列出的「加入課程你會獲得」</caption>
+      <thead><tr><th scope="col">官網列出的項目</th><th scope="col">實際是什麼</th><th scope="col">家長可以怎麼用</th></tr></thead>
+      <tbody>
+        <tr><td>課後完整學習報告</td><td>每堂課後的學習紀錄與回饋</td><td>每個月固定看一次，找出反覆出錯的地方</td></tr>
+        <tr><td>1 對 1 課程可自選喜愛的老師</td><td>只有 1 對 1 能指定老師</td><td>孩子需要固定老師，方案裡就要有 1 對 1</td></tr>
+        <tr><td>課程錄影檔回放</td><td>使用條款寫明出席後兩年內可回看</td><td>錯過或沒聽懂的課，用回放補</td></tr>
+        <tr><td>專業課程教材與課後作業</td><td>每單元的教材與作業</td><td>報名前請顧問給一份教材範例</td></tr>
+        <tr><td>每週更新學習內容</td><td>平台內容每週更新</td><td>和孩子一起挑感興趣的主題來上</td></tr>
+        <tr><td>學習 App</td><td>支援手機與平板</td><td>平板上課要先確認裝置規格</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：<a href="https://www.tutorabc.com/site/zh-tw/pricing" target="_blank" rel="noopener">TutorABC 課程方案頁</a>、<a href="https://www.tutorabc.com/site/zh-tw/terms?tab=2" target="_blank" rel="noopener">會員服務使用條款</a>第八條，2026 年 10 月查核。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>對家長來說，「沒有價目表」代表同一件事要問兩次：<strong>一次問每堂單價，一次問合約總價</strong>。只聽其中一個數字，很難和其他選擇放在一起比。</p>
+      <p>還有一個小細節：表單送出前要勾選同意〈會員服務使用條款〉與隱私聲明，而使用條款第二條寫明，填寫資料就視為同意加入會員並遵守條款。留資料之前，花五分鐘把條款看過一遍是值得的。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">報價流程</span><h2 id="TutorABC-報價流程體驗課之後才拿到價格">TutorABC 報價流程：<em>體驗課之後才拿到價格</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>TutorABC 的價格不是點進網站就看得到，而是走完一套體驗流程後，由顧問依結果提出方案。官網常見問題把流程寫成五個步驟；每一步其實都可以先準備，讓最後拿到的報價更貼近孩子真正需要的課：</p>
+    </div>
+    <table class="compare reveal">
+      <caption>TutorABC 官網的體驗與規劃流程</caption>
+      <thead><tr><th scope="col">步驟</th><th scope="col">官網流程</th><th scope="col">這一步先準備什麼</th></tr></thead>
+      <tbody>
+        <tr><td>1. 預約體驗</td><td>在官網點選體驗按鈕、註冊會員，選擇體驗項目並完成程度測驗</td><td>先想好目標：口說會話、考試，還是學校課業</td></tr>
+        <tr><td>2. 顧問聯絡</td><td>線上顧問致電確認需求與目標</td><td>說清楚每週能上幾次、方便的時段，以及希望的聯絡方式</td></tr>
+        <tr><td>3. 體驗課</td><td>與真人外師上一堂體驗課</td><td>家長在旁觀察：老師怎麼修正錯誤、孩子實際開口幾次</td></tr>
+        <tr><td>4. 程度評測</td><td>體驗課後由老師評測英語程度</td><td>請對方說明程度對照哪一個級別</td></tr>
+        <tr><td>5. 學習規劃</td><td>顧問依測驗結果與需求，建議學習計畫與課程</td><td>請對方說明建議的課程線、上課形式與堂數各是根據什麼</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：TutorABC 官網首頁常見問題與<a href="https://www.tutorabc.com/faq" target="_blank" rel="noopener">常見問題 FAQ</a>，2026 年 10 月查核。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>第五步的學習規劃，就是報價的起點。把它當成一份「提案」而不是結論：提案裡的堂數，應該對應孩子每週真的排得出來的時間；如果數字對不上，就請顧問重新調整，再看新的總價。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">價格因素</span><h2 id="TutorABC-價格由什麼決定">TutorABC 價格<em>由什麼決定</em>？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>官網對報價的說明很簡短：採客製化報價，依學生的需求和選擇的課程類型而不同。把官網其他頁面的資訊對照起來，可以拆出六個會影響報價的因素——官網大多只寫了一半，另一半要在諮詢時自己問出來：</p>
+    </div>
+    <table class="compare reveal">
+      <caption>影響 TutorABC 報價的因素</caption>
+      <thead><tr><th scope="col">因素</th><th scope="col">官網怎麼寫</th><th scope="col">諮詢時要釐清</th></tr></thead>
+      <tbody>
+        <tr><td>課程線</td><td>成人、兒少、檢定課程分開；成人與兒少的參考區間不同</td><td>你要的是一般會話、檢定課，還是國高中課業課？分開報價</td></tr>
+        <tr><td>上課形式</td><td>1 對 1、1 對 4 小班、大師講堂三種</td><td>各形式怎麼扣堂數，方案裡各有幾堂</td></tr>
+        <tr><td>每堂長度</td><td>成人 45 分鐘；兒少依方案 25 或 45 分鐘</td><td>孩子的課是幾分鐘，用每分鐘成本比較</td></tr>
+        <tr><td>總堂數與期限</td><td>官網未說明；依個別服務契約</td><td>總共幾堂、幾個月內要上完、到期沒上完怎麼辦</td></tr>
+        <tr><td>付款方式</td><td>信用卡、LINE Pay、線上匯款</td><td>一次付清與分期的總額差多少</td></tr>
+        <tr><td>促銷</td><td>每月不定期限時優惠</td><td>優惠截止日；合約能不能先帶回家看</td></tr>
+      </tbody>
+    </table>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>關於「各形式怎麼扣堂數」：官網沒有公開這部分。2021 年 PTT 上一位學員的心得提到，當時 1 對 1 和小班扣的堂數不同（<a href="https://www.ptt.cc/bbs/Language/M.1615486463.A.86B.html" target="_blank" rel="noopener nofollow">PTT Language 板</a>）。這是個人分享、時間也有點久，不能當作現在的規則——但正好說明這一題值得當面問清楚。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">換算</span><h2 id="cost-math">每堂真正花多少？<em>用總價回推</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>如果顧問給的是「每堂價格」，先確認它是怎麼算出來的——是總價除以全部堂數，還是把贈送堂數也算進去。比較實在的算法是：</p>
+      <p><strong>實際單價 ＝ 合約總價 ÷ 你預計真的會上的堂數</strong><br><strong>每分鐘成本 ＝ 實際單價 ÷ 每堂分鐘數</strong></p>
+      <p>用官網的區間做個算術示範（不是實際報價）：一堂 45 分鐘的成人課，若是 NT$550，每分鐘約 NT$12；若是 NT$2,200，每分鐘約 NT$49。兒少課若一堂 NT$300、25 分鐘，每分鐘 NT$12；同樣 NT$300 若是 45 分鐘，每分鐘約 NT$6.7。<strong>所以「一堂多少」要和「一堂幾分鐘」一起看</strong>，不然 25 分鐘和 45 分鐘的課會被當成同一種東西比較。</p>
+      <p>把單價乘上一年的堂數，更能看出差距。下表只是用官網公開的每堂參考價做的乘法示範，<strong>不是 TutorABC 的報價</strong>：</p>
+    </div>
+    <table class="compare reveal">
+      <caption>用官網參考價試算一年的上課費用（算術示範，非報價）</caption>
+      <thead><tr><th scope="col">每堂參考價</th><th scope="col">每週 1 堂（一年 52 堂）</th><th scope="col">每週 2 堂（一年 104 堂）</th></tr></thead>
+      <tbody>
+        <tr><td>兒少 NT$300／堂</td><td>NT$15,600</td><td>NT$31,200</td></tr>
+        <tr><td>成人 NT$550／堂</td><td>NT$28,600</td><td>NT$57,200</td></tr>
+        <tr><td>成人 NT$2,200／堂</td><td>NT$114,400</td><td>NT$228,800</td></tr>
+      </tbody>
+    </table>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>官網的單價區間從 NT$300 到 NT$2,200，相差七倍多；差別來自課程線、上課形式和每堂長度。這正是報價時要一項一項問清楚的原因。</p>
+      <p>分母更容易被高估。用「每週實際會上的次數 × 合約週數」算出真正上得到的堂數；如果有贈送堂數，先不要算進去，問清楚它在退費時怎麼處理。另外依使用條款，大師講堂以外的課程逾時沒取消或遲到，都算已上——孩子行程常變動的家庭，實際單價會比帳面高。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">報價清單</span><h2 id="ask-list">報價前要問的<em> 8 個問題</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>顧問來電前，把下面這張表印出來或存在手機裡。每一題都請對方給書面答案（簡訊、Email 或合約條文都可以）：</p>
+    </div>
+    <table class="compare reveal">
+      <caption>TutorABC 報價時要問的 8 個問題</caption>
+      <thead><tr><th scope="col">要問的問題</th><th scope="col">為什麼要問</th></tr></thead>
+      <tbody>
+        <tr><td>① 合約總價、總堂數、有效期限各是多少？</td><td>只聽月付金額容易低估總額；堂數要在期限內上完</td></tr>
+        <tr><td>② 1 對 1、小班、大師講堂各扣幾堂？方案裡各有多少？</td><td>同一份合約能上的次數，取決於選哪一種形式</td></tr>
+        <tr><td>③ 孩子的課每堂幾分鐘？</td><td>兒少課程依方案分 25 與 45 分鐘，換算每分鐘才公平</td></tr>
+        <tr><td>④ 退費怎麼算？可以給我書面的計算方式嗎？</td><td>官網只說依合約啟用時間與已使用堂數計算，細節在契約裡</td></tr>
+        <tr><td>⑤ 一次付清和分期差多少？分期是信用卡分期，還是另外和金融機構簽約？</td><td>提前解約時，分期款怎麼處理要先問清楚</td></tr>
+        <tr><td>⑥ 有沒有贈送堂數？贈送的部分退費時怎麼算？</td><td>贈送堂數常讓單價看起來較低</td></tr>
+        <tr><td>⑦ 可以暫停嗎？兄弟姊妹可以共用堂數嗎？</td><td>條款規定暫停有次數與天數上限，帳號與服務不得提供他人使用</td></tr>
+        <tr><td>⑧ 合約可以先帶回家看嗎？</td><td>消費者保護法第 11-1 條：定型化契約應給 30 日以內的合理審閱期間</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">條款依據：<a href="https://www.tutorabc.com/site/zh-tw/terms?tab=2" target="_blank" rel="noopener">TutorABC 會員服務使用條款</a>第五、七、八條；<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=J0170001&amp;flno=11-1" target="_blank" rel="noopener">消費者保護法第 11-1 條</a>；2026 年 10 月查核。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>不知道怎麼開口？可以直接這樣說：「我們想先知道總價、總堂數、使用期限和退費方式，麻煩用書面傳給我，我們回家討論後再回覆。」願意照做的顧問，通常也比較願意把細節講清楚。</p>
+      <p>兩個實務提醒。第一，<strong>限時優惠不等於當天要簽</strong>：可以請顧問把方案和優惠截止日寫下來，帶回家審閱後再決定。第二，<strong>比較時用同一個單位</strong>：把每個選項都換算成「每分鐘成本」和「預計真的上得完的總價」，再看哪一個適合孩子的作息。取消、暫停與轉讓的完整規則，整理在<a href="/tutorabc-review/">TutorABC 評價</a>的官方條款一節。</p>
+      <p>另外，政府對線上教學契約有一份<a href="https://www.ey.gov.tw/Page/DFB720D019CCCB0A/397a2ff8-748a-4df1-a52e-860278d0c275" target="_blank" rel="noopener">《網際網路教學服務定型化契約應記載及不得記載事項》</a>（2020 年 5 月 15 日生效，現由數位發展部主管）。其中寫到：消費者可以隨時通知終止契約；預付期間超過一年、且預付金額超過新臺幣 5 萬元時，業者應就超過的部分提供履約保證，例如信託或金融機構擔保。簽約前可以多問一句：這份合約的履約保證是哪一種？</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">網路討論</span><h2 id="DcardPTT-上怎麼談-TutorABC-價格">Dcard、PTT 上<em>怎麼談 TutorABC 價格</em>？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>在討論區，價格是 TutorABC 常被拿出來算的題目。2026 年 PTT 有留言把費用換算成每堂五百元以上，覺得不便宜；同一篇的原作者則因為合約要一年以上，最後沒有選 TutorABC（<a href="https://www.ptt.cc/bbs/Language/M.1768287983.A.0B6.html" target="_blank" rel="noopener nofollow">PTT Language 板</a>）。2019 年的一篇心得列出作者當年拿到的報價，提醒業務談月付時，要自己把總額乘出來（<a href="https://www.ptt.cc/bbs/Language/M.1552880776.A.738.html" target="_blank" rel="noopener nofollow">PTT 心得</a>）；2021 年的比較文則提到 TutorABC 一次要買的堂數比部分平台多（<a href="https://www.ptt.cc/bbs/study/M.1612937596.A.347.html" target="_blank" rel="noopener nofollow">PTT study 板</a>）。Dcard 語言版也有以價格為題的比較串，例如〈<a href="https://www.dcard.tw/f/language/p/234601125" target="_blank" rel="noopener nofollow">線上英文價格&amp;上課心得</a>〉。</p>
+      <p>這些分享的年份不一，金額都不能當作現在的價格；但它們指向同一個做法：<strong>先問總價和堂數，再談月付</strong>。網路上常見的「轉讓價」也不是官方價格——依條款，未經公司事先同意的轉讓無效，接手前要先確認官方流程。</p>
+    </div>
+    <div class="center stack reveal" style="margin-top:48px"><h2 id="什麼情況下實體小班反而比較好算">什麼情況下，<em>實體小班</em>反而比較好算？</h2></div>
+    <div class="prose reveal">
+      <p>TutorABC 的費用是一份堂數合約，總價、堂數與期限綁在一起，適合確定會長期上的人。若孩子還在適應期、家長希望每個月評估一次再決定，月繳的實體小班比較好算——埃森美語採月繳、不綁長約，每班 12 人以內。兩種上課方式的整體比較，見<a href="/online-vs-in-person-english-banqiao/">兒童線上英文 vs 實體小班</a>。</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">常見問題</span><h2 id="TutorABC-價格常見問題">TutorABC 價格<em>常見問題</em></h2></div>
+    <div class="faq">
+      <div class="faq-item"><h3 id="TutorABC-一個月費用大概多少" class="faq-h"><button class="faq-q" aria-expanded="false">TutorABC 一個月費用大概多少？<span class="pm"></span></button></h3><div class="faq-a"><p>官網沒有月費價目，只公開每堂的參考區間：成人約 NT$550–2,200／堂、兒少約 NT$300 起／堂。每月花費取決於每週上幾堂與合約總價，例如一週兩堂、一個月約八堂，就是單價乘以八；實際金額以顧問報價為準。</p></div></div>
+      <div class="faq-item"><h3 id="TutorABC-有優惠或比較便宜的方案嗎" class="faq-h"><button class="faq-q" aria-expanded="false">TutorABC 有優惠或比較便宜的方案嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>官網寫明每月不定期推出限時優惠，內容以當期公告為準。遇到限時優惠也不必當天簽約：請顧問把方案與截止日寫下來，依消費者保護法第 11-1 條，你有權在簽約前審閱定型化契約。</p></div></div>
+      <div class="faq-item"><h3 id="TutorABC-可以分期嗎有哪些付款方式" class="faq-h"><button class="faq-q" aria-expanded="false">TutorABC 可以分期嗎？有哪些付款方式？<span class="pm"></span></button></h3><div class="faq-a"><p>官網列出的付款方式是信用卡、LINE Pay 與線上匯款。官網沒有說明分期方式，報價時請問清楚：是信用卡分期還是另外和金融機構簽約、一次付清與分期的總額差多少，以及提前解約時分期款怎麼處理。</p></div></div>
+      <div class="faq-item"><h3 id="TutorABC-兒童和國高中課程的費用一樣嗎" class="faq-h"><button class="faq-q" aria-expanded="false">TutorABC 兒童和國高中課程的費用一樣嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>官網把兒少課程合併列出「約 NT$300 起／堂」，沒有分開公開兒童課程與國高中 TutorABC Teens 的價格，也沒有說明這個價位對應 25 或 45 分鐘。國高中課程的內容與要問的重點，見本站的 TutorABC Teens 評價。</p></div></div>
+      <div class="faq-item"><h3 id="TutorABC-的價格算貴嗎" class="faq-h"><button class="faq-q" aria-expanded="false">TutorABC 的價格算貴嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>要看和什麼比、用什麼單位比。建議把每個選項都換算成每分鐘成本，例如一堂 45 分鐘 NT$550，每分鐘約 NT$12；再看你預計真的上得完的總價。單價之外，固定老師、上課形式與取消規則，也會影響一堂課的實際價值。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AE:ROUTE -->
+<section class="section bg-soft">
+  <div class="wrap">
+    <span class="eyebrow eyebrow-yellow">價格之外</span>
+    <h2 id="價格問清楚了再看值不值得" style="margin-top:14px">價格問清楚了，<em>再看值不值得</em></h2>
+    <div class="divider" style="margin:18px 0 22px"></div>
+    <p class="body" style="max-width:720px">單價只是一半。上課形式、老師怎麼安排、取消與暫停的規則，決定付出去的每一堂能不能真的上到——這些在 TutorABC 評價有完整整理。想看單堂購買、老師自訂價格的另一種模式，可以讀 AmazingTalker 的比較。</p>
+    <div style="margin-top:20px"><a href="/tutorabc-review/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">TutorABC 評價</a><a href="/tutorabc-vs-amazingtalker/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">AmazingTalker vs TutorABC</a><a href="/tutorabc-teens-review/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">TutorABC Teens 評價</a><a href="/kids-online-english-comparison/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">兒童線上英文平台比較</a><a href="/cram-school-vs-tutor-vs-self-study/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">補習班、家教、自學怎麼選</a></div>
+  </div>
+</section>
+<!-- /AE:ROUTE -->
+<section class="section bg-blue">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <span class="eyebrow eyebrow-green">先評估再花錢</span>
+      <h2 id="先知道程度預算才花得準" style="margin-top:14px">先知道程度，<br><em>預算才花得準</em></h2>
+      <p class="body" style="max-width:560px;margin:16px auto 0">不論報價多少，真正浪費的是買到不合孩子程度的課。先讓我們聽聽孩子說英文、讀英文，告訴你現在的程度和下一步，再決定要買哪一種課、買多少。</p>
+      <div class="cta-row">
+        <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 預約免費程度評估</a>
+        <a href="/kids-english-cram-school-guide/" class="btn btn-outline">選課的 7 個評估重點</a>
+      </div>
+      <p class="body" style="max-width:560px;margin:22px auto 0;font-size:14px">接著讀：<a href="/tutorabc-review/">TutorABC 評價</a>、<a href="/tutorabc-teens-review/">TutorABC Teens 評價</a>、<a href="/cram-school-vs-tutor-vs-self-study/">補習班 vs 家教 vs 自學</a>。</p>
+      <p class="body" style="max-width:560px;margin:10px auto 0;font-size:14px">如果你剛好住板橋：我們的教室在<a href="/banqiao-english-cram-school/">板橋中正路</a>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- AE:BYL start --><div class="page-meta"><div class="wrap"><span>作者：<a href="/certified-american-teacher-banqiao/">Christopher｜埃森美語創辦人</a>（<a href="/certified-american-teacher-banqiao/">關於作者</a>）</span></div></div>
+<!-- AE:BYL end --></main>
+<!-- AE:FOOT start -->
+<footer class="site-footer"><div class="wrap"><div class="foot-grid"><div><div class="foot-logo"><img class="foot-logo-img" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="34" height="34" loading="lazy" decoding="async">American English 埃森美語</div><p class="foot-tag">板橋中正路在地深耕的美籍外師英文補習班。100% 美籍持證教師、每班 12 人小班制。</p><p class="foot-nap">220 新北市板橋區中正路89巷4號1樓<span class="foot-sep">　｜　</span><a href="tel:+886928067772">☎ 0928-067-772</a></p></div><nav class="foot-links" aria-label="頁尾導覽"><div class="foot-col"><p class="foot-h">課程</p><a href="/banqiao-english-cram-school/">板橋英文補習班</a><a href="/courses/">課程總覽</a><a href="/kids-english-banqiao/">兒童美語</a><a href="/junior-high-english-banqiao/">國中英文</a><a href="/free-trial/">預約試聽</a></div><div class="foot-col"><p class="foot-h">學習資源</p><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/english-pronunciation/">英文發音</a><a href="/download/">免費下載</a><a href="/chart-license/">圖表授權</a></div><div class="foot-col"><p class="foot-h">關於</p><a href="/certified-american-teacher-banqiao/">師資介紹</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="/contact/">聯絡與交通</a></div><div class="foot-col"><p class="foot-h">聯絡</p><a href="tel:+886928067772">電話 0928-067-772</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 線上預約</a><a href="https://maps.app.goo.gl/hLChkEqAMKCsMWpm6" target="_blank" rel="noopener">Google 地圖位置</a><a href="https://www.facebook.com/profile.php?id=61576014571186" target="_blank" rel="noopener">Facebook 粉絲專頁</a></div></nav></div><!-- AE:AINOTE --><p class="foot-ai">英文好，用 AI 也更順手 · <a href="https://essenindustries.com/tw/">essenindustries.com</a></p><!-- /AE:AINOTE -->
+<div class="foot-bottom"><span>© 2026 American English 埃森美語</span><span>私立埃森美語文理短期補習班　｜　新北市政府立案 社補教社字第115026號　｜　統一編號 61476523</span><span>220 新北市板橋區中正路89巷4號1樓</span></div><div class="foot-pref"><div google-add-preferred-source-btn data-theme="dark" data-lang="zh-TW"></div></div></div></footer>
+<!-- AE:FOOT end -->
+<script src="/assets/app.js?v=b537277d"></script>
+</body>
+</html>

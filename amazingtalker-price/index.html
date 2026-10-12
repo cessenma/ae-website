@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<link rel="stylesheet" href="/assets/styles.css?v=52538af7">
+<!-- AE:CRIT end -->
+<!-- AE:FONTS start -->
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2">
+<style>@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0vrx52jJ3Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB3vD2xWr53BJl.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZOIHTWEBlw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58UfivUw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKK58UfivUw4aw.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+<!-- AE:FONTS end -->
+<meta name="theme-color" content="#1A2752">
+<!-- Google Analytics (GA4) -->
+<title>AmazingTalker 價格怎麼算？一個月費用試算、漲價與優惠｜埃森美語</title>
+<meta name="description" content="AmazingTalker 一堂多少錢？價格由老師自訂：官方時薪行情、體驗課、5／10／20 堂折扣、刷卡幣別與手續費、老師漲價的原價續課規則與官方優惠，附一個月費用試算。">
+<link rel="canonical" href="https://americanenglish.com.tw/amazingtalker-price/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="American English 埃森美語">
+<meta property="og:title" content="AmazingTalker 價格怎麼算？一個月費用試算、漲價與優惠">
+<meta property="og:description" content="AmazingTalker 一堂多少錢？價格由老師自訂：官方時薪行情、體驗課、5／10／20 堂折扣、刷卡幣別與手續費、老師漲價的原價續課規則與官方優惠，附一個月費用試算。">
+<meta property="og:url" content="https://americanenglish.com.tw/amazingtalker-price/">
+<meta property="og:image" content="https://americanenglish.com.tw/assets/img/blog/calculator-notebook-laptop-desk.webp">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="書桌上的計算機、筆記本與筆電">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"https://americanenglish.com.tw/#organization","name":"埃森美語 American English","alternateName":["埃森美語","American English 埃森美語","American English","埃森美語 - American English Institute"],"legalName":"私立埃森美語文理短期補習班","taxID":"61476523","description":"板橋中正路在地深耕的美籍外師英文補習班，提供 100% 美籍持證教師、每班 12 人小班制的兒童美語與國中英文課程。","url":"https://americanenglish.com.tw/","telephone":"+886-928-067-772","image":["https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","https://americanenglish.com.tw/assets/img/banqiao-small-class-english-classroom.webp","https://americanenglish.com.tw/assets/img/banqiao-kids-english-class.webp","https://americanenglish.com.tw/assets/img/certified-american-teacher-banqiao.webp","https://americanenglish.com.tw/assets/img/kids-confident-english-speaking.webp"],"logo":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"中正路89巷4號1樓","addressLocality":"板橋區","addressRegion":"新北市","postalCode":"220","addressCountry":"TW"},"geo":{"@type":"GeoCoordinates","latitude":25.0145617,"longitude":121.4560468},"areaServed":{"@type":"AdministrativeArea","name":"板橋區","containedInPlace":{"@type":"AdministrativeArea","name":"新北市"}},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"19:00"}],"sameAs":["https://www.google.com/maps?cid=11837760024257631170","https://lin.ee/W9J8TuQ","https://www.facebook.com/profile.php?id=61576014571186"],"hasMap":"https://www.google.com/maps?cid=11837760024257631170","founder":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"knowsLanguage":["en-US","zh-TW"],"knowsAbout":["兒童美語","國中英文","美籍外師英語教學","Phonics 自然發音","劍橋兒童英檢 (Cambridge YLE)","GEPT 全民英檢","國中教育會考英文","英語會話與口說","板橋英文補習班"],"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+886-928-067-772","url":"https://lin.ee/W9J8TuQ","availableLanguage":["zh-TW","en"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Christopher","jobTitle":"創辦人暨美籍持證英文教師 (Founder & Licensed American English Teacher)","worksFor":{"@id":"https://americanenglish.com.tw/#organization"},"alumniOf":{"@type":"CollegeOrUniversity","name":"University of Michigan"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"美國正式教師執照 (U.S. State Teaching Certificate)"},"knowsLanguage":["en-US","zh-TW"],"@id":"https://americanenglish.com.tw/#christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"AmazingTalker 價格怎麼算？一堂多少錢、一個月費用試算","description":"AmazingTalker 的價格由每位老師自訂。本文依官方英文家教費用頁、教師列表與官方幫助中心，整理時薪行情區間、體驗課與課程包折扣及預約期限、付款幣別與手續費、老師調價時的原價續課規則、官方優惠與退課的優惠扣回，並用官方兒童美語行情試算一個月的費用。","image":"https://americanenglish.com.tw/assets/img/blog/calculator-notebook-laptop-desk.webp","datePublished":"2026-10-13","dateModified":"2026-10-13","inLanguage":"zh-Hant-TW","author":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"publisher":{"@id":"https://americanenglish.com.tw/#organization"},"mainEntityOfPage":"https://americanenglish.com.tw/amazingtalker-price/","@id":"https://americanenglish.com.tw/amazingtalker-price/#article","alternativeHeadline":"AmazingTalker 價格怎麼算？一個月費用試算、漲價與優惠","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"hasPart":{"@id":"https://americanenglish.com.tw/amazingtalker-price/#faq"}}</script>
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/amazingtalker-price/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/amazingtalker-price/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="twitter:image" content="https://americanenglish.com.tw/assets/img/blog/calculator-notebook-laptop-desk.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://americanenglish.com.tw/blog/"},{"@type":"ListItem","position":3,"name":"AmazingTalker 價格怎麼算？一堂多少錢、一個月費用試算"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://americanenglish.com.tw/amazingtalker-price/#faq","url":"https://americanenglish.com.tw/amazingtalker-price/","inLanguage":"zh-Hant-TW","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"mainEntity":[{"@type":"Question","name":"AmazingTalker 一堂課多少錢？","acceptedAnswer":{"@type":"Answer","text":"每位老師自訂，沒有統一價格。官方的英文家教費用頁表示，大部分英文家教的時薪約在 NT$250–1,000，兒童美語（4–11 歲）的時薪行情是 NT$329–548。正式課有 25 分鐘與 50 分鐘兩種，實際價格以老師頁面為準。"}},{"@type":"Question","name":"AmazingTalker 的體驗課要付費嗎？多少錢？","acceptedAnswer":{"@type":"Answer","text":"要付費。體驗課約 25 分鐘，價格由老師自訂、標示在教師頁；我們 2026 年 10 月查看時，英文教師列表第一頁從 NT$35 到 NT$456 都有。透過邀請連結註冊的新用戶，首次購買的體驗課可享 3 折（註冊後 90 天內有效）。"}},{"@type":"Question","name":"除了學費，還有其他手續費嗎？","acceptedAnswer":{"@type":"Answer","text":"官方文件沒有列出向學生另收的平台服務費；平台服務費和 8% 的固定費用，是從老師的收入中扣除。要注意的是刷卡幣別：如果結帳以港幣收款，發卡銀行可能收國際交易手續費；用 ATM、超商、分期或 LINE Pay 則是台幣付款。"}},{"@type":"Question","name":"老師漲價了，已經買的課會跟著變貴嗎？","acceptedAnswer":{"@type":"Answer","text":"不會，已付款的訂單不受價格調整影響。如果老師 30 天內漲超過 20%，或 90 天內漲超過 30%，剩餘堂數在 3 堂以下的舊生，可以在期限內用原價續購一次，最多 20 堂 50 分鐘或 40 堂 25 分鐘。"}},{"@type":"Question","name":"買 AmazingTalker 課程包比較划算嗎？","acceptedAnswer":{"@type":"Answer","text":"單價比較低：一次買 5 堂 95 折、10 堂 9 折、20 堂 85 折。但課程包有預約期限（1–10 堂 3 個月、11–20 堂 6 個月），中途退課時已上的堂數會用原價重算。還沒確定老師之前，先買 5 堂比較穩。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://americanenglish.com.tw/#website","url":"https://americanenglish.com.tw/","name":"American English 埃森美語","alternateName":["埃森美語","埃森美語 American English"],"inLanguage":"zh-Hant-TW","publisher":{"@id":"https://americanenglish.com.tw/#organization"}}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');if(!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};window._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}fbq('init','1023907773471013');fbq('track','PageView');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);var f=document.createElement('script');f.async=1;f.src='https://connect.facebook.net/en_US/fbevents.js';document.head.appendChild(f);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body data-page="amazingtalker-price">
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<nav class="drawer" id="drawer" aria-label="行動版選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></nav>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="bg-deco"></div>
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/blog/">部落格</a> ／ AmazingTalker 價格</div>
+    <span class="eyebrow eyebrow-green reveal">費用整理 · 2026 年 10 月</span>
+    <h1 class="reveal d1"><span class="h1s kp">AmazingTalker <em>價格</em>怎麼算？</span><br><span class="h1s kp">一堂多少錢、一個月費用試算</span></h1>
+    <div class="divider reveal d1"></div>
+    <p class="body reveal d2">作者：Christopher｜埃森美語創辦人｜美國密西根大學畢業、美國正式教師執照<!-- AE:PAGEMETA start -->｜<span class="byl-d">最後更新 <time datetime="2026-10-13">2026 年 10 月 13 日</time></span><!-- AE:PAGEMETA end --></p>
+    <div class="hero-cta reveal d2" style="margin-top:16px">
+      <a class="btn btn-primary" href="#monthly">直接看一個月試算 →</a>
+      <a class="btn btn-outline" href="#raise">老師漲價怎麼辦？</a>
+    </div>
+    <p class="body reveal d2" style="font-size:13px;margin-top:10px">這一頁是埃森美語整理的費用說明，並非 AmazingTalker 官方網站；實際價格以官網 tw.amazingtalker.com 各老師頁面與購物車顯示為準。</p>
+    <figure class="post-hero pf-cream reveal d2">
+      <img src="/assets/img/blog/calculator-notebook-laptop-desk.webp" srcset="/assets/img/blog/calculator-notebook-laptop-desk-800.webp 800w, /assets/img/blog/calculator-notebook-laptop-desk.webp 1600w" sizes="(max-width:828px) 100vw, 732px" width="1600" height="900" alt="書桌上的計算機、筆記本與筆電" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+<!-- AE:TOC --><nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span><a href="#一堂多少錢官方公布的價格區間">一堂多少錢？官方公布的價格區間</a><a href="#體驗課怎麼收費先準備試兩三位老師">體驗課怎麼收費？先準備試兩、三位老師</a><a href="#課程包折扣與預約期限買幾堂最划算">課程包折扣與預約期限：買幾堂最划算？</a><a href="#monthly">一個月要花多少？三種頻率試算</a><a href="#raise">老師會漲價嗎？原價續課規則</a><a href="#付款方式幣別與手續費">付款方式、幣別與手續費</a><a href="#AmazingTalker-優惠怎麼拿官方活動整理">AmazingTalker 優惠怎麼拿？官方活動整理</a><a href="#退課能拿回多少算給你看">退課能拿回多少？算給你看</a><a href="#按堂計價之外小班課給的是什麼">按堂計價之外，小班課給的是什麼？</a><a href="#AmazingTalker-價格常見問題">AmazingTalker 價格常見問題</a></nav><!-- /AE:TOC -->
+
+    <div class="prose reveal">
+      <p>「AmazingTalker 一堂多少錢？」這個問題沒有單一答案，因為平台上<strong>每位老師自己定價</strong>——官方的英文家教費用頁寫得很清楚：價格由老師決定，不是由 AmazingTalker 制定。所以與其記住一個數字，不如弄懂價格是怎麼組成的：體驗課、正式課、課程包折扣、付款幣別和手續費，再加上老師會不會漲價。這篇把官方公布的數字整理成表，並附上一個月費用的算法。</p>
+      <p>先給結論：<strong>官方表示大部分英文家教的時薪落在 NT$250–1,000 左右，兒童美語（4–11 歲）的時薪行情是 NT$329–548。</strong>一個月實際花多少，取決於你選的老師、一堂多長、一週上幾次。</p>
+    </div>
+    <div class="stage-info reveal" style="--c:var(--navy);max-width:860px;margin:22px auto">
+      <div class="lbl">📌 先說明立場</div>
+      <p>本文作者在板橋經營實體英文補習班，和 AmazingTalker 沒有任何合作或推薦獎勵，文中沒有邀請碼、沒有聯盟連結，也沒有向任何平台收費。我們沒有在該平台購課；所有價格取自官網與官方幫助中心，於 2026 年 10 月查核。老師的定價和匯率隨時會變，付款前請以官網顯示為準。</p>
+    </div>
+    <table class="compare reveal">
+      <caption>AmazingTalker 費用結構一覽（2026 年 10 月查核）</caption>
+      <thead><tr><th scope="col">項目</th><th scope="col">官方資訊</th></tr></thead>
+      <tbody>
+        <tr><td>誰決定價格</td><td>每位老師自訂；新老師要在系統建議的價格區間內定價</td></tr>
+        <tr><td>體驗課</td><td>約 25 分鐘，價格由老師自訂，教師頁上另外標示</td></tr>
+        <tr><td>正式課</td><td>25 分鐘或 50 分鐘（依老師開課），可以只買 1 堂</td></tr>
+        <tr><td>課程包折扣</td><td>一次買 5／10／20 堂，系統分別給 95 折／9 折／85 折</td></tr>
+        <tr><td>計價單位</td><td>站內以美元計價（1 AT 幣＝1 美元），頁面可切換成台幣顯示</td></tr>
+        <tr><td>付款幣別</td><td>ATM、超商、分期、LINE Pay 以台幣付款；信用卡一次付清的幣別，官方說明有兩種寫法，以結帳頁為準</td></tr>
+        <tr><td>平台服務費</td><td>依官方給老師的說明，從老師的課程收入中扣除</td></tr>
+        <tr><td>退課</td><td>剩餘堂數退成 AT 幣；已上的堂數用單堂原價重算</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：AmazingTalker <a href="https://tw.amazingtalker.com/tutor-price/english" target="_blank" rel="noopener">英文家教費用資訊頁</a>、教師列表與教師頁、<a href="https://amazingtalker.elevio.help/zh-hant" target="_blank" rel="noopener">官方幫助中心</a>（購買課程、付款貨幣、課程價錢設定、教學收入計算等文章），2026 年 10 月 12–13 日查核。</p>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">價格區間</span><h2 id="一堂多少錢官方公布的價格區間">一堂多少錢？<em>官方公布</em>的價格區間</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>AmazingTalker 的「英文家教費用資訊」頁，列出依專長、依老師國籍分類的時薪行情。官方沒有說明區間怎麼算出來的，所以請把它當成「大致落點」，不是報價。官方以「小時」標示，平台的正式課一堂多為 50 分鐘。</p>
+    </div>
+    <table class="compare reveal">
+      <caption>依專長：英文家教時薪行情（官方頁面，新台幣／小時）</caption>
+      <thead><tr><th scope="col">專長</th><th scope="col">時薪區間</th></tr></thead>
+      <tbody>
+        <tr><td>兒童美語（4–11 歲）</td><td>NT$329–548</td></tr>
+        <tr><td>英文會話</td><td>NT$357–595</td></tr>
+        <tr><td>英文口說</td><td>NT$338–564</td></tr>
+        <tr><td>雅思 IELTS</td><td>NT$351–585</td></tr>
+        <tr><td>商業英文</td><td>NT$314–524</td></tr>
+      </tbody>
+    </table>
+    <table class="compare reveal" style="margin-top:22px">
+      <caption>依老師國籍：英文家教時薪行情（官方頁面，新台幣／小時）</caption>
+      <thead><tr><th scope="col">老師國籍</th><th scope="col">時薪區間</th></tr></thead>
+      <tbody>
+        <tr><td>臺灣</td><td>NT$512–854</td></tr>
+        <tr><td>美國</td><td>NT$397–662</td></tr>
+        <tr><td>英國</td><td>NT$474–791</td></tr>
+        <tr><td>加拿大</td><td>NT$319–531</td></tr>
+        <tr><td>澳大利亞</td><td>NT$585–974</td></tr>
+        <tr><td>南非</td><td>NT$327–545</td></tr>
+        <tr><td>菲律賓</td><td>NT$153–254</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：AmazingTalker〈2026 全台英文家教費用、時薪行情全公開〉頁面，2026 年 10 月 12 日查看；國籍只列出頁面上的部分國家。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>教師列表上看到的，才是個別老師的實際標價。我們在 2026 年 10 月 13 日查看英文教師列表第一頁的 20 位老師：體驗課標價從 NT$35 到 NT$456，50 分鐘正式課從 NT$149 到 NT$895——同一個平台上，價差可以到好幾倍。官網首頁的「英文家教」卡片則標示 NT$271／堂，但頁面沒有說明這是最低價、平均價還是某位老師的價格，不適合拿來當預算。</p>
+      <p>價差為什麼這麼大？官方給老師的說明文件提供了線索：新老師要在系統建議的區間內定價，完成 500 堂、1,500 堂課或驗證學歷後，才能設定更高的價格；平台也建議新老師一開始把 25 分鐘課定在 1–2 美元、50 分鐘課定在 10–15 美元，先累積學生，再逐步調價。所以看到<strong>特別便宜的老師，可能是剛上線、還在累積學生的新老師</strong>——未必教得比較差，但這個價格可能不會維持太久。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">體驗課</span><h2 id="體驗課怎麼收費先準備試兩三位老師">體驗課<em>怎麼收費</em>？先準備試兩、三位老師</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>體驗課約 25 分鐘，每位老師在教師頁上分開標示體驗課的價格，由老師自己決定。它是付費的課程，可以同時向幾位老師購買。我們建議家長一開始就預留試兩、三位老師的預算：體驗課是你在付大錢之前，唯一能看到老師實際上課的機會；從公開的心得來看，不少人是試過幾位，才找到合拍的老師。</p>
+      <p>新用戶有兩種官方優惠可以降低試上的成本：</p>
+      <ul>
+        <li><strong>朋友的邀請連結</strong>：透過邀請連結註冊的新用戶，首次購買的體驗課可打 3 折；註冊後 90 天內有效，不能和其他優惠併用；同時買多堂體驗課時，以單價最低的那一堂打折。</li>
+        <li><strong>註冊優惠</strong>：我們 2026 年 10 月 13 日查看官網的兒童英文老師頁時，頁面上有「註冊送 10 美金折扣」的活動。這類活動會變動，以結帳頁顯示為準。</li>
+      </ul>
+      <p>挑體驗課時，別只看價格。NT$35 和 NT$400 的體驗課，價差可能來自老師的資歷、課程的熱門程度，或新老師的起始定價；但對孩子來說，最重要的是老師會不會教這個年齡。挑選方法見我們的<a href="/amazingtalker-kids-tutor-guide/">兒童美語選師檢查表</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">課程包</span><h2 id="課程包折扣與預約期限買幾堂最划算">課程包折扣與<em>預約期限</em>：買幾堂最划算？</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>正式課可以一堂一堂買，也可以一次買課程包。官方給老師的說明寫明，系統會自動給多堂購買固定折扣；但課程包同時有「預約期限」，堂數越多，期限越長：</p>
+    </div>
+    <table class="compare reveal">
+      <caption>課程包折扣與預約期限（官方說明）</caption>
+      <thead><tr><th scope="col">一次購買</th><th scope="col">系統固定折扣</th><th scope="col">要在多久內排完</th></tr></thead>
+      <tbody>
+        <tr><td>1 堂</td><td>—</td><td>3 個月</td></tr>
+        <tr><td>5 堂</td><td>95 折</td><td>3 個月</td></tr>
+        <tr><td>10 堂</td><td>9 折</td><td>3 個月</td></tr>
+        <tr><td>20 堂</td><td>85 折</td><td>6 個月</td></tr>
+        <tr><td>21–30 堂</td><td>以頁面顯示為準</td><td>12 個月</td></tr>
+        <tr><td>31 堂以上</td><td>以頁面顯示為準</td><td>24 個月</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：AmazingTalker 官方幫助中心〈如何設定我的課程價錢〉〈如何計算您的教學實領收入？〉〈已購買的課程有期限嗎?〉，2026 年 10 月查核。「排完」指在期限內完成預約，上課日期可以晚於到期日；教師頁則寫「購買超過 5 堂有額外折扣」。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>怎麼選？把折扣和風險放在一起看。85 折很誘人，但 20 堂買下去，如果上到一半想換老師，已上的堂數會用原價重算，折扣等於被收回。我們的建議是<strong>先買 5 堂，確定合拍再買 10 堂</strong>；20 堂以上，留給已經上了一兩個月、時段也穩定的老師。</p>
+      <p>除了標準課程包，老師也可以在聊天室傳送客製化的課程方案，或開設主題式小班課（每位學生付同樣的單價，老師可以設定早鳥折扣）。這些方案的價格一樣由老師決定，以頁面顯示為準。另外，平台曾推出訂閱方案，官方說明目前已暫停，不再接受新的訂閱。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">月費試算</span><h2 id="monthly">一個月要花多少？<em>三種頻率</em>試算</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>下表用官方頁面的兒童美語時薪行情（NT$329–548）來試算，每月以 4 週計、每堂以 50 分鐘計。這只是試算，不是任何老師的報價；把你看中的老師的實際標價代進去，就能算出自己的數字。</p>
+    </div>
+    <table class="compare reveal">
+      <caption>兒童美語一個月費用試算（新台幣，依官方行情區間）</caption>
+      <thead><tr><th scope="col">購買方式</th><th scope="col">每週 1 堂（月 4 堂）</th><th scope="col">每週 2 堂（月 8 堂）</th><th scope="col">每週 3 堂（月 12 堂）</th></tr></thead>
+      <tbody>
+        <tr><td>單堂原價</td><td>1,316–2,192</td><td>2,632–4,384</td><td>3,948–6,576</td></tr>
+        <tr><td>買 10 堂包（9 折）</td><td>1,184–1,973</td><td>2,369–3,946</td><td>3,553–5,918</td></tr>
+        <tr><td>買 20 堂包（85 折）</td><td>1,119–1,863</td><td>2,237–3,726</td><td>3,356–5,590</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">算法：每月費用 ≈ 每堂價格 × 每週堂數 × 4 × 課程包折扣（9 折＝0.9、85 折＝0.85），四捨五入到元。尚未計入體驗課費用與可能的刷卡手續費。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>兩個常被漏算的地方：<strong>第一，25 分鐘課未必是半價。</strong>低年級孩子常上 25 分鐘的課，但官方行情是以小時計，25 分鐘課的價格由老師另外定，請直接看老師頁面。<strong>第二，前兩、三週的體驗課也是成本。</strong>試三位老師的體驗課，加上第一包正式課，第一個月要多算進這筆費用。</p>
+      <p>想查你看中的老師實際要花多少，可以照這個順序：</p>
+      <ol>
+        <li>到 AmazingTalker 的英文教師列表，在「學習需求」選「兒童美語 (4-11)」或「幼兒英文 (3-5)」。</li>
+        <li>用「預算區間」篩選，或把排序改成「低價優先」。</li>
+        <li>在老師卡片上同時看「體驗課」和「50 分鐘」兩個價格。</li>
+        <li>進入教師頁，看有沒有 25 分鐘課，以及課程包的堂數選項。</li>
+        <li>放進購物車，確認折扣後的金額和付款幣別，再決定付款方式。</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">漲價</span><h2 id="raise">老師會漲價嗎？<em>原價續課</em>規則</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>會。官方說明老師可以隨著教學資歷與課程品質提升，逐步調高價格；前面提到的新老師定價建議，也意味著價格往上調並不少見。已經付款的訂單不受影響——服務條款寫明，價格方案變更前已付款的訂單，不適用變更後的價格。</p>
+      <p>為了照顧舊生，平台訂了一條「原價續課」規則（官方幫助中心 2026 年 9 月更新）：</p>
+      <ul>
+        <li><strong>什麼時候啟動</strong>：老師在 30 天內調漲超過 20%，或 90 天內調漲超過 30%。</li>
+        <li><strong>誰符合</strong>：老師調價當下，你在這位老師同一語言的「剩餘堂數」合計 3 堂以下（含 0 堂）。剩餘堂數＝還沒預約的堂數＋已預約、但排在調價 3 天之後的堂數。</li>
+        <li><strong>可以買多少</strong>：用原價續購這位老師的正式課「一次」，最多 20 堂 50 分鐘或 40 堂 25 分鐘。</li>
+        <li><strong>期限</strong>：符合資格的舊生會收到系統通知，購買期限一般是 7 天；如果過去 7 天內上過這位老師的課（含體驗課），期限是 2 天。同一位老師、同一語言，30 天內只會通知一次。</li>
+      </ul>
+      <p>實務上，如果你很喜歡現在的老師，又看到老師開始調價，<strong>留意站內通知、別錯過購買期限</strong>。另外，平台內部以美元計價，台幣是換算後的顯示，所以就算老師沒有調價，同一堂課的台幣標價也可能隨匯率小幅變動。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">付款</span><h2 id="付款方式幣別與手續費">付款方式、幣別與<em>手續費</em></h2></div>
+    <table class="compare reveal">
+      <caption>在台灣購課的付款方式（官方說明）</caption>
+      <thead><tr><th scope="col">付款方式</th><th scope="col">幣別</th><th scope="col">限制與注意</th></tr></thead>
+      <tbody>
+        <tr><td>信用卡一次付清</td><td>官方說明有台幣、港幣兩種寫法</td><td>結帳頁確認幣別；若以港幣收款，發卡銀行可能收國際交易手續費</td></tr>
+        <tr><td>信用卡分期</td><td>台幣</td><td>限台灣的銀行發行的信用卡；實付超過 150 美元可分 3 期，超過 450 美元可分 3 或 6 期</td></tr>
+        <tr><td>ATM 轉帳、超商繳費</td><td>台幣</td><td>部分付款方式有金額或堂數限制</td></tr>
+        <tr><td>LINE Pay</td><td>台幣</td><td>單次購買 30 堂以下才能使用</td></tr>
+        <tr><td>Aftee 先享後付</td><td>台幣</td><td>依結帳頁顯示的條件</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px;color:var(--muted)">資料來源：AmazingTalker 官方幫助中心〈我是用哪種貨幣向 AmazingTalker 付款？〉〈我可以如何付款購買課堂？〉〈如何購買課程？〉〈信用卡分期付款〉與服務條款第 7 條，2026 年 10 月查核。其中一篇寫在台灣以台灣信用卡一次付清是台幣付款，另一篇寫信用卡一次付清以港幣收款（母公司在香港）。</p>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>常有人搜尋「AmazingTalker 抽成」，想知道平台到底收多少。依官方給老師的收入說明，平台會從老師的課程收入中扣掉兩筆：一是 8% 的固定費用（各地稅金 5%、金流手續費 3%）；二是平台服務費——2026 年 5 月 12 日以後註冊的老師採「完課制」，基本費率 30%，當月每完成 6 小時課減 1%，滿 180 小時降到 0%。官方文件沒有另外列出向學生收取的平台服務費，學生要付的金額以付款頁顯示為準。這套費率也解釋了為什麼老師會在意排課量和定價。</p>
+      <p>在台灣付款後，平台會開立電子發票並存入會員載具；需要統一編號的，可以在結帳時填寫。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">優惠</span><h2 id="AmazingTalker-優惠怎麼拿官方活動整理">AmazingTalker 優惠怎麼拿？<em>官方活動</em>整理</h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>以下是官方幫助中心目前寫明的優惠方式（活動條件會變動，以平台公告為準）：</p>
+      <ul>
+        <li><strong>邀請好友</strong>：新用戶透過朋友的邀請連結註冊，首次購買的體驗課享 3 折（90 天內有效）。邀請人則要等好友上完首堂體驗課、買下至少 5 堂 50 分鐘或 10 堂 25 分鐘的課程包，並把課程包裡的課全部預約完（35 天內完成），才會得到 60 美元的課程金；課程金以 AT 幣發放，不能提領或轉讓。</li>
+        <li><strong>學伴計畫</strong>：綁定成為別人的「學伴」，可以領一張 20 美元、沒有最低消費、7 天內有效的優惠券；之後上的課符合金額門檻，還能累積完課獎勵。</li>
+        <li><strong>優惠券規則</strong>：每次結帳只能用一張，一次性使用，各自有效期限；退課退成 AT 幣時，用掉的優惠券不會退回。</li>
+        <li><strong>老師自己的優惠</strong>：老師可以在聊天室發優惠券或客製化方案。官方也訓練老師在體驗課後引導購課或使用優惠券，所以體驗課後收到優惠並不意外。</li>
+      </ul>
+      <p>用優惠之前先算一件事：<strong>優惠券的門檻，可能讓你一次買得比需要的多。</strong>PTT 上有使用者在 2022 年分享，體驗課後收到的限時優惠券有最低消費，常常要買到 10 堂甚至 20 堂才能用（<a href="https://www.ptt.cc/bbs/NIHONGO/M.1667022390.A.D03.html" target="_blank" rel="noopener nofollow">PTT NIHONGO 板心得</a>）。還不確定老師合不合適的時候，省下的金額可能抵不過之後退課的優惠扣回。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">退課</span><h2 id="退課能拿回多少算給你看">退課能拿回多少？<em>算給你看</em></h2></div>
+    <div class="prose reveal" style="margin-top:18px">
+      <p>官方用這個例子說明「優惠扣回」：一堂原價 10 美元，買 10 堂打 9 折，每堂 9 美元，共付 90 美元。只上 1 堂就退課，上過的那一堂改用原價 10 美元計算，所以退回 90 − 10 ＝ 80 美元的 AT 幣，比單純按 9 美元扣少拿 1 美元。</p>
+      <p>還有三點要知道：<strong>一、退的是 AT 幣</strong>（1 AT 幣＝1 美元，不會過期），只能在平台上用；<strong>二、用掉的優惠券不退</strong>；<strong>三、想退現金有門檻</strong>：如果退現金的原因不在平台，服務條款要求支付訂單總額兩成（20%）作為違約金——以上面的例子來說，是 90 美元的 20%，也就是 18 美元。反過來，如果課程包過期、向老師申請延長卻 7 天沒有回應，系統會開放「優惠價退課」，以你實際付款的價格把剩餘堂數退成 AT 幣，不會扣回折扣。取消、缺席與退課的完整流程，整理在<a href="/amazingtalker-review/#rules">AmazingTalker 評價的規則表</a>。</p>
+    </div>
+
+    <div class="center stack reveal" style="margin-top:48px"><h2 id="按堂計價之外小班課給的是什麼">按堂計價之外，<em>小班課</em>給的是什麼？</h2></div>
+    <div class="prose reveal">
+      <p>AmazingTalker 按堂計價、自己挑老師，彈性很大；但選老師、排課、陪課、換老師的工作，都落在家長身上。如果孩子需要長期、固定的進度，固定老師、固定同學、每週同一時段的小班課，換來的是省下這些心力，以及和同學一起開口的環境。線上與實體怎麼選，整體比較寫在<a href="/online-vs-in-person-english-banqiao/">線上英文 vs 實體小班的 6 個差別</a>。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">常見問題</span><h2 id="AmazingTalker-價格常見問題">AmazingTalker 價格<em>常見問題</em></h2></div>
+    <div class="faq">
+      <div class="faq-item"><h3 id="AmazingTalker-一堂課多少錢" class="faq-h"><button class="faq-q" aria-expanded="false">AmazingTalker 一堂課多少錢？<span class="pm"></span></button></h3><div class="faq-a"><p>每位老師自訂，沒有統一價格。官方的英文家教費用頁表示，大部分英文家教的時薪約在 NT$250–1,000，兒童美語（4–11 歲）的時薪行情是 NT$329–548。正式課有 25 分鐘與 50 分鐘兩種，實際價格以老師頁面為準。</p></div></div>
+      <div class="faq-item"><h3 id="AmazingTalker-的體驗課要付費嗎多少錢" class="faq-h"><button class="faq-q" aria-expanded="false">AmazingTalker 的體驗課要付費嗎？多少錢？<span class="pm"></span></button></h3><div class="faq-a"><p>要付費。體驗課約 25 分鐘，價格由老師自訂、標示在教師頁；我們 2026 年 10 月查看時，英文教師列表第一頁從 NT$35 到 NT$456 都有。透過邀請連結註冊的新用戶，首次購買的體驗課可享 3 折（註冊後 90 天內有效）。</p></div></div>
+      <div class="faq-item"><h3 id="除了學費還有其他手續費嗎" class="faq-h"><button class="faq-q" aria-expanded="false">除了學費，還有其他手續費嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>官方文件沒有列出向學生另收的平台服務費；平台服務費和 8% 的固定費用，是從老師的收入中扣除。要注意的是刷卡幣別：如果結帳以港幣收款，發卡銀行可能收國際交易手續費；用 ATM、超商、分期或 LINE Pay 則是台幣付款。</p></div></div>
+      <div class="faq-item"><h3 id="老師漲價了已經買的課會跟著變貴嗎" class="faq-h"><button class="faq-q" aria-expanded="false">老師漲價了，已經買的課會跟著變貴嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>不會，已付款的訂單不受價格調整影響。如果老師 30 天內漲超過 20%，或 90 天內漲超過 30%，剩餘堂數在 3 堂以下的舊生，可以在期限內用原價續購一次，最多 20 堂 50 分鐘或 40 堂 25 分鐘。</p></div></div>
+      <div class="faq-item"><h3 id="買-AmazingTalker-課程包比較划算嗎" class="faq-h"><button class="faq-q" aria-expanded="false">買 AmazingTalker 課程包比較划算嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>單價比較低：一次買 5 堂 95 折、10 堂 9 折、20 堂 85 折。但課程包有預約期限（1–10 堂 3 個月、11–20 堂 6 個月），中途退課時已上的堂數會用原價重算。還沒確定老師之前，先買 5 堂比較穩。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AE:ROUTE -->
+<section class="section bg-soft">
+  <div class="wrap">
+    <span class="eyebrow eyebrow-yellow">AmazingTalker 系列</span>
+    <h2 id="算完費用再看規則與選師" style="margin-top:14px">算完費用，<em>再看規則與選師</em></h2>
+    <div class="divider" style="margin:18px 0 22px"></div>
+    <p class="body" style="max-width:720px">價格只是決定的一半。退課、缺席的規則與公開討論，整理在評價篇；如果是幫孩子找老師，兒童美語的選師檢查表會更實用。後兩篇幫你把線上家教和補習班、家教放在一起比較。</p>
+    <div style="margin-top:20px"><a href="/amazingtalker-review/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">AmazingTalker 評價與退課規則</a><a href="/amazingtalker-kids-tutor-guide/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">AmazingTalker 兒童美語老師怎麼挑</a><a href="/kids-online-english-comparison/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">兒童線上英文平台比較</a><a href="/cram-school-vs-tutor-vs-self-study/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">補習班 vs 家教 vs 自學</a></div>
+  </div>
+</section>
+<!-- /AE:ROUTE -->
+<section class="section bg-blue">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <span class="eyebrow eyebrow-green">下一步</span>
+      <h2 id="花錢之前先量好孩子的程度" style="margin-top:14px">花錢之前，<br><em>先量好</em>孩子的程度</h2>
+      <p class="body" style="max-width:560px;margin:16px auto 0">一對一或小班、線上或實體，預算花得值不值得，要看課程有沒有對準孩子現在的程度。歡迎預約一次程度評估；評估結果能幫你判斷，這筆錢該花在哪一種課上。</p>
+      <div class="cta-row">
+        <a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary"><span class="btn-line" data-line-icon></span>加 LINE 預約免費程度評估</a>
+        <a href="/online-vs-in-person-english-banqiao/" class="btn btn-outline">看線上 vs 實體比較</a>
+      </div>
+      <p class="body" style="max-width:560px;margin:22px auto 0;font-size:14px">接著讀：<a href="/amazingtalker-review/">AmazingTalker 評價</a>、<a href="/amazingtalker-kids-tutor-guide/">兒童美語老師怎麼挑</a>、<a href="/free-trial/">試聽與程度評估怎麼進行</a>。</p>
+      <p class="body" style="max-width:560px;margin:10px auto 0;font-size:14px">如果你剛好住板橋：我們的教室在<a href="/banqiao-english-cram-school/">板橋中正路</a>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- AE:BYL start --><div class="page-meta"><div class="wrap"><span>作者：<a href="/certified-american-teacher-banqiao/">Christopher｜埃森美語創辦人</a>（<a href="/certified-american-teacher-banqiao/">關於作者</a>）</span></div></div>
+<!-- AE:BYL end --></main>
+<!-- AE:FOOT start -->
+<footer class="site-footer"><div class="wrap"><div class="foot-grid"><div><div class="foot-logo"><img class="foot-logo-img" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="34" height="34" loading="lazy" decoding="async">American English 埃森美語</div><p class="foot-tag">板橋中正路在地深耕的美籍外師英文補習班。100% 美籍持證教師、每班 12 人小班制。</p><p class="foot-nap">220 新北市板橋區中正路89巷4號1樓<span class="foot-sep">　｜　</span><a href="tel:+886928067772">☎ 0928-067-772</a></p></div><nav class="foot-links" aria-label="頁尾導覽"><div class="foot-col"><p class="foot-h">課程</p><a href="/banqiao-english-cram-school/">板橋英文補習班</a><a href="/courses/">課程總覽</a><a href="/kids-english-banqiao/">兒童美語</a><a href="/junior-high-english-banqiao/">國中英文</a><a href="/free-trial/">預約試聽</a></div><div class="foot-col"><p class="foot-h">學習資源</p><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/english-pronunciation/">英文發音</a><a href="/download/">免費下載</a><a href="/chart-license/">圖表授權</a></div><div class="foot-col"><p class="foot-h">關於</p><a href="/certified-american-teacher-banqiao/">師資介紹</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="/contact/">聯絡與交通</a></div><div class="foot-col"><p class="foot-h">聯絡</p><a href="tel:+886928067772">電話 0928-067-772</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 線上預約</a><a href="https://maps.app.goo.gl/hLChkEqAMKCsMWpm6" target="_blank" rel="noopener">Google 地圖位置</a><a href="https://www.facebook.com/profile.php?id=61576014571186" target="_blank" rel="noopener">Facebook 粉絲專頁</a></div></nav></div><!-- AE:AINOTE --><p class="foot-ai">英文好，用 AI 也更順手 · <a href="https://essenindustries.com/tw/">essenindustries.com</a></p><!-- /AE:AINOTE -->
+<div class="foot-bottom"><span>© 2026 American English 埃森美語</span><span>私立埃森美語文理短期補習班　｜　新北市政府立案 社補教社字第115026號　｜　統一編號 61476523</span><span>220 新北市板橋區中正路89巷4號1樓</span></div><div class="foot-pref"><div google-add-preferred-source-btn data-theme="dark" data-lang="zh-TW"></div></div></div></footer>
+<!-- AE:FOOT end -->
+<script src="/assets/app.js?v=b537277d"></script>
+</body>
+</html>
