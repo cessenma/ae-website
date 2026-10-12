@@ -196,11 +196,11 @@
 "hash": "060db52a0fc59039f6b4d57621e6686c"
 },
 "banqiao-cram-school-vs-after-school": {
-"date": "2026-10-12",
+"date": "2026-10-13",
 "hash": "37c71fd378faf1e8e55bffc1d1fa48d7"
 },
 "banqiao-elementary-school-english": {
-"date": "2026-10-12",
+"date": "2026-10-13",
 "hash": "3f6897f7db42e52563626cc807568b96"
 },
 "banqiao-english-cram-school": {
@@ -244,7 +244,7 @@
 "hash": "bf7206d1c9fe70adf15264d46e9d8509"
 },
 "banqiao-station-english-cram-school": {
-"date": "2026-10-12",
+"date": "2026-10-13",
 "hash": "bebdfc32d0d80a3089fb1ea0cd6e2eaa"
 },
 "be-verbs-guide": {
@@ -312,7 +312,7 @@
 "hash": "39ccc8bb95ca80ab23da267a256fa794"
 },
 "cambridge-yle-vs-gept-banqiao": {
-"date": "2026-10-12",
+"date": "2026-10-13",
 "hash": "e8e949ef56bc4d8a338f776b73d95982"
 },
 "cap-english-guide": {
@@ -336,7 +336,7 @@
 "hash": "332eb5c447c857450a9e313891e02813"
 },
 "choose-english-chain-school": {
-"date": "2026-10-12",
+"date": "2026-10-13",
 "hash": "f04d3cddd49a39eaf988baa5853ea848"
 },
 "christmas-english": {
@@ -688,12 +688,12 @@
 "hash": "71f2e8aacae7de40461c5860c91f3d56"
 },
 "fuzhong-english-cram-school": {
-"date": "2026-10-12",
+"date": "2026-10-13",
 "hash": "4a0d67c59317f9390deed767a7a5977e"
 },
 "gept": {
 "date": "2026-10-11",
-"hash": "d2164377e2cc46e0a102e6cb6d52ab89"
+"hash": "f21e57f368e8e882806a57d4ccd0c176"
 },
 "gept-elementary-guide": {
 "date": "2026-10-01",
@@ -717,7 +717,7 @@
 },
 "gept-elementary-practice": {
 "date": "2026-10-11",
-"hash": "b4e4476a4c626264c17a35596597ced3"
+"hash": "f5ab7262518d35f19485b840eeeae794"
 },
 "gept-elementary-reading-practice-part1": {
 "date": "2026-10-11",
@@ -765,7 +765,7 @@
 },
 "gept-high-intermediate-practice": {
 "date": "2026-10-11",
-"hash": "99f03c91d7628acbda6c65ea08532191"
+"hash": "c4fc8ae94f5c104095b029b2a9acf39c"
 },
 "gept-high-intermediate-reading-practice-part1": {
 "date": "2026-10-11",
@@ -813,7 +813,7 @@
 },
 "gept-intermediate-practice": {
 "date": "2026-10-11",
-"hash": "a0d0288d32f15588111002fba52e6891"
+"hash": "278f9d153ac7012f977b42c4465050b4"
 },
 "gept-intermediate-reading-practice-part1": {
 "date": "2026-10-11",
@@ -861,7 +861,7 @@
 },
 "gept-kids-practice": {
 "date": "2026-10-11",
-"hash": "ca1f49d12b680ca234c9dc6ebd701b80"
+"hash": "6fa5ec96576b0ac246951b9ebd26386e"
 },
 "gept-kids-rw-practice-part1": {
 "date": "2026-10-11",
@@ -900,7 +900,7 @@
 "hash": "9d972dc2ebf8b6e1b17ab221dbc62f99"
 },
 "guoguang-elementary-english": {
-"date": "2026-10-12",
+"date": "2026-10-13",
 "hash": "26b6d917308f8435fe5804ee50e4d114"
 },
 "haishan-elementary-english": {
@@ -924,7 +924,7 @@
 "hash": "233ef82472525e2599c1ce1912bfa17a"
 },
 "how-to-choose-banqiao-english-cram-school": {
-"date": "2026-10-12",
+"date": "2026-10-13",
 "hash": "878ed9d49e370516dbeb34b8d61bb0e4"
 },
 "how-to-verify-foreign-teacher-credentials": {
@@ -936,7 +936,7 @@
 "hash": "e9977826375507528638b2409a33760a"
 },
 "index": {
-"date": "2026-10-12",
+"date": "2026-10-13",
 "hash": "aed689f67088dfa0eba5bd33fb33ad22"
 },
 "irregular-verbs-list": {
@@ -948,7 +948,7 @@
 "hash": "1c724a05e057a3ec9e4d6cc5b7ba2ddb"
 },
 "jiangzicui-english-cram-school": {
-"date": "2026-10-12",
+"date": "2026-10-13",
 "hash": "7e429a231621076c8791146455c46535"
 },
 "jobs-english": {
@@ -1036,7 +1036,7 @@
 "hash": "5cc2960a84ac79dfc86fc93b0fb27b8a"
 },
 "kids-english-cram-school-guide": {
-"date": "2026-10-12",
+"date": "2026-10-13",
 "hash": "453e25b486af8592605440bb1e3278cd"
 },
 "kids-english-exams-guide": {
@@ -1284,7 +1284,7 @@
 "hash": "5b0976a2c1e34ed5926e2212842e152d"
 },
 "real-vs-fake-english-immersion-banqiao": {
-"date": "2026-10-12",
+"date": "2026-10-13",
 "hash": "ab16be59ab0f8ee7ee9ad4348eb26713"
 },
 "shide-style-exam-guide": {
@@ -1420,7 +1420,7 @@
 "hash": "57c91992ff0504255e9e51c2faec1f11"
 },
 "xinpu-english-cram-school": {
-"date": "2026-10-12",
+"date": "2026-10-13",
 "hash": "05a40e818a9beedd2d14fd2fdd46b918"
 },
 "xinpu-junior-high-english": {

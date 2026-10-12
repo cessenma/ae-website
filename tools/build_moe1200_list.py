@@ -30,6 +30,10 @@ PAGE = os.path.join(SITE, "moe-1200-words-guide", "index.html")
 DL = os.path.join(SITE, "assets", "downloads")
 TODAY = datetime.date.today().isoformat()
 YEAR = TODAY[:4]
+# The day the list was last checked line by line against 108 課綱附錄五・表一. Shown on the page
+# (字表核對：…) and in the Excel file. Change it only after re-checking: a rebuild is not a check,
+# and stamping today on every run told parents it had been re-verified when it had not.
+CHECKED_ON = "2026-09-13"
 
 TITLE = f"教育部 1200 單字表（{YEAR} 官方核對版）：完整字表線上查＋PDF／Excel 免費下載｜埃森美語"
 OG_TITLE = f"教育部 1200 單字表（{YEAR} 官方核對版）：完整字表線上查＋PDF／Excel 免費下載"
@@ -106,7 +110,7 @@ def write_xlsx(rows, themes):
     ws3["A1"] = "教育部《十二年國民基本教育課程綱要》語文領域－英語文 附錄五・表一「基本 1,200 字」"
     ws3["A2"] = "官方以括號歸併變化形（如 be (am, is, are…)），故條目共 1,211 條。中譯為埃森美語自撰。"
     ws3["A3"] = "舊 97 課綱流傳版與本表差異約 ±60 字。整理：埃森美語 americanenglish.com.tw/moe-1200-words-guide/"
-    ws3["A4"] = f"核對日期：{TODAY}"
+    ws3["A4"] = f"核對日期：{CHECKED_ON}"
     ws3.column_dimensions["A"].width = 110
     p = os.path.join(DL, "ae-moe-1200-official.xlsx")
     wb.save(p)
@@ -237,7 +241,7 @@ def patch_page(rows, themes):
     s = sub1(r'(<meta property="og:description" content=")[^"]*(")', lambda m: m.group(1) + e(OG_DESC, quote=True) + m.group(2), s, 0, "og:description")
     s = sub1(r'<h1 class="reveal d1">.*?</h1>', lambda m: f'<h1 class="reveal d1">{H1}</h1>', s, re.S, "h1")
     # visible update line under the author line (idempotent)
-    upd = f'<p class="body reveal d2" id="wl-updated" style="font-size:14px;color:#8a94a3">字表核對：{TODAY}｜逐條對照 108 課綱附錄五・表一，共 {len(rows):,} 條</p>'
+    upd = f'<p class="body reveal d2" id="wl-updated" style="font-size:14px;color:#8a94a3">字表核對：{CHECKED_ON}｜逐條對照 108 課綱附錄五・表一，共 {len(rows):,} 條</p>'
     if 'id="wl-updated"' in s:
         s = sub1(r'<p class="body reveal d2" id="wl-updated"[^>]*>.*?</p>', lambda m: upd, s, re.S, "updated line")
     else:

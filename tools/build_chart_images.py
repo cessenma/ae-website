@@ -16,7 +16,7 @@ Usage:  python3 tools/build_chart_images.py [slug ...]
 import os, re, sys, json, html
 from bs4 import BeautifulSoup
 
-SITE = os.path.expanduser("~/Documents/GitHub/ae-website")
+SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # this checkout, not a fixed path
 OUT  = os.path.join(SITE, "assets/img/charts")
 ORIGIN = "https://americanenglish.com.tw"
 

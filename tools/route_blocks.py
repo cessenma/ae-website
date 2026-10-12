@@ -270,14 +270,15 @@ def block(eyebrow, h2, body, links):
 
 
 def main():
-    missing = []
+    # check every target BEFORE writing anything: a dead link must not reach a page on disk
+    missing = [(page, h) for page, (_, _, _, links) in ROUTES.items() for _, h in links
+               if not os.path.isfile(os.path.join(SITE, h.strip("/"), "index.html"))]
+    if missing:
+        sys.exit("BROKEN route targets (nothing written): " + ", ".join(f"{p}→{h}" for p, h in missing))
     for page, (eyebrow, h2, body, links) in ROUTES.items():
         p = os.path.join(SITE, page, "index.html")
         if not os.path.isfile(p):
             print(f"  no page: {page}"); continue
-        for _, h in links:
-            if not os.path.isfile(os.path.join(SITE, h.strip("/"), "index.html")):
-                missing.append((page, h))
         s = open(p, encoding="utf-8").read()
         blk = block(eyebrow, h2, body, links)
         if "<!-- AE:ROUTE -->" in s:
@@ -292,8 +293,6 @@ def main():
         if s2 != s:
             open(p, "w", encoding="utf-8").write(s2)
         print(f"  {how:8s} /{page}/  → {', '.join(h for _, h in links)}")
-    if missing:
-        sys.exit("BROKEN route targets: " + ", ".join(f"{p}→{h}" for p, h in missing))
 
 
 if __name__ == "__main__":

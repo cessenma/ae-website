@@ -2,7 +2,7 @@
 img alt+size, broken internal links/anchors/assets, og:image. Run: python3 tools/audit_html.py"""
 import os,re,glob,collections,urllib.parse,json
 from bs4 import BeautifulSoup
-os.chdir(os.path.expanduser('~/Documents/GitHub/ae-website'))
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # this checkout, not a fixed path
 ORIGIN='https://americanenglish.com.tw'
 issues=collections.defaultdict(list)
 def bad(p,m): issues[m].append(p)

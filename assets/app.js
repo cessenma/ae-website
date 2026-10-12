@@ -382,6 +382,13 @@
       window.gtag('event', (ct.getAttribute('href')||'').indexOf('tel:')===0 ? 'phone_click' : 'map_click',
         { page_path: location.pathname, cta_position: ct.closest('footer') ? 'footer' : ct.closest('.page-hero,.hero') ? 'hero' : 'body' });
     }
+    // links to the /line/ bridge page (the closing box on ~23 vocabulary pages) are not LINE links,
+    // so they were invisible: count the hop on its own (the bridge page's own tap is the line_tap)
+    var lb = e.target.closest ? e.target.closest('a[href="/line/"]') : null;
+    if(lb && location.pathname !== '/line/' && typeof window.gtag === 'function'){
+      window.gtag('event', 'line_bridge_click', { page_path: location.pathname,
+        cta_position: lb.closest('footer') ? 'footer' : lb.closest('.cta-box,.bg-blue') ? 'closing' : 'body' });
+    }
     var a = e.target.closest ? e.target.closest('a[href*="lin.ee"],a[href*="line.me"]') : null;
     if(a){
       var href = a.getAttribute('href') || '', txt = (a.textContent || '').trim();

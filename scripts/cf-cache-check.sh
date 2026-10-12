@@ -21,6 +21,7 @@ fi
 
 printf '%-42s %10s %10s %9s %s\n' PATH EDGE ORIGIN DELTA STATUS
 stale=0
+failed=0
 
 for p in "${PATHS[@]}"; do
   edge_body=$(curl -sS -A "$UA" --max-time 30 "${ORIGIN}${p}")
@@ -34,7 +35,13 @@ for p in "${PATHS[@]}"; do
   age=$(printf '%s' "$edge_hdr" | grep -i '^age:' | awk '{print $2}')
   cf=$(printf '%s' "$edge_hdr" | grep -i '^cf-cache-status:' | awk '{print $2}')
 
-  if [ "$edge_body" = "$orig_body" ]; then
+  ecode=$(printf '%s' "$edge_hdr" | head -1 | awk '{print $2}')
+  if [ -z "$edge_body" ] || [ -z "$orig_body" ] || [ "${ecode:-000}" != "200" ]; then
+    # an empty body or a non-200 answer (network, DNS, a Cloudflare challenge) proves nothing:
+    # two empty strings used to compare equal and print PASS
+    status="NO ANSWER (http=${ecode:-000})"
+    failed=$((failed + 1))
+  elif [ "$edge_body" = "$orig_body" ]; then
     status="ok (${cf:-?} age=${age:-0})"
   else
     status="STALE  (${cf:-?} age=${age:-?})"
@@ -45,6 +52,10 @@ for p in "${PATHS[@]}"; do
 done
 
 echo
+if [ "$failed" -gt 0 ]; then
+  echo "FAIL: ${failed} of ${#PATHS[@]} path(s) could not be fetched — nothing was compared."
+  exit 2
+fi
 if [ "$stale" -gt 0 ]; then
   echo "FAIL: ${stale} of ${#PATHS[@]} path(s) stale at the edge."
   echo "Purge Cloudflare, then see docs/CACHING.md — a nonzero result after a purge means"

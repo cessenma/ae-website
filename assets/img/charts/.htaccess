@@ -1,0 +1,8 @@
+# Images in this folder are rebuilt in place under the same file name (a corrected chart, a new
+# share card), so browsers keep them a day, not the site-wide year: a fix reaches returning visitors.
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/webp "access plus 1 day"
+ExpiresByType image/png "access plus 1 day"
+ExpiresByType image/jpeg "access plus 1 day"
+</IfModule>

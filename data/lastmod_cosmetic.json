@@ -50,5 +50,12 @@
   "guoguang-elementary-english",
   "kids-english-banqiao"
  ],
+ "2026-10-13": [
+  "gept",
+  "gept-elementary-practice",
+  "gept-high-intermediate-practice",
+  "gept-intermediate-practice",
+  "gept-kids-practice"
+ ],
  "_note": "Days on which the listed pages got wording-only edits: tools/backfill_lastmod.py skips those days' changes when it dates the page."
 }

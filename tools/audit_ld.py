@@ -1,7 +1,7 @@
 """Site-wide JSON-LD check against Google's required/recommended fields (Quiz, FAQ, Breadcrumb, Article,
 App, Course, Product, ImageObject, LocalBusiness). Run: python3 tools/audit_ld.py"""
 import json,re,glob,collections,sys,os
-os.chdir(os.path.expanduser('~/Documents/GitHub/ae-website'))
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # this checkout, not a fixed path
 def walk(o,path=''):
     if isinstance(o,dict):
         yield o,path

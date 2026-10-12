@@ -117,11 +117,12 @@ EVENT_KINDS = [
 DATE_RE = re.compile(r"(?<!\d)(\d{2})(\d{2})(?!\d)")
 
 
-def get(url, binary=False, timeout=45):
+def get(url, binary=False, timeout=45, limit=None):
+    """limit: read only the first N bytes (enough to tell a PDF by its %PDF header)."""
     req = urllib.request.Request(url, headers={"User-Agent": UA,
                                                "Accept-Language": "zh-TW,zh;q=0.9"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        raw = r.read()
+        raw = r.read(limit) if limit else r.read()
     return raw if binary else raw.decode("utf-8", "replace")
 
 
@@ -152,8 +153,13 @@ def find_calendar_pdf(home, extra_page=None):
         if not re.search(r"行事曆|行事歷|校曆", text):
             continue
         score = 0
+        # prefer the semester we are in: 上學期 runs Aug–Jan, 下學期 Feb–Jul (a fixed +10 for 上
+        # made last autumn's calendar outrank the current 下學期 one all spring)
+        first_half = datetime.now(timezone(timedelta(hours=8))).month in (8, 9, 10, 11, 12, 1)
         if re.search(r"\(\s*上\s*\)|上學期|第1學期|第一學期", text):
-            score += 10
+            score += 10 if first_half else 0
+        if re.search(r"\(\s*下\s*\)|下學期|第2學期|第二學期", text):
+            score += 0 if first_half else 10
         yr = re.search(r"(1[0-2]\d)", text)
         if yr:
             score += int(yr.group(1))
@@ -174,7 +180,7 @@ def find_calendar_pdf(home, extra_page=None):
             continue
         for f in _file_links(page, url):
             try:
-                head = get(f, binary=True)[:5]
+                head = get(f, binary=True, limit=5)
             except Exception:
                 continue
             if head.startswith(b"%PDF"):

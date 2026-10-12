@@ -105,12 +105,19 @@ def build(page, chart_key, fname, sub):
 </body></html>"""
     os.makedirs(OUT, exist_ok=True)
     path = os.path.join(OUT, fname)
+    old = open(path, "rb").read() if os.path.exists(path) else None
     from playwright.sync_api import sync_playwright
     with sync_playwright() as pw:
         b = pw.chromium.launch(); pg = b.new_page()
         pg.set_content(doc, wait_until="networkidle"); pg.wait_for_timeout(600)
         pg.pdf(path=path, format="A4", print_background=True)
         b.close()
+    # Chromium stamps the time into every PDF (/CreationDate, /ModDate): when nothing else changed,
+    # keep the old file, so a rerun does not rewrite 23 PDFs (and backfill_lastmod does not re-date them)
+    if old is not None:
+        stamp = lambda x: re.sub(rb"/(CreationDate|ModDate) ?\(D:[^)]*\)", b"", x)
+        if stamp(open(path, "rb").read()) == stamp(old):
+            open(path, "wb").write(old)
     kb = os.path.getsize(path) / 1024
     print(f"  {fname}  {kb:.0f}KB")
     return fname

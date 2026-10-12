@@ -1295,6 +1295,7 @@ def add_to_sitemap(slugs):
 if __name__ == "__main__":
     want = sys.argv[1:] or list(PAGES)
     total_rows = 0
+    done = []          # only pages actually rendered go into the sitemap (a typo must not add a 404 URL)
     for s in want:
         if s not in PAGES:
             print(f"  ?? unknown {s}"); continue
@@ -1309,6 +1310,7 @@ if __name__ == "__main__":
             continue
         r, w = render(s, PAGES[s])
         total_rows += r
+        done.append(s)
         print(f"  /{s}/  {r:4d} rows  {w:5d} words   (pool index {PAGES[s]['index']})")
-    n = add_to_sitemap(want)
-    print(f"{total_rows} table rows across {len(want)} pages | sitemap: {n} new URLs")
+    n = add_to_sitemap(done)
+    print(f"{total_rows} table rows across {len(done)} pages | sitemap: {n} new URLs")
