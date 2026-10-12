@@ -480,7 +480,7 @@ function h(ev){
       cur=d.currency||"TWD",
       tid=String((ev.data&&ev.data.id)||d.identifier||""),
       nm=(d.first_order_item&&d.first_order_item.variant_name)||d.product_name||"exam_pack";
-  try{if(window.fbq)fbq("track","Purchase",{value:val,currency:cur,content_category:"exam_pack",content_name:nm});}catch(e){}
+  try{if(window.fbq)fbq("track","Purchase",{value:val,currency:cur,content_category:"exam_pack",content_name:nm},tid?{eventID:"ls-"+tid}:undefined);}catch(e){}
 }})();</script>
 <!-- /AE:PACKOFFER -->
 
