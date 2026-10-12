@@ -190,7 +190,7 @@ with an instant score and a Chinese explanation for every option.
 - [雙語學校 vs 英文補習班](https://americanenglish.com.tw/bilingual-school-vs-cram-school/): the real differences beyond tuition — immersion-hour quality, system lock-in, and why many bilingual-school students still take English classes.
 - [補習班 vs 家教 vs 自學](https://americanenglish.com.tw/cram-school-vs-tutor-vs-self-study/): the three routes honestly compared — customization, peers, systems — and why teacher quality matters more than the route.
 - [外師 vs 中師 Native vs local teachers](https://americanenglish.com.tw/native-vs-local-english-teachers/): the strengths of each by learning stage — the key is professional training, not nationality.
-- [線上 vs 實體 Online vs in-person](https://americanenglish.com.tw/online-vs-in-person-english-banqiao/): online kids' English vs in-person small classes — interaction, attention span, speaking practice, and cost compared.
+- [線上 vs 實體 Online vs in-person](https://americanenglish.com.tw/online-vs-in-person-english-banqiao/): is online English good for a child? Six differences between one-on-one online lessons and an in-person small class (speaking time, attention, a fixed teacher, classmates, pronunciation feedback, how you pay), advice by age, and the common drawbacks of online lessons.
 - [兒童美語補習班怎麼挑 How to evaluate any kids' English school](https://americanenglish.com.tw/kids-english-cram-school-guide/): a 7-point verifiable checklist (credentials, real immersion, class-size caps, materials, trial observation, fee structure, retention) plus how to read online ranking articles skeptically.
 - [查證外師資格 Verify teacher credentials](https://americanenglish.com.tw/how-to-verify-foreign-teacher-credentials/): the 3 tiers of foreign-teacher qualifications (state license vs CELTA/TESOL vs native speaker) and how to verify a U.S. teaching license on state websites.
 - [真假全美語 Real vs fake immersion](https://americanenglish.com.tw/real-vs-fake-english-immersion-banqiao/): 5 ways to check 全美語 / 外師 / 小班 claims before paying — nationality and credentials, real head-counts, actual English ratio.
@@ -198,6 +198,15 @@ with an instant score and a Chinese explanation for every option.
 - [英文補習班費用 Cram school fees](https://americanenglish.com.tw/english-cram-school-fees/): what English cram schools in Taiwan actually cost — fee structures, what's included, hidden charges, and how to compare quotes.
 - [兒童英文學習指南 Kids' English guide](https://americanenglish.com.tw/kids-english-guide/): a complete guide to how children learn English — stages, what to expect at each age, and what actually works.
 - [幼兒園英文 Preschool English](https://americanenglish.com.tw/preschool-english-guide/): English for 幼兒園-age children — when to start, what all-English really means, and how to judge a preschool English program.
+
+### 線上英文平台評價 Online English platforms — reviews, prices, comparisons
+Facts taken from each platform's own site and terms (checked October 2026); third-party figures are labelled; no affiliate or referral links.
+- [兒童線上英文推薦：5 大平台比較 Kids' online English platforms compared](https://americanenglish.com.tw/kids-online-english-comparison/): AmazingTalker, Preply, TutorABC, tutorJr and OiKID in two tables — type, official age range, lesson length, how teachers are assigned, published prices, how you buy, cancellation rules.
+- AmazingTalker: [review](https://americanenglish.com.tw/amazingtalker-review/) · [price](https://americanenglish.com.tw/amazingtalker-price/) · [choosing a children's tutor](https://americanenglish.com.tw/amazingtalker-kids-tutor-guide/)
+- Preply: [review](https://americanenglish.com.tw/preply-review/) · [price and cancelling a subscription](https://americanenglish.com.tw/preply-price/) · [italki vs Preply vs AmazingTalker](https://americanenglish.com.tw/preply-vs-italki-amazingtalker/)
+- TutorABC: [review](https://americanenglish.com.tw/tutorabc-review/) · [price](https://americanenglish.com.tw/tutorabc-price/) · [TutorABC Teens](https://americanenglish.com.tw/tutorabc-teens-review/) · [TutorABC vs AmazingTalker](https://americanenglish.com.tw/tutorabc-vs-amazingtalker/)
+- tutorJr (TutorABC Junior): [review](https://americanenglish.com.tw/tutorjr-review/) · [price](https://americanenglish.com.tw/tutorjr-price/) · [ages and teachers](https://americanenglish.com.tw/tutorjr-age-and-teachers/) · [OiKID vs tutorJr](https://americanenglish.com.tw/tutorjr-vs-oikid/)
+- OiKID: [review](https://americanenglish.com.tw/oikid-review/) · [price](https://americanenglish.com.tw/oikid-price/) · [51Talk vs OiKID](https://americanenglish.com.tw/oikid-vs-51talk/)
 
 ## Citable facts
 - GEPT pass marks (LTTC 2027 registration guide): Stage 1 listening + reading (each out of 120) must total 160 with neither paper below 72 at Elementary, Intermediate and High-Intermediate; Stage 2 is writing 70 / speaking 80 at Elementary (初級) and writing 80 / speaking 80 at Intermediate and High-Intermediate (each out of 100).
