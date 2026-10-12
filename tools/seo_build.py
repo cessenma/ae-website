@@ -1083,10 +1083,16 @@ def add_toc(html):
 # Seasonal strip (2026-10-11). The festival pages earn their traffic in the weeks before the
 # day (Mid-Autumn: 110k impressions in one month), but the busiest reference pages did not link
 # to them. In each window below, the pages in SEASON_PAGES carry one strip pointing at the
-# coming festival, placed after their main table. It is chosen by the BUILD date: rebuild at
-# least once inside each window (the windows are listed here, so the next switch is visible).
-# Outside every window the strip is removed. An injected block: it never moves lastmod.
+# coming festival, placed after their main table. The build writes the current window's strip AND
+# the next five (about a year ahead), each tagged with its dates; a tiny script shows only the one whose window contains
+# today in Taiwan time. So the strip changes on the right day even when nobody builds (CI never runs
+# this script) and never announces a festival that has passed. Without JavaScript the strip that was
+# current at build time shows. An injected block: it never moves lastmod.
 SEASON_START, SEASON_END = "<!-- AE:SEASON -->", "<!-- /AE:SEASON -->"
+# shows only the strip whose window contains today's Taiwan date (UTC+8)
+SEASON_JS = ('<script>(function(){var d=new Date(Date.now()+288e5).toISOString().slice(0,10);'
+             'document.querySelectorAll(".season-strip[data-from]").forEach(function(a){'
+             'a.parentNode.style.display=(a.dataset.from<=d&&d<=a.dataset.to)?"":"none";});})();</script>')
 SEASONS = [   # (first day, last day, page, icon, headline, line) — Taiwan dates, festival dates checked
     ("2026-10-01", "2026-10-31", "halloween-english", "🎃", "萬聖節（10/31）快到了", "萬聖節英文怎麼說？祝福語、單字、課堂遊戲一次學會"),
     ("2026-11-01", "2026-12-25", "christmas-english", "🎄", "聖誕節（12/25）快到了", "聖誕快樂英文祝福 20 句、50 個單字、卡片範例"),
@@ -1141,10 +1147,11 @@ GEPT_DATE_PAGES = GEPT_HUBS | {"gept-results-lookup", "gept-kids-guide", "gept-k
     "gept-elementary-practice", "gept-elementary-speaking-writing", "gept-elementary-vocabulary",
     "gept-intermediate-guide", "gept-intermediate-practice", "gept-high-intermediate-practice"}
 GEPT_SRC = "https://www.gept.org.tw/GEPT1/gepttestdate.aspx"
-# removes rows (and then an emptied column) whose last day has passed in Taiwan time
+# removes rows (then an emptied column, then an emptied box) whose last day has passed in Taiwan time
 GEPT_JS = ('<script>(function(){var n=new Date();document.querySelectorAll(".gept-dates [data-gd-end]").forEach(function(r){'
            'if(new Date(r.getAttribute("data-gd-end")+"T23:59:59+08:00")<n)r.remove();});'
-           'document.querySelectorAll(".gept-dates ul").forEach(function(u){if(!u.children.length)u.parentNode.remove();});})();</script>')
+           'document.querySelectorAll(".gept-dates ul").forEach(function(u){if(!u.children.length)u.parentNode.remove();});'
+           'document.querySelectorAll(".gept-dates").forEach(function(b){if(!b.querySelector("li"))b.remove();});})();</script>')
 
 
 def gept_dates(html, rel, today=None):
@@ -1243,24 +1250,28 @@ def assess_card(html, rel):
 
 
 def season_strip(html, rel, today=None):
-    """Insert (or refresh, or remove) the seasonal strip after the page's main table."""
+    """Insert (or refresh, or remove) the seasonal strips after the page's main table."""
     html = re.sub(r"\n?" + re.escape(SEASON_START) + r".*?" + re.escape(SEASON_END) + r"\n?", "", html, flags=re.S)
     slug = os.path.dirname(rel)
     if slug not in SEASON_PAGES:
         return html
     day = (today or datetime.date.today()).isoformat()
-    cur = next((s for s in SEASONS if s[0] <= day <= s[1] and s[2] != slug), None)
-    if not cur:
+    # the window open today (if any) and the next windows, never the page's own festival
+    upcoming = [s for s in SEASONS if s[1] >= day and s[2] != slug][:6]   # ~a year ahead
+    if not upcoming:
         return html
-    _, _, page, icon, head, line = cur
     hero = re.search(r'<section class="page-hero.*?</section>', html, re.S)
     start = hero.end() if hero else 0
     tbl = html.find("<table", start)
     end = html.find("</section>", tbl if tbl > 0 else html.find("<section", start) + 8)
     if end < 0:
         return html
-    block = (f'\n{SEASON_START}<div class="wrap"><a class="season-strip" href="/{page}/" data-season="{page}">'
-             f'<span class="ss-ico" aria-hidden="true">{icon}</span><span><b>{head}</b>{line} →</span></a></div>{SEASON_END}\n')
+    hide = ' style="display:none"'      # windows that have not opened yet (3.11: no nested quotes)
+    strips = "".join(
+        f'<div class="wrap"{"" if s[0] <= day else hide}><a class="season-strip" href="/{s[2]}/" '
+        f'data-season="{s[2]}" data-from="{s[0]}" data-to="{s[1]}"><span class="ss-ico" aria-hidden="true">{s[3]}</span>'
+        f'<span><b>{s[4]}</b>{s[5]} →</span></a></div>' for s in upcoming)
+    block = f'\n{SEASON_START}{strips}{SEASON_JS}{SEASON_END}\n'
     return html[:end] + block + html[end:]
 
 
