@@ -72,6 +72,15 @@ SPECS.update({
    title="英文數字 1-100 對照表", sub="0 到 100 ・ 英文拼法與中文對照",
    alt="英文數字1到100完整對照表，每個數字的英文拼法與中文對照",
    foot="可儲存列印｜americanenglish.com.tw"),
+ # 2026-10-13 plan (H16): the two pages with Google Images impressions and no chart in the image sitemap
+ "english-tenses-chart-img": dict(page="english-tenses-chart", only=[0],
+   title="英文 12 時態總表", sub="時態 ・ 基本句型 ・ 例句",
+   alt="英文12時態總表：每個時態的基本句型與例句對照",
+   foot="可儲存列印｜americanenglish.com.tw"),
+ "alphabet-worksheet-chart": dict(page="english-alphabet-worksheet", only=[0], width=1700,   # the tips column wraps at 1200
+   title="英文字母書寫位置對照表", sub="26 個字母 ・ 大寫與小寫寫在四線格的哪裡",
+   alt="英文字母書寫位置對照表：26個字母的大寫與小寫在四線格中的位置與寫法提醒",
+   foot="可儲存列印｜americanenglish.com.tw"),
  "months-english-chart": dict(page="months-english", only=[0],   # the page also carries zodiac/holiday/season tables; the chart is the month table
    title="1-12 月份英文對照表", sub="英文 ・ 中文 ・ 縮寫 ・ 天數",
    alt="1到12月份英文對照表，含月份英文、中文、縮寫與每月天數",
@@ -433,6 +442,21 @@ def build(slug, spec):
                 alt=spec["alt"], title=spec["title"], page=spec["page"])
 
 FIG_CSS_HOOK = "chart-fig"
+SMALL_W = 720    # phones get a 720-px lossy copy; the lossless original stays for saving and printing
+
+def small_variant(rec):
+    """/assets/img/charts/<slug>-720.webp from the full chart (rebuilt when the chart is newer).
+    39 of 49 chart pages served the full 1,200–1,500-px lossless file to phones (2026-10-13 plan, H36)."""
+    src = os.path.join(SITE, rec["png"].lstrip("/"))
+    dst = src[:-5] + f"-{SMALL_W}.webp"
+    if rec["w"] <= SMALL_W or not os.path.exists(src):
+        return None
+    if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
+        from PIL import Image
+        with Image.open(src) as im:
+            h = round(im.height * SMALL_W / im.width)
+            im.convert("RGB").resize((SMALL_W, h), Image.LANCZOS).save(dst, "WEBP", quality=82, method=6)
+    return "/" + os.path.relpath(dst, SITE)
 
 def inject(rec):
     """Put the chart on its page inside an AE:CHART block, before the first table,
@@ -450,9 +474,12 @@ def inject(rec):
           "copyrightNotice": "© 2026 American English 埃森美語 — 免費使用，請註明出處並連回 americanenglish.com.tw/chart-license/",
           "creator": {"@type": "Organization", "name": "American English 埃森美語"},
           "license": ORIGIN + "/chart-license/", "acquireLicensePage": ORIGIN + "/chart-license/"}
+    small = small_variant(rec)
+    srcset = (f' srcset="{small} {SMALL_W}w, {rec["png"]} {rec["w"]}w" sizes="(max-width:828px) 100vw, 760px"'
+              if small else "")
     block = (f'{startm}\n'
              f'<figure class="{FIG_CSS_HOOK}">\n'
-             f'  <img src="{rec["png"]}" width="{rec["w"]}" height="{rec["h"]}"\n'
+             f'  <img src="{rec["png"]}" width="{rec["w"]}" height="{rec["h"]}"{srcset}\n'
              f'       alt="{html.escape(rec["alt"], quote=True)}" loading="lazy" decoding="async">\n'
              f'  <figcaption>{html.escape(cap)}</figcaption>\n'
              f'</figure>\n'
@@ -481,6 +508,10 @@ if __name__ == "__main__":
     mf = os.path.join(OUT, "manifest.json")
     if os.path.exists(mf):
         man = json.load(open(mf, encoding="utf-8"))
+    if "--srcset-only" in sys.argv:       # small copies + srcset on every chart, no re-render
+        for r in man.values():
+            inject(r)
+        sys.exit(0)
     for s in want:
         if s not in SPECS:
             print(f"  ?? unknown slug {s}"); continue

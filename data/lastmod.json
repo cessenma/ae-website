@@ -269,7 +269,7 @@
 },
 "body-parts-english": {
 "date": "2026-09-22",
-"hash": "8da765a78e6cd3ce00f9b58feea2c0c4"
+"hash": "3c24f49c7513cad209b9b3fc89dc5fba"
 },
 "cae-c1-advanced-guide": {
 "date": "2026-08-26",
@@ -328,12 +328,12 @@
 "hash": "b736ec33111be19ac98aaf8e2fee5e8d"
 },
 "chart-license": {
-"date": "2026-10-07",
-"hash": "fedb76665bc17f28f3235e9446e6d09f"
+"date": "2026-10-13",
+"hash": "fcc54faf8f0890f75051528ada1c7812"
 },
 "cheer-up-english": {
 "date": "2026-10-01",
-"hash": "8cf3140cb9d50bd42bd6107eca3fd3b1"
+"hash": "a7b2f0faeac0cc0b408a586edf9aa7a7"
 },
 "child-hates-english": {
 "date": "2026-08-07",
@@ -353,7 +353,7 @@
 },
 "colors-english-vocabulary": {
 "date": "2026-09-21",
-"hash": "41b6e7f9d67fe5993df8d360936bdb16"
+"hash": "b0af3e8c6d828b1b60b85510dcd48d76"
 },
 "contact": {
 "date": "2026-10-02",
@@ -365,7 +365,7 @@
 },
 "countries-english": {
 "date": "2026-10-01",
-"hash": "19873b49e03ff3863b25d3ca5d1c5f7f"
+"hash": "ca186256bb3f5876ec6fea1a1f553444"
 },
 "courses": {
 "date": "2026-08-25",
@@ -381,7 +381,7 @@
 },
 "days-of-week-english": {
 "date": "2026-09-22",
-"hash": "22fda2a887d4e22ca49b318119bf6d5d"
+"hash": "e9e3565af410481256fa85eff9cb9ca7"
 },
 "download": {
 "date": "2026-10-08",
@@ -401,15 +401,15 @@
 },
 "english-abbreviations-guide": {
 "date": "2026-09-22",
-"hash": "1ade817a48f7416a9069d2e121f53dd0"
+"hash": "15c4d685a486a18aadc3484c4ab60a0d"
 },
 "english-alphabet-guide": {
 "date": "2026-09-21",
-"hash": "a661f4c3faa7822d3a18eaa85fd6ed18"
+"hash": "d4fbc36dc75c0b60a737df84d1a16b7c"
 },
 "english-alphabet-worksheet": {
-"date": "2026-10-07",
-"hash": "16272baa3a52e48087d07b151aafe494"
+"date": "2026-10-13",
+"hash": "f8343f38b15b3382994c83dbc72df3eb"
 },
 "english-at-home-parents-banqiao": {
 "date": "2026-07-31",
@@ -461,15 +461,15 @@
 },
 "english-names-boys": {
 "date": "2026-10-02",
-"hash": "f0dbd78eb7a51bc468077bf4cf1aeef3"
+"hash": "ca31b22846dc9295832c0b6cb2305a4d"
 },
 "english-names-girls": {
 "date": "2026-09-21",
-"hash": "a0392a18fadd2e232276dc1337a43f41"
+"hash": "87b1bf7bfaf48378969b5d145f69e905"
 },
 "english-numbers-guide": {
 "date": "2026-10-01",
-"hash": "935eb6aff5dd33ce0faf51349fbf3cde"
+"hash": "9e084aea1e1b3dc8c33f3b189fba673a"
 },
 "english-picture-books-guide": {
 "date": "2026-08-07",
@@ -477,7 +477,7 @@
 },
 "english-pronunciation": {
 "date": "2026-10-01",
-"hash": "7140afa7a4d4ad4377c6d6733278cc1b"
+"hash": "ef06e0f40886b89ce77f174596795776"
 },
 "english-pronunciation-standards": {
 "date": "2026-08-21",
@@ -512,8 +512,8 @@
 "hash": "d54208bc69f4b13fd453789e65343ea1"
 },
 "english-tenses-chart": {
-"date": "2026-08-26",
-"hash": "b3832950ee03ca533c9c3e375c4f0283"
+"date": "2026-10-13",
+"hash": "b5e465257b15f23a20f621ddbbef7a30"
 },
 "english-vocabulary-by-topic": {
 "date": "2026-10-08",
@@ -673,7 +673,7 @@
 },
 "food-english": {
 "date": "2026-10-08",
-"hash": "0d2f5c36d8c35dcf698fcb0885b87826"
+"hash": "60cb44a91188289d63624d981fe5ccfb"
 },
 "free-english-resources-kids": {
 "date": "2026-08-26",
@@ -689,7 +689,7 @@
 },
 "fruits-english-vocabulary": {
 "date": "2026-09-21",
-"hash": "71f2e8aacae7de40461c5860c91f3d56"
+"hash": "bacc013aa01e76b71c84d44ec3b8d1d6"
 },
 "fuzhong-english-cram-school": {
 "date": "2026-10-13",
@@ -921,7 +921,7 @@
 },
 "happy-birthday-english": {
 "date": "2026-09-21",
-"hash": "5a3b926d7356942519f10c1d412ff654"
+"hash": "8f86397db284555afeafa8cb3cbb3e04"
 },
 "how-american-kids-learn-reading": {
 "date": "2026-08-07",
@@ -957,7 +957,7 @@
 },
 "jobs-english": {
 "date": "2026-10-01",
-"hash": "1159188fa32d8b137951b668a4c3762c"
+"hash": "9555ad2ca31e6d5e2a23934ee4a1d206"
 },
 "juguang-elementary-english": {
 "date": "2026-08-07",
@@ -1085,7 +1085,7 @@
 },
 "mid-autumn-festival-english": {
 "date": "2026-10-11",
-"hash": "d411f58ee598ef1dd588287bd109d5c0"
+"hash": "565f352b0b815d9ba1f41c2f7491c7fc"
 },
 "moe-1200-words-guide": {
 "date": "2026-10-02",
@@ -1097,7 +1097,7 @@
 },
 "months-english": {
 "date": "2026-10-08",
-"hash": "f9d30f07cab9d7e7b602c1272c9d8c02"
+"hash": "52737c08b36408d81cde16114c9bc5ab"
 },
 "movers-listening-practice-part1": {
 "date": "2026-10-13",
@@ -1185,7 +1185,7 @@
 },
 "ordinal-numbers-english": {
 "date": "2026-09-21",
-"hash": "afb56c540bbcf15f4b6bded71fc0c138"
+"hash": "c6d2e60d9844bd352bb7a8b2d338d30b"
 },
 "pack-9rvvw6p3nnmls4": {
 "date": "2026-10-13",
@@ -1365,11 +1365,11 @@
 },
 "thank-you-english": {
 "date": "2026-10-01",
-"hash": "2ff3c660785223bddab2e68e2422d014"
+"hash": "82182cfe1dad9fabaa96e0ed17a7795e"
 },
 "time-english": {
 "date": "2026-10-07",
-"hash": "29aa49b32094e379a53b3e91b9d32161"
+"hash": "fdf81eb8e9eddd135db8a67eea98a524"
 },
 "tutorabc-price": {
 "date": "2026-10-13",
@@ -1409,7 +1409,7 @@
 },
 "weather-english": {
 "date": "2026-10-08",
-"hash": "e4a5540c89c7e2d093d8a85e91ed10d2"
+"hash": "44f2a3eb257f25786be5c1c00e6d08e3"
 },
 "wensheng-elementary-english": {
 "date": "2026-08-07",

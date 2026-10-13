@@ -439,5 +439,23 @@
   "alt": "台灣小吃英文對照表：珍珠奶茶、滷肉飯、蛋餅、臭豆腐等 58 道台灣常見食物的英文說法與中文對照，附唸法",
   "title": "台灣小吃英文對照表",
   "page": "food-english"
+ },
+ "english-tenses-chart-img": {
+  "slug": "english-tenses-chart-img",
+  "png": "/assets/img/charts/english-tenses-chart-img.webp",
+  "w": 1200,
+  "h": 1074,
+  "alt": "英文12時態總表：每個時態的基本句型與例句對照",
+  "title": "英文 12 時態總表",
+  "page": "english-tenses-chart"
+ },
+ "alphabet-worksheet-chart": {
+  "slug": "alphabet-worksheet-chart",
+  "png": "/assets/img/charts/alphabet-worksheet-chart.webp",
+  "w": 1700,
+  "h": 2741,
+  "alt": "英文字母書寫位置對照表：26個字母的大寫與小寫在四線格中的位置與寫法提醒",
+  "title": "英文字母書寫位置對照表",
+  "page": "english-alphabet-worksheet"
  }
 }

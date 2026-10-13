@@ -188,6 +188,34 @@ MAPS      = "https://maps.app.goo.gl/hLChkEqAMKCsMWpm6"
 TEACHER   = "/certified-american-teacher-banqiao/"
 ORG_ID    = ORIGIN + "/#organization"
 CREATOR   = {"@type": "Organization", "name": "埃森美語 American English", "url": ORIGIN + "/"}   # ImageObject.creator, inline
+LICENSE_URL = ORIGIN + "/chart-license/"
+_OWN_IMG = re.compile(re.escape(ORIGIN) + r"/assets/img/(?:charts|share)/")
+
+def own_image(obj):
+    """Licence fields on the school's own images (charts, share cards) so Google can show the
+    "Licensable" badge; chart images from build_chart_images.py already had them. Never on the
+    blog photos — many are Pexels pictures, not the school's to license. (2026-10-13 plan, H12)"""
+    if isinstance(obj, dict) and "ImageObject" in _types(obj) and "license" not in obj and \
+            _OWN_IMG.match(str(obj.get("contentUrl") or obj.get("url") or "")):
+        obj.update({"license": LICENSE_URL, "acquireLicensePage": LICENSE_URL,
+                    "creditText": obj.get("creditText") or "埃森美語 American English", "creator": dict(CREATOR)})
+        return True
+    return False
+
+_IMG_DIMS = {}
+def image_dims(url):
+    """(width, height) of a local image, read from the file (cached per build)."""
+    if not url.startswith(ORIGIN + "/"):
+        return None
+    if url not in _IMG_DIMS:
+        f = os.path.join(SITE, url[len(ORIGIN) + 1:].split("?")[0])
+        try:
+            from PIL import Image
+            with Image.open(f) as im:
+                _IMG_DIMS[url] = im.size
+        except Exception:
+            _IMG_DIMS[url] = None
+    return _IMG_DIMS[url]
 PERSON_ID = ORIGIN + "/#christopher"
 OG_DEFAULT = "/assets/img/og-default.jpg"
 BYLINE_LINK = f'<a class="byl" href="{TEACHER}">Christopher</a>'      # earlier form, still undone on read
@@ -604,7 +632,7 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified, h
     author = dict(PERSON_REF) if has_byline else dict(ORG_REF)
     def refs(v):
         """Swap an inline copy of the school ({"@type":"Organization","name":…}) for a reference."""
-        ch = False
+        ch = own_image(v)
         if isinstance(v, dict):
             for k, x in list(v.items()):
                 if k == "creator" and isinstance(x, dict) and (x.get("@id") == ORG_ID or (
@@ -742,6 +770,7 @@ def normalize_ld(html, rel, canon, headline, desc, image, published, modified, h
                 pi = node.get("primaryImageOfPage")
                 if isinstance(pi, str) or (pi is None and image and "image" not in node):
                     node["primaryImageOfPage"] = {"@type": "ImageObject", "url": pi or image}; changed = True
+                    own_image(node["primaryImageOfPage"])
                 # the page's own share picture, not the brand card it had before it got one
                 # (a hub converted from Article leaves the Article branch, which did this swap)
                 pi = node.get("primaryImageOfPage")
@@ -1556,6 +1585,11 @@ def process_page(path, css_ver="", crit=""):
     seo.append(ICON_NEW)
     if not own_og:
         seo.append(f'<meta property="og:image" content="{image}">')
+    # width/height let Facebook/LINE draw the preview before fetching the picture; 166 pages had none
+    dims = image_dims(image)
+    if dims and 'property="og:image:width"' not in html and rel != "404.html":
+        seo.append(f'<meta property="og:image:width" content="{dims[0]}">')
+        seo.append(f'<meta property="og:image:height" content="{dims[1]}">')
     for prop, val in (("og:url", canon), ("og:locale", "zh_TW"), ("og:site_name", "American English 埃森美語"),
                       ("og:image:alt", headline[:110])):
         if rel != "404.html" and not rel.startswith("pack-") and val and f'property="{prop}"' not in html:
@@ -1607,6 +1641,7 @@ def process_page(path, css_ver="", crit=""):
                     "datePublished": published, "dateModified": modified,
                     "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}, "isPartOf": {"@id": WEBSITE_ID}}
         node.update(part)
+        own_image(node.get("primaryImageOfPage"))
         seo.append('<script type="application/ld+json">' + jd(node) + "</script>")
     # the home page and the two listings are neither an article nor a FAQ-only page: they had an
     # Organization and a WebSite node but nothing that says what the page itself is
@@ -1618,6 +1653,7 @@ def process_page(path, css_ver="", crit=""):
                 "isPartOf": {"@id": WEBSITE_ID}}
         if fq:
             node["hasPart"] = {"@id": canon + "#faq"}
+        own_image(node.get("primaryImageOfPage"))
         seo.append('<script type="application/ld+json">' + jd(node) + "</script>")
     if rel == TEACHER.strip("/") + "/index.html":
         seo.append('<script type="application/ld+json">' + jd({
