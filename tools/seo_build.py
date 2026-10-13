@@ -1382,6 +1382,35 @@ def assess_card(html, rel):
     return html[:m.end()] + block + html[m.end():]
 
 
+GRES_START, GRES_END = "<!-- AE:GEPTRESULTS -->", "<!-- /AE:GEPTRESULTS -->"
+def gept_results_table(html, rel):
+    """Every GEPT results day from the LTTC schedule in GEPT_DATES, as a table on /gept-results-lookup/
+    (the page ranks for 放榜日期／幾點公布 and listed none). Not an injected block: it is the page's
+    content, so the sitemap date moves when LTTC's dates do. 2026-10-13 plan, B5."""
+    if rel != "gept-results-lookup/index.html":
+        return html
+    html = re.sub(r"\n?" + re.escape(GRES_START) + r".*?" + re.escape(GRES_END) + r"\n?", "\n", html, flags=re.S)
+    rows = sorted((r for r in GEPT_DATES if r[2] == "results" and r[0] >= "2026-10-01"), key=lambda r: r[0])
+    if not rows:
+        return html
+    trs = "".join(f'<tr><td class="nb">{r[3] if r[3].startswith("20") else "2026/" + r[3]}</td>'
+                  f'<td>{_escape(r[4].replace("成績公布", "").strip())}</td></tr>' for r in rows)
+    block = (f'{GRES_START}\n<section class="section bg-soft"><div class="wrap">'
+             f'<div class="center stack reveal"><span class="eyebrow eyebrow-green">成績公布日</span>'
+             f'<h2 id="成績公布時間表">2026–2027 全民英檢<em>成績公布時間表</em></h2></div>'
+             f'<div class="prose reveal" style="margin-top:18px"><div style="overflow-x:auto"><table class="ftable">'
+             f'<thead><tr><th class="nb">公布日期</th><th>哪一場的成績</th></tr></thead><tbody>{trs}</tbody></table></div>'
+             f'<p style="font-size:13.5px;color:var(--muted)">依 LTTC 公布的 2026、2027 年測驗日程整理，公布日以'
+             f' <a href="{GEPT_SRC}" target="_blank" rel="noopener">LTTC 官方測驗日程</a>為準。公布當天幾點可以查，見下方常見問題。</p>'
+             f'</div></div></section>\n{GRES_END}')
+    # after the "three steps" section (the page's first section carries the TOC, so not before it)
+    i = html.find('id="成績單合格證書遺失怎麼辦"')
+    if i < 0:
+        i = html.find("成績單、合格證書，遺失怎麼辦")
+    j = html.rfind("<section", 0, i) if i > 0 else -1
+    return html[:j] + block + "\n" + html[j:] if j > 0 else html
+
+
 READNEXT_START, READNEXT_END = "<!-- AE:READNEXT -->", "<!-- /AE:READNEXT -->"
 # Same-intent next reads, right under the page's first table (2026-10-13 plan, N3). The "what next"
 # blocks sat at 80–98% page depth, where 1–10% of readers arrive; the big lookup pages sent 1–13% of
@@ -1529,6 +1558,7 @@ def process_page(path, css_ver="", crit=""):
     html = re.sub(re.escape(NEXT_START) + r".*?" + re.escape(NEXT_END), "", html, flags=re.S)
     html = ICON_ANY_RE.sub("", html)
     html = h1_unwrap(html)
+    html = gept_results_table(html, rel)     # before the TOC, so its heading is listed on the same build
     html = add_toc(anchor_headings(html))
     html = assess_card(html, rel)
     html = read_next(html, rel)
