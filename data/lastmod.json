@@ -109,7 +109,7 @@
 },
 "assets/downloads/ae-jobs-english-a4.pdf": {
 "date": "2026-10-13",
-"hash": "b84f9ebebd3d66a808f34f4c238b3a42"
+"hash": "e3ea8e866d349f3566c09a19c76eb482"
 },
 "assets/downloads/ae-kk-phonetic-chart-a4.pdf": {
 "date": "2026-10-02",
@@ -166,6 +166,10 @@
 "assets/downloads/ae-valentines-day-english-a4.pdf": {
 "date": "2026-10-13",
 "hash": "125e22cff6a972abfe7a21673a237171"
+},
+"assets/downloads/ae-vowels-consonants-a4.pdf": {
+"date": "2026-10-13",
+"hash": "ea7ec0ed05ad3692aa16ba67c2de8ec6"
 },
 "assets/downloads/ae-weather-english-a4.pdf": {
 "date": "2026-10-13",
@@ -329,7 +333,7 @@
 },
 "chart-license": {
 "date": "2026-10-13",
-"hash": "fcc54faf8f0890f75051528ada1c7812"
+"hash": "bd0d8742524b5a28cbc0bfd14d249508"
 },
 "cheer-up-english": {
 "date": "2026-10-01",
@@ -352,8 +356,8 @@
 "hash": "6947ca07bfdb5b49a7e914c4ed421e46"
 },
 "colors-english-vocabulary": {
-"date": "2026-09-21",
-"hash": "b0af3e8c6d828b1b60b85510dcd48d76"
+"date": "2026-10-13",
+"hash": "41b6e7f9d67fe5993df8d360936bdb16"
 },
 "contact": {
 "date": "2026-10-02",
@@ -520,8 +524,8 @@
 "hash": "51d3c376ac063e1532704b69065e3f9f"
 },
 "english-vowels-consonants": {
-"date": "2026-09-14",
-"hash": "56c74d59238b513e5aaeaf76863da748"
+"date": "2026-10-13",
+"hash": "5dac2b63769f75bfc46f0adb29ea8a4c"
 },
 "english-word-stress-gesture": {
 "date": "2026-08-21",
@@ -688,8 +692,8 @@
 "hash": "d30996b53230ab48fd24496ab1848682"
 },
 "fruits-english-vocabulary": {
-"date": "2026-09-21",
-"hash": "bacc013aa01e76b71c84d44ec3b8d1d6"
+"date": "2026-10-13",
+"hash": "c2a4df1730a18164244c8a49d356ef59"
 },
 "fuzhong-english-cram-school": {
 "date": "2026-10-13",
@@ -956,8 +960,8 @@
 "hash": "7e429a231621076c8791146455c46535"
 },
 "jobs-english": {
-"date": "2026-10-01",
-"hash": "9555ad2ca31e6d5e2a23934ee4a1d206"
+"date": "2026-10-13",
+"hash": "98c6264827f44ce835fcee1c42a79496"
 },
 "juguang-elementary-english": {
 "date": "2026-08-07",

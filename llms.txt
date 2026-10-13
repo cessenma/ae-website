@@ -211,7 +211,7 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 <!-- AE:LLMS-MORE start: written by tools/seo_build.py (pages the curated lists above do not name yet) -->
 ### 更多頁面 More pages
 - [顏色英文62個對照表：深淺說法、拼法差異與形容詞順序（附 PDF）](https://americanenglish.com.tw/colors-english-vocabulary/): 顏色英文對照表（附 A4 閃卡 PDF）：62 個常用顏色與中文對照，分基本色、深淺、紅粉紫、黃橙棕與藍綠五組；並說明 color 與 colour 的拼法差別、light／dark 的用法。
-- [水果英文47種對照表：台灣水果的英文怎麼說（附 PDF）](https://americanenglish.com.tw/fruits-english-vocabulary/): 水果英文對照表（附 A4 閃卡 PDF）：47 種水果與中文對照，特別整理芭樂、蓮霧、釋迦、龍眼、楊桃等台灣水果的正確英文說法；並說明水果的可數與不可數、a 與 an 的選擇。
+- [水果英文101種對照表：台灣水果的英文怎麼說（附 PDF）](https://americanenglish.com.tw/fruits-english-vocabulary/): 水果英文對照表（附 A4 閃卡 PDF）：101 種水果與中文對照，特別整理芭樂、蓮霧、釋迦、龍眼、楊桃等台灣水果的正確英文說法；並說明水果的可數與不可數、a 與 an 的選擇。
 - [in on at 用法全攻略：時間與地點一次分清楚](https://americanenglish.com.tw/in-on-at-prepositions/): in on at 怎麼分？at 是「點」、on 是「面或線」、in 是「空間或範圍」，時間和地點都適用。附時間與地點介係詞對照表、最容易錯的陷阱與 10 題自測。
 - [母音有哪些？子音有哪些？長母音短母音、雙母音完整表](https://americanenglish.com.tw/english-vowels-consonants/): 英文只有 a、e、i、o、u 五個母音字母，但母音「音」超過十個。用 KK 音標整理短母音、長母音、雙母音完整表（含例字），附 magic e 規則與有聲／無聲子音配對表。
 - [be動詞是什麼？現在式過去式變化表＋和一般動詞的差別](https://americanenglish.com.tw/be-verbs-guide/): be動詞是什麼？一張變化表整理 am、is、are（現在式）與 was、were（過去式）的主詞搭配、否定與縮寫，並對照 be動詞和一般動詞的疑問句、否定句規則，附 10 題自測。
@@ -225,7 +225,7 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 - [英文發音完整指南：41 個音、發音規則與台灣學生最常錯的音](https://americanenglish.com.tw/english-pronunciation/): 英文發音完整攻略（附 A4 發音總表 PDF）：母音 17 個、子音 24 個共 41 個音，附例字與嘴型提示；字尾 -s／-ed 的三種唸法、重音規則與連音，以及台灣學生最常錯的音。
 - [身體英文對照表：43 個身體部位、不規則複數與看醫生用語](https://americanenglish.com.tw/body-parts-english/): 身體部位英文對照表（附 A4 列印版 PDF）：43 個部位分頭臉、上半身、下半身與體內四組；說明 tooth／teeth、foot／feet 等不規則複數，以及身體部位前面用 my 還是 the。
 - [國家英文對照表：80國名稱、國籍說法與the的用法](https://americanenglish.com.tw/countries-english/): 國家英文對照表（附 A4 列印版 PDF）：80 個國家的英文名稱、中文與國籍形容詞，依亞洲、歐洲、美洲、非洲中東與大洋洲分組；並說明哪些國名前面要加 the。
-- [職業英文83種對照表：工作英文怎麼說、a與an怎麼選](https://americanenglish.com.tw/jobs-english/): 職業英文對照表（附 A4 列印版 PDF）：83 種常見工作的英文與中文，依學校醫療、公共服務、商業辦公、科技工程、餐飲服務、運輸農漁與藝術媒體七組分類。
+- [職業英文108種對照表：工作英文怎麼說、a與an怎麼選](https://americanenglish.com.tw/jobs-english/): 職業英文對照表（附 A4 列印版 PDF）：108 種常見工作的英文與中文，依學校醫療、公共服務、商業辦公、科技工程、餐飲服務、運輸農漁與藝術媒體七組分類。
 - [KET 題庫｜免費線上模擬試題 14 頁（閱讀與寫作・聽力・口說・單字）附中文解析＋官方樣卷下載](https://americanenglish.com.tw/ket-practice-tests/): 劍橋英檢 KET（A2 Key for Schools）題庫：14 頁免費線上模擬試題（閱讀與寫作・聽力・口說・單字），共 91 題原創題目，依官方題型格式出題、每題中文解析。
 - [PET 題庫｜免費線上模擬試題 14 頁（閱讀・寫作・聽力・口說・單字）附中文解析＋官方樣卷下載](https://americanenglish.com.tw/pet-practice-tests/): 劍橋英檢 PET（B1 Preliminary for Schools）題庫：14 頁免費線上模擬試題（閱讀・寫作・聽力・口說・單字），共 146 題原創題目，依官方題型格式出題、每題中文解析。
 - [FCE 題庫｜免費線上模擬試題 15 頁（閱讀與英語運用・寫作・聽力・口說・單字）附中文解析＋官方樣卷下載](https://americanenglish.com.tw/fce-practice-tests/): 劍橋英檢 FCE（B2 First for Schools）題庫：15 頁免費線上模擬試題（閱讀與英語運用・寫作・聽力・口說・單字），共 176 題原創題目，依官方題型格式出題。

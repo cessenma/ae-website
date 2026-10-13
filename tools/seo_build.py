@@ -923,8 +923,8 @@ H1_WBR = {
     "english-dates-guide": [("11 號、13 日、", "11&nbsp;號、13&nbsp;日、")],      # keep the number with its counter
     "gept": [(" 頁練習全部免費", "&nbsp;頁練習<wbr>全部免費"),                       # 「39｜頁」 and 「免｜費」 split
              ("&nbsp;頁練習全部免費", "&nbsp;頁練習<wbr>全部免費")],                 # (the page keeps the &nbsp; once written)
-    "jobs-english": [("83 種工作的英文說法與", "83&nbsp;種工作的<wbr>英文說法<wbr>與"),       # as generated
-                     ("83&nbsp;種工作的英文說法與", "83&nbsp;種工作的<wbr>英文說法<wbr>與")],  # after a build
+    "jobs-english": [("108 種工作的英文說法與", "108&nbsp;種工作的<wbr>英文說法<wbr>與"),       # as generated
+                     ("108&nbsp;種工作的英文說法與", "108&nbsp;種工作的<wbr>英文說法<wbr>與")],  # after a build
     "linguaskill-guide": [("成績對照與報名指南", "成績對照與<wbr>報名指南")],
     "how-to-choose-banqiao-english-cram-school": [("美籍教師直說<em>", "美籍教師直說<wbr><em>")],   # 「直說你｜不敢問」 split
 }

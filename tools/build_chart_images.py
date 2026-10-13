@@ -93,9 +93,9 @@ SPECS.update({
    title="顏色英文對照表", sub="62 個常用顏色 ・ 依色系分組",
    alt="顏色英文對照表：62個常用顏色的英文與中文對照，依色系分組",
    foot="可儲存列印｜americanenglish.com.tw"),
- "fruits-english-chart": dict(page="fruits-english-vocabulary", cols=2,
-   title="水果英文對照表", sub="47 種水果 ・ 含芭樂、蓮霧、釋迦等台灣水果",
-   alt="水果英文對照表：47種水果的英文與中文，含芭樂蓮霧釋迦等台灣水果說法",
+ "fruits-english-chart": dict(page="fruits-english-vocabulary", cols=3, width=1500,   # 101 fruits: 2 columns ran 3,680 px
+   title="水果英文對照表", sub="101 種水果 ・ 含芭樂、蓮霧、釋迦等台灣水果",
+   alt="水果英文對照表：101種水果的英文與中文，含芭樂蓮霧釋迦等台灣水果說法",
    foot="可儲存列印｜americanenglish.com.tw"),
  "body-parts-english-chart": dict(page="body-parts-english", cols=2,
    title="身體部位英文對照表", sub="43 個部位 ・ 頭臉、上半身、下半身與體內",
@@ -107,8 +107,8 @@ SPECS.update({
    alt="國家英文對照表：80個國家的英文名稱、中文與國籍形容詞對照",
    foot="可儲存列印｜americanenglish.com.tw"),
  "jobs-english-chart": dict(page="jobs-english", cols=3, width=1560,
-   title="職業英文對照表", sub="83 種工作 ・ 依領域分組",
-   alt="職業英文對照表：83種常見工作的英文與中文對照，依領域分組",
+   title="職業英文對照表", sub="108 種工作 ・ 依領域分組",
+   alt="職業英文對照表：108種常見工作的英文與中文對照，依領域分組",
    foot="可儲存列印｜americanenglish.com.tw"),
 
  "english-abbreviations-chart": dict(page="english-abbreviations-guide", cols=3, width=1680,

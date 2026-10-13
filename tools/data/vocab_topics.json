@@ -962,6 +962,50 @@
     [
      "banana",
      "香蕉"
+    ],
+    [
+     "Indian jujube",
+     "棗子（蜜棗）"
+    ],
+    [
+     "sugarcane",
+     "甘蔗"
+    ],
+    [
+     "kumquat",
+     "金桔"
+    ],
+    [
+     "atemoya",
+     "鳳梨釋迦"
+    ],
+    [
+     "wendan pomelo",
+     "文旦"
+    ],
+    [
+     "Irwin mango",
+     "愛文芒果"
+    ],
+    [
+     "murcott",
+     "茂谷柑"
+    ],
+    [
+     "tomato",
+     "番茄"
+    ],
+    [
+     "cherry tomato",
+     "小番茄"
+    ],
+    [
+     "water caltrop",
+     "菱角"
+    ],
+    [
+     "roselle",
+     "洛神花"
     ]
    ]
   ],
@@ -1035,6 +1079,30 @@
     [
      "date",
      "椰棗"
+    ],
+    [
+     "nectarine",
+     "油桃"
+    ],
+    [
+     "Asian pear",
+     "水梨"
+    ],
+    [
+     "cantaloupe",
+     "哈密瓜（洋香瓜）"
+    ],
+    [
+     "olive",
+     "橄欖"
+    ],
+    [
+     "honeydew melon",
+     "白肉哈密瓜"
+    ],
+    [
+     "green apple",
+     "青蘋果"
     ]
    ]
   ],
@@ -1100,6 +1168,169 @@
     [
      "peanut",
      "花生"
+    ]
+   ]
+  ],
+  [
+   "熱帶水果 Tropical fruits",
+   [
+    [
+     "rambutan",
+     "紅毛丹"
+    ],
+    [
+     "mangosteen",
+     "山竹"
+    ],
+    [
+     "durian",
+     "榴槤"
+    ],
+    [
+     "jackfruit",
+     "波羅蜜"
+    ],
+    [
+     "salak",
+     "蛇皮果"
+    ],
+    [
+     "tamarind",
+     "羅望子"
+    ],
+    [
+     "pepino melon",
+     "人參果"
+    ],
+    [
+     "breadfruit",
+     "麵包果"
+    ],
+    [
+     "soursop",
+     "刺果番荔枝"
+    ]
+   ]
+  ],
+  [
+   "更多莓果與柑橘 More berries and citrus",
+   [
+    [
+     "gooseberry",
+     "醋栗"
+    ],
+    [
+     "goji berry",
+     "枸杞"
+    ],
+    [
+     "yuzu",
+     "日本柚子"
+    ],
+    [
+     "blood orange",
+     "血橙"
+    ],
+    [
+     "navel orange",
+     "臍橙"
+    ],
+    [
+     "black currant",
+     "黑醋栗"
+    ],
+    [
+     "red currant",
+     "紅醋栗"
+    ],
+    [
+     "acai berry",
+     "巴西莓"
+    ],
+    [
+     "physalis",
+     "燈籠果"
+    ]
+   ]
+  ],
+  [
+   "果乾與堅果 Dried fruit and nuts",
+   [
+    [
+     "raisin",
+     "葡萄乾"
+    ],
+    [
+     "prune",
+     "黑棗乾"
+    ],
+    [
+     "dried mango",
+     "芒果乾"
+    ],
+    [
+     "dried cranberry",
+     "蔓越莓乾"
+    ],
+    [
+     "cashew",
+     "腰果"
+    ],
+    [
+     "pistachio",
+     "開心果"
+    ],
+    [
+     "hazelnut",
+     "榛果"
+    ],
+    [
+     "macadamia nut",
+     "夏威夷豆"
+    ],
+    [
+     "pecan",
+     "胡桃"
+    ],
+    [
+     "pine nut",
+     "松子"
+    ],
+    [
+     "sunflower seeds",
+     "葵花子"
+    ],
+    [
+     "pumpkin seeds",
+     "南瓜子"
+    ],
+    [
+     "red date",
+     "紅棗"
+    ],
+    [
+     "dried longan",
+     "桂圓（龍眼乾）"
+    ],
+    [
+     "dried persimmon",
+     "柿餅"
+    ],
+    [
+     "candied fruit",
+     "蜜餞"
+    ],
+    [
+     "Brazil nut",
+     "巴西堅果"
+    ],
+    [
+     "lotus seed",
+     "蓮子"
+    ],
+    [
+     "sesame seeds",
+     "芝麻"
     ]
    ]
   ]
@@ -1349,6 +1580,18 @@
     [
      "counselor",
      "諮商師"
+    ],
+    [
+     "kindergarten teacher",
+     "幼教老師"
+    ],
+    [
+     "cram school teacher",
+     "補習班老師"
+    ],
+    [
+     "tutor",
+     "家教"
     ]
    ]
   ],
@@ -1663,6 +1906,104 @@
     [
      "coach",
      "教練"
+    ]
+   ]
+  ],
+  [
+   "服務業 Service jobs",
+   [
+    [
+     "tour guide",
+     "導遊"
+    ],
+    [
+     "real estate agent",
+     "房仲（房屋仲介）"
+    ],
+    [
+     "security guard",
+     "保全"
+    ],
+    [
+     "beautician",
+     "美容師"
+    ],
+    [
+     "makeup artist",
+     "化妝師"
+    ],
+    [
+     "nail technician",
+     "美甲師"
+    ],
+    [
+     "personal trainer",
+     "健身教練"
+    ],
+    [
+     "babysitter",
+     "保母"
+    ],
+    [
+     "caregiver",
+     "照顧服務員（看護）"
+    ],
+    [
+     "bus driver",
+     "公車司機"
+    ]
+   ]
+  ],
+  [
+   "上班族與新興工作 Office and new jobs",
+   [
+    [
+     "software engineer",
+     "軟體工程師"
+    ],
+    [
+     "data analyst",
+     "資料分析師"
+    ],
+    [
+     "marketing specialist",
+     "行銷專員"
+    ],
+    [
+     "project manager",
+     "專案經理"
+    ],
+    [
+     "HR specialist",
+     "人資專員"
+    ],
+    [
+     "customer service representative",
+     "客服人員"
+    ],
+    [
+     "graphic designer",
+     "平面設計師"
+    ],
+    [
+     "YouTuber",
+     "YouTuber"
+    ],
+    [
+     "influencer",
+     "網紅"
+    ],
+    [
+     "streamer",
+     "直播主"
+    ],
+    [
+     "freelancer",
+     "自由工作者"
+    ],
+    [
+     "civil servant",
+     "公務員"
     ]
    ]
   ]

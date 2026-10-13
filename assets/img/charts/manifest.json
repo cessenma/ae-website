@@ -92,9 +92,9 @@
  "fruits-english-chart": {
   "slug": "fruits-english-chart",
   "png": "/assets/img/charts/fruits-english-chart.webp",
-  "w": 1200,
-  "h": 1918,
-  "alt": "水果英文對照表：47種水果的英文與中文，含芭樂蓮霧釋迦等台灣水果說法",
+  "w": 1500,
+  "h": 2347,
+  "alt": "水果英文對照表：101種水果的英文與中文，含芭樂蓮霧釋迦等台灣水果說法",
   "title": "水果英文對照表",
   "page": "fruits-english-vocabulary"
  },
@@ -120,8 +120,8 @@
   "slug": "jobs-english-chart",
   "png": "/assets/img/charts/jobs-english-chart.webp",
   "w": 1560,
-  "h": 2226,
-  "alt": "職業英文對照表：83種常見工作的英文與中文對照，依領域分組",
+  "h": 2822,
+  "alt": "職業英文對照表：108種常見工作的英文與中文對照，依領域分組",
   "title": "職業英文對照表",
   "page": "jobs-english"
  },

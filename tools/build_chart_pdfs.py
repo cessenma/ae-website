@@ -27,12 +27,13 @@ PDFS = {
  "months-english":         ("months-english-chart", "ae-months-english-a4.pdf", "1-12 月英文、縮寫與天數"),
  "days-of-week-english":   ("days-week-english-chart","ae-days-of-week-a4.pdf", "星期英文、縮寫與口語說法"),
  "countries-english":      ("countries-english-chart","ae-countries-english-a4.pdf","80 國國名與國籍形容詞"),
- "jobs-english":           ("jobs-english-chart",   "ae-jobs-english-a4.pdf",   "83 種職業英文對照"),
+ "jobs-english":           ("jobs-english-chart",   "ae-jobs-english-a4.pdf",   "108 種職業英文對照"),
  "body-parts-english":     ("body-parts-english-chart","ae-body-parts-a4.pdf",   "43 個身體部位英文對照"),
  "english-abbreviations-guide":  ("english-abbreviations-chart","ae-english-abbreviations-a4.pdf","74 個常用英文縮寫與全名"),
  "thank-you-english":      ("thank-you-english-chart","ae-thank-you-english-a4.pdf","30 種道謝說法與適用場合"),
  "cheer-up-english":       ("cheer-up-english-chart","ae-cheer-up-english-a4.pdf","21 種鼓勵說法依場合分組"),
  "english-pronunciation":  ("english-vowels-chart", "ae-english-vowels-a4.pdf", "17 個母音・例字與嘴型提示"),
+ "english-vowels-consonants": ("english-vowels-consonants-chart", "ae-vowels-consonants-a4.pdf", "母音、子音、長短母音與雙母音對照"),
  # 2026-09-21: the pages carrying the most impressions at the worst CTR on the site —
  # each already ranked 6–7, each with a chart and no download. GSC says the shapes that
  # convert here are "get a file" (8.99% CTR) and "look up" (7.45%), against 0.77% for
