@@ -1342,7 +1342,7 @@ ASSESS_START, ASSESS_END = "<!-- AE:ASSESS -->", "<!-- /AE:ASSESS -->"
 # the founder's AI guide, mentioned quietly at the bottom of every footer: learning English
 # also makes AI tools easier to use (typing needs no character picking; most AI is trained on English)
 AINOTE_START, AINOTE_END = "<!-- AE:AINOTE -->", "<!-- /AE:AINOTE -->"
-AINOTE_URL = "https://essenindustries.com/tw/"
+AINOTE_URL = "https://essenindustries.com/"
 def ainote(html):
     html = re.sub(re.escape(AINOTE_START) + r".*?" + re.escape(AINOTE_END) + r"\n*", "", html, flags=re.S)
     i = html.find('<div class="foot-bottom">')
