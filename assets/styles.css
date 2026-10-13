@@ -671,7 +671,7 @@ address{font-style:normal}
     -webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
   .pg-toc::-webkit-scrollbar{display:none}
   .pg-toc .lbl,.pg-toc a{flex:none;white-space:nowrap}
-  .pg-toc a{min-height:40px;display:inline-flex;align-items:center;padding:8px 13px}   /* a finger-sized target */
+  .pg-toc a{min-height:44px;display:inline-flex;align-items:center;padding:8px 13px}   /* a finger-sized target */
 }
 
 /* Seasonal strip after the main table (seo_build.season_strip) — points to the coming festival page */

@@ -1133,7 +1133,10 @@ SEASON_PAGES = {"mid-autumn-festival-english", "kk-phonetic-chart", "phonics-rul
                 "english-names-girls", "moe-1200-words-guide", "months-english", "days-of-week-english",
                 "happy-birthday-english", "irregular-verbs-list", "english-tenses-chart", "cool-english-guide",
                 "english-alphabet-guide", "ordinal-numbers-english", "english-dates-guide", "english-numbers-guide",
-                "kk-phonetics-vs-phonics", "animals-english-vocabulary", "english-symbol-names", "thank-you-english"}
+                "kk-phonetics-vs-phonics", "animals-english-vocabulary", "english-symbol-names", "thank-you-english",
+                # the topic-vocabulary pages (2026-10-13 plan, N2): they send festival readers too
+                "colors-english-vocabulary", "body-parts-english", "food-english", "weather-english",
+                "time-english", "jobs-english", "countries-english"}
 
 
 # ---------------------------------------------------------------------------
@@ -1454,6 +1457,10 @@ def process_page(path, css_ver="", crit=""):
             seo.append(f'<meta property="{prop}" content="{html_escape(val)}">')
     if 'name="twitter:card"' not in html:
         seo.append('<meta name="twitter:card" content="summary_large_image">')
+    # Large image previews (Discover cards, big mobile thumbnails) need an explicit opt-in; no page
+    # had one. Pages that carry their own robots meta (noindex: /line/, the pack page) keep theirs.
+    if rel != "404.html" and not re.search(r'<meta[^>]+name="robots"', html):
+        seo.append('<meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">')
     if 'name="twitter:image"' not in html:
         seo.append(f'<meta name="twitter:image" content="{image}">')
     if bc: seo.append(f'<script type="application/ld+json">{jd(bc)}</script>')
@@ -1885,6 +1892,22 @@ def rebuild_sitemap():
         if re.search(r'<meta[^>]+name="robots"[^>]+noindex', t): warn(f"  ::warning:: sitemap lists a noindex page: {loc}")
         c = re.search(r'rel="canonical"[^>]*href="([^"]+)"|href="([^"]+)"[^>]*rel="canonical"', t)
         if c and (c.group(1) or c.group(2)) != loc: warn(f"  ::warning:: sitemap URL is not its own canonical: {loc}")
+    # the other direction: an indexable page that is missing from the sitemap went unnoticed
+    listed = set(re.findall(r"<loc>([^<]+)</loc>", xml))
+    for d, _, fs in os.walk(SITE):
+        if "index.html" not in fs or "/." in d or os.path.basename(d).startswith(("pack-", "assets")):
+            continue
+        rel_i = os.path.relpath(os.path.join(d, "index.html"), SITE)
+        if rel_i in SELF_CONTAINED or rel_i.startswith(("assets/", "tools/", "scripts/", "data/")):
+            continue
+        t = open(os.path.join(d, "index.html"), encoding="utf-8").read()
+        if re.search(r'<meta[^>]+name="robots"[^>]+noindex', t):
+            continue
+        c = re.search(r'rel="canonical"[^>]*href="([^"]+)"|href="([^"]+)"[^>]*rel="canonical"', t)
+        url = (c.group(1) or c.group(2)) if c else ORIGIN + "/" + (os.path.dirname(rel_i) + "/" if os.path.dirname(rel_i) else "")
+        if url in listed or not url.startswith(ORIGIN):
+            continue
+        warn(f"  ::warning:: indexable page missing from the sitemap: {url}")
     open(sm, "w", encoding="utf-8").write(xml)
     save_ledger(ledger); _LEDGER = ledger
     return sum(1 for _ in re.finditer(r"<lastmod>", xml))

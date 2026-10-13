@@ -78,6 +78,23 @@ tr{break-inside:avoid}
   border-top:.6px solid #e8eef7;padding-top:3px;display:flex;justify-content:space-between}
 """
 
+def stamp_meta(path, title, sub):
+    """Title/Author/Subject in the PDF itself: 23 of the A4 downloads had none (Chromium names a PDF
+    after <title>, and the template had no <title>), and an untitled PDF shows in Google as its file
+    name. Metadata only — the page content stream is copied as is."""
+    from pypdf import PdfReader, PdfWriter
+    r = PdfReader(path)
+    w = PdfWriter(clone_from=r)
+    meta = {k: v for k, v in (r.metadata or {}).items()}
+    meta.update({"/Title": f"{title}｜埃森美語", "/Author": "埃森美語 American English",
+                 "/Subject": sub, "/Creator": "americanenglish.com.tw"})
+    w.add_metadata(meta)
+    tmp = path + ".part"
+    with open(tmp, "wb") as fh:
+        w.write(fh)
+    os.replace(tmp, path)
+
+
 def build(page, chart_key, fname, sub):
     cs = bci.SPECS.get(chart_key)
     if not cs:
@@ -96,6 +113,7 @@ def build(page, chart_key, fname, sub):
     logo = "data:image/jpeg;base64," + base64.b64encode(open(lp, "rb").read()).decode()
     doc = f"""<!doctype html><html lang="zh-Hant-TW"><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<title>{html.escape(cs['title'])}｜埃森美語</title>
 <style>{CSS}</style></head><body>
 <div class="head"><div><h1>{html.escape(cs['title'])}</h1><p>{html.escape(sub)}</p></div>
 <div class="br"><img src="{logo}" alt=""><span><b>埃森美語</b>americanenglish.com.tw</span></div></div>
@@ -112,6 +130,7 @@ def build(page, chart_key, fname, sub):
         pg.set_content(doc, wait_until="networkidle"); pg.wait_for_timeout(600)
         pg.pdf(path=path, format="A4", print_background=True)
         b.close()
+    stamp_meta(path, cs["title"], sub)
     # Chromium stamps the time into every PDF (/CreationDate, /ModDate): when nothing else changed,
     # keep the old file, so a rerun does not rewrite 23 PDFs (and backfill_lastmod does not re-date them)
     if old is not None:
@@ -149,6 +168,13 @@ EXISTING = {
 }
 
 if __name__ == "__main__":
+    if "--meta-only" in sys.argv:          # title/author/subject into the existing files, no re-render
+        for page, (ck, fn, sub) in PDFS.items():
+            p = os.path.join(OUT, fn)
+            if os.path.exists(p) and ck in bci.SPECS:
+                stamp_meta(p, bci.SPECS[ck]["title"], sub)
+                print(f"  meta  {fn}")
+        sys.exit(0)
     want = sys.argv[1:] or list(PDFS)
     for page in want:
         if page not in PDFS:
