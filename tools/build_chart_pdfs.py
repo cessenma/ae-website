@@ -33,6 +33,7 @@ PDFS = {
  "thank-you-english":      ("thank-you-english-chart","ae-thank-you-english-a4.pdf","30 種道謝說法與適用場合"),
  "cheer-up-english":       ("cheer-up-english-chart","ae-cheer-up-english-a4.pdf","21 種鼓勵說法依場合分組"),
  "english-pronunciation":  ("english-vowels-chart", "ae-english-vowels-a4.pdf", "17 個母音・例字與嘴型提示"),
+ "english-pronunciation#consonants": ("english-consonants-chart", "ae-english-consonants-a4.pdf", "24 個子音・有聲無聲配對與發音位置"),
  "english-vowels-consonants": ("english-vowels-consonants-chart", "ae-vowels-consonants-a4.pdf", "母音、子音、長短母音與雙母音對照"),
  # 2026-09-21: the pages carrying the most impressions at the worst CTR on the site —
  # each already ranked 6–7, each with a chart and no download. GSC says the shapes that
@@ -147,13 +148,15 @@ MAGNET = """<div class="magnet-box reveal">
   <a class="btn btn-primary" download href="/assets/downloads/{fname}" onclick="window.gtag&amp;&amp;gtag('event','pdf_download',{{file:'{fname}',page_path:location.pathname}})">免費下載 PDF</a>
 </div>"""
 
-def offer(page, title, sub, fname):
+def offer(page, title, sub, fname, chart_key=None):
     fp = os.path.join(SITE, page, "index.html")
     s = open(fp, encoding="utf-8").read()
     if fname in s:
         return "already linked"
     blk = MAGNET.format(title=title, sub=sub, fname=fname)
-    m = re.search(r'([ \t]*)<figure class="chart-fig">', s)
+    # a page with two charts (pronunciation: vowels + consonants) gets each box at its own chart
+    at = s.find(f"<!-- AE:CHART {chart_key} start -->") if chart_key else -1
+    m = re.compile(r'([ \t]*)<figure class="chart-fig">').search(s, max(at, 0))
     if not m:
         return "no chart anchor"
     ind = m.group(1)
@@ -182,8 +185,8 @@ if __name__ == "__main__":
             print(f"  ?? unknown {page}"); continue
         ck, fn, sub = PDFS[page]
         f = build(page, ck, fn, sub)
-        if f:
-            print(f"     -> /{page}/ {offer(page, bci.SPECS[ck]['title'], sub, fn)}")
+        if f:      # "page#suffix" keys: a second PDF on the same page
+            print(f"     -> /{page}/ {offer(page.split('#')[0], bci.SPECS[ck]['title'], sub, fn, ck)}")
     for page, (title, sub, fn) in EXISTING.items():
         if not os.path.exists(os.path.join(OUT, fn)):
             print(f"  !! missing {fn}"); continue

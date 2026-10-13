@@ -71,6 +71,10 @@
 "date": "2026-10-07",
 "hash": "057a210a2c3453ff99311d805e4e4f5c"
 },
+"assets/downloads/ae-english-consonants-a4.pdf": {
+"date": "2026-10-13",
+"hash": "5f1df5b7697833aaf6f52d00d7c50be0"
+},
 "assets/downloads/ae-english-names-boys-a4.pdf": {
 "date": "2026-10-13",
 "hash": "0770e813984bdc7bd2625a41286a5a54"
@@ -480,8 +484,8 @@
 "hash": "19ce78fb557f29603591b0b7215a4282"
 },
 "english-pronunciation": {
-"date": "2026-10-01",
-"hash": "ef06e0f40886b89ce77f174596795776"
+"date": "2026-10-13",
+"hash": "7a91696c53a9cc68968dba7522a81a99"
 },
 "english-pronunciation-standards": {
 "date": "2026-08-21",
