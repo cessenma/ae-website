@@ -927,6 +927,30 @@ def _phrase_safe(part):
     lines.append(cur)
     return min(lines) >= 8
 
+# A two-line headline is "<span>A</span><br><span>B</span>": when Google shows the H1 instead of the
+# title it reads "AB" as one run-on string (seen live: 「生日快樂英文20 句祝福＋卡片寫法」). Line A gets a
+# full-width colon when it is a complete phrase, otherwise a plain space (invisible at the line end).
+# Not the homepage (owner rule); the CTR-test pages wait until their 11-05 readout is done.
+H1_SEP_SKIP = {""}
+H1_FROZEN = {"happy-birthday-english", "english-names-boys", "english-names-girls", "english-alphabet-guide",
+             "kk-phonetic-chart", "animals-english-vocabulary", "ordinal-numbers-english", "days-of-week-english",
+             "months-english", "english-dates-guide", "english-numbers-guide", "cool-english-guide"}
+H1_FROZEN_UNTIL = datetime.date(2026, 11, 6)
+_H1_END = set("：:？?！!、，,。；;）)」』　 ")
+_H1_START = set("：:？?！!、，,。；;＋+—–-・｜|（(「『")
+_H1_GLUE = set("的才就也還卻但而與和及在把被對")          # line B continues line A's sentence
+
+def h1_separator(a, b):
+    ta = _unescape(re.sub(r"<[^>]+>", "", a)).rstrip("\n\t")
+    tb = _unescape(re.sub(r"<[^>]+>", "", b)).strip()
+    if not ta.strip() or not tb or ta[-1] in _H1_END or tb[0] in _H1_START:
+        return a                                   # already separated (or nothing to separate)
+    whole = ta.strip()
+    if "：" in whole or ":" in whole or whole[-1] in _H1_GLUE or tb[0] in _H1_GLUE:
+        return a.rstrip() + " "
+    return a.rstrip() + "："
+
+
 def h1_segments(html, page=""):
     """A title written as two lines (<br>) is not balanced by the browser, so a phone left
     one or two characters alone on a line on 48 pages. Each part gets its own inline-block
@@ -943,6 +967,8 @@ def h1_segments(html, page=""):
         return html          # a tag runs across the break: leave it alone
     if len(parts) < 2 and not _phrase_safe(parts[0]):
         return html[:m.start(2)] + body + html[m.end(2):]     # one part: the browser balances it natively
+    if len(parts) == 2 and page not in H1_SEP_SKIP and not (page in H1_FROZEN and tw_today() < H1_FROZEN_UNTIL):
+        parts[0] = h1_separator(parts[0], parts[1])
     inner = "<br>".join(f'<span class="h1s{" kp" if _phrase_safe(p) else ""}">{p}</span>' for p in parts)
     return html[:m.start(2)] + inner + html[m.end(2):]
 
@@ -1224,7 +1250,8 @@ GEPT_LEVEL = [("gept-kids", "kids"), ("gept-elementary", "e"), ("gept-intermedia
 GEPT_HUBS = {"gept", "gept-practice-tests"}
 GEPT_DATE_PAGES = GEPT_HUBS | {"gept-results-lookup", "gept-kids-guide", "gept-kids-practice", "gept-elementary-guide",
     "gept-elementary-practice", "gept-elementary-speaking-writing", "gept-elementary-vocabulary",
-    "gept-intermediate-guide", "gept-intermediate-practice", "gept-high-intermediate-practice"}
+    "gept-intermediate-guide", "gept-intermediate-practice", "gept-high-intermediate-practice",
+    "english-exam-dates-guide"}      # it promised an annual schedule and listed no dates (2026-10-13 plan, H19)
 GEPT_SRC = "https://www.gept.org.tw/GEPT1/gepttestdate.aspx"
 # removes rows (then an emptied column, then an emptied box) whose last day has passed in Taiwan time
 GEPT_JS = ('<script>(function(){var n=new Date();document.querySelectorAll(".gept-dates [data-gd-end]").forEach(function(r){'
@@ -1912,6 +1939,41 @@ def rebuild_sitemap():
     save_ledger(ledger); _LEDGER = ledger
     return sum(1 for _ in re.finditer(r"<lastmod>", xml))
 
+LLMS_START = "<!-- AE:LLMS-MORE start: written by tools/seo_build.py (pages the curated lists above do not name yet) -->"
+LLMS_END = "<!-- AE:LLMS-MORE end -->"
+LLMS_SKIP = re.compile(r"-practice(-part\d+)?/$")      # practice parts are reached through the listed hubs
+def sync_llms():
+    """llms.txt is curated by hand and had fallen behind: 151 of 315 sitemap pages were not in it.
+    Every sitemap page the curated sections do not name is listed in one marked block (title and
+    description from the page itself), so a new page can never be missing again."""
+    lp = os.path.join(SITE, "llms.txt")
+    if not os.path.exists(lp):
+        return 0
+    txt = open(lp, encoding="utf-8").read()
+    curated = re.sub(re.escape(LLMS_START) + r".*?" + re.escape(LLMS_END) + r"\n?", "", txt, flags=re.S)
+    locs = [u for u in re.findall(r"<loc>([^<]+)</loc>", open(os.path.join(SITE, "sitemap.xml"), encoding="utf-8").read())
+            if not os.path.splitext(u.replace(ORIGIN, ""))[1] and not LLMS_SKIP.search(u)]
+    rows = []
+    for u in locs:
+        if u in curated or (u.rstrip("/") + ")") in curated:
+            continue
+        rp = u.replace(ORIGIN, "").strip("/")
+        f = os.path.join(SITE, rp, "index.html") if rp else os.path.join(SITE, "index.html")
+        if not os.path.exists(f):
+            continue
+        h = open(f, encoding="utf-8").read(4096 * 8)
+        t = re.search(r"<title>(.*?)</title>", h, re.S)
+        d = re.search(r'<meta name="description" content="([^"]*)"', h)
+        title = BRAND_RE.sub("", _unescape(t.group(1))).strip() if t else rp
+        rows.append(f"- [{title}]({u})" + (f": {_unescape(d.group(1)).strip()}" if d else ""))
+    block = (LLMS_START + "\n### 更多頁面 More pages\n" + "\n".join(rows) + "\n" + LLMS_END + "\n") if rows else ""
+    anchor = "## Citable facts"
+    new = curated.replace(anchor, block + "\n" + anchor, 1) if (block and anchor in curated) else curated + ("\n" + block if block else "")
+    new = re.sub(r"\n{3,}(" + re.escape(LLMS_START) + ")", r"\n\n\1", new)
+    if new != txt:
+        open(lp, "w", encoding="utf-8").write(new)
+    return len(rows)
+
 LOCAL_REF_RE = re.compile(r'(?:src|href|content|poster|data-w|data-src)="((?:https://americanenglish\.com\.tw)?/[^"#?\s]+\.[A-Za-z0-9]{2,5})(?:[?#][^"]*)?"')
 def lint_files(pages):
     """Every local file a page points at (pictures, share images, PDFs, audio, scripts) must
@@ -1968,6 +2030,7 @@ if __name__ == "__main__":
         print(f"  {rel:<52} {msg}")
     n = rebuild_sitemap()
     print(f"sitemap.xml: {n} <lastmod> dates written")
+    print(f"llms.txt: {sync_llms()} page(s) in the generated 'More pages' block")
     problems = lint_snippets(pages) + lint_files(pages) + SITEMAP_PROBLEMS
     try:                               # downloadable PDFs that Apple's viewer draws wrongly
         import check_pdfs

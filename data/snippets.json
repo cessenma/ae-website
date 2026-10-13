@@ -109,7 +109,8 @@
   "description": "美語補習班推薦文章看了一堆，還是不知道怎麼選？這一頁不評比品牌，教你比較連鎖兒童美語的方法：直營與加盟的差異、參觀時的五個必問、學費換算單位成本，附比較表模板。"
  },
  "colors-english-vocabulary": {
-  "description": "顏色英文對照表（附 A4 閃卡 PDF）：62 個常用顏色與中文對照，分基本色、深淺、紅粉紫、黃橙棕與藍綠五組；並說明 color 與 colour 的拼法差別、light／dark 的用法。"
+  "description": "顏色英文對照表（附 A4 閃卡 PDF）：62 個常用顏色與中文對照，分基本色、深淺、紅粉紫、黃橙棕與藍綠五組；並說明 color 與 colour 的拼法差別、light／dark 的用法。",
+  "title": "顏色英文62個對照表：深淺說法、拼法差異與形容詞順序（附 PDF）｜埃森美語"
  },
  "cool-english-guide": {
   "description": "Cool English（酷英）官方登入入口與教學：教育雲、Google、訪客怎麼登入，進不去或忘記密碼怎麼辦、官方客服電話；國小區國中區怎麼選、字彙王比賽怎麼參加，一次看懂。",
@@ -302,7 +303,8 @@
   "description": "兒童英文歌推薦哪些？免費英文學習資源怎麼用才有效？美籍持證教師嚴選 Super Simple Songs、Storyline Online、Khan Academy Kids、公共圖書館等免費資源。"
  },
  "fruits-english-vocabulary": {
-  "description": "水果英文對照表（附 A4 閃卡 PDF）：47 種水果與中文對照，特別整理芭樂、蓮霧、釋迦、龍眼、楊桃等台灣水果的正確英文說法；並說明水果的可數與不可數、a 與 an 的選擇。"
+  "description": "水果英文對照表（附 A4 閃卡 PDF）：47 種水果與中文對照，特別整理芭樂、蓮霧、釋迦、龍眼、楊桃等台灣水果的正確英文說法；並說明水果的可數與不可數、a 與 an 的選擇。",
+  "title": "水果英文47種對照表：台灣水果的英文怎麼說（附 PDF）｜埃森美語"
  },
  "fuzhong-english-cram-school": {
   "description": "府中是捷運府中站、林家花園一帶的老城區。語言學習拚的是頻率，而頻率常輸給距離——但近不等於好。文中給出誠實的評估框架，以及步行可達府中商圈的全美語小班。"
@@ -764,7 +766,8 @@
   "description": "Starters（Pre A1）單字練習＋A4 單字卡 PDF：6 個主題、36 題原創情境選字，把單字放回句子裡考，每題附中文解析；單字卡可列印，免費不用註冊。"
  },
  "thank-you-english": {
-  "description": "謝謝英文 30 種說法對照表（附 A4 PDF）：日常口語、正式書面、回應別人道謝的說法，每一句都標明適用場合；並說明 Thank you for 後面要接 -ing 還是名詞。"
+  "description": "謝謝英文 30 種說法對照表（附 A4 PDF）：日常口語、正式書面、回應別人道謝的說法，每一句都標明適用場合；並說明 Thank you for 後面要接 -ing 還是名詞。",
+  "title": "謝謝英文 30 種說法：日常、正式與回應道謝（附 PDF）｜埃森美語"
  },
  "wensheng-elementary-english": {
   "description": "文聖國小在文聖街 86 號，屬新埔、文聖一帶的生活圈。這篇談學校英語課的節數限制、中年級最常出現的自然發音與口說落差，以及用四個問題篩選補習班的方法。"
@@ -912,5 +915,8 @@
  "kids-online-english-comparison": {
   "title": "兒童線上英文推薦：5 大平台比較（價格、師資、試上）｜埃森美語",
   "description": "兒童線上英文推薦哪一家？AmazingTalker、TutorABC、tutorJr、Preply、OiKID 一張表比較：適合年齡、每堂長度、老師、價格與購買方式，附報名前必問的 5 件事。"
+ },
+ "gept-kids-guide": {
+  "title": "小學英檢 11/22 考試、12/31 公布成績：GEPT Kids 完整解析｜埃森美語"
  }
 }

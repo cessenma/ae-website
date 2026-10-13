@@ -208,6 +208,48 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 - tutorJr (TutorABC Junior): [review](https://americanenglish.com.tw/tutorjr-review/) · [price](https://americanenglish.com.tw/tutorjr-price/) · [ages and teachers](https://americanenglish.com.tw/tutorjr-age-and-teachers/) · [OiKID vs tutorJr](https://americanenglish.com.tw/tutorjr-vs-oikid/)
 - OiKID: [review](https://americanenglish.com.tw/oikid-review/) · [price](https://americanenglish.com.tw/oikid-price/) · [51Talk vs OiKID](https://americanenglish.com.tw/oikid-vs-51talk/)
 
+<!-- AE:LLMS-MORE start: written by tools/seo_build.py (pages the curated lists above do not name yet) -->
+### 更多頁面 More pages
+- [顏色英文62個對照表：深淺說法、拼法差異與形容詞順序（附 PDF）](https://americanenglish.com.tw/colors-english-vocabulary/): 顏色英文對照表（附 A4 閃卡 PDF）：62 個常用顏色與中文對照，分基本色、深淺、紅粉紫、黃橙棕與藍綠五組；並說明 color 與 colour 的拼法差別、light／dark 的用法。
+- [水果英文47種對照表：台灣水果的英文怎麼說（附 PDF）](https://americanenglish.com.tw/fruits-english-vocabulary/): 水果英文對照表（附 A4 閃卡 PDF）：47 種水果與中文對照，特別整理芭樂、蓮霧、釋迦、龍眼、楊桃等台灣水果的正確英文說法；並說明水果的可數與不可數、a 與 an 的選擇。
+- [in on at 用法全攻略：時間與地點一次分清楚](https://americanenglish.com.tw/in-on-at-prepositions/): in on at 怎麼分？at 是「點」、on 是「面或線」、in 是「空間或範圍」，時間和地點都適用。附時間與地點介係詞對照表、最容易錯的陷阱與 10 題自測。
+- [母音有哪些？子音有哪些？長母音短母音、雙母音完整表](https://americanenglish.com.tw/english-vowels-consonants/): 英文只有 a、e、i、o、u 五個母音字母，但母音「音」超過十個。用 KK 音標整理短母音、長母音、雙母音完整表（含例字），附 magic e 規則與有聲／無聲子音配對表。
+- [be動詞是什麼？現在式過去式變化表＋和一般動詞的差別](https://americanenglish.com.tw/be-verbs-guide/): be動詞是什麼？一張變化表整理 am、is、are（現在式）與 was、were（過去式）的主詞搭配、否定與縮寫，並對照 be動詞和一般動詞的疑問句、否定句規則，附 10 題自測。
+- [師德英檢是什麼？STYLE/JET 級別費用與有用嗎解析](https://americanenglish.com.tw/shide-style-exam-guide/): 師德英檢（STYLE/JET）是師德文教代理的兒童青少年英語分級檢定，共 9 級、對應 Pre-A1 到 B1。整理級數表、題型與通過標準、2026 年費用，並誠實回答「師德英檢有用嗎」。
+- [領思是什麼？Linguaskill 新制題型、成績對照與報名指南](https://americanenglish.com.tw/linguaskill-guide/): 領思（Linguaskill）是劍橋的線上自適應英語測驗。整理新制聽說讀寫四個模組、Cambridge English Scale 對照 CEFR、成績幾天出來、台灣的採認實例、考試中心與報名費。
+- [CAE 是什麼？C1 Advanced 考試內容、分數與 2026 日期](https://americanenglish.com.tw/cae-c1-advanced-guide/): CAE（C1 Advanced）是劍橋英檢在 FCE 之上的 C1 級考試。整理四份考卷時間與配分、分數怎麼看（180 及格、200 以上 Grade A）、2026 考試日期，以及在台灣誰真正需要 C1。
+- [美語補習班推薦怎麼看？連鎖品牌比較的5個必問](https://americanenglish.com.tw/choose-english-chain-school/): 美語補習班推薦文章看了一堆，還是不知道怎麼選？這一頁不評比品牌，教你比較連鎖兒童美語的方法：直營與加盟的差異、參觀時的五個必問、學費換算單位成本，附比較表模板。
+- [Sight Words 是什麼？美國老師教你：別再一張一張閃字卡了](https://americanenglish.com.tw/sight-words-heart-words-guide/): 學校發了一疊單字卡卻沒教怎麼用？美國持照教師用中文解釋 sight words、高頻字、Heart Words 的差別，說明大腦真正記住單字的方式（orthographic mapping）。
+- [兒童英文程度分級指南：CEFR 等級 × 年段 × 英檢對照表](https://americanenglish.com.tw/kids-english-levels/): 孩子的英文在哪一級？一張表講清楚 CEFR Pre-A1 到 B1 每一級孩子「能做什麼」、對應的劍橋兒童英檢與全民英檢、常見年段，以及升一級實際需要的時間。
+- [劍橋英檢模擬試題 54 份：兒童英檢＋KET／PET／FCE，含聽力音檔與中文解析](https://americanenglish.com.tw/cambridge-practice-exam-pack/): 埃森美語自編的劍橋英檢完整模擬試題，共 54 份：兒童英檢 Starters／Movers／Flyers 與 KET／PET／FCE 各 9 份，每份含題目卷、中文逐題解析、聽力音檔與逐字稿。
+- [英文發音完整指南：41 個音、發音規則與台灣學生最常錯的音](https://americanenglish.com.tw/english-pronunciation/): 英文發音完整攻略（附 A4 發音總表 PDF）：母音 17 個、子音 24 個共 41 個音，附例字與嘴型提示；字尾 -s／-ed 的三種唸法、重音規則與連音，以及台灣學生最常錯的音。
+- [身體英文對照表：43 個身體部位、不規則複數與看醫生用語](https://americanenglish.com.tw/body-parts-english/): 身體部位英文對照表（附 A4 列印版 PDF）：43 個部位分頭臉、上半身、下半身與體內四組；說明 tooth／teeth、foot／feet 等不規則複數，以及身體部位前面用 my 還是 the。
+- [國家英文對照表：80國名稱、國籍說法與the的用法](https://americanenglish.com.tw/countries-english/): 國家英文對照表（附 A4 列印版 PDF）：80 個國家的英文名稱、中文與國籍形容詞，依亞洲、歐洲、美洲、非洲中東與大洋洲分組；並說明哪些國名前面要加 the。
+- [職業英文83種對照表：工作英文怎麼說、a與an怎麼選](https://americanenglish.com.tw/jobs-english/): 職業英文對照表（附 A4 列印版 PDF）：83 種常見工作的英文與中文，依學校醫療、公共服務、商業辦公、科技工程、餐飲服務、運輸農漁與藝術媒體七組分類。
+- [KET 題庫｜免費線上模擬試題 14 頁（閱讀與寫作・聽力・口說・單字）附中文解析＋官方樣卷下載](https://americanenglish.com.tw/ket-practice-tests/): 劍橋英檢 KET（A2 Key for Schools）題庫：14 頁免費線上模擬試題（閱讀與寫作・聽力・口說・單字），共 91 題原創題目，依官方題型格式出題、每題中文解析。
+- [PET 題庫｜免費線上模擬試題 14 頁（閱讀・寫作・聽力・口說・單字）附中文解析＋官方樣卷下載](https://americanenglish.com.tw/pet-practice-tests/): 劍橋英檢 PET（B1 Preliminary for Schools）題庫：14 頁免費線上模擬試題（閱讀・寫作・聽力・口說・單字），共 146 題原創題目，依官方題型格式出題、每題中文解析。
+- [FCE 題庫｜免費線上模擬試題 15 頁（閱讀與英語運用・寫作・聽力・口說・單字）附中文解析＋官方樣卷下載](https://americanenglish.com.tw/fce-practice-tests/): 劍橋英檢 FCE（B2 First for Schools）題庫：15 頁免費線上模擬試題（閱讀與英語運用・寫作・聽力・口說・單字），共 176 題原創題目，依官方題型格式出題。
+- [Starters 題庫｜免費線上模擬試題 11 頁＋官方樣卷下載](https://americanenglish.com.tw/starters-practice-tests/): 劍橋兒童英檢 Starters（第一級）題庫：11 頁免費線上模擬試題（閱讀與寫作・聽力・口說・單字），共 81 題原創題目，依官方題型格式出題、每題中文解析。
+- [Movers 題庫｜免費線上模擬試題 13 頁＋官方樣卷下載](https://americanenglish.com.tw/movers-practice-tests/): 劍橋兒童英檢 Movers（第二級）題庫：13 頁免費線上模擬試題（閱讀與寫作・聽力・口說・單字），共 94 題原創題目，依官方題型格式出題、每題中文解析。
+- [Flyers 題庫｜免費線上模擬試題 13 頁＋官方樣卷下載](https://americanenglish.com.tw/flyers-practice-tests/): 劍橋兒童英檢 Flyers（第三級）題庫：13 頁免費線上模擬試題（閱讀與寫作・聽力・口說・單字），共 104 題原創題目，依官方題型格式出題、每題中文解析。
+- [學習扶助是什麼？家長指南：篩選測驗、英語科被列入怎麼辦](https://americanenglish.com.tw/learning-support-guide/): 孩子被通知參加學習扶助，家長該知道的事：學習扶助不是特殊教育；篩選測驗與成長測驗怎麼決定名單；國語文、數學、英語分科認定；三件該向學校問清楚的事。
+- [謝謝英文 30 種說法：日常、正式與回應道謝（附 PDF）](https://americanenglish.com.tw/thank-you-english/): 謝謝英文 30 種說法對照表（附 A4 PDF）：日常口語、正式書面、回應別人道謝的說法，每一句都標明適用場合；並說明 Thank you for 後面要接 -ing 還是名詞。
+- [加油英文怎麼說？21種說法：考試前、比賽中、撐下去的差別](https://americanenglish.com.tw/cheer-up-english/): 「加油」英文 21 種說法對照表（附 A4 PDF）：考試前用 Good luck、比賽場邊喊 Come on、過程中撐住用 Hang in there、對方已經很努力時用 Take your time。
+- [英文升一級要幾小時？劍橋官方時數表](https://americanenglish.com.tw/exams/hours-to-level-up/): 劍橋官方：每升一個 CEFR 等級約需 200 guided learning hours。但這不等於上課時數，而且台灣國小生適用的是另一張表——到 A2 要 540–680 小時，是成人版的 2.5–3.5 倍。
+- [英文語調有多重要？英檢口說佔一半的分數](https://americanenglish.com.tw/exams/intonation/): 全民英檢初級口說「發音、語調和流利度」是兩個評分項目之一，各佔 50%（LTTC 官方）。中文用聲調分辨字義、英文不用——這個差異讓台灣學生的英文聽起來「平」。
+- [板橋學區行事曆：板橋國中、板橋國小、國光、大觀國小官方連結](https://americanenglish.com.tw/exams/banqiao-school-calendar/): 板橋國中、板橋國小、國光國小、大觀國小四校官方行事曆的所在位置，每週自動檢查連結是否有效。本頁不轉錄段考日期，直接連到學校官方公告，避免辨識錯誤。
+- [劍橋英檢完整攻略：等級對照、報名費用、40 頁免費線上練習](https://americanenglish.com.tw/exams/): 劍橋英檢（YLE Starters／Movers／Flyers 與 KET／PET／FCE）一頁看懂：六級程度對照 CEFR 與全民英檢、幾歲考哪一級、報名與費用、成績怎麼看。
+- [台灣孩子最難的 9 個英文發音：美籍教師的互動地圖（可點聽）](https://americanenglish.com.tw/taiwan-kids-hardest-english-sounds/): th、字尾 L、ship/sip、-s/-ed……台灣孩子的英文發音難關跟教科書寫的不一樣。美籍持證教師依對比音韻研究排出 9 站優先順序，每個音都能點著聽，並誠實標注證據等級。
+- [孩子的英文為什麼平平的？英文重音一個手勢就聽懂（2026 研究）](https://americanenglish.com.tw/english-word-stress-gesture/): 2026 年 JSLHR 對照實驗：教英文重音，「長度手勢」勝過拍手和畫音高——因為中文耳朵漏聽的正是長度。附動畫示範、重音互動測驗，以及在家四步驟教學流程。
+- [ship 還是 sheep？台灣孩子最容易聽混的英文母音（附聽力訓練）](https://americanenglish.com.tw/ship-or-sheep-english-vowels/): 短 i 和長 i 差的不是長短，是嘴巴的鬆緊——研究發現中文使用者靠長度分辨、母語者靠音色。內建互動聽力訓練器與最小對子播放，教「微笑嘴」不教「拉長」。
+- [-s 和 -ed 其實有三種唸法：文法分數常是嘴巴丟掉的（互動練習）](https://americanenglish.com.tw/plural-s-past-ed-pronunciation/): books 唸成 book、asked 唸成 ask——中文音節結尾的限制讓孩子的嘴巴自動刪掉複數與過去式。三條規則、內建字尾分類機，一個發音練習救口說、寫作、聽力三邊分數。
+- [發音要多標準才夠？劍橋考官其實這樣評分（評分表逐字翻譯）](https://americanenglish.com.tw/english-pronunciation-standards/): 「保證美國腔」是行銷話術：研究顯示 10–12 歲後達到無口音的比例極低，但「清楚可懂」任何年紀都練得到——而劍橋 KET/PET/FCE 評分表獎勵的正是後者，原文逐字翻給你看。
+- [KET 分數計算機｜劍橋英檢 A2 Key 成績換算・幾分及格一次看懂](https://americanenglish.com.tw/ket-score-calculator/): 輸入 KET 各卷原始分數，立刻換算成劍橋量表分數（82–150）、等級與 CEFR 級別。依劍橋官方換算表製作，繁體中文、免註冊。120 分及格、140 分以上證書標示 B1。
+- [PET 分數計算機｜劍橋英檢 B1 Preliminary 成績換算・幾分及格](https://americanenglish.com.tw/pet-score-calculator/): 輸入 PET 各卷原始分數，立刻換算劍橋量表分數（102–170）、等級與 CEFR 級別。依劍橋官方換算表製作，繁體中文免註冊。140 分及格，160 分以上證書標示 B2。
+- [FCE 分數計算機｜劍橋英檢 B2 First 成績換算・幾分及格](https://americanenglish.com.tw/fce-score-calculator/): 輸入 FCE 五個項目的原始分數，立刻換算劍橋量表分數（122–190）、等級與 CEFR 級別。依劍橋官方換算表製作，繁體中文免註冊。160 分及格，180 分以上證書標示 C1。
+- [劍橋英檢盾牌怎麼看？Starters／Movers／Flyers 盾牌計算與升級標準](https://americanenglish.com.tw/cambridge-yle-shields/): 劍橋兒童英檢（YLE）成績單上的盾牌是什麼意思？每項最多 5 個、總共 15 個，官方以「10 個以上」作為可以準備下一級的標準。附互動工具，點選盾牌數立刻看懂成績。
+<!-- AE:LLMS-MORE end -->
+
 ## Citable facts
 - GEPT pass marks (LTTC 2027 registration guide): Stage 1 listening + reading (each out of 120) must total 160 with neither paper below 72 at Elementary, Intermediate and High-Intermediate; Stage 2 is writing 70 / speaking 80 at Elementary (初級) and writing 80 / speaking 80 at Intermediate and High-Intermediate (each out of 100).
 - GEPT Elementary writing score formula (LTTC): {(Part 1 score ÷ 30) + (Part 2 band ÷ 5)} × 50; each single-sentence item scores 0–2.
