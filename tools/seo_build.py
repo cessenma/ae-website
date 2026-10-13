@@ -1353,6 +1353,83 @@ def assess_card(html, rel):
     return html[:m.end()] + block + html[m.end():]
 
 
+READNEXT_START, READNEXT_END = "<!-- AE:READNEXT -->", "<!-- /AE:READNEXT -->"
+# Same-intent next reads, right under the page's first table (2026-10-13 plan, N3). The "what next"
+# blocks sat at 80–98% page depth, where 1–10% of readers arrive; the big lookup pages sent 1–13% of
+# sessions to a second page. Labels are the phrases people search, so they double as anchor text.
+# The 5 assessment-card pages (kk, phonics, 1200, names-boys, mid-autumn) join after the card's
+# 11-08 readout.
+_DATES = {"months": ("月份英文縮寫", "/months-english/"), "days": ("星期一英文", "/days-of-week-english/"),
+          "dates": ("英文日期寫法", "/english-dates-guide/"), "ordinal": ("序數英文 1st–31st", "/ordinal-numbers-english/"),
+          "numbers": ("英文數字 1–100", "/english-numbers-guide/"), "time": ("時間英文", "/time-english/"),
+          "inonat": ("in／on／at 用法", "/in-on-at-prepositions/")}
+_FEST = {"halloween": ("萬聖節英文", "/halloween-english/"), "christmas": ("聖誕節英文", "/christmas-english/"),
+         "newyear": ("新年快樂英文", "/new-year-english/"), "valentine": ("情人節英文", "/valentines-day-english/"),
+         "midautumn": ("中秋節英文", "/mid-autumn-festival-english/"), "birthday": ("生日快樂英文", "/happy-birthday-english/"),
+         "thanks": ("謝謝英文 30 種說法", "/thank-you-english/"), "cheer": ("加油英文", "/cheer-up-english/")}
+_VOC = {"fruits": ("水果英文", "/fruits-english-vocabulary/"), "food": ("食物英文", "/food-english/"),
+        "animals": ("動物英文", "/animals-english-vocabulary/"), "colors": ("顏色英文", "/colors-english-vocabulary/"),
+        "body": ("身體部位英文", "/body-parts-english/"), "countries": ("國家英文", "/countries-english/"),
+        "topics": ("主題單字 15 份", "/english-vocabulary-by-topic/")}
+_WR = {"symbols": ("符號英文名稱", "/english-symbol-names/"), "punct": ("英文標點符號", "/english-punctuation-guide/"),
+       "abbr": ("英文縮寫", "/english-abbreviations-guide/"), "caps": ("英文大寫規則", "/english-capitalization-guide/"),
+       "letter": ("英文書信格式", "/english-letter-writing-guide/")}
+_SND = {"kk": ("KK 音標表", "/kk-phonetic-chart/"), "phonics": ("自然發音規則表", "/phonics-rules-chart/"),
+        "vowels": ("母音子音表", "/english-vowels-consonants/"), "hard": ("台灣孩子最難的英文發音", "/taiwan-kids-hardest-english-sounds/"),
+        "worksheet": ("英文字母練習表 PDF", "/english-alphabet-worksheet/")}
+_WORDS = {"1200": ("1200 單字表", "/moe-1200-words-guide/"), "2000": ("國中 2000 單字表", "/moe-2000-words-guide/"),
+          "verbs": ("動詞三態表", "/irregular-verbs-list/"), "tenses": ("英文時態總表", "/english-tenses-chart/"),
+          "be": ("be 動詞用法", "/be-verbs-guide/"), "comp": ("比較級與最高級", "/english-comparatives-guide/"),
+          "dl": ("所有 A4 下載", "/download/")}
+READNEXT = {
+    "months-english": [_DATES["days"], _DATES["dates"], _DATES["ordinal"], _DATES["time"]],
+    "days-of-week-english": [_DATES["months"], _DATES["dates"], _DATES["time"], _DATES["ordinal"]],
+    "english-dates-guide": [_DATES["months"], _DATES["days"], _DATES["ordinal"], _DATES["inonat"]],
+    "ordinal-numbers-english": [_DATES["numbers"], _DATES["dates"], ("月份英文", "/months-english/"), ("星期英文", "/days-of-week-english/")],
+    "english-numbers-guide": [_DATES["ordinal"], _DATES["time"], ("月份英文", "/months-english/"), _DATES["dates"]],
+    "time-english": [_DATES["numbers"], _DATES["days"], ("月份英文", "/months-english/"), _DATES["inonat"]],
+    "english-names-girls": [("男生英文名字", "/english-names-boys/"), ("英文名字總覽", "/english-names/"),
+                            ("小孩英文名字怎麼取", "/kids-english-names-guide/"), ("小孩英文自我介紹", "/english-self-introduction-kids/")],
+    "happy-birthday-english": [_FEST["thanks"], _FEST["cheer"], _FEST["christmas"], ("月份英文", "/months-english/")],
+    "english-alphabet-guide": [_SND["kk"], _SND["phonics"], _SND["worksheet"], _SND["vowels"]],
+    "fruits-english-vocabulary": [_VOC["food"], _VOC["animals"], _VOC["colors"], _VOC["topics"]],
+    "jobs-english": [_VOC["countries"], _VOC["body"], _VOC["animals"], _VOC["topics"]],
+    "animals-english-vocabulary": [_VOC["fruits"], _VOC["colors"], _VOC["body"], _VOC["topics"]],
+    "halloween-english": [_FEST["christmas"], _FEST["newyear"], _FEST["birthday"], _FEST["midautumn"]],
+    "christmas-english": [_FEST["newyear"], _FEST["valentine"], _FEST["halloween"], _FEST["birthday"]],
+    "new-year-english": [_FEST["valentine"], _FEST["christmas"], _FEST["birthday"], _FEST["cheer"]],
+    "valentines-day-english": [_FEST["midautumn"], _FEST["halloween"], _FEST["birthday"], _FEST["thanks"]],
+    "english-symbol-names": [_WR["punct"], _WR["abbr"], _WR["caps"]],
+    "english-punctuation-guide": [_WR["symbols"], _WR["caps"], _WR["abbr"], _WR["letter"]],
+    "english-abbreviations-guide": [_WR["symbols"], _WR["punct"], _WR["caps"], _DATES["months"]],
+    "english-capitalization-guide": [_WR["punct"], _WR["symbols"], _WR["abbr"], _WR["letter"]],
+    "ket-score-calculator": [("KET 題庫", "/ket-practice-tests/"), ("PET 分數計算機", "/pet-score-calculator/"),
+                             ("劍橋英檢成績查詢", "/cambridge-results-lookup/"), ("劍橋英檢等級對照", "/cambridge-english-levels/")],
+    "irregular-verbs-list": [_WORDS["tenses"], _WORDS["be"], _WORDS["2000"], _WORDS["1200"]],
+    "english-tenses-chart": [_WORDS["verbs"], _WORDS["be"], _DATES["inonat"], _WORDS["comp"]],
+    "kk-phonetics-vs-phonics": [_SND["kk"], _SND["phonics"], _SND["vowels"], _SND["hard"]],
+    "moe-2000-words-guide": [_WORDS["1200"], _WORDS["verbs"], _VOC["topics"], _WORDS["dl"]],
+}
+
+def read_next(html, rel):
+    html = re.sub(r"\n?" + re.escape(READNEXT_START) + r".*?" + re.escape(READNEXT_END) + r"\n?", "", html, flags=re.S)
+    pills = READNEXT.get(os.path.dirname(rel))
+    if not pills:
+        return html
+    for _, href in pills:
+        if not os.path.exists(os.path.join(SITE, href.strip("/"), "index.html")):
+            sys.exit(f"READNEXT on {rel}: target {href} does not exist")
+    hero = re.search(r'<section class="page-hero.*?</section>', html, re.S)
+    start = hero.end() if hero else 0
+    m = re.compile(r"</table>(\s*</div>)?").search(html, start)      # after the first table and its scroll wrapper
+    if not m:
+        return html
+    links = "".join(f'<a href="{h}">{_escape(t)}</a>' for t, h in pills)
+    block = (f'\n{READNEXT_START}<nav class="readnext" aria-label="接著看"><span class="rn-lbl">接著看</span>'
+             f'{links}</nav>{READNEXT_END}\n')
+    return html[:m.end()] + block + html[m.end():]
+
+
 def season_strip(html, rel, today=None):
     """Insert (or refresh, or remove) the seasonal strips after the page's main table."""
     html = re.sub(r"\n?" + re.escape(SEASON_START) + r".*?" + re.escape(SEASON_END) + r"\n?", "", html, flags=re.S)
@@ -1425,6 +1502,7 @@ def process_page(path, css_ver="", crit=""):
     html = h1_unwrap(html)
     html = add_toc(anchor_headings(html))
     html = assess_card(html, rel)
+    html = read_next(html, rel)
     html = season_strip(html, rel)
     html = gept_dates(html, rel)
     if "</head>" not in html or not re.search(r"<body[^>]*>", html):
@@ -1681,7 +1759,7 @@ def process_page(path, css_ver="", crit=""):
 LASTMOD_LEDGER = os.path.join(SITE, "data", "lastmod.json")
 _INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM_END), (SEO_START, SEO_END),
              (FOOT_START, FOOT_END), (PMETA_START, PMETA_END), (POP_START, POP_END), (NEXT_START, NEXT_END),
-             (BYL_START, BYL_END),
+             (BYL_START, BYL_END), (READNEXT_START, READNEXT_END),
              # the pack offer is a sales block repeated on ~100 pages: a price or button
              # change is not a change to the page (it stamped 95 URLs with one date on 09-25)
              ("<!-- AE:PACKOFFER -->", "<!-- /AE:PACKOFFER -->"),

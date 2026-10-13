@@ -359,6 +359,11 @@
       try{ if(window.fbq) fbq('track', viaLine ? 'Lead' : 'InitiateCheckout', { content_name: (prod === 'gept' ? 'gept_pack_' : 'exam_pack_') + t + '_' + lv, content_category: prod === 'gept' ? 'gept_pack' : 'exam_pack', value: v, currency: 'TWD' }); }catch(err){}
       return;
     }
+    // "read next" pills under the first table (seo_build.read_next): which next page was taken
+    var rn = e.target.closest ? e.target.closest('.readnext a') : null;
+    if(rn && typeof window.gtag === 'function'){
+      window.gtag('event', 'next_read_tap', { page_path: location.pathname, target: rn.getAttribute('href') || '', position: 'first' });
+    }
     // the closing box split by where the reader lives (tools/region_cta.py): which of its
     // other links was taken (its LINE button is a line_tap with cta_position region_local)
     var rg = e.target.closest ? e.target.closest('a[data-region-choice]') : null;
