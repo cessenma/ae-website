@@ -31,6 +31,10 @@ ORIGIN = "https://americanenglish.com.tw"
 ORG_ID, PERSON_ID = ORIGIN + "/#organization", ORIGIN + "/#christopher"
 PRE_A, PRE_B = "<!--AE:PRE-->", "<!--/AE:PRE-->"
 QUIZ_A, QUIZ_B = "<!-- AE:QUIZ-LD start -->", "<!-- AE:QUIZ-LD end -->"
+# Off since 2026-10-13 (3k plan B1/H13): Google retired the practice-problem rich result, GSC showed
+# 0 Quiz appearances in 28 days, and the block weighed ~20 KB per page on 74 pages. Existing blocks
+# are still stripped below; set True to bring the markup back.
+EMIT_QUIZ_LD = False
 
 CONTAINER = re.compile(r'<form\b[^>]*(?:class="(?:prx-form|gd-form)[^"]*"|id="prx")[^>]*>|<div class="prx-slot"[^>]*>')
 
@@ -269,7 +273,7 @@ def main():
                 continue
             ld = quiz_ld(slug, new, data)
             new = re.sub(re.escape(QUIZ_A) + r".*?" + re.escape(QUIZ_B) + r"\n?", "", new, flags=re.S)
-            if ld:
+            if ld and EMIT_QUIZ_LD:
                 new = new.replace("</head>", f'{QUIZ_A}\n<script type="application/ld+json">{jd(ld)}</script>\n{QUIZ_B}\n</head>', 1)
             if new != src:
                 open(p, "w", encoding="utf-8").write(new)
