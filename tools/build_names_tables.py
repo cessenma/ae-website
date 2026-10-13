@@ -14,12 +14,38 @@ The "老師精選" star is read from the page's own curated tables, so the two n
 Re-runnable: replaces the <!-- AE:NAMES-TABLE --> block and rewrites title/desc/H1.
 `--hub` only refreshes the teachers' picks list on /english-names/ (leaves the two pages alone).
 Run tools/seo_build.py afterwards.
+
+3k plan B2 (authored 2026-10-13): data/english-names-*-extra.json adds ~150 names per list plus the
+冷門/質感/有意義 style tags parents search for. They merge only from EXTRA_FROM (the day after the
+5 Nov title-test readout) so the test pages stay unchanged until then; AE_NAMES_EXTRA=1 previews
+them early. sync_counts() then carries the new totals into snippets.json, the /english-names/ hub,
+the blog card and llms.txt; it matches digits, not old values, so every run is idempotent.
 """
 import datetime, html, json, os, re, sys
 
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TODAY = datetime.date.today().isoformat()
 YEAR = TODAY[:4]
+EXTRA_FROM = datetime.date(2026, 11, 6)
+EXTRA_ON = datetime.date.today() >= EXTRA_FROM or os.environ.get("AE_NAMES_EXTRA") == "1"
+
+
+def load(kind):
+    """The full list for one page: the main file, plus the extra file once EXTRA_ON."""
+    names = json.load(open(os.path.join(SITE, "data", f"english-names-{kind}.json"), encoding="utf-8"))["names"]
+    xp = os.path.join(SITE, "data", f"english-names-{kind}-extra.json")
+    if not EXTRA_ON or not os.path.exists(xp):
+        return names
+    extra = json.load(open(xp, encoding="utf-8"))
+    have = {n["n"] for n in names}
+    clash = [n["n"] for n in extra["names"] if n["n"] in have]
+    if clash:
+        sys.exit(f"{kind}: extra names already in the main list: {clash}")
+    for n in names:
+        for t in extra["tags"].get(n["n"], []):
+            if t not in n["s"]:
+                n["s"] = n["s"] + [t]
+    return names + extra["names"]
 
 PAGES = {
  "boys": dict(page="english-names-boys", zh="男生", other=("/english-names-girls/", "女生英文名字"),
@@ -88,6 +114,48 @@ filt();
 })();</script>"""
 
 
+# B2 additions, switched on with the extra names (EXTRA_ON): a heading row per letter inside the table
+# (「M 開頭的女生英文名字」 is a real query pattern) and three short style sections above the tools
+# (冷門 uncommon / 質感 classy / 有意義 meaningful) whose buttons switch on the matching filter chip.
+X_CSS = """table.nm tr.lt th{position:static;background:#eef6fd;color:var(--navy);font-size:14.5px;padding:7px 12px;border-top:1px solid #dbe8f5}
+.nm-sty{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:18px 0 6px}
+.nm-sty>div{background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:16px;padding:14px 16px 6px}
+.nm-sty h3{font-size:18px;margin:0 0 6px}
+.nm-sty p{font-size:14px;color:#4a5a72;margin:0 0 10px;line-height:1.65}
+.nm-sty .ex{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 4px}
+.nm-sty .ex span{font-size:13px;background:var(--light-blue,#e8f6fe);border-radius:10px;padding:4px 9px;color:#4a5a72}
+.nm-sty .ex b{font-family:'Baloo 2',sans-serif;font-size:15px;color:var(--navy);margin-right:4px}
+.nm-go{font:inherit;font-size:14.5px;font-weight:700;color:var(--blue);background:none;border:0;padding:0;min-height:44px;cursor:pointer}
+@media(max-width:640px){.nm-sty{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;align-items:flex-start;gap:10px;margin:18px -4px 6px;padding:0 4px 6px}.nm-sty>div{flex:0 0 84%;scroll-snap-align:start}}
+"""
+X_JS = (("var rows=[].slice.call(tb.querySelectorAll('tr'));",
+         "var rows=[].slice.call(tb.querySelectorAll('tr[data-n]')),heads=[].slice.call(tb.querySelectorAll('tr.lt'));"),
+        ("r.hidden=!ok;if(ok)n++});",
+         "r.hidden=!ok;if(ok)n++});heads.forEach(function(h){h.hidden=!rows.some(function(r){return !r.hidden&&r.dataset.l===h.dataset.l})});"),
+        ("filt();\n})();",
+         "[].forEach.call(document.querySelectorAll('.nm-go'),function(g){g.addEventListener('click',function(){var b=stc.querySelector('button[data-s=\"'+g.dataset.s+'\"]');if(b&&!styles[g.dataset.s])b.click();document.getElementById('nm-shown').scrollIntoView({block:'center'})})});\nfilt();\n})();"))
+X_STYLES = (("冷門", "冷門但好唸的{zh}英文名字", "在台灣的教室裡很少撞名，在美國卻是正常、好唸的名字。"),
+            ("質感", "有質感的{zh}英文名字", "低調、耐看，長大以後放在名片上也合身。"),
+            ("有意義", "有意義的{zh}英文名字", "意思本身就是好字：幸運、勝利、和平、喜悅，跟孩子解釋名字由來很容易。"))
+
+
+def style_sections(zh, names):
+    e = html.escape
+    out, seen = [], set()
+    for tag, h3, lead in X_STYLES:
+        got = sorted((n for n in names if tag in n["s"] and n["n"] not in seen and (tag != "冷門" or n["sy"] <= 2)), key=lambda x: x["n"].lower())
+        allc = sum(1 for n in names if tag in n["s"])
+        if not got:
+            continue
+        k = min(6, len(got))
+        pick = [got[round(i * (len(got) - 1) / max(k - 1, 1))] for i in range(k)]   # spread across A–Z
+        seen.update(n["n"] for n in pick)
+        ex = "".join(f'<span><b>{e(n["n"])}</b>{e(re.split("[；（]", n["m"])[0])}</span>' for n in pick)
+        out.append(f'<div><h3>{e(h3.format(zh=zh))}</h3><p>{e(lead)}</p><div class="ex">{ex}</div>'
+                   f'<button type="button" class="nm-go" data-s="{e(tag)}">在清單裡只看「{e(tag)}」{allc} 個 →</button></div>')
+    return f'<div class="nm-sty reveal">{"".join(out)}</div>' if out else ""
+
+
 def curated(page_html):
     return set(re.findall(r"<tr><th>([A-Za-z]+)</th>", page_html))
 
@@ -101,12 +169,24 @@ def block(kind, cfg, names, picked):
         for s in n["s"]:
             if s not in styles:
                 styles.append(s)
-    trs = []
+    trs, last = [], ""
     for n in sorted(names, key=lambda x: x["n"].lower()):
+        l = n["n"][0].upper()
+        if EXTRA_ON and l != last:
+            cnt = sum(1 for x in names if x["n"][0].upper() == l)
+            trs.append(f'<tr class="lt" data-l="{l}"><th colspan="5" id="letter-{l.lower()}">{l} 開頭的{zh}英文名字（{cnt} 個）</th></tr>')
+        last = l
         star = '<i title="老師精選">★</i>' if n["n"] in picked else ""
         trs.append(f'<tr data-n="{e(n["n"])}" data-l="{n["n"][0].upper()}" data-sy="{n["sy"]}" data-s="{e("|".join(n["s"]))}"{" data-pick=1" if n["n"] in picked else ""}>'
                    f'<td class="n">{e(n["n"])}{star}</td><td class="p">{e(n["p"])}</td><td class="m">{e(n["m"])}</td><td class="o">{e(n["o"])}</td><td class="s">{e("・".join(n["s"]))}</td></tr>')
     total = len(names)
+    css, js, sty = CSS, JS, ""
+    if EXTRA_ON:
+        css = CSS.replace("</style>", X_CSS + "</style>")
+        for old, new in X_JS:
+            assert js.count(old) == 1, old
+            js = js.replace(old, new)
+        sty = "\n    " + style_sections(zh, names)
     az = "".join(f'<button type="button" data-l="{l}">{l}</button>' for l in letters)
     st = "".join(f'<button type="button" data-s="{e(s)}">{e(s)}</button>' for s in styles)
     return f"""<!-- AE:NAMES-TABLE start -->
@@ -116,7 +196,7 @@ def block(kind, cfg, names, picked):
     <div class="prose reveal" style="margin-top:14px">
       <p>上面是老師實際推薦的精選；下面是<strong>{total} 個常用{zh}英文名字的完整清單</strong>，每個都附中文唸法提示、意思與來源。可以用<strong>開頭字母</strong>（例如中文名有「凱」就看 K、有「安」就看 A）、<strong>音節數</strong>、<strong>風格</strong>來篩，點名字可以<strong>聽美式發音</strong>，也可以按「隨機抽 5 個」讓孩子自己選。標 ★ 的是上面老師精選過的名字。</p>
     </div>
-    {CSS}
+    {css}{sty}
     <div class="nm-bar reveal"><div>符合條件 <b id="nm-shown">{total}</b> <span style="color:#8a94a3">/ {total} 個</span></div><button type="button" id="nm-draw">🎲 隨機抽 5 個</button></div>
     <div class="nm-pick" id="nm-pick"></div>
     <div class="nm-tools reveal">
@@ -132,7 +212,7 @@ def block(kind, cfg, names, picked):
       <div class="nm-empty" id="nm-empty" hidden>沒有符合的名字——放寬一個條件試試。</div>
     </div>
     <p class="nm-note">「中文唸法」是幫家長抓重音和音節的提示，不是標準音標；真正的發音請點名字聽。「意思」與「來源」取常見的語源說法，同一個名字常有不止一種解釋。另一頁：<a href="{cfg['other'][0]}">{cfg['other'][1]}完整清單</a>；取名原則見<a href="/kids-english-names-guide/">小孩的英文名字怎麼取</a>。</p>
-    {JS}
+    {js}
   </div>
 </section>
 <!-- AE:NAMES-TABLE end -->
@@ -149,7 +229,7 @@ def sub1(pat, rep, s, flags=0, what=""):
 def patch(kind, cfg):
     p = os.path.join(SITE, cfg["page"], "index.html")
     s = open(p, encoding="utf-8").read()
-    names = json.load(open(os.path.join(SITE, "data", f"english-names-{kind}.json"), encoding="utf-8"))["names"]
+    names = load(kind)
     picked = curated(s.split("<!-- AE:NAMES-TABLE start -->")[0])
     total, npick = len(names), len(picked)
     zh = cfg["zh"]
@@ -210,7 +290,7 @@ def hub():
     parts, total = [], 0
     for kind, cfg in PAGES.items():
         page = open(os.path.join(SITE, cfg["page"], "index.html"), encoding="utf-8").read()
-        data = {n["n"]: n for n in json.load(open(os.path.join(SITE, "data", f"english-names-{kind}.json"), encoding="utf-8"))["names"]}
+        data = {n["n"]: n for n in load(kind)}
         rows, n = [], 0
         for label, names in picks(page):
             short = "老師常推" if "老師" in label else label
@@ -247,8 +327,37 @@ def hub():
     print(f"  /english-names/  {total} picks listed")
 
 
+def sync_counts():
+    """Carry the list sizes into every other place that quotes them (hub copy + FAQ, hub cards, the
+    blog card, snippets.json titles/descriptions, llms.txt). Patterns match any 3-digit count, so a
+    second run changes nothing; files that quote no count are left alone."""
+    zh = {"boys": "男生", "girls": "女生"}
+    total = {k: len(load(k)) for k in PAGES}
+    subs = []
+    for k, z in zh.items():
+        n = str(total[k])
+        subs += [(rf"({z}(?:英文名字)? ?)\d{{3}}(?= ?[個、])", rf"\g<1>{n}"),          # 男生 307 個、男生英文名字 307 個
+                 (rf"({z}英文名字 \d{{4}}：)\d{{3}}(?= 個)", rf"\g<1>{n}"),            # page title in snippets.json
+                 (rf"({z}英文名字怎麼取？?)\d{{3}}(?=[ -]個)", rf"\g<1>{n}"),            # descriptions, blog card + its id
+                 (rf"({z}英文名字怎麼取？\d+ 個完整清單[^<]*</h3><p>)\d{{3}}(?= 個常用名字)", rf"\g<1>{n}"),  # blog card summary
+                 (rf'(href="/{PAGES[k]["page"]}/"><b>)\d+(?=</b>)', rf"\g<1>{n}"),     # hub entry cards
+                 (rf"({k} \()\d+(?=\))", rf"\g<1>{n}"),                             # llms.txt: boys (307)
+                 (rf"\d+(?= {k}' names)", n)]          # llms.txt: 307 boys' names
+    for rel in ("data/snippets.json", "english-names/index.html", "blog/index.html", "llms.txt"):
+        p = os.path.join(SITE, rel)
+        s = open(p, encoding="utf-8").read()
+        s2 = s
+        for pat, rep in subs:
+            s2 = re.sub(pat, rep, s2)
+        if s2 != s:
+            open(p, "w", encoding="utf-8").write(s2)
+            print(f"  counts → {rel}")
+    print(f"  totals: boys {total['boys']} · girls {total['girls']}" + ("" if EXTRA_ON else f"  (extra names wait for {EXTRA_FROM})"))
+
+
 if __name__ == "__main__":
     if "--hub" not in sys.argv:
         for kind, cfg in PAGES.items():
             patch(kind, cfg)
     hub()
+    sync_counts()
