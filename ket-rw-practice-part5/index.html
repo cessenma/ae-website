@@ -278,6 +278,7 @@ const PRX = {
     });
     const sc=document.getElementById('score');
     sc.textContent=`得分 ${got} / ${total}`; sc.classList.add('show');
+    if(window.gtag)gtag('event','practice_check',{practice_page:location.pathname,score:got,total:total});
   });
   document.getElementById('btnWhy').addEventListener('click',()=>form.classList.toggle('show-why'));
   document.getElementById('btnReset').addEventListener('click',()=>{

@@ -358,6 +358,7 @@ const PRX = { part:2, sets:[{"setId": "r1", "items": [{"n": 1, "type": "gaptext"
     });
     const sc=document.getElementById('score');
     sc.textContent=`得分 ${got} / ${total}`; sc.classList.add('show');
+    if(window.gtag)gtag('event','practice_check',{practice_page:location.pathname,score:got,total:total});   // same event as the GEPT pages
   });
 
   document.getElementById('btnWhy').addEventListener('click',()=>forms.forEach(f=>f.classList.toggle('show-why')));
