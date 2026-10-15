@@ -16,7 +16,7 @@ this script owns every <!-- AE:REGION --> block. Run tools/seo_build.py afterwar
 
 Clicks are counted in assets/app.js: the LINE button as line_tap with cta_position
 "region_local", the other three links as region_cta_click with a `choice`
-(local_courses / remote_pack / remote_gept).
+(local_courses / remote_cambridge / remote_gept).
 (No prices or paper counts in the copy: build_exam_pack.py owns those.)
 """
 import os, re, sys
@@ -38,7 +38,7 @@ PAGES = {
                            "我是 Christopher——密西根大學畢業、美國持證教師，在板橋教英文。"
                            "名字只是第一步，接下來怎麼學，看你住哪裡："),
 }
-PACK, GEPT, COURSES = "/cambridge-practice-exam-pack/", "/gept/", "/courses/"
+PACK, GEPT, COURSES = "/cambridge-practice-tests/", "/gept-practice-tests/", "/courses/"
 
 CARD = 'style="text-align:left;display:flex;flex-direction:column"'
 ROW = 'style="justify-content:flex-start;margin-top:auto;padding-top:22px"'
@@ -65,11 +65,11 @@ def block(eyebrow, h2, intro):
       </div>
       <div class="card" {CARD}>
         <span class="eyebrow eyebrow-yellow" style="align-self:flex-start">不在雙北</span>
-        <h3 style="margin-top:14px">在家做一份完整模擬試題</h3>
-        <p class="body" style="margin-top:8px">來不了教室也沒關係。網站上的線上練習全部免費、不用註冊；想讓孩子從第一題計時做到最後一題，我們自己出了劍橋英檢和全民英檢的完整模擬試題，每一份都含題目卷、中文逐題解析與聽力音檔，線上付款後立刻寄到信箱。</p>
+        <h3 style="margin-top:14px">在家用免費線上模擬試題</h3>
+        <p class="body" style="margin-top:8px">來不了教室也沒關係。網站上的劍橋英檢和全民英檢線上模擬試題全部免費、不用註冊，手機也能做；每一題都附中文解析，聽力附音檔與逐字稿。</p>
         <div class="cta-row" {ROW}>
-          <a class="btn btn-blue" href="{PACK}" data-region-choice="remote_pack">劍橋英檢模擬試題</a>
-          <a class="btn btn-outline" href="{GEPT}" data-region-choice="remote_gept">全民英檢模擬試題</a>
+          <a class="btn btn-blue" href="{PACK}" data-region-choice="remote_cambridge">劍橋英檢免費練習</a>
+          <a class="btn btn-outline" href="{GEPT}" data-region-choice="remote_gept">全民英檢免費練習</a>
         </div>
       </div>
     </div>
