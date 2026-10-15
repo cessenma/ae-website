@@ -130,6 +130,11 @@ Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 <FilesMatch "\.html$">
 Header set Cache-Control "public, max-age=0, s-maxage=300, must-revalidate, no-transform"
 </FilesMatch>
+# Listening audio and data files are page resources, not search results: keep them out of the index
+# (they filled "Crawled - currently not indexed" in Search Console). PDFs stay indexable.
+<FilesMatch "\.(m4a|mp3|xlsx|csv)$">
+Header set X-Robots-Tag "noindex"
+</FilesMatch>
 </IfModule>
 
 # Cache static assets
