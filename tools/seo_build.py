@@ -1176,10 +1176,14 @@ SEASON_JS = ('<script>(function(){var d=new Date(Date.now()+288e5).toISOString()
              'a.parentNode.style.display=(a.dataset.from<=d&&d<=a.dataset.to)?"":"none";});})();</script>')
 SEASONS = [   # (first day, last day, page, icon, headline, line) — Taiwan dates, festival dates checked
     ("2026-10-01", "2026-10-31", "halloween-english", "🎃", "萬聖節（10/31）快到了", "萬聖節英文怎麼說？祝福語、單字、課堂遊戲一次學會"),
-    ("2026-11-01", "2026-12-25", "christmas-english", "🎄", "聖誕節（12/25）快到了", "聖誕快樂英文祝福 20 句、50 個單字、卡片範例"),
+    ("2026-11-01", "2026-12-25", "christmas-english", "🎄", "聖誕節（12/25）快到了", "聖誕快樂英文祝福 50 句、卡片範例、50 個單字"),
     ("2026-12-26", "2027-01-01", "new-year-english", "🎆", "新年（1/1）快到了", "新年快樂英文祝福語、單字與 email 範本"),
     ("2027-01-02", "2027-02-06", "new-year-english", "🧧", "農曆新年（2/6）快到了", "新年快樂英文、紅包與年夜飯的英文說法"),
     ("2027-02-07", "2027-02-14", "valentines-day-english", "💌", "情人節（2/14）快到了", "給朋友、家人的英文祝福與卡片寫法"),
+    # 3k plan D6: the strip was empty from 02-15 to 08-19. School starts mid-February (開學) and the
+    # junior-high 會考 falls in mid-May; no exam date is printed here until cap.rcpet.edu.tw publishes it.
+    ("2027-02-15", "2027-02-28", "english-self-introduction-kids", "🎒", "開學了", "開學第一堂英文課：孩子的英文自我介紹這樣說"),
+    ("2027-04-20", "2027-05-16", "cap-english-guide", "✏️", "會考快到了", "會考英語科考什麼？聽力、閱讀與計分一次看"),
     ("2027-08-20", "2027-09-15", "mid-autumn-festival-english", "🥮", "中秋節（9/15）快到了", "中秋節快樂英文怎麼說？祝福語與單字"),
     ("2027-10-01", "2027-10-31", "halloween-english", "🎃", "萬聖節（10/31）快到了", "萬聖節英文怎麼說？祝福語、單字、課堂遊戲一次學會"),
 ]
@@ -2138,6 +2142,42 @@ def lint_files(pages):
         print(f"  missing {path}   <- {rels[0]}" + (f" (+{len(rels) - 1} more)" if len(rels) > 1 else ""))
     return len(missing)
 
+DATED_TITLES_FILE = os.path.join(SITE, "data", "dated_titles.json")
+DATED_RE = re.compile(r"(?<![\d/])\d{1,2}/\d{1,2}(?![\d/])|\b20[2-9]\d\b")
+
+
+def lint_dated_titles():
+    """3k plan D6: a title that carries a date or a year goes stale on a known day (gept-kids
+    「11/22 考試、12/31 公布成績」, 「2026」 on the names pages…). data/dated_titles.json gives every
+    such title an expiry; a dated title without an entry, or one past its expiry, is a lint problem
+    (fails --strict). Entries due within 30 days are listed as a heads-up."""
+    try:
+        dated = json.load(open(DATED_TITLES_FILE, encoding="utf-8"))
+    except FileNotFoundError:
+        dated = {}
+    snips = json.load(open(SNIPPETS_FILE, encoding="utf-8"))
+    today = datetime.date.today()
+    missing, expired, soon = [], [], []
+    for slug, v in snips.items():
+        if not isinstance(v, dict) or not DATED_RE.search(v.get("title", "")):
+            continue
+        e = dated.get(slug)
+        if not e:
+            missing.append(slug)
+        elif e.get("expires"):
+            d = datetime.date.fromisoformat(e["expires"])
+            if today > d:
+                expired.append((e["expires"], slug, e.get("todo", "")))
+            elif (d - today).days <= 30:
+                soon.append((e["expires"], slug, e.get("todo", "")))
+    print(f"dated titles: {len(missing)} without an expiry · {len(expired)} past expiry · {len(soon)} due within 30 days")
+    for slug in missing:
+        print(f"  no expiry in data/dated_titles.json   {slug}")
+    for d, slug, todo in expired + soon:
+        print(f"  {'EXPIRED' if (d, slug, todo) in expired else 'due'} {d}  {slug}  → {todo}")
+    return len(missing) + len(expired)
+
+
 def lint_snippets(pages):
     """Titles and descriptions that a search result will cut off, measured by width."""
     long_t, long_d, short_d = [], [], []
@@ -2175,7 +2215,7 @@ if __name__ == "__main__":
     n = rebuild_sitemap()
     print(f"sitemap.xml: {n} <lastmod> dates written")
     print(f"llms.txt: {sync_llms()} page(s) in the generated 'More pages' block")
-    problems = lint_snippets(pages) + lint_files(pages) + SITEMAP_PROBLEMS
+    problems = lint_snippets(pages) + lint_dated_titles() + lint_files(pages) + SITEMAP_PROBLEMS
     try:                               # downloadable PDFs that Apple's viewer draws wrongly
         import check_pdfs
         problems += check_pdfs.check(quiet=True)

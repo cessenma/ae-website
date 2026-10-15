@@ -1,0 +1,35 @@
+{
+ "_note": "Expiry for every snippets.json title that carries a date or a year (seo_build.lint_dated_titles; 3k plan D6). After 'expires' the title is stale: update it (and this entry) the same day. expires=null = the year is not a freshness claim.",
+ "gept-kids-guide": {
+  "expires": "2026-12-31",
+  "todo": "J1: the 11/22 sitting and 12/31 results are past — retitle to the next GEPT Kids sitting"
+ },
+ "cambridge-exam-registration-taiwan": {
+  "expires": "2026-12-05",
+  "todo": "J1: 2026 → 2027 in title + H1; 「2026 年 12 月 3 日後停辦」 → past tense"
+ },
+ "english-names-boys": {
+  "expires": "2026-12-31",
+  "todo": "D1 (11-06) moves the count; 2026 → 2027 at New Year"
+ },
+ "english-names-girls": {
+  "expires": "2026-12-31",
+  "todo": "D1 (11-06) moves the count; 2026 → 2027 at New Year"
+ },
+ "gept-results-lookup": {
+  "expires": "2027-01-05",
+  "todo": "J1: 2026 → 2027 (first 2027 results day 01-21)"
+ },
+ "moe-1200-words-guide": {
+  "expires": "2027-01-05",
+  "todo": "J1: re-verify against 108 課綱 附錄五, then CHECKED_ON in build_moe1200_list.py"
+ },
+ "gept-elementary-guide": {
+  "expires": "2027-12-31",
+  "todo": "2027 dates in the title — roll to 2028 when LTTC publishes"
+ },
+ "english-word-stress-gesture": {
+  "expires": null,
+  "todo": "「2026 研究」 is the study's year, not a freshness claim"
+ }
+}
