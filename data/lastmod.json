@@ -159,6 +159,10 @@
 "date": "2026-10-02",
 "hash": "15417087d0145fad129c209db9f322de"
 },
+"assets/downloads/ae-sports-english-a4.pdf": {
+"date": "2026-10-16",
+"hash": "88323c3013ed7e5b1adeecad8f1c81eb"
+},
 "assets/downloads/ae-thank-you-english-a4.pdf": {
 "date": "2026-10-13",
 "hash": "102f524cd5ea45711b71977936572774"
@@ -336,8 +340,8 @@
 "hash": "b736ec33111be19ac98aaf8e2fee5e8d"
 },
 "chart-license": {
-"date": "2026-10-13",
-"hash": "bd0d8742524b5a28cbc0bfd14d249508"
+"date": "2026-10-16",
+"hash": "b562061045a0e3ca762c2f3e8dc5b89a"
 },
 "cheer-up-english": {
 "date": "2026-10-01",
@@ -524,8 +528,8 @@
 "hash": "b378f696e71137b419f8c9ba70cb3232"
 },
 "english-vocabulary-by-topic": {
-"date": "2026-10-08",
-"hash": "51d3c376ac063e1532704b69065e3f9f"
+"date": "2026-10-16",
+"hash": "18968659b26b176ece426fccf323aef5"
 },
 "english-vowels-consonants": {
 "date": "2026-10-13",
@@ -1318,6 +1322,10 @@
 "small-class-english-truth": {
 "date": "2026-08-07",
 "hash": "5484ed558df9cf4e9149dc38ea8044a3"
+},
+"sports-english": {
+"date": "2026-10-16",
+"hash": "7ec6524ab6dafd37fbdb64029579dd86"
 },
 "starters-listening-practice-part1": {
 "date": "2026-10-13",

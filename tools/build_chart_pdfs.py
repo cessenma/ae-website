@@ -48,6 +48,7 @@ PDFS = {
  "christmas-english":       ("christmas-chart",           "ae-christmas-english-a4.pdf",   "聖誕節英文祝福與單字表"),
  "valentines-day-english":  ("valentines-day-chart",      "ae-valentines-day-english-a4.pdf", "情人節英文祝福與單字表"),
  "weather-english":         ("weather-english-chart",     "ae-weather-english-a4.pdf",     "天氣英文單字表與學習單"),
+ "sports-english":          ("sports-english-chart",      "ae-sports-english-a4.pdf",      "運動英文單字表與學習單"),
  "time-english":            ("time-english-chart",        "ae-time-english-a4.pdf",        "時間英文幾點幾分說法對照表"),
  "food-english":            ("food-english-chart",        "ae-food-english-a4.pdf",        "台灣小吃英文對照表（58 道）"),
  "new-year-english":        ("new-year-chart",            "ae-new-year-english-a4.pdf",    "新年快樂英文祝福與過年單字表"),

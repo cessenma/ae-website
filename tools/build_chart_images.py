@@ -178,6 +178,10 @@ SPECS.update({
    title="天氣英文單字對照表", sub="105 個天氣單字 ・ 附唸法與用法 ・ 含颱風、寒流、梅雨",
    alt="天氣英文單字對照表：105 個天氣英文單字與中文對照，附 KK 音標與用法，含颱風、寒流、梅雨等台灣天氣說法",
    foot="可儲存列印｜americanenglish.com.tw"),
+ "sports-english-chart": dict(page="sports-english", only=[0, 1, 2, 3], cols=3, width=2100,   # the 64 sports only: all 7 groups ran 3,825 px tall
+   title="運動項目英文對照表", sub="64 種運動 ・ 球類、田徑、水上與冬季、武術 ・ 附唸法與用法",
+   alt="運動項目英文對照表：64 種運動的英文與中文對照，附唸法與用法，含籃球、羽毛球、游泳、跆拳道等",
+   foot="可儲存列印｜americanenglish.com.tw"),
  "valentines-day-chart": dict(page="valentines-day-english", only=[0], cols=1, width=1500,   # 3-column table: one column of rows
    title="情人節英文說法與祝福", sub="Valentine's Day ・ 祝福語與核心單字",
    alt="情人節英文對照表：Valentine's Day 的說法與唸法、情人節快樂英文祝福，以及 valentine、White Day、七夕等核心單字",

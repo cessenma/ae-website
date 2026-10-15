@@ -457,5 +457,14 @@
   "alt": "英文字母書寫位置對照表：26個字母的大寫與小寫在四線格中的位置與寫法提醒",
   "title": "英文字母書寫位置對照表",
   "page": "english-alphabet-worksheet"
+ },
+ "sports-english-chart": {
+  "slug": "sports-english-chart",
+  "png": "/assets/img/charts/sports-english-chart.webp",
+  "w": 2100,
+  "h": 2185,
+  "alt": "運動項目英文對照表：64 種運動的英文與中文對照，附唸法與用法，含籃球、羽毛球、游泳、跆拳道等",
+  "title": "運動項目英文對照表",
+  "page": "sports-english"
  }
 }

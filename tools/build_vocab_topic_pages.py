@@ -431,6 +431,7 @@ HUB_CARDS = [
  ("/time-english/", "時間英文", "幾點幾分 43 種說法、a.m.／p.m. 寫法與 83 個時間單字", "43"),
  ("/weather-english/", "天氣英文", "105 個天氣單字，颱風、寒流、梅雨怎麼說，附句型與文法", "105"),
  ("/food-english/", "食物英文", "335 個食物單字，台灣小吃 58 道、早餐店點餐與介紹一道菜", "335"),
+ ("/sports-english/", "運動英文", "120 個運動單字，球類、play／do／go 規則與運動會說法", "120"),
  ("/moe-1200-words-guide/", "教育部 1200 單字", "108 課綱附錄五完整字表，可線上核對", "1211"),
  ("/moe-2000-words-guide/", "國中 2000 單字", "國中必備字表，程度約 CEFR B1", "2000"),
  ("/kk-phonetic-chart/", "KK 音標表", "41 個音標符號，每個字可點聽發音", "41"),
@@ -1208,6 +1209,96 @@ PAGES["food-english"] = dict(
     ]), soft=True)
     + cta("食物英文最好的教室是餐桌和夜市。我們的小班課用點餐、介紹家鄉菜這些真實情境練，"
           "孩子講出來的不是背過的單字表，是能帶外國朋友去吃一碗牛肉麵的句子。")),
+  faq_n=6)
+
+# ---- /sports-english/ (2026-10-16, 3k plan D9; words in vocab_topics.json["sports"]) ----
+# Zero GSC rows for 運動 anywhere on the site before this page, so it competes with nothing of ours.
+# Not the on-hold PE subject page: this is the vocabulary lookup class (table first, PDF, rules).
+PAGES["sports-english"] = dict(
+  published="2026-10-16",
+  target="運動英文", index=0.6,   # pool unmeasured; the plan's topic-page median is 1.2 views/day
+  h1="運動英文單字 120 個對照表：球類、田徑、play／do／go 用法與運動會說法",
+  title="運動英文單字 120 個：球類、play/do/go 用法與運動會（附 PDF）｜埃森美語",
+  desc="運動英文單字 120 個對照表，附唸法與用法：籃球、羽毛球、跆拳道、大隊接力怎麼說，play／do／go 怎麼選，15 句聊運動的句型、美式與英式差異，附 A4 列印版 PDF。",
+  hero="運動是孩子最愛聊、也最常在英文課本出現的主題：自我介紹要說 I like playing basketball，運動會要喊 Go, go, go!。下面先給 120 個運動單字的完整對照表（附唸法和用法），再講 play、do、go 怎麼選、聊運動的句型、美式和英式的差別，最後有十題練習。",
+  body=lambda: (
+    sec("運動英文單字表（120 個，附唸法與用法）",
+      prose("按類別分成七組：球類、田徑與個人運動、水上與冬季運動、武術、器材與場地、比賽與人物、運動會。第三欄是<strong>唸法和用法</strong>——容易唸錯的字標了 KK 音標，也標出中文直譯最容易錯的地方（足球在美國是 soccer、平手是 tie、羽毛球的球本身另有名字）。",
+        "比數、名次要用到數字和序數，見 <a href=\"/english-numbers-guide/\">英文數字 1-100 對照表</a> 和 <a href=\"/ordinal-numbers-english/\">序數英文</a>；更多主題單字在 <a href=\"/english-vocabulary-by-topic/\">主題單字總表</a>。")
+      + grouped([(g[0], [list(r) for r in g[1]]) for g in DATA["sports"]], ["英文", "中文", "唸法／用法"]))
+    + sec("play、do、go 怎麼選：運動動詞的規則",
+      prose("規則很好記：<strong>球類和兩邊對抗的比賽用 play</strong>（play basketball、play badminton）；<strong>不用球、自己練的運動、武術和田徑項目用 do</strong>（do yoga、do taekwondo、do the high jump）；<strong>字尾是 -ing、要「去某個地方」做的活動用 go</strong>（go swimming、go hiking）。",
+        "最常錯的一點：<strong>play 後面的球類運動不加 the</strong>——play basketball，不是 play the basketball；樂器才加 the（play the piano）。另外 exercise 本身就是動詞：I exercise every day.，也可以說 I do some exercise.。")
+      + tbl([
+        ["play basketball", "I play basketball after school.", "我放學後打籃球。"],
+        ["play baseball", "My brother plays baseball on weekends.", "我哥哥週末打棒球。"],
+        ["play badminton", "Let's play badminton in the park.", "我們去公園打羽毛球吧。"],
+        ["play table tennis", "Do you want to play table tennis?", "你想打桌球嗎？"],
+        ["play soccer", "We played soccer in PE class.", "我們體育課踢足球。"],
+        ["do yoga", "My mom does yoga every morning.", "我媽媽每天早上做瑜伽。"],
+        ["do taekwondo", "I do taekwondo twice a week.", "我一星期練兩次跆拳道。"],
+        ["do gymnastics", "She does gymnastics at school.", "她在學校練體操。"],
+        ["do the high jump", "He did the high jump on sports day.", "他運動會參加跳高。"],
+        ["do some exercise", "I do some exercise before bed.", "我睡前做一點運動。"],
+        ["go swimming", "Let's go swimming this weekend.", "這個週末去游泳吧。"],
+        ["go jogging", "My dad goes jogging every evening.", "我爸爸每天傍晚去慢跑。"],
+        ["go hiking", "We went hiking on Yangmingshan.", "我們去陽明山健行。"],
+        ["go skiing", "They go skiing in Japan every winter.", "他們每年冬天去日本滑雪。"],
+        ["go bowling", "Do you want to go bowling on Friday?", "星期五要不要去打保齡球？"],
+      ], ["搭配", "例句", "中文"]), soft=True)
+    + sec("聊運動的 15 個常用句型",
+      prose("自我介紹、英文日記、口說考試最常出現的運動句子都在這裡。<strong>like 後面接 V-ing</strong>（I like playing basketball.）、<strong>be good at 後面也接 V-ing 或名詞</strong>（I'm good at swimming.）——這兩個句型是國中段考的常客。想用英文介紹自己的興趣，接著看 <a href=\"/english-self-introduction-kids/\">孩子的英文自我介紹</a>。")
+      + tbl([
+        ["What sports do you like?", "你喜歡什麼運動？", "聊運動的第一句"],
+        ["What's your favorite sport?", "你最喜歡的運動是什麼？", "favorite 是美式拼法；英式拼 favourite"],
+        ["I like playing basketball.", "我喜歡打籃球。", "like + V-ing；也可以說 I like to play basketball."],
+        ["I'm good at swimming.", "我很會游泳。", "be good at + V-ing 或名詞"],
+        ["I'm not very good at sports.", "我不太擅長運動。", "客氣地說自己不擅長"],
+        ["How often do you exercise?", "你多久運動一次？", "回答 Three times a week.（一星期三次。）"],
+        ["I go jogging every morning.", "我每天早上去慢跑。", "go + V-ing 的運動"],
+        ["Which team do you support?", "你支持哪一隊？", "美式口語也說 Which team are you rooting for?"],
+        ["Who won the game?", "誰贏了比賽？", "won 是 win 的過去式"],
+        ["What's the score?", "比數多少？", "問比賽進行中的比數"],
+        ["We won three to one.", "我們三比一贏了。", "3:1 唸 three to one"],
+        ["It was a tie.", "平手。", "英式說 It was a draw."],
+        ["Do you want to play badminton with us?", "要不要跟我們一起打羽毛球？", "邀請別人一起玩"],
+        ["I hurt my ankle playing soccer.", "我踢足球扭到腳踝。", "運動受傷的說法"],
+        ["Let's warm up first.", "我們先熱身吧。", "運動前熱身；運動後伸展是 stretch"],
+      ], ["英文", "中文", "什麼時候用"]))
+    + sec("美式和英式不一樣的運動英文",
+      prose("同一個運動，美國和英國常常用不同的字。台灣的英文課本以美式為主，但看英超足球、溫布頓網球的轉播會聽到英式說法。兩邊都看得懂最好；自己寫的時候，<strong>同一篇文章裡統一用一種</strong>。")
+      + tbl([
+        ["soccer", "football", "足球"],
+        ["sneakers", "trainers", "運動鞋"],
+        ["tie", "draw", "平手"],
+        ["track and field", "athletics", "田徑"],
+        ["overtime", "extra time", "延長賽"],
+        ["field", "pitch", "足球場"],
+        ["PE／gym class", "PE", "體育課"],
+      ], ["美式", "英式", "中文"]), soft=True)
+    + sec("運動英文練習",
+      prose("先不看表，把下面十題填完再對答案。每格填一個字。",
+        "1. I ______ basketball after school every day.（我每天放學後打籃球。）",
+        "2. My sister ______ yoga on Sundays.（我姊姊每週日做瑜伽。）",
+        "3. Let's go ______ this weekend. It's so hot!（這個週末去游泳吧，好熱！）",
+        "4. The ______ blew the whistle.（裁判吹了哨子。）",
+        "5. We won the game three ______ one.（我們三比一贏了比賽。）",
+        "6. It's two to two. It's a ______.（二比二，平手。）",
+        "7. She won a gold ______ at the Olympics.（她在奧運贏得一面金牌。）",
+        "8. On your marks, get ______, go!（各就各位，預備，跑！）",
+        "9. I'm good at ______.（我很會跑步。）",
+        "10. In British English, soccer is called ______.（英式英語把 soccer 叫做什麼？）",
+        "<strong>答案：</strong>1. play　2. does　3. swimming　4. referee　5. to　6. tie　7. medal　8. set　9. running　10. football",
+        "想印出來當學習單：本頁最上面那張 120 個單字的對照表有免費的 A4 列印版 PDF（在第一張表上方的下載區），貼在書桌前，或讓孩子遮住中文那一欄自我測驗。"))
+    + sec("運動英文常見問題", faq([
+      ("「運動」的英文是 sport 還是 exercise？", "sport 是有規則、會比賽的運動項目：Basketball is a sport.；exercise 是為了健康而活動身體：I exercise every day.。說「我喜歡運動」：喜歡打球、看比賽用 I like sports.；喜歡活動身體用 I like to exercise.。泛指運動時 sports 用複數。"),
+      ("play、do、go 怎麼分？", "球類和兩邊對抗的比賽用 play（play tennis）；不用球、自己練的運動和武術用 do（do yoga、do karate）；字尾是 -ing、要去某個地方做的活動用 go（go swimming、go skiing）。play 後面的球類不加 the。"),
+      ("足球英文是 soccer 還是 football？", "美國、加拿大說 soccer，因為他們的 football 是美式足球；英國和大多數國家說 football。台灣的課本以美式為主，寫 soccer；跟英國人聊、看英超時用 football。兩個字都對，看對象。"),
+      ("羽毛球、桌球英文怎麼說？", "羽毛球是 badminton，球本身叫 shuttlecock，口語叫 birdie。桌球是 table tennis，口語說 ping-pong；桌球拍美式叫 paddle，英式叫 bat。"),
+      ("比賽時「加油」英文怎麼說？", "現場幫選手加油喊 Go, go, go! 或 Go + 隊名、名字（Go, Taiwan!）；比賽前鼓勵說 Good luck! 或 You can do it!。更多鼓勵的說法見 <a href=\"/cheer-up-english/\">加油英文</a>。"),
+      ("孩子怎麼學運動英文最有效？", "從他自己玩的運動開始：每天用一句話說體育課做了什麼（We played dodgeball today.）；看比賽時一起問 What's the score?；運動會前把 relay race、tug-of-war 這幾個字唸熟。表留著查，句子天天用。"),
+    ]), soft=True)
+    + cta("會說 play basketball 不難，難的是放學後真的用英文聊一場球賽。我們的小班課讓孩子用英文介紹自己最愛的運動、說出比數和輸贏，講到不用想。")),
   faq_n=6)
 
 def collides(slug, target):

@@ -6713,5 +6713,642 @@
     ]
    ]
   ]
+ ],
+ "sports": [
+  [
+   "球類運動 Ball sports",
+   [
+    [
+     "basketball",
+     "籃球",
+     "/ˈbæskɪtˌbɔl/　play basketball；投籃是 shoot"
+    ],
+    [
+     "baseball",
+     "棒球",
+     "/ˈbesˌbɔl/　a baseball game（一場棒球賽）"
+    ],
+    [
+     "softball",
+     "壘球",
+     "/ˈsɔftˌbɔl/　球比棒球大，投手用低手投球"
+    ],
+    [
+     "soccer",
+     "足球",
+     "/ˈsɑkɚ/　美式說法；英國和多數國家叫 football"
+    ],
+    [
+     "American football",
+     "美式足球",
+     "在美國直接叫 football；球是橢圓形的"
+    ],
+    [
+     "volleyball",
+     "排球",
+     "/ˈvɑlɪˌbɔl/　開頭是 /v/，上排牙齒輕碰下唇"
+    ],
+    [
+     "beach volleyball",
+     "沙灘排球",
+     "兩人一隊，在沙灘上打"
+    ],
+    [
+     "badminton",
+     "羽毛球",
+     "/ˈbædmɪntən/　球本身叫 shuttlecock，口語叫 birdie"
+    ],
+    [
+     "table tennis",
+     "桌球",
+     "口語也叫 ping-pong；正式比賽名稱是 table tennis"
+    ],
+    [
+     "tennis",
+     "網球",
+     "/ˈtɛnɪs/　0 分在網球裡唸 love"
+    ],
+    [
+     "golf",
+     "高爾夫球",
+     "/gɑlf/　play golf；球場叫 golf course"
+    ],
+    [
+     "bowling",
+     "保齡球",
+     "/ˈbolɪŋ/　go bowling（去打保齡球）"
+    ],
+    [
+     "dodgeball",
+     "躲避球",
+     "/ˈdɑdʒˌbɔl/　台灣國小體育課的經典"
+    ],
+    [
+     "handball",
+     "手球",
+     "/ˈhændˌbɔl/　七人一隊，把球丟進對方球門"
+    ],
+    [
+     "rugby",
+     "橄欖球",
+     "/ˈrʌgbɪ/　英式橄欖球，和美式足球規則不同"
+    ],
+    [
+     "ice hockey",
+     "冰上曲棍球",
+     "美國、加拿大口語直接說 hockey"
+    ],
+    [
+     "field hockey",
+     "曲棍球（草地）",
+     "在草地上打；英國等地直接叫 hockey"
+    ],
+    [
+     "cricket",
+     "板球",
+     "/ˈkrɪkɪt/　英國、印度、澳洲最流行；cricket 也是「蟋蟀」"
+    ],
+    [
+     "pool／billiards",
+     "撞球",
+     "美式口語多說 pool；snooker 是另一種撞球"
+    ],
+    [
+     "water polo",
+     "水球",
+     "在游泳池裡打的球類運動"
+    ],
+    [
+     "squash",
+     "壁球",
+     "/skwɑʃ/　對著牆打；squash 也是「南瓜類」"
+    ],
+    [
+     "futsal",
+     "五人制足球",
+     "/ˈfʊtsɑl/　室內小場地的足球"
+    ],
+    [
+     "ultimate frisbee",
+     "極限飛盤",
+     "飛盤叫 frisbee；台灣校園越來越流行"
+    ],
+    [
+     "lacrosse",
+     "袋棍球",
+     "/ləˈkrɔs/　美國高中、大學常見的運動"
+    ]
+   ]
+  ],
+  [
+   "田徑與個人運動 Track and individual sports",
+   [
+    [
+     "running",
+     "跑步",
+     "go running；跑步的人是 runner"
+    ],
+    [
+     "jogging",
+     "慢跑",
+     "/ˈdʒɑgɪŋ/　go jogging；比 running 慢、輕鬆"
+    ],
+    [
+     "track and field",
+     "田徑",
+     "美式說法；英式叫 athletics"
+    ],
+    [
+     "sprint",
+     "短跑",
+     "/sprɪnt/　a 100-meter sprint（100 公尺短跑）"
+    ],
+    [
+     "marathon",
+     "馬拉松",
+     "/ˈmærəˌθɑn/　重音在第一音節；th 舌尖伸出"
+    ],
+    [
+     "high jump",
+     "跳高",
+     "do the high jump"
+    ],
+    [
+     "long jump",
+     "跳遠",
+     "do the long jump"
+    ],
+    [
+     "shot put",
+     "推鉛球",
+     "鉛球本身叫 shot"
+    ],
+    [
+     "triathlon",
+     "鐵人三項",
+     "/traɪˈæθlən/　游泳＋自行車＋跑步"
+    ],
+    [
+     "cycling",
+     "騎自行車",
+     "/ˈsaɪklɪŋ/　go cycling；口語也說 ride a bike"
+    ],
+    [
+     "hiking",
+     "健行、爬山",
+     "/ˈhaɪkɪŋ/　go hiking；台灣爬郊山就是 hiking"
+    ],
+    [
+     "rock climbing",
+     "攀岩",
+     "室內攀岩場叫 climbing gym"
+    ],
+    [
+     "gymnastics",
+     "體操",
+     "/dʒɪmˈnæstɪks/　結尾有 s，但當單數用"
+    ],
+    [
+     "yoga",
+     "瑜伽",
+     "/ˈjogə/　do yoga（不是 play yoga）"
+    ],
+    [
+     "dance",
+     "舞蹈",
+     "/dæns/　street dance（街舞）"
+    ],
+    [
+     "jump rope",
+     "跳繩",
+     "動詞也說 jump rope；英式說 skipping"
+    ],
+    [
+     "skateboarding",
+     "溜滑板",
+     "go skateboarding；滑板本身是 skateboard"
+    ],
+    [
+     "inline skating",
+     "溜直排輪",
+     "也叫 rollerblading"
+    ],
+    [
+     "weightlifting",
+     "舉重",
+     "健身房的「重訓」是 weight training"
+    ],
+    [
+     "archery",
+     "射箭",
+     "/ˈɑrtʃərɪ/　弓是 bow，箭是 arrow"
+    ]
+   ]
+  ],
+  [
+   "水上與冬季運動 Water and winter sports",
+   [
+    [
+     "swimming",
+     "游泳",
+     "go swimming；游泳池是 swimming pool"
+    ],
+    [
+     "diving",
+     "跳水；潛水",
+     "跳水比賽叫 diving；背氣瓶潛水叫 scuba diving"
+    ],
+    [
+     "snorkeling",
+     "浮潛",
+     "/ˈsnɔrkḷɪŋ/　墾丁、小琉球常見的活動"
+    ],
+    [
+     "surfing",
+     "衝浪",
+     "go surfing；衝浪板是 surfboard"
+    ],
+    [
+     "rowing",
+     "划船（賽艇）",
+     "/ˈroɪŋ/　划槳是 oar"
+    ],
+    [
+     "canoeing／kayaking",
+     "划獨木舟",
+     "/kəˈnuɪŋ/、/ˈkaɪækɪŋ/　兩種獨木舟，划法不同"
+    ],
+    [
+     "sailing",
+     "帆船",
+     "go sailing"
+    ],
+    [
+     "water skiing",
+     "滑水",
+     "被快艇拖著在水面滑行"
+    ],
+    [
+     "ice skating",
+     "溜冰",
+     "go ice skating；花式滑冰是 figure skating"
+    ],
+    [
+     "skiing",
+     "滑雪",
+     "/ˈskiɪŋ/　go skiing；雪板是 skis"
+    ],
+    [
+     "snowboarding",
+     "單板滑雪",
+     "一塊板子的滑雪"
+    ],
+    [
+     "stand-up paddleboarding",
+     "立式划槳",
+     "縮寫 SUP；近年台灣很流行"
+    ]
+   ]
+  ],
+  [
+   "武術與格鬥 Martial arts",
+   [
+    [
+     "martial arts",
+     "武術",
+     "統稱；一定用複數 arts"
+    ],
+    [
+     "taekwondo",
+     "跆拳道",
+     "/ˌtaɪˈkwɑndo/　do taekwondo"
+    ],
+    [
+     "karate",
+     "空手道",
+     "/kəˈrɑtɪ/　美式重音在第二音節"
+    ],
+    [
+     "judo",
+     "柔道",
+     "/ˈdʒudo/　do judo"
+    ],
+    [
+     "boxing",
+     "拳擊",
+     "/ˈbɑksɪŋ/　拳擊手是 boxer"
+    ],
+    [
+     "kung fu",
+     "功夫",
+     "/ˌkʌŋ ˈfu/　外國人一聽就懂"
+    ],
+    [
+     "fencing",
+     "擊劍",
+     "/ˈfɛnsɪŋ/　fence 也是「籬笆」"
+    ],
+    [
+     "wrestling",
+     "角力、摔角",
+     "/ˈrɛslɪŋ/　t 不發音"
+    ]
+   ]
+  ],
+  [
+   "器材與場地 Equipment and places",
+   [
+    [
+     "ball",
+     "球",
+     "kick the ball（踢球）、throw the ball（丟球）"
+    ],
+    [
+     "bat",
+     "球棒",
+     "baseball bat；bat 也是「蝙蝠」"
+    ],
+    [
+     "racket",
+     "球拍",
+     "網球拍、羽毛球拍；也拼 racquet"
+    ],
+    [
+     "paddle",
+     "桌球拍",
+     "美式說 ping-pong paddle；英式說 bat"
+    ],
+    [
+     "net",
+     "球網",
+     "The ball hit the net.（球打到網子。）"
+    ],
+    [
+     "glove",
+     "手套；棒球手套",
+     "棒球手套也叫 mitt"
+    ],
+    [
+     "helmet",
+     "安全帽、頭盔",
+     "騎腳踏車、打棒球都要戴 helmet"
+    ],
+    [
+     "goal",
+     "球門；進球",
+     "score a goal（進球得分）"
+    ],
+    [
+     "hoop",
+     "籃框",
+     "口語 shoot hoops＝投籃玩"
+    ],
+    [
+     "shuttlecock",
+     "羽毛球（球本身）",
+     "口語叫 birdie"
+    ],
+    [
+     "goggles",
+     "泳鏡、護目鏡",
+     "一定用複數"
+    ],
+    [
+     "sneakers",
+     "運動鞋",
+     "美式；英式說 trainers"
+    ],
+    [
+     "jersey",
+     "球衣",
+     "/ˈdʒɝzɪ/　背後有號碼的那件"
+    ],
+    [
+     "whistle",
+     "哨子",
+     "/ˈhwɪsḷ/　t 不發音"
+    ],
+    [
+     "scoreboard",
+     "計分板",
+     "看比數就看 scoreboard"
+    ],
+    [
+     "stopwatch",
+     "碼錶",
+     "體育課計時用的"
+    ],
+    [
+     "court",
+     "球場（籃球、網球、排球）",
+     "有畫線的硬地場地用 court"
+    ],
+    [
+     "field",
+     "球場（足球、棒球）",
+     "草地、戶外的大場地用 field"
+    ],
+    [
+     "track",
+     "跑道",
+     "running track；學校的操場跑道"
+    ],
+    [
+     "pool",
+     "游泳池",
+     "swimming pool 的口語"
+    ],
+    [
+     "gym",
+     "體育館；健身房",
+     "體育課在美國叫 PE，口語也說 gym class"
+    ],
+    [
+     "stadium",
+     "體育場、球場",
+     "/ˈstedɪəm/　有觀眾席的大型場地"
+    ]
+   ]
+  ],
+  [
+   "比賽與人物 Games and people",
+   [
+    [
+     "team",
+     "隊伍",
+     "Which team do you like?（你喜歡哪一隊？）"
+    ],
+    [
+     "player",
+     "球員、選手",
+     "a basketball player（籃球員）"
+    ],
+    [
+     "teammate",
+     "隊友",
+     "team＋mate（夥伴）"
+    ],
+    [
+     "coach",
+     "教練",
+     "/kotʃ/　The coach is very strict.（教練很嚴格。）"
+    ],
+    [
+     "referee",
+     "裁判（足球、籃球）",
+     "/ˌrɛfəˈri/　重音在最後一個音節"
+    ],
+    [
+     "umpire",
+     "裁判（棒球、網球）",
+     "/ˈʌmpaɪr/　棒球、網球的裁判用這個字"
+    ],
+    [
+     "fan",
+     "球迷、粉絲",
+     "a big baseball fan（超級棒球迷）"
+    ],
+    [
+     "captain",
+     "隊長",
+     "the team captain（隊長）"
+    ],
+    [
+     "opponent",
+     "對手",
+     "/əˈponənt/　重音在第二音節"
+    ],
+    [
+     "game／match",
+     "比賽",
+     "美式多說 game；英式多說 match"
+    ],
+    [
+     "score",
+     "比數；得分",
+     "What's the score?（比數多少？）"
+    ],
+    [
+     "win",
+     "贏",
+     "過去式 won：We won!（我們贏了！）"
+    ],
+    [
+     "lose",
+     "輸",
+     "過去式 lost；不要和 loose（鬆的）搞混"
+    ],
+    [
+     "tie",
+     "平手",
+     "美式；英式說 draw：It's a tie.（平手。）"
+    ],
+    [
+     "champion",
+     "冠軍（人、隊伍）",
+     "the world champion（世界冠軍）"
+    ],
+    [
+     "championship",
+     "錦標賽；冠軍頭銜",
+     "win the championship（贏得冠軍）"
+    ],
+    [
+     "tournament",
+     "錦標賽、聯賽",
+     "/ˈtɝnəmənt/　a tennis tournament（網球錦標賽）"
+    ],
+    [
+     "medal",
+     "獎牌",
+     "gold／silver／bronze medal（金牌／銀牌／銅牌）"
+    ],
+    [
+     "foul",
+     "犯規",
+     "/faʊl/　和 fowl（禽類）同音"
+    ],
+    [
+     "overtime",
+     "延長賽",
+     "美式；英式說 extra time"
+    ]
+   ]
+  ],
+  [
+   "運動會 Sports day",
+   [
+    [
+     "sports day",
+     "運動會",
+     "學校的運動會；美國學校常叫 field day"
+    ],
+    [
+     "opening ceremony",
+     "開幕典禮",
+     "奧運、運動會都有"
+    ],
+    [
+     "relay race",
+     "大隊接力",
+     "接力棒叫 baton"
+    ],
+    [
+     "tug-of-war",
+     "拔河",
+     "the tug-of-war game（拔河比賽）"
+    ],
+    [
+     "three-legged race",
+     "兩人三腳",
+     "legged 唸 /ˈlɛgɪd/"
+    ],
+    [
+     "sack race",
+     "布袋跑",
+     "站進布袋裡跳著前進"
+    ],
+    [
+     "obstacle course",
+     "障礙賽",
+     "/ˈɑbstəkḷ/　越過各種障礙物"
+    ],
+    [
+     "cheerleading",
+     "啦啦隊表演",
+     "啦啦隊員是 cheerleader"
+    ],
+    [
+     "starting line",
+     "起跑線",
+     "Everyone, go to the starting line.（大家到起跑線。）"
+    ],
+    [
+     "finish line",
+     "終點線",
+     "He crossed the finish line first.（他第一個衝過終點線。）"
+    ],
+    [
+     "first place",
+     "第一名",
+     "second place（第二名）、third place（第三名）"
+    ],
+    [
+     "On your marks, get set, go!",
+     "各就各位，預備，跑！",
+     "美式口語也說 Ready, set, go!"
+    ],
+    [
+     "Go, go, go!",
+     "加油、加油！",
+     "幫選手加油最常用；也可以喊選手或隊名"
+    ],
+    [
+     "Good game!",
+     "打得好！",
+     "比賽結束後跟對手說，輸贏都適用"
+    ]
+   ]
+  ]
  ]
 }
