@@ -91,6 +91,10 @@
 "date": "2026-10-13",
 "hash": "8491b4fdedea1cbf70aea0cd8e241532"
 },
+"assets/downloads/ae-feelings-english-a4.pdf": {
+"date": "2026-10-16",
+"hash": "a7440ed4db62c871804b6e2fdea30883"
+},
 "assets/downloads/ae-food-english-a4.pdf": {
 "date": "2026-10-13",
 "hash": "edf82a0b3c21c82fe59e8a336e796ca3"
@@ -341,7 +345,7 @@
 },
 "chart-license": {
 "date": "2026-10-16",
-"hash": "b562061045a0e3ca762c2f3e8dc5b89a"
+"hash": "fa486710951e59408d6808489ae7e992"
 },
 "cheer-up-english": {
 "date": "2026-10-01",
@@ -529,7 +533,7 @@
 },
 "english-vocabulary-by-topic": {
 "date": "2026-10-16",
-"hash": "18968659b26b176ece426fccf323aef5"
+"hash": "c80ae9bd4c2e96cc512b1f738f3fdb33"
 },
 "english-vowels-consonants": {
 "date": "2026-10-13",
@@ -626,6 +630,10 @@
 "fce-writing-practice-part2": {
 "date": "2026-10-11",
 "hash": "4ef995cb69035bf72677bb06d1b950fd"
+},
+"feelings-english": {
+"date": "2026-10-16",
+"hash": "6b9b972aabf154d2bbb1d980e98977b7"
 },
 "flyers-listening-practice-part1": {
 "date": "2026-10-13",

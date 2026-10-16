@@ -49,6 +49,7 @@ PDFS = {
  "valentines-day-english":  ("valentines-day-chart",      "ae-valentines-day-english-a4.pdf", "情人節英文祝福與單字表"),
  "weather-english":         ("weather-english-chart",     "ae-weather-english-a4.pdf",     "天氣英文單字表與學習單"),
  "sports-english":          ("sports-english-chart",      "ae-sports-english-a4.pdf",      "運動英文單字表與學習單"),
+ "feelings-english":        ("feelings-english-chart",    "ae-feelings-english-a4.pdf",    "72 個情緒與感覺形容詞・附 KK 音標"),
  "time-english":            ("time-english-chart",        "ae-time-english-a4.pdf",        "時間英文幾點幾分說法對照表"),
  "food-english":            ("food-english-chart",        "ae-food-english-a4.pdf",        "台灣小吃英文對照表（58 道）"),
  "new-year-english":        ("new-year-chart",            "ae-new-year-english-a4.pdf",    "新年快樂英文祝福與過年單字表"),
@@ -117,7 +118,7 @@ def build(page, chart_key, fname, sub):
     doc = f"""<!doctype html><html lang="zh-Hant-TW"><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 <title>{html.escape(cs['title'])}｜埃森美語</title>
-<style>{CSS}</style></head><body>
+<style>{CSS}{cs.get("css", "")}</style></head><body>
 <div class="head"><div><h1>{html.escape(cs['title'])}</h1><p>{html.escape(sub)}</p></div>
 <div class="br"><img src="{logo}" alt=""><span><b>埃森美語</b>americanenglish.com.tw</span></div></div>
 {body}

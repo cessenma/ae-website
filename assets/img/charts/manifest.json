@@ -466,5 +466,14 @@
   "alt": "運動項目英文對照表：64 種運動的英文與中文對照，附唸法與用法，含籃球、羽毛球、游泳、跆拳道等",
   "title": "運動項目英文對照表",
   "page": "sports-english"
+ },
+ "feelings-english-chart": {
+  "slug": "feelings-english-chart",
+  "png": "/assets/img/charts/feelings-english-chart.webp",
+  "w": 2100,
+  "h": 2799,
+  "alt": "情緒英文單字表：72 個心情、感覺形容詞的英文與中文對照，附 KK 音標，含 happy、sad、angry、nervous、bored 等",
+  "title": "情緒英文單字表",
+  "page": "feelings-english"
  }
 }

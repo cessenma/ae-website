@@ -22,17 +22,31 @@ DATA = json.load(open(os.path.join(SITE, "tools/data/vocab_topics.json"), encodi
 SHELL = os.path.join(SITE, "kk-phonetic-chart/index.html")
 ORIGIN = "https://americanenglish.com.tw"
 
-def tbl(rows, heads):
+def tbl(rows, heads, spec=False, m3=False):
     h = "".join(f"<th>{x}</th>" for x in heads)
-    body = "".join("<tr>" + "".join(f"<td>{html.escape(str(c))}</td>" for c in r) + "</tr>"
-                   for r in rows)
-    return f'<div class="compare reveal"><table><thead><tr>{h}</tr></thead><tbody>{body}</tbody></table></div>'
+    if not spec:
+        body = "".join("<tr>" + "".join(f"<td>{html.escape(str(c))}</td>" for c in r) + "</tr>"
+                       for r in rows)
+        return f'<div class="compare reveal"><table><thead><tr>{h}</tr></thead><tbody>{body}</tbody></table></div>'
+    # spec pages (2026-10-16): the first cell is a row head (bold navy, like the hand-built
+    # pages), and a 3-column table turns into two on phones: column 2 is hidden and shown as a
+    # muted line under column 1 (.m3), because three columns at 375 px wrapped 快樂的、開心的
+    # into four lines. build_chart_images drops the .m3 copy, so the chart keeps three columns.
+    e = lambda c: html.escape(str(c))
+    def row(r):
+        if m3 and len(r) == 3:
+            return (f'<tr><th>{e(r[0])}<span class="m3">{e(r[1])}</span></th>'
+                    f'<td class="m3c">{e(r[1])}</td><td>{e(r[2])}</td></tr>')
+        return f"<tr><th>{e(r[0])}</th>" + "".join(f"<td>{e(c)}</td>" for c in r[1:]) + "</tr>"
+    cls = "compare spec" + (" m3t" if m3 and len(heads) == 3 else "")
+    return (f'<div class="{cls} reveal"><table><thead><tr>{h}</tr></thead>'
+            f'<tbody>{"".join(row(r) for r in rows)}</tbody></table></div>')
 
-def grouped(groups, heads):
+def grouped(groups, heads, **kw):
     out = []
     for name, rows in groups:
         out.append(f'<h3>{html.escape(name)}</h3>')
-        out.append(tbl([list(r) for r in rows], heads))
+        out.append(tbl([list(r) for r in rows], heads, **kw))
     return "\n".join(out)
 
 def sec(title, inner, soft=False):
@@ -52,11 +66,11 @@ def faq(items):
         f'</h3><div class="faq-a"><p>{a}</p></div></div>' for q, a in items)
     return f'<div class="faq">{inner}</div>'
 
-def cta(line):
+def cta(line, h2="單字背起來了，用得出來嗎？"):
     # bg-blue is the site's closing-CTA convention and the anchor route_blocks.py
     # inserts its "what next" section before — without it the page gets no route block.
     return ('<section class="section bg-blue"><div class="wrap"><div class="center stack reveal">'
-            f'<h2>單字背起來了，用得出來嗎？</h2><p class="body">{line}</p>'
+            f'<h2>{h2}</h2><p class="body">{line}</p>'
             '<a class="btn btn-primary" href="/line/">加 LINE 預約試聽</a></div></div></section>')
 
 N  = DATA["numbers"]; M = DATA["months"]; D = DATA["days"]
@@ -432,6 +446,7 @@ HUB_CARDS = [
  ("/weather-english/", "天氣英文", "105 個天氣單字，颱風、寒流、梅雨怎麼說，附句型與文法", "105"),
  ("/food-english/", "食物英文", "335 個食物單字，台灣小吃 58 道、早餐店點餐與介紹一道菜", "335"),
  ("/sports-english/", "運動英文", "120 個運動單字，球類、play／do／go 規則與運動會說法", "120"),
+ ("/feelings-english/", "情緒英文", "72 個心情與感覺形容詞，bored／boring 差別與說心情的句型", "72"),
  ("/moe-1200-words-guide/", "教育部 1200 單字", "108 課綱附錄五完整字表，可線上核對", "1211"),
  ("/moe-2000-words-guide/", "國中 2000 單字", "國中必備字表，程度約 CEFR B1", "2000"),
  ("/kk-phonetic-chart/", "KK 音標表", "41 個音標符號，每個字可點聽發音", "41"),
@@ -1301,6 +1316,53 @@ PAGES["sports-english"] = dict(
     + cta("會說 play basketball 不難，難的是放學後真的用英文聊一場球賽。我們的小班課讓孩子用英文介紹自己最愛的運動、說出比數和輸贏，講到不用想。")),
   faq_n=6)
 
+# ---- spec-driven pages (2026-10-16): one JSON file per page in tools/data/topic_pages/ ----
+# Lets a page be drafted as data (sections of prose / grouped tables / a table / FAQ + a closing
+# line) instead of Python. Schema: slug, published, target, h1, title, desc, hero, sections[], cta,
+# optional index. Each section: title (H2, may hold <em>), optional prose[] (HTML allowed: strong,
+# em, internal links), heads[] + groups[{name, rows}] or rows[] (table cells are plain text, escaped),
+# optional html (raw block after the prose), optional after[] (prose under the table), optional
+# faq[[q, a]], optional soft (bool), optional cls (extra <section> class for the page's own css).
+# Page-level optional: cta_h2, font_href (Google Fonts CSS, this page only), css (inline <style>).
+# The FIRST section's tables become the chart + A4 PDF (build_chart_images SPECS / build_chart_pdfs PDFS).
+SPEC_DIR = os.path.join(SITE, "tools/data/topic_pages")
+
+def from_spec(spec):
+    out = []
+    for i, s in enumerate(spec["sections"]):
+        inner = prose(*s["prose"]) if s.get("prose") else ""
+        if s.get("html"):
+            inner += s["html"]
+        kw = dict(spec=True, m3=s.get("phone_cols") != 3)   # "phone_cols": 3 keeps all three on phones
+        if s.get("groups"):
+            inner += grouped([(g["name"], g["rows"]) for g in s["groups"]], s["heads"], **kw)
+        if s.get("rows"):
+            inner += tbl(s["rows"], s["heads"], **kw)
+        if s.get("after"):
+            inner += prose(*s["after"])
+        if s.get("faq"):
+            inner += faq([(q, a) for q, a in s["faq"]])
+        h = sec(s["title"], inner, soft=s.get("soft", i % 2 == 1))
+        if s.get("cls"):        # a page-specific hook for the spec's own css (e.g. the cursive column)
+            h = h.replace('<section class="section', f'<section class="{s["cls"]} section', 1)
+        out.append(h)
+    out.append(cta(spec["cta"], spec["cta_h2"]) if spec.get("cta_h2") else cta(spec["cta"]))
+    return "".join(out)
+
+if os.path.isdir(SPEC_DIR):
+    for _fn in sorted(os.listdir(SPEC_DIR)):
+        if not _fn.endswith(".json"):
+            continue
+        _sp = json.load(open(os.path.join(SPEC_DIR, _fn), encoding="utf-8"))
+        PAGES[_sp["slug"]] = dict(
+            published=_sp["published"], target=_sp["target"], index=_sp.get("index", 0.5),
+            h1=_sp["h1"], title=_sp["title"], desc=_sp["desc"], hero=_sp["hero"],
+            body=(lambda sp=_sp: from_spec(sp)),
+            faq_n=sum(len(x.get("faq", [])) for x in _sp["sections"]),
+            head_extra=(('<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+                         f'<link rel="stylesheet" href="{_sp["font_href"]}">') if _sp.get("font_href") else "")
+                       + (f'<style>{_sp["css"]}</style>' if _sp.get("css") else ""))
+
 def collides(slug, target):
     """Refuse to create a second page for a keyword the site already targets.
 
@@ -1349,6 +1411,8 @@ def render(slug, cfg):
            "datePublished": cfg.get("published", "2026-09-14"), "dateModified": cfg.get("published", "2026-09-14")}
     head = head.rstrip() + '\n<script type="application/ld+json">' + \
         json.dumps(art, ensure_ascii=False, separators=(",", ":")) + "</script>\n"
+    if cfg.get("head_extra"):
+        head += cfg["head_extra"] + "\n"
 
     main = (f'<main id="top">'
       f'<section class="page-hero"><div class="bg-deco"></div><div class="wrap">'

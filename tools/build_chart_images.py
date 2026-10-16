@@ -178,6 +178,10 @@ SPECS.update({
    title="天氣英文單字對照表", sub="105 個天氣單字 ・ 附唸法與用法 ・ 含颱風、寒流、梅雨",
    alt="天氣英文單字對照表：105 個天氣英文單字與中文對照，附 KK 音標與用法，含颱風、寒流、梅雨等台灣天氣說法",
    foot="可儲存列印｜americanenglish.com.tw"),
+ "feelings-english-chart": dict(page="feelings-english", only=[0, 1, 2, 3, 4, 5, 6], cols=3, width=2100,
+   title="情緒英文單字表", sub="72 個心情與感覺形容詞 ・ 開心、難過、生氣、害怕、驚訝、身體感覺 ・ 附 KK 音標",
+   alt="情緒英文單字表：72 個心情、感覺形容詞的英文與中文對照，附 KK 音標，含 happy、sad、angry、nervous、bored 等",
+   foot="可儲存列印｜americanenglish.com.tw"),
  "sports-english-chart": dict(page="sports-english", only=[0, 1, 2, 3], cols=3, width=2100,   # the 64 sports only: all 7 groups ran 3,825 px tall
    title="運動項目英文對照表", sub="64 種運動 ・ 球類、田徑、水上與冬季、武術 ・ 附唸法與用法",
    alt="運動項目英文對照表：64 種運動的英文與中文對照，附唸法與用法，含籃球、羽毛球、游泳、跆拳道等",
@@ -372,6 +376,8 @@ def extract(page, which="all", max_rows=None, only=None, cards=None):
                 else:
                     body.append(node)
                 first = node
+        for m in tb2.select(".m3"):      # the phone-only copy of column 2 (spec pages)
+            m.decompose()
         for a in tb2.find_all("a"):
             a.replace_with(a.get_text())
         for bad in tb2.find_all(["button", "audio", "svg", "script"]):
@@ -414,7 +420,7 @@ def build(slug, spec):
     logo = "data:image/jpeg;base64," + base64.b64encode(open(lp, "rb").read()).decode()
     doc = f"""<!doctype html><html lang="zh-Hant-TW"><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
-<style>{CSS.replace("__W__", str(W))}</style></head><body><div class="card">
+<style>{CSS.replace("__W__", str(W))}{spec.get("css", "")}</style></head><body><div class="card">
 <div class="head"><h1>{html.escape(spec['title'])}</h1><p>{html.escape(spec['sub'])}</p></div>
 <div class="bar"></div>
 <div class="body {'c3' if cols>=3 else ''}">{body}</div>
@@ -507,7 +513,8 @@ def inject(rec):
     return True
 
 if __name__ == "__main__":
-    want = sys.argv[1:] or list(SPECS)
+    # pdf_only specs feed build_chart_pdfs.py (a print version longer than the on-page chart)
+    want = [w for w in (sys.argv[1:] or list(SPECS)) if not SPECS.get(w, {}).get("pdf_only")]
     man = {}
     mf = os.path.join(OUT, "manifest.json")
     if os.path.exists(mf):
