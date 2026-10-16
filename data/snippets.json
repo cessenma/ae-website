@@ -71,7 +71,7 @@
   "description": "劍橋英檢有用嗎？升學到底加不加分？誠實的答案：基北區（台北、新北、基隆）的高中超額比序不採計英語檢定，會考也不加分——但證書終身有效、私中申請與學習歷程用得到。"
  },
  "cambridge-flyers-guide": {
-  "title": "Flyers 程度到哪裡？＝CEFR A2 起點，下一步考 KET｜劍橋英檢 Flyers 指南"
+  "title": "Flyers 考試程度到哪裡？＝CEFR A2 起點，下一步考 KET｜劍橋英檢 Flyers 指南"
  },
  "cambridge-movers-guide": {
   "title": "Movers 程度到哪裡？＝CEFR A1，盾牌怎麼看｜劍橋英檢 Movers 指南"
@@ -198,7 +198,8 @@
   "description": "英文自我介紹怎麼寫？四段式結構（姓名年級／興趣專長／家庭或學校／收尾）、可直接替換的句型庫、國中與國小長短版範例、英檢口說與私校面試的加分說法。"
  },
  "english-symbol-names": {
-  "description": "符號英文怎麼說？@ 唸 at、底線 _ 是 underscore、# 是 hash。33 個鍵盤與標點符號的英文名稱與唸法對照表，並示範怎麼用英文唸出 email 和網址。"
+  "title": "符號英文名稱與唸法：@、#、米字號、底線 33 個一次學會｜埃森美語",
+  "description": "符號英文怎麼說？@ 唸 at、底線 _ 是 underscore、# 是 hash、米字號 * 是 asterisk。33 個鍵盤與標點符號的英文名稱與唸法對照表，並示範怎麼用英文唸出 email 和網址。"
  },
  "english-tenses-chart": {
   "description": "英文 12 時態總表（附 A4 列印版 PDF）：每個時態的時間軸圖解、結構公式與例句，以及中文母語者最常混淆的幾組時態差別，一張表看完。免費下載。"
@@ -570,6 +571,7 @@
   "description": "KET（A2 Key for Schools）口說測驗完整模擬對話：2 大題逐字稿，每一句英文下面都附中文翻譯，看得到考官問什麼、好的回答長什麼樣子。"
  },
  "ket-vs-gept-comparison": {
+  "title": "KET 英檢 vs GEPT 初級：等級對照與怎麼選？兩張 A2 證書差別｜埃森美語",
   "description": "劍橋 KET 和全民英檢初級都對應 CEFR A2，孩子該考哪個？比較兩者的認可度、計分方式、考試結構與報名費，附 Flyers→KET、初級→PET／中級的等級對照與選擇建議。"
  },
  "kids-english-banqiao": {
