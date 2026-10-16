@@ -1,0 +1,626 @@
+{
+ "slug": "english-card-writing",
+ "published": "2026-10-16",
+ "target": "英文卡片",
+ "index": 0.5,
+ "h1": "英文卡片怎麼寫：開頭、結尾、署名對照表，12 張範例與信封格式",
+ "title": "英文卡片怎麼寫：To/Dear、結尾署名、信封＋12 張範例（附PDF）｜埃森美語",
+ "desc": "英文卡片怎麼寫？41 個開頭、結尾、署名對照（To、Dear、Love、Best wishes 寫給誰），逗號規則，12 張寫給老師、爸媽、朋友的範例，明信片與信封格式，附 PDF。",
+ "hero": "英文卡片最常卡在三個地方：開頭寫 To 還是 Dear、結尾用 Love 還是 Best wishes、名字要寫在哪裡。下面先給 41 個開頭、結尾和署名的對照表（標出<strong>適合寫給誰</strong>，附 A4 列印版），再講卡片的四個部分和逗號規則、12 張寫給老師、爸媽、朋友的完整範例，最後是明信片和英文信封的格式，包括台灣地址怎麼寫成英文。",
+ "sections": [
+  {
+   "title": "英文卡片開頭、結尾、署名對照表（41 個）",
+   "prose": [
+    "一張英文卡片的頭尾是固定的：開頭寫給誰、結尾語、署名。表分三組：<strong>開頭稱呼</strong>、<strong>結尾語</strong>、<strong>署名</strong>，第三欄是<strong>適合寫給誰</strong>——同一句 Love, 寫給媽媽很自然，寫給不熟的大人就太親了。表裡的「 / 」代表換行。",
+    "中間的祝福句依場合查 <a href=\"/english-wishes/\">英文祝福語</a>；生日卡專用的句子在 <a href=\"/happy-birthday-english/\">生日快樂英文</a>；要寫一封完整的信或 Email，看 <a href=\"/english-letter-writing-guide/\">英文書信格式</a>。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "適合寫給誰"
+   ],
+   "groups": [
+    {
+     "name": "開頭稱呼 Openings",
+     "rows": [
+      [
+       "To Amy,",
+       "給 Amy",
+       "同學、朋友、家人；最簡單，孩子最常用"
+      ],
+      [
+       "Dear Amy,",
+       "親愛的 Amy",
+       "任何人都適用，比 To 溫暖一點"
+      ],
+      [
+       "Dear Ms. Lin,",
+       "親愛的林老師",
+       "女老師、女性長輩：Ms.＋姓"
+      ],
+      [
+       "Dear Mr. Chen,",
+       "親愛的陳老師",
+       "男老師、男性長輩：Mr.＋姓"
+      ],
+      [
+       "Dear Teacher Ben,",
+       "親愛的 Ben 老師",
+       "外師、補習班老師（台灣常見的叫法）"
+      ],
+      [
+       "Dear Mom,",
+       "親愛的媽媽",
+       "Mom 當稱呼要大寫；英式拼 Mum"
+      ],
+      [
+       "Dear Dad,",
+       "親愛的爸爸",
+       "爸爸；Daddy 是小小孩的叫法"
+      ],
+      [
+       "Dear Grandma and Grandpa,",
+       "親愛的爺爺奶奶",
+       "外公外婆也是 Grandma、Grandpa"
+      ],
+      [
+       "Dear Aunt May,",
+       "親愛的 May 阿姨",
+       "Aunt、Uncle＋名字；姑姑、阿姨都是 Aunt"
+      ],
+      [
+       "Hi Leo,",
+       "嗨，Leo",
+       "好朋友、同學；輕鬆，像聊天"
+      ],
+      [
+       "Dear Class 501,",
+       "親愛的 501 班",
+       "寫給全班：Class＋班級號碼"
+      ],
+      [
+       "Dear Miller family,",
+       "親愛的 Miller 一家人",
+       "寄宿家庭、朋友的全家"
+      ],
+      [
+       "Happy birthday, Amy!",
+       "Amy，生日快樂！",
+       "生日卡：直接用祝福當開頭"
+      ],
+      [
+       "Happy Teachers' Day, Ms. Lin!",
+       "林老師，教師節快樂！",
+       "節日卡：祝福＋逗號＋名字，取代 Dear"
+      ],
+      [
+       "Merry Christmas, Grandma!",
+       "奶奶，聖誕快樂！",
+       "名字前面要有逗號"
+      ]
+     ]
+    },
+    {
+     "name": "結尾語 Closings",
+     "rows": [
+      [
+       "Love,",
+       "愛你的",
+       "家人、好朋友；小學生寫給老師也很常見"
+      ],
+      [
+       "Lots of love,",
+       "好愛你的",
+       "家人、很親的朋友"
+      ],
+      [
+       "With love,",
+       "滿滿的愛",
+       "家人、長輩"
+      ],
+      [
+       "Hugs,",
+       "抱抱",
+       "孩子之間、家人；很可愛的結尾"
+      ],
+      [
+       "Best wishes,",
+       "祝福你",
+       "老師、長輩、不太熟的人；萬用"
+      ],
+      [
+       "All the best,",
+       "祝一切順利",
+       "畢業、離別、轉學、換工作"
+      ],
+      [
+       "Warm wishes,",
+       "溫暖的祝福",
+       "節日卡、寫給長輩"
+      ],
+      [
+       "Thank you again,",
+       "再次謝謝你",
+       "謝卡；寫給老師、寄宿家庭"
+      ],
+      [
+       "With thanks,",
+       "感謝你",
+       "謝卡；比 Thank you again 簡短"
+      ],
+      [
+       "Take care,",
+       "保重",
+       "朋友、生病的人、要分開的人"
+      ],
+      [
+       "Keep in touch,",
+       "保持聯絡",
+       "畢業、轉學、搬家"
+      ],
+      [
+       "See you soon,",
+       "很快見",
+       "朋友、家人；快要見面時"
+      ],
+      [
+       "Your friend,",
+       "你的朋友",
+       "同學、朋友、筆友"
+      ],
+      [
+       "Yours,",
+       "你的",
+       "朋友、家人；簡短，比 Love 含蓄"
+      ],
+      [
+       "Your student,",
+       "您的學生",
+       "寫給老師；最得體"
+      ],
+      [
+       "Sincerely,",
+       "敬上",
+       "/sɪnˈsɪrlɪ/　寫給不熟的大人；卡片裡偏正式"
+      ],
+      [
+       "Merry Christmas,",
+       "聖誕快樂",
+       "節日卡也可以用祝福語當結尾"
+      ]
+     ]
+    },
+    {
+     "name": "署名 Signatures",
+     "rows": [
+      [
+       "From, / Leo",
+       "Leo 寫",
+       "搭配 To 開頭；孩子的卡片最常見"
+      ],
+      [
+       "Love, / Mom",
+       "愛你的媽媽",
+       "爸媽寫給孩子：署名寫 Mom、Dad 就好"
+      ],
+      [
+       "Love, / Mom and Dad",
+       "愛你的爸爸媽媽",
+       "兩個人一起送：用 and 連起來"
+      ],
+      [
+       "Your student, / Mia Chen",
+       "您的學生 Mia Chen",
+       "給老師：名字＋姓，老師一看就知道是誰"
+      ],
+      [
+       "— Leo",
+       "Leo 留",
+       "破折號＋名字：便條、短短的小卡"
+      ],
+      [
+       "Leo Wang",
+       "全名",
+       "正式卡片、不熟的人：名在前、姓在後"
+      ],
+      [
+       "The Lin family",
+       "林家全家",
+       "全家一起送；也可以寫 The Lins"
+      ],
+      [
+       "XOXO",
+       "親親抱抱",
+       "X 是親親、O 是抱抱；只給家人、好朋友"
+      ],
+      [
+       "P.S. See you on Friday!",
+       "附註：星期五見！",
+       "署名之後想補一句，用 P.S. 開頭"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "英文卡片的 4 個部分：開頭、內文、結尾語、署名",
+   "prose": [
+    "生日卡、謝卡、聖誕卡，英文卡片都是同一個骨架：<strong>開頭 → 內文 → 結尾語 → 署名</strong>。下面用一張寫給老師的卡片，一行一行拆開來看。"
+   ],
+   "heads": [
+    "範例",
+    "卡片上的位置",
+    "規則"
+   ],
+   "rows": [
+    [
+     "Dear Ms. Lin,",
+     "① 開頭（左上）",
+     "稱呼＋逗號，自己一行"
+    ],
+    [
+     "Happy Teachers' Day!",
+     "② 內文第一句",
+     "先寫祝福或寫卡片的原因"
+    ],
+    [
+     "Thank you for reading stories with us every Friday.",
+     "② 內文中間",
+     "寫一件具體的事，最打動人"
+    ],
+    [
+     "See you on Monday!",
+     "② 內文最後",
+     "收尾一句：看向下次見面"
+    ],
+    [
+     "Love,",
+     "③ 結尾語",
+     "第一個字大寫＋逗號，自己一行"
+    ],
+    [
+     "Mia",
+     "④ 署名",
+     "寫在結尾語的下一行；不加句點"
+    ]
+   ],
+   "after": [
+    "<strong>三個逗號規則：</strong>稱呼後面是逗號（Dear Ms. Lin,），不是冒號，冒號只用在美式的正式商業書信；結尾語後面也是逗號（Love,），名字換到下一行；名字後面什麼都不加。結尾語只有第一個字大寫：Best wishes，不是 Best Wishes。完整規則見 <a href=\"/english-punctuation-guide/\">英文標點符號</a> 和 <a href=\"/english-capitalization-guide/\">英文大寫規則</a>。",
+    "<strong>結尾和署名放哪裡？</strong>卡片沒有硬性規定：靠左對齊最簡單，放在右下角也很常見，整張卡片統一就好。卡片空間小，內文兩三句就夠——寫一件你們之間真的發生過的小事，比一長串祝福更有感覺。"
+   ]
+  },
+  {
+   "title": "To 和 From 是什麼意思？To 跟 Dear 差在哪",
+   "prose": [
+    "卡片上的 <strong>To</strong> 就是「給」，後面接收卡片的人；<strong>From</strong> 是「來自」，後面接寫卡片的人，也就是署名。To Amy, … From, Leo 是一組，孩子的卡片和禮物上的小吊牌最常見。",
+    "<strong>Dear</strong> 是書信的開頭，字面是「親愛的」，但在英文裡它只是禮貌的開場，寫給老師、長輩、不熟的人都可以，不代表特別親密。簡單的選法：寫給同學、好朋友，To 和 Hi 都可以；寫給老師、長輩、寄宿家庭，用 Dear 最穩。<strong>一張卡片只選一個開頭</strong>，To 和 Dear 不要疊在一起。"
+   ],
+   "heads": [
+    "寫法",
+    "給人的感覺",
+    "什麼時候用"
+   ],
+   "rows": [
+    [
+     "To Amy, … From, Leo",
+     "簡單、直接",
+     "孩子的卡片、班上交換卡片"
+    ],
+    [
+     "To: Mom / From: Ethan",
+     "像標籤",
+     "禮物上的小吊牌、小卡；用冒號"
+    ],
+    [
+     "Dear Amy, … Love, Leo",
+     "溫暖，像一封短信",
+     "任何卡片；寫給老師、長輩最穩"
+    ],
+    [
+     "Hi Amy, … See you soon, Leo",
+     "輕鬆，像傳訊息",
+     "好朋友、同學"
+    ],
+    [
+     "To my best friend,",
+     "To 加上關係，更有感情",
+     "好朋友的生日卡；不寫名字也可以"
+    ]
+   ]
+  },
+  {
+   "title": "12 張英文卡片範例：寫給老師、爸媽、朋友",
+   "prose": [
+    "每張都照四個部分寫，句子是國小高年級寫得出來的程度。「 / 」代表換行：開頭一行、內文一行、結尾語一行、名字一行。換掉名字，再把中間那句換成你們之間真的發生過的事，就是一張好卡片。",
+    "生日卡的更多句子見 <a href=\"/happy-birthday-english/\">生日快樂英文</a>；謝卡的說法見 <a href=\"/thank-you-english/\">謝謝英文 30 種說法</a>；聖誕卡和新年卡見 <a href=\"/christmas-english/\">聖誕節英文</a>、<a href=\"/new-year-english/\">新年快樂英文</a>。"
+   ],
+   "heads": [
+    "範例（英文）",
+    "寫給誰",
+    "中文"
+   ],
+   "rows": [
+    [
+     "Dear Ms. Lin, / Happy Teachers' Day! Thanks for making spelling fun. / Your student, / Mia",
+     "老師（教師節）",
+     "親愛的林老師：/ 教師節快樂！謝謝您讓拼字變得好好玩。/ 您的學生 / Mia"
+    ],
+    [
+     "Dear Mom, / Happy Mother's Day! Thanks for making breakfast every day. / Love, / Ethan",
+     "媽媽（母親節）",
+     "親愛的媽媽：/ 母親節快樂！謝謝您每天幫我做早餐。/ 愛您的 / Ethan"
+    ],
+    [
+     "Dear Dad, / Happy Father's Day! Thanks for teaching me to swim. / Lots of love, / Chloe",
+     "爸爸（父親節）",
+     "親愛的爸爸：/ 父親節快樂！謝謝你教我游泳。/ 好愛你的 / Chloe"
+    ],
+    [
+     "Happy birthday, Amy! / Thanks for sharing your snacks with me. / Your best friend, / Zoe",
+     "好朋友（生日）",
+     "Amy，生日快樂！/ 謝謝你跟我分享零食。/ 你最好的朋友 / Zoe"
+    ],
+    [
+     "Dear Kevin, / Good luck at your new school! I'll miss you. / Keep in touch, / Leo",
+     "同學（轉學、離別）",
+     "親愛的 Kevin：/ 祝你在新學校一切順利！我會想你的。/ 保持聯絡 / Leo"
+    ],
+    [
+     "Dear Grandpa, / Get well soon! Mom and I will visit you on Sunday. / Love, / Ryan",
+     "爺爺（早日康復）",
+     "親愛的爺爺：/ 祝您早日康復！星期天我會跟媽媽去看您。/ 愛您的 / Ryan"
+    ],
+    [
+     "Dear Jenny, / Congratulations, graduate! I'm so proud of you. / All the best, / Ms. Chen",
+     "學生（畢業，老師寫）",
+     "親愛的 Jenny：/ 恭喜畢業！老師好以你為榮。/ 祝一切順利 / 陳老師"
+    ],
+    [
+     "Dear Miller family, / Thank you for a wonderful stay. I'll miss you! / With thanks, / Yu-Ting",
+     "寄宿家庭（謝卡）",
+     "親愛的 Miller 一家人：/ 謝謝你們讓我住得這麼開心。我會想你們的！/ 感謝你們 / 郁婷"
+    ],
+    [
+     "Dear Ivy, / Merry Christmas! Thank you for the cute pencil case. / Hugs, / Nina",
+     "好朋友（聖誕節）",
+     "親愛的 Ivy：/ 聖誕快樂！謝謝你送我可愛的鉛筆盒。/ 抱抱 / Nina"
+    ],
+    [
+     "Dear Uncle Tom, / Happy New Year! I hope this year is your best yet. / Best wishes, / Kai",
+     "舅舅（新年）",
+     "親愛的 Tom 舅舅：/ 新年快樂！希望今年是你最棒的一年。/ 祝福你 / Kai"
+    ],
+    [
+     "Dear Lily and Sam, / Happy wedding day! Wishing you a lifetime of love. / Warm wishes, / The Lins",
+     "同事、朋友（婚禮）",
+     "親愛的 Lily 和 Sam：/ 新婚快樂！祝你們一輩子相親相愛。/ 溫暖的祝福 / 林家全家"
+    ],
+    [
+     "Dear Ben, / I'm sorry I broke your ruler. Here's a new one for you. / Your friend, / Jason",
+     "朋友（道歉）",
+     "親愛的 Ben：/ 對不起，我把你的尺弄斷了。這把新的送給你。/ 你的朋友 / Jason"
+    ]
+   ],
+   "after": [
+    "這種三、四句的短卡片，正好也是劍橋 KET 寫作的短訊息題型：讀情境、寫一則 25 字以上的訊息。想練習可以看 <a href=\"/ket-rw-practice-part6/\">KET 寫作 Part 6 短訊息</a>。"
+   ]
+  },
+  {
+   "title": "明信片英文格式：左邊寫留言，右邊寫地址",
+   "prose": [
+    "明信片沒有信封，背面一分為二：<strong>左半邊寫留言，右半邊寫收件人地址，郵票貼右上角</strong>。寄國外也是這樣寫：美國郵政的國際郵件規則就要求，寫地址那一面至少整個右半邊要留給收件地址、郵票和郵局的標記。"
+   ],
+   "heads": [
+    "位置",
+    "寫什麼",
+    "提醒"
+   ],
+   "rows": [
+    [
+     "正面",
+     "照片或圖案",
+     "不用寫字"
+    ],
+    [
+     "背面左半邊",
+     "留言：開頭、兩三句近況、結尾語、署名",
+     "寫不下就把字寫小，不要超過中線"
+    ],
+    [
+     "背面右上角",
+     "郵票",
+     "寄國外要貼國際郵資的郵票"
+    ],
+    [
+     "背面右半邊",
+     "收件人姓名＋地址",
+     "英文地址由小寫到大，寫法見下一段"
+    ],
+    [
+     "右半邊最後一行",
+     "國名，全部大寫",
+     "例如 USA、JAPAN；寄回台灣寫 TAIWAN"
+    ],
+    [
+     "寄件人地址",
+     "可寫可不寫",
+     "要寫就寫在左半邊最上面"
+    ]
+   ],
+   "after": [
+    "<strong>明信片寫什麼？</strong>明信片沒有封口，郵差和家人都看得到，寫旅行近況就好：在哪裡、天氣、做了什麼、一句想念。範例：<strong>Hi Teacher Ben! / Greetings from Tokyo! It's cold, but the ramen is amazing. / See you soon, / Mia</strong>（Ben 老師好！從東京寄給你問候！這裡很冷，但拉麵超好吃。很快見，Mia）。Greetings from（地名）! 和 Wish you were here!（真希望你也在這裡！）是明信片最經典的兩句。"
+   ]
+  },
+  {
+   "title": "英文信封格式：寄件人、收件人、郵票位置＋台灣地址英文寫法",
+   "prose": [
+    "英文的橫式信封（envelope /ˈɛnvəˌlop/）有三個固定位置：<strong>左上角寫寄件人</strong>（自己的姓名和地址，信寄不到時會退回這裡）、<strong>正中間寫收件人</strong>、<strong>右上角貼郵票</strong>。每一行靠左對齊，第一行是姓名；寄國外時，最後一行只寫國名，全部大寫，例如 USA、JAPAN。",
+    "<strong>英文地址的順序跟中文相反：由小寫到大。</strong>中文從縣市寫到門牌，英文從門牌寫到縣市：樓 → 號 → 弄 → 巷 → 段 → 路／街 → 區 → 市 → 郵遞區號 → 國名，每一項用逗號隔開。下表的縮寫是中華郵政「地址英譯寫法」列出的寫法；路名用漢語拼音，自己家的英文地址可以到中華郵政網站的「中文地址英譯」查詢。"
+   ],
+   "heads": [
+    "英文寫法",
+    "中文",
+    "說明"
+   ],
+   "rows": [
+    [
+     "Ms. Amy Lin",
+     "收件人",
+     "第一行：稱謂＋名＋姓"
+    ],
+    [
+     "2F",
+     "○樓",
+     "樓＝F，英文地址從這裡開始寫"
+    ],
+    [
+     "No. 5",
+     "○號",
+     "號＝No.（Number），寫在數字前"
+    ],
+    [
+     "Aly. 3",
+     "○弄",
+     "弄＝Aly.（Alley）"
+    ],
+    [
+     "Ln. 12",
+     "○巷",
+     "巷＝Ln.（Lane）"
+    ],
+    [
+     "Sec. 1",
+     "○段",
+     "段＝Sec.（Section），寫在路名前面"
+    ],
+    [
+     "Zhongshan Rd.",
+     "○○路",
+     "路＝Rd.（Road）；路名用漢語拼音"
+    ],
+    [
+     "Datong St.",
+     "○○街",
+     "街＝St.（Street）"
+    ],
+    [
+     "E., W., S., N.",
+     "東／西／南／北",
+     "金山南路＝Jinshan S. Rd."
+    ],
+    [
+     "Banqiao Dist.",
+     "○○區",
+     "區＝Dist.（District）"
+    ],
+    [
+     "New Taipei City",
+     "○○市",
+     "City 不縮寫"
+    ],
+    [
+     "220○○○",
+     "郵遞區號",
+     "寫在城市後面；3+3 共 6 碼，板橋前 3 碼是 220"
+    ],
+    [
+     "TAIWAN",
+     "國名",
+     "從國外寄回台灣才寫；最後一行、全部大寫"
+    ]
+   ],
+   "after": [
+    "<strong>完整範例：</strong>中華郵政總公司的地址「臺北市大安區金山南路二段55號」，寫在信封上是三行：<strong>No. 55, Sec. 2, Jinshan S. Rd., / Da'an Dist., Taipei City 106409 / TAIWAN</strong>。號在最前，接著段、路、區、市和郵遞區號，國名自己一行。台灣機關的英文地址常把國名寫成 Taiwan (R.O.C.)；從國外寄回台灣，最後一行寫 TAIWAN 就很清楚。",
+    "<strong>寄到美國：</strong>美國地址本來就是由小到大，通常三行：姓名；門牌＋街名（例如 25 Oak Street）；城市、州的兩個字母縮寫、郵遞區號（例如 Austin, TX 78701）；從台灣寄出時，最後再加一行 USA。Rd.、St.、Ave. 這些縮寫的意思見 <a href=\"/english-abbreviations-guide/\">英文縮寫大全</a>。"
+   ]
+  },
+  {
+   "title": "英文卡片常見錯誤：Dear my teacher、大小寫和 Ms./Mrs.",
+   "prose": [
+    "下面這幾個錯，台灣學生的卡片上最常見。每一個都是格式問題，改一次就記得。"
+   ],
+   "heads": [
+    "✗ 常見寫法",
+    "✓ 正確寫法",
+    "為什麼"
+   ],
+   "rows": [
+    [
+     "Dear my teacher,",
+     "Dear Ms. Lin,",
+     "Dear 後面直接接稱呼，不加 my；也不用職業當稱呼"
+    ],
+    [
+     "Dear Teacher Lin,",
+     "Dear Ms. Lin,",
+     "英文不說 Teacher＋姓；Teacher＋名字是補習班的叫法"
+    ],
+    [
+     "To: Dear Amy,",
+     "Dear Amy,",
+     "To 和 Dear 選一個就好"
+    ],
+    [
+     "Dear Mom:",
+     "Dear Mom,",
+     "卡片的稱呼用逗號；冒號只用在正式商業書信"
+    ],
+    [
+     "Thank You For Everything!",
+     "Thank you for everything!",
+     "句子只有第一個字和專有名詞大寫"
+    ],
+    [
+     "Lots Of Love,",
+     "Lots of love,",
+     "結尾語只有第一個字大寫"
+    ],
+    [
+     "Love Mia.",
+     "Love, / Mia",
+     "結尾語加逗號，名字換行，不加句點"
+    ],
+    [
+     "Dear Mrs. Lin,（不知道婚姻狀態）",
+     "Dear Ms. Lin,",
+     "不確定就用 Ms.，最安全"
+    ]
+   ],
+   "after": [
+    "<strong>Mr.、Ms.、Mrs.、Miss 怎麼選：</strong>Mr.（/ˈmɪstɚ/）用於男性；Ms.（/mɪz/）用於女性，不管結婚與否，寫給女老師最安全；Mrs.（/ˈmɪsɪz/）是已婚女性；Miss（/mɪs/）是未婚女性，美國幼兒園也常聽到孩子用 Miss＋名字叫老師（Miss Amy）。美式寫法 Mr.、Ms.、Mrs. 後面都有句點，英式通常不加。"
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "英文卡片常見問題",
+   "faq": [
+    [
+     "英文卡片 To 是什麼意思？",
+     "To 是「給」，後面接收卡片的人，To Amy, 就是「給 Amy」。它常和 From（來自，也就是署名）成對出現：To Amy, … From, Leo。To 簡單直接，適合孩子的卡片和禮物小卡；寫給老師、長輩用 Dear 比較得體。"
+    ],
+    [
+     "英文卡片結尾要怎麼寫？",
+     "結尾語寫在內文下面、自己一行，第一個字大寫、後面加逗號，再換行寫名字。家人和好朋友用 Love, 或 Lots of love,；老師、長輩用 Best wishes, 或 Your student,；謝卡用 Thank you again,。"
+    ],
+    [
+     "寫給老師的卡片可以用 Love 嗎？",
+     "小學生寫給自己的老師用 Love, 很常見，美國老師也會覺得溫暖。國中以上，或寫給不熟的老師，改用 Your student,、Best wishes, 或 Thank you again, 比較得體。"
+    ],
+    [
+     "英文卡片署名寫在哪裡？",
+     "署名寫在結尾語的下一行，只寫名字、不加句點，例如 Love, 換行寫 Mia。靠左或放在右下角都可以，整張卡片一致就好；寫給不熟的人可以寫全名，名在前、姓在後。"
+    ],
+    [
+     "英文信封地址怎麼寫？",
+     "寄件人寫在左上角，收件人寫在正中間，郵票貼右上角。英文地址由小寫到大：樓、號、弄、巷、段、路、區、市、郵遞區號；寄國外時，最後一行只寫國名並全部大寫，例如 USA。"
+    ],
+    [
+     "明信片英文格式怎麼寫？",
+     "背面左半邊寫留言，右半邊寫收件人姓名和地址，郵票貼右上角。留言兩三句就好，常用 Greetings from（地名）! 開頭，See you soon, 或 Love, 收尾，最後署名。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "卡片寫得出來，當面說得出口嗎？",
+ "cta": "卡片可以慢慢寫，見到老師、朋友時卻要馬上開口。我們的小班課把道謝、祝福、道別放進真實的情境裡，讓孩子寫得出來的句子，也說得出口。"
+}

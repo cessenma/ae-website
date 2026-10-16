@@ -1423,7 +1423,7 @@ def render(slug, cfg):
       f'{cfg["body"]()}</main>')
 
     tail = shell.split("</head>", 1)[1]
-    tail = re.sub(r'<main id="top">.*?</main>', main, tail, flags=re.S)
+    tail = re.sub(r'<main id="top">.*?</main>', lambda m: main, tail, flags=re.S)   # main may hold a script with \u escapes
     tail = re.sub(r"<!-- AE:CHART.*?<!-- AE:CHART.*?end -->\n?", "", tail, flags=re.S)
     tail = re.sub(r"<!-- AE:ROUTE -->.*?<!-- /AE:ROUTE -->\n?", "", tail, flags=re.S)
     out = head + "</head>" + tail

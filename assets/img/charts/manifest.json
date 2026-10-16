@@ -502,5 +502,32 @@
   "alt": "年級英文對照表：台灣小一到大四對應美國 1st grade 到 senior、英國 Year 2 到 Year 13 的年級與年齡，國一是 7th grade",
   "title": "年級英文對照表",
   "page": "school-grades-english"
+ },
+ "english-card-writing-chart": {
+  "slug": "english-card-writing-chart",
+  "png": "/assets/img/charts/english-card-writing-chart.webp",
+  "w": 2200,
+  "h": 2057,
+  "alt": "英文卡片開頭結尾署名對照表：To、Dear 開頭，Love、Best wishes、Your student 結尾，署名寫法與適合寫給誰",
+  "title": "英文卡片開頭、結尾、署名對照表",
+  "page": "english-card-writing"
+ },
+ "english-wishes-chart": {
+  "slug": "english-wishes-chart",
+  "png": "/assets/img/charts/english-wishes-chart.webp",
+  "w": 2400,
+  "h": 2285,
+  "alt": "祝福英文對照表：萬用祝福短句、畢業祝福、考試順利、早日康復的英文說法與中文對照，標出適合對象與語氣",
+  "title": "祝福英文對照表",
+  "page": "english-wishes"
+ },
+ "english-cursive-chart": {
+  "slug": "english-cursive-chart",
+  "png": "/assets/img/charts/english-cursive-chart.webp",
+  "w": 1400,
+  "h": 2723,
+  "alt": "英文草寫字母表 A 到 Z：26 個草寫大寫與小寫字母的寫法對照，附中文寫法提示",
+  "title": "英文草寫 A–Z 大小寫對照表",
+  "page": "english-cursive"
  }
 }

@@ -780,7 +780,8 @@
       ]
      ]
     }
-   ]
+   ],
+   "phone_cols": 3
   },
   {
    "title": "英文複數規則一覽：十條規則一張表",
@@ -878,7 +879,8 @@
    ],
    "after": [
     "要特別注意的是 house：單數唸 /haʊs/，複數 houses 唸 /ˈhaʊzɪz/，中間的 s 也變成 /z/。很多孩子的問題不是唸錯，而是<strong>整個 s 不見了</strong>——寫得出 books，嘴巴卻唸成 book。附聽辨練習的完整說明見 <a href=\"/plural-s-past-ed-pronunciation/\">-s 和 -ed 的三種唸法</a>。"
-   ]
+   ],
+   "phone_cols": 3
   },
   {
    "title": "不可數名詞：沒有複數，要用量詞來數",
@@ -1047,7 +1049,8 @@
      "The news is good.",
      "news 看起來像複數，其實當單數用"
     ]
-   ]
+   ],
+   "phone_cols": 3
   },
   {
    "title": "英文複數小練習（10 題附答案）",

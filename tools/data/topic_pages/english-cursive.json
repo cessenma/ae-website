@@ -1,0 +1,614 @@
+{
+ "slug": "english-cursive",
+ "published": "2026-10-16",
+ "target": "英文草寫",
+ "index": 1.2,
+ "h1": "英文草寫 A–Z 大小寫對照：草寫英文字母怎麼寫、怎麼連筆，附常用字範例",
+ "title": "英文草寫 A–Z 大小寫對照＋練習 PDF：26 個草寫字母寫法與範例｜埃森美語",
+ "desc": "英文草寫 26 個字母大小寫對照表，每個字母附寫法提示；草寫英文怎麼連筆、容易認錯的 Q、G、r、s，Happy Birthday 等 20 個常用字草寫範例，附 A4 列印 PDF。",
+ "hero": "草寫（cursive，唸 /ˈkɝsɪv/）是把英文字母一筆連著寫的手寫字。台灣國小教的是印刷體，所以第一次看到草寫的 Q、G、r，孩子和家長很容易認不出來，想在卡片上寫一句 Happy Birthday 也不知道從哪裡下筆。這一頁先給 26 個字母的<strong>印刷體與草寫大小寫對照表</strong>（附寫法提示和 A4 PDF），接著講字母怎麼連筆、大寫和小寫的差別、最容易寫錯的字母、20 個常用字的草寫範例和練習方法，最後說明草寫和花體有什麼不同、美國小孩現在還學不學草寫。",
+ "sections": [
+  {
+   "title": "英文草寫 A–Z 大小寫對照表（26 個字母，附寫法提示）",
+   "prose": [
+    "第一欄是印刷體，第二欄是同一組字母的<strong>草寫</strong>，第三欄是寫法提示：從哪裡起筆、圈往哪個方向繞、怎麼接下一個字母。表格照字母順序分成三組，方便查；真的要開始練，建議照下面「練習方法」的筆畫家族順序，一次練一組。",
+    "草寫有好幾種教法，這裡用的是美國小學常見的傳統草寫字形：字母往右斜，小寫幾乎都連在一起。學校老師教的字形如果略有不同，以老師的為準。草寫在 108 課綱裡叫做<strong>連續體</strong>（連續書寫體）。還不熟印刷體的孩子，請先用 <a href=\"/english-alphabet-worksheet/\">英文字母練習表</a> 把 26 個大小寫寫穩；字母的唸法和順序見 <a href=\"/english-alphabet-guide/\">英文字母表</a>。"
+   ],
+   "heads": [
+    "印刷體",
+    "草寫",
+    "寫法提示"
+   ],
+   "groups": [
+    {
+     "name": "A–I（9 個字母）",
+     "rows": [
+      [
+       "A a",
+       "A a",
+       "大寫像放大的小寫 a；小寫先往左繞圈封口，再直線下來往右收"
+      ],
+      [
+       "B b",
+       "B b",
+       "大寫先寫斜直線，再回頂端繞兩個肚子；小寫拉高圈，收在中線"
+      ],
+      [
+       "C c",
+       "C c",
+       "大寫從頂端小圈往左繞大半圓；小寫頂端先打小勾，再往左繞下來"
+      ],
+      [
+       "D d",
+       "D d",
+       "大寫斜線下來，底部打小圈，再往右繞回頂端；小寫是 a 的圓接高直線"
+      ],
+      [
+       "E e",
+       "E e",
+       "大寫像反寫的 3，中間打一個小圈；小寫從基線斜上去打一個小圈"
+      ],
+      [
+       "F f",
+       "F f",
+       "大寫頂端一條波浪蓋，直線往左彎，中間多一短橫；小寫上下各一圈"
+      ],
+      [
+       "G g",
+       "G g",
+       "大寫從左下斜上去繞一個高圈，最後往右收一小橫；小寫尾巴往左繞圈"
+      ],
+      [
+       "H h",
+       "H h",
+       "大寫兩條彎直線，右邊那條在中間繞小圈當橫線；小寫高圈接一個駝峰"
+      ],
+      [
+       "I i",
+       "I i",
+       "大寫從左邊往右上繞到頂線，再直直下來；小寫斜上斜下，最後點點"
+      ]
+     ]
+    },
+    {
+     "name": "J–R（9 個字母）",
+     "rows": [
+      [
+       "J j",
+       "J j",
+       "大寫像 I，但直線穿過基線，下面再繞圈；小寫尾巴往左繞，再點點"
+      ],
+      [
+       "K k",
+       "K k",
+       "大寫右半從右上往中間收小圈再踢出去；小寫高圈下來，再繞小圈踢出"
+      ],
+      [
+       "L l",
+       "L l",
+       "大寫頂端一個小圈、底部一個小圈；小寫從基線拉一個高圈下來"
+      ],
+      [
+       "M m",
+       "M m",
+       "大寫開頭先勾一下，連三個駝峰；小寫也是三個駝峰，比印刷體多一個"
+      ],
+      [
+       "N n",
+       "N n",
+       "大寫開頭先勾一下，連兩個駝峰；小寫也是兩個駝峰，比印刷體多一個"
+      ],
+      [
+       "O o",
+       "O o",
+       "大寫從頂端往左繞一圈，在頂端打小圈收；小寫收在中線，從高處接"
+      ],
+      [
+       "P p",
+       "P p",
+       "大寫先寫斜直線，再回頂端往右繞肚子；小寫直線拉到基線下，再回來繞圓"
+      ],
+      [
+       "Q q",
+       "Q q",
+       "大寫長得像數字 2，底部打圈往右收；小寫尾巴往右繞圈，跟 g 相反"
+      ],
+      [
+       "R r",
+       "R r",
+       "大寫像 P 再往右下踢一腳；小寫上到中線上方，打個小平台再往下"
+      ]
+     ]
+    },
+    {
+     "name": "S–Z（8 個字母）",
+     "rows": [
+      [
+       "S s",
+       "S s",
+       "大寫從左下往上拉到頂端，再大彎下來收在左邊；小寫尖頂往下包回基線"
+      ],
+      [
+       "T t",
+       "T t",
+       "大寫跟 F 一樣有波浪頂蓋，但中間沒有橫；小寫比 l 矮，最後補一橫"
+      ],
+      [
+       "U u",
+       "U u",
+       "大寫開頭先勾一下，再下、上、下；小寫斜上斜下兩次，像兩個杯子"
+      ],
+      [
+       "V v",
+       "V v",
+       "大寫先勾一下，下到基線再往上，寫完提筆；小寫收在中線，從高處接"
+      ],
+      [
+       "W w",
+       "W w",
+       "大寫像兩個 V 連在一起，寫完提筆；小寫像 u 多一筆，收在中線"
+      ],
+      [
+       "X x",
+       "X x",
+       "大小寫都先寫一個拱下來再往上，提筆再補一條斜線交叉"
+      ],
+      [
+       "Y y",
+       "Y y",
+       "大小寫都先拱一下、下來再上去，尾巴拉到基線下往左繞圈"
+      ],
+      [
+       "Z z",
+       "Z z",
+       "大小寫都像寫一個數字 3，下半部拉到基線下繞一個圈"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "習慣上，一個字要整個寫完再回頭補小筆畫：i、j 的點，t 的橫線，x 的斜線，都是最後才加。字和字之間要提筆、留一點空隙，不要整句連成一串。"
+   ],
+   "phone_cols": 3,
+   "cls": "cur"
+  },
+  {
+   "title": "草寫怎麼連筆：大部分從基線接，<em>b、o、v、w</em> 從高處接",
+   "prose": [
+    "草寫的每個小寫字母都有一條<strong>起筆線</strong>和一條<strong>收筆線</strong>。大部分字母收在基線（四線三格的第三線），收筆線從右下往右上拉，剛好變成下一個字母的起筆線，所以整個字可以不提筆寫完。",
+    "有四個字母例外：<strong>b、o、v、w 的收筆停在中線</strong>（小寫字母身體的頂端），連筆線要在中線的高度往右平拉過去，下一個字母就得從高處開始寫。這是初學者容易卡住的地方：接在這四個字母後面的 e、r、s、a，開頭會跟平常長得不太一樣。下表前三行是一般連法，後七行是高位連筆。"
+   ],
+   "heads": [
+    "字母組合",
+    "草寫",
+    "連筆要注意"
+   ],
+   "rows": [
+    [
+     "it",
+     "it",
+     "一般連法：i 收在基線，往右上拉直接接 t"
+    ],
+    [
+     "an",
+     "an",
+     "一般連法：a 的收筆線變成 n 的第一個拱"
+    ],
+    [
+     "me",
+     "me",
+     "一般連法：m 最後一筆往右上，接 e 的小圈"
+    ],
+    [
+     "bo",
+     "bo",
+     "高位連筆：b 收在中線，平拉過去接 o 的頂端"
+    ],
+    [
+     "be",
+     "be",
+     "高位連筆：e 從中線開始，圈要打小一點"
+    ],
+    [
+     "br",
+     "br",
+     "高位連筆：從中線平拉過去，直接上 r 的小平台"
+    ],
+    [
+     "oa",
+     "oa",
+     "高位連筆：o 的收筆接 a，a 從頂端往左繞"
+    ],
+    [
+     "on",
+     "on",
+     "高位連筆：o 收在中線，n 的第一個拱從高處開始"
+    ],
+    [
+     "ve",
+     "ve",
+     "高位連筆：v 收在中線，e 的小圈從上面打"
+    ],
+    [
+     "wi",
+     "wi",
+     "高位連筆：w 收在中線，接 i 時往下斜"
+    ]
+   ],
+   "phone_cols": 3,
+   "cls": "cur"
+  },
+  {
+   "title": "大寫和小寫：哪些大寫好認、哪些寫完要提筆",
+   "prose": [
+    "草寫的小寫幾乎每個都連在一起，大寫就不一定。收筆在右下、留了一條往右上連筆線的大寫（例如 A、C、E、H、K、M、N、U），寫完可以不提筆，直接接下一個小寫；收筆停在字母上面、左邊或中間的大寫（例如 B、D、F、O、P、T、V、W、X），寫完要提筆，下一個字母另外起筆。各家教材的規定不完全一樣，英國不少學校教的連寫甚至規定大寫一律不連，所以只要看得清楚，兩種寫法都不算錯。",
+    "大寫什麼時候用，規則跟印刷體一樣：句子開頭、人名地名、I（我）、星期和月份，完整規則見 <a href=\"/english-capitalization-guide/\">英文大寫規則</a>。下表把 26 個大寫照「好不好認」分成六組，越下面的越需要多看幾眼。"
+   ],
+   "heads": [
+    "印刷體",
+    "草寫",
+    "怎麼認"
+   ],
+   "rows": [
+    [
+     "A C O",
+     "A C O",
+     "像放大的小寫，最好認"
+    ],
+    [
+     "M N U V W Y Z",
+     "M N U V W Y Z",
+     "開頭多一個小勾，其餘像放大的小寫"
+    ],
+    [
+     "B D P R",
+     "B D P R",
+     "還看得出印刷體的樣子，多了圈和斜度"
+    ],
+    [
+     "E H K L X",
+     "E H K L X",
+     "多了小圈或弧線，對照一次就記得"
+    ],
+    [
+     "F T",
+     "F T",
+     "頂端都是波浪蓋，F 中間多一短橫"
+    ],
+    [
+     "G I J Q S",
+     "G I J Q S",
+     "跟印刷體差最多：Q 像數字 2，G 和 S 從左下往上起筆"
+    ]
+   ],
+   "phone_cols": 3,
+   "cls": "cur"
+  },
+  {
+   "title": "常見寫錯、認錯的草寫字母",
+   "prose": [
+    "草寫難的往往不是連筆，而是有幾個字母長得跟印刷體完全不一樣。國中英語課綱要求學生「能辨識連續書寫體大小寫字母」，所以就算平常不寫草寫，下面這幾個也值得認得。"
+   ],
+   "heads": [
+    "字母",
+    "草寫",
+    "要注意"
+   ],
+   "rows": [
+    [
+     "r",
+     "r",
+     "頂端是一個小平台；少了平台像沒點的 i，寫圓了像 n"
+    ],
+    [
+     "s",
+     "s",
+     "不是印刷體 s 縮小：尖頂往下繞，底部包回基線"
+    ],
+    [
+     "z",
+     "z",
+     "像數字 3，下半部要拉到基線下繞圈，別漏掉"
+    ],
+    [
+     "f",
+     "f",
+     "上下各一個圈，下圈穿過基線；漏掉下圈會像 l"
+    ],
+    [
+     "e、l",
+     "e l",
+     "都是圈：e 的圈只到中線，l 要拉到頂線"
+    ],
+    [
+     "n、m",
+     "n m",
+     "草寫 n 兩個駝峰、m 三個，都比印刷體多一個，容易數錯"
+    ],
+    [
+     "Q",
+     "Q",
+     "長得像數字 2：底部的小圈和往右的尾巴不能省"
+    ],
+    [
+     "G",
+     "G",
+     "從左下斜上去繞高圈，跟印刷體 G 完全不像"
+    ],
+    [
+     "I、J",
+     "I J",
+     "上半部很像；I 停在基線，J 穿過基線往下繞圈"
+    ],
+    [
+     "F、T",
+     "F T",
+     "頂蓋一樣，差在 F 中間多一短橫"
+    ]
+   ],
+   "phone_cols": 3,
+   "cls": "cur"
+  },
+  {
+   "title": "20 個常用字與祝福語的英文草寫範例",
+   "prose": [
+    "想在卡片上寫草寫的人，最常寫的就是這幾句，第二欄就是草寫的樣子，可以照著描。大寫照一般規則：卡片標題像 Happy Birthday 兩個字都大寫，I（我）永遠大寫。整張卡片怎麼寫見 <a href=\"/english-card-writing/\">英文卡片寫法</a>；更多祝福句見 <a href=\"/english-wishes/\">英文祝福語</a>、<a href=\"/happy-birthday-english/\">生日快樂英文</a> 和 <a href=\"/christmas-english/\">聖誕節英文</a>，各種謝謝的說法見 <a href=\"/thank-you-english/\">謝謝英文</a>。"
+   ],
+   "heads": [
+    "英文",
+    "草寫",
+    "中文"
+   ],
+   "rows": [
+    [
+     "Happy Birthday",
+     "Happy Birthday",
+     "生日快樂（卡片標題，兩個字都大寫）"
+    ],
+    [
+     "Thank you",
+     "Thank you",
+     "謝謝你"
+    ],
+    [
+     "Thank you so much",
+     "Thank you so much",
+     "非常謝謝你"
+    ],
+    [
+     "Love",
+     "Love",
+     "愛（卡片最後一行常見）"
+    ],
+    [
+     "I love you",
+     "I love you",
+     "我愛你（I 永遠大寫）"
+    ],
+    [
+     "With love",
+     "With love",
+     "獻上我的愛（寫在署名前一行）"
+    ],
+    [
+     "Dear Mom",
+     "Dear Mom",
+     "親愛的媽媽（卡片開頭）"
+    ],
+    [
+     "From Amy",
+     "From Amy",
+     "Amy 寫的（署名，換成自己的名字）"
+    ],
+    [
+     "Best wishes",
+     "Best wishes",
+     "祝福你（卡片結尾）"
+    ],
+    [
+     "Good luck",
+     "Good luck",
+     "祝你好運"
+    ],
+    [
+     "Congratulations",
+     "Congratulations",
+     "恭喜（字很長，t 的橫和 i 的點最後補）"
+    ],
+    [
+     "Merry Christmas",
+     "Merry Christmas",
+     "聖誕快樂"
+    ],
+    [
+     "Happy New Year",
+     "Happy New Year",
+     "新年快樂"
+    ],
+    [
+     "Happy Father's Day",
+     "Happy Father's Day",
+     "父親節快樂（Father's 有一撇）"
+    ],
+    [
+     "Happy Mother's Day",
+     "Happy Mother's Day",
+     "母親節快樂（Mother's 有一撇）"
+    ],
+    [
+     "Happy Valentine's Day",
+     "Happy Valentine's Day",
+     "情人節快樂"
+    ],
+    [
+     "Family",
+     "Family",
+     "家人"
+    ],
+    [
+     "Friends forever",
+     "Friends forever",
+     "永遠的好朋友"
+    ],
+    [
+     "Teacher",
+     "Teacher",
+     "老師"
+    ],
+    [
+     "You're the best",
+     "You're the best",
+     "你最棒了"
+    ]
+   ],
+   "phone_cols": 3,
+   "cls": "cur"
+  },
+  {
+   "title": "輸入英文，看草寫長什麼樣",
+   "prose": [
+    "很多人搜尋「英文草寫轉換」「草寫產生器」，要的就是這個：下方輸入框可以打任何英文，例如孩子的英文名字、卡片上想寫的一句話，馬上看到美式草寫的樣子，再拿筆照著寫一次。還沒有英文名字的話，先看 <a href=\"/english-names/\">英文名字怎麼取</a>。"
+   ],
+   "html": "<div class=\"cw reveal\"><label for=\"cw-in\">輸入英文（字母、名字或一句話）</label><input id=\"cw-in\" type=\"text\" maxlength=\"40\" value=\"Happy Birthday\" autocomplete=\"off\" autocapitalize=\"off\" spellcheck=\"false\"><div class=\"cw-out\" id=\"cw-out\" aria-live=\"polite\">Happy Birthday</div><div class=\"cw-chips\"><button type=\"button\">Thank you</button><button type=\"button\">I love you</button><button type=\"button\">Merry Christmas</button><button type=\"button\">Mom</button><button type=\"button\">Best wishes</button><button type=\"button\">Aa Bb Cc Dd Ee</button></div></div><script>(function(){var i=document.getElementById('cw-in'),o=document.getElementById('cw-out'),s=0;function u(){o.textContent=i.value||'\\u00a0';if(!s&&window.gtag){s=1;gtag('event','cursive_try',{page_path:location.pathname});}}i.addEventListener('input',u);document.querySelectorAll('.cw-chips button').forEach(function(b){b.addEventListener('click',function(){i.value=b.textContent;u();});});})();</script>"
+  },
+  {
+   "title": "練習方法：先小寫、按家族練，每天 10 分鐘",
+   "prose": [
+    "先看時機：孩子的印刷體 26 個大小寫已經寫得穩、能把一個句子完整抄下來，再學草寫會比較順，大約是國小中年級以後。美國學校常用的寫字教材也是幼兒園和一年級先教印刷體，二年級或三年級才開始教草寫。",
+    "再看順序：<strong>先學小寫、再學大寫</strong>，小寫照起筆的方式分成五組，一次練一組。這也是美國寫字教材常用的順序。"
+   ],
+   "heads": [
+    "組別",
+    "草寫",
+    "共同的起筆"
+   ],
+   "rows": [
+    [
+     "第 1 組：i t u w",
+     "i t u w",
+     "從基線往右上斜拉，最簡單，先練這組"
+    ],
+    [
+     "第 2 組：e l b h f k",
+     "e l b h f k",
+     "一樣從基線斜拉，再多打一個圈"
+    ],
+    [
+     "第 3 組：r s j p",
+     "r s j p",
+     "從基線斜拉；r 和 s 的頂端要多練"
+    ],
+    [
+     "第 4 組：a d g o c q",
+     "a d g o c q",
+     "先往左繞圈，跟印刷體 c 的起筆一樣"
+    ],
+    [
+     "第 5 組：n m y x v z",
+     "n m y x v z",
+     "先往上拱一下，像一座小山丘"
+    ]
+   ],
+   "after": [
+    "<strong>第一步，描。</strong>把本頁的 PDF 印出來，蓋一張描圖紙或薄的白紙，照著草寫那一欄描，每個字母描三到五次，注意起筆的位置和圈的方向。",
+    "<strong>第二步，抄。</strong>在四線三格上自己寫，可以用 <a href=\"/english-alphabet-worksheet/\">英文字母練習表</a> PDF 最後一頁的空白格線。高度規則跟印刷體一樣：小寫的身體在中格，有圈往上的字母寫到第一線，有尾巴的寫到第四線。",
+    "<strong>第三步，寫成字。</strong>每練完一組，就用學過的字母連成短字：第一組練完寫 it、wit，第二組練完加上 tell、bike、kite。字母單獨寫得好還不夠，連起來也好看才算學會。",
+    "<strong>每天 10 分鐘就好。</strong>寫慢一點、每個字母往右斜的角度一致，比寫得快重要；一次練兩三個字母，隔天先複習再往下。26 個小寫都能連著寫之後，再從孩子英文名字的第一個大寫字母開始學大寫。"
+   ],
+   "phone_cols": 3,
+   "cls": "cur"
+  },
+  {
+   "title": "草寫、書寫體、花體差在哪？",
+   "prose": [
+    "搜尋時會看到好幾個說法，指的東西其實不一樣。草寫是日常的手寫字，用一般的鉛筆、原子筆就能寫；花體和手寫藝術字是把字當成圖畫的藝術，要用特殊的筆、講究粗細變化，不是學校教的寫字。"
+   ],
+   "heads": [
+    "英文",
+    "中文說法",
+    "指的是什麼"
+   ],
+   "rows": [
+    [
+     "cursive",
+     "草寫",
+     "字母一筆連著寫的日常手寫字，美國小學教的就是這種"
+    ],
+    [
+     "cursive",
+     "連續體、連續書寫體",
+     "108 課綱對草寫的叫法，國中要能認得"
+    ],
+    [
+     "cursive／script",
+     "書寫體",
+     "常被當成草寫的另一個說法，也有人泛指手寫風格的字"
+    ],
+    [
+     "print／manuscript",
+     "印刷體",
+     "一筆一筆分開寫，台灣國小教的就是這種"
+    ],
+    [
+     "joined italic",
+     "連寫斜體",
+     "斜體字母用短線連起來，字形接近印刷體"
+    ],
+    [
+     "calligraphy /kəˈlɪgrəfɪ/",
+     "花體",
+     "用沾水筆或平頭筆寫的書法字，筆畫粗細分明"
+    ],
+    [
+     "hand lettering",
+     "手寫藝術字",
+     "把字當成圖案來設計，卡片、海報常見"
+    ]
+   ],
+   "after": [
+    "另外提醒：網路上可以「複製貼上」的花體字產生器，很多是用 Unicode 裡的<strong>數學字母符號</strong>（Mathematical Alphanumeric Symbols）拼出英文，看起來像草寫，但跟一般的 A–Z 是不同的字元。放在社群貼文當裝飾可以，作業、履歷和正式文件請用一般文字。"
+   ]
+  },
+  {
+   "title": "美國小孩現在還學草寫嗎？",
+   "prose": [
+    "有，但各州不一樣。2010 年起，美國多數州採用的共同核心標準（Common Core State Standards）沒有把草寫列進去，很多學校因此少教或不教。",
+    "這幾年又有不少州立法把草寫加回來。例如加州州長在 2023 年 10 月簽署 AB 446，要求一到六年級的寫字教學「在適當的年級」教草寫或連寫斜體（joined italics）；美國媒體和教材出版社的整理是，到 2024 年前後大約一半的州有類似規定。",
+    "實際從幾年級開始、教多深，由各州和各學區決定；常用的寫字教材多半在二年級或三年級開始教草寫。所以同年紀的美國孩子，草寫程度可能差很多。",
+    "對台灣孩子來說，草寫是加分的手寫技能：卡片寫起來更有心意、看得懂外國朋友手寫的卡片和字條，國中課綱要求認得的草寫字母也不會陌生。作業和考試寫印刷體就可以。108 課綱對英文的其他要求見 <a href=\"/108-curriculum-english-guide/\">108 課綱的英文</a>。"
+   ]
+  },
+  {
+   "title": "英文草寫常見問題",
+   "faq": [
+    [
+     "台灣國小有教英文草寫嗎？",
+     "沒有。依 108 課綱，國小只學印刷體大小寫的辨識與書寫；到了國中，課綱要求能辨識「連續書寫體」（也就是草寫）的大小寫字母，但平日書寫仍以印刷體為主。作業和考試寫印刷體就可以。"
+    ],
+    [
+     "英文草寫要先學大寫還是小寫？",
+     "先學小寫。小寫用得最多，連筆也都發生在小寫之間；美國常用的寫字教材也是先教 26 個小寫，再教大寫。小寫都能連著寫之後，從自己英文名字的第一個大寫字母開始學。"
+    ],
+    [
+     "草寫的 Q、G 大寫怎麼寫？",
+     "草寫大寫 Q 長得像數字 2：從左邊往上繞過頂端，斜斜下到底部打一個小圈，再往右拉出尾巴。大寫 G 跟印刷體完全不像：從左下斜斜往上繞一個高圈，下來後往右收一小橫。兩個字母都在本頁最上面的對照表裡，可以印出來描。"
+    ],
+    [
+     "美國小孩還學草寫嗎？",
+     "有，但各州不同。2010 年後很多學校少教草寫，近年又有不少州立法要求，例如加州 2023 年的 AB 446 規定一到六年級要在適當年級教草寫或連寫斜體；常用的寫字教材多半在二、三年級開始教。"
+    ],
+    [
+     "有英文草寫練習 PDF 嗎？",
+     "有。本頁最上面的 26 個字母草寫對照表附 A4 列印版 PDF，就在那張表的下載區。印出來蓋一張描圖紙照著描，再抄到四線三格上，一天練兩三個字母。"
+    ],
+    [
+     "生日快樂的英文草寫怎麼寫？",
+     "Happy Birthday 兩個字都大寫。H 寫完可以直接連 appy；B 寫完要提筆，再從 i 開始一筆寫完 irthday，最後點 i、劃 t。本頁常用字草寫範例表的第一行就是它，也可以在輸入框打出來看。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "字寫漂亮了，也想說得漂亮嗎？",
+ "cta": "卡片上的草寫是心意，當面把祝福說出口更讓人記得。我們的小班課讓孩子在真實情境裡大聲說英文，寫得出來，也說得出口。",
+ "css": "@font-face{font-family:'Playwrite US Trad';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/playwriteustrad/v11/fdNX9tyHsnVPjW9trmV7wQ0stdwRBYclCsCdzOb1-cd1E8tgiqKf5uFFig.woff2) format('woff2')}.cur .compare td:nth-child(2){font-family:'Playwrite US Trad',cursive;font-size:24px;font-weight:400;color:var(--navy);line-height:1.7}@media(max-width:640px){.cur .compare td:nth-child(2){font-size:19px}}.cw{max-width:720px;margin:22px auto 0;background:#fff;border-radius:20px;box-shadow:var(--card-shadow);padding:18px}.cw label{display:block;font-weight:700;color:var(--navy);margin-bottom:8px}.cw input{width:100%;box-sizing:border-box;font-size:18px;padding:12px 14px;border:2px solid rgba(26,39,82,.15);border-radius:12px;font-family:inherit}.cw-out{font-family:'Playwrite US Trad',cursive;font-size:clamp(30px,8vw,52px);line-height:1.8;color:var(--navy);margin-top:12px;min-height:1.8em;overflow-wrap:anywhere}.cw-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.cw-chips button{border:1px solid rgba(26,39,82,.15);background:#F4FAFF;color:var(--navy);border-radius:999px;padding:7px 13px;font-size:14px;font-family:inherit;cursor:pointer}"
+}

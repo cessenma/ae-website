@@ -71,9 +71,17 @@
 "date": "2026-10-07",
 "hash": "057a210a2c3453ff99311d805e4e4f5c"
 },
+"assets/downloads/ae-english-card-writing-a4.pdf": {
+"date": "2026-10-16",
+"hash": "225ea52e2201e19af3c470f2cc87a1a2"
+},
 "assets/downloads/ae-english-consonants-a4.pdf": {
 "date": "2026-10-13",
 "hash": "5f1df5b7697833aaf6f52d00d7c50be0"
+},
+"assets/downloads/ae-english-cursive-practice-a4.pdf": {
+"date": "2026-10-16",
+"hash": "af3e81ef6eb7540b2d20ecb0850cc92f"
 },
 "assets/downloads/ae-english-names-boys-a4.pdf": {
 "date": "2026-10-13",
@@ -85,7 +93,7 @@
 },
 "assets/downloads/ae-english-plurals-a4.pdf": {
 "date": "2026-10-16",
-"hash": "c2d325f729deb12b1fec0551284f901e"
+"hash": "bf234ebce28a0c73e828db1bad8ccfa3"
 },
 "assets/downloads/ae-english-tenses-chart-a4.pdf": {
 "date": "2026-10-02",
@@ -95,9 +103,13 @@
 "date": "2026-10-13",
 "hash": "8491b4fdedea1cbf70aea0cd8e241532"
 },
+"assets/downloads/ae-english-wishes-a4.pdf": {
+"date": "2026-10-16",
+"hash": "37b40e0be396880990a38aa63acb3d18"
+},
 "assets/downloads/ae-feelings-english-a4.pdf": {
 "date": "2026-10-16",
-"hash": "a7440ed4db62c871804b6e2fdea30883"
+"hash": "112a5d1d5b4bdc6005f58d49a34a84c5"
 },
 "assets/downloads/ae-food-english-a4.pdf": {
 "date": "2026-10-13",
@@ -125,7 +137,7 @@
 },
 "assets/downloads/ae-junior-high-grammar-a4.pdf": {
 "date": "2026-10-16",
-"hash": "25699ffbb5db1043ff48519cec9cf364"
+"hash": "20d6d586ef50712442bc724307120694"
 },
 "assets/downloads/ae-kk-phonetic-chart-a4.pdf": {
 "date": "2026-10-02",
@@ -169,7 +181,7 @@
 },
 "assets/downloads/ae-school-grades-english-a4.pdf": {
 "date": "2026-10-16",
-"hash": "17f5d7f73e1c51f672700d8d5e7d1d57"
+"hash": "37de8c8532d5e53a422bda38a4c499ff"
 },
 "assets/downloads/ae-sight-words-dolch-fry-a4.pdf": {
 "date": "2026-10-02",
@@ -357,7 +369,7 @@
 },
 "chart-license": {
 "date": "2026-10-16",
-"hash": "4e6d728aea342d294b7bcf19e01ffe42"
+"hash": "6314dc48f2d1a9338eca599e17dc0e9d"
 },
 "cheer-up-english": {
 "date": "2026-10-01",
@@ -447,6 +459,10 @@
 "date": "2026-09-14",
 "hash": "be34a54a1b86a7231353d5edeb1f6a50"
 },
+"english-card-writing": {
+"date": "2026-10-16",
+"hash": "2833900c8c1a0150be48cc6c282b03c3"
+},
 "english-comparatives-guide": {
 "date": "2026-09-15",
 "hash": "d42939f1523381772d00b40bf6fed53e"
@@ -458,6 +474,10 @@
 "english-cram-school-fees": {
 "date": "2026-08-13",
 "hash": "58b7b2c258cee5dc545aedd059fe9f68"
+},
+"english-cursive": {
+"date": "2026-10-16",
+"hash": "bf0397bcf1ac4f830946f08a1e553b88"
 },
 "english-dates-guide": {
 "date": "2026-09-22",
@@ -505,7 +525,7 @@
 },
 "english-plural-nouns": {
 "date": "2026-10-16",
-"hash": "5b5b040075a62b472bae597c6dc4adea"
+"hash": "42757fafc9cb7e22801b45e154d3f942"
 },
 "english-pronunciation": {
 "date": "2026-10-13",
@@ -554,6 +574,10 @@
 "english-vowels-consonants": {
 "date": "2026-10-13",
 "hash": "5dac2b63769f75bfc46f0adb29ea8a4c"
+},
+"english-wishes": {
+"date": "2026-10-16",
+"hash": "84103f4e4cbde81b27e9f9cc0dea0d62"
 },
 "english-word-stress-gesture": {
 "date": "2026-08-21",
@@ -649,7 +673,7 @@
 },
 "feelings-english": {
 "date": "2026-10-16",
-"hash": "6b9b972aabf154d2bbb1d980e98977b7"
+"hash": "fc2983a450e7376fbb54e09ade98bbf4"
 },
 "flyers-listening-practice-part1": {
 "date": "2026-10-13",
@@ -1005,7 +1029,7 @@
 },
 "junior-high-english-grammar": {
 "date": "2026-10-16",
-"hash": "f17774c44657eab62fea2c1412de7c20"
+"hash": "2782964df79a54ba39d2d14a10cc07a3"
 },
 "ket-listening-practice-part1": {
 "date": "2026-10-13",
@@ -1333,7 +1357,7 @@
 },
 "school-grades-english": {
 "date": "2026-10-16",
-"hash": "8c240b46272ae89bb5aeb022c164d8c7"
+"hash": "24519cbede8b1fe5fc00dc5f2af0c2c8"
 },
 "shide-style-exam-guide": {
 "date": "2026-10-13",

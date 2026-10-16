@@ -239,6 +239,7 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 - [國中英文文法總整理：國一到國三 36 個重點與例句（附 PDF）](https://americanenglish.com.tw/junior-high-english-grammar/): 國中英文文法總整理表：國一到國三 36 個重點，每個都附句型與例句，加上國中 6 種時態對照、會考語法題怎麼考、最常錯的 10 個地方與段考複習方法，附 A4 列印版 PDF。
 - [英文複數規則表：s、es、ies、ves 與 64 個不規則複數（附 PDF）](https://americanenglish.com.tw/english-plural-nouns/): 英文複數規則表，142 個單複數對照：加 s、es、ies、ves 怎麼選，tooth、mouse、child 等 64 個不規則複數，另有複數唸法、不可數名詞、常見錯誤與練習，附 A4 PDF。
 - [年級英文對照表：國一是 7th grade？小一到大四與縮寫（附 PDF）](https://americanenglish.com.tw/school-grades-english/): 幼兒園到大學的年級英文對照表：台灣、美國、英國的年級與年齡並列，國一是 7th grade、大一是 freshman；附「我讀三年級」美英說法、年級縮寫、學校名稱英文與 A4 PDF。
+- [英文草寫 A–Z 大小寫對照＋練習 PDF：26 個草寫字母寫法與範例](https://americanenglish.com.tw/english-cursive/): 英文草寫 26 個字母大小寫對照表，每個字母附寫法提示；草寫英文怎麼連筆、容易認錯的 Q、G、r、s，Happy Birthday 等 20 個常用字草寫範例，附 A4 列印 PDF。
 - [英文升一級要幾小時？劍橋官方時數表](https://americanenglish.com.tw/exams/hours-to-level-up/): 劍橋官方：每升一個 CEFR 等級約需 200 guided learning hours。但這不等於上課時數，而且台灣國小生適用的是另一張表——到 A2 要 540–680 小時，是成人版的 2.5–3.5 倍。
 - [英文語調有多重要？英檢口說佔一半的分數](https://americanenglish.com.tw/exams/intonation/): 全民英檢初級口說「發音、語調和流利度」是兩個評分項目之一，各佔 50%（LTTC 官方）。中文用聲調分辨字義、英文不用——這個差異讓台灣學生的英文聽起來「平」。
 - [板橋學區行事曆：板橋國中、板橋國小、國光、大觀國小官方連結](https://americanenglish.com.tw/exams/banqiao-school-calendar/): 板橋國中、板橋國小、國光國小、大觀國小四校官方行事曆的所在位置，每週自動檢查連結是否有效。本頁不轉錄段考日期，直接連到學校官方公告，避免辨識錯誤。

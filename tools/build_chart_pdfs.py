@@ -53,6 +53,8 @@ PDFS = {
  "junior-high-english-grammar": ("junior-high-english-grammar-chart", "ae-junior-high-grammar-a4.pdf", "國一到國三 36 個文法重點・句型與例句"),
  "english-plural-nouns":    ("english-plural-nouns-all",  "ae-english-plurals-a4.pdf",     "142 個單複數對照・加 s、es、ies、ves 與不規則複數"),
  "school-grades-english":   ("school-grades-english-chart","ae-school-grades-english-a4.pdf","台灣、美國、英國年級與年齡對照"),
+ "english-wishes":          ("english-wishes-all",        "ae-english-wishes-a4.pdf",      "13 種場合 180 句英文祝福語・附適合對象與語氣"),
+ "english-card-writing":    ("english-card-writing-chart","ae-english-card-writing-a4.pdf","41 個卡片開頭、結尾、署名寫法與適合對象"),
  "time-english":            ("time-english-chart",        "ae-time-english-a4.pdf",        "時間英文幾點幾分說法對照表"),
  "food-english":            ("food-english-chart",        "ae-food-english-a4.pdf",        "台灣小吃英文對照表（58 道）"),
  "new-year-english":        ("new-year-chart",            "ae-new-year-english-a4.pdf",    "新年快樂英文祝福與過年單字表"),

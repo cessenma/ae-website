@@ -192,6 +192,23 @@ SPECS.update({
    title="年級英文對照表", sub="台灣 ・ 美國 ・ 英國 年級與年齡對照，幼兒園到大學",
    alt="年級英文對照表：台灣小一到大四對應美國 1st grade 到 senior、英國 Year 2 到 Year 13 的年級與年齡，國一是 7th grade",
    foot="可儲存列印｜americanenglish.com.tw"),
+ "english-cursive-chart": dict(page="english-cursive", only=[0, 1, 2], cols=1, width=1400,
+   title="英文草寫 A–Z 大小寫對照表", sub="26 個草寫字母 ・ 美式學校草寫 ・ 附寫法提示",
+   alt="英文草寫字母表 A 到 Z：26 個草寫大寫與小寫字母的寫法對照，附中文寫法提示",
+   foot="可儲存列印｜americanenglish.com.tw",
+   css=("@font-face{font-family:'Playwrite US Trad';src:url(https://fonts.gstatic.com/s/playwriteustrad/v11/"
+        "fdNX9tyHsnVPjW9trmV7wQ0stdwRBYclCsCdzOb1-cd1E8tgiqKf5uFFig.woff2) format('woff2')}"
+        "td:nth-child(2){font-family:'Playwrite US Trad',cursive;font-size:34px;line-height:1.5}")),
+ "english-wishes-chart": dict(page="english-wishes", only=[0, 1, 2, 3], cols=2, width=2400,   # 4 of 14 groups; the PDF has all 180 lines
+   title="祝福英文對照表", sub="萬用短句 ・ 畢業 ・ 考試順利 ・ 早日康復 ・ 附適合對象與語氣",
+   alt="祝福英文對照表：萬用祝福短句、畢業祝福、考試順利、早日康復的英文說法與中文對照，標出適合對象與語氣",
+   foot="可儲存列印｜americanenglish.com.tw"),
+ "english-wishes-all": dict(page="english-wishes", only=list(range(14)), cols=1, pdf_only=True,
+   title="祝福英文 180 句", sub="13 種場合", alt="", foot=""),
+ "english-card-writing-chart": dict(page="english-card-writing", only=[0, 1, 2], cols=2, width=2200,
+   title="英文卡片開頭、結尾、署名對照表", sub="To／Dear 開頭 ・ Love／Best wishes 結尾 ・ 署名寫法與適合對象",
+   alt="英文卡片開頭結尾署名對照表：To、Dear 開頭，Love、Best wishes、Your student 結尾，署名寫法與適合寫給誰",
+   foot="可儲存列印｜americanenglish.com.tw"),
  "feelings-english-chart": dict(page="feelings-english", only=[0, 1, 2, 3, 4, 5, 6], cols=3, width=2100,
    title="情緒英文單字表", sub="72 個心情與感覺形容詞 ・ 開心、難過、生氣、害怕、驚訝、身體感覺 ・ 附 KK 音標",
    alt="情緒英文單字表：72 個心情、感覺形容詞的英文與中文對照，附 KK 音標，含 happy、sad、angry、nervous、bored 等",
