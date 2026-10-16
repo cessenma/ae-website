@@ -83,6 +83,10 @@
 "date": "2026-10-13",
 "hash": "5cba7b76377307dc812375116123b2f3"
 },
+"assets/downloads/ae-english-plurals-a4.pdf": {
+"date": "2026-10-16",
+"hash": "c2d325f729deb12b1fec0551284f901e"
+},
 "assets/downloads/ae-english-tenses-chart-a4.pdf": {
 "date": "2026-10-02",
 "hash": "9bf6399d505f48b7be3cd1ad4618f930"
@@ -118,6 +122,10 @@
 "assets/downloads/ae-jobs-english-a4.pdf": {
 "date": "2026-10-13",
 "hash": "e3ea8e866d349f3566c09a19c76eb482"
+},
+"assets/downloads/ae-junior-high-grammar-a4.pdf": {
+"date": "2026-10-16",
+"hash": "25699ffbb5db1043ff48519cec9cf364"
 },
 "assets/downloads/ae-kk-phonetic-chart-a4.pdf": {
 "date": "2026-10-02",
@@ -158,6 +166,10 @@
 "assets/downloads/ae-phonics-rules-chart-a4.pdf": {
 "date": "2026-10-02",
 "hash": "1576efaaa9c6012bd4e5f30e2108d93f"
+},
+"assets/downloads/ae-school-grades-english-a4.pdf": {
+"date": "2026-10-16",
+"hash": "17f5d7f73e1c51f672700d8d5e7d1d57"
 },
 "assets/downloads/ae-sight-words-dolch-fry-a4.pdf": {
 "date": "2026-10-02",
@@ -345,7 +357,7 @@
 },
 "chart-license": {
 "date": "2026-10-16",
-"hash": "fa486710951e59408d6808489ae7e992"
+"hash": "4e6d728aea342d294b7bcf19e01ffe42"
 },
 "cheer-up-english": {
 "date": "2026-10-01",
@@ -491,6 +503,10 @@
 "date": "2026-08-07",
 "hash": "19ce78fb557f29603591b0b7215a4282"
 },
+"english-plural-nouns": {
+"date": "2026-10-16",
+"hash": "5b5b040075a62b472bae597c6dc4adea"
+},
 "english-pronunciation": {
 "date": "2026-10-13",
 "hash": "7a91696c53a9cc68968dba7522a81a99"
@@ -533,7 +549,7 @@
 },
 "english-vocabulary-by-topic": {
 "date": "2026-10-16",
-"hash": "c80ae9bd4c2e96cc512b1f738f3fdb33"
+"hash": "1a8f4191b8bd87c4fead5096b2af72ea"
 },
 "english-vowels-consonants": {
 "date": "2026-10-13",
@@ -987,6 +1003,10 @@
 "date": "2026-08-07",
 "hash": "f5ba893d756a0b6a6789bcd88978666d"
 },
+"junior-high-english-grammar": {
+"date": "2026-10-16",
+"hash": "f17774c44657eab62fea2c1412de7c20"
+},
 "ket-listening-practice-part1": {
 "date": "2026-10-13",
 "hash": "6d23ceb3492959ef626acf1a36c9b452"
@@ -1310,6 +1330,10 @@
 "real-vs-fake-english-immersion-banqiao": {
 "date": "2026-10-13",
 "hash": "ab16be59ab0f8ee7ee9ad4348eb26713"
+},
+"school-grades-english": {
+"date": "2026-10-16",
+"hash": "8c240b46272ae89bb5aeb022c164d8c7"
 },
 "shide-style-exam-guide": {
 "date": "2026-10-13",

@@ -470,7 +470,7 @@ body .ltrans summary{color:#64748b}
 .compare tr:last-child th,.compare tr:last-child td{border-bottom:none}
 /* phones: row labels may wrap, and a table that is still too wide scrolls inside its card
    (it used to be cut off at the card edge with no way to reach the last column) */
-.compare.spec tbody th{white-space:normal;font-family:inherit;font-weight:700}.compare .m3{display:none}
+.compare.spec{margin-bottom:26px}.compare.spec tbody th{white-space:normal;font-family:inherit;font-weight:700}.compare .m3{display:none}
 @media(max-width:640px){.compare.m3t .m3c,.compare.m3t thead th:nth-child(2){display:none}.compare .m3{display:block;font-weight:400;font-size:13.5px;color:var(--muted);margin-top:3px;line-height:1.5}}
 @media(max-width:640px){.compare th,.compare td{padding:11px 10px;font-size:14px}.compare tbody th{white-space:normal}.compare{overflow-x:auto;-webkit-overflow-scrolling:touch}.compare td code{overflow-wrap:anywhere;word-break:break-all}}
 

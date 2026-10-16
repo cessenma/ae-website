@@ -1,0 +1,1139 @@
+{
+ "slug": "english-plural-nouns",
+ "published": "2026-10-16",
+ "target": "英文複數",
+ "index": 0.8,
+ "h1": "英文複數規則表：142 個單複數對照，加 s、es、ies、ves 與不規則複數一次查",
+ "title": "英文複數規則表：s、es、ies、ves 與 64 個不規則複數（附 PDF）｜埃森美語",
+ "desc": "英文複數規則表，142 個單複數對照：加 s、es、ies、ves 怎麼選，tooth、mouse、child 等 64 個不規則複數，另有複數唸法、不可數名詞、常見錯誤與練習，附 A4 PDF。",
+ "hero": "英文名詞變複數，大部分只要加 s；真正讓人卡住的是例外：tooth 變 teeth、leaf 變 leaves、sheep 一隻兩隻都是 sheep。下面先給一張 <strong>142 個字的單複數對照表</strong>，依規則分成十組，其中 64 個是要另外記的不規則複數；接著是規則一覽、複數 s 的三種唸法、不可數名詞、常見錯誤，最後有十題小練習。",
+ "sections": [
+  {
+   "title": "英文複數對照表（142 個，依規則分十組）",
+   "prose": [
+    "前三組照規則加 s、es、ies，看字尾就能判斷；從 f、fe 那一組開始，就是要另外記的不規則和例外。第三欄是<strong>中文和規則備註</strong>，容易唸錯的複數標了 KK 音標，兩種拼法都對的字兩種都列出，其中一種明顯比較常用的也標出來。",
+    "f、fe 改 ves 雖然有規則可循，但例外不少（roof、chef、belief），所以本頁把它和 tooth → teeth、sheep → sheep、cactus → cacti 一起算進不規則複數，共 64 個。動物、身體部位、水果的單字表裡常常碰到這些複數，見 <a href=\"/animals-english-vocabulary/\">動物英文單字</a>、<a href=\"/body-parts-english/\">身體部位英文</a> 和 <a href=\"/fruits-english-vocabulary/\">水果英文對照表</a>；音標符號看不懂的話，先看 <a href=\"/kk-phonetic-chart/\">KK 音標表</a>。"
+   ],
+   "heads": [
+    "單數",
+    "複數",
+    "中文・規則備註"
+   ],
+   "groups": [
+    {
+     "name": "一般名詞：直接加 s",
+     "rows": [
+      [
+       "book",
+       "books",
+       "書；最基本的加 s"
+      ],
+      [
+       "apple",
+       "apples",
+       "蘋果；an apple → two apples"
+      ],
+      [
+       "egg",
+       "eggs",
+       "蛋"
+      ],
+      [
+       "cat",
+       "cats",
+       "貓；這個 s 唸 /s/"
+      ],
+      [
+       "dog",
+       "dogs",
+       "狗；這個 s 唸 /z/"
+      ],
+      [
+       "goat",
+       "goats",
+       "山羊；規則加 s"
+      ],
+      [
+       "girl",
+       "girls",
+       "女孩"
+      ],
+      [
+       "horse",
+       "horses",
+       "馬；字尾 e 只加 s，唸 /ˈhɔrsɪz/"
+      ],
+      [
+       "orange",
+       "oranges",
+       "柳橙；只加 s，但多一個音節"
+      ],
+      [
+       "nose",
+       "noses",
+       "鼻子；唸 /ˈnozɪz/"
+      ],
+      [
+       "house",
+       "houses",
+       "房子；唸 /ˈhaʊzɪz/，s 變成 /z/"
+      ],
+      [
+       "mouth",
+       "mouths",
+       "嘴巴；不是 mouthes，唸 /maʊðz/"
+      ],
+      [
+       "month",
+       "months",
+       "月；th 後面直接加 s，唸 /mʌnθs/"
+      ]
+     ]
+    },
+    {
+     "name": "字尾 s、x、z、ch、sh：加 es",
+     "rows": [
+      [
+       "bus",
+       "buses",
+       "公車；s 結尾加 es"
+      ],
+      [
+       "class",
+       "classes",
+       "班級、一堂課"
+      ],
+      [
+       "glass",
+       "glasses",
+       "玻璃杯；眼鏡也是 glasses"
+      ],
+      [
+       "dress",
+       "dresses",
+       "洋裝"
+      ],
+      [
+       "box",
+       "boxes",
+       "箱子；x 結尾加 es"
+      ],
+      [
+       "fox",
+       "foxes",
+       "狐狸"
+      ],
+      [
+       "quiz",
+       "quizzes",
+       "小考；z 要重複再加 es"
+      ],
+      [
+       "watch",
+       "watches",
+       "手錶；ch 結尾加 es"
+      ],
+      [
+       "peach",
+       "peaches",
+       "桃子"
+      ],
+      [
+       "sandwich",
+       "sandwiches",
+       "三明治"
+      ],
+      [
+       "brush",
+       "brushes",
+       "刷子；sh 結尾加 es"
+      ],
+      [
+       "dish",
+       "dishes",
+       "盤子、一道菜"
+      ],
+      [
+       "stomach",
+       "stomachs",
+       "胃、肚子；ch 唸 /k/，只加 s"
+      ]
+     ]
+    },
+    {
+     "name": "字尾 y：子音＋y 改 ies，母音＋y 直接加 s",
+     "rows": [
+      [
+       "baby",
+       "babies",
+       "嬰兒；子音＋y，去 y 加 ies"
+      ],
+      [
+       "city",
+       "cities",
+       "城市"
+      ],
+      [
+       "party",
+       "parties",
+       "派對"
+      ],
+      [
+       "story",
+       "stories",
+       "故事"
+      ],
+      [
+       "family",
+       "families",
+       "家庭"
+      ],
+      [
+       "country",
+       "countries",
+       "國家"
+      ],
+      [
+       "butterfly",
+       "butterflies",
+       "蝴蝶"
+      ],
+      [
+       "strawberry",
+       "strawberries",
+       "草莓"
+      ],
+      [
+       "cherry",
+       "cherries",
+       "櫻桃"
+      ],
+      [
+       "boy",
+       "boys",
+       "男孩；母音＋y，直接加 s"
+      ],
+      [
+       "toy",
+       "toys",
+       "玩具；不是 toies"
+      ],
+      [
+       "day",
+       "days",
+       "天、日子"
+      ],
+      [
+       "key",
+       "keys",
+       "鑰匙；不是 keies"
+      ],
+      [
+       "monkey",
+       "monkeys",
+       "猴子；ey 是母音＋y"
+      ],
+      [
+       "turkey",
+       "turkeys",
+       "火雞"
+      ],
+      [
+       "holiday",
+       "holidays",
+       "假日"
+      ]
+     ]
+    },
+    {
+     "name": "字尾 f、fe：多數改 ves，也有只加 s 的例外",
+     "rows": [
+      [
+       "leaf",
+       "leaves",
+       "葉子；f 改 ves"
+      ],
+      [
+       "knife",
+       "knives",
+       "刀子；fe 改 ves"
+      ],
+      [
+       "wife",
+       "wives",
+       "太太"
+      ],
+      [
+       "life",
+       "lives",
+       "生命"
+      ],
+      [
+       "half",
+       "halves",
+       "一半"
+      ],
+      [
+       "calf",
+       "calves",
+       "小牛；也指小腿肚"
+      ],
+      [
+       "loaf",
+       "loaves",
+       "一條（麵包）"
+      ],
+      [
+       "thief",
+       "thieves",
+       "小偷"
+      ],
+      [
+       "shelf",
+       "shelves",
+       "架子"
+      ],
+      [
+       "wolf",
+       "wolves",
+       "狼"
+      ],
+      [
+       "self",
+       "selves",
+       "自己；yourselves 就是這樣來的"
+      ],
+      [
+       "elf",
+       "elves",
+       "小精靈"
+      ],
+      [
+       "scarf",
+       "scarves／scarfs",
+       "圍巾；兩種都對"
+      ],
+      [
+       "hoof",
+       "hooves／hoofs",
+       "（馬、牛的）蹄；hooves 較常用"
+      ],
+      [
+       "dwarf",
+       "dwarfs／dwarves",
+       "矮人；dwarfs 較常用"
+      ],
+      [
+       "roof",
+       "roofs",
+       "屋頂；例外，只加 s"
+      ],
+      [
+       "chef",
+       "chefs",
+       "主廚；例外，只加 s"
+      ],
+      [
+       "belief",
+       "beliefs",
+       "信念；例外，只加 s"
+      ],
+      [
+       "chief",
+       "chiefs",
+       "首領；例外，只加 s"
+      ],
+      [
+       "cliff",
+       "cliffs",
+       "懸崖；ff 結尾直接加 s"
+      ],
+      [
+       "giraffe",
+       "giraffes",
+       "長頸鹿；ffe 結尾直接加 s"
+      ],
+      [
+       "safe",
+       "safes",
+       "保險箱；例外，只加 s"
+      ]
+     ]
+    },
+    {
+     "name": "字尾 o：有的加 es，有的只加 s",
+     "rows": [
+      [
+       "potato",
+       "potatoes",
+       "馬鈴薯；加 es"
+      ],
+      [
+       "tomato",
+       "tomatoes",
+       "番茄；加 es"
+      ],
+      [
+       "hero",
+       "heroes",
+       "英雄；加 es"
+      ],
+      [
+       "echo",
+       "echoes",
+       "回音；加 es"
+      ],
+      [
+       "mosquito",
+       "mosquitoes／mosquitos",
+       "蚊子；mosquitoes 較常用"
+      ],
+      [
+       "volcano",
+       "volcanoes／volcanos",
+       "火山；兩種都對"
+      ],
+      [
+       "tornado",
+       "tornadoes／tornados",
+       "龍捲風；兩種都對"
+      ],
+      [
+       "mango",
+       "mangoes／mangos",
+       "芒果；mangoes 較常用"
+      ],
+      [
+       "zero",
+       "zeros／zeroes",
+       "零；zeros 較常用"
+      ],
+      [
+       "photo",
+       "photos",
+       "照片；photograph 的縮寫，加 s"
+      ],
+      [
+       "piano",
+       "pianos",
+       "鋼琴；加 s"
+      ],
+      [
+       "radio",
+       "radios",
+       "收音機；母音＋o，加 s"
+      ],
+      [
+       "zoo",
+       "zoos",
+       "動物園；母音＋o，加 s"
+      ],
+      [
+       "video",
+       "videos",
+       "影片；母音＋o，加 s"
+      ],
+      [
+       "kangaroo",
+       "kangaroos",
+       "袋鼠；母音＋o，加 s"
+      ],
+      [
+       "kilo",
+       "kilos",
+       "公斤；kilogram 的縮寫，加 s"
+      ],
+      [
+       "avocado",
+       "avocados",
+       "酪梨；加 s"
+      ]
+     ]
+    },
+    {
+     "name": "不規則：改母音、改字尾，要整個背",
+     "rows": [
+      [
+       "man",
+       "men",
+       "男人；a 改 e"
+      ],
+      [
+       "woman",
+       "women",
+       "女人；唸 /ˈwɪmɪn/"
+      ],
+      [
+       "child",
+       "children",
+       "小孩；唸 /ˈtʃɪldrən/"
+      ],
+      [
+       "tooth",
+       "teeth",
+       "牙齒；oo 改 ee，唸 /tiθ/"
+      ],
+      [
+       "foot",
+       "feet",
+       "腳；oo 改 ee"
+      ],
+      [
+       "goose",
+       "geese",
+       "鵝；oo 改 ee"
+      ],
+      [
+       "mouse",
+       "mice",
+       "老鼠；電腦滑鼠也多用 mice"
+      ],
+      [
+       "louse",
+       "lice",
+       "蝨子；跟 mouse 同一型"
+      ],
+      [
+       "person",
+       "people",
+       "人；persons 多用在法律等正式文字"
+      ],
+      [
+       "ox",
+       "oxen",
+       "牛、耕牛；加 en，唸 /ˈɑksn̩/"
+      ],
+      [
+       "die",
+       "dice",
+       "骰子；一顆是 die，兩顆以上 dice"
+      ],
+      [
+       "policeman",
+       "policemen",
+       "警察；-man 結尾一樣改 -men"
+      ],
+      [
+       "snowman",
+       "snowmen",
+       "雪人"
+      ],
+      [
+       "gentleman",
+       "gentlemen",
+       "紳士；Ladies and gentlemen"
+      ],
+      [
+       "grandchild",
+       "grandchildren",
+       "孫子女；跟 child 一樣變"
+      ]
+     ]
+    },
+    {
+     "name": "單複數同形：複數不加 s",
+     "rows": [
+      [
+       "sheep",
+       "sheep",
+       "羊；two sheep，不是 sheeps"
+      ],
+      [
+       "deer",
+       "deer",
+       "鹿"
+      ],
+      [
+       "reindeer",
+       "reindeer",
+       "馴鹿；幫聖誕老人拉雪橇的鹿"
+      ],
+      [
+       "fish",
+       "fish",
+       "魚；講不同魚種時才用 fishes"
+      ],
+      [
+       "moose",
+       "moose",
+       "駝鹿；不是 meese"
+      ],
+      [
+       "salmon",
+       "salmon",
+       "鮭魚"
+      ],
+      [
+       "shrimp",
+       "shrimp／shrimps",
+       "蝦子；兩種都可以"
+      ],
+      [
+       "aircraft",
+       "aircraft",
+       "飛機、航空器（總稱）"
+      ],
+      [
+       "spacecraft",
+       "spacecraft",
+       "太空船"
+      ],
+      [
+       "series",
+       "series",
+       "系列；一套、兩套都是 series"
+      ],
+      [
+       "species",
+       "species",
+       "物種"
+      ],
+      [
+       "offspring",
+       "offspring",
+       "後代、子女"
+      ],
+      [
+       "Chinese",
+       "Chinese",
+       "中國人；講人常說 Chinese people"
+      ],
+      [
+       "Japanese",
+       "Japanese",
+       "日本人；-ese 結尾都同形"
+      ],
+      [
+       "Taiwanese",
+       "Taiwanese",
+       "台灣人；常說 Taiwanese people"
+      ]
+     ]
+    },
+    {
+     "name": "只有複數形：一件也用複數，用 a pair of 來數",
+     "rows": [
+      [
+       "a pair of pants",
+       "two pairs of pants",
+       "褲子；英式 pants 是內褲"
+      ],
+      [
+       "a pair of trousers",
+       "two pairs of trousers",
+       "長褲（英式說法）"
+      ],
+      [
+       "a pair of jeans",
+       "two pairs of jeans",
+       "牛仔褲"
+      ],
+      [
+       "a pair of shorts",
+       "two pairs of shorts",
+       "短褲"
+      ],
+      [
+       "a pair of pajamas",
+       "two pairs of pajamas",
+       "睡衣；英式拼 pyjamas"
+      ],
+      [
+       "a pair of glasses",
+       "two pairs of glasses",
+       "眼鏡"
+      ],
+      [
+       "a pair of sunglasses",
+       "two pairs of sunglasses",
+       "太陽眼鏡"
+      ],
+      [
+       "a pair of goggles",
+       "two pairs of goggles",
+       "泳鏡、護目鏡"
+      ],
+      [
+       "a pair of scissors",
+       "two pairs of scissors",
+       "剪刀"
+      ],
+      [
+       "a piece of clothing",
+       "clothes",
+       "衣服；clothes 沒有單數"
+      ]
+     ]
+    },
+    {
+     "name": "複合名詞：主要的那個字變複數",
+     "rows": [
+      [
+       "mother-in-law",
+       "mothers-in-law",
+       "婆婆、岳母；s 加在 mother"
+      ],
+      [
+       "passerby",
+       "passersby",
+       "路人；也寫 passer-by → passers-by"
+      ],
+      [
+       "toothbrush",
+       "toothbrushes",
+       "牙刷；看最後的 brush，加 es"
+      ]
+     ]
+    },
+    {
+     "name": "拉丁、希臘來源（進階）",
+     "rows": [
+      [
+       "cactus",
+       "cacti／cactuses",
+       "仙人掌；cacti 唸 /ˈkæktaɪ/"
+      ],
+      [
+       "fungus",
+       "fungi／funguses",
+       "真菌；fungi 唸 /ˈfʌndʒaɪ/"
+      ],
+      [
+       "octopus",
+       "octopuses",
+       "章魚；octopuses 是標準，octopi 也看得到"
+      ],
+      [
+       "crisis",
+       "crises",
+       "危機；is 改 es，唸 /ˈkraɪsiz/"
+      ],
+      [
+       "analysis",
+       "analyses",
+       "分析；is 改 es"
+      ],
+      [
+       "basis",
+       "bases",
+       "基礎；唸 /ˈbesiz/"
+      ],
+      [
+       "parenthesis",
+       "parentheses",
+       "圓括號 ( )；is 改 es"
+      ],
+      [
+       "axis",
+       "axes",
+       "（數學）座標軸；唸 /ˈæksiz/"
+      ],
+      [
+       "phenomenon",
+       "phenomena",
+       "現象；on 改 a"
+      ],
+      [
+       "criterion",
+       "criteria",
+       "標準；on 改 a"
+      ],
+      [
+       "datum",
+       "data",
+       "資料；data 現在也常當不可數名詞用"
+      ],
+      [
+       "medium",
+       "media",
+       "媒體；衣服中號、靈媒用 mediums"
+      ],
+      [
+       "bacterium",
+       "bacteria",
+       "細菌；平常多用複數 bacteria"
+      ],
+      [
+       "curriculum",
+       "curricula／curriculums",
+       "課程；curricula 較常用"
+      ],
+      [
+       "appendix",
+       "appendixes／appendices",
+       "附錄、闌尾；兩種都對"
+      ],
+      [
+       "index",
+       "indexes／indices",
+       "索引、指數；兩種都對"
+      ],
+      [
+       "antenna",
+       "antennae／antennas",
+       "觸角多用 antennae；天線兩種都可"
+      ],
+      [
+       "larva",
+       "larvae",
+       "幼蟲；唸 /ˈlɑrvi/"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "英文複數規則一覽：十條規則一張表",
+   "prose": [
+    "上面那張表的十組，濃縮成十條規則就是這樣。前五條看字尾就能判斷；第六到第九條沒有規則可推，只能一個一個記；最後一條提醒你：有些名詞根本沒有複數。"
+   ],
+   "heads": [
+    "規則",
+    "例子",
+    "注意"
+   ],
+   "rows": [
+    [
+     "1. 一般名詞：加 s",
+     "book → books",
+     "字尾是 e 也只加 s：horse → horses"
+    ],
+    [
+     "2. s、x、z、ch、sh 結尾：加 es",
+     "box → boxes",
+     "quiz 要重複 z；ch 唸 /k/ 只加 s：stomachs"
+    ],
+    [
+     "3. 子音＋y：去 y 加 ies",
+     "baby → babies",
+     "母音＋y 直接加 s：boy → boys"
+    ],
+    [
+     "4. f、fe 結尾：改 ves",
+     "knife → knives",
+     "例外只加 s：roof、chef、belief、chief"
+    ],
+    [
+     "5. 子音＋o：常見幾個加 es",
+     "potato → potatoes",
+     "母音＋o 和縮寫字只加 s：zoo、photo"
+    ],
+    [
+     "6. 改母音或改字尾",
+     "foot → feet",
+     "沒有規則可推，要整個背"
+    ],
+    [
+     "7. 單複數同形",
+     "sheep → sheep",
+     "fish 只有講不同魚種時才用 fishes"
+    ],
+    [
+     "8. 只有複數形",
+     "pants、scissors",
+     "數的時候說 a pair of"
+    ],
+    [
+     "9. 拉丁、希臘來源（進階）",
+     "cactus → cacti",
+     "有些也可以加 es：cactuses"
+    ],
+    [
+     "10. 不可數名詞",
+     "water、advice",
+     "沒有複數，用 a glass of、a piece of 來數"
+    ]
+   ],
+   "after": [
+    "字尾 o 加 es 的常用字不多，記住這四個就夠用：potato、tomato、hero、echo。可以用一句話記：<strong>英雄 hero 吃番茄 tomato 和馬鈴薯 potato，山谷傳來回音 echo</strong>。其他 o 結尾的字（photo、piano、radio、zoo、video）多半只加 s。",
+    "名詞變成複數，動詞也要跟著變：<strong>主詞是複數，be 動詞用 are</strong>（The boxes are heavy.），一般動詞不加 s（My sisters like cats.）。be 動詞的變化見 <a href=\"/be-verbs-guide/\">be 動詞變化表</a>；動詞也有自己的不規則變化，見 <a href=\"/irregular-verbs-list/\">動詞三態表</a>。"
+   ]
+  },
+  {
+   "title": "複數 s 的三種唸法：/s/、/z/、/ɪz/",
+   "prose": [
+    "複數的 s 不是每次都唸「斯」。規則只看<strong>字尾最後那個音</strong>（不是最後那個字母）：無聲的音後面唸 /s/，有聲的音和母音後面唸 /z/，嘶嘶聲的音後面多一個音節，唸 /ɪz/。所以 horse 的字尾雖然是字母 e，聲音是 /s/，複數 horses 就要多唸一節。"
+   ],
+   "heads": [
+    "字尾的音",
+    "複數唸成",
+    "例子"
+   ],
+   "rows": [
+    [
+     "無聲子音 /p/ /t/ /k/ /f/ /θ/",
+     "/s/",
+     "cups、cats、books、roofs、months"
+    ],
+    [
+     "有聲子音和母音",
+     "/z/",
+     "dogs、pens、leaves、days、trees"
+    ],
+    [
+     "嘶音 /s/ /z/ /ʃ/ /tʃ/ /dʒ/",
+     "/ɪz/",
+     "buses、quizzes、dishes、watches、oranges"
+    ]
+   ],
+   "after": [
+    "要特別注意的是 house：單數唸 /haʊs/，複數 houses 唸 /ˈhaʊzɪz/，中間的 s 也變成 /z/。很多孩子的問題不是唸錯，而是<strong>整個 s 不見了</strong>——寫得出 books，嘴巴卻唸成 book。附聽辨練習的完整說明見 <a href=\"/plural-s-past-ed-pronunciation/\">-s 和 -ed 的三種唸法</a>。"
+   ]
+  },
+  {
+   "title": "不可數名詞：沒有複數，要用量詞來數",
+   "prose": [
+    "有些名詞在英文裡被當成「一整團、一整片」，不能一個一個數，叫做<strong>不可數名詞</strong>。它們沒有複數形，前面不能放 a 或數字；要數的時候，借用容器或量詞：a glass of、a bowl of、a piece of。量詞本身可以變複數：two glasses of water、three pieces of paper。"
+   ],
+   "heads": [
+    "不可數名詞",
+    "中文",
+    "要數的時候這樣說"
+   ],
+   "rows": [
+    [
+     "water",
+     "水",
+     "a glass of water、two bottles of water"
+    ],
+    [
+     "rice",
+     "米、飯",
+     "a bowl of rice"
+    ],
+    [
+     "bread",
+     "麵包",
+     "a slice of bread、a loaf of bread"
+    ],
+    [
+     "paper",
+     "紙",
+     "a piece of paper、a sheet of paper"
+    ],
+    [
+     "homework",
+     "功課",
+     "a lot of homework；不說 homeworks"
+    ],
+    [
+     "information",
+     "資訊",
+     "a piece of information"
+    ],
+    [
+     "advice",
+     "建議",
+     "a piece of advice、some advice"
+    ],
+    [
+     "furniture",
+     "家具",
+     "a piece of furniture"
+    ],
+    [
+     "money",
+     "錢",
+     "some money；能數的是 dollars、coins"
+    ],
+    [
+     "hair",
+     "頭髮（整頭）",
+     "數根數才說 a hair、two hairs"
+    ],
+    [
+     "news",
+     "新聞、消息",
+     "a piece of news；The news is…（單數）"
+    ]
+   ],
+   "after": [
+    "同一個字有時可數、有時不可數，意思會變：paper 是「紙」，不可數；a paper 是「一份報告、一份報紙」，可以說 two papers。食物的量詞（a cup of、a slice of、a bowl of）在 <a href=\"/food-english/\">食物英文單字表</a> 裡還有更多例子。"
+   ]
+  },
+  {
+   "title": "英文複數常見錯誤",
+   "prose": [
+    "下面這些是作文和口說裡常見的錯誤，大多是把規則用過頭：不規則的字也加了 s，或是不可數名詞也變了複數。"
+   ],
+   "heads": [
+    "錯誤",
+    "正確",
+    "說明"
+   ],
+   "rows": [
+    [
+     "two childs",
+     "two children",
+     "child 是不規則複數"
+    ],
+    [
+     "many childrens",
+     "many children",
+     "children 已經是複數，不能再加 s"
+    ],
+    [
+     "three tooths",
+     "three teeth",
+     "tooth、foot、goose 改母音"
+    ],
+    [
+     "two mouses",
+     "two mice",
+     "老鼠的複數是 mice"
+    ],
+    [
+     "many peoples",
+     "many people",
+     "people 本身就是複數；peoples 是「各民族」"
+    ],
+    [
+     "two sheeps",
+     "two sheep",
+     "sheep 單複數同形"
+    ],
+    [
+     "I caught three fishes.",
+     "I caught three fish.",
+     "一般用 fish；fishes 指不同魚種"
+    ],
+    [
+     "two knifes",
+     "two knives",
+     "f、fe 結尾改 ves"
+    ],
+    [
+     "two babys",
+     "two babies",
+     "子音＋y 改 ies"
+    ],
+    [
+     "two toies",
+     "two toys",
+     "母音＋y 直接加 s"
+    ],
+    [
+     "two potatos",
+     "two potatoes",
+     "potato、tomato 加 es"
+    ],
+    [
+     "two photoes",
+     "two photos",
+     "photo、piano 只加 s"
+    ],
+    [
+     "two Germen",
+     "two Germans",
+     "German 不是 man 變來的，直接加 s"
+    ],
+    [
+     "informations",
+     "information",
+     "不可數名詞，沒有複數"
+    ],
+    [
+     "two furnitures",
+     "two pieces of furniture",
+     "不可數，用 a piece of 來數"
+    ],
+    [
+     "a pants",
+     "a pair of pants",
+     "pants 只有複數形"
+    ],
+    [
+     "The news are good.",
+     "The news is good.",
+     "news 看起來像複數，其實當單數用"
+    ]
+   ]
+  },
+  {
+   "title": "英文複數小練習（10 題附答案）",
+   "prose": [
+    "先用手或一張紙遮住右邊的答案欄，寫完再對。前七題寫出複數，後三題把括號裡的字改成正確的形式。想印出來當學習單：本頁第一張對照表有 A4 列印版 PDF，貼在書桌前，或讓孩子遮住複數那一欄自我測驗。"
+   ],
+   "heads": [
+    "題目",
+    "答案"
+   ],
+   "rows": [
+    [
+     "1. one tooth → two ____",
+     "teeth"
+    ],
+    [
+     "2. one knife → three ____",
+     "knives"
+    ],
+    [
+     "3. one roof → two ____",
+     "roofs"
+    ],
+    [
+     "4. one watch → four ____",
+     "watches"
+    ],
+    [
+     "5. one baby → two ____",
+     "babies"
+    ],
+    [
+     "6. one monkey → five ____",
+     "monkeys"
+    ],
+    [
+     "7. one potato → six ____",
+     "potatoes"
+    ],
+    [
+     "8. There are ten ____ on the farm. (sheep)",
+     "sheep"
+    ],
+    [
+     "9. I saw three ____ in the garage. (mouse)",
+     "mice"
+    ],
+    [
+     "10. Can you give me some ____? (advice)",
+     "advice（不可數，不加 s）"
+    ]
+   ],
+   "after": [
+    "錯了哪一題，就回到對照表找同一組的字一起複習——規則是一組一組記的。其他國中文法重點整理在 <a href=\"/junior-high-english-grammar/\">國中英文文法整理</a>；更多主題單字見 <a href=\"/english-vocabulary-by-topic/\">英文單字主題總整理</a>。"
+   ]
+  },
+  {
+   "title": "英文複數常見問題",
+   "faq": [
+    [
+     "tooth 的複數是什麼？",
+     "tooth 的複數是 teeth，唸 /tiθ/，不加 s，所以 tooths、teeths 都是錯的。它和 foot → feet、goose → geese 一樣，是把 oo 改成 ee 的不規則複數；「刷牙」要說 brush my teeth。"
+    ],
+    [
+     "mouse 的複數是什麼？老鼠和滑鼠一樣嗎？",
+     "老鼠 mouse 的複數是 mice，唸 /maɪs/。電腦滑鼠的複數一般也用 mice，字典也收 mouses，但比較少見。體型較大的老鼠 rat 則是規則變化：rats。"
+    ],
+    [
+     "fish 的複數要加 es 嗎？",
+     "一般不用：one fish、two fish、a lot of fish 都用 fish。fishes 只在強調「好幾種不同的魚」時才用；寫作和考試寫 fish 就對了。"
+    ],
+    [
+     "person 的複數是 persons 還是 people？",
+     "日常英文一律用 people：two people、many people。persons 現在多半只用在法律相關的正式文字裡；加了 s 的 peoples 意思是「各個民族」，不是「很多人」。"
+    ],
+    [
+     "英文名詞什麼時候加 es？",
+     "字尾是 s、x、z、ch、sh 時加 es（buses、boxes、quizzes、watches、dishes），因為這些音後面直接接 s 很難唸清楚，要多一個音節 /ɪz/。另外 potato、tomato、hero、echo 這幾個 o 結尾的字也加 es；子音＋y 則是去 y 加 ies（baby → babies）。"
+    ],
+    [
+     "小孩、女人的英文複數怎麼寫？",
+     "child 的複數是 children，woman 的複數是 women（唸 /ˈwɪmɪn/，第一個母音也跟著變）。這兩個字已經是複數，不能再加 s：childrens、womens 都是錯的；只有所有格才寫成 children's、women's。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "規則背好了，說話時想得起來嗎？",
+ "cta": "複數寫在考卷上會對，開口時卻常常漏掉 s，或脫口說出 childs。我們的小班課讓孩子在描述圖片、數東西、介紹自己家的時候一直用到複數，老師當場聽、當場改，練到嘴巴自己會加。"
+}

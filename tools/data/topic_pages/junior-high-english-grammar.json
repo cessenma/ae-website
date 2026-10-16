@@ -1,0 +1,457 @@
+{
+ "slug": "junior-high-english-grammar",
+ "published": "2026-10-16",
+ "target": "國中英文文法",
+ "index": 1.0,
+ "h1": "國中英文文法總整理：國一到國三 36 個重點、句型與例句",
+ "title": "國中英文文法總整理：國一到國三 36 個重點與例句（附 PDF）｜埃森美語",
+ "desc": "國中英文文法總整理表：國一到國三 36 個重點，每個都附句型與例句，加上國中 6 種時態對照、會考語法題怎麼考、最常錯的 10 個地方與段考複習方法，附 A4 列印版 PDF。",
+ "hero": "國中三年的英文文法分在六冊課本裡，一次段考只考兩課左右，學到國三常常忘了國一。這一頁先給一張<strong>國一到國三 36 個文法重點</strong>的總整理表（句型＋例句，附 A4 列印版），再整理國中會學的 6 種時態、會考怎麼考文法、最容易錯的 10 個地方，最後是段考和會考各自怎麼用這張表複習。",
+ "sections": [
+  {
+   "title": "國中英文文法總整理表：國一到國三 36 個重點",
+   "prose": [
+    "表格分國一、國二、國三三組，共 36 列：第一欄是文法名稱（中文＋英文），第二欄是句型，第三欄是一個例句。國中要教哪些文法，108 課綱的附錄六「國民中學英語文基礎文法句構參考表」有列出清單；康軒、翰林、南一三個版本教的範圍大致相同，<strong>差在順序</strong>。",
+    "所以表上的年級是「多數版本在這一年教」，不是每個版本的確切課次。我們對照了學校公布的康軒、翰林課程計畫：例如附加問句，翰林放在國二下，康軒放在國三上；because／so 翰林在國一下就教，康軒到國二上才教。孩子課本的確切順序，以課本目次為準。"
+   ],
+   "heads": [
+    "文法重點",
+    "句型",
+    "例句"
+   ],
+   "groups": [
+    {
+     "name": "國一（七年級）",
+     "rows": [
+      [
+       "be 動詞 be verbs",
+       "I am；he／she／it is；you／we／they are",
+       "Are you in the seventh grade? Yes, I am."
+      ],
+      [
+       "人稱代名詞 personal pronouns",
+       "主格 I／受格 me／所有格 my／所有格代名詞 mine",
+       "Amy is my classmate. I sit next to her."
+      ],
+      [
+       "名詞單複數 plural nouns",
+       "名詞 + s／es；不規則：child → children",
+       "This is a box. These are boxes."
+      ],
+      [
+       "疑問詞問句 wh- questions",
+       "What／Who／Where／How + be 動詞或 do／does + 主詞",
+       "Where do you live? I live in Banqiao."
+      ],
+      [
+       "介系詞 prepositions",
+       "地方 in／on／under／next to；時間 at 幾點、on 星期幾、in 月份",
+       "The book is on the desk. Class starts at eight."
+      ],
+      [
+       "祈使句 imperatives",
+       "原形動詞開頭；否定用 Don't + 原形動詞",
+       "Please open the window. Don't run in the hallway."
+      ],
+      [
+       "助動詞 can",
+       "can／can't + 原形動詞",
+       "I can swim, but I can't dive."
+      ],
+      [
+       "現在進行式 present progressive",
+       "am／is／are + V-ing",
+       "Dad is cooking dinner right now."
+      ],
+      [
+       "There is／are 句型（某處有…）",
+       "There is + 單數或不可數名詞；There are + 複數名詞",
+       "There are two parks near my school."
+      ],
+      [
+       "現在簡單式 simple present",
+       "he／she／it 當主詞，動詞加 s／es；問句用 do／does",
+       "My mom watches the news every night."
+      ],
+      [
+       "頻率副詞 adverbs of frequency",
+       "always／usually／often／sometimes／never：放在 be 動詞後、一般動詞前",
+       "I usually walk to school. I am never late."
+      ],
+      [
+       "可數與不可數名詞 countable and uncountable nouns",
+       "How many + 複數名詞；How much + 不可數名詞",
+       "How many eggs and how much milk do we need?"
+      ],
+      [
+       "be 動詞過去式 past tense of be",
+       "was（I、he、she、it）；were（you、we、they）",
+       "We were at the zoo last Sunday."
+      ],
+      [
+       "過去簡單式 simple past",
+       "規則加 -ed，不規則要背（go → went）；否定、問句用 did + 原形",
+       "Tom didn't come to school yesterday. He had a cold."
+      ]
+     ]
+    },
+    {
+     "name": "國二（八年級）",
+     "rows": [
+      [
+       "授與動詞 verbs with two objects",
+       "give + 人 + 物 = give + 物 + to + 人（buy 用 for）",
+       "Dad bought me a bike. = Dad bought a bike for me."
+      ],
+      [
+       "過去進行式 past progressive",
+       "was／were + V-ing；常和 when 連用",
+       "I was taking a shower when the phone rang."
+      ],
+      [
+       "連接詞 because／so",
+       "because + 原因；so + 結果；兩個不放在同一句",
+       "I was hungry, so I made some noodles."
+      ],
+      [
+       "不定詞與動名詞 infinitives and gerunds",
+       "want／decide／plan + to V；enjoy／finish／practice + V-ing",
+       "I enjoy drawing, and I want to be an artist."
+      ],
+      [
+       "未來式 future（will／be going to）",
+       "will + 原形；am／is／are going to + 原形",
+       "We're going to have a test on Friday."
+      ],
+      [
+       "花費的說法 spend／take／cost／pay",
+       "人 spend 時間或錢；It takes 人 時間 to V；物 cost 錢；人 pay 錢 for 物",
+       "It takes me 15 minutes to walk to school."
+      ],
+      [
+       "比較級 comparatives",
+       "形容詞 + er／more + 形容詞 + than；as + 形容詞 + as",
+       "My brother is taller than my dad now."
+      ],
+      [
+       "最高級 superlatives",
+       "the + 形容詞 + est／the most + 形容詞",
+       "Yushan is the highest mountain in Taiwan."
+      ],
+      [
+       "連綴動詞 linking verbs",
+       "look／sound／smell／taste／feel + 形容詞",
+       "The soup smells good, but it tastes too salty."
+      ],
+      [
+       "情態副詞 adverbs of manner",
+       "形容詞 + ly，修飾動詞；good 的副詞是 well",
+       "Please speak slowly. She sings well."
+      ],
+      [
+       "感官動詞 verbs of perception",
+       "see／hear／watch + 受詞 + 原形動詞（也可用 V-ing）",
+       "I heard someone knock on the door."
+      ],
+      [
+       "使役動詞 causative verbs",
+       "make／let／have + 受詞 + 原形動詞",
+       "Mom made me clean my room."
+      ],
+      [
+       "if 條件句 conditionals with if",
+       "If + 現在式，主要子句用 will + 原形",
+       "If it rains tomorrow, we will stay home."
+      ]
+     ]
+    },
+    {
+     "name": "國三（九年級）",
+     "rows": [
+      [
+       "現在完成式 present perfect",
+       "have／has + p.p.；常配 already、yet、ever、since、for",
+       "Have you ever tried stinky tofu?"
+      ],
+      [
+       "分詞形容詞 -ing and -ed adjectives",
+       "V-ing：令人…的；V-ed：（人）感到…的",
+       "The game was exciting, and we were all excited."
+      ],
+      [
+       "too…to／so…that",
+       "too + 形容詞 + to V；so + 形容詞 + that + 子句",
+       "He is too young to drive. I was so tired that I fell asleep."
+      ],
+      [
+       "被動語態 passive voice",
+       "be 動詞 + p.p.（+ by + 做動作的人）",
+       "English is spoken in many countries."
+      ],
+      [
+       "間接問句 indirect questions",
+       "疑問詞 + 主詞 + 動詞（不倒裝）；Yes/No 問句用 if／whether",
+       "Do you know where the station is?"
+      ],
+      [
+       "附加問句 tag questions",
+       "肯定句配否定附加問句；否定句配肯定附加問句",
+       "You're Amy's brother, aren't you?"
+      ],
+      [
+       "關係代名詞（主格）relative pronouns",
+       "人用 who，物用 which，兩者都可用 that",
+       "The girl who is singing is my sister."
+      ],
+      [
+       "關係代名詞（受格、所有格 whose）",
+       "受格的 who／which／that 可省略；whose + 名詞",
+       "The movie (that) we saw was great. I have a friend whose dad is a pilot."
+      ],
+      [
+       "附和句 so／neither",
+       "肯定：So + 助動詞 + 主詞；否定：Neither + 助動詞 + 主詞",
+       "I can't swim. — Neither can I."
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "每個重點的詳細說明：<a href=\"/be-verbs-guide/\">be 動詞用法</a>、<a href=\"/english-plural-nouns/\">名詞複數規則</a>、<a href=\"/in-on-at-prepositions/\">in／on／at 用法</a>、<a href=\"/irregular-verbs-list/\">不規則動詞三態表</a>、<a href=\"/english-comparatives-guide/\">比較級與最高級</a>、<a href=\"/english-conjunctions-guide/\">連接詞總整理</a>。",
+    "兩個常被問到的範圍問題：國中的 if 只教真的可能發生的條件句，課綱附錄六寫明<strong>不包含假設語氣</strong>，If I were you… 這類句子不在國中範圍；過去完成式（had + p.p.）也不在這份國中清單上。"
+   ]
+  },
+  {
+   "title": "國中時態總表：課綱列出的 6 種時態",
+   "prose": [
+    "英文一共有 12 種時態，但課綱附錄六的國中文法清單只列了 6 種：現在簡單式、現在進行式、現在完成式、過去簡單式、過去進行式和未來式（未來式有 will 和 be going to 兩種寫法，所以下表是 7 列）。12 種時態的完整版見 <a href=\"/english-tenses-chart/\">英文 12 時態總表</a>。"
+   ],
+   "heads": [
+    "時態（國幾學）",
+    "句型＋常見時間字",
+    "例句"
+   ],
+   "rows": [
+    [
+     "現在簡單式（國一）",
+     "V／三單 V-s；every day、usually、on Sundays",
+     "My sister walks the dog every morning."
+    ],
+    [
+     "現在進行式（國一）",
+     "am／is／are + V-ing；now、right now、Look!",
+     "Shh! The baby is sleeping."
+    ],
+    [
+     "過去簡單式（國一下）",
+     "V-ed／不規則變化；yesterday、last week、ago",
+     "We ate hot pot two days ago."
+    ],
+    [
+     "過去進行式（國二）",
+     "was／were + V-ing；at nine last night、when、while",
+     "I was reading when the lights went out."
+    ],
+    [
+     "未來式 will（國二）",
+     "will + 原形；tomorrow、next week、soon",
+     "I'll call you after school."
+    ],
+    [
+     "未來式 be going to（國二）",
+     "am／is／are going to + 原形；this weekend、next month",
+     "We're going to visit Grandpa this weekend."
+    ],
+    [
+     "現在完成式（國三）",
+     "have／has + p.p.；already、yet、ever、since、for",
+     "Have you finished your homework yet?"
+    ]
+   ],
+   "after": [
+    "判斷時態，先找句子裡的時間字：看到 yesterday、ago 用過去式；看到 since、already、yet，先想現在完成式。要小心 when：「過去進行式 + when + 過去式」是國二最常考的組合（I was reading when the lights went out.），但 When 開頭的問句可以用任何時態。"
+   ]
+  },
+  {
+   "title": "會考英文考文法嗎？近三年的語法題數與題型",
+   "prose": [
+    "會考英語沒有獨立的「文法測驗」，但閱讀題本的 43 題裡，有一類單題專門考<strong>語法</strong>。下表是國中教育會考官方試題說明公布的題本結構（閱讀題本四選一，聽力題本三選一）："
+   ],
+   "heads": [
+    "題型",
+    "112／113／114 年題數",
+    "文法怎麼出現"
+   ],
+   "rows": [
+    [
+     "單題：語法",
+     "9／8／7",
+     "一句話挖一格，選出文法正確的形式"
+    ],
+    [
+     "單題：字彙",
+     "14／13／12",
+     "考字義，但要看懂整句的結構才選得對"
+    ],
+    [
+     "題組：克漏字（1 篇）",
+     "2／4／6",
+     "短文挖空，看前後文決定填哪個字、哪種形式"
+    ],
+    [
+     "題組：篇章理解（7 篇）",
+     "18／18／18",
+     "不直接考文法，但長句、子句讀不懂就抓不到細節"
+    ],
+    [
+     "聽力（另一本題本）",
+     "21／21／21",
+     "辨識句意、基本問答、言談理解，不考文法名詞"
+    ]
+   ],
+   "after": [
+    "官方試題說明裡舉例的語法題：112 年第 4 題考<strong>感官動詞</strong>後面的動詞形式、113 年第 6 題考用代名詞 it 指前半句的<strong>動名詞片語</strong>、114 年第 4 題考 <strong>enjoy</strong> 後面的動詞形式，全都在上面的總整理表裡。每年題數會調整，以當年官方公布為準；計分方式和等級見 <a href=\"/cap-english-guide/\">會考英文級距與準備攻略</a>。",
+    "下面 5 題是我們仿照語法單題的形式自己出的練習題，答案在最後：",
+    "1. My little brother enjoys ______ comic books after dinner.　(A) read　(B) reads　(C) reading　(D) to read",
+    "2. I saw a cat ______ across the street this morning.　(A) runs　(B) run　(C) to run　(D) ran",
+    "3. Do you know ______?　(A) where does Ken live　(B) where Ken lives　(C) where lives Ken　(D) Ken lives where",
+    "4. The new library ______ last year.　(A) built　(B) is built　(C) was built　(D) builds",
+    "5. The man ______ is talking to my teacher is my uncle.　(A) which　(B) who　(C) whose　(D) he",
+    "<strong>答案：</strong>1. C（enjoy + V-ing）　2. B（感官動詞 + 原形動詞）　3. B（間接問句不倒裝）　4. C（過去的被動：was + p.p.）　5. B（說明「人」用 who）"
+   ]
+  },
+  {
+   "title": "國中英文文法最容易錯的 10 個地方",
+   "prose": [
+    "這 10 個錯誤大多是照中文的習慣寫英文：中文的動詞不會跟著主詞和時間變化，「因為…所以…」可以連用，「有」也可以表示某個地方有東西。寫完句子先檢查三件事：主詞是誰、時間是什麼時候、動詞前面有沒有助動詞。"
+   ],
+   "heads": [
+    "錯誤",
+    "正確",
+    "為什麼"
+   ],
+   "rows": [
+    [
+     "✗ He don't like milk.",
+     "✓ He doesn't like milk.",
+     "主詞是 he／she／it，助動詞用 does"
+    ],
+    [
+     "✗ I am go to school by bus.",
+     "✓ I go to school by bus.",
+     "已經有一般動詞 go，就不再用 be 動詞"
+    ],
+    [
+     "✗ Did you went to the party?",
+     "✓ Did you go to the party?",
+     "did 已經表示過去，後面接原形動詞"
+    ],
+    [
+     "✗ There have a cat on the sofa.",
+     "✓ There is a cat on the sofa.",
+     "「某處有」用 There is／are，不用 have"
+    ],
+    [
+     "✗ I enjoy to play the piano.",
+     "✓ I enjoy playing the piano.",
+     "enjoy、finish、practice 後面接 V-ing"
+    ],
+    [
+     "✗ Because I was tired, so I went to bed.",
+     "✓ Because I was tired, I went to bed.",
+     "because 和 so 只能選一個用"
+    ],
+    [
+     "✗ The movie was very bored.",
+     "✓ The movie was very boring.",
+     "電影「令人無聊」用 -ing；人「覺得無聊」才用 -ed"
+    ],
+    [
+     "✗ I have seen him yesterday.",
+     "✓ I saw him yesterday.",
+     "有 yesterday 這種過去時間，用過去式"
+    ],
+    [
+     "✗ If he will call, I will tell you.",
+     "✓ If he calls, I will tell you.",
+     "if 子句用現在式表示未來"
+    ],
+    [
+     "✗ Can you tell me what time is it?",
+     "✓ Can you tell me what time it is?",
+     "間接問句用直述句的順序，不倒裝"
+    ]
+   ],
+   "after": [
+    "第 2 題的 be 動詞和一般動詞混用，是國一最常見的錯，<a href=\"/be-verbs-guide/\">be 動詞用法</a>有完整的對照表；第 3、8 題要先背熟過去式，見<a href=\"/irregular-verbs-list/\">不規則動詞三態表</a>。"
+   ]
+  },
+  {
+   "title": "怎麼用這份整理複習：段考和會考的用法不同",
+   "prose": [
+    "段考由學校老師出題，範圍是這次教的兩課左右（一冊大多是 6 課，一學期通常考三次）；會考是全國統一的選擇題，範圍是國中三年全部。所以同一張表，兩種考試的用法不一樣："
+   ],
+   "heads": [
+    "什麼時候",
+    "怎麼用這張表"
+   ],
+   "rows": [
+    [
+     "段考前兩週",
+     "只看這次範圍的那幾列：把句型唸出來，自己造一個和課本不同的例句"
+    ],
+    [
+     "段考前兩、三天",
+     "遮住例句欄，看句型說出一句話；說不出來的那一列打勾，回課本重看"
+    ],
+    [
+     "段考考完",
+     "把考卷上錯的文法題對回表上的那一列，在旁邊寫下錯在哪裡"
+    ],
+    [
+     "寒暑假",
+     "從國一第一列往下複習，每天 3 到 4 列，打勾的列先做"
+    ],
+    [
+     "國三會考前",
+     "整張表當檢查清單，再寫歷屆試題的語法單題；每錯一題，找出它是表上哪一列"
+    ]
+   ],
+   "after": [
+    "印出來的 A4 版（第一張表上方的下載區）最適合這樣用：貼在書桌前，直接在上面打勾、寫筆記。",
+    "考古題從哪裡找：板橋各國中的英文段考試題連結整理在<a href=\"/banqiao-junior-high-english-past-papers/\">板橋國中考古題下載</a>，海山國中另見<a href=\"/haishan-junior-high-english/\">海山國中考古題與段考日期</a>。想對照劍橋英檢的文法範圍，見 <a href=\"/a2-grammar-guide/\">KET（A2）官方文法範圍</a>和 <a href=\"/b1-grammar-guide/\">PET（B1）比 KET 多考什麼</a>。"
+   ]
+  },
+  {
+   "title": "國中英文文法常見問題",
+   "faq": [
+    [
+     "國一英文文法要先學什麼？",
+     "先把 be 動詞和現在簡單式分清楚：什麼時候用 am／is／are，什麼時候用一般動詞配 do／does。國一的疑問句、否定句和進行式都建立在這兩件事上，這裡沒弄懂，後面的時態會一路錯下去。"
+    ],
+    [
+     "國中英文文法有哪些重點？",
+     "國一是 be 動詞、現在簡單式、現在進行式、過去式這些基本句型；國二是過去進行式、未來式、不定詞與動名詞、比較級和最高級；國三是現在完成式、被動語態、間接問句和關係代名詞。本頁第一張表依年級列出 36 個重點，每個都附句型和例句。"
+    ],
+    [
+     "會考英文會考文法嗎？",
+     "會。會考英語沒有獨立的文法測驗，但閱讀題本的單題裡有一類專考語法：112 年 9 題、113 年 8 題、114 年 7 題（閱讀共 43 題），題組裡的克漏字也要靠文法判斷。不考文法名詞，考的是能不能選出正確的句子形式。"
+    ],
+    [
+     "國中英文文法整理 PDF 哪裡下載？",
+     "本頁第一張「國中英文文法總整理表」有 A4 列印版 PDF，在表格上方的下載區，可以直接下載。印出來貼在書桌前，複習時遮住例句欄自我測驗。"
+    ],
+    [
+     "關係代名詞是國幾教的？",
+     "國三上學期。康軒、翰林都放在第五冊（九年級上學期）的最後兩課：先教當主詞的 who／which／that，再教當受詞的用法；所有格 whose 康軒放在第五冊，翰林放在第六冊。確切課次以孩子的課本目次為準。"
+    ],
+    [
+     "現在完成式是國幾學的？",
+     "國三上學期一開學。康軒、翰林都把現在完成式放在第五冊第一課，南一第五冊第一課的課名也是現在完成式的問句。國二學的是過去進行式和未來式。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "文法看懂了，寫得出來、說得出來嗎？",
+ "cta": "看懂句型和用得出來是兩件事。我們的小班課讓孩子每堂課用剛學的文法說自己的事、寫自己的句子，錯的地方當場改，句型才會變成自己的。"
+}

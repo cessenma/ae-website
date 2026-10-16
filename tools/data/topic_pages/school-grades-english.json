@@ -1,0 +1,468 @@
+{
+ "slug": "school-grades-english",
+ "published": "2026-10-16",
+ "target": "年級英文",
+ "index": 1.0,
+ "h1": "年級英文對照表：小一到大四的台灣、美國、英國說法與年齡，國一是 7th grade 嗎？",
+ "title": "年級英文對照表：國一是 7th grade？小一到大四與縮寫（附 PDF）｜埃森美語",
+ "desc": "幼兒園到大學的年級英文對照表：台灣、美國、英國的年級與年齡並列，國一是 7th grade、大一是 freshman；附「我讀三年級」美英說法、年級縮寫、學校名稱英文與 A4 PDF。",
+ "hero": "孩子要用英文說「我讀國一」，常卡在年級：國一不是 first grade，而是 <strong>7th grade</strong>。美國從小一一路數到高三的 12th grade；英國改用 Year 編號，而且多數孩子 4 歲就進小學，同年齡的年級數字比台灣多一。下面先給一張台灣、美國、英國的<strong>年級與年齡對照表</strong>（幼兒園到大學），再整理「我讀三年級」的美式和英式說法、年級縮寫、學校名稱的英文，以及美國高中和大學的 freshman 到 senior。",
+ "sections": [
+  {
+   "title": "年級英文對照表：台灣、美國、英國（含年齡）",
+   "prose": [
+    "第一欄是台灣的年級，括號裡是那一學年孩子的<strong>足歲年齡</strong>（例如國一的孩子開學時 12 歲，學年中滿 13 歲）。第二欄是美國的說法，數字寫法和英文拼法並列，因為 fifth、eighth、ninth、twelfth 這幾個序數最常拼錯（序數的完整規則見 <a href=\"/ordinal-numbers-english/\">序數英文 1st–31st</a>）。第三欄是英國（英格蘭）<strong>同年齡</strong>的孩子讀的年級。",
+    "台灣和美國都是 6 歲上小一，年級一路往上數，不會從國中重新算起：<strong>國一到國三是 7th–9th grade，高一到高三是 10th–12th grade</strong>。英國為什麼多一個年級，表格下面有說明。"
+   ],
+   "heads": [
+    "台灣（年齡）",
+    "美國",
+    "英國（英格蘭）"
+   ],
+   "groups": [
+    {
+     "name": "幼兒園 preschool",
+     "rows": [
+      [
+       "小班（3–4 歲）",
+       "preschool（3 歲班）",
+       "Nursery"
+      ],
+      [
+       "中班（4–5 歲）",
+       "pre-K（pre-kindergarten）",
+       "Reception"
+      ],
+      [
+       "大班（5–6 歲）",
+       "kindergarten（K）",
+       "Year 1"
+      ]
+     ]
+    },
+    {
+     "name": "國小 elementary school",
+     "rows": [
+      [
+       "小一（6–7 歲）",
+       "1st grade（first grade）",
+       "Year 2"
+      ],
+      [
+       "小二（7–8 歲）",
+       "2nd grade（second grade）",
+       "Year 3"
+      ],
+      [
+       "小三（8–9 歲）",
+       "3rd grade（third grade）",
+       "Year 4"
+      ],
+      [
+       "小四（9–10 歲）",
+       "4th grade（fourth grade）",
+       "Year 5"
+      ],
+      [
+       "小五（10–11 歲）",
+       "5th grade（fifth grade）",
+       "Year 6"
+      ],
+      [
+       "小六（11–12 歲）",
+       "6th grade（sixth grade）",
+       "Year 7（英國中學第一年）"
+      ]
+     ]
+    },
+    {
+     "name": "國中 junior high school",
+     "rows": [
+      [
+       "國一（12–13 歲）",
+       "7th grade（seventh grade）",
+       "Year 8"
+      ],
+      [
+       "國二（13–14 歲）",
+       "8th grade（eighth grade）",
+       "Year 9"
+      ],
+      [
+       "國三（14–15 歲）",
+       "9th grade（ninth grade）／freshman",
+       "Year 10"
+      ]
+     ]
+    },
+    {
+     "name": "高中 senior high school",
+     "rows": [
+      [
+       "高一（15–16 歲）",
+       "10th grade（tenth grade）／sophomore",
+       "Year 11（考 GCSE 的一年）"
+      ],
+      [
+       "高二（16–17 歲）",
+       "11th grade（eleventh grade）／junior",
+       "Year 12（sixth form）"
+      ],
+      [
+       "高三（17–18 歲）",
+       "12th grade（twelfth grade）／senior",
+       "Year 13（升大學前最後一年）"
+      ]
+     ]
+    },
+    {
+     "name": "大學與研究所 university",
+     "rows": [
+      [
+       "大一（約 18–19 歲）",
+       "freshman（也說 first-year）",
+       "first-year（新生叫 fresher）"
+      ],
+      [
+       "大二（約 19–20 歲）",
+       "sophomore",
+       "second-year"
+      ],
+      [
+       "大三（約 20–21 歲）",
+       "junior",
+       "third-year（多數學士最後一年）"
+      ],
+      [
+       "大四（約 21–22 歲）",
+       "senior",
+       "fourth-year（四年制課程）"
+      ],
+      [
+       "研究所",
+       "graduate school（grad school）",
+       "postgraduate"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "<strong>英國為什麼多一個年級？</strong>英格蘭多數孩子在滿 4 歲後的那個 9 月就進小學讀 Reception（學前那一年），5 歲讀 Year 1，比台灣、美國早一年進入有編號的年級。所以同樣是 6–7 歲，台灣讀小一、美國讀 1st grade，英國已經讀 Year 2。簡單算法：把台灣的年級從小一連續往上數（國一是第 7 年），<strong>再加一就是英國的 Year</strong>，國一對到 Year 8，高三對到 Year 13。",
+    "<strong>分界日：</strong>台灣以 9 月 1 日為準，當年 9 月 1 日以前（含）滿 6 歲的孩子，那一學年就上小一（例如新北市 114 學年度的小一新生，是民國 107 年 9 月 2 日到 108 年 9 月 1 日出生）。英格蘭把 9 月 1 日到隔年 8 月 31 日出生的孩子編成同一個年級，和台灣幾乎一樣。美國由各州自訂幼稚園（kindergarten）入學的分界日，常見在 9 月 1 日前後，但各州不同，所以<strong>生日靠近分界日的孩子，搬到美國可能被分到不同年級</strong>，以當地學區的規定為準。",
+    "英國那一欄是英格蘭的年級；蘇格蘭的小學叫 P1–P7、中學叫 S1–S6，又是另一套。英格蘭的中學從 Year 7 開始，所以台灣小六年紀的孩子在英國已經是中學生；Year 12、13 合稱 sixth form，是升大學前的兩年。"
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "怎麼說「我讀三年級」：美式、英式句型",
+   "prose": [
+    "美國人說年級用 <strong>be in＋年級</strong>：I'm in third grade.（加 the 說成 I'm in the third grade. 也對）；英國人說 I'm in Year 4.，Year 要大寫。問對方讀幾年級，美式是 What grade are you in?，英式是 What year are you in?。下表的英式說法，是<strong>同年齡</strong>的英國孩子會說的年級。"
+   ],
+   "heads": [
+    "美式說法",
+    "中文",
+    "英式說法"
+   ],
+   "rows": [
+    [
+     "What grade are you in?",
+     "你讀幾年級？",
+     "What year are you in?"
+    ],
+    [
+     "I'm in third grade.",
+     "我讀小三。",
+     "I'm in Year 4."
+    ],
+    [
+     "I'm a third grader.",
+     "我是三年級生。",
+     "I'm a Year 4 pupil."
+    ],
+    [
+     "My daughter is in pre-K.",
+     "我女兒讀幼兒園中班。",
+     "My daughter is in Reception."
+    ],
+    [
+     "My son is in kindergarten.",
+     "我兒子讀大班。",
+     "My son is in Year 1."
+    ],
+    [
+     "I'm in seventh grade.",
+     "我讀國一。",
+     "I'm in Year 8."
+    ],
+    [
+     "I'm in tenth grade. / I'm a sophomore.",
+     "我讀高一。",
+     "I'm in Year 11."
+    ],
+    [
+     "I'm a senior in high school.",
+     "我高三。",
+     "I'm in Year 13."
+    ],
+    [
+     "I'm a freshman in college.",
+     "我大一。",
+     "I'm in my first year at university."
+    ],
+    [
+     "We're in the same grade.",
+     "我們同年級。",
+     "We're in the same year."
+    ],
+    [
+     "He's one grade above me.",
+     "他比我高一個年級。",
+     "He's in the year above me."
+    ],
+    [
+     "I graduated from elementary school.",
+     "我小學畢業了。",
+     "I've finished primary school."
+    ]
+   ],
+   "after": [
+    "兩個美英差異：third grader 這種「幾年級生」的說法是美式，英國人多半直接說 in Year 4，學童叫 pupil；英式的 graduate 主要用在大學畢業，小學、中學畢業說 finish school 或 leave school。",
+    "<strong>「五年三班」怎麼說？</strong>美國小學通常用老師的名字稱呼班級：I'm in Ms. Lin's class.（我在林老師班上）。想照台灣的編法說，可以說 I'm in Class 3, Grade 5.，對方聽得懂。",
+    "跟外國人介紹自己時，年級通常和名字、年齡一起說：My name is Amy. I'm nine years old. I'm in fourth grade.。完整的自我介紹句型見 <a href=\"/english-self-introduction-kids/\">小學生英文自我介紹</a>（國高中生看 <a href=\"/english-self-introduction-students/\">學生版英文自我介紹</a>）；年齡的數字怎麼唸，見 <a href=\"/english-numbers-guide/\">英文數字 1-100 對照表</a>。"
+   ]
+  },
+  {
+   "title": "年級英文縮寫：1st grade、Grade 1、K、Y7 怎麼寫",
+   "prose": [
+    "年級縮寫最常錯在序數的字尾：1st、2nd、3rd 之後都是 th，而且 <strong>11th、12th、13th 也是 th</strong>，不是 11st、12nd、13rd。數字放在 Grade 後面就不加字尾：寫 Grade 3，不寫 Grade 3rd。"
+   ],
+   "heads": [
+    "寫法",
+    "意思",
+    "什麼時候用"
+   ],
+   "rows": [
+    [
+     "1st grade, 2nd grade, 3rd grade",
+     "一、二、三年級",
+     "美式最常見的寫法；4th 以後都加 th"
+    ],
+    [
+     "Grade 1, Grade 3",
+     "一年級、三年級",
+     "課本、課程標準、成績單常見；數字不加 st、nd"
+    ],
+    [
+     "Gr. 3",
+     "三年級",
+     "Grade 的縮寫，後面有句點"
+    ],
+    [
+     "G3",
+     "三年級",
+     "課表、表格欄位用的最短寫法；寫句子時不用"
+    ],
+    [
+     "K",
+     "kindergarten（大班）",
+     "美式；K–12 指 kindergarten 到 12 年級的中小學教育"
+    ],
+    [
+     "Pre-K",
+     "pre-kindergarten（中班）",
+     "也寫成 pre-K 或 PreK"
+    ],
+    [
+     "third-grade",
+     "三年級的（形容詞）",
+     "放在名詞前要加連字號：a third-grade teacher"
+    ],
+    [
+     "Y7, Yr 7",
+     "英國的 Year 7",
+     "英國學校的簡寫"
+    ],
+    [
+     "KS2",
+     "英國的 Key Stage 2",
+     "英格蘭 Year 3–6 這個學習階段"
+    ],
+    [
+     "Fr., So., Jr., Sr.",
+     "高中、大學一到四年級生",
+     "美國名冊、球隊名單上的 freshman 到 senior"
+    ]
+   ],
+   "after": [
+    "寫在句子裡時，美式的 third grade 不用大寫（I'm in third grade.），英式的 Year 4 要大寫 Y（I'm in Year 4.）。大寫的規則見 <a href=\"/english-capitalization-guide/\">英文大寫規則</a>；etc.、e.g. 這些常見縮寫見 <a href=\"/english-abbreviations-guide/\">英文縮寫大全</a>。"
+   ]
+  },
+  {
+   "title": "學校名稱與學制英文：國小、國中、高中、大學怎麼說",
+   "prose": [
+    "台灣的學制是國小 6 年、國中 3 年、高中 3 年、大學 4 年。學校名稱的英文，美式和英式差最多的是幼兒園、國小和國中；考試和學期的說法也整理在一起："
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "說明"
+   ],
+   "rows": [
+    [
+     "preschool",
+     "幼兒園",
+     "美國的 kindergarten 只指上小學前那一年（大班）"
+    ],
+    [
+     "toddler class",
+     "幼幼班",
+     "2–3 歲的班"
+    ],
+    [
+     "elementary school",
+     "國小",
+     "英式說 primary school"
+    ],
+    [
+     "junior high school",
+     "國中",
+     "美國很多地方是 middle school（6–8 年級）"
+    ],
+    [
+     "senior high school",
+     "高中",
+     "美國直接說 high school；英式 secondary school"
+    ],
+    [
+     "vocational high school",
+     "高職",
+     "台灣的技術型高中"
+    ],
+    [
+     "university",
+     "大學",
+     "美國口語也說 college：go to college 就是上大學"
+    ],
+    [
+     "graduate school",
+     "研究所",
+     "口語 grad school；英式說 postgraduate"
+    ],
+    [
+     "school year",
+     "學年",
+     "台灣的學年度從 8 月 1 日開始"
+    ],
+    [
+     "semester",
+     "學期",
+     "台灣一學年兩學期；英國中小學一年分三個 term"
+    ],
+    [
+     "fall semester／spring semester",
+     "上學期／下學期",
+     "也可以說 first／second semester"
+    ],
+    [
+     "midterm (exam)",
+     "期中考",
+     "口語常只說 midterm"
+    ],
+    [
+     "final exam",
+     "期末考",
+     "口語說 finals"
+    ],
+    [
+     "test／exam",
+     "段考",
+     "沒有固定譯法；第一、二次段考可說 first／second midterm"
+    ],
+    [
+     "homeroom teacher",
+     "班導師",
+     "英式說 form tutor"
+    ],
+    [
+     "winter break／summer vacation",
+     "寒假／暑假",
+     "英式說 summer holidays"
+    ]
+   ],
+   "after": [
+    "<strong>middle school 和 junior high 差在哪？</strong>美國的「國中」看學區而定：middle school 通常是 6–8 年級，junior high 通常是 7–9 或 7–8 年級，之後才讀 high school。所以美國的 6 年級生可能已經在讀中學，9 年級生常常已經是高中生。台灣的國中一般譯成 junior high school，跟美國人說 I'm in junior high. 完全聽得懂。",
+    "還有一個常見誤會：台灣家長常把幼兒園說成 kindergarten，但在美國，kindergarten 是小學裡上 1st grade 前的那一年，只對到台灣的大班；泛指幼兒園，說 preschool 比較準。孩子明年要上小一，<a href=\"/banqiao-first-grade-english/\">幼小銜接的英文</a>怎麼準備另有整理。",
+    "國中三年的文法重點整理在 <a href=\"/junior-high-english-grammar/\">國中英文文法</a>；國小各年級的英文學習重點見 <a href=\"/banqiao-elementary-school-english/\">國小英文 1–6 年級</a>；板橋各校的段考日期見 <a href=\"/exams/banqiao-school-calendar/\">板橋學區行事曆</a>。"
+   ]
+  },
+  {
+   "title": "美國高中與大學年級：freshman、sophomore、junior、senior",
+   "prose": [
+    "美國四年制的高中和大學，每個年級都有自己的名稱。最容易弄錯的是高中：美國的高中通常是 9–12 年級，所以<strong>台灣的高一在美國是 sophomore（10 年級），不是 freshman</strong>；美國高中的 freshman 是 9 年級，年紀等於台灣的國三。"
+   ],
+   "heads": [
+    "英文（KK）",
+    "美國高中",
+    "美國大學"
+   ],
+   "rows": [
+    [
+     "freshman /ˈfrɛʃmən/",
+     "9 年級（台灣國三的年紀）",
+     "大一"
+    ],
+    [
+     "sophomore /ˈsɑfˌmor/",
+     "10 年級（台灣高一的年紀）",
+     "大二"
+    ],
+    [
+     "junior /ˈdʒunjɚ/",
+     "11 年級（台灣高二的年紀）",
+     "大三"
+    ],
+    [
+     "senior /ˈsinjɚ/",
+     "12 年級（台灣高三的年紀）",
+     "大四"
+    ]
+   ],
+   "after": [
+    "用法：I'm a sophomore in high school.（我讀美國高中二年級）、I'm a junior in college.（我大三）；也可以放在名詞前：my freshman year（我一年級那一年）、senior year（最後一年）。freshman 男女都用，複數是 freshmen。sophomore 可以唸成兩個音節 sof-more（ph 後面的 o 不發音），也有人唸成三個音節。",
+    "英國不用這四個字。大學說 first-year、second-year、third-year（I'm a second-year student.），剛入學的新生叫 fresher；英格蘭的學士課程多半是三年，所以 third-year 常常就是最後一年。",
+    "跟美國人介紹台灣三年制的高中時，最不會誤會的說法是 I'm in my first year of senior high school.，或直接說年級數字 I'm in tenth grade.。"
+   ]
+  },
+  {
+   "title": "年級英文常見問題",
+   "faq": [
+    [
+     "國一英文是 7th grade 嗎？",
+     "是。美國從小一到高三連續數 1st 到 12th grade，國一是第七年，所以是 7th grade（seventh grade），「我讀國一」說 I'm in seventh grade.。英國同年齡的孩子讀 Year 8。"
+    ],
+    [
+     "台灣小一等於美國幾年級？",
+     "等於美國的 1st grade，兩邊都是 6 歲上小一。英國同年齡的孩子已經讀 Year 2，因為多數英國孩子 4 歲就進小學讀 Reception，年級數字比台灣多一。"
+    ],
+    [
+     "小學三年級英文怎麼寫？",
+     "美式寫 third grade 或 3rd grade，注意 3rd 是 rd 不是 th；「我讀三年級」是 I'm in third grade.，三年級生是 a third grader。英國同年齡的孩子讀 Year 4。"
+    ],
+    [
+     "幼兒園大班英文怎麼說？",
+     "大班在美國叫 kindergarten，縮寫 K，是上 1st grade 前的那一年，大約 5–6 歲；中班是 pre-K，小班是 preschool。英國同年齡的孩子讀 Year 1。"
+    ],
+    [
+     "大一英文怎麼說？",
+     "美式說 freshman：I'm a freshman in college.；大二 sophomore、大三 junior、大四 senior。英式說 first-year：I'm in my first year at university.，剛入學的新生也叫 fresher。"
+    ],
+    [
+     "年級英文縮寫怎麼寫？",
+     "美式最常見的是 1st grade、2nd grade、3rd grade，4th 以後加 th；表格可寫 Grade 3、Gr. 3 或 G3。大班寫 K，中班寫 Pre-K；英國寫 Y7 或 Yr 7；美國高中、大學名單上的 Fr.、So.、Jr.、Sr. 是一到四年級生。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "會說自己幾年級了，接下來呢？",
+ "cta": "說得出 I'm in fourth grade 只是開頭，外國人接著會問你喜歡哪一科、下課都做什麼。我們的小班課讓孩子在一來一往的對話裡，把自我介紹和學校生活大聲說出來。"
+}
