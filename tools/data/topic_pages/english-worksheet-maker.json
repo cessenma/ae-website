@@ -1,0 +1,142 @@
+{
+ "slug": "english-worksheet-maker",
+ "published": "2026-10-18",
+ "target": "英文格線產生器",
+ "index": 1.0,
+ "h1": "英文格線產生器：輸入單字或名字，做四線三格描寫練習單",
+ "title": "英文格線產生器：輸入單字、名字，做四線三格描寫練習單｜埃森美語",
+ "desc": "英文格線產生器：輸入孩子的名字、單字或句子，馬上做出四線三格描寫練習單；可選印刷體或草寫、灰色字或空心字，A4 直接列印或存成 PDF，也能只印空白格線紙。",
+ "hero": "市面上的英文練習本，字都是別人選的。這個產生器讓你自己決定要練什麼：孩子的英文名字、這週的單字、課本的句子，打進去就變成一張<strong>四線三格描寫練習單</strong>，字母剛好落在正確的格子裡，可以直接列印或存成 PDF。只想要空白格線紙也行。",
+ "css": "@font-face{font-family:'Playwrite US Trad';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/playwriteustrad/v11/fdNX9tyHsnVPjW9trmV7wQ0stdwRBYclCsCdzOb1-cd1E8tgiqKf5uFFig.woff2) format('woff2')}.wsm{max-width:980px;margin:18px auto 0;display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:18px;align-items:start}@media(max-width:860px){.wsm{grid-template-columns:1fr}}.wsm-ctl{background:#fff;border-radius:20px;box-shadow:var(--card-shadow);padding:16px}.wsm-ctl label,.wsm-ctl legend{display:block;font-weight:700;color:var(--navy);font-size:14.5px;margin:10px 0 6px}.wsm-ctl textarea,.wsm-ctl input[type=text],.wsm-ctl select{width:100%;box-sizing:border-box;font-size:16px;padding:10px 12px;border:2px solid rgba(26,39,82,.15);border-radius:12px;font-family:inherit}.wsm-ctl fieldset{border:none;margin:0;padding:0}.wsm-seg{display:flex;flex-wrap:wrap;gap:6px}.wsm-seg label{display:inline-flex;align-items:center;gap:4px;margin:0;font-weight:500;background:#F4FAFF;border:1px solid rgba(26,39,82,.15);border-radius:999px;padding:6px 12px;cursor:pointer}.wsm-seg input{accent-color:var(--navy)}.wsm-chk{display:flex!important;align-items:center;gap:6px;font-weight:500!important}.wsm-btns{display:flex;flex-direction:column;gap:8px;margin-top:14px}.wsm-btns button{font-family:inherit}.wsm-btns .alt{background:#fff;border:2px solid var(--light-blue);color:var(--navy);border-radius:100px;padding:10px 16px;font-weight:700;cursor:pointer}.wsm-prev{display:flex;flex-direction:column;gap:14px}.wsm-sheet{background:#fff;box-shadow:var(--card-shadow);border-radius:6px;aspect-ratio:186/273;width:100%}.wsm-sheet svg{display:block;width:100%;height:100%}.wsm-hint{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.6}#wsm-print-root{display:none}@media print{@page{size:A4;margin:12mm}body>*:not(#wsm-print-root){display:none!important}#wsm-print-root{display:block}#wsm-print-root .wsm-sheet{box-shadow:none;border-radius:0;width:186mm;height:273mm;aspect-ratio:auto;break-after:page;page-break-after:always}}",
+ "sections": [
+  {
+   "title": "做一張自己的四線三格練習單",
+   "prose": [
+    "左邊輸入內容、選字體和樣式，右邊會即時出現 A4 預覽。小寫字母的身體剛好佔中間一格，b、d、h 這類高的字母和所有大寫碰到第一條線，g、p、y 往下碰到第四條線，跟學校教的四線三格一樣。草寫用的是美國小學的草寫字型，寫法說明見 <a href=\"/english-cursive/\">英文草寫 A–Z</a>；26 個字母的現成練習單在 <a href=\"/english-alphabet-worksheet/\">英文字母練習單</a>。"
+   ],
+   "html": "<div class=\"wsm\" id=\"wsm\"><div class=\"wsm-ctl\"><label for=\"wsm-text\">練習內容（一行一個字、名字或句子）</label><textarea id=\"wsm-text\" rows=\"5\" spellcheck=\"false\">Amy\napple\nI like dogs.</textarea><fieldset><legend>字體</legend><div class=\"wsm-seg\"><label><input type=\"radio\" name=\"wsm-font\" value=\"print\" checked>印刷體</label><label><input type=\"radio\" name=\"wsm-font\" value=\"cursive\">草寫</label></div></fieldset><fieldset><legend>描寫樣式</legend><div class=\"wsm-seg\"><label><input type=\"radio\" name=\"wsm-style\" value=\"fill\" checked>灰色字</label><label><input type=\"radio\" name=\"wsm-style\" value=\"outline\">空心字</label><label><input type=\"radio\" name=\"wsm-style\" value=\"dash\">虛線字</label></div></fieldset><label for=\"wsm-size\">格線大小</label><select id=\"wsm-size\"><option value=\"10\">大（國小低年級）</option><option value=\"8\" selected>中（中年級）</option><option value=\"6\">小（高年級以上）</option></select><label for=\"wsm-extra\">每行描寫字下面加幾行空白</label><select id=\"wsm-extra\"><option value=\"0\">不加</option><option value=\"1\" selected>1 行</option><option value=\"2\">2 行</option></select><label class=\"wsm-chk\"><input type=\"checkbox\" id=\"wsm-rep\" checked>描寫字重複排滿一整行</label><label class=\"wsm-chk\"><input type=\"checkbox\" id=\"wsm-head\" checked>上方加 Name／Date 欄</label><label for=\"wsm-title\">標題（選填）</label><input type=\"text\" id=\"wsm-title\" maxlength=\"40\" placeholder=\"例如 Unit 3 Animals\"><div class=\"wsm-btns\"><button type=\"button\" class=\"btn btn-primary\" id=\"wsm-print\">列印／存成 PDF</button><button type=\"button\" class=\"alt\" id=\"wsm-blank\">只要空白四線三格紙</button></div><p class=\"wsm-hint\">按「列印」後，印表機選「另存為 PDF」就能存檔。右邊是 A4 預覽，改內容會自動更新。</p></div><div class=\"wsm-prev\" id=\"wsm-prev\" aria-label=\"練習單預覽\"></div></div><script>(function(){var V='843e5c9f',G=null,$=function(i){return document.getElementById(i);},prev=$('wsm-prev'),made=0,t0=null;\nvar W=186,Hh=273,X0=3;\nfunction opt(n){var e=document.querySelector('input[name=\"'+n+'\"]:checked');return e?e.value:null;}\nfunction glyphs(){return G||(G=fetch('/assets/worksheet-glyphs.json?v='+V).then(function(r){return r.json();}).then(function(j){return j.g;}));}\nvar cv=document.createElement('canvas').getContext('2d'),xr=null;\nfunction cursiveX(){if(xr)return xr;cv.font=\"100px 'Playwrite US Trad'\";var m=cv.measureText('x').actualBoundingBoxAscent;xr=m>0?m/100:0.38;return xr;}\nfunction width(txt,g,cur,gl){if(cur){var F=g/cursiveX();cv.font=F+\"px 'Playwrite US Trad'\";return cv.measureText(txt).width;}\n var w=0;for(var i=0;i<txt.length;i++){var c=gl[txt[i]]||gl['?'];w+=c[0]*g/100;}return w;}\nfunction esc(s){return s.replace(/[&<>\"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c];});}\nfunction lines(y,g){var s='',i;for(i=0;i<4;i++)s+='<line x1=\"0\" x2=\"'+W+'\" y1=\"'+(y+i*g).toFixed(2)+'\" y2=\"'+(y+i*g).toFixed(2)+'\" stroke=\"#8c9bb3\" stroke-width=\"'+(i==1?0.25:0.3)+'\"'+(i==1?' stroke-dasharray=\"2 1.6\"':'')+'/>';return s;}\nfunction paint(style,unit){var sw=(0.32*unit).toFixed(3);\n if(style==='fill')return 'fill=\"#b8c2d0\"';\n if(style==='dash')return 'fill=\"none\" stroke=\"#5f6f88\" stroke-width=\"'+sw+'\" stroke-dasharray=\"'+(1.1*unit).toFixed(2)+' '+(0.8*unit).toFixed(2)+'\"';\n return 'fill=\"none\" stroke=\"#5f6f88\" stroke-width=\"'+sw+'\"';}\nfunction textAt(txt,x,base,g,cur,style,gl){\n if(cur){var F=g/cursiveX();return '<text x=\"'+x.toFixed(2)+'\" y=\"'+base.toFixed(2)+'\" font-family=\"Playwrite US Trad\" font-size=\"'+F.toFixed(2)+'\" '+paint(style,1)+'>'+esc(txt)+'</text>';}\n var s='',k=g/100,u=1/k;for(var i=0;i<txt.length;i++){var c=gl[txt[i]];if(!c){x+=g*0.6;continue;}\n  if(c[1])s+='<path d=\"'+c[1]+'\" transform=\"translate('+x.toFixed(2)+','+base.toFixed(2)+') scale('+k.toFixed(4)+','+(-k).toFixed(4)+')\" '+paint(style,u)+'/>';x+=c[0]*k;}\n return s;}\nfunction wrap(t,g,cur,gl,avail){var ws=t.split(/\\s+/),out=[],cur_='';ws.forEach(function(w){var tryS=cur_?cur_+' '+w:w;if(width(tryS,g,cur,gl)<=avail||!cur_)cur_=tryS;else{out.push(cur_);cur_=w;}});if(cur_)out.push(cur_);return out;}\nasync function build(blankOnly){var gl=await glyphs();var cur=opt('wsm-font')==='cursive';if(cur){try{await document.fonts.load(\"40px 'Playwrite US Trad'\");}catch(e){}}\n var style=opt('wsm-style')||'fill',g=+($('wsm-size').value),extra=+($('wsm-extra').value),rep=$('wsm-rep').checked,head=$('wsm-head').checked,title=$('wsm-title').value.trim();\n var pitch=g*3+g*0.9,avail=W-2*X0,items=[];\n if(blankOnly){var n=Math.floor((Hh-(head?16:4))/pitch);for(var i=0;i<n;i++)items.push(null);}\n else{$('wsm-text').value.split('\\n').map(function(s){return s.trim();}).filter(Boolean).slice(0,30).forEach(function(t){\n  wrap(t,g,cur,gl,avail).forEach(function(part){var w=width(part,g,cur,gl),txt=part;\n   if(rep){var gapw=g*1.2,n=Math.max(1,Math.floor((avail+gapw)/(w+gapw)));items.push({t:part,n:n,w:w,gap:gapw});}else items.push({t:part,n:1,w:w,gap:0});\n   for(var e=0;e<extra;e++)items.push(null);});});}\n var sheets=[],body='',y=0,top=(head||title)?(title?20:14):4;\n function open(){body='';y=top;}\n function close(){var hd='';\n  if(title)hd+='<text x=\"'+(W/2)+'\" y=\"8\" text-anchor=\"middle\" font-family=\"DM Sans,Arial,sans-serif\" font-size=\"6\" font-weight=\"700\" fill=\"#1A2752\">'+esc(title)+'</text>';\n  if(head){var hy=title?16:10;hd+='<text x=\"'+X0+'\" y=\"'+hy+'\" font-family=\"DM Sans,Arial,sans-serif\" font-size=\"4.2\" fill=\"#1A2752\">Name: ____________________</text><text x=\"'+(W-X0)+'\" y=\"'+hy+'\" text-anchor=\"end\" font-family=\"DM Sans,Arial,sans-serif\" font-size=\"4.2\" fill=\"#1A2752\">Date: ______________</text>';}\n  hd+='<text x=\"'+(W/2)+'\" y=\"'+(Hh-1.5)+'\" text-anchor=\"middle\" font-family=\"DM Sans,Arial,sans-serif\" font-size=\"2.6\" fill=\"#a3adbd\">americanenglish.com.tw/english-worksheet-maker/</text>';\n  sheets.push('<svg viewBox=\"0 0 '+W+' '+Hh+'\" xmlns=\"http://www.w3.org/2000/svg\">'+hd+body+'</svg>');}\n open();\n items.forEach(function(it){if(y+pitch>Hh-5){close();open();}\n  body+=lines(y+g*0.45,g);\n  if(it){var x=X0,base=y+g*0.45+2*g;for(var r=0;r<it.n;r++){body+=textAt(it.t,x,base,g,cur,style,gl);x+=it.w+it.gap;}}\n  y+=pitch;});\n if(body||!sheets.length)close();\n prev.innerHTML=sheets.map(function(s){return '<div class=\"wsm-sheet\">'+s+'</div>';}).join('');\n if(window.gtag){clearTimeout(t0);t0=setTimeout(function(){if(made<10){made++;gtag('event','worksheet_make',{page_path:location.pathname,font:cur?'cursive':'print',style:style,blank:!!blankOnly});}},1500);}\n return sheets;}\nasync function doPrint(blank){var sheets=await build(blank);var r=$('wsm-print-root');if(!r){r=document.createElement('div');r.id='wsm-print-root';document.body.appendChild(r);}\n r.innerHTML=sheets.map(function(s){return '<div class=\"wsm-sheet\">'+s+'</div>';}).join('');\n if(window.gtag)gtag('event','worksheet_print',{page_path:location.pathname,pages:sheets.length,blank:!!blank});\n setTimeout(function(){window.print();},150);}\nvar tm=null;function soon(){clearTimeout(tm);tm=setTimeout(function(){build(false);},250);}\ndocument.querySelectorAll('#wsm input,#wsm textarea,#wsm select').forEach(function(e){e.addEventListener('input',soon);e.addEventListener('change',soon);});\n$('wsm-print').addEventListener('click',function(){doPrint(false);});$('wsm-blank').addEventListener('click',function(){doPrint(true);});\nbuild(false);})();</script>"
+  },
+  {
+   "title": "四線三格怎麼寫：每個字母佔哪幾格",
+   "phone_cols": 3,
+   "prose": [
+    "四條線由上到下叫第一線到第四線，中間是三格。寫字母時記住三件事：<strong>大寫字母都寫在上面兩格</strong>、<strong>小寫字母的身體在中間那一格</strong>、<strong>有尾巴的小寫往下伸到第三格</strong>。"
+   ],
+   "heads": [
+    "字母",
+    "佔哪幾格",
+    "寫的時候注意"
+   ],
+   "rows": [
+    [
+     "A–Z 所有大寫",
+     "上面兩格",
+     "從第一線寫到第三線，不往下伸"
+    ],
+    [
+     "a c e m n o r s u v w x z",
+     "中間一格",
+     "碰到第二線和第三線，不出格"
+    ],
+    [
+     "b d f h k l",
+     "上面兩格",
+     "直線從第一線往下寫到第三線"
+    ],
+    [
+     "t",
+     "上面兩格（矮一點）",
+     "頂端在第一格的一半，比 l 矮"
+    ],
+    [
+     "i j",
+     "點在第一格",
+     "點和身體分開，點在第一格中間"
+    ],
+    [
+     "g j p q y",
+     "中間＋下面一格",
+     "尾巴往下碰到第四線"
+    ],
+    [
+     "0–9 數字",
+     "上面兩格",
+     "和大寫一樣高"
+    ]
+   ],
+   "after": [
+    "最常見的錯誤是小寫寫太大：a、e、o 長到第一格，或 g、y 的尾巴沒有往下。練習時先描灰色字，再在下面的空白行自己寫一次，對照有沒有出格。字母的唸法和順序見 <a href=\"/english-alphabet-guide/\">英文字母表</a>，字母代表的聲音見 <a href=\"/phonics-rules-chart/\">自然發音規則表</a>。"
+   ]
+  },
+  {
+   "title": "三種用法：名字、單字、句子",
+   "phone_cols": 3,
+   "heads": [
+    "想練什麼",
+    "輸入範例",
+    "建議設定"
+   ],
+   "rows": [
+    [
+     "孩子的英文名字",
+     "Amy",
+     "大格線、灰色字、重複排滿一整行"
+    ],
+    [
+     "這週要背的單字",
+     "apple / banana / cherry（一行一個）",
+     "中格線、空心字、每個字下面加 1 行空白"
+    ],
+    [
+     "課本的句子",
+     "I like to play soccer.",
+     "中或小格線、虛線字、下面加 2 行空白"
+    ],
+    [
+     "草寫練習",
+     "Happy Birthday",
+     "選草寫、大格線、灰色字"
+    ],
+    [
+     "空白格線紙",
+     "（不用輸入）",
+     "按「只要空白四線三格紙」"
+    ]
+   ],
+   "after": [
+    "還沒有英文名字？先看 <a href=\"/english-names/\">英文名字怎麼取</a>。要練拼字，可以搭配 <a href=\"/moe-1200-words-guide/\">教育部 1200 單字表</a> 或 <a href=\"/english-vocabulary-by-topic/\">主題單字表</a>，挑一個主題，一次做一張。"
+   ]
+  },
+  {
+   "title": "常見問題",
+   "faq": [
+    [
+     "四線三格是什麼？",
+     "四線三格是台灣學英文字母用的格線：四條橫線分成三格，中間那條常畫成虛線。大寫寫在上面兩格，小寫的身體在中間一格，g、p、y 這類有尾巴的字往下伸到第三格。"
+    ],
+    [
+     "英文格線紙哪裡可以下載？",
+     "在這一頁按「只要空白四線三格紙」，就能直接列印一整張 A4 空白格線紙，或在列印視窗選「另存為 PDF」存檔，可以選大、中、小三種格線。"
+    ],
+    [
+     "可以做孩子英文名字的描寫練習單嗎？",
+     "可以。在練習內容輸入孩子的英文名字，選大格線和灰色字，勾選「重複排滿一整行」，就是一張整頁都是自己名字的描寫單。"
+    ],
+    [
+     "產生器有草寫嗎？",
+     "有。字體選「草寫」就會改用美國小學教的草寫字型，字母一樣落在四線三格上。草寫每個字母的寫法說明在英文草寫 A–Z 那一頁。"
+    ],
+    [
+     "怎麼把練習單存成 PDF？",
+     "按「列印／存成 PDF」，在列印視窗的印表機選「另存為 PDF」（手機是「儲存為 PDF」或分享到檔案）即可。存好的檔案可以重複列印。"
+    ],
+    [
+     "要付費或註冊嗎？",
+     "不用。產生器免費使用、不用註冊，做好的練習單老師和家長都可以影印給孩子，只要保留頁面下方的網址出處。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "寫得漂亮了，說得出口嗎？",
+ "cta": "描寫練的是手，開口練的是嘴。我們的小班課讓孩子把剛寫會的字放進句子裡說出來，寫字和說話一起進步。"
+}
