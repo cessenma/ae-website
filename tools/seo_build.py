@@ -40,6 +40,8 @@ Run:  ~/.claude/skills/seo/.venv/bin/python3 seo_build.py
 (Lives OUTSIDE site/ so it is never deployed.)
 """
 import os, re, sys, json, datetime, hashlib, subprocess, unicodedata
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import autolink                                   # tools/autolink.py
 from urllib.parse import urljoin, urlparse
 from zoneinfo import ZoneInfo
 
@@ -1530,6 +1532,7 @@ def process_page(path, css_ver="", crit=""):
     html = open(path, encoding="utf-8").read()
     original = html          # kept so we can skip writing files this build did not change
     html = apply_snippet(html, rel)
+    html = autolink.apply(html, rel)        # site-wide in-text links (data/autolinks.json); re-applied every build
     if rel == "chart-license/index.html":
         html = license_rows(html)
     soup = BeautifulSoup(html, "lxml")
@@ -1868,6 +1871,7 @@ def content_signature(html):
     pictures and audio it uses and the data its scripts carry — and nothing about how that
     is marked up. Head, site chrome, footer, JSON-LD, <style>, every injected block, the
     author line, button labels, alt text and a picture's file format are left out."""
+    html = autolink.strip(html)            # the tool's in-text links are navigation, not authored content
     for a, b in _INJECTED:
         html = re.sub(re.escape(a) + r".*?" + re.escape(b), "", html, flags=re.S)
     m = re.search(r"<body[^>]*>(.*)</body>", html, flags=re.S)

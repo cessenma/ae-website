@@ -1,0 +1,582 @@
+{
+ "_doc": "Site-wide in-text links (tools/autolink.py, applied by seo_build.py). Rules are in priority order; each page links its first eligible mention of a rule's keyword (longest keyword first) to the target, one link per paragraph, at most max_per_page per page, never on the target itself. A keyword starting with 're:' is a regular expression (e.g. 格線 but not 及格線).",
+ "max_per_page": 8,
+ "skip_sources": [
+  "",
+  "courses",
+  "contact",
+  "free-trial",
+  "line",
+  "blog",
+  "chart-license",
+  "download",
+  "cambridge-practice-exam-pack",
+  "pack-9rvvw6p3nnmls4"
+ ],
+ "skip_source_pattern": "-practice(-part\\d+)?$",
+ "hold_sources_until": {
+  "2026-11-06": [
+   "happy-birthday-english",
+   "english-names-boys",
+   "english-names-girls",
+   "english-alphabet-guide",
+   "kk-phonetic-chart",
+   "animals-english-vocabulary",
+   "ordinal-numbers-english",
+   "days-of-week-english",
+   "months-english",
+   "english-dates-guide",
+   "english-numbers-guide",
+   "cool-english-guide"
+  ]
+ },
+ "rules": [
+  {
+   "target": "english-plural-nouns",
+   "kw": [
+    "不規則複數",
+    "名詞複數",
+    "複數形",
+    "複數"
+   ]
+  },
+  {
+   "target": "english-wishes",
+   "kw": [
+    "英文祝福語",
+    "祝福語",
+    "祝福"
+   ]
+  },
+  {
+   "target": "english-card-writing",
+   "kw": [
+    "英文卡片",
+    "寫卡片",
+    "卡片上",
+    "賀卡",
+    "生日卡",
+    "感謝卡",
+    "明信片",
+    "信封"
+   ]
+  },
+  {
+   "target": "english-worksheet-maker",
+   "kw": [
+    "四線三格",
+    "re:(?<!及)格線"
+   ]
+  },
+  {
+   "target": "english-cursive",
+   "kw": [
+    "草寫"
+   ]
+  },
+  {
+   "target": "feelings-english",
+   "kw": [
+    "情緒英文",
+    "心情英文",
+    "情緒單字",
+    "感覺形容詞",
+    "情緒形容詞"
+   ]
+  },
+  {
+   "target": "junior-high-english-grammar",
+   "kw": [
+    "國中英文文法",
+    "國中文法"
+   ]
+  },
+  {
+   "target": "school-grades-english",
+   "kw": [
+    "年級英文",
+    "年級的英文",
+    "年級怎麼說",
+    "7th grade",
+    "freshman"
+   ]
+  },
+  {
+   "target": "sports-english",
+   "kw": [
+    "運動會",
+    "球類運動",
+    "運動英文"
+   ]
+  },
+  {
+   "target": "english-pronunciation",
+   "kw": [
+    "英文發音",
+    "發音規則"
+   ]
+  },
+  {
+   "target": "kk-phonetic-chart",
+   "kw": [
+    "KK 音標",
+    "KK音標"
+   ]
+  },
+  {
+   "target": "phonics-rules-chart",
+   "kw": [
+    "自然發音規則",
+    "自然發音",
+    "Phonics"
+   ]
+  },
+  {
+   "target": "english-vowels-consonants",
+   "kw": [
+    "母音",
+    "子音"
+   ]
+  },
+  {
+   "target": "plural-s-past-ed-pronunciation",
+   "kw": [
+    "-ed 的唸法",
+    "-s 的唸法",
+    "字尾 -ed",
+    "字尾 -s"
+   ]
+  },
+  {
+   "target": "english-word-stress-gesture",
+   "kw": [
+    "重音"
+   ]
+  },
+  {
+   "target": "exams/intonation",
+   "kw": [
+    "語調"
+   ]
+  },
+  {
+   "target": "sight-words-guide",
+   "kw": [
+    "sight words",
+    "Sight Words",
+    "高頻字"
+   ]
+  },
+  {
+   "target": "english-alphabet-worksheet",
+   "kw": [
+    "字母練習",
+    "字母描寫"
+   ]
+  },
+  {
+   "target": "english-alphabet-guide",
+   "kw": [
+    "英文字母",
+    "26 個字母",
+    "26個字母"
+   ]
+  },
+  {
+   "target": "english-tenses-chart",
+   "kw": [
+    "12 時態",
+    "時態"
+   ]
+  },
+  {
+   "target": "irregular-verbs-list",
+   "kw": [
+    "動詞三態",
+    "三態",
+    "不規則動詞",
+    "過去分詞"
+   ]
+  },
+  {
+   "target": "be-verbs-guide",
+   "kw": [
+    "be 動詞",
+    "be動詞"
+   ]
+  },
+  {
+   "target": "english-comparatives-guide",
+   "kw": [
+    "比較級",
+    "最高級"
+   ]
+  },
+  {
+   "target": "english-conjunctions-guide",
+   "kw": [
+    "連接詞"
+   ]
+  },
+  {
+   "target": "in-on-at-prepositions",
+   "kw": [
+    "介系詞"
+   ]
+  },
+  {
+   "target": "english-punctuation-guide",
+   "kw": [
+    "標點符號"
+   ]
+  },
+  {
+   "target": "english-capitalization-guide",
+   "kw": [
+    "大寫規則"
+   ]
+  },
+  {
+   "target": "english-abbreviations-guide",
+   "kw": [
+    "英文縮寫"
+   ]
+  },
+  {
+   "target": "english-letter-writing-guide",
+   "kw": [
+    "英文書信",
+    "書信格式",
+    "英文信"
+   ]
+  },
+  {
+   "target": "english-diary-guide",
+   "kw": [
+    "英文日記",
+    "寫日記"
+   ]
+  },
+  {
+   "target": "english-self-introduction-kids",
+   "kw": [
+    "英文自我介紹",
+    "自我介紹"
+   ]
+  },
+  {
+   "target": "english-picture-books-guide",
+   "kw": [
+    "英文繪本",
+    "繪本"
+   ]
+  },
+  {
+   "target": "graded-readers-guide",
+   "kw": [
+    "分級讀物"
+   ]
+  },
+  {
+   "target": "english-names",
+   "kw": [
+    "英文名字怎麼取",
+    "取英文名字",
+    "取英文名"
+   ]
+  },
+  {
+   "target": "english-names-boys",
+   "kw": [
+    "男生英文名",
+    "男孩英文名"
+   ]
+  },
+  {
+   "target": "english-names-girls",
+   "kw": [
+    "女生英文名",
+    "女孩英文名"
+   ]
+  },
+  {
+   "target": "months-english",
+   "kw": [
+    "月份"
+   ]
+  },
+  {
+   "target": "days-of-week-english",
+   "kw": [
+    "星期幾",
+    "星期一到星期日",
+    "星期英文"
+   ]
+  },
+  {
+   "target": "english-dates-guide",
+   "kw": [
+    "英文日期",
+    "日期寫法",
+    "日期怎麼寫"
+   ]
+  },
+  {
+   "target": "ordinal-numbers-english",
+   "kw": [
+    "序數"
+   ]
+  },
+  {
+   "target": "english-numbers-guide",
+   "kw": [
+    "英文數字",
+    "數字英文"
+   ]
+  },
+  {
+   "target": "time-english",
+   "kw": [
+    "幾點幾分",
+    "時間英文",
+    "時間的說法"
+   ]
+  },
+  {
+   "target": "colors-english-vocabulary",
+   "kw": [
+    "顏色"
+   ]
+  },
+  {
+   "target": "fruits-english-vocabulary",
+   "kw": [
+    "水果"
+   ]
+  },
+  {
+   "target": "animals-english-vocabulary",
+   "kw": [
+    "動物"
+   ]
+  },
+  {
+   "target": "body-parts-english",
+   "kw": [
+    "身體部位"
+   ]
+  },
+  {
+   "target": "countries-english",
+   "kw": [
+    "國名",
+    "國家英文",
+    "國家名稱"
+   ]
+  },
+  {
+   "target": "jobs-english",
+   "kw": [
+    "職業英文",
+    "職業單字"
+   ]
+  },
+  {
+   "target": "weather-english",
+   "kw": [
+    "天氣英文",
+    "天氣單字",
+    "今天天氣",
+    "天氣與"
+   ]
+  },
+  {
+   "target": "food-english",
+   "kw": [
+    "台灣小吃",
+    "食物英文",
+    "食物單字",
+    "食物"
+   ]
+  },
+  {
+   "target": "english-symbol-names",
+   "kw": [
+    "鍵盤符號",
+    "符號英文"
+   ]
+  },
+  {
+   "target": "thank-you-english",
+   "kw": [
+    "道謝",
+    "謝謝的英文",
+    "謝謝英文"
+   ]
+  },
+  {
+   "target": "cheer-up-english",
+   "kw": [
+    "加油",
+    "鼓勵的話"
+   ]
+  },
+  {
+   "target": "moe-1200-words-guide",
+   "kw": [
+    "1200 單字",
+    "1200單字",
+    "1200 字",
+    "1,200 字"
+   ]
+  },
+  {
+   "target": "moe-2000-words-guide",
+   "kw": [
+    "2000 單字",
+    "2000單字",
+    "2000 字",
+    "2,000 字"
+   ]
+  },
+  {
+   "target": "english-vocabulary-by-topic",
+   "kw": [
+    "主題單字"
+   ]
+  },
+  {
+   "target": "happy-birthday-english",
+   "kw": [
+    "生日快樂",
+    "生日祝福"
+   ]
+  },
+  {
+   "target": "halloween-english",
+   "kw": [
+    "萬聖節"
+   ]
+  },
+  {
+   "target": "christmas-english",
+   "kw": [
+    "聖誕節",
+    "聖誕快樂"
+   ]
+  },
+  {
+   "target": "new-year-english",
+   "kw": [
+    "新年快樂",
+    "農曆新年",
+    "過年"
+   ]
+  },
+  {
+   "target": "valentines-day-english",
+   "kw": [
+    "情人節"
+   ]
+  },
+  {
+   "target": "mid-autumn-festival-english",
+   "kw": [
+    "中秋節",
+    "中秋"
+   ]
+  },
+  {
+   "target": "108-curriculum-english-guide",
+   "kw": [
+    "108 課綱",
+    "108課綱"
+   ]
+  },
+  {
+   "target": "cap-english-guide",
+   "kw": [
+    "國中教育會考",
+    "國中會考",
+    "會考英文",
+    "re:(?<!「)會考(?!」)"
+   ]
+  },
+  {
+   "target": "gept-kids-guide",
+   "kw": [
+    "小學英檢"
+   ]
+  },
+  {
+   "target": "gept-elementary-guide",
+   "kw": [
+    "全民英檢初級",
+    "英檢初級"
+   ]
+  },
+  {
+   "target": "gept-intermediate-guide",
+   "kw": [
+    "全民英檢中級",
+    "英檢中級"
+   ]
+  },
+  {
+   "target": "gept",
+   "kw": [
+    "全民英檢",
+    "GEPT"
+   ]
+  },
+  {
+   "target": "cambridge-starters-guide",
+   "kw": [
+    "Starters"
+   ]
+  },
+  {
+   "target": "cambridge-movers-guide",
+   "kw": [
+    "Movers"
+   ]
+  },
+  {
+   "target": "cambridge-flyers-guide",
+   "kw": [
+    "Flyers"
+   ]
+  },
+  {
+   "target": "ket-prep-guide",
+   "kw": [
+    "KET"
+   ]
+  },
+  {
+   "target": "pet-prep-guide",
+   "kw": [
+    "PET"
+   ]
+  },
+  {
+   "target": "fce-prep-guide",
+   "kw": [
+    "FCE"
+   ]
+  },
+  {
+   "target": "linguaskill-guide",
+   "kw": [
+    "領思",
+    "Linguaskill"
+   ]
+  },
+  {
+   "target": "cambridge-english-levels",
+   "kw": [
+    "劍橋英檢"
+   ]
+  }
+ ]
+}
