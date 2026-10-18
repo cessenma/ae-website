@@ -221,7 +221,7 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 - [美語補習班推薦怎麼看？連鎖品牌比較的5個必問](https://americanenglish.com.tw/choose-english-chain-school/): 美語補習班推薦文章看了一堆，還是不知道怎麼選？這一頁不評比品牌，教你比較連鎖兒童美語的方法：直營與加盟的差異、參觀時的五個必問、學費換算單位成本，附比較表模板。
 - [Sight Words 是什麼？美國老師教你：別再一張一張閃字卡了](https://americanenglish.com.tw/sight-words-heart-words-guide/): 學校發了一疊單字卡卻沒教怎麼用？美國持照教師用中文解釋 sight words、高頻字、Heart Words 的差別，說明大腦真正記住單字的方式（orthographic mapping）。
 - [兒童英文程度分級指南：CEFR 等級 × 年段 × 英檢對照表](https://americanenglish.com.tw/kids-english-levels/): 孩子的英文在哪一級？一張表講清楚 CEFR Pre-A1 到 B1 每一級孩子「能做什麼」、對應的劍橋兒童英檢與全民英檢、常見年段，以及升一級實際需要的時間。
-- [英文發音完整指南：41 個音、發音規則與台灣學生最常錯的音](https://americanenglish.com.tw/english-pronunciation/): 英文發音完整攻略（附 A4 發音總表 PDF）：母音 17 個、子音 24 個共 41 個音，附例字與嘴型提示；字尾 -s／-ed 的三種唸法、重音規則與連音，以及台灣學生最常錯的音。
+- [英文發音查詢：輸入單字聽發音、看 KK 音標＋41 個音完整指南](https://americanenglish.com.tw/english-pronunciation/): 英文發音查詢：輸入任何英文單字或句子，馬上看 KK 音標、點一下聽美式發音（可放慢）；再加 41 個音（母音 17、子音 24）的規則、例字與嘴型提示，附 A4 發音總表 PDF。
 - [身體英文對照表：43 個身體部位、不規則複數與看醫生用語](https://americanenglish.com.tw/body-parts-english/): 身體部位英文對照表（附 A4 列印版 PDF）：43 個部位分頭臉、上半身、下半身與體內四組；說明 tooth／teeth、foot／feet 等不規則複數，以及身體部位前面用 my 還是 the。
 - [國家英文對照表：80國名稱、國籍說法與the的用法](https://americanenglish.com.tw/countries-english/): 國家英文對照表（附 A4 列印版 PDF）：80 個國家的英文名稱、中文與國籍形容詞，依亞洲、歐洲、美洲、非洲中東與大洋洲分組；並說明哪些國名前面要加 the。
 - [職業英文108種對照表：工作英文怎麼說、a與an怎麼選](https://americanenglish.com.tw/jobs-english/): 職業英文對照表（附 A4 列印版 PDF）：108 種常見工作的英文與中文，依學校醫療、公共服務、商業辦公、科技工程、餐飲服務、運輸農漁與藝術媒體七組分類。

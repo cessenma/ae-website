@@ -1102,7 +1102,7 @@ def toc_entries(html):
     if not m:
         return []
     main = m.group(0)
-    for a, b in _INJECTED:               # a sales / route block's heading is not a section of the page
+    for a, b in _INJECTED + [("<!-- AE:KKLOOKUP start -->", "<!-- AE:KKLOOKUP end -->")]:   # nor is the lookup tool above the list
         main = re.sub(re.escape(a) + r".*?" + re.escape(b), "", main, flags=re.S)
     out = []
     for mm in re.finditer(r"<h2\b([^>]*)>(.*?)</h2>", main, re.S):
@@ -1142,6 +1142,13 @@ def _first_wrap_after_hero(html):
         end = html.find("<!-- /AE:PACKOFFER -->", po)
         if end != -1:
             start = end + len("<!-- /AE:PACKOFFER -->")
+    # the KK / pronunciation lookup tool (tools/kk_lookup.py) sits right under the hero on purpose:
+    # the tool is what those searchers came for, so the contents list goes after it
+    kl = html.find("<!-- AE:KKLOOKUP start -->", start)
+    if kl != -1 and not html[start:kl].strip():
+        end = html.find("<!-- AE:KKLOOKUP end -->", kl)
+        if end != -1:
+            start = end + len("<!-- AE:KKLOOKUP end -->")
     wrap = re.search(r'<div class="wrap">', html[start:])
     return start + wrap.end() if wrap else -1
 
