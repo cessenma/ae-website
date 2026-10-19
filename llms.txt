@@ -212,10 +212,10 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 ### 更多頁面 More pages
 - [顏色英文62個對照表：深淺說法、拼法差異與形容詞順序（附 PDF）](https://americanenglish.com.tw/colors-english-vocabulary/): 顏色英文對照表（附 A4 閃卡 PDF）：62 個常用顏色與中文對照，分基本色、深淺、紅粉紫、黃橙棕與藍綠五組；並說明 color 與 colour 的拼法差別、light／dark 的用法。
 - [水果英文101種對照表：台灣水果的英文怎麼說（附 PDF）](https://americanenglish.com.tw/fruits-english-vocabulary/): 水果英文對照表（附 A4 閃卡 PDF）：101 種水果與中文對照，特別整理芭樂、蓮霧、釋迦、龍眼、楊桃等台灣水果的正確英文說法；並說明水果的可數與不可數、a 與 an 的選擇。
-- [in on at 用法全攻略：時間與地點一次分清楚](https://americanenglish.com.tw/in-on-at-prepositions/): in on at 怎麼分？at 是「點」、on 是「面或線」、in 是「空間或範圍」，時間和地點都適用。附時間與地點介係詞對照表、最容易錯的陷阱與 10 題自測。
-- [母音有哪些？子音有哪些？長母音短母音、雙母音完整表](https://americanenglish.com.tw/english-vowels-consonants/): 英文只有 a、e、i、o、u 五個母音字母，但母音「音」超過十個。用 KK 音標整理短母音、長母音、雙母音完整表（含例字），附 magic e 規則與有聲／無聲子音配對表。
-- [be動詞是什麼？現在式過去式變化表＋和一般動詞的差別](https://americanenglish.com.tw/be-verbs-guide/): be動詞是什麼？一張變化表整理 am、is、are（現在式）與 was、were（過去式）的主詞搭配、否定與縮寫，並對照 be動詞和一般動詞的疑問句、否定句規則，附 10 題自測。
-- [師德英檢是什麼？STYLE/JET 級別費用與有用嗎解析](https://americanenglish.com.tw/shide-style-exam-guide/): 師德英檢（STYLE/JET）是師德文教代理的兒童青少年英語分級檢定，共 9 級、對應 Pre-A1 到 B1。整理級數表、題型與通過標準、2026 年費用，並誠實回答「師德英檢有用嗎」。
+- [in on at 用法：時間、日期、地點介係詞一次分清楚](https://americanenglish.com.tw/in-on-at-prepositions/): in on at 怎麼分？at 是「點」、on 是「面或線」、in 是「空間或範圍」，時間和地點都適用。附時間與地點介係詞對照表、最容易錯的陷阱與 10 題自測。
+- [英文母音、子音有哪些？長短母音、雙母音完整對照表](https://americanenglish.com.tw/english-vowels-consonants/): 英文只有 a、e、i、o、u 五個母音字母，但母音「音」超過十個。用 KK 音標整理短母音、長母音、雙母音完整表（含例字），附 magic e 規則與有聲／無聲子音配對表。
+- [be動詞是什麼、有哪些？am／is／are 與過去式 was／were 變化表](https://americanenglish.com.tw/be-verbs-guide/): be動詞是什麼？一張變化表整理 am、is、are（現在式）與 was、were（過去式）的主詞搭配、否定與縮寫，並對照 be動詞和一般動詞的疑問句、否定句規則，附 10 題自測。
+- [師德英檢是什麼、有用嗎？STYLE／JET 級數對照表、題型與費用](https://americanenglish.com.tw/shide-style-exam-guide/): 師德英檢（STYLE/JET）是師德文教代理的兒童青少年英語分級檢定，共 9 級、對應 Pre-A1 到 B1。整理級數表、題型與通過標準、2026 年費用，並誠實回答「師德英檢有用嗎」。
 - [領思是什麼？Linguaskill 新制題型、成績對照與報名指南](https://americanenglish.com.tw/linguaskill-guide/): 領思（Linguaskill）是劍橋的線上自適應英語測驗。整理新制聽說讀寫四個模組、Cambridge English Scale 對照 CEFR、成績幾天出來、台灣的採認實例、考試中心與報名費。
 - [CAE 是什麼？C1 Advanced 考試內容、分數與 2026 日期](https://americanenglish.com.tw/cae-c1-advanced-guide/): CAE（C1 Advanced）是劍橋英檢在 FCE 之上的 C1 級考試。整理四份考卷時間與配分、分數怎麼看（180 及格、200 以上 Grade A）、2026 考試日期，以及在台灣誰真正需要 C1。
 - [美語補習班推薦怎麼看？連鎖品牌比較的5個必問](https://americanenglish.com.tw/choose-english-chain-school/): 美語補習班推薦文章看了一堆，還是不知道怎麼選？這一頁不評比品牌，教你比較連鎖兒童美語的方法：直營與加盟的差異、參觀時的五個必問、學費換算單位成本，附比較表模板。
@@ -249,7 +249,7 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 - [劍橋英檢完整攻略：等級對照、報名費用、40 頁免費線上練習](https://americanenglish.com.tw/exams/): 劍橋英檢（YLE Starters／Movers／Flyers 與 KET／PET／FCE）一頁看懂：六級程度對照 CEFR 與全民英檢、幾歲考哪一級、報名與費用、成績怎麼看。
 - [台灣孩子最難的 9 個英文發音：美籍教師的互動地圖（可點聽）](https://americanenglish.com.tw/taiwan-kids-hardest-english-sounds/): th、字尾 L、ship/sip、-s/-ed……台灣孩子的英文發音難關跟教科書寫的不一樣。美籍持證教師依對比音韻研究排出 9 站優先順序，每個音都能點著聽，並誠實標注證據等級。
 - [孩子的英文為什麼平平的？英文重音一個手勢就聽懂（2026 研究）](https://americanenglish.com.tw/english-word-stress-gesture/): 2026 年 JSLHR 對照實驗：教英文重音，「長度手勢」勝過拍手和畫音高——因為中文耳朵漏聽的正是長度。附動畫示範、重音互動測驗，以及在家四步驟教學流程。
-- [ship 還是 sheep？台灣孩子最容易聽混的英文母音（附聽力訓練）](https://americanenglish.com.tw/ship-or-sheep-english-vowels/): 短 i 和長 i 差的不是長短，是嘴巴的鬆緊——研究發現中文使用者靠長度分辨、母語者靠音色。內建互動聽力訓練器與最小對子播放，教「微笑嘴」不教「拉長」。
+- [ship 還是 sheep？發音差在哪、最易聽混的英文母音（聽力訓練）](https://americanenglish.com.tw/ship-or-sheep-english-vowels/): 短 i 和長 i 差的不是長短，是嘴巴的鬆緊——研究發現中文使用者靠長度分辨、母語者靠音色。內建互動聽力訓練器與最小對子播放，教「微笑嘴」不教「拉長」。
 - [-s 和 -ed 其實有三種唸法：文法分數常是嘴巴丟掉的（互動練習）](https://americanenglish.com.tw/plural-s-past-ed-pronunciation/): books 唸成 book、asked 唸成 ask——中文音節結尾的限制讓孩子的嘴巴自動刪掉複數與過去式。三條規則、內建字尾分類機，一個發音練習救口說、寫作、聽力三邊分數。
 - [發音要多標準才夠？劍橋考官其實這樣評分（評分表逐字翻譯）](https://americanenglish.com.tw/english-pronunciation-standards/): 「保證美國腔」是行銷話術：研究顯示 10–12 歲後達到無口音的比例極低，但「清楚可懂」任何年紀都練得到——而劍橋 KET/PET/FCE 評分表獎勵的正是後者，原文逐字翻給你看。
 - [KET 分數計算機｜劍橋英檢 A2 Key 成績換算・幾分及格一次看懂](https://americanenglish.com.tw/ket-score-calculator/): 輸入 KET 各卷原始分數，立刻換算成劍橋量表分數（82–150）、等級與 CEFR 級別。依劍橋官方換算表製作，繁體中文、免註冊。120 分及格、140 分以上證書標示 B1。

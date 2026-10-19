@@ -31,5 +31,9 @@
  "english-word-stress-gesture": {
   "expires": null,
   "todo": "「2026 研究」 is the study's year, not a freshness claim"
+ },
+ "english-exam-dates-guide": {
+  "expires": "2027-01-10",
+  "todo": "2026–2027 → 2027–2028 once LTTC publishes the 2028 calendar (usually Nov/Dec); keep 「英檢考試時間」 first"
  }
 }
