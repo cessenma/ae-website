@@ -42,6 +42,7 @@ Run:  ~/.claude/skills/seo/.venv/bin/python3 seo_build.py
 import os, re, sys, json, datetime, hashlib, subprocess, unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import autolink                                   # tools/autolink.py
+import kw_sections                                # tools/kw_sections.py
 from urllib.parse import urljoin, urlparse
 from zoneinfo import ZoneInfo
 
@@ -1532,6 +1533,7 @@ def process_page(path, css_ver="", crit=""):
     html = open(path, encoding="utf-8").read()
     original = html          # kept so we can skip writing files this build did not change
     html = apply_snippet(html, rel)
+    html = kw_sections.apply(html, rel)    # keyword sections (data/kw_sections.json); before the TOC and links
     html = autolink.apply(html, rel)        # site-wide in-text links (data/autolinks.json); re-applied every build
     if rel == "chart-license/index.html":
         html = license_rows(html)

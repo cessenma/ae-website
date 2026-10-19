@@ -15,7 +15,8 @@ Rules for a link (all must hold):
   - first eligible mention only (longest keyword wins at a position), Latin keywords on word
     boundaries; one link per paragraph; at most max_per_page links, chosen by rule priority;
   - not on practice-test pages, the sales/contact pages, or the title-test pages before their
-    hold date (they start linking automatically after it).
+    hold date (they start linking automatically after it); a rule's optional "not_from" regex
+    keeps it off matching source pages (the fees page is never linked from platform price pages).
 Links carry data-al="1": every build removes them first and re-applies, so changing a rule
 changes the site, and content_signature() ignores them (no sitemap date churn).
 """
@@ -139,6 +140,8 @@ def apply(html, rel, today=None):
         bid = id(stack[blk]) if False else (blk, stack[blk][2], nblock)
         for ri, r in enumerate(c["rules"]):
             if ri in first or r["target"] == slug or r["target"] in own:
+                continue
+            if r.get("not_from") and re.search(r["not_from"], slug):   # e.g. no fees-page links from the platform price pages
                 continue
             best = None
             for k in r["kw"]:

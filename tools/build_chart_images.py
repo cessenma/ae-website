@@ -294,8 +294,8 @@ SPECS.update({
    alt="英文口說十個基本句型對照表：自我介紹喜好習慣計畫的固定說法與例句",
    foot="可儲存列印｜americanenglish.com.tw"),
  "connectors-chart": dict(page="english-writing-practice", width=1440,
-   title="英文連接詞功能對照表", sub="並列、對比、原因、結果、舉例 ・ 16 個連接詞",
-   alt="英文寫作連接詞對照表：依並列對比原因結果舉例等功能分類的16個連接詞與例句",
+   title="英文連接詞功能對照表", sub="並列、對比、原因、結果、舉例 ・ 33 個連接詞",
+   alt="英文寫作連接詞對照表：依並列對比原因結果舉例等功能分類的33個連接詞與例句",
    foot="可儲存列印｜americanenglish.com.tw"),
 })
 
@@ -527,8 +527,15 @@ def inject(rec):
              f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False, separators=(",", ":"))}</script>\n'
              f'{endm}\n')
     if startm in src:
-        new = re.sub(re.escape(startm) + r".*?" + re.escape(endm) + r"\n?", block, src, flags=re.S)
-        act = "replaced"
+        # the PDF box (build_chart_pdfs.offer) lives inside this block, just above the figure:
+        # carry it over, or a chart rebuild silently deletes the page's download button
+        # (10-13: one rebuild took it off 18 pages, months/days/numbers/alphabet among them)
+        old = re.search(re.escape(startm) + r".*?" + re.escape(endm), src, flags=re.S).group(0)
+        box = re.search(r'<div class="magnet-box[^"]*">.*?</div>', old, flags=re.S)
+        if box:
+            block = block.replace(f'<figure class="{FIG_CSS_HOOK}">', box.group(0) + f'\n<figure class="{FIG_CSS_HOOK}">', 1)
+        new = re.sub(re.escape(startm) + r".*?" + re.escape(endm) + r"\n?", lambda m: block, src, flags=re.S)
+        act = "replaced" + (" (PDF box kept)" if box else "")
     else:
         nth = rec.get("anchor_nth", 0)
         ms = list(re.finditer(r"([ \t]*)<table", src))

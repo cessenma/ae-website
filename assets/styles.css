@@ -752,3 +752,9 @@ p.ae-cta:has(+ .assess-card){display:none}   /* the card replaces the text line 
 @media(pointer:coarse){.pk3-t a{display:inline-block;padding:9px 0}}
 .pk3-trust{margin:4px 0 0;font-size:12px;color:#8a5f00;text-align:center;line-height:1.5}
 @media(max-width:720px){.pk3{grid-template-columns:1fr;gap:14px}}
+/* keyword sections (tools/kw_sections.py): a boxed quick answer to the page's top search */
+.kw-card{max-width:760px;margin:18px auto 0;background:#fff;border:1px solid #e3e8f2;border-left:5px solid var(--blue);box-shadow:var(--card-shadow);border-radius:14px;padding:22px 24px}
+.kw-card p+p,.kw-card p+ul,.kw-card ul+p,.kw-card p+ol,.kw-card ol+p,.kw-card .compare+p{margin-top:12px}
+.kw-card ul,.kw-card ol{padding-left:1.3em;margin:10px 0 0}.kw-card li{margin:4px 0}
+.kw-card .compare{margin:14px 0 0}
+@media (max-width:640px){.kw-card{padding:16px 15px;border-radius:12px}}

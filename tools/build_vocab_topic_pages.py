@@ -396,11 +396,11 @@ PAGES.update({
   target="職業英文", index=1.23,
   h1="職業英文對照表：108 種工作的英文說法與 a／an 的選擇",
   title="職業英文108種對照表：工作英文怎麼說、a與an怎麼選｜埃森美語",
-  desc="職業英文完整對照表，收錄 108 種常見工作的英文與中文，依學校醫療、公共服務、商業辦公、科技工程、餐飲服務、運輸農漁與藝術媒體七組分類；並說明職業前面 a／an 的選擇與問職業的三種問法。",
+  desc="職業英文完整對照表，收錄 108 種常見工作的英文與中文，依學校醫療、公共服務、商業辦公、科技工程、餐飲服務、運輸農漁、藝術媒體、服務業與上班族新興工作九組分類；並說明職業前面 a／an 的選擇與問職業的三種問法。",
   hero="「你爸爸做什麼工作？」是國小英文最早出現的對話之一，也是每年都會考的題型。難的不是單字，是三件事：職業前面要不要加 a、怎麼問、以及有些字已經不分男女了。",
   body=lambda: (
     sec("職業英文對照表（108 種）",
-      prose("依領域分七組。找不到完全對應的工作時，母語者的做法是說 <em>I work in…</em> 加上行業，例如 I work in finance。")
+      prose("依領域分九組。找不到完全對應的工作時，母語者的做法是說 <em>I work in…</em> 加上行業，例如 I work in finance。")
       + grouped([(g[0], [[w, z] for w, z in g[1]]) for g in DATA["jobs"]], ["英文", "中文"]))
     + sec("職業前面一定要加 a 或 an",
       prose("這是中文母語者最常漏的一個字。中文說「我是老師」，英文<strong>必須</strong>說 I'm <em>a</em> teacher。",
@@ -893,8 +893,8 @@ PAGES["english-writing-practice"] = dict(
             "四個骨架就能撐起一段完整的短文。先練到不用想就寫得出來，再往上加。",
             "寫完之後<strong>逐句檢查三件事</strong>：每句有沒有主詞和動詞、時態對不對、單複數對不對。"
             "這三樣佔了台灣學生作文扣分的絕大多數。"), soft=True)
-    + sec("連接詞對照表：讓句子接起來的 16 個字",
-      prose("短文和短訊息的差別在句子之間有沒有「接頭」。這 16 個連接詞依功能分好，寫的時候照功能挑。")
+    + sec("連接詞對照表：讓句子接起來的 33 個連接詞",
+      prose("短文和短訊息的差別在句子之間有沒有「接頭」。這 33 個連接詞依功能分成 12 組，寫的時候照功能挑。")
       + tbl([["並列","and / also / as well","I like tea and coffee."],["對比","but / however / although","It was cold, but we went out."],
              ["原因","because / since / as","I stayed home because it rained."],["結果","so / therefore / as a result","It rained, so we stayed home."],
              ["舉例","for example / such as","I like fruit, such as apples."],["順序","first / then / after that / finally","First, mix the eggs. Then add milk."],

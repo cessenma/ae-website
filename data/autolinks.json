@@ -1,6 +1,6 @@
 {
- "_doc": "Site-wide in-text links (tools/autolink.py, applied by seo_build.py). Rules are in priority order; each page links its first eligible mention of a rule's keyword (longest keyword first) to the target, one link per paragraph, at most max_per_page per page, never on the target itself. A keyword starting with 're:' is a regular expression (e.g. 格線 but not 及格線).",
- "max_per_page": 8,
+ "_doc": "Site-wide in-text links (tools/autolink.py, applied by seo_build.py). Rules are in priority order; each page links its first eligible mention of a rule's keyword (longest keyword first) to the target, one link per paragraph, at most max_per_page per page, never on the target itself. A keyword starting with 're:' is a regular expression (e.g. 格線 but not 及格線). A rule may carry \"not_from\": a regex of source pages it must never link from (the fees page is not linked from the online-platform price pages).",
+ "max_per_page": 10,
  "skip_sources": [
   "",
   "courses",
@@ -32,20 +32,119 @@
  },
  "rules": [
   {
+   "target": "how-to-choose-banqiao-english-cram-school",
+   "kw": [
+    "英文補習班怎麼選",
+    "補習班怎麼選"
+   ]
+  },
+  {
+   "target": "english-cram-school-fees",
+   "kw": [
+    "英文補習班費用",
+    "美語補習班費用",
+    "補習班費用"
+   ],
+   "not_from": "^(amazingtalker|oikid|preply|tutorabc|tutorjr|kids-online-english-comparison|cram-school-vs-tutor)"
+  },
+  {
+   "target": "banqiao-elementary-school-english",
+   "kw": [
+    "板橋國小英文補習班",
+    "國小英文怎麼學"
+   ]
+  },
+  {
+   "target": "banqiao-english-cram-school",
+   "kw": [
+    "re:板橋英文補習班(?!怎麼選)",
+    "板橋美語補習班",
+    "板橋英語補習班"
+   ]
+  },
+  {
+   "target": "kids-english-banqiao",
+   "kw": [
+    "板橋兒童美語",
+    "板橋兒童英文"
+   ]
+  },
+  {
+   "target": "kids-english-cram-school-guide",
+   "kw": [
+    "兒童美語推薦",
+    "兒童美語補習班推薦",
+    "兒童英文補習班推薦"
+   ]
+  },
+  {
+   "target": "real-vs-fake-english-immersion-banqiao",
+   "kw": [
+    "全美語補習班",
+    "真假全美語"
+   ]
+  },
+  {
+   "target": "junior-high-english-banqiao",
+   "kw": [
+    "國中英文補習",
+    "國中英文銜接班",
+    "國一銜接"
+   ]
+  },
+  {
+   "target": "banqiao-parent-testimonials",
+   "kw": [
+    "埃森美語評價",
+    "家長見證"
+   ]
+  },
+  {
+   "target": "courses",
+   "kw": [
+    "板橋英文課程",
+    "課程總覽",
+    "18 學期"
+   ]
+  },
+  {
+   "target": "native-vs-local-english-teachers",
+   "kw": [
+    "外師還是中師",
+    "外師和中師",
+    "外師 vs 中師"
+   ]
+  },
+  {
+   "target": "small-class-english-truth",
+   "kw": [
+    "小班制",
+    "小班教學",
+    "師生比"
+   ]
+  },
+  {
+   "target": "banqiao-cram-school-vs-after-school",
+   "kw": [
+    "美語安親班",
+    "英文安親班",
+    "安親班"
+   ]
+  },
+  {
+   "target": "banqiao-first-grade-english",
+   "kw": [
+    "小一英文",
+    "幼小銜接"
+   ]
+  },
+  {
    "target": "english-plural-nouns",
    "kw": [
     "不規則複數",
     "名詞複數",
     "複數形",
     "複數"
-   ]
-  },
-  {
-   "target": "english-wishes",
-   "kw": [
-    "英文祝福語",
-    "祝福語",
-    "祝福"
    ]
   },
   {
@@ -110,41 +209,14 @@
    ]
   },
   {
-   "target": "english-pronunciation",
-   "kw": [
-    "英文發音",
-    "發音規則"
-   ]
-  },
-  {
-   "target": "kk-phonetic-chart",
-   "kw": [
-    "KK 音標",
-    "KK音標"
-   ]
-  },
-  {
-   "target": "phonics-rules-chart",
-   "kw": [
-    "自然發音規則",
-    "自然發音",
-    "Phonics"
-   ]
-  },
-  {
-   "target": "english-vowels-consonants",
-   "kw": [
-    "母音",
-    "子音"
-   ]
-  },
-  {
    "target": "plural-s-past-ed-pronunciation",
    "kw": [
     "-ed 的唸法",
     "-s 的唸法",
     "字尾 -ed",
-    "字尾 -s"
+    "字尾 -s",
+    "ed 的發音",
+    "ed 發音"
    ]
   },
   {
@@ -164,7 +236,9 @@
    "kw": [
     "sight words",
     "Sight Words",
-    "高頻字"
+    "高頻字",
+    "Dolch",
+    "Fry 字表"
    ]
   },
   {
@@ -186,7 +260,10 @@
    "target": "english-tenses-chart",
    "kw": [
     "12 時態",
-    "時態"
+    "時態",
+    "現在完成式",
+    "現在進行式",
+    "過去進行式"
    ]
   },
   {
@@ -202,44 +279,61 @@
    "target": "be-verbs-guide",
    "kw": [
     "be 動詞",
-    "be動詞"
+    "be動詞",
+    "一般動詞",
+    "am／is／are",
+    "was／were"
    ]
   },
   {
    "target": "english-comparatives-guide",
    "kw": [
     "比較級",
-    "最高級"
+    "re:(?<!的)最高級(?! ?Flyers)",
+    "同級比較",
+    "as...as"
    ]
   },
   {
    "target": "english-conjunctions-guide",
    "kw": [
-    "連接詞"
+    "連接詞",
+    "FANBOYS",
+    "轉折語",
+    "comma splice"
    ]
   },
   {
    "target": "in-on-at-prepositions",
    "kw": [
-    "介系詞"
+    "介系詞",
+    "in on at",
+    "介係詞"
    ]
   },
   {
    "target": "english-punctuation-guide",
    "kw": [
-    "標點符號"
+    "標點符號",
+    "刪節號",
+    "ellipsis",
+    "全形標點"
    ]
   },
   {
    "target": "english-capitalization-guide",
    "kw": [
-    "大寫規則"
+    "大寫規則",
+    "全大寫",
+    "Title Case"
    ]
   },
   {
    "target": "english-abbreviations-guide",
    "kw": [
-    "英文縮寫"
+    "英文縮寫",
+    "網路縮寫",
+    "首字母縮寫"
    ]
   },
   {
@@ -247,21 +341,18 @@
    "kw": [
     "英文書信",
     "書信格式",
-    "英文信"
+    "英文信",
+    "結尾敬語",
+    "英文 Email"
    ]
   },
   {
    "target": "english-diary-guide",
    "kw": [
     "英文日記",
-    "寫日記"
-   ]
-  },
-  {
-   "target": "english-self-introduction-kids",
-   "kw": [
-    "英文自我介紹",
-    "自我介紹"
+    "寫日記",
+    "日記格式",
+    "英文週記"
    ]
   },
   {
@@ -274,7 +365,10 @@
   {
    "target": "graded-readers-guide",
    "kw": [
-    "分級讀物"
+    "分級讀物",
+    "分級讀本",
+    "I Can Read",
+    "牛津樹"
    ]
   },
   {
@@ -282,7 +376,9 @@
    "kw": [
     "英文名字怎麼取",
     "取英文名字",
-    "取英文名"
+    "取英文名",
+    "英文姓名",
+    "姓名順序"
    ]
   },
   {
@@ -339,19 +435,26 @@
    "kw": [
     "幾點幾分",
     "時間英文",
-    "時間的說法"
+    "時間的說法",
+    "a.m.／p.m.",
+    "24 小時制",
+    "12 小時制"
    ]
   },
   {
    "target": "colors-english-vocabulary",
    "kw": [
-    "顏色"
+    "顏色",
+    "12 種顏色",
+    "基本顏色"
    ]
   },
   {
    "target": "fruits-english-vocabulary",
    "kw": [
-    "水果"
+    "水果",
+    "wax apple",
+    "pomelo"
    ]
   },
   {
@@ -363,7 +466,10 @@
   {
    "target": "body-parts-english",
    "kw": [
-    "身體部位"
+    "身體部位",
+    "上半身",
+    "下半身",
+    "身體英文"
    ]
   },
   {
@@ -371,14 +477,18 @@
    "kw": [
     "國名",
     "國家英文",
-    "國家名稱"
+    "國家名稱",
+    "國籍英文",
+    "國籍形容詞"
    ]
   },
   {
    "target": "jobs-english",
    "kw": [
     "職業英文",
-    "職業單字"
+    "職業單字",
+    "工作英文",
+    "職業的英文"
    ]
   },
   {
@@ -387,7 +497,8 @@
     "天氣英文",
     "天氣單字",
     "今天天氣",
-    "天氣與"
+    "天氣預報",
+    "東北季風"
    ]
   },
   {
@@ -396,14 +507,20 @@
     "台灣小吃",
     "食物英文",
     "食物單字",
-    "食物"
+    "食物",
+    "中英文菜單",
+    "早餐英文",
+    "夜市小吃"
    ]
   },
   {
    "target": "english-symbol-names",
    "kw": [
     "鍵盤符號",
-    "符號英文"
+    "符號英文",
+    "underscore",
+    "米字號",
+    "井字號"
    ]
   },
   {
@@ -411,14 +528,22 @@
    "kw": [
     "道謝",
     "謝謝的英文",
-    "謝謝英文"
+    "謝謝英文",
+    "不客氣",
+    "You're welcome",
+    "謝謝大家",
+    "Many thanks"
    ]
   },
   {
    "target": "cheer-up-english",
    "kw": [
     "加油",
-    "鼓勵的話"
+    "鼓勵的話",
+    "Cheer up",
+    "Break a leg",
+    "Hang in there",
+    "You've got this"
    ]
   },
   {
@@ -453,16 +578,31 @@
    ]
   },
   {
+   "target": "english-wishes",
+   "kw": [
+    "英文祝福語",
+    "祝福語",
+    "祝福"
+   ]
+  },
+  {
    "target": "halloween-english",
    "kw": [
-    "萬聖節"
+    "萬聖節",
+    "Trick or treat",
+    "Happy Halloween",
+    "南瓜燈"
    ]
   },
   {
    "target": "christmas-english",
    "kw": [
     "聖誕節",
-    "聖誕快樂"
+    "聖誕快樂",
+    "Merry Christmas",
+    "耶誕節",
+    "聖誕卡片",
+    "平安夜"
    ]
   },
   {
@@ -470,27 +610,38 @@
    "kw": [
     "新年快樂",
     "農曆新年",
-    "過年"
+    "過年",
+    "Happy New Year",
+    "跨年夜",
+    "年夜飯",
+    "壓歲錢"
    ]
   },
   {
    "target": "valentines-day-english",
    "kw": [
-    "情人節"
+    "情人節",
+    "Valentine's Day",
+    "交往紀念日"
    ]
   },
   {
    "target": "mid-autumn-festival-english",
    "kw": [
     "中秋節",
-    "中秋"
+    "中秋",
+    "Mid-Autumn Festival",
+    "Moon Festival"
    ]
   },
   {
    "target": "108-curriculum-english-guide",
    "kw": [
     "108 課綱",
-    "108課綱"
+    "108課綱",
+    "英文課綱",
+    "英語文領綱",
+    "素養題"
    ]
   },
   {
@@ -499,34 +650,26 @@
     "國中教育會考",
     "國中會考",
     "會考英文",
-    "re:(?<!「)會考(?!」)"
+    "re:(?<!「)(?<!不)會考(?!」)",
+    "英文級距",
+    "會考級距"
    ]
   },
   {
    "target": "gept-kids-guide",
    "kw": [
-    "小學英檢"
-   ]
-  },
-  {
-   "target": "gept-elementary-guide",
-   "kw": [
-    "全民英檢初級",
-    "英檢初級"
+    "小學英檢",
+    "GEPT Kids",
+    "太陽數"
    ]
   },
   {
    "target": "gept-intermediate-guide",
    "kw": [
     "全民英檢中級",
-    "英檢中級"
-   ]
-  },
-  {
-   "target": "gept",
-   "kw": [
-    "全民英檢",
-    "GEPT"
+    "英檢中級",
+    "中級英檢",
+    "GEPT 中級"
    ]
   },
   {
@@ -538,31 +681,17 @@
   {
    "target": "cambridge-movers-guide",
    "kw": [
-    "Movers"
+    "Movers",
+    "A1 Movers",
+    "Movers 程度"
    ]
   },
   {
    "target": "cambridge-flyers-guide",
    "kw": [
-    "Flyers"
-   ]
-  },
-  {
-   "target": "ket-prep-guide",
-   "kw": [
-    "KET"
-   ]
-  },
-  {
-   "target": "pet-prep-guide",
-   "kw": [
-    "PET"
-   ]
-  },
-  {
-   "target": "fce-prep-guide",
-   "kw": [
-    "FCE"
+    "Flyers",
+    "A2 Flyers",
+    "Flyers 考試"
    ]
   },
   {
@@ -573,9 +702,365 @@
    ]
   },
   {
+   "target": "cambridge-exam-worth-it",
+   "kw": [
+    "劍橋英檢有用嗎",
+    "劍橋英檢加分"
+   ]
+  },
+  {
+   "target": "ket-vs-gept-comparison",
+   "kw": [
+    "KET vs GEPT",
+    "KET 和 GEPT 初級",
+    "KET 與 GEPT 初級"
+   ]
+  },
+  {
+   "target": "ket-prep-guide",
+   "kw": [
+    "KET",
+    "A2 Key",
+    "KET 單字表"
+   ]
+  },
+  {
+   "target": "cambridge-exam-registration-taiwan",
+   "kw": [
+    "劍橋英檢報名",
+    "劍橋英檢報名費",
+    "授權考試中心"
+   ]
+  },
+  {
    "target": "cambridge-english-levels",
    "kw": [
     "劍橋英檢"
+   ]
+  },
+  {
+   "target": "pet-score-calculator",
+   "kw": [
+    "PET 分數計算機",
+    "PET 成績換算"
+   ]
+  },
+  {
+   "target": "exams/hours-to-level-up",
+   "kw": [
+    "guided learning hours",
+    "升一級要幾小時"
+   ]
+  },
+  {
+   "target": "kids-english-exams-guide",
+   "kw": [
+    "國小英文檢定",
+    "兒童英文檢定"
+   ]
+  },
+  {
+   "target": "english-self-introduction-students",
+   "kw": [
+    "以上是我的自我介紹",
+    "國中英文自我介紹"
+   ]
+  },
+  {
+   "target": "english-self-introduction-kids",
+   "kw": [
+    "英文自我介紹",
+    "自我介紹",
+    "show-and-tell",
+    "show and tell"
+   ]
+  },
+  {
+   "target": "gept-elementary-speaking-writing",
+   "kw": [
+    "初級複試",
+    "全民英檢初級複試",
+    "GEPT 初級複試"
+   ]
+  },
+  {
+   "target": "gept-elementary-guide",
+   "kw": [
+    "全民英檢初級",
+    "英檢初級",
+    "初級英檢",
+    "GEPT 初級"
+   ]
+  },
+  {
+   "target": "shide-style-exam-guide",
+   "kw": [
+    "師德英檢",
+    "STYLE/JET",
+    "STYLE／JET"
+   ]
+  },
+  {
+   "target": "english-exam-dates-guide",
+   "kw": [
+    "英檢考試時間",
+    "全民英檢考試時間"
+   ]
+  },
+  {
+   "target": "gept",
+   "kw": [
+    "全民英檢",
+    "GEPT"
+   ]
+  },
+  {
+   "target": "learning-support-guide",
+   "kw": [
+    "學習扶助",
+    "篩選測驗"
+   ]
+  },
+  {
+   "target": "b1-grammar-guide",
+   "kw": [
+    "B1 文法",
+    "PET 文法"
+   ]
+  },
+  {
+   "target": "pet-prep-guide",
+   "kw": [
+    "PET",
+    "B1 Preliminary",
+    "PET 單字表"
+   ]
+  },
+  {
+   "target": "b2-grammar-guide",
+   "kw": [
+    "B2 文法",
+    "FCE 文法"
+   ]
+  },
+  {
+   "target": "fce-prep-guide",
+   "kw": [
+    "FCE",
+    "B2 First",
+    "FCE 考試"
+   ]
+  },
+  {
+   "target": "jiangzicui-english-cram-school",
+   "kw": [
+    "江子翠"
+   ]
+  },
+  {
+   "target": "xinpu-english-cram-school",
+   "kw": [
+    "新埔英文補習班"
+   ]
+  },
+  {
+   "target": "english-summer-camp-banqiao",
+   "kw": [
+    "英文夏令營",
+    "暑期英文班",
+    "夏令營"
+   ]
+  },
+  {
+   "target": "fuzhong-english-cram-school",
+   "kw": [
+    "府中生活圈"
+   ]
+  },
+  {
+   "target": "kids-english-guide",
+   "kw": [
+    "兒童美語教學",
+    "兒童美語課程",
+    "兒童美語"
+   ]
+  },
+  {
+   "target": "preschool-english-guide",
+   "kw": [
+    "全美語幼稚園",
+    "全美語幼兒園",
+    "雙語幼兒園",
+    "美語幼兒園"
+   ]
+  },
+  {
+   "target": "when-to-start-english-for-kids",
+   "kw": [
+    "幾歲開始學英文",
+    "幾歲學英文",
+    "語言關鍵期"
+   ]
+  },
+  {
+   "target": "bilingual-education-myths-banqiao",
+   "kw": [
+    "雙語教育",
+    "雙語課"
+   ]
+  },
+  {
+   "target": "kk-phonetics-vs-phonics",
+   "kw": [
+    "KK 音標與自然發音",
+    "KK 音標和自然發音",
+    "自然發音和 KK"
+   ]
+  },
+  {
+   "target": "kk-phonetic-chart",
+   "kw": [
+    "KK 音標",
+    "KK音標"
+   ]
+  },
+  {
+   "target": "phonics-rules-chart",
+   "kw": [
+    "自然發音規則",
+    "自然發音",
+    "Phonics"
+   ]
+  },
+  {
+   "target": "english-pronunciation",
+   "kw": [
+    "英文發音",
+    "re:(?<!自然)發音規則",
+    "無聲子音",
+    "有聲子音",
+    "發音查詢"
+   ]
+  },
+  {
+   "target": "english-vowels-consonants",
+   "kw": [
+    "re:(?<!字)母音",
+    "子音",
+    "長短母音",
+    "雙母音"
+   ]
+  },
+  {
+   "target": "ship-or-sheep-english-vowels",
+   "kw": [
+    "re:ship ?(／|/|和|與|還是|vs\\.?) ?sheep",
+    "最小對子"
+   ]
+  },
+  {
+   "target": "english-reading-practice",
+   "kw": [
+    "英文閱讀練習",
+    "英文閱讀怎麼練"
+   ]
+  },
+  {
+   "target": "english-writing-practice",
+   "kw": [
+    "re:英文寫作(?![ 　]?[A-Za-z])",
+    "英文短文"
+   ]
+  },
+  {
+   "target": "english-listening-practice",
+   "kw": [
+    "英文聽力練習",
+    "shadowing",
+    "聽力怎麼練"
+   ]
+  },
+  {
+   "target": "banqiao-junior-high-english-past-papers",
+   "kw": [
+    "板橋國中考古題",
+    "英文段考考古題",
+    "國中段考考古題"
+   ]
+  },
+  {
+   "target": "haishan-junior-high-english",
+   "kw": [
+    "海山國中考古題",
+    "海山國中"
+   ]
+  },
+  {
+   "target": "jiangcui-junior-high-english",
+   "kw": [
+    "江翠國中考古題",
+    "江翠國中"
+   ]
+  },
+  {
+   "target": "zhongshan-junior-high-english-banqiao",
+   "kw": [
+    "板橋中山國中"
+   ]
+  },
+  {
+   "target": "xinpu-junior-high-english",
+   "kw": [
+    "新埔國中"
+   ]
+  },
+  {
+   "target": "xinpu-elementary-english",
+   "kw": [
+    "新埔國小"
+   ]
+  },
+  {
+   "target": "wensheng-elementary-english",
+   "kw": [
+    "文聖國小"
+   ]
+  },
+  {
+   "target": "exams/banqiao-school-calendar",
+   "kw": [
+    "板橋國中行事曆",
+    "板橋國小行事曆",
+    "板橋學區行事曆"
+   ]
+  },
+  {
+   "target": "banqiao-private-school-english-prep",
+   "kw": [
+    "私校英文",
+    "私立中學英文"
+   ]
+  },
+  {
+   "target": "banqiao-junior-high-english-blind-spots",
+   "kw": [
+    "國中英文盲點",
+    "英文學習盲點"
+   ]
+  },
+  {
+   "target": "child-hates-english",
+   "kw": [
+    "不想學英文",
+    "排斥英文",
+    "討厭英文"
+   ]
+  },
+  {
+   "target": "kids-english-names-guide",
+   "kw": [
+    "小孩英文名字",
+    "拼音名"
    ]
   }
  ]
