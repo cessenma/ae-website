@@ -1534,6 +1534,7 @@ def process_page(path, css_ver="", crit=""):
     original = html          # kept so we can skip writing files this build did not change
     html = apply_snippet(html, rel)
     html = kw_sections.apply(html, rel)    # keyword sections (data/kw_sections.json); before the TOC and links
+    html = review_count(html)               # one Google review count site-wide (data/google_reviews.json)
     html = autolink.apply(html, rel)        # site-wide in-text links (data/autolinks.json); re-applied every build
     if rel == "chart-license/index.html":
         html = license_rows(html)
@@ -1816,6 +1817,7 @@ def process_page(path, css_ver="", crit=""):
     if rel not in SELF_CONTAINED:
         html = ainote(html)
         html = ink_pass(html)
+    html = review_count(html)              # again at the end: later steps rebuild the rating markup from a template
 
     # Only write when this build actually changed the file. Writing unconditionally
     # touched every page's mtime, so rebuild_sitemap() stamped the SAME <lastmod> on
@@ -2102,7 +2104,36 @@ def rebuild_sitemap():
 
 LLMS_START = "<!-- AE:LLMS-MORE start: written by tools/seo_build.py (pages the curated lists above do not name yet) -->"
 LLMS_END = "<!-- AE:LLMS-MORE end -->"
-LLMS_SKIP = re.compile(r"-practice(-part\d+)?/$")      # practice parts are reached through the listed hubs
+LLMS_SKIP = re.compile(r"-practice-part\d+/$")       # practice PARTS are reached through their hubs; the hubs themselves are listed
+# ---- Google review count: ONE number for the whole site (data/google_reviews.json) ----
+# It was written by hand in 15 places across 6 files and fell behind the listing (93 vs 94 on 10-20).
+# Only these exact phrasings are rewritten — each names Google or is the rating markup — so no other
+# number on a page can be touched.
+_REV = None
+REV_PATTERNS = [
+    (r'("reviewCount":")\d+(")', r'\g<1>{n}\g<2>'),
+    (r'(Google 5\.0★（)\d+( 則評價）)', r'\g<1>{n}\g<2>'),
+    (r'(Google 評價 5\.0 / 5 · )\d+( 則)', r'\g<1>{n}\g<2>'),
+    (r'(5\.0 / 5 · )\d+( 則 Google 評價)', r'\g<1>{n}\g<2>'),
+    (r'(>)\d+( 則 Google 評價<)', r'\g<1>{n}\g<2>'),
+    (r'(Google 地圖上(?:有|還有) )\d+( 則家長評價)', r'\g<1>{n}\g<2>'),
+    (r'(Google 地圖上的公開評論——目前 )\d+( 則)', r'\g<1>{n}\g<2>'),
+    (r'(Google 地圖上的 5\.0 星、)\d+( 則評價)', r'\g<1>{n}\g<2>'),
+    (r'(from )\d+( Google reviews)', r'\g<1>{n}\g<2>'),
+]
+def review_count(text):
+    global _REV
+    if _REV is None:
+        try:
+            _REV = json.load(open(os.path.join(SITE, "data", "google_reviews.json"), encoding="utf-8"))
+        except FileNotFoundError:
+            _REV = {}
+    if not _REV.get("count"):
+        return text
+    for pat, rep in REV_PATTERNS:
+        text = re.sub(pat, rep.format(n=_REV["count"]), text)
+    return text
+
 def sync_llms():
     """llms.txt is curated by hand and had fallen behind: 151 of 315 sitemap pages were not in it.
     Every sitemap page the curated sections do not name is listed in one marked block (title and
@@ -2131,6 +2162,7 @@ def sync_llms():
     anchor = "## Citable facts"
     new = curated.replace(anchor, block + "\n" + anchor, 1) if (block and anchor in curated) else curated + ("\n" + block if block else "")
     new = re.sub(r"\n{3,}(" + re.escape(LLMS_START) + ")", r"\n\n\1", new)
+    new = review_count(new)
     if new != txt:
         open(lp, "w", encoding="utf-8").write(new)
     return len(rows)

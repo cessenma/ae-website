@@ -33,11 +33,14 @@ import seo_build as S
 COSMETIC = os.path.join(S.SITE, "data", "lastmod_cosmetic.json")
 
 def git(*args):
-    return subprocess.run(["git", "-C", S.SITE, *args], capture_output=True, text=True, errors="replace").stdout
+    # commit dates are read as Taiwan dates: %cs used each commit's own zone, so a commit made
+    # at 00:04 +0800 or one stamped in UTC by a cloud session landed on the wrong day (10-20 audit: 117 rows)
+    env = dict(os.environ, TZ="Asia/Taipei")
+    return subprocess.run(["git", "-C", S.SITE, *args], capture_output=True, text=True, errors="replace", env=env).stdout
 
 def commits(rel):
     """[(hash, YYYY-MM-DD)] newest first, only commits that touched the file."""
-    return [l.split() for l in git("log", "--format=%H %cs", "--", rel).splitlines() if l.strip()]
+    return [l.split() for l in git("log", "--date=format-local:%Y-%m-%d", "--format=%H %cd", "--", rel).splitlines() if l.strip()]
 
 def load_cosmetic():
     try:
@@ -68,7 +71,7 @@ def main():
             path = os.path.join(S.SITE, key)
             if not os.path.exists(path):
                 continue
-            last = git("log", "-1", "--format=%cs", "--", key).strip()
+            last = git("log", "-1", "--date=format-local:%Y-%m-%d", "--format=%cd", "--", key).strip()
             date = today if (key in dirty or not last) else last
             was = ledger[key].get("date")
             if was != date:

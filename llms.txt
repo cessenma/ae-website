@@ -20,8 +20,8 @@
 - Google Maps listing (name shown there: 埃森美語 American English): https://www.google.com/maps?cid=11837760024257631170
 - Getting there: Banqiao Station or Fuzhong Station (MRT Bannan Line), each an 11–12 minute walk (750–800 m). Bus stop 社后 on Zhongzheng Rd is about 100 m away (routes 307, 310, 786, 810, 857; Google Maps, October 2026). Paid car parks within about 300 m: 板橋國小地下停車場 and 板橋高中停車場.
 - Hours: Mon–Fri 15:00–20:00, Sat 10:00–19:00.
-- Rating: 5.0 out of 5 stars from 93 Google reviews (Google Maps listing, read 2026-10-01).
-- Track record: 406 families served · 94% re-enrollment rate · 98% Cambridge exam (劍橋英檢) pass rate · students stay an average of 2.4 years.
+- Rating: 5.0 out of 5 stars from 94 Google reviews (Google Maps listing, read 2026-10-20).
+- Track record: 406 families served · 94% re-enrollment rate · 98% Cambridge exam (劍橋英檢) pass rate (school records) · students stay an average of 2.4 years.
 - Founder: Christopher — University of Michigan graduate, U.S. state teaching certificate, personally teaches every class.
 - Trial: a paid 90-minute real class plus a 1-on-1 level assessment (預約試聽). This is NOT a free trial, and there is no enrollment contract.
 - Free level assessment (免費程度評估): also offered, and booked via LINE; it is a separate thing from the paid trial class.
@@ -34,11 +34,12 @@
 - Exam targets in the curriculum: Cambridge YLE (Starters / Movers / Flyers), KET, PET, and 國中教育會考英文. (GEPT 全民英檢 is covered through in-depth guides — see the exam guides below.)
 - Core materials: National Geographic Explore Our World + Oxford Bookworms graded readers.
 
-## Pages — full directory
+## Pages — main directory (every other page is listed under "More pages" below)
 
 ### 課程與師資 Courses, teachers & enrollment
+- [埃森美語首頁 Home](https://americanenglish.com.tw/): the school's front page — American-certified teachers, classes of 12 or fewer, kids' and junior-high English in Banqiao (板橋), with directions and the LINE contact.
 - [課程總覽 Course overview](https://americanenglish.com.tw/courses/): the full curriculum map — 18 semesters across 6 ability levels, from Phonics 啟蒙 through junior-high exam prep.
-- [師資介紹 Teachers & founder](https://americanenglish.com.tw/certified-american-teacher-banqiao/): the U.S. state-certified American teacher and University of Michigan founder who personally teaches — a long-term Banqiao resident, zero teacher turnover.
+- [師資介紹 Teachers & founder](https://americanenglish.com.tw/certified-american-teacher-banqiao/): the U.S. state-certified American teacher and University of Michigan founder who personally teaches — a long-term Banqiao resident.
 - [板橋兒童美語 Kids' English](https://americanenglish.com.tw/kids-english-banqiao/): the flagship kids' English (兒童美語) program — 100% certified American teachers, classes of 12 or fewer, enrollment from age 5.
 - [板橋幼兒美語・自然發音班 Preschool phonics](https://americanenglish.com.tw/phonics-preschool-banqiao/): all-English Phonics (自然發音) starter classes from age 5 — from letter sounds to reading aloud and speaking.
 - [板橋國小兒童英文 Elementary English](https://americanenglish.com.tw/elementary-english-banqiao-zhongzheng/): the elementary-age program on Zhongzheng Rd near 板橋國小 / 國光 / 大觀 — zero-basics learners welcome.
@@ -46,9 +47,8 @@
 - [板橋國中英文銜接班 Junior-high bridging](https://americanenglish.com.tw/junior-high-english-banqiao/): bridging classes for the big 國一 vocabulary jump — grammar, listening, and speaking aimed at 會考英文精熟級.
 - [板橋英文補習班推薦 Why choose AE](https://americanenglish.com.tw/banqiao-english-cram-school/): the school's core page — government registration, certified American teachers, the 12-student cap, and monthly tuition with no contract.
 - [常見問題 FAQ](https://americanenglish.com.tw/banqiao-english-faq/): the 13 questions Banqiao parents ask most — starting age, class size, exams, school catchment zones, and transport.
-- [家長見證 Parent testimonials](https://americanenglish.com.tw/banqiao-parent-testimonials/): feedback and outcomes from the 406 Banqiao families served, with the 5.0-star rating from 93 Google reviews (read 2026-10-01).
+- [家長見證 Parent testimonials](https://americanenglish.com.tw/banqiao-parent-testimonials/): feedback and outcomes from the 406 Banqiao families served, with the 5.0-star rating from 94 Google reviews (read 2026-10-20).
 - [預約試聽 Book a trial](https://americanenglish.com.tw/free-trial/): a full 90-minute real class taught by a certified American teacher plus a 1-on-1 level assessment — a paid trial, not a 30-minute sales demo.
-- [LINE 報名頁 LINE landing](https://americanenglish.com.tw/line/): add the school on LINE to book the 90-minute trial class and level assessment.
 
 - [部落格 Blog index](https://americanenglish.com.tw/blog/): every guide on this site in one place — exam prep, phonics and vocabulary references, and Banqiao parent advice.
 ### 板橋在地指南 Banqiao local guides
@@ -103,7 +103,7 @@
 ### 劍橋英檢線上練習 Cambridge practice — original, free, no signup
 Every part of every paper across KET, PET and FCE, written by the school and answerable in the browser
 with an instant score and a Chinese explanation for every option.
-- [KET 閱讀與寫作練習 Parts 1–7](https://americanenglish.com.tw/ket-prep-guide/#practice): 30 scored items plus two writing tasks with annotated model answers.
+- [KET 閱讀與寫作練習 Parts 1–7](https://americanenglish.com.tw/ket-rw-practice-part1/): 30 scored items plus two writing tasks with annotated model answers.
 - [KET 聽力練習 Parts 1–5](https://americanenglish.com.tw/ket-listening-practice-part1/): 25 items with audio and a collapsible transcript per recording.
 - [KET 口說逐字稿 Speaking transcript](https://americanenglish.com.tw/ket-speaking-practice/): a full model paired-test transcript, every English line with a Chinese translation under it.
 - [PET 閱讀練習 Reading Parts 1–6](https://americanenglish.com.tw/pet-reading-practice-part1/): 49 items; Parts 4–6 carry two sets each.
@@ -210,6 +210,9 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 
 <!-- AE:LLMS-MORE start: written by tools/seo_build.py (pages the curated lists above do not name yet) -->
 ### 更多頁面 More pages
+- [Starters（Pre A1）單字練習：6 個主題・36 題情境選字](https://americanenglish.com.tw/starters-vocabulary-practice/): Starters（Pre A1）單字練習＋A4 單字卡 PDF：6 個主題、36 題原創情境選字，把單字放回句子裡考，每題附中文解析；單字卡可列印，免費不用註冊。
+- [Movers（A1）單字練習：6 個主題・36 題情境選字](https://americanenglish.com.tw/movers-vocabulary-practice/): Movers（A1）單字練習＋A4 單字卡 PDF：6 個主題、36 題原創情境選字，把單字放回句子裡考，每題附中文解析；單字卡可列印，免費不用註冊。
+- [Flyers（A2）單字練習：6 個主題・36 題情境選字](https://americanenglish.com.tw/flyers-vocabulary-practice/): Flyers（A2）單字練習＋A4 單字卡 PDF：6 個主題、36 題原創情境選字，把單字放回句子裡考，每題附中文解析；單字卡可列印，免費不用註冊。
 - [顏色英文 62 個對照表：12 種基本色先背、深淺怎麼說（附 PDF）](https://americanenglish.com.tw/colors-english-vocabulary/): 顏色英文對照表：先背 red、blue、brown 等 12 種基本色，再查 62 個深淺色（navy、beige、杏色 apricot）；color 與 colour 的分別、red color 錯在哪，附 A4 閃卡 PDF。
 - [水果英文單字 101 種對照表：蓮霧、釋迦、柚子怎麼說（附 PDF）](https://americanenglish.com.tw/fruits-english-vocabulary/): 水果英文單字 101 種：蓮霧 wax apple、釋迦 sugar apple、柚子 pomelo 等台灣水果，加上常見、熱帶、莓果與果乾分組；最易搞混的 6 組（柚子和葡萄柚）與 A4 閃卡 PDF。
 - [in on at 用法口訣：時間、日期、地點介係詞對照表＋10 題自測](https://americanenglish.com.tw/in-on-at-prepositions/): in on at 怎麼分？at 是點、on 是面、in 是範圍：時間、日期、地點介係詞對照表，日期用 on 還是 in、什麼時候不用介係詞，加上最容易錯的陷阱與 10 題自測。
@@ -219,6 +222,8 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 - [領思是什麼？Linguaskill 新制題型、成績對照與報名指南](https://americanenglish.com.tw/linguaskill-guide/): 領思（Linguaskill）是劍橋的線上自適應英語測驗。整理新制聽說讀寫四個模組、Cambridge English Scale 對照 CEFR、成績幾天出來、台灣的採認實例、考試中心與報名費。
 - [CAE 是什麼？C1 Advanced 考試內容、分數與 2026 日期](https://americanenglish.com.tw/cae-c1-advanced-guide/): CAE（C1 Advanced）是劍橋英檢在 FCE 之上的 C1 級考試。整理四份考卷時間與配分、分數怎麼看（180 及格、200 以上 Grade A）、2026 考試日期，以及在台灣誰真正需要 C1。
 - [美語補習班推薦怎麼看？連鎖品牌比較的5個必問](https://americanenglish.com.tw/choose-english-chain-school/): 美語補習班推薦文章看了一堆，還是不知道怎麼選？這一頁不評比品牌，教你比較連鎖兒童美語的方法：直營與加盟的差異、參觀時的五個必問、學費換算單位成本，附比較表模板。
+- [PET（B1）單字練習：8 個主題・64 題情境選字](https://americanenglish.com.tw/b1-vocabulary-practice/): PET（B1）單字怎麼練？8 個主題、64 題原創練習，全部把單字放回句子裡考——因為考試不會問你中文意思，而是看你在句子裡認不認得出來。附中文解析，免費不用註冊。
+- [FCE（B2）單字練習：8 個主題・64 題情境選字](https://americanenglish.com.tw/b2-vocabulary-practice/): FCE（B2）單字怎麼練？8 個主題、64 題原創練習，全部把單字放回句子裡考——因為考試不會問你中文意思，而是看你在句子裡認不認得出來。附中文解析，免費不用註冊。
 - [Sight Words 是什麼？美國老師教你：別再一張一張閃字卡了](https://americanenglish.com.tw/sight-words-heart-words-guide/): 學校發了一疊單字卡卻沒教怎麼用？美國持照教師用中文解釋 sight words、高頻字、Heart Words 的差別，說明大腦真正記住單字的方式（orthographic mapping）。
 - [兒童英文程度分級指南：CEFR 等級 × 年段 × 英檢對照表](https://americanenglish.com.tw/kids-english-levels/): 孩子的英文在哪一級？一張表講清楚 CEFR Pre-A1 到 B1 每一級孩子「能做什麼」、對應的劍橋兒童英檢與全民英檢、常見年段，以及升一級實際需要的時間。
 - [英文發音查詢：輸入單字聽發音、看 KK 音標＋41 個音完整指南](https://americanenglish.com.tw/english-pronunciation/): 英文發音查詢：輸入任何英文單字或句子，馬上看 KK 音標、點一下聽美式發音（可放慢）；再加 41 個音（母音 17、子音 24）的規則、例字與嘴型提示，附 A4 發音總表 PDF。
@@ -234,6 +239,10 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 - [學習扶助是什麼、怎麼上？篩選測驗沒過怎麼辦＋英語科從哪補](https://americanenglish.com.tw/learning-support-guide/): 學習扶助是國教署的常態方案、前身是補救教學，不是特殊教育：篩選測驗決定名單，成長測驗決定結案。整理學習扶助怎麼上、該問學校的三件事，以及英語科從哪一關補起。
 - [謝謝英文 30 種說法：Thank 要加 s 嗎？謝謝大家、不客氣怎麼說](https://americanenglish.com.tw/thank-you-english/): 謝謝英文寫 Thank you（兩個字）或 Thanks，Thanks you 是常見錯誤。30 種說法依場合分表：日常、正式 email、回應道謝，另有謝謝大家、Many thanks 用法。
 - [加油英文怎麼說？考試、繼續、一起加油 21 句＋Cheer up 別用錯](https://americanenglish.com.tw/cheer-up-english/): 加油英文看場合：考前 Good luck!、繼續加油 Keep going!、一起加油 Let's do our best!，Cheer up 其實是「別難過」。21 種說法分四張表，Go fighting 錯在哪也講清楚。
+- [英文聽力練習網站：27 頁免費題目＋音檔逐字稿，國小到高中分級](https://americanenglish.com.tw/english-listening-practice/): 英文聽力練習：27 頁免費線上題目，每頁有音檔、題目與完整逐字稿，劍橋 Starters 到 FCE 分級；附 12 個最常聽錯的連音對照、跟讀五步驟與挑練習網站的四個標準。
+- [英文閱讀練習：30 頁免費線上題目附中文解析＋擺脫逐字翻譯](https://americanenglish.com.tw/english-reading-practice/): 英文閱讀練習：30 頁依程度分級的免費線上題目（劍橋 Starters 到 PET），每題附中文解析；再教你判斷錯在哪、猜生字的三個線索、14 個字首字尾與略讀、尋讀。
+- [英文口說練習：一個人也能練的方法＋6場完整對話逐字稿](https://americanenglish.com.tw/english-speaking-practice/): 英文口說練習方法：為什麼台灣學生「會寫不會說」、一個人怎麼練口說（自問自答、錄音回聽、跟讀）、以及劍橋各級口說考什麼——附六場完整對話逐字稿與中文對照，全部免費。
+- [英文短文怎麼寫？三段骨架＋範文，英文寫作練習題與範文解析](https://americanenglish.com.tw/english-writing-practice/): 英文短文怎麼寫？開頭一句說立場、中間兩三句理由和例子、結尾一句收回來。附 88 字範文逐句拆解、句型骨架、連接詞表，以及 KET、PET、FCE 免費寫作練習與逐句中文解析。
 - [運動英文單字 120 個：球類、play/do/go 用法與運動會（附 PDF）](https://americanenglish.com.tw/sports-english/): 運動英文單字 120 個對照表，附唸法與用法：籃球、羽毛球、跆拳道、大隊接力怎麼說，play／do／go 怎麼選，15 句聊運動的句型、美式與英式差異，附 A4 列印版 PDF。
 - [情緒英文單字表：72 個心情、感覺形容詞＋句型（附 PDF）](https://americanenglish.com.tw/feelings-english/): 情緒英文、心情英文、感覺英文一次查：72 個形容詞分開心、難過、生氣、害怕等七組，附 KK 音標；說心情句型、How are you 回答、bored／boring 差別與練習，附 A4 PDF。
 - [國中英文文法總整理：國一到國三 36 個重點與例句（附 PDF）](https://americanenglish.com.tw/junior-high-english-grammar/): 國中英文文法總整理表：國一到國三 36 個重點，每個都附句型與例句，加上國中 6 種時態對照、會考語法題怎麼考、最常錯的 10 個地方與段考複習方法，附 A4 列印版 PDF。
@@ -243,6 +252,10 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 - [祝福英文180句：畢業、早日康復、結婚、離職等13種場合（附PDF）](https://americanenglish.com.tw/english-wishes/): 祝福英文 180 句對照表，依畢業、早日康復、結婚、離職、一路順風、教師節等 13 種場合分好，標出適合對象與語氣；另有英文祝福語單字、卡片寫法與常見錯誤，附 A4 PDF。
 - [英文卡片怎麼寫：To/Dear、結尾署名、信封＋12 張範例（附PDF）](https://americanenglish.com.tw/english-card-writing/): 英文卡片怎麼寫？41 個開頭、結尾、署名對照（To、Dear、Love、Best wishes 寫給誰），逗號規則，12 張寫給老師、爸媽、朋友的範例，明信片與信封格式，附 PDF。
 - [英文格線產生器：輸入單字、名字，做四線三格描寫練習單](https://americanenglish.com.tw/english-worksheet-maker/): 英文格線產生器：輸入孩子的名字、單字或句子，馬上做出四線三格描寫練習單；可選印刷體或草寫、灰色字或空心字，A4 直接列印或存成 PDF，也能只印空白格線紙。
+- [英檢初級口說題目｜複誦・朗讀・回答問題 18 題（可錄音）](https://americanenglish.com.tw/gept-elementary-speaking-practice/): 全民英檢初級複試口說免費線上練習：複誦・朗讀・回答問題，共 18 題原創題目，附美式發音音檔、參考回答與答題提示，每題可以直接錄下自己的回答來比較。
+- [英檢中級口說題目｜朗讀・回答問題・看圖敘述 13 題（可錄音）](https://americanenglish.com.tw/gept-intermediate-speaking-practice/): 全民英檢中級複試口說免費線上練習：朗讀短文・回答問題・看圖敘述，共 13 題原創題目，附美式發音音檔、參考回答與答題提示，每題可以直接錄下自己的回答來比較。
+- [英檢中高級口說題目｜回答問題・看圖敘述・申述 10 題（可錄音）](https://americanenglish.com.tw/gept-high-intermediate-speaking-practice/): 全民英檢中高級複試口說免費線上練習：回答問題・看圖敘述・申述，共 10 題原創題目，附美式發音音檔、參考回答與答題提示，每題可以直接錄下自己的回答來比較。
+- [小學英檢口說題目｜問候・朗讀・看圖說話・問答 13 題（可錄音）](https://americanenglish.com.tw/gept-kids-speaking-practice/): 小學英檢一對一口試免費線上練習：暖身問候・朗讀與描述圖片・看圖說話・回答問題，共 13 題原創題目，附美式發音音檔、參考回答與答題提示。
 - [英文升一級要幾小時？劍橋官方表：國小生到 A2 要 540–680 小時](https://americanenglish.com.tw/exams/hours-to-level-up/): 劍橋官方：每升一個 CEFR 等級約 200 guided learning hours，但這不是上課時數。台灣國小生適用另一張表：從零到 A2 要 540–680 小時，約是成人版的 2.5–3.5 倍。
 - [英文語調有多重要？英檢口說佔一半的分數](https://americanenglish.com.tw/exams/intonation/): 全民英檢初級口說「發音、語調和流利度」是兩個評分項目之一，各佔 50%（LTTC 官方）。中文用聲調分辨字義、英文不用——這個差異讓台灣學生的英文聽起來「平」。
 - [板橋國中行事曆、板橋國小行事曆：國光、大觀國小官方連結](https://americanenglish.com.tw/exams/banqiao-school-calendar/): 板橋國中行事曆、板橋國小行事曆，以及國光、大觀國小的官方行事曆連結，每週自動檢查是否有效；並教你在行事曆裡找段考、開學、補假。日期一律以學校公告為準。
@@ -256,19 +269,22 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 - [PET 成績／分數計算機：換算劍橋量表，幾分過？140 分及格](https://americanenglish.com.tw/pet-score-calculator/): 輸入 PET 四卷原始分數，立刻換算劍橋量表分數（102–170）、等級與 CEFR 級別。140 分及格，160 分以上證書標示 B2；總分是四卷平均，附算法範例，繁體中文、不用註冊。
 - [FCE 分數計算機｜劍橋英檢 B2 First 成績換算・幾分及格](https://americanenglish.com.tw/fce-score-calculator/): 輸入 FCE 五個項目的原始分數，立刻換算劍橋量表分數（122–190）、等級與 CEFR 級別。依劍橋官方換算表製作，繁體中文免註冊。160 分及格，180 分以上證書標示 C1。
 - [劍橋英檢盾牌怎麼看？Starters／Movers／Flyers 盾牌計算與升級標準](https://americanenglish.com.tw/cambridge-yle-shields/): 劍橋兒童英檢（YLE）成績單上的盾牌是什麼意思？每項最多 5 個、總共 15 個，官方以「10 個以上」作為可以準備下一級的標準。附互動工具，點選盾牌數立刻看懂成績。
+- [Starters 口說練習：四個部分完整流程、老師提問與圖卡](https://americanenglish.com.tw/starters-speaking-practice/): 劍橋兒童英檢 Pre A1 Starters Speaking 四個部分的完整練習：場景圖、物品卡、故事圖、老師會問的每一句話，附參考說法。家長在家就能當考官走一次流程。
+- [Movers 口說練習：四個部分完整流程、老師提問與圖卡](https://americanenglish.com.tw/movers-speaking-practice/): 劍橋兒童英檢 A1 Movers Speaking 四個部分的完整練習：場景圖、物品卡、故事圖、老師會問的每一句話，附參考說法。家長在家就能當考官走一次流程。
+- [Flyers 口說練習：四個部分完整流程、老師提問與圖卡](https://americanenglish.com.tw/flyers-speaking-practice/): 劍橋兒童英檢 A2 Flyers Speaking 四個部分的完整練習：場景圖、物品卡、故事圖、老師會問的每一句話，附參考說法。家長在家就能當考官走一次流程。
 <!-- AE:LLMS-MORE end -->
 
 ## Citable facts
 - GEPT pass marks (LTTC 2027 registration guide): Stage 1 listening + reading (each out of 120) must total 160 with neither paper below 72 at Elementary, Intermediate and High-Intermediate; Stage 2 is writing 70 / speaking 80 at Elementary (初級) and writing 80 / speaking 80 at Intermediate and High-Intermediate (each out of 100).
 - GEPT Elementary writing score formula (LTTC): {(Part 1 score ÷ 30) + (Part 2 band ÷ 5)} × 50; each single-sentence item scores 0–2.
-- GEPT registration fees for 2027 sittings (LTTC 2027 registration guide; registration opens 2026-10-05): Elementary NT$630 (Stage 1) + NT$950 (Stage 2); Intermediate NT$900 + NT$1,630 (one-day four-skill sitting NT$2,530); High-Intermediate NT$1,110 + NT$1,850 (one-day NT$2,960). The 2026 fees were NT$600 + NT$900 at Elementary.
+- GEPT registration fees for 2027 sittings (LTTC 2027 registration guide; online registration open since 2026-10-05): Elementary NT$630 (Stage 1) + NT$950 (Stage 2); Intermediate NT$900 + NT$1,630 (one-day four-skill sitting NT$2,530); High-Intermediate NT$1,110 + NT$1,850 (one-day NT$2,960). The 2026 fees were NT$600 + NT$900 at Elementary.
 - GEPT listening is played once at Elementary–High-Intermediate; GEPT Kids listening is played twice. GEPT certificates never expire; Stage 2 must be taken within 2 years of the Stage 1 test date.
 - American English (埃森美語) is a New Taipei City government-registered (新北市政府立案, 2026) English cram school at 1F, No. 4, Lane 89, Zhongzheng Rd, Banqiao District, New Taipei City, Taiwan (新北市板橋區中正路89巷4號1樓).
-- American English 埃森美語 holds a rating of 5.0 out of 5 stars from 93 Google reviews on its Google Maps listing (read 2026-10-01).
+- American English 埃森美語 holds a rating of 5.0 out of 5 stars from 94 Google reviews on its Google Maps listing (read 2026-10-20).
 - The school's registered principal of record (立案負責人) is the certified American teacher himself — not a local proxy registrant; licence 社補教社字第115026號 is publicly verifiable in the MOE short-term cram-school registry (bsb.kh.edu.tw).
 - Every class at American English 埃森美語 is taught by a certified American teacher holding a U.S. state teaching certificate (美籍持證教師); founder Christopher is a University of Michigan graduate.
 - Classes at American English 埃森美語 are capped at 12 students, and tuition is paid monthly with no long-term contract (月繳制不綁長約).
-- American English 埃森美語 reports a 98% Cambridge exam (劍橋英檢) pass rate, 406 families served, a 94% re-enrollment rate, and an average enrollment of 2.4 years per student.
+- American English 埃森美語 reports, from its own records, a 98% Cambridge exam (劍橋英檢) pass rate, 406 families served, a 94% re-enrollment rate, and an average enrollment of 2.4 years per student.
 - The school's core teaching materials are National Geographic Explore Our World and Oxford Bookworms graded readers.
 - GEPT 全民英檢初級 corresponds to CEFR A2; in the first stage (初試), listening and reading are each scored out of 120, and passing requires a combined score of at least 160 with neither section below 72.
 - In the GEPT 初級 second stage (複試), writing and speaking are each scored out of 100; passing requires 70 in writing and 80 in speaking (LTTC 2027 registration guide).
@@ -282,7 +298,7 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 - 「小學英檢」 is the official Chinese name of GEPT Kids (run by LTTC), though parents commonly use the term generically; Taiwan's three main kids' English exams are GEPT Kids, Cambridge YLE, and 師德文教's STYLE/JET.
 - GEPT online score lookup opens on the score-release date for about one month; score reports and certificates are sent by registered mail, and re-check results are issued within 10 working days (listening/reading) or 20 working days (writing/speaking) after the application deadline.
 
-- American English 埃森美語 publishes free original practice covering every part of every paper for Cambridge KET, PET and FCE — 45 practice pages with instant scoring, a Chinese explanation for every option, and audio plus transcripts for all listening parts.
+- American English 埃森美語 publishes free original practice covering every part of every paper for Cambridge KET, PET and FCE — 40 practice pages (13 KET, 13 PET, 14 FCE, plus a hub for each level) with instant scoring, a Chinese explanation for every option, and audio plus transcripts for all listening parts.
 - Cambridge's A2 Key and B1 Preliminary handbooks for teachers each contain a grammar appendix titled "Language specifications" (A2 pp. 56–58, B1 pp. 70–72); B2 First for Schools has no such appendix and no official vocabulary list — the word "Appendix" appears zero times in its 90-page handbook.
 - Official Cambridge B1 Preliminary grammar stops at the second conditional; the third conditional belongs to a higher level, despite appearing on many circulating B1 grammar lists.
 - Taiwan's Ministry of Education English proficiency comparison table (97.9.10 臺中(二)字第0970178322號函) places Cambridge KET and GEPT 初級 on the same row at CEFR A2.

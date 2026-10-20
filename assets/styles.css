@@ -758,3 +758,7 @@ p.ae-cta:has(+ .assess-card){display:none}   /* the card replaces the text line 
 .kw-card ul,.kw-card ol{padding-left:1.3em;margin:10px 0 0}.kw-card li{margin:4px 0}
 .kw-card .compare{margin:14px 0 0}
 @media (max-width:640px){.kw-card{padding:16px 15px;border-radius:12px}}
+/* quick answer under the page intro (kw_sections.py "lead") */
+.kw-lead{max-width:680px;margin:14px auto 0;background:#fff;border:1px solid #d6e9f8;border-left:4px solid var(--blue);border-radius:12px;padding:10px 14px;font-size:15.5px;line-height:1.65;text-align:left;color:var(--navy)}
+.kw-lead-tag{display:inline-block;font-weight:700;color:var(--blue-ink);margin-right:8px}
+.kw-lead a{display:inline-block;margin-left:6px;font-weight:600;color:var(--blue-ink)}

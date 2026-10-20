@@ -9,7 +9,8 @@ Most of them rank for a phrase the page never answers in so many words (「12pm�
 「萬聖節快樂英文」, 「英文補習班費用」). The section answers that phrase first, in one or two
 sentences, then adds what the page was missing.
 
-Entry: {"id": "...", "h2": "...", "html": "<p>…</p>…", "at": "faq" | "after:<h2 id>"}
+Entry: {"id": "...", "h2": "...", "html": "<p>…</p>…", "at": "faq" | "after:<h2 id>", "lead": true?}
+  lead = true: the box's first sentence also appears as a 「快速解答」 (quick answer) line under the page intro.
   at = "faq" (default): before the FAQ section (or before the last section if there is none);
   at = "after:<id>": after the section that holds the heading with that id.
 The block is real content: content_signature() counts it, so adding or editing one moves the
@@ -20,6 +21,7 @@ import os, re, json
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(SITE, "data", "kw_sections.json")
 START, END = "<!-- AE:KW start -->", "<!-- AE:KW end -->"
+LSTART, LEND = "<!-- AE:KWLEAD start -->", "<!-- AE:KWLEAD end -->"
 _data = None
 
 def data():
@@ -29,7 +31,32 @@ def data():
     return _data
 
 def strip(html):
+    html = re.sub(r"\n?" + re.escape(LSTART) + r".*?" + re.escape(LEND), "", html, flags=re.S)
     return re.sub(r"\n?" + re.escape(START) + r".*?" + re.escape(END) + r"\n?", "", html, flags=re.S)
+
+def lead_sentence(e):
+    """The box's own first sentence, as plain text: the quick answer shown under the page intro."""
+    if isinstance(e.get("lead"), str):          # an entry may word its own quick answer
+        return e["lead"]
+    m = re.search(r"<p>(.*?)</p>", e["html"], re.S)
+    t = re.sub(r"<[^>]+>", "", m.group(1)) if m else ""
+    cut = t.find("。")
+    return (t[:cut + 1] if cut > 0 else t).strip()
+
+def lead(html, e):
+    """'lead': true → a one-line quick answer right after the page-hero intro paragraph, linking down to
+    the full section. The 10-20 audit found the boxes 23–76% down long pages (the 12pm answer at 6,279 px
+    on a phone): Google reads them, but a parent who lands from the search did not see the answer first."""
+    h = re.search(r'<section class="page-hero.*?</section>', html, re.S)
+    if not h:
+        return html
+    pe = html.find("</p>", h.start(), h.end())
+    if pe < 0:
+        return html
+    pe += 4
+    strip_ = (f'{LSTART}<p class="kw-lead reveal d2"><span class="kw-lead-tag">快速解答</span>{lead_sentence(e)}'
+              f'<a href="#{e["id"]}">看完整說明 ↓</a></p>{LEND}')
+    return html[:pe] + "\n    " + strip_ + html[pe:]
 
 def block(e):
     return (f'{START}<section class="section kw-sec"><div class="wrap">'
@@ -76,7 +103,8 @@ def apply(html, rel):
             where = secs[-1] if len(secs) > 1 else len(main)
     if at.startswith("after:") and where is None:
         raise SystemExit(f"kw_sections: {slug}: no heading id {at[6:]!r}")
-    return html[:off + where] + "\n" + block(e) + "\n" + html[off + where:]
+    html = html[:off + where] + "\n" + block(e) + "\n" + html[off + where:]
+    return lead(html, e) if e.get("lead") else html
 
 if __name__ == "__main__":                       # list what is configured and where it lands
     import glob

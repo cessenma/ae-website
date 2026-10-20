@@ -1,0 +1,6 @@
+{
+ "_doc": "The school's Google Maps review count and rating, as the site states them everywhere (pages, aggregateRating markup, llms.txt, the home description). seo_build.py writes these numbers in on every build; change them HERE only, after reading the live Google listing.",
+ "count": 94,
+ "rating": "5.0",
+ "checked": "2026-10-20"
+}

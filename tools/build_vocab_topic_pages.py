@@ -1358,11 +1358,15 @@ if os.path.isdir(SPEC_DIR):
         PAGES[_sp["slug"]] = dict(
             published=_sp["published"], target=_sp["target"], index=_sp.get("index", 0.5),
             h1=_sp["h1"], title=_sp["title"], desc=_sp["desc"], hero=_sp["hero"],
-            body=(lambda sp=_sp: from_spec(sp)),
+            body=(lambda sp=_sp: from_spec(sp)), own_ld=bool(_sp.get("jsonld")),
             faq_n=sum(len(x.get("faq", [])) for x in _sp["sections"]),
             head_extra=(('<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
                          f'<link rel="stylesheet" href="{_sp["font_href"]}">') if _sp.get("font_href") else "")
-                       + (f'<style>{_sp["css"]}</style>' if _sp.get("css") else ""))
+                       + (f'<style>{_sp["css"]}</style>' if _sp.get("css") else "")
+                       # a page-level node of the spec's own (e.g. the worksheet maker's WebApplication):
+                       # seo_build then leaves it as the page type instead of injecting an Article
+                       + (f'<script type="application/ld+json">{json.dumps(_sp["jsonld"], ensure_ascii=False, separators=(",", ":"))}</script>'
+                          if _sp.get("jsonld") else ""))
 
 def collides(slug, target):
     """Refuse to create a second page for a keyword the site already targets.
@@ -1410,8 +1414,11 @@ def render(slug, cfg):
              "logo": {"@type": "ImageObject",
                       "url": ORIGIN + "/assets/img/american-english-banqiao-logo.jpg"}},
            "datePublished": cfg.get("published", "2026-09-14"), "dateModified": cfg.get("published", "2026-09-14")}
-    head = head.rstrip() + '\n<script type="application/ld+json">' + \
-        json.dumps(art, ensure_ascii=False, separators=(",", ":")) + "</script>\n"
+    if not cfg.get("own_ld"):              # a page with its own page-level node (spec "jsonld") gets no Article too
+        head = head.rstrip() + '\n<script type="application/ld+json">' + \
+            json.dumps(art, ensure_ascii=False, separators=(",", ":")) + "</script>\n"
+    else:
+        head = head.rstrip() + "\n"
     if cfg.get("head_extra"):
         head += cfg["head_extra"] + "\n"
 
