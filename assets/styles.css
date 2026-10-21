@@ -762,3 +762,28 @@ p.ae-cta:has(+ .assess-card){display:none}   /* the card replaces the text line 
 .kw-lead{max-width:680px;margin:14px auto 0;background:#fff;border:1px solid #d6e9f8;border-left:4px solid var(--blue);border-radius:12px;padding:10px 14px;font-size:15.5px;line-height:1.65;text-align:left;color:var(--navy)}
 .kw-lead-tag{display:inline-block;font-weight:700;color:var(--blue-ink);margin-right:8px}
 .kw-lead a{display:inline-block;margin-left:6px;font-weight:600;color:var(--blue-ink)}
+/* word pronunciation pages (tools/build_word_pages.py) */
+.wd-card{max-width:620px;margin:0 auto;background:#fff;border-radius:22px;box-shadow:var(--card-shadow);padding:26px 20px;text-align:center}
+.wd-word{font-family:'DM Sans',sans-serif;font-size:46px;font-weight:800;color:var(--navy);line-height:1.1;word-break:break-word}
+.wd-kk{font-family:'Lucida Sans Unicode','Arial Unicode MS','DejaVu Sans',sans-serif;font-size:26px;color:#0b5cad;margin-top:8px}
+.wd-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.wd-btns button{font-family:inherit;border:none;border-radius:999px;padding:11px 20px;min-height:46px;font-size:16px;font-weight:700;cursor:pointer;background:var(--navy);color:#fff}
+.wd-btns button.slow{background:#fff;color:var(--navy);border:2px solid var(--light-blue)}
+.wd-syl{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.wd-syl span{font-family:'Lucida Sans Unicode','Arial Unicode MS','DejaVu Sans',sans-serif;font-size:19px;padding:6px 12px;border-radius:10px;background:#F4FAFF;color:var(--navy);border:1px solid #dbeaf7}
+.wd-syl span.st{background:var(--yellow);border-color:var(--yellow-dk);font-weight:700}
+.wd-meta{margin-top:12px;color:var(--text-body);font-size:15px;line-height:1.6}
+.wd-note{margin-top:10px;font-size:14px;color:var(--muted)}
+.say{font-family:inherit;border:1px solid rgba(26,39,82,.15);background:#F4FAFF;color:var(--navy);border-radius:999px;padding:4px 10px;min-height:32px;min-width:40px;font-size:14px;cursor:pointer;vertical-align:middle}
+.wd-ex li{margin:0 0 14px}.wd-ex .zh{color:var(--text-body)}
+ul.wd-chips{display:flex;flex-wrap:wrap;gap:8px;padding:0!important;list-style:none}
+ul.wd-chips li{display:inline-block!important;padding:0!important;margin:0!important}
+ul.wd-chips li::before{display:none!important}
+ul.wd-chips li a,ul.wd-chips li{font-family:'DM Sans',sans-serif}
+ul.wd-chips li a{display:inline-block;padding:6px 14px;border-radius:999px;background:#F4FAFF;border:1px solid #dbeaf7;color:var(--navy);text-decoration:none}
+.wd-pairs li{margin:0 0 10px}
+.wd-more{max-width:760px;margin:20px auto 0;font-size:15px;color:var(--text-body)}
+.wd-nav{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;max-width:760px;margin:22px auto 0;font-weight:700}
+.wd-nav a{color:var(--blue-ink)}
+@media (max-width:640px){.wd-word{font-size:38px}.wd-kk{font-size:22px}}
+td.w a.wp{display:inline-block;margin-left:6px;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:700;background:#F4FAFF;border:1px solid #dbeaf7;color:var(--blue-ink);text-decoration:none;vertical-align:middle}

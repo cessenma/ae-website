@@ -169,10 +169,13 @@ q.addEventListener('input',filt);th.addEventListener('change',filt);only.addEven
 az.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;letter=(b.dataset.l===letter)?'':b.dataset.l;[].forEach.call(az.querySelectorAll('button'),function(x){x.classList.toggle('on',x.dataset.l===letter&&letter!=='')});filt()});
 var synth=window.speechSynthesis,voice=null;function pick(){if(!synth)return;var vs=synth.getVoices();voice=vs.filter(function(v){return /^en[-_]US/i.test(v.lang)})[0]||vs.filter(function(v){return /^en/i.test(v.lang)})[0]||null}
 if(synth){pick();synth.onvoiceschanged=pick}
-tb.addEventListener('click',function(e){var td=e.target.closest('td.w');if(!td||!synth)return;var t=td.textContent.replace(/\s*\(.*?\)\s*/g,' ').replace(/[\/–—].*$/,'').trim();synth.cancel();var u=new SpeechSynthesisUtterance(t);u.lang='en-US';if(voice)u.voice=voice;u.rate=0.9;synth.speak(u)});
+tb.addEventListener('click',function(e){if(e.target.closest('a'))return;var td=e.target.closest('td.w');if(!td||!synth)return;var t=(td.getAttribute('data-w')||td.textContent).replace(/\s*\(.*?\)\s*/g,' ').replace(/[\/–—].*$/,'').trim();synth.cancel();var u=new SpeechSynthesisUtterance(t);u.lang='en-US';if(voice)u.voice=voice;u.rate=0.9;synth.speak(u)});
 paint();filt();
 })();</script>"""
 
+
+_PD = os.path.join(SITE, "pronunciation")
+PRON_PAGES = {d for d in os.listdir(_PD) if os.path.isdir(os.path.join(_PD, d))} if os.path.isdir(_PD) else set()
 
 def block(rows, themes):
     e = html.escape
@@ -180,8 +183,13 @@ def block(rows, themes):
     trs = []
     for r in rows:
         w = e(r["en"]); t = e(r["theme"])
+        head = re.split(r"\s*\(", r["en"])[0].strip().lower()
+        # the pilot's per-word pronunciation pages (tools/build_word_pages.py): a small link, so a tap on
+        # the word itself still plays it
+        wp = (f' <a class="wp" href="/pronunciation/{head}/" title="{e(head)} 發音與 KK 音標">發音</a>'
+              if head in PRON_PAGES else "")
         trs.append(f'<tr data-l="{e(r["letter"])}" data-t="{t}"><td class="c"><input type="checkbox"></td>'
-                   f'<td class="w">{w}</td><td class="z">{e(r["zh"])}</td><td class="t">{t}</td></tr>')
+                   f'<td class="w" data-w="{w}">{w}{wp}</td><td class="z">{e(r["zh"])}</td><td class="t">{t}</td></tr>')
     n = len(rows)
     opts = "".join(f'<option value="{e(t)}">{e(t)}</option>' for t in themes)
     az = "".join(f'<button type="button" data-l="{l}">{l}</button>' for l in letters)

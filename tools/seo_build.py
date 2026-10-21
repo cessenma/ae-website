@@ -2104,7 +2104,7 @@ def rebuild_sitemap():
 
 LLMS_START = "<!-- AE:LLMS-MORE start: written by tools/seo_build.py (pages the curated lists above do not name yet) -->"
 LLMS_END = "<!-- AE:LLMS-MORE end -->"
-LLMS_SKIP = re.compile(r"-practice-part\d+/$")       # practice PARTS are reached through their hubs; the hubs themselves are listed
+LLMS_SKIP = re.compile(r"-practice-part\d+/$|/pronunciation/[^/]+/$")   # practice PARTS and word pages are reached through their hubs
 # ---- Google review count: ONE number for the whole site (data/google_reviews.json) ----
 # It was written by hand in 15 places across 6 files and fell behind the listing (93 vs 94 on 10-20).
 # Only these exact phrasings are rewritten — each names Google or is the rating markup — so no other

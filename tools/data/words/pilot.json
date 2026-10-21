@@ -1,0 +1,10984 @@
+[
+ {
+  "word": "action",
+  "slug": "action",
+  "zh": "行動",
+  "letter": "A",
+  "kk": "ˈækʃən",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "æk",
+    "1"
+   ],
+   [
+    "ʃən",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ",
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "actor",
+  "slug": "actor",
+  "zh": "男演員",
+  "letter": "A",
+  "kk": "ˈæktɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "æk",
+    "1"
+   ],
+   [
+    "tɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "after",
+    "this": "K",
+    "that": "F"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "actually",
+  "slug": "actually",
+  "zh": "事實上",
+  "letter": "A",
+  "kk": "ˈæktʃʊəlɪ",
+  "kk_variants": [
+   "ˈæktʃlɪ",
+   "ˈækʃəlɪ"
+  ],
+  "sylls": [
+   [
+    "æk",
+    "1"
+   ],
+   [
+    "tʃʊ",
+    "0"
+   ],
+   [
+    "ə",
+    "0"
+   ],
+   [
+    "lɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 4,
+  "stress": 1,
+  "features": [
+   "æ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "after",
+  "slug": "after",
+  "zh": "在…之後",
+  "letter": "A",
+  "kk": "ˈæftɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "æf",
+    "1"
+   ],
+   [
+    "tɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "actor",
+    "this": "F",
+    "that": "K"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "afternoon",
+  "slug": "afternoon",
+  "zh": "下午",
+  "letter": "A",
+  "kk": "ˌæftɚˈnun",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "æf",
+    "2"
+   ],
+   [
+    "tɚ",
+    "0"
+   ],
+   [
+    "nun",
+    "1"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 3,
+  "features": [
+   "æ",
+   "ɚ",
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [
+   "june",
+   "moon",
+   "noon",
+   "soon",
+   "spoon",
+   "typhoon"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "already",
+  "slug": "already",
+  "zh": "已經",
+  "letter": "A",
+  "kk": "ɔlˈrɛdɪ",
+  "kk_variants": [
+   "ɔˈrɛdɪ"
+  ],
+  "sylls": [
+   [
+    "ɔl",
+    "0"
+   ],
+   [
+    "rɛ",
+    "1"
+   ],
+   [
+    "dɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [
+   "ready"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "America",
+  "slug": "america",
+  "zh": "美國",
+  "letter": "A",
+  "kk": "əˈmɛrəkə",
+  "kk_variants": [
+   "əˈmɛrɪkə"
+  ],
+  "sylls": [
+   [
+    "ə",
+    "0"
+   ],
+   [
+    "mɛ",
+    "1"
+   ],
+   [
+    "rə",
+    "0"
+   ],
+   [
+    "kə",
+    "0"
+   ]
+  ],
+  "n_syll": 4,
+  "stress": 2,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "American",
+  "slug": "american",
+  "zh": "美國人；美國的",
+  "letter": "A",
+  "kk": "əˈmɛrəkən",
+  "kk_variants": [
+   "əˈmɛrɪkən"
+  ],
+  "sylls": [
+   [
+    "ə",
+    "0"
+   ],
+   [
+    "mɛ",
+    "1"
+   ],
+   [
+    "rə",
+    "0"
+   ],
+   [
+    "kən",
+    "0"
+   ]
+  ],
+  "n_syll": 4,
+  "stress": 2,
+  "features": [
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "angle",
+  "slug": "angle",
+  "zh": "角度",
+  "letter": "A",
+  "kk": "ˈæŋgḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "æŋ",
+    "1"
+   ],
+   [
+    "gḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ",
+   "dark-l",
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "angry",
+  "slug": "angry",
+  "zh": "生氣的",
+  "letter": "A",
+  "kk": "ˈæŋgrɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "æŋ",
+    "1"
+   ],
+   [
+    "grɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ",
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "形容詞 Common Adjectives",
+  "demand": 0
+ },
+ {
+  "word": "animal",
+  "slug": "animal",
+  "zh": "動物",
+  "letter": "A",
+  "kk": "ˈænəmḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "æ",
+    "1"
+   ],
+   [
+    "nə",
+    "0"
+   ],
+   [
+    "mḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "æ",
+   "dark-l",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "動物 Animals & Insects",
+  "demand": 0
+ },
+ {
+  "word": "another",
+  "slug": "another",
+  "zh": "另一個的",
+  "letter": "A",
+  "kk": "əˈnʌðɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ə",
+    "0"
+   ],
+   [
+    "nʌ",
+    "1"
+   ],
+   [
+    "ðɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "ð",
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [
+   "brother",
+   "mother",
+   "other"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "answer",
+  "slug": "answer",
+  "zh": "回答",
+  "letter": "A",
+  "kk": "ˈænsɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "æn",
+    "1"
+   ],
+   [
+    "sɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ",
+   "ɚ",
+   "silent-w"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "anyone",
+  "slug": "anyone",
+  "zh": "任何人",
+  "letter": "A",
+  "kk": "ˈɛnɪˌwʌn",
+  "kk_variants": [
+   "ˈɛnɪwən"
+  ],
+  "sylls": [
+   [
+    "ɛ",
+    "1"
+   ],
+   [
+    "nɪ",
+    "0"
+   ],
+   [
+    "wʌn",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "anything",
+  "slug": "anything",
+  "zh": "任何事物",
+  "letter": "A",
+  "kk": "ˈɛnɪˌθɪŋ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɛ",
+    "1"
+   ],
+   [
+    "nɪ",
+    "0"
+   ],
+   [
+    "θɪŋ",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "θ",
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "apartment",
+  "slug": "apartment",
+  "zh": "公寓",
+  "letter": "A",
+  "kk": "əˈpɑrtmənt",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ə",
+    "0"
+   ],
+   [
+    "pɑrt",
+    "1"
+   ],
+   [
+    "mənt",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "final-cluster",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "apple",
+  "slug": "apple",
+  "zh": "蘋果",
+  "letter": "A",
+  "kk": "ˈæpḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "æ",
+    "1"
+   ],
+   [
+    "pḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ",
+   "dark-l"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "食物 Food & Drinks",
+  "demand": 0
+ },
+ {
+  "word": "area",
+  "slug": "area",
+  "zh": "地區、面積",
+  "letter": "A",
+  "kk": "ˈɛrɪə",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɛ",
+    "1"
+   ],
+   [
+    "rɪ",
+    "0"
+   ],
+   [
+    "ə",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "around",
+  "slug": "around",
+  "zh": "在…四周",
+  "letter": "A",
+  "kk": "əˈraʊnd",
+  "kk_variants": [
+   "ɚˈaʊn"
+  ],
+  "sylls": [
+   [
+    "ə",
+    "0"
+   ],
+   [
+    "raʊnd",
+    "1"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 2,
+  "features": [
+   "final-cluster"
+  ],
+  "rhymes": [
+   "ground",
+   "pound",
+   "round",
+   "sound"
+  ],
+  "pairs": [
+   {
+    "word": "ground",
+    "this": "AH",
+    "that": "G"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "arrive",
+  "slug": "arrive",
+  "zh": "到達",
+  "letter": "A",
+  "kk": "əˈraɪv",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ə",
+    "0"
+   ],
+   [
+    "raɪv",
+    "1"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 2,
+  "features": [
+   "v"
+  ],
+  "rhymes": [
+   "drive",
+   "five"
+  ],
+  "pairs": [
+   {
+    "word": "drive",
+    "this": "AH",
+    "that": "D"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "as",
+  "slug": "as",
+  "zh": "與…一樣",
+  "letter": "A",
+  "kk": "æz",
+  "kk_variants": [
+   "ɛz"
+  ],
+  "sylls": [
+   [
+    "æz",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "æ",
+   "final-z"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "at",
+    "this": "Z",
+    "that": "T"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "aunt",
+  "slug": "aunt",
+  "zh": "伯(叔)母",
+  "letter": "A",
+  "kk": "ænt",
+  "kk_variants": [
+   "ɔnt"
+  ],
+  "sylls": [
+   [
+    "ænt",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "æ",
+   "final-cluster"
+  ],
+  "rhymes": [
+   "ant",
+   "plant"
+  ],
+  "pairs": [
+   {
+    "word": "act",
+    "this": "N",
+    "that": "K"
+   }
+  ],
+  "theme": "家庭 Family",
+  "demand": 0
+ },
+ {
+  "word": "autumn",
+  "slug": "autumn",
+  "zh": "秋天",
+  "letter": "A",
+  "kk": "ˈɔtəm",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɔ",
+    "1"
+   ],
+   [
+    "təm",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "item",
+    "this": "AO",
+    "that": "AY"
+   }
+  ],
+  "theme": null,
+  "demand": 46
+ },
+ {
+  "word": "badminton",
+  "slug": "badminton",
+  "zh": "羽毛球",
+  "letter": "B",
+  "kk": "ˈbædmɪntṇ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "bæd",
+    "1"
+   ],
+   [
+    "mɪn",
+    "0"
+   ],
+   [
+    "tṇ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "æ",
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "bakery",
+  "slug": "bakery",
+  "zh": "麵包店",
+  "letter": "B",
+  "kk": "ˈbekərɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "be",
+    "1"
+   ],
+   [
+    "kə",
+    "0"
+   ],
+   [
+    "rɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "balcony",
+  "slug": "balcony",
+  "zh": "陽台",
+  "letter": "B",
+  "kk": "ˈbælkənɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "bæl",
+    "1"
+   ],
+   [
+    "kə",
+    "0"
+   ],
+   [
+    "nɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "æ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "banana",
+  "slug": "banana",
+  "zh": "香蕉",
+  "letter": "B",
+  "kk": "bəˈnænə",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "bə",
+    "0"
+   ],
+   [
+    "næ",
+    "1"
+   ],
+   [
+    "nə",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "æ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "食物 Food & Drinks",
+  "demand": 4
+ },
+ {
+  "word": "basketball",
+  "slug": "basketball",
+  "zh": "籃球",
+  "letter": "B",
+  "kk": "ˈbæskətˌbɔl",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "bæs",
+    "1"
+   ],
+   [
+    "kət",
+    "0"
+   ],
+   [
+    "bɔl",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "æ",
+   "dark-l",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "bath",
+  "slug": "bath",
+  "zh": "洗澡",
+  "letter": "B",
+  "kk": "bæθ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "bæθ",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "θ",
+   "æ"
+  ],
+  "rhymes": [
+   "math"
+  ],
+  "pairs": [
+   {
+    "word": "both",
+    "this": "AE",
+    "that": "OW"
+   },
+   {
+    "word": "math",
+    "this": "B",
+    "that": "M"
+   },
+   {
+    "word": "back",
+    "this": "TH",
+    "that": "K"
+   },
+   {
+    "word": "bad",
+    "this": "TH",
+    "that": "D"
+   },
+   {
+    "word": "bag",
+    "this": "TH",
+    "that": "G"
+   },
+   {
+    "word": "bat",
+    "this": "TH",
+    "that": "T"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "bathroom",
+  "slug": "bathroom",
+  "zh": "浴室",
+  "letter": "B",
+  "kk": "ˈbæˌθrum",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "bæθ",
+    "1"
+   ],
+   [
+    "rum",
+    "2"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "θ",
+   "æ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "beautiful",
+  "slug": "beautiful",
+  "zh": "美麗的",
+  "letter": "B",
+  "kk": "ˈbjutəfḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "bju",
+    "1"
+   ],
+   [
+    "tə",
+    "0"
+   ],
+   [
+    "fḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "dark-l",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "形容詞 Common Adjectives",
+  "demand": 0
+ },
+ {
+  "word": "bed",
+  "slug": "bed",
+  "zh": "床",
+  "letter": "B",
+  "kk": "bɛd",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "bɛd",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [
+   "ahead",
+   "bread",
+   "dead",
+   "head",
+   "red"
+  ],
+  "pairs": [
+   {
+    "word": "bird",
+    "this": "EH",
+    "that": "ER"
+   },
+   {
+    "word": "bad",
+    "this": "EH",
+    "that": "AE"
+   },
+   {
+    "word": "bear",
+    "this": "D",
+    "that": "R"
+   },
+   {
+    "word": "bell",
+    "this": "D",
+    "that": "L"
+   },
+   {
+    "word": "dead",
+    "this": "B",
+    "that": "D"
+   },
+   {
+    "word": "head",
+    "this": "B",
+    "that": "HH"
+   }
+  ],
+  "theme": null,
+  "demand": 6
+ },
+ {
+  "word": "bicycle",
+  "slug": "bicycle",
+  "zh": "腳踏車",
+  "letter": "B",
+  "kk": "ˈbaɪsɪkḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "baɪ",
+    "1"
+   ],
+   [
+    "sɪ",
+    "0"
+   ],
+   [
+    "kḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "dark-l",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "bird",
+  "slug": "bird",
+  "zh": "鳥",
+  "letter": "B",
+  "kk": "bɝd",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "bɝd",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ɚ"
+  ],
+  "rhymes": [
+   "third",
+   "word"
+  ],
+  "pairs": [
+   {
+    "word": "bed",
+    "this": "ER",
+    "that": "EH"
+   },
+   {
+    "word": "bad",
+    "this": "ER",
+    "that": "AE"
+   },
+   {
+    "word": "third",
+    "this": "B",
+    "that": "TH"
+   },
+   {
+    "word": "word",
+    "this": "B",
+    "that": "W"
+   },
+   {
+    "word": "burn",
+    "this": "D",
+    "that": "N"
+   }
+  ],
+  "theme": "動物 Animals & Insects",
+  "demand": 1
+ },
+ {
+  "word": "birthday",
+  "slug": "birthday",
+  "zh": "生日",
+  "letter": "B",
+  "kk": "ˈbɝθˌde",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "bɝθ",
+    "1"
+   ],
+   [
+    "de",
+    "2"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "θ",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "blackboard",
+  "slug": "blackboard",
+  "zh": "黑板",
+  "letter": "B",
+  "kk": "ˈblækˌbɔrd",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "blæk",
+    "1"
+   ],
+   [
+    "bɔrd",
+    "2"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ",
+   "final-cluster"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "blanket",
+  "slug": "blanket",
+  "zh": "毯子",
+  "letter": "B",
+  "kk": "ˈblæŋkət",
+  "kk_variants": [
+   "ˈblæŋkɪt"
+  ],
+  "sylls": [
+   [
+    "blæŋ",
+    "1"
+   ],
+   [
+    "kət",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ",
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "brother",
+  "slug": "brother",
+  "zh": "兄弟",
+  "letter": "B",
+  "kk": "ˈbrʌðɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "brʌ",
+    "1"
+   ],
+   [
+    "ðɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ð",
+   "ɚ"
+  ],
+  "rhymes": [
+   "another",
+   "mother",
+   "other"
+  ],
+  "pairs": [],
+  "theme": "家庭 Family",
+  "demand": 0
+ },
+ {
+  "word": "businessman",
+  "slug": "businessman",
+  "zh": "商人",
+  "letter": "B",
+  "kk": "ˈbɪznəˌsmæn",
+  "kk_variants": [
+   "ˈbɪznɪˌsmæn"
+  ],
+  "sylls": [
+   [
+    "bɪz",
+    "1"
+   ],
+   [
+    "nə",
+    "0"
+   ],
+   [
+    "smæn",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "æ",
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "butterfly",
+  "slug": "butterfly",
+  "zh": "蝴蝶",
+  "letter": "B",
+  "kk": "ˈbʌtɚˌflaɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "bʌ",
+    "1"
+   ],
+   [
+    "tɚ",
+    "0"
+   ],
+   [
+    "flaɪ",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "cake",
+  "slug": "cake",
+  "zh": "蛋糕",
+  "letter": "C",
+  "kk": "kek",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "kek",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [
+   "bake",
+   "break",
+   "lake",
+   "make",
+   "mistake",
+   "shake",
+   "snake",
+   "steak",
+   "take",
+   "wake"
+  ],
+  "pairs": [
+   {
+    "word": "cook",
+    "this": "EY",
+    "that": "UH"
+   },
+   {
+    "word": "kick",
+    "this": "EY",
+    "that": "IH"
+   },
+   {
+    "word": "bake",
+    "this": "K",
+    "that": "B"
+   },
+   {
+    "word": "case",
+    "this": "K",
+    "that": "S"
+   },
+   {
+    "word": "lake",
+    "this": "K",
+    "that": "L"
+   },
+   {
+    "word": "make",
+    "this": "K",
+    "that": "M"
+   }
+  ],
+  "theme": "食物 Food & Drinks",
+  "demand": 27
+ },
+ {
+  "word": "camera",
+  "slug": "camera",
+  "zh": "照相機",
+  "letter": "C",
+  "kk": "ˈkæmərə",
+  "kk_variants": [
+   "ˈkæmrə"
+  ],
+  "sylls": [
+   [
+    "kæ",
+    "1"
+   ],
+   [
+    "mə",
+    "0"
+   ],
+   [
+    "rə",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "æ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "candle",
+  "slug": "candle",
+  "zh": "蠟燭",
+  "letter": "C",
+  "kk": "ˈkændḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "kæn",
+    "1"
+   ],
+   [
+    "dḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ",
+   "dark-l"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "castle",
+  "slug": "castle",
+  "zh": "城堡",
+  "letter": "C",
+  "kk": "ˈkæsḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "kæ",
+    "1"
+   ],
+   [
+    "sḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ",
+   "dark-l",
+   "silent-t"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "cat",
+  "slug": "cat",
+  "zh": "貓",
+  "letter": "C",
+  "kk": "kæt",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "kæt",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "æ"
+  ],
+  "rhymes": [
+   "at",
+   "bat",
+   "fat",
+   "hat",
+   "rat",
+   "that"
+  ],
+  "pairs": [
+   {
+    "word": "coat",
+    "this": "AE",
+    "that": "OW"
+   },
+   {
+    "word": "cut",
+    "this": "AE",
+    "that": "AH"
+   },
+   {
+    "word": "kite",
+    "this": "AE",
+    "that": "AY"
+   },
+   {
+    "word": "hat",
+    "this": "K",
+    "that": "HH"
+   },
+   {
+    "word": "that",
+    "this": "K",
+    "that": "DH"
+   },
+   {
+    "word": "bat",
+    "this": "K",
+    "that": "B"
+   }
+  ],
+  "theme": "動物 Animals & Insects",
+  "demand": 46
+ },
+ {
+  "word": "celebrate",
+  "slug": "celebrate",
+  "zh": "慶祝",
+  "letter": "C",
+  "kk": "ˈsɛləˌbret",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "sɛ",
+    "1"
+   ],
+   [
+    "lə",
+    "0"
+   ],
+   [
+    "bret",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "centimeter",
+  "slug": "centimeter",
+  "zh": "公分",
+  "letter": "C",
+  "kk": "ˈsɛntəˌmitɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "sɛn",
+    "1"
+   ],
+   [
+    "tə",
+    "0"
+   ],
+   [
+    "mi",
+    "2"
+   ],
+   [
+    "tɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 4,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 3
+ },
+ {
+  "word": "chair",
+  "slug": "chair",
+  "zh": "椅子",
+  "letter": "C",
+  "kk": "tʃɛr",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "tʃɛr",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [
+   "air",
+   "bear",
+   "care",
+   "hair",
+   "pair",
+   "pear",
+   "prepare",
+   "share",
+   "square",
+   "there",
+   "wear",
+   "where"
+  ],
+  "pairs": [
+   {
+    "word": "cheer",
+    "this": "EH",
+    "that": "IH"
+   },
+   {
+    "word": "hair",
+    "this": "CH",
+    "that": "HH"
+   },
+   {
+    "word": "where",
+    "this": "CH",
+    "that": "W"
+   },
+   {
+    "word": "bear",
+    "this": "CH",
+    "that": "B"
+   },
+   {
+    "word": "care",
+    "this": "CH",
+    "that": "K"
+   },
+   {
+    "word": "check",
+    "this": "R",
+    "that": "K"
+   }
+  ],
+  "theme": "學校 School",
+  "demand": 18
+ },
+ {
+  "word": "chocolate",
+  "slug": "chocolate",
+  "zh": "巧克力",
+  "letter": "C",
+  "kk": "ˈtʃɔklət",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "tʃɔ",
+    "1"
+   ],
+   [
+    "klət",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "Christmas",
+  "slug": "christmas",
+  "zh": "聖誕節",
+  "letter": "C",
+  "kk": "ˈkrɪsməs",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "krɪs",
+    "1"
+   ],
+   [
+    "məs",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "silent-h"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 3
+ },
+ {
+  "word": "circle",
+  "slug": "circle",
+  "zh": "圓圈",
+  "letter": "C",
+  "kk": "ˈsɝkḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "sɝ",
+    "1"
+   ],
+   [
+    "kḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "dark-l",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "clothes",
+  "slug": "clothes",
+  "zh": "衣服",
+  "letter": "C",
+  "kk": "kloðz",
+  "kk_variants": [
+   "kloz"
+  ],
+  "sylls": [
+   [
+    "kloðz",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ð",
+   "final-z",
+   "final-cluster"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "comfortable",
+  "slug": "comfortable",
+  "zh": "舒適的",
+  "letter": "C",
+  "kk": "ˈkʌmfɚtəbḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "kʌm",
+    "1"
+   ],
+   [
+    "fɚ",
+    "0"
+   ],
+   [
+    "tə",
+    "0"
+   ],
+   [
+    "bḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 4,
+  "stress": 1,
+  "features": [
+   "dark-l",
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "computer",
+  "slug": "computer",
+  "zh": "電腦",
+  "letter": "C",
+  "kk": "kəmˈpjutɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "kəm",
+    "0"
+   ],
+   [
+    "pju",
+    "1"
+   ],
+   [
+    "tɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [
+   "scooter"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "convenient",
+  "slug": "convenient",
+  "zh": "方便的",
+  "letter": "C",
+  "kk": "kənˈvinjənt",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "kən",
+    "0"
+   ],
+   [
+    "vin",
+    "1"
+   ],
+   [
+    "jənt",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "v",
+   "final-cluster",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "correct",
+  "slug": "correct",
+  "zh": "正確的",
+  "letter": "C",
+  "kk": "kəˈrɛkt",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "kə",
+    "0"
+   ],
+   [
+    "rɛkt",
+    "1"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 2,
+  "features": [
+   "final-cluster"
+  ],
+  "rhymes": [
+   "collect",
+   "expect"
+  ],
+  "pairs": [
+   {
+    "word": "collect",
+    "this": "R",
+    "that": "L"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "cover",
+  "slug": "cover",
+  "zh": "覆蓋、封面、掩護",
+  "letter": "C",
+  "kk": "ˈkʌvɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "kʌ",
+    "1"
+   ],
+   [
+    "vɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "v",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "color",
+    "this": "V",
+    "that": "L"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "dangerous",
+  "slug": "dangerous",
+  "zh": "危險的",
+  "letter": "D",
+  "kk": "ˈdendʒərəs",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "den",
+    "1"
+   ],
+   [
+    "dʒə",
+    "0"
+   ],
+   [
+    "rəs",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "daughter",
+  "slug": "daughter",
+  "zh": "女兒",
+  "letter": "D",
+  "kk": "ˈdɔtɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "dɔ",
+    "1"
+   ],
+   [
+    "tɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "silent-gh"
+  ],
+  "rhymes": [
+   "water"
+  ],
+  "pairs": [
+   {
+    "word": "water",
+    "this": "D",
+    "that": "W"
+   }
+  ],
+  "theme": "家庭 Family",
+  "demand": 0
+ },
+ {
+  "word": "day",
+  "slug": "day",
+  "zh": "日子",
+  "letter": "D",
+  "kk": "de",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "de",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [
+   "away",
+   "gray",
+   "hey",
+   "may",
+   "ok",
+   "pay",
+   "play",
+   "pray",
+   "say",
+   "stay",
+   "they",
+   "today"
+  ],
+  "pairs": [
+   {
+    "word": "die",
+    "this": "EY",
+    "that": "AY"
+   },
+   {
+    "word": "do",
+    "this": "EY",
+    "that": "UW"
+   },
+   {
+    "word": "hey",
+    "this": "D",
+    "that": "HH"
+   },
+   {
+    "word": "may",
+    "this": "D",
+    "that": "M"
+   },
+   {
+    "word": "pay",
+    "this": "D",
+    "that": "P"
+   },
+   {
+    "word": "say",
+    "this": "D",
+    "that": "S"
+   }
+  ],
+  "theme": "時間／星期／月份 Time",
+  "demand": 16
+ },
+ {
+  "word": "December",
+  "slug": "december",
+  "zh": "十二月",
+  "letter": "D",
+  "kk": "dɪˈsɛmbɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "dɪ",
+    "0"
+   ],
+   [
+    "sɛm",
+    "1"
+   ],
+   [
+    "bɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [
+   "member",
+   "november",
+   "remember",
+   "september"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "delicious",
+  "slug": "delicious",
+  "zh": "美味的",
+  "letter": "D",
+  "kk": "dɪˈlɪʃəs",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "dɪ",
+    "0"
+   ],
+   [
+    "lɪ",
+    "1"
+   ],
+   [
+    "ʃəs",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "dictionary",
+  "slug": "dictionary",
+  "zh": "字典",
+  "letter": "D",
+  "kk": "ˈdɪkʃəˌnɛrɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "dɪk",
+    "1"
+   ],
+   [
+    "ʃə",
+    "0"
+   ],
+   [
+    "nɛ",
+    "2"
+   ],
+   [
+    "rɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 4,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 56
+ },
+ {
+  "word": "different",
+  "slug": "different",
+  "zh": "不同的",
+  "letter": "D",
+  "kk": "ˈdɪfərənt",
+  "kk_variants": [
+   "ˈdɪfrənt"
+  ],
+  "sylls": [
+   [
+    "dɪ",
+    "1"
+   ],
+   [
+    "fə",
+    "0"
+   ],
+   [
+    "rənt",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "final-cluster",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 15
+ },
+ {
+  "word": "difficult",
+  "slug": "difficult",
+  "zh": "困難的",
+  "letter": "D",
+  "kk": "ˈdɪfəkḷt",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "dɪ",
+    "1"
+   ],
+   [
+    "fə",
+    "0"
+   ],
+   [
+    "kḷt",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "final-cluster",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "doctor",
+  "slug": "doctor",
+  "zh": "醫生",
+  "letter": "D",
+  "kk": "ˈdɑktɚ",
+  "kk_variants": [
+   "ˈdɔktɚ"
+  ],
+  "sylls": [
+   [
+    "dɑk",
+    "1"
+   ],
+   [
+    "tɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "driver",
+  "slug": "driver",
+  "zh": "駕駛人",
+  "letter": "D",
+  "kk": "ˈdraɪvɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "draɪ",
+    "1"
+   ],
+   [
+    "vɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "v",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "ear",
+  "slug": "ear",
+  "zh": "耳朵",
+  "letter": "E",
+  "kk": "ɪr",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɪr",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [
+   "hear",
+   "here"
+  ],
+  "pairs": [
+   {
+    "word": "or",
+    "this": "IY",
+    "that": "AO"
+   },
+   {
+    "word": "air",
+    "this": "IY",
+    "that": "EH"
+   },
+   {
+    "word": "each",
+    "this": "R",
+    "that": "CH"
+   },
+   {
+    "word": "eat",
+    "this": "R",
+    "that": "T"
+   },
+   {
+    "word": "eve",
+    "this": "R",
+    "that": "V"
+   }
+  ],
+  "theme": "身體 Body",
+  "demand": 0
+ },
+ {
+  "word": "earth",
+  "slug": "earth",
+  "zh": "地球",
+  "letter": "E",
+  "kk": "ɝθ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɝθ",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "θ",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "earthquake",
+  "slug": "earthquake",
+  "zh": "地震",
+  "letter": "E",
+  "kk": "ˈɝθˌkwek",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɝθ",
+    "1"
+   ],
+   [
+    "kwek",
+    "2"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "θ",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "eight",
+  "slug": "eight",
+  "zh": "八",
+  "letter": "E",
+  "kk": "et",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "et",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "silent-gh"
+  ],
+  "rhymes": [
+   "date",
+   "gate",
+   "great",
+   "hate",
+   "late",
+   "plate",
+   "straight",
+   "wait"
+  ],
+  "pairs": [
+   {
+    "word": "at",
+    "this": "EY",
+    "that": "AE"
+   },
+   {
+    "word": "eat",
+    "this": "EY",
+    "that": "IY"
+   },
+   {
+    "word": "it",
+    "this": "EY",
+    "that": "IH"
+   },
+   {
+    "word": "out",
+    "this": "EY",
+    "that": "AW"
+   },
+   {
+    "word": "age",
+    "this": "T",
+    "that": "JH"
+   }
+  ],
+  "theme": "數字 Numbers",
+  "demand": 7
+ },
+ {
+  "word": "eighteen",
+  "slug": "eighteen",
+  "zh": "十八",
+  "letter": "E",
+  "kk": "eˈtin",
+  "kk_variants": [
+   "ˈeˈtin"
+  ],
+  "sylls": [
+   [
+    "e",
+    "0"
+   ],
+   [
+    "tin",
+    "1"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 2,
+  "features": [
+   "nasal-end",
+   "silent-gh"
+  ],
+  "rhymes": [
+   "bean",
+   "between",
+   "clean",
+   "fifteen",
+   "fourteen",
+   "green",
+   "halloween",
+   "machine",
+   "mean",
+   "nineteen",
+   "queen",
+   "screen"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "either",
+  "slug": "either",
+  "zh": "也不",
+  "letter": "E",
+  "kk": "ˈiðɚ",
+  "kk_variants": [
+   "ˈaɪðɚ"
+  ],
+  "sylls": [
+   [
+    "i",
+    "1"
+   ],
+   [
+    "ðɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ð",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "other",
+    "this": "IY",
+    "that": "AH"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "elephant",
+  "slug": "elephant",
+  "zh": "大象",
+  "letter": "E",
+  "kk": "ˈɛləfənt",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɛ",
+    "1"
+   ],
+   [
+    "lə",
+    "0"
+   ],
+   [
+    "fənt",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "final-cluster",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "動物 Animals & Insects",
+  "demand": 0
+ },
+ {
+  "word": "eleven",
+  "slug": "eleven",
+  "zh": "十一",
+  "letter": "E",
+  "kk": "ɪˈlɛvən",
+  "kk_variants": [
+   "ˈilɛvən"
+  ],
+  "sylls": [
+   [
+    "ɪ",
+    "0"
+   ],
+   [
+    "lɛ",
+    "1"
+   ],
+   [
+    "vən",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "v",
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [
+   "seven"
+  ],
+  "pairs": [],
+  "theme": "數字 Numbers",
+  "demand": 0
+ },
+ {
+  "word": "engineer",
+  "slug": "engineer",
+  "zh": "工程師",
+  "letter": "E",
+  "kk": "ˌɛndʒəˈnɪr",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɛn",
+    "2"
+   ],
+   [
+    "dʒə",
+    "0"
+   ],
+   [
+    "nɪr",
+    "1"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 3,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [
+   "appear",
+   "cheer",
+   "clear",
+   "dear",
+   "near",
+   "year"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "English",
+  "slug": "english",
+  "zh": "英語",
+  "letter": "E",
+  "kk": "ˈɪŋglɪʃ",
+  "kk_variants": [
+   "ˈɪŋlɪʃ"
+  ],
+  "sylls": [
+   [
+    "ɪŋ",
+    "1"
+   ],
+   [
+    "glɪʃ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 40
+ },
+ {
+  "word": "envelope",
+  "slug": "envelope",
+  "zh": "信",
+  "letter": "E",
+  "kk": "ˈɛnvəˌlop",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɛn",
+    "1"
+   ],
+   [
+    "və",
+    "0"
+   ],
+   [
+    "lop",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "v",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "eraser",
+  "slug": "eraser",
+  "zh": "橡皮擦",
+  "letter": "E",
+  "kk": "ɪˈresɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɪ",
+    "0"
+   ],
+   [
+    "re",
+    "1"
+   ],
+   [
+    "sɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "學校 School",
+  "demand": 0
+ },
+ {
+  "word": "even",
+  "slug": "even",
+  "zh": "甚至",
+  "letter": "E",
+  "kk": "ˈivən",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "i",
+    "1"
+   ],
+   [
+    "vən",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "v",
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "evening",
+  "slug": "evening",
+  "zh": "傍晚",
+  "letter": "E",
+  "kk": "ˈivnɪŋ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "iv",
+    "1"
+   ],
+   [
+    "nɪŋ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "v",
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "ever",
+  "slug": "ever",
+  "zh": "曾經",
+  "letter": "E",
+  "kk": "ˈɛvɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɛ",
+    "1"
+   ],
+   [
+    "vɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "v",
+   "ɚ"
+  ],
+  "rhymes": [
+   "however",
+   "never"
+  ],
+  "pairs": [
+   {
+    "word": "over",
+    "this": "EH",
+    "that": "OW"
+   },
+   {
+    "word": "error",
+    "this": "V",
+    "that": "R"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "every",
+  "slug": "every",
+  "zh": "每一個(的)",
+  "letter": "E",
+  "kk": "ˈɛvrɪ",
+  "kk_variants": [
+   "ˈɛvrɪ"
+  ],
+  "sylls": [
+   [
+    "ɛv",
+    "1"
+   ],
+   [
+    "rɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "v"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "everyone",
+  "slug": "everyone",
+  "zh": "每一個人",
+  "letter": "E",
+  "kk": "ˈɛvrɪˌwʌn",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɛv",
+    "1"
+   ],
+   [
+    "rɪ",
+    "0"
+   ],
+   [
+    "wʌn",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "v",
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "everything",
+  "slug": "everything",
+  "zh": "每件事",
+  "letter": "E",
+  "kk": "ˈɛvrɪˌθɪŋ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɛv",
+    "1"
+   ],
+   [
+    "rɪ",
+    "0"
+   ],
+   [
+    "θɪŋ",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "θ",
+   "v",
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "example",
+  "slug": "example",
+  "zh": "例子",
+  "letter": "E",
+  "kk": "ɪgˈzæmpḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɪg",
+    "0"
+   ],
+   [
+    "zæm",
+    "1"
+   ],
+   [
+    "pḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "æ",
+   "dark-l",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 18
+ },
+ {
+  "word": "excellent",
+  "slug": "excellent",
+  "zh": "極好的",
+  "letter": "E",
+  "kk": "ˈɛksələnt",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɛk",
+    "1"
+   ],
+   [
+    "sə",
+    "0"
+   ],
+   [
+    "lənt",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "final-cluster",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "excited",
+  "slug": "excited",
+  "zh": "感到興奮的",
+  "letter": "E",
+  "kk": "ɪkˈsaɪtəd",
+  "kk_variants": [
+   "ɪkˈsaɪtɪd"
+  ],
+  "sylls": [
+   [
+    "ɪk",
+    "0"
+   ],
+   [
+    "saɪ",
+    "1"
+   ],
+   [
+    "təd",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "exciting",
+  "slug": "exciting",
+  "zh": "令人興奮的",
+  "letter": "E",
+  "kk": "ɪkˈsaɪtɪŋ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɪk",
+    "0"
+   ],
+   [
+    "saɪ",
+    "1"
+   ],
+   [
+    "tɪŋ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "exercise",
+  "slug": "exercise",
+  "zh": "運動",
+  "letter": "E",
+  "kk": "ˈɛksɚˌsaɪz",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɛk",
+    "1"
+   ],
+   [
+    "sɚ",
+    "0"
+   ],
+   [
+    "saɪz",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "final-z",
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "expensive",
+  "slug": "expensive",
+  "zh": "昂貴的",
+  "letter": "E",
+  "kk": "ɪkˈspɛnsɪv",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɪk",
+    "0"
+   ],
+   [
+    "spɛn",
+    "1"
+   ],
+   [
+    "sɪv",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "v",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "experience",
+  "slug": "experience",
+  "zh": "經驗",
+  "letter": "E",
+  "kk": "ɪkˈspɪrɪəns",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɪk",
+    "0"
+   ],
+   [
+    "spɪ",
+    "1"
+   ],
+   [
+    "rɪ",
+    "0"
+   ],
+   [
+    "əns",
+    "0"
+   ]
+  ],
+  "n_syll": 4,
+  "stress": 2,
+  "features": [
+   "final-cluster",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "eye",
+  "slug": "eye",
+  "zh": "眼睛",
+  "letter": "E",
+  "kk": "aɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "aɪ",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [
+   "buy",
+   "by",
+   "cry",
+   "die",
+   "dry",
+   "fly",
+   "fry",
+   "guy",
+   "hi",
+   "high",
+   "i",
+   "july"
+  ],
+  "pairs": [],
+  "theme": "身體 Body",
+  "demand": 0
+ },
+ {
+  "word": "factory",
+  "slug": "factory",
+  "zh": "工廠",
+  "letter": "F",
+  "kk": "ˈfæktərɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "fæk",
+    "1"
+   ],
+   [
+    "tə",
+    "0"
+   ],
+   [
+    "rɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "æ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "family",
+  "slug": "family",
+  "zh": "家庭",
+  "letter": "F",
+  "kk": "ˈfæməlɪ",
+  "kk_variants": [
+   "ˈfæmlɪ"
+  ],
+  "sylls": [
+   [
+    "fæ",
+    "1"
+   ],
+   [
+    "mə",
+    "0"
+   ],
+   [
+    "lɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "æ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "家庭 Family",
+  "demand": 0
+ },
+ {
+  "word": "father",
+  "slug": "father",
+  "zh": "父親",
+  "letter": "F",
+  "kk": "ˈfɑðɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "fɑ",
+    "1"
+   ],
+   [
+    "ðɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ð",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "家庭 Family",
+  "demand": 0
+ },
+ {
+  "word": "favorite",
+  "slug": "favorite",
+  "zh": "最喜愛的",
+  "letter": "F",
+  "kk": "ˈfevərɪt",
+  "kk_variants": [
+   "ˈfevrət"
+  ],
+  "sylls": [
+   [
+    "fe",
+    "1"
+   ],
+   [
+    "və",
+    "0"
+   ],
+   [
+    "rɪt",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "v",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "February",
+  "slug": "february",
+  "zh": "二月",
+  "letter": "F",
+  "kk": "ˈfɛbjəˌwɛrɪ",
+  "kk_variants": [
+   "ˈfɛbruˌɛrɪ"
+  ],
+  "sylls": [
+   [
+    "fɛb",
+    "1"
+   ],
+   [
+    "jə",
+    "0"
+   ],
+   [
+    "wɛ",
+    "2"
+   ],
+   [
+    "rɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 4,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "時間／星期／月份 Time",
+  "demand": 0
+ },
+ {
+  "word": "festival",
+  "slug": "festival",
+  "zh": "節慶",
+  "letter": "F",
+  "kk": "ˈfɛstəvḷ",
+  "kk_variants": [
+   "ˈfɛstɪvḷ"
+  ],
+  "sylls": [
+   [
+    "fɛs",
+    "1"
+   ],
+   [
+    "tə",
+    "0"
+   ],
+   [
+    "vḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "v",
+   "dark-l",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 66
+ },
+ {
+  "word": "fever",
+  "slug": "fever",
+  "zh": "發燒",
+  "letter": "F",
+  "kk": "ˈfivɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "fi",
+    "1"
+   ],
+   [
+    "vɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "v",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "fill",
+  "slug": "fill",
+  "zh": "裝滿",
+  "letter": "F",
+  "kk": "fɪl",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "fɪl",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ɪ",
+   "dark-l"
+  ],
+  "rhymes": [
+   "hill",
+   "kill",
+   "still",
+   "until",
+   "will"
+  ],
+  "pairs": [
+   {
+    "word": "full",
+    "this": "IH",
+    "that": "UH"
+   },
+   {
+    "word": "fail",
+    "this": "IH",
+    "that": "EY"
+   },
+   {
+    "word": "fall",
+    "this": "IH",
+    "that": "AO"
+   },
+   {
+    "word": "feel",
+    "this": "IH",
+    "that": "IY"
+   },
+   {
+    "word": "file",
+    "this": "IH",
+    "that": "AY"
+   },
+   {
+    "word": "fool",
+    "this": "IH",
+    "that": "UW"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "finally",
+  "slug": "finally",
+  "zh": "最後",
+  "letter": "F",
+  "kk": "ˈfaɪnəlɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "faɪ",
+    "1"
+   ],
+   [
+    "nə",
+    "0"
+   ],
+   [
+    "lɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "finger",
+  "slug": "finger",
+  "zh": "手指",
+  "letter": "F",
+  "kk": "ˈfɪŋgɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "fɪŋ",
+    "1"
+   ],
+   [
+    "gɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "身體 Body",
+  "demand": 0
+ },
+ {
+  "word": "fisherman",
+  "slug": "fisherman",
+  "zh": "漁夫",
+  "letter": "F",
+  "kk": "ˈfɪʃɚˌmæn",
+  "kk_variants": [
+   "ˈfɪʃɚmən"
+  ],
+  "sylls": [
+   [
+    "fɪ",
+    "1"
+   ],
+   [
+    "ʃɚ",
+    "0"
+   ],
+   [
+    "mæn",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "æ",
+   "ɚ",
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "food",
+  "slug": "food",
+  "zh": "食物",
+  "letter": "F",
+  "kk": "fud",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "fud",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "feed",
+    "this": "UW",
+    "that": "IY"
+   },
+   {
+    "word": "fool",
+    "this": "D",
+    "that": "L"
+   }
+  ],
+  "theme": "食物 Food & Drinks",
+  "demand": 6
+ },
+ {
+  "word": "foreign",
+  "slug": "foreign",
+  "zh": "外國的",
+  "letter": "F",
+  "kk": "ˈfɔrən",
+  "kk_variants": [
+   "ˈfɑrən"
+  ],
+  "sylls": [
+   [
+    "fɔ",
+    "1"
+   ],
+   [
+    "rən",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "nasal-end",
+   "silent-g"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "foreigner",
+  "slug": "foreigner",
+  "zh": "外國人",
+  "letter": "F",
+  "kk": "ˈfɔrənɚ",
+  "kk_variants": [
+   "ˈfɑrnɚ",
+   "ˈfɑrənɚ",
+   "ˈfɔrnɚ"
+  ],
+  "sylls": [
+   [
+    "fɔ",
+    "1"
+   ],
+   [
+    "rə",
+    "0"
+   ],
+   [
+    "nɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "full",
+  "slug": "full",
+  "zh": "滿的",
+  "letter": "F",
+  "kk": "fʊl",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "fʊl",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "dark-l"
+  ],
+  "rhymes": [
+   "pull"
+  ],
+  "pairs": [
+   {
+    "word": "fill",
+    "this": "UH",
+    "that": "IH"
+   },
+   {
+    "word": "fail",
+    "this": "UH",
+    "that": "EY"
+   },
+   {
+    "word": "fall",
+    "this": "UH",
+    "that": "AO"
+   },
+   {
+    "word": "feel",
+    "this": "UH",
+    "that": "IY"
+   },
+   {
+    "word": "file",
+    "this": "UH",
+    "that": "AY"
+   },
+   {
+    "word": "fool",
+    "this": "UH",
+    "that": "UW"
+   }
+  ],
+  "theme": null,
+  "demand": 34
+ },
+ {
+  "word": "girl",
+  "slug": "girl",
+  "zh": "女孩",
+  "letter": "G",
+  "kk": "gɝl",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "gɝl",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "dark-l",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "give",
+  "slug": "give",
+  "zh": "給予",
+  "letter": "G",
+  "kk": "gɪv",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "gɪv",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "v",
+   "ɪ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "glasses",
+  "slug": "glasses",
+  "zh": "眼鏡",
+  "letter": "G",
+  "kk": "ˈglæsəz",
+  "kk_variants": [
+   "ˈglæsɪz"
+  ],
+  "sylls": [
+   [
+    "glæ",
+    "1"
+   ],
+   [
+    "səz",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ",
+   "final-z"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "grandfather",
+  "slug": "grandfather",
+  "zh": "祖父",
+  "letter": "G",
+  "kk": "ˈgrændˌfɑðɚ",
+  "kk_variants": [
+   "ˈgrænˌfɑðɚ"
+  ],
+  "sylls": [
+   [
+    "grænd",
+    "1"
+   ],
+   [
+    "fɑ",
+    "2"
+   ],
+   [
+    "ðɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "ð",
+   "æ",
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "家庭 Family",
+  "demand": 0
+ },
+ {
+  "word": "grandmother",
+  "slug": "grandmother",
+  "zh": "祖母",
+  "letter": "G",
+  "kk": "ˈgrændˌmʌðɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "grænd",
+    "1"
+   ],
+   [
+    "mʌ",
+    "2"
+   ],
+   [
+    "ðɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "ð",
+   "æ",
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "家庭 Family",
+  "demand": 0
+ },
+ {
+  "word": "guitar",
+  "slug": "guitar",
+  "zh": "吉他",
+  "letter": "G",
+  "kk": "gɪˈtɑr",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "gɪ",
+    "0"
+   ],
+   [
+    "tɑr",
+    "1"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 2,
+  "features": [],
+  "rhymes": [
+   "car",
+   "far",
+   "star"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "hair",
+  "slug": "hair",
+  "zh": "頭髮",
+  "letter": "H",
+  "kk": "hɛr",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "hɛr",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [
+   "air",
+   "bear",
+   "care",
+   "chair",
+   "pair",
+   "pear",
+   "prepare",
+   "share",
+   "square",
+   "there",
+   "wear",
+   "where"
+  ],
+  "pairs": [
+   {
+    "word": "hear",
+    "this": "EH",
+    "that": "IY"
+   },
+   {
+    "word": "here",
+    "this": "EH",
+    "that": "IY"
+   },
+   {
+    "word": "chair",
+    "this": "HH",
+    "that": "CH"
+   },
+   {
+    "word": "where",
+    "this": "HH",
+    "that": "W"
+   },
+   {
+    "word": "bear",
+    "this": "HH",
+    "that": "B"
+   },
+   {
+    "word": "care",
+    "this": "HH",
+    "that": "K"
+   }
+  ],
+  "theme": "身體 Body",
+  "demand": 0
+ },
+ {
+  "word": "half",
+  "slug": "half",
+  "zh": "一半",
+  "letter": "H",
+  "kk": "hæf",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "hæf",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "æ",
+   "silent-l"
+  ],
+  "rhymes": [
+   "laugh"
+  ],
+  "pairs": [
+   {
+    "word": "hat",
+    "this": "F",
+    "that": "T"
+   },
+   {
+    "word": "have",
+    "this": "F",
+    "that": "V"
+   },
+   {
+    "word": "laugh",
+    "this": "HH",
+    "that": "L"
+   },
+   {
+    "word": "ham",
+    "this": "F",
+    "that": "M"
+   },
+   {
+    "word": "hang",
+    "this": "F",
+    "that": "NG"
+   }
+  ],
+  "theme": null,
+  "demand": 3
+ },
+ {
+  "word": "Halloween",
+  "slug": "halloween",
+  "zh": "萬聖節",
+  "letter": "H",
+  "kk": "ˌhæləˈwin",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "hæ",
+    "2"
+   ],
+   [
+    "lə",
+    "0"
+   ],
+   [
+    "win",
+    "1"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 3,
+  "features": [
+   "æ",
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [
+   "bean",
+   "between",
+   "clean",
+   "eighteen",
+   "fifteen",
+   "fourteen",
+   "green",
+   "machine",
+   "mean",
+   "nineteen",
+   "queen",
+   "screen"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 98
+ },
+ {
+  "word": "hamburger",
+  "slug": "hamburger",
+  "zh": "漢堡",
+  "letter": "H",
+  "kk": "ˈhæmbɚgɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "hæm",
+    "1"
+   ],
+   [
+    "bɚ",
+    "0"
+   ],
+   [
+    "gɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "æ",
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "食物 Food & Drinks",
+  "demand": 0
+ },
+ {
+  "word": "happen",
+  "slug": "happen",
+  "zh": "發生",
+  "letter": "H",
+  "kk": "ˈhæpən",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "hæ",
+    "1"
+   ],
+   [
+    "pən",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ",
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "happy",
+  "slug": "happy",
+  "zh": "快樂的",
+  "letter": "H",
+  "kk": "ˈhæpɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "hæ",
+    "1"
+   ],
+   [
+    "pɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ"
+  ],
+  "rhymes": [
+   "unhappy"
+  ],
+  "pairs": [],
+  "theme": "形容詞 Common Adjectives",
+  "demand": 47
+ },
+ {
+  "word": "hat",
+  "slug": "hat",
+  "zh": "帽子",
+  "letter": "H",
+  "kk": "hæt",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "hæt",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "æ"
+  ],
+  "rhymes": [
+   "at",
+   "bat",
+   "cat",
+   "fat",
+   "rat",
+   "that"
+  ],
+  "pairs": [
+   {
+    "word": "hot",
+    "this": "AE",
+    "that": "AA"
+   },
+   {
+    "word": "hate",
+    "this": "AE",
+    "that": "EY"
+   },
+   {
+    "word": "heat",
+    "this": "AE",
+    "that": "IY"
+   },
+   {
+    "word": "height",
+    "this": "AE",
+    "that": "AY"
+   },
+   {
+    "word": "hit",
+    "this": "AE",
+    "that": "IH"
+   },
+   {
+    "word": "hurt",
+    "this": "AE",
+    "that": "ER"
+   }
+  ],
+  "theme": null,
+  "demand": 10
+ },
+ {
+  "word": "have",
+  "slug": "have",
+  "zh": "有",
+  "letter": "H",
+  "kk": "hæv",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "hæv",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "v",
+   "æ"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "half",
+    "this": "V",
+    "that": "F"
+   },
+   {
+    "word": "hat",
+    "this": "V",
+    "that": "T"
+   },
+   {
+    "word": "ham",
+    "this": "V",
+    "that": "M"
+   },
+   {
+    "word": "hang",
+    "this": "V",
+    "that": "NG"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "hill",
+  "slug": "hill",
+  "zh": "小山",
+  "letter": "H",
+  "kk": "hɪl",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "hɪl",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ɪ",
+   "dark-l"
+  ],
+  "rhymes": [
+   "fill",
+   "kill",
+   "still",
+   "until",
+   "will"
+  ],
+  "pairs": [
+   {
+    "word": "fill",
+    "this": "HH",
+    "that": "F"
+   },
+   {
+    "word": "will",
+    "this": "HH",
+    "that": "W"
+   },
+   {
+    "word": "hit",
+    "this": "L",
+    "that": "T"
+   },
+   {
+    "word": "kill",
+    "this": "HH",
+    "that": "K"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "history",
+  "slug": "history",
+  "zh": "歷史",
+  "letter": "H",
+  "kk": "ˈhɪstərɪ",
+  "kk_variants": [
+   "ˈhɪstrɪ"
+  ],
+  "sylls": [
+   [
+    "hɪs",
+    "1"
+   ],
+   [
+    "tə",
+    "0"
+   ],
+   [
+    "rɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 2
+ },
+ {
+  "word": "holiday",
+  "slug": "holiday",
+  "zh": "假日",
+  "letter": "H",
+  "kk": "ˈhɑləˌde",
+  "kk_variants": [
+   "ˈhɑlɪˌde"
+  ],
+  "sylls": [
+   [
+    "hɑ",
+    "1"
+   ],
+   [
+    "lə",
+    "0"
+   ],
+   [
+    "de",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "honest",
+  "slug": "honest",
+  "zh": "誠實的",
+  "letter": "H",
+  "kk": "ˈɑnəst",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɑ",
+    "1"
+   ],
+   [
+    "nəst",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "final-cluster",
+   "silent-h"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "august",
+    "this": "N",
+    "that": "G"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "hospital",
+  "slug": "hospital",
+  "zh": "醫院",
+  "letter": "H",
+  "kk": "ˈhɑspɪtḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "hɑ",
+    "1"
+   ],
+   [
+    "spɪ",
+    "0"
+   ],
+   [
+    "tḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "dark-l",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "hot",
+  "slug": "hot",
+  "zh": "熱的",
+  "letter": "H",
+  "kk": "hɑt",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "hɑt",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [
+   "dot",
+   "not",
+   "pot"
+  ],
+  "pairs": [
+   {
+    "word": "hat",
+    "this": "AA",
+    "that": "AE"
+   },
+   {
+    "word": "hate",
+    "this": "AA",
+    "that": "EY"
+   },
+   {
+    "word": "heat",
+    "this": "AA",
+    "that": "IY"
+   },
+   {
+    "word": "height",
+    "this": "AA",
+    "that": "AY"
+   },
+   {
+    "word": "hit",
+    "this": "AA",
+    "that": "IH"
+   },
+   {
+    "word": "hurt",
+    "this": "AA",
+    "that": "ER"
+   }
+  ],
+  "theme": "形容詞 Common Adjectives",
+  "demand": 29
+ },
+ {
+  "word": "hotel",
+  "slug": "hotel",
+  "zh": "旅社",
+  "letter": "H",
+  "kk": "hoˈtɛl",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ho",
+    "0"
+   ],
+   [
+    "tɛl",
+    "1"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 2,
+  "features": [
+   "dark-l"
+  ],
+  "rhymes": [
+   "bell",
+   "sell",
+   "smell",
+   "spell",
+   "tell",
+   "well"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "hour",
+  "slug": "hour",
+  "zh": "小時",
+  "letter": "H",
+  "kk": "aʊr",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "aʊr",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "silent-h"
+  ],
+  "rhymes": [
+   "flower",
+   "power",
+   "shower"
+  ],
+  "pairs": [
+   {
+    "word": "out",
+    "this": "ER",
+    "that": "T"
+   },
+   {
+    "word": "sir",
+    "this": "AW",
+    "that": "S"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "however",
+  "slug": "however",
+  "zh": "然而",
+  "letter": "H",
+  "kk": "ˌhaʊˈɛvɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "haʊ",
+    "2"
+   ],
+   [
+    "ɛ",
+    "1"
+   ],
+   [
+    "vɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "v",
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [
+   "ever",
+   "never"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "I",
+  "slug": "i",
+  "zh": "我",
+  "letter": "I",
+  "kk": "aɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "aɪ",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [
+   "buy",
+   "by",
+   "cry",
+   "die",
+   "dry",
+   "eye",
+   "fly",
+   "fry",
+   "guy",
+   "hi",
+   "high",
+   "july"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 173
+ },
+ {
+  "word": "idea",
+  "slug": "idea",
+  "zh": "主意",
+  "letter": "I",
+  "kk": "aɪˈdiə",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "aɪ",
+    "0"
+   ],
+   [
+    "di",
+    "1"
+   ],
+   [
+    "ə",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "important",
+  "slug": "important",
+  "zh": "重要的",
+  "letter": "I",
+  "kk": "ˌɪmˈpɔrtṇt",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɪm",
+    "2"
+   ],
+   [
+    "pɔr",
+    "1"
+   ],
+   [
+    "tṇt",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "final-cluster",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "interested",
+  "slug": "interested",
+  "zh": "感興趣的",
+  "letter": "I",
+  "kk": "ˈɪntrəstɪd",
+  "kk_variants": [
+   "ˈɪntrɪstɪd",
+   "ˈɪntɚəstəd",
+   "ˈɪntɚɪstɪd"
+  ],
+  "sylls": [
+   [
+    "ɪn",
+    "1"
+   ],
+   [
+    "trə",
+    "0"
+   ],
+   [
+    "stɪd",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "interesting",
+    "this": "D",
+    "that": "NG"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "interesting",
+  "slug": "interesting",
+  "zh": "有趣的",
+  "letter": "I",
+  "kk": "ˈɪntrəstɪŋ",
+  "kk_variants": [
+   "ˈɪntrɪstɪŋ",
+   "ˈɪntɚəstɪŋ",
+   "ˈɪntɚɪstɪŋ"
+  ],
+  "sylls": [
+   [
+    "ɪn",
+    "1"
+   ],
+   [
+    "trə",
+    "0"
+   ],
+   [
+    "stɪŋ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "interested",
+    "this": "NG",
+    "that": "D"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "Internet",
+  "slug": "internet",
+  "zh": "網路",
+  "letter": "I",
+  "kk": "ˈɪntɚˌnɛt",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɪn",
+    "1"
+   ],
+   [
+    "tɚ",
+    "0"
+   ],
+   [
+    "nɛt",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "interview",
+  "slug": "interview",
+  "zh": "訪問、面試",
+  "letter": "I",
+  "kk": "ˈɪntɚˌvju",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɪn",
+    "1"
+   ],
+   [
+    "tɚ",
+    "0"
+   ],
+   [
+    "vju",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "v",
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "island",
+  "slug": "island",
+  "zh": "島嶼",
+  "letter": "I",
+  "kk": "ˈaɪlənd",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "aɪ",
+    "1"
+   ],
+   [
+    "lənd",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "final-cluster",
+   "silent-s"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "January",
+  "slug": "january",
+  "zh": "一月",
+  "letter": "J",
+  "kk": "ˈdʒænjuˌɛrɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "dʒæn",
+    "1"
+   ],
+   [
+    "ju",
+    "0"
+   ],
+   [
+    "ɛ",
+    "2"
+   ],
+   [
+    "rɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 4,
+  "stress": 1,
+  "features": [
+   "æ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "時間／星期／月份 Time",
+  "demand": 0
+ },
+ {
+  "word": "kilogram",
+  "slug": "kilogram",
+  "zh": "公斤",
+  "letter": "K",
+  "kk": "ˈkɪləˌgræm",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "kɪ",
+    "1"
+   ],
+   [
+    "lə",
+    "0"
+   ],
+   [
+    "græm",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "æ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "knife",
+  "slug": "knife",
+  "zh": "刀子",
+  "letter": "K",
+  "kk": "naɪf",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "naɪf",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "silent-k"
+  ],
+  "rhymes": [
+   "life",
+   "wife"
+  ],
+  "pairs": [
+   {
+    "word": "life",
+    "this": "N",
+    "that": "L"
+   },
+   {
+    "word": "nice",
+    "this": "F",
+    "that": "S"
+   },
+   {
+    "word": "night",
+    "this": "F",
+    "that": "T"
+   },
+   {
+    "word": "nine",
+    "this": "F",
+    "that": "N"
+   },
+   {
+    "word": "wife",
+    "this": "N",
+    "that": "W"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "know",
+  "slug": "know",
+  "zh": "知道",
+  "letter": "K",
+  "kk": "no",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "no",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "silent-k"
+  ],
+  "rhymes": [
+   "ago",
+   "below",
+   "blow",
+   "go",
+   "grow",
+   "hello",
+   "low",
+   "no",
+   "show",
+   "slow",
+   "snow",
+   "so"
+  ],
+  "pairs": [
+   {
+    "word": "knee",
+    "this": "OW",
+    "that": "IY"
+   },
+   {
+    "word": "new",
+    "this": "OW",
+    "that": "UW"
+   },
+   {
+    "word": "now",
+    "this": "OW",
+    "that": "AW"
+   },
+   {
+    "word": "though",
+    "this": "N",
+    "that": "DH"
+   },
+   {
+    "word": "go",
+    "this": "N",
+    "that": "G"
+   },
+   {
+    "word": "low",
+    "this": "N",
+    "that": "L"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "language",
+  "slug": "language",
+  "zh": "語言",
+  "letter": "L",
+  "kk": "ˈlæŋgwədʒ",
+  "kk_variants": [
+   "ˈlæŋgwɪdʒ"
+  ],
+  "sylls": [
+   [
+    "læŋ",
+    "1"
+   ],
+   [
+    "gwədʒ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ",
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 1
+ },
+ {
+  "word": "laugh",
+  "slug": "laugh",
+  "zh": "笑",
+  "letter": "L",
+  "kk": "læf",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "læf",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "æ",
+   "silent-gh"
+  ],
+  "rhymes": [
+   "half"
+  ],
+  "pairs": [
+   {
+    "word": "life",
+    "this": "AE",
+    "that": "AY"
+   },
+   {
+    "word": "half",
+    "this": "L",
+    "that": "HH"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "level",
+  "slug": "level",
+  "zh": "程度、等級",
+  "letter": "L",
+  "kk": "ˈlɛvḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "lɛ",
+    "1"
+   ],
+   [
+    "vḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "v",
+   "dark-l"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "library",
+  "slug": "library",
+  "zh": "圖書館",
+  "letter": "L",
+  "kk": "ˈlaɪbrɛrɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "laɪ",
+    "1"
+   ],
+   [
+    "brɛ",
+    "0"
+   ],
+   [
+    "rɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "學校 School",
+  "demand": 0
+ },
+ {
+  "word": "lion",
+  "slug": "lion",
+  "zh": "獅子",
+  "letter": "L",
+  "kk": "ˈlaɪən",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "laɪ",
+    "1"
+   ],
+   [
+    "ən",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "動物 Animals & Insects",
+  "demand": 0
+ },
+ {
+  "word": "listen",
+  "slug": "listen",
+  "zh": "聽",
+  "letter": "L",
+  "kk": "ˈlɪsən",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "lɪ",
+    "1"
+   ],
+   [
+    "sən",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "nasal-end",
+   "silent-t"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "lesson",
+    "this": "IH",
+    "that": "EH"
+   }
+  ],
+  "theme": "動作 Common Verbs",
+  "demand": 0
+ },
+ {
+  "word": "mailman",
+  "slug": "mailman",
+  "zh": "郵差",
+  "letter": "M",
+  "kk": "ˈmelˌmæn",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "mel",
+    "1"
+   ],
+   [
+    "mæn",
+    "2"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ",
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "man",
+  "slug": "man",
+  "zh": "男人",
+  "letter": "M",
+  "kk": "mæn",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "mæn",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "æ",
+   "nasal-end"
+  ],
+  "rhymes": [
+   "can",
+   "fan",
+   "plan",
+   "than"
+  ],
+  "pairs": [
+   {
+    "word": "moon",
+    "this": "AE",
+    "that": "UW"
+   },
+   {
+    "word": "main",
+    "this": "AE",
+    "that": "EY"
+   },
+   {
+    "word": "mean",
+    "this": "AE",
+    "that": "IY"
+   },
+   {
+    "word": "math",
+    "this": "N",
+    "that": "TH"
+   },
+   {
+    "word": "than",
+    "this": "M",
+    "that": "DH"
+   },
+   {
+    "word": "can",
+    "this": "M",
+    "that": "K"
+   }
+  ],
+  "theme": null,
+  "demand": 18
+ },
+ {
+  "word": "math",
+  "slug": "math",
+  "zh": "數學",
+  "letter": "M",
+  "kk": "mæθ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "mæθ",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "θ",
+   "æ"
+  ],
+  "rhymes": [
+   "bath"
+  ],
+  "pairs": [
+   {
+    "word": "mouth",
+    "this": "AE",
+    "that": "AW"
+   },
+   {
+    "word": "bath",
+    "this": "M",
+    "that": "B"
+   },
+   {
+    "word": "man",
+    "this": "TH",
+    "that": "N"
+   },
+   {
+    "word": "mad",
+    "this": "TH",
+    "that": "D"
+   },
+   {
+    "word": "map",
+    "this": "TH",
+    "that": "P"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "matter",
+  "slug": "matter",
+  "zh": "事情",
+  "letter": "M",
+  "kk": "ˈmætɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "mæ",
+    "1"
+   ],
+   [
+    "tɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "medicine",
+  "slug": "medicine",
+  "zh": "藥",
+  "letter": "M",
+  "kk": "ˈmɛdəsən",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "mɛ",
+    "1"
+   ],
+   [
+    "də",
+    "0"
+   ],
+   [
+    "sən",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "medium",
+  "slug": "medium",
+  "zh": "中號〈的〉",
+  "letter": "M",
+  "kk": "ˈmidɪəm",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "mi",
+    "1"
+   ],
+   [
+    "dɪ",
+    "0"
+   ],
+   [
+    "əm",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "modern",
+  "slug": "modern",
+  "zh": "現代化的",
+  "letter": "M",
+  "kk": "ˈmɑdɚn",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "mɑ",
+    "1"
+   ],
+   [
+    "dɚn",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "monkey",
+  "slug": "monkey",
+  "zh": "猴子",
+  "letter": "M",
+  "kk": "ˈmʌŋkɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "mʌŋ",
+    "1"
+   ],
+   [
+    "kɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "動物 Animals & Insects",
+  "demand": 0
+ },
+ {
+  "word": "moon",
+  "slug": "moon",
+  "zh": "月亮",
+  "letter": "M",
+  "kk": "mun",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "mun",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "nasal-end"
+  ],
+  "rhymes": [
+   "afternoon",
+   "june",
+   "noon",
+   "soon",
+   "spoon",
+   "typhoon"
+  ],
+  "pairs": [
+   {
+    "word": "man",
+    "this": "UW",
+    "that": "AE"
+   },
+   {
+    "word": "main",
+    "this": "UW",
+    "that": "EY"
+   },
+   {
+    "word": "mean",
+    "this": "UW",
+    "that": "IY"
+   },
+   {
+    "word": "june",
+    "this": "M",
+    "that": "JH"
+   },
+   {
+    "word": "move",
+    "this": "N",
+    "that": "V"
+   },
+   {
+    "word": "noon",
+    "this": "M",
+    "that": "N"
+   }
+  ],
+  "theme": "天氣 Weather",
+  "demand": 25
+ },
+ {
+  "word": "mother",
+  "slug": "mother",
+  "zh": "母親",
+  "letter": "M",
+  "kk": "ˈmʌðɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "mʌ",
+    "1"
+   ],
+   [
+    "ðɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ð",
+   "ɚ"
+  ],
+  "rhymes": [
+   "another",
+   "brother",
+   "other"
+  ],
+  "pairs": [],
+  "theme": "家庭 Family",
+  "demand": 0
+ },
+ {
+  "word": "motorcycle",
+  "slug": "motorcycle",
+  "zh": "機車",
+  "letter": "M",
+  "kk": "ˈmotɚˌsaɪkḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "mo",
+    "1"
+   ],
+   [
+    "tɚ",
+    "0"
+   ],
+   [
+    "saɪ",
+    "2"
+   ],
+   [
+    "kḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 4,
+  "stress": 1,
+  "features": [
+   "dark-l",
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "mouth",
+  "slug": "mouth",
+  "zh": "嘴巴",
+  "letter": "M",
+  "kk": "maʊθ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "maʊθ",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "θ"
+  ],
+  "rhymes": [
+   "south"
+  ],
+  "pairs": [
+   {
+    "word": "math",
+    "this": "AW",
+    "that": "AE"
+   },
+   {
+    "word": "mouse",
+    "this": "TH",
+    "that": "S"
+   },
+   {
+    "word": "south",
+    "this": "M",
+    "that": "S"
+   }
+  ],
+  "theme": "身體 Body",
+  "demand": 0
+ },
+ {
+  "word": "museum",
+  "slug": "museum",
+  "zh": "博物館",
+  "letter": "M",
+  "kk": "mjuˈziəm",
+  "kk_variants": [
+   "ˈmjuzɪəm"
+  ],
+  "sylls": [
+   [
+    "mju",
+    "0"
+   ],
+   [
+    "zi",
+    "1"
+   ],
+   [
+    "əm",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "music",
+  "slug": "music",
+  "zh": "音樂",
+  "letter": "M",
+  "kk": "ˈmjuzɪk",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "mju",
+    "1"
+   ],
+   [
+    "zɪk",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "national",
+  "slug": "national",
+  "zh": "國家的",
+  "letter": "N",
+  "kk": "ˈnæʃənəl",
+  "kk_variants": [
+   "ˈnæʃnəl"
+  ],
+  "sylls": [
+   [
+    "næ",
+    "1"
+   ],
+   [
+    "ʃə",
+    "0"
+   ],
+   [
+    "nəl",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "æ",
+   "dark-l",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "neighbor",
+  "slug": "neighbor",
+  "zh": "鄰居",
+  "letter": "N",
+  "kk": "ˈnebɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ne",
+    "1"
+   ],
+   [
+    "bɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "silent-gh"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "nature",
+    "this": "B",
+    "that": "CH"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "never",
+  "slug": "never",
+  "zh": "從不",
+  "letter": "N",
+  "kk": "ˈnɛvɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "nɛ",
+    "1"
+   ],
+   [
+    "vɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "v",
+   "ɚ"
+  ],
+  "rhymes": [
+   "ever",
+   "however"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "newspaper",
+  "slug": "newspaper",
+  "zh": "報紙",
+  "letter": "N",
+  "kk": "ˈnuzˌpepɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "nuz",
+    "1"
+   ],
+   [
+    "pe",
+    "2"
+   ],
+   [
+    "pɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "nobody",
+  "slug": "nobody",
+  "zh": "沒有人",
+  "letter": "N",
+  "kk": "ˈnoˌbɑdɪ",
+  "kk_variants": [
+   "ˈnobədɪ"
+  ],
+  "sylls": [
+   [
+    "no",
+    "1"
+   ],
+   [
+    "bɑ",
+    "2"
+   ],
+   [
+    "dɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "nothing",
+  "slug": "nothing",
+  "zh": "沒東西、沒事",
+  "letter": "N",
+  "kk": "ˈnʌθɪŋ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "nʌ",
+    "1"
+   ],
+   [
+    "θɪŋ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "θ",
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "November",
+  "slug": "november",
+  "zh": "十一月",
+  "letter": "N",
+  "kk": "noˈvɛmbɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "no",
+    "0"
+   ],
+   [
+    "vɛm",
+    "1"
+   ],
+   [
+    "bɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "v",
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [
+   "december",
+   "member",
+   "remember",
+   "september"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "nurse",
+  "slug": "nurse",
+  "zh": "護士",
+  "letter": "N",
+  "kk": "nɝs",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "nɝs",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "nice",
+    "this": "ER",
+    "that": "AY"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "October",
+  "slug": "october",
+  "zh": "十月",
+  "letter": "O",
+  "kk": "ɑkˈtobɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ɑk",
+    "0"
+   ],
+   [
+    "to",
+    "1"
+   ],
+   [
+    "bɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "時間／星期／月份 Time",
+  "demand": 0
+ },
+ {
+  "word": "of",
+  "slug": "of",
+  "zh": "...的",
+  "letter": "O",
+  "kk": "ʌv",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ʌv",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "v"
+  ],
+  "rhymes": [
+   "above",
+   "glove",
+   "love"
+  ],
+  "pairs": [
+   {
+    "word": "eve",
+    "this": "AH",
+    "that": "IY"
+   },
+   {
+    "word": "up",
+    "this": "V",
+    "that": "P"
+   }
+  ],
+  "theme": null,
+  "demand": 10
+ },
+ {
+  "word": "officer",
+  "slug": "officer",
+  "zh": "官員",
+  "letter": "O",
+  "kk": "ˈɔfəsɚ",
+  "kk_variants": [
+   "ˈɔfɪsɚ"
+  ],
+  "sylls": [
+   [
+    "ɔ",
+    "1"
+   ],
+   [
+    "fə",
+    "0"
+   ],
+   [
+    "sɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "often",
+  "slug": "often",
+  "zh": "時常",
+  "letter": "O",
+  "kk": "ˈɔfən",
+  "kk_variants": [
+   "ˈɔftṇ"
+  ],
+  "sylls": [
+   [
+    "ɔ",
+    "1"
+   ],
+   [
+    "fən",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "on",
+  "slug": "on",
+  "zh": "在…上面",
+  "letter": "O",
+  "kk": "ɑn",
+  "kk_variants": [
+   "ɔn"
+  ],
+  "sylls": [
+   [
+    "ɑn",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "nasal-end"
+  ],
+  "rhymes": [
+   "taiwan"
+  ],
+  "pairs": [
+   {
+    "word": "in",
+    "this": "AA",
+    "that": "IH"
+   },
+   {
+    "word": "own",
+    "this": "AA",
+    "that": "OW"
+   }
+  ],
+  "theme": null,
+  "demand": 33
+ },
+ {
+  "word": "one",
+  "slug": "one",
+  "zh": "一",
+  "letter": "O",
+  "kk": "wʌn",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "wʌn",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "nasal-end"
+  ],
+  "rhymes": [
+   "bun",
+   "fun",
+   "run",
+   "son",
+   "sun"
+  ],
+  "pairs": [
+   {
+    "word": "when",
+    "this": "AH",
+    "that": "EH"
+   },
+   {
+    "word": "win",
+    "this": "AH",
+    "that": "IH"
+   },
+   {
+    "word": "what",
+    "this": "N",
+    "that": "T"
+   },
+   {
+    "word": "bun",
+    "this": "W",
+    "that": "B"
+   },
+   {
+    "word": "fun",
+    "this": "W",
+    "that": "F"
+   },
+   {
+    "word": "run",
+    "this": "W",
+    "that": "R"
+   }
+  ],
+  "theme": "數字 Numbers",
+  "demand": 28
+ },
+ {
+  "word": "or",
+  "slug": "or",
+  "zh": "或",
+  "letter": "O",
+  "kk": "ɔr",
+  "kk_variants": [
+   "ɚ"
+  ],
+  "sylls": [
+   [
+    "ɔr",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [
+   "before",
+   "door",
+   "drawer",
+   "floor",
+   "for",
+   "four",
+   "more",
+   "sore",
+   "store"
+  ],
+  "pairs": [
+   {
+    "word": "ear",
+    "this": "AO",
+    "that": "IY"
+   },
+   {
+    "word": "air",
+    "this": "AO",
+    "that": "EH"
+   },
+   {
+    "word": "all",
+    "this": "R",
+    "that": "L"
+   },
+   {
+    "word": "off",
+    "this": "R",
+    "that": "F"
+   }
+  ],
+  "theme": null,
+  "demand": 8
+ },
+ {
+  "word": "orange",
+  "slug": "orange",
+  "zh": "柳橙",
+  "letter": "O",
+  "kk": "ˈɔrəndʒ",
+  "kk_variants": [
+   "ˈɔrɪndʒ"
+  ],
+  "sylls": [
+   [
+    "ɔ",
+    "1"
+   ],
+   [
+    "rəndʒ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "final-cluster"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "食物 Food & Drinks",
+  "demand": 0
+ },
+ {
+  "word": "other",
+  "slug": "other",
+  "zh": "其他的",
+  "letter": "O",
+  "kk": "ˈʌðɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ʌ",
+    "1"
+   ],
+   [
+    "ðɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ð",
+   "ɚ"
+  ],
+  "rhymes": [
+   "another",
+   "brother",
+   "mother"
+  ],
+  "pairs": [
+   {
+    "word": "either",
+    "this": "AH",
+    "that": "IY"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "over",
+  "slug": "over",
+  "zh": "結束",
+  "letter": "O",
+  "kk": "ˈovɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "o",
+    "1"
+   ],
+   [
+    "vɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "v",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "ever",
+    "this": "OW",
+    "that": "EH"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "papaya",
+  "slug": "papaya",
+  "zh": "木瓜",
+  "letter": "P",
+  "kk": "pəˈpaɪə",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "pə",
+    "0"
+   ],
+   [
+    "paɪ",
+    "1"
+   ],
+   [
+    "ə",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "perhaps",
+  "slug": "perhaps",
+  "zh": "或許",
+  "letter": "P",
+  "kk": "pɚˈhæps",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "pɚ",
+    "0"
+   ],
+   [
+    "hæps",
+    "1"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 2,
+  "features": [
+   "æ",
+   "ɚ",
+   "final-cluster"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "person",
+  "slug": "person",
+  "zh": "人",
+  "letter": "P",
+  "kk": "ˈpɝsən",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "pɝ",
+    "1"
+   ],
+   [
+    "sən",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "photo",
+  "slug": "photo",
+  "zh": "相片",
+  "letter": "P",
+  "kk": "ˈfoˌto",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "fo",
+    "1"
+   ],
+   [
+    "to",
+    "2"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "piano",
+  "slug": "piano",
+  "zh": "鋼琴",
+  "letter": "P",
+  "kk": "pɪˈæno",
+  "kk_variants": [
+   "pɪˈænə"
+  ],
+  "sylls": [
+   [
+    "pɪ",
+    "0"
+   ],
+   [
+    "æ",
+    "1"
+   ],
+   [
+    "no",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "æ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "picture",
+  "slug": "picture",
+  "zh": "圖片、照片",
+  "letter": "P",
+  "kk": "ˈpɪktʃɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "pɪk",
+    "1"
+   ],
+   [
+    "tʃɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "pizza",
+  "slug": "pizza",
+  "zh": "披薩",
+  "letter": "P",
+  "kk": "ˈpitsə",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "pit",
+    "1"
+   ],
+   [
+    "sə",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "pleasure",
+  "slug": "pleasure",
+  "zh": "樂趣、使高興",
+  "letter": "P",
+  "kk": "ˈplɛʒɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "plɛ",
+    "1"
+   ],
+   [
+    "ʒɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ʒ",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "police",
+  "slug": "police",
+  "zh": "警察",
+  "letter": "P",
+  "kk": "pəˈlis",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "pə",
+    "0"
+   ],
+   [
+    "lis",
+    "1"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 2,
+  "features": [],
+  "rhymes": [
+   "piece"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "popcorn",
+  "slug": "popcorn",
+  "zh": "爆米花",
+  "letter": "P",
+  "kk": "ˈpɑpˌkɔrn",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "pɑp",
+    "1"
+   ],
+   [
+    "kɔrn",
+    "2"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "nasal-end",
+   "final-cluster"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "popular",
+  "slug": "popular",
+  "zh": "受歡迎的",
+  "letter": "P",
+  "kk": "ˈpɑpjəlɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "pɑ",
+    "1"
+   ],
+   [
+    "pjə",
+    "0"
+   ],
+   [
+    "lɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "possible",
+  "slug": "possible",
+  "zh": "可能的",
+  "letter": "P",
+  "kk": "ˈpɑsəbḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "pɑ",
+    "1"
+   ],
+   [
+    "sə",
+    "0"
+   ],
+   [
+    "bḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "dark-l",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "probably",
+  "slug": "probably",
+  "zh": "可能、大概",
+  "letter": "P",
+  "kk": "ˈprɑbəblɪ",
+  "kk_variants": [
+   "ˈprɑblɪ"
+  ],
+  "sylls": [
+   [
+    "prɑ",
+    "1"
+   ],
+   [
+    "bə",
+    "0"
+   ],
+   [
+    "blɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "purple",
+  "slug": "purple",
+  "zh": "紫色的",
+  "letter": "P",
+  "kk": "ˈpɝpḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "pɝ",
+    "1"
+   ],
+   [
+    "pḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "dark-l",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "people",
+    "this": "ER",
+    "that": "IY"
+   }
+  ],
+  "theme": "顏色 Colors",
+  "demand": 0
+ },
+ {
+  "word": "question",
+  "slug": "question",
+  "zh": "問題",
+  "letter": "Q",
+  "kk": "ˈkwɛstʃən",
+  "kk_variants": [
+   "ˈkwɛʃən"
+  ],
+  "sylls": [
+   [
+    "kwɛs",
+    "1"
+   ],
+   [
+    "tʃən",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "quiz",
+  "slug": "quiz",
+  "zh": "小考",
+  "letter": "Q",
+  "kk": "kwɪz",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "kwɪz",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ɪ",
+   "final-z"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "quick",
+    "this": "Z",
+    "that": "K"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "rabbit",
+  "slug": "rabbit",
+  "zh": "兔子",
+  "letter": "R",
+  "kk": "ˈræbət",
+  "kk_variants": [
+   "ˈræbɪt"
+  ],
+  "sylls": [
+   [
+    "ræ",
+    "1"
+   ],
+   [
+    "bət",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ"
+  ],
+  "rhymes": [
+   "habit"
+  ],
+  "pairs": [
+   {
+    "word": "habit",
+    "this": "R",
+    "that": "HH"
+   }
+  ],
+  "theme": "動物 Animals & Insects",
+  "demand": 0
+ },
+ {
+  "word": "radio",
+  "slug": "radio",
+  "zh": "收音機",
+  "letter": "R",
+  "kk": "ˈredɪˌo",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "re",
+    "1"
+   ],
+   [
+    "dɪ",
+    "0"
+   ],
+   [
+    "o",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "rain",
+  "slug": "rain",
+  "zh": "下雨",
+  "letter": "R",
+  "kk": "ren",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ren",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "nasal-end"
+  ],
+  "rhymes": [
+   "explain",
+   "main",
+   "train"
+  ],
+  "pairs": [
+   {
+    "word": "run",
+    "this": "EY",
+    "that": "AH"
+   },
+   {
+    "word": "main",
+    "this": "R",
+    "that": "M"
+   },
+   {
+    "word": "race",
+    "this": "N",
+    "that": "S"
+   },
+   {
+    "word": "raise",
+    "this": "N",
+    "that": "Z"
+   }
+  ],
+  "theme": "天氣 Weather",
+  "demand": 8
+ },
+ {
+  "word": "refrigerator",
+  "slug": "refrigerator",
+  "zh": "冰箱",
+  "letter": "R",
+  "kk": "rəˈfrɪdʒəˌretɚ",
+  "kk_variants": [
+   "rɪˈfrɪdʒɚˌetɚ"
+  ],
+  "sylls": [
+   [
+    "rə",
+    "0"
+   ],
+   [
+    "frɪ",
+    "1"
+   ],
+   [
+    "dʒə",
+    "0"
+   ],
+   [
+    "re",
+    "2"
+   ],
+   [
+    "tɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 5,
+  "stress": 2,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "relative",
+  "slug": "relative",
+  "zh": "親戚",
+  "letter": "R",
+  "kk": "ˈrɛlətɪv",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "rɛ",
+    "1"
+   ],
+   [
+    "lə",
+    "0"
+   ],
+   [
+    "tɪv",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "v",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "remember",
+  "slug": "remember",
+  "zh": "記得",
+  "letter": "R",
+  "kk": "rɪˈmɛmbɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "rɪ",
+    "0"
+   ],
+   [
+    "mɛm",
+    "1"
+   ],
+   [
+    "bɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [
+   "december",
+   "member",
+   "november",
+   "september"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "reporter",
+  "slug": "reporter",
+  "zh": "記者",
+  "letter": "R",
+  "kk": "rɪˈpɔrtɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "rɪ",
+    "0"
+   ],
+   [
+    "pɔr",
+    "1"
+   ],
+   [
+    "tɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [
+   "quarter"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "restaurant",
+  "slug": "restaurant",
+  "zh": "餐館",
+  "letter": "R",
+  "kk": "ˈrɛstəˌrɑnt",
+  "kk_variants": [
+   "ˈrɛˌstrɑnt"
+  ],
+  "sylls": [
+   [
+    "rɛs",
+    "1"
+   ],
+   [
+    "tə",
+    "0"
+   ],
+   [
+    "rɑnt",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "final-cluster",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "river",
+  "slug": "river",
+  "zh": "河",
+  "letter": "R",
+  "kk": "ˈrɪvɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "rɪ",
+    "1"
+   ],
+   [
+    "vɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "v",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "salad",
+  "slug": "salad",
+  "zh": "沙拉",
+  "letter": "S",
+  "kk": "ˈsæləd",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "sæ",
+    "1"
+   ],
+   [
+    "ləd",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "sandwich",
+  "slug": "sandwich",
+  "zh": "三明治",
+  "letter": "S",
+  "kk": "ˈsændwɪtʃ",
+  "kk_variants": [
+   "ˈsæmwɪtʃ",
+   "ˈsænwɪtʃ"
+  ],
+  "sylls": [
+   [
+    "sæn",
+    "1"
+   ],
+   [
+    "dwɪtʃ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "æ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "Saturday",
+  "slug": "saturday",
+  "zh": "星期六",
+  "letter": "S",
+  "kk": "ˈsætɚdɪ",
+  "kk_variants": [
+   "ˈsæˌtɪˌde"
+  ],
+  "sylls": [
+   [
+    "sæ",
+    "1"
+   ],
+   [
+    "tɚ",
+    "0"
+   ],
+   [
+    "dɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "æ",
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "時間／星期／月份 Time",
+  "demand": 0
+ },
+ {
+  "word": "school",
+  "slug": "school",
+  "zh": "學校",
+  "letter": "S",
+  "kk": "skul",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "skul",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "dark-l",
+   "silent-h"
+  ],
+  "rhymes": [
+   "cool",
+   "fool",
+   "pool",
+   "rule",
+   "tool"
+  ],
+  "pairs": [],
+  "theme": "學校 School",
+  "demand": 0
+ },
+ {
+  "word": "science",
+  "slug": "science",
+  "zh": "科學",
+  "letter": "S",
+  "kk": "ˈsaɪəns",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "saɪ",
+    "1"
+   ],
+   [
+    "əns",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "final-cluster"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "secretary",
+  "slug": "secretary",
+  "zh": "秘書",
+  "letter": "S",
+  "kk": "ˈsɛkrəˌtɛrɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "sɛk",
+    "1"
+   ],
+   [
+    "rə",
+    "0"
+   ],
+   [
+    "tɛ",
+    "2"
+   ],
+   [
+    "rɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 4,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "see",
+  "slug": "see",
+  "zh": "看",
+  "letter": "S",
+  "kk": "si",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "si",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [
+   "agree",
+   "be",
+   "bee",
+   "free",
+   "he",
+   "key",
+   "knee",
+   "sea",
+   "she",
+   "tea",
+   "three",
+   "tree"
+  ],
+  "pairs": [
+   {
+    "word": "say",
+    "this": "IY",
+    "that": "EY"
+   },
+   {
+    "word": "sir",
+    "this": "IY",
+    "that": "ER"
+   },
+   {
+    "word": "so",
+    "this": "IY",
+    "that": "OW"
+   },
+   {
+    "word": "be",
+    "this": "S",
+    "that": "B"
+   },
+   {
+    "word": "bee",
+    "this": "S",
+    "that": "B"
+   },
+   {
+    "word": "he",
+    "this": "S",
+    "that": "HH"
+   }
+  ],
+  "theme": null,
+  "demand": 17
+ },
+ {
+  "word": "September",
+  "slug": "september",
+  "zh": "九月",
+  "letter": "S",
+  "kk": "sɛpˈtɛmbɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "sɛp",
+    "0"
+   ],
+   [
+    "tɛm",
+    "1"
+   ],
+   [
+    "bɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [
+   "december",
+   "member",
+   "november",
+   "remember"
+  ],
+  "pairs": [],
+  "theme": "時間／星期／月份 Time",
+  "demand": 0
+ },
+ {
+  "word": "serious",
+  "slug": "serious",
+  "zh": "嚴重的",
+  "letter": "S",
+  "kk": "ˈsɪrɪəs",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "sɪ",
+    "1"
+   ],
+   [
+    "rɪ",
+    "0"
+   ],
+   [
+    "əs",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "service",
+  "slug": "service",
+  "zh": "服務",
+  "letter": "S",
+  "kk": "ˈsɝvəs",
+  "kk_variants": [
+   "ˈsɝvɪs"
+  ],
+  "sylls": [
+   [
+    "sɝ",
+    "1"
+   ],
+   [
+    "vəs",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "v",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "seven",
+  "slug": "seven",
+  "zh": "七",
+  "letter": "S",
+  "kk": "ˈsɛvən",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "sɛ",
+    "1"
+   ],
+   [
+    "vən",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "v",
+   "nasal-end"
+  ],
+  "rhymes": [
+   "eleven"
+  ],
+  "pairs": [],
+  "theme": "數字 Numbers",
+  "demand": 0
+ },
+ {
+  "word": "seventeen",
+  "slug": "seventeen",
+  "zh": "十七",
+  "letter": "S",
+  "kk": "ˌsɛvənˈtin",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "sɛ",
+    "2"
+   ],
+   [
+    "vən",
+    "0"
+   ],
+   [
+    "tin",
+    "1"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 3,
+  "features": [
+   "v",
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [
+   "bean",
+   "between",
+   "clean",
+   "eighteen",
+   "fifteen",
+   "fourteen",
+   "green",
+   "halloween",
+   "machine",
+   "mean",
+   "nineteen",
+   "queen"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "seventy",
+  "slug": "seventy",
+  "zh": "七十",
+  "letter": "S",
+  "kk": "ˈsɛvəntɪ",
+  "kk_variants": [
+   "ˈsɛvənɪ"
+  ],
+  "sylls": [
+   [
+    "sɛ",
+    "1"
+   ],
+   [
+    "vən",
+    "0"
+   ],
+   [
+    "tɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "v",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "several",
+  "slug": "several",
+  "zh": "幾個的",
+  "letter": "S",
+  "kk": "ˈsɛvrəl",
+  "kk_variants": [
+   "ˈsɛvɚəl"
+  ],
+  "sylls": [
+   [
+    "sɛv",
+    "1"
+   ],
+   [
+    "rəl",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "v",
+   "dark-l"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "sheep",
+  "slug": "sheep",
+  "zh": "綿羊",
+  "letter": "S",
+  "kk": "ʃip",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ʃip",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [
+   "cheap",
+   "deep",
+   "keep",
+   "sleep"
+  ],
+  "pairs": [
+   {
+    "word": "shape",
+    "this": "IY",
+    "that": "EY"
+   },
+   {
+    "word": "ship",
+    "this": "IY",
+    "that": "IH"
+   },
+   {
+    "word": "shop",
+    "this": "IY",
+    "that": "AA"
+   },
+   {
+    "word": "cheap",
+    "this": "SH",
+    "that": "CH"
+   },
+   {
+    "word": "deep",
+    "this": "SH",
+    "that": "D"
+   },
+   {
+    "word": "keep",
+    "this": "SH",
+    "that": "K"
+   }
+  ],
+  "theme": "動物 Animals & Insects",
+  "demand": 19
+ },
+ {
+  "word": "shopkeeper",
+  "slug": "shopkeeper",
+  "zh": "店主",
+  "letter": "S",
+  "kk": "ˈʃɑpˌkipɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ʃɑp",
+    "1"
+   ],
+   [
+    "ki",
+    "2"
+   ],
+   [
+    "pɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "singer",
+  "slug": "singer",
+  "zh": "歌手",
+  "letter": "S",
+  "kk": "ˈsɪŋɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "sɪŋ",
+    "1"
+   ],
+   [
+    "ɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 1
+ },
+ {
+  "word": "something",
+  "slug": "something",
+  "zh": "某事",
+  "letter": "S",
+  "kk": "ˈsʌmθɪŋ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "sʌm",
+    "1"
+   ],
+   [
+    "θɪŋ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "θ",
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "sometimes",
+  "slug": "sometimes",
+  "zh": "有時候",
+  "letter": "S",
+  "kk": "ˈsʌmˌtaɪmz",
+  "kk_variants": [
+   "ˈsʌmˌtaɪmz"
+  ],
+  "sylls": [
+   [
+    "sʌm",
+    "1"
+   ],
+   [
+    "taɪmz",
+    "2"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "final-z",
+   "final-cluster"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "sorry",
+  "slug": "sorry",
+  "zh": "抱歉〈的〉",
+  "letter": "S",
+  "kk": "ˈsɑrɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "sɑ",
+    "1"
+   ],
+   [
+    "rɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "sound",
+  "slug": "sound",
+  "zh": "聲音、聽起來",
+  "letter": "S",
+  "kk": "saʊnd",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "saʊnd",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "final-cluster"
+  ],
+  "rhymes": [
+   "around",
+   "ground",
+   "pound",
+   "round"
+  ],
+  "pairs": [
+   {
+    "word": "send",
+    "this": "AW",
+    "that": "EH"
+   },
+   {
+    "word": "pound",
+    "this": "S",
+    "that": "P"
+   },
+   {
+    "word": "round",
+    "this": "S",
+    "that": "R"
+   }
+  ],
+  "theme": null,
+  "demand": 15
+ },
+ {
+  "word": "still",
+  "slug": "still",
+  "zh": "仍然",
+  "letter": "S",
+  "kk": "stɪl",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "stɪl",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ɪ",
+   "dark-l"
+  ],
+  "rhymes": [
+   "fill",
+   "hill",
+   "kill",
+   "until",
+   "will"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "strawberry",
+  "slug": "strawberry",
+  "zh": "草莓",
+  "letter": "S",
+  "kk": "ˈstrɔˌbɛrɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "strɔ",
+    "1"
+   ],
+   [
+    "bɛ",
+    "2"
+   ],
+   [
+    "rɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "student",
+  "slug": "student",
+  "zh": "學生",
+  "letter": "S",
+  "kk": "ˈstudṇt",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "stu",
+    "1"
+   ],
+   [
+    "dṇt",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "final-cluster"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "學校 School",
+  "demand": 0
+ },
+ {
+  "word": "successful",
+  "slug": "successful",
+  "zh": "成功的",
+  "letter": "S",
+  "kk": "səkˈsɛsfḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "sək",
+    "0"
+   ],
+   [
+    "sɛs",
+    "1"
+   ],
+   [
+    "fḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "dark-l",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "supermarket",
+  "slug": "supermarket",
+  "zh": "超級市場",
+  "letter": "S",
+  "kk": "ˈsupɚˌmɑrkɪt",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "su",
+    "1"
+   ],
+   [
+    "pɚ",
+    "0"
+   ],
+   [
+    "mɑr",
+    "2"
+   ],
+   [
+    "kɪt",
+    "0"
+   ]
+  ],
+  "n_syll": 4,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "surprise",
+  "slug": "surprise",
+  "zh": "使…驚訝",
+  "letter": "S",
+  "kk": "sɚˈpraɪz",
+  "kk_variants": [
+   "səˈpraɪz"
+  ],
+  "sylls": [
+   [
+    "sɚ",
+    "0"
+   ],
+   [
+    "praɪz",
+    "1"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 2,
+  "features": [
+   "final-z",
+   "ɚ"
+  ],
+  "rhymes": [
+   "fries",
+   "prize",
+   "rise",
+   "size",
+   "wise"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "surprised",
+  "slug": "surprised",
+  "zh": "感到驚訝的",
+  "letter": "S",
+  "kk": "sɚˈpraɪzd",
+  "kk_variants": [
+   "səˈpraɪzd"
+  ],
+  "sylls": [
+   [
+    "sɚ",
+    "0"
+   ],
+   [
+    "praɪzd",
+    "1"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 2,
+  "features": [
+   "ɚ",
+   "final-cluster"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "talk",
+  "slug": "talk",
+  "zh": "說話",
+  "letter": "T",
+  "kk": "tɔk",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "tɔk",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "silent-l"
+  ],
+  "rhymes": [
+   "walk"
+  ],
+  "pairs": [
+   {
+    "word": "take",
+    "this": "AO",
+    "that": "EY"
+   },
+   {
+    "word": "walk",
+    "this": "T",
+    "that": "W"
+   },
+   {
+    "word": "tall",
+    "this": "K",
+    "that": "L"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "teenager",
+  "slug": "teenager",
+  "zh": "青少年",
+  "letter": "T",
+  "kk": "ˈtiˌnedʒɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ti",
+    "1"
+   ],
+   [
+    "ne",
+    "2"
+   ],
+   [
+    "dʒɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "telephone",
+  "slug": "telephone",
+  "zh": "電話",
+  "letter": "T",
+  "kk": "ˈtɛləˌfon",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "tɛ",
+    "1"
+   ],
+   [
+    "lə",
+    "0"
+   ],
+   [
+    "fon",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "television",
+  "slug": "television",
+  "zh": "電視",
+  "letter": "T",
+  "kk": "ˈtɛləˌvɪʒən",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "tɛ",
+    "1"
+   ],
+   [
+    "lə",
+    "0"
+   ],
+   [
+    "vɪ",
+    "2"
+   ],
+   [
+    "ʒən",
+    "0"
+   ]
+  ],
+  "n_syll": 4,
+  "stress": 1,
+  "features": [
+   "v",
+   "ʒ",
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 39
+ },
+ {
+  "word": "terrible",
+  "slug": "terrible",
+  "zh": "可怕的",
+  "letter": "T",
+  "kk": "ˈtɛrəbḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "tɛ",
+    "1"
+   ],
+   [
+    "rə",
+    "0"
+   ],
+   [
+    "bḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "dark-l",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "than",
+  "slug": "than",
+  "zh": "比…",
+  "letter": "T",
+  "kk": "ðæn",
+  "kk_variants": [
+   "ðən"
+  ],
+  "sylls": [
+   [
+    "ðæn",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ð",
+   "æ",
+   "nasal-end"
+  ],
+  "rhymes": [
+   "can",
+   "fan",
+   "man",
+   "plan"
+  ],
+  "pairs": [
+   {
+    "word": "then",
+    "this": "AE",
+    "that": "EH"
+   },
+   {
+    "word": "man",
+    "this": "DH",
+    "that": "M"
+   },
+   {
+    "word": "that",
+    "this": "N",
+    "that": "T"
+   },
+   {
+    "word": "can",
+    "this": "DH",
+    "that": "K"
+   },
+   {
+    "word": "fan",
+    "this": "DH",
+    "that": "F"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "thank",
+  "slug": "thank",
+  "zh": "謝謝",
+  "letter": "T",
+  "kk": "θæŋk",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "θæŋk",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "θ",
+   "æ",
+   "nasal-end",
+   "final-cluster"
+  ],
+  "rhymes": [
+   "bank",
+   "blank"
+  ],
+  "pairs": [
+   {
+    "word": "think",
+    "this": "AE",
+    "that": "IH"
+   },
+   {
+    "word": "bank",
+    "this": "TH",
+    "that": "B"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "that",
+  "slug": "that",
+  "zh": "那個",
+  "letter": "T",
+  "kk": "ðæt",
+  "kk_variants": [
+   "ðət"
+  ],
+  "sylls": [
+   [
+    "ðæt",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ð",
+   "æ"
+  ],
+  "rhymes": [
+   "at",
+   "bat",
+   "cat",
+   "fat",
+   "hat",
+   "rat"
+  ],
+  "pairs": [
+   {
+    "word": "cat",
+    "this": "DH",
+    "that": "K"
+   },
+   {
+    "word": "hat",
+    "this": "DH",
+    "that": "HH"
+   },
+   {
+    "word": "than",
+    "this": "T",
+    "that": "N"
+   },
+   {
+    "word": "bat",
+    "this": "DH",
+    "that": "B"
+   },
+   {
+    "word": "fat",
+    "this": "DH",
+    "that": "F"
+   },
+   {
+    "word": "rat",
+    "this": "DH",
+    "that": "R"
+   }
+  ],
+  "theme": null,
+  "demand": 48
+ },
+ {
+  "word": "theater",
+  "slug": "theater",
+  "zh": "戲院",
+  "letter": "T",
+  "kk": "ˈθiətɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "θi",
+    "1"
+   ],
+   [
+    "ə",
+    "0"
+   ],
+   [
+    "tɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "θ",
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "these",
+  "slug": "these",
+  "zh": "這些",
+  "letter": "T",
+  "kk": "ðiz",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ðiz",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ð",
+   "final-z"
+  ],
+  "rhymes": [
+   "cheese",
+   "chinese",
+   "please"
+  ],
+  "pairs": [
+   {
+    "word": "those",
+    "this": "IY",
+    "that": "OW"
+   },
+   {
+    "word": "cheese",
+    "this": "DH",
+    "that": "CH"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "thick",
+  "slug": "thick",
+  "zh": "厚的",
+  "letter": "T",
+  "kk": "θɪk",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "θɪk",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "θ",
+   "ɪ"
+  ],
+  "rhymes": [
+   "kick",
+   "pick",
+   "quick",
+   "sick",
+   "trick"
+  ],
+  "pairs": [
+   {
+    "word": "thin",
+    "this": "K",
+    "that": "N"
+   },
+   {
+    "word": "thing",
+    "this": "K",
+    "that": "NG"
+   },
+   {
+    "word": "kick",
+    "this": "TH",
+    "that": "K"
+   },
+   {
+    "word": "pick",
+    "this": "TH",
+    "that": "P"
+   },
+   {
+    "word": "sick",
+    "this": "TH",
+    "that": "S"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "thin",
+  "slug": "thin",
+  "zh": "瘦的",
+  "letter": "T",
+  "kk": "θɪn",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "θɪn",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "θ",
+   "ɪ",
+   "nasal-end"
+  ],
+  "rhymes": [
+   "begin",
+   "in",
+   "pin",
+   "violin",
+   "win"
+  ],
+  "pairs": [
+   {
+    "word": "thick",
+    "this": "N",
+    "that": "K"
+   },
+   {
+    "word": "thing",
+    "this": "N",
+    "that": "NG"
+   },
+   {
+    "word": "pin",
+    "this": "TH",
+    "that": "P"
+   },
+   {
+    "word": "win",
+    "this": "TH",
+    "that": "W"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "thing",
+  "slug": "thing",
+  "zh": "事情",
+  "letter": "T",
+  "kk": "θɪŋ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "θɪŋ",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "θ",
+   "ɪ",
+   "nasal-end"
+  ],
+  "rhymes": [
+   "bring",
+   "king",
+   "ring",
+   "sing",
+   "spring",
+   "string",
+   "swing"
+  ],
+  "pairs": [
+   {
+    "word": "thick",
+    "this": "NG",
+    "that": "K"
+   },
+   {
+    "word": "thin",
+    "this": "NG",
+    "that": "N"
+   },
+   {
+    "word": "king",
+    "this": "TH",
+    "that": "K"
+   },
+   {
+    "word": "ring",
+    "this": "TH",
+    "that": "R"
+   },
+   {
+    "word": "sing",
+    "this": "TH",
+    "that": "S"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "think",
+  "slug": "think",
+  "zh": "想、思考",
+  "letter": "T",
+  "kk": "θɪŋk",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "θɪŋk",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "θ",
+   "ɪ",
+   "nasal-end",
+   "final-cluster"
+  ],
+  "rhymes": [
+   "drink",
+   "pink"
+  ],
+  "pairs": [
+   {
+    "word": "thank",
+    "this": "IH",
+    "that": "AE"
+   },
+   {
+    "word": "pink",
+    "this": "TH",
+    "that": "P"
+   }
+  ],
+  "theme": null,
+  "demand": 23
+ },
+ {
+  "word": "third",
+  "slug": "third",
+  "zh": "第三〈的〉",
+  "letter": "T",
+  "kk": "θɝd",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "θɝd",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "θ",
+   "ɚ"
+  ],
+  "rhymes": [
+   "bird",
+   "word"
+  ],
+  "pairs": [
+   {
+    "word": "bird",
+    "this": "TH",
+    "that": "B"
+   },
+   {
+    "word": "word",
+    "this": "TH",
+    "that": "W"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "thirsty",
+  "slug": "thirsty",
+  "zh": "口渴的",
+  "letter": "T",
+  "kk": "ˈθɝstɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "θɝ",
+    "1"
+   ],
+   [
+    "stɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "θ",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "thirteen",
+  "slug": "thirteen",
+  "zh": "十三",
+  "letter": "T",
+  "kk": "ˌθɝˈtin",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "θɝ",
+    "2"
+   ],
+   [
+    "tin",
+    "1"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 2,
+  "features": [
+   "θ",
+   "ɚ",
+   "nasal-end"
+  ],
+  "rhymes": [
+   "bean",
+   "between",
+   "clean",
+   "eighteen",
+   "fifteen",
+   "fourteen",
+   "green",
+   "halloween",
+   "machine",
+   "mean",
+   "nineteen",
+   "queen"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "thirty",
+  "slug": "thirty",
+  "zh": "三十",
+  "letter": "T",
+  "kk": "ˈθɝtɪ",
+  "kk_variants": [
+   "ˈθɝˌti"
+  ],
+  "sylls": [
+   [
+    "θɝ",
+    "1"
+   ],
+   [
+    "tɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "θ",
+   "ɚ"
+  ],
+  "rhymes": [
+   "dirty"
+  ],
+  "pairs": [
+   {
+    "word": "dirty",
+    "this": "TH",
+    "that": "D"
+   }
+  ],
+  "theme": "數字 Numbers",
+  "demand": 0
+ },
+ {
+  "word": "this",
+  "slug": "this",
+  "zh": "這個",
+  "letter": "T",
+  "kk": "ðɪs",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ðɪs",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ð",
+   "ɪ"
+  ],
+  "rhymes": [
+   "kiss",
+   "miss"
+  ],
+  "pairs": [
+   {
+    "word": "kiss",
+    "this": "DH",
+    "that": "K"
+   },
+   {
+    "word": "miss",
+    "this": "DH",
+    "that": "M"
+   }
+  ],
+  "theme": null,
+  "demand": 71
+ },
+ {
+  "word": "those",
+  "slug": "those",
+  "zh": "那些",
+  "letter": "T",
+  "kk": "ðoz",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ðoz",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ð",
+   "final-z"
+  ],
+  "rhymes": [
+   "nose",
+   "rose"
+  ],
+  "pairs": [
+   {
+    "word": "these",
+    "this": "OW",
+    "that": "IY"
+   },
+   {
+    "word": "nose",
+    "this": "DH",
+    "that": "N"
+   },
+   {
+    "word": "rose",
+    "this": "DH",
+    "that": "R"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "though",
+  "slug": "though",
+  "zh": "雖然",
+  "letter": "T",
+  "kk": "ðo",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ðo",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ð",
+   "silent-gh"
+  ],
+  "rhymes": [
+   "ago",
+   "below",
+   "blow",
+   "go",
+   "grow",
+   "hello",
+   "know",
+   "low",
+   "no",
+   "show",
+   "slow",
+   "snow"
+  ],
+  "pairs": [
+   {
+    "word": "they",
+    "this": "OW",
+    "that": "EY"
+   },
+   {
+    "word": "know",
+    "this": "DH",
+    "that": "N"
+   },
+   {
+    "word": "go",
+    "this": "DH",
+    "that": "G"
+   },
+   {
+    "word": "low",
+    "this": "DH",
+    "that": "L"
+   },
+   {
+    "word": "no",
+    "this": "DH",
+    "that": "N"
+   },
+   {
+    "word": "show",
+    "this": "DH",
+    "that": "SH"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "thousand",
+  "slug": "thousand",
+  "zh": "千",
+  "letter": "T",
+  "kk": "ˈθaʊzənd",
+  "kk_variants": [
+   "ˈθaʊzən"
+  ],
+  "sylls": [
+   [
+    "θaʊ",
+    "1"
+   ],
+   [
+    "zənd",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "θ",
+   "final-cluster"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "數字 Numbers",
+  "demand": 0
+ },
+ {
+  "word": "three",
+  "slug": "three",
+  "zh": "三",
+  "letter": "T",
+  "kk": "θri",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "θri",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "θ"
+  ],
+  "rhymes": [
+   "agree",
+   "be",
+   "bee",
+   "free",
+   "he",
+   "key",
+   "knee",
+   "sea",
+   "see",
+   "she",
+   "tea",
+   "tree"
+  ],
+  "pairs": [
+   {
+    "word": "through",
+    "this": "IY",
+    "that": "UW"
+   },
+   {
+    "word": "throw",
+    "this": "IY",
+    "that": "OW"
+   },
+   {
+    "word": "free",
+    "this": "TH",
+    "that": "F"
+   },
+   {
+    "word": "tree",
+    "this": "TH",
+    "that": "T"
+   }
+  ],
+  "theme": "數字 Numbers",
+  "demand": 0
+ },
+ {
+  "word": "through",
+  "slug": "through",
+  "zh": "穿過",
+  "letter": "T",
+  "kk": "θru",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "θru",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "θ",
+   "silent-gh"
+  ],
+  "rhymes": [
+   "blue",
+   "do",
+   "few",
+   "glue",
+   "new",
+   "shoe",
+   "to",
+   "too",
+   "true",
+   "two",
+   "who",
+   "you"
+  ],
+  "pairs": [
+   {
+    "word": "three",
+    "this": "UW",
+    "that": "IY"
+   },
+   {
+    "word": "throw",
+    "this": "UW",
+    "that": "OW"
+   },
+   {
+    "word": "true",
+    "this": "TH",
+    "that": "T"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "Thursday",
+  "slug": "thursday",
+  "zh": "星期四",
+  "letter": "T",
+  "kk": "ˈθɝzˌde",
+  "kk_variants": [
+   "ˈθɝzdɪ"
+  ],
+  "sylls": [
+   [
+    "θɝz",
+    "1"
+   ],
+   [
+    "de",
+    "2"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "θ",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "時間／星期／月份 Time",
+  "demand": 0
+ },
+ {
+  "word": "tiger",
+  "slug": "tiger",
+  "zh": "老虎",
+  "letter": "T",
+  "kk": "ˈtaɪgɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "taɪ",
+    "1"
+   ],
+   [
+    "gɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "動物 Animals & Insects",
+  "demand": 0
+ },
+ {
+  "word": "together",
+  "slug": "together",
+  "zh": "一起",
+  "letter": "T",
+  "kk": "təˈgɛðɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "tə",
+    "0"
+   ],
+   [
+    "gɛ",
+    "1"
+   ],
+   [
+    "ðɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "ð",
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [
+   "weather",
+   "whether"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "tomato",
+  "slug": "tomato",
+  "zh": "番茄",
+  "letter": "T",
+  "kk": "təˈmeˌto",
+  "kk_variants": [
+   "təˈmɑˌto"
+  ],
+  "sylls": [
+   [
+    "tə",
+    "0"
+   ],
+   [
+    "me",
+    "1"
+   ],
+   [
+    "to",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "tomorrow",
+  "slug": "tomorrow",
+  "zh": "明天",
+  "letter": "T",
+  "kk": "təˈmɑˌro",
+  "kk_variants": [
+   "tuˈmɑˌro"
+  ],
+  "sylls": [
+   [
+    "tə",
+    "0"
+   ],
+   [
+    "mɑ",
+    "1"
+   ],
+   [
+    "ro",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [
+   "borrow"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "tooth",
+  "slug": "tooth",
+  "zh": "牙齒",
+  "letter": "T",
+  "kk": "tuθ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "tuθ",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "θ"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "tool",
+    "this": "TH",
+    "that": "L"
+   }
+  ],
+  "theme": "身體 Body",
+  "demand": 0
+ },
+ {
+  "word": "turtle",
+  "slug": "turtle",
+  "zh": "烏龜",
+  "letter": "T",
+  "kk": "ˈtɝtḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "tɝ",
+    "1"
+   ],
+   [
+    "tḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "dark-l",
+   "ɚ"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "total",
+    "this": "ER",
+    "that": "OW"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "umbrella",
+  "slug": "umbrella",
+  "zh": "雨傘",
+  "letter": "U",
+  "kk": "əmˈbrɛlə",
+  "kk_variants": [
+   "ˈʌmˌbrɛlə"
+  ],
+  "sylls": [
+   [
+    "əm",
+    "0"
+   ],
+   [
+    "brɛ",
+    "1"
+   ],
+   [
+    "lə",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "uncle",
+  "slug": "uncle",
+  "zh": "伯(叔)",
+  "letter": "U",
+  "kk": "ˈʌŋkḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ʌŋ",
+    "1"
+   ],
+   [
+    "kḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "dark-l",
+   "nasal-end"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "家庭 Family",
+  "demand": 0
+ },
+ {
+  "word": "understand",
+  "slug": "understand",
+  "zh": "了解",
+  "letter": "U",
+  "kk": "ˌʌndɚˈstænd",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ʌn",
+    "2"
+   ],
+   [
+    "dɚ",
+    "0"
+   ],
+   [
+    "stænd",
+    "1"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 3,
+  "features": [
+   "æ",
+   "ɚ",
+   "final-cluster",
+   "schwa"
+  ],
+  "rhymes": [
+   "band",
+   "hand",
+   "land",
+   "stand"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "unhappy",
+  "slug": "unhappy",
+  "zh": "不快樂的",
+  "letter": "U",
+  "kk": "ˌʌnˈhæpɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ʌn",
+    "2"
+   ],
+   [
+    "hæ",
+    "1"
+   ],
+   [
+    "pɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "æ",
+   "schwa"
+  ],
+  "rhymes": [
+   "happy"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "uniform",
+  "slug": "uniform",
+  "zh": "制服",
+  "letter": "U",
+  "kk": "ˈjunəˌfɔrm",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ju",
+    "1"
+   ],
+   [
+    "nə",
+    "0"
+   ],
+   [
+    "fɔrm",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "final-cluster",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "usually",
+  "slug": "usually",
+  "zh": "通常",
+  "letter": "U",
+  "kk": "ˈjuʒʊəlɪ",
+  "kk_variants": [
+   "ˈjuʒəlɪ"
+  ],
+  "sylls": [
+   [
+    "ju",
+    "1"
+   ],
+   [
+    "ʒʊ",
+    "0"
+   ],
+   [
+    "ə",
+    "0"
+   ],
+   [
+    "lɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 4,
+  "stress": 1,
+  "features": [
+   "ʒ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "vacation",
+  "slug": "vacation",
+  "zh": "假期",
+  "letter": "V",
+  "kk": "veˈkeʃən",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "ve",
+    "0"
+   ],
+   [
+    "ke",
+    "1"
+   ],
+   [
+    "ʃən",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 2,
+  "features": [
+   "v",
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [
+   "station"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "vegetable",
+  "slug": "vegetable",
+  "zh": "蔬菜",
+  "letter": "V",
+  "kk": "ˈvɛdʒtəbḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "vɛdʒ",
+    "1"
+   ],
+   [
+    "tə",
+    "0"
+   ],
+   [
+    "bḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "v",
+   "dark-l",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "食物 Food & Drinks",
+  "demand": 0
+ },
+ {
+  "word": "very",
+  "slug": "very",
+  "zh": "非常",
+  "letter": "V",
+  "kk": "ˈvɛrɪ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "vɛ",
+    "1"
+   ],
+   [
+    "rɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "v"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "video",
+  "slug": "video",
+  "zh": "錄影帶",
+  "letter": "V",
+  "kk": "ˈvɪdɪo",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "vɪ",
+    "1"
+   ],
+   [
+    "dɪ",
+    "0"
+   ],
+   [
+    "o",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "v",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "violin",
+  "slug": "violin",
+  "zh": "小提琴",
+  "letter": "V",
+  "kk": "vaɪəˈlɪn",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "vaɪ",
+    "0"
+   ],
+   [
+    "ə",
+    "0"
+   ],
+   [
+    "lɪn",
+    "1"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 3,
+  "features": [
+   "v",
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [
+   "begin",
+   "in",
+   "pin",
+   "thin",
+   "win"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "visitor",
+  "slug": "visitor",
+  "zh": "訪客",
+  "letter": "V",
+  "kk": "ˈvɪzɪtɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "vɪ",
+    "1"
+   ],
+   [
+    "zɪ",
+    "0"
+   ],
+   [
+    "tɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "v",
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "walk",
+  "slug": "walk",
+  "zh": "走路",
+  "letter": "W",
+  "kk": "wɔk",
+  "kk_variants": [
+   "wɑk"
+  ],
+  "sylls": [
+   [
+    "wɔk",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "silent-l"
+  ],
+  "rhymes": [
+   "talk"
+  ],
+  "pairs": [
+   {
+    "word": "work",
+    "this": "AO",
+    "that": "ER"
+   },
+   {
+    "word": "wake",
+    "this": "AO",
+    "that": "EY"
+   },
+   {
+    "word": "weak",
+    "this": "AO",
+    "that": "IY"
+   },
+   {
+    "word": "week",
+    "this": "AO",
+    "that": "IY"
+   },
+   {
+    "word": "talk",
+    "this": "W",
+    "that": "T"
+   },
+   {
+    "word": "wall",
+    "this": "K",
+    "that": "L"
+   }
+  ],
+  "theme": "動作 Common Verbs",
+  "demand": 0
+ },
+ {
+  "word": "water",
+  "slug": "water",
+  "zh": "水",
+  "letter": "W",
+  "kk": "ˈwɔtɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "wɔ",
+    "1"
+   ],
+   [
+    "tɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ɚ"
+  ],
+  "rhymes": [
+   "daughter"
+  ],
+  "pairs": [
+   {
+    "word": "waiter",
+    "this": "AO",
+    "that": "EY"
+   },
+   {
+    "word": "daughter",
+    "this": "W",
+    "that": "D"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "watermelon",
+  "slug": "watermelon",
+  "zh": "西瓜",
+  "letter": "W",
+  "kk": "ˈwɔtɚˌmɛlən",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "wɔ",
+    "1"
+   ],
+   [
+    "tɚ",
+    "0"
+   ],
+   [
+    "mɛ",
+    "2"
+   ],
+   [
+    "lən",
+    "0"
+   ]
+  ],
+  "n_syll": 4,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "nasal-end",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "食物 Food & Drinks",
+  "demand": 0
+ },
+ {
+  "word": "weather",
+  "slug": "weather",
+  "zh": "天氣",
+  "letter": "W",
+  "kk": "ˈwɛðɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "wɛ",
+    "1"
+   ],
+   [
+    "ðɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ð",
+   "ɚ"
+  ],
+  "rhymes": [
+   "together",
+   "whether"
+  ],
+  "pairs": [],
+  "theme": "天氣 Weather",
+  "demand": 44
+ },
+ {
+  "word": "Wednesday",
+  "slug": "wednesday",
+  "zh": "星期三",
+  "letter": "W",
+  "kk": "ˈwɛnzdɪ",
+  "kk_variants": [
+   "ˈwɛnzˌde"
+  ],
+  "sylls": [
+   [
+    "wɛnz",
+    "1"
+   ],
+   [
+    "dɪ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "silent-d"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "時間／星期／月份 Time",
+  "demand": 0
+ },
+ {
+  "word": "what",
+  "slug": "what",
+  "zh": "什麼",
+  "letter": "W",
+  "kk": "wʌt",
+  "kk_variants": [
+   "hwʌt"
+  ],
+  "sylls": [
+   [
+    "wʌt",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [
+   "but",
+   "cut"
+  ],
+  "pairs": [
+   {
+    "word": "wait",
+    "this": "AH",
+    "that": "EY"
+   },
+   {
+    "word": "wet",
+    "this": "AH",
+    "that": "EH"
+   },
+   {
+    "word": "white",
+    "this": "AH",
+    "that": "AY"
+   },
+   {
+    "word": "one",
+    "this": "T",
+    "that": "N"
+   },
+   {
+    "word": "but",
+    "this": "W",
+    "that": "B"
+   },
+   {
+    "word": "cut",
+    "this": "W",
+    "that": "K"
+   }
+  ],
+  "theme": null,
+  "demand": 51
+ },
+ {
+  "word": "where",
+  "slug": "where",
+  "zh": "何處",
+  "letter": "W",
+  "kk": "wɛr",
+  "kk_variants": [
+   "hwɛr"
+  ],
+  "sylls": [
+   [
+    "wɛr",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [
+   "air",
+   "bear",
+   "care",
+   "chair",
+   "hair",
+   "pair",
+   "pear",
+   "prepare",
+   "share",
+   "square",
+   "there",
+   "wear"
+  ],
+  "pairs": [
+   {
+    "word": "chair",
+    "this": "W",
+    "that": "CH"
+   },
+   {
+    "word": "hair",
+    "this": "W",
+    "that": "HH"
+   },
+   {
+    "word": "bear",
+    "this": "W",
+    "that": "B"
+   },
+   {
+    "word": "care",
+    "this": "W",
+    "that": "K"
+   },
+   {
+    "word": "pair",
+    "this": "W",
+    "that": "P"
+   },
+   {
+    "word": "pear",
+    "this": "W",
+    "that": "P"
+   }
+  ],
+  "theme": null,
+  "demand": 26
+ },
+ {
+  "word": "whether",
+  "slug": "whether",
+  "zh": "是否",
+  "letter": "W",
+  "kk": "ˈwɛðɚ",
+  "kk_variants": [
+   "ˈhwɛðɚ"
+  ],
+  "sylls": [
+   [
+    "wɛ",
+    "1"
+   ],
+   [
+    "ðɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ð",
+   "ɚ"
+  ],
+  "rhymes": [
+   "together",
+   "weather"
+  ],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "which",
+  "slug": "which",
+  "zh": "哪一個",
+  "letter": "W",
+  "kk": "wɪtʃ",
+  "kk_variants": [
+   "hwɪtʃ"
+  ],
+  "sylls": [
+   [
+    "wɪtʃ",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ɪ"
+  ],
+  "rhymes": [
+   "rich"
+  ],
+  "pairs": [
+   {
+    "word": "watch",
+    "this": "IH",
+    "that": "AA"
+   },
+   {
+    "word": "will",
+    "this": "CH",
+    "that": "L"
+   },
+   {
+    "word": "with",
+    "this": "CH",
+    "that": "DH"
+   },
+   {
+    "word": "rich",
+    "this": "W",
+    "that": "R"
+   },
+   {
+    "word": "win",
+    "this": "CH",
+    "that": "N"
+   },
+   {
+    "word": "wish",
+    "this": "CH",
+    "that": "SH"
+   }
+  ],
+  "theme": null,
+  "demand": 6
+ },
+ {
+  "word": "who",
+  "slug": "who",
+  "zh": "誰",
+  "letter": "W",
+  "kk": "hu",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "hu",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "silent-w"
+  ],
+  "rhymes": [
+   "blue",
+   "do",
+   "few",
+   "glue",
+   "new",
+   "shoe",
+   "through",
+   "to",
+   "too",
+   "true",
+   "two",
+   "you"
+  ],
+  "pairs": [
+   {
+    "word": "he",
+    "this": "UW",
+    "that": "IY"
+   },
+   {
+    "word": "hey",
+    "this": "UW",
+    "that": "EY"
+   },
+   {
+    "word": "hi",
+    "this": "UW",
+    "that": "AY"
+   },
+   {
+    "word": "high",
+    "this": "UW",
+    "that": "AY"
+   },
+   {
+    "word": "how",
+    "this": "UW",
+    "that": "AW"
+   },
+   {
+    "word": "zoo",
+    "this": "HH",
+    "that": "Z"
+   }
+  ],
+  "theme": null,
+  "demand": 10
+ },
+ {
+  "word": "why",
+  "slug": "why",
+  "zh": "為什麼",
+  "letter": "W",
+  "kk": "waɪ",
+  "kk_variants": [
+   "hwaɪ"
+  ],
+  "sylls": [
+   [
+    "waɪ",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [
+   "buy",
+   "by",
+   "cry",
+   "die",
+   "dry",
+   "eye",
+   "fly",
+   "fry",
+   "guy",
+   "hi",
+   "high",
+   "i"
+  ],
+  "pairs": [
+   {
+    "word": "way",
+    "this": "AY",
+    "that": "EY"
+   },
+   {
+    "word": "we",
+    "this": "AY",
+    "that": "IY"
+   },
+   {
+    "word": "buy",
+    "this": "W",
+    "that": "B"
+   },
+   {
+    "word": "by",
+    "this": "W",
+    "that": "B"
+   },
+   {
+    "word": "die",
+    "this": "W",
+    "that": "D"
+   },
+   {
+    "word": "guy",
+    "this": "W",
+    "that": "G"
+   }
+  ],
+  "theme": null,
+  "demand": 9
+ },
+ {
+  "word": "will",
+  "slug": "will",
+  "zh": "將會...",
+  "letter": "W",
+  "kk": "wɪl",
+  "kk_variants": [
+   "wəl"
+  ],
+  "sylls": [
+   [
+    "wɪl",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ɪ",
+   "dark-l"
+  ],
+  "rhymes": [
+   "fill",
+   "hill",
+   "kill",
+   "still",
+   "until"
+  ],
+  "pairs": [
+   {
+    "word": "wall",
+    "this": "IH",
+    "that": "AO"
+   },
+   {
+    "word": "well",
+    "this": "IH",
+    "that": "EH"
+   },
+   {
+    "word": "while",
+    "this": "IH",
+    "that": "AY"
+   },
+   {
+    "word": "fill",
+    "this": "W",
+    "that": "F"
+   },
+   {
+    "word": "hill",
+    "this": "W",
+    "that": "HH"
+   },
+   {
+    "word": "which",
+    "this": "L",
+    "that": "CH"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "with",
+  "slug": "with",
+  "zh": "和",
+  "letter": "W",
+  "kk": "wɪð",
+  "kk_variants": [
+   "wɪθ"
+  ],
+  "sylls": [
+   [
+    "wɪð",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ð",
+   "ɪ"
+  ],
+  "rhymes": [],
+  "pairs": [
+   {
+    "word": "which",
+    "this": "DH",
+    "that": "CH"
+   },
+   {
+    "word": "will",
+    "this": "DH",
+    "that": "L"
+   },
+   {
+    "word": "win",
+    "this": "DH",
+    "that": "N"
+   },
+   {
+    "word": "wish",
+    "this": "DH",
+    "that": "SH"
+   }
+  ],
+  "theme": null,
+  "demand": 77
+ },
+ {
+  "word": "wonderful",
+  "slug": "wonderful",
+  "zh": "極好的",
+  "letter": "W",
+  "kk": "ˈwʌndɚfḷ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "wʌn",
+    "1"
+   ],
+   [
+    "dɚ",
+    "0"
+   ],
+   [
+    "fḷ",
+    "0"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "dark-l",
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "word",
+  "slug": "word",
+  "zh": "字",
+  "letter": "W",
+  "kk": "wɝd",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "wɝd",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ɚ"
+  ],
+  "rhymes": [
+   "bird",
+   "third"
+  ],
+  "pairs": [
+   {
+    "word": "wide",
+    "this": "ER",
+    "that": "AY"
+   },
+   {
+    "word": "bird",
+    "this": "W",
+    "that": "B"
+   },
+   {
+    "word": "third",
+    "this": "W",
+    "that": "TH"
+   },
+   {
+    "word": "work",
+    "this": "D",
+    "that": "K"
+   },
+   {
+    "word": "worry",
+    "this": "D",
+    "that": "IY"
+   }
+  ],
+  "theme": null,
+  "demand": 58
+ },
+ {
+  "word": "work",
+  "slug": "work",
+  "zh": "工作",
+  "letter": "W",
+  "kk": "wɝk",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "wɝk",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ɚ"
+  ],
+  "rhymes": [
+   "clerk"
+  ],
+  "pairs": [
+   {
+    "word": "walk",
+    "this": "ER",
+    "that": "AO"
+   },
+   {
+    "word": "wake",
+    "this": "ER",
+    "that": "EY"
+   },
+   {
+    "word": "weak",
+    "this": "ER",
+    "that": "IY"
+   },
+   {
+    "word": "week",
+    "this": "ER",
+    "that": "IY"
+   },
+   {
+    "word": "word",
+    "this": "K",
+    "that": "D"
+   },
+   {
+    "word": "worry",
+    "this": "K",
+    "that": "IY"
+   }
+  ],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "world",
+  "slug": "world",
+  "zh": "世界",
+  "letter": "W",
+  "kk": "wɝld",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "wɝld",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "final-cluster"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "write",
+  "slug": "write",
+  "zh": "寫",
+  "letter": "W",
+  "kk": "raɪt",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "raɪt",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [
+   "silent-w"
+  ],
+  "rhymes": [
+   "bite",
+   "bright",
+   "fight",
+   "height",
+   "invite",
+   "kite",
+   "light",
+   "night",
+   "polite",
+   "quite",
+   "right",
+   "sight"
+  ],
+  "pairs": [
+   {
+    "word": "rat",
+    "this": "AY",
+    "that": "AE"
+   },
+   {
+    "word": "root",
+    "this": "AY",
+    "that": "UW"
+   },
+   {
+    "word": "bite",
+    "this": "R",
+    "that": "B"
+   },
+   {
+    "word": "fight",
+    "this": "R",
+    "that": "F"
+   },
+   {
+    "word": "height",
+    "this": "R",
+    "that": "HH"
+   },
+   {
+    "word": "kite",
+    "this": "R",
+    "that": "K"
+   }
+  ],
+  "theme": "動作 Common Verbs",
+  "demand": 0
+ },
+ {
+  "word": "writer",
+  "slug": "writer",
+  "zh": "作家",
+  "letter": "W",
+  "kk": "ˈraɪtɚ",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "raɪ",
+    "1"
+   ],
+   [
+    "tɚ",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "silent-w"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "yellow",
+  "slug": "yellow",
+  "zh": "黃色(的)",
+  "letter": "Y",
+  "kk": "ˈjɛlo",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "jɛ",
+    "1"
+   ],
+   [
+    "lo",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "顏色 Colors",
+  "demand": 0
+ },
+ {
+  "word": "yesterday",
+  "slug": "yesterday",
+  "zh": "昨天",
+  "letter": "Y",
+  "kk": "ˈjɛstɚˌde",
+  "kk_variants": [
+   "ˈjɛstɚdɪ"
+  ],
+  "sylls": [
+   [
+    "jɛs",
+    "1"
+   ],
+   [
+    "tɚ",
+    "0"
+   ],
+   [
+    "de",
+    "2"
+   ]
+  ],
+  "n_syll": 3,
+  "stress": 1,
+  "features": [
+   "ɚ",
+   "schwa"
+  ],
+  "rhymes": [],
+  "pairs": [],
+  "theme": null,
+  "demand": 0
+ },
+ {
+  "word": "zero",
+  "slug": "zero",
+  "zh": "零",
+  "letter": "Z",
+  "kk": "ˈzɪro",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "zɪ",
+    "1"
+   ],
+   [
+    "ro",
+    "0"
+   ]
+  ],
+  "n_syll": 2,
+  "stress": 1,
+  "features": [],
+  "rhymes": [],
+  "pairs": [],
+  "theme": "數字 Numbers",
+  "demand": 0
+ },
+ {
+  "word": "zoo",
+  "slug": "zoo",
+  "zh": "動物園",
+  "letter": "Z",
+  "kk": "zu",
+  "kk_variants": [],
+  "sylls": [
+   [
+    "zu",
+    "1"
+   ]
+  ],
+  "n_syll": 1,
+  "stress": 1,
+  "features": [],
+  "rhymes": [
+   "blue",
+   "do",
+   "few",
+   "glue",
+   "new",
+   "shoe",
+   "through",
+   "to",
+   "too",
+   "true",
+   "two",
+   "who"
+  ],
+  "pairs": [
+   {
+    "word": "who",
+    "this": "Z",
+    "that": "HH"
+   },
+   {
+    "word": "do",
+    "this": "Z",
+    "that": "D"
+   },
+   {
+    "word": "new",
+    "this": "Z",
+    "that": "N"
+   },
+   {
+    "word": "shoe",
+    "this": "Z",
+    "that": "SH"
+   },
+   {
+    "word": "to",
+    "this": "Z",
+    "that": "T"
+   },
+   {
+    "word": "too",
+    "this": "Z",
+    "that": "T"
+   }
+  ],
+  "theme": null,
+  "demand": 8
+ }
+]

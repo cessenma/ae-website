@@ -34,8 +34,38 @@ ONSETS = {tuple(x.split()) for x in """P R|P L|B R|B L|T R|D R|K R|K L|G R|G L|F
 def is_vowel(p):
     return p[:2] in VOW or p[:2] in ("AH", "ER", "IY")
 
+def normalize(phones):
+    """CMU writes the r of around / arrive / every as an unstressed ER before a vowel (ER0 AW1 …),
+    which gave [ɚˈaʊnd]; Taiwan KK writes [əˈraʊnd] — a schwa, then r starting the next syllable."""
+    out = []
+    for i, p in enumerate(phones):
+        if p == "ER0" and i + 1 < len(phones) and is_vowel(phones[i + 1]):
+            out += ["AH0", "R"]
+        elif p in ("IY2", "IH2") and i == len(phones) - 1:
+            out.append(p[:-1] + "0")       # nobody, everybody: CMU's final IY2 → an unstressed [ɪ], as KK writes it
+        else:
+            out.append(p)
+    # two primary stresses (engineer EH1…IH1, thirteen ER1…IY1): the LAST is the main one, the
+    # earlier ones become secondary — thirteen is θɝˈtin, which is how 13 differs from 30
+    ones = [i for i, p in enumerate(out) if is_vowel(p) and p.endswith("1")]
+    for i in ones[:-1]:
+        out[i] = out[i][:-1] + "2"
+    # a short [ɪ]/[ʊ] secondary right after the main stress is a CMU artefact (hospital IH2,
+    # badminton IH2): KK writes [ˈhɑspɪtḷ], [ˈbædmɪntṇ]
+    vs = [i for i, p in enumerate(out) if is_vowel(p)]
+    for a_, b_ in zip(vs, vs[1:]):
+        if out[a_].endswith("1") and out[b_] in ("IH2", "UH2"):     # not ʌ/u: grandmother, bathroom keep theirs
+            out[b_] = out[b_][:-1] + "0"
+    return out
+
+# Single words where CMU's first entry is not the form Taiwan's KK dictionaries teach.
+OVERRIDES = {"every": "EH1 V R IY0", "even": "IY1 V AH0 N", "sometimes": "S AH1 M T AY2 M Z",
+             "actually": "AE1 K CH UH0 AH0 L IY0", "usually": "Y UW1 ZH UH0 AH0 L IY0", "unhappy": "AH2 N HH AE1 P IY0",
+             "thirty": "TH ER1 T IY0"}      # CMU lists the flap [d] first; Taiwan dictionaries write [ˈθɝtɪ]
+
 def kk(phones):
     """ARPAbet (with stress digits) → KK string, stress marks before the stressed syllable."""
+    phones = normalize(phones)
     ph = phones[:]
     vidx = [i for i, p in enumerate(ph) if is_vowel(p)]
     out = []                                       # one symbol string per phone
@@ -101,6 +131,8 @@ def build():
         w = re.sub(r"\(\d+\)$", "", w)
         if not WORD_RE.match(w):
             continue
+        if w in OVERRIDES:
+            phones = OVERRIDES[w].split()
         t = kk(phones)
         key = (w[:2] if len(w) > 1 and w[1].isalpha() else w[0] + "_")
         cur = data[key].get(w)
@@ -125,7 +157,7 @@ TESTS = {"cat": "kæt", "happy": "ˈhæpɪ", "water": "ˈwɔtɚ", "little": "ˈl
          "music": "ˈmjuzɪk", "teacher": "ˈtitʃɚ", "computer": "kəmˈpjutɚ", "banana": "bəˈnænə",
          "apple": "ˈæpḷ", "people": "ˈpipḷ", "the": "ðə", "fire": "faɪr", "here": "hɪr", "bird": "bɝd",
          "student": "ˈstudṇt", "very": "ˈvɛrɪ", "garden": "ˈgɑrdṇ", "lemon": "ˈlɛmən", "sing": "sɪŋ",
-         "thank": "θæŋk", "mother": "ˈmʌðɚ", "pleasure": "ˈplɛʒɚ", "about": "əˈbaʊt", "english": "ˈɪŋglɪʃ"}
+         "thank": "θæŋk", "mother": "ˈmʌðɚ", "pleasure": "ˈplɛʒɚ", "about": "əˈbaʊt", "english": "ˈɪŋglɪʃ", "around": "əˈraʊnd", "camera": "ˈkæmərə", "different": "ˈdɪfərənt", "nobody": "ˈnoˌbɑdɪ", "engineer": "ˌɛndʒəˈnɪr", "thirteen": "ˌθɝˈtin", "hospital": "ˈhɑspɪtḷ"}
 
 def selftest():
     d = {}
@@ -154,7 +186,7 @@ BLOCK = """<!-- AE:KKLOOKUP start -->
 #kkl-out{{margin-top:12px}}.kkl-r{{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;padding:10px 0;border-top:1px solid rgba(26,39,82,.08)}}
 .kkl-w{{font-weight:700;color:var(--navy);font-size:18px}}.kkl-k{{font-family:'Lucida Sans Unicode','Arial Unicode MS','DejaVu Sans',sans-serif;font-size:20px;color:#0b5cad}}
 .kkl-r button{{border:none;background:var(--navy);color:#fff;border-radius:999px;padding:6px 12px;font-size:14px;font-family:inherit;cursor:pointer}}.kkl-r button.s{{background:#5b6b8c}}
-.kkl-miss{{color:var(--muted);font-size:14.5px}}.kkl-note{{font-size:13px;color:var(--muted);margin-top:12px;line-height:1.6}}</style>
+.kkl-miss{{color:var(--muted);font-size:14.5px}}.kkl-p{{font-weight:700;font-size:14px;color:var(--blue-ink)}}.kkl-note{{font-size:13px;color:var(--muted);margin-top:12px;line-height:1.6}}</style>
 <script>(function(){{var V="{ver}",cache={{}},inp=document.getElementById('kkl-in'),out=document.getElementById('kkl-out'),sent=0;
 function key(w){{return w.length>1&&/[a-z]/.test(w[1])?w.slice(0,2):w[0]+'_';}}
 function shard(k){{return cache[k]||(cache[k]=fetch('/assets/kk/'+k+'.json?v='+V).then(function(r){{return r.ok?r.json():{{}};}}).catch(function(){{return {{}};}}));}}
@@ -162,6 +194,7 @@ function words(s){{return (s.toLowerCase().match(/[a-z]+(?:'[a-z]+)?/g)||[]).sli
 function voice(){{var vs=speechSynthesis.getVoices();return vs.filter(function(v){{return v.lang==='en-US';}})[0]||vs.filter(function(v){{return /^en/.test(v.lang);}})[0];}}
 function say(t,rate){{if(!('speechSynthesis' in window))return;speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(t);u.lang='en-US';var v=voice();if(v)u.voice=v;u.rate=rate;speechSynthesis.speak(u);
  if(window.gtag)gtag('event','kk_play',{{page_path:location.pathname}});}}
+var PG={pages};
 function esc(s){{return s.replace(/[&<>"]/g,function(c){{return {{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c];}});}}
 async function look(w){{var d=await shard(key(w));return d[w]||null;}}
 async function run(){{var s=inp.value.trim(),ws=words(s);if(!ws.length){{out.innerHTML='';return;}}
@@ -169,7 +202,8 @@ async function run(){{var s=inp.value.trim(),ws=words(s);if(!ws.length){{out.inn
  if(ws.length>1)html+='<div class="kkl-r"><span class="kkl-w">'+esc(s)+'</span><button type="button" data-t="'+esc(s)+'" data-r="0.9">▶ 整句聽</button><button type="button" class="s" data-t="'+esc(s)+'" data-r="0.6">慢速</button></div>';
  ws.forEach(function(w,i){{var k=res[i];if(!k)miss++;
   html+='<div class="kkl-r"><span class="kkl-w">'+esc(w)+'</span>'+(k?'<span class="kkl-k">'+k.split('|').map(function(x){{return '/'+esc(x)+'/';}}).join(' 或 ')+'</span>':'<span class="kkl-miss">查不到這個字，請檢查拼字；仍可按播放聽電腦唸。</span>')+
-  '<button type="button" data-t="'+esc(w)+'" data-r="0.9">▶ 聽發音</button><button type="button" class="s" data-t="'+esc(w)+'" data-r="0.6">慢速</button></div>';}});
+  '<button type="button" data-t="'+esc(w)+'" data-r="0.9">▶ 聽發音</button><button type="button" class="s" data-t="'+esc(w)+'" data-r="0.6">慢速</button>'+
+  (PG.indexOf(w.toLowerCase())>-1?'<a class="kkl-p" href="/pronunciation/'+esc(w.toLowerCase())+'/">完整發音頁 →</a>':'')+'</div>';}});
  out.innerHTML=html;
  if(window.gtag&&sent<20){{sent++;gtag('event','kk_lookup',{{page_path:location.pathname,words:ws.length,found:ws.length-miss}});}}}}
 out.addEventListener('click',function(e){{var b=e.target.closest('button[data-t]');if(b)say(b.getAttribute('data-t'),+b.getAttribute('data-r'));}});
@@ -193,13 +227,18 @@ COPY = {
 }
 CHIPS = ["water", "banana", "comfortable", "vegetable", "thank you", "How are you?"]
 
+def word_pages():
+    """Words that have their own page under /pronunciation/ (tools/build_word_pages.py)."""
+    d = os.path.join(SITE, "pronunciation")
+    return sorted(x for x in os.listdir(d) if os.path.isdir(os.path.join(d, x))) if os.path.isdir(d) else []
+
 def inject(ver):
     for page, kind in PAGES.items():
         fp = os.path.join(SITE, page, "index.html")
         s = open(fp, encoding="utf-8").read()
         h2, lead = COPY[kind]
         chips = "".join(f'<button type="button">{c}</button>' for c in CHIPS)
-        blk = BLOCK.format(h2=h2, lead=lead, chips=chips, ver=ver)
+        blk = BLOCK.format(h2=h2, lead=lead, chips=chips, ver=ver, pages=json.dumps(word_pages()))
         if START in s:
             s = re.sub(re.escape(START) + r".*?" + re.escape(END) + r"\n?", lambda m: blk, s, flags=re.S)
         else:                                     # right after the page hero
