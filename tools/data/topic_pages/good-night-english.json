@@ -1,0 +1,921 @@
+{
+ "slug": "good-night-english",
+ "published": "2026-10-22",
+ "target": "晚安英文",
+ "index": 0.6,
+ "h1": "晚安英文 50 句：爸媽、朋友、情侶怎麼說，Sweet dreams 怎麼回，Good evening 為什麼不是晚安",
+ "title": "晚安英文50句：爸媽、朋友、情侶怎麼說，Good evening 不是晚安｜埃森美語",
+ "desc": "晚安英文 50 句對照表：爸媽哄睡、孩子對爸媽、朋友傳訊息、情侶、正式道別，標出對象與語氣；再講 Good evening 和 Good night 的差別、30 個睡前單字，附 A4 PDF。",
+ "hero": "晚安的英文是 Good night，可是不少孩子晚上一走進教室就對外師說 Good night——老師聽到的其實是「我要走了」。這一頁先給<strong>5 種對象、50 句晚安英文</strong>的對照表：爸媽哄孩子睡、孩子對爸媽、朋友同學傳訊息、另一半、對老師和長輩的正式道別，每句標出對象和語氣；接著講 Good evening 和 Good night 到底差在哪、night 的 gh 為什麼不發音、美國爸媽睡前必說的 Sweet dreams 和 Sleep tight 怎麼回，再給 30 個睡前流程單字、讓英文變成每晚習慣的 10 句爸媽台詞，最後是傳訊息的 gn 和 nite 什麼時候能用。",
+ "sections": [
+  {
+   "title": "晚安英文對照表：5 種對象 50 句（附對象與語氣）",
+   "prose": [
+    "中文一句「晚安」走到哪都通，英文卻會依照<strong>對誰說、在哪裡說</strong>換句子：哄孩子睡有一組押韻的句子，朋友傳訊息只打一個 Night!，對老師和長輩要說完整的 Have a good night。下面分成 5 組，第三欄標出適合的對象和語氣；「萬用」表示對誰說都不失禮。",
+    "先記住一件事：這 50 句全都是<strong>要離開或要睡覺時</strong>說的。晚上剛見面要打招呼，不是 Good night，而是 Good evening 或一聲 Hi——這是台灣學生最常犯的錯，下面有一整段說明。生日、道謝等其他場合的句子在 <a href=\"/english-wishes/\">祝福英文 180 句</a>。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "適合對象／語氣"
+   ],
+   "groups": [
+    {
+     "name": "爸媽對孩子（睡前）Parent to child",
+     "rows": [
+      [
+       "Good night, sweetie.",
+       "晚安，寶貝。",
+       "爸媽對孩子・最常用的一句"
+      ],
+      [
+       "Sweet dreams!",
+       "祝你好夢！",
+       "爸媽對孩子・關燈前"
+      ],
+      [
+       "Sleep tight!",
+       "好好睡！",
+       "爸媽對孩子・tight 是「睡得沉」"
+      ],
+      [
+       "Good night, sleep tight, don't let the bed bugs bite!",
+       "晚安、睡好，別讓床蟲咬！",
+       "美國爸媽的押韻句・逗孩子笑"
+      ],
+      [
+       "Night-night!",
+       "晚安安！",
+       "對幼兒・疊字"
+      ],
+      [
+       "Nighty-night!",
+       "晚安安！",
+       "對幼兒・比 Night-night 更俏皮"
+      ],
+      [
+       "It's time for bed.",
+       "該睡覺了。",
+       "爸媽對孩子・宣布睡覺時間"
+      ],
+      [
+       "Lights out!",
+       "關燈囉！",
+       "爸媽對孩子・關燈的那一刻"
+      ],
+      [
+       "I'll see you in the morning.",
+       "明天早上見。",
+       "爸媽對孩子・安撫捨不得睡的孩子"
+      ],
+      [
+       "I love you. Good night.",
+       "我愛你，晚安。",
+       "爸媽對孩子・關門前的最後一句"
+      ],
+      [
+       "Close your eyes and go to sleep.",
+       "閉上眼睛，睡覺。",
+       "爸媽對孩子・孩子還在翻來翻去時"
+      ],
+      [
+       "Sleep well, honey.",
+       "好好睡，寶貝。",
+       "爸媽對孩子・honey、sweetie 都是暱稱"
+      ]
+     ]
+    },
+    {
+     "name": "孩子對爸媽、長輩 Child to parents",
+     "rows": [
+      [
+       "Good night, Mom. Good night, Dad.",
+       "媽媽晚安，爸爸晚安。",
+       "孩子對爸媽・最基本"
+      ],
+      [
+       "Good night! Love you!",
+       "晚安！愛你！",
+       "孩子對爸媽・輕鬆"
+      ],
+      [
+       "Good night, Grandma. Good night, Grandpa.",
+       "阿嬤晚安，阿公晚安。",
+       "孩子對長輩"
+      ],
+      [
+       "Can I have a goodnight hug?",
+       "可以抱一下再睡嗎？",
+       "孩子對爸媽・撒嬌"
+      ],
+      [
+       "Will you tuck me in?",
+       "可以幫我蓋被子嗎？",
+       "孩子對爸媽・tuck in＝把被子塞好"
+      ],
+      [
+       "Can you leave the night light on?",
+       "可以把小夜燈留著嗎？",
+       "孩子對爸媽・怕黑時"
+      ],
+      [
+       "Five more minutes, please!",
+       "再五分鐘就好！",
+       "孩子對爸媽・討價還價"
+      ],
+      [
+       "See you in the morning, Mommy!",
+       "媽咪，明天早上見！",
+       "幼兒對媽媽・Mommy 是小小孩的叫法"
+      ]
+     ]
+    },
+    {
+     "name": "朋友、同學（傳訊息）Friends by text",
+     "rows": [
+      [
+       "Good night!",
+       "晚安！",
+       "萬用・對誰都可以"
+      ],
+      [
+       "Night!",
+       "晚安！",
+       "朋友・訊息裡最常見的縮短說法"
+      ],
+      [
+       "Gotta go to bed. Night!",
+       "我要去睡了，晚安！",
+       "朋友・結束聊天（gotta＝have got to）"
+      ],
+      [
+       "I'm heading to bed. Talk tomorrow!",
+       "我要去睡了，明天聊！",
+       "朋友、同學・輕鬆"
+      ],
+      [
+       "Sleep well!",
+       "好好睡！",
+       "萬用・朋友、同事都行"
+      ],
+      [
+       "Don't stay up too late!",
+       "別熬夜喔！",
+       "朋友、同學・叮嚀"
+      ],
+      [
+       "Get some sleep!",
+       "快去睡吧！",
+       "朋友・對方明顯很累時"
+      ],
+      [
+       "Good night! See you at school tomorrow.",
+       "晚安！明天學校見。",
+       "同學"
+      ],
+      [
+       "Sweet dreams, see you tomorrow!",
+       "好夢，明天見！",
+       "朋友・輕鬆"
+      ],
+      [
+       "Good night! Thanks for the chat.",
+       "晚安！謝謝你陪我聊。",
+       "朋友・聊了很久之後"
+      ],
+      [
+       "Rest up! Big day tomorrow.",
+       "好好休息，明天是大日子。",
+       "朋友・考試或比賽前一晚"
+      ],
+      [
+       "Good night, everyone!",
+       "大家晚安！",
+       "群組・同時跟很多人說"
+      ]
+     ]
+    },
+    {
+     "name": "另一半 Partner",
+     "rows": [
+      [
+       "Good night, my love.",
+       "晚安，我的愛。",
+       "情侶、夫妻"
+      ],
+      [
+       "Sweet dreams, sweetheart.",
+       "好夢，親愛的。",
+       "情侶、夫妻・溫柔"
+      ],
+      [
+       "Dream of me!",
+       "要夢到我喔！",
+       "情侶・俏皮"
+      ],
+      [
+       "Good night, I love you.",
+       "晚安，我愛你。",
+       "情侶、夫妻"
+      ],
+      [
+       "Can't wait to see you tomorrow. Good night!",
+       "等不及明天見到你了，晚安！",
+       "情侶・訊息"
+      ],
+      [
+       "Sleep well, babe.",
+       "好好睡，寶貝。",
+       "情侶・很口語（babe＝親暱的稱呼）"
+      ],
+      [
+       "Good night, hon.",
+       "晚安，親愛的。",
+       "夫妻・hon 是 honey 的縮短"
+      ],
+      [
+       "Sending you a goodnight kiss.",
+       "送你一個晚安吻。",
+       "情侶・訊息"
+      ]
+     ]
+    },
+    {
+     "name": "正式：對老師、長輩、同事的晚間道別 Formal sign-offs",
+     "rows": [
+      [
+       "Good night, Ms. Lin. See you tomorrow.",
+       "林老師晚安，明天見。",
+       "學生對老師・晚上下課時"
+      ],
+      [
+       "Have a good night!",
+       "祝你今晚愉快！",
+       "店員、同事・晚上道別最常用"
+      ],
+      [
+       "Have a nice evening.",
+       "祝你晚上愉快。",
+       "同事、長輩・還沒到睡覺時間就離開時"
+      ],
+      [
+       "Enjoy the rest of your evening.",
+       "祝你今晚接下來的時間愉快。",
+       "正式・服務生、主持人"
+      ],
+      [
+       "Get some rest.",
+       "好好休息。",
+       "對長輩、同事・關心對方累了"
+      ],
+      [
+       "Rest well.",
+       "安心休息。",
+       "卡片、訊息・稍正式"
+      ],
+      [
+       "Good night, and thank you all for coming.",
+       "晚安，謝謝大家今天來。",
+       "主持人・活動結束"
+      ],
+      [
+       "Thank you for today. Good night!",
+       "謝謝你今天的幫忙，晚安！",
+       "對老師、同事・訊息結尾"
+      ],
+      [
+       "Good night, everyone. Drive safe.",
+       "大家晚安，開車小心。",
+       "聚會散場・主人對客人"
+      ],
+      [
+       "Have a restful night.",
+       "祝你一夜好眠。",
+       "正式訊息、email 結尾"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "晚安英文怎麼說、怎麼唸：night 的 gh 不發音，good 是短母音",
+   "prose": [
+    "晚安的英文就是 <strong>Good night</strong>，唸 [gʊd naɪt]，美國人睡前、晚上道別都說這一句。寫法以<strong>兩個字</strong>為準；一個字的 goodnight 也看得到，多半當形容詞用，例如 a goodnight kiss（晚安吻）、a goodnight hug（晚安抱抱）。寫作業、考試一律寫兩個字 Good night 最保險。放在句子開頭 G 大寫，放在句子中間就小寫：I said good night to my mom.",
+    "兩個字都很短，卻有兩個台灣學生最容易唸錯的地方。第一，<strong>good 的母音是短的 [ʊ]</strong>，嘴巴放鬆、很快帶過，不是 food [fud] 那種拉長的 [u]——good 和 food 並不押韻。第二，<strong>night 的 gh 完全不發音</strong>，整個字就是 [naɪt]，跟 light、right、bright 押韻；結尾的 t 輕輕收住，不要多出一個「特」。符號怎麼看，對照 <a href=\"/kk-phonetic-chart/\">KK 音標表</a>；下面把這一頁會出現的字一次列出來。"
+   ],
+   "heads": [
+    "英文",
+    "KK 音標",
+    "怎麼唸、注意什麼"
+   ],
+   "rows": [
+    [
+     "Good night",
+     "[gʊd naɪt]",
+     "兩個字各一個音節；重音在 night"
+    ],
+    [
+     "good",
+     "[gʊd]",
+     "短母音 [ʊ]，嘴型放鬆；不要拉長成 [u]"
+    ],
+    [
+     "night",
+     "[naɪt]",
+     "gh 不發音；母音是 [aɪ]，跟 light、right 押韻"
+    ],
+    [
+     "evening",
+     "[ˈivnɪŋ]",
+     "只有兩個音節 EVE-ning，中間的 e 不發音；常被唸成三個音節"
+    ],
+    [
+     "sweet",
+     "[swit]",
+     "s 和 w 連著唸，不要唸成「蘇威特」"
+    ],
+    [
+     "dreams",
+     "[drimz]",
+     "dr 連在一起；結尾是 [z] 不是 [s]"
+    ],
+    [
+     "sleep",
+     "[slip]",
+     "長母音 [i]；唸短了會變成 slip（滑倒）"
+    ],
+    [
+     "tight",
+     "[taɪt]",
+     "跟 night 押韻，Sleep tight 就是這樣好記"
+    ],
+    [
+     "bed bugs bite",
+     "[bɛd bʌgz baɪt]",
+     "三個 b 開頭，像繞口令；bugs 結尾是 [z]"
+    ],
+    [
+     "pajamas",
+     "[pəˈdʒæməz]",
+     "重音在中間；美國也有人唸 [pəˈdʒɑməz]，兩種都對"
+    ]
+   ],
+   "phone_cols": 3,
+   "after": [
+    "練法跟教室裡一樣：先只唸 night，確定結尾沒有「特」；再加上 good，確定母音是短的；最後整句 Good night 配一個揮手的動作。<a href=\"/good-morning-english/\">早安英文</a>的 Good morning 用的也是同一個 good，這個短母音練對了，兩句一起對。其他台灣學生常唸錯的音，見 <a href=\"/english-pronunciation/\">英文發音</a>。"
+   ]
+  },
+  {
+   "title": "Good evening 不是晚安：到的時候說 Good evening，走的時候才說 Good night",
+   "prose": [
+    "這是台灣學生說英文時<strong>最常見的晚安錯誤</strong>，而且錯得很有道理：中文的「晚安」兩種情況都能用——晚上見面可以說晚安（新聞主播開場就說「各位觀眾晚安」），睡前也說晚安。英文把這兩件事分得很清楚：<strong>Good evening 是晚上見面的問候</strong>，意思接近 Hello；<strong>Good night 是道別</strong>，意思接近 Goodbye，只在要離開或要睡覺時說。晚上走進教室對外師說 Good night，老師會以為你要回家了。",
+    "什麼時候算 evening？沒有硬性規定，大致是傍晚五、六點、天黑之後；在那之前說 Good afternoon。下面 6 個情境，照著想一遍就不會再搞混："
+   ],
+   "heads": [
+    "情境",
+    "該說",
+    "為什麼"
+   ],
+   "rows": [
+    [
+     "晚上七點走進補習班教室，看到外師",
+     "Good evening! 或 Hi, Mr. Brown!",
+     "剛到、打招呼；跟熟的老師說 Hi 就好"
+    ],
+    [
+     "晚上九點下課，走出教室",
+     "Good night! See you tomorrow!",
+     "要離開了，這才是道別"
+    ],
+    [
+     "晚上接到阿姨打來的電話，第一句話",
+     "Hi, Aunt May! 或 Good evening!",
+     "對話的開頭等於「見面」，不是道別"
+    ],
+    [
+     "聽完故事，爸媽要關燈",
+     "Good night! Sweet dreams!",
+     "要去睡了，晚安的本意"
+    ],
+    [
+     "晚上十點 LINE 聊完，要結束對話",
+     "Good night! Talk tomorrow!",
+     "結束對話等於道別"
+    ],
+    [
+     "晚餐時間走進餐廳，服務生說的第一句",
+     "Good evening! Table for two?",
+     "迎接客人；你離開時他才會說 Have a good night!"
+    ]
+   ],
+   "phone_cols": 3,
+   "after": [
+    "一個判斷法：開口前問自己「我是剛來，還是要走？」剛來（走進房間、接起電話、節目開始）說 Good evening；要走（離開、掛電話、去睡）說 Good night。Good morning、Good afternoon、Good evening 三句都是問候（早安用到幾點、怎麼回，見 <a href=\"/good-morning-english/\">早安英文</a>）；<strong>Good night 是唯一的例外，它是道別</strong>。",
+    "還有一件在美國生活過才會注意到的事：<strong>美國人日常幾乎不說 Good evening</strong>。朋友晚上見面就是 Hi、Hey，頂多加一句 How's it going?；Good evening 留給餐廳帶位、飯店櫃台、正式晚宴和新聞主播的開場白。所以孩子晚上進教室，對老師說 Hi 或 Hello 最自然，想正式一點再說 Good evening；只有 Good night 千萬不能拿來打招呼。"
+   ]
+  },
+  {
+   "title": "Sweet dreams、Sleep tight、Don't let the bed bugs bite：美國爸媽的睡前三句，怎麼回",
+   "prose": [
+    "美國家庭關燈前的對話，幾乎都繞著這三句。<strong>Sweet dreams!</strong>（祝你好夢）最溫柔，對孩子、家人、另一半都說；<strong>Sleep tight!</strong> 的 tight 不是「緊」，而是「睡得沉、睡得安穩」；第三句是一整段押韻：<strong>Good night, sleep tight, don't let the bed bugs bite!</strong>（晚安、睡好，別讓床蟲咬），night、tight、bite 三個字押韻，有些爸媽說到 bite 會在孩子身上輕輕捏一下，孩子一邊笑一邊回 I won't!（我不會讓牠們咬的！）。這句話裡當然沒有真的蟲，純粹是逗孩子的睡前儀式。",
+    "對更小的孩子，爸媽會把 night 疊起來說 <strong>Night-night!</strong> 或 <strong>Nighty-night!</strong>，就像中文的「睡覺覺」。另外，美國孩子幾乎都聽過的睡前繪本 Goodnight Moon，整本書就是小兔子一樣一樣跟房間裡的東西說晚安——這個做法在家裡很好用：關燈前讓孩子對著房間說 Good night, bear. Good night, lamp. Good night, Mom.，三句就把今天的英文說完了。",
+    "別人跟你說了晚安，怎麼回？大原則跟中文一樣——把同一句還回去，或回 You too!。下面是最常碰到的幾種："
+   ],
+   "heads": [
+    "對方說",
+    "你可以回",
+    "說明"
+   ],
+   "rows": [
+    [
+     "Good night!",
+     "Good night! / Night!",
+     "原句回去就好，跟中文的「晚安」「晚安」一樣"
+    ],
+    [
+     "Sweet dreams!",
+     "You too! / Thanks, you too!",
+     "回祝對方也好夢"
+    ],
+    [
+     "Sleep tight!",
+     "I will! / You too!",
+     "I will＝我會好好睡的"
+    ],
+    [
+     "Don't let the bed bugs bite!",
+     "I won't!",
+     "「我不會讓牠們咬的」，孩子最愛這樣回"
+    ],
+    [
+     "Have a good night!",
+     "You too! / Thanks, you too!",
+     "店員、同事的道別，回 You too 最自然"
+    ],
+    [
+     "Get some rest.",
+     "I will. Thanks.",
+     "接受對方的關心"
+    ],
+    [
+     "See you in the morning!",
+     "See you! / Night!",
+     "家人之間"
+    ],
+    [
+     "Night-night!",
+     "Night-night!",
+     "幼兒照著說一次就好"
+    ],
+    [
+     "Love you. Good night.",
+     "Love you too. Good night.",
+     "家人、另一半"
+    ]
+   ],
+   "phone_cols": 3,
+   "after": [
+    "幾個台灣學生常照中文翻出來的說法，順手改掉：「祝你好夢」不是 Have a good dream，是 <strong>Sweet dreams!</strong>；「睡個好覺」不是 Good sleep，是 <strong>Sleep well!</strong> 或 Have a good night's sleep.；「晚安，明天見」說 Good night, see you tomorrow. 就好，後面不用加 to you。"
+   ]
+  },
+  {
+   "title": "睡前流程英文單字 30 個：pajamas、brush your teeth、night light",
+   "prose": [
+    "單字照<strong>每天晚上發生的順序</strong>排：先是刷牙換睡衣，再來是床上的東西，然後是關燈、睡著這些動作，最後是跟睡眠有關的形容。第三欄是在家裡真的用得到的句子，爸媽可以直接唸。",
+    "兩個美式說法先講清楚：「上廁所」美國人說 go to the bathroom，不說 go to the toilet（toilet 指馬桶本身）；「睡衣」美式拼 pajamas、英式拼 pyjamas，而且永遠是複數形，一套睡衣是 a pair of pajamas。其他日常主題的單字在 <a href=\"/food-english/\">食物英文</a>、<a href=\"/feelings-english/\">情緒英文</a> 和 <a href=\"/time-english/\">時間英文</a>。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "例句或說明"
+   ],
+   "groups": [
+    {
+     "name": "睡前準備 Getting ready",
+     "rows": [
+      [
+       "bedtime",
+       "睡覺時間",
+       "It's bedtime.（該睡了）"
+      ],
+      [
+       "take a bath",
+       "洗澡（泡澡）",
+       "Take a bath before bed.（淋浴是 take a shower）"
+      ],
+      [
+       "brush your teeth",
+       "刷牙",
+       "Did you brush your teeth?"
+      ],
+      [
+       "floss",
+       "用牙線",
+       "Floss first, then brush."
+      ],
+      [
+       "wash your face",
+       "洗臉",
+       "Go wash your face."
+      ],
+      [
+       "put on your pajamas",
+       "換上睡衣",
+       "Put on your pajamas, please."
+      ],
+      [
+       "pajamas",
+       "睡衣",
+       "口語常縮成 PJs：Time for PJs!"
+      ],
+      [
+       "go to the bathroom",
+       "上廁所",
+       "Go to the bathroom before bed."
+      ]
+     ]
+    },
+    {
+     "name": "床上的東西 In the bedroom",
+     "rows": [
+      [
+       "bed",
+       "床",
+       "Get in bed.（上床）／Go to bed.（去睡覺）"
+      ],
+      [
+       "pillow",
+       "枕頭",
+       "Fluff your pillow.（把枕頭拍鬆）"
+      ],
+      [
+       "blanket",
+       "毯子、被子",
+       "Pull up the blanket.（把被子拉上來）"
+      ],
+      [
+       "comforter",
+       "厚棉被",
+       "美式說法；英式叫 duvet"
+      ],
+      [
+       "sheets",
+       "床單",
+       "clean sheets（乾淨的床單）"
+      ],
+      [
+       "stuffed animal",
+       "絨毛玩偶",
+       "a stuffed bunny（兔子玩偶）"
+      ],
+      [
+       "teddy bear",
+       "泰迪熊",
+       "Where's your teddy bear?"
+      ],
+      [
+       "night light",
+       "小夜燈",
+       "Leave the night light on."
+      ],
+      [
+       "alarm clock",
+       "鬧鐘",
+       "Set the alarm clock for seven."
+      ],
+      [
+       "bunk bed",
+       "上下舖",
+       "the top bunk（上舖）／the bottom bunk（下舖）"
+      ]
+     ]
+    },
+    {
+     "name": "動作 Actions",
+     "rows": [
+      [
+       "tuck in",
+       "把被子塞好、哄睡",
+       "Mom tucked me in."
+      ],
+      [
+       "read a bedtime story",
+       "唸睡前故事",
+       "One bedtime story, then lights out."
+      ],
+      [
+       "turn off the light",
+       "關燈",
+       "Turn off the light, please."
+      ],
+      [
+       "lights out",
+       "熄燈",
+       "Lights out at nine.（九點熄燈）"
+      ],
+      [
+       "fall asleep",
+       "睡著",
+       "I fell asleep right away."
+      ],
+      [
+       "stay up late",
+       "熬夜",
+       "Don't stay up late."
+      ],
+      [
+       "yawn",
+       "打哈欠",
+       "You're yawning. Bedtime!"
+      ],
+      [
+       "snore",
+       "打呼",
+       "Dad snores."
+      ]
+     ]
+    },
+    {
+     "name": "睡眠狀態 Sleep words",
+     "rows": [
+      [
+       "sleepy",
+       "想睡的",
+       "I'm sleepy.（我想睡了）"
+      ],
+      [
+       "sleepyhead",
+       "瞌睡蟲",
+       "Wake up, sleepyhead!（早上叫人起床）"
+      ],
+      [
+       "fast asleep",
+       "睡得很熟",
+       "She's fast asleep.（也說 sound asleep）"
+      ],
+      [
+       "dream",
+       "夢；作夢",
+       "I had a funny dream."
+      ],
+      [
+       "nightmare",
+       "惡夢",
+       "I had a nightmare.（作惡夢用 have，不是 do）"
+      ],
+      [
+       "night owl",
+       "夜貓子",
+       "My brother is a night owl.（早起的人是 early bird）"
+      ],
+      [
+       "wake up",
+       "醒來",
+       "I wake up at seven."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "讓英文變成睡前習慣：爸媽的 10 句台詞，孩子的 Before I go to bed",
+   "prose": [
+    "睡前是全家一天裡最固定的 20 分鐘，<strong>每天同一個順序、同一批句子</strong>，正是孩子學語言最需要的重複。下面 10 句照流程排，從宣布睡覺時間到關燈前的最後一句；爸媽不用全部換成英文，先挑三句，連續說兩個星期，孩子自己會接。",
+    "要點只有一個：<strong>說了就不要翻譯</strong>。說 Go brush your teeth. 的同時指一下浴室，孩子從動作就懂了；每晚翻一次中文，孩子就會等中文，永遠不聽英文。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "說明"
+   ],
+   "groups": [
+    {
+     "name": "爸媽每晚說的 10 句（照順序）Parent's 10 bedtime lines",
+     "rows": [
+      [
+       "It's eight o'clock. Bedtime!",
+       "八點了，睡覺時間！",
+       "睡前流程開始的信號"
+      ],
+      [
+       "Go brush your teeth.",
+       "去刷牙。",
+       "指一下浴室，不用翻譯"
+      ],
+      [
+       "Put on your pajamas.",
+       "換上睡衣。",
+       "睡衣拿在手上說"
+      ],
+      [
+       "Pick one book.",
+       "選一本書。",
+       "one 說重一點，孩子就不會拿五本"
+      ],
+      [
+       "Hop into bed.",
+       "跳上床。",
+       "hop 比 get 可愛，孩子愛聽"
+      ],
+      [
+       "Let me tuck you in.",
+       "我幫你蓋被子。",
+       "邊說邊把被子塞好"
+      ],
+      [
+       "Lights out in five minutes.",
+       "五分鐘後關燈。",
+       "先預告，孩子比較不會鬧"
+      ],
+      [
+       "Do you want the night light on or off?",
+       "小夜燈要開還是關？",
+       "給孩子一個選擇，孩子會用英文回 On! 或 Off!"
+      ],
+      [
+       "Give me a hug.",
+       "抱一個。",
+       "關燈前"
+      ],
+      [
+       "Good night. Sweet dreams. I love you.",
+       "晚安，好夢，我愛你。",
+       "每晚一模一樣的三句結尾"
+      ]
+     ]
+    },
+    {
+     "name": "教孩子介紹自己的睡前習慣：Before I go to bed…",
+     "rows": [
+      [
+       "I go to bed at nine o'clock.",
+       "我九點睡覺。",
+       "幾點用 at"
+      ],
+      [
+       "Before I go to bed, I take a bath and brush my teeth.",
+       "睡覺前，我洗澡、刷牙。",
+       "Before 後面接一整句"
+      ],
+      [
+       "Then I put on my pajamas.",
+       "然後我換上睡衣。",
+       "Then 接上一句"
+      ],
+      [
+       "My mom reads me a bedtime story.",
+       "媽媽唸睡前故事給我聽。",
+       "read＋人＋東西"
+      ],
+      [
+       "I sleep with my teddy bear and a night light.",
+       "我抱著泰迪熊、開著小夜燈睡。",
+       "with＝帶著"
+      ],
+      [
+       "I say good night to my mom and dad.",
+       "我跟爸媽說晚安。",
+       "say＋話＋to＋人；句子中間的 good night 小寫"
+      ],
+      [
+       "Then I close my eyes and fall asleep.",
+       "然後我閉上眼睛，睡著了。",
+       "結尾"
+      ]
+     ]
+    },
+    {
+     "name": "外國朋友可能會問的 3 個問題",
+     "rows": [
+      [
+       "What time do you go to bed?",
+       "你幾點睡覺？",
+       "答：I go to bed at nine."
+      ],
+      [
+       "Do you read before bed?",
+       "你睡前會看書嗎？",
+       "答：Yes. My mom reads me a story."
+      ],
+      [
+       "Do you sleep with a night light?",
+       "你開小夜燈睡嗎？",
+       "答：Yes, I do. I don't like the dark."
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "這一段是給國小孩子的範本，句子刻意短。練法是爸媽用中文問（你幾點睡？），孩子用英文答，七句都答得出來再從頭講一遍；想接著練「介紹自己」，見 <a href=\"/english-self-introduction-kids/\">兒童英文自我介紹</a>。孩子常把「我九點睡」說成 I sleep at nine.——意思聽得懂，但美國人說 I go to bed at nine.：sleep 是「睡著的狀態」，go to bed 才是「上床睡覺」這個動作。"
+   ]
+  },
+  {
+   "title": "傳訊息說晚安：gn、nite、Night! 什麼時候能用，什麼時候不行",
+   "prose": [
+    "美國年輕人的訊息裡，晚安有一整套縮寫：<strong>gn</strong> 是 good night 的首字母，<strong>nite</strong> 是 night 的故意誤拼，<strong>Night!</strong> 是把 good 省掉。它們都是真的在用的英文，但有一條線：<strong>只給同學、好友和家人</strong>。對老師、長輩、工作上的訊息，一律打完整的 Good night 或 Have a good night；作業、考試、email 裡寫 nite、gn 會被當成錯字。"
+   ],
+   "heads": [
+    "寫法",
+    "意思",
+    "可以對誰用"
+   ],
+   "rows": [
+    [
+     "Good night!",
+     "晚安",
+     "對誰都行，老師、長輩也可以"
+    ],
+    [
+     "Night!",
+     "晚安（省掉 good）",
+     "朋友、家人；對老師不要"
+    ],
+    [
+     "G'night!",
+     "Good night 說快的寫法",
+     "朋友・口語"
+    ],
+    [
+     "Night-night!",
+     "晚安安",
+     "家人、很熟的朋友；帶點撒嬌"
+    ],
+    [
+     "gn",
+     "good night 的縮寫",
+     "同學、好友的聊天；對老師、長輩、工作訊息不要"
+    ],
+    [
+     "nite",
+     "night 的故意誤拼",
+     "朋友的訊息、俏皮；作業、考試、email 絕對不要"
+    ],
+    [
+     "Sweet dreams!",
+     "好夢",
+     "家人、好友、另一半；對老師太親"
+    ],
+    [
+     "Sleep well!",
+     "好好睡",
+     "對誰都行"
+    ],
+    [
+     "Talk tomorrow!",
+     "明天聊",
+     "朋友、同事"
+    ],
+    [
+     "ttyl",
+     "talk to you later（晚點聊）",
+     "朋友；不是晚安，但常跟 gn 一起出現"
+    ],
+    [
+     "Have a good night!",
+     "祝你今晚愉快",
+     "同事、老師、店員；晚上離開時最保險"
+    ],
+    [
+     "zzz",
+     "打呼聲，表示「我要睡了」",
+     "朋友的訊息；當句子結尾用"
+    ]
+   ],
+   "phone_cols": 3,
+   "after": [
+    "email 裡要不要寫晚安？美國人不會用 Good night 當 email 的結尾，晚上寄信就在最後一句寫 Have a good night. 或 Enjoy your evening.，再接 Best, 和名字。卡片和訊息的寫法見 <a href=\"/english-card-writing/\">英文卡片寫法</a>。"
+   ]
+  },
+  {
+   "title": "晚安英文常見問題",
+   "faq": [
+    [
+     "晚安英文怎麼說？",
+     "就是 Good night!，睡前和晚上道別都用這句；想溫柔一點加 Sweet dreams!（好夢）或 Sleep tight!（好好睡）；對店員、同事說 Have a good night!。要注意 Good evening 不是晚安，它是晚上見面時的問候。"
+    ],
+    [
+     "Good night 和 Good evening 差在哪？",
+     "Good evening 是晚上「見面、到達」時的問候，像 Hello；Good night 是「離開、要睡」時說的，像 Goodbye。晚上走進教室說 Good evening（或 Hi），下課離開才說 Good night。中文的「晚安」兩種情況都能用，英文一定要分開。"
+    ],
+    [
+     "Good night 要寫成一個字還是兩個字？",
+     "兩個字 Good night 是標準寫法，字典的主條目也是兩個字；一個字的 goodnight 也看得到，多半當形容詞：a goodnight kiss、a goodnight hug。作業和考試寫兩個字最保險。"
+    ],
+    [
+     "Sweet dreams 怎麼回？",
+     "回 You too! 或 Thanks, you too! 最自然；家人之間回一句 Good night! 也可以。孩子聽到 Don't let the bed bugs bite! 可以回 I won't!，這是美國家庭的固定對答。"
+    ],
+    [
+     "晚安可以說 Have a good night 嗎？",
+     "可以，但它是「道別」用的：晚上離開餐廳、辦公室、教室時說，對方接下來可能還要吃宵夜、看電視。對睡前的家人說 Good night 就好。別人對你說 Have a good night!，回 You too! 就行。"
+    ],
+    [
+     "傳訊息說晚安可以寫 gn 嗎？",
+     "跟同學、好友可以；跟老師、長輩、工作上的訊息要寫完整的 Good night 或 Have a good night。nite 是故意的誤拼，作業和考試寫了會被當錯字。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "晚安說得出口，故事聽得懂嗎？",
+ "cta": "睡前那一句 Good night 是孩子最容易養成的英文習慣，但故事書裡的 tuck in、lights out、sleep tight，孩子聽得懂嗎？我們的小班課由美籍老師帶孩子用英文說自己的一天——從早上起床到晚上關燈，一句一句練到不用想就說得出口。"
+}

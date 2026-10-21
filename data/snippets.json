@@ -342,7 +342,7 @@
   "title": "府中英文補習班怎麼選？府中補習班 4 個必問＋Fuzhong 英文拼法｜埃森美語"
  },
  "gept": {
-  "description": "全民英檢專區：小學英檢、初級、中級、中高級各一整份免費線上模擬試題（聽力附音檔、每題中文解析、寫作範文、口說可錄音），加上通過標準判斷器。",
+  "description": "全民英檢（全民英語能力分級檢定）專區：小學英檢、初級、中級、中高級各一份免費線上模擬試題，聽力附音檔、每題中文解析、寫作範文、口說可錄音，加上通過標準判斷器。",
   "title": "全民英檢 GEPT｜免費線上模擬試題、通過標準與等級對照｜埃森美語"
  },
  "gept-elementary-guide": {
@@ -1065,5 +1065,57 @@
  "banqiao-junior-high-english-blind-spots": {
   "title": "國中英文文法基礎不好怎麼補救？板橋國中家長必知 3 個盲點｜埃森美語",
   "description": "國中英文文法基礎不好，先分清楚錯在哪一類：be 動詞、第三人稱單數、時態還是詞性。附常見錯句對照表與補救順序，以及板橋國中家長常忽略的 3 個英文盲點。"
+ },
+ "thanksgiving-english": {
+  "title": "感恩節英文60句：感恩節快樂英文怎麼說、火雞大餐單字（附PDF）｜埃森美語",
+  "description": "感恩節英文 60 句對照表：感恩節快樂英文是 Happy Thanksgiving 不加 Day、Thanksgiving 怎麼唸、火雞大餐 50 個單字、孩子的 I'm thankful for 句型，附 A4 PDF。"
+ },
+ "mothers-day-english": {
+  "title": "母親節英文怎麼說？母親節快樂英文祝福 60 句、康乃馨與卡片範本｜埃森美語",
+  "description": "母親節英文是 Mother's Day，撇號在 s 前；母親節快樂英文＝Happy Mother's Day!。60 句祝福依孩子、外婆奶奶、先生、全家分組，另有康乃馨單字、卡片範本、草寫寫法。"
+ },
+ "dragon-boat-festival-english": {
+  "title": "端午節英文怎麼說？祝福語30句、粽子、划龍舟單字50個（附PDF）｜埃森美語",
+  "description": "端午節英文是 Dragon Boat Festival，端午節快樂是 Happy Dragon Boat Festival!。整理 30 句祝福語、粽子、划龍舟、立蛋、香包等 50 個單字、屈原故事 6 句，附 A4 PDF。"
+ },
+ "lantern-festival-english": {
+  "title": "元宵節英文怎麼說？祝福語、湯圓、天燈、燈謎 60 句（附PDF）｜埃森美語",
+  "description": "元宵節英文怎麼說？Lantern Festival 的唸法、元宵節快樂 16 句祝福語、湯圓和元宵怎麼分、天燈 10 句願望、5 個英文燈謎，加上教孩子介紹元宵節的 7 句範本，附 A4 PDF。"
+ },
+ "red-envelope-english": {
+  "title": "紅包英文怎麼說？red envelope 還是 lucky money？60 句對照表｜埃森美語",
+  "description": "紅包英文是 red envelope，壓歲錢是 lucky money，hongbao 只有懂華人文化的外國人才懂。恭喜發財英文怎麼說、給紅包和收紅包時的 22 句話、15 句四字吉祥話，附 A4 PDF。"
+ },
+ "chinese-zodiac-english": {
+  "title": "十二生肖英文對照表：年份、個性形容詞與 36 句生肖英文句子｜埃森美語",
+  "description": "十二生肖英文對照表：12 種動物的英文與 KK 音標、1960–2031 出生年份、36 個個性形容詞，加「你屬什麼」36 句問答、2027 羊年 Goat 還是 Sheep、本命年英文，附 PDF。"
+ },
+ "earthquake-english": {
+  "title": "地震英文 58 個單字＋40 句：餘震、震央、規模與震度、避難口訣｜埃森美語",
+  "description": "地震英文對照表：餘震 aftershock、震央 epicenter、規模 magnitude 與震度 intensity 怎麼分、國家級警報怎麼說；40 句報平安的話、Drop, Cover, Hold On 口令，附 PDF。"
+ },
+ "good-morning-english": {
+  "title": "早安英文50句：對老師、家人、傳訊息怎麼說，早安圖怎麼回｜埃森美語",
+  "description": "早安英文 50 句對照表：對老師、同學、家人、傳訊息怎麼說，別人說早安怎麼回；Good morning 怎麼唸、用到幾點、早安圖英文回覆 10 句、早上單字 30 個，附 A4 PDF。"
+ },
+ "good-night-english": {
+  "title": "晚安英文50句：爸媽、朋友、情侶怎麼說，Good evening 不是晚安｜埃森美語",
+  "description": "晚安英文 50 句對照表：爸媽哄睡、孩子對爸媽、朋友傳訊息、情侶、正式道別，標出對象與語氣；再講 Good evening 和 Good night 的差別、30 個睡前單字，附 A4 PDF。"
+ },
+ "zodiac-signs-english": {
+  "title": "星座英文：12星座英文名稱與KK音標、射手座英文怎麼唸（附PDF）｜埃森美語",
+  "description": "星座英文對照表：12 星座英文名稱、KK 音標、日期與象徵，36 個個性形容詞、24 句聊星座的英文；射手座英文 Sagittarius、雙魚座 Pisces 怎麼唸，水逆怎麼說，附 A4 PDF。"
+ },
+ "bubble-tea-english": {
+  "title": "珍珠奶茶英文：bubble tea 還是 boba？50 款手搖飲與點餐 30 句｜埃森美語",
+  "description": "珍珠奶茶英文是 bubble tea 還是 boba？50 款手搖飲英文菜單（奶茶、果茶、冬瓜）、甜度冰塊配料 20 種點法、30 句點餐與聊天例句，附 tapioca 與 boba 的唸法和 A4 PDF。"
+ },
+ "typhoon-english": {
+  "title": "颱風英文怎麼說？颱風假、停班停課、颱風警報 57 個單字＋40 句｜埃森美語",
+  "description": "颱風英文對照表：颱風假、停班停課、停電淹水、防颱 57 個單字，加 40 句颱風天在家會說的英文；typhoon 怎麼唸、和 hurricane 差在哪、輕颱中颱強颱怎麼說，附 PDF。"
+ },
+ "english-address": {
+  "title": "英文地址怎麼寫？郵局格式、路街段巷弄縮寫、22 縣市英譯對照表｜埃森美語",
+  "description": "英文地址怎麼寫？照中華郵政格式從小到大倒過來：樓、號、弄、巷、段、路、區、市。附路街段巷弄英文縮寫、22 縣市與各區英譯、12 個範例、網購表格填法與常見錯誤。"
  }
 }

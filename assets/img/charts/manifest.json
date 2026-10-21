@@ -529,5 +529,122 @@
   "alt": "英文草寫字母表 A 到 Z：26 個草寫大寫與小寫字母的寫法對照，附中文寫法提示",
   "title": "英文草寫 A–Z 大小寫對照表",
   "page": "english-cursive"
+ },
+ "english-address-chart": {
+  "slug": "english-address-chart",
+  "png": "/assets/img/charts/english-address-chart.webp",
+  "w": 2200,
+  "h": 1781,
+  "alt": "英文地址對照表：路 Rd.、街 St.、段 Sec.、巷 Ln.、弄 Aly.、號 No.、樓 F. 的英文縮寫，與 22 縣市的英文名稱和郵遞區號",
+  "title": "英文地址對照表",
+  "page": "english-address"
+ },
+ "thanksgiving-english-chart": {
+  "slug": "thanksgiving-english-chart",
+  "png": "/assets/img/charts/thanksgiving-english-chart.webp",
+  "w": 2200,
+  "h": 2053,
+  "alt": "感恩節英文祝福對照表：Happy Thanksgiving 給朋友、老師、家人的說法，I'm thankful for 孩子版句子，附中文與適合對象",
+  "title": "感恩節英文祝福對照表",
+  "page": "thanksgiving-english"
+ },
+ "mothers-day-english-chart": {
+  "slug": "mothers-day-english-chart",
+  "png": "/assets/img/charts/mothers-day-english-chart.webp",
+  "w": 2200,
+  "h": 2233,
+  "alt": "母親節英文祝福對照表：Happy Mother's Day 孩子寫給媽媽、寫給外婆奶奶、全家卡片與傳訊息的說法，附中文與語氣",
+  "title": "母親節英文祝福對照表",
+  "page": "mothers-day-english"
+ },
+ "dragon-boat-festival-english-chart": {
+  "slug": "dragon-boat-festival-english-chart",
+  "png": "/assets/img/charts/dragon-boat-festival-english-chart.webp",
+  "w": 2200,
+  "h": 2136,
+  "alt": "端午節英文對照表：Dragon Boat Festival 的名稱與日期，Happy Dragon Boat Festival 給朋友、老師、家人的祝福語與中文",
+  "title": "端午節英文對照表",
+  "page": "dragon-boat-festival-english"
+ },
+ "lantern-festival-english-chart": {
+  "slug": "lantern-festival-english-chart",
+  "png": "/assets/img/charts/lantern-festival-english-chart.webp",
+  "w": 2200,
+  "h": 1924,
+  "alt": "元宵節英文對照表：Lantern Festival 的祝福語、節日名稱與日期、猜燈謎放天燈等活動的英文與中文",
+  "title": "元宵節英文對照表",
+  "page": "lantern-festival-english"
+ },
+ "red-envelope-english-chart": {
+  "slug": "red-envelope-english-chart",
+  "png": "/assets/img/charts/red-envelope-english-chart.webp",
+  "w": 2200,
+  "h": 2500,
+  "alt": "紅包英文對照表：red envelope、lucky money 等說法，給紅包和收紅包時說的話，恭喜發財與拜年祝福的英文與中文",
+  "title": "紅包英文對照表",
+  "page": "red-envelope-english"
+ },
+ "chinese-zodiac-english-chart": {
+  "slug": "chinese-zodiac-english-chart",
+  "png": "/assets/img/charts/chinese-zodiac-english-chart.webp",
+  "w": 1500,
+  "h": 1027,
+  "alt": "十二生肖英文對照表：鼠 Rat、牛 Ox、虎 Tiger 到豬 Pig 的英文名稱、唸法與 1960 到 2031 的出生年份",
+  "title": "十二生肖英文對照表",
+  "page": "chinese-zodiac-english"
+ },
+ "typhoon-english-chart": {
+  "slug": "typhoon-english-chart",
+  "png": "/assets/img/charts/typhoon-english-chart.webp",
+  "w": 2200,
+  "h": 2083,
+  "alt": "颱風英文對照表：typhoon、颱風假、停班停課、海上陸上颱風警報等說法與颱風天會用到的句子，附中文",
+  "title": "颱風英文對照表",
+  "page": "typhoon-english"
+ },
+ "earthquake-english-chart": {
+  "slug": "earthquake-english-chart",
+  "png": "/assets/img/charts/earthquake-english-chart.webp",
+  "w": 2200,
+  "h": 2065,
+  "alt": "地震英文對照表：earthquake、aftershock、magnitude 與 intensity 怎麼說，地震當下的句子、數字唸法與避難演練用語，附中文",
+  "title": "地震英文對照表",
+  "page": "earthquake-english"
+ },
+ "good-morning-english-chart": {
+  "slug": "good-morning-english-chart",
+  "png": "/assets/img/charts/good-morning-english-chart.webp",
+  "w": 2200,
+  "h": 1829,
+  "alt": "早安英文對照表：Good morning 的各種說法，對老師、同學、家人與傳訊息的版本，別人先說早安時怎麼回，附中文與語氣",
+  "title": "早安英文對照表",
+  "page": "good-morning-english"
+ },
+ "good-night-english-chart": {
+  "slug": "good-night-english-chart",
+  "png": "/assets/img/charts/good-night-english-chart.webp",
+  "w": 2200,
+  "h": 2066,
+  "alt": "晚安英文對照表：Good night、Sweet dreams、Sleep tight 等說法，爸媽對孩子、孩子對爸媽、朋友傳訊息與正式道別的版本，附中文",
+  "title": "晚安英文對照表",
+  "page": "good-night-english"
+ },
+ "zodiac-signs-english-chart": {
+  "slug": "zodiac-signs-english-chart",
+  "png": "/assets/img/charts/zodiac-signs-english-chart.webp",
+  "w": 2200,
+  "h": 1409,
+  "alt": "12 星座英文對照表：牡羊座 Aries 到雙魚座 Pisces 的英文、KK 音標、日期範圍，與每個星座的象徵和元素",
+  "title": "12 星座英文對照表",
+  "page": "zodiac-signs-english"
+ },
+ "bubble-tea-english-chart": {
+  "slug": "bubble-tea-english-chart",
+  "png": "/assets/img/charts/bubble-tea-english-chart.webp",
+  "w": 2200,
+  "h": 3192,
+  "alt": "珍珠奶茶英文菜單對照表：bubble tea、boba 與 50 種手搖飲的英文名稱與中文，附美國人怎麼說",
+  "title": "珍珠奶茶英文菜單對照表",
+  "page": "bubble-tea-english"
  }
 }

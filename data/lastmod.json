@@ -39,9 +39,17 @@
 "date": "2026-10-13",
 "hash": "87bdb769d3f89fad1302d21951c3d3c0"
 },
+"assets/downloads/ae-bubble-tea-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "c3833a2ec62a0b53b4c492787853f2bb"
+},
 "assets/downloads/ae-cheer-up-english-a4.pdf": {
 "date": "2026-10-13",
 "hash": "eeedb2211f237723f5245034cd4c40cd"
+},
+"assets/downloads/ae-chinese-zodiac-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "3f363a21dd6a998f6a33b642617ff517"
 },
 "assets/downloads/ae-christmas-english-a4.pdf": {
 "date": "2026-10-13",
@@ -59,9 +67,21 @@
 "date": "2026-10-13",
 "hash": "ca4e18ba6754283d5b8554acb018180d"
 },
+"assets/downloads/ae-dragon-boat-festival-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "affd4ec451c232a9efaa819c5964a61c"
+},
+"assets/downloads/ae-earthquake-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "4f6e35dae9dfa8bb4e1f8440983fdb4b"
+},
 "assets/downloads/ae-english-abbreviations-a4.pdf": {
 "date": "2026-10-13",
 "hash": "0443c937a58e948ac0114e7362eb02df"
+},
+"assets/downloads/ae-english-address-a4.pdf": {
+"date": "2026-10-22",
+"hash": "f1fc357826cae767ed6dc5439fbacc28"
 },
 "assets/downloads/ae-english-alphabet-a4.pdf": {
 "date": "2026-10-13",
@@ -119,6 +139,14 @@
 "date": "2026-10-01",
 "hash": "cf6dc9c0c4842eb955b3eda928ccf3e9"
 },
+"assets/downloads/ae-good-morning-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "3762de31ccb3b53338ece5f1fda19895"
+},
+"assets/downloads/ae-good-night-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "5b80767f237c9b0bea77791f62a3ffc6"
+},
 "assets/downloads/ae-halloween-english-a4.pdf": {
 "date": "2026-10-13",
 "hash": "e4d49a8227dddf44cd710a4eae8f44d1"
@@ -143,6 +171,10 @@
 "date": "2026-10-02",
 "hash": "607f75175f56d8bb2fcd070b9c44610c"
 },
+"assets/downloads/ae-lantern-festival-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "6dc5a0ddfb9c759f882806fd05df7b53"
+},
 "assets/downloads/ae-mid-autumn-english-a4.pdf": {
 "date": "2026-10-13",
 "hash": "adcce046567b2eae6a37dcecbdfb1b24"
@@ -163,6 +195,10 @@
 "date": "2026-10-13",
 "hash": "ff8a60afef6f6db0dea56608dbe6970d"
 },
+"assets/downloads/ae-mothers-day-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "1ab397bba887518a1900d7493ae38de3"
+},
 "assets/downloads/ae-new-year-english-a4.pdf": {
 "date": "2026-10-13",
 "hash": "f98085fbd611ab108e3a212ce723cf0e"
@@ -178,6 +214,10 @@
 "assets/downloads/ae-phonics-rules-chart-a4.pdf": {
 "date": "2026-10-02",
 "hash": "1576efaaa9c6012bd4e5f30e2108d93f"
+},
+"assets/downloads/ae-red-envelope-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "aad025c591b5b772fea504f917af22fd"
 },
 "assets/downloads/ae-school-grades-english-a4.pdf": {
 "date": "2026-10-16",
@@ -195,9 +235,17 @@
 "date": "2026-10-13",
 "hash": "102f524cd5ea45711b71977936572774"
 },
+"assets/downloads/ae-thanksgiving-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "38530f3650c49cf090a1bceb52001281"
+},
 "assets/downloads/ae-time-english-a4.pdf": {
 "date": "2026-10-13",
 "hash": "b17c2c46424fa7f38a5fca7f81a44d27"
+},
+"assets/downloads/ae-typhoon-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "f2d62c5251122ef23e44288398cd5be5"
 },
 "assets/downloads/ae-valentines-day-english-a4.pdf": {
 "date": "2026-10-13",
@@ -222,6 +270,10 @@
 "assets/downloads/ae-yle-starters-flashcards-a4.pdf": {
 "date": "2026-10-01",
 "hash": "3dcc894f833e5fd4bf32e4c717fac22d"
+},
+"assets/downloads/ae-zodiac-signs-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "4e321c0ba0fbacdf727c21293368babf"
 },
 "b1-grammar-guide": {
 "date": "2026-10-19",
@@ -311,6 +363,10 @@
 "date": "2026-10-20",
 "hash": "1e36940f08bd4e38501556287d8e1855"
 },
+"bubble-tea-english": {
+"date": "2026-10-22",
+"hash": "66b56ee10c03a64dbd39b2042c7fe492"
+},
 "cae-c1-advanced-guide": {
 "date": "2026-08-26",
 "hash": "4509264283e71530f7aba50b85a08024"
@@ -368,8 +424,8 @@
 "hash": "b736ec33111be19ac98aaf8e2fee5e8d"
 },
 "chart-license": {
-"date": "2026-10-20",
-"hash": "0e0cd9a6750510c761cc9e85d0ea5d76"
+"date": "2026-10-22",
+"hash": "1630013261c359d581fd8c6b85f56f77"
 },
 "cheer-up-english": {
 "date": "2026-10-20",
@@ -378,6 +434,10 @@
 "child-hates-english": {
 "date": "2026-10-19",
 "hash": "9e1c60b96ec11cf3e91ff861f50823e1"
+},
+"chinese-zodiac-english": {
+"date": "2026-10-22",
+"hash": "b1efcf873bcdb25c98f324144282927f"
 },
 "choose-english-chain-school": {
 "date": "2026-10-13",
@@ -423,6 +483,14 @@
 "date": "2026-10-08",
 "hash": "d3750295f94f3785c4b2f7b640c4b004"
 },
+"dragon-boat-festival-english": {
+"date": "2026-10-22",
+"hash": "384eeafa4dea8da93b34d56c96601da7"
+},
+"earthquake-english": {
+"date": "2026-10-22",
+"hash": "c6936a05d2ec9ae84c88c248e7cdb1f3"
+},
 "elementary-english-banqiao-zhongzheng": {
 "date": "2026-08-07",
 "hash": "9fd8efca169c390ddfb480e92928e95e"
@@ -434,6 +502,10 @@
 "english-abbreviations-guide": {
 "date": "2026-10-19",
 "hash": "9ef48b40d1d2fe1e05c754deedce8bc6"
+},
+"english-address": {
+"date": "2026-10-22",
+"hash": "0eef9884c01bdb788f99761813e15ba5"
 },
 "english-alphabet-guide": {
 "date": "2026-10-19",
@@ -951,6 +1023,14 @@
 "date": "2026-10-13",
 "hash": "f0c863f2fca4506efc45acad9adace4c"
 },
+"good-morning-english": {
+"date": "2026-10-22",
+"hash": "ede66fa446959a4dc037aed1473cb9ae"
+},
+"good-night-english": {
+"date": "2026-10-22",
+"hash": "cbba78faf1fb30b5c7c7995ba1f7bace"
+},
 "graded-readers-guide": {
 "date": "2026-10-19",
 "hash": "3b81893a743dd4cd6435039c77818734"
@@ -1127,6 +1207,10 @@
 "date": "2026-10-19",
 "hash": "338aaa3f43526f8b023d0b4495088bdb"
 },
+"lantern-festival-english": {
+"date": "2026-10-22",
+"hash": "005c345e0503641f77464482e8bd3c4d"
+},
 "learning-support-guide": {
 "date": "2026-10-19",
 "hash": "5946b9269191b2573a5556f6923a19a2"
@@ -1154,6 +1238,10 @@
 "months-english": {
 "date": "2026-10-19",
 "hash": "f9d30f07cab9d7e7b602c1272c9d8c02"
+},
+"mothers-day-english": {
+"date": "2026-10-22",
+"hash": "29519408d507574ef6d0a971d48048c2"
 },
 "movers-listening-practice-part1": {
 "date": "2026-10-13",
@@ -2547,6 +2635,10 @@
 "date": "2026-10-19",
 "hash": "a95507818ff600152ea8c6532a5ddb72"
 },
+"red-envelope-english": {
+"date": "2026-10-22",
+"hash": "b4081251c2969b72f59c3a243f19c163"
+},
 "school-grades-english": {
 "date": "2026-10-16",
 "hash": "24519cbede8b1fe5fc00dc5f2af0c2c8"
@@ -2631,6 +2723,10 @@
 "date": "2026-10-20",
 "hash": "b612c98e8297556044bd3d9a385f97f8"
 },
+"thanksgiving-english": {
+"date": "2026-10-22",
+"hash": "12b66a819f37324840eb807e8a84b863"
+},
 "time-english": {
 "date": "2026-10-20",
 "hash": "5422642ac6abea7ac3ed4a5267389c6b"
@@ -2667,6 +2763,10 @@
 "date": "2026-10-16",
 "hash": "6d81981b7c7852e79065b515f7a80284"
 },
+"typhoon-english": {
+"date": "2026-10-22",
+"hash": "518be51a6a792e35a71e25b86964fc90"
+},
 "valentines-day-english": {
 "date": "2026-10-19",
 "hash": "8cd23565b4b04e49ce7dae849b92b20e"
@@ -2702,5 +2802,9 @@
 "zhongshan-junior-high-english-banqiao": {
 "date": "2026-10-19",
 "hash": "7f285fd1162e093fbd0cf3bc5abe6a86"
+},
+"zodiac-signs-english": {
+"date": "2026-10-22",
+"hash": "a2a8b387be276cf21f5fa59b963db16a"
 }
 }

@@ -1062,6 +1062,100 @@
     "小孩英文名字",
     "拼音名"
    ]
+  },
+  {
+   "target": "thanksgiving-english",
+   "kw": [
+    "感恩節英文",
+    "感恩節快樂英文",
+    "Happy Thanksgiving"
+   ]
+  },
+  {
+   "target": "mothers-day-english",
+   "kw": [
+    "母親節英文",
+    "母親節快樂英文",
+    "Happy Mother's Day"
+   ]
+  },
+  {
+   "target": "dragon-boat-festival-english",
+   "kw": [
+    "端午節英文",
+    "Dragon Boat Festival"
+   ]
+  },
+  {
+   "target": "lantern-festival-english",
+   "kw": [
+    "元宵節英文",
+    "Lantern Festival"
+   ]
+  },
+  {
+   "target": "red-envelope-english",
+   "kw": [
+    "紅包英文",
+    "red envelope",
+    "lucky money"
+   ]
+  },
+  {
+   "target": "chinese-zodiac-english",
+   "kw": [
+    "十二生肖英文",
+    "生肖英文",
+    "Chinese zodiac"
+   ]
+  },
+  {
+   "target": "earthquake-english",
+   "kw": [
+    "地震英文"
+   ]
+  },
+  {
+   "target": "good-morning-english",
+   "kw": [
+    "早安英文"
+   ]
+  },
+  {
+   "target": "good-night-english",
+   "kw": [
+    "晚安英文"
+   ]
+  },
+  {
+   "target": "zodiac-signs-english",
+   "kw": [
+    "星座英文",
+    "12星座英文",
+    "十二星座英文"
+   ]
+  },
+  {
+   "target": "bubble-tea-english",
+   "kw": [
+    "珍珠奶茶英文",
+    "珍奶英文",
+    "bubble tea"
+   ]
+  },
+  {
+   "target": "typhoon-english",
+   "kw": [
+    "颱風英文",
+    "颱風假英文"
+   ]
+  },
+  {
+   "target": "english-address",
+   "kw": [
+    "英文地址",
+    "地址英文"
+   ]
   }
  ]
 }

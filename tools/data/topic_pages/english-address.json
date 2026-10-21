@@ -1,0 +1,1073 @@
+{
+ "slug": "english-address",
+ "published": "2026-10-22",
+ "target": "英文地址",
+ "index": 1.5,
+ "h1": "英文地址怎麼寫？郵局格式、縮寫對照表與 22 縣市英譯",
+ "title": "英文地址怎麼寫？郵局格式、路街段巷弄縮寫、22 縣市英譯對照表｜埃森美語",
+ "desc": "英文地址怎麼寫？照中華郵政格式從小到大倒過來：樓、號、弄、巷、段、路、區、市。附路街段巷弄英文縮寫、22 縣市與各區英譯、12 個範例、網購表格填法與常見錯誤。",
+ "hero": "網購填海外表格、幫孩子報名國外營隊、寄包裹給國外的朋友，第一個卡住的往往是英文地址。英文地址只有一條規則：<strong>從小寫到大，順序和中文完全相反</strong>——樓、號、弄、巷、段、路，再來區、市、郵遞區號，最後一行寫 Taiwan (R.O.C.)。下面先給路、街、段、巷、弄、號、樓的英文縮寫表，接著是 22 縣市、新北市 29 區與臺北市 12 區的英譯，12 個照著套的範例，再講路名拼音、海外表格每一格怎麼填、怎麼用英文說自己住哪裡，最後是最常寫錯的 12 個地方。",
+ "sections": [
+  {
+   "title": "英文地址對照表：單位縮寫、22 縣市、新北與臺北各區",
+   "prose": [
+    "這張表照中華郵政的英譯規則整理（郵局網站的「中文地址英譯」查詢用的就是同一套）。第一組是地址裡每個單位的縮寫，寫法要和郵局一致，國外的系統才認得；第二組是 22 個縣市，第三、四組是新北市和臺北市的每一個區，後面附郵遞區號前三碼。"
+   ],
+   "heads": [
+    "中文",
+    "英文",
+    "說明／郵遞區號"
+   ],
+   "groups": [
+    {
+     "name": "地址單位與縮寫",
+     "rows": [
+      [
+       "市（直轄市、省轄市）",
+       "City",
+       "臺北市 Taipei City、新北市 New Taipei City；縣轄市也是 City"
+      ],
+      [
+       "縣",
+       "County",
+       "宜蘭縣 Yilan County"
+      ],
+      [
+       "區",
+       "Dist.",
+       "District；板橋區 Banqiao Dist."
+      ],
+      [
+       "鄉",
+       "Township",
+       "鄉和鎮都用 Township；三芝鄉 Sanzhi Township"
+      ],
+      [
+       "鎮",
+       "Township",
+       "鎮也是 Township；板橋以前是鎮，現在是區"
+      ],
+      [
+       "村、里",
+       "Vil.",
+       "Village；中正里 Zhongzheng Vil.（寄信通常可以省略）"
+      ],
+      [
+       "鄰",
+       "Neighborhood",
+       "寄信通常省略"
+      ],
+      [
+       "路",
+       "Rd.",
+       "Road；文化路 Wenhua Rd."
+      ],
+      [
+       "街",
+       "St.",
+       "Street；民生街 Minsheng St."
+      ],
+      [
+       "大道",
+       "Blvd.",
+       "Boulevard；縣民大道 Xianmin Blvd."
+      ],
+      [
+       "段",
+       "Sec.",
+       "Section；一段 Sec. 1、二段 Sec. 2"
+      ],
+      [
+       "巷",
+       "Ln.",
+       "Lane；12 巷 Ln. 12"
+      ],
+      [
+       "弄",
+       "Aly.",
+       "Alley；3 弄 Aly. 3"
+      ],
+      [
+       "衖",
+       "Sub-alley",
+       "很少見"
+      ],
+      [
+       "號",
+       "No.",
+       "Number；100 號 No. 100；No. 後面要空一格"
+      ],
+      [
+       "之（號之）",
+       "-",
+       "100 號之 1 → No. 100-1"
+      ],
+      [
+       "樓",
+       "F.",
+       "Floor；3 樓 3F.（數字和 F 之間不空格）"
+      ],
+      [
+       "樓之",
+       "F.-",
+       "3 樓之 2 → 3F.-2"
+      ],
+      [
+       "地下樓",
+       "B1F.",
+       "地下一樓 B1F.、地下二樓 B2F."
+      ],
+      [
+       "室",
+       "Rm.",
+       "Room；5 室 Rm. 5"
+      ],
+      [
+       "郵遞區號",
+       "Postal code",
+       "寫在市、縣的後面：New Taipei City 220"
+      ],
+      [
+       "台灣",
+       "Taiwan (R.O.C.)",
+       "國家寫在最後一行"
+      ]
+     ]
+    },
+    {
+     "name": "22 縣市",
+     "rows": [
+      [
+       "臺北市",
+       "Taipei City",
+       "100–116"
+      ],
+      [
+       "新北市",
+       "New Taipei City",
+       "200–253"
+      ],
+      [
+       "桃園市",
+       "Taoyuan City",
+       "320–338"
+      ],
+      [
+       "臺中市",
+       "Taichung City",
+       "400–439"
+      ],
+      [
+       "臺南市",
+       "Tainan City",
+       "700–745"
+      ],
+      [
+       "高雄市",
+       "Kaohsiung City",
+       "800–852"
+      ],
+      [
+       "基隆市",
+       "Keelung City",
+       "200–206"
+      ],
+      [
+       "新竹市",
+       "Hsinchu City",
+       "300"
+      ],
+      [
+       "新竹縣",
+       "Hsinchu County",
+       "302–315"
+      ],
+      [
+       "苗栗縣",
+       "Miaoli County",
+       "350–369"
+      ],
+      [
+       "彰化縣",
+       "Changhua County",
+       "500–530"
+      ],
+      [
+       "南投縣",
+       "Nantou County",
+       "540–558"
+      ],
+      [
+       "雲林縣",
+       "Yunlin County",
+       "630–655"
+      ],
+      [
+       "嘉義市",
+       "Chiayi City",
+       "600"
+      ],
+      [
+       "嘉義縣",
+       "Chiayi County",
+       "602–625"
+      ],
+      [
+       "屏東縣",
+       "Pingtung County",
+       "900–947"
+      ],
+      [
+       "宜蘭縣",
+       "Yilan County",
+       "260–290"
+      ],
+      [
+       "花蓮縣",
+       "Hualien County",
+       "970–983"
+      ],
+      [
+       "臺東縣",
+       "Taitung County",
+       "950–966"
+      ],
+      [
+       "澎湖縣",
+       "Penghu County",
+       "880–885"
+      ],
+      [
+       "金門縣",
+       "Kinmen County",
+       "890–896"
+      ],
+      [
+       "連江縣",
+       "Lienchiang County",
+       "209–212"
+      ]
+     ]
+    },
+    {
+     "name": "新北市 29 區",
+     "rows": [
+      [
+       "板橋區",
+       "Banqiao Dist.",
+       "220"
+      ],
+      [
+       "三重區",
+       "Sanchong Dist.",
+       "241"
+      ],
+      [
+       "中和區",
+       "Zhonghe Dist.",
+       "235"
+      ],
+      [
+       "永和區",
+       "Yonghe Dist.",
+       "234"
+      ],
+      [
+       "新莊區",
+       "Xinzhuang Dist.",
+       "242"
+      ],
+      [
+       "新店區",
+       "Xindian Dist.",
+       "231"
+      ],
+      [
+       "土城區",
+       "Tucheng Dist.",
+       "236"
+      ],
+      [
+       "蘆洲區",
+       "Luzhou Dist.",
+       "247"
+      ],
+      [
+       "樹林區",
+       "Shulin Dist.",
+       "238"
+      ],
+      [
+       "汐止區",
+       "Xizhi Dist.",
+       "221"
+      ],
+      [
+       "鶯歌區",
+       "Yingge Dist.",
+       "239"
+      ],
+      [
+       "三峽區",
+       "Sanxia Dist.",
+       "237"
+      ],
+      [
+       "淡水區",
+       "Tamsui Dist.",
+       "251"
+      ],
+      [
+       "林口區",
+       "Linkou Dist.",
+       "244"
+      ],
+      [
+       "泰山區",
+       "Taishan Dist.",
+       "243"
+      ],
+      [
+       "五股區",
+       "Wugu Dist.",
+       "248"
+      ],
+      [
+       "瑞芳區",
+       "Ruifang Dist.",
+       "224"
+      ],
+      [
+       "八里區",
+       "Bali Dist.",
+       "249"
+      ],
+      [
+       "深坑區",
+       "Shenkeng Dist.",
+       "222"
+      ],
+      [
+       "石碇區",
+       "Shiding Dist.",
+       "223"
+      ],
+      [
+       "坪林區",
+       "Pinglin Dist.",
+       "232"
+      ],
+      [
+       "三芝區",
+       "Sanzhi Dist.",
+       "252"
+      ],
+      [
+       "石門區",
+       "Shimen Dist.",
+       "253"
+      ],
+      [
+       "金山區",
+       "Jinshan Dist.",
+       "208"
+      ],
+      [
+       "萬里區",
+       "Wanli Dist.",
+       "207"
+      ],
+      [
+       "平溪區",
+       "Pingxi Dist.",
+       "226"
+      ],
+      [
+       "雙溪區",
+       "Shuangxi Dist.",
+       "227"
+      ],
+      [
+       "貢寮區",
+       "Gongliao Dist.",
+       "228"
+      ],
+      [
+       "烏來區",
+       "Wulai Dist.",
+       "233"
+      ]
+     ]
+    },
+    {
+     "name": "臺北市 12 區",
+     "rows": [
+      [
+       "中正區",
+       "Zhongzheng Dist.",
+       "100"
+      ],
+      [
+       "大同區",
+       "Datong Dist.",
+       "103"
+      ],
+      [
+       "中山區",
+       "Zhongshan Dist.",
+       "104"
+      ],
+      [
+       "松山區",
+       "Songshan Dist.",
+       "105"
+      ],
+      [
+       "大安區",
+       "Da'an Dist.",
+       "106"
+      ],
+      [
+       "萬華區",
+       "Wanhua Dist.",
+       "108"
+      ],
+      [
+       "信義區",
+       "Xinyi Dist.",
+       "110"
+      ],
+      [
+       "士林區",
+       "Shilin Dist.",
+       "111"
+      ],
+      [
+       "北投區",
+       "Beitou Dist.",
+       "112"
+      ],
+      [
+       "內湖區",
+       "Neihu Dist.",
+       "114"
+      ],
+      [
+       "南港區",
+       "Nangang Dist.",
+       "115"
+      ],
+      [
+       "文山區",
+       "Wenshan Dist.",
+       "116"
+      ]
+     ]
+    }
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "英文地址怎麼寫？從小到大、一個逗號一個單位",
+   "prose": [
+    "中文地址從大寫到小：市、區、路、段、號、樓。英文剛好相反，<strong>先寫樓和號，最後才寫市和國家</strong>。每個單位之間用逗號加一個空格隔開；郵遞區號寫在市或縣的後面；最後一行是 Taiwan (R.O.C.)。寫信封時可以分成三行：第一行樓、號、弄、巷、段、路，第二行區、市、郵遞區號，第三行 Taiwan (R.O.C.)；填網路表格時就寫成一行。",
+    "下面 12 個範例把常見的情況都走過一遍：有段、沒有段、有巷弄、號之幾、樓之幾、縣轄市和離島。找一個最像自己地址的，照著換掉名字和數字就好。"
+   ],
+   "heads": [
+    "中文地址",
+    "英文地址",
+    "重點"
+   ],
+   "rows": [
+    [
+     "220 新北市板橋區文化路一段 100 號 3 樓",
+     "3F., No. 100, Sec. 1, Wenhua Rd., Banqiao Dist., New Taipei City 220, Taiwan (R.O.C.)",
+     "樓在最前面，段在路前面"
+    ],
+    [
+     "220 新北市板橋區縣民大道二段 7 號",
+     "No. 7, Sec. 2, Xianmin Blvd., Banqiao Dist., New Taipei City 220, Taiwan (R.O.C.)",
+     "板橋車站；大道是 Blvd."
+    ],
+    [
+     "220 新北市板橋區中正路 12 巷 3 弄 5 號之 1",
+     "No. 5-1, Aly. 3, Ln. 12, Zhongzheng Rd., Banqiao Dist., New Taipei City 220, Taiwan (R.O.C.)",
+     "弄在巷前面；之 1 寫成 -1"
+    ],
+    [
+     "100 臺北市中正區重慶南路一段 122 號",
+     "No. 122, Sec. 1, Chongqing S. Rd., Zhongzheng Dist., Taipei City 100, Taiwan (R.O.C.)",
+     "總統府；南路 = S. Rd."
+    ],
+    [
+     "110 臺北市信義區信義路五段 7 號 89 樓",
+     "89F., No. 7, Sec. 5, Xinyi Rd., Xinyi Dist., Taipei City 110, Taiwan (R.O.C.)",
+     "台北 101 觀景台"
+    ],
+    [
+     "104 臺北市中山區南京東路二段 100 號 6 樓之 2",
+     "6F.-2, No. 100, Sec. 2, Nanjing E. Rd., Zhongshan Dist., Taipei City 104, Taiwan (R.O.C.)",
+     "樓之 2 寫成 6F.-2"
+    ],
+    [
+     "330 桃園市桃園區中正路 1 號",
+     "No. 1, Zhongzheng Rd., Taoyuan Dist., Taoyuan City 330, Taiwan (R.O.C.)",
+     "沒有段就直接寫路"
+    ],
+    [
+     "407 臺中市西屯區臺灣大道三段 99 號",
+     "No. 99, Sec. 3, Taiwan Blvd., Xitun Dist., Taichung City 407, Taiwan (R.O.C.)",
+     "臺灣大道是 Taiwan Blvd."
+    ],
+    [
+     "700 臺南市中西區民生路一段 25 號 2 樓",
+     "2F., No. 25, Sec. 1, Minsheng Rd., West Central Dist., Tainan City 700, Taiwan (R.O.C.)",
+     "中西區是 West Central Dist."
+    ],
+    [
+     "260 宜蘭縣宜蘭市中山路三段 88 號",
+     "No. 88, Sec. 3, Zhongshan Rd., Yilan City, Yilan County 260, Taiwan (R.O.C.)",
+     "縣轄市：先寫 City，再寫 County"
+    ],
+    [
+     "252 新北市三芝區中正路一段 10 號",
+     "No. 10, Sec. 1, Zhongzheng Rd., Sanzhi Dist., New Taipei City 252, Taiwan (R.O.C.)",
+     "升格後的鄉也都叫 Dist."
+    ],
+    [
+     "880 澎湖縣馬公市中正路 5 號",
+     "No. 5, Zhongzheng Rd., Magong City, Penghu County 880, Taiwan (R.O.C.)",
+     "離島一樣的格式"
+    ]
+   ],
+   "after": [
+    "最保險的做法：在<a href=\"https://www.post.gov.tw/post/internet/Postal/index.jsp?ID=207\" rel=\"nofollow\">中華郵政的中文地址英譯查詢</a>輸入中文地址，它會直接給你郵局格式的英文，再對照上面的表檢查一次樓和號有沒有擺對位置。"
+   ]
+  },
+  {
+   "title": "路名怎麼翻？漢語拼音、東西南北與 40 條常見路名",
+   "prose": [
+    "路名用<strong>漢語拼音</strong>，整條路名連在一起寫、第一個字母大寫：中正路是 Zhongzheng Rd.，不是 Zhong Zheng Rd.。方向字另外寫成縮寫放在 Rd. 前面：忠孝東路 Zhongxiao E. Rd.、敦化南路 Dunhua S. Rd.。兩個音節連在一起會唸錯時，中間加撇號：仁愛路 Ren'ai Rd.、大安路 Da'an Rd.。少數路名不用拼音，用原本的英文：市民大道 Civic Blvd.、羅斯福路 Roosevelt Rd.。"
+   ],
+   "heads": [
+    "路名",
+    "英文",
+    "備註"
+   ],
+   "rows": [
+    [
+     "中正路",
+     "Zhongzheng Rd.",
+     "全台最多的路名"
+    ],
+    [
+     "中山路",
+     "Zhongshan Rd.",
+     ""
+    ],
+    [
+     "中華路",
+     "Zhonghua Rd.",
+     ""
+    ],
+    [
+     "文化路",
+     "Wenhua Rd.",
+     "板橋"
+    ],
+    [
+     "民生路",
+     "Minsheng Rd.",
+     ""
+    ],
+    [
+     "民權路",
+     "Minquan Rd.",
+     "q 不是 k"
+    ],
+    [
+     "民族路",
+     "Minzu Rd.",
+     ""
+    ],
+    [
+     "三民路",
+     "Sanmin Rd.",
+     ""
+    ],
+    [
+     "忠孝東路",
+     "Zhongxiao E. Rd.",
+     "東路 E. Rd."
+    ],
+    [
+     "忠孝西路",
+     "Zhongxiao W. Rd.",
+     "西路 W. Rd."
+    ],
+    [
+     "南京東路",
+     "Nanjing E. Rd.",
+     ""
+    ],
+    [
+     "敦化南路",
+     "Dunhua S. Rd.",
+     "南路 S. Rd."
+    ],
+    [
+     "復興北路",
+     "Fuxing N. Rd.",
+     "北路 N. Rd."
+    ],
+    [
+     "仁愛路",
+     "Ren'ai Rd.",
+     "中間要加撇號"
+    ],
+    [
+     "大安路",
+     "Da'an Rd.",
+     "中間要加撇號"
+    ],
+    [
+     "博愛路",
+     "Bo'ai Rd.",
+     "中間要加撇號"
+    ],
+    [
+     "長安路",
+     "Chang'an Rd.",
+     "中間要加撇號"
+    ],
+    [
+     "市民大道",
+     "Civic Blvd.",
+     "少數用英文意譯的路"
+    ],
+    [
+     "羅斯福路",
+     "Roosevelt Rd.",
+     "用原本的英文名"
+    ],
+    [
+     "凱達格蘭大道",
+     "Ketagalan Blvd.",
+     "原住民族語"
+    ],
+    [
+     "縣民大道",
+     "Xianmin Blvd.",
+     "板橋"
+    ],
+    [
+     "新站路",
+     "Xinzhan Rd.",
+     "板橋"
+    ],
+    [
+     "館前東路",
+     "Guanqian E. Rd.",
+     "板橋"
+    ],
+    [
+     "漢生東路",
+     "Hansheng E. Rd.",
+     "板橋"
+    ],
+    [
+     "南雅南路",
+     "Nanya S. Rd.",
+     "板橋"
+    ],
+    [
+     "四川路",
+     "Sichuan Rd.",
+     "板橋"
+    ],
+    [
+     "大觀路",
+     "Daguan Rd.",
+     "板橋"
+    ],
+    [
+     "國光路",
+     "Guoguang Rd.",
+     "板橋"
+    ],
+    [
+     "和平路",
+     "Heping Rd.",
+     ""
+    ],
+    [
+     "信義路",
+     "Xinyi Rd.",
+     ""
+    ],
+    [
+     "建國路",
+     "Jianguo Rd.",
+     ""
+    ],
+    [
+     "光復路",
+     "Guangfu Rd.",
+     ""
+    ],
+    [
+     "成功路",
+     "Chenggong Rd.",
+     ""
+    ],
+    [
+     "自由路",
+     "Ziyou Rd.",
+     ""
+    ],
+    [
+     "延平路",
+     "Yanping Rd.",
+     ""
+    ],
+    [
+     "環河路",
+     "Huanhe Rd.",
+     ""
+    ],
+    [
+     "重慶路",
+     "Chongqing Rd.",
+     ""
+    ],
+    [
+     "松江路",
+     "Songjiang Rd.",
+     ""
+    ],
+    [
+     "新生路",
+     "Xinsheng Rd.",
+     ""
+    ],
+    [
+     "和平東路",
+     "Heping E. Rd.",
+     ""
+    ]
+   ],
+   "after": [
+    "外國人看拼音會照英文的習慣唸，所以 x、q、zh 這幾個字母常被唸錯；跟外國朋友說地址時，直接把路名唸給他聽最快。下一節的表列出最容易唸錯的拼音字母。"
+   ]
+  },
+  {
+   "title": "網購、海外寄件、報名表：每一格英文地址怎麼填",
+   "prose": [
+    "國外的表格把地址拆成好幾格，和我們一行寫完的習慣不一樣。對照表左邊是表格上的英文欄位名稱，右邊是台灣地址對應要填的內容。"
+   ],
+   "heads": [
+    "表格欄位",
+    "中文意思",
+    "台灣地址怎麼填"
+   ],
+   "rows": [
+    [
+     "Recipient / Full name",
+     "收件人姓名",
+     "護照上的英文名；格式見 中文名字翻英文"
+    ],
+    [
+     "Address line 1",
+     "地址第一行",
+     "號、巷、弄、段、路：No. 100, Sec. 1, Wenhua Rd."
+    ],
+    [
+     "Address line 2",
+     "地址第二行",
+     "樓、室或公司名：3F.-2 或 Apt. 5"
+    ],
+    [
+     "City / Town",
+     "市、鄉鎮市區",
+     "填區加市：Banqiao Dist., New Taipei City"
+    ],
+    [
+     "State / Province / Region",
+     "州、省",
+     "沒有就填 Taiwan 或 New Taipei City，不能空白就填 N/A"
+    ],
+    [
+     "ZIP / Postal code",
+     "郵遞區號",
+     "3 碼或 3+3 碼都收得到：220 或 220001"
+    ],
+    [
+     "Country",
+     "國家",
+     "Taiwan；下拉選單只有 Taiwan, Province of China 時照選，包裹一樣會到"
+    ],
+    [
+     "Phone",
+     "電話",
+     "+886 去掉開頭的 0：0912-345-678 → +886 912 345 678"
+    ],
+    [
+     "c/o",
+     "由某人轉交",
+     "c/o Mr. Wang 表示請王先生轉交"
+    ],
+    [
+     "Apt. / Bldg. / Unit",
+     "公寓、大樓、單位",
+     "美國表格的 Apt. 對應我們的樓之幾"
+    ]
+   ],
+   "phone_cols": 3,
+   "after": [
+    "從國外寄東西回台灣，英文地址寫錯其實不太會寄丟：包裹到了台灣是由台灣的郵差按郵遞區號和中文送達。最穩的寫法是英文地址下面再補一行中文地址，國名 TAIWAN 用英文大寫。"
+   ]
+  },
+  {
+   "title": "用英文說自己住哪裡：15 句與 8 個常唸錯的拼音",
+   "prose": [
+    "口語不會把整個地址唸完。問 Where do you live? 時，回答到區或地標就夠了：I live in Banqiao, near Taipei. 孩子的<a href=\"/english-self-introduction-kids/\">英文自我介紹</a>裡常要說住哪裡，下面這幾句可以直接用。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "說明"
+   ],
+   "groups": [
+    {
+     "name": "說住哪裡、問地址",
+     "rows": [
+      [
+       "I live in Banqiao, New Taipei City.",
+       "我住在新北市板橋區。",
+       "口語只說到區"
+      ],
+      [
+       "I live in Banqiao, near Taipei.",
+       "我住在板橋，在台北附近。",
+       "對外國人說，板橋常要再補一句"
+      ],
+      [
+       "It's on Wenhua Road, Section 1.",
+       "在文化路一段。",
+       "口語把 Section 放在後面"
+      ],
+      [
+       "It's near Banqiao Station.",
+       "在板橋車站附近。",
+       "用地標最清楚"
+      ],
+      [
+       "My address is No. 100, Section 1, Wenhua Road.",
+       "我的地址是文化路一段 100 號。",
+       "唸的時候 Road、Section 唸全"
+      ],
+      [
+       "What's your address?",
+       "你的地址是什麼？",
+       ""
+      ],
+      [
+       "Could you write it down for me?",
+       "可以幫我寫下來嗎？",
+       ""
+      ],
+      [
+       "I'm on the third floor.",
+       "我在三樓。",
+       "樓層說 on the … floor"
+      ],
+      [
+       "Take Exit 2 and turn left.",
+       "從 2 號出口出來左轉。",
+       "指路"
+      ],
+      [
+       "It's a five-minute walk from the MRT.",
+       "從捷運站走五分鐘。",
+       ""
+      ],
+      [
+       "Which district do you live in?",
+       "你住哪一區？",
+       ""
+      ],
+      [
+       "I live across the river from Taipei.",
+       "我住在台北河對岸。",
+       "板橋人的說法"
+      ],
+      [
+       "The zip code is two-two-zero.",
+       "郵遞區號是 220。",
+       "數字一個一個唸"
+      ],
+      [
+       "Please send it to my school.",
+       "請寄到我學校。",
+       ""
+      ],
+      [
+       "How do you spell the road name?",
+       "路名怎麼拼？",
+       ""
+      ]
+     ]
+    },
+    {
+     "name": "外國人常唸錯的拼音字母",
+     "rows": [
+      [
+       "x",
+       "像「西」的子音，外國人常唸成 ks",
+       "Xinyi、Xizhi、Xinzhuang"
+      ],
+      [
+       "q",
+       "像「氣」的子音，不是 k",
+       "Minquan、Banqiao"
+      ],
+      [
+       "zh",
+       "像「知」的子音，不是 z+h",
+       "Zhongzheng、Zhonghe"
+      ],
+      [
+       "c",
+       "像「次」的子音，不是 k 也不是 s",
+       "Cai、Sanchong 的 ch 不同"
+      ],
+      [
+       "z",
+       "像「資」的子音",
+       "Zihou、Minzu"
+      ],
+      [
+       "j",
+       "像「基」的子音",
+       "Jinshan、Jianguo"
+      ],
+      [
+       "ü（寫成 u 或 yu）",
+       "嘴唇圓起來的「ㄩ」",
+       "Lüzhou 現在寫 Luzhou"
+      ],
+      [
+       "撇號 '",
+       "分開兩個音節，避免唸錯",
+       "Da'an 不是 Dan；Ren'ai 不是 Renai"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "板橋的英文是 Banqiao，外國人常唸成「班奇歐」；可以告訴他 q 的發音像 ch。想把每個音唸準，<a href=\"/kk-phonetic-chart/\">KK 音標表</a>可以查任何英文字的發音。"
+   ]
+  },
+  {
+   "title": "英文地址常見錯誤 12 個：寫對一次就不會再錯",
+   "prose": [
+    "這些錯誤大多來自把中文順序直接搬過去，或是用了 2010 年改制前的舊名字。左欄是常見的寫法，中欄是正確寫法。"
+   ],
+   "heads": [
+    "常見寫法",
+    "正確寫法",
+    "原因"
+   ],
+   "rows": [
+    [
+     "Taipei County",
+     "New Taipei City",
+     "2010 年改制，舊文件和舊店家還在用"
+    ],
+    [
+     "Panchiao",
+     "Banqiao",
+     "舊拼法，護照和國外文件可能還看得到；現在一律 Banqiao"
+    ],
+    [
+     "No.100",
+     "No. 100",
+     "No. 後面要有空格"
+    ],
+    [
+     "3 Floor、3th Floor",
+     "3F.",
+     "樓就是數字加 F."
+    ],
+    [
+     "Wenhua Rd. Sec. 1",
+     "Sec. 1, Wenhua Rd.",
+     "段要寫在路的前面"
+    ],
+    [
+     "New Taipei City, Banqiao Dist.",
+     "Banqiao Dist., New Taipei City",
+     "從小到大，區在市前面"
+    ],
+    [
+     "Road 和 Rd. 混用",
+     "全部用 Rd.",
+     "一個地址用同一種寫法"
+    ],
+    [
+     "Taiwan R.O.C.",
+     "Taiwan (R.O.C.)",
+     "括號是郵局的標準格式"
+    ],
+    [
+     "wenhua rd.",
+     "Wenhua Rd.",
+     "路名、區名每個字第一個字母大寫"
+    ],
+    [
+     "Sec.1",
+     "Sec. 1",
+     "縮寫後面都要空格"
+    ],
+    [
+     "Lane 12 Alley 3",
+     "Aly. 3, Ln. 12",
+     "弄比巷小，所以弄先寫"
+    ],
+    [
+     "Zhong Zheng Rd.",
+     "Zhongzheng Rd.",
+     "路名的拼音連在一起寫"
+    ]
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "英文地址常見問題",
+   "faq": [
+    [
+     "英文地址要用漢語拼音還是通用拼音？",
+     "現在全國的路牌、郵局英譯和政府文件都用漢語拼音（板橋 Banqiao、新莊 Xinzhuang）。2008 年以前的通用拼音（Sinjhuang）和更早的威妥瑪拼音（Panchiao）還會出現在舊文件和舊招牌上，但寫地址時一律用漢語拼音，郵局的查詢系統給的也是這一套。"
+    ],
+    [
+     "郵遞區號要寫 3 碼還是 6 碼？寫在哪裡？",
+     "3 碼（220）和 3+3 碼（220001）都收得到；3+3 碼分得更細，郵局可以更快分揀。位置固定寫在市或縣的名字後面：Banqiao Dist., New Taipei City 220。填國外表格時放在 ZIP / Postal code 那一格。"
+    ],
+    [
+     "英文地址可以全部大寫嗎？",
+     "可以。很多國家的郵政系統建議信封上的地址全部大寫，比較好辨認：3F., NO. 100, SEC. 1, WENHUA RD., BANQIAO DIST., NEW TAIPEI CITY 220, TAIWAN (R.O.C.)。填表格時用一般的大小寫就好。"
+    ],
+    [
+     "國外網站的國家選單只有 Taiwan, Province of China，怎麼辦？",
+     "照選就好，這是國際標準 ISO 3166 的名稱寫法，影響的只是選單文字，包裹和信件都會正常寄到台灣。地址其他欄位照本頁的格式填，最後把郵遞區號填對最重要。"
+    ],
+    [
+     "板橋的英文是 Banqiao 還是 Panchiao？",
+     "現在是 Banqiao。Panchiao 是威妥瑪拼音的舊寫法，板橋車站的舊英文名、早期的護照和老店的招牌還看得到。寫地址、報名、寄件一律用 Banqiao，郵局和捷運用的都是這個。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "地址寫得出來，說得出口嗎？",
+ "cta": "填表格可以慢慢查，外國朋友問 Where do you live? 卻要當場回答。我們的小班課由美籍老師帶孩子把自我介紹、住哪裡、怎麼走這些真的會用到的句子，一句一句練到不用想就說得出來。"
+}
