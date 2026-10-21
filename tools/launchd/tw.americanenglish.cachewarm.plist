@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Runs tools/cache_warm.py every 2 hours on Chris's Mac (see that file for why).
+     Install:  cp tools/cache_warm.py "$HOME/Library/Application Support/ae-cache-warm/"
+               cp tools/launchd/tw.americanenglish.cachewarm.plist ~/Library/LaunchAgents/
+               launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/tw.americanenglish.cachewarm.plist
+     Remove:   launchctl bootout gui/$(id -u)/tw.americanenglish.cachewarm && rm ~/Library/LaunchAgents/tw.americanenglish.cachewarm.plist -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>tw.americanenglish.cachewarm</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/christopher/Library/Application Support/ae-cache-warm/cache_warm.py</string>
+  </array>
+  <key>StartInterval</key><integer>7200</integer>
+  <key>RunAtLoad</key><false/>
+  <key>Nice</key><integer>10</integer>
+  <key>LowPriorityIO</key><true/>
+  <key>StandardOutPath</key><string>/Users/christopher/Library/Logs/ae-cache-warm.out</string>
+  <key>StandardErrorPath</key><string>/Users/christopher/Library/Logs/ae-cache-warm.err</string>
+</dict>
+</plist>
