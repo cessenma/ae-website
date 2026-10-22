@@ -21,7 +21,7 @@
      "rows": [
       ["Dragon Boat Festival", "端午節（最標準，美國人聽得懂）", "作文、考試、聊天都用這個"],
       ["the Dragon Boat Festival", "端午節（句子裡加 the）", "on the Dragon Boat Festival 在端午節"],
-      ["Duanwu Festival", "端午節（拼音名）", "中國的英文媒體常用；美國人多半沒聽過"],
+      ["Duanwu Festival", "端午節（拼音寫法）", "中國的英文媒體常用；美國人多半沒聽過"],
       ["Double Fifth Festival", "端午節的舊稱（五月初五）", "舊書、舊教材會看到，聽得懂即可"],
       ["Tuen Ng Festival", "端午節的香港官方英文名（粵語音譯）", "在香港看到不用覺得奇怪"],
       ["the fifth day of the fifth lunar month", "農曆五月初五", "跟外國人解釋為什麼每年日期不同"],
@@ -32,7 +32,7 @@
      "name": "祝福語：朋友、同學 Friends and classmates",
      "rows": [
       ["Happy Dragon Boat Festival!", "端午節快樂！（最標準）", "對誰都可以・唯一的標準說法"],
-      ["Happy Duanwu Festival!", "端午節快樂！（拼音名）", "對方懂中文、或人在中國時用"],
+      ["Happy Duanwu Festival!", "端午節快樂！（拼音寫法）", "對方懂中文、或人在中國時用"],
       ["Have a great Dragon Boat Festival!", "祝你端午節過得開心！", "朋友・輕鬆"],
       ["Enjoy the long weekend!", "連假愉快！", "朋友、同事・端午連著週末時"],
       ["Enjoy your zongzi!", "粽子吃得開心！", "朋友・訊息"],
@@ -103,12 +103,12 @@
     ["Festival", "[ˈfɛstəvḷ]", "重音在最前面的 FES，後兩個音節輕帶過"],
     ["Happy Dragon Boat Festival!", "[ˈhæpɪ ˈdrægən bot ˈfɛstəvḷ]", "四個重音：HAP-py DRA-gon BOAT FES-ti-val"],
     ["Duanwu", "照拼音唸，像 dwan-woo", "說完接一句 the Dragon Boat Festival 對方才懂"],
-    ["zongzi", "照拼音唸，像 zong-zee", "對沒聽過的人先說 rice dumplings"],
+    ["zongzi", "照拼音唸，像 dzong-dzuh；美國人多半唸成 zong-zee", "對沒聽過的人先說 rice dumplings"],
     ["race / races", "[res] / [ˈresɪz]", "母音是 [e]，像「ㄟ」；划龍舟比賽多用複數 races"]
    ],
    "phone_cols": 3,
    "after": [
-    "練法：把 Happy／Dragon／Boat／Festival 拆成四塊，每一塊先拍手打出重音，四塊都順了再連起來唸；boat 那一塊唸完，請孩子把嘴巴停在 t 的位置不要動，確認後面沒有多出「特」的聲音。每個符號怎麼唸可以對照 <a href=\"/kk-phonetic-chart/\">KK 音標表</a>，更多台灣孩子常唸錯的音在 <a href=\"/english-pronunciation/\">英文發音</a>。"
+    "練法：把 Happy／Dragon／Boat／Festival 拆成四塊，每一塊先拍手打出重音（拍法見 <a href=\"/english-word-stress-gesture/\">英文重音</a>），四塊都順了再連起來唸；boat 那一塊唸完，請孩子把嘴巴停在 t 的位置不要動，確認後面沒有多出「特」的聲音。每個符號怎麼唸可以對照 <a href=\"/kk-phonetic-chart/\">KK 音標表</a>，更多台灣孩子常唸錯的音在 <a href=\"/english-pronunciation/\">英文發音</a>。"
    ]
   },
   {
@@ -143,7 +143,7 @@
    "heads": ["英文", "中文", "用法／注意"],
    "groups": [
     {
-     "name": "粽子與食材 Zongzi and ingredients",
+     "name": "粽子英文怎麼說：食材與鹹甜南北粽",
      "rows": [
       ["zongzi", "粽子（照拼音）", "單複數常同形：two zongzi；沒聽過的人先說 rice dumplings"],
       ["rice dumpling", "粽子（解釋用的說法）", "複數 rice dumplings；也說 sticky rice dumpling"],
@@ -288,13 +288,13 @@
    ],
    "phone_cols": 3,
    "after": [
-    "複數是這一頁最常出錯的地方：zongzi 可以不加 s，但 rice dumplings、dragon boats、races、sachets 都要加；名詞什麼時候加 s 見 <a href=\"/english-plural-nouns/\">英文複數規則</a>。日期的說法（June nineteenth、June 19）在 <a href=\"/english-dates-guide/\">英文日期</a>。"
+    "複數是這一頁最常出錯的地方：zongzi 可以不加 s，但 rice dumplings、dragon boats、races、sachets 都要加；名詞什麼時候加 s 見 <a href=\"/english-plural-nouns/\">英文複數規則</a>。日期的說法（June ninth、June 9）在 <a href=\"/english-dates-guide/\">英文日期</a>。"
    ]
   },
   {
    "title": "端午節英文常見問題",
    "faq": [
-    ["端午節英文怎麼說？", "最標準的是 Dragon Boat Festival，台灣的英文新聞、課本、考試都用它，句子裡前面加 the：on the Dragon Boat Festival。Duanwu Festival 是拼音名，中國的英文媒體常用，不懂中文的美國人多半沒聽過；舊稱 Double Fifth Festival、香港的 Tuen Ng Festival 看到認得就好。作文和考卷一律寫 Dragon Boat Festival，三個字開頭大寫、Boat 不加 s。"],
+    ["端午節英文怎麼說？", "最標準的是 Dragon Boat Festival，台灣的英文新聞、課本、考試都用它，句子裡前面加 the：on the Dragon Boat Festival。Duanwu Festival 是拼音寫法，中國的英文媒體常用，不懂中文的美國人多半沒聽過；舊稱 Double Fifth Festival、香港的 Tuen Ng Festival 看到認得就好。作文和考卷一律寫 Dragon Boat Festival，三個字開頭大寫、Boat 不加 s。"],
     ["端午節快樂英文怎麼說？", "Happy Dragon Boat Festival!，跟 Happy Birthday 同一個句型，不加 Day。想說長一點：Wishing you and your family a happy Dragon Boat Festival.（對長輩、老師）或 Happy Dragon Boat Festival! Enjoy your zongzi!（對朋友）。別人先說時回 Thank you! Happy Dragon Boat Festival to you too!。唸法是 [ˈhæpɪ ˈdrægən bot ˈfɛstəvḷ]：dragon 不是「追根」，boat 只有一個音節。"],
     ["粽子英文怎麼說？", "兩種說法：zongzi（照拼音，英文媒體愈來愈常直接用）和 rice dumpling（解釋用；更清楚可以說 sticky rice dumpling）。對沒看過粽子的美國人，最快的解釋是兩句一起說：It's sticky rice wrapped in leaves. It's like a tamale!。鹹粽是 savory zongzi，甜的鹼粽是 alkaline zongzi；北部粽、南部粽的差別用 steamed（蒸）和 boiled（水煮）兩個字講。"],
     ["划龍舟英文怎麼說？", "划龍舟比賽是 dragon boat race，通常用複數：We watched the dragon boat races.。「划」這個動作是 paddle，不是 row——龍舟選手面向前方拿槳划，row 是背對前進方向搖固定在船邊的槳。船上的人：paddler 划手、drummer 鼓手、steerer 舵手，台灣特有的奪標手是 flag catcher。"],

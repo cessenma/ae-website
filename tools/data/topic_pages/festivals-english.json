@@ -22,7 +22,7 @@
    "phone_cols": 3,
    "groups": [
     {
-     "name": "國定假日（放假） National holidays",
+     "name": "國定假日英文（放假）National holidays",
      "rows": [
       [
        "元旦",
@@ -269,7 +269,7 @@
    ]
   },
   {
-   "title": "節日英文是 holiday 還是 festival？vacation、day off、連假、補班的英文：25 個節日單字",
+   "title": "節日英文是 holiday 還是 festival？放假、連假、補班英文：25 個節日單字",
    "prose": [
     "中文一個「節」字，英文要分好幾個字。<strong>holiday</strong> 是「節日、假日」，最常用、最萬用，國定假日、聖誕節、感恩節都是 holiday；<strong>festival</strong> 是「節慶、慶典」，有活動、有傳統習俗的那種，所以端午節、中秋節、元宵節的英文名字裡有 Festival，但母親節、教師節、國慶日沒有，它們是 Day。<strong>vacation</strong> 是「一段假期」，寒假、暑假、出國玩那幾天；<strong>day off</strong> 是「不用上班上學的那一天」，不管是不是節日都可以用。",
     "美國人和英國人在這裡用字不同：英國人說 I'm going on holiday（我要去度假），美國人說 I'm going on vacation。這一頁和埃森美語教的是美國說法，所以「放假」多半說 a day off 或 no school，「度假」說 vacation，holiday 留給節日本身。"
@@ -799,7 +799,7 @@
        "問節日重點"
       ],
       [
-       "A: New Year's Eve. We have a big family dinner that night.",
+       "A: Lunar New Year's Eve. We have a big family dinner that night.",
        "除夕，那天晚上全家吃大餐。",
        "加一句晚上做什麼"
       ],
@@ -876,9 +876,9 @@
      "清明節是掃墓的日子，不說 Happy"
     ],
     [
-     "I like Moon Cake Festival.",
-     "I like the Mid-Autumn Festival.",
-     "節日名稱前加 the；Mooncake 不是節日名"
+     "I like Mooncake Festival.",
+     "I like the Mooncake Festival.",
+     "Mooncake Festival 是中秋節常見別名，要加 the"
     ],
     [
      "Happy New Years!",

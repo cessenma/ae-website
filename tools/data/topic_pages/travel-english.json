@@ -4,15 +4,15 @@
  "target": "旅遊英文",
  "index": 0.6,
  "h1": "旅遊英文怎麼說？出國必備 110 句：飯店、交通、餐廳、景點、緊急求助，加 30 個旅行英文單字",
- "title": "旅遊英文110句＋30個單字：飯店、問路、點餐、緊急求助｜埃森美語",
+ "title": "旅遊英文70句＋30個單字：飯店、問路、景點、緊急求助｜埃森美語",
  "desc": "旅遊英文對照表：飯店入住退房、問路搭車、餐廳點餐結帳、購物、景點、緊急求助與小費共 110 句，加 30 個旅行英文單字、發音重點和孩子能說的出國英文短文，附 A4 PDF。",
- "hero": "帶孩子出國，最常卡住的不是單字，而是那一句話：櫃台問 Do you have a reservation? 要怎麼回、Wi-Fi 密碼怎麼問、吃不完要怎麼打包、孩子想上廁所該說什麼。這一頁把<strong>旅遊英文依情境整理成 70 句對照表</strong>：飯店、交通、餐廳、購物、景點、緊急狀況、付錢和小費；接著是 travel、trip、tour 怎麼分和幾個常唸錯的字、40 句旅途中會說的話（其中 10 句孩子自己就能說）、30 個旅行英文單字，最後是美籍老師給要去美國的家庭的提醒。出國英文不用多，說對場合的那一句就夠。",
+ "hero": "旅遊英文怎麼說？帶孩子出國，最常卡住的不是單字，而是那一句話：櫃台問 Do you have a reservation? 要怎麼回、Wi-Fi 密碼怎麼問、吃不完要怎麼打包、孩子想上廁所該說什麼。這一頁把<strong>旅遊英文依情境整理成 70 句對照表</strong>：飯店、交通、餐廳、購物、景點、緊急狀況、付錢和小費；接著是 travel、trip、tour 怎麼分和幾個常唸錯的字、40 句旅途中會說的話（其中 10 句孩子自己就能說）、30 個旅行英文單字，最後是美籍老師給要去美國的家庭的提醒。出國英文不用多，說對場合的那一句就夠。",
  "sections": [
   {
    "title": "旅遊英文對照表：飯店、交通、餐廳等 7 種情境 70 句（附用法）",
    "prose": [
-    "依出國時遇到的順序分成 7 組：飯店、交通與問路、餐廳、購物、景點、需要幫忙時、付錢和小費。第三欄寫<strong>什麼時候用、要注意什麼</strong>。搭飛機、過海關的句子屬於機場英文，會另外整理一頁；這張表從出了機場開始。",
-    "多數句子用 Can I…? / Could we…? 開頭，句尾加 please，對誰說都有禮貌。要給司機看的地址，先照 <a href=\"/english-address/\">英文地址</a> 的格式寫好；價錢和房號的唸法見 <a href=\"/english-numbers-guide/\">英文數字</a>，幾點退房、幾點關門見 <a href=\"/time-english/\">時間英文</a>。"
+    "依出國時遇到的順序分成 7 組：飯店、交通與問路、餐廳、購物、景點、需要幫忙時、付錢和小費。第三欄寫<strong>什麼時候用、要注意什麼</strong>。搭飛機、過海關的句子整理在 <a href=\"/airport-english/\">機場英文</a> 那一頁；這張表從出了機場開始。",
+    "多數句子用 Can I…? / Could we…? 開頭，句尾加 please，對誰說都有禮貌。要給司機看的地址，先照 <a href=\"/english-address/\">英文地址</a> 的格式寫好；價錢和房號的唸法見 <a href=\"/english-numbers-guide/\">英文數字</a>，幾點退房、幾點關門見 <a href=\"/time-english/\">時間英文</a>。餐廳那一組只列最基本的；完整點餐說法見 <a href=\"/ordering-food-english/\">點餐英文</a>，買東西、退換貨見 <a href=\"/shopping-english/\">購物英文</a>。"
    ],
    "heads": [
     "英文",
@@ -101,7 +101,7 @@
       [
        "Sorry, we're lost.",
        "不好意思，我們迷路了。",
-       "迷路說 lost，不說 lose my way"
+       "迷路最常說 We're lost."
       ],
       [
        "Where's the nearest subway station?",
@@ -326,7 +326,7 @@
       [
        "Where's the nearest pharmacy?",
        "最近的藥局在哪裡？",
-       "美國藥局常在超市或便利商店裡"
+       "美國藥局常在超市或藥妝店（CVS、Walgreens）裡"
       ],
       [
        "I don't feel well.",
@@ -1076,7 +1076,7 @@
     [
      "I lose my way.",
      "I'm lost. / We're lost.",
-     "迷路用 lost 形容狀態"
+     "這裡不用現在式 lose；迷路最常說 I'm lost."
     ],
     [
      "Open the air conditioner.",
@@ -1085,7 +1085,7 @@
     ]
    ],
    "after": [
-    "每次有學生家庭要出國，出發前總會有家長來問我：「這句在美國到底怎麼說？」這一頁就是我最常被問到的那些句子，整理在同一個地方。祝你們全家旅途愉快——Have a great trip!<br>— Mr. Chris"
+    "家長常問我：「這句在美國到底怎麼說？」這一頁就是我最常被問到的那些句子，整理在同一個地方。祝你們全家旅途愉快——Have a great trip!<br>— Mr. Chris"
    ],
    "phone_cols": 3
   },
@@ -1095,10 +1095,6 @@
     [
      "旅遊英文怎麼說？travel 還是 trip？",
      "兩個都對，用法不同。travel 是動詞或不可數名詞，講旅行這件事：I love to travel.；trip 是可數名詞，講一次旅行：We took a trip to Korea.。所以「旅途愉快」是 Have a nice trip!，不說 Have a nice travel.。「旅遊英文」「旅行英文」都可以說 travel English。"
-    ],
-    [
-     "出國英文怎麼說？",
-     "出國是 go abroad 或 travel abroad，美國人也常說 go overseas。口語更常直接講國家：We're going to Japan next month.；要說「下週我不在國內」是 I'll be out of the country next week.。國家名稱見 <a href=\"/countries-english/\">國家英文</a>。"
     ],
     [
      "自由行、跟團英文怎麼說？",

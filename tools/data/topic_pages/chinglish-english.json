@@ -6,7 +6,7 @@
  "h1": "中式英文 66 句對照：台式英文、Chinglish 怎麼改成道地英文",
  "title": "中式英文66句對照：台式英文、Chinglish怎麼改（附PDF）｜埃森美語",
  "desc": "中式英文（台式英文、Chinglish）66 句對照表：I very like it、open the light 怎麼改；另有變成真英文的 long time no see、add oil，6 個台式發音、40 句改正，附 PDF",
- "hero": "美國老師在台灣教室裡最常聽到的兩句英文，是 Teacher, I finish! 和 Open the light.。再加上 people mountain people sea、I very like it，這些中式英文，說的人是我們自己，聽懂的人其實也不少。這一頁不是來笑話誰，而是把台灣人最常說的<strong>66 句中式英文（台式英文、Chinglish）和道地說法</strong>放在一起，每句附上原因；接著是被英文收下的 long time no see、add oil 和 20 個來自中文的英文字，6 個台式發音、40 句日常改正，和一段小學生自我介紹的前後對照。",
+ "hero": "美國老師在台灣教室裡最常聽到的兩句英文，是 Teacher, I finish! 和 Open the light.。再加上 people mountain people sea、I very like it，這些中式英文，說的人是我們自己，聽懂的人其實也不少。這一頁不是來笑話誰，而是把台灣人最常說的<strong>66 句英文（含 3 句其實正確的）和道地說法</strong>放在一起，中式英文、台式英文、Chinglish 都在裡面，每句附上原因；接著是被英文收下的 long time no see、add oil 和 16 個來自中文的英文字，6 個台式發音、40 句日常改正，和一段小學生自我介紹的前後對照。",
  "sections": [
   {
    "title": "中式英文對照表：66 句台式英文怎麼改成道地英文",
@@ -25,7 +25,7 @@
      "rows": [
       [
        "Teacher, I finish.",
-       "I'm finished. / I'm done.",
+       "Mr. Chris, I'm done! / I'm finished.",
        "「我寫完了」用 I'm done. 最自然"
       ],
       [
@@ -330,8 +330,8 @@
       ],
       [
        "Teacher! Teacher!",
-       "Ms. Lee! / Mr. Smith!",
-       "台灣教室叫 Teacher 很有禮貌；美國學生叫 Mr.／Ms. 加姓"
+       "Mr. Smith! / Mr. Chris!",
+       "英文不單叫 Teacher；美國學生叫 Mr.／Ms. 加姓，國小也常用 Mr.／Ms. 加名字"
       ],
       [
        "I forget bring my book.",
@@ -387,10 +387,10 @@
    "phone_cols": 3
   },
   {
-   "title": "Chinglish 變成真英文：long time no see、add oil 和 20 個來自中文的英文",
+   "title": "Chinglish 變成真英文：long time no see、add oil 和 16 個來自中文的英文字",
    "prose": [
     "有些中式英文說久了，英文就收下了。<strong>long time no see</strong> 一般認為是「好久不見」逐字翻來的，文法上怪怪的，卻是美國人碰到老朋友時最常說的一句，對同學、對老師都能用。<strong>add oil</strong> 是香港英文的「加油」，2018 年被收進牛津英語詞典；不過大部分美國人還是沒聽過，跟美國朋友說「加油」，用 You got this! 或 Good luck! 最保險，更多說法見 <a href=\"/cheer-up-english/\">加油英文</a>。",
-    "另一類是直接從中文（多半是閩南語和粵語）借走的字：tea、ketchup、typhoon 每天都有美國人在說，卻很少人知道它們的老家在這裡。下次孩子說 ketchup，可以告訴他：這個字可能是從台灣人也會講的閩南語來的。"
+    "另一類是直接從中文（多半是閩南語和粵語）借走的字：tea 和 ketchup 每天都有美國人在說，卻很少人知道它們一般認為來自閩南語；typhoon 也一般認為和粵語的「大風」有關。下次孩子說 ketchup，可以告訴他：這個字可能是從台灣人也會講的閩南語來的。"
    ],
    "heads": [
     "英文",
@@ -404,22 +404,22 @@
       [
        "long time no see",
        "好久不見",
-       "Long time no see"
+       "一般認為是「好久不見」的逐字翻，現在美國人天天在用"
       ],
       [
        "add oil",
        "加油",
-       "Add oil (go for it)"
+       "香港英文的說法，2018 年收進牛津英語詞典"
       ],
       [
        "lose face",
        "丟臉",
-       "Lose face"
+       "「丟臉」的直譯，早就是正式英文"
       ],
       [
        "save face",
        "保住面子",
-       "Save face"
+       "跟著 lose face 一起進入英文"
       ]
      ]
     },
@@ -429,82 +429,82 @@
       [
        "typhoon",
        "颱風",
-       "Typhoon"
+       "來源有幾種說法，其中一說和「大風」有關"
       ],
       [
        "ketchup",
        "番茄醬",
-       "Ketchup"
+       "一般認為來自閩南語 kê-tsiap，原本是一種魚醬"
       ],
       [
        "tea",
        "茶",
-       "Tea"
+       "來自閩南語 tê，經荷蘭商人傳到歐洲"
       ],
       [
        "gung-ho",
        "工合（幹勁十足）",
-       "Gung-ho (full of drive)"
+       "來自「工合」，1940 年代傳進美式英文，意思變成熱血、幹勁十足"
       ],
       [
        "kowtow",
        "叩頭",
-       "Kowtow"
+       "原本是磕頭，現在多指卑躬屈膝、討好別人"
       ],
       [
        "feng shui",
        "風水",
-       "Feng shui"
+       "直接音譯，美國人唸 fung-SHWAY"
       ],
       [
        "boba",
        "珍珠、珍奶",
-       "Tapioca pearls, bubble tea"
+       "來自「波霸」，美國西岸常把珍奶叫 boba"
       ],
       [
        "tofu",
        "豆腐",
-       "Tofu"
+       "經日文傳進英文"
       ],
       [
        "bok choy",
        "小白菜",
-       "Bok choy (Chinese cabbage)"
+       "粵語「白菜」的音譯"
       ],
       [
        "dim sum",
        "港式點心",
-       "Dim sum"
+       "粵語「點心」的音譯"
       ],
       [
        "kumquat",
        "金桔",
-       "Kumquat"
+       "粵語「金橘」的音譯"
       ],
       [
        "lychee",
        "荔枝",
-       "Lychee"
+       "粵語「荔枝」的音譯，也拼 litchi"
       ],
       [
        "mahjong",
        "麻將",
-       "Mahjong"
+       "美國也有人打，規則跟台灣不太一樣"
       ],
       [
        "kung fu",
        "功夫",
-       "Kung fu"
+       "「功夫」的音譯"
       ],
       [
        "tycoon",
        "大亨",
-       "Tycoon (business magnate)"
+       "經日文 taikun（大君）傳入，現在指商業大亨"
       ],
       [
        "chow mein",
        "炒麵",
-       "Chow mein (fried noodles)"
+       "美式中餐館的菜名，和台灣的炒麵不太一樣"
       ]
      ]
     }
@@ -828,7 +828,7 @@
    ],
    "after": [
     "改的地方：my name is call 只要留 I'm Amy；I nine years old 少了 am；three grade 要說 in third grade；very like 改成 really like，play 和 draw 後面加 -ing；My family have four people 改成 There are four people in my family。完整的自我介紹範本在 <a href=\"/english-self-introduction-kids/\">小學生英文自我介紹</a>。",
-    "外國朋友或外師聽到孩子說中式英文，常會好奇地問，下面三組問答先準備好。<strong>Q: What does \"add oil\" mean?</strong> A: It means \"You can do it!\" We say it before a test or a game.（意思是「你做得到！」考試或比賽前會說。）<strong>Q: Why do you call me \"Teacher\"?</strong> A: In Taiwan, we call our teachers \"Teacher.\" It's polite.（在台灣我們叫老師「老師」，這樣很有禮貌。）<strong>Q: Is \"long time no see\" real English?</strong> A: Yes! It came from Chinese, and now everyone says it.（是！它從中文來的，現在大家都這樣說。）"
+    "外國朋友或外師聽到孩子說中式英文，常會好奇地問，下面三組問答先準備好。<strong>Q: What does \"add oil\" mean?</strong> A: It means \"You can do it!\" We say it before a test or a game.（意思是「你做得到！」考試或比賽前會說。）<strong>Q: Why do kids in Taiwan say \"Teacher\"?</strong> A: In Chinese, we call our teachers 老師. In English, I say Mr. Chris!（中文我們叫「老師」，說英文時我叫 Mr. Chris！）<strong>Q: Is \"long time no see\" real English?</strong> A: Yes! It came from Chinese, and now everyone says it.（是！它從中文來的，現在大家都這樣說。）"
    ],
    "phone_cols": 3
   },
@@ -838,7 +838,7 @@
     "在台灣教英文，每天都會聽到 Teacher, I finish! 這些句子不是孩子不認真，而是他們在<strong>用中文的腦袋說英文</strong>，原因只有六個：",
     "第一，中文<strong>沒有冠詞</strong>，所以 a、an、the 常被漏掉：I have question。第二，中文的<strong>動詞不會變</strong>，昨天、今天、明天都是「去」，所以 Yesterday I go 聽起來很自然。第三，中文的<strong>名詞沒有複數</strong>，「兩本書」的「書」不變，所以 two book。第四，中文的字<strong>不用 t、k、d 收尾，也沒有 st、ks 這種子音串</strong>，所以 like 變成 lie、desk 變成 des。第五，中文的「很」可以直接放在動詞和形容詞前面，所以 I very like it、I very happy。第六，中文一個「開」「關」「玩」管很多東西，英文卻要看東西換動詞：open the door、turn on the light、use my phone。",
     "所以該練的也很清楚：<strong>一次盯一個</strong>。這週只抓 a 和 the，下週只抓過去式 -ed，再下週只抓字尾子音。孩子說錯時，不用打斷，直接用正確的句子回他就好：孩子說 Teacher, I finish!，老師笑著回 Oh, you're done? Great job!，孩子聽個幾十次，自己就會換成 I'm done.",
-    "<strong>課堂小故事：哈利波特單字</strong>。我的學生說到 Harry Potter，常常說出來的是 Hai li botta，也就是「哈利波特」的中文唸法。後來我們班上給這種字取了名字，叫 hai li botta danzi（哈利波特單字）：<strong>英文字被它的中文音譯換掉了</strong>。孩子明明認識這個字，嘴巴卻跟著中文的節奏走，每個字一樣重、字尾多一個母音。下面這些是班上最常出現的哈利波特單字，大寫的部分是重音。<br>— Mr. Chris"
+    "<strong>課堂小故事：哈利波特單字</strong>。我的學生說到 Harry Potter，常常說出來的是 Hai li botta，也就是「哈利波特」的中文唸法。後來我們班上給這種字取了名字，叫 hai li botta danzi（哈利波特單字）：<strong>英文字被它的中文音譯換掉了</strong>。孩子明明認識這個字，嘴巴卻跟著中文的節奏走，每個字一樣重、字尾多一個母音。下面這些是班上最常出現的哈利波特單字，大寫的部分是重音。"
    ],
    "heads": [
     "哈利波特單字",
@@ -884,7 +884,7 @@
     [
      "星巴克",
      "Starbucks",
-     "STAR-bucks，中文把 star 翻成「星」，英文裡沒有「巴克」"
+     "STAR-bucks，中文把 star 翻成「星」，bucks 音譯成「巴克」"
     ],
     [
      "披薩",
@@ -908,7 +908,8 @@
     ]
    ],
    "after": [
-    "最後一個美國老師的真心話：中式英文裡有很多可愛的創意，people mountain people sea 讓人一聽就有畫面，long time no see 甚至被英文收下了。孩子先敢說，才會有東西可以改。"
+    "— Mr. Chris",
+    "最後一個美國老師的真心話：中式英文裡有很多可愛的創意，people mountain people sea 讓人一聽就有畫面，long time no see 甚至被英文收下了。孩子先敢說，才會有東西可以改；怕說錯而不敢開口的孩子，見 <a href=\"/afraid-to-speak-english/\">不敢開口說英文</a>，發音卡住的，見 <a href=\"/taiwan-kids-hardest-english-sounds/\">台灣孩子最難的英文發音</a>。"
    ],
    "phone_cols": 3
   },
@@ -921,7 +922,7 @@
     ],
     [
      "long time no see 是中式英文嗎？可以說嗎？",
-     "一般認為它來自「好久不見」的逐字翻，但現在已經是正式英文，美國人碰到很久沒見的朋友常這樣說，可以放心用。對長輩或正式場合，也可以說 It's been a long time!。"
+     "一般認為它來自「好久不見」的逐字翻，但現在已經是道地的英文口語，美國人碰到很久沒見的朋友常這樣說，可以放心用。對長輩或正式場合，也可以說 It's been a long time!。"
     ],
     [
      "add oil 外國人聽得懂嗎？",

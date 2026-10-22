@@ -270,7 +270,7 @@
    "target": "irregular-verbs-list",
    "kw": [
     "動詞三態",
-    "三態",
+    "re:(?<!物質)(?<!物質的)三態",
     "不規則動詞",
     "過去分詞"
    ]
@@ -289,7 +289,7 @@
    "target": "english-comparatives-guide",
    "kw": [
     "比較級",
-    "re:(?<!的)最高級(?! ?Flyers)",
+    "re:(?<!的)(?<!蘭)(?<!國)最高級(?! ?Flyers)(?!的聯賽)",
     "同級比較",
     "as...as"
    ]

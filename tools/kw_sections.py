@@ -31,7 +31,7 @@ def data():
     return _data
 
 def strip(html):
-    html = re.sub(r"\n?" + re.escape(LSTART) + r".*?" + re.escape(LEND), "", html, flags=re.S)
+    html = re.sub(r"\n?[ \t]*" + re.escape(LSTART) + r".*?" + re.escape(LEND), "", html, flags=re.S)   # lead() inserts "\n    "
     return re.sub(r"\n?" + re.escape(START) + r".*?" + re.escape(END) + r"\n?", "", html, flags=re.S)
 
 def lead_sentence(e):

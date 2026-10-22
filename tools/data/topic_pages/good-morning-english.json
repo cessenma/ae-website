@@ -166,7 +166,7 @@
      ]
     },
     {
-     "name": "傳訊息 Texting",
+     "name": "傳訊息、早安英文縮寫 GM Texting",
      "rows": [
       [
        "Morning! Have a great day!",
@@ -236,7 +236,7 @@
       [
        "Make it a great day!",
        "讓今天變成美好的一天！",
-       "美國學校廣播常說的一句"
+       "美國學校廣播有時會說"
       ],
       [
        "Enjoy your morning!",
@@ -374,7 +374,7 @@
     [
      "Good evening",
      "傍晚大約 6 點以後，見面時",
-     "晚上好・是打招呼，不是道別"
+     "晚安（見面時）・是打招呼，不是道別"
     ],
     [
      "Good night",
@@ -710,7 +710,7 @@
    "title": "美國小學的早上：Good morning, class 與 Good morning, Mr. Lee",
    "prose": [
     "美國小學的早上和台灣很不一樣。沒有「起立、敬禮、老師早」：老師走進教室說 <strong>Good morning, class!</strong> 或 Good morning, boys and girls!，學生坐在位子上回 <strong>Good morning, Ms. Garcia!</strong>，接著點名——老師叫到名字，孩子舉手說 <strong>Here!</strong>——然後聽校長透過廣播做 morning announcements（早晨廣播），有些班級還會圍成一圈做 morning meeting，每個人說一句昨天或今天的事。",
-    "重點在稱呼。美國學生叫老師一律是 <strong>Mr.、Ms. 或 Mrs.＋姓</strong>：Mr. Lee、Ms. Garcia。Teacher 在美式英文裡是一個職業，不是一個稱呼，就像沒有人會喊店員 Clerk 一樣；相對地，Coach、Doctor、Professor、Principal 都可以單獨拿來叫人。所以 Good morning, Teacher. 美國人聽得懂，但會覺得是小小孩或外國人說的話。",
+    "重點在稱呼。美國學生叫老師的標準說法是 <strong>Mr.、Ms. 或 Mrs.＋姓</strong>：Mr. Lee、Ms. Garcia；小學和幼兒園也常用 Mr. 或 Ms.＋名字，像我們班上的 Mr. Chris。Teacher 在美式英文裡是一個職業，不是一個稱呼，就像沒有人會喊店員 Clerk 一樣；相對地，Coach、Doctor、Professor、Principal 都可以單獨拿來叫人。所以 Good morning, Teacher. 美國人聽得懂，但會覺得是小小孩或外國人說的話。",
     "那在台灣該怎麼教孩子？台灣很多補習班習慣讓孩子叫外師「Teacher＋名字」，這是補習班的習慣，不是美式說法。在我們班上，孩子進教室說的是 <strong>Good morning, Mr. Chris!</strong>——Mr. 加在名字前面，是美國老師讓學生叫自己的方式。要告訴孩子的是兩件事：第一，<strong>不知道該怎麼叫的時候，只說 Good morning! 就好</strong>，不要單獨加一個 Teacher；第二，老師怎麼自我介紹就怎麼叫，聽到「I'm Mr. Smith」就說 Good morning, Mr. Smith.。"
    ],
    "heads": [
@@ -722,7 +722,7 @@
     [
      "老師早！",
      "Good morning, Ms. Garcia.",
-     "稱呼一定是 Mr./Ms.＋姓，不是名字，也不是 Teacher"
+     "稱呼是 Mr./Ms.＋姓（有些老師讓學生用名字，如 Mr. Chris），不是 Teacher"
     ],
     [
      "起立、敬禮、坐下",

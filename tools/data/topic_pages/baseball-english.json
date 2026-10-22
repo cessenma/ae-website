@@ -3,7 +3,7 @@
  "published": "2026-10-22",
  "target": "棒球英文",
  "index": 0.6,
- "h1": "棒球英文：守備位置、全壘打、三振、保送 87 個術語＋MLB 30 隊與中職 6 隊英文名、看球打球 40 句",
+ "h1": "棒球英文：全壘打、三振、好球壞球 87 個術語＋MLB、中職隊名、40 句",
  "title": "棒球英文：全壘打、三振、好球壞球 87 個術語＋MLB 30 隊中文名｜埃森美語",
  "desc": "棒球英文對照表：投手、捕手、全壘打、滿貫全壘打、三振、保送、雙殺、盜壘等 87 個術語，MLB 30 隊和中職 6 隊英文名，看球打球 40 句；好球壞球、球數怎麼說，附 PDF。",
  "hero": "棒球是台灣的國球：孩子在學校打樂樂棒球，全家一起看中職、看經典賽替台灣隊加油。可是要用英文說「他被三振了」「現在九局下半」「兩好三壞」，很多人才發現好球不是 good ball、全壘打也不是 all run。下面先給<strong>守備位置、打擊與跑壘、投球與球數、球場與裝備共 87 個棒球英文術語</strong>的對照表，接著講 pitcher、inning、umpire 這幾個字怎麼唸，再來是看球、打球時會說的 40 句、大聯盟 30 隊的台灣中文隊名和中職 6 隊的英文名，最後教孩子用八句英文介紹自己打棒球，以及美國孩子怎麼聊棒球。其他運動的單字在 <a href=\"/sports-english/\">運動英文</a>。",
@@ -296,7 +296,7 @@
      ]
     },
     {
-     "name": "投球與球數 Pitching and the count",
+     "name": "好球、壞球、兩好三壞英文怎麼說 Pitching and the count",
      "rows": [
       [
        "pitch",
@@ -461,7 +461,7 @@
       [
        "catcher's gear",
        "捕手護具",
-       "包括 mask 面罩、chest protector 護胸、shin guards 護膝"
+       "包括 mask 面罩、chest protector 護胸、shin guards 護脛"
       ],
       [
        "batting gloves",
@@ -1068,7 +1068,7 @@
        "CTBC 是中國信託的英文縮寫；主場台中洲際棒球場"
       ],
       [
-       "Uni-President Lions",
+       "Uni-President 7-ELEVEn Lions",
        "統一7-ELEVEn獅",
        "Uni-President 是統一企業的英文名；主場台南"
       ],

@@ -3,8 +3,8 @@
  "published": "2026-10-22",
  "target": "足球英文",
  "index": 0.6,
- "h1": "足球英文怎麼說？soccer 還是 football？位置、越位、英超 130 個單字＋看球踢球 40 句",
- "title": "足球英文怎麼說？soccer 還是 football？130 個單字＋看球 40 句｜埃森美語",
+ "h1": "足球英文怎麼說？soccer 還是 football？位置、越位 78 個單字、英超 20 支球隊＋看球踢球 40 句",
+ "title": "足球英文怎麼說？soccer 還是 football？78 個單字＋看球 40 句｜埃森美語",
  "desc": "足球英文對照表：守門員、越位、角球、十二碼、PK 大戰等 78 個單字，英超、世界盃和 20 支球隊的英文名，踢球看球 40 句；soccer 和 football 差在哪，附 PDF。",
  "hero": "台灣的孩子下課在操場踢球、週末跟爸爸看英超，但要用英文說「我是守門員」「那球越位了」「現在 2 比 1」，常常一個字都說不出來。下面先給<strong>位置、動作、規則、球場、裝備共 78 個足球英文單字</strong>的對照表，接著講足球到底是 soccer 還是 football、goal 和 league 怎麼唸，再來是踢球、看球時會喊的 40 句、世界盃到英超的賽事和 20 支知名球隊的英文名，最後教孩子用八句英文介紹自己踢足球，以及美國老師整理的中式英文。其他運動的單字在 <a href=\"/sports-english/\">運動英文</a>。",
  "sections": [
@@ -442,7 +442,7 @@
    ]
   },
   {
-   "title": "足球英文是 soccer 還是 football？怎麼唸：goal 一個音節、league 的 ue 不發音",
+   "title": "足球英文是 soccer 還是 football？踢足球英文怎麼說、goal 和 league 怎麼唸",
    "prose": [
     "美國和加拿大叫 <strong>soccer</strong>，因為他們的 football 是美式足球——橢圓形的球、抱著跑的那種；英國和世界大多數國家叫 <strong>football</strong>，澳洲兩種都聽得到。台灣的課本以美式英語為主，寫 soccer；看英超轉播、跟英國人聊天時用 football。所以跟美國人說 I'm a football player.，對方腦中出現的是戴頭盔的美式足球員——這是台灣學生最常碰到的誤會。",
     "有趣的是，soccer 這個字其實是<strong>英國人發明的</strong>：十九世紀末英國大學生把 association football（協會足球，用來和 rugby football 區分）縮成 assoc，再加上 -er 的俏皮字尾，就成了 soccer。後來英國人自己改口叫 football，這個字反而在美國留了下來。所以 soccer 不是「美式錯誤」，它比大多數人想的更英國。",
@@ -790,7 +790,7 @@
   {
    "title": "世界盃、英超、歐冠英文怎麼說？賽事、20 支知名球隊與國家隊的英文",
    "prose": [
-    "台灣球迷最常聊的是<strong>英超</strong>：the Premier League，英格蘭最高級的聯賽，20 支球隊從八月踢到隔年五月，美國人有時縮寫成 EPL。歐冠是 the Champions League，歐洲各國聯賽的強隊打的盃賽，和英超是兩個不同的比賽，同一支球隊可以兩邊都踢。世界盃 the World Cup 每四年一次，2026 年由美國、加拿大、墨西哥合辦；台灣在 FIFA 的隊名是 Chinese Taipei。",
+    "台灣球迷最常聊的是<strong>英超</strong>：the Premier League，英格蘭最高級的聯賽，20 支球隊從八月踢到隔年五月，美國人有時縮寫成 EPL。歐冠是 the Champions League，歐洲各國聯賽的強隊打的盃賽，和英超是兩個不同的比賽，同一支球隊可以兩邊都踢。世界盃 the World Cup 每四年一次，2026 年由美國、加拿大、墨西哥合辦（已於七月結束），下一屆是 2030 年；台灣在 FIFA 的隊名是 Chinese Taipei。",
     "球隊名的中文是台灣的習慣譯名（香港和中國的譯法不同，例如阿森納在香港叫阿仙奴），英文一律用原名；第三欄是口語縮寫和綽號，看轉播、跟外國人聊天時聽到 Spurs、Barça、PSG 才知道在講誰。"
    ],
    "heads": [
@@ -805,7 +805,7 @@
       [
        "the World Cup",
        "世界盃",
-       "每四年一次；2026 年由美國、加拿大、墨西哥合辦"
+       "每四年一次；2026 年由美國、加拿大、墨西哥合辦，下一屆 2030 年"
       ],
       [
        "the Women's World Cup",

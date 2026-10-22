@@ -94,9 +94,9 @@
        "口語說前者；氣象署的英文報告用 felt earthquake"
       ],
       [
-       "emergency alert",
+       "Presidential Alert",
        "國家級警報",
-       "手機跳出來的那個；地震的叫 earthquake alert"
+       "手機上顯示的名稱；emergency alert 是「緊急警報」"
       ],
       [
        "earthquake early warning",
@@ -332,13 +332,13 @@
     }
    ],
    "after": [
-    "停電、停班停課這幾個字颱風天也會用到。天氣相關的說法（下雨、放晴、氣溫）另外整理在 <a href=\"/weather-english/\">天氣英文</a>；颱風英文（颱風假、颱風警報）會另外整理一頁。"
+    "停電、停班停課這幾個字颱風天也會用到。天氣相關的說法（下雨、放晴、氣溫）另外整理在 <a href=\"/weather-english/\">天氣英文</a>；颱風假、颱風警報這些說法整理在 <a href=\"/typhoon-english/\">颱風英文</a> 那一頁。"
    ]
   },
   {
    "title": "地震英文怎麼唸：earthquake 的 th 是 [θ]，quake 和 cake 押韻",
    "prose": [
-    "地震的英文就是 <strong>earthquake</strong>，唸 [ˈɝθˌkwek]，重音在前面的 earth。台灣學生最常錯兩個地方：一是 earth 的 th 唸成 [s]，整個字變成「earse-quake」，正確是舌尖輕輕放在上下牙齒之間送氣的 [θ]（和 think、three 同一個音，練法見 <a href=\"/english-pronunciation/\">英文發音</a>）；二是 quake 唸成「夸克」，其實 quake 和 cake、make 押韻，母音是 [e]，尾音 k 要收乾淨。",
+    "地震的英文就是 <strong>earthquake</strong>，唸 [ˈɝθˌkwek]，<a href=\"/english-word-stress-gesture/\">英文重音</a>落在前面的 earth。台灣學生最常錯兩個地方：一是 earth 的 th 唸成 [s]，整個字變成「earse-quake」，正確是舌尖輕輕放在上下牙齒之間送氣的 [θ]（和 think、three 同一個音，練法見 <a href=\"/english-pronunciation/\">英文發音</a>）；二是 quake 唸成「夸克」，其實 quake 和 cake、make 押韻，母音是 [e]，尾音 k 要收乾淨。",
     "口語和新聞標題常直接說 <strong>quake</strong>（There was a quake last night.），意思完全一樣。美國新聞偶爾會看到 temblor 這個字，也是地震，只出現在文章裡，說話不會用。另外，「地震」在英文裡是名詞，不是動詞：中文說「剛剛地震了」，英文要說 There was an earthquake just now. 或 Did you feel that earthquake?，不能說 It earthquaked。"
    ],
    "heads": [
@@ -733,7 +733,7 @@
   {
    "title": "Drop, Cover, Hold On：防災演練時老師說的 6 句英文",
    "prose": [
-    "美國學校教地震避難用三個字：<strong>Drop（趴下）、Cover（掩護）、Hold On（穩住）</strong>，台灣校園的「趴下、掩護、穩住」就是同一套。每年 9 月 21 日國家防災日，全台學校上午 9 點 21 分一起演練；美國的全國演練叫 the Great ShakeOut，固定在 10 月第三個星期四。下面是美國老師在教室裡帶演練時會說的 6 句，一句一個動作，孩子聽到就能跟著做。"
+    "美國學校教地震避難用三個字：<strong>Drop（趴下）、Cover（掩護）、Hold On（穩住）</strong>，台灣校園的「趴下、掩護、穩住」就是同一套。每年 9 月 21 日國家防災日，全台學校上午 9 點 21 分一起演練；美國（和許多國家）的大型演練叫 the Great ShakeOut，固定在 10 月第三個星期四。下面是美國老師在教室裡帶演練時會說的 6 句，一句一個動作，孩子聽到就能跟著做。"
    ],
    "heads": [
     "英文",
@@ -902,7 +902,7 @@
    "title": "美國老師的觀察：美國人怎麼講地震、台灣人常說錯的 13 句",
    "prose": [
     "我在美國密西根州長大，那裡屬於中西部，從小到大沒遇過地震；在美國，地震不是每個州都有的事：加州人會聊地震，中西部的人一輩子可能沒遇過。所以第一個要知道的是，<strong>多數美國人沒有「震度」的概念</strong>，他們只聽 magnitude；形容搖得多厲害，用的是感覺：It felt like a truck drove by.（像卡車經過）、The whole house rattled.（整間房子都在震）。第二，美國人講規模只講數字，a 6.2 就夠了，Richter 這個字現在多半只有老一輩和教科書在用。",
-    "另一個差別是地震後的習慣：台灣人第一件事是看氣象署、看震度圖；加州人第一件事是上 USGS 的 Did You Feel It? 回報自己的感受，然後在社群上問 Did anyone else feel that? 跟外國人聊地震時，先講 magnitude，再用感覺形容，他們就接得上。下面是台灣學生最常直接從中文翻過去、但美國人不會這樣說的句子。"
+    "另一個差別是地震後的習慣：台灣人第一件事是看氣象署、看震度圖；有些加州人會上 USGS 的 Did You Feel It? 回報自己的感受，然後在社群上問 Did anyone else feel that? 跟外國人聊地震時，先講 magnitude，再用感覺形容，他們就接得上。下面是台灣學生最常直接從中文翻過去、但美國人不會這樣說的句子。"
    ],
    "heads": [
     "常見寫法",
@@ -999,7 +999,7 @@
     ],
     [
      "國家級警報英文怎麼說？",
-     "手機跳出來的國家級警報英文是 emergency alert，地震的那種可以說 earthquake alert：I got an earthquake alert on my phone. 背後的系統叫 earthquake early warning（地震預警）。不要說 alarm，alarm 是鬧鐘或警鈴。"
+     "手機跳出來的國家級警報，手機上顯示的英文名稱是 Presidential Alert；emergency alert 是「緊急警報」的意思。聊天時說地震的那種可以用 earthquake alert：I got an earthquake alert on my phone. 背後的系統叫 earthquake early warning（地震預警）。不要說 alarm，alarm 是鬧鐘或警鈴。"
     ],
     [
      "地震後怎麼用英文報平安？",
