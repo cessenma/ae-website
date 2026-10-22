@@ -15,6 +15,10 @@
 "date": "2026-08-21",
 "hash": "e439f1170ae703d31e76e1dc43ff76fb"
 },
+"airport-english": {
+"date": "2026-10-22",
+"hash": "e3d4ec3819a5c3b28ea71e54255e6368"
+},
 "amazingtalker-kids-tutor-guide": {
 "date": "2026-10-16",
 "hash": "94f5b2647d2848a23775c3180c4cf2a8"
@@ -31,9 +35,21 @@
 "date": "2026-10-01",
 "hash": "d55d88c3a4a0b5507e2a8d9f8f861c35"
 },
+"assets/downloads/ae-airport-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "a6c81c5abf69b9e175e0f054078aaa7f"
+},
 "assets/downloads/ae-animals-flashcards-a4.pdf": {
 "date": "2026-10-01",
 "hash": "40e512e97318111153d0308cd5c448ab"
+},
+"assets/downloads/ae-baseball-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "167db00087c0be150fdbf5a49fb0dd76"
+},
+"assets/downloads/ae-basketball-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "764272fe24a3d2d3a9a7472ff6f8237d"
 },
 "assets/downloads/ae-body-parts-a4.pdf": {
 "date": "2026-10-13",
@@ -50,6 +66,10 @@
 "assets/downloads/ae-chinese-zodiac-english-a4.pdf": {
 "date": "2026-10-22",
 "hash": "3f363a21dd6a998f6a33b642617ff517"
+},
+"assets/downloads/ae-chinglish-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "62ca9ba1ea27950eb15c808d131fc322"
 },
 "assets/downloads/ae-christmas-english-a4.pdf": {
 "date": "2026-10-13",
@@ -127,9 +147,17 @@
 "date": "2026-10-16",
 "hash": "37b40e0be396880990a38aa63acb3d18"
 },
+"assets/downloads/ae-fathers-day-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "5b8bea44a9e2b1ea42963c8e0cdd3701"
+},
 "assets/downloads/ae-feelings-english-a4.pdf": {
 "date": "2026-10-16",
 "hash": "112a5d1d5b4bdc6005f58d49a34a84c5"
+},
+"assets/downloads/ae-festivals-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "5eff9c1dd9b5f90d15adaeae31c1b3e8"
 },
 "assets/downloads/ae-food-english-a4.pdf": {
 "date": "2026-10-13",
@@ -155,6 +183,10 @@
 "date": "2026-10-13",
 "hash": "47c584b749fa95ed9a9c1a907f9a5d46"
 },
+"assets/downloads/ae-icrt-english-radio-a4.pdf": {
+"date": "2026-10-22",
+"hash": "d28c1689e258a611f8679ce47915ac6a"
+},
 "assets/downloads/ae-irregular-verbs-a4.pdf": {
 "date": "2026-10-02",
 "hash": "4e99c0eb51c2d991bbddd86f07cb5e3e"
@@ -174,6 +206,14 @@
 "assets/downloads/ae-lantern-festival-english-a4.pdf": {
 "date": "2026-10-22",
 "hash": "6dc5a0ddfb9c759f882806fd05df7b53"
+},
+"assets/downloads/ae-leave-note-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "f76e700375d7933366fa47837883f7df"
+},
+"assets/downloads/ae-math-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "8092406a21bbc1d3458a8f7421f8da5e"
 },
 "assets/downloads/ae-mid-autumn-english-a4.pdf": {
 "date": "2026-10-13",
@@ -199,6 +239,10 @@
 "date": "2026-10-22",
 "hash": "1ab397bba887518a1900d7493ae38de3"
 },
+"assets/downloads/ae-music-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "6b85f82a7fadb8d7097f89756114b2d3"
+},
 "assets/downloads/ae-new-year-english-a4.pdf": {
 "date": "2026-10-13",
 "hash": "f98085fbd611ab108e3a212ce723cf0e"
@@ -206,6 +250,10 @@
 "assets/downloads/ae-numbers-1-100-a4.pdf": {
 "date": "2026-10-13",
 "hash": "229c3b692a685ecd08c3f41c48f3b4c0"
+},
+"assets/downloads/ae-ordering-food-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "661d075e1aa9ef4fb7e6916e49395574"
 },
 "assets/downloads/ae-ordinal-numbers-a4.pdf": {
 "date": "2026-10-13",
@@ -223,13 +271,45 @@
 "date": "2026-10-16",
 "hash": "37de8c8532d5e53a422bda38a4c499ff"
 },
+"assets/downloads/ae-school-subjects-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "977688b288954732043064928bcf8623"
+},
+"assets/downloads/ae-science-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "d4c7d45c5bf3d48c3bab68029ca35d0f"
+},
+"assets/downloads/ae-shopping-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "6300cf7c08b7012565003e415cdcca02"
+},
 "assets/downloads/ae-sight-words-dolch-fry-a4.pdf": {
 "date": "2026-10-02",
 "hash": "15417087d0145fad129c209db9f322de"
 },
+"assets/downloads/ae-soccer-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "cfa5585c18c75940fad87689aa9cb5ae"
+},
+"assets/downloads/ae-social-studies-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "b418d4a430b458f279e6e28de30af37b"
+},
 "assets/downloads/ae-sports-english-a4.pdf": {
 "date": "2026-10-16",
 "hash": "88323c3013ed7e5b1adeecad8f1c81eb"
+},
+"assets/downloads/ae-swimming-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "2362fc2bdd94a3df30822ccd2f4411a0"
+},
+"assets/downloads/ae-teachers-day-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "5098ca7ccfefa9b16d65c2bab9a95305"
+},
+"assets/downloads/ae-tennis-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "e2109f37f4061b37328bf97f1e9fd0ac"
 },
 "assets/downloads/ae-thank-you-english-a4.pdf": {
 "date": "2026-10-13",
@@ -242,6 +322,10 @@
 "assets/downloads/ae-time-english-a4.pdf": {
 "date": "2026-10-13",
 "hash": "b17c2c46424fa7f38a5fca7f81a44d27"
+},
+"assets/downloads/ae-travel-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "7f19e3f9faa24c883c78921196be747e"
 },
 "assets/downloads/ae-typhoon-english-a4.pdf": {
 "date": "2026-10-22",
@@ -343,6 +427,14 @@
 "date": "2026-10-13",
 "hash": "bebdfc32d0d80a3089fb1ea0cd6e2eaa"
 },
+"baseball-english": {
+"date": "2026-10-22",
+"hash": "11587dc02cdc26b3240c0339f77a9e55"
+},
+"basketball-english": {
+"date": "2026-10-22",
+"hash": "6e8ddb03d9d09e71a9b194483e2f0ada"
+},
 "be-verbs-guide": {
 "date": "2026-10-19",
 "hash": "139fcfa925974087908ab815dae97283"
@@ -425,7 +517,7 @@
 },
 "chart-license": {
 "date": "2026-10-22",
-"hash": "1630013261c359d581fd8c6b85f56f77"
+"hash": "3073c542db644598a5b6777b8215d2ed"
 },
 "cheer-up-english": {
 "date": "2026-10-20",
@@ -438,6 +530,10 @@
 "chinese-zodiac-english": {
 "date": "2026-10-22",
 "hash": "b1efcf873bcdb25c98f324144282927f"
+},
+"chinglish-english": {
+"date": "2026-10-22",
+"hash": "b9231e42426db44c7df12bb5e8d35fcb"
 },
 "choose-english-chain-school": {
 "date": "2026-10-13",
@@ -671,6 +767,10 @@
 "date": "2026-08-12",
 "hash": "edf4b7c45e8f9f7a047431ada1863c10"
 },
+"fathers-day-english": {
+"date": "2026-10-22",
+"hash": "baf187c723648409db9b407a17264546"
+},
 "fce-listening-practice-part1": {
 "date": "2026-10-13",
 "hash": "3244850b23cad3b8e13e89c40d759f61"
@@ -742,6 +842,10 @@
 "feelings-english": {
 "date": "2026-10-16",
 "hash": "fc2983a450e7376fbb54e09ade98bbf4"
+},
+"festivals-english": {
+"date": "2026-10-22",
+"hash": "058f575e124a235e5a858aa4c1d943ef"
 },
 "flyers-listening-practice-part1": {
 "date": "2026-10-13",
@@ -1067,6 +1171,10 @@
 "date": "2026-10-13",
 "hash": "58ab999b6c5a047e877320986dc1995b"
 },
+"icrt-english-radio": {
+"date": "2026-10-22",
+"hash": "32ef0e24c040c22657b69f30feadd973"
+},
 "in-on-at-prepositions": {
 "date": "2026-10-20",
 "hash": "f697a978d221dda0bce0c34cf4df1c0b"
@@ -1215,6 +1323,10 @@
 "date": "2026-10-19",
 "hash": "5946b9269191b2573a5556f6923a19a2"
 },
+"leave-note-english": {
+"date": "2026-10-22",
+"hash": "8c1298dd85cbc32bf8d7c62350a0e1ce"
+},
 "line": {
 "date": "2026-10-20",
 "hash": "cc5df2e3f847a5def001db086fdaa2e9"
@@ -1222,6 +1334,10 @@
 "linguaskill-guide": {
 "date": "2026-08-26",
 "hash": "0231a8c9c7b75bae53df19c02e482664"
+},
+"math-english": {
+"date": "2026-10-22",
+"hash": "b4039354bfb4c2bdfb1ce357d045e66c"
 },
 "mid-autumn-festival-english": {
 "date": "2026-10-19",
@@ -1299,6 +1415,10 @@
 "date": "2026-08-26",
 "hash": "a4b8df2d3506c5962775f7b7e90886e2"
 },
+"music-english": {
+"date": "2026-10-22",
+"hash": "d9a9a40637db539db722b61d689e0d1e"
+},
 "native-vs-local-english-teachers": {
 "date": "2026-10-19",
 "hash": "5c8ed4c6a0962faa788c58be40751ca3"
@@ -1322,6 +1442,10 @@
 "online-vs-in-person-english-banqiao": {
 "date": "2026-10-13",
 "hash": "e47c11a0f0ea3976f285509502c027ca"
+},
+"ordering-food-english": {
+"date": "2026-10-22",
+"hash": "f2b6d651e00797ccf7d90609b3ce256f"
 },
 "ordinal-numbers-english": {
 "date": "2026-10-19",
@@ -2643,6 +2767,14 @@
 "date": "2026-10-16",
 "hash": "24519cbede8b1fe5fc00dc5f2af0c2c8"
 },
+"school-subjects-english": {
+"date": "2026-10-22",
+"hash": "0b356e0afe543ebb77b2fadeceb5cddd"
+},
+"science-english": {
+"date": "2026-10-22",
+"hash": "fb27160ba9bee02cca5537575366d3c6"
+},
 "shide-style-exam-guide": {
 "date": "2026-10-19",
 "hash": "037c7d23e7fdb5535fc2116b2f04c7e1"
@@ -2650,6 +2782,10 @@
 "ship-or-sheep-english-vowels": {
 "date": "2026-10-19",
 "hash": "bb0c0ae07ec4a553218ed54ff87dbe66"
+},
+"shopping-english": {
+"date": "2026-10-22",
+"hash": "017f5d8495ad3b67eaf37a85bae354bb"
 },
 "sight-words-guide": {
 "date": "2026-10-19",
@@ -2662,6 +2798,14 @@
 "small-class-english-truth": {
 "date": "2026-10-19",
 "hash": "1480717a4b9dde2b6bc70f3d8064d582"
+},
+"soccer-english": {
+"date": "2026-10-22",
+"hash": "3e4a80a2bc710bde031e3403f3425246"
+},
+"social-studies-english": {
+"date": "2026-10-22",
+"hash": "caed001f78468c8ba84890bb78d7a2c9"
 },
 "sports-english": {
 "date": "2026-10-16",
@@ -2715,9 +2859,21 @@
 "date": "2026-08-26",
 "hash": "89103a9667d17b2743d03e2c402f76d6"
 },
+"swimming-english": {
+"date": "2026-10-22",
+"hash": "83937a8cfcbaf9e85a661e29bfa45c44"
+},
 "taiwan-kids-hardest-english-sounds": {
 "date": "2026-09-06",
 "hash": "760fbf0834b4661f30680a1fc2e53c95"
+},
+"teachers-day-english": {
+"date": "2026-10-22",
+"hash": "8d3d3915159d88870c3ded9c425f9f44"
+},
+"tennis-english": {
+"date": "2026-10-22",
+"hash": "66eeabb1d363588dd936a2f42951ba44"
 },
 "thank-you-english": {
 "date": "2026-10-20",
@@ -2730,6 +2886,10 @@
 "time-english": {
 "date": "2026-10-20",
 "hash": "5422642ac6abea7ac3ed4a5267389c6b"
+},
+"travel-english": {
+"date": "2026-10-22",
+"hash": "a8bd386d677fcac3b5770e4db593fd8f"
 },
 "tutorabc-price": {
 "date": "2026-10-16",

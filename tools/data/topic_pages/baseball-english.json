@@ -1,0 +1,1395 @@
+{
+ "slug": "baseball-english",
+ "published": "2026-10-22",
+ "target": "棒球英文",
+ "index": 0.6,
+ "h1": "棒球英文：守備位置、全壘打、三振、保送 87 個術語＋MLB 30 隊與中職 6 隊英文名、看球打球 40 句",
+ "title": "棒球英文：全壘打、三振、好球壞球 87 個術語＋MLB 30 隊中文名｜埃森美語",
+ "desc": "棒球英文對照表：投手、捕手、全壘打、滿貫全壘打、三振、保送、雙殺、盜壘等 87 個術語，MLB 30 隊和中職 6 隊英文名，看球打球 40 句；好球壞球、球數怎麼說，附 PDF。",
+ "hero": "棒球是台灣的國球：孩子在學校打樂樂棒球，全家一起看中職、看經典賽替台灣隊加油。可是要用英文說「他被三振了」「現在九局下半」「兩好三壞」，很多人才發現好球不是 good ball、全壘打也不是 all run。下面先給<strong>守備位置、打擊與跑壘、投球與球數、球場與裝備共 87 個棒球英文術語</strong>的對照表，接著講 pitcher、inning、umpire 這幾個字怎麼唸，再來是看球、打球時會說的 40 句、大聯盟 30 隊的台灣中文隊名和中職 6 隊的英文名，最後教孩子用八句英文介紹自己打棒球，以及美國孩子怎麼聊棒球。其他運動的單字在 <a href=\"/sports-english/\">運動英文</a>。",
+ "sections": [
+  {
+   "title": "棒球英文對照表：位置、打擊跑壘、投球球數、球場裝備 87 個（附用法）",
+   "prose": [
+    "分成四組：先是<strong>守備位置和場上的人</strong>（投手、捕手、一壘手到右外野手、指定打擊、裁判），再來是<strong>打擊與跑壘</strong>（全壘打、安打、三振、保送、雙殺、盜壘、高飛犧牲打），然後是<strong>投球與球數</strong>（好球、壞球、滿球數、各種球路），最後是球場和裝備。第三欄寫用法：動詞怎麼變、口語怎麼說、看大聯盟轉播會聽到的縮寫。",
+    "台灣的棒球用語很多是從日本傳來的，所以老一輩說的「紅不讓」其實就是 home run。英文裡最該先分清楚的是<strong>好球 strike、壞球 ball</strong>：ball 在棒球裡除了「球」，還專指投到好球帶外面的那一球。另一個重點是<strong>分數叫 run</strong>，不叫 point：We scored five runs.。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "用法／注意"
+   ],
+   "groups": [
+    {
+     "name": "守備位置與場上的人 Positions and people",
+     "rows": [
+      [
+       "pitcher",
+       "投手",
+       "球隊最好的先發投手叫 the ace（王牌）"
+      ],
+      [
+       "catcher",
+       "捕手",
+       "蹲在本壘後面接球，跟投手討論配球"
+      ],
+      [
+       "first baseman",
+       "一壘手",
+       "口語直接說位置：He plays first."
+      ],
+      [
+       "second baseman",
+       "二壘手",
+       "He plays second.（他守二壘。）"
+      ],
+      [
+       "third baseman",
+       "三壘手",
+       "三壘離本壘近、球很快，又叫 the hot corner"
+      ],
+      [
+       "shortstop",
+       "游擊手",
+       "一個字；守在二壘和三壘之間"
+      ],
+      [
+       "left fielder",
+       "左外野手",
+       "守左外野 play left field"
+      ],
+      [
+       "center fielder",
+       "中外野手",
+       "美式拼法 center；守備範圍最大"
+      ],
+      [
+       "right fielder",
+       "右外野手",
+       "守右外野 play right field"
+      ],
+      [
+       "infielder",
+       "內野手",
+       "一壘、二壘、三壘手和游擊手的統稱"
+      ],
+      [
+       "outfielder",
+       "外野手",
+       "左、中、右外野手的統稱"
+      ],
+      [
+       "designated hitter (DH)",
+       "指定打擊",
+       "只打擊、不守備；縮寫 DH 兩個字母分開唸"
+      ],
+      [
+       "starting pitcher / starter",
+       "先發投手",
+       "今天誰先發？Who's starting today?"
+      ],
+      [
+       "relief pitcher / reliever",
+       "中繼投手、後援投手",
+       "從牛棚上來接替先發的投手"
+      ],
+      [
+       "closer",
+       "終結者",
+       "最後一局上來守住領先的投手"
+      ],
+      [
+       "batter / hitter",
+       "打者",
+       "站在打擊區的是 batter；很會打的人說 a good hitter"
+      ],
+      [
+       "runner",
+       "跑者",
+       "a runner on first（一壘有跑者）"
+      ],
+      [
+       "pinch hitter",
+       "代打",
+       "臨時換上場打擊的人"
+      ],
+      [
+       "pinch runner",
+       "代跑",
+       "臨時換上場跑壘的人"
+      ],
+      [
+       "manager",
+       "總教練",
+       "棒球的總教練叫 manager，不叫 head coach"
+      ],
+      [
+       "base coach",
+       "跑壘指導員",
+       "站在一壘、三壘旁比暗號；first-base coach、third-base coach"
+      ],
+      [
+       "home plate umpire",
+       "主審",
+       "棒球裁判叫 umpire，不叫 referee；口語 the ump"
+      ]
+     ]
+    },
+    {
+     "name": "打擊與跑壘 Hitting and baserunning",
+     "rows": [
+      [
+       "home run",
+       "全壘打",
+       "口語 homer、dinger；台灣老球迷說的「紅不讓」就是 home run 經過日語傳來的音"
+      ],
+      [
+       "grand slam",
+       "滿貫全壘打",
+       "滿壘時打出的全壘打，一棒拿 4 分"
+      ],
+      [
+       "solo home run",
+       "陽春全壘打",
+       "壘上沒人，只拿 1 分"
+      ],
+      [
+       "two-run homer",
+       "兩分全壘打",
+       "三分全壘打是 three-run homer"
+      ],
+      [
+       "inside-the-park home run",
+       "場內全壘打",
+       "球沒飛出牆，打者一路跑回本壘"
+      ],
+      [
+       "walk-off",
+       "再見（安打、全壘打）",
+       "主隊最後一局得分、比賽當場結束：a walk-off hit、a walk-off homer"
+      ],
+      [
+       "hit",
+       "安打",
+       "「打出安打」是 get a hit：He got two hits."
+      ],
+      [
+       "single",
+       "一壘安打",
+       "動詞也是 single：He singled."
+      ],
+      [
+       "double",
+       "二壘安打",
+       "He hit a double. 或 He doubled."
+      ],
+      [
+       "triple",
+       "三壘安打",
+       "最少見的安打，要跑得快"
+      ],
+      [
+       "strikeout",
+       "三振",
+       "名詞一個字；動詞 strike out，過去式 struck out；記分符號 K"
+      ],
+      [
+       "walk",
+       "保送（四壞球）",
+       "正式名稱 base on balls；動詞 He walked."
+      ],
+      [
+       "hit by pitch",
+       "觸身球",
+       "縮寫 HBP；說法 He got hit by a pitch."
+      ],
+      [
+       "double play",
+       "雙殺",
+       "一個球拿兩個出局；口語 turn two"
+      ],
+      [
+       "triple play",
+       "三殺",
+       "一個球拿三個出局，非常少見"
+      ],
+      [
+       "stolen base",
+       "盜壘",
+       "動詞 steal：He stole second.（他盜上二壘。）"
+      ],
+      [
+       "sacrifice fly",
+       "高飛犧牲打",
+       "打者被接殺出局，三壘跑者趁機回來得分；口語 sac fly"
+      ],
+      [
+       "sacrifice bunt",
+       "犧牲觸擊",
+       "打者自己出局，換跑者往前推進一個壘"
+      ],
+      [
+       "bunt",
+       "短打、觸擊",
+       "把球棒擺平、輕輕點球"
+      ],
+      [
+       "RBI",
+       "打點",
+       "runs batted in 的縮寫；複數 RBIs"
+      ],
+      [
+       "run",
+       "得分（一分）",
+       "棒球的分叫 run，不叫 point：We scored three runs."
+      ],
+      [
+       "error",
+       "失誤",
+       "守備失誤；記分符號 E"
+      ],
+      [
+       "fly ball",
+       "高飛球",
+       "被接住就是接殺 He flied out."
+      ],
+      [
+       "ground ball / grounder",
+       "滾地球",
+       "被傳一壘刪殺是 He grounded out."
+      ],
+      [
+       "line drive",
+       "平飛球",
+       "又平又快的球；口語 a liner"
+      ],
+      [
+       "pop-up",
+       "內野高飛球",
+       "又高又近、很好接的球"
+      ],
+      [
+       "foul ball",
+       "界外球",
+       "飛進看台的界外球，觀眾可以帶回家"
+      ],
+      [
+       "out",
+       "出局",
+       "三出局換邊 three outs；一出局 one out、兩出局 two outs"
+      ],
+      [
+       "force out",
+       "封殺",
+       "跑者被迫跑壘時，守備員踩壘就出局"
+      ],
+      [
+       "tag out",
+       "觸殺",
+       "用拿球的手套碰到跑者：He was tagged out."
+      ],
+      [
+       "wild pitch",
+       "暴投",
+       "投得太偏，捕手接不到"
+      ]
+     ]
+    },
+    {
+     "name": "投球與球數 Pitching and the count",
+     "rows": [
+      [
+       "pitch",
+       "投球（一球）",
+       "動詞 pitch 投球，名詞 a pitch 一球"
+      ],
+      [
+       "strike",
+       "好球",
+       "不是 good ball；三個好球就三振"
+      ],
+      [
+       "ball",
+       "壞球",
+       "不是 bad ball；四個壞球就保送"
+      ],
+      [
+       "the count",
+       "球數",
+       "美國先說壞球再說好球：3–2 是三壞兩好，跟中文「兩好三壞」順序相反"
+      ],
+      [
+       "full count",
+       "滿球數（兩好三壞）",
+       "唸 three and two 或 full count"
+      ],
+      [
+       "the strike zone",
+       "好球帶",
+       "本壘板上方、打者膝蓋到胸口之間的範圍"
+      ],
+      [
+       "fastball",
+       "速球（直球）",
+       "球速用 mph（英里／小時）：a 95-mph fastball"
+      ],
+      [
+       "curveball",
+       "曲球",
+       "口語 curve；向下彎的球"
+      ],
+      [
+       "slider",
+       "滑球",
+       "比曲球快，往橫向滑"
+      ],
+      [
+       "changeup",
+       "變速球",
+       "手臂動作像速球，球卻比較慢"
+      ],
+      [
+       "splitter",
+       "指叉球",
+       "全名 split-finger fastball"
+      ],
+      [
+       "balk",
+       "投手犯規",
+       "投手的假動作犯規，跑者各進一個壘"
+      ],
+      [
+       "pitch count",
+       "用球數",
+       "投手這場投了幾球：His pitch count is at 90."
+      ],
+      [
+       "ERA",
+       "防禦率",
+       "earned run average 的縮寫，E-R-A 三個字母分開唸"
+      ],
+      [
+       "batting average",
+       "打擊率",
+       "打擊率 .300 唸 three hundred：He's hitting three hundred."
+      ]
+     ]
+    },
+    {
+     "name": "球場與裝備 The field and equipment",
+     "rows": [
+      [
+       "home plate",
+       "本壘",
+       "五角形的那塊板子；跑回本壘得分 = score"
+      ],
+      [
+       "first base",
+       "一壘",
+       "second base 二壘、third base 三壘；口語直接說 first、second、third"
+      ],
+      [
+       "the infield",
+       "內野",
+       "四個壘圍起來的範圍"
+      ],
+      [
+       "the outfield",
+       "外野",
+       "內野後面的草地"
+      ],
+      [
+       "the pitcher's mound",
+       "投手丘",
+       "口語 the mound；上場投球 take the mound"
+      ],
+      [
+       "the dugout",
+       "休息區（球員休息區）",
+       "球員坐的半地下區域，在一壘和三壘旁"
+      ],
+      [
+       "the bullpen",
+       "牛棚",
+       "後援投手熱身的地方，也指整群後援投手"
+      ],
+      [
+       "the foul line",
+       "界外線",
+       "打到線上算界內 fair ball"
+      ],
+      [
+       "the warning track",
+       "警戒區",
+       "外野牆前的泥土帶，提醒外野手快撞牆了"
+      ],
+      [
+       "the outfield wall",
+       "全壘打牆",
+       "也說 the fence；飛過去就是全壘打"
+      ],
+      [
+       "the batter's box",
+       "打擊區",
+       "本壘左右兩邊的長方框"
+      ],
+      [
+       "the on-deck circle",
+       "預備打擊區",
+       "下一棒在這裡等；「下一棒」是 on deck"
+      ],
+      [
+       "the ballpark",
+       "棒球場",
+       "也說 stadium；棒球場不是 court"
+      ],
+      [
+       "bat",
+       "球棒",
+       "木棒 wooden bat、鋁棒 metal bat；bat 也是「蝙蝠」"
+      ],
+      [
+       "glove",
+       "手套",
+       "捕手和一壘手用的特製手套叫 mitt"
+      ],
+      [
+       "batting helmet",
+       "打擊頭盔",
+       "打擊和跑壘時都要戴"
+      ],
+      [
+       "catcher's gear",
+       "捕手護具",
+       "包括 mask 面罩、chest protector 護胸、shin guards 護膝"
+      ],
+      [
+       "batting gloves",
+       "打擊手套",
+       "握棒用的薄手套，跟守備手套不一樣"
+      ],
+      [
+       "cleats",
+       "釘鞋",
+       "鞋底有釘子的球鞋；永遠用複數"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "棒球英文怎麼說、怎麼唸：baseball 一個字，pitcher 沒有 k、inning 只有一個 n 音",
+   "prose": [
+    "棒球就是 <strong>baseball</strong>，連在一起寫成一個字；打棒球是 play baseball，球場上開打時主審喊的是 Play ball!。壘球是 <strong>softball</strong>，球比較大、投手由下往上投，是另一種運動；台灣小學常玩的樂樂棒球，英文叫 <strong>tee ball</strong>（也寫 T-ball），球放在打擊座 tee 上面打，美國很多孩子也是從 tee ball 開始的。棒球在美國被叫作 America's pastime（美國的國民消遣），跟台灣把棒球叫「國球」很像。",
+    "唸法上台灣學生最常錯的是這幾個：<strong>pitcher</strong> 沒有 k 的音，唸 PITCH-er，跟 picture（PICK-cher）不一樣，說錯會變成「我是一張照片」；<strong>inning</strong> 雖然寫兩個 n，只唸一個 n 音，結尾是鼻音 -ng；<strong>umpire</strong> 的重音在前面 UM-pire；<strong>strike</strong> 是一個音節，s、t、r 中間不要加母音，不要唸成日式的「史特賴克」。下表是本頁最常唸錯的字，KK 音標每個符號怎麼唸，可以對照 <a href=\"/kk-phonetic-chart/\">KK 音標表</a>。"
+   ],
+   "heads": [
+    "英文",
+    "KK 音標",
+    "注意"
+   ],
+   "rows": [
+    [
+     "baseball",
+     "[ˈbesˌbɔl]",
+     "BASE-ball，base 的 a 唸 [e]；結尾的 l 舌尖要頂上齒齦"
+    ],
+    [
+     "pitcher",
+     "[ˈpɪtʃɚ]",
+     "沒有 k；picture 是 [ˈpɪktʃɚ]，多一個 k"
+    ],
+    [
+     "catcher",
+     "[ˈkætʃɚ]",
+     "a 是 [æ]，嘴巴張大；跟 cat 同一個母音"
+    ],
+    [
+     "inning",
+     "[ˈɪnɪŋ]",
+     "只唸一個 n 音；結尾 -ng 不要唸成 -n"
+    ],
+    [
+     "umpire",
+     "[ˈʌmpaɪr]",
+     "重音在前 UM-pire；口語 ump [ʌmp]"
+    ],
+    [
+     "league",
+     "[lig]",
+     "一個音節，-ue 不發音；大聯盟 the major leagues"
+    ],
+    [
+     "strike",
+     "[straɪk]",
+     "一個音節，str 連著唸，結尾 k 後面不加母音"
+    ],
+    [
+     "strikeout",
+     "[ˈstraɪkˌaʊt]",
+     "重音在 strike；兩個部分連起來唸"
+    ],
+    [
+     "shortstop",
+     "[ˈʃɔrtˌstɑp]",
+     "short 的 r 要捲舌；stop 是 [ɑ]"
+    ],
+    [
+     "outfielder",
+     "[ˈaʊtˌfildɚ]",
+     "重音在 out；field 是長音 [i]"
+    ],
+    [
+     "dugout",
+     "[ˈdʌgˌaʊt]",
+     "dug 的 u 是 [ʌ]，跟 bug 一樣"
+    ],
+    [
+     "bullpen",
+     "[ˈbʊlˌpɛn]",
+     "bull 是短音 [ʊ]，跟 full 押韻"
+    ],
+    [
+     "double",
+     "[ˈdʌbḷ]",
+     "ou 唸 [ʌ]，跟 trouble 押韻；不是 [dau]"
+    ],
+    [
+     "sacrifice",
+     "[ˈsækrəˌfaɪs]",
+     "重音在最前面 SAC-ri-fice；最後是 [faɪs]"
+    ],
+    [
+     "error",
+     "[ˈɛrɚ]",
+     "兩個音節 AIR-er，兩個 r 都要捲舌"
+    ],
+    [
+     "RBI",
+     "[ˌɑr bi ˈaɪ]",
+     "三個字母分開唸；美國球迷口語也說 ribbie [ˈrɪbɪ]"
+    ],
+    [
+     "Yankees",
+     "[ˈjæŋkɪz]",
+     "a 是 [æ]；結尾 [z] 有聲"
+    ],
+    [
+     "Dodgers",
+     "[ˈdɑdʒɚz]",
+     "o 唸 [ɑ]；-dge 只唸一個 [dʒ]；dodge 的意思是「閃躲」"
+    ]
+   ],
+   "after": [
+    "練法：把 pitcher 和 picture 放在一起對比唸，再把 catcher、pitcher 連著說——兩個字都是 -tcher 結尾，母音一個 [æ]、一個 [ɪ]。球數、比分裡的數字怎麼唸，見 <a href=\"/english-numbers-guide/\">英文數字</a>。"
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "看球、打球時會說的 40 句：比分與局數、場上狀況、在學校打球、加油聊球",
+   "prose": [
+    "下面 40 句分四組：問比分和局數的、看到場上發生什麼時說的、在學校打樂樂棒球或練球時喊的、加油和跟朋友聊棒球的。第三欄標出誰說、怎麼用。棒球的「局」是 <strong>inning</strong>，上半局是 the top、下半局是 the bottom，所以「九局下半」是 the bottom of the ninth，不是 the lower ninth；局數用序數 first、second、ninth，不用 one、two、nine。",
+    "球數的順序要特別注意：中文說「兩好三壞」，好球在前；美國人說 <strong>three and two</strong>，<strong>壞球在前</strong>。所以「一好兩壞」英文是 two and one，寫成 2–1。比分是說兩隊各幾分：It's 5 to 3.；領先說 We're up by two.、落後說 We're down by two.。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "誰說、怎麼用"
+   ],
+   "groups": [
+    {
+     "name": "比分與局數 Score and innings",
+     "rows": [
+      [
+       "What's the score?",
+       "現在幾比幾？",
+       "問比分最常用的一句"
+      ],
+      [
+       "What inning is it?",
+       "現在第幾局？",
+       "回答 It's the fifth. 用序數"
+      ],
+      [
+       "It's the top of the seventh.",
+       "現在七局上半。",
+       "上半局 top，客隊打擊"
+      ],
+      [
+       "It's the bottom of the ninth.",
+       "現在九局下半。",
+       "下半局 bottom，主隊打擊；最緊張的一句"
+      ],
+      [
+       "We're up by two.",
+       "我們領先兩分。",
+       "up by 領先；也說 We're winning 4 to 2."
+      ],
+      [
+       "They're down by three.",
+       "他們落後三分。",
+       "down by 落後"
+      ],
+      [
+       "It's tied 3 to 3.",
+       "3 比 3 平手。",
+       "平手說 tied；也說 It's all tied up."
+      ],
+      [
+       "We're going to extra innings!",
+       "要打延長賽了！",
+       "九局打完還平手時"
+      ],
+      [
+       "Two outs, runner on second.",
+       "兩出局，二壘有人。",
+       "轉播員報狀況的說法"
+      ],
+      [
+       "The count is three and two.",
+       "現在兩好三壞。",
+       "壞球先說；也說 It's a full count."
+      ]
+     ]
+    },
+    {
+     "name": "場上狀況 On the field",
+     "rows": [
+      [
+       "He struck out!",
+       "他被三振了！",
+       "strike out 的過去式 struck out"
+      ],
+      [
+       "He struck out swinging.",
+       "他揮棒落空被三振。",
+       "對照 He struck out looking. 站著看第三個好球"
+      ],
+      [
+       "That's a home run!",
+       "全壘打！",
+       "轉播員愛喊 It's outta here!（飛出去了！）"
+      ],
+      [
+       "It's a grand slam!",
+       "滿貫全壘打！",
+       "滿壘時打出全壘打"
+      ],
+      [
+       "The bases are loaded.",
+       "滿壘了。",
+       "口語 bases loaded；三個壘都有人"
+      ],
+      [
+       "He walked.",
+       "他被保送了。",
+       "保送的動詞就是 walk"
+      ],
+      [
+       "He's safe!",
+       "安全上壘！",
+       "裁判兩手往旁邊張開"
+      ],
+      [
+       "He's out!",
+       "出局！",
+       "裁判握拳往上舉"
+      ],
+      [
+       "What a catch!",
+       "接得太漂亮了！",
+       "守備美技；中文看到美技也會喊「好球」，英文這時不能說 strike"
+      ],
+      [
+       "They turned a double play!",
+       "他們完成雙殺！",
+       "雙殺的動詞用 turn"
+      ]
+     ]
+    },
+    {
+     "name": "在學校打球 Playing at school",
+     "rows": [
+      [
+       "Batter up!",
+       "下一個打者上場！",
+       "叫下一個人上來打"
+      ],
+      [
+       "I'm on deck.",
+       "下一棒是我。",
+       "在預備區等著打"
+      ],
+      [
+       "Keep your eye on the ball!",
+       "眼睛盯著球！",
+       "教練、隊友提醒打者"
+      ],
+      [
+       "Choke up on the bat.",
+       "球棒握短一點。",
+       "教練教小朋友打擊時常說"
+      ],
+      [
+       "Run! Run to first!",
+       "快跑！跑一壘！",
+       "打出去之後全隊一起喊"
+      ],
+      [
+       "Throw it to first!",
+       "傳一壘！",
+       "守備時喊隊友傳球"
+      ],
+      [
+       "I got it! I got it!",
+       "我來接！我來接！",
+       "高飛球時喊，避免兩個人撞在一起"
+      ],
+      [
+       "Good eye!",
+       "選得好！",
+       "打者沒去揮壞球時，隊友和家長會喊"
+      ],
+      [
+       "Nice hit!",
+       "打得好！",
+       "隊友打出安打時"
+      ],
+      [
+       "Let's play catch!",
+       "我們來傳接球！",
+       "兩個人互丟互接；美國爸爸和孩子最常一起做的事"
+      ]
+     ]
+    },
+    {
+     "name": "加油與聊球 Cheering and talking baseball",
+     "rows": [
+      [
+       "Let's go, Taiwan!",
+       "台灣加油！",
+       "加油是 Let's go＋隊名；看經典賽、12 強賽時喊"
+      ],
+      [
+       "Come on, you can do it!",
+       "加油，你可以的！",
+       "替打者或投手打氣"
+      ],
+      [
+       "Who do you root for?",
+       "你支持哪一隊？",
+       "root for 支持、替……加油"
+      ],
+      [
+       "I'm a huge baseball fan.",
+       "我超愛看棒球。",
+       "a huge fan 比 a big fan 更強"
+      ],
+      [
+       "Do you want to go to a game this weekend?",
+       "這週末要不要去看球？",
+       "去球場看球說 go to a game"
+      ],
+      [
+       "Our seats are behind home plate.",
+       "我們的位子在本壘後面。",
+       "外野座位說 in the outfield seats"
+      ],
+      [
+       "I caught a foul ball!",
+       "我接到界外球了！",
+       "美國孩子帶手套去球場就是為了這一刻"
+      ],
+      [
+       "What a game!",
+       "這場比賽好精彩！",
+       "比賽結束時的感嘆"
+      ],
+      [
+       "Who's pitching tonight?",
+       "今晚誰先發投？",
+       "問先發投手"
+      ],
+      [
+       "Taiwan is playing in the WBC tonight!",
+       "今晚台灣隊要打經典賽！",
+       "WBC 三個字母分開唸"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "「加油」英文沒有一個固定的字：替球隊加油是 Let's go＋隊名，替一個人打氣是 Come on! 或 You've got this!；更多打氣的說法見 <a href=\"/cheer-up-english/\">加油英文</a>。"
+   ]
+  },
+  {
+   "title": "大聯盟 30 隊中文隊名＋中職 6 隊英文名：經典賽、世界大賽、中職英文怎麼說",
+   "prose": [
+    "美國職棒大聯盟 <strong>Major League Baseball（MLB）</strong>有 30 隊，分成美國聯盟 American League 和國家聯盟 National League 各 15 隊；球季結束後兩聯盟的冠軍打<strong>世界大賽 the World Series</strong>，七戰四勝。台灣的中華職棒是 <strong>the CPBL</strong>，全名 the Chinese Professional Baseball League，總冠軍賽叫 the Taiwan Series（台灣大賽）。國家隊之間的比賽則是世界棒球經典賽 the World Baseball Classic，大家都簡稱 the WBC。",
+    "下表的大聯盟中文隊名用台灣媒體的譯法（香港、中國的譯名常不同）。英文隊名都是複數，前面加 the：the Yankees、the Dodgers；說「道奇贏了」是 The Dodgers won.，動詞用複數。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "用法／注意"
+   ],
+   "groups": [
+    {
+     "name": "賽事與聯盟 Leagues and tournaments",
+     "rows": [
+      [
+       "Major League Baseball (MLB)",
+       "美國職棒大聯盟",
+       "口語 the majors、the big leagues；M-L-B 三個字母分開唸"
+      ],
+      [
+       "the World Series",
+       "世界大賽",
+       "美聯冠軍對國聯冠軍，七戰四勝"
+      ],
+      [
+       "the World Baseball Classic (WBC)",
+       "世界棒球經典賽（經典賽）",
+       "國家隊的比賽；台灣隊打經典賽 play in the WBC"
+      ],
+      [
+       "the Premier12",
+       "世界棒球 12 強賽",
+       "唸 Premier Twelve；世界排名前 12 的國家隊參加"
+      ],
+      [
+       "the CPBL",
+       "中華職棒（中職）",
+       "全名 the Chinese Professional Baseball League"
+      ],
+      [
+       "the Taiwan Series",
+       "台灣大賽",
+       "中職的總冠軍賽，七戰四勝"
+      ],
+      [
+       "the Little League World Series",
+       "世界少棒錦標賽",
+       "每年八月在美國賓州威廉波特舉行"
+      ],
+      [
+       "the playoffs / the postseason",
+       "季後賽",
+       "例行賽是 the regular season"
+      ],
+      [
+       "the All-Star Game",
+       "明星賽",
+       "被選進明星賽 make the All-Star team"
+      ],
+      [
+       "Opening Day",
+       "開幕戰",
+       "球季的第一天；大寫"
+      ],
+      [
+       "spring training",
+       "春訓",
+       "球季開始前的集訓"
+      ],
+      [
+       "the NPB / the KBO",
+       "日本職棒／韓國職棒",
+       "NPB 是 Nippon Professional Baseball，KBO 是 Korea Baseball Organization"
+      ]
+     ]
+    },
+    {
+     "name": "美國聯盟 15 隊 American League",
+     "rows": [
+      [
+       "Baltimore Orioles",
+       "巴爾的摩金鶯",
+       "oriole 是金鶯這種鳥；口語 the O's"
+      ],
+      [
+       "Boston Red Sox",
+       "波士頓紅襪",
+       "Sox 是 socks 的特殊拼法"
+      ],
+      [
+       "New York Yankees",
+       "紐約洋基",
+       "口語 the Yanks"
+      ],
+      [
+       "Tampa Bay Rays",
+       "坦帕灣光芒",
+       "原名 Devil Rays，後來改短"
+      ],
+      [
+       "Toronto Blue Jays",
+       "多倫多藍鳥",
+       "大聯盟唯一在加拿大的球隊"
+      ],
+      [
+       "Chicago White Sox",
+       "芝加哥白襪",
+       "跟紅襪一樣用 Sox 的拼法"
+      ],
+      [
+       "Cleveland Guardians",
+       "克里夫蘭守護者",
+       "2022 年起用這個隊名"
+      ],
+      [
+       "Detroit Tigers",
+       "底特律老虎",
+       "the Tigers"
+      ],
+      [
+       "Kansas City Royals",
+       "堪薩斯市皇家",
+       "Kansas City 唸 KAN-zus；主場在密蘇里州"
+      ],
+      [
+       "Minnesota Twins",
+       "明尼蘇達雙城",
+       "「雙城」指明尼亞波利斯和聖保羅兩個城市"
+      ],
+      [
+       "Houston Astros",
+       "休士頓太空人",
+       "休士頓有 NASA 的太空中心，所以叫太空人"
+      ],
+      [
+       "Los Angeles Angels",
+       "洛杉磯天使",
+       "主場其實在洛杉磯旁的安納罕 Anaheim"
+      ],
+      [
+       "Athletics",
+       "運動家",
+       "口語 the A's；原名 Oakland Athletics，離開奧克蘭後隊名只叫 Athletics"
+      ],
+      [
+       "Seattle Mariners",
+       "西雅圖水手",
+       "mariner 就是水手"
+      ],
+      [
+       "Texas Rangers",
+       "德州遊騎兵",
+       "主場在達拉斯旁的阿靈頓 Arlington"
+      ]
+     ]
+    },
+    {
+     "name": "國家聯盟 15 隊 National League",
+     "rows": [
+      [
+       "Atlanta Braves",
+       "亞特蘭大勇士",
+       "the Braves"
+      ],
+      [
+       "Miami Marlins",
+       "邁阿密馬林魚",
+       "marlin 是旗魚，「馬林魚」是音譯"
+      ],
+      [
+       "New York Mets",
+       "紐約大都會",
+       "Mets 是 Metropolitans 的縮寫"
+      ],
+      [
+       "Philadelphia Phillies",
+       "費城費城人",
+       "口語 the Phils"
+      ],
+      [
+       "Washington Nationals",
+       "華盛頓國民",
+       "口語 the Nats"
+      ],
+      [
+       "Chicago Cubs",
+       "芝加哥小熊",
+       "cub 是幼熊；主場 Wrigley Field 的外野牆爬滿長春藤"
+      ],
+      [
+       "Cincinnati Reds",
+       "辛辛那提紅人",
+       "Cincinnati 唸 sin-sin-NAT-ee"
+      ],
+      [
+       "Milwaukee Brewers",
+       "密爾瓦基釀酒人",
+       "brewer 是釀酒的人"
+      ],
+      [
+       "Pittsburgh Pirates",
+       "匹茲堡海盜",
+       "Pittsburgh 結尾的 h 不發音"
+      ],
+      [
+       "St. Louis Cardinals",
+       "聖路易紅雀",
+       "St. 唸 Saint；Louis 的 s 要唸出來；口語 the Cards"
+      ],
+      [
+       "Arizona Diamondbacks",
+       "亞利桑那響尾蛇",
+       "diamondback 是背上有菱形花紋的響尾蛇；口語 the D-backs"
+      ],
+      [
+       "Colorado Rockies",
+       "科羅拉多洛磯",
+       "隊名來自洛磯山脈 the Rocky Mountains"
+      ],
+      [
+       "Los Angeles Dodgers",
+       "洛杉磯道奇",
+       "本來在紐約布魯克林，1958 年搬到洛杉磯"
+      ],
+      [
+       "San Diego Padres",
+       "聖地牙哥教士",
+       "padre 是西班牙文的「神父」"
+      ],
+      [
+       "San Francisco Giants",
+       "舊金山巨人",
+       "也是從紐約搬來，跟道奇同一年"
+      ]
+     ]
+    },
+    {
+     "name": "中華職棒 6 隊 CPBL",
+     "rows": [
+      [
+       "CTBC Brothers",
+       "中信兄弟",
+       "CTBC 是中國信託的英文縮寫；主場台中洲際棒球場"
+      ],
+      [
+       "Uni-President Lions",
+       "統一7-ELEVEn獅",
+       "Uni-President 是統一企業的英文名；主場台南"
+      ],
+      [
+       "Rakuten Monkeys",
+       "樂天桃猿",
+       "Rakuten 是日本企業樂天；主場桃園"
+      ],
+      [
+       "Fubon Guardians",
+       "富邦悍將",
+       "跟克里夫蘭守護者一樣叫 Guardians；主場新莊"
+      ],
+      [
+       "Wei Chuan Dragons",
+       "味全龍",
+       "Wei Chuan 是「味全」的舊式拼音"
+      ],
+      [
+       "TSG Hawks",
+       "台鋼雄鷹",
+       "TSG 是台灣鋼鐵集團 Taiwan Steel Group；主場高雄澄清湖"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "台灣國家隊在國際賽的英文隊名是 Chinese Taipei，球迷加油時喊的是 Let's go, Taiwan!。要說「台灣隊」可以說 Team Taiwan；比賽、冠軍、季後賽這類各種運動共用的字，見 <a href=\"/sports-english/\">運動英文</a>。"
+   ]
+  },
+  {
+   "title": "教孩子用英文介紹自己打棒球：「I play baseball…」8 句範本＋外國朋友會問的 3 個問題",
+   "prose": [
+    "外師問 What's your favorite sport? 時，很多台灣孩子會回答棒球，但通常只說得出 Baseball. 一個字。下面 8 句是給國小孩子的範本：從「我打棒球」開始，講自己守什麼位置、最得意的一次打擊，再講全家去球場看中職。第三欄是每句的文法重點，家長可以對著檢查。"
+   ],
+   "heads": [
+    "英文句子",
+    "中文",
+    "文法重點"
+   ],
+   "rows": [
+    [
+     "I play baseball, and I love it!",
+     "我打棒球，而且超喜歡！",
+     "play＋球類運動，不加 the"
+    ],
+    [
+     "I started with tee ball in first grade.",
+     "我一年級從樂樂棒球開始打。",
+     "in first grade 一年級時；started 過去式"
+    ],
+    [
+     "Now I'm on my school's baseball team.",
+     "現在我是學校棒球隊的。",
+     "「是隊上的」用 on the team"
+    ],
+    [
+     "I'm the catcher, so I wear a mask and lots of gear.",
+     "我是捕手，所以要戴面罩和很多護具。",
+     "gear 不可數，不加 s"
+    ],
+    [
+     "Catching fast pitches is hard, but I'm not scared.",
+     "接很快的球很難，但我不怕。",
+     "動名詞 Catching 當主詞"
+    ],
+    [
+     "Last month, I hit a double and drove in two runs.",
+     "上個月我打了一支二壘安打，打回兩分。",
+     "hit 過去式不變；drive in 打回（drove 是過去式）"
+    ],
+    [
+     "My family and I like to watch CPBL games at the ballpark.",
+     "我和家人喜歡去球場看中職。",
+     "My family and I：「我」放最後"
+    ],
+    [
+     "When our team scores, we all stand up and cheer!",
+     "我們支持的球隊得分時，大家都站起來加油！",
+     "when 子句用現在式講習慣"
+    ]
+   ],
+   "after": [
+    "練法：不要整段背，家長用中文問「你守什麼位置？」「上次打得怎麼樣？」，孩子用英文答一句；八句都答得出來，再讓孩子自己連著說。不是捕手的孩子，把第四、五句換成自己的位置就好：I'm the shortstop, so I have to be quick.。",
+    "外國朋友或外師聽完常會追問，下面三組問答先準備好。<strong>Q: Is baseball popular in Taiwan?</strong> A: Yes! A lot of people call it Taiwan's national sport. Lots of kids play it at school.（是啊！很多人說棒球是台灣的國球，很多小孩在學校打。）<strong>Q: Which team do you root for?</strong> A: My whole family roots for our hometown team. We go to games together.（我們全家都支持家鄉的球隊，會一起去看球。）<strong>Q: Have you ever caught a foul ball?</strong> A: Not yet! But I always bring my glove to the ballpark, just in case.（還沒有！不過我去球場都會帶手套，以防萬一。）",
+    "想把棒球寫進英文自我介紹的孩子，句型可以借 <a href=\"/english-self-introduction-kids/\">小學生英文自我介紹</a> 的架構。"
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "美國老師的提醒：美國孩子怎麼聊棒球，和大人天天在用的棒球說法",
+   "prose": [
+    "美國孩子的棒球通常是這樣開始的：五、六歲打 <strong>T-ball</strong>，球放在打擊座上，沒有人投球，也沒有人被三振；接著進社區的 <strong>Little League</strong>，春天到夏天每週練球比賽。在家裡，最經典的畫面是爸爸或媽媽在後院跟孩子 play catch（傳接球），一邊丟一邊聊天。很多孩子也收集 baseball cards（球員卡），跟同學交換。",
+    "去大聯盟球場看球，孩子會帶自己的手套，希望接到界外球；七局上半結束後有 <strong>the seventh-inning stretch</strong>：全場站起來伸懶腰，一起唱〈Take Me Out to the Ball Game〉。球隊落後時，有些球迷會把帽子反過來戴成 rally cap，祈禱逆轉。大聯盟一季要打 162 場，從春天打到秋天，所以美國孩子整個暑假晚上都聽得到球賽轉播。",
+    "棒球對美國英文的影響比任何運動都大，很多<strong>平常講話的說法其實來自棒球</strong>，大人上班、孩子上學都在用，卻不一定意識到。下面第一組是美國孩子聊棒球時的用字，第二組是日常生活裡的棒球說法；外師說 That came out of left field. 時，他不是在講球賽。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "什麼時候用"
+   ],
+   "groups": [
+    {
+     "name": "美國孩子的棒球用字 American kids' baseball words",
+     "rows": [
+      [
+       "T-ball",
+       "樂樂棒球（打擊座棒球）",
+       "美國孩子五、六歲打的入門棒球，也寫 tee ball"
+      ],
+      [
+       "Little League",
+       "少棒（社區少棒聯盟）",
+       "I play Little League.（我打少棒。）"
+      ],
+      [
+       "baseball cards",
+       "棒球卡、球員卡",
+       "收集、交換：I traded baseball cards with my friend."
+      ],
+      [
+       "the seventh-inning stretch",
+       "七局伸展時間",
+       "七局上半結束，全場站起來伸展、唱歌"
+      ],
+      [
+       "a rally cap",
+       "逆轉帽（反戴的帽子）",
+       "落後時把帽子反戴，祈求逆轉"
+      ],
+      [
+       "a dinger",
+       "全壘打（口語）",
+       "孩子愛用的全壘打俚語：He hit a dinger!"
+      ],
+      [
+       "batting cages",
+       "打擊練習場",
+       "用機器餵球練打擊的地方"
+      ],
+      [
+       "a can of corn",
+       "很好接的高飛球",
+       "老派轉播員的說法，形容輕鬆接到的高飛球"
+      ]
+     ]
+    },
+    {
+     "name": "日常生活的棒球說法 Baseball expressions in everyday English",
+     "rows": [
+      [
+       "strike out",
+       "失敗、碰壁",
+       "I tried to get tickets, but I struck out.（我想買票，結果沒買到。）"
+      ],
+      [
+       "a ballpark figure",
+       "大概的數字",
+       "Just give me a ballpark figure.（給我一個大概就好。）"
+      ],
+      [
+       "right off the bat",
+       "一開始就、馬上",
+       "I liked her right off the bat.（我一見面就喜歡她。）"
+      ],
+      [
+       "out of left field",
+       "突然冒出來、出乎意料",
+       "That question came out of left field.（那個問題太突然了。）"
+      ],
+      [
+       "touch base",
+       "聯絡一下、確認一下",
+       "Let's touch base next week.（我們下週再聯絡。）"
+      ],
+      [
+       "step up to the plate",
+       "挺身而出、負起責任",
+       "Someone needs to step up to the plate.（需要有人站出來。）"
+      ],
+      [
+       "cover all the bases",
+       "面面俱到",
+       "Bring a jacket and an umbrella. Cover all the bases.（外套雨傘都帶，有備無患。）"
+      ],
+      [
+       "hit it out of the park",
+       "表現超好",
+       "You hit it out of the park!（你表現得太棒了！）"
+      ],
+      [
+       "throw someone a curveball",
+       "給人出難題、殺個措手不及",
+       "The test threw me a curveball.（考試出了個意想不到的題目。）"
+      ],
+      [
+       "swing for the fences",
+       "全力一搏",
+       "Don't be afraid to swing for the fences.（不要怕，放手去拚。）"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "棒球中式英文 14 句：全壘打不是 all run，好球不是 good ball",
+   "prose": [
+    "下面 14 句是台灣孩子（和爸媽）講棒球時最常出現的中式英文，左欄是常見說法，中間是美國人會說的，右欄是原因。問題大多出在把中文一個字一個字翻過去：全壘打不是「全部的壘」、好球不是「好的球」。另外一類是從日本傳來的<strong>和製英語</strong>，像 four ball、dead ball，聽起來像英文，美國人卻聽不懂或會聽成別的意思。"
+   ],
+   "heads": [
+    "常見說法",
+    "道地說法",
+    "為什麼"
+   ],
+   "rows": [
+    [
+     "He hit an all run!",
+     "He hit a home run!",
+     "全壘打是 home run；「全」不用翻成 all"
+    ],
+    [
+     "He hit home run.",
+     "He hit a home run.",
+     "home run 可數，前面要加 a"
+    ],
+    [
+     "Good ball! (指好球)",
+     "Strike!",
+     "好球是 strike；good ball 美國人聽不懂"
+    ],
+    [
+     "Bad ball! (指壞球)",
+     "Ball!",
+     "壞球就是 ball，主審喊 Ball one!、Ball two!"
+    ],
+    [
+     "Four ball!",
+     "Ball four! He walked.",
+     "four ball 是和製英語；第四個壞球是 ball four，保送是 walk"
+    ],
+    [
+     "Dead ball! (指觸身球)",
+     "He got hit by a pitch.",
+     "dead ball 在美國是「死球、比賽暫停」，不是觸身球"
+    ],
+    [
+     "He was three-struck.",
+     "He struck out.",
+     "三振的動詞是 strike out，過去式 struck out"
+    ],
+    [
+     "It's the ninth round.",
+     "It's the ninth inning.",
+     "棒球的局是 inning，round 是拳擊的回合"
+    ],
+    [
+     "It's the lower half of the ninth.",
+     "It's the bottom of the ninth.",
+     "上半局 top、下半局 bottom"
+    ],
+    [
+     "He hit a hit.",
+     "He got a hit.",
+     "安打的動詞用 get；hit a single、hit a double 可以"
+    ],
+    [
+     "We got five points.",
+     "We scored five runs.",
+     "棒球的分是 run，不是 point"
+    ],
+    [
+     "Double kill!",
+     "Double play!",
+     "雙殺是 double play；double kill 是電玩用語"
+    ],
+    [
+     "We played at the baseball court.",
+     "We played at the baseball field.",
+     "棒球場是 field 或 ballpark；court 是籃球場、網球場"
+    ],
+    [
+     "The referee said strike!",
+     "The umpire called a strike.",
+     "棒球裁判是 umpire；判好球用動詞 call"
+    ]
+   ],
+   "after": [
+    "還有一個常見的和製英語：日本職棒的守備獎叫 Golden Glove，大聯盟的叫 <strong>Gold Glove</strong>（金手套獎），沒有 -en。看大聯盟轉播時說 He won a Gold Glove. 才對。"
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "棒球英文常見問題",
+   "faq": [
+    [
+     "全壘打英文怎麼說？",
+     "全壘打是 home run，可數，要加 a：He hit a home run.；口語說 homer 或 dinger。只得一分的陽春全壘打是 solo home run，兩分、三分是 two-run homer、three-run homer；球沒飛出去、打者跑回本壘的是 inside-the-park home run（場內全壘打）。台灣老球迷說的「紅不讓」，就是 home run 經過日語的發音。"
+    ],
+    [
+     "滿貫全壘打英文怎麼說？",
+     "滿貫全壘打是 grand slam：滿壘（bases loaded）時打出全壘打，一棒拿下 4 分。說法是 He hit a grand slam! 或轉播員常喊的 It's a grand slam!。grand slam 在網球、高爾夫裡是「大滿貫」，在棒球裡專指這一種全壘打。"
+    ],
+    [
+     "好球、壞球英文怎麼說？兩好三壞怎麼說？",
+     "好球是 strike，壞球是 ball，不是 good ball、bad ball。三個好球三振 strikeout，四個壞球保送 walk。球數英文先說壞球、再說好球，跟中文相反：兩好三壞是 three and two，也叫 full count；一好兩壞是 two and one。"
+    ],
+    [
+     "三振、保送、雙殺英文怎麼說？",
+     "三振是 strikeout（名詞，一個字），動詞是 strike out：He struck out.；揮棒落空被三振是 struck out swinging，站著不動被三振是 struck out looking。保送是 walk，正式說法 base on balls：He walked.。雙殺是 double play，動詞用 turn：They turned a double play.；三殺是 triple play。"
+    ],
+    [
+     "中職、經典賽、世界大賽英文怎麼說？",
+     "中華職棒是 the CPBL（the Chinese Professional Baseball League），總冠軍賽是 the Taiwan Series。經典賽是 the World Baseball Classic，簡稱 the WBC；世界大賽是 the World Series，是大聯盟美聯冠軍和國聯冠軍的七戰四勝系列賽。這些縮寫都是一個字母一個字母唸：C-P-B-L、W-B-C。"
+    ],
+    [
+     "棒球的「局」英文怎麼說？九局下半怎麼說？",
+     "局是 inning，唸 [ˈɪnɪŋ]，只有一個 n 音。上半局是 the top、下半局是 the bottom，局數用序數：七局上半 the top of the seventh、九局下半 the bottom of the ninth。九局打完還平手就進入 extra innings（延長賽）。問現在第幾局說 What inning is it?"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "九局下半那一句英文，孩子說得出口嗎？",
+ "cta": "棒球的好處是一場比賽有好幾個小時，每一球之間都有空檔可以開口：現在幾比幾、誰在投、剛剛是好球還是壞球。我們在板橋的小班課由美國老師帶，上課就像球賽的空檔：老師丟一個問題，孩子接住、再丟回來，從 Good eye! 練到能完整說出 It's the bottom of the ninth, and we're down by one!。"
+}

@@ -1117,5 +1117,85 @@
  "english-address": {
   "title": "英文地址怎麼寫？郵局格式、路街段巷弄縮寫、22 縣市英譯對照表｜埃森美語",
   "description": "英文地址怎麼寫？照中華郵政格式從小到大倒過來：樓、號、弄、巷、段、路、區、市。附路街段巷弄英文縮寫、22 縣市與各區英譯、12 個範例、網購表格填法與常見錯誤。"
+ },
+ "basketball-english": {
+  "title": "籃球英文怎麼說？81 個術語、40 句球場英文＋NBA 30 隊中文名｜埃森美語",
+  "description": "籃球英文對照表：控球後衛、三分球、灌籃、火鍋等 81 個術語，打球和看球時會喊的 40 句，NBA 30 隊英文與台灣譯名；basketball 怎麼唸、打籃球不加 the，附 PDF。"
+ },
+ "soccer-english": {
+  "title": "足球英文怎麼說？soccer 還是 football？130 個單字＋看球 40 句｜埃森美語",
+  "description": "足球英文對照表：守門員、越位、角球、十二碼、PK 大戰等 78 個單字，英超、世界盃和 20 支球隊的英文名，踢球看球 40 句；soccer 和 football 差在哪，附 PDF。"
+ },
+ "tennis-english": {
+  "title": "網球英文：love 零分、正拍反拍、網球拍等 65 個單字＋40 句｜埃森美語",
+  "description": "網球英文對照表：love 零分、deuce 平分、正拍反拍、網球拍等 65 個單字附用法，上課和看球的 40 句，四大滿貫英文，deuce 怎麼唸，附 A4 PDF。"
+ },
+ "swimming-english": {
+  "title": "游泳英文怎麼說？游泳課、四種泳式、換氣 80 個單字＋40 句｜埃森美語",
+  "description": "游泳英文對照表：自由式、蛙式、仰式、蝶式，換氣、打水、踩水，蛙鏡、泳帽、浮板、救生員等 80 個單字，加教練口令與泳池規則 40 句；游泳圈不是 swimming circle。"
+ },
+ "school-subjects-english": {
+  "title": "科目英文對照表55個：國語、數學、自然、社會等學科與課表英文｜埃森美語",
+  "description": "科目英文對照表：國小到高中 55 個學科英文，加美國學校的 Language Arts、Homeroom、Recess；另有課表英文 25 個、課堂會話 40 句、發音與常見錯誤，附 PDF。"
+ },
+ "math-english": {
+  "title": "數學英文單字77個：加減乘除、分數、算式英文怎麼唸（附PDF）｜埃森美語",
+  "description": "數學英文單字 77 個對照表：加減乘除、分數小數、圖形與單位；math 和 mathematics 差在哪、算式英文怎麼唸、九九乘法、應用題與數學課 40 句，附 A4 PDF。"
+ },
+ "science-english": {
+  "title": "自然英文怎麼說？自然課 science、大自然 nature 90 單字＋40 句｜埃森美語",
+  "description": "自然英文：自然課是 science，大自然是 nature。國小自然 90 個單字（植物、三態、電路、太陽系、森林）、自然課 40 句、實驗用語 20 個，附 KK 音標與 PDF。"
+ },
+ "social-studies-english": {
+  "title": "社會英文：社會課是 Social Studies，68 個單字＋40 句（附PDF）｜埃森美語",
+  "description": "社會英文有兩個意思：社會課是 Social Studies，社會是 society。照國小社會課單元整理 68 個單字、課堂 40 句、台灣地名官方英文、唸法與常見錯誤，附 A4 PDF。"
+ },
+ "music-english": {
+  "title": "音樂英文怎麼說？樂器、合唱團、音樂課 77 個單字＋40 句｜埃森美語",
+  "description": "音樂英文對照表：樂器、看譜、演奏演唱、音樂類型 77 個單字，加音樂課和音樂會的 40 句；choir 怎麼唸、彈鋼琴為什麼加 the、合唱團不是 chorus team，附 PDF。"
+ },
+ "airport-english": {
+  "title": "機場英文74個單字＋40句：機票英文、出國英文，從報到到入境｜埃森美語",
+  "description": "機場英文對照表：照出國流程排好的 74 個單字，從機票、託運、安檢、入境、海關到領行李；加上 40 句報到、入境、機上會說的英文、25 個機場標示和廣播，附 PDF。"
+ },
+ "travel-english": {
+  "title": "旅遊英文110句＋30個單字：飯店、問路、點餐、緊急求助｜埃森美語",
+  "description": "旅遊英文對照表：飯店入住退房、問路搭車、餐廳點餐結帳、購物、景點、緊急求助與小費共 110 句，加 30 個旅行英文單字、發音重點和孩子能說的出國英文短文，附 A4 PDF。"
+ },
+ "ordering-food-english": {
+  "title": "點餐英文、菜單英文：點餐40句、外帶內用小費怎麼說（附PDF）｜埃森美語",
+  "description": "點餐英文與菜單英文對照：前菜、主餐、甜點、外帶內用、牛排熟度、去冰加辣等 73 個字，40 句點餐對話，30 道台灣小吃英文說明，美國小費與續杯文化，附 A4 PDF。"
+ },
+ "shopping-english": {
+  "title": "購物英文 200 句：問價錢、試穿、打折、退貨與網購單字（附PDF）｜埃森美語",
+  "description": "購物英文 200 句與單字：試穿、尺寸、打折、退貨、收據、商店種類與網購 80 字，問價錢與殺價 25 句、顧客店員孩子會說的 40 句，附 receipt 唸法、美國購物文化、A4 PDF。"
+ },
+ "leave-note-english": {
+  "title": "請假英文63個說法：病假事假怎麼說，請假訊息範本12則｜埃森美語",
+  "description": "請假英文對照表：病假、事假、遲到、早退怎麼說，take a day off 怎麼用；12 則給老師、學校、主管的請假訊息範本，40 句實用句與常見錯誤，附 A4 PDF。"
+ },
+ "chinglish-english": {
+  "title": "中式英文66句對照：台式英文、Chinglish怎麼改（附PDF）｜埃森美語",
+  "description": "中式英文（台式英文、Chinglish）66 句對照表：I very like it、open the light 怎麼改；另有變成真英文的 long time no see、add oil，6 個台式發音、40 句改正，附 PDF"
+ },
+ "festivals-english": {
+  "title": "節日英文45個：台灣節日、國定假日英文＋2027日期（附PDF）｜埃森美語",
+  "description": "節日英文對照表：台灣國定假日、傳統節慶、西洋節日 45 個，附英文名稱、2027 日期與祝福語；holiday、festival、vacation 怎麼分、節慶英文單字、40 句對話，附 A4 PDF。"
+ },
+ "fathers-day-english": {
+  "title": "父親節英文怎麼說？父親節快樂英文祝福 50 句、八八節與卡片範本｜埃森美語",
+  "description": "父親節英文是 Father's Day；父親節快樂英文＝Happy Father's Day!。台灣 8 月 8 日、美國 6 月第三個星期日。50 句祝福依寫的人分組，附爸爸單字、卡片範本、八八節解釋。"
+ },
+ "teachers-day-english": {
+  "title": "教師節英文怎麼說？教師節快樂英文祝福 50 句、謝謝老師卡片範本｜埃森美語",
+  "description": "教師節英文是 Teachers' Day，撇號在 s 後面；教師節快樂英文＝Happy Teachers' Day!。50 句謝謝老師英文依學生、家長、外師分組，附卡片範本、40 個單字和發音。"
+ },
+ "baseball-english": {
+  "title": "棒球英文：全壘打、三振、好球壞球 87 個術語＋MLB 30 隊中文名｜埃森美語",
+  "description": "棒球英文對照表：投手、捕手、全壘打、滿貫全壘打、三振、保送、雙殺、盜壘等 87 個術語，MLB 30 隊和中職 6 隊英文名，看球打球 40 句；好球壞球、球數怎麼說，附 PDF。"
+ },
+ "icrt-english-radio": {
+  "title": "ICRT 頻率、線上收聽怎麼聽？英文廣播電台推薦＋70 個廣播英文｜埃森美語",
+  "description": "ICRT 頻率（台北、高雄 FM 100.7，台中 100.1，嘉義 100.8）和線上收聽一次整理；美國老師評 ICRT 學英文適合誰，附英文廣播電台推薦、70 個廣播英文和 40 句 DJ 常用句。"
  }
 }

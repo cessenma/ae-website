@@ -1,0 +1,991 @@
+{
+ "slug": "tennis-english",
+ "published": "2026-10-22",
+ "target": "網球英文",
+ "index": 0.5,
+ "h1": "網球英文：love 是零分、正拍反拍、網球拍等 65 個單字＋打球看球 40 句",
+ "title": "網球英文：love 零分、正拍反拍、網球拍等 65 個單字＋40 句｜埃森美語",
+ "desc": "網球英文對照表：love 零分、deuce 平分、正拍反拍、網球拍等 65 個單字附用法，上課和看球的 40 句，四大滿貫英文，deuce 怎麼唸，附 A4 PDF。",
+ "hero": "孩子開始上網球課、全家一起看溫網轉播，或是想跟外國朋友約打球，會發現網球的英文自成一套：零分叫 <strong>love</strong>，40 比 40 叫 <strong>deuce</strong>，一局、一盤、一場分別是 game、set、match。下面先給<strong>計分、擊球、球場、裝備四組共 65 個網球英文單字</strong>的對照表（附 A4 PDF），接著是 tennis、deuce、Wimbledon 怎麼唸，上課和看球會說的 40 句，四大滿貫的英文，再教孩子用英文介紹自己的網球課。其他運動的單字和 play、do、go 的規則在 <a href=\"/sports-english/\">運動英文</a>。",
+ "sections": [
+  {
+   "title": "網球英文單字對照表：計分、擊球、球場、裝備 65 個（附用法）",
+   "prose": [
+    "分成四組：先是<strong>計分</strong>，因為網球的分數連英文母語的人第一次看都要別人解釋；再來是<strong>擊球</strong>的名稱、<strong>球場</strong>上的每一條線，最後是<strong>裝備</strong>。第三欄寫怎麼用、哪裡容易錯。先記住兩件事：打網球是 play tennis，前面不加 the；網球拍是 racket，不是 bat。",
+    "計分的順序是 love（0）→ 15 → 30 → 40 → game，<strong>第三分是 40 不是 45</strong>，40 比 40 叫 deuce。報分數會用到的數字唸法在 <a href=\"/english-numbers-guide/\">英文數字</a>；為什麼球類運動用 play、瑜伽用 do、游泳用 go，見 <a href=\"/sports-english/\">運動英文</a> 的動詞規則。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "用法／注意"
+   ],
+   "groups": [
+    {
+     "name": "計分 Scoring",
+     "rows": [
+      [
+       "love",
+       "零分",
+       "Fifteen-love 是 15 比 0；這裡的 love 跟「愛」無關"
+      ],
+      [
+       "fifteen / thirty / forty",
+       "十五、三十、四十",
+       "一局裡的前三分；第三分是 40，不是 45"
+      ],
+      [
+       "all",
+       "平（雙方同分）",
+       "Fifteen-all 十五平、Thirty-all 三十平"
+      ],
+      [
+       "deuce",
+       "平分（40 比 40）",
+       "唸 [dus]，一個音節；要連贏兩分才拿下這一局"
+      ],
+      [
+       "advantage (ad)",
+       "佔先",
+       "平分後贏一分；口語說 ad in（發球方佔先）、ad out（接球方佔先）"
+      ],
+      [
+       "game",
+       "一局",
+       "先拿四分、領先兩分的人贏這一局"
+      ],
+      [
+       "set",
+       "一盤",
+       "先拿六局、領先兩局；6 比 6 打搶七"
+      ],
+      [
+       "match",
+       "一場比賽",
+       "通常三盤兩勝；Game, set, match. 是整場結束"
+      ],
+      [
+       "tiebreak",
+       "搶七",
+       "6 比 6 時打，先到 7 分、領先 2 分；也寫 tiebreaker"
+      ],
+      [
+       "break point",
+       "破發點",
+       "接球方再贏一分就能破發"
+      ],
+      [
+       "break serve",
+       "破發",
+       "贏下對方的發球局：He broke serve. 回破是 break back"
+      ],
+      [
+       "hold serve",
+       "保發",
+       "保住自己的發球局：She held serve."
+      ],
+      [
+       "ace",
+       "發球直接得分",
+       "對方碰不到球的發球；唸 [es]，一個音節"
+      ],
+      [
+       "fault",
+       "發球失誤",
+       "一發失誤還有二發；兩次都失誤是 double fault"
+      ],
+      [
+       "double fault",
+       "雙發失誤",
+       "兩次發球都失誤，直接失一分"
+      ],
+      [
+       "let",
+       "重發（發球觸網）",
+       "發球擦網後落進發球區，喊 Let! 重發"
+      ],
+      [
+       "game point / set point / match point",
+       "局點／盤點／賽點",
+       "再贏一分就拿下這局、這盤、整場"
+      ]
+     ]
+    },
+    {
+     "name": "擊球 Strokes",
+     "rows": [
+      [
+       "forehand",
+       "正拍（正手拍）",
+       "hit a forehand；台灣也說正手拍"
+      ],
+      [
+       "backhand",
+       "反拍（反手拍）",
+       "two-handed backhand 雙手反拍、one-handed backhand 單手反拍"
+      ],
+      [
+       "serve",
+       "發球",
+       "名詞、動詞同一個字：a big serve／serve the ball"
+      ],
+      [
+       "first serve / second serve",
+       "一發／二發",
+       "一發失誤才發二發"
+      ],
+      [
+       "return",
+       "接發球、回擊",
+       "return of serve 接發球；也當動詞：return the ball"
+      ],
+      [
+       "groundstroke",
+       "底線抽球",
+       "球落地彈起後打的正拍、反拍"
+      ],
+      [
+       "rally",
+       "來回對打",
+       "a long rally 長回合；Let's rally. 我們來對打"
+      ],
+      [
+       "volley",
+       "截擊",
+       "球落地前在網前打掉；唸 [ˈvɑlɪ]"
+      ],
+      [
+       "overhead / smash",
+       "高壓球、殺球",
+       "hit an overhead；美國人比較常說 overhead"
+      ],
+      [
+       "lob",
+       "高吊球",
+       "把球吊過上網對手的頭頂"
+      ],
+      [
+       "drop shot",
+       "放小球",
+       "輕輕放在網前，讓對手跑不到"
+      ],
+      [
+       "slice",
+       "切球",
+       "帶下旋，球飛得低又慢"
+      ],
+      [
+       "topspin",
+       "上旋球",
+       "球落地後往前跳高"
+      ],
+      [
+       "passing shot",
+       "穿越球",
+       "從上網的對手身邊穿過去"
+      ],
+      [
+       "winner",
+       "致勝球",
+       "對手完全碰不到的一球"
+      ],
+      [
+       "unforced error",
+       "非受迫性失誤",
+       "沒有壓力下自己打失"
+      ]
+     ]
+    },
+    {
+     "name": "球場 The court",
+     "rows": [
+      [
+       "tennis court",
+       "網球場",
+       "是 court 不是 field；訂場說 book a court"
+      ],
+      [
+       "baseline",
+       "底線",
+       "從底線後面發球；唸 [ˈbesˌlaɪn]"
+      ],
+      [
+       "service line",
+       "發球線",
+       "發球要落在發球線之前"
+      ],
+      [
+       "sideline",
+       "邊線",
+       "singles sideline 單打邊線、doubles sideline 雙打邊線"
+      ],
+      [
+       "center mark",
+       "中點",
+       "底線中央的小記號，發球時站在它的一側"
+      ],
+      [
+       "net",
+       "球網",
+       "hit the net 掛網；at the net 在網前"
+      ],
+      [
+       "service box",
+       "發球區",
+       "球網兩側各有兩個長方形"
+      ],
+      [
+       "deuce court / ad court",
+       "右發球區／左發球區",
+       "面對球網的右邊叫 deuce court，左邊叫 ad court"
+      ],
+      [
+       "alley",
+       "雙打邊線區",
+       "單打時算出界、雙打時算界內的那條長方形"
+      ],
+      [
+       "the T",
+       "發球線和中線交會的 T 字",
+       "serve down the T 發往中線"
+      ],
+      [
+       "singles",
+       "單打",
+       "play singles；字尾一定有 s"
+      ],
+      [
+       "doubles",
+       "雙打",
+       "mixed doubles 混雙；doubles partner 雙打搭檔"
+      ],
+      [
+       "hard court",
+       "硬地球場",
+       "台灣大多數球場；澳網、美網"
+      ],
+      [
+       "clay court",
+       "紅土球場",
+       "球彈得慢又高；法網"
+      ],
+      [
+       "grass court",
+       "草地球場",
+       "球快又低；溫網"
+      ],
+      [
+       "indoor court",
+       "室內球場",
+       "下雨天的選擇；室外是 outdoor court"
+      ]
+     ]
+    },
+    {
+     "name": "裝備 Equipment",
+     "rows": [
+      [
+       "tennis racket (racquet)",
+       "網球拍",
+       "兩種拼法都對，美式常寫 racket；唸 [ˈrækɪt]"
+      ],
+      [
+       "frame",
+       "拍框",
+       "拍面周圍的框；拍框打到球是 I framed it."
+      ],
+      [
+       "head",
+       "拍面（拍頭）",
+       "head size 拍面大小"
+      ],
+      [
+       "strings",
+       "網線（球拍線）",
+       "My strings broke. 線斷了；重新穿線是 restring"
+      ],
+      [
+       "string tension",
+       "磅數",
+       "What tension do you use? 你穿幾磅？"
+      ],
+      [
+       "grip",
+       "握把；握法",
+       "也指握拍方式：forehand grip"
+      ],
+      [
+       "overgrip",
+       "握把布",
+       "汗濕了就換一條"
+      ],
+      [
+       "sweet spot",
+       "甜蜜點",
+       "拍面中央打起來最順的地方"
+      ],
+      [
+       "dampener",
+       "避震器",
+       "夾在線上的小橡膠"
+      ],
+      [
+       "tennis ball",
+       "網球",
+       "複數 tennis balls；新球 new balls、沒氣的球 dead balls"
+      ],
+      [
+       "a can of balls",
+       "一罐球",
+       "美國一罐三顆，開罐會「噗」一聲"
+      ],
+      [
+       "ball hopper",
+       "撿球籃",
+       "教練餵球用的籃子，也叫 basket"
+      ],
+      [
+       "ball machine",
+       "發球機",
+       "自己一個人練球用"
+      ],
+      [
+       "tennis shoes",
+       "網球鞋",
+       "在美國很多地方 tennis shoes 泛指運動鞋"
+      ],
+      [
+       "racket bag",
+       "球拍袋",
+       "裝得下好幾支球拍的大袋子"
+      ],
+      [
+       "wristband / headband",
+       "護腕／頭帶",
+       "吸汗用；也說 sweatband"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "網球英文怎麼說、怎麼唸：tennis、racket、deuce [dus] 和 Wimbledon",
+   "prose": [
+    "網球是 <strong>tennis</strong>，唸 [ˈtɛnɪs]，重音在前，字尾的 s 要唸出來。「打網球」是 <strong>play tennis</strong>：球類運動前面不加 the，也不用 hit，hit 是打某一球。網球拍是 <strong>tennis racket</strong>，也拼成 racquet，兩種拼法都對、唸法一樣；美式英文比較常寫 racket，racquet 多半出現在球場和品牌的名字裡（a racquet club）。網球場是 tennis court，不是 field；網球鞋是 tennis shoes，但在美國很多地方 tennis shoes 就是「運動鞋」的意思，穿的人不一定打網球。",
+    "最容易唸錯的是 <strong>deuce</strong>：只有一個音節 [dus]，跟 juice 押韻，不是「du-ce」兩個音節；另一個常見的錯是把 d 唸成 j，變成果汁。<strong>Wimbledon</strong> 因為中文叫「溫布頓」，很多人三個音節一樣重，英文是 WIM-bl-dun，重音在最前面，字尾 -don 要唸得很輕。下面這幾個字對著 <a href=\"/kk-phonetic-chart/\">KK 音標表</a> 練一遍就好。"
+   ],
+   "heads": [
+    "英文",
+    "KK 音標",
+    "注意"
+   ],
+   "rows": [
+    [
+     "tennis",
+     "[ˈtɛnɪs]",
+     "重音在前，字尾 s 要唸出來；不是「ten-ni」"
+    ],
+    [
+     "racket",
+     "[ˈrækɪt]",
+     "-et 唸輕的 [ɪt]，不是 [ɛt]；racquet 唸法完全一樣"
+    ],
+    [
+     "deuce",
+     "[dus]",
+     "一個音節，跟 juice 押韻；不是「du-ce」兩個音節，d 也不要唸成 j"
+    ],
+    [
+     "love",
+     "[lʌv]",
+     "字尾 v 要上齒碰下唇，不是 laugh 的 f"
+    ],
+    [
+     "serve",
+     "[sɝv]",
+     "er 要捲舌、字尾 v 有聲；不要唸成 surf"
+    ],
+    [
+     "ace",
+     "[es]",
+     "一個音節，不是字母 A、C 兩個音"
+    ],
+    [
+     "volley",
+     "[ˈvɑlɪ]",
+     "v 不是 w；o 唸 [ɑ]，嘴巴張大"
+    ],
+    [
+     "smash",
+     "[smæʃ]",
+     "a 是 [æ]，不是 smesh"
+    ],
+    [
+     "forehand",
+     "[ˈfɔrˌhænd]",
+     "fore 唸 [fɔr]，跟 four 一樣"
+    ],
+    [
+     "backhand",
+     "[ˈbækˌhænd]",
+     "兩個音節，重音在 back"
+    ],
+    [
+     "baseline",
+     "[ˈbesˌlaɪn]",
+     "base 唸 [bes]，不是「巴斯」"
+    ],
+    [
+     "tiebreak",
+     "[ˈtaɪˌbrek]",
+     "break 唸 [brek]，跟 brake 一樣"
+    ],
+    [
+     "umpire",
+     "[ˈʌmpaɪr]",
+     "主審；不是 empire（帝國）"
+    ],
+    [
+     "Wimbledon",
+     "[ˈwɪmbəldən]",
+     "重音在最前面 WIM-bl-dun，中間的 b 輕輕帶過，字尾 -don 唸 [dən]；不是「溫布頓」三個字一樣重"
+    ],
+    [
+     "tournament",
+     "[ˈtɝnəmənt]",
+     "tour 在這裡唸 [tɝ]，不是旅遊的 tour [tʊr]"
+    ]
+   ],
+   "after": [
+    "再提醒一個字：<strong>love</strong>。計分時的 Fifteen-love 是「15 比 0」，love 就是零分，所以 He won the game to love. 是「他一分未失拿下這局」。小孩發現 forty-love 和 I love you 用的是同一個字，多半會笑出來，這正好是記住它的方法。"
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "打網球、看網球會說的 40 句英文：上課、對打、看比賽、聊網球",
+   "prose": [
+    "球場上的英文都很短，因為球來了沒時間想。下面 40 句分四組：<strong>上課時教練會說的</strong>（Keep your eye on the ball. 眼睛盯著球）、<strong>對打時雙方會喊的</strong>（Your serve. 你發球）、<strong>看比賽時會說的</strong>（What a rally! 這回合太精彩了）、<strong>跟朋友聊網球</strong>。第三欄標出誰說、什麼時候說。",
+    "美國球場上有幾句一定要會：決定誰先發球是轉球拍問 <strong>Up or down?</strong>；每一分開打前由發球的人報分數，<strong>自己的分數先說</strong>，Fifteen-love 就是發球方 15 比 0；球出界喊 <strong>Out!</strong>；發球擦網落進發球區喊 <strong>Let!</strong> 重發。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "誰說・什麼時候"
+   ],
+   "groups": [
+    {
+     "name": "上網球課時 At a lesson",
+     "rows": [
+      [
+       "Keep your eye on the ball.",
+       "眼睛盯著球。",
+       "教練・幾乎每堂課都會說"
+      ],
+      [
+       "Follow through!",
+       "揮到底、收拍！",
+       "教練・揮拍不要半途停住"
+      ],
+      [
+       "Bend your knees.",
+       "膝蓋彎一點。",
+       "教練"
+      ],
+      [
+       "Racket back early!",
+       "早一點引拍！",
+       "教練・球還沒到就先準備"
+      ],
+      [
+       "Turn your shoulders.",
+       "轉肩。",
+       "教練"
+      ],
+      [
+       "Split step!",
+       "分腿墊步！",
+       "教練・對手擊球瞬間小跳一下"
+      ],
+      [
+       "Let's warm up at the net.",
+       "我們先在網前熱身。",
+       "教練・短距離輕輕對打"
+      ],
+      [
+       "Let's rally.",
+       "我們來對打。",
+       "教練、球友"
+      ],
+      [
+       "Nice shot!",
+       "好球！",
+       "誰都可以說・對手打出好球也要說"
+      ],
+      [
+       "Good try!",
+       "有盡力了！",
+       "教練・沒打到也要鼓勵"
+      ],
+      [
+       "One more basket.",
+       "再餵一籃球。",
+       "教練・用撿球籃餵球"
+      ],
+      [
+       "Let's pick up the balls.",
+       "我們來撿球。",
+       "教練・下課前"
+      ]
+     ]
+    },
+    {
+     "name": "對打時 Playing",
+     "rows": [
+      [
+       "Up or down?",
+       "上還是下？",
+       "開打前轉球拍決定誰發球"
+      ],
+      [
+       "Your serve.",
+       "你發球。",
+       "把球滾給對方時說"
+      ],
+      [
+       "My serve.",
+       "我發球。",
+       "換局後提醒"
+      ],
+      [
+       "Fifteen-love.",
+       "15 比 0。",
+       "發球方報分，自己的分數先說"
+      ],
+      [
+       "Thirty-all.",
+       "30 平。",
+       "同分說 all；40 平說 deuce"
+      ],
+      [
+       "Ad in.",
+       "發球方佔先。",
+       "平分後發球方贏一分；接球方贏說 Ad out."
+      ],
+      [
+       "Out!",
+       "出界！",
+       "球落在自己這半場時由自己判；界內不用喊"
+      ],
+      [
+       "Let. First serve.",
+       "重發，還是一發。",
+       "發球擦網進區時"
+      ],
+      [
+       "Game, set, match.",
+       "比賽結束。",
+       "最後一分打完"
+      ],
+      [
+       "Good match!",
+       "打得好！",
+       "打完在網前握手時說，輸贏都說"
+      ]
+     ]
+    },
+    {
+     "name": "看比賽時 Watching",
+     "rows": [
+      [
+       "What a rally!",
+       "這回合太精彩了！",
+       "長回合結束時"
+      ],
+      [
+       "What a shot!",
+       "好一球！",
+       "致勝球、穿越球"
+      ],
+      [
+       "Break point.",
+       "破發點。",
+       "接球方再一分就破發"
+      ],
+      [
+       "He broke serve.",
+       "他破發了。",
+       "回破是 He broke back."
+      ],
+      [
+       "That was an ace.",
+       "那球是 ace。",
+       "發球直接得分"
+      ],
+      [
+       "Double fault.",
+       "雙發失誤。",
+       "兩次發球都失誤"
+      ],
+      [
+       "What's the score?",
+       "現在幾比幾？",
+       "剛轉到轉播時"
+      ],
+      [
+       "It's going to a tiebreak.",
+       "要打搶七了。",
+       "6 比 6 時"
+      ],
+      [
+       "He's up a set.",
+       "他領先一盤。",
+       "落後一盤是 down a set"
+      ],
+      [
+       "Match point!",
+       "賽點！",
+       "再一分就結束"
+      ]
+     ]
+    },
+    {
+     "name": "聊網球 Talking about tennis",
+     "rows": [
+      [
+       "Do you play tennis?",
+       "你打網球嗎？",
+       "認識新朋友"
+      ],
+      [
+       "I take tennis lessons on Saturdays.",
+       "我星期六上網球課。",
+       "take lessons 上課"
+      ],
+      [
+       "Want to hit sometime?",
+       "哪天要不要一起打球？",
+       "hit 是輕鬆練球，不是比賽"
+      ],
+      [
+       "I'm still a beginner.",
+       "我還是初學者。",
+       "謙虛的開場"
+      ],
+      [
+       "My backhand is weak.",
+       "我的反拍比較弱。",
+       "聊自己的弱點"
+      ],
+      [
+       "I need to restring my racket.",
+       "我的球拍該穿線了。",
+       "線斷了也說 My strings broke."
+      ],
+      [
+       "Are you watching the US Open?",
+       "你有在看美網嗎？",
+       "比賽名字前面加 the"
+      ],
+      [
+       "I beat my dad for the first time!",
+       "我第一次贏我爸！",
+       "贏某人用 beat，不是 win"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "打完球累壞了、輸球不開心，心情的說法在 <a href=\"/feelings-english/\">心情英文</a>；跟外國朋友約球要講星期幾、幾點，見 <a href=\"/days-of-week-english/\">星期英文</a> 和 <a href=\"/time-english/\">時間英文</a>。"
+   ]
+  },
+  {
+   "title": "四大滿貫英文怎麼說：澳網、法網、溫網、美網，加上 14 個比賽用語",
+   "prose": [
+    "網球一年最大的四場比賽合稱 <strong>Grand Slam</strong>（大滿貫），美國人也叫 the majors。台灣轉播習慣用兩個字的簡稱，英文則是四個完整的名字；四場比賽的場地不同，球的速度也不同，所以聊比賽常順便講到 hard court、clay、grass。「我在看美網」是 I'm watching the US Open.，比賽名字前面要加 the。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "場地・時間／說明"
+   ],
+   "groups": [
+    {
+     "name": "四大滿貫 The four Grand Slams",
+     "rows": [
+      [
+       "Australian Open",
+       "澳網（澳洲網球公開賽）",
+       "墨爾本・一月・硬地"
+      ],
+      [
+       "French Open (Roland-Garros)",
+       "法網（法國網球公開賽）",
+       "巴黎・五月底到六月初・紅土；Roland-Garros 是球場的名字"
+      ],
+      [
+       "Wimbledon",
+       "溫網（溫布頓網球錦標賽）",
+       "倫敦・六月底到七月中・草地；選手必須穿白色球衣"
+      ],
+      [
+       "US Open",
+       "美網（美國網球公開賽）",
+       "紐約・八月底到九月初・硬地"
+      ]
+     ]
+    },
+    {
+     "name": "比賽與人物 Tournaments and people",
+     "rows": [
+      [
+       "Grand Slam",
+       "大滿貫",
+       "四大賽的統稱，也叫 the majors；同一年四個都贏叫 a calendar Grand Slam"
+      ],
+      [
+       "tournament",
+       "錦標賽、比賽",
+       "play in a tournament 參加比賽"
+      ],
+      [
+       "draw",
+       "籤表",
+       "the main draw 會內賽；a 128-player draw 128 籤"
+      ],
+      [
+       "seed",
+       "種子選手",
+       "the top seed 頭號種子；種子選手前幾輪不會互相碰頭"
+      ],
+      [
+       "qualifier",
+       "會外賽選手",
+       "打贏資格賽（qualifying）才進會內賽的選手"
+      ],
+      [
+       "wild card",
+       "外卡",
+       "主辦單位直接給的參賽資格"
+      ],
+      [
+       "ranking",
+       "排名",
+       "world No. 1 世界第一；ranking points 排名積分"
+      ],
+      [
+       "chair umpire",
+       "主審",
+       "坐在高椅子上報分數的裁判；也只說 umpire"
+      ],
+      [
+       "line judge",
+       "線審",
+       "喊 Out! 的人；很多比賽已改用電子線審（electronic line calling）"
+      ],
+      [
+       "ball kid",
+       "球僮",
+       "也說 ball boy、ball girl"
+      ],
+      [
+       "round",
+       "輪",
+       "first round 第一輪；the round of 16 十六強"
+      ],
+      [
+       "quarterfinal / semifinal / final",
+       "八強／四強（準決賽）／決賽",
+       "常用複數：the quarterfinals、the semifinals"
+      ],
+      [
+       "champion",
+       "冠軍",
+       "defending champion 衛冕冠軍；冠軍頭銜是 title"
+      ],
+      [
+       "trophy",
+       "獎盃",
+       "lift the trophy 舉起獎盃"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "澳洲、法國、英國、美國的英文說法見 <a href=\"/countries-english/\">國家英文</a>；一月、六月這些月份怎麼說見 <a href=\"/months-english/\">月份英文</a>。順帶一提，紅土球場上球會留下印子，主審可以走下來看球印（check the mark）判定進或出；硬地和草地沒有這回事。"
+   ]
+  },
+  {
+   "title": "教孩子用英文介紹自己的網球課：I take tennis lessons… 8 句範本",
+   "prose": [
+    "外師或外國朋友聽到孩子在學網球，最常問的是 Do you play tennis? 和 How long have you been playing?。下面 8 句是給國小孩子的範本，用現在式說「我平常做什麼」；第三欄是每句的文法重點，家長可以對著檢查。"
+   ],
+   "heads": [
+    "英文句子",
+    "中文",
+    "文法重點"
+   ],
+   "rows": [
+    [
+     "I take tennis lessons on Saturday mornings.",
+     "我星期六早上上網球課。",
+     "take lessons 上課；on＋星期幾"
+    ],
+    [
+     "My coach is strict but very funny.",
+     "我的教練很嚴格，但很好笑。",
+     "but 連接兩個相反的形容詞"
+    ],
+    [
+     "I can hit a forehand and a backhand.",
+     "我會打正拍和反拍。",
+     "can＋原形動詞"
+    ],
+    [
+     "My serve is not very good yet.",
+     "我的發球還不太好。",
+     "not… yet 還沒"
+    ],
+    [
+     "We play on a hard court near my school.",
+     "我們在學校附近的硬地球場打球。",
+     "play on a court，介系詞用 on"
+    ],
+    [
+     "My favorite part is rallying with my coach.",
+     "我最喜歡跟教練來回對打。",
+     "favorite＋名詞；rallying 是動名詞"
+    ],
+    [
+     "I want to play in a tournament next year.",
+     "我明年想參加比賽。",
+     "want to＋動詞；參加比賽是 play in a tournament"
+    ],
+    [
+     "Tennis is hard, but it's really fun!",
+     "網球很難，但是真的很好玩！",
+     "but 連接相反的意思"
+    ]
+   ],
+   "after": [
+    "練法：不要整段背。家長用中文問「你什麼時候上網球課？」「你會打什麼球？」，孩子用英文答一句；八句都答得出來，再連起來說。程度好的孩子可以在第三句加細節：I can hit a forehand, a backhand, and a volley.。",
+    "外國朋友聽完常會追問，下面三組問答先準備好。<strong>Q: How long have you been playing?</strong> A: About a year. I started when I was eight.（大概一年，我八歲開始學。）<strong>Q: Do you hit your backhand with one hand or two?</strong> A: Two hands. One hand is too hard for me.（反拍我用雙手，單手對我來說太難了。）<strong>Q: Who do you play with?</strong> A: My dad on weekends. He still beats me, but not for long!（週末跟我爸打，他現在還贏得了我，但不會太久了！）",
+    "想把網球寫進英文自我介紹的孩子，整段的架構可以借 <a href=\"/english-self-introduction-kids/\">小學生英文自我介紹</a>；把 I like tennis. 換成 I take tennis lessons on Saturdays. 就馬上比別人具體。"
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "美國老師的筆記：美國小孩怎麼學網球、球場上怎麼說，和 13 句中式英文",
+   "prose": [
+    "先講美國小孩是怎麼接觸網球的。大部分城市的公園都有公共球場（public courts），多半不收費、先到先打；社區活動中心（the rec center）開團體課，暑假有 tennis camp，國中、高中有校隊（the tennis team），想比賽就打 USTA（美國網球協會）的青少年比賽。十歲以下的孩子先打紅球、橘球、綠點球：球比較軟、彈得低，球場也畫得比較小。美國小孩約打球不說 play tennis，而是說 <strong>hit</strong>：Wanna hit after school? 就是放學要不要去打球；I hit with my dad on weekends. 是週末跟爸爸練球。",
+    "球場上有幾個習慣，台灣的網球課不一定會教。開打前把球拍立在地上轉一圈，一邊問 Up or down?，看拍柄底的商標停下來朝上還是朝下，決定誰發球，跟擲硬幣一樣。沒有裁判時，<strong>球落在誰那半場就由誰判</strong>，出界喊 Out! 並舉起食指，界內不出聲；看不清楚的球一律算對方的，美國小孩從小就被這樣教，這叫 the honor system。最後一分打完，兩個人走到網前握手說 Good match.，輸的人也要說。順便學一個俚語：一盤 6 比 0 叫 <strong>a bagel</strong>，因為 0 長得像貝果，I got bageled. 就是我被剃光頭了。",
+    "下面是台灣學生講網球時最常出現的中式英文：左欄是常聽到的說法，中間是美國人會說的，右欄是原因。"
+   ],
+   "heads": [
+    "台灣常見說法",
+    "美國人會說",
+    "為什麼"
+   ],
+   "rows": [
+    [
+     "I play the tennis.",
+     "I play tennis.",
+     "球類運動前面不加 the；play the piano 的 the 是樂器才有"
+    ],
+    [
+     "hit tennis",
+     "play tennis",
+     "中文的「打」球，英文球類用 play；hit 是打某一球：hit a forehand"
+    ],
+    [
+     "tennis bat",
+     "tennis racket",
+     "bat 是棒球棒、板球棒；網球拍、羽球拍都是 racket，桌球拍是 paddle"
+    ],
+    [
+     "tennis field",
+     "tennis court",
+     "網球、籃球、羽球的場地叫 court；field 是足球、棒球場"
+    ],
+    [
+     "love（當「愛」解釋）",
+     "love = 零分",
+     "Fifteen-love 是 15 比 0；計分裡的 love 跟愛無關"
+    ],
+    [
+     "I won him.",
+     "I beat him.",
+     "win 後面接比賽（win the match）；贏「某人」用 beat"
+    ],
+    [
+     "send the ball",
+     "serve",
+     "發球是 serve，名詞動詞同形；「換你發球」是 Your serve."
+    ],
+    [
+     "kill the ball",
+     "smash it / hit an overhead",
+     "殺球是 smash 或 overhead；kill 聽起來像真的要殺什麼"
+    ],
+    [
+     "net ball!（發球擦網）",
+     "Let!",
+     "發球擦網落進區內叫 let，重發；對打中的擦網球叫 net cord，照打不停"
+    ],
+    [
+     "one game（一場比賽）",
+     "one match",
+     "game 是一局，match 才是一場；「參加比賽」是 play in a tournament"
+    ],
+    [
+     "a tennis",
+     "a tennis ball / a game of tennis",
+     "tennis 不可數，不能說 a tennis、two tennis"
+    ],
+    [
+     "I am good at play tennis.",
+     "I'm good at playing tennis.",
+     "at 是介系詞，後面接 V-ing"
+    ],
+    [
+     "my tennis teacher",
+     "my tennis coach",
+     "教球的人是 coach；美國小孩直接叫他 Coach"
+    ]
+   ],
+   "after": [
+    "最後一個小差別：台灣常說「打一場」，美國小孩約球卻很少說 play a match。<strong>Let's hit.</strong> 是輕鬆練球、不計分；<strong>Let's play a set.</strong> 是來一盤；<strong>Let's play a match.</strong> 才是認真要分勝負。先問清楚對方想打哪一種，再決定要不要認真起來。"
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "網球英文常見問題",
+   "faq": [
+    [
+     "網球英文怎麼說？打網球是 play tennis 還是 do tennis？",
+     "網球是 tennis，唸 [ˈtɛnɪs]，重音在前、字尾 s 要唸出來。打網球是 play tennis：有球、有對手的運動都用 play，前面不加 the。網球這顆球是 tennis ball，網球場是 tennis court，網球拍是 tennis racket，網球課是 tennis lessons。"
+    ],
+    [
+     "網球拍英文是 racket 還是 racquet？",
+     "兩個都對，唸法一樣 [ˈrækɪt]。美式英文比較常寫 racket；racquet 是比較老的法式拼法，常出現在球場和品牌的名字裡。羽球拍也是 racket（badminton racket），桌球拍則是 paddle。不要說 bat，bat 是棒球棒。"
+    ],
+    [
+     "網球的 love 為什麼是零分？",
+     "網球計分是 love（0）、15、30、40、game；love 就是零分，Fifteen-love 是 15 比 0。為什麼用 love 這個字，沒有確定的答案：流傳最廣的說法是來自法文的「蛋」（l'œuf），因為 0 長得像蛋，但這個說法沒有證據。記法：比分裡聽到 love 就當成 0。"
+    ],
+    [
+     "deuce 是什麼意思？怎麼唸？",
+     "deuce 是 40 比 40，唸 [dus]，一個音節，跟 juice 押韻。平分之後要連贏兩分才拿下這局：先贏一分叫 advantage，口語說 ad in（發球方佔先）或 ad out（接球方佔先）；再贏一分就是 game，輸了就回到 deuce。這個字來自法文的「二」，意思是還要兩分。"
+    ],
+    [
+     "四大滿貫英文怎麼說？",
+     "合稱 the Grand Slam tournaments 或 the majors。四場依時間順序：Australian Open 澳網（一月、硬地）、French Open 法網（五月底到六月初、紅土，也叫 Roland-Garros）、Wimbledon 溫網（六月底到七月中、草地）、US Open 美網（八月底到九月初、硬地）。講比賽前面要加 the：the French Open；Wimbledon 例外，不加。"
+    ],
+    [
+     "網球的 game、set、match 怎麼分？",
+     "由小到大：point 一分 → game 一局（先拿四分、領先兩分）→ set 一盤（先拿六局、領先兩局，6 比 6 打搶七）→ match 一場（通常三盤兩勝，男子大滿貫五盤三勝）。所以 6-4 是一盤的比數，唸 six-four；主審最後說的 Game, set, match. 是三樣一起結束，整場比賽打完了。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "球場上的英文來得快，孩子接得住嗎？",
+ "cta": "Out!、Let!、Your serve. 這些話在球場上一秒就過去，沒有時間在腦中翻譯。我們在板橋的小班課由美國老師帶，拿孩子真正在做的事當教材：報分數、喊界外、跟同伴約下一次打球，一句一句練到不用想就說得出口。"
+}

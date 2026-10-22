@@ -646,5 +646,185 @@
   "alt": "珍珠奶茶英文菜單對照表：bubble tea、boba 與 50 種手搖飲的英文名稱與中文，附美國人怎麼說",
   "title": "珍珠奶茶英文菜單對照表",
   "page": "bubble-tea-english"
+ },
+ "basketball-english-chart": {
+  "slug": "basketball-english-chart",
+  "png": "/assets/img/charts/basketball-english-chart.webp",
+  "w": 2200,
+  "h": 3139,
+  "alt": "籃球英文對照表：籃球英文怎麼說？81 個術語、40 句球場英文＋NBA 30 隊中英對照",
+  "title": "籃球英文對照表",
+  "page": "basketball-english"
+ },
+ "soccer-english-chart": {
+  "slug": "soccer-english-chart",
+  "png": "/assets/img/charts/soccer-english-chart.webp",
+  "w": 2200,
+  "h": 3228,
+  "alt": "足球英文對照表：足球英文怎麼說？soccer 還是 football？位置、越位、英超 130 個單字＋看球踢球 40 句",
+  "title": "足球英文對照表",
+  "page": "soccer-english"
+ },
+ "tennis-english-chart": {
+  "slug": "tennis-english-chart",
+  "png": "/assets/img/charts/tennis-english-chart.webp",
+  "w": 2200,
+  "h": 3136,
+  "alt": "網球英文對照表：網球英文：love 是零分、正拍反拍、網球拍等 65 個單字＋打球看球 40 句",
+  "title": "網球英文對照表",
+  "page": "tennis-english"
+ },
+ "swimming-english-chart": {
+  "slug": "swimming-english-chart",
+  "png": "/assets/img/charts/swimming-english-chart.webp",
+  "w": 2200,
+  "h": 3342,
+  "alt": "游泳英文對照表：游泳英文怎麼說？游泳課、四種泳式、換氣、蛙鏡、救生員的英文 80 個單字＋40 句",
+  "title": "游泳英文對照表",
+  "page": "swimming-english"
+ },
+ "school-subjects-english-chart": {
+  "slug": "school-subjects-english-chart",
+  "png": "/assets/img/charts/school-subjects-english-chart.webp",
+  "w": 2200,
+  "h": 3145,
+  "alt": "科目英文對照表：科目英文對照表：國語、數學、自然、社會等 55 個學科英文怎麼說，加課表英文與 40 句課堂會話",
+  "title": "科目英文對照表",
+  "page": "school-subjects-english"
+ },
+ "math-english-chart": {
+  "slug": "math-english-chart",
+  "png": "/assets/img/charts/math-english-chart.webp",
+  "w": 2200,
+  "h": 2561,
+  "alt": "數學英文對照表：數學英文單字 77 個：加減乘除、分數、圖形怎麼說，數學算式英文怎麼唸＋數學課 40 句",
+  "title": "數學英文對照表",
+  "page": "math-english"
+ },
+ "science-english-chart": {
+  "slug": "science-english-chart",
+  "png": "/assets/img/charts/science-english-chart.webp",
+  "w": 2200,
+  "h": 2807,
+  "alt": "自然英文對照表：自然英文怎麼說？自然課是 science、大自然是 nature：國小自然 90 個單字、自然課 40 句與實驗用語",
+  "title": "自然英文對照表",
+  "page": "science-english"
+ },
+ "social-studies-english-chart": {
+  "slug": "social-studies-english-chart",
+  "png": "/assets/img/charts/social-studies-english-chart.webp",
+  "w": 2200,
+  "h": 3056,
+  "alt": "社會英文對照表：社會英文怎麼說？社會課是 Social Studies、社會是 society：國小社會課 68 個單字與 40 句",
+  "title": "社會英文對照表",
+  "page": "social-studies-english"
+ },
+ "music-english-chart": {
+  "slug": "music-english-chart",
+  "png": "/assets/img/charts/music-english-chart.webp",
+  "w": 2200,
+  "h": 3688,
+  "alt": "音樂英文對照表：音樂英文怎麼說？樂器、合唱團、音樂課的英文 77 個單字＋40 句",
+  "title": "音樂英文對照表",
+  "page": "music-english"
+ },
+ "airport-english-chart": {
+  "slug": "airport-english-chart",
+  "png": "/assets/img/charts/airport-english-chart.webp",
+  "w": 2200,
+  "h": 2115,
+  "alt": "機場英文對照表：機場英文 74 個單字＋40 句：機票英文、出國英文，從報到、安檢、入境到領行李",
+  "title": "機場英文對照表",
+  "page": "airport-english"
+ },
+ "travel-english-chart": {
+  "slug": "travel-english-chart",
+  "png": "/assets/img/charts/travel-english-chart.webp",
+  "w": 2200,
+  "h": 1990,
+  "alt": "旅遊英文對照表：旅遊英文怎麼說？出國必備 110 句：飯店、交通、餐廳、景點、緊急求助，加 30 個旅行英文單字",
+  "title": "旅遊英文對照表",
+  "page": "travel-english"
+ },
+ "ordering-food-english-chart": {
+  "slug": "ordering-food-english-chart",
+  "png": "/assets/img/charts/ordering-food-english-chart.webp",
+  "w": 2200,
+  "h": 2915,
+  "alt": "點餐英文對照表：點餐英文、菜單英文一次學會：73 個點餐單字、40 句對話、30 道台灣菜英文",
+  "title": "點餐英文對照表",
+  "page": "ordering-food-english"
+ },
+ "shopping-english-chart": {
+  "slug": "shopping-english-chart",
+  "png": "/assets/img/charts/shopping-english-chart.webp",
+  "w": 2200,
+  "h": 3879,
+  "alt": "購物英文對照表：購物英文怎麼說？店裡問價錢、試穿、打折、退貨的 200 句與網購單字一次學會",
+  "title": "購物英文對照表",
+  "page": "shopping-english"
+ },
+ "leave-note-english-chart": {
+  "slug": "leave-note-english-chart",
+  "png": "/assets/img/charts/leave-note-english-chart.webp",
+  "w": 2200,
+  "h": 2297,
+  "alt": "請假英文對照表：請假英文 63 個說法：病假、事假怎麼說，請假訊息範本 12 則與 40 句實用句",
+  "title": "請假英文對照表",
+  "page": "leave-note-english"
+ },
+ "chinglish-english-chart": {
+  "slug": "chinglish-english-chart",
+  "png": "/assets/img/charts/chinglish-english-chart.webp",
+  "w": 2200,
+  "h": 2748,
+  "alt": "中式英文對照表：中式英文 66 句對照：台式英文、Chinglish 怎麼改成道地英文",
+  "title": "中式英文對照表",
+  "page": "chinglish-english"
+ },
+ "festivals-english-chart": {
+  "slug": "festivals-english-chart",
+  "png": "/assets/img/charts/festivals-english-chart.webp",
+  "w": 2200,
+  "h": 2589,
+  "alt": "節日英文對照表：節日英文對照表：台灣 45 個節日、國定假日英文和 2027 日期，holiday 和 festival 怎麼分",
+  "title": "節日英文對照表",
+  "page": "festivals-english"
+ },
+ "fathers-day-english-chart": {
+  "slug": "fathers-day-english-chart",
+  "png": "/assets/img/charts/fathers-day-english-chart.webp",
+  "w": 2200,
+  "h": 1959,
+  "alt": "父親節英文對照表：父親節英文怎麼說？父親節快樂英文祝福 50 句、爸爸單字、卡片範本與八八節英文解釋",
+  "title": "父親節英文對照表",
+  "page": "fathers-day-english"
+ },
+ "teachers-day-english-chart": {
+  "slug": "teachers-day-english-chart",
+  "png": "/assets/img/charts/teachers-day-english-chart.webp",
+  "w": 2200,
+  "h": 1826,
+  "alt": "教師節英文對照表：教師節英文怎麼說？教師節快樂英文祝福 50 句、謝謝老師卡片範本與單字",
+  "title": "教師節英文對照表",
+  "page": "teachers-day-english"
+ },
+ "baseball-english-chart": {
+  "slug": "baseball-english-chart",
+  "png": "/assets/img/charts/baseball-english-chart.webp",
+  "w": 2200,
+  "h": 4017,
+  "alt": "棒球英文對照表：棒球英文：守備位置、全壘打、三振、保送 87 個術語＋MLB 30 隊與中職 6 隊英文名、看球打球 40 句",
+  "title": "棒球英文對照表",
+  "page": "baseball-english"
+ },
+ "icrt-english-radio-chart": {
+  "slug": "icrt-english-radio-chart",
+  "png": "/assets/img/charts/icrt-english-radio-chart.webp",
+  "w": 2200,
+  "h": 2742,
+  "alt": "ICRT對照表：ICRT 學英文有用嗎？ICRT 頻率、線上收聽與英文廣播電台推薦",
+  "title": "ICRT對照表",
+  "page": "icrt-english-radio"
  }
 }

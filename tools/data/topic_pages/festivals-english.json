@@ -1,0 +1,929 @@
+{
+ "slug": "festivals-english",
+ "published": "2026-10-22",
+ "target": "節日英文",
+ "index": 0.7,
+ "h1": "節日英文對照表：台灣 45 個節日、國定假日英文和 2027 日期，holiday 和 festival 怎麼分",
+ "title": "節日英文45個：台灣節日、國定假日英文＋2027日期（附PDF）｜埃森美語",
+ "desc": "節日英文對照表：台灣國定假日、傳統節慶、西洋節日 45 個，附英文名稱、2027 日期與祝福語；holiday、festival、vacation 怎麼分、節慶英文單字、40 句對話，附 A4 PDF。",
+ "hero": "台灣孩子一年會碰到的節日，有放假的國定假日、不放假但家家都過的傳統節慶，還有學校和外師會辦活動的西洋節日。這一頁是<strong>全站節日英文的總表</strong>：先依月份列出 45 個節日的英文名稱、2027 年的日期和一句祝福語，接著講 holiday、festival、vacation、day off 這四個字怎麼分（台灣學生最常用錯的地方）、連假和補班的英文、節日單字怎麼唸、40 句聊節日的英文、孩子的「My favorite holiday is……」範本，最後是美國老師的筆記：哪些台灣節日美國人聽過、哪些要多解釋一句。每個節日的完整說法，都在表格下方連到各自的頁面。",
+ "sections": [
+  {
+   "title": "節日英文對照表：台灣一年 45 個節日的英文名稱、2027 日期和一句祝福",
+   "prose": [
+    "依月份排好，分成 4 組：放假的<strong>國定假日</strong>（2025 年起勞動節、教師節、光復節、行憲紀念日和小年夜也全國放假）、不放假的<strong>傳統節慶和紀念日</strong>、學校的<strong>寒暑假和颱風假</strong>，以及台灣孩子熟悉的<strong>西洋節日</strong>。第三欄是 2027 年的日期（括號內是星期）和一句可以直接說的祝福語或說明；農曆節日每年的國曆日期都不一樣，表上是 2027 年的。",
+    "2027 年的國定假日依行政院人事行政總處公告的辦公日曆表：全年沒有補班日，農曆春節從 2 月 4 日（小年夜）放到 2 月 10 日，共 7 天。日期怎麼用英文說和寫，見 <a href=\"/english-dates-guide/\">英文日期怎麼說</a>；月份的英文見 <a href=\"/months-english/\">月份英文</a>。"
+   ],
+   "heads": [
+    "節日",
+    "English",
+    "2027 日期・祝福語或說明"
+   ],
+   "phone_cols": 3,
+   "groups": [
+    {
+     "name": "國定假日（放假） National holidays",
+     "rows": [
+      [
+       "元旦",
+       "New Year's Day",
+       "1/1（五）・Happy New Year!"
+      ],
+      [
+       "小年夜",
+       "the day before Lunar New Year's Eve",
+       "2/4（四）・春節假期第一天"
+      ],
+      [
+       "除夕",
+       "Lunar New Year's Eve",
+       "2/5（五）・吃年夜飯：reunion dinner"
+      ],
+      [
+       "春節（農曆新年）",
+       "Lunar New Year / Chinese New Year",
+       "2/6（六），放假 2/4–2/10・Happy Lunar New Year!"
+      ],
+      [
+       "初二",
+       "the second day of Lunar New Year",
+       "2/7（日）・回娘家：visit Mom's side of the family"
+      ],
+      [
+       "和平紀念日",
+       "Peace Memorial Day",
+       "2/28（日），3/1 補假・放假一天"
+      ],
+      [
+       "兒童節",
+       "Children's Day",
+       "4/4（日），4/6 補假・Happy Children's Day!"
+      ],
+      [
+       "清明節",
+       "Tomb Sweeping Day / Qingming Festival",
+       "4/5（一）・兒童節連清明，4/3–4/6 放 4 天"
+      ],
+      [
+       "勞動節",
+       "Labor Day",
+       "5/1（六），4/30 補假・2025 年起全國放假"
+      ],
+      [
+       "端午節",
+       "Dragon Boat Festival",
+       "6/9（三）・Happy Dragon Boat Festival!"
+      ],
+      [
+       "中秋節",
+       "Mid-Autumn Festival / Moon Festival",
+       "9/15（三）・Happy Mid-Autumn Festival!"
+      ],
+      [
+       "教師節",
+       "Teachers' Day",
+       "9/28（二）・Happy Teachers' Day! 2025 年起放假"
+      ],
+      [
+       "國慶日（雙十節）",
+       "National Day / Double Tenth Day",
+       "10/10（日），10/11 補假・放假 3 天"
+      ],
+      [
+       "光復節",
+       "Retrocession Day",
+       "10/25（一）・2025 年起放假"
+      ],
+      [
+       "行憲紀念日",
+       "Constitution Day",
+       "12/25（六），12/24 補假・和聖誕節同一天"
+      ]
+     ]
+    },
+    {
+     "name": "傳統節慶與紀念日（不放假） Other observances",
+     "rows": [
+      [
+       "尾牙",
+       "year-end banquet / year-end party",
+       "農曆 12/16 前後，公司各自安排・Thanks for a great year!"
+      ],
+      [
+       "開工",
+       "the first workday after Lunar New Year",
+       "2/11（四）・Welcome back! 開工大吉"
+      ],
+      [
+       "元宵節",
+       "Lantern Festival",
+       "2/20（六）・Happy Lantern Festival!"
+      ],
+      [
+       "婦女節",
+       "Women's Day",
+       "3/8（一）・國際的節日"
+      ],
+      [
+       "植樹節",
+       "Arbor Day",
+       "3/12（五）・學校常種樹、種花"
+      ],
+      [
+       "母親節",
+       "Mother's Day",
+       "5/9（日），五月第二個星期日・Happy Mother's Day!"
+      ],
+      [
+       "畢業季",
+       "graduation season",
+       "六月・Congratulations, graduates!"
+      ],
+      [
+       "七夕",
+       "Qixi Festival / Chinese Valentine's Day",
+       "8/8（日），農曆 7/7・2027 年剛好和父親節同一天"
+      ],
+      [
+       "父親節",
+       "Father's Day",
+       "8/8（日）・台灣是 8/8，美國是六月第三個星期日"
+      ],
+      [
+       "中元節",
+       "Ghost Festival / Zhongyuan Festival",
+       "8/16（一），農曆 7/15・拜拜、普渡"
+      ],
+      [
+       "重陽節",
+       "Double Ninth Festival",
+       "10/8（五），農曆 9/9・敬老、登高"
+      ],
+      [
+       "冬至",
+       "Winter Solstice",
+       "12/22（三）・吃湯圓：eat tangyuan"
+      ]
+     ]
+    },
+    {
+     "name": "學校的假期 School breaks",
+     "rows": [
+      [
+       "寒假",
+       "winter break / winter vacation",
+       "一月到二月，通常包含春節"
+      ],
+      [
+       "暑假",
+       "summer vacation / summer break",
+       "大約七月初到八月底・Have a great summer!"
+      ],
+      [
+       "開學日",
+       "the first day of school",
+       "上學期約八月底、九月初・Welcome back to school!"
+      ],
+      [
+       "颱風假",
+       "typhoon day",
+       "看縣市政府公告・School is canceled today!"
+      ],
+      [
+       "連假",
+       "long weekend",
+       "例如 4/3–4/6 兒童節清明連假"
+      ]
+     ]
+    },
+    {
+     "name": "台灣孩子知道的西洋節日 Western holidays",
+     "rows": [
+      [
+       "西洋情人節",
+       "Valentine's Day",
+       "2/14（日）・Happy Valentine's Day!"
+      ],
+      [
+       "白色情人節",
+       "White Day",
+       "3/14（日）・日本開始的習慣，美國沒有"
+      ],
+      [
+       "聖派翠克節",
+       "St. Patrick's Day",
+       "3/17（三）・穿綠色：Wear green!"
+      ],
+      [
+       "復活節",
+       "Easter",
+       "3/28（日）・Happy Easter! 找彩蛋：egg hunt"
+      ],
+      [
+       "愚人節",
+       "April Fools' Day",
+       "4/1（四）・April Fools'!（開完玩笑時說）"
+      ],
+      [
+       "世界地球日",
+       "Earth Day",
+       "4/22（四）・學校常做環保活動"
+      ],
+      [
+       "美國父親節",
+       "Father's Day (US)",
+       "6/20（日），六月第三個星期日"
+      ],
+      [
+       "美國國慶日",
+       "Independence Day / the Fourth of July",
+       "7/4（日）・Happy Fourth of July!"
+      ],
+      [
+       "萬聖節",
+       "Halloween",
+       "10/31（日）・Trick or treat! Happy Halloween!"
+      ],
+      [
+       "感恩節",
+       "Thanksgiving",
+       "11/25（四），十一月第四個星期四・Happy Thanksgiving!"
+      ],
+      [
+       "平安夜",
+       "Christmas Eve",
+       "12/24（五）・在台灣剛好是補假"
+      ],
+      [
+       "聖誕節",
+       "Christmas / Christmas Day",
+       "12/25（六）・Merry Christmas!"
+      ],
+      [
+       "跨年夜",
+       "New Year's Eve",
+       "12/31（五），2028 年元旦的補假・倒數：countdown"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "每個節日的完整說法、祝福語和單字，都在各自的頁面，<strong>依月份排</strong>：一月 <a href=\"/new-year-english/\">新年快樂英文</a>；過年 <a href=\"/red-envelope-english/\">紅包英文</a>、<a href=\"/chinese-zodiac-english/\">十二生肖英文</a>；二月 <a href=\"/lantern-festival-english/\">元宵節英文</a>、<a href=\"/valentines-day-english/\">情人節英文</a>；五月 <a href=\"/mothers-day-english/\">母親節英文</a>；六月 <a href=\"/dragon-boat-festival-english/\">端午節英文</a>；九月 <a href=\"/mid-autumn-festival-english/\">中秋節英文</a>；十月 <a href=\"/halloween-english/\">萬聖節英文</a>；十一月 <a href=\"/thanksgiving-english/\">感恩節英文</a>；十二月 <a href=\"/christmas-english/\">聖誕節英文</a>。父親節英文和教師節英文的專頁正在準備中。",
+    "不是節日、但一年一定會用到的祝福：生日見 <a href=\"/happy-birthday-english/\">生日快樂英文</a>，畢業、考試、早日康復等 13 種場合見 <a href=\"/english-wishes/\">祝福英文 180 句</a>。"
+   ]
+  },
+  {
+   "title": "節日英文是 holiday 還是 festival？vacation、day off、連假、補班的英文：25 個節日單字",
+   "prose": [
+    "中文一個「節」字，英文要分好幾個字。<strong>holiday</strong> 是「節日、假日」，最常用、最萬用，國定假日、聖誕節、感恩節都是 holiday；<strong>festival</strong> 是「節慶、慶典」，有活動、有傳統習俗的那種，所以端午節、中秋節、元宵節的英文名字裡有 Festival，但母親節、教師節、國慶日沒有，它們是 Day。<strong>vacation</strong> 是「一段假期」，寒假、暑假、出國玩那幾天；<strong>day off</strong> 是「不用上班上學的那一天」，不管是不是節日都可以用。",
+    "美國人和英國人在這裡用字不同：英國人說 I'm going on holiday（我要去度假），美國人說 I'm going on vacation。這一頁和埃森美語教的是美國說法，所以「放假」多半說 a day off 或 no school，「度假」說 vacation，holiday 留給節日本身。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "什麼時候用"
+   ],
+   "rows": [
+    [
+     "holiday",
+     "節日；假日",
+     "最萬用：a national holiday、the holidays"
+    ],
+    [
+     "festival",
+     "節慶；慶典",
+     "有習俗和活動的節日，也指音樂節、影展"
+    ],
+    [
+     "vacation",
+     "（一段）假期、度假",
+     "寒暑假、出遊；美國說法"
+    ],
+    [
+     "day off",
+     "休假的一天",
+     "Tomorrow is a day off.＝明天放假"
+    ],
+    [
+     "break",
+     "（學校的）假期",
+     "winter break、spring break"
+    ],
+    [
+     "long weekend",
+     "連假（三天）",
+     "星期五或星期一放假的週末"
+    ],
+    [
+     "make-up workday",
+     "補班日",
+     "美國沒有這個制度，要解釋；2027 年沒有補班"
+    ],
+    [
+     "make-up day off",
+     "補假",
+     "節日碰到週末，改在平日放假"
+    ],
+    [
+     "national holiday",
+     "國定假日",
+     "也說 public holiday"
+    ],
+    [
+     "memorial day",
+     "紀念日",
+     "泛指紀念日；大寫 Memorial Day 是美國五月的一個節日"
+    ],
+    [
+     "anniversary",
+     "週年紀念日",
+     "結婚紀念日、創校紀念日"
+    ],
+    [
+     "lunar calendar",
+     "農曆",
+     "也可以說 the Chinese calendar"
+    ],
+    [
+     "solar calendar",
+     "國曆",
+     "日常說 the Western calendar 或 the regular calendar 比較好懂"
+    ],
+    [
+     "calendar",
+     "月曆；行事曆",
+     "school calendar＝學校行事曆"
+    ],
+    [
+     "celebrate",
+     "慶祝",
+     "celebrate Christmas，不用加 for"
+    ],
+    [
+     "celebration",
+     "慶祝活動",
+     "a big celebration"
+    ],
+    [
+     "tradition",
+     "傳統",
+     "It's a family tradition.＝我們家的傳統"
+    ],
+    [
+     "traditional",
+     "傳統的",
+     "traditional food、traditional festival"
+    ],
+    [
+     "custom",
+     "習俗",
+     "比 tradition 正式，作文常用"
+    ],
+    [
+     "parade",
+     "遊行",
+     "a holiday parade"
+    ],
+    [
+     "fireworks",
+     "煙火",
+     "通常用複數；watch the fireworks"
+    ],
+    [
+     "decorations",
+     "裝飾品",
+     "put up decorations＝佈置"
+    ],
+    [
+     "get-together",
+     "聚會",
+     "a family get-together"
+    ],
+    [
+     "reunion",
+     "團圓、重聚",
+     "family reunion；reunion dinner＝年夜飯"
+    ],
+    [
+     "the holidays",
+     "年底的節日季",
+     "美國指感恩節到元旦這段時間"
+    ]
+   ],
+   "after": [
+    "最容易混的是 holiday 和 vacation：Christmas is a holiday.（聖誕節是個節日）、We have a two-week vacation.（我們放兩個禮拜的假）。只是明天不用上學，最自然的說法是 <strong>We don't have school tomorrow.</strong> 或 Tomorrow is a day off.；外師聽到 We have a holiday tomorrow 也懂，但會接著問 Which holiday?。月曆和星期的英文見 <a href=\"/days-of-week-english/\">星期英文</a>。"
+   ]
+  },
+  {
+   "title": "節日英文怎麼唸：festival 重音在 FES，holiday 的 ho 唸 [hɑ]",
+   "prose": [
+    "節日單字裡，台灣學生最常唸錯的是 <strong>festival</strong>：重音在第一個音節 FES，後面兩個音節都很輕，結尾的 -val 只剩一個輕輕的 [ḷ]，不是「費斯踢佛」每個字一樣重。<strong>holiday</strong> 的 ho 是張大嘴的 [hɑ]，不是 [ho]，結尾 day 唸 [de]；<strong>calendar</strong> 重音在 CAL，中間的 en 很輕，常被唸成重音在中間。",
+    "<strong>celebrate</strong> 重音在第一個音節 CEL，名詞 celebration 重音才移到 BRA；<strong>lunar</strong> 是 [ˈlunɚ]，開頭是 [lu]，不是 [lju]。下表是這一頁最常用、也最容易唸錯的 12 個字，符號見 <a href=\"/kk-phonetic-chart/\">KK 音標表</a>。"
+   ],
+   "heads": [
+    "英文",
+    "KK 音標",
+    "注意"
+   ],
+   "phone_cols": 3,
+   "rows": [
+    [
+     "festival",
+     "[ˈfɛstəvḷ]",
+     "重音 FES；結尾 -val 很輕"
+    ],
+    [
+     "holiday",
+     "[ˈhɑləˌde]",
+     "ho 唸 [hɑ]，嘴巴張大"
+    ],
+    [
+     "vacation",
+     "[veˈkeʃən]",
+     "重音在 CA"
+    ],
+    [
+     "celebrate",
+     "[ˈsɛləˌbret]",
+     "重音在第一個音節"
+    ],
+    [
+     "celebration",
+     "[ˌsɛləˈbreʃən]",
+     "變名詞，重音移到 BRA"
+    ],
+    [
+     "calendar",
+     "[ˈkæləndɚ]",
+     "重音 CAL；不要和 colander（濾鍋）搞混"
+    ],
+    [
+     "lunar",
+     "[ˈlunɚ]",
+     "[lu] 不是 [lju]；結尾捲舌"
+    ],
+    [
+     "tradition",
+     "[trəˈdɪʃən]",
+     "重音在 DI"
+    ],
+    [
+     "parade",
+     "[pəˈred]",
+     "重音在後面 RADE"
+    ],
+    [
+     "fireworks",
+     "[ˈfaɪrˌwɝks]",
+     "重音在 FIRE；works 要捲舌"
+    ],
+    [
+     "decorations",
+     "[ˌdɛkəˈreʃənz]",
+     "重音在 RA；結尾 [z]"
+    ],
+    [
+     "Easter",
+     "[ˈistɚ]",
+     "開頭是長音 [i]"
+    ]
+   ],
+   "after": [
+    "練法：先拍手唸重音，FES-ti-val、HOL-i-day、CAL-en-dar、CEL-e-brate，四個字的重音都在第一拍；唸對了再放進句子：What's your favorite holiday? Do you celebrate Christmas? 每個字的發音可以在 <a href=\"/english-pronunciation/\">英文發音查詢</a> 和 <a href=\"/pronunciation/\">單字發音</a> 裡查到。"
+   ]
+  },
+  {
+   "title": "聊節日的英文 40 句：Is tomorrow a day off? We have a long weekend!",
+   "prose": [
+    "分成 5 組：問別人怎麼過節、說放假和連假、萬用的節日祝福、學校和外師課堂上會聽到的、別人祝你時怎麼回。第三欄寫什麼時候用。節日的祝福一律是 <strong>Happy＋節日名稱</strong>，只有聖誕節習慣說 Merry Christmas；不知道對方過什麼節，就說 <strong>Happy holidays!</strong>。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "什麼時候用"
+   ],
+   "groups": [
+    {
+     "name": "問別人怎麼過節 Asking about holidays",
+     "rows": [
+      [
+       "What do you do for Lunar New Year?",
+       "你們過年都做什麼？",
+       "for＋節日＝為了過這個節"
+      ],
+      [
+       "What are you doing for the long weekend?",
+       "連假你要做什麼？",
+       "連假前最常聽到的一句"
+      ],
+      [
+       "Do you celebrate Christmas?",
+       "你們過聖誕節嗎？",
+       "celebrate 後面直接接節日"
+      ],
+      [
+       "What's your favorite holiday?",
+       "你最喜歡哪個節日？",
+       "外師最愛問的問題"
+      ],
+      [
+       "Why do you like it?",
+       "為什麼喜歡？",
+       "接在上一句後面"
+      ],
+      [
+       "When is the Dragon Boat Festival this year?",
+       "今年端午節是哪一天？",
+       "農曆節日每年日期不同"
+      ],
+      [
+       "Are you going back to your hometown?",
+       "你要回老家嗎？",
+       "過年、連假前問"
+      ],
+      [
+       "What did you do over the holiday?",
+       "放假你做了什麼？",
+       "收假後第一天問"
+      ],
+      [
+       "How was your Lunar New Year?",
+       "你過年過得怎麼樣？",
+       "開學、開工時問"
+      ],
+      [
+       "What holiday is it today?",
+       "今天是什麼節日？",
+       "看到街上在慶祝時問"
+      ]
+     ]
+    },
+    {
+     "name": "放假、連假、補班 Days off",
+     "rows": [
+      [
+       "Is tomorrow a day off?",
+       "明天放假嗎？",
+       "問上班上學"
+      ],
+      [
+       "We don't have school tomorrow.",
+       "明天不用上學。",
+       "最自然的「明天放假」"
+      ],
+      [
+       "We have a long weekend.",
+       "我們有連假。",
+       "三天連假"
+      ],
+      [
+       "We get four days off for Children's Day and Tomb Sweeping Day.",
+       "兒童節和清明節連放四天。",
+       "2027 年 4/3–4/6"
+      ],
+      [
+       "We get a week off for Lunar New Year.",
+       "過年放一個禮拜。",
+       "說春節假期"
+      ],
+      [
+       "Monday is a make-up day off.",
+       "星期一補假。",
+       "節日碰到週末"
+      ],
+      [
+       "We have to work on Saturday to make up for it.",
+       "星期六要補班。",
+       "跟外國人解釋補班"
+      ],
+      [
+       "School is canceled because of the typhoon.",
+       "颱風來，停課了。",
+       "颱風假"
+      ],
+      [
+       "Winter break starts next week.",
+       "寒假下禮拜開始。",
+       "學生"
+      ],
+      [
+       "I can't wait for summer vacation!",
+       "好期待暑假！",
+       "孩子最常說"
+      ]
+     ]
+    },
+    {
+     "name": "萬用的節日祝福 Greetings for any holiday",
+     "rows": [
+      [
+       "Happy holidays!",
+       "佳節愉快！",
+       "不確定對方過什麼節時用；美國多在年底說"
+      ],
+      [
+       "Enjoy the long weekend!",
+       "連假愉快！",
+       "同學、同事"
+      ],
+      [
+       "Have a great holiday!",
+       "祝你假期愉快！",
+       "放假前道別"
+      ],
+      [
+       "Have a nice break!",
+       "祝你放假愉快！",
+       "學生之間、寒暑假前"
+      ],
+      [
+       "Have fun with your family!",
+       "和家人玩得開心！",
+       "過年、中秋前"
+      ],
+      [
+       "Wishing you and your family a happy holiday.",
+       "祝你和家人節日快樂。",
+       "卡片、訊息・稍正式"
+      ],
+      [
+       "Season's greetings!",
+       "佳節愉快！",
+       "卡片上的年底祝福・正式"
+      ],
+      [
+       "Happy New Year, everyone!",
+       "大家新年快樂！",
+       "群組訊息"
+      ]
+     ]
+    },
+    {
+     "name": "學校、外師課堂上 At school",
+     "rows": [
+      [
+       "No class on Monday. It's a holiday.",
+       "星期一沒課，是國定假日。",
+       "老師提醒放假"
+      ],
+      [
+       "We'll have a party before the holiday.",
+       "放假前我們要開派對。",
+       "外師常辦節日派對"
+      ],
+      [
+       "Let's make a card for the holiday.",
+       "我們來做節日卡片。",
+       "勞作課"
+      ],
+      [
+       "Tell me one thing you did over the break.",
+       "說一件你放假做的事。",
+       "收假後的第一堂課"
+      ],
+      [
+       "Who can tell me what this holiday is about?",
+       "誰可以告訴我這個節日在慶祝什麼？",
+       "外師介紹節日"
+      ],
+      [
+       "See you after the break!",
+       "放完假見！",
+       "放假前最後一堂課"
+      ]
+     ]
+    },
+    {
+     "name": "別人祝你時怎麼回 Replying",
+     "rows": [
+      [
+       "You too!",
+       "你也是！",
+       "最短的回法"
+      ],
+      [
+       "Same to you!",
+       "也祝你！",
+       "比 You too 稍完整"
+      ],
+      [
+       "Thanks! Happy holidays to you too!",
+       "謝謝！也祝你佳節愉快！",
+       "訊息、卡片"
+      ],
+      [
+       "Thanks! Enjoy your break!",
+       "謝謝！放假愉快！",
+       "放假前道別"
+      ],
+      [
+       "Thank you! Have a great Lunar New Year!",
+       "謝謝！祝你新年快樂！",
+       "外國朋友祝你過年時"
+      ],
+      [
+       "Thanks, you too! See you next week!",
+       "謝謝，你也是！下禮拜見！",
+       "放學、下班時"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "說到放假要做什麼，很快就會用到天氣和食物：<a href=\"/weather-english/\">天氣英文</a>、<a href=\"/food-english/\">食物英文</a>；放假前的心情（excited、bored、tired）見 <a href=\"/feelings-english/\">情緒英文</a>。"
+   ]
+  },
+  {
+   "title": "教孩子用英文介紹節日：My favorite holiday is…… 7 句範本＋外國朋友會問的 3 個問題",
+   "prose": [
+    "外師問 What's your favorite holiday? 的時候，孩子只答 Lunar New Year. 對話就停了。下面是一段國小孩子說得出口的範本，七句都只用最基本的現在式：先說最喜歡哪個節日、什麼時候，再說家裡做什麼、吃什麼、為什麼喜歡。換成中秋節或聖誕節，只要改第一、二、四、五句。第二組是外國朋友真的會問的三個問題。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "提示"
+   ],
+   "groups": [
+    {
+     "name": "介紹範本（7 句） Model paragraph",
+     "rows": [
+      [
+       "My favorite holiday is Lunar New Year.",
+       "我最喜歡的節日是農曆新年。",
+       "第一句先說答案"
+      ],
+      [
+       "It's in January or February.",
+       "它在一月或二月。",
+       "農曆節日日期每年不同，所以說 or"
+      ],
+      [
+       "My whole family gets together on Lunar New Year's Eve.",
+       "除夕全家人會聚在一起。",
+       "get together＝團聚"
+      ],
+      [
+       "We eat a big dinner with fish and dumplings.",
+       "我們吃一頓有魚和水餃的大餐。",
+       "說一兩樣菜就好"
+      ],
+      [
+       "My grandparents give me red envelopes.",
+       "爺爺奶奶會給我紅包。",
+       "red envelope＝紅包"
+      ],
+      [
+       "We don't have school for a whole week.",
+       "我們整整一個禮拜不用上學。",
+       "孩子最喜歡的理由"
+      ],
+      [
+       "I love it because I can play with my cousins every day.",
+       "我喜歡它，因為每天都可以和表哥表姐玩。",
+       "because＋原因，結尾最有力"
+      ]
+     ]
+    },
+    {
+     "name": "外國朋友會問（3 組問答） Questions from a foreign friend",
+     "rows": [
+      [
+       "Q: Is Lunar New Year the same as Chinese New Year?",
+       "農曆新年和中國新年一樣嗎？",
+       "外國人常問"
+      ],
+      [
+       "A: Yes. It's the same holiday. In Taiwan, we often just say Guo Nian.",
+       "對，是同一個節日，在台灣我們常常就說「過年」。",
+       "先說是同一個"
+      ],
+      [
+       "Q: What's the most important day?",
+       "最重要的是哪一天？",
+       "問節日重點"
+      ],
+      [
+       "A: New Year's Eve. We have a big family dinner that night.",
+       "除夕，那天晚上全家吃大餐。",
+       "加一句晚上做什麼"
+      ],
+      [
+       "Q: Do you get presents?",
+       "你們有收禮物嗎？",
+       "美國孩子想到的是聖誕禮物"
+      ],
+      [
+       "A: We get red envelopes with money inside!",
+       "我們收紅包，裡面有錢！",
+       "外國孩子聽了都很羨慕"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "練法：家長用中文問（你最喜歡哪個節日？那天做什麼？），孩子用英文答，七句都答得出來再連著說一遍。換節日練第二遍時，中秋節的句子見 <a href=\"/mid-autumn-festival-english/\">中秋節英文</a>，聖誕節見 <a href=\"/christmas-english/\">聖誕節英文</a>；開頭想先介紹自己，見 <a href=\"/english-self-introduction-kids/\">小學生英文自我介紹</a>。"
+   ]
+  },
+  {
+   "title": "美國老師的節日筆記：哪些台灣節日美國人聽過、哪些要解釋，和 holiday、festival 的常見錯誤",
+   "prose": [
+    "美國人最熟的台灣節日是<strong>農曆新年</strong>，大多數人叫它 Chinese New Year，很多學校和媒體現在也說 Lunar New Year，兩個說法都通。<strong>端午節</strong>的划龍舟（dragon boat racing）在美國不少城市也有比賽，提到 dragon boat 很多人知道；<strong>中秋節</strong>聽過的人少一些，但說 Moon Festival 和 mooncakes，在有華人社區的城市通常就懂了。",
+    "需要多解釋一句的是這幾個：<strong>清明節</strong>直譯 Tomb Sweeping Day，美國人第一次聽會愣一下，補一句 We visit our family's graves, clean them, and remember our ancestors. 就懂了。<strong>教師節</strong>美國也有謝謝老師的活動（Teacher Appreciation Week，在五月），但沒有放假，所以聽到台灣教師節放一天假，美國人會很驚訝。<strong>補班</strong>美國完全沒有這個制度，說 a make-up workday 要再加一句 We work on Saturday so we can have a longer holiday. 才講得清楚。<strong>國慶日</strong>說 National Day 或 Double Tenth Day（十月十日），外國朋友常問 Why is it called Double Tenth? 答案很簡單：the tenth day of the tenth month。",
+    "還有一個美國人會覺得有趣的巧合：12 月 25 日在台灣是行憲紀念日，2025 年起又是放假日，所以聖誕節剛好不用上班上學；2027 年的 12/25 是星期六，12/24 平安夜補假。",
+    "最後是台灣學生說節日、寫節日作文時最常見的 10 句錯誤，左欄是常見寫法，中間是建議寫法，右欄是原因。"
+   ],
+   "heads": [
+    "常見寫法",
+    "建議寫法",
+    "為什麼"
+   ],
+   "phone_cols": 3,
+   "rows": [
+    [
+     "Happy Mother's Festival!",
+     "Happy Mother's Day!",
+     "中文的「節」不一定是 festival，母親節是 Day"
+    ],
+    [
+     "We have a holiday tomorrow.",
+     "We don't have school tomorrow. / Tomorrow is a day off.",
+     "holiday 指節日本身，說放假用 day off"
+    ],
+    [
+     "I'm going on holiday to Japan.",
+     "I'm going on vacation to Japan.",
+     "on holiday 是英國說法，美國說 vacation"
+    ],
+    [
+     "We have a long holiday.",
+     "We have a long weekend.",
+     "三天連假，美國人說 long weekend"
+    ],
+    [
+     "What festival is today?",
+     "What holiday is it today?",
+     "holiday 是最萬用的問法"
+    ],
+    [
+     "We celebrate for Christmas.",
+     "We celebrate Christmas.",
+     "celebrate 後面直接接節日，不加 for"
+    ],
+    [
+     "Happy Christmas!",
+     "Merry Christmas!",
+     "Happy Christmas 是英國說法，美國說 Merry"
+    ],
+    [
+     "Happy Tomb Sweeping Day!",
+     "Have a nice long weekend!",
+     "清明節是掃墓的日子，不說 Happy"
+    ],
+    [
+     "I like Moon Cake Festival.",
+     "I like the Mid-Autumn Festival.",
+     "節日名稱前加 the；Mooncake 不是節日名"
+    ],
+    [
+     "Happy New Years!",
+     "Happy New Year!",
+     "祝福語的 Year 不加 s，見新年快樂英文那一頁"
+    ]
+   ],
+   "after": [
+    "「Happy New Year 要不要加 s」的完整說明在 <a href=\"/new-year-english/\">新年快樂英文</a>；萬聖節、感恩節這些美國節日美國人怎麼過，見 <a href=\"/halloween-english/\">萬聖節英文</a> 和 <a href=\"/thanksgiving-english/\">感恩節英文</a>。"
+   ]
+  },
+  {
+   "title": "節日英文常見問題",
+   "faq": [
+    [
+     "節日英文是 holiday 還是 festival？",
+     "兩個都是，但用法不同。holiday 是最萬用的「節日、假日」，國定假日、聖誕節、感恩節都是 holiday；festival 是有傳統習俗和活動的節慶，所以端午節是 Dragon Boat Festival、中秋節是 Mid-Autumn Festival。母親節、教師節、國慶日的英文名字都是 Day，不用 festival。不確定時，說 holiday 一定不會錯。"
+    ],
+    [
+     "國定假日英文怎麼說？",
+     "national holiday，也可以說 public holiday。台灣 2025 年起有勞動節、教師節、光復節、行憲紀念日和小年夜五個新的放假日。問別人「明天放假嗎」最自然的說法是 Is tomorrow a day off? 或 Do we have school tomorrow?"
+    ],
+    [
+     "連假和補班的英文怎麼說？",
+     "連假是 long weekend（三天）；放更多天就直接說 We get four days off. 補假是 a make-up day off，補班是 a make-up workday。美國沒有補班這個制度，跟外國人說要加一句解釋：We work on Saturday so we can have a longer holiday. 2027 年全年沒有補班日。"
+    ],
+    [
+     "農曆和國曆的英文怎麼說？",
+     "農曆是 the lunar calendar，也可以說 the Chinese calendar；國曆是 the solar calendar，日常說 the Western calendar 或 the regular calendar 外國人比較好懂。說節日日期時可以這樣講：The Mid-Autumn Festival is on the 15th day of the 8th lunar month."
+    ],
+    [
+     "Happy holidays 是什麼意思？什麼時候說？",
+     "「佳節愉快」。在美國，Happy holidays 多半在年底說，因為感恩節、聖誕節、新年都在那段時間，而且不是每個人都過聖誕節，說 Happy holidays 對誰都適合。台灣的連假前對外國同事說 Enjoy the long weekend! 比較自然。"
+    ],
+    [
+     "清明節可以說 Happy Tomb Sweeping Day 嗎？",
+     "不建議。清明節是掃墓、紀念祖先的日子，英文母語者不會在這種日子說 Happy。清明連假前想祝福外國朋友，說 Have a nice long weekend! 或 Enjoy your days off! 就好；要介紹這個節日，說 We visit our family's graves and remember our ancestors."
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "What's your favorite holiday？孩子答得出來嗎？",
+ "cta": "外師開學第一個月一定會問 What's your favorite holiday?，接著問 Why? 和 What do you do?。會背節日的英文名字只是第一步，能用三句話把自己家怎麼過年、怎麼過中秋說給外國人聽，才算真的會。我們的小班課就是這樣上的：美籍老師一個節日接一個節日地問，孩子用自己的話答，從 Lunar New Year 講到 Christmas，一整年的節日都是開口的機會。"
+}

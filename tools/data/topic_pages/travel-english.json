@@ -1,0 +1,1121 @@
+{
+ "slug": "travel-english",
+ "published": "2026-10-22",
+ "target": "旅遊英文",
+ "index": 0.6,
+ "h1": "旅遊英文怎麼說？出國必備 110 句：飯店、交通、餐廳、景點、緊急求助，加 30 個旅行英文單字",
+ "title": "旅遊英文110句＋30個單字：飯店、問路、點餐、緊急求助｜埃森美語",
+ "desc": "旅遊英文對照表：飯店入住退房、問路搭車、餐廳點餐結帳、購物、景點、緊急求助與小費共 110 句，加 30 個旅行英文單字、發音重點和孩子能說的出國英文短文，附 A4 PDF。",
+ "hero": "帶孩子出國，最常卡住的不是單字，而是那一句話：櫃台問 Do you have a reservation? 要怎麼回、Wi-Fi 密碼怎麼問、吃不完要怎麼打包、孩子想上廁所該說什麼。這一頁把<strong>旅遊英文依情境整理成 70 句對照表</strong>：飯店、交通、餐廳、購物、景點、緊急狀況、付錢和小費；接著是 travel、trip、tour 怎麼分和幾個常唸錯的字、40 句旅途中會說的話（其中 10 句孩子自己就能說）、30 個旅行英文單字，最後是美籍老師給要去美國的家庭的提醒。出國英文不用多，說對場合的那一句就夠。",
+ "sections": [
+  {
+   "title": "旅遊英文對照表：飯店、交通、餐廳等 7 種情境 70 句（附用法）",
+   "prose": [
+    "依出國時遇到的順序分成 7 組：飯店、交通與問路、餐廳、購物、景點、需要幫忙時、付錢和小費。第三欄寫<strong>什麼時候用、要注意什麼</strong>。搭飛機、過海關的句子屬於機場英文，會另外整理一頁；這張表從出了機場開始。",
+    "多數句子用 Can I…? / Could we…? 開頭，句尾加 please，對誰說都有禮貌。要給司機看的地址，先照 <a href=\"/english-address/\">英文地址</a> 的格式寫好；價錢和房號的唸法見 <a href=\"/english-numbers-guide/\">英文數字</a>，幾點退房、幾點關門見 <a href=\"/time-english/\">時間英文</a>。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "什麼時候用／注意"
+   ],
+   "groups": [
+    {
+     "name": "飯店 Hotel",
+     "rows": [
+      [
+       "I have a reservation under Lin.",
+       "我用「林」這個名字訂了房。",
+       "櫃台第一句・報訂房的姓"
+      ],
+      [
+       "We'd like to check in, please.",
+       "我們要辦入住。",
+       "到櫃台時"
+      ],
+      [
+       "What time is checkout?",
+       "幾點要退房？",
+       "入住時先問"
+      ],
+      [
+       "We'd like to check out, please.",
+       "我們要退房。",
+       "退房・交還房卡"
+      ],
+      [
+       "Could we get a late checkout?",
+       "可以晚一點退房嗎？",
+       "班機晚時・不一定免費"
+      ],
+      [
+       "What's the Wi-Fi password?",
+       "Wi-Fi 密碼是多少？",
+       "最常問的一句"
+      ],
+      [
+       "Our room key doesn't work.",
+       "我們的房卡不能用。",
+       "房卡也叫 key card"
+      ],
+      [
+       "Could we get some extra towels?",
+       "可以多給我們幾條毛巾嗎？",
+       "打電話到櫃台說"
+      ],
+      [
+       "Is breakfast included?",
+       "有含早餐嗎？",
+       "訂房、入住時問"
+      ],
+      [
+       "Can we leave our bags here?",
+       "可以把行李寄放在這裡嗎？",
+       "退房後還要出去玩時"
+      ],
+      [
+       "The air conditioning isn't working.",
+       "冷氣壞了。",
+       "冷氣說 air conditioning 或 AC"
+      ]
+     ]
+    },
+    {
+     "name": "交通與問路 Getting around",
+     "rows": [
+      [
+       "Excuse me, how do I get to the museum?",
+       "不好意思，去博物館要怎麼走？",
+       "問路的萬用句・換掉地點就好"
+      ],
+      [
+       "Is it far from here?",
+       "離這裡遠嗎？",
+       "決定走路或搭車前"
+      ],
+      [
+       "Can we walk there?",
+       "走路到得了嗎？",
+       "美國城市常比想像中大"
+      ],
+      [
+       "Sorry, we're lost.",
+       "不好意思，我們迷路了。",
+       "迷路說 lost，不說 lose my way"
+      ],
+      [
+       "Where's the nearest subway station?",
+       "最近的地鐵站在哪裡？",
+       "紐約說 subway，有些城市說 metro"
+      ],
+      [
+       "Which bus goes downtown?",
+       "哪一班公車到市中心？",
+       "downtown 前面不加 to"
+      ],
+      [
+       "Which stop do we get off at?",
+       "我們要在哪一站下車？",
+       "上車時問司機"
+      ],
+      [
+       "How much is the fare?",
+       "車資多少？",
+       "公車、計程車都可以問"
+      ],
+      [
+       "Please take us to this address.",
+       "請載我們到這個地址。",
+       "計程車・把地址拿給司機看"
+      ],
+      [
+       "Let's get an Uber.",
+       "我們叫車吧。",
+       "叫車常直接說 App 的名字"
+      ],
+      [
+       "Could you let us out here?",
+       "可以讓我們在這裡下車嗎？",
+       "計程車・到了想下車時"
+      ],
+      [
+       "Is this the right way to the beach?",
+       "去海邊是走這條路嗎？",
+       "走到一半不確定時"
+      ]
+     ]
+    },
+    {
+     "name": "餐廳 Restaurant",
+     "rows": [
+      [
+       "A table for four, please.",
+       "四位，謝謝。",
+       "進門時・人數換掉就好"
+      ],
+      [
+       "Could we see a menu, please?",
+       "可以給我們菜單嗎？",
+       "坐下後"
+      ],
+      [
+       "Do you have a kids' menu?",
+       "有兒童菜單嗎？",
+       "美國很多餐廳有・份量小"
+      ],
+      [
+       "What do you recommend?",
+       "你推薦什麼？",
+       "看不懂菜單時最好用"
+      ],
+      [
+       "I'll have the chicken sandwich.",
+       "我要雞肉三明治。",
+       "點餐：I'll have＋菜名"
+      ],
+      [
+       "Could we get some water, please?",
+       "可以給我們一些水嗎？",
+       "坐下來吃的餐廳，水通常不用錢"
+      ],
+      [
+       "Does this have peanuts in it?",
+       "這裡面有花生嗎？",
+       "過敏時一定要問"
+      ],
+      [
+       "For here or to go?",
+       "內用還是外帶？",
+       "櫃台點餐時店員會問"
+      ],
+      [
+       "Can I get this to go?",
+       "這個可以外帶嗎？",
+       "外帶說 to go，不說 take away"
+      ],
+      [
+       "Can I get a box for this?",
+       "可以給我盒子打包嗎？",
+       "吃不完打包・美國很常見"
+      ],
+      [
+       "Can we get the check, please?",
+       "麻煩幫我們結帳。",
+       "結帳・帳單會送到桌上"
+      ]
+     ]
+    },
+    {
+     "name": "購物 Shopping",
+     "rows": [
+      [
+       "How much is this?",
+       "這個多少錢？",
+       "不說 How much money"
+      ],
+      [
+       "I'm just looking, thanks.",
+       "我只是看看，謝謝。",
+       "店員問 Can I help you? 時"
+      ],
+      [
+       "Can I try this on?",
+       "我可以試穿嗎？",
+       "衣服、鞋子"
+      ],
+      [
+       "Where's the fitting room?",
+       "試衣間在哪裡？",
+       "也說 dressing room"
+      ],
+      [
+       "Do you have this in a smaller size?",
+       "這個有小一點的尺寸嗎？",
+       "要大一點就說 a bigger size"
+      ],
+      [
+       "I'll take it.",
+       "我要買這個。",
+       "決定買的時候"
+      ],
+      [
+       "Does the price include tax?",
+       "價錢有含稅嗎？",
+       "美國標價多半不含稅，結帳時才加"
+      ],
+      [
+       "Can I get a receipt?",
+       "可以給我收據嗎？",
+       "receipt 的 p 不發音"
+      ],
+      [
+       "Can I get a bag, please?",
+       "可以給我一個袋子嗎？",
+       "有些地方袋子要另外付錢"
+      ]
+     ]
+    },
+    {
+     "name": "景點 Sightseeing",
+     "rows": [
+      [
+       "Two adults and two kids, please.",
+       "兩個大人、兩個小孩，謝謝。",
+       "買門票時"
+      ],
+      [
+       "How much are the tickets?",
+       "門票多少錢？",
+       "ticket 是可數名詞"
+      ],
+      [
+       "Is there a family ticket?",
+       "有家庭票嗎？",
+       "帶孩子時先問"
+      ],
+      [
+       "What time does the museum close?",
+       "博物館幾點關門？",
+       "進場前先問"
+      ],
+      [
+       "Can we get a map?",
+       "可以拿一張地圖嗎？",
+       "大型景點門口常有"
+      ],
+      [
+       "Is there a guided tour?",
+       "有導覽行程嗎？",
+       "tour 是有人帶的參觀"
+      ],
+      [
+       "What's the best attraction for kids here?",
+       "這裡最適合孩子的景點是哪個？",
+       "景點說 attraction"
+      ],
+      [
+       "Can you take a picture of us?",
+       "可以幫我們拍張照嗎？",
+       "把手機遞過去時說"
+      ],
+      [
+       "Are we allowed to take pictures in here?",
+       "這裡面可以拍照嗎？",
+       "博物館裡先問"
+      ],
+      [
+       "Where's the gift shop?",
+       "紀念品店在哪裡？",
+       "紀念品店說 gift shop"
+      ]
+     ]
+    },
+    {
+     "name": "需要幫忙時 When you need help",
+     "rows": [
+      [
+       "Excuse me, could you help me, please?",
+       "不好意思，可以幫我一下嗎？",
+       "先說這句，再說狀況"
+      ],
+      [
+       "I lost my passport.",
+       "我的護照不見了。",
+       "先跟飯店櫃台或警察說"
+      ],
+      [
+       "Where's the nearest pharmacy?",
+       "最近的藥局在哪裡？",
+       "美國藥局常在超市或便利商店裡"
+      ],
+      [
+       "I don't feel well.",
+       "我不太舒服。",
+       "平靜地說，對方就會幫忙"
+      ],
+      [
+       "My son has a fever.",
+       "我兒子發燒了。",
+       "女兒說 my daughter"
+      ],
+      [
+       "We need to see a doctor.",
+       "我們需要看醫生。",
+       "問櫃台附近的診所"
+      ],
+      [
+       "Where's the police station?",
+       "警察局在哪裡？",
+       "掉東西要報案時"
+      ],
+      [
+       "How do I contact the Taiwan office here?",
+       "這裡的台灣辦事處要怎麼聯絡？",
+       "在美國是台北經濟文化辦事處"
+      ],
+      [
+       "Please call 911.",
+       "請打 911。",
+       "美國的緊急電話，警察、救護車都是"
+      ],
+      [
+       "We got separated from our son.",
+       "我們和兒子走散了。",
+       "請工作人員幫忙廣播"
+      ]
+     ]
+    },
+    {
+     "name": "付錢與小費 Money and tipping",
+     "rows": [
+      [
+       "Where can I exchange money?",
+       "哪裡可以換錢？",
+       "換匯說 exchange"
+      ],
+      [
+       "Do you take credit cards?",
+       "可以刷卡嗎？",
+       "take＝收"
+      ],
+      [
+       "Can I pay in cash?",
+       "可以付現金嗎？",
+       "in cash 或 with cash 都可以"
+      ],
+      [
+       "Is there an ATM nearby?",
+       "附近有提款機嗎？",
+       "ATM 一個一個字母唸"
+      ],
+      [
+       "Is the tip included?",
+       "小費有含在裡面嗎？",
+       "看帳單上有沒有 gratuity"
+      ],
+      [
+       "How much should we tip?",
+       "小費該給多少？",
+       "可以問飯店櫃台"
+      ],
+      [
+       "Keep the change.",
+       "不用找了。",
+       "計程車・零錢當小費"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "最後一組的「需要幫忙時」，句子都寫得很平靜：<strong>先說 Excuse me, could you help me, please?，再用一句話講清楚狀況</strong>。美國人聽到有人客氣地求助，多半會停下來幫忙；一句 Help me! 反而會讓人以為出了大事。"
+   ]
+  },
+  {
+   "title": "旅遊英文怎麼說、怎麼唸：travel、trip、tour 差在哪，hotel 的重音在後面",
+   "prose": [
+    "「旅遊」在英文裡最常用兩個字：<strong>travel 是動詞或不可數名詞</strong>，講的是「旅行這件事」（I love to travel.）；<strong>trip 是可數名詞</strong>，講的是「一次旅行」（We took a trip to Japan.）。所以「祝你旅途愉快」是 Have a nice trip!，不是 Have a nice travel.。<strong>tour</strong> 是有人帶的參觀或行程（a museum tour、a group tour），<strong>vacation</strong> 是美國人說的「假期、度假」（We're on vacation.），英國人說 holiday。journey 偏書面，指一段長途路程，日常聊旅行很少用。",
+    "所以「旅遊英文」「旅行英文」都是 travel English，「出國英文」可以說 English for traveling abroad。拼字也注意：美式拼 <strong>traveling、traveled、traveler（一個 l）</strong>，英式是 travelling（兩個 l），兩種都對，在台灣學美式就寫一個 l。國家名稱的英文見 <a href=\"/countries-english/\">國家英文</a>。",
+    "發音上，台灣學生最常錯的是 <strong>hotel</strong>：重音在後面，唸 [hoˈtɛl]，ho-TEL，不是 HO-tel。travel 剛好相反，重音在前面 [ˈtrævḷ]，後面的 vel 很輕，尾巴的 l 舌尖要碰到上排牙齒後面，不要唸成「趣啊佛」或加一個「歐」。下表是旅途中最常唸錯的 15 個字，符號對照見 <a href=\"/kk-phonetic-chart/\">KK 音標表</a>。"
+   ],
+   "heads": [
+    "英文",
+    "KK 音標",
+    "注意"
+   ],
+   "rows": [
+    [
+     "travel",
+     "[ˈtrævḷ]",
+     "重音在 tra；結尾 l 不加「歐」"
+    ],
+    [
+     "trip",
+     "[trɪp]",
+     "短母音 [ɪ]，不是長的 [i]"
+    ],
+    [
+     "tour",
+     "[tʊr]",
+     "和 poor 押韻"
+    ],
+    [
+     "tourist",
+     "[ˈtʊrɪst]",
+     "重音在 tour"
+    ],
+    [
+     "hotel",
+     "[hoˈtɛl]",
+     "重音在後面：ho-TEL"
+    ],
+    [
+     "museum",
+     "[mjuˈziəm]",
+     "三個音節，重音在中間：mu-SE-um"
+    ],
+    [
+     "souvenir",
+     "[ˌsuvəˈnɪr]",
+     "重音在最後的 nir；sou 唸 [su]"
+    ],
+    [
+     "restaurant",
+     "[ˈrɛstərənt]",
+     "重音在 res；口語常唸成 REST-rant"
+    ],
+    [
+     "vacation",
+     "[veˈkeʃən]",
+     "重音在 ca"
+    ],
+    [
+     "itinerary",
+     "[aɪˈtɪnəˌrɛrɪ]",
+     "i 唸 [aɪ]，重音在 tin"
+    ],
+    [
+     "attraction",
+     "[əˈtrækʃən]",
+     "重音在 trac"
+    ],
+    [
+     "receipt",
+     "[rɪˈsit]",
+     "p 不發音"
+    ],
+    [
+     "suite",
+     "[swit]",
+     "和 sweet 同音，是飯店的套房"
+    ],
+    [
+     "subway",
+     "[ˈsʌbˌwe]",
+     "重音在 sub"
+    ],
+    [
+     "Wi-Fi",
+     "[ˈwaɪˌfaɪ]",
+     "美國唸 WHY-fy，兩個音節都是 [aɪ]"
+    ]
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "出國旅遊最常說的 40 句英文：孩子也能說的 10 句、和當地人聊天、家人之間、聽不懂時",
+   "prose": [
+    "上面的表是「辦事」用的句子；這 40 句是旅途中「說話」用的：前 10 句短到孩子自己就能說，接著是和當地人簡單聊兩句、爸媽和孩子之間用英文說的話，最後是聽不懂、要對方再說一次時的客氣說法。第三欄是誰說、什麼時候說。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "誰說／什麼時候"
+   ],
+   "groups": [
+    {
+     "name": "孩子也能說的 10 句 Kids can say these",
+     "rows": [
+      [
+       "I'm from Taiwan.",
+       "我從台灣來。",
+       "孩子・被問 Where are you from? 時"
+      ],
+      [
+       "Where is the restroom?",
+       "洗手間在哪裡？",
+       "孩子・最需要會的一句"
+      ],
+      [
+       "Excuse me.",
+       "不好意思，借過。",
+       "孩子・經過別人身邊時"
+      ],
+      [
+       "Thank you so much!",
+       "非常謝謝你！",
+       "孩子・別人幫忙後"
+      ],
+      [
+       "This is my first time in America.",
+       "這是我第一次來美國。",
+       "孩子・和當地人聊天"
+      ],
+      [
+       "I'm nine years old.",
+       "我九歲。",
+       "孩子・換成自己的年齡"
+      ],
+      [
+       "Can I have some water, please?",
+       "可以給我一點水嗎？",
+       "孩子・在餐廳"
+      ],
+      [
+       "I'm a little tired.",
+       "我有點累。",
+       "孩子・對爸媽說"
+      ],
+      [
+       "I can't find my mom. Can you help me?",
+       "我找不到媽媽，可以幫我嗎？",
+       "孩子・走散時跟店員或警察說"
+      ],
+      [
+       "Have a nice day!",
+       "祝你有美好的一天！",
+       "孩子・離開商店時"
+      ]
+     ]
+    },
+    {
+     "name": "和當地人聊兩句 Small talk with locals",
+     "rows": [
+      [
+       "Hi, how are you?",
+       "嗨，你好嗎？",
+       "美國人的招呼・回 Good, thanks!"
+      ],
+      [
+       "We're visiting from Taiwan.",
+       "我們從台灣來玩。",
+       "被問從哪裡來時"
+      ],
+      [
+       "We're here on vacation.",
+       "我們來這裡度假。",
+       "被問來做什麼時"
+      ],
+      [
+       "We're here for a week.",
+       "我們會待一個星期。",
+       "被問待多久時"
+      ],
+      [
+       "It's our first time here.",
+       "這是我們第一次來。",
+       "聊天開頭"
+      ],
+      [
+       "What's good to eat around here?",
+       "這附近有什麼好吃的？",
+       "問飯店櫃台、當地人"
+      ],
+      [
+       "Any tips for things to do with kids?",
+       "有什麼適合帶孩子去的地方嗎？",
+       "問當地人"
+      ],
+      [
+       "Your city is beautiful!",
+       "你們的城市好漂亮！",
+       "稱讚・對方會很開心"
+      ],
+      [
+       "Thanks for your help!",
+       "謝謝你的幫忙！",
+       "問完路之後"
+      ],
+      [
+       "You too!",
+       "你也是！",
+       "對方說 Have a nice day! 時回"
+      ]
+     ]
+    },
+    {
+     "name": "家人之間 Parents and kids",
+     "rows": [
+      [
+       "Stay close to me.",
+       "跟緊我。",
+       "爸媽對孩子・人多的地方"
+      ],
+      [
+       "Hold my hand when we cross the street.",
+       "過馬路要牽我的手。",
+       "爸媽對孩子"
+      ],
+      [
+       "If we get separated, wait right here.",
+       "如果走散了，就在這裡等。",
+       "爸媽對孩子・進景點前先講好"
+      ],
+      [
+       "Do you need to use the restroom?",
+       "你要上廁所嗎？",
+       "爸媽對孩子・出發前"
+      ],
+      [
+       "Don't forget your jacket.",
+       "別忘了你的外套。",
+       "爸媽對孩子・離開餐廳時"
+      ],
+      [
+       "Let's take a picture here!",
+       "我們在這裡拍張照吧！",
+       "全家"
+      ],
+      [
+       "We'll take a break soon.",
+       "我們等一下就休息。",
+       "爸媽對孩子・走累的時候"
+      ],
+      [
+       "Let's buy a souvenir for Grandma.",
+       "我們買個紀念品給奶奶吧。",
+       "全家・在紀念品店"
+      ],
+      [
+       "What was your favorite part today?",
+       "今天你最喜歡哪個部分？",
+       "爸媽對孩子・晚上回飯店"
+      ],
+      [
+       "Are you ready to go?",
+       "準備好要走了嗎？",
+       "全家・出門前"
+      ]
+     ]
+    },
+    {
+     "name": "聽不懂、要確認時 When you don't understand",
+     "rows": [
+      [
+       "Sorry, could you say that again?",
+       "不好意思，可以再說一次嗎？",
+       "沒聽清楚時・比 What? 有禮貌"
+      ],
+      [
+       "Could you speak a little more slowly, please?",
+       "可以說慢一點嗎？",
+       "對方說太快時"
+      ],
+      [
+       "Could you write it down for me?",
+       "可以幫我寫下來嗎？",
+       "地址、名字聽不懂時"
+      ],
+      [
+       "Could you show me on the map?",
+       "可以在地圖上指給我看嗎？",
+       "問路時"
+      ],
+      [
+       "Sorry, I don't understand.",
+       "不好意思，我聽不懂。",
+       "平靜地說・對方會換個說法"
+      ],
+      [
+       "Is this the line for tickets?",
+       "這是買票的隊伍嗎？",
+       "排隊前先問・隊伍說 line"
+      ],
+      [
+       "Is this seat taken?",
+       "這個位子有人坐嗎？",
+       "公車、餐廳"
+      ],
+      [
+       "Excuse me, I think this is our seat.",
+       "不好意思，這好像是我們的位子。",
+       "客氣地說・用 I think 比較軟"
+      ],
+      [
+       "I think there's a mistake on our check.",
+       "我們的帳單好像算錯了。",
+       "餐廳・先說 I think"
+      ],
+      [
+       "Just to check, is this the bus to downtown?",
+       "確認一下，這是到市中心的公車嗎？",
+       "上車前"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "旅行英文單字 30 個：行程、自由行與跟團、民宿、時差",
+   "prose": [
+    "排行程、訂房、和外師聊旅行時會用到的 30 個字，分成 5 組。第三欄是用法或例句；吃的東西和菜單上的字另外整理在 <a href=\"/food-english/\">食物英文</a>，出發前查天氣用得到的字在 <a href=\"/weather-english/\">天氣英文</a>。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "用法"
+   ],
+   "groups": [
+    {
+     "name": "行程與票 Plans and tickets",
+     "rows": [
+      [
+       "itinerary",
+       "行程（表）",
+       "What's on the itinerary today? 今天行程是什麼？"
+      ],
+      [
+       "round trip",
+       "來回（票）",
+       "a round-trip ticket 來回票"
+      ],
+      [
+       "one way",
+       "單程",
+       "a one-way ticket 單程票"
+      ],
+      [
+       "reservation",
+       "預訂（訂房、訂位）",
+       "make a reservation 預訂"
+      ],
+      [
+       "passport",
+       "護照",
+       "出國前先看有效期限"
+      ],
+      [
+       "visa",
+       "簽證",
+       "去美國要先查入境規定"
+      ],
+      [
+       "travel insurance",
+       "旅遊保險",
+       "不可數：some travel insurance"
+      ]
+     ]
+    },
+    {
+     "name": "旅行方式 Ways to travel",
+     "rows": [
+      [
+       "independent travel",
+       "自由行",
+       "口語說 We're traveling on our own."
+      ],
+      [
+       "group tour",
+       "跟團",
+       "We're on a group tour. 我們是跟團的"
+      ],
+      [
+       "tour guide",
+       "導遊",
+       "跟團時帶隊的人"
+      ],
+      [
+       "package tour",
+       "套裝行程",
+       "機票、飯店一起買的行程"
+      ],
+      [
+       "road trip",
+       "開車旅行",
+       "美國家庭很愛的旅行方式"
+      ],
+      [
+       "day trip",
+       "一日遊",
+       "take a day trip to the beach"
+      ]
+     ]
+    },
+    {
+     "name": "住的地方 Places to stay",
+     "rows": [
+      [
+       "B&B",
+       "民宿（含早餐）",
+       "bed and breakfast 的縮寫"
+      ],
+      [
+       "guesthouse",
+       "民宿、小旅館",
+       "比飯店小、比較像住在人家家裡"
+      ],
+      [
+       "hostel",
+       "青年旅館",
+       "常是共用房間，和 hotel 不一樣"
+      ],
+      [
+       "motel",
+       "汽車旅館",
+       "美國公路旁的旅館，車停在房門口"
+      ],
+      [
+       "resort",
+       "度假村",
+       "有泳池、餐廳，不太需要出門"
+      ],
+      [
+       "front desk",
+       "飯店櫃台",
+       "Ask the front desk. 問櫃台"
+      ]
+     ]
+    },
+    {
+     "name": "人與地方 People and places",
+     "rows": [
+      [
+       "tourist",
+       "觀光客",
+       "a tourist spot 觀光客多的地方"
+      ],
+      [
+       "local",
+       "當地人；當地的",
+       "Ask a local. 問當地人"
+      ],
+      [
+       "landmark",
+       "地標",
+       "一看就知道是哪裡的建築"
+      ],
+      [
+       "attraction",
+       "景點",
+       "tourist attraction 觀光景點"
+      ],
+      [
+       "downtown",
+       "市中心",
+       "go downtown，不加 to"
+      ],
+      [
+       "souvenir",
+       "紀念品",
+       "buy souvenirs 買紀念品"
+      ]
+     ]
+    },
+    {
+     "name": "旅途中的事 On the road",
+     "rows": [
+      [
+       "jet lag",
+       "時差（造成的疲倦）",
+       "I have jet lag. 我在調時差"
+      ],
+      [
+       "time difference",
+       "時差（時間差幾小時）",
+       "和 jet lag 不同：這是時間差"
+      ],
+      [
+       "luggage",
+       "行李",
+       "不可數，不加 s；一件說 a suitcase"
+      ],
+      [
+       "sightseeing",
+       "觀光",
+       "go sightseeing 去觀光"
+      ],
+      [
+       "vacation",
+       "假期、度假",
+       "on vacation 在度假"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "最常混用的一組是 <strong>jet lag 和 time difference</strong>：中文都叫「時差」，但 time difference 是兩地差幾個小時（What's the time difference?），jet lag 是飛過去之後身體的疲倦、白天想睡晚上醒著（I still have jet lag.）。孩子說「我在調時差」就是 I have jet lag.。"
+   ]
+  },
+  {
+   "title": "教孩子用英文說旅行：My family went to… 7 句短文＋外國朋友會問的 3 個問題",
+   "prose": [
+    "放完寒暑假，外師最常問 Where did you go on vacation?。下面 7 句是給國小孩子的範本，全部用過去式（went、took、stayed、visited、ate、was），每句後面是中文。地名換成自己去的地方就好；練法和 <a href=\"/english-self-introduction-kids/\">英文自我介紹</a> 一樣：家長用中文問一句，孩子用英文答一句，七句都答得出來再從頭講一遍。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "說明"
+   ],
+   "groups": [
+    {
+     "name": "介紹範本（7 句）Model paragraph",
+     "rows": [
+      [
+       "Last summer, my family went to California for vacation.",
+       "去年暑假，我們全家去加州度假。",
+       "開頭：什麼時候、去哪裡"
+      ],
+      [
+       "We took a long flight from Taoyuan.",
+       "我們從桃園搭了很久的飛機。",
+       "怎麼去；took 是 take 的過去式"
+      ],
+      [
+       "We stayed in a hotel near the beach.",
+       "我們住在海邊附近的飯店。",
+       "住哪裡"
+      ],
+      [
+       "We visited a science museum and a big zoo.",
+       "我們去了科學博物館和一個很大的動物園。",
+       "去了哪些景點"
+      ],
+      [
+       "I ate a huge hamburger and tried tacos.",
+       "我吃了一個超大的漢堡，還吃了墨西哥塔可餅。",
+       "吃了什麼；ate 是 eat 的過去式"
+      ],
+      [
+       "The weather was sunny and hot every day.",
+       "每天都是大晴天，很熱。",
+       "天氣"
+      ],
+      [
+       "My favorite part was the beach because I swam with my sister.",
+       "我最喜歡海邊，因為我和姊姊一起游泳。",
+       "結尾：最喜歡什麼、為什麼"
+      ]
+     ]
+    },
+    {
+     "name": "外國朋友會問的 3 個問題 Questions a foreign friend asks",
+     "rows": [
+      [
+       "Where did you go on vacation?",
+       "你放假去了哪裡？",
+       "問"
+      ],
+      [
+       "We went to California. It was so much fun!",
+       "我們去了加州，超好玩的！",
+       "答"
+      ],
+      [
+       "How long was the flight?",
+       "飛機坐了多久？",
+       "問"
+      ],
+      [
+       "It was really long! I watched three movies.",
+       "超久的！我看了三部電影。",
+       "答：不用講確切時數也行"
+      ],
+      [
+       "Did you have jet lag?",
+       "你有時差嗎？",
+       "問"
+      ],
+      [
+       "Yes! I was sleepy at dinner every night.",
+       "有！每天晚餐時間我都好想睡。",
+       "答"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "程度好一點的孩子，可以在每句後面多加一個細節：We visited a science museum. <em>I saw a real space shuttle!</em>——往句子裡塞細節，就是從會說單句走向會說一段話的路。去的不是美國也一樣，把 California 換成 Japan、Korea 或 Thailand，句型完全不用改。"
+   ]
+  },
+  {
+   "title": "美國老師的叮嚀：帶孩子去美國前要知道的事，和台灣人常說錯的 11 句",
+   "prose": [
+    "我在美國長大，台灣家長問我「去美國玩要注意什麼」時，我最先講的是<strong>小費和稅</strong>。在有服務生的餐廳，小費是一定要給的，一般是帳單的一成五到兩成，直接加在刷卡單上或留在桌上；在櫃台點餐、自己端的店不用。帳單是服務生送到桌上的，在座位上付，不用走去櫃台；要結帳時和服務生對到眼、說 Can we get the check?，不要揮手或大聲叫。另一件事是標價不含稅：貨架上寫的價錢，結帳時會再加上銷售稅，各州稅率不同，所以付的錢會比標價多一點，不是店家算錯。",
+    "帶孩子要知道的幾件小事：美國人在電梯、排隊時常對陌生人說 Hi, how are you?，這只是打招呼，回 Good, thanks! 就好，不用真的講近況；美國人很習慣跟孩子說話，教孩子笑著回一句 Hi! 或 Thank you!，會換來很多笑臉。餐廳份量很大，一份兩個孩子分著吃很正常，吃不完說 Can I get a box? 打包也完全不失禮。美國的緊急電話是 911，出發前讓孩子記住，再教他走散時說 I can't find my mom. Can you help me?。下面是台灣人最常直接從中文翻、但美國人不會這樣說的句子。"
+   ],
+   "heads": [
+    "常見說法",
+    "建議說法",
+    "為什麼"
+   ],
+   "rows": [
+    [
+     "We went to Japan to play.",
+     "We went to Japan on vacation.",
+     "「去日本玩」的「玩」不是 play；play 是孩子玩遊戲"
+    ],
+    [
+     "I want to go travel.",
+     "I want to travel. / I want to take a trip.",
+     "travel 本身就是動詞，前面不加 go"
+    ],
+    [
+     "Have a nice travel!",
+     "Have a nice trip!",
+     "一次旅行是 trip，travel 不加 a"
+    ],
+    [
+     "Where is the toilet?",
+     "Where is the restroom?",
+     "美國公共場所說 restroom，toilet 多指馬桶本身"
+    ],
+    [
+     "Pay the bill, please.",
+     "Can we get the check, please?",
+     "美國餐廳結帳說 the check；商店是 pay at the register"
+    ],
+    [
+     "Help me!",
+     "Excuse me, can you help me?",
+     "只說 Help me! 聽起來像出了大事"
+    ],
+    [
+     "Take away, please.",
+     "To go, please.",
+     "外帶在美國說 to go，take away 是英式"
+    ],
+    [
+     "How much money?",
+     "How much is this?",
+     "問價錢不用說 money"
+    ],
+    [
+     "I'm Taiwan.",
+     "I'm from Taiwan. / I'm Taiwanese.",
+     "I'm Taiwan 是「我是台灣」"
+    ],
+    [
+     "I lose my way.",
+     "I'm lost. / We're lost.",
+     "迷路用 lost 形容狀態"
+    ],
+    [
+     "Open the air conditioner.",
+     "Turn on the AC.",
+     "電器說 turn on／turn off"
+    ]
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "旅遊英文常見問題",
+   "faq": [
+    [
+     "旅遊英文怎麼說？travel 還是 trip？",
+     "兩個都對，用法不同。travel 是動詞或不可數名詞，講旅行這件事：I love to travel.；trip 是可數名詞，講一次旅行：We took a trip to Korea.。所以「旅途愉快」是 Have a nice trip!，不說 Have a nice travel.。「旅遊英文」「旅行英文」都可以說 travel English。"
+    ],
+    [
+     "出國英文怎麼說？",
+     "出國是 go abroad 或 travel abroad，美國人也常說 go overseas。口語更常直接講國家：We're going to Japan next month.；要說「下週我不在國內」是 I'll be out of the country next week.。國家名稱見 <a href=\"/countries-english/\">國家英文</a>。"
+    ],
+    [
+     "自由行、跟團英文怎麼說？",
+     "自由行是 independent travel，口語說 We're traveling on our own.；跟團是 a group tour 或 a package tour，口語說 We're on a tour.。導遊是 tour guide。美國人很少用 independent travel 這個詞，聊天時用 on our own 最自然。"
+    ],
+    [
+     "洗手間英文怎麼說？在美國說 toilet 可以嗎？",
+     "在美國的餐廳、商場、景點，說 restroom 最自然：Where is the restroom?；在別人家裡說 bathroom：Can I use your bathroom?。toilet 在美國多半指馬桶本身，問路時說 toilet 對方聽得懂，但會覺得太直接；英國、澳洲則常說 toilet。"
+    ],
+    [
+     "結帳英文怎麼說？餐廳和商店一樣嗎？",
+     "不一樣。餐廳是 Can we get the check, please?，服務生把帳單送到桌上，在座位上付；商店是在收銀台付，收銀台叫 the register 或 checkout，店員會問 Cash or card?；飯店的「退房結帳」則是 check out。bill 美國人也聽得懂，但餐廳裡 check 最常用。"
+    ],
+    [
+     "在美國護照不見了，要找誰？",
+     "先平靜地跟飯店櫃台說 I lost my passport.，再到警察局報案拿一份 police report。台灣在美國沒有大使館，對應的單位是華盛頓的駐美國台北經濟文化代表處和各大城市的台北經濟文化辦事處（Taipei Economic and Cultural Office），補發護照或回國需要的文件找他們辦理。出發前把護照拍照存在手機裡，會省很多事。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "出國前練過的句子，到了當地說得出口嗎？",
+ "cta": "出發前，讓孩子在家先演一遍：爸媽當櫃台、當服務生，孩子說 A table for four, please. 和 Where is the restroom?，到了當地第一次開口就不會卡住。我們的小班課由美籍老師帶，點餐、問路、自我介紹這些真實情境都是課堂上開口練習的題材，讓孩子從 I'm from Taiwan. 開始，一句一句練到敢對外國人說。"
+}

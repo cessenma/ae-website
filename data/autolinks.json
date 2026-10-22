@@ -1156,6 +1156,126 @@
     "英文地址",
     "地址英文"
    ]
+  },
+  {
+   "target": "basketball-english",
+   "kw": [
+    "籃球英文"
+   ]
+  },
+  {
+   "target": "soccer-english",
+   "kw": [
+    "足球英文"
+   ]
+  },
+  {
+   "target": "tennis-english",
+   "kw": [
+    "網球英文"
+   ]
+  },
+  {
+   "target": "swimming-english",
+   "kw": [
+    "游泳英文"
+   ]
+  },
+  {
+   "target": "school-subjects-english",
+   "kw": [
+    "科目英文"
+   ]
+  },
+  {
+   "target": "math-english",
+   "kw": [
+    "數學英文"
+   ]
+  },
+  {
+   "target": "science-english",
+   "kw": [
+    "自然英文"
+   ]
+  },
+  {
+   "target": "social-studies-english",
+   "kw": [
+    "社會英文"
+   ]
+  },
+  {
+   "target": "music-english",
+   "kw": [
+    "音樂英文"
+   ]
+  },
+  {
+   "target": "airport-english",
+   "kw": [
+    "機場英文"
+   ]
+  },
+  {
+   "target": "travel-english",
+   "kw": [
+    "旅遊英文"
+   ]
+  },
+  {
+   "target": "ordering-food-english",
+   "kw": [
+    "點餐英文"
+   ]
+  },
+  {
+   "target": "shopping-english",
+   "kw": [
+    "購物英文"
+   ]
+  },
+  {
+   "target": "leave-note-english",
+   "kw": [
+    "請假英文"
+   ]
+  },
+  {
+   "target": "chinglish-english",
+   "kw": [
+    "中式英文"
+   ]
+  },
+  {
+   "target": "festivals-english",
+   "kw": [
+    "節日英文"
+   ]
+  },
+  {
+   "target": "fathers-day-english",
+   "kw": [
+    "父親節英文"
+   ]
+  },
+  {
+   "target": "teachers-day-english",
+   "kw": [
+    "教師節英文"
+   ]
+  },
+  {
+   "target": "baseball-english",
+   "kw": [
+    "棒球英文"
+   ]
+  },
+  {
+   "target": "icrt-english-radio",
+   "kw": [
+    "ICRT"
+   ]
   }
  ]
 }

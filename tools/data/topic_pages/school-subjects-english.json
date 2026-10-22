@@ -1,0 +1,990 @@
+{
+ "slug": "school-subjects-english",
+ "published": "2026-10-22",
+ "target": "科目英文",
+ "index": 0.6,
+ "h1": "科目英文對照表：國語、數學、自然、社會等 55 個學科英文怎麼說，加課表英文與 40 句課堂會話",
+ "title": "科目英文對照表55個：國語、數學、自然、社會等學科與課表英文｜埃森美語",
+ "desc": "科目英文對照表：國小到高中 55 個學科英文，加美國學校的 Language Arts、Homeroom、Recess；另有課表英文 25 個、課堂會話 40 句、發音與常見錯誤，附 PDF。",
+ "hero": "孩子的課表上有國語、數學、自然、社會、健康、綜合活動，問孩子「自然的英文是什麼」，很多人會先想到 nature。這一頁先給<strong>國小、國中、高中共 55 個科目的英文對照表</strong>，第三欄寫課綱英文和美國學校的說法差在哪、哪裡容易說錯；接著是課表英文 25 個（節、下課、午休、段考、導師）、科目怎麼唸、學校裡會用到的 40 句話、一段孩子介紹自己課表的範本，最後是美國學校的一天長什麼樣子，以及台灣學生最常說錯的 14 句。",
+ "sections": [
+  {
+   "title": "科目英文對照表：國小、國中、高中 55 個學科英文，加美國學校才有的名稱",
+   "prose": [
+    "分成四組：<strong>國小</strong>、<strong>國中</strong>、<strong>高中</strong>各自課表上會出現的科目，最後一組是<strong>美國學校才有、台灣課表上看不到的名稱</strong>——Language Arts、Homeroom、Recess、Study Hall 這些字，孩子看美國影集或到美國讀書的第一天就會碰到。英文欄用的是<strong>教育部課綱英文版和學校網站上的名稱</strong>，課本和學校都照著用；美國人說法不同時，括號裡附上美國說法，例如 Mathematics (Math)。中文欄先寫大家平常的叫法，括號內是課綱的正式名稱；第三欄寫美國學校怎麼稱呼這一科，或是台灣學生容易說錯的地方。國小、國中、高中這些學校名稱和幾年級怎麼說，見 <a href=\"/school-grades-english/\">年級英文對照表</a>。",
+    "數學、自然、社會、音樂這四科課堂上用到的字（分數和圖形、實驗器材、地圖和朝代、樂器和音符）各有一整頁可以講，我們會另外整理成數學英文、自然英文、社會英文、音樂英文四頁；這一頁先把<strong>科目名稱</strong>一次說對。"
+   ],
+   "heads": [
+    "英文",
+    "中文（括號內是課綱正式名稱）",
+    "美國學校怎麼說／注意"
+   ],
+   "groups": [
+    {
+     "name": "國小 Elementary school",
+     "rows": [
+      [
+       "Chinese / Mandarin",
+       "國語、國文（國語文）",
+       "課綱英文版寫 Mandarin，學校網站多寫 Chinese；跟外國人說 Chinese class 最清楚"
+      ],
+      [
+       "Mathematics (Math)",
+       "數學",
+       "課綱用全名 Mathematics；美國課表寫 Math，英式是 Maths"
+      ],
+      [
+       "Natural Science (Science)",
+       "自然（自然科學）",
+       "課綱叫 Natural Science；美國國小就叫 Science，不是 nature"
+      ],
+      [
+       "Social Studies",
+       "社會",
+       "台美同名：歷史、地理、公民合成一科"
+      ],
+      [
+       "English",
+       "英語（英語文）",
+       "在美國，English 是母語課；外語課叫 Spanish、French"
+      ],
+      [
+       "Native Languages",
+       "本土語（本土語文）",
+       "課綱譯名；閩南語 Taiwanese、客語 Hakka、原住民族語 Indigenous Languages"
+      ],
+      [
+       "Health and Physical Education",
+       "健體（健康與體育）",
+       "課綱的領域名；美國課表上常分成 Health 和 PE 兩堂"
+      ],
+      [
+       "PE (Physical Education)",
+       "體育",
+       "課表上寫 PE，美國孩子口語說 gym"
+      ],
+      [
+       "Health",
+       "健康",
+       "美國國小的 Health 也教營養、刷牙、安全"
+      ],
+      [
+       "Arts",
+       "藝術（藝術領域）",
+       "三年級起的領域名，包含音樂、視覺藝術、表演藝術"
+      ],
+      [
+       "Music",
+       "音樂",
+       "美國國小由音樂老師上，是 specials 之一"
+      ],
+      [
+       "Visual Arts (Art)",
+       "美術（視覺藝術）",
+       "課綱叫 Visual Arts；美國課表上就寫 Art"
+      ],
+      [
+       "Life Curriculum",
+       "生活（生活課程）",
+       "一、二年級把自然、社會、藝術合成一科；美國沒有對應的科目"
+      ],
+      [
+       "Integrative Activities",
+       "綜合（綜合活動）",
+       "課綱譯名；美國沒有這一科"
+      ],
+      [
+       "Information Technology (Computer)",
+       "資訊（科技）",
+       "學校網站多寫 Information Technology；美國國小叫 computer 或 technology"
+      ],
+      [
+       "Alternative Courses",
+       "彈性課（彈性學習課程）",
+       "台北市雙語手冊的譯名，課綱寫 Alternative curriculum；美國沒有"
+      ]
+     ]
+    },
+    {
+     "name": "國中 Junior high school",
+     "rows": [
+      [
+       "Physics and Chemistry",
+       "理化",
+       "美國沒有合在一起的這一科；最接近的是 Physical Science"
+      ],
+      [
+       "Biology",
+       "生物",
+       "美國多半到高中才有一整年的 Biology"
+      ],
+      [
+       "Earth Science",
+       "地科（地球科學）",
+       "美國國中很常見的一科"
+      ],
+      [
+       "History",
+       "歷史",
+       "美國國中多半上 U.S. History 或 World History"
+      ],
+      [
+       "Geography",
+       "地理",
+       "美國很少單獨開課，多半併在 Social Studies 裡"
+      ],
+      [
+       "Civics",
+       "公民（公民與社會）",
+       "課綱全名 Civics and Society；美國叫 Civics 或 Government"
+      ],
+      [
+       "Performing Arts",
+       "表藝（表演藝術）",
+       "美國叫 Drama 或 Theater"
+      ],
+      [
+       "Home Economics",
+       "家政",
+       "美國現在多半改叫 Family and Consumer Sciences（FACS）"
+      ],
+      [
+       "Scouting",
+       "童軍",
+       "課綱譯名；美國學校沒有這一科，童軍是課後的 Scouts"
+      ],
+      [
+       "Guidance",
+       "輔導（輔導活動）",
+       "課綱譯名；美國由 school counselor 個別談，不排進課表"
+      ],
+      [
+       "Technology",
+       "科技（資訊科技、生活科技）",
+       "國中起的領域名，分成下面兩科"
+      ],
+      [
+       "Information Technology",
+       "資訊（資訊科技）",
+       "美國多半叫 Computer Science，口語說 tech"
+      ],
+      [
+       "Living Technology",
+       "生科（生活科技）",
+       "美國類似的課叫 shop、tech ed 或 STEM"
+      ]
+     ]
+    },
+    {
+     "name": "高中 Senior high school",
+     "rows": [
+      [
+       "Physics",
+       "物理",
+       "美國高中一整年的課；進階的叫 AP Physics"
+      ],
+      [
+       "Chemistry",
+       "化學",
+       "ch 唸 [k]；美國高中也是一整年"
+      ],
+      [
+       "Elective Courses",
+       "選修",
+       "美國也叫 electives：I'm taking Japanese as an elective."
+      ],
+      [
+       "Advanced Elective Courses",
+       "加深加廣（加深加廣選修）",
+       "國家教育研究院的譯名；美國最接近的是 AP、honors 課"
+      ],
+      [
+       "Self-Directed Learning",
+       "自主學習",
+       "高中課程計畫的常見譯名；美國叫 independent study，要個別申請"
+      ],
+      [
+       "Alternative Learning Period",
+       "彈性學習時間",
+       "課綱譯名；自主學習多半排在這段時間"
+      ],
+      [
+       "Group Activity Period",
+       "團體活動（班會、社團）",
+       "課綱譯名；美國沒有班會，社團在放學後：the drama club"
+      ],
+      [
+       "Second Foreign Languages",
+       "第二外語",
+       "課綱譯名；美國高中的外語課叫 World Languages，最多人選 Spanish"
+      ],
+      [
+       "Career Planning",
+       "生涯規劃",
+       "美國由 counselor 處理，不是一門課"
+      ],
+      [
+       "Life Education",
+       "生命教育",
+       "台灣高中的課；美國沒有這一科"
+      ],
+      [
+       "Law and Life",
+       "法律與生活",
+       "課綱譯名；美國類似的內容在 Government 課裡"
+      ],
+      [
+       "National Defense Education",
+       "國防（全民國防教育）",
+       "課綱英文版的譯名；美國沒有必修，最接近的是選修的 JROTC"
+      ]
+     ]
+    },
+    {
+     "name": "美國學校才有的名稱 American school subjects and periods",
+     "rows": [
+      [
+       "Language Arts (ELA)",
+       "語文課（美國孩子的「國語課」）",
+       "English Language Arts：閱讀、寫作、拼字、文法；台灣課綱的 Language Arts 則是指整個語文領域"
+      ],
+      [
+       "Reading",
+       "閱讀課",
+       "美國國小低年級把 Reading 單獨排在課表上"
+      ],
+      [
+       "Spelling",
+       "拼字",
+       "每週一次 spelling test，星期一發單字表"
+      ],
+      [
+       "Homeroom",
+       "導師時間、導師班",
+       "國高中每天開頭的十幾分鐘：點名、聽廣播；也指導師的教室"
+      ],
+      [
+       "Recess",
+       "下課遊戲時間",
+       "美國國小到操場玩的那段時間；國中以上沒有"
+      ],
+      [
+       "Study Hall",
+       "自習課",
+       "國高中課表上沒排課的那一節，在教室或圖書館寫作業"
+      ],
+      [
+       "Band",
+       "管樂團課",
+       "真的排在課表上、有成績；Orchestra 弦樂、Choir 合唱"
+      ],
+      [
+       "Gym",
+       "體育課（口語）",
+       "課表上寫 PE，孩子嘴上說 gym；gym 也是體育館"
+      ],
+      [
+       "Specials",
+       "專科課",
+       "美國國小把 art、music、PE、library、computer 合稱 specials"
+      ],
+      [
+       "Library",
+       "圖書館課",
+       "國小每週一次，借書、聽老師說故事"
+      ],
+      [
+       "Algebra / Geometry / Calculus",
+       "代數／幾何／微積分",
+       "美國高中數學按主題開課，不叫 Math 1、Math 2"
+      ],
+      [
+       "AP (Advanced Placement)",
+       "大學先修課",
+       "高中修的大學程度課程，考過可抵大學學分"
+      ],
+      [
+       "Lunch",
+       "午餐",
+       "美國課表上就寫 lunch，不寫 lunch break；在 cafeteria 吃"
+      ],
+      [
+       "Assembly",
+       "全校集會",
+       "美國偶爾才有，不像台灣每週朝會"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "課表英文 25 個：節、第一節、下課、午休、段考、導師怎麼說",
+   "prose": [
+    "課表的美式英文是 <strong>class schedule</strong>（或只說 schedule），timetable 是英式說法，在美國多半指火車、公車時刻表。「一節課」是 period：國小每節 40 分鐘、國中 45 分鐘、高中 50 分鐘，第一節就是 first period。下面 25 個字按一天的順序排：早自習、上課、下課、午休、放學，再加上考試、作業、老師和學期的說法。",
+    "幾點上課、幾點放學怎麼說，見 <a href=\"/time-english/\">時間英文</a>。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "用法／注意"
+   ],
+   "rows": [
+    [
+     "class schedule",
+     "課表",
+     "美式；也常只說 schedule。What's your schedule? 你的課表是什麼？"
+    ],
+    [
+     "period",
+     "節",
+     "a period 一節課；國小每節 40 分鐘"
+    ],
+    [
+     "first period",
+     "第一節",
+     "second period 第二節、third period 第三節，依此類推"
+    ],
+    [
+     "morning self-study",
+     "早自習",
+     "美國沒有這段時間；也可說 morning study time"
+    ],
+    [
+     "morning assembly",
+     "朝會",
+     "美國只有偶爾的 assembly（全校集會），不是每週"
+    ],
+    [
+     "break",
+     "下課（節與節之間）",
+     "a ten-minute break；美國國小的戶外下課叫 recess"
+    ],
+    [
+     "lunch break",
+     "午休",
+     "美國的午休只吃飯、不睡覺"
+    ],
+    [
+     "nap time",
+     "午睡",
+     "台灣國小午休有 nap time；美國只有幼兒園有"
+    ],
+    [
+     "School's out.",
+     "放學了",
+     "「幾點放學」是 School ends at four. 或 We get out at four."
+    ],
+    [
+     "take attendance",
+     "點名",
+     "老師 takes attendance，學生答 Here!；roll call 是名詞"
+    ],
+    [
+     "homeroom teacher",
+     "導師、班導",
+     "美國國小的 homeroom teacher 教大部分科目"
+    ],
+    [
+     "subject teacher",
+     "科任老師",
+     "美國更常直接說 my math teacher、our music teacher"
+    ],
+    [
+     "principal",
+     "校長",
+     "美式；英式是 headmaster、head teacher"
+    ],
+    [
+     "Grade 3, Class 2",
+     "三年二班",
+     "美國不這樣編班，孩子會說 I'm in Ms. Lee's class."
+    ],
+    [
+     "homework",
+     "作業、功課",
+     "不可數：a lot of homework，不說 homeworks"
+    ],
+    [
+     "communication book",
+     "聯絡簿",
+     "美國沒有；最接近的是 planner 或 agenda"
+    ],
+    [
+     "quiz",
+     "小考",
+     "a pop quiz 隨堂抽考"
+    ],
+    [
+     "midterm",
+     "段考、期中考",
+     "三次段考：the first midterm、the second midterm、the final"
+    ],
+    [
+     "final exam",
+     "期末考",
+     "口語說 finals：I have finals next week."
+    ],
+    [
+     "test",
+     "考卷、考試",
+     "考卷不說 test paper，就說 the test；I got 90 on the test."
+    ],
+    [
+     "report card",
+     "成績單",
+     "美國成績用 A 到 F 的字母；grades 是成績"
+    ],
+    [
+     "semester",
+     "學期",
+     "fall semester 上學期、spring semester 下學期"
+    ],
+    [
+     "summer vacation",
+     "暑假",
+     "也說 summer break；寒假 winter break"
+    ],
+    [
+     "the first day of school",
+     "開學",
+     "「明天開學」是 School starts tomorrow."
+    ],
+    [
+     "cram school",
+     "補習班",
+     "美國沒有補習班；跟外國人說 after-school English class 比較清楚"
+    ]
+   ]
+  },
+  {
+   "title": "科目英文怎麼說、怎麼唸：subject、course、class 怎麼分，science 的 c 不發音",
+   "prose": [
+    "「科目」和「學科」的英文都是 <strong>subject</strong>：What's your favorite subject? 是美國小學生之間最常問的一句；課程是 course（大學和補習班用得多：an English course），一堂課是 class（We have science class now.），lesson 在美式英文多半指課本的「一課」（Lesson 5）或音樂、游泳這種個別上的課（a piano lesson），國小課表上的一節課不叫 lesson。",
+    "科目名稱有幾個台灣學生一致唸錯的地方：<strong>science 的 sc 只唸 [s]</strong>，c 是不發音的，結尾的 -nce 是 [ns]，後面不要再補一個母音；<strong>chemistry 的 ch 唸 [k]</strong>，不是「切」；<strong>geography、biology 的重音在第二音節</strong>，不是第一個；music 的 mu 是 [mju]「謬」，不是「木」。每個符號的嘴型見 <a href=\"/kk-phonetic-chart/\">KK 音標表</a>。"
+   ],
+   "heads": [
+    "英文",
+    "KK 音標",
+    "注意"
+   ],
+   "rows": [
+    [
+     "subject",
+     "[ˈsʌbdʒɪkt]",
+     "名詞重音在 SUB；動詞 subject [səbˈdʒɛkt] 重音在後，意思不同"
+    ],
+    [
+     "science",
+     "[ˈsaɪəns]",
+     "sc 只唸 [s]，c 不發音；結尾 [ns] 不要多加母音唸成「賽恩斯」"
+    ],
+    [
+     "math",
+     "[mæθ]",
+     "th 咬舌 [θ]；美式沒有 s"
+    ],
+    [
+     "mathematics",
+     "[ˌmæθəˈmætɪks]",
+     "五個音節，重音在第三音節 MAT"
+    ],
+    [
+     "geography",
+     "[dʒiˈɑɡrəfɪ]",
+     "重音在第二音節 OG；ph 唸 [f]"
+    ],
+    [
+     "chemistry",
+     "[ˈkɛmɪstrɪ]",
+     "ch 唸 [k]，不是「切」"
+    ],
+    [
+     "physics",
+     "[ˈfɪzɪks]",
+     "ph 唸 [f]；字尾有 s 但是單數：Physics is hard."
+    ],
+    [
+     "biology",
+     "[baɪˈɑlədʒɪ]",
+     "重音在第二音節 OL"
+    ],
+    [
+     "history",
+     "[ˈhɪstərɪ]",
+     "重音在第一音節；美國人說快時常縮成兩個音節 HIS-tree"
+    ],
+    [
+     "music",
+     "[ˈmjuzɪk]",
+     "mu 唸 [mju]「謬」，不是「木」"
+    ],
+    [
+     "social studies",
+     "[ˈsoʃəl ˈstʌdɪz]",
+     "social 的 c 唸 [ʃ]；studies 結尾是 [z]"
+    ],
+    [
+     "civics",
+     "[ˈsɪvɪks]",
+     "c 唸 [s]；和 physics 一樣是單數"
+    ],
+    [
+     "PE",
+     "[ˌpiˈi]",
+     "兩個字母分開唸，重音在 E"
+    ],
+    [
+     "schedule",
+     "[ˈskɛdʒʊl]",
+     "美式開頭是 [sk]；英式唸 [ˈʃɛdjul]"
+    ],
+    [
+     "period",
+     "[ˈpɪrɪəd]",
+     "三個音節，中間的 [rɪ] 不要吞掉"
+    ],
+    [
+     "homework",
+     "[ˈhomˌwɝk]",
+     "重音在 home；work 的 [ɝ] 要捲舌"
+    ]
+   ],
+   "after": [
+    "科目名稱還有兩個寫法上的規則：<strong>語言類科目大寫</strong>（English、Chinese、Spanish、Japanese），其他科目小寫（math、science、history），寫在課表上當標題時全部開頭大寫也可以；<strong>科目名前面不加 the</strong>：I like math.、I'm good at science.，不是 I like the math.。"
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "學校和課表的 40 句英文：最喜歡的科目、第幾節上什麼、哪一科好",
+   "prose": [
+    "外國人問孩子的第一句往往就是 What's your favorite subject?，第二句是 What do you have next?。下面 40 句分四組：問答最喜歡的科目、課表和第幾節、哪一科好哪一科難、作業和考試。第三欄標出誰說、怎麼接。「星期五有體育課」的星期怎麼說，見 <a href=\"/days-of-week-english/\">星期英文</a>。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "誰說／怎麼用"
+   ],
+   "groups": [
+    {
+     "name": "最喜歡的科目 Favorite subjects",
+     "rows": [
+      [
+       "What's your favorite subject?",
+       "你最喜歡的科目是什麼？",
+       "問句・同學、外國朋友最常問的第一句"
+      ],
+      [
+       "My favorite subject is science.",
+       "我最喜歡的科目是自然。",
+       "回答・完整句"
+      ],
+      [
+       "I like math best.",
+       "我最喜歡數學。",
+       "回答・短一點的說法"
+      ],
+      [
+       "I like PE because we get to play outside.",
+       "我喜歡體育課，因為可以到外面玩。",
+       "回答・加 because 說原因"
+      ],
+      [
+       "I don't really like social studies.",
+       "我不太喜歡社會。",
+       "回答・不喜歡的委婉說法"
+      ],
+      [
+       "What subject do you like least?",
+       "你最不喜歡哪一科？",
+       "問句・least 是「最不」"
+      ],
+      [
+       "Math is my least favorite.",
+       "數學是我最不喜歡的。",
+       "回答"
+      ],
+      [
+       "Do you like English? — Yes, I do. It's fun.",
+       "你喜歡英語嗎？——喜歡，很好玩。",
+       "問答・回 Yes, I do.，不要只說 Yes."
+      ],
+      [
+       "Which do you like better, art or music?",
+       "美術和音樂你比較喜歡哪一個？",
+       "問句・二選一用 which"
+      ],
+      [
+       "I like both!",
+       "兩個都喜歡！",
+       "回答・both 兩個都"
+      ]
+     ]
+    },
+    {
+     "name": "課表和第幾節 Schedules and periods",
+     "rows": [
+      [
+       "What do you have first period?",
+       "你第一節是什麼課？",
+       "問句・美國學生之間最常問"
+      ],
+      [
+       "I have math first period.",
+       "我第一節是數學。",
+       "回答・have＋科目＋第幾節"
+      ],
+      [
+       "What do you have next?",
+       "下一節是什麼？",
+       "問句・下課時間問"
+      ],
+      [
+       "I have science next.",
+       "下一節是自然。",
+       "回答"
+      ],
+      [
+       "We have PE on Fridays.",
+       "我們星期五有體育課。",
+       "每週固定・星期加 s"
+      ],
+      [
+       "We have English twice a week.",
+       "我們一星期上兩節英語。",
+       "twice a week 一週兩次"
+      ],
+      [
+       "How many periods do you have today?",
+       "你今天有幾節課？",
+       "問句"
+      ],
+      [
+       "We have seven periods today.",
+       "今天有七節課。",
+       "回答"
+      ],
+      [
+       "When is lunch?",
+       "午餐是幾點？",
+       "問句"
+      ],
+      [
+       "Lunch is at twelve.",
+       "十二點吃午餐。",
+       "回答・at＋時間"
+      ],
+      [
+       "What time does school start?",
+       "學校幾點開始上課？",
+       "問句"
+      ],
+      [
+       "School starts at eight and ends at four.",
+       "八點上課，四點放學。",
+       "回答"
+      ]
+     ]
+    },
+    {
+     "name": "哪一科好、哪一科難 Good at and bad at",
+     "rows": [
+      [
+       "I'm good at science.",
+       "我自然很好。",
+       "good at＋科目"
+      ],
+      [
+       "I'm not very good at math.",
+       "我數學不太好。",
+       "委婉說法・不說 I'm bad at"
+      ],
+      [
+       "She's really good at English.",
+       "她英語很棒。",
+       "說別人"
+      ],
+      [
+       "Math is hard for me.",
+       "數學對我來說很難。",
+       "hard for＋人"
+      ],
+      [
+       "History is easy.",
+       "歷史很簡單。",
+       "科目當主詞"
+      ],
+      [
+       "What's your best subject?",
+       "你哪一科最好？",
+       "問句・best subject 最強的科目"
+      ],
+      [
+       "I got 95 on my math test.",
+       "我數學考 95 分。",
+       "got＋分數＋on＋考試"
+      ],
+      [
+       "I need to study more for science.",
+       "我自然要多讀一點。",
+       "study for＋科目或考試"
+      ]
+     ]
+    },
+    {
+     "name": "作業、考試、老師 Homework, tests and teachers",
+     "rows": [
+      [
+       "Do we have homework today?",
+       "今天有作業嗎？",
+       "問句・homework 不加 s"
+      ],
+      [
+       "We have a math test tomorrow.",
+       "明天數學考試。",
+       "a＋科目＋test"
+      ],
+      [
+       "The midterm is next week.",
+       "下週段考。",
+       "段考說 midterm"
+      ],
+      [
+       "Who's your homeroom teacher?",
+       "你的導師是誰？",
+       "問句"
+      ],
+      [
+       "Mr. Lin is our homeroom teacher.",
+       "林老師是我們的導師。",
+       "回答・Mr.／Ms.＋姓"
+      ],
+      [
+       "Ms. Chen teaches us English.",
+       "陳老師教我們英語。",
+       "teach＋人＋科目"
+      ],
+      [
+       "Class is over.",
+       "下課了。",
+       "不說 off class"
+      ],
+      [
+       "The bell is ringing.",
+       "鐘聲響了。",
+       "上課、下課的鐘聲都是 bell"
+      ],
+      [
+       "It's time for lunch.",
+       "午餐時間到了。",
+       "It's time for＋名詞"
+      ],
+      [
+       "School's out!",
+       "放學了！",
+       "口語・孩子放學時喊的一句"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "教孩子用英文介紹自己的課表：8 句 My favorite subject is… 範本和 3 組問答",
+   "prose": [
+    "下面 8 句是給國小孩子的範本，每句只用最基本的句型，說的都是孩子自己真實的課表。把 fourth grade 換成自己的年級（說法見 <a href=\"/school-grades-english/\">年級英文對照表</a>），把 science 換成真正最喜歡的那一科，把 Ms. Lin 換成自己導師的姓，這段話就是孩子自己的了。自我介紹的其他部分（名字、年齡、家人）見 <a href=\"/english-self-introduction-kids/\">兒童英文自我介紹</a>。"
+   ],
+   "heads": [
+    "英文句子",
+    "中文意思"
+   ],
+   "groups": [
+    {
+     "name": "介紹範本 My school day…（8 句）",
+     "rows": [
+      [
+       "I'm in fourth grade.",
+       "我讀四年級。"
+      ],
+      [
+       "We have seven periods a day, and each period is forty minutes.",
+       "我們一天有七節課，每節四十分鐘。"
+      ],
+      [
+       "My favorite subject is science because we do experiments.",
+       "我最喜歡的科目是自然，因為可以做實驗。"
+      ],
+      [
+       "I'm good at math, but Chinese is hard for me.",
+       "我數學很好，但國語對我來說很難。"
+      ],
+      [
+       "We have PE on Tuesdays and Fridays, and we play dodgeball.",
+       "我們星期二和星期五有體育課，會打躲避球。"
+      ],
+      [
+       "After fourth period, we eat lunch and take a nap.",
+       "第四節下課後，我們吃午餐、睡午覺。"
+      ],
+      [
+       "My homeroom teacher is Ms. Lin. She teaches us Chinese and math.",
+       "我的導師是林老師，她教我們國語和數學。"
+      ],
+      [
+       "School ends at four, and then I go to my English class.",
+       "四點放學，然後我去上英語課。"
+      ]
+     ]
+    },
+    {
+     "name": "外國朋友可能會問 Questions a foreign friend might ask（3 組）",
+     "rows": [
+      [
+       "Q: What subjects do you have in Taiwan?",
+       "問：你們台灣有哪些科目？"
+      ],
+      [
+       "A: We have Chinese, math, science, social studies, English, PE, music, art, and health.",
+       "答：我們有國語、數學、自然、社會、英語、體育、音樂、美術和健康。"
+      ],
+      [
+       "Q: Do you have recess?",
+       "問：你們有下課遊戲時間嗎？"
+      ],
+      [
+       "A: We have a ten-minute break after every period, and we can play outside.",
+       "答：每節課後有十分鐘下課，可以到外面玩。"
+      ],
+      [
+       "Q: Do you take a nap at school?",
+       "問：你們在學校睡午覺嗎？"
+      ],
+      [
+       "A: Yes! After lunch, everyone puts their head down on the desk for half an hour.",
+       "答：對！吃完午餐，大家趴在桌上睡半小時。"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "練法：家長用中文問（你最喜歡哪一科？第一節是什麼課？），孩子用英文答一句，八句都接得上，再讓孩子從頭講一遍。孩子如果問「躲避球的英文是什麼」，就是 dodgeball；美國孩子也在 gym 打 dodgeball，外國朋友聽到會很有共鳴。程度好的孩子可以在第三句後面加一句細節：Last week we grew bean sprouts in a cup.（上週我們用杯子種豆芽。）"
+   ]
+  },
+  {
+   "title": "美國的學校一天是什麼樣子？Language Arts、Homeroom、Recess 是什麼，還有 14 句常見錯誤",
+   "prose": [
+    "美國國小的一天和台灣最大的不同是<strong>老師不換、學生也不換教室</strong>：一位 homeroom teacher 在同一間教室裡教完 Language Arts（閱讀、寫作、拼字）、math、science、social studies，孩子只有上 specials——art、music、PE（他們嘴上叫 gym）、library、computer——才走到別的教室，由專科老師上。早上沒有早自習，一進教室先聽校長的廣播 morning announcements；中午沒有午睡，lunch 在 cafeteria 吃完就去 recess，到操場跑一跑再回來上課；沒有掃地時間，教室是 custodian（校工）打掃的；多數學校八點多上課、三點左右放學。",
+    "到了國中、高中，換成<strong>學生每節換教室、老師不動</strong>：數學老師有自己的教室，鐘一響全校學生在走廊上移動，每個人的課表都不一樣，所以 What do you have next? 是走廊上最常聽到的一句。一天的開頭是 Homeroom，十幾分鐘的點名和廣播，沒有「導師」帶一整班三年的概念；課表上沒排課的那節叫 Study Hall，在教室或圖書館寫作業；Band、Choir、Orchestra 是真的有成績的正式課；高中數學不叫 Math 1、Math 2，而是按主題一年一科：Algebra 1、Geometry、Algebra 2、Pre-Calculus，所以美國高中生介紹自己修什麼課時會說 I'm taking Geometry this year.。",
+    "兩個台灣家長最常搞錯的名稱：<strong>Social Studies 不是「社會課」的直譯</strong>，它是美國國小到國中把歷史、地理、公民合成一科的名字，到高中才拆成 World History、U.S. History、Government；<strong>Language Arts（或 ELA）就是美國孩子的「國語課」</strong>——閱讀、寫作、拼字、文法全在裡面，台灣的英語課和它完全是兩回事：一個是母語課，一個是外語課。所以台灣孩子到美國學校，課表上的 English 不是他熟悉的「英語課」，而是美國同學的國語課。",
+    "最後是台灣學生說科目和課表時最常見的 14 個錯誤，大多是從中文逐字翻出來的。左欄是常見寫法，中間是建議寫法，右欄是原因。"
+   ],
+   "heads": [
+    "常見寫法",
+    "建議寫法",
+    "為什麼"
+   ],
+   "rows": [
+    [
+     "I go to math class on Monday.",
+     "I have math on Monday.",
+     "課表上有這堂課用 have；go to 是「走去那間教室」"
+    ],
+    [
+     "sport class／sports class",
+     "PE",
+     "體育課叫 PE，美國孩子口語說 gym；sports 是運動項目"
+    ],
+    [
+     "national language class",
+     "Chinese class",
+     "國語課跟外國人說 Chinese；national language 聽不懂"
+    ],
+    [
+     "nature class／natural class",
+     "science",
+     "nature 是大自然，natural 是形容詞，科目是 science"
+    ],
+    [
+     "social class",
+     "social studies",
+     "social class 是「社會階級」，意思完全不同"
+    ],
+    [
+     "the first class／the first lesson",
+     "first period",
+     "美式說第幾節用 period；first class 會被聽成頭等艙"
+    ],
+    [
+     "Off class!",
+     "Class is over.",
+     "「下課」沒有 off class 這種說法；School is off. 是停課、放假"
+    ],
+    [
+     "the second big exam",
+     "the second midterm",
+     "美國沒有段考這個字；三次段考是 first midterm、second midterm、final"
+    ],
+    [
+     "I'm good at the math.",
+     "I'm good at math.",
+     "科目名前面不加 the"
+    ],
+    [
+     "My math is very good.",
+     "I'm good at math.",
+     "中文「我數學很好」的主詞是科目，英文主詞是人"
+    ],
+    [
+     "my class teacher",
+     "my homeroom teacher",
+     "導師是 homeroom teacher；class teacher 是英式說法"
+    ],
+    [
+     "mathematic",
+     "math",
+     "字尾的 s 不能掉：美式 math、英式 maths，全名 mathematics"
+    ],
+    [
+     "What's your favorite lesson?",
+     "What's your favorite subject?",
+     "科目是 subject；lesson 是課本的一課或個別課"
+    ],
+    [
+     "the timetable",
+     "the schedule",
+     "美式說 schedule；timetable 在美國多半是火車、公車時刻表"
+    ]
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "科目英文常見問題",
+   "faq": [
+    [
+     "科目英文怎麼說？",
+     "科目和學科的英文都是 subject，唸 [ˈsʌbdʒɪkt]，重音在前面。「你最喜歡的科目是什麼」是 What's your favorite subject?；回答說 My favorite subject is math. 或直接說 Math.。課程是 course，一堂課是 class，課本的一課才是 lesson。"
+    ],
+    [
+     "數學英文是 math 還是 maths？",
+     "美式是 math，英式是 maths，兩個都對，但不要混用；正式全名是 mathematics，字尾一定有 s，沒有 mathematic 這個字。台灣課本和美語班教的是美式，說 I like math. 就好。"
+    ],
+    [
+     "自然和社會的英文怎麼說？理化呢？",
+     "自然是 science，不是 nature；社會是 social studies，不是 social class（那是社會階級）。國中的理化在美國沒有對應的科目，跟外國人說 physics and chemistry，或者直接說 science。"
+    ],
+    [
+     "課表英文怎麼說？第一節、第二節呢？",
+     "美式是 class schedule 或 schedule，唸 [ˈskɛdʒʊl]；timetable 是英式。一節課是 period，第一節 first period、第二節 second period；「第一節是什麼課」問 What do you have first period?，回答 I have math first period.。"
+    ],
+    [
+     "體育課英文是 PE 還是 gym？",
+     "兩個都對。PE 是 physical education 的縮寫，課表和正式場合都用它；gym 是美國孩子口語的說法：We have gym today.，gym 也是體育館。不要說 sport class 或 sports class。"
+    ],
+    [
+     "導師和科任老師英文怎麼說？",
+     "導師是 homeroom teacher，科任老師是 subject teacher，但美國人更常直接說 my math teacher、our music teacher。叫老師要用 Mr. 或 Ms. 加姓：Mr. Lin、Ms. Chen，不要叫 Teacher。校長是 principal。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "科目名稱會說了，能跟外國老師聊自己的一天嗎？",
+ "cta": "對照表能解決「自然的英文是什麼」，解決不了外國人問 What's your favorite subject? 之後那三秒鐘的空白。我們的小班課由美籍老師帶，每一堂一開始就讓孩子用英文說今天在學校上了什麼、哪一科最難、第幾節最期待，從 I have math first period. 到 I'm good at science.，一句一句練到不用想就說得出口。"
+}

@@ -1,0 +1,1214 @@
+{
+ "slug": "shopping-english",
+ "published": "2026-10-22",
+ "target": "購物英文",
+ "index": 0.5,
+ "h1": "購物英文怎麼說？店裡問價錢、試穿、打折、退貨的 200 句與網購單字一次學會",
+ "title": "購物英文 200 句：問價錢、試穿、打折、退貨與網購單字（附PDF）｜埃森美語",
+ "desc": "購物英文 200 句與單字：試穿、尺寸、打折、退貨、收據、商店種類與網購 80 字，問價錢與殺價 25 句、顧客店員孩子會說的 40 句，附 receipt 唸法、美國購物文化、A4 PDF。",
+ "hero": "帶孩子出國，第一次真的要自己開口說英文的地方，常常是一家店：要問多少錢、想試穿、店員一進門就問 Can I help you?，孩子站在那裡不知道怎麼答。這一頁把<strong>購物會用到的 200 句和單字</strong>整理好：先是店裡、商店種類、孩子會買的東西和網購的 80 個單字，再講「購物」「買東西」「逛街」英文怎麼說、receipt 和 clothes 怎麼唸、問價錢和殺價的 25 句、顧客、店員、孩子、爸媽各自會說的 40 句，接著是教孩子用英文說「星期天我和媽媽去買東西」的範本，最後是美國老師的文化筆記：美國標價不含稅、退貨不用理由、「我只是看看」怎麼說。",
+ "sections": [
+  {
+   "title": "購物英文單字對照表：店裡、商店種類、孩子會買的東西、網購（80 個）",
+   "prose": [
+    "「購物英文」最常被問的其實不是單字，而是在店裡的那幾個當下：店員問 Can I help you? 要怎麼答、想試穿要怎麼開口、結帳時收銀員說的那串話是什麼意思。下面先把單字分成四組：店裡會用到的、商店的種類、孩子最常買的東西、網購會看到的字；第三欄寫的是<strong>怎麼用、哪裡容易說錯</strong>。整頁都用美式說法，和英式不同的地方會註明。",
+    "數字和價錢怎麼唸（nineteen ninety-nine、a dozen）見 <a href=\"/english-numbers-guide/\">英文數字</a>；衣服的顏色在 <a href=\"/colors-english-vocabulary/\">顏色英文</a>；網購填收件地址的格式在 <a href=\"/english-address/\">英文地址怎麼寫</a>。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "用法／注意"
+   ],
+   "groups": [
+    {
+     "name": "店裡 In the store",
+     "rows": [
+      [
+       "cashier",
+       "收銀員",
+       "重音在後：ca-SHIER；收銀台叫 register"
+      ],
+      [
+       "sales clerk",
+       "店員",
+       "也說 salesperson；美國連鎖店把店員叫 sales associate"
+      ],
+      [
+       "customer",
+       "顧客",
+       "店員會說 Next customer, please."
+      ],
+      [
+       "counter",
+       "櫃台",
+       "結帳櫃台 checkout counter；退換貨去 customer service counter"
+      ],
+      [
+       "register",
+       "收銀機、收銀台",
+       "全名 cash register；Take it to the register. 拿去結帳"
+      ],
+      [
+       "check out",
+       "結帳",
+       "動詞分開寫：I'm ready to check out.；名詞 checkout 連在一起"
+      ],
+      [
+       "try on",
+       "試穿",
+       "Can I try this on?；代名詞放中間：try it on"
+      ],
+      [
+       "fitting room",
+       "試衣間",
+       "也說 dressing room；問 Where's the fitting room?"
+      ],
+      [
+       "size",
+       "尺寸",
+       "What size are you? 美國衣服尺寸用 S、M、L 或數字"
+      ],
+      [
+       "small / medium / large",
+       "小／中／大",
+       "唸整個字 a medium，不只唸字母 M；再大是 extra large（XL）"
+      ],
+      [
+       "fit",
+       "合身",
+       "衣服當主詞：It fits. / It doesn't fit."
+      ],
+      [
+       "too tight",
+       "太緊",
+       "These jeans are too tight."
+      ],
+      [
+       "too loose",
+       "太鬆",
+       "loose 唸 [lus]，結尾是無聲的 s，不是 lose（弄丟）"
+      ],
+      [
+       "too big / too small",
+       "太大／太小",
+       "尺寸不對最常用這兩句"
+      ],
+      [
+       "color",
+       "顏色",
+       "美式拼法沒有 u；Do you have this in another color?"
+      ],
+      [
+       "style",
+       "款式",
+       "I like this style.；也可以說 design"
+      ],
+      [
+       "brand",
+       "品牌",
+       "What brand is it?；名牌的 brand-name"
+      ],
+      [
+       "price",
+       "價錢",
+       "標價牌 price tag"
+      ],
+      [
+       "on sale",
+       "特價中、打折中",
+       "It's on sale.；for sale 是「出售中」，意思不同"
+      ],
+      [
+       "discount",
+       "折扣",
+       "八折說 twenty percent off，講的是減掉的部分"
+      ],
+      [
+       "deal",
+       "划算的交易",
+       "美國店裡的特價招牌常寫 deal；It's a good deal."
+      ],
+      [
+       "buy one, get one free",
+       "買一送一",
+       "標籤常縮寫成 BOGO"
+      ],
+      [
+       "receipt",
+       "收據、發票",
+       "p 不發音；美國沒有統一發票，店家給的收據就叫 receipt"
+      ],
+      [
+       "return",
+       "退貨",
+       "I'd like to return this.；退貨規定 return policy"
+      ],
+      [
+       "exchange",
+       "換貨",
+       "Can I exchange this for a medium?"
+      ],
+      [
+       "refund",
+       "退款",
+       "錢退回來；全額退款 a full refund"
+      ],
+      [
+       "warranty",
+       "保固",
+       "It comes with a one-year warranty."
+      ],
+      [
+       "cash",
+       "現金",
+       "pay in cash 或 pay cash"
+      ],
+      [
+       "credit card / debit card",
+       "信用卡／金融卡",
+       "刷卡說 pay by card 或 pay with a card，不說 brush the card"
+      ],
+      [
+       "change",
+       "零錢；找的錢",
+       "Keep the change.（不用找了）；Here's your change."
+      ],
+      [
+       "bag",
+       "購物袋",
+       "收銀員會問 Do you need a bag?；塑膠袋 plastic bag，紙袋 paper bag"
+      ],
+      [
+       "shopping cart",
+       "購物推車",
+       "美國也只說 cart；提籃是 basket"
+      ],
+      [
+       "aisle",
+       "走道",
+       "s 不發音；超市找東西問 Which aisle is the milk in?"
+      ],
+      [
+       "line",
+       "排隊的隊伍",
+       "美國說 wait in line、get in line；英國說 queue"
+      ]
+     ]
+    },
+    {
+     "name": "商店種類 Kinds of stores",
+     "rows": [
+      [
+       "store",
+       "商店",
+       "美國多說 store；shop 在美國多半當動詞：I shop at Costco."
+      ],
+      [
+       "department store",
+       "百貨公司",
+       "美國人也常直接講店名：Macy's、Target"
+      ],
+      [
+       "supermarket / grocery store",
+       "超市",
+       "美國日常多說 grocery store；去超市買菜 go grocery shopping"
+      ],
+      [
+       "convenience store",
+       "便利商店",
+       "美國的便利商店多半在加油站旁邊，不能取貨繳費，跟台灣的超商很不一樣"
+      ],
+      [
+       "drugstore / pharmacy",
+       "藥妝店／藥局",
+       "美國的 drugstore（CVS、Walgreens）也賣零食、文具和日用品"
+      ],
+      [
+       "bookstore",
+       "書店",
+       "一個字"
+      ],
+      [
+       "stationery store",
+       "文具店",
+       "stationery 結尾 -ery；stationary 是「靜止的」"
+      ],
+      [
+       "toy store",
+       "玩具店",
+       ""
+      ],
+      [
+       "shoe store",
+       "鞋店",
+       "shoe 用單數"
+      ],
+      [
+       "clothing store",
+       "服飾店",
+       "不說 clothes store"
+      ],
+      [
+       "mall / shopping mall",
+       "購物中心",
+       "美國青少年週末常在 mall 裡晃"
+      ],
+      [
+       "outlet / outlet mall",
+       "暢貨中心",
+       "賣過季、打折的品牌貨"
+      ],
+      [
+       "market",
+       "市場",
+       "傳統市場 traditional market；對美國人說 wet market 不一定懂"
+      ],
+      [
+       "night market",
+       "夜市",
+       "直譯就行，外國人都知道台灣的夜市"
+      ],
+      [
+       "flea market",
+       "跳蚤市場",
+       "賣二手貨；也說 secondhand"
+      ],
+      [
+       "online store",
+       "網路商店",
+       "網購 online shopping；網購的東西說 I ordered it online."
+      ]
+     ]
+    },
+    {
+     "name": "孩子會買的東西 Things kids buy",
+     "rows": [
+      [
+       "T-shirt",
+       "T 恤",
+       "T 大寫，中間有連字號"
+      ],
+      [
+       "hoodie",
+       "帽 T、連帽上衣",
+       "美國小孩衣櫃裡最多的一件"
+      ],
+      [
+       "jeans",
+       "牛仔褲",
+       "永遠複數：a pair of jeans"
+      ],
+      [
+       "sneakers",
+       "運動鞋、球鞋",
+       "美國說法；英國說 trainers；也說 running shoes"
+      ],
+      [
+       "socks",
+       "襪子",
+       "a pair of socks；一隻是 a sock"
+      ],
+      [
+       "backpack",
+       "背包、書包",
+       "美國小孩的書包就是 backpack，不說 schoolbag"
+      ],
+      [
+       "pencil case",
+       "鉛筆盒",
+       "也說 pencil pouch（布的）"
+      ],
+      [
+       "notebook",
+       "筆記本",
+       "也指筆記型電腦，看上下文"
+      ],
+      [
+       "stickers",
+       "貼紙",
+       "a sheet of stickers 一張貼紙"
+      ],
+      [
+       "toy",
+       "玩具",
+       "玩具店 toy store；填充玩偶 stuffed animal"
+      ],
+      [
+       "board game",
+       "桌遊",
+       ""
+      ],
+      [
+       "snack",
+       "零食",
+       "snacks 複數；零食區 the snack aisle"
+      ],
+      [
+       "candy",
+       "糖果",
+       "美式說法，不可數：some candy、a piece of candy；英國說 sweets"
+      ],
+      [
+       "water bottle",
+       "水壺",
+       ""
+      ]
+     ]
+    },
+    {
+     "name": "網購 Online shopping",
+     "rows": [
+      [
+       "add to cart",
+       "加入購物車",
+       "按鈕上的字；也寫 Add to bag"
+      ],
+      [
+       "checkout",
+       "結帳（頁面）",
+       "網頁上的按鈕：Proceed to checkout"
+      ],
+      [
+       "place an order",
+       "下單",
+       "訂單 order；訂單編號 order number"
+      ],
+      [
+       "shipping",
+       "運送；運費",
+       "運費 shipping fee 或 shipping cost"
+      ],
+      [
+       "free shipping",
+       "免運",
+       "Free shipping on orders over fifty dollars."
+      ],
+      [
+       "delivery",
+       "配送、送達",
+       "送達日期 delivery date；宅配 home delivery"
+      ],
+      [
+       "tracking number",
+       "貨物追蹤編號",
+       "查包裹 track my order"
+      ],
+      [
+       "pick up at a convenience store",
+       "超商取貨",
+       "美國沒有超商取貨；最接近的是 in-store pickup（到店取貨）"
+      ],
+      [
+       "in stock",
+       "有貨",
+       "Only two left in stock!"
+      ],
+      [
+       "out of stock",
+       "缺貨、售完",
+       "也說 sold out"
+      ],
+      [
+       "request a refund",
+       "申請退款",
+       "退款 refund；退貨 return"
+      ],
+      [
+       "review",
+       "評價",
+       "留評價 leave a review；五顆星 five stars"
+      ],
+      [
+       "promo code",
+       "折扣碼",
+       "也說 coupon code；輸入折扣碼 enter a promo code"
+      ],
+      [
+       "cash on delivery",
+       "貨到付款",
+       "縮寫 COD；美國網購很少見"
+      ],
+      [
+       "size chart",
+       "尺寸表",
+       "網購衣服先看 size chart"
+      ],
+      [
+       "wish list",
+       "願望清單",
+       "先收藏、以後再買"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "購物英文怎麼說：shopping、go shopping，「買東西」「逛街」英文是什麼",
+   "prose": [
+    "中文的「購物」「買東西」「逛街」在英文裡幾乎都是同一個字：<strong>shopping</strong>。整個活動叫 shopping，「去買東西、去逛街」說 go shopping，真的掏錢買一樣東西才用 buy。所以「我昨天去買東西」是 I went shopping yesterday.，不是 I went to buy things.；「逛街」沒打算買、只是看看，就是 window shopping（看櫥窗）或 just looking around。",
+    "美式和英式在購物的字上差得特別多：美國說 store，英國說 shop（美國人也用 shop，但多半當動詞：I shop at Costco.）；排隊美國是 wait in line，英國是 queue；購物推車美國是 cart，英國是 trolley；運動鞋美國是 sneakers，英國是 trainers。這一頁全部用美式說法。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "用法"
+   ],
+   "rows": [
+    [
+     "shopping",
+     "購物、買東西（名詞）",
+     "整個活動：I love shopping. / We did some shopping."
+    ],
+    [
+     "go shopping",
+     "去買東西、去逛街",
+     "最常用：Let's go shopping this weekend.；go 後面直接接 shopping，沒有 to"
+    ],
+    [
+     "go grocery shopping",
+     "去超市買菜、買日用品",
+     "美國人把買菜和逛街分開講"
+    ],
+    [
+     "shop",
+     "買東西（動詞）",
+     "shop at ＋ 店名：We shop at Costco.；shop for ＋ 東西：shop for a gift"
+    ],
+    [
+     "shop around",
+     "貨比三家",
+     "Shop around before you buy."
+    ],
+    [
+     "buy",
+     "買（一樣東西）",
+     "後面一定接東西：I bought a T-shirt.；過去式 bought"
+    ],
+    [
+     "purchase",
+     "購買（正式）",
+     "收據和網頁上的用字：Thank you for your purchase.；口語說 buy"
+    ],
+    [
+     "window shopping",
+     "逛街不買、看櫥窗",
+     "We're just window shopping."
+    ],
+    [
+     "browse",
+     "隨便看看",
+     "I'm just browsing.；店員問要不要幫忙時這樣答"
+    ],
+    [
+     "look around",
+     "四處看看",
+     "Can I look around first?"
+    ],
+    [
+     "hang out at the mall",
+     "在購物中心晃、跟朋友逛街",
+     "美國青少年的「逛街」多半是這句，重點是跟朋友混在一起"
+    ],
+    [
+     "run errands",
+     "出門辦事、採買",
+     "美國人週末常說 I have to run some errands.；包含去銀行、郵局、超市"
+    ],
+    [
+     "pick up",
+     "順便買",
+     "Can you pick up some milk on your way home?"
+    ],
+    [
+     "shopping spree",
+     "大採購、血拼",
+     "一口氣買很多；台灣的「血拼」就是 shopping 的音譯"
+    ]
+   ]
+  },
+  {
+   "title": "購物英文怎麼唸：receipt 的 p 不發音、clothes 只有一個音節",
+   "prose": [
+    "購物的單字有好幾個是「看字唸」一定會錯的：receipt 中間的 p 不發音；clothes 只有一個音節，唸起來和 close（關上）一樣；cashier 重音在後面；purchase 的第二個音節不是 chase。下面 20 個字附 KK 音標，每個符號怎麼唸可以對照 <a href=\"/kk-phonetic-chart/\">KK 音標表</a>。"
+   ],
+   "heads": [
+    "英文",
+    "KK 音標",
+    "中文／注意"
+   ],
+   "rows": [
+    [
+     "receipt",
+     "[rɪˈsit]",
+     "收據；p 不發音，和 seat 押韻"
+    ],
+    [
+     "recipe",
+     "[ˈrɛsəpɪ]",
+     "食譜；和 receipt 長得像，但三個音節、意思不同"
+    ],
+    [
+     "clothes",
+     "[kloz]",
+     "衣服；只有一個音節，和動詞 close 同音；字典也列 [kloðz]，但日常多數美國人唸 [kloz]"
+    ],
+    [
+     "purchase",
+     "[ˈpɝtʃəs]",
+     "購買；重音在前，第二個音節輕輕帶過，不是 chase"
+    ],
+    [
+     "cashier",
+     "[kæˈʃɪr]",
+     "收銀員；重音在後面的 -shier"
+    ],
+    [
+     "discount",
+     "[ˈdɪskaʊnt]",
+     "折扣；重音在前"
+    ],
+    [
+     "coupon",
+     "[ˈkupɑn]",
+     "折價券；也有美國人唸 [ˈkjupɑn]，兩種都對"
+    ],
+    [
+     "warranty",
+     "[ˈwɔrəntɪ]",
+     "保固；重音在第一個音節，不是 war-RAN-ty"
+    ],
+    [
+     "aisle",
+     "[aɪl]",
+     "走道；s 不發音，和 I'll 同音"
+    ],
+    [
+     "sale",
+     "[sel]",
+     "特賣；母音是 [e]，和 sell [sɛl]（賣）不同"
+    ],
+    [
+     "cart",
+     "[kɑrt]",
+     "購物車；結尾是 t；card [kɑrd] 是卡片"
+    ],
+    [
+     "price",
+     "[praɪs]",
+     "價錢；結尾是無聲的 [s]；prize [praɪz] 是獎品"
+    ],
+    [
+     "change",
+     "[tʃendʒ]",
+     "零錢、找錢；結尾的 [dʒ] 要發出來"
+    ],
+    [
+     "mall",
+     "[mɔl]",
+     "購物中心；結尾的 l 舌尖頂住上排牙齒後面，不要唸成「摸」"
+    ],
+    [
+     "size",
+     "[saɪz]",
+     "尺寸；結尾是有聲的 [z]"
+    ],
+    [
+     "loose",
+     "[lus]",
+     "鬆；結尾是無聲的 [s]；lose [luz] 是弄丟"
+    ],
+    [
+     "cheap",
+     "[tʃip]",
+     "便宜；長母音 [i]；chip [tʃɪp] 是薯片"
+    ],
+    [
+     "expensive",
+     "[ɪkˈspɛnsɪv]",
+     "貴；重音在中間的 -pen-"
+    ],
+    [
+     "refund",
+     "[ˈrifʌnd]",
+     "退款；名詞重音在前"
+    ],
+    [
+     "outlet",
+     "[ˈaʊtˌlɛt]",
+     "暢貨中心；也是「插座」，重音在前"
+    ]
+   ],
+   "after": [
+    "練法：把長得像、唸起來不一樣的字兩個兩個一起唸——sale 和 sell、cart 和 card、price 和 prize、cheap 和 chip，唸的時候手摸著喉嚨，感覺 [z]、[d]、[dʒ] 這些有聲音結尾的震動。更多台灣學生常唸錯的字在 <a href=\"/english-pronunciation/\">英文發音</a>專區。"
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "問價錢、嫌貴、殺價、說數量：25 句",
+   "prose": [
+    "在店裡開口的第一句多半是問價錢。最基本的是 <strong>How much is this?</strong>——不要說 How much money?，How much 本身就是「多少錢」。複數的東西（鞋子、襪子、這些）用 How much are these?；結完帳想知道總共多少，問 What's the total?。",
+    "殺價要看地方：美國一般的店、超市、連鎖店是不殺價的，價錢就是標籤上的數字；可以問的是「有沒有打折」「有沒有學生價」。跳蚤市場、二手貨、買車才會真的討價還價。台灣的夜市和市場可以問 Can I get a discount?，外國朋友來台灣逛夜市時，這句可以教他。",
+    "英文的數量詞比中文少很多，記幾個就夠用：鞋子、襪子、褲子、眼鏡都是 a pair of；包裝的東西用 a pack of、a box of、a bag of、a bottle of；十二個是 a dozen。可數不可數和複數的規則見 <a href=\"/english-plural-nouns/\">英文複數</a>。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "用法／注意"
+   ],
+   "groups": [
+    {
+     "name": "問價錢 Asking the price",
+     "rows": [
+      [
+       "How much is this?",
+       "這個多少錢？",
+       "最基本的一句，指著東西說"
+      ],
+      [
+       "How much are these?",
+       "這些多少錢？",
+       "複數東西用 are：鞋子、襪子"
+      ],
+      [
+       "How much is it altogether?",
+       "總共多少錢？",
+       "也說 What's the total?"
+      ],
+      [
+       "Is this on sale?",
+       "這個有打折嗎？",
+       "美國店裡常有，問了才知道"
+      ],
+      [
+       "Is this the sale price?",
+       "這是特價後的價錢嗎？",
+       "標籤上有兩個價錢時問"
+      ],
+      [
+       "Does that include tax?",
+       "這有含稅嗎？",
+       "美國標價不含稅，結帳才加"
+      ],
+      [
+       "Is there a student discount?",
+       "有學生折扣嗎？",
+       "美國很多店有，要出示學生證"
+      ]
+     ]
+    },
+    {
+     "name": "嫌貴與殺價 Too expensive, bargaining",
+     "rows": [
+      [
+       "That's too expensive.",
+       "太貴了。",
+       "對朋友說可以；對店員說有點直接"
+      ],
+      [
+       "That's a bit pricey.",
+       "有點貴。",
+       "pricey 是口語的「貴」，比 expensive 委婉"
+      ],
+      [
+       "It's out of my budget.",
+       "超出我的預算了。",
+       "客氣地拒絕"
+      ],
+      [
+       "Can I get a discount?",
+       "可以算便宜一點嗎？",
+       "市場、夜市可以問；美國一般的店不殺價"
+      ],
+      [
+       "Can you do any better on the price?",
+       "價錢可以再低一點嗎？",
+       "美國買車、買二手貨時會說"
+      ],
+      [
+       "I'll think about it.",
+       "我再考慮一下。",
+       "不想買的客氣說法"
+      ],
+      [
+       "I'll take it.",
+       "我買了。",
+       "決定要買時說"
+      ],
+      [
+       "That's a good deal.",
+       "很划算。",
+       "deal ＝ 划算的交易；It's a bargain! 也是"
+      ]
+     ]
+    },
+    {
+     "name": "數量詞 Counting words",
+     "rows": [
+      [
+       "a pair of shoes",
+       "一雙鞋",
+       "鞋子、襪子、褲子、眼鏡都用 a pair of"
+      ],
+      [
+       "a pair of jeans",
+       "一條牛仔褲",
+       "jeans 永遠是複數，一條也是 jeans"
+      ],
+      [
+       "a pack of gum",
+       "一包口香糖",
+       "pack 是小包裝：a pack of cards 一副牌"
+      ],
+      [
+       "a box of cookies",
+       "一盒餅乾",
+       ""
+      ],
+      [
+       "a bag of chips",
+       "一包洋芋片",
+       ""
+      ],
+      [
+       "a bottle of water",
+       "一瓶水",
+       ""
+      ],
+      [
+       "a carton of milk",
+       "一盒牛奶",
+       "紙盒裝的飲料用 carton"
+      ],
+      [
+       "a dozen eggs",
+       "一打蛋（12 顆）",
+       "dozen 後面直接接名詞，不加 of"
+      ],
+      [
+       "a piece of candy",
+       "一顆糖",
+       "candy 不可數；很多糖是 some candy"
+      ],
+      [
+       "two of these, please",
+       "這個我要兩個",
+       "指著東西說；三個就 three of these"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "購物英文會話 40 句：顧客、店員、孩子、爸媽各自會說的話",
+   "prose": [
+    "下面 40 句分四組：顧客會說的（開頭用 Can I…、I'd like to…，比 I want… 有禮貌）、店員會對你說的（聽得懂才答得出來）、孩子會說的（在美國的店裡，小孩說 get 比 buy 多：Can I get this?），和爸媽會對孩子說的。第三欄是誰說、什麼時候說。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "誰說／情境"
+   ],
+   "groups": [
+    {
+     "name": "顧客會說 What the shopper says",
+     "rows": [
+      [
+       "Excuse me, do you work here?",
+       "不好意思，你是這裡的店員嗎？",
+       "美國店員不一定穿制服，先問一句"
+      ],
+      [
+       "I'm just looking, thanks.",
+       "我只是看看，謝謝。",
+       "店員問 Can I help you? 的標準回答"
+      ],
+      [
+       "I'm looking for a backpack for school.",
+       "我在找上學用的背包。",
+       "look for ＝ 找；接著店員會帶你去"
+      ],
+      [
+       "Do you have this in a smaller size?",
+       "這個有小一號的嗎？",
+       "也說 in a medium、in a large"
+      ],
+      [
+       "Do you have this in blue?",
+       "這個有藍色的嗎？",
+       "in ＋ 顏色"
+      ],
+      [
+       "Can I try this on?",
+       "我可以試穿嗎？",
+       "試穿一定要有 on"
+      ],
+      [
+       "Where's the fitting room?",
+       "試衣間在哪裡？",
+       ""
+      ],
+      [
+       "It doesn't fit. Do you have a bigger one?",
+       "不合身，有大一點的嗎？",
+       "衣服當主詞用 fit"
+      ],
+      [
+       "Where can I find the pencil cases?",
+       "鉛筆盒在哪一區？",
+       "大賣場找東西；或問 Which aisle…?"
+      ],
+      [
+       "I'll take this one.",
+       "我要這個。",
+       "決定買了"
+      ],
+      [
+       "Can I get a receipt, please?",
+       "可以給我收據嗎？",
+       "美國店家一定會給，但有時會問要不要"
+      ],
+      [
+       "I'd like to return this. I have the receipt.",
+       "我想退貨，我有收據。",
+       "退貨先亮收據"
+      ],
+      [
+       "Can I exchange this for a medium?",
+       "可以換成 M 號嗎？",
+       "換貨用 exchange … for …"
+      ]
+     ]
+    },
+    {
+     "name": "店員會說 What the clerk says",
+     "rows": [
+      [
+       "Hi there! Can I help you find anything?",
+       "嗨！需要幫你找什麼嗎？",
+       "美國店員一進門就會問"
+      ],
+      [
+       "Let me know if you need anything.",
+       "需要什麼再跟我說。",
+       "聽到這句就可以自己慢慢看"
+      ],
+      [
+       "What size do you need?",
+       "你需要什麼尺寸？",
+       ""
+      ],
+      [
+       "The fitting rooms are in the back.",
+       "試衣間在後面。",
+       "in the back ＝ 店的後方"
+      ],
+      [
+       "How did those work out for you?",
+       "那幾件試得還好嗎？",
+       "試穿完店員常這樣問"
+      ],
+      [
+       "That's the last one we have.",
+       "那是最後一件了。",
+       ""
+      ],
+      [
+       "We're out of that size, but I can check in the back.",
+       "那個尺寸沒貨了，我去後面看看。",
+       "out of ＝ 沒貨"
+      ],
+      [
+       "Did you find everything okay?",
+       "東西都找到了嗎？",
+       "收銀員的第一句話，答 Yes, thanks."
+      ],
+      [
+       "Cash or card?",
+       "付現還是刷卡？",
+       ""
+      ],
+      [
+       "Your total is twenty-three fifty.",
+       "總共二十三塊五。",
+       "美國人唸價錢不說 dollars 和 cents"
+      ],
+      [
+       "Have a good one!",
+       "祝你愉快！",
+       "結帳後的道別，＝ Have a good day"
+      ]
+     ]
+    },
+    {
+     "name": "孩子會說 What the kid says",
+     "rows": [
+      [
+       "Can I buy this?",
+       "我可以買這個嗎？",
+       "孩子・最直接的一句"
+      ],
+      [
+       "Mom, can I get this?",
+       "媽媽，我可以買這個嗎？",
+       "美國小孩說 get 比 buy 多"
+      ],
+      [
+       "Please? Just this one?",
+       "拜託，就這一個？",
+       "孩子・撒嬌"
+      ],
+      [
+       "I only have fifty dollars.",
+       "我只有五十塊。",
+       "孩子・算自己的零用錢"
+      ],
+      [
+       "Is this enough?",
+       "這樣夠嗎？",
+       "孩子・把錢攤在手上問"
+      ],
+      [
+       "Can I use my own money?",
+       "我可以用我自己的錢嗎？",
+       "孩子"
+      ],
+      [
+       "I'm saving up for a new game.",
+       "我在存錢買新遊戲。",
+       "save up for ＝ 為了…存錢"
+      ],
+      [
+       "Can we go to the toy store after this?",
+       "等一下可以去玩具店嗎？",
+       "孩子"
+      ],
+      [
+       "This one's cheaper.",
+       "這個便宜一點。",
+       "孩子・比價"
+      ],
+      [
+       "Can I push the cart?",
+       "我可以推推車嗎？",
+       "孩子・超市裡最愛問的"
+      ]
+     ]
+    },
+    {
+     "name": "爸媽會說 What the parent says",
+     "rows": [
+      [
+       "You can pick one thing.",
+       "你可以選一樣。",
+       "爸媽・進店前先講好"
+      ],
+      [
+       "Not today. Maybe next time.",
+       "今天不行，下次再說。",
+       "爸媽・拒絕但留餘地"
+      ],
+      [
+       "Put it back, please.",
+       "請放回去。",
+       "爸媽"
+      ],
+      [
+       "Let's check the price first.",
+       "我們先看價錢。",
+       "爸媽"
+      ],
+      [
+       "Do you need it, or do you just want it?",
+       "你是需要它，還是只是想要？",
+       "爸媽・美國家長最愛問的一句：need 和 want 的差別"
+      ],
+      [
+       "Say thank you to the cashier.",
+       "跟收銀員說謝謝。",
+       "爸媽・結帳時"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "兩句一定要會答：店員一進門就問 Can I help you find anything?，答 I'm just looking, thanks. 或 I'm good, thanks.；結帳時收銀員問 Did you find everything okay?，答 Yes, thanks. 就好，不用真的報告找到了什麼。離開時說 Thanks, have a good one!，更多謝謝的說法在 <a href=\"/thank-you-english/\">謝謝英文</a>。"
+   ]
+  },
+  {
+   "title": "教孩子用英文說「星期天我和媽媽去買東西」",
+   "prose": [
+    "這是給國小孩子的範本（大約劍橋 Starters 到 Movers 程度），講的是一次真實的週末採買，8 句都是過去式，重點放在 went、bought、tried on、fit 這幾個動詞。練法：家長先用中文問（你們去哪裡？買了什麼？試了幾雙？），孩子用英文一句一句答，八句都答得出來之後再連起來說一遍，就是一篇可以在學校 show and tell 用的小故事。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "練習重點"
+   ],
+   "rows": [
+    [
+     "On Sunday my mom and I went shopping.",
+     "星期天我和媽媽去買東西。",
+     "go 的過去式 went；my mom and I，I 放後面"
+    ],
+    [
+     "We went to the mall in Banqiao.",
+     "我們去板橋的購物中心。",
+     "地點用 in ＋ 地名"
+    ],
+    [
+     "I needed new sneakers for PE class.",
+     "我體育課需要新的運動鞋。",
+     "sneakers 是複數；體育課 PE class"
+    ],
+    [
+     "I tried on three pairs.",
+     "我試穿了三雙。",
+     "try on 的過去式 tried on；鞋子用 pairs"
+    ],
+    [
+     "The blue ones fit best, so I picked those.",
+     "藍色那雙最合腳，所以我選了那雙。",
+     "ones 代替 sneakers；fit 的過去式也是 fit"
+    ],
+    [
+     "They were on sale, so Mom said yes.",
+     "它們有打折，所以媽媽說好。",
+     "on sale ＝ 打折中；Mom 當名字用時大寫"
+    ],
+    [
+     "I also got a pencil case with my own money.",
+     "我還用自己的錢買了一個鉛筆盒。",
+     "got ＝ bought，美國小孩的說法"
+    ],
+    [
+     "The cashier gave me the receipt, and I said thank you.",
+     "收銀員給我收據，我說了謝謝。",
+     "receipt 的 p 不發音"
+    ]
+   ],
+   "after": [
+    "外國朋友或外師聽完，常會接著問這三個問題，答案也先準備好：",
+    "<strong>Q: What did you buy?</strong>（你買了什麼？）A: I bought a pair of blue sneakers and a pencil case. The sneakers were on sale.（我買了一雙藍色運動鞋和一個鉛筆盒。運動鞋有打折。）",
+    "<strong>Q: Where do you like to shop?</strong>（你喜歡去哪裡買東西？）A: I like the stationery store near my school. It has cute stickers and pencil cases, and nothing is very expensive.（我喜歡學校附近的文具店。那裡有可愛的貼紙和鉛筆盒，而且東西都不太貴。）",
+    "<strong>Q: Do you go shopping with your parents?</strong>（你會跟爸媽去買東西嗎？）A: Yes. I go grocery shopping with my dad on Saturdays. I push the cart, and he lets me pick one snack.（會。我星期六跟爸爸去超市買菜。我推推車，他讓我選一樣零食。）"
+   ]
+  },
+  {
+   "title": "美國老師的文化筆記：標價不含稅、退貨不用理由、「我只是看看」怎麼說",
+   "prose": [
+    "在美國買東西，第一個讓台灣人嚇一跳的是<strong>標價不含稅</strong>。架上寫十塊的東西，到收銀台會變成十塊多，因為銷售稅（sales tax）是結帳時才加上去的，稅率每個州、甚至每個城市都不一樣，少數幾個州（例如 Oregon）完全沒有。所以 Does that include tax? 在美國是一個真的會問的問題；台灣的標價已經含稅，架上多少就付多少。帶孩子去美國，先告訴他：手上剛好十塊，買不了標價十塊的玩具。",
+    "第二個差別是<strong>退貨</strong>。美國大部分的連鎖店只要有收據、在期限內（通常是幾個星期），不喜歡就可以退，不用說理由；店員頂多問一句 Was there anything wrong with it?，答 It just didn't fit. 或 I changed my mind. 就夠了。退回來的錢可能是原路退款（refund），也可能是店內抵用（store credit）。送禮的人常會多拿一張 gift receipt（不印價錢的收據）放在禮物裡，收禮的人尺寸不合可以自己去換。台灣的實體店多半是可換不可退，所以「退貨」這個字在美國用得多得多。",
+    "第三個是<strong>店員會一直跟你說話</strong>。一進門就有人問 Hi, how are you? Can I help you find anything?，這不是要推銷，只是打招呼，答 I'm just looking, thanks. 就好；結帳時收銀員問 Did you find everything okay?，答 Yes, thanks.；離開時對方說 Have a good one!，回一句 You too! 另外，美國超市的收銀員或旁邊的裝袋員（bagger）會幫你把東西裝袋，很多地方現在要自備購物袋或付袋子錢；自助結帳（self-checkout）也很普遍。",
+    "價錢怎麼唸也和課本不一樣：$19.99 美國人唸 nineteen ninety-nine，dollars 和 cents 都不說；口語還常用 buck 代替 dollar：five bucks ＝ 五塊。數字和價錢的唸法見 <a href=\"/english-numbers-guide/\">英文數字</a>。",
+    "下面是台灣學生講購物時最常出現的台式英文，左邊是常聽到的說法，中間是美國人真正會說的："
+   ],
+   "heads": [
+    "台式英文（常見）",
+    "美國人會說",
+    "為什麼"
+   ],
+   "rows": [
+    [
+     "How much money?",
+     "How much is it?",
+     "How much 本身就是「多少錢」，後面不加 money"
+    ],
+    [
+     "It's eighty percent. / It's eight fold.",
+     "It's twenty percent off.",
+     "中文的「八折」說的是剩下的部分，英文說的是減掉的部分；半價是 half off"
+    ],
+    [
+     "It's very cheap! (praising it)",
+     "It's a good deal. / It's inexpensive.",
+     "cheap 常帶「便宜沒好貨」的味道；誇東西划算說 a good deal，說價格合理用 inexpensive 或 affordable"
+    ],
+    [
+     "I want this one.",
+     "I'll take this one. / Can I get this one?",
+     "對店員說 I want 太直接，像在下命令"
+    ],
+    [
+     "Give me a discount.",
+     "Can I get a discount?",
+     "加 Can I 才是請求，不是要求"
+    ],
+    [
+     "I go to shopping.",
+     "I go shopping.",
+     "go ＋ V-ing，中間沒有 to"
+    ],
+    [
+     "I bought a cloth.",
+     "I bought some clothes.",
+     "clothes 永遠是複數；cloth 是「布」"
+    ],
+    [
+     "Can you open the invoice?",
+     "Can I get a receipt?",
+     "「開發票」美國沒有這回事，店家給的收據就是 receipt；invoice 是公司之間的請款單"
+    ],
+    [
+     "I buy it by credit card.",
+     "I paid with a credit card.",
+     "付錢用 pay，by card 或 with a card 都行；刷卡不說 brush the card"
+    ],
+    [
+     "Can I try?",
+     "Can I try it on?",
+     "試穿一定要有 on；Can I try? 美國店員會以為你要試吃"
+    ],
+    [
+     "Where is the toilet?",
+     "Where's the restroom?",
+     "美國店裡的廁所說 restroom 或 bathroom；toilet 是馬桶"
+    ],
+    [
+     "This shoes is nice.",
+     "These shoes are nice.",
+     "鞋子是一雙，永遠複數；一隻鞋才是 a shoe"
+    ],
+    [
+     "Do you have bigger one?",
+     "Do you have a bigger one?",
+     "可數名詞前面要有 a"
+    ]
+   ],
+   "after": [
+    "記一個原則：在店裡對店員說話，開頭用 Can I…、Could I…、I'd like to…，比 I want… 和 Give me… 有禮貌得多；最後一句永遠是 Thank you."
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "購物英文常見問題",
+   "faq": [
+    [
+     "購物英文怎麼說？",
+     "「購物」「買東西」「逛街」都是 shopping：整個活動是 shopping，去買東西說 go shopping，買一樣東西才用 buy（I bought a T-shirt.）。「逛街不買」是 window shopping；「網購」是 online shopping。"
+    ],
+    [
+     "打八折英文怎麼說？",
+     "twenty percent off。中文的折扣講剩下的（八折＝付八成），英文講減掉的（twenty percent off＝減掉兩成），所以七折是 thirty percent off，半價是 half off 或 half price。買一送一是 buy one, get one free，標籤常縮寫 BOGO。"
+    ],
+    [
+     "「我只是看看」英文怎麼說？",
+     "I'm just looking, thanks. 或 I'm just browsing.。這是店員問 Can I help you? 時最標準的回答，美國店員聽到就會說 Let me know if you need anything. 然後讓你自己看。真的要找東西就說 I'm looking for…。"
+    ],
+    [
+     "逛街英文是什麼？",
+     "最常用的還是 go shopping，不管有沒有買。強調只看不買說 window shopping；跟朋友在購物中心晃，美國青少年說 hang out at the mall；「逛夜市」是 go to the night market。"
+    ],
+    [
+     "發票、收據英文怎麼說？",
+     "店家給你的那張紙是 receipt（p 不發音，唸 [rɪˈsit]）。台灣的統一發票在政府文件裡叫 uniform invoice，但對店員說 Can I get a receipt? 就好；invoice 在美國是公司之間的請款單，一般店裡不會用。"
+    ],
+    [
+     "試穿英文怎麼說？",
+     "try on：Can I try this on?；代名詞要放中間：try it on、try them on。試衣間是 fitting room 或 dressing room。店員問 How does it fit?，答 It fits. / It's too tight. / It's a little loose."
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "單字背好了，站在櫃台前說得出口嗎？",
+ "cta": "問價錢、試穿、說一句「我只是看看」，每一句都很短，難的是當場開口。我們的小班課由美國老師親自帶，教室裡會把店裡的對話真的演一遍：一個當店員、一個當顧客，從 How much is this? 到 Can I get a receipt?，一句一句練到孩子下次在板橋的店裡、或在美國的商場，都能自然地說出來。"
+}

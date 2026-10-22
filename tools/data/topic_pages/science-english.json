@@ -1,0 +1,1243 @@
+{
+ "slug": "science-english",
+ "published": "2026-10-22",
+ "target": "自然英文",
+ "index": 0.6,
+ "h1": "自然英文怎麼說？自然課是 science、大自然是 nature：國小自然 90 個單字、自然課 40 句與實驗用語",
+ "title": "自然英文怎麼說？自然課 science、大自然 nature 90 單字＋40 句｜埃森美語",
+ "desc": "自然英文：自然課是 science，大自然是 nature。國小自然 90 個單字（植物、三態、電路、太陽系、森林）、自然課 40 句、實驗用語 20 個，附 KK 音標與 PDF。",
+ "hero": "中文一個「自然」，英文要分成兩個字：學校的<strong>自然課是 science</strong>，山林海洋的<strong>大自然是 nature</strong>，孩子寫 nature class 美國老師會看不懂。這一頁照國小自然課本的單元整理：植物、物質三態、磁鐵與電路、地球與太空、太陽系八大行星和大自然的 90 個單字，接著是自然課上老師和孩子會說的 40 句話、做實驗的 20 個器材動詞、帶孩子到戶外觀察的 15 句，和一段孩子能向外國朋友介紹自然課的短文，最後是美國小學的自然課和科展（science fair）怎麼進行。",
+ "sections": [
+  {
+   "title": "自然英文對照表：植物、物質三態、電與磁、太陽系、大自然 90 個單字（附用法）",
+   "prose": [
+    "照國小自然課本的順序分成 6 組：生物（植物的部位、動物的分類、食物鏈）、物質三態（固體、液體、氣體和融化、蒸發、溶解）、力與能量（重力、摩擦力、磁鐵、電路）、地球與太空（天氣、岩石、火山、月相）、太陽系八大行星，最後是講「大自然」時會用到的 forest、river、rainbow 這些字。第三欄是<strong>用法和容易錯的地方</strong>：哪些字要加 the、哪些複數不規則、哪個字美國人其實不這樣說。",
+    "這一頁只收自然課本身的字。動物名稱有一整頁 <a href=\"/animals-english-vocabulary/\">動物英文</a>；天氣單元另見 <a href=\"/weather-english/\">天氣英文</a>；地震和颱風各有自己的頁面：<a href=\"/earthquake-english/\">地震英文</a>、<a href=\"/typhoon-english/\">颱風英文</a>；人體單元的器官和部位在 <a href=\"/body-parts-english/\">身體部位英文</a>。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "用法／注意"
+   ],
+   "groups": [
+    {
+     "name": "生物 Living things",
+     "rows": [
+      [
+       "plant",
+       "植物",
+       "動詞也是 plant：plant a seed 種下種子"
+      ],
+      [
+       "root",
+       "根",
+       "複數 roots；take root 生根"
+      ],
+      [
+       "stem",
+       "莖",
+       "花莖、豆莖都叫 stem"
+      ],
+      [
+       "leaf",
+       "葉子",
+       "複數 leaves，f 變 v"
+      ],
+      [
+       "flower",
+       "花",
+       "開花是 bloom"
+      ],
+      [
+       "seed",
+       "種子",
+       "發芽是 sprout"
+      ],
+      [
+       "living things",
+       "生物",
+       "相反是 nonliving things 非生物"
+      ],
+      [
+       "animal",
+       "動物",
+       "複數 animals"
+      ],
+      [
+       "insect",
+       "昆蟲",
+       "口語叫 bug；六隻腳才算昆蟲"
+      ],
+      [
+       "mammal",
+       "哺乳類",
+       "人、狗、鯨魚都是 mammal"
+      ],
+      [
+       "bird",
+       "鳥類",
+       "複數 birds"
+      ],
+      [
+       "fish",
+       "魚類",
+       "複數還是 fish"
+      ],
+      [
+       "reptile",
+       "爬蟲類",
+       "蛇、蜥蜴、烏龜"
+      ],
+      [
+       "amphibian",
+       "兩棲類",
+       "青蛙、蠑螈；重音在中間 am-FIB-ian"
+      ],
+      [
+       "habitat",
+       "棲息地",
+       "natural habitat 自然棲地"
+      ],
+      [
+       "food chain",
+       "食物鏈",
+       "食物網是 food web"
+      ],
+      [
+       "life cycle",
+       "生命週期",
+       "the life cycle of a frog 青蛙的一生"
+      ],
+      [
+       "caterpillar",
+       "毛毛蟲",
+       "變成 butterfly 之前先結 chrysalis 蛹"
+      ]
+     ]
+    },
+    {
+     "name": "物質三態 States of matter",
+     "rows": [
+      [
+       "solid",
+       "固體",
+       "三態之一；也當形容詞「固態的」"
+      ],
+      [
+       "liquid",
+       "液體",
+       "water、juice 都是 liquid"
+      ],
+      [
+       "gas",
+       "氣體",
+       "複數 gases；美國人也用 gas 指汽油"
+      ],
+      [
+       "water vapor",
+       "水蒸氣",
+       "看不見的才叫 vapor；看得見的白煙是 steam"
+      ],
+      [
+       "melt",
+       "融化",
+       "ice melts 冰融化；過去式 melted"
+      ],
+      [
+       "freeze",
+       "結冰",
+       "過去式 froze，過去分詞 frozen"
+      ],
+      [
+       "boil",
+       "沸騰",
+       "沸點 boiling point"
+      ],
+      [
+       "evaporate",
+       "蒸發",
+       "名詞 evaporation"
+      ],
+      [
+       "condense",
+       "凝結",
+       "名詞 condensation：杯子外面的水珠"
+      ],
+      [
+       "dissolve",
+       "溶解",
+       "sugar dissolves in water 糖溶於水"
+      ],
+      [
+       "mixture",
+       "混合物",
+       "動詞 mix 混合"
+      ],
+      [
+       "temperature",
+       "溫度",
+       "美國人口語也說 temp"
+      ],
+      [
+       "float",
+       "浮",
+       "wood floats 木頭會浮"
+      ],
+      [
+       "sink",
+       "沉",
+       "過去式 sank；a stone sinks 石頭會沉"
+      ]
+     ]
+    },
+    {
+     "name": "力與能量 Forces and energy",
+     "rows": [
+      [
+       "force",
+       "力",
+       "push 和 pull 都是 force"
+      ],
+      [
+       "push",
+       "推",
+       "名詞、動詞同形"
+      ],
+      [
+       "pull",
+       "拉",
+       "u 唸 [ʊ]，和 full 押韻"
+      ],
+      [
+       "gravity",
+       "重力",
+       "Gravity pulls things down. 重力把東西往下拉"
+      ],
+      [
+       "friction",
+       "摩擦力",
+       "前面通常不加 the"
+      ],
+      [
+       "magnet",
+       "磁鐵",
+       "形容詞 magnetic 有磁性的"
+      ],
+      [
+       "attract",
+       "吸引",
+       "相反是 repel 排斥"
+      ],
+      [
+       "electricity",
+       "電",
+       "形容詞 electric：electric fan 電風扇"
+      ],
+      [
+       "circuit",
+       "電路",
+       "唸 SER-kit，不是「色-Q-特」"
+      ],
+      [
+       "battery",
+       "電池",
+       "複數 batteries；沒電是 The battery is dead."
+      ],
+      [
+       "wire",
+       "電線",
+       "可數：a wire、two wires"
+      ],
+      [
+       "switch",
+       "開關",
+       "turn on / turn off the switch"
+      ],
+      [
+       "light bulb",
+       "燈泡",
+       "燈泡亮了是 The bulb lit up."
+      ],
+      [
+       "heat",
+       "熱",
+       "動詞也是 heat 加熱"
+      ],
+      [
+       "light",
+       "光",
+       "不可數：Plants need light."
+      ],
+      [
+       "sound",
+       "聲音",
+       "聲音來自 vibration 振動"
+      ],
+      [
+       "energy",
+       "能量",
+       "solar energy 太陽能；g 唸 [dʒ]"
+      ]
+     ]
+    },
+    {
+     "name": "地球與太空 Earth and space",
+     "rows": [
+      [
+       "weather",
+       "天氣",
+       "不可數；和 whether 同音"
+      ],
+      [
+       "cloud",
+       "雲",
+       "多雲是 cloudy"
+      ],
+      [
+       "rain",
+       "雨",
+       "下雨是動詞 rain：It's raining."
+      ],
+      [
+       "the water cycle",
+       "水循環",
+       "蒸發 → 凝結 → 降水 precipitation"
+      ],
+      [
+       "rock",
+       "岩石",
+       "小石頭是 stone 或 pebble"
+      ],
+      [
+       "soil",
+       "土壤",
+       "不可數；口語的泥土是 dirt"
+      ],
+      [
+       "volcano",
+       "火山",
+       "複數 volcanoes；爆發是 erupt"
+      ],
+      [
+       "earthquake",
+       "地震",
+       "th 唸 [θ]"
+      ],
+      [
+       "typhoon",
+       "颱風",
+       "美國大西洋那邊的叫 hurricane"
+      ],
+      [
+       "the solar system",
+       "太陽系",
+       "通常加 the"
+      ],
+      [
+       "planet",
+       "行星",
+       "八大行星見下一組"
+      ],
+      [
+       "the sun",
+       "太陽",
+       "太陽是一顆 star 恆星"
+      ],
+      [
+       "the moon",
+       "月球",
+       "月亮、月球都是 the moon"
+      ],
+      [
+       "moon phases",
+       "月相",
+       "也說 phases of the moon"
+      ],
+      [
+       "full moon",
+       "滿月",
+       "新月 new moon；眉月 crescent moon"
+      ],
+      [
+       "star",
+       "星星",
+       "星座是 constellation"
+      ],
+      [
+       "the Earth",
+       "地球",
+       "大寫；小寫 earth 是泥土"
+      ]
+     ]
+    },
+    {
+     "name": "太陽系八大行星 The eight planets",
+     "rows": [
+      [
+       "Mercury",
+       "水星",
+       "離太陽最近"
+      ],
+      [
+       "Venus",
+       "金星",
+       "最亮的行星"
+      ],
+      [
+       "Earth",
+       "地球",
+       "第三顆"
+      ],
+      [
+       "Mars",
+       "火星",
+       "the red planet 紅色星球"
+      ],
+      [
+       "Jupiter",
+       "木星",
+       "最大的行星"
+      ],
+      [
+       "Saturn",
+       "土星",
+       "有 rings 土星環"
+      ],
+      [
+       "Uranus",
+       "天王星",
+       "老師多唸 YUR-uh-nus"
+      ],
+      [
+       "Neptune",
+       "海王星",
+       "離太陽最遠"
+      ]
+     ]
+    },
+    {
+     "name": "大自然 Nature words",
+     "rows": [
+      [
+       "nature",
+       "大自然",
+       "不加 the：I love nature."
+      ],
+      [
+       "forest",
+       "森林",
+       "叢林是 jungle"
+      ],
+      [
+       "river",
+       "河流",
+       "小溪是 stream 或 creek"
+      ],
+      [
+       "lake",
+       "湖",
+       "日月潭是 Sun Moon Lake"
+      ],
+      [
+       "mountain",
+       "山",
+       "爬山是 go hiking，不是 climb mountain"
+      ],
+      [
+       "hill",
+       "小山、丘陵",
+       "比 mountain 矮"
+      ],
+      [
+       "ocean",
+       "海洋",
+       "sea 海；美國人口語多說 ocean"
+      ],
+      [
+       "wave",
+       "海浪",
+       "衝浪是 surf"
+      ],
+      [
+       "beach",
+       "海灘",
+       "沙是 sand"
+      ],
+      [
+       "rainbow",
+       "彩虹",
+       "可數：a rainbow"
+      ],
+      [
+       "sunrise",
+       "日出",
+       "日落 sunset"
+      ],
+      [
+       "waterfall",
+       "瀑布",
+       "一個字，不分開寫"
+      ],
+      [
+       "island",
+       "島",
+       "s 不發音：EYE-land"
+      ],
+      [
+       "desert",
+       "沙漠",
+       "重音在前；dessert 甜點重音在後"
+      ],
+      [
+       "grassland",
+       "草原",
+       "美國中部的大草原叫 prairie"
+      ],
+      [
+       "wetland",
+       "濕地",
+       "常用複數 wetlands"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "兩個小規則先記住：leaf 的複數是 leaves、fish 的複數還是 fish（規則整理在 <a href=\"/english-plural-nouns/\">英文複數</a>）；Earth 當「地球」講時大寫、前面常加 the，小寫的 earth 是泥土。"
+   ]
+  },
+  {
+   "title": "自然英文怎麼說、怎麼唸：自然課是 science，大自然是 nature",
+   "prose": [
+    "中文的「自然」在英文裡至少分三個字。學校那一科的「自然」是 <strong>science</strong>：自然課是 science class，自然老師是 science teacher，自然考卷是 the science test；美國小學的課表上就寫 Science 一個字，沒有 nature class 這種課。山、海、森林、動物那種「大自然」是 <strong>nature</strong>，而且前面不加 the：I love nature. 形容詞「自然的」是 <strong>natural</strong>：natural science 自然科學、natural habitat 自然棲地。",
+    "science 唸 [ˈsaɪəns]，只有兩個音節：sc 合起來只有 [s] 一個音，c 不發音；結尾 -nce 是 [ns] 收尾，不要照「賽恩斯」唸成三個音節。nature 的 -ture 和 picture、future 一樣唸 [tʃɚ]，整個字是 [ˈnetʃɚ]；唸 natural 時第一個母音變成 [æ]：[ˈnætʃərəl]。下面是自然課最常用、也最常唸錯的 15 個字，音標是 KK（符號對照見 <a href=\"/kk-phonetic-chart/\">KK 音標表</a>）。"
+   ],
+   "heads": [
+    "英文",
+    "KK 音標",
+    "注意"
+   ],
+   "rows": [
+    [
+     "science",
+     "[ˈsaɪəns]",
+     "sc 只發 [s]；兩個音節，不是「賽恩斯」"
+    ],
+    [
+     "scientist",
+     "[ˈsaɪəntɪst]",
+     "科學家；重音還是在 sci"
+    ],
+    [
+     "nature",
+     "[ˈnetʃɚ]",
+     "-ture 唸 [tʃɚ]，和 picture 的結尾一樣"
+    ],
+    [
+     "natural",
+     "[ˈnætʃərəl]",
+     "第一個母音變 [æ]，和 nature 的 [e] 不同"
+    ],
+    [
+     "experiment",
+     "[ɪkˈspɛrəmənt]",
+     "重音在 per；開頭是 [ɪk] 不是 [ɛks]"
+    ],
+    [
+     "electricity",
+     "[ɪˌlɛkˈtrɪsətɪ]",
+     "重音在 tri；第二個 c 唸 [s]"
+    ],
+    [
+     "gravity",
+     "[ˈgrævətɪ]",
+     "v 要咬下唇，不是 w"
+    ],
+    [
+     "volcano",
+     "[vɑlˈkeno]",
+     "重音在 ca，唸 [ke]，不是「卡」"
+    ],
+    [
+     "magnet",
+     "[ˈmægnɪt]",
+     "g 要發出來；第二音節輕"
+    ],
+    [
+     "thermometer",
+     "[θɚˈmɑmətɚ]",
+     "th 是 [θ]；重音在 mom，四個音節"
+    ],
+    [
+     "microscope",
+     "[ˈmaɪkrəˌskop]",
+     "scope 和 hope 押韻"
+    ],
+    [
+     "hypothesis",
+     "[haɪˈpɑθəsɪs]",
+     "重音在 po；複數 hypotheses [haɪˈpɑθəˌsiz]"
+    ],
+    [
+     "oxygen",
+     "[ˈɑksədʒən]",
+     "x 是 [ks]，g 是 [dʒ]"
+    ],
+    [
+     "temperature",
+     "[ˈtɛmprətʃɚ]",
+     "美國人唸三個音節 TEM-pruh-cher"
+    ],
+    [
+     "observe",
+     "[əbˈzɝv]",
+     "s 唸 [z]；重音在 serve"
+    ]
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "自然課會聽到的 40 句英文：老師的指令、孩子的回答、做實驗的步驟",
+   "prose": [
+    "美國小學的自然課大半時間在動手：老師先問一個問題，孩子猜（predict），再試（test），最後把看到的寫下來（record）。所以課堂上最常聽到的不是專有名詞，而是下面這些短句。第一組是老師會說的話，第二組是孩子回答和上台發表時會用的句子，第三組是做實驗時一步一步的指令。第三欄標出<strong>誰說、什麼時候說</strong>。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "誰說／什麼時候"
+   ],
+   "groups": [
+    {
+     "name": "老師會說的話 What the teacher says",
+     "rows": [
+      [
+       "It's time for science.",
+       "自然課時間到了。",
+       "老師・上課開始"
+      ],
+      [
+       "Today we're going to learn about magnets.",
+       "今天我們要學磁鐵。",
+       "老師・宣布主題"
+      ],
+      [
+       "What do you observe?",
+       "你觀察到什麼？",
+       "老師・實驗中最常問"
+      ],
+      [
+       "What do you think will happen?",
+       "你覺得會發生什麼事？",
+       "老師・實驗前"
+      ],
+      [
+       "Make a prediction.",
+       "先預測一下。",
+       "老師・實驗前"
+      ],
+      [
+       "Let's test it.",
+       "我們來試試看。",
+       "老師・要開始做"
+      ],
+      [
+       "Write down the result.",
+       "把結果寫下來。",
+       "老師・實驗後"
+      ],
+      [
+       "Record what you see in your science notebook.",
+       "把你看到的記在自然筆記本裡。",
+       "老師・觀察時"
+      ],
+      [
+       "Work with your partner.",
+       "和你的搭檔一起做。",
+       "老師・分組"
+      ],
+      [
+       "Be careful. It's hot.",
+       "小心，很燙。",
+       "老師・加熱時"
+      ],
+      [
+       "Don't touch it yet.",
+       "先別碰。",
+       "老師・提醒"
+      ],
+      [
+       "Why do you think that happened?",
+       "你覺得為什麼會這樣？",
+       "老師・討論"
+      ],
+      [
+       "Let's clean up. Put the beakers back.",
+       "收拾一下，把燒杯放回去。",
+       "老師・下課前"
+      ],
+      [
+       "Raise your hand if your ice melted first.",
+       "冰先融化的那組舉手。",
+       "老師・比較結果"
+      ]
+     ]
+    },
+    {
+     "name": "孩子的回答與發表 What kids say",
+     "rows": [
+      [
+       "Plants need sunlight to grow.",
+       "植物需要陽光才能長大。",
+       "孩子・發表"
+      ],
+      [
+       "I think the ice will melt faster in the sun.",
+       "我覺得冰在太陽下會融化得比較快。",
+       "孩子・預測"
+      ],
+      [
+       "The magnet picked up the paper clip.",
+       "磁鐵把迴紋針吸起來了。",
+       "孩子・報告結果"
+      ],
+      [
+       "It didn't stick to the plastic.",
+       "它沒有吸在塑膠上。",
+       "孩子・報告結果"
+      ],
+      [
+       "The sugar dissolved in the hot water.",
+       "糖在熱水裡溶解了。",
+       "孩子・報告結果"
+      ],
+      [
+       "The water turned into steam.",
+       "水變成水蒸氣了。",
+       "孩子・觀察"
+      ],
+      [
+       "I can see tiny bubbles.",
+       "我看到很小的泡泡。",
+       "孩子・觀察"
+      ],
+      [
+       "The bean sprouted after three days.",
+       "豆子三天後發芽了。",
+       "孩子・種豆子"
+      ],
+      [
+       "The light bulb lit up!",
+       "燈泡亮了！",
+       "孩子・電路成功"
+      ],
+      [
+       "My hypothesis was right.",
+       "我的假設是對的。",
+       "孩子・結論"
+      ],
+      [
+       "My hypothesis was wrong, but that's OK.",
+       "我的假設錯了，不過沒關係。",
+       "孩子・結論"
+      ],
+      [
+       "The rock sank, but the wood floated.",
+       "石頭沉下去，木頭浮起來。",
+       "孩子・浮沉實驗"
+      ],
+      [
+       "Our group got a different result.",
+       "我們這組的結果不一樣。",
+       "孩子・討論"
+      ]
+     ]
+    },
+    {
+     "name": "做實驗的步驟 Step by step",
+     "rows": [
+      [
+       "First, pour some water into the beaker.",
+       "首先，倒一些水到燒杯裡。",
+       "步驟・開頭用 First"
+      ],
+      [
+       "Then add a spoonful of salt.",
+       "然後加一匙鹽。",
+       "步驟・用 Then 接"
+      ],
+      [
+       "Stir it with the spoon.",
+       "用湯匙攪拌。",
+       "步驟"
+      ],
+      [
+       "Put the thermometer in the water.",
+       "把溫度計放進水裡。",
+       "步驟"
+      ],
+      [
+       "Measure the temperature.",
+       "量一下溫度。",
+       "步驟"
+      ],
+      [
+       "Wait five minutes.",
+       "等五分鐘。",
+       "步驟"
+      ],
+      [
+       "Look at it through the magnifying glass.",
+       "用放大鏡看。",
+       "步驟"
+      ],
+      [
+       "Connect the wire to the battery.",
+       "把電線接到電池上。",
+       "步驟・電路"
+      ],
+      [
+       "Turn the switch on.",
+       "把開關打開。",
+       "步驟・電路"
+      ],
+      [
+       "Compare the two cups.",
+       "比較這兩杯。",
+       "步驟・最後"
+      ],
+      [
+       "Write down the number.",
+       "把數字記下來。",
+       "步驟・記錄"
+      ],
+      [
+       "Draw what you see.",
+       "把你看到的畫下來。",
+       "步驟・記錄"
+      ],
+      [
+       "Wash your hands when you're done.",
+       "做完要洗手。",
+       "步驟・收尾"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "做實驗的英文：20 個器材與動作單字",
+   "prose": [
+    "做實驗（do an experiment）這件事本身有一套固定的字：先 observe（觀察）、再 measure（測量）、record（記錄）、compare（比較），最後講 result（結果）。器材的名字大多是美國小學自然教室裡真的有的東西：beaker、magnifying glass、safety goggles。第三欄是用法，包括哪個動詞要配哪個名詞。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "用法"
+   ],
+   "rows": [
+    [
+     "experiment",
+     "實驗",
+     "做實驗是 do an experiment，不用 make"
+    ],
+    [
+     "observe",
+     "觀察",
+     "名詞 observation：Write down your observations."
+    ],
+    [
+     "record",
+     "記錄",
+     "動詞重音在後 [rɪˈkɔrd]；名詞「紀錄」重音在前 [ˈrɛkɚd]"
+    ],
+    [
+     "measure",
+     "測量",
+     "measure the temperature 量溫度"
+    ],
+    [
+     "hypothesis",
+     "假設",
+     "口語也說 my guess"
+    ],
+    [
+     "predict",
+     "預測",
+     "名詞 prediction：Make a prediction."
+    ],
+    [
+     "result",
+     "結果",
+     "常用複數 results"
+    ],
+    [
+     "compare",
+     "比較",
+     "compare A and B"
+    ],
+    [
+     "pour",
+     "倒",
+     "pour the water into the cup"
+    ],
+    [
+     "stir",
+     "攪拌",
+     "過去式 stirred，兩個 r"
+    ],
+    [
+     "mix",
+     "混合",
+     "mix A with B；名詞 mixture"
+    ],
+    [
+     "magnifying glass",
+     "放大鏡",
+     "magnifying 是形容詞，不說 magnify glass"
+    ],
+    [
+     "thermometer",
+     "溫度計",
+     "量體溫的也叫 thermometer"
+    ],
+    [
+     "beaker",
+     "燒杯",
+     "有嘴、有刻度的玻璃杯"
+    ],
+    [
+     "scale",
+     "秤",
+     "秤重是 weigh：Weigh it on the scale."
+    ],
+    [
+     "microscope",
+     "顯微鏡",
+     "望遠鏡是 telescope"
+    ],
+    [
+     "ruler",
+     "尺",
+     "量長度 measure the length"
+    ],
+    [
+     "dropper",
+     "滴管",
+     "一滴是 a drop"
+    ],
+    [
+     "test tube",
+     "試管",
+     "兩個字，分開寫"
+    ],
+    [
+     "safety goggles",
+     "護目鏡",
+     "常用複數；戴上是 put on your goggles"
+    ]
+   ]
+  },
+  {
+   "title": "帶孩子走進大自然：15 句戶外觀察的英文",
+   "prose": [
+    "「大自然」這個字美國人最常用在 nature walk 上：學校會帶孩子到 nature center 或公園，一路看鳥、看葉子、翻石頭找蟲，邊走邊問問題。週末帶孩子去陽明山、爬郊山或去海邊時，下面 15 句就是美國家長會對孩子說的話，第三欄是什麼時候說。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "什麼時候說"
+   ],
+   "rows": [
+    [
+     "Let's go on a nature walk.",
+     "我們去戶外走走、看看大自然吧。",
+     "出發前"
+    ],
+    [
+     "Look at that bird! What kind is it?",
+     "你看那隻鳥！是哪一種？",
+     "看到動物時"
+    ],
+    [
+     "The leaves are turning yellow.",
+     "葉子變黃了。",
+     "秋天"
+    ],
+    [
+     "Can you hear the river?",
+     "你聽得到河水的聲音嗎？",
+     "靠近溪邊"
+    ],
+    [
+     "Don't touch the caterpillar. Just look.",
+     "不要碰毛毛蟲，看就好。",
+     "看到蟲時"
+    ],
+    [
+     "Look, a rainbow!",
+     "你看，彩虹！",
+     "雨後"
+    ],
+    [
+     "The sun is setting. Let's head back.",
+     "太陽要下山了，我們回去吧。",
+     "傍晚"
+    ],
+    [
+     "Can you find a smooth rock?",
+     "你能找到一顆光滑的石頭嗎？",
+     "河邊、海邊"
+    ],
+    [
+     "There's an ant carrying a leaf.",
+     "有一隻螞蟻在搬葉子。",
+     "蹲下來看地上"
+    ],
+    [
+     "Why is the sky blue?",
+     "天空為什麼是藍色的？",
+     "孩子最愛問"
+    ],
+    [
+     "Let's collect some leaves and seeds.",
+     "我們來撿一些葉子和種子。",
+     "帶回家觀察"
+    ],
+    [
+     "Watch your step. The rocks are slippery.",
+     "小心腳步，石頭很滑。",
+     "溪邊、步道"
+    ],
+    [
+     "I found a snail on the leaf!",
+     "我在葉子上發現一隻蝸牛！",
+     "孩子會喊的"
+    ],
+    [
+     "The waves are big today.",
+     "今天的浪很大。",
+     "海邊"
+    ],
+    [
+     "Let's sit here and watch the sunrise.",
+     "我們坐在這裡看日出。",
+     "清晨"
+    ]
+   ]
+  },
+  {
+   "title": "教孩子用英文介紹自然課：7 句短文＋外國朋友會問的 3 個問題",
+   "prose": [
+    "外師問 What's your favorite subject? 時，不少台灣孩子會答 Science，然後就接不下去。下面 7 句是國小孩子可以講的一段話：喜歡什麼課、做過什麼實驗、結果是什麼，每句後面是中文；接著是外國朋友最常追問的 3 個問題和可以怎麼答。練法和 <a href=\"/english-self-introduction-kids/\">英文自我介紹</a> 一樣：家長用中文問一句，孩子用英文答一句。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "說明"
+   ],
+   "groups": [
+    {
+     "name": "介紹範本（7 句）Model paragraph",
+     "rows": [
+      [
+       "My favorite subject is science.",
+       "我最喜歡的科目是自然。",
+       "開頭；subject ＝ 科目"
+      ],
+      [
+       "In science class, we did an experiment with magnets.",
+       "自然課我們做了磁鐵的實驗。",
+       "do an experiment"
+      ],
+      [
+       "First, we made a hypothesis.",
+       "首先，我們先做了假設。",
+       "用 First 開頭"
+      ],
+      [
+       "Then we tested which things stick to a magnet.",
+       "然後我們測試哪些東西會被磁鐵吸住。",
+       "stick to ＝ 吸住、黏住"
+      ],
+      [
+       "The paper clip stuck, but the eraser didn't.",
+       "迴紋針吸住了，橡皮擦沒有。",
+       "stuck 是 stick 的過去式"
+      ],
+      [
+       "We wrote down the results in our notebooks.",
+       "我們把結果寫在筆記本裡。",
+       "results 用複數"
+      ],
+      [
+       "On weekends, I like going to the mountains to look for insects.",
+       "週末我喜歡去山上找昆蟲。",
+       "大自然那一面：go to the mountains"
+      ]
+     ]
+    },
+    {
+     "name": "外國朋友會問的 3 個問題 Questions a foreign friend asks",
+     "rows": [
+      [
+       "What's your favorite subject?",
+       "你最喜歡什麼科目？",
+       "問"
+      ],
+      [
+       "Science. We do experiments every week.",
+       "自然。我們每週都做實驗。",
+       "答"
+      ],
+      [
+       "What did you learn in science this week?",
+       "你這週自然課學了什麼？",
+       "問"
+      ],
+      [
+       "We learned how plants grow. We planted beans.",
+       "我們學了植物怎麼長大，還種了豆子。",
+       "答"
+      ],
+      [
+       "Do you like being out in nature?",
+       "你喜歡到大自然裡嗎？",
+       "問"
+      ],
+      [
+       "Yes! I like hiking and looking for bugs.",
+       "喜歡！我喜歡爬山和找蟲。",
+       "答"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "如果孩子學校剛好做過別的實驗，把第 2 到第 5 句換掉就好：種豆子是 We planted beans and watched them grow.；浮沉實驗是 We tested which things float and which things sink.；水的三態是 We watched ice melt and water boil."
+   ]
+  },
+  {
+   "title": "美國老師的觀察：美國小學的自然課怎麼上、科展是 science fair、台灣人常說錯的 15 句",
+   "prose": [
+    "我在美國念小學時，自然教室的牆上一定貼著一張 the scientific method：Ask a question → Make a hypothesis → Test it → Record the results → Draw a conclusion，老師每次做實驗都照這個順序走，所以美國孩子很早就會說 My hypothesis was wrong. 而且不覺得丟臉。幾個幾乎每個美國小孩都做過的實驗：把豆子和濕紙巾放進夾鏈袋貼在窗戶上看它發芽（bean in a bag）、小蘇打加醋做會噴出來的火山（the baking soda volcano）、養一杯毛毛蟲等牠變蝴蝶再放走，還有 egg drop：用吸管和紙設計一個容器，讓雞蛋從高處丟下來不破。",
+    "台灣的「科展」在美國叫 <strong>science fair</strong>，不是 science exhibition。小學生自己挑一個問題，在家做實驗，把 Question、Hypothesis、Materials、Procedure、Results、Conclusion 寫在一塊三折的厚紙板（tri-fold board）上，科展當天站在自己的板子旁邊，評審走過來問 So what did you find out? 另一個差別是單位：美國人日常講華氏（Fahrenheit），但自然課做實驗時多半用攝氏、公分、公克，跟台灣一樣。下面是台灣學生最常直接從中文翻過去、美國老師聽了會愣一下的句子。"
+   ],
+   "heads": [
+    "常見寫法",
+    "建議寫法",
+    "為什麼"
+   ],
+   "rows": [
+    [
+     "nature class",
+     "science class",
+     "自然課的「自然」是 science；nature 是大自然"
+    ],
+    [
+     "nature teacher",
+     "science teacher",
+     "同上，科目名是 science"
+    ],
+    [
+     "I study nature today.",
+     "I have science today.",
+     "「今天有自然課」用 have"
+    ],
+    [
+     "natural science class",
+     "science",
+     "美國小學課表上就一個字 Science"
+    ],
+    [
+     "make an experiment",
+     "do an experiment",
+     "做實驗用 do，不用 make"
+    ],
+    [
+     "The experiment is success.",
+     "The experiment worked.",
+     "success 是名詞；口語說 worked"
+    ],
+    [
+     "science exhibition",
+     "science fair",
+     "科展是 science fair"
+    ],
+    [
+     "I love the nature.",
+     "I love nature.",
+     "nature 當大自然不加 the"
+    ],
+    [
+     "big nature",
+     "nature",
+     "「大自然」直譯成 big nature 美國人聽不懂"
+    ],
+    [
+     "go to nature",
+     "go hiking ／ go on a nature walk",
+     "說實際做的事"
+    ],
+    [
+     "nature environment",
+     "natural environment",
+     "形容詞是 natural"
+    ],
+    [
+     "The ice become water.",
+     "The ice melted.",
+     "融化用 melt；要用過去式"
+    ],
+    [
+     "There is no electric.",
+     "There's no electricity. ／ The power's out.",
+     "electric 是形容詞；停電說 the power's out"
+    ],
+    [
+     "magnet force",
+     "magnetic force",
+     "形容詞是 magnetic"
+    ],
+    [
+     "It's 30 degree today.",
+     "It's 30 degrees Celsius.",
+     "degrees 要複數；對美國人要說 Celsius，不然他以為是華氏"
+    ]
+   ],
+   "after": [
+    "最後一個小提醒：美國孩子講到自然課的老師會說 my science teacher，講到假日去山上會說 being out in nature；兩個「自然」在英文裡完全是兩件事，孩子只要分清楚這一點，這一頁的字就都放對位置了。"
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "自然英文常見問題",
+   "faq": [
+    [
+     "自然英文怎麼說？",
+     "看是哪一種「自然」：學校的自然課是 science（I have science on Monday.），大自然是 nature（I love nature.，前面不加 the），形容詞「自然的」是 natural（natural science 自然科學、natural habitat 自然棲地）。"
+    ],
+    [
+     "自然課英文怎麼說？自然老師呢？",
+     "自然課是 science class，口語直接說 science：What did you do in science today? 自然老師是 science teacher，自然課本是 science book，自然習作是 science workbook。美國小學沒有 nature class 這種說法。"
+    ],
+    [
+     "做實驗英文怎麼說？",
+     "做實驗是 do an experiment（We did an experiment with magnets.），不說 make an experiment。實驗成功是 The experiment worked.，失敗是 It didn't work.；實驗結果是 the results，實驗步驟是 the procedure。"
+    ],
+    [
+     "大自然英文是 nature 還是 the nature？",
+     "是 nature，不加 the：I love nature. / Kids need time in nature. 「大自然」直譯成 big nature 美國人聽不懂。「自然的」是 natural：natural habitat 自然棲地、natural disaster 天災。"
+    ],
+    [
+     "固體、液體、氣體英文怎麼說？",
+     "solid 固體、liquid 液體、gas 氣體，三個合稱 the three states of matter（物質三態）。變化的動詞：melt 融化（固體變液體）、freeze 結冰（液體變固體）、evaporate 蒸發（液體變氣體）、condense 凝結（氣體變液體）。"
+    ],
+    [
+     "太陽系八大行星英文怎麼說？",
+     "由近到遠：Mercury 水星、Venus 金星、Earth 地球、Mars 火星、Jupiter 木星、Saturn 土星、Uranus 天王星、Neptune 海王星。美國小學生用一句話記順序：My Very Educated Mother Just Served Us Nachos，每個字的第一個字母就是一顆行星。冥王星 Pluto 現在是 dwarf planet（矮行星），不算在八大行星裡。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "自然課學過的字，孩子說得出口嗎？",
+ "cta": "自然課是孩子每週都在上的課，正好拿來練英文：做完實驗那天，用英文問他一句 What did you do in science today?，讓他用 We did an experiment with… 接下去；實驗是他自己動手做的，說起來比背單字表有話講。我們的小班課由美籍老師帶，孩子這週在學校做的實驗、週末在山上看到的蟲，都是課堂上開口的題材，從 I think it will float. 到用英文向外師說明自己的實驗結果，一句一句練到不用想。"
+}

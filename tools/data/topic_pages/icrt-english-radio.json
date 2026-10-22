@@ -1,0 +1,975 @@
+{
+  "slug": "icrt-english-radio",
+  "published": "2026-10-22",
+  "target": "ICRT",
+  "index": 0.6,
+  "h1": "ICRT 學英文有用嗎？ICRT 頻率、線上收聽與英文廣播電台推薦",
+  "title": "ICRT 頻率、線上收聽怎麼聽？英文廣播電台推薦＋70 個廣播英文｜埃森美語",
+  "desc": "ICRT 頻率（台北、高雄 FM 100.7，台中 100.1，嘉義 100.8）和線上收聽一次整理；美國老師評 ICRT 學英文適合誰，附英文廣播電台推薦、70 個廣播英文和 40 句 DJ 常用句。",
+  "hero": "想用英文廣播學英文，台灣人第一個想到的就是 ICRT。這頁是一位美國老師的老實評價：先給<strong>70 個聽廣播一定會聽到的英文</strong>對照表（電台、新聞、DJ 常用句、音樂），再講 ICRT 是什麼、radio 怎麼唸、ICRT 頻率和線上收聽方法，接著是「聽 ICRT 學英文有用嗎」、依年齡的聽法、英文廣播電台推薦和其他聽力資源比較，最後是 40 句 DJ 和主播常說的話。本站和 ICRT 沒有任何合作關係。",
+  "sections": [
+    {
+      "title": "英文廣播常用單字：電台、新聞、DJ 常用句、音樂 70 個",
+      "prose": [
+        "分成四組：收音機和電台本身的用語、新聞時段的用語、DJ 每天掛在嘴上的固定句，以及音樂排行榜會聽到的字。第三欄寫例句或容易錯的地方。這些字在 ICRT 這類英文電台上<strong>一天會重複出現好幾十次</strong>，先認得它們，聽廣播時就有「抓得到的東西」。",
+        "一個先記住的重點：「在廣播上聽到」是 <strong>on the radio</strong>，不是 from the radio；「打開收音機」是 turn on the radio，不是 open。"
+      ],
+      "heads": [
+        "英文",
+        "中文",
+        "用法／注意"
+      ],
+      "groups": [
+        {
+          "name": "電台用語 Station words",
+          "rows": [
+            [
+              "radio station",
+              "廣播電台",
+              "ICRT is a radio station."
+            ],
+            [
+              "station",
+              "電台、台",
+              "收音機轉台說 change the station"
+            ],
+            [
+              "frequency",
+              "頻率",
+              "重音在第一音節 FRE-quen-cy"
+            ],
+            [
+              "FM",
+              "調頻廣播",
+              "ICRT 是 FM 電台；唸 F-M 兩個字母"
+            ],
+            [
+              "AM",
+              "調幅廣播",
+              "美國很多新聞和談話電台在 AM"
+            ],
+            [
+              "100.7 FM",
+              "調頻 100.7",
+              "唸 one hundred point seven FM"
+            ],
+            [
+              "tune in",
+              "收聽、轉到某一台",
+              "Tune in to ICRT. 介系詞用 to"
+            ],
+            [
+              "on the radio",
+              "在廣播上",
+              "I heard it on the radio. 用 on，不用 from"
+            ],
+            [
+              "host",
+              "主持人",
+              "談話、新聞節目常用 host"
+            ],
+            [
+              "DJ",
+              "DJ、音樂節目主持人",
+              "disc jockey 的縮寫；唸 D-J"
+            ],
+            [
+              "on air",
+              "播出中",
+              "錄音室外的 ON AIR 燈亮＝正在直播"
+            ],
+            [
+              "live",
+              "現場、直播",
+              "這裡唸 [laɪv]，跟 five 押韻"
+            ],
+            [
+              "call in",
+              "打電話進節目",
+              "Call in and tell us! 名詞是 call-in"
+            ],
+            [
+              "caller",
+              "打電話進來的聽眾",
+              "DJ 會說 Our next caller is…"
+            ],
+            [
+              "request a song",
+              "點歌",
+              "名詞 a song request"
+            ],
+            [
+              "dedicate a song",
+              "把歌送給某人",
+              "This one goes out to…"
+            ],
+            [
+              "listener",
+              "聽眾",
+              "Thanks to all our listeners."
+            ],
+            [
+              "studio",
+              "播音室、錄音室",
+              "KK 標 [ˈstjudɪˌo]，美式多唸 STOO-dee-oh"
+            ],
+            [
+              "show",
+              "節目",
+              "美國口語多說 show，program 較正式"
+            ],
+            [
+              "commercial",
+              "廣告",
+              "口語也說 ad；廣告時段 commercial break"
+            ],
+            [
+              "reception",
+              "收訊",
+              "The reception is bad here."
+            ],
+            [
+              "signal",
+              "訊號",
+              "進隧道會 lose the signal"
+            ],
+            [
+              "volume",
+              "音量",
+              "turn up / turn down the volume"
+            ],
+            [
+              "turn on the radio",
+              "打開收音機",
+              "不說 open the radio"
+            ],
+            [
+              "podcast",
+              "Podcast、播客",
+              "節目錄好放上網，隨時聽"
+            ],
+            [
+              "stream",
+              "線上串流收聽",
+              "You can stream ICRT online."
+            ]
+          ]
+        },
+        {
+          "name": "新聞用語 News words",
+          "rows": [
+            [
+              "the news",
+              "新聞",
+              "news 是不可數：The news is…"
+            ],
+            [
+              "headline",
+              "頭條",
+              "Here are today's headlines."
+            ],
+            [
+              "top stories",
+              "重點新聞",
+              "新聞開頭先報 top stories"
+            ],
+            [
+              "breaking news",
+              "快訊、突發新聞",
+              "剛剛發生、插播進來的消息"
+            ],
+            [
+              "news anchor",
+              "新聞主播",
+              "也說 newscaster"
+            ],
+            [
+              "reporter",
+              "記者",
+              "在現場報導的人"
+            ],
+            [
+              "weather report",
+              "天氣報導",
+              "Here's your weather report."
+            ],
+            [
+              "forecast",
+              "預報",
+              "名詞和動詞同形：Rain is forecast."
+            ],
+            [
+              "traffic report",
+              "路況報導",
+              "上下班時段常聽到"
+            ],
+            [
+              "update",
+              "最新消息",
+              "an update on the typhoon"
+            ],
+            [
+              "local news",
+              "地方新聞",
+              "台灣新聞在 ICRT 就是 local news"
+            ],
+            [
+              "international news",
+              "國際新聞",
+              "也說 world news"
+            ],
+            [
+              "business news",
+              "財經新聞",
+              "股市、公司、經濟"
+            ],
+            [
+              "sports news",
+              "體育新聞",
+              "棒球、籃球比分"
+            ],
+            [
+              "press conference",
+              "記者會",
+              "hold a press conference"
+            ],
+            [
+              "according to",
+              "根據",
+              "According to the CWA, …"
+            ],
+            [
+              "officials",
+              "官員、有關單位",
+              "Officials say… 新聞超常見"
+            ],
+            [
+              "issue a warning",
+              "發布警報",
+              "The CWA issued a sea warning."
+            ],
+            [
+              "interview",
+              "訪問",
+              "an interview with…"
+            ],
+            [
+              "correspondent",
+              "特派員",
+              "在國外駐點的記者"
+            ]
+          ]
+        },
+        {
+          "name": "DJ 常用句 What DJs say",
+          "rows": [
+            [
+              "You're listening to…",
+              "你正在收聽……",
+              "報台名：You're listening to ICRT."
+            ],
+            [
+              "Coming up next…",
+              "接下來是……",
+              "預告下一首歌或下一段"
+            ],
+            [
+              "Stay tuned.",
+              "請別轉台。",
+              "廣告前最常聽到"
+            ],
+            [
+              "Right after the break.",
+              "廣告之後馬上播。",
+              "the break＝廣告時間"
+            ],
+            [
+              "Don't go anywhere.",
+              "別走開。",
+              "跟 Stay tuned. 同意思"
+            ],
+            [
+              "We'll be right back.",
+              "我們馬上回來。",
+              "進廣告前"
+            ],
+            [
+              "Welcome back.",
+              "歡迎回來。",
+              "廣告結束後"
+            ],
+            [
+              "That was…",
+              "剛剛播的是……",
+              "That was Taylor Swift with…"
+            ],
+            [
+              "Here's…",
+              "現在為你播放……",
+              "Here's a new one from…"
+            ],
+            [
+              "back to back",
+              "連續播放",
+              "two songs back to back"
+            ],
+            [
+              "Give us a call.",
+              "打電話給我們。",
+              "邀請聽眾 call in"
+            ],
+            [
+              "Thanks for tuning in.",
+              "謝謝收聽。",
+              "節目結尾"
+            ]
+          ]
+        },
+        {
+          "name": "音樂用語 Music words",
+          "rows": [
+            [
+              "hit",
+              "熱門歌曲",
+              "a big hit；唸 [hɪt] 短音"
+            ],
+            [
+              "single",
+              "單曲",
+              "a new single"
+            ],
+            [
+              "album",
+              "專輯",
+              "重音在前 AL-bum"
+            ],
+            [
+              "artist",
+              "歌手、藝人",
+              "電台介紹歌手常用 artist"
+            ],
+            [
+              "band",
+              "樂團",
+              "a rock band"
+            ],
+            [
+              "chart",
+              "排行榜",
+              "top of the charts＝排行榜第一"
+            ],
+            [
+              "countdown",
+              "排行倒數",
+              "Top 10 countdown"
+            ],
+            [
+              "number one",
+              "第一名",
+              "It's number one this week."
+            ],
+            [
+              "lyrics",
+              "歌詞",
+              "永遠用複數 lyrics"
+            ],
+            [
+              "genre",
+              "曲風",
+              "唸 [ˈʒɑnrə]，第一個音像 measure 的 s"
+            ],
+            [
+              "pop",
+              "流行音樂",
+              "pop music"
+            ],
+            [
+              "throwback",
+              "懷舊老歌",
+              "a throwback from the 90s"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ICRT 是什麼、怎麼唸？ICRT 頻率與線上收聽",
+      "prose": [
+        "ICRT 是 <strong>International Community Radio Taipei</strong> 的縮寫，中文叫台北國際社區廣播電台，是台灣的英語廣播電台，由非營利的台北國際社區文化基金會經營，錄音室在新北市新莊。它的前身是服務駐台美軍的 Armed Forces Network Taiwan（AFNT），1979 年改為現在的 ICRT。節目以音樂、新聞和娛樂為主，聽眾大部分是台灣本地人。",
+        "<strong>ICRT 頻率</strong>：台北 FM 100.7、新竹 FM 100.7、台中 FM 100.1、嘉義 FM 100.8、高雄 FM 100.7。<strong>線上收聽</strong>有兩條路：官方 ICRT App（iOS、Android），或官網 icrt.com.tw 首頁的 TuneIn、YouTube 直播連結。",
+        "節目大致分四類。<strong>音樂</strong>：平日的 DJ 帶狀節目如 The Morning Show、The Jam，和排行榜節目 Asia Pop 40、Top of the Pops。<strong>新聞</strong>：ICRT Morning News、ICRT Noon News 等新聞時段，也轉播 BBC News。<strong>談話</strong>：TED Radio Hour、Taiwan This Week，以及訪問在台人物的 Taiwan Talk。<strong>學英文</strong>：官網 Learning 區有國小程度的 News for Kids、國中程度的 News Bites（兩者都和教育部國教署合作）、附文字稿的 EZ News，以及 Podcast Break Down。"
+      ],
+      "heads": [
+        "英文",
+        "KK 音標",
+        "注意"
+      ],
+      "rows": [
+        [
+          "ICRT",
+          "[ˌaɪ ˌsi ˌɑr ˈti]",
+          "四個字母分開唸，重音落在最後的 T"
+        ],
+        [
+          "radio",
+          "[ˈredɪˌo]",
+          "ra 唸 [e] 像 day，不是「雷」也不是 [æ]；重音在第一音節"
+        ],
+        [
+          "station",
+          "[ˈsteʃən]",
+          "-tion 輕輕帶過 [ʃən]，不是「申」"
+        ],
+        [
+          "frequency",
+          "[ˈfrikwənsɪ]",
+          "重音在 FRE，不要唸成 fre-QUEN-cy"
+        ],
+        [
+          "broadcast",
+          "[ˈbrɔdˌkæst]",
+          "重音在 broad；過去式也是 broadcast"
+        ],
+        [
+          "channel",
+          "[ˈtʃænḷ]",
+          "結尾是 [l]，不是「抄」也不是 -nal 拉長"
+        ],
+        [
+          "news",
+          "[njuz]",
+          "美國人多唸 [nuz]，結尾是 [z] 不是 [s]"
+        ],
+        [
+          "weather",
+          "[ˈwɛðɚ]",
+          "th 是 [ð]，舌尖輕碰上排牙齒；和 whether 同音"
+        ],
+        [
+          "traffic",
+          "[ˈtræfɪk]",
+          "a 是 [æ]，嘴巴張大"
+        ],
+        [
+          "headline",
+          "[ˈhɛdˌlaɪn]",
+          "head 的 ea 唸 [ɛ]，不是 [i]"
+        ],
+        [
+          "podcast",
+          "[ˈpɑdˌkæst]",
+          "美式 po 唸 [pɑ]，像「趴」"
+        ],
+        [
+          "international",
+          "[ˌɪntɚˈnæʃənḷ]",
+          "主重音在 NA；美式 t 常輕到像 [n]：inner-national"
+        ],
+        [
+          "community",
+          "[kəˈmjunətɪ]",
+          "重音在 MU；t 在美式變成輕輕的 [d] 音"
+        ],
+        [
+          "DJ",
+          "[ˈdiˌdʒe]",
+          "兩個字母：D 加 J，J 唸 [dʒe] 不是「接」"
+        ]
+      ],
+      "after": [
+        "台灣學生最常唸錯的是 radio：把 ra 唸成「雷」或 [æ]。正確是 [e]，跟 day、say 同一個音，RAY-dee-oh。frequency 則是重音放錯，要放在第一個音節。每個符號怎麼唸可以對照 <a href=\"/kk-phonetic-chart/\">KK 音標表</a>，想聽單字發音用 <a href=\"/english-pronunciation/\">英文發音查詢</a>。"
+      ],
+      "phone_cols": 3
+    },
+    {
+      "title": "ICRT 學英文有用嗎？美國老師的老實評價",
+      "prose": [
+        "先說結論：<strong>對國中以上、已經有基礎的學生，ICRT 是很好的每日聽力來源；對剛起步的小小孩，一般節目幫助不大。</strong>原因有三個。",
+        "第一，<strong>語速是真的</strong>。DJ 和主播不會為學習者放慢，這正是它的價值：考試和課本的音檔都比真實對話慢，聽慣了 ICRT，再聽考試音檔會覺得從容。但對聽不懂的孩子，這個速度只會讓英文變成背景音。",
+        "第二，<strong>話題是台灣的</strong>。颱風警報、台北的路況、中職比賽，這些新聞你已經知道背景，聽英文時就能靠上下文猜字。這是 BBC 或 NPR 給不了的優勢。颱風天的新聞用語整理在 <a href=\"/typhoon-english/\">颱風英文</a>。",
+        "第三，<strong>口音不只一種</strong>。節目表上同時有美式 DJ 節目和轉播的 BBC News，美式、英式英語都聽得到。這對國高中生是好事，真實世界本來就不只一種口音；但對還在建立發音的孩子，先固定聽一種口音會比較清楚。"
+      ],
+      "heads": [
+        "對象",
+        "適不適合",
+        "原因"
+      ],
+      "rows": [
+        [
+          "國小低年級、剛起步的孩子",
+          "一般節目不適合",
+          "語速快、沒有畫面和字幕，聽不懂的英文只會變成背景音"
+        ],
+        [
+          "國小中高年級、有基礎的孩子",
+          "從 News for Kids 開始",
+          "國小程度的短新聞，網站上有英文稿和中文翻譯可以對照"
+        ],
+        [
+          "國中生",
+          "適合 News Bites 和新聞時段",
+          "句子較短、主題是台灣和國際新聞，背景知識幫得上忙"
+        ],
+        [
+          "高中生",
+          "適合",
+          "正常語速、真實話題，練習「不等人」的聽力"
+        ],
+        [
+          "大學生、上班族",
+          "很適合",
+          "通勤、開車時聽，最容易養成每天接觸英文的習慣"
+        ],
+        [
+          "想聽懂美國人日常說話的人",
+          "部分適合",
+          "DJ 的口語很道地，但新聞時段的用字比日常對話正式"
+        ]
+      ],
+      "after": [
+        "準備<a href=\"/gept/\">全民英檢</a>的學生可以把新聞時段當額外練習：題型不同，但「聽一次就要抓到重點」的能力是一樣的。"
+      ]
+    },
+    {
+      "title": "怎麼用英文廣播學英文：7 個步驟＋孩子、青少年、成人的聽法",
+      "prose": [
+        "開著收音機不等於在學英文。下面七個步驟把「聽」變成練習，每天 15 分鐘就夠：",
+        "<strong>1. 固定時段</strong>：選一個每天都聽得到的時段，例如早上上學途中或晚餐前。<strong>2. 先猜主題</strong>：聽 30 秒，只回答「在講什麼」。<strong>3. 同一則新聞聽兩次</strong>：第一次抓主題，第二次抓細節。<strong>4. 寫下 5 個字</strong>：只寫聽到但不懂的字，不要更多。<strong>5. 查發音</strong>：用 KK 音標確認那 5 個字怎麼唸。<strong>6. 跟讀一句</strong>：選一句話晚半拍跟著唸（shadowing），模仿語調和停頓。<strong>7. 說一句摘要</strong>：用自己的英文說出剛剛聽到什麼。",
+        "第 3 步最好用有文字稿的內容，例如 ICRT 的 EZ News 或 News for Kids：第二次聽完再看稿，就知道哪裡漏聽。依年齡的練法如下表。"
+      ],
+      "heads": [
+        "對象",
+        "活動",
+        "怎麼做"
+      ],
+      "rows": [
+        [
+          "孩子（國小）",
+          "聽 News for Kids 一則",
+          "先看中文翻譯知道在講什麼，再聽英文；聽到認識的字就舉手"
+        ],
+        [
+          "孩子（國小）",
+          "跟著英文歌唱副歌",
+          "只挑一首，副歌唱熟再換下一首"
+        ],
+        [
+          "孩子（國小）",
+          "抓 DJ 的固定句",
+          "聽到 Stay tuned. 或 Coming up next 就說出來，當成遊戲"
+        ],
+        [
+          "國高中生",
+          "聽同一則新聞兩次",
+          "第一次只抓主題，第二次對照 EZ News 或 News Bites 的文字稿"
+        ],
+        [
+          "國高中生",
+          "每天記 5 個字",
+          "從新聞裡挑 5 個新字，查 KK 音標，隔天再聽一次確認"
+        ],
+        [
+          "國高中生",
+          "跟讀（shadowing）一句",
+          "選一句主播的話，晚半拍跟著唸，模仿停頓和語調"
+        ],
+        [
+          "成人",
+          "通勤時開著聽",
+          "不求聽懂每個字，先習慣正常語速"
+        ],
+        [
+          "成人",
+          "用一句話說出今天的頭條",
+          "聽完新聞，用英文對自己說一句摘要"
+        ],
+        [
+          "成人",
+          "聽談話節目練回應",
+          "主持人提問時暫停，先自己用英文回答再繼續聽"
+        ]
+      ]
+    },
+    {
+      "title": "英文廣播電台推薦：ICRT 和 BBC、VOA、NPR、CoolEnglish、英文歌比較",
+      "prose": [
+        "ICRT 是台灣主要的英語廣播電台，但它不是唯一的聽力來源。下面依程度和用途比較，沒有哪一個「最好」，只有適不適合現在的程度。"
+      ],
+      "heads": [
+        "資源",
+        "程度",
+        "適合用來"
+      ],
+      "rows": [
+        [
+          "ICRT FM 廣播",
+          "國高中以上",
+          "每天接觸正常語速的英文，台灣新聞和流行音樂"
+        ],
+        [
+          "ICRT News for Kids",
+          "國小",
+          "國小程度的英文新聞，有文字稿和中文翻譯"
+        ],
+        [
+          "ICRT News Bites",
+          "國中",
+          "國中程度的新聞，台灣和國際題材"
+        ],
+        [
+          "ICRT EZ News",
+          "國高中到成人",
+          "文字加音檔的每日新聞，適合聽兩次再對稿"
+        ],
+        [
+          "BBC Learning English",
+          "國中以上",
+          "專為學習者做的 Podcast，例如 6 Minute English；英式發音"
+        ],
+        [
+          "VOA Learning English",
+          "國中以上",
+          "放慢語速、用字較簡單的美式英語新聞"
+        ],
+        [
+          "NPR",
+          "高中以上",
+          "美國公共廣播的新聞和 Podcast，真實語速，適合程度好的學生"
+        ],
+        [
+          "CoolEnglish 酷英聽力",
+          "國小到高中",
+          "教育部的英語學習平台，有分級的聽力練習"
+        ],
+        [
+          "英文歌",
+          "各年齡",
+          "記住句型和發音的連音，適合當入門和調劑"
+        ]
+      ],
+      "after": [
+        "國小孩子最穩的起點是有字幕、有分級的內容：CoolEnglish 怎麼登入和怎麼用，整理在 <a href=\"/cool-english-guide/\">CoolEnglish 酷英使用攻略</a>；想要有題目、有逐字稿的分級聽力，可以用本站的 <a href=\"/english-listening-practice/\">英文聽力練習</a>。"
+      ]
+    },
+    {
+      "title": "DJ 和新聞主播常說的 40 句英文",
+      "prose": [
+        "下面 40 句是英文電台上每天都會出現的說法，分成 DJ 串場、點歌和 call-in、新聞主播、天氣和路況四組。先把它們聽熟，再開收音機，會發現自己突然「聽得懂一半」。"
+      ],
+      "heads": [
+        "英文",
+        "中文",
+        "誰說、什麼時候"
+      ],
+      "groups": [
+        {
+          "name": "DJ 開場與串場 DJ intros and links",
+          "rows": [
+            [
+              "Good morning, Taiwan!",
+              "台灣早安！",
+              "早上節目開場"
+            ],
+            [
+              "It's eight o'clock on a Monday morning.",
+              "現在是星期一早上八點。",
+              "DJ 報時"
+            ],
+            [
+              "Thanks for joining me this afternoon.",
+              "謝謝你今天下午收聽。",
+              "下午節目開場"
+            ],
+            [
+              "Let's kick things off with this one.",
+              "先用這首歌開場。",
+              "kick off＝開始"
+            ],
+            [
+              "Here's a song you've been asking for.",
+              "這首是大家一直在點的歌。",
+              "介紹熱門點播"
+            ],
+            [
+              "That one never gets old.",
+              "這首怎麼聽都不膩。",
+              "播完老歌"
+            ],
+            [
+              "We've got a great show for you today.",
+              "今天的節目很精彩。",
+              "預告整集內容"
+            ],
+            [
+              "More music coming your way.",
+              "還有更多音樂馬上播。",
+              "接下一首前"
+            ],
+            [
+              "It's a beautiful day out there.",
+              "外面天氣很好。",
+              "閒聊天氣"
+            ],
+            [
+              "That's it for me today.",
+              "我今天的節目就到這裡。",
+              "節目結尾"
+            ]
+          ]
+        },
+        {
+          "name": "點歌和 call-in Requests and call-ins",
+          "rows": [
+            [
+              "The phone lines are open.",
+              "電話專線開放了。",
+              "邀聽眾打電話"
+            ],
+            [
+              "You're on the air.",
+              "你現在在線上播出了。",
+              "接通聽眾時"
+            ],
+            [
+              "Who am I speaking with?",
+              "請問你是哪位？",
+              "問來電者名字"
+            ],
+            [
+              "Where are you calling from?",
+              "你從哪裡打來的？",
+              "問地點"
+            ],
+            [
+              "What would you like to hear?",
+              "你想聽什麼歌？",
+              "請聽眾點歌"
+            ],
+            [
+              "Can you play … for my mom?",
+              "可以播……給我媽媽嗎？",
+              "聽眾點歌送人"
+            ],
+            [
+              "This one goes out to Amy in Taichung.",
+              "這首歌送給台中的 Amy。",
+              "DJ 唸點歌留言"
+            ],
+            [
+              "Thanks for calling in!",
+              "謝謝你打電話進來！",
+              "掛電話前"
+            ],
+            [
+              "We'll get that on for you.",
+              "我們會幫你播那首。",
+              "答應點歌"
+            ],
+            [
+              "Be the tenth caller to win.",
+              "第十位打進來的聽眾就能得獎。",
+              "抽獎活動"
+            ]
+          ]
+        },
+        {
+          "name": "新聞主播 News anchors",
+          "rows": [
+            [
+              "Here are the top stories this hour.",
+              "以下是這個小時的重點新聞。",
+              "整點新聞開頭"
+            ],
+            [
+              "This just in.",
+              "剛剛收到的消息。",
+              "插播最新消息"
+            ],
+            [
+              "We go now to our reporter in Taipei.",
+              "現在連線台北的記者。",
+              "連線記者"
+            ],
+            [
+              "Officials say the cause is still unclear.",
+              "官方表示原因仍不清楚。",
+              "新聞常見句"
+            ],
+            [
+              "The president is expected to speak later today.",
+              "總統預計今天稍晚發表談話。",
+              "be expected to＝預計"
+            ],
+            [
+              "In other news, …",
+              "另外一則新聞……",
+              "換下一則"
+            ],
+            [
+              "Turning now to sports.",
+              "接下來是體育新聞。",
+              "換單元"
+            ],
+            [
+              "Stocks closed higher today.",
+              "今天股市收高。",
+              "財經新聞"
+            ],
+            [
+              "We'll have more on that story later.",
+              "這則新聞稍後有更多報導。",
+              "預告後續"
+            ],
+            [
+              "That's the news for now.",
+              "以上是本節新聞。",
+              "新聞結尾"
+            ]
+          ]
+        },
+        {
+          "name": "天氣與路況 Weather and traffic",
+          "rows": [
+            [
+              "Here's a look at the weather.",
+              "來看一下天氣。",
+              "天氣開頭"
+            ],
+            [
+              "Expect afternoon showers in the north.",
+              "北部下午會有陣雨。",
+              "expect＝預期會有"
+            ],
+            [
+              "Highs will reach 32 degrees.",
+              "最高溫會到 32 度。",
+              "high/low＝最高/最低溫"
+            ],
+            [
+              "It's going to be a hot one.",
+              "今天會很熱。",
+              "口語說法"
+            ],
+            [
+              "Don't forget your umbrella.",
+              "別忘了帶傘。",
+              "DJ 提醒"
+            ],
+            [
+              "A sea warning is in effect.",
+              "海上颱風警報生效中。",
+              "颱風季常聽到"
+            ],
+            [
+              "Traffic is heavy on the freeway.",
+              "高速公路車流量大。",
+              "路況報導"
+            ],
+            [
+              "There's an accident blocking one lane.",
+              "有一起事故佔用一個車道。",
+              "路況報導"
+            ],
+            [
+              "Allow extra time for your drive.",
+              "開車請多預留時間。",
+              "提醒駕駛"
+            ],
+            [
+              "Air quality is poor today.",
+              "今天空氣品質不佳。",
+              "空品報導"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "美國老師的觀察：美國孩子聽什麼？為什麼只聽不會開口",
+      "prose": [
+        "在美國，廣播大多是<strong>在車上</strong>聽的。上學、上班的路上，家長開著地方電台、NPR 的新聞，或是手機連上車子放 Podcast，孩子坐在後座跟著聽。所以美國孩子對「廣播的英文」很熟，是因為每天被動地聽了好幾年，不是因為專門去學。",
+        "但美國孩子會說英文，不是因為聽廣播，而是因為<strong>整天都有人回應他們說的話</strong>。聽是輸入，說是輸出，兩者用的是不同的能力：孩子可以聽懂 Stay tuned.，卻從來沒有機會自己說一句完整的英文。台灣孩子聽 ICRT 聽了很多年，卻在外國人面前說不出話，原因就在這裡。",
+        "另一個常見的落差是談論廣播時的中式英文。下面八句是台灣學生最常說錯的，左邊是常見說法，中間是美國人會說的版本。"
+      ],
+      "heads": [
+        "常見說法",
+        "道地說法",
+        "為什麼"
+      ],
+      "rows": [
+        [
+          "I listen ICRT.",
+          "I listen to ICRT.",
+          "listen 後面要加 to"
+        ],
+        [
+          "Open the radio.",
+          "Turn on the radio.",
+          "電器用 turn on / turn off"
+        ],
+        [
+          "I heard it from the radio.",
+          "I heard it on the radio.",
+          "廣播、電視、網路都用 on"
+        ],
+        [
+          "ICRT's channel is 100.7.",
+          "ICRT is at 100.7 FM.",
+          "收音機說 station 或直接說頻率"
+        ],
+        [
+          "The sound is too big.",
+          "It's too loud. Can you turn it down?",
+          "音量大用 loud，調小用 turn down"
+        ],
+        [
+          "The radio is not clear.",
+          "The reception is bad.",
+          "收訊不好用 reception"
+        ],
+        [
+          "Please play my song.",
+          "Can you play … for me?",
+          "點歌時說出歌名比較自然"
+        ],
+        [
+          "I want to call in the program.",
+          "I want to call in to the show.",
+          "call in to＋節目；口語多說 show"
+        ]
+      ],
+      "phone_cols": 3
+    },
+    {
+      "title": "ICRT 常見問題",
+      "faq": [
+        [
+          "ICRT 頻率是多少？",
+          "ICRT 是 FM 電台：<strong>台北、新竹、高雄都是 FM 100.7，台中是 FM 100.1，嘉義是 FM 100.8</strong>。不在收訊範圍內，或收訊不好時，可以改用官方 App 或官網的線上收聽。"
+        ],
+        [
+          "ICRT 怎麼線上收聽？",
+          "兩個方法：一是下載官方 <strong>ICRT App</strong>（iOS、Android 都有），可以隨時聽直播和 Podcast；二是到官網 icrt.com.tw，首頁有 TuneIn、YouTube 直播等線上收聽入口。想邊聽邊看英文稿，可以用官網 Learning 區的 EZ News 和 News Lunchbox。"
+        ],
+        [
+          "ICRT 是什麼的縮寫？中文叫什麼？",
+          "ICRT 是 International Community Radio Taipei 的縮寫，中文叫台北國際社區廣播電台，是台灣的英語廣播電台，由非營利的台北國際社區文化基金會經營。唸法是四個字母分開：I-C-R-T，重音在最後的 T。"
+        ],
+        [
+          "聽 ICRT 學英文有用嗎？",
+          "對國中以上、已經有基礎的學生有用：正常語速、台灣的新聞話題、真實的 DJ 口語，都是課本給不了的。但它是「輸入」：聽得懂不等於說得出來。把它當每天的耳朵練習，再配合跟讀和開口說，效果才會出來。"
+        ],
+        [
+          "小孩適合聽什麼英文廣播？",
+          "國小孩子先不要直接開 FM 一般節目，語速太快。ICRT 和教育部國教署合作的 <strong>News for Kids</strong> 是國小程度的短新聞，有英文稿和中文翻譯；國中生可以聽同系列的 News Bites。再搭配英文歌和 CoolEnglish 的分級聽力，比整天開著電台有效。"
+        ],
+        [
+          "英文廣播電台推薦哪些？",
+          "在台灣能用收音機聽的英語電台，首選就是 ICRT。想要專為學習者設計的內容，可以聽 BBC Learning English（英式）和 VOA Learning English（美式、語速較慢）；程度好的學生可以挑戰美國公共廣播 NPR 的 Podcast。國小孩子從 ICRT News for Kids 和 CoolEnglish 開始。"
+        ]
+      ]
+    }
+  ],
+  "cta_h2": "聽得懂之後，下一步是開口說",
+  "cta": "廣播能把英文送進孩子的耳朵，但沒辦法回應孩子說的話。我們在板橋的小班課由美國老師帶，做的正是廣播做不到的那一半：孩子聽完一句 Coming up next，就要自己用英文說出接下來要做什麼；說錯了，老師當場示範一次，再讓孩子說一遍。聽和說一起練，英文才會從「聽得懂」走到「說得出口」。"
+}

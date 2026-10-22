@@ -1,0 +1,1113 @@
+{
+ "slug": "airport-english",
+ "published": "2026-10-22",
+ "target": "機場英文",
+ "index": 0.6,
+ "h1": "機場英文 74 個單字＋40 句：機票英文、出國英文，從報到、安檢、入境到領行李",
+ "title": "機場英文74個單字＋40句：機票英文、出國英文，從報到到入境｜埃森美語",
+ "desc": "機場英文對照表：照出國流程排好的 74 個單字，從機票、託運、安檢、入境、海關到領行李；加上 40 句報到、入境、機上會說的英文、25 個機場標示和廣播，附 PDF。",
+ "hero": "帶孩子出國，最緊張的常常不是飛機，而是機場裡那幾個要開口的時刻：報到櫃台問要不要靠窗、安檢人員叫你把筆電拿出來、入境時移民官問你來做什麼。下面先給<strong>照著你在機場走的順序排好的 74 個機場英文</strong>，從訂機票、託運行李到行李轉盤；接著是 aisle 這類容易唸錯的字、每一關會說的 40 句、25 個看得到也聽得到的機場標示和廣播，最後是一段孩子可以用來說這趟旅行的英文，和美國機場跟台灣不一樣的地方。",
+ "sections": [
+  {
+   "title": "機場英文對照表：從訂機票到領行李，照順序 74 個（附用法）",
+   "prose": [
+    "照你在機場走的順序分成 9 組：出發前、報到櫃台、安檢、出入境、海關、登機門、轉機與延誤、飛機上、抵達，共 74 個。第三欄寫怎麼用、哪裡容易錯。印出來帶著走，孩子可以邊走邊找：「現在我們在哪一關？」",
+    "先記兩個最常搞混的：<strong>機票不是登機證</strong>，訂好的機票是 plane ticket 或 e-ticket，報到後拿到、上飛機要給人看的是 boarding pass；<strong>行李 luggage、baggage 都不可數</strong>，要數的時候說 two bags 或 two pieces of luggage。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "用法／注意"
+   ],
+   "groups": [
+    {
+     "name": "出發前 Before you go",
+     "rows": [
+      [
+       "plane ticket",
+       "機票",
+       "口語常只說 ticket；買機票說 book a flight"
+      ],
+      [
+       "e-ticket",
+       "電子機票",
+       "訂好後寄到 email 的那張，不是登機證"
+      ],
+      [
+       "booking",
+       "訂位",
+       "美國也常說 reservation"
+      ],
+      [
+       "confirmation number",
+       "訂位代號",
+       "美國航空公司的說法，通常是六個英文字母和數字"
+      ],
+      [
+       "round-trip ticket",
+       "來回機票",
+       "單程是 one-way ticket"
+      ],
+      [
+       "itinerary",
+       "行程表",
+       "訂位後收到的航班時間表；唸 [aɪˈtɪnəˌrɛrɪ]"
+      ],
+      [
+       "passport",
+       "護照",
+       "小孩也要有自己的護照"
+      ],
+      [
+       "visa",
+       "簽證",
+       "唸 [ˈvizə]；台灣護照去美國短期旅遊多半是申請 ESTA"
+      ],
+      [
+       "luggage",
+       "行李",
+       "不可數：two pieces of luggage，不說 two luggages"
+      ],
+      [
+       "baggage",
+       "行李（航空公司用字）",
+       "也不可數；機場標示和航空公司多用 baggage"
+      ],
+      [
+       "suitcase",
+       "行李箱",
+       "可數：two suitcases；口語也說 bag"
+      ],
+      [
+       "carry-on",
+       "手提行李",
+       "也說 carry-on bag、hand luggage"
+      ],
+      [
+       "check a bag",
+       "託運行李",
+       "I'd like to check two bags.＝我要託運兩件"
+      ]
+     ]
+    },
+    {
+     "name": "報到櫃台 Check-in",
+     "rows": [
+      [
+       "check-in counter",
+       "報到櫃台",
+       "找自己航空公司的名字和櫃台號碼"
+      ],
+      [
+       "check in",
+       "辦理報到",
+       "動詞兩個字分開；名詞 check-in 有連字號"
+      ],
+      [
+       "online check-in",
+       "網路報到",
+       "出發前用 app 或網站先報到"
+      ],
+      [
+       "boarding pass",
+       "登機證",
+       "上面有登機門、座位和登機時間"
+      ],
+      [
+       "window seat",
+       "靠窗座位",
+       "小孩最想坐的位子"
+      ],
+      [
+       "aisle seat",
+       "靠走道座位",
+       "aisle 的 s 不發音，唸 [aɪl]"
+      ],
+      [
+       "overweight",
+       "超重",
+       "行李超重要另外付費"
+      ],
+      [
+       "bag tag",
+       "行李條",
+       "櫃台貼在行李上的條碼；給你的那張小收據要留好"
+      ]
+     ]
+    },
+    {
+     "name": "安檢 Security",
+     "rows": [
+      [
+       "security check",
+       "安全檢查（安檢）",
+       "口語直接說 security"
+      ],
+      [
+       "go through security",
+       "通過安檢",
+       "We need to go through security now."
+      ],
+      [
+       "security line",
+       "安檢排隊的隊伍",
+       "美國人說 line，英國人說 queue"
+      ],
+      [
+       "bin",
+       "置物籃",
+       "包包、外套、手機放進去過 X 光"
+      ],
+      [
+       "metal detector",
+       "金屬探測門",
+       "一個一個走過去"
+      ],
+      [
+       "body scanner",
+       "全身掃描機",
+       "站進去、雙手舉高"
+      ],
+      [
+       "liquids",
+       "液體",
+       "隨身的液體有容量限制，要放進透明夾鏈袋"
+      ],
+      [
+       "laptop",
+       "筆記型電腦",
+       "有些安檢要拿出來另外放一籃"
+      ]
+     ]
+    },
+    {
+     "name": "出境、入境 Immigration",
+     "rows": [
+      [
+       "departure",
+       "出境；出發",
+       "機場標示寫 Departures"
+      ],
+      [
+       "immigration",
+       "證照查驗（移民關）",
+       "看護照、問問題的地方"
+      ],
+      [
+       "passport control",
+       "護照查驗",
+       "和 immigration 同一個地方的另一種說法"
+      ],
+      [
+       "immigration officer",
+       "移民官",
+       "回答簡短、清楚就好"
+      ],
+      [
+       "arrival card",
+       "入境卡",
+       "有些國家要填；在台灣是外國旅客才要填"
+      ],
+      [
+       "purpose of your visit",
+       "入境目的",
+       "答 vacation、visiting family 這類一兩個字"
+      ],
+      [
+       "e-Gate",
+       "自動通關",
+       "台灣桃園機場的自動通關閘門就叫 e-Gate"
+      ]
+     ]
+    },
+    {
+     "name": "海關 Customs",
+     "rows": [
+      [
+       "customs",
+       "海關",
+       "不是 costumes（戲服）"
+      ],
+      [
+       "customs declaration",
+       "海關申報",
+       "有的機場填紙本，有的用機器或 app"
+      ],
+      [
+       "declare",
+       "申報",
+       "Do you have anything to declare?"
+      ],
+      [
+       "duty-free",
+       "免稅",
+       "免稅店是 duty-free shop"
+      ],
+      [
+       "prohibited items",
+       "違禁品",
+       "每個國家規定不同，出發前先查"
+      ]
+     ]
+    },
+    {
+     "name": "登機門與登機 Gate and boarding",
+     "rows": [
+      [
+       "gate",
+       "登機門",
+       "Gate 12 的 G 大寫，前面不加 the"
+      ],
+      [
+       "boarding",
+       "登機（名詞）",
+       "Boarding starts at 9:20."
+      ],
+      [
+       "board",
+       "登機（動詞）",
+       "廣播說 Flight 851 is now boarding."
+      ],
+      [
+       "boarding time",
+       "登機時間",
+       "比起飛時間早，要看這個"
+      ],
+      [
+       "departure time",
+       "起飛時間",
+       "航班表上寫的時間"
+      ],
+      [
+       "boarding group",
+       "登機分組",
+       "美國航空公司按 Group 1、Group 2 叫號"
+      ],
+      [
+       "pre-boarding",
+       "優先登機",
+       "帶幼兒的家庭常可以先上"
+      ],
+      [
+       "gate check",
+       "登機門託運",
+       "嬰兒推車推到登機門再交給地勤"
+      ]
+     ]
+    },
+    {
+     "name": "轉機與延誤 Layovers and delays",
+     "rows": [
+      [
+       "layover",
+       "轉機停留",
+       "We have a two-hour layover in Tokyo."
+      ],
+      [
+       "connecting flight",
+       "轉機航班",
+       "下一段要搭的那班"
+      ],
+      [
+       "transfer",
+       "轉機（機場標示）",
+       "亞洲的機場常寫 Transfer 或 Transit"
+      ],
+      [
+       "delayed",
+       "延誤",
+       "形容詞：My flight is delayed."
+      ],
+      [
+       "canceled",
+       "取消",
+       "美式多拼 canceled，英式 cancelled，兩種都對"
+      ],
+      [
+       "missed connection",
+       "沒趕上轉機",
+       "I missed my connecting flight."
+      ],
+      [
+       "rebook",
+       "改訂、改搭別班",
+       "航班取消後到櫃台請他們幫你 rebook"
+      ]
+     ]
+    },
+    {
+     "name": "飛機上 On the plane",
+     "rows": [
+      [
+       "flight attendant",
+       "空服員",
+       "不分男女都用這個字"
+      ],
+      [
+       "seat belt",
+       "安全帶",
+       "繫上是 fasten，解開是 unfasten"
+      ],
+      [
+       "overhead bin",
+       "頭頂置物櫃",
+       "放手提行李的地方"
+      ],
+      [
+       "tray table",
+       "餐桌板",
+       "起降時要收起來"
+      ],
+      [
+       "in-flight meal",
+       "機上餐點",
+       "兒童餐是 kids' meal 或 child meal，要事先訂"
+      ],
+      [
+       "lavatory",
+       "廁所（機上標示）",
+       "口語說 restroom 或 bathroom"
+      ],
+      [
+       "seatback screen",
+       "椅背螢幕",
+       "看電影、看飛航地圖"
+      ],
+      [
+       "turbulence",
+       "亂流",
+       "We're experiencing some turbulence."
+      ],
+      [
+       "take off",
+       "起飛",
+       "動詞兩個字；名詞 takeoff"
+      ],
+      [
+       "land",
+       "降落",
+       "名詞 landing"
+      ],
+      [
+       "jet lag",
+       "時差（身體的）",
+       "I have jet lag.＝我在調時差"
+      ]
+     ]
+    },
+    {
+     "name": "抵達 Arrival",
+     "rows": [
+      [
+       "arrival",
+       "抵達、入境",
+       "機場標示寫 Arrivals"
+      ],
+      [
+       "baggage claim",
+       "行李提領處",
+       "下飛機、過完入境後跟著這個標示走"
+      ],
+      [
+       "carousel",
+       "行李轉盤",
+       "螢幕上會寫你的航班在幾號轉盤"
+      ],
+      [
+       "lost luggage",
+       "行李遺失",
+       "找航空公司的 baggage service 櫃台"
+      ],
+      [
+       "exit",
+       "出口",
+       "唸 [ˈɛgzɪt] 或 [ˈɛksɪt] 都可以"
+      ],
+      [
+       "ground transportation",
+       "地面交通（計程車、巴士）",
+       "找計程車、巴士、捷運跟著這個指標"
+      ],
+      [
+       "pick up",
+       "接機",
+       "Can you pick us up at the airport?"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "機場英文怎麼唸：aisle 的 s 不發音，customs 不是 costumes",
+   "prose": [
+    "機場英文本身不難，難的是聽得懂、說得出來的那幾個字。最經典的陷阱是 <strong>aisle（走道）：s 不發音，唸 [aɪl]</strong>，跟 I'll 一模一樣。報到時說 An aisle seat, please.，唸成「愛舉」對方會愣一下；唸對了，就是很短的一聲「唉偶」。",
+    "下面 14 個字是機場廣播和標示最常出現、台灣學生最常唸錯的。音標符號對照見 <a href=\"/kk-phonetic-chart/\">KK 音標表</a>。"
+   ],
+   "heads": [
+    "英文",
+    "KK 音標",
+    "注意"
+   ],
+   "rows": [
+    [
+     "aisle",
+     "[aɪl]",
+     "s 不發音，和 I'll 同音；不要唸成「愛舉」"
+    ],
+    [
+     "airport",
+     "[ˈɛrˌport]",
+     "air 是 [ɛr]，不是「A」"
+    ],
+    [
+     "boarding",
+     "[ˈbordɪŋ]",
+     "中間的 r 要捲出來"
+    ],
+    [
+     "customs",
+     "[ˈkʌstəmz]",
+     "cus 是 [kʌ]；costume 是 [ˈkɑstjum]，意思是戲服"
+    ],
+    [
+     "luggage",
+     "[ˈlʌgɪdʒ]",
+     "第二音節輕輕的 [ɪdʒ]，不是 age"
+    ],
+    [
+     "baggage",
+     "[ˈbægɪdʒ]",
+     "同樣結尾 [ɪdʒ]；重音在 bag"
+    ],
+    [
+     "departure",
+     "[dɪˈpɑrtʃɚ]",
+     "重音在 par；結尾是 [tʃɚ]"
+    ],
+    [
+     "arrival",
+     "[əˈraɪvḷ]",
+     "重音在 ri；開頭的 a 很輕"
+    ],
+    [
+     "flight",
+     "[flaɪt]",
+     "是 l 不是 r；fright 是驚嚇。結尾 t 輕收，不要加「ㄜ」"
+    ],
+    [
+     "passport",
+     "[ˈpæsˌport]",
+     "pass 的 a 是 [æ]，嘴巴張大"
+    ],
+    [
+     "visa",
+     "[ˈvizə]",
+     "vi 唸 [vi]，不是「威」"
+    ],
+    [
+     "carousel",
+     "[ˌkærəˈsɛl]",
+     "重音在最後的 sel"
+    ],
+    [
+     "security",
+     "[sɪˈkjʊrətɪ]",
+     "重音在 cu，美國人常把 t 唸得像輕輕的 d"
+    ],
+    [
+     "immigration",
+     "[ˌɪməˈgreʃən]",
+     "重音在 gra"
+    ]
+   ],
+   "after": [
+    "另外兩組要分清楚：customs（海關）和 costumes（萬聖節的戲服）只差一個音，入境時聽到 Customs this way. 是叫你往海關走；flight（班機）和 fright（驚嚇）差在 l 和 r。數字也要練：登機門、航班號碼、座位號碼都是數字加字母，像 Gate B12、Flight 851、Seat 32A，怎麼唸見 <a href=\"/english-numbers-guide/\">英文數字</a>。"
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "機場每一關會說的英文：報到、安檢、入境、海關、機上 40 句",
+   "prose": [
+    "機場裡要開口的時間其實很短，每一關幾句話而已。下面 40 句照關卡分好，第三欄標出<strong>誰說、什麼時候說</strong>：一半是你要聽得懂的（地勤、安檢、移民官、空服員問的），一半是你要說得出口的。最後一組是孩子在路上會說的，讓孩子自己練。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "誰說、什麼時候"
+   ],
+   "groups": [
+    {
+     "name": "報到櫃台 Check-in",
+     "rows": [
+      [
+       "I'd like a window seat, please.",
+       "我想要靠窗的位子。",
+       "旅客・報到時"
+      ],
+      [
+       "Could we sit together? We're traveling with two kids.",
+       "我們可以坐在一起嗎？我們帶兩個小孩。",
+       "家長・報到時最重要的一句"
+      ],
+      [
+       "I'd like to check two bags.",
+       "我要託運兩件行李。",
+       "旅客"
+      ],
+      [
+       "Can I take this on the plane?",
+       "這個可以帶上飛機嗎？",
+       "旅客・指著包包問"
+      ],
+      [
+       "Passports, please.",
+       "請給我護照。",
+       "地勤人員"
+      ],
+      [
+       "Your bag is overweight.",
+       "你的行李超重了。",
+       "地勤人員"
+      ],
+      [
+       "Is the flight on time?",
+       "班機準時嗎？",
+       "旅客"
+      ]
+     ]
+    },
+    {
+     "name": "安檢 Security",
+     "rows": [
+      [
+       "Please take out your laptop.",
+       "請把筆電拿出來。",
+       "安檢人員"
+      ],
+      [
+       "Put your bags in the bin.",
+       "把包包放進籃子裡。",
+       "安檢人員"
+      ],
+      [
+       "Do you have any liquids in your bag?",
+       "你的包包裡有液體嗎？",
+       "安檢人員"
+      ],
+      [
+       "Step through, please.",
+       "請走過來。",
+       "安檢人員・叫你通過探測門"
+      ],
+      [
+       "Is this your bag?",
+       "這是你的包包嗎？",
+       "安檢人員・包包要再檢查時"
+      ]
+     ]
+    },
+    {
+     "name": "入境 Immigration",
+     "rows": [
+      [
+       "What's the purpose of your visit?",
+       "你來的目的是什麼？",
+       "移民官"
+      ],
+      [
+       "We're here on vacation.",
+       "我們來度假。",
+       "旅客・回答目的"
+      ],
+      [
+       "How long will you be staying?",
+       "你會待多久？",
+       "移民官"
+      ],
+      [
+       "About ten days.",
+       "大約十天。",
+       "旅客・說天數就好"
+      ],
+      [
+       "Where are you staying?",
+       "你住在哪裡？",
+       "移民官"
+      ],
+      [
+       "We're staying at a hotel near the beach.",
+       "我們住在海邊附近的一家飯店。",
+       "旅客・最好準備好飯店名稱和地址"
+      ]
+     ]
+    },
+    {
+     "name": "海關 Customs",
+     "rows": [
+      [
+       "Anything to declare?",
+       "有東西要申報嗎？",
+       "海關人員"
+      ],
+      [
+       "No, nothing to declare.",
+       "沒有，沒有要申報的。",
+       "旅客"
+      ],
+      [
+       "Do you have any fruit or meat?",
+       "你有帶水果或肉類嗎？",
+       "海關人員"
+      ],
+      [
+       "Just some snacks for my kids.",
+       "只有一些給孩子的零食。",
+       "旅客・照實說"
+      ]
+     ]
+    },
+    {
+     "name": "登機門、延誤 Gate and delays",
+     "rows": [
+      [
+       "Which gate do we go to?",
+       "我們要到幾號登機門？",
+       "旅客・看登機證之前先問"
+      ],
+      [
+       "Where is Gate B12?",
+       "B12 登機門在哪裡？",
+       "旅客・問路"
+      ],
+      [
+       "Has boarding started?",
+       "開始登機了嗎？",
+       "旅客"
+      ],
+      [
+       "Our flight is delayed.",
+       "我們的班機延誤了。",
+       "家長・告訴孩子或打電話"
+      ],
+      [
+       "We missed our connecting flight.",
+       "我們沒趕上轉機的班機。",
+       "旅客・到轉機櫃台說"
+      ],
+      [
+       "Can you put us on the next flight?",
+       "可以幫我們改搭下一班嗎？",
+       "旅客・請地勤改訂"
+      ]
+     ]
+    },
+    {
+     "name": "飛機上 On the plane",
+     "rows": [
+      [
+       "Excuse me, I think you're in my seat.",
+       "不好意思，你好像坐到我的位子了。",
+       "旅客・客氣的說法"
+      ],
+      [
+       "Could you help me put this in the overhead bin?",
+       "可以幫我把這個放到上面的置物櫃嗎？",
+       "旅客・請空服員或旁邊的人幫忙"
+      ],
+      [
+       "Chicken or beef?",
+       "雞肉還是牛肉？",
+       "空服員・送餐時"
+      ],
+      [
+       "Chicken, please.",
+       "雞肉，謝謝。",
+       "旅客・選一個加 please"
+      ],
+      [
+       "Could I have some water, please?",
+       "可以給我一點水嗎？",
+       "旅客"
+      ],
+      [
+       "Excuse me, could I get by?",
+       "不好意思，借過一下。",
+       "坐靠窗要出去時"
+      ]
+     ]
+    },
+    {
+     "name": "孩子會說的 Kids",
+     "rows": [
+      [
+       "How long is the flight?",
+       "要飛多久？",
+       "孩子・起飛前一定會問"
+      ],
+      [
+       "Are we there yet?",
+       "到了沒？",
+       "孩子・美國小孩的經典台詞"
+      ],
+      [
+       "My ears hurt.",
+       "我的耳朵痛。",
+       "孩子・起降時；家長答 Try swallowing."
+      ],
+      [
+       "I need to go to the bathroom.",
+       "我要上廁所。",
+       "孩子"
+      ],
+      [
+       "Can I have the window seat?",
+       "我可以坐靠窗嗎？",
+       "孩子・跟兄弟姊妹搶位子"
+      ],
+      [
+       "Stay with me and hold my hand.",
+       "跟著我，牽我的手。",
+       "家長・人多的地方"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "入境時移民官問 Where are you staying?，最好直接說出飯店名稱或把地址給他看；地址的英文寫法見 <a href=\"/english-address/\">英文地址</a>。登機時間、起飛時間、轉機剩多少時間，說法見 <a href=\"/time-english/\">時間英文</a>。"
+   ]
+  },
+  {
+   "title": "機場標示和廣播英文 25 個：Now Boarding、Final Call 是什麼意思",
+   "prose": [
+    "機場裡大部分的英文是用看的和用聽的。下面 25 個是最常見的標示、航班表狀態和廣播，第三欄是<strong>看到或聽到之後該做什麼</strong>。航班表上的字最要緊：Gate Change 和 Final Call 一出現就要動作。"
+   ],
+   "heads": [
+    "英文標示／廣播",
+    "中文",
+    "看到、聽到之後"
+   ],
+   "rows": [
+    [
+     "Departures",
+     "出境、出發",
+     "要搭飛機走，跟著這個"
+    ],
+    [
+     "Arrivals",
+     "入境、抵達",
+     "下飛機的人從這裡出來；接機也在這"
+    ],
+    [
+     "Check-in",
+     "報到",
+     "報到櫃台區"
+    ],
+    [
+     "Bag Drop",
+     "行李託運",
+     "網路報到後，只剩託運行李的櫃台"
+    ],
+    [
+     "Security Checkpoint",
+     "安檢處",
+     "準備好登機證和護照"
+    ],
+    [
+     "All Gates",
+     "往各登機門",
+     "安檢後跟著走"
+    ],
+    [
+     "Transfer / Connecting Flights",
+     "轉機",
+     "要轉機的人走這邊，不要出關"
+    ],
+    [
+     "Baggage Claim",
+     "行李提領",
+     "下飛機領託運行李"
+    ],
+    [
+     "Nothing to Declare",
+     "無申報",
+     "沒有要申報的東西走這條（綠色通道）"
+    ],
+    [
+     "Goods to Declare",
+     "有申報",
+     "有要申報的東西走這條（紅色通道）"
+    ],
+    [
+     "Restrooms",
+     "廁所",
+     "美國的標示；其他地方也寫 Toilets"
+    ],
+    [
+     "Ground Transportation",
+     "地面交通",
+     "計程車、巴士、租車"
+    ],
+    [
+     "On Time",
+     "準時",
+     "航班表上的狀態"
+    ],
+    [
+     "Delayed",
+     "延誤",
+     "看旁邊的新時間"
+    ],
+    [
+     "Canceled",
+     "取消",
+     "到航空公司櫃台改訂"
+    ],
+    [
+     "Gate Change",
+     "更改登機門",
+     "登機證上的登機門不算數了，看新的"
+    ],
+    [
+     "Now Boarding",
+     "登機中",
+     "可以去排隊上飛機了"
+    ],
+    [
+     "Final Call",
+     "最後登機廣播",
+     "快要關門了，馬上去登機門"
+    ],
+    [
+     "Gate Closed",
+     "登機門已關閉",
+     "來不及了，去櫃台問下一班"
+    ],
+    [
+     "We are now boarding families with small children.",
+     "現在請帶幼兒的家庭先登機。",
+     "帶小孩的家長聽到這句就可以上"
+    ],
+    [
+     "Please have your boarding pass and passport ready.",
+     "請準備好登機證和護照。",
+     "登機前的廣播"
+    ],
+    [
+     "Please do not leave your bags unattended.",
+     "請勿將行李留置無人看管。",
+     "機場廣播；包包不要離開身邊"
+    ],
+    [
+     "The captain has turned on the seat belt sign.",
+     "機長已打開繫緊安全帶的燈號。",
+     "機上；回座位繫好安全帶"
+    ],
+    [
+     "Please put your tray table up and your seat in the upright position.",
+     "請收起餐桌板，豎直椅背。",
+     "降落前的廣播"
+    ],
+    [
+     "Please remain seated until the seat belt sign is off.",
+     "在安全帶燈號熄滅前請留在座位上。",
+     "降落後，先不要站起來拿行李"
+    ]
+   ],
+   "after": [
+    "降落前機長的廣播常會報目的地的天氣和溫度，像 It's sunny and 75 degrees in Los Angeles.；美國用華氏，75 度大約是攝氏 24 度。天氣的說法見 <a href=\"/weather-english/\">天氣英文</a>。"
+   ]
+  },
+  {
+   "title": "教孩子用英文說這趟旅行：7 句範本＋外國朋友會問的 3 個問題",
+   "prose": [
+    "寒暑假出國回來，外師第一個問題常常是 Did you go anywhere this summer?。下面 7 句是給國小孩子的範本，全部用過去式，因為旅行已經結束了；中文在第二欄，第三欄是文法提示。東京可以換成任何一個去過的地方。第二組是外國朋友或外師聽完會追問的三個問題。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "提示"
+   ],
+   "groups": [
+    {
+     "name": "說一趟旅行（7 句）",
+     "rows": [
+      [
+       "Last summer, my family flew to Tokyo.",
+       "去年夏天，我們全家飛去東京。",
+       "flew 是 fly 的過去式"
+      ],
+      [
+       "We got to the airport three hours early.",
+       "我們提早三個小時到機場。",
+       "got to＝到達"
+      ],
+      [
+       "My dad checked two bags at the counter.",
+       "爸爸在櫃台託運了兩件行李。",
+       "check a bag＝託運"
+      ],
+      [
+       "I had my own passport and boarding pass.",
+       "我有自己的護照和登機證。",
+       "my own＝我自己的"
+      ],
+      [
+       "I sat by the window and saw the clouds below us.",
+       "我坐靠窗，看到雲在我們下面。",
+       "sat、saw 都是不規則過去式"
+      ],
+      [
+       "The flight took about three hours.",
+       "飛了大約三個小時。",
+       "took＋時間＝花了多久"
+      ],
+      [
+       "When we landed, we waited for our bags at baggage claim.",
+       "降落以後，我們在行李提領處等行李。",
+       "when＝當……的時候"
+      ]
+     ]
+    },
+    {
+     "name": "外國朋友會問（3 組問答）",
+     "rows": [
+      [
+       "Q: Where did you go?",
+       "你去了哪裡？",
+       "最常被問的第一題"
+      ],
+      [
+       "A: We went to Japan. It was my first time on a plane!",
+       "我們去日本。那是我第一次坐飛機！",
+       "國家名稱見國家英文"
+      ],
+      [
+       "Q: How long was the flight?",
+       "飛了多久？",
+       "how long 問時間長短"
+      ],
+      [
+       "A: About three hours. I watched a movie and fell asleep.",
+       "大約三個小時。我看了一部電影就睡著了。",
+       "先答時間，再補一件事"
+      ],
+      [
+       "Q: Were you scared on the plane?",
+       "你在飛機上會害怕嗎？",
+       "外師很愛問小孩"
+      ],
+      [
+       "A: A little, when we took off. But then it was fun.",
+       "起飛的時候有一點，可是後來很好玩。",
+       "took off 是 take off 的過去式"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "練法：不要整段背。家長用中文問「我們幾點到機場？」「你坐哪裡？」，孩子用英文答一句；七句都答得出來，再讓孩子從頭連著說一次。去的地方換成其他國家，國名和國籍的英文見 <a href=\"/countries-english/\">國家英文</a>。",
+    "下次出國前，可以讓孩子負責機場裡的一件事：找登機門、跟空服員要一杯水、或是在行李轉盤認出自家的行李箱說 That's ours!。在機場自己用過一次的英文，比在課本上讀十次記得牢。"
+   ]
+  },
+  {
+   "title": "美國老師的提醒：美國機場哪裡不一樣，和 10 句常見的中式英文",
+   "prose": [
+    "第一次帶孩子進出美國的機場，有幾件事跟在桃園不一樣，先知道就不會慌。<strong>第一，美國沒有出境查驗</strong>：離開美國時只過安檢，沒有移民官蓋章。<strong>第二，入境在第一個落地的美國機場</strong>：就算還要轉國內線，也要在第一站過移民關、領行李、過海關，再把行李重新託運，所以轉機時間要留長一點。",
+    "<strong>第三，美國人把安檢叫 TSA</strong>（負責安檢的政府單位），會說 The TSA line is really long.。<strong>第四，登機按組別</strong>：登機證上印著 Group 3，就等廣播叫到 Group 3 再排隊；很多航空公司讓帶小小孩的家庭先上。<strong>第五，美國機場出口大多沒有紅綠通道</strong>，Nothing to Declare 這類標示在亞洲和歐洲比較常見；美國的海關人員會直接問你帶了什麼。肉製品（包括肉乾、香腸）和新鮮水果，進美國幾乎都要申報或不能帶，從台灣帶零食前先看清楚包裝。",
+    "入境問答要短。移民官每天問幾百個人，他要的是清楚的答案，不是長篇解釋，也不要開玩笑；孩子在旁邊說一句 Hello! 就很好。下面是台灣旅客在機場最常說錯的 10 句，左欄是常見說法，中間是道地說法，右欄是原因。"
+   ],
+   "heads": [
+    "常見說法",
+    "道地說法",
+    "為什麼"
+   ],
+   "rows": [
+    [
+     "I have two luggages.",
+     "I have two bags. / I have two pieces of luggage.",
+     "luggage、baggage 都不可數，不能加 s"
+    ],
+    [
+     "This is my ticket. (在登機門)",
+     "Here's my boarding pass.",
+     "機票是訂位時買的，登機門要看的是登機證"
+    ],
+    [
+     "When can we get on the plane?",
+     "When does boarding start?",
+     "get on the plane 也對，但廣播和登機證上用的是 board、boarding，要聽得懂"
+    ],
+    [
+     "I'm going out of the country.",
+     "I'm going abroad. / We're traveling overseas.",
+     "出國說 go abroad 或 travel overseas 最自然"
+    ],
+    [
+     "My flight is delay.",
+     "My flight is delayed.",
+     "delayed 是形容詞，要加 -ed"
+    ],
+    [
+     "Where is the gate 12?",
+     "Where is Gate 12?",
+     "登機門號碼前不加 the，Gate 大寫"
+    ],
+    [
+     "I want to sit window.",
+     "I'd like a window seat, please.",
+     "sit window 不完整，要說 window seat"
+    ],
+    [
+     "Where is the toilet?",
+     "Where's the restroom?",
+     "在美國 toilet 多半指馬桶本身，公共場所說 restroom"
+    ],
+    [
+     "Open the light, please.",
+     "Could you turn on the light?",
+     "燈是 turn on／turn off，不是 open／close"
+    ],
+    [
+     "I'm Taiwan.",
+     "I'm from Taiwan. / I'm Taiwanese.",
+     "I'm 後面接國籍，或用 from 接國名"
+    ]
+   ],
+   "after": [
+    "想把整趟旅行（飯店、餐廳、問路、買東西）的英文一起準備的話，站上另一頁「旅遊英文」會接著講；這一頁只管機場。"
+   ],
+   "phone_cols": 3
+  },
+  {
+   "title": "機場英文常見問題",
+   "faq": [
+    [
+     "機場英文最常用的是哪幾句？",
+     "最常用的五句：報到時 I'd like a window seat, please. 和 I'd like to check two bags.；安檢時聽懂 Please take out your laptop.；入境時回答 We're here on vacation. 和 About ten days.；飛機上說 Could I have some water, please?。帶孩子的家長再加一句 Could we sit together? We're traveling with two kids."
+    ],
+    [
+     "機票英文怎麼說？和登機證一樣嗎？",
+     "機票是 plane ticket，口語常只說 ticket；網路訂的叫 e-ticket，訂位代號在美國叫 confirmation number。登機證是 boarding pass，是報到之後才拿到的，上面有登機門和座位。在登機門給人看的是 boarding pass，不是 ticket。"
+    ],
+    [
+     "行李英文是 luggage 還是 baggage？可以說 luggages 嗎？",
+     "兩個都對，意思一樣，都是不可數名詞，不能說 luggages 或 baggages。機場標示和航空公司多用 baggage（baggage claim、baggage allowance），日常說話兩個都用。要數的時候說 two bags、two suitcases 或 two pieces of luggage。"
+    ],
+    [
+     "出國英文怎麼說？",
+     "最自然的是 go abroad 或 travel overseas：We're going abroad this summer.。說要去哪裡更常見：We're going to Japan for vacation.。不要說 go out of the country 當「出國玩」，聽起來像在說要離開這個國家。"
+    ],
+    [
+     "轉機英文怎麼說？layover 和 transfer 差在哪？",
+     "layover 是兩班飛機之間停留的時間：We have a two-hour layover in Seoul.；要搭的下一班叫 connecting flight。transfer 和 transit 是亞洲機場標示上的字，告訴你轉機的人往哪走。跟人說話時用 layover 和 connecting flight 最自然。"
+    ],
+    [
+     "入境美國時移民官會問什麼？",
+     "最常問三題：What's the purpose of your visit?（答 Vacation. 或 Visiting family.）、How long will you be staying?（答 About two weeks.）、Where are you staying?（說飯店名稱或給他看地址）。照實回答、簡短清楚就好，聽不懂可以說 Sorry, could you say that again?"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "機場那幾句英文，孩子敢自己說嗎？",
+ "cta": "在機場，孩子跟空服員要一杯水、在轉盤看到自家行李箱大喊 That's ours!，那一刻用出來的英文會記很久。我們在板橋的小班課由美國老師帶，用的就是這種真實情境：從 Could I have some water, please? 到 How long is the flight?，讓孩子一句一句練到敢開口，下次出國自己說。"
+}
