@@ -24,7 +24,7 @@
      "name": "奶茶類 Milk teas",
      "rows": [
       ["milk tea", "奶茶", "台灣飲料店的奶茶多半用奶精；想強調是鮮奶，說 fresh milk tea"],
-      ["bubble milk tea", "珍珠奶茶", "全世界都懂；美國西岸多說 boba milk tea，或乾脆一個字 boba"],
+      ["bubble milk tea", "珍珠奶茶", "最通用的名稱；美國西岸和大城市多說 boba milk tea，或乾脆一個字 boba"],
       ["boba milk tea", "波霸奶茶", "在美國 boba 就是珍珠，不分大小；一定要強調大顆，說 big boba"],
       ["brown sugar boba milk tea", "黑糖珍珠奶茶", "黑糖是 brown sugar，不說 black sugar"],
       ["pudding milk tea", "布丁奶茶", "pudding 美國人懂；有人會接著問是不是 custard（蛋奶凍）"],
@@ -100,7 +100,7 @@
   {
    "title": "珍珠奶茶英文怎麼說、怎麼唸：bubble tea、boba、pearl milk tea 怎麼選",
    "prose": [
-    "珍珠奶茶的英文有四個常見說法，<strong>全世界最通用的是 bubble tea，美國西岸（加州一帶）日常幾乎只說 boba</strong>。boba 在美國有兩個意思：一是那杯飲料（Let's get boba.），二是珍珠本身（extra boba ＝ 珍珠加量）。pearl milk tea 是「珍珠奶茶」的直譯，美國人聽得懂，但自己不太這樣講；tapioca milk tea 比較像菜單或新聞的寫法。給孩子的簡單原則：寫作文、對不熟的外國人，用 bubble tea；跟美國朋友聊天，說 boba。",
+    "珍珠奶茶的英文有四個常見說法，<strong>最通用的是 bubble tea，美國西岸（加州一帶）和大城市多說 boba</strong>。不過要先知道：珍奶在美國主要是西岸和大城市的東西，很多美國人其實從來沒喝過，聽到 boba 一臉疑惑也很正常。boba 在美國有兩個意思：一是那杯飲料（Let's get boba.），二是珍珠本身（extra boba ＝ 珍珠加量）。pearl milk tea 是「珍珠奶茶」的直譯，美國人聽得懂，但自己不太這樣講；tapioca milk tea 比較像菜單或新聞的寫法。給孩子的簡單原則：寫作文、對不熟的外國人，用 bubble tea；跟美國朋友聊天，說 boba。",
     "很多人以為 bubble 指的是珍珠，其實一般的說法是：bubble 原本指的是茶用雪克杯搖過之後上面那層泡沫（台灣早期的「泡沫紅茶」），珍珠是後來才加進去的。所以 bubble tea 名字裡的「泡泡」，和杯底那些黑色的珍珠是兩回事——這個小知識跟外國人聊起來很好用。"
    ],
    "heads": [
@@ -112,7 +112,7 @@
     {
      "name": "四種名稱怎麼選",
      "rows": [
-      ["bubble tea", "珍珠奶茶（最通用）", "全世界都懂；美國東岸、英國、澳洲常用；寫作文、考試用這個"],
+      ["bubble tea", "珍珠奶茶（最通用）", "最通用的名稱，美國東岸、英國、澳洲常用；寫作文、考試用這個"],
       ["boba", "珍珠奶茶；珍珠", "美國西岸最常用；可以指飲料，也可以指珍珠：Want some boba?"],
       ["boba tea", "珍珠奶茶（美式說法）", "boba 後面加 tea 比較完整；美國珍奶店招牌常見，也寫 boba milk tea"],
       ["pearl milk tea", "珍珠奶茶（直譯）", "聽得懂，但美國人自己少用；台灣和東南亞的英文菜單常見"],
@@ -273,7 +273,7 @@
       ["My go-to order is half sugar, less ice.", "我固定都點半糖少冰。", "朋友・go-to ＝ 固定首選"],
       ["It's too sweet for me. I always get it with less sugar.", "對我來說太甜，我都點少糖。", "聊口味"],
       ["Which flavor do you like best?", "你最喜歡哪個口味？", "朋友・問對方"],
-      ["Let's grab some boba after school.", "放學去喝珍奶吧。", "美國學生最常說的講法；grab ＝ 順手買"]
+      ["Let's grab some boba after school.", "放學去喝珍奶吧。", "美國西岸、大城市學生常說的講法；grab ＝ 順手買"]
      ]
     }
    ],
@@ -310,9 +310,10 @@
   {
    "title": "美國老師的文化筆記：boba 進了英文字典、台灣為什麼發明了它、台式英文怎麼改",
    "prose": [
-    "在美國，中學生午休排隊買的不是咖啡，是 boba。這個字已經正式進入英文：Merriam-Webster（美國最通用的字典）和 Oxford English Dictionary（牛津英語詞典）都收錄了 boba 和 bubble tea；牛津查得到的最早英文書面例子，bubble tea 是 1993 年，boba 是 2000 年。手機鍵盤上也有一個珍珠奶茶的表情符號，2020 年加入。對台灣的孩子來說，這件事值得知道：<strong>珍珠奶茶是最多外國人認得、而且用英文叫得出名字的台灣食物之一</strong>。",
+    "在加州和紐約這類大城市，boba 店到處都是；但在美國很多地方，珍奶並不常見，不少美國人從沒喝過。這個字倒是已經正式進入英文：Merriam-Webster（美國最通用的字典）和 Oxford English Dictionary（牛津英語詞典）都收錄了 boba 和 bubble tea；牛津查得到的最早英文書面例子，bubble tea 是 1993 年，boba 是 2000 年。手機鍵盤上也有一個珍珠奶茶的表情符號，2020 年加入。對台灣的孩子來說，這件事值得知道：<strong>珍珠奶茶是少數有自己英文名字、而且進了英文字典的台灣食物</strong>；遇到沒喝過的外國朋友，正好由你來介紹。",
     "外國朋友常問：為什麼是台灣？可以這樣解釋：台灣本來就愛喝茶，也早就有粉圓這種 Q 的甜點（粉圓冰、紅豆粉圓），1980 年代台灣的茶館開始把紅茶加冰用雪克杯搖成「泡沫紅茶」，有人把粉圓加進奶茶裡，珍珠奶茶就誕生了。最常被提到的發源地是台中，但哪一家店最先做出來，至今有不同說法、沒有定論。所以跟外國人介紹時說 It was invented in Taiwan in the 1980s. 就夠了，不用背店名。",
-    "美國的珍奶店（boba shop）跟台灣有幾個不一樣的地方，先知道就不會愣住：很多店點餐時會問你的名字，寫在杯子上，好了就叫名字；容量說 small、medium、large；珍珠和其他配料多半要另外加，所以店員一定會問 Any toppings?；櫃台常放一個小費罐（tip jar），放不放都可以。還有一件事：boba 在美國年輕人口中已經是一個「活動」，Let's get boba. 跟台灣人說「去喝杯飲料」的意思一模一樣。",
+    "美國的珍奶店（boba shop）跟台灣有幾個不一樣的地方，先知道就不會愣住：很多店點餐時會問你的名字，寫在杯子上，好了就叫名字；容量說 small、medium、large；珍珠和其他配料多半要另外加，所以店員一定會問 Any toppings?；櫃台常放一個小費罐（tip jar），放不放都可以。還有一件事：在西岸和大城市的年輕人口中，boba 已經是一個「活動」，Let's get boba. 跟台灣人說「去喝杯飲料」的意思一模一樣。",
+    "我在密西根長大，小時候根本沒聽過珍珠奶茶。所以遇到沒喝過的美國朋友別意外，換你當老師。——Mr. Chris",
     "下面是台灣學生講珍奶時最常出現的台式英文，左邊是常聽到的說法，右邊是美國人真正會說的："
    ],
    "heads": [
@@ -341,7 +342,7 @@
    "title": "珍珠奶茶英文常見問題",
    "faq": [
     ["珍珠奶茶英文怎麼說？", "最通用的是 bubble tea，美國（尤其西岸）日常多說 boba 或 boba tea；pearl milk tea 和 tapioca milk tea 聽得懂，但美國人少用。寫作文、考試用 bubble tea，跟美國朋友聊天說 boba。珍珠本身是 tapioca pearls，口語也叫 boba。"],
-    ["bubble tea 和 boba 差在哪？", "指的是同一種飲料，差在地區和用法：bubble tea 全世界通用，美國東岸、英國、澳洲多說它；boba 是美國西岸的講法，而且 boba 還可以單指珍珠（extra boba ＝ 珍珠加量）。bubble 原本指的是搖出來的泡沫，不是珍珠。"],
+    ["bubble tea 和 boba 差在哪？", "指的是同一種飲料，差在地區和用法：bubble tea 最通用，美國東岸、英國、澳洲多說它；boba 是美國西岸和大城市的講法，而且 boba 還可以單指珍珠（extra boba ＝ 珍珠加量）。bubble 原本指的是搖出來的泡沫，不是珍珠。"],
     ["半糖少冰英文怎麼說？", "half sugar, less ice。甜度由多到少是 regular sugar、less sugar、half sugar、light sugar、no sugar；冰塊是 regular ice、less ice、light ice、no ice（去冰）。整句點法：Can I get a large milk tea, half sugar, less ice?"],
     ["波霸奶茶英文是什麼？跟珍珠奶茶一樣嗎？", "在台灣，波霸是大顆珍珠、珍珠是小顆的；但在美國，大小都叫 boba，波霸奶茶就是 boba milk tea。一定要講清楚大小，就說 big boba 或 mini boba。"],
     ["珍珠奶茶是哪裡發明的？英文怎麼介紹？", "台灣，1980 年代，最常被提到的城市是台中；哪一家店最先做出來有不同說法，沒有定論。跟外國人介紹只要說：Bubble tea was invented in Taiwan in the 1980s. The pearls are made from tapioca, and they're chewy."],

@@ -46,7 +46,7 @@
       [
        "advantage (ad)",
        "佔先",
-       "平分後贏一分；口語說 ad in（發球方佔先）、ad out（接球方佔先）"
+       "平分後贏一分：Advantage, server. 發球方佔先、Advantage, receiver. 接球方佔先"
       ],
       [
        "game",
@@ -464,7 +464,7 @@
    "title": "打網球、看網球會說的 40 句英文：上課、對打、看比賽、聊網球",
    "prose": [
     "球場上的英文都很短，因為球來了沒時間想。下面 40 句分四組：<strong>上課時教練會說的</strong>（Keep your eye on the ball. 眼睛盯著球）、<strong>對打時雙方會喊的</strong>（Your serve. 你發球）、<strong>看比賽時會說的</strong>（What a rally! 這回合太精彩了）、<strong>跟朋友聊網球</strong>。第三欄標出誰說、什麼時候說。",
-    "美國球場上有幾句一定要會：決定誰先發球是轉球拍問 <strong>Up or down?</strong>；每一分開打前由發球的人報分數，<strong>自己的分數先說</strong>，Fifteen-love 就是發球方 15 比 0；球出界喊 <strong>Out!</strong>；發球擦網落進發球區喊 <strong>Let!</strong> 重發。"
+    "美國球場上有幾句一定要會：輪到對方發球時說 <strong>Your serve.</strong>；每一分開打前由發球的人報分數，<strong>自己的分數先說</strong>，Fifteen-love 就是發球方 15 比 0；球出界喊 <strong>Out!</strong>；發球擦網落進發球區喊 <strong>Let!</strong> 重發。"
    ],
    "heads": [
     "英文",
@@ -541,9 +541,9 @@
      "name": "對打時 Playing",
      "rows": [
       [
-       "Up or down?",
-       "上還是下？",
-       "開打前轉球拍決定誰發球"
+       "Ready?",
+       "準備好了嗎？",
+       "發球前確認對方準備好"
       ],
       [
        "Your serve.",
@@ -566,9 +566,9 @@
        "同分說 all；40 平說 deuce"
       ],
       [
-       "Ad in.",
+       "Advantage, server.",
        "發球方佔先。",
-       "平分後發球方贏一分；接球方贏說 Ad out."
+       "平分後發球方贏一分；接球方贏說 Advantage, receiver."
       ],
       [
        "Out!",
@@ -875,8 +875,9 @@
   {
    "title": "美國老師的筆記：美國小孩怎麼學網球、球場上怎麼說，和 13 句中式英文",
    "prose": [
+    "我自己從小打網球長大，這一段寫的都是我在球場上真的說過、聽過的英文。<strong>— Mr. Chris</strong>",
     "先講美國小孩是怎麼接觸網球的。大部分城市的公園都有公共球場（public courts），多半不收費、先到先打；社區活動中心（the rec center）開團體課，暑假有 tennis camp，國中、高中有校隊（the tennis team），想比賽就打 USTA（美國網球協會）的青少年比賽。十歲以下的孩子先打紅球、橘球、綠點球：球比較軟、彈得低，球場也畫得比較小。美國小孩約打球不說 play tennis，而是說 <strong>hit</strong>：Wanna hit after school? 就是放學要不要去打球；I hit with my dad on weekends. 是週末跟爸爸練球。",
-    "球場上有幾個習慣，台灣的網球課不一定會教。開打前把球拍立在地上轉一圈，一邊問 Up or down?，看拍柄底的商標停下來朝上還是朝下，決定誰發球，跟擲硬幣一樣。沒有裁判時，<strong>球落在誰那半場就由誰判</strong>，出界喊 Out! 並舉起食指，界內不出聲；看不清楚的球一律算對方的，美國小孩從小就被這樣教，這叫 the honor system。最後一分打完，兩個人走到網前握手說 Good match.，輸的人也要說。順便學一個俚語：一盤 6 比 0 叫 <strong>a bagel</strong>，因為 0 長得像貝果，I got bageled. 就是我被剃光頭了。",
+    "球場上有幾個習慣，台灣的網球課不一定會教。沒有裁判時，<strong>球落在誰那半場就由誰判</strong>，出界喊 Out! 並舉起食指，界內不出聲；看不清楚的球一律算對方的，美國小孩從小就被這樣教，這叫 the honor system。最後一分打完，兩個人走到網前握手說 Good match.，輸的人也要說。順便學一個俚語：一盤 6 比 0 叫 <strong>a bagel</strong>，因為 0 長得像貝果，I got bageled. 就是我被剃光頭了。",
     "下面是台灣學生講網球時最常出現的中式英文：左欄是常聽到的說法，中間是美國人會說的，右欄是原因。"
    ],
    "heads": [
@@ -973,7 +974,7 @@
     ],
     [
      "deuce 是什麼意思？怎麼唸？",
-     "deuce 是 40 比 40，唸 [dus]，一個音節，跟 juice 押韻。平分之後要連贏兩分才拿下這局：先贏一分叫 advantage，口語說 ad in（發球方佔先）或 ad out（接球方佔先）；再贏一分就是 game，輸了就回到 deuce。這個字來自法文的「二」，意思是還要兩分。"
+     "deuce 是 40 比 40，唸 [dus]，一個音節，跟 juice 押韻。平分之後要連贏兩分才拿下這局：先贏一分叫 advantage，報分說 Advantage, server.（發球方佔先）或 Advantage, receiver.（接球方佔先）；再贏一分就是 game，輸了就回到 deuce。這個字來自法文的「二」，意思是還要兩分。"
     ],
     [
      "四大滿貫英文怎麼說？",

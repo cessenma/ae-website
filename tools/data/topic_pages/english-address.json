@@ -480,9 +480,9 @@
    ],
    "rows": [
     [
-     "220 新北市板橋區文化路一段 100 號 3 樓",
-     "3F., No. 100, Sec. 1, Wenhua Rd., Banqiao Dist., New Taipei City 220, Taiwan (R.O.C.)",
-     "樓在最前面，段在路前面"
+     "220 新北市板橋區中正路 89 巷 4 號 1 樓（埃森美語）",
+     "1F., No. 4, Ln. 89, Zhongzheng Rd., Banqiao Dist., New Taipei City 220, Taiwan (R.O.C.)",
+     "我們學校的地址：樓在最前面，巷在路前面"
     ],
     [
      "220 新北市板橋區縣民大道二段 7 號",
@@ -779,12 +779,12 @@
     [
      "Address line 1",
      "地址第一行",
-     "號、巷、弄、段、路：No. 100, Sec. 1, Wenhua Rd."
+     "號、巷、弄、段、路：No. 4, Ln. 89, Zhongzheng Rd."
     ],
     [
      "Address line 2",
      "地址第二行",
-     "樓、室或公司名：3F.-2 或 Apt. 5"
+     "樓、室或公司名：1F. 或 3F.-2"
     ],
     [
      "City / Town",
@@ -1055,7 +1055,7 @@
     ],
     [
      "英文地址可以全部大寫嗎？",
-     "可以。很多國家的郵政系統建議信封上的地址全部大寫，比較好辨認：3F., NO. 100, SEC. 1, WENHUA RD., BANQIAO DIST., NEW TAIPEI CITY 220, TAIWAN (R.O.C.)。填表格時用一般的大小寫就好。"
+     "可以。很多國家的郵政系統建議信封上的地址全部大寫，比較好辨認：1F., NO. 4, LN. 89, ZHONGZHENG RD., BANQIAO DIST., NEW TAIPEI CITY 220, TAIWAN (R.O.C.)。填表格時用一般的大小寫就好。"
     ],
     [
      "國外網站的國家選單只有 Taiwan, Province of China，怎麼辦？",

@@ -204,7 +204,7 @@
       ["poet", "詩人", "唸 [ˈpoɪt]，兩個音節 PO-et，不是「波特」"],
       ["poem", "詩", "唸 [ˈpoɪm]，也是兩個音節"],
       ["river", "河", "the Miluo River 汨羅江；故事裡說 a river 就好"],
-      ["jump into the river", "跳進河裡", "故事的關鍵句：He jumped into the river."],
+      ["lost in the river", "在河裡失蹤了", "故事裡只說到這裡：He was lost in the river."],
       ["look for", "尋找", "People paddled out to look for him."],
       ["throw rice into the river", "把米丟進河裡", "粽子的由來：feed the fish 餵魚"],
       ["remember", "紀念", "to remember Qu Yuan；紀念不是 memorize"],
@@ -242,7 +242,7 @@
      "rows": [
       ["A long time ago, there was a poet named Qu Yuan.", "很久以前，有一位詩人叫屈原。", "named＝叫做"],
       ["He loved his country very much.", "他非常愛他的國家。", "第二句交代人物"],
-      ["One day, he was very sad, and he jumped into a river.", "有一天他非常難過，跳進了河裡。", "原因可以先不講，孩子問再用中文補"],
+      ["One day, Qu Yuan was lost in a river.", "有一天，屈原在一條河裡失蹤了。", "一句帶過，重點放在後面的龍舟和粽子"],
       ["People paddled their boats fast to look for him.", "大家趕快划船去找他。", "划龍舟的由來"],
       ["They threw rice into the river for the fish to eat.", "他們把米丟進河裡給魚吃。", "粽子的由來"],
       ["Today, we race dragon boats and eat zongzi to remember him.", "今天我們划龍舟、吃粽子來紀念他。", "remember 不是 memorize"]
@@ -268,7 +268,7 @@
    "title": "美國老師才會告訴你的事：美國人聽到 Dragon Boat Festival 想到的是一場比賽",
    "prose": [
     "在美國，<strong>划龍舟是一項運動，不是一個節日</strong>。不少城市每年夏天在湖上或河上辦 dragon boat race，公司、學校、社團各組一隊，練幾個星期後比賽一天，日期跟農曆五月初五沒有關係——所以一個美國人聽到 Dragon Boat Festival，腦中出現的是一排彩色的船和鼓聲，不是放假、粽子和屈原。孩子介紹時只要多一句 It's a holiday in Taiwan. We have a day off.，對方就會從「比賽」切換到「節日」。",
-    "粽子最快讓美國人懂的講法是：<strong>It's like a tamale.</strong> tamale（唸 [təˈmɑlɪ]）是墨西哥食物：玉米麵糰包肉、用玉米葉裹起來蒸，在美國到處買得到；「用葉子包著蒸的米糰」這個概念他們一聽就有畫面，接著再說 but it's sticky rice, not corn。sticky rice 美國人也不陌生，泰國餐廳的 mango sticky rice 很多人吃過。",
+    "粽子最快讓美國人懂的講法是：<strong>It's sticky rice wrapped in leaves. It's like a tamale.</strong> 先講「用葉子包的糯米」，再用 tamale 讓對方有畫面。tamale（唸 [təˈmɑlɪ]）是墨西哥食物：玉米麵糰包肉、用玉米葉裹起來蒸，在美國到處買得到；「用葉子包著蒸的米糰」這個概念他們一聽就有畫面，接著再說 but it's sticky rice, not corn。sticky rice 美國人也不陌生，泰國餐廳的 mango sticky rice 很多人吃過。",
     "立蛋是美國人最喜歡的一項：他們會立刻問 Does it work?，孩子可以答 Sometimes! 然後拿顆蛋示範——比任何單字都有效。香包對美國人來說就是一個 lucky charm，掛在書包上的小袋子；艾草和菖蒲他們多半沒看過，說 herbs on the door to keep bugs away 就夠了，herbs 在美式英文裡 h 不發音。雄黃酒不用特別解釋，a traditional wine for adults 一句帶過。",
     "最後是台灣孩子最常寫、最常說的幾個中式英文，左欄是常見寫法，中間是美國人會說的版本，右欄是原因。"
    ],
@@ -282,7 +282,7 @@
     ["We stand the egg at noon.", "We balance an egg at noon.", "立蛋的「立」是 balance，stand 美國人聽不懂"],
     ["I wear a perfume bag.", "I wear a sachet.", "香包是 sachet；perfume 是香水"],
     ["Today is Dragon Boat Festival.", "Today is the Dragon Boat Festival.", "句子裡節日名前面加 the，跟 the Mid-Autumn Festival 一樣"],
-    ["Qu Yuan jumped the river.", "Qu Yuan jumped into the river.", "跳「進」去要有 into"],
+    ["We eat zongzi in the Dragon Boat Festival.", "We eat zongzi on the Dragon Boat Festival.", "節日當天用 on，不用 in"],
     ["We eat zongzi for memorize Qu Yuan.", "We eat zongzi to remember Qu Yuan.", "紀念是 remember，memorize 是背起來；目的用 to"],
     ["The zongzi is very delicious.", "The zongzi is delicious.", "delicious 本身就是「非常好吃」，前面不加 very"]
    ],
@@ -296,7 +296,7 @@
    "faq": [
     ["端午節英文怎麼說？", "最標準的是 Dragon Boat Festival，台灣的英文新聞、課本、考試都用它，句子裡前面加 the：on the Dragon Boat Festival。Duanwu Festival 是拼音名，中國的英文媒體常用，不懂中文的美國人多半沒聽過；舊稱 Double Fifth Festival、香港的 Tuen Ng Festival 看到認得就好。作文和考卷一律寫 Dragon Boat Festival，三個字開頭大寫、Boat 不加 s。"],
     ["端午節快樂英文怎麼說？", "Happy Dragon Boat Festival!，跟 Happy Birthday 同一個句型，不加 Day。想說長一點：Wishing you and your family a happy Dragon Boat Festival.（對長輩、老師）或 Happy Dragon Boat Festival! Enjoy your zongzi!（對朋友）。別人先說時回 Thank you! Happy Dragon Boat Festival to you too!。唸法是 [ˈhæpɪ ˈdrægən bot ˈfɛstəvḷ]：dragon 不是「追根」，boat 只有一個音節。"],
-    ["粽子英文怎麼說？", "兩種說法：zongzi（照拼音，英文媒體愈來愈常直接用）和 rice dumpling（解釋用；更清楚可以說 sticky rice dumpling）。對沒看過粽子的美國人，最快的解釋是 It's like a tamale, but with sticky rice.。鹹粽是 savory zongzi，甜的鹼粽是 alkaline zongzi；北部粽、南部粽的差別用 steamed（蒸）和 boiled（水煮）兩個字講。"],
+    ["粽子英文怎麼說？", "兩種說法：zongzi（照拼音，英文媒體愈來愈常直接用）和 rice dumpling（解釋用；更清楚可以說 sticky rice dumpling）。對沒看過粽子的美國人，最快的解釋是兩句一起說：It's sticky rice wrapped in leaves. It's like a tamale!。鹹粽是 savory zongzi，甜的鹼粽是 alkaline zongzi；北部粽、南部粽的差別用 steamed（蒸）和 boiled（水煮）兩個字講。"],
     ["划龍舟英文怎麼說？", "划龍舟比賽是 dragon boat race，通常用複數：We watched the dragon boat races.。「划」這個動作是 paddle，不是 row——龍舟選手面向前方拿槳划，row 是背對前進方向搖固定在船邊的槳。船上的人：paddler 划手、drummer 鼓手、steerer 舵手，台灣特有的奪標手是 flag catcher。"],
     ["立蛋英文怎麼說？香包呢？", "立蛋是 balance an egg：We balance eggs at noon on the Dragon Boat Festival.，不要說 stand an egg。香包是 sachet，唸 [sæˈʃe]，重音在後面；跟美國人解釋可以說 a little bag of herbs, like a lucky charm。門口的艾草是 mugwort、菖蒲是 calamus，這兩個字外國人也不熟，說 herbs on the door to keep bugs away 就懂了。"],
     ["端午節連假英文怎麼說？", "端午連假是 the Dragon Boat Festival holiday；連到週末時直接說 long weekend：We have a long weekend for the Dragon Boat Festival.。2027 年端午節是 6 月 9 日星期三，放假一天；2028 年是 5 月 28 日星期日（放假方式以人事行政總處公布的行事曆為準）。連假後外師常問 What did you do over the long weekend?，孩子答 We ate zongzi and watched the dragon boat races. 就是完整的一句。"]
