@@ -826,5 +826,50 @@
   "alt": "ICRT對照表：ICRT 學英文有用嗎？ICRT 頻率、線上收聽與英文廣播電台推薦",
   "title": "ICRT對照表",
   "page": "icrt-english-radio"
+ },
+ "chinese-name-to-english-chart": {
+  "slug": "chinese-name-to-english-chart",
+  "png": "/assets/img/charts/chinese-name-to-english-chart.webp",
+  "w": 2200,
+  "h": 3369,
+  "alt": "中文名字翻英文對照表：中文名字翻英文：護照英文名字怎麼寫？100 個常見姓氏拼法對照表",
+  "title": "中文名字翻英文對照表",
+  "page": "chinese-name-to-english"
+ },
+ "english-name-generator-chart": {
+  "slug": "english-name-generator-chart",
+  "png": "/assets/img/charts/english-name-generator-chart.webp",
+  "w": 2200,
+  "h": 2106,
+  "alt": "英文名字產生器對照表：英文名字產生器：選性別、開頭和風格，也能從中文名字的音找英文名字",
+  "title": "英文名字產生器對照表",
+  "page": "english-name-generator"
+ },
+ "learn-english-cartoons-chart": {
+  "slug": "learn-english-cartoons-chart",
+  "png": "/assets/img/charts/learn-english-cartoons-chart.webp",
+  "w": 2200,
+  "h": 3487,
+  "alt": "英文卡通推薦對照表：英文卡通推薦 66 部：美國老師的分齡片單，加上看卡通學英文的 7 個步驟",
+  "title": "英文卡通推薦對照表",
+  "page": "learn-english-cartoons"
+ },
+ "afraid-to-speak-english-chart": {
+  "slug": "afraid-to-speak-english-chart",
+  "png": "/assets/img/charts/afraid-to-speak-english-chart.webp",
+  "w": 2200,
+  "h": 1842,
+  "alt": "不敢開口說英文對照表：不敢開口說英文怎麼辦？72 句孩子說了不會錯的開口句，和家長在家能做的事",
+  "title": "不敢開口說英文對照表",
+  "page": "afraid-to-speak-english"
+ },
+ "how-to-learn-english-chart": {
+  "slug": "how-to-learn-english-chart",
+  "png": "/assets/img/charts/how-to-learn-english-chart.webp",
+  "w": 2200,
+  "h": 1952,
+  "alt": "如何學好英文對照表：如何學好英文？8 種能力 64 個學好英文的方法，學英文要多久、一週怎麼排",
+  "title": "如何學好英文對照表",
+  "page": "how-to-learn-english"
  }
 }

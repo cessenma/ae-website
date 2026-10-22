@@ -15,6 +15,10 @@
 "date": "2026-08-21",
 "hash": "e439f1170ae703d31e76e1dc43ff76fb"
 },
+"afraid-to-speak-english": {
+"date": "2026-10-22",
+"hash": "48d749fff3c18fb4c4067be1afabcd94"
+},
 "airport-english": {
 "date": "2026-10-22",
 "hash": "e3d4ec3819a5c3b28ea71e54255e6368"
@@ -34,6 +38,10 @@
 "animals-english-vocabulary": {
 "date": "2026-10-01",
 "hash": "d55d88c3a4a0b5507e2a8d9f8f861c35"
+},
+"assets/downloads/ae-afraid-to-speak-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "ce11268ce0c918fd9ed921cb2570603d"
 },
 "assets/downloads/ae-airport-english-a4.pdf": {
 "date": "2026-10-22",
@@ -62,6 +70,10 @@
 "assets/downloads/ae-cheer-up-english-a4.pdf": {
 "date": "2026-10-13",
 "hash": "eeedb2211f237723f5245034cd4c40cd"
+},
+"assets/downloads/ae-chinese-name-to-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "ee4d9d3ab85ca80719339a83a8e8b9ed"
 },
 "assets/downloads/ae-chinese-zodiac-english-a4.pdf": {
 "date": "2026-10-22",
@@ -123,6 +135,10 @@
 "date": "2026-10-16",
 "hash": "af3e81ef6eb7540b2d20ecb0850cc92f"
 },
+"assets/downloads/ae-english-name-generator-a4.pdf": {
+"date": "2026-10-22",
+"hash": "60c155f5c3323ab69a5482e67168279c"
+},
 "assets/downloads/ae-english-names-boys-a4.pdf": {
 "date": "2026-10-13",
 "hash": "0770e813984bdc7bd2625a41286a5a54"
@@ -183,6 +199,10 @@
 "date": "2026-10-13",
 "hash": "47c584b749fa95ed9a9c1a907f9a5d46"
 },
+"assets/downloads/ae-how-to-learn-english-a4.pdf": {
+"date": "2026-10-22",
+"hash": "5c25def28058f0898db3b7f8d4aa6c8e"
+},
 "assets/downloads/ae-icrt-english-radio-a4.pdf": {
 "date": "2026-10-22",
 "hash": "d28c1689e258a611f8679ce47915ac6a"
@@ -206,6 +226,10 @@
 "assets/downloads/ae-lantern-festival-english-a4.pdf": {
 "date": "2026-10-22",
 "hash": "6dc5a0ddfb9c759f882806fd05df7b53"
+},
+"assets/downloads/ae-learn-english-cartoons-a4.pdf": {
+"date": "2026-10-22",
+"hash": "8ebcc22b70284f162e05c9d0573fe6bb"
 },
 "assets/downloads/ae-leave-note-english-a4.pdf": {
 "date": "2026-10-22",
@@ -517,7 +541,7 @@
 },
 "chart-license": {
 "date": "2026-10-22",
-"hash": "3073c542db644598a5b6777b8215d2ed"
+"hash": "859316ae93f6b07ab56b037b2d0da244"
 },
 "cheer-up-english": {
 "date": "2026-10-20",
@@ -526,6 +550,10 @@
 "child-hates-english": {
 "date": "2026-10-19",
 "hash": "9e1c60b96ec11cf3e91ff861f50823e1"
+},
+"chinese-name-to-english": {
+"date": "2026-10-22",
+"hash": "64c9b8f160e77a86b3f168498d10a348"
 },
 "chinese-zodiac-english": {
 "date": "2026-10-22",
@@ -662,6 +690,10 @@
 "english-listening-practice": {
 "date": "2026-10-19",
 "hash": "185238cbce9401b7b472b730b119649d"
+},
+"english-name-generator": {
+"date": "2026-10-22",
+"hash": "c7c769515ceaaba75cc56c84dbfd9e74"
 },
 "english-names": {
 "date": "2026-10-19",
@@ -1167,6 +1199,10 @@
 "date": "2026-10-19",
 "hash": "51ab7ea8a974c88a4f03aa929f6acd40"
 },
+"how-to-learn-english": {
+"date": "2026-10-22",
+"hash": "c570da7526f229f9bc080405fc5c6608"
+},
 "how-to-verify-foreign-teacher-credentials": {
 "date": "2026-10-13",
 "hash": "58ab999b6c5a047e877320986dc1995b"
@@ -1318,6 +1354,10 @@
 "lantern-festival-english": {
 "date": "2026-10-22",
 "hash": "005c345e0503641f77464482e8bd3c4d"
+},
+"learn-english-cartoons": {
+"date": "2026-10-22",
+"hash": "eb73da4a377839cb4f02eb26005131dd"
 },
 "learning-support-guide": {
 "date": "2026-10-19",

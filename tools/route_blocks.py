@@ -23,6 +23,22 @@ BTN = ('<a href="{href}" style="display:inline-block;font-family:\'Baloo 2\',san
 
 # page → (eyebrow, h2 with <em>, body, [(label, href)])
 ROUTES = {
+ # 2026-10-22 wave 3: names + parent guides
+ "chinese-name-to-english": ("名字之外", "名字有了，<em>自我介紹呢？</em>",
+   "英文名字、護照拼法、地址和自我介紹，填表格和開口都會用到，一頁各整理一次。",
+   [("英文名字產生器", "/english-name-generator/"), ("英文名字怎麼取", "/english-names/"), ("英文地址怎麼寫", "/english-address/"), ("英文自我介紹", "/english-self-introduction-kids/")]),
+ "english-name-generator": ("名字之外", "名字有了，<em>自我介紹呢？</em>",
+   "英文名字、護照拼法、地址和自我介紹，填表格和開口都會用到，一頁各整理一次。",
+   [("中文名字翻英文", "/chinese-name-to-english/"), ("英文名字怎麼取", "/english-names/"), ("英文地址怎麼寫", "/english-address/"), ("英文自我介紹", "/english-self-introduction-kids/")]),
+ "learn-english-cartoons": ("方法之外", "知道怎麼學了，<em>從哪一步開始？</em>",
+   "聽、說、讀、寫各有一頁練法；卡通、廣播和不敢開口的對策也整理好了。",
+   [("如何學好英文", "/how-to-learn-english/"), ("不敢開口說英文", "/afraid-to-speak-english/"), ("英文口說怎麼練", "/english-speaking-practice/"), ("ICRT 英文廣播", "/icrt-english-radio/"), ("英文聽力怎麼練", "/english-listening-practice/")]),
+ "afraid-to-speak-english": ("方法之外", "知道怎麼學了，<em>從哪一步開始？</em>",
+   "聽、說、讀、寫各有一頁練法；卡通、廣播和不敢開口的對策也整理好了。",
+   [("如何學好英文", "/how-to-learn-english/"), ("英文卡通推薦", "/learn-english-cartoons/"), ("英文口說怎麼練", "/english-speaking-practice/"), ("ICRT 英文廣播", "/icrt-english-radio/"), ("英文聽力怎麼練", "/english-listening-practice/")]),
+ "how-to-learn-english": ("方法之外", "知道怎麼學了，<em>從哪一步開始？</em>",
+   "聽、說、讀、寫各有一頁練法；卡通、廣播和不敢開口的對策也整理好了。",
+   [("不敢開口說英文", "/afraid-to-speak-english/"), ("英文卡通推薦", "/learn-english-cartoons/"), ("英文口說怎麼練", "/english-speaking-practice/"), ("ICRT 英文廣播", "/icrt-english-radio/"), ("英文聽力怎麼練", "/english-listening-practice/")]),
  # 2026-10-22 wave 2: sports, subjects, daily life, festivals, ICRT
  "baseball-english": ("運動之外", "會說這項運動了，<em>其他的呢？</em>",
    "每項運動一頁，都有分組對照表、40 句和可列印 PDF；運動總表、加油的說法和比數用的數字也放在旁邊。",

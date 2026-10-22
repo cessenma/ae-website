@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<link rel="stylesheet" href="/assets/styles.css?v=a9afda25">
+<!-- AE:CRIT end -->
+<!-- AE:FONTS start -->
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2">
+<style>@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0vrx52jJ3Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB3vD2xWr53BJl.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZOIHTWEBlw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58UfivUw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKK58UfivUw4aw.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+<!-- AE:FONTS end -->
+<meta name="theme-color" content="#1A2752">
+<!-- Google Analytics (GA4) -->
+<title>英文名字產生器：從中文名字的音找英文名，210個附意思與KK｜埃森美語</title>
+<meta name="description" content="英文名字產生器：選男生女生、開頭字母或中文名字的音、喜歡的風格，一按就給 6 個英文名字，附意思、KK 音標和美國人聽到的感覺；另有 60 個常用名字表與取名 5 原則。">
+<link rel="canonical" href="https://americanenglish.com.tw/english-name-generator/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="American English 埃森美語">
+<meta property="og:title" content="英文名字產生器：從中文名字的音找英文名，210個附意思與KK">
+<meta property="og:description" content="英文名字產生器：選男生女生、開頭字母或中文名字的音、喜歡的風格，一按就給 6 個英文名字，附意思、KK 音標和美國人聽到的感覺；另有 60 個常用名字表與取名 5 原則。">
+<meta property="og:url" content="https://americanenglish.com.tw/english-name-generator/">
+<meta property="og:image" content="https://americanenglish.com.tw/assets/img/charts/english-name-generator-chart.webp">
+<meta name="twitter:card" content="summary_large_image">
+<style>.eng-ng{max-width:860px;margin:18px auto 0}.eng-ng-form{display:grid;background:#fff;border-radius:20px;box-shadow:var(--card-shadow);padding:16px 18px 20px}.eng-ng fieldset{border:none;margin:0 0 12px;padding:0;min-width:0}.eng-ng legend,.eng-ng-sub label{display:block;font-weight:700;color:var(--navy);font-size:15px;margin:6px 0 8px;padding:0}.eng-ng-seg{display:flex;flex-wrap:wrap;gap:8px}.eng-ng-seg label{display:inline-flex;align-items:center;gap:6px;background:#F4FAFF;border:1px solid rgba(26,39,82,.15);border-radius:999px;padding:8px 14px;cursor:pointer;font-size:15px;min-height:44px;box-sizing:border-box}.eng-ng-seg label:has(input:checked){background:var(--light-blue);border-color:var(--blue-ink);font-weight:700}.eng-ng-seg input{accent-color:var(--navy);margin:0}.eng-ng-seg label:focus-within,.eng-ng select:focus,.eng-ng input[type=text]:focus{outline:3px solid var(--blue);outline-offset:2px}.eng-ng-sub{display:grid;grid-template-columns:1fr 2fr;gap:10px;margin-top:10px}.eng-ng-sub label{font-size:14px;margin:0 0 4px}.eng-ng-sub>div{display:flex;flex-direction:column}.eng-ng select,.eng-ng input[type=text]{box-sizing:border-box;font-size:16px;padding:10px 12px;border:2px solid rgba(26,39,82,.15);border-radius:12px;font-family:inherit;background:#fff;color:var(--navy);min-height:44px}.eng-ng-hint{font-size:13px;color:var(--muted);margin:8px 0 0;line-height:1.6}.eng-ng .btn{text-transform:none}.eng-ng-msg{font-size:14.5px;color:var(--muted);margin:16px 4px 10px;line-height:1.7}.eng-ng-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}.eng-ng-card{background:#fff;border-radius:16px;box-shadow:var(--card-shadow);padding:14px 16px;border-top:4px solid var(--blue)}.eng-ng-top{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px}.eng-ng-name{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:26px;color:var(--navy);line-height:1.1}.eng-ng-kk{font-size:15px;color:var(--blue-ink)}.eng-ng-tag{display:inline-block;font-size:12.5px;background:var(--light-blue);color:var(--navy);border-radius:999px;padding:2px 10px;margin-top:6px}.eng-ng-card p{margin:8px 0 0;font-size:14.5px;line-height:1.6;color:var(--text-body)}.eng-ng-card .eng-ng-note{font-size:13px;color:var(--muted)}@media(max-width:600px){.eng-ng-form{padding:14px}.eng-ng-sub{grid-template-columns:1fr}.eng-ng-list{grid-template-columns:1fr}}</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"英文名字產生器","alternateName":"English name generator","applicationCategory":"EducationalApplication","operatingSystem":"Web","inLanguage":"zh-Hant-TW","url":"https://americanenglish.com.tw/english-name-generator/","isAccessibleForFree":true,"publisher":{"@id":"https://americanenglish.com.tw/#organization"},"author":{"@type":"EducationalOrganization","@id":"https://americanenglish.com.tw/#organization","name":"埃森美語 American English","url":"https://americanenglish.com.tw/"},"datePublished":"2026-10-22","dateModified":"2026-10-22","isPartOf":{"@id":"https://americanenglish.com.tw/#website"}}</script>
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/english-name-generator/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/english-name-generator/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:image:width" content="2200">
+<meta property="og:image:height" content="2106">
+<meta property="og:image:alt" content="英文名字產生器：選性別、開頭和風格，也能從中文名字的音找英文名字">
+<meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="twitter:image" content="https://americanenglish.com.tw/assets/img/charts/english-name-generator-chart.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"學習資源","item":"https://americanenglish.com.tw/blog/"},{"@type":"ListItem","position":3,"name":"英文名字產生器：選性別、開頭和風格，也能從中文名字的音找英文名字"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://americanenglish.com.tw/english-name-generator/#faq","url":"https://americanenglish.com.tw/english-name-generator/","inLanguage":"zh-Hant-TW","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"mainEntity":[{"@type":"Question","name":"產生器給的名字可以直接用嗎？","acceptedAnswer":{"@type":"Answer","text":"可以。建議從結果裡挑 2 到 3 個，讓孩子大聲唸幾次，用上面的 5 個原則檢查一下，最後讓孩子自己選。自己選的名字，孩子比較願意說出口。"}},{"@type":"Question","name":"為什麼同樣的條件，每次給的名字不一樣？","acceptedAnswer":{"@type":"Answer","text":"產生器會從符合條件的名字裡隨機挑 6 個，按「再換一組」會盡量避開上一組出現過的名字。符合條件的名字不到 6 個時，會放寬開頭或風格條件補滿，並在結果上方說明。"}},{"@type":"Question","name":"「美國近年前 100 名」是什麼意思？","acceptedAnswer":{"@type":"Answer","text":"美國社會安全局每年公布新生兒名字排行，這個標記表示這個名字近幾年都在前 100 名，而且是我們有把握的才標。好處是美國人很熟悉，缺點是在美國的班上比較容易遇到同名的同學。"}},{"@type":"Question","name":"中文名字的字找不到怎麼辦？","acceptedAnswer":{"@type":"Answer","text":"目前收了 39 組常見字。沒有收到的字，可以改選「指定第一個字母」，自己挑音最接近的字母，例如「晴」唸起來接近 ch，可以試試 C 開頭的名字。"}},{"@type":"Question","name":"英文名字一定要和中文名字的音有關嗎？","acceptedAnswer":{"@type":"Answer","text":"不用。跟中文名字的音呼應只是其中一種取法，好處是家人容易記。孩子喜歡某個名字的意思、或單純覺得好聽，也都是很好的理由。"}},{"@type":"Question","name":"有男生女生都能用的英文名字嗎？","acceptedAnswer":{"@type":"Answer","text":"有，例如 Jordan、Quinn、Rowan，在美國男生女生都有人用。產生器把它們放在美國比較常見的那一邊；性別選「都可以」，它們就會和其他名字一起出現。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://americanenglish.com.tw/#website","url":"https://americanenglish.com.tw/","name":"American English 埃森美語","alternateName":["埃森美語","埃森美語 American English"],"inLanguage":"zh-Hant-TW","publisher":{"@id":"https://americanenglish.com.tw/#organization"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"https://americanenglish.com.tw/#organization","name":"埃森美語 American English","alternateName":["埃森美語","American English 埃森美語","American English","埃森美語 - American English Institute"],"legalName":"私立埃森美語文理短期補習班","taxID":"61476523","description":"板橋中正路在地深耕的美籍外師英文補習班，提供 100% 美籍持證教師、每班 12 人小班制的兒童美語與國中英文課程。","url":"https://americanenglish.com.tw/","telephone":"+886-928-067-772","image":["https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","https://americanenglish.com.tw/assets/img/banqiao-small-class-english-classroom.webp","https://americanenglish.com.tw/assets/img/banqiao-kids-english-class.webp","https://americanenglish.com.tw/assets/img/certified-american-teacher-banqiao.webp","https://americanenglish.com.tw/assets/img/kids-confident-english-speaking.webp"],"logo":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"中正路89巷4號1樓","addressLocality":"板橋區","addressRegion":"新北市","postalCode":"220","addressCountry":"TW"},"geo":{"@type":"GeoCoordinates","latitude":25.0145617,"longitude":121.4560468},"areaServed":{"@type":"AdministrativeArea","name":"板橋區","containedInPlace":{"@type":"AdministrativeArea","name":"新北市"}},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"19:00"}],"sameAs":["https://www.google.com/maps?cid=11837760024257631170","https://lin.ee/W9J8TuQ","https://www.facebook.com/profile.php?id=61576014571186"],"hasMap":"https://www.google.com/maps?cid=11837760024257631170","founder":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"knowsLanguage":["en-US","zh-TW"],"knowsAbout":["兒童美語","國中英文","美籍外師英語教學","Phonics 自然發音","劍橋兒童英檢 (Cambridge YLE)","GEPT 全民英檢","國中教育會考英文","英語會話與口說","板橋英文補習班"],"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+886-928-067-772","url":"https://lin.ee/W9J8TuQ","availableLanguage":["zh-TW","en"]}}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');if(!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};window._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}fbq('init','1023907773471013');fbq('track','PageView');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);var f=document.createElement('script');f.async=1;f.src='https://connect.facebook.net/en_US/fbevents.js';document.head.appendChild(f);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body data-page="kk-phonetic-chart">
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<nav class="drawer" id="drawer" aria-label="行動版選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></nav>
+<!-- AE:CHROME end -->
+
+<main id="top"><section class="page-hero"><div class="bg-deco"></div><div class="wrap"><div class="breadcrumb reveal"><a href="/">首頁</a> › <a href="/blog/">學習資源</a> › 英文名字產生器</div><h1 class="reveal d1">英文名字產生器：選性別、開頭和風格，也能從中文名字的音找英文名字</h1><div class="divider reveal d1"></div><p class="body reveal d2">幫孩子取英文名字，最難的常常是第一步：清單太長，不知道從哪裡看起。這個<strong>英文名字產生器</strong>收了 210 個名字（女生 107 個、男生 103 個），選男生或女生、想要的開頭或中文名字的音、喜歡的風格，按一下就給 6 個，每個附中文意思、KK 音標，和美國人聽到這個名字的感覺。想從頭到尾慢慢看，請到<a href="/english-names/">英文名字總整理</a>。</p></div></section><section class="section"><div class="wrap">
+<!-- AE:TOC --><nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span><a href="#英文名字產生器選-3-個條件一次給-6-個名字">英文名字產生器：選 3 個條件，一次給 6 個名字</a><a href="#中文名字的音對英文名字39-組常見字">中文名字的音對英文名字：39 組常見字</a><a href="#美國老師幫學生取英文名字的-5-個原則">美國老師幫學生取英文名字的 5 個原則</a><a href="#台灣孩子常取美國人聽了會愣一下的名字">台灣孩子常取、美國人聽了會愣一下的名字</a><a href="#My-English-name-is用英文介紹自己的名字">「My English name is…」：用英文介紹自己的名字</a><a href="#英文名字產生器常見問題">英文名字產生器常見問題</a></nav><!-- /AE:TOC -->
+<div class="center stack reveal"><h2 id="英文名字產生器選-3-個條件一次給-6-個名字">英文名字產生器：選 3 個條件，一次給 6 個名字</h2></div><div class="prose reveal"><p>三個條件都可以不選，直接按按鈕也會給 6 個。<strong>「跟中文名字的音」</strong>會看名字裡姓以外的字：輸入「王雅婷」，就從「雅」和「婷」找開頭音相近的名字，例如 Ava、Aria、Tina、Tiffany。每按一次換一組，會盡量不重複上一組。</p><p>產生器下面是老師挑的 <strong>60 個最好用的名字</strong>，女生、男生各 30 個：好唸、好拼、美國人很熟，孩子長大以後也用得下去。適合印出來讓孩子自己圈選。</p></div><div class="eng-ng" id="eng-ng"><form class="eng-ng-form" id="eng-ng-form" novalidate><fieldset><legend>1. 男生還是女生？</legend><div class="eng-ng-seg"><label><input type="radio" name="eng-ng-g" value="f">女生</label><label><input type="radio" name="eng-ng-g" value="m">男生</label><label><input type="radio" name="eng-ng-g" value="x" checked>都可以</label></div></fieldset><fieldset><legend>2. 名字開頭</legend><div class="eng-ng-seg"><label><input type="radio" name="eng-ng-start" value="none" checked>不指定</label><label><input type="radio" name="eng-ng-start" value="letter">指定第一個字母</label><label><input type="radio" name="eng-ng-start" value="sound">跟中文名字的音</label></div><div class="eng-ng-sub"><div><label for="eng-ng-letter">第一個字母</label><select id="eng-ng-letter"></select></div><div><label for="eng-ng-zh">中文名字</label><input type="text" id="eng-ng-zh" maxlength="8" autocomplete="off" placeholder="例如：王雅婷"></div></div><p class="eng-ng-hint">「跟中文名字的音」會看姓以外的字，從 39 組常見字裡找開頭音相近的英文名字。</p></fieldset><fieldset><legend>3. 喜歡的風格</legend><div class="eng-ng-seg"><label><input type="radio" name="eng-ng-style" value="all" checked>都可以</label><label><input type="radio" name="eng-ng-style" value="c">經典</label><label><input type="radio" name="eng-ng-style" value="m">現代</label><label><input type="radio" name="eng-ng-style" value="s">簡短好唸</label><label><input type="radio" name="eng-ng-style" value="u">特別少見</label></div></fieldset><button type="submit" class="btn btn-primary" id="eng-ng-go">產生 6 個英文名字</button></form><div class="eng-ng-out" aria-live="polite"><p class="eng-ng-msg" id="eng-ng-msg">選好條件後按上面的按鈕；什麼都不選也可以。</p><ul class="eng-ng-list" id="eng-ng-list"></ul></div><noscript><p class="eng-ng-msg">這個產生器需要開啟 JavaScript。沒關係，下面的表格有老師挑好的 60 個名字，頁面裡也有連到男生、女生英文名字完整清單的連結。</p></noscript></div><script>(function(){
+// [name, gender f/m, style c=classic m=modern s=short u=unique, meaning, KK, US top 100 (1/0), era]
+var N=[
+['Amy','f','s','被愛的','ˈemɪ',0,''],
+['Anna','f','c','恩典','ˈænə',0,''],
+['Annie','f','s','Anna 的暱稱，恩典','ˈænɪ',0,''],
+['Emma','f','c','完整的、全部的','ˈɛmə',1,''],
+['Olivia','f','c','橄欖樹','oˈlɪvɪə',1,''],
+['Sophia','f','c','智慧','soˈfiə',1,''],
+['Sophie','f','s','智慧（Sophia 的短名）','ˈsofɪ',0,''],
+['Charlotte','f','c','自由的人','ˈʃɑrlət',1,''],
+['Amelia','f','c','勤勞的','əˈmiljə',1,''],
+['Mia','f','s','我的（義大利語）；也是 Maria 的短名','ˈmiə',1,''],
+['Ava','f','s','常解作「生命」或「小鳥」','ˈevə',1,''],
+['Lily','f','s','百合花','ˈlɪlɪ',1,''],
+['Grace','f','c','優雅、恩典','ɡres',1,''],
+['Chloe','f','m','嫩芽','ˈkloɪ',1,''],
+['Zoe','f','s','生命','ˈzoɪ',1,''],
+['Lucy','f','c','光','ˈlusɪ',1,''],
+['Ella','f','s','語源多元，常解作「光」','ˈɛlə',1,''],
+['Ellie','f','s','Eleanor、Ellen 的暱稱','ˈɛlɪ',1,''],
+['Emily','f','c','勤奮、努力','ˈɛmlɪ',1,''],
+['Hannah','f','c','恩典','ˈhænə',1,''],
+['Claire','f','c','明亮、清澈','klɛr',1,''],
+['Clara','f','c','明亮、清澈','ˈklærə',0,''],
+['Alice','f','c','高貴的','ˈælɪs',1,''],
+['Ruby','f','c','紅寶石','ˈrubɪ',1,''],
+['Hazel','f','m','榛樹','ˈhezl̩',1,''],
+['Ivy','f','s','常春藤','ˈaɪvɪ',1,''],
+['Stella','f','c','星星','ˈstɛlə',1,''],
+['Nora','f','s','Eleanor、Honora 的短名','ˈnorə',1,''],
+['Luna','f','m','月亮','ˈlunə',1,''],
+['Aria','f','m','詠嘆調（歌劇裡的獨唱曲）','ˈɑrɪə',1,''],
+['Harper','f','m','彈豎琴的人','ˈhɑrpɚ',1,''],
+['Violet','f','m','紫羅蘭','ˈvaɪəlɪt',1,''],
+['Willow','f','m','柳樹','ˈwɪlo',1,''],
+['Aurora','f','m','黎明、曙光','əˈrorə',1,''],
+['Naomi','f','c','愉快、美好','neˈomɪ',1,''],
+['Victoria','f','c','勝利','vɪkˈtorɪə',1,''],
+['Isabella','f','c','對神的誓約（Elizabeth 的變體）','ˌɪzəˈbɛlə',1,''],
+['Elizabeth','f','c','對神的誓約','ɪˈlɪzəbəθ',1,''],
+['Abigail','f','c','父親的喜悅','ˈæbɪˌɡel',1,''],
+['Natalie','f','c','聖誕節（出生的）','ˈnætl̩ɪ',1,''],
+['Audrey','f','c','高貴的力量','ˈɔdrɪ',1,''],
+['Sarah','f','c','公主','ˈsɛrə',0,''],
+['Tina','f','s','Christina 等名字的短名','ˈtinə',0,'60'],
+['Tiffany','f','c','神的顯現（希臘語）','ˈtɪfənɪ',0,'80'],
+['Wendy','f','s','因《小飛俠彼得潘》而流行','ˈwɛndɪ',0,'70'],
+['Vivian','f','c','有活力的','ˈvɪvɪən',0,''],
+['Iris','f','m','彩虹（希臘神話的彩虹女神）','ˈaɪrɪs',1,''],
+['Jasmine','f','m','茉莉花','ˈdʒæzmɪn',0,''],
+['Daisy','f','s','雛菊','ˈdezɪ',0,''],
+['Rose','f','s','玫瑰','roz',0,''],
+['Jade','f','s','玉','dʒed',0,''],
+['Joy','f','s','喜悅','dʒɔɪ',0,''],
+['Hope','f','s','希望','hop',0,''],
+['Kate','f','s','Katherine 的短名','ket',0,''],
+['Katherine','f','c','常解作「純潔」','ˈkæθərɪn',0,''],
+['Megan','f','c','珍珠（Margaret 的威爾斯暱稱）','ˈmɛɡən',0,''],
+['Jessica','f','c','最早出現在莎士比亞的劇本','ˈdʒɛsɪkə',0,'80'],
+['Rebecca','f','c','常解作「連結」','rɪˈbɛkə',0,''],
+['Julia','f','c','常解作「年輕的」','ˈdʒuljə',0,''],
+['Caroline','f','c','自由的人','ˈkærəˌlaɪn',0,''],
+['Eva','f','s','生命','ˈivə',0,''],
+['Penelope','f','c','希臘神話裡忠誠又聰明的妻子','pəˈnɛləpɪ',1,''],
+['Scarlett','f','m','鮮紅色','ˈskɑrlɪt',1,''],
+['Eleanor','f','c','語源說法不一，常解作「光」','ˈɛlənɚ',1,''],
+['Nova','f','m','新星','ˈnovə',1,''],
+['Maeve','f','u','愛爾蘭傳說中的女王','mev',0,''],
+['Fiona','f','u','白皙的','fɪˈonə',0,''],
+['Phoebe','f','u','明亮的','ˈfibɪ',0,''],
+['Cora','f','m','少女（希臘語）','ˈkorə',0,''],
+['Freya','f','u','北歐神話的女神，「女士」','ˈfreə',0,''],
+['Juniper','f','u','杜松（一種常綠樹）','ˈdʒunəpɚ',0,''],
+['Wren','f','u','鷦鷯（一種小鳥）','rɛn',0,''],
+['Sienna','f','u','赭紅色（來自義大利城市 Siena）','sɪˈɛnə',0,''],
+['Amber','f','m','琥珀','ˈæmbɚ',0,''],
+['Paige','f','s','小侍從','pedʒ',0,''],
+['Molly','f','s','Mary 的暱稱','ˈmɑlɪ',0,''],
+['Lena','f','s','Helena 等名字的短名','ˈlinə',0,''],
+['Celia','f','u','天上的','ˈsiljə',0,''],
+['Esther','f','c','常解作「星星」','ˈɛstɚ',0,''],
+['Vera','f','u','信仰（俄語）；真實（拉丁語）','ˈvɪrə',0,''],
+['Mila','f','m','親愛的、溫柔的','ˈmilə',1,''],
+['Sadie','f','s','Sarah 的暱稱，公主','ˈsedɪ',0,''],
+['Tessa','f','s','Theresa 的短名','ˈtɛsə',0,''],
+['Nina','f','s','常解作「小女孩」（西班牙語）','ˈninə',0,''],
+['Cindy','f','s','Cynthia 的暱稱','ˈsɪndɪ',0,'60'],
+['Angela','f','c','天使','ˈændʒələ',0,''],
+['Sylvia','f','c','森林','ˈsɪlvɪə',0,''],
+['Bella','f','s','美麗的','ˈbɛlə',0,''],
+['Michelle','f','c','Michael 的女性形','mɪˈʃɛl',0,'70'],
+['Joanna','f','c','神是仁慈的','dʒoˈænə',0,''],
+['Jenny','f','s','Jennifer 的暱稱','ˈdʒɛnɪ',0,'70'],
+['Helen','f','c','常解作「光、火炬」','ˈhɛlən',0,''],
+['Quinn','f','m','愛爾蘭姓氏，常解作「智慧」','kwɪn',0,''],
+['Lydia','f','c','來自呂底亞（古地名）的人','ˈlɪdɪə',0,''],
+['Mabel','f','u','可愛的','ˈmebl̩',0,''],
+['Elise','f','m','Elizabeth 的法語短名','ɪˈlis',0,''],
+['Hailey','f','m','乾草地（英國地名）','ˈhelɪ',0,''],
+['Kelly','f','s','愛爾蘭姓氏','ˈkɛlɪ',0,'70'],
+['Vanessa','f','c','作家 Jonathan Swift 創造的名字','vəˈnɛsə',0,''],
+['Serena','f','u','平靜的','səˈrinə',0,''],
+['Pearl','f','u','珍珠','pɝl',0,''],
+['Lisa','f','s','Elizabeth 的短名','ˈlisə',0,'60'],
+['Linda','f','s','漂亮（西班牙語）','ˈlɪndə',0,'50'],
+['Irene','f','c','和平','aɪˈrin',0,''],
+['Melody','f','m','旋律','ˈmɛlədɪ',0,''],
+['Layla','f','m','夜晚（阿拉伯語）','ˈlelə',1,''],
+['June','f','s','六月','dʒun',0,''],
+['Liam','m','m','William 的愛爾蘭短名，堅定的守護者','ˈliəm',1,''],
+['Noah','m','c','休息、安慰','ˈnoə',1,''],
+['Oliver','m','c','橄欖樹','ˈɑləvɚ',1,''],
+['James','m','c','取代者','dʒemz',1,''],
+['Elijah','m','c','聖經裡先知的名字','ɪˈlaɪdʒə',1,''],
+['Henry','m','c','一家之主','ˈhɛnrɪ',1,''],
+['Lucas','m','c','光；來自盧卡尼亞（古地名）的人','ˈlukəs',1,''],
+['William','m','c','堅定的守護者','ˈwɪljəm',1,''],
+['Benjamin','m','c','右手之子、受疼愛的兒子','ˈbɛndʒəmən',1,''],
+['Ben','m','s','Benjamin 的短名','bɛn',0,''],
+['Leo','m','s','獅子','ˈlio',1,''],
+['Levi','m','m','連結、結合','ˈlivaɪ',1,''],
+['Jack','m','s','John 的暱稱，神是仁慈的','dʒæk',1,''],
+['Ezra','m','m','幫助','ˈɛzrə',1,''],
+['Michael','m','c','誰像神','ˈmaɪkl̩',1,''],
+['Daniel','m','c','神是我的審判者','ˈdænjəl',1,''],
+['Owen','m','m','常解作「出身高貴的」','ˈoən',1,''],
+['Samuel','m','c','神聽見了','ˈsæmjʊəl',1,''],
+['Sam','m','s','Samuel 的短名','sæm',0,''],
+['Alexander','m','c','人們的守護者','ˌælɪɡˈzændɚ',1,''],
+['Ethan','m','c','堅定、持久','ˈiθən',1,''],
+['David','m','c','被愛的','ˈdevɪd',1,''],
+['Joseph','m','c','神會增添','ˈdʒozəf',1,''],
+['Mason','m','m','石匠','ˈmesn̩',1,''],
+['Luke','m','s','光；來自盧卡尼亞（古地名）的人','luk',1,''],
+['Matthew','m','c','神的禮物','ˈmæθju',1,''],
+['Julian','m','m','常解作「年輕的」','ˈdʒuljən',1,''],
+['Dylan','m','m','大海（威爾斯語）','ˈdɪlən',1,''],
+['Gabriel','m','c','神是我的力量','ˈɡebrɪəl',1,''],
+['Thomas','m','c','雙胞胎','ˈtɑməs',1,''],
+['Isaac','m','c','他會笑','ˈaɪzək',1,''],
+['Miles','m','m','語源說法不一，常解作「士兵」','maɪlz',1,''],
+['Caleb','m','m','忠心的、全心的','ˈkeləb',1,''],
+['Nathan','m','c','給予','ˈneθən',1,''],
+['Andrew','m','c','勇敢、有男子氣概','ˈændru',1,''],
+['Christopher','m','c','背負基督的人','ˈkrɪstəfɚ',1,''],
+['Hudson','m','m','Hugh 之子（英國姓氏）','ˈhʌdsn̩',1,''],
+['Carter','m','m','趕馬車的人','ˈkɑrtɚ',1,''],
+['Lincoln','m','m','湖邊的聚落（英國地名）','ˈlɪŋkən',1,''],
+['Ryan','m','c','小國王','ˈraɪən',0,''],
+['Kai','m','s','大海（夏威夷語）','kaɪ',0,''],
+['Theo','m','s','Theodore 的短名，神的禮物','ˈθio',0,''],
+['Theodore','m','c','神的禮物','ˈθiəˌdor',1,''],
+['Aaron','m','c','常解作「崇高的」','ˈɛrən',0,''],
+['Adam','m','c','人；大地','ˈædəm',0,''],
+['Eric','m','s','永遠的統治者','ˈɛrɪk',0,'70'],
+['Kevin','m','s','英俊、出身高貴','ˈkɛvɪn',0,'70'],
+['Jason','m','c','治療者','ˈdʒesn̩',0,'70'],
+['Brian','m','c','高貴的、崇高的','ˈbraɪən',0,'70'],
+['Justin','m','c','公正的','ˈdʒʌstɪn',0,''],
+['Kyle','m','s','海峽（蘇格蘭語）','kaɪl',0,''],
+['Max','m','s','最偉大的','mæks',0,''],
+['Sean','m','s','John 的愛爾蘭形，神是仁慈的','ʃɔn',0,''],
+['Tim','m','s','Timothy 的短名','tɪm',0,'60'],
+['Timothy','m','c','敬重神的','ˈtɪməθɪ',0,'60'],
+['Tyler','m','m','鋪瓦片的工人','ˈtaɪlɚ',0,''],
+['Peter','m','c','石頭、磐石','ˈpitɚ',0,''],
+['Paul','m','s','小的、謙虛的','pɔl',0,''],
+['Simon','m','c','傾聽','ˈsaɪmən',0,''],
+['Charles','m','c','自由的人','tʃɑrlz',1,''],
+['Charlie','m','s','Charles 的暱稱','ˈtʃɑrlɪ',0,''],
+['Jake','m','s','Jacob 的暱稱','dʒek',0,''],
+['Jacob','m','c','取代者','ˈdʒekəb',1,''],
+['Jasper','m','u','碧玉（一種寶石）','ˈdʒæspɚ',0,''],
+['Felix','m','u','幸運的、快樂的','ˈfilɪks',0,''],
+['Finn','m','s','白皙的（愛爾蘭語）','fɪn',0,''],
+['Wesley','m','m','西邊的草地（英國地名）','ˈwɛslɪ',0,''],
+['Wade','m','s','涉水而過','wed',0,''],
+['Wyatt','m','m','勇敢的戰士','ˈwaɪət',1,''],
+['Nolan','m','m','愛爾蘭姓氏，常解作「勇士」','ˈnolən',0,''],
+['Nicholas','m','c','人民的勝利','ˈnɪkləs',0,''],
+['Nick','m','s','Nicholas 的短名','nɪk',0,''],
+['Eli','m','s','崇高的','ˈilaɪ',0,''],
+['Elliot','m','m','Elias 的變體','ˈɛlɪət',0,''],
+['Edward','m','c','富有的守護者','ˈɛdwɚd',0,''],
+['Frank','m','s','自由的人','fræŋk',0,'00'],
+['Blake','m','s','古英語有「黑」和「白皙」兩種說法','blek',0,''],
+['Brooks','m','m','小溪','brʊks',0,''],
+['Rowan','m','u','花楸樹','ˈroən',0,''],
+['Atlas','m','u','希臘神話中扛起天空的巨人','ˈætləs',0,''],
+['Silas','m','u','森林','ˈsaɪləs',0,''],
+['Arthur','m','u','傳說中的亞瑟王','ˈɑrθɚ',0,''],
+['Hugo','m','u','心、心靈','ˈhjugo',0,''],
+['Jonah','m','c','鴿子','ˈdʒonə',0,''],
+['Jay','m','s','松鴉（一種鳥）','dʒe',0,''],
+['Ray','m','s','Raymond 的短名；英文 ray 也是「光線」','re',0,''],
+['Andy','m','s','Andrew 的暱稱','ˈændɪ',0,''],
+['Anthony','m','c','常解作「無價的」','ˈænθənɪ',0,''],
+['Zach','m','s','Zachary 的短名','zæk',0,''],
+['Zachary','m','c','神記得','ˈzækərɪ',0,''],
+['Leon','m','u','獅子','ˈliɑn',0,''],
+['Ian','m','s','John 的蘇格蘭形，神是仁慈的','ˈiən',0,''],
+['Austin','m','m','偉大的、尊貴的','ˈɔstɪn',0,''],
+['Ivan','m','u','John 的俄語形，神是仁慈的','ˈaɪvən',0,''],
+['Gavin','m','m','常解作「白鷹」','ˈɡævɪn',0,''],
+['Jordan','m','m','約旦河','ˈdʒɔrdn̩',0,''],
+['Patrick','m','c','貴族','ˈpætrɪk',0,''],
+['Steven','m','c','皇冠、花冠','ˈstivən',0,'60'],
+['Victor','m','c','勝利者','ˈvɪktɚ',0,''],
+['Vincent','m','c','征服者','ˈvɪnsn̩t',0,''],
+['Harry','m','s','Henry 的暱稱','ˈhærɪ',0,''],
+['Derek','m','s','民族的統治者','ˈdɛrɪk',0,'80'],
+['Dean','m','s','山谷','din',0,'']
+];
+// Chinese name syllables -> English names that start with a similar sound. [characters, label, letters, names]
+var S=[
+['婷庭亭廷霆','ting','T',['Tina','Tiffany','Tessa','Tim','Timothy','Tyler']],
+['安','an','A',['Anna','Annie','Angela','Amber','Andy','Andrew','Anthony']],
+['文雯玟紋','wen','W',['Wendy','Wren','Wesley','Wade']],
+['美梅玫','mei','M',['Maeve','Mabel','Megan','Mason']],
+['佳家嘉','jia','J',['Jasmine','Jade','Jessica','Jack','Jason','Jasper']],
+['欣心馨新','xin','SC',['Cindy','Celia','Sylvia','Simon','Sean']],
+['怡宜儀奕亦毅逸伊依','yi','E',['Eva','Elise','Eli','Ethan']],
+['芳','fang','F',['Fiona','Freya','Frank','Felix']],
+['莉麗俐立力丽','li','L',['Lily','Lisa','Lena','Lydia','Leo','Liam','Levi']],
+['琳玲林霖','lin','L',['Linda','Lena','Lily','Lincoln']],
+['娜','na','N',['Naomi','Natalie','Nora','Nina','Nathan','Nolan']],
+['妮尼','ni','N',['Nina','Nora','Nick','Nicholas']],
+['希曦熙','xi','SC',['Sienna','Celia','Silas','Simon']],
+['珊姍','shan','S',['Sarah','Serena','Sean','Sam']],
+['凱楷愷凯恺','kai','K',['Kate','Katherine','Kai','Kyle','Kevin']],
+['傑杰','jie','J',['Jade','Jay','Jason','Jake','James']],
+['偉威維瑋煒伟维玮','wei','W',['Wendy','Willow','Wade','Wesley','William','Wyatt']],
+['薇','wei','VW',['Vivian','Violet','Vera','Willow','Victor','Vincent']],
+['明銘鳴铭','ming','M',['Mila','Mia','Miles','Michael']],
+['俊峻駿君均鈞骏钧','jun','J',['June','Julia','Justin','Julian']],
+['柏伯博','bo','B',['Bella','Ben','Benjamin','Brooks']],
+['翰漢涵晗含汉','han','H',['Hannah','Hazel','Henry','Harry','Hudson']],
+['彥燕妍硯','yan','AI',['Anna','Annie','Ian','Ivan']],
+['承成誠丞晨辰宸诚','cheng／chen','C',['Charlotte','Chloe','Charles','Charlie']],
+['睿瑞','rui','R',['Ruby','Rose','Ray','Ryan']],
+['恩','en','E',['Emma','Ella','Emily','Eric','Edward','Elliot']],
+['子紫梓','zi','Z',['Zoe','Zach','Zachary']],
+['思絲斯詩丝诗','si／shi','S',['Sophia','Sophie','Sylvia','Sam','Samuel','Simon']],
+['萱璇軒宣轩','xuan','S',['Sarah','Serena','Sean','Simon']],
+['佩沛珮','pei','P',['Paige','Penelope','Pearl','Peter','Paul','Patrick']],
+['蓁真珍貞','zhen','J',['Jenny','Jessica','Jason','Justin']],
+['蕾','lei','L',['Layla','Lena','Leo','Leon']],
+['貝蓓贝','bei','B',['Bella','Ben','Blake']],
+['東冬棟东栋','dong','D',['Daisy','Daniel','David','Dylan','Dean']],
+['天添田','tian','T',['Tina','Tessa','Tim','Timothy','Tyler']],
+['凡帆','fan','F',['Fiona','Finn','Felix','Frank']],
+['蓉榕容柔','rong／rou','R',['Rose','Ruby','Ryan','Rowan']],
+['雅亞','ya','A',['Aria','Ava','Amy','Audrey','Adam','Aaron']],
+['豪浩皓昊','hao','H',['Hope','Hailey','Hudson','Henry','Harry']]
+];
+var STY={c:'經典',m:'現代',s:'簡短好唸',u:'特別少見'};
+var ERA={'00':'美國 1900 年代初的熱門名字','50':'美國 1950 年代的熱門名字，現在多是阿公阿嬤那一輩','60':'美國 1960 年代的熱門名字，現在多是阿公阿嬤那一輩','70':'美國 1970 年代的熱門名字，現在多是 50 歲上下的大人','80':'美國 1980 年代的熱門名字，現在多是爸媽那一輩'};
+var BYSTY={c:'經典名字，美國大人小孩都有人叫',m:'現代感的名字',s:'短、好唸、好拼',u:'比較少見，班上不容易撞名'};
+function note(n){if(n[5])return '美國近年前 100 名，班上可能有同名同學';if(n[6])return ERA[n[6]];return BYSTY[n[2]];}
+function byName(x){for(var i=0;i<N.length;i++)if(N[i][0]===x)return N[i];return null;}
+function chars(zh){var a=[],s=String(zh||'').replace(/\s/g,'');for(var i=0;i<s.length;i++){if(/[㐀-鿿]/.test(s[i]))a.push(s[i]);}return a.length>1?a.slice(1):a;}
+function sounds(zh){var c=chars(zh),out=[];c.forEach(function(ch){S.forEach(function(g){if(g[0].indexOf(ch)>=0&&out.indexOf(g)<0)out.push(g);});});return out;}
+function shuffle(a,rnd){for(var i=a.length-1;i>0;i--){var j=Math.floor(rnd()*(i+1)),t=a[i];a[i]=a[j];a[j]=t;}return a;}
+// o = {g:'f'|'m'|'x', start:'none'|'letter'|'sound', letter:'A', zh:'王雅婷', style:'all'|'c'|'m'|'s'|'u', avoid:[names]}
+function pick(o,rnd){rnd=rnd||Math.random;
+ var pool=N.filter(function(n){return o.g==='x'||n[1]===o.g;});
+ var sty=function(n){return o.style==='all'||n[2]===o.style;};
+ var startOK,startLoose=null,groups=[],msg='';
+ if(o.start==='letter'&&o.letter){startOK=function(n){return n[0].charAt(0)===o.letter;};}
+ else if(o.start==='sound'){groups=sounds(o.zh);
+  if(groups.length){var names=[],lets='';groups.forEach(function(g){names=names.concat(g[3]);lets+=g[2];});
+   startOK=function(n){return names.indexOf(n[0])>=0;};startLoose=function(n){return lets.indexOf(n[0].charAt(0))>=0;};}
+  else startOK=null;}
+ else startOK=null;
+ var tiers=[];
+ if(startOK){tiers.push(function(n){return startOK(n)&&sty(n);});
+  if(startLoose)tiers.push(function(n){return startLoose(n)&&sty(n);});
+  tiers.push(function(n){return startOK(n);});
+  if(startLoose)tiers.push(function(n){return startLoose(n);});}
+ tiers.push(sty);tiers.push(function(){return true;});
+ var chosen=[],exact=0,avoid=o.avoid||[];
+ tiers.forEach(function(t,ti){if(chosen.length>=6)return;
+  var c=pool.filter(function(n){return t(n)&&chosen.indexOf(n)<0;});
+  var fresh=shuffle(c.filter(function(n){return avoid.indexOf(n[0])<0;}),rnd),seen=shuffle(c.filter(function(n){return avoid.indexOf(n[0])>=0;}),rnd);
+  fresh.concat(seen).forEach(function(n){if(chosen.length<6)chosen.push(n);});
+  if(ti===0)exact=chosen.length;});
+ if(o.start==='sound'&&String(o.zh||'').trim()&&!groups.length)msg='這幾個字還沒收進對照表，先給你不限開頭的名字；也可以改用「指定第一個字母」。';
+ else if(exact<6)msg='完全符合條件的名字有 '+exact+' 個，其他 '+(6-exact)+' 個放寬了'+(startOK?'開頭或':'')+'風格條件。';
+ return {names:chosen.map(function(n){return {name:n[0],g:n[1],style:STY[n[2]],meaning:n[3],kk:n[4],note:note(n)};}),groups:groups.map(function(g){return g[0].charAt(0)+' '+g[1];}),msg:msg};}
+var API={N:N,S:S,pick:pick,sounds:sounds,byName:byName};
+if(typeof module!=='undefined'&&module.exports){module.exports=API;return;}
+var $=function(i){return document.getElementById(i);},f=$('eng-ng-form');if(!f)return;
+var last=[],sel=$('eng-ng-letter'),lets={};N.forEach(function(n){lets[n[0].charAt(0)]=1;});
+Object.keys(lets).sort().forEach(function(L){var o=document.createElement('option');o.value=L;o.textContent=L;sel.appendChild(o);});
+function val(n){var e=f.querySelector('input[name="'+n+'"]:checked');return e?e.value:'';}
+function setStart(v){var e=f.querySelector('input[name="eng-ng-start"][value="'+v+'"]');if(e)e.checked=true;}
+sel.addEventListener('change',function(){setStart('letter');});sel.addEventListener('focus',function(){setStart('letter');});
+$('eng-ng-zh').addEventListener('input',function(){setStart('sound');});$('eng-ng-zh').addEventListener('focus',function(){setStart('sound');});
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
+f.addEventListener('submit',function(ev){ev.preventDefault();
+ var r=pick({g:val('eng-ng-g'),start:val('eng-ng-start'),letter:sel.value,zh:$('eng-ng-zh').value,style:val('eng-ng-style'),avoid:last});
+ last=r.names.map(function(n){return n.name;});
+ var list=$('eng-ng-list');list.innerHTML='';
+ r.names.forEach(function(n){var li=el('li','eng-ng-card');
+  var top=el('div','eng-ng-top');top.appendChild(el('span','eng-ng-name',n.name));top.appendChild(el('span','eng-ng-kk','['+n.kk+']'));li.appendChild(top);
+  li.appendChild(el('span','eng-ng-tag',(n.g==='f'?'女生':'男生')+'・'+n.style));
+  li.appendChild(el('p','eng-ng-mean','意思：'+n.meaning));li.appendChild(el('p','eng-ng-note',n.note));list.appendChild(li);});
+ var m=(r.groups.length?'對到的音：'+r.groups.join('、')+'。':'')+r.msg;
+ $('eng-ng-msg').textContent=m||'這 6 個都符合你選的條件。不滿意就再按一次。';
+ $('eng-ng-go').textContent='再換一組';});
+
+})();
+</script><h3 id="女生英文名字-30-個-Girls">女生英文名字 30 個 Girls</h3>
+<div class="compare spec reveal"><!-- AE:CHART english-name-generator-chart start -->
+<div class="magnet-box reveal">
+  <p><strong>📄 免費下載：英文名字產生器對照表（A4 列印版）</strong><br>英文名字產生器：選性別、開頭和風格，也能從中文名字的音找英文名字——直接下載，印出來貼在書桌前，每天看一眼比坐下來背一次有用。</p>
+  <a class="btn btn-primary" download href="/assets/downloads/ae-english-name-generator-a4.pdf" onclick="window.gtag&amp;&amp;gtag('event','pdf_download',{file:'ae-english-name-generator-a4.pdf',page_path:location.pathname})">免費下載 PDF</a>
+</div><!-- AE:NEXT start --><p class="ae-cta">下載之後：想知道孩子現在的英文程度？<a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">加 LINE 預約程度評估</a>　·　<a href="/free-trial/">試聽怎麼進行</a>　·　<a href="/banqiao-english-cram-school/">教室在板橋中正路</a></p><!-- AE:NEXT end -->
+<figure class="chart-fig">
+  <img src="/assets/img/charts/english-name-generator-chart.webp" width="2200" height="2106" srcset="/assets/img/charts/english-name-generator-chart-720.webp 720w, /assets/img/charts/english-name-generator-chart.webp 2200w" sizes="(max-width:828px) 100vw, 760px"
+       alt="英文名字產生器對照表：英文名字產生器：選性別、開頭和風格，也能從中文名字的音找英文名字" loading="lazy" decoding="async">
+  <figcaption>英文名字產生器對照表——可儲存或列印｜埃森美語 americanenglish.com.tw</figcaption>
+</figure>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageObject","contentUrl":"https://americanenglish.com.tw/assets/img/charts/english-name-generator-chart.webp","url":"https://americanenglish.com.tw/assets/img/charts/english-name-generator-chart.webp","width":2200,"height":2106,"caption":"英文名字產生器對照表：英文名字產生器：選性別、開頭和風格，也能從中文名字的音找英文名字","name":"英文名字產生器對照表","creditText":"American English 埃森美語","copyrightNotice":"© 2026 American English 埃森美語 — 免費使用，請註明出處並連回 americanenglish.com.tw/chart-license/","creator":{"@type":"Organization","name":"埃森美語 American English","url":"https://americanenglish.com.tw/"},"license":"https://americanenglish.com.tw/chart-license/","acquireLicensePage":"https://americanenglish.com.tw/chart-license/"}</script>
+<!-- AE:CHART english-name-generator-chart end -->
+<table><thead><tr><th>英文名字</th><th>中文意思</th><th>KK 音標</th></tr></thead><tbody><tr><th>Emma</th><td>完整的、全部的</td><td>[ˈɛmə]</td></tr><tr><th>Olivia</th><td>橄欖樹</td><td>[oˈlɪvɪə]</td></tr><tr><th>Sophia</th><td>智慧</td><td>[soˈfiə]</td></tr><tr><th>Amelia</th><td>勤勞的</td><td>[əˈmiljə]</td></tr><tr><th>Charlotte</th><td>自由的人</td><td>[ˈʃɑrlət]</td></tr><tr><th>Lily</th><td>百合花</td><td>[ˈlɪlɪ]</td></tr><tr><th>Grace</th><td>優雅、恩典</td><td>[ɡres]</td></tr><tr><th>Chloe</th><td>嫩芽</td><td>[ˈkloɪ]</td></tr><tr><th>Zoe</th><td>生命</td><td>[ˈzoɪ]</td></tr><tr><th>Lucy</th><td>光</td><td>[ˈlusɪ]</td></tr><tr><th>Ella</th><td>語源多元，常解作「光」</td><td>[ˈɛlə]</td></tr><tr><th>Emily</th><td>勤奮、努力</td><td>[ˈɛmlɪ]</td></tr><tr><th>Hannah</th><td>恩典</td><td>[ˈhænə]</td></tr><tr><th>Claire</th><td>明亮、清澈</td><td>[klɛr]</td></tr><tr><th>Alice</th><td>高貴的</td><td>[ˈælɪs]</td></tr><tr><th>Ruby</th><td>紅寶石</td><td>[ˈrubɪ]</td></tr><tr><th>Ivy</th><td>常春藤</td><td>[ˈaɪvɪ]</td></tr><tr><th>Stella</th><td>星星</td><td>[ˈstɛlə]</td></tr><tr><th>Nora</th><td>Eleanor、Honora 的短名</td><td>[ˈnorə]</td></tr><tr><th>Luna</th><td>月亮</td><td>[ˈlunə]</td></tr><tr><th>Mia</th><td>我的（義大利語）；也是 Maria 的短名</td><td>[ˈmiə]</td></tr><tr><th>Ava</th><td>常解作「生命」或「小鳥」</td><td>[ˈevə]</td></tr><tr><th>Amy</th><td>被愛的</td><td>[ˈemɪ]</td></tr><tr><th>Anna</th><td>恩典</td><td>[ˈænə]</td></tr><tr><th>Naomi</th><td>愉快、美好</td><td>[neˈomɪ]</td></tr><tr><th>Iris</th><td>彩虹（希臘神話的彩虹女神）</td><td>[ˈaɪrɪs]</td></tr><tr><th>Audrey</th><td>高貴的力量</td><td>[ˈɔdrɪ]</td></tr><tr><th>Natalie</th><td>聖誕節（出生的）</td><td>[ˈnætl̩ɪ]</td></tr><tr><th>Violet</th><td>紫羅蘭</td><td>[ˈvaɪəlɪt]</td></tr><tr><th>Hazel</th><td>榛樹</td><td>[ˈhezl̩]</td></tr></tbody></table></div>
+<h3 id="男生英文名字-30-個-Boys">男生英文名字 30 個 Boys</h3>
+<div class="compare spec reveal"><table><thead><tr><th>英文名字</th><th>中文意思</th><th>KK 音標</th></tr></thead><tbody><tr><th>Liam</th><td>William 的愛爾蘭短名，堅定的守護者</td><td>[ˈliəm]</td></tr><tr><th>Noah</th><td>休息、安慰</td><td>[ˈnoə]</td></tr><tr><th>Oliver</th><td>橄欖樹</td><td>[ˈɑləvɚ]</td></tr><tr><th>James</th><td>取代者</td><td>[dʒemz]</td></tr><tr><th>Henry</th><td>一家之主</td><td>[ˈhɛnrɪ]</td></tr><tr><th>Lucas</th><td>光；來自盧卡尼亞（古地名）的人</td><td>[ˈlukəs]</td></tr><tr><th>William</th><td>堅定的守護者</td><td>[ˈwɪljəm]</td></tr><tr><th>Benjamin</th><td>右手之子、受疼愛的兒子</td><td>[ˈbɛndʒəmən]</td></tr><tr><th>Leo</th><td>獅子</td><td>[ˈlio]</td></tr><tr><th>Jack</th><td>John 的暱稱，神是仁慈的</td><td>[dʒæk]</td></tr><tr><th>Michael</th><td>誰像神</td><td>[ˈmaɪkl̩]</td></tr><tr><th>Daniel</th><td>神是我的審判者</td><td>[ˈdænjəl]</td></tr><tr><th>Owen</th><td>常解作「出身高貴的」</td><td>[ˈoən]</td></tr><tr><th>Samuel</th><td>神聽見了</td><td>[ˈsæmjʊəl]</td></tr><tr><th>Ethan</th><td>堅定、持久</td><td>[ˈiθən]</td></tr><tr><th>David</th><td>被愛的</td><td>[ˈdevɪd]</td></tr><tr><th>Mason</th><td>石匠</td><td>[ˈmesn̩]</td></tr><tr><th>Luke</th><td>光；來自盧卡尼亞（古地名）的人</td><td>[luk]</td></tr><tr><th>Matthew</th><td>神的禮物</td><td>[ˈmæθju]</td></tr><tr><th>Julian</th><td>常解作「年輕的」</td><td>[ˈdʒuljən]</td></tr><tr><th>Dylan</th><td>大海（威爾斯語）</td><td>[ˈdɪlən]</td></tr><tr><th>Thomas</th><td>雙胞胎</td><td>[ˈtɑməs]</td></tr><tr><th>Isaac</th><td>他會笑</td><td>[ˈaɪzək]</td></tr><tr><th>Miles</th><td>語源說法不一，常解作「士兵」</td><td>[maɪlz]</td></tr><tr><th>Caleb</th><td>忠心的、全心的</td><td>[ˈkeləb]</td></tr><tr><th>Nathan</th><td>給予</td><td>[ˈneθən]</td></tr><tr><th>Andrew</th><td>勇敢、有男子氣概</td><td>[ˈændru]</td></tr><tr><th>Ryan</th><td>小國王</td><td>[ˈraɪən]</td></tr><tr><th>Max</th><td>最偉大的</td><td>[mæks]</td></tr><tr><th>Ian</th><td>John 的蘇格蘭形，神是仁慈的</td><td>[ˈiən]</td></tr></tbody></table></div><div class="prose reveal"><p>「中文意思」是名字的語源或常見解釋。很多名字已經用了上千年，來源不只一種說法，寫「常解作」的就是這種情況。KK 音標怎麼看，見 <a href="/kk-phonetic-chart/">KK 音標表</a>。</p><p>還想看更多？完整清單在<a href="/english-names-girls/">女生英文名字 298 個</a>和<a href="/english-names-boys/">男生英文名字 307 個</a>，都附中文唸法與意思。</p></div></div></section><section class="section bg-soft"><div class="wrap"><div class="center stack reveal"><h2 id="中文名字的音對英文名字39-組常見字">中文名字的音對英文名字：39 組常見字</h2></div><div class="prose reveal"><p>很多台灣孩子的英文名字，是從中文名字的音來的：婷取 Tina，安取 Anna 或 Andy。好處是家人一聽就連得起來，孩子也覺得這個名字是「自己的」。</p><p>這不是翻譯，只是找<strong>開頭聲音相近</strong>的英文名字。中文和英文的音不會完全一樣，像 xi、zh 這類音英文沒有，只能找最接近的。下表就是產生器用的對照，第二欄是英文名字的開頭字母，括號裡是中文的拼音。</p></div><div class="compare spec m3t reveal"><table><thead><tr><th>中文名字裡的字</th><th>英文開頭（拼音）</th><th>可以考慮的英文名字</th></tr></thead><tbody><tr><th>婷、庭、亭、廷、霆<span class="m3">T（ting）</span></th><td class="m3c">T（ting）</td><td>女：Tina, Tiffany, Tessa；男：Tim, Timothy, Tyler</td></tr><tr><th>安<span class="m3">A（an）</span></th><td class="m3c">A（an）</td><td>女：Anna, Annie, Angela, Amber；男：Andy, Andrew, Anthony</td></tr><tr><th>文、雯、玟、紋<span class="m3">W（wen）</span></th><td class="m3c">W（wen）</td><td>女：Wendy, Wren；男：Wesley, Wade</td></tr><tr><th>美、梅、玫<span class="m3">M（mei）</span></th><td class="m3c">M（mei）</td><td>女：Maeve, Mabel, Megan；男：Mason</td></tr><tr><th>佳、家、嘉<span class="m3">J（jia）</span></th><td class="m3c">J（jia）</td><td>女：Jasmine, Jade, Jessica；男：Jack, Jason, Jasper</td></tr><tr><th>欣、心、馨、新<span class="m3">S／C（xin）</span></th><td class="m3c">S／C（xin）</td><td>女：Cindy, Celia, Sylvia；男：Simon, Sean</td></tr><tr><th>怡、宜、儀、奕、亦、毅、逸、伊、依<span class="m3">E（yi）</span></th><td class="m3c">E（yi）</td><td>女：Eva, Elise；男：Eli, Ethan</td></tr><tr><th>芳<span class="m3">F（fang）</span></th><td class="m3c">F（fang）</td><td>女：Fiona, Freya；男：Frank, Felix</td></tr><tr><th>莉、麗、俐、立、力<span class="m3">L（li）</span></th><td class="m3c">L（li）</td><td>女：Lily, Lisa, Lena, Lydia；男：Leo, Liam, Levi</td></tr><tr><th>琳、玲、林、霖<span class="m3">L（lin）</span></th><td class="m3c">L（lin）</td><td>女：Linda, Lena, Lily；男：Lincoln</td></tr><tr><th>娜<span class="m3">N（na）</span></th><td class="m3c">N（na）</td><td>女：Naomi, Natalie, Nora, Nina；男：Nathan, Nolan</td></tr><tr><th>妮、尼<span class="m3">N（ni）</span></th><td class="m3c">N（ni）</td><td>女：Nina, Nora；男：Nick, Nicholas</td></tr><tr><th>希、曦、熙<span class="m3">S／C（xi）</span></th><td class="m3c">S／C（xi）</td><td>女：Sienna, Celia；男：Silas, Simon</td></tr><tr><th>珊、姍<span class="m3">S（shan）</span></th><td class="m3c">S（shan）</td><td>女：Sarah, Serena；男：Sean, Sam</td></tr><tr><th>凱、楷、愷<span class="m3">K（kai）</span></th><td class="m3c">K（kai）</td><td>女：Kate, Katherine；男：Kai, Kyle, Kevin</td></tr><tr><th>傑、杰<span class="m3">J（jie）</span></th><td class="m3c">J（jie）</td><td>女：Jade；男：Jay, Jason, Jake, James</td></tr><tr><th>偉、威、維、瑋、煒<span class="m3">W（wei）</span></th><td class="m3c">W（wei）</td><td>女：Wendy, Willow；男：Wade, Wesley, William, Wyatt</td></tr><tr><th>薇<span class="m3">V／W（wei）</span></th><td class="m3c">V／W（wei）</td><td>女：Vivian, Violet, Vera, Willow；男：Victor, Vincent</td></tr><tr><th>明、銘、鳴<span class="m3">M（ming）</span></th><td class="m3c">M（ming）</td><td>女：Mila, Mia；男：Miles, Michael</td></tr><tr><th>俊、峻、駿、君、均、鈞<span class="m3">J（jun）</span></th><td class="m3c">J（jun）</td><td>女：June, Julia；男：Justin, Julian</td></tr><tr><th>柏、伯、博<span class="m3">B（bo）</span></th><td class="m3c">B（bo）</td><td>女：Bella；男：Ben, Benjamin, Brooks</td></tr><tr><th>翰、漢、涵、晗、含<span class="m3">H（han）</span></th><td class="m3c">H（han）</td><td>女：Hannah, Hazel；男：Henry, Harry, Hudson</td></tr><tr><th>彥、燕、妍、硯<span class="m3">A／I（yan）</span></th><td class="m3c">A／I（yan）</td><td>女：Anna, Annie；男：Ian, Ivan</td></tr><tr><th>承、成、誠、丞、晨、辰、宸<span class="m3">C（cheng／chen）</span></th><td class="m3c">C（cheng／chen）</td><td>女：Charlotte, Chloe；男：Charles, Charlie</td></tr><tr><th>睿、瑞<span class="m3">R（rui）</span></th><td class="m3c">R（rui）</td><td>女：Ruby, Rose；男：Ray, Ryan</td></tr><tr><th>恩<span class="m3">E（en）</span></th><td class="m3c">E（en）</td><td>女：Emma, Ella, Emily；男：Eric, Edward, Elliot</td></tr><tr><th>子、紫、梓<span class="m3">Z（zi）</span></th><td class="m3c">Z（zi）</td><td>女：Zoe；男：Zach, Zachary</td></tr><tr><th>思、絲、斯、詩<span class="m3">S（si／shi）</span></th><td class="m3c">S（si／shi）</td><td>女：Sophia, Sophie, Sylvia；男：Sam, Samuel, Simon</td></tr><tr><th>萱、璇、軒、宣<span class="m3">S（xuan）</span></th><td class="m3c">S（xuan）</td><td>女：Sarah, Serena；男：Sean, Simon</td></tr><tr><th>佩、沛、珮<span class="m3">P（pei）</span></th><td class="m3c">P（pei）</td><td>女：Paige, Penelope, Pearl；男：Peter, Paul, Patrick</td></tr><tr><th>蓁、真、珍、貞<span class="m3">J（zhen）</span></th><td class="m3c">J（zhen）</td><td>女：Jenny, Jessica；男：Jason, Justin</td></tr><tr><th>蕾<span class="m3">L（lei）</span></th><td class="m3c">L（lei）</td><td>女：Layla, Lena；男：Leo, Leon</td></tr><tr><th>貝、蓓<span class="m3">B（bei）</span></th><td class="m3c">B（bei）</td><td>女：Bella；男：Ben, Blake</td></tr><tr><th>東、冬、棟<span class="m3">D（dong）</span></th><td class="m3c">D（dong）</td><td>女：Daisy；男：Daniel, David, Dylan, Dean</td></tr><tr><th>天、添、田<span class="m3">T（tian）</span></th><td class="m3c">T（tian）</td><td>女：Tina, Tessa；男：Tim, Timothy, Tyler</td></tr><tr><th>凡、帆<span class="m3">F（fan）</span></th><td class="m3c">F（fan）</td><td>女：Fiona；男：Finn, Felix, Frank</td></tr><tr><th>蓉、榕、容、柔<span class="m3">R（rong／rou）</span></th><td class="m3c">R（rong／rou）</td><td>女：Rose, Ruby；男：Ryan, Rowan</td></tr><tr><th>雅、亞<span class="m3">A（ya）</span></th><td class="m3c">A（ya）</td><td>女：Aria, Ava, Amy, Audrey；男：Adam, Aaron</td></tr><tr><th>豪、浩、皓、昊<span class="m3">H（hao）</span></th><td class="m3c">H（hao）</td><td>女：Hope, Hailey；男：Hudson, Henry, Harry</td></tr></tbody></table></div><div class="prose reveal"><p>對照只看開頭的音，選出來的名字還要用下一段的原則再檢查一次。例如 Tina 很好唸，但它在美國是 1960 年代流行的名字，美國人聽起來會覺得是長輩的名字；喜歡的話照樣可以用，只是先知道這一點。</p></div></div></section><section class="section"><div class="wrap"><div class="center stack reveal"><h2 id="美國老師幫學生取英文名字的-5-個原則">美國老師幫學生取英文名字的 5 個原則</h2></div><div class="prose reveal"><p>這是我在教室幫學生取名時實際用的順序。前兩個是為了孩子每天被叫名字時不尷尬，後三個是為了名字能用得久。會讓人想再考慮一下的四類名字，另外整理在<a href="/kids-english-names-guide/">小孩英文名字怎麼取</a>。</p></div><div class="compare spec m3t reveal"><table><thead><tr><th>原則</th><th>例子</th><th>怎麼檢查</th></tr></thead><tbody><tr><th>1. 兩邊都好唸<span class="m3">Amy、Ben 好唸；Siobhan 要唸成近似 shi-VAWN，拼字看不出來</span></th><td class="m3c">Amy、Ben 好唸；Siobhan 要唸成近似 shi-VAWN，拼字看不出來</td><td>孩子自己、爸媽、阿公阿嬤各唸一次；也想想美國人只看拼字唸不唸得出來</td></tr><tr><th>2. 不跟寵物、名人撞名<span class="m3">Lucky、Coco 是常見的狗名；Elsa 會讓人想到《冰雪奇緣》</span></th><td class="m3c">Lucky、Coco 是常見的狗名；Elsa 會讓人想到《冰雪奇緣》</td><td>想一想有沒有很紅的卡通角色、名人或寵物叫這個名字</td></tr><tr><th>3. 查過意思<span class="m3">Mallory 的語源是「不幸的」；Candy、Honey 本身就是英文單字</span></th><td class="m3c">Mallory 的語源是「不幸的」；Candy、Honey 本身就是英文單字</td><td>查名字的語源，也查這個字在英文裡本來是什麼意思</td></tr><tr><th>4. 避開過時的名字<span class="m3">Linda、Cindy 在美國多半是長輩的名字</span></th><td class="m3c">Linda、Cindy 在美國多半是長輩的名字</td><td>看名字在美國流行的年代：美國社會安全局每年都公布新生兒名字排行</td></tr><tr><th>5. 跟中文名字的音呼應<span class="m3">婷 → Tina、雅 → Ava、凱 → Kai</span></th><td class="m3c">婷 → Tina、雅 → Ava、凱 → Kai</td><td>用上面的產生器選「跟中文名字的音」</td></tr></tbody></table></div><div class="prose reveal"><p>五個原則不用全部過關。孩子很喜歡一個過時一點的名字，就讓他用；名字是他的，喜歡才會常常說出口。</p></div></div></section><section class="section bg-soft"><div class="wrap"><div class="center stack reveal"><h2 id="台灣孩子常取美國人聽了會愣一下的名字">台灣孩子常取、美國人聽了會愣一下的名字</h2></div><div class="prose reveal"><p>這些名字都沒有不好的意思。孩子選它們，通常是因為喜歡那個東西，這份心意很可愛。只是英文母語者聽到時，第一個想到的是那個東西本身，而不是一個人。</p><p>在台灣的教室裡用沒問題；如果孩子以後要出國讀書或用英文工作，換成一個「人名」會比較省事。右欄是開頭音相近、可以考慮的替代名字。</p></div><div class="compare spec reveal"><table><thead><tr><th>名字</th><th>美國人聽到會想到</th><th>可以換成</th></tr></thead><tbody><tr><th>Candy</th><td>糖果；當人名聽起來像暱稱，不太正式</td><td>Caroline、Claire</td></tr><tr><th>Apple</th><td>水果，或是蘋果公司</td><td>Amy、Abigail</td></tr><tr><th>Cherry</th><td>櫻桃；美國很少有人用它當名字</td><td>Chloe、Clara</td></tr><tr><th>Kitty</th><td>小貓、Hello Kitty</td><td>Kate、Katherine</td></tr><tr><th>Lucky</th><td>很常見的狗名</td><td>Lucy、Luke</td></tr><tr><th>Coco</th><td>常見的狗名、貓名</td><td>Cora、Chloe</td></tr><tr><th>Honey</th><td>情侶、夫妻之間叫的「親愛的」</td><td>Hannah、Hazel</td></tr><tr><th>Bunny</th><td>小兔子，像小寶寶的暱稱</td><td>Bella、Ruby</td></tr><tr><th>Peanut</th><td>花生；美國人常用來叫小嬰兒「小不點」</td><td>Pearl、Paige</td></tr><tr><th>Lemon</th><td>檸檬；口語裡 a lemon 也指「老是出毛病的車」</td><td>Lena、Lily</td></tr><tr><th>Jelly</th><td>果凍；美國的 jelly 是抹吐司的果醬</td><td>Ellie、Julia</td></tr><tr><th>Rainbow</th><td>彩虹，聽起來像故事裡的角色</td><td>Iris（彩虹女神）</td></tr><tr><th>Kiwi</th><td>奇異果，也是紐西蘭人的暱稱</td><td>Kate、Kai</td></tr><tr><th>Tiger</th><td>老虎，聽起來像綽號</td><td>Tyler、Theo</td></tr><tr><th>Dragon</th><td>龍，像遊戲或卡通角色</td><td>Derek、Dylan</td></tr><tr><th>Seven</th><td>數字 7</td><td>Steven（只差一個字母）</td></tr><tr><th>Mickey</th><td>米老鼠</td><td>Michael、Miles</td></tr></tbody></table></div><div class="prose reveal"><p>孩子很堅持的話，也可以把它留著當暱稱（nickname），正式場合用另一個名字。美國人自己也常這樣，例如叫 Katherine 的人，朋友平常叫她 Kate。</p></div></div></section><section class="section"><div class="wrap"><div class="center stack reveal"><h2 id="My-English-name-is用英文介紹自己的名字">「My English name is…」：用英文介紹自己的名字</h2></div><div class="prose reveal"><p>在台灣說 My English name is Tina. 很自然，因為對方知道你也有中文名字。在美國，大家只說 My name is Tina. 或更短的 I'm Tina.，不會特別說「英文名字」。下面是跟名字有關、孩子最常用到的句子。</p></div><div class="compare spec m3t reveal"><table><thead><tr><th>英文</th><th>中文</th><th>什麼時候用</th></tr></thead><tbody><tr><th>My English name is Tina.<span class="m3">我的英文名字是 Tina。</span></th><td class="m3c">我的英文名字是 Tina。</td><td>在台灣，對方知道你有中文名字時</td></tr><tr><th>My name is Tina.<span class="m3">我的名字是 Tina。</span></th><td class="m3c">我的名字是 Tina。</td><td>最標準的自我介紹</td></tr><tr><th>I&#x27;m Tina.<span class="m3">我是 Tina。</span></th><td class="m3c">我是 Tina。</td><td>最口語、最常用</td></tr><tr><th>My Chinese name is Ya-ting.<span class="m3">我的中文名字是雅婷。</span></th><td class="m3c">我的中文名字是雅婷。</td><td>介紹中文名字</td></tr><tr><th>You can call me Tina.<span class="m3">你可以叫我 Tina。</span></th><td class="m3c">你可以叫我 Tina。</td><td>對方不知道怎麼叫你時</td></tr><tr><th>Please call me Tina.<span class="m3">請叫我 Tina。</span></th><td class="m3c">請叫我 Tina。</td><td>比較正式，例如對老師</td></tr><tr><th>People call me Tina.<span class="m3">大家都叫我 Tina。</span></th><td class="m3c">大家都叫我 Tina。</td><td>說明平常大家怎麼叫你</td></tr><tr><th>It&#x27;s spelled T-I-N-A.<span class="m3">拼法是 T-I-N-A。</span></th><td class="m3c">拼法是 T-I-N-A。</td><td>對方要寫下你的名字時</td></tr><tr><th>My name means &quot;light.&quot;<span class="m3">我的名字意思是「光」。</span></th><td class="m3c">我的名字意思是「光」。</td><td>介紹名字的意思</td></tr><tr><th>My teacher gave me this name.<span class="m3">這個名字是老師幫我取的。</span></th><td class="m3c">這個名字是老師幫我取的。</td><td>被問到名字從哪來時</td></tr><tr><th>I picked this name myself.<span class="m3">這個名字是我自己選的。</span></th><td class="m3c">這個名字是我自己選的。</td><td>被問到名字從哪來時</td></tr><tr><th>What&#x27;s your English name?<span class="m3">你的英文名字是什麼？</span></th><td class="m3c">你的英文名字是什麼？</td><td>在台灣問同學</td></tr><tr><th>What&#x27;s your name?<span class="m3">你叫什麼名字？</span></th><td class="m3c">你叫什麼名字？</td><td>任何時候問別人</td></tr><tr><th>How do you spell that?<span class="m3">那要怎麼拼？</span></th><td class="m3c">那要怎麼拼？</td><td>聽不出對方名字的拼法時</td></tr><tr><th>Sorry, what was your name again?<span class="m3">不好意思，你剛剛說你叫什麼名字？</span></th><td class="m3c">不好意思，你剛剛說你叫什麼名字？</td><td>忘了對方的名字時</td></tr><tr><th>Nice to meet you, Tina.<span class="m3">Tina，很高興認識你。</span></th><td class="m3c">Tina，很高興認識你。</td><td>回應對方的自我介紹</td></tr></tbody></table></div><div class="prose reveal"><p>最常見的錯誤是把「我叫…」直接翻成英文：<strong>✗ My name is call Tina.</strong>、<strong>✗ I am call Tina.</strong> 正確是 <strong>My name is Tina.</strong> 或 <strong>I'm Tina.</strong>；要說「大家都叫我…」，用 People call me Tina.。完整的自我介紹句型見<a href="/english-self-introduction-kids/">兒童英文自我介紹</a>。</p></div></div></section><section class="section bg-soft"><div class="wrap"><div class="center stack reveal"><h2 id="英文名字產生器常見問題">英文名字產生器常見問題</h2></div><div class="faq"><div class="faq-item"><h3 id="產生器給的名字可以直接用嗎" class="faq-h"><button class="faq-q" aria-expanded="false">產生器給的名字可以直接用嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>可以。建議從結果裡挑 2 到 3 個，讓孩子大聲唸幾次，用上面的 5 個原則檢查一下，最後讓孩子自己選。自己選的名字，孩子比較願意說出口。</p></div></div><div class="faq-item"><h3 id="為什麼同樣的條件每次給的名字不一樣" class="faq-h"><button class="faq-q" aria-expanded="false">為什麼同樣的條件，每次給的名字不一樣？<span class="pm"></span></button></h3><div class="faq-a"><p>產生器會從符合條件的名字裡隨機挑 6 個，按「再換一組」會盡量避開上一組出現過的名字。符合條件的名字不到 6 個時，會放寬開頭或風格條件補滿，並在結果上方說明。</p></div></div><div class="faq-item"><h3 id="美國近年前-100-名是什麼意思" class="faq-h"><button class="faq-q" aria-expanded="false">「美國近年前 100 名」是什麼意思？<span class="pm"></span></button></h3><div class="faq-a"><p>美國社會安全局每年公布新生兒名字排行，這個標記表示這個名字近幾年都在前 100 名，而且是我們有把握的才標。好處是美國人很熟悉，缺點是在美國的班上比較容易遇到同名的同學。</p></div></div><div class="faq-item"><h3 id="中文名字的字找不到怎麼辦" class="faq-h"><button class="faq-q" aria-expanded="false">中文名字的字找不到怎麼辦？<span class="pm"></span></button></h3><div class="faq-a"><p>目前收了 39 組常見字。沒有收到的字，可以改選「指定第一個字母」，自己挑音最接近的字母，例如「晴」唸起來接近 ch，可以試試 C 開頭的名字。</p></div></div><div class="faq-item"><h3 id="英文名字一定要和中文名字的音有關嗎" class="faq-h"><button class="faq-q" aria-expanded="false">英文名字一定要和中文名字的音有關嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>不用。跟中文名字的音呼應只是其中一種取法，好處是家人容易記。孩子喜歡某個名字的意思、或單純覺得好聽，也都是很好的理由。</p></div></div><div class="faq-item"><h3 id="有男生女生都能用的英文名字嗎" class="faq-h"><button class="faq-q" aria-expanded="false">有男生女生都能用的英文名字嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>有，例如 Jordan、Quinn、Rowan，在美國男生女生都有人用。產生器把它們放在美國比較常見的那一邊；性別選「都可以」，它們就會和其他名字一起出現。</p></div></div></div></div></section><!-- AE:ROUTE -->
+<section class="section bg-soft">
+  <div class="wrap">
+    <span class="eyebrow eyebrow-yellow">名字之外</span>
+    <h2 id="名字有了自我介紹呢" style="margin-top:14px">名字有了，<em>自我介紹呢？</em></h2>
+    <div class="divider" style="margin:18px 0 22px"></div>
+    <p class="body" style="max-width:720px">英文名字、護照拼法、地址和自我介紹，填表格和開口都會用到，一頁各整理一次。</p>
+    <div style="margin-top:20px"><a href="/chinese-name-to-english/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">中文名字翻英文</a><a href="/english-names/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">英文名字怎麼取</a><a href="/english-address/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">英文地址怎麼寫</a><a href="/english-self-introduction-kids/" style="display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:2px solid var(--light-blue);border-radius:100px;padding:9px 18px;text-decoration:none;margin:0 8px 8px 0">英文自我介紹</a></div>
+  </div>
+</section>
+<!-- /AE:ROUTE -->
+<section class="section bg-blue"><div class="wrap"><div class="center stack reveal"><h2 id="名字選好了被叫到時答得出來嗎">名字選好了，被叫到時答得出來嗎？</h2><p class="body">名字是孩子在英文課上最常聽到的一個字。在我們的小班課，美籍老師每天用英文名字點名、提問，孩子從聽到自己的名字就舉手開始，慢慢練到能用英文介紹自己、拼出名字、說出名字的意思。</p><a class="btn btn-primary" href="/line/">加 LINE 預約試聽</a></div></div></section><!-- AE:PAGEMETA start -->
+<div class="page-meta"><div class="wrap"><span>最後更新：<time datetime="2026-10-22">2026 年 10 月 22 日</time></span><span>內容製作：<a href="/certified-american-teacher-banqiao/">埃森美語 American English</a></span></div></div>
+<!-- AE:PAGEMETA end -->
+</main>
+<!-- AE:FOOT start -->
+<footer class="site-footer"><div class="wrap"><div class="foot-grid"><div><div class="foot-logo"><img class="foot-logo-img" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="34" height="34" loading="lazy" decoding="async">American English 埃森美語</div><p class="foot-tag">板橋中正路在地深耕的美籍外師英文補習班。100% 美籍持證教師、每班 12 人小班制。</p><p class="foot-nap">220 新北市板橋區中正路89巷4號1樓<span class="foot-sep">　｜　</span><a href="tel:+886928067772">☎ 0928-067-772</a></p></div><nav class="foot-links" aria-label="頁尾導覽"><div class="foot-col"><p class="foot-h">課程</p><a href="/banqiao-english-cram-school/">板橋英文補習班</a><a href="/courses/">課程總覽</a><a href="/kids-english-banqiao/">兒童美語</a><a href="/junior-high-english-banqiao/">國中英文</a><a href="/free-trial/">預約試聽</a></div><div class="foot-col"><p class="foot-h">學習資源</p><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/english-pronunciation/">英文發音</a><a href="/download/">免費下載</a><a href="/chart-license/">圖表授權</a></div><div class="foot-col"><p class="foot-h">關於</p><a href="/certified-american-teacher-banqiao/">師資介紹</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="/contact/">聯絡與交通</a></div><div class="foot-col"><p class="foot-h">聯絡</p><a href="tel:+886928067772">電話 0928-067-772</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 線上預約</a><a href="https://maps.app.goo.gl/hLChkEqAMKCsMWpm6" target="_blank" rel="noopener">Google 地圖位置</a><a href="https://www.facebook.com/profile.php?id=61576014571186" target="_blank" rel="noopener">Facebook 粉絲專頁</a></div></nav></div><!-- AE:AINOTE --><p class="foot-ai">英文好，用 AI 也更順手 · <a href="https://essenindustries.com/">essenindustries.com</a></p><!-- /AE:AINOTE -->
+<div class="foot-bottom"><span>© 2026 American English 埃森美語</span><span>私立埃森美語文理短期補習班　｜　新北市政府立案 社補教社字第115026號　｜　統一編號 61476523</span><span>220 新北市板橋區中正路89巷4號1樓</span></div><div class="foot-pref"><div google-add-preferred-source-btn data-theme="dark" data-lang="zh-TW"></div></div></div></footer>
+<!-- AE:FOOT end -->
+<!-- AE:AUDIO start -->
+<script>(function(){var a=null;document.addEventListener("click",function(e){var b=e.target.closest(".say");if(!b)return;e.preventDefault();if(a){a.pause();}a=new Audio(b.dataset.w);a.play().catch(function(){});if(window.gtag){gtag("event","word_audio_play",{word:(b.dataset.w||"").split("/").pop().replace(".mp3",""),page_path:location.pathname});}b.classList.add("playing");a.onended=function(){b.classList.remove("playing")};});})();</script>
+<!-- AE:AUDIO end -->
+<script src="/assets/app.js?v=a17d010b"></script>
+</body>
+</html>
