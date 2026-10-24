@@ -731,10 +731,14 @@ p.ae-cta:has(+ .assess-card){display:none}   /* the card replaces the text line 
 @media (max-width:600px){.readnext{gap:6px}.readnext a{font-size:14px;padding:8px 12px}}
 
 /* pack offer card v4 — build_practice_pages._card (141 practice/guide pages), 2026-10-14 */
-/* slim pack strip (2026-10-24, build_practice_pages._mini): one line + LINE / 線上刷卡 / 看內容 */
+/* slim pack strip (2026-10-24, build_practice_pages._mini): one line, the tier chips, LINE / 線上刷卡 / 看內容 */
 .pkm-sec{padding:14px 0}
 .pkm{max-width:1000px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 18px;background:#FFFBEF;border:1.5px solid var(--yellow);border-radius:14px;padding:12px 18px}
-.pkm-t{margin:0;flex:1 1 380px;font-size:15px;line-height:1.65;color:#333c4d}.pkm-t b{color:var(--navy)}
+.pkm-t{margin:0;flex:1 1 100%;font-size:15px;line-height:1.65;color:#333c4d}.pkm-t b{color:var(--navy)}
+.pkm-tiers{display:flex;flex-wrap:wrap;gap:6px 8px;flex:1 1 auto}
+.pkm-tier{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1.5px solid rgba(26,39,82,.15);border-radius:999px;padding:4px 12px 4px 8px;font-size:14px;cursor:pointer;color:#333c4d}
+.pkm-tier input{accent-color:var(--blue);margin:0}.pkm-tier b{color:var(--navy);font-family:'Baloo 2',sans-serif}
+.pkm-tier:has(input:checked){border-color:var(--blue);background:var(--light-blue)}
 .pkm-a{margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px}
 .pkm-a a{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;line-height:1.4;text-decoration:none;border-radius:999px;padding:6px 14px;white-space:nowrap}
 .pkm-line{background:var(--yellow);color:var(--navy)}.pkm-line:hover{filter:brightness(.96)}
