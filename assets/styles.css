@@ -731,6 +731,15 @@ p.ae-cta:has(+ .assess-card){display:none}   /* the card replaces the text line 
 @media (max-width:600px){.readnext{gap:6px}.readnext a{font-size:14px;padding:8px 12px}}
 
 /* pack offer card v4 — build_practice_pages._card (141 practice/guide pages), 2026-10-14 */
+/* slim pack strip (2026-10-24, build_practice_pages._mini): one line + LINE / 線上刷卡 / 看內容 */
+.pkm-sec{padding:14px 0}
+.pkm{max-width:1000px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 18px;background:#FFFBEF;border:1.5px solid var(--yellow);border-radius:14px;padding:12px 18px}
+.pkm-t{margin:0;flex:1 1 380px;font-size:15px;line-height:1.65;color:#333c4d}.pkm-t b{color:var(--navy)}
+.pkm-a{margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px}
+.pkm-a a{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;line-height:1.4;text-decoration:none;border-radius:999px;padding:6px 14px;white-space:nowrap}
+.pkm-line{background:var(--yellow);color:var(--navy)}.pkm-line:hover{filter:brightness(.96)}
+.pkm-card{background:#fff;color:var(--navy);border:1.5px solid rgba(26,39,82,.35)}.pkm-card:hover{border-color:var(--navy)}
+.pkm-a a.pkm-more{padding:6px 2px;color:var(--blue-ink)}
 .pk3-sec{padding:clamp(28px,3.6vw,44px) 0}
 .pk3{max-width:1000px;margin:0 auto;background:linear-gradient(135deg,#FFFBEF,#FFF4D6);border:2px solid var(--yellow);border-radius:22px;padding:clamp(20px,3.4vw,30px);display:grid;grid-template-columns:minmax(0,1fr) minmax(290px,330px);gap:20px 36px;align-items:center}
 .pk3 h2{font-size:clamp(24px,2.8vw,30px);margin:0 0 10px;line-height:1.3}.pk3 h2 em{color:var(--blue-ink)}

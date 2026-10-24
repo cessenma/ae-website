@@ -69,8 +69,6 @@ RedirectMatch 301 ^/aei-curriculum/?$ https://americanenglish.com.tw/courses/
 RedirectMatch 301 ^/elementary-school-students/?$ https://americanenglish.com.tw/banqiao-elementary-school-english/
 RedirectMatch 301 ^/about/?$ https://americanenglish.com.tw/certified-american-teacher-banqiao/
 RedirectMatch 301 ^/information/?$ https://americanenglish.com.tw/
-# Paid packs paused 2026-10-15 (no paid content on the site): the old pack page goes to the free Cambridge hub.
-RedirectMatch 301 ^/cambridge-practice-exam-pack/?$ https://americanenglish.com.tw/cambridge-practice-tests/
 # GA4 Jul 2026: visitors (and the month's only tracked key events) still hit the
 # old WordPress /contact-us — send them to the trial page instead of a 404.
 RedirectMatch 301 ^/contact-us/?$ https://americanenglish.com.tw/free-trial/
