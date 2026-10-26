@@ -192,16 +192,20 @@ TEACHER   = "/certified-american-teacher-banqiao/"
 ORG_ID    = ORIGIN + "/#organization"
 CREATOR   = {"@type": "Organization", "name": "埃森美語 American English", "url": ORIGIN + "/"}   # ImageObject.creator, inline
 LICENSE_URL = ORIGIN + "/chart-license/"
+COPYRIGHT = "© 2026 American English 埃森美語 — 免費使用，請註明出處並連回 americanenglish.com.tw/chart-license/"
 _OWN_IMG = re.compile(re.escape(ORIGIN) + r"/assets/img/(?:charts|share)/")
 
 def own_image(obj):
     """Licence fields on the school's own images (charts, share cards) so Google can show the
     "Licensable" badge; chart images from build_chart_images.py already had them. Never on the
     blog photos — many are Pexels pictures, not the school's to license. (2026-10-13 plan, H12)"""
-    if isinstance(obj, dict) and "ImageObject" in _types(obj) and "license" not in obj and \
+    # copyrightNotice too (2026-10-26): Search Console's image-metadata report flagged 41 share
+    # cards for it; the chart images from build_chart_images.py carry the same notice.
+    if isinstance(obj, dict) and "ImageObject" in _types(obj) and ("license" not in obj or "copyrightNotice" not in obj) and \
             _OWN_IMG.match(str(obj.get("contentUrl") or obj.get("url") or "")):
         obj.update({"license": LICENSE_URL, "acquireLicensePage": LICENSE_URL,
-                    "creditText": obj.get("creditText") or "埃森美語 American English", "creator": dict(CREATOR)})
+                    "creditText": obj.get("creditText") or "埃森美語 American English", "creator": obj.get("creator") or dict(CREATOR),
+                    "copyrightNotice": obj.get("copyrightNotice") or COPYRIGHT})
         return True
     return False
 
