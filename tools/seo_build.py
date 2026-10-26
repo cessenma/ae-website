@@ -1710,7 +1710,8 @@ def process_page(path, css_ver="", crit=""):
         seo.append('<script type="application/ld+json">' + jd({
             "@context": "https://schema.org", "@type": "ProfilePage", "@id": canon + "#profile", "url": canon,
             "inLanguage": "zh-Hant-TW", "isPartOf": {"@id": WEBSITE_ID},
-            "dateModified": modified, "mainEntity": {"@id": PERSON_ID},
+            # ProfilePage wants a full ISO 8601 datetime (Search Console flagged the bare date, 2026-10-26)
+            "dateModified": f"{modified}T09:00:00+08:00", "mainEntity": {"@id": PERSON_ID},
             "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}}) + "</script>")
     if rel == "contact/index.html":
         seo.append('<script type="application/ld+json">' + jd({
