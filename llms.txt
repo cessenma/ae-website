@@ -291,6 +291,11 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 - [英文卡通推薦66部卡通與節目：2歲到國中看卡通學英文片單](https://americanenglish.com.tw/learn-english-cartoons/): 英文卡通推薦 66 部卡通與節目，從 2 歲到國中分齡挑，標出學什麼、程度、語速和英式美式；另有看卡通學英文 7 步驟、字幕怎麼開、40 句卡通英文和 20 個親子問題。
 - [不敢開口說英文怎麼辦？72句孩子安全開口句＋4週在家練習](https://americanenglish.com.tw/afraid-to-speak-english/): 不敢開口說英文的孩子，先從 72 句說了不會錯的安全開口句練起：打招呼、聽不懂、問英文怎麼說、買東西、爭取思考時間；另有卡住原因、家長常犯的 10 件事與 4 週計畫。
 - [如何學好英文？學好英文的方法64項、學英文要多久＋一週計畫](https://americanenglish.com.tw/how-to-learn-english/): 如何學好英文？依聽說讀寫、單字、發音、文法、考試 8 種能力整理 64 個學好英文的方法，標出多久練一次和免費資源；另有學英文要多久、10 個常見錯誤、三種一週計畫。
+- [英文故事要聽幾次才記得住？研究：第3次記住一半](https://americanenglish.com.tw/english-story-repetition/): 小孩英文故事要聽幾次才記得住？台灣國小四年級研究：同一個故事唸到第 3 次，孩子平均學會約一半的新單字，程度弱的孩子也有進步。附埃森美語「故事三遍」課堂做法。
+- [英文讀本真的能學單字嗎？研究：8週從落後變超前](https://americanenglish.com.tw/graded-readers-vocabulary/): 小孩讀英文分級讀本真的能學單字嗎？韓國國小研究：8 週讀 16 本簡單讀本，單字從落後對照組變成超前，幾週後仍記得較多。附埃森美語 Peter & Jane 讀本做法與在家怎麼讀。
+- [英文讀本要配音檔聽嗎？研究：讀最重要，音檔是加分](https://americanenglish.com.tw/reading-with-audio/): 英文讀本要配音檔聽嗎？西班牙 96 位國小生讀科學讀本的研究：只讀和邊讀邊聽的孩子，單字都比沒讀的多，兩組差別不大。讀最重要，音檔是加分不是必要。附埃森美語做法。
+- [看英文卡通學英文有用嗎？研究：上課再加影片學更多](https://americanenglish.com.tw/english-cartoons-vocabulary/): 小孩看英文卡通、影集學英文有用嗎？兩項整學年課堂研究：照常上課之外再看附字幕的英文影集，單字學得更多，差距一學期比一學期大。影片是加分，不是取代上課。
+- [英文單字背了就忘怎麼辦？研究：造句學的字半年還記得](https://americanenglish.com.tw/vocabulary-retention/): 英文單字背了就忘怎麼辦？英國國小研究：10 週學 20 個單字，懂意思、討論、自己造句，孩子不只認得也會用，6 個月後還記得。附埃森美語 Keynote 單字頁、造句與複習做法。
 - [英檢初級口說題目｜複誦・朗讀・回答問題 18 題（可錄音）](https://americanenglish.com.tw/gept-elementary-speaking-practice/): 全民英檢初級複試口說免費線上練習：複誦・朗讀・回答問題，共 18 題原創題目，附美式發音音檔、參考回答與答題提示，每題可以直接錄下自己的回答來比較。
 - [英檢中級口說題目｜朗讀・回答問題・看圖敘述 13 題（可錄音）](https://americanenglish.com.tw/gept-intermediate-speaking-practice/): 全民英檢中級複試口說免費線上練習：朗讀短文・回答問題・看圖敘述，共 13 題原創題目，附美式發音音檔、參考回答與答題提示，每題可以直接錄下自己的回答來比較。
 - [英檢中高級口說題目｜回答問題・看圖敘述・申述 10 題（可錄音）](https://americanenglish.com.tw/gept-high-intermediate-speaking-practice/): 全民英檢中高級複試口說免費線上練習：回答問題・看圖敘述・申述，共 10 題原創題目，附美式發音音檔、參考回答與答題提示，每題可以直接錄下自己的回答來比較。

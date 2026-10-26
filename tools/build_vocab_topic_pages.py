@@ -66,12 +66,19 @@ def faq(items):
         f'</h3><div class="faq-a"><p>{a}</p></div></div>' for q, a in items)
     return f'<div class="faq">{inner}</div>'
 
-def cta(line, h2="單字背起來了，用得出來嗎？"):
+def cta(line, h2="單字背起來了，用得出來嗎？", btns=None):
     # bg-blue is the site's closing-CTA convention and the anchor route_blocks.py
     # inserts its "what next" section before — without it the page gets no route block.
+    # btns = [(label, href, class), …] replaces the booking button (spec "cta_btns"; the
+    # research series asks parents to ask on LINE and download, with no 試聽 wording).
+    if btns:
+        ext = lambda h: ' target="_blank" rel="noopener"' if h.startswith("http") else ""
+        b = "".join(f'<a class="{c}" href="{h}"{ext(h)}>{t}</a>' for t, h, c in btns)
+        b = f'<div class="btn-row" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center">{b}</div>'
+    else:
+        b = '<a class="btn btn-primary" href="/line/">加 LINE 預約試聽</a>'
     return ('<section class="section bg-blue"><div class="wrap"><div class="center stack reveal">'
-            f'<h2>{h2}</h2><p class="body">{line}</p>'
-            '<a class="btn btn-primary" href="/line/">加 LINE 預約試聽</a></div></div></section>')
+            f'<h2>{h2}</h2><p class="body">{line}</p>{b}</div></div></section>')
 
 N  = DATA["numbers"]; M = DATA["months"]; D = DATA["days"]
 
@@ -1347,7 +1354,7 @@ def from_spec(spec):
         if s.get("cls"):        # a page-specific hook for the spec's own css (e.g. the cursive column)
             h = h.replace('<section class="section', f'<section class="{s["cls"]} section', 1)
         out.append(h)
-    out.append(cta(spec["cta"], spec["cta_h2"]) if spec.get("cta_h2") else cta(spec["cta"]))
+    out.append(cta(spec["cta"], spec.get("cta_h2") or "單字背起來了，用得出來嗎？", btns=spec.get("cta_btns")))
     return "".join(out)
 
 if os.path.isdir(SPEC_DIR):

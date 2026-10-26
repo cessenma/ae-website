@@ -651,6 +651,10 @@
 "date": "2026-10-16",
 "hash": "2833900c8c1a0150be48cc6c282b03c3"
 },
+"english-cartoons-vocabulary": {
+"date": "2026-10-26",
+"hash": "72051e20ea2989f6ef359f96a94f376b"
+},
 "english-comparatives-guide": {
 "date": "2026-10-19",
 "hash": "0f0041e7445f949d006ed53128af8dfa"
@@ -746,6 +750,10 @@
 "english-speaking-practice": {
 "date": "2026-09-15",
 "hash": "3d4712fc83428e26fb0d5201a8d7ada1"
+},
+"english-story-repetition": {
+"date": "2026-10-26",
+"hash": "80536b9db917db8bce386943c3d49cf8"
 },
 "english-summer-camp-banqiao": {
 "date": "2026-10-19",
@@ -1170,6 +1178,10 @@
 "graded-readers-guide": {
 "date": "2026-10-19",
 "hash": "3b81893a743dd4cd6435039c77818734"
+},
+"graded-readers-vocabulary": {
+"date": "2026-10-26",
+"hash": "7eac81e718467710ebce57d1290b290d"
 },
 "guoguang-elementary-english": {
 "date": "2026-10-13",
@@ -2795,6 +2807,10 @@
 "date": "2026-08-07",
 "hash": "5b0976a2c1e34ed5926e2212842e152d"
 },
+"reading-with-audio": {
+"date": "2026-10-26",
+"hash": "26cabb534d531654265d1051b94f498e"
+},
 "real-vs-fake-english-immersion-banqiao": {
 "date": "2026-10-19",
 "hash": "a95507818ff600152ea8c6532a5ddb72"
@@ -2970,6 +2986,10 @@
 "valentines-day-english": {
 "date": "2026-10-19",
 "hash": "8cd23565b4b04e49ce7dae849b92b20e"
+},
+"vocabulary-retention": {
+"date": "2026-10-26",
+"hash": "fae813ac97c34d39565ce5c56d7e22fe"
 },
 "weather-english": {
 "date": "2026-10-20",
