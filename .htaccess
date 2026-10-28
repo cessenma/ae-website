@@ -176,9 +176,14 @@ AddType audio/mpeg .mp3
 AddType audio/ogg .ogg
 AddType audio/webm .weba
 
+# The exam-pack demo video in the /exams/ hero: declared for the same reason (nosniff); the page
+# links it with a ?v= content hash, so a year of caching is safe
+AddType video/mp4 .mp4
+
 <IfModule mod_expires.c>
 ExpiresByType audio/mp4 "access plus 1 year"
 ExpiresByType audio/mpeg "access plus 1 year"
+ExpiresByType video/mp4 "access plus 1 year"
 </IfModule>
 
 # Private practice-exam delivery: keep it out of every index, and never cache.
