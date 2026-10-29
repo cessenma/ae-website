@@ -67,6 +67,10 @@
 .page-hero .wrap > figure.post-hero.hero-vid{display:block;max-width:none;padding:12px;border-radius:30px;grid-row:1;justify-self:center}
 .page-hero .hv-copy{min-width:0}   /* the title block is one grid item, so it centres beside the card */
 .hero-vid video{display:block;width:240px;height:auto;aspect-ratio:9/16;border-radius:20px;background:#F4FAFF;cursor:pointer}
+@media(min-width:768px){   /* both columns as wide as what's in them, the pair centred, so the title sits next to the video */
+  .page-hero .wrap:has(> .hero-vid){grid-template-columns:auto auto;justify-content:center}
+  .page-hero .hv-copy h1{width:9.4em}   /* keeps the title's three lines at every width */
+}
 @media(min-width:768px) and (max-width:1023px){.hero-vid video{width:210px}}
 @media(max-width:767px){
   .page-hero .wrap > figure.post-hero.hero-vid{margin:16px auto 0;padding:10px;border-radius:24px}
