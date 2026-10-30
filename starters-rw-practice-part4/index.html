@@ -445,12 +445,26 @@ const PRX = { part:4, sets:[{"setId": "A", "items": [{"type": "gaptext", "n": 1,
     </aside>
   </div>
 </section>
+<template id="pkm-after"><p class="pkm-after"><span>剛才做的是考試裡的一個部分。正式考試要一次做完整份，想先計時練一整份嗎？</span><a href="#pack-offer">看 Starters 原創模擬試卷 9 份 ↓</a></p></template>
 <script>(function(){var c=document.getElementById('pack-offer');if(!c)return;
 var l=c.querySelector('.pkm-line'),k=c.querySelector('.pkm-card');
 function set(a,h,d){if(!a||!h)return;a.href=h;a.setAttribute('data-pack-level',d.key);a.setAttribute('data-pack-tier',d.tier);}
 c.querySelectorAll('.pkm-tier input').forEach(function(r){r.addEventListener('change',function(){var d=this.dataset;set(l,d.line,d);set(k,d.ls,d);
 if(typeof window.gtag==='function')window.gtag('event','pack_level_pick',{level:d.key,tier:d.tier,page_path:location.pathname});});});
 })();</script>
+<style>.pkm-after{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:12px 0 0;padding:10px 14px;background:#FFFBEF;border:1.5px solid var(--yellow);border-radius:12px;font-size:15px;line-height:1.65;color:#333c4d}
+.pkm-after[hidden]{display:none}.pkm-after span{flex:1 1 260px}
+.pkm-after a{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;line-height:1.4;text-decoration:none;border-radius:999px;padding:6px 14px;background:var(--yellow);color:var(--navy);white-space:nowrap}
+.pkm.pkm-hi{outline:3px solid var(--yellow);outline-offset:3px}</style>
+<script>(function(){function go(){var t=document.getElementById('pkm-after'),sc=document.getElementById('score'),c=document.getElementById('pack-offer');
+if(!t||!sc||!c||!t.content)return;var row=sc.parentNode,p=t.content.firstElementChild.cloneNode(true);row.parentNode.insertBefore(p,row.nextSibling);
+function sync(){p.hidden=!sc.classList.contains('show');}sync();new MutationObserver(sync).observe(sc,{attributes:true,attributeFilter:['class']});
+p.querySelector('a').addEventListener('click',function(e){e.preventDefault();
+c.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'center'});
+c.classList.add('pkm-hi');setTimeout(function(){c.classList.remove('pkm-hi');},1800);
+var m=sc.textContent.match(/(\d+)\s*\/\s*(\d+)/),k=c.querySelector('.pkm-tier input:checked');
+if(typeof window.gtag==='function')window.gtag('event','pack_score_tap',{level:k?k.dataset.key:'',score_pct:m&&+m[2]?Math.round(m[1]/m[2]*100):-1,page_path:location.pathname});});}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();})();</script>
 <!-- /AE:PACKOFFER -->
 
 
