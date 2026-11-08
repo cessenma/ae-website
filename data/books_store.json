@@ -1,0 +1,31 @@
+{
+ "_note": "One Lemon Squeezy checkout link per variant (checkout/buy/<uuid> from the variant's own share link). Empty = 即將開放.",
+ "readers_sets": {
+  "1-4": "",
+  "5-8": "",
+  "9-12": "",
+  "all": ""
+ },
+ "readers_levels": {
+  "1": "",
+  "2": "",
+  "3": "",
+  "4": "",
+  "5": "",
+  "6": "",
+  "7": "",
+  "8": "",
+  "9": "",
+  "10": "",
+  "11": "",
+  "12": ""
+ },
+ "grammar": {
+  "elementary-books": "",
+  "elementary-sheets": "",
+  "junior-books": "",
+  "junior-sheets": "",
+  "senior-books": "",
+  "senior-sheets": ""
+ }
+}

@@ -341,6 +341,15 @@
   // Delegated so it also catches the injected chrome/fab links. Mark "line_tap"
   // as a key event in GA4 Admin, then import it into Google Ads as a conversion.
   document.addEventListener('click', function(e){
+    // The school's own books (2026-11-08): the book cards and the two store pages mark their links
+    // data-book="readers|grammar" + data-book-item (free / page / covers / a variant name).
+    // book_tap tells which page sends readers to the books; a checkout link also tells Meta.
+    var bk = e.target.closest ? e.target.closest('a[data-book]') : null;
+    if(bk){
+      var item = bk.getAttribute('data-book-item') || '', buy = /lemonsqueezy\.com/.test(bk.getAttribute('href') || '');
+      if(typeof window.gtag === 'function') window.gtag('event', 'book_tap', { product: bk.getAttribute('data-book'), item: item, page_path: location.pathname, link_text: buy ? 'checkout' : item });
+      try{ if(buy && window.fbq) fbq('track', 'InitiateCheckout', { content_name: bk.getAttribute('data-book') + '_' + item, content_category: 'books', currency: 'TWD', value: Number(bk.getAttribute('data-book-price')) || 0 }); }catch(_){}
+    }
     // Two link families: lin.ee (free trial / questions) and line.me/R/oaMessage with a
     // pre-filled 購買 message (the exam-pack tiers). The pack links were invisible to this
     // handler until 2026-09-06 — 231 purchase placements fired nothing. They now emit

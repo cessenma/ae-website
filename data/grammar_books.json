@@ -1,0 +1,1570 @@
+[
+ {
+  "code": "G3",
+  "title": "國小三年級 英文句型書",
+  "title_en": "Grade 3 English sentence-pattern book",
+  "book_no": "第 1–2 冊",
+  "points": 12,
+  "units": [
+   {
+    "n": 1,
+    "zh": "你好！",
+    "en": "Hello!",
+    "points": [
+     {
+      "zh": "打招呼",
+      "en": "saying hello and goodbye"
+     },
+     {
+      "zh": "問名字",
+      "en": "asking someone's name"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "zh": "你好嗎？",
+    "en": "How Are You?",
+    "points": [
+     {
+      "zh": "問好",
+      "en": "asking how someone is"
+     },
+     {
+      "zh": "問年紀",
+      "en": "asking someone's age"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "zh": "在教室裡",
+    "en": "In the Classroom",
+    "points": [
+     {
+      "zh": "教室用語",
+      "en": "classroom language"
+     },
+     {
+      "zh": "問這是什麼",
+      "en": "asking what something is"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "zh": "那是什麼？",
+    "en": "What's That?",
+    "points": [
+     {
+      "zh": "問那是什麼",
+      "en": "asking about things over there"
+     },
+     {
+      "zh": "問是不是",
+      "en": "yes / no questions with Is it"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "zh": "顏色和大小",
+    "en": "Colors and Sizes",
+    "points": [
+     {
+      "zh": "問顏色",
+      "en": "asking about colors"
+     },
+     {
+      "zh": "問大小長短",
+      "en": "asking what something is like"
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "zh": "我的家人",
+    "en": "My Family",
+    "points": [
+     {
+      "zh": "問是誰",
+      "en": "asking who someone is"
+     },
+     {
+      "zh": "問職業",
+      "en": "asking about jobs"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "G4",
+  "title": "國小四年級 英文句型書",
+  "title_en": "Grade 4 English sentence-pattern book",
+  "book_no": "第 3–4 冊",
+  "points": 12,
+  "units": [
+   {
+    "n": 1,
+    "zh": "心情和樣子",
+    "en": "Feelings and Looks",
+    "points": [
+     {
+      "zh": "問心情",
+      "en": "asking how someone feels"
+     },
+     {
+      "zh": "說人的樣子",
+      "en": "saying what people look like"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "zh": "我會游泳",
+    "en": "I Can Swim",
+    "points": [
+     {
+      "zh": "問會做什麼",
+      "en": "asking what someone can do"
+     },
+     {
+      "zh": "問會不會",
+      "en": "asking if someone can do something"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "zh": "時間和東西",
+    "en": "Time and Things",
+    "points": [
+     {
+      "zh": "問時間",
+      "en": "asking the time"
+     },
+     {
+      "zh": "問這些是什麼",
+      "en": "asking what these are"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "zh": "在哪裡",
+    "en": "Where Is It?",
+    "points": [
+     {
+      "zh": "問東西在哪裡",
+      "en": "asking where things are"
+     },
+     {
+      "zh": "問人在哪裡",
+      "en": "asking where someone is"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "zh": "喜歡和想要",
+    "en": "Likes and Wants",
+    "points": [
+     {
+      "zh": "問喜歡什麼",
+      "en": "asking what someone likes"
+     },
+     {
+      "zh": "問想要什麼",
+      "en": "asking what someone wants"
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "zh": "天氣和價錢",
+    "en": "Weather and Prices",
+    "points": [
+     {
+      "zh": "問天氣",
+      "en": "asking about the weather"
+     },
+     {
+      "zh": "問價錢",
+      "en": "asking the price"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "G5",
+  "title": "國小五年級 英文句型書",
+  "title_en": "Grade 5 English sentence-pattern book",
+  "book_no": "第 5–6 冊",
+  "points": 12,
+  "units": [
+   {
+    "n": 1,
+    "zh": "職業",
+    "en": "Jobs",
+    "points": [
+     {
+      "zh": "問「你是…嗎？」",
+      "en": "asking Are you…?"
+     },
+     {
+      "zh": "問「他/她是…嗎？」",
+      "en": "asking Is he / she…?"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "zh": "喜歡什麼",
+    "en": "Likes",
+    "points": [
+     {
+      "zh": "問「你喜歡…嗎？」",
+      "en": "asking Do you like…?"
+     },
+     {
+      "zh": "問「他/她喜歡…嗎？」",
+      "en": "asking Does he / she like…?"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "zh": "我的一週",
+    "en": "My Week",
+    "points": [
+     {
+      "zh": "問星期幾",
+      "en": "asking what day it is"
+     },
+     {
+      "zh": "問有什麼課",
+      "en": "asking about school subjects"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "zh": "現在在做什麼",
+    "en": "Right Now",
+    "points": [
+     {
+      "zh": "問在做什麼",
+      "en": "asking what someone is doing"
+     },
+     {
+      "zh": "問怎麼了",
+      "en": "asking what's wrong"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "zh": "地點",
+    "en": "Places",
+    "points": [
+     {
+      "zh": "問要去哪裡",
+      "en": "asking where someone is going"
+     },
+     {
+      "zh": "問有幾個",
+      "en": "asking how many there are"
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "zh": "在商店",
+    "en": "At the Shop",
+    "points": [
+     {
+      "zh": "點餐、買東西",
+      "en": "ordering food and shopping"
+     },
+     {
+      "zh": "問是誰的",
+      "en": "asking whose something is"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "G6",
+  "title": "國小六年級 英文句型書",
+  "title_en": "Grade 6 English sentence-pattern book",
+  "book_no": "第 7–8 冊",
+  "points": 12,
+  "units": [
+   {
+    "n": 1,
+    "zh": "關於我",
+    "en": "About Me",
+    "points": [
+     {
+      "zh": "問從哪裡來",
+      "en": "asking where someone is from"
+     },
+     {
+      "zh": "問最喜歡的",
+      "en": "asking about favorites"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "zh": "我的一天",
+    "en": "My Day",
+    "points": [
+     {
+      "zh": "問幾點做什麼",
+      "en": "asking what time you do things"
+     },
+     {
+      "zh": "問放學後做什麼",
+      "en": "asking what you do after school"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "zh": "怎麼上學",
+    "en": "Going to School",
+    "points": [
+     {
+      "zh": "問怎麼去",
+      "en": "asking how you go somewhere"
+     },
+     {
+      "zh": "問他／她怎麼去",
+      "en": "asking how he or she goes"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "zh": "在街上",
+    "en": "In Town",
+    "points": [
+     {
+      "zh": "問附近有沒有",
+      "en": "asking what is near here"
+     },
+     {
+      "zh": "問路",
+      "en": "asking the way"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "zh": "生日和價錢",
+    "en": "Birthdays and Prices",
+    "points": [
+     {
+      "zh": "問生日",
+      "en": "asking about birthdays"
+     },
+     {
+      "zh": "問價錢",
+      "en": "asking prices"
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "zh": "昨天",
+    "en": "Yesterday",
+    "points": [
+     {
+      "zh": "問昨天在哪裡",
+      "en": "asking where someone was yesterday"
+     },
+     {
+      "zh": "問昨天做了什麼",
+      "en": "asking what someone did yesterday"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "G7-1",
+  "title": "國一上 英文文法書",
+  "title_en": "Grade 7 (semester 1) English grammar book",
+  "book_no": "第一冊",
+  "points": 11,
+  "units": [
+   {
+    "n": 1,
+    "zh": "be 動詞與人稱代名詞",
+    "en": "be verbs and personal pronouns",
+    "points": [
+     {
+      "zh": "be 動詞 am／is／are",
+      "en": "be verbs am / is / are"
+     },
+     {
+      "zh": "人稱代名詞：主格、受格、所有格",
+      "en": "personal pronouns: subject, object, possessive"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "zh": "指示詞與名詞複數",
+    "en": "this / that and plural nouns",
+    "points": [
+     {
+      "zh": "this／that／these／those 與 a／an",
+      "en": "this / that / these / those and a / an"
+     },
+     {
+      "zh": "名詞的單數與複數",
+      "en": "singular and plural nouns"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "zh": "疑問詞與地方介系詞",
+    "en": "question words and prepositions of place",
+    "points": [
+     {
+      "zh": "疑問詞 Who／What／Where／How old",
+      "en": "question words Who / What / Where / How old"
+     },
+     {
+      "zh": "地方介系詞 in／on／under／next to…",
+      "en": "prepositions of place in / on / under / next to…"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "zh": "There is／are 與 can",
+    "en": "There is / are and can",
+    "points": [
+     {
+      "zh": "There is／There are 與 some／any",
+      "en": "There is / There are, with some / any"
+     },
+     {
+      "zh": "助動詞 can／can't",
+      "en": "the helping verb can / can't"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "zh": "現在進行式與祈使句",
+    "en": "the present progressive and imperatives",
+    "points": [
+     {
+      "zh": "現在進行式",
+      "en": "present progressive"
+     },
+     {
+      "zh": "祈使句與 Let's",
+      "en": "imperatives and Let's"
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "zh": "時間、星期與日期",
+    "en": "time, days and dates",
+    "points": [
+     {
+      "zh": "時間、星期與日期的問法",
+      "en": "asking the time, the day and the date"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "G7-2",
+  "title": "國一下 英文文法書",
+  "title_en": "Grade 7 (semester 2) English grammar book",
+  "book_no": "第二冊",
+  "points": 12,
+  "units": [
+   {
+    "n": 1,
+    "zh": "現在簡單式",
+    "en": "the simple present",
+    "points": [
+     {
+      "zh": "現在簡單式與 do／don't",
+      "en": "simple present with do / don't (I, you, we, they)"
+     },
+     {
+      "zh": "第三人稱單數與 does",
+      "en": "third person singular -s and does"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "zh": "疑問詞問句與頻率副詞",
+    "en": "question words and how often",
+    "points": [
+     {
+      "zh": "疑問詞 + do／does 問句",
+      "en": "question words with do / does"
+     },
+     {
+      "zh": "頻率副詞與 How often",
+      "en": "adverbs of frequency and How often"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "zh": "Which 問句與可數名詞",
+    "en": "Which questions and countable nouns",
+    "points": [
+     {
+      "zh": "Which 問句與 one／ones",
+      "en": "Which questions and one / ones"
+     },
+     {
+      "zh": "可數與不可數名詞",
+      "en": "countable and uncountable nouns"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "zh": "數量、價錢與所有權",
+    "en": "amounts, prices and ownership",
+    "points": [
+     {
+      "zh": "How many／How much",
+      "en": "How many / How much, many / much / a few / a little"
+     },
+     {
+      "zh": "whose 與所有代名詞",
+      "en": "whose and possessive pronouns"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "zh": "過去式：was／were 與 -ed",
+    "en": "the past: was / were and -ed",
+    "points": [
+     {
+      "zh": "be 動詞過去式 was／were",
+      "en": "past tense of be: was / were"
+     },
+     {
+      "zh": "規則動詞過去式 -ed",
+      "en": "simple past: regular verbs with -ed"
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "zh": "不規則過去式與 Why",
+    "en": "irregular past verbs and Why",
+    "points": [
+     {
+      "zh": "不規則動詞過去式與 did",
+      "en": "simple past: irregular verbs and did"
+     },
+     {
+      "zh": "Why、because、so",
+      "en": "Why, because, so"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "G8-1",
+  "title": "國二上 英文文法書",
+  "title_en": "Grade 8 (semester 1) English grammar book",
+  "book_no": "第三冊",
+  "points": 11,
+  "units": [
+   {
+    "n": 1,
+    "zh": "天氣與授與動詞",
+    "en": "the weather and verbs with two objects",
+    "points": [
+     {
+      "zh": "天氣的問法（現在與過去）",
+      "en": "asking about the weather (now and in the past)"
+     },
+     {
+      "zh": "授與動詞：to 與 for",
+      "en": "verbs with two objects: to and for"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "zh": "過去進行式",
+    "en": "the past progressive",
+    "points": [
+     {
+      "zh": "過去進行式",
+      "en": "past progressive"
+     },
+     {
+      "zh": "過去進行式 + when／while",
+      "en": "past progressive with when / while"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "zh": "時間連接詞",
+    "en": "time conjunctions",
+    "points": [
+     {
+      "zh": "時間連接詞 when／before／after／until",
+      "en": "time conjunctions when / before / after / until"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "zh": "不定詞與動名詞",
+    "en": "infinitives and gerunds",
+    "points": [
+     {
+      "zh": "不定詞與動名詞當受詞",
+      "en": "infinitives and gerunds as objects"
+     },
+     {
+      "zh": "動名詞當主詞與 It is…to V",
+      "en": "gerund subjects and It is … to V"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "zh": "未來式與花費",
+    "en": "the future and spending",
+    "points": [
+     {
+      "zh": "未來式 will 與 be going to",
+      "en": "the future: will and be going to"
+     },
+     {
+      "zh": "花費：spend／take／cost／pay",
+      "en": "spending time and money: spend / take / cost / pay"
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "zh": "問路與 have to",
+    "en": "asking the way and have to",
+    "points": [
+     {
+      "zh": "問路與交通方式",
+      "en": "asking the way and ways of travelling"
+     },
+     {
+      "zh": "have to／has to／don't have to",
+      "en": "have to / has to / don't have to"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "G8-2",
+  "title": "國二下 英文文法書",
+  "title_en": "Grade 8 (semester 2) English grammar book",
+  "book_no": "第四冊",
+  "points": 12,
+  "units": [
+   {
+    "n": 1,
+    "zh": "比較級與最高級",
+    "en": "comparatives and superlatives",
+    "points": [
+     {
+      "zh": "比較級 -er／more … than",
+      "en": "comparatives: -er / more … than"
+     },
+     {
+      "zh": "最高級 the -est／the most",
+      "en": "superlatives: the -est / the most"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "zh": "連綴動詞與副詞",
+    "en": "linking verbs and adverbs",
+    "points": [
+     {
+      "zh": "連綴動詞 + 形容詞",
+      "en": "linking verbs + adjective"
+     },
+     {
+      "zh": "情狀副詞與副詞比較級",
+      "en": "adverbs of manner and their comparatives"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "zh": "使役與感官動詞",
+    "en": "causative and perception verbs",
+    "points": [
+     {
+      "zh": "使役動詞 make／let／have",
+      "en": "causative verbs make / let / have"
+     },
+     {
+      "zh": "感官動詞 see／hear／watch／feel",
+      "en": "perception verbs see / hear / watch / feel"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "zh": "反身代名詞與不定代名詞",
+    "en": "reflexive and indefinite pronouns",
+    "points": [
+     {
+      "zh": "反身代名詞 myself…",
+      "en": "reflexive pronouns myself …"
+     },
+     {
+      "zh": "不定代名詞 one／another／the other…",
+      "en": "indefinite pronouns one / another / the other …"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "zh": "助動詞與附加問句",
+    "en": "modals and tag questions",
+    "points": [
+     {
+      "zh": "助動詞 must／should／may",
+      "en": "modals must / should / may"
+     },
+     {
+      "zh": "附加問句",
+      "en": "tag questions"
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "zh": "祈使句 + and／or 與條件句",
+    "en": "imperative + and / or, if and although",
+    "points": [
+     {
+      "zh": "祈使句 + and／or",
+      "en": "imperative + and / or"
+     },
+     {
+      "zh": "if 條件句與 although",
+      "en": "if-clauses (real conditional) and although"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "G9-1",
+  "title": "國三上 英文文法書",
+  "title_en": "Grade 9 (semester 1) English grammar book",
+  "book_no": "第五冊",
+  "points": 11,
+  "units": [
+   {
+    "n": 1,
+    "zh": "現在完成式",
+    "en": "the present perfect",
+    "points": [
+     {
+      "zh": "現在完成式的形式",
+      "en": "present perfect: have / has + past participle"
+     },
+     {
+      "zh": "現在完成式的用法",
+      "en": "uses of the present perfect: experience, completion, duration"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "zh": "情緒形容詞與 that 子句",
+    "en": "-ed / -ing adjectives and that clauses",
+    "points": [
+     {
+      "zh": "情緒形容詞 -ed 與 -ing",
+      "en": "emotion adjectives: -ed and -ing"
+     },
+     {
+      "zh": "that 名詞子句",
+      "en": "that noun clauses"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "zh": "被動語態",
+    "en": "the passive",
+    "points": [
+     {
+      "zh": "被動語態",
+      "en": "the passive: be + past participle"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "zh": "間接問句與 want／tell + 人 + to V",
+    "en": "indirect questions and want / tell someone to do",
+    "points": [
+     {
+      "zh": "間接問句與「疑問詞 + to V」",
+      "en": "indirect questions, and question word + to V"
+     },
+     {
+      "zh": "want／ask／tell + 人 + to V",
+      "en": "want / ask / tell + object + to V"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "zh": "關係代名詞",
+    "en": "relative pronouns",
+    "points": [
+     {
+      "zh": "關係代名詞當主詞",
+      "en": "relative pronouns who / which / that as subject"
+     },
+     {
+      "zh": "關係代名詞當受詞與省略",
+      "en": "relative pronouns as object, and leaving them out"
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "zh": "so…that、too…to 與 used to",
+    "en": "so … that, too … to and used to",
+    "points": [
+     {
+      "zh": "so…that／too…to／enough to",
+      "en": "so…that / too…to / enough to"
+     },
+     {
+      "zh": "used to + 原形動詞",
+      "en": "used to + base verb"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "G9-2",
+  "title": "國三下 英文文法書",
+  "title_en": "Grade 9 (semester 2) English grammar book",
+  "book_no": "第六冊",
+  "points": 11,
+  "units": [
+   {
+    "n": 1,
+    "zh": "連接詞與附和句",
+    "en": "conjunctions and agreeing replies",
+    "points": [
+     {
+      "zh": "as soon as／as long as／while",
+      "en": "as soon as / as long as / while"
+     },
+     {
+      "zh": "附和句 So do I／Neither do I",
+      "en": "agreeing replies So do I / Neither do I"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "zh": "對等連接詞與關係副詞 where",
+    "en": "paired conjunctions and where",
+    "points": [
+     {
+      "zh": "對等連接詞 both…and／either…or／neither…nor",
+      "en": "paired conjunctions both…and / either…or / neither…nor / not only…but also"
+     },
+     {
+      "zh": "關係副詞 where",
+      "en": "the relative adverb where"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "zh": "會考複習：時態",
+    "en": "CAP review: tenses",
+    "points": [
+     {
+      "zh": "會考複習①：時態總整理",
+      "en": "CAP review 1: the tenses together"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "zh": "會考複習：動詞句型",
+    "en": "CAP review: verb patterns",
+    "points": [
+     {
+      "zh": "會考複習②：不定詞與動名詞",
+      "en": "CAP review 2: infinitives and gerunds"
+     },
+     {
+      "zh": "會考複習③：連綴、使役、感官動詞",
+      "en": "CAP review 3: linking, causative and perception verbs"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "zh": "會考複習：被動語態與名詞子句",
+    "en": "CAP review: the passive and noun clauses",
+    "points": [
+     {
+      "zh": "會考複習④：被動語態",
+      "en": "CAP review 4: the passive voice"
+     },
+     {
+      "zh": "會考複習⑤：名詞子句",
+      "en": "CAP review 5: noun clauses"
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "zh": "會考複習：關係子句與連接詞",
+    "en": "CAP review: relative clauses and conjunctions",
+    "points": [
+     {
+      "zh": "會考複習⑥：關係子句",
+      "en": "CAP review 6: relative clauses"
+     },
+     {
+      "zh": "會考複習⑦：連接詞總整理",
+      "en": "CAP review 7: conjunctions together"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "G10-1",
+  "title": "高一上 英文文法書",
+  "title_en": "Grade 10 (semester 1) English grammar book",
+  "book_no": "第一冊",
+  "points": 12,
+  "units": [
+   {
+    "n": 1,
+    "zh": "句子的骨架",
+    "en": "sentence skeletons",
+    "points": [
+     {
+      "zh": "五大句型",
+      "en": "the five basic sentence patterns"
+     },
+     {
+      "zh": "受詞補語",
+      "en": "object complements"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "zh": "完成式",
+    "en": "the perfect tenses",
+    "points": [
+     {
+      "zh": "完成式與完成進行式",
+      "en": "present perfect (progressive)"
+     },
+     {
+      "zh": "過去完成式",
+      "en": "the past perfect"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "zh": "被動語態",
+    "en": "the passive",
+    "points": [
+     {
+      "zh": "各種時態的被動",
+      "en": "the passive in every tense"
+     },
+     {
+      "zh": "授與、使役、感官動詞的被動",
+      "en": "passive of give / make / see verbs"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "zh": "名詞子句",
+    "en": "noun clauses",
+    "points": [
+     {
+      "zh": "that 名詞子句",
+      "en": "that noun clauses"
+     },
+     {
+      "zh": "wh-／whether 名詞子句",
+      "en": "wh- and whether noun clauses"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "zh": "關係子句",
+    "en": "relative clauses",
+    "points": [
+     {
+      "zh": "關係代名詞與 whose",
+      "en": "relative pronouns and whose"
+     },
+     {
+      "zh": "介系詞 + which、非限定",
+      "en": "in which; non-defining clauses"
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "zh": "虛主詞 It 與 seem",
+    "en": "dummy it and seem",
+    "points": [
+     {
+      "zh": "虛主詞 It + to V",
+      "en": "It as a dummy subject + to V"
+     },
+     {
+      "zh": "seem／appear 句型",
+      "en": "seem and appear"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "G10-2",
+  "title": "高一下 英文文法書",
+  "title_en": "Grade 10 (semester 2) English grammar book",
+  "book_no": "第二冊",
+  "points": 12,
+  "units": [
+   {
+    "n": 1,
+    "zh": "感官與使役動詞",
+    "en": "perception and causative verbs",
+    "points": [
+     {
+      "zh": "感官動詞",
+      "en": "perception verbs + object + V / V-ing"
+     },
+     {
+      "zh": "使役動詞",
+      "en": "causative verbs make / have / let / get"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "zh": "不定詞與動名詞",
+    "en": "infinitives and gerunds",
+    "points": [
+     {
+      "zh": "to V／V-ing 意思不同",
+      "en": "remember / stop / try + to V or V-ing"
+     },
+     {
+      "zh": "介系詞 to + V-ing",
+      "en": "the preposition to + V-ing"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "zh": "不定詞進階",
+    "en": "more about infinitives",
+    "points": [
+     {
+      "zh": "不定詞當形容詞、表目的",
+      "en": "to V after nouns; in order to / so as to"
+     },
+     {
+      "zh": "疑問詞 + to V",
+      "en": "question word + to V"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "zh": "比較",
+    "en": "comparison",
+    "points": [
+     {
+      "zh": "as … as 與倍數",
+      "en": "as … as and times (twice as …)"
+     },
+     {
+      "zh": "比較級的進階用法",
+      "en": "the + -er, the + -er; than any other"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "zh": "副詞子句",
+    "en": "adverb clauses",
+    "points": [
+     {
+      "zh": "副詞子句連接詞",
+      "en": "once, unless, even if, while (contrast)"
+     },
+     {
+      "zh": "so／such … that",
+      "en": "so / such … that and so that"
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "zh": "條件與假設",
+    "en": "conditionals",
+    "points": [
+     {
+      "zh": "真實條件句",
+      "en": "real conditionals: if, unless, in case"
+     },
+     {
+      "zh": "與現在事實相反的假設",
+      "en": "unreal present: If I were …, I would …"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "G11-1",
+  "title": "高二上 英文文法書",
+  "title_en": "Grade 11 (semester 1) English grammar book",
+  "book_no": "第三冊",
+  "points": 12,
+  "units": [
+   {
+    "n": 1,
+    "zh": "分詞",
+    "en": "participles",
+    "points": [
+     {
+      "zh": "分詞片語修飾名詞",
+      "en": "participle phrases after nouns"
+     },
+     {
+      "zh": "分詞構句（主動）",
+      "en": "participle clauses (active)"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "zh": "分詞構句進階",
+    "en": "more participle clauses",
+    "points": [
+     {
+      "zh": "被動與完成式分詞構句",
+      "en": "passive and perfect participle clauses"
+     },
+     {
+      "zh": "with 附帶狀況",
+      "en": "with + object + complement"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "zh": "關係詞進階",
+    "en": "more relative words",
+    "points": [
+     {
+      "zh": "關係副詞",
+      "en": "relative adverbs when / where / why"
+     },
+     {
+      "zh": "複合關係詞",
+      "en": "whoever, whatever and no matter + wh-"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "zh": "假設語氣",
+    "en": "unreal conditionals and wishes",
+    "points": [
+     {
+      "zh": "與過去事實相反",
+      "en": "past unreal conditionals"
+     },
+     {
+      "zh": "wish 與 as if",
+      "en": "wish and as if / as though"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "zh": "助動詞完成式",
+    "en": "modal perfects",
+    "points": [
+     {
+      "zh": "對過去的推測",
+      "en": "must / may / can't have + p.p."
+     },
+     {
+      "zh": "對過去的後悔、責備",
+      "en": "should / could / needn't have + p.p."
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "zh": "虛受詞與代名詞",
+    "en": "dummy it and pronouns",
+    "points": [
+     {
+      "zh": "虛受詞 it",
+      "en": "it as a dummy object"
+     },
+     {
+      "zh": "代名詞 that／one",
+      "en": "that / those of and one / ones"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "G11-2",
+  "title": "高二下 英文文法書",
+  "title_en": "Grade 11 (semester 2) English grammar book",
+  "book_no": "第四冊",
+  "points": 12,
+  "units": [
+   {
+    "n": 1,
+    "zh": "倒裝句",
+    "en": "inversion",
+    "points": [
+     {
+      "zh": "否定副詞倒裝",
+      "en": "inversion after negative adverbs"
+     },
+     {
+      "zh": "Only 與 so 倒裝",
+      "en": "Only, so / neither and place inversion"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "zh": "假設語氣進階",
+    "en": "more on conditionals",
+    "points": [
+     {
+      "zh": "省略 if 的倒裝",
+      "en": "conditionals without if (inversion)"
+     },
+     {
+      "zh": "其他假設句型",
+      "en": "It's time, would rather, without"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "zh": "建議與要求",
+    "en": "suggestions and demands",
+    "points": [
+     {
+      "zh": "建議與要求動詞",
+      "en": "suggest, insist, demand + that …"
+     },
+     {
+      "zh": "重要、必要的句型",
+      "en": "It is important / necessary that …"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "zh": "被動與完成式不定詞",
+    "en": "passive patterns and perfect infinitives",
+    "points": [
+     {
+      "zh": "「據說」句型",
+      "en": "It is said that … / is said to V"
+     },
+     {
+      "zh": "進階不定詞與動名詞",
+      "en": "to have p.p., to be p.p., being p.p."
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "zh": "強調與省略",
+    "en": "emphasis and ellipsis",
+    "points": [
+     {
+      "zh": "分裂句（強調句）",
+      "en": "cleft sentences: It is … that"
+     },
+     {
+      "zh": "強調 do 與省略句",
+      "en": "emphatic do and shortened clauses"
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "zh": "平行與同位",
+    "en": "parallel structure and appositives",
+    "points": [
+     {
+      "zh": "平行結構",
+      "en": "parallel structure"
+     },
+     {
+      "zh": "同位語與同位語子句",
+      "en": "appositives and the fact that …"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "G12-1",
+  "title": "高三上 英文文法書",
+  "title_en": "Grade 12 (semester 1) English grammar book",
+  "book_no": "第五冊",
+  "points": 12,
+  "units": [
+   {
+    "n": 1,
+    "zh": "時態進階",
+    "en": "more tenses",
+    "points": [
+     {
+      "zh": "未來進行式與未來完成式",
+      "en": "future progressive and future perfect"
+     },
+     {
+      "zh": "時態一致與間接引述",
+      "en": "sequence of tenses; reported speech"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "zh": "主詞與動詞一致",
+    "en": "subjects and verbs that agree",
+    "points": [
+     {
+      "zh": "主詞與動詞一致",
+      "en": "subject–verb agreement"
+     },
+     {
+      "zh": "片語和子句當主詞",
+      "en": "phrases and clauses as subjects"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "zh": "連接與轉折",
+    "en": "linking and contrast",
+    "points": [
+     {
+      "zh": "連接副詞與標點",
+      "en": "linking adverbs and punctuation"
+     },
+     {
+      "zh": "雖然與儘管",
+      "en": "although, while vs despite"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "zh": "獨立分詞構句與介系詞",
+    "en": "absolute clauses and preposition + V-ing",
+    "points": [
+     {
+      "zh": "獨立分詞構句",
+      "en": "absolute participle clauses"
+     },
+     {
+      "zh": "介系詞 + V-ing",
+      "en": "preposition + V-ing"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "zh": "代換與省略",
+    "en": "substitution and ellipsis",
+    "points": [
+     {
+      "zh": "代換用法",
+      "en": "substitution: so, not, one, do so"
+     },
+     {
+      "zh": "省略用法",
+      "en": "ellipsis: leaving words out"
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "zh": "學測寫作句型",
+    "en": "sentence patterns for exam writing",
+    "points": [
+     {
+      "zh": "目的與結果",
+      "en": "purpose and result"
+     },
+     {
+      "zh": "中譯英與作文句型",
+      "en": "patterns for translation and essays"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "G12-R",
+  "title": "學測英文文法總複習",
+  "title_en": "GSAT English grammar review",
+  "book_no": "第一至五冊",
+  "points": 12,
+  "units": [
+   {
+    "n": 1,
+    "zh": "時態與語態",
+    "en": "tenses and voice",
+    "points": [
+     {
+      "zh": "時態總整理",
+      "en": "all the tenses in review"
+     },
+     {
+      "zh": "被動語態總整理",
+      "en": "the passive in review"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "zh": "子句",
+    "en": "noun and relative clauses",
+    "points": [
+     {
+      "zh": "名詞子句",
+      "en": "noun clauses"
+     },
+     {
+      "zh": "關係詞",
+      "en": "relative pronouns and adverbs"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "zh": "非限定動詞",
+    "en": "infinitives, gerunds and participles",
+    "points": [
+     {
+      "zh": "不定詞與動名詞",
+      "en": "infinitives and gerunds"
+     },
+     {
+      "zh": "分詞與分詞構句",
+      "en": "participles and participle clauses"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "zh": "假設與助動詞",
+    "en": "conditionals and modals",
+    "points": [
+     {
+      "zh": "假設語氣總整理",
+      "en": "conditionals in review"
+     },
+     {
+      "zh": "助動詞與 should 句型",
+      "en": "modal perfects and (should) V"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "zh": "特殊句型",
+    "en": "special sentence patterns",
+    "points": [
+     {
+      "zh": "倒裝句總整理",
+      "en": "inversion in review"
+     },
+     {
+      "zh": "強調、省略與代換",
+      "en": "emphasis, ellipsis and substitution"
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "zh": "學測題型",
+    "en": "學測 question types",
+    "points": [
+     {
+      "zh": "連接詞與轉折語",
+      "en": "conjunctions and linking words"
+     },
+     {
+      "zh": "中譯英常考句型",
+      "en": "high-frequency translation patterns"
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -37,7 +37,7 @@
 },
 "animals-english-vocabulary": {
 "date": "2026-10-01",
-"hash": "d55d88c3a4a0b5507e2a8d9f8f861c35"
+"hash": "7dd72af341e5ff95c0acb4652fece6b0"
 },
 "assets/downloads/ae-afraid-to-speak-english-a4.pdf": {
 "date": "2026-10-22",
@@ -190,6 +190,70 @@
 "assets/downloads/ae-good-night-english-a4.pdf": {
 "date": "2026-10-22",
 "hash": "2e9a362347262f652725d41a8fc5cad8"
+},
+"assets/downloads/ae-grammar-g10-1-page1-free.pdf": {
+"date": "2026-11-08",
+"hash": "a2e36579f4a10449b4aa6f3447c5e1f4"
+},
+"assets/downloads/ae-grammar-g10-2-page1-free.pdf": {
+"date": "2026-11-08",
+"hash": "6f3b6c8e05e8db402d502f36b4b7cf3b"
+},
+"assets/downloads/ae-grammar-g11-1-page1-free.pdf": {
+"date": "2026-11-08",
+"hash": "286a8644b39c43b6d9cfa0d1a2b7bd7a"
+},
+"assets/downloads/ae-grammar-g11-2-page1-free.pdf": {
+"date": "2026-11-08",
+"hash": "9e911617a24933e2a5110272a8831190"
+},
+"assets/downloads/ae-grammar-g12-1-page1-free.pdf": {
+"date": "2026-11-08",
+"hash": "fa71b05a140e0054d322e1e6968b5695"
+},
+"assets/downloads/ae-grammar-g12-r-page1-free.pdf": {
+"date": "2026-11-08",
+"hash": "ca1fbace80e4e97d2b36b202d4daaa7a"
+},
+"assets/downloads/ae-grammar-g3-page1-free.pdf": {
+"date": "2026-11-08",
+"hash": "f354c3d520f0edd8a4436ee9963cc499"
+},
+"assets/downloads/ae-grammar-g4-page1-free.pdf": {
+"date": "2026-11-08",
+"hash": "4fbf07a56f0c4e5b91c9d5630fae91d0"
+},
+"assets/downloads/ae-grammar-g5-page1-free.pdf": {
+"date": "2026-11-08",
+"hash": "07440b26f4d41c7d1fd6590349afd6b7"
+},
+"assets/downloads/ae-grammar-g6-page1-free.pdf": {
+"date": "2026-11-08",
+"hash": "0547089f5a2fd548e87bdf475bb5d16f"
+},
+"assets/downloads/ae-grammar-g7-1-page1-free.pdf": {
+"date": "2026-11-08",
+"hash": "eea19670cdf596e762f07db9c740185d"
+},
+"assets/downloads/ae-grammar-g7-2-page1-free.pdf": {
+"date": "2026-11-08",
+"hash": "9d39c6e72d618ccc5c4f0eff07ec89c8"
+},
+"assets/downloads/ae-grammar-g8-1-page1-free.pdf": {
+"date": "2026-11-08",
+"hash": "ede87930e8d6f080267dfdbaf7c66937"
+},
+"assets/downloads/ae-grammar-g8-2-page1-free.pdf": {
+"date": "2026-11-08",
+"hash": "863d631be880177e152c948e81c49a48"
+},
+"assets/downloads/ae-grammar-g9-1-page1-free.pdf": {
+"date": "2026-11-08",
+"hash": "bbc52f1a7a642f61f06d09041462a214"
+},
+"assets/downloads/ae-grammar-g9-2-page1-free.pdf": {
+"date": "2026-11-08",
+"hash": "f8a2c7f9b50552e86ffad490a5fa76ac"
 },
 "assets/downloads/ae-halloween-english-a4.pdf": {
 "date": "2026-10-13",
@@ -567,6 +631,14 @@
 "date": "2026-10-13",
 "hash": "f04d3cddd49a39eaf988baa5853ea848"
 },
+"chris-and-cora-readers": {
+"date": "2026-11-08",
+"hash": "a3ba08853196e11023be7c36a2cae7a9"
+},
+"chris-and-cora-readers/read/1a": {
+"date": "2026-11-08",
+"hash": "e1dde656bbafd3ca655b16e2fac878e4"
+},
 "christmas-english": {
 "date": "2026-10-19",
 "hash": "162620a37c34c027f92490e729d3c4b0"
@@ -633,7 +705,7 @@
 },
 "english-alphabet-guide": {
 "date": "2026-10-19",
-"hash": "a661f4c3faa7822d3a18eaa85fd6ed18"
+"hash": "7d6cd1b2f9aadf41ea4e895229d350b2"
 },
 "english-alphabet-worksheet": {
 "date": "2026-10-13",
@@ -686,6 +758,10 @@
 "english-exam-dates-guide": {
 "date": "2026-10-19",
 "hash": "9efbc0a6b3269eefac035e48c44ebdbd"
+},
+"english-grammar-books": {
+"date": "2026-11-08",
+"hash": "9b6a2ef775abc8fa5928418050b599d6"
 },
 "english-letter-writing-guide": {
 "date": "2026-10-19",
@@ -797,7 +873,7 @@
 },
 "exams/banqiao-school-calendar": {
 "date": "2026-11-02",
-"hash": "a80be7e7ef7ab9d187ec6616e902c25f"
+"hash": "daa4ca91e704375b391b6df5497db813"
 },
 "exams/hours-to-level-up": {
 "date": "2026-10-19",
@@ -1201,7 +1277,7 @@
 },
 "happy-birthday-english": {
 "date": "2026-10-19",
-"hash": "5a3b926d7356942519f10c1d412ff654"
+"hash": "ebca9103b161cd0ee2c7c77cd9db7117"
 },
 "how-american-kids-learn-reading": {
 "date": "2026-08-07",
@@ -1357,7 +1433,7 @@
 },
 "kk-phonetic-chart": {
 "date": "2026-10-21",
-"hash": "bf14e7932216da06ecf016e5938eb56d"
+"hash": "c33c7a194ff6bec4bc0b5a75be3c547b"
 },
 "kk-phonetics-vs-phonics": {
 "date": "2026-10-19",
@@ -1501,7 +1577,7 @@
 },
 "ordinal-numbers-english": {
 "date": "2026-10-19",
-"hash": "afb56c540bbcf15f4b6bded71fc0c138"
+"hash": "b2d85c873d6a2a454e90e4887712167c"
 },
 "pack-9rvvw6p3nnmls4": {
 "date": "2026-10-13",

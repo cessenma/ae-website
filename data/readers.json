@@ -1,0 +1,676 @@
+{
+ "source": "ae-readers data/books/*.json + data/ladder.json, counted 2026-11-08",
+ "official_entries": 1211,
+ "excluded_on_purpose": 12,
+ "moe_words_by_level": [
+  26,
+  58,
+  104,
+  163,
+  236,
+  328,
+  431,
+  569,
+  714,
+  870,
+  1035,
+  1199
+ ],
+ "books": [
+  {
+   "code": "1a",
+   "level": 1,
+   "title": "This Is Bobo!",
+   "words": 149,
+   "settings": [
+    "balcony",
+    "home"
+   ],
+   "questions": [
+    "Who is Bobo?",
+    "Where does Bobo sit at the end of the story?",
+    "Who likes Bobo?"
+   ]
+  },
+  {
+   "code": "1b",
+   "level": 1,
+   "title": "Bobo Is in the Bed!",
+   "words": 168,
+   "settings": [
+    "home",
+    "kitchen"
+   ],
+   "questions": [
+    "Where does Bobo go first, second and last?",
+    "Whose cup does Bobo take?",
+    "Which bed is big and which bed is little?"
+   ]
+  },
+  {
+   "code": "1c",
+   "level": 1,
+   "title": "The Little Red Shop",
+   "words": 167,
+   "settings": [
+    "home"
+   ],
+   "questions": [
+    "What do Chris and Cora use to make their shop?",
+    "What is in the shop?",
+    "Who comes to the shop at the end?"
+   ]
+  },
+  {
+   "code": "2a",
+   "level": 2,
+   "title": "Come and Play!",
+   "words": 211,
+   "settings": [
+    "doorway",
+    "home",
+    "kitchen"
+   ],
+   "questions": [
+    "What game do Chris and Cora play?",
+    "What do they make, and where do they put it?",
+    "Why does Cora shout for help?"
+   ]
+  },
+  {
+   "code": "2b",
+   "level": 2,
+   "title": "Come and See the Yard!",
+   "words": 211,
+   "settings": [
+    "doorway",
+    "grandma_yard"
+   ],
+   "questions": [
+    "Where do Chris and Cora go?",
+    "How do the children help Grandma?",
+    "What does Grandma give Cora?"
+   ]
+  },
+  {
+   "code": "2c",
+   "level": 2,
+   "title": "One Big Cake",
+   "words": 215,
+   "settings": [
+    "doorway",
+    "kitchen"
+   ],
+   "questions": [
+    "Who is the brother and who is the sister?",
+    "What is in Dad's box?",
+    "What colors is the cake at the end?"
+   ]
+  },
+  {
+   "code": "3a",
+   "level": 3,
+   "title": "Cora Can Go to School",
+   "words": 315,
+   "settings": [
+    "home",
+    "lane",
+    "school"
+   ],
+   "questions": [
+    "Why does Cora not want to get up?",
+    "What is in Miss Lin's book?",
+    "What do the children eat at school?",
+    "Who wants to go to school at the end?"
+   ]
+  },
+  {
+   "code": "3b",
+   "level": 3,
+   "title": "Bobo Runs Away!",
+   "words": 305,
+   "settings": [
+    "doorway",
+    "grandma_yard",
+    "home",
+    "lane",
+    "school"
+   ],
+   "questions": [
+    "What does Bobo see in the yard?",
+    "Where do Bobo and the rabbit run to?",
+    "How does Cora talk to Mom from school?",
+    "Who gets the rabbit for Miss Lin?"
+   ]
+  },
+  {
+   "code": "3c",
+   "level": 3,
+   "title": "Four Apples for Miss Lin",
+   "words": 339,
+   "settings": [
+    "home",
+    "kitchen",
+    "school"
+   ],
+   "questions": [
+    "How many apples does Grandma give Cora?",
+    "Where does Chris put Bobo, and why?",
+    "What happens to the banana on the desk?",
+    "Who gets the four apples at the end?"
+   ]
+  },
+  {
+   "code": "4a",
+   "level": 4,
+   "title": "A Kite in the Tree",
+   "words": 480,
+   "settings": [
+    "balcony",
+    "park"
+   ],
+   "questions": [
+    "Where is Grandpa at the start of the story?",
+    "What happens to Cora's kite?",
+    "Who gets the kite down, and how?",
+    "What does Bobo do on the slide?"
+   ]
+  },
+  {
+   "code": "4b",
+   "level": 4,
+   "title": "The Blanket House",
+   "words": 480,
+   "settings": [
+    "balcony",
+    "doorway",
+    "home",
+    "kitchen"
+   ],
+   "questions": [
+    "What do Chris and Cora build, and what do they use?",
+    "Who comes up the stairs?",
+    "Why does Mom say no to the candle?",
+    "Why does Bobo need a bath?"
+   ]
+  },
+  {
+   "code": "4c",
+   "level": 4,
+   "title": "The Map and the Bear",
+   "words": 480,
+   "settings": [
+    "balcony",
+    "doorway",
+    "home"
+   ],
+   "questions": [
+    "What does Grandpa bring to the apartment?",
+    "Where is the toy bear in the end?",
+    "What does the bear in the story give the boy and the girl?",
+    "What does Cora make for Bobo?"
+   ]
+  },
+  {
+   "code": "5a",
+   "level": 5,
+   "title": "Amy Comes to the Market",
+   "words": 712,
+   "settings": [
+    "balcony",
+    "doorway",
+    "kitchen",
+    "lane",
+    "market",
+    "pond"
+   ],
+   "questions": [
+    "Who is Amy, and where does she come from?",
+    "What do Mom and the children get at the market?",
+    "What does the cat want?",
+    "Why does Chris pull Bobo out of the pond?"
+   ]
+  },
+  {
+   "code": "5b",
+   "level": 5,
+   "title": "Amy Comes to School",
+   "words": 720,
+   "settings": [
+    "home",
+    "kitchen",
+    "school"
+   ],
+   "questions": [
+    "Which lessons does Amy have on her first day?",
+    "What does Cora give Amy in the math lesson?",
+    "What do the students make in the art lesson?",
+    "What is in Amy's envelope?"
+   ]
+  },
+  {
+   "code": "5c",
+   "level": 5,
+   "title": "The Horse at the Pond",
+   "words": 707,
+   "settings": [
+    "doorway",
+    "home",
+    "kitchen",
+    "lane",
+    "park",
+    "pond"
+   ],
+   "questions": [
+    "Where does Grandpa take the children?",
+    "Which animal does the cat sit on?",
+    "Why does Grandpa need his glasses?",
+    "What does Amy read to the horse?"
+   ]
+  },
+  {
+   "code": "6a",
+   "level": 6,
+   "title": "A Night at the Night Market",
+   "words": 814,
+   "settings": [
+    "doorway",
+    "home",
+    "kitchen",
+    "lane",
+    "night_market",
+    "park"
+   ],
+   "questions": [
+    "Who came to visit on the holiday?",
+    "What did Chris, Cora and Uncle order at the night market?",
+    "What happened to Cora's ice cream?",
+    "What did Uncle win at the kicking game?"
+   ]
+  },
+  {
+   "code": "6b",
+   "level": 6,
+   "title": "Uncle Cooks Lunch",
+   "words": 777,
+   "settings": [
+    "doorway",
+    "home",
+    "kitchen"
+   ],
+   "questions": [
+    "What did everyone have for breakfast?",
+    "How many eggs did Uncle use?",
+    "What went wrong with the pie?",
+    "What was the best thing in the meal?"
+   ]
+  },
+  {
+   "code": "6c",
+   "level": 6,
+   "title": "The Color Picnic",
+   "words": 899,
+   "settings": [
+    "home",
+    "kitchen",
+    "park"
+   ],
+   "questions": [
+    "What was the color game?",
+    "Which fruit went in the green box, and which in the pink box?",
+    "What was in the gray box?",
+    "How many lemons did Mom use for the lemon water?"
+   ]
+  },
+  {
+   "code": "7a",
+   "level": 7,
+   "title": "A Day at the Zoo",
+   "words": 1118,
+   "settings": [
+    "city",
+    "home",
+    "metro",
+    "zoo"
+   ],
+   "questions": [
+    "Who is Ben, and how did he get to the station?",
+    "How did they get to the zoo, and what did they need at the gate?",
+    "Which animal took Cora's hat?",
+    "Why was Cora sad at the end of the day, and why was Chris tired?"
+   ]
+  },
+  {
+   "code": "7b",
+   "level": 7,
+   "title": "A Day at the Sea",
+   "words": 1117,
+   "settings": [
+    "beach",
+    "doorway",
+    "home"
+   ],
+   "questions": [
+    "Who is the cousin, and who are her parents?",
+    "What did Chris hurt on the rocks?",
+    "Where did they eat, and what did the cousin want?",
+    "What was the cousin's one word at the end?"
+   ]
+  },
+  {
+   "code": "7c",
+   "level": 7,
+   "title": "The Farm River",
+   "words": 1119,
+   "settings": [
+    "farm",
+    "home",
+    "river"
+   ],
+   "questions": [
+    "Where did Grandpa take the children, and who came?",
+    "Which animal ate Ben's hat?",
+    "What did they bake in the farm kitchen?",
+    "What came out over the river when the sun went down?"
+   ]
+  },
+  {
+   "code": "8a",
+   "level": 8,
+   "title": "The Birthday Surprise",
+   "words": 1344,
+   "settings": [
+    "balcony",
+    "city",
+    "doorway",
+    "home",
+    "kitchen",
+    "park"
+   ],
+   "questions": [
+    "Why is the party a surprise?",
+    "What did Chris hide under his bed?",
+    "Who was late, and who was never late?",
+    "How many candles were on the cake?",
+    "Where did Chris hide in the hide game?",
+    "What did Ben put in his pocket?"
+   ]
+  },
+  {
+   "code": "8b",
+   "level": 8,
+   "title": "The Rainy Week",
+   "words": 1348,
+   "settings": [
+    "balcony",
+    "city",
+    "doorway",
+    "home",
+    "lane",
+    "park",
+    "school"
+   ],
+   "questions": [
+    "What five kinds of weather did Miss Lin cut out?",
+    "Why did the scooter stop?",
+    "What did Chris find in the pool?",
+    "What did the family do in the earthquake?",
+    "Why did Chris have three pairs of wet jeans?"
+   ]
+  },
+  {
+   "code": "8c",
+   "level": 8,
+   "title": "The Goose and the Tie",
+   "words": 1345,
+   "settings": [
+    "city",
+    "home"
+   ],
+   "questions": [
+    "Why did the family go out to eat?",
+    "What did the goose want?",
+    "What did Chris burn, and how?",
+    "What did Uncle draw on the paper?",
+    "What ate the steak parts?"
+   ]
+  },
+  {
+   "code": "9a",
+   "level": 9,
+   "title": "What Do You Do?",
+   "words": 1558,
+   "settings": [
+    "city",
+    "farm",
+    "home",
+    "kitchen",
+    "lane",
+    "market",
+    "school"
+   ],
+   "questions": [
+    "What was the homework this week?",
+    "Why does Mom say a housewife has five jobs?",
+    "When does the mailman start his day?",
+    "Why should a nurse be fast and slow?",
+    "Which three jobs did Chris write about?",
+    "Which job does Cora want?"
+   ]
+  },
+  {
+   "code": "9b",
+   "level": 9,
+   "title": "Uncle Flies South",
+   "words": 1597,
+   "settings": [
+    "airport",
+    "city",
+    "home",
+    "lane",
+    "road"
+   ],
+   "questions": [
+    "Where are Aunt and Uncle flying to, and why?",
+    "What did they buy at the department store?",
+    "Why did the taxi stop on the bridge?",
+    "What did the officer at the airport look at?",
+    "What came in the package at the end?"
+   ]
+  },
+  {
+   "code": "9c",
+   "level": 9,
+   "title": "The History Quiz",
+   "words": 1600,
+   "settings": [
+    "doorway",
+    "home",
+    "lane",
+    "park",
+    "river",
+    "school"
+   ],
+   "questions": [
+    "What was the quiz about?",
+    "Who helped Chris prepare, and where do they go to school?",
+    "What did the nurse find out about Chris's height?",
+    "Where did the class walk on the nature day?",
+    "Did Chris pass or fail, and why?"
+   ]
+  },
+  {
+   "code": "10a",
+   "level": 10,
+   "title": "A Year on the Wall",
+   "words": 1785,
+   "settings": [
+    "balcony",
+    "home",
+    "kitchen",
+    "park",
+    "school"
+   ],
+   "questions": [
+    "What did the family make on the first day of January?",
+    "What is the difference between a.m. and p.m.?",
+    "Which two days make the weekend?",
+    "In which month did the typhoon come?",
+    "Which season does Chris like, and which does Cora like?",
+    "What song did they sing at the end of the year?"
+   ]
+  },
+  {
+   "code": "10b",
+   "level": 10,
+   "title": "The Big Race",
+   "words": 1800,
+   "settings": [
+    "home",
+    "park",
+    "school"
+   ],
+   "questions": [
+    "What number did Chris wear in the race?",
+    "How many people came to the school race?",
+    "Who came first, second and third?",
+    "What did Cora score in the little race?",
+    "Where did Dad watch the race later?"
+   ]
+  },
+  {
+   "code": "10c",
+   "level": 10,
+   "title": "The Writer Who Could Not See",
+   "words": 1800,
+   "settings": [
+    "city",
+    "grandma_yard",
+    "home",
+    "kitchen",
+    "school"
+   ],
+   "questions": [
+    "Who came to visit the class, and what could she not do?",
+    "What one word did Chris write for Grandpa?",
+    "What happened in Grandma's kitchen?",
+    "Which word did Cora pick for Bobo?",
+    "What did the writer say makes a good word?"
+   ]
+  },
+  {
+   "code": "11a",
+   "level": 11,
+   "title": "The Mountain Night",
+   "words": 1985,
+   "settings": [
+    "camp",
+    "home",
+    "mountain",
+    "road",
+    "school"
+   ],
+   "questions": [
+    "Where did the family go, and who came?",
+    "What did Cora find under the thick leaves?",
+    "Why did they have to hurry down the hill?",
+    "What made the noise in the dark?",
+    "What was Chris's idea for the trash?",
+    "What did everyone remember at the end?"
+   ]
+  },
+  {
+   "code": "11b",
+   "level": 11,
+   "title": "The Band and the Team",
+   "words": 1997,
+   "settings": [
+    "city",
+    "home",
+    "park",
+    "school"
+   ],
+   "questions": [
+    "Which club did Chris pick, and which did Ben pick?",
+    "Why could Cora not join the piano club?",
+    "How much did the violin cost at the sale?",
+    "What was wrong with Chris on the day of the show?",
+    "What did the band play at the end, and who bowed?"
+   ]
+  },
+  {
+   "code": "11c",
+   "level": 11,
+   "title": "The King, the Robot and the Bell",
+   "words": 1994,
+   "settings": [
+    "home",
+    "school"
+   ],
+   "questions": [
+    "What was the play about, and who played the king?",
+    "What did Chris paint for the set?",
+    "Who was Ms. Wang, and where was she born?",
+    "What happened to the bell before the show?",
+    "Who found the bell, and where?"
+   ]
+  },
+  {
+   "code": "12a",
+   "level": 12,
+   "title": "The Festival on the Hill",
+   "words": 2095,
+   "settings": [
+    "home",
+    "lane",
+    "park",
+    "school"
+   ],
+   "questions": [
+    "What was the festival for, and when was it?",
+    "Who was the visitor, and where was he from?",
+    "Which three foreign festivals did the visitor talk about?",
+    "What did Chris's group collect, and what prize did they choose?",
+    "Who was the leader of the cheer, and what happened at the end?"
+   ]
+  },
+  {
+   "code": "12b",
+   "level": 12,
+   "title": "The Class News",
+   "words": 2095,
+   "settings": [
+    "home",
+    "kitchen",
+    "school"
+   ],
+   "questions": [
+    "What did the class make, and where did people read it?",
+    "Who did Chris interview, and what was the main thing at the gate?",
+    "What was the serious matter, and how did the class correct it?",
+    "Why does the school play pop music before the Monday meeting?",
+    "What was Cora's topic, and where did her page end up?"
+   ]
+  },
+  {
+   "code": "12c",
+   "level": 12,
+   "title": "The Camp by the Sea",
+   "words": 2100,
+   "settings": [
+    "beach",
+    "bus",
+    "doorway",
+    "home",
+    "school"
+   ],
+   "questions": [
+    "How did the group get to the camp, and who was late?",
+    "What did Mr. Joy pin on Chris's hat, and why?",
+    "What happened to the island in the morning, and why did they have to leave at nine?",
+    "What was Ben's lie, and what did Chris do about it?",
+    "What did the children do with the garbage on the beach?"
+   ]
+  }
+ ]
+}

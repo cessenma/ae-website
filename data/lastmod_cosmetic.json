@@ -174,5 +174,13 @@
   "time-english",
   "weather-english"
  ],
- "_note": "Days on which the listed pages got wording-only edits: tools/backfill_lastmod.py skips those days' changes when it dates the page."
+ "_note": "Days on which the listed pages got wording-only edits: tools/backfill_lastmod.py skips those days' changes when it dates the page.",
+ "2026-11-08": [
+  "animals-english-vocabulary",
+  "english-alphabet-guide",
+  "ordinal-numbers-english",
+  "happy-birthday-english",
+  "kk-phonetic-chart",
+  "exams/banqiao-school-calendar"
+ ]
 }
