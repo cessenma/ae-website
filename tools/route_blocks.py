@@ -23,6 +23,32 @@ BTN = ('<a href="{href}" style="display:inline-block;font-family:\'Baloo 2\',san
 
 # page → (eyebrow, h2 with <em>, body, [(label, href)])
 ROUTES = {
+ # 2026-11-10: the 板橋國中小英文課程地圖 (tools/build_school_pages.py) — each school's existing page points to its
+ # edition / exam-range page; the curriculum pages link back (考古題 and 選班 stay on these pages)
+ "jiangcui-junior-high-english": ("考古題之外", "考古題有了，<em>這學期考哪幾課？</em>",
+   "江翠國中這學期英文用哪個版本、三次段考各考哪幾課、哪些文法，整理成彩色時間軸，附學校官方課程計畫。",
+   [("江翠國中英文版本與段考範圍", "/banqiao-school-english/jiangcui-junior-high/"), ("板橋國中小英文課程地圖", "/banqiao-school-english/")]),
+ "haishan-junior-high-english": ("考古題之外", "考古題有了，<em>這學期考哪幾課？</em>",
+   "海山高中國中部這學期英文用哪個版本、三次段考各考哪幾課、哪些文法，整理成彩色時間軸，附學校官方課程計畫。",
+   [("海山英文版本與段考範圍", "/banqiao-school-english/haishan-high-school/"), ("板橋國中小英文課程地圖", "/banqiao-school-english/")]),
+ "xinpu-junior-high-english": ("考古題之外", "考古題有了，<em>這學期考哪幾課？</em>",
+   "新埔國中這學期英文用哪個版本、三次段考各考哪幾課、哪些文法，整理成彩色時間軸，附學校官方課程計畫。",
+   [("新埔國中英文版本與段考範圍", "/banqiao-school-english/xinpu-junior-high/"), ("板橋國中小英文課程地圖", "/banqiao-school-english/")]),
+ "zhongshan-junior-high-english-banqiao": ("考古題之外", "考古題有了，<em>這學期用哪個版本？</em>",
+   "中山國中這學期英文用哪個版本，附學校官方課程計畫和行事曆連結；板橋其他國中的段考範圍也在同一份地圖。",
+   [("中山國中英文版本", "/banqiao-school-english/zhongshan-junior-high/"), ("板橋國中小英文課程地圖", "/banqiao-school-english/")]),
+ "daguan-elementary-english": ("課本之外", "大觀國小<em>這學期考哪幾課？</em>",
+   "大觀國小三到六年級英文用哪個版本、期中和期末考哪幾個單元，依學校課程計畫整理。",
+   [("大觀國小英文版本與範圍", "/banqiao-school-english/elementary/#大觀國小"), ("板橋國中小英文課程地圖", "/banqiao-school-english/")]),
+ "haishan-elementary-english": ("課本之外", "海山國小<em>用哪個版本？</em>",
+   "海山國小三到六年級英文用哪個版本，依學校課程計畫整理，附官方計畫連結。",
+   [("海山國小英文版本", "/banqiao-school-english/elementary/#海山國小"), ("板橋國中小英文課程地圖", "/banqiao-school-english/")]),
+ "xinpu-elementary-english": ("課本之外", "新埔國小<em>這學期考哪幾課？</em>",
+   "新埔國小三到六年級英文用哪個版本、期中和期末考哪幾個單元，依學校課程計畫整理。",
+   [("新埔國小英文版本與範圍", "/banqiao-school-english/elementary/#新埔國小"), ("板橋國中小英文課程地圖", "/banqiao-school-english/")]),
+ "zhongshan-elementary-english-banqiao": ("課本之外", "中山國小<em>這學期考哪幾課？</em>",
+   "中山國小三到六年級英文用哪個版本、期中和期末考哪幾個單元，依學校課程計畫整理。",
+   [("中山國小英文版本與範圍", "/banqiao-school-english/elementary/#中山國小"), ("板橋國中小英文課程地圖", "/banqiao-school-english/")]),
  # 2026-10-22 wave 3: names + parent guides
  "chinese-name-to-english": ("名字之外", "名字有了，<em>自我介紹呢？</em>",
    "英文名字、護照拼法、地址和自我介紹，填表格和開口都會用到，一頁各整理一次。",
@@ -407,7 +433,7 @@ def block(eyebrow, h2, body, links):
 def main():
     # check every target BEFORE writing anything: a dead link must not reach a page on disk
     missing = [(page, h) for page, (_, _, _, links) in ROUTES.items() for _, h in links
-               if not os.path.isfile(os.path.join(SITE, h.strip("/"), "index.html"))]
+               if not os.path.isfile(os.path.join(SITE, h.split("#")[0].strip("/"), "index.html"))]   # a #fragment is fine
     if missing:
         sys.exit("BROKEN route targets (nothing written): " + ", ".join(f"{p}→{h}" for p, h in missing))
     for page, (eyebrow, h2, body, links) in ROUTES.items():

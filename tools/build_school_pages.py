@@ -73,6 +73,18 @@ def book_of(s, g):
     return JH_BOOK.get((g, D["term"]), "") if s["level"] == "國中" else ""
 
 
+# the site's existing page about each school (past papers / classes): linked both ways (route_blocks.py points back)
+SCHOOL_PAGE = {"板橋國中": ("/banqiao-junior-high-english-past-papers/", "板橋國中考古題", "past papers"),
+               "江翠國中": ("/jiangcui-junior-high-english/", "江翠國中考古題", "past papers"),
+               "海山高中": ("/haishan-junior-high-english/", "海山國中部考古題", "past papers"),
+               "新埔國中": ("/xinpu-junior-high-english/", "新埔國中考古題", "past papers"),
+               "中山國中": ("/zhongshan-junior-high-english-banqiao/", "中山國中段考題", "past papers"),
+               "大觀國小": ("/daguan-elementary-english/", "大觀國小附近英文班", "classes near the school"),
+               "海山國小": ("/haishan-elementary-english/", "海山國小英文怎麼補", "English help"),
+               "新埔國小": ("/xinpu-elementary-english/", "新埔國小英文怎麼補", "English help"),
+               "中山國小": ("/zhongshan-elementary-english-banqiao/", "中山國小英文怎麼補", "English help")}
+
+
 BOOK_CODE = {("7", 1): "G7-1", ("8", 1): "G8-1", ("9", 1): "G9-1", ("7", 2): "G7-2", ("8", 2): "G8-2", ("9", 2): "G9-2"}
 
 
@@ -536,6 +548,14 @@ def exam_card(s, g, grade, k, e, total):
             f'<div class="lbl">{Z("考試範圍", "covers")}</div><div class="lessons">{lessons or esc(Z("計畫裡沒有寫範圍", "no range in the plan"))}</div>{gram}{note}</div>')
 
 
+def own_page(s):
+    if s["name"] not in SCHOOL_PAGE:
+        return ""
+    href, zh, en = SCHOOL_PAGE[s["name"]]
+    return (f'<a href="{href}"><span class="ic" style="background:#06C755">★</span><span>{Z(zh, en)}'
+            f'<small>{Z("埃森美語整理", "our guide")}</small></span></a>')
+
+
 def jh_page(s):
     _page[0] = s["slug"]
     nm = s["name"]
@@ -602,6 +622,7 @@ def jh_page(s):
   <div class="sc-dl reveal">{plans}
     <a href="/assets/downloads/school-english/{summary_pdf_name(s)}" download><span class="ic" style="background:#F0997B">PDF</span><span>{Z("一頁重點整理", "one-page summary")}<small>{Z("埃森美語整理，免費", "made by us, free")}</small></span></a>
     <a href="{s["home"]}" target="_blank" rel="noopener"><span class="ic" style="background:#1A2752">⌂</span><span>{Z("學校網站", "school website")}<small>{Z("行事曆、段考公告", "calendar and exam notices")}</small></span></a>
+    {own_page(s)}
   </div>
   {source_line()}
 </div></section>
@@ -639,7 +660,9 @@ def es_page():
         blocks.append(f'<details class="sc-es reveal" id="{esc(s["name"])}"><summary><b>{esc(s["name"])}</b>{chips}<span class="km">{Z("直線約", "about")} {s["km"]:.1f} km</span></summary>'
                       f'<div class="in"><table><thead><tr><th>{Z("年級", "grade")}</th><th>{Z("版本", "edition")}</th><th>{Z("期中、期末", "midterm / final")}</th><th></th></tr></thead><tbody>{"".join(rows)}</tbody></table>'
                       f'<p style="margin:12px 0 0;font-size:13.5px"><a href="/assets/downloads/school-english/{summary_pdf_name(s)}" download>{Z("下載一頁整理（PDF）", "download the one-page summary (PDF)")}</a> · '
-                      f'<a href="{s["home"]}" target="_blank" rel="noopener">{Z("學校網站", "school website")}</a></p></div></details>')
+                      f'<a href="{s["home"]}" target="_blank" rel="noopener">{Z("學校網站", "school website")}</a>'
+                      + (f' · <a href="{SCHOOL_PAGE[s["name"]][0]}">{Z(SCHOOL_PAGE[s["name"]][1], SCHOOL_PAGE[s["name"]][2])}</a>' if s["name"] in SCHOOL_PAGE else "")
+                      + '</p></div></details>')
     faqs = [(Z("國小英文有段考嗎？", "Do elementary schools have exams in English?"),
              Z("有，多半是期中、期末兩次評量，範圍是那段時間上過的單元。每所學校實際的週次見上面各校。",
                "Yes, usually a midterm and a final covering the units taught in that stretch; see each school above for its weeks.")),
@@ -772,6 +795,17 @@ def write_gloss():
             seen.add((zh, en))
             L += [f"- {zh}", f"  - *{en}*"]
         L.append("")
+    L += ["## Other pages that now link here", "",
+          "- Banqiao school calendar page, green box: 想知道孩子學校這學期英文用哪個版本、三次段考各考哪幾課？看 板橋國中小英文課程地圖（板橋區 28 所國中小，依各校課程計畫整理）。",
+          "  - *Want to know which English edition your child's school uses this semester and what each of the three exams covers? See the Banqiao school English curriculum maps (28 Banqiao schools, from each school's own plan).*",
+          "- Grammar books FAQ 「適用哪一個版本的課本？」 adds: 段考範圍表再告訴你每次段考要讀哪幾頁 … 不知道孩子學校用哪個版本？看板橋國中小英文課程地圖。",
+          "  - *…and the exam-range page shows which pages to study before each exam … Not sure which edition your school uses? See the Banqiao curriculum maps.*",
+          "- 'What next' boxes on the 4 junior-high past-paper pages: 考古題之外 · 考古題有了，這學期考哪幾課？ · [school]這學期英文用哪個版本、三次段考各考哪幾課、哪些文法，整理成彩色時間軸，附學校官方課程計畫。",
+          "  - *Beyond past papers · You have the past papers — what's on this semester's exams? · [school]'s English edition this semester, what each of the three exams covers and which grammar, as a colour timeline, with the school's official plans.*",
+          "  - 中山國中 version: 這學期用哪個版本？ … 附學校官方課程計畫和行事曆連結；板橋其他國中的段考範圍也在同一份地圖。 *(which edition this semester … with the official plan and calendar links; the other Banqiao junior highs' exam ranges are on the same map)*",
+          "- 'What next' boxes on the 4 elementary pages: 課本之外 · [school]這學期考哪幾課？／用哪個版本？ · 三到六年級英文用哪個版本、期中和期末考哪幾個單元，依學校課程計畫整理。",
+          "  - *Beyond the textbook · What's on [school]'s exams this semester? / Which edition? · Grades 3–6: the English edition, what the midterm and final cover, from the school's own plan.*",
+          "- Buttons: [school]英文版本與段考範圍 = *[school] English edition and exam range* · 板橋國中小英文課程地圖 = *Banqiao school English curriculum maps*", ""]
     open(GLOSS_OUT, "w", encoding="utf-8").write("\n".join(L))
     print("  gloss:", GLOSS_OUT, sum(len(v) for v in GLOSS.values()), "strings")
 
