@@ -629,7 +629,7 @@
 },
 "banqiao-school-english/banqiao-junior-high": {
 "date": "2026-11-10",
-"hash": "42b01d5b856736df1d4fb03a60c2c600"
+"hash": "281f7bd687b16f1decc9e6febce8cd34"
 },
 "banqiao-school-english/chongqing-junior-high": {
 "date": "2026-11-10",
@@ -641,7 +641,7 @@
 },
 "banqiao-school-english/elementary": {
 "date": "2026-11-10",
-"hash": "7a7a511f1d8a9923c54799dc4832aa02"
+"hash": "cd0663a878c696dcfe889a1fe51412a1"
 },
 "banqiao-school-english/guangfu-high-school": {
 "date": "2026-11-10",
@@ -653,11 +653,11 @@
 },
 "banqiao-school-english/haishan-high-school": {
 "date": "2026-11-10",
-"hash": "7a03254be4d802ad71ce09e506db91e7"
+"hash": "14c2dbad0c7de07a3cdea376c904a7f9"
 },
 "banqiao-school-english/jiangcui-junior-high": {
 "date": "2026-11-10",
-"hash": "34622e922b936791df64bbc89568a7c4"
+"hash": "0f54b4a07a4fe937c191bef5f6c03d49"
 },
 "banqiao-school-english/xikun-junior-high": {
 "date": "2026-11-10",
@@ -665,11 +665,11 @@
 },
 "banqiao-school-english/xinpu-junior-high": {
 "date": "2026-11-10",
-"hash": "e88f261b65886849aecec47f3d3c2913"
+"hash": "45d39e43d475ad966bfbcac0c0e05e55"
 },
 "banqiao-school-english/zhongshan-junior-high": {
 "date": "2026-11-10",
-"hash": "4a5c48d71a34208c0bcc66ec6fe8d7f3"
+"hash": "1e9f16b583b956685e536c388fb49b9e"
 },
 "banqiao-school-english/zhongxiao-junior-high": {
 "date": "2026-11-10",
@@ -924,8 +924,8 @@
 "hash": "9efbc0a6b3269eefac035e48c44ebdbd"
 },
 "english-grammar-books": {
-"date": "2026-11-08",
-"hash": "9b6a2ef775abc8fa5928418050b599d6"
+"date": "2026-11-10",
+"hash": "bfcc2347e36dd9c6f50cb70e80bb9d28"
 },
 "english-letter-writing-guide": {
 "date": "2026-10-19",
@@ -1037,7 +1037,7 @@
 },
 "exams/banqiao-school-calendar": {
 "date": "2026-11-10",
-"hash": "b9ffa597b3e45d079361ecf0f08aadfc"
+"hash": "d2929e606456078fbe83b9ee5b2db9c9"
 },
 "exams/hours-to-level-up": {
 "date": "2026-10-19",

@@ -47,7 +47,7 @@ P_LEVEL, P_SET, P_ALL = 390, 1390, 2690
 P_GBOOKS, P_GSHEETS = 590, 190
 MB_LEVEL = "23–36 MB"
 MB_SET = {"1-4": 108, "5-8": 134, "9-12": 133, "all": 375}
-MB_GRAMMAR = {"elementary": (28, 12), "junior": (36, 11), "senior": (35, 13)}
+MB_GRAMMAR = {"elementary": (28, 12), "junior": (37, 11), "senior": (35, 13)}   # junior rebuilt 11-10 (段考 tests)
 
 esc = html.escape
 FP, LZ = 'fetchpriority="high"', 'loading="lazy"'   # the hero's middle cover loads first
@@ -615,8 +615,8 @@ def grammar_page():
         <span class="eyebrow eyebrow-yellow reveal">{Z("埃森美語原創 · 國小到高中 16 冊", "our own series · 16 books, elementary to senior high")}</span>
         <h1 class="reveal d1">{Z("英文文法書＋<em>文法速查表</em>", "grammar books + cheat sheets")}</h1>
         <div class="divider reveal d1"></div>
-        <p class="body reveal d2">{Z("國中、高中每學期一本，國小每年級一本。每本 36–38 頁：一個文法重點一頁，規則表、圖解、例句和練習放在同一頁；每個單元再加一頁綜合練習和一頁寫作應用，最後有複習測驗、兩回綜合測驗和完整解答。每一本都附同一冊的文法速查表。",
-            "One book per semester for junior and senior high, one per grade for elementary. 36–38 pages each: one page per grammar point with the rule table, pictures, examples and exercises together; each unit adds a practice page and a grammar-for-writing page; then review tests, two full tests and a complete answer key. Each book comes with that semester's cheat sheet.")}</p>
+        <p class="body reveal d2">{Z("國中、高中每學期一本，國小每年級一本。每本 36–38 頁：一個文法重點一頁，規則表、圖解、例句和練習放在同一頁；每個單元再加一頁綜合練習和一頁寫作應用，最後有測驗和完整解答：國中每冊是三次段考模擬測驗（每次兩頁、100 分）和段考範圍表，國小、高中是複習測驗和兩回綜合測驗。每一本都附同一冊的文法速查表。",
+            "One book per semester for junior and senior high, one per grade for elementary. 36–38 pages each: one page per grammar point with the rule table, pictures, examples and exercises together; each unit adds a practice page and a grammar-for-writing page; then tests and a complete answer key: in junior high, three school-exam practice tests (two pages, 100 points each) and an exam-range page; in elementary and senior high, review tests and two full tests. Each book comes with that semester's cheat sheet.")}</p>
         <div class="bp-cta reveal d2"><a class="btn btn-primary" href="#free">{Z("免費下載第 1 頁", "free page 1")}</a>
           <a class="btn btn-outline" href="#buy">{Z("看價格", "see prices")}</a></div>
         <div class="bp-facts reveal d2"><span>{Z("每學期一本", "one per semester")}</span><span>{Z("附解答", "answers included")}</span><span>{Z("可以列印", "printable")}</span><span>{Z("每冊附速查表", "cheat sheet with every book")}</span></div>
@@ -651,14 +651,16 @@ def grammar_page():
              ("junior-grammar-page", Z("國中文法頁", "junior-high grammar page"), Z("規則表、圖解、例句、小提醒、A／B 練習", "rule table, pictures, examples, tip, A/B exercises")),
              ("junior-practice-page", Z("單元綜合練習", "unit practice page"), Z("看圖、選擇、重組、改錯、改寫", "pictures, choice, word order, fix the mistake, rewrite")),
              ("junior-writing-page", Z("寫作應用", "grammar for writing"), Z("短文填空和自己寫，把文法用在句子裡", "passage gaps and own writing, using the grammar in sentences")),
-             ("junior-midterm-page", Z("期中測驗", "midterm test"), Z("100 分的綜合測驗，題型照學校段考", "a 100-point test in the style of school exams")),
+             ("junior-exam-range-page", Z("段考範圍表", "exam-range page"), Z("康軒、翰林、南一每次段考要讀哪幾頁，一張表看完", "which pages to study before each exam for 康軒, 翰林 or 南一, on one table")),
+             ("junior-exam-page", Z("段考模擬測驗", "school-exam practice test"), Z("兩頁 100 分，照學校三次段考的範圍出題", "two pages, 100 points, following the school's three exams")),
              ("senior-grammar-page", Z("高中文法頁", "senior-high grammar page"), Z("一樣的版面，題目加上中譯英和綜合測驗", "same layout, with translation and cloze")),
              ("cheatsheet-page1", Z("文法速查表第 1 頁", "cheat sheet page 1"), Z("整學期的重點一頁看完，這一頁免費", "the whole semester on one page; this page is free"))]
     figs = "".join(f'<figure><img src="/assets/img/grammar-books/pages/{f}.webp" alt="{esc(strip(t))}" width="778" height="1100" loading="lazy" decoding="async">'
                    f'<figcaption><b>{t}</b>{d}</figcaption></figure>' for f, t, d in pages)
     parts = [(Z("一個重點一頁", "one point a page"), Z("規則表、圖、例句、小提醒和兩組練習在同一頁，看完馬上做。", "rule table, pictures, examples, a tip and two exercises on one page: read it, then do it.")),
              (Z("每單元兩頁應用", "two pages per unit"), Z("一頁綜合練習、一頁寫作應用，把同一單元的文法混在一起用。", "a practice page and a grammar-for-writing page that mix the unit's grammar.")),
-             (Z("複習與測驗", "reviews and tests"), Z("每兩個單元一回複習測驗，再加上期中、期末兩回 100 分測驗。", "a review test every two units, plus a midterm and a final of 100 points each.")),
+             (Z("複習與測驗", "reviews and tests"), Z("國中照學校的三次段考：讀完兩個單元做一份段考模擬測驗（兩頁、100 分），段考範圍表告訴你康軒、翰林、南一每次段考要讀哪幾頁。國小、高中是每兩個單元一回複習測驗，加兩回 100 分測驗。",
+   "Junior high follows the school's three exams: after every two units, a two-page, 100-point practice test, and an exam-range page shows which pages to study for 康軒, 翰林 or 南一 before each exam. Elementary and senior high: a review test every two units plus two 100-point tests.")),
              (Z("完整解答", "full answer key"), Z("所有題目都有答案；有兩種寫法都對的題目，兩種都列出來。", "every item is answered; where two answers are right, both are given."))]
     pc = "".join(f'<div class="bp-card"><b>{t}</b><p>{d}</p></div>' for t, d in parts)
     out.append(f"""<section class="section bg-soft">
@@ -729,8 +731,8 @@ def grammar_page():
 </section>
 """)
     qa = [(Z("適用哪一個版本的課本？", "Which textbook edition does it fit?"),
-           Z("國中三個版本都適用：每一冊的對照表列出康軒、翰林、南一哪一課教這個文法。高中適用龍騰、三民、遠東，但各版每課教的文法不同，所以依文法主題編排、不列課次。國小依教育部基本學習內容整理。",
-             "Junior high fits all three editions: each book's map shows which lesson of 康軒, 翰林 and 南一 teaches each point. Senior high fits 龍騰, 三民 and 遠東, but each edition places grammar differently, so the books go by topic with no lesson numbers. Elementary follows the MOE basic learning content.")),
+           Z("國中三個版本都適用：每一冊的對照表列出康軒、翰林、南一哪一課教這個文法，段考範圍表再告訴你每次段考要讀哪幾頁。高中適用龍騰、三民、遠東，但各版每課教的文法不同，所以依文法主題編排、不列課次。國小依教育部基本學習內容整理。不知道孩子學校用哪個版本？看<a href='/banqiao-school-english/'>板橋國中小英文課程地圖</a>。",
+             "Junior high fits all three editions: each book's map shows which lesson of 康軒, 翰林 and 南一 teaches each point, and the exam-range page shows which pages to study before each exam. Senior high fits 龍騰, 三民 and 遠東, but each edition places grammar differently, so the books go by topic with no lesson numbers. Elementary follows the MOE basic learning content. Not sure which edition your child's school uses? See the Banqiao school English curriculum maps.")),
           (Z("國小為什麼不講文法？", "Why no grammar rules for elementary?"),
            Z("國小英語課綱要求避免講解、分析文法，所以國小這 4 冊用「句型」：孩子先會說、會寫整句，國中再學規則。", "The elementary curriculum asks teachers to avoid explaining and analysing grammar, so these 4 books teach sentence patterns: children say and write whole sentences first and learn the rules in junior high.")),
           (Z("有解答嗎？", "Is there an answer key?"),
@@ -738,7 +740,7 @@ def grammar_page():
           (Z("可以只買一冊嗎？", "Can I buy a single book?"),
            Z("目前以學程為單位賣（國小 4 冊、國中 6 冊、高中 6 冊），一套 NT$590；每一冊的第 1 頁可以先免費下載看看。", "For now they are sold by stage (4 elementary, 6 junior-high, 6 senior-high), NT$590 a set; page 1 of every book is free to try first.")),
           (Z("速查表和文法書差在哪？", "How is the cheat sheet different from the book?"),
-           Z("速查表 14–15 頁：每個重點一頁加一頁解答，適合考前複習。文法書 36–38 頁：同樣的重點頁，再加上每單元的綜合練習、寫作應用、複習測驗和兩回 100 分測驗。", "The cheat sheet is 14–15 pages: one page per point and an answer page, for review before an exam. The book is 36–38 pages: the same point pages plus each unit's practice and writing pages, review tests and two 100-point tests.")),
+           Z("速查表 14–15 頁：每個重點一頁加一頁解答，適合考前複習。文法書 36–38 頁：同樣的重點頁，再加上每單元的綜合練習、寫作應用、測驗（國中是三次段考模擬測驗）和完整解答。", "The cheat sheet is 14–15 pages: one page per point and an answer page, for review before an exam. The book is 36–38 pages: the same point pages plus each unit's practice and writing pages, tests (in junior high, three school-exam practice tests) and a full answer key.")),
           (Z("可以印給班上或補習班用嗎？", "Can I print it for a class or cram school?"),
            Z("購買是給家庭自用，自己印沒問題。想在課堂上使用或多人授權，先在 LINE 跟我們說一聲。", "A purchase is for family use; printing it yourself is fine. For classroom use or several users, message us on LINE first."))]
     out.append(f"""<section class="section bg-soft">
