@@ -494,7 +494,8 @@ def free_reader():
           "if(a&&typeof window.gtag==='function')gtag('event','book_tap',{product:'readers',item:a.getAttribute('data-book-item'),page_path:location.pathname,link_text:'page'});});</script>\n")
     t = t.replace("<title>", ga + "<title>", 1)
     # the page-flip wrapper grows past #book and covered the footer: its buttons took no mouse clicks
-    t = t.replace("</style>", "header,footer{position:relative;z-index:10}\n</style>", 1)
+    if "z-index:10" not in t:   # fixed in ae-readers flipbook.py 11-09; kept for older viewers
+        t = t.replace("</style>", "header,footer{position:relative;z-index:10}\n</style>", 1)
     t = readalong(t, dst)
     open(os.path.join(dst, "index.html"), "w", encoding="utf-8").write(t)
     print("  free reader:", os.path.relpath(dst, SITE), len(os.listdir(os.path.join(dst, "pages"))), "pages")
@@ -509,8 +510,6 @@ RA_CSS = """
 .hlw.on{opacity:1}
 #ra{background:#FFC828;color:#1A2752;font-weight:700;font-size:15px;white-space:nowrap}#ra:hover{background:#ffd75e}
 #ra.on{background:#fff}
-.ai{background:rgba(255,200,40,.25);border-radius:12px;padding:2px 10px;font-size:12px;white-space:nowrap}
-@media(max-width:600px){.ai{display:none}}
 """
 RA_JS = """<script>
 (function(){
@@ -549,8 +548,6 @@ def readalong(t, dst):
     ra = json.load(open(f, encoding="utf-8"))
     _page[0] = READERS
     t = t.replace("</style>", RA_CSS + "</style>", 1)
-    t = t.replace('<span class="lvl">', f'<span class="ai" title="{Z("目前是 AI 語音，老師親自朗讀的版本之後換上", "AI voice for now; a recording by the teacher replaces it later")}">'
-                  f'{Z("AI 語音朗讀", "AI voice")}</span><span class="lvl">', 1)
     t = t.replace('<footer><button id="prev"', f'<footer><button id="ra" title="{Z("播放朗讀：每個字唸到時會亮起來，唸完自動翻頁", "play: each word lights up as it is read, then the page turns")}">▶ {Z("聽故事", "listen to the story")}</button><button id="prev"', 1)
     js = RA_JS.replace("__RA__", json.dumps({"pages": ra["pages"]}, separators=(",", ":")))
     t = t.replace("</body>", js + "\n</body>", 1)
