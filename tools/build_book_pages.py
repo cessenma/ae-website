@@ -293,7 +293,7 @@ def readers_page():
             f"{cum[0]} MOE words; by the end of Level 12 a child has read {n(cum[-1])} of the words on the MOE 1,200 list in the stories.")}</p>
         <div class="bp-cta reveal d2"><a class="btn btn-primary" href="/{READERS}/read/1a/" data-book="readers" data-book-item="free">{Z("免費讀第一本", "read the first book free")}</a>
           <a class="btn btn-outline" href="#buy">{Z("看價格", "see prices")}</a></div>
-        <div class="bp-facts reveal d2"><span>{Z("PDF＋翻頁電子書", "PDF + flip book")}</span><span>{Z("每本 48 頁", "48 pages a book")}</span><span>{Z("台灣場景", "set in Taiwan")}</span><span>{Z("教育部 1,200 字", "MOE 1,200 words")}</span></div>
+        <div class="bp-facts reveal d2"><span>{Z("PDF＋翻頁電子書", "PDF + flip book")}</span><span>{Z("第一本可以邊聽邊讀", "the first book reads aloud")}</span><span>{Z("每本 48 頁", "48 pages a book")}</span><span>{Z("台灣場景", "set in Taiwan")}</span><span>{Z("教育部 1,200 字", "MOE 1,200 words")}</span></div>
       </div>
       <div class="bp-fan reveal d1" aria-hidden="true">{fan}</div>
     </div>
@@ -424,8 +424,8 @@ def readers_page():
     {h2(Z("價格", "prices"), "三種買法照需要挑", Z("三種買法，<em>照需要挑</em>", "three ways to buy"), "yellow")}
     {soon(any_link)}<div class="bp-trust reveal">{trust}</div>
     {tiers}
-    <p class="bp-fine">{Z("每本書都有 PDF（A5，可以自己印）和翻頁電子書（解壓縮後點開 index.html，電腦、平板、手機都能離線讀）。書裡沒有音檔。家庭自用；學校或補習班要全班用，請先 <a href='" + LINE + "' target='_blank' rel='noopener'>LINE 問我們</a>。",
-        "Every book comes as a PDF (A5, print it yourself) and a flip book (unzip, open index.html; works offline on a computer, tablet or phone). There is no audio. For family use; for a whole class at a school or cram school, ask us on LINE first.")}<br>
+    <p class="bp-fine">{Z("每本書都有 PDF（A5，可以自己印）和翻頁電子書（解壓縮後點開 index.html，電腦、平板、手機都能離線讀）。付費的書目前沒有音檔。家庭自用；學校或補習班要全班用，請先 <a href='" + LINE + "' target='_blank' rel='noopener'>LINE 問我們</a>。",
+        "Every book comes as a PDF (A5, print it yourself) and a flip book (unzip, open index.html; works offline on a computer, tablet or phone). The paid books have no audio yet. For family use; for a whole class at a school or cram school, ask us on LINE first.")}<br>
     {Z("這是數位內容，付款後立刻提供下載；依《通訊交易解除權合理例外情事適用準則》第 2 條第 5 款，按下購買即表示你同意不適用七天解除權。請先免費讀第一本再決定。",
        "This is digital content delivered right after payment; under Article 2(5) of the rules on exceptions to the 7-day cancellation right, clicking buy means you agree the 7-day cancellation does not apply. Please read the first book free before deciding.")}</p>
   </div>
@@ -437,8 +437,8 @@ def readers_page():
            Z("看程度，不看年齡。認得字母、學過一點自然發音就可以從第 1 級開始；已經讀得出短句的孩子，從第 5 級開始。最準的方法是讓孩子讀上面「孩子在哪個階段」的句子，或先免費讀第一本。",
              "Go by level, not age. A child who knows the letters and some phonics can start at Level 1; one who already reads short sentences, at Level 5. The surest way is the sentences under 'which stage', or the free first book.")),
           (Z("有音檔嗎？", "Is there audio?"),
-           Z("目前沒有。這套書是設計給大人陪讀、孩子自己讀的；不確定怎麼唸的字，可以查網站上的<a href='/pronunciation/word/'>單字發音頁</a>。",
-             "Not yet. The books are made for an adult to read along and for the child to read alone; for a word you're unsure how to say, use the site's word-pronunciation pages.")),
+           Z("免費的第一本可以邊聽邊讀：按「聽故事」，唸到哪個字、哪個字就亮起來，唸完自動翻頁（目前是 AI 語音）。付費的書目前還沒有音檔；不確定怎麼唸的字，可以查網站上的<a href='/pronunciation/word/'>單字發音頁</a>。",
+             "The free first book can be read along: press 'listen to the story', each word lights up as it is read and the page turns by itself (an AI voice for now). The paid books have no audio yet; for a word you're unsure how to say, use the site's word-pronunciation pages.")),
           (Z("和學校課本有什麼關係？", "How does it relate to the school textbook?"),
            Z("字彙依教育部 1,200 字表排序，所以學校會教的字在故事裡都讀得到；但這套書不照課本的課次走，是課外閱讀。", "The vocabulary follows the MOE 1,200 list, so the words school teaches all appear in the stories; it doesn't follow the textbook's lessons — it is reading outside class.")),
           (Z("可以印出來嗎？", "Can I print it?"),
@@ -460,7 +460,7 @@ def readers_page():
     <div class="cta-box reveal">
       <span class="eyebrow eyebrow-green">{Z("免費試讀", "free sample")}</span>
       <h2 id="先讀第一本" style="margin-top:14px">{Z("先讀第一本，<em>再決定</em>", "read the first book, then decide")}</h2>
-      <p class="body" style="max-width:560px;margin:16px auto 0">{Z(f"第 1 級第一本 <i lang='en'>This Is Bobo!</i> 整本免費，在網站上直接翻頁讀，不用下載也不用留資料。", "Level 1, Book 1, This Is Bobo!, is free in full: turn the pages right on the site, no download, no sign-up.")}</p>
+      <p class="body" style="max-width:560px;margin:16px auto 0">{Z(f"第 1 級第一本 <i lang='en'>This Is Bobo!</i> 整本免費，在網站上直接翻頁讀，還可以按「聽故事」邊聽邊讀，唸到的字會亮起來。不用下載也不用留資料。", "Level 1, Book 1, This Is Bobo!, is free in full: turn the pages on the site, or press 'listen to the story' and read along as each word lights up. No download, no sign-up.")}</p>
       <div class="cta-row"><a class="btn btn-primary" href="/{READERS}/read/1a/" data-book="readers" data-book-item="free">{Z("免費讀第一本", "read the first book free")}</a>
       <a class="btn btn-outline" href="{LINE}" target="_blank" rel="noopener">{Z("LINE 問我們", "ask us on LINE")}</a></div>
     </div>
@@ -493,8 +493,68 @@ def free_reader():
           "<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-book]');"
           "if(a&&typeof window.gtag==='function')gtag('event','book_tap',{product:'readers',item:a.getAttribute('data-book-item'),page_path:location.pathname,link_text:'page'});});</script>\n")
     t = t.replace("<title>", ga + "<title>", 1)
+    # the page-flip wrapper grows past #book and covered the footer: its buttons took no mouse clicks
+    t = t.replace("</style>", "header,footer{position:relative;z-index:10}\n</style>", 1)
+    t = readalong(t, dst)
     open(os.path.join(dst, "index.html"), "w", encoding="utf-8").write(t)
     print("  free reader:", os.path.relpath(dst, SITE), len(os.listdir(os.path.join(dst, "pages"))), "pages")
+
+# The read-along player (2026-11-09, Chris: "AI voice for now"): tools/build_readalong.py makes
+# readalong.json (audio per story page + a timed box per printed word); this adds a 聽故事 button that
+# reads each page aloud, lights up each word as it is spoken and turns the page by itself.
+RA_CSS = """
+.page{position:relative}
+.hlw{position:absolute;border-radius:5px;background:rgba(255,200,40,.55);mix-blend-mode:multiply;opacity:0;
+  transition:opacity .08s;pointer-events:none;transform:scale(1.12,1.18)}
+.hlw.on{opacity:1}
+#ra{background:#FFC828;color:#1A2752;font-weight:700;font-size:15px;white-space:nowrap}#ra:hover{background:#ffd75e}
+#ra.on{background:#fff}
+.ai{background:rgba(255,200,40,.25);border-radius:12px;padding:2px 10px;font-size:12px;white-space:nowrap}
+@media(max-width:600px){.ai{display:none}}
+"""
+RA_JS = """<script>
+(function(){
+const RA=__RA__, P=RA.pages, pgs=document.querySelectorAll('#book .page'), btn=document.getElementById('ra');
+const boxes={};
+Object.keys(P).forEach(function(p){const host=pgs[p-1];if(!host)return;boxes[p]=P[p].words.map(function(w){
+  const d=document.createElement('div');d.className='hlw';
+  d.style.cssText='left:'+w[2]+'%;top:'+w[3]+'%;width:'+w[4]+'%;height:'+w[5]+'%';host.appendChild(d);return d;});});
+const order=Object.keys(P).map(Number).sort(function(a,b){return a-b;});
+const audio=new Audio();audio.preload='auto';
+let on=false,cur=null,raf=0,timer=0,sent=false;
+function clear(){document.querySelectorAll('.hlw.on').forEach(function(e){e.classList.remove('on');});}
+function spread(){const i=pf.getCurrentPageIndex();return [i+1,i+2];}
+function textHere(){const s=spread();for(const p of s)if(P[p])return p;return null;}
+function later(){const s=spread();return order.find(function(p){return p>s[1];});}
+function tick(){const d=P[cur];if(!d)return;const t=audio.currentTime,w=d.words,b=boxes[cur];
+  for(let k=0;k<w.length;k++){const end=k<w.length-1?w[k+1][0]:w[k][1]+.35;b[k].classList.toggle('on',t>=w[k][0]-.02&&t<end);}
+  if(!audio.paused)raf=requestAnimationFrame(tick);}
+function play(){clearTimeout(timer);const p=textHere();
+  if(!p){const nx=later();if(nx){pf.turnToPage(nx-1);timer=setTimeout(play,900);}else stop();return;}
+  cur=p;audio.src=P[p].audio;audio.currentTime=0;
+  audio.play().then(function(){cancelAnimationFrame(raf);tick();}).catch(stop);}
+function stop(){on=false;audio.pause();clearTimeout(timer);clear();btn.classList.remove('on');btn.textContent='▶ 聽故事';}
+audio.onended=function(){setTimeout(clear,350);if(!on)return;
+  timer=setTimeout(function(){if(!on)return;if(later())pf.flipNext();else stop();},1100);};
+pf.on('flip',function(){audio.pause();clear();clearTimeout(timer);if(on)timer=setTimeout(play,800);});
+btn.onclick=function(){if(on){stop();return;}on=true;btn.classList.add('on');btn.textContent='❚❚ 暫停';play();
+  if(!sent&&typeof window.gtag==='function'){sent=true;gtag('event','book_tap',{product:'readers',item:'readalong-play',page_path:location.pathname,link_text:'play'});}};
+})();
+</script>"""
+
+def readalong(t, dst):
+    f = os.path.join(dst, "readalong.json")
+    if not os.path.exists(f):
+        return t
+    ra = json.load(open(f, encoding="utf-8"))
+    _page[0] = READERS
+    t = t.replace("</style>", RA_CSS + "</style>", 1)
+    t = t.replace('<span class="lvl">', f'<span class="ai" title="{Z("目前是 AI 語音，老師親自朗讀的版本之後換上", "AI voice for now; a recording by the teacher replaces it later")}">'
+                  f'{Z("AI 語音朗讀", "AI voice")}</span><span class="lvl">', 1)
+    t = t.replace('<footer><button id="prev"', f'<footer><button id="ra" title="{Z("播放朗讀：每個字唸到時會亮起來，唸完自動翻頁", "play: each word lights up as it is read, then the page turns")}">▶ {Z("聽故事", "listen to the story")}</button><button id="prev"', 1)
+    js = RA_JS.replace("__RA__", json.dumps({"pages": ra["pages"]}, separators=(",", ":")))
+    t = t.replace("</body>", js + "\n</body>", 1)
+    return t
 
 # ---------------------------------------------------------------- grammar page
 
