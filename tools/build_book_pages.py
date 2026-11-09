@@ -680,7 +680,7 @@ def grammar_page():
             b = B[c]
             pts = "".join(f'<li>{esc(p["zh"])} <span lang="en">{esc(p["en"])}</span></li>' for u in b["units"] for p in u["points"])
             np_ = b["points"]
-            items.append(f'<details class="bp-book"><summary>{esc(b["title"])}<small>{Z(f"{np_} 個重點・6 個單元", f"{np_} points, 6 units")}</small></summary><ol>{pts}</ol></details>')
+            items.append(f'<details class="bp-book" id="{c}"><summary>{esc(b["title"])}<small>{Z(f"{np_} 個重點・6 個單元", f"{np_} points, 6 units")}</small></summary><ol>{pts}</ol></details>')
         sec.append(f'<h3 id="{strip(name)}目錄" style="margin:24px 0 6px;font-size:18px">{name}</h3>' + "".join(items))
     out.append(f"""<section class="section">
   <div class="wrap" style="max-width:860px">

@@ -319,6 +319,19 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 - [Movers 口說練習：四個部分完整流程、老師提問與圖卡](https://americanenglish.com.tw/movers-speaking-practice/): 劍橋兒童英檢 A1 Movers Speaking 四個部分的完整練習：場景圖、物品卡、故事圖、老師會問的每一句話，附參考說法。家長在家就能當考官走一次流程。
 - [Flyers 口說練習：四個部分完整流程、老師提問與圖卡](https://americanenglish.com.tw/flyers-speaking-practice/): 劍橋兒童英檢 A2 Flyers Speaking 四個部分的完整練習：場景圖、物品卡、故事圖、老師會問的每一句話，附參考說法。家長在家就能當考官走一次流程。
 - [英文單字發音：300 個常用字 KK 音標、怎麼唸＋慢速示範](https://americanenglish.com.tw/pronunciation/): 英文單字怎麼唸？教育部 1200 字裡 300 個常用單字，每個都有 KK 音標、音節與重音、正常和慢速發音，以及台灣學生最常唸錯的地方。依字母查，點單字看完整發音頁。
+- [板橋國中小英文版本與段考範圍總覽（115學年）](https://americanenglish.com.tw/banqiao-school-english/): 板橋區 11 所國中、17 所國小這學期英文用哪個版本、段考考哪幾課、什麼時候考：地圖和彩色圖表一次看懂，附各校官方課程計畫連結和免費一頁重點整理 PDF。
+- [板橋區國小英文版本與期中期末範圍（115學年上學期）](https://americanenglish.com.tw/banqiao-school-english/elementary/): 板橋區 17 所國小這學期英文：三到六年級各用康軒、翰林還是何嘉仁，期中、期末考哪幾課、第幾週考。附學校官方課程計畫連結和免費一頁 PDF。
+- [板橋國中英文版本與段考範圍（115學年上學期）](https://americanenglish.com.tw/banqiao-school-english/banqiao-junior-high/): 板橋國中這學期英文：七年級康軒、八年級翰林、九年級翰林。三次段考各考哪幾課、哪些文法、第幾週考，整理成彩色時間軸，附學校官方課程計畫連結和免費一頁 PDF。
+- [重慶國中英文版本與段考範圍（115學年上學期）](https://americanenglish.com.tw/banqiao-school-english/chongqing-junior-high/): 重慶國中這學期英文：七年級南一、八年級翰林、九年級南一。三次段考各考哪幾課、哪些文法、第幾週考，整理成彩色時間軸，附學校官方課程計畫連結和免費一頁 PDF。
+- [江翠國中英文版本與段考範圍（115學年上學期）](https://americanenglish.com.tw/banqiao-school-english/jiangcui-junior-high/): 江翠國中這學期英文：七年級翰林、八年級康軒、九年級翰林。三次段考各考哪幾課、哪些文法、第幾週考，整理成彩色時間軸，附學校官方課程計畫連結和免費一頁 PDF。
+- [中山國中英文版本與段考範圍（115學年上學期）](https://americanenglish.com.tw/banqiao-school-english/zhongshan-junior-high/): 中山國中這學期英文：七年級翰林、八年級翰林、九年級翰林。學校上傳的英語計畫是下學期的，上學期段考週次請看學校行事曆；附學校官方課程計畫連結和免費一頁 PDF。
+- [新埔國中英文版本與段考範圍（115學年上學期）](https://americanenglish.com.tw/banqiao-school-english/xinpu-junior-high/): 新埔國中這學期英文：七年級康軒、八年級康軒、九年級南一。三次段考各考哪幾課、哪些文法、第幾週考，整理成彩色時間軸，附學校官方課程計畫連結和免費一頁 PDF。
+- [溪崑國中英文版本與段考範圍（115學年上學期）](https://americanenglish.com.tw/banqiao-school-english/xikun-junior-high/): 溪崑國中這學期英文：七年級康軒、八年級翰林、九年級康軒。三次段考各考哪幾課、哪些文法、第幾週考，整理成彩色時間軸，附學校官方課程計畫連結和免費一頁 PDF。
+- [大觀國中英文版本與段考範圍（115學年上學期）](https://americanenglish.com.tw/banqiao-school-english/daguan-junior-high/): 大觀國中這學期英文：七年級翰林、八年級康軒、九年級南一。三次段考各考哪幾課、哪些文法、第幾週考，整理成彩色時間軸，附學校官方課程計畫連結和免費一頁 PDF。
+- [忠孝國中英文版本與段考範圍（115學年上學期）](https://americanenglish.com.tw/banqiao-school-english/zhongxiao-junior-high/): 忠孝國中這學期英文：七年級翰林、八年級翰林、九年級翰林。三次段考各考哪幾課、哪些文法、第幾週考，整理成彩色時間軸，附學校官方課程計畫連結和免費一頁 PDF。
+- [海山高中英文版本與段考範圍（115學年上學期）](https://americanenglish.com.tw/banqiao-school-english/haishan-high-school/): 海山高中這學期英文：七年級翰林、八年級翰林、九年級翰林。三次段考各考哪幾課、哪些文法、第幾週考，整理成彩色時間軸，附學校官方課程計畫連結和免費一頁 PDF。
+- [光復高中英文版本與段考範圍（115學年上學期）](https://americanenglish.com.tw/banqiao-school-english/guangfu-high-school/): 光復高中這學期英文：七年級翰林、八年級翰林、九年級翰林。三次段考各考哪幾課、哪些文法、第幾週考，整理成彩色時間軸，附學校官方課程計畫連結和免費一頁 PDF。
+- [光仁高中英文版本與段考範圍（115學年上學期）](https://americanenglish.com.tw/banqiao-school-english/guangren-high-school/): 光仁高中這學期英文：七年級翰林、八年級翰林、九年級版本未標明。三次段考各考哪幾課、哪些文法、第幾週考，整理成彩色時間軸，附學校官方課程計畫連結和免費一頁 PDF。
 <!-- AE:LLMS-MORE end -->
 
 ## Citable facts

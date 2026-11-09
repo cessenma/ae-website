@@ -447,6 +447,118 @@
 "date": "2026-10-22",
 "hash": "a65430683cf09e2e3b8aeb32058d0aef"
 },
+"assets/downloads/school-english/banqiao-junior-high-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "efac04d4cdf8dd1c6ceadf10cde6a890"
+},
+"assets/downloads/school-english/cges-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "ef779d63af3ef13dbc6ed969c4b7001d"
+},
+"assets/downloads/school-english/chongqing-junior-high-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "8df32b3045436eb28820ed8f06c38256"
+},
+"assets/downloads/school-english/ctes-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "361a0609fd493687906c9d0e92f5de84"
+},
+"assets/downloads/school-english/daguan-junior-high-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "6f92714d697b4ee6b64a220d1b3a64d6"
+},
+"assets/downloads/school-english/guangfu-high-school-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "ba5327e89e5bbedb6590e542778e48fa"
+},
+"assets/downloads/school-english/guangren-high-school-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "d1727373d023f2ba92121336eb8455ac"
+},
+"assets/downloads/school-english/haishan-high-school-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "dd410ce1bd991c9708ec2b48b0d9bf11"
+},
+"assets/downloads/school-english/hpes-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "959d34b2d6f905de58b3158147c72d7d"
+},
+"assets/downloads/school-english/hsps-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "3b9c1e1b78c02df1c6153ffd6dffd72b"
+},
+"assets/downloads/school-english/jges-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "d5d38b70ce9a9be43507e507ccb4a857"
+},
+"assets/downloads/school-english/jiangcui-junior-high-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "881ff74a3777af34551babb800ec51b9"
+},
+"assets/downloads/school-english/jshps-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "7616643f75f1359bd355a06d9769d492"
+},
+"assets/downloads/school-english/kkes-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "164d2e6a982385eaf51e9245ddf2ba66"
+},
+"assets/downloads/school-english/pces-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "fa4bbd9dcf19ed2fbff4df074d51a132"
+},
+"assets/downloads/school-english/pcps-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "f24504ea88012ffa109b0f98152c5a59"
+},
+"assets/downloads/school-english/sips-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "523d16716a23676eefa19d85e73115b4"
+},
+"assets/downloads/school-english/sjps-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "ba272d62b8a1b101980f157f56e15454"
+},
+"assets/downloads/school-english/sles-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "6b5bdad93ad9411774480516350f5e9a"
+},
+"assets/downloads/school-english/spes-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "e5ca867073a58b46389d1e9765c248c8"
+},
+"assets/downloads/school-english/tgps-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "ea5590da4403071e0ce1defb79288368"
+},
+"assets/downloads/school-english/thyes-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "0eb7656dd97046e00ad56bdad87ee056"
+},
+"assets/downloads/school-english/wdps-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "f0d37186c50702a0b7d7787031134e23"
+},
+"assets/downloads/school-english/wses-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "d352a85be91225d2a674223bce4cbfa7"
+},
+"assets/downloads/school-english/xikun-junior-high-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "b3b39034fec12fb3955ebf861c967612"
+},
+"assets/downloads/school-english/xinpu-junior-high-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "07627e87ef2ee6cb646bb06f67960854"
+},
+"assets/downloads/school-english/zhongshan-junior-high-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "ff449caf62bf11fe44490adf2eb664eb"
+},
+"assets/downloads/school-english/zhongxiao-junior-high-115-1.pdf": {
+"date": "2026-11-10",
+"hash": "4e4c811f73f8afb2dd0f9c1d46ee16ef"
+},
 "b1-grammar-guide": {
 "date": "2026-10-19",
 "hash": "e4af641ab8fcfd91e82bd34cde995ac0"
@@ -510,6 +622,58 @@
 "banqiao-private-school-english-prep": {
 "date": "2026-11-10",
 "hash": "9cf41f35514e775043492bcc2143ee68"
+},
+"banqiao-school-english": {
+"date": "2026-11-10",
+"hash": "3bcadd28430cde0dd11064ff584763f3"
+},
+"banqiao-school-english/banqiao-junior-high": {
+"date": "2026-11-10",
+"hash": "42b01d5b856736df1d4fb03a60c2c600"
+},
+"banqiao-school-english/chongqing-junior-high": {
+"date": "2026-11-10",
+"hash": "6735791e06be7cb6c4adffb88874ae17"
+},
+"banqiao-school-english/daguan-junior-high": {
+"date": "2026-11-10",
+"hash": "6a6c5d560d2e8623b0ab5aa301c79ef1"
+},
+"banqiao-school-english/elementary": {
+"date": "2026-11-10",
+"hash": "7a7a511f1d8a9923c54799dc4832aa02"
+},
+"banqiao-school-english/guangfu-high-school": {
+"date": "2026-11-10",
+"hash": "9c3a08fc05d2289074df628d03a4cfd4"
+},
+"banqiao-school-english/guangren-high-school": {
+"date": "2026-11-10",
+"hash": "62890509d90d712bc57f391073303cf5"
+},
+"banqiao-school-english/haishan-high-school": {
+"date": "2026-11-10",
+"hash": "7a03254be4d802ad71ce09e506db91e7"
+},
+"banqiao-school-english/jiangcui-junior-high": {
+"date": "2026-11-10",
+"hash": "34622e922b936791df64bbc89568a7c4"
+},
+"banqiao-school-english/xikun-junior-high": {
+"date": "2026-11-10",
+"hash": "15549f578c02262e81eccaa0cd27f0ff"
+},
+"banqiao-school-english/xinpu-junior-high": {
+"date": "2026-11-10",
+"hash": "e88f261b65886849aecec47f3d3c2913"
+},
+"banqiao-school-english/zhongshan-junior-high": {
+"date": "2026-11-10",
+"hash": "4a5c48d71a34208c0bcc66ec6fe8d7f3"
+},
+"banqiao-school-english/zhongxiao-junior-high": {
+"date": "2026-11-10",
+"hash": "3d27f65a79f9d86b65ce9998391ba597"
 },
 "banqiao-station-english-cram-school": {
 "date": "2026-10-13",
