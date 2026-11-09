@@ -309,7 +309,7 @@ def readers_page():
     figs = "".join(f'<figure><img src="/assets/img/readers/spreads/{f}.webp" alt="{esc(books[c]["title"])} 內頁：左頁文字、右頁插圖" '
                    f'width="1200" height="851" loading="lazy" decoding="async"><figcaption><b>{cap}</b>{esc(books[c]["title"])}'
                    f'{Z("，全書", ", whole book ")} {n(books[c]["words"])} {Z("字", "words")}</figcaption></figure>' for f, c, cap in spreads)
-    inside = [(Z("邊聽邊讀", "read along"), Z("翻頁電子書按「聽故事」，唸到哪個字、哪個字就亮起來，唸完自動翻頁；下載後不用網路。", "in the flip book, press 'listen to the story': each word lights up as it is read and the page turns; works offline after download.")),
+    inside = [(Z("邊聽邊讀", "read along"), Z("翻頁電子書按「聽故事」，唸到哪個字、哪個字就亮起來，唸完自動翻頁；速度可以選 0.5、0.75、1 或 1.25 倍，放慢了聲音一樣清楚；下載後不用網路。", "in the flip book, press 'listen to the story': each word lights up as it is read and the page turns; the speed can be 0.5x, 0.75x, 1x or 1.25x, and the voice stays just as clear when slowed down; works offline after download.")),
               (Z("新字頁", "new-words page"), Z("書前一頁列出這一級的新字和圖畫字，先看一遍再讀故事。", "a page at the front lists the level's new words and picture words; look at it before the story.")),
               (Z("每頁標出新字", "new words marked on each page"), Z("新字第一次出現的那一頁，頁底會標出來。", "the page where a new word first appears names it at the bottom.")),
               (Z("讀完問問看", "questions after reading"), Z("書後有幾個關於故事的問題，用來聊，不是考試。", "questions about the story at the back, for talking, not testing.")),
@@ -425,8 +425,8 @@ def readers_page():
     {h2(Z("價格", "prices"), "三種買法照需要挑", Z("三種買法，<em>照需要挑</em>", "three ways to buy"), "yellow")}
     {soon(any_link)}<div class="bp-trust reveal">{trust}</div>
     {tiers}
-    <p class="bp-fine">{Z("每本書都有 PDF（A5，可以自己印）和翻頁電子書（解壓縮後點開 index.html，電腦、平板、手機都能離線讀）。翻頁電子書可以邊聽邊讀，唸到的字會亮起來。家庭自用；學校或補習班要全班用，請先 <a href='" + LINE + "' target='_blank' rel='noopener'>LINE 問我們</a>。",
-        "Every book comes as a PDF (A5, print it yourself) and a flip book (unzip, open index.html; works offline on a computer, tablet or phone). The flip books read aloud, lighting up each word. For family use; for a whole class at a school or cram school, ask us on LINE first.")}<br>
+    <p class="bp-fine">{Z("每本書都有 PDF（A5，可以自己印）和翻頁電子書（解壓縮後點開 index.html，電腦、平板、手機都能離線讀）。翻頁電子書可以邊聽邊讀，唸到的字會亮起來，也可以放慢速度。家庭自用；學校或補習班要全班用，請先 <a href='" + LINE + "' target='_blank' rel='noopener'>LINE 問我們</a>。",
+        "Every book comes as a PDF (A5, print it yourself) and a flip book (unzip, open index.html; works offline on a computer, tablet or phone). The flip books read aloud, lighting up each word, and the reading can be slowed down. For family use; for a whole class at a school or cram school, ask us on LINE first.")}<br>
     {Z("這是數位內容，付款後立刻提供下載；依《通訊交易解除權合理例外情事適用準則》第 2 條第 5 款，按下購買即表示你同意不適用七天解除權。請先免費讀第一本再決定。",
        "This is digital content delivered right after payment; under Article 2(5) of the rules on exceptions to the 7-day cancellation right, clicking buy means you agree the 7-day cancellation does not apply. Please read the first book free before deciding.")}</p>
   </div>
@@ -438,8 +438,8 @@ def readers_page():
            Z("看程度，不看年齡。認得字母、學過一點自然發音就可以從第 1 級開始；已經讀得出短句的孩子，從第 5 級開始。最準的方法是讓孩子讀上面「孩子在哪個階段」的句子，或先免費讀第一本。",
              "Go by level, not age. A child who knows the letters and some phonics can start at Level 1; one who already reads short sentences, at Level 5. The surest way is the sentences under 'which stage', or the free first book.")),
           (Z("有音檔嗎？", "Is there audio?"),
-           Z("有。36 本的翻頁電子書都可以按「聽故事」：唸到哪個字、哪個字就亮起來，唸完自動翻頁（目前是 AI 語音），下載後不用網路也能聽。PDF 檔本身沒有聲音。",
-             "Yes. All 36 flip books have 'listen to the story': each word lights up as it is read and the page turns by itself (an AI voice for now); it works offline after download. The PDF files themselves have no sound.")),
+           Z("有。36 本的翻頁電子書都可以按「聽故事」：唸到哪個字、哪個字就亮起來，唸完自動翻頁（目前是 AI 語音）。速度可以選 0.5、0.75、1 或 1.25 倍，每一種速度都是事先做好的錄音，放慢了聲音一樣清楚。下載後不用網路也能聽。PDF 檔本身沒有聲音。",
+             "Yes. All 36 flip books have 'listen to the story': each word lights up as it is read and the page turns by itself (an AI voice for now). The speed can be 0.5x, 0.75x, 1x or 1.25x; each speed is a recording made ahead of time, so the voice stays just as clear when slowed down. It works offline after download. The PDF files themselves have no sound.")),
           (Z("和學校課本有什麼關係？", "How does it relate to the school textbook?"),
            Z("字彙依教育部 1,200 字表排序，所以學校會教的字在故事裡都讀得到；但這套書不照課本的課次走，是課外閱讀。", "The vocabulary follows the MOE 1,200 list, so the words school teaches all appear in the stories; it doesn't follow the textbook's lessons — it is reading outside class.")),
           (Z("可以印出來嗎？", "Can I print it?"),
@@ -551,6 +551,9 @@ def readalong(t, dst):
     if 'id="ra"' in t:        # the flip book already carries the player (ae-readers flipbook.py, 11-09)
         _page[0] = READERS
         Z("聽故事", "listen to the story"); Z("暫停", "pause")
+        if 'id="spd"' in t:   # 4-speed picker (ae-readers flipbook.py + speeds.py, 11-10)
+            lab = Z("播放速度", "reading speed")
+            t = t.replace('title="Reading speed" aria-label="Reading speed"', f'title="{lab}" aria-label="{lab}"', 1)
         return t
     if not os.path.exists(f):
         return t
