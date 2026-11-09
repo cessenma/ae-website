@@ -27,13 +27,13 @@ OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "school-c
 #              failure mode that actually damages the school's credibility.
 SCHOOLS = [
     # The four schools the site itself claims as walking distance from 中正路 89 巷 4 號:
-    # 板橋國中 5 min (~400m) · 板橋國小 5 min · 國光國小 8 min (~650m) · 大觀國小 10 min (~800m).
+    # 板橋國中 ~15 min (~1.2 km; Chris 11-10 corrected the old "5 min") · 板橋國小 5 min · 國光國小 8 min (~650m) · 大觀國小 10 min (~800m).
     # Do NOT add 江翠/海山/新埔/文聖 — our own pages state plainly that those are NOT nearby.
     #
     # These four schools publish calendars in four different ways: an image, a teachers-only
     # Google Form, a section page, and nothing on the homepage. Rather than OCR or guess, this
     # verifies each official location weekly and parses dates ONLY where parsing is safe.
-    {"key": "pcjh", "name": "板橋國中", "full": "新北市立板橋國民中學", "walk": "步行 5 分鐘",
+    {"key": "pcjh", "name": "板橋國中", "full": "新北市立板橋國民中學", "walk": "步行約 15 分鐘",
      "home": "https://www.pcjh.ntpc.edu.tw/", "page": "/junior-high-english-banqiao/",
      "calendar_page": "https://www.pcjh.ntpc.edu.tw/p/406-1000-10824,r62.php",
      "note": "行事曆以圖片公告，本頁不轉錄日期。"},
