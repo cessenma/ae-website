@@ -52,8 +52,7 @@ MB_GRAMMAR = {"elementary": (30, 12), "junior": (38, 11), "senior": (36, 13)}   
 # measured 2026-11-10 from the ae-readers repo (data/books/*.json, data/ladder.json); see memory ae-book-pages-2026-11-08
 FRY_LIST, FRY_READ = 296, 281        # Fry, Kress & Fountoukidis (2000) first-300 list as published (296 entries); entries met in the 36 books
 CORE, CORE_10PLUS, CORE_MEDIAN = 300, 287, 27   # core words; core words met 10+ times across the 36 books; median encounters
-INSTR_ALL, INSTR_READ = 29, 26       # common worksheet/exam instruction words checked; met in the books (match, colour, tick are not)
-SIGN_WORDS = "stop · open · close · push · pull · wait · walk · in · out · up · down · left · right"
+
 
 esc = html.escape
 FP, LZ = 'fetchpriority="high"', 'loading="lazy"'   # the hero's middle cover loads first
@@ -138,27 +137,7 @@ CSS = """
 .bp-stat .big{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:46px;line-height:1;color:var(--c,var(--blue));display:block;margin:6px 0 10px}
 .bp-stat b{display:block;font-family:'Baloo 2',sans-serif;font-size:17.5px;color:var(--navy);margin-bottom:6px;line-height:1.35}
 .bp-stat p{margin:0;font-size:14.5px;line-height:1.8;color:var(--text-body)}
-.bp-stat .src{display:block;margin-top:10px;font-size:12.5px;color:#64748b}
-.bp-stat .src a{color:#066d9e}
-.bp-signs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:22px auto 0;max-width:760px}
-.bp-signs span{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:15px;letter-spacing:.5px;padding:6px 14px;border-radius:10px;background:#1A2752;color:#fff;box-shadow:0 3px 0 rgba(26,39,82,.25)}
-.bp-signs span:nth-child(3n+2){background:#06C755}.bp-signs span:nth-child(3n){background:#e0a800;color:#1A2752}
-.bp-research{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:26px;max-width:980px;margin-left:auto;margin-right:auto}
-.bp-research figure{margin:0;background:#fff;border-radius:20px;padding:22px;border:2px solid rgba(26,39,82,.08);display:flex;flex-direction:column}
-.bp-research blockquote{margin:0 0 12px;font-family:'DM Serif Display',serif;font-size:21px;line-height:1.35;color:var(--navy)}
-.bp-research p{margin:0;font-size:14.5px;line-height:1.8;color:var(--text-body)}
-.bp-research figcaption{margin-top:auto;padding-top:14px;font-size:12.5px;color:#64748b;line-height:1.6}
-.bp-research figcaption a{color:#066d9e}
-.bp-school{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:center;margin-top:24px}
-.bp-school ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
-.bp-school li{background:#fff;border-radius:16px;padding:14px 16px 14px 48px;position:relative;border:2px solid rgba(26,39,82,.08);font-size:15px;line-height:1.7;color:var(--text-body)}
-.bp-school li::before{content:"✓";position:absolute;left:16px;top:13px;width:22px;height:22px;border-radius:50%;background:#06C755;color:#fff;font-weight:800;font-size:13px;display:grid;place-items:center}
-.bp-school li b{color:var(--navy)}
-.bp-school .bp-big{background:linear-gradient(160deg,#1A2752,#243a7a);color:#fff;border-radius:24px;padding:28px 26px;text-align:center}
-.bp-school .bp-big .big{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:64px;line-height:1;color:#FFC828;display:block}
-.bp-school .bp-big p{margin:10px 0 0;font-size:15px;line-height:1.7;color:#dbe4ff}
-.bp-school .bp-big a{color:#FFC828}
-@media (max-width:760px){.bp-school{grid-template-columns:1fr}.bp-stat .big{font-size:40px}.bp-research{grid-template-columns:1fr}}
+@media (max-width:760px){.bp-stat .big{font-size:40px}}
 .bp-stage .bp-tag{align-self:flex-start;font-size:12.5px;font-weight:800;border-radius:999px;padding:3px 11px;margin-bottom:10px;background:#E8F7FF;color:#066d9e}
 .bp-stage blockquote{margin:12px 0;padding:12px 14px;border-left:4px solid var(--yellow);background:#FFFBEF;border-radius:0 12px 12px 0;font-family:'Andika','Baloo 2',sans-serif;font-size:16px;line-height:1.6;color:var(--navy)}
 .bp-stage .bp-small{font-size:13px;color:#64748b;margin-top:auto;padding-top:10px}
@@ -316,17 +295,14 @@ def readers_page():
     <div class="breadcrumb reveal"><a href="/">首頁</a> ／ {Z("分級讀本", "graded readers")}</div>
     <div class="bp-hero">
       <div>
-        <span class="eyebrow eyebrow-yellow reveal">{Z("埃森美語原創 · 3 歲起親子共讀 · 12 級 36 本", "our own series · read together from age 3 · 12 levels, 36 books")}</span>
+        <span class="eyebrow eyebrow-yellow reveal">{Z("埃森美語原創", "our own series")}</span>
         <h1 class="reveal d1"><span style="white-space:nowrap">Chris and Cora</span> {Z("<em>英語分級讀本</em>", "English graded readers")}</h1>
         <div class="divider reveal d1"></div>
-        <p class="body reveal d2">{Z(f"這套書是我們自己寫、自己編的：12 級、每級 3 本，共 36 本，每本 48 頁。左頁是英文，右頁是整頁插圖，故事發生在台灣的家、學校、公園和夜市。"
-            f"第 1 級的 3 本只用 {cum[0]} 個教育部單字；讀完第 12 級，孩子已經在故事裡讀過教育部 1,200 字表裡的 <b>{n(cum[-1])} 個字</b>。",
-            f"We wrote and laid out this series ourselves: 12 levels, 3 books each, 36 books of 48 pages. English on the left page, a full-page "
-            f"picture on the right; the stories happen at home, at school, in the park and at the night market in Taiwan. The 3 books of Level 1 use only "
-            f"{cum[0]} MOE words; by the end of Level 12 a child has read {n(cum[-1])} of the words on the MOE 1,200 list in the stories.")}</p>
+        <p class="body reveal d2">{Z("我們自己寫的 36 本英文故事書，故事發生在台灣，用的是學校的教育部 1,200 字表。",
+            "36 English storybooks we wrote ourselves, set in Taiwan, using the school's MOE 1,200-word list.")}</p>
         <div class="bp-cta reveal d2"><a class="btn btn-primary" href="/{READERS}/read/1a/" data-book="readers" data-book-item="free">{Z("免費讀第一本", "read the first book free")}</a>
           <a class="btn btn-outline" href="#buy">{Z("看價格", "see prices")}</a></div>
-        <div class="bp-facts reveal d2"><span>{Z("PDF＋翻頁電子書", "PDF + flip book")}</span><span>{Z("每本都可以邊聽邊讀", "every book reads aloud")}</span><span>{Z("每本 48 頁", "48 pages a book")}</span><span>{Z("台灣場景", "set in Taiwan")}</span><span>{Z("教育部 1,200 字", "MOE 1,200 words")}</span><span>{Z("3 歲起陪讀", "from age 3, read together")}</span></div>
+        <div class="bp-facts reveal d2"><span>{Z("PDF＋翻頁電子書", "PDF + flip book")}</span><span>{Z("邊聽邊讀", "reads aloud")}</span><span>{Z("12 級 36 本", "12 levels, 36 books")}</span><span>{Z("3 歲起陪讀", "from age 3, read together")}</span></div>
       </div>
       <div class="bp-fan reveal d1" aria-hidden="true">{fan}</div>
     </div>
@@ -334,53 +310,26 @@ def readers_page():
 </section>
 """)
 
-    # what a child can read after the series (Chris 11-10; every number measured or sourced)
-    stats = [("var(--blue)", "⅔", Z("英文書裡，大約三分之二的字是最常用的 300 個字", "about two-thirds of the words in English reading are the 300 most-used words"),
-              Z(f"美國閱讀學者 Fry 統計學生讀的書，最常用的 300 個字就占了約 65%。這份字表的 {FRY_LIST} 個字，36 本書裡讀得到 {FRY_READ} 個。",
-                f"Reading researcher Edward Fry counted students' reading: the 300 most-used words make up about 65%. Of the {FRY_LIST} entries on that list, {FRY_READ} appear in the 36 books."),
-              '<a href="https://eric.ed.gov/?id=ED169516" target="_blank" rel="noopener">Fry (1980)；Fry, Kress &amp; Fountoukidis (2000)</a>'),
-             ("#06C755", f"{round(FRY_READ / FRY_LIST * 100)}%", Z("最常用的英文字，讀完這套書都見過", "of the most-used English words appear in the series"),
-              Z(f"讀完 12 級，Fry 最常用字表的 {FRY_LIST} 個字裡，孩子在故事裡讀過 {FRY_READ} 個。",
-                f"After 12 levels, a child has read {FRY_READ} of the {FRY_LIST} words on Fry's most-used list in the stories."),
-              Z("我們用 36 本書的全文逐字比對", "counted word by word against the full text of the 36 books")),
-             ("#e0a800", f"{CORE_10PLUS}/{CORE}", Z("個核心字，每個都讀到 10 次以上", "core words each met 10 or more times"),
-              Z(f"研究發現一個新字大約要碰到 10 次才記得住。這套書的 {CORE} 個核心字，有 {CORE_10PLUS} 個在 36 本裡出現 10 次以上，一般是 {CORE_MEDIAN} 次。",
-                f"Research finds a new word takes about 10 encounters to stick. Of the {CORE} core words, {CORE_10PLUS} appear 10 or more times across the 36 books; the typical word appears {CORE_MEDIAN} times."),
-              '<a href="https://eric.ed.gov/?id=EJ757328" target="_blank" rel="noopener">Webb (2007), <i>Applied Linguistics</i></a>'),
-             ("#CE82FF", f"{INSTR_READ}/{INSTR_ALL}", Z("個考卷常見指令字，故事裡都讀過", "common worksheet and exam instruction words read in the stories"),
-              Z("read、look、listen、write、circle、choose、answer、find、draw、correct……學校考卷和練習本上的指令字，孩子在故事裡先讀懂了，考試時不會卡在看不懂題目。",
-                "read, look, listen, write, circle, choose, answer, find, draw, correct… the instruction words on school tests and workbooks are read in the stories first, so a test question isn't lost on the instructions."),
-              Z("我們用 36 本書的全文逐字比對", "counted word by word against the full text of the 36 books"))]
-    sc = "".join(f'<div class="bp-stat" style="--c:{c}"><span class="big">{big}</span><b>{t}</b><p>{p}</p><span class="src">{Z("來源：", "source: ")}{src}</span></div>'
-                 for c, big, t, p, src in stats)
-    signs = "".join(f'<span lang="en">{w.strip().upper()}</span>' for w in SIGN_WORDS.split("·"))
+    # why this series (Chris 11-10: simple; every number measured or sourced)
+    why4 = [("var(--blue)", n(cum[-1]), Z("跟學校同一份字表", "the school's word list"),
+             Z("除了角色名字，每個字都來自教育部 1,200 字表，跟學校課本同一份。", "Apart from the characters' names, every word is from the MOE 1,200 list, the same list as school textbooks.")),
+            ("#06C755", "⅔", Z("英文書裡三分之二的字", "two-thirds of the words in English books"),
+             Z(f"英文書裡約三分之二是最常用的 300 個字，這套書讀過其中 {round(FRY_READ / FRY_LIST * 100)}%。", f"About two-thirds of English reading is the 300 most-used words; the series reads {round(FRY_READ / FRY_LIST * 100)}% of them.")),
+            ("#e0a800", "10+", Z("核心字讀 10 次以上", "core words read 10+ times"),
+             Z(f"研究說新字要碰到約 10 次才記得住；{CORE} 個核心字有 {CORE_10PLUS} 個讀到 10 次以上。", f"Research says a new word takes about 10 encounters to stick; {CORE_10PLUS} of the {CORE} core words are read 10+ times.")),
+            ("#CE82FF", Z("3 歲", "age 3"), Z("3 歲起親子共讀", "read together from age 3"),
+             Z("研究發現 2、3 歲就開始陪讀，字彙進步最明顯。", "Research finds reading together from age 2–3 grows vocabulary the most."))]
+    sc = "".join(f'<div class="bp-stat" style="--c:{c}"><span class="big">{big}</span><b>{t}</b><p>{p}</p></div>' for c, big, t, p in why4)
+    src = " · ".join(['<a href="https://eric.ed.gov/?id=ED169516" target="_blank" rel="noopener">Fry (1980)</a>',
+                      '<a href="https://eric.ed.gov/?id=EJ757328" target="_blank" rel="noopener">Webb (2007)</a>',
+                      '<a href="https://eric.ed.gov/?id=EJ787378" target="_blank" rel="noopener">Mol et al. (2008)</a>',
+                      '<a href="https://www.naer.edu.tw/PageCourse/projectDetail/RP000000001141" target="_blank" rel="noopener">NAER</a>'])
     out.append(f"""<section class="section">
   <div class="wrap">
-    {h2(Z("讀完 36 本", "after the 36 books"), "讀完這套書孩子讀得懂什麼", Z("讀完這套書，<em>孩子讀得懂什麼</em>", "what your child can read after the series"), "green")}
-    <p class="body center" style="max-width:64ch;margin:14px auto 0">{Z("英文裡最常出現的那一小群字，撐起了大部分的句子。這套書就是把這群字一本一本、一遍又一遍地讀熟：讀故事、看考卷題目、看街上的標示，都用得到。",
-        "A small group of the most frequent words carries most English sentences. This series reads that group in, book by book, again and again: for stories, for test questions, for the signs on the street.")}</p>
+    {h2(Z("為什麼選這套", "why this series"), "為什麼選這套", Z("為什麼選<em>這一套</em>", "why this series"), "green")}
     <div class="bp-stats reveal">{sc}</div>
-    <p class="body center" style="margin:26px auto 0;font-size:14.5px">{Z("街上和學校常見的標示字，故事裡也都讀得到：", "Common sign words from the street and school are read in the stories too:")}</p>
-    <div class="bp-signs reveal" aria-label="sign words">{signs}</div>
-  </div>
-</section>
-""")
-
-    # same word list as school
-    out.append(f"""<section class="section bg-soft">
-  <div class="wrap">
-    {h2(Z("跟學校同一份字表", "the school's own word list"), "跟孩子學校用同一份字表", Z("跟孩子的學校，<em>用同一份字表</em>", "the same word list as your child's school"), "yellow")}
-    <div class="bp-school reveal">
-      <ul>
-        <li>{Z("<b>每一個字都來自教育部《國中小基本 1,200 字》</b>（角色名字除外）。台灣國小、國中的英文課本，都是照這份字表編的。", "<b>Every word comes from the MOE basic 1,200-word list</b> (apart from the characters' names). Taiwan's elementary and junior-high English textbooks are written to this list.")}</li>
-        <li>{Z(f"<b>{CORE} 個核心字，正好是課綱國小階段的目標字數</b>：課綱要孩子國小畢業前能聽、說、讀 300 個字。", f"<b>{CORE} core words, exactly the curriculum's elementary target</b>: the curriculum expects 300 words for listening, speaking and reading by the end of elementary school.")}</li>
-        <li>{Z(f"<b>讀完 12 級，教育部字表裡的 {n(cum[-1])} 個字都在故事裡讀過</b>，國中會考要的字，大部分已經先認識。", f"<b>By the end of Level 12, {n(cum[-1])} words on the MOE list have been read in the stories</b>, most of what the junior-high exam expects.")}</li>
-        <li>{Z("<b>故事發生在台灣</b>：家裡、學校、公園、夜市、捷運。孩子讀到的是自己的生活，不是外國的。", "<b>The stories happen in Taiwan</b>: home, school, the park, the night market, the MRT. Children read about their own lives, not someone else's.")}</li>
-      </ul>
-      <div class="bp-big"><span class="big">1</span><p>{Z("我們找遍了市面上的英文分級讀本，找不到第二套是照教育部字表一個字一個字編寫、故事又發生在台灣的。（2026 年 11 月查）",
-            "We looked through the English graded readers on the market and could not find a second series written word by word to the MOE list with stories set in Taiwan. (checked November 2026)")}</p></div>
-    </div>
-    <p class="bp-fine center" style="margin-top:14px">{Z("課綱字數：國家教育研究院 108 課綱英語文研究計畫。", "Curriculum word counts: NAER research projects on the 108 English curriculum.")} <a href="https://www.naer.edu.tw/PageCourse/projectDetail/RP000000001141" target="_blank" rel="noopener">NAER</a></p>
+    <p class="body center" style="max-width:62ch;margin:22px auto 0;font-weight:700;color:var(--navy)">{Z("我們找不到第二套照教育部字表編、故事又在台灣的英文分級讀本。（2026 年 11 月查）", "We could not find a second English graded reader series written to the MOE list with stories set in Taiwan. (checked November 2026)")}</p>
+    <p class="bp-fine center" style="margin-top:8px">{Z("來源：", "sources: ")}{src}</p>
   </div>
 </section>
 """)
@@ -393,20 +342,12 @@ def readers_page():
     figs = "".join(f'<figure><img src="/assets/img/readers/spreads/{f}.webp" alt="{esc(books[c]["title"])} 內頁：左頁文字、右頁插圖" '
                    f'width="1200" height="851" loading="lazy" decoding="async"><figcaption><b>{cap}</b>{esc(books[c]["title"])}'
                    f'{Z("，全書", ", whole book ")} {n(books[c]["words"])} {Z("字", "words")}</figcaption></figure>' for f, c, cap in spreads)
-    inside = [(Z("邊聽邊讀", "read along"), Z("翻頁電子書按「聽故事」，唸到哪個字、哪個字就亮起來，唸完自動翻頁；速度可以選 0.5、0.75、1 或 1.25 倍，放慢了聲音一樣清楚；在電腦上下載後不用網路。", "in the flip book, press 'listen to the story': each word lights up as it is read and the page turns; the speed can be 0.5x, 0.75x, 1x or 1.25x, and the voice stays just as clear when slowed down; on a computer it works offline after download.")),
-              (Z("新字頁", "new-words page"), Z("書前一頁列出這一級的新字和圖畫字，先看一遍再讀故事。", "a page at the front lists the level's new words and picture words; look at it before the story.")),
-              (Z("每頁標出新字", "new words marked on each page"), Z("新字第一次出現的那一頁，頁底會標出來。", "the page where a new word first appears names it at the bottom.")),
-              (Z("讀完問問看", "questions after reading"), Z("書後有幾個關於故事的問題，用來聊，不是考試。", "questions about the story at the back, for talking, not testing.")),
-              (Z("字彙總覽＋學過的字", "word summary + words we know"), Z("每個字第一次出現在第幾頁，還有到這本為止學過的字。", "the page each word first appears on, and every word learned so far.")),
-              (Z("閱讀紀錄", "reading log"), Z("讀一次寫一次日期，同一本讀到順。", "write a date each time it is read; read the same book until it is smooth."))]
-    cards = "".join(f'<div class="bp-card"><b>{t}</b><p>{d}</p></div>' for t, d in inside)
     out.append(f"""<section class="section">
   <div class="wrap">
     {h2(Z("內頁", "inside"), "一本書長什麼樣", Z("一本書，<em>長什麼樣</em>", "what a book looks like"))}
-    <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("下面是實際的內頁，直接從書裡截下來。左右滑動看第 1、4、8、12 級：字一級一級變多，版面不變。", "These are real pages taken straight from the books. Swipe to see Levels 1, 4, 8 and 12: more words each level, same layout.")}</p>
+    <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("真正的內頁：左頁英文，右頁整頁插圖。", "Real pages: English on the left, a full-page picture on the right.")}</p>
     <div class="bp-scroll reveal">{figs}</div>
     <p class="bp-hint">{Z("← 左右滑動 →", "← swipe →")}</p>
-    <div class="bp-grid reveal">{cards}</div>
   </div>
 </section>
 """)
@@ -425,8 +366,7 @@ def readers_page():
     out.append(f"""<section class="section bg-soft">
   <div class="wrap">
     {h2(Z("從哪裡開始", "where to start"), "孩子在哪個階段", Z("孩子在<em>哪個階段</em>？", "which stage is your child at?"), "green")}
-    <p class="body center" style="max-width:64ch;margin:14px auto 0">{Z("看程度，不看年齡。最快的方法：讓孩子大聲讀下面的句子。一頁裡不會的字不超過兩個（<a href='/graded-readers-guide/'>五指法則</a>），就從那個階段開始；不確定就先免費讀第一本。",
-        "Go by level, not age. The quickest way: have the child read the sentence below aloud. If a page has no more than two unknown words (the five-finger rule), start at that stage; if unsure, read the first book free first.")}</p>
+    <p class="body center" style="max-width:64ch;margin:14px auto 0">{Z("讓孩子讀讀看下面的句子，讀得出來就從那裡開始。", "Have your child read the sentence below; start where they can read it.")}</p>
     <div class="bp-grid reveal">{stc}</div>
   </div>
 </section>
@@ -449,51 +389,8 @@ def readers_page():
     out.append(f"""<section class="section">
   <div class="wrap" style="max-width:980px">
     {h2(Z("12 級一覽", "all 12 levels"), "12-級36-本一覽", Z("12 級 36 本，<em>一覽</em>", "the 12 levels and 36 books"))}
-    <p class="body center" style="max-width:64ch;margin:14px auto 0">{Z("點開每一級，看內頁、每本書後的問題，和這一級新讀到的字。每一級的 3 本用同一批字：第一本先教，後兩本換個故事再讀。", "Open a level to see a page, the questions at the back of each book and the words it adds. The 3 books of a level share the same words: the first teaches them, the other two use them in new stories.")}</p>
+    <p class="body center" style="max-width:64ch;margin:14px auto 0">{Z("點開每一級，看內頁和書名。", "Open a level to see a page and the titles.")}</p>
     <div class="reveal" style="margin-top:20px">{"".join(rows)}</div>
-  </div>
-</section>
-""")
-
-    # why it is built this way
-    why = [(f"{n(cum[-1])}", Z("個教育部字讀得到", "MOE words you meet in the stories"),
-            Z(f"教育部 1,200 字表共 {n(R['official_entries'])} 條，36 本故事用到其中 {n(cum[-1])} 條。另外 {R['excluded_on_purpose']} 個（例如 kill、die、hate）不適合放進童書，我們故意不用。",
-              f"The MOE 1,200 list has {n(R['official_entries'])} entries; the 36 stories use {n(cum[-1])} of them. The other {R['excluded_on_purpose']} (kill, die, hate and the like) don't belong in children's books, so we left them out on purpose.")),
-           ("3+", Z("新字一出現就重複", "each new word repeats at once"),
-            Z("新字出現的那本書裡至少再出現三次，後面的書繼續用。孩子不是背字，是讀到記住。", "A new word appears at least three times in the book that brings it, and later books keep using it. Children don't drill words; they read them until they stick.")),
-           ("TW", Z("故事在台灣", "the stories happen in Taiwan"),
-            Z("家裡、陽台、巷口、學校、公園、菜市場、夜市、捷運、動物園、海邊、農場和山上露營：孩子認得的地方，讀起來就不陌生。", "home, the balcony, the lane, school, the park, the market, the night market, the MRT, the zoo, the beach, a farm and a mountain camp: places children know.")),
-           ("36", Z("本都是原創", "all 36 are original"),
-            Z("故事和插圖都是為這套書做的，不是翻譯書，也不是改寫別人的故事。", "stories and pictures were made for this series; not translations, not retellings."))]
-    wc = "".join(f'<div class="bp-card"><span class="bp-num">{a}</span><b>{b}</b><p>{c}</p></div>' for a, b, c in why)
-    out.append(f"""<section class="section bg-soft">
-  <div class="wrap">
-    {h2(Z("怎麼編的", "how it is built"), "為什麼這樣編", Z("為什麼<em>這樣編</em>", "why it is built this way"), "yellow")}
-    <div class="bp-grid reveal">{wc}</div>
-  </div>
-</section>
-""")
-
-    # what the research says (sources opened 2026-11-10; see memory)
-    research = [(Z("一個新字，要碰到大約 10 次才記得住。", "A new word takes about 10 encounters to stick."),
-                 Z("學生讀到新字 1、3、7、10 次，碰到 10 次的那組記得最多。所以這套書讓每個核心字在不同故事裡一再出現。", "Learners met new words 1, 3, 7 or 10 times; those met 10 times remembered the most. That is why every core word comes back in story after story here."),
-                 '<a href="https://eric.ed.gov/?id=EJ757328" target="_blank" rel="noopener">Webb, S. (2007). <i>Applied Linguistics</i>, 28(1), 46–65.</a>'),
-                (Z("碰到不到 8 次的字，三個月後一個都沒記住。", "Words met fewer than 8 times: none remembered three months later."),
-                 Z("用分級讀本學英文的研究發現，只讀到一兩次的字很快就忘了。重複讀，比讀很多不同的書更重要。", "A graded-reader study found words seen only once or twice are soon forgotten. Rereading matters more than reading many different books."),
-                 '<a href="https://www.wgtn.ac.nz/__data/assets/pdf_file/0008/1626146/Waring-Takaki-2003.pdf" target="_blank" rel="noopener">Waring, R. &amp; Takaki, M. (2003). <i>Reading in a Foreign Language</i>, 15(2).</a>'),
-                (Z("2、3 歲就開始陪讀，字彙進步最明顯。", "Reading together from age 2–3 grows vocabulary the most."),
-                 Z("整合多篇研究的分析發現，大人邊讀邊問孩子問題的「對話式共讀」能明顯增加孩子會說的字，年紀越小效果越大。", "An analysis combining many studies found dialogic reading, where the adult asks questions while reading, clearly grows the words a child can say, and the younger the child the bigger the effect."),
-                 '<a href="https://eric.ed.gov/?id=EJ787378" target="_blank" rel="noopener">Mol, Bus, de Jong &amp; Smeets (2008). <i>Early Education and Development</i>, 19(1).</a>'),
-                (Z("最常用的 300 個字，就是英文閱讀的三分之二。", "The 300 most-used words are two-thirds of English reading."),
-                 Z("Fry 統計學校讀物，前 100 個字占了一半，前 300 個字約占 65%。先把這群字讀熟，後面的書就讀得動。", "Fry counted school reading materials: the first 100 words are half, the first 300 about 65%. Read this group well first and later books become readable."),
-                 '<a href="https://eric.ed.gov/?id=ED169516" target="_blank" rel="noopener">Sakiey, E. &amp; Fry, E. (1979). <i>3000 Instant Words</i>; Fry (1980), <i>The Reading Teacher</i>.</a>')]
-    rc = "".join(f'<figure><blockquote>{q}</blockquote><p>{t}</p><figcaption>{src}</figcaption></figure>' for q, t, src in research)
-    out.append(f"""<section class="section bg-soft">
-  <div class="wrap">
-    {h2(Z("研究怎麼說", "what research says"), "研究怎麼說", Z("這樣編，<em>是有研究根據的</em>", "built the way the research points"), "yellow")}
-    <div class="bp-research reveal">{rc}</div>
-    <p class="body center" style="max-width:66ch;margin:18px auto 0;font-size:14px">{Z("研究支持的是「大人陪著讀」：3 歲的孩子先聽、先看、跟著指著讀，自己讀要等認得字母和一點自然發音之後。",
-        "What research supports is reading together: a 3-year-old listens, looks and follows the adult's finger; reading alone comes after the letters and some phonics.")}</p>
   </div>
 </section>
 """)
@@ -507,8 +404,6 @@ def readers_page():
   <div class="wrap">
     {h2(Z("3 歲起親子共讀", "reading together from age 3"), "陪孩子讀不需要英文很好", Z("陪孩子讀，<em>不需要英文很好</em>", "you don't need good English to read with your child"))}
     <ol class="bp-steps reveal">{"".join(f"<li>{s}</li>" for s in steps)}</ol>
-    <p class="body center" style="max-width:66ch;margin:6px auto 0;font-size:14.5px">{Z("建議印出來一起讀：<a href='https://oro.open.ac.uk/75652' target='_blank' rel='noopener'>2021 年一份整合 39 篇研究的分析</a>發現，大人陪讀紙本，孩子對故事的理解比自己看電子書好。翻頁電子書適合在路上、或孩子自己再讀一遍。",
-        "We suggest printing and reading together: a 2021 analysis of 39 studies found children understand a story better when an adult reads a paper book with them than when they read an e-book alone. The flip book suits reading on the go, or a child's own re-read.")}</p>
   </div>
 </section>
 """)
@@ -548,12 +443,8 @@ def readers_page():
           (Z("有音檔嗎？", "Is there audio?"),
            Z("有。36 本的翻頁電子書都可以按「聽故事」：唸到哪個字、哪個字就亮起來，唸完自動翻頁（目前是 AI 語音）。速度可以選 0.5、0.75、1 或 1.25 倍，每一種速度都是事先做好的錄音，放慢了聲音一樣清楚。在電腦上下載後，不用網路也能聽。PDF 檔本身沒有聲音。",
              "Yes. All 36 flip books have 'listen to the story': each word lights up as it is read and the page turns by itself (an AI voice for now). The speed can be 0.5x, 0.75x, 1x or 1.25x; each speed is a recording made ahead of time, so the voice stays just as clear when slowed down. On a computer it works offline after download. The PDF files themselves have no sound.")),
-          (Z("和學校課本有什麼關係？", "How does it relate to the school textbook?"),
-           Z("字彙依教育部 1,200 字表排序，所以學校會教的字在故事裡都讀得到；但這套書不照課本的課次走，是課外閱讀。", "The vocabulary follows the MOE 1,200 list, so the words school teaches all appear in the stories; it doesn't follow the textbook's lessons — it is reading outside class.")),
           (Z("可以印出來嗎？", "Can I print it?"),
            Z("可以，家裡自己用都沒問題。PDF 是 A5 大小（一般 A4 對折的大小），印在 A4 紙上選「符合頁面」就行。", "Yes, for your own family. The PDF is A5 (half of A4); print on A4 with 'fit to page'.")),
-          (Z("可以在班上或補習班用嗎？", "Can I use it in a class or cram school?"),
-           Z("購買是給家庭自用。想在課堂上使用或多人授權，先在 LINE 跟我們說一聲，我們另外談。", "A purchase is for family use. For classroom use or several users, message us on LINE first.")),
           (Z("怎麼付款、多久拿到？", "How do I pay, and when do I get it?"),
            Z("在這一頁按購買，用信用卡付款（不會跳到別的網站，也不用註冊）。付款完成，下載連結會立刻寄到你填的 email。", "Click buy on this page and pay by card (you stay on this page; no account). When payment goes through, the download link goes straight to the email you entered.")),
           (Z("翻頁電子書在手機上能看嗎？", "Does the flip book work on a phone?"),
@@ -726,8 +617,8 @@ def grammar_page():
         <span class="eyebrow eyebrow-yellow reveal">{Z("埃森美語原創 · 國小到高中 16 冊", "our own series · 16 books, elementary to senior high")}</span>
         <h1 class="reveal d1">{Z("英文文法書＋<em>文法速查表</em>", "grammar books + cheat sheets")}</h1>
         <div class="divider reveal d1"></div>
-        <p class="body reveal d2">{Z("國中、高中每學期一本，國小每年級一本。每本 36–38 頁：一個文法重點一頁，規則表、圖解、例句和練習放在同一頁；每個單元再加一頁綜合練習和一頁寫作應用，最後有測驗和完整解答：國中每冊是三次段考模擬測驗（每次兩頁、100 分）和段考範圍表，國小是複習測驗、上學期測驗和學年測驗，高中是複習測驗和兩回完整測驗。每一本都附同一冊的文法速查表。",
-            "One book per semester for junior and senior high, one per grade for elementary. 36–38 pages each: one page per grammar point with the rule table, pictures, examples and exercises together; each unit adds a practice page and a grammar-for-writing page; then tests and a complete answer key: in junior high, three school-exam practice tests (two pages, 100 points each) and an exam-range page; in elementary, review tests, a first-semester test and an end-of-year test; in senior high, review tests and two full tests. Each book comes with that semester's cheat sheet.")}</p>
+        <p class="body reveal d2">{Z("國小每年級一本，國中、高中每學期一本。每本都附文法速查表和完整解答。",
+            "One book per grade in elementary, one per semester in junior and senior high. Every book comes with a cheat sheet and a full answer key.")}</p>
         <div class="bp-cta reveal d2"><a class="btn btn-primary" href="#free">{Z("免費下載第 1 頁", "free page 1")}</a>
           <a class="btn btn-outline" href="#buy">{Z("看價格", "see prices")}</a></div>
         <div class="bp-facts reveal d2"><span>{Z("每學期一本", "one per semester")}</span><span>{Z("附解答", "answers included")}</span><span>{Z("可以列印", "printable")}</span><span>{Z("每冊附速查表", "cheat sheet with every book")}</span></div>
@@ -739,12 +630,12 @@ def grammar_page():
 """)
     # the three stages
     info = {"elementary": (Z("國小 句型書 4 冊", "elementary: 4 sentence-pattern books"), Z("三～六年級，每年級一冊", "Grades 3–6, one per grade"),
-                           Z("國小課綱不教文法規則，所以這 4 冊是「句型」：一個句型一頁，有對話、換換看、四線格描寫和練習，不講文法術語。每冊 12 個句型，附句型速查卡。",
-                             "The elementary curriculum does not teach grammar rules, so these are sentence-pattern books: one pattern a page with a dialogue, a swap box, four-line handwriting and exercises, no grammar terms. 12 patterns a book, with pattern cards.")),
+                           Z("不講文法規則，一頁一個句型，附句型速查卡。",
+                             "No grammar rules: one sentence pattern a page, with pattern cards.")),
             "junior": (Z("國中 文法書 6 冊", "junior high: 6 grammar books"), Z("國一上～國三下，每學期一冊", "Grade 7 to Grade 9, one per semester"),
-                       Z("每冊 11–12 個重點，對照康軒、翰林、南一每一課教的文法（附課本對照表）。國三下的那一冊是會考總複習。", "11–12 points a book, mapped to the grammar each lesson of 康軒, 翰林 and 南一 teaches (lesson map included). The Grade 9 second-semester book is the 會考 review.")),
+                       Z("對照康軒、翰林、南一，照學校三次段考出測驗。", "Mapped to 康軒, 翰林 and 南一, with tests for the school's three exams.")),
             "senior": (Z("高中 文法書 6 冊", "senior high: 6 grammar books"), Z("高一上～高三上＋學測總複習", "Grade 10 to Grade 12 first semester + a 學測 review"),
-                       Z("依文法主題編排，適用龍騰、三民、遠東（各版每課的文法不同，所以不列課次）。題型有中譯英和學測綜合測驗。最後一冊是學測文法總複習。", "Arranged by grammar topic for 龍騰, 三民 and 遠東 (each edition puts grammar in different lessons, so there are no lesson numbers). Exercises include Chinese-to-English translation and 學測-style cloze. The last book is the 學測 grammar review."))}
+                       Z("適用龍騰、三民、遠東，最後一冊是學測總複習。", "Fits 龍騰, 三民 and 遠東; the last book is the 學測 review."))}
     cards = []
     for key, codes in STAGES:
         name, who, what = info[key]
@@ -768,19 +659,12 @@ def grammar_page():
              ("cheatsheet-page1", Z("文法速查表第 1 頁", "cheat sheet page 1"), Z("整學期的重點一頁看完，這一頁免費", "the whole semester on one page; this page is free"))]
     figs = "".join(f'<figure><img src="/assets/img/grammar-books/pages/{f}.webp" alt="{esc(strip(t))}" width="778" height="1100" loading="lazy" decoding="async">'
                    f'<figcaption><b>{t}</b>{d}</figcaption></figure>' for f, t, d in pages)
-    parts = [(Z("一個重點一頁", "one point a page"), Z("規則表、圖、例句、小提醒和兩組練習在同一頁，看完馬上做。", "rule table, pictures, examples, a tip and two exercises on one page: read it, then do it.")),
-             (Z("每單元兩頁應用", "two pages per unit"), Z("一頁綜合練習、一頁寫作應用，把同一單元的文法混在一起用。", "a practice page and a grammar-for-writing page that mix the unit's grammar.")),
-             (Z("複習與測驗", "reviews and tests"), Z("國中照學校的三次段考：讀完兩個單元做一份段考模擬測驗（兩頁、100 分），段考範圍表告訴你康軒、翰林、南一每次段考要讀哪幾頁。國小、高中是每兩個單元一回複習測驗，加兩回 100 分測驗。",
-   "Junior high follows the school's three exams: after every two units, a two-page, 100-point practice test, and an exam-range page shows which pages to study for 康軒, 翰林 or 南一 before each exam. Elementary and senior high: a review test every two units plus two 100-point tests.")),
-             (Z("完整解答", "full answer key"), Z("所有題目都有答案；有兩種寫法都對的題目，兩種都列出來。", "every item is answered; where two answers are right, both are given."))]
-    pc = "".join(f'<div class="bp-card"><b>{t}</b><p>{d}</p></div>' for t, d in parts)
     out.append(f"""<section class="section bg-soft">
   <div class="wrap">
     {h2(Z("內頁", "inside"), "一本裡面有什麼", Z("一本裡面，<em>有什麼</em>", "what is inside a book"), "green")}
-    <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("下面是實際的內頁，直接從書裡截下來。左右滑動看。", "Real pages taken straight from the books. Swipe to see them.")}</p>
+    <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("真正的內頁，左右滑動看。", "Real pages; swipe to see them.")}</p>
     <div class="bp-scroll tall reveal">{figs}</div>
     <p class="bp-hint">{Z("← 左右滑動 →", "← swipe →")}</p>
-    <div class="bp-grid reveal">{pc}</div>
   </div>
 </section>
 """)
@@ -812,7 +696,7 @@ def grammar_page():
     out.append(f"""<section class="section bg-soft" id="free">
   <div class="wrap" style="max-width:860px">
     {h2(Z("免費", "free"), "第-1-頁免費下載", Z("每一冊的第 1 頁，<em>免費下載</em>", "page 1 of every book, free"), "green")}
-    <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("第 1 頁就是整學期的文法重點，一頁看完：每個重點的名稱、句型和一個例句。不用留資料，直接下載、歡迎分享。", "Page 1 is the whole semester's grammar on one page: each point's name, pattern and an example. No sign-up; download it and share it.")}</p>
+    <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("第 1 頁是整學期的重點，一頁看完。不用留資料。", "Page 1 is the whole semester on one page. No sign-up.")}</p>
     <div class="reveal">{"".join(fl)}</div>
   </div>
 </section>
@@ -832,7 +716,6 @@ def grammar_page():
     out.append(f"""<section class="section" id="buy">
   <div class="wrap">
     {h2(Z("價格", "prices"), "一個學程一次買齊", Z("一個學程，<em>一次買齊</em>", "a whole stage in one purchase"), "yellow")}
-    <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("文法書以學程為單位賣：一次拿到整個學程的每一冊，每冊都附速查表。只需要考前複習的話，可以只買速查表。", "Grammar books are sold by stage: every book of the stage at once, each with its cheat sheet. For exam review only, buy just the cheat sheets.")}</p>
     {soon(any_link)}<div class="bp-trust reveal">{trust}</div>
     <div class="bp-tiers reveal">{"".join(tiers)}</div>
     <p class="bp-fine">{Z("家庭自用，可以自己印。學校或補習班要全班用，請先 <a href='" + LINE + "' target='_blank' rel='noopener'>LINE 問我們</a>。", "For family use; print it yourself. For a whole class, ask us on LINE first.")}<br>
@@ -846,8 +729,6 @@ def grammar_page():
              "Junior high fits all three editions: each book's map shows which lesson of 康軒, 翰林 and 南一 teaches each point, and the exam-range page shows which pages to study before each exam. Senior high fits 龍騰, 三民 and 遠東, but each edition places grammar differently, so the books go by topic with no lesson numbers. Elementary follows the MOE basic learning content. Not sure which edition your child's school uses? See the Banqiao school English curriculum maps.")),
           (Z("國小為什麼不講文法？", "Why no grammar rules for elementary?"),
            Z("國小英語課綱要求避免講解、分析文法，所以國小這 4 冊用「句型」：孩子先會說、會寫整句，國中再學規則。", "The elementary curriculum asks teachers to avoid explaining and analysing grammar, so these 4 books teach sentence patterns: children say and write whole sentences first and learn the rules in junior high.")),
-          (Z("有解答嗎？", "Is there an answer key?"),
-           Z("每一冊和每一份速查表最後都有完整解答。", "Every book and every cheat sheet ends with a full answer key.")),
           (Z("可以只買一冊嗎？", "Can I buy a single book?"),
            Z("目前以學程為單位賣（國小 4 冊、國中 6 冊、高中 6 冊），一套 NT$590；每一冊的第 1 頁可以先免費下載看看。", "For now they are sold by stage (4 elementary, 6 junior-high, 6 senior-high), NT$590 a set; page 1 of every book is free to try first.")),
           (Z("速查表和文法書差在哪？", "How is the cheat sheet different from the book?"),
