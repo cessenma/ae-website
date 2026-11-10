@@ -29,6 +29,7 @@ says where it came from and that the school's own notice wins; schools that are 
 are never called near (distances are straight-line km, never walking minutes).
 """
 import datetime as dt, html, json, os, re
+import school_map
 
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ORIGIN = "https://americanenglish.com.tw"
@@ -267,6 +268,17 @@ def map_svg(link_jh=True, w=680, h=520):
     return "".join(out)
 
 
+def street_map():
+    """The street map (tools/school_map.py): every school with its editions this term and a link."""
+    pts = []
+    for s in SCHOOLS:
+        jh = s["level"] == "國中"
+        eds = [(g, pub_of(gd) or "") for g, gd in sorted(s["grades"].items(), key=lambda x: int(x[0]))]
+        pts.append(dict(name=s["name"], level=s["level"], lat=s["lat"], lon=s["lon"], km=s["km"], eds=eds,
+                        href=f'/{HUB}/{s["slug"]}/' if jh else f'/{HUB}/elementary/#{s["name"]}'))
+    return "<style>" + school_map.CSS.strip() + "</style>" + school_map.render(pts, D["ae"], Z, esc)
+
+
 # ---------------------------------------------------------------- shared page parts
 
 CSS = """
@@ -497,8 +509,8 @@ def hub_page():
 </div></section>
 <section class="section"><div class="container">
   {h2(Z("地圖", "map"), "地圖", Z("學校在哪裡", "where the schools are"))}
-  <div class="sc-box reveal">{map_svg()}</div>
-  <p class="sc-src">{Z("位置依地址換算，圓圈是直線距離，不是步行時間。點國中可以看那所學校的英文課程地圖。", "Positions come from addresses; the rings are straight-line distance, not walking time. Tap a junior high to open its page.")}</p>
+  {street_map()}
+  <p class="sc-src">{Z("位置依地址換算，圓圈是直線距離，不是步行時間。點學校看這學期的英文版本。", "Positions come from addresses; the rings are straight-line distance, not walking time. Tap a school to see this term's English editions.")}</p>
 </div></section>
 <section class="section section-light"><div class="container">
   {h2(Z("國中", "junior high"), "國中版本", Z("國中：每個年級用哪個版本", "junior high: the edition in each grade"), "green")}
