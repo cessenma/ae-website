@@ -137,6 +137,15 @@ CSS = """
 .bp-stat .big{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:46px;line-height:1;color:var(--c,var(--blue));display:block;margin:6px 0 10px}
 .bp-stat b{display:block;font-family:'Baloo 2',sans-serif;font-size:17.5px;color:var(--navy);margin-bottom:6px;line-height:1.35}
 .bp-stat p{margin:0;font-size:14.5px;line-height:1.8;color:var(--text-body)}
+.bp-stat .big span{display:inline-block;font-variant-numeric:tabular-nums}
+.bp-anim .bp-stat{opacity:0;transform:translateY(28px) scale(.97)}
+.bp-anim .bp-stat.go{opacity:1;transform:none;transition:opacity .6s ease,transform .7s cubic-bezier(.2,.9,.25,1)}
+.bp-anim .bp-stat::before{transform:scaleX(0);transform-origin:left}
+.bp-anim .bp-stat.go::before{transform:scaleX(1);transition:transform 1s cubic-bezier(.3,.8,.3,1) .35s}
+.bp-anim .pop{opacity:0;transform:scale(.3) rotate(-14deg)}
+.bp-anim .go .pop{opacity:1;transform:none;transition:opacity .4s ease .45s,transform .8s cubic-bezier(.3,1.7,.5,1) .45s}
+@media (min-width:761px){.bp-anim .bp-stat.go:nth-child(2){transition-delay:.15s}.bp-anim .bp-stat.go:nth-child(3){transition-delay:.3s}.bp-anim .bp-stat.go:nth-child(4){transition-delay:.45s}}
+@media (prefers-reduced-motion:reduce){.bp-anim .bp-stat,.bp-anim .bp-stat::before,.bp-anim .pop{opacity:1!important;transform:none!important;transition:none!important}}
 @media (max-width:760px){.bp-stat .big{font-size:40px}}
 .bp-stage .bp-tag{align-self:flex-start;font-size:12.5px;font-weight:800;border-radius:999px;padding:3px 11px;margin-bottom:10px;background:#E8F7FF;color:#066d9e}
 .bp-stage blockquote{margin:12px 0;padding:12px 14px;border-left:4px solid var(--yellow);background:#FFFBEF;border-radius:0 12px 12px 0;font-family:'Andika','Baloo 2',sans-serif;font-size:16px;line-height:1.6;color:var(--navy)}
@@ -311,13 +320,13 @@ def readers_page():
 """)
 
     # why this series (Chris 11-10: simple; every number measured or sourced)
-    why4 = [("var(--blue)", n(cum[-1]), Z("跟學校同一份字表", "the school's word list"),
+    why4 = [("var(--blue)", f'<span data-to="{cum[-1]}">{n(cum[-1])}</span>', Z("跟學校同一份字表", "the school's word list"),
              Z("除了角色名字，每個字都來自教育部 1,200 字表，跟學校課本同一份。", "Apart from the characters' names, every word is from the MOE 1,200 list, the same list as school textbooks.")),
-            ("#06C755", "⅔", Z("英文書裡三分之二的字", "two-thirds of the words in English books"),
+            ("#06C755", '<span class="pop">⅔</span>', Z("英文書裡三分之二的字", "two-thirds of the words in English books"),
              Z(f"英文書裡約三分之二是最常用的 300 個字，這套書讀過其中 {round(FRY_READ / FRY_LIST * 100)}%。", f"About two-thirds of English reading is the 300 most-used words; the series reads {round(FRY_READ / FRY_LIST * 100)}% of them.")),
-            ("#e0a800", "10+", Z("核心字讀 10 次以上", "core words read 10+ times"),
+            ("#e0a800", '<span data-to="10" data-suf="+">10+</span>', Z("核心字讀 10 次以上", "core words read 10+ times"),
              Z(f"研究說新字要碰到約 10 次才記得住；{CORE} 個核心字有 {CORE_10PLUS} 個讀到 10 次以上。", f"Research says a new word takes about 10 encounters to stick; {CORE_10PLUS} of the {CORE} core words are read 10+ times.")),
-            ("#CE82FF", Z("3 歲", "age 3"), Z("3 歲起親子共讀", "read together from age 3"),
+            ("#CE82FF", '<span class="pop">' + Z("3 歲", "age 3") + "</span>", Z("3 歲起親子共讀", "read together from age 3"),
              Z("研究發現 2、3 歲就開始陪讀，字彙進步最明顯。", "Research finds reading together from age 2–3 grows vocabulary the most."))]
     sc = "".join(f'<div class="bp-stat" style="--c:{c}"><span class="big">{big}</span><b>{t}</b><p>{p}</p></div>' for c, big, t, p in why4)
     src = " · ".join(['<a href="https://eric.ed.gov/?id=ED169516" target="_blank" rel="noopener">Fry (1980)</a>',
@@ -327,11 +336,17 @@ def readers_page():
     out.append(f"""<section class="section">
   <div class="wrap">
     {h2(Z("為什麼選這套", "why this series"), "為什麼選這套", Z("為什麼選<em>這一套</em>", "why this series"), "green")}
-    <div class="bp-stats reveal">{sc}</div>
+    <div class="bp-stats" id="why-stats">{sc}</div>
     <p class="body center" style="max-width:62ch;margin:22px auto 0;font-weight:700;color:var(--navy)">{Z("我們找不到第二套照教育部字表編、故事又在台灣的英文分級讀本。（2026 年 11 月查）", "We could not find a second English graded reader series written to the MOE list with stories set in Taiwan. (checked November 2026)")}</p>
     <p class="bp-fine center" style="margin-top:8px">{Z("來源：", "sources: ")}{src}</p>
   </div>
 </section>
+<script>(()=>{{const s=document.getElementById("why-stats");if(!s||!("IntersectionObserver" in window))return;
+const still=matchMedia("(prefers-reduced-motion: reduce)").matches;s.classList.add("bp-anim");
+const io=new IntersectionObserver(es=>es.forEach(e=>{{if(!e.isIntersecting)return;io.unobserve(e.target);e.target.classList.add("go");if(still)return;
+e.target.querySelectorAll("[data-to]").forEach(el=>{{const to=+el.dataset.to,suf=el.dataset.suf||"",d=1500,t0=performance.now()+150;
+const f=t=>{{const p=Math.max(0,Math.min(1,(t-t0)/d));el.textContent=Math.round(to*(1-Math.pow(1-p,3))).toLocaleString("en-US")+suf;if(p<1)requestAnimationFrame(f)}};
+el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.querySelectorAll(".bp-stat").forEach(c=>io.observe(c))}})()</script>
 """)
 
     # what a book looks like
