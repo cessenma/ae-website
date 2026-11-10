@@ -1212,7 +1212,12 @@ SEASON_PAGES = {"mid-autumn-festival-english", "kk-phonetic-chart", "phonics-rul
                 "kk-phonetics-vs-phonics", "animals-english-vocabulary", "english-symbol-names", "thank-you-english",
                 # the topic-vocabulary pages (2026-10-13 plan, N2): they send festival readers too
                 "colors-english-vocabulary", "body-parts-english", "food-english", "weather-english",
-                "time-english", "jobs-english", "countries-english"}
+                "time-english", "jobs-english", "countries-english",
+                # 2026-11-11: the pages that became top landers since October (GSC 30 days to 11-09),
+                # plus the wishes / card pages whose readers want the festival page next
+                "english-alphabet-worksheet", "junior-high-english-grammar", "english-cursive",
+                "english-worksheet-maker", "moe-2000-words-guide", "english-wishes", "english-card-writing",
+                "chinese-name-to-english", "english-name-generator", "english-address"}
 
 
 # ---------------------------------------------------------------------------
