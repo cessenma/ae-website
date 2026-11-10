@@ -45,9 +45,9 @@ STORE = json.load(open(STORE_PATH, encoding="utf-8"))
 # prices: Chris 2026-11-05 (memory ae-readers-flashcards-plan); file sizes: ~/Downloads/AE-lemon-upload
 P_LEVEL, P_SET, P_ALL = 390, 1390, 2690
 P_GBOOKS, P_GSHEETS = 590, 190
-MB_LEVEL = "23–36 MB"
-MB_SET = {"1-4": 108, "5-8": 134, "9-12": 133, "all": 375}
-MB_GRAMMAR = {"elementary": (28, 12), "junior": (37, 11), "senior": (35, 13)}   # junior rebuilt 11-10 (段考 tests)
+MB_LEVEL = "40–183 MB"
+MB_SET = {"1-4": 217, "5-8": 438, "9-12": 667, "all": 1322}   # 11-10 zips with read-aloud audio
+MB_GRAMMAR = {"elementary": (30, 12), "junior": (38, 11), "senior": (36, 13)}   # junior rebuilt 11-10 (段考 tests)
 
 esc = html.escape
 FP, LZ = 'fetchpriority="high"', 'loading="lazy"'   # the hero's middle cover loads first
@@ -412,7 +412,7 @@ def readers_page():
                        for k in ("1-4", "5-8", "9-12"))
     tiers = f"""<div class="bp-tiers reveal" id="buy-tiers">
 <div class="bp-tier"><span class="bp-tn">{Z("單級 3 本", "one level, 3 books")}</span><span class="bp-tp">NT${P_LEVEL}</span><span class="bp-tu">{Z(f"約 NT${round(P_LEVEL/3)}／本", f"about NT${round(P_LEVEL/3)} a book")}</span>
-<span class="bp-td">{Z("先買孩子現在這一級試試看。每級約 23–36 MB。", "Try the level your child is at now. About 23–36 MB a level.")}</span><div class="bp-pick">{lv_btns}</div></div>
+<span class="bp-td">{Z(f"先買孩子現在這一級試試看。每級約 {MB_LEVEL}。", f"Try the level your child is at now. About {MB_LEVEL} a level.")}</span><div class="bp-pick">{lv_btns}</div></div>
 <div class="bp-tier hl"><span class="bp-tn">{Z("一個階段 4 級 12 本", "one stage, 4 levels, 12 books")}</span><span class="bp-tp">NT${n(P_SET)}</span><span class="bp-tu">{Z(f"約 NT${round(P_SET/12)}／本・比單級分開買省 NT${4*P_LEVEL-P_SET}", f"about NT${round(P_SET/12)} a book · NT${4*P_LEVEL-P_SET} less than 4 single levels")}</span>
 <span class="bp-td">{Z("從孩子現在的階段買起，夠讀好幾個月。", "Start from your child's stage; enough for several months.")}</span><div class="bp-pick two">{set_btns}</div></div>
 <div class="bp-tier"><span class="bp-tn">{Z("全套 12 級 36 本", "all 12 levels, 36 books")}</span><span class="bp-tp">NT${n(P_ALL)}</span><span class="bp-tu">{Z(f"約 NT${round(P_ALL/36)}／本・比 12 級分開買省 NT${n(12*P_LEVEL-P_ALL)}", f"about NT${round(P_ALL/36)} a book · NT${n(12*P_LEVEL-P_ALL)} less than 12 single levels")}</span>
@@ -615,8 +615,8 @@ def grammar_page():
         <span class="eyebrow eyebrow-yellow reveal">{Z("埃森美語原創 · 國小到高中 16 冊", "our own series · 16 books, elementary to senior high")}</span>
         <h1 class="reveal d1">{Z("英文文法書＋<em>文法速查表</em>", "grammar books + cheat sheets")}</h1>
         <div class="divider reveal d1"></div>
-        <p class="body reveal d2">{Z("國中、高中每學期一本，國小每年級一本。每本 36–38 頁：一個文法重點一頁，規則表、圖解、例句和練習放在同一頁；每個單元再加一頁綜合練習和一頁寫作應用，最後有測驗和完整解答：國中每冊是三次段考模擬測驗（每次兩頁、100 分）和段考範圍表，國小、高中是複習測驗和兩回綜合測驗。每一本都附同一冊的文法速查表。",
-            "One book per semester for junior and senior high, one per grade for elementary. 36–38 pages each: one page per grammar point with the rule table, pictures, examples and exercises together; each unit adds a practice page and a grammar-for-writing page; then tests and a complete answer key: in junior high, three school-exam practice tests (two pages, 100 points each) and an exam-range page; in elementary and senior high, review tests and two full tests. Each book comes with that semester's cheat sheet.")}</p>
+        <p class="body reveal d2">{Z("國中、高中每學期一本，國小每年級一本。每本 36–38 頁：一個文法重點一頁，規則表、圖解、例句和練習放在同一頁；每個單元再加一頁綜合練習和一頁寫作應用，最後有測驗和完整解答：國中每冊是三次段考模擬測驗（每次兩頁、100 分）和段考範圍表，國小是複習測驗、上學期測驗和學年測驗，高中是複習測驗和兩回完整測驗。每一本都附同一冊的文法速查表。",
+            "One book per semester for junior and senior high, one per grade for elementary. 36–38 pages each: one page per grammar point with the rule table, pictures, examples and exercises together; each unit adds a practice page and a grammar-for-writing page; then tests and a complete answer key: in junior high, three school-exam practice tests (two pages, 100 points each) and an exam-range page; in elementary, review tests, a first-semester test and an end-of-year test; in senior high, review tests and two full tests. Each book comes with that semester's cheat sheet.")}</p>
         <div class="bp-cta reveal d2"><a class="btn btn-primary" href="#free">{Z("免費下載第 1 頁", "free page 1")}</a>
           <a class="btn btn-outline" href="#buy">{Z("看價格", "see prices")}</a></div>
         <div class="bp-facts reveal d2"><span>{Z("每學期一本", "one per semester")}</span><span>{Z("附解答", "answers included")}</span><span>{Z("可以列印", "printable")}</span><span>{Z("每冊附速查表", "cheat sheet with every book")}</span></div>

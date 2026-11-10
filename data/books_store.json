@@ -1,31 +1,31 @@
 {
  "_note": "One Lemon Squeezy checkout link per variant (checkout/buy/<uuid> from the variant's own share link). Empty = 即將開放.",
  "readers_sets": {
-  "1-4": "",
-  "5-8": "",
-  "9-12": "",
-  "all": ""
+  "1-4": "https://americanenglish.lemonsqueezy.com/checkout/buy/91b3c436-3d3a-4ac1-aac4-881da4b52369",
+  "5-8": "https://americanenglish.lemonsqueezy.com/checkout/buy/ff97d1e3-dab3-461b-8631-e8313b8968e1",
+  "9-12": "https://americanenglish.lemonsqueezy.com/checkout/buy/0ce17369-61d3-4dc3-97ab-4c49dc3f115b",
+  "all": "https://americanenglish.lemonsqueezy.com/checkout/buy/47f23361-d662-49b2-b578-7b8b58fda484"
  },
  "readers_levels": {
-  "1": "",
-  "2": "",
-  "3": "",
-  "4": "",
-  "5": "",
-  "6": "",
-  "7": "",
-  "8": "",
-  "9": "",
-  "10": "",
-  "11": "",
-  "12": ""
+  "1": "https://americanenglish.lemonsqueezy.com/checkout/buy/33b6979c-033e-4f4b-b7b8-8829ba994ab0",
+  "2": "https://americanenglish.lemonsqueezy.com/checkout/buy/9a3aa142-4413-49bb-82f7-de35cca0c28a",
+  "3": "https://americanenglish.lemonsqueezy.com/checkout/buy/24071012-b678-4f7d-af27-ed546dc07ee3",
+  "4": "https://americanenglish.lemonsqueezy.com/checkout/buy/621713a5-7f16-49b5-a4cb-1431b2b55b9b",
+  "5": "https://americanenglish.lemonsqueezy.com/checkout/buy/d7684619-321d-4848-8ee8-a8d91ea05a5f",
+  "6": "https://americanenglish.lemonsqueezy.com/checkout/buy/72193596-cb0d-4be6-86a5-c72234b383ef",
+  "7": "https://americanenglish.lemonsqueezy.com/checkout/buy/97066eb9-b209-4bd9-a647-836102968c78",
+  "8": "https://americanenglish.lemonsqueezy.com/checkout/buy/5d3d3250-def9-47c5-8300-c9967d6947c5",
+  "9": "https://americanenglish.lemonsqueezy.com/checkout/buy/65de96d5-f289-4ad2-aa87-b80627376dda",
+  "10": "https://americanenglish.lemonsqueezy.com/checkout/buy/678abd37-7ac0-4c8b-bcfb-7394a032317a",
+  "11": "https://americanenglish.lemonsqueezy.com/checkout/buy/fff3e053-064e-4a57-b3c2-c00c19cdbbda",
+  "12": "https://americanenglish.lemonsqueezy.com/checkout/buy/e4ab3bdd-6658-4125-a1e1-2e183db14368"
  },
  "grammar": {
-  "elementary-books": "",
-  "elementary-sheets": "",
-  "junior-books": "",
-  "junior-sheets": "",
-  "senior-books": "",
-  "senior-sheets": ""
+  "elementary-books": "https://americanenglish.lemonsqueezy.com/checkout/buy/7f5e5b74-be1d-4c9b-aafa-55031de1ed9a",
+  "elementary-sheets": "https://americanenglish.lemonsqueezy.com/checkout/buy/d6f1d70f-daa4-423c-a205-6090f2593a30",
+  "junior-books": "https://americanenglish.lemonsqueezy.com/checkout/buy/75c823ef-8555-4a08-b6c9-b2206e779da9",
+  "junior-sheets": "https://americanenglish.lemonsqueezy.com/checkout/buy/c98c87a9-58d9-46d0-9e41-2ca0215273df",
+  "senior-books": "https://americanenglish.lemonsqueezy.com/checkout/buy/201edda8-f41d-4ef3-9032-a3fd3c4b7427",
+  "senior-sheets": "https://americanenglish.lemonsqueezy.com/checkout/buy/c974388f-33af-486c-b17e-8e8320f8f69d"
  }
 }
