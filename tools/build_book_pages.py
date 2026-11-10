@@ -604,9 +604,12 @@ def grammar_page():
                           "offerCount": 6, "availability": "https://schema.org/InStock"}} if any_link else {})}]
     out = [head(GRAMMAR, title, desc, og_t, desc, "/assets/img/grammar-books/og-grammar-books.jpg", 1600, 1200,
                 Z("英文文法書與文法速查表封面", "covers of the grammar books and cheat sheets"), ld, LEMON if any_link else "")]
-    fan = "".join(f'<img src="/assets/img/grammar-books/covers/{c}.webp" alt="{esc(B[c]["title"])} 封面" width="300" height="424" '
+    # hero fan (Chris 11-10): one page-1 overview at the back, the rest illustrated inside pages
+    fan_imgs = [("covers/G8-1", 300, 424), ("pages/elementary-pattern-page", 778, 1100), ("pages/junior-grammar-page", 778, 1100),
+                ("pages/senior-grammar-page", 778, 1100), ("pages/junior-exam-page", 778, 1100)]
+    fan = "".join(f'<img src="/assets/img/grammar-books/{src}.webp" alt="" width="{w}" height="{h}" '
                   f'{FP if i == 2 else LZ} decoding="async">'
-                  for i, c in enumerate(("G4", "G7-2", "G8-1", "G10-1", "G12-R")))
+                  for i, (src, w, h) in enumerate(fan_imgs))
     out.append(f"""<section class="page-hero">
   <div class="wrap">
     <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/junior-high-english-grammar/">{Z("國中英文文法", "junior-high grammar")}</a> ／ {Z("文法書", "grammar books")}</div>
