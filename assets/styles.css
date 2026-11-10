@@ -815,3 +815,17 @@ ul.wd-chips li a{display:inline-block;padding:6px 14px;border-radius:999px;backg
 .wd-nav a{color:var(--blue-ink)}
 @media (max-width:640px){.wd-word{font-size:38px}.wd-kk{font-size:22px}}
 td.w a.wp{display:inline-block;margin-left:6px;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:700;background:#F4FAFF;border:1px solid #dbeaf7;color:var(--blue-ink);text-decoration:none;vertical-align:middle}
+
+/* After-download card (app.js, 2026-11-10): slides up once per visit after a PDF download */
+.dl-next{position:fixed;left:16px;right:16px;bottom:16px;z-index:140;max-width:420px;margin:0 auto;padding:16px 18px 18px;border-radius:18px;background:#F1FBF4;border:2px solid #BFE8CB;color:var(--navy);line-height:1.6;box-shadow:0 12px 32px rgba(26,39,82,.18);opacity:0;transform:translateY(20px);transition:opacity .3s,transform .3s}
+.dl-next.on{opacity:1;transform:none}
+.dl-next b{display:block;font-size:17px;font-weight:800;margin:0 28px 4px 0}
+.dl-next p{font-size:14.5px;margin:0 0 12px}
+.dl-next .dn-btn{display:flex;justify-content:center;width:100%;min-height:46px;background:#06C755;border-color:#06C755;color:#fff}
+.dl-next .dn-x{position:absolute;top:8px;right:10px;width:36px;height:36px;border:0;background:none;font-size:24px;line-height:1;color:var(--muted);cursor:pointer}
+@media (prefers-reduced-motion:reduce){.dl-next{transition:none}}
+
+/* irregular verbs, senior-high section (2026-11-10) */
+.lv-hs{display:inline-block;font-size:11.5px;font-weight:800;color:#7a3db8;background:#F3E8FF;border-radius:999px;padding:1px 8px;margin-left:6px;vertical-align:middle;white-space:nowrap}
+.vnote{display:block;font-size:12.5px;line-height:1.5;color:var(--muted);margin-top:2px}
+@media (max-width:600px){.compare table:has(.vnote) th,.compare table:has(.vnote) td{padding-left:8px;padding-right:8px}.compare table:has(.vnote) td:last-child{min-width:6.5em}}

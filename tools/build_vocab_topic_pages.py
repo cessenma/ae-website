@@ -82,6 +82,51 @@ def cta(line, h2="單字背起來了，用得出來嗎？", btns=None):
 
 N  = DATA["numbers"]; M = DATA["months"]; D = DATA["days"]
 
+# 2026-11-10 (plan D2, "lookup passages"): one short literal-match answer per month / day, each under
+# its own H3 with a stable id (#jun, #wed) — people type 「jun 是幾月」「wed 是星期幾」, and the page
+# only had the twelve answers run together in one paragraph. Each links to that word's pronunciation page.
+MONTH_NOTES = [
+    ("jan", "Jan", "一年的第一個月，名字來自羅馬的門神 Janus（開始之神）。", "Winter vacation starts in late January.", "寒假在一月底開始。"),
+    ("feb", "Feb", "平年 28 天、閏年 29 天（下一個閏年是 2028 年）。拼字最常漏掉第一個 r：Feb-ru-ary。", "Valentine's Day is on February 14.", "情人節在二月十四日。"),
+    ("mar", "Mar", "和五月 May 都是 M 開頭：三月縮寫成 Mar.，五月 May 不縮寫。", "Spring starts in March.", "春天從三月開始。"),
+    ("apr", "Apr", "Apr. 和 Aug.（八月）都是 A 開頭，看第二個字母：p 是四月、u 是八月。", "Children's Day is on April 4.", "兒童節在四月四日。"),
+    ("may", "May", "只有三個字母，所以沒有縮寫、也不加句點。小寫的 may 是「可能」，當月份一定大寫。", "Mother's Day is in May.", "母親節在五月。"),
+    ("jun", "Jun", "和七月 Jul. 只差最後一個字母：<strong>n 是六月、l 是七月</strong>。", "The school year ends in June.", "學年在六月結束。"),
+    ("jul", "Jul", "名字來自凱撒 Julius Caesar。重音在後面：ju-LY。", "Summer vacation starts in July.", "暑假在七月開始。"),
+    ("aug", "Aug", "名字來自羅馬皇帝奧古斯都 Augustus。", "Father's Day in Taiwan is on August 8.", "台灣的父親節在八月八日。"),
+    ("sep", "Sep", "Sep. 和 Sept. 兩種縮寫都對：美式和電腦系統多用 Sep.，英式多用 Sept.。", "The new school year starts in September.", "新學年在九月開始。"),
+    ("oct", "Oct", "Oct- 在拉丁文是「八」（octopus 八隻腳），因為古羅馬曆從三月算起，十月原本是第八個月。", "Halloween is on October 31.", "萬聖節在十月三十一日。"),
+    ("nov", "Nov", "Nov- 在拉丁文是「九」，和十月同樣差了兩位。", "Thanksgiving in the US is in November.", "美國的感恩節在十一月。"),
+    ("dec", "Dec", "Dec- 在拉丁文是「十」（decade 是十年）。", "Christmas is on December 25.", "聖誕節在十二月二十五日。"),
+]
+
+def month_passages():
+    out = []
+    for (aid, ab, note, ex, ex_zh), (en, zh, abbr, days) in zip(MONTH_NOTES, M):
+        short = "" if en == "May" else f"{abbr} 是 {en} 的縮寫，"
+        out.append(f'<h3 id="{aid}">{ab} 是幾月？{en}＝{zh}</h3>'
+                   f'<p>{short}就是<strong>{zh}</strong>，有 {days} 天。{note}'
+                   f'例句：<em>{ex}</em>（{ex_zh}）<a href="/pronunciation/{en.lower()}/">{en} 怎麼唸</a></p>')
+    return '<div class="prose reveal">' + "".join(out) + "</div>"
+
+DAY_NOTES = [
+    ("mon", "名字是「月亮日」（Moon-day）。", "I have English class on Mondays.", "我每個星期一有英文課。"),
+    ("tue", "和星期四 Thursday 都是 T 開頭：<strong>Tu 是二、Th 是四</strong>。", "We have PE on Tuesday.", "我們星期二有體育課。"),
+    ("wed", "唸作「wenz-day」，中間的 d 不發音，但拼字一定要寫。", "Elementary school ends at noon on Wednesday.", "國小星期三只上半天。"),
+    ("thu", "th 要輕咬舌頭發音，不是 s 也不是 f。", "The test is next Thursday.", "考試在下星期四（next 前面不加 on）。"),
+    ("fri", "TGIF 就是 Thank God It's Friday——終於星期五了。", "Let's watch a movie on Friday night.", "星期五晚上一起看電影吧。"),
+    ("sat", "名字來自土星 Saturn。", "We go to the park on Saturdays.", "我們每個星期六去公園。"),
+    ("sun", "名字是「太陽日」。美式月曆一週從星期日開始。", "See you on Sunday!", "星期天見！"),
+]
+
+def day_passages():
+    out = []
+    for (aid, note, ex, ex_zh), (en, zh, abbr, _) in zip(DAY_NOTES, D):
+        out.append(f'<h3 id="{aid}">{zh}英文：{en}（{abbr}）</h3>'
+                   f'<p>{zh}的英文是 <strong>{en}</strong>，縮寫 {abbr}，第一個字母永遠大寫。{note}'
+                   f'例句：<em>{ex}</em>（{ex_zh}）<a href="/pronunciation/{en.lower()}/">{en} 怎麼唸</a></p>')
+    return '<div class="prose reveal">' + "".join(out) + "</div>"
+
 PAGES = {
 "english-numbers-guide": dict(
   target="英文數字", index=5.04,
@@ -137,7 +182,8 @@ PAGES = {
         "<strong>Jan.</strong> 一月　<strong>Feb.</strong> 二月　<strong>Mar.</strong> 三月　<strong>Apr.</strong> 四月<br>"
         "<strong>May</strong> 五月（不縮寫）　<strong>Jun.</strong> 六月　<strong>Jul.</strong> 七月　<strong>Aug.</strong> 八月<br>"
         "<strong>Sep./Sept.</strong> 九月　<strong>Oct.</strong> 十月　<strong>Nov.</strong> 十一月　<strong>Dec.</strong> 十二月",
-        "最容易混的是 <strong>Jun. 和 Jul.</strong>（六月與七月）、<strong>Mar. 和 May</strong>（三月與五月）。記法：六月 June 和七月 July 都是 J 開頭，<em>Jun</em>e 的 n 在前、<em>Jul</em>y 的 l 在後，照字母順序排就對了。"), soft=True)
+        "最容易混的是 <strong>Jun. 和 Jul.</strong>（六月與七月）、<strong>Mar. 和 May</strong>（三月與五月）。記法：六月 June 和七月 July 都是 J 開頭，<em>Jun</em>e 的 n 在前、<em>Jul</em>y 的 l 在後，照字母順序排就對了。")
+      + month_passages(), soft=True)
     + sec("月份前面用 in 還是 on？",
       prose("這是月份最常錯的地方，規則其實只有一條：<strong>範圍越大用 in，越精確用 on</strong>。",
         "<strong>in + 月份</strong>（只講月，不講日）：in May、in December。<br>"
@@ -184,6 +230,8 @@ PAGES = {
       ("Sep. 和 Sept. 哪一個對？", "兩個都對。Sept. 在英式英語較常見，Sep. 在美式與資訊系統中較常見。同一份文件裡選一種用到底就好。"),
       ("in May 還是 on May？", "只講月份用 in（in May）；有指定到哪一天才用 on（on May 5）。判斷方式很簡單：句子裡有沒有日期數字。"),
       ("月份要怎麼幫孩子記？", "不要一次背十二個。先記和孩子有關的三個——生日的月份、開學的九月、過年的一二月——有情境就記得住。接著用字根補上 9 到 12 月，最後再處理縮寫。"),
+      ("Jun 是幾月？", "Jun. 是 June 的縮寫，<strong>六月</strong>，30 天。最容易和 Jul.（July，七月）看錯：n 是六月、l 是七月。"),
+      ("Jul 是幾月？", "Jul. 是 July 的縮寫，<strong>七月</strong>，31 天。台灣的暑假就從七月開始：Summer vacation starts in July."),
       ("寫日期時 5 要寫成 5th 嗎？", "口說一定唸序數（May fifth），書寫則兩種都可以：May 5 和 May 5th 都正確，美式正式文件偏好不加 th。重點是同一份文件保持一致。"),
     ]), soft=True)
     + cta("月份、日期、時間這種「每天都會用到」的英文，最怕只認得字、講不出口。我們的小班課每堂都有真實情境的口說練習，講錯當場就被美籍老師接住。")),
@@ -198,7 +246,8 @@ PAGES = {
   body=lambda: (
     sec("星期英文完整對照表",
       prose("縮寫一樣是取前三個字母加句點。Tuesday 和 Thursday 因為都是 T 開頭，常見四個字母的縮寫（Tues.、Thurs.）以免混淆。")
-      + tbl([[d[0], d[1], d[2], d[3]] for d in D], ["英文", "中文", "縮寫", "口語"]))
+      + tbl([[d[0], d[1], d[2], d[3]] for d in D], ["英文", "中文", "縮寫", "口語"])
+      + day_passages())
     + sec("星期一定要大寫",
       prose("英文的星期是<strong>專有名詞</strong>，不管出現在句子哪個位置都要大寫：See you on <em>Friday</em>。這一條和月份相同，也是台灣學生作文最常見的扣分點。",
         "對照組：季節（spring、summer、autumn、winter）和一天的時段（morning、afternoon、evening）都是普通名詞，<strong>不</strong>大寫。"), soft=True)
@@ -244,6 +293,7 @@ PAGES = {
       ("on Monday 和 on Mondays 有什麼不同？", "on Monday 指特定的這個星期一；on Mondays（或 every Monday）指每週固定的星期一。講課表、社團、固定行程用複數。"),
       ("this Monday 前面要加 on 嗎？", "不用。this／next／last 開頭的時間片語本身就當副詞用：See you next Monday，不是 on next Monday。"),
       ("一週的第一天是星期日還是星期一？", "看標準。美式月曆和日本多從星期日起算，歐洲與 ISO 8601 國際標準從星期一起算。台灣兩種都有，填表時以該表自己的月曆為準。"),
+      ("Wed 是星期幾？", "Wed. 是 Wednesday 的縮寫，<strong>星期三</strong>。T 開頭的兩天最容易看錯：Tue.／Tues. 是星期二，Thu.／Thurs. 是星期四。"),
       ("孩子怎麼記七天最快？", "配課表記，不要照順序背。把孩子每天實際在做的事接上去——Monday 有英文課、Wednesday 要游泳——七天兩三天就記熟，而且是能用的。"),
     ]), soft=True)
     + cta("星期、月份、時間這些字，真正的驗收是「聽到就反應得過來」。我們的課堂每天用英文問行程，孩子想的時間會越來越短。")),

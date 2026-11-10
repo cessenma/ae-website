@@ -1566,6 +1566,14 @@ READNEXT = {
     "english-tenses-chart": [_WORDS["verbs"], _WORDS["be"], _DATES["inonat"], _WORDS["comp"]],
     "kk-phonetics-vs-phonics": [_SND["kk"], _SND["phonics"], _SND["vowels"], _SND["hard"]],
     "moe-2000-words-guide": [_WORDS["1200"], _WORDS["verbs"], _VOC["topics"], _WORDS["dl"]],
+    # 11-10 (D3): the 5 assessment-card pages. Card readout 10-14→11-09: 6 LINE taps from the card on
+    # ~6,400 views (fab 24) — the card stays, and the pages get the same next-read bar as the rest.
+    "kk-phonetic-chart": [_SND["phonics"], _SND["vowels"], ("單字發音查詢", "/pronunciation/"), _SND["hard"]],
+    "phonics-rules-chart": [_SND["kk"], _SND["vowels"], _SND["worksheet"], ("高頻字 sight words", "/sight-words-guide/")],
+    "moe-1200-words-guide": [_WORDS["2000"], ("1200 字發音", "/pronunciation/"), _VOC["topics"], _WORDS["dl"]],
+    "english-names-boys": [("女生英文名字", "/english-names-girls/"), ("英文名字總覽", "/english-names/"),
+                           ("小孩英文名字怎麼取", "/kids-english-names-guide/"), ("小孩英文自我介紹", "/english-self-introduction-kids/")],
+    "mid-autumn-festival-english": [_FEST["christmas"], _FEST["newyear"], _FEST["valentine"], _FEST["birthday"]],
 }
 
 def read_next(html, rel):

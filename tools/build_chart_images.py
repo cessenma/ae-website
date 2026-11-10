@@ -463,6 +463,7 @@ SPECS.update({
    foot="可儲存列印｜americanenglish.com.tw"),
 
  "irregular-verbs-chart": dict(page="irregular-verbs-list", cols=3, width=1700, max_rows=76,
+   only=list(range(9)),   # the 9 core tables (74 verbs); the 11-10 senior-high section below stays off the chart
    title="不規則動詞三態表", sub="70 個常用動詞 ・ 原形、過去式、過去分詞",
    alt="不規則動詞三態表：70個常用動詞的原形、過去式與過去分詞對照，附中文",
    foot="免費 A4 列印版下載"),

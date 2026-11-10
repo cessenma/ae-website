@@ -403,6 +403,25 @@
       window.gtag('event', 'line_bridge_click', { page_path: location.pathname,
         cta_position: lb.closest('footer') ? 'footer' : lb.closest('.cta-box,.bg-blue') ? 'closing' : 'body' });
     }
+    // 11-10 traffic review: the download is the page's best moment (alphabet worksheet: 52% of
+    // visitors download, 0 LINE taps; 4,795 downloads vs 307 LINE taps site-wide). After a PDF
+    // download, one small card offers the next step — once per visit, closable, never on load.
+    var dl = e.target.closest ? e.target.closest('a[download],a[href$=".pdf"]') : null;
+    if(dl && !document.getElementById('dlNext')){
+      var seen = false; try{ seen = sessionStorage.getItem('ae_dlnext') === '1'; sessionStorage.setItem('ae_dlnext', '1'); }catch(err){}
+      if(!seen) setTimeout(function(){
+        var c = document.createElement('aside');
+        c.id = 'dlNext'; c.className = 'dl-next'; c.setAttribute('role', 'status'); c.setAttribute('aria-label', '下載之後');
+        c.innerHTML = '<button type="button" class="dn-x" aria-label="關閉">×</button>'
+          + '<b>下載好了 ✓ 印出來之後呢？</b>'
+          + '<p>孩子寫完，想知道英文程度到哪裡了？住在板橋附近的話，可以預約美籍老師的免費程度評估。</p>'
+          + '<a class="btn dn-btn" href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">加 LINE 預約程度評估</a>';
+        document.body.appendChild(c);
+        void c.offsetWidth; c.classList.add('on');   // force a layout so the slide-in runs (no rAF: a hidden tab never fires it)
+        c.querySelector('.dn-x').addEventListener('click', function(){ c.classList.remove('on'); setTimeout(function(){ c.remove(); }, 300); });
+        if(typeof window.gtag === 'function') window.gtag('event', 'after_download_show', { page_path: location.pathname });
+      }, 1500);
+    }
     var a = e.target.closest ? e.target.closest('a[href*="lin.ee"],a[href*="line.me"]') : null;
     if(a){
       var href = a.getAttribute('href') || '', txt = (a.textContent || '').trim();
@@ -419,7 +438,7 @@
         try{ if(window.fbq) fbq('track', 'Lead', { content_name: 'exam_pack_' + tier, content_category: 'exam_pack', value: val, currency: 'TWD' }); }catch(err){}
       } else if(hasGtag){
         var pos = a.classList.contains('line-fab') ? 'fab' : a.closest('.site-header') ? 'header' : a.closest('.drawer') ? 'menu'
-                : a.closest('footer') ? 'footer' : a.closest('.region-cta') ? 'region_local' : a.closest('.cta-box') ? 'cta_box' : a.closest('.assess-card') ? 'assess_card' : a.closest('.page-hero,.hero') ? 'hero'
+                : a.closest('footer') ? 'footer' : a.closest('.region-cta') ? 'region_local' : a.closest('.cta-box') ? 'cta_box' : a.closest('.assess-card') ? 'assess_card' : a.closest('.dl-next') ? 'after_download' : a.closest('.page-hero,.hero') ? 'hero'
                 : a.closest('.ae-cta') ? 'mid_page' : 'body';
         window.gtag('event', 'line_tap', { page_path: location.pathname, link_text: txt.slice(0, 40), cta_position: pos });
       }
