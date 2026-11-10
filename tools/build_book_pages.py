@@ -642,8 +642,9 @@ def grammar_page():
         <span class="eyebrow eyebrow-yellow reveal">{Z("埃森美語原創 · 國小到高中 16 冊", "our own series · 16 books, elementary to senior high")}</span>
         <h1 class="reveal d1">{Z("英文文法書＋<em>文法速查表</em>", "grammar books + cheat sheets")}</h1>
         <div class="divider reveal d1"></div>
-        <p class="body reveal d2">{Z("國小每年級一本，國中、高中每學期一本。每本都附文法速查表和完整解答。",
-            "One book per grade in elementary, one per semester in junior and senior high. Every book comes with a cheat sheet and a full answer key.")}</p>
+        <p class="body reveal d2">{Z("孩子英文課到底在學什麼，常常搞不清楚嗎？這套書照孩子學校的課綱和課本整理成一本一本：國小每年級一本，國中、高中每學期一本，每本附速查表和解答。",
+            "Ever struggled to work out what your child is actually learning in English class? These books turn your child's school curriculum and textbooks into one simple book per grade (elementary) or per semester (junior and senior high), each with a cheat sheet and answers.")}</p>
+        <p class="reveal d2" style="margin:10px 0 0;font-size:15px;font-weight:700"><a href="/banqiao-school-english/">{Z("先看孩子學校用哪個版本、每次段考考哪幾課 →", "first see which edition your child's school uses and what each exam covers →")}</a></p>
         <div class="bp-cta reveal d2"><a class="btn btn-primary" href="#free">{Z("免費下載第 1 頁", "free page 1")}</a>
           <a class="btn btn-outline" href="#buy">{Z("看價格", "see prices")}</a></div>
         <div class="bp-facts reveal d2"><span>{Z("每學期一本", "one per semester")}</span><span>{Z("附解答", "answers included")}</span><span>{Z("可以列印", "printable")}</span><span>{Z("每冊附速查表", "cheat sheet with every book")}</span></div>
@@ -693,6 +694,20 @@ def grammar_page():
   </div>
 </section>
 """)
+    # free page 1
+    fl = []
+    for key, codes in STAGES:
+        links = "".join(f'<a href="{free[c]}" download data-book="grammar" data-book-item="free-{c}">{esc(B[c]["title"].split(" ")[0])}</a>'
+                        for c in codes if c in free)
+        fl.append(f'<h3 id="{strip(info[key][0])}免費" style="margin:22px 0 4px;font-size:17px">{info[key][0]}</h3><div class="bp-free">{links}</div>')
+    out.append(f"""<section class="section bg-soft" id="free">
+  <div class="wrap" style="max-width:860px">
+    {h2(Z("免費", "free"), "第-1-頁免費下載", Z("每一冊的第 1 頁，<em>免費下載</em>", "page 1 of every book, free"), "green")}
+    <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("第 1 頁是整學期的重點，一頁看完。不用留資料。", "Page 1 is the whole semester on one page. No sign-up.")}</p>
+    <div class="reveal">{"".join(fl)}</div>
+  </div>
+</section>
+""")
     # contents of every book
     sec = []
     for key, codes in STAGES:
@@ -709,20 +724,6 @@ def grammar_page():
     {h2(Z("目錄", "contents"), "每一冊教什麼", Z("每一冊，<em>教什麼</em>", "what each book teaches"))}
     <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("點開每一冊，看完整的文法重點。", "Open a book to see its full list of grammar points.")}</p>
     <div class="reveal">{"".join(sec)}</div>
-  </div>
-</section>
-""")
-    # free page 1
-    fl = []
-    for key, codes in STAGES:
-        links = "".join(f'<a href="{free[c]}" download data-book="grammar" data-book-item="free-{c}">{esc(B[c]["title"].split(" ")[0])}</a>'
-                        for c in codes if c in free)
-        fl.append(f'<h3 id="{strip(info[key][0])}免費" style="margin:22px 0 4px;font-size:17px">{info[key][0]}</h3><div class="bp-free">{links}</div>')
-    out.append(f"""<section class="section bg-soft" id="free">
-  <div class="wrap" style="max-width:860px">
-    {h2(Z("免費", "free"), "第-1-頁免費下載", Z("每一冊的第 1 頁，<em>免費下載</em>", "page 1 of every book, free"), "green")}
-    <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("第 1 頁是整學期的重點，一頁看完。不用留資料。", "Page 1 is the whole semester on one page. No sign-up.")}</p>
-    <div class="reveal">{"".join(fl)}</div>
   </div>
 </section>
 """)
