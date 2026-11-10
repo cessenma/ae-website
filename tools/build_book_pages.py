@@ -271,10 +271,22 @@ CSS = """
 .bp-steps li{counter-increment:s;position:relative;padding:0 0 16px 46px;font-size:15.5px;line-height:1.8;color:var(--text-body)}
 .bp-steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:30px;height:30px;border-radius:10px;background:var(--blue);color:#fff;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;display:grid;place-items:center}
 .bp-steps b{color:var(--navy)}
-.bp-free{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:12px}
-.bp-free a{display:flex;align-items:center;gap:8px;background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:12px;padding:9px 12px;font-size:14px;font-weight:700;color:var(--navy);text-decoration:none}
-.bp-free a::before{content:'PDF';font-size:10.5px;font-weight:800;color:#fff;background:#E5484D;border-radius:5px;padding:2px 5px}
-.bp-free a:hover{border-color:var(--light-blue)}
+.fp-stage{background:#fff;border-radius:24px;padding:20px 22px 24px;margin-top:22px;box-shadow:0 8px 28px rgba(26,39,82,.07);border-top:6px solid var(--sc)}
+.fp-elementary{--sc:#12B76A}.fp-junior{--sc:#1CB0F6}.fp-senior{--sc:#7C5CFF}
+.fp-stage h3{margin:0 0 16px;font-size:18px;color:var(--navy);display:flex;align-items:center;gap:10px}
+.fp-stage h3::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--sc)}
+.fp-row{display:flex;flex-wrap:wrap;justify-content:center;gap:22px 18px}
+.fp{width:calc((100% - 90px) / 6);display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;color:var(--navy)}
+.fp-pg{position:relative;display:block;width:100%;aspect-ratio:400/566;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.fp-pg::before,.fp-pg::after{content:"";position:absolute;inset:0;background:#fff;border-radius:6px;box-shadow:0 2px 8px rgba(26,39,82,.12);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.fp-pg::before{transform:rotate(-3deg) translate(-3px,3px)}.fp-pg::after{transform:rotate(2deg) translate(3px,2px)}
+.fp-pg img{position:relative;z-index:1;display:block;width:100%;height:100%;border-radius:6px;box-shadow:0 6px 16px rgba(26,39,82,.18);background:#fff}
+.fp-dl{position:absolute;z-index:2;left:50%;bottom:-11px;transform:translateX(-50%);white-space:nowrap;background:var(--sc);color:#fff;font-size:12.5px;font-weight:800;border-radius:99px;padding:4px 11px;box-shadow:0 4px 10px rgba(26,39,82,.2)}
+.fp b{margin-top:8px;font-size:15px;text-align:center;line-height:1.3}
+.fp:hover .fp-pg,.fp:focus-visible .fp-pg{transform:translateY(-6px)}
+.fp:hover .fp-pg::before{transform:rotate(-7deg) translate(-8px,4px)}.fp:hover .fp-pg::after{transform:rotate(6deg) translate(8px,3px)}
+@media(max-width:860px){.fp{width:calc((100% - 36px) / 3)}}
+@media(max-width:420px){.fp-stage{padding:16px 14px 20px}.fp-row{gap:18px 12px}.fp{width:calc((100% - 24px) / 3)}.fp-dl{font-size:11px;padding:3px 8px}.fp b{font-size:13.5px}}
 .bp-book{background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:14px;margin-top:8px}
 .bp-book summary{cursor:pointer;padding:11px 14px;font-weight:800;color:var(--navy);font-size:15px}
 .bp-book summary small{font-weight:700;color:#64748b;font-size:12.5px;margin-left:6px}
@@ -789,13 +801,19 @@ def grammar_page():
 </section>
 """)
     # free page 1
+    # Chris 11-11: "these should be more aesthetically pleasing" -> each download is a picture of its real page 1
+    def short(c):
+        return Z("學測總複習", "exam review") if c == "G12-R" else esc(B[c]["title"].split(" ")[0].replace("國小", ""))
     fl = []
     for key, codes in STAGES:
-        links = "".join(f'<a href="{free[c]}" download data-book="grammar" data-book-item="free-{c}">{esc(B[c]["title"].split(" ")[0])}</a>'
-                        for c in codes if c in free)
-        fl.append(f'<h3 id="{strip(info[key][0])}免費" style="margin:22px 0 4px;font-size:17px">{info[key][0]}</h3><div class="bp-free">{links}</div>')
+        links = "".join(
+            f'<a class="fp" href="{free[c]}" download data-book="grammar" data-book-item="free-{c}">'
+            f'<span class="fp-pg"><img src="/assets/img/grammar-books/free/{c}.webp" alt="{esc(B[c]["title"])} 第 1 頁" width="400" height="566" loading="lazy" decoding="async">'
+            f'<span class="fp-dl">{Z("免費下載", "free")} ↓</span></span><b>{short(c)}</b></a>'
+            for c in codes if c in free)
+        fl.append(f'<div class="fp-stage fp-{key}"><h3 id="{strip(info[key][0])}免費">{info[key][0]}</h3><div class="fp-row">{links}</div></div>')
     out.append(f"""<section class="section bg-soft" id="free">
-  <div class="wrap" style="max-width:860px">
+  <div class="wrap" style="max-width:1080px">
     {h2(Z("免費", "free"), "第-1-頁免費下載", Z("每一冊的第 1 頁，<em>免費下載</em>", "page 1 of every book, free"), "green")}
     <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("第 1 頁是整學期的重點，一頁看完。不用留資料。", "Page 1 is the whole semester on one page. No sign-up.")}</p>
     <div class="reveal">{"".join(fl)}</div>
