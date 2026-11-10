@@ -61,7 +61,8 @@ def normalize(phones):
 # Single words where CMU's first entry is not the form Taiwan's KK dictionaries teach.
 OVERRIDES = {"every": "EH1 V R IY0", "even": "IY1 V AH0 N", "sometimes": "S AH1 M T AY2 M Z",
              "actually": "AE1 K CH UH0 AH0 L IY0", "usually": "Y UW1 ZH UH0 AH0 L IY0", "unhappy": "AH2 N HH AE1 P IY0",
-             "thirty": "TH ER1 T IY0"}      # CMU lists the flap [d] first; Taiwan dictionaries write [ˈθɝtɪ]
+             "thirty": "TH ER1 T IY0",
+             "baseball": "B EY1 S B AO2 L"}      # CMU lists the flap [d] first; Taiwan dictionaries write [ˈθɝtɪ]; baseball: CMU stresses 'ball', GA stresses 'base'
 
 def kk(phones):
     """ARPAbet (with stress digits) → KK string, stress marks before the stressed syllable."""

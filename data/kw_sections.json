@@ -394,13 +394,15 @@
   "id": "KET單字表",
   "h2": "KET 單字表去哪找？有中文版嗎？怎麼背",
   "at": "after:KET-官方單字表範圍多大",
-  "html": "<p><strong>KET 單字表</strong>以劍橋官方的 A2 Key and A2 Key for Schools Vocabulary List 為準，和樣卷、口說示範影片一起放在劍橋官方的 A2 Key 準備頁，可以直接下載；目前是 2025 年 8 月版，主表粗估約 1,600–1,700 個詞條。</p><p><strong>有中文版嗎？</strong>網路上的「KET 單字表 中文版」，多半是出版社或補習班自行翻譯整理的。用之前先看兩件事：</p><ul><li>依據哪一年的官方版本——官方字表每年 8 月更新，我們比對過網路上流傳的一份，內容還停在 2012 年版。</li><li>有沒有附例句——只有中文意思的字表，最容易背成「看得懂、寫不出來」。</li></ul><p><strong>課堂上的背法：</strong></p><ol><li>先用<a href=\"/moe-1200-words-guide/\">教育部 1200 單字表</a>對照，把已經會的字劃掉——這份字表落在國中小核心 1,200 字與參考 2,000 字之間，課內累積的字彙大部分可以直接沿用。</li><li>剩下的字依主題分批背：官方另有數字、星期、月份、國家等分類補充表，一組一組練最省力。</li><li>每個新字都放進自己寫的句子，例如 I usually borrow books from the library on Fridays.（我通常星期五去圖書館借書。）寫作 Part 6、7 用得出來，才算真的會。</li><li>背完用 <a href=\"/ket-practice-tests/\">KET 題庫</a>的 Part 4 選字填空檢查，做錯的字再放回清單。</li></ol>"
+  "html": "<p><strong>KET 單字表</strong>以劍橋官方的 A2 Key and A2 Key for Schools Vocabulary List 為準，和樣卷、口說示範影片一起放在劍橋官方的 A2 Key 準備頁，可以直接下載；目前是 2025 年 8 月版，主表粗估約 1,600–1,700 個詞條。</p><p><strong>有中文版嗎？</strong>網路上的「KET 單字表 中文版」，多半是出版社或補習班自行翻譯整理的。用之前先看兩件事：</p><ul><li>依據哪一年的官方版本——官方字表每年 8 月更新，我們比對過網路上流傳的一份，內容還停在 2012 年版。</li><li>有沒有附例句——只有中文意思的字表，最容易背成「看得懂、寫不出來」。</li></ul><p><strong>課堂上的背法：</strong></p><ol><li>先用<a href=\"/moe-1200-words-guide/\">教育部 1200 單字表</a>對照，把已經會的字劃掉——這份字表落在國中小核心 1,200 字與參考 2,000 字之間，課內累積的字彙大部分可以直接沿用。</li><li>剩下的字依主題分批背：官方另有數字、星期、月份、國家等分類補充表，一組一組練最省力。</li><li>每個新字都放進自己寫的句子，例如 I usually borrow books from the library on Fridays.（我通常星期五去圖書館借書。）寫作 Part 6、7 用得出來，才算真的會。</li><li>背完用 <a href=\"/ket-practice-tests/\">KET 題庫</a>的 Part 4 選字填空檢查，做錯的字再放回清單。</li></ol>",
+  "lead": "KET 是劍橋英檢的 A2 Key（中小學生考 A2 Key for Schools），程度＝CEFR A2，和全民英檢初級同級；考閱讀寫作、聽力、口說三份卷，劍橋分數 120 分以上通過。",
+  "lead_to": "KETA2-Key其實是同一張證書"
  },
  "ket-vs-gept-comparison": {
   "id": "KET英檢是什麼",
-  "h2": "KET 英檢是什麼？程度對照全民英檢哪一級",
+  "h2": "KET 英檢和全民英檢初級：程度怎麼對照",
   "at": "after:FlyersKETGEPT-初級怎麼對照",
-  "html": "<p><strong>KET 英檢</strong>是劍橋大學核發的 A2 Key 證書（學生多考 A2 Key for Schools 版本），KET 是舊名 Key English Test 的縮寫；程度對應 CEFR A2，和全民英檢初級在同一個等級。</p><div class=\"compare\"><table><thead><tr><th>CEFR</th><th>劍橋線</th><th>全民英檢線</th></tr></thead><tbody><tr><td>B1</td><td>PET（B1 Preliminary for Schools）</td><td>GEPT 中級</td></tr><tr><td>A2</td><td>KET（A2 Key for Schools）；兒童英檢 Flyers 也在 A2，但不設通過門檻</td><td>GEPT 初級</td></tr></tbody></table></div><p><strong>KET 不是全民英檢的一級。</strong>台灣家長習慣把所有英文檢定都叫「英檢」，所以常有人以為 KET 是全民英檢裡的某個級數。其實這是兩套考試：KET 由劍橋大學核發、國際通用；全民英檢由台灣的 LTTC 辦理，台灣的學校與升學制度最熟悉。兩者沒有官方的直接換算，共同的語言是 CEFR——KET 通過（120 分以上）和 GEPT 初級通過，都代表 A2。</p><p><strong>搜「KET 程度」要看分數帶：</strong>KET 用劍橋量表計分，120–139 分是 A2；140–150 分（Grade A）證書直接標示 B1；100–119 分拿不到 A2 證書，但成績單會顯示 A1 程度的量尺分數。同一場 KET，成績可以落在 A1、A2 或 B1 三種程度。想先摸清孩子的落點，可以做一份 <a href=\"/ket-practice-tests/\">KET 題庫</a>，再用 <a href=\"/ket-score-calculator/\">KET 分數計算機</a>換算。</p>"
+  "html": "<p><strong>KET 英檢</strong>是劍橋大學核發的 A2 Key 證書（學生多考 A2 Key for Schools 版本），KET 是舊名 Key English Test 的縮寫；程度對應 CEFR A2，和全民英檢初級在同一個等級。KET 三份考卷考什麼、怎麼準備，見 <a href=\"/ket-prep-guide/\">KET 是什麼：完整準備指南</a>；這一節只比兩張證書。</p><div class=\"compare\"><table><thead><tr><th>CEFR</th><th>劍橋線</th><th>全民英檢線</th></tr></thead><tbody><tr><td>B1</td><td>PET（B1 Preliminary for Schools）</td><td>GEPT 中級</td></tr><tr><td>A2</td><td>KET（A2 Key for Schools）；兒童英檢 Flyers 也在 A2，但不設通過門檻</td><td>GEPT 初級</td></tr></tbody></table></div><p><strong>KET 不是全民英檢的一級。</strong>台灣家長習慣把所有英文檢定都叫「英檢」，所以常有人以為 KET 是全民英檢裡的某個級數。其實這是兩套考試：KET 由劍橋大學核發、國際通用；全民英檢由台灣的 LTTC 辦理，台灣的學校與升學制度最熟悉。兩者沒有官方的直接換算，共同的語言是 CEFR——KET 通過（120 分以上）和 GEPT 初級通過，都代表 A2。</p><p><strong>搜「KET 程度」要看分數帶：</strong>KET 用劍橋量表計分，120–139 分是 A2；140–150 分（Grade A）證書直接標示 B1；100–119 分拿不到 A2 證書，但成績單會顯示 A1 程度的量尺分數。同一場 KET，成績可以落在 A1、A2 或 B1 三種程度。想先摸清孩子的落點，可以做一份 <a href=\"/ket-practice-tests/\">KET 題庫</a>，再用 <a href=\"/ket-score-calculator/\">KET 分數計算機</a>換算。</p>"
  },
  "kids-english-banqiao": {
   "id": "五歲上兒童美語會太早嗎",
@@ -578,5 +580,12 @@
   "h2": "板橋中山國中段考題在哪？段考範圍怎麼對",
   "at": "after:中山國中的英文段考怎麼準備",
   "html": "<p>板橋中山國中段考題（歷屆英文段考考古題）的取得管道，整理在<a href=\"/banqiao-junior-high-english-past-papers/\">板橋國中考古題</a>那篇表格的「中山國中」那一列；段考範圍和日期，則以學校英文老師的公告與行事曆為準。搜尋時記得加上「板橋」——台北市也有一所中山國中，兩校的考古題不能混用。</p><p><strong>拿到範圍後，三步把考古題對上範圍：</strong></p><ol><li>把老師公告的範圍抄下來：第幾課到第幾課、這次考哪幾個文法句型。</li><li>找同年級、同一次段考的舊卷子，翻開課本目錄，把卷子上的題目對到課次。</li><li>範圍內的題目照段考時間寫；範圍外的先跳過，留到國三複習會考時再用。</li></ol><p>寫完之後，依題型找出孩子掉分的地方：</p><div class=\"compare\"><table><thead><tr><th>題型</th><th>考古題上看什麼</th><th>平常怎麼練</th></tr></thead><tbody><tr><td>單字與文法選擇</td><td>錯在拼字、詞性還是時態</td><td>錯題本按類別分頁整理</td></tr><tr><td>克漏字</td><td>是不是沒看前後句就選</td><td>整段讀完再填空</td></tr><tr><td>閱讀測驗</td><td>看不懂，還是時間不夠</td><td>每週讀一篇課外短文</td></tr><tr><td>翻譯或簡答（部分老師會出）</td><td>句子結構、大小寫與標點</td><td>每天寫兩句完整的英文句子</td></tr></tbody></table></div><p>文法類的錯題，可以對照<a href=\"/junior-high-english-grammar/\">國中英文文法</a>總整理找到對應的觀念，再回頭重寫一次。</p>"
+ },
+ "gept-practice-tests": {
+  "id": "全民英檢考古題下載",
+  "h2": "全民英檢考古題可以免費下載嗎？",
+  "at": "after:三個正規來源一個都不會買錯",
+  "lead": true,
+  "html": "<p><strong>全民英檢考古題</strong>的官方名稱是「歷屆試題」，由 LTTC（語言訓練測驗中心）正式出版、含聽力音檔，要另外購買；免費又正規的，是 GEPT 官網的範例試題和這一頁的四級線上模擬試題。</p><p>想找<strong>全民英檢題庫</strong>或考古題，可以照這個順序：</p><ul><li><strong>免費、官方：</strong>GEPT 官網各級數頁面的題型說明與範例試題。</li><li><strong>免費、線上作答：</strong>本頁的小學英檢、初級、中級、中高級模擬試題，直接在網頁上寫、自動對答案，每題有中文解析。這是我們依官方題型自己出的題目，不是 LTTC 的試題。</li><li><strong>正式考古題：</strong>LTTC 出版的歷屆試題，購買管道以官方公告為準。網路上標榜「免費下載」的檔案，來源和音檔品質都無法確認，寫錯版本比不寫更浪費時間。</li><li><strong>可以列印的整套：</strong>我們另有付費的全民英檢模擬試題 PDF，每級 9 份。</li></ul><p>不管用哪一種，考古題的用法都一樣：先寫一回當診斷，找出最弱的題型補強，考前再寫一回驗收。從第一回刷到最後一回，分數通常不會跟著一路往上。</p>"
  }
 }

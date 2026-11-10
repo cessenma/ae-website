@@ -11,6 +11,7 @@ sentences, then adds what the page was missing.
 
 Entry: {"id": "...", "h2": "...", "html": "<p>…</p>…", "at": "faq" | "after:<h2 id>", "lead": true?}
   lead = true: the box's first sentence also appears as a 「快速解答」 (quick answer) line under the page intro.
+  lead = "…" words the quick answer itself; lead_to = "<h2 id>" points its 「看完整說明」 link at another section.
   at = "faq" (default): before the FAQ section (or before the last section if there is none);
   at = "after:<id>": after the section that holds the heading with that id.
 The block is real content: content_signature() counts it, so adding or editing one moves the
@@ -55,7 +56,7 @@ def lead(html, e):
         return html
     pe += 4
     strip_ = (f'{LSTART}<p class="kw-lead reveal d2"><span class="kw-lead-tag">快速解答</span>{lead_sentence(e)}'
-              f'<a href="#{e["id"]}">看完整說明 ↓</a></p>{LEND}')
+              f'<a href="#{e.get("lead_to", e["id"])}">看完整說明 ↓</a></p>{LEND}')
     return html[:pe] + "\n    " + strip_ + html[pe:]
 
 def block(e):

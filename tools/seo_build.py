@@ -1402,6 +1402,13 @@ BOOKS_PAGES = {
     "junior-high-english-grammar": ("pdf", "grammar", "總整理看完，想一個重點一個重點練？",
         "這份總整理的完整版：國一上到國三下每學期一本文法書，每個重點一頁規則、圖解和例句，每單元有練習和寫作應用，"
         "附複習測驗、期中期末測驗與解答。每一冊的第 1 頁免費下載。"),
+    # 11-10 traffic review: the two busiest letter/phonics pages (1,550 and 855 clicks in 30 days) had no book link
+    "english-alphabet-worksheet": ("h2:字母寫得穩了接下來讀什麼", "readers", "字母會寫了，讀第一本英文書",
+        "Chris and Cora 分級讀本第 1 級從 a、and、is、look、see 這些高頻字開始，每一頁一句、配一整頁插圖，"
+        "一個字在書裡重複好幾次。第一本免費線上讀，可以邊聽邊讀。"),
+    "phonics-rules-chart": ("h2:自然發音學完拼得出來嗎", "readers", "拼得出單字之後，讀整句",
+        "Chris and Cora 分級讀本第 1 級的 3 本只用 26 個教育部單字，每一頁一句、配一整頁插圖，"
+        "孩子把剛學會的拼讀用在真的故事裡。第一本免費線上讀，可以邊聽邊讀。"),
 }
 BOOKS_KIND = {
     "readers": dict(href="/chris-and-cora-readers/", free="/chris-and-cora-readers/read/1a/", free_t="免費讀第一本",

@@ -4,7 +4,8 @@ Per-word pronunciation pages (pilot, 2026-10-21): /pronunciation/<word>/ and the
 
 Why: searches like 「X 發音」「X 怎麼唸」「X kk」 click at ~3.5% where the site appears (translation
 lookups: 0.6%), and the site already gets impressions for "television kk", "giraffe kk" … with no
-page per word. Pilot = 300 words of the MOE 1200 list; readout ~2026-12-28: scale toward 2,000 if
+page per word. Pilot = 300 words of the MOE 1200 list (10-21); 11-10: extended to every usable MOE-1200 word
+(the pilot already earned ~0.2 clicks/page/day in 3 weeks). Original plan: readout ~2026-12-28, scale toward 2,000 if
 ≥0.1 clicks/page/day and rising, stop if <0.02 (plan: ~/Downloads/AE-3X-PLAN-2026-10-19.md).
 
 Data: tools/data/words/pilot.json (computed from CMUdict with kk_lookup's KK rules: KK, syllables,
@@ -125,7 +126,7 @@ def body(d, c):
     prv, nxt = ORDER[i - 1] if i else None, ORDER[i + 1] if i + 1 < len(ORDER) else None
     nav = (f'<nav class="wd-nav" aria-label="其他單字">'
            + (f'<a href="/pronunciation/{prv}/">← {esc(W[prv]["word"])}</a>' if prv else "<span></span>")
-           + '<a href="/pronunciation/">全部 300 個單字發音</a>'
+           + f'<a href="/pronunciation/">全部 {len(ORDER):,} 個單字發音</a>'
            + (f'<a href="/pronunciation/{nxt}/">{esc(W[nxt]["word"])} →</a>' if nxt else "<span></span>") + '</nav>')
     s4 = (f'<section class="section"><div class="wrap"><div class="center stack reveal">'
           f'<h2 id="常見問題">{esc(w)} 發音常見問題</h2></div><div class="faq">{fq}</div>'
@@ -196,8 +197,8 @@ def hub():
     title = f"英文單字發音：{n} 個常用字 KK 音標、怎麼唸＋慢速示範｜埃森美語"
     desc = (f"英文單字怎麼唸？教育部 1200 字裡 {n} 個常用單字，每個都有 KK 音標、音節與重音、"
             f"正常和慢速發音，以及台灣學生最常唸錯的地方。依字母查，點單字看完整發音頁。")
-    intro = (f'<section class="section"><div class="wrap"><div class="prose reveal"><p>這裡收錄教育部國中小基本 1200 字裡 {n} 個'
-             f'最值得練的單字：多音節、重音容易放錯，或含有 [θ]、[ð]、[v]、[æ]、[ɝ] 這些台灣學生常唸錯的音。'
+    intro = (f'<section class="section"><div class="wrap"><div class="prose reveal"><p>這裡收錄教育部國中小基本 1200 字裡 {n:,} 個'
+             f'單字，整份字表的單字幾乎都在這裡（片語、縮寫和一字多音的字除外）；特別留意多音節、重音容易放錯，或含有 [θ]、[ð]、[v]、[æ]、[ɝ] 這些台灣學生常唸錯的音的字。'
              f'每個單字頁都有 KK 音標、音節拆解、正常和慢速發音，還有一段「最常唸錯的地方」。</p>'
              f'<p>想查清單以外的字，可以用 <a href="/kk-phonetic-chart/">KK 音標表</a>上方的查詢框；'
              f'想先認識 41 個音，從 <a href="/english-pronunciation/">英文發音完整指南</a>開始。</p></div></div></section>')

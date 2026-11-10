@@ -1329,7 +1329,8 @@ PAGES["sports-english"] = dict(
 # line) instead of Python. Schema: slug, published, target, h1, title, desc, hero, sections[], cta,
 # optional index. Each section: title (H2, may hold <em>), optional prose[] (HTML allowed: strong,
 # em, internal links), heads[] + groups[{name, rows}] or rows[] (table cells are plain text, escaped),
-# optional html (raw block after the prose), optional after[] (prose under the table), optional
+# optional html (raw block after the prose), optional html_top (raw block right under the H2, before
+# the prose — e.g. the surname lookup box, written by build_surname_lookup.py), optional after[] (prose under the table), optional
 # faq[[q, a]], optional soft (bool), optional cls (extra <section> class for the page's own css).
 # Page-level optional: cta_h2, font_href (Google Fonts CSS, this page only), css (inline <style>).
 # The FIRST section's tables become the chart + A4 PDF (build_chart_images SPECS / build_chart_pdfs PDFS).
@@ -1338,7 +1339,7 @@ SPEC_DIR = os.path.join(SITE, "tools/data/topic_pages")
 def from_spec(spec):
     out = []
     for i, s in enumerate(spec["sections"]):
-        inner = prose(*s["prose"]) if s.get("prose") else ""
+        inner = (s.get("html_top") or "") + (prose(*s["prose"]) if s.get("prose") else "")
         if s.get("html"):
             inner += s["html"]
         kw = dict(spec=True, m3=s.get("phone_cols") != 3)   # "phone_cols": 3 keeps all three on phones

@@ -780,8 +780,8 @@
 "hash": "9e1c60b96ec11cf3e91ff861f50823e1"
 },
 "chinese-name-to-english": {
-"date": "2026-10-22",
-"hash": "721a779484714a4a8f46c5bdc9e8ac52"
+"date": "2026-11-10",
+"hash": "2cd6dd25f9ff6f143c9e1e0d8783a547"
 },
 "chinese-zodiac-english": {
 "date": "2026-10-22",
@@ -964,8 +964,8 @@
 "hash": "42757fafc9cb7e22801b45e154d3f942"
 },
 "english-pronunciation": {
-"date": "2026-10-21",
-"hash": "80f8b2e2b6a0f248ace0a8a029ce648c"
+"date": "2026-11-10",
+"hash": "3937d6aa72d88406e5028b66655355fc"
 },
 "english-pronunciation-standards": {
 "date": "2026-08-21",
@@ -1400,8 +1400,8 @@
 "hash": "c78cf6e2ef53fef238229552b757ad05"
 },
 "gept-practice-tests": {
-"date": "2026-10-01",
-"hash": "e07da371bae8cdabb00a48031d70a065"
+"date": "2026-11-10",
+"hash": "10b59d2c7a3a3d596dadfad9fbee5694"
 },
 "gept-results-lookup": {
 "date": "2026-10-13",
@@ -1524,8 +1524,8 @@
 "hash": "9cf20e404aa02faf00f66bce87efa144"
 },
 "ket-prep-guide": {
-"date": "2026-10-19",
-"hash": "2aab048c037db9f3dd10726811db4694"
+"date": "2026-11-10",
+"hash": "cba008aacfe911b56be0b3f867d619e4"
 },
 "ket-rw-practice-part1": {
 "date": "2026-10-13",
@@ -1564,8 +1564,8 @@
 "hash": "f97c56d5ae5d97aa08940ae08aef8c44"
 },
 "ket-vs-gept-comparison": {
-"date": "2026-10-19",
-"hash": "dcd33544e8b76c885b38b4a22f8cf45d"
+"date": "2026-11-10",
+"hash": "65ad8770b26c83e98646034182fea26d"
 },
 "kids-english-banqiao": {
 "date": "2026-10-19",
@@ -1596,8 +1596,8 @@
 "hash": "f5d91f4283ce04ffb6badd6bd71290b9"
 },
 "kk-phonetic-chart": {
-"date": "2026-10-21",
-"hash": "c33c7a194ff6bec4bc0b5a75be3c547b"
+"date": "2026-11-10",
+"hash": "36f0feff33ac52660d0a7b4178fd2f0e"
 },
 "kk-phonetics-vs-phonics": {
 "date": "2026-10-19",
@@ -1636,8 +1636,8 @@
 "hash": "a9ea6c30f4f26bd7f41724eab83736c6"
 },
 "moe-1200-words-guide": {
-"date": "2026-10-21",
-"hash": "45e96d6c3d4e44c8296082caff47884a"
+"date": "2026-11-10",
+"hash": "3e5aacfb5da43f1c1a20270636284bda"
 },
 "moe-2000-words-guide": {
 "date": "2026-10-13",
@@ -1840,1208 +1840,4672 @@
 "hash": "c538fe223b676df79ce38f30f94a9813"
 },
 "pronunciation": {
-"date": "2026-10-21",
-"hash": "97743c878a4d47b249e73286f2dd32bb"
+"date": "2026-11-10",
+"hash": "a57dede035816b3cb77f65e697d29c95"
+},
+"pronunciation/able": {
+"date": "2026-11-10",
+"hash": "0d536702938d2085fef70219736f80a1"
+},
+"pronunciation/about": {
+"date": "2026-11-10",
+"hash": "ede70db4d2cf25ffdcdda3e3b1f62f0e"
+},
+"pronunciation/above": {
+"date": "2026-11-10",
+"hash": "5ac5a0b81e81ce93325e1fe36a065fb0"
+},
+"pronunciation/abroad": {
+"date": "2026-11-10",
+"hash": "b7091e030e443fffbd2138fa30933540"
+},
+"pronunciation/across": {
+"date": "2026-11-10",
+"hash": "b03798aa9ad80f67c5b33ec59a01b6ee"
+},
+"pronunciation/act": {
+"date": "2026-11-10",
+"hash": "69ba861dca0f88c01238fa4e3e6efc34"
 },
 "pronunciation/action": {
-"date": "2026-10-21",
-"hash": "c708053042eabf6f095cdc3311ec8ea8"
+"date": "2026-11-10",
+"hash": "f3dec67223cbbb3ef703a4ee67d57e58"
 },
 "pronunciation/actor": {
-"date": "2026-10-21",
-"hash": "929ba7cb38999e20b7a6bac81d6a9328"
+"date": "2026-11-10",
+"hash": "79a72262c234835d2e321da2710cf9d0"
+},
+"pronunciation/actress": {
+"date": "2026-11-10",
+"hash": "93f4d6d5f99ca7ba2d0c33b716ef796f"
 },
 "pronunciation/actually": {
-"date": "2026-10-21",
-"hash": "5fa9fd17603452f55c9973ce2d56a459"
+"date": "2026-11-10",
+"hash": "a6a4e5e894e73eb6e200d4f32332339f"
+},
+"pronunciation/afraid": {
+"date": "2026-11-10",
+"hash": "664235292ed7452c5c1037ccb7509977"
 },
 "pronunciation/after": {
-"date": "2026-10-21",
-"hash": "4175e4dbbeed044812e2990d2da55586"
+"date": "2026-11-10",
+"hash": "b4ef495091ecd7bcad5f3003662b7fce"
 },
 "pronunciation/afternoon": {
-"date": "2026-10-21",
-"hash": "843a88427b316574e545de06cfc9652b"
+"date": "2026-11-10",
+"hash": "35c334abf3bf8ab4c26ccf0d4392e736"
+},
+"pronunciation/again": {
+"date": "2026-11-10",
+"hash": "f1196464f4321edeea255f6dc99cdad0"
+},
+"pronunciation/age": {
+"date": "2026-11-10",
+"hash": "e7b90e9896870e1fcda745244360ec90"
+},
+"pronunciation/ago": {
+"date": "2026-11-10",
+"hash": "65b5b3f81f09a6c535bd39c71823f6cc"
+},
+"pronunciation/agree": {
+"date": "2026-11-10",
+"hash": "5b31d257889984ce452e1f29781c2c07"
+},
+"pronunciation/ahead": {
+"date": "2026-11-10",
+"hash": "4964deaffb074d6b19743e369675f0c7"
+},
+"pronunciation/air": {
+"date": "2026-11-10",
+"hash": "86652aca8fb994e0851ab97a7c8bc325"
+},
+"pronunciation/airplane": {
+"date": "2026-11-10",
+"hash": "c780b8cdcee6e757c5f80acd5b5b4053"
+},
+"pronunciation/airport": {
+"date": "2026-11-10",
+"hash": "eafae6d753cda948205ef986c7b9e0fd"
+},
+"pronunciation/all": {
+"date": "2026-11-10",
+"hash": "d936c101aad7aaaeeb2b62ef0a68ccb1"
+},
+"pronunciation/allow": {
+"date": "2026-11-10",
+"hash": "6356dbb1dbc0799b09f93d67a78127dc"
+},
+"pronunciation/almost": {
+"date": "2026-11-10",
+"hash": "40094999be28c0b068c02e54acc3f9cc"
+},
+"pronunciation/along": {
+"date": "2026-11-10",
+"hash": "f115683e99de73e492e9a9950aa3afdc"
 },
 "pronunciation/already": {
-"date": "2026-10-21",
-"hash": "fc3b0957ec82a485d95d5f3d6d182520"
+"date": "2026-11-10",
+"hash": "952dbbe1db3158cff21e130d36cbbf06"
+},
+"pronunciation/also": {
+"date": "2026-11-10",
+"hash": "737b49273ee345e531846f3a624ce609"
+},
+"pronunciation/always": {
+"date": "2026-11-10",
+"hash": "bb274981435c0bf372dd74524d03d344"
 },
 "pronunciation/america": {
-"date": "2026-10-21",
-"hash": "c4ae225f50f1466a2c9f8979d5581931"
+"date": "2026-11-10",
+"hash": "1a5ed405c745e9dc42c8412755b166e7"
 },
 "pronunciation/american": {
-"date": "2026-10-21",
-"hash": "f2a9cb07756a31d9145740b7c0fc2ff5"
+"date": "2026-11-10",
+"hash": "eb6089012866d03662073879454eb54b"
+},
+"pronunciation/and": {
+"date": "2026-11-10",
+"hash": "33d16a899e4bcb204eebe0adda68feef"
 },
 "pronunciation/angle": {
-"date": "2026-10-21",
-"hash": "750d8e6d7bd295fad06357c0e26d3f67"
+"date": "2026-11-10",
+"hash": "cb457d0a00e0b96d83833c713b6fbc37"
 },
 "pronunciation/angry": {
-"date": "2026-10-21",
-"hash": "b8b3aa382ff27fb2ac5907c34d682105"
+"date": "2026-11-10",
+"hash": "cd5a4ea9daec75859278b8800d3b6f07"
 },
 "pronunciation/animal": {
-"date": "2026-10-21",
-"hash": "8c0fc4d834fadd22b3e9f243f47a8795"
+"date": "2026-11-10",
+"hash": "87fc2f1ff3074005879d0e3ddc9748c2"
 },
 "pronunciation/another": {
-"date": "2026-10-21",
-"hash": "b7b9204cb97e4234dab9f3aa86981f27"
+"date": "2026-11-10",
+"hash": "3c493bde7d2d0f0e1fad5c6c2f606f4d"
 },
 "pronunciation/answer": {
-"date": "2026-10-21",
-"hash": "ea3e90e4a9b8f0450eb21896b9eb6670"
+"date": "2026-11-10",
+"hash": "bd617bdedccbfd81b3db9d149eba79a1"
+},
+"pronunciation/ant": {
+"date": "2026-11-10",
+"hash": "17e7be4b4ca7ff21736d3d4d13c2bca4"
+},
+"pronunciation/any": {
+"date": "2026-11-10",
+"hash": "1be5b568ebf68bea016a625c63a1472f"
 },
 "pronunciation/anyone": {
-"date": "2026-10-21",
-"hash": "f056387e5eb9a4ef53de1817a5ba3237"
+"date": "2026-11-10",
+"hash": "2cf682c05d58811e54c3b6c41edfa602"
 },
 "pronunciation/anything": {
-"date": "2026-10-21",
-"hash": "8af90a78723ad6b54caf3885d053f2ad"
+"date": "2026-11-10",
+"hash": "a06eb68479fd2634dfa284711c9075ff"
 },
 "pronunciation/apartment": {
-"date": "2026-10-21",
-"hash": "55adab65400ddf7112868bcdcde4e103"
+"date": "2026-11-10",
+"hash": "142668c05705e4c44b1d594f354c36f7"
+},
+"pronunciation/appear": {
+"date": "2026-11-10",
+"hash": "06ae68b04722a6953675f6bd8609f21d"
 },
 "pronunciation/apple": {
-"date": "2026-10-21",
-"hash": "7cb4d26003c0e212d005a89d029624b3"
+"date": "2026-11-10",
+"hash": "c83c857292df90e3e0383bec04361cca"
+},
+"pronunciation/april": {
+"date": "2026-11-10",
+"hash": "9c648fc7efea11c35e076f32ac311c81"
 },
 "pronunciation/area": {
-"date": "2026-10-21",
-"hash": "c1be482aff91a0a288a37785fa15a5f8"
+"date": "2026-11-10",
+"hash": "a638726d906c7f0cff8a8e9b2a73bea3"
+},
+"pronunciation/arm": {
+"date": "2026-11-10",
+"hash": "9d36c1087c01a19e43e3cef1ed997f47"
 },
 "pronunciation/around": {
-"date": "2026-10-21",
-"hash": "ff6a4b40c1d5606e05a951d0d18a9def"
+"date": "2026-11-10",
+"hash": "f2a1a76163720898c447de3cf56ba51a"
 },
 "pronunciation/arrive": {
-"date": "2026-10-21",
-"hash": "2cc389868837da888e3da9d321b8fe31"
+"date": "2026-11-10",
+"hash": "24fa0111a35aed9064abb9edad5d64b1"
+},
+"pronunciation/art": {
+"date": "2026-11-10",
+"hash": "767e1cc896308740c9432cc0a2baf130"
 },
 "pronunciation/as": {
-"date": "2026-10-21",
-"hash": "aaafed89d14d064c0ae01614995f730a"
+"date": "2026-11-10",
+"hash": "183090866c878acbaf0a7d43a7944869"
+},
+"pronunciation/ask": {
+"date": "2026-11-10",
+"hash": "e8358f075827ea1949d4cb99f40c8f0d"
+},
+"pronunciation/at": {
+"date": "2026-11-10",
+"hash": "482351725e6fd818e2273f7b08a49ca6"
+},
+"pronunciation/attack": {
+"date": "2026-11-10",
+"hash": "74a6c8b093a9dee29923359aeb826189"
+},
+"pronunciation/august": {
+"date": "2026-11-10",
+"hash": "ce733e31d58d9f8184a0ca2bef0f1053"
 },
 "pronunciation/aunt": {
-"date": "2026-10-21",
-"hash": "25c072e3cb9e4e8f6fcb67c87826f2ed"
+"date": "2026-11-10",
+"hash": "0d431c65aba725cf9293f9cebb186d3a"
 },
 "pronunciation/autumn": {
-"date": "2026-10-21",
-"hash": "5738579cd8ab6f775bbaa4632b7163e4"
+"date": "2026-11-10",
+"hash": "c8ae6f87863dae1192bf2afe2720d324"
+},
+"pronunciation/away": {
+"date": "2026-11-10",
+"hash": "76479a7a30867812ca499203ae36bf47"
+},
+"pronunciation/baby": {
+"date": "2026-11-10",
+"hash": "70af8f3dc81e99490d564b7e6875e3fa"
+},
+"pronunciation/back": {
+"date": "2026-11-10",
+"hash": "5754c0f3c94490d3804c8ebde8953fdb"
+},
+"pronunciation/bad": {
+"date": "2026-11-10",
+"hash": "39f3faa04badfc167848cda7af776b3f"
 },
 "pronunciation/badminton": {
-"date": "2026-10-21",
-"hash": "7f47a05d615248b59d245904d00d45c7"
+"date": "2026-11-10",
+"hash": "15115924a9212769de60cb0c1df5917b"
+},
+"pronunciation/bag": {
+"date": "2026-11-10",
+"hash": "232cbe7a3f1395d8b87cd420435de719"
+},
+"pronunciation/bake": {
+"date": "2026-11-10",
+"hash": "84e4036f80e317e6b9f1f6d0d3d072eb"
 },
 "pronunciation/bakery": {
-"date": "2026-10-21",
-"hash": "4022c74892fc1f155d458c03b1fd22a4"
+"date": "2026-11-10",
+"hash": "f0f23c1aa8c69146928b6bb220c55d38"
 },
 "pronunciation/balcony": {
-"date": "2026-10-21",
-"hash": "d8f8f6a628e89bd514db6b2a6d562d09"
+"date": "2026-11-10",
+"hash": "375ecdec3c5b83408ab579f98a3121a8"
 },
 "pronunciation/banana": {
-"date": "2026-10-21",
-"hash": "2fdbc8b8307a9ee96cd43de35596b178"
+"date": "2026-11-10",
+"hash": "77bafdf4954525203b91e0107efee2f1"
+},
+"pronunciation/band": {
+"date": "2026-11-10",
+"hash": "e7fb75ce327696d51298b730a2205fce"
+},
+"pronunciation/bank": {
+"date": "2026-11-10",
+"hash": "52e62402b5516bd4cc991081d44ca5f1"
+},
+"pronunciation/baseball": {
+"date": "2026-11-10",
+"hash": "a41391a335d21c2b07d28fa6971f52cb"
+},
+"pronunciation/basket": {
+"date": "2026-11-10",
+"hash": "1b81c7517e7a9df3138345facd49556d"
 },
 "pronunciation/basketball": {
-"date": "2026-10-21",
-"hash": "a0ec08d7baee777249cdba283002514e"
+"date": "2026-11-10",
+"hash": "fcab3f31713f03852289a32377dbb177"
+},
+"pronunciation/bat": {
+"date": "2026-11-10",
+"hash": "862e42ff4b6e4012c148e114077e1f04"
 },
 "pronunciation/bath": {
-"date": "2026-10-21",
-"hash": "d975d3115b7ff8eaa45bf772ccb21fef"
+"date": "2026-11-10",
+"hash": "f6317b68d246d772ee83b9864326e67e"
 },
 "pronunciation/bathroom": {
-"date": "2026-10-21",
-"hash": "6e4c896bcbb0d7ff43b5797a4c0fd790"
+"date": "2026-11-10",
+"hash": "2de8c9b8160ec1c80ad57309e1570d0c"
+},
+"pronunciation/be": {
+"date": "2026-11-10",
+"hash": "cc2b9a6011f1182d81f038afc2589b8e"
+},
+"pronunciation/beach": {
+"date": "2026-11-10",
+"hash": "d024dc49f81abb7e1766f69740df80d9"
+},
+"pronunciation/bean": {
+"date": "2026-11-10",
+"hash": "0671991abf309f6bb2f5f70760370cb7"
+},
+"pronunciation/bear": {
+"date": "2026-11-10",
+"hash": "d37a4b438d80e7cd6e5563e3a41de69a"
 },
 "pronunciation/beautiful": {
-"date": "2026-10-21",
-"hash": "9e0b49cd080bacabd0101ddfe62f5eec"
+"date": "2026-11-10",
+"hash": "7d1113a4094334afb30e09bc0b32eae9"
+},
+"pronunciation/because": {
+"date": "2026-11-10",
+"hash": "f8ad72dbcd50e18f34e80d767b662dee"
+},
+"pronunciation/become": {
+"date": "2026-11-10",
+"hash": "92b939dfb6b0fe3ffad4d2c6d17548e8"
 },
 "pronunciation/bed": {
-"date": "2026-10-21",
-"hash": "4abf431ed114fab5a1a17e3c73115826"
+"date": "2026-11-10",
+"hash": "458195087ab051af106412cf6b8bd7b8"
+},
+"pronunciation/bedroom": {
+"date": "2026-11-10",
+"hash": "10ea2da72871874b0e2aa3b5997c5f8a"
+},
+"pronunciation/bee": {
+"date": "2026-11-10",
+"hash": "2ec5e1c33fa578e4e762bc690cc5755e"
+},
+"pronunciation/beef": {
+"date": "2026-11-10",
+"hash": "bb6e58e49a36a26b4fd67b907de2ba09"
+},
+"pronunciation/before": {
+"date": "2026-11-10",
+"hash": "d1efbc0859f627afecf231348a2537c9"
+},
+"pronunciation/begin": {
+"date": "2026-11-10",
+"hash": "442f0b28fdaedcbca87049229672d109"
+},
+"pronunciation/behind": {
+"date": "2026-11-10",
+"hash": "a4c44a8d69130ca825f3f9caedbd1e77"
+},
+"pronunciation/believe": {
+"date": "2026-11-10",
+"hash": "d8d95d8937cb12de1301cbb98e9a18ef"
+},
+"pronunciation/bell": {
+"date": "2026-11-10",
+"hash": "3da2854b267d289aa977686a9dd63804"
+},
+"pronunciation/belong": {
+"date": "2026-11-10",
+"hash": "54d112901194b76da1b3ae5415c0ca63"
+},
+"pronunciation/below": {
+"date": "2026-11-10",
+"hash": "fcb8df6126da45e9a082c79b15483202"
+},
+"pronunciation/belt": {
+"date": "2026-11-10",
+"hash": "074375b3ae07f6193632e2f57ff7b603"
+},
+"pronunciation/bench": {
+"date": "2026-11-10",
+"hash": "1429796ffdb13491ecb1572ac432c741"
+},
+"pronunciation/beside": {
+"date": "2026-11-10",
+"hash": "83c8a8eceb812529f3ca7edfaf992fc4"
+},
+"pronunciation/between": {
+"date": "2026-11-10",
+"hash": "dd6b4f043135ef000e7193af676863de"
 },
 "pronunciation/bicycle": {
-"date": "2026-10-21",
-"hash": "0fe7a0f654ec1f0c6325b4f67776c054"
+"date": "2026-11-10",
+"hash": "69e2bc7568f7ad76347d3869b31521c9"
+},
+"pronunciation/big": {
+"date": "2026-11-10",
+"hash": "0f92576ac232b7a9e7a92ebeed967158"
 },
 "pronunciation/bird": {
-"date": "2026-10-21",
-"hash": "078b7f53078ff6eabb58553f53434234"
+"date": "2026-11-10",
+"hash": "7dedb45b0391db029c4f54ec23d61998"
 },
 "pronunciation/birthday": {
-"date": "2026-10-21",
-"hash": "5ba09ab31ce3ee1612cac13076cf85c5"
+"date": "2026-11-10",
+"hash": "e5d53a6948013f06fe21c24a95acb105"
+},
+"pronunciation/bite": {
+"date": "2026-11-10",
+"hash": "32f4efe590a253b9e368a357fa2b6f1e"
+},
+"pronunciation/black": {
+"date": "2026-11-10",
+"hash": "a7721d686911f0ba53b6bc3722cf953c"
 },
 "pronunciation/blackboard": {
-"date": "2026-10-21",
-"hash": "3afbcbc6fc89b9ff7b794df98da20376"
+"date": "2026-11-10",
+"hash": "e0ac3e9e564c7e8c84c1d1c747e6e2fc"
+},
+"pronunciation/blank": {
+"date": "2026-11-10",
+"hash": "6476c2d7e32ba6e201f3ec7f5770f8fd"
 },
 "pronunciation/blanket": {
-"date": "2026-10-21",
-"hash": "c06867b5005dc113ea44517950ef0dc1"
+"date": "2026-11-10",
+"hash": "82ea892547487407e727409ab99a9ba1"
+},
+"pronunciation/blind": {
+"date": "2026-11-10",
+"hash": "53e14625eaf22e27750af468b8f7c7c4"
+},
+"pronunciation/block": {
+"date": "2026-11-10",
+"hash": "c12907dd7c371c658b173a001cca2c72"
+},
+"pronunciation/blow": {
+"date": "2026-11-10",
+"hash": "e4f06ab6cbdedb751c12e94c6f88b851"
+},
+"pronunciation/blue": {
+"date": "2026-11-10",
+"hash": "30bf0f001871c0534759fc7db2a99f91"
+},
+"pronunciation/boat": {
+"date": "2026-11-10",
+"hash": "3cfb8bffdb79b3bb10c191f9f77253d8"
+},
+"pronunciation/body": {
+"date": "2026-11-10",
+"hash": "58c9aaa1bf9f77688c6c1fc7d26f9c9e"
+},
+"pronunciation/boil": {
+"date": "2026-11-10",
+"hash": "271db95d9d2a20a550b3c810c9fab5e1"
+},
+"pronunciation/book": {
+"date": "2026-11-10",
+"hash": "10cccb0010a345e1109d35c7dbb1bb29"
+},
+"pronunciation/bookstore": {
+"date": "2026-11-10",
+"hash": "3704157362bce8bcada39252b6266c22"
+},
+"pronunciation/bored": {
+"date": "2026-11-10",
+"hash": "2adc8e0449d3d77b18e1ef9404f2ac88"
+},
+"pronunciation/boring": {
+"date": "2026-11-10",
+"hash": "8e0892841f6f5ed15ceb85178766a9c4"
+},
+"pronunciation/born": {
+"date": "2026-11-10",
+"hash": "7c9e90f2d9a44cf580a2429bd424c177"
+},
+"pronunciation/borrow": {
+"date": "2026-11-10",
+"hash": "c4e8cb8a7c6faa0c2f1c0952eb588ccf"
+},
+"pronunciation/boss": {
+"date": "2026-11-10",
+"hash": "95fcd5851a52647be641ee0bcc7d3a98"
+},
+"pronunciation/both": {
+"date": "2026-11-10",
+"hash": "637b06c6e216a61a8368bd4ac707b7b9"
+},
+"pronunciation/bottle": {
+"date": "2026-11-10",
+"hash": "1539adfae02889bb8325124333b0920d"
+},
+"pronunciation/bottom": {
+"date": "2026-11-10",
+"hash": "ce8f6496279de3b2a365c00b494a5d0f"
+},
+"pronunciation/bowl": {
+"date": "2026-11-10",
+"hash": "154811b6ba1b21c1c9866c7d7ed81462"
+},
+"pronunciation/box": {
+"date": "2026-11-10",
+"hash": "a888598445030b92d5c393d8e4b68bf4"
+},
+"pronunciation/boy": {
+"date": "2026-11-10",
+"hash": "eb62fa8c8a1045c1a63a782e4fa2109b"
+},
+"pronunciation/brave": {
+"date": "2026-11-10",
+"hash": "0868b7bbf99881f2bc898e8edd58a1fc"
+},
+"pronunciation/bread": {
+"date": "2026-11-10",
+"hash": "0d7b7f71a710b8190beba00cd59467ca"
+},
+"pronunciation/break": {
+"date": "2026-11-10",
+"hash": "49e8a150413918471700f9cafbdc4e13"
+},
+"pronunciation/breakfast": {
+"date": "2026-11-10",
+"hash": "405b627f42dd0f1aaddf1b7b1ddc4153"
+},
+"pronunciation/bridge": {
+"date": "2026-11-10",
+"hash": "6a2a80f398e76d3dd8cc04b30e8fddc8"
+},
+"pronunciation/bright": {
+"date": "2026-11-10",
+"hash": "0f64ed426e55f0df422e8f0f79ec42e5"
+},
+"pronunciation/bring": {
+"date": "2026-11-10",
+"hash": "2ab555e8a56a1d960c3cf3a653bd0d8b"
 },
 "pronunciation/brother": {
-"date": "2026-10-21",
-"hash": "f77dceb1db6c45c43547b55c36a226ca"
+"date": "2026-11-10",
+"hash": "8e63c2ba06d1ade2880a9a206ec2f960"
+},
+"pronunciation/brown": {
+"date": "2026-11-10",
+"hash": "54fa382a2c3352dad8000496d5b4039f"
+},
+"pronunciation/brush": {
+"date": "2026-11-10",
+"hash": "ed1c2240b29f0d4dd2a126d5a7f6b5de"
+},
+"pronunciation/bug": {
+"date": "2026-11-10",
+"hash": "425c70ed2f10e276f5f5366c099cc0ae"
+},
+"pronunciation/build": {
+"date": "2026-11-10",
+"hash": "77db9814d7904431fa3454eaed318092"
+},
+"pronunciation/bun": {
+"date": "2026-11-10",
+"hash": "0236697f7d162126e0e7332b9eaecc7e"
+},
+"pronunciation/burn": {
+"date": "2026-11-10",
+"hash": "fc418b8a0a02298ab31932ce644ba41b"
+},
+"pronunciation/bus": {
+"date": "2026-11-10",
+"hash": "f623ce859744cba276493f76343ee271"
+},
+"pronunciation/business": {
+"date": "2026-11-10",
+"hash": "ed14482bb27ce75feca94fb988e44a80"
 },
 "pronunciation/businessman": {
-"date": "2026-10-21",
-"hash": "28fea4eabf302a693a6ef9972946af3d"
+"date": "2026-11-10",
+"hash": "71b0f99de6af83c12acf616852522029"
+},
+"pronunciation/busy": {
+"date": "2026-11-10",
+"hash": "3ff69032f665237ab5ad95b7970dd8d1"
+},
+"pronunciation/but": {
+"date": "2026-11-10",
+"hash": "baccb4319414c5bba381f879c59d20a8"
+},
+"pronunciation/butter": {
+"date": "2026-11-10",
+"hash": "d87bab6c2ecc940e58b216b37c6c2f14"
 },
 "pronunciation/butterfly": {
-"date": "2026-10-21",
-"hash": "f53248934b6ddf22aee1e60db7537ae5"
+"date": "2026-11-10",
+"hash": "2907818880a8172ba849419d54be1647"
+},
+"pronunciation/button": {
+"date": "2026-11-10",
+"hash": "18e1ddc396bd213f9c41f854ac704ba9"
+},
+"pronunciation/buy": {
+"date": "2026-11-10",
+"hash": "3e0efafe25ac4854672a4ef922cbe8d7"
+},
+"pronunciation/by": {
+"date": "2026-11-10",
+"hash": "d08489194d52c455577e2d3fbfb9b315"
 },
 "pronunciation/cake": {
-"date": "2026-10-21",
-"hash": "0fe1d77973b1d8a7cd14e7f5485e9eff"
+"date": "2026-11-10",
+"hash": "fb5312ca60344afe0886900c47dd54fd"
+},
+"pronunciation/call": {
+"date": "2026-11-10",
+"hash": "a6593e616d9f8832b4c0d68e93708f78"
 },
 "pronunciation/camera": {
-"date": "2026-10-21",
-"hash": "ad6a7e120e65cffdf4ba3b2f7acebf07"
+"date": "2026-11-10",
+"hash": "3aadee41bff9b216aae6e17ac49c3b7b"
+},
+"pronunciation/camp": {
+"date": "2026-11-10",
+"hash": "625d0802594ee57458f1aa8234a5c1e2"
+},
+"pronunciation/can": {
+"date": "2026-11-10",
+"hash": "8c9c35c562dc5de2286ea8e393423eeb"
 },
 "pronunciation/candle": {
-"date": "2026-10-21",
-"hash": "aa3ff24d06bd9b45c9cdaa8df8c4f1a4"
+"date": "2026-11-10",
+"hash": "ae66f69f347198497ddd06bb10c2eb78"
+},
+"pronunciation/candy": {
+"date": "2026-11-10",
+"hash": "69b31b881b45cf96ccdbec607ab9a241"
+},
+"pronunciation/cap": {
+"date": "2026-11-10",
+"hash": "f18b04bc78160b9162505385bf382265"
+},
+"pronunciation/car": {
+"date": "2026-11-10",
+"hash": "96502504e62e7f039e62303d7bdd2360"
+},
+"pronunciation/card": {
+"date": "2026-11-10",
+"hash": "089e2258c1a9734d86c7cfc7355d07d5"
+},
+"pronunciation/care": {
+"date": "2026-11-10",
+"hash": "076a3cdc23b4ac4bf610c684495c412c"
+},
+"pronunciation/careful": {
+"date": "2026-11-10",
+"hash": "245d9dae66930819edf8aa94670768ef"
+},
+"pronunciation/carry": {
+"date": "2026-11-10",
+"hash": "a8dad48e6338115c85944fd1eb756d0d"
+},
+"pronunciation/case": {
+"date": "2026-11-10",
+"hash": "0840b5f5796cd23f9559942c1a116649"
 },
 "pronunciation/castle": {
-"date": "2026-10-21",
-"hash": "e5c113ad898cde02c89bd4f7344123ea"
+"date": "2026-11-10",
+"hash": "25617bf11826a5f876514294718628e1"
 },
 "pronunciation/cat": {
-"date": "2026-10-21",
-"hash": "0873c9bf71dd47efaf9f9aa44ee274c6"
+"date": "2026-11-10",
+"hash": "767fe7135f4f14a5d9c2f891a6ad5902"
+},
+"pronunciation/catch": {
+"date": "2026-11-10",
+"hash": "f27243962f6470592b9a5974fd65fb1b"
 },
 "pronunciation/celebrate": {
-"date": "2026-10-21",
-"hash": "22af1b6295925cab41ba055500ed80d7"
+"date": "2026-11-10",
+"hash": "4d621b2d0377cc07d914512b9fcdea03"
+},
+"pronunciation/cellphone": {
+"date": "2026-11-10",
+"hash": "28ad9ede57ba71eb0d01088c6cd449fc"
+},
+"pronunciation/cent": {
+"date": "2026-11-10",
+"hash": "82bcb7e663694871ea93c1e0818f4e63"
+},
+"pronunciation/center": {
+"date": "2026-11-10",
+"hash": "d7827c8ed1c134715b4eb98323af361b"
 },
 "pronunciation/centimeter": {
-"date": "2026-10-21",
-"hash": "3b385fdeb3c5214b487d5d038b83de8a"
+"date": "2026-11-10",
+"hash": "ba9e58254a8123ca652b3caa60ecdc3e"
 },
 "pronunciation/chair": {
-"date": "2026-10-21",
-"hash": "a2bea1f9b344bcf8beb960a0a59abe15"
+"date": "2026-11-10",
+"hash": "2498e4d231061dc1633ab78ad66d9912"
+},
+"pronunciation/chalk": {
+"date": "2026-11-10",
+"hash": "ee55f0e5d677fe56bf65e4bd866988f1"
+},
+"pronunciation/chance": {
+"date": "2026-11-10",
+"hash": "d4a795f3c3b6fbda5d9fc138c7e1e200"
+},
+"pronunciation/change": {
+"date": "2026-11-10",
+"hash": "1dddca30abe0af652f162d6da5572a69"
+},
+"pronunciation/cheap": {
+"date": "2026-11-10",
+"hash": "810519c35825d7242351516b3bef46bf"
+},
+"pronunciation/cheat": {
+"date": "2026-11-10",
+"hash": "1730fe2cc17f1ce5f6a477003abf54ae"
+},
+"pronunciation/check": {
+"date": "2026-11-10",
+"hash": "ec0eb118fc590f37957912e42c663643"
+},
+"pronunciation/cheer": {
+"date": "2026-11-10",
+"hash": "fff6fbdcbb6d153a130f89a409d3f7f0"
+},
+"pronunciation/cheese": {
+"date": "2026-11-10",
+"hash": "172df05c22f764edc6630ebb0ee21008"
+},
+"pronunciation/chicken": {
+"date": "2026-11-10",
+"hash": "b4c678de1c9c84cf2b586beec456ba9e"
+},
+"pronunciation/child": {
+"date": "2026-11-10",
+"hash": "16fe02c43712e632e37a00d401654b96"
+},
+"pronunciation/china": {
+"date": "2026-11-10",
+"hash": "4b247115acfcb3577abf0862a643a5f8"
+},
+"pronunciation/chinese": {
+"date": "2026-11-10",
+"hash": "3a3a89057da66e8d793826274c863cf7"
 },
 "pronunciation/chocolate": {
-"date": "2026-10-21",
-"hash": "732b140dd5dc47a8b2257ba54feb1dcf"
+"date": "2026-11-10",
+"hash": "7e3c93d65270f416a7ebfdb63f717903"
+},
+"pronunciation/choice": {
+"date": "2026-11-10",
+"hash": "f6997b7bde031b9621b8acdddb0626b9"
+},
+"pronunciation/choose": {
+"date": "2026-11-10",
+"hash": "62143c229034d427f6033f4728655d71"
+},
+"pronunciation/chopsticks": {
+"date": "2026-11-10",
+"hash": "2d0459bb283b7c2ef38fc334a325e8b3"
 },
 "pronunciation/christmas": {
-"date": "2026-10-21",
-"hash": "e5093ae16143366e9c31ebc1e17e30eb"
+"date": "2026-11-10",
+"hash": "78ac02e3019d9cd523a1f40314cdfe3d"
+},
+"pronunciation/church": {
+"date": "2026-11-10",
+"hash": "188aa38841e1653da8b57b96200eecdf"
 },
 "pronunciation/circle": {
-"date": "2026-10-21",
-"hash": "e7ebae82be416183c2f1783e54ee4355"
+"date": "2026-11-10",
+"hash": "05fea0460f8ac75dca1c7264ad35660c"
+},
+"pronunciation/city": {
+"date": "2026-11-10",
+"hash": "6325cca8c82b3a518a49fa4e0e3fc00b"
+},
+"pronunciation/clap": {
+"date": "2026-11-10",
+"hash": "7b3092714395800a723065d03b516eed"
+},
+"pronunciation/class": {
+"date": "2026-11-10",
+"hash": "1521ae0712a9944792617842321c10b9"
+},
+"pronunciation/classmate": {
+"date": "2026-11-10",
+"hash": "0036182e5b73abc5ac12dce52ccc18a7"
+},
+"pronunciation/classroom": {
+"date": "2026-11-10",
+"hash": "a6cc4f10b047ebedc7936dd1dc4a6ecd"
+},
+"pronunciation/clean": {
+"date": "2026-11-10",
+"hash": "bb5c77cb27a1eb1b839d718613c221d4"
+},
+"pronunciation/clear": {
+"date": "2026-11-10",
+"hash": "eed789f119946c275f7f6727ef9d6059"
+},
+"pronunciation/clerk": {
+"date": "2026-11-10",
+"hash": "1915486bf8d32f2c20856e0bc7945446"
+},
+"pronunciation/climb": {
+"date": "2026-11-10",
+"hash": "f4a22cc9447f535d69e5e7b47ada2703"
+},
+"pronunciation/clock": {
+"date": "2026-11-10",
+"hash": "2e095fb999ab3d08f42e3137c574d443"
 },
 "pronunciation/clothes": {
-"date": "2026-10-21",
-"hash": "51e54ceac832980dcdfa37a7fd22059b"
+"date": "2026-11-10",
+"hash": "04c0a930311602c81ece4ec011866569"
+},
+"pronunciation/cloud": {
+"date": "2026-11-10",
+"hash": "3d0d1277af80751a42fdc1ab30199d0c"
+},
+"pronunciation/cloudy": {
+"date": "2026-11-10",
+"hash": "df2d2e810c9b3e2e322ad59305150b75"
+},
+"pronunciation/club": {
+"date": "2026-11-10",
+"hash": "3f3c9c17578443503cc9b0b891eb3c69"
+},
+"pronunciation/coat": {
+"date": "2026-11-10",
+"hash": "3e918a9c64c6622b94b74861216c00e9"
+},
+"pronunciation/coffee": {
+"date": "2026-11-10",
+"hash": "99572731e4a6f1f3bd86205244125d1f"
+},
+"pronunciation/cold": {
+"date": "2026-11-10",
+"hash": "539bbaed7ae23e3e3938864f10754fee"
+},
+"pronunciation/collect": {
+"date": "2026-11-10",
+"hash": "1abca647c43634b6de2603b8d854606b"
+},
+"pronunciation/color": {
+"date": "2026-11-10",
+"hash": "2ad3b931b6be4cca1eb91ef9ca11c2d1"
+},
+"pronunciation/comb": {
+"date": "2026-11-10",
+"hash": "898df9db94f19ef76150cfc85614fe72"
+},
+"pronunciation/come": {
+"date": "2026-11-10",
+"hash": "b0b5a238c3fac8f5a2e4bf53175823e7"
 },
 "pronunciation/comfortable": {
-"date": "2026-10-21",
-"hash": "4aafc6ad660f937b44664ac2aeedfe48"
+"date": "2026-11-10",
+"hash": "23bcfeac594b66198579adca996fd62b"
+},
+"pronunciation/comic": {
+"date": "2026-11-10",
+"hash": "228b9798a7e100ba6439bda95ac9dddc"
+},
+"pronunciation/common": {
+"date": "2026-11-10",
+"hash": "b30ba3513d860275ff3e3bad0aee16e3"
 },
 "pronunciation/computer": {
-"date": "2026-10-21",
-"hash": "06eb8f243c875a73a87e7b0528ddb1ee"
+"date": "2026-11-10",
+"hash": "2bf0ea6e1ffd418101a70ce21742a225"
 },
 "pronunciation/convenient": {
-"date": "2026-10-21",
-"hash": "1c8e654d315429bebebd6b6a3c2695b2"
+"date": "2026-11-10",
+"hash": "3d540d217a4fd99b2304194c5feb4e1c"
+},
+"pronunciation/cook": {
+"date": "2026-11-10",
+"hash": "58cca248604bc2f6f8eb05923694a80e"
+},
+"pronunciation/cookie": {
+"date": "2026-11-10",
+"hash": "b38ee1e46167d8a40b8cea3e6b40fbf5"
+},
+"pronunciation/cool": {
+"date": "2026-11-10",
+"hash": "2357d906d4ed9559e6d45059e7ae6322"
+},
+"pronunciation/copy": {
+"date": "2026-11-10",
+"hash": "356088ab5cc83e9a8efbeca85f638e70"
+},
+"pronunciation/corner": {
+"date": "2026-11-10",
+"hash": "fb7f1d4185fc102072c0cfd1b6d7ae2d"
 },
 "pronunciation/correct": {
-"date": "2026-10-21",
-"hash": "8615e2983afc1315241a0fc165697085"
+"date": "2026-11-10",
+"hash": "633d5a5b273bf5ec51b4bb9f898c4fcc"
+},
+"pronunciation/cost": {
+"date": "2026-11-10",
+"hash": "64ec2aa59d0c70c777b4a08aa5d80881"
+},
+"pronunciation/couch": {
+"date": "2026-11-10",
+"hash": "386a5fa76c165c6bb3de2f14d6059150"
+},
+"pronunciation/could": {
+"date": "2026-11-10",
+"hash": "1fddac8c12330457ea481506fb2dbf6f"
+},
+"pronunciation/count": {
+"date": "2026-11-10",
+"hash": "b4e34da843f200e4db36ba75c1da0c86"
+},
+"pronunciation/country": {
+"date": "2026-11-10",
+"hash": "12b85fe54e330f7731b84a1628a3858e"
+},
+"pronunciation/course": {
+"date": "2026-11-10",
+"hash": "bbf87200df160709a2c13725d9447231"
+},
+"pronunciation/cousin": {
+"date": "2026-11-10",
+"hash": "5a3669d8d4c24e95d3026e8605d77e3c"
 },
 "pronunciation/cover": {
-"date": "2026-10-21",
-"hash": "c0c9d8f3ed1a86fad72d4a326f9cf899"
+"date": "2026-11-10",
+"hash": "5632ce43b7b7b17888ee59d06a6d942f"
+},
+"pronunciation/cow": {
+"date": "2026-11-10",
+"hash": "b2c6a265ad61f18fd62f5b2d1e5535a0"
+},
+"pronunciation/crazy": {
+"date": "2026-11-10",
+"hash": "4e01e6a3f204be1cb8b90a22214dfd4e"
+},
+"pronunciation/cross": {
+"date": "2026-11-10",
+"hash": "66eef4a5e0640a860ea2479244e8d4d1"
+},
+"pronunciation/cry": {
+"date": "2026-11-10",
+"hash": "0267edb1c4cf30c59021760c2eb2ce9f"
+},
+"pronunciation/cup": {
+"date": "2026-11-10",
+"hash": "e8ceee0a614742776b4201041055ea7c"
+},
+"pronunciation/cut": {
+"date": "2026-11-10",
+"hash": "e424d6c305bd6cc6917d372f7c68ed94"
+},
+"pronunciation/cute": {
+"date": "2026-11-10",
+"hash": "d9993bcfbf0786bb4d45ba3b18016def"
+},
+"pronunciation/dance": {
+"date": "2026-11-10",
+"hash": "aeb42460de84d6a8172c2ba4ab163697"
 },
 "pronunciation/dangerous": {
-"date": "2026-10-21",
-"hash": "9675e0f2b082660f496c5e0defb5e373"
+"date": "2026-11-10",
+"hash": "2393e1819d28f1d580dcd34f4faf785f"
+},
+"pronunciation/dark": {
+"date": "2026-11-10",
+"hash": "ccfd88fe9ff614403a4c853e232db7bf"
+},
+"pronunciation/date": {
+"date": "2026-11-10",
+"hash": "89af7026d8d0ce0d0731566178fea011"
 },
 "pronunciation/daughter": {
-"date": "2026-10-21",
-"hash": "c91536758dc6611a9bbd169f2f3fc959"
+"date": "2026-11-10",
+"hash": "da24d767d9784c8bf7f55ec809620f0e"
 },
 "pronunciation/day": {
-"date": "2026-10-21",
-"hash": "5dca5f6d72735852b753fb2f32e9e5ff"
+"date": "2026-11-10",
+"hash": "7eebdf7970ad0eea814b9af4fd985267"
+},
+"pronunciation/deal": {
+"date": "2026-11-10",
+"hash": "01de5625abe846fb2d1c5d2414d68e72"
+},
+"pronunciation/dear": {
+"date": "2026-11-10",
+"hash": "4ffcc7280dba99c069d217c2c856c92c"
 },
 "pronunciation/december": {
-"date": "2026-10-21",
-"hash": "2cdfee4468689286243a90931324e7ad"
+"date": "2026-11-10",
+"hash": "118461e2f00efff3cff02d6ae6b078da"
+},
+"pronunciation/decide": {
+"date": "2026-11-10",
+"hash": "3c4354d69e7d40262cfca07dfa766ba1"
+},
+"pronunciation/deep": {
+"date": "2026-11-10",
+"hash": "56b30aecf88d24fd18d18fdb989c5425"
+},
+"pronunciation/define": {
+"date": "2026-11-10",
+"hash": "530c8551744cbabc8e6bce1c7bce95c0"
 },
 "pronunciation/delicious": {
-"date": "2026-10-21",
-"hash": "9418be4feca599c089bdab4e77d407e8"
+"date": "2026-11-10",
+"hash": "0223d4bae3e828372ea6be479b5f4136"
+},
+"pronunciation/dentist": {
+"date": "2026-11-10",
+"hash": "13cc626916fea04f8b112429970f6765"
+},
+"pronunciation/desk": {
+"date": "2026-11-10",
+"hash": "0184f76154fc794de8274be9f1a74b6b"
 },
 "pronunciation/dictionary": {
-"date": "2026-10-21",
-"hash": "b5c3e79b66e91af72fb3fd5bbef8fd9f"
+"date": "2026-11-10",
+"hash": "c63368c13af2b7b9eea1190eac27bebe"
 },
 "pronunciation/different": {
-"date": "2026-10-21",
-"hash": "b192e7fe5970993ab1460723e16dc7d6"
+"date": "2026-11-10",
+"hash": "621abfa91395403a2f53171c838c0ff5"
 },
 "pronunciation/difficult": {
-"date": "2026-10-21",
-"hash": "92981fc057b45aba5f15a909ca7767f9"
+"date": "2026-11-10",
+"hash": "8f0250719f77935401c8e30d7ce77081"
+},
+"pronunciation/dig": {
+"date": "2026-11-10",
+"hash": "7a43c25230b94937bfaded6812b46ff5"
+},
+"pronunciation/dinner": {
+"date": "2026-11-10",
+"hash": "6ed7ae5a3c4006b8fca7e3b1b8d9374d"
+},
+"pronunciation/dirty": {
+"date": "2026-11-10",
+"hash": "540d02e8e230458746e8f820607ed955"
+},
+"pronunciation/dish": {
+"date": "2026-11-10",
+"hash": "90bb3f2b249ba837ae5e55f6d2ab9488"
+},
+"pronunciation/do": {
+"date": "2026-11-10",
+"hash": "a169acfcb989e9493c0ce1069e264a5a"
 },
 "pronunciation/doctor": {
-"date": "2026-10-21",
-"hash": "7d7234be5845d71bda478500f9567803"
+"date": "2026-11-10",
+"hash": "8aa2ce83b8538a47d4d89f317fc2a21f"
+},
+"pronunciation/dog": {
+"date": "2026-11-10",
+"hash": "10aa2e04a9b7033e4e49617048b8b6c1"
+},
+"pronunciation/doll": {
+"date": "2026-11-10",
+"hash": "69d67f68d6e0338091f53e76a73f1232"
+},
+"pronunciation/dollar": {
+"date": "2026-11-10",
+"hash": "99b78f797929146e64db40e560116479"
+},
+"pronunciation/door": {
+"date": "2026-11-10",
+"hash": "1e23bde41eca175a24b3379bf6c2dd8e"
+},
+"pronunciation/dot": {
+"date": "2026-11-10",
+"hash": "738b0a293d8bf96f5c7a05b7ef943fad"
+},
+"pronunciation/down": {
+"date": "2026-11-10",
+"hash": "aa4eda6ce1af76a83e601ae8021f8e24"
+},
+"pronunciation/download": {
+"date": "2026-11-10",
+"hash": "16e403799d0f95fb2490d8eb76f6e20c"
+},
+"pronunciation/dozen": {
+"date": "2026-11-10",
+"hash": "a9fc4fdae62108939babc89a890b7325"
+},
+"pronunciation/draw": {
+"date": "2026-11-10",
+"hash": "7feef821a3f90f17f3a93072b7775f84"
+},
+"pronunciation/drawer": {
+"date": "2026-11-10",
+"hash": "aed233634ec8dbbb90a16316bb0b8184"
+},
+"pronunciation/dream": {
+"date": "2026-11-10",
+"hash": "4512be9300b04d6e09a204561bd0bc95"
+},
+"pronunciation/dress": {
+"date": "2026-11-10",
+"hash": "10794e7d9c643c1a6619b246144cda46"
+},
+"pronunciation/drink": {
+"date": "2026-11-10",
+"hash": "550f1b0cbb1b7fa367eafd04ff5634da"
+},
+"pronunciation/drive": {
+"date": "2026-11-10",
+"hash": "927b6af1d9bbac7c9bf5c4580061de9a"
 },
 "pronunciation/driver": {
-"date": "2026-10-21",
-"hash": "f5b7934ceb0996218d607ebc30b00c84"
+"date": "2026-11-10",
+"hash": "0b61ed4f00f04ba900131d4e9a8909ad"
+},
+"pronunciation/drop": {
+"date": "2026-11-10",
+"hash": "bbd6caac633a8001e6c8b0ea87179bd3"
+},
+"pronunciation/drum": {
+"date": "2026-11-10",
+"hash": "85e20c930ecf0959a01beb702edbe83e"
+},
+"pronunciation/dry": {
+"date": "2026-11-10",
+"hash": "a484ca6d8cb5c86a2a63fb9563d20c9d"
+},
+"pronunciation/duck": {
+"date": "2026-11-10",
+"hash": "c1280d82c570e6eb9c4cda3bd7a7e123"
+},
+"pronunciation/during": {
+"date": "2026-11-10",
+"hash": "62d250a39b6838b91de1c831c5e5a543"
+},
+"pronunciation/each": {
+"date": "2026-11-10",
+"hash": "7ee3387ea9308ab79a0fd61cc56f4633"
 },
 "pronunciation/ear": {
-"date": "2026-10-21",
-"hash": "3e4bfec1f3612fa00aabbd3630600058"
+"date": "2026-11-10",
+"hash": "8e06b4860d5b1aaa45e0c28374582c85"
+},
+"pronunciation/early": {
+"date": "2026-11-10",
+"hash": "84fd1da28fcf53fe2e02c57d95796dc1"
 },
 "pronunciation/earth": {
-"date": "2026-10-21",
-"hash": "64b7fdb9d840b0474aecf3582f13a0eb"
+"date": "2026-11-10",
+"hash": "b04251d7a0dc1de29edafc1ed7b934df"
 },
 "pronunciation/earthquake": {
-"date": "2026-10-21",
-"hash": "7e9f4f32b74cf5d334e2ea85a628d930"
+"date": "2026-11-10",
+"hash": "9916804f109e5843555a2a565e097196"
+},
+"pronunciation/east": {
+"date": "2026-11-10",
+"hash": "e998898df2aee13ae12c664ba44183ac"
+},
+"pronunciation/easter": {
+"date": "2026-11-10",
+"hash": "b5abce2a8d573a22004e13c88aa7180d"
+},
+"pronunciation/easy": {
+"date": "2026-11-10",
+"hash": "37de7bc47c665f129d7ac1b11922c5f9"
+},
+"pronunciation/eat": {
+"date": "2026-11-10",
+"hash": "82f3f64c7d2a41defe8b5c795bfcc1b0"
+},
+"pronunciation/egg": {
+"date": "2026-11-10",
+"hash": "f52ed93ac204a2a9b1c8328665e21b16"
 },
 "pronunciation/eight": {
-"date": "2026-10-21",
-"hash": "ca37cd1cec2de722f9349f03130f5fde"
+"date": "2026-11-10",
+"hash": "29381e01ad5c5201be8a4877e8d4cfd2"
 },
 "pronunciation/eighteen": {
-"date": "2026-10-21",
-"hash": "2f0f1cc0fc47b7560004f68c7e5c71fc"
+"date": "2026-11-10",
+"hash": "45f51dc76de2f8fb2d73b0230c07f433"
+},
+"pronunciation/eighty": {
+"date": "2026-11-10",
+"hash": "43b86f5abeea676f14a5c00cdad04003"
 },
 "pronunciation/either": {
-"date": "2026-10-21",
-"hash": "48bc146d252ec3c14e1d260e976849ad"
+"date": "2026-11-10",
+"hash": "c787620d5fe3de08c7a26b3dc0ab4c51"
 },
 "pronunciation/elephant": {
-"date": "2026-10-21",
-"hash": "1891d3f29ab36e382da32d7d19879088"
+"date": "2026-11-10",
+"hash": "83e06e646f74dad15122c7fe6b5e8f28"
 },
 "pronunciation/eleven": {
-"date": "2026-10-21",
-"hash": "c531cc65311e487c32aefd46f97c4267"
+"date": "2026-11-10",
+"hash": "edb66746a91cc20737160a693c81b4dd"
+},
+"pronunciation/else": {
+"date": "2026-11-10",
+"hash": "23b8d5db8bf9c3fad819c47241671033"
+},
+"pronunciation/end": {
+"date": "2026-11-10",
+"hash": "7179c2ed98c641683520a7ea9f8536e7"
 },
 "pronunciation/engineer": {
-"date": "2026-10-21",
-"hash": "3736874568174be24ad045324382845e"
+"date": "2026-11-10",
+"hash": "eddccd92d4b3600daa9e7fb858b3350b"
 },
 "pronunciation/english": {
-"date": "2026-10-21",
-"hash": "a90f0035e81fd7c2264f71d6e4c35b0e"
+"date": "2026-11-10",
+"hash": "fd001036555bc271f7eb1691f6832fd5"
+},
+"pronunciation/enjoy": {
+"date": "2026-11-10",
+"hash": "a47424672511f6d0195e704c4bbf0db3"
+},
+"pronunciation/enough": {
+"date": "2026-11-10",
+"hash": "c06f8517a5cb67714646d29b72f91c13"
+},
+"pronunciation/enter": {
+"date": "2026-11-10",
+"hash": "677221afc04fb0a7d5ce2c073454561a"
 },
 "pronunciation/envelope": {
-"date": "2026-10-21",
-"hash": "f58b42f804a7b92101131c01ddb45193"
+"date": "2026-11-10",
+"hash": "9cb593442e9949da4cc40c8d12730057"
 },
 "pronunciation/eraser": {
-"date": "2026-10-21",
-"hash": "1e45b65b0a800959dd4f96d1b6a125cc"
+"date": "2026-11-10",
+"hash": "c97cf880c9ad029de698afb84f093c1a"
+},
+"pronunciation/error": {
+"date": "2026-11-10",
+"hash": "47c7e88de3a9712d80f5ee74c8826b8a"
+},
+"pronunciation/eve": {
+"date": "2026-11-10",
+"hash": "42d728acb35055da106e408197ca635a"
 },
 "pronunciation/even": {
-"date": "2026-10-21",
-"hash": "fbdefc1205df2c802afc90fcf531394e"
+"date": "2026-11-10",
+"hash": "4086a6d02e0d5735a806d50bf6f2aad0"
 },
 "pronunciation/evening": {
-"date": "2026-10-21",
-"hash": "90f72bc3f9ef9687700fcb033a4bc80d"
+"date": "2026-11-10",
+"hash": "e89f255991a78625af1a8af6c8f8cb67"
 },
 "pronunciation/ever": {
-"date": "2026-10-21",
-"hash": "f6a540436ea12063716794156babdc39"
+"date": "2026-11-10",
+"hash": "c564b0504a6bf4a5c56675ef83ccec70"
 },
 "pronunciation/every": {
-"date": "2026-10-21",
-"hash": "ed57e0a21d7b65bc7c4a9be99849bd6a"
+"date": "2026-11-10",
+"hash": "0f0e7b9f08f4444d28f3f8cb8edb9fe0"
 },
 "pronunciation/everyone": {
-"date": "2026-10-21",
-"hash": "5ff404232dead1f9382d83eb7ec940e0"
+"date": "2026-11-10",
+"hash": "9b1ab717c0bec6642a70b3797120cb8e"
 },
 "pronunciation/everything": {
-"date": "2026-10-21",
-"hash": "539a1fd7511166d0e61e43d92256f67a"
+"date": "2026-11-10",
+"hash": "5cd9efcfc57adedaf2bb8abbe125a303"
 },
 "pronunciation/example": {
-"date": "2026-10-21",
-"hash": "14be9d4933bf2d6889f035ae3054dce1"
+"date": "2026-11-10",
+"hash": "89a892c38904e3d64933bc5267175471"
 },
 "pronunciation/excellent": {
-"date": "2026-10-21",
-"hash": "e6862dce99bc0af5d32588e85bcbbdca"
+"date": "2026-11-10",
+"hash": "e7b5ba0807e7f3aab642e9809475c1c7"
+},
+"pronunciation/except": {
+"date": "2026-11-10",
+"hash": "57aa2f4ebf566d0f1d0f83a79f9a51db"
 },
 "pronunciation/excited": {
-"date": "2026-10-21",
-"hash": "58eca36e37e36e27b4f8b8b995bdaabe"
+"date": "2026-11-10",
+"hash": "3554772f2df2ee9aacee3168416c9be9"
 },
 "pronunciation/exciting": {
-"date": "2026-10-21",
-"hash": "d1f9200965d62d94c9eae6a5f6443d15"
+"date": "2026-11-10",
+"hash": "72ddecc7e021f2fa1d60c533a96aae31"
 },
 "pronunciation/exercise": {
-"date": "2026-10-21",
-"hash": "d57dadbd98e77b6f0f56b5ad396a33a2"
+"date": "2026-11-10",
+"hash": "787d7147a26030358b48aba4714b7ab8"
+},
+"pronunciation/expect": {
+"date": "2026-11-10",
+"hash": "24a96f72a4aa7d2d99a038c4ca8dd203"
 },
 "pronunciation/expensive": {
-"date": "2026-10-21",
-"hash": "09542063dca9c6bef4a068d026614cdd"
+"date": "2026-11-10",
+"hash": "fb7b61909482dcfdc278f43b792e6222"
 },
 "pronunciation/experience": {
-"date": "2026-10-21",
-"hash": "c9df003b34e1edc265bb4fec2cb1c793"
+"date": "2026-11-10",
+"hash": "9b36be4c912264bcd3c937ef48125c83"
+},
+"pronunciation/explain": {
+"date": "2026-11-10",
+"hash": "95a7d99e4b2d2b8dd500b46dc0a9357f"
 },
 "pronunciation/eye": {
-"date": "2026-10-21",
-"hash": "b468d24e016eb995ea65225cdee4aef9"
+"date": "2026-11-10",
+"hash": "bc9866983b3c0b9720a63dfca09f8ff7"
+},
+"pronunciation/face": {
+"date": "2026-11-10",
+"hash": "dfbdedbca45f53802f566064ad7a6478"
+},
+"pronunciation/fact": {
+"date": "2026-11-10",
+"hash": "f1222992328d635d19d51beccfed9699"
 },
 "pronunciation/factory": {
-"date": "2026-10-21",
-"hash": "b310bd475d827d643257332bbf2b47e8"
+"date": "2026-11-10",
+"hash": "0a8a85c16e66b658c547236612fe6b95"
+},
+"pronunciation/fail": {
+"date": "2026-11-10",
+"hash": "0c14c2c875f42bd50420a0135981aa0e"
+},
+"pronunciation/fall": {
+"date": "2026-11-10",
+"hash": "4e14c76f8bff9d2b9361604e55033689"
 },
 "pronunciation/family": {
-"date": "2026-10-21",
-"hash": "12c879331f1a7d54fc862fb64aab6f56"
+"date": "2026-11-10",
+"hash": "0ae4fe9c622c5ea331386f7d99dc2a0d"
+},
+"pronunciation/famous": {
+"date": "2026-11-10",
+"hash": "3d98f62268edbe4eacd1938b5fd6da13"
+},
+"pronunciation/fan": {
+"date": "2026-11-10",
+"hash": "1412e157f156598b78164c4a550ca2ab"
+},
+"pronunciation/far": {
+"date": "2026-11-10",
+"hash": "c25109a7b662206242a14da253aa61e6"
+},
+"pronunciation/farm": {
+"date": "2026-11-10",
+"hash": "4daec1bc609ba7f720e98dbcebd5b1e7"
+},
+"pronunciation/farmer": {
+"date": "2026-11-10",
+"hash": "0fde0f2273f3974ac6745ad99fa89734"
+},
+"pronunciation/fast": {
+"date": "2026-11-10",
+"hash": "83f4c4e56cc71143a867a4c82c3449e8"
+},
+"pronunciation/fat": {
+"date": "2026-11-10",
+"hash": "b390b845269a9e03884864445e2d4999"
 },
 "pronunciation/father": {
-"date": "2026-10-21",
-"hash": "f4c171e63becf08f51d7403982b26cd4"
+"date": "2026-11-10",
+"hash": "d839af0cb94171b324a1804dabe24290"
 },
 "pronunciation/favorite": {
-"date": "2026-10-21",
-"hash": "c0f2ad3033587c1d1e78d1e789d33195"
+"date": "2026-11-10",
+"hash": "f7b4461b1f470644c92b7a5f8c6a333f"
 },
 "pronunciation/february": {
-"date": "2026-10-21",
-"hash": "82981af6f37d0d9b5b03ecdb6b22dc76"
+"date": "2026-11-10",
+"hash": "e069155d52cc51c1f37e0f877264c3d1"
+},
+"pronunciation/feed": {
+"date": "2026-11-10",
+"hash": "70ca5d4c053e82671e3323649f5787b0"
+},
+"pronunciation/feel": {
+"date": "2026-11-10",
+"hash": "33fa8fb807976961a7f2c2dee22e1d42"
 },
 "pronunciation/festival": {
-"date": "2026-10-21",
-"hash": "92f42860e696e14effc9ce529d7e8609"
+"date": "2026-11-10",
+"hash": "9ee476445f3c9e730dda27074f6bf799"
 },
 "pronunciation/fever": {
-"date": "2026-10-21",
-"hash": "4021dd251c25ff5d6098d26aec7d3e64"
+"date": "2026-11-10",
+"hash": "984228f3bd6aa1545687390734bc4a75"
+},
+"pronunciation/few": {
+"date": "2026-11-10",
+"hash": "2e9d2e80a719095479dbdd1cd1ceefe9"
+},
+"pronunciation/fifteen": {
+"date": "2026-11-10",
+"hash": "40f7b837c28103cb569dc9b1d72de108"
+},
+"pronunciation/fifty": {
+"date": "2026-11-10",
+"hash": "9079386a423f727d1be49d741610cf3f"
+},
+"pronunciation/fight": {
+"date": "2026-11-10",
+"hash": "daa1e2eb3fd7f87cf03b810f75da285f"
+},
+"pronunciation/file": {
+"date": "2026-11-10",
+"hash": "9f30d1a7f0d4547d699e4690d4d05f1d"
 },
 "pronunciation/fill": {
-"date": "2026-10-21",
-"hash": "f8dd38cc22ee3babbe46b4c6038d3d2c"
+"date": "2026-11-10",
+"hash": "3523a8e0173100dcb4a2a6821bbafd4f"
 },
 "pronunciation/finally": {
-"date": "2026-10-21",
-"hash": "9e0dbdcf535ea42f095cc5f3faa294ab"
+"date": "2026-11-10",
+"hash": "d78bbd8d6bbdde0956ae33b1781e4c9d"
+},
+"pronunciation/find": {
+"date": "2026-11-10",
+"hash": "eef0e4e9dfde938b30e6c0c31077d3e8"
+},
+"pronunciation/fine": {
+"date": "2026-11-10",
+"hash": "d760b47307ad995ddf9745c231308555"
 },
 "pronunciation/finger": {
-"date": "2026-10-21",
-"hash": "227da09d40b63b50b1af853e8b120642"
+"date": "2026-11-10",
+"hash": "23817b655975a8648161d3a763345669"
+},
+"pronunciation/finish": {
+"date": "2026-11-10",
+"hash": "0cae20fa49fc87eb07cf950797bfe4d0"
+},
+"pronunciation/fire": {
+"date": "2026-11-10",
+"hash": "8436545672c49fd2a17c2b3626a90045"
+},
+"pronunciation/first": {
+"date": "2026-11-10",
+"hash": "179c8c5b42cef658372f7cae0576d437"
+},
+"pronunciation/fish": {
+"date": "2026-11-10",
+"hash": "8b718da21cc5136473fe94f30a61a336"
 },
 "pronunciation/fisherman": {
-"date": "2026-10-21",
-"hash": "cf7a97b2095e1487d508b814c05bcba1"
+"date": "2026-11-10",
+"hash": "6257d4d0fe2d855541d29b5d3c601de3"
+},
+"pronunciation/five": {
+"date": "2026-11-10",
+"hash": "fb8e7fd6225ee775331389b09346a5ee"
+},
+"pronunciation/fix": {
+"date": "2026-11-10",
+"hash": "3980cba452c51ddcf336cf0313ce9d32"
+},
+"pronunciation/floor": {
+"date": "2026-11-10",
+"hash": "a607587a4295bb97118976d5dcadfd38"
+},
+"pronunciation/flower": {
+"date": "2026-11-10",
+"hash": "ddf01f1d8c1d32bfdcbb74f993b3d06f"
+},
+"pronunciation/fly": {
+"date": "2026-11-10",
+"hash": "af04356c7bb0582ca90324581dd5dba5"
+},
+"pronunciation/follow": {
+"date": "2026-11-10",
+"hash": "9d33e3478758e031d876e1f8c11cf305"
 },
 "pronunciation/food": {
-"date": "2026-10-21",
-"hash": "60f557643b0efa58e6d708fea7d757ae"
+"date": "2026-11-10",
+"hash": "7694784003fa1da89a99f70d922e7673"
+},
+"pronunciation/fool": {
+"date": "2026-11-10",
+"hash": "4a7a1b3c030ef2b39f603b1ff35061a9"
+},
+"pronunciation/foot": {
+"date": "2026-11-10",
+"hash": "78d2ca7bd7d50e204388f7db68e64289"
+},
+"pronunciation/for": {
+"date": "2026-11-10",
+"hash": "69e02191cadfe413e7f483fd0b89b9e6"
 },
 "pronunciation/foreign": {
-"date": "2026-10-21",
-"hash": "2e259650fdd72a1bd3cc1230c025508c"
+"date": "2026-11-10",
+"hash": "725af02ec67f0ddcf20548833b126bf6"
 },
 "pronunciation/foreigner": {
-"date": "2026-10-21",
-"hash": "92d22bd0e7353e48ec2101c69a538399"
+"date": "2026-11-10",
+"hash": "eeb4f2e2ed38019a61f5e596357f753d"
+},
+"pronunciation/forget": {
+"date": "2026-11-10",
+"hash": "9e7267a8c28e083e2a2e031945ee2eb1"
+},
+"pronunciation/fork": {
+"date": "2026-11-10",
+"hash": "feb1b8cb8f53b7215f3e03573be479c0"
+},
+"pronunciation/forty": {
+"date": "2026-11-10",
+"hash": "656886f1ceac158d09ff732552ef717e"
+},
+"pronunciation/four": {
+"date": "2026-11-10",
+"hash": "1cf7e3dfc9e5c5ee8c1be6cefdc0cef3"
+},
+"pronunciation/fourteen": {
+"date": "2026-11-10",
+"hash": "bbaa951e63a17966835e33cf183c6033"
+},
+"pronunciation/fox": {
+"date": "2026-11-10",
+"hash": "10652fb276c11a53ba3a2dd2f24c7ee5"
+},
+"pronunciation/free": {
+"date": "2026-11-10",
+"hash": "600c9cbf66880ea37db368244511ad17"
+},
+"pronunciation/fresh": {
+"date": "2026-11-10",
+"hash": "e5d6ac4b3428ce3c714347ceccdc900a"
+},
+"pronunciation/friday": {
+"date": "2026-11-10",
+"hash": "8cf3e2d21366003f3a5a0fc21d8f5ae4"
+},
+"pronunciation/friend": {
+"date": "2026-11-10",
+"hash": "b645648d3a9dea05e885424a63cd2367"
+},
+"pronunciation/friendly": {
+"date": "2026-11-10",
+"hash": "4e20b0d09be9f28f14ba19f7a4d11e35"
+},
+"pronunciation/fries": {
+"date": "2026-11-10",
+"hash": "4ad7d63b8bc3f96cbd98b6e7d745ba5e"
+},
+"pronunciation/frog": {
+"date": "2026-11-10",
+"hash": "93cba6543b0ec17dad7547757987a716"
+},
+"pronunciation/from": {
+"date": "2026-11-10",
+"hash": "82639e8b2ca7a15bcce6b54d65dfc260"
+},
+"pronunciation/front": {
+"date": "2026-11-10",
+"hash": "02618a6adf98157f29233db096cb3f0e"
+},
+"pronunciation/fruit": {
+"date": "2026-11-10",
+"hash": "9e00a6a70b2cc048ae20d4a6cf629399"
+},
+"pronunciation/fry": {
+"date": "2026-11-10",
+"hash": "940c95a349cb1159965356389404e688"
 },
 "pronunciation/full": {
-"date": "2026-10-21",
-"hash": "04721f6269464355616ad5397126104e"
+"date": "2026-11-10",
+"hash": "9e0a3ec1f938e648ba132c099f1aba07"
+},
+"pronunciation/fun": {
+"date": "2026-11-10",
+"hash": "2a1dbeddd46d15278059631445401f4c"
+},
+"pronunciation/funny": {
+"date": "2026-11-10",
+"hash": "236bcc01d608debedc06ae3f19be9dc6"
+},
+"pronunciation/future": {
+"date": "2026-11-10",
+"hash": "34535955c240a7a4471b54d9e1fb0fd9"
+},
+"pronunciation/game": {
+"date": "2026-11-10",
+"hash": "124dffb775290020b5e5873b47472e9f"
+},
+"pronunciation/garbage": {
+"date": "2026-11-10",
+"hash": "464b03886a22183ac0ddbb0a7c80b524"
+},
+"pronunciation/garden": {
+"date": "2026-11-10",
+"hash": "5aec9214f71a98d7f356ccee267c40c7"
+},
+"pronunciation/gas": {
+"date": "2026-11-10",
+"hash": "53ff578609a6a666363686c17394345f"
+},
+"pronunciation/gate": {
+"date": "2026-11-10",
+"hash": "5e243ad8d1893190ab28c98c749f1d96"
+},
+"pronunciation/get": {
+"date": "2026-11-10",
+"hash": "53a73ad0fba3d2ad0efcf2a44d6d8517"
+},
+"pronunciation/ghost": {
+"date": "2026-11-10",
+"hash": "91b677091ccebff79e574f0c030fa07a"
+},
+"pronunciation/giant": {
+"date": "2026-11-10",
+"hash": "2805f826e246b156a3c4300cea730b31"
+},
+"pronunciation/gift": {
+"date": "2026-11-10",
+"hash": "8527ca2be7a5f239737e7383d5706c11"
 },
 "pronunciation/girl": {
-"date": "2026-10-21",
-"hash": "4589f2038c3a9dcecbbd4d2c74b4205a"
+"date": "2026-11-10",
+"hash": "f39363f586cd5df7e822eb10a17911d2"
 },
 "pronunciation/give": {
-"date": "2026-10-21",
-"hash": "07c5288a57544c7475e4a90d504bf19e"
+"date": "2026-11-10",
+"hash": "b3f48b0a435a61f13a77f3ab6ecd6267"
+},
+"pronunciation/glad": {
+"date": "2026-11-10",
+"hash": "6ddc34c8ef281eb1a7e8d46c4d2d8c30"
+},
+"pronunciation/glass": {
+"date": "2026-11-10",
+"hash": "c109d9497012d3f1c6f4d3137e86baf3"
 },
 "pronunciation/glasses": {
-"date": "2026-10-21",
-"hash": "5f6f9e5e16d956cac4068e6a04a5d714"
+"date": "2026-11-10",
+"hash": "546dfbe380ea89e1ea602149785cb3d6"
+},
+"pronunciation/glove": {
+"date": "2026-11-10",
+"hash": "1e8f9ff53aafc6c16bf07b054806640b"
+},
+"pronunciation/glue": {
+"date": "2026-11-10",
+"hash": "434e6afb01d5e2beafe816979f22307c"
+},
+"pronunciation/go": {
+"date": "2026-11-10",
+"hash": "8ff99e49e41202030cfcfe656928cf89"
+},
+"pronunciation/goat": {
+"date": "2026-11-10",
+"hash": "d2b318c683e3140551347c18a916d242"
+},
+"pronunciation/god": {
+"date": "2026-11-10",
+"hash": "be10a313ac66c44f5d4ba5f679f597f8"
+},
+"pronunciation/good": {
+"date": "2026-11-10",
+"hash": "16d723849f27763dde68c796a6163e2e"
+},
+"pronunciation/goose": {
+"date": "2026-11-10",
+"hash": "a096d121236cbfb031756b7248da829a"
+},
+"pronunciation/grade": {
+"date": "2026-11-10",
+"hash": "98210fafeca97dfff84ce79eb3b6c270"
+},
+"pronunciation/gram": {
+"date": "2026-11-10",
+"hash": "70394c30b4a1383b4c9a1de1f8b15275"
 },
 "pronunciation/grandfather": {
-"date": "2026-10-21",
-"hash": "2870bd04fa7a1f5e7d4757b4c11716b2"
+"date": "2026-11-10",
+"hash": "62c420e4c6dfae9e56a22d36cec5df0d"
 },
 "pronunciation/grandmother": {
-"date": "2026-10-21",
-"hash": "d3cb567ea8ebac7088544dea3f72835a"
+"date": "2026-11-10",
+"hash": "b99d90efa50e58ef4df782b0f725e9e6"
+},
+"pronunciation/grape": {
+"date": "2026-11-10",
+"hash": "2e1c33b6dbffb8b7afedf1342ca10ad9"
+},
+"pronunciation/grass": {
+"date": "2026-11-10",
+"hash": "2a8f7514031ee1eda099f35bcb702b00"
+},
+"pronunciation/gray": {
+"date": "2026-11-10",
+"hash": "0aabc31c6c196106782be47ac8404732"
+},
+"pronunciation/great": {
+"date": "2026-11-10",
+"hash": "236cb1fecf7d33263e7d8756a8891250"
+},
+"pronunciation/green": {
+"date": "2026-11-10",
+"hash": "e216517adfe5d85e8a1ef59008215800"
+},
+"pronunciation/ground": {
+"date": "2026-11-10",
+"hash": "80ae7e50f3d5d11472ac995bbd83e223"
+},
+"pronunciation/group": {
+"date": "2026-11-10",
+"hash": "e76451abe1125aeb1432f51e08f8889e"
+},
+"pronunciation/grow": {
+"date": "2026-11-10",
+"hash": "32f97a20136b1487339086ebc5c3f812"
+},
+"pronunciation/guava": {
+"date": "2026-11-10",
+"hash": "13a8328da366152a9e3ad342c64f32f8"
+},
+"pronunciation/guess": {
+"date": "2026-11-10",
+"hash": "df7a9b78ed7919b3580f74c6738b4187"
 },
 "pronunciation/guitar": {
-"date": "2026-10-21",
-"hash": "e92f9e1cec142f7716b7283bfb6fb4f0"
+"date": "2026-11-10",
+"hash": "9b73194f081dd96846ac526a7af01baf"
+},
+"pronunciation/guy": {
+"date": "2026-11-10",
+"hash": "9f3e3d47d7e7835b68a74cabeabfceab"
+},
+"pronunciation/gym": {
+"date": "2026-11-10",
+"hash": "87f023048f860b54264020603f119a04"
+},
+"pronunciation/habit": {
+"date": "2026-11-10",
+"hash": "b17c12feb72988f532e1675937db1fa5"
 },
 "pronunciation/hair": {
-"date": "2026-10-21",
-"hash": "9117eb9fd5f804e401deb61ac66fc46d"
+"date": "2026-11-10",
+"hash": "12fbed221ccd66c394642b239df35599"
 },
 "pronunciation/half": {
-"date": "2026-10-21",
-"hash": "5eadf619af4e0084b34412ecfc303ae4"
+"date": "2026-11-10",
+"hash": "ef7602b4e60e2488db9321c905725a54"
 },
 "pronunciation/halloween": {
-"date": "2026-10-21",
-"hash": "cc29c5281face8c5265d2cd13b98cb92"
+"date": "2026-11-10",
+"hash": "0ee8199ced49e28e813c7cc015c92098"
+},
+"pronunciation/ham": {
+"date": "2026-11-10",
+"hash": "0816c63ec88070617a13bc3d277c2b81"
 },
 "pronunciation/hamburger": {
-"date": "2026-10-21",
-"hash": "9cd9aa9a23a7560424d7de1a14b78984"
+"date": "2026-11-10",
+"hash": "428bbbed7fb430925f2241b214f4fdf7"
+},
+"pronunciation/hand": {
+"date": "2026-11-10",
+"hash": "98134d2ca94dc9d1aff71071af8e06fd"
+},
+"pronunciation/handsome": {
+"date": "2026-11-10",
+"hash": "cd1d8688c2837235c33e42c47039075d"
+},
+"pronunciation/hang": {
+"date": "2026-11-10",
+"hash": "e1335a8c0936b829f01982e3362d3beb"
 },
 "pronunciation/happen": {
-"date": "2026-10-21",
-"hash": "d5d7f1c634dba5e0ce7c248911d52749"
+"date": "2026-11-10",
+"hash": "2c94e613013af0489e89c385615cb1c9"
 },
 "pronunciation/happy": {
-"date": "2026-10-21",
-"hash": "8f27c34a26df580155c152f0162ffe21"
+"date": "2026-11-10",
+"hash": "3b1136abc7eba8157f00410bff8a43f0"
+},
+"pronunciation/hard": {
+"date": "2026-11-10",
+"hash": "542b09c8260becc304d987ab717cc11e"
 },
 "pronunciation/hat": {
-"date": "2026-10-21",
-"hash": "a5ac895e234192ed206ce5ac9f8ad1c6"
+"date": "2026-11-10",
+"hash": "f0b653eed05e089884dc672df0464ec5"
+},
+"pronunciation/hate": {
+"date": "2026-11-10",
+"hash": "51683e02b7b95b633378d846b82da4d5"
 },
 "pronunciation/have": {
-"date": "2026-10-21",
-"hash": "b15623a4b7853d4172cb48d15e711374"
+"date": "2026-11-10",
+"hash": "2601628bf92a6744ece5481eeafdf84e"
+},
+"pronunciation/he": {
+"date": "2026-11-10",
+"hash": "4883e8330a895cec8b1ef0665010459d"
+},
+"pronunciation/head": {
+"date": "2026-11-10",
+"hash": "223c34768dffb2c385d136630b784919"
+},
+"pronunciation/headache": {
+"date": "2026-11-10",
+"hash": "974d8a4e937ca9519d666669c86f7724"
+},
+"pronunciation/health": {
+"date": "2026-11-10",
+"hash": "0b5da363a8dcff71217664eaee012dcd"
+},
+"pronunciation/healthy": {
+"date": "2026-11-10",
+"hash": "e2101ea43dfc3c0f98d9c9a5129da80d"
+},
+"pronunciation/hear": {
+"date": "2026-11-10",
+"hash": "53c629e1a86801fa1b3d85fff179a5ba"
+},
+"pronunciation/heart": {
+"date": "2026-11-10",
+"hash": "d1ce8dbbf24975403585758c959496b9"
+},
+"pronunciation/heat": {
+"date": "2026-11-10",
+"hash": "8b05d023ec2fa05cf4d099c884bad2ac"
+},
+"pronunciation/heavy": {
+"date": "2026-11-10",
+"hash": "abf5b1c4239e50556123962e7b2b1d21"
+},
+"pronunciation/height": {
+"date": "2026-11-10",
+"hash": "f669c485a579969c67b608e456ab8a09"
+},
+"pronunciation/hello": {
+"date": "2026-11-10",
+"hash": "3955714f98de93565faa4f69ee1b1236"
+},
+"pronunciation/help": {
+"date": "2026-11-10",
+"hash": "72e5746d3f0e0765b499bc23fd55b094"
+},
+"pronunciation/helpful": {
+"date": "2026-11-10",
+"hash": "faa5b202801b12fa9e6b0e666df48bc7"
+},
+"pronunciation/hen": {
+"date": "2026-11-10",
+"hash": "a46f14c9009cfc2e21b88f5f512c3367"
+},
+"pronunciation/here": {
+"date": "2026-11-10",
+"hash": "1af014a2183eb8aecf68d1928060787c"
+},
+"pronunciation/hey": {
+"date": "2026-11-10",
+"hash": "091f6d590b5de661b59da585f45bde2a"
+},
+"pronunciation/hi": {
+"date": "2026-11-10",
+"hash": "590063e969f7a16e440d560f20a5c955"
+},
+"pronunciation/hide": {
+"date": "2026-11-10",
+"hash": "a603afe1a14bf50b0d42f82a31446931"
+},
+"pronunciation/high": {
+"date": "2026-11-10",
+"hash": "1f5f54b8af1d53aaf8706c95d18085b3"
+},
+"pronunciation/hike": {
+"date": "2026-11-10",
+"hash": "68915f2ed5651e528874a6aa8c62bb31"
 },
 "pronunciation/hill": {
-"date": "2026-10-21",
-"hash": "5a030d8d6e1ace9bca8848c194f5de61"
+"date": "2026-11-10",
+"hash": "cdfdf1fa3fb70ae5283c455422003468"
 },
 "pronunciation/history": {
-"date": "2026-10-21",
-"hash": "47186ec4429a3bbf7e22e9a3d08fd94f"
+"date": "2026-11-10",
+"hash": "0540eb805418c13925ae5fa9dc28a1f6"
+},
+"pronunciation/hit": {
+"date": "2026-11-10",
+"hash": "483093aef3c33f5c18f50b7efb84bc3e"
+},
+"pronunciation/hobby": {
+"date": "2026-11-10",
+"hash": "9d13115e81c27f5986b2e35e4bcac6c6"
+},
+"pronunciation/hold": {
+"date": "2026-11-10",
+"hash": "60f2901b9db4317359d9581ef7ad3228"
 },
 "pronunciation/holiday": {
-"date": "2026-10-21",
-"hash": "12bf2c33964717c47ad7c6e7cfd693d6"
+"date": "2026-11-10",
+"hash": "3305ee0b3b9b88de07dae9297f649a2a"
+},
+"pronunciation/home": {
+"date": "2026-11-10",
+"hash": "881726078d031fdb8645bbc9278d9780"
+},
+"pronunciation/homework": {
+"date": "2026-11-10",
+"hash": "3f2ac363bc46ed7467550c67f211dac1"
 },
 "pronunciation/honest": {
-"date": "2026-10-21",
-"hash": "b3f92dfbac21a18b74b2f42f5a482495"
+"date": "2026-11-10",
+"hash": "f39782259abf57ca8bbc30c7c1498473"
+},
+"pronunciation/honey": {
+"date": "2026-11-10",
+"hash": "847b4614699862ebf03c0715a25238ea"
+},
+"pronunciation/hope": {
+"date": "2026-11-10",
+"hash": "e10c66dd16a2334aead98578a0ca8be9"
+},
+"pronunciation/horse": {
+"date": "2026-11-10",
+"hash": "978cc47f52b073cebc23b2a1b6d5c1de"
 },
 "pronunciation/hospital": {
-"date": "2026-10-21",
-"hash": "fc1a8171858c266710ae56077882998e"
+"date": "2026-11-10",
+"hash": "db3a5a5dc6dba41acc0689687d874579"
 },
 "pronunciation/hot": {
-"date": "2026-10-21",
-"hash": "0639385a5242a088902058a6bd67f04b"
+"date": "2026-11-10",
+"hash": "1c7077b4848801afcd48c02625d29018"
 },
 "pronunciation/hotel": {
-"date": "2026-10-21",
-"hash": "6e33664c1056b5da7657f971430ef538"
+"date": "2026-11-10",
+"hash": "2308d907da82f0f703b14dca0659c0cc"
 },
 "pronunciation/hour": {
-"date": "2026-10-21",
-"hash": "39543ac2824667417086b3d8f924c119"
+"date": "2026-11-10",
+"hash": "ab48d51ac31eddf4d3849d8a4e1ec2c2"
+},
+"pronunciation/house": {
+"date": "2026-11-10",
+"hash": "fca0518bbecbcaa8ae30e730d33c9da9"
+},
+"pronunciation/housewife": {
+"date": "2026-11-10",
+"hash": "9a9eee1448fb8c036f33940aec13e0f8"
+},
+"pronunciation/how": {
+"date": "2026-11-10",
+"hash": "01771bd97af42480bb6a89cc869faf2e"
 },
 "pronunciation/however": {
-"date": "2026-10-21",
-"hash": "7893901aab35367dff7b76c490a80670"
+"date": "2026-11-10",
+"hash": "e25c6ef67d577e79b20ad281140bf6f5"
+},
+"pronunciation/hundred": {
+"date": "2026-11-10",
+"hash": "91049c8bd98cf2c07e31a170b8e678e1"
+},
+"pronunciation/hungry": {
+"date": "2026-11-10",
+"hash": "e5092a44ee4e5d936f450560d4128d35"
+},
+"pronunciation/hunt": {
+"date": "2026-11-10",
+"hash": "33c547018c9b959944183aa66da45f02"
+},
+"pronunciation/hurry": {
+"date": "2026-11-10",
+"hash": "bd0a85efc21cec4d4b44882fc3264c29"
+},
+"pronunciation/hurt": {
+"date": "2026-11-10",
+"hash": "ad409157a70b5dcc0e18176058cd66f8"
+},
+"pronunciation/husband": {
+"date": "2026-11-10",
+"hash": "d4a1ad1e5e195edbe241836953846a9c"
 },
 "pronunciation/i": {
-"date": "2026-10-21",
-"hash": "89be4df92cab7544e4ad6249219cb53a"
+"date": "2026-11-10",
+"hash": "2599a419979a3b5f3fbef6d764e8259b"
+},
+"pronunciation/ice": {
+"date": "2026-11-10",
+"hash": "a594bcdaa1e626863b737d54829b73c2"
 },
 "pronunciation/idea": {
-"date": "2026-10-21",
-"hash": "39fb1d75b3ed0007b70933ee4906b9a1"
+"date": "2026-11-10",
+"hash": "d0b5a4d9a50f27a5a1e5530e79cdac9b"
+},
+"pronunciation/if": {
+"date": "2026-11-10",
+"hash": "3b325cbe8202e9bfe9cba36ff266159a"
 },
 "pronunciation/important": {
-"date": "2026-10-21",
-"hash": "68b0d25b3b8fcca1aeeeb294d918a526"
+"date": "2026-11-10",
+"hash": "66e97b0b166da20b27a739de9a05d85f"
+},
+"pronunciation/in": {
+"date": "2026-11-10",
+"hash": "f68e42b3999129aa0ff26731a450dcf3"
+},
+"pronunciation/inch": {
+"date": "2026-11-10",
+"hash": "dae6322f114f87af7bbacdb180568792"
+},
+"pronunciation/insect": {
+"date": "2026-11-10",
+"hash": "6301789e702583a145e57b5abaf2d5d1"
+},
+"pronunciation/inside": {
+"date": "2026-11-10",
+"hash": "3a573d61a11f955a21726ad9223f463a"
+},
+"pronunciation/interest": {
+"date": "2026-11-10",
+"hash": "e91823915f3aefc1807b4172d774f12a"
 },
 "pronunciation/interested": {
-"date": "2026-10-21",
-"hash": "50da6db3f6f7864931b886fedbc1b974"
+"date": "2026-11-10",
+"hash": "1b7e997b34b552a36f04ba949d8baaa1"
 },
 "pronunciation/interesting": {
-"date": "2026-10-21",
-"hash": "95aaa655cef84905cce24c3ab6e5a698"
+"date": "2026-11-10",
+"hash": "3990ef64790846ba4a2aada9c85d8330"
 },
 "pronunciation/internet": {
-"date": "2026-10-21",
-"hash": "53a1a084f9d12a859c2be2ced1415e4f"
+"date": "2026-11-10",
+"hash": "14b1beb5259a61afdc6118371b36a48f"
 },
 "pronunciation/interview": {
-"date": "2026-10-21",
-"hash": "5909bf0235de0b875e54bf89851491f3"
+"date": "2026-11-10",
+"hash": "7e2b22e4a770eb6300c2f5cc917cd48b"
+},
+"pronunciation/into": {
+"date": "2026-11-10",
+"hash": "ff9b157fa3b991a87b37b9f215b8c41b"
+},
+"pronunciation/invite": {
+"date": "2026-11-10",
+"hash": "ffb8534fb051dd428afebfff1678869f"
 },
 "pronunciation/island": {
-"date": "2026-10-21",
-"hash": "ce6f7071e4a1fde24363140fd0ae350b"
+"date": "2026-11-10",
+"hash": "5a11c1f0a74921078e3e92ebdb99e249"
+},
+"pronunciation/it": {
+"date": "2026-11-10",
+"hash": "c63fe2a388e1b1b451c767b3c64d9bf4"
+},
+"pronunciation/item": {
+"date": "2026-11-10",
+"hash": "4278245a2071d55111855a5fb8d2b77b"
+},
+"pronunciation/jacket": {
+"date": "2026-11-10",
+"hash": "6553d4d39e516af3b05fd35b137a2af0"
 },
 "pronunciation/january": {
-"date": "2026-10-21",
-"hash": "07026426979aeff80c8bf3b80941e181"
+"date": "2026-11-10",
+"hash": "821ccc95c039c1f01a3745188ebd8818"
+},
+"pronunciation/jeans": {
+"date": "2026-11-10",
+"hash": "379eb32f91e219a08a8bf678fd8d4f24"
+},
+"pronunciation/job": {
+"date": "2026-11-10",
+"hash": "316d2d4f97e8b7f3c3f7be4e3cf98277"
+},
+"pronunciation/jog": {
+"date": "2026-11-10",
+"hash": "aacd1bc457993a80f2957c3e1b2e97f1"
+},
+"pronunciation/join": {
+"date": "2026-11-10",
+"hash": "e30cb6dfae7296cdea1fe9f1dc821593"
+},
+"pronunciation/joke": {
+"date": "2026-11-10",
+"hash": "57fa5b38549104e3df7cebfd7c90ec51"
+},
+"pronunciation/joy": {
+"date": "2026-11-10",
+"hash": "2552c7fcde4c9539dd241c5baf1741f8"
+},
+"pronunciation/juice": {
+"date": "2026-11-10",
+"hash": "ef902f1bb9ee500097beb5b39bf50d0d"
+},
+"pronunciation/july": {
+"date": "2026-11-10",
+"hash": "d098655f5ed5ed751b67f070f2bddb22"
+},
+"pronunciation/jump": {
+"date": "2026-11-10",
+"hash": "8c98280e689e53726f96153090669181"
+},
+"pronunciation/june": {
+"date": "2026-11-10",
+"hash": "cdfd13878f4759af6e51fe3f84159d4d"
+},
+"pronunciation/just": {
+"date": "2026-11-10",
+"hash": "d56ba77bf04ece6f3304743d2edf9a5e"
+},
+"pronunciation/keep": {
+"date": "2026-11-10",
+"hash": "b9e210da6b46c05971d2109b9dd13075"
+},
+"pronunciation/key": {
+"date": "2026-11-10",
+"hash": "c48fb609e14a0b38838563e351fcbe30"
+},
+"pronunciation/kick": {
+"date": "2026-11-10",
+"hash": "6381e3200bbaac5b27c8e19890450a37"
+},
+"pronunciation/kid": {
+"date": "2026-11-10",
+"hash": "4aa31c1060c8a9bf3489de953d0a56f4"
 },
 "pronunciation/kilogram": {
-"date": "2026-10-21",
-"hash": "107750dbf3ee3961f91b08b55f77ecd0"
+"date": "2026-11-10",
+"hash": "b9a09cc03c60a80cf1bb530f6e104a87"
+},
+"pronunciation/kind": {
+"date": "2026-11-10",
+"hash": "5d3dd60739390cbc9c6a358dfef1da1d"
+},
+"pronunciation/king": {
+"date": "2026-11-10",
+"hash": "b5e3c1907f9c573dd235d72ecdb3742f"
+},
+"pronunciation/kiss": {
+"date": "2026-11-10",
+"hash": "a8018581a71872804ec11d21693e09c8"
+},
+"pronunciation/kitchen": {
+"date": "2026-11-10",
+"hash": "75866f5832ea034531a3d140a7a1816f"
+},
+"pronunciation/kite": {
+"date": "2026-11-10",
+"hash": "0dbd3c1782e62e52dea012b3669e083e"
+},
+"pronunciation/knee": {
+"date": "2026-11-10",
+"hash": "17d1115ce03b7834b4a239d3785e1ef0"
 },
 "pronunciation/knife": {
-"date": "2026-10-21",
-"hash": "844dbc58d8aec24a0aff71e98387e2e5"
+"date": "2026-11-10",
+"hash": "681707ddca17c31f2741447dc3229bdb"
+},
+"pronunciation/knock": {
+"date": "2026-11-10",
+"hash": "74b4a2d1c5e3bc2059fdb09356f72c78"
 },
 "pronunciation/know": {
-"date": "2026-10-21",
-"hash": "33092ac5eb7cb9b0396a36fe2199a20b"
+"date": "2026-11-10",
+"hash": "ed43d4da64d62fa6aa952ace04b3f80c"
+},
+"pronunciation/knowledge": {
+"date": "2026-11-10",
+"hash": "824bab502382fecd7e92f183312f3191"
+},
+"pronunciation/lake": {
+"date": "2026-11-10",
+"hash": "812bb151fe3810fc8058f2275c411d29"
+},
+"pronunciation/lamp": {
+"date": "2026-11-10",
+"hash": "9a9789d8500863b736d7bd7cb8ccfcdc"
+},
+"pronunciation/land": {
+"date": "2026-11-10",
+"hash": "c766504322c9313d93a93568f536d507"
 },
 "pronunciation/language": {
-"date": "2026-10-21",
-"hash": "1ac473080c220fd43bdc81d514152534"
+"date": "2026-11-10",
+"hash": "45c977c7d9d431205441dc5c277206ab"
+},
+"pronunciation/large": {
+"date": "2026-11-10",
+"hash": "29bca543c083619ee698348b41f96a04"
+},
+"pronunciation/last": {
+"date": "2026-11-10",
+"hash": "0f458e6a13bd8ed3ec3099f488007ab1"
+},
+"pronunciation/late": {
+"date": "2026-11-10",
+"hash": "efead1c6dec121db443828ef88c50c58"
+},
+"pronunciation/later": {
+"date": "2026-11-10",
+"hash": "6a19c1d1b3d5f4298d8fdb63fb41d255"
 },
 "pronunciation/laugh": {
-"date": "2026-10-21",
-"hash": "b3ff524640ee92ff97d81243774df254"
+"date": "2026-11-10",
+"hash": "579fd6288185ec6bf9ee70e42bbb7b3c"
+},
+"pronunciation/lawyer": {
+"date": "2026-11-10",
+"hash": "8dbc409b80faea7ee461492e343b0eca"
+},
+"pronunciation/lazy": {
+"date": "2026-11-10",
+"hash": "9cdb8c516a2de9c807eda6649238f409"
+},
+"pronunciation/leader": {
+"date": "2026-11-10",
+"hash": "afe633a6de3dc60edbe64acf6afe24f8"
+},
+"pronunciation/learn": {
+"date": "2026-11-10",
+"hash": "fc6aa52eac7800170275112cb9ee0686"
+},
+"pronunciation/least": {
+"date": "2026-11-10",
+"hash": "ca797fd083dcc39a930832abad1e094e"
+},
+"pronunciation/leave": {
+"date": "2026-11-10",
+"hash": "23e6477ebc988f0627d0a8b157be0116"
+},
+"pronunciation/left": {
+"date": "2026-11-10",
+"hash": "b5124224fab5371862c6ceab23f5bc11"
+},
+"pronunciation/leg": {
+"date": "2026-11-10",
+"hash": "d83f694d4ab79f2de5d11dc821f121f7"
+},
+"pronunciation/lemon": {
+"date": "2026-11-10",
+"hash": "024e0e77d4659da1996c62caddd9027a"
+},
+"pronunciation/lend": {
+"date": "2026-11-10",
+"hash": "188da568642bf2483d4146c3cbf8595f"
+},
+"pronunciation/less": {
+"date": "2026-11-10",
+"hash": "8e3211f44a003eb918c5daccbbbe42a2"
+},
+"pronunciation/lesson": {
+"date": "2026-11-10",
+"hash": "ccee50b53059e1a2d3c079e1dee7977b"
+},
+"pronunciation/let": {
+"date": "2026-11-10",
+"hash": "44d75cc665256aefae581e483330e527"
+},
+"pronunciation/letter": {
+"date": "2026-11-10",
+"hash": "6ac268525aaf2c8b6af1e577ba39572d"
 },
 "pronunciation/level": {
-"date": "2026-10-21",
-"hash": "980f7c6199b758b171cdbd1eac8cba2f"
+"date": "2026-11-10",
+"hash": "7fb2b2e7f20c64dad94b90b7cd144efc"
 },
 "pronunciation/library": {
-"date": "2026-10-21",
-"hash": "ae63b4e8da70cf10dca1ec75dbae299c"
+"date": "2026-11-10",
+"hash": "0bdc43e7047c4a967fc96779b162ba96"
+},
+"pronunciation/lie": {
+"date": "2026-11-10",
+"hash": "fe33e390c5caf5a923536f28d6432be9"
+},
+"pronunciation/life": {
+"date": "2026-11-10",
+"hash": "d22b8ca0d32b77cb17509856b6695624"
+},
+"pronunciation/light": {
+"date": "2026-11-10",
+"hash": "e704f9b0a7d34506821b9fa00d2452ef"
+},
+"pronunciation/like": {
+"date": "2026-11-10",
+"hash": "59bbd9d45a8b968b814d14f5941f397c"
+},
+"pronunciation/line": {
+"date": "2026-11-10",
+"hash": "ea741c71807ab2ba0e16418eab0c7b4e"
 },
 "pronunciation/lion": {
-"date": "2026-10-21",
-"hash": "8f8aeafcc267a88173e0936a8f27f869"
+"date": "2026-11-10",
+"hash": "b68fab4a5bf9fc9521c5a552d8208a0d"
+},
+"pronunciation/lip": {
+"date": "2026-11-10",
+"hash": "1374d291d450b406aebd7ccfcc2a1aef"
+},
+"pronunciation/list": {
+"date": "2026-11-10",
+"hash": "b34522837c84ec7382386ddea9401f32"
 },
 "pronunciation/listen": {
-"date": "2026-10-21",
-"hash": "a9bc7118d3853d8d31490a8d28e5f360"
+"date": "2026-11-10",
+"hash": "b262e1eac3d20a7442638e71845671c4"
+},
+"pronunciation/little": {
+"date": "2026-11-10",
+"hash": "f7e879a7f7fc1b9299493a5f8eb67935"
+},
+"pronunciation/lonely": {
+"date": "2026-11-10",
+"hash": "7409be34e0773f05f6f066929f7ad212"
+},
+"pronunciation/long": {
+"date": "2026-11-10",
+"hash": "7d0359f29ff77ff3e662650fb3b06ca4"
+},
+"pronunciation/look": {
+"date": "2026-11-10",
+"hash": "83f82823c1c9715fa0a1630e723350fe"
+},
+"pronunciation/lose": {
+"date": "2026-11-10",
+"hash": "4049d6ac20745a4f058587a67322e260"
+},
+"pronunciation/loud": {
+"date": "2026-11-10",
+"hash": "b6d4c73234cd8acb099638c9b4f22c34"
+},
+"pronunciation/love": {
+"date": "2026-11-10",
+"hash": "c089035561be6e7100f5237b883ce46e"
+},
+"pronunciation/lovely": {
+"date": "2026-11-10",
+"hash": "fb6368ecdb8e119b4e6d74c5e4721065"
+},
+"pronunciation/low": {
+"date": "2026-11-10",
+"hash": "8337ea096f02dc94a092f8ea23878fc4"
+},
+"pronunciation/lucky": {
+"date": "2026-11-10",
+"hash": "35d53c56575b5bc7e3623367bb35268a"
+},
+"pronunciation/lunch": {
+"date": "2026-11-10",
+"hash": "022d8365856696b365a58a25e7d7421e"
+},
+"pronunciation/machine": {
+"date": "2026-11-10",
+"hash": "168d005d4069155eb9864662bc01be22"
+},
+"pronunciation/mad": {
+"date": "2026-11-10",
+"hash": "8c0a6bb24cd136b3808bc360ceec6a08"
+},
+"pronunciation/magic": {
+"date": "2026-11-10",
+"hash": "79bff8abba799d3da21729a43014f22a"
+},
+"pronunciation/mail": {
+"date": "2026-11-10",
+"hash": "45718b40d6033a9ae75307248c0968fb"
 },
 "pronunciation/mailman": {
-"date": "2026-10-21",
-"hash": "28752fa3cb3607730131e390c6e3f0bf"
+"date": "2026-11-10",
+"hash": "80d106db8619ad284932f0b4adbc31cf"
+},
+"pronunciation/main": {
+"date": "2026-11-10",
+"hash": "efee79fe441fb0ef0787bcc7968f4d04"
+},
+"pronunciation/make": {
+"date": "2026-11-10",
+"hash": "ab82f139eb99af5c77ae820507e0d55c"
 },
 "pronunciation/man": {
-"date": "2026-10-21",
-"hash": "c840767cc660277e4341eabef338cb79"
+"date": "2026-11-10",
+"hash": "c8e57592b4438f38386817e0f9b51d37"
+},
+"pronunciation/many": {
+"date": "2026-11-10",
+"hash": "09b222252c48273bc6edd22801208787"
+},
+"pronunciation/map": {
+"date": "2026-11-10",
+"hash": "576fa4830fc8ff4e037c9c995117a6ae"
+},
+"pronunciation/march": {
+"date": "2026-11-10",
+"hash": "4092c99bbb0d96f33967bf70e3f24123"
+},
+"pronunciation/mark": {
+"date": "2026-11-10",
+"hash": "eb6357d2d8350cd896309b0113b60bcd"
+},
+"pronunciation/marker": {
+"date": "2026-11-10",
+"hash": "0b904ed4c41dbc0590540e0442541549"
+},
+"pronunciation/market": {
+"date": "2026-11-10",
+"hash": "632225b5504fc059a2bc22f4d28bab15"
+},
+"pronunciation/married": {
+"date": "2026-11-10",
+"hash": "601de3cec9ba1b0f45a2f517d86adc96"
+},
+"pronunciation/mask": {
+"date": "2026-11-10",
+"hash": "326b14e033a242cc1227d19396f66f59"
 },
 "pronunciation/math": {
-"date": "2026-10-21",
-"hash": "d0beb53cf88a82b5d8bc75afcc1bd9be"
+"date": "2026-11-10",
+"hash": "5397d6d7f4c152b022f99de920b2151e"
 },
 "pronunciation/matter": {
-"date": "2026-10-21",
-"hash": "9d466165431a64f7ecf0b297ca44c223"
+"date": "2026-11-10",
+"hash": "072c26b94954b1fff98db5e4b3f5218e"
+},
+"pronunciation/may": {
+"date": "2026-11-10",
+"hash": "27a2a2f26a8990b4acbb9214c3d1bd88"
+},
+"pronunciation/maybe": {
+"date": "2026-11-10",
+"hash": "bc60594676c655463721b67a365b68d0"
+},
+"pronunciation/meal": {
+"date": "2026-11-10",
+"hash": "70be6335f3e017c60513b09df793f1b1"
+},
+"pronunciation/mean": {
+"date": "2026-11-10",
+"hash": "ccf401610324c504ec33c39ecad25073"
+},
+"pronunciation/meat": {
+"date": "2026-11-10",
+"hash": "cc2e19310a6c31fae70312b0863db839"
 },
 "pronunciation/medicine": {
-"date": "2026-10-21",
-"hash": "20a6327b8fdc68e71320544cfbe7a13a"
+"date": "2026-11-10",
+"hash": "fb5cc56d63f669cb6901ed592f295534"
 },
 "pronunciation/medium": {
-"date": "2026-10-21",
-"hash": "84357d0ee534ae72558d3e678e1df26f"
+"date": "2026-11-10",
+"hash": "85cb4289306718266309137a1901fe2b"
+},
+"pronunciation/meet": {
+"date": "2026-11-10",
+"hash": "02dd72cac8258aba16b91a19b04665bb"
+},
+"pronunciation/meeting": {
+"date": "2026-11-10",
+"hash": "26bcd3707fbdfd447a9f68348ace722b"
+},
+"pronunciation/member": {
+"date": "2026-11-10",
+"hash": "8ce1cdfdb3bff841abd9a86045a97146"
+},
+"pronunciation/menu": {
+"date": "2026-11-10",
+"hash": "976a5c7075d26ce4699b6cb37a469085"
+},
+"pronunciation/metro": {
+"date": "2026-11-10",
+"hash": "a4452c58654c226845acc5abbb07a8c9"
+},
+"pronunciation/middle": {
+"date": "2026-11-10",
+"hash": "a0c0d2814cdd8a4dbe4f02600ba74925"
+},
+"pronunciation/mile": {
+"date": "2026-11-10",
+"hash": "4cf71059a0b0b73ea3a38b437ae6f539"
+},
+"pronunciation/milk": {
+"date": "2026-11-10",
+"hash": "08bf976cefeb4abd21a2fa59aa4a1fc1"
+},
+"pronunciation/million": {
+"date": "2026-11-10",
+"hash": "16c0cc3bfd13dcd971d30345acc70a82"
+},
+"pronunciation/mind": {
+"date": "2026-11-10",
+"hash": "b272ac119df430490ca567d779bb2672"
+},
+"pronunciation/miss": {
+"date": "2026-11-10",
+"hash": "7d0096bc85ee54a66d48c406250e5d41"
+},
+"pronunciation/mistake": {
+"date": "2026-11-10",
+"hash": "f63d3d36145e77ed6fe6f44c66a27162"
 },
 "pronunciation/modern": {
-"date": "2026-10-21",
-"hash": "14cd361481cebc9b03d07e63e22c17d3"
+"date": "2026-11-10",
+"hash": "59344671dfc32e56de6e09f088d82c51"
+},
+"pronunciation/moment": {
+"date": "2026-11-10",
+"hash": "8351fa8ad8a9281d96741dc08afc11b2"
+},
+"pronunciation/monday": {
+"date": "2026-11-10",
+"hash": "0e7814c29cfc61936df662fd3b617cb8"
+},
+"pronunciation/money": {
+"date": "2026-11-10",
+"hash": "6a0afe3498e80fb40786bc1fb9bc3813"
 },
 "pronunciation/monkey": {
-"date": "2026-10-21",
-"hash": "4867823a5f644241f392e886f5c59896"
+"date": "2026-11-10",
+"hash": "81323fc6bcbaf77a3efb7e9bbe9f530f"
+},
+"pronunciation/month": {
+"date": "2026-11-10",
+"hash": "01a7f146c538676de9cef4765453ece3"
 },
 "pronunciation/moon": {
-"date": "2026-10-21",
-"hash": "bfe86818b8add5e895927461d1c76ee3"
+"date": "2026-11-10",
+"hash": "df2fd0747c2c552f78b3e7f45086df02"
+},
+"pronunciation/mop": {
+"date": "2026-11-10",
+"hash": "98dff7964a465bd8ff5e9b2726fe46cb"
+},
+"pronunciation/more": {
+"date": "2026-11-10",
+"hash": "0a94fb0c67ca9e9d888de69d7efbc827"
+},
+"pronunciation/morning": {
+"date": "2026-11-10",
+"hash": "2d3bb29564ea97a50e08df30b19ca8fb"
+},
+"pronunciation/most": {
+"date": "2026-11-10",
+"hash": "dcd2d11bc8e0e856f04c4541eb83a5f8"
 },
 "pronunciation/mother": {
-"date": "2026-10-21",
-"hash": "3358dd44937d6197f08b2a23c762bfa2"
+"date": "2026-11-10",
+"hash": "77e030c1ff4a42f7e6a753d0d3152618"
 },
 "pronunciation/motorcycle": {
-"date": "2026-10-21",
-"hash": "ffa472196c0ba23605739034334a0f22"
+"date": "2026-11-10",
+"hash": "8d6deab4b9bb682b7687cb21e211e238"
+},
+"pronunciation/mountain": {
+"date": "2026-11-10",
+"hash": "cd96b2fb738fd6534dbd83badf583768"
+},
+"pronunciation/mouse": {
+"date": "2026-11-10",
+"hash": "5f6872c584f8653563ded3ec4ea9fa03"
 },
 "pronunciation/mouth": {
-"date": "2026-10-21",
-"hash": "c7befaa8222dc931e17781e6bac74bb7"
+"date": "2026-11-10",
+"hash": "4d966f0d62b61504a871140773d7a2ce"
+},
+"pronunciation/move": {
+"date": "2026-11-10",
+"hash": "a69e32f5c4b34229f30285b925c354bd"
+},
+"pronunciation/movie": {
+"date": "2026-11-10",
+"hash": "df0f58c2802f58e819e8c9913db82dea"
+},
+"pronunciation/much": {
+"date": "2026-11-10",
+"hash": "4a371d12d3063e4b7f8ac3a8ee7a30f8"
+},
+"pronunciation/mud": {
+"date": "2026-11-10",
+"hash": "54fe5cecde3484672a94357854bf467d"
 },
 "pronunciation/museum": {
-"date": "2026-10-21",
-"hash": "1ceb88d1156bf3911e079a2915aed62e"
+"date": "2026-11-10",
+"hash": "ab3a2b6d2d39d587b792bbfb24e27457"
 },
 "pronunciation/music": {
-"date": "2026-10-21",
-"hash": "777ef2e9e543a2da9bb9d12541a7570a"
+"date": "2026-11-10",
+"hash": "bc5ae62aab5a397398670cabf23b1d0c"
+},
+"pronunciation/must": {
+"date": "2026-11-10",
+"hash": "4a64fde22d46b8af588ee637f870a76f"
+},
+"pronunciation/nail": {
+"date": "2026-11-10",
+"hash": "aa4749f3cf25ee2eb917a98396b1da45"
+},
+"pronunciation/name": {
+"date": "2026-11-10",
+"hash": "d5005d68a52b4488021100a005d8e75f"
 },
 "pronunciation/national": {
-"date": "2026-10-21",
-"hash": "f8b6a5a04e186f97941608c51543524c"
+"date": "2026-11-10",
+"hash": "ba0c7e5ac9bdde3e808f07ab4a64d942"
+},
+"pronunciation/nature": {
+"date": "2026-11-10",
+"hash": "68669ab99b2e134a9ed7096b20b17774"
+},
+"pronunciation/near": {
+"date": "2026-11-10",
+"hash": "54387333db4fa6e1e57286ce2ae512bd"
+},
+"pronunciation/neck": {
+"date": "2026-11-10",
+"hash": "300d6d75cb1e2f2a98a051b92320f169"
+},
+"pronunciation/need": {
+"date": "2026-11-10",
+"hash": "6488b6e4db3ceb39bfedee2d09db0795"
 },
 "pronunciation/neighbor": {
-"date": "2026-10-21",
-"hash": "c7155e90a82cd9ec2188b2a8583847f0"
+"date": "2026-11-10",
+"hash": "00f23567df21b8fc1f0e9b092e64b3f4"
 },
 "pronunciation/never": {
-"date": "2026-10-21",
-"hash": "613ab07d94bc0da66b93bc436e975f15"
+"date": "2026-11-10",
+"hash": "27aa74636b30184ca01d6662265efdb8"
+},
+"pronunciation/new": {
+"date": "2026-11-10",
+"hash": "e4bbc1220fdd8fe073966d2ff2256ca6"
+},
+"pronunciation/news": {
+"date": "2026-11-10",
+"hash": "e51265484b71ed8928e95015d92e80e1"
 },
 "pronunciation/newspaper": {
-"date": "2026-10-21",
-"hash": "8d2d68be7338ad51db391ac7e00790b1"
+"date": "2026-11-10",
+"hash": "f565cceba50f112b327191dd465ca228"
+},
+"pronunciation/next": {
+"date": "2026-11-10",
+"hash": "27f64601c058680c78822b01fa9eab8d"
+},
+"pronunciation/nice": {
+"date": "2026-11-10",
+"hash": "a8bb09efad981b5136ee86ac909455f0"
+},
+"pronunciation/night": {
+"date": "2026-11-10",
+"hash": "cbd760489e525348af7abe71ee5b19dd"
+},
+"pronunciation/nine": {
+"date": "2026-11-10",
+"hash": "a7a0fef361bbcb1173173c8fa7bae0a7"
+},
+"pronunciation/nineteen": {
+"date": "2026-11-10",
+"hash": "970f6196debb649938fe966aa554516c"
+},
+"pronunciation/ninety": {
+"date": "2026-11-10",
+"hash": "5c8dad8305a017ca00a72e4605db416f"
+},
+"pronunciation/no": {
+"date": "2026-11-10",
+"hash": "7063b6c24b39652ab36adfc8e5144ac6"
 },
 "pronunciation/nobody": {
-"date": "2026-10-21",
-"hash": "c6b33f5a4a892cff8b423ce4f220cc3b"
+"date": "2026-11-10",
+"hash": "63eb27d59cdd6d97819a710ec1ad3d9e"
+},
+"pronunciation/noise": {
+"date": "2026-11-10",
+"hash": "7be5a71b04ae2a9bf08f9829261757a3"
+},
+"pronunciation/noisy": {
+"date": "2026-11-10",
+"hash": "42dbdc4bd5f36518e995cd5ad41da030"
+},
+"pronunciation/noodle": {
+"date": "2026-11-10",
+"hash": "f7b100e6c950cae47d83e3e6efc4c0cd"
+},
+"pronunciation/noon": {
+"date": "2026-11-10",
+"hash": "606dfc0880b7e9a2a7be3545cedaffb6"
+},
+"pronunciation/north": {
+"date": "2026-11-10",
+"hash": "ed831e8197a32818a1203eb177658e5c"
+},
+"pronunciation/nose": {
+"date": "2026-11-10",
+"hash": "36c2c12f4b5cf88abc83731e8e0b8149"
+},
+"pronunciation/not": {
+"date": "2026-11-10",
+"hash": "3125b3619d14dd16c5b889e315ac0798"
+},
+"pronunciation/note": {
+"date": "2026-11-10",
+"hash": "47f7530fb870cee3d09fca5fc2808885"
+},
+"pronunciation/notebook": {
+"date": "2026-11-10",
+"hash": "437829ee3b1cb488fedb6a30b444272d"
 },
 "pronunciation/nothing": {
-"date": "2026-10-21",
-"hash": "893c46f0c68eb0e3e0d754cd29a2fada"
+"date": "2026-11-10",
+"hash": "109c02b8d3a8a64dba36619f2381bc80"
+},
+"pronunciation/notice": {
+"date": "2026-11-10",
+"hash": "f2bf30d6472f176b9282f515eb364c85"
 },
 "pronunciation/november": {
-"date": "2026-10-21",
-"hash": "5c9e86f013d91646a1a06e1510cba09f"
+"date": "2026-11-10",
+"hash": "a10cb84e79bd06d110e2c62806c917e0"
+},
+"pronunciation/now": {
+"date": "2026-11-10",
+"hash": "4ad89742732f714e9f9961f2cbf2d6fd"
+},
+"pronunciation/number": {
+"date": "2026-11-10",
+"hash": "e72777536ab1ac8597458985c70e75bc"
 },
 "pronunciation/nurse": {
-"date": "2026-10-21",
-"hash": "93e316c8453157c1a8dd177180abf0df"
+"date": "2026-11-10",
+"hash": "625cc0acdb40185bb2d57081c1974736"
 },
 "pronunciation/october": {
-"date": "2026-10-21",
-"hash": "42c39ca156f76e695512945b3ac3d968"
+"date": "2026-11-10",
+"hash": "11e5b63228f8c66e56d171d2c6504815"
 },
 "pronunciation/of": {
-"date": "2026-10-21",
-"hash": "3b3fd220f5ba6e051c257c9bbdce5de3"
+"date": "2026-11-10",
+"hash": "e8397291982613be80a1ce517a424784"
+},
+"pronunciation/off": {
+"date": "2026-11-10",
+"hash": "92074a13eccb0467b2113bf7a76a2efb"
+},
+"pronunciation/office": {
+"date": "2026-11-10",
+"hash": "ae314c0021fe010ce8a6bf41d818de08"
 },
 "pronunciation/officer": {
-"date": "2026-10-21",
-"hash": "e45bf82ebd6d06b6b703bbf5544beb8e"
+"date": "2026-11-10",
+"hash": "7f4ef975ddbafd3317f78c220b01d621"
 },
 "pronunciation/often": {
-"date": "2026-10-21",
-"hash": "0872a7002c526c94019245082f5217bd"
+"date": "2026-11-10",
+"hash": "7e29b34de7b7e1137bd7b5735411c804"
+},
+"pronunciation/oil": {
+"date": "2026-11-10",
+"hash": "20192c1a6d1db901b057b51e219da13e"
+},
+"pronunciation/ok": {
+"date": "2026-11-10",
+"hash": "12369569632a20b25fffffc0bb0175e6"
+},
+"pronunciation/old": {
+"date": "2026-11-10",
+"hash": "5bcf414916c890f86940dc78aca59552"
 },
 "pronunciation/on": {
-"date": "2026-10-21",
-"hash": "7dac7e472be04b830de6cae737d7abdd"
+"date": "2026-11-10",
+"hash": "f0e23ed00fc0e88fa2c3f3efe882013f"
+},
+"pronunciation/once": {
+"date": "2026-11-10",
+"hash": "bb975d8e81255af62b4373be63de25d5"
 },
 "pronunciation/one": {
-"date": "2026-10-21",
-"hash": "6acc351d1b7a010b33e3eb31a36bd7bd"
+"date": "2026-11-10",
+"hash": "461a4d167bf6342836477e89c88643c3"
+},
+"pronunciation/only": {
+"date": "2026-11-10",
+"hash": "1dad7585dfa72cfb3e89d4a5d11383fd"
+},
+"pronunciation/open": {
+"date": "2026-11-10",
+"hash": "c19760a162ddcf17f3cfcb1b23db84ca"
 },
 "pronunciation/or": {
-"date": "2026-10-21",
-"hash": "a8581c865427c43fc8df6d46d2978961"
+"date": "2026-11-10",
+"hash": "691cf89372db49e101de40962eabaf41"
 },
 "pronunciation/orange": {
-"date": "2026-10-21",
-"hash": "d4eb44c176d1468e0e63a2abfa216dc9"
+"date": "2026-11-10",
+"hash": "48f691399b90f84dba07c161bfbc5d0a"
+},
+"pronunciation/order": {
+"date": "2026-11-10",
+"hash": "4fa178289964df8037715c4698e29bba"
 },
 "pronunciation/other": {
-"date": "2026-10-21",
-"hash": "4b315492c1e9a74aef170b2a2113321e"
+"date": "2026-11-10",
+"hash": "153f90ec78af04869389bbab7eb98dee"
+},
+"pronunciation/out": {
+"date": "2026-11-10",
+"hash": "439393f92223947a181dd68a63c5d739"
+},
+"pronunciation/outside": {
+"date": "2026-11-10",
+"hash": "9454ba12a4efc8ac0e027298382bf4db"
 },
 "pronunciation/over": {
-"date": "2026-10-21",
-"hash": "6a4573df3311514ca6c39de158b1a806"
+"date": "2026-11-10",
+"hash": "25f343ebee5c7785e642739468e67637"
+},
+"pronunciation/own": {
+"date": "2026-11-10",
+"hash": "2b50877af756071510489d4e09e08b25"
+},
+"pronunciation/pack": {
+"date": "2026-11-10",
+"hash": "3b25a50a743a6e408dd2af75d60ec204"
+},
+"pronunciation/package": {
+"date": "2026-11-10",
+"hash": "80d5d2147b6c742ac0a98ecf373ffadc"
+},
+"pronunciation/page": {
+"date": "2026-11-10",
+"hash": "3300428300f55b25f78b4a1a88ee843c"
+},
+"pronunciation/paint": {
+"date": "2026-11-10",
+"hash": "193ecaf1318c6776e566d80fc67f4d90"
+},
+"pronunciation/pair": {
+"date": "2026-11-10",
+"hash": "e499bf73127f5ff8c3f8fb75b7b05306"
+},
+"pronunciation/pants": {
+"date": "2026-11-10",
+"hash": "328811348f10a8bbdab24438299a5dba"
 },
 "pronunciation/papaya": {
-"date": "2026-10-21",
-"hash": "0c6cdebb037d745d82511ba9a2b3c5c2"
+"date": "2026-11-10",
+"hash": "35bcf0f28a157768a710fc9c78b7479b"
+},
+"pronunciation/paper": {
+"date": "2026-11-10",
+"hash": "038b848bc4cfd03676de11ac26155cd9"
+},
+"pronunciation/parent": {
+"date": "2026-11-10",
+"hash": "90c567f80a30452b444e6a9b18d27a79"
+},
+"pronunciation/park": {
+"date": "2026-11-10",
+"hash": "7999dd9579dfed037ec20e2deb3cf2ee"
+},
+"pronunciation/part": {
+"date": "2026-11-10",
+"hash": "3bdb42b3201da7f15f27d0cbb0296ee7"
+},
+"pronunciation/party": {
+"date": "2026-11-10",
+"hash": "3ccce74682fee28c8880a563f20d23bf"
+},
+"pronunciation/pass": {
+"date": "2026-11-10",
+"hash": "ea539729b289813f50de5b3a35fad0c3"
+},
+"pronunciation/past": {
+"date": "2026-11-10",
+"hash": "40b1c989de51f1c6b8262004665cceee"
+},
+"pronunciation/paste": {
+"date": "2026-11-10",
+"hash": "7ddf3a2defa4616cf9746bdfa1e6a64f"
+},
+"pronunciation/pay": {
+"date": "2026-11-10",
+"hash": "9f0af89f7c593057f19bebfe8cea712e"
+},
+"pronunciation/peach": {
+"date": "2026-11-10",
+"hash": "c1ea9101e2d55db0013d6d7689231bd1"
+},
+"pronunciation/pear": {
+"date": "2026-11-10",
+"hash": "3f00367d5fafc439baff340db3d5d6c9"
+},
+"pronunciation/pen": {
+"date": "2026-11-10",
+"hash": "41643c181acc233c3c6cdb113de0bc5a"
+},
+"pronunciation/pencil": {
+"date": "2026-11-10",
+"hash": "b4a793266086badcce63993821e2ca03"
+},
+"pronunciation/people": {
+"date": "2026-11-10",
+"hash": "8f092349fd0048a6d66aea616ea311d5"
 },
 "pronunciation/perhaps": {
-"date": "2026-10-21",
-"hash": "d94273d829c50f324d2071560ac50ddd"
+"date": "2026-11-10",
+"hash": "50d843e5105fa986ca047b573c3bf601"
 },
 "pronunciation/person": {
-"date": "2026-10-21",
-"hash": "b1866c22100c963fd6443c35e0f3ba6e"
+"date": "2026-11-10",
+"hash": "acc2b9a60973c1f319d452b50a997c9c"
+},
+"pronunciation/pet": {
+"date": "2026-11-10",
+"hash": "5c5bbcc3b3056b47b403b8b3ee51cddb"
 },
 "pronunciation/photo": {
-"date": "2026-10-21",
-"hash": "d8567ccf630f580bcc4c65a6c8b91aa3"
+"date": "2026-11-10",
+"hash": "07feb3a999c33c2c9dd3d1f8effa2c1a"
 },
 "pronunciation/piano": {
-"date": "2026-10-21",
-"hash": "98fafdecc156b1001a9ad06fadf18697"
+"date": "2026-11-10",
+"hash": "b8c7f5a3c16be0dd884eab1111205324"
+},
+"pronunciation/pick": {
+"date": "2026-11-10",
+"hash": "fa14cb9e5ab30145491d258f812f02ef"
+},
+"pronunciation/picnic": {
+"date": "2026-11-10",
+"hash": "6f6109ba93f6b99cbad6c9bf10940288"
 },
 "pronunciation/picture": {
-"date": "2026-10-21",
-"hash": "52a7cb96f390e5571780b9d19c14025f"
+"date": "2026-11-10",
+"hash": "3f9dacd2d9098f9dec7183f8bb7dad1b"
+},
+"pronunciation/pie": {
+"date": "2026-11-10",
+"hash": "5cf854787d2781f83fe2718987242995"
+},
+"pronunciation/piece": {
+"date": "2026-11-10",
+"hash": "d525ee859ef0408389ea253acad1c19d"
+},
+"pronunciation/pig": {
+"date": "2026-11-10",
+"hash": "e8b803f4e43f7809fd01d07768616771"
+},
+"pronunciation/pin": {
+"date": "2026-11-10",
+"hash": "94ea608e0c17b7c7640862dad3d9e34f"
+},
+"pronunciation/pink": {
+"date": "2026-11-10",
+"hash": "29e791a582e0003f294abab71524bca3"
+},
+"pronunciation/pipe": {
+"date": "2026-11-10",
+"hash": "d58600ce5be5396d2f118692bd13007d"
 },
 "pronunciation/pizza": {
-"date": "2026-10-21",
-"hash": "a79e164af972e27fcd76b0d740ff56e8"
+"date": "2026-11-10",
+"hash": "39f6b4bcf4cd896c054abbabf0804af5"
+},
+"pronunciation/place": {
+"date": "2026-11-10",
+"hash": "077862d88298b50a20a9f17541bf0944"
+},
+"pronunciation/plan": {
+"date": "2026-11-10",
+"hash": "12fba0f26d2a9b20524721df5001ad2f"
+},
+"pronunciation/planet": {
+"date": "2026-11-10",
+"hash": "4f35e207e8bd4e1cce9c19d571740a8c"
+},
+"pronunciation/plant": {
+"date": "2026-11-10",
+"hash": "0bf4d5c512ec9dac330f0678f7714169"
+},
+"pronunciation/plate": {
+"date": "2026-11-10",
+"hash": "704587f5bfa46240e33b0141b157af14"
+},
+"pronunciation/play": {
+"date": "2026-11-10",
+"hash": "d00d81357b79a4988ae5d6e2c1665f40"
+},
+"pronunciation/player": {
+"date": "2026-11-10",
+"hash": "c35ccf3da3c242f447cb1b40db4be050"
+},
+"pronunciation/playground": {
+"date": "2026-11-10",
+"hash": "b1dea088a44110bb3190b69223bd3fac"
+},
+"pronunciation/please": {
+"date": "2026-11-10",
+"hash": "b9d9a923138b4f12e2ead70f8549c1ff"
 },
 "pronunciation/pleasure": {
-"date": "2026-10-21",
-"hash": "0d43a1f6b53504bb124ee6b95909d91d"
+"date": "2026-11-10",
+"hash": "a058da97a6d17ce36c0d03ba27acf425"
+},
+"pronunciation/pocket": {
+"date": "2026-11-10",
+"hash": "ba0e69ad8aa131bdb97ac0f8adeed2fe"
+},
+"pronunciation/point": {
+"date": "2026-11-10",
+"hash": "ed13a76630606259efad22bff5ea23f7"
 },
 "pronunciation/police": {
-"date": "2026-10-21",
-"hash": "2e04ff8caad8ee3b3c67f97a74881db3"
+"date": "2026-11-10",
+"hash": "9af2370498dd844d08bf0a8c0ec8e017"
+},
+"pronunciation/polite": {
+"date": "2026-11-10",
+"hash": "b5a1933d4199be725a655eb2e7f1d958"
+},
+"pronunciation/pond": {
+"date": "2026-11-10",
+"hash": "60fb67108b6d00f95f68fb88dfbc2d73"
+},
+"pronunciation/pool": {
+"date": "2026-11-10",
+"hash": "3c830621dd35da91c4f8cf5ed12d3949"
+},
+"pronunciation/poor": {
+"date": "2026-11-10",
+"hash": "17fbe77da276b0b1a0ff868571ffa7b4"
+},
+"pronunciation/pop": {
+"date": "2026-11-10",
+"hash": "df43f663e00e51ade9394a8f24b7b444"
 },
 "pronunciation/popcorn": {
-"date": "2026-10-21",
-"hash": "75f983c3a4989a09139d8d61ba853bc0"
+"date": "2026-11-10",
+"hash": "7b935da9ec1ab67c0d09573bb616cd47"
 },
 "pronunciation/popular": {
-"date": "2026-10-21",
-"hash": "19e20004c26b700293495bbf4c3bbabc"
+"date": "2026-11-10",
+"hash": "21864f5ba16ee1ab8abd0d74ba750117"
+},
+"pronunciation/pork": {
+"date": "2026-11-10",
+"hash": "a1a37438ff7d913550157f1ce7d9ca99"
 },
 "pronunciation/possible": {
-"date": "2026-10-21",
-"hash": "899bb2ba8265610508c29e72bcf71bf2"
+"date": "2026-11-10",
+"hash": "4f9dc1094d6394fce3053a6e8f28d4df"
+},
+"pronunciation/postcard": {
+"date": "2026-11-10",
+"hash": "4fc388f76c97786934a86287c8ba35f5"
+},
+"pronunciation/pot": {
+"date": "2026-11-10",
+"hash": "c4322bc6be375b9410d8c9f54f44d1f0"
+},
+"pronunciation/pound": {
+"date": "2026-11-10",
+"hash": "96831ec9c396a55c01f6897f56a11a73"
+},
+"pronunciation/power": {
+"date": "2026-11-10",
+"hash": "1ae5aa0d399cda88036c0158dfc9185c"
+},
+"pronunciation/practice": {
+"date": "2026-11-10",
+"hash": "f1b08d2721b201c3fe019d206fba0488"
+},
+"pronunciation/pray": {
+"date": "2026-11-10",
+"hash": "411b68f2639ebddb4d79a733137379c3"
+},
+"pronunciation/prepare": {
+"date": "2026-11-10",
+"hash": "6addc9fdc59c0711b0a0b328f42f28dc"
+},
+"pronunciation/pretty": {
+"date": "2026-11-10",
+"hash": "93efb28dcfa1ab739caf2bf2a51f2581"
+},
+"pronunciation/price": {
+"date": "2026-11-10",
+"hash": "9b86c5b2ad68859bbdcd29eb9b863e1d"
+},
+"pronunciation/prize": {
+"date": "2026-11-10",
+"hash": "c96dca69d585764aa5fd9017a0556935"
 },
 "pronunciation/probably": {
-"date": "2026-10-21",
-"hash": "285837c4cfcb71448644c48777f2d779"
+"date": "2026-11-10",
+"hash": "16c3cfcca59181bdcafd37199a37a790"
+},
+"pronunciation/problem": {
+"date": "2026-11-10",
+"hash": "e5924086182d01d79b09b34bbfee933d"
+},
+"pronunciation/program": {
+"date": "2026-11-10",
+"hash": "c3a90889f75477623300c5a75b14298e"
+},
+"pronunciation/proud": {
+"date": "2026-11-10",
+"hash": "772c8fa26e0dd1a0181179fbd2ca5661"
+},
+"pronunciation/public": {
+"date": "2026-11-10",
+"hash": "03c9bdad633777c3332317ca3a63f752"
+},
+"pronunciation/pull": {
+"date": "2026-11-10",
+"hash": "ee3782e3a598459f532e96317c37e482"
+},
+"pronunciation/pumpkin": {
+"date": "2026-11-10",
+"hash": "f81ae47d7e680c94ae2f10771a74d981"
+},
+"pronunciation/puppy": {
+"date": "2026-11-10",
+"hash": "22b4802126ca539a8a429dcb3ec4a870"
 },
 "pronunciation/purple": {
-"date": "2026-10-21",
-"hash": "fb6a13852717b9d9270bcd301c5f2da8"
+"date": "2026-11-10",
+"hash": "5e0a5910e24e4a5a920be4982c29d4b2"
+},
+"pronunciation/push": {
+"date": "2026-11-10",
+"hash": "2b3a6479ae4c8483fd12b5f7c2272168"
+},
+"pronunciation/put": {
+"date": "2026-11-10",
+"hash": "4a05f95ab5cfdda1116fd3e4a77f4955"
+},
+"pronunciation/quarter": {
+"date": "2026-11-10",
+"hash": "edb3fe2f3bad9e0d3482c294f40e8f5a"
+},
+"pronunciation/queen": {
+"date": "2026-11-10",
+"hash": "45379211fdce94567931d41eade231a5"
 },
 "pronunciation/question": {
-"date": "2026-10-21",
-"hash": "79bd49691de3c5829113c63623348b39"
+"date": "2026-11-10",
+"hash": "6536b458607bc66f50ea4a671410f28f"
+},
+"pronunciation/quick": {
+"date": "2026-11-10",
+"hash": "8e7405e8e587e594491e992c51fab585"
+},
+"pronunciation/quiet": {
+"date": "2026-11-10",
+"hash": "f2fdf37ed31410f651db34cd13cb5d20"
+},
+"pronunciation/quite": {
+"date": "2026-11-10",
+"hash": "719901a3d1467e1b247cfa58d559c646"
 },
 "pronunciation/quiz": {
-"date": "2026-10-21",
-"hash": "f5422af7df37877af917a162a917a372"
+"date": "2026-11-10",
+"hash": "1f872c8e3a81fffa492f24706b5c0c41"
 },
 "pronunciation/rabbit": {
-"date": "2026-10-21",
-"hash": "21b90fa4296ac56a1f0e9f46b0602085"
+"date": "2026-11-10",
+"hash": "ec0795d2006eb0d8881c478c9e0bdf9f"
+},
+"pronunciation/race": {
+"date": "2026-11-10",
+"hash": "36062c50227197a347f5d0c378fd4b4f"
 },
 "pronunciation/radio": {
-"date": "2026-10-21",
-"hash": "28ebe7cfeb934a5513a19d14b77b1326"
+"date": "2026-11-10",
+"hash": "ccddf2b5840c676ff5b60eff84049c5c"
 },
 "pronunciation/rain": {
-"date": "2026-10-21",
-"hash": "058337022cd7096838776cf2dda1c9ca"
+"date": "2026-11-10",
+"hash": "b3d2c99e6a764e395272363c146be977"
+},
+"pronunciation/rainbow": {
+"date": "2026-11-10",
+"hash": "65764c7982da90d705d5dea848622755"
+},
+"pronunciation/rainy": {
+"date": "2026-11-10",
+"hash": "273034ac774a53b1c790787f57f79bc0"
+},
+"pronunciation/raise": {
+"date": "2026-11-10",
+"hash": "bcf733cd4e61523cbf4898427fb7086d"
+},
+"pronunciation/rat": {
+"date": "2026-11-10",
+"hash": "35de2d9f2f652b4274dba675586681da"
+},
+"pronunciation/reach": {
+"date": "2026-11-10",
+"hash": "0549b6bbd0c744dd236e084b40e8e891"
+},
+"pronunciation/ready": {
+"date": "2026-11-10",
+"hash": "d629ddc2b17f2123864faab00423730a"
+},
+"pronunciation/real": {
+"date": "2026-11-10",
+"hash": "e2c82c9108b19eaedbcc23ff7164eef1"
+},
+"pronunciation/really": {
+"date": "2026-11-10",
+"hash": "db9c30fad9a774398f8ef0b3abaad6a1"
+},
+"pronunciation/reason": {
+"date": "2026-11-10",
+"hash": "b8302b818bdbeb69c436322737c56caa"
+},
+"pronunciation/red": {
+"date": "2026-11-10",
+"hash": "19d2c4472bd4a76c2f7811f6fabc2ca7"
 },
 "pronunciation/refrigerator": {
-"date": "2026-10-21",
-"hash": "32b4447023cb10bd0b41cb5845533ad0"
+"date": "2026-11-10",
+"hash": "870b8fa110680989e9ae6752470cf20a"
 },
 "pronunciation/relative": {
-"date": "2026-10-21",
-"hash": "b1b8bf4a5c7b739224a6eaf1bde565cb"
+"date": "2026-11-10",
+"hash": "056ba2898f7ed579535a1b8479f91fa9"
 },
 "pronunciation/remember": {
-"date": "2026-10-21",
-"hash": "e8b107d3556546b66551bedeaf6533ea"
+"date": "2026-11-10",
+"hash": "be8824e4557b562bb875fc88c274234d"
+},
+"pronunciation/repeat": {
+"date": "2026-11-10",
+"hash": "0c313e799d162ca8664c23a28380b924"
+},
+"pronunciation/report": {
+"date": "2026-11-10",
+"hash": "f34201275166bb41c9ebd31bbbf975c4"
 },
 "pronunciation/reporter": {
-"date": "2026-10-21",
-"hash": "a559a44a5c5e0a6137a477f446654037"
+"date": "2026-11-10",
+"hash": "32e49362853610e76c388e92736503ae"
+},
+"pronunciation/rest": {
+"date": "2026-11-10",
+"hash": "6371f3febdf3926d6954f7fd6b8c9257"
 },
 "pronunciation/restaurant": {
-"date": "2026-10-21",
-"hash": "f1df466bc6446dc563dba3238337defb"
+"date": "2026-11-10",
+"hash": "48a956a166a5c48be0458b7c3e089c67"
+},
+"pronunciation/restroom": {
+"date": "2026-11-10",
+"hash": "736882f155873e4c1a2681431c99deb4"
+},
+"pronunciation/rice": {
+"date": "2026-11-10",
+"hash": "4f4ef0fa4ac87ce0971c5790978b6bda"
+},
+"pronunciation/rich": {
+"date": "2026-11-10",
+"hash": "f8eab92eb2e1888fa886093e293e53f8"
+},
+"pronunciation/ride": {
+"date": "2026-11-10",
+"hash": "df5e81cdbdd7ae384e0a1072c08cd4c4"
+},
+"pronunciation/right": {
+"date": "2026-11-10",
+"hash": "af91b85a9247780725ea84397733d8f4"
+},
+"pronunciation/ring": {
+"date": "2026-11-10",
+"hash": "972d98c791da89e7998f03c9e95c7380"
+},
+"pronunciation/rise": {
+"date": "2026-11-10",
+"hash": "ebd4942e9e98c70b6ffbafd3fdb1cf3b"
 },
 "pronunciation/river": {
-"date": "2026-10-21",
-"hash": "3933c979ae65674fe21cf4d036c69d57"
+"date": "2026-11-10",
+"hash": "3f14b08245bc879fbd850818cd6c819b"
+},
+"pronunciation/road": {
+"date": "2026-11-10",
+"hash": "ec365efdea5fc603c9d4d563cea50c61"
+},
+"pronunciation/robot": {
+"date": "2026-11-10",
+"hash": "a729b67c0eb4f30286ea4e51f945dd83"
+},
+"pronunciation/rock": {
+"date": "2026-11-10",
+"hash": "584f1a85e3f687138507d845317b0d86"
+},
+"pronunciation/roll": {
+"date": "2026-11-10",
+"hash": "edf4949d548d32a1f1d1fccd38bfdec3"
+},
+"pronunciation/room": {
+"date": "2026-11-10",
+"hash": "00e20cad53a02fb25a6807ea33582099"
+},
+"pronunciation/root": {
+"date": "2026-11-10",
+"hash": "3630f346386f4885231d0e0f9f046f54"
+},
+"pronunciation/rope": {
+"date": "2026-11-10",
+"hash": "f532cb653ded1a4c656e14d8df8778c5"
+},
+"pronunciation/rose": {
+"date": "2026-11-10",
+"hash": "4961e2dc448656530d2b094344deaa5c"
+},
+"pronunciation/round": {
+"date": "2026-11-10",
+"hash": "a4f12c1d5ab095a5a06a812b5d59599f"
+},
+"pronunciation/rule": {
+"date": "2026-11-10",
+"hash": "36ca7241c7a4877852186215448b58c6"
+},
+"pronunciation/ruler": {
+"date": "2026-11-10",
+"hash": "2ace90f74c7024e34375b089114330eb"
+},
+"pronunciation/run": {
+"date": "2026-11-10",
+"hash": "af25571a91bec0b1a8ea5507009e4be8"
+},
+"pronunciation/sad": {
+"date": "2026-11-10",
+"hash": "bc00318b4b15098b2113577b51043bdf"
+},
+"pronunciation/safe": {
+"date": "2026-11-10",
+"hash": "b3e6c1343fef0951e4189183eefefe53"
+},
+"pronunciation/sail": {
+"date": "2026-11-10",
+"hash": "7e210e706328e32117c1a47094ba09ed"
 },
 "pronunciation/salad": {
-"date": "2026-10-21",
-"hash": "6d4d7012c25938049764bcca5c661138"
+"date": "2026-11-10",
+"hash": "b5cf31bcb1fd9489f82666e90a3e2784"
+},
+"pronunciation/sale": {
+"date": "2026-11-10",
+"hash": "f1519e79fd29b1f074c0ede374dcf4c8"
+},
+"pronunciation/salesman": {
+"date": "2026-11-10",
+"hash": "49ed52a1b385470126e3c7e8c2b96fcc"
+},
+"pronunciation/salt": {
+"date": "2026-11-10",
+"hash": "ef4290e8f15a7bd40ae5695e284e5f9f"
+},
+"pronunciation/same": {
+"date": "2026-11-10",
+"hash": "92c43be9157f91172bd76da39899acca"
 },
 "pronunciation/sandwich": {
-"date": "2026-10-21",
-"hash": "0659d82aa2c068ec0b3f4a572bdb1817"
+"date": "2026-11-10",
+"hash": "55417ed22250d2095577f10a8cffeb43"
 },
 "pronunciation/saturday": {
-"date": "2026-10-21",
-"hash": "69fc01858917e9c9025fbe12a5e15ceb"
+"date": "2026-11-10",
+"hash": "cdb8a1c91b761a5b6d76f927ae01595a"
+},
+"pronunciation/save": {
+"date": "2026-11-10",
+"hash": "3e9673bd52d3757ebb1d0671eabf6a4f"
+},
+"pronunciation/say": {
+"date": "2026-11-10",
+"hash": "9948a9fa5e0577464016a5c57b8efbcb"
+},
+"pronunciation/scared": {
+"date": "2026-11-10",
+"hash": "c05d0883983b7051c9d4871eece3025d"
 },
 "pronunciation/school": {
-"date": "2026-10-21",
-"hash": "dd323e08719dcbb3637e0b451c0ed5a5"
+"date": "2026-11-10",
+"hash": "f8c30b4314d794124c30e66e1fa6a7c4"
 },
 "pronunciation/science": {
-"date": "2026-10-21",
-"hash": "663909d89533e74b6bb9733d49ea71f2"
+"date": "2026-11-10",
+"hash": "ebcbcca3a453198ae508b8c95e1c1dce"
+},
+"pronunciation/scooter": {
+"date": "2026-11-10",
+"hash": "27e9e4b286dd47a3ba01d3756a6cc16c"
+},
+"pronunciation/screen": {
+"date": "2026-11-10",
+"hash": "6f74e9dcec4c5c92fd1d0d4e0802fbad"
+},
+"pronunciation/sea": {
+"date": "2026-11-10",
+"hash": "dc6909722741c1ee701305b41c02f9d0"
+},
+"pronunciation/season": {
+"date": "2026-11-10",
+"hash": "ec3dae05956e437eff19551c84bdea2f"
+},
+"pronunciation/seat": {
+"date": "2026-11-10",
+"hash": "4f92cb15940b11d91a72fecf3acdcecf"
+},
+"pronunciation/second": {
+"date": "2026-11-10",
+"hash": "a60c0fe2c805283b183a8caa66bab633"
 },
 "pronunciation/secretary": {
-"date": "2026-10-21",
-"hash": "5d11b002d6f0e772c7adb81bff0b5ef2"
+"date": "2026-11-10",
+"hash": "f0efeb8179cc10f6050c328e0b767db7"
 },
 "pronunciation/see": {
-"date": "2026-10-21",
-"hash": "6cfc001790ddd8df8557c44ce3948244"
+"date": "2026-11-10",
+"hash": "2b47088a4fa6af1f2e3fa062abad0024"
+},
+"pronunciation/seed": {
+"date": "2026-11-10",
+"hash": "2ed61cc12798ff8cc6a4cf7c1395d2c8"
+},
+"pronunciation/seesaw": {
+"date": "2026-11-10",
+"hash": "3d9f7970d6e075d14793f159012a5fdb"
+},
+"pronunciation/seldom": {
+"date": "2026-11-10",
+"hash": "6503aabb9aa79e4da39b6b72afa50e51"
+},
+"pronunciation/sell": {
+"date": "2026-11-10",
+"hash": "fdf22e7a070c6f8c081666583ba241f3"
+},
+"pronunciation/send": {
+"date": "2026-11-10",
+"hash": "74a22adcc2773ca74744b84252729e7b"
+},
+"pronunciation/sentence": {
+"date": "2026-11-10",
+"hash": "9d6e8cdc48466f29283cb0366e2908b2"
 },
 "pronunciation/september": {
-"date": "2026-10-21",
-"hash": "be6847d937e5526feb134fe42f9e6534"
+"date": "2026-11-10",
+"hash": "8ab255ed79bed12e6d1066757f7c4ab8"
 },
 "pronunciation/serious": {
-"date": "2026-10-21",
-"hash": "e572063a4810ab2657af9366bb622249"
+"date": "2026-11-10",
+"hash": "0fc76064d4c7244095bfab3f1804764e"
 },
 "pronunciation/service": {
-"date": "2026-10-21",
-"hash": "a6b3e08d1856a02f318746279674405c"
+"date": "2026-11-10",
+"hash": "5680acdc4a1eb7a247ecddfde6873ee0"
+},
+"pronunciation/set": {
+"date": "2026-11-10",
+"hash": "d1654abb73ea6b75d08fbcc2757e892f"
 },
 "pronunciation/seven": {
-"date": "2026-10-21",
-"hash": "86208fb5fbf04d430259d5e40602b558"
+"date": "2026-11-10",
+"hash": "1045da6a208ec27aedec912ccb0424f2"
 },
 "pronunciation/seventeen": {
-"date": "2026-10-21",
-"hash": "759378c78c178c73c2445fdb80a883f6"
+"date": "2026-11-10",
+"hash": "be7454387146c06a3b074b5b18ab65f7"
 },
 "pronunciation/seventy": {
-"date": "2026-10-21",
-"hash": "cb9a00a3f716f63852ff546aa038fa0f"
+"date": "2026-11-10",
+"hash": "0252102b4e19f3b29fad7b62e541c69a"
 },
 "pronunciation/several": {
-"date": "2026-10-21",
-"hash": "233348df8b86cffa8ab1a7e530a19a55"
+"date": "2026-11-10",
+"hash": "cb4a3804f0652d9d272ddd98aae005ca"
+},
+"pronunciation/shake": {
+"date": "2026-11-10",
+"hash": "2b8955e5c54d9a95bf12a6b59ebda8cc"
+},
+"pronunciation/shape": {
+"date": "2026-11-10",
+"hash": "e1519c7af9413ca7c17c216864767759"
+},
+"pronunciation/share": {
+"date": "2026-11-10",
+"hash": "fda888ad4f6aa88fb8c8fcaa1de2d0e0"
+},
+"pronunciation/sharp": {
+"date": "2026-11-10",
+"hash": "6500dc3dc99a1905fc46316c480f9776"
+},
+"pronunciation/she": {
+"date": "2026-11-10",
+"hash": "42dc793d2a235706394e72610161456a"
 },
 "pronunciation/sheep": {
-"date": "2026-10-21",
-"hash": "7363edbf807d5c4d27dfa2e86f99b42e"
+"date": "2026-11-10",
+"hash": "240e26bdc991aa2a3b8b84d87c04dfb3"
+},
+"pronunciation/shine": {
+"date": "2026-11-10",
+"hash": "2d1aa247576affea7663b9165eea221c"
+},
+"pronunciation/ship": {
+"date": "2026-11-10",
+"hash": "b3ff013eeb0fd28bd0406e27a324edc9"
+},
+"pronunciation/shirt": {
+"date": "2026-11-10",
+"hash": "2df7092bca81dc63f65d4f3c8d405da8"
+},
+"pronunciation/shoe": {
+"date": "2026-11-10",
+"hash": "2d2a039bf6a09f2b4b6b2fb0053a4a48"
+},
+"pronunciation/shop": {
+"date": "2026-11-10",
+"hash": "c0ac2b69ea1be71e693d98b4ff0eabdd"
 },
 "pronunciation/shopkeeper": {
-"date": "2026-10-21",
-"hash": "d76d9cea37844250fda1bacb7d7fc210"
+"date": "2026-11-10",
+"hash": "b4c6eb1af6e19d5150a2992622867e4c"
+},
+"pronunciation/short": {
+"date": "2026-11-10",
+"hash": "a6bb1792a697346d699ca79ac5f4bf83"
+},
+"pronunciation/shorts": {
+"date": "2026-11-10",
+"hash": "63107d53ce3fca7a5a00f966141919c8"
+},
+"pronunciation/should": {
+"date": "2026-11-10",
+"hash": "134ec1da4c9dbe11eaa9c4dc79573743"
+},
+"pronunciation/shoulder": {
+"date": "2026-11-10",
+"hash": "ebfc46e5ab9f12d4119e82f92e8909f0"
+},
+"pronunciation/shout": {
+"date": "2026-11-10",
+"hash": "98f18898910692a012c16bfc214b06e1"
+},
+"pronunciation/show": {
+"date": "2026-11-10",
+"hash": "827b82eb10e84fa25e1f51fb6164f1b6"
+},
+"pronunciation/shower": {
+"date": "2026-11-10",
+"hash": "93e5cae4680959c8c0154d99ac05a175"
+},
+"pronunciation/shy": {
+"date": "2026-11-10",
+"hash": "9171a37a942fb040a4907f8e2659fa6c"
+},
+"pronunciation/sick": {
+"date": "2026-11-10",
+"hash": "5988dd262fc726cf61707da42fd892df"
+},
+"pronunciation/side": {
+"date": "2026-11-10",
+"hash": "03963e75616f5f75829b07cfd352d978"
+},
+"pronunciation/sidewalk": {
+"date": "2026-11-10",
+"hash": "0e5b163ca8ca852a63b6d92a01a0d29f"
+},
+"pronunciation/sight": {
+"date": "2026-11-10",
+"hash": "c31765686b3c57189d595620fcf4dfca"
+},
+"pronunciation/sign": {
+"date": "2026-11-10",
+"hash": "67ac2a3fd0408a12f70e567ec21e5f95"
+},
+"pronunciation/simple": {
+"date": "2026-11-10",
+"hash": "8d4a4665924e1c43c83df0e387019ed2"
+},
+"pronunciation/since": {
+"date": "2026-11-10",
+"hash": "5059fc64255e997acce981c52a0c5537"
+},
+"pronunciation/sing": {
+"date": "2026-11-10",
+"hash": "ed6dc3142af5c14cc43d21dfe35b9367"
 },
 "pronunciation/singer": {
-"date": "2026-10-21",
-"hash": "9b8fbe4df99e3d5ee4055e1ee691429e"
+"date": "2026-11-10",
+"hash": "b156fc65c500a83ff378045d94b3d472"
+},
+"pronunciation/sir": {
+"date": "2026-11-10",
+"hash": "a5f5a10b83790a544bb0861378e36db0"
+},
+"pronunciation/sister": {
+"date": "2026-11-10",
+"hash": "05d2c994b960263dfae87abf31cd785a"
+},
+"pronunciation/sit": {
+"date": "2026-11-10",
+"hash": "38351604589de1c855c7bcf0ea9d5a75"
+},
+"pronunciation/six": {
+"date": "2026-11-10",
+"hash": "b4c222a9a245bb3c64cc21fe797fe0d0"
+},
+"pronunciation/sixteen": {
+"date": "2026-11-10",
+"hash": "e9754db8d172a3dd64a9a5b14f1212bb"
+},
+"pronunciation/sixty": {
+"date": "2026-11-10",
+"hash": "3d2f5936ea9f6d60b1bea9f48d0c6f03"
+},
+"pronunciation/size": {
+"date": "2026-11-10",
+"hash": "11d2566644f83e632f206ee691663a58"
+},
+"pronunciation/skirt": {
+"date": "2026-11-10",
+"hash": "392a9722123e905a3a5fb7cc22e97d91"
+},
+"pronunciation/sky": {
+"date": "2026-11-10",
+"hash": "ca2fdd6830283cbc0749fe7c10926d79"
+},
+"pronunciation/sleep": {
+"date": "2026-11-10",
+"hash": "14b9c9276a584a7d57e70cf473c93c92"
+},
+"pronunciation/slide": {
+"date": "2026-11-10",
+"hash": "9448e0032bc8ca02cac2f17401bea546"
+},
+"pronunciation/slim": {
+"date": "2026-11-10",
+"hash": "cdadf635f4eb5f9190403b053582370f"
+},
+"pronunciation/slow": {
+"date": "2026-11-10",
+"hash": "96e6da8c674302e8c68a3e7bf2b90b5a"
+},
+"pronunciation/small": {
+"date": "2026-11-10",
+"hash": "5e1cafb18b5dfdc41a11f5e2123bfb33"
+},
+"pronunciation/smart": {
+"date": "2026-11-10",
+"hash": "995c7a0c56f992bfdff2f798463d565d"
+},
+"pronunciation/smell": {
+"date": "2026-11-10",
+"hash": "df23fc462d351a3ed61ef0fbcdd2f092"
+},
+"pronunciation/smile": {
+"date": "2026-11-10",
+"hash": "24b1c8da93c1c3ee4d7a5dc95ee04c97"
+},
+"pronunciation/smoke": {
+"date": "2026-11-10",
+"hash": "13741dc1160ef751d0f5c77d1b469b0e"
+},
+"pronunciation/snack": {
+"date": "2026-11-10",
+"hash": "f9089abcff3fa4942ba0b55008ec386f"
+},
+"pronunciation/snake": {
+"date": "2026-11-10",
+"hash": "0734759347abc739d16edd574eb22d72"
+},
+"pronunciation/snow": {
+"date": "2026-11-10",
+"hash": "99081376e66092ca825ebeddd2dc4736"
+},
+"pronunciation/snowy": {
+"date": "2026-11-10",
+"hash": "6e563e017ccd707c7f00f27e4dc1b022"
+},
+"pronunciation/so": {
+"date": "2026-11-10",
+"hash": "fd02efe062659f7780aa79a288f109ca"
+},
+"pronunciation/soccer": {
+"date": "2026-11-10",
+"hash": "c7e6d9ba0d856695ba4c50b0a60413b1"
+},
+"pronunciation/socks": {
+"date": "2026-11-10",
+"hash": "008b5f742692b7a868567a6d1cef9a18"
+},
+"pronunciation/sofa": {
+"date": "2026-11-10",
+"hash": "3942e1840beda257ee2bddfb7b7e646b"
+},
+"pronunciation/soldier": {
+"date": "2026-11-10",
+"hash": "6797ecd8d782bfb13d7c158d6633c8ab"
+},
+"pronunciation/some": {
+"date": "2026-11-10",
+"hash": "fe006ddee7ddc6a27dd6be141c3a73ec"
+},
+"pronunciation/someone": {
+"date": "2026-11-10",
+"hash": "23beda9b41d26a4da265d28951f52b0c"
 },
 "pronunciation/something": {
-"date": "2026-10-21",
-"hash": "b4e372c390f5ba6bdee72907c5c917cf"
+"date": "2026-11-10",
+"hash": "f5ba2c166ab4827a4f57cf3b2776ed7b"
 },
 "pronunciation/sometimes": {
-"date": "2026-10-21",
-"hash": "ccaaf572ccb9f788675497c47b720eac"
+"date": "2026-11-10",
+"hash": "879726bc90ff6e561930a7216394ca4f"
+},
+"pronunciation/somewhere": {
+"date": "2026-11-10",
+"hash": "28ddcf40de234b35c9593cc70063ef29"
+},
+"pronunciation/son": {
+"date": "2026-11-10",
+"hash": "cd92570c7d160673d7ca05f121b4494c"
+},
+"pronunciation/song": {
+"date": "2026-11-10",
+"hash": "9868e9511a62253f317402aad7db62bf"
+},
+"pronunciation/soon": {
+"date": "2026-11-10",
+"hash": "49feff8e2383d8abf16a302629467fab"
+},
+"pronunciation/sore": {
+"date": "2026-11-10",
+"hash": "0fd21a9286068061695c385bb6ae247e"
 },
 "pronunciation/sorry": {
-"date": "2026-10-21",
-"hash": "90fdce0ed3f28c4044fd8f990e28b051"
+"date": "2026-11-10",
+"hash": "cf72b36ee7069df7cc3ce39a6572b43a"
 },
 "pronunciation/sound": {
-"date": "2026-10-21",
-"hash": "0a2895f235b72999ddd6a6c294a002a4"
+"date": "2026-11-10",
+"hash": "033a94b272c1a82d04450194397ad60b"
+},
+"pronunciation/soup": {
+"date": "2026-11-10",
+"hash": "6389018471995919c886c30ff1edd6ef"
+},
+"pronunciation/south": {
+"date": "2026-11-10",
+"hash": "5a3ebd9b6b001c36380de960741f46f0"
+},
+"pronunciation/space": {
+"date": "2026-11-10",
+"hash": "646f26c1e5acfb97c77622951eeb4e87"
+},
+"pronunciation/speak": {
+"date": "2026-11-10",
+"hash": "7eee685e0f85e35ac053bb1b79a02f8a"
+},
+"pronunciation/special": {
+"date": "2026-11-10",
+"hash": "8ba538742b26a14c4f590ffd43d75de3"
+},
+"pronunciation/spell": {
+"date": "2026-11-10",
+"hash": "4316389a371c582dd4ce80af05f481de"
+},
+"pronunciation/spend": {
+"date": "2026-11-10",
+"hash": "938a2d04bfdbc4e2c3649f3ec1541cd5"
+},
+"pronunciation/spider": {
+"date": "2026-11-10",
+"hash": "e055c91d49fc9013605d7621e5b73d9b"
+},
+"pronunciation/spoon": {
+"date": "2026-11-10",
+"hash": "1859986cef2296392fa6fb74e66d847d"
+},
+"pronunciation/sports": {
+"date": "2026-11-10",
+"hash": "17f5db721dfbd41aa186a0daa4167a29"
+},
+"pronunciation/spring": {
+"date": "2026-11-10",
+"hash": "170d1e2141c73e4dbeab83dad90e20e7"
+},
+"pronunciation/square": {
+"date": "2026-11-10",
+"hash": "f7e55e0b0eb23eece0a0800f4bd899fc"
+},
+"pronunciation/stairs": {
+"date": "2026-11-10",
+"hash": "75241051982bee9e76f54edfc0481011"
+},
+"pronunciation/stamp": {
+"date": "2026-11-10",
+"hash": "eb206e67b2dea6bbd3fabf3b80bec742"
+},
+"pronunciation/stand": {
+"date": "2026-11-10",
+"hash": "93984426361946dec2f4e1ee9199510f"
+},
+"pronunciation/star": {
+"date": "2026-11-10",
+"hash": "5fce5c7176e20ab86383e38d317fa661"
+},
+"pronunciation/start": {
+"date": "2026-11-10",
+"hash": "ac39af185ae8e83847ad58fd0fbf9931"
+},
+"pronunciation/station": {
+"date": "2026-11-10",
+"hash": "ed2bf019b7cbe7953f345bb45bba9b28"
+},
+"pronunciation/stay": {
+"date": "2026-11-10",
+"hash": "ab2b46f598943f62cc306ae496711f6d"
+},
+"pronunciation/steak": {
+"date": "2026-11-10",
+"hash": "750971d5f8976d92b928721e8a9a9d31"
 },
 "pronunciation/still": {
-"date": "2026-10-21",
-"hash": "aaea82c535ba47fe042ddc5d65c163ff"
+"date": "2026-11-10",
+"hash": "e8140571de7f575c6a65594c099156da"
+},
+"pronunciation/stomach": {
+"date": "2026-11-10",
+"hash": "6f92e10e64e70951b31e5ecdf8346e63"
+},
+"pronunciation/stop": {
+"date": "2026-11-10",
+"hash": "12bf3961fa5be432081f343fe5141ab0"
+},
+"pronunciation/store": {
+"date": "2026-11-10",
+"hash": "688e738b1622e56ab8623e2b285294d0"
+},
+"pronunciation/story": {
+"date": "2026-11-10",
+"hash": "b9967bc4ee413f26d93b1ebe76f65d25"
+},
+"pronunciation/straight": {
+"date": "2026-11-10",
+"hash": "abc5f5bf47e62411fa1d7e9a704242a7"
+},
+"pronunciation/strange": {
+"date": "2026-11-10",
+"hash": "fa81e9e3ef1d0d7ab0592d047592faf6"
+},
+"pronunciation/stranger": {
+"date": "2026-11-10",
+"hash": "876f84790786b0d7fb914dfa6692d914"
 },
 "pronunciation/strawberry": {
-"date": "2026-10-21",
-"hash": "c90cecaaa16e2bc1afa61598e402fa37"
+"date": "2026-11-10",
+"hash": "079a5183ff561658c4e7c998ad954770"
+},
+"pronunciation/street": {
+"date": "2026-11-10",
+"hash": "dd7c5c7e24f46c4ccf038fbfd6fea3fe"
+},
+"pronunciation/string": {
+"date": "2026-11-10",
+"hash": "93860f6d9e084d3a25d7fa6ef0477193"
+},
+"pronunciation/strong": {
+"date": "2026-11-10",
+"hash": "6f83901afc8fb8cbadfb264b544924a0"
 },
 "pronunciation/student": {
-"date": "2026-10-21",
-"hash": "b44e99a21f0e5e8a503a6d405290c776"
+"date": "2026-11-10",
+"hash": "4dd295a5b783a2c131593cc2819ee18f"
+},
+"pronunciation/study": {
+"date": "2026-11-10",
+"hash": "c3eba656e0b51ca4923f352a5b36c24d"
+},
+"pronunciation/stupid": {
+"date": "2026-11-10",
+"hash": "5a44f97ede94830f12812151ce66c56a"
 },
 "pronunciation/successful": {
-"date": "2026-10-21",
-"hash": "3405f5ea2785899b3c9a88547cf72a42"
+"date": "2026-11-10",
+"hash": "e00fdfdb468ced61d32a38fc24b05e04"
+},
+"pronunciation/sugar": {
+"date": "2026-11-10",
+"hash": "c72342c385bb50d19474bbac38100a38"
+},
+"pronunciation/summer": {
+"date": "2026-11-10",
+"hash": "e7dcd3c3b280ac46938a0bea8be73846"
+},
+"pronunciation/sun": {
+"date": "2026-11-10",
+"hash": "6b7bab2ccedafc0bc551e732a3317ab7"
+},
+"pronunciation/sunday": {
+"date": "2026-11-10",
+"hash": "9384ffd3d8bda95663a424cc6d293e04"
+},
+"pronunciation/sunny": {
+"date": "2026-11-10",
+"hash": "1899e33f78d10697c3a9087adbf31aa7"
 },
 "pronunciation/supermarket": {
-"date": "2026-10-21",
-"hash": "70a8c3b987d7b1a8a6249952d163df1b"
+"date": "2026-11-10",
+"hash": "311ee2c4264e71c7625ca078e2a78dda"
+},
+"pronunciation/sure": {
+"date": "2026-11-10",
+"hash": "47d8c18a66e3d5e8eb9e2b4f80797ec3"
+},
+"pronunciation/surf": {
+"date": "2026-11-10",
+"hash": "2db58388c2cb13419d9e4842c54c7b45"
 },
 "pronunciation/surprise": {
-"date": "2026-10-21",
-"hash": "ac7e97a6b00491aa173bff0351afb95e"
+"date": "2026-11-10",
+"hash": "d6028733640a7cd8539c1c566abe05fd"
 },
 "pronunciation/surprised": {
-"date": "2026-10-21",
-"hash": "2c1eedfef1e75c3895cd5451173737c2"
+"date": "2026-11-10",
+"hash": "31169d7b1e77f125a461b57c230b8f9e"
+},
+"pronunciation/sweater": {
+"date": "2026-11-10",
+"hash": "43b7fd763576359319890ea8bd08ec15"
+},
+"pronunciation/sweet": {
+"date": "2026-11-10",
+"hash": "f5be55a1c20ec32ff453e83b61323450"
+},
+"pronunciation/swim": {
+"date": "2026-11-10",
+"hash": "e1b32439d48052e56e28c7178f39e614"
+},
+"pronunciation/swing": {
+"date": "2026-11-10",
+"hash": "980f7a74cde92039cc50770529ac6274"
+},
+"pronunciation/table": {
+"date": "2026-11-10",
+"hash": "d4052644e75abeb9fbda57b5b6045aeb"
+},
+"pronunciation/tail": {
+"date": "2026-11-10",
+"hash": "383bfaf15bd9a390d66d036b26fde7a1"
+},
+"pronunciation/taiwan": {
+"date": "2026-11-10",
+"hash": "83570143632d396a7f85ffbab5808108"
+},
+"pronunciation/take": {
+"date": "2026-11-10",
+"hash": "26b089d36da58cf39a4b610b5197c2d3"
 },
 "pronunciation/talk": {
-"date": "2026-10-21",
-"hash": "5a06ba76597504dc981a0e03fdb56a5e"
+"date": "2026-11-10",
+"hash": "0c5e395df6cab70ffc14fae286d735e2"
+},
+"pronunciation/tall": {
+"date": "2026-11-10",
+"hash": "de412a9ff716f4ad84ba5cd1fe761328"
+},
+"pronunciation/tape": {
+"date": "2026-11-10",
+"hash": "83fbe98f0a61333b806442d3fc5f80ca"
+},
+"pronunciation/taste": {
+"date": "2026-11-10",
+"hash": "32e42d88420b1e239477c7eaebf00bb3"
+},
+"pronunciation/taxi": {
+"date": "2026-11-10",
+"hash": "eb2fd38e8c276f2187ba7501c002c36b"
+},
+"pronunciation/tea": {
+"date": "2026-11-10",
+"hash": "83b72ba9c605024011ec8b48a9d98880"
+},
+"pronunciation/teach": {
+"date": "2026-11-10",
+"hash": "d813bc288cb840ea4027230fbf80991e"
+},
+"pronunciation/teacher": {
+"date": "2026-11-10",
+"hash": "dec0d31e811d2a1f0cd2a70c4c05968a"
+},
+"pronunciation/team": {
+"date": "2026-11-10",
+"hash": "89a49b1b9e10ae39a1836d334a16eeeb"
 },
 "pronunciation/teenager": {
-"date": "2026-10-21",
-"hash": "96adfafc54783f86a20a1f561b181d5e"
+"date": "2026-11-10",
+"hash": "a9a3c6626ad5cde8c860f744bf02c1fa"
 },
 "pronunciation/telephone": {
-"date": "2026-10-21",
-"hash": "2f9bfa9cbfa68710ae6aff0e590dcbd0"
+"date": "2026-11-10",
+"hash": "c21198beb2d5e913dacd8c6c5d847063"
 },
 "pronunciation/television": {
-"date": "2026-10-21",
-"hash": "ba8e01ee37699ecd9fbf78a9a35cc0b4"
+"date": "2026-11-10",
+"hash": "6b1e134729297de6f64d13b5331ceaa0"
+},
+"pronunciation/tell": {
+"date": "2026-11-10",
+"hash": "273623de2c91e1f468451834a37a9c83"
+},
+"pronunciation/temple": {
+"date": "2026-11-10",
+"hash": "c9facf2b609e80cf30b986474c6dc191"
+},
+"pronunciation/ten": {
+"date": "2026-11-10",
+"hash": "78dc043d4ad00467c820d84282a9ec1e"
+},
+"pronunciation/tennis": {
+"date": "2026-11-10",
+"hash": "72c04e7863f8e26f8c89f3b24d6edabf"
 },
 "pronunciation/terrible": {
-"date": "2026-10-21",
-"hash": "031b56c94ef4b9609ce18c34b43b994c"
+"date": "2026-11-10",
+"hash": "4b9602b47e205776b0f7888f4cdae613"
+},
+"pronunciation/test": {
+"date": "2026-11-10",
+"hash": "4fdb7802ce5f6eafec1389897c72e39c"
 },
 "pronunciation/than": {
-"date": "2026-10-21",
-"hash": "641d9ca4c76bece14304933ed9651f21"
+"date": "2026-11-10",
+"hash": "9a6af6a0d70cfe9113b932691185f2c2"
 },
 "pronunciation/thank": {
-"date": "2026-10-21",
-"hash": "e1f5f2c4f6dea8845b4414557d76ad12"
+"date": "2026-11-10",
+"hash": "8ab7c76b401d356d15d0351f83ff85c1"
 },
 "pronunciation/that": {
-"date": "2026-10-21",
-"hash": "4553f8ff6f1927c1b0710c3136c13610"
+"date": "2026-11-10",
+"hash": "53fc21c41133c1c34997bfd9b08cf0ff"
 },
 "pronunciation/theater": {
-"date": "2026-10-21",
-"hash": "981de3ac7785f76f7cc1f994f3a7104f"
+"date": "2026-11-10",
+"hash": "50c5aba0b6ff6a94f0842fff7384577a"
+},
+"pronunciation/then": {
+"date": "2026-11-10",
+"hash": "82312592d055c9c4f02b4ad7cb340d67"
+},
+"pronunciation/there": {
+"date": "2026-11-10",
+"hash": "63dc6aa40a95019aa3f76a23a7baaaee"
 },
 "pronunciation/these": {
-"date": "2026-10-21",
-"hash": "2581e3913f7928783e05e4b05af0fb95"
+"date": "2026-11-10",
+"hash": "c194703ab201ee35295ce4fc5c547d36"
+},
+"pronunciation/they": {
+"date": "2026-11-10",
+"hash": "38b9111dc2c0369f2284ea007a4340e3"
 },
 "pronunciation/thick": {
-"date": "2026-10-21",
-"hash": "ccd4b53d1ef48ca7387d53ed7c2692b0"
+"date": "2026-11-10",
+"hash": "01e4d43898deb0f16f9060d2e9f3c35b"
 },
 "pronunciation/thin": {
-"date": "2026-10-21",
-"hash": "a0f1ca4de35bff6c0ebe82c3fd772711"
+"date": "2026-11-10",
+"hash": "ca35c1d6c011c9788c91c311448e977e"
 },
 "pronunciation/thing": {
-"date": "2026-10-21",
-"hash": "e6a7a9be5afe4c8d0fbace19c30ec7b4"
+"date": "2026-11-10",
+"hash": "6544c591f63327f4f26cb9467aac66f6"
 },
 "pronunciation/think": {
-"date": "2026-10-21",
-"hash": "feb3060cecdadf2385f6c4c4e6df0e77"
+"date": "2026-11-10",
+"hash": "d71476e6ebc571d0e5eeb1339292f2de"
 },
 "pronunciation/third": {
-"date": "2026-10-21",
-"hash": "f3da66a85aa388bc66d6f8459143c0a2"
+"date": "2026-11-10",
+"hash": "88b18313805efdde60cfdcc67e0cc3d2"
 },
 "pronunciation/thirsty": {
-"date": "2026-10-21",
-"hash": "4f45b62c07ba7b882c97da0c8cca2d6a"
+"date": "2026-11-10",
+"hash": "5024605c4533fdec36004e37692e6aaf"
 },
 "pronunciation/thirteen": {
-"date": "2026-10-21",
-"hash": "874121a336a0a0cbcc35296d038e21e0"
+"date": "2026-11-10",
+"hash": "e0597280b0d9eb0cbaf015832203ea6b"
 },
 "pronunciation/thirty": {
-"date": "2026-10-21",
-"hash": "6064402e614ea3ef9292b83c18884103"
+"date": "2026-11-10",
+"hash": "d0225899d57fc657c8630ab0e1125878"
 },
 "pronunciation/this": {
-"date": "2026-10-21",
-"hash": "4d0103338e9da82d2f733a4a87231ccb"
+"date": "2026-11-10",
+"hash": "1aa2dadf14808f6d0530ff86dad5c21d"
 },
 "pronunciation/those": {
-"date": "2026-10-21",
-"hash": "d73cdedf30de6e63e30b7085ffecfcb4"
+"date": "2026-11-10",
+"hash": "2db44926f83db21fa94019786ddfbb33"
 },
 "pronunciation/though": {
-"date": "2026-10-21",
-"hash": "cc4442285da1a9f553157b127ed4a30c"
+"date": "2026-11-10",
+"hash": "efd257ebda1df499acc0bb43bc722965"
 },
 "pronunciation/thousand": {
-"date": "2026-10-21",
-"hash": "e405bea2aaf0ae91f44788a8c1c66693"
+"date": "2026-11-10",
+"hash": "88c1f6854ca22d6d01c89c0f9a7c0142"
 },
 "pronunciation/three": {
-"date": "2026-10-21",
-"hash": "51a1a0414f7d9f710b438c435ab63d84"
+"date": "2026-11-10",
+"hash": "0eb36472960954b0753f6e92051b513b"
+},
+"pronunciation/throat": {
+"date": "2026-11-10",
+"hash": "bb70b6be97a390a6242c7ed1acac5fb0"
 },
 "pronunciation/through": {
-"date": "2026-10-21",
-"hash": "12156e1c6ff58f371a5868d22e375acc"
+"date": "2026-11-10",
+"hash": "a1591eda18e8891f740a760cfea9e2db"
+},
+"pronunciation/throw": {
+"date": "2026-11-10",
+"hash": "75b201bb7805928f6044a2d119f6c2c7"
 },
 "pronunciation/thursday": {
-"date": "2026-10-21",
-"hash": "848085b1f3c562e30f3435a8eff1e195"
+"date": "2026-11-10",
+"hash": "920c572f5060da7a127cbb78443d3288"
+},
+"pronunciation/ticket": {
+"date": "2026-11-10",
+"hash": "299e45096bd4d6aef4b4d5d827a210ac"
+},
+"pronunciation/tidy": {
+"date": "2026-11-10",
+"hash": "961b1ac68c6ddeed6ae7b88415defc96"
+},
+"pronunciation/tie": {
+"date": "2026-11-10",
+"hash": "afb7230a34602152cbbf96ed6334dcf7"
 },
 "pronunciation/tiger": {
-"date": "2026-10-21",
-"hash": "db1a67f895f674e731eb51c6e19fda76"
+"date": "2026-11-10",
+"hash": "cbceeb999a5a8a81894e6309208e9bec"
+},
+"pronunciation/time": {
+"date": "2026-11-10",
+"hash": "b5776eeb99f8afb344e6513690760b24"
+},
+"pronunciation/tip": {
+"date": "2026-11-10",
+"hash": "41996d131fc2cda9265087ca4629a264"
+},
+"pronunciation/tired": {
+"date": "2026-11-10",
+"hash": "56a17d3e9946b61b0ccae24fe8ef06c7"
+},
+"pronunciation/to": {
+"date": "2026-11-10",
+"hash": "0c546c1475d0056ecf8d1c3bd00dcbea"
+},
+"pronunciation/toast": {
+"date": "2026-11-10",
+"hash": "84b6c2c1ea90871353e5f3f4f902f72e"
+},
+"pronunciation/today": {
+"date": "2026-11-10",
+"hash": "218c22dca76f7b07b0193fbed747438c"
+},
+"pronunciation/toe": {
+"date": "2026-11-10",
+"hash": "5b5eda070b7866a8a7e8662d1458a354"
 },
 "pronunciation/together": {
-"date": "2026-10-21",
-"hash": "212bc4592002948382367694d450e524"
+"date": "2026-11-10",
+"hash": "78e473c9cd3b9f3e59bd68b301fc620f"
 },
 "pronunciation/tomato": {
-"date": "2026-10-21",
-"hash": "e8977fd2edf1e0dd54cb5e653c4fad24"
+"date": "2026-11-10",
+"hash": "ffdbea69506dc30a673d63c8894ceba8"
 },
 "pronunciation/tomorrow": {
-"date": "2026-10-21",
-"hash": "e25f10d3a43c0df7da71b55422b3762c"
+"date": "2026-11-10",
+"hash": "c957f904e742698d0d1cd19d6461e1d7"
+},
+"pronunciation/tonight": {
+"date": "2026-11-10",
+"hash": "75657d1cd6a91e7fc2f266fc03e5d33e"
+},
+"pronunciation/too": {
+"date": "2026-11-10",
+"hash": "84a75a65f0b939ec52c8c89eb3e3b7a3"
+},
+"pronunciation/tool": {
+"date": "2026-11-10",
+"hash": "667f088252a195936d0a80bede4b31eb"
 },
 "pronunciation/tooth": {
-"date": "2026-10-21",
-"hash": "f074febddf853ca5fc2cf22b45a4d2bb"
+"date": "2026-11-10",
+"hash": "d04ad30071d4507ef5fa014a3a5bd40f"
+},
+"pronunciation/top": {
+"date": "2026-11-10",
+"hash": "e9e337ee48577b4ea1320c3001a187db"
+},
+"pronunciation/topic": {
+"date": "2026-11-10",
+"hash": "104f4ebec42242fcca54d11eb652fd16"
+},
+"pronunciation/total": {
+"date": "2026-11-10",
+"hash": "2d4fb2e38c22443e7d9e1e2952ff89ce"
+},
+"pronunciation/touch": {
+"date": "2026-11-10",
+"hash": "b16b123b2406932ffbf7197eda1916cc"
+},
+"pronunciation/towel": {
+"date": "2026-11-10",
+"hash": "43269bd9f9e75a7b675e6da3f29764f1"
+},
+"pronunciation/town": {
+"date": "2026-11-10",
+"hash": "52ec6f6828bc579d7757f6ff149842bc"
+},
+"pronunciation/toy": {
+"date": "2026-11-10",
+"hash": "92dd06cb058d6d10c20e2b82daa4c1df"
+},
+"pronunciation/traffic": {
+"date": "2026-11-10",
+"hash": "f0df2c5f4349fd2dc506618006ce469c"
+},
+"pronunciation/train": {
+"date": "2026-11-10",
+"hash": "3334d0b56282b409d919c1d6b74cb3d1"
+},
+"pronunciation/trash": {
+"date": "2026-11-10",
+"hash": "8309f7ddf1dd88bf7419128bd72e7ac5"
+},
+"pronunciation/treat": {
+"date": "2026-11-10",
+"hash": "53afa07592b1c9c59429b1905918f175"
+},
+"pronunciation/tree": {
+"date": "2026-11-10",
+"hash": "a948f90801a83eb8f879b1b8e252f80c"
+},
+"pronunciation/trick": {
+"date": "2026-11-10",
+"hash": "e19cced40cc9cf907a64754e3fb79b01"
+},
+"pronunciation/trip": {
+"date": "2026-11-10",
+"hash": "9fc1dc1526482923c0edc1bdc46b6623"
+},
+"pronunciation/trouble": {
+"date": "2026-11-10",
+"hash": "5e018dd91c7a94222d5a7fb2d0a92c5f"
+},
+"pronunciation/truck": {
+"date": "2026-11-10",
+"hash": "fdfc88bf742b6ad7d0012d0a5a986aa3"
+},
+"pronunciation/true": {
+"date": "2026-11-10",
+"hash": "1e2c7e37415214a20e867852cf461af2"
+},
+"pronunciation/try": {
+"date": "2026-11-10",
+"hash": "ae8330e5542ae20a474e8585cd5054f5"
+},
+"pronunciation/tuesday": {
+"date": "2026-11-10",
+"hash": "58b231f5c56203d32fd1459e45b0d9b3"
+},
+"pronunciation/turn": {
+"date": "2026-11-10",
+"hash": "65a4b0e7e7bb08254364c4b377128a26"
 },
 "pronunciation/turtle": {
-"date": "2026-10-21",
-"hash": "2c138ead8715fe77800e604b37195458"
+"date": "2026-11-10",
+"hash": "ead1f489e291079e5ce67fe26bf01728"
+},
+"pronunciation/twelve": {
+"date": "2026-11-10",
+"hash": "ac123c7de6cfb67ef0ee651d3e752a00"
+},
+"pronunciation/twenty": {
+"date": "2026-11-10",
+"hash": "94a054f895a233594c4a918f09c4f962"
+},
+"pronunciation/twice": {
+"date": "2026-11-10",
+"hash": "158ffb536e590e6a3a25fe6ec0ac3fe5"
+},
+"pronunciation/two": {
+"date": "2026-11-10",
+"hash": "eb2d370f230d7e5b1bb22b2457fc85e8"
+},
+"pronunciation/type": {
+"date": "2026-11-10",
+"hash": "05fb8867ca978765a0bc61ca7da50685"
+},
+"pronunciation/typhoon": {
+"date": "2026-11-10",
+"hash": "d5aabc87f8df88a1038b0b820fe7c8d0"
+},
+"pronunciation/ugly": {
+"date": "2026-11-10",
+"hash": "8ddc0b9653ccbb7b28f1dda6e4d41110"
 },
 "pronunciation/umbrella": {
-"date": "2026-10-21",
-"hash": "eb9c3befefee0115c186eeff8dfa00f4"
+"date": "2026-11-10",
+"hash": "f575be1de034e4a7f93328668ea62c8b"
 },
 "pronunciation/uncle": {
-"date": "2026-10-21",
-"hash": "3b9687cbb60127f29f6628fa1ba0964e"
+"date": "2026-11-10",
+"hash": "193301aad68db369c986e4502136e540"
+},
+"pronunciation/under": {
+"date": "2026-11-10",
+"hash": "8ad2dd2db5532ed23f5ae3774e02be6f"
 },
 "pronunciation/understand": {
-"date": "2026-10-21",
-"hash": "14850b8c699e7cc7881c5ad0746c22b6"
+"date": "2026-11-10",
+"hash": "7f4aa564728dceb6f9e62b6c2eaa023b"
 },
 "pronunciation/unhappy": {
-"date": "2026-10-21",
-"hash": "042149567ab9645276ec53a8e6fb95f3"
+"date": "2026-11-10",
+"hash": "9fbe975c9874ea82cb6c47b3f9b0052f"
 },
 "pronunciation/uniform": {
-"date": "2026-10-21",
-"hash": "89d89a59cd64ff7f3ec0ba615ad86c3b"
+"date": "2026-11-10",
+"hash": "95e290689a0dba0a62a69c2c52f5c79a"
+},
+"pronunciation/until": {
+"date": "2026-11-10",
+"hash": "8bb8a7a98476f024b162aa5bbbaeaad4"
+},
+"pronunciation/up": {
+"date": "2026-11-10",
+"hash": "925349a6e240a486e62c03684b530c8a"
+},
+"pronunciation/upload": {
+"date": "2026-11-10",
+"hash": "a0cb838b7a08b133eebd7ee4c98f4140"
+},
+"pronunciation/useful": {
+"date": "2026-11-10",
+"hash": "30a25b26c4c4e91254454cf43f389829"
 },
 "pronunciation/usually": {
-"date": "2026-10-21",
-"hash": "29dc73b265bddf942aaf3fb0fd0f4c81"
+"date": "2026-11-10",
+"hash": "1d563baa336d786fd414872689bad219"
 },
 "pronunciation/vacation": {
-"date": "2026-10-21",
-"hash": "999480d79ded6ccd7e52956fde522c8a"
+"date": "2026-11-10",
+"hash": "55e44f36208a4d5964f971cf341ea979"
 },
 "pronunciation/vegetable": {
-"date": "2026-10-21",
-"hash": "60c02c3e897b432713d5e74970ff376d"
+"date": "2026-11-10",
+"hash": "e33076126c75c0c24d9e0dd6fb212cb6"
 },
 "pronunciation/very": {
-"date": "2026-10-21",
-"hash": "ea16f3687d8e1fb6d5b727566f1219f1"
+"date": "2026-11-10",
+"hash": "7304eacdaa7ff5fc674a106f9de140f2"
 },
 "pronunciation/video": {
-"date": "2026-10-21",
-"hash": "1ba967fd9fc6bec171abe3c09430b684"
+"date": "2026-11-10",
+"hash": "24b817641b15e473a8621f328ce1bfe7"
 },
 "pronunciation/violin": {
-"date": "2026-10-21",
-"hash": "4f64f6d35178595055a9faec6c1e7de4"
+"date": "2026-11-10",
+"hash": "a4fb40366719f84e1f6fc523c30612c3"
+},
+"pronunciation/visit": {
+"date": "2026-11-10",
+"hash": "9d22c8bae873c40c8b84edb889936ecc"
 },
 "pronunciation/visitor": {
-"date": "2026-10-21",
-"hash": "6e5ce2fe48ff6fdc8203e87e430ea2a3"
+"date": "2026-11-10",
+"hash": "e11d69ed560aa72ed9efeba94e3fe544"
+},
+"pronunciation/voice": {
+"date": "2026-11-10",
+"hash": "12aa8c21e9217646c3000338fb9ba457"
+},
+"pronunciation/wait": {
+"date": "2026-11-10",
+"hash": "c16dd7841f3b2573bdb355e24d6db925"
+},
+"pronunciation/waiter": {
+"date": "2026-11-10",
+"hash": "f506cb4eccbdb2a9c805ad0168300473"
+},
+"pronunciation/waitress": {
+"date": "2026-11-10",
+"hash": "22712f9bac49172f65db465ed85aaae0"
+},
+"pronunciation/wake": {
+"date": "2026-11-10",
+"hash": "8c9bb62e1d4d9dc0a336b516ed4d0fdb"
 },
 "pronunciation/walk": {
-"date": "2026-10-21",
-"hash": "f3467e8f28fafb862c9d0634edd2bae1"
+"date": "2026-11-10",
+"hash": "41878f97c38385586ac2b2051f48c4e2"
+},
+"pronunciation/wall": {
+"date": "2026-11-10",
+"hash": "2e7d86f1dce080298208cb25b7380a56"
+},
+"pronunciation/wallet": {
+"date": "2026-11-10",
+"hash": "ba7e8572dd2d43c48a760741deedae89"
+},
+"pronunciation/want": {
+"date": "2026-11-10",
+"hash": "838301aac6f440acd4b41d3f11c1e645"
+},
+"pronunciation/warm": {
+"date": "2026-11-10",
+"hash": "7a28ee323431c6b406502b4b529af47d"
+},
+"pronunciation/wash": {
+"date": "2026-11-10",
+"hash": "6facff21b8c2bc45b3a48cb1ee021a44"
+},
+"pronunciation/watch": {
+"date": "2026-11-10",
+"hash": "e2cac16cda52e2f351d09f77b61685c8"
 },
 "pronunciation/water": {
-"date": "2026-10-21",
-"hash": "f033f6cac3209aea221a358ddbfcf709"
+"date": "2026-11-10",
+"hash": "0350fd97ecb9891d418f59e5ee072fc6"
 },
 "pronunciation/watermelon": {
-"date": "2026-10-21",
-"hash": "b69f4e9317174e23844447a087b1d785"
+"date": "2026-11-10",
+"hash": "7d998b69e3d225d6674d14f6ee4a1450"
+},
+"pronunciation/wave": {
+"date": "2026-11-10",
+"hash": "c9caacda586352d1f05521e2a76cf271"
+},
+"pronunciation/way": {
+"date": "2026-11-10",
+"hash": "f374626d9e9d6385ee09f2b30db7b456"
+},
+"pronunciation/we": {
+"date": "2026-11-10",
+"hash": "3814db9d3c6db7f5d750c476c65d1fd7"
+},
+"pronunciation/weak": {
+"date": "2026-11-10",
+"hash": "6f46b132f2dad747157c31727b3034ca"
+},
+"pronunciation/wear": {
+"date": "2026-11-10",
+"hash": "9b43ded81db347a057f05777df0c6115"
 },
 "pronunciation/weather": {
-"date": "2026-10-21",
-"hash": "94efa45d9934fd7b8db4bec3ed35380f"
+"date": "2026-11-10",
+"hash": "2c8a0ee5dfe4753c4958dd15fcbf8fc7"
 },
 "pronunciation/wednesday": {
-"date": "2026-10-21",
-"hash": "f3b76288a841da65b3b6dcc51b6ee7ba"
+"date": "2026-11-10",
+"hash": "eb99b2104e0dee810d5a0d17845a4eb7"
+},
+"pronunciation/week": {
+"date": "2026-11-10",
+"hash": "f1127c5c9716ebc01b66bba629260d85"
+},
+"pronunciation/weekend": {
+"date": "2026-11-10",
+"hash": "4dd437d52d8d46192742dcf28572df97"
+},
+"pronunciation/welcome": {
+"date": "2026-11-10",
+"hash": "e4a28fe0c34039d454edf0d374b21073"
+},
+"pronunciation/well": {
+"date": "2026-11-10",
+"hash": "01fe07bbcc35a275760dd5fade458d84"
+},
+"pronunciation/west": {
+"date": "2026-11-10",
+"hash": "0239b60bd27d7e273f9e66edb9f61b7b"
+},
+"pronunciation/wet": {
+"date": "2026-11-10",
+"hash": "2ab515e0a8270d55fbafa1d0a05322a6"
 },
 "pronunciation/what": {
-"date": "2026-10-21",
-"hash": "f94e60736235c3fb84bdc7a9ce3d0298"
+"date": "2026-11-10",
+"hash": "1dad108bd5ba6b7964b527327a00f5b6"
+},
+"pronunciation/when": {
+"date": "2026-11-10",
+"hash": "5e7ef3fb23c560aa9db1e13867692ad2"
 },
 "pronunciation/where": {
-"date": "2026-10-21",
-"hash": "11ae30fcc7cd1b5e6aeca0bda793241c"
+"date": "2026-11-10",
+"hash": "9d195c2c3aad210204d5e0f1f9aa0ac0"
 },
 "pronunciation/whether": {
-"date": "2026-10-21",
-"hash": "4dd8c088771891e72a6ef499d33a7c95"
+"date": "2026-11-10",
+"hash": "64ee3c703c96081938f38b0121a2957b"
 },
 "pronunciation/which": {
-"date": "2026-10-21",
-"hash": "8d8539ca070f068cbc356828a547b086"
+"date": "2026-11-10",
+"hash": "297f27b943df10194f3da2b1311c439f"
+},
+"pronunciation/while": {
+"date": "2026-11-10",
+"hash": "9229589efb5cedd05ce3c9f4c4c4ab27"
+},
+"pronunciation/white": {
+"date": "2026-11-10",
+"hash": "5417fab752246893bbf1e537dd96307e"
 },
 "pronunciation/who": {
-"date": "2026-10-21",
-"hash": "4d608fd93659ae3b411618e5abb1f3da"
+"date": "2026-11-10",
+"hash": "8f7f1946540a3df89f0c3b86b0d4b61f"
+},
+"pronunciation/whose": {
+"date": "2026-11-10",
+"hash": "22495dda4b376f1adc27b69bb5aacff9"
 },
 "pronunciation/why": {
-"date": "2026-10-21",
-"hash": "71fdf4d51bbdc251477bba00e6ef3bbd"
+"date": "2026-11-10",
+"hash": "de34e360caeb5a8d7e45a39ee21e00f9"
+},
+"pronunciation/wide": {
+"date": "2026-11-10",
+"hash": "919b5a41c17ed3f494b7b592259835ca"
+},
+"pronunciation/wife": {
+"date": "2026-11-10",
+"hash": "05b426ae40e2d6d8d5491aad34928ac7"
 },
 "pronunciation/will": {
-"date": "2026-10-21",
-"hash": "b1f5bf3e85a3f058c796d318ebc53910"
+"date": "2026-11-10",
+"hash": "394d020dcd68c49d62d25cebd9e5aa1e"
+},
+"pronunciation/win": {
+"date": "2026-11-10",
+"hash": "d4f4a69dd4420ae0c3467992ca92e22e"
+},
+"pronunciation/window": {
+"date": "2026-11-10",
+"hash": "9b2f237d382db54c6bffdbf91d1e316c"
+},
+"pronunciation/windy": {
+"date": "2026-11-10",
+"hash": "01c91f9db7f566351d2fca3a5ada8c4d"
+},
+"pronunciation/winter": {
+"date": "2026-11-10",
+"hash": "785da5e862a66c375290db7d3ade233b"
+},
+"pronunciation/wise": {
+"date": "2026-11-10",
+"hash": "201d9a8330e205c7c5a358c1503d2b4e"
+},
+"pronunciation/wish": {
+"date": "2026-11-10",
+"hash": "244ddc3ff08f9b08c7a06b03828baf59"
 },
 "pronunciation/with": {
-"date": "2026-10-21",
-"hash": "6c0071d4b974a807a8dc67e3287d5185"
+"date": "2026-11-10",
+"hash": "d3e70ef459bdc221e6a889f6ad0c0569"
+},
+"pronunciation/without": {
+"date": "2026-11-10",
+"hash": "c00fd5307c0aa123858b1b4c226044fc"
+},
+"pronunciation/woman": {
+"date": "2026-11-10",
+"hash": "454392f13690f7e443345743ed4d2c57"
 },
 "pronunciation/wonderful": {
-"date": "2026-10-21",
-"hash": "9c9ace60b2018ee77f99b996dda8ce5c"
+"date": "2026-11-10",
+"hash": "8aaa10bb82b47296f853fe75fcdd7ba2"
 },
 "pronunciation/word": {
-"date": "2026-10-21",
-"hash": "887ad7b5e5724f3319736b3849456d88"
+"date": "2026-11-10",
+"hash": "563568426b1b8270b4b82bcfbc92e641"
 },
 "pronunciation/work": {
-"date": "2026-10-21",
-"hash": "36555c313c36085d1b2b0923bb737cd6"
+"date": "2026-11-10",
+"hash": "7c29d7f5736814b87b54a3486fe28fe4"
+},
+"pronunciation/workbook": {
+"date": "2026-11-10",
+"hash": "9280553dd8f197a3c1c687954d0959a0"
+},
+"pronunciation/worker": {
+"date": "2026-11-10",
+"hash": "4802e701afd03c955518a9320d223237"
 },
 "pronunciation/world": {
-"date": "2026-10-21",
-"hash": "801f0eb4345fea8e3cdcf88db81ebf58"
+"date": "2026-11-10",
+"hash": "13b1de66ba77501d7bfa27cf8d9fdc2c"
+},
+"pronunciation/worry": {
+"date": "2026-11-10",
+"hash": "70dd0a1e9dc2e4c6006cbde390b27370"
 },
 "pronunciation/write": {
-"date": "2026-10-21",
-"hash": "b6c1cee3317b017741f6cd0b84a4b853"
+"date": "2026-11-10",
+"hash": "1365df99fd7f76edce4b6214c1fe3f75"
 },
 "pronunciation/writer": {
-"date": "2026-10-21",
-"hash": "ee1f0764cde10d8e42312b6504cbccf0"
+"date": "2026-11-10",
+"hash": "d8a47e4e7cf5fa4afc8003a656a108c9"
+},
+"pronunciation/wrong": {
+"date": "2026-11-10",
+"hash": "f17eb3b42aeafb7028a083c1d869e30f"
+},
+"pronunciation/yard": {
+"date": "2026-11-10",
+"hash": "0af9911591d17f2301d2a8e41b450dd9"
+},
+"pronunciation/year": {
+"date": "2026-11-10",
+"hash": "f1ccb284cc787bc304528a2b23b339b8"
 },
 "pronunciation/yellow": {
-"date": "2026-10-21",
-"hash": "55eca3581a7fb4c4e46331b28a6e0b60"
+"date": "2026-11-10",
+"hash": "8c40f0b0f62f57349a1ec92e516d2746"
+},
+"pronunciation/yes": {
+"date": "2026-11-10",
+"hash": "654d7ae271991aee54fc8b0c222573b4"
 },
 "pronunciation/yesterday": {
-"date": "2026-10-21",
-"hash": "ca8eb47bd030647c85094675c075c132"
+"date": "2026-11-10",
+"hash": "5679901a238c3d4327b10b4a89dc0e21"
+},
+"pronunciation/yet": {
+"date": "2026-11-10",
+"hash": "99331904586a40e3fd1883c5f6cbfedd"
+},
+"pronunciation/you": {
+"date": "2026-11-10",
+"hash": "ffe4b5e1729a312c795f3b04abd8d15f"
+},
+"pronunciation/young": {
+"date": "2026-11-10",
+"hash": "1991ebbee604420db06edef493def652"
+},
+"pronunciation/yummy": {
+"date": "2026-11-10",
+"hash": "82cf15b7a3855568b576eecf9083cf36"
+},
+"pronunciation/zebra": {
+"date": "2026-11-10",
+"hash": "6c542267028b279f0d4f97125b4edabf"
 },
 "pronunciation/zero": {
-"date": "2026-10-21",
-"hash": "6ee4cc92c7f859bb9bcd49a1a6440c41"
+"date": "2026-11-10",
+"hash": "0856400a8c20dbf7e857b47310956d77"
 },
 "pronunciation/zoo": {
-"date": "2026-10-21",
-"hash": "1d73f0cb381fb5ba7aadd73d97f2776d"
+"date": "2026-11-10",
+"hash": "60d05c7f79736a89b08db8f0909ac3e6"
 },
 "puqian-elementary-english": {
 "date": "2026-08-07",
