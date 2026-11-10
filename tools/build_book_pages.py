@@ -54,6 +54,17 @@ FRY_LIST, FRY_READ = 296, 281        # Fry, Kress & Fountoukidis (2000) first-30
 CORE, CORE_10PLUS, CORE_MEDIAN = 300, 287, 27   # core words; core words met 10+ times across the 36 books; median encounters
 
 
+# hero fan entrance (Chris 11-10): every picture comes in from the left and travels along the fan's own arch,
+# through the slots of the pictures before it, to its place; rightmost first, so they deal out like cards
+FAN_JS = """<script>(()=>{const f=document.currentScript.previousElementSibling;
+if(!f||!f.animate||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+const im=[...f.querySelectorAll("img")],R=[-10,-4,0,5,10],S=im.map((e,i)=>({x:e.offsetLeft,y:e.offsetTop,r:R[i]}));
+const dx=S[1].x-S[0].x;S.unshift({x:S[0].x-dx*1.1,y:S[0].y+28,r:-17});S.unshift({x:S[0].x-dx*1.3,y:S[0].y+40,r:-25});
+f.style.visibility="hidden";const go=()=>{if(go.done)return;go.done=1;f.style.visibility="";im.forEach((e,i)=>{const k=i+2,me=S[k],fr=[];for(let j=0;j<=k;j++){const s=S[j];
+fr.push({transform:`translate(${s.x-me.x}px,${s.y-me.y}px) rotate(${s.r}deg)`,opacity:j?1:0,offset:j/k})}
+e.animate(fr,{duration:700+160*k,delay:150+(im.length-1-i)*120,easing:"cubic-bezier(.25,.8,.3,1)",fill:"backwards"})})};
+Promise.all(im.map(e=>e.decode?e.decode().catch(()=>{}):0)).then(go);setTimeout(go,1200)})()</script>"""
+
 esc = html.escape
 FP, LZ = 'fetchpriority="high"', 'loading="lazy"'   # the hero's middle cover loads first
 GLOSS = {READERS: [], GRAMMAR: []}
@@ -105,6 +116,7 @@ function h(ev){
 CSS = """
 .bp-hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
 @media (max-width:860px){.bp-hero{grid-template-columns:1fr}}
+.page-hero{overflow-x:clip}
 .bp-fan{position:relative;height:300px;max-width:420px;margin:0 auto;width:100%}
 .bp-fan img{position:absolute;top:30px;width:150px;height:auto;border-radius:10px;border:3px solid #fff;box-shadow:0 14px 30px rgba(26,39,82,.22)}
 .bp-fan img:nth-child(1){left:0;transform:rotate(-10deg)}
@@ -297,7 +309,7 @@ def readers_page():
 
     # hero
     fan = "".join(f'<img src="/assets/img/readers/covers/{c}.webp" alt="{esc(books[c]["title"])} 封面" width="320" height="454" '
-                  f'{FP if i == 2 else LZ} decoding="async">'
+                  f'{FP if i == 2 else ""} decoding="async">'
                   for i, c in enumerate(("1a", "3a", "6a", "9b", "12a")))
     out.append(f"""<section class="page-hero">
   <div class="wrap">
@@ -313,7 +325,7 @@ def readers_page():
           <a class="btn btn-outline" href="#buy">{Z("看價格", "see prices")}</a></div>
         <div class="bp-facts reveal d2"><span>{Z("PDF＋翻頁電子書", "PDF + flip book")}</span><span>{Z("邊聽邊讀", "reads aloud")}</span><span>{Z("12 級 36 本", "12 levels, 36 books")}</span><span>{Z("3 歲起陪讀", "from age 3, read together")}</span></div>
       </div>
-      <div class="bp-fan reveal d1" aria-hidden="true">{fan}</div>
+      <div class="bp-fan" aria-hidden="true">{fan}</div>{FAN_JS}
     </div>
   </div>
 </section>
@@ -622,7 +634,7 @@ def grammar_page():
     fan_imgs = [("covers/G8-1", 300, 424), ("pages/elementary-pattern-page", 778, 1100), ("pages/junior-grammar-page", 778, 1100),
                 ("pages/senior-grammar-page", 778, 1100), ("pages/junior-exam-page", 778, 1100)]
     fan = "".join(f'<img src="/assets/img/grammar-books/{src}.webp" alt="" width="{w}" height="{h}" '
-                  f'{FP if i == 2 else LZ} decoding="async">'
+                  f'{FP if i == 2 else ""} decoding="async">'
                   for i, (src, w, h) in enumerate(fan_imgs))
     out.append(f"""<section class="page-hero">
   <div class="wrap">
@@ -638,7 +650,7 @@ def grammar_page():
           <a class="btn btn-outline" href="#buy">{Z("看價格", "see prices")}</a></div>
         <div class="bp-facts reveal d2"><span>{Z("每學期一本", "one per semester")}</span><span>{Z("附解答", "answers included")}</span><span>{Z("可以列印", "printable")}</span><span>{Z("每冊附速查表", "cheat sheet with every book")}</span></div>
       </div>
-      <div class="bp-fan reveal d1" aria-hidden="true">{fan}</div>
+      <div class="bp-fan" aria-hidden="true">{fan}</div>{FAN_JS}
     </div>
   </div>
 </section>

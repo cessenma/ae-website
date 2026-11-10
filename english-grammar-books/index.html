@@ -60,6 +60,7 @@ function h(ev){
 <style>
 .bp-hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
 @media (max-width:860px){.bp-hero{grid-template-columns:1fr}}
+.page-hero{overflow-x:clip}
 .bp-fan{position:relative;height:300px;max-width:420px;margin:0 auto;width:100%}
 .bp-fan img{position:absolute;top:30px;width:150px;height:auto;border-radius:10px;border:3px solid #fff;box-shadow:0 14px 30px rgba(26,39,82,.22)}
 .bp-fan img:nth-child(1){left:0;transform:rotate(-10deg)}
@@ -195,7 +196,14 @@ function h(ev){
           <a class="btn btn-outline" href="#buy">看價格</a></div>
         <div class="bp-facts reveal d2"><span>每學期一本</span><span>附解答</span><span>可以列印</span><span>每冊附速查表</span></div>
       </div>
-      <div class="bp-fan reveal d1" aria-hidden="true"><img src="/assets/img/grammar-books/covers/G8-1.webp" alt="" width="300" height="424" loading="lazy" decoding="async"><img src="/assets/img/grammar-books/pages/elementary-pattern-page.webp" alt="" width="778" height="1100" loading="lazy" decoding="async"><img src="/assets/img/grammar-books/pages/junior-grammar-page.webp" alt="" width="778" height="1100" fetchpriority="high" decoding="async"><img src="/assets/img/grammar-books/pages/senior-grammar-page.webp" alt="" width="778" height="1100" loading="lazy" decoding="async"><img src="/assets/img/grammar-books/pages/junior-exam-page.webp" alt="" width="778" height="1100" loading="lazy" decoding="async"></div>
+      <div class="bp-fan" aria-hidden="true"><img src="/assets/img/grammar-books/covers/G8-1.webp" alt="" width="300" height="424"  decoding="async"><img src="/assets/img/grammar-books/pages/elementary-pattern-page.webp" alt="" width="778" height="1100"  decoding="async"><img src="/assets/img/grammar-books/pages/junior-grammar-page.webp" alt="" width="778" height="1100" fetchpriority="high" decoding="async"><img src="/assets/img/grammar-books/pages/senior-grammar-page.webp" alt="" width="778" height="1100"  decoding="async"><img src="/assets/img/grammar-books/pages/junior-exam-page.webp" alt="" width="778" height="1100"  decoding="async"></div><script>(()=>{const f=document.currentScript.previousElementSibling;
+if(!f||!f.animate||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+const im=[...f.querySelectorAll("img")],R=[-10,-4,0,5,10],S=im.map((e,i)=>({x:e.offsetLeft,y:e.offsetTop,r:R[i]}));
+const dx=S[1].x-S[0].x;S.unshift({x:S[0].x-dx*1.1,y:S[0].y+28,r:-17});S.unshift({x:S[0].x-dx*1.3,y:S[0].y+40,r:-25});
+f.style.visibility="hidden";const go=()=>{if(go.done)return;go.done=1;f.style.visibility="";im.forEach((e,i)=>{const k=i+2,me=S[k],fr=[];for(let j=0;j<=k;j++){const s=S[j];
+fr.push({transform:`translate(${s.x-me.x}px,${s.y-me.y}px) rotate(${s.r}deg)`,opacity:j?1:0,offset:j/k})}
+e.animate(fr,{duration:700+160*k,delay:150+(im.length-1-i)*120,easing:"cubic-bezier(.25,.8,.3,1)",fill:"backwards"})})};
+Promise.all(im.map(e=>e.decode?e.decode().catch(()=>{}):0)).then(go);setTimeout(go,1200)})()</script>
     </div>
   </div>
 </section>
