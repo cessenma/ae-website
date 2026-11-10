@@ -66,7 +66,7 @@ FACEBOOK = "https://www.facebook.com/profile.php?id=61576014571186"   # 埃森�
 LOGO = "/assets/img/american-english-banqiao-logo.jpg"
 # the header/footer show the logo at 38px: a 3 KB WebP there, the 24 KB JPEG stays for schema and sharing
 LOGO_SMALL = "/assets/img/american-english-banqiao-logo-96.webp"
-NAV  = [("首頁","/"),("課程","/courses/"),("劍橋英檢","/exams/"),("全民英檢","/gept/"),("分級讀本","/chris-and-cora-readers/"),("師資","/certified-american-teacher-banqiao/"),
+NAV  = [("首頁","/"),("課程","/courses/"),("劍橋英檢","/exams/"),("全民英檢","/gept/"),("分級讀本","/chris-and-cora-readers/"),("文法書","/english-grammar-books/"),("師資","/certified-american-teacher-banqiao/"),
         ("家長見證","/banqiao-parent-testimonials/"),("部落格","/blog/")]
 
 SEO_START, SEO_END       = "<!-- AE:SEO-LD start -->", "<!-- AE:SEO-LD end -->"
