@@ -49,6 +49,12 @@ MB_LEVEL = "40–183 MB"
 MB_SET = {"1-4": 217, "5-8": 438, "9-12": 667, "all": 1322}   # 11-10 zips with read-aloud audio
 MB_GRAMMAR = {"elementary": (30, 12), "junior": (38, 11), "senior": (36, 13)}   # junior rebuilt 11-10 (段考 tests)
 
+# measured 2026-11-10 from the ae-readers repo (data/books/*.json, data/ladder.json); see memory ae-book-pages-2026-11-08
+FRY_LIST, FRY_READ = 296, 281        # Fry, Kress & Fountoukidis (2000) first-300 list as published (296 entries); entries met in the 36 books
+CORE, CORE_10PLUS, CORE_MEDIAN = 300, 287, 27   # core words; core words met 10+ times across the 36 books; median encounters
+INSTR_ALL, INSTR_READ = 29, 26       # common worksheet/exam instruction words checked; met in the books (match, colour, tick are not)
+SIGN_WORDS = "stop · open · close · push · pull · wait · walk · in · out · up · down · left · right"
+
 esc = html.escape
 FP, LZ = 'fetchpriority="high"', 'loading="lazy"'   # the hero's middle cover loads first
 GLOSS = {READERS: [], GRAMMAR: []}
@@ -126,6 +132,33 @@ CSS = """
 .bp-card p{margin:0;font-size:14.5px;line-height:1.8;color:var(--text-body)}
 .bp-card .bp-num{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:30px;color:var(--blue);line-height:1;display:block;margin-bottom:8px}
 .bp-stage{display:flex;flex-direction:column}
+.bp-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:26px}
+.bp-stat{background:#fff;border-radius:22px;padding:22px 22px 20px;border:2px solid rgba(26,39,82,.08);box-shadow:0 5px 0 rgba(26,39,82,.06);position:relative;overflow:hidden}
+.bp-stat::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:var(--c,var(--blue))}
+.bp-stat .big{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:46px;line-height:1;color:var(--c,var(--blue));display:block;margin:6px 0 10px}
+.bp-stat b{display:block;font-family:'Baloo 2',sans-serif;font-size:17.5px;color:var(--navy);margin-bottom:6px;line-height:1.35}
+.bp-stat p{margin:0;font-size:14.5px;line-height:1.8;color:var(--text-body)}
+.bp-stat .src{display:block;margin-top:10px;font-size:12.5px;color:#64748b}
+.bp-stat .src a{color:#066d9e}
+.bp-signs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:22px auto 0;max-width:760px}
+.bp-signs span{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:15px;letter-spacing:.5px;padding:6px 14px;border-radius:10px;background:#1A2752;color:#fff;box-shadow:0 3px 0 rgba(26,39,82,.25)}
+.bp-signs span:nth-child(3n+2){background:#06C755}.bp-signs span:nth-child(3n){background:#e0a800;color:#1A2752}
+.bp-research{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:26px;max-width:980px;margin-left:auto;margin-right:auto}
+.bp-research figure{margin:0;background:#fff;border-radius:20px;padding:22px;border:2px solid rgba(26,39,82,.08);display:flex;flex-direction:column}
+.bp-research blockquote{margin:0 0 12px;font-family:'DM Serif Display',serif;font-size:21px;line-height:1.35;color:var(--navy)}
+.bp-research p{margin:0;font-size:14.5px;line-height:1.8;color:var(--text-body)}
+.bp-research figcaption{margin-top:auto;padding-top:14px;font-size:12.5px;color:#64748b;line-height:1.6}
+.bp-research figcaption a{color:#066d9e}
+.bp-school{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:center;margin-top:24px}
+.bp-school ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.bp-school li{background:#fff;border-radius:16px;padding:14px 16px 14px 48px;position:relative;border:2px solid rgba(26,39,82,.08);font-size:15px;line-height:1.7;color:var(--text-body)}
+.bp-school li::before{content:"✓";position:absolute;left:16px;top:13px;width:22px;height:22px;border-radius:50%;background:#06C755;color:#fff;font-weight:800;font-size:13px;display:grid;place-items:center}
+.bp-school li b{color:var(--navy)}
+.bp-school .bp-big{background:linear-gradient(160deg,#1A2752,#243a7a);color:#fff;border-radius:24px;padding:28px 26px;text-align:center}
+.bp-school .bp-big .big{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:64px;line-height:1;color:#FFC828;display:block}
+.bp-school .bp-big p{margin:10px 0 0;font-size:15px;line-height:1.7;color:#dbe4ff}
+.bp-school .bp-big a{color:#FFC828}
+@media (max-width:760px){.bp-school{grid-template-columns:1fr}.bp-stat .big{font-size:40px}.bp-research{grid-template-columns:1fr}}
 .bp-stage .bp-tag{align-self:flex-start;font-size:12.5px;font-weight:800;border-radius:999px;padding:3px 11px;margin-bottom:10px;background:#E8F7FF;color:#066d9e}
 .bp-stage blockquote{margin:12px 0;padding:12px 14px;border-left:4px solid var(--yellow);background:#FFFBEF;border-radius:0 12px 12px 0;font-family:'Andika','Baloo 2',sans-serif;font-size:16px;line-height:1.6;color:var(--navy)}
 .bp-stage .bp-small{font-size:13px;color:#64748b;margin-top:auto;padding-top:10px}
@@ -283,7 +316,7 @@ def readers_page():
     <div class="breadcrumb reveal"><a href="/">首頁</a> ／ {Z("分級讀本", "graded readers")}</div>
     <div class="bp-hero">
       <div>
-        <span class="eyebrow eyebrow-yellow reveal">{Z("埃森美語原創 · 12 級 36 本", "our own series · 12 levels, 36 books")}</span>
+        <span class="eyebrow eyebrow-yellow reveal">{Z("埃森美語原創 · 3 歲起親子共讀 · 12 級 36 本", "our own series · read together from age 3 · 12 levels, 36 books")}</span>
         <h1 class="reveal d1"><span style="white-space:nowrap">Chris and Cora</span> {Z("<em>英語分級讀本</em>", "English graded readers")}</h1>
         <div class="divider reveal d1"></div>
         <p class="body reveal d2">{Z(f"這套書是我們自己寫、自己編的：12 級、每級 3 本，共 36 本，每本 48 頁。左頁是英文，右頁是整頁插圖，故事發生在台灣的家、學校、公園和夜市。"
@@ -293,10 +326,61 @@ def readers_page():
             f"{cum[0]} MOE words; by the end of Level 12 a child has read {n(cum[-1])} of the words on the MOE 1,200 list in the stories.")}</p>
         <div class="bp-cta reveal d2"><a class="btn btn-primary" href="/{READERS}/read/1a/" data-book="readers" data-book-item="free">{Z("免費讀第一本", "read the first book free")}</a>
           <a class="btn btn-outline" href="#buy">{Z("看價格", "see prices")}</a></div>
-        <div class="bp-facts reveal d2"><span>{Z("PDF＋翻頁電子書", "PDF + flip book")}</span><span>{Z("每本都可以邊聽邊讀", "every book reads aloud")}</span><span>{Z("每本 48 頁", "48 pages a book")}</span><span>{Z("台灣場景", "set in Taiwan")}</span><span>{Z("教育部 1,200 字", "MOE 1,200 words")}</span></div>
+        <div class="bp-facts reveal d2"><span>{Z("PDF＋翻頁電子書", "PDF + flip book")}</span><span>{Z("每本都可以邊聽邊讀", "every book reads aloud")}</span><span>{Z("每本 48 頁", "48 pages a book")}</span><span>{Z("台灣場景", "set in Taiwan")}</span><span>{Z("教育部 1,200 字", "MOE 1,200 words")}</span><span>{Z("3 歲起陪讀", "from age 3, read together")}</span></div>
       </div>
       <div class="bp-fan reveal d1" aria-hidden="true">{fan}</div>
     </div>
+  </div>
+</section>
+""")
+
+    # what a child can read after the series (Chris 11-10; every number measured or sourced)
+    stats = [("var(--blue)", "⅔", Z("英文書裡，大約三分之二的字是最常用的 300 個字", "about two-thirds of the words in English reading are the 300 most-used words"),
+              Z(f"美國閱讀學者 Fry 統計學生讀的書，最常用的 300 個字就占了約 65%。這份字表的 {FRY_LIST} 個字，36 本書裡讀得到 {FRY_READ} 個。",
+                f"Reading researcher Edward Fry counted students' reading: the 300 most-used words make up about 65%. Of the {FRY_LIST} entries on that list, {FRY_READ} appear in the 36 books."),
+              '<a href="https://eric.ed.gov/?id=ED169516" target="_blank" rel="noopener">Fry (1980)；Fry, Kress &amp; Fountoukidis (2000)</a>'),
+             ("#06C755", f"{round(FRY_READ / FRY_LIST * 100)}%", Z("最常用的英文字，讀完這套書都見過", "of the most-used English words appear in the series"),
+              Z(f"讀完 12 級，Fry 最常用字表的 {FRY_LIST} 個字裡，孩子在故事裡讀過 {FRY_READ} 個。",
+                f"After 12 levels, a child has read {FRY_READ} of the {FRY_LIST} words on Fry's most-used list in the stories."),
+              Z("我們用 36 本書的全文逐字比對", "counted word by word against the full text of the 36 books")),
+             ("#e0a800", f"{CORE_10PLUS}/{CORE}", Z("個核心字，每個都讀到 10 次以上", "core words each met 10 or more times"),
+              Z(f"研究發現一個新字大約要碰到 10 次才記得住。這套書的 {CORE} 個核心字，有 {CORE_10PLUS} 個在 36 本裡出現 10 次以上，一般是 {CORE_MEDIAN} 次。",
+                f"Research finds a new word takes about 10 encounters to stick. Of the {CORE} core words, {CORE_10PLUS} appear 10 or more times across the 36 books; the typical word appears {CORE_MEDIAN} times."),
+              '<a href="https://eric.ed.gov/?id=EJ757328" target="_blank" rel="noopener">Webb (2007), <i>Applied Linguistics</i></a>'),
+             ("#CE82FF", f"{INSTR_READ}/{INSTR_ALL}", Z("個考卷常見指令字，故事裡都讀過", "common worksheet and exam instruction words read in the stories"),
+              Z("read、look、listen、write、circle、choose、answer、find、draw、correct……學校考卷和練習本上的指令字，孩子在故事裡先讀懂了，考試時不會卡在看不懂題目。",
+                "read, look, listen, write, circle, choose, answer, find, draw, correct… the instruction words on school tests and workbooks are read in the stories first, so a test question isn't lost on the instructions."),
+              Z("我們用 36 本書的全文逐字比對", "counted word by word against the full text of the 36 books"))]
+    sc = "".join(f'<div class="bp-stat" style="--c:{c}"><span class="big">{big}</span><b>{t}</b><p>{p}</p><span class="src">{Z("來源：", "source: ")}{src}</span></div>'
+                 for c, big, t, p, src in stats)
+    signs = "".join(f'<span lang="en">{w.strip().upper()}</span>' for w in SIGN_WORDS.split("·"))
+    out.append(f"""<section class="section">
+  <div class="wrap">
+    {h2(Z("讀完 36 本", "after the 36 books"), "讀完這套書孩子讀得懂什麼", Z("讀完這套書，<em>孩子讀得懂什麼</em>", "what your child can read after the series"), "green")}
+    <p class="body center" style="max-width:64ch;margin:14px auto 0">{Z("英文裡最常出現的那一小群字，撐起了大部分的句子。這套書就是把這群字一本一本、一遍又一遍地讀熟：讀故事、看考卷題目、看街上的標示，都用得到。",
+        "A small group of the most frequent words carries most English sentences. This series reads that group in, book by book, again and again: for stories, for test questions, for the signs on the street.")}</p>
+    <div class="bp-stats reveal">{sc}</div>
+    <p class="body center" style="margin:26px auto 0;font-size:14.5px">{Z("街上和學校常見的標示字，故事裡也都讀得到：", "Common sign words from the street and school are read in the stories too:")}</p>
+    <div class="bp-signs reveal" aria-label="sign words">{signs}</div>
+  </div>
+</section>
+""")
+
+    # same word list as school
+    out.append(f"""<section class="section bg-soft">
+  <div class="wrap">
+    {h2(Z("跟學校同一份字表", "the school's own word list"), "跟孩子學校用同一份字表", Z("跟孩子的學校，<em>用同一份字表</em>", "the same word list as your child's school"), "yellow")}
+    <div class="bp-school reveal">
+      <ul>
+        <li>{Z("<b>每一個字都來自教育部《國中小基本 1,200 字》</b>（角色名字除外）。台灣國小、國中的英文課本，都是照這份字表編的。", "<b>Every word comes from the MOE basic 1,200-word list</b> (apart from the characters' names). Taiwan's elementary and junior-high English textbooks are written to this list.")}</li>
+        <li>{Z(f"<b>{CORE} 個核心字，正好是課綱國小階段的目標字數</b>：課綱要孩子國小畢業前能聽、說、讀 300 個字。", f"<b>{CORE} core words, exactly the curriculum's elementary target</b>: the curriculum expects 300 words for listening, speaking and reading by the end of elementary school.")}</li>
+        <li>{Z(f"<b>讀完 12 級，教育部字表裡的 {n(cum[-1])} 個字都在故事裡讀過</b>，國中會考要的字，大部分已經先認識。", f"<b>By the end of Level 12, {n(cum[-1])} words on the MOE list have been read in the stories</b>, most of what the junior-high exam expects.")}</li>
+        <li>{Z("<b>故事發生在台灣</b>：家裡、學校、公園、夜市、捷運。孩子讀到的是自己的生活，不是外國的。", "<b>The stories happen in Taiwan</b>: home, school, the park, the night market, the MRT. Children read about their own lives, not someone else's.")}</li>
+      </ul>
+      <div class="bp-big"><span class="big">1</span><p>{Z("我們找遍了市面上的英文分級讀本，找不到第二套是照教育部字表一個字一個字編寫、故事又發生在台灣的。（2026 年 11 月查）",
+            "We looked through the English graded readers on the market and could not find a second series written word by word to the MOE list with stories set in Taiwan. (checked November 2026)")}</p></div>
+    </div>
+    <p class="bp-fine center" style="margin-top:14px">{Z("課綱字數：國家教育研究院 108 課綱英語文研究計畫。", "Curriculum word counts: NAER research projects on the 108 English curriculum.")} <a href="https://www.naer.edu.tw/PageCourse/projectDetail/RP000000001141" target="_blank" rel="noopener">NAER</a></p>
   </div>
 </section>
 """)
@@ -390,6 +474,30 @@ def readers_page():
 </section>
 """)
 
+    # what the research says (sources opened 2026-11-10; see memory)
+    research = [(Z("一個新字，要碰到大約 10 次才記得住。", "A new word takes about 10 encounters to stick."),
+                 Z("學生讀到新字 1、3、7、10 次，碰到 10 次的那組記得最多。所以這套書讓每個核心字在不同故事裡一再出現。", "Learners met new words 1, 3, 7 or 10 times; those met 10 times remembered the most. That is why every core word comes back in story after story here."),
+                 '<a href="https://eric.ed.gov/?id=EJ757328" target="_blank" rel="noopener">Webb, S. (2007). <i>Applied Linguistics</i>, 28(1), 46–65.</a>'),
+                (Z("碰到不到 8 次的字，三個月後一個都沒記住。", "Words met fewer than 8 times: none remembered three months later."),
+                 Z("用分級讀本學英文的研究發現，只讀到一兩次的字很快就忘了。重複讀，比讀很多不同的書更重要。", "A graded-reader study found words seen only once or twice are soon forgotten. Rereading matters more than reading many different books."),
+                 '<a href="https://www.wgtn.ac.nz/__data/assets/pdf_file/0008/1626146/Waring-Takaki-2003.pdf" target="_blank" rel="noopener">Waring, R. &amp; Takaki, M. (2003). <i>Reading in a Foreign Language</i>, 15(2).</a>'),
+                (Z("2、3 歲就開始陪讀，字彙進步最明顯。", "Reading together from age 2–3 grows vocabulary the most."),
+                 Z("整合多篇研究的分析發現，大人邊讀邊問孩子問題的「對話式共讀」能明顯增加孩子會說的字，年紀越小效果越大。", "An analysis combining many studies found dialogic reading, where the adult asks questions while reading, clearly grows the words a child can say, and the younger the child the bigger the effect."),
+                 '<a href="https://eric.ed.gov/?id=EJ787378" target="_blank" rel="noopener">Mol, Bus, de Jong &amp; Smeets (2008). <i>Early Education and Development</i>, 19(1).</a>'),
+                (Z("最常用的 300 個字，就是英文閱讀的三分之二。", "The 300 most-used words are two-thirds of English reading."),
+                 Z("Fry 統計學校讀物，前 100 個字占了一半，前 300 個字約占 65%。先把這群字讀熟，後面的書就讀得動。", "Fry counted school reading materials: the first 100 words are half, the first 300 about 65%. Read this group well first and later books become readable."),
+                 '<a href="https://eric.ed.gov/?id=ED169516" target="_blank" rel="noopener">Sakiey, E. &amp; Fry, E. (1979). <i>3000 Instant Words</i>; Fry (1980), <i>The Reading Teacher</i>.</a>')]
+    rc = "".join(f'<figure><blockquote>{q}</blockquote><p>{t}</p><figcaption>{src}</figcaption></figure>' for q, t, src in research)
+    out.append(f"""<section class="section bg-soft">
+  <div class="wrap">
+    {h2(Z("研究怎麼說", "what research says"), "研究怎麼說", Z("這樣編，<em>是有研究根據的</em>", "built the way the research points"), "yellow")}
+    <div class="bp-research reveal">{rc}</div>
+    <p class="body center" style="max-width:66ch;margin:18px auto 0;font-size:14px">{Z("研究支持的是「大人陪著讀」：3 歲的孩子先聽、先看、跟著指著讀，自己讀要等認得字母和一點自然發音之後。",
+        "What research supports is reading together: a 3-year-old listens, looks and follows the adult's finger; reading alone comes after the letters and some phonics.")}</p>
+  </div>
+</section>
+""")
+
     # reading together
     steps = [Z("<b>先看圖，用中文聊也可以。</b>右頁整頁插圖就是故事，先問孩子「你看到什麼？」", "Look at the picture first; talking in Chinese is fine. The full-page picture is the story: ask 'what do you see?'"),
              Z("<b>大人指著字慢慢讀，孩子跟著讀。</b>第二遍換孩子讀，大人只在卡住的時候幫忙。", "The adult points and reads slowly, the child reads along. The second time the child reads; help only when stuck."),
@@ -397,7 +505,7 @@ def readers_page():
              Z("<b>同一本讀到順，再換下一本。</b>每一級 3 本用同一批字，讀到第三本會順很多。", "Read the same book until it is smooth, then move on. The 3 books of a level share the same words, so the third goes much more smoothly.")]
     out.append(f"""<section class="section">
   <div class="wrap">
-    {h2(Z("親子共讀", "reading together"), "陪孩子讀不需要英文很好", Z("陪孩子讀，<em>不需要英文很好</em>", "you don't need good English to read with your child"))}
+    {h2(Z("3 歲起親子共讀", "reading together from age 3"), "陪孩子讀不需要英文很好", Z("陪孩子讀，<em>不需要英文很好</em>", "you don't need good English to read with your child"))}
     <ol class="bp-steps reveal">{"".join(f"<li>{s}</li>" for s in steps)}</ol>
     <p class="body center" style="max-width:66ch;margin:6px auto 0;font-size:14.5px">{Z("建議印出來一起讀：<a href='https://oro.open.ac.uk/75652' target='_blank' rel='noopener'>2021 年一份整合 39 篇研究的分析</a>發現，大人陪讀紙本，孩子對故事的理解比自己看電子書好。翻頁電子書適合在路上、或孩子自己再讀一遍。",
         "We suggest printing and reading together: a 2021 analysis of 39 studies found children understand a story better when an adult reads a paper book with them than when they read an e-book alone. The flip book suits reading on the go, or a child's own re-read.")}</p>
