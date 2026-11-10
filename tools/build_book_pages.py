@@ -61,8 +61,8 @@ if(!f||!f.animate||matchMedia("(prefers-reduced-motion: reduce)").matches)return
 const im=[...f.querySelectorAll("img")],R=[-10,-4,0,5,10],S=im.map((e,i)=>({x:e.offsetLeft,y:e.offsetTop,r:R[i]}));
 const dx=S[1].x-S[0].x;S.unshift({x:S[0].x-dx*1.1,y:S[0].y+28,r:-17});S.unshift({x:S[0].x-dx*1.3,y:S[0].y+40,r:-25});
 f.style.visibility="hidden";const go=()=>{if(go.done)return;go.done=1;f.style.visibility="";im.forEach((e,i)=>{const k=i+2,me=S[k],fr=[];for(let j=0;j<=k;j++){const s=S[j];
-fr.push({transform:`translate(${s.x-me.x}px,${s.y-me.y}px) rotate(${s.r}deg)`,opacity:j?1:0,offset:j/k})}
-e.animate(fr,{duration:700+160*k,delay:150+(im.length-1-i)*120,easing:"cubic-bezier(.25,.8,.3,1)",fill:"backwards"})})};
+fr.push({transform:`translate(${s.x-me.x}px,${s.y-me.y}px) rotate(${s.r}deg)`,opacity:Math.min(1,j/Math.max(1,k-1)),offset:j/k})}
+e.animate(fr,{duration:2000+300*k,delay:200+(im.length-1-i)*260,easing:"cubic-bezier(.3,1.18,.45,1)",fill:"backwards"})})};
 Promise.all(im.map(e=>e.decode?e.decode().catch(()=>{}):0)).then(go);setTimeout(go,1200)})()</script>"""
 
 esc = html.escape
@@ -181,15 +181,17 @@ CSS = """
 .bp-lv .bp-in ul{margin:0 0 12px;padding-left:18px;font-size:13.5px;line-height:1.7;color:var(--text-body)}
 .bp-lv .bp-in .btn{margin-top:4px}
 @media (max-width:720px){.bp-lv summary{grid-template-columns:56px 1fr auto;gap:10px}.bp-lv .bp-cov{display:none}.bp-lv .bp-in{grid-template-columns:1fr}}
+.bp-reader{max-width:1000px;margin:22px auto 0;border-radius:22px;overflow:hidden;background:#fff;border:2px solid rgba(26,39,82,.08);box-shadow:0 14px 40px rgba(26,39,82,.12)}
+.bp-reader iframe{display:block;width:100%;height:clamp(560px,64vw,700px);border:0}
 .bp-tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px auto 0;max-width:1040px}
 @media (max-width:820px){.bp-tiers{grid-template-columns:1fr}}
 .bp-tier{background:linear-gradient(135deg,#FFFBEF,#FFF4D6);border:1.5px solid var(--yellow);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:8px}
-.bp-tier.hl{border-width:3px;box-shadow:0 10px 30px rgba(255,200,40,.28)}
+.bp-tier.hl{box-shadow:0 0 0 2px var(--yellow),0 10px 30px rgba(255,200,40,.28)}
 .bp-tier .bp-tn{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:15px;color:var(--navy)}
 .bp-tier .bp-tp{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:30px;color:var(--navy);line-height:1}
 .bp-tier .bp-tu{font-size:12.5px;font-weight:700;color:#8a5f00}
 .bp-tier .bp-td{font-size:13.5px;line-height:1.7;color:var(--text-body)}
-.bp-tier .bp-pick{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:4px}
+.bp-tier .bp-pick{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:auto;padding-top:4px}
 .bp-tier .bp-pick.two{grid-template-columns:1fr}
 .bp-tier .btn{margin-top:0;min-height:44px;padding:8px 6px;font-size:14px;width:100%;text-align:center;justify-content:center}
 .bp-soon{opacity:.5;cursor:not-allowed;box-shadow:none!important}
@@ -321,7 +323,7 @@ def readers_page():
         <div class="divider reveal d1"></div>
         <p class="body reveal d2">{Z("我們自己寫的 36 本英文故事書，故事發生在台灣，用的是學校的教育部 1,200 字表。",
             "36 English storybooks we wrote ourselves, set in Taiwan, using the school's MOE 1,200-word list.")}</p>
-        <div class="bp-cta reveal d2"><a class="btn btn-primary" href="/{READERS}/read/1a/" data-book="readers" data-book-item="free">{Z("免費讀第一本", "read the first book free")}</a>
+        <div class="bp-cta reveal d2"><a class="btn btn-primary" href="#read-book" data-book="readers" data-book-item="free">{Z("免費讀第一本", "read the first book free")}</a>
           <a class="btn btn-outline" href="#buy">{Z("看價格", "see prices")}</a></div>
         <div class="bp-facts reveal d2"><span>{Z("PDF＋翻頁電子書", "PDF + flip book")}</span><span>{Z("邊聽邊讀", "reads aloud")}</span><span>{Z("12 級 36 本", "12 levels, 36 books")}</span><span>{Z("3 歲起陪讀", "from age 3, read together")}</span></div>
       </div>
@@ -345,7 +347,7 @@ def readers_page():
                       '<a href="https://eric.ed.gov/?id=EJ757328" target="_blank" rel="noopener">Webb (2007)</a>',
                       '<a href="https://eric.ed.gov/?id=EJ787378" target="_blank" rel="noopener">Mol et al. (2008)</a>',
                       '<a href="https://www.naer.edu.tw/PageCourse/projectDetail/RP000000001141" target="_blank" rel="noopener">NAER</a>'])
-    out.append(f"""<section class="section">
+    out.append(f"""<section class="section" style="padding-bottom:20px">
   <div class="wrap">
     {h2(Z("為什麼選這套", "why this series"), "為什麼選這套", Z("為什麼選<em>這一套</em>", "why this series"), "green")}
     <div class="bp-stats" id="why-stats">{sc}</div>
@@ -361,20 +363,14 @@ const f=t=>{{const p=Math.max(0,Math.min(1,(t-t0)/d));el.textContent=Math.round(
 el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.querySelectorAll(".bp-stat").forEach(c=>io.observe(c))}})()</script>
 """)
 
-    # what a book looks like
-    spreads = [("1a-p12", "1a", Z("第 1 級：一頁一句", "Level 1: one sentence a page")),
-               ("4b-p16", "4b", Z("第 4 級：一頁兩三句", "Level 4: two or three sentences a page")),
-               ("8a-p20", "8a", Z("第 8 級：一頁一小段，有對話", "Level 8: a short paragraph a page, with dialogue")),
-               ("12c-p24", "12c", Z("第 12 級：整段故事", "Level 12: full paragraphs"))]
-    figs = "".join(f'<figure><img src="/assets/img/readers/spreads/{f}.webp" alt="{esc(books[c]["title"])} 內頁：左頁文字、右頁插圖" '
-                   f'width="1200" height="851" loading="lazy" decoding="async"><figcaption><b>{cap}</b>{esc(books[c]["title"])}'
-                   f'{Z("，全書", ", whole book ")} {n(books[c]["words"])} {Z("字", "words")}</figcaption></figure>' for f, c, cap in spreads)
-    out.append(f"""<section class="section">
+    # what a book looks like = the real free flip book, live (Chris 11-10): 聽故事 lights up each word, speed 0.5–1.25x
+    out.append(f"""<section class="section" id="read-book">
   <div class="wrap">
-    {h2(Z("內頁", "inside"), "一本書長什麼樣", Z("一本書，<em>長什麼樣</em>", "what a book looks like"))}
-    <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("真正的內頁：左頁英文，右頁整頁插圖。", "Real pages: English on the left, a full-page picture on the right.")}</p>
-    <div class="bp-scroll reveal">{figs}</div>
-    <p class="bp-hint">{Z("← 左右滑動 →", "← swipe →")}</p>
+    {h2(Z("免費試讀", "free to read"), "一本書長什麼樣", Z("一本書，<em>長什麼樣</em>", "what a book looks like"))}
+    <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("第一本整本免費。按「▶ 聽故事」，唸到的字會亮起來、自動翻頁；速度可以選 0.5～1.25 倍。",
+        "The first book is free in full. Press '▶ listen to the story': each word lights up as it is read and the page turns; the speed can be 0.5x to 1.25x.")}</p>
+    <div class="bp-reader reveal"><iframe src="/{READERS}/read/1a/" title="This Is Bobo! 翻頁電子書" loading="lazy" allow="autoplay"></iframe></div>
+    <p class="bp-hint"><a href="/{READERS}/read/1a/" data-book="readers" data-book-item="free-full">{Z("用整個螢幕讀 →", "read full screen →")}</a></p>
   </div>
 </section>
 """)
@@ -523,6 +519,8 @@ def free_reader():
           # GA4 itself comes from seo_build's AE:GTM block (this page is SELF_CONTAINED, which still gets it)
           "<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-book]');"
           "if(a&&typeof window.gtag==='function')gtag('event','book_tap',{product:'readers',item:a.getAttribute('data-book-item'),page_path:location.pathname,link_text:'page'});});</script>\n")
+    ga += ("<script>if(window.self!==window.top)document.addEventListener('DOMContentLoaded',function(){"
+           "document.documentElement.classList.add('embed');document.querySelectorAll('header a').forEach(function(a){a.target='_top'});});</script>\n")
     t = t.replace("<title>", ga + "<title>", 1)
     # the page-flip wrapper grows past #book and covered the footer: its buttons took no mouse clicks
     if "z-index:10" not in t:   # fixed in ae-readers flipbook.py 11-09; kept for older viewers
