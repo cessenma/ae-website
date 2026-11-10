@@ -5,7 +5,7 @@ of something else"). Run tools/seo_build.py afterwards (chrome, SEO blocks, site
 
 Writes
   chris-and-cora-readers/index.html          the 分級讀本 tab: 36 Chris and Cora readers
-  chris-and-cora-readers/read/1a/            the free Level 1a flip book (self-contained, noindex)
+  chris-and-cora-readers/read/1a|1b|1c/      the free Level 1 flip books (self-contained, noindex)
   english-grammar-books/index.html           the grammar books + cheat sheets (linked from the grammar pages)
   assets/downloads/ae-grammar-*-page1-free.pdf   page 1 of every cheat sheet, free
   ~/Downloads/GLOSS-2026-11-08-BOOK-PAGES.md every Chinese line on both pages with its English (Chris reads English)
@@ -56,6 +56,45 @@ CORE, CORE_10PLUS, CORE_MEDIAN = 300, 287, 27   # core words; core words met 10+
 
 # hero fan entrance (Chris 11-10): every picture comes in from the left and travels along the fan's own arch,
 # through the slots of the pictures before it, to its place; rightmost first, so they deal out like cards
+FREE = ("1a", "1b", "1c")   # Level 1, free on the site (Chris 11-11)
+
+# Click a free book: it flies to the middle, the hard cover swings open slowly onto the title page,
+# then the real flip book fades in over it. No JS / reduced motion: the link opens the reader page.
+OPEN_JS = """<script>(()=>{const box=document.getElementById("bookOpen");if(!box||!box.animate)return;
+const bg=box.querySelector(".bo-bg"),fr=box.querySelector(".bo-frame"),ifr=fr.querySelector("iframe"),x=box.querySelector(".bo-x");
+const still=matchMedia("(prefers-reduced-motion: reduce)").matches;let fly=null,busy=false;
+const E1="cubic-bezier(.22,.75,.25,1)",E2="cubic-bezier(.5,.05,.25,1)";
+function open(a,ev){const c=a.dataset.open;if(!c||busy)return;ev.preventDefault();busy=true;
+ const href=a.getAttribute("href"),src=href+(href.indexOf("?")<0?"?":"&")+"in=1"+(still?"":"&o=1");ifr.src=src;ifr.title=a.dataset.title||"";
+ box.classList.add("on");document.documentElement.style.overflow="hidden";
+ bg.animate([{opacity:0},{opacity:1}],{duration:still?1:600,fill:"forwards"});
+ if(still){fr.style.opacity=1;x.style.opacity=1;busy=false;x.focus();return}
+ const im=a.querySelector("img"),o=(im||a).getBoundingClientRect(),vw=innerWidth,vh=innerHeight;
+ let H=Math.min(vh*.74,640),W=H*320/454;if(W*2>vw*.92){W=vw*.46;H=W*454/320}
+ const L=vw/2,T=(vh-H)/2,s=o.width/W;
+ fly=document.createElement("div");fly.className="bo-fly";fly.style.cssText=`left:${L}px;top:${T}px;width:${W}px;height:${H}px`;
+ fly.innerHTML=`<div class="pg" style="background-image:url('${href}pages/02.jpg')"></div><div class="cv"><img src="${a.dataset.cover}" alt=""><span class="hb-gl" style="transform:none"></span><div class="in"></div></div>`;
+ box.appendChild(fly);const cv=fly.querySelector(".cv");
+ if(im)im.style.visibility="hidden";
+ const a1=fly.animate([{transform:`translate(${o.left-L}px,${o.top-T}px) scale(${s}) perspective(1400px) rotateY(-26deg)`},
+   {transform:"translate(0,0) scale(1) perspective(1400px) rotateY(0deg)"}],{duration:1300,easing:E1,fill:"forwards"});
+ a1.finished.then(()=>cv.animate([{transform:"perspective(2200px) rotateY(0deg)"},{transform:"perspective(2200px) rotateY(-12deg)",offset:.12},
+   {transform:"perspective(2200px) rotateY(-178deg)"}],{duration:2000,easing:E2,fill:"forwards"}).finished)
+ .then(()=>{fr.animate([{opacity:0,transform:"translate(-50%,-50%) scale(.97)"},{opacity:1,transform:"translate(-50%,-50%) scale(1)"}],{duration:700,easing:E1,fill:"forwards"});
+   x.animate([{opacity:0},{opacity:1}],{duration:700,fill:"forwards"});
+   return fly.animate([{opacity:1},{opacity:0}],{duration:700,fill:"forwards"}).finished})
+ .then(()=>{fly.remove();fly=null;if(im)im.style.visibility="";busy=false;x.focus()});}
+function close(){if(busy)return;busy=true;const d=still?1:350;
+ fr.animate([{opacity:1},{opacity:0}],{duration:d,fill:"forwards"});x.animate([{opacity:1},{opacity:0}],{duration:d,fill:"forwards"});
+ bg.animate([{opacity:1},{opacity:0}],{duration:d,fill:"forwards"}).finished.then(()=>{box.classList.remove("on");ifr.src="about:blank";
+ fr.getAnimations().forEach(a=>a.cancel());x.getAnimations().forEach(a=>a.cancel());fr.style.opacity="";x.style.opacity="";
+ document.documentElement.style.overflow="";busy=false})}
+document.addEventListener("click",e=>{const a=e.target.closest&&e.target.closest("a[data-open]");if(a&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey)open(a,e)});
+x.addEventListener("click",close);bg.addEventListener("click",close);
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&box.classList.contains("on"))close()});
+addEventListener("message",e=>{if(e.origin!==location.origin)return;if(e.data==="ae-close-book")close();
+ if(e.data==="ae-go-buy"){close();setTimeout(()=>{const b=document.getElementById("buy");if(b)b.scrollIntoView({behavior:"smooth"})},400)}});})()</script>"""
+
 FAN_JS = """<script>(()=>{const f=document.currentScript.previousElementSibling;
 if(!f||!f.animate||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
 const im=[...f.querySelectorAll("img")],R=[-10,-4,0,5,10],S=im.map((e,i)=>({x:e.offsetLeft,y:e.offsetTop,r:R[i]}));
@@ -181,8 +220,36 @@ CSS = """
 .bp-lv .bp-in ul{margin:0 0 12px;padding-left:18px;font-size:13.5px;line-height:1.7;color:var(--text-body)}
 .bp-lv .bp-in .btn{margin-top:4px}
 @media (max-width:720px){.bp-lv summary{grid-template-columns:56px 1fr auto;gap:10px}.bp-lv .bp-cov{display:none}.bp-lv .bp-in{grid-template-columns:1fr}}
-.bp-reader{max-width:1000px;margin:22px auto 0;border-radius:22px;overflow:hidden;background:#fff;border:2px solid rgba(26,39,82,.08);box-shadow:0 14px 40px rgba(26,39,82,.12)}
-.bp-reader iframe{display:block;width:100%;height:clamp(560px,64vw,700px);border:0}
+/* the 3 free Level 1 books as hardcovers (Chris 11-11: "resemble hard cover books … pop open slowly") */
+.bp-shelf{--bw:clamp(86px,25vw,190px);display:flex;justify-content:center;align-items:flex-start;gap:clamp(14px,5vw,64px);flex-wrap:wrap;margin:40px auto 0;perspective:1400px}
+.hb{display:flex;flex-direction:column;align-items:center;gap:14px;width:var(--bw);text-decoration:none;color:var(--navy);text-align:center}
+.hb-3d{position:relative;width:var(--bw);aspect-ratio:320/454;transform-style:preserve-3d;transform:rotateY(-26deg);transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.hb:hover .hb-3d,.hb:focus-visible .hb-3d{transform:rotateY(-10deg) translateY(-8px)}
+.hb-3d img,.hb-gl{position:absolute;inset:0;width:100%;height:100%;border-radius:2px 7px 7px 2px;transform:translateZ(10px)}
+.hb-3d img{object-fit:cover;display:block}
+.hb-gl{transform:translateZ(10.5px);pointer-events:none;background:
+ linear-gradient(90deg,rgba(0,0,0,.30) 0,rgba(255,255,255,.30) 2.4%,rgba(0,0,0,.24) 4.6%,rgba(255,255,255,.14) 6.2%,rgba(0,0,0,0) 9%),
+ linear-gradient(118deg,rgba(255,255,255,0) 38%,rgba(255,255,255,.20) 50%,rgba(255,255,255,0) 62%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.hb-3d::before{content:"";position:absolute;top:4px;bottom:4px;left:0;width:18px;
+ transform:translateX(calc(var(--bw) - 12px)) rotateY(90deg);background:repeating-linear-gradient(90deg,#fffdf8 0 2px,#e4ddcf 2px 3px)}
+.hb-3d::after{content:"";position:absolute;inset:0;border-radius:2px 7px 7px 2px;background:#1A2752;transform:translateZ(-10px);
+ box-shadow:-16px 18px 34px rgba(26,39,82,.38)}
+.hb b{font-size:15px;line-height:1.3}.hb small{font-size:12.5px;color:#64748b;margin-top:-8px}
+@media(max-width:560px){.hb{gap:10px}.hb b{font-size:13px}.hb small{font-size:11px;margin-top:-6px}.hb .hb-go{font-size:12px;padding:5px 10px}}
+.hb .hb-go{display:inline-block;white-space:nowrap;background:var(--yellow);color:var(--navy);font-weight:800;font-size:13.5px;border-radius:99px;padding:6px 14px;margin-top:-4px}
+.bo{position:fixed;inset:0;z-index:2000;display:none}.bo.on{display:block}
+.bo-bg{position:absolute;inset:0;background:rgba(15,23,50,.74);opacity:0}
+.bo-frame{position:absolute;left:50%;top:50%;width:min(1120px,96vw);height:min(780px,90vh);transform:translate(-50%,-50%);
+ border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.45);opacity:0}
+.bo-frame iframe{display:block;width:100%;height:100%;border:0}
+.bo-x{position:absolute;top:max(10px,env(safe-area-inset-top));right:12px;z-index:3;width:44px;height:44px;border-radius:50%;border:0;
+ background:#fff;color:var(--navy);font-size:26px;line-height:44px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3);opacity:0}
+.bo-fly{position:fixed;transform-origin:0 0;transform-style:preserve-3d;pointer-events:none}
+.bo-fly .pg{position:absolute;inset:0;border-radius:0 6px 6px 0;background:#fffdf8 center/cover no-repeat;box-shadow:0 22px 50px rgba(0,0,0,.4)}
+.bo-fly .cv{position:absolute;inset:0;transform-origin:0 50%;transform-style:preserve-3d}
+.bo-fly .cv>*{position:absolute;inset:0;border-radius:2px 7px 7px 2px;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.bo-fly .cv img{width:100%;height:100%;object-fit:cover}
+.bo-fly .cv .in{transform:rotateY(180deg);background:linear-gradient(90deg,#efe8da,#fbf8f1 88%,#e6dfd0);border-radius:7px 2px 2px 7px}
 .bp-tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px auto 0;max-width:1040px}
 @media (max-width:820px){.bp-tiers{grid-template-columns:1fr}}
 .bp-tier{background:linear-gradient(135deg,#FFFBEF,#FFF4D6);border:1.5px solid var(--yellow);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:8px}
@@ -294,18 +361,18 @@ def readers_page():
     lv_new = [cum[0]] + [cum[i] - cum[i - 1] for i in range(1, 12)]
     words = lambda L: [books[f"{L}{x}"]["words"] for x in "abc"]
     any_link = any(STORE["readers_sets"].values()) or any(STORE["readers_levels"].values())
-    title = Z("Chris and Cora 英語分級讀本：12 級 36 本，第一本免費讀｜埃森美語",
-              "Chris and Cora English graded readers: 12 levels, 36 books, the first book free | American English")
+    title = Z("Chris and Cora 英語分級讀本：12 級 36 本，第 1 級 3 本免費讀｜埃森美語",
+              "Chris and Cora English graded readers: 12 levels, 36 books, Level 1 (3 books) free | American English")
     desc = Z(f"埃森美語自己寫的英語分級讀本：12 級 36 本，每本 48 頁，左頁文字、右頁整頁插圖，故事在台灣。"
-             f"用到教育部 1,200 字表的 {n(cum[-1])} 個字，第一本免費線上讀。",
+             f"用到教育部 1,200 字表的 {n(cum[-1])} 個字，第 1 級 3 本免費線上讀。",
              f"Graded readers written by American English: 12 levels, 36 books, 48 pages each, words on the left page and a full-page "
-             f"picture on the right, stories set in Taiwan. They use {n(cum[-1])} of the words on the MOE 1,200 list; the first book is free to read online.")
-    og_t = Z("Chris and Cora 英語分級讀本：12 級 36 本，第一本免費讀", "Chris and Cora graded readers: 12 levels, 36 books, the first one free")
+             f"picture on the right, stories set in Taiwan. They use {n(cum[-1])} of the words on the MOE 1,200 list; Level 1 (3 books) is free to read online.")
+    og_t = Z("Chris and Cora 英語分級讀本：12 級 36 本，第 1 級 3 本免費讀", "Chris and Cora graded readers: 12 levels, 36 books, Level 1 free")
     ld = [{"@context": "https://schema.org", "@type": "Product", "@id": f"{ORIGIN}/chris-and-cora-readers/#product", "url": f"{ORIGIN}/chris-and-cora-readers/", "name": "Chris and Cora 英語分級讀本（12 級 36 冊）",
            "description": strip(desc), "brand": {"@type": "Brand", "name": "埃森美語 American English"},
            "image": [f"{ORIGIN}/assets/img/readers/covers/{c}.webp" for c in ("1a", "6a", "12a")],
            **({"offers": {"@type": "AggregateOffer", "priceCurrency": "TWD", "lowPrice": P_LEVEL, "highPrice": P_ALL,
-                          "offerCount": 16, "availability": "https://schema.org/InStock"}} if any_link else {})}]
+                          "offerCount": 15, "availability": "https://schema.org/InStock"}} if any_link else {})}]
     out = [head(READERS, title, desc, og_t, desc, "/assets/img/readers/og-all-36.jpg", 1600, 1200,
                 Z("Chris and Cora 英語分級讀本 36 本封面", "the 36 Chris and Cora covers"), ld, LEMON if any_link else "")]
 
@@ -323,7 +390,7 @@ def readers_page():
         <div class="divider reveal d1"></div>
         <p class="body reveal d2">{Z("我們自己寫的 36 本英文故事書，故事發生在台灣，用的是學校的教育部 1,200 字表。",
             "36 English storybooks we wrote ourselves, set in Taiwan, using the school's MOE 1,200-word list.")}</p>
-        <div class="bp-cta reveal d2"><a class="btn btn-primary" href="#read-book" data-book="readers" data-book-item="free">{Z("免費讀第一本", "read the first book free")}</a>
+        <div class="bp-cta reveal d2"><a class="btn btn-primary" href="#read-book" data-book="readers" data-book-item="free">{Z("免費讀第 1 級 3 本", "read Level 1 (3 books) free")}</a>
           <a class="btn btn-outline" href="#buy">{Z("看價格", "see prices")}</a></div>
         <div class="bp-facts reveal d2"><span>{Z("PDF＋翻頁電子書", "PDF + flip book")}</span><span>{Z("邊聽邊讀", "reads aloud")}</span><span>{Z("12 級 36 本", "12 levels, 36 books")}</span><span>{Z("3 歲起陪讀", "from age 3, read together")}</span></div>
       </div>
@@ -363,16 +430,24 @@ const f=t=>{{const p=Math.max(0,Math.min(1,(t-t0)/d));el.textContent=Math.round(
 el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.querySelectorAll(".bp-stat").forEach(c=>io.observe(c))}})()</script>
 """)
 
-    # what a book looks like = the real free flip book, live (Chris 11-10): 聽故事 lights up each word, speed 0.5–1.25x
+    # Level 1 is free (Chris 11-11: "offer 1a 1b and 1c for free"): three hardcovers; a click swings the cover open into the flip book
+    shelf = "".join(
+        f'<a class="hb" href="/{READERS}/read/{c}/" data-open="{c}" data-cover="/assets/img/readers/covers/{c}.webp" data-title="{esc(books[c]["title"])}" data-book="readers" data-book-item="free-{c}">'
+        f'<span class="hb-3d"><img src="/assets/img/readers/covers/{c}.webp" alt="{esc(books[c]["title"])} 封面" width="320" height="454" loading="lazy" decoding="async"><span class="hb-gl"></span></span>'
+        f'<b lang="en">{esc(books[c]["title"])}</b><small>{Z(f"{c}・{books[c]['words']} 字", f"{c} · {books[c]['words']} words")}</small>'
+        f'<span class="hb-go">{Z("▶ 打開來讀", "open and read")}</span></a>' for c in FREE)
     out.append(f"""<section class="section" id="read-book">
   <div class="wrap">
-    {h2(Z("免費試讀", "free to read"), "一本書長什麼樣", Z("一本書，<em>長什麼樣</em>", "what a book looks like"))}
-    <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("第一本整本免費。按「▶ 聽故事」，唸到的字會亮起來、自動翻頁；速度可以選 0.5～1.25 倍。",
-        "The first book is free in full. Press '▶ listen to the story': each word lights up as it is read and the page turns; the speed can be 0.5x to 1.25x.")}</p>
-    <div class="bp-reader reveal"><iframe src="/{READERS}/read/1a/" title="This Is Bobo! 翻頁電子書" loading="lazy" allow="autoplay"></iframe></div>
-    <p class="bp-hint"><a href="/{READERS}/read/1a/" data-book="readers" data-book-item="free-full">{Z("用整個螢幕讀 →", "read full screen →")}</a></p>
+    {h2(Z("免費試讀", "free to read"), "第-1-級-3-本免費讀", Z("第 1 級 3 本，<em>整本免費讀</em>", "Level 1: three books, free in full"))}
+    <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("點一本書打開來讀。按「▶ 聽故事」，唸到的字會亮起來、自動翻頁；速度可以選 0.5～1.25 倍。",
+        "Click a book to open it. Press '▶ listen to the story': each word lights up as it is read and the page turns; the speed can be 0.5x to 1.25x.")}</p>
+    <div class="bp-shelf reveal">{shelf}</div>
   </div>
 </section>
+<div class="bo" id="bookOpen" role="dialog" aria-modal="true" aria-label="{Z("翻頁電子書", "flip book")}"><div class="bo-bg"></div>
+<div class="bo-frame"><iframe title="{Z("翻頁電子書", "flip book")}" allow="autoplay; fullscreen"></iframe></div>
+<button class="bo-x" type="button" aria-label="{Z("關閉", "close")}">×</button></div>
+{OPEN_JS}
 """)
 
     # stages (= the three 4-level sets)
@@ -396,6 +471,9 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
 """)
 
     # the 12 levels
+    free_links = lambda: ('<div class="cta-row" style="justify-content:flex-start;margin-top:12px">' + "".join(
+        f'<a class="btn btn-yellow" href="/{READERS}/read/{c}/" data-open="{c}" data-cover="/assets/img/readers/covers/{c}.webp" data-title="{esc(books[c]["title"])}" data-book="readers" data-book-item="free-{c}">{Z(f"免費讀 {c}", f"read {c} free")}</a>'
+        for c in FREE) + "</div>")
     rows = []
     for L in range(1, 13):
         bs = [books[f"{L}{x}"] for x in "abc"]
@@ -408,7 +486,7 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
 <div class="bp-in"><div><img src="/assets/img/readers/spreads/{spread}.webp" alt="第 {L} 級內頁" width="960" height="681" loading="lazy" decoding="async"></div>
 <div><p style="margin:0 0 10px;font-size:14px;line-height:1.7">{Z(f"這一級新讀到的教育部字：<b>{lv_new[L-1]}</b> 個；讀完累積 <b>{n(cum[L-1])}</b> 個。", f"MOE words first read in this level: {lv_new[L-1]}; {n(cum[L-1])} in all after it.")}</p>
 <p style="margin:0 0 6px;font-size:13.5px;font-weight:800;color:var(--navy)">{Z("讀完問問看（書後的問題）", "talk about it (questions from the back of each book)")}</p>{qs}
-{buy(STORE["readers_levels"].get(str(L), ""), Z(f"買第 {L} 級・NT${P_LEVEL}", f"buy Level {L} · NT${P_LEVEL}"), "readers", f"level-{L}", P_LEVEL)}</div></div></details>""")
+{free_links() if L == 1 else buy(STORE["readers_levels"].get(str(L), ""), Z(f"買第 {L} 級・NT${P_LEVEL}", f"buy Level {L} · NT${P_LEVEL}"), "readers", f"level-{L}", P_LEVEL)}</div></div></details>""")
     out.append(f"""<section class="section">
   <div class="wrap" style="max-width:980px">
     {h2(Z("12 級一覽", "all 12 levels"), "12-級36-本一覽", Z("12 級 36 本，<em>一覽</em>", "the 12 levels and 36 books"))}
@@ -433,12 +511,12 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
 
     # prices
     lv_btns = "".join(buy(STORE["readers_levels"].get(str(L), ""), Z(f"第 {L} 級", f"Level {L}"), "readers", f"level-{L}", P_LEVEL,
-                          "btn btn-outline") for L in range(1, 13))
+                          "btn btn-outline") for L in range(2, 13))
     set_btns = "".join(buy(STORE["readers_sets"].get(k, ""), Z(f"第 {k.replace('-', '–')} 級", f"Levels {k}"), "readers", f"set-{k}", P_SET)
                        for k in ("1-4", "5-8", "9-12"))
     tiers = f"""<div class="bp-tiers reveal" id="buy-tiers">
 <div class="bp-tier"><span class="bp-tn">{Z("單級 3 本", "one level, 3 books")}</span><span class="bp-tp">NT${P_LEVEL}</span><span class="bp-tu">{Z(f"約 NT${round(P_LEVEL/3)}／本", f"about NT${round(P_LEVEL/3)} a book")}</span>
-<span class="bp-td">{Z(f"先買孩子現在這一級試試看。每級約 {MB_LEVEL}。", f"Try the level your child is at now. About {MB_LEVEL} a level.")}</span><div class="bp-pick">{lv_btns}</div></div>
+<span class="bp-td">{Z(f"先買孩子現在這一級試試看。第 1 級免費線上讀。每級約 {MB_LEVEL}。", f"Try the level your child is at now. Level 1 is free online. About {MB_LEVEL} a level.")}</span><div class="bp-pick">{lv_btns}</div></div>
 <div class="bp-tier hl"><span class="bp-tn">{Z("一個階段 4 級 12 本", "one stage, 4 levels, 12 books")}</span><span class="bp-tp">NT${n(P_SET)}</span><span class="bp-tu">{Z(f"約 NT${round(P_SET/12)}／本・比單級分開買省 NT${4*P_LEVEL-P_SET}", f"about NT${round(P_SET/12)} a book · NT${4*P_LEVEL-P_SET} less than 4 single levels")}</span>
 <span class="bp-td">{Z("從孩子現在的階段買起，夠讀好幾個月。", "Start from your child's stage; enough for several months.")}</span><div class="bp-pick two">{set_btns}</div></div>
 <div class="bp-tier"><span class="bp-tn">{Z("全套 12 級 36 本", "all 12 levels, 36 books")}</span><span class="bp-tp">NT${n(P_ALL)}</span><span class="bp-tu">{Z(f"約 NT${round(P_ALL/36)}／本・比 12 級分開買省 NT${n(12*P_LEVEL-P_ALL)}", f"about NT${round(P_ALL/36)} a book · NT${n(12*P_LEVEL-P_ALL)} less than 12 single levels")}</span>
@@ -453,16 +531,16 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
     {tiers}
     <p class="bp-fine">{Z("每本書都有 PDF（A5，可以自己印）和翻頁電子書（在電腦上解壓縮後點開 index.html，不用網路也能讀；手機、平板看 PDF 最方便）。翻頁電子書可以邊聽邊讀，唸到的字會亮起來，也可以放慢速度。家庭自用；學校或補習班要全班用，請先 <a href='" + LINE + "' target='_blank' rel='noopener'>LINE 問我們</a>。",
         "Every book comes as a PDF (A5, print it yourself) and a flip book (unzip on a computer and open index.html, no internet needed; on a phone or tablet the PDF is easiest). The flip books read aloud, lighting up each word, and the reading can be slowed down. For family use; for a whole class at a school or cram school, ask us on LINE first.")}<br>
-    {Z("這是數位內容，付款後立刻提供下載；依《通訊交易解除權合理例外情事適用準則》第 2 條第 5 款，按下購買即表示你同意不適用七天解除權。請先免費讀第一本再決定。",
-       "This is digital content delivered right after payment; under Article 2(5) of the rules on exceptions to the 7-day cancellation right, clicking buy means you agree the 7-day cancellation does not apply. Please read the first book free before deciding.")}</p>
+    {Z("這是數位內容，付款後立刻提供下載；依《通訊交易解除權合理例外情事適用準則》第 2 條第 5 款，按下購買即表示你同意不適用七天解除權。請先免費讀第 1 級再決定。",
+       "This is digital content delivered right after payment; under Article 2(5) of the rules on exceptions to the 7-day cancellation right, clicking buy means you agree the 7-day cancellation does not apply. Please read Level 1 free before deciding.")}</p>
   </div>
 </section>
 """)
 
     # FAQ
     qa = [(Z("適合幾歲的孩子？", "What age is it for?"),
-           Z("看程度，不看年齡。認得字母、學過一點自然發音就可以從第 1 級開始；已經讀得出短句的孩子，從第 5 級開始。最準的方法是讓孩子讀上面「孩子在哪個階段」的句子，或先免費讀第一本。",
-             "Go by level, not age. A child who knows the letters and some phonics can start at Level 1; one who already reads short sentences, at Level 5. The surest way is the sentences under 'which stage', or the free first book.")),
+           Z("看程度，不看年齡。認得字母、學過一點自然發音就可以從第 1 級開始；已經讀得出短句的孩子，從第 5 級開始。最準的方法是讓孩子讀上面「孩子在哪個階段」的句子，或先免費讀第 1 級。",
+             "Go by level, not age. A child who knows the letters and some phonics can start at Level 1; one who already reads short sentences, at Level 5. The surest way is the sentences under 'which stage', or the free Level 1.")),
           (Z("有音檔嗎？", "Is there audio?"),
            Z("有。36 本的翻頁電子書都可以按「聽故事」：唸到哪個字、哪個字就亮起來，唸完自動翻頁（目前是 AI 語音）。速度可以選 0.5、0.75、1 或 1.25 倍，每一種速度都是事先做好的錄音，放慢了聲音一樣清楚。在電腦上下載後，不用網路也能聽。PDF 檔本身沒有聲音。",
              "Yes. All 36 flip books have 'listen to the story': each word lights up as it is read and the page turns by itself (an AI voice for now). The speed can be 0.5x, 0.75x, 1x or 1.25x; each speed is a recording made ahead of time, so the voice stays just as clear when slowed down. On a computer it works offline after download. The PDF files themselves have no sound.")),
@@ -482,9 +560,9 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
   <div class="wrap">
     <div class="cta-box reveal">
       <span class="eyebrow eyebrow-green">{Z("免費試讀", "free sample")}</span>
-      <h2 id="先讀第一本" style="margin-top:14px">{Z("先讀第一本，<em>再決定</em>", "read the first book, then decide")}</h2>
-      <p class="body" style="max-width:560px;margin:16px auto 0">{Z(f"第 1 級第一本 <i lang='en'>This Is Bobo!</i> 整本免費，在網站上直接翻頁讀，還可以按「聽故事」邊聽邊讀，唸到的字會亮起來。不用下載也不用留資料。", "Level 1, Book 1, This Is Bobo!, is free in full: turn the pages on the site, or press 'listen to the story' and read along as each word lights up. No download, no sign-up.")}</p>
-      <div class="cta-row"><a class="btn btn-primary" href="/{READERS}/read/1a/" data-book="readers" data-book-item="free">{Z("免費讀第一本", "read the first book free")}</a>
+      <h2 id="先讀第-1-級" style="margin-top:14px">{Z("先讀第 1 級，<em>再決定</em>", "read Level 1, then decide")}</h2>
+      <p class="body" style="max-width:560px;margin:16px auto 0">{Z("第 1 級的 3 本（<i lang='en'>This Is Bobo!</i>、<i lang='en'>Bobo Is in the Bed!</i>、<i lang='en'>The Little Red Shop</i>）整本免費，在網站上直接翻頁讀，還可以按「聽故事」邊聽邊讀，唸到的字會亮起來。不用下載也不用留資料。", "The 3 books of Level 1 (This Is Bobo!, Bobo Is in the Bed!, The Little Red Shop) are free in full: turn the pages on the site, or press 'listen to the story' and read along as each word lights up. No download, no sign-up.")}</p>
+      <div class="cta-row"><a class="btn btn-primary" href="#read-book" data-book="readers" data-book-item="free">{Z("免費讀第 1 級 3 本", "read Level 1 free")}</a>
       <a class="btn btn-outline" href="{LINE}" target="_blank" rel="noopener">{Z("LINE 問我們", "ask us on LINE")}</a></div>
     </div>
   </div>
@@ -496,8 +574,12 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
 # ---------------------------------------------------------------- the free 1a flip book
 
 def free_reader():
-    src = os.path.join(FLIP_SRC, "1a")
-    dst = os.path.join(SITE, READERS, "read", "1a")
+    for i, c in enumerate(FREE):
+        free_book(c, FREE[i + 1] if i + 1 < len(FREE) else None)
+
+def free_book(code, nxt):
+    src = os.path.join(FLIP_SRC, code)
+    dst = os.path.join(SITE, READERS, "read", code)
     if not os.path.exists(src):
         print("  flip book source missing, kept what is on the site:", src)
         return
@@ -512,16 +594,28 @@ def free_reader():
         shutil.copy2(os.path.join(FLIP_SRC, "lib", f), os.path.join(SITE, READERS, "read", "lib", f))
     t = open(os.path.join(src, "index.html"), encoding="utf-8").read()
     t = t.replace('<html lang="en">', '<html lang="zh-Hant-TW">')
+    nx = (f'<a class="nx" href="/{READERS}/read/{nxt}/" data-book="readers" data-book-item="next-{nxt}">下一本 &#8250;</a>' if nxt else
+          f'<a class="nx" href="/{READERS}/#buy" data-book="readers" data-book-item="after-free">第 2 級以後 &#8250;</a>')
+    old = t[t.index('<span class="lvl">'):t.index("</header>")]
+    t = t.replace(old, old + nx, 1)
     t = t.replace('href="../index.html" title="All books">&#8249; Books</a>',
                   f'href="/{READERS}/" title="全部 36 本" data-book="readers" data-book-item="from-free">&#8249; 全部 36 本</a>')
     ga = ("<meta name='robots' content='noindex,follow'>\n"
-          f"<link rel='canonical' href='{ORIGIN}/{READERS}/read/1a/'>\n"
+          f"<link rel='canonical' href='{ORIGIN}/{READERS}/read/{code}/'>\n"
           # GA4 itself comes from seo_build's AE:GTM block (this page is SELF_CONTAINED, which still gets it)
           "<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-book]');"
           "if(a&&typeof window.gtag==='function')gtag('event','book_tap',{product:'readers',item:a.getAttribute('data-book-item'),page_path:location.pathname,link_text:'page'});});</script>\n")
+    # inside the readers page's pop-up (?in=1): 全部 36 本 closes the pop-up, 第 2 級以後 leaves it; 下一本 stays inside
     ga += ("<script>if(window.self!==window.top)document.addEventListener('DOMContentLoaded',function(){"
-           "document.documentElement.classList.add('embed');document.querySelectorAll('header a').forEach(function(a){a.target='_top'});});</script>\n")
+           "document.documentElement.classList.add('embed');"
+           "document.querySelectorAll('header a').forEach(function(a){if(a.classList.contains('nx')){if(a.href.indexOf('#buy')<0){a.href+='?in=1';return}}"
+           "a.addEventListener('click',function(e){e.preventDefault();window.top.postMessage(a.classList.contains('nx')?'ae-go-buy':'ae-close-book',location.origin)})});});</script>\n")
+    # opened from the readers page's hardcover (?o=1): the cover has just swung open, so start on the first spread
+    ga += ("<script>if(/[?&]o=1/.test(location.search))addEventListener('load',function(){setTimeout(function(){"
+           "try{pf.turnToPage(1)}catch(e){}},60)});</script>\n")
     t = t.replace("<title>", ga + "<title>", 1)
+    t = t.replace("</style>", "header .nx{background:#FFC828;color:#1A2752;opacity:1;font-weight:700;font-size:14px;border-radius:99px;padding:4px 12px;white-space:nowrap}"
+                  "header .nx:hover{background:#ffd75e}@media(max-width:600px){.embed header{padding-right:58px}.embed header h1{font-size:0}}\n</style>", 1)
     # the page-flip wrapper grows past #book and covered the footer: its buttons took no mouse clicks
     if "z-index:10" not in t:   # fixed in ae-readers flipbook.py 11-09; kept for older viewers
         t = t.replace("</style>", "header,footer{position:relative;z-index:10}\n</style>", 1)

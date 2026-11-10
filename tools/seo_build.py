@@ -264,9 +264,11 @@ SELF_CONTAINED = {"line/index.html",
                   # private pack delivery: standalone styling, no site nav,
                   # and it must stay out of the crawl surface entirely
                   "pack-9rvvw6p3nnmls4/index.html",
-                  # the free Level 1a flip book: a full-screen page-turner with its own GA4 tag
-                  # (tools/build_book_pages.py), noindex, so no site nav or footer around it
-                  "chris-and-cora-readers/read/1a/index.html"}
+                  # the free Level 1 flip books (1a, 1b, 1c): full-screen page-turners with their own GA4 tag
+                  # (tools/build_book_pages.py), noindex, so no site nav or footer around them
+                  "chris-and-cora-readers/read/1a/index.html",
+                  "chris-and-cora-readers/read/1b/index.html",
+                  "chris-and-cora-readers/read/1c/index.html"}
 
 def html_escape(t):
     return (t.replace("&", "&amp;").replace("<", "&lt;")
@@ -1392,31 +1394,31 @@ BOOKS_START, BOOKS_END = "<!-- AE:BOOKS -->", "<!-- /AE:BOOKS -->"
 BOOKS_PAGES = {
     "moe-1200-words-guide": ("pdf", "readers", "這 1,200 字，放進故事裡讀",
         "我們自己寫的 36 本英語分級讀本，用到教育部字表 1,211 條裡的 1,199 條：每一級只加幾個新字、一再重複，"
-        "孩子從第一本的 Look at Bobo! 一路讀到整段故事。每一本都可以邊聽邊讀，第一本免費線上讀。"),
+        "孩子從第一本的 Look at Bobo! 一路讀到整段故事。每一本都可以邊聽邊讀，第 1 級 3 本免費線上讀。"),
     "moe-2000-words-guide": ("h2:2000-字和考試的真實關係", "grammar", "單字有了，句子要用對文法",
         "國一上到國三下每學期一本文法書：每個重點一頁規則與圖解，每單元一頁練習、一頁寫作應用，附測驗與解答。"
         "每一冊的第 1 頁（整學期重點一頁看完）免費下載。"),
     "graded-readers-guide": ("h2:在台灣去哪裡取得分級讀物", "readers", "也可以從我們自己寫的這套開始",
         "Chris and Cora：12 級 36 本，場景是台灣的城市，字彙依教育部 1,200 字排序。每本 48 頁，左頁文字、右頁整頁插圖；"
-        "PDF 加翻頁電子書，第一本免費線上讀。"),
+        "PDF 加翻頁電子書，第 1 級 3 本免費線上讀。"),
     "english-picture-books-guide": ("h2:在台灣去哪裡找英文繪本", "readers", "想要孩子自己讀得懂的第一本",
-        "Chris and Cora 分級讀本第 1 級的 3 本只用 26 個教育部單字，每一頁一句、配一整頁插圖，適合從共讀過渡到自己讀。第一本免費線上讀。"),
+        "Chris and Cora 分級讀本第 1 級的 3 本只用 26 個教育部單字，每一頁一句、配一整頁插圖，適合從共讀過渡到自己讀。第 1 級 3 本免費線上讀。"),
     "sight-words-guide": ("h2:家長版每天-5-分鐘的高頻字練習", "readers", "高頻字認得了，放進故事裡讀",
         "Chris and Cora 分級讀本第 1 級從 a、and、is、look、see 這些高頻字開始，每一頁一句、配一整頁插圖，"
-        "一個字在書裡重複好幾次。第一本免費線上讀。"),
+        "一個字在書裡重複好幾次。第 1 級 3 本免費線上讀。"),
     "junior-high-english-grammar": ("pdf", "grammar", "總整理看完，想一個重點一個重點練？",
         "這份總整理的完整版：國一上到國三下每學期一本文法書，每個重點一頁規則、圖解和例句，每單元有練習和寫作應用，"
         "附複習測驗、期中期末測驗與解答。每一冊的第 1 頁免費下載。"),
     # 11-10 traffic review: the two busiest letter/phonics pages (1,550 and 855 clicks in 30 days) had no book link
     "english-alphabet-worksheet": ("h2:字母寫得穩了接下來讀什麼", "readers", "字母會寫了，讀第一本英文書",
         "Chris and Cora 分級讀本第 1 級從 a、and、is、look、see 這些高頻字開始，每一頁一句、配一整頁插圖，"
-        "一個字在書裡重複好幾次。第一本免費線上讀，可以邊聽邊讀。"),
+        "一個字在書裡重複好幾次。第 1 級 3 本免費線上讀，可以邊聽邊讀。"),
     "phonics-rules-chart": ("h2:自然發音學完拼得出來嗎", "readers", "拼得出單字之後，讀整句",
         "Chris and Cora 分級讀本第 1 級的 3 本只用 26 個教育部單字，每一頁一句、配一整頁插圖，"
-        "孩子把剛學會的拼讀用在真的故事裡。第一本免費線上讀，可以邊聽邊讀。"),
+        "孩子把剛學會的拼讀用在真的故事裡。第 1 級 3 本免費線上讀，可以邊聽邊讀。"),
 }
 BOOKS_KIND = {
-    "readers": dict(href="/chris-and-cora-readers/", free="/chris-and-cora-readers/read/1a/", free_t="免費讀第一本",
+    "readers": dict(href="/chris-and-cora-readers/", free="/chris-and-cora-readers/#read-book", free_t="免費讀第 1 級 3 本",
                     all_t="看全部 36 本", tag="埃森美語原創分級讀本", label="Chris and Cora 英語分級讀本",
                     covers=[("/assets/img/readers/covers/1a.webp", "This Is Bobo! 封面"),
                             ("/assets/img/readers/covers/6a.webp", "A Night at the Night Market 封面"),
