@@ -87,18 +87,24 @@ N  = DATA["numbers"]; M = DATA["months"]; D = DATA["days"]
 # only had the twelve answers run together in one paragraph. Each links to that word's pronunciation page.
 MONTH_NOTES = [
     ("jan", "Jan", "一年的第一個月，名字來自羅馬的門神 Janus（開始之神）。", "Winter vacation starts in late January.", "寒假在一月底開始。"),
-    ("feb", "Feb", "平年 28 天、閏年 29 天（下一個閏年是 2028 年）。拼字最常漏掉第一個 r：Feb-ru-ary。", "Valentine's Day is on February 14.", "情人節在二月十四日。"),
+    ("feb", "Feb", "閏年才有 29 天，下一個閏年是 2028 年。拼字最常漏掉第一個 r：Feb-ru-ary。", "Valentine's Day is on February 14.", "情人節在二月十四日。"),
     ("mar", "Mar", "和五月 May 都是 M 開頭：三月縮寫成 Mar.，五月 May 不縮寫。", "Spring starts in March.", "春天從三月開始。"),
     ("apr", "Apr", "Apr. 和 Aug.（八月）都是 A 開頭，看第二個字母：p 是四月、u 是八月。", "Children's Day is on April 4.", "兒童節在四月四日。"),
     ("may", "May", "只有三個字母，所以沒有縮寫、也不加句點。小寫的 may 是「可能」，當月份一定大寫。", "Mother's Day is in May.", "母親節在五月。"),
-    ("jun", "Jun", "和七月 Jul. 只差最後一個字母：<strong>n 是六月、l 是七月</strong>。", "The school year ends in June.", "學年在六月結束。"),
+    ("jun", "Jun", "和七月 Jul. 只差最後一個字母：<strong>n 是六月、l 是七月</strong>。", "The second semester ends in June.", "下學期在六月結束。"),
     ("jul", "Jul", "名字來自凱撒 Julius Caesar。重音在後面：ju-LY。", "Summer vacation starts in July.", "暑假在七月開始。"),
     ("aug", "Aug", "名字來自羅馬皇帝奧古斯都 Augustus。", "Father's Day in Taiwan is on August 8.", "台灣的父親節在八月八日。"),
-    ("sep", "Sep", "Sep. 和 Sept. 兩種縮寫都對：美式和電腦系統多用 Sep.，英式多用 Sept.。", "The new school year starts in September.", "新學年在九月開始。"),
+    ("sep", "Sep", "Sep. 和 Sept. 兩種縮寫都對：Sept. 是傳統寫法，美國新聞也用它；Sep. 和其他月份一樣是三個字母，月曆、表單和電腦系統多半用它。", "The new school year starts in September.", "新學年在九月開始。"),
     ("oct", "Oct", "Oct- 在拉丁文是「八」（octopus 八隻腳），因為古羅馬曆從三月算起，十月原本是第八個月。", "Halloween is on October 31.", "萬聖節在十月三十一日。"),
     ("nov", "Nov", "Nov- 在拉丁文是「九」，和十月同樣差了兩位。", "Thanksgiving in the US is in November.", "美國的感恩節在十一月。"),
     ("dec", "Dec", "Dec- 在拉丁文是「十」（decade 是十年）。", "Christmas is on December 25.", "聖誕節在十二月二十五日。"),
 ]
+
+def month_chips():
+    # 11-10 audit (SXO): the 12 answers at a glance, before the table — each chip jumps to its passage
+    chips = "".join(f'<a href="#{aid}">{"May" if en == "May" else abbr.split("／")[0]}＝{zh}</a>'
+                    for (aid, *_), (en, zh, abbr, _) in zip(MONTH_NOTES, M))
+    return f'<nav class="m-chips reveal" aria-label="1-12 月縮寫">{chips}</nav>'
 
 def month_passages():
     out = []
@@ -113,7 +119,7 @@ DAY_NOTES = [
     ("mon", "名字是「月亮日」（Moon-day）。", "I have English class on Mondays.", "我每個星期一有英文課。"),
     ("tue", "和星期四 Thursday 都是 T 開頭：<strong>Tu 是二、Th 是四</strong>。", "We have PE on Tuesday.", "我們星期二有體育課。"),
     ("wed", "唸作「wenz-day」，中間的 d 不發音，但拼字一定要寫。", "Elementary school ends at noon on Wednesday.", "國小星期三只上半天。"),
-    ("thu", "th 要輕咬舌頭發音，不是 s 也不是 f。", "The test is next Thursday.", "考試在下星期四（next 前面不加 on）。"),
+    ("thu", "th 要輕咬舌頭發音，不是 s 也不是 f。next、this、last 前面不加 on。", "The test is next Thursday.", "考試在下星期四。"),
     ("fri", "TGIF 就是 Thank God It's Friday——終於星期五了。", "Let's watch a movie on Friday night.", "星期五晚上一起看電影吧。"),
     ("sat", "名字來自土星 Saturn。", "We go to the park on Saturdays.", "我們每個星期六去公園。"),
     ("sun", "名字是「太陽日」。美式月曆一週從星期日開始。", "See you on Sunday!", "星期天見！"),
@@ -175,6 +181,7 @@ PAGES = {
   body=lambda: (
     sec("1-12 月英文對照表",
       prose("縮寫規則很一致：<strong>取前三個字母加句點</strong>。唯一的例外是 May——它只有三個字母，所以不縮寫、也不加點。September 兩種縮寫都通行（Sep. 與 Sept.）。")
+      + month_chips()
       + tbl([[f"{i+1} 月", m[0], m[1], m[2], m[3]] for i, m in enumerate(M)],
             ["月份", "英文", "中文", "縮寫", "天數"]))
     + sec("Jun.、Jul.、Apr.、Jan. 各是幾月？",
@@ -227,7 +234,7 @@ PAGES = {
     + sec("月份英文常見問題", faq([
       ("月份的英文開頭要大寫嗎？", "要。英文的月份和星期都是專有名詞，句中也一定大寫：I was born in <em>May</em>。這是作文最常被扣分的小細節之一，季節（spring、summer）則<strong>不</strong>大寫。"),
       ("May 為什麼沒有縮寫？", "因為它本身只有三個字母，縮寫不會比較短。同樣道理，短的月份不縮寫；縮寫要加句點，代表後面還有字母被省略——May 沒有省略任何字母，所以也不加點。"),
-      ("Sep. 和 Sept. 哪一個對？", "兩個都對。Sept. 在英式英語較常見，Sep. 在美式與資訊系統中較常見。同一份文件裡選一種用到底就好。"),
+      ("Sep. 和 Sept. 哪一個對？", "兩個都對。Sept. 是傳統寫法，美國新聞寫作也用 Sept.；Sep. 和其他月份一樣是三個字母，月曆、表單和電腦系統多半用它。同一份文件裡選一種用到底就好。"),
       ("in May 還是 on May？", "只講月份用 in（in May）；有指定到哪一天才用 on（on May 5）。判斷方式很簡單：句子裡有沒有日期數字。"),
       ("月份要怎麼幫孩子記？", "不要一次背十二個。先記和孩子有關的三個——生日的月份、開學的九月、過年的一二月——有情境就記得住。接著用字根補上 9 到 12 月，最後再處理縮寫。"),
       ("Jun 是幾月？", "Jun. 是 June 的縮寫，<strong>六月</strong>，30 天。最容易和 Jul.（July，七月）看錯：n 是六月、l 是七月。"),
@@ -1380,7 +1387,7 @@ PAGES["sports-english"] = dict(
 # optional index. Each section: title (H2, may hold <em>), optional prose[] (HTML allowed: strong,
 # em, internal links), heads[] + groups[{name, rows}] or rows[] (table cells are plain text, escaped),
 # optional html (raw block after the prose), optional html_top (raw block right under the H2, before
-# the prose — e.g. the surname lookup box, written by build_surname_lookup.py), optional after[] (prose under the table), optional
+# the prose — e.g. the surname lookup box — hand-maintained in the spec JSON: when the 100-surname table changes, update it too), optional after[] (prose under the table), optional
 # faq[[q, a]], optional soft (bool), optional cls (extra <section> class for the page's own css).
 # Page-level optional: cta_h2, font_href (Google Fonts CSS, this page only), css (inline <style>).
 # The FIRST section's tables become the chart + A4 PDF (build_chart_images SPECS / build_chart_pdfs PDFS).

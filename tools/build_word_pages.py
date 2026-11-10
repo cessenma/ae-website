@@ -27,7 +27,10 @@ DATA = json.load(open(os.path.join(HERE, "data/words/pilot.json"), encoding="utf
 CONTENT = json.load(open(os.path.join(HERE, "data/words/content.json"), encoding="utf-8")) \
     if os.path.exists(os.path.join(HERE, "data/words/content.json")) else {}
 SHELL = os.path.join(SITE, "kk-phonetic-chart/index.html")
-PUBLISHED = "2026-10-21"
+PUBLISHED = "2026-10-21"          # the hub and the 300 pilot pages
+# per-word first-publication dates (11-10 audit: the 866 pages added 2026-11-10 had carried the pilot date)
+PUB_BY_WORD = json.load(open(os.path.join(HERE, "data/words/published.json"), encoding="utf-8")) \
+    if os.path.exists(os.path.join(HERE, "data/words/published.json")) else {}
 ORG = ORIGIN + "/#organization"
 W = {d["slug"]: d for d in DATA if d["slug"] in CONTENT}
 ORDER = sorted(W, key=str.lower)
@@ -38,7 +41,12 @@ def width(t):
 
 def title_for(d):
     w, k = d["word"], d["kk"]
-    for t in (f"{w} 發音怎麼唸？KK 音標 [{k}]、慢速示範與常見錯誤", f"{w} 發音怎麼唸？KK 音標 [{k}]＋慢速示範",
+    z = d["zh"]
+    # 11-10 audit (SXO): pages are found for the word's MEANING too (嘴巴英文, "october"), where a title without the
+    # Chinese meaning earned 0.15–0.22% CTR vs 1.54% on 發音 searches — so the meaning goes up front when it fits.
+    for t in (f"{w}（{z}）發音怎麼唸？KK 音標 [{k}]＋慢速示範", f"{w}（{z}）發音：KK 音標 [{k}]＋慢速示範",
+              f"{w}（{z}）發音：KK 音標 [{k}]",
+              f"{w} 發音怎麼唸？KK 音標 [{k}]、慢速示範與常見錯誤", f"{w} 發音怎麼唸？KK 音標 [{k}]＋慢速示範",
               f"{w} 發音：KK 音標 [{k}]＋慢速示範", f"{w} 發音：KK 音標 [{k}]"):
         if width(t) <= 60:
             return t + "｜埃森美語"
@@ -177,10 +185,10 @@ def word_page(slug):
           "learningResourceType": "pronunciation guide", "educationalLevel": "國小、國中",
           "about": {"@type": "DefinedTerm", "name": d["word"], "description": d["zh"],
                     "inDefinedTermSet": "教育部國民中小學英語基本 1200 字"},
-          "publisher": {"@id": ORG}, "author": {"@id": ORG}, "datePublished": PUBLISHED}
+          "publisher": {"@id": ORG}, "author": {"@id": ORG}, "datePublished": PUB_BY_WORD.get(slug, "2026-11-10")}
     hero = (f'<strong lang="en">{esc(d["word"])}</strong> 是「{esc(d["zh"])}」，教育部國中小基本 1200 字之一。'
             f'下面可以點按鈕聽正常速度和慢速發音，再看台灣學生最常唸錯的地方。')
-    page(f"pronunciation/{slug}", title_for(d), desc_for(d, c), f'{esc(d["word"])} 發音：KK 音標 [{esc(d["kk"])}]',
+    page(f"pronunciation/{slug}", title_for(d), desc_for(d, c), f'{esc(d["word"])}（{esc(d["zh"])}）發音：KK 音標 [{esc(d["kk"])}]',
          [("首頁", "/"), ("英文單字發音", "/pronunciation/"), (d["word"], "")], hero, body(d, c), ld)
 
 def hub():
@@ -194,7 +202,7 @@ def hub():
                     f'<h2 id="{L}">{L} 開頭的單字</h2></div><div class="compare reveal"><table><thead><tr><th>單字</th>'
                     f'<th>KK 音標</th><th>中文</th></tr></thead><tbody>{rows}</tbody></table></div></div></section>')
     n = len(ORDER)
-    title = f"英文單字發音：{n} 個常用字 KK 音標、怎麼唸＋慢速示範｜埃森美語"
+    title = f"英文單字發音：{n:,} 個常用字 KK 音標、怎麼唸＋慢速示範｜埃森美語"
     desc = (f"英文單字怎麼唸？教育部 1200 字裡 {n} 個常用單字，每個都有 KK 音標、音節與重音、"
             f"正常和慢速發音，以及台灣學生最常唸錯的地方。依字母查，點單字看完整發音頁。")
     intro = (f'<section class="section"><div class="wrap"><div class="prose reveal"><p>這裡收錄教育部國中小基本 1200 字裡 {n:,} 個'

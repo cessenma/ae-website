@@ -399,7 +399,7 @@
   "lead_to": "KETA2-Key其實是同一張證書"
  },
  "ket-vs-gept-comparison": {
-  "id": "KET英檢是什麼",
+  "id": "KET英檢和全民英檢初級程度對照",
   "h2": "KET 英檢和全民英檢初級：程度怎麼對照",
   "at": "after:FlyersKETGEPT-初級怎麼對照",
   "html": "<p><strong>KET 英檢</strong>是劍橋大學核發的 A2 Key 證書（學生多考 A2 Key for Schools 版本），KET 是舊名 Key English Test 的縮寫；程度對應 CEFR A2，和全民英檢初級在同一個等級。KET 三份考卷考什麼、怎麼準備，見 <a href=\"/ket-prep-guide/\">KET 是什麼：完整準備指南</a>；這一節只比兩張證書。</p><div class=\"compare\"><table><thead><tr><th>CEFR</th><th>劍橋線</th><th>全民英檢線</th></tr></thead><tbody><tr><td>B1</td><td>PET（B1 Preliminary for Schools）</td><td>GEPT 中級</td></tr><tr><td>A2</td><td>KET（A2 Key for Schools）；兒童英檢 Flyers 也在 A2，但不設通過門檻</td><td>GEPT 初級</td></tr></tbody></table></div><p><strong>KET 不是全民英檢的一級。</strong>台灣家長習慣把所有英文檢定都叫「英檢」，所以常有人以為 KET 是全民英檢裡的某個級數。其實這是兩套考試：KET 由劍橋大學核發、國際通用；全民英檢由台灣的 LTTC 辦理，台灣的學校與升學制度最熟悉。兩者沒有官方的直接換算，共同的語言是 CEFR——KET 通過（120 分以上）和 GEPT 初級通過，都代表 A2。</p><p><strong>搜「KET 程度」要看分數帶：</strong>KET 用劍橋量表計分，120–139 分是 A2；140–150 分（Grade A）證書直接標示 B1；100–119 分拿不到 A2 證書，但成績單會顯示 A1 程度的量尺分數。同一場 KET，成績可以落在 A1、A2 或 B1 三種程度。想先摸清孩子的落點，可以做一份 <a href=\"/ket-practice-tests/\">KET 題庫</a>，再用 <a href=\"/ket-score-calculator/\">KET 分數計算機</a>換算。</p>"

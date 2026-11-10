@@ -1750,14 +1750,15 @@
   "zh": "八月",
   "letter": "A",
   "kk_variants": [
-   "ˈɔgəst"
+   "ˈɔgəst",
+   "ˈɑgəst"
   ],
   "theme": "時間／星期／月份 Time",
   "demand": 0,
-  "kk": "ˈɑgəst",
+  "kk": "ˈɔgəst",
   "sylls": [
    [
-    "ɑ",
+    "ɔ",
     "1"
    ],
    [
@@ -2562,7 +2563,7 @@
   "slug": "bathroom",
   "zh": "浴室",
   "letter": "B",
-  "kk": "ˈbæˌθrum",
+  "kk": "ˈbæθˌrum",
   "kk_variants": [],
   "sylls": [
    [
@@ -2990,7 +2991,7 @@
   "kk_variants": [],
   "theme": null,
   "demand": 0,
-  "kk": "ˈbɛˌdrum",
+  "kk": "ˈbɛdˌrum",
   "sylls": [
    [
     "bɛd",
@@ -4308,14 +4309,15 @@
   "zh": "老闆",
   "letter": "B",
   "kk_variants": [
-   "bɔs"
+   "bɔs",
+   "bɑs"
   ],
   "theme": null,
   "demand": 0,
-  "kk": "bɑs",
+  "kk": "bɔs",
   "sylls": [
    [
-    "bɑs",
+    "bɔs",
     "1"
    ]
   ],
@@ -5148,7 +5150,7 @@
   "slug": "businessman",
   "zh": "商人",
   "letter": "B",
-  "kk": "ˈbɪznəˌsmæn",
+  "kk": "ˈbɪznɪsˌmæn",
   "kk_variants": [
    "ˈbɪznɪˌsmæn"
   ],
@@ -5158,11 +5160,11 @@
     "1"
    ],
    [
-    "nə",
+    "nɪs",
     "0"
    ],
    [
-    "smæn",
+    "mæn",
     "2"
    ]
   ],
@@ -7249,7 +7251,7 @@
   "kk_variants": [],
   "theme": "學校 School",
   "demand": 0,
-  "kk": "ˈklæˌsmet",
+  "kk": "ˈklæsˌmet",
   "sylls": [
    [
     "klæs",
@@ -7620,14 +7622,15 @@
   "zh": "咖啡",
   "letter": "C",
   "kk_variants": [
-   "ˈkɔfɪ"
+   "ˈkɔfɪ",
+   "ˈkɑfɪ"
   ],
   "theme": null,
   "demand": 0,
-  "kk": "ˈkɑfɪ",
+  "kk": "ˈkɔfɪ",
   "sylls": [
    [
-    "kɑ",
+    "kɔ",
     "1"
    ],
    [
@@ -8229,14 +8232,15 @@
   "zh": "價值",
   "letter": "C",
   "kk_variants": [
-   "kɔst"
+   "kɔst",
+   "kɑst"
   ],
   "theme": null,
   "demand": 0,
-  "kk": "kɑst",
+  "kk": "kɔst",
   "sylls": [
    [
-    "kɑst",
+    "kɔst",
     "1"
    ]
   ],
@@ -16862,14 +16866,14 @@
   "kk_variants": [],
   "theme": null,
   "demand": 0,
-  "kk": "ˈhɛˌdek",
+  "kk": "ˈhɛdˌek",
   "sylls": [
    [
-    "hɛ",
+    "hɛd",
     "1"
    ],
    [
-    "dek",
+    "ek",
     "2"
    ]
   ],
@@ -18298,14 +18302,14 @@
   "kk_variants": [],
   "theme": null,
   "demand": 0,
-  "kk": "ˈhaʊˌswaɪf",
+  "kk": "ˈhaʊsˌwaɪf",
   "sylls": [
    [
-    "haʊ",
+    "haʊs",
     "1"
    ],
    [
-    "swaɪf",
+    "waɪf",
     "2"
    ]
   ],
@@ -23519,7 +23523,7 @@
   "kk_variants": [],
   "theme": null,
   "demand": 0,
-  "kk": "ˈmɛˌtro",
+  "kk": "ˈmɛtro",
   "sylls": [
    [
     "mɛt",
@@ -23527,7 +23531,7 @@
    ],
    [
     "ro",
-    "2"
+    "0"
    ]
   ],
   "n_syll": 2,
@@ -30780,14 +30784,14 @@
   "kk_variants": [],
   "theme": null,
   "demand": 0,
-  "kk": "ˈrɛˌstrum",
+  "kk": "ˈrɛstˌrum",
   "sylls": [
    [
-    "rɛs",
+    "rɛst",
     "1"
    ],
    [
-    "trum",
+    "rum",
     "2"
    ]
   ],
@@ -34262,14 +34266,14 @@
   "kk_variants": [],
   "theme": null,
   "demand": 0,
-  "kk": "ˈsaɪˌdwɔk",
+  "kk": "ˈsaɪdˌwɔk",
   "sylls": [
    [
-    "saɪ",
+    "saɪd",
     "1"
    ],
    [
-    "dwɔk",
+    "wɔk",
     "2"
    ]
   ],
@@ -37247,19 +37251,20 @@
   "zh": "星期日",
   "letter": "S",
   "kk_variants": [
-   "ˈsʌnˌdi"
+   "ˈsʌnˌdi",
+   "ˈsʌnˌde"
   ],
   "theme": "時間／星期／月份 Time",
   "demand": 0,
-  "kk": "ˈsʌnˌde",
+  "kk": "ˈsʌndɪ",
   "sylls": [
    [
     "sʌn",
     "1"
    ],
    [
-    "de",
-    "2"
+    "dɪ",
+    "0"
    ]
   ],
   "n_syll": 2,
@@ -38200,15 +38205,15 @@
   "slug": "teenager",
   "zh": "青少年",
   "letter": "T",
-  "kk": "ˈtiˌnedʒɚ",
+  "kk": "ˈtinˌedʒɚ",
   "kk_variants": [],
   "sylls": [
    [
-    "ti",
+    "tin",
     "1"
    ],
    [
-    "ne",
+    "e",
     "2"
    ],
    [
@@ -39707,9 +39712,10 @@
   "slug": "thursday",
   "zh": "星期四",
   "letter": "T",
-  "kk": "ˈθɝzˌde",
+  "kk": "ˈθɝzdɪ",
   "kk_variants": [
-   "ˈθɝzdɪ"
+   "ˈθɝzdɪ",
+   "ˈθɝzˌde"
   ],
   "sylls": [
    [
@@ -39717,8 +39723,8 @@
     "1"
    ],
    [
-    "de",
-    "2"
+    "dɪ",
+    "0"
    ]
   ],
   "n_syll": 2,
@@ -41824,7 +41830,7 @@
   "kk_variants": [],
   "theme": null,
   "demand": 0,
-  "kk": "ˈʌˌplod",
+  "kk": "ˈʌpˌlod",
   "sylls": [
    [
     "ʌp",
@@ -43074,14 +43080,14 @@
   ],
   "theme": null,
   "demand": 0,
-  "kk": "ˈwiˌkɛnd",
+  "kk": "ˈwikˌɛnd",
   "sylls": [
    [
-    "wi",
+    "wik",
     "1"
    ],
    [
-    "kɛnd",
+    "ɛnd",
     "2"
    ]
   ],

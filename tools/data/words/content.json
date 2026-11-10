@@ -1168,8 +1168,8 @@
  "august": {
   "slug": "august",
   "pos_zh": "名詞",
-  "tip_zh": "August 的 au 不唸 [aʊ]，而是嘴巴張大的 [ɑ]，照拼字常被唸成「凹-咕斯特」。重音在第一音節，第二音節 [gəst] 的母音要輕而短，不要唸成清楚的「咕」。結尾 [st] 兩個子音緊連，[s] 吹完氣舌尖往上一頂就停，不要多加母音。月份名稱的第一個字母要大寫。",
-  "tip_en": "The au in August is not [aʊ] but the open [ɑ]; following the spelling, it is often said like “ao-gu-s-te”. The stress is on the first syllable, and the vowel in the second syllable [gəst] is light and short, not a clear “gu”. The final [st] is two consonants together: after the [s] hiss, lift the tongue tip to stop, with no extra vowel. Month names start with a capital letter.",
+  "tip_zh": "August 的 au 不唸 [aʊ]，而是 [ɔ]（嘴巴張大、嘴唇微圓），照拼字常被唸成「凹-咕斯特」。重音在第一音節，第二音節 [gəst] 的母音要輕而短，不要唸成清楚的「咕」。結尾 [st] 兩個子音緊連，[s] 吹完氣舌尖往上一頂就停，不要多加母音。月份名稱的第一個字母要大寫。",
+  "tip_en": "The au in August is not [aʊ] but [ɔ] (mouth open, lips slightly rounded); following the spelling, it is often said like “ao-gu-s-te”. The stress is on the first syllable, and the vowel in the second syllable [gəst] is light and short, not a clear “gu”. The final [st] is two consonants together: after the [s] hiss, lift the tongue tip to stop, with no extra vowel. Month names start with a capital letter.",
   "examples": [
    {
     "en": "School starts again at the end of August.",
@@ -1180,11 +1180,11 @@
     "zh": "我們八月去了海邊。"
    }
   ],
-  "sylls": "ɑ·gəst",
+  "sylls": "ɔ·gəst",
   "variant_zh": "也有人唸 [ˈɔgəst]，嘴唇略圓",
   "variant_en": "Some say [ˈɔgəst], with slightly rounded lips.",
-  "spelling_zh": "au 唸 [ɑ] 或 [ɔ]，不是 [aʊ]",
-  "spelling_en": "The au says [ɑ] or [ɔ], not [aʊ].",
+  "spelling_zh": "au 唸 [ɔ]（美國很多人唸成 [ɑ]），不是 [aʊ]",
+  "spelling_en": "The au says [ɔ] (many Americans say [ɑ]), not [aʊ].",
   "kk_flag": null
  },
  "aunt": {
@@ -2598,8 +2598,8 @@
  "boss": {
   "slug": "boss",
   "pos_zh": "名詞",
-  "tip_zh": "boss 的母音是嘴巴張大的 [ɑ]，下巴往下，像看醫生時說「啊」。如果嘴巴只半開、唸得短，就會變成 bus 的 [ʌ]。結尾 ss 只吹出一個 [s]，不要再加母音唸成「巴斯」。可以把 boss 和 bus 連著唸，比比看嘴巴張開的大小。",
-  "tip_en": "The vowel in boss is [ɑ] with the mouth wide open and the jaw dropped, like saying 'ah' at the doctor's. If the mouth is only half open and the vowel is short, it turns into the [ʌ] of bus. The final ss is a single hissed [s]; don't add a vowel after it. Say boss and bus one after the other and compare how wide your mouth opens.",
+  "tip_zh": "boss 的母音是 [ɔ]：嘴巴張大、下巴往下、嘴唇微圓，介於「啊」和「喔」之間（美國很多人唸得更像 [ɑ]）。如果嘴巴只半開、唸得短，就會變成 bus 的 [ʌ]。結尾 ss 只吹出一個 [s]，不要再加母音唸成「巴斯」。可以把 boss 和 bus 連著唸，比比看嘴巴張開的大小。",
+  "tip_en": "The vowel in boss is [ɔ]: mouth wide open, jaw dropped, lips slightly rounded, between 'ah' and 'aw' (many Americans say it closer to [ɑ]). If the mouth is only half open and the vowel is short, it turns into the [ʌ] of bus. The final ss is a single hissed [s]; don't add a vowel after it. Say boss and bus one after the other and compare how wide your mouth opens.",
   "examples": [
    {
     "en": "My dad's boss is very nice.",
@@ -2610,7 +2610,7 @@
     "zh": "這個遊戲裡誰是老大？"
    }
   ],
-  "sylls": "bɑs",
+  "sylls": "bɔs",
   "variant_zh": "也有很多美國人唸 [bɔs]，嘴唇稍圓。",
   "variant_en": "Many Americans also say [bɔs], with slightly rounded lips.",
   "spelling_zh": null,
@@ -3116,7 +3116,7 @@
     "zh": "那位商人提著一個黑色的包包。"
    }
   ],
-  "sylls": "bɪz·nəs·mæn",
+  "sylls": "bɪz·nɪs·mæn",
   "variant_zh": "字尾 man 也常輕讀成 [mən]：[ˈbɪznəsmən]。",
   "variant_en": "The ending man is also often reduced to [mən]: [ˈbɪznəsmən].",
   "spelling_zh": "busi- 的 u 唸 [ɪ]，i 不發音，不要唸成 bus。",
@@ -4534,8 +4534,8 @@
  "coffee": {
   "slug": "coffee",
   "pos_zh": "名詞",
-  "tip_zh": "coffee 重音在第一音節 [kɑ]，嘴巴張大、下巴放下。學生常受中文「咖啡」影響，把第二音節唸得又長又重，像「啡」一樣拉高；其實 [fɪ] 要輕短。[f] 要上排牙齒輕碰下唇吹氣，用雙唇的話會跟 copy [ˈkɑpɪ] 混在一起。",
-  "tip_en": "coffee is stressed on the first syllable [kɑ], with the mouth open and the jaw down. Influenced by Mandarin 「咖啡」, learners often make the second syllable long and heavy, rising like 「啡」; in fact [fɪ] is light and short. Make [f] with the upper teeth lightly on the lower lip and blow — using both lips makes it blur into copy [ˈkɑpɪ].",
+  "tip_zh": "coffee 重音在第一音節 [kɔ]，嘴巴張大、下巴放下、嘴唇微圓。學生常受中文「咖啡」影響，把第二音節唸得又長又重，像「啡」一樣拉高；其實 [fɪ] 要輕短。[f] 要上排牙齒輕碰下唇吹氣，用雙唇的話會跟 copy [ˈkɑpɪ] 混在一起。",
+  "tip_en": "coffee is stressed on the first syllable [kɔ], with the mouth open, the jaw down and the lips slightly rounded. Influenced by Mandarin 「咖啡」, learners often make the second syllable long and heavy, rising like 「啡」; in fact [fɪ] is light and short. Make [f] with the upper teeth lightly on the lower lip and blow — using both lips makes it blur into copy [ˈkɑpɪ].",
   "examples": [
    {
     "en": "My dad drinks coffee every morning.",
@@ -4546,7 +4546,7 @@
     "zh": "這家咖啡店也賣好吃的蛋糕。"
    }
   ],
-  "sylls": "kɑ·fɪ",
+  "sylls": "kɔ·fɪ",
   "variant_zh": "也常聽到 [ˈkɔfɪ]，第一個母音嘴唇稍圓。",
   "variant_en": "You'll also hear [ˈkɔfɪ], with slightly rounded lips on the first vowel.",
   "spelling_zh": null,
@@ -4908,8 +4908,8 @@
  "cost": {
   "slug": "cost",
   "pos_zh": "名詞、動詞",
-  "tip_zh": "cost 字尾 [st] 是兩個子音，學生常只唸到 [s] 就停，或在後面加母音唸成「斯特」。[s] 吹氣之後，舌尖直接頂上齒齦收成 [t]，中間不要停頓。母音 [ɑ] 嘴巴張大，別唸成 coast 那種圓唇的 [o]，兩個字意思完全不同。",
-  "tip_en": "cost ends in two consonants, [st]. Learners often stop at [s], or add a vowel and say 「斯特」. After blowing the [s], put the tongue tip straight onto the ridge behind the upper teeth for [t], with no pause. The vowel [ɑ] needs a wide-open mouth — don't make it the rounded [o] of coast, a completely different word.",
+  "tip_zh": "cost 字尾 [st] 是兩個子音，學生常只唸到 [s] 就停，或在後面加母音唸成「斯特」。[s] 吹氣之後，舌尖直接頂上齒齦收成 [t]，中間不要停頓。母音 [ɔ] 嘴巴張大、嘴唇只微微圓起，別唸成 coast 那種嘴型更小、會滑動的 [o]，兩個字意思完全不同。",
+  "tip_en": "cost ends in two consonants, [st]. Learners often stop at [s], or add a vowel and say 「斯特」. After blowing the [s], put the tongue tip straight onto the ridge behind the upper teeth for [t], with no pause. The vowel [ɔ] needs an open mouth with only slightly rounded lips — don't make it the smaller, gliding [o] of coast, a completely different word.",
   "examples": [
    {
     "en": "How much does this pencil cost?",
@@ -4920,7 +4920,7 @@
     "zh": "一張公車票要多少錢？"
    }
   ],
-  "sylls": "kɑst",
+  "sylls": "kɔst",
   "variant_zh": "也有人唸 [kɔst]，嘴唇稍圓。",
   "variant_en": "Some speakers say [kɔst], with slightly rounded lips.",
   "spelling_zh": null,
@@ -13522,7 +13522,7 @@
     "zh": "捷運站在我家附近。"
    }
   ],
-  "sylls": "mɛ·tro",
+  "sylls": "mɛt·ro",
   "variant_zh": null,
   "variant_en": null,
   "spelling_zh": null,
@@ -21420,7 +21420,7 @@
     "zh": "星期日是我一週中最喜歡的一天。"
    }
   ],
-  "sylls": "sʌn·de",
+  "sylls": "sʌn·dɪ",
   "variant_zh": "也常聽到第二音節唸輕的 [ˈsʌndɪ]。",
   "variant_en": "The second syllable is also often reduced: [ˈsʌndɪ].",
   "spelling_zh": null,
@@ -21948,7 +21948,7 @@
     "zh": "隔壁的青少年會彈吉他。"
    }
   ],
-  "sylls": "ti·ne·dʒɚ",
+  "sylls": "tin·e·dʒɚ",
   "variant_zh": null,
   "variant_en": null,
   "spelling_zh": null,
@@ -22674,7 +22674,7 @@
     "zh": "我的鋼琴課在星期四下午。"
    }
   ],
-  "sylls": "θɝz·de",
+  "sylls": "θɝz·dɪ",
   "variant_zh": "字尾 -day 也常弱化成 [dɪ]：[ˈθɝzdɪ]。",
   "variant_en": "The ending -day is often reduced to [dɪ]: [ˈθɝzdɪ].",
   "spelling_zh": "中間的 s 唸有聲的 [z]。",
@@ -24588,7 +24588,7 @@
     "zh": "我們每個週末都去看奶奶。"
    }
   ],
-  "sylls": "wi·kɛnd",
+  "sylls": "wik·ɛnd",
   "variant_zh": null,
   "variant_en": null,
   "spelling_zh": null,

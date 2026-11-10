@@ -17,7 +17,7 @@ Entry: {"id": "...", "h2": "...", "html": "<p>…</p>…", "at": "faq" | "after:
 The block is real content: content_signature() counts it, so adding or editing one moves the
 page's sitemap date once. Remove an entry and the next build removes the section.
 """
-import os, re, json
+import os, re, json, sys
 
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(SITE, "data", "kw_sections.json")
@@ -55,6 +55,8 @@ def lead(html, e):
     if pe < 0:
         return html
     pe += 4
+    if e.get("lead_to") and f'id="{e["lead_to"]}"' not in html:
+        sys.exit(f'kw_sections: lead_to "{e["lead_to"]}" is not an id on this page')
     strip_ = (f'{LSTART}<p class="kw-lead reveal d2"><span class="kw-lead-tag">快速解答</span>{lead_sentence(e)}'
               f'<a href="#{e.get("lead_to", e["id"])}">看完整說明 ↓</a></p>{LEND}')
     return html[:pe] + "\n    " + strip_ + html[pe:]

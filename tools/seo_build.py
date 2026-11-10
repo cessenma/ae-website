@@ -1546,7 +1546,7 @@ READNEXT = {
     "english-numbers-guide": [_DATES["ordinal"], _DATES["time"], ("月份英文", "/months-english/"), _DATES["dates"]],
     "time-english": [_DATES["numbers"], _DATES["days"], ("月份英文", "/months-english/"), _DATES["inonat"]],
     "english-names-girls": [("男生英文名字", "/english-names-boys/"), ("英文名字總覽", "/english-names/"),
-                            ("小孩英文名字怎麼取", "/kids-english-names-guide/"), ("小孩英文自我介紹", "/english-self-introduction-kids/")],
+                            ("小孩英文名字怎麼取", "/kids-english-names-guide/"), ("中文名字翻英文", "/chinese-name-to-english/")],
     "happy-birthday-english": [_FEST["thanks"], _FEST["cheer"], _FEST["christmas"], ("月份英文", "/months-english/")],
     "english-alphabet-guide": [_SND["kk"], _SND["phonics"], _SND["worksheet"], _SND["vowels"]],
     "fruits-english-vocabulary": [_VOC["food"], _VOC["animals"], _VOC["colors"], _VOC["topics"]],
@@ -1572,8 +1572,20 @@ READNEXT = {
     "phonics-rules-chart": [_SND["kk"], _SND["vowels"], _SND["worksheet"], ("高頻字 sight words", "/sight-words-guide/")],
     "moe-1200-words-guide": [_WORDS["2000"], ("1200 字發音", "/pronunciation/"), _VOC["topics"], _WORDS["dl"]],
     "english-names-boys": [("女生英文名字", "/english-names-girls/"), ("英文名字總覽", "/english-names/"),
-                           ("小孩英文名字怎麼取", "/kids-english-names-guide/"), ("小孩英文自我介紹", "/english-self-introduction-kids/")],
+                           ("小孩英文名字怎麼取", "/kids-english-names-guide/"), ("中文名字翻英文", "/chinese-name-to-english/")],
     "mid-autumn-festival-english": [_FEST["christmas"], _FEST["newyear"], _FEST["valentine"], _FEST["birthday"]],
+    # 11-10 audit: 17 pages were reachable only from each other (sports, daily-life, name tools, research
+    # articles) — their natural hubs never linked down. /chinese-name-to-english/ alone had 94,812 impressions.
+    "sports-english": [("棒球英文", "/baseball-english/"), ("籃球英文", "/basketball-english/"), ("足球英文", "/soccer-english/"),
+                       ("游泳英文", "/swimming-english/"), ("網球英文", "/tennis-english/")],
+    "food-english": [("點餐英文", "/ordering-food-english/"), _VOC["fruits"], ("購物英文", "/shopping-english/"), ("旅遊英文", "/travel-english/")],
+    "countries-english": [("旅遊英文", "/travel-english/"), ("機場英文", "/airport-english/"), ("購物英文", "/shopping-english/"), ("點餐英文", "/ordering-food-english/")],
+    "english-letter-writing-guide": [("請假英文", "/leave-note-english/"), ("英文卡片怎麼寫", "/english-card-writing/"), _WR["punct"], _WR["caps"]],
+    "english-names": [("中文名字翻英文", "/chinese-name-to-english/"), ("英文名字產生器", "/english-name-generator/"),
+                      ("男生英文名字", "/english-names-boys/"), ("女生英文名字", "/english-names-girls/")],
+    "graded-readers-guide": [("讀本真的能學單字嗎", "/graded-readers-vocabulary/"), ("故事要聽幾次", "/english-story-repetition/"),
+                             ("讀本要配音檔嗎", "/reading-with-audio/"), ("看卡通學英文有用嗎", "/english-cartoons-vocabulary/"),
+                             ("單字背了就忘", "/vocabulary-retention/")],
 }
 
 def read_next(html, rel):

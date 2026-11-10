@@ -404,21 +404,27 @@
         cta_position: lb.closest('footer') ? 'footer' : lb.closest('.cta-box,.bg-blue') ? 'closing' : 'body' });
     }
     // 11-10 traffic review: the download is the page's best moment (alphabet worksheet: 52% of
-    // visitors download, 0 LINE taps; 4,795 downloads vs 307 LINE taps site-wide). After a PDF
-    // download, one small card offers the next step — once per visit, closable, never on load.
-    var dl = e.target.closest ? e.target.closest('a[download],a[href$=".pdf"]') : null;
-    if(dl && !document.getElementById('dlNext')){
-      var seen = false; try{ seen = sessionStorage.getItem('ae_dlnext') === '1'; sessionStorage.setItem('ae_dlnext', '1'); }catch(err){}
-      if(!seen) setTimeout(function(){
+    // visitors download, 0 LINE taps; 4,795 downloads vs 307 LINE taps site-wide). After one of the
+    // site's OWN PDFs is downloaded (external official PDFs open a new tab — no card), one small card
+    // offers the next step: once per visit, closable (× or Esc), and only if this tab is still visible.
+    var dl = e.target.closest ? e.target.closest('a[download],a[href^="/"][href$=".pdf"]') : null;
+    if(dl && !dlShown && !document.getElementById('dlNext')){
+      setTimeout(function(){
+        if(dlShown || document.hidden) return;
+        try{ if(sessionStorage.getItem('ae_dlnext') === '1') return; sessionStorage.setItem('ae_dlnext', '1'); }catch(err){}
+        dlShown = true;
         var c = document.createElement('aside');
-        c.id = 'dlNext'; c.className = 'dl-next'; c.setAttribute('role', 'status'); c.setAttribute('aria-label', '下載之後');
+        c.id = 'dlNext'; c.className = 'dl-next'; c.setAttribute('aria-label', '下載之後');
         c.innerHTML = '<button type="button" class="dn-x" aria-label="關閉">×</button>'
           + '<b>下載好了 ✓ 印出來之後呢？</b>'
           + '<p>孩子寫完，想知道英文程度到哪裡了？住在板橋附近的話，可以預約美籍老師的免費程度評估。</p>'
           + '<a class="btn dn-btn" href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">加 LINE 預約程度評估</a>';
         document.body.appendChild(c);
         void c.offsetWidth; c.classList.add('on');   // force a layout so the slide-in runs (no rAF: a hidden tab never fires it)
-        c.querySelector('.dn-x').addEventListener('click', function(){ c.classList.remove('on'); setTimeout(function(){ c.remove(); }, 300); });
+        var close = function(){ c.classList.remove('on'); document.removeEventListener('keydown', esc); setTimeout(function(){ c.remove(); }, 300); };
+        var esc = function(ev){ if(ev.key === 'Escape') close(); };
+        c.querySelector('.dn-x').addEventListener('click', close);
+        document.addEventListener('keydown', esc);
         if(typeof window.gtag === 'function') window.gtag('event', 'after_download_show', { page_path: location.pathname });
       }, 1500);
     }
@@ -446,7 +452,7 @@
   }, true);
 
 
-  var booted=false;
+  var booted=false, dlShown=false;
   function init(){ if(booted) return; booted=true; injectChrome(); wire(); injectSEO(); }
   // The build bakes the header, the footer and all content into the HTML, so nothing here is
   // needed for the first paint. Everything below (menus, scroll effects, the LINE button) waits

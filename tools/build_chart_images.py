@@ -149,6 +149,7 @@ SPECS.update({
    alt="英文序數對照表：first second third 等序數的拼法、縮寫與基數對照",
    foot="可儲存列印｜americanenglish.com.tw"),
  "happy-birthday-chart": dict(page="happy-birthday-english", cols=2, width=1500,
+   only=[0, 1, 2, 3, 7],   # the 5 original tables (25 lines); the 11-10 short/creative/elders tables stay off the chart + PDF
    title="生日快樂英文祝福語", sub="生日卡片與訊息的英文說法",
    alt="生日快樂英文祝福語對照表：生日卡片與訊息常用的英文說法與中文對照",
    foot="可儲存列印｜americanenglish.com.tw"),

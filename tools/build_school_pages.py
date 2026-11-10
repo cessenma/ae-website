@@ -388,6 +388,8 @@ def faq(items):
 
 
 def faq_ld(items):
+    # 11-10 audit: seo_build.py already builds the FAQPage (with an @id) from the visible .faq-q items, so this
+    # generator's copy was a second, identical block on all 13 pages. Kept for reference; no longer emitted.
     strip = lambda t: re.sub(r"<[^>]+>", "", t)
     return {"@context": "https://schema.org", "@type": "FAQPage",
             "mainEntity": [{"@type": "Question", "name": strip(q), "acceptedAnswer": {"@type": "Answer", "text": strip(a)}} for q, a in items]}
@@ -525,7 +527,7 @@ def hub_page():
 </div></section>
 {cta()}
 """
-    ld = [faq_ld(faqs)]
+    ld = []          # FAQPage comes from seo_build (see faq_ld)
     write(f"{HUB}/index.html", head(HUB, title, desc, ld) + body + FOOT)
 
 
@@ -634,7 +636,7 @@ def jh_page(s):
 </div></section>
 {cta()}
 """
-    write(f'{HUB}/{s["slug"]}/index.html', head(f'{HUB}/{s["slug"]}', title, desc, [faq_ld(faqs)]) + body + FOOT)
+    write(f'{HUB}/{s["slug"]}/index.html', head(f'{HUB}/{s["slug"]}', title, desc, []) + body + FOOT)
 
 
 # ---------------------------------------------------------------- the elementary schools
@@ -691,7 +693,7 @@ def es_page():
 </div></section>
 {cta()}
 """
-    write(f"{HUB}/elementary/index.html", head(f"{HUB}/elementary", title, desc, [faq_ld(faqs)]) + body + FOOT)
+    write(f"{HUB}/elementary/index.html", head(f"{HUB}/elementary", title, desc, []) + body + FOOT)
 
 
 # ---------------------------------------------------------------- one-page summary PDFs

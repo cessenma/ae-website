@@ -301,7 +301,7 @@ def readers_page():
              f"Graded readers written by American English: 12 levels, 36 books, 48 pages each, words on the left page and a full-page "
              f"picture on the right, stories set in Taiwan. They use {n(cum[-1])} of the words on the MOE 1,200 list; the first book is free to read online.")
     og_t = Z("Chris and Cora 英語分級讀本：12 級 36 本，第一本免費讀", "Chris and Cora graded readers: 12 levels, 36 books, the first one free")
-    ld = [{"@context": "https://schema.org", "@type": "Product", "name": "Chris and Cora 英語分級讀本（12 級 36 冊）",
+    ld = [{"@context": "https://schema.org", "@type": "Product", "@id": f"{ORIGIN}/chris-and-cora-readers/#product", "url": f"{ORIGIN}/chris-and-cora-readers/", "name": "Chris and Cora 英語分級讀本（12 級 36 冊）",
            "description": strip(desc), "brand": {"@type": "Brand", "name": "埃森美語 American English"},
            "image": [f"{ORIGIN}/assets/img/readers/covers/{c}.webp" for c in ("1a", "6a", "12a")],
            **({"offers": {"@type": "AggregateOffer", "priceCurrency": "TWD", "lowPrice": P_LEVEL, "highPrice": P_ALL,
@@ -621,7 +621,7 @@ def grammar_page():
              "4 elementary sentence-pattern books, 6 junior-high grammar books (for the 康軒, 翰林, 南一 textbooks), 6 senior-high books (incl. a 學測 review). "
              "One page of rules and pictures per point, with practice, tests, answers and a cheat sheet; page 1 is a free download.")
     og_t = Z("英文文法書＋速查表：國小到高中每學期一本", "grammar books + cheat sheets, one per semester")
-    ld = [{"@context": "https://schema.org", "@type": "Product", "name": "英文文法書・文法速查表（國小・國中・高中）",
+    ld = [{"@context": "https://schema.org", "@type": "Product", "@id": f"{ORIGIN}/english-grammar-books/#product", "url": f"{ORIGIN}/english-grammar-books/", "name": "英文文法書・文法速查表（國小・國中・高中）",
            "description": strip(desc), "brand": {"@type": "Brand", "name": "埃森美語 American English"},
            "image": [f"{ORIGIN}/assets/img/grammar-books/covers/{c}.webp" for c in ("G3", "G8-1", "G10-1")],
            **({"offers": {"@type": "AggregateOffer", "priceCurrency": "TWD", "lowPrice": P_GSHEETS, "highPrice": P_GBOOKS,
