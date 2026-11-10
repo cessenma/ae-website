@@ -871,5 +871,14 @@
   "alt": "如何學好英文對照表：如何學好英文？8 種能力 64 個學好英文的方法，學英文要多久、一週怎麼排",
   "title": "如何學好英文對照表",
   "page": "how-to-learn-english"
+ },
+ "winter-solstice-english-chart": {
+  "slug": "winter-solstice-english-chart",
+  "png": "/assets/img/charts/winter-solstice-english-chart.webp",
+  "w": 2200,
+  "h": 1601,
+  "alt": "冬至英文對照表：Happy Winter Solstice 等冬至快樂祝福語、the winter solstice 的名稱與日期、白天最短黑夜最長的英文與中文",
+  "title": "冬至英文對照表",
+  "page": "winter-solstice-english"
  }
 }

@@ -59,6 +59,7 @@ PDFS = {
  "thanksgiving-english":      ("thanksgiving-english-all", "ae-thanksgiving-english-a4.pdf", "感恩節英文 60 句・附對象與語氣"),
  "mothers-day-english":       ("mothers-day-english-all", "ae-mothers-day-english-a4.pdf", "母親節快樂英文 60 句・附誰寫的與語氣"),
  "dragon-boat-festival-english": ("dragon-boat-festival-english-all", "ae-dragon-boat-festival-english-a4.pdf", "端午節英文名稱、祝福語與基本句"),
+ "winter-solstice-english":   ("winter-solstice-english-all", "ae-winter-solstice-english-a4.pdf", "冬至英文 60 句・祝福語、湯圓、白天最短與補冬"),
  "lantern-festival-english":  ("lantern-festival-english-all", "ae-lantern-festival-english-a4.pdf", "元宵節英文 60 句・祝福語、活動、湯圓與燈會"),
  "red-envelope-english":      ("red-envelope-english-all", "ae-red-envelope-english-a4.pdf", "紅包英文 60 句・給紅包、收紅包、恭喜發財"),
  "chinese-zodiac-english":    ("chinese-zodiac-english-all", "ae-chinese-zodiac-english-a4.pdf", "十二生肖英文、年份與個性形容詞"),

@@ -1527,7 +1527,7 @@ _DATES = {"months": ("月份英文縮寫", "/months-english/"), "days": ("星期
           "dates": ("英文日期寫法", "/english-dates-guide/"), "ordinal": ("序數英文 1st–31st", "/ordinal-numbers-english/"),
           "numbers": ("英文數字 1–100", "/english-numbers-guide/"), "time": ("時間英文", "/time-english/"),
           "inonat": ("in／on／at 用法", "/in-on-at-prepositions/")}
-_FEST = {"halloween": ("萬聖節英文", "/halloween-english/"), "christmas": ("聖誕節英文", "/christmas-english/"),
+_FEST = {"solstice": ("冬至英文", "/winter-solstice-english/"), "halloween": ("萬聖節英文", "/halloween-english/"), "christmas": ("聖誕節英文", "/christmas-english/"),
          "newyear": ("新年快樂英文", "/new-year-english/"), "valentine": ("情人節英文", "/valentines-day-english/"),
          "midautumn": ("中秋節英文", "/mid-autumn-festival-english/"), "birthday": ("生日快樂英文", "/happy-birthday-english/"),
          "thanks": ("謝謝英文 30 種說法", "/thank-you-english/"), "cheer": ("加油英文", "/cheer-up-english/")}
@@ -1560,8 +1560,8 @@ READNEXT = {
     "jobs-english": [_VOC["countries"], _VOC["body"], _VOC["animals"], _VOC["topics"]],
     "animals-english-vocabulary": [_VOC["fruits"], _VOC["colors"], _VOC["body"], _VOC["topics"]],
     "halloween-english": [_FEST["christmas"], _FEST["newyear"], _FEST["birthday"], _FEST["midautumn"]],
-    "christmas-english": [_FEST["newyear"], _FEST["valentine"], _FEST["halloween"], _FEST["birthday"]],
-    "new-year-english": [_FEST["valentine"], _FEST["christmas"], _FEST["birthday"], _FEST["cheer"]],
+    "christmas-english": [_FEST["solstice"], _FEST["newyear"], _FEST["valentine"], _FEST["birthday"]],
+    "new-year-english": [_FEST["solstice"], _FEST["christmas"], _FEST["valentine"], _FEST["birthday"]],
     "valentines-day-english": [_FEST["midautumn"], _FEST["halloween"], _FEST["birthday"], _FEST["thanks"]],
     "english-symbol-names": [_WR["punct"], _WR["abbr"], _WR["caps"]],
     "english-punctuation-guide": [_WR["symbols"], _WR["caps"], _WR["abbr"], _WR["letter"]],

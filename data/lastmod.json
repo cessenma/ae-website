@@ -431,6 +431,10 @@
 "date": "2026-10-13",
 "hash": "11d9cc3e1f559ae2488f9bc2f987f459"
 },
+"assets/downloads/ae-winter-solstice-english-a4.pdf": {
+"date": "2026-11-11",
+"hash": "38f5cf7b92648b67314715e8a1b4addc"
+},
 "assets/downloads/ae-yle-flyers-flashcards-a4.pdf": {
 "date": "2026-10-01",
 "hash": "fa1d5bb67d8f8bb4d52573eca8036734"
@@ -768,8 +772,8 @@
 "hash": "b736ec33111be19ac98aaf8e2fee5e8d"
 },
 "chart-license": {
-"date": "2026-10-22",
-"hash": "b05aacb0b30e14044733950f601fa175"
+"date": "2026-11-11",
+"hash": "e39f0b3286ee645b42835f282198ef06"
 },
 "cheer-up-english": {
 "date": "2026-10-20",
@@ -1132,8 +1136,8 @@
 "hash": "fc2983a450e7376fbb54e09ade98bbf4"
 },
 "festivals-english": {
-"date": "2026-10-22",
-"hash": "938b53135ed028eee0690fe077fe4bd6"
+"date": "2026-11-11",
+"hash": "b0b834f81c68f39503dea77f99426ef3"
 },
 "flyers-listening-practice-part1": {
 "date": "2026-10-13",
@@ -6714,6 +6718,10 @@
 "when-to-start-english-for-kids": {
 "date": "2026-10-19",
 "hash": "25197ce2cadbb89a6335cbc982a8c1ad"
+},
+"winter-solstice-english": {
+"date": "2026-11-11",
+"hash": "2faa038490b2c3c1b466aff02b3795b8"
 },
 "xinpu-elementary-english": {
 "date": "2026-10-19",
