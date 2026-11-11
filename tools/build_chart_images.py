@@ -140,13 +140,18 @@ SPECS.update({
    title="英文符號名稱對照表", sub="鍵盤與標點符號的英文怎麼唸",
    alt="英文符號名稱對照表：鍵盤與標點符號的英文名稱與唸法，含@、#、&等",
    foot="可儲存列印｜americanenglish.com.tw"),
- "english-alphabet-chart": dict(page="english-alphabet-guide", width=1300,
-   title="英文字母表", sub="26 個字母 ・ 大小寫、唸法與發音",
-   alt="英文字母表：26個字母的大小寫、名稱唸法與字母音對照",
+ "english-alphabet-chart": dict(page="english-alphabet-guide", width=1400,
+   title="英文字母表", sub="26 個字母 ・ 編號、大小寫、KK 音標與唸法",
+   alt="英文字母表：26個字母的編號1-26、大小寫、KK音標與名稱唸法對照",
+   css=("th:nth-child(1),td:nth-child(1){width:7%}th:nth-child(2),td:nth-child(2),th:nth-child(3),td:nth-child(3){width:8%}"
+        "td:nth-child(2),td:nth-child(3){font-size:28px;font-weight:700;color:#1a2752}th:nth-child(4),td:nth-child(4){width:14%}"
+        "th:nth-child(5),td:nth-child(5){width:37%}"),
    foot="可儲存列印｜americanenglish.com.tw"),
  "ordinal-numbers-chart": dict(page="ordinal-numbers-english", width=1400,
-   title="英文序數對照表", sub="first、second、third ・ 拼法與縮寫",
-   alt="英文序數對照表：first second third 等序數的拼法、縮寫與基數對照",
+   title="英文序數對照表", sub="第一、第二、第三 ・ first、second、third 拼法與縮寫",
+   alt="英文序數對照表：第一、第二、第三到第三十一的英文 first second third、拼法與縮寫",
+   css=("th:nth-child(1),td:nth-child(1){width:8%}th:nth-child(2),td:nth-child(2){width:13%}"
+        "th:nth-child(3),td:nth-child(3){width:21%}th:nth-child(4),td:nth-child(4){width:10%}"),
    foot="可儲存列印｜americanenglish.com.tw"),
  "happy-birthday-chart": dict(page="happy-birthday-english", cols=2, width=1500,
    only=[0, 1, 2, 3, 7],   # the 5 original tables (25 lines); the 11-10 short/creative/elders tables stay off the chart + PDF

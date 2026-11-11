@@ -115,6 +115,45 @@ def month_passages():
                    f'例句：<em>{ex}</em>（{ex_zh}）<a href="/pronunciation/{en.lower()}/">{en} 怎麼唸</a></p>')
     return '<div class="prose reveal">' + "".join(out) + "</div>"
 
+# 2026-11-12 (CTR plan batch 1): 「12英文」「13英文」「30英文」… were split between this page and
+# /ordinal-numbers-english/ (37K impressions a month, both at position 8-9) and Google mostly picked
+# the ordinal page. One literal answer per most-searched number, under its own H3 (#n12), puts the
+# cardinal answer here, where it belongs. Ordinal forms are given too, so this page answers both.
+NUM_NOTES = [
+    (11, "eleventh", "11th", "11 和 12 是唯二不用 -teen 結尾的「十幾」，要單獨記。"),
+    (12, "twelfth", "12th", "序數 twelfth 是 ve 變 f 再加 th，最常拼錯。一打（a dozen）也是 12 個。"),
+    (13, "thirteenth", "13th", "重音在後面：thir-TEEN。和 30 thirty 只差在重音，聽力考試最愛考。"),
+    (14, "fourteenth", "14th", "four 加 teen，保留 u；但 40 forty 沒有 u。"),
+    (15, "fifteenth", "15th", "不是 fiveteen：five 在這裡變成 fif-。"),
+    (17, "seventeenth", "17th", "seventeen 一共有 4 個 e（s-e-v-e-n-t-e-e-n）。"),
+    (18, "eighteenth", "18th", "只有一個 t：eight 加 een，不是 eightteen。"),
+    (19, "nineteenth", "19th", "nine 的 e 保留：nineteen。"),
+    (20, "twentieth", "20th", "重音在前面：TWEN-ty。序數把 y 換成 ie 再加 th。"),
+    (25, "twenty-fifth", "25th", "21 到 99 的兩位數中間要加連字號：twenty-five。"),
+    (30, "thirtieth", "30th", "重音在前面：THIR-ty，美式口語的尾音聽起來像 thir-dee。"),
+    (40, "fortieth", "40th", "沒有 u！不是 fourty，這是最常見的數字拼字錯誤。"),
+    (50, "fiftieth", "50th", "five 變成 fif-，和 15 fifteen 一樣。"),
+    (100, "one hundredth", "100th", "也可以說 a hundred；hundred 前面有數字時不加 s：two hundred。"),
+]
+
+def number_chips():
+    by = {int(r["extra"]): r for r in N}
+    chips = "".join(f'<a href="#n{n}">{n}＝{by[n]["en"]}</a>' for n, *_ in NUM_NOTES)
+    return f'<nav class="m-chips reveal" aria-label="常被查的數字英文">{chips}</nav>'
+
+def number_passages():
+    by = {int(r["extra"]): r for r in N}
+    pron = {"eleven", "twelve", "thirteen", "fourteen", "fifteen", "seventeen", "eighteen", "nineteen",
+            "twenty", "thirty", "forty", "fifty", "hundred"}
+    out = []
+    for n, ordw, abbr, note in NUM_NOTES:
+        en, zh = by[n]["en"], by[n]["zh"]
+        w = en.split()[-1]
+        link = f'<a href="/pronunciation/{w}/">{w} 怎麼唸</a>' if w in pron else ""
+        out.append(f'<h3 id="n{n}">{n} 的英文：{en}</h3>'
+                   f'<p>{n}（{zh}）的英文是 <strong>{en}</strong>；第{zh}是 <strong>{ordw}</strong>，縮寫 {abbr}。{note}{link}</p>')
+    return '<div class="prose reveal">' + "".join(out) + "</div>"
+
 DAY_NOTES = [
     ("mon", "名字是「月亮日」（Moon-day）。", "I have English class on Mondays.", "我每個星期一有英文課。"),
     ("tue", "和星期四 Thursday 都是 T 開頭：<strong>Tu 是二、Th 是四</strong>。", "We have PE on Tuesday.", "我們星期二有體育課。"),
@@ -143,24 +182,28 @@ PAGES = {
   body=lambda: (
     sec("0-100 完整對照表",
       prose("每個數字都附中文與阿拉伯數字，可以直接點喇叭聽發音。20 以後的規則是固定的：<strong>幾十 + 連字號 + 個位數</strong>，例如 21 是 twenty-one、47 是 forty-seven。")
+      + number_chips()
       + tbl([[r["extra"], r["en"], r["zh"]] for r in N], ["數字", "英文", "中文"]))
+    + sec("常被查的數字英文：11、12、13、30 怎麼寫",
+      prose("下面是最常被查的幾個數字，每個附上序數（第幾）和拼字陷阱；其他數字直接看上面的對照表。")
+      + number_passages(), soft=True)
     + sec("13 還是 30？台灣學生最常聽錯的一組",
       prose("這組是聽力考試的固定考點，也是點餐、報價、聽門牌號碼時最容易出錯的地方。差別<strong>不在字母，在重音</strong>：",
         "<strong>-teen 結尾（13–19）重音在後面</strong>：thir<em>TEEN</em>、four<em>TEEN</em>、fif<em>TEEN</em>，最後一個音節唸得又長又響。<br>"
         "<strong>-ty 結尾（20–90）重音在前面</strong>：<em>THIR</em>-ty、<em>FOR</em>-ty、<em>FIF</em>-ty，尾巴輕輕帶過。",
-        "還有一個輔助線索：-teen 的尾音是清楚的 /n/，-ty 的尾音在美式英語裡常被唸成輕彈音，聽起來接近 /d/——thirty 聽起來像「thir-dee」。兩個線索一起用，幾乎不會錯。"), soft=True)
+        "還有一個輔助線索：-teen 的尾音是清楚的 /n/，-ty 的尾音在美式英語裡常被唸成輕彈音，聽起來接近 /d/——thirty 聽起來像「thir-dee」。兩個線索一起用，幾乎不會錯。"))
     + sec("拼字規則：連字號、不規則拼法與 hundred",
       prose("<strong>連字號只用在 21–99 之間的兩位數</strong>：twenty-one、fifty-six、ninety-nine。整十（twenty、thirty）和一百（one hundred）都不加。",
-        "<strong>四個不規則拼法要單獨記</strong>：four 有 u，但 forty <em>沒有</em> u（不是 fourty）；five 變 fifteen 和 fifty；nine 變 ninety（去掉 e）；eight 加 h 變 eighteen、eighty。",
-        "<strong>hundred 不加 s</strong>：two hundred 不是 two hundreds。只有在表示「數百個」這種模糊數量時才用複數：hundreds of people（好幾百人）。"))
+        "<strong>四個不規則拼法要單獨記</strong>：four 有 u，但 forty <em>沒有</em> u（不是 fourty）；five 變 fifteen 和 fifty；nine 的序數 ninth 要去掉 e（但 ninety 保留 e）；eight 加 een 變 eighteen、加 y 變 eighty。",
+        "<strong>hundred 不加 s</strong>：two hundred 不是 two hundreds。只有在表示「數百個」這種模糊數量時才用複數：hundreds of people（好幾百人）。"), soft=True)
     + sec("序數：first、second、third 怎麼用",
       prose("基數（cardinal）回答「幾個」，序數（ordinal）回答「第幾」。日期、樓層、名次、生日都用序數：<strong>May 5th</strong>、the <strong>3rd</strong> floor、he came <strong>2nd</strong>。",
         "前三個不規則：one→first、two→second、three→third。之後大多加 -th：fourth、fifth（注意拼法）、sixth、seventh、eighth（只加 h）、ninth（去 e）、twelfth（ve→f）。"
-        "幾十的序數把 y 換成 ie 再加 th：twenty→twentieth、forty→fortieth。完整用法整理在 <a href=\"/ordinal-numbers-english/\">英文序數</a>。"), soft=True)
+        "幾十的序數把 y 換成 ie 再加 th：twenty→twentieth、forty→fortieth。完整用法整理在 <a href=\"/ordinal-numbers-english/\">英文序數</a>。"))
     + sec("數字的實際唸法：電話、年份與小數",
       prose("<strong>電話號碼</strong>一個數字一個數字唸，0 唸成 “oh” 或 “zero”；連續兩個相同數字可以用 double：0932 唸 “oh nine three two”。",
         "<strong>年份</strong>通常拆成兩半：1998 唸 nineteen ninety-eight；2026 唸 twenty twenty-six 或 two thousand twenty-six。",
-        "<strong>小數</strong>的點唸 point，後面一位一位唸：3.14 是 three point one four。<strong>金額</strong>則把單位放中間：$5.50 唸 five fifty 或 five dollars and fifty cents。"))
+        "<strong>小數</strong>的點唸 point，後面一位一位唸：3.14 是 three point one four。<strong>金額</strong>則把單位放中間：$5.50 唸 five fifty 或 five dollars and fifty cents。"), soft=True)
     + sec("英文數字常見問題", faq([
       ("13 和 30 到底怎麼分？", "聽重音。13 是 thir<em>TEEN</em>，重音在後；30 是 <em>THIR</em>-ty，重音在前。美式英語裡 thirty 的 t 還會弱化成接近 /d/ 的輕彈音，聽起來像「thir-dee」。念不確定時，可以改說 “one three” 或 “three zero” 確認。"),
       ("為什麼是 forty 不是 fourty？", "這是英文拼字史上的一個例外，沒有規則可循，只能記。four、fourteen 都有 u，唯獨 forty 沒有。同類要單獨記的還有 five→fifteen／fifty、nine→ninety。"),
@@ -168,7 +211,7 @@ PAGES = {
       ("英文數字要加連字號嗎？", "21 到 99 之間的兩位數要：twenty-one、ninety-nine。整十和一百以上不用。寫作文時這個細節常被扣分。"),
       ("幾歲開始教英文數字比較好？", "學齡前就可以從 1–10 的口語開始，重點是聽和說，不是拼。國小低年級加到 20 並開始認字形，中年級再處理 -teen／-ty 的重音差別與序數——那時候孩子的聽辨能力才跟得上。"),
       ("零要唸 zero 還是 oh？", "報電話號碼、房號、年份時唸 “oh”；數學、運動比分、溫度唸 zero。球類比賽的 0 分在英式英語還會唸成 nil，網球則是 love。"),
-    ]), soft=True)
+    ]))
     + cta("數字是最早學、也最早忘記怎麼「用」的一課。我們的課堂用點餐、報時間、比價這些真實情境練，孩子講出來的不是背過的表，是能用的句子。")),
   faq_n=6),
 

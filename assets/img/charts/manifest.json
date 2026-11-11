@@ -182,9 +182,9 @@
  "english-alphabet-chart": {
   "slug": "english-alphabet-chart",
   "png": "/assets/img/charts/english-alphabet-chart.webp",
-  "w": 1300,
-  "h": 2045,
-  "alt": "英文字母表：26個字母的大小寫、名稱唸法與字母音對照",
+  "w": 1400,
+  "h": 1976,
+  "alt": "英文字母表：26個字母的編號1-26、大小寫、KK音標與名稱唸法對照",
   "title": "英文字母表",
   "page": "english-alphabet-guide"
  },
@@ -192,8 +192,8 @@
   "slug": "ordinal-numbers-chart",
   "png": "/assets/img/charts/ordinal-numbers-chart.webp",
   "w": 1400,
-  "h": 2551,
-  "alt": "英文序數對照表：first second third 等序數的拼法、縮寫與基數對照",
+  "h": 2005,
+  "alt": "英文序數對照表：第一、第二、第三到第三十一的英文 first second third、拼法與縮寫",
   "title": "英文序數對照表",
   "page": "ordinal-numbers-english"
  },
