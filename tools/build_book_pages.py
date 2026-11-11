@@ -267,6 +267,26 @@ CSS = """
 .bp-trust span{display:inline-flex;align-items:center;gap:5px;background:#fff;border-radius:100px;padding:6px 12px;font-size:12.5px;font-weight:700;color:var(--navy);box-shadow:0 3px 10px rgba(26,39,82,.10)}
 .bp-trust span::before{content:'✓';color:#12873d;font-weight:900}
 .bp-fine{max-width:760px;margin:16px auto 0;font-size:13px;line-height:1.8;color:#64748b;text-align:center}
+.bp-safe{max-width:1040px;margin:22px auto 0;background:#fff;border:1.5px solid rgba(26,39,82,.12);border-radius:20px;padding:20px 22px;box-shadow:0 6px 22px rgba(26,39,82,.07)}
+.bp-line{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 18px;background:#F1FBF4;border:1.5px solid rgba(6,199,85,.28);border-radius:14px;padding:14px 16px}
+.bp-line p{margin:0;flex:1 1 300px;font-size:14.5px;line-height:1.75;color:#374151}
+.bp-line p b{color:var(--navy)}
+.bp-line .btn{flex:0 0 auto;min-height:44px}
+.bp-safe-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;margin-top:18px}
+@media (max-width:760px){.bp-safe{padding:16px 14px}.bp-safe-grid{grid-template-columns:1fr}}
+.bp-safe h3{margin:0 0 8px;font-size:16.5px;color:var(--navy)}
+.bp-safe ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.bp-safe li{position:relative;padding-left:22px;font-size:14px;line-height:1.75;color:#374151}
+.bp-safe li::before{content:'✓';position:absolute;left:0;top:0;color:#12873d;font-weight:900}
+.bp-safe li a{color:var(--navy);font-weight:700}
+.bp-fields{margin-top:16px;border-top:1px solid rgba(26,39,82,.10);padding-top:12px}
+.bp-fields summary{cursor:pointer;font-weight:800;color:var(--navy);font-size:14.5px;min-height:44px;display:flex;align-items:center;gap:8px;list-style:none}
+.bp-fields summary::-webkit-details-marker{display:none}
+.bp-fields summary::before{content:'＋';display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:#EAF6FF;color:var(--navy);font-weight:900;font-size:14px}
+.bp-fields[open] summary::before{content:'－'}
+.bp-fields table{width:100%;border-collapse:collapse;margin-top:6px;font-size:14px}
+.bp-fields th,.bp-fields td{text-align:left;padding:9px 10px;border-bottom:1px solid rgba(26,39,82,.08);vertical-align:top;line-height:1.6}
+.bp-fields th{width:40%;font-family:Inter,system-ui,sans-serif;font-weight:700;color:var(--navy);white-space:normal}
 .bp-steps{counter-reset:s;list-style:none;padding:0;margin:22px auto 0;max-width:720px}
 .bp-steps li{counter-increment:s;position:relative;padding:0 0 16px 46px;font-size:15.5px;line-height:1.8;color:var(--text-body)}
 .bp-steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:30px;height:30px;border-radius:10px;background:var(--blue);color:#fff;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;display:grid;place-items:center}
@@ -343,6 +363,45 @@ def buy(url, label, kind, item, price, cls="btn btn-yellow"):
 
 def wrange(ws):
     return n(min(ws)) if min(ws) == max(ws) else f"{n(min(ws))}–{n(max(ws))}"
+
+USD_RATE = 32.9     # NT$ per US$, the rate Lemon Squeezy applied on 2026-11-11 (NT$590 → US$17.93); only for the "約 US$" example
+BSB = "https://bsb.kh.edu.tw/"                                  # 直轄市及各縣市短期補習班資訊管理系統: the public 立案 lookup
+MAPS = "https://maps.app.goo.gl/hLChkEqAMKCsMWpm6"
+
+def pay_safe(kind, price):
+    """Under the price cards (2026-11-11): the LINE-order route (bank transfer) and who the buyer is paying.
+    GA4 30 days: 21 people opened a checkout, 5 paid; the Lemon Squeezy form is English, charges in US dollars
+    and has no LINE Pay / ATM, so the page says so up front and gives facts a parent can check."""
+    usd = round(price / USD_RATE)
+    line = (f'<div class="bp-line"><p>{Z("<b>不方便線上刷卡？</b>按「用 LINE 訂購（可轉帳）」，我們在 LINE 上回你轉帳帳號，收到款項後直接把下載連結傳給你。", "<b>Not comfortable paying by card online?</b> Tap “Order on LINE (bank transfer)”. We reply on LINE with the account to transfer to, and send you the download link once the payment arrives.")}</p>'
+            f'<a class="btn btn-outline" href="{LINE}" target="_blank" rel="noopener" data-book="{kind}" data-book-item="line-order">{Z("用 LINE 訂購（可轉帳）", "Order on LINE (bank transfer)")}</a></div>')
+    who = [Z(f"私立埃森美語文理短期補習班，新北市政府立案：社補教社字第115026號。可以到政府的<a href='{BSB}' target='_blank' rel='noopener'>短期補習班資訊管理系統</a>查。", "私立埃森美語文理短期補習班 (the school's registered name), registered with the New Taipei City Government: 社補教社字第115026號. You can look it up on the government's cram-school information system (link)."),
+           Z("統一編號 61476523。", "Tax ID (統一編號) 61476523."),
+           Z(f"教室在新北市板橋區中正路89巷4號1樓，<a href='{MAPS}' target='_blank' rel='noopener'>Google 地圖</a>上看得到位置和家長評價。", "The classroom is at 1F, No. 4, Lane 89, Zhongzheng Rd., Banqiao, New Taipei; Google Maps (link) shows the location and parents' reviews."),
+           Z(f"有問題找得到人：電話 0928-067-772，或 <a href='{LINE}' target='_blank' rel='noopener'>LINE</a>。", "You can reach a person: phone 0928-067-772, or LINE (link).")]
+    pay = [Z("刷卡由 Lemon Squeezy 處理，它是美國金流公司 Stripe 旗下的服務。卡號直接交給它加密處理，我們看不到你的卡號。", "Card payments are handled by Lemon Squeezy, a service owned by the US payments company Stripe. Your card number goes straight to it, encrypted; we never see it."),
+           Z("付款頁是英文的，下面有每一格的中文說明。", "The payment page is in English; a Chinese guide to each field is below."),
+           Z(f"畫面上寫新台幣，實際以美元扣款（NT${price} 約 US${usd}，依當天匯率）。信用卡帳單上會是美元金額和英文的商店名稱，多數銀行會另收約 1.5% 的國外交易手續費。", f"The page shows NT dollars, but the card is charged in US dollars (NT${price} is about US${usd}, at the day's rate). Your card statement will show a US-dollar amount and an English merchant name, and most banks add a foreign-transaction fee of about 1.5%."),
+           Z("付款完成，下載連結立刻寄到你填的 email。沒收到先看垃圾信匣，再 LINE 我們。", "Once you pay, the download link is emailed right away to the address you entered. If it doesn't arrive, check your spam folder, then message us on LINE.")]
+    fields = [("Email", Z("收下載連結的信箱，請確認沒有打錯", "the mailbox that receives the download link; check for typos")),
+              ("Card number", Z("信用卡卡號（Visa、Mastercard、JCB、美國運通）", "card number (Visa, Mastercard, JCB, American Express)")),
+              ("Expiration date", Z("卡片有效期限：月／年", "card expiry: month / year")),
+              ("Security code", Z("卡片背面的 3 碼（美國運通是正面 4 碼）", "the 3 digits on the back of the card (4 on the front for American Express)")),
+              ("Cardholder name", Z("持卡人姓名，照卡片上的英文拼", "cardholder name, spelled as on the card")),
+              ("Billing address", Z("國家已經幫你選好 Taiwan，下面一格填郵遞區號", "the country is already set to Taiwan; put your postal code in the box below it")),
+              ("Tax ID number (optional)", Z("公司統編，個人購買不用填", "company tax ID; leave blank for a personal purchase")),
+              ("Pay with PayPal", Z("有 PayPal 帳戶的話，也可以改用 PayPal 付款", "if you have a PayPal account you can pay with PayPal instead")),
+              ("Pay NT$…", Z("確認金額後按下去，就完成付款", "check the amount, then press to pay"))]
+    rows = "".join(f'<tr><th lang="en">{esc(a)}</th><td>{b}</td></tr>' for a, b in fields)
+    return (f'<div class="bp-safe reveal" id="pay-safe">{line}<div class="bp-safe-grid">'
+            f'<div><h3 id="你是向誰買">{Z("你是向誰買", "who you are buying from")}</h3><ul>{"".join(f"<li>{x}</li>" for x in who)}</ul></div>'
+            f'<div><h3 id="線上刷卡會看到什麼">{Z("線上刷卡會看到什麼", "what you will see when you pay by card")}</h3><ul>{"".join(f"<li>{x}</li>" for x in pay)}</ul></div></div>'
+            f'<details class="bp-fields"><summary>{Z("英文付款頁每一格怎麼填", "how to fill in each box on the English payment page")}</summary>'
+            f'<table><tbody>{rows}</tbody></table></details></div>')
+
+PAY_QA = ("付款安全嗎？付款頁為什麼是英文的？", "Is paying safe? Why is the payment page in English?",
+          "刷卡由美國金流公司 Stripe 旗下的 Lemon Squeezy 處理，卡號加密後直接交給它，我們看不到。這家公司的付款頁沒有繁體中文，所以是英文的，價格下面有每一格的中文說明；實際以美元扣款，帳單上會是美元金額。不想線上刷卡，可以按「用 LINE 訂購（可轉帳）」。我們是新北市政府立案的補習班（社補教社字第115026號），教室在板橋中正路。",
+          "Card payments are handled by Lemon Squeezy, owned by the US payments company Stripe; your card number goes to it encrypted and we never see it. Its payment page has no Traditional Chinese, so it is in English, and there is a Chinese guide to each field by the prices; the charge is in US dollars, so your statement shows a US-dollar amount. If you would rather not pay by card online, tap “Order on LINE (bank transfer)”. We are a cram school registered with the New Taipei City Government (社補教社字第115026號), with a classroom on Zhongzheng Road in Banqiao.")
 
 def soon(live):
     """While no checkout link is set, one line says buying online opens soon (the buttons are greyed)."""
@@ -541,6 +600,7 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
     {h2(Z("價格", "prices"), "三種買法照需要挑", Z("三種買法，<em>照需要挑</em>", "three ways to buy"), "yellow")}
     {soon(any_link)}<div class="bp-trust reveal">{trust}</div>
     {tiers}
+    {pay_safe("readers", P_LEVEL)}
     <p class="bp-fine">{Z("每本書都有 PDF（A5，可以自己印）和翻頁電子書（在電腦上解壓縮後點開 index.html，不用網路也能讀；手機、平板看 PDF 最方便）。翻頁電子書可以邊聽邊讀，唸到的字會亮起來，也可以放慢速度。家庭自用；學校或補習班要全班用，請先 <a href='" + LINE + "' target='_blank' rel='noopener'>LINE 問我們</a>。",
         "Every book comes as a PDF (A5, print it yourself) and a flip book (unzip on a computer and open index.html, no internet needed; on a phone or tablet the PDF is easiest). The flip books read aloud, lighting up each word, and the reading can be slowed down. For family use; for a whole class at a school or cram school, ask us on LINE first.")}<br>
     {Z("這是數位內容，付款後立刻提供下載；依《通訊交易解除權合理例外情事適用準則》第 2 條第 5 款，按下購買即表示你同意不適用七天解除權。請先免費讀第 1 級再決定。",
@@ -560,6 +620,7 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
            Z("可以，家裡自己用都沒問題。PDF 是 A5 大小（一般 A4 對折的大小），印在 A4 紙上選「符合頁面」就行。", "Yes, for your own family. The PDF is A5 (half of A4); print on A4 with 'fit to page'.")),
           (Z("怎麼付款、多久拿到？", "How do I pay, and when do I get it?"),
            Z("在這一頁按購買，用信用卡付款（不會跳到別的網站，也不用註冊）。付款完成，下載連結會立刻寄到你填的 email。", "Click buy on this page and pay by card (you stay on this page; no account). When payment goes through, the download link goes straight to the email you entered.")),
+          (Z(PAY_QA[0], PAY_QA[1]), Z(PAY_QA[2], PAY_QA[3])),
           (Z("翻頁電子書在手機上能看嗎？", "Does the flip book work on a phone?"),
            Z("可以。電腦和平板上是左右兩頁一起翻，手機直拿會一次顯示一頁。也可以直接用 PDF。", "Yes. On a computer or tablet it turns two pages at a time; on an upright phone it shows one page at a time. The PDF works too."))]
     out.append(f"""<section class="section">
@@ -856,6 +917,7 @@ def grammar_page():
     {h2(Z("價格", "prices"), "一個學程一次買齊", Z("一個學程，<em>一次買齊</em>", "a whole stage in one purchase"), "yellow")}
     {soon(any_link)}<div class="bp-trust reveal">{trust}</div>
     <div class="bp-tiers reveal">{"".join(tiers)}</div>
+    {pay_safe("grammar", P_GBOOKS)}
     <p class="bp-fine">{Z("家庭自用，可以自己印。學校或補習班要全班用，請先 <a href='" + LINE + "' target='_blank' rel='noopener'>LINE 問我們</a>。", "For family use; print it yourself. For a whole class, ask us on LINE first.")}<br>
     {Z("這是數位內容，付款後立刻提供下載；依《通訊交易解除權合理例外情事適用準則》第 2 條第 5 款，按下購買即表示你同意不適用七天解除權。請先下載免費的第 1 頁再決定。",
        "This is digital content delivered right after payment; under Article 2(5) of the rules on exceptions to the 7-day cancellation right, clicking buy means you agree the 7-day cancellation does not apply. Please download the free page 1 before deciding.")}</p>
@@ -867,6 +929,7 @@ def grammar_page():
              "Junior high fits all three editions: each book's map shows which lesson of 康軒, 翰林 and 南一 teaches each point, and the exam-range page shows which pages to study before each exam. Senior high fits 龍騰, 三民 and 遠東, but each edition places grammar differently, so the books go by topic with no lesson numbers. Elementary follows the MOE basic learning content. Not sure which edition your child's school uses? See the Banqiao school English curriculum maps.")),
           (Z("國小為什麼不講文法？", "Why no grammar rules for elementary?"),
            Z("國小英語課綱要求避免講解、分析文法，所以國小這 4 冊用「句型」：孩子先會說、會寫整句，國中再學規則。", "The elementary curriculum asks teachers to avoid explaining and analysing grammar, so these 4 books teach sentence patterns: children say and write whole sentences first and learn the rules in junior high.")),
+          (Z(PAY_QA[0], PAY_QA[1]), Z(PAY_QA[2], PAY_QA[3])),
           (Z("可以只買一冊嗎？", "Can I buy a single book?"),
            Z("目前以學程為單位賣（國小 4 冊、國中 6 冊、高中 6 冊），一套 NT$590；每一冊的第 1 頁可以先免費下載看看。", "For now they are sold by stage (4 elementary, 6 junior-high, 6 senior-high), NT$590 a set; page 1 of every book is free to try first.")),
           (Z("速查表和文法書差在哪？", "How is the cheat sheet different from the book?"),
