@@ -459,8 +459,8 @@ def readers_page():
         <span class="eyebrow eyebrow-yellow reveal">{Z("埃森美語原創", "our own series")}</span>
         <h1 class="reveal d1"><span style="white-space:nowrap">Chris and Cora</span> {Z("<em>英語分級讀本</em>", "English graded readers")}</h1>
         <div class="divider reveal d1"></div>
-        <p class="body reveal d2">{Z("我們自己寫的 36 本英文故事書，故事發生在台灣，用的是學校的教育部 1,200 字表。",
-            "36 English storybooks we wrote ourselves, set in Taiwan, using the school's MOE 1,200-word list.")}</p>
+        <p class="body reveal d2">{Z("<strong>孩子真的讀得完的英文故事書。</strong>36 個發生在台灣的故事，除了角色名字，每個字都是學校會教的（教育部 1,200 字表）；從一頁一句開始，一級一級讀到整段故事。",
+            "English storybooks your child can actually finish. 36 stories set in Taiwan; apart from the characters' names, every word is one that school teaches (the Ministry of Education's 1,200-word list). It starts at one sentence a page and builds, level by level, to full paragraphs.")}</p>
         <div class="bp-cta reveal d2"><a class="btn btn-primary" href="#read-book" data-book="readers" data-book-item="free">{Z("免費讀第 1 級 3 本", "read Level 1 (3 books) free")}</a>
           <a class="btn btn-outline" href="#buy">{Z("看價格", "see prices")}</a></div>
         <div class="bp-facts reveal d2"><span>{Z("PDF＋翻頁電子書", "PDF + flip book")}</span><span>{Z("邊聽邊讀", "reads aloud")}</span><span>{Z("12 級 36 本", "12 levels, 36 books")}</span><span>{Z("3 歲起陪讀", "from age 3, read together")}</span></div>
