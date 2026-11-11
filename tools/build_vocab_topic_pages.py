@@ -154,6 +154,94 @@ def number_passages():
                    f'<p>{n}（{zh}）的英文是 <strong>{en}</strong>；第{zh}是 <strong>{ordw}</strong>，縮寫 {abbr}。{note}{link}</p>')
     return '<div class="prose reveal">' + "".join(out) + "</div>"
 
+# 2026-11-12 (CTR plan batch 3): three quarters of the colours page's impressions are single-colour
+# searches (藍色英文 2,456, 棕色英文 1,832, 紫色英文 1,364 … at position 8-11), and the page above us
+# (english.cool, 144 rows) shows every colour as a swatch. Swatches beside each colour, quick-answer
+# chips, and one short literal answer per most-searched colour (#c-blue …) with its shades.
+COLOR_HEX = {
+    "red": "#FF0000", "orange": "#FFA500", "yellow": "#FFFF00", "green": "#008000", "blue": "#0000FF",
+    "purple": "#800080", "pink": "#FFC0CB", "brown": "#964B00", "black": "#000000", "white": "#FFFFFF",
+    "gray／grey": "#808080", "gold": "#FFD700", "silver": "#C0C0C0",
+    "light blue": "#ADD8E6", "dark blue": "#00008B", "navy": "#000080", "sky blue": "#87CEEB",
+    "baby blue": "#89CFF0", "light green": "#90EE90", "dark green": "#006400", "olive": "#808000",
+    "lime": "#32CD32", "mint": "#98FF98", "beige": "#F5F5DC", "cream": "#FFFDD0", "ivory": "#FFFFF0",
+    "charcoal": "#36454F", "scarlet": "#FF2400", "crimson": "#DC143C", "maroon": "#800000",
+    "burgundy": "#800020", "coral": "#FF7F50", "salmon": "#FA8072", "rose": "#FF007F",
+    "magenta": "#FF00FF", "lavender": "#B57EDC", "violet": "#8F00FF", "lilac": "#C8A2C8",
+    "plum": "#8E4585", "indigo": "#4B0082", "amber": "#FFBF00", "mustard": "#FFDB58",
+    "lemon": "#FFF44F", "peach": "#FFE5B4", "apricot": "#FBCEB1", "tan": "#D2B48C",
+    "chocolate": "#7B3F00", "coffee": "#6F4E37", "chestnut": "#954535", "copper": "#B87333",
+    "bronze": "#CD7F32", "turquoise": "#40E0D0", "teal": "#008080", "cyan": "#00FFFF",
+    "aqua": "#00FFFF", "emerald": "#50C878", "jade": "#00A86B", "forest green": "#228B22",
+    "khaki": "#C3B091", "pearl": "#EAE0C8",
+    "transparent": "repeating-conic-gradient(#ddd 0 25%,#fff 0 50%) 50%/8px 8px",
+    "colourful": "conic-gradient(#f00,#ff0,#0f0,#0ff,#00f,#f0f,#f00)",
+}
+SWATCH_CSS = ('<style>.sw{display:inline-block;width:15px;height:15px;border-radius:4px;margin-right:9px;'
+              'vertical-align:-2px;border:1px solid rgba(26,39,82,.22)}</style>')
+
+def color_grouped():
+    e = lambda c: html.escape(str(c))
+    out = [SWATCH_CSS]
+    for name, rows in DATA["colors"]:
+        body = "".join(f'<tr><td><span class="sw" style="background:{COLOR_HEX[w]}" aria-hidden="true"></span>{e(w)}</td>'
+                       f'<td>{e(z)}</td></tr>' for w, z in rows)
+        out.append(f'<h3>{e(name)}</h3>')
+        out.append(f'<div class="compare reveal"><table><thead><tr><th>英文</th><th>中文</th></tr></thead>'
+                   f'<tbody>{body}</tbody></table></div>')
+    return "\n".join(out)
+
+# (anchor, chip label, H3, answer, pronunciation word)
+COLOR_NOTES = [
+    ("c-blue", "藍色＝blue", "藍色英文：blue",
+     "藍色的英文是 <strong>blue</strong>。深藍色是 dark blue，更深的海軍藍是 navy；淺藍色是 light blue，天空的藍是 sky blue，很淡的嬰兒藍是 baby blue。藍綠色可以說 teal 或 turquoise，青色是 cyan，水藍色是 aqua。", "blue"),
+    ("c-brown", "棕色、咖啡色＝brown", "棕色、咖啡色英文：brown",
+     "棕色和咖啡色在英文都是 <strong>brown</strong>。深一點的巧克力色是 chocolate，咖啡色系還有 coffee（咖啡色）和 chestnut（栗子色）；淺一點的黃褐色是 tan，米色是 beige。", "brown"),
+    ("c-purple", "紫色＝purple", "紫色英文：purple",
+     "紫色的英文是 <strong>purple</strong>。偏藍的紫是 violet（紫羅蘭色），淡紫色有 lavender（薰衣草紫）和 lilac（丁香紫），深一點的是 plum（李子紫），靛色是 indigo。", "purple"),
+    ("c-red", "紅色＝red", "紅色英文：red",
+     "紅色的英文是 <strong>red</strong>。鮮紅是 scarlet，深紅是 crimson，酒紅是 burgundy，栗色是 maroon。「有點紅、偏紅」說 reddish。", "red"),
+    ("c-yellow", "黃色＝yellow", "黃色英文：yellow",
+     "黃色的英文是 <strong>yellow</strong>。檸檬黃是 lemon，芥末黃是 mustard，琥珀色是 amber，金色是 gold。「偏黃」說 yellowish。", "yellow"),
+    ("c-green", "綠色＝green", "綠色英文：green",
+     "綠色的英文是 <strong>green</strong>。淺綠是 light green，深綠是 dark green，森林綠是 forest green；還有橄欖綠 olive、萊姆綠 lime、薄荷綠 mint、翠綠 emerald、玉綠 jade。", "green"),
+    ("c-orange", "橘色＝orange", "橘色、橙色英文：orange",
+     "橘色和橙色都是 <strong>orange</strong>，和柳橙是同一個字。偏淡的桃色是 peach，杏色是 apricot，偏紅的珊瑚色是 coral。", "orange"),
+    ("c-white", "白色＝white", "白色英文：white",
+     "白色的英文是 <strong>white</strong>。象牙白是 ivory，奶油色是 cream，米色是 beige，珍珠白是 pearl。", "white"),
+    ("c-pink", "粉紅色＝pink", "粉紅色英文：pink",
+     "粉紅色的英文是 <strong>pink</strong>。玫瑰色是 rose，鮭魚粉是 salmon，偏紫的亮粉紅是 magenta（洋紅色）。", "pink"),
+    ("c-black", "黑色＝black", "黑色、灰色英文：black、gray",
+     "黑色的英文是 <strong>black</strong>，灰色美式寫 <strong>gray</strong>、英式寫 grey，深灰的炭灰色是 charcoal。", "black"),
+]
+
+def color_chips():
+    chips = "".join(f'<a href="#{a}">{lab}</a>' for a, lab, *_ in COLOR_NOTES)
+    return f'<nav class="m-chips reveal" aria-label="常被查的顏色英文">{chips}</nav>'
+
+def color_passages():
+    out = []
+    for a, _, h, txt, w in COLOR_NOTES:
+        out.append(f'<h3 id="{a}">{h}</h3><p>{txt}<a href="/pronunciation/{w}/">{w} 怎麼唸</a></p>')
+    return '<div class="prose reveal">' + "".join(out) + "</div>"
+
+# 2026-11-12 (CTR plan batch 3): for 職業英文 the two pages above us (soeasyedu, VoiceTube) lead with
+# company job titles and departments; this page had neither.
+JOB_TITLES = [
+    ("CEO（Chief Executive Officer）", "執行長"), ("chairman", "董事長"), ("president", "總裁"),
+    ("general manager", "總經理"), ("vice president", "副總裁／副總經理"), ("director", "處長／總監"),
+    ("manager", "經理"), ("assistant manager", "副理"), ("supervisor", "主管"), ("team leader", "組長"),
+    ("specialist", "專員"), ("assistant", "助理"), ("secretary", "祕書"), ("intern", "實習生"),
+    ("employee／staff", "員工"), ("co-worker／colleague", "同事"),
+]
+DEPARTMENTS = [
+    ("Human Resources（HR）", "人資部"), ("Sales", "業務部"), ("Marketing", "行銷部"),
+    ("Finance", "財務部"), ("Accounting", "會計部"), ("Information Technology（IT）", "資訊部"),
+    ("Research and Development（R&D）", "研發部"), ("Customer Service", "客服部"),
+    ("Purchasing", "採購部"), ("Legal", "法務部"), ("Administration", "行政部"),
+    ("Production", "生產部"), ("Quality Assurance（QA）", "品保部"), ("Public Relations（PR）", "公關部"),
+]
+
 DAY_NOTES = [
     ("mon", "名字是「月亮日」（Moon-day）。", "I have English class on Mondays.", "我每個星期一有英文課。"),
     ("tue", "和星期四 Thursday 都是 T 開頭：<strong>Tu 是二、Th 是四</strong>。", "We have PE on Tuesday.", "我們星期二有體育課。"),
@@ -359,8 +447,12 @@ PAGES.update({
   hero="顏色是孩子最早學會的一批英文單字，但大多數人停在十個基本色就沒再往下走。下面這份表收了 62 個，分成五組——先給表，再講三個真正會用到的規則。",
   body=lambda: (
     sec("顏色英文對照表（62 個）",
-      prose("按色系分組，找起來比按字母快。深淺的說法在第二組，實際寫作最常用到。")
-      + grouped([(g[0], [[w, z] for w, z in g[1]]) for g in DATA["colors"]], ["英文", "中文"]))
+      prose("按色系分組，找起來比按字母快，每個顏色旁邊附色塊。深淺的說法在第二組，實際寫作最常用到。")
+      + color_chips()
+      + color_grouped())
+    + sec("常被查的顏色英文：藍色、咖啡色、紫色怎麼說",
+      prose("下面是最常被查的十組顏色，每組附上深淺與相近色的說法；點「怎麼唸」可以聽發音。")
+      + color_passages(), soft=True)
     + sec("color 還是 colour？",
       prose("<strong>color 是美式，colour 是英式</strong>，兩個都正確。同一組差異還有 gray（美）／grey（英）。",
         "台灣的審定教科書（康軒、翰林、南一）採<strong>美式</strong>拼法，多益也是美式；劍橋與全民英檢兩種都接受。"
@@ -509,6 +601,10 @@ PAGES.update({
     sec("職業英文對照表（108 種）",
       prose("依領域分九組。找不到完全對應的工作時，母語者的做法是說 <em>I work in…</em> 加上行業，例如 I work in finance。")
       + grouped([(g[0], [[w, z] for w, z in g[1]]) for g in DATA["jobs"]], ["英文", "中文"]))
+    + sec("公司職稱與部門英文：經理、主管、人資部怎麼說",
+      prose("上面是「做什麼工作」；進了公司，名片上寫的是<strong>職稱</strong>（job title），還有你在哪個<strong>部門</strong>（department）。下面是台灣公司最常見的說法；各公司的英文職稱不完全相同，以公司自己的名片為準。",
+        "說自己在哪個部門：<em>I work in the marketing department.</em>（我在行銷部工作。）口語也常直接說 <em>I'm in sales.</em>（我做業務。）")
+      + grouped([("常見職稱 Job titles", JOB_TITLES), ("公司部門 Departments", DEPARTMENTS)], ["英文", "中文"]), soft=True)
     + sec("職業前面一定要加 a 或 an",
       prose("這是中文母語者最常漏的一個字。中文說「我是老師」，英文<strong>必須</strong>說 I'm <em>a</em> teacher。",
         "<strong>a 或 an 看發音</strong>：a teacher、a doctor（子音開頭）；<em>an</em> engineer、<em>an</em> artist、<em>an</em> actor（母音開頭）。"
@@ -533,10 +629,11 @@ PAGES.update({
       ("What do you do 是什麼意思？", "就是問「你做什麼工作」，不是問「你在做什麼」。問當下在做什麼要用 What are you doing?——差在時態，考試常考這組對比。"),
       ("policeman 還可以用嗎？", "還看得懂，但正式寫作和考試建議用 police officer。英文近年普遍改用中性職稱：firefighter、flight attendant、chairperson 都是同樣的轉變。"),
       ("老闆和經理的英文怎麼分？", "boss 是口語的「上司」，指直屬管你的人；manager 是正式職稱，指管理某個部門或團隊。履歷和正式場合用 manager。"),
+      ("公司部門的英文怎麼說？", "部門是 department。最常見的幾個：人資部 Human Resources（HR）、業務部 Sales、行銷部 Marketing、財務部 Finance、會計部 Accounting、資訊部 IT、研發部 R&amp;D、客服部 Customer Service。說自己在哪個部門：I work in the marketing department，口語也可以說 I'm in sales。"),
       ("孩子怎麼學職業英文最有效？", "從身邊的人開始——爸媽、老師、醫生、店員。接著玩猜謎：用英文描述一個職業做什麼，讓孩子猜。這同時練到職業單字和動詞，比單背名詞有用得多。"),
     ]), soft=True)
     + cta("職業、自我介紹這類單元，考試考的是句子不是單字。我們的課堂讓孩子真的用英文介紹自己和家人，講到不用想。")),
-  faq_n=6),
+  faq_n=7),
 })
 
 HUB_CARDS = [

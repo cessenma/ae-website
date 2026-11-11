@@ -106,7 +106,7 @@ SPECS.update({
    title="國家英文對照表", sub="80 國 ・ 國名、中文與國籍形容詞",
    alt="國家英文對照表：80個國家的英文名稱、中文與國籍形容詞對照",
    foot="可儲存列印｜americanenglish.com.tw"),
- "jobs-english-chart": dict(page="jobs-english", cols=3, width=1560,
+ "jobs-english-chart": dict(page="jobs-english", cols=3, width=1560, only=set(range(9)),   # 11-12: the 9 job groups only, not the job-title / department tables
    title="職業英文對照表", sub="108 種工作 ・ 依領域分組",
    alt="職業英文對照表：108種常見工作的英文與中文對照，依領域分組",
    foot="可儲存列印｜americanenglish.com.tw"),
