@@ -133,6 +133,12 @@ Header set Cache-Control "public, max-age=0, s-maxage=300, must-revalidate, no-t
 <FilesMatch "\.(m4a|mp3|xlsx|csv)$">
 Header set X-Robots-Tag "noindex"
 </FilesMatch>
+# 2026-11-12 (CTR plan batch 4): for 謝謝英文 Google ranked this PDF (1,062 impr, pos 10.9) beside its own
+# page (965 impr, pos 9.6) and neither reached the top 6. The PDF stays indexable, but its canonical is the page,
+# so the two stop splitting the search. Other PDFs are untouched (they stay their own results on purpose).
+<Files "ae-thank-you-english-a4.pdf">
+Header set Link "<https://americanenglish.com.tw/thank-you-english/>; rel=\"canonical\""
+</Files>
 </IfModule>
 
 # Cache static assets

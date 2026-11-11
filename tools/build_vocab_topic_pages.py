@@ -1267,7 +1267,7 @@ DATA_TIME = DATA["time"]
 PAGES["time-english"] = dict(
   published="2026-10-07",
   target="時間英文", index=1.0,
-  h1="時間英文怎麼說？幾點幾分說法、a.m.／p.m. 寫法、縮寫與單字表一次搞懂",
+  h1="12pm 是中午 12 點：時間英文 am／pm 怎麼分、幾點幾分說法與縮寫表",   # 11-12: Google showed the H1, not the title; lead with the answer like the #1 page
   title="時間英文怎麼說？幾點幾分說法 43 句、am／pm 寫法與縮寫對照表｜埃森美語",
   desc="時間英文對照表：幾點幾分 43 種說法、a.m.／p.m. 寫法與 12 p.m. 的意思、19 個縮寫、83 個時間單字、at／in／on 用法與問答句型——美籍持證教師整理，附 A4 PDF。",
   hero="時間英文最常被問的不是單字，而是「7:05 怎麼唸」「12 p.m. 是中午還是半夜」「at 還是 in」。下面先給 43 種幾點幾分的說法對照表，再把 a.m.／p.m. 寫法、縮寫、83 個時間單字、介系詞和問答句型一次講清楚。",

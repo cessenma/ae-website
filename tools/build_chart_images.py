@@ -132,7 +132,17 @@ SPECS.update({
    title="英文日期對照表", sub="1-31 日 ・ 序數寫法、縮寫與唸法",
    alt="英文日期對照表：1到31日的英文序數寫法、縮寫與唸法，含月份縮寫",
    foot="可儲存列印｜americanenglish.com.tw"),
- "english-vowels-consonants-chart": dict(page="english-vowels-consonants", width=1400,
+ "english-vowels-consonants-chart": dict(page="english-vowels-consonants", width=1400, only=[0, 1, 2, 3],
+   title="英文母音對照表", sub="5 個母音字母、17 個音：短母音、長母音、雙母音",
+   alt="英文母音對照表：5 個母音字母、17 個母音的音標、例字與發音方式",
+   foot="可儲存列印｜americanenglish.com.tw"),
+ # 11-12 (CTR plan batch 4): the 24-consonant tables get their own picture (one chart for both ran to
+ # 2,900 px) and the PDF keeps everything through the pdf_only spec below.
+ "english-consonants-24-chart": dict(page="english-vowels-consonants", width=1400, only=[4, 5], anchor_nth=4,
+   title="英文子音對照表", sub="24 個子音：有聲／無聲配對與發音方式",
+   alt="英文子音對照表：24 個子音的音標、例字、有聲無聲配對與發音方式",
+   foot="可儲存列印｜americanenglish.com.tw"),
+ "english-vowels-consonants-all": dict(page="english-vowels-consonants", width=1400, pdf_only=True,
    title="英文母音與子音對照表", sub="母音、子音的音標、例字與發音方式",
    alt="英文母音與子音對照表：音標符號、例字與發音方式，含字母與音標對照",
    foot="可儲存列印｜americanenglish.com.tw"),
@@ -808,7 +818,10 @@ if __name__ == "__main__":
         r = build(s, SPECS[s])
         if r:
             man[s] = r
-            inject(r)
+            # 11-12: build() does not carry anchor_nth, so a NEW block always landed before the
+            # page's first table (on /english-vowels-consonants/ that is inside the AE:KW box,
+            # which seo_build strips and re-inserts, so the chart silently vanished)
+            inject(dict(r, anchor_nth=SPECS[s].get("anchor_nth", 0)))
     os.makedirs(OUT, exist_ok=True)
     json.dump(man, open(mf, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"manifest: {len(man)} charts -> assets/img/charts/manifest.json")

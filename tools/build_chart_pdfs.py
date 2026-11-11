@@ -34,7 +34,7 @@ PDFS = {
  "cheer-up-english":       ("cheer-up-english-chart","ae-cheer-up-english-a4.pdf","21 種鼓勵說法依場合分組"),
  "english-pronunciation":  ("english-vowels-chart", "ae-english-vowels-a4.pdf", "17 個母音・例字與嘴型提示"),
  "english-pronunciation#consonants": ("english-consonants-chart", "ae-english-consonants-a4.pdf", "24 個子音・有聲無聲配對與發音位置"),
- "english-vowels-consonants": ("english-vowels-consonants-chart", "ae-vowels-consonants-a4.pdf", "母音、子音、長短母音與雙母音對照"),
+ "english-vowels-consonants": ("english-vowels-consonants-all", "ae-vowels-consonants-a4.pdf", "母音、子音、長短母音與雙母音對照"),
  # 2026-09-21: the pages carrying the most impressions at the worst CTR on the site —
  # each already ranked 6–7, each with a chart and no download. GSC says the shapes that
  # convert here are "get a file" (8.99% CTR) and "look up" (7.45%), against 0.77% for
