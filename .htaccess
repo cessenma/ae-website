@@ -137,7 +137,8 @@ Header set X-Robots-Tag "noindex"
 # page (965 impr, pos 9.6) and neither reached the top 6. The PDF stays indexable, but its canonical is the page,
 # so the two stop splitting the search. Other PDFs are untouched (they stay their own results on purpose).
 <Files "ae-thank-you-english-a4.pdf">
-Header set Link "<https://americanenglish.com.tw/thank-you-english/>; rel=\"canonical\""
+# single quotes, as in Google's own Apache example: with \" escapes the host sent rel=\"canonical\" literally (11-12)
+Header set Link '<https://americanenglish.com.tw/thank-you-english/>; rel="canonical"'
 </Files>
 </IfModule>
 
