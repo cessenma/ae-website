@@ -7,7 +7,7 @@ Writes
   chris-and-cora-readers/index.html          the 分級讀本 tab: 36 Chris and Cora readers
   chris-and-cora-readers/read/1a|1b|1c/      the free Level 1 flip books (self-contained, noindex)
   english-grammar-books/index.html           the grammar books + cheat sheets (linked from the grammar pages)
-  assets/downloads/ae-grammar-*-page1-free.pdf   page 1 of every cheat sheet, free
+  assets/downloads/ae-grammar-*-sample.pdf     one free sample page per grade (page 3: the first point in full)
   ~/Downloads/GLOSS-2026-11-08-BOOK-PAGES.md every Chinese line on both pages with its English (Chris reads English)
 
 Data
@@ -24,7 +24,7 @@ SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ORIGIN = "https://americanenglish.com.tw"
 LINE = "https://lin.ee/W9J8TuQ"
 FLIP_SRC = os.path.expanduser("~/Downloads/AE-readers-out/flip")
-FREE_PDF_SRC = os.path.expanduser("~/Downloads/AE-GRAMMAR-SERIES-2026-10-31/workbook/free")
+BOOK_PDF_SRC = os.path.expanduser("~/Downloads/AE-GRAMMAR-SERIES-2026-10-31/workbook")
 GLOSS_OUT = os.path.expanduser("~/Downloads/GLOSS-2026-11-08-BOOK-PAGES.md")
 READERS, GRAMMAR = "chris-and-cora-readers", "english-grammar-books"
 
@@ -761,19 +761,32 @@ def readalong(t, dst):
 STAGES = [("elementary", ["G3", "G4", "G5", "G6"]), ("junior", ["G7-1", "G7-2", "G8-1", "G8-2", "G9-1", "G9-2"]),
           ("senior", ["G10-1", "G10-2", "G11-1", "G11-2", "G12-1", "G12-R"])]
 
+# Chris 11-12: page 1 (the one-page summary of the whole semester) was free for all 16 books, so the
+# samples together summarised the whole series. Now: one sample per GRADE (the first-semester book), and
+# the sample is page 3, the first grammar point in full, not the summary.
+SAMPLES = ["G3", "G4", "G5", "G6", "G7-1", "G8-1", "G9-1", "G10-1", "G11-1", "G12-1"]
+SAMPLE_PAGE = 3
+
 def free_pdfs():
-    """Page 1 of every cheat sheet, copied to /assets/downloads/ under site-style names."""
+    """Page 3 of each sample book's cheat sheet -> /assets/downloads/, plus its 400 px picture."""
+    import subprocess, tempfile
+    from PIL import Image
     got = {}
-    for _, codes in STAGES:
-        for c in codes:
-            stem = f"{c}-pattern-cards" if c in ("G3", "G4", "G5", "G6") else f"{c}-grammar-cheatsheet"
-            src = os.path.join(FREE_PDF_SRC, f"{stem}-page1-free.pdf")
-            name = f"ae-grammar-{c.lower()}-page1-free.pdf"
-            dst = os.path.join(SITE, "assets", "downloads", name)
-            if os.path.exists(src) and not os.path.exists(dst):   # copy once: check_pdfs.py --fix repairs the site copy
-                shutil.copy2(src, dst)                             # in place (Apple font fault); delete it to take a new build
-            if os.path.exists(dst):
-                got[c] = f"/assets/downloads/{name}"
+    for c in SAMPLES:
+        stem = f"{c}-pattern-cards" if c in ("G3", "G4", "G5", "G6") else f"{c}-grammar-cheatsheet"
+        src = os.path.join(BOOK_PDF_SRC, f"{stem}.pdf")
+        name = f"ae-grammar-{c.lower()}-sample.pdf"
+        dst = os.path.join(SITE, "assets", "downloads", name)
+        img = os.path.join(SITE, "assets", "img", "grammar-books", "free", f"{c}-sample.webp")
+        if os.path.exists(src) and not os.path.exists(dst):   # once: check_pdfs.py --fix repairs the site copy in place
+            subprocess.run(["pdfseparate", "-f", str(SAMPLE_PAGE), "-l", str(SAMPLE_PAGE), src, dst], check=True)
+        if os.path.exists(src) and not os.path.exists(img):
+            with tempfile.TemporaryDirectory() as t:
+                subprocess.run(["pdftoppm", "-png", "-r", "110", "-f", str(SAMPLE_PAGE), "-l", str(SAMPLE_PAGE),
+                                "-singlefile", src, os.path.join(t, "p")], check=True)
+                Image.open(os.path.join(t, "p.png")).convert("RGB").resize((400, 566), Image.LANCZOS).save(img, "WEBP", quality=82)
+        if os.path.exists(dst):
+            got[c] = f"/assets/downloads/{name}"
     return got
 
 def grammar_page():
@@ -781,12 +794,12 @@ def grammar_page():
     B = {b["code"]: b for b in G}
     free = free_pdfs()
     any_link = any(STORE["grammar"].values())
-    title = Z("英文文法書＋速查表：國小到高中每學期一本，第 1 頁免費下載｜埃森美語",
-              "English grammar books + cheat sheets: one book per semester for elementary, junior and senior high, page 1 free | American English")
-    desc = Z("國小句型書 4 冊、國中文法書 6 冊（康軒、翰林、南一適用）、高中文法書 6 冊（含學測總複習）。"
-             "每個重點一頁規則與圖解，附練習、測驗、解答和速查表，第 1 頁免費下載。",
+    title = Z("英文文法書＋速查表：國小到高中每學期一本，每年級一頁免費試讀｜埃森美語",
+              "English grammar books + cheat sheets: one book per semester for elementary, junior and senior high, a free sample page for every grade | American English")
+    desc = Z("國小句型書 4 冊、國中文法書 6 冊（康軒、翰林、南一適用）、高中 6 冊（含學測總複習）。"
+             "每個重點一頁規則圖解，附練習、測驗、解答、速查表，每年級一頁免費試讀。",
              "4 elementary sentence-pattern books, 6 junior-high grammar books (for the 康軒, 翰林, 南一 textbooks), 6 senior-high books (incl. a 學測 review). "
-             "One page of rules and pictures per point, with practice, tests, answers and a cheat sheet; page 1 is a free download.")
+             "One page of rules and pictures per point, with practice, tests, answers and a cheat sheet; a free sample page for every grade.")
     og_t = Z("英文文法書＋速查表：國小到高中每學期一本", "grammar books + cheat sheets, one per semester")
     ld = [{"@context": "https://schema.org", "@type": "Product", "@id": f"{ORIGIN}/english-grammar-books/#product", "url": f"{ORIGIN}/english-grammar-books/", "name": "英文文法書・文法速查表（國小・國中・高中）",
            "description": strip(desc), "brand": {"@type": "Brand", "name": "埃森美語 American English"},
@@ -812,7 +825,7 @@ def grammar_page():
         <p class="body reveal d2">{Z("孩子英文課到底在學什麼，常常搞不清楚嗎？這套書照孩子學校的課綱和課本整理成一本一本：國小每年級一本，國中、高中每學期一本，每本附速查表和解答。",
             "Ever struggled to work out what your child is actually learning in English class? These books turn your child's school curriculum and textbooks into one simple book per grade (elementary) or per semester (junior and senior high), each with a cheat sheet and answers.")}</p>
         <p class="reveal d2" style="margin:10px 0 0;font-size:15px;font-weight:700"><a href="/banqiao-school-english/">{Z("先看孩子學校用哪個版本、每次段考考哪幾課 →", "first see which edition your child's school uses and what each exam covers →")}</a></p>
-        <div class="bp-cta reveal d2"><a class="btn btn-primary" href="#free">{Z("免費下載第 1 頁", "free page 1")}</a>
+        <div class="bp-cta reveal d2"><a class="btn btn-primary" href="#free">{Z("免費試讀頁", "free sample page")}</a>
           <a class="btn btn-outline" href="#buy">{Z("看價格", "see prices")}</a></div>
         <div class="bp-facts reveal d2"><span>{Z("每學期一本", "one per semester")}</span><span>{Z("附解答", "answers included")}</span><span>{Z("可以列印", "printable")}</span><span>{Z("每冊附速查表", "cheat sheet with every book")}</span></div>
       </div>
@@ -849,7 +862,7 @@ def grammar_page():
              ("junior-exam-range-page", Z("段考範圍表", "exam-range page"), Z("康軒、翰林、南一每次段考要讀哪幾頁，一張表看完", "which pages to study before each exam for 康軒, 翰林 or 南一, on one table")),
              ("junior-exam-page", Z("段考模擬測驗", "school-exam practice test"), Z("兩頁 100 分，照學校三次段考的範圍出題", "two pages, 100 points, following the school's three exams")),
              ("senior-grammar-page", Z("高中文法頁", "senior-high grammar page"), Z("一樣的版面，題目加上中譯英和綜合測驗", "same layout, with translation and cloze")),
-             ("cheatsheet-page1", Z("文法速查表第 1 頁", "cheat sheet page 1"), Z("整學期的重點一頁看完，這一頁免費", "the whole semester on one page; this page is free"))]
+             ("cheatsheet-page1", Z("文法速查表第 1 頁", "cheat sheet page 1"), Z("整學期的重點一頁看完", "the whole semester on one page"))]
     figs = "".join(f'<figure><img src="/assets/img/grammar-books/pages/{f}.webp" alt="{esc(strip(t))}" width="778" height="1100" loading="lazy" decoding="async">'
                    f'<figcaption><b>{t}</b>{d}</figcaption></figure>' for f, t, d in pages)
     out.append(f"""<section class="section bg-soft">
@@ -861,22 +874,21 @@ def grammar_page():
   </div>
 </section>
 """)
-    # free page 1
-    # Chris 11-11: "these should be more aesthetically pleasing" -> each download is a picture of its real page 1
+    # free samples: one per grade (Chris 11-12), each a picture of its real page 3
     def short(c):
-        return Z("學測總複習", "exam review") if c == "G12-R" else esc(B[c]["title"].split(" ")[0].replace("國小", ""))
+        return esc(B[c]["title"].split(" ")[0].replace("國小", ""))
     fl = []
     for key, codes in STAGES:
         links = "".join(
-            f'<a class="fp" href="{free[c]}" download data-book="grammar" data-book-item="free-{c}">'
-            f'<span class="fp-pg"><img src="/assets/img/grammar-books/free/{c}.webp" alt="{esc(B[c]["title"])} 第 1 頁" width="400" height="566" loading="lazy" decoding="async">'
+            f'<a class="fp" href="{free[c]}" download data-book="grammar" data-book-item="sample-{c}">'
+            f'<span class="fp-pg"><img src="/assets/img/grammar-books/free/{c}-sample.webp" alt="{esc(B[c]["title"])} 試讀頁" width="400" height="566" loading="lazy" decoding="async">'
             f'<span class="fp-dl">{Z("免費下載", "free")} ↓</span></span><b>{short(c)}</b></a>'
             for c in codes if c in free)
         fl.append(f'<div class="fp-stage fp-{key}"><h3 id="{strip(info[key][0])}免費">{info[key][0]}</h3><div class="fp-row">{links}</div></div>')
     out.append(f"""<section class="section bg-soft" id="free">
   <div class="wrap" style="max-width:1080px">
-    {h2(Z("免費", "free"), "第-1-頁免費下載", Z("每一冊的第 1 頁，<em>免費下載</em>", "page 1 of every book, free"), "green")}
-    <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("第 1 頁是整學期的重點，一頁看完。不用留資料。", "Page 1 is the whole semester on one page. No sign-up.")}</p>
+    {h2(Z("免費", "free"), "每個年級一頁免費試讀", Z("每個年級一頁，<em>免費試讀</em>", "one free sample page for every grade"), "green")}
+    <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("每個年級第一個重點的完整一頁：規則、圖解、例句和練習，先看看版面和難度合不合用。不用留資料。", "The first grammar point of each grade, in full: rules, pictures, examples and practice, so you can see the layout and level first. No sign-up.")}</p>
     <div class="reveal">{"".join(fl)}</div>
   </div>
 </section>
@@ -931,7 +943,7 @@ def grammar_page():
            Z("國小英語課綱要求避免講解、分析文法，所以國小這 4 冊用「句型」：孩子先會說、會寫整句，國中再學規則。", "The elementary curriculum asks teachers to avoid explaining and analysing grammar, so these 4 books teach sentence patterns: children say and write whole sentences first and learn the rules in junior high.")),
           (Z(PAY_QA[0], PAY_QA[1]), Z(PAY_QA[2], PAY_QA[3])),
           (Z("可以只買一冊嗎？", "Can I buy a single book?"),
-           Z("目前以學程為單位賣（國小 4 冊、國中 6 冊、高中 6 冊），一套 NT$590；每一冊的第 1 頁可以先免費下載看看。", "For now they are sold by stage (4 elementary, 6 junior-high, 6 senior-high), NT$590 a set; page 1 of every book is free to try first.")),
+           Z("目前以學程為單位賣（國小 4 冊、國中 6 冊、高中 6 冊），一套 NT$590；每個年級都有一頁免費試讀，可以先下載看看。", "For now they are sold by stage (4 elementary, 6 junior-high, 6 senior-high), NT$590 a set; every grade has a free sample page to try first.")),
           (Z("速查表和文法書差在哪？", "How is the cheat sheet different from the book?"),
            Z("速查表 14–15 頁：每個重點一頁加一頁解答，適合考前複習。文法書 36–38 頁：同樣的重點頁，再加上每單元的綜合練習、寫作應用、測驗（國中是三次段考模擬測驗）和完整解答。", "The cheat sheet is 14–15 pages: one page per point and an answer page, for review before an exam. The book is 36–38 pages: the same point pages plus each unit's practice and writing pages, tests (in junior high, three school-exam practice tests) and a full answer key.")),
           (Z("可以印給班上或補習班用嗎？", "Can I print it for a class or cram school?"),
@@ -946,9 +958,9 @@ def grammar_page():
   <div class="wrap">
     <div class="cta-box reveal">
       <span class="eyebrow eyebrow-green">{Z("免費", "free")}</span>
-      <h2 id="先下載第-1-頁" style="margin-top:14px">{Z("先下載第 1 頁，<em>看看合不合用</em>", "download page 1 first and see if it suits")}</h2>
-      <p class="body" style="max-width:560px;margin:16px auto 0">{Z("找到孩子這學期的那一冊，第 1 頁免費。也可以先看免費的<a href='/junior-high-english-grammar/'>國中英文文法總整理</a>。", "Find this semester's book; its page 1 is free. Or start with the free junior-high grammar summary.")}</p>
-      <div class="cta-row"><a class="btn btn-primary" href="#free">{Z("免費下載第 1 頁", "free page 1")}</a><a class="btn btn-outline" href="{LINE}" target="_blank" rel="noopener">{Z("LINE 問我們", "ask us on LINE")}</a></div>
+      <h2 id="先下載試讀頁" style="margin-top:14px">{Z("先下載試讀頁，<em>看看合不合用</em>", "download a sample page first and see if it suits")}</h2>
+      <p class="body" style="max-width:560px;margin:16px auto 0">{Z("找到孩子的年級，下載那一頁免費試讀。也可以先看免費的<a href='/junior-high-english-grammar/'>國中英文文法總整理</a>。", "Find your child's grade and download its free sample page. Or start with the free junior-high grammar summary.")}</p>
+      <div class="cta-row"><a class="btn btn-primary" href="#free">{Z("免費試讀頁", "free sample page")}</a><a class="btn btn-outline" href="{LINE}" target="_blank" rel="noopener">{Z("LINE 問我們", "ask us on LINE")}</a></div>
     </div>
   </div>
 </section>

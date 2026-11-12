@@ -45,6 +45,8 @@ RewriteRule ^americanenglish\.com\.tw/?(.*)$ /$1 [R=301,L]
 # (Sept 2026). Anyone who pasted that embed code gets the picture instead of a 404.
 # (two charts were also renamed: both old names are the 1-100 numbers chart)
 RewriteRule ^assets/img/charts/(english-numbers-guide-chart|numbers-1-100-chart)\.(png|webp)$ /assets/img/charts/english-numbers-chart.webp [R=301,L]
+# 2026-11-12: the free page-1 grammar samples (16 files) were replaced by one sample page per grade
+RewriteRule ^assets/downloads/ae-grammar-[a-z0-9-]+-page1-free\.pdf$ /english-grammar-books/ [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^assets/img/charts/([^/]+)\.png$ /assets/img/charts/$1.webp [R=301,L]
 </IfModule>

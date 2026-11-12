@@ -195,6 +195,10 @@
 "date": "2026-11-08",
 "hash": "a2e36579f4a10449b4aa6f3447c5e1f4"
 },
+"assets/downloads/ae-grammar-g10-1-sample.pdf": {
+"date": "2026-11-12",
+"hash": "f93804cb772f8e8c2422335fd6adbcea"
+},
 "assets/downloads/ae-grammar-g10-2-page1-free.pdf": {
 "date": "2026-11-08",
 "hash": "6f3b6c8e05e8db402d502f36b4b7cf3b"
@@ -202,6 +206,10 @@
 "assets/downloads/ae-grammar-g11-1-page1-free.pdf": {
 "date": "2026-11-08",
 "hash": "286a8644b39c43b6d9cfa0d1a2b7bd7a"
+},
+"assets/downloads/ae-grammar-g11-1-sample.pdf": {
+"date": "2026-11-12",
+"hash": "b2f1bc3d17f065b74e0443fb461ceb2c"
 },
 "assets/downloads/ae-grammar-g11-2-page1-free.pdf": {
 "date": "2026-11-08",
@@ -211,6 +219,10 @@
 "date": "2026-11-08",
 "hash": "fa71b05a140e0054d322e1e6968b5695"
 },
+"assets/downloads/ae-grammar-g12-1-sample.pdf": {
+"date": "2026-11-12",
+"hash": "274cd43bd01814d2c9cd01097a207d0a"
+},
 "assets/downloads/ae-grammar-g12-r-page1-free.pdf": {
 "date": "2026-11-08",
 "hash": "ca1fbace80e4e97d2b36b202d4daaa7a"
@@ -219,21 +231,41 @@
 "date": "2026-11-08",
 "hash": "f354c3d520f0edd8a4436ee9963cc499"
 },
+"assets/downloads/ae-grammar-g3-sample.pdf": {
+"date": "2026-11-12",
+"hash": "c7184775e598b92126cad0d6d8157481"
+},
 "assets/downloads/ae-grammar-g4-page1-free.pdf": {
 "date": "2026-11-08",
 "hash": "4fbf07a56f0c4e5b91c9d5630fae91d0"
+},
+"assets/downloads/ae-grammar-g4-sample.pdf": {
+"date": "2026-11-12",
+"hash": "e09257b95aaed4c42231a236bb9f3300"
 },
 "assets/downloads/ae-grammar-g5-page1-free.pdf": {
 "date": "2026-11-08",
 "hash": "07440b26f4d41c7d1fd6590349afd6b7"
 },
+"assets/downloads/ae-grammar-g5-sample.pdf": {
+"date": "2026-11-12",
+"hash": "05ae968c5c48cbab236c38bc54b0a207"
+},
 "assets/downloads/ae-grammar-g6-page1-free.pdf": {
 "date": "2026-11-08",
 "hash": "0547089f5a2fd548e87bdf475bb5d16f"
 },
+"assets/downloads/ae-grammar-g6-sample.pdf": {
+"date": "2026-11-12",
+"hash": "bb00e9c57669623e537ce89044bc3b0f"
+},
 "assets/downloads/ae-grammar-g7-1-page1-free.pdf": {
 "date": "2026-11-08",
 "hash": "eea19670cdf596e762f07db9c740185d"
+},
+"assets/downloads/ae-grammar-g7-1-sample.pdf": {
+"date": "2026-11-12",
+"hash": "2da761b66374af20c67f1daaeeb004fa"
 },
 "assets/downloads/ae-grammar-g7-2-page1-free.pdf": {
 "date": "2026-11-08",
@@ -243,6 +275,10 @@
 "date": "2026-11-08",
 "hash": "ede87930e8d6f080267dfdbaf7c66937"
 },
+"assets/downloads/ae-grammar-g8-1-sample.pdf": {
+"date": "2026-11-12",
+"hash": "56d3599d10970d3f9801e26b903f1009"
+},
 "assets/downloads/ae-grammar-g8-2-page1-free.pdf": {
 "date": "2026-11-08",
 "hash": "863d631be880177e152c948e81c49a48"
@@ -250,6 +286,10 @@
 "assets/downloads/ae-grammar-g9-1-page1-free.pdf": {
 "date": "2026-11-08",
 "hash": "bbc52f1a7a642f61f06d09041462a214"
+},
+"assets/downloads/ae-grammar-g9-1-sample.pdf": {
+"date": "2026-11-12",
+"hash": "9bfe2446a5d3d233cc4aae91f52d5b4f"
 },
 "assets/downloads/ae-grammar-g9-2-page1-free.pdf": {
 "date": "2026-11-08",
@@ -936,8 +976,8 @@
 "hash": "9efbc0a6b3269eefac035e48c44ebdbd"
 },
 "english-grammar-books": {
-"date": "2026-11-11",
-"hash": "4d48278cbeaf0a51e3f9777638dc1da2"
+"date": "2026-11-12",
+"hash": "f0e0eea1e84f9b532015056817f0097c"
 },
 "english-letter-writing-guide": {
 "date": "2026-10-19",

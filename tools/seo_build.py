@@ -1397,7 +1397,7 @@ BOOKS_PAGES = {
         "孩子從第一本的 Look at Bobo! 一路讀到整段故事。每一本都可以邊聽邊讀，第 1 級 3 本免費線上讀。"),
     "moe-2000-words-guide": ("h2:2000-字和考試的真實關係", "grammar", "單字有了，句子要用對文法",
         "國一上到國三下每學期一本文法書：每個重點一頁規則與圖解，每單元一頁練習、一頁寫作應用，附測驗與解答。"
-        "每一冊的第 1 頁（整學期重點一頁看完）免費下載。"),
+        "每個年級都有一頁免費試讀。"),
     "graded-readers-guide": ("h2:在台灣去哪裡取得分級讀物", "readers", "也可以從我們自己寫的這套開始",
         "Chris and Cora：12 級 36 本，場景是台灣的城市，字彙依教育部 1,200 字排序。每本 48 頁，左頁文字、右頁整頁插圖；"
         "PDF 加翻頁電子書，第 1 級 3 本免費線上讀。"),
@@ -1408,7 +1408,7 @@ BOOKS_PAGES = {
         "一個字在書裡重複好幾次。第 1 級 3 本免費線上讀。"),
     "junior-high-english-grammar": ("pdf", "grammar", "總整理看完，想一個重點一個重點練？",
         "這份總整理的完整版：國一上到國三下每學期一本文法書，每個重點一頁規則、圖解和例句，每單元有練習和寫作應用，"
-        "附複習測驗、期中期末測驗與解答。每一冊的第 1 頁免費下載。"),
+        "附複習測驗、期中期末測驗與解答。每個年級都有一頁免費試讀。"),
     # 11-10 traffic review: the two busiest letter/phonics pages (1,550 and 855 clicks in 30 days) had no book link
     "english-alphabet-worksheet": ("h2:字母寫得穩了接下來讀什麼", "readers", "字母會寫了，讀第一本英文書",
         "Chris and Cora 分級讀本第 1 級從 a、and、is、look、see 這些高頻字開始，每一頁一句、配一整頁插圖，"
@@ -1423,7 +1423,7 @@ BOOKS_KIND = {
                     covers=[("/assets/img/readers/covers/1a.webp", "This Is Bobo! 封面"),
                             ("/assets/img/readers/covers/6a.webp", "A Night at the Night Market 封面"),
                             ("/assets/img/readers/covers/11a.webp", "The Mountain Night 封面")], ch=454),
-    "grammar": dict(href="/english-grammar-books/", free="/english-grammar-books/#free", free_t="免費下載第 1 頁",
+    "grammar": dict(href="/english-grammar-books/", free="/english-grammar-books/#free", free_t="免費試讀頁",
                     all_t="看文法書", tag="埃森美語原創文法書", label="英文文法書",
                     covers=[("/assets/img/grammar-books/covers/G7-1.webp", "國一上英文文法書封面"),
                             ("/assets/img/grammar-books/covers/G8-1.webp", "國二上英文文法書封面"),
