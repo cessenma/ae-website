@@ -43,8 +43,8 @@ if not os.path.exists(STORE_PATH):
 STORE = json.load(open(STORE_PATH, encoding="utf-8"))
 
 # prices: Chris 2026-11-05 (memory ae-readers-flashcards-plan); file sizes: ~/Downloads/AE-lemon-upload
-P_LEVEL, P_SET, P_ALL = 390, 1390, 2690
-P_GBOOKS, P_GSHEETS = 590, 190
+P_LEVEL, P_SET, P_ALL = 290, 990, 1990      # lowered 11-14 (Chris: "lower the cost … no traffic yet")
+P_GBOOKS, P_GSHEETS = 490, 149
 MB_LEVEL = "40–183 MB"
 MB_SET = {"1-4": 217, "5-8": 438, "9-12": 667, "all": 1322}   # 11-10 zips with read-aloud audio
 MB_GRAMMAR = {"elementary": (30, 12), "junior": (38, 11), "senior": (36, 13)}   # junior rebuilt 11-10 (段考 tests)
@@ -943,7 +943,7 @@ def grammar_page():
            Z("國小英語課綱要求避免講解、分析文法，所以國小這 4 冊用「句型」：孩子先會說、會寫整句，國中再學規則。", "The elementary curriculum asks teachers to avoid explaining and analysing grammar, so these 4 books teach sentence patterns: children say and write whole sentences first and learn the rules in junior high.")),
           (Z(PAY_QA[0], PAY_QA[1]), Z(PAY_QA[2], PAY_QA[3])),
           (Z("可以只買一冊嗎？", "Can I buy a single book?"),
-           Z("目前以學程為單位賣（國小 4 冊、國中 6 冊、高中 6 冊），一套 NT$590；每個年級都有一頁免費試讀，可以先下載看看。", "For now they are sold by stage (4 elementary, 6 junior-high, 6 senior-high), NT$590 a set; every grade has a free sample page to try first.")),
+           Z(f"目前以學程為單位賣（國小 4 冊、國中 6 冊、高中 6 冊），一套 NT${P_GBOOKS}；每個年級都有一頁免費試讀，可以先下載看看。", f"For now they are sold by stage (4 elementary, 6 junior-high, 6 senior-high), NT${P_GBOOKS} a set; every grade has a free sample page to try first.")),
           (Z("速查表和文法書差在哪？", "How is the cheat sheet different from the book?"),
            Z("速查表 14–15 頁：每個重點一頁加一頁解答，適合考前複習。文法書 36–38 頁：同樣的重點頁，再加上每單元的綜合練習、寫作應用、測驗（國中是三次段考模擬測驗）和完整解答。", "The cheat sheet is 14–15 pages: one page per point and an answer page, for review before an exam. The book is 36–38 pages: the same point pages plus each unit's practice and writing pages, tests (in junior high, three school-exam practice tests) and a full answer key.")),
           (Z("可以印給班上或補習班用嗎？", "Can I print it for a class or cram school?"),
