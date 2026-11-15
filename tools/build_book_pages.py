@@ -45,7 +45,7 @@ STORE = json.load(open(STORE_PATH, encoding="utf-8"))
 # prices: Chris 2026-11-05 (memory ae-readers-flashcards-plan); file sizes: ~/Downloads/AE-lemon-upload
 P_LEVEL, P_SET, P_ALL = 290, 990, 1990      # lowered 11-14 (Chris: "lower the cost … no traffic yet")
 P_GBOOKS, P_GSHEETS = 590, 140      # 11-15 Chris: books stay 590, sheets 140
-P_GALL, P_GSALL = 1190, 290        # 11-15: all 16 books (like the GEPT 全部四級 bundle) / all 16 sheets
+P_GALL, P_GSALL = 1190, 390        # 11-15: all 16 books (like the GEPT 全部四級 bundle) / all 16 sheets
 MB_LEVEL = "40–183 MB"
 MB_SET = {"1-4": 217, "5-8": 438, "9-12": 667, "all": 1322}   # 11-10 zips with read-aloud audio
 MB_GRAMMAR = {"elementary": (30, 12), "junior": (38, 11), "senior": (36, 13)}   # junior rebuilt 11-10 (段考 tests)
