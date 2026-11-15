@@ -18,7 +18,7 @@ Data
 
 Facts on the pages come from those files; nothing here is typed from memory.
 """
-import html, json, os, re, shutil
+import html, json, os, re, shutil, urllib.parse
 
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ORIGIN = "https://americanenglish.com.tw"
@@ -43,8 +43,9 @@ if not os.path.exists(STORE_PATH):
 STORE = json.load(open(STORE_PATH, encoding="utf-8"))
 
 # prices: Chris 2026-11-05 (memory ae-readers-flashcards-plan); file sizes: ~/Downloads/AE-lemon-upload
-P_LEVEL, P_SET, P_ALL = 390, 1390, 2690
-P_GBOOKS, P_GSHEETS = 590, 190
+P_LEVEL, P_SET, P_ALL = 290, 990, 1990      # lowered 11-14 (Chris: "lower the cost … no traffic yet")
+P_GBOOKS, P_GSHEETS = 590, 140      # 11-15 Chris: books stay 590, sheets 140
+P_GALL, P_GSALL = 1190, 290        # 11-15: all 16 books (like the GEPT 全部四級 bundle) / all 16 sheets
 MB_LEVEL = "40–183 MB"
 MB_SET = {"1-4": 217, "5-8": 438, "9-12": 667, "all": 1322}   # 11-10 zips with read-aloud audio
 MB_GRAMMAR = {"elementary": (30, 12), "junior": (38, 11), "senior": (36, 13)}   # junior rebuilt 11-10 (段考 tests)
@@ -266,6 +267,8 @@ CSS = """
 .bp-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin:18px auto 0;max-width:900px}
 .bp-trust span{display:inline-flex;align-items:center;gap:5px;background:#fff;border-radius:100px;padding:6px 12px;font-size:12.5px;font-weight:700;color:var(--navy);box-shadow:0 3px 10px rgba(26,39,82,.10)}
 .bp-trust span::before{content:'✓';color:#12873d;font-weight:900}
+.bp-sheets{max-width:1000px;margin:10px auto 0;text-align:center;font-size:14px;color:#64748b;line-height:1.8}
+.bp-sheets a{color:var(--navy);font-weight:700;white-space:nowrap}
 .bp-fine{max-width:760px;margin:16px auto 0;font-size:13px;line-height:1.8;color:#64748b;text-align:center}
 .bp-safe{max-width:1040px;margin:22px auto 0;background:#fff;border:1.5px solid rgba(26,39,82,.12);border-radius:20px;padding:20px 22px;box-shadow:0 6px 22px rgba(26,39,82,.07)}
 .bp-line{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 18px;background:#F1FBF4;border:1.5px solid rgba(6,199,85,.28);border-radius:14px;padding:14px 16px}
@@ -804,7 +807,7 @@ def grammar_page():
     ld = [{"@context": "https://schema.org", "@type": "Product", "@id": f"{ORIGIN}/english-grammar-books/#product", "url": f"{ORIGIN}/english-grammar-books/", "name": "英文文法書・文法速查表（國小・國中・高中）",
            "description": strip(desc), "brand": {"@type": "Brand", "name": "埃森美語 American English"},
            "image": [f"{ORIGIN}/assets/img/grammar-books/covers/{c}.webp" for c in ("G3", "G8-1", "G10-1")],
-           **({"offers": {"@type": "AggregateOffer", "priceCurrency": "TWD", "lowPrice": P_GSHEETS, "highPrice": P_GBOOKS,
+           **({"offers": {"@type": "AggregateOffer", "priceCurrency": "TWD", "lowPrice": P_GSHEETS, "highPrice": P_GALL,
                           "offerCount": 6, "availability": "https://schema.org/InStock"}} if any_link else {})}]
     out = [head(GRAMMAR, title, desc, og_t, desc, "/assets/img/grammar-books/og-grammar-books.jpg", 1600, 1200,
                 Z("英文文法書與文法速查表封面", "covers of the grammar books and cheat sheets"), ld, LEMON if any_link else "")]
@@ -912,23 +915,39 @@ def grammar_page():
   </div>
 </section>
 """)
-    # prices
-    tiers = []
-    for key, codes in STAGES:
-        nb = len(codes)
-        bmb, smb = MB_GRAMMAR[key]
-        tiers.append(f"""<div class="bp-tier{" hl" if key == "junior" else ""}"><span class="bp-tn">{info[key][0]}</span><span class="bp-tp">NT${P_GBOOKS}</span>
-<span class="bp-tu">{Z(f"{nb} 冊文法書＋{nb} 份速查表・約 NT${round(P_GBOOKS/nb)}／冊", f"{nb} books + {nb} cheat sheets · about NT${round(P_GBOOKS/nb)} a book")}</span>
-<span class="bp-td">{info[key][1]}{Z(f"。PDF，約 {bmb} MB。", f". PDF, about {bmb} MB.")}</span>
-<div class="bp-pick two">{buy(STORE["grammar"].get(f"{key}-books", ""), Z(f"買文法書・NT${P_GBOOKS}", f"buy the books · NT${P_GBOOKS}"), "grammar", f"{key}-books", P_GBOOKS)}
-{buy(STORE["grammar"].get(f"{key}-sheets", ""), Z(f"只要速查表 {nb} 份・NT${P_GSHEETS}", f"cheat sheets only · NT${P_GSHEETS}"), "grammar", f"{key}-sheets", P_GSHEETS, "btn btn-outline")}</div></div>""")
+    # prices (11-15, Chris: "look like" the GEPT strip, "an option to buy them all … 1190", "super simple"):
+    # one box, one radio per stage + the full set, LINE / card buttons; sheets-only is one small line under it
+    def line_msg(label, price):
+        return "https://line.me/R/oaMessage/%40americanenglish/?" + urllib.parse.quote(f"我想購買英文文法書：{label}（NT${price}）。")
+    def ls(key):
+        u = STORE["grammar"].get(key, "")
+        return u + ("&" if "?" in u else "?") + "checkout[billing_address][country]=TW" if u else ""
+    names = {"elementary": Z("國小 句型書 4 冊（三～六年級）", "elementary: 4 pattern books (grades 3–6)"),
+             "junior": Z("國中 文法書 6 冊（國一上～國三下）", "junior high: 6 grammar books (G7–G9)"),
+             "senior": Z("高中 文法書 6 冊（高一上～高三上＋學測總複習）", "senior high: 6 grammar books (G10–G12 + exam review)")}
+    opts = [(f"{k}-books", names[k], P_GBOOKS) for k, _ in STAGES] + [("all-books", Z("全套 16 冊（國小＋國中＋高中）", "all 16 books (elementary + junior + senior)"), P_GALL)]
+    pick = "junior-books"
+    chips = "".join(f'<label class="pkm-tier"><input type="radio" name="gbt"{" checked" if k == pick else ""} data-item="{k}" data-price="{pr}" '
+                    f'data-line="{esc(line_msg(strip(lab), n(pr)))}" data-ls="{esc(ls(k))}"><span>{lab}</span><b>NT${n(pr)}</b></label>' for k, lab, pr in opts)
+    cur = next(o for o in opts if o[0] == pick)
+    sheets = "・".join(f'<a href="{esc(ls(f"{k}-sheets"))}" data-book="grammar" data-book-item="{k}-sheets" data-book-price="{P_GSHEETS}">{Z({"elementary": "國小", "junior": "國中", "senior": "高中"}[k], k)} NT${P_GSHEETS}</a>' for k, _ in STAGES)
+    box = f"""<aside class="pkm reveal" id="buy-box" style="margin-top:22px">
+  <p class="pkm-t">{Z("選孩子的學程。<b>每一冊文法書都附同冊的速查表</b>，付款後立刻下載 PDF：", "Pick your child's stage. <b>Every grammar book comes with its cheat sheet</b>; the PDFs download right after payment:")}</p>
+  <div class="pkm-tiers" role="radiogroup" aria-label="{Z("選方案", "choose")}" style="flex-basis:460px">{chips}</div>
+  <p class="pkm-a"><a href="{esc(line_msg(strip(cur[1]), n(cur[2])))}" target="_blank" rel="noopener" class="pkm-line" data-book="grammar" data-book-item="line-{pick}" data-book-price="{cur[2]}">{Z("LINE 購買", "buy on LINE")}</a><a href="{esc(ls(pick))}" class="pkm-card" data-book="grammar" data-book-item="{pick}" data-book-price="{cur[2]}">{Z("線上刷卡", "pay by card")}</a></p>
+</aside>
+<p class="bp-sheets">{Z("只要速查表、不要文法書？", "Cheat sheets only, no books?")}{sheets}{Z("・", " · ")}<a href="{esc(ls("all-sheets"))}" data-book="grammar" data-book-item="all-sheets" data-book-price="{P_GSALL}">{Z("全套 16 份", "all 16")} NT${P_GSALL}</a></p>
+<script>(()=>{{const b=document.getElementById("buy-box");if(!b)return;const l=b.querySelector(".pkm-line"),c=b.querySelector(".pkm-card");
+b.querySelectorAll(".pkm-tier input").forEach(r=>r.addEventListener("change",function(){{const d=this.dataset;l.href=d.line;c.href=d.ls;
+l.dataset.bookItem="line-"+d.item;c.dataset.bookItem=d.item;l.dataset.bookPrice=c.dataset.bookPrice=d.price;
+if(typeof window.gtag==="function")gtag("event","book_pick",{{product:"grammar",item:d.item,page_path:location.pathname}})}}))}})()</script>"""
     trust = "".join(f"<span>{Z(a, b)}</span>" for a, b in [("安全刷卡", "secure card payment"), ("付款後立刻寄下載連結到 email", "download link emailed right after payment"),
                                                             ("不用註冊帳號", "no account needed"), ("價格已含稅", "prices include tax")])
     out.append(f"""<section class="section" id="buy">
   <div class="wrap">
     {h2(Z("價格", "prices"), "一個學程一次買齊", Z("一個學程，<em>一次買齊</em>", "a whole stage in one purchase"), "yellow")}
     {soon(any_link)}<div class="bp-trust reveal">{trust}</div>
-    <div class="bp-tiers reveal">{"".join(tiers)}</div>
+    {box}
     {pay_safe("grammar", P_GBOOKS)}
     <p class="bp-fine">{Z("家庭自用，可以自己印。學校或補習班要全班用，請先 <a href='" + LINE + "' target='_blank' rel='noopener'>LINE 問我們</a>。", "For family use; print it yourself. For a whole class, ask us on LINE first.")}<br>
     {Z("這是數位內容，付款後立刻提供下載；依《通訊交易解除權合理例外情事適用準則》第 2 條第 5 款，按下購買即表示你同意不適用七天解除權。請先下載免費的第 1 頁再決定。",
@@ -943,7 +962,7 @@ def grammar_page():
            Z("國小英語課綱要求避免講解、分析文法，所以國小這 4 冊用「句型」：孩子先會說、會寫整句，國中再學規則。", "The elementary curriculum asks teachers to avoid explaining and analysing grammar, so these 4 books teach sentence patterns: children say and write whole sentences first and learn the rules in junior high.")),
           (Z(PAY_QA[0], PAY_QA[1]), Z(PAY_QA[2], PAY_QA[3])),
           (Z("可以只買一冊嗎？", "Can I buy a single book?"),
-           Z("目前以學程為單位賣（國小 4 冊、國中 6 冊、高中 6 冊），一套 NT$590；每個年級都有一頁免費試讀，可以先下載看看。", "For now they are sold by stage (4 elementary, 6 junior-high, 6 senior-high), NT$590 a set; every grade has a free sample page to try first.")),
+           Z(f"目前以學程為單位賣（國小 4 冊、國中 6 冊、高中 6 冊），一套 NT${P_GBOOKS}，國小到高中全套 16 冊 NT${n(P_GALL)}；每個年級都有一頁免費試讀，可以先下載看看。", f"For now they are sold by stage (4 elementary, 6 junior-high, 6 senior-high), NT${P_GBOOKS} a set, or all 16 books for NT${n(P_GALL)}; every grade has a free sample page to try first.")),
           (Z("速查表和文法書差在哪？", "How is the cheat sheet different from the book?"),
            Z("速查表 14–15 頁：每個重點一頁加一頁解答，適合考前複習。文法書 36–38 頁：同樣的重點頁，再加上每單元的綜合練習、寫作應用、測驗（國中是三次段考模擬測驗）和完整解答。", "The cheat sheet is 14–15 pages: one page per point and an answer page, for review before an exam. The book is 36–38 pages: the same point pages plus each unit's practice and writing pages, tests (in junior high, three school-exam practice tests) and a full answer key.")),
           (Z("可以印給班上或補習班用嗎？", "Can I print it for a class or cram school?"),
