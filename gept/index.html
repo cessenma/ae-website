@@ -77,8 +77,9 @@
 }
 @media(min-width:768px) and (max-width:1023px){.hero-vid video{width:210px}}
 @media(max-width:767px){
-  .page-hero .wrap > figure.post-hero.hero-vid{width:fit-content;margin:16px auto 0;padding:10px;border-radius:24px}   /* the card hugs the video, centred */
-  .hero-vid video{width:min(200px,52vw);border-radius:14px}
+  .page-hero .wrap > figure.post-hero.hero-vid{width:100%;margin:16px auto 0;padding:10px;border-radius:24px}
+  /* the video fills the frame: 4:5 shows the whole animation (it only uses the middle of the 9:16 clip) */
+  .hero-vid video{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 46%;border-radius:14px}
 }
 </style>
 <figure class="post-hero pf-blue hero-vid" style="--frame:#a9e5c2">
