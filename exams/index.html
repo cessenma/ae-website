@@ -73,8 +73,8 @@
 }
 @media(min-width:768px) and (max-width:1023px){.hero-vid video{width:210px}}
 @media(max-width:767px){
-  .page-hero .wrap > figure.post-hero.hero-vid{margin:16px auto 0;padding:10px;border-radius:24px}
-  .hero-vid video{width:150px;border-radius:14px}
+  .page-hero .wrap > figure.post-hero.hero-vid{width:fit-content;margin:16px auto 0;padding:10px;border-radius:24px}   /* the card hugs the video, centred */
+  .hero-vid video{width:min(200px,52vw);border-radius:14px}
 }
 </style>
 <figure class="post-hero pf-blue hero-vid">
