@@ -1,0 +1,112 @@
+{
+ "_note": "written by tools/build_next_level.py; read by seo_build.next_level",
+ "book": "This Is Bobo!",
+ "cards": [
+  {
+   "text": [
+    "This is Bobo."
+   ],
+   "kk": [
+    "ðɪs ɪz ˈbobo"
+   ],
+   "img": "/assets/img/readers/try/1a-11.webp",
+   "audio": "/chris-and-cora-readers/read/1a/audio/p10.mp3"
+  },
+  {
+   "text": [
+    "Look at Bobo!"
+   ],
+   "kk": [
+    "lʊk æt ˈbobo"
+   ],
+   "img": "/assets/img/readers/try/1a-13.webp",
+   "audio": "/chris-and-cora-readers/read/1a/audio/p12.mp3"
+  },
+  {
+   "text": [
+    "Bobo is a dog.",
+    "Look at Bobo!"
+   ],
+   "kk": [
+    "ˈbobo ɪz ə dɔg",
+    "lʊk æt ˈbobo"
+   ],
+   "img": "/assets/img/readers/try/1a-15.webp",
+   "audio": "/chris-and-cora-readers/read/1a/audio/p14.mp3"
+  },
+  {
+   "text": [
+    "Bobo is in a box.",
+    "Look at Bobo in the box!"
+   ],
+   "kk": [
+    "ˈbobo ɪz ɪn ə bɑks",
+    "lʊk æt ˈbobo ɪn ðə bɑks"
+   ],
+   "img": "/assets/img/readers/try/1a-23.webp",
+   "audio": "/chris-and-cora-readers/read/1a/audio/p22.mp3"
+  }
+ ],
+ "grades": [
+  {
+   "code": "G3",
+   "zh": "三年級",
+   "img": "/assets/img/grammar-books/free/G3-sample.webp",
+   "pdf": "/assets/downloads/ae-grammar-g3-sample.pdf"
+  },
+  {
+   "code": "G4",
+   "zh": "四年級",
+   "img": "/assets/img/grammar-books/free/G4-sample.webp",
+   "pdf": "/assets/downloads/ae-grammar-g4-sample.pdf"
+  },
+  {
+   "code": "G5",
+   "zh": "五年級",
+   "img": "/assets/img/grammar-books/free/G5-sample.webp",
+   "pdf": "/assets/downloads/ae-grammar-g5-sample.pdf"
+  },
+  {
+   "code": "G6",
+   "zh": "六年級",
+   "img": "/assets/img/grammar-books/free/G6-sample.webp",
+   "pdf": "/assets/downloads/ae-grammar-g6-sample.pdf"
+  },
+  {
+   "code": "G7-1",
+   "zh": "國一",
+   "img": "/assets/img/grammar-books/free/G7-1-sample.webp",
+   "pdf": "/assets/downloads/ae-grammar-g7-1-sample.pdf"
+  },
+  {
+   "code": "G8-1",
+   "zh": "國二",
+   "img": "/assets/img/grammar-books/free/G8-1-sample.webp",
+   "pdf": "/assets/downloads/ae-grammar-g8-1-sample.pdf"
+  },
+  {
+   "code": "G9-1",
+   "zh": "國三",
+   "img": "/assets/img/grammar-books/free/G9-1-sample.webp",
+   "pdf": "/assets/downloads/ae-grammar-g9-1-sample.pdf"
+  },
+  {
+   "code": "G10-1",
+   "zh": "高一",
+   "img": "/assets/img/grammar-books/free/G10-1-sample.webp",
+   "pdf": "/assets/downloads/ae-grammar-g10-1-sample.pdf"
+  },
+  {
+   "code": "G11-1",
+   "zh": "高二",
+   "img": "/assets/img/grammar-books/free/G11-1-sample.webp",
+   "pdf": "/assets/downloads/ae-grammar-g11-1-sample.pdf"
+  },
+  {
+   "code": "G12-1",
+   "zh": "高三",
+   "img": "/assets/img/grammar-books/free/G12-1-sample.webp",
+   "pdf": "/assets/downloads/ae-grammar-g12-1-sample.pdf"
+  }
+ ]
+}

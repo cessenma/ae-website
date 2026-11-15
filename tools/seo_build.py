@@ -1409,13 +1409,8 @@ BOOKS_PAGES = {
     "junior-high-english-grammar": ("pdf", "grammar", "總整理看完，想一個重點一個重點練？",
         "這份總整理的完整版：國一上到國三下每學期一本文法書，每個重點一頁規則、圖解和例句，每單元有練習和寫作應用，"
         "附複習測驗、期中期末測驗與解答。每個年級都有一頁免費試讀。"),
-    # 11-10 traffic review: the two busiest letter/phonics pages (1,550 and 855 clicks in 30 days) had no book link
-    "english-alphabet-worksheet": ("h2:字母寫得穩了接下來讀什麼", "readers", "字母會寫了，讀第一本英文書",
-        "Chris and Cora 分級讀本第 1 級從 a、and、is、look、see 這些高頻字開始，每一頁一句、配一整頁插圖，"
-        "一個字在書裡重複好幾次。第 1 級 3 本免費線上讀，可以邊聽邊讀。"),
-    "phonics-rules-chart": ("h2:自然發音學完拼得出來嗎", "readers", "拼得出單字之後，讀整句",
-        "Chris and Cora 分級讀本第 1 級的 3 本只用 26 個教育部單字，每一頁一句、配一整頁插圖，"
-        "孩子把剛學會的拼讀用在真的故事裡。第 1 級 3 本免費線上讀，可以邊聽邊讀。"),
+    # english-alphabet-worksheet and phonics-rules-chart had this card 11-10 → 11-15 (2 taps from 253 visitors, 0 from 212):
+    # they now get the read-a-real-page challenge instead (NEXTLEVEL_PAGES)
 }
 BOOKS_KIND = {
     "readers": dict(href="/chris-and-cora-readers/", free="/chris-and-cora-readers/#read-book", free_t="免費讀第 1 級 3 本",
@@ -1477,6 +1472,105 @@ def books_card(html, rel):
              f'<span class="bk-btns"><a class="btn btn-primary" href="{K["free"]}" data-book="{kind}" data-book-item="free">{K["free_t"]}</a>'
              f'<a class="btn btn-outline" href="{K["href"]}" data-book="{kind}" data-book-item="page">{K["all_t"]}</a></span></div>'
              f'</aside>{BOOKS_END}\n')
+    return html[:at] + block + html[at:]
+
+
+NL_START, NL_END = "<!-- AE:NEXTLEVEL -->", "<!-- /AE:NEXTLEVEL -->"
+NL_SRC = os.path.join(SITE, "data", "next_level.json")
+# The books as the next level after the sound pages (Chris 2026-11-15: "put the grammar and readers on the kk phonics
+# pages … as a next level … something creative"). A plain card did not work there (BOOKS_PAGES note), so the reader
+# gets four real pages of the free book to read aloud — printed in KK on the KK pages ("kk"), in English on the
+# phonics pages ("read") — then the picture, the sentence and the recording; under it the three levels, with a grade
+# picker that shows that grade's real grammar sample page. Grammar pages get the picker alone ("grammar").
+# slug: (h2 id whose section it ends, mode, headline or None). Data: tools/build_next_level.py → data/next_level.json.
+NEXTLEVEL_PAGES = {
+    "kk-phonetic-chart": ("子音-24-個附有聲無聲配對", "kk", None),
+    "english-pronunciation": ("三子音-24-個有聲與無聲的配對", "kk", None),
+    "english-vowels-consonants": ("子音有哪些21-個字母成對記最快", "kk", None),
+    "kk-phonetics-vs-phonics": ("KK音標自學", "kk", None),
+    "phonics-rules-chart": ("自然發音學完拼得出來嗎", "read", None),
+    "english-alphabet-worksheet": ("字母寫得穩了接下來讀什麼", "read", None),
+    "irregular-verbs-list": ("動詞三態放進句子裡試試", "grammar", "三態背熟了，放進句子裡會用嗎？"),
+    "english-tenses-chart": ("時態是用會的不是背會的", "grammar", "時態看懂了，下一步是一個一個練熟"),
+    "be-verbs-guide": ("be動詞過關了下一關是時態", "grammar", "be 動詞過關了，下一個重點呢？"),
+    "in-on-at-prepositions": ("規則懂了句子寫得出來嗎", "grammar", None),
+    "english-comparatives-guide": ("四個經典錯誤", "grammar", None),
+    "english-plural-nouns": ("規則背好了說話時想得起來嗎", "grammar", None),
+    "english-conjunctions-guide": ("三個最常見的錯誤", "grammar", None),
+}
+NL_TXT = {
+    "kk": dict(tag="音標會看了，試試這一關", h="用 KK 音標唸一本真的故事書",
+               sub="下面 4 頁來自我們自己寫的英語分級讀本《This Is Bobo!》。先照音標把句子唸出來，再翻開看圖、聽一次，對一下自己唸得對不對。",
+               flip="翻開看答案", grade="G7-1"),
+    "read": dict(tag="會拼讀了，試試這一關", h="孩子讀得出這一頁嗎？",
+                 sub="下面 4 頁來自我們自己寫的英語分級讀本《This Is Bobo!》。請孩子先自己把句子唸出來，再翻開看圖、聽一次，對一下唸得對不對。",
+                 flip="翻開看圖", grade="G3"),
+}
+_NL = {}
+def _nl_ver(name):
+    if name not in _NL:
+        _NL[name] = hashlib.md5(open(os.path.join(SITE, "assets", name), "rb").read()).hexdigest()[:8]
+    return _NL[name]
+
+def _nl_picker(D, grade):
+    g0 = next(g for g in D["grades"] if g["code"] == grade)
+    chips = "".join(f'<button type="button" class="nl-chip" data-code="{g["code"]}" data-img="{g["img"]}" '
+                    f'aria-pressed="{"true" if g is g0 else "false"}">{g["zh"]}</button>' for g in D["grades"])
+    return (f'<div class="nl-g"><div class="nl-chips" role="group" aria-label="選年級">{chips}</div>'
+            f'<div class="nl-sample"><a href="/english-grammar-books/#free" data-book="grammar" data-book-item="sample-img" tabindex="-1" aria-hidden="true">'
+            f'<img src="{g0["img"]}" alt="{g0["zh"]}英文文法書試讀頁" data-alt="{{g}}英文文法書試讀頁" width="400" height="566" loading="lazy" decoding="async"></a>'
+            f'<div class="nl-sample-t"><strong><span class="nl-grade">{g0["zh"]}</span>的免費試讀頁</strong>'
+            '<span class="nl-btns"><a class="btn btn-primary" href="/english-grammar-books/#free" data-book="grammar" data-book-item="free">看大圖・免費下載</a>'
+            '<a class="btn btn-outline" href="/english-grammar-books/" data-book="grammar" data-book-item="page">看整套文法書</a></span></div></div></div>')
+
+def next_level(html, rel):
+    """The read-a-real-page challenge and the grammar grade picker (NEXTLEVEL_PAGES), at the end of a chosen section."""
+    html = re.sub(r"\n?" + re.escape(NL_START) + r".*?" + re.escape(NL_END) + r"\n?", "", html, flags=re.S)
+    spec = NEXTLEVEL_PAGES.get(os.path.dirname(rel))
+    if not spec or not os.path.exists(NL_SRC):
+        return html
+    hid, mode, hook = spec
+    h = html.find(f'<h2 id="{hid}"')
+    sec = html.find("</section>", h) if h != -1 else -1
+    at = html.rfind("</div>", h, sec) if sec != -1 else -1
+    if at == -1:
+        return html
+    D = json.load(open(NL_SRC, encoding="utf-8"))
+    readers_btns = ('<span class="nl-btns"><a class="btn btn-primary" href="/chris-and-cora-readers/#read-book" data-book="readers" data-book-item="{0}free">免費讀第 1 級 3 本</a>'
+                    '<a class="btn btn-outline" href="/chris-and-cora-readers/" data-book="readers" data-book-item="{0}page">看全部 36 本</a></span>')
+    if mode == "grammar":
+        body = ('<div class="nl-box nl-solo"><span class="nl-tag">埃森美語原創文法書</span>'
+                f'<b class="nl-h">{hook or "孩子幾年級？看那一年的文法書長什麼樣"}</b>'
+                '<p class="nl-sub">國小三年級到高三共 16 冊，每個重點一頁：規則、圖解、例句和練習。選孩子的年級，下面就是那一年的免費試讀頁。</p>'
+                + _nl_picker(D, "G7-1") + '</div>')
+    else:
+        T = NL_TXT[mode]
+        cards = ""
+        for n, c in enumerate(D["cards"], 1):
+            en = " ".join(c["text"])
+            q = ("".join(f'<span class="nl-kk" lang="en-fonipa">/{k}/</span>' for k in c["kk"]) if mode == "kk"
+                 else "".join(f'<span class="nl-en" lang="en">{_escape(t)}</span>' for t in c["text"]))
+            cards += (f'<li class="nl-card"><div class="nl-q">{q}</div><div class="nl-a">'
+                      f'<img src="{c["img"]}" alt="《This Is Bobo!》插圖：{_escape(en)}" width="508" height="720" loading="lazy" decoding="async">'
+                      f'<span class="nl-en" lang="en">{_escape(en)}</span>'
+                      f'<button type="button" class="nl-play" data-audio="{c["audio"]}">▶ 聽這一頁</button></div></li>')
+        body = (f'<div class="nl-box nl-try"><span class="nl-tag">{T["tag"]}</span><b class="nl-h">{T["h"]}</b><p class="nl-sub">{T["sub"]}</p>'
+                f'<ol class="nl-cards">{cards}</ol>'
+                f'<div class="nl-ctl"><button type="button" class="btn btn-primary nl-flip">{T["flip"]}</button>'
+                '<button type="button" class="btn btn-primary nl-next" data-next="下一頁" data-last="讀完了" hidden>下一頁</button>'
+                '<span class="nl-dots" data-t="第 {n} 頁，共 {all} 頁" aria-live="polite"></span></div>'
+                '<div class="nl-done"><b>4 頁都讀完了！</b><span>這 4 頁是《This Is Bobo!》的一部分。整本可以免費線上讀，還能邊聽邊讀；同一級的另外 2 本也免費。</span>'
+                + readers_btns.format("try-") + '</div></div>'
+                '<div class="nl-box"><span class="nl-tag">接下來的兩關</span><b class="nl-h">學英文的三關：這一頁是第 1 關</b>'
+                '<ol class="nl-steps">'
+                '<li class="nl-step"><span class="nl-n">1</span><b>唸得出單字</b><span>字母、自然發音、KK 音標。這一頁練的就是這一關。</span></li>'
+                '<li class="nl-step"><span class="nl-n">2</span><b>讀得懂整句</b><span>Chris and Cora 英語分級讀本：12 級 36 本，每一級只加幾個新字、一再重複。第 1 級 3 本免費線上讀，可以邊聽邊讀。</span>'
+                + readers_btns.format("") + '</li>'
+                '<li class="nl-step"><span class="nl-n">3</span><b>寫得出句子</b><span>英文文法書：國小三年級到高三共 16 冊，每個重點一頁規則、圖解、例句和練習。選年級，看那一年的免費試讀頁。</span>'
+                + _nl_picker(D, T["grade"]) + '</li></ol></div>')
+    block = (f'\n{NL_START}<link rel="stylesheet" href="/assets/nextlevel.css?v={_nl_ver("nextlevel.css")}">'
+             f'<aside class="nl" data-nl="{mode}" aria-label="下一關：分級讀本與文法書">{body}</aside>'
+             f'<script src="/assets/nextlevel.js?v={_nl_ver("nextlevel.js")}" defer></script>{NL_END}\n')
     return html[:at] + block + html[at:]
 
 
@@ -1706,6 +1800,7 @@ def process_page(path, css_ver="", crit=""):
     html = add_toc(anchor_headings(html))
     html = assess_card(html, rel)
     html = books_card(html, rel)
+    html = next_level(html, rel)
     html = pay_safe_block(html, rel)
     html = read_next(html, rel)
     html = season_strip(html, rel)
@@ -1998,6 +2093,8 @@ _INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM
              (ASSESS_START, ASSESS_END),
              # the card for the school's own books (books_card)
              (BOOKS_START, BOOKS_END),
+             # the read-a-real-page challenge and the grammar grade picker (next_level)
+             (NL_START, NL_END),
              # the founder's AI-guide line in the footer (ainote): the same on every page
              (AINOTE_START, AINOTE_END)]
 
