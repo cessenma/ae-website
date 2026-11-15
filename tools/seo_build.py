@@ -1430,6 +1430,21 @@ BOOKS_KIND = {
                             ("/assets/img/grammar-books/covers/G9-1.webp", "國三上英文文法書封面")], ch=424),
 }
 
+PAYSAFE_START, PAYSAFE_END = "<!-- AE:PAYSAFE -->", "<!-- /AE:PAYSAFE -->"
+PAYSAFE_SRC = os.path.join(SITE, "data", "pay_safe.html")
+
+def pay_safe_block(html, rel):
+    """Bottom of every page that sells something (11-15, Chris): who you are buying from, what the card page
+    shows, LINE order by bank transfer. Written by tools/build_book_pages.py (data/pay_safe.html)."""
+    html = re.sub(r"\n?" + re.escape(PAYSAFE_START) + r".*?" + re.escape(PAYSAFE_END) + r"\n?", "\n", html, flags=re.S)
+    if "lemonsqueezy.com/checkout" not in html or "</main>" not in html or not os.path.exists(PAYSAFE_SRC):
+        return html
+    d = os.path.dirname(rel)
+    kind = "readers" if d.startswith("chris-and-cora-readers") else "grammar" if d == "english-grammar-books" else "exam-pack"
+    block = open(PAYSAFE_SRC, encoding="utf-8").read().replace("__KIND__", kind)
+    i = html.rfind("</main>")
+    return html[:i] + PAYSAFE_START + "\n" + block + PAYSAFE_END + "\n" + html[i:]
+
 def books_card(html, rel):
     """A card for the school's own books (BOOKS_PAGES), after the free PDF box or in a chosen section."""
     html = re.sub(r"\n?" + re.escape(BOOKS_START) + r".*?" + re.escape(BOOKS_END) + r"\n?", "", html, flags=re.S)
@@ -1691,6 +1706,7 @@ def process_page(path, css_ver="", crit=""):
     html = add_toc(anchor_headings(html))
     html = assess_card(html, rel)
     html = books_card(html, rel)
+    html = pay_safe_block(html, rel)
     html = read_next(html, rel)
     html = season_strip(html, rel)
     html = gept_dates(html, rel)

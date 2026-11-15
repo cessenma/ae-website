@@ -384,7 +384,7 @@ def pay_safe(kind, price):
            Z(f"有問題找得到人：電話 0928-067-772，或 <a href='{LINE}' target='_blank' rel='noopener'>LINE</a>。", "You can reach a person: phone 0928-067-772, or LINE (link).")]
     pay = [Z("刷卡由 Lemon Squeezy 處理，它是美國金流公司 Stripe 旗下的服務。卡號直接交給它加密處理，我們看不到你的卡號。", "Card payments are handled by Lemon Squeezy, a service owned by the US payments company Stripe. Your card number goes straight to it, encrypted; we never see it."),
            Z("付款頁是英文的，下面有每一格的中文說明。", "The payment page is in English; a Chinese guide to each field is below."),
-           Z(f"畫面上寫新台幣，實際以美元扣款（NT${price} 約 US${usd}，依當天匯率）。信用卡帳單上會是美元金額和英文的商店名稱，多數銀行會另收約 1.5% 的國外交易手續費。", f"The page shows NT dollars, but the card is charged in US dollars (NT${price} is about US${usd}, at the day's rate). Your card statement will show a US-dollar amount and an English merchant name, and most banks add a foreign-transaction fee of about 1.5%."),
+           Z(f"畫面上寫新台幣，實際以美元扣款（例如 NT${price} 約 US${usd}，依當天匯率）。信用卡帳單上會是美元金額和英文的商店名稱，多數銀行會另收約 1.5% 的國外交易手續費。", f"The page shows NT dollars, but the card is charged in US dollars (e.g. NT${price} is about US${usd}, at the day's rate). Your card statement will show a US-dollar amount and an English merchant name, and most banks add a foreign-transaction fee of about 1.5%."),
            Z("付款完成，下載連結立刻寄到你填的 email。沒收到先看垃圾信匣，再 LINE 我們。", "Once you pay, the download link is emailed right away to the address you entered. If it doesn't arrive, check your spam folder, then message us on LINE.")]
     fields = [("Email", Z("收下載連結的信箱，請確認沒有打錯", "the mailbox that receives the download link; check for typos")),
               ("Card number", Z("信用卡卡號（Visa、Mastercard、JCB、美國運通）", "card number (Visa, Mastercard, JCB, American Express)")),
@@ -396,15 +396,15 @@ def pay_safe(kind, price):
               ("Pay with PayPal", Z("有 PayPal 帳戶的話，也可以改用 PayPal 付款", "if you have a PayPal account you can pay with PayPal instead")),
               ("Pay NT$…", Z("確認金額後按下去，就完成付款", "check the amount, then press to pay"))]
     rows = "".join(f'<tr><th lang="en">{esc(a)}</th><td>{b}</td></tr>' for a, b in fields)
-    return (f'<div class="bp-safe reveal" id="pay-safe">{line}<div class="bp-safe-grid">'
+    return (f'<div class="bp-safe" id="pay-safe">{line}<div class="bp-safe-grid">'
             f'<div><h3 id="你是向誰買">{Z("你是向誰買", "who you are buying from")}</h3><ul>{"".join(f"<li>{x}</li>" for x in who)}</ul></div>'
             f'<div><h3 id="線上刷卡會看到什麼">{Z("線上刷卡會看到什麼", "what you will see when you pay by card")}</h3><ul>{"".join(f"<li>{x}</li>" for x in pay)}</ul></div></div>'
             f'<details class="bp-fields"><summary>{Z("英文付款頁每一格怎麼填", "how to fill in each box on the English payment page")}</summary>'
             f'<table><tbody>{rows}</tbody></table></details></div>')
 
 PAY_QA = ("付款安全嗎？付款頁為什麼是英文的？", "Is paying safe? Why is the payment page in English?",
-          "刷卡由美國金流公司 Stripe 旗下的 Lemon Squeezy 處理，卡號加密後直接交給它，我們看不到。這家公司的付款頁沒有繁體中文，所以是英文的，價格下面有每一格的中文說明；實際以美元扣款，帳單上會是美元金額。不想線上刷卡，可以按「用 LINE 訂購（可轉帳）」。我們是新北市政府立案的補習班（社補教社字第115026號），教室在板橋中正路。",
-          "Card payments are handled by Lemon Squeezy, owned by the US payments company Stripe; your card number goes to it encrypted and we never see it. Its payment page has no Traditional Chinese, so it is in English, and there is a Chinese guide to each field by the prices; the charge is in US dollars, so your statement shows a US-dollar amount. If you would rather not pay by card online, tap “Order on LINE (bank transfer)”. We are a cram school registered with the New Taipei City Government (社補教社字第115026號), with a classroom on Zhongzheng Road in Banqiao.")
+          "刷卡由美國金流公司 Stripe 旗下的 Lemon Squeezy 處理，卡號加密後直接交給它，我們看不到。這家公司的付款頁沒有繁體中文，所以是英文的，頁面最下面有每一格的中文說明；實際以美元扣款，帳單上會是美元金額。不想線上刷卡，可以按「用 LINE 訂購（可轉帳）」。我們是新北市政府立案的補習班（社補教社字第115026號），教室在板橋中正路。",
+          "Card payments are handled by Lemon Squeezy, owned by the US payments company Stripe; your card number goes to it encrypted and we never see it. Its payment page has no Traditional Chinese, so it is in English, and there is a Chinese guide to each field at the bottom of the page; the charge is in US dollars, so your statement shows a US-dollar amount. If you would rather not pay by card online, tap “Order on LINE (bank transfer)”. We are a cram school registered with the New Taipei City Government (社補教社字第115026號), with a classroom on Zhongzheng Road in Banqiao.")
 
 def soon(live):
     """While no checkout link is set, one line says buying online opens soon (the buttons are greyed)."""
@@ -427,6 +427,35 @@ def h2(eyebrow, hid, text, color=""):
             f'<h2 id="{hid}">{text}</h2></div>')
 
 # ---------------------------------------------------------------- readers page
+
+# The buy strip (11-15, Chris: book pages "should look like" the GEPT one, "towards the top like the GEPT. those get
+# the most attention", "super simple"): one line, the options as radio rows, LINE 購買 / 線上刷卡. The detail (which
+# level, which stage) is picked on the checkout page, which lists every variant. Uses the site-wide .pkm styles.
+def ls_url(u):
+    return u + ("&" if "?" in u else "?") + "checkout[billing_address][country]=TW" if u else ""
+
+def buy_strip(kind, product_zh, text, opts, under=""):
+    """opts: (item, label, price, checkout url); the first is pre-picked. Returns the whole <section id="buy">."""
+    def line(label, price):
+        return "https://line.me/R/oaMessage/%40americanenglish/?" + urllib.parse.quote(f"我想購買{product_zh}：{strip(label)}（NT${n(price)}）。")
+    chips = "".join(f'<label class="pkm-tier"><input type="radio" name="bs-{kind}"{" checked" if i == 0 else ""} data-item="{k}" data-price="{pr}" '
+                    f'data-line="{esc(line(lab, pr))}" data-ls="{esc(ls_url(u))}"><span>{lab}</span><b>NT${n(pr)}</b></label>' for i, (k, lab, pr, u) in enumerate(opts))
+    k0, lab0, pr0, u0 = opts[0]
+    return f"""<section class="pkm-sec" id="buy">
+  <div class="wrap">
+    <aside class="pkm" id="buy-box">
+      <p class="pkm-t">{text}</p>
+      <div class="pkm-tiers" role="radiogroup" aria-label="{Z("選方案", "choose")}">{chips}</div>
+      <p class="pkm-a"><a href="{esc(line(lab0, pr0))}" target="_blank" rel="noopener" class="pkm-line" data-book="{kind}" data-book-item="line-{k0}" data-book-price="{pr0}">{Z("LINE 購買", "buy on LINE")}</a><a href="{esc(ls_url(u0))}" class="pkm-card" data-book="{kind}" data-book-item="{k0}" data-book-price="{pr0}">{Z("線上刷卡", "pay by card")}</a></p>
+    </aside>{under}
+  </div>
+</section>
+<script>(()=>{{const b=document.getElementById("buy-box");if(!b)return;const l=b.querySelector(".pkm-line"),c=b.querySelector(".pkm-card");
+b.querySelectorAll(".pkm-tier input").forEach(r=>r.addEventListener("change",function(){{const d=this.dataset;l.href=d.line;c.href=d.ls;
+l.dataset.bookItem="line-"+d.item;c.dataset.bookItem=d.item;l.dataset.bookPrice=c.dataset.bookPrice=d.price;
+if(typeof window.gtag==="function")gtag("event","book_pick",{{product:"{kind}",item:d.item,page_path:location.pathname}})}}))}})()</script>
+"""
+
 
 def readers_page():
     _page[0] = READERS
@@ -473,6 +502,14 @@ def readers_page():
   </div>
 </section>
 """)
+
+    # buy strip, under the hero (11-15): single level / one stage / all 36; level and stage are picked at checkout
+    out.append(buy_strip("readers", "Chris and Cora 分級讀本",
+        Z("想讓孩子每天讀一點？<b>Chris and Cora 英語分級讀本</b>，每本附 PDF 和會唸給孩子聽的翻頁電子書：",
+          "Want your child to read a little every day? <b>Chris and Cora graded readers</b>, each with a PDF and a flip book that reads aloud:"),
+        [("level", Z("單級 3 本", "one level, 3 books"), P_LEVEL, STORE["readers_levels"].get("2", "")),
+         ("set", Z("一個階段 4 級 12 本", "one stage, 4 levels, 12 books"), P_SET, STORE["readers_sets"].get("1-4", "")),
+         ("all", Z("全套 12 級 36 本", "all 12 levels, 36 books"), P_ALL, STORE["readers_sets"].get("all", ""))]))
 
     # why this series (Chris 11-10: simple; every number measured or sourced)
     why4 = [("var(--blue)", f'<span data-to="{cum[-1]}">{n(cum[-1])}</span>', Z("跟學校同一份字表", "the school's word list"),
@@ -583,27 +620,9 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
 </section>
 """)
 
-    # prices
-    lv_btns = "".join(buy(STORE["readers_levels"].get(str(L), ""), Z(f"第 {L} 級", f"Level {L}"), "readers", f"level-{L}", P_LEVEL,
-                          "btn btn-outline") for L in range(2, 13))
-    set_btns = "".join(buy(STORE["readers_sets"].get(k, ""), Z(f"第 {k.replace('-', '–')} 級", f"Levels {k}"), "readers", f"set-{k}", P_SET)
-                       for k in ("1-4", "5-8", "9-12"))
-    tiers = f"""<div class="bp-tiers reveal" id="buy-tiers">
-<div class="bp-tier"><span class="bp-tn">{Z("單級 3 本", "one level, 3 books")}</span><span class="bp-tp">NT${P_LEVEL}</span><span class="bp-tu">{Z(f"約 NT${round(P_LEVEL/3)}／本", f"about NT${round(P_LEVEL/3)} a book")}</span>
-<span class="bp-td">{Z(f"先買孩子現在這一級試試看。第 1 級免費線上讀。每級約 {MB_LEVEL}。", f"Try the level your child is at now. Level 1 is free online. About {MB_LEVEL} a level.")}</span><div class="bp-pick">{lv_btns}</div></div>
-<div class="bp-tier hl"><span class="bp-tn">{Z("一個階段 4 級 12 本", "one stage, 4 levels, 12 books")}</span><span class="bp-tp">NT${n(P_SET)}</span><span class="bp-tu">{Z(f"約 NT${round(P_SET/12)}／本・比單級分開買省 NT${4*P_LEVEL-P_SET}", f"about NT${round(P_SET/12)} a book · NT${4*P_LEVEL-P_SET} less than 4 single levels")}</span>
-<span class="bp-td">{Z("從孩子現在的階段買起，夠讀好幾個月。", "Start from your child's stage; enough for several months.")}</span><div class="bp-pick two">{set_btns}</div></div>
-<div class="bp-tier"><span class="bp-tn">{Z("全套 12 級 36 本", "all 12 levels, 36 books")}</span><span class="bp-tp">NT${n(P_ALL)}</span><span class="bp-tu">{Z(f"約 NT${round(P_ALL/36)}／本・比 12 級分開買省 NT${n(12*P_LEVEL-P_ALL)}", f"about NT${round(P_ALL/36)} a book · NT${n(12*P_LEVEL-P_ALL)} less than 12 single levels")}</span>
-<span class="bp-td">{Z(f"從第一句英文讀到整段故事，一次買齊。檔案約 {MB_SET['all']} MB。", f"From the first sentence to full paragraphs, all at once. About {MB_SET['all']} MB.")}</span><div class="bp-pick two">{buy(STORE["readers_sets"].get("all", ""), Z(f"買全套・NT${n(P_ALL)}", f"buy all · NT${n(P_ALL)}"), "readers", "all", P_ALL)}</div></div>
-</div>"""
-    trust = "".join(f"<span>{Z(a, b)}</span>" for a, b in [("安全刷卡", "secure card payment"), ("付款後立刻寄下載連結到 email", "download link emailed right after payment"),
-                                                            ("不用註冊帳號", "no account needed"), ("價格已含稅", "prices include tax")])
-    out.append(f"""<section class="section bg-soft" id="buy">
+    # fine print (the buy strip itself sits under the hero)
+    out.append(f"""<section class="section" style="padding:6px 0 0">
   <div class="wrap">
-    {h2(Z("價格", "prices"), "三種買法照需要挑", Z("三種買法，<em>照需要挑</em>", "three ways to buy"), "yellow")}
-    {soon(any_link)}<div class="bp-trust reveal">{trust}</div>
-    {tiers}
-    {pay_safe("readers", P_LEVEL)}
     <p class="bp-fine">{Z("每本書都有 PDF（A5，可以自己印）和翻頁電子書（在電腦上解壓縮後點開 index.html，不用網路也能讀；手機、平板看 PDF 最方便）。翻頁電子書可以邊聽邊讀，唸到的字會亮起來，也可以放慢速度。家庭自用；學校或補習班要全班用，請先 <a href='" + LINE + "' target='_blank' rel='noopener'>LINE 問我們</a>。",
         "Every book comes as a PDF (A5, print it yourself) and a flip book (unzip on a computer and open index.html, no internet needed; on a phone or tablet the PDF is easiest). The flip books read aloud, lighting up each word, and the reading can be slowed down. For family use; for a whole class at a school or cram school, ask us on LINE first.")}<br>
     {Z("這是數位內容，付款後立刻提供下載；依《通訊交易解除權合理例外情事適用準則》第 2 條第 5 款，按下購買即表示你同意不適用七天解除權。請先免費讀第 1 級再決定。",
@@ -837,6 +856,12 @@ def grammar_page():
   </div>
 </section>
 """)
+    out.append(buy_strip("grammar", "英文文法書",
+        Z("想把整學期的文法一次整理好？<b>埃森美語原創英文文法書</b>，每冊附速查表與完整解答：",
+          "Want a whole term's grammar in one place? <b>Our own English grammar books</b>, each with its cheat sheet and full answers:"),
+        [("books", Z("一個學程（國小、國中或高中）", "one stage (elementary, junior or senior high)"), P_GBOOKS, STORE["grammar"].get("junior-books", "")),
+         ("all-books", Z("全套 16 冊", "all 16 books"), P_GALL, STORE["grammar"].get("all-books", ""))],
+        under=f'<p class="bp-sheets">{Z("只要速查表、不要文法書？", "Cheat sheets only, no books?")}<a href="{esc(ls_url(STORE["grammar"].get("junior-sheets", "")))}" data-book="grammar" data-book-item="sheets" data-book-price="{P_GSHEETS}">{Z(f"速查表 NT${P_GSHEETS} 起 →", f"cheat sheets from NT${P_GSHEETS} →")}</a></p>'))
     # the three stages
     info = {"elementary": (Z("國小 句型書 4 冊", "elementary: 4 sentence-pattern books"), Z("三～六年級，每年級一冊", "Grades 3–6, one per grade"),
                            Z("不講文法規則，一頁一個句型，附句型速查卡。",
@@ -915,40 +940,9 @@ def grammar_page():
   </div>
 </section>
 """)
-    # prices (11-15, Chris: "look like" the GEPT strip, "an option to buy them all … 1190", "super simple"):
-    # one box, one radio per stage + the full set, LINE / card buttons; sheets-only is one small line under it
-    def line_msg(label, price):
-        return "https://line.me/R/oaMessage/%40americanenglish/?" + urllib.parse.quote(f"我想購買英文文法書：{label}（NT${price}）。")
-    def ls(key):
-        u = STORE["grammar"].get(key, "")
-        return u + ("&" if "?" in u else "?") + "checkout[billing_address][country]=TW" if u else ""
-    names = {"elementary": Z("國小 句型書 4 冊（三～六年級）", "elementary: 4 pattern books (grades 3–6)"),
-             "junior": Z("國中 文法書 6 冊（國一上～國三下）", "junior high: 6 grammar books (G7–G9)"),
-             "senior": Z("高中 文法書 6 冊（高一上～高三上＋學測總複習）", "senior high: 6 grammar books (G10–G12 + exam review)")}
-    opts = [(f"{k}-books", names[k], P_GBOOKS) for k, _ in STAGES] + [("all-books", Z("全套 16 冊（國小＋國中＋高中）", "all 16 books (elementary + junior + senior)"), P_GALL)]
-    pick = "junior-books"
-    chips = "".join(f'<label class="pkm-tier"><input type="radio" name="gbt"{" checked" if k == pick else ""} data-item="{k}" data-price="{pr}" '
-                    f'data-line="{esc(line_msg(strip(lab), n(pr)))}" data-ls="{esc(ls(k))}"><span>{lab}</span><b>NT${n(pr)}</b></label>' for k, lab, pr in opts)
-    cur = next(o for o in opts if o[0] == pick)
-    sheets = "・".join(f'<a href="{esc(ls(f"{k}-sheets"))}" data-book="grammar" data-book-item="{k}-sheets" data-book-price="{P_GSHEETS}">{Z({"elementary": "國小", "junior": "國中", "senior": "高中"}[k], k)} NT${P_GSHEETS}</a>' for k, _ in STAGES)
-    box = f"""<aside class="pkm reveal" id="buy-box" style="margin-top:22px">
-  <p class="pkm-t">{Z("選孩子的學程。<b>每一冊文法書都附同冊的速查表</b>，付款後立刻下載 PDF：", "Pick your child's stage. <b>Every grammar book comes with its cheat sheet</b>; the PDFs download right after payment:")}</p>
-  <div class="pkm-tiers" role="radiogroup" aria-label="{Z("選方案", "choose")}" style="flex-basis:460px">{chips}</div>
-  <p class="pkm-a"><a href="{esc(line_msg(strip(cur[1]), n(cur[2])))}" target="_blank" rel="noopener" class="pkm-line" data-book="grammar" data-book-item="line-{pick}" data-book-price="{cur[2]}">{Z("LINE 購買", "buy on LINE")}</a><a href="{esc(ls(pick))}" class="pkm-card" data-book="grammar" data-book-item="{pick}" data-book-price="{cur[2]}">{Z("線上刷卡", "pay by card")}</a></p>
-</aside>
-<p class="bp-sheets">{Z("只要速查表、不要文法書？", "Cheat sheets only, no books?")}{sheets}{Z("・", " · ")}<a href="{esc(ls("all-sheets"))}" data-book="grammar" data-book-item="all-sheets" data-book-price="{P_GSALL}">{Z("全套 16 份", "all 16")} NT${P_GSALL}</a></p>
-<script>(()=>{{const b=document.getElementById("buy-box");if(!b)return;const l=b.querySelector(".pkm-line"),c=b.querySelector(".pkm-card");
-b.querySelectorAll(".pkm-tier input").forEach(r=>r.addEventListener("change",function(){{const d=this.dataset;l.href=d.line;c.href=d.ls;
-l.dataset.bookItem="line-"+d.item;c.dataset.bookItem=d.item;l.dataset.bookPrice=c.dataset.bookPrice=d.price;
-if(typeof window.gtag==="function")gtag("event","book_pick",{{product:"grammar",item:d.item,page_path:location.pathname}})}}))}})()</script>"""
-    trust = "".join(f"<span>{Z(a, b)}</span>" for a, b in [("安全刷卡", "secure card payment"), ("付款後立刻寄下載連結到 email", "download link emailed right after payment"),
-                                                            ("不用註冊帳號", "no account needed"), ("價格已含稅", "prices include tax")])
-    out.append(f"""<section class="section" id="buy">
+    # fine print (the buy strip itself sits under the hero)
+    out.append(f"""<section class="section" style="padding:6px 0 0">
   <div class="wrap">
-    {h2(Z("價格", "prices"), "一個學程一次買齊", Z("一個學程，<em>一次買齊</em>", "a whole stage in one purchase"), "yellow")}
-    {soon(any_link)}<div class="bp-trust reveal">{trust}</div>
-    {box}
-    {pay_safe("grammar", P_GBOOKS)}
     <p class="bp-fine">{Z("家庭自用，可以自己印。學校或補習班要全班用，請先 <a href='" + LINE + "' target='_blank' rel='noopener'>LINE 問我們</a>。", "For family use; print it yourself. For a whole class, ask us on LINE first.")}<br>
     {Z("這是數位內容，付款後立刻提供下載；依《通訊交易解除權合理例外情事適用準則》第 2 條第 5 款，按下購買即表示你同意不適用七天解除權。請先下載免費的第 1 頁再決定。",
        "This is digital content delivered right after payment; under Article 2(5) of the rules on exceptions to the 7-day cancellation right, clicking buy means you agree the 7-day cancellation does not apply. Please download the free page 1 before deciding.")}</p>
@@ -1015,7 +1009,20 @@ def write_gloss():
     open(GLOSS_OUT, "w", encoding="utf-8").write("\n".join(L))
     print("  gloss:", GLOSS_OUT, sum(len(v) for v in GLOSS.values()), "strings")
 
+PAY_SAFE_OUT = os.path.join(SITE, "data", "pay_safe.html")
+
+def write_pay_safe():
+    """The trust section for the bottom of every page that sells something (11-15, Chris: "this section should be at
+    the bottom of every page we sell something"). tools/seo_build.py places it (AE:PAYSAFE) above </main> on any page
+    with a Lemon Squeezy checkout link; __KIND__ becomes readers / grammar / exam-pack."""
+    css = "".join(l + "\n" for l in CSS.split("\n") if re.match(r"\.bp-(safe|line|fields)", l) or l.startswith("@media (max-width:760px){.bp-safe"))
+    open(PAY_SAFE_OUT, "w", encoding="utf-8").write(
+        '<section class="section ps-sec" style="padding-top:28px"><div class="wrap"><style>' + css + "</style>\n"
+        + pay_safe("__KIND__", 590) + "</div></section>\n")
+    print("  pay-safe block:", os.path.relpath(PAY_SAFE_OUT, SITE))
+
 if __name__ == "__main__":
+    write_pay_safe()
     og_images()
     for slug, fn in ((READERS, readers_page), (GRAMMAR, grammar_page)):
         os.makedirs(os.path.join(SITE, slug), exist_ok=True)
