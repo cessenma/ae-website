@@ -269,6 +269,19 @@ CSS = """
 .bp-trust span::before{content:'✓';color:#12873d;font-weight:900}
 .bp-sheets{max-width:1000px;margin:10px auto 0;text-align:center;font-size:14px;color:#64748b;line-height:1.8}
 .bp-sheets a{color:var(--navy);font-weight:700;white-space:nowrap}
+.bp-prom{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:26px;text-align:left}
+.bp-pc{background:#fff;border-radius:22px;padding:22px 22px 20px;border:2px solid rgba(26,39,82,.08);box-shadow:0 5px 0 rgba(26,39,82,.06);display:flex;flex-direction:column;gap:8px}
+.bp-pc .bp-pk{align-self:flex-start;font-size:13px;font-weight:800;letter-spacing:.5px;border-radius:999px;padding:3px 12px;background:var(--light-blue);color:var(--blue-ink)}
+.bp-pc b{font-family:'Baloo 2','Noto Sans TC',sans-serif;font-size:21px;line-height:1.35;color:var(--navy)}
+.bp-pc p{margin:0;font-size:15.5px;line-height:1.75;color:var(--text-body)}
+.bp-pc.gu{background:#F0FBF4;border-color:#bfe9cf}.bp-pc.gu .bp-pk{background:var(--green);color:var(--navy)}
+.bp-pc .btn{margin-top:auto;align-self:flex-start;text-transform:none}
+.bp-studies{max-width:860px;margin:22px auto 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px 16px;text-align:left}
+.bp-studies li{background:#fff;border-radius:14px;border:1px solid #e2e8f0;padding:12px 14px;font-size:14.5px;line-height:1.65;color:var(--text-body)}
+.bp-studies a{display:block;font-weight:800;color:var(--blue-ink);text-decoration:none;margin-bottom:2px}
+.bp-studies a:hover{text-decoration:underline}
+.bp-gline{max-width:760px;margin:12px auto 0;text-align:center;font-size:15px;font-weight:700;color:var(--green-ink)}
+.bp-gline a{color:inherit}
 .bp-fine{max-width:760px;margin:16px auto 0;font-size:13px;line-height:1.8;color:#64748b;text-align:center}
 .bp-safe{max-width:1040px;margin:22px auto 0;background:#fff;border:1.5px solid rgba(26,39,82,.12);border-radius:20px;padding:20px 22px;box-shadow:0 6px 22px rgba(26,39,82,.07)}
 .bp-line{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 18px;background:#F1FBF4;border:1.5px solid rgba(6,199,85,.28);border-radius:14px;padding:14px 16px}
@@ -509,7 +522,8 @@ def readers_page():
           "Want your child to read a little every day? <b>Chris and Cora graded readers</b>, each with a PDF and a flip book that reads aloud:"),
         [("level", Z("單級 3 本", "one level, 3 books"), P_LEVEL, STORE["readers_levels"].get("2", "")),
          ("set", Z("一個階段 4 級 12 本", "one stage, 4 levels, 12 books"), P_SET, STORE["readers_sets"].get("1-4", "")),
-         ("all", Z("全套 12 級 36 本", "all 12 levels, 36 books"), P_ALL, STORE["readers_sets"].get("all", ""))]))
+         ("all", Z("全套 12 級 36 本", "all 12 levels, 36 books"), P_ALL, STORE["readers_sets"].get("all", ""))],
+        under=f'<p class="bp-gline">{Z("買全套 36 本：讀完覺得孩子沒有進步，12 個月內全額退費。", "Buy all 36: if you finish them and feel your child has not improved, a full refund within 12 months.")}<a href="#our-promise">{Z("看我們的保證 →", "see our promise →")}</a></p>'))
 
     # why this series (Chris 11-10: simple; every number measured or sourced)
     why4 = [("var(--blue)", f'<span data-to="{cum[-1]}">{n(cum[-1])}</span>', Z("跟學校同一份字表", "the school's word list"),
@@ -539,6 +553,40 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{{if(!e.isIntersecting)retur
 e.target.querySelectorAll("[data-to]").forEach(el=>{{const to=+el.dataset.to,suf=el.dataset.suf||"",d=1500,t0=performance.now()+150;
 const f=t=>{{const p=Math.max(0,Math.min(1,(t-t0)/d));el.textContent=Math.round(to*(1-Math.pow(1-p,3))).toLocaleString("en-US")+suf;if(p<1)requestAnimationFrame(f)}};
 el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.querySelectorAll(".bp-stat").forEach(c=>io.observe(c))}})()</script>
+""")
+
+    # Said straight (Chris 11-16): the pictures are AI-drawn, the stories and format are written by a US-licensed
+    # teacher (his answer when asked) on six published studies, and the full set carries a 12-month money-back promise.
+    # Not "scientifically proven": the studies back the methods; nobody has run a trial on these books, and the page says so.
+    studies = [("Fry (1980)", "https://eric.ed.gov/?id=ED169516",
+                Z("最常用的 300 個字，約占一般讀物的三分之二。", "The 300 most-used words make up about two-thirds of ordinary reading.")),
+               ("Webb (2007)", "https://eric.ed.gov/?id=EJ757328",
+                Z("一個新字大約要遇到 10 次，才記得住。", "A new word takes about 10 encounters to stick.")),
+               ("Waring & Takaki (2003)", "https://nflrc.hawaii.edu/rfl/item/78",
+                Z("只讀一本分級讀本，留得住的新字很少；要大量、重複地讀。", "Very few new words stay after one graded reader; it takes a lot of repeated reading.")),
+               ("Mol et al. (2008)", "https://eric.ed.gov/?id=EJ787378",
+                Z("爸媽陪讀、邊讀邊聊，幼兒的字彙進步最多，2、3 歲開始最明顯。", "Reading together and talking about the book grows young children's vocabulary the most, clearest from age 2–3.")),
+               ("Teng (2018)", "https://research.mpu.edu.mo/en/publications/incidental-vocabulary-acquisition-from-reading-only-and-reading-w/",
+                Z("邊聽邊讀，比只用眼睛讀學到更多新字。", "Reading while listening teaches more new words than reading alone.")),
+               ("Wei & Hu (2025)", "https://doaj.org/article/8eaac19fcab345dba973e4e94b7c25f8",
+                Z("78 位高中生讀了 10 週：邊聽邊讀的一組，字音和字義記得比較好。", "78 senior-high students over 10 weeks: the reading-while-listening group remembered word sounds and meanings better."))]
+    st = "".join(f'<li><a href="{u}" target="_blank" rel="noopener" lang="en">{nm}</a>{t}</li>' for nm, u, t in studies)
+    out.append(f"""<section class="section bg-soft" id="our-promise">
+  <div class="wrap">
+    {h2(Z("先說清楚", "said straight"), "圖是-AI-畫的故事是老師寫的", Z("圖是 AI 畫的，<em>故事是老師寫的</em>", "the pictures are AI-drawn; the stories are written by a teacher"), "green")}
+    <div class="bp-prom reveal">
+      <div class="bp-pc"><span class="bp-pk">{Z("插圖", "pictures")}</span><b>{Z("插圖是 AI 畫的", "The pictures are AI-drawn")}</b>
+        <p>{Z("這套書的插圖是用 AI 繪圖工具畫的，這一點我們直接告訴你。", "The pictures in these books were drawn with AI image tools, and we tell you so plainly.")}</p></div>
+      <div class="bp-pc"><span class="bp-pk">{Z("故事與編排", "stories and format")}</span><b>{Z("故事由美國合格教師編寫", "The stories are written by a US-licensed teacher")}</b>
+        <p>{Z("每一本的故事、用字順序和版面編排，都由持有美國正式教師執照的老師編寫，方法依據下面 6 篇已發表的閱讀與字彙研究。", "The story, the order of the words and the page format of every book are written by a teacher who holds a US teaching licence, using methods from the 6 published reading and vocabulary studies below.")}</p></div>
+      <div class="bp-pc gu"><span class="bp-pk">{Z("我們的保證", "our promise")}</span><b>{Z("買全套，讀完沒進步就退費", "Buy the full set: no progress after finishing it, your money back")}</b>
+        <p>{Z("買全套 36 本，陪孩子讀完。如果你覺得孩子的英文閱讀沒有進步，購買後 12 個月內用 LINE 告訴我們，全額退費，不需要提出證明。", "Buy all 36 books and read them through with your child. If you feel your child's English reading has not improved, tell us on LINE within 12 months of buying and we refund you in full; no proof needed.")}</p>
+        <a class="btn btn-primary" href="#buy" data-book="readers" data-book-item="promise-buy">{Z("看全套 36 本", "see the full set")}</a></div>
+    </div>
+    <ul class="bp-studies reveal">{st}</ul>
+    <p class="bp-fine center" style="margin-top:14px">{Z("這 6 篇研究支持的是這套書用的方法：常用字、重複出現、親子共讀、邊聽邊讀。它們不是拿這套書做的實驗，所以我們用退費保證來負責。", "These 6 studies support the methods the books use: frequent words, repetition, reading together, reading while listening. They were not experiments on these books, which is why we stand behind them with the refund promise.")}</p>
+  </div>
+</section>
 """)
 
     # Level 1 is free (Chris 11-11: "offer 1a 1b and 1c for free"): three hardcovers; a click swings the cover open into the flip book
@@ -626,7 +674,8 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
     <p class="bp-fine">{Z("每本書都有 PDF（A5，可以自己印）和翻頁電子書（在電腦上解壓縮後點開 index.html，不用網路也能讀；手機、平板看 PDF 最方便）。翻頁電子書可以邊聽邊讀，唸到的字會亮起來，也可以放慢速度。家庭自用；學校或補習班要全班用，請先 <a href='" + LINE + "' target='_blank' rel='noopener'>LINE 問我們</a>。",
         "Every book comes as a PDF (A5, print it yourself) and a flip book (unzip on a computer and open index.html, no internet needed; on a phone or tablet the PDF is easiest). The flip books read aloud, lighting up each word, and the reading can be slowed down. For family use; for a whole class at a school or cram school, ask us on LINE first.")}<br>
     {Z("這是數位內容，付款後立刻提供下載；依《通訊交易解除權合理例外情事適用準則》第 2 條第 5 款，按下購買即表示你同意不適用七天解除權。請先免費讀第 1 級再決定。",
-       "This is digital content delivered right after payment; under Article 2(5) of the rules on exceptions to the 7-day cancellation right, clicking buy means you agree the 7-day cancellation does not apply. Please read Level 1 free before deciding.")}</p>
+       "This is digital content delivered right after payment; under Article 2(5) of the rules on exceptions to the 7-day cancellation right, clicking buy means you agree the 7-day cancellation does not apply. Please read Level 1 free before deciding.")}<br>
+    {Z("全套 36 本另有我們自己的 12 個月退費保證，和上面的法定規定是兩回事，見<a href='#our-promise'>「我們的保證」</a>。", "The full set of 36 also carries our own 12-month refund promise, which is separate from the legal rule above; see 'our promise'.")}</p>
   </div>
 </section>
 """)
@@ -638,6 +687,12 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
           (Z("有音檔嗎？", "Is there audio?"),
            Z("有。36 本的翻頁電子書都可以按「聽故事」：唸到哪個字、哪個字就亮起來，唸完自動翻頁（目前是 AI 語音）。速度可以選 0.5、0.75、1 或 1.25 倍，每一種速度都是事先做好的錄音，放慢了聲音一樣清楚。在電腦上下載後，不用網路也能聽。PDF 檔本身沒有聲音。",
              "Yes. All 36 flip books have 'listen to the story': each word lights up as it is read and the page turns by itself (an AI voice for now). The speed can be 0.5x, 0.75x, 1x or 1.25x; each speed is a recording made ahead of time, so the voice stays just as clear when slowed down. On a computer it works offline after download. The PDF files themselves have no sound.")),
+          (Z("讀完沒有進步，可以退費嗎？", "Can I get a refund if there is no progress?"),
+           Z("買全套 36 本可以。陪孩子讀完後，如果你覺得孩子的英文閱讀沒有進步，購買後 12 個月內用 LINE 告訴我們訂購的 email，我們全額退費，不需要提出證明。單級和 4 級一組不在這個保證裡，所以第 1 級 3 本整本免費，請先讀讀看。",
+             "Yes, for the full set of 36. After reading them through with your child, if you feel their English reading has not improved, send us your order email on LINE within 12 months of buying and we refund you in full; no proof needed. Single levels and 4-level sets are not covered, which is why Level 1's 3 books are free in full: please try them first.")),
+          (Z("插圖和故事是誰做的？", "Who made the pictures and the stories?"),
+           Z("插圖是用 AI 繪圖工具畫的。故事、用字順序和版面編排由持有美國正式教師執照的老師編寫，方法依據 6 篇已發表的閱讀與字彙研究，研究清單在這一頁的「先說清楚」。",
+             "The pictures were drawn with AI image tools. The stories, the word order and the page format are written by a teacher who holds a US teaching licence, using methods from 6 published reading and vocabulary studies, listed under 'said straight' on this page.")),
           (Z("可以印出來嗎？", "Can I print it?"),
            Z("可以，家裡自己用都沒問題。PDF 是 A5 大小（一般 A4 對折的大小），印在 A4 紙上選「符合頁面」就行。", "Yes, for your own family. The PDF is A5 (half of A4); print on A4 with 'fit to page'.")),
           (Z("怎麼付款、多久拿到？", "How do I pay, and when do I get it?"),
