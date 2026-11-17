@@ -2461,6 +2461,8 @@ def lint_snippets(pages):
         proven = set()
     for p in pages:
         rel = os.path.relpath(p, SITE)
+        if rel == "data/pay_safe.html":      # a fragment the build pastes into the store pages, not a page (no head)
+            continue
         if rel in SELF_CONTAINED or rel == "404.html":
             continue
         sp = BeautifulSoup(open(p, encoding="utf-8").read(), "html.parser")

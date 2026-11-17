@@ -67,6 +67,10 @@
 "date": "2026-10-22",
 "hash": "8a59e7bd0104d6aa8238ba13689e8e31"
 },
+"assets/downloads/ae-chatgpt-english-speaking-prompts-a4.pdf": {
+"date": "2026-11-17",
+"hash": "1ffd6aa60ee1df3d93653ea8f260cba5"
+},
 "assets/downloads/ae-cheer-up-english-a4.pdf": {
 "date": "2026-10-13",
 "hash": "eeedb2211f237723f5245034cd4c40cd"
@@ -182,6 +186,10 @@
 "assets/downloads/ae-fruits-flashcards-a4.pdf": {
 "date": "2026-10-01",
 "hash": "cf6dc9c0c4842eb955b3eda928ccf3e9"
+},
+"assets/downloads/ae-gemini-learn-english-prompts-a4.pdf": {
+"date": "2026-11-17",
+"hash": "3deebf661447589429ad7921b7b5535e"
 },
 "assets/downloads/ae-good-morning-english-a4.pdf": {
 "date": "2026-10-22",
@@ -303,6 +311,10 @@
 "date": "2026-10-13",
 "hash": "47c584b749fa95ed9a9c1a907f9a5d46"
 },
+"assets/downloads/ae-hot-pot-english-a4.pdf": {
+"date": "2026-11-17",
+"hash": "316096dbba2a20441ca5e494293b18f3"
+},
 "assets/downloads/ae-how-to-learn-english-a4.pdf": {
 "date": "2026-10-22",
 "hash": "34f79c84e5c249655995a2b868633bef"
@@ -322,6 +334,10 @@
 "assets/downloads/ae-junior-high-grammar-a4.pdf": {
 "date": "2026-10-16",
 "hash": "20d6d586ef50712442bc724307120694"
+},
+"assets/downloads/ae-kids-english-youtube-channels-a4.pdf": {
+"date": "2026-11-17",
+"hash": "61dfcfed2d237bdcb25b4e57d70ee61e"
 },
 "assets/downloads/ae-kk-phonetic-chart-a4.pdf": {
 "date": "2026-10-02",
@@ -812,8 +828,12 @@
 "hash": "b736ec33111be19ac98aaf8e2fee5e8d"
 },
 "chart-license": {
-"date": "2026-11-12",
-"hash": "0beb70384757f45c01e5ceb9da5916f6"
+"date": "2026-11-17",
+"hash": "604cb67f026ec6e86f691bb222ab3bd4"
+},
+"chatgpt-english-speaking-practice": {
+"date": "2026-11-17",
+"hash": "bf3c50469d90c0d6ba8d7ca119af6ccb"
 },
 "cheer-up-english": {
 "date": "2026-10-20",
@@ -1255,6 +1275,10 @@
 "date": "2026-10-19",
 "hash": "d6fb5c48552f1b8e91aefa12cfab305a"
 },
+"gemini-learn-english": {
+"date": "2026-11-17",
+"hash": "b598760e530254efd953462ac3359b73"
+},
 "gept": {
 "date": "2026-11-15",
 "hash": "6927b7aaee13135dd195a158c6976565"
@@ -1495,6 +1519,10 @@
 "date": "2026-11-10",
 "hash": "6e67a04c4898cfd95682911f34138db8"
 },
+"hot-pot-english": {
+"date": "2026-11-17",
+"hash": "832b3e249bac81b796a11ea500931f3d"
+},
 "how-american-kids-learn-reading": {
 "date": "2026-08-07",
 "hash": "233ef82472525e2599c1ce1912bfa17a"
@@ -1642,6 +1670,10 @@
 "kids-english-names-guide": {
 "date": "2026-10-19",
 "hash": "371be514e2f63151ef080982adb6bf78"
+},
+"kids-english-youtube-channels": {
+"date": "2026-11-17",
+"hash": "eccc140ede399a7669800729906e2264"
 },
 "kids-online-english-comparison": {
 "date": "2026-10-16",

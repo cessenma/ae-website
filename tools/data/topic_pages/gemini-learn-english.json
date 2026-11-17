@@ -1,0 +1,342 @@
+{
+ "slug": "gemini-learn-english",
+ "published": "2026-11-17",
+ "target": "Gemini 學英文",
+ "index": 0.5,
+ "h1": "Gemini 學英文：<br>Live 口說、拍課本問問題",
+ "title": "Gemini 學英文：Gemini Live 口說＋24 句指令，附指令產生器｜埃森美語",
+ "desc": "Gemini 學英文怎麼用？Gemini Live 練口說的步驟、拍課本問問題、引導式學習，24 句英文指令加指令產生器，以及年齡規定。2026 年 11 月依 Google 官方說明查證。",
+ "hero": "Gemini 拿來學英文有三種用法：Gemini Live 開口對話、拍課本或作業問它、引導式學習一步一步教。先用指令產生器拿一段指令，再看 24 句常用指令。",
+ "css": ".pb{max-width:860px;margin:18px auto 6px;background:#fff;border-radius:20px;box-shadow:var(--card-shadow);padding:16px 18px 18px}.pb fieldset{border:none;margin:0 0 12px;padding:0;min-width:0}.pb legend{display:block;font-weight:800;color:var(--navy);font-size:15.5px;margin:4px 0 8px;padding:0}.pb-seg{display:flex;flex-wrap:wrap;gap:8px}.pb-seg label{display:inline-flex;align-items:center;gap:6px;background:#F4FAFF;border:1.5px solid rgba(26,39,82,.16);border-radius:999px;padding:8px 14px;cursor:pointer;font-size:15px;min-height:44px;box-sizing:border-box;color:var(--navy);font-weight:600}.pb-seg input{accent-color:#1A2752}.pb-seg label:has(input:checked){background:#1A2752;color:#fff;border-color:#1A2752}.pb-out{width:100%;box-sizing:border-box;min-height:230px;margin-top:6px;border:1.5px solid rgba(26,39,82,.18);border-radius:14px;padding:12px 14px;font:15px/1.6 Inter,system-ui,sans-serif;color:#1f2937;background:#FBFDFF;resize:vertical}.pb-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;align-items:center}.pb-btns .btn{min-height:46px}.pb-note{margin:10px 0 0;font-size:13.5px;line-height:1.7;color:#64748b}.pb-ok{font-weight:700;color:#12873d;font-size:14px}.tk-hero{text-align:left}.tk-hero .tk-hero-grid{max-width:1140px;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:52px;align-items:center}.tk-hero h1{font-size:clamp(32px,3.6vw,50px);margin:14px 0 16px}.tk-hero .divider{margin:0 0 20px}.tk-hero .body{max-width:52ch;margin:0}.tk-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.tk-art{justify-self:center;width:100%;max-width:470px}.tk-cap{margin:12px 0 0;text-align:center;font-size:13px;color:var(--muted)}@media(max-width:880px){.tk-hero{text-align:center}.tk-hero .tk-hero-grid{grid-template-columns:1fr;gap:30px}.tk-hero .divider{margin:0 auto 20px}.tk-hero .body{margin:0 auto}.tk-chips{justify-content:center}.tk-art{max-width:380px}}.tk-s1 h3{max-width:860px;margin:36px auto 12px;display:flex;align-items:center;gap:11px;font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:800;color:var(--navy);letter-spacing:.2px}.tk-s1 .compare{display:flex;flex-direction:column}.tk-s1 .compare>table{order:-1}.tk-s1 .compare>.magnet-box{margin-top:22px}.tk-s1 h3::before{content:'';flex:0 0 auto;width:13px;height:13px;border-radius:4px;background:var(--yellow);box-shadow:3px 3px 0 var(--navy)}.tk-note{max-width:760px;margin:24px auto 26px;background:var(--navy);border-radius:26px;padding:24px 26px 22px;display:grid;grid-template-columns:auto 1fr;column-gap:16px;row-gap:6px;box-shadow:0 16px 36px rgba(26,39,82,.22)}.tk-note img{grid-row:1 / span 3;width:54px;height:54px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px var(--yellow)}.tk-note .tk-tag{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px;letter-spacing:1.5px;color:var(--yellow)}.tk-note blockquote{margin:0;font-size:16.5px;line-height:1.9;color:#F2F6FF}.tk-note blockquote b{color:#fff;box-shadow:inset 0 -8px 0 rgba(255,200,40,.32)}.tk-note figcaption{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:#BFD6FF}@media(max-width:560px){.tk-note{grid-template-columns:1fr;padding:20px 18px}.tk-note img{grid-row:auto}}.tk-phone{width:100%;max-width:330px;margin:0 auto;background:#fff;border:10px solid var(--navy);border-radius:40px;box-shadow:0 24px 54px rgba(26,39,82,.26);padding:12px 12px 14px}.tk-bar{display:flex;align-items:center;gap:9px;padding:4px 6px 11px;border-bottom:1.5px solid rgba(26,39,82,.08);font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14.5px;color:var(--navy)}.tk-bar i{width:30px;height:30px;border-radius:50%;background:var(--acc,var(--green));display:grid;place-items:center;font-style:normal;font-size:15px}.tk-bar small{margin-left:auto;font:600 11.5px 'DM Sans',sans-serif;color:var(--muted)}.tk-b{max-width:86%;margin-top:10px;padding:10px 13px;border-radius:18px;font-size:14.5px;line-height:1.5;color:var(--navy);text-align:left}.tk-b.ai{background:#EEF6FF;border-bottom-left-radius:6px}.tk-b.me{margin-left:auto;background:#DDF8E8;border-bottom-right-radius:6px}.tk-b u{text-decoration:none;font-weight:800;box-shadow:inset 0 -7px 0 rgba(255,200,40,.6)}.tk-b s{color:#b4533c}.tk-b.pic{padding:6px;background:#DDF8E8}.tk-b.pic span{display:block;border-radius:13px;background:repeating-linear-gradient(180deg,#fff 0 9px,#E8EEF8 9px 11px);height:74px;width:150px;border:1.5px solid rgba(26,39,82,.12);position:relative}.tk-b.pic span::after{content:'Unit 3';position:absolute;left:8px;top:6px;font:800 11px 'Baloo 2',sans-serif;color:var(--navy);background:var(--yellow);border-radius:6px;padding:1px 6px}.tk-mic{display:flex;align-items:center;gap:10px;margin-top:14px;padding:9px 12px;border-radius:999px;background:var(--navy)}.tk-mic b{width:30px;height:30px;border-radius:50%;background:var(--acc,var(--green));display:grid;place-items:center;font-size:15px}.tk-wave{display:flex;align-items:center;gap:3px;flex:1}.tk-wave i{display:block;width:3px;border-radius:2px;background:#9FC4FF;height:8px;animation:tkw 1.2s ease-in-out infinite}.tk-wave i:nth-child(2n){animation-delay:.15s}.tk-wave i:nth-child(3n){animation-delay:.3s}.tk-wave i:nth-child(5n){animation-delay:.45s}@keyframes tkw{0%,100%{height:6px}50%{height:20px}}@media(prefers-reduced-motion:reduce){.tk-wave i{animation:none;height:12px}}.pb{max-width:1040px;margin:22px auto 26px;padding:0;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.pb-seg label{position:relative}.pb-seg input{position:absolute;opacity:0;width:1px;height:1px}.pb-seg label:has(input:focus-visible){outline:3px solid var(--blue);outline-offset:2px}.pb-form{padding:20px 22px 18px}.pb-side{background:var(--navy);padding:20px 22px 22px;display:flex;flex-direction:column}.pb-side label{color:var(--yellow)!important;margin-top:0!important}.pb-out{flex:1;min-height:300px;background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.22);color:#F2F6FF;margin-top:10px}.pb-side .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}.pb-ok{color:#8EF0B4}@media(max-width:860px){.pb{grid-template-columns:1fr}.pb-out{min-height:230px}}",
+ "sections": [
+  {
+   "title": "Gemini 學英文指令：指令產生器和 24 句常用指令",
+   "html_top": "<div class=\"pb\" id=\"pb\" data-tool=\"gemini\"><form class=\"pb-form\" id=\"pb-form\" novalidate><fieldset><legend>1. 孩子的程度</legend><div class=\"pb-seg\"><label><input type=\"radio\" name=\"pb-lv\" value=\"a\">剛開始學</label><label><input type=\"radio\" name=\"pb-lv\" value=\"b\" checked>國小中高年級</label><label><input type=\"radio\" name=\"pb-lv\" value=\"c\">國中</label><label><input type=\"radio\" name=\"pb-lv\" value=\"d\">準備英檢初級口說</label></div></fieldset><fieldset><legend>2. 今天聊什麼</legend><div class=\"pb-seg\"><label><input type=\"radio\" name=\"pb-tp\" value=\"me\" checked>自我介紹和家人</label><label><input type=\"radio\" name=\"pb-tp\" value=\"school\">學校生活</label><label><input type=\"radio\" name=\"pb-tp\" value=\"food\">喜歡的食物</label><label><input type=\"radio\" name=\"pb-tp\" value=\"hobby\">興趣</label><label><input type=\"radio\" name=\"pb-tp\" value=\"weekend\">上週末做了什麼</label><label><input type=\"radio\" name=\"pb-tp\" value=\"animal\">動物</label><label><input type=\"radio\" name=\"pb-tp\" value=\"order\">角色扮演：餐廳點餐</label><label><input type=\"radio\" name=\"pb-tp\" value=\"shop\">角色扮演：買東西</label></div></fieldset><fieldset><legend>3. 說錯的時候怎麼改</legend><div class=\"pb-seg\"><label><input type=\"radio\" name=\"pb-fx\" value=\"each\" checked>每一句都改</label><label><input type=\"radio\" name=\"pb-fx\" value=\"end\">最後一起改</label><label><input type=\"radio\" name=\"pb-fx\" value=\"big\">只改聽不懂的大錯</label></div></fieldset><fieldset><legend>4. 練多久</legend><div class=\"pb-seg\"><label><input type=\"radio\" name=\"pb-tm\" value=\"5\" checked>5 分鐘</label><label><input type=\"radio\" name=\"pb-tm\" value=\"10\">10 分鐘</label></div></fieldset></form><div class=\"pb-side\"><label for=\"pb-out\" style=\"display:block;font-weight:800;font-size:15.5px\">你的指令（英文，整段複製）</label><textarea class=\"pb-out\" id=\"pb-out\" readonly spellcheck=\"false\" lang=\"en\"></textarea><div class=\"pb-btns\"><button type=\"button\" class=\"btn btn-primary\" id=\"pb-copy\">複製指令</button><span class=\"pb-ok\" id=\"pb-ok\" aria-live=\"polite\"></span></div></div></div>",
+   "prose": [
+    "四個選項選好，方框裡的英文指令會跟著改。按「複製指令」，貼到 Gemini 的對話框送出，再開 Gemini Live 就能開口說。Gemini 沒有可以直接帶入指令的連結，所以要自己貼上。",
+    "下面 24 句分成四組：Gemini Live 開口說、拍課本和作業問它、單字和句子、引導式學習。底線的地方換成孩子這週學的單字。"
+   ],
+   "html": "<script>(function(){var LV={a:[\"a beginner child who knows only a few English words\",\"Use only very easy words and sentences of three to five words.\"],b:[\"an elementary school student in Taiwan (about CEFR A1)\",\"Use easy words and short sentences.\"],c:[\"a junior high school student in Taiwan (about CEFR A2)\",\"Use everyday words. Sentences can be a little longer.\"],d:[\"a student in Taiwan preparing for the GEPT Elementary speaking test (about CEFR A2)\",\"Use the three task types of that test: repeating sentences, reading sentences aloud, and answering questions.\"]};var TP={me:\"myself and my family\",school:\"my school day\",food:\"food I like\",hobby:\"my hobbies\",weekend:\"what I did last weekend\",animal:\"animals\",order:\"ordering food at a restaurant. You are the waiter and I am the customer\",shop:\"shopping. You are the shop clerk and I am the customer\"};var FX={each:\"If I make a mistake, say the correct sentence once and ask me to repeat it. Then go on.\",end:\"Do not stop me when I make a mistake. At the end, show my mistakes and the correct sentences.\",big:\"Only correct a mistake when it makes my meaning hard to understand.\"};function v(n){var e=document.querySelector('input[name=\"pb-'+n+'\"]:checked');return e?e.value:\"\"}function make(){var l=LV[v(\"lv\")],t=TP[v(\"tp\")],role=(v(\"tp\")===\"order\"||v(\"tp\")===\"shop\");return [\"You are a friendly American English teacher. I am \"+l[0]+\".\",role?(\"Let's do a role-play in English for about \"+v(\"tm\")+\" minutes: \"+t+\".\"):(\"Let's have a conversation in English about \"+t+\" for about \"+v(\"tm\")+\" minutes.\"),\"\",\"Rules:\",\"1. Speak slowly. \"+((role&&v(\"lv\")===\"d\")?\"Use everyday words and short sentences.\":l[1]),\"2. Ask me ONE question at a time, then wait for my answer.\",\"3. Keep each of your turns to one or two sentences.\",\"4. \"+FX[v(\"fx\")],\"5. If I answer in Chinese or say \\\"I don't know\\\", teach me one simple English sentence I can use, and ask me to say it.\",\"6. At the end, list three sentences I said well and three things to practice. Explain them in Traditional Chinese.\",\"\",\"Start now: say hello and ask me the first question.\"].join(\"\\n\")}function go(){var box=document.getElementById(\"pb\");if(!box)return;var out=document.getElementById(\"pb-out\"),open=document.getElementById(\"pb-open\"),ok=document.getElementById(\"pb-ok\");function upd(){var p=make();out.value=p;if(open)open.href=\"https://chatgpt.com/?q=\"+encodeURIComponent(p);ok.textContent=\"\";}box.addEventListener(\"change\",upd);upd();function ev(n){if(window.gtag)gtag(\"event\",n,{tool:box.dataset.tool,level:v(\"lv\"),topic:v(\"tp\")})}document.getElementById(\"pb-copy\").addEventListener(\"click\",function(){var p=out.value;function done(){ok.textContent=\"已複製，貼到對話框就可以開始\";ev(\"prompt_copy\")}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(p).then(done,function(){out.select();document.execCommand(\"copy\");done()})}else{out.select();document.execCommand(\"copy\");done()}});if(open)open.addEventListener(\"click\",function(){ev(\"prompt_open\")});}if(document.readyState===\"loading\")document.addEventListener(\"DOMContentLoaded\",go);else go();})();</script>",
+   "heads": [
+    "貼上去的指令（英文）",
+    "中文意思",
+    "什麼時候用"
+   ],
+   "groups": [
+    {
+     "name": "Gemini Live 開口說 Speaking with Gemini Live（8 句）",
+     "rows": [
+      [
+       "Let's practice English. I am a beginner. Please speak slowly.",
+       "我們來練英文，我是初學者，請說慢一點。",
+       "Live 一開始先說這一句"
+      ],
+      [
+       "Ask me about my day, one question at a time.",
+       "問我今天過得怎麼樣，一次問一個問題。",
+       "每天的暖身"
+      ],
+      [
+       "I will tell you about my family. Please correct my mistakes.",
+       "我要介紹我的家人，請幫我改錯。",
+       "練介紹"
+      ],
+      [
+       "Let's pretend we are at a night market. You are the seller.",
+       "我們假裝在夜市，你是老闆。",
+       "角色扮演"
+      ],
+      [
+       "Say it again more slowly, please.",
+       "請再慢一點說一次。",
+       "聽不清楚時"
+      ],
+      [
+       "Can you say that in Chinese?",
+       "可以用中文說嗎？",
+       "真的聽不懂時；Live 聽得懂也會說中文"
+      ],
+      [
+       "How can I say that better?",
+       "這句話怎麼說比較好？",
+       "說完一句想聽更自然的說法"
+      ],
+      [
+       "Tell me what I should practice next time.",
+       "告訴我下次該練什麼。",
+       "結束前"
+      ]
+     ]
+    },
+    {
+     "name": "拍課本、拍作業問它 Ask about a photo（6 句）",
+     "rows": [
+      [
+       "Here is a page from my English textbook. Ask me five questions about it.",
+       "這是我英文課本的一頁，問我五個跟它有關的問題。",
+       "上傳課本照片後"
+      ],
+      [
+       "Read this page and make a list of the ten most important words, with Chinese.",
+       "讀這一頁，列出最重要的十個單字，附中文。",
+       "預習新的一課"
+      ],
+      [
+       "Don't give me the answers. Give me a hint for number 3.",
+       "不要給我答案，第 3 題給我一個提示。",
+       "寫作業卡住時"
+      ],
+      [
+       "Check my answers. Tell me which ones are wrong, but don't correct them yet.",
+       "檢查我的答案，告訴我哪幾題錯，先不要改。",
+       "寫完作業自己訂正"
+      ],
+      [
+       "Explain this grammar point for a twelve-year-old, in Traditional Chinese.",
+       "用繁體中文，用十二歲聽得懂的方式解釋這個文法。",
+       "課本的說明看不懂時"
+      ],
+      [
+       "Make five more questions like these.",
+       "再出五題像這樣的題目。",
+       "考前多練幾題"
+      ]
+     ]
+    },
+    {
+     "name": "單字和句子 Words and sentences（6 句）",
+     "rows": [
+      [
+       "Make a ten-question quiz with these words: ___.",
+       "用這些單字出十題小考：＿＿。",
+       "背完單字自己考"
+      ],
+      [
+       "Use each word in an easy sentence.",
+       "每個單字各造一個簡單的句子。",
+       "不知道單字怎麼用時"
+      ],
+      [
+       "What is the difference between \"look\", \"see\", and \"watch\"?",
+       "look、see、watch 差在哪裡？",
+       "相似字分不清楚"
+      ],
+      [
+       "Is this sentence natural? \"___\"",
+       "這個句子自然嗎？「＿＿」",
+       "寫完句子想確認"
+      ],
+      [
+       "Give me three ways to say \"I'm tired\".",
+       "「我好累」給我三種說法。",
+       "想換個說法"
+      ],
+      [
+       "Write a short story of 80 words using these words: ___.",
+       "用這些單字寫一個 80 字的小故事：＿＿。",
+       "把單字放進故事裡讀"
+      ]
+     ]
+    },
+    {
+     "name": "引導式學習 Guided Learning（4 句）",
+     "rows": [
+      [
+       "Teach me the past tense step by step. Ask me questions as we go.",
+       "一步一步教我過去式，邊教邊問我問題。",
+       "想弄懂一個文法"
+      ],
+      [
+       "I got this question wrong. Help me find out why.",
+       "我這題寫錯了，幫我找出原因。",
+       "訂正考卷"
+      ],
+      [
+       "Quiz me until I get five right in a row.",
+       "一直考我，考到我連續答對五題。",
+       "考前"
+      ],
+      [
+       "Summarize what I learned today in five sentences.",
+       "用五句話整理我今天學到的東西。",
+       "結束前"
+      ]
+     ]
+    }
+   ],
+   "cls": "tk-s1"
+  },
+  {
+   "title": "Gemini Live 怎麼開始：5 個步驟",
+   "prose": [
+    "<strong>Gemini Live</strong> 是 Gemini 的語音對話功能，免費，聽得懂也會說繁體中文和英文。要注意的是：它目前只在手機和平板的 Gemini App 裡，電腦網頁版還沒有。"
+   ],
+   "heads": [
+    "步驟",
+    "怎麼做",
+    "提醒"
+   ],
+   "rows": [
+    [
+     "1. 裝 App",
+     "Android 或 iPhone 下載 Gemini App，用 Google 帳號登入",
+     "要用自己管理的個人帳號，而且滿 13 歲"
+    ],
+    [
+     "2. 貼上指令",
+     "把產生器的指令貼到對話框送出",
+     "先讓它知道程度和規則"
+    ],
+    [
+     "3. 開 Live",
+     "按對話框旁的 Live 圖示",
+     "2026 年起 Live 併進一般對話，按鈕位置可能和舊的教學不同"
+    ],
+    [
+     "4. 開口說",
+     "說 Let's practice English. 一次回答一個問題",
+     "它說太快就說 Say it again more slowly, please."
+    ],
+    [
+     "5. 結束前",
+     "問 Tell me what I should practice next time.",
+     "把它說的重點記下來"
+    ]
+   ],
+   "after": [
+    "想對照發音，可以用<a href=\"/english-pronunciation/\">英文發音查詢</a>聽慢速示範。"
+   ]
+  },
+  {
+   "title": "拍課本問問題，和引導式學習",
+   "prose": [
+    "Gemini 可以讀照片。把英文課本或作業拍下來上傳，請它出題、列單字、解釋文法。重點是<strong>不要請它直接給答案</strong>：說 Don't give me the answers. Give me a hint.，它就會給提示讓孩子自己想。",
+    "<strong>引導式學習</strong>（Guided Learning）是 Gemini 內建的學習模式，免費：它不一次把答案講完，而是一步一步帶，中間會問問題確認你懂了沒。電腦版在「更多工具」裡，手機 App 的按鈕 Google 還在陸續開放。拿來弄懂一個文法、訂正考卷最適合。"
+   ],
+   "heads": [
+    "想做的事",
+    "用哪一個",
+    "說這一句"
+   ],
+   "rows": [
+    [
+     "開口練對話",
+     "Gemini Live（手機 App）",
+     "Let's practice English."
+    ],
+    [
+     "預習課本新的一課",
+     "上傳照片",
+     "Make a list of the ten most important words, with Chinese."
+    ],
+    [
+     "寫作業卡住",
+     "上傳照片",
+     "Don't give me the answers. Give me a hint."
+    ],
+    [
+     "弄懂一個文法",
+     "引導式學習",
+     "Teach me the past tense step by step."
+    ],
+    [
+     "考前複習單字",
+     "一般對話",
+     "Make a ten-question quiz with these words."
+    ]
+   ]
+  },
+  {
+   "title": "Gemini 還是 ChatGPT？練英文的差別",
+   "prose": [
+    "兩個都能練，免費版也都夠用。差別主要在用什麼裝置、家裡用的是哪一家的帳號。下表是 2026 年 11 月兩家官方說明上寫的情況。"
+   ],
+   "heads": [
+    "比較",
+    "Gemini",
+    "ChatGPT"
+   ],
+   "rows": [
+    [
+     "語音對話",
+     "Gemini Live，免費；只在手機和平板的 App",
+     "ChatGPT Voice，免費但每天有上限；手機 App 和電腦網頁都有"
+    ],
+    [
+     "指令可以用連結帶入嗎",
+     "不行，要自己貼上",
+     "可以，電腦上點連結就會送出"
+    ],
+    [
+     "一步一步教的模式",
+     "引導式學習（Guided Learning）",
+     "學習模式（Study mode）"
+    ],
+    [
+     "年齡",
+     "個人帳號滿 13 歲",
+     "滿 13 歲，未滿 18 歲要家長同意"
+    ],
+    [
+     "家長管理",
+     "13 歲以下由 Family Link 管理的帳號，Google 還在陸續開放",
+     "家長帳號可以和青少年帳號連結，可關語音、設安靜時段"
+    ],
+    [
+     "誰比較順手",
+     "家裡用 Android、Google 帳號的",
+     "想在電腦上練、或想用現成連結的"
+    ]
+   ],
+   "after": [
+    "ChatGPT 的指令和練法，另見<a href=\"/chatgpt-english-speaking-practice/\">ChatGPT 練英文口說</a>。"
+   ]
+  },
+  {
+   "title": "年齡規定，和美國老師的提醒",
+   "prose": [
+    "Google 規定，用個人帳號使用 Gemini 要滿 13 歲；Gemini Live 還要求是自己管理的帳號。13 歲以下由 Family Link 管理的兒童帳號，Google 說正在陸續開放 Gemini，家長可以在 Family Link 裡開關，但每個帳號開放的時間不一定。<strong>最簡單的做法：國小的孩子用家長的手機和帳號，家長坐在旁邊一起用。</strong>",
+    "發音準不準、說話有沒有條理，AI 的回饋都偏客氣，還是要有人聽。不敢開口的孩子，見<a href=\"/afraid-to-speak-english/\">孩子不敢開口說英文怎麼辦</a>；口說怎麼練，見<a href=\"/english-speaking-practice/\">英文口說練習方法</a>。"
+   ],
+   "html_top": "<figure class=\"tk-note reveal\"><img src=\"/assets/img/american-english-banqiao-logo-96.webp\" alt=\"埃森美語\" width=\"54\" height=\"54\" loading=\"lazy\"><span class=\"tk-tag\">老師的話</span><blockquote>這些工具最適合做的，是讓孩子多說、多問。它們不適合做的，是幫孩子寫作業。我會請家長看一件事：孩子問的是「答案是什麼」，還是「為什麼是這個答案」。問後面那一種，才是在學。</blockquote><figcaption>— Mr. Chris，埃森美語創辦人</figcaption></figure>"
+  },
+  {
+   "title": "Gemini 學英文常見問題",
+   "faq": [
+    [
+     "Gemini 可以學英文嗎？免費嗎？",
+     "可以，免費版就夠用。Gemini Live 可以開口對話，上傳課本照片可以請它出題和解釋，引導式學習會一步一步教。三個功能都不用付費。"
+    ],
+    [
+     "Gemini Live 怎麼練英文口說？",
+     "用手機或平板的 Gemini App，先貼一段指令說明孩子的程度，再按 Live 圖示，說 Let's practice English.。Gemini Live 目前只在 App 裡，電腦網頁版還沒有。"
+    ],
+    [
+     "Gemini Live 聽得懂中文嗎？",
+     "聽得懂，也會說繁體中文。孩子聽不懂的時候可以說 Can you say that in Chinese?，聽完中文再請它用英文說一次。"
+    ],
+    [
+     "小學生可以用 Gemini 嗎？",
+     "Google 規定個人帳號使用 Gemini 要滿 13 歲。13 歲以下由 Family Link 管理的帳號，Google 還在陸續開放。國小的孩子建議用家長的手機和帳號，家長在旁邊一起用。"
+    ],
+    [
+     "Gemini 的指令要用英文還是中文寫？",
+     "練口說的指令用英文，它才會從頭用英文回答；想要中文說明，就在指令裡加一句 Explain in Traditional Chinese.。問文法時直接用中文問也可以。"
+    ],
+    [
+     "Gemini 和 ChatGPT 哪個比較適合練英文？",
+     "兩個都可以。想在電腦上開口練，ChatGPT 比較方便；家裡用 Android 手機和 Google 帳號，Gemini Live 最順。可以兩個都試五分鐘，看孩子喜歡哪一個的聲音和速度。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "AI 陪孩子說了很多，有人聽他說得對不對嗎？",
+ "cta": "Gemini 和 ChatGPT 可以讓孩子多開口，但發音和表達要有人當面聽、當面改。我們的小班課由美國老師帶，孩子說的每一句都有人回應。",
+ "hero_chips": [
+  "指令產生器",
+  "24 句常用指令",
+  "Gemini Live 步驟",
+  "2026 年 11 月查證"
+ ],
+ "hero_art": "<div class=\"tk-phone\" style=\"--acc:#1CB0F6\"><div class=\"tk-bar\"><i aria-hidden=\"true\">💬</i>Gemini<small>示意對話</small></div><div class=\"tk-b me pic\"><span></span></div><div class=\"tk-b me\">Don't give me the answers. Give me a hint for number 3.</div><div class=\"tk-b ai\">Sure. Look at the word <u>yesterday</u>. Which tense do we use?</div><div class=\"tk-b me\">Past tense?</div><div class=\"tk-b ai\">Yes! So what is the past tense of <u>go</u>?</div><div class=\"tk-mic\" aria-hidden=\"true\"><b>🎙</b><div class=\"tk-wave\"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><p class=\"tk-cap\">請它給提示、不要給答案，孩子才是自己想出來的</p>"
+}

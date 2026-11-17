@@ -889,5 +889,41 @@
   "alt": "英文子音對照表：24 個子音的音標、例字、有聲無聲配對與發音方式",
   "title": "英文子音對照表",
   "page": "english-vowels-consonants"
+ },
+ "hot-pot-english-chart": {
+  "slug": "hot-pot-english-chart",
+  "png": "/assets/img/charts/hot-pot-english-chart.webp",
+  "w": 2200,
+  "h": 1575,
+  "alt": "火鍋英文對照表：hot pot、麻辣鍋、鴛鴦鍋、涮涮鍋等火鍋種類，湯底與肉類海鮮的英文與中文",
+  "title": "火鍋英文對照表",
+  "page": "hot-pot-english"
+ },
+ "kids-english-youtube-channels-chart": {
+  "slug": "kids-english-youtube-channels-chart",
+  "png": "/assets/img/charts/kids-english-youtube-channels-chart.webp",
+  "w": 2200,
+  "h": 1438,
+  "alt": "兒童英文 YouTube 頻道推薦表：兒歌與律動、字母與自然發音、聽故事三類頻道的名稱、內容與適合年齡",
+  "title": "兒童英文 YouTube 頻道推薦",
+  "page": "kids-english-youtube-channels"
+ },
+ "chatgpt-english-speaking-practice-chart": {
+  "slug": "chatgpt-english-speaking-practice-chart",
+  "png": "/assets/img/charts/chatgpt-english-speaking-practice-chart.webp",
+  "w": 1500,
+  "h": 1264,
+  "alt": "ChatGPT 練英文口說指令表：開始前設定程度與規則的英文指令，以及對話中隨時可以說的句子，附中文",
+  "title": "ChatGPT 練英文口說指令",
+  "page": "chatgpt-english-speaking-practice"
+ },
+ "gemini-learn-english-chart": {
+  "slug": "gemini-learn-english-chart",
+  "png": "/assets/img/charts/gemini-learn-english-chart.webp",
+  "w": 1500,
+  "h": 1438,
+  "alt": "Gemini 學英文指令表：Gemini Live 練口說的英文指令，以及上傳課本和作業照片時可以問的句子，附中文",
+  "title": "Gemini 學英文指令",
+  "page": "gemini-learn-english"
  }
 }

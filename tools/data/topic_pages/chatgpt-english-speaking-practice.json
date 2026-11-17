@@ -1,0 +1,404 @@
+{
+ "slug": "chatgpt-english-speaking-practice",
+ "published": "2026-11-17",
+ "target": "ChatGPT 練英文口說",
+ "index": 0.5,
+ "h1": "ChatGPT 練英文口說：<br>指令產生器＋30 句指令",
+ "title": "ChatGPT 練英文口說：指令產生器＋30 句指令，美國老師教怎麼用｜埃森美語",
+ "desc": "ChatGPT 練英文口說怎麼開始？選孩子的程度和主題，產生可以直接貼上的英文指令；另附 30 句常用指令、各程度的練法、家長設定，以及美國老師說它改得對、改不對什麼。",
+ "hero": "用 ChatGPT 練口說，差別全在第一句指令。選孩子的程度和主題，拿到一段可以整段貼上的英文指令；後面是一位美國老師說它改得對什麼、改不對什麼。",
+ "css": ".pb{max-width:860px;margin:18px auto 6px;background:#fff;border-radius:20px;box-shadow:var(--card-shadow);padding:16px 18px 18px}.pb fieldset{border:none;margin:0 0 12px;padding:0;min-width:0}.pb legend{display:block;font-weight:800;color:var(--navy);font-size:15.5px;margin:4px 0 8px;padding:0}.pb-seg{display:flex;flex-wrap:wrap;gap:8px}.pb-seg label{display:inline-flex;align-items:center;gap:6px;background:#F4FAFF;border:1.5px solid rgba(26,39,82,.16);border-radius:999px;padding:8px 14px;cursor:pointer;font-size:15px;min-height:44px;box-sizing:border-box;color:var(--navy);font-weight:600}.pb-seg input{accent-color:#1A2752}.pb-seg label:has(input:checked){background:#1A2752;color:#fff;border-color:#1A2752}.pb-out{width:100%;box-sizing:border-box;min-height:230px;margin-top:6px;border:1.5px solid rgba(26,39,82,.18);border-radius:14px;padding:12px 14px;font:15px/1.6 Inter,system-ui,sans-serif;color:#1f2937;background:#FBFDFF;resize:vertical}.pb-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;align-items:center}.pb-btns .btn{min-height:46px}.pb-note{margin:10px 0 0;font-size:13.5px;line-height:1.7;color:#64748b}.pb-ok{font-weight:700;color:#12873d;font-size:14px}.tk-hero{text-align:left}.tk-hero .tk-hero-grid{max-width:1140px;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:52px;align-items:center}.tk-hero h1{font-size:clamp(32px,3.6vw,50px);margin:14px 0 16px}.tk-hero .divider{margin:0 0 20px}.tk-hero .body{max-width:52ch;margin:0}.tk-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.tk-art{justify-self:center;width:100%;max-width:470px}.tk-cap{margin:12px 0 0;text-align:center;font-size:13px;color:var(--muted)}@media(max-width:880px){.tk-hero{text-align:center}.tk-hero .tk-hero-grid{grid-template-columns:1fr;gap:30px}.tk-hero .divider{margin:0 auto 20px}.tk-hero .body{margin:0 auto}.tk-chips{justify-content:center}.tk-art{max-width:380px}}.tk-s1 h3{max-width:860px;margin:36px auto 12px;display:flex;align-items:center;gap:11px;font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:800;color:var(--navy);letter-spacing:.2px}.tk-s1 .compare{display:flex;flex-direction:column}.tk-s1 .compare>table{order:-1}.tk-s1 .compare>.magnet-box{margin-top:22px}.tk-s1 h3::before{content:'';flex:0 0 auto;width:13px;height:13px;border-radius:4px;background:var(--yellow);box-shadow:3px 3px 0 var(--navy)}.tk-note{max-width:760px;margin:24px auto 26px;background:var(--navy);border-radius:26px;padding:24px 26px 22px;display:grid;grid-template-columns:auto 1fr;column-gap:16px;row-gap:6px;box-shadow:0 16px 36px rgba(26,39,82,.22)}.tk-note img{grid-row:1 / span 3;width:54px;height:54px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px var(--yellow)}.tk-note .tk-tag{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px;letter-spacing:1.5px;color:var(--yellow)}.tk-note blockquote{margin:0;font-size:16.5px;line-height:1.9;color:#F2F6FF}.tk-note blockquote b{color:#fff;box-shadow:inset 0 -8px 0 rgba(255,200,40,.32)}.tk-note figcaption{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:#BFD6FF}@media(max-width:560px){.tk-note{grid-template-columns:1fr;padding:20px 18px}.tk-note img{grid-row:auto}}.tk-phone{width:100%;max-width:330px;margin:0 auto;background:#fff;border:10px solid var(--navy);border-radius:40px;box-shadow:0 24px 54px rgba(26,39,82,.26);padding:12px 12px 14px}.tk-bar{display:flex;align-items:center;gap:9px;padding:4px 6px 11px;border-bottom:1.5px solid rgba(26,39,82,.08);font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14.5px;color:var(--navy)}.tk-bar i{width:30px;height:30px;border-radius:50%;background:var(--acc,var(--green));display:grid;place-items:center;font-style:normal;font-size:15px}.tk-bar small{margin-left:auto;font:600 11.5px 'DM Sans',sans-serif;color:var(--muted)}.tk-b{max-width:86%;margin-top:10px;padding:10px 13px;border-radius:18px;font-size:14.5px;line-height:1.5;color:var(--navy);text-align:left}.tk-b.ai{background:#EEF6FF;border-bottom-left-radius:6px}.tk-b.me{margin-left:auto;background:#DDF8E8;border-bottom-right-radius:6px}.tk-b u{text-decoration:none;font-weight:800;box-shadow:inset 0 -7px 0 rgba(255,200,40,.6)}.tk-b s{color:#b4533c}.tk-b.pic{padding:6px;background:#DDF8E8}.tk-b.pic span{display:block;border-radius:13px;background:repeating-linear-gradient(180deg,#fff 0 9px,#E8EEF8 9px 11px);height:74px;width:150px;border:1.5px solid rgba(26,39,82,.12);position:relative}.tk-b.pic span::after{content:'Unit 3';position:absolute;left:8px;top:6px;font:800 11px 'Baloo 2',sans-serif;color:var(--navy);background:var(--yellow);border-radius:6px;padding:1px 6px}.tk-mic{display:flex;align-items:center;gap:10px;margin-top:14px;padding:9px 12px;border-radius:999px;background:var(--navy)}.tk-mic b{width:30px;height:30px;border-radius:50%;background:var(--acc,var(--green));display:grid;place-items:center;font-size:15px}.tk-wave{display:flex;align-items:center;gap:3px;flex:1}.tk-wave i{display:block;width:3px;border-radius:2px;background:#9FC4FF;height:8px;animation:tkw 1.2s ease-in-out infinite}.tk-wave i:nth-child(2n){animation-delay:.15s}.tk-wave i:nth-child(3n){animation-delay:.3s}.tk-wave i:nth-child(5n){animation-delay:.45s}@keyframes tkw{0%,100%{height:6px}50%{height:20px}}@media(prefers-reduced-motion:reduce){.tk-wave i{animation:none;height:12px}}.pb{max-width:1040px;margin:22px auto 26px;padding:0;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.pb-seg label{position:relative}.pb-seg input{position:absolute;opacity:0;width:1px;height:1px}.pb-seg label:has(input:focus-visible){outline:3px solid var(--blue);outline-offset:2px}.pb-form{padding:20px 22px 18px}.pb-side{background:var(--navy);padding:20px 22px 22px;display:flex;flex-direction:column}.pb-side label{color:var(--yellow)!important;margin-top:0!important}.pb-out{flex:1;min-height:300px;background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.22);color:#F2F6FF;margin-top:10px}.pb-side .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}.pb-ok{color:#8EF0B4}@media(max-width:860px){.pb{grid-template-columns:1fr}.pb-out{min-height:230px}}",
+ "sections": [
+  {
+   "title": "ChatGPT 練英文口說指令：先用產生器，再看 30 句常用指令",
+   "html_top": "<div class=\"pb\" id=\"pb\" data-tool=\"chatgpt\"><form class=\"pb-form\" id=\"pb-form\" novalidate><fieldset><legend>1. 孩子的程度</legend><div class=\"pb-seg\"><label><input type=\"radio\" name=\"pb-lv\" value=\"a\">剛開始學</label><label><input type=\"radio\" name=\"pb-lv\" value=\"b\" checked>國小中高年級</label><label><input type=\"radio\" name=\"pb-lv\" value=\"c\">國中</label><label><input type=\"radio\" name=\"pb-lv\" value=\"d\">準備英檢初級口說</label></div></fieldset><fieldset><legend>2. 今天聊什麼</legend><div class=\"pb-seg\"><label><input type=\"radio\" name=\"pb-tp\" value=\"me\" checked>自我介紹和家人</label><label><input type=\"radio\" name=\"pb-tp\" value=\"school\">學校生活</label><label><input type=\"radio\" name=\"pb-tp\" value=\"food\">喜歡的食物</label><label><input type=\"radio\" name=\"pb-tp\" value=\"hobby\">興趣</label><label><input type=\"radio\" name=\"pb-tp\" value=\"weekend\">上週末做了什麼</label><label><input type=\"radio\" name=\"pb-tp\" value=\"animal\">動物</label><label><input type=\"radio\" name=\"pb-tp\" value=\"order\">角色扮演：餐廳點餐</label><label><input type=\"radio\" name=\"pb-tp\" value=\"shop\">角色扮演：買東西</label></div></fieldset><fieldset><legend>3. 說錯的時候怎麼改</legend><div class=\"pb-seg\"><label><input type=\"radio\" name=\"pb-fx\" value=\"each\" checked>每一句都改</label><label><input type=\"radio\" name=\"pb-fx\" value=\"end\">最後一起改</label><label><input type=\"radio\" name=\"pb-fx\" value=\"big\">只改聽不懂的大錯</label></div></fieldset><fieldset><legend>4. 練多久</legend><div class=\"pb-seg\"><label><input type=\"radio\" name=\"pb-tm\" value=\"5\" checked>5 分鐘</label><label><input type=\"radio\" name=\"pb-tm\" value=\"10\">10 分鐘</label></div></fieldset></form><div class=\"pb-side\"><label for=\"pb-out\" style=\"display:block;font-weight:800;font-size:15.5px\">你的指令（英文，整段複製）</label><textarea class=\"pb-out\" id=\"pb-out\" readonly spellcheck=\"false\" lang=\"en\"></textarea><div class=\"pb-btns\"><button type=\"button\" class=\"btn btn-primary\" id=\"pb-copy\">複製指令</button><a class=\"btn btn-outline\" id=\"pb-open\" href=\"https://chatgpt.com/\" target=\"_blank\" rel=\"noopener\">在 ChatGPT 開啟</a><span class=\"pb-ok\" id=\"pb-ok\" aria-live=\"polite\"></span></div></div></div>",
+   "prose": [
+    "四個選項選好，方框裡的英文指令會跟著改。按「複製指令」貼到 ChatGPT，或是按「在 ChatGPT 開啟」，電腦會直接把這段指令送出去，接著按對話框旁的語音圖示就能開口說。指令用英文寫，是因為這樣它從第一句就會用英文回你。",
+    "對話開始以後，隨時可以用下面這 30 句調整它：太快就請它慢一點，聽不懂就請它換個說法。這張表可以印出來放在旁邊。"
+   ],
+   "html": "<script>(function(){var LV={a:[\"a beginner child who knows only a few English words\",\"Use only very easy words and sentences of three to five words.\"],b:[\"an elementary school student in Taiwan (about CEFR A1)\",\"Use easy words and short sentences.\"],c:[\"a junior high school student in Taiwan (about CEFR A2)\",\"Use everyday words. Sentences can be a little longer.\"],d:[\"a student in Taiwan preparing for the GEPT Elementary speaking test (about CEFR A2)\",\"Use the three task types of that test: repeating sentences, reading sentences aloud, and answering questions.\"]};var TP={me:\"myself and my family\",school:\"my school day\",food:\"food I like\",hobby:\"my hobbies\",weekend:\"what I did last weekend\",animal:\"animals\",order:\"ordering food at a restaurant. You are the waiter and I am the customer\",shop:\"shopping. You are the shop clerk and I am the customer\"};var FX={each:\"If I make a mistake, say the correct sentence once and ask me to repeat it. Then go on.\",end:\"Do not stop me when I make a mistake. At the end, show my mistakes and the correct sentences.\",big:\"Only correct a mistake when it makes my meaning hard to understand.\"};function v(n){var e=document.querySelector('input[name=\"pb-'+n+'\"]:checked');return e?e.value:\"\"}function make(){var l=LV[v(\"lv\")],t=TP[v(\"tp\")],role=(v(\"tp\")===\"order\"||v(\"tp\")===\"shop\");return [\"You are a friendly American English teacher. I am \"+l[0]+\".\",role?(\"Let's do a role-play in English for about \"+v(\"tm\")+\" minutes: \"+t+\".\"):(\"Let's have a conversation in English about \"+t+\" for about \"+v(\"tm\")+\" minutes.\"),\"\",\"Rules:\",\"1. Speak slowly. \"+((role&&v(\"lv\")===\"d\")?\"Use everyday words and short sentences.\":l[1]),\"2. Ask me ONE question at a time, then wait for my answer.\",\"3. Keep each of your turns to one or two sentences.\",\"4. \"+FX[v(\"fx\")],\"5. If I answer in Chinese or say \\\"I don't know\\\", teach me one simple English sentence I can use, and ask me to say it.\",\"6. At the end, list three sentences I said well and three things to practice. Explain them in Traditional Chinese.\",\"\",\"Start now: say hello and ask me the first question.\"].join(\"\\n\")}function go(){var box=document.getElementById(\"pb\");if(!box)return;var out=document.getElementById(\"pb-out\"),open=document.getElementById(\"pb-open\"),ok=document.getElementById(\"pb-ok\");function upd(){var p=make();out.value=p;if(open)open.href=\"https://chatgpt.com/?q=\"+encodeURIComponent(p);ok.textContent=\"\";}box.addEventListener(\"change\",upd);upd();function ev(n){if(window.gtag)gtag(\"event\",n,{tool:box.dataset.tool,level:v(\"lv\"),topic:v(\"tp\")})}document.getElementById(\"pb-copy\").addEventListener(\"click\",function(){var p=out.value;function done(){ok.textContent=\"已複製，貼到對話框就可以開始\";ev(\"prompt_copy\")}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(p).then(done,function(){out.select();document.execCommand(\"copy\");done()})}else{out.select();document.execCommand(\"copy\");done()}});if(open)open.addEventListener(\"click\",function(){ev(\"prompt_open\")});}if(document.readyState===\"loading\")document.addEventListener(\"DOMContentLoaded\",go);else go();})();</script>",
+   "heads": [
+    "貼上去的指令（英文）",
+    "中文意思",
+    "什麼時候用"
+   ],
+   "groups": [
+    {
+     "name": "開始前先設定 Set it up（6 句）",
+     "rows": [
+      [
+       "I am ten years old. I am learning English. Please use easy words.",
+       "我十歲，正在學英文，請用簡單的字。",
+       "一開始先說年齡和程度"
+      ],
+      [
+       "Speak slowly, please.",
+       "請說慢一點。",
+       "覺得太快時"
+      ],
+      [
+       "Ask me one question at a time.",
+       "一次只問我一個問題。",
+       "它一次講太多時"
+      ],
+      [
+       "Keep your answers short.",
+       "回答短一點。",
+       "它講太長時"
+      ],
+      [
+       "Correct my mistakes after each answer.",
+       "我每說完一句，就幫我改錯。",
+       "想要馬上被糾正"
+      ],
+      [
+       "If I speak Chinese, teach me how to say it in English.",
+       "如果我說中文，教我英文怎麼說。",
+       "孩子卡住會說中文時"
+      ]
+     ]
+    },
+    {
+     "name": "對話中隨時說 Any time（7 句）",
+     "rows": [
+      [
+       "I don't understand. Say it in an easier way.",
+       "我聽不懂，請用簡單一點的方式說。",
+       "聽不懂的時候"
+      ],
+      [
+       "Can you say that again?",
+       "可以再說一次嗎？",
+       "沒聽清楚"
+      ],
+      [
+       "What does that word mean?",
+       "那個字是什麼意思？",
+       "遇到生字"
+      ],
+      [
+       "How do I say this in English?",
+       "這個英文怎麼說？",
+       "先用中文說，再問這一句"
+      ],
+      [
+       "Is my sentence correct?",
+       "我的句子對嗎？",
+       "說完想確認"
+      ],
+      [
+       "Give me an example.",
+       "給我一個例子。",
+       "規則聽不懂時"
+      ],
+      [
+       "Explain that in Traditional Chinese, then say it again in English.",
+       "用繁體中文解釋，再用英文說一次。",
+       "真的聽不懂時"
+      ]
+     ]
+    },
+    {
+     "name": "角色扮演 Role-plays（7 句）",
+     "rows": [
+      [
+       "Let's role-play. You are a waiter. I am the customer.",
+       "我們來角色扮演，你是服務生，我是客人。",
+       "練點餐"
+      ],
+      [
+       "You are a shop clerk. I want to buy a T-shirt.",
+       "你是店員，我想買一件 T 恤。",
+       "練買東西"
+      ],
+      [
+       "You are a new classmate from America. Ask me about my school.",
+       "你是從美國來的新同學，問我學校的事。",
+       "練介紹學校"
+      ],
+      [
+       "You are my teacher. Ask me about my weekend.",
+       "你是我的老師，問我週末做了什麼。",
+       "練過去式"
+      ],
+      [
+       "You are a doctor. I don't feel well.",
+       "你是醫生，我不舒服。",
+       "練身體和感覺的說法"
+      ],
+      [
+       "You are lost in Taipei. Ask me for directions.",
+       "你在台北迷路了，向我問路。",
+       "練指路"
+      ],
+      [
+       "Interview me about my favorite food.",
+       "訪問我最喜歡的食物。",
+       "練描述和原因"
+      ]
+     ]
+    },
+    {
+     "name": "用遊戲練 Games（5 句）",
+     "rows": [
+      [
+       "Let's play 20 questions. Think of an animal. I will ask yes-or-no questions.",
+       "我們來玩 20 個問題，你想一種動物，我問是非題。",
+       "練問句"
+      ],
+      [
+       "Let's tell a story together. You say one sentence, then I say one.",
+       "我們一起編故事，你說一句，我說一句。",
+       "練接話"
+      ],
+      [
+       "Say a word. I will make a sentence with it.",
+       "你說一個單字，我用它造句。",
+       "練造句"
+      ],
+      [
+       "Quiz me on these words: apple, school, happy.",
+       "考我這幾個單字：apple、school、happy。",
+       "把單字換成這週學的"
+      ],
+      [
+       "Give me three clues. I will guess the word.",
+       "給我三個提示，我來猜是哪個字。",
+       "練聽力"
+      ]
+     ]
+    },
+    {
+     "name": "結束前 Wrap up（5 句）",
+     "rows": [
+      [
+       "What mistakes did I make today?",
+       "我今天犯了哪些錯？",
+       "每次結束前問"
+      ],
+      [
+       "Show me the correct sentences.",
+       "把正確的句子給我看。",
+       "接在上一句後面"
+      ],
+      [
+       "Tell me three sentences I said well.",
+       "告訴我三句我說得好的句子。",
+       "讓孩子知道哪裡進步了"
+      ],
+      [
+       "Give me three sentences to practice tomorrow.",
+       "給我三句明天要練的句子。",
+       "當作隔天的暖身"
+      ],
+      [
+       "Explain my mistakes in Traditional Chinese.",
+       "用繁體中文解釋我的錯誤。",
+       "家長想一起看懂時"
+      ]
+     ]
+    }
+   ],
+   "cls": "tk-s1"
+  },
+  {
+   "title": "ChatGPT 練口說怎麼開始：5 個步驟",
+   "prose": [
+    "ChatGPT 的語音功能叫 <strong>ChatGPT Voice</strong>，免費帳號就能用，手機 App 和電腦網頁都有。免費版每天能用的量有限制，OpenAI 沒有公布確切的時間，用完了隔天會恢復。"
+   ],
+   "heads": [
+    "步驟",
+    "怎麼做",
+    "提醒"
+   ],
+   "rows": [
+    [
+     "1. 登入",
+     "手機下載 ChatGPT App，或用電腦開 chatgpt.com",
+     "帳號要滿 13 歲；未滿 13 歲由家長用自己的帳號操作"
+    ],
+    [
+     "2. 貼上指令",
+     "把產生器的指令貼進對話框送出",
+     "先送出文字，它才知道孩子的程度"
+    ],
+    [
+     "3. 開語音",
+     "按對話框旁邊的語音圖示",
+     "第一次會問麥克風權限，選允許"
+    ],
+    [
+     "4. 開口說",
+     "一次只回答一個問題，說完停一下等它回",
+     "它一次講太多，就說 Ask me one question at a time."
+    ],
+    [
+     "5. 結束前要總結",
+     "問 What mistakes did I make today?",
+     "把它列出來的句子抄下來，隔天先唸一次"
+    ]
+   ],
+   "after": [
+    "ChatGPT 還有一個<strong>學習模式</strong>（Study mode），免費可用：它不直接給答案，而是一步一步問問題帶你想。拿來問文法、檢查作業很適合，對話框的「＋」選單裡就找得到。"
+   ]
+  },
+  {
+   "title": "依孩子的程度怎麼練：國小到國中",
+   "prose": [
+    "同一個工具，不同年紀的用法差很多。小小孩需要大人坐在旁邊；國中生可以自己練，但要有人看他最後的總結。"
+   ],
+   "heads": [
+    "程度",
+    "怎麼練",
+    "一次多久"
+   ],
+   "rows": [
+    [
+     "國小低年級、剛開始學",
+     "家長操作手機，孩子在旁邊回答；用「用遊戲練」那一組，或請它問 What's this? 這類問題",
+     "5 分鐘"
+    ],
+    [
+     "國小中高年級",
+     "用產生器選「國小中高年級」，主題選自我介紹、食物、興趣；家長在旁邊聽",
+     "5–10 分鐘"
+    ],
+    [
+     "國中",
+     "角色扮演和「上週末做了什麼」最有用，可以練到過去式；結束前一定要它列出錯誤",
+     "10 分鐘"
+    ],
+    [
+     "準備全民英檢初級口說",
+     "產生器選「準備英檢初級口說」，它會照複誦、朗讀、回答問題三種題型出題",
+     "10 分鐘，一週三次"
+    ]
+   ],
+   "after": [
+    "英檢初級口說的題型和評分方式，見<a href=\"/gept-elementary-speaking-practice/\">全民英檢初級口說練習</a>；一般的口說練法，見<a href=\"/english-speaking-practice/\">英文口說練習方法</a>。"
+   ]
+  },
+  {
+   "title": "美國老師的老實話：ChatGPT 改得對什麼、改不對什麼",
+   "prose": [
+    "另外三件事要知道。第一，<strong>它什麼都稱讚</strong>，孩子說得普通它也說 Great job!，所以結束前一定要問它犯了哪些錯。第二，<strong>它話很多</strong>，不限制的話一次講五六句，孩子只是在聽；產生器的指令已經先規定它一次只說一兩句。第三，<strong>它不認得兩個人的聲音</strong>：OpenAI 自己說語音功能還不適合多人同時說話，家長和孩子共用一支手機時，輪流說、不要搶話。"
+   ],
+   "heads": [
+    "這件事",
+    "交給 ChatGPT",
+    "要靠人"
+   ],
+   "rows": [
+    [
+     "敢開口、多說幾句",
+     "很適合，隨時可以練",
+     "—"
+    ],
+    [
+     "文法和用字對不對",
+     "改得準，還會解釋",
+     "—"
+    ],
+    [
+     "發音準不準",
+     "不可靠",
+     "老師或家長聽，或對照發音示範"
+    ],
+    [
+     "說的內容好不好、有沒有條理",
+     "會給建議，但都很客氣",
+     "老師會直接說哪裡要重來"
+    ],
+    [
+     "孩子有沒有真的在練",
+     "看不出來",
+     "家長看它最後列的錯誤"
+    ]
+   ],
+   "after": [
+    "發音要自己對照的話，可以用<a href=\"/english-pronunciation/\">英文發音查詢</a>聽慢速示範；孩子不敢開口的原因和做法，見<a href=\"/afraid-to-speak-english/\">孩子不敢開口說英文怎麼辦</a>。"
+   ],
+   "html_top": "<figure class=\"tk-note reveal\"><img src=\"/assets/img/american-english-banqiao-logo-96.webp\" alt=\"埃森美語\" width=\"54\" height=\"54\" loading=\"lazy\"><span class=\"tk-tag\">老師的話</span><blockquote>ChatGPT 最大的好處是有耐心。孩子同一句話說十次，它不會不耐煩，也不會笑他，不敢開口的孩子特別需要這一點。文法和用字它改得很準。它最弱的是發音：它常常猜得到你想說哪個字，就當作你唸對了，所以它說你唸得很好，不代表真的唸對。</blockquote><figcaption>— Mr. Chris，埃森美語創辦人</figcaption></figure>"
+  },
+  {
+   "title": "家長要做的設定：年齡、家長監護、隱私",
+   "prose": [
+    "下面幾項依 OpenAI 的使用條款和說明頁整理（2026 年 11 月）。功能會變，設定前以官方頁面為準。"
+   ],
+   "heads": [
+    "項目",
+    "規定或做法",
+    "家長可以做什麼"
+   ],
+   "rows": [
+    [
+     "年齡",
+     "要滿 13 歲；未滿 18 歲要有家長或監護人同意",
+     "未滿 13 歲的孩子不要自己開帳號，由家長操作、孩子在旁邊說"
+    ],
+    [
+     "家長監護功能",
+     "家長的帳號可以和青少年的帳號連結，由其中一方發出邀請",
+     "可以關閉語音功能、設定安靜時段、減少敏感內容"
+    ],
+    [
+     "看不到對話",
+     "家長監護功能不能讀孩子的對話內容",
+     "想知道孩子練了什麼，請他把最後的總結給你看"
+    ],
+    [
+     "不要給個人資料",
+     "不說全名、學校名稱、住址、電話",
+     "練自我介紹時用英文名字就好"
+    ],
+    [
+     "一起用",
+     "國小的孩子練的時候，大人在旁邊",
+     "順便知道他卡在哪裡"
+    ]
+   ]
+  },
+  {
+   "title": "ChatGPT 練英文口說常見問題",
+   "faq": [
+    [
+     "ChatGPT 可以練英文口說嗎？要錢嗎？",
+     "可以。ChatGPT 的語音功能（ChatGPT Voice）免費帳號就能用，手機 App 和電腦網頁都有；免費版每天的用量有上限，OpenAI 沒有公布確切時間。先貼一段指令告訴它孩子的程度和規則，再按語音圖示開始說。"
+    ],
+    [
+     "ChatGPT 練口說的指令要用英文還是中文？",
+     "用英文。指令是英文，它從第一句就會用英文回答；指令裡再加一句「用繁體中文解釋我的錯誤」，最後的總結就會是中文。上面的指令產生器已經這樣寫好了。"
+    ],
+    [
+     "小學生可以用 ChatGPT 練英文嗎？",
+     "OpenAI 規定使用者要滿 13 歲，未滿 18 歲要有家長同意。國小的孩子請由家長用自己的帳號操作，孩子在旁邊回答，一次 5 到 10 分鐘。"
+    ],
+    [
+     "ChatGPT 會糾正英文發音嗎？",
+     "不太可靠。它常常猜得出你想說的字，就當作你唸對了。文法和用字它改得準，發音還是要有人聽，或是對照發音示範自己比。"
+    ],
+    [
+     "每天用 ChatGPT 練口說多久比較好？",
+     "5 到 10 分鐘就夠，重點是每次結束前請它列出今天的錯誤和三句明天要練的句子，隔天先把那三句唸一次再開始。"
+    ],
+    [
+     "可以用 ChatGPT 準備全民英檢初級口說嗎？",
+     "可以拿來練回答問題和朗讀：請它照初級口說的三種題型（複誦、朗讀、回答問題）出題，一次一題。評分標準和真正的題目長相，還是要看官方的範例。"
+    ],
+    [
+     "ChatGPT 和真人英文老師差在哪裡？",
+     "ChatGPT 隨時可以練、不會不耐煩，適合增加開口的次數。它聽不準發音、什麼都稱讚，也不知道孩子學校教到哪裡；這三件事要靠老師。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "每天跟 ChatGPT 說五分鐘，孩子的發音有人聽嗎？",
+ "cta": "ChatGPT 可以陪孩子多說幾句，但唸得準不準、說得好不好，還是要有人當面聽。我們的小班課由美國老師帶，孩子說的每一句都有人回應、有人修正。",
+ "hero_chips": [
+  "指令產生器",
+  "30 句常用指令",
+  "家長設定",
+  "2026 年 11 月查證"
+ ],
+ "hero_art": "<div class=\"tk-phone\" style=\"--acc:#06C755\"><div class=\"tk-bar\"><i aria-hidden=\"true\">💬</i>English practice<small>示意對話</small></div><div class=\"tk-b ai\">Hi! What did you do yesterday?</div><div class=\"tk-b me\">I <s>go</s> to school yesterday.</div><div class=\"tk-b ai\">Good try! Say: I <u>went</u> to school yesterday. Now you say it.</div><div class=\"tk-b me\">I <u>went</u> to school yesterday.</div><div class=\"tk-b ai\">Perfect! What did you do at school?</div><div class=\"tk-mic\" aria-hidden=\"true\"><b>🎙</b><div class=\"tk-wave\"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><p class=\"tk-cap\">指令寫好「每一句都改」，它就會這樣回</p>"
+}

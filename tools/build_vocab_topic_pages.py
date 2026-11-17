@@ -1564,6 +1564,7 @@ if os.path.isdir(SPEC_DIR):
             published=_sp["published"], target=_sp["target"], index=_sp.get("index", 0.5),
             h1=_sp["h1"], title=_sp["title"], desc=_sp["desc"], hero=_sp["hero"],
             body=(lambda sp=_sp: from_spec(sp)), own_ld=bool(_sp.get("jsonld")),
+            hero_art=_sp.get("hero_art"), hero_chips=_sp.get("hero_chips"),
             faq_n=sum(len(x.get("faq", [])) for x in _sp["sections"]),
             head_extra=(('<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
                          f'<link rel="stylesheet" href="{_sp["font_href"]}">') if _sp.get("font_href") else "")
@@ -1627,12 +1628,21 @@ def render(slug, cfg):
     if cfg.get("head_extra"):
         head += cfg["head_extra"] + "\n"
 
-    main = (f'<main id="top">'
-      f'<section class="page-hero"><div class="bg-deco"></div><div class="wrap">'
-      f'<div class="breadcrumb reveal"><a href="/">首頁</a> › <a href="/blog/">學習資源</a> › {cfg["target"]}</div>'
-      f'<h1 class="reveal d1">{cfg["h1"]}</h1><div class="divider reveal d1"></div>'
-      f'<p class="body reveal d2">{cfg["hero"]}</p></div></section>'
-      f'{cfg["body"]()}</main>')
+    crumb = f'<div class="breadcrumb reveal"><a href="/">首頁</a> › <a href="/blog/">學習資源</a> › {cfg["target"]}</div>'
+    if cfg.get("hero_art"):
+        # 2026-11-17: a spec page may bring its own hero picture (inline SVG / HTML) and a few chips;
+        # copy on the left, picture on the right, stacked on phones. The page's own css styles .tk-*.
+        chips = "".join(f'<span class="chip">{c}</span>' for c in cfg.get("hero_chips") or [])
+        hero = (f'<section class="page-hero tk-hero"><div class="bg-deco"></div><div class="wrap tk-hero-grid">'
+                f'<div class="tk-copy">{crumb}<h1 class="reveal d1">{cfg["h1"]}</h1><div class="divider reveal d1"></div>'
+                f'<p class="body reveal d2">{cfg["hero"]}</p>'
+                + (f'<div class="tk-chips reveal d2">{chips}</div>' if chips else "")
+                + f'</div><div class="tk-art reveal d2">{cfg["hero_art"]}</div></div></section>')
+    else:
+        hero = (f'<section class="page-hero"><div class="bg-deco"></div><div class="wrap">{crumb}'
+                f'<h1 class="reveal d1">{cfg["h1"]}</h1><div class="divider reveal d1"></div>'
+                f'<p class="body reveal d2">{cfg["hero"]}</p></div></section>')
+    main = f'<main id="top">{hero}{cfg["body"]()}</main>'
 
     tail = shell.split("</head>", 1)[1]
     tail = re.sub(r'<main id="top">.*?</main>', lambda m: main, tail, flags=re.S)   # main may hold a script with \u escapes
