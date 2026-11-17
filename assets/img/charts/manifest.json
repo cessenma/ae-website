@@ -925,5 +925,41 @@
   "alt": "Gemini 學英文指令表：Gemini Live 練口說的英文指令，以及上傳課本和作業照片時可以問的句子，附中文",
   "title": "Gemini 學英文指令",
   "page": "gemini-learn-english"
+ },
+ "chatgpt-english-essay-correction-chart": {
+  "slug": "chatgpt-english-essay-correction-chart",
+  "png": "/assets/img/charts/chatgpt-english-essay-correction-chart.webp",
+  "w": 1500,
+  "h": 1193,
+  "alt": "ChatGPT 英文作文批改指令表：貼作文之前設定程度與規則的英文指令，以及請它標出錯誤、不要重寫的句子，附中文",
+  "title": "ChatGPT 英文作文批改指令",
+  "page": "chatgpt-english-essay-correction"
+ },
+ "breakfast-shop-english-chart": {
+  "slug": "breakfast-shop-english-chart",
+  "png": "/assets/img/charts/breakfast-shop-english-chart.webp",
+  "w": 2200,
+  "h": 1383,
+  "alt": "早餐店英文菜單對照表：蛋餅 egg crepe、吐司、三明治、漢堡等早餐店品項的英文與中文",
+  "title": "早餐店英文菜單對照表",
+  "page": "breakfast-shop-english"
+ },
+ "night-market-english-chart": {
+  "slug": "night-market-english-chart",
+  "png": "/assets/img/charts/night-market-english-chart.webp",
+  "w": 2200,
+  "h": 1205,
+  "alt": "夜市英文對照表：臭豆腐、蚵仔煎、雞排、地瓜球、豆花等夜市小吃和甜點的英文與中文",
+  "title": "夜市英文對照表",
+  "page": "night-market-english"
+ },
+ "convenience-store-english-chart": {
+  "slug": "convenience-store-english-chart",
+  "png": "/assets/img/charts/convenience-store-english-chart.webp",
+  "w": 2200,
+  "h": 1349,
+  "alt": "便利商店英文對照表：要加熱嗎、需要袋子嗎、有載具嗎等店員會說的話，以及客人加熱、加值、取貨的英文與中文",
+  "title": "便利商店英文對照表",
+  "page": "convenience-store-english"
  }
 }

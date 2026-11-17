@@ -1,0 +1,693 @@
+{
+ "slug": "breakfast-shop-english",
+ "published": "2026-11-18",
+ "target": "早餐店英文",
+ "index": 0.5,
+ "h1": "早餐店英文菜單：<br>蛋餅、吐司、飲料 64 個說法",
+ "title": "早餐店英文菜單：蛋餅、蘿蔔糕等 64 個說法＋點餐對話（附PDF）｜埃森美語",
+ "desc": "早餐店英文菜單對照表：蛋餅、蘿蔔糕、鐵板麵、飯糰、燒餅油條、大冰奶共 64 個說法，選一選就組出一句英文點餐句，加上內用外帶、去冰半糖的說法和點餐對話，附 A4 PDF。",
+ "hero": "蛋餅是 <strong>egg crepe</strong>，大冰奶是 <strong>a large iced milk tea</strong>。早餐店菜單上的 64 樣東西都對好英文了，還可以選一選，組出一句完整的點餐句。",
+ "hero_chips": [
+  "64 個說法",
+  "點餐句產生器",
+  "點餐對話",
+  "A4 雙語菜單"
+ ],
+ "hero_art": "<div class=\"tk-slip\"><h4><span>ORDER 點餐單</span><span>No. 27</span></h4><ul><li><i>✓</i><span>egg crepe<small>蛋餅</small></span><b>+ cheese</b></li><li><i></i><span>turnip cake<small>蘿蔔糕</small></span><b></b></li><li><i>✓</i><span>iced milk tea<small>冰奶茶</small></span><b>large</b></li><li><i>✓</i><span>to go<small>外帶</small></span><b></b></li></ul></div><div class=\"tk-say\">“I'd like an egg crepe with cheese and a large iced milk tea, to go, please.”</div>",
+ "sections": [
+  {
+   "title": "早餐店英文菜單對照表：選一選，組出點餐句",
+   "html_top": "<div class=\"ob\" id=\"ob\"><form class=\"ob-form\" novalidate><fieldset><legend>1. 吃什麼</legend><div class=\"ob-seg\"><label><input type=\"radio\" name=\"ob-food\" value=\"crepe\" checked>蛋餅</label><label><input type=\"radio\" name=\"ob-food\" value=\"turnip\">蘿蔔糕</label><label><input type=\"radio\" name=\"ob-food\" value=\"sand\">火腿蛋吐司</label><label><input type=\"radio\" name=\"ob-food\" value=\"burger\">豬肉蛋堡</label><label><input type=\"radio\" name=\"ob-food\" value=\"noodle\">鐵板麵</label><label><input type=\"radio\" name=\"ob-food\" value=\"roll\">飯糰</label><label><input type=\"radio\" name=\"ob-food\" value=\"none\">不用</label></div></fieldset><fieldset><legend>2. 要加什麼</legend><div class=\"ob-seg\"><label><input type=\"radio\" name=\"ob-add\" value=\"none\">不用</label><label><input type=\"radio\" name=\"ob-add\" value=\"cheese\" checked>加起司</label><label><input type=\"radio\" name=\"ob-add\" value=\"egg\">加蛋</label><label><input type=\"radio\" name=\"ob-add\" value=\"nomayo\">不要美乃滋</label></div></fieldset><fieldset><legend>3. 喝什麼</legend><div class=\"ob-seg\"><label><input type=\"radio\" name=\"ob-drink\" value=\"milktea\" checked>奶茶</label><label><input type=\"radio\" name=\"ob-drink\" value=\"blacktea\">紅茶</label><label><input type=\"radio\" name=\"ob-drink\" value=\"soy\">豆漿</label><label><input type=\"radio\" name=\"ob-drink\" value=\"coffee\">咖啡</label><label><input type=\"radio\" name=\"ob-drink\" value=\"none\">不用</label></div></fieldset><fieldset><legend>4. 飲料的大小和冰熱</legend><div class=\"ob-seg\"><label><input type=\"radio\" name=\"ob-size\" value=\"li\" checked>大杯冰的</label><label><input type=\"radio\" name=\"ob-size\" value=\"mi\">中杯冰的</label><label><input type=\"radio\" name=\"ob-size\" value=\"hot\">熱的</label></div></fieldset><fieldset><legend>5. 內用還是外帶</legend><div class=\"ob-seg\"><label><input type=\"radio\" name=\"ob-where\" value=\"go\" checked>外帶</label><label><input type=\"radio\" name=\"ob-where\" value=\"here\">內用</label></div></fieldset></form><div class=\"ob-side\"><span>對店員說</span><p class=\"ob-en\" id=\"ob-en\" lang=\"en\" aria-live=\"polite\"></p><p class=\"ob-zh\" id=\"ob-zh\"></p></div></div>",
+   "prose": [
+    "上面選好要吃的、要喝的，右邊就是一句可以直接對店員說的英文。下面是完整的菜單對照表，分成 7 組：<strong>蛋餅、吐司和三明治、漢堡、中式早餐、點心、飲料、點餐會說的話</strong>。早餐店老闆想做雙語菜單，可以直接下載 A4 的 PDF。",
+    "蛋餅、飯糰、燒餅、油條這些東西美國沒有，英文有兩種說法：<strong>照材料說</strong>（egg crepe、sticky rice roll），或<strong>直接用拼音</strong>（dan bing、fan tuan）。對第一次來台灣的外國朋友，用前一種；對住過台灣的人，拼音更快。其他食物的說法見<a href=\"/food-english/\">食物英文</a>。"
+   ],
+   "html": "<script>(function(){var F={crepe:[\"an egg crepe\",\"蛋餅\"],turnip:[\"turnip cake\",\"蘿蔔糕\"],sand:[\"a ham and egg sandwich\",\"火腿蛋吐司\"],burger:[\"a pork burger with egg\",\"豬肉蛋堡\"],noodle:[\"pan-fried noodles\",\"鐵板麵\"],roll:[\"a sticky rice roll\",\"飯糰\"]};var A={cheese:[\" with cheese\",\"加起司\"],egg:[\" with an extra egg\",\"加蛋\"],nomayo:[\" with no mayo\",\"不要美乃滋\"]};var D={milktea:[\"milk tea\",\"奶茶\"],blacktea:[\"black tea\",\"紅茶\"],soy:[\"soy milk\",\"豆漿\"],coffee:[\"coffee\",\"咖啡\"]};var S={li:[\"a large iced \",\"大杯冰\"],mi:[\"a medium iced \",\"中杯冰\"],hot:[\"a hot \",\"熱\"]};function v(n){var e=document.querySelector('input[name=\"ob-'+n+'\"]:checked');return e?e.value:\"\"}function go(){var box=document.getElementById(\"ob\");if(!box)return;function upd(){var f=F[v(\"food\")],a=A[v(\"add\")],d=D[v(\"drink\")],s=S[v(\"size\")],en=[],zh=[];if(f){en.push(f[0]+(a?(f[0].indexOf(\" with \")>0?\" and\"+a[0].slice(5):a[0]):\"\"));zh.push((a&&v(\"add\")!==\"nomayo\"?\"\":\"\")+f[1]+(a?\"（\"+a[1]+\"）\":\"\"));}if(d){en.push(s[0]+d[0]);zh.push(s[1]+d[1]);}var here=v(\"where\")===\"here\";if(!en.length){document.getElementById(\"ob-en\").textContent=\"Nothing for me, thanks.\";document.getElementById(\"ob-zh\").textContent=\"我不用，謝謝。\";return;}document.getElementById(\"ob-en\").textContent=\"I'd like \"+en.join(\" and \")+\", \"+(here?\"for here\":\"to go\")+\", please.\";document.getElementById(\"ob-zh\").textContent=\"我要\"+zh.join(\"和\")+\"，\"+(here?\"內用\":\"外帶\")+\"，謝謝。\";}box.addEventListener(\"change\",function(){upd();if(window.gtag)gtag(\"event\",\"order_build\",{tool:\"breakfast\",item:v(\"food\")})});upd();}if(document.readyState===\"loading\")document.addEventListener(\"DOMContentLoaded\",go);else go();})();</script>",
+   "heads": [
+    "英文",
+    "中文",
+    "用法／注意"
+   ],
+   "groups": [
+    {
+     "name": "蛋餅 Egg crepes（8 個）",
+     "rows": [
+      [
+       "plain egg crepe",
+       "原味蛋餅",
+       "蛋餅是 egg crepe，也有人說 egg pancake 或直接說 dan bing"
+      ],
+      [
+       "cheese egg crepe",
+       "起司蛋餅",
+       "口味放最前面"
+      ],
+      [
+       "corn egg crepe",
+       "玉米蛋餅",
+       "corn＝玉米"
+      ],
+      [
+       "tuna egg crepe",
+       "鮪魚蛋餅",
+       "tuna＝鮪魚"
+      ],
+      [
+       "ham egg crepe",
+       "火腿蛋餅",
+       "ham＝火腿"
+      ],
+      [
+       "bacon egg crepe",
+       "培根蛋餅",
+       "bacon＝培根"
+      ],
+      [
+       "pork floss egg crepe",
+       "肉鬆蛋餅",
+       "美國沒有肉鬆，可以補一句 dried shredded pork"
+      ],
+      [
+       "vegetable egg crepe",
+       "蔬菜蛋餅",
+       "vegetable 可以簡稱 veggie"
+      ]
+     ]
+    },
+    {
+     "name": "吐司和三明治 Toast and sandwiches（10 個）",
+     "rows": [
+      [
+       "ham and egg sandwich",
+       "火腿蛋吐司",
+       "台灣早餐店的吐司夾料，英文是 sandwich"
+      ],
+      [
+       "pork and egg sandwich",
+       "豬肉蛋吐司",
+       "肉排是 pork patty"
+      ],
+      [
+       "bacon and egg sandwich",
+       "培根蛋吐司",
+       "and 不能省"
+      ],
+      [
+       "tuna sandwich",
+       "鮪魚吐司",
+       "也說 tuna salad sandwich"
+      ],
+      [
+       "club sandwich",
+       "總匯三明治",
+       "三層的三明治"
+      ],
+      [
+       "toast with butter",
+       "奶油吐司",
+       "toast 不可數，一片是 a slice of toast"
+      ],
+      [
+       "thick toast with peanut butter",
+       "花生厚片",
+       "peanut butter＝花生醬"
+      ],
+      [
+       "thick toast with chocolate spread",
+       "巧克力厚片",
+       "spread＝抹醬"
+      ],
+      [
+       "French toast",
+       "法國吐司",
+       "F 要大寫"
+      ],
+      [
+       "no crust, please",
+       "吐司去邊",
+       "crust＝吐司邊"
+      ]
+     ]
+    },
+    {
+     "name": "漢堡 Burgers（6 個）",
+     "rows": [
+      [
+       "pork burger",
+       "豬肉漢堡",
+       "美國的 hamburger 是牛肉，豬肉的要說 pork burger"
+      ],
+      [
+       "pork burger with egg",
+       "豬肉蛋堡",
+       "with egg＝加蛋"
+      ],
+      [
+       "crispy chicken burger",
+       "卡啦雞腿堡",
+       "crispy＝酥脆的"
+      ],
+      [
+       "fish burger",
+       "鱈魚堡",
+       "fish fillet burger 也可以"
+      ],
+      [
+       "beef burger",
+       "牛肉堡",
+       "beef＝牛肉"
+      ],
+      [
+       "cheeseburger",
+       "起司堡",
+       "一個字"
+      ]
+     ]
+    },
+    {
+     "name": "中式早餐 Chinese-style breakfast（12 個）",
+     "rows": [
+      [
+       "turnip cake",
+       "蘿蔔糕",
+       "也說 radish cake"
+      ],
+      [
+       "pan-fried noodles with black pepper sauce",
+       "黑胡椒鐵板麵",
+       "蘑菇口味是 mushroom sauce"
+      ],
+      [
+       "sticky rice roll",
+       "飯糰",
+       "台式飯糰；也直接說 fan tuan"
+      ],
+      [
+       "sesame flatbread",
+       "燒餅",
+       "也直接說 shaobing"
+      ],
+      [
+       "fried dough stick",
+       "油條",
+       "也直接說 youtiao"
+      ],
+      [
+       "flaky scallion pancake",
+       "蔥抓餅",
+       "flaky＝一層一層酥酥的"
+      ],
+      [
+       "scallion pancake",
+       "蔥油餅",
+       "scallion＝青蔥"
+      ],
+      [
+       "steamed bun",
+       "饅頭",
+       "沒有餡"
+      ],
+      [
+       "steamed pork bun",
+       "肉包",
+       "有餡的包子"
+      ],
+      [
+       "soup dumplings",
+       "小籠包",
+       "也直接說 xiaolongbao"
+      ],
+      [
+       "potstickers",
+       "鍋貼",
+       "煎餃也是 potstickers"
+      ],
+      [
+       "rice porridge",
+       "粥",
+       "也說 congee"
+      ]
+     ]
+    },
+    {
+     "name": "點心 Sides（6 個）",
+     "rows": [
+      [
+       "hash brown",
+       "薯餅",
+       "兩個字"
+      ],
+      [
+       "chicken nuggets",
+       "雞塊",
+       "nugget＝小塊"
+      ],
+      [
+       "hot dog",
+       "熱狗",
+       "兩個字"
+      ],
+      [
+       "fried egg",
+       "荷包蛋",
+       "半熟是 sunny-side up"
+      ],
+      [
+       "French fries",
+       "薯條",
+       "美式說 fries，英式說 chips"
+      ],
+      [
+       "corn soup",
+       "玉米濃湯",
+       "soup 用 have 或 eat"
+      ]
+     ]
+    },
+    {
+     "name": "飲料 Drinks（10 個）",
+     "rows": [
+      [
+       "milk tea",
+       "奶茶",
+       "冰的是 iced milk tea"
+      ],
+      [
+       "black tea",
+       "紅茶",
+       "中文說紅，英文說 black"
+      ],
+      [
+       "soy milk",
+       "豆漿",
+       "不加糖是 unsweetened"
+      ],
+      [
+       "savory soy milk",
+       "鹹豆漿",
+       "savory＝鹹食的鹹"
+      ],
+      [
+       "rice and peanut milk",
+       "米漿",
+       "美國沒有，照材料說"
+      ],
+      [
+       "soy milk with black tea",
+       "豆漿紅茶",
+       "with＝加"
+      ],
+      [
+       "coffee",
+       "咖啡",
+       "美式是 Americano，拿鐵是 latte"
+      ],
+      [
+       "milk",
+       "鮮奶",
+       "熱的是 hot milk"
+      ],
+      [
+       "orange juice",
+       "柳橙汁",
+       "juice＝果汁"
+      ],
+      [
+       "a large iced milk tea",
+       "大冰奶",
+       "順序是大小、冰熱、飲料"
+      ]
+     ]
+    },
+    {
+     "name": "點餐會說的話 Ordering（12 句）",
+     "rows": [
+      [
+       "For here or to go?",
+       "內用還是外帶？",
+       "店員問"
+      ],
+      [
+       "To go, please.",
+       "外帶，謝謝。",
+       "內用是 For here, please."
+      ],
+      [
+       "I'd like a cheese egg crepe.",
+       "我要一份起司蛋餅。",
+       "I'd like 比 I want 有禮貌"
+      ],
+      [
+       "Can I add an egg?",
+       "可以加蛋嗎？",
+       "add＝加"
+      ],
+      [
+       "No mayonnaise, please.",
+       "不要美乃滋，謝謝。",
+       "口語說 no mayo"
+      ],
+      [
+       "No ice, please.",
+       "去冰，謝謝。",
+       "少冰是 less ice"
+      ],
+      [
+       "Half sugar, please.",
+       "半糖，謝謝。",
+       "無糖是 no sugar"
+      ],
+      [
+       "Can you cut it in half?",
+       "可以對切嗎？",
+       "三明治、漢堡常用"
+      ],
+      [
+       "How much is it?",
+       "多少錢？",
+       "也說 How much altogether?"
+      ],
+      [
+       "Here you go.",
+       "給你。",
+       "付錢、遞東西時說"
+      ],
+      [
+       "Can I have a bag?",
+       "可以給我一個袋子嗎？",
+       "bag＝袋子"
+      ],
+      [
+       "Thank you! Have a nice day.",
+       "謝謝，祝你有美好的一天。",
+       "離開時說"
+      ]
+     ]
+    }
+   ],
+   "cls": "tk-s1"
+  },
+  {
+   "title": "早餐店英文怎麼說、怎麼唸",
+   "prose": [
+    "早餐店的英文是 <strong>breakfast shop</strong>，也可以說 breakfast place。美國沒有台灣這種街角的早餐店，所以沒有完全對應的字；跟美國人解釋時說 a small shop that sells breakfast to go，對方就懂。不要說 breakfast store，store 是賣東西的商店，不是吃東西的地方。",
+    "怎麼唸：<strong>breakfast [ˈbrɛkfəst]</strong>，重音在前，唸起來像 BREK-fist，不是 break 加 fast。<strong>crepe [krep]</strong> 是法文來的字，只有一個音節，結尾的 e 不發音。每個 KK 符號的唸法見 <a href=\"/kk-phonetic-chart/\">KK 音標表</a>。"
+   ],
+   "heads": [
+    "英文",
+    "KK 音標",
+    "注意"
+   ],
+   "rows": [
+    [
+     "breakfast",
+     "[ˈbrɛkfəst]",
+     "BREK-fist，第二個音節很輕"
+    ],
+    [
+     "crepe",
+     "[krep]",
+     "一個音節，不是 cre-pe"
+    ],
+    [
+     "sandwich",
+     "[ˈsændwɪtʃ]",
+     "d 很輕，很多人唸成 SAN-wich"
+    ],
+    [
+     "toast",
+     "[tost]",
+     "母音是長的 [o]，結尾 st 要收乾淨"
+    ],
+    [
+     "scallion",
+     "[ˈskæljən]",
+     "重音在前，SCAL-yun"
+    ],
+    [
+     "porridge",
+     "[ˈpɔrɪdʒ]",
+     "結尾是 [dʒ]，像 bridge"
+    ],
+    [
+     "mayonnaise",
+     "[ˈmeəˌnez]",
+     "口語直接說 mayo [ˈmeo]"
+    ],
+    [
+     "sausage",
+     "[ˈsɔsɪdʒ]",
+     "au 唸 [ɔ]，不是「騷」"
+    ]
+   ]
+  },
+  {
+   "title": "早餐店點餐英文對話：從進門到結帳",
+   "prose": [
+    "帶外國朋友去早餐店，或是孩子想練一段完整的對話，可以照下面這 12 句走一遍。一般餐廳的點餐說法，另見<a href=\"/ordering-food-english/\">點餐英文</a>。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "誰說的"
+   ],
+   "rows": [
+    [
+     "Good morning! For here or to go?",
+     "早安！內用還是外帶？",
+     "店員"
+    ],
+    [
+     "To go, please.",
+     "外帶，謝謝。",
+     "客人"
+    ],
+    [
+     "What would you like?",
+     "要點什麼？",
+     "店員"
+    ],
+    [
+     "I'd like a ham and egg sandwich and a turnip cake.",
+     "我要一個火腿蛋吐司和一份蘿蔔糕。",
+     "客人"
+    ],
+    [
+     "Do you want the sandwich toasted?",
+     "吐司要烤嗎？",
+     "店員"
+    ],
+    [
+     "Yes, please. And no mayo.",
+     "要，謝謝。不要美乃滋。",
+     "客人"
+    ],
+    [
+     "Anything to drink?",
+     "要喝什麼嗎？",
+     "店員"
+    ],
+    [
+     "A large iced milk tea, half sugar.",
+     "一杯大冰奶，半糖。",
+     "客人"
+    ],
+    [
+     "That's 95 dollars.",
+     "一共 95 元。",
+     "店員"
+    ],
+    [
+     "Here you go.",
+     "給你。",
+     "客人"
+    ],
+    [
+     "Here's your change. It'll be ready in a minute.",
+     "找你錢，馬上好。",
+     "店員"
+    ],
+    [
+     "Thank you! Have a nice day.",
+     "謝謝，祝你有美好的一天。",
+     "客人"
+    ]
+   ]
+  },
+  {
+   "title": "教孩子用英文介紹台灣早餐：7 句範本",
+   "prose": [
+    "外師和外國朋友對台灣的早餐店都很好奇。下面 7 句是給國小孩子的介紹範本，照順序說就是一段完整的 show and tell。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "提示"
+   ],
+   "groups": [
+    {
+     "name": "介紹台灣早餐的 7 句 A seven-sentence introduction",
+     "rows": [
+      [
+       "In Taiwan, there are breakfast shops on almost every street.",
+       "在台灣，幾乎每條街都有早餐店。",
+       "第一句：是什麼"
+      ],
+      [
+       "They open very early in the morning.",
+       "它們很早就開門。",
+       "第二句：什麼時候"
+      ],
+      [
+       "My favorite is the egg crepe.",
+       "我最喜歡蛋餅。",
+       "第三句：換成自己喜歡的"
+      ],
+      [
+       "It's a thin pancake with egg inside.",
+       "它是一張薄薄的餅，裡面有蛋。",
+       "第四句：說明是什麼"
+      ],
+      [
+       "I usually drink milk tea with it.",
+       "我通常配奶茶。",
+       "第五句：喝什麼"
+      ],
+      [
+       "We buy breakfast on the way to school.",
+       "我們上學途中買早餐。",
+       "第六句：什麼時候買"
+      ],
+      [
+       "You should try it!",
+       "你應該試試看！",
+       "第七句：推薦"
+      ]
+     ]
+    },
+    {
+     "name": "外國朋友會問的 3 個問題 Three questions a foreign friend might ask",
+     "rows": [
+      [
+       "Q: What's in an egg crepe?",
+       "蛋餅裡面有什麼？",
+       "外國朋友問"
+      ],
+      [
+       "A: Egg and a thin pancake. You can add cheese or corn.",
+       "蛋和一張薄餅，可以加起司或玉米。",
+       "孩子答"
+      ],
+      [
+       "Q: Is it sweet?",
+       "是甜的嗎？",
+       "外國朋友問"
+      ],
+      [
+       "A: No, it's salty. We eat it with soy sauce.",
+       "不是，是鹹的，我們沾醬油膏吃。",
+       "孩子答"
+      ],
+      [
+       "Q: How much is breakfast?",
+       "一份早餐多少錢？",
+       "外國朋友問"
+      ],
+      [
+       "A: About 60 to 100 NT dollars.",
+       "大約 60 到 100 元。",
+       "孩子答"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "介紹要怎麼開頭、怎麼說自己的名字和年紀，見 <a href=\"/english-self-introduction-kids/\">孩子的英文自我介紹</a>。"
+   ]
+  },
+  {
+   "title": "美國老師的觀察：美國人的早餐，和哪些說法是中式英文",
+   "prose": [
+    "跟美國人介紹時要注意兩個字。<strong>sandwich</strong>：台灣早餐店的「吐司」只要夾了料，英文就是 sandwich；toast 是單獨一片烤過的麵包。<strong>black tea</strong>：中文說紅茶，英文說 black tea，說 red tea 外國人會以為是另一種茶。"
+   ],
+   "heads": [
+    "常見說法",
+    "建議說法",
+    "為什麼"
+   ],
+   "rows": [
+    [
+     "egg cake",
+     "egg crepe",
+     "cake 是蛋糕；蛋餅是薄餅包蛋"
+    ],
+    [
+     "red tea",
+     "black tea",
+     "紅茶的英文是 black tea"
+    ],
+    [
+     "ham egg toast",
+     "ham and egg sandwich",
+     "夾料的吐司是 sandwich，中間要有 and"
+    ],
+    [
+     "big cup ice milk tea",
+     "a large iced milk tea",
+     "大小用 large，冰的是 iced"
+    ],
+    [
+     "take away",
+     "to go",
+     "美式說 to go，英式才說 take away"
+    ],
+    [
+     "no ice（想說少冰）",
+     "less ice",
+     "no ice 是完全不要冰"
+    ],
+    [
+     "breakfast store",
+     "breakfast shop",
+     "store 是賣東西的商店"
+    ]
+   ],
+   "after": [
+    "手搖飲的甜度冰塊怎麼說，見<a href=\"/bubble-tea-english/\">珍珠奶茶英文</a>；夜市小吃的說法，見<a href=\"/night-market-english/\">夜市英文</a>。"
+   ],
+   "html_top": "<figure class=\"tk-note reveal\"><img src=\"/assets/img/american-english-banqiao-logo-96.webp\" alt=\"埃森美語\" width=\"54\" height=\"54\" loading=\"lazy\"><span class=\"tk-tag\">老師的話</span><blockquote>美國沒有台灣這種早餐店。美國人的早餐多半在家吃：麥片、吐司、蛋、鬆餅；出門買的話是咖啡店或得來速。所以外國人第一次看到街角的早餐店、五分鐘就做好一份蛋餅配奶茶，都覺得很新鮮。早餐吃漢堡，對美國人來說也是很特別的事。</blockquote><figcaption>— Mr. Chris，埃森美語創辦人</figcaption></figure>"
+  },
+  {
+   "title": "早餐店英文常見問題",
+   "faq": [
+    [
+     "早餐店英文怎麼說？",
+     "早餐店是 breakfast shop，也說 breakfast place。美國沒有完全一樣的店，可以補一句 a small shop that sells breakfast to go。不要說 breakfast store。"
+    ],
+    [
+     "蛋餅英文怎麼說？",
+     "蛋餅是 egg crepe，也有人說 egg pancake，或直接用拼音 dan bing。口味放前面：cheese egg crepe（起司蛋餅）、corn egg crepe（玉米蛋餅）、tuna egg crepe（鮪魚蛋餅）。"
+    ],
+    [
+     "大冰奶英文怎麼說？",
+     "大冰奶是 a large iced milk tea。順序是大小、冰熱、飲料：a medium hot milk tea（中杯熱奶茶）。去冰是 no ice，少冰是 less ice，半糖是 half sugar。"
+    ],
+    [
+     "蘿蔔糕、鐵板麵、飯糰的英文是什麼？",
+     "蘿蔔糕是 turnip cake（也說 radish cake）；鐵板麵是 pan-fried noodles，黑胡椒口味加 with black pepper sauce；台式飯糰是 sticky rice roll，也直接說 fan tuan。"
+    ],
+    [
+     "內用、外帶英文怎麼說？",
+     "店員會問 For here or to go?。內用回 For here, please.，外帶回 To go, please.。英式英文說 eat in 和 take away。"
+    ],
+    [
+     "早餐店要做英文菜單，可以用這張表嗎？",
+     "可以。這張對照表可以免費下載 A4 的 PDF 列印使用；自己做菜單時，品名照材料寫（egg crepe、turnip cake），再附上拼音，外國客人最容易懂。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "早餐店的英文，孩子說得出口嗎？",
+ "cta": "菜單上的字看得懂不難，難的是站在櫃檯前把一整句說出來。我們的小班課由美國老師帶，把點餐、買東西這些每天會遇到的事當成真實情境來練。",
+ "css": ".tk-hero{text-align:left}.tk-hero .tk-hero-grid{max-width:1140px;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:52px;align-items:center}.tk-hero h1{font-size:clamp(32px,3.6vw,50px);margin:14px 0 16px}.tk-hero .divider{margin:0 0 20px}.tk-hero .body{max-width:52ch;margin:0}.tk-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.tk-art{justify-self:center;width:100%;max-width:470px}.tk-cap{margin:12px 0 0;text-align:center;font-size:13px;color:var(--muted)}@media(max-width:880px){.tk-hero{text-align:center}.tk-hero .tk-hero-grid{grid-template-columns:1fr;gap:30px}.tk-hero .divider{margin:0 auto 20px}.tk-hero .body{margin:0 auto}.tk-chips{justify-content:center}.tk-art{max-width:380px}}.tk-s1 h3{max-width:860px;margin:36px auto 12px;display:flex;align-items:center;gap:11px;font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:800;color:var(--navy);letter-spacing:.2px}.tk-s1 .compare{display:flex;flex-direction:column}.tk-s1 .compare>table{order:-1}.tk-s1 .compare>.magnet-box{margin-top:22px}.tk-s1 h3::before{content:'';flex:0 0 auto;width:13px;height:13px;border-radius:4px;background:var(--yellow);box-shadow:3px 3px 0 var(--navy)}.tk-note{max-width:760px;margin:24px auto 26px;background:var(--navy);border-radius:26px;padding:24px 26px 22px;display:grid;grid-template-columns:auto 1fr;column-gap:16px;row-gap:6px;box-shadow:0 16px 36px rgba(26,39,82,.22)}.tk-note img{grid-row:1 / span 3;width:54px;height:54px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px var(--yellow)}.tk-note .tk-tag{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px;letter-spacing:1.5px;color:var(--yellow)}.tk-note blockquote{margin:0;font-size:16.5px;line-height:1.9;color:#F2F6FF}.tk-note blockquote b{color:#fff;box-shadow:inset 0 -8px 0 rgba(255,200,40,.32)}.tk-note figcaption{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:#BFD6FF}@media(max-width:560px){.tk-note{grid-template-columns:1fr;padding:20px 18px}.tk-note img{grid-row:auto}}.tk-slip{max-width:380px;margin:0 auto;background:#FFFDF5;border-radius:14px;box-shadow:0 22px 48px rgba(26,39,82,.2);padding:18px 20px 16px;transform:rotate(1.2deg);text-align:left;border:1.5px solid #F1E3BF}.tk-slip h4{margin:0 0 10px;font:800 15px 'Baloo 2',sans-serif;color:var(--navy);display:flex;justify-content:space-between;border-bottom:2px dashed #E3D2A4;padding-bottom:8px}.tk-slip ul{list-style:none;margin:0;padding:0}.tk-slip li{display:grid;grid-template-columns:22px 1fr auto;gap:8px;align-items:center;padding:7px 0;border-bottom:1px solid #F3EAD0;font:600 15px 'DM Sans',sans-serif;color:var(--navy)}.tk-slip li small{display:block;font-weight:500;font-size:12.5px;color:var(--muted)}.tk-slip li i{width:20px;height:20px;border-radius:5px;border:2px solid var(--navy);display:grid;place-items:center;font-style:normal;font-size:13px;font-weight:900;color:#0b7a3b}.tk-slip li b{font:800 12.5px 'Baloo 2',sans-serif;color:var(--blue-ink);background:rgba(28,176,246,.12);border-radius:999px;padding:2px 9px}.tk-say{max-width:380px;margin:16px auto 0;background:var(--navy);color:#fff;border-radius:18px 18px 18px 6px;padding:12px 16px;font:600 15.5px/1.55 'DM Sans',sans-serif;text-align:left;box-shadow:0 12px 26px rgba(26,39,82,.22)}.ob{max-width:1040px;margin:22px auto 26px;background:#fff;border-radius:22px;box-shadow:var(--card-shadow);overflow:hidden;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}.ob-form{padding:20px 22px 18px}.ob fieldset{border:none;margin:0 0 12px;padding:0;min-width:0}.ob legend{display:block;font-weight:800;color:var(--navy);font-size:15.5px;margin:4px 0 8px;padding:0}.ob-seg{display:flex;flex-wrap:wrap;gap:8px}.ob-seg label{position:relative;display:inline-flex;align-items:center;background:#F4FAFF;border:1.5px solid rgba(26,39,82,.16);border-radius:999px;padding:8px 14px;cursor:pointer;font-size:15px;min-height:44px;box-sizing:border-box;color:var(--navy);font-weight:600}.ob-seg input{position:absolute;opacity:0;width:1px;height:1px}.ob-seg label:has(input:checked){background:#1A2752;color:#fff;border-color:#1A2752}.ob-seg label:has(input:focus-visible){outline:3px solid var(--blue);outline-offset:2px}.ob-side{background:var(--navy);padding:22px;display:flex;flex-direction:column;gap:10px;justify-content:center}.ob-side span{font:800 13px 'Baloo 2',sans-serif;letter-spacing:1.5px;color:var(--yellow)}.ob-en{font:400 25px/1.4 'DM Serif Display',serif;color:#fff;margin:0}.ob-zh{font-size:15px;line-height:1.7;color:#BFD6FF;margin:0}@media(max-width:860px){.ob{grid-template-columns:1fr}.ob-en{font-size:22px}}main h2{text-wrap:balance}"
+}

@@ -1347,6 +1347,37 @@
     "學好英文的方法",
     "學英文要多久"
    ]
+  },
+  {
+   "target": "chatgpt-english-essay-correction",
+   "kw": [
+    "ChatGPT 英文作文批改",
+    "ChatGPT 改作文",
+    "用 ChatGPT 改英文作文"
+   ]
+  },
+  {
+   "target": "breakfast-shop-english",
+   "kw": [
+    "早餐店英文",
+    "蛋餅英文",
+    "早餐店"
+   ]
+  },
+  {
+   "target": "night-market-english",
+   "kw": [
+    "夜市英文",
+    "夜市"
+   ],
+   "not_from": "english-tenses-chart"
+  },
+  {
+   "target": "convenience-store-english",
+   "kw": [
+    "便利商店英文",
+    "便利商店"
+   ]
   }
  ]
 }

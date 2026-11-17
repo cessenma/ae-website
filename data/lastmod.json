@@ -63,9 +63,17 @@
 "date": "2026-10-13",
 "hash": "87bdb769d3f89fad1302d21951c3d3c0"
 },
+"assets/downloads/ae-breakfast-shop-english-menu-a4.pdf": {
+"date": "2026-11-18",
+"hash": "d361077cd0d3beceb57d3aced2d32c53"
+},
 "assets/downloads/ae-bubble-tea-english-a4.pdf": {
 "date": "2026-10-22",
 "hash": "8a59e7bd0104d6aa8238ba13689e8e31"
+},
+"assets/downloads/ae-chatgpt-english-essay-correction-prompts-a4.pdf": {
+"date": "2026-11-18",
+"hash": "b98126398cdd8c91892fc3d419ba429a"
 },
 "assets/downloads/ae-chatgpt-english-speaking-prompts-a4.pdf": {
 "date": "2026-11-17",
@@ -94,6 +102,10 @@
 "assets/downloads/ae-colors-flashcards-a4.pdf": {
 "date": "2026-10-01",
 "hash": "05a0fe266269f664079b8593e3dc9cb7"
+},
+"assets/downloads/ae-convenience-store-english-a4.pdf": {
+"date": "2026-11-18",
+"hash": "eddf08be58bd2dbf7827eb0813f429d5"
 },
 "assets/downloads/ae-countries-english-a4.pdf": {
 "date": "2026-10-13",
@@ -390,6 +402,10 @@
 "assets/downloads/ae-new-year-english-a4.pdf": {
 "date": "2026-10-13",
 "hash": "f98085fbd611ab108e3a212ce723cf0e"
+},
+"assets/downloads/ae-night-market-english-a4.pdf": {
+"date": "2026-11-18",
+"hash": "80f9d447b5c0f841b78f38c30c15f4b4"
 },
 "assets/downloads/ae-numbers-1-100-a4.pdf": {
 "date": "2026-10-13",
@@ -767,6 +783,10 @@
 "date": "2026-10-20",
 "hash": "1e36940f08bd4e38501556287d8e1855"
 },
+"breakfast-shop-english": {
+"date": "2026-11-18",
+"hash": "fee3f1414c517bc4e2f068c0b92e40ea"
+},
 "bubble-tea-english": {
 "date": "2026-10-22",
 "hash": "aa060f7de288ecca465b3f9d21225a7c"
@@ -828,8 +848,12 @@
 "hash": "b736ec33111be19ac98aaf8e2fee5e8d"
 },
 "chart-license": {
-"date": "2026-11-17",
-"hash": "604cb67f026ec6e86f691bb222ab3bd4"
+"date": "2026-11-18",
+"hash": "31c62901ae0bde01d43be8c29d8d5d0f"
+},
+"chatgpt-english-essay-correction": {
+"date": "2026-11-18",
+"hash": "3e6baf02c5d0dc4994a0d3d6d4a7c91a"
 },
 "chatgpt-english-speaking-practice": {
 "date": "2026-11-17",
@@ -886,6 +910,10 @@
 "contact": {
 "date": "2026-10-02",
 "hash": "f420a1860a68fdc064996e97c2cebdbe"
+},
+"convenience-store-english": {
+"date": "2026-11-18",
+"hash": "4551e1e66a997e810bd8435ac84021ff"
 },
 "cool-english-guide": {
 "date": "2026-10-13",
@@ -1802,6 +1830,10 @@
 "new-year-english": {
 "date": "2026-10-19",
 "hash": "0cdbc0db5affd5a0e93ea0d4e975a79b"
+},
+"night-market-english": {
+"date": "2026-11-18",
+"hash": "8c7e52c52cb7bb07f4f76d7352cb6e9f"
 },
 "oikid-price": {
 "date": "2026-10-16",

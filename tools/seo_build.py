@@ -1700,7 +1700,12 @@ READNEXT = {
     # articles) — their natural hubs never linked down. /chinese-name-to-english/ alone had 94,812 impressions.
     "sports-english": [("棒球英文", "/baseball-english/"), ("籃球英文", "/basketball-english/"), ("足球英文", "/soccer-english/"),
                        ("游泳英文", "/swimming-english/"), ("網球英文", "/tennis-english/")],
-    "food-english": [("點餐英文", "/ordering-food-english/"), _VOC["fruits"], ("購物英文", "/shopping-english/"), ("旅遊英文", "/travel-english/")],
+    "food-english": [("點餐英文", "/ordering-food-english/"), ("早餐店英文", "/breakfast-shop-english/"), ("夜市英文", "/night-market-english/"), _VOC["fruits"], ("購物英文", "/shopping-english/"), ("旅遊英文", "/travel-english/")],
+    # 11-18 tangent batch 2: the older daily-life pages point at the four new ones
+    "ordering-food-english": [("早餐店英文", "/breakfast-shop-english/"), ("夜市英文", "/night-market-english/"), ("便利商店英文", "/convenience-store-english/"), ("火鍋英文", "/hot-pot-english/")],
+    "shopping-english": [("便利商店英文", "/convenience-store-english/"), ("夜市英文", "/night-market-english/")],
+    "bubble-tea-english": [("早餐店英文", "/breakfast-shop-english/"), ("夜市英文", "/night-market-english/"), ("火鍋英文", "/hot-pot-english/")],
+    "english-writing-practice": [("ChatGPT 英文作文批改", "/chatgpt-english-essay-correction/"), ("ChatGPT 練英文口說", "/chatgpt-english-speaking-practice/")],
     "countries-english": [("旅遊英文", "/travel-english/"), ("機場英文", "/airport-english/"), ("購物英文", "/shopping-english/"), ("點餐英文", "/ordering-food-english/")],
     "english-letter-writing-guide": [("請假英文", "/leave-note-english/"), ("英文卡片怎麼寫", "/english-card-writing/"), _WR["punct"], _WR["caps"]],
     "english-names": [("中文名字翻英文", "/chinese-name-to-english/"), ("英文名字產生器", "/english-name-generator/"),

@@ -1,0 +1,614 @@
+{
+ "slug": "convenience-store-english",
+ "published": "2026-11-18",
+ "target": "便利商店英文",
+ "index": 0.5,
+ "h1": "便利商店英文：<br>店員和客人會說的 58 句",
+ "title": "便利商店英文：店員和客人的 58 句，加熱、載具、統編（附PDF）｜埃森美語",
+ "desc": "便利商店英文是 convenience store。要加熱嗎、需要袋子嗎、有載具嗎、要打統編嗎怎麼說？店員和客人會說的 58 句分 5 組對照，可以只看自己那一邊，附結帳對話和 A4 PDF。",
+ "hero": "便利商店的英文是 <strong>convenience store</strong>。「要加熱嗎」「有載具嗎」「要打統編嗎」這些每天聽到的話，店員和客人兩邊的說法都整理好了，可以只看自己要說的那一邊。",
+ "hero_chips": [
+  "58 句",
+  "店員／客人切換",
+  "完整對話",
+  "A4 PDF"
+ ],
+ "hero_art": "<div class=\"tk-rcpt\"><h4>Convenience Store<small>便利商店</small></h4><ul><li><span>tea egg ×1<small>茶葉蛋</small></span></li><li><span>boxed meal ×1<small>便當</small></span><b>heated 加熱</b></li><li><span>iced latte, large<small>大杯冰拿鐵</small></span><b>less ice 少冰</b></li><li><span>bag ×1<small>購物袋</small></span></li><li class=\"tot\"><span>Total 合計</span><span>NT$ 162</span></li></ul><div class=\"bar\" aria-hidden=\"true\"></div><p class=\"cap2\">receipt 發票 ・ mobile barcode 載具</p></div>",
+ "sections": [
+  {
+   "title": "便利商店英文對照表：店員、客人會說的話共 58 句",
+   "html_top": "<div class=\"cs-pick\" id=\"cs-pick\"><p>你是哪一邊？點一下，只看你要說的話：</p><div class=\"cs-chips\" role=\"group\" aria-label=\"選角色\"><button type=\"button\" data-role=\"cust\">我是客人</button><button type=\"button\" data-role=\"clerk\">我是店員（打工）</button><button type=\"button\" data-role=\"all\" class=\"on\">全部都看</button></div></div>",
+   "prose": [
+    "在便利商店打工遇到外國客人，或是帶外國朋友去超商，會用到的就是下面這些。對照表分成 5 組：<strong>店員會說的話、客人會說的話、店裡的東西、服務、結帳與發票</strong>。點上面的按鈕，可以只看自己要說的那一邊。",
+    "台灣便利商店有很多美國沒有的東西：載具、統編、發票對獎、取貨、繳費。這些沒有現成的英文，表上寫的是外國人聽得懂的說法。餐廳點餐的說法另見<a href=\"/ordering-food-english/\">點餐英文</a>，買東西見<a href=\"/shopping-english/\">購物英文</a>。"
+   ],
+   "html": "<script>(function(){function go(){var box=document.getElementById(\"cs-pick\");if(!box)return;var sec=box.closest(\"section\"),hs=[].slice.call(sec.querySelectorAll(\"h3\"));function show(role){hs.forEach(function(h){var t=h.textContent,isClerk=t.indexOf(\"店員\")===0,isCust=t.indexOf(\"客人\")===0,hide=(role===\"cust\"&&isClerk)||(role===\"clerk\"&&isCust),d=h.nextElementSibling;h.style.display=hide?\"none\":\"\";if(d&&d.classList.contains(\"compare\"))d.style.display=hide?\"none\":\"\"})}box.addEventListener(\"click\",function(e){var b=e.target.closest(\"button[data-role]\");if(!b)return;[].forEach.call(box.querySelectorAll(\"button\"),function(x){x.classList.toggle(\"on\",x===b)});show(b.dataset.role);if(window.gtag)gtag(\"event\",\"role_pick\",{tool:\"convenience-store\",role:b.dataset.role})});}if(document.readyState===\"loading\")document.addEventListener(\"DOMContentLoaded\",go);else go();})();</script>",
+   "heads": [
+    "英文",
+    "中文",
+    "用法／注意"
+   ],
+   "groups": [
+    {
+     "name": "店員會說的話 What the clerk says（14 句）",
+     "rows": [
+      [
+       "Hi, welcome!",
+       "歡迎光臨！",
+       "英文沒有固定的「歡迎光臨」，說 Hi 或 Welcome 就好"
+      ],
+      [
+       "Would you like it heated up?",
+       "要加熱嗎？",
+       "heat up＝加熱"
+      ],
+      [
+       "Do you need a bag?",
+       "需要袋子嗎？",
+       "袋子要另外買，可以補一句 It's one dollar."
+      ],
+      [
+       "Do you have a membership?",
+       "有會員嗎？",
+       "membership＝會員資格"
+      ],
+      [
+       "Do you have a mobile barcode?",
+       "有載具嗎？",
+       "載具是 mobile barcode"
+      ],
+      [
+       "Do you need a tax ID number on the receipt?",
+       "發票要打統編嗎？",
+       "統編是 tax ID number"
+      ],
+      [
+       "That'll be 85 dollars.",
+       "一共 85 元。",
+       "That'll be＋金額"
+      ],
+      [
+       "Out of 100.",
+       "收您 100 元。",
+       "收錢時說"
+      ],
+      [
+       "Here's your change, 15 dollars.",
+       "找您 15 元。",
+       "change＝零錢"
+      ],
+      [
+       "Here's your receipt.",
+       "這是您的發票。",
+       "receipt 的 p 不發音"
+      ],
+      [
+       "Please wait a moment.",
+       "請稍等。",
+       "微波、做咖啡時"
+      ],
+      [
+       "Your coffee is ready.",
+       "您的咖啡好了。",
+       "叫客人取餐"
+      ],
+      [
+       "Sorry, we're out of that.",
+       "不好意思，那個賣完了。",
+       "be out of＝賣完"
+      ],
+      [
+       "Next, please.",
+       "下一位，請。",
+       "排隊時"
+      ]
+     ]
+    },
+    {
+     "name": "客人會說的話 What the customer says（14 句）",
+     "rows": [
+      [
+       "Could you heat this up, please?",
+       "可以幫我加熱嗎？",
+       "拿便當、飯糰結帳時"
+      ],
+      [
+       "I don't need a bag, thanks.",
+       "不用袋子，謝謝。",
+       "自己有帶袋子"
+      ],
+      [
+       "Can I pay with EasyCard?",
+       "可以用悠遊卡付嗎？",
+       "pay with＋付款方式"
+      ],
+      [
+       "Can I top up my EasyCard? 500, please.",
+       "可以加值悠遊卡嗎？加 500。",
+       "top up＝加值"
+      ],
+      [
+       "A large iced latte, please.",
+       "一杯大杯冰拿鐵。",
+       "順序是大小、冰熱、飲料"
+      ],
+      [
+       "Less ice, please.",
+       "少冰，謝謝。",
+       "去冰是 no ice"
+      ],
+      [
+       "Can I have a straw?",
+       "可以給我一根吸管嗎？",
+       "straw＝吸管"
+      ],
+      [
+       "Do you have chopsticks?",
+       "有筷子嗎？",
+       "叉子 fork、湯匙 spoon"
+      ],
+      [
+       "Where are the tissues?",
+       "衛生紙在哪裡？",
+       "找東西都用 Where is / Where are"
+      ],
+      [
+       "I'm here to pick up a package.",
+       "我來取貨。",
+       "pick up＝領取"
+      ],
+      [
+       "I'd like to pay this bill.",
+       "我要繳這張帳單。",
+       "bill＝帳單"
+      ],
+      [
+       "Can I use the copier?",
+       "可以用影印機嗎？",
+       "copier＝影印機"
+      ],
+      [
+       "Is there an ATM here?",
+       "這裡有提款機嗎？",
+       "ATM 三個字母分開唸"
+      ],
+      [
+       "Can I sit here?",
+       "我可以坐這裡嗎？",
+       "問座位區"
+      ]
+     ]
+    },
+    {
+     "name": "店裡的東西 Things in the store（14 個）",
+     "rows": [
+      [
+       "tea egg",
+       "茶葉蛋",
+       "用茶和醬油滷的蛋"
+      ],
+      [
+       "rice ball",
+       "御飯糰",
+       "三角形的那種，也說 onigiri"
+      ],
+      [
+       "boxed meal",
+       "便當",
+       "也說 bento"
+      ],
+      [
+       "instant noodles",
+       "泡麵",
+       "一碗是 a cup of noodles"
+      ],
+      [
+       "oden",
+       "關東煮",
+       "日文來的字，英文直接用"
+      ],
+      [
+       "hot dog",
+       "熱狗",
+       "兩個字"
+      ],
+      [
+       "steamed bun",
+       "包子",
+       "肉包是 pork bun"
+      ],
+      [
+       "sandwich",
+       "三明治",
+       "複數加 es"
+      ],
+      [
+       "soft serve",
+       "霜淇淋",
+       "也說 soft-serve ice cream"
+      ],
+      [
+       "bottled water",
+       "瓶裝水",
+       "bottled＝瓶裝的"
+      ],
+      [
+       "sports drink",
+       "運動飲料",
+       "sports 要加 s"
+      ],
+      [
+       "tissues",
+       "面紙、衛生紙",
+       "一包是 a pack of tissues"
+      ],
+      [
+       "umbrella",
+       "雨傘",
+       "下雨天最常買"
+      ],
+      [
+       "phone charger",
+       "手機充電器",
+       "充電線是 charging cable"
+      ]
+     ]
+    },
+    {
+     "name": "服務 Services（8 個）",
+     "rows": [
+      [
+       "pay a bill",
+       "繳費",
+       "水電費是 utility bill"
+      ],
+      [
+       "pick up a package",
+       "取貨",
+       "網購取貨"
+      ],
+      [
+       "send a package",
+       "寄件",
+       "店到店是 store-to-store delivery"
+      ],
+      [
+       "make copies",
+       "影印",
+       "列印是 print，掃描是 scan"
+      ],
+      [
+       "buy tickets",
+       "買票",
+       "在機台 kiosk 操作"
+      ],
+      [
+       "top up a card",
+       "加值",
+       "也說 add money to a card"
+      ],
+      [
+       "microwave",
+       "微波爐",
+       "當動詞也可以：microwave it"
+      ],
+      [
+       "seating area",
+       "座位區",
+       "seat＝座位"
+      ]
+     ]
+    },
+    {
+     "name": "結帳與發票 Paying and receipts（8 個）",
+     "rows": [
+      [
+       "receipt",
+       "發票、收據",
+       "p 不發音"
+      ],
+      [
+       "mobile barcode",
+       "載具",
+       "存電子發票用的手機條碼"
+      ],
+      [
+       "tax ID number",
+       "統一編號",
+       "公司報帳用"
+      ],
+      [
+       "cash",
+       "現金",
+       "付現是 pay in cash"
+      ],
+      [
+       "change",
+       "零錢、找的錢",
+       "不可數，不加 s"
+      ],
+      [
+       "mobile payment",
+       "行動支付",
+       "LINE Pay、Apple Pay 這一類"
+      ],
+      [
+       "points",
+       "點數",
+       "集點是 collect points"
+      ],
+      [
+       "receipt lottery",
+       "統一發票對獎",
+       "外國人最驚訝的一件事"
+      ]
+     ]
+    }
+   ],
+   "cls": "tk-s1"
+  },
+  {
+   "title": "便利商店英文怎麼說、怎麼唸，有縮寫嗎",
+   "prose": [
+    "便利商店的英文是 <strong>convenience store</strong>，超商也是同一個字。convenience 是名詞「方便」，所以不是 convenient store（convenient 是形容詞）。",
+    "<strong>有縮寫嗎？</strong>日常英文裡沒有通用的縮寫，美國人就說 convenience store，或直接說店名。台灣的零售業和新聞常把便利商店寫成 CVS，那是業界用語；在美國，CVS 是一家連鎖藥局的名字，跟美國人說 CVS 他會以為你要去藥局。",
+    "怎麼唸：<strong>convenience [kənˈvinjəns]</strong>，三個音節，重音在第二個：con-VEN-ience。<strong>receipt [rɪˈsit]</strong> 的 p 不發音。每個 KK 符號的唸法見 <a href=\"/kk-phonetic-chart/\">KK 音標表</a>。"
+   ],
+   "heads": [
+    "英文",
+    "KK 音標",
+    "注意"
+   ],
+   "rows": [
+    [
+     "convenience store",
+     "[kənˈvinjəns stɔr]",
+     "重音在 VEN；不是 convenient store"
+    ],
+    [
+     "receipt",
+     "[rɪˈsit]",
+     "p 不發音，重音在後"
+    ],
+    [
+     "microwave",
+     "[ˈmaɪkroˌwev]",
+     "重音在最前面：MY-cro-wave"
+    ],
+    [
+     "membership",
+     "[ˈmɛmbɚˌʃɪp]",
+     "三個音節，重音在前"
+    ],
+    [
+     "barcode",
+     "[ˈbɑrˌkod]",
+     "bar＋code，重音在 bar"
+    ],
+    [
+     "straw",
+     "[strɔ]",
+     "母音是 [ɔ]，一個音節"
+    ],
+    [
+     "package",
+     "[ˈpækɪdʒ]",
+     "結尾是 [dʒ]，不是「幾」"
+    ],
+    [
+     "change",
+     "[tʃendʒ]",
+     "零錢和「改變」是同一個字"
+    ]
+   ]
+  },
+  {
+   "title": "便利商店英文對話：結帳的 12 句",
+   "prose": [
+    "下面是外國客人結帳時最完整的一段對話。在超商打工的同學，把店員的六句背起來就夠用了。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "誰說的"
+   ],
+   "rows": [
+    [
+     "Hi! Is that everything?",
+     "您好，就這些嗎？",
+     "店員"
+    ],
+    [
+     "Yes. Could you heat this up, please?",
+     "對，可以幫我加熱嗎？",
+     "客人"
+    ],
+    [
+     "Sure. Do you need a bag?",
+     "好的，需要袋子嗎？",
+     "店員"
+    ],
+    [
+     "No, thanks. I have one.",
+     "不用，謝謝，我有帶。",
+     "客人"
+    ],
+    [
+     "Do you have a mobile barcode?",
+     "有載具嗎？",
+     "店員"
+    ],
+    [
+     "No. Just the paper receipt, please.",
+     "沒有，印紙本發票就好。",
+     "客人"
+    ],
+    [
+     "That'll be 162 dollars.",
+     "一共 162 元。",
+     "店員"
+    ],
+    [
+     "Can I pay with EasyCard?",
+     "可以用悠遊卡付嗎？",
+     "客人"
+    ],
+    [
+     "Sure. Please tap your card here.",
+     "可以，請在這裡感應。",
+     "店員"
+    ],
+    [
+     "Thanks. Where can I sit?",
+     "謝謝，哪裡可以坐？",
+     "客人"
+    ],
+    [
+     "The seating area is over there. Your meal will be ready in a minute.",
+     "座位區在那邊，餐點馬上好。",
+     "店員"
+    ],
+    [
+     "Great, thank you!",
+     "太好了，謝謝！",
+     "客人"
+    ]
+   ]
+  },
+  {
+   "title": "美國老師的觀察：台灣的便利商店，外國人最驚訝什麼",
+   "prose": [
+    "有三樣東西要多解釋一句。<strong>發票對獎</strong>：每張發票上有一組號碼，每兩個月開獎一次，可以說 Keep your receipt. It's also a lottery ticket.（發票留著，它也是一張彩券。）<strong>載具</strong>：把發票存在手機裡的條碼，說 a barcode that saves your receipts on your phone。<strong>統編</strong>：公司報帳用的號碼，說 a company tax ID number。"
+   ],
+   "heads": [
+    "常見說法",
+    "建議說法",
+    "為什麼"
+   ],
+   "rows": [
+    [
+     "convenient store",
+     "convenience store",
+     "store 前面用名詞 convenience"
+    ],
+    [
+     "Need hot?",
+     "Would you like it heated up?",
+     "加熱是 heat up，問句要完整"
+    ],
+    [
+     "Need bag?",
+     "Do you need a bag?",
+     "加上 Do you 和 a 才是完整的句子"
+    ],
+    [
+     "invoice（指超商發票）",
+     "receipt",
+     "invoice 是公司之間的請款單；結帳拿到的是 receipt"
+    ],
+    [
+     "add value",
+     "top up",
+     "加值是 top up，或說 add money"
+    ],
+    [
+     "I want to take goods.",
+     "I'm here to pick up a package.",
+     "取貨是 pick up a package"
+    ],
+    [
+     "Welcome light.",
+     "Hi! / Welcome!",
+     "「歡迎光臨」不用逐字翻"
+    ]
+   ],
+   "after": [
+    "找錢、算錢的數字怎麼唸，見<a href=\"/english-numbers-guide/\">英文數字 1–100</a>；早餐店的說法見<a href=\"/breakfast-shop-english/\">早餐店英文菜單</a>。"
+   ],
+   "html_top": "<figure class=\"tk-note reveal\"><img src=\"/assets/img/american-english-banqiao-logo-96.webp\" alt=\"埃森美語\" width=\"54\" height=\"54\" loading=\"lazy\"><span class=\"tk-tag\">老師的話</span><blockquote>美國也有便利商店，多半開在加油站旁邊，賣飲料、零食和熱狗。但繳水電費、領網購包裹、買車票、影印、坐下來吃一個加熱好的便當，這些事在美國的便利商店都做不到。所以外國人到台灣，常說便利商店是他們最喜歡的地方之一。</blockquote><figcaption>— Mr. Chris，埃森美語創辦人</figcaption></figure>"
+  },
+  {
+   "title": "教孩子用英文介紹便利商店：7 句範本",
+   "prose": [
+    "便利商店是孩子每天都會進去的地方，拿來練英文最不費力。下面 7 句是給國小孩子的介紹範本。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "提示"
+   ],
+   "rows": [
+    [
+     "There is a convenience store near my home.",
+     "我家附近有一間便利商店。",
+     "第一句：在哪裡"
+    ],
+    [
+     "It is open 24 hours a day.",
+     "它 24 小時營業。",
+     "第二句：什麼時候開"
+    ],
+    [
+     "I buy drinks and snacks there.",
+     "我在那裡買飲料和零食。",
+     "第三句：買什麼"
+    ],
+    [
+     "My favorite is the tea egg.",
+     "我最喜歡茶葉蛋。",
+     "第四句：換成自己喜歡的"
+    ],
+    [
+     "The clerk can heat up your food.",
+     "店員可以幫你把食物加熱。",
+     "第五句：特別的服務"
+    ],
+    [
+     "My mom picks up packages there.",
+     "我媽媽在那裡取貨。",
+     "第六句：家人做什麼"
+    ],
+    [
+     "It is very convenient!",
+     "真的很方便！",
+     "第七句：這裡用形容詞 convenient"
+    ]
+   ],
+   "after": [
+    "最後一句剛好可以分清楚兩個字：<strong>convenience</strong> 是名詞（convenience store），<strong>convenient</strong> 是形容詞（It is convenient.）。介紹要怎麼開頭，見 <a href=\"/english-self-introduction-kids/\">孩子的英文自我介紹</a>。"
+   ]
+  },
+  {
+   "title": "便利商店英文常見問題",
+   "faq": [
+    [
+     "便利商店英文怎麼說？有縮寫嗎？",
+     "便利商店是 convenience store，超商也是。日常英文沒有通用的縮寫；台灣業界寫的 CVS 在美國是一家連鎖藥局的名字，跟外國人說 convenience store 才不會誤會。"
+    ],
+    [
+     "「要加熱嗎」英文怎麼說？",
+     "店員問 Would you like it heated up?；客人想加熱說 Could you heat this up, please?。微波爐是 microwave，也可以當動詞：Can you microwave it?"
+    ],
+    [
+     "載具英文怎麼說？",
+     "載具是 mobile barcode。店員問 Do you have a mobile barcode?；外國客人多半沒有，可以直接說 Here's your receipt.（這是您的發票。）"
+    ],
+    [
+     "統一編號英文怎麼說？",
+     "統一編號是 tax ID number，也說 company tax ID。店員問 Do you need a tax ID number on the receipt?；客人要打統編說 Could you put my company tax ID on the receipt?"
+    ],
+    [
+     "便利商店店員常用的英文有哪些？",
+     "最常用的六句：Would you like it heated up?（要加熱嗎）、Do you need a bag?（需要袋子嗎）、Do you have a mobile barcode?（有載具嗎）、That'll be 85 dollars.（一共 85 元）、Here's your change.（找您錢）、Here's your receipt.（這是您的發票）。"
+    ],
+    [
+     "發票的英文是 receipt 還是 invoice？",
+     "在便利商店結帳拿到的是 receipt。invoice 是公司之間的請款單。統一發票對獎可以說 receipt lottery。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "便利商店的英文，孩子說得出口嗎？",
+ "cta": "每天都會進去的地方，是最好的英文教室。我們的小班課由美國老師帶，把買東西、點餐這些每天會遇到的事當成真實情境來練。",
+ "css": ".tk-hero{text-align:left}.tk-hero .tk-hero-grid{max-width:1140px;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:52px;align-items:center}.tk-hero h1{font-size:clamp(32px,3.6vw,50px);margin:14px 0 16px}.tk-hero .divider{margin:0 0 20px}.tk-hero .body{max-width:52ch;margin:0}.tk-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.tk-art{justify-self:center;width:100%;max-width:470px}.tk-cap{margin:12px 0 0;text-align:center;font-size:13px;color:var(--muted)}@media(max-width:880px){.tk-hero{text-align:center}.tk-hero .tk-hero-grid{grid-template-columns:1fr;gap:30px}.tk-hero .divider{margin:0 auto 20px}.tk-hero .body{margin:0 auto}.tk-chips{justify-content:center}.tk-art{max-width:380px}}.tk-s1 h3{max-width:860px;margin:36px auto 12px;display:flex;align-items:center;gap:11px;font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:800;color:var(--navy);letter-spacing:.2px}.tk-s1 .compare{display:flex;flex-direction:column}.tk-s1 .compare>table{order:-1}.tk-s1 .compare>.magnet-box{margin-top:22px}.tk-s1 h3::before{content:'';flex:0 0 auto;width:13px;height:13px;border-radius:4px;background:var(--yellow);box-shadow:3px 3px 0 var(--navy)}.tk-note{max-width:760px;margin:24px auto 26px;background:var(--navy);border-radius:26px;padding:24px 26px 22px;display:grid;grid-template-columns:auto 1fr;column-gap:16px;row-gap:6px;box-shadow:0 16px 36px rgba(26,39,82,.22)}.tk-note img{grid-row:1 / span 3;width:54px;height:54px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px var(--yellow)}.tk-note .tk-tag{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px;letter-spacing:1.5px;color:var(--yellow)}.tk-note blockquote{margin:0;font-size:16.5px;line-height:1.9;color:#F2F6FF}.tk-note blockquote b{color:#fff;box-shadow:inset 0 -8px 0 rgba(255,200,40,.32)}.tk-note figcaption{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:#BFD6FF}@media(max-width:560px){.tk-note{grid-template-columns:1fr;padding:20px 18px}.tk-note img{grid-row:auto}}.tk-rcpt{max-width:330px;margin:0 auto;background:#fff;padding:20px 20px 30px;box-shadow:0 22px 48px rgba(26,39,82,.2);transform:rotate(-1.6deg);text-align:left;-webkit-mask:linear-gradient(#000 0 0) top/100% calc(100% - 12px) no-repeat,radial-gradient(circle at 8px 0,#000 7px,transparent 8px) bottom left/16px 12px repeat-x;mask:linear-gradient(#000 0 0) top/100% calc(100% - 12px) no-repeat,radial-gradient(circle at 8px 0,#000 7px,transparent 8px) bottom left/16px 12px repeat-x}.tk-rcpt h4{margin:0;text-align:center;font:400 21px 'DM Serif Display',serif;color:var(--navy)}.tk-rcpt h4 small{display:block;font:700 12px 'Baloo 2',sans-serif;letter-spacing:2px;color:var(--muted);margin-top:2px}.tk-rcpt ul{list-style:none;margin:14px 0 0;padding:12px 0 0;border-top:2px dashed #CBD5E6}.tk-rcpt li{display:flex;justify-content:space-between;gap:10px;font:600 15px/1.4 'DM Sans',sans-serif;color:var(--navy);padding:6px 0}.tk-rcpt li small{display:block;font-weight:500;font-size:12.5px;color:var(--muted)}.tk-rcpt li b{font:800 12px 'Baloo 2',sans-serif;color:#0b7a3b;background:#DDF8E8;border-radius:999px;padding:2px 9px;align-self:center;white-space:nowrap}.tk-rcpt .tot{border-top:2px dashed #CBD5E6;margin-top:8px;padding-top:10px;font:800 16px 'Baloo 2',sans-serif}.tk-rcpt .bar{margin-top:12px;height:34px;background:repeating-linear-gradient(90deg,#1A2752 0 2px,transparent 2px 5px,#1A2752 5px 6px,transparent 6px 9px,#1A2752 9px 12px,transparent 12px 14px)}.tk-rcpt .cap2{margin:6px 0 0;text-align:center;font:600 12px 'DM Sans',sans-serif;color:var(--muted)}.cs-pick{max-width:860px;margin:18px auto 6px;background:#fff;border-radius:20px;box-shadow:var(--card-shadow);padding:16px 18px}.cs-pick p{margin:0 0 10px;font-weight:800;color:var(--navy);font-size:16px}.cs-chips{display:flex;flex-wrap:wrap;gap:8px}.cs-chips button{font:inherit;font-weight:700;font-size:15px;min-height:44px;padding:8px 18px;border-radius:999px;border:1.5px solid rgba(26,39,82,.18);background:#F4FAFF;color:var(--navy);cursor:pointer}.cs-chips button.on{background:var(--navy);color:#fff;border-color:var(--navy)}.cs-chips button:focus-visible{outline:3px solid var(--blue);outline-offset:2px}main h2{text-wrap:balance}"
+}

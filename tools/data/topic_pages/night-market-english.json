@@ -1,0 +1,604 @@
+{
+ "slug": "night-market-english",
+ "published": "2026-11-18",
+ "target": "夜市英文",
+ "index": 0.5,
+ "h1": "夜市英文怎麼說？<br>小吃、遊戲、逛夜市 50 個說法",
+ "title": "夜市英文怎麼說？臭豆腐、蚵仔煎等 50 個說法＋介紹句（附PDF）｜埃森美語",
+ "desc": "夜市英文是 night market。臭豆腐、蚵仔煎、雞排、套圈圈怎麼說，50 個說法分 5 組對照，加上帶外國朋友逛夜市的 10 句、孩子的介紹範本和夜市英文賓果，附 A4 PDF。",
+ "hero": "夜市的英文是 <strong>night market</strong>。臭豆腐、蚵仔煎、雞排到套圈圈，50 個說法都整理好了；還有一張夜市英文賓果，讓孩子今晚就在夜市用英文點東西。",
+ "hero_chips": [
+  "50 個說法",
+  "夜市英文賓果",
+  "介紹夜市 10 句",
+  "A4 PDF"
+ ],
+ "hero_art": "<svg viewBox=\"0 0 470 400\" role=\"img\" aria-label=\"夜市攤位示意圖：三個攤位的招牌寫著 stinky tofu 臭豆腐、fried chicken 雞排、bubble tea 珍珠奶茶\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block\">\n<style>.nm-e{font:800 17px 'Baloo 2',sans-serif;fill:#1A2752}.nm-z{font:600 12.5px 'DM Sans',sans-serif;fill:#5b6b8a}.nm-b{animation:nmb 2.4s ease-in-out infinite}.nm-b2{animation-delay:.8s}.nm-b3{animation-delay:1.6s}@keyframes nmb{0%,100%{opacity:.45}50%{opacity:1}}@media(prefers-reduced-motion:reduce){.nm-b{animation:none;opacity:1}}</style>\n<rect x=\"0\" y=\"0\" width=\"470\" height=\"400\" rx=\"28\" fill=\"#1A2752\"/>\n<circle cx=\"398\" cy=\"62\" r=\"26\" fill=\"#FFE9B8\"/><circle cx=\"388\" cy=\"56\" r=\"26\" fill=\"#1A2752\"/>\n<g fill=\"#fff\" opacity=\".7\"><circle cx=\"60\" cy=\"48\" r=\"2\"/><circle cx=\"150\" cy=\"30\" r=\"1.6\"/><circle cx=\"250\" cy=\"52\" r=\"2\"/><circle cx=\"320\" cy=\"28\" r=\"1.6\"/><circle cx=\"440\" cy=\"120\" r=\"1.6\"/></g>\n<path d=\"M14 96Q120 136 235 100T456 96\" fill=\"none\" stroke=\"#5b6b8a\" stroke-width=\"2\"/>\n<g><circle class=\"nm-b\" cx=\"52\" cy=\"108\" r=\"7\" fill=\"#FFC828\"/><circle class=\"nm-b nm-b2\" cx=\"104\" cy=\"118\" r=\"7\" fill=\"#F0997B\"/><circle class=\"nm-b nm-b3\" cx=\"158\" cy=\"118\" r=\"7\" fill=\"#06C755\"/><circle class=\"nm-b\" cx=\"212\" cy=\"108\" r=\"7\" fill=\"#1CB0F6\"/><circle class=\"nm-b nm-b2\" cx=\"266\" cy=\"98\" r=\"7\" fill=\"#FFC828\"/><circle class=\"nm-b nm-b3\" cx=\"320\" cy=\"94\" r=\"7\" fill=\"#CE82FF\"/><circle class=\"nm-b\" cx=\"374\" cy=\"96\" r=\"7\" fill=\"#F0997B\"/><circle class=\"nm-b nm-b2\" cx=\"426\" cy=\"98\" r=\"7\" fill=\"#06C755\"/></g>\n<g>\n<path d=\"M18 190h134l-10-34H28z\" fill=\"#FFC828\"/><path d=\"M44 156l-6 34M70 156l-2 34M98 156l2 34M124 156l6 34\" stroke=\"#1A2752\" stroke-width=\"3\" opacity=\".25\"/>\n<rect x=\"24\" y=\"190\" width=\"122\" height=\"150\" fill=\"#22336B\"/><rect x=\"34\" y=\"204\" width=\"102\" height=\"52\" rx=\"10\" fill=\"#fff\"/><text x=\"85\" y=\"226\" text-anchor=\"middle\" class=\"nm-e\" style=\"font-size:15px\">stinky tofu</text><text x=\"85\" y=\"245\" text-anchor=\"middle\" class=\"nm-z\">臭豆腐</text>\n<g fill=\"#F3D9A4\" stroke=\"#C9A765\" stroke-width=\"2\"><rect x=\"46\" y=\"278\" width=\"24\" height=\"20\" rx=\"4\"/><rect x=\"74\" y=\"272\" width=\"24\" height=\"20\" rx=\"4\"/><rect x=\"102\" y=\"280\" width=\"24\" height=\"20\" rx=\"4\"/></g><rect x=\"24\" y=\"306\" width=\"122\" height=\"34\" fill=\"#F0997B\"/>\n</g>\n<g>\n<path d=\"M168 190h134l-10-34H178z\" fill=\"#F0997B\"/><path d=\"M194 156l-6 34M220 156l-2 34M248 156l2 34M274 156l6 34\" stroke=\"#fff\" stroke-width=\"3\" opacity=\".5\"/>\n<rect x=\"174\" y=\"190\" width=\"122\" height=\"150\" fill=\"#22336B\"/><rect x=\"184\" y=\"204\" width=\"102\" height=\"52\" rx=\"10\" fill=\"#fff\"/><text x=\"235\" y=\"226\" text-anchor=\"middle\" class=\"nm-e\" style=\"font-size:15px\">fried chicken</text><text x=\"235\" y=\"245\" text-anchor=\"middle\" class=\"nm-z\">雞排</text>\n<path d=\"M206 300c-8-22 12-34 30-28 16-8 34 8 26 28-6 10-48 12-56 0Z\" fill=\"#E9A23B\" stroke=\"#B9741A\" stroke-width=\"2\"/><rect x=\"174\" y=\"306\" width=\"122\" height=\"34\" fill=\"#FFC828\"/>\n</g>\n<g>\n<path d=\"M318 190h134l-10-34H328z\" fill=\"#06C755\"/><path d=\"M344 156l-6 34M370 156l-2 34M398 156l2 34M424 156l6 34\" stroke=\"#fff\" stroke-width=\"3\" opacity=\".5\"/>\n<rect x=\"324\" y=\"190\" width=\"122\" height=\"150\" fill=\"#22336B\"/><rect x=\"334\" y=\"204\" width=\"102\" height=\"52\" rx=\"10\" fill=\"#fff\"/><text x=\"385\" y=\"226\" text-anchor=\"middle\" class=\"nm-e\" style=\"font-size:15px\">bubble tea</text><text x=\"385\" y=\"245\" text-anchor=\"middle\" class=\"nm-z\">珍珠奶茶</text>\n<path d=\"M368 270h34l-5 34h-24z\" fill=\"#E8C9A0\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M390 262l-6 30\" stroke=\"#F0997B\" stroke-width=\"4\" stroke-linecap=\"round\"/><g fill=\"#3A2A1E\"><circle cx=\"378\" cy=\"297\" r=\"3\"/><circle cx=\"386\" cy=\"299\" r=\"3\"/><circle cx=\"393\" cy=\"296\" r=\"3\"/></g><rect x=\"324\" y=\"306\" width=\"122\" height=\"34\" fill=\"#1CB0F6\"/>\n</g>\n<rect x=\"0\" y=\"340\" width=\"470\" height=\"60\" rx=\"0\" fill=\"#141E42\"/><rect x=\"0\" y=\"372\" width=\"470\" height=\"28\" rx=\"0\" fill=\"#141E42\"/>\n<text x=\"235\" y=\"377\" text-anchor=\"middle\" style=\"font:400 22px 'DM Serif Display',serif;fill:#fff;letter-spacing:1px\">night market 夜市</text>\n</svg>",
+ "sections": [
+  {
+   "title": "夜市英文對照表：小吃、飲料、遊戲共 50 個說法",
+   "html_top": "<div class=\"bg\" id=\"bg\"><div class=\"bg-h\"><b>夜市英文賓果</b><span>用英文點到了、說出來了，就點一下那一格</span></div><div class=\"bg-grid\" id=\"bg-grid\"></div><div class=\"bg-f\"><button type=\"button\" class=\"btn btn-yellow\" id=\"bg-new\">換一張</button><span class=\"bg-msg\" id=\"bg-msg\" aria-live=\"polite\"></span></div></div>",
+   "prose": [
+    "先玩賓果：帶孩子去夜市之前打開這一頁，孩子每用英文說出一格（對爸媽說也算），就點一下。連成一條線就是 Bingo。按「換一張」會換九格。",
+    "下面是完整的對照表，分成 5 組：<strong>鹹的小吃、甜的和冰的、飲料、夜市遊戲、逛夜市會說的話</strong>。很多小吃美國沒有，英文是照材料和做法取的，例如蚵仔煎是 oyster omelet（牡蠣加煎蛋）；刈包、滷味、肉圓這幾樣，直接說拼音外國人也漸漸聽得懂。早餐店的東西另見<a href=\"/breakfast-shop-english/\">早餐店英文菜單</a>，手搖飲見<a href=\"/bubble-tea-english/\">珍珠奶茶英文</a>。"
+   ],
+   "html": "<script>(function(){var P=[[\"stinky tofu\",\"臭豆腐\"],[\"oyster omelet\",\"蚵仔煎\"],[\"fried chicken cutlet\",\"雞排\"],[\"bubble tea\",\"珍珠奶茶\"],[\"grilled corn\",\"烤玉米\"],[\"sweet potato balls\",\"地瓜球\"],[\"shaved ice\",\"剉冰\"],[\"scallion pancake\",\"蔥油餅\"],[\"papaya milk\",\"木瓜牛奶\"],[\"pepper bun\",\"胡椒餅\"],[\"wheel cakes\",\"車輪餅\"],[\"tofu pudding\",\"豆花\"],[\"How much is this?\",\"這個多少錢？\"],[\"One, please.\",\"一份，謝謝。\"],[\"Is it spicy?\",\"會辣嗎？\"],[\"ring toss\",\"套圈圈\"]];function go(){var g=document.getElementById(\"bg-grid\");if(!g)return;var msg=document.getElementById(\"bg-msg\");function deal(){var a=P.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}g.innerHTML=\"\";a.slice(0,9).forEach(function(p){var b=document.createElement(\"button\");b.type=\"button\";b.setAttribute(\"aria-pressed\",\"false\");b.lang=\"en\";b.appendChild(document.createTextNode(p[0]));var s=document.createElement(\"small\");s.lang=\"zh-Hant\";s.textContent=p[1];b.appendChild(s);g.appendChild(b)});msg.textContent=\"\"}function check(){var b=[].map.call(g.children,function(x){return x.getAttribute(\"aria-pressed\")===\"true\"}),L=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]],n=b.filter(Boolean).length,win=L.some(function(l){return l.every(function(i){return b[i]})});msg.textContent=n===9?\"全部說完了，太厲害了！\":win?\"Bingo！連成一條線了\":n?(\"說了 \"+n+\" 格\"):\"\";if(win&&window.gtag&&!go.sent){go.sent=1;gtag(\"event\",\"bingo_line\",{tool:\"night-market\"})}}g.addEventListener(\"click\",function(e){var b=e.target.closest(\"button\");if(!b)return;b.setAttribute(\"aria-pressed\",b.getAttribute(\"aria-pressed\")===\"true\"?\"false\":\"true\");check()});document.getElementById(\"bg-new\").addEventListener(\"click\",deal);deal();}if(document.readyState===\"loading\")document.addEventListener(\"DOMContentLoaded\",go);else go();})();</script>",
+   "heads": [
+    "英文",
+    "中文",
+    "用法／注意"
+   ],
+   "groups": [
+    {
+     "name": "鹹的小吃 Savory snacks（16 個）",
+     "rows": [
+      [
+       "stinky tofu",
+       "臭豆腐",
+       "stinky＝很臭的；外國朋友最想試也最怕的一樣"
+      ],
+      [
+       "oyster omelet",
+       "蚵仔煎",
+       "oyster＝牡蠣；omelet＝煎蛋"
+      ],
+      [
+       "fried chicken cutlet",
+       "雞排",
+       "cutlet＝一大片的肉排"
+      ],
+      [
+       "Taiwanese popcorn chicken",
+       "鹽酥雞",
+       "一口大小的炸雞塊"
+      ],
+      [
+       "braised pork rice",
+       "滷肉飯",
+       "braised＝滷的"
+      ],
+      [
+       "oyster vermicelli",
+       "蚵仔麵線",
+       "vermicelli＝很細的麵線"
+      ],
+      [
+       "pork belly bun",
+       "刈包",
+       "也直接說 gua bao"
+      ],
+      [
+       "pepper bun",
+       "胡椒餅",
+       "貼在爐壁上烤的"
+      ],
+      [
+       "scallion pancake",
+       "蔥油餅",
+       "scallion＝青蔥"
+      ],
+      [
+       "pan-fried buns",
+       "生煎包、水煎包",
+       "pan-fried＝用平底鍋煎的"
+      ],
+      [
+       "grilled squid",
+       "烤魷魚",
+       "grilled＝烤的"
+      ],
+      [
+       "grilled corn",
+       "烤玉米",
+       "一根是 an ear of corn"
+      ],
+      [
+       "Taiwanese sausage",
+       "香腸",
+       "比美國的香腸甜"
+      ],
+      [
+       "braised snacks",
+       "滷味",
+       "也直接說 lu wei；自己夾、老闆滷"
+      ],
+      [
+       "Taiwanese meatball dumpling",
+       "肉圓",
+       "也直接說 ba-wan"
+      ],
+      [
+       "octopus balls",
+       "章魚燒",
+       "日文說 takoyaki，英文也通"
+      ]
+     ]
+    },
+    {
+     "name": "甜的和冰的 Sweets and ices（8 個）",
+     "rows": [
+      [
+       "sweet potato balls",
+       "地瓜球",
+       "sweet potato＝地瓜"
+      ],
+      [
+       "wheel cakes",
+       "車輪餅、紅豆餅",
+       "紅豆口味是 red bean，奶油是 custard"
+      ],
+      [
+       "tofu pudding",
+       "豆花",
+       "口感像布丁的豆腐"
+      ],
+      [
+       "shaved ice",
+       "剉冰",
+       "芒果冰是 mango shaved ice"
+      ],
+      [
+       "candied fruit skewers",
+       "糖葫蘆",
+       "skewer＝一串"
+      ],
+      [
+       "peanut ice cream roll",
+       "花生捲冰淇淋",
+       "要不要香菜先問：with cilantro?"
+      ],
+      [
+       "mochi",
+       "麻糬",
+       "英文直接用 mochi"
+      ],
+      [
+       "mini sponge cakes",
+       "雞蛋糕",
+       "sponge cake＝海綿蛋糕"
+      ]
+     ]
+    },
+    {
+     "name": "飲料 Drinks（6 個）",
+     "rows": [
+      [
+       "bubble tea",
+       "珍珠奶茶",
+       "美國西岸多說 boba"
+      ],
+      [
+       "papaya milk",
+       "木瓜牛奶",
+       "papaya＝木瓜"
+      ],
+      [
+       "winter melon tea",
+       "冬瓜茶",
+       "winter melon＝冬瓜"
+      ],
+      [
+       "sugarcane juice",
+       "甘蔗汁",
+       "sugarcane＝甘蔗"
+      ],
+      [
+       "aiyu jelly lemonade",
+       "檸檬愛玉",
+       "aiyu 直接用拼音，jelly＝凍"
+      ],
+      [
+       "fresh fruit juice",
+       "現打果汁",
+       "fresh＝新鮮的"
+      ]
+     ]
+    },
+    {
+     "name": "夜市遊戲 Games（6 個）",
+     "rows": [
+      [
+       "ring toss",
+       "套圈圈",
+       "toss＝丟"
+      ],
+      [
+       "balloon darts",
+       "射氣球",
+       "dart＝飛鏢"
+      ],
+      [
+       "goldfish scooping",
+       "撈金魚",
+       "scoop＝撈"
+      ],
+      [
+       "pinball",
+       "彈珠台",
+       "一個字"
+      ],
+      [
+       "claw machine",
+       "夾娃娃機",
+       "claw＝爪子"
+      ],
+      [
+       "win a prize",
+       "贏得獎品",
+       "prize＝獎品"
+      ]
+     ]
+    },
+    {
+     "name": "逛夜市會說的話 At the night market（14 句）",
+     "rows": [
+      [
+       "Let's go to the night market tonight.",
+       "我們今晚去逛夜市吧。",
+       "go to，不說 walk the night market"
+      ],
+      [
+       "It's so crowded!",
+       "人好多！",
+       "crowded＝擁擠的"
+      ],
+      [
+       "What smells so good?",
+       "什麼東西這麼香？",
+       "聞到香味時"
+      ],
+      [
+       "What do you recommend?",
+       "你推薦什麼？",
+       "問老闆或朋友"
+      ],
+      [
+       "How much is this?",
+       "這個多少錢？",
+       "指著東西問"
+      ],
+      [
+       "One, please.",
+       "一份，謝謝。",
+       "兩份是 Two, please."
+      ],
+      [
+       "Is it spicy?",
+       "會辣嗎？",
+       "點之前先問"
+      ],
+      [
+       "A little spicy, please.",
+       "小辣，謝謝。",
+       "不要辣是 Not spicy, please."
+      ],
+      [
+       "No cilantro, please.",
+       "不要香菜，謝謝。",
+       "cilantro＝香菜"
+      ],
+      [
+       "Can I try one?",
+       "我可以試吃一個嗎？",
+       "有試吃的攤位才問"
+      ],
+      [
+       "Let's share.",
+       "我們分著吃。",
+       "夜市東西多，分著吃才吃得到很多種"
+      ],
+      [
+       "Is this the end of the line?",
+       "這裡是隊伍的尾巴嗎？",
+       "排隊前先問"
+      ],
+      [
+       "It smells strong, but it tastes good.",
+       "聞起來很重，可是很好吃。",
+       "介紹臭豆腐必備"
+      ],
+      [
+       "I'm so full. I can't eat any more.",
+       "我好飽，吃不下了。",
+       "逛完一定用得到"
+      ]
+     ]
+    }
+   ],
+   "cls": "tk-s1"
+  },
+  {
+   "title": "夜市英文怎麼說、怎麼唸：night market 是兩個字",
+   "prose": [
+    "夜市的英文是 <strong>night market</strong>，兩個字分開寫。逛夜市說 go to the night market：We went to the night market last night.（我們昨晚去逛夜市。）小吃可以說 street food 或 snacks；攤位是 stall，老闆是 vendor。",
+    "夜市的名字照官方的拼法，後面加 Night Market，每個字第一個字母大寫：士林夜市是 Shilin Night Market，饒河街觀光夜市是 Raohe Street Night Market，逢甲夜市是 Fengjia Night Market。",
+    "怎麼唸：<strong>market [ˈmɑrkɪt]</strong>，重音在前，第二個音節很輕。<strong>stall [stɔl]</strong> 的母音是 [ɔ]，和 tall 一樣。每個 KK 符號的唸法見 <a href=\"/kk-phonetic-chart/\">KK 音標表</a>。"
+   ],
+   "heads": [
+    "英文",
+    "KK 音標",
+    "注意"
+   ],
+   "rows": [
+    [
+     "night market",
+     "[naɪt ˈmɑrkɪt]",
+     "兩個字；market 重音在前"
+    ],
+    [
+     "stall",
+     "[stɔl]",
+     "攤位；和 tall 押韻"
+    ],
+    [
+     "vendor",
+     "[ˈvɛndɚ]",
+     "攤販；v 要咬下唇"
+    ],
+    [
+     "oyster",
+     "[ˈɔɪstɚ]",
+     "OY-ster，兩個音節"
+    ],
+    [
+     "omelet",
+     "[ˈɑmlɪt]",
+     "中間的 e 幾乎不唸：OM-lit"
+    ],
+    [
+     "squid",
+     "[skwɪd]",
+     "一個音節，結尾 d 要出聲"
+    ],
+    [
+     "cilantro",
+     "[sɪˈlæntro]",
+     "香菜；重音在 LAN"
+    ],
+    [
+     "crowded",
+     "[ˈkraʊdɪd]",
+     "兩個音節，結尾 -ed 唸 [ɪd]"
+    ]
+   ]
+  },
+  {
+   "title": "帶外國朋友逛夜市：10 句介紹",
+   "prose": [
+    "外國朋友第一次到夜市，最需要知道的是：怎麼點、怎麼付錢、哪些東西值得試。照下面的順序說，就是一趟完整的導覽。"
+   ],
+   "heads": [
+    "英文句子",
+    "中文",
+    "什麼時候說"
+   ],
+   "rows": [
+    [
+     "A night market is an outdoor market that opens in the evening.",
+     "夜市是晚上才開的露天市場。",
+     "第一句：先說是什麼"
+    ],
+    [
+     "People come here to eat, shop, and play games.",
+     "大家來這裡吃東西、買東西、玩遊戲。",
+     "說明做什麼"
+    ],
+    [
+     "Most stalls only take cash.",
+     "大部分的攤位只收現金。",
+     "進去之前提醒"
+    ],
+    [
+     "The portions are small, so we can try many things.",
+     "份量都不大，所以可以吃很多種。",
+     "解釋為什麼分著吃"
+    ],
+    [
+     "Just point and say \"One, please.\"",
+     "用手指，說 One, please. 就可以。",
+     "教對方怎麼點"
+    ],
+    [
+     "This is stinky tofu. It smells strong, but it tastes good.",
+     "這是臭豆腐，聞起來很重，可是很好吃。",
+     "介紹臭豆腐"
+    ],
+    [
+     "This one is a little sweet. Try it.",
+     "這個有點甜，試試看。",
+     "遞東西給對方"
+    ],
+    [
+     "Do you want it spicy or not spicy?",
+     "你要辣的還是不辣的？",
+     "幫對方點"
+    ],
+    [
+     "Let's get a drink. Do you want bubble tea?",
+     "我們去買飲料，你要珍珠奶茶嗎？",
+     "吃到一半"
+    ],
+    [
+     "Do you want to play a game? You can win a prize.",
+     "要不要玩遊戲？可以贏獎品。",
+     "走到遊戲區"
+    ]
+   ]
+  },
+  {
+   "title": "教孩子用英文介紹夜市：7 句範本，加上外國朋友會問的 3 個問題",
+   "prose": [
+    "下面 7 句是給國小孩子的介紹範本，每句只用最基本的文法，照順序說就是一段完整的 show and tell。先一句一問一答，七句都答得出來，再讓孩子從頭講一遍。"
+   ],
+   "heads": [
+    "英文",
+    "中文",
+    "誰說的／提示"
+   ],
+   "groups": [
+    {
+     "name": "介紹夜市的 7 句 A seven-sentence introduction",
+     "rows": [
+      [
+       "Taiwan has many night markets.",
+       "台灣有很多夜市。",
+       "第一句：是什麼"
+      ],
+      [
+       "They open in the evening.",
+       "它們晚上才開。",
+       "第二句：什麼時候"
+      ],
+      [
+       "You can eat, shop, and play games there.",
+       "在那裡可以吃東西、買東西、玩遊戲。",
+       "第三句：做什麼"
+      ],
+      [
+       "My favorite food is fried chicken cutlet.",
+       "我最喜歡的是雞排。",
+       "第四句：換成自己喜歡的"
+      ],
+      [
+       "I also like sweet potato balls.",
+       "我也喜歡地瓜球。",
+       "第五句：再說一樣"
+      ],
+      [
+       "I go with my family on weekends.",
+       "我週末和家人一起去。",
+       "第六句：和誰去"
+      ],
+      [
+       "It is crowded, but it is fun.",
+       "人很多，可是很好玩。",
+       "第七句：感覺"
+      ]
+     ]
+    },
+    {
+     "name": "外國朋友會問的 3 個問題 Three questions a foreign friend might ask",
+     "rows": [
+      [
+       "Q: What's a night market?",
+       "夜市是什麼？",
+       "外國朋友問"
+      ],
+      [
+       "A: It's a market at night. There are many food stalls and games.",
+       "是晚上的市場，有很多小吃攤和遊戲。",
+       "孩子答"
+      ],
+      [
+       "Q: What should I eat?",
+       "我應該吃什麼？",
+       "外國朋友問"
+      ],
+      [
+       "A: Try the fried chicken and the bubble tea.",
+       "試試雞排和珍珠奶茶。",
+       "孩子答"
+      ],
+      [
+       "Q: Is stinky tofu really stinky?",
+       "臭豆腐真的很臭嗎？",
+       "外國朋友問"
+      ],
+      [
+       "A: Yes! But it tastes good.",
+       "真的！可是很好吃。",
+       "孩子答"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "程度好一點的孩子，可以在第四句加上原因：My favorite food is fried chicken cutlet because it is big and crispy.（因為又大又酥。）介紹要怎麼開頭，見 <a href=\"/english-self-introduction-kids/\">孩子的英文自我介紹</a>。"
+   ]
+  },
+  {
+   "title": "美國老師的觀察：美國沒有夜市，哪些說法是中式英文",
+   "prose": [
+    "外國朋友最常被嚇到的有三件事：臭豆腐的味道、邊走邊吃、還有人真的很多。先說一句 It's crowded, so stay close.（人很多，跟緊一點。）再帶他從不那麼刺激的東西開始，例如地瓜球和雞排，最後才挑戰臭豆腐。"
+   ],
+   "heads": [
+    "常見說法",
+    "建議說法",
+    "為什麼"
+   ],
+   "rows": [
+    [
+     "night city / night street",
+     "night market",
+     "夜市的固定說法是 night market"
+    ],
+    [
+     "small eat",
+     "street food / snacks",
+     "小吃是 street food 或 snacks"
+    ],
+    [
+     "walk the night market",
+     "go to the night market",
+     "逛夜市用 go to"
+    ],
+    [
+     "smelly tofu",
+     "stinky tofu",
+     "兩個都聽得懂，但通用的名稱是 stinky tofu"
+    ],
+    [
+     "very delicious",
+     "really good / delicious",
+     "delicious 前面不加 very，說 really good 最自然"
+    ],
+    [
+     "It's very Q.",
+     "It's chewy.",
+     "Q 是台灣的說法，英文是 chewy"
+    ],
+    [
+     "play game",
+     "play a game / play games",
+     "game 可數，要加 a 或 s"
+    ]
+   ],
+   "after": [
+    "買東西、殺價的說法，見<a href=\"/shopping-english/\">購物英文</a>；餐廳點餐見<a href=\"/ordering-food-english/\">點餐英文</a>；冬天吃火鍋的說法見<a href=\"/hot-pot-english/\">火鍋英文</a>。"
+   ],
+   "html_top": "<figure class=\"tk-note reveal\"><img src=\"/assets/img/american-english-banqiao-logo-96.webp\" alt=\"埃森美語\" width=\"54\" height=\"54\" loading=\"lazy\"><span class=\"tk-tag\">老師的話</span><blockquote>美國沒有夜市。最接近的是一年一次的園遊會（county fair）、週末的農夫市集，或是停成一排的餐車，但都不是每天晚上開。所以外國人到台灣，夜市幾乎一定排在行程裡。跟美國人介紹時說 It's like a fair with food stalls and games, but it's open every night.，對方馬上就有畫面。</blockquote><figcaption>— Mr. Chris，埃森美語創辦人</figcaption></figure>"
+  },
+  {
+   "title": "夜市英文常見問題",
+   "faq": [
+    [
+     "夜市英文怎麼說？",
+     "夜市的英文是 night market，兩個字分開寫。逛夜市是 go to the night market。夜市的名字後面加 Night Market 並大寫，例如 Shilin Night Market（士林夜市）。"
+    ],
+    [
+     "台灣小吃英文怎麼說？",
+     "小吃可以說 street food 或 snacks，台灣小吃是 Taiwanese street food。常見的有 stinky tofu（臭豆腐）、oyster omelet（蚵仔煎）、fried chicken cutlet（雞排）、braised pork rice（滷肉飯）、bubble tea（珍珠奶茶）。"
+    ],
+    [
+     "臭豆腐英文怎麼說？",
+     "臭豆腐是 stinky tofu。介紹時可以說 It smells strong, but it tastes good.（聞起來很重，可是很好吃。）炸的是 fried stinky tofu，麻辣的是 spicy stinky tofu。"
+    ],
+    [
+     "蚵仔煎、雞排、鹽酥雞的英文是什麼？",
+     "蚵仔煎是 oyster omelet；雞排是 fried chicken cutlet；鹽酥雞是 Taiwanese popcorn chicken，也有人說 salt and pepper chicken。"
+    ],
+    [
+     "怎麼用英文介紹夜市？",
+     "先說是什麼：A night market is an outdoor market that opens in the evening. 再說做什麼：People come here to eat, shop, and play games. 最後推薦一樣東西：You should try the fried chicken."
+    ],
+    [
+     "套圈圈、夾娃娃機英文怎麼說？",
+     "套圈圈是 ring toss，射氣球是 balloon darts，撈金魚是 goldfish scooping，夾娃娃機是 claw machine。贏得獎品是 win a prize。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "夜市的英文，孩子說得出口嗎？",
+ "cta": "賓果連成一條線不難，難的是外國朋友問 What should I eat? 的時候，孩子能不能當場推薦一樣。我們的小班課由美國老師帶，把生活裡的事當成真實情境來練。",
+ "css": ".tk-hero{text-align:left}.tk-hero .tk-hero-grid{max-width:1140px;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:52px;align-items:center}.tk-hero h1{font-size:clamp(32px,3.6vw,50px);margin:14px 0 16px}.tk-hero .divider{margin:0 0 20px}.tk-hero .body{max-width:52ch;margin:0}.tk-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.tk-art{justify-self:center;width:100%;max-width:470px}.tk-cap{margin:12px 0 0;text-align:center;font-size:13px;color:var(--muted)}@media(max-width:880px){.tk-hero{text-align:center}.tk-hero .tk-hero-grid{grid-template-columns:1fr;gap:30px}.tk-hero .divider{margin:0 auto 20px}.tk-hero .body{margin:0 auto}.tk-chips{justify-content:center}.tk-art{max-width:380px}}.tk-s1 h3{max-width:860px;margin:36px auto 12px;display:flex;align-items:center;gap:11px;font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:800;color:var(--navy);letter-spacing:.2px}.tk-s1 .compare{display:flex;flex-direction:column}.tk-s1 .compare>table{order:-1}.tk-s1 .compare>.magnet-box{margin-top:22px}.tk-s1 h3::before{content:'';flex:0 0 auto;width:13px;height:13px;border-radius:4px;background:var(--yellow);box-shadow:3px 3px 0 var(--navy)}.tk-note{max-width:760px;margin:24px auto 26px;background:var(--navy);border-radius:26px;padding:24px 26px 22px;display:grid;grid-template-columns:auto 1fr;column-gap:16px;row-gap:6px;box-shadow:0 16px 36px rgba(26,39,82,.22)}.tk-note img{grid-row:1 / span 3;width:54px;height:54px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px var(--yellow)}.tk-note .tk-tag{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px;letter-spacing:1.5px;color:var(--yellow)}.tk-note blockquote{margin:0;font-size:16.5px;line-height:1.9;color:#F2F6FF}.tk-note blockquote b{color:#fff;box-shadow:inset 0 -8px 0 rgba(255,200,40,.32)}.tk-note figcaption{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:#BFD6FF}@media(max-width:560px){.tk-note{grid-template-columns:1fr;padding:20px 18px}.tk-note img{grid-row:auto}}.bg{max-width:860px;margin:22px auto 26px;background:var(--navy);border-radius:26px;padding:22px 22px 20px;box-shadow:0 16px 36px rgba(26,39,82,.22)}.bg-h{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.bg-h b{font:400 24px 'DM Serif Display',serif;color:#fff}.bg-h span{font-size:14px;color:#BFD6FF}.bg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.bg-grid button{font:800 15.5px/1.3 'Baloo 2',sans-serif;color:var(--navy);background:#fff;border:0;border-radius:16px;min-height:86px;padding:10px 8px;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;transition:transform .12s}.bg-grid button small{font:500 12.5px 'DM Sans',sans-serif;color:var(--muted)}.bg-grid button:active{transform:scale(.97)}.bg-grid button[aria-pressed=true]{background:var(--yellow);box-shadow:inset 0 0 0 3px #fff}.bg-grid button[aria-pressed=true]::before{content:'✓ 說了';font:800 11.5px 'Baloo 2',sans-serif;color:var(--navy)}.bg-grid button:focus-visible{outline:3px solid var(--blue);outline-offset:2px}.bg-f{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:14px}.bg-f .btn{min-height:44px}.bg-msg{font:800 16px 'Baloo 2',sans-serif;color:var(--yellow)}@media(max-width:520px){.bg{padding:16px 12px}.bg-grid button{font-size:13.5px;min-height:78px}}main h2{text-wrap:balance}"
+}

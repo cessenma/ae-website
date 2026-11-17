@@ -1,0 +1,368 @@
+{
+ "slug": "chatgpt-english-essay-correction",
+ "published": "2026-11-18",
+ "target": "ChatGPT 英文作文批改",
+ "index": 0.5,
+ "h1": "ChatGPT 英文作文批改：<br>指令產生器＋24 句指令",
+ "title": "ChatGPT 英文作文批改：指令產生器＋24 句指令，美國老師教用法｜埃森美語",
+ "desc": "用 ChatGPT 批改英文作文怎麼下指令？選程度和改法，產生可以貼上的英文指令；附 24 句常用指令、三種改法的差別、英檢寫作怎麼練，以及美國老師說 AI 改作文最大的問題。",
+ "hero": "請 ChatGPT 改英文作文，最常見的結果是它把整篇重寫成大人的英文，孩子什麼也沒學到。這一頁的指令產生器會先請它<strong>只標出錯在哪裡</strong>，讓孩子自己改，再對答案。",
+ "hero_chips": [
+  "指令產生器",
+  "24 句常用指令",
+  "三種改法",
+  "英檢寫作"
+ ],
+ "hero_art": "<div class=\"tk-paper\"><span class=\"tk-stamp\">3 個錯，先自己改</span><h4>MY WEEKEND</h4><p>Last Sunday I <s>go</s><ins>went</ins> to the zoo with my family. We <s>see</s><ins>saw</ins> many animals. The monkeys <s>is</s><ins>were</ins> very funny. <mark>I want to go again!</mark></p></div><p class=\"tk-cap\">請它先標出錯在哪裡，孩子自己改，再對答案</p>",
+ "css": ".pb{max-width:860px;margin:18px auto 6px;background:#fff;border-radius:20px;box-shadow:var(--card-shadow);padding:16px 18px 18px}.pb fieldset{border:none;margin:0 0 12px;padding:0;min-width:0}.pb legend{display:block;font-weight:800;color:var(--navy);font-size:15.5px;margin:4px 0 8px;padding:0}.pb-seg{display:flex;flex-wrap:wrap;gap:8px}.pb-seg label{display:inline-flex;align-items:center;gap:6px;background:#F4FAFF;border:1.5px solid rgba(26,39,82,.16);border-radius:999px;padding:8px 14px;cursor:pointer;font-size:15px;min-height:44px;box-sizing:border-box;color:var(--navy);font-weight:600}.pb-seg label:has(input:checked){background:#1A2752;color:#fff;border-color:#1A2752}.pb-out{width:100%;box-sizing:border-box;min-height:230px;margin-top:6px;border:1.5px solid rgba(26,39,82,.18);border-radius:14px;padding:12px 14px;font:15px/1.6 Inter,system-ui,sans-serif;color:#1f2937;background:#FBFDFF;resize:vertical}.pb-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;align-items:center}.pb-btns .btn{min-height:46px}.pb-ok{font-weight:700;color:#12873d;font-size:14px}.tk-hero{text-align:left}.tk-hero .tk-hero-grid{max-width:1140px;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:52px;align-items:center}.tk-hero h1{font-size:clamp(32px,3.6vw,50px);margin:14px 0 16px}.tk-hero .divider{margin:0 0 20px}.tk-hero .body{max-width:52ch;margin:0}.tk-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.tk-art{justify-self:center;width:100%;max-width:470px}.tk-cap{margin:12px 0 0;text-align:center;font-size:13px;color:var(--muted)}@media(max-width:880px){.tk-hero{text-align:center}.tk-hero .tk-hero-grid{grid-template-columns:1fr;gap:30px}.tk-hero .divider{margin:0 auto 20px}.tk-hero .body{margin:0 auto}.tk-chips{justify-content:center}.tk-art{max-width:380px}}.tk-s1 h3{max-width:860px;margin:36px auto 12px;display:flex;align-items:center;gap:11px;font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:800;color:var(--navy);letter-spacing:.2px}.tk-s1 .compare{display:flex;flex-direction:column}.tk-s1 .compare>table{order:-1}.tk-s1 .compare>.magnet-box{margin-top:22px}.tk-s1 h3::before{content:'';flex:0 0 auto;width:13px;height:13px;border-radius:4px;background:var(--yellow);box-shadow:3px 3px 0 var(--navy)}.tk-note{max-width:760px;margin:24px auto 26px;background:var(--navy);border-radius:26px;padding:24px 26px 22px;display:grid;grid-template-columns:auto 1fr;column-gap:16px;row-gap:6px;box-shadow:0 16px 36px rgba(26,39,82,.22)}.tk-note img{grid-row:1 / span 3;width:54px;height:54px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px var(--yellow)}.tk-note .tk-tag{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px;letter-spacing:1.5px;color:var(--yellow)}.tk-note blockquote{margin:0;font-size:16.5px;line-height:1.9;color:#F2F6FF}.tk-note blockquote b{color:#fff;box-shadow:inset 0 -8px 0 rgba(255,200,40,.32)}.tk-note figcaption{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:#BFD6FF}@media(max-width:560px){.tk-note{grid-template-columns:1fr;padding:20px 18px}.tk-note img{grid-row:auto}}.pb{max-width:1040px;margin:22px auto 26px;padding:0;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.pb-seg label{position:relative}.pb-seg input{position:absolute;opacity:0;width:1px;height:1px}.pb-seg label:has(input:focus-visible){outline:3px solid var(--blue);outline-offset:2px}.pb-form{padding:20px 22px 18px}.pb-side{background:var(--navy);padding:20px 22px 22px;display:flex;flex-direction:column}.pb-side label{color:var(--yellow)!important;margin-top:0!important}.pb-out{flex:1;min-height:300px;background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.22);color:#F2F6FF;margin-top:10px}.pb-side .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}.pb-ok{color:#8EF0B4}@media(max-width:860px){.pb{grid-template-columns:1fr}.pb-out{min-height:230px}}.tk-paper{position:relative;max-width:400px;margin:0 auto;background:#fff;border-radius:10px 26px 10px 10px;box-shadow:0 22px 50px rgba(26,39,82,.22);padding:26px 26px 22px 46px;background-image:linear-gradient(90deg,transparent 33px,#F3B3A6 33px,#F3B3A6 35px,transparent 35px),repeating-linear-gradient(180deg,transparent 0 37px,#DCE6F5 37px 38.5px);transform:rotate(-1.4deg);text-align:left}.tk-paper h4{margin:0 0 4px;font:800 14px 'Baloo 2',sans-serif;color:var(--muted);letter-spacing:1px}.tk-paper p{margin:0;font:500 17px/38.5px 'DM Sans',sans-serif;color:var(--navy)}.tk-paper s{color:#b4533c;text-decoration-thickness:2px}.tk-paper ins{text-decoration:none;font:800 16px 'Baloo 2',sans-serif;color:#0b7a3b;background:#DDF8E8;border-radius:6px;padding:0 5px;margin-left:3px}.tk-paper mark{background:none;color:inherit;box-shadow:inset 0 -9px 0 rgba(255,200,40,.55)}.tk-stamp{position:absolute;right:-14px;top:-16px;background:var(--yellow);color:var(--navy);font:800 13.5px 'Baloo 2',sans-serif;border-radius:999px;padding:7px 13px;box-shadow:3px 3px 0 var(--navy);transform:rotate(5deg)}main h2{text-wrap:balance}",
+ "sections": [
+  {
+   "title": "ChatGPT 英文作文批改指令：先用產生器，再看 24 句常用指令",
+   "html_top": "<div class=\"pb\" id=\"pb\" data-tool=\"essay\"><form class=\"pb-form\" id=\"pb-form\" novalidate><fieldset><legend>1. 寫作文的人</legend><div class=\"pb-seg\"><label><input type=\"radio\" name=\"pb-lv\" value=\"a\">國小</label><label><input type=\"radio\" name=\"pb-lv\" value=\"b\" checked>國中</label><label><input type=\"radio\" name=\"pb-lv\" value=\"c\">準備英檢初級寫作</label><label><input type=\"radio\" name=\"pb-lv\" value=\"d\">高中、英檢中級</label></div></fieldset><fieldset><legend>2. 要它做什麼</legend><div class=\"pb-seg\"><label><input type=\"radio\" name=\"pb-do\" value=\"hint\" checked>只標出錯在哪裡，先不要改</label><label><input type=\"radio\" name=\"pb-do\" value=\"fix\">改錯，並說明原因</label><label><input type=\"radio\" name=\"pb-do\" value=\"model\">改完再給一個更好的版本</label><label><input type=\"radio\" name=\"pb-do\" value=\"score\">照評分標準給分數和建議</label></div></fieldset><fieldset><legend>3. 說明用什麼語言</legend><div class=\"pb-seg\"><label><input type=\"radio\" name=\"pb-lang\" value=\"zh\" checked>繁體中文</label><label><input type=\"radio\" name=\"pb-lang\" value=\"en\">簡單的英文</label></div></fieldset><fieldset><legend>4. 要保留原本的寫法嗎</legend><div class=\"pb-seg\"><label><input type=\"radio\" name=\"pb-keep\" value=\"y\" checked>盡量保留我的句子</label><label><input type=\"radio\" name=\"pb-keep\" value=\"n\">可以大幅改寫</label></div></fieldset></form><div class=\"pb-side\"><label for=\"pb-out\" style=\"display:block;font-weight:800;font-size:15.5px\">你的指令（英文，整段複製）</label><textarea class=\"pb-out\" id=\"pb-out\" readonly spellcheck=\"false\" lang=\"en\"></textarea><div class=\"pb-btns\"><button type=\"button\" class=\"btn btn-primary\" id=\"pb-copy\">複製指令</button><a class=\"btn btn-outline\" id=\"pb-open\" href=\"https://chatgpt.com/\" target=\"_blank\" rel=\"noopener\">在 ChatGPT 開啟</a><span class=\"pb-ok\" id=\"pb-ok\" aria-live=\"polite\"></span></div></div></div>",
+   "prose": [
+    "四個選項選好，方框裡的英文指令會跟著改。按「複製指令」貼到 ChatGPT 送出，它會回一句 Ready，接著把作文貼上去；或是按「在 ChatGPT 開啟」，電腦會直接把指令送出。第二個選項最重要：<strong>先選「只標出錯在哪裡」</strong>，孩子自己改一次，學到的比直接看答案多。",
+    "對話開始以後，下面 24 句可以隨時用。其中最值得記住的一句是 Do not rewrite my composition. Only show me the mistakes."
+   ],
+   "html": "<script>(function(){var LV={a:\"an elementary school student in Taiwan (about CEFR A1)\",b:\"a junior high school student in Taiwan (about CEFR A2)\",c:\"a student in Taiwan preparing for the GEPT Elementary writing test (a paragraph of about 50 words)\",d:\"a senior high school student in Taiwan (about CEFR B1)\"};var DO={hint:[\"Do NOT correct anything yet. Number each mistake, quote the words, and tell me what kind of mistake it is (grammar, spelling, word choice, punctuation). Give a small hint so I can fix it myself.\",\"After I send my corrected version, check it and show the mistakes I still have.\"],fix:[\"Correct every mistake. Number each one, show my words and the correct words, and explain the reason in one short sentence.\",\"Then show the whole corrected composition once.\"],model:[\"First correct every mistake and explain each one in one short sentence.\",\"Then write one better version at my level, and list the three biggest differences between my version and yours.\"],score:[\"Score my composition from 0 to 5 for each of these: content, organization, grammar, vocabulary and spelling. Give one sentence of reason for each score.\",\"Then correct the mistakes and explain each one in one short sentence.\"]};function v(n){var e=document.querySelector('input[name=\"pb-'+n+'\"]:checked');return e?e.value:\"\"}function make(){var d=DO[v(\"do\")];return [\"You are an experienced English writing teacher. I am \"+LV[v(\"lv\")]+\". I will paste my English composition in my next message.\",\"\",\"What to do:\",\"1. \"+d[0],\"2. \"+d[1],\"\",\"Rules:\",\"- \"+(v(\"keep\")===\"y\"?\"Keep my own words and ideas. Change only what is wrong or unclear.\":\"You may rewrite sentences freely, but keep my meaning.\"),\"- Do not make the writing longer or more advanced than my level.\",\"- Explain in \"+(v(\"lang\")===\"zh\"?\"Traditional Chinese\":\"simple English\")+\".\",\"- At the end, tell me the ONE thing I should practice first.\",\"\",\"For now, reply only: \\\"Ready. Paste your composition.\\\"\"].join(\"\\n\")}function go(){var box=document.getElementById(\"pb\");if(!box)return;var out=document.getElementById(\"pb-out\"),open=document.getElementById(\"pb-open\"),ok=document.getElementById(\"pb-ok\");function upd(){var p=make();out.value=p;open.href=\"https://chatgpt.com/?q=\"+encodeURIComponent(p);ok.textContent=\"\";}box.addEventListener(\"change\",upd);upd();function ev(n){if(window.gtag)gtag(\"event\",n,{tool:\"essay\",level:v(\"lv\"),topic:v(\"do\")})}document.getElementById(\"pb-copy\").addEventListener(\"click\",function(){var p=out.value;function done(){ok.textContent=\"已複製，貼到對話框，再貼上作文\";ev(\"prompt_copy\")}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(p).then(done,function(){out.select();document.execCommand(\"copy\");done()})}else{out.select();document.execCommand(\"copy\");done()}});open.addEventListener(\"click\",function(){ev(\"prompt_open\")});}if(document.readyState===\"loading\")document.addEventListener(\"DOMContentLoaded\",go);else go();})();</script>",
+   "heads": [
+    "貼上去的指令（英文）",
+    "中文意思",
+    "什麼時候用"
+   ],
+   "groups": [
+    {
+     "name": "貼作文之前 Before you paste（5 句）",
+     "rows": [
+      [
+       "I am in the eighth grade. Please use easy words when you explain.",
+       "我八年級，說明的時候請用簡單的字。",
+       "先讓它知道年級"
+      ],
+      [
+       "The topic is \"My Favorite Season\". The teacher asked for about 80 words.",
+       "題目是「我最喜歡的季節」，老師要求大約 80 字。",
+       "把題目和字數告訴它"
+      ],
+      [
+       "Do not rewrite my composition. Only show me the mistakes.",
+       "不要重寫我的作文，只要告訴我錯在哪裡。",
+       "最重要的一句"
+      ],
+      [
+       "Explain in Traditional Chinese.",
+       "請用繁體中文說明。",
+       "想看得懂原因時"
+      ],
+      [
+       "Wait. I will paste my composition now.",
+       "等一下，我現在貼上作文。",
+       "先設定完再貼"
+      ]
+     ]
+    },
+    {
+     "name": "請它改錯 Finding mistakes（6 句）",
+     "rows": [
+      [
+       "Number each mistake and tell me what kind it is.",
+       "把每個錯誤編號，告訴我是哪一種錯。",
+       "錯誤多的時候比較好對照"
+      ],
+      [
+       "Give me a hint first. Don't tell me the answer.",
+       "先給我提示，不要直接給答案。",
+       "想自己改改看"
+      ],
+      [
+       "Here is my new version. Did I fix everything?",
+       "這是我改過的版本，都改對了嗎？",
+       "自己改完再給它看"
+      ],
+      [
+       "Why is this wrong? Explain with one more example.",
+       "這裡為什麼錯？再舉一個例子說明。",
+       "看不懂它的說明時"
+      ],
+      [
+       "Which mistake did I make more than once?",
+       "哪一種錯我犯了不只一次？",
+       "找出自己的老毛病"
+      ],
+      [
+       "Is this sentence natural, or just correct?",
+       "這個句子是自然，還是只是文法對？",
+       "文法對了想更進一步"
+      ]
+     ]
+    },
+    {
+     "name": "改完之後 After the corrections（5 句）",
+     "rows": [
+      [
+       "Show me my composition with all the corrections.",
+       "把改好的整篇作文給我看。",
+       "最後對照用"
+      ],
+      [
+       "What is the one thing I should practice first?",
+       "我最該先練哪一件事？",
+       "每次都問"
+      ],
+      [
+       "Give me five practice sentences for that mistake.",
+       "針對那個錯誤，出五題練習給我。",
+       "把錯誤變成練習"
+      ],
+      [
+       "Suggest two better words I could use, at my level.",
+       "建議兩個我這個程度用得上的更好的字。",
+       "想讓用字進步一點"
+      ],
+      [
+       "Which sentence is my best one? Why?",
+       "我寫得最好的是哪一句？為什麼？",
+       "知道自己哪裡寫得好"
+      ]
+     ]
+    },
+    {
+     "name": "練下一篇 The next one（4 句）",
+     "rows": [
+      [
+       "Give me a topic for an 80-word composition at my level.",
+       "出一個適合我程度、80 字的作文題目。",
+       "想多練一篇"
+      ],
+      [
+       "Give me five questions to help me plan before I write.",
+       "給我五個問題，幫我寫之前先想內容。",
+       "不知道要寫什麼時"
+      ],
+      [
+       "Don't write it for me. Just check my outline.",
+       "不要幫我寫，只要看我的大綱。",
+       "先寫大綱再動筆"
+      ],
+      [
+       "Give me ten useful words for this topic, with Chinese.",
+       "給我十個這個題目用得上的單字，附中文。",
+       "動筆前先看單字"
+      ]
+     ]
+    },
+    {
+     "name": "準備英檢寫作 For the GEPT writing test（4 句）",
+     "rows": [
+      [
+       "Give me five sentence-rewriting questions like the GEPT Elementary writing test.",
+       "出五題像全民英檢初級寫作的句子改寫題。",
+       "練單句寫作"
+      ],
+      [
+       "Give me a picture-writing task of about 50 words. Describe the pictures in words.",
+       "出一題約 50 字的看圖寫作，用文字描述圖片內容。",
+       "練段落寫作"
+      ],
+      [
+       "Score my paragraph from 0 to 5 and tell me why.",
+       "把我的段落用 0 到 5 分評分，並告訴我原因。",
+       "段落寫作採 0–5 級分"
+      ],
+      [
+       "What would make this paragraph one level higher?",
+       "這段要怎麼改才能再高一級？",
+       "知道差在哪裡"
+      ]
+     ]
+    }
+   ],
+   "cls": "tk-s1"
+  },
+  {
+   "title": "同一篇作文，三種改法差在哪裡",
+   "prose": [
+    "同一篇作文交給 ChatGPT，指令不同，孩子得到的東西完全不同。下面用同一句 I go to the zoo last Sunday. 來比較。"
+   ],
+   "heads": [
+    "改法",
+    "ChatGPT 會怎麼回",
+    "孩子學到什麼"
+   ],
+   "rows": [
+    [
+     "只標出錯誤，先不改",
+     "1. \"go\": verb tense. Hint: the sentence says \"last Sunday\".",
+     "自己想出 went，下次比較不會再錯"
+    ],
+    [
+     "改錯並說明原因",
+     "\"go\" → \"went\". \"Last Sunday\" is in the past, so use the past tense.",
+     "知道答案和原因，但不一定記得住"
+    ],
+    [
+     "改完再給更好的版本",
+     "Last Sunday, my family and I visited the zoo.",
+     "看到更自然的寫法，適合已經少錯的孩子"
+    ],
+    [
+     "沒下指令，直接貼",
+     "把整篇改寫成流暢的大人英文",
+     "幾乎沒有：孩子看不出自己錯在哪裡"
+    ]
+   ],
+   "after": [
+    "建議的順序是：<strong>先標錯 → 孩子自己改 → 再請它改錯說明 → 最後才看更好的版本</strong>。一篇作文走完這四步大約 15 分鐘。"
+   ]
+  },
+  {
+   "title": "ChatGPT 改作文怎麼開始：5 個步驟",
+   "prose": [
+    "手機 App 或電腦網頁都可以，免費帳號就能用。帳號要滿 13 歲，未滿 18 歲要有家長同意；國小的孩子請由家長用自己的帳號操作。"
+   ],
+   "heads": [
+    "步驟",
+    "怎麼做",
+    "提醒"
+   ],
+   "rows": [
+    [
+     "1. 先寫完",
+     "孩子自己把作文寫完，不要邊寫邊問",
+     "先有自己的版本，才有東西可以改"
+    ],
+    [
+     "2. 貼指令",
+     "用產生器的指令，選「只標出錯在哪裡」",
+     "它回 Ready 之後再貼作文"
+    ],
+    [
+     "3. 自己改",
+     "照它標的地方，孩子自己改一次",
+     "改不出來再請它給提示"
+    ],
+    [
+     "4. 對答案",
+     "貼上改過的版本，請它檢查還有哪些錯",
+     "這時候才看正確答案和原因"
+    ],
+    [
+     "5. 記下來",
+     "問 What is the one thing I should practice first?",
+     "把那一件事寫在作文本上，下一篇先注意它"
+    ]
+   ],
+   "after": [
+    "ChatGPT 的<strong>學習模式</strong>（Study mode）也適合拿來訂正：它會一步一步問問題，不直接給答案，在對話框的「＋」選單裡。口說的指令另見<a href=\"/chatgpt-english-speaking-practice/\">ChatGPT 練英文口說</a>。"
+   ]
+  },
+  {
+   "title": "美國老師的老實話：AI 改作文，最大的問題是改太多",
+   "prose": [
+    "另外三件事要知道。第一，<strong>它不知道老師要什麼</strong>：題目、字數、這次要練的文法，都要先告訴它。第二，<strong>它什麼都說寫得好</strong>，所以要直接問「我最該先練哪一件事」。第三，<strong>學校的作業要自己寫</strong>：請它檢查和說明沒有問題，請它代寫就不是練習了；指令裡那句 Do not rewrite my composition 就是為了這個。"
+   ],
+   "heads": [
+    "這件事",
+    "交給 ChatGPT",
+    "要靠人"
+   ],
+   "rows": [
+    [
+     "找出文法和拼字的錯",
+     "很準，可以放心用",
+     "—"
+    ],
+    [
+     "解釋為什麼錯",
+     "說得清楚，還能再舉例",
+     "—"
+    ],
+    [
+     "判斷內容好不好、有沒有離題",
+     "會給意見，但不知道老師的要求",
+     "老師看得出這篇有沒有回答題目"
+    ],
+    [
+     "保留孩子自己的說法",
+     "不交代就會改掉",
+     "老師會留下孩子的句子，只改錯的地方"
+    ],
+    [
+     "孩子有沒有真的學到",
+     "看不出來",
+     "看孩子下一篇還會不會犯同樣的錯"
+    ]
+   ],
+   "after": [
+    "寫作本身怎麼練，見<a href=\"/english-writing-practice/\">英文寫作練習方法</a>；信件和卡片的格式，見<a href=\"/english-letter-writing-guide/\">英文書信格式</a>。"
+   ],
+   "html_top": "<figure class=\"tk-note reveal\"><img src=\"/assets/img/american-english-banqiao-logo-96.webp\" alt=\"埃森美語\" width=\"54\" height=\"54\" loading=\"lazy\"><span class=\"tk-tag\">老師的話</span><blockquote>AI 改文法又快又準，這一點它比很多人強。問題是它太會寫了：不特別交代，它會把孩子的作文整篇換成自己的句子，讀起來很漂亮，但那已經不是孩子寫的。孩子看到的是一篇別人的作文，不知道自己錯在哪裡，下一篇照樣錯。所以最好只請它做一件事：指出錯在哪裡，讓孩子自己改。</blockquote><figcaption>— Mr. Chris，埃森美語創辦人</figcaption></figure>"
+  },
+  {
+   "title": "用 ChatGPT 準備全民英檢寫作",
+   "prose": [
+    "全民英檢初級的寫作分兩部分：<strong>單句寫作</strong>（句子改寫、句子合併、重組）和<strong>段落寫作</strong>（看圖寫一段約 50 字的短文）。兩部分都可以請 ChatGPT 出題和批改，但題目長什麼樣子、評分怎麼算，還是要先看過官方的範例。"
+   ],
+   "heads": [
+    "要練的部分",
+    "對 ChatGPT 說",
+    "注意"
+   ],
+   "rows": [
+    [
+     "句子改寫、合併、重組",
+     "Give me five sentence-rewriting questions like the GEPT Elementary writing test.",
+     "一次五題，寫完再對答案"
+    ],
+    [
+     "段落寫作",
+     "Give me a picture-writing task of about 50 words. Describe the pictures in words.",
+     "它不一定畫得出題目的圖，請它用文字描述"
+    ],
+    [
+     "批改段落",
+     "Score my paragraph from 0 to 5 and tell me why.",
+     "它給的分數只能參考，不等於正式成績"
+    ],
+    [
+     "找出老毛病",
+     "Which mistake did I make more than once?",
+     "把重複的錯記下來，考前再看一次"
+    ]
+   ],
+   "after": [
+    "初級寫作的題型和免費練習題，見<a href=\"/gept-elementary-writing-practice-part1/\">全民英檢初級寫作：單句寫作</a>和<a href=\"/gept-elementary-writing-practice-part2/\">段落寫作</a>。"
+   ]
+  },
+  {
+   "title": "ChatGPT 英文作文批改常見問題",
+   "faq": [
+    [
+     "ChatGPT 可以批改英文作文嗎？",
+     "可以，而且文法和拼字改得很準。重點在指令：先請它只標出錯在哪裡，孩子自己改一次，再請它說明原因。直接貼作文不下指令，它多半會把整篇重寫。"
+    ],
+    [
+     "ChatGPT 改英文作文的指令怎麼下？",
+     "最重要的一句是 Do not rewrite my composition. Only show me the mistakes.，再加上年級、題目和字數，並請它用繁體中文說明。上面的指令產生器已經把這些寫成一段，複製貼上就能用。"
+    ],
+    [
+     "用 ChatGPT 改作文算作弊嗎？",
+     "自己寫完、請它檢查和說明，和請人幫忙看一樣，是學習。請它代寫或整篇改寫再交出去，就不是自己的作業了。老師如果有規定不能用 AI，要照老師的規定。"
+    ],
+    [
+     "ChatGPT 給的作文分數準嗎？",
+     "只能參考。它不知道老師或考試實際的評分標準，同一篇作文問兩次，分數也可能不一樣。比較有用的是它列出來的錯誤和原因。"
+    ],
+    [
+     "小學生可以用 ChatGPT 改英文作文嗎？",
+     "OpenAI 規定使用者要滿 13 歲，未滿 18 歲要有家長同意。國小的孩子請由家長用自己的帳號操作，孩子在旁邊自己改。"
+    ],
+    [
+     "可以用 ChatGPT 準備全民英檢初級寫作嗎？",
+     "可以請它出句子改寫題和約 50 字的段落寫作題，並批改。題型和評分方式要先看官方範例，它給的分數不等於正式成績。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "錯誤改完了，下一篇還會再錯嗎？",
+ "cta": "AI 可以告訴孩子哪裡寫錯，但同一個錯要有人盯著，才不會一犯再犯。我們的小班課由美國老師帶，寫錯的地方可以當面問、當面講清楚。"
+}
