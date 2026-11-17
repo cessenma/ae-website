@@ -45,7 +45,7 @@ def render(schools, ae, Z, esc):
     def inside(pts, m=200):
         return any(-m < x < W + m and -m < y < H + m for x, y in (xy(*p) for p in pts))
 
-    o = [f'<svg viewBox="0 0 {W} {H}" class="smap-svg" role="img" aria-label="{esc(Z("板橋區國中、國小和埃森美語的街道地圖", "street map of Banqiao junior highs, elementary schools and the school"))}">',
+    o = [f'<svg viewBox="0 0 {W} {H}" class="smap-svg" role="group" aria-label="{esc(Z("板橋區國中、國小和埃森美語的街道地圖", "street map of Banqiao junior highs, elementary schools and the school"))}">',
          '<defs><clipPath id="smc"><rect width="1000" height="700" rx="22"/></clipPath>'
          '<filter id="smsh" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="2" stdDeviation="2.2" flood-color="#1A2752" flood-opacity=".28"/></filter></defs>',
          '<g clip-path="url(#smc)"><rect width="1000" height="700" fill="#F4F1EA"/>']
@@ -184,9 +184,12 @@ def render(schools, ae, Z, esc):
         mark = (f'<path d="M0,0c-3.5-6-10.5-10.3-10.5-17.5a10.5,10.5 0 1 1 21,0c0,7.2-7,11.5-10.5,17.5z" fill="{NAVY}" stroke="#fff" stroke-width="2.5"/>'
                 f'<circle cy="-17.5" r="4" fill="#fff"/>' if jh else
                 f'<circle r="7" fill="{GREEN}" stroke="#fff" stroke-width="2.5"/>')
-        pins.append((s["km"], f'<a class="sm-s {"sm-j" if jh else "sm-e"}" href="{esc(s["href"])}" data-n="{esc(s["name"])}" data-km="{s["km"]:.1f}" '
+        # aria-label: the pin is a link with no text of its own when its label did not fit (audit 11-17);
+        # the clear circle makes a pin about twice as easy to hit with a thumb without covering neighbours
+        hitc = f'<circle cy="{-15 if jh else 0}" r="20" fill="transparent"/>'
+        pins.append((s["km"], f'<a class="sm-s {"sm-j" if jh else "sm-e"}" href="{esc(s["href"])}" aria-label="{esc(s["name"])}" data-n="{esc(s["name"])}" data-km="{s["km"]:.1f}" '
                      f'data-l="{s["level"]}" data-eds="{esc(eds)}" style="--d:{s["km"] * 0.28:.2f}s">'
-                     f'<g class="sm-pin" transform="translate({x:.1f},{y + (0 if not jh else 0):.1f})"><g class="sm-drop">{mark}</g></g>{lab}</a>'))
+                     f'<g class="sm-pin" transform="translate({x:.1f},{y:.1f})">{hitc}<g class="sm-drop">{mark}</g></g>{lab}</a>'))
     o.append("".join(st_out) + "</g>")
     o.append("".join(h for _, h in sorted(pins, key=lambda t: -t[0])))
     # the classroom: pulsing halo + star

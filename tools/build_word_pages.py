@@ -56,11 +56,25 @@ def syl_text(d):
     return "單音節字" if d["n_syll"] == 1 else f"{d['n_syll']} 個音節，重音在第 {d['stress']} 個音節"
 
 def desc_for(d, c):
-    base = (f"{d['word']}（{d['zh']}）怎麼唸？KK 音標 [{d['kk']}]，{syl_text(d)}。"
-            f"點一下聽正常速度和慢速發音，再看台灣學生最常唸錯的地方和例句。")
-    if width(base) > 160:
-        base = f"{d['word']}（{d['zh']}）怎麼唸？KK 音標 [{d['kk']}]，{syl_text(d)}。可聽正常與慢速發音，附常見錯誤與例句。"
-    return base
+    """Lead + the start of this word's own tip. Until 11-17 every one of the 1,166 descriptions ended in the
+    same sentence (點一下聽正常速度和慢速發音…), which reads as a template to Google (audit 11-17)."""
+    head = f"{d['word']}（{d['zh']}）怎麼唸？KK 音標 [{d['kk']}]，{syl_text(d)}。"
+    tip = ((c or {}).get("tip_zh") or "").strip()
+    first = tip.split("。")[0]
+    clauses = [x for x in first.split("，") if x]
+    for n in range(len(clauses), 0, -1):
+        cand = head + "，".join(clauses[:n]) + "。"
+        if width(cand) <= 160:
+            # a short tip left 135 descriptions under 100 units: add what the page offers, in one of four
+            # wordings (picked by the word) so they do not all end alike, still under 160
+            tails = ("附慢速發音和例句。", "可以放慢速度跟著唸。", "附例句和常見唸錯的地方。", "點一下就能聽發音。")
+            k = sum(map(ord, d["word"])) % len(tails)
+            for tail in tails[k:] + tails[:k]:          # a very short tip may take two
+                if width(cand) < 100 and width(cand + tail) <= 160:
+                    cand += tail
+            return cand
+    base = head + "點一下聽正常速度和慢速發音，再看台灣學生最常唸錯的地方和例句。"
+    return base if width(base) <= 160 else head + "可聽正常與慢速發音，附常見錯誤與例句。"
 
 def say(text, label="🔊"):
     return f'<button type="button" class="say" data-say="{esc(text)}" aria-label="播放 {esc(text)} 的發音">{label}</button>'
@@ -184,7 +198,7 @@ def word_page(slug):
           "description": desc_for(d, c), "inLanguage": "zh-Hant-TW", "url": url, "isAccessibleForFree": True,
           "learningResourceType": "pronunciation guide", "educationalLevel": "國小、國中",
           "about": {"@type": "DefinedTerm", "name": d["word"], "description": d["zh"],
-                    "inDefinedTermSet": "教育部國民中小學英語基本 1200 字"},
+                    "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "教育部國民中小學英語基本 1200 字", "url": ORIGIN + "/moe-1200-words-guide/"}},
           "publisher": {"@id": ORG}, "author": {"@id": ORG}, "datePublished": PUB_BY_WORD.get(slug, "2026-11-10")}
     hero = (f'<strong lang="en">{esc(d["word"])}</strong> 是「{esc(d["zh"])}」，教育部國中小基本 1200 字之一。'
             f'下面可以點按鈕聽正常速度和慢速發音，再看台灣學生最常唸錯的地方。')

@@ -282,7 +282,7 @@ def street_map():
 # ---------------------------------------------------------------- shared page parts
 
 CSS = """
-.sc-hero{text-align:center}
+.sc-hero{text-align:center}.sc-hero .divider{margin-left:auto;margin-right:auto}
 .sc-facts{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
 .sc-facts span{background:#fff;border-radius:999px;padding:6px 13px;font-size:13px;font-weight:700;color:var(--navy);box-shadow:0 3px 10px rgba(26,39,82,.08)}
 .sc-chip{display:inline-block;border-radius:999px;padding:5px 14px;font-weight:800;font-size:14px;color:#fff;background:var(--ink);white-space:nowrap;box-shadow:0 2px 0 rgba(0,0,0,.12)}
@@ -311,6 +311,7 @@ CSS = """
 .sc-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:20px}
 .sc-card{background:#fff;border-radius:18px;padding:18px 20px;border-top:6px solid var(--c,#1CB0F6);box-shadow:0 6px 18px rgba(26,39,82,.08)}
 .sc-card h3{margin:0 0 4px;font-size:18px;color:var(--navy)}
+.sc-card.is-past{border-top-color:#cbd5e1}.sc-card.is-past .when{color:#64748b}.sc-done{display:inline-block;font-size:12px;font-weight:800;color:#475569;background:#eef2f7;border-radius:999px;padding:2px 9px;margin-left:6px;vertical-align:middle}
 .sc-card .when{font-size:13px;font-weight:800;color:var(--c);margin-bottom:10px}
 .sc-card .lbl{font-size:12px;font-weight:800;color:#64748b;margin:10px 0 4px;letter-spacing:.5px}
 .sc-card ul{margin:0;padding-left:18px;font-size:14.5px;line-height:1.7;color:var(--text-body)}
@@ -410,7 +411,7 @@ def faq_ld(items):
 def cta():
     zh = Z("想知道孩子學校的版本和這學期的段考範圍，對應到我們的課程哪裡？加 LINE 告訴我們學校和年級，我們幫你對一次。",
            "Want to know how your child’s school edition and this semester’s exam range line up with our classes? Tell us the school and grade on LINE and we’ll check it with you.")
-    return (f'<section class="section"><div class="container"><div class="sc-box reveal center" style="background:#F2FBF5;border-color:#bfe8cd">'
+    return (f'<section class="section"><div class="wrap"><div class="sc-box reveal center" style="background:#F2FBF5;border-color:#bfe8cd">'
             f'<p style="margin:0 0 12px;font-size:16px;line-height:1.8;color:var(--navy);font-weight:700">{zh}</p>'
             f'<a class="btn btn-green" href="{LINE}" target="_blank" rel="noopener" data-line="school-english">{Z("LINE 問我們", "ask us on LINE")}</a></div></div></section>')
 
@@ -496,7 +497,7 @@ def hub_page():
              Z("每學期一次：學校把下學期的課程計畫上傳後，我們就重新整理。頁面上方寫著目前是哪一個學期。",
                "Once a semester: when schools upload next semester’s plans, we redo it. The top of each page says which semester it shows."))]
     body = f"""
-<section class="section section-light" style="padding-top:28px"><div class="container">
+<section class="section section-light" style="padding-top:28px"><div class="wrap">
   <div class="breadcrumb reveal"><a href="/">首頁</a> ／ {Z("板橋國中小英文課程地圖", "Banqiao school English curriculum maps")}</div>
   <div class="sc-hero reveal">
     <span class="eyebrow">{TERM} · {Z("家長資源", "parent resource")}</span>
@@ -507,33 +508,33 @@ def hub_page():
     <div class="sc-facts"><span>{Z("資料來自學校課程計畫", "from the schools' own plans")}</span><span>{Z("28 所學校", "28 schools")}</span><span>{Z("每學期更新", "updated every semester")}</span></div>
   </div>
 </div></section>
-<section class="section"><div class="container">
+<section class="section"><div class="wrap">
   {h2(Z("地圖", "map"), "地圖", Z("學校在哪裡", "where the schools are"))}
   {street_map()}
   <p class="sc-src">{Z("位置依地址換算，圓圈是直線距離，不是步行時間。點學校看這學期的英文版本。", "Positions come from addresses; the rings are straight-line distance, not walking time. Tap a school to see this term's English editions.")}</p>
 </div></section>
-<section class="section section-light"><div class="container">
+<section class="section section-light"><div class="wrap">
   {h2(Z("國中", "junior high"), "國中版本", Z("國中：每個年級用哪個版本", "junior high: the edition in each grade"), "green")}
   {legend}
   <div class="sc-box reveal">{jh_grid}</div>
   <p class="sc-src">{Z("點學校名字，看三次段考各考哪幾課、哪些文法。", "Tap a school to see what each of the three exams covers.")}</p>
 </div></section>
-<section class="section"><div class="container">
+<section class="section"><div class="wrap">
   {h2(Z("國小", "elementary"), "國小版本", Z("國小：三到六年級用哪個版本", "elementary: the edition in grades 3–6"), "purple")}
   <div class="sc-box reveal">{es_grid}</div>
   <p class="sc-src">{Z("沙崙、重慶國小一、二年級也有英文課，詳見國小頁。", "沙崙 and 重慶 also teach English in grades 1–2; see the elementary page.")} <a href="/{HUB}/elementary/">{Z("看 17 所國小的期中、期末範圍", "see all 17 elementary schools' exam ranges")}</a></p>
 </div></section>
-<section class="section section-light"><div class="container">
+<section class="section section-light"><div class="wrap">
   {h2(Z("一次看懂", "the short version"), "段考怎麼排", Z("段考怎麼排、版本為什麼不一樣", "how exams work and why editions differ"), "yellow")}
   {why}
 </div></section>
-<section class="section"><div class="container">
+<section class="section"><div class="wrap">
   {h2(Z("下載", "downloads"), "免費下載", Z("免費下載：每校一頁整理", "free download: one page per school"))}
   <h3 class="center" style="margin-top:18px">{Z("國中", "junior high")}</h3><div class="sc-dl reveal">{dl_jh}</div>
   <h3 class="center" style="margin-top:22px">{Z("國小", "elementary")}</h3><div class="sc-dl reveal">{dl_es}</div>
   {source_line()}
 </div></section>
-<section class="section section-light"><div class="container">
+<section class="section section-light"><div class="wrap">
   {h2("FAQ", "常見問題", Z("常見問題", "questions"))}
   {faq(faqs)}
 </div></section>
@@ -545,8 +546,35 @@ def hub_page():
 
 # ---------------------------------------------------------------- one junior high
 
+def exam_end(e):
+    """Last day of an exam as a date ("10/14–10/15" -> 2026-10-15), or None. ROC year 115 = 2026; in the
+    first term, January exams fall in the next calendar year; the second term is all next year."""
+    md = re.findall(r"(\d{1,2})/(\d{1,2})", e.get("dates") or "")
+    if not md:
+        return None
+    m, d = map(int, md[-1])
+    y = D["year"] + 1911 + (1 if D["term"] == 2 or m < 8 else 0)
+    try:
+        return dt.date(y, m, d)
+    except ValueError:
+        return None
+
+
+def tw_today():
+    return (dt.datetime.utcnow() + dt.timedelta(hours=8)).date()
+
+
+# An exam that is over says so (audit 11-17: in November the pages still showed the 10/14 exam as an ordinary
+# card). Marked at build time for Google, and again in the browser so a page built weeks ago is still right.
+PAST_JS = ("<script>(function(){var t=new Date(Date.now()+288e5).toISOString().slice(0,10);"
+           "document.querySelectorAll('.sc-card[data-end]').forEach(function(c){if(c.dataset.end<t&&!c.classList.contains('is-past')){"
+           "c.classList.add('is-past');var h=c.querySelector('h3');if(h)h.insertAdjacentHTML('beforeend',' <span class=\"sc-done\">已考完</span>')}})})();</script>")
+
+
 def exam_card(s, g, grade, k, e, total):
     c = EXAM_C[k % 3]
+    end = exam_end(e)
+    past = end is not None and end < tw_today()
     unit_title = {u["id"]: u.get("title") for u in g.get("units", [])}
     lessons = "".join(f'<span>{esc(u)}{(" <i>" + esc(unit_title[u]) + "</i>") if unit_title.get(u) else ""}</span>' for u in e.get("covers", []))
     pts = grammar_for(g, grade, e.get("covers", []))
@@ -558,7 +586,8 @@ def exam_card(s, g, grade, k, e, total):
                 + f'<p style="margin:8px 0 0;font-size:13px"><a href="/english-grammar-books/#{code}">{Z("對應的文法書：", "matching grammar book: ")}{esc(GM[code]["title"])}</a></p>')
     name = e.get("label") or f"第{'一二三'[k]}次段考"
     note = f'<div class="note">{esc(Z(e["note"], e.get("note_en", "")))}</div>' if e.get("note") else ""
-    return (f'<div class="sc-card reveal" style="--c:{c}"><h3>{esc(name)}</h3><div class="when">{esc(exam_when(e)) or Z("計畫裡沒有寫日期", "no date in the plan")}</div>'
+    done = f' <span class="sc-done">{Z("已考完", "done")}</span>' if past else ""
+    return (f'<div class="sc-card reveal{" is-past" if past else ""}" style="--c:{c}"{f" data-end={end.isoformat()}" if end else ""}><h3>{esc(name)}{done}</h3><div class="when">{esc(exam_when(e)) or Z("計畫裡沒有寫日期", "no date in the plan")}</div>'
             f'<div class="lbl">{Z("考試範圍", "covers")}</div><div class="lessons">{lessons or esc(Z("計畫裡沒有寫範圍", "no range in the plan"))}</div>{gram}{note}</div>')
 
 
@@ -568,6 +597,51 @@ def own_page(s):
     href, zh, en = SCHOOL_PAGE[s["name"]]
     return (f'<a href="{href}"><span class="ic" style="background:#06C755">★</span><span>{Z(zh, en)}'
             f'<small>{Z("埃森美語整理", "our guide")}</small></span></a>')
+
+
+def neighbours_block(s):
+    """Per-school comparison with the 3 nearest junior highs (audit 11-17: the 11 school pages were
+    2–23% unique because schools on the same edition share lesson and grammar lists). Everything here
+    is computed from the schools' own plans in school_curriculum.json; distances are straight-line km."""
+    import math
+    def dist(a, b):
+        dy = (a["lat"] - b["lat"]) * 111.0
+        dx = (a["lon"] - b["lon"]) * 111.0 * math.cos(math.radians(a["lat"]))
+        return math.hypot(dx, dy)
+    near = sorted((o for o in JH if o is not s), key=lambda o: dist(s, o))[:3]
+    if not near:
+        return ""
+    nm, rows = s["name"], []
+    for g in ("7", "8", "9"):
+        if g not in s["grades"]:
+            continue
+        mine = pub_of(s["grades"][g]) or "?"
+        same = [o["name"] for o in near if pub_of(o["grades"].get(g, {})) == mine]
+        diff = [f'{o["name"]}（{pub_of(o["grades"].get(g, {})) or "未標明"}）' for o in near
+                if g in o["grades"] and pub_of(o["grades"][g]) != mine]
+        ex = (s["grades"][g].get("exams") or [{}])[0]
+        wk = ex.get("week")
+        early = [o["name"] for o in near if (o["grades"].get(g, {}).get("exams") or [{}])[0].get("week") not in (None, wk)
+                 and wk is not None and (o["grades"][g]["exams"][0]["week"] > wk)]
+        late = [o["name"] for o in near if (o["grades"].get(g, {}).get("exams") or [{}])[0].get("week") not in (None, wk)
+                and wk is not None and (o["grades"][g]["exams"][0]["week"] < wk)]
+        zh = f"<b>{GRADE_ZH[g]}</b>：{esc(nm)}用{esc(mine)}"
+        if same:
+            zh += f"，和{esc('、'.join(same))}一樣"
+        if diff:
+            zh += f"；{esc('、'.join(diff))}用的版本不同，轉學或補習時要留意課次對不上"
+        if early:
+            zh += f"。第一次段考比{esc('、'.join(early))}早"
+        if late:
+            zh += f"{'，' if early else '。第一次段考'}比{esc('、'.join(late))}晚"
+        rows.append(f"<li>{zh}。</li>")
+    names = "、".join(f'{o["name"]}（直線約 {dist(s, o):.1f} km）' for o in near)
+    return (f'<section class="section"><div class="wrap">'
+            f'{h2(Z("和附近國中比一比", "compared with nearby schools"), "附近國中", Z(f"離{nm}最近的三所", "the three nearest"))}'
+            f'<p class="reveal" style="max-width:760px;margin:0 auto 10px">{Z(f"離{nm}最近的國中：{names}。同一個版本，課次和文法順序就一樣；版本不同時，同年級的孩子可能在學完全不同的單元。", "")}</p>'
+            f'<ul class="reveal" style="max-width:760px;margin:0 auto;line-height:1.9">{"".join(rows)}</ul>'
+            f'<p class="sc-src" style="text-align:center">{Z("依各校公告的 115 學年上學期英語課程計畫整理；以學校公告為準。", "From each school’s published plan.")}</p>'
+            f'</div></section>')
 
 
 def jh_page(s):
@@ -600,7 +674,7 @@ def jh_page(s):
             other = ('<p class="sc-src">' + Z("其他考試：", "other tests: ") + "；".join(
                 esc(f'{o.get("label", "")} {("第 " + str(o["week"]) + " 週") if o.get("week") else ""} {o.get("dates") or ""}'.strip()) for o in gd["other_tests"]) + "</p>")
         grades_html.append(f"""
-<section class="section {'section-light' if g == '8' else ''} sc-grade"><div class="container">
+<section class="section {'section-light' if g == '8' else ''} sc-grade"><div class="wrap">
   <div class="center stack reveal"><span class="eyebrow">{GRADE_ZH[g]}</span><h2 id="{GRADE_ZH[g]}">{GRADE_ZH[g]}{chip(pub_of(gd))}<span style="font-size:.7em;color:#64748b">{esc(book)}</span></h2></div>
   {pnote}
   <div class="sc-box reveal">{timeline_svg(gd, exams)}</div>
@@ -609,10 +683,17 @@ def jh_page(s):
   <p class="sc-src"><a href="{gd["plan_url"]}" target="_blank" rel="noopener">{Z("看學校原始的", "open the school’s original")} {GRADE_ZH[g]}{Z("英語課程計畫（PDF）", " English plan (PDF)")}</a></p>
 </div></section>""")
         if exams:
-            first = exams[0]
-            faqs.append((Z(f"{nm}{GRADE_ZH[g]}英文用哪個版本？第一次段考考什麼？", f"Which edition does {nm} grade {g} use, and what is on the first exam?"),
-                         Z(f"依學校{TERM}的課程計畫，{GRADE_ZH[g]}英文是{pub_of(gd) or '（計畫未標明版本）'}{book_of(s, g)}；第一次段考在{exam_when(first) or '（計畫未寫週次）'}，範圍是 {'、'.join(first.get('covers', [])) or '（計畫未寫）'}。以學校公告為準。",
-                           f"Per the school’s {TERM} plan, grade {g} uses {pub_of(gd) or 'an edition the plan does not name'}; the first exam is {exam_when(first)} covering {', '.join(first.get('covers', []))}. The school’s notice decides.")))
+            # every exam of the term, not only the first: a page built in September still says
+            # "first exam 10/14" in November (audit 11-17). Listing all of them never goes stale.
+            NTH = ["第一次", "第二次", "第三次", "第四次"]
+            NTH_EN = ["first", "second", "third", "fourth"]
+            parts = [f"{NTH[k] if k < 4 else f'第 {k + 1} 次'}段考在{exam_when(e) or '（計畫未寫週次）'}，範圍是 {'、'.join(e.get('covers', [])) or '（計畫未寫）'}"
+                     for k, e in enumerate(exams)]
+            parts_en = [f"the {NTH_EN[k] if k < 4 else str(k + 1) + 'th'} exam is {exam_when(e)} covering {', '.join(e.get('covers', []))}"
+                        for k, e in enumerate(exams)]
+            faqs.append((Z(f"{nm}{GRADE_ZH[g]}英文用哪個版本？各次段考考什麼？", f"Which edition does {nm} grade {g} use, and what is on each exam?"),
+                         Z(f"依學校{TERM}的課程計畫，{GRADE_ZH[g]}英文是{pub_of(gd) or '（計畫未標明版本）'}{book_of(s, g)}；" + "；".join(parts) + "。以學校公告為準。",
+                           f"Per the school’s {TERM} plan, grade {g} uses {pub_of(gd) or 'an edition the plan does not name'}; " + "; ".join(parts_en) + ". The school’s notice decides.")))
     faqs.append((Z("段考日期以什麼為準？", "Which date counts?"),
                  Z("課程計畫是學期開始前寫的，日期偶爾會調整；最後以學校網站、行事曆和聯絡簿的公告為準。",
                    "Plans are written before the semester and dates can move; the school’s website, calendar and contact book have the final word.")))
@@ -620,7 +701,7 @@ def jh_page(s):
     plans = "".join(f'<a href="{s["grades"][g]["plan_url"]}" target="_blank" rel="noopener"><span class="ic" style="background:{PUB.get(pub_of(s["grades"][g]), UNKNOWN)[0]}">{g}</span>'
                     f'<span>{GRADE_ZH[g]}{Z("課程計畫", " plan")}<small>{Z("學校原始 PDF", "the school’s PDF")}</small></span></a>' for g in ("7", "8", "9") if g in s["grades"])
     body = f"""
-<section class="section section-light" style="padding-top:28px"><div class="container">
+<section class="section section-light" style="padding-top:28px"><div class="wrap">
   <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/{HUB}/">{Z("板橋國中小英文課程地圖", "Banqiao school English curriculum maps")}</a> ／ {esc(nm)}</div>
   <div class="sc-hero reveal">
     <span class="eyebrow">{TERM} · {Z("國中英文課程地圖", "junior-high English curriculum map")}</span>
@@ -630,8 +711,10 @@ def jh_page(s):
     <div class="sc-grades">{chips}</div>
   </div>
 </div></section>
+{neighbours_block(s)}
 {"".join(grades_html)}
-<section class="section"><div class="container">
+{PAST_JS}
+<section class="section"><div class="wrap">
   {h2(Z("下載", "downloads"), "下載", Z("原始課程計畫和一頁整理", "the original plans and a one-page summary"))}
   <div class="sc-dl reveal">{plans}
     <a href="/assets/downloads/school-english/{summary_pdf_name(s)}" download><span class="ic" style="background:#F0997B">PDF</span><span>{Z("一頁重點整理", "one-page summary")}<small>{Z("埃森美語整理，免費", "made by us, free")}</small></span></a>
@@ -640,7 +723,7 @@ def jh_page(s):
   </div>
   {source_line()}
 </div></section>
-<section class="section section-light"><div class="container">
+<section class="section section-light"><div class="wrap">
   {h2("FAQ", "常見問題", Z("常見問題", "questions"))}
   {faq(faqs)}
   <h3 class="center" style="margin-top:34px">{Z("其他板橋國中", "other Banqiao junior highs")}</h3>
@@ -683,7 +766,7 @@ def es_page():
             (Z("為什麼同一所國小每個年級版本不一樣？", "Why do grades in one school use different editions?"),
              Z("各年級的版本是學校分別選的，所以常常不一樣；看孩子那一個年級就好。", "Each grade’s edition is chosen separately, so they often differ; look at your child’s grade only."))]
     body = f"""
-<section class="section section-light" style="padding-top:28px"><div class="container">
+<section class="section section-light" style="padding-top:28px"><div class="wrap">
   <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/{HUB}/">{Z("板橋國中小英文課程地圖", "Banqiao school English curriculum maps")}</a> ／ {Z("國小", "elementary")}</div>
   <div class="sc-hero reveal">
     <span class="eyebrow">{TERM} · {Z("國小英文課程地圖", "elementary English curriculum map")}</span>
@@ -692,14 +775,14 @@ def es_page():
     <p class="lead" style="max-width:740px;margin:0 auto">{Z("17 所國小，依離埃森美語的直線距離排列。點學校名字展開：每個年級的版本、期中和期末考哪幾個單元、大概第幾週考。", "17 schools, nearest first. Tap a school: each grade’s edition, what the midterm and final cover, and roughly which week.")}</p>
   </div>
 </div></section>
-<section class="section"><div class="container">
+<section class="section"><div class="wrap">
   <div class="sc-legend">{"".join(chip(p) for p in ("康軒", "翰林", "何嘉仁"))}</div>
   <div class="sc-box reveal">{es_grid_html()}</div>
   <p class="sc-src">{Z("點學校名字，看那所學校每個年級的期中、期末範圍。", "Tap a school to see each grade’s midterm and final.")}</p>
   {"".join(blocks)}
   {source_line()}
 </div></section>
-<section class="section section-light"><div class="container">
+<section class="section section-light"><div class="wrap">
   {h2("FAQ", "常見問題", Z("常見問題", "questions"))}
   {faq(faqs)}
 </div></section>

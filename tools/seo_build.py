@@ -184,6 +184,8 @@ POPULAR = [("KK 音標表", "/kk-phonetic-chart/"), ("自然發音規則總表",
            ("學習扶助是什麼", "/learning-support-guide/"), ("領思 Linguaskill", "/linguaskill-guide/"),
            ("英文聽力怎麼練", "/english-listening-practice/"), ("英文口說怎麼練", "/english-speaking-practice/"),
            ("英文閱讀怎麼練", "/english-reading-practice/"), ("英文寫作怎麼練", "/english-writing-practice/"),
+           ("颱風英文", "/typhoon-english/"), ("早安英文", "/good-morning-english/"), ("晚安英文", "/good-night-english/"),
+           ("星座英文", "/zodiac-signs-english/"), ("科目英文", "/school-subjects-english/"),
            ("免費 A4 學習單下載", "/download/")]
 POPULAR_ON = {"index.html", "blog/index.html", "404.html"}
 
@@ -592,7 +594,10 @@ WEBSITE_ID = ORIGIN + "/#website"
 HUB_PAGES = {"english-names/index.html", "english-vocabulary-by-topic/index.html", "english-pronunciation/index.html"}
 PAGE_KIND = {"index.html": "WebPage", "blog/index.html": "CollectionPage", "download/index.html": "CollectionPage",
              "courses/index.html": "WebPage", "free-trial/index.html": "WebPage",
-             "banqiao-parent-testimonials/index.html": "WebPage"}
+             "banqiao-parent-testimonials/index.html": "WebPage",
+             # the three selling pages carried only a Product node (audit 11-17): say what the page itself is
+             "chris-and-cora-readers/index.html": "WebPage", "english-grammar-books/index.html": "WebPage",
+             "cambridge-practice-exam-pack/index.html": "WebPage"}
 
 _FULL_ORG = None
 def full_org():
@@ -1639,6 +1644,7 @@ _DATES = {"months": ("月份英文縮寫", "/months-english/"), "days": ("星期
 _FEST = {"solstice": ("冬至英文", "/winter-solstice-english/"), "halloween": ("萬聖節英文", "/halloween-english/"), "christmas": ("聖誕節英文", "/christmas-english/"),
          "newyear": ("新年快樂英文", "/new-year-english/"), "valentine": ("情人節英文", "/valentines-day-english/"),
          "midautumn": ("中秋節英文", "/mid-autumn-festival-english/"), "birthday": ("生日快樂英文", "/happy-birthday-english/"),
+         "thanksgiving": ("感恩節英文", "/thanksgiving-english/"),
          "thanks": ("謝謝英文 30 種說法", "/thank-you-english/"), "cheer": ("加油英文", "/cheer-up-english/")}
 _VOC = {"fruits": ("水果英文", "/fruits-english-vocabulary/"), "food": ("食物英文", "/food-english/"),
         "animals": ("動物英文", "/animals-english-vocabulary/"), "colors": ("顏色英文", "/colors-english-vocabulary/"),
@@ -1668,8 +1674,8 @@ READNEXT = {
     "fruits-english-vocabulary": [_VOC["food"], _VOC["animals"], _VOC["colors"], _VOC["topics"]],
     "jobs-english": [_VOC["countries"], _VOC["body"], _VOC["animals"], _VOC["topics"]],
     "animals-english-vocabulary": [_VOC["fruits"], _VOC["colors"], _VOC["body"], _VOC["topics"]],
-    "halloween-english": [_FEST["christmas"], _FEST["newyear"], _FEST["birthday"], _FEST["midautumn"]],
-    "christmas-english": [_FEST["solstice"], _FEST["newyear"], _FEST["valentine"], _FEST["birthday"]],
+    "halloween-english": [_FEST["thanksgiving"], _FEST["christmas"], _FEST["newyear"], _FEST["birthday"], _FEST["midautumn"]],
+    "christmas-english": [_FEST["thanksgiving"], _FEST["solstice"], _FEST["newyear"], _FEST["valentine"], _FEST["birthday"]],
     "new-year-english": [_FEST["solstice"], _FEST["christmas"], _FEST["valentine"], _FEST["birthday"]],
     "valentines-day-english": [_FEST["midautumn"], _FEST["halloween"], _FEST["birthday"], _FEST["thanks"]],
     "english-symbol-names": [_WR["punct"], _WR["abbr"], _WR["caps"]],
@@ -1699,6 +1705,18 @@ READNEXT = {
     "english-letter-writing-guide": [("請假英文", "/leave-note-english/"), ("英文卡片怎麼寫", "/english-card-writing/"), _WR["punct"], _WR["caps"]],
     "english-names": [("中文名字翻英文", "/chinese-name-to-english/"), ("英文名字產生器", "/english-name-generator/"),
                       ("男生英文名字", "/english-names-boys/"), ("女生英文名字", "/english-names-girls/")],
+    # 11-17 audit: 19 pages with 71K impressions/month sat 4–5 clicks from home, linked only by siblings.
+    # The five biggest joined POPULAR (home/blog/404); these bars give the rest a hub that links down.
+    # audit 11-17: the weakest-linked content pages (2-3 links from inside <main>) get one more hub each
+    "good-morning-english": [("晚安英文", "/good-night-english/"), ("加油英文", "/cheer-up-english/"), ("生日快樂英文", "/happy-birthday-english/"), ("天氣英文", "/weather-english/")],
+    "chinese-zodiac-english": [("星座英文", "/zodiac-signs-english/"), ("新年英文", "/new-year-english/"), ("元宵節英文", "/lantern-festival-english/")],
+    "festivals-english": [("感恩節英文", "/thanksgiving-english/"), ("冬至英文", "/winter-solstice-english/"), ("教師節英文", "/teachers-day-english/"), ("母親節英文", "/mothers-day-english/"), ("父親節英文", "/fathers-day-english/")],
+    "kids-english-names-guide": [("英文名字產生器", "/english-name-generator/"), ("男生英文名字", "/english-names-boys/"), ("女生英文名字", "/english-names-girls/")],
+    "sight-words-guide": [("Sight words 與 heart words", "/sight-words-heart-words-guide/"), ("自然發音規則總表", "/phonics-rules-chart/"), ("英文分級讀本怎麼選", "/graded-readers-guide/")],
+    "weather-english": [("颱風英文", "/typhoon-english/"), ("地震英文", "/earthquake-english/"), ("機場英文", "/airport-english/"), ("旅遊英文", "/travel-english/")],
+    "school-subjects-english": [("數學英文", "/math-english/"), ("自然科學英文", "/science-english/"), ("社會科英文", "/social-studies-english/"), ("音樂英文", "/music-english/")],
+    "english-listening-practice": [("ICRT 英文廣播怎麼聽", "/icrt-english-radio/"), ("看卡通學英文", "/learn-english-cartoons/"), ("英文口說怎麼練", "/english-speaking-practice/")],
+    "banqiao-english-cram-school": [("板橋各校英文版本與段考範圍", "/banqiao-school-english/"), ("板橋國中小段考日期", "/exams/banqiao-school-calendar/")],
     "graded-readers-guide": [("讀本真的能學單字嗎", "/graded-readers-vocabulary/"), ("故事要聽幾次", "/english-story-repetition/"),
                              ("讀本要配音檔嗎", "/reading-with-audio/"), ("看卡通學英文有用嗎", "/english-cartoons-vocabulary/"),
                              ("單字背了就忘", "/vocabulary-retention/")],
@@ -1747,6 +1765,29 @@ def season_strip(html, rel, today=None):
         f'<span><b>{s[4]}</b>{s[5]} →</span></a></div>' for s in upcoming)
     block = f'\n{SEASON_START}{strips}{SEASON_JS}{SEASON_END}\n'
     return html[:end] + block + html[end:]
+
+
+_IMG_TAG = re.compile(r"<img\b[^>]*>", re.I)
+def eager_first_image(html):
+    """The first picture inside <main>, when it comes before the first <h2>, is in the first screen:
+    lazy-loading it delays it (audit 11-17: 186 pages, 63 with the image above the first H2). Drop
+    loading="lazy" on that one image only; the rest stay lazy."""
+    m = re.search(r"<main\b[^>]*>", html)
+    if not m:
+        return html
+    # never inside a <script> (a quiz template builds <img> tags in JS: it is not the first screen,
+    # and editing it made 30 practice pages look rewritten)
+    scripts = [(a.start(), a.end()) for a in re.finditer(r"<script\b.*?</script>", html, re.S)]
+    h2 = html.find("<h2", m.end())
+    im = None
+    for cand in _IMG_TAG.finditer(html, m.end()):
+        if not any(a <= cand.start() < b for a, b in scripts):
+            im = cand
+            break
+    if not im or (h2 != -1 and im.start() > h2) or 'loading="lazy"' not in im.group(0):
+        return html
+    tag = im.group(0).replace(' loading="lazy"', "")
+    return html[:im.start()] + tag + html[im.end():]
 
 
 def process_page(path, css_ver="", crit=""):
@@ -1805,6 +1846,7 @@ def process_page(path, css_ver="", crit=""):
     html = read_next(html, rel)
     html = season_strip(html, rel)
     html = gept_dates(html, rel)
+    html = eager_first_image(html)
     if "</head>" not in html or not re.search(r"<body[^>]*>", html):
         return rel, "SKIP (no head/body)"
 
@@ -1868,8 +1910,9 @@ def process_page(path, css_ver="", crit=""):
     if 'name="twitter:card"' not in html:
         seo.append('<meta name="twitter:card" content="summary_large_image">')
     # Large image previews (Discover cards, big mobile thumbnails) need an explicit opt-in; no page
-    # had one. Pages that carry their own robots meta (noindex: /line/, the pack page) keep theirs.
-    if rel != "404.html" and not re.search(r'<meta[^>]+name="robots"', html):
+    # had one. Pages that carry their own robots meta (noindex: /line/, the pack page) keep theirs —
+    # in either quote style (the flip books write name='robots' and got a second robots meta; audit 11-17).
+    if rel != "404.html" and not re.search(r'<meta[^>]+name=["\']robots["\']', html):
         seo.append('<meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">')
     if 'name="twitter:image"' not in html:
         seo.append(f'<meta name="twitter:image" content="{image}">')
@@ -1895,7 +1938,10 @@ def process_page(path, css_ver="", crit=""):
     # page has a byline, a plain WebPage (dated, published by the school) where it does not
     # (a page with a byline but only a Quiz or WebPage node of its own gets the Article too:
     #  the nine grammar and vocabulary guides showed an author and had no article node)
-    if article_page and ((has_byline and not (found & ARTICLE_TYPES)) or not (found & OWN_TYPES)):
+    # (…but not on a page that already declares itself a CollectionPage, like /gept/: it ended up with two
+    #  page-level nodes, CollectionPage + Article — audit 11-17)
+    is_teacher = rel == TEACHER.strip("/") + "/index.html"     # one page node there: the ProfilePage below (audit 11-17)
+    if article_page and not is_teacher and ((has_byline and not (found & ARTICLE_TYPES) and "CollectionPage" not in found) or not (found & OWN_TYPES)):
         part = {"hasPart": {"@id": canon + "#faq"}} if fq else {}
         if has_byline:
             node = {"@context": "https://schema.org", "@type": "CollectionPage" if rel in HUB_PAGES else "Article",
@@ -1926,13 +1972,17 @@ def process_page(path, css_ver="", crit=""):
             node["hasPart"] = {"@id": canon + "#faq"}
         own_image(node.get("primaryImageOfPage"))
         seo.append('<script type="application/ld+json">' + jd(node) + "</script>")
-    if rel == TEACHER.strip("/") + "/index.html":
-        seo.append('<script type="application/ld+json">' + jd({
-            "@context": "https://schema.org", "@type": "ProfilePage", "@id": canon + "#profile", "url": canon,
-            "inLanguage": "zh-Hant-TW", "isPartOf": {"@id": WEBSITE_ID},
-            # ProfilePage wants a full ISO 8601 datetime (Search Console flagged the bare date, 2026-10-26)
-            "dateModified": f"{modified}T09:00:00+08:00", "mainEntity": {"@id": PERSON_ID},
-            "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}}) + "</script>")
+    if is_teacher:
+        prof = {"@context": "https://schema.org", "@type": "ProfilePage", "@id": canon + "#profile", "url": canon,
+                "name": headline[:110], "description": desc, "inLanguage": "zh-Hant-TW", "isPartOf": {"@id": WEBSITE_ID},
+                "primaryImageOfPage": {"@type": "ImageObject", "url": image},
+                # ProfilePage wants a full ISO 8601 datetime (Search Console flagged the bare date, 2026-10-26)
+                "dateCreated": f"{published}T09:00:00+08:00", "dateModified": f"{modified}T09:00:00+08:00",
+                "mainEntity": {"@id": PERSON_ID}, "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}}
+        if fq:
+            prof["hasPart"] = {"@id": canon + "#faq"}
+        own_image(prof.get("primaryImageOfPage"))
+        seo.append('<script type="application/ld+json">' + jd(prof) + "</script>")
     if rel == "contact/index.html":
         seo.append('<script type="application/ld+json">' + jd({
             "@context": "https://schema.org", "@type": "ContactPage", "@id": canon + "#contact", "url": canon,
@@ -2095,6 +2145,9 @@ _INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM
              (BOOKS_START, BOOKS_END),
              # the read-a-real-page challenge and the grammar grade picker (next_level)
              (NL_START, NL_END),
+             # the trust section at the bottom of every selling page (pay_safe_block, 11-15): the same
+             # boilerplate everywhere; without this line it stamped 143 pages 2026-11-15 (audit 11-17)
+             (PAYSAFE_START, PAYSAFE_END),
              # the founder's AI-guide line in the footer (ainote): the same on every page
              (AINOTE_START, AINOTE_END)]
 
@@ -2272,7 +2325,12 @@ def rebuild_sitemap():
         # Google reads only <image:loc> (title/caption were dropped in 2022) and ignores
         # <priority>/<changefreq> altogether
         block = re.sub(r"<(priority|changefreq)>[^<]*</\1>", "", block)
+        page_html = open(fpath, encoding="utf-8").read() if charts.get(relpath.strip("/")) and os.path.exists(fpath) else ""
         for rec in charts.get(relpath.strip("/"), []):
+            # only a chart the page still shows (moe-1200-words-categories stayed listed for a
+            # month after its block left the page on 10-21; audit 11-17)
+            if os.path.basename(rec["png"]) not in page_html:
+                continue
             block = block.replace("</url>",
                 "<image:image><image:loc>%s%s</image:loc></image:image></url>" % (ORIGIN, rec["png"]), 1)
         pm = re.search(r"<lastmod>([^<]*)</lastmod>", block)
@@ -2308,7 +2366,7 @@ def rebuild_sitemap():
         if not os.path.exists(f):
             warn(f"  ::warning:: sitemap lists a missing page: {loc}"); continue
         t = open(f, encoding="utf-8").read()
-        if re.search(r'<meta[^>]+name="robots"[^>]+noindex', t): warn(f"  ::warning:: sitemap lists a noindex page: {loc}")
+        if re.search(r'<meta[^>]+name=["\']robots["\'][^>]+noindex', t): warn(f"  ::warning:: sitemap lists a noindex page: {loc}")
         c = re.search(r'rel="canonical"[^>]*href="([^"]+)"|href="([^"]+)"[^>]*rel="canonical"', t)
         if c and (c.group(1) or c.group(2)) != loc: warn(f"  ::warning:: sitemap URL is not its own canonical: {loc}")
     # the other direction: an indexable page that is missing from the sitemap went unnoticed
@@ -2320,7 +2378,7 @@ def rebuild_sitemap():
         if rel_i in SELF_CONTAINED or rel_i.startswith(("assets/", "tools/", "scripts/", "data/")):
             continue
         t = open(os.path.join(d, "index.html"), encoding="utf-8").read()
-        if re.search(r'<meta[^>]+name="robots"[^>]+noindex', t):
+        if re.search(r'<meta[^>]+name=["\']robots["\'][^>]+noindex', t):
             continue
         c = re.search(r'rel="canonical"[^>]*href="([^"]+)"|href="([^"]+)"[^>]*rel="canonical"', t)
         url = (c.group(1) or c.group(2)) if c else ORIGIN + "/" + (os.path.dirname(rel_i) + "/" if os.path.dirname(rel_i) else "")
@@ -2328,8 +2386,24 @@ def rebuild_sitemap():
             continue
         warn(f"  ::warning:: indexable page missing from the sitemap: {url}")
     open(sm, "w", encoding="utf-8").write(xml)
+    write_section_sitemaps(xml)
     save_ledger(ledger); _LEDGER = ledger
     return sum(1 for _ in re.finditer(r"<lastmod>", xml))
+
+# Sections of sitemap.xml written again as their own files, so Search Console can report each
+# batch on its own (the 1,166 word pages are 70% of the site; audit 11-17). sitemap.xml stays the
+# complete list: every builder, the lint, cache_warm and the IndexNow step read it. Listing a URL
+# in two sitemaps is allowed; submit these two in Search Console next to sitemap.xml.
+SECTION_SITEMAPS = {
+    "sitemap-pronunciation.xml": lambda loc: "/pronunciation/" in loc,
+    "sitemap-pdfs.xml": lambda loc: loc.endswith(".pdf"),
+}
+def write_section_sitemaps(xml):
+    head = xml[:xml.index("<url>")].rstrip(" ")
+    for name, keep in SECTION_SITEMAPS.items():
+        urls = [u for u in re.findall(r"  <url>.*?</url>\n", xml, flags=re.S)
+                if keep(re.search(r"<loc>([^<]+)</loc>", u).group(1))]
+        open(os.path.join(SITE, name), "w", encoding="utf-8").write(head + "".join(urls) + "</urlset>\n")
 
 LLMS_START = "<!-- AE:LLMS-MORE start: written by tools/seo_build.py (pages the curated lists above do not name yet) -->"
 LLMS_END = "<!-- AE:LLMS-MORE end -->"

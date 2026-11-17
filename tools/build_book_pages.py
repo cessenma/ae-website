@@ -201,7 +201,7 @@ CSS = """
 @media (max-width:760px){.bp-stat .big{font-size:40px}}
 .bp-stage .bp-tag{align-self:flex-start;font-size:12.5px;font-weight:800;border-radius:999px;padding:3px 11px;margin-bottom:10px;background:#E8F7FF;color:#066d9e}
 .bp-stage blockquote{margin:12px 0;padding:12px 14px;border-left:4px solid var(--yellow);background:#FFFBEF;border-radius:0 12px 12px 0;font-family:'Andika','Baloo 2',sans-serif;font-size:16px;line-height:1.6;color:var(--navy)}
-.bp-stage .bp-small{font-size:13px;color:#64748b;margin-top:auto;padding-top:10px}
+.bp-stage .bp-small{font-size:14px;color:#64748b;margin-top:auto;padding-top:10px}
 .bp-lv{background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:16px;margin-top:10px;overflow:hidden}
 .bp-lv summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:70px 132px 1fr auto;gap:14px;align-items:center;padding:12px 16px}
 .bp-lv summary::-webkit-details-marker{display:none}
@@ -210,7 +210,7 @@ CSS = """
 .bp-lv .bp-cov{display:flex}
 .bp-lv .bp-cov img{width:42px;height:auto;border-radius:4px;border:2px solid #fff;box-shadow:0 3px 8px rgba(26,39,82,.16);margin-left:-8px}
 .bp-lv .bp-cov img:first-child{margin-left:0}
-.bp-lv .bp-t{font-size:14px;line-height:1.55;color:var(--text-body)}
+.bp-lv .bp-t{font-size:15px;line-height:1.55;color:var(--text-body)}
 .bp-lv .bp-t i{font-style:normal;color:var(--navy);font-weight:700}
 .bp-lv .bp-w{font-size:13px;color:#64748b;text-align:right;white-space:nowrap}
 .bp-lv .bp-w b{display:block;font-size:15px;color:var(--navy)}
@@ -218,7 +218,7 @@ CSS = """
 .bp-lv .bp-in{padding:16px;display:grid;grid-template-columns:1.2fr 1fr;gap:18px;align-items:start}
 .bp-lv .bp-in img{width:100%;height:auto;border-radius:10px;box-shadow:0 4px 14px rgba(26,39,82,.12)}
 .bp-lv .bp-in h4{margin:0 0 6px;font-size:14.5px;color:var(--navy)}
-.bp-lv .bp-in ul{margin:0 0 12px;padding-left:18px;font-size:13.5px;line-height:1.7;color:var(--text-body)}
+.bp-lv .bp-in ul{margin:0 0 12px;padding-left:18px;font-size:15px;line-height:1.7;color:var(--text-body)}
 .bp-lv .bp-in .btn{margin-top:4px}
 @media (max-width:720px){.bp-lv summary{grid-template-columns:56px 1fr auto;gap:10px}.bp-lv .bp-cov{display:none}.bp-lv .bp-in{grid-template-columns:1fr}}
 /* the 3 free Level 1 books as hardcovers (Chris 11-11: "resemble hard cover books … pop open slowly") */
@@ -258,7 +258,7 @@ CSS = """
 .bp-tier .bp-tn{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:15px;color:var(--navy)}
 .bp-tier .bp-tp{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:30px;color:var(--navy);line-height:1}
 .bp-tier .bp-tu{font-size:12.5px;font-weight:700;color:#8a5f00}
-.bp-tier .bp-td{font-size:13.5px;line-height:1.7;color:var(--text-body)}
+.bp-tier .bp-td{font-size:15px;line-height:1.7;color:var(--text-body)}
 .bp-tier .bp-pick{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:auto;padding-top:4px}
 .bp-tier .bp-pick.two{grid-template-columns:1fr}
 .bp-tier .btn{margin-top:0;min-height:44px;padding:8px 6px;font-size:14px;width:100%;text-align:center;justify-content:center}
@@ -277,22 +277,22 @@ CSS = """
 .bp-pc.gu{background:#F0FBF4;border-color:#bfe9cf}.bp-pc.gu .bp-pk{background:var(--green);color:var(--navy)}
 .bp-pc .btn{margin-top:auto;align-self:flex-start;text-transform:none}
 .bp-studies{max-width:860px;margin:22px auto 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px 16px;text-align:left}
-.bp-studies li{background:#fff;border-radius:14px;border:1px solid #e2e8f0;padding:12px 14px;font-size:14.5px;line-height:1.65;color:var(--text-body)}
+.bp-studies li{background:#fff;border-radius:14px;border:1px solid #e2e8f0;padding:12px 14px;font-size:15px;line-height:1.65;color:var(--text-body)}
 .bp-studies a{display:block;font-weight:800;color:var(--blue-ink);text-decoration:none;margin-bottom:2px}
 .bp-studies a:hover{text-decoration:underline}
 .bp-gline{max-width:760px;margin:12px auto 0;text-align:center;font-size:15px;font-weight:700;color:var(--green-ink)}
 .bp-gline a{color:inherit}
-.bp-fine{max-width:760px;margin:16px auto 0;font-size:13px;line-height:1.8;color:#64748b;text-align:center}
+.bp-fine{max-width:760px;margin:16px auto 0;font-size:14.5px;line-height:1.8;color:#64748b;text-align:center}
 .bp-safe{max-width:1040px;margin:22px auto 0;background:#fff;border:1.5px solid rgba(26,39,82,.12);border-radius:20px;padding:20px 22px;box-shadow:0 6px 22px rgba(26,39,82,.07)}
 .bp-line{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 18px;background:#F1FBF4;border:1.5px solid rgba(6,199,85,.28);border-radius:14px;padding:14px 16px}
-.bp-line p{margin:0;flex:1 1 300px;font-size:14.5px;line-height:1.75;color:#374151}
+.bp-line p{margin:0;flex:1 1 300px;font-size:15px;line-height:1.75;color:#374151}
 .bp-line p b{color:var(--navy)}
 .bp-line .btn{flex:0 0 auto;min-height:44px}
 .bp-safe-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;margin-top:18px}
 @media (max-width:760px){.bp-safe{padding:16px 14px}.bp-safe-grid{grid-template-columns:1fr}}
 .bp-safe h3{margin:0 0 8px;font-size:16.5px;color:var(--navy)}
 .bp-safe ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
-.bp-safe li{position:relative;padding-left:22px;font-size:14px;line-height:1.75;color:#374151}
+.bp-safe li{position:relative;padding-left:22px;font-size:15px;line-height:1.75;color:#374151}
 .bp-safe li::before{content:'✓';position:absolute;left:0;top:0;color:#12873d;font-weight:900}
 .bp-safe li a{color:var(--navy);font-weight:700}
 .bp-fields{margin-top:16px;border-top:1px solid rgba(26,39,82,.10);padding-top:12px}
@@ -384,7 +384,7 @@ USD_RATE = 32.9     # NT$ per US$, the rate Lemon Squeezy applied on 2026-11-11 
 BSB = "https://bsb.kh.edu.tw/"                                  # 直轄市及各縣市短期補習班資訊管理系統: the public 立案 lookup
 MAPS = "https://maps.app.goo.gl/hLChkEqAMKCsMWpm6"
 
-def pay_safe(kind, price):
+def pay_safe(kind, price, waiver=False):
     """Under the price cards (2026-11-11): the LINE-order route (bank transfer) and who the buyer is paying.
     GA4 30 days: 21 people opened a checkout, 5 paid; the Lemon Squeezy form is English, charges in US dollars
     and has no LINE Pay / ATM, so the page says so up front and gives facts a parent can check."""
@@ -399,6 +399,11 @@ def pay_safe(kind, price):
            Z("付款頁是英文的，下面有每一格的中文說明。", "The payment page is in English; a Chinese guide to each field is below."),
            Z(f"畫面上寫新台幣，實際以美元扣款（例如 NT${price} 約 US${usd}，依當天匯率）。信用卡帳單上會是美元金額和英文的商店名稱，多數銀行會另收約 1.5% 的國外交易手續費。", f"The page shows NT dollars, but the card is charged in US dollars (e.g. NT${price} is about US${usd}, at the day's rate). Your card statement will show a US-dollar amount and an English merchant name, and most banks add a foreign-transaction fee of about 1.5%."),
            Z("付款完成，下載連結立刻寄到你填的 email。沒收到先看垃圾信匣，再 LINE 我們。", "Once you pay, the download link is emailed right away to the address you entered. If it doesn't arrive, check your spam folder, then message us on LINE.")]
+    if waiver:
+        # The exam-pack pages had no word on the 7-day cancellation right (audit 11-17: 2 of 144 selling pages).
+        # Same sentence as the readers and grammar pages, which carry it in their own fine print.
+        pay.append(Z("這是數位內容，付款後立刻提供下載；依《通訊交易解除權合理例外情事適用準則》第 2 條第 5 款，按下購買即表示你同意不適用七天解除權。",
+                     "This is digital content delivered right after payment; under Article 2(5) of the rules on exceptions to the 7-day cancellation right, clicking buy means you agree the 7-day cancellation right does not apply."))
     fields = [("Email", Z("收下載連結的信箱，請確認沒有打錯", "the mailbox that receives the download link; check for typos")),
               ("Card number", Z("信用卡卡號（Visa、Mastercard、JCB、美國運通）", "card number (Visa, Mastercard, JCB, American Express)")),
               ("Expiration date", Z("卡片有效期限：月／年", "card expiry: month / year")),
@@ -488,7 +493,7 @@ def readers_page():
            "description": strip(desc), "brand": {"@type": "Brand", "name": "埃森美語 American English"},
            "image": [f"{ORIGIN}/assets/img/readers/covers/{c}.webp" for c in ("1a", "6a", "12a")],
            **({"offers": {"@type": "AggregateOffer", "priceCurrency": "TWD", "lowPrice": P_LEVEL, "highPrice": P_ALL,
-                          "offerCount": 15, "availability": "https://schema.org/InStock"}} if any_link else {})}]
+                          "offerCount": 15, "availability": "https://schema.org/InStock", "url": f"{ORIGIN}/{READERS}/#buy", "seller": {"@id": ORIGIN + "/#organization"}}} if any_link else {})}]
     out = [head(READERS, title, desc, og_t, desc, "/assets/img/readers/og-all-36.jpg", 1600, 1200,
                 Z("Chris and Cora 英語分級讀本 36 本封面", "the 36 Chris and Cora covers"), ld, LEMON if any_link else "")]
 
@@ -882,7 +887,7 @@ def grammar_page():
            "description": strip(desc), "brand": {"@type": "Brand", "name": "埃森美語 American English"},
            "image": [f"{ORIGIN}/assets/img/grammar-books/covers/{c}.webp" for c in ("G3", "G8-1", "G10-1")],
            **({"offers": {"@type": "AggregateOffer", "priceCurrency": "TWD", "lowPrice": P_GSHEETS, "highPrice": P_GALL,
-                          "offerCount": 6, "availability": "https://schema.org/InStock"}} if any_link else {})}]
+                          "offerCount": sum(1 for v in STORE["grammar"].values() if v), "availability": "https://schema.org/InStock", "url": f"{ORIGIN}/{GRAMMAR}/", "seller": {"@id": ORIGIN + "/#organization"}}} if any_link else {})}]
     out = [head(GRAMMAR, title, desc, og_t, desc, "/assets/img/grammar-books/og-grammar-books.jpg", 1600, 1200,
                 Z("英文文法書與文法速查表封面", "covers of the grammar books and cheat sheets"), ld, LEMON if any_link else "")]
     # hero fan (Chris 11-10): one page-1 overview at the back, the rest illustrated inside pages
@@ -1073,7 +1078,7 @@ def write_pay_safe():
     css = "".join(l + "\n" for l in CSS.split("\n") if re.match(r"\.bp-(safe|line|fields)", l) or l.startswith("@media (max-width:760px){.bp-safe"))
     open(PAY_SAFE_OUT, "w", encoding="utf-8").write(
         '<section class="section ps-sec" style="padding-top:28px"><div class="wrap"><style>' + css + "</style>\n"
-        + pay_safe("__KIND__", 590) + "</div></section>\n")
+        + pay_safe("__KIND__", 590, waiver=True) + "</div></section>\n")
     print("  pay-safe block:", os.path.relpath(PAY_SAFE_OUT, SITE))
 
 if __name__ == "__main__":

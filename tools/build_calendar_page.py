@@ -154,8 +154,14 @@ def main():
     try:
         sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
         import seo_build
-        rel, msg = seo_build.process_page(OUT, seo_build.css_fingerprint(), seo_build.critical_css())
+        # Twice, like a local build: the first pass adds the headline's 「：」 (h1_segments) AFTER the
+        # page name was read from the H1, so a single pass published 「板橋學區行事曆 四校…」 (11-16).
+        for _ in range(2):
+            rel, msg = seo_build.process_page(OUT, seo_build.css_fingerprint(), seo_build.critical_css())
         print(f"  chrome: {msg}")
+        # The ledger gives the page a new date; the sitemap must say the same (the bot used to commit
+        # data/lastmod.json without sitemap.xml, so the two disagreed until the next local build).
+        seo_build.rebuild_sitemap()
     except Exception as e:
         # Fail the job: the bare template is already on disk, and the next workflow step would commit
         # and push a page with no analytics, header or navigation.

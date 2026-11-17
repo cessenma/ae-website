@@ -1,11 +1,6 @@
 User-agent: *
 Allow: /
 
-# The practice-exam pack page is deliberately absent from this file.
-# Naming it here would publish the unguessable slug it relies on, and a
-# Disallow would stop crawlers reading the noindex header that .htaccess
-# already sends for it — so the URL could still be indexed from a link.
-
 Sitemap: https://americanenglish.com.tw/sitemap.xml
 
 # Machine-readable site summary for AI assistants:
