@@ -1595,6 +1595,46 @@ def next_level(html, rel):
     return html[:at] + block + html[at:]
 
 
+WB_START, WB_END = "<!-- AE:WORDBOOK -->", "<!-- /AE:WORDBOOK -->"
+WB_SRC = os.path.join(SITE, "data", "word_books.json")
+_WB = {}
+def word_book(html, rel):
+    """Per-word pronunciation pages: one real sentence from the Chris and Cora books with this word in it, that page's
+    picture, the level the word starts at and how often the 36 books read it (2026-11-18: 1,078 visitors a week on these
+    pages, 2 reached the readers page). Data: tools/build_word_books.py → data/word_books.json. Sits under the word card."""
+    html = re.sub(r"\n?" + re.escape(WB_START) + r".*?" + re.escape(WB_END) + r"\n?", "", html, flags=re.S)
+    parts = rel.split("/")
+    if len(parts) != 3 or parts[0] != "pronunciation" or not os.path.exists(WB_SRC):
+        return html
+    if "d" not in _WB:
+        _WB["d"] = json.load(open(WB_SRC, encoding="utf-8"))["words"]
+        _WB["v"] = hashlib.md5(open(os.path.join(SITE, "assets", "wordbook.css"), "rb").read()).hexdigest()[:8]
+    d = _WB["d"].get(parts[1])
+    card = html.find('<div class="wd-card')
+    sec = html.find("</section>", card) if card != -1 else -1
+    at = html.rfind("</div>", card, sec) if sec != -1 else -1
+    if not d or at == -1:
+        return html
+    s, out, last = d["sentence"], "", 0
+    for a, b in d["marks"]:
+        out += _escape(s[last:a]) + "<mark>" + _escape(s[a:b]) + "</mark>"; last = b
+    out += _escape(s[last:])
+    w, title = _escape(d["word"]), _escape(d["title"])
+    block = (f'\n{WB_START}<link rel="stylesheet" href="/assets/wordbook.css?v={_WB["v"]}">'
+             f'<aside class="wb" aria-label="{w} 在分級讀本裡">'
+             f'<a class="wb-pic" href="/chris-and-cora-readers/" data-book="readers" data-book-item="word-img" tabindex="-1" aria-hidden="true">'
+             f'<img src="{d["img"]}" alt="《{title}》插圖" width="300" height="425" loading="lazy" decoding="async"></a>'
+             f'<div class="wb-t"><span class="wb-tag">在故事裡讀到 <span lang="en">{w}</span></span>'
+             f'<span class="wb-en" lang="en">{out}</span>'
+             f'<span class="wb-src">Chris and Cora 英語分級讀本・第 {d["level"]} 級《<span lang="en">{title}</span>》。'
+             f'<span lang="en">{w}</span> 從第 {d["first_level"]} 級開始出現，36 本書裡一共讀到 {d["count"]} 次'
+             f'{"（含變化形）" if d["inflected"] else ""}。</span>'
+             '<span class="wb-btns"><a class="btn btn-primary" href="/chris-and-cora-readers/#read-book" data-book="readers" data-book-item="word-free">免費讀第 1 級 3 本</a>'
+             '<a class="btn btn-outline" href="/chris-and-cora-readers/" data-book="readers" data-book-item="word-page">看全部 36 本</a></span>'
+             f'</div></aside>{WB_END}\n')
+    return html[:at] + block + html[at:]
+
+
 def assess_card(html, rel):
     """A free level-assessment card with a LINE button, after the main table or the PDF box."""
     html = re.sub(r"\n?" + re.escape(ASSESS_START) + r".*?" + re.escape(ASSESS_END) + r"\n?", "", html, flags=re.S)
@@ -1919,6 +1959,7 @@ def process_page(path, css_ver="", crit=""):
     html = assess_card(html, rel)
     html = books_card(html, rel)
     html = next_level(html, rel)
+    html = word_book(html, rel)
     html = pay_safe_block(html, rel)
     html = read_next(html, rel)
     html = doors(html, rel)
@@ -2223,6 +2264,8 @@ _INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM
              (BOOKS_START, BOOKS_END),
              # the read-a-real-page challenge and the grammar grade picker (next_level)
              (NL_START, NL_END),
+             # the word in a real Chris and Cora sentence, on the per-word pages (word_book)
+             (WB_START, WB_END),
              # the trust section at the bottom of every selling page (pay_safe_block, 11-15): the same
              # boilerplate everywhere; without this line it stamped 143 pages 2026-11-15 (audit 11-17)
              (PAYSAFE_START, PAYSAFE_END),

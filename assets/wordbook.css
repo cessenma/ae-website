@@ -1,0 +1,17 @@
+/* AE:WORDBOOK (seo_build.word_book, 2026-11-18): the word in a real Chris and Cora sentence, on the per-word pages */
+.wb{display:flex;align-items:center;gap:16px 22px;max-width:760px;margin:22px auto 0;padding:16px 18px;border-radius:18px;background:#FFF8E6;border:2px solid #FFE3A3;color:var(--navy);line-height:1.6;text-align:left}
+.wb-pic{flex:none;display:block;line-height:0}
+.wb-pic img{width:112px;height:auto;border-radius:10px;border:3px solid #fff;box-shadow:0 6px 16px rgba(26,39,82,.18)}
+.wb-t{display:grid;gap:6px;min-width:0}
+.wb-tag{justify-self:start;font-size:13px;font-weight:800;letter-spacing:.5px;background:var(--yellow);color:var(--navy);border-radius:999px;padding:2px 12px}
+.wb-en{font-family:'Baloo 2',sans-serif;font-size:22px;line-height:1.35;font-weight:700;color:var(--navy)}
+.wb-en mark{background:#FFE08A;color:inherit;border-radius:6px;padding:0 4px}
+.wb-src{font-size:14.5px;color:var(--text-body)}
+.wb-btns{display:flex;flex-wrap:wrap;gap:8px 10px;margin-top:4px}
+.wb-btns .btn{margin-top:0;text-transform:none;min-height:44px;padding:10px 20px;font-size:15px}
+@media (max-width:560px){
+  .wb{flex-direction:column;align-items:flex-start;padding:16px}
+  .wb-pic img{width:132px}
+  .wb-en{font-size:20px}
+  .wb-btns .btn{flex:1 1 100%}
+}
