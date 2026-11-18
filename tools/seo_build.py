@@ -1482,6 +1482,7 @@ def books_card(html, rel):
 
 NL_START, NL_END = "<!-- AE:NEXTLEVEL -->", "<!-- /AE:NEXTLEVEL -->"
 NL_SRC = os.path.join(SITE, "data", "next_level.json")
+NL_SPLIT = "<!--nl-split-->"      # between the challenge box and the three-levels box; never reaches the page
 # The books as the next level after the sound pages (Chris 2026-11-15: "put the grammar and readers on the kk phonics
 # pages … as a next level … something creative"). A plain card did not work there (BOOKS_PAGES note), so the reader
 # gets four real pages of the free book to read aloud — printed in KK on the KK pages ("kk"), in English on the
@@ -1489,12 +1490,14 @@ NL_SRC = os.path.join(SITE, "data", "next_level.json")
 # picker that shows that grade's real grammar sample page. Grammar pages get the picker alone ("grammar").
 # slug: (h2 id whose section it ends, mode, headline or None). Data: tools/build_next_level.py → data/next_level.json.
 NEXTLEVEL_PAGES = {
-    "kk-phonetic-chart": ("子音-24-個附有聲無聲配對", "kk", None),
+    # 4th item "pdf" (11-18): the challenge box goes right under the free PDF box, the three levels stay in the section.
+    # In the first two days 1 of 233 visitors started it at the end of the consonant section, 0 of 156 on the worksheet page.
+    "kk-phonetic-chart": ("子音-24-個附有聲無聲配對", "kk", None, "pdf"),
     "english-pronunciation": ("三子音-24-個有聲與無聲的配對", "kk", None),
     "english-vowels-consonants": ("子音有哪些21-個字母成對記最快", "kk", None),
     "kk-phonetics-vs-phonics": ("KK音標自學", "kk", None),
     "phonics-rules-chart": ("自然發音學完拼得出來嗎", "read", None),
-    "english-alphabet-worksheet": ("字母寫得穩了接下來讀什麼", "read", None),
+    "english-alphabet-worksheet": ("字母寫得穩了接下來讀什麼", "read", None, "pdf"),
     "irregular-verbs-list": ("動詞三態放進句子裡試試", "grammar", "三態背熟了，放進句子裡會用嗎？"),
     "english-tenses-chart": ("時態是用會的不是背會的", "grammar", "時態看懂了，下一步是一個一個練熟"),
     "be-verbs-guide": ("be動詞過關了下一關是時態", "grammar", "be 動詞過關了，下一個重點呢？"),
@@ -1534,7 +1537,8 @@ def next_level(html, rel):
     spec = NEXTLEVEL_PAGES.get(os.path.dirname(rel))
     if not spec or not os.path.exists(NL_SRC):
         return html
-    hid, mode, hook = spec
+    hid, mode, hook = spec[:3]
+    try_at = spec[3] if len(spec) > 3 else None
     h = html.find(f'<h2 id="{hid}"')
     sec = html.find("</section>", h) if h != -1 else -1
     at = html.rfind("</div>", h, sec) if sec != -1 else -1
@@ -1565,7 +1569,7 @@ def next_level(html, rel):
                 '<button type="button" class="btn btn-primary nl-next" data-next="下一頁" data-last="讀完了" hidden>下一頁</button>'
                 '<span class="nl-dots" data-t="第 {n} 頁，共 {all} 頁" aria-live="polite"></span></div>'
                 '<div class="nl-done"><b>4 頁都讀完了！</b><span>這 4 頁是《This Is Bobo!》的一部分。整本可以免費線上讀，還能邊聽邊讀；同一級的另外 2 本也免費。</span>'
-                + readers_btns.format("try-") + '</div></div>'
+                + readers_btns.format("try-") + '</div></div>' + NL_SPLIT +
                 '<div class="nl-box"><span class="nl-tag">接下來的兩關</span><b class="nl-h">學英文的三關：這一頁是第 1 關</b>'
                 '<ol class="nl-steps">'
                 '<li class="nl-step"><span class="nl-n">1</span><b>唸得出單字</b><span>字母、自然發音、KK 音標。這一頁練的就是這一關。</span></li>'
@@ -1573,9 +1577,21 @@ def next_level(html, rel):
                 + readers_btns.format("") + '</li>'
                 '<li class="nl-step"><span class="nl-n">3</span><b>寫得出句子</b><span>英文文法書：國小三年級到高三共 16 冊，每個重點一頁規則、圖解、例句和練習。選年級，看那一年的免費試讀頁。</span>'
                 + _nl_picker(D, T["grade"]) + '</li></ol></div>')
-    block = (f'\n{NL_START}<link rel="stylesheet" href="/assets/nextlevel.css?v={_nl_ver("nextlevel.css")}">'
-             f'<aside class="nl" data-nl="{mode}" aria-label="下一關：分級讀本與文法書">{body}</aside>'
-             f'<script src="/assets/nextlevel.js?v={_nl_ver("nextlevel.js")}" defer></script>{NL_END}\n')
+    link = f'<link rel="stylesheet" href="/assets/nextlevel.css?v={_nl_ver("nextlevel.css")}">'
+    js = f'<script src="/assets/nextlevel.js?v={_nl_ver("nextlevel.js")}" defer></script>'
+    def aside(inner):
+        return f'<aside class="nl" data-nl="{mode}" aria-label="下一關：分級讀本與文法書">{inner}</aside>'
+    top = None
+    if try_at == "pdf" and NL_SPLIT in body:      # the challenge right under the free PDF box (and its AE:NEXT line)
+        hero = re.search(r'<section class="page-hero.*?</section>', html, re.S)
+        m = re.compile(r'<div class="magnet-box[^>]*>.*?</div>', re.S).search(html, hero.end() if hero else 0)
+        if m:
+            top = re.compile(r"(?:\s*" + re.escape(NEXT_START) + r".*?" + re.escape(NEXT_END) + r")?", re.S).match(html, m.end()).end()
+    if top is not None and top < at:
+        a, b = body.split(NL_SPLIT)
+        html = html[:at] + f'\n{NL_START}{aside(b)}{NL_END}\n' + html[at:]
+        return html[:top] + f'\n{NL_START}{link}{aside(a)}{js}{NL_END}\n' + html[top:]
+    block = f'\n{NL_START}{link}{aside(body.replace(NL_SPLIT, ""))}{js}{NL_END}\n'
     return html[:at] + block + html[at:]
 
 
