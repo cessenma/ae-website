@@ -1766,6 +1766,58 @@ def read_next(html, rel):
     return html[:m.end()] + block + html[m.end():]
 
 
+DOORS_START, DOORS_END = "<!-- AE:DOORS -->", "<!-- /AE:DOORS -->"
+# Two doors under the first table of the busiest resource pages (2026-11-18). GA4, 28 days to 11-17:
+# ~32,000 users, but only 373 saw /courses/ and ~260 saw a store page; of ~2,500 users in and around
+# Banqiao, 63 saw /courses/. The pages that convert were starved, not broken (/courses/ 5% LINE taps).
+# The same fork sat at the BOTTOM of five pages as AE:REGION and got 6 clicks in 28 days, while the
+# read-next pills in this spot got 215. Near -> /courses/; far -> the school's own material matching
+# the page (same mapping as the after-download card in app.js). No prices here: the store pages own them.
+# The 34 pages below are the non-exam, non-store pages in the top 70 by users. Exam pages are left out:
+# they already carry the pack strip. Events: door_near_tap / door_far_tap (+ book_tap via data-book).
+DOORS = """months-english kk-phonetic-chart english-alphabet-worksheet english-names-boys phonics-rules-chart
+junior-high-english-grammar english-cursive moe-1200-words-guide happy-birthday-english english-names-girls
+moe-2000-words-guide irregular-verbs-list ordinal-numbers-english english-numbers-guide english-worksheet-maker
+english-name-generator english-alphabet-guide chinese-name-to-english halloween-english days-of-week-english
+cool-english-guide english-names english-tenses-chart english-vowels-consonants english-card-writing
+english-dates-guide feelings-english english-wishes kk-phonetics-vs-phonics time-english graded-readers-guide
+english-address food-english english-pronunciation""".split()
+_DOOR_GRAMMAR = re.compile(r"grammar|tenses|verbs|plural|punctuation|capitalization|junior-high|sentence")
+# On these the first table is the whole lookup list (1,200 words, 26 letters, 100 numbers): its end is
+# 6,000-100,000 px down a phone screen, so the doors go above it, right under the table of contents.
+DOORS_TOP = {"moe-1200-words-guide", "moe-2000-words-guide", "english-alphabet-worksheet", "phonics-rules-chart",
+             "english-numbers-guide", "graded-readers-guide", "food-english", "english-name-generator"}
+
+def doors(html, rel):
+    html = re.sub(r"\n?" + re.escape(DOORS_START) + r".*?" + re.escape(DOORS_END) + r"\n?", "", html, flags=re.S)
+    slug = os.path.dirname(rel)
+    if slug not in DOORS:
+        return html
+    hero = re.search(r'<section class="page-hero.*?</section>', html, re.S)
+    m = re.compile(r"</table>(\s*</div>)?").search(html, hero.end() if hero else 0)
+    if not m:
+        return html
+    at = m.end()
+    rn = re.compile(r"\s*" + re.escape(READNEXT_START) + r".*?" + re.escape(READNEXT_END), re.S).match(html, at)
+    if rn:                      # the read-next pills come first, the doors right under them
+        at = rn.end()
+    if slug in DOORS_TOP:
+        toc = html.find("<!-- /AE:TOC -->", hero.end() if hero else 0, m.start())
+        if toc == -1:
+            return html
+        at = toc + len("<!-- /AE:TOC -->")
+    if _DOOR_GRAMMAR.search(slug):
+        far = ('/english-grammar-books/', 'grammar', '在家練：英文文法書，每年級可免費試讀')
+    else:
+        far = ('/chris-and-cora-readers/', 'readers', '在家讀：分級讀本，第 1 級 3 本免費')
+    block = (f'\n{DOORS_START}<nav class="doors" aria-label="下一步">'
+             '<a class="door door-near" href="/courses/" data-door="near"><small>住板橋附近</small>'
+             '<b>看課程，預約免費程度評估</b></a>'
+             f'<a class="door door-far" href="{far[0]}" data-door="far" data-book="{far[1]}" data-book-item="doors">'
+             f'<small>不在板橋</small><b>{far[2]}</b></a></nav>{DOORS_END}\n')
+    return html[:at] + block + html[at:]
+
+
 def season_strip(html, rel, today=None):
     """Insert (or refresh, or remove) the seasonal strips after the page's main table."""
     html = re.sub(r"\n?" + re.escape(SEASON_START) + r".*?" + re.escape(SEASON_END) + r"\n?", "", html, flags=re.S)
@@ -1869,6 +1921,7 @@ def process_page(path, css_ver="", crit=""):
     html = next_level(html, rel)
     html = pay_safe_block(html, rel)
     html = read_next(html, rel)
+    html = doors(html, rel)
     html = season_strip(html, rel)
     html = gept_dates(html, rel)
     html = eager_first_image(html)
@@ -2143,7 +2196,7 @@ def process_page(path, css_ver="", crit=""):
 LASTMOD_LEDGER = os.path.join(SITE, "data", "lastmod.json")
 _INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM_END), (SEO_START, SEO_END),
              (FOOT_START, FOOT_END), (PMETA_START, PMETA_END), (POP_START, POP_END), (NEXT_START, NEXT_END),
-             (BYL_START, BYL_END), (READNEXT_START, READNEXT_END),
+             (BYL_START, BYL_END), (READNEXT_START, READNEXT_END), (DOORS_START, DOORS_END),
              # the pack offer is a sales block repeated on ~100 pages: a price or button
              # change is not a change to the page (it stamped 95 URLs with one date on 09-25)
              ("<!-- AE:PACKOFFER -->", "<!-- /AE:PACKOFFER -->"),

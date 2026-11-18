@@ -373,6 +373,14 @@
     if(rn && typeof window.gtag === 'function'){
       window.gtag('event', 'next_read_tap', { page_path: location.pathname, target: rn.getAttribute('href') || '', position: 'first' });
     }
+    // the two doors under the first table (seo_build.doors): near -> /courses/, far -> the school's own
+    // material. The tap is also the answer to "do you live near Banqiao?", so the download card knows.
+    var dr = e.target.closest ? e.target.closest('a[data-door]') : null;
+    if(dr){
+      var nearDoor = dr.getAttribute('data-door') === 'near';
+      try{ localStorage.setItem('ae_near', nearDoor ? 'y' : 'n'); }catch(err){}
+      if(typeof window.gtag === 'function') window.gtag('event', nearDoor ? 'door_near_tap' : 'door_far_tap', { page_path: location.pathname, target: dr.getAttribute('href') || '' });
+    }
     // the closing box split by where the reader lives (tools/region_cta.py): which of its
     // other links was taken (its LINE button is a line_tap with cta_position region_local)
     var rg = e.target.closest ? e.target.closest('a[data-region-choice]') : null;
@@ -404,30 +412,10 @@
         cta_position: lb.closest('footer') ? 'footer' : lb.closest('.cta-box,.bg-blue') ? 'closing' : 'body' });
     }
     // 11-10 traffic review: the download is the page's best moment (alphabet worksheet: 52% of
-    // visitors download, 0 LINE taps; 4,795 downloads vs 307 LINE taps site-wide). After one of the
-    // site's OWN PDFs is downloaded (external official PDFs open a new tab — no card), one small card
-    // offers the next step: once per visit, closable (× or Esc), and only if this tab is still visible.
+    // visitors download, 0 LINE taps). After one of the site's OWN PDFs is downloaded, one small card
+    // offers the next step: once per visit, closable. The card itself is dlCard() below.
     var dl = e.target.closest ? e.target.closest('a[download],a[href^="/"][href$=".pdf"]') : null;
-    if(dl && !dlShown && !document.getElementById('dlNext')){
-      setTimeout(function(){
-        if(dlShown || document.hidden) return;
-        try{ if(sessionStorage.getItem('ae_dlnext') === '1') return; sessionStorage.setItem('ae_dlnext', '1'); }catch(err){}
-        dlShown = true;
-        var c = document.createElement('aside');
-        c.id = 'dlNext'; c.className = 'dl-next'; c.setAttribute('aria-label', '下載之後');
-        c.innerHTML = '<button type="button" class="dn-x" aria-label="關閉">×</button>'
-          + '<b>下載好了 ✓ 印出來之後呢？</b>'
-          + '<p>孩子寫完，想知道英文程度到哪裡了？住在板橋附近的話，可以預約美籍老師的免費程度評估。</p>'
-          + '<a class="btn dn-btn" href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">加 LINE 預約程度評估</a>';
-        document.body.appendChild(c);
-        void c.offsetWidth; c.classList.add('on');   // force a layout so the slide-in runs (no rAF: a hidden tab never fires it)
-        var close = function(){ c.classList.remove('on'); document.removeEventListener('keydown', esc); setTimeout(function(){ c.remove(); }, 300); };
-        var esc = function(ev){ if(ev.key === 'Escape') close(); };
-        c.querySelector('.dn-x').addEventListener('click', close);
-        document.addEventListener('keydown', esc);
-        if(typeof window.gtag === 'function') window.gtag('event', 'after_download_show', { page_path: location.pathname });
-      }, 1500);
-    }
+    if(dl) dlQueue();
     var a = e.target.closest ? e.target.closest('a[href*="lin.ee"],a[href*="line.me"]') : null;
     if(a){
       var href = a.getAttribute('href') || '', txt = (a.textContent || '').trim();
@@ -453,6 +441,78 @@
 
 
   var booted=false, dlShown=false;
+
+  /* ---------- after-download card: one question, two endings (2026-11-18) ----------
+     GA4, 28 days to 11-17: 2,925 people downloaded a file; the old card (only "book a level check if
+     you live near Banqiao") was shown to 782 and got 6 LINE taps, while 92% of visitors live too far to
+     come. Now it asks 「孩子住在板橋附近嗎？」: near -> the level check on LINE; far -> the school's own
+     paid material that matches this page. The answer is remembered (localStorage ae_near = y / n).
+     Events: after_download_show, dl_near_pick, dl_far_pick, dl_far_click (+ book_tap via data-book, and
+     line_tap with cta_position after_download). No prices in the card: the product pages own them. */
+  var DL_FAR = [
+    [/^\/gept/, '', '在家接著練：全民英檢完整模擬試題', '每個級別 9 份完整試卷，可以整份計時做完。網站上的線上練習一樣免費。', '看全民英檢模擬試題', '/gept/'],
+    [/^\/(ket|pet|fce|cambridge|starters|movers|flyers|yle)[-\/]/, '', '在家接著練：劍橋英檢完整模擬試題', '我們自己出的 54 份完整試卷，每一份都有題目卷、中文逐題解析和聽力音檔。線上單題練習一樣免費。', '看劍橋英檢模擬試題', '/cambridge-practice-exam-pack/'],
+    [/grammar|tenses|verbs|plural|punctuation|capitalization|junior-high|sentence/, 'grammar', '在家接著練：英文文法書', '埃森美語自己編的文法書，照學校課本整理：國小每年級一本，國中、高中每學期一本，每本附速查表和解答。每年級有一頁免費試讀。', '看文法書和免費試讀', '/english-grammar-books/']
+  ];
+  var DL_READERS = ['readers', '在家接著讀：Chris and Cora 分級讀本', '36 個發生在台灣的英文故事，用的都是學校會教的字，從一頁一句開始讀。第 1 級 3 本可以免費讀。', '免費讀第 1 級', '/chris-and-cora-readers/#read-book'];
+  function dlCard(){
+    var path = location.pathname;
+    // the four store pages are already the offer: no card there
+    if(dlShown || document.getElementById('dlNext') || /^\/(english-grammar-books|chris-and-cora-readers|cambridge-practice-exam-pack|gept|pack-[^/]*)\//.test(path)) return;
+    try{ if(sessionStorage.getItem('ae_dlnext') === '1') return; sessionStorage.setItem('ae_dlnext', '1'); sessionStorage.removeItem('ae_dlpend'); }catch(err){}
+    dlShown = true;
+    var far = DL_READERS, k;
+    for(k = 0; k < DL_FAR.length; k++){ if(DL_FAR[k][0].test(path)){ far = DL_FAR[k].slice(1); break; } }
+    var near = null; try{ near = localStorage.getItem('ae_near'); }catch(err){}
+    function ev(n, o){ if(typeof window.gtag === 'function'){ o = o || {}; o.page_path = path; window.gtag('event', n, o); } }
+    var c = document.createElement('aside');
+    c.id = 'dlNext'; c.className = 'dl-next'; c.setAttribute('aria-label', '下載之後');
+    var X = '<button type="button" class="dn-x" aria-label="關閉">×</button>';
+    function draw(st){
+      c.innerHTML = X + (st === 'y'
+        ? '<b>下載好了 ✓ 印出來之後呢？</b><p>孩子寫完，想知道英文程度到哪裡了？可以預約美籍老師的免費程度評估。</p>'
+          + '<a class="btn dn-btn" href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">加 LINE 預約程度評估</a>'
+          + '<button type="button" class="dn-sw" data-to="n">我不住板橋附近</button>'
+        : st === 'n'
+        ? '<b>' + far[1] + '</b><p>' + far[2] + '</p>'
+          + '<a class="btn dn-btn dn-buy" href="' + far[4] + '"' + (far[0] ? ' data-book="' + far[0] + '" data-book-item="after_download"' : '') + '>' + far[3] + '</a>'
+          + '<button type="button" class="dn-sw" data-to="y">我住板橋附近</button>'
+        : '<b>下載好了 ✓</b><p>孩子住在板橋附近嗎？</p>'
+          + '<div class="dn-two"><button type="button" class="btn dn-btn" data-to="y">住板橋附近</button><button type="button" class="btn dn-btn" data-to="n">不在附近</button></div>');
+    }
+    draw(near);
+    document.body.appendChild(c);
+    void c.offsetWidth; c.classList.add('on');   // force a layout so the slide-in runs (no rAF: a hidden tab never fires it)
+    var close = function(){ c.classList.remove('on'); document.removeEventListener('keydown', esc); setTimeout(function(){ c.remove(); }, 300); };
+    var esc = function(ev2){ if(ev2.key === 'Escape') close(); };
+    document.addEventListener('keydown', esc);
+    c.addEventListener('click', function(e2){
+      var t = e2.target.closest ? e2.target.closest('.dn-x,[data-to],.dn-buy') : null;
+      if(!t) return;
+      if(t.classList.contains('dn-x')) return close();
+      if(t.classList.contains('dn-buy')) return ev('dl_far_click', { product: far[0] || far[4] });
+      var to = t.getAttribute('data-to');
+      try{ localStorage.setItem('ae_near', to); }catch(err){}
+      ev(to === 'y' ? 'dl_near_pick' : 'dl_far_pick');
+      draw(to);
+      var f = c.querySelector('a.dn-btn'); if(f && f.focus) try{ f.focus({ preventScroll: true }); }catch(err){}
+    });
+    ev('after_download_show', { link_text: near === 'y' ? 'near' : near === 'n' ? 'far' : 'ask' });
+  }
+  // a download link was clicked: show the card in 1.5 s if this tab is still in view...
+  function dlQueue(){
+    if(dlShown) return;
+    try{ if(sessionStorage.getItem('ae_dlnext') === '1') return; sessionStorage.setItem('ae_dlpend', location.pathname); }catch(err){}
+    setTimeout(function(){ if(!document.hidden) dlCard(); }, 1500);
+  }
+  // ...and if the PDF took over the tab or opened a new one (most phones), show it when the reader comes back
+  function dlBack(){
+    var p = null; try{ p = sessionStorage.getItem('ae_dlpend'); }catch(err){}
+    if(p === location.pathname && !dlShown) setTimeout(function(){ if(!document.hidden) dlCard(); }, 700);
+  }
+  document.addEventListener('visibilitychange', function(){ if(!document.hidden) dlBack(); });
+  window.addEventListener('pageshow', dlBack);
+
   function init(){ if(booted) return; booted=true; injectChrome(); wire(); injectSEO(); }
   // The build bakes the header, the footer and all content into the HTML, so nothing here is
   // needed for the first paint. Everything below (menus, scroll effects, the LINE button) waits
