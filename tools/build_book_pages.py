@@ -540,7 +540,7 @@ def readers_page():
             ("#CE82FF", '<span class="pop">' + Z("3 歲", "age 3") + "</span>", Z("3 歲起親子共讀", "read together from age 3"),
              Z("研究發現 2、3 歲就開始陪讀，字彙進步最明顯。", "Research finds reading together from age 2–3 grows vocabulary the most."))]
     sc = "".join(f'<div class="bp-stat" style="--c:{c}"><span class="big">{big}</span><b>{t}</b><p>{p}</p></div>' for c, big, t, p in why4)
-    src = " · ".join(['<a href="https://eric.ed.gov/?id=ED169516" target="_blank" rel="noopener">Fry (1980)</a>',
+    src = " · ".join(['<a href="https://eric.ed.gov/?id=EJ236457" target="_blank" rel="noopener">Fry (1980)</a>',
                       '<a href="https://eric.ed.gov/?id=EJ757328" target="_blank" rel="noopener">Webb (2007)</a>',
                       '<a href="https://eric.ed.gov/?id=EJ787378" target="_blank" rel="noopener">Mol et al. (2008)</a>',
                       '<a href="https://www.naer.edu.tw/PageCourse/projectDetail/RP000000001141" target="_blank" rel="noopener">NAER</a>'])
@@ -563,7 +563,7 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
     # Said straight (Chris 11-16): the pictures are AI-drawn, the stories and format are written by a US-licensed
     # teacher (his answer when asked) on six published studies, and the full set carries a 12-month money-back promise.
     # Not "scientifically proven": the studies back the methods; nobody has run a trial on these books, and the page says so.
-    studies = [("Fry (1980)", "https://eric.ed.gov/?id=ED169516",
+    studies = [("Fry (1980)", "https://eric.ed.gov/?id=EJ236457",
                 Z("最常用的 300 個字，約占一般讀物的三分之二。", "The 300 most-used words make up about two-thirds of ordinary reading.")),
                ("Webb (2007)", "https://eric.ed.gov/?id=EJ757328",
                 Z("一個新字大約要遇到 10 次，才記得住。", "A new word takes about 10 encounters to stick.")),
