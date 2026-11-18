@@ -59,13 +59,17 @@
 "date": "2026-10-22",
 "hash": "d4b25bbb2b51c4736c3179d2ecb92bea"
 },
+"assets/downloads/ae-bilingual-subtitles-learn-english-a4.pdf": {
+"date": "2026-11-18",
+"hash": "54759eb838530ec6a6c8953230121880"
+},
 "assets/downloads/ae-body-parts-a4.pdf": {
 "date": "2026-10-13",
 "hash": "87bdb769d3f89fad1302d21951c3d3c0"
 },
 "assets/downloads/ae-breakfast-shop-english-menu-a4.pdf": {
 "date": "2026-11-18",
-"hash": "d361077cd0d3beceb57d3aced2d32c53"
+"hash": "a0fb47f293bd5b26e7c175dd07db7b1b"
 },
 "assets/downloads/ae-bubble-tea-english-a4.pdf": {
 "date": "2026-10-22",
@@ -73,11 +77,11 @@
 },
 "assets/downloads/ae-chatgpt-english-essay-correction-prompts-a4.pdf": {
 "date": "2026-11-18",
-"hash": "b98126398cdd8c91892fc3d419ba429a"
+"hash": "8c73cbee53a6c4a00c1b057d3d426f4f"
 },
 "assets/downloads/ae-chatgpt-english-speaking-prompts-a4.pdf": {
-"date": "2026-11-17",
-"hash": "1ffd6aa60ee1df3d93653ea8f260cba5"
+"date": "2026-11-18",
+"hash": "81f06cb1e2d79c53291425bb4fbe8b04"
 },
 "assets/downloads/ae-cheer-up-english-a4.pdf": {
 "date": "2026-10-13",
@@ -105,7 +109,7 @@
 },
 "assets/downloads/ae-convenience-store-english-a4.pdf": {
 "date": "2026-11-18",
-"hash": "eddf08be58bd2dbf7827eb0813f429d5"
+"hash": "46f916f1f688418e89c871fb8a4deb04"
 },
 "assets/downloads/ae-countries-english-a4.pdf": {
 "date": "2026-10-13",
@@ -167,6 +171,10 @@
 "date": "2026-10-16",
 "hash": "bf234ebce28a0c73e828db1bad8ccfa3"
 },
+"assets/downloads/ae-english-short-quotes-a4.pdf": {
+"date": "2026-11-18",
+"hash": "98026d72fbe4dbd69928df4b725827e3"
+},
 "assets/downloads/ae-english-tenses-chart-a4.pdf": {
 "date": "2026-10-02",
 "hash": "9bf6399d505f48b7be3cd1ad4618f930"
@@ -200,8 +208,8 @@
 "hash": "cf6dc9c0c4842eb955b3eda928ccf3e9"
 },
 "assets/downloads/ae-gemini-learn-english-prompts-a4.pdf": {
-"date": "2026-11-17",
-"hash": "3deebf661447589429ad7921b7b5535e"
+"date": "2026-11-18",
+"hash": "4b2a8381f1528207b521ecc2c0a9b60e"
 },
 "assets/downloads/ae-good-morning-english-a4.pdf": {
 "date": "2026-10-22",
@@ -324,8 +332,8 @@
 "hash": "47c584b749fa95ed9a9c1a907f9a5d46"
 },
 "assets/downloads/ae-hot-pot-english-a4.pdf": {
-"date": "2026-11-17",
-"hash": "316096dbba2a20441ca5e494293b18f3"
+"date": "2026-11-18",
+"hash": "3822e6a96c5382e7ed55f5c3f9b10360"
 },
 "assets/downloads/ae-how-to-learn-english-a4.pdf": {
 "date": "2026-10-22",
@@ -348,8 +356,8 @@
 "hash": "20d6d586ef50712442bc724307120694"
 },
 "assets/downloads/ae-kids-english-youtube-channels-a4.pdf": {
-"date": "2026-11-17",
-"hash": "61dfcfed2d237bdcb25b4e57d70ee61e"
+"date": "2026-11-18",
+"hash": "9df14b1f7522a0360ca1c9b209acc7b0"
 },
 "assets/downloads/ae-kk-phonetic-chart-a4.pdf": {
 "date": "2026-10-02",
@@ -405,7 +413,7 @@
 },
 "assets/downloads/ae-night-market-english-a4.pdf": {
 "date": "2026-11-18",
-"hash": "80f9d447b5c0f841b78f38c30c15f4b4"
+"hash": "a9df0d43ee0136e559fecb127d929967"
 },
 "assets/downloads/ae-numbers-1-100-a4.pdf": {
 "date": "2026-10-13",
@@ -775,6 +783,10 @@
 "date": "2026-08-07",
 "hash": "6d453b9056fd5f5018a9c4a67b1191f8"
 },
+"bilingual-subtitles-learn-english": {
+"date": "2026-11-18",
+"hash": "c763a0ad8a2bd94d1987246ffe0dd60b"
+},
 "blog": {
 "date": "2026-11-10",
 "hash": "b224cc7af2df4dce01097853923aba39"
@@ -849,7 +861,7 @@
 },
 "chart-license": {
 "date": "2026-11-18",
-"hash": "31c62901ae0bde01d43be8c29d8d5d0f"
+"hash": "325a3de776d6308233fc02959880976f"
 },
 "chatgpt-english-essay-correction": {
 "date": "2026-11-18",
@@ -1086,6 +1098,10 @@
 "english-self-introduction-students": {
 "date": "2026-10-19",
 "hash": "bae15f1140286013952effb2992d0a95"
+},
+"english-short-quotes": {
+"date": "2026-11-18",
+"hash": "ac602c8cf5434fcef9a26ff34b21e0fc"
 },
 "english-speaking-practice": {
 "date": "2026-09-15",

@@ -961,5 +961,23 @@
   "alt": "便利商店英文對照表：要加熱嗎、需要袋子嗎、有載具嗎等店員會說的話，以及客人加熱、加值、取貨的英文與中文",
   "title": "便利商店英文對照表",
   "page": "convenience-store-english"
+ },
+ "english-short-quotes-chart": {
+  "slug": "english-short-quotes-chart",
+  "png": "/assets/img/charts/english-short-quotes-chart.webp",
+  "w": 2200,
+  "h": 1484,
+  "alt": "英文短句對照表：One step at a time.、Small steps still count.、Slow morning.、Rainy day, cozy mood. 等勵志與生活短句的英文與中文",
+  "title": "英文短句對照表",
+  "page": "english-short-quotes"
+ },
+ "bilingual-subtitles-learn-english-chart": {
+  "slug": "bilingual-subtitles-learn-english-chart",
+  "png": "/assets/img/charts/bilingual-subtitles-learn-english-chart.webp",
+  "w": 1500,
+  "h": 1372,
+  "alt": "雙語字幕對照表：Netflix、YouTube、Disney+ 本身的字幕功能，Language Reactor、Trancy、沉浸式翻譯三個工具支援的平台，以及電腦、手機、平板、電視能不能開雙語字幕",
+  "title": "雙語字幕怎麼開",
+  "page": "bilingual-subtitles-learn-english"
  }
 }

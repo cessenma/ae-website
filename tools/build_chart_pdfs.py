@@ -65,6 +65,8 @@ PDFS = {
  "breakfast-shop-english":           ("breakfast-shop-english-all", "ae-breakfast-shop-english-menu-a4.pdf", "早餐店英文菜單 64 個說法・蛋餅、吐司、漢堡、中式早餐、飲料與點餐句"),
  "night-market-english":             ("night-market-english-all", "ae-night-market-english-a4.pdf", "夜市英文 50 個說法・小吃、甜點、飲料、遊戲與逛夜市會說的話"),
  "convenience-store-english":        ("convenience-store-english-all", "ae-convenience-store-english-a4.pdf", "便利商店英文 58 句・店員、客人、店裡的東西、服務、結帳與發票"),
+ "english-short-quotes":             ("english-short-quotes-all", "ae-english-short-quotes-a4.pdf", "英文短句 120 句・勵志、生活、唯美、愛情、友情、旅行、美食、諺語"),
+ "bilingual-subtitles-learn-english": ("bilingual-subtitles-learn-english-all", "ae-bilingual-subtitles-learn-english-a4.pdf", "雙語字幕學英文・工具對照、設定 5 步驟、同一集看四遍、字幕的英文說法"),
  "chatgpt-english-speaking-practice": ("chatgpt-english-speaking-practice-all", "ae-chatgpt-english-speaking-prompts-a4.pdf", "ChatGPT 練英文口說指令 30 句・設定、對話、角色扮演、遊戲、總結"),
  "gemini-learn-english":          ("gemini-learn-english-all", "ae-gemini-learn-english-prompts-a4.pdf", "Gemini 學英文指令 24 句・Live 口說、拍課本、單字、引導式學習"),
  "winter-solstice-english":   ("winter-solstice-english-all", "ae-winter-solstice-english-a4.pdf", "冬至英文 60 句・祝福語、湯圓、白天最短與補冬"),
@@ -110,7 +112,11 @@ PDFS = {
 }
 
 CSS = """
-@page{size:A4 portrait;margin:11mm 10mm 13mm}
+@page{size:A4 portrait;margin:11mm 10mm 13mm;
+  /* the footer lives in the page's bottom margin (2026-11-18): as a position:fixed box at bottom:0 it sat
+     inside the content area, and the last table row of every full page printed over it */
+  @bottom-left{content:"埃森美語 American English・板橋";font-family:'DM Sans','PingFang TC',sans-serif;font-size:7pt;color:#94a3b8;vertical-align:top;padding-top:4px}
+  @bottom-right{content:"歡迎影印給學生使用，請保留此頁出處 americanenglish.com.tw/chart-license/";font-family:'DM Sans','PingFang TC',sans-serif;font-size:7pt;color:#94a3b8;vertical-align:top;padding-top:4px}}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'DM Sans','PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif;color:#26324d}
 .head{border-bottom:3px solid #1CB0F6;padding-bottom:7px;margin-bottom:11px;
@@ -130,8 +136,7 @@ td{padding:3.4px 6px;border-bottom:.6px solid #e8eef7;vertical-align:middle}
 td:first-child{font-weight:700;color:#1A2752}
 tr:nth-child(even) td{background:#fafcff}
 tr{break-inside:avoid}
-.foot{position:fixed;bottom:0;left:0;right:0;font-size:7pt;color:#94a3b8;
-  border-top:.6px solid #e8eef7;padding-top:3px;display:flex;justify-content:space-between}
+.foot{display:none}   /* kept in the HTML for anything that reads it; the printed footer is the @page margin boxes above */
 """
 
 def stamp_meta(path, title, sub):

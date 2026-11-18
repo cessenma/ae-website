@@ -1,0 +1,363 @@
+{
+ "slug": "bilingual-subtitles-learn-english",
+ "published": "2026-11-18",
+ "target": "雙語字幕",
+ "index": 0.5,
+ "h1": "雙語字幕怎麼開？<br>Netflix、YouTube 設定＋用字幕學英文",
+ "title": "雙語字幕怎麼開？Netflix、YouTube 設定＋用字幕學英文 4 步驟｜埃森美語",
+ "desc": "雙語字幕怎麼開？Netflix、YouTube、Disney+ 一次只能選一種字幕，電腦加裝工具才有中英兩行。選平台和裝置看做法，附 3 個工具對照、同一集看四遍的方法和 4 份研究。",
+ "hero": "Netflix、YouTube 和 Disney+ 本身一次只能選一種字幕。要同時看到英文和中文，得在電腦的瀏覽器加裝工具。這一頁告訴你哪個平台、哪種裝置開得了，還有開了之後怎麼看，孩子才學得到英文。資料查閱日：2026-11-18。",
+ "hero_chips": [
+  "選平台看做法",
+  "3 個工具對照",
+  "同一集看四遍",
+  "4 份研究"
+ ],
+ "hero_art": "<svg viewBox=\"0 0 470 400\" role=\"img\" aria-label=\"筆電播放影片的示意圖：畫面下方有兩行字幕，上面是英文 I can't believe we made it!，下面是中文「真不敢相信我們做到了！」，旁邊有中文字幕的開關\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;display:block\">\n<style>.bs-e{font:800 17px 'Baloo 2',sans-serif;fill:#fff}.bs-z{font:600 13.5px 'DM Sans',sans-serif;fill:#FFE9B8}.bs-l{font:800 13px 'Baloo 2',sans-serif;fill:#1A2752}.bs-zh{animation:bsz 6s ease-in-out infinite}.bs-knob{animation:bsk 6s ease-in-out infinite}.bs-trk{animation:bst 6s ease-in-out infinite}@keyframes bsz{0%,45%{opacity:1}55%,90%{opacity:.12}100%{opacity:1}}@keyframes bsk{0%,45%{transform:translateX(0)}55%,90%{transform:translateX(-22px)}100%{transform:translateX(0)}}@keyframes bst{0%,45%{fill:#06C755}55%,90%{fill:#9AA7C2}100%{fill:#06C755}}@media(prefers-reduced-motion:reduce){.bs-zh,.bs-knob,.bs-trk{animation:none}}</style>\n<rect width=\"470\" height=\"400\" rx=\"28\" fill=\"#EAF6FF\"/>\n<circle cx=\"420\" cy=\"330\" r=\"50\" fill=\"#FFC828\" opacity=\".3\"/><circle cx=\"50\" cy=\"60\" r=\"30\" fill=\"#1CB0F6\" opacity=\".16\"/>\n<rect x=\"46\" y=\"52\" width=\"378\" height=\"246\" rx=\"18\" fill=\"#1A2752\"/>\n<rect x=\"58\" y=\"64\" width=\"354\" height=\"208\" rx=\"8\" fill=\"#22336B\"/>\n<path d=\"M58 222l70-62 54 44 66-74 72 60 92-52v74H58z\" fill=\"#2E4488\"/>\n<circle cx=\"338\" cy=\"104\" r=\"20\" fill=\"#FFC828\"/>\n<circle cx=\"235\" cy=\"140\" r=\"26\" fill=\"#fff\" opacity=\".16\"/><path d=\"M227 127v26l22-13z\" fill=\"#fff\" opacity=\".9\"/>\n<rect x=\"100\" y=\"196\" width=\"270\" height=\"30\" rx=\"8\" fill=\"#0D1530\" opacity=\".82\"/><text x=\"235\" y=\"217\" text-anchor=\"middle\" class=\"bs-e\">I can't believe we made it!</text>\n<g class=\"bs-zh\"><rect x=\"130\" y=\"230\" width=\"210\" height=\"26\" rx=\"8\" fill=\"#0D1530\" opacity=\".82\"/><text x=\"235\" y=\"248\" text-anchor=\"middle\" class=\"bs-z\">真不敢相信我們做到了！</text></g>\n<rect x=\"70\" y=\"262\" width=\"330\" height=\"4\" rx=\"2\" fill=\"#fff\" opacity=\".25\"/><rect x=\"70\" y=\"262\" width=\"128\" height=\"4\" rx=\"2\" fill=\"#1CB0F6\"/>\n<path d=\"M20 298h430l-22 30H42z\" fill=\"#C9D6EE\"/><rect x=\"190\" y=\"304\" width=\"90\" height=\"8\" rx=\"4\" fill=\"#9AA7C2\"/>\n<g transform=\"rotate(-4 108 356)\"><rect x=\"34\" y=\"338\" width=\"150\" height=\"40\" rx=\"20\" fill=\"#fff\"/><text x=\"52\" y=\"363\" class=\"bs-l\">英文字幕</text><rect x=\"126\" y=\"348\" width=\"44\" height=\"22\" rx=\"11\" fill=\"#06C755\"/><circle cx=\"159\" cy=\"359\" r=\"8\" fill=\"#fff\"/></g>\n<g transform=\"rotate(3 350 356)\"><rect x=\"276\" y=\"338\" width=\"150\" height=\"40\" rx=\"20\" fill=\"#fff\"/><text x=\"294\" y=\"363\" class=\"bs-l\">中文字幕</text><rect class=\"bs-trk\" x=\"368\" y=\"348\" width=\"44\" height=\"22\" rx=\"11\" fill=\"#06C755\"/><circle class=\"bs-knob\" cx=\"401\" cy=\"359\" r=\"8\" fill=\"#fff\"/></g>\n</svg>",
+ "css": ".tk-hero{text-align:left}.tk-hero .tk-hero-grid{max-width:1140px;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:52px;align-items:center}.tk-hero h1{font-size:clamp(32px,3.6vw,50px);margin:14px 0 16px}.tk-hero .divider{margin:0 0 20px}.tk-hero .body{max-width:52ch;margin:0}.tk-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.tk-art{justify-self:center;width:100%;max-width:470px}.tk-cap{margin:12px 0 0;text-align:center;font-size:13px;color:var(--muted)}@media(max-width:880px){.tk-hero{text-align:center}.tk-hero .tk-hero-grid{grid-template-columns:1fr;gap:30px}.tk-hero .divider{margin:0 auto 20px}.tk-hero .body{margin:0 auto}.tk-chips{justify-content:center}.tk-art{max-width:380px}}.tk-s1 h3{max-width:860px;margin:36px auto 12px;display:flex;align-items:center;gap:11px;font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:800;color:var(--navy);letter-spacing:.2px}.tk-s1 .compare{display:flex;flex-direction:column}.tk-s1 .compare>table{order:-1}.tk-s1 .compare>.magnet-box{margin-top:22px}.tk-s1 h3::before{content:'';flex:0 0 auto;width:13px;height:13px;border-radius:4px;background:var(--yellow);box-shadow:3px 3px 0 var(--navy)}.tk-note{max-width:760px;margin:24px auto 26px;background:var(--navy);border-radius:26px;padding:24px 26px 22px;display:grid;grid-template-columns:auto 1fr;column-gap:16px;row-gap:6px;box-shadow:0 16px 36px rgba(26,39,82,.22)}.tk-note img{grid-row:1 / span 3;width:54px;height:54px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px var(--yellow)}.tk-note .tk-tag{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:13px;letter-spacing:1.5px;color:var(--yellow)}.tk-note blockquote{margin:0;font-size:16.5px;line-height:1.9;color:#F2F6FF}.tk-note blockquote b{color:#fff;box-shadow:inset 0 -8px 0 rgba(255,200,40,.32)}.tk-note figcaption{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14.5px;color:#BFD6FF}@media(max-width:560px){.tk-note{grid-template-columns:1fr;padding:20px 18px}.tk-note img{grid-row:auto}}.sp{max-width:1040px;margin:22px auto 26px;background:#fff;border-radius:20px;box-shadow:var(--card-shadow);overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.sp-form{padding:20px 22px 12px}.sp fieldset{border:0;margin:0 0 14px;padding:0;min-width:0}.sp legend{display:block;font-weight:800;color:var(--navy);font-size:15.5px;margin:4px 0 8px;padding:0}.sp-seg{display:flex;flex-wrap:wrap;gap:8px}.sp-seg label{position:relative;display:inline-flex;align-items:center;background:#F4FAFF;border:1.5px solid rgba(26,39,82,.16);border-radius:999px;padding:8px 14px;cursor:pointer;font-size:15px;min-height:44px;box-sizing:border-box;color:var(--navy);font-weight:600}.sp-seg input{position:absolute;opacity:0;width:1px;height:1px}.sp-seg label:has(input:checked){background:#1A2752;color:#fff;border-color:#1A2752}.sp-seg label:has(input:focus-visible){outline:3px solid var(--blue);outline-offset:2px}.sp-date{margin:6px 0 0;font-size:13px;color:var(--muted)}.sp-out{background:var(--navy);padding:22px 24px 24px;color:#F2F6FF;display:flex;flex-direction:column;gap:10px;min-height:260px}.sp-badge{align-self:flex-start;font:800 14px 'Baloo 2',sans-serif;border-radius:999px;padding:5px 14px;color:var(--navy);background:var(--yellow)}.sp-badge[data-s=ok]{background:#8EF0B4}.sp-badge[data-s=no]{background:#F7B7A0}.sp-out .sp-t{margin:0;font:400 24px/1.3 'DM Serif Display',serif;color:#fff}.sp-out .sp-b{margin:0;font-size:15.5px;line-height:1.85}.sp-out .sp-k{margin:auto 0 0;padding-top:10px;border-top:1px solid rgba(255,255,255,.2);font:700 14.5px/1.6 'DM Sans',sans-serif;color:var(--yellow)}@media(max-width:860px){.sp{grid-template-columns:1fr}.sp-out{min-height:0}}main h2{text-wrap:balance}",
+ "sections": [
+  {
+   "title": "雙語字幕怎麼開：選平台和裝置，看 3 個工具對照表",
+   "html_top": "<div class=\"sp\" id=\"sp\"><form class=\"sp-form\" novalidate><fieldset><legend>1. 在哪個平台看</legend><div class=\"sp-seg\"><label><input type=\"radio\" name=\"sp-p\" value=\"netflix\" checked>Netflix</label><label><input type=\"radio\" name=\"sp-p\" value=\"youtube\">YouTube</label><label><input type=\"radio\" name=\"sp-p\" value=\"disney\">Disney+</label></div></fieldset><fieldset><legend>2. 用什麼裝置看</legend><div class=\"sp-seg\"><label><input type=\"radio\" name=\"sp-d\" value=\"pc\" checked>電腦</label><label><input type=\"radio\" name=\"sp-d\" value=\"ios\">iPhone、iPad</label><label><input type=\"radio\" name=\"sp-d\" value=\"and\">Android 手機、平板</label><label><input type=\"radio\" name=\"sp-d\" value=\"tv\">電視</label></div></fieldset><p class=\"sp-date\">各平台和工具的功能會更新，這裡是 2026-11-18 查閱官方頁面的結果。</p></form><div class=\"sp-out\" id=\"sp-out\" aria-live=\"polite\"><span class=\"sp-badge\" id=\"sp-badge\" data-s=\"ok\">可以</span><p class=\"sp-t\" id=\"sp-t\">Netflix × 電腦：可以</p><p class=\"sp-b\" id=\"sp-b\">用 Chrome 等電腦瀏覽器開 netflix.com，加裝雙語字幕工具，播放時就會同時出現英文和中文。Netflix 自己的字幕選單一次只能選一種語言。</p><p class=\"sp-k\" id=\"sp-k\">工具：Language Reactor、Trancy、沉浸式翻譯</p></div></div>",
+   "prose": [
+    "先在上面選平台和裝置，右邊會告訴你開不開得了、要怎麼做。簡單說：<strong>電腦可以，手機和平板只有 YouTube 有辦法，電視不行</strong>。原因是 Netflix、YouTube、Disney+ 的官方說明都只有「選一種字幕語言」的做法，沒有同時顯示兩種語言的設定；兩行字幕是瀏覽器的擴充功能加上去的，而 App 和電視不能裝擴充功能。",
+    "下面三張表是整理好的結果：平台本身能做什麼、3 個常見工具各支援什麼、每種裝置開不開得了。工具會改版，安裝前請再看一次它在商店頁的說明。孩子要看什麼片，見<a href=\"/learn-english-cartoons/\">英文卡通推薦</a>和<a href=\"/kids-english-youtube-channels/\">兒童英文 YouTube 頻道</a>。"
+   ],
+   "html": "<script>(function(){var R={\"netflix\":{\"pc\":[\"ok\",\"Netflix × 電腦：可以\",\"用 Chrome 等電腦瀏覽器開 netflix.com，加裝雙語字幕工具，播放時就會同時出現英文和中文。Netflix 自己的字幕選單一次只能選一種語言。\",\"工具：Language Reactor、Trancy、沉浸式翻譯\"],\"ios\":[\"no\",\"Netflix × iPhone、iPad：開不了\",\"Netflix App 一次只能選一種字幕，App 也不能加裝工具。要看雙語字幕，請改用電腦。\",\"替代做法：同一集看兩遍，各開一種字幕\"],\"and\":[\"no\",\"Netflix × Android：開不了\",\"Netflix App 一次只能選一種字幕，App 也不能加裝工具。要看雙語字幕，請改用電腦。\",\"替代做法：同一集看兩遍，各開一種字幕\"],\"tv\":[\"no\",\"Netflix × 電視：開不了\",\"電視上的 Netflix 只能選一種字幕，電視也不能加裝工具。想在大螢幕看雙語字幕：先在電腦上開好，再用 HDMI 線把電腦接到電視，把電視當成電腦的螢幕。\",\"需要：一台電腦、一條 HDMI 線\"]},\"youtube\":{\"pc\":[\"ok\",\"YouTube × 電腦：可以\",\"用電腦瀏覽器開 youtube.com，加裝工具後會同時出現兩行字幕。影片本身要有字幕；沒有字幕的影片，工具得靠付費的 AI 字幕功能。\",\"工具：Language Reactor、Trancy、沉浸式翻譯\"],\"ios\":[\"lim\",\"YouTube × iPhone、iPad：App 不行，Safari 可以\",\"YouTube App 一次只顯示一種字幕，可以在字幕設定用「自動翻譯」換成中文。要兩行一起看，得用 Safari 開 youtube.com，並從 App Store 安裝 Safari 擴充功能。\",\"工具：Trancy、沉浸式翻譯（都有 Safari 擴充功能）\"],\"and\":[\"lim\",\"YouTube × Android：App 不行，瀏覽器可以\",\"YouTube App 一次只顯示一種字幕，可以在字幕設定用「自動翻譯」換成中文。要兩行一起看，得用可以裝擴充功能的瀏覽器（Firefox 或 Edge）開 youtube.com，再加裝工具。\",\"工具：Trancy、沉浸式翻譯\"],\"tv\":[\"no\",\"YouTube × 電視：開不了\",\"電視上的 YouTube 只能選一種字幕語言。想在大螢幕看雙語字幕：先在電腦上開好，再用 HDMI 線把電腦接到電視，把電視當成電腦的螢幕。\",\"需要：一台電腦、一條 HDMI 線\"]},\"disney\":{\"pc\":[\"ok\",\"Disney+ × 電腦：可以\",\"用電腦瀏覽器開 disneyplus.com，加裝工具。Trancy 的免費方案和沉浸式翻譯的官網都列有 Disney+；Language Reactor 的官方說明只列 Netflix 和 YouTube。\",\"工具：Trancy、沉浸式翻譯\"],\"ios\":[\"no\",\"Disney+ × iPhone、iPad：開不了\",\"Disney+ App 每個個人檔案只能選一種字幕語言，App 也不能加裝工具。沉浸式翻譯的官網也寫電腦瀏覽器的體驗最完整。請改用電腦。\",\"替代做法：同一集看兩遍，各開一種字幕\"],\"and\":[\"no\",\"Disney+ × Android：開不了\",\"Disney+ App 每個個人檔案只能選一種字幕語言，App 也不能加裝工具。沉浸式翻譯的官網也寫電腦瀏覽器的體驗最完整。請改用電腦。\",\"替代做法：同一集看兩遍，各開一種字幕\"],\"tv\":[\"no\",\"Disney+ × 電視：開不了\",\"電視上的 Disney+ 只能選一種字幕語言。想在大螢幕看雙語字幕：先在電腦上開好，再用 HDMI 線把電腦接到電視，把電視當成電腦的螢幕。\",\"需要：一台電腦、一條 HDMI 線\"]}},B={\"ok\":\"可以\",\"lim\":\"有條件\",\"no\":\"這裡開不了\"};function v(n){var e=document.querySelector('input[name=\"sp-'+n+'\"]:checked');return e?e.value:\"\"}function go(){var box=document.getElementById(\"sp\");if(!box)return;var first=1;function upd(){var p=v(\"p\"),d=v(\"d\"),r=R[p]&&R[p][d];if(!r)return;var b=document.getElementById(\"sp-badge\");b.textContent=B[r[0]];b.setAttribute(\"data-s\",r[0]);document.getElementById(\"sp-t\").textContent=r[1];document.getElementById(\"sp-b\").textContent=r[2];document.getElementById(\"sp-k\").textContent=r[3];if(!first&&window.gtag)gtag(\"event\",\"sub_pick\",{tool:\"subtitles\",topic:p,level:d});first=0}box.addEventListener(\"change\",upd);upd()}if(document.readyState===\"loading\")document.addEventListener(\"DOMContentLoaded\",go);else go();})();</script>",
+   "heads": [
+    "項目",
+    "可以做到的事",
+    "注意"
+   ],
+   "groups": [
+    {
+     "name": "平台本身的字幕功能（3 個）",
+     "rows": [
+      [
+       "Netflix",
+       "一次選一種字幕語言",
+       "官方說明沒有同時顯示兩種語言的設定；可選的語言和所在地區、個人檔案語言有關"
+      ],
+      [
+       "YouTube",
+       "一次一種字幕；可用「自動翻譯」換成別的語言",
+       "手機 App 的字幕設定裡有自動翻譯；翻譯是機器翻的"
+      ],
+      [
+       "Disney+",
+       "每個個人檔案選一種字幕語言",
+       "可選的語言依地區和影片不同"
+      ]
+     ]
+    },
+    {
+     "name": "雙語字幕工具（3 個）",
+     "rows": [
+      [
+       "Language Reactor",
+       "Netflix、YouTube；電腦版 Chrome 擴充功能",
+       "雙語字幕是免費功能，Pro 版另外收費；官網註明只支援電腦"
+      ],
+      [
+       "Trancy",
+       "YouTube、Netflix、Disney+ 等；Chrome、Edge、Firefox、Safari，iPhone 和 iPad 有 Safari 擴充功能",
+       "雙語字幕在免費方案內；AI 字幕等進階功能要付費"
+      ],
+      [
+       "沉浸式翻譯 Immersive Translate",
+       "YouTube、Netflix、Disney+ 等；電腦各瀏覽器、iPhone 和 iPad 的 Safari、Android 的 Edge 與 Firefox",
+       "免費版寫明 YouTube 雙語字幕不限次數；官網說電腦瀏覽器的體驗最完整"
+      ]
+     ]
+    },
+    {
+     "name": "各種裝置開不開得了（4 種）",
+     "rows": [
+      [
+       "電腦",
+       "可以：三個平台都行",
+       "在瀏覽器加裝工具，用網站看，不是用 App"
+      ],
+      [
+       "iPhone、iPad",
+       "只有 YouTube：用 Safari 加擴充功能",
+       "Netflix、Disney+ 的 App 一次只能一種字幕"
+      ],
+      [
+       "Android 手機、平板",
+       "只有 YouTube：用 Firefox 或 Edge 加擴充功能",
+       "Netflix、Disney+ 的 App 一次只能一種字幕"
+      ],
+      [
+       "電視",
+       "不行",
+       "把電腦用 HDMI 線接到電視，電視當螢幕"
+      ]
+     ]
+    }
+   ],
+   "cls": "tk-s1"
+  },
+  {
+   "title": "電腦開雙語字幕 5 步驟：Netflix、YouTube、Disney+ 都適用",
+   "prose": [
+    "三個工具的畫面不一樣，但步驟相同。下面是共通的做法，大約 5 分鐘可以設定好。"
+   ],
+   "heads": [
+    "步驟",
+    "做法",
+    "注意"
+   ],
+   "rows": [
+    [
+     "1. 安裝工具",
+     "從上表選一個，到瀏覽器的擴充功能商店安裝",
+     "只從官方商店安裝；先看更新日期和評價"
+    ],
+    [
+     "2. 用瀏覽器開網站",
+     "開 netflix.com、youtube.com 或 disneyplus.com，登入自己的帳號",
+     "要用瀏覽器看，不是開 App"
+    ],
+    [
+     "3. 先開英文字幕",
+     "播一部影片，在平台的字幕選單選 English",
+     "影片沒有英文字幕時，工具得靠付費的 AI 字幕"
+    ],
+    [
+     "4. 加上中文",
+     "在工具的設定裡，把翻譯語言選成繁體中文",
+     "中文有的是平台提供的字幕，有的是機器翻譯"
+    ],
+    [
+     "5. 調整兩行字",
+     "工具可以調整的話，英文放大一點、中文縮小一點",
+     "眼睛容易停在中文上，原因見下面的研究"
+    ]
+   ]
+  },
+  {
+   "title": "手機、平板、電視可以開雙語字幕嗎？",
+   "prose": [
+    "<strong>手機和平板</strong>：Netflix 和 Disney+ 通常是用 App 看，App 一次只能選一種字幕，也不能加裝工具，所以開不了雙語字幕。YouTube 多一條路：不用 App，改用瀏覽器開 youtube.com。iPhone 和 iPad 用 Safari，從 App Store 安裝 Trancy 或沉浸式翻譯的 Safari 擴充功能；Android 用 Firefox 或 Edge 加裝同樣的工具。螢幕小，兩行字會擋住不少畫面。",
+    "<strong>YouTube App 的「自動翻譯」</strong>：在字幕設定裡可以把字幕換成中文，但還是一次一行，而且是機器翻譯。它適合用來「先看懂」，不是雙語字幕。",
+    "<strong>電視</strong>：電視上的 App 只能選一種字幕，電視也不能裝擴充功能。全家想在大螢幕一起看雙語字幕，做法是先在電腦的瀏覽器開好，再用 HDMI 線把電腦接到電視，這時候電視只是電腦的螢幕。"
+   ]
+  },
+  {
+   "title": "雙語字幕能學英文嗎？4 份研究怎麼說",
+   "html_top": "<figure class=\"tk-note reveal\"><img src=\"/assets/img/american-english-banqiao-logo-96.webp\" alt=\"埃森美語\" width=\"54\" height=\"54\" loading=\"lazy\"><span class=\"tk-tag\">老師的話</span><blockquote>雙語字幕最大的好處是看得懂，孩子願意一直看下去。陷阱也在這裡：<b>有中文可以看，英文那一行就容易變成背景</b>。有研究用眼動儀量過：看雙語字幕的人，看中文翻譯的時間比看英文生字的時間久。所以雙語字幕適合當第一遍，用來弄懂劇情；真正的英文練習在後面幾遍，要把中文關掉。</blockquote><figcaption>— Mr. Chris，埃森美語創辦人</figcaption></figure>",
+   "prose": [
+    "有幫助，但幫的是「看懂」和「記住字義」；要記住英文字本身，還是得看英文那一行。下面 4 份都是發表在學術期刊的研究。前兩份的對象是成人，而且四份都只看一次影片，所以只能當參考，不能直接套在每個孩子身上。",
+    "四份放在一起看：有字幕比沒有字幕好；雙語字幕幫助理解，沒有增加負擔；但看雙語字幕時，看中文翻譯的時間比看英文生字多，而學到多少英文，只和看英文字的時間有關。"
+   ],
+   "heads": [
+    "研究",
+    "對象與做法",
+    "發現"
+   ],
+   "rows": [
+    [
+     "Wang 與 Pellicer-Sánchez（2022），Language Learning 期刊",
+     "112 位中文母語的成人英語學習者，看一部紀錄片；分成雙語字幕、英文字幕、中文字幕、無字幕四組",
+     "雙語字幕組記字義的成績比英文字幕組好，認字形則不如英文字幕組。他們看中文翻譯的時間比看英文生字久；只有看英文字的時間和學到多少有關"
+    ],
+    [
+     "Liao、Kruger 與 Doherty（2020），The Journal of Specialised Translation",
+     "20 位中文母語的成人，各看約 5 分鐘的英文影片，比較中文、英文、雙語、無字幕",
+     "雙語字幕沒有比單一語言的字幕增加負擔；和沒有字幕相比，內容比較容易看懂"
+    ],
+    [
+     "Lwo 與 Lin（2012），ReCALL 期刊",
+     "32 位台灣國二學生，看有英文旁白的動畫；比較無字幕、中文、英文、中英字幕",
+     "字幕的效果因英文程度而不同；程度較低的學生，有英文字幕或中英字幕時，表現比沒有字幕好"
+    ],
+    [
+     "Koolstra 與 Beentjes（1999），Educational Technology Research and Development",
+     "246 位荷蘭小學四年級和六年級學生，看 15 分鐘的英文紀錄片；分成有荷蘭文字幕、沒有字幕和對照組",
+     "有荷蘭文字幕的一組，學到的英文單字最多"
+    ]
+   ]
+  },
+  {
+   "title": "用字幕學英文 4 步驟：同一集看四遍",
+   "prose": [
+    "字幕是工具，學不學得到看怎麼用。最簡單的做法是<strong>同一集看四遍，每一遍換一種字幕</strong>。選一集 10 到 20 分鐘、孩子本來就喜歡的影片；四遍不用同一天看完，分四天也可以。",
+    "還不太會讀英文的孩子，字幕幫不上忙，重點放在聽和看畫面就好。第二張表是依孩子的閱讀程度選字幕的建議。"
+   ],
+   "heads": [
+    "階段",
+    "字幕怎麼開",
+    "孩子做什麼"
+   ],
+   "groups": [
+    {
+     "name": "同一集看四遍（4 步驟）",
+     "rows": [
+      [
+       "第 1 遍：看懂",
+       "雙語字幕，或只開中文",
+       "從頭看到尾，不用停，弄懂劇情"
+      ],
+      [
+       "第 2 遍：對字",
+       "只開英文字幕",
+       "聽到不懂的字先猜；看完再查 3 到 5 個"
+      ],
+      [
+       "第 3 遍：跟著唸",
+       "英文字幕，只選 2 到 3 分鐘",
+       "一句一句暫停，照著唸出來（跟讀）"
+      ],
+      [
+       "第 4 遍：只用聽",
+       "關掉全部字幕",
+       "聽懂多少算多少；和第 1 遍比，會發現聽得懂的變多了"
+      ]
+     ]
+    },
+    {
+     "name": "依孩子的程度選字幕（3 種）",
+     "rows": [
+      [
+       "還不太會讀英文",
+       "不開字幕，或開中文、由大人陪看",
+       "字幕讀不了，重點是聽聲音、看畫面"
+      ],
+      [
+       "讀得懂簡單的英文句子",
+       "第 1 遍雙語，之後換成英文",
+       "照上面的四遍看"
+      ],
+      [
+       "國中以上",
+       "以英文字幕為主",
+       "只在卡住的那一句開中文，看懂就關掉"
+      ]
+     ]
+    }
+   ],
+   "after": [
+    "聽力和口說的其他練法，見<a href=\"/english-listening-practice/\">英文聽力怎麼練</a>和<a href=\"/english-speaking-practice/\">英文口說練習方法</a>。"
+   ]
+  },
+  {
+   "title": "字幕的英文怎麼說：subtitles、CC、SDH 差在哪",
+   "prose": [
+    "字幕的英文是 <strong>subtitles</strong>。選單上常見的 <strong>CC</strong> 是 closed captions：Netflix 的說明是，subtitles 是把對白變成畫面上的文字，closed captions 除了對白，還會描述聲音。雙語字幕可以說 dual subtitles 或 bilingual subtitles。"
+   ],
+   "heads": [
+    "中文",
+    "英文",
+    "說明／例句"
+   ],
+   "rows": [
+    [
+     "字幕",
+     "subtitles",
+     "把對白變成畫面上的文字；常用複數"
+    ],
+    [
+     "隱藏式字幕",
+     "closed captions（CC）",
+     "對白之外，還描述聲音，例如 [music]"
+    ],
+    [
+     "聽障字幕",
+     "SDH",
+     "Subtitles for the Deaf and Hard of Hearing 的縮寫"
+    ],
+    [
+     "雙語字幕",
+     "dual subtitles / bilingual subtitles",
+     "同時顯示兩種語言的字幕"
+    ],
+    [
+     "英文字幕",
+     "English subtitles",
+     "with English subtitles＝有英文字幕"
+    ],
+    [
+     "開字幕",
+     "turn on the subtitles",
+     "Can you turn on the subtitles?"
+    ],
+    [
+     "關字幕",
+     "turn off the subtitles",
+     "Let's turn off the subtitles this time."
+    ],
+    [
+     "自動翻譯",
+     "auto-translate",
+     "YouTube 字幕設定裡的選項"
+    ],
+    [
+     "配音",
+     "dubbing",
+     "中文配音版＝dubbed in Chinese"
+    ],
+    [
+     "原音",
+     "original audio",
+     "audio＝聲音、音軌"
+    ],
+    [
+     "暫停／倒轉",
+     "pause / rewind",
+     "Rewind ten seconds.＝倒轉十秒"
+    ],
+    [
+     "播放速度",
+     "playback speed",
+     "0.75 倍速是 0.75x speed"
+    ],
+    [
+     "跟讀",
+     "shadowing",
+     "聽一句、跟著唸一句的練習法"
+    ],
+    [
+     "一集／一季",
+     "episode / season",
+     "Season 2, Episode 5＝第二季第五集"
+    ]
+   ]
+  },
+  {
+   "title": "雙語字幕常見問題",
+   "faq": [
+    [
+     "Netflix 可以直接開雙語字幕嗎？",
+     "Netflix 的官方說明只有選一種字幕語言的做法，沒有同時顯示兩種語言的設定（2026-11-18 查閱）。要看中英兩行，得用電腦的瀏覽器開 netflix.com，並加裝 Language Reactor、Trancy 或沉浸式翻譯這類擴充功能。手機、平板和電視上的 Netflix App 不能加裝工具。"
+    ],
+    [
+     "YouTube 雙語字幕怎麼開？手機可以嗎？",
+     "電腦：用瀏覽器開 youtube.com，加裝雙語字幕的擴充功能。手機：YouTube App 一次只顯示一種字幕，要兩行得改用瀏覽器開 youtube.com，iPhone 和 iPad 用 Safari 加 Safari 擴充功能，Android 用 Firefox 或 Edge。App 裡的「自動翻譯」只是把字幕換成另一種語言，不是雙語字幕。"
+    ],
+    [
+     "Language Reactor 要錢嗎？手機可以用嗎？",
+     "雙語字幕是 Language Reactor 的免費功能；Pro 版另外收費，多了機器翻譯、存單字等功能。它的官網註明只支援電腦，安裝的是 Chrome 擴充功能，沒有手機或平板版（2026-11-18 查閱）。"
+    ],
+    [
+     "電視可以看雙語字幕嗎？",
+     "電視上的 Netflix、YouTube、Disney+ 都只能選一種字幕，電視也不能裝擴充功能。做法是在電腦的瀏覽器開好雙語字幕，再用 HDMI 線把電腦接到電視，把電視當成電腦的螢幕。"
+    ],
+    [
+     "孩子看雙語字幕，學得到英文嗎？",
+     "雙語字幕幫助看懂劇情、記住字義，但有研究發現，觀眾看中文翻譯的時間比看英文生字久，而學到多少英文只和看英文字的時間有關。建議把雙語字幕當第一遍，之後換成英文字幕，再跟著唸，最後關掉字幕只用聽。還不太會讀英文的孩子，字幕幫助有限，重點放在聽。"
+    ],
+    [
+     "雙語字幕的英文是什麼？CC 又是什麼？",
+     "雙語字幕是 dual subtitles 或 bilingual subtitles。CC 是 closed captions（隱藏式字幕），除了對白還會描述聲音，例如 [music]。一般的字幕是 subtitles。"
+    ],
+    [
+     "裝雙語字幕的擴充功能，要注意什麼？",
+     "三件事：只從瀏覽器的官方商店安裝；安裝前看更新日期、使用人數和評價；孩子用的電腦，不看影片的時候可以先把擴充功能關掉。擴充功能要讀取影音網站的頁面才能加上字幕，所以選有持續更新、使用人數多的工具比較安心。"
+    ]
+   ]
+  }
+ ],
+ "cta_h2": "字幕幫孩子看懂，開口還是要有人回應",
+ "cta": "影片可以練聽力，卻不會回應孩子說的話。我們的小班課由美國老師帶，孩子可以把影片裡聽到的句子拿來問、拿來說。"
+}
