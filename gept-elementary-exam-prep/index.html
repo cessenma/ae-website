@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- AE:CRIT start -->
+<link rel="stylesheet" href="/assets/styles.css?v=06a2d877">
+<!-- AE:CRIT end -->
+<!-- AE:FONTS start -->
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2">
+<style>@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFnOHM81r4j6k0gjAW3mujVU2B2G_5x0vrx52jJ3Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmserifdisplay-v17--nFhOHM81r4j6k0gjAW3mujVU2B2G_VB3vD2xWr53BJl.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51jcAM4olXc.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:optional;src:url(/assets/fonts/baloo2-v23-wXKrE3kTposypRyd51bcAM4olXcLtA.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZOIHTWEBlw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Hp2ywxg089UriCZ2IHTWEBlwu8Q.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKy58UfivUw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'DM Sans';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/dmsans-v17-rP2Wp2ywxg089UriCZaSExdy3sGt9zz86GPwyKK58UfivUw4aw.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+<!-- AE:FONTS end -->
+<meta name="theme-color" content="#1A2752">
+<!-- Google Analytics (GA4) -->
+<title>全民英檢初級考前衝刺：2027/1/9 聽讀考試日期、7 週讀書計畫｜埃森美語</title>
+<meta name="description" content="全民英檢初級 2027/1/9 聽讀：報名到 11/26 下午 5 點、12/30 寄通知、1/21 放榜。考什麼、通過標準、考前 7 週計畫與考試當天要帶什麼。">
+<link rel="canonical" href="https://americanenglish.com.tw/gept-elementary-exam-prep/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="American English 埃森美語">
+<meta property="og:title" content="全民英檢初級考前衝刺：2027/1/9 聽讀考試日期、7 週讀書計畫">
+<meta property="og:description" content="全民英檢初級 2027/1/9 聽讀：報名到 11/26 下午 5 點、12/30 寄通知、1/21 放榜。考什麼、通過標準、考前 7 週計畫與考試當天要帶什麼。">
+<meta property="og:url" content="https://americanenglish.com.tw/gept-elementary-exam-prep/">
+<meta property="og:image" content="https://americanenglish.com.tw/assets/img/blog/gept-exam-day-whiteboard-notice.webp">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="考場白板上的考試注意事項">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["EducationalOrganization","LocalBusiness"],"@id":"https://americanenglish.com.tw/#organization","name":"埃森美語 American English","alternateName":["埃森美語","American English 埃森美語","American English","埃森美語 - American English Institute"],"legalName":"私立埃森美語文理短期補習班","taxID":"61476523","description":"板橋中正路在地深耕的美籍外師英文補習班，提供 100% 美籍持證教師、每班 12 人小班制的兒童美語與國中英文課程。","url":"https://americanenglish.com.tw/","telephone":"+886-928-067-772","image":["https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","https://americanenglish.com.tw/assets/img/banqiao-small-class-english-classroom.webp","https://americanenglish.com.tw/assets/img/banqiao-kids-english-class.webp","https://americanenglish.com.tw/assets/img/certified-american-teacher-banqiao.webp","https://americanenglish.com.tw/assets/img/kids-confident-english-speaking.webp"],"logo":"https://americanenglish.com.tw/assets/img/american-english-banqiao-logo.jpg","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"中正路89巷4號1樓","addressLocality":"板橋區","addressRegion":"新北市","postalCode":"220","addressCountry":"TW"},"geo":{"@type":"GeoCoordinates","latitude":25.0145617,"longitude":121.4560468},"areaServed":{"@type":"AdministrativeArea","name":"板橋區","containedInPlace":{"@type":"AdministrativeArea","name":"新北市"}},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"19:00"}],"sameAs":["https://www.google.com/maps?cid=11837760024257631170","https://lin.ee/W9J8TuQ","https://www.facebook.com/profile.php?id=61576014571186"],"hasMap":"https://www.google.com/maps?cid=11837760024257631170","founder":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"knowsLanguage":["en-US","zh-TW"],"knowsAbout":["兒童美語","國中英文","美籍外師英語教學","Phonics 自然發音","劍橋兒童英檢 (Cambridge YLE)","GEPT 全民英檢","國中教育會考英文","英語會話與口說","板橋英文補習班"],"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+886-928-067-772","url":"https://lin.ee/W9J8TuQ","availableLanguage":["zh-TW","en"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Christopher","jobTitle":"創辦人暨美籍持證英文教師 (Founder & Licensed American English Teacher)","worksFor":{"@id":"https://americanenglish.com.tw/#organization"},"alumniOf":{"@type":"CollegeOrUniversity","name":"University of Michigan"},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"美國正式教師執照 (U.S. State Teaching Certificate)"},"knowsLanguage":["en-US","zh-TW"],"@id":"https://americanenglish.com.tw/#christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"全民英檢初級考前衝刺：1/9 聽讀，7 週準備計畫","description":"全民英檢初級 2027/1/9 聽讀：報名到 11/26 下午 5 點、12/30 寄通知、1/21 放榜。考什麼、通過標準、考前 7 週計畫與考試當天要帶什麼。","url":"https://americanenglish.com.tw/gept-elementary-exam-prep/","mainEntityOfPage":"https://americanenglish.com.tw/gept-elementary-exam-prep/","inLanguage":"zh-Hant-TW","datePublished":"2026-11-22","dateModified":"2026-11-22","image":"https://americanenglish.com.tw/assets/img/blog/gept-exam-day-whiteboard-notice.webp","author":{"@type":"Person","@id":"https://americanenglish.com.tw/#christopher","name":"Christopher","url":"https://americanenglish.com.tw/certified-american-teacher-banqiao/"},"publisher":{"@id":"https://americanenglish.com.tw/#organization"},"@id":"https://americanenglish.com.tw/gept-elementary-exam-prep/#article","alternativeHeadline":"全民英檢初級考前衝刺：2027/1/9 聽讀考試日期、7 週讀書計畫","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"hasPart":{"@id":"https://americanenglish.com.tw/gept-elementary-exam-prep/#faq"}}</script>
+<!-- AE:SEO-LD start -->
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://americanenglish.com.tw/gept-elementary-exam-prep/">
+<link rel="alternate" hreflang="x-default" href="https://americanenglish.com.tw/gept-elementary-exam-prep/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="twitter:image" content="https://americanenglish.com.tw/assets/img/blog/gept-exam-day-whiteboard-notice.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://americanenglish.com.tw/"},{"@type":"ListItem","position":2,"name":"全民英檢","item":"https://americanenglish.com.tw/gept/"},{"@type":"ListItem","position":3,"name":"全民英檢初級考前衝刺：1/9 聽讀，7 週準備計畫"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://americanenglish.com.tw/gept-elementary-exam-prep/#faq","url":"https://americanenglish.com.tw/gept-elementary-exam-prep/","inLanguage":"zh-Hant-TW","isPartOf":{"@id":"https://americanenglish.com.tw/#website"},"mainEntity":[{"@type":"Question","name":"1/9 的初級還能報名嗎？","acceptedAnswer":{"@type":"Answer","text":"可以，網路報名到 2026/11/26（四）下午 5 點 。在 LTTC 網站 報名，聽讀報名費 630 元。"}},{"@type":"Question","name":"考試通知什麼時候寄？","acceptedAnswer":{"@type":"Answer","text":"2026/12/30（三）用 email 寄出，上面有考場、教室和時間。"}},{"@type":"Question","name":"什麼時候可以查成績？","acceptedAnswer":{"@type":"Answer","text":"2027/1/21（四）。查詢方法看 全民英檢成績查詢 。"}},{"@type":"Question","name":"國中生沒有身分證怎麼辦？","acceptedAnswer":{"@type":"Answer","text":"國中生（含）以下可以帶 健保卡正本 代替，有沒有照片都可以。影本不行。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://americanenglish.com.tw/#website","url":"https://americanenglish.com.tw/","name":"American English 埃森美語","alternateName":["埃森美語","埃森美語 American English"],"inLanguage":"zh-Hant-TW","publisher":{"@id":"https://americanenglish.com.tw/#organization"}}</script>
+<!-- AE:SEO-LD end -->
+<!-- AE:GTM start -->
+<script>(function(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-CH7TGR171G');if(!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};window._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}fbq('init','1023907773471013');fbq('track','PageView');var loaded=0,load=function(){if(loaded)return;loaded=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-CH7TGR171G';document.head.appendChild(s);var f=document.createElement('script');f.async=1;f.src='https://connect.facebook.net/en_US/fbevents.js';document.head.appendChild(f);};['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,load,{once:true,passive:true});});addEventListener('load',function(){setTimeout(load,2500);});})();</script>
+<!-- AE:GTM end -->
+</head>
+<body data-page="gept-elementary-exam-prep">
+<!-- AE:CHROME start -->
+<div class="progress" id="progress"></div>
+<header class="site-header" id="siteHeader"><div class="wrap nav"><a href="/" class="brand"><img class="brand-logo" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="38" height="38" fetchpriority="high">埃森<b>美語</b></a><nav class="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/chris-and-cora-readers/">分級讀本</a><a href="/english-grammar-books/">文法書</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary nav-cta">LINE 預約試聽</a></nav><button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div></header>
+<nav class="drawer" id="drawer" aria-label="行動版選單"><a href="/">首頁</a><a href="/courses/">課程</a><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/chris-and-cora-readers/">分級讀本</a><a href="/english-grammar-books/">文法書</a><a href="/certified-american-teacher-banqiao/">師資</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" class="btn btn-primary">LINE 預約試聽</a></nav>
+<!-- AE:CHROME end -->
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="bg-deco"></div>
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="/">首頁</a> ／ <a href="/gept/">全民英檢</a> ／ 初級考前衝刺</div>
+    <span class="eyebrow eyebrow-green reveal">全民英檢 · 2027/1/9</span>
+    <h1 class="reveal d1"><span class="h1s"><em>全民英檢初級</em>考前衝刺：</span><br><span class="h1s kp">1/9 聽讀，7 週準備計畫</span></h1>
+    <div class="divider reveal d1"></div>
+    <p class="body reveal d2">報名到 11/26、考試通知 12/30、1/21 放榜。這一頁整理官方日期、考試內容、通過標準、每週該練什麼，還有考試當天要帶的東西。</p>
+    <p class="body reveal d2" style="font-size:14px">作者：Christopher｜埃森美語創辦人｜美國密西根大學畢業、美國正式教師執照<!-- AE:PAGEMETA start -->｜<span class="byl-d">最後更新 <time datetime="2026-11-22">2026 年 11 月 22 日</time></span><!-- AE:PAGEMETA end --></p>
+    <figure class="post-hero pf-cream reveal d2">
+      <img src="/assets/img/blog/gept-exam-day-whiteboard-notice.webp" srcset="/assets/img/blog/gept-exam-day-whiteboard-notice-800.webp 800w, /assets/img/blog/gept-exam-day-whiteboard-notice.webp 1600w" sizes="(max-width:828px) 100vw, 732px" alt="考場白板上的考試注意事項" width="1600" height="900" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+<!-- AE:TOC --><nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span><a href="#2027-年-1-月-9-日初級聽讀的日期">1/9 初級聽讀，這幾個日期先記下來</a><a href="#初級聽讀考什麼">聽讀考什麼、幾分過</a><a href="#考前-7-週讀書計畫">考前 7 週，每週一件事</a><a href="#1-9-考試當天要帶什麼">考試當天，這些別忘了</a><a href="#初級聽讀考前常見問題">考前，家長常問的</a></nav><!-- /AE:TOC -->
+<!-- AE:GEPTDATES --><aside class="gept-dates" aria-label="全民英檢近期日程"><div class="gd-h">📅 全民英檢近期日程</div><div class="gd-cols"><div><div class="gd-sub">考試・成績</div><ul><li data-gd-end="2026-12-30"><b>12/30（三）</b>初級 1/9 場考試通知寄出（email）</li><li data-gd-end="2027-01-09"><b>2027/1/9（六）</b>初級聽讀測驗</li><li data-gd-end="2027-01-21"><b>2027/1/21（四）</b>初級聽讀（1/9 場）成績公布</li><li data-gd-end="2027-03-21"><b>2027/3/20–21（六、日）</b>初級說寫測驗</li><li data-gd-end="2027-04-29"><b>2027/4/29（四）</b>初級說寫（3/20–21 場）成績公布</li><li data-gd-end="2027-06-13"><b>2027/6/13（日）</b>初級聽讀測驗</li><li data-gd-end="2027-06-30"><b>2027/6/30（三）</b>初級聽讀（6/13 場）成績公布</li><li data-gd-end="2027-09-12"><b>2027/9/11–12（六、日）</b>初級說寫測驗</li><li data-gd-end="2027-10-29"><b>2027/10/29（五）</b>初級說寫（9/11–12 場）成績公布</li><li data-gd-end="2027-10-30"><b>2027/10/30（六）</b>初級聽讀測驗</li><li data-gd-end="2027-11-19"><b>2027/11/19（五）</b>初級聽讀（10/30 場）成績公布</li></ul></div><div><div class="gd-sub">報名時間</div><ul><li data-gd-end="2026-11-26"><b>報名至 11/26（四）下午 5 點</b>2027/1/9 初級聽讀</li><li data-gd-end="2027-01-21"><b>2027/1/4–1/21</b>初級說寫（3/20–21 考）</li><li data-gd-end="2027-04-29"><b>2027/3/15–4/29</b>初級聽讀（6/13 考）</li><li data-gd-end="2027-07-19"><b>2027/6/15–7/19</b>初級說寫（9/11–12 考）</li><li data-gd-end="2027-09-01"><b>2027/7/5–9/1</b>初級聽讀（10/30 考）</li></ul></div></div><p class="gd-src">日期以 <a href="https://www.gept.org.tw/GEPT1/gepttestdate.aspx" target="_blank" rel="noopener">LTTC 官方測驗日程</a>為準 · <a href="/gept-results-lookup/">成績怎麼查</a></p><script>(function(){var n=new Date();document.querySelectorAll(".gept-dates [data-gd-end]").forEach(function(r){if(new Date(r.getAttribute("data-gd-end")+"T23:59:59+08:00")<n)r.remove();});document.querySelectorAll(".gept-dates ul").forEach(function(u){if(!u.children.length)u.parentNode.remove();});document.querySelectorAll(".gept-dates").forEach(function(b){if(!b.querySelector("li"))b.remove();});})();</script></aside><!-- /AE:GEPTDATES -->
+
+
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">日期</span><h2 id="2027-年-1-月-9-日初級聽讀的日期">1/9 初級聽讀，<em>這幾個日期</em>先記下來</h2></div>
+    <div class="prose reveal" style="max-width:800px;margin:0 auto">
+<p>LTTC 公布的 2027 年第一場初級聽讀（聽力＋閱讀）：</p>
+<div style="overflow-x:auto"><table class="wtable"><thead><tr><th>項目</th><th>日期</th></tr></thead><tbody><tr><td>網路報名截止</td><td><b>2026/11/26（四）下午 5 點</b></td></tr><tr><td>考試通知（email）</td><td>2026/12/30（三）</td></tr><tr><td><b>考試</b></td><td><b>2027/1/9（六）</b>聽力＋閱讀</td></tr><tr><td>成績公布</td><td>2027/1/21（四）</td></tr><tr><td>報名費</td><td>聽讀 630 元</td></tr></tbody></table></div>
+<p style="font-size:14px;color:#64748b">資料來源：<a href="https://www.gept.org.tw/GEPT1/gepttestdate.aspx" target="_blank" rel="noopener">LTTC 全民英檢測驗日程表</a>（2026/11/22 查）。</p>
+    </div>
+  </div>
+</section>
+
+<!-- AE:PACKOFFER -->
+<section class="pkm-sec">
+  <div class="wrap">
+    <aside class="pkm" id="pack-offer" aria-label="完整模擬試卷">
+      <p class="pkm-t">想整份計時練習？<b>全民英檢原創模擬試題</b>，每份附中文逐題解析與聽力音檔：</p>
+      <div class="pkm-tiers" role="radiogroup" aria-label="選方案"><label class="pkm-tier"><input type="radio" name="pkmt" checked data-key="GEPT-E" data-tier="9" data-line="https://line.me/R/oaMessage/%40americanenglish/?%E6%88%91%E6%83%B3%E8%B3%BC%E8%B2%B7%E5%85%A8%E6%B0%91%E8%8B%B1%E6%AA%A2%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A1%8C%EF%BC%9A%E5%88%9D%E7%B4%9A%209%20%E4%BB%BD%EF%BC%88NT%24590%EF%BC%89%E3%80%82" data-ls="https://americanenglish.lemonsqueezy.com/checkout/buy/1ab67355-5d93-4c84-a848-c90754996247?checkout[billing_address][country]=TW"><span>初級 9 份</span><b>NT$590</b></label><label class="pkm-tier"><input type="radio" name="pkmt" data-key="ALL" data-tier="36" data-line="https://line.me/R/oaMessage/%40americanenglish/?%E6%88%91%E6%83%B3%E8%B3%BC%E8%B2%B7%E5%85%A8%E6%B0%91%E8%8B%B1%E6%AA%A2%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A1%8C%EF%BC%9A%E5%85%A8%E9%83%A8%E5%9B%9B%E7%B4%9A%2036%20%E4%BB%BD%EF%BC%88NT%241%2C190%EF%BC%89%E3%80%82" data-ls="https://americanenglish.lemonsqueezy.com/checkout/buy/0fceb108-f38a-451c-b9dc-c854bc0bfdaa?checkout[billing_address][country]=TW"><span>全部四級 36 份</span><b>NT$1,190</b></label></div>
+      <p class="pkm-a"><a href="https://line.me/R/oaMessage/%40americanenglish/?%E6%88%91%E6%83%B3%E8%B3%BC%E8%B2%B7%E5%85%A8%E6%B0%91%E8%8B%B1%E6%AA%A2%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A1%8C%EF%BC%9A%E5%88%9D%E7%B4%9A%209%20%E4%BB%BD%EF%BC%88NT%24590%EF%BC%89%E3%80%82" target="_blank" rel="noopener" data-pack-tier="9" data-pack-level="GEPT-E" data-pack-product="gept" class="pkm-line">LINE 購買</a><a href="https://americanenglish.lemonsqueezy.com/checkout/buy/1ab67355-5d93-4c84-a848-c90754996247?checkout[billing_address][country]=TW" data-pack-tier="9" data-pack-level="GEPT-E" data-pack-product="gept" class="pkm-card">線上刷卡</a></p>
+      <div class="pkm-which"><b>不知道買哪一級？</b><ul><li><a href="/gept-kids-practice/"><span>國小，學英文 2 年以上</span><b>小學英檢</b></a></li><li class=on><a href="/gept-elementary-practice/"><span>國中生，或小學英檢拿到 8–10 個太陽</span><b>初級</b></a></li><li><a href="/gept-intermediate-practice/"><span>高中生</span><b>中級</b></a></li><li><a href="/gept-high-intermediate-practice/"><span>大學生、社會人士</span><b>中高級</b></a></li></ul><small>依 LTTC 官方說明：小學英檢適合國小高年級或學英文 2 年以上，拿到 8–10 個太陽建議接著考初級。LTTC 2025 年統計，考生平均年齡：初級 14.3 歲、中級 17.1 歲、中高級 20.8 歲。</small></div><style>.pkm-which{flex:1 1 100%;border-top:1px dashed rgba(26,39,82,.2);padding-top:10px;font-size:14px;color:#333c4d}.pkm-which>b{color:var(--navy)}.pkm-which ul{list-style:none;margin:7px 0 6px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:6px}.pkm-which li a{display:flex;justify-content:space-between;align-items:center;gap:8px;background:#fff;border:1.5px solid rgba(26,39,82,.12);border-radius:8px;padding:5px 10px;text-decoration:none;color:#333c4d;line-height:1.5}.pkm-which li a b{color:var(--navy);white-space:nowrap;font-family:'Baloo 2',sans-serif}.pkm-which li.on a{border-color:var(--blue);background:var(--light-blue)}.pkm-which small{display:block;font-size:12px;color:#64748b;line-height:1.6}</style>
+    </aside>
+  </div>
+</section>
+<template id="pkm-after"><p class="pkm-after"><span>剛才做的是考試裡的一個部分。正式考試要一次做完整份，想先計時練一整份嗎？</span><a href="#pack-offer">看全民英檢初級原創模擬試題 9 份 ↓</a></p></template>
+<script>(function(){var c=document.getElementById('pack-offer');if(!c)return;
+var l=c.querySelector('.pkm-line'),k=c.querySelector('.pkm-card');
+function set(a,h,d){if(!a||!h)return;a.href=h;a.setAttribute('data-pack-level',d.key);a.setAttribute('data-pack-tier',d.tier);}
+c.querySelectorAll('.pkm-tier input').forEach(function(r){r.addEventListener('change',function(){var d=this.dataset;set(l,d.line,d);set(k,d.ls,d);
+if(typeof window.gtag==='function')window.gtag('event','pack_level_pick',{level:d.key,tier:d.tier,page_path:location.pathname});});});
+})();</script>
+<style>.pkm-after{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:12px 0 0;padding:10px 14px;background:#FFFBEF;border:1.5px solid var(--yellow);border-radius:12px;font-size:15px;line-height:1.65;color:#333c4d}
+.pkm-after[hidden]{display:none}.pkm-after span{flex:1 1 260px}
+.pkm-after a{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;line-height:1.4;text-decoration:none;border-radius:999px;padding:6px 14px;background:var(--yellow);color:var(--navy);white-space:nowrap}
+.pkm.pkm-hi{outline:3px solid var(--yellow);outline-offset:3px}</style>
+<script>(function(){function go(){var t=document.getElementById('pkm-after'),sc=document.getElementById('score'),c=document.getElementById('pack-offer');
+if(!t||!sc||!c||!t.content)return;var row=sc.parentNode,p=t.content.firstElementChild.cloneNode(true);row.parentNode.insertBefore(p,row.nextSibling);
+function sync(){p.hidden=!sc.classList.contains('show');}sync();new MutationObserver(sync).observe(sc,{attributes:true,attributeFilter:['class']});
+p.querySelector('a').addEventListener('click',function(e){e.preventDefault();
+c.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'center'});
+c.classList.add('pkm-hi');setTimeout(function(){c.classList.remove('pkm-hi');},1800);
+var m=sc.textContent.match(/(\d+)\s*\/\s*(\d+)/),k=c.querySelector('.pkm-tier input:checked');
+if(typeof window.gtag==='function')window.gtag('event','pack_score_tap',{level:k?k.dataset.key:'',score_pct:m&&+m[2]?Math.round(m[1]/m[2]*100):-1,page_path:location.pathname});});}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();})();</script>
+<!-- /AE:PACKOFFER -->
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">考什麼</span><h2 id="初級聽讀考什麼">聽讀考什麼、<em>幾分過</em></h2></div>
+    <div class="prose reveal" style="max-width:800px;margin:0 auto">
+<div style="overflow-x:auto"><table class="wtable"><thead><tr><th>科目</th><th>題型</th><th>題數</th><th>時間</th></tr></thead><tbody><tr><td>聽力</td><td><a href="/gept-elementary-listening-practice-part1/">看圖辨義</a>・<a href="/gept-elementary-listening-practice-part2/">問答</a>・<a href="/gept-elementary-listening-practice-part3/">簡短對話</a>・<a href="/gept-elementary-listening-practice-part4/">短文聽解</a></td><td>30</td><td>約 20 分鐘</td></tr><tr><td>閱讀</td><td><a href="/gept-elementary-reading-practice-part1/">詞彙</a>・<a href="/gept-elementary-reading-practice-part2/">段落填空</a>・<a href="/gept-elementary-reading-practice-part3/">閱讀理解</a></td><td>30</td><td>35 分鐘</td></tr></tbody></table></div>
+<p>聽力每題<b>只播一次</b>。聽力和閱讀連著考，<b>中間不休息</b>，含說明大約 1.5 小時。</p>
+<p><b>通過標準</b>：聽力、閱讀各 120 分，兩科加起來至少 160 分，<b>而且每一科都不能低於 72 分</b>。總分夠、但閱讀只有 70，一樣不通過。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">我的建議</span><h2 id="考前-7-週讀書計畫">考前 7 週，<em>每週一件事</em></h2></div>
+    <div class="prose reveal" style="max-width:800px;margin:0 auto">
+<p>下面是我會給學生的安排（Christopher 的建議，不是官方規定）。每一格都連到可以直接作答的免費練習。</p>
+<div style="overflow-x:auto"><table class="wtable"><thead><tr><th>週</th><th>做什麼</th></tr></thead><tbody><tr><td>11/23 那週</td><td>還沒報名的，<b>11/26 下午 5 點前</b>報名。做一份<a href="/gept-elementary-practice/">免費模擬題</a>，看聽力和閱讀哪一科比較弱。</td></tr><tr><td>11/30</td><td>聽力 <a href="/gept-elementary-listening-practice-part1/">Part 1</a>、<a href="/gept-elementary-listening-practice-part2/">Part 2</a>：每天 15 分鐘。每題只播一次，練習聽完立刻選。</td></tr><tr><td>12/7</td><td>聽力 <a href="/gept-elementary-listening-practice-part3/">Part 3</a>、<a href="/gept-elementary-listening-practice-part4/">Part 4</a>，錯的題目看逐字稿再聽一次。</td></tr><tr><td>12/14</td><td>閱讀 <a href="/gept-elementary-reading-practice-part1/">詞彙</a>、<a href="/gept-elementary-reading-practice-part2/">段落填空</a>；把錯的單字記在一張紙上，每天看一次。</td></tr><tr><td>12/21</td><td><a href="/gept-elementary-reading-practice-part3/">閱讀理解</a>，開始計時：閱讀整份 35 分鐘。</td></tr><tr><td>12/28</td><td>12/30 收到考試通知，確認考場和時間。週末做一次完整模擬：聽力接著閱讀，中間不休息。</td></tr><tr><td>1/4 那週</td><td>只複習錯過的題目，不要再加新東西。準備證件、2B 鉛筆、橡皮擦，早點睡。</td></tr></tbody></table></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-green">考試當天</span><h2 id="1-9-考試當天要帶什麼">考試當天，<em>這些別忘了</em></h2></div>
+    <div class="prose reveal" style="max-width:800px;margin:0 auto">
+<ul><li><b>身分證件正本</b>：國民身分證、駕照或有效護照；<b>國中生（含）以下可以用健保卡正本</b>代替。影本不行。</li><li>2B 黑色鉛筆和橡皮擦（聽力、閱讀用電腦讀卡）</li><li>手機、手錶、手環等所有電子用品<b>關機</b>，和書包一起放在教室前面的地上。考試中發出任何聲音（包括震動），<b>每一科扣 5 分</b>；被發現開機，每一科扣 2 分。</li><li><b>遲到超過 10 分鐘不能進場</b>，也不退費。坐錯位子每一科扣 5 分。</li><li>考場不保管貴重物品。身體不舒服或上廁所的時間不會補回來。</li></ul>
+<p style="font-size:14px;color:#64748b">以上依 LTTC <a href="https://www.gept.org.tw/info/registration_guide.pdf" target="_blank" rel="noopener">報名須知</a>的試場規則整理；考前請再看一次考試通知上的規定。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">常見問題</span><h2 id="初級聽讀考前常見問題">考前，<em>家長常問的</em></h2></div>
+    <div class="prose reveal" style="max-width:800px;margin:0 auto">
+<div class="faq">
+      <div class="faq-item"><h3 id="19-的初級還能報名嗎" class="faq-h"><button class="faq-q" aria-expanded="false">1/9 的初級還能報名嗎？<span class="pm"></span></button></h3><div class="faq-a"><p>可以，網路報名到 <b>2026/11/26（四）下午 5 點</b>。在 <a href='https://www.gept.org.tw/GEPT1/gepttestdate.aspx' target='_blank' rel='noopener'>LTTC 網站</a>報名，聽讀報名費 630 元。</p></div></div>
+      <div class="faq-item"><h3 id="考試通知什麼時候寄" class="faq-h"><button class="faq-q" aria-expanded="false">考試通知什麼時候寄？<span class="pm"></span></button></h3><div class="faq-a"><p>2026/12/30（三）用 email 寄出，上面有考場、教室和時間。</p></div></div>
+      <div class="faq-item"><h3 id="什麼時候可以查成績" class="faq-h"><button class="faq-q" aria-expanded="false">什麼時候可以查成績？<span class="pm"></span></button></h3><div class="faq-a"><p>2027/1/21（四）。查詢方法看<a href='/gept-results-lookup/'>全民英檢成績查詢</a>。</p></div></div>
+      <div class="faq-item"><h3 id="國中生沒有身分證怎麼辦" class="faq-h"><button class="faq-q" aria-expanded="false">國中生沒有身分證怎麼辦？<span class="pm"></span></button></h3><div class="faq-a"><p>國中生（含）以下可以帶<b>健保卡正本</b>代替，有沒有照片都可以。影本不行。</p></div></div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-blue">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <span class="eyebrow eyebrow-green">免費練習</span>
+      <h2 id="離19還有幾週先做一份免費模擬題" style="margin-top:14px">離 1/9 還有幾週，<br>先做<em>一份免費模擬題</em></h2>
+      <p class="body" style="max-width:560px;margin:16px auto 0">每一部分都可以直接在網頁上作答、對答案、看中文解析，不用註冊。</p>
+      <div class="cta-row"><a href="/gept-elementary-practice/" class="btn btn-primary">做初級免費模擬題</a><a href="/gept-elementary-guide/" class="btn btn-outline">初級完整指南</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- AE:PAYSAFE -->
+<section class="section ps-sec" style="padding-top:28px"><div class="wrap"><style>.bp-safe{max-width:1040px;margin:22px auto 0;background:#fff;border:1.5px solid rgba(26,39,82,.12);border-radius:20px;padding:20px 22px;box-shadow:0 6px 22px rgba(26,39,82,.07)}
+.bp-line{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 18px;background:#F1FBF4;border:1.5px solid rgba(6,199,85,.28);border-radius:14px;padding:14px 16px}
+.bp-line p{margin:0;flex:1 1 300px;font-size:15px;line-height:1.75;color:#374151}
+.bp-line p b{color:var(--navy)}
+.bp-line .btn{flex:0 0 auto;min-height:44px}
+.bp-safe-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;margin-top:18px}
+@media (max-width:760px){.bp-safe{padding:16px 14px}.bp-safe-grid{grid-template-columns:1fr}}
+.bp-safe h3{margin:0 0 8px;font-size:16.5px;color:var(--navy)}
+.bp-safe ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.bp-safe li{position:relative;padding-left:22px;font-size:15px;line-height:1.75;color:#374151}
+.bp-safe li::before{content:'✓';position:absolute;left:0;top:0;color:#12873d;font-weight:900}
+.bp-safe li a{color:var(--navy);font-weight:700}
+.bp-fields{margin-top:16px;border-top:1px solid rgba(26,39,82,.10);padding-top:12px}
+.bp-fields summary{cursor:pointer;font-weight:800;color:var(--navy);font-size:14.5px;min-height:44px;display:flex;align-items:center;gap:8px;list-style:none}
+.bp-fields summary::-webkit-details-marker{display:none}
+.bp-fields summary::before{content:'＋';display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:#EAF6FF;color:var(--navy);font-weight:900;font-size:14px}
+.bp-fields[open] summary::before{content:'－'}
+.bp-fields table{width:100%;border-collapse:collapse;margin-top:6px;font-size:14px}
+.bp-fields th,.bp-fields td{text-align:left;padding:9px 10px;border-bottom:1px solid rgba(26,39,82,.08);vertical-align:top;line-height:1.6}
+.bp-fields th{width:40%;font-family:Inter,system-ui,sans-serif;font-weight:700;color:var(--navy);white-space:normal}
+</style>
+<div class="bp-safe" id="pay-safe"><div class="bp-line"><p><b>不方便線上刷卡？</b>按「用 LINE 訂購（可轉帳）」，我們在 LINE 上回你轉帳帳號，收到款項後直接把下載連結傳給你。</p><a class="btn btn-outline" href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener" data-book="exam-pack" data-book-item="line-order">用 LINE 訂購（可轉帳）</a></div><div class="bp-safe-grid"><div><h3 id="你是向誰買">你是向誰買</h3><ul><li>私立埃森美語文理短期補習班，新北市政府立案：社補教社字第115026號。可以到政府的<a href='https://bsb.kh.edu.tw/' target='_blank' rel='noopener'>短期補習班資訊管理系統</a>查。</li><li>統一編號 61476523。</li><li>教室在新北市板橋區中正路89巷4號1樓，<a href='https://maps.app.goo.gl/hLChkEqAMKCsMWpm6' target='_blank' rel='noopener'>Google 地圖</a>上看得到位置和家長評價。</li><li>有問題找得到人：電話 0928-067-772，或 <a href='https://lin.ee/W9J8TuQ' target='_blank' rel='noopener'>LINE</a>。</li></ul></div><div><h3 id="線上刷卡會看到什麼">線上刷卡會看到什麼</h3><ul><li>刷卡由 Lemon Squeezy 處理，它是美國金流公司 Stripe 旗下的服務。卡號直接交給它加密處理，我們看不到你的卡號。</li><li>付款頁是英文的，下面有每一格的中文說明。</li><li>畫面上寫新台幣，實際以美元扣款（例如 NT$590 約 US$18，依當天匯率）。信用卡帳單上會是美元金額和英文的商店名稱，多數銀行會另收約 1.5% 的國外交易手續費。</li><li>付款完成，下載連結立刻寄到你填的 email。沒收到先看垃圾信匣，再 LINE 我們。</li><li>這是數位內容，付款後立刻提供下載；依《通訊交易解除權合理例外情事適用準則》第 2 條第 5 款，按下購買即表示你同意不適用七天解除權。</li></ul></div></div><details class="bp-fields"><summary>英文付款頁每一格怎麼填</summary><table><tbody><tr><th lang="en">Email</th><td>收下載連結的信箱，請確認沒有打錯</td></tr><tr><th lang="en">Card number</th><td>信用卡卡號（Visa、Mastercard、JCB、美國運通）</td></tr><tr><th lang="en">Expiration date</th><td>卡片有效期限：月／年</td></tr><tr><th lang="en">Security code</th><td>卡片背面的 3 碼（美國運通是正面 4 碼）</td></tr><tr><th lang="en">Cardholder name</th><td>持卡人姓名，照卡片上的英文拼</td></tr><tr><th lang="en">Billing address</th><td>國家已經幫你選好 Taiwan，下面一格填郵遞區號</td></tr><tr><th lang="en">Tax ID number (optional)</th><td>公司統編，個人購買不用填</td></tr><tr><th lang="en">Pay with PayPal</th><td>有 PayPal 帳戶的話，也可以改用 PayPal 付款</td></tr><tr><th lang="en">Pay NT$…</th><td>確認金額後按下去，就完成付款</td></tr></tbody></table></details></div></div></section>
+<!-- /AE:PAYSAFE -->
+<!-- AE:BYL start --><div class="page-meta"><div class="wrap"><span>作者：<a href="/certified-american-teacher-banqiao/">Christopher｜埃森美語創辦人</a>（<a href="/certified-american-teacher-banqiao/">關於作者</a>）</span></div></div>
+<!-- AE:BYL end --></main>
+<!-- AE:FOOT start -->
+<footer class="site-footer"><div class="wrap"><div class="foot-grid"><div><div class="foot-logo"><img class="foot-logo-img" src="/assets/img/american-english-banqiao-logo-96.webp" alt="American English 埃森美語 logo" width="34" height="34" loading="lazy" decoding="async">American English 埃森美語</div><p class="foot-tag">板橋中正路在地深耕的美籍外師英文補習班。100% 美籍持證教師、每班 12 人小班制。</p><p class="foot-nap">220 新北市板橋區中正路89巷4號1樓<span class="foot-sep">　｜　</span><a href="tel:+886928067772">☎ 0928-067-772</a></p></div><nav class="foot-links" aria-label="頁尾導覽"><div class="foot-col"><p class="foot-h">課程</p><a href="/banqiao-english-cram-school/">板橋英文補習班</a><a href="/courses/">課程總覽</a><a href="/kids-english-banqiao/">兒童美語</a><a href="/junior-high-english-banqiao/">國中英文</a><a href="/free-trial/">預約試聽</a></div><div class="foot-col"><p class="foot-h">學習資源</p><a href="/exams/">劍橋英檢</a><a href="/gept/">全民英檢</a><a href="/english-pronunciation/">英文發音</a><a href="/download/">免費下載</a><a href="/chart-license/">圖表授權</a></div><div class="foot-col"><p class="foot-h">關於</p><a href="/certified-american-teacher-banqiao/">師資介紹</a><a href="/banqiao-parent-testimonials/">家長見證</a><a href="/blog/">部落格</a><a href="/contact/">聯絡與交通</a></div><div class="foot-col"><p class="foot-h">聯絡</p><a href="tel:+886928067772">電話 0928-067-772</a><a href="https://lin.ee/W9J8TuQ" target="_blank" rel="noopener">LINE 線上預約</a><a href="https://maps.app.goo.gl/hLChkEqAMKCsMWpm6" target="_blank" rel="noopener">Google 地圖位置</a><a href="https://www.facebook.com/profile.php?id=61576014571186" target="_blank" rel="noopener">Facebook 粉絲專頁</a></div></nav></div><!-- AE:AINOTE --><p class="foot-ai">英文好，用 AI 也更順手 · <a href="https://essenindustries.com/">essenindustries.com</a></p><!-- /AE:AINOTE -->
+<div class="foot-bottom"><span>© 2026 American English 埃森美語</span><span>私立埃森美語文理短期補習班　｜　新北市政府立案 社補教社字第115026號　｜　統一編號 61476523</span><span>220 新北市板橋區中正路89巷4號1樓</span></div><div class="foot-pref"><div google-add-preferred-source-btn data-theme="dark" data-lang="zh-TW"></div></div></div></footer>
+<!-- AE:FOOT end -->
+<script src="/assets/app.js?v=e320577d"></script>
+</body>
+</html>

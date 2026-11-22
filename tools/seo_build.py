@@ -1256,8 +1256,11 @@ GEPT_DATES = [   # (last day shown, levels, kind, date label, text) — kind reg
     ("2027-02-03", "hi", "results", "2027/2/3（三）", "中高級說寫（12/19 場）成績公布"),
     ("2026-10-27", "kids", "reg", "報名至 10/27（二）", "小學英檢 12/19 花蓮場"),
     ("2026-11-16", "hi", "reg", "10/19–11/16", "中高級說寫（12/19 考）"),
-    ("2026-11-20", "e", "reg", "報名至 11/20（五）", "2027/1/9 初級聽讀"),
-    ("2026-11-23", "i", "reg", "10/20–11/23", "2027/1/30 中級聽讀＋一日考"),
+    ("2026-11-26", "e", "reg", "報名至 11/26（四）下午 5 點", "2027/1/9 初級聽讀"),          # LTTC extended (gepttestdate.aspx, read 2026-11-22)
+    ("2026-11-30", "i", "reg", "報名至 11/30（一）下午 5 點", "2027/1/30 中級聽讀"),
+    ("2026-11-23", "i", "reg", "報名至 11/23（一）下午 5 點", "2027/1/30 中級一日考"),
+    ("2026-12-30", "e", "notice", "12/30（三）", "初級 1/9 場考試通知寄出（email）"),
+    ("2027-01-20", "i", "notice", "2027/1/20（三）", "中級 1/30 場考試通知寄出（email）"),
     # 2027 (LTTC GEPT_2027_schedule.pdf, created 2026-10-02; transcribed 2026-10-13, weekdays computed)
     ("2027-01-21", "e", "results", "2027/1/21（四）", "初級聽讀（1/9 場）成績公布"),
     ("2027-01-21", "e", "reg", "2027/1/4–1/21", "初級說寫（3/20–21 考）"),
@@ -1313,7 +1316,8 @@ GEPT_HUBS = {"gept", "gept-practice-tests"}
 GEPT_DATE_PAGES = GEPT_HUBS | {"gept-results-lookup", "gept-kids-guide", "gept-kids-practice", "gept-elementary-guide",
     "gept-elementary-practice", "gept-elementary-speaking-writing", "gept-elementary-vocabulary",
     "gept-intermediate-guide", "gept-intermediate-practice", "gept-high-intermediate-practice",
-    "english-exam-dates-guide"}      # it promised an annual schedule and listed no dates (2026-10-13 plan, H19)
+    "english-exam-dates-guide",
+    "gept-elementary-exam-prep", "gept-intermediate-exam-prep", "gept-high-intermediate-speaking-writing"}      # 11-22 exam-prep pages; it promised an annual schedule and listed no dates (2026-10-13 plan, H19)
 GEPT_SRC = "https://www.gept.org.tw/GEPT1/gepttestdate.aspx"
 # removes rows (then an emptied column, then an emptied box) whose last day has passed in Taiwan time
 GEPT_JS = ('<script>(function(){var n=new Date();document.querySelectorAll(".gept-dates [data-gd-end]").forEach(function(r){'

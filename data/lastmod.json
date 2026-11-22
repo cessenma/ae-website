@@ -1324,8 +1324,12 @@
 "hash": "b598760e530254efd953462ac3359b73"
 },
 "gept": {
-"date": "2026-11-10",
-"hash": "c08a591ff82fcd9e644c2f8ead1b74aa"
+"date": "2026-11-22",
+"hash": "94b748fc7d5d9a9d677c6cbc75e4513c"
+},
+"gept-elementary-exam-prep": {
+"date": "2026-11-22",
+"hash": "07e2d4c02ad5cdfc4ae428aa0a57cf6b"
 },
 "gept-elementary-guide": {
 "date": "2026-10-19",
@@ -1415,6 +1419,10 @@
 "date": "2026-11-15",
 "hash": "ef21462da77da1c8f81d41447720b847"
 },
+"gept-high-intermediate-speaking-writing": {
+"date": "2026-11-22",
+"hash": "16c3fed34a7c2027df5ef6ebb16828ce"
+},
 "gept-high-intermediate-writing-practice-part1": {
 "date": "2026-10-11",
 "hash": "d82c5c207a242c6e09d17b25fcdea637"
@@ -1422,6 +1430,10 @@
 "gept-high-intermediate-writing-practice-part2": {
 "date": "2026-10-11",
 "hash": "31d84bb6634dbc53493b0d89aeaa89c5"
+},
+"gept-intermediate-exam-prep": {
+"date": "2026-11-22",
+"hash": "33e09b08380709a1df856d51d6f1ffbe"
 },
 "gept-intermediate-guide": {
 "date": "2026-10-19",
