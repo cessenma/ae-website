@@ -896,8 +896,8 @@
 "hash": "f04d3cddd49a39eaf988baa5853ea848"
 },
 "chris-and-cora-readers": {
-"date": "2026-11-18",
-"hash": "cc91f3832aeafa13e9f84c3fe5d41e96"
+"date": "2026-11-23",
+"hash": "22c2a06a0271853d2f8027be1bb297e4"
 },
 "chris-and-cora-readers/read/1a": {
 "date": "2026-11-11",
@@ -1086,6 +1086,58 @@
 "english-punctuation-guide": {
 "date": "2026-10-19",
 "hash": "7fc5b5815e2bcddcaf0f24ab5fb6ba0c"
+},
+"english-reading-comprehension": {
+"date": "2026-11-23",
+"hash": "10a68759567e35d6c90681a050de7d38"
+},
+"english-reading-comprehension/level-1": {
+"date": "2026-11-23",
+"hash": "306bf530eca1e11210a32867b192e6a0"
+},
+"english-reading-comprehension/level-10": {
+"date": "2026-11-23",
+"hash": "cf72379859d242a5ce48fbf9ad35edfc"
+},
+"english-reading-comprehension/level-11": {
+"date": "2026-11-23",
+"hash": "1438c74afa8eda312f4871c90dc7cc79"
+},
+"english-reading-comprehension/level-12": {
+"date": "2026-11-23",
+"hash": "a0a71995fab668ec5504a1e614364e1b"
+},
+"english-reading-comprehension/level-2": {
+"date": "2026-11-23",
+"hash": "a9e5f00b03b79512ce191c9e85e79b45"
+},
+"english-reading-comprehension/level-3": {
+"date": "2026-11-23",
+"hash": "0fefe18fc2cb606f83df83118c8a170a"
+},
+"english-reading-comprehension/level-4": {
+"date": "2026-11-23",
+"hash": "ba21cbca18ca79be1319fe55b93748af"
+},
+"english-reading-comprehension/level-5": {
+"date": "2026-11-23",
+"hash": "28584f86374febd91623497443ae29b8"
+},
+"english-reading-comprehension/level-6": {
+"date": "2026-11-23",
+"hash": "6656d8e2f68a56417c957c945eb99e08"
+},
+"english-reading-comprehension/level-7": {
+"date": "2026-11-23",
+"hash": "eb969f9f0eb2e53c92272a143b7d5ce8"
+},
+"english-reading-comprehension/level-8": {
+"date": "2026-11-23",
+"hash": "20fe6c0fdd4892c3dd823d05649a0cdf"
+},
+"english-reading-comprehension/level-9": {
+"date": "2026-11-23",
+"hash": "4935cf3075d25df6bcb2a17233653c07"
 },
 "english-reading-practice": {
 "date": "2026-10-19",

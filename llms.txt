@@ -346,6 +346,19 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 - [全民英檢初級考前衝刺：2027/1/9 聽讀考試日期、7 週讀書計畫](https://americanenglish.com.tw/gept-elementary-exam-prep/): 全民英檢初級 2027/1/9 聽讀：報名到 11/26 下午 5 點、12/30 寄通知、1/21 放榜。考什麼、通過標準、考前 7 週計畫與考試當天要帶什麼。
 - [全民英檢中級考前衝刺：2027/1/30 聽讀與一日考日期、讀書計畫](https://americanenglish.com.tw/gept-intermediate-exam-prep/): 全民英檢中級 2027/1/30：聽讀報名到 11/30、一日考到 11/23，1/20 寄通知、2/26 放榜。考什麼、通過標準、考前讀書計畫與當天要帶什麼。
 - [全民英檢中高級說寫 12/19：寫作口說考什麼、幾分過](https://americanenglish.com.tw/gept-high-intermediate-speaking-writing/): 全民英檢中高級說寫 12/19：寫作考中譯英與 150–180 字引導寫作，口說考回答問題、看圖敘述、申述，兩科各 80 分通過；附考前 4 週計畫。
+- [國小英文閱讀測驗第 1 級：This Is Bobo!](https://americanenglish.com.tw/english-reading-comprehension/level-1/): 免費國小英文閱讀測驗第 1 級（剛開始讀）：先讀 Chris and Cora 分級讀本《This Is Bobo!》前 8 頁、可以聽朗讀，再線上回答 3 題，每題附中文解說。
+- [國小英文閱讀測驗第 2 級：Come and Play!](https://americanenglish.com.tw/english-reading-comprehension/level-2/): 免費國小英文閱讀測驗第 2 級（剛開始讀）：先讀 Chris and Cora 分級讀本《Come and Play!》前 8 頁、可以聽朗讀，再線上回答 3 題，每題附中文解說。
+- [國小英文閱讀測驗第 3 級：Cora Can Go to School](https://americanenglish.com.tw/english-reading-comprehension/level-3/): 免費國小英文閱讀測驗第 3 級（剛開始讀）：先讀 Chris and Cora 分級讀本《Cora Can Go to School》前 8 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。
+- [國小英文閱讀測驗第 4 級：A Kite in the Tree](https://americanenglish.com.tw/english-reading-comprehension/level-4/): 免費國小英文閱讀測驗第 4 級（剛開始讀）：先讀 Chris and Cora 分級讀本《A Kite in the Tree》前 6 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。
+- [國小英文閱讀測驗第 5 級：Amy Comes to the Market](https://americanenglish.com.tw/english-reading-comprehension/level-5/): 免費國小英文閱讀測驗第 5 級（讀得出短句）：先讀 Chris and Cora 分級讀本《Amy Comes to the Market》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。
+- [國小英文閱讀測驗第 6 級：A Night at the Night Market](https://americanenglish.com.tw/english-reading-comprehension/level-6/): 免費國小英文閱讀測驗第 6 級（讀得出短句）：先讀 Chris and Cora 分級讀本《A Night at the Night Market》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。
+- [國小英文閱讀測驗第 7 級：A Day at the Zoo](https://americanenglish.com.tw/english-reading-comprehension/level-7/): 免費國小英文閱讀測驗第 7 級（讀得出短句）：先讀 Chris and Cora 分級讀本《A Day at the Zoo》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。
+- [國小英文閱讀測驗第 8 級：The Birthday Surprise](https://americanenglish.com.tw/english-reading-comprehension/level-8/): 免費國小英文閱讀測驗第 8 級（讀得出短句）：先讀 Chris and Cora 分級讀本《The Birthday Surprise》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。
+- [國小英文閱讀測驗第 9 級：What Do You Do?](https://americanenglish.com.tw/english-reading-comprehension/level-9/): 免費國小英文閱讀測驗第 9 級（讀整段故事）：先讀 Chris and Cora 分級讀本《What Do You Do?》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。
+- [國小英文閱讀測驗第 10 級：A Year on the Wall](https://americanenglish.com.tw/english-reading-comprehension/level-10/): 免費國小英文閱讀測驗第 10 級（讀整段故事）：先讀 Chris and Cora 分級讀本《A Year on the Wall》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。
+- [國小英文閱讀測驗第 11 級：The Mountain Night](https://americanenglish.com.tw/english-reading-comprehension/level-11/): 免費國小英文閱讀測驗第 11 級（讀整段故事）：先讀 Chris and Cora 分級讀本《The Mountain Night》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。
+- [國小英文閱讀測驗第 12 級：The Festival on the Hill](https://americanenglish.com.tw/english-reading-comprehension/level-12/): 免費國小英文閱讀測驗第 12 級（讀整段故事）：先讀 Chris and Cora 分級讀本《The Festival on the Hill》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。
+- [國小英文閱讀測驗：12 級免費線上作答，附故事朗讀與中文解說](https://americanenglish.com.tw/english-reading-comprehension/): 免費國小英文閱讀測驗 12 級：每一級先讀一段真實的英文故事、可以聽美式朗讀，再線上回答問題、立刻對答案，每題都有中文解說，不用註冊、不用下載。
 <!-- AE:LLMS-MORE end -->
 
 ## Citable facts

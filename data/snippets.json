@@ -1249,5 +1249,57 @@
  "gept-high-intermediate-speaking-writing": {
   "description": "全民英檢中高級說寫 12/19：寫作考中譯英與 150–180 字引導寫作，口說考回答問題、看圖敘述、申述，兩科各 80 分通過；附考前 4 週計畫。",
   "title": "全民英檢中高級說寫 12/19：寫作口說考什麼、幾分過｜埃森美語"
+ },
+ "english-reading-comprehension/level-1": {
+  "description": "免費國小英文閱讀測驗第 1 級（剛開始讀）：先讀 Chris and Cora 分級讀本《This Is Bobo!》前 8 頁、可以聽朗讀，再線上回答 3 題，每題附中文解說。",
+  "title": "國小英文閱讀測驗第 1 級：This Is Bobo!｜埃森美語"
+ },
+ "english-reading-comprehension/level-2": {
+  "description": "免費國小英文閱讀測驗第 2 級（剛開始讀）：先讀 Chris and Cora 分級讀本《Come and Play!》前 8 頁、可以聽朗讀，再線上回答 3 題，每題附中文解說。",
+  "title": "國小英文閱讀測驗第 2 級：Come and Play!｜埃森美語"
+ },
+ "english-reading-comprehension/level-3": {
+  "description": "免費國小英文閱讀測驗第 3 級（剛開始讀）：先讀 Chris and Cora 分級讀本《Cora Can Go to School》前 8 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。",
+  "title": "國小英文閱讀測驗第 3 級：Cora Can Go to School｜埃森美語"
+ },
+ "english-reading-comprehension/level-4": {
+  "description": "免費國小英文閱讀測驗第 4 級（剛開始讀）：先讀 Chris and Cora 分級讀本《A Kite in the Tree》前 6 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。",
+  "title": "國小英文閱讀測驗第 4 級：A Kite in the Tree｜埃森美語"
+ },
+ "english-reading-comprehension/level-5": {
+  "description": "免費國小英文閱讀測驗第 5 級（讀得出短句）：先讀 Chris and Cora 分級讀本《Amy Comes to the Market》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。",
+  "title": "國小英文閱讀測驗第 5 級：Amy Comes to the Market｜埃森美語"
+ },
+ "english-reading-comprehension/level-6": {
+  "description": "免費國小英文閱讀測驗第 6 級（讀得出短句）：先讀 Chris and Cora 分級讀本《A Night at the Night Market》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。",
+  "title": "國小英文閱讀測驗第 6 級：A Night at the Night Market｜埃森美語"
+ },
+ "english-reading-comprehension/level-7": {
+  "description": "免費國小英文閱讀測驗第 7 級（讀得出短句）：先讀 Chris and Cora 分級讀本《A Day at the Zoo》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。",
+  "title": "國小英文閱讀測驗第 7 級：A Day at the Zoo｜埃森美語"
+ },
+ "english-reading-comprehension/level-8": {
+  "description": "免費國小英文閱讀測驗第 8 級（讀得出短句）：先讀 Chris and Cora 分級讀本《The Birthday Surprise》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。",
+  "title": "國小英文閱讀測驗第 8 級：The Birthday Surprise｜埃森美語"
+ },
+ "english-reading-comprehension/level-9": {
+  "description": "免費國小英文閱讀測驗第 9 級（讀整段故事）：先讀 Chris and Cora 分級讀本《What Do You Do?》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。",
+  "title": "國小英文閱讀測驗第 9 級：What Do You Do?｜埃森美語"
+ },
+ "english-reading-comprehension/level-10": {
+  "description": "免費國小英文閱讀測驗第 10 級（讀整段故事）：先讀 Chris and Cora 分級讀本《A Year on the Wall》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。",
+  "title": "國小英文閱讀測驗第 10 級：A Year on the Wall｜埃森美語"
+ },
+ "english-reading-comprehension/level-11": {
+  "description": "免費國小英文閱讀測驗第 11 級（讀整段故事）：先讀 Chris and Cora 分級讀本《The Mountain Night》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。",
+  "title": "國小英文閱讀測驗第 11 級：The Mountain Night｜埃森美語"
+ },
+ "english-reading-comprehension/level-12": {
+  "description": "免費國小英文閱讀測驗第 12 級（讀整段故事）：先讀 Chris and Cora 分級讀本《The Festival on the Hill》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。",
+  "title": "國小英文閱讀測驗第 12 級：The Festival on the Hill｜埃森美語"
+ },
+ "english-reading-comprehension": {
+  "description": "免費國小英文閱讀測驗 12 級：每一級先讀一段真實的英文故事、可以聽美式朗讀，再線上回答問題、立刻對答案，每題都有中文解說，不用註冊、不用下載。",
+  "title": "國小英文閱讀測驗：12 級免費線上作答，附故事朗讀與中文解說｜埃森美語"
  }
 }

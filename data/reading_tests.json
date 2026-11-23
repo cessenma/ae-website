@@ -1,0 +1,748 @@
+{
+ "1": [
+  {
+   "q": "What is Bobo?",
+   "options": [
+    "a cat",
+    "a dog",
+    "a girl"
+   ],
+   "answer": 1,
+   "evidence": "Bobo is a dog.",
+   "why_zh": "故事說「Bobo is a dog.」，所以 Bobo 是一隻狗。",
+   "why_en": "The story says \"Bobo is a dog.\""
+  },
+  {
+   "q": "Bobo is ___.",
+   "options": [
+    "a big dog",
+    "a big cat",
+    "a little dog"
+   ],
+   "answer": 2,
+   "evidence": "The little dog is Bobo.",
+   "why_zh": "故事說「The little dog is Bobo.」，Bobo 是一隻小狗。",
+   "why_en": "The story says \"The little dog is Bobo.\""
+  },
+  {
+   "q": "\"I like ___.\"",
+   "options": [
+    "Bobo",
+    "Cora",
+    "Chris"
+   ],
+   "answer": 0,
+   "evidence": "I like Bobo.",
+   "why_zh": "最後一頁說「I like Bobo.」，我喜歡的是 Bobo。",
+   "why_en": "The last page says \"I like Bobo.\""
+  }
+ ],
+ "2": [
+  {
+   "q": "Who wants a game?",
+   "options": [
+    "Cora",
+    "Chris",
+    "Mom"
+   ],
+   "answer": 0,
+   "evidence": "Cora wants a game.",
+   "why_zh": "故事一開始說「Cora wants a game.」，想玩遊戲的是 Cora。",
+   "why_en": "The story begins \"Cora wants a game.\""
+  },
+  {
+   "q": "Bobo jumps on what?",
+   "options": [
+    "Mom",
+    "the chair and the table",
+    "Cora"
+   ],
+   "answer": 1,
+   "evidence": "Bobo jumps on the chair and the table!",
+   "why_zh": "故事說 Bobo 跳到「the chair and the table」（椅子和桌子）上。",
+   "why_en": "The story says \"Bobo jumps on the chair and the table!\""
+  },
+  {
+   "q": "Who says, \"Chris, help!\"?",
+   "options": [
+    "Cora",
+    "Bobo",
+    "Mom"
+   ],
+   "answer": 2,
+   "evidence": "says Mom. \"Chris, help!",
+   "why_zh": "故事寫媽媽說「Chris, help!」，是媽媽在喊 Chris 幫忙。",
+   "why_en": "The story says Mom calls \"Chris, help!\""
+  }
+ ],
+ "3": [
+  {
+   "q": "Who says, \"Get up, get up, Cora!\"?",
+   "options": [
+    "Dad",
+    "Chris",
+    "Mom",
+    "Miss Lin"
+   ],
+   "answer": 2,
+   "evidence": "\"Get up, get up, Cora!\" says Mom.",
+   "why_zh": "故事寫「\"Get up, get up, Cora!\" says Mom.」，叫 Cora 起床的是媽媽。",
+   "why_en": "The story says \"Get up, get up, Cora!\" says Mom."
+  },
+  {
+   "q": "What color is the car?",
+   "options": [
+    "red",
+    "yellow",
+    "blue",
+    "white"
+   ],
+   "answer": 1,
+   "evidence": "She gets into the yellow car with Dad and Chris.",
+   "why_zh": "故事說 Cora 坐進「the yellow car」，車子是黃色的。",
+   "why_en": "Cora gets into \"the yellow car.\""
+  },
+  {
+   "q": "Who is Miss Lin?",
+   "options": [
+    "the teacher",
+    "Cora's mom",
+    "a girl at school",
+    "Chris's sister"
+   ],
+   "answer": 0,
+   "evidence": "\"Hello, I am Miss Lin,\" says the teacher.",
+   "why_zh": "故事說「\"Hello, I am Miss Lin,\" says the teacher.」，林老師是老師。",
+   "why_en": "The story says \"Hello, I am Miss Lin,\" says the teacher."
+  },
+  {
+   "q": "What does Chris say about school?",
+   "options": [
+    "School is big.",
+    "School is not fun.",
+    "School is fun!",
+    "School is far."
+   ],
+   "answer": 2,
+   "evidence": "School is fun!",
+   "why_zh": "Chris 對 Cora 說「School is fun!」（上學很好玩！）。",
+   "why_en": "Chris tells Cora, \"School is fun!\""
+  },
+  {
+   "q": "Cora runs away to Dad. What does she want?",
+   "options": [
+    "to sit with Miss Lin",
+    "to play with Chris",
+    "to get into the car",
+    "to go home"
+   ],
+   "answer": 3,
+   "evidence": "\"I want to go home,\" she says.",
+   "why_zh": "Cora 跑到爸爸身邊說「I want to go home」，她想回家。",
+   "why_en": "Cora runs to Dad and says, \"I want to go home.\""
+  }
+ ],
+ "4": [
+  {
+   "q": "Where is Grandpa now?",
+   "options": [
+    "at home",
+    "at school",
+    "at the park",
+    "at the gate"
+   ],
+   "answer": 2,
+   "evidence": "\"He is at the park now,\" says Mom.",
+   "why_zh": "媽媽說「He is at the park now」，爺爺現在在公園。",
+   "why_en": "Mom says, \"He is at the park now.\""
+  },
+  {
+   "q": "Why must Chris close the gate?",
+   "options": [
+    "Bobo can run away.",
+    "Cora is sad.",
+    "Grandpa is tall.",
+    "It is a game."
+   ],
+   "answer": 0,
+   "evidence": "Now close the gate! Bobo can run away!",
+   "why_zh": "Cora 說要關門，因為「Bobo can run away!」（Bobo 會跑掉）。",
+   "why_en": "Cora says to close the gate because \"Bobo can run away!\""
+  },
+  {
+   "q": "Where does Grandpa sit?",
+   "options": [
+    "on the gate",
+    "on a box",
+    "in a tree",
+    "on a bench"
+   ],
+   "answer": 3,
+   "evidence": "He sits on a bench with his friend.",
+   "why_zh": "故事說「He sits on a bench」，爺爺坐在長椅上。",
+   "why_en": "The story says \"He sits on a bench with his friend.\""
+  },
+  {
+   "q": "What is Grandpa doing with his friend?",
+   "options": [
+    "flying a kite",
+    "playing a game",
+    "opening a box",
+    "running"
+   ],
+   "answer": 1,
+   "evidence": "\"Playing a game with my friend.\"",
+   "why_zh": "爺爺回答「Playing a game with my friend.」，他在和朋友玩遊戲。",
+   "why_en": "Grandpa says he is \"Playing a game with my friend.\""
+  },
+  {
+   "q": "What is in Cora's box?",
+   "options": [
+    "a game",
+    "a dog",
+    "a kite",
+    "a tree"
+   ],
+   "answer": 2,
+   "evidence": "Cora opens her box. \"Look, Grandpa! A kite!\"",
+   "why_zh": "Cora 打開盒子說「Look, Grandpa! A kite!」，盒子裡是風箏。",
+   "why_en": "Cora opens her box and says, \"Look, Grandpa! A kite!\""
+  }
+ ],
+ "5": [
+  {
+   "q": "Where will they walk?",
+   "options": [
+    "to school",
+    "to the park",
+    "to the market",
+    "to Amy's house"
+   ],
+   "answer": 2,
+   "evidence": "We will walk to the market.",
+   "why_zh": "媽媽說「We will walk to the market.」，他們要走路去市場。",
+   "why_en": "Mom says, \"We will walk to the market.\""
+  },
+  {
+   "q": "What does Mom have at the gate?",
+   "options": [
+    "a big basket",
+    "a big box",
+    "a kite",
+    "her shoes"
+   ],
+   "answer": 0,
+   "evidence": "Mom is at the gate with a big basket.",
+   "why_zh": "故事說媽媽在門口，拿著「a big basket」（一個大籃子）。",
+   "why_en": "The story says \"Mom is at the gate with a big basket.\""
+  },
+  {
+   "q": "Who is Amy?",
+   "options": [
+    "Cora's sister",
+    "Mom's friend",
+    "the teacher",
+    "a girl at a gate"
+   ],
+   "answer": 3,
+   "evidence": "A girl stands at a gate. \"Hello, I am Amy,\" she says.",
+   "why_zh": "故事說有個女孩站在門口，說「Hello, I am Amy」，Amy 就是那個女孩。",
+   "why_en": "A girl stands at a gate and says, \"Hello, I am Amy.\""
+  },
+  {
+   "q": "Amy says, \"I know every shop in it.\" What does \"it\" mean here?",
+   "options": [
+    "the house",
+    "the market",
+    "the basket",
+    "the gate"
+   ],
+   "answer": 1,
+   "evidence": "\"I know the market,\" says Amy. \"I know every shop in it.",
+   "why_zh": "Amy 先說「I know the market」，所以後面的「it」指的是市場。",
+   "why_en": "Amy first says \"I know the market,\" so \"it\" means the market."
+  },
+  {
+   "q": "Mom says, \"Put your ___ on and come out.\"",
+   "options": [
+    "hats",
+    "coats",
+    "bags",
+    "shoes"
+   ],
+   "answer": 3,
+   "evidence": "Put your shoes on and come out.",
+   "why_zh": "媽媽說「Put your shoes on and come out.」，要大家穿上鞋子。",
+   "why_en": "Mom says, \"Put your shoes on and come out.\""
+  }
+ ],
+ "6": [
+  {
+   "q": "Who will take them to the market?",
+   "options": [
+    "Dad and Mom",
+    "Aunt and Uncle",
+    "Grandpa",
+    "Amy"
+   ],
+   "answer": 1,
+   "evidence": "Aunt and Uncle will come today! They will take us to the market.",
+   "why_zh": "媽媽說阿姨和叔叔會來，「They will take us to the market.」",
+   "why_en": "Mom says, \"Aunt and Uncle will come today! They will take us to the market.\""
+  },
+  {
+   "q": "What did Uncle have?",
+   "options": [
+    "a new red bag",
+    "a big basket",
+    "a very old camera",
+    "a kite"
+   ],
+   "answer": 2,
+   "evidence": "Uncle had a very old camera",
+   "why_zh": "故事說「Uncle had a very old camera」，紅色新包包是阿姨的。",
+   "why_en": "The story says \"Uncle had a very old camera.\" The new red bag was Aunt's."
+  },
+  {
+   "q": "Why must they wait?",
+   "options": [
+    "Cora is hungry.",
+    "Bobo ran away.",
+    "The market opens at night.",
+    "Aunt is late."
+   ],
+   "answer": 2,
+   "evidence": "the market opens at night, so we must wait.",
+   "why_zh": "媽媽說「the market opens at night, so we must wait」，因為夜市晚上才開。",
+   "why_en": "Mom says \"the market opens at night, so we must wait.\""
+  },
+  {
+   "q": "Where did Dad take Aunt and Uncle?",
+   "options": [
+    "to the market",
+    "to school",
+    "to the zoo",
+    "to the park"
+   ],
+   "answer": 3,
+   "evidence": "\"Let us show Aunt and Uncle the park,\" said Dad.",
+   "why_zh": "爸爸說「Let us show Aunt and Uncle the park」，他們先去公園。",
+   "why_en": "Dad said, \"Let us show Aunt and Uncle the park.\""
+  },
+  {
+   "q": "Why did the seesaw go down, but not up?",
+   "options": [
+    "Uncle was very tall and Cora was very short.",
+    "Cora was hungry.",
+    "Bobo jumped on it.",
+    "It was old."
+   ],
+   "answer": 0,
+   "evidence": "Uncle was very tall and Cora was very short.",
+   "why_zh": "故事說叔叔很高、Cora 很矮，兩邊差太多，所以翹翹板只下不上。",
+   "why_en": "The story says \"Uncle was very tall and Cora was very short,\" so the seesaw went down but not up."
+  }
+ ],
+ "7": [
+  {
+   "q": "Where do they want to go today?",
+   "options": [
+    "the park",
+    "the zoo",
+    "the market",
+    "school"
+   ],
+   "answer": 1,
+   "evidence": "\"Who wants to go to the zoo today?\" asked Dad.",
+   "why_zh": "爸爸問「Who wants to go to the zoo today?」，今天要去動物園。",
+   "why_en": "Dad asks, \"Who wants to go to the zoo today?\""
+  },
+  {
+   "q": "Who is Ben?",
+   "options": [
+    "Cora's teacher",
+    "a good kid who likes animals",
+    "a man at the zoo",
+    "Chris's brother"
+   ],
+   "answer": 1,
+   "evidence": "He is a good kid, and he likes animals as I do.",
+   "why_zh": "Chris 說 Ben「is a good kid, and he likes animals」，是喜歡動物的好孩子。",
+   "why_en": "Chris says Ben \"is a good kid, and he likes animals as I do.\""
+  },
+  {
+   "q": "Why is Chris sad?",
+   "options": [
+    "It is hot.",
+    "Ben has no hat.",
+    "He is tired.",
+    "Bobo is at home today."
+   ],
+   "answer": 3,
+   "evidence": "Bobo is at home today, so he is sad, and I am sad too.",
+   "why_zh": "Chris 說「Bobo is at home today, so he is sad, and I am sad too.」，因為 Bobo 不能一起去。",
+   "why_en": "Chris says, \"Bobo is at home today, so he is sad, and I am sad too.\""
+  },
+  {
+   "q": "\"Cora pushed hers in.\" What does \"hers\" mean here?",
+   "options": [
+    "her ticket",
+    "her hat",
+    "her bag",
+    "her shoes"
+   ],
+   "answer": 0,
+   "evidence": "Chris pushed his ticket in and the gate opened. Cora pushed hers in",
+   "why_zh": "前一句說 Chris 把他的票推進去，所以「hers」指的是 Cora 的票。",
+   "why_en": "Chris pushed \"his ticket\" in first, so \"hers\" means Cora's ticket."
+  },
+  {
+   "q": "What happened when Cora pushed her ticket in?",
+   "options": [
+    "The gate opened.",
+    "She lost her ticket.",
+    "The gate did not open.",
+    "Ben took it."
+   ],
+   "answer": 2,
+   "evidence": "Cora pushed hers in, but the gate did not open!",
+   "why_zh": "故事說「but the gate did not open!」，Cora 第一次推票時閘門沒有打開。",
+   "why_en": "The story says \"Cora pushed hers in, but the gate did not open!\""
+  }
+ ],
+ "8": [
+  {
+   "q": "When is Cora's birthday?",
+   "options": [
+    "today",
+    "last week",
+    "next week",
+    "next year"
+   ],
+   "answer": 2,
+   "evidence": "\"Next week is Cora's birthday,\" said Mom.",
+   "why_zh": "媽媽說「Next week is Cora's birthday」，Cora 的生日在下星期。",
+   "why_en": "Mom says, \"Next week is Cora's birthday.\""
+  },
+  {
+   "q": "What is a surprise party?",
+   "options": [
+    "a party Cora does not know about",
+    "a party at school",
+    "a party with no cake",
+    "a party for Chris"
+   ],
+   "answer": 0,
+   "evidence": "A party Cora does not know about.",
+   "why_zh": "媽媽解釋驚喜派對是「A party Cora does not know about.」，就是 Cora 不知道的派對。",
+   "why_en": "Mom says a surprise party is \"A party Cora does not know about.\""
+  },
+  {
+   "q": "What time is the party?",
+   "options": [
+    "one o'clock",
+    "three o'clock",
+    "seven o'clock",
+    "two o'clock"
+   ],
+   "answer": 1,
+   "evidence": "Three o'clock, so we must be ready before three o'clock.",
+   "why_zh": "媽媽說「Three o'clock」，派對在三點。",
+   "why_en": "Mom says, \"Three o'clock, so we must be ready before three o'clock.\""
+  },
+  {
+   "q": "What did Chris draw?",
+   "options": [
+    "a red dress",
+    "a pair of socks",
+    "a sofa",
+    "a big round cake with seven candles"
+   ],
+   "answer": 3,
+   "evidence": "Chris drew a big round cake with seven candles.",
+   "why_zh": "故事說「Chris drew a big round cake with seven candles.」，他畫了有七根蠟燭的圓蛋糕。",
+   "why_en": "The story says \"Chris drew a big round cake with seven candles.\""
+  },
+  {
+   "q": "Why does Mom think Cora will like the dress?",
+   "options": [
+    "Because it is big.",
+    "Because she likes red.",
+    "Because it has socks.",
+    "Because Chris drew it."
+   ],
+   "answer": 1,
+   "evidence": "\"Because she likes red.\"",
+   "why_zh": "媽媽說「Because she likes red.」，因為 Cora 喜歡紅色。",
+   "why_en": "Mom says, \"Because she likes red.\""
+  }
+ ],
+ "9": [
+  {
+   "q": "What is this week's homework about?",
+   "options": [
+    "animals",
+    "jobs",
+    "birthdays",
+    "the zoo"
+   ],
+   "answer": 1,
+   "evidence": "This week your homework is about jobs",
+   "why_zh": "林老師說「This week your homework is about jobs」，作業是寫職業。",
+   "why_en": "Miss Lin says, \"This week your homework is about jobs.\""
+  },
+  {
+   "q": "What is Chris's mom's job?",
+   "options": [
+    "a teacher",
+    "a secretary",
+    "a housewife",
+    "a businessman"
+   ],
+   "answer": 2,
+   "evidence": "\"She is a housewife,\" said Chris.",
+   "why_zh": "Chris 說「She is a housewife」，媽媽是家庭主婦。",
+   "why_en": "Chris says, \"She is a housewife.\""
+  },
+  {
+   "q": "How much money does a housewife get, Mom says?",
+   "options": [
+    "no money",
+    "a lot of money",
+    "a little money",
+    "money every day"
+   ],
+   "answer": 0,
+   "evidence": "A housewife gets no money",
+   "why_zh": "媽媽說「A housewife gets no money」，家庭主婦沒有薪水。",
+   "why_en": "Mom says, \"A housewife gets no money.\""
+  },
+  {
+   "q": "In Dad's office, who says what they should do?",
+   "options": [
+    "the secretary",
+    "Chris",
+    "Miss Lin",
+    "the boss"
+   ],
+   "answer": 3,
+   "evidence": "the boss says what we should do.",
+   "why_zh": "爸爸說「the boss says what we should do」，決定要做什麼的是老闆。",
+   "why_en": "Dad says, \"the boss says what we should do.\""
+  },
+  {
+   "q": "What does the secretary do?",
+   "options": [
+    "cooks and washes",
+    "writes the letters and knows where each paper is",
+    "calls the school",
+    "takes Chris to school"
+   ],
+   "answer": 1,
+   "evidence": "The secretary writes the letters, and also knows where each paper is.",
+   "why_zh": "爸爸說秘書「writes the letters, and also knows where each paper is」，負責寫信和管文件。",
+   "why_en": "Dad says, \"The secretary writes the letters, and also knows where each paper is.\""
+  }
+ ],
+ "10": [
+  {
+   "q": "Where will they put the year on paper?",
+   "options": [
+    "on the table",
+    "on the wall",
+    "in a box",
+    "on the clock"
+   ],
+   "answer": 1,
+   "evidence": "We make the year on paper and put it on the wall.",
+   "why_zh": "媽媽說「put it on the wall」，要把年曆貼在牆上。",
+   "why_en": "Mom says, \"We make the year on paper and put it on the wall.\""
+  },
+  {
+   "q": "Who writes the words?",
+   "options": [
+    "Cora",
+    "Mom",
+    "Chris",
+    "Dad"
+   ],
+   "answer": 2,
+   "evidence": "You draw, Chris writes the words, and I say the days.",
+   "why_zh": "媽媽說「Chris writes the words」，寫字的是 Chris。",
+   "why_en": "Mom says, \"Chris writes the words.\""
+  },
+  {
+   "q": "What is eleven at night?",
+   "options": [
+    "eleven p.m.",
+    "eleven a.m.",
+    "noon",
+    "a quarter past eleven"
+   ],
+   "answer": 0,
+   "evidence": "eleven at night is eleven p.m.",
+   "why_zh": "Chris 說「eleven at night is eleven p.m.」，晚上十一點是 p.m.。",
+   "why_en": "Chris says \"eleven at night is eleven p.m.\""
+  },
+  {
+   "q": "What does \"a quarter\" mean here?",
+   "options": [
+    "one of two",
+    "one of four",
+    "one of seven",
+    "one of twelve"
+   ],
+   "answer": 1,
+   "evidence": "One of four, like a quarter of a cake.",
+   "why_zh": "媽媽解釋 quarter 是「One of four」，四分之一，就像四分之一個蛋糕。",
+   "why_en": "Mom says a quarter is \"One of four, like a quarter of a cake.\""
+  },
+  {
+   "q": "Why does Chris think Friday is the best day?",
+   "options": [
+    "Monday comes after it.",
+    "It is a school day.",
+    "There is no school.",
+    "Saturday comes after it."
+   ],
+   "answer": 3,
+   "evidence": "\"Friday,\" said Chris, \"because Saturday comes after it.\"",
+   "why_zh": "Chris 說星期五最好，「because Saturday comes after it」，因為隔天就是星期六。",
+   "why_en": "Chris says Friday is best \"because Saturday comes after it.\""
+  }
+ ],
+ "11": [
+  {
+   "q": "Where will they stay for one night?",
+   "options": [
+    "at the top",
+    "by the sea",
+    "by the lake",
+    "under a big rock"
+   ],
+   "answer": 2,
+   "evidence": "we stay one night, by the lake.",
+   "why_zh": "爸爸說「we stay one night, by the lake」，他們要在湖邊過一晚。",
+   "why_en": "Dad says, \"we stay one night, by the lake.\""
+  },
+  {
+   "q": "What does Chris carry?",
+   "options": [
+    "the water",
+    "the rice",
+    "the warm clothes",
+    "the rope"
+   ],
+   "answer": 3,
+   "evidence": "Chris has the rope.",
+   "why_zh": "爸爸說「Chris has the rope.」，繩子由 Chris 拿。",
+   "why_en": "Dad says, \"Chris has the rope.\""
+  },
+  {
+   "q": "How long does it take to get to the top?",
+   "options": [
+    "one hour",
+    "two hours",
+    "a few minutes",
+    "all night"
+   ],
+   "answer": 1,
+   "evidence": "\"Two hours to the top,\" said Dad.",
+   "why_zh": "爸爸說「Two hours to the top」，到山頂要兩個小時。",
+   "why_en": "Dad says, \"Two hours to the top.\""
+  },
+  {
+   "q": "What did Cora find under the grass?",
+   "options": [
+    "a big brown seed and a small round door",
+    "a mouse",
+    "a rope",
+    "a small lake"
+   ],
+   "answer": 0,
+   "evidence": "Under the grass there was a seed, a big brown seed, and beside it a small round door.",
+   "why_zh": "故事說草下面有「a big brown seed」和旁邊的「a small round door」。",
+   "why_en": "The story says \"Under the grass there was a seed, a big brown seed, and beside it a small round door.\""
+  },
+  {
+   "q": "Why does Cora put the seed back?",
+   "options": [
+    "Dad tells her to.",
+    "The mouse needs it more than she does.",
+    "It is too big.",
+    "It is wet."
+   ],
+   "answer": 1,
+   "evidence": "The mouse needs it more than I do",
+   "why_zh": "Cora 說「The mouse needs it more than I do」，老鼠比她更需要這顆種子。",
+   "why_en": "Cora says, \"The mouse needs it more than I do.\""
+  }
+ ],
+ "12": [
+  {
+   "q": "Why does Cora say she is a member?",
+   "options": [
+    "She is in Chris's class.",
+    "She is the leader.",
+    "Her family is in the group.",
+    "Miss Lin said yes."
+   ],
+   "answer": 2,
+   "evidence": "I am a member of the family, and the family is in the group.",
+   "why_zh": "Cora 說「I am a member of the family, and the family is in the group.」，她是家人，家人在小組裡。",
+   "why_en": "Cora says, \"I am a member of the family, and the family is in the group.\""
+  },
+  {
+   "q": "What is a festival, Miss Lin says?",
+   "options": [
+    "a small class test",
+    "a big public day with games, food, music and people",
+    "a game for one child",
+    "a party at home"
+   ],
+   "answer": 1,
+   "evidence": "A big public day with games, food, music and people, a day for everyone.",
+   "why_zh": "林老師說 festival 是「A big public day with games, food, music and people」，大家一起參加的熱鬧日子。",
+   "why_en": "Miss Lin says a festival is \"A big public day with games, food, music and people, a day for everyone.\""
+  },
+  {
+   "q": "Why is the prize special this year?",
+   "options": [
+    "It is for a class, not for one child.",
+    "It is money.",
+    "It is a big cake.",
+    "Ben made it."
+   ],
+   "answer": 0,
+   "evidence": "Special because it is for a class, not for one child",
+   "why_zh": "林老師說獎品特別，「because it is for a class, not for one child」，是給全班的。",
+   "why_en": "Miss Lin says it is special \"because it is for a class, not for one child.\""
+  },
+  {
+   "q": "What does the class choose to collect?",
+   "options": [
+    "old paper",
+    "bottles",
+    "old books",
+    "old toys"
+   ],
+   "answer": 3,
+   "evidence": "\"Old toys, for the little children at the festival,\" said Amy.",
+   "why_zh": "Amy 說「Old toys, for the little children at the festival」，全班決定收集舊玩具。",
+   "why_en": "Amy says, \"Old toys, for the little children at the festival.\""
+  },
+  {
+   "q": "Why did the class choose Chris as the leader?",
+   "options": [
+    "Miss Lin picked him.",
+    "Ben said no.",
+    "Chris wanted to be the leader.",
+    "Cora asked them to."
+   ],
+   "answer": 1,
+   "evidence": "Everyone looked at Ben, and Ben said no, so they chose Chris.",
+   "why_zh": "故事說大家先看 Ben，「Ben said no, so they chose Chris」，Ben 不要，所以選了 Chris。",
+   "why_en": "The story says \"Everyone looked at Ben, and Ben said no, so they chose Chris.\""
+  }
+ ]
+}

@@ -606,6 +606,7 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
     <p class="body center" style="max-width:62ch;margin:14px auto 0">{Z("點一本書打開來讀。按「▶ 聽故事」，唸到的字會亮起來、自動翻頁；速度可以選 0.5～1.25 倍。",
         "Click a book to open it. Press '▶ listen to the story': each word lights up as it is read and the page turns; the speed can be 0.5x to 1.25x.")}</p>
     <div class="bp-shelf reveal">{shelf}</div>
+    <p class="body center" style="margin-top:22px">{Z("想知道孩子讀懂多少？<a href='/english-reading-comprehension/'>12 級免費閱讀測驗</a>：讀一段故事，回答幾題，立刻對答案。", "Want to know how much your child understands? 12 free reading tests (link): read a story, answer a few questions, check right away.")}</p>
   </div>
 </section>
 <div class="bo" id="bookOpen" role="dialog" aria-modal="true" aria-label="{Z("翻頁電子書", "flip book")}"><div class="bo-bg"></div>

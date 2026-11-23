@@ -1479,7 +1479,9 @@ def books_card(html, rel):
              f'<a class="bk-covers" href="{K["href"]}" data-book="{kind}" data-book-item="covers" tabindex="-1" aria-hidden="true">{covers}</a>'
              f'<div class="bk-txt"><span class="bk-tag">{K["tag"]}</span><b>{hook}</b><span>{line}</span>'
              f'<span class="bk-btns"><a class="btn btn-primary" href="{K["free"]}" data-book="{kind}" data-book-item="free">{K["free_t"]}</a>'
-             f'<a class="btn btn-outline" href="{K["href"]}" data-book="{kind}" data-book-item="page">{K["all_t"]}</a></span></div>'
+             f'<a class="btn btn-outline" href="{K["href"]}" data-book="{kind}" data-book-item="page">{K["all_t"]}</a></span>'
+             + (f'<a class="bk-more" href="/english-reading-comprehension/" data-book="readers" data-book-item="reading-tests" style="font-size:14px;font-weight:700">免費閱讀測驗 12 級（故事＋題目）→</a>' if kind == "readers" else "")
+             + f'</div>'
              f'</aside>{BOOKS_END}\n')
     return html[:at] + block + html[at:]
 

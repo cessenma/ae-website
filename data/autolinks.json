@@ -1392,6 +1392,16 @@
     "英文文案",
     "IG 文案"
    ]
+  },
+  {
+   "target": "english-reading-comprehension",
+   "kw": [
+    "國小英文閱讀測驗",
+    "國小英語閱讀測驗",
+    "英文閱讀測驗",
+    "英文閱讀練習"
+   ],
+   "not_from": "^(gept|ket|pet|fce|cambridge|toeic|ielts|toefl)"
   }
  ]
 }
