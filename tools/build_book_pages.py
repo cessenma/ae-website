@@ -307,6 +307,20 @@ CSS = """
 .bp-steps li{counter-increment:s;position:relative;padding:0 0 16px 46px;font-size:15.5px;line-height:1.8;color:var(--text-body)}
 .bp-steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:30px;height:30px;border-radius:10px;background:var(--blue);color:#fff;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;display:grid;place-items:center}
 .bp-steps b{color:var(--navy)}
+.bp-story{max-width:780px;margin:28px auto 0;display:grid;gap:22px}
+.bp-story>div{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start}
+.bp-story .q{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:var(--c);color:#fff;font:800 24px 'Baloo 2',sans-serif}
+.bp-story b{display:block;font-size:19.5px;line-height:1.5;color:var(--navy);margin-bottom:4px}
+.bp-story p{margin:0;font-size:15.5px;line-height:1.9;color:var(--text-body)}
+.bp-ft-h{text-align:center;font-family:'DM Serif Display','Noto Serif TC',serif;font-size:clamp(24px,3.4vw,34px);color:var(--navy);margin:48px 0 0}
+.bp-ft-h em{color:var(--blue)}
+.bp-ft{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;margin-top:22px}
+.bp-ft figure{margin:0}
+.bp-ft img{width:100%;height:auto;display:block;border-radius:14px;border:1px solid rgba(26,39,82,.1);box-shadow:0 12px 32px rgba(26,39,82,.14)}
+.bp-ft figcaption{margin-top:12px;text-align:center;font-size:14px;line-height:1.6;color:var(--text-body)}
+.bp-ft figcaption b{display:block;color:var(--navy);font-size:16.5px}
+.bp-ft .ar{font:800 36px/1 'Baloo 2',sans-serif;color:var(--blue)}
+@media (max-width:760px){.bp-ft{grid-template-columns:1fr}.bp-ft .ar{justify-self:center;transform:rotate(90deg)}.bp-story>div{grid-template-columns:42px 1fr;gap:12px}.bp-story .q{width:42px;height:42px;border-radius:13px;font-size:20px}}
 .bp-h1s{display:block;font-family:'DM Sans','Noto Sans TC',sans-serif;font-style:normal;font-weight:700;font-size:.34em;letter-spacing:.02em;color:var(--blue);margin-top:12px;line-height:1.5}
 .bp-loop{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
 @media (max-width:760px){.bp-loop{grid-template-columns:1fr}}
@@ -547,6 +561,40 @@ def readers_page():
          ("set", Z("一個階段 4 級 12 本", "one stage, 4 levels, 12 books"), P_SET, STORE["readers_sets"].get("1-4", "")),
          ("all", Z("全套 12 級 36 本", "all 12 levels, 36 books"), P_ALL, STORE["readers_sets"].get("all", ""))],
         under=f'<p class="bp-gline">{Z("買全套 36 本：讀完覺得孩子沒有進步，12 個月內全額退費。", "Buy all 36: if you finish them and feel your child has not improved, a full refund within 12 months.")}<a href="#our-promise">{Z("看我們的保證 →", "see our promise →")}</a></p>'))
+
+    # the story (Chris 11-27: "we need to portray a narrative that makes this convincing"): why a child who has
+    # memorised the words still cannot read, and what these books do about it. Three beats, then one real page
+    # from Level 1 beside one from Level 12. Hu & Nation's 98% figure is given as an estimate, with the note that
+    # later replications disagree on the exact share (Kremmel et al. 2023; Webb et al. 2025). Beat 1 is the
+    # school's own classroom observation, not a study: Chris to confirm it in the gloss.
+    w12 = words(12)
+    beats = [("#e0a800", Z("單字是一個一個背的", "words are learned one at a time"),
+              Z("學校的單字是一課一課教、一個一個考的。這些字，孩子很少有機會在一整頁英文裡再遇到。認得單字，和讀得懂一頁故事，是兩件事。",
+                "School words are taught lesson by lesson and tested one at a time. A child rarely gets to meet those words again inside a whole page of English. Knowing words and reading a page of a story are two different things.")),
+             ("#CE82FF", Z("拿到的書太難", "the books they are handed are too hard"),
+              Z("一項常被引用的研究估計，要自己讀懂一篇文章，大約 98% 的字要先認得，也就是 50 個字裡只能有 1 個生字（<a href='https://nflrc.hawaii.edu/rfl/item/43' target='_blank' rel='noopener' lang='en'>Hu &amp; Nation, 2000</a>；後來的研究對確切的比例看法不一，方向相同：認得的字越多，讀得越懂）。寫給英語母語孩子的繪本，不是照台灣學校的字表寫的。生字一多，孩子就停下來，然後說：「我不會讀英文。」",
+                "One often-cited study estimates that to understand a text unaided, a reader needs to know about 98% of its words, that is, 1 unknown word in 50 (Hu & Nation, 2000; later studies disagree on the exact share, but point the same way: the more of the words you know, the more you understand). Picture books written for native-speaking children are not written to Taiwan's school word list. When the unknown words pile up, the child stops, and says: 'I can't read English.'")),
+             ("#06C755", Z("所以我們把學校的字，寫成讀得下去的故事", "so we wrote the school's words into stories a child can get through"),
+              Z(f"這 36 本書只用學校字表上的字（角色名字除外）。第 1 級的 3 本一共只用 {cum[0]} 個學校單字，之後每一級加 {min(lv_new[1:])} 到 {max(lv_new)} 個新字，分在 3 本書裡一再出現；每一頁都有整頁插圖，還會唸給孩子聽。書讀得下去，孩子才會一本接一本讀。",
+                f"These 36 books use only words on the school list (apart from the characters' names). The 3 books of Level 1 use just {cum[0]} school words in all; each level after that adds {min(lv_new[1:])} to {max(lv_new)} new words, spread over 3 books and met again and again; every page has a full-page picture and is read aloud to the child. A child who can get through a book goes on to the next one."))]
+    bc = "".join(f'<div style="--c:{c}"><span class="q">{i}</span><div><b>{t}</b><p>{p_}</p></div></div>' for i, (c, t, p_) in enumerate(beats, 1))
+    out.append(f"""<section class="section" id="the-story" style="padding-bottom:20px">
+  <div class="wrap">
+    {h2(Z("為什麼寫這套書", "why we wrote these books"), "背了單字為什麼還是不會讀", Z("背了單字，<em style='white-space:nowrap'>為什麼還是不會讀？</em>", "they memorised the words, so why can't they read?"), "yellow")}
+    <div class="bp-story reveal">{bc}</div>
+    <h3 class="bp-ft-h">{Z("從這一頁，<em>讀到這一頁</em>", "from this page to this page")}</h3>
+    <div class="bp-ft reveal">
+      <figure><img src="/assets/img/readers/spreads/level-01-1c.webp" alt="{Z("第 1 級內頁：一頁兩句", "a Level 1 page: two sentences")}" width="960" height="681" loading="lazy" decoding="async">
+        <figcaption><b>{Z("第 1 級：一頁一兩句", "Level 1: a sentence or two a page")}</b>{Z(f"每本 {min(words(1))}–{max(words(1))} 字，讀過 {cum[0]} 個學校單字", f"{min(words(1))}–{max(words(1))} words a book, {cum[0]} school words read")}</figcaption></figure>
+      <span class="ar" aria-hidden="true">→</span>
+      <figure><img src="/assets/img/readers/spreads/level-12-12b.webp" alt="{Z("第 12 級內頁：一頁一整段", "a Level 12 page: a full paragraph")}" width="960" height="681" loading="lazy" decoding="async">
+        <figcaption><b>{Z("第 12 級：一頁一整段", "Level 12: a full paragraph a page")}</b>{Z(f"每本約 {n(min(w12))}–{n(max(w12))} 字，累積讀過 {n(cum[-1])} 個學校單字", f"about {n(min(w12))}–{n(max(w12))} words a book, {n(cum[-1])} school words read in all")}</figcaption></figure>
+    </div>
+    <p class="body center" style="max-width:64ch;margin:22px auto 0">{Z("兩頁都是書裡的第 14 頁。中間隔著 12 級、36 本書，每一級只比前一級難一點。<b>這套書教孩子讀英文的方法，不是背更多單字，是把學過的字一本一本讀熟。</b>",
+        "Both are page 14 of their book. Between them are 12 levels and 36 books, each level only a little harder than the one before. The way these books teach a child to read English is not more words to memorise; it is the words already learned, read until they are familiar, one book after another.")}</p>
+  </div>
+</section>
+""")
 
     # how it teaches (11-27): the one routine every book uses, and the 12 levels as a staircase.
     # Listening times are measured: the 1x read-aloud of all 36 flip books (ffprobe, 11-27) runs 74–86 s a book at

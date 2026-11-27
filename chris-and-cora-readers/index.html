@@ -211,6 +211,20 @@ function h(ev){
 .bp-steps li{counter-increment:s;position:relative;padding:0 0 16px 46px;font-size:15.5px;line-height:1.8;color:var(--text-body)}
 .bp-steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:30px;height:30px;border-radius:10px;background:var(--blue);color:var(--navy);font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;display:grid;place-items:center}
 .bp-steps b{color:var(--navy)}
+.bp-story{max-width:780px;margin:28px auto 0;display:grid;gap:22px}
+.bp-story>div{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start}
+.bp-story .q{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:var(--c);color:var(--navy);font:800 24px 'Baloo 2',sans-serif}
+.bp-story b{display:block;font-size:19.5px;line-height:1.5;color:var(--navy);margin-bottom:4px}
+.bp-story p{margin:0;font-size:15.5px;line-height:1.9;color:var(--text-body)}
+.bp-ft-h{text-align:center;font-family:'DM Serif Display','Noto Serif TC',serif;font-size:clamp(24px,3.4vw,34px);color:var(--navy);margin:48px 0 0}
+.bp-ft-h em{color:var(--blue-ink)}
+.bp-ft{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;margin-top:22px}
+.bp-ft figure{margin:0}
+.bp-ft img{width:100%;height:auto;display:block;border-radius:14px;border:1px solid rgba(26,39,82,.1);box-shadow:0 12px 32px rgba(26,39,82,.14)}
+.bp-ft figcaption{margin-top:12px;text-align:center;font-size:14px;line-height:1.6;color:var(--text-body)}
+.bp-ft figcaption b{display:block;color:var(--navy);font-size:16.5px}
+.bp-ft .ar{font:800 36px/1 'Baloo 2',sans-serif;color:var(--blue-ink)}
+@media (max-width:760px){.bp-ft{grid-template-columns:1fr}.bp-ft .ar{justify-self:center;transform:rotate(90deg)}.bp-story>div{grid-template-columns:42px 1fr;gap:12px}.bp-story .q{width:42px;height:42px;border-radius:13px;font-size:20px}}
 .bp-h1s{display:block;font-family:'DM Sans','Noto Sans TC',sans-serif;font-style:normal;font-weight:700;font-size:.34em;letter-spacing:.02em;color:var(--blue-ink);margin-top:12px;line-height:1.5}
 .bp-loop{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
 @media (max-width:760px){.bp-loop{grid-template-columns:1fr}}
@@ -302,7 +316,7 @@ Promise.all(im.map(e=>e.decode?e.decode().catch(()=>{}):0)).then(go);setTimeout(
 </section>
 <section class="pkm-sec" id="buy">
   <div class="wrap">
-<!-- AE:TOC --><nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span><a href="#每一本書都是同樣三步">每一本書，都是同樣三步</a><a href="#為什麼選這套">為什麼選這一套</a><a href="#圖是-AI-畫的故事是老師寫的">圖是 AI 畫的，故事是老師寫的</a><a href="#第-1-級-3-本免費讀">第 1 級 3 本，整本免費讀</a><a href="#孩子在哪個階段">孩子在哪個階段？</a><a href="#12-級36-本一覽">12 級 36 本，每一本都在教孩子讀</a><a href="#陪孩子讀不需要英文很好">陪孩子讀，不需要英文很好</a><a href="#分級讀本常見問題">購買前，大概會想問的</a></nav><!-- /AE:TOC -->
+<!-- AE:TOC --><nav class="pg-toc" aria-label="本頁內容"><span class="lbl">本頁內容</span><a href="#背了單字為什麼還是不會讀">背了單字，為什麼還是不會讀？</a><a href="#每一本書都是同樣三步">每一本書，都是同樣三步</a><a href="#為什麼選這套">為什麼選這一套</a><a href="#圖是-AI-畫的故事是老師寫的">圖是 AI 畫的，故事是老師寫的</a><a href="#第-1-級-3-本免費讀">第 1 級 3 本，整本免費讀</a><a href="#孩子在哪個階段">孩子在哪個階段？</a><a href="#12-級36-本一覽">12 級 36 本，每一本都在教孩子讀</a><a href="#陪孩子讀不需要英文很好">陪孩子讀，不需要英文很好</a><a href="#分級讀本常見問題">購買前，大概會想問的</a></nav><!-- /AE:TOC -->
 
     <aside class="pkm" id="buy-box">
       <p class="pkm-t">想教孩子自己讀英文？<b>Chris and Cora 英語<a href="/graded-readers-guide/" data-al="1">分級讀本</a></b>，12 級 36 本，每本附 PDF 和會唸給孩子聽的翻頁電子書：</p>
@@ -315,6 +329,21 @@ Promise.all(im.map(e=>e.decode?e.decode().catch(()=>{}):0)).then(go);setTimeout(
 b.querySelectorAll(".pkm-tier input").forEach(r=>r.addEventListener("change",function(){const d=this.dataset;l.href=d.line;c.href=d.ls;
 l.dataset.bookItem="line-"+d.item;c.dataset.bookItem=d.item;l.dataset.bookPrice=c.dataset.bookPrice=d.price;
 if(typeof window.gtag==="function")gtag("event","book_pick",{product:"readers",item:d.item,page_path:location.pathname})}))})()</script>
+<section class="section" id="the-story" style="padding-bottom:20px">
+  <div class="wrap">
+    <div class="center stack reveal"><span class="eyebrow eyebrow-yellow">為什麼寫這套書</span><h2 id="背了單字為什麼還是不會讀">背了單字，<em style='white-space:nowrap'>為什麼還是不會讀？</em></h2></div>
+    <div class="bp-story reveal"><div style="--c:#e0a800"><span class="q">1</span><div><b>單字是一個一個背的</b><p>學校的單字是一課一課教、一個一個考的。這些字，孩子很少有機會在一整頁英文裡再遇到。認得單字，和讀得懂一頁故事，是兩件事。</p></div></div><div style="--c:#CE82FF"><span class="q">2</span><div><b>拿到的書太難</b><p>一項常被引用的研究估計，要自己讀懂一篇文章，大約 98% 的字要先認得，也就是 50 個字裡只能有 1 個生字（<a href='https://nflrc.hawaii.edu/rfl/item/43' target='_blank' rel='noopener' lang='en'>Hu &amp; Nation, 2000</a>；後來的研究對確切的比例看法不一，方向相同：認得的字越多，讀得越懂）。寫給英語母語孩子的<a href="/english-picture-books-guide/" data-al="1">繪本</a>，不是照台灣學校的字表寫的。生字一多，孩子就停下來，然後說：「我不會讀英文。」</p></div></div><div style="--c:#06C755"><span class="q">3</span><div><b>所以我們把學校的字，寫成讀得下去的故事</b><p>這 36 本書只用學校字表上的字（角色名字除外）。第 1 級的 3 本一共只用 26 個學校單字，之後每一級加 32 到 165 個新字，分在 3 本書裡一再出現；每一頁都有整頁插圖，還會唸給孩子聽。書讀得下去，孩子才會一本接一本讀。</p></div></div></div>
+    <h3 id="從這一頁讀到這一頁" class="bp-ft-h">從這一頁，<em>讀到這一頁</em></h3>
+    <div class="bp-ft reveal">
+      <figure><img src="/assets/img/readers/spreads/level-01-1c.webp" alt="第 1 級內頁：一頁兩句" width="960" height="681" loading="lazy" decoding="async">
+        <figcaption><b>第 1 級：一頁一兩句</b>每本 149–168 字，讀過 26 個學校單字</figcaption></figure>
+      <span class="ar" aria-hidden="true">→</span>
+      <figure><img src="/assets/img/readers/spreads/level-12-12b.webp" alt="第 12 級內頁：一頁一整段" width="960" height="681" loading="lazy" decoding="async">
+        <figcaption><b>第 12 級：一頁一整段</b>每本約 2,095–2,100 字，累積讀過 1,199 個學校單字</figcaption></figure>
+    </div>
+    <p class="body center" style="max-width:64ch;margin:22px auto 0">兩頁都是書裡的第 14 頁。中間隔著 12 級、36 本書，每一級只比前一級難一點。<b>這套書教孩子讀英文的方法，不是背更多單字，是把學過的字一本一本讀熟。</b></p>
+  </div>
+</section>
 <section class="section" id="how-it-works" style="padding-bottom:20px">
   <div class="wrap">
     <div class="center stack reveal"><span class="eyebrow eyebrow-green">怎麼教</span><h2 id="每一本書都是同樣三步">每一本書，<em>都是同樣三步</em></h2></div>

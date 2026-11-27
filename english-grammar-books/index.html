@@ -211,6 +211,20 @@ function h(ev){
 .bp-steps li{counter-increment:s;position:relative;padding:0 0 16px 46px;font-size:15.5px;line-height:1.8;color:var(--text-body)}
 .bp-steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:30px;height:30px;border-radius:10px;background:var(--blue);color:var(--navy);font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;display:grid;place-items:center}
 .bp-steps b{color:var(--navy)}
+.bp-story{max-width:780px;margin:28px auto 0;display:grid;gap:22px}
+.bp-story>div{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start}
+.bp-story .q{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:var(--c);color:var(--navy);font:800 24px 'Baloo 2',sans-serif}
+.bp-story b{display:block;font-size:19.5px;line-height:1.5;color:var(--navy);margin-bottom:4px}
+.bp-story p{margin:0;font-size:15.5px;line-height:1.9;color:var(--text-body)}
+.bp-ft-h{text-align:center;font-family:'DM Serif Display','Noto Serif TC',serif;font-size:clamp(24px,3.4vw,34px);color:var(--navy);margin:48px 0 0}
+.bp-ft-h em{color:var(--blue-ink)}
+.bp-ft{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;margin-top:22px}
+.bp-ft figure{margin:0}
+.bp-ft img{width:100%;height:auto;display:block;border-radius:14px;border:1px solid rgba(26,39,82,.1);box-shadow:0 12px 32px rgba(26,39,82,.14)}
+.bp-ft figcaption{margin-top:12px;text-align:center;font-size:14px;line-height:1.6;color:var(--text-body)}
+.bp-ft figcaption b{display:block;color:var(--navy);font-size:16.5px}
+.bp-ft .ar{font:800 36px/1 'Baloo 2',sans-serif;color:var(--blue-ink)}
+@media (max-width:760px){.bp-ft{grid-template-columns:1fr}.bp-ft .ar{justify-self:center;transform:rotate(90deg)}.bp-story>div{grid-template-columns:42px 1fr;gap:12px}.bp-story .q{width:42px;height:42px;border-radius:13px;font-size:20px}}
 .bp-h1s{display:block;font-family:'DM Sans','Noto Sans TC',sans-serif;font-style:normal;font-weight:700;font-size:.34em;letter-spacing:.02em;color:var(--blue-ink);margin-top:12px;line-height:1.5}
 .bp-loop{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
 @media (max-width:760px){.bp-loop{grid-template-columns:1fr}}
