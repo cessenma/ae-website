@@ -1301,5 +1301,29 @@
  "english-reading-comprehension": {
   "description": "免費國小英文閱讀測驗 12 級：每一級先讀一段真實的英文故事、可以聽美式朗讀，再線上回答問題、立刻對答案，每題都有中文解說，不用註冊、不用下載。",
   "title": "國小英文閱讀測驗：12 級免費線上作答，附故事朗讀與中文解說｜埃森美語"
+ },
+ "english-stories/three-little-pigs": {
+  "description": "三隻小豬的英文是 The Three Little Pigs。完整英文故事 214 字、6 張插圖、逐段中文對照與美式朗讀，附故事單字、5 題閱讀測驗和免費 A4 列印版 PDF。",
+  "title": "三隻小豬英文：The Three Little Pigs 中英對照＋朗讀｜埃森美語"
+ },
+ "english-stories/tortoise-and-hare": {
+  "description": "龜兔賽跑的英文是 The Tortoise and the Hare。完整英文故事 177 字、6 張插圖、逐段中文對照與美式朗讀，附故事單字、5 題閱讀測驗和免費 A4 列印版 PDF。",
+  "title": "龜兔賽跑英文：The Tortoise and the Hare｜埃森美語"
+ },
+ "english-stories/boy-who-cried-wolf": {
+  "description": "狼來了的英文是 The Boy Who Cried Wolf。完整英文故事 188 字、6 張插圖、逐段中文對照與美式朗讀，附故事單字、5 題閱讀測驗和免費 A4 列印版 PDF。",
+  "title": "狼來了英文：The Boy Who Cried Wolf 中英對照＋朗讀｜埃森美語"
+ },
+ "english-stories/cinderella": {
+  "description": "灰姑娘的英文是 Cinderella。完整英文故事 213 字、6 張插圖、逐段中文對照與美式朗讀，附故事單字、5 題閱讀測驗和免費 A4 列印版 PDF。",
+  "title": "灰姑娘英文故事：Cinderella 中英對照、朗讀、PDF｜埃森美語"
+ },
+ "english-stories/nian-monster": {
+  "description": "年獸的故事的英文是 The Story of Nian。完整英文故事 197 字、6 張插圖、逐段中文對照與美式朗讀，附故事單字、5 題閱讀測驗和免費 A4 列印版 PDF。",
+  "title": "年獸的故事英文：The Story of Nian 中英對照＋朗讀｜埃森美語"
+ },
+ "english-stories": {
+  "description": "免費英文故事 5 篇：三隻小豬、龜兔賽跑、狼來了、灰姑娘、年獸的故事。用簡單英文重寫，每段有插圖、中文對照和美式朗讀，附閱讀測驗與 A4 列印版 PDF。",
+  "title": "英文故事：經典童話中英對照，附朗讀、閱讀測驗與免費 PDF｜埃森美語"
  }
 }

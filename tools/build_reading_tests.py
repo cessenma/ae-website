@@ -111,7 +111,7 @@ document.getElementById("rtScore").textContent=ok+" / "+n;document.getElementByI
 if(typeof gtag==="function")gtag("event","reading_test_check",{score:ok,total:n,page_path:location.pathname})})})()</script>"""
 
 
-def shell(slug, title, desc, crumb, h1, lead, img, img_alt, main_html, extra_head=""):
+def shell(slug, title, desc, crumb, h1, lead, img, img_alt, main_html, extra_head="", eyebrow=None):
     t = open(TEMPLATE, encoding="utf-8").read()
     url = f"{ORIGIN}/{slug}/"
     t = re.sub(r"<title>.*?</title>", f"<title>{esc(title)}</title>", t, count=1, flags=re.S)
@@ -136,7 +136,7 @@ def shell(slug, title, desc, crumb, h1, lead, img, img_alt, main_html, extra_hea
   <div class="bg-deco"></div>
   <div class="wrap">
     <div class="breadcrumb reveal">{crumb}</div>
-    <span class="eyebrow eyebrow-green reveal">{Z("免費線上閱讀測驗", "free online reading test")}</span>
+    <span class="eyebrow eyebrow-green reveal">{eyebrow or Z("免費線上閱讀測驗", "free online reading test")}</span>
     <h1 class="reveal d1">{h1}</h1>
     <div class="divider reveal d1"></div>
     <p class="body reveal d2">{lead}</p>
@@ -230,6 +230,7 @@ def hub_page(rows):
     <div class="center stack reveal"><span class="eyebrow eyebrow-green">{Z("怎麼用", "how to use")}</span><h2 id="怎麼用">{Z("三個<em>小建議</em>", "three tips")}</h2></div>
     <ol class="rt-steps reveal">{"".join(f"<li>{s}</li>" for s in steps)}</ol>
     <p class="body center" style="margin-top:8px">{Z(f"每一份測驗都是 <a href='/{READERS}/'>Chris and Cora 分級讀本</a>的真實內頁：12 級 36 本，故事在台灣，用學校的教育部 1,200 字表。", f"Every test is real pages from the Chris and Cora readers: 12 levels, 36 books set in Taiwan, using the school's MOE 1,200-word list.")}</p>
+    <p class="body center" style="margin-top:8px">{Z("想先讀孩子聽過的故事？<a href='/english-stories/'>經典英文故事</a>：三隻小豬、龜兔賽跑、灰姑娘，每篇都有中文對照和朗讀。", "Rather start with a story your child already knows? Classic stories in English (link): Three Little Pigs, Tortoise and the Hare, Cinderella, each with Chinese and read-aloud.")}</p>
   </div>
 </section>
 """

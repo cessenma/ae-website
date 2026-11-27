@@ -359,6 +359,12 @@ Facts taken from each platform's own site and terms (checked October 2026); thir
 - [國小英文閱讀測驗第 11 級：The Mountain Night](https://americanenglish.com.tw/english-reading-comprehension/level-11/): 免費國小英文閱讀測驗第 11 級（讀整段故事）：先讀 Chris and Cora 分級讀本《The Mountain Night》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。
 - [國小英文閱讀測驗第 12 級：The Festival on the Hill](https://americanenglish.com.tw/english-reading-comprehension/level-12/): 免費國小英文閱讀測驗第 12 級（讀整段故事）：先讀 Chris and Cora 分級讀本《The Festival on the Hill》前 4 頁、可以聽朗讀，再線上回答 5 題，每題附中文解說。
 - [國小英文閱讀測驗：12 級免費線上作答，附故事朗讀與中文解說](https://americanenglish.com.tw/english-reading-comprehension/): 免費國小英文閱讀測驗 12 級：每一級先讀一段真實的英文故事、可以聽美式朗讀，再線上回答問題、立刻對答案，每題都有中文解說，不用註冊、不用下載。
+- [三隻小豬英文：The Three Little Pigs 中英對照＋朗讀](https://americanenglish.com.tw/english-stories/three-little-pigs/): 三隻小豬的英文是 The Three Little Pigs。完整英文故事 214 字、6 張插圖、逐段中文對照與美式朗讀，附故事單字、5 題閱讀測驗和免費 A4 列印版 PDF。
+- [龜兔賽跑英文：The Tortoise and the Hare](https://americanenglish.com.tw/english-stories/tortoise-and-hare/): 龜兔賽跑的英文是 The Tortoise and the Hare。完整英文故事 177 字、6 張插圖、逐段中文對照與美式朗讀，附故事單字、5 題閱讀測驗和免費 A4 列印版 PDF。
+- [狼來了英文：The Boy Who Cried Wolf 中英對照＋朗讀](https://americanenglish.com.tw/english-stories/boy-who-cried-wolf/): 狼來了的英文是 The Boy Who Cried Wolf。完整英文故事 188 字、6 張插圖、逐段中文對照與美式朗讀，附故事單字、5 題閱讀測驗和免費 A4 列印版 PDF。
+- [灰姑娘英文故事：Cinderella 中英對照、朗讀、PDF](https://americanenglish.com.tw/english-stories/cinderella/): 灰姑娘的英文是 Cinderella。完整英文故事 213 字、6 張插圖、逐段中文對照與美式朗讀，附故事單字、5 題閱讀測驗和免費 A4 列印版 PDF。
+- [年獸的故事英文：The Story of Nian 中英對照＋朗讀](https://americanenglish.com.tw/english-stories/nian-monster/): 年獸的故事的英文是 The Story of Nian。完整英文故事 197 字、6 張插圖、逐段中文對照與美式朗讀，附故事單字、5 題閱讀測驗和免費 A4 列印版 PDF。
+- [英文故事：經典童話中英對照，附朗讀、閱讀測驗與免費 PDF](https://americanenglish.com.tw/english-stories/): 免費英文故事 5 篇：三隻小豬、龜兔賽跑、狼來了、灰姑娘、年獸的故事。用簡單英文重寫，每段有插圖、中文對照和美式朗讀，附閱讀測驗與 A4 列印版 PDF。
 <!-- AE:LLMS-MORE end -->
 
 ## Citable facts

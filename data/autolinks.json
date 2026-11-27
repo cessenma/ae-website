@@ -1394,6 +1394,17 @@
    ]
   },
   {
+   "target": "english-stories",
+   "kw": [
+    "英文童話故事",
+    "英文床邊故事",
+    "英文童話",
+    "英文故事",
+    "英語故事"
+   ],
+   "not_from": "^(english-stories|chris-and-cora-readers)"
+  },
+  {
    "target": "english-reading-comprehension",
    "kw": [
     "國小英文閱讀測驗",

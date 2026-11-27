@@ -67,6 +67,10 @@
 "date": "2026-10-13",
 "hash": "87bdb769d3f89fad1302d21951c3d3c0"
 },
+"assets/downloads/ae-boy-who-cried-wolf-story-a4.pdf": {
+"date": "2026-11-27",
+"hash": "9fd601bf93aa4ab79d9229c5b579ac21"
+},
 "assets/downloads/ae-breakfast-shop-english-menu-a4.pdf": {
 "date": "2026-11-18",
 "hash": "a0fb47f293bd5b26e7c175dd07db7b1b"
@@ -102,6 +106,10 @@
 "assets/downloads/ae-christmas-english-a4.pdf": {
 "date": "2026-11-18",
 "hash": "149a4d70c6353d7eb50e759307293bd3"
+},
+"assets/downloads/ae-cinderella-story-a4.pdf": {
+"date": "2026-11-27",
+"hash": "7b7423d54d46684a8e831b4a7b098221"
 },
 "assets/downloads/ae-colors-flashcards-a4.pdf": {
 "date": "2026-10-01",
@@ -411,6 +419,10 @@
 "date": "2026-11-18",
 "hash": "cd01631f48e075b5543027f537866c4e"
 },
+"assets/downloads/ae-nian-monster-story-a4.pdf": {
+"date": "2026-11-27",
+"hash": "4b646528896065a3a2a92c2b784b6d6e"
+},
 "assets/downloads/ae-night-market-english-a4.pdf": {
 "date": "2026-11-18",
 "hash": "a9df0d43ee0136e559fecb127d929967"
@@ -487,9 +499,17 @@
 "date": "2026-11-18",
 "hash": "55ae2e2d741522c502d997bd387f4e51"
 },
+"assets/downloads/ae-three-little-pigs-story-a4.pdf": {
+"date": "2026-11-27",
+"hash": "26491bf6970031432be5d1a6f0f3eda1"
+},
 "assets/downloads/ae-time-english-a4.pdf": {
 "date": "2026-11-18",
 "hash": "6e4bd8b80d53109bf868f1fddc6608d4"
+},
+"assets/downloads/ae-tortoise-and-hare-story-a4.pdf": {
+"date": "2026-11-27",
+"hash": "ee2bbfaaabc27b67581880ea2799daeb"
 },
 "assets/downloads/ae-travel-english-a4.pdf": {
 "date": "2026-11-18",
@@ -1088,8 +1108,8 @@
 "hash": "7fc5b5815e2bcddcaf0f24ab5fb6ba0c"
 },
 "english-reading-comprehension": {
-"date": "2026-11-23",
-"hash": "10a68759567e35d6c90681a050de7d38"
+"date": "2026-11-27",
+"hash": "d0fd24287b8f25e46500379baf238e02"
 },
 "english-reading-comprehension/level-1": {
 "date": "2026-11-23",
@@ -1158,6 +1178,30 @@
 "english-speaking-practice": {
 "date": "2026-09-15",
 "hash": "3d4712fc83428e26fb0d5201a8d7ada1"
+},
+"english-stories": {
+"date": "2026-11-27",
+"hash": "2d6f7bff6c9d2b6fcafa11c1c19e3fa6"
+},
+"english-stories/boy-who-cried-wolf": {
+"date": "2026-11-27",
+"hash": "728a63dfffe703fc7f2071bdee2f7302"
+},
+"english-stories/cinderella": {
+"date": "2026-11-27",
+"hash": "f346149ffd62d32803b16cd99947c58f"
+},
+"english-stories/nian-monster": {
+"date": "2026-11-27",
+"hash": "f30c3213e029e809581da3dcd2f393fe"
+},
+"english-stories/three-little-pigs": {
+"date": "2026-11-27",
+"hash": "7f027a260945dec96a25b35db28eb4fb"
+},
+"english-stories/tortoise-and-hare": {
+"date": "2026-11-27",
+"hash": "b12e668982dd44207caa6753279bcabc"
 },
 "english-story-repetition": {
 "date": "2026-10-26",
