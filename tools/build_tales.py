@@ -177,7 +177,7 @@ def tale_page(t, idx):
     <div class="cta-box reveal" id="rtNext" style="margin-top:26px">
       <span class="eyebrow eyebrow-yellow">{Z("讀得懂這一篇？", "could read this one?")}</span>
       <h2 id="下一步" style="margin-top:14px">{Z("下一步：<em>每天讀一本</em>，教孩子自己讀英文", "next: a book a day, to teach your child to read English on their own")}</h2>
-      <p class="body" style="max-width:580px;margin:16px auto 0">{Z("Chris and Cora 分級讀本有 36 本這樣的故事，分 12 級，一級一級加新字，每本都可以邊聽邊讀。第 1 級 3 本整本免費。", "Chris and Cora has 36 stories like this in 12 levels, adding new words level by level, all with read-aloud. Level 1 (3 books) is free in full.")}</p>
+      <p class="body" style="max-width:580px;margin:16px auto 0">{Z("Chris and Cora 分級讀本是寫來教孩子自己讀英文的：36 本這樣的故事，分 12 級，一級一級加新字，每本都可以邊聽邊讀。第 1 級 3 本整本免費。", "The Chris and Cora readers are written to teach a child to read English on their own: 36 stories like this in 12 levels, adding new words level by level, all with read-aloud. Level 1 (3 books) is free in full.")}</p>
       <div class="cta-row"><a class="btn btn-primary" href="/{READERS}/" data-book="readers" data-book-item="tale-{t['slug']}">{Z("免費開始第 1 級", "start Level 1 free")}</a>
       <a class="btn btn-outline" href="/{HUB}/{nxt['slug']}/">{Z(f"下一篇：{nxt['zh'].split('（')[0]}", f"next story: {nxt['en']}")}</a></div>
     </div>
@@ -228,7 +228,7 @@ def hub_page(rows):
     <div class="cta-box reveal">
       <span class="eyebrow eyebrow-green">{Z("讀完這幾篇", "after these stories")}</span>
       <h2 id="讀完之後" style="margin-top:14px">{Z("想讓孩子<em>自己讀英文</em>？", "want your child to read English alone?")}</h2>
-      <p class="body" style="max-width:580px;margin:16px auto 0">{Z("Chris and Cora 分級讀本從一頁一句開始，12 級 36 本，一級一級往上讀。故事在台灣，用的是學校的教育部字表。第 1 級 3 本整本免費。", "The Chris and Cora readers start at one sentence a page: 12 levels, 36 books, level by level. Set in Taiwan, using the school's MOE word list. Level 1 (3 books) is free in full.")}</p>
+      <p class="body" style="max-width:580px;margin:16px auto 0">{Z("Chris and Cora 分級讀本教孩子自己讀英文：從一頁一句開始，12 級 36 本，一級一級往上讀。故事在台灣，用的是學校的教育部字表。第 1 級 3 本整本免費。", "The Chris and Cora readers start at one sentence a page: 12 levels, 36 books, level by level. Set in Taiwan, using the school's MOE word list. Level 1 (3 books) is free in full.")}</p>
       <div class="cta-row"><a class="btn btn-primary" href="/{READERS}/" data-book="readers" data-book-item="tales-hub">{Z("免費開始第 1 級", "start Level 1 free")}</a>
       <a class="btn btn-outline" href="/{TESTS}/">{Z("12 級免費閱讀測驗", "12 free reading tests")}</a></div>
     </div>

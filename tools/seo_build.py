@@ -1402,18 +1402,18 @@ BOOKS_START, BOOKS_END = "<!-- AE:BOOKS -->", "<!-- /AE:BOOKS -->"
 # "table" (after the first table) or "h2:<id>" (at the end of that H2's section).
 BOOKS_PAGES = {
     "moe-1200-words-guide": ("pdf", "readers", "這 1,200 字，放進故事裡讀",
-        "我們自己寫的 36 本英語分級讀本，用到教育部字表 1,211 條裡的 1,199 條：每一級只加幾個新字、一再重複，"
+        "我們寫來教孩子自己讀英文的 36 本分級讀本，用到教育部字表 1,211 條裡的 1,199 條：每一級只加幾個新字、一再重複，"
         "孩子從第一本的 Look at Bobo! 一路讀到整段故事。每一本都可以邊聽邊讀，第 1 級 3 本免費線上讀。"),
     "moe-2000-words-guide": ("h2:2000-字和考試的真實關係", "grammar", "單字有了，句子要用對文法",
         "國一上到國三下每學期一本文法書：每個重點一頁規則與圖解，每單元一頁練習、一頁寫作應用，附測驗與解答。"
         "每個年級都有一頁免費試讀。"),
     "graded-readers-guide": ("h2:在台灣去哪裡取得分級讀物", "readers", "也可以從我們自己寫的這套開始",
-        "Chris and Cora：12 級 36 本，場景是台灣的城市，字彙依教育部 1,200 字排序。每本 48 頁，左頁文字、右頁整頁插圖；"
+        "Chris and Cora 是寫來教孩子自己讀英文的：12 級 36 本，場景是台灣的城市，字彙依教育部 1,200 字排序。每本 48 頁，左頁文字、右頁整頁插圖；"
         "PDF 加翻頁電子書，第 1 級 3 本免費線上讀。"),
     "english-picture-books-guide": ("h2:在台灣去哪裡找英文繪本", "readers", "想要孩子自己讀得懂的第一本",
-        "Chris and Cora 分級讀本第 1 級的 3 本只用 26 個教育部單字，每一頁一句、配一整頁插圖，適合從共讀過渡到自己讀。第 1 級 3 本免費線上讀。"),
+        "Chris and Cora 是教孩子自己讀英文的分級讀本，第 1 級的 3 本只用 26 個教育部單字，每一頁一句、配一整頁插圖，適合從共讀過渡到自己讀。第 1 級 3 本免費線上讀。"),
     "sight-words-guide": ("h2:家長版每天-5-分鐘的高頻字練習", "readers", "高頻字認得了，放進故事裡讀",
-        "Chris and Cora 分級讀本第 1 級從 a、and、is、look、see 這些高頻字開始，每一頁一句、配一整頁插圖，"
+        "Chris and Cora 是教孩子自己讀英文的分級讀本，第 1 級從 a、and、is、look、see 這些高頻字開始，每一頁一句、配一整頁插圖，"
         "一個字在書裡重複好幾次。第 1 級 3 本免費線上讀。"),
     "junior-high-english-grammar": ("pdf", "grammar", "總整理看完，想一個重點一個重點練？",
         "這份總整理的完整版：國一上到國三下每學期一本文法書，每個重點一頁規則、圖解和例句，每單元有練習和寫作應用，"
@@ -1514,10 +1514,10 @@ NEXTLEVEL_PAGES = {
 }
 NL_TXT = {
     "kk": dict(tag="音標會看了，試試這一關", h="用 KK 音標唸一本真的故事書",
-               sub="下面 4 頁來自我們自己寫的英語分級讀本《This Is Bobo!》。先照音標把句子唸出來，再翻開看圖、聽一次，對一下自己唸得對不對。",
+               sub="下面 4 頁來自我們教孩子自己讀英文的分級讀本《This Is Bobo!》。先照音標把句子唸出來，再翻開看圖、聽一次，對一下自己唸得對不對。",
                flip="翻開看答案", grade="G7-1"),
     "read": dict(tag="會拼讀了，試試這一關", h="孩子讀得出這一頁嗎？",
-                 sub="下面 4 頁來自我們自己寫的英語分級讀本《This Is Bobo!》。請孩子先自己把句子唸出來，再翻開看圖、聽一次，對一下唸得對不對。",
+                 sub="下面 4 頁來自我們教孩子自己讀英文的分級讀本《This Is Bobo!》。請孩子先自己把句子唸出來，再翻開看圖、聽一次，對一下唸得對不對。",
                  flip="翻開看圖", grade="G3"),
 }
 _NL = {}
@@ -1551,7 +1551,7 @@ def next_level(html, rel):
     if at == -1:
         return html
     D = json.load(open(NL_SRC, encoding="utf-8"))
-    readers_btns = ('<span class="nl-btns"><a class="btn btn-primary" href="/chris-and-cora-readers/#read-book" data-book="readers" data-book-item="{0}free">免費讀第 1 級 3 本</a>'
+    readers_btns = ('<span class="nl-btns"><a class="btn btn-primary" href="/chris-and-cora-readers/#read-book" data-book="readers" data-book-item="{0}free">免費開始第 1 級</a>'
                     '<a class="btn btn-outline" href="/chris-and-cora-readers/" data-book="readers" data-book-item="{0}page">看全部 36 本</a></span>')
     if mode == "grammar":
         body = ('<div class="nl-box nl-solo"><span class="nl-tag">埃森美語原創文法書</span>'
@@ -1579,7 +1579,7 @@ def next_level(html, rel):
                 '<div class="nl-box"><span class="nl-tag">接下來的兩關</span><b class="nl-h">學英文的三關：這一頁是第 1 關</b>'
                 '<ol class="nl-steps">'
                 '<li class="nl-step"><span class="nl-n">1</span><b>唸得出單字</b><span>字母、自然發音、KK 音標。這一頁練的就是這一關。</span></li>'
-                '<li class="nl-step"><span class="nl-n">2</span><b>讀得懂整句</b><span>Chris and Cora 英語分級讀本：12 級 36 本，每一級只加幾個新字、一再重複。第 1 級 3 本免費線上讀，可以邊聽邊讀。</span>'
+                '<li class="nl-step"><span class="nl-n">2</span><b>讀得懂整句</b><span>Chris and Cora 分級讀本，教孩子自己讀英文：12 級 36 本，每一級只加幾個新字、一再重複。第 1 級 3 本免費線上讀，可以邊聽邊讀。</span>'
                 + readers_btns.format("") + '</li>'
                 '<li class="nl-step"><span class="nl-n">3</span><b>寫得出句子</b><span>英文文法書：國小三年級到高三共 16 冊，每個重點一頁規則、圖解、例句和練習。選年級，看那一年的免費試讀頁。</span>'
                 + _nl_picker(D, T["grade"]) + '</li></ol></div>')
@@ -1632,10 +1632,10 @@ def word_book(html, rel):
              f'<img src="{d["img"]}" alt="《{title}》插圖" width="300" height="425" loading="lazy" decoding="async"></a>'
              f'<div class="wb-t"><span class="wb-tag">在故事裡讀到 <span lang="en">{w}</span></span>'
              f'<span class="wb-en" lang="en">{out}</span>'
-             f'<span class="wb-src">Chris and Cora 英語分級讀本・第 {d["level"]} 級《<span lang="en">{title}</span>》。'
+             f'<span class="wb-src">教孩子自己讀英文的 Chris and Cora 分級讀本・第 {d["level"]} 級《<span lang="en">{title}</span>》。'
              f'<span lang="en">{w}</span> 從第 {d["first_level"]} 級開始出現，36 本書裡一共讀到 {d["count"]} 次'
              f'{"（含變化形）" if d["inflected"] else ""}。</span>'
-             '<span class="wb-btns"><a class="btn btn-primary" href="/chris-and-cora-readers/#read-book" data-book="readers" data-book-item="word-free">免費讀第 1 級 3 本</a>'
+             '<span class="wb-btns"><a class="btn btn-primary" href="/chris-and-cora-readers/#read-book" data-book="readers" data-book-item="word-free">免費開始第 1 級</a>'
              '<a class="btn btn-outline" href="/chris-and-cora-readers/" data-book="readers" data-book-item="word-page">看全部 36 本</a></span>'
              f'</div></aside>{WB_END}\n')
     return html[:at] + block + html[at:]
@@ -1855,7 +1855,7 @@ def doors(html, rel):
     if _DOOR_GRAMMAR.search(slug):
         far = ('/english-grammar-books/', 'grammar', '在家練：英文文法書，每年級可免費試讀')
     else:
-        far = ('/chris-and-cora-readers/', 'readers', '在家讀：分級讀本，第 1 級 3 本免費')
+        far = ('/chris-and-cora-readers/', 'readers', '在家教孩子讀英文：分級讀本，第 1 級免費')
     block = (f'\n{DOORS_START}<nav class="doors" aria-label="下一步">'
              '<a class="door door-near" href="/courses/" data-door="near"><small>住板橋附近</small>'
              '<b>看課程，預約免費程度評估</b></a>'

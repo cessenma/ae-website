@@ -695,12 +695,12 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
         rows.append(f"""<details class="bp-lv"><summary><span class="bp-l">{Z(f"第 {L} 級", f"Level {L}")}<small>{Z("3 本", "3 books")}</small></span><span class="bp-cov">{cov}</span>
 <span class="bp-t">{titles}</span><span class="bp-w"><b>{wrange([b["words"] for b in bs])}</b>{Z("字／本", "words a book")}</span></summary>
 <div class="bp-in"><div><img src="/assets/img/readers/spreads/{spread}.webp" alt="第 {L} 級內頁" width="960" height="681" loading="lazy" decoding="async"></div>
-<div><p style="margin:0 0 10px;font-size:14px;line-height:1.7">{Z(f"這一級新讀到的教育部字：<b>{lv_new[L-1]}</b> 個；讀完累積 <b>{n(cum[L-1])}</b> 個。", f"MOE words first read in this level: {lv_new[L-1]}; {n(cum[L-1])} in all after it.")}</p>
+<div><p style="margin:0 0 10px;font-size:14px;line-height:1.7">{Z(f"這一級教孩子多讀 <b>{lv_new[L-1]}</b> 個學校單字；讀完累積 <b>{n(cum[L-1])}</b> 個。", f"This level teaches your child to read {lv_new[L-1]} more school words; {n(cum[L-1])} in all after it.")}</p>
 <p style="margin:0 0 6px;font-size:13.5px;font-weight:800;color:var(--navy)">{Z("讀完問問看（書後的問題）", "talk about it (questions from the back of each book)")}</p>{qs}
 {free_links() if L == 1 else buy(STORE["readers_levels"].get(str(L), ""), Z(f"買第 {L} 級・NT${P_LEVEL}", f"buy Level {L} · NT${P_LEVEL}"), "readers", f"level-{L}", P_LEVEL)}</div></div></details>""")
     out.append(f"""<section class="section">
   <div class="wrap" style="max-width:980px">
-    {h2(Z("12 級一覽", "all 12 levels"), "12-級36-本一覽", Z("12 級 36 本，<em>一覽</em>", "the 12 levels and 36 books"))}
+    {h2(Z("12 級一覽", "all 12 levels"), "12-級36-本一覽", Z("12 級 36 本，<em>每一本都在教孩子讀</em>", "12 levels, 36 books: every one teaches your child to read"))}
     <p class="body center" style="max-width:64ch;margin:14px auto 0">{Z("點開每一級，看內頁和書名。", "Open a level to see a page and the titles.")}</p>
     <div class="reveal" style="margin-top:20px">{"".join(rows)}</div>
   </div>
@@ -773,7 +773,7 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
       <span class="eyebrow eyebrow-green">{Z("免費試讀", "free sample")}</span>
       <h2 id="先讀第-1-級" style="margin-top:14px">{Z("先讀第 1 級，<em>再決定</em>", "read Level 1, then decide")}</h2>
       <p class="body" style="max-width:560px;margin:16px auto 0">{Z("第 1 級的 3 本（<i lang='en'>This Is Bobo!</i>、<i lang='en'>Bobo Is in the Bed!</i>、<i lang='en'>The Little Red Shop</i>）整本免費，在網站上直接翻頁讀，還可以按「聽故事」邊聽邊讀，唸到的字會亮起來。不用下載也不用留資料。", "The 3 books of Level 1 (This Is Bobo!, Bobo Is in the Bed!, The Little Red Shop) are free in full: turn the pages on the site, or press 'listen to the story' and read along as each word lights up. No download, no sign-up.")}</p>
-      <div class="cta-row"><a class="btn btn-primary" href="#read-book" data-book="readers" data-book-item="free">{Z("免費讀第 1 級 3 本", "read Level 1 free")}</a>
+      <div class="cta-row"><a class="btn btn-primary" href="#read-book" data-book="readers" data-book-item="free">{Z("免費開始第 1 級", "start Level 1 free")}</a>
       <a class="btn btn-outline" href="{LINE}" target="_blank" rel="noopener">{Z("LINE 問我們", "ask us on LINE")}</a></div>
     </div>
   </div>
@@ -817,7 +817,7 @@ body{{font:10pt/1.4 DM,TC;color:#1A2752;margin:0}}h1{{font:700 22pt DM,TC;margin
 .b{{flex:1;text-align:center}}.b img{{height:22.5mm;border-radius:1.2mm;display:block;margin:0 auto 1mm}}
 </style></head><body>
 <div class="top"><h1>My Reading Chart<small>我的英文閱讀進度表</small></h1><span class="nm">Name 名字<i></i></span></div>
-<p class="how">Chris and Cora 英語分級讀本・12 級 36 本。每一本：先聽 Listen → 跟著讀 Read along → 自己讀 Read alone。讀順了，就把書下面的星星塗上顏色。</p>
+<p class="how">Chris and Cora 分級讀本，教孩子自己讀英文・12 級 36 本。每一本：先聽 Listen → 跟著讀 Read along → 自己讀 Read alone。讀順了，就把書下面的星星塗上顏色。</p>
 <div class="g">{"".join(block(L) for L in range(1, 13))}</div>
 </body></html>"""
     out = os.path.join(SITE, "assets", "downloads", CHART)

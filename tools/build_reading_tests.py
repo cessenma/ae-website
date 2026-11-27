@@ -191,8 +191,8 @@ def test_page(L, Q, total):
     <div class="cta-box reveal" id="rtNext" hidden style="margin-top:26px">
       <span class="eyebrow eyebrow-yellow">{Z("讀完整本", "read the whole book")}</span>
       <h2 id="讀完整本" style="margin-top:14px">{Z(f"故事還沒完：<em lang=\"en\">{esc(title)}</em> 一共 20 頁", f"the story goes on: {title} has 20 pages")}</h2>
-      <p class="body" style="max-width:560px;margin:16px auto 0">{Z(f"Chris and Cora 分級讀本 12 級 36 本，故事在台灣、用學校的教育部字表，每本都可以邊聽邊讀。第 1 級 3 本整本免費讀。", "Chris and Cora graded readers: 12 levels, 36 books set in Taiwan, using the school's MOE word list, all with read-aloud. Level 1 (3 books) is free in full.")}</p>
-      <div class="cta-row"><a class="btn btn-primary" href="/{READERS}/" data-book="readers" data-book-item="reading-test-{L}">{Z("看 36 本分級讀本", "see the 36 readers")}</a>{nxt}</div>
+      <p class="body" style="max-width:560px;margin:16px auto 0">{Z(f"Chris and Cora 分級讀本教孩子自己讀英文：12 級 36 本，故事在台灣、用學校的教育部字表，每本都可以邊聽邊讀。第 1 級 3 本整本免費讀。", "The Chris and Cora graded readers teach your child to read English on their own: 12 levels, 36 books set in Taiwan, using the school's MOE word list, all with read-aloud. Level 1 (3 books) is free in full.")}</p>
+      <div class="cta-row"><a class="btn btn-primary" href="/{READERS}/" data-book="readers" data-book-item="reading-test-{L}">{Z("看 36 本怎麼教孩子讀英文", "see how the 36 books teach your child to read English")}</a>{nxt}</div>
     </div>
     <p class="body center" style="margin-top:18px;font-size:14px">{prv}{" ・ " if prv else ""}<a href="/{HUB}/">{Z("全部 12 級閱讀測驗", "all 12 reading tests")}</a></p>
   </div>
@@ -229,7 +229,7 @@ def hub_page(rows):
   <div class="wrap" style="max-width:760px">
     <div class="center stack reveal"><span class="eyebrow eyebrow-green">{Z("怎麼用", "how to use")}</span><h2 id="怎麼用">{Z("三個<em>小建議</em>", "three tips")}</h2></div>
     <ol class="rt-steps reveal">{"".join(f"<li>{s}</li>" for s in steps)}</ol>
-    <p class="body center" style="margin-top:8px">{Z(f"每一份測驗都是 <a href='/{READERS}/'>Chris and Cora 分級讀本</a>的真實內頁：12 級 36 本，故事在台灣，用學校的教育部 1,200 字表。", f"Every test is real pages from the Chris and Cora readers: 12 levels, 36 books set in Taiwan, using the school's MOE 1,200-word list.")}</p>
+    <p class="body center" style="margin-top:8px">{Z(f"每一份測驗都是 <a href='/{READERS}/'>Chris and Cora 分級讀本</a>的真實內頁。這套書是寫來教孩子自己讀英文的：12 級 36 本，故事在台灣，用學校的教育部 1,200 字表。", f"Every test is real pages from the Chris and Cora readers, a series written to teach a child to read English on their own: 12 levels, 36 books set in Taiwan, using the school's MOE 1,200-word list.")}</p>
     <p class="body center" style="margin-top:8px">{Z("想先讀孩子聽過的故事？<a href='/english-stories/'>經典英文故事</a>：三隻小豬、龜兔賽跑、灰姑娘，每篇都有中文對照和朗讀。", "Rather start with a story your child already knows? Classic stories in English (link): Three Little Pigs, Tortoise and the Hare, Cinderella, each with Chinese and read-aloud.")}</p>
   </div>
 </section>
@@ -238,7 +238,7 @@ def hub_page(rows):
     desc = Z("免費國小英文閱讀測驗 12 級：每一級先讀一段真實的英文故事、可以聽美式朗讀，再線上回答問題、立刻對答案，每題都有中文解說，不用註冊、不用下載。",
              "12 free elementary English reading tests: read a real story with American read-aloud, answer online, check instantly with Chinese explanations, no sign-up.")
     h1 = Z('<span class="h1s"><em>國小英文閱讀測驗</em></span><br><span class="h1s">12 級，免費線上作答</span>', "Elementary English reading tests: 12 levels, free online")
-    lead = Z("先讀一段英文故事、聽朗讀，再回答問題。答完立刻看到分數，每題都有中文解說。故事來自埃森美語自己寫的 Chris and Cora 分級讀本。",
+    lead = Z("先讀一段英文故事、聽朗讀，再回答問題。答完立刻看到分數，每題都有中文解說。故事來自教孩子自己讀英文的 Chris and Cora 分級讀本。",
              "Read an English story, listen, then answer. The score and a Chinese explanation appear right away. The stories are from our own Chris and Cora readers.")
     shell(HUB, title + "｜埃森美語", desc, f'<a href="/">首頁</a> ／ {Z("國小英文閱讀測驗", "elementary reading tests")}', h1, lead,
           "/assets/img/readers/covers/5a.webp", "Chris and Cora 分級讀本封面", main)
