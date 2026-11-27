@@ -99,7 +99,7 @@ CSS = """
 """
 
 JS = """<script>(()=>{let cur=null;
-document.querySelectorAll(".rt-play").forEach(b=>b.addEventListener("click",()=>{const a=document.getElementById(b.dataset.a);
+document.querySelectorAll(".rt-play").forEach(b=>b.addEventListener("click",()=>{const a=document.getElementById(b.dataset.a);if(!a)return;
 if(cur&&cur!==a){cur.pause();cur.currentTime=0;document.querySelectorAll(".rt-play.on").forEach(x=>x.classList.remove("on"))}
 if(a.paused){a.play();b.classList.add("on");cur=a;a.onended=()=>b.classList.remove("on")}else{a.pause();b.classList.remove("on")}
 if(typeof gtag==="function")gtag("event","reading_test_play",{page_path:location.pathname})}));

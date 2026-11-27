@@ -69,7 +69,7 @@
 },
 "assets/downloads/ae-boy-who-cried-wolf-story-a4.pdf": {
 "date": "2026-11-27",
-"hash": "9fd601bf93aa4ab79d9229c5b579ac21"
+"hash": "191ccff340eb13b392f1ea7b4a7a2646"
 },
 "assets/downloads/ae-breakfast-shop-english-menu-a4.pdf": {
 "date": "2026-11-18",
@@ -103,13 +103,17 @@
 "date": "2026-11-18",
 "hash": "989e6f0c70f590f25067126fdcbfab25"
 },
+"assets/downloads/ae-chris-and-cora-reading-chart-a4.pdf": {
+"date": "2026-11-27",
+"hash": "9c55377c576833da98fcb09545cf8d2b"
+},
 "assets/downloads/ae-christmas-english-a4.pdf": {
 "date": "2026-11-18",
 "hash": "149a4d70c6353d7eb50e759307293bd3"
 },
 "assets/downloads/ae-cinderella-story-a4.pdf": {
 "date": "2026-11-27",
-"hash": "7b7423d54d46684a8e831b4a7b098221"
+"hash": "2cdecf8980266d25d7e2253d3148bb10"
 },
 "assets/downloads/ae-colors-flashcards-a4.pdf": {
 "date": "2026-10-01",
@@ -421,7 +425,7 @@
 },
 "assets/downloads/ae-nian-monster-story-a4.pdf": {
 "date": "2026-11-27",
-"hash": "4b646528896065a3a2a92c2b784b6d6e"
+"hash": "bce76db98524fdd6ead5d8f0b0727319"
 },
 "assets/downloads/ae-night-market-english-a4.pdf": {
 "date": "2026-11-18",
@@ -501,7 +505,7 @@
 },
 "assets/downloads/ae-three-little-pigs-story-a4.pdf": {
 "date": "2026-11-27",
-"hash": "26491bf6970031432be5d1a6f0f3eda1"
+"hash": "28a8544666c21dac540f1e275f0742e9"
 },
 "assets/downloads/ae-time-english-a4.pdf": {
 "date": "2026-11-18",
@@ -509,7 +513,7 @@
 },
 "assets/downloads/ae-tortoise-and-hare-story-a4.pdf": {
 "date": "2026-11-27",
-"hash": "ee2bbfaaabc27b67581880ea2799daeb"
+"hash": "ddd5a78c02ba344fd0f15b589c9f9291"
 },
 "assets/downloads/ae-travel-english-a4.pdf": {
 "date": "2026-11-18",
@@ -916,8 +920,8 @@
 "hash": "f04d3cddd49a39eaf988baa5853ea848"
 },
 "chris-and-cora-readers": {
-"date": "2026-11-23",
-"hash": "22c2a06a0271853d2f8027be1bb297e4"
+"date": "2026-11-27",
+"hash": "34064cbb6ccd46f13266d4b353ba0751"
 },
 "chris-and-cora-readers/read/1a": {
 "date": "2026-11-11",
@@ -1112,52 +1116,52 @@
 "hash": "d0fd24287b8f25e46500379baf238e02"
 },
 "english-reading-comprehension/level-1": {
-"date": "2026-11-23",
-"hash": "306bf530eca1e11210a32867b192e6a0"
+"date": "2026-11-27",
+"hash": "7ed405100c3d196738d075345fe695c9"
 },
 "english-reading-comprehension/level-10": {
-"date": "2026-11-23",
-"hash": "cf72379859d242a5ce48fbf9ad35edfc"
+"date": "2026-11-27",
+"hash": "9bf74a5086fc65f8f089cbe2d5491ad1"
 },
 "english-reading-comprehension/level-11": {
-"date": "2026-11-23",
-"hash": "1438c74afa8eda312f4871c90dc7cc79"
+"date": "2026-11-27",
+"hash": "3e87c2c430206590795d0ad357889c9d"
 },
 "english-reading-comprehension/level-12": {
-"date": "2026-11-23",
-"hash": "a0a71995fab668ec5504a1e614364e1b"
+"date": "2026-11-27",
+"hash": "bd17a6042319909b9fecd8439e3e24f1"
 },
 "english-reading-comprehension/level-2": {
-"date": "2026-11-23",
-"hash": "a9e5f00b03b79512ce191c9e85e79b45"
+"date": "2026-11-27",
+"hash": "03902f785916818926eddb28bf9157a1"
 },
 "english-reading-comprehension/level-3": {
-"date": "2026-11-23",
-"hash": "0fefe18fc2cb606f83df83118c8a170a"
+"date": "2026-11-27",
+"hash": "6e960a2e8f39075f7d808178f0851c3a"
 },
 "english-reading-comprehension/level-4": {
-"date": "2026-11-23",
-"hash": "ba21cbca18ca79be1319fe55b93748af"
+"date": "2026-11-27",
+"hash": "8059d5cbf8b317f2aef288dbbca256d7"
 },
 "english-reading-comprehension/level-5": {
-"date": "2026-11-23",
-"hash": "28584f86374febd91623497443ae29b8"
+"date": "2026-11-27",
+"hash": "8e8792bce00a7fb63b2e7a1715152de7"
 },
 "english-reading-comprehension/level-6": {
-"date": "2026-11-23",
-"hash": "6656d8e2f68a56417c957c945eb99e08"
+"date": "2026-11-27",
+"hash": "d95d446245195a83b86913cf955bffc6"
 },
 "english-reading-comprehension/level-7": {
-"date": "2026-11-23",
-"hash": "eb969f9f0eb2e53c92272a143b7d5ce8"
+"date": "2026-11-27",
+"hash": "5b6979c6f68794181c7548e4608313b5"
 },
 "english-reading-comprehension/level-8": {
-"date": "2026-11-23",
-"hash": "20fe6c0fdd4892c3dd823d05649a0cdf"
+"date": "2026-11-27",
+"hash": "8bc88ca347e5517a33604c61b9deee57"
 },
 "english-reading-comprehension/level-9": {
-"date": "2026-11-23",
-"hash": "4935cf3075d25df6bcb2a17233653c07"
+"date": "2026-11-27",
+"hash": "748e504b7625e9b4da4bbd34efdd2675"
 },
 "english-reading-practice": {
 "date": "2026-10-19",
@@ -1185,23 +1189,23 @@
 },
 "english-stories/boy-who-cried-wolf": {
 "date": "2026-11-27",
-"hash": "728a63dfffe703fc7f2071bdee2f7302"
+"hash": "9e7bf7aa38d11c6ecfd0e429a58d4ef5"
 },
 "english-stories/cinderella": {
 "date": "2026-11-27",
-"hash": "f346149ffd62d32803b16cd99947c58f"
+"hash": "674652cc77273c52e1e5563969ad03d1"
 },
 "english-stories/nian-monster": {
 "date": "2026-11-27",
-"hash": "f30c3213e029e809581da3dcd2f393fe"
+"hash": "894aa81468fe31b4881ecb5a7bd3e9aa"
 },
 "english-stories/three-little-pigs": {
 "date": "2026-11-27",
-"hash": "7f027a260945dec96a25b35db28eb4fb"
+"hash": "c2594778d60b9d5c38571fa916422c05"
 },
 "english-stories/tortoise-and-hare": {
 "date": "2026-11-27",
-"hash": "b12e668982dd44207caa6753279bcabc"
+"hash": "fa2aa312d6104b00281bbd62e5919b4b"
 },
 "english-story-repetition": {
 "date": "2026-10-26",

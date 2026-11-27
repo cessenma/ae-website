@@ -1422,8 +1422,8 @@ BOOKS_PAGES = {
     # they now get the read-a-real-page challenge instead (NEXTLEVEL_PAGES)
 }
 BOOKS_KIND = {
-    "readers": dict(href="/chris-and-cora-readers/", free="/chris-and-cora-readers/#read-book", free_t="免費讀第 1 級 3 本",
-                    all_t="看全部 36 本", tag="埃森美語原創分級讀本", label="Chris and Cora 英語分級讀本",
+    "readers": dict(href="/chris-and-cora-readers/", free="/chris-and-cora-readers/#read-book", free_t="免費開始第 1 級",
+                    all_t="看全部 36 本", tag="教孩子自己讀英文的 12 級讀本", label="Chris and Cora 英語分級讀本",
                     covers=[("/assets/img/readers/covers/1a.webp", "This Is Bobo! 封面"),
                             ("/assets/img/readers/covers/6a.webp", "A Night at the Night Market 封面"),
                             ("/assets/img/readers/covers/11a.webp", "The Mountain Night 封面")], ch=454),

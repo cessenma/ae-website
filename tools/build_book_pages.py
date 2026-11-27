@@ -307,6 +307,21 @@ CSS = """
 .bp-steps li{counter-increment:s;position:relative;padding:0 0 16px 46px;font-size:15.5px;line-height:1.8;color:var(--text-body)}
 .bp-steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:30px;height:30px;border-radius:10px;background:var(--blue);color:#fff;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:14px;display:grid;place-items:center}
 .bp-steps b{color:var(--navy)}
+.bp-h1s{display:block;font-family:'DM Sans','Noto Sans TC',sans-serif;font-style:normal;font-weight:700;font-size:.34em;letter-spacing:.02em;color:var(--blue);margin-top:12px;line-height:1.5}
+.bp-loop{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+@media (max-width:760px){.bp-loop{grid-template-columns:1fr}}
+.bp-loop>div{background:#fff;border:2px solid rgba(26,39,82,.08);border-radius:18px;padding:20px 22px;box-shadow:0 4px 0 rgba(26,39,82,.05)}
+.bp-loop .k{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--c);color:#fff;font:800 19px 'Baloo 2',sans-serif;margin-bottom:10px}
+.bp-loop b{display:block;font-size:19px;color:var(--navy)}
+.bp-loop b small{font:700 11.5px 'DM Sans',sans-serif;color:#64748b;margin-left:8px;letter-spacing:.08em}
+.bp-loop p{margin:8px 0 0;font-size:14.5px;line-height:1.75;color:var(--text-body)}
+.bp-stair{display:grid;grid-template-columns:repeat(12,1fr);gap:6px;align-items:end;height:230px;margin:44px auto 0;max-width:820px;padding-top:22px}
+.bp-stair div{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:var(--h);min-height:36px;border-radius:10px 10px 4px 4px;background:var(--c);color:#fff;font:800 16px 'Baloo 2',sans-serif;padding-bottom:6px;position:relative}
+.bp-stair div small{position:absolute;top:-20px;left:50%;transform:translateX(-50%);font:700 11.5px 'DM Sans',sans-serif;color:var(--navy);white-space:nowrap}
+.bp-stair div i{position:absolute;bottom:-24px;left:50%;transform:translateX(-50%);font:800 11.5px 'Noto Sans TC',sans-serif;font-style:normal;color:#06893f;white-space:nowrap}
+@media (max-width:640px){.bp-stair{gap:4px;height:190px}.bp-stair div{font-size:13px;border-radius:7px 7px 3px 3px}.bp-stair div:not(.mk) small{display:none}}
+.bp-stair-key{display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:center;margin:40px auto 0;font-size:13px;font-weight:700;color:var(--navy)}
+.bp-stair-key span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:3px;background:var(--c);margin-right:6px;vertical-align:-1px}
 .fp-stage{background:#fff;border-radius:24px;padding:20px 22px 24px;margin-top:22px;box-shadow:0 8px 28px rgba(26,39,82,.07);border-top:6px solid var(--sc)}
 .fp-elementary{--sc:#12B76A}.fp-junior{--sc:#1CB0F6}.fp-senior{--sc:#7C5CFF}
 .fp-stage h3{margin:0 0 16px;font-size:18px;color:var(--navy);display:flex;align-items:center;gap:10px}
@@ -482,13 +497,16 @@ def readers_page():
     lv_new = [cum[0]] + [cum[i] - cum[i - 1] for i in range(1, 12)]
     words = lambda L: [books[f"{L}{x}"]["words"] for x in "abc"]
     any_link = any(STORE["readers_sets"].values()) or any(STORE["readers_levels"].values())
-    title = Z("Chris and Cora 英語分級讀本：12 級 36 本，第 1 級 3 本免費讀｜埃森美語",
-              "Chris and Cora English graded readers: 12 levels, 36 books, Level 1 (3 books) free | American English")
-    desc = Z(f"埃森美語自己寫的英語分級讀本：12 級 36 本，每本 48 頁，左頁文字、右頁整頁插圖，故事在台灣。"
-             f"用到教育部 1,200 字表的 {n(cum[-1])} 個字，第 1 級 3 本免費線上讀。",
-             f"Graded readers written by American English: 12 levels, 36 books, 48 pages each, words on the left page and a full-page "
-             f"picture on the right, stories set in Taiwan. They use {n(cum[-1])} of the words on the MOE 1,200 list; Level 1 (3 books) is free to read online.")
-    og_t = Z("Chris and Cora 英語分級讀本：12 級 36 本，第 1 級 3 本免費讀", "Chris and Cora graded readers: 12 levels, 36 books, Level 1 free")
+    # 11-27 (Chris: "market this like hooked on phonics. like this will teach your kid to read"): the page leads with
+    # what the series is FOR (teaching a child to read English), sold as a 12-level program with one routine and a free
+    # first level. It says what the program does and how; it promises no result or timetable. The 12-month refund is the back-stop.
+    title = Z("教孩子讀英文：Chris and Cora 分級讀本，第 1 級免費｜埃森美語",
+              "Teach your child to read English: Chris and Cora graded readers, Level 1 free | American English")
+    desc = Z(f"教孩子自己讀英文的 12 級分級讀本：36 本，先聽、跟著讀、再自己讀，每天 10–15 分鐘。"
+             f"故事在台灣，用到教育部 1,200 字表的 {n(cum[-1])} 個字，第 1 級 3 本免費線上讀。",
+             f"A 12-level graded reader series that teaches a child to read English on their own: 36 books, each one listen, read along, "
+             f"then read alone; 10–15 minutes a day suggested. Stories set in Taiwan, using {n(cum[-1])} of the words on the MOE 1,200 list; Level 1 (3 books) is free to read online.")
+    og_t = Z("教孩子自己讀英文：Chris and Cora 分級讀本，12 級 36 本，第 1 級免費", "Teach your child to read English: Chris and Cora graded readers, 12 levels, 36 books, Level 1 free")
     ld = [{"@context": "https://schema.org", "@type": "Product", "@id": f"{ORIGIN}/chris-and-cora-readers/#product", "url": f"{ORIGIN}/chris-and-cora-readers/", "name": "Chris and Cora 英語分級讀本（12 級 36 冊）",
            "description": strip(desc), "brand": {"@type": "Brand", "name": "埃森美語 American English"},
            "image": [f"{ORIGIN}/assets/img/readers/covers/{c}.webp" for c in ("1a", "6a", "12a")],
@@ -506,14 +524,14 @@ def readers_page():
     <div class="breadcrumb reveal"><a href="/">首頁</a> ／ {Z("分級讀本", "graded readers")}</div>
     <div class="bp-hero">
       <div>
-        <span class="eyebrow eyebrow-yellow reveal">{Z("埃森美語原創", "our own series")}</span>
-        <h1 class="reveal d1"><span style="white-space:nowrap">Chris and Cora</span> {Z("<em>英語分級讀本</em>", "English graded readers")}</h1>
+        <span class="eyebrow eyebrow-yellow reveal">{Z("12 級英文閱讀課程", "a 12-level English reading program")}</span>
+        <h1 class="reveal d1">{Z("教孩子<em style='white-space:nowrap'>自己讀英文</em>", "teach your child to read English on their own")}<span class="bp-h1s">Chris and Cora {Z("英語分級讀本・12 級 36 本", "English graded readers · 12 levels, 36 books")}</span></h1>
         <div class="divider reveal d1"></div>
-        <p class="body reveal d2">{Z("<strong>孩子真的讀得完的英文故事書。</strong>36 個發生在台灣的故事，除了角色名字，每個字都是學校會教的（教育部 1,200 字表）；從一頁一句開始，一級一級讀到整段故事。",
-            "English storybooks your child can actually finish. 36 stories set in Taiwan; apart from the characters' names, every word is one that school teaches (the Ministry of Education's 1,200-word list). It starts at one sentence a page and builds, level by level, to full paragraphs.")}</p>
-        <div class="bp-cta reveal d2"><a class="btn btn-primary" href="#read-book" data-book="readers" data-book-item="free">{Z("免費讀第 1 級 3 本", "read Level 1 (3 books) free")}</a>
+        <p class="body reveal d2">{Z("<strong>從一頁一句開始，一級一級讀到整段故事。</strong>每一本都是同樣三步：先聽、跟著讀、再自己讀，建議每天 10–15 分鐘。36 個故事都發生在台灣；除了角色名字，每個字都是學校會教的（教育部 1,200 字表）。",
+            "It starts at one sentence a page and builds, level by level, to full paragraphs. Every book is the same three steps: listen, read along, then read alone; we suggest 10–15 minutes a day. All 36 stories are set in Taiwan; apart from the characters' names, every word is one that school teaches (the Ministry of Education's 1,200-word list).")}</p>
+        <div class="bp-cta reveal d2"><a class="btn btn-primary" href="#read-book" data-book="readers" data-book-item="free">{Z("免費開始第 1 級", "start Level 1 free")}</a>
           <a class="btn btn-outline" href="#buy">{Z("看價格", "see prices")}</a></div>
-        <div class="bp-facts reveal d2"><span>{Z("PDF＋翻頁電子書", "PDF + flip book")}</span><span>{Z("邊聽邊讀", "reads aloud")}</span><span>{Z("12 級 36 本", "12 levels, 36 books")}</span><span>{Z("3 歲起陪讀", "from age 3, read together")}</span></div>
+        <div class="bp-facts reveal d2"><span>{Z("每天 10–15 分鐘", "10–15 minutes a day")}</span><span>{Z("會唸給孩子聽", "reads aloud to your child")}</span><span>{Z("12 級 36 本", "12 levels, 36 books")}</span><span>{Z("3 歲起陪讀", "from age 3, read together")}</span></div>
       </div>
       <div class="bp-fan" aria-hidden="true">{fan}</div>{FAN_JS}
     </div>
@@ -523,12 +541,40 @@ def readers_page():
 
     # buy strip, under the hero (11-15): single level / one stage / all 36; level and stage are picked at checkout
     out.append(buy_strip("readers", "Chris and Cora 分級讀本",
-        Z("想讓孩子每天讀一點？<b>Chris and Cora 英語分級讀本</b>，每本附 PDF 和會唸給孩子聽的翻頁電子書：",
-          "Want your child to read a little every day? <b>Chris and Cora graded readers</b>, each with a PDF and a flip book that reads aloud:"),
+        Z("想教孩子自己讀英文？<b>Chris and Cora 英語分級讀本</b>，12 級 36 本，每本附 PDF 和會唸給孩子聽的翻頁電子書：",
+          "Want to teach your child to read English on their own? <b>Chris and Cora graded readers</b>, 12 levels, 36 books, each with a PDF and a flip book that reads aloud:"),
         [("level", Z("單級 3 本", "one level, 3 books"), P_LEVEL, STORE["readers_levels"].get("2", "")),
          ("set", Z("一個階段 4 級 12 本", "one stage, 4 levels, 12 books"), P_SET, STORE["readers_sets"].get("1-4", "")),
          ("all", Z("全套 12 級 36 本", "all 12 levels, 36 books"), P_ALL, STORE["readers_sets"].get("all", ""))],
         under=f'<p class="bp-gline">{Z("買全套 36 本：讀完覺得孩子沒有進步，12 個月內全額退費。", "Buy all 36: if you finish them and feel your child has not improved, a full refund within 12 months.")}<a href="#our-promise">{Z("看我們的保證 →", "see our promise →")}</a></p>'))
+
+    # how it teaches (11-27): the one routine every book uses, and the 12 levels as a staircase.
+    # Listening times are measured: the 1x read-aloud of all 36 flip books (ffprobe, 11-27) runs 74–86 s a book at
+    # Level 1, 207–224 s at Level 4 and 776–794 s at Level 12. Bar height rises with the MOE words read in all after that level (16% floor so Level 1 is still a step).
+    loop = [("#06C755", "1", Z("先聽", "listen first"), "LISTEN",
+             Z("按「▶ 聽故事」。唸到哪個字，哪個字就亮起來；孩子的眼睛跟著字走，聲音和字就對上了。", "Press 'listen to the story'. Each word lights up as it is read; the child's eyes follow the words, so the sound and the spelling meet.")),
+            ("var(--blue)", "2", Z("跟著讀", "read along"), "READ ALONG",
+             Z("把速度放慢到 0.5 或 0.75 倍，孩子跟著聲音一起唸出來。唸錯沒關係，再聽一次就好。", "Slow it to 0.5x or 0.75x and the child reads aloud with the voice. Mistakes are fine; just listen again.")),
+            ("#e0a800", "3", Z("自己讀", "read alone"), "READ ALONE",
+             Z("關掉聲音，換孩子讀給你聽。讀完用書後的問題聊一聊，讀順了再換下一本。", "Turn the sound off and the child reads to you. Talk about the questions at the back; once it is smooth, move to the next book."))]
+    lc = "".join(f'<div style="--c:{c}"><span class="k">{k}</span><b>{t}<small lang="en">{e}</small></b><p>{p}</p></div>' for c, k, t, e, p in loop)
+    stage_c = lambda L: "#06C755" if L <= 4 else ("var(--blue)" if L <= 8 else "var(--navy)")
+    stair = "".join(f'<div class="{"mk" if L in (1, 4, 8, 12) else ""}" style="--h:{round(16 + 84 * cum[L-1] / cum[-1])}%;--c:{stage_c(L)}"><small>{n(cum[L-1])}</small>{L}'
+                    + (f'<i>{Z("免費", "free")}</i>' if L == 1 else "") + "</div>" for L in range(1, 13))
+    out.append(f"""<section class="section" id="how-it-works" style="padding-bottom:20px">
+  <div class="wrap">
+    {h2(Z("怎麼教", "how it teaches"), "每一本書都是同樣三步", Z("每一本書，<em>都是同樣三步</em>", "every book, the same three steps"), "green")}
+    <div class="bp-loop reveal">{lc}</div>
+    <p class="body center" style="max-width:66ch;margin:20px auto 0">{Z("第 1 級一本聽完大約 1 分半鐘，第 4 級大約 3 分半鐘，第 12 級大約 13 分鐘（1 倍速，36 本的錄音實際量過）。前 4 級三步加起來大約 5 到 12 分鐘；後面的故事比較長，可以今天聽、明天讀。",
+        "Listening to one book takes about a minute and a half at Level 1, about three and a half minutes at Level 4 and about 13 minutes at Level 12 (1x speed, measured on the recordings of all 36 books). For the first 4 levels the three steps together take about 5 to 12 minutes; later stories are longer, so listen one day and read the next.")}</p>
+    <div class="bp-stair reveal" role="img" aria-label="{Z(f"12 級階梯圖：讀完第 1 級累積讀過 {cum[0]} 個教育部單字，讀完第 12 級累積 {n(cum[-1])} 個", f"staircase of the 12 levels: {cum[0]} MOE words read after Level 1, {n(cum[-1])} after Level 12")}">{stair}</div>
+    <div class="bp-stair-key"><span style="--c:#06C755">{Z("第 1–4 級：剛開始讀", "Levels 1–4: just starting")}</span><span style="--c:var(--blue)">{Z("第 5–8 級：讀得出短句", "Levels 5–8: short sentences")}</span><span style="--c:var(--navy)">{Z("第 9–12 級：讀整段故事", "Levels 9–12: whole paragraphs")}</span></div>
+    <p class="body center" style="max-width:66ch;margin:14px auto 0">{Z(f"<b>12 級，每一級只高一點。</b>柱子上的數字，是讀完那一級累積讀過的教育部單字：第 1 級 {cum[0]} 個，第 12 級 {n(cum[-1])} 個。同一級的 3 本用同一批字，孩子不會一下子遇到太多生字。",
+        f"<b>12 levels, each only a little higher.</b> The number on each bar is the MOE words read in all by the end of that level: {cum[0]} at Level 1, {n(cum[-1])} at Level 12. The 3 books of a level share the same words, so the child never meets too many new words at once.")}</p>
+    <div class="cta-row" style="margin-top:22px"><a class="btn btn-primary" href="#read-book" data-book="readers" data-book-item="free-how">{Z("免費開始第 1 級", "start Level 1 free")}</a></div>
+  </div>
+</section>
+""")
 
     # why this series (Chris 11-10: simple; every number measured or sourced)
     why4 = [("var(--blue)", f'<span data-to="{cum[-1]}">{n(cum[-1])}</span>', Z("跟學校同一份字表", "the school's word list"),
@@ -670,6 +716,8 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
   <div class="wrap">
     {h2(Z("3 歲起親子共讀", "reading together from age 3"), "陪孩子讀不需要英文很好", Z("陪孩子讀，<em>不需要英文很好</em>", "you don't need good English to read with your child"))}
     <ol class="bp-steps reveal">{"".join(f"<li>{s}</li>" for s in steps)}</ol>
+    <div class="cta-row" style="margin-top:14px"><a class="btn btn-outline" href="/assets/downloads/{CHART}" data-book="readers" data-book-item="chart">{Z("下載 36 本閱讀進度表（免費 PDF）", "download the 36-book reading chart (free PDF)")}</a></div>
+    <p class="bp-fine center" style="margin-top:10px">{Z("印出來貼在牆上：讀順一本，讓孩子自己塗一顆星。", "Print it and put it on the wall: each time a book reads smoothly, the child colours in a star.")}</p>
   </div>
 </section>
 """)
@@ -687,7 +735,14 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
 """)
 
     # FAQ
-    qa = [(Z("適合幾歲的孩子？", "What age is it for?"),
+    w1 = words(1)
+    qa = [(Z("孩子還不會讀英文，可以開始嗎？", "My child cannot read English yet. Can we start?"),
+           Z(f"可以，第 1 級就是寫給剛開始讀的孩子。一頁只有一兩句，每本 {min(w1)}–{max(w1)} 字，而且可以先聽再讀。認得字母、學過一點自然發音的孩子可以跟著讀；還不認得字母的孩子，先由大人陪著聽故事、看圖。第 1 級 3 本免費，試了就知道。",
+             f"Yes: Level 1 is written for a child who is just starting. One or two sentences a page, {min(w1)}–{max(w1)} words a book, and you can listen before reading. A child who knows the letters and some phonics can read along; one who does not know the letters yet starts by listening and looking at the pictures with an adult. Level 1's 3 books are free, so try and see.")),
+          (Z("36 本要讀多久？", "How long do the 36 books take?"),
+           Z("照孩子的速度就好。一週讀順一本是 36 週，一週兩本是 18 週。重點是同一本讀到順再換下一本，不是趕進度。",
+             "Go at your child's pace. One book a week until it reads smoothly is 36 weeks; two a week is 18 weeks. What matters is reading each book until it is smooth before moving on, not rushing.")),
+          (Z("適合幾歲的孩子？", "What age is it for?"),
            Z("看程度，不看年齡。認得字母、學過一點自然發音就可以從第 1 級開始；已經讀得出短句的孩子，從第 5 級開始。最準的方法是讓孩子讀上面「孩子在哪個階段」的句子，或先免費讀第 1 級。",
              "Go by level, not age. A child who knows the letters and some phonics can start at Level 1; one who already reads short sentences, at Level 5. The surest way is the sentences under 'which stage', or the free Level 1.")),
           (Z("有音檔嗎？", "Is there audio?"),
@@ -728,6 +783,46 @@ el.textContent="0"+suf;requestAnimationFrame(f)}})}}),{{threshold:.35}});s.query
     return "".join(out)
 
 # ---------------------------------------------------------------- the free 1a flip book
+
+CHART = "ae-chris-and-cora-reading-chart-a4.pdf"
+
+def reading_chart():
+    """Free A4 progress chart (11-27): the 36 covers in 12 rows, a star to colour under each. No Chinese beyond labels a child sees."""
+    try:
+        from weasyprint import HTML
+        from PIL import Image
+    except Exception as e:
+        print("  reading chart skipped:", str(e)[:80]); return
+    import tempfile
+    fonts = os.path.expanduser("~/Documents/GitHub/ae-readers/tools/fonts")
+    tmp = tempfile.mkdtemp()
+    def cov(c):
+        j = os.path.join(tmp, c + ".jpg")
+        im = Image.open(os.path.join(SITE, "assets", "img", "readers", "covers", c + ".webp")).convert("RGB"); im.thumbnail((240, 340)); im.save(j, quality=80)
+        return "file://" + j
+    col = lambda L: "#06C755" if L <= 4 else ("#0B6FB8" if L <= 8 else "#1A2752")
+    star = '<svg viewBox="0 0 24 24" width="8mm" height="8mm"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5L2.6 9.4l6.5-.9z" fill="none" stroke="#1A2752" stroke-width="1.3" stroke-linejoin="round"/></svg>'
+    cell = lambda c: f'<div class="b"><img src="{cov(c)}">{star}</div>'
+    block = lambda L: f'<div class="lv"><span class="n" style="background:{col(L)}">{L}</span>{"".join(cell(f"{L}{x}") for x in "abc")}</div>'
+    doc = f"""<html><head><meta charset="utf-8"><style>
+@font-face{{font-family:TC;src:url(file://{fonts}/NotoSansTC-Regular.ttf)}}@font-face{{font-family:TC;font-weight:700;src:url(file://{fonts}/NotoSansTC-Bold.ttf)}}
+@font-face{{font-family:DM;src:url(file://{fonts}/DMSans-Regular.ttf)}}@font-face{{font-family:DM;font-weight:700;src:url(file://{fonts}/DMSans-Bold.ttf)}}
+@page{{size:A4;margin:11mm 12mm 12mm;@bottom-center{{content:"埃森美語 American English ・ americanenglish.com.tw/chris-and-cora-readers/";font:8pt TC;color:#64748b}}}}
+body{{font:10pt/1.4 DM,TC;color:#1A2752;margin:0}}h1{{font:700 22pt DM,TC;margin:0}}h1 small{{font:700 12pt TC;color:#0B6FB8;margin-left:3mm}}
+.top{{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1.5pt solid #FFC828;padding-bottom:2mm}}.nm{{font:11pt TC}}.nm i{{display:inline-block;width:52mm;border-bottom:.8pt solid #1A2752;margin-left:2mm}}
+.how{{font:9.5pt/1.5 TC;color:#475569;margin:2.5mm 0 3mm}}
+.g{{display:grid;grid-template-columns:1fr 1fr;gap:2.2mm 6mm}}
+.lv{{display:flex;align-items:center;gap:2mm;border:.8pt solid #dbe3ee;border-radius:3mm;padding:2mm 2.4mm}}
+.n{{flex:none;width:10mm;height:10mm;border-radius:3mm;color:#fff;font:700 15pt DM;display:flex;align-items:center;justify-content:center}}
+.b{{flex:1;text-align:center}}.b img{{height:22.5mm;border-radius:1.2mm;display:block;margin:0 auto 1mm}}
+</style></head><body>
+<div class="top"><h1>My Reading Chart<small>我的英文閱讀進度表</small></h1><span class="nm">Name 名字<i></i></span></div>
+<p class="how">Chris and Cora 英語分級讀本・12 級 36 本。每一本：先聽 Listen → 跟著讀 Read along → 自己讀 Read alone。讀順了，就把書下面的星星塗上顏色。</p>
+<div class="g">{"".join(block(L) for L in range(1, 13))}</div>
+</body></html>"""
+    out = os.path.join(SITE, "assets", "downloads", CHART)
+    HTML(string=doc).write_pdf(out)
+    print(f"  wrote assets/downloads/{CHART} ({os.path.getsize(out) // 1024} KB)")
 
 def free_reader():
     for i, c in enumerate(FREE):
@@ -1090,6 +1185,7 @@ if __name__ == "__main__":
         open(os.path.join(SITE, slug, "index.html"), "w", encoding="utf-8").write(fn())
         print("  wrote", f"{slug}/index.html")
     free_reader()
+    reading_chart()
     write_gloss()
     links = sum(bool(v) for g in ("readers_sets", "readers_levels", "grammar") for v in STORE[g].values())
     print(f"  checkout links set: {links} of 22 (data/books_store.json); buttons without one say 即將開放")
