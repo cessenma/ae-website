@@ -373,6 +373,9 @@
     if(rn && typeof window.gtag === 'function'){
       window.gtag('event', 'next_read_tap', { page_path: location.pathname, target: rn.getAttribute('href') || '', position: 'first' });
     }
+    // the learn-to-read path under the hero (seo_build.read_path): which step was tapped, from which page
+    var rp = e.target.closest ? e.target.closest('a[data-rp]') : null;
+    if(rp && typeof window.gtag === 'function') window.gtag('event', 'read_path_tap', { step: rp.getAttribute('data-rp'), page_path: location.pathname, target: rp.getAttribute('href') || '' });
     // the two doors under the first table (seo_build.doors): near -> /courses/, far -> the school's own
     // material. The tap is also the answer to "do you live near Banqiao?", so the download card knows.
     var dr = e.target.closest ? e.target.closest('a[data-door]') : null;

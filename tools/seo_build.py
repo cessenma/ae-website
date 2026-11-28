@@ -1864,6 +1864,41 @@ def doors(html, rel):
     return html[:at] + block + html[at:]
 
 
+READPATH_START, READPATH_END = "<!-- AE:READPATH -->", "<!-- /AE:READPATH -->"
+# "Teach your child to read English in 4 steps" under the hero of the alphabet / phonics / sight-word pages
+# (Chris 2026-11-28: "build the 4 step strip on the alphabet and phonics pages"). GA4, 28 days to 11-26: these
+# seven pages had ~4,070 users and sent the readers page 12 / 14 / 7 sessions from the three biggest (<1%),
+# while the readers page itself had 307 users. The pages already rank for the learn-to-read searches (英文字母,
+# 自然發音, sight words); the strip turns them into one path that ends in the free Level 1 books.
+# Value = which step the page is. Events: read_path_tap (step, page_path); step 4 also fires book_tap item "path".
+READPATH = {"english-alphabet-guide": 1, "english-alphabet-worksheet": 1, "english-worksheet-maker": 1,
+            "phonics-rules-chart": 2, "kk-phonetics-vs-phonics": 2,
+            "sight-words-guide": 3, "sight-words-heart-words-guide": 3}
+RP_STEPS = [(1, "認字母", "字母練習表", "/english-alphabet-worksheet/"), (2, "學拼讀", "發音規則表", "/phonics-rules-chart/"),
+            (3, "認常見字", "常見字表", "/sight-words-guide/"), (4, "讀第一本書", "3 本免費", "/chris-and-cora-readers/#read-book")]
+
+def read_path(html, rel):
+    html = re.sub(r"\n?" + re.escape(READPATH_START) + r".*?" + re.escape(READPATH_END) + r"\n?", "", html, flags=re.S)
+    here = READPATH.get(os.path.dirname(rel))
+    hero = re.search(r'<section class="page-hero.*?</section>', html, re.S)
+    if not here or not hero:
+        return html
+    li = []
+    for n, name, sub, href in RP_STEPS:
+        body = f'<span class="rp-n">{n}</span><b>{name}</b>'
+        if n == here:
+            li.append(f'<li class="rp-on" aria-current="step">{body}<small>你在這一步</small></li>')
+        elif n == 4:
+            li.append(f'<li class="rp-go"><a href="{href}" data-rp="4" data-book="readers" data-book-item="path">{body}<small>{sub}</small></a></li>')
+        else:
+            cls = ' class="rp-done"' if n < here else ""
+            li.append(f'<li{cls}><a href="{href}" data-rp="{n}">{body}<small>{sub}</small></a></li>')
+    block = (f'\n{READPATH_START}<nav class="rp" aria-label="教孩子讀英文的 4 步"><div class="rp-in">'
+             f'<p class="rp-h"><b>教孩子讀英文的 4 步</b><span>這一頁是第 {here} 步</span></p>'
+             f'<ol class="rp-s">{"".join(li)}</ol></div></nav>{READPATH_END}\n')
+    return html[:hero.end()] + block + html[hero.end():]
+
+
 def season_strip(html, rel, today=None):
     """Insert (or refresh, or remove) the seasonal strips after the page's main table."""
     html = re.sub(r"\n?" + re.escape(SEASON_START) + r".*?" + re.escape(SEASON_END) + r"\n?", "", html, flags=re.S)
@@ -1969,6 +2004,7 @@ def process_page(path, css_ver="", crit=""):
     html = pay_safe_block(html, rel)
     html = read_next(html, rel)
     html = doors(html, rel)
+    html = read_path(html, rel)
     html = season_strip(html, rel)
     html = gept_dates(html, rel)
     html = eager_first_image(html)
@@ -2244,6 +2280,7 @@ LASTMOD_LEDGER = os.path.join(SITE, "data", "lastmod.json")
 _INJECTED = [(CRIT_START, CRIT_END), (CHROME_START, CHROME_END), (GTM_START, GTM_END), (SEO_START, SEO_END),
              (FOOT_START, FOOT_END), (PMETA_START, PMETA_END), (POP_START, POP_END), (NEXT_START, NEXT_END),
              (BYL_START, BYL_END), (READNEXT_START, READNEXT_END), (DOORS_START, DOORS_END),
+             ("<!-- AE:READPATH -->", "<!-- /AE:READPATH -->"),
              # the pack offer is a sales block repeated on ~100 pages: a price or button
              # change is not a change to the page (it stamped 95 URLs with one date on 09-25)
              ("<!-- AE:PACKOFFER -->", "<!-- /AE:PACKOFFER -->"),
